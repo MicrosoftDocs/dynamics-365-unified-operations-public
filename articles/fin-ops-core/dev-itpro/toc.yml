@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.31 (February 2023)
+          href: get-started/whats-new-platform-updates-10-0-31.md
         - name: Platform updates for version 10.0.30 (November 2022)
           href: get-started/whats-new-platform-updates-10-0-30.md
         - name: Platform updates for version 10.0.29 (October 2022)
           href: get-started/whats-new-platform-updates-10-0-29.md
-        - name: Platform updates for version 10.0.28 (August 2022)
-          href: get-started/whats-new-platform-updates-10-0-28.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -182,6 +182,8 @@
           href: data-entities/configuration-data-templates.md
         - name: Track changes to an entity
           href: data-entities/entity-change-track.md
+        - name: Allow row version change tracking for an entity
+          href: data-entities/rowversion-change-track.md          
         - name: Find information about standard data entities
           href: data-entities/data-entities-report.md
         - name: Data templates with multiple worksheets
@@ -332,12 +334,16 @@
             href: deployment/deployenvironment-newinfrastructure.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
+          - name: Migrate an environment
+            href: deployment/geo-to-geo-migrations.md
           - name: Known issues with self-service deployment
             href: deployment/known-issues-new-deployment-experience.md
           - name: Maintenance operations for deployments
             href: deployment/maintenanceoperationsguide-newinfrastructure.md
           - name: Update an environment
             href: deployment/updateenvironment-newinfrastructure.md
+          - name: Migrate an environment
+            href: deployment/geo-to-geo-migrations.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
@@ -482,7 +488,7 @@
               href: help/migrate-dynamicsax2012.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend, customize, and collaborate on the help
+        - name: Extend and collaborate on the help
           href: help/contributor-guide.md
       - name: Finance and operations apps regional services
         items:
@@ -970,6 +976,8 @@
         href: lifecycle-services/lcs-user-guide.md
       - name: Project onboarding
         href: lifecycle-services/project-onboarding.md
+      - name: Project migration manager
+        href: lifecycle-services/project-migration-manager.md
       - name: Subscription estimator
         href: lifecycle-services/subscription-estimator.md
       - name: Configure security
@@ -1228,6 +1236,8 @@
           href: power-platform/admin-reference.md
         - name: Enable Dataverse virtual entities
           href: power-platform/enable-virtual-entities.md
+        - name: Track changes for virtual tables in Dataverse
+          href: power-platform/track-changes-fin-ops-virtual-table.md
         - name: Power Apps portals with finance and operations
           href: power-platform/power-portal-reference.md
         - name: Finance and operations virtual entities FAQ
@@ -1599,7 +1609,11 @@
       - name: License codes and configuration keys report
         href: sysadmin/license-codes-configuration-keys-report.md
       - name: Cross-company data sharing
-        href: sysadmin/cross-company-data-sharing.md
+        href: sysadmin/srs-overview.md
+      - name: Tables supported for data sharing
+        href: sysadmin/drs-srs-tables.md
+      - name: Data sharing for developers
+        href: sysadmin/drs-srs-dev.md
       - name: Maintenance mode
         href: sysadmin/maintenance-mode.md
       - name: Preconfigured system accounts
@@ -1610,6 +1624,10 @@
         href: sysadmin/DataMaintenancePortal.md
       - name: Manage access to network printers across legal entities
         href: sysadmin/sys-admin-tools-network-printer.md
+      - name: Monitoring and telemetry using Application Insights
+        items:  
+        - name: Overview
+          href: sysadmin/monitoring-and-telemetry-appinsights.md
       - name: Security
         items:
         - name: Role-based security
@@ -1634,6 +1652,8 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Active Directory security groups
+          href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management
           href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings

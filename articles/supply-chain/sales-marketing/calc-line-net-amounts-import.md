@@ -1,6 +1,6 @@
 ---
-title: Recalculate line net amounts when importing sales orders, quotations, and returns
-description: This article describes whether and how the system recalculates line net amounts when sales orders, quotations, and returns are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
+title: Recalculate line net amounts when importing sales orders and quotations
+description: This article describes whether and how the system recalculates line net amounts when sales orders and quotations are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Recalculate line net amounts when importing sales orders, quotations, and returns
+# Recalculate line net amounts when importing sales orders and quotations
 
 [!include [banner](../includes/banner.md)]
 
-This article describes whether and how the system recalculates line net amounts when sales orders, quotations, and returns are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
+This article describes whether and how the system recalculates line net amounts when sales orders and quotations are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
 
 ## How updates to net line amounts are calculated on import
 
-Supply Chain Management version 10.0.23 introduced [bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). This bugfix changed the conditions under which the **Net amount** field on a line can be updated or recalculated when updates to existing sales orders, returns, and quotations are imported. In version 10.0.29, you can replace this bugfix by turning on the *Calculate line net amount on import* feature. This feature has a similar effect, but it provides a global setting that lets you return to the old behavior if you must. Although the new behavior makes the system work in a more intuitive manner, it can produce unexpected results in specific scenarios where all the following conditions are met:
+Supply Chain Management version 10.0.23 introduced [bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). This bugfix changed the conditions under which the **Net amount** field on a line can be updated or recalculated when updates to existing sales orders and quotations are imported. In version 10.0.29, you can replace this bugfix by turning on the *Calculate line net amount on import* feature. This feature has a similar effect, but it provides a global setting that lets you return to the old behavior if you must. Although the new behavior makes the system work in a more intuitive manner, it can produce unexpected results in specific scenarios where all the following conditions are met:
 
 - Data that updates existing records is imported through the *Sales order lines V2*, *Sales quotation lines V2*, or *Return order lines* entity by using Open Data Protocol (OData), including situations where you use dual-write, import/export through Excel, and some third-party integrations.
-- [Trade agreement evaluation policies](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) that are in place establish a change policy that restricts updates to the **Net amount** field on sales order lines, sales quotation lines, and/or return order lines.
+- [Trade agreement evaluation policies](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) that are in place establish a change policy that restricts updates to the **Net amount** field on sales order lines, sales quotation lines, and/or return order lines. Note that for return order lines, the **Net amount** field is always calculated and can't be set manually.
 - The imported data includes changes to the **Net amount** field on lines, or changes (such as unit price, quantity, or discount) that will cause the value of the **Net amount** field on lines to be recalculated for one or more existing line records.
 
 In these specific scenarios, the effect of the trade agreement evaluation policy is to put a restriction on updates to the **Net amount** field on the line. This restriction is known as a *change policy*. Because of this policy, when you use the user interface to edit or recalculate the field, the system prompts you to confirm whether you want to make the change. However, when you import a record, the system must make the choice for you. Before version 10.0.23, the system always left the line net amount unchanged, unless the incoming line net amount is 0 (zero). However, in newer versions, the system always updates or recalculates the net amount as needed, unless it's explicitly instructed not to do so. Although the new behavior is more logical, it might cause issues for you if you're already running processes or integrations that assume the older behavior. This article describes how to revert to the old behavior if you must.

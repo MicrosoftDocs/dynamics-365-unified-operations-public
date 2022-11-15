@@ -71,7 +71,10 @@ This task guide will help you create a vendor invoice from a purchase order and 
 17. In the **Unit price** field, enter a number. Now that the unit price matches, the status is updated to Passed. If your policy allows discrepancies or if matching is only a warning, you can still post the invoice.  
 18. Close the page.
 19. Click **Post**.
-20. Close the form. Note that the purchase order is no longer listed as received but not invoiced.  
+20. Close the page. 
+
+>[!Note] 
+>The purchase order is no longer listed as received but not invoiced.  
 
 
 

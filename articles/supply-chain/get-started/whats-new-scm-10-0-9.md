@@ -78,7 +78,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Parallelized firming of planned orders](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - For more information, see [Firm planned orders](../master-planning/planning-optimization/planned-order-firming.md) and the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
 
-- [Planning optimization for distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - For more information, see [Planning Optimization overview](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Planning optimization for distribution](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - For more information, see [Master planning home page](../master-planning/master-planning-home-page.md).
 
 - [Purchase agreement enhancements](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - For more information, see [Purchase agreements](../procurement/purchase-agreements.md).
 

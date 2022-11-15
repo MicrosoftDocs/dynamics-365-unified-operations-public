@@ -116,7 +116,7 @@ Dimension control allows you to control grouping of generated lines by payment p
 -   **Dimension control** field is activated without further defining the dimensions. The payment proposal will be created without taking dimensions into consideration. The created transaction inherits no dimensions from the applied entry.
 -   **Dimension control** field is activated and the further dimensions are enabled. Now you define how the dimensions will be copied to the journal. For example: • Select the **BusinessUnit** check box to create a payment proposal per business unit for the method of payment, • Select the **CostCenter** check box to create a payment proposal per cost center for the method of payment
 
-> [[!NOTE]
+>[!NOTE]
 > If you select more than one dimension in the third option, a payment proposal is created for the dimension combination.
 
 #### Bank account selection

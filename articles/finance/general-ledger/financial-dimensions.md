@@ -88,7 +88,7 @@ To help maintain referential integrity of the data, financial dimensions can rar
 If any of the criteria are met, you can't delete the financial dimension.
 
 > [!NOTE]
-> Starting in Finance version 10.0.27, financial dimensions will not longer be automatically selected for financial reporting setup as they are created. 
+> Starting in Finance version 10.0.27, financial dimensions will no longer be automatically selected for financial reporting setup as they are created.
 
 ## Default dimension values
 

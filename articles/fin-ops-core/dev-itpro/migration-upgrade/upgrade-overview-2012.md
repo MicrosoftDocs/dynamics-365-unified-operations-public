@@ -95,6 +95,9 @@ For more information, see [Upgrade from AX 2012 - Estimate effort by using the C
 ### Deploy a demo environment
 Demo environments are default environments that contain demonstration data (not your own data) and standard code (no customizations). We recommend that you deploy a demo environment to evaluate new features, and to perform a basic fit gap analysis of standard processes that are used in AX 2012 but that might have changed in finance and operations. You can either deploy these demo environments in Azure or downloaded them as a virtual machine (VM) that you run on your own hardware. If you deploy them in Azure, you must provide your Azure subscription, because you’re still using a public preview project and haven't yet purchased a subscription.
 
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+
 The output of this step represents the workstream in the upgrade project plan for your functional users or business users.
 
 For more information, see [Upgrade from AX 2012 - Deploy a demo environment for analysis](analysis-sandbox.md)
@@ -113,7 +116,7 @@ The public preview project that you used for the Analyze phase has served its pu
 When you purchase a finance and operations subscription, you will receive details about how to sign up for a new LCS project. This project is known as an implementation project and will be the new permanent LCS project for your tenant, for as long as you have that subscription. This project differs from the public preview project in that it's managed by Microsoft. Therefore, this project has these characteristics:
 
 - This project supports deployment of Sandbox and Production type environments.
-- The Sandbox and Production type environments are maintained and patched by the Microsoft team, not your staff.
+- The Sandbox and Production type environments are maintained by the Microsoft team, not your staff. 
 - All DevTest or Demo environments must still be deployed on an Azure subscription.  It is recommended to redeploy these environments from your LCS Implementation project so that they are all contained in the same project as your sandbox and production environments. 
 
 ### Identify the project as an AX 2012 upgrade
@@ -137,6 +140,9 @@ Complete the tasks from the fit gap analysis that was performed during the “De
 ### Data upgrade (development environment)
 After your code upgrade tasks are completed, you can upgrade your database for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+
 The following illustration shows the process. Just back up the AX 2012 database, upload it to Azure, restore it to the finance and operations environment, and then run the data upgrade.
 
 ![Data upgrade in a development environment.](./media/data-upgrade-dev.png)
@@ -152,6 +158,9 @@ For details, see [Upgrade from AX 2012 - Data upgrade in development environment
 
 ### Data upgrade (sandbox environments)
 When data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment. For more information about sandbox deployment, see [Self-service deployment overview](../deployment/infrastructure-stack.md). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
 
 The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that the **AX 2012 Database Upgrade Toolkit for Dynamics 365** is used instead of a traditional SQL backup. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) as well as to run the data upgrade. In this case, your source is AX 2012 database and target is the finance and operations sandbox environment.
 

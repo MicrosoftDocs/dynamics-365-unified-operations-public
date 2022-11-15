@@ -36,11 +36,10 @@ A **Customer invoice for a sales order** is a bill that is related to a sale, an
 A **Free text invoice** isn't related to a sales order. It contains order lines that include ledger accounts, free-text descriptions, and a sales amount that you enter. You can't enter an item number on this kind of invoice. You must enter the appropriate sales tax information. A main account for the sale is indicated on each invoice line, which you can distribute to multiple ledger accounts by clicking **Distribute amounts** on the **Free text invoice** page. Additionally, the customer balance is posted to the summary account from the posting profile that is used for the free text invoice.
 
 For more information, see:
-
-[Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md)
-[Create a free text invoice template](../accounts-receivable/create-free-text-invoice-template-new.md)
-[Assign free text invoice template to a customer](tasks/assign-free-text-invoice-template-customer.md)
-[Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
+ - [Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Create a free text invoice template](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Assign free text invoice template to a customer](tasks/assign-free-text-invoice-template-customer.md)
+ - [Generate and post recurring free text invoices](tasks/post-recurring-free-text-invoices.md)
 
 
 A **Pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a **Pro forma invoice** either for a customer invoice for a sales order or for a free text invoice. 
@@ -94,7 +93,13 @@ You can configure the splitting of sales order customer invoices by site or by d
  - Select the **Split based on invoice delivery information** option to create one invoice per sales order line delivery address when posting. 
 
 ## Post to Revenue account for sales order lines that have no price and no cost
-You'll have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price and no cost. To set up or view this information, go to the **Post to Revenue account for zero priced and zero cost sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price and no cost. If this option is selected, the voucher will contain 0.00 entries for the **Customer balance** and **Revenue** posting types. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option isn't selected, lines that don't have price or cost information won't post to the **Revenue** account. Instead, the voucher will contain a 0.00 entry for the **Customer balance** posting type.
+You'll have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price and no cost. 
+
+To set up or view this information:
+1. Go to the **Post to Revenue account for zero priced and zero cost sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). 
+2. Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price and no cost. 
+ - If this option is selected, the voucher will contain 0.00 entries for the **Customer balance** and **Revenue** posting types. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. 
+ - If this option isn't selected, lines that don't have price or cost information won't post to the **Revenue** account. Instead, the voucher will contain a 0.00 entry for the **Customer balance** posting type.
 
 ## Line creation sequence number information
 When you post customer invoice lines, you will have the option to create sequential line creation sequence numbers. Line creation sequence numbers are assigned during the posting process. By allowing non-sequential numbering, you can help improve the performance of customer invoice posting. Line creation sequence numbers can be used by third-party integrations that expect sequential ordering. Consult your IT department about any extensions that might integrate with line creation sequence numbers.

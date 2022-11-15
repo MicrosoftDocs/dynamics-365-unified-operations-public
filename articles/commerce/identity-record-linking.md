@@ -2,7 +2,7 @@
 title: Enable automatic linking of identity records to customer accounts
 description: This article describes how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/21/2021
+ms.date: 11/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,9 @@ For B2B sites, automatic linking will perform the following checks:
 
 - If only one customer record within the legal entity meets the matching condition, the user signing up is automatically linked to that record.
 - If no customer records within the legal entity meet the matching conditions, Commerce will generate a **CommerceIdentityNotFound** error with error code **Microsoft_Dynamics_CommerceIdentityNotFound**.
+    - To send a user-facing message when the **CommerceIdentityNotFound** error occurs, in Commerce site builder, open your site's header module fragment, and then in the outline view, select the header module. In the properties pane on the right, for **Error message if customer not found**, enter a message (for example, "Your sign-up was successful, but your business user record has not yet been approved. Please try signing in at a later time or you may sign in once instructed your account has been approved."). Then save and publish the fragment.
 - If more than one customer record within the legal entity is found to have matching conditions, Commerce will generate a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error with error code **Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress**.
+    - To send a user-facing message when the **CommerceIdentityNotFound** error occurs, in Commerce site builder, open your site's header module fragment, and then in the outline view, select the header module. In the properties pane on the right, for **Multiple customers found error msg**, enter a message (for example, "Your sign-up was successful, but there is an issue associating to the business user account. Please try signing in at a later time."). Then save and publish the fragment.
 
 ## Automatic linking on B2C sites
 
@@ -63,6 +65,7 @@ For B2C sites, automatic linking will perform the following checks:
 - If only one customer record within the legal entity meets the matching condition, the user signing up is automatically linked to that record.
 - If no customer records within the legal entity meet the matching condition, Commerce will generate a new customer record that is linked to the identity provider record. 
 - If more than one customer record within the legal entity meets the matching conditions, Commerce will generate a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error with error code **Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress**.
+    - To send a user-facing message when the **CommerceIdentityNotFound** error occurs, in Commerce site builder, open your site's header module fragment, and then in the outline view, select the header module. In the properties pane on the right, for **Multiple customers found error msg**, enter a message (for example, "Your sign-up was successful, but there is an issue associating to the business user account. Please try signing in at a later time."). Then save and publish the fragment.
 
 > [!NOTE]
 > - The Commerce notifications module can be extended to display error messages to users when error conditions are met.

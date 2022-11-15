@@ -46,7 +46,7 @@ Customers who are using other apps on the finance and operations infrastructure 
 The transition for each company will depend on that company's current configuration and readiness to move to the finance and operations infrastructure. We recommend that customers work with their Microsoft partner to determine the best path forward.
 
 - Organizations that use the **Human Resources** module in Dynamics 365 Finance will be able to enable new capabilities from Dynamics 365 Human Resources as part of the regular One Version update process. New features are planned to become generally available starting in January 2022.
-- Organizations that use Dynamics 365 Human Resources will have access to tooling that they can use to complete the infrastructure merge. Microsoft will work with customers on the transition, to help prevent any interruption in service. Customers will have 12 to 18 months to make the transition, starting from the time when the migration tooling becomes available.
+- Organizations that use Dynamics 365 Human Resources will have access to tooling that they can use to complete the infrastructure merge. Microsoft will work with customers on the transition, to help prevent any interruption in service. Customers will have 12 months to make the transition, starting from the time when the migration tooling becomes available.
 - Organizations that use both Dynamics 365 Human Resources and the **Human Resources** module can move their stand-alone Human Resources infrastructure onto the finance and operations infrastructure. Another option is to use the merge tooling to bring the environments into a single environment. There is no requirement or timeframe for merging the two environments.
 
 For up-to-date information, regularly check the [Release plans](/dynamics365/release-plans/).
@@ -173,4 +173,4 @@ Microsoft is still defining what tools and resources will be available from Fast
 
 ## Licensing impact
 
-For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge FAQ](hr-infrastructure-merge-faq.md#licensing-impact).
+For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge](hr-infrastructure-merge.md#licensing).

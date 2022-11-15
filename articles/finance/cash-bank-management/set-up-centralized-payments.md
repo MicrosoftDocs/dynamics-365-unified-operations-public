@@ -4,7 +4,7 @@
 title: Set up centralized payments
 description: Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization.
 author: angelad116
-ms.date: 05/09/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

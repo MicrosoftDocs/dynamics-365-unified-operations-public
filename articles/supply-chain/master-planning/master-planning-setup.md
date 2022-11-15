@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up master planning
-description: This article describes various important strategies and parameters that are used to set up master planning.
+title: Set up master plans
+description: This article describes various important strategies and parameters that are used to set up master plans.
 author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 ---
 
-# Set up master planning
+# Set up master plans
 
 [!include [banner](../includes/banner.md)]
 

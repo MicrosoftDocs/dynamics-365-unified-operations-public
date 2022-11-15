@@ -68,6 +68,8 @@ As an alternative to installing from an app store, you can instead download the 
 - **Android:** [Warehouse Management (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
     If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
 
+For information about how install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
+
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
 To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Azure Active Directory (Azure AD). The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
@@ -276,6 +278,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
+        > Ensure the HTTPS (SSL) certificate is valid.
 
     - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 

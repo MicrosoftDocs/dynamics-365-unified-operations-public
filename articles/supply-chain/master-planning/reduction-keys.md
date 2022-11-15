@@ -238,7 +238,7 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 ## Additional resources
 
-[Master plans overview](master-plans.md)
+- [Master plans overview](master-plans.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

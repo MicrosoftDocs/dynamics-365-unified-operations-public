@@ -64,7 +64,7 @@ If you are planning to firm many orders at the same time, parallelizing the run 
 
 ## Additional resources
 
-[Master plans overview](master-plans.md)
+- [Master plans overview](master-plans.md)
 
 
 

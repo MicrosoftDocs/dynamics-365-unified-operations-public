@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,9 +51,9 @@ This task guide will show you how to set up the parameters for write-offs and th
 7. Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.
 8. Select the journal batch number for the journal that contains your write-off. One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
 9. Close the page.
-10. Close the page.
 
-## Write off transactions from the collections form.
+
+## Write off transactions from the collections page
 1. Go to **Credit and collections > Collections > Aged balances**.
 2. Select the name of the customer that has the transactions that you want to write off. For example, select Cave Wholesales (US-004).
 3. Mark the row for the first transaction.
@@ -66,7 +66,7 @@ This task guide will show you how to set up the parameters for write-offs and th
 10. Go to **General ledger > Journal entries > General journals**.
 11. Select the journal batch number for the journal that contains your write-off. One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
 12. Close the page.
-13. Close the page.
+
 
 ## Write off an invoice from the Open customers invoices page
 1. Go to **Navigation pane > Modules > Accounts receivable > Invoices > Open customer invoices**.

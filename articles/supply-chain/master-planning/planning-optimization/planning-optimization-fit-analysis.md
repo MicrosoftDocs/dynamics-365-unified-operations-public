@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../../includes/banner.md)]
 
-You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization is not equal to the current built-in master planning functionality. We recommend that you work with your partner and read the documentation to prepare for the migration. 
+You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization is not equal to the deprecated master planning engine functionality. We recommend that you work with your partner and read the documentation to prepare for the migration.
 
-Planning Optimization fit analysis helps you to identify where the result might differ between the built-in master planning engine and Planning Optimization. This analysis is done based on your current setup and data. 
+Planning Optimization fit analysis helps you to identify where the result might differ between the deprecated master planning engine and Planning Optimization. This analysis is done based on your current setup and data. 
 
 To see the Planning Optimization fit analysis result, go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**, and then select **Run analysis**. If the analysis finds any inconsistencies, they are listed on the same page. (The analysis can take a few minutes to run.)
 
@@ -65,9 +65,8 @@ The following table shows the various results that can be shown after a fit anal
 | --- | --- | --- | --- |
 | Actions | Coverage groups with Actions calculation enabled: *\#* | This feature is now supported. | Supported |
 | Base calendars | Calendars using base calendar: *\#* | This feature is now supported. | Supported | 
-| Batch disposition codes | Non-nettable batch disposition masters: *\#* | This feature is pending. Currently, batch disposition codes are ignored when Planning Optimization is enabled. | 2022 release wave 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Batch disposition codes | Non-nettable batch disposition masters: *\#* | This feature is now supported. For additional information, see [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) | Supported |
 | Capable to promise (CTP) | Default order settings with delivery date control set to CTP: *\#* | In Supply Chain Management 10.0.28 and newer, a process called *CTP for Planning Optimization* makes confirmed ship and receipt dates available after the dynamic plan has been run. For older versions of Supply Chain Management, the legacy CTP setting is ignored when Planning Optimization is enabled. | Supported |
-| Copy static to dynamic plan | Copy of static to dynamic plan is enabled on the master planning parameters. | Planning Optimization doesn't copy the static plan to the dynamic plan, regardless of this setting. In general, this concept is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. | N/A |
 | Firming | Coverage groups with auto firming time fence set: *\#* | In version 10.0.7 and later, firming is supported as a separate firming batch job after master planning is completed (provided the *Auto-firming for Planning Optimization* feature has been enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Note that auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
 | Firming | Item coverage records with auto firming set: *\#* | In version 10.0.7 and later, auto firming is supported as a separate firming batch job after master planning is completed (provided the *Auto-firming for Planning Optimization* feature has been enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Note that auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
 | Firming | Master plans with auto firming set: *\#* | In version 10.0.7 and later, auto firming is supported as a separate firming batch job after master planning is completed (provided the *Auto-firming for Planning Optimization* feature has been enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Note that auto firming for Planning Optimization is based on the order date (start date), not the requirement date (end date). This behavior ensures that firming of planned orders occurs in due time, without having to include lead time in the firming time fence. | Supported |
@@ -96,34 +95,27 @@ The following table shows the various results that can be shown after a fit anal
 | Production | Formula versions with Co/By products: *\#* | This feature is pending. Currently, co-products and by-products that are associated with the formula version are ignored when Planning Optimization is enabled. | 2022 release wave 2 |
 | Production | Formula versions with Yield: *\#* | This feature is pending. Currently, yield that is associated with the formula version is ignored when Planning Optimization is enabled. | 2022 release wave 2 |
 | Production | Plans including sequencing: *\#* | This feature is pending. Currently, sequencing is ignored when Planning Optimization is enabled, regardless of this setting. | 2022 release wave 2 |
-| Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is pending. Currently, if a production order is delayed, then master planning will assume that it will be completed today. This is relevant for released production orders where a delivery date is in the past, but it has not been completed yet. | Future wave |
+| Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is pending. Currently, if a production order is delayed, then master planning will assume that it will be completed today. This is relevant for released production orders where a delivery date is in the past, but it has not been completed yet. | 2022 release wave 2 |
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
-| Production | Sales line reservation using explosion: *\#* | Sales line reservation that uses explosion isn't supported when Planning Optimization is enabled. | Future wave |
-| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders isn't supported when Planning Optimization is enabled. Production orders can be scheduled individually. | Future wave |
+| Production | Sales line reservation using explosion: *\#* | Sales line reservation that uses explosion isn't supported when Planning Optimization is enabled. | 2022 release wave 2 |
+| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders isn't supported when Planning Optimization is enabled. Production orders can be scheduled individually. | 2022 release wave 2 |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is pending. Currently, requests for quotation (RFQs) aren't considered as demand when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. For additional information, see [Purchase requisitions](purchase-requisitions.md) | Supported |
 | Safety margins | Coverage groups with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) | Supported |
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) |  Supported |
-| Safety stock fulfillment | Item coverage records with "Fulfill minimum" different from "Today's date + procurement time": *\#* | Planning Optimization always uses *Today's date + procurement time*. This change is made to prepare for a simplified planning setup in the future, and to provide an actionable result. If the procurement time isn't included for safety stock, planned orders that are created for current low on-hand inventory will always be delayed because of the lead time. This behavior can cause significant noise and unwanted planned orders. The best practice is to change the setting so that *Today's date + procurement time* is used. Update master data to avoid warnings. | N/A |
-| Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 or later |
+| Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
 
 ## Additional resources
 
-[Planning Optimization overview](planning-optimization-overview.md)
-
-[Get started with Planning Optimization](get-started.md)
-
-[Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md)
-
-[Parameters not used by Planning Optimization](not-used-parameters.md)
-
-[View plan history and planning logs](plan-history-logs.md)
-
-[Apply filters to a plan](plan-filters.md)
-
-[Cancel a planning job](cancel-planning-job.md)
+- [Master planning system architecture](../master-planning-architecture.md)
+- [Get started with master planning](get-started.md)
+- [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md)
+- [Parameters not used by Planning Optimization](not-used-parameters.md)
+- [View plan history and planning logs](plan-history-logs.md)
+- [Run planning for a subset of items](plan-filters.md)
+- [Cancel a planning job](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

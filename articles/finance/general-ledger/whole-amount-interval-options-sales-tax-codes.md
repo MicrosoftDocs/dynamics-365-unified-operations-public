@@ -4,7 +4,7 @@
 title: Whole amount and Interval calculation options for sales tax codes
 description: This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 author: kailiang
-ms.date: 06/20/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

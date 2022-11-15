@@ -46,7 +46,7 @@ The following steps can be completed while the stores are still operational. The
 3. Select **Full data sync**, and specify that job **9999** (**All jobs**) should be used.
 
 > [!NOTE]
-> If your destination CSU is self-hosted, consider creating separate channel database groups to reduce the volume of unnecessary master data synchronization. 
+> If your destination CSU is self-hosted, consider creating separate channel database groups to reduce the volume of unnecessary master data synchronization. Regardless of your channel database groups configuration, the steps in this document presume that the groups containing the source CSU and the destination CSU will both have all jobs listed below performed across them. For example, if the source and destination CSUs are in different channel database groups, then both groups must have the distribution schedule jobs run together for all instances of jobs needing to be run.
 
 ### Prepare for migration
 

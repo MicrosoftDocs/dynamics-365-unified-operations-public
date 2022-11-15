@@ -26,7 +26,7 @@ Microsoft creates Help in multiple languages for the locales that are supported 
 
 You can use Microsoft Help content as a baseline for content that describes your solution. The [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool can retrieve the content from Markdown files in Microsoft repositories (repos) and convert it to HTML files.
 
-For more information about how to use existing Microsoft content as a baseline for content that describes your solution, see [Extend, customize, collaborate on the Help](contributor-guide.md).
+For more information about how to use existing Microsoft content as a baseline for content that describes your solution, see [Extend and collaborate on the Help](contributor-guide.md).
 
 ## Migrating content from existing AX 2012 Help content
 

@@ -1,8 +1,8 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.30. 
 author: kamaybac
-ms.date: 09/08/2022
+ms.date: 11/07/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -13,12 +13,11 @@ ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
 
 - **Preview of release:** September 2022
 - **General availability of release (self-update):** October 2022
@@ -30,8 +29,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Inventory and logistics | [Track soft reserved quantities within allocations](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/track-soft-reserved-quantities-within-allocations) | [Inventory Visibility inventory allocation](../inventory/inventory-visibility-allocation.md) |  Enabled by [service configuration](../inventory/inventory-visibility-configuration.md) |
 | Manufacturing | [Monitor equipment with Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence home page](../sensor-data-intelligence/sdi-home-page.md) | Feature management:<br>*(Preview) Sensor Data Intelligence* |
-| Warehouse management | Multi-level detours for the Warehouse Management mobile app <!-- KFM: Add link when RP updates --> | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management:<br>*Multi-level detours for the Warehouse Management mobile app* |
+| Warehouse management | [Multilevel detours for the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management:<br>*Multi-level detours for the Warehouse Management mobile app* |
 
 ## Feature enhancements included in this release
 
@@ -48,11 +48,11 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+For information about the bug fixes included in each of the updates that are part of version 10.0.30, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 

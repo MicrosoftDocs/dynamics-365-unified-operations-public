@@ -133,44 +133,46 @@ The following table shows an example of a hardware layout. This example is used 
 
 | Machine purpose          | Service Fabric node type | Machine name    | IP address    |
 |--------------------------|--------------------------|-----------------|---------------|
-| Domain controller        |                          | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                    |                          | DAX7SQLAOADFS1  | 10.179.108.3  |
-| File server              |                          | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On cluster    |                          | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                          |                          | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                          |                          | DAX7SQLAOSQLA   | 10.179.108.9  |
-| Client                   |                          | SQLAOCLIENT1    | 10.179.108.11 |
-| AOS 1                    | AOSNodeType              | SQLAOSF1AOS1    | 10.179.108.12 |
-| AOS 2                    | AOSNodeType              | SQLAOSF1AOS2    | 10.179.108.13 |
-| AOS 3                    | AOSNodeType              | SQLAOSF1AOS3    | 10.179.108.14 |
-| Orchestrator 1           | OrchestratorType         | SQLAOSF1ORCH1   | 10.179.108.21 |
-| Orchestrator 2           | OrchestratorType         | SQLAOSF1ORCH2   | 10.179.108.22 |
-| Orchestrator 3           | OrchestratorType         | SQLAOSF1ORCH3   | 10.179.108.23 |
-| Management Reporter node | MRType                   | SQLAOSMR1       | 10.179.108.31 |
-| SSRS node 1              | ReportServerType         | SQLAOSFBI1      | 10.179.108.41 |
+| Domain controller        |                          | LBDEN01DC1      | 10.179.108.2  |
+| AD FS                    |                          | LBDEN01ADFS1    | 10.179.108.3  |
+| File server              |                          | LBDEN01FS01     | 10.179.108.4  |
+| SQL Always-On cluster    |                          | LBDEN01SQLA01   | 10.179.108.5  |
+|                          |                          | LBDEN01SQLA02   | 10.179.108.6  |
+|                          |                          | LBDEN01SQLA     | 10.179.108.9  |
+| AOS 1                    | AOSNodeType              | LBDEN01SFAOS1   | 10.179.108.11 |
+| AOS 2                    | AOSNodeType              | LBDEN01SFAOS2   | 10.179.108.12 |
+| AOS 3                    | AOSNodeType              | LBDEN01SFAOS3   | 10.179.108.13 |
+| Orchestrator 1           | OrchestratorType         | LBDEN01SFORCH1  | 10.179.108.21 |
+| Orchestrator 2           | OrchestratorType         | LBDEN01SFORCH2  | 10.179.108.22 |
+| Orchestrator 3           | OrchestratorType         | LBDEN01SFORCH3  | 10.179.108.23 |
+| Management Reporter node | MRType                   | LBDEN01SFMR1    | 10.179.108.31 |
+| SSRS node 1              | ReportServerType         | LBDEN01SFBI1    | 10.179.108.41 |
+| Client                   |                          | LBDEN01CLIENT1  | 10.179.108.51 |
+
 
 The following table shows an example of a hardware layout where batch execution and interactive sessions are run in dedicated nodes. For more information, see [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md).
 
 | Machine purpose          | Service Fabric node type   | Machine name    | IP address    |
 |--------------------------|----------------------------|-----------------|---------------|
-| Domain controller        |                            | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                    |                            | DAX7SQLAOADFS1  | 10.179.108.3  |
-| File server              |                            | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On cluster    |                            | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                          |                            | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                          |                            | DAX7SQLAOSQLA   | 10.179.108.9  |
-| Client                   |                            | SQLAOCLIENT1    | 10.179.108.11 |
-| AOS 1                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS1    | 10.179.108.12 |
-| AOS 2                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS2    | 10.179.108.13 |
-| AOS 3                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS3    | 10.179.108.14 |
-| AOS 4                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS4    | 10.179.108.15 |
-| AOS 5                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS5    | 10.179.108.16 |
-| AOS 6                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS6    | 10.179.108.17 |
-| Orchestrator 1           | OrchestratorType           | SQLAOSF1ORCH1   | 10.179.108.21 |
-| Orchestrator 2           | OrchestratorType           | SQLAOSF1ORCH2   | 10.179.108.22 |
-| Orchestrator 3           | OrchestratorType           | SQLAOSF1ORCH3   | 10.179.108.23 |
-| Management Reporter node | MRType                     | SQLAOSMR1       | 10.179.108.31 |
-| SSRS node 1              | ReportServerType           | SQLAOSFBI1      | 10.179.108.41 |
+| Domain controller        |                            | LBDEN01DC1      | 10.179.108.2  |
+| AD FS                    |                            | LBDEN01ADFS1    | 10.179.108.3  |
+| File server              |                            | LBDEN01FS01     | 10.179.108.4  |
+| SQL Always-On cluster    |                            | LBDEN01SQLA01   | 10.179.108.5  |
+|                          |                            | LBDEN01SQLA02   | 10.179.108.6  |
+|                          |                            | LBDEN01SQLA     | 10.179.108.9  |
+| AOS 1                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS1   | 10.179.108.11 |
+| AOS 2                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS2   | 10.179.108.12 |
+| AOS 3                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS3   | 10.179.108.13 |
+| AOS 4                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS4   | 10.179.108.14 |
+| AOS 5                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS5   | 10.179.108.15 |
+| AOS 6                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS6   | 10.179.108.16 |
+| Orchestrator 1           | OrchestratorType           | LBDEN01SFORCH1  | 10.179.108.21 |
+| Orchestrator 2           | OrchestratorType           | LBDEN01SFORCH2  | 10.179.108.22 |
+| Orchestrator 3           | OrchestratorType           | LBDEN01SFORCH3  | 10.179.108.23 |
+| Management Reporter node | MRType                     | LBDEN01SFMR1    | 10.179.108.31 |
+| SSRS node 1              | ReportServerType           | LBDEN01SFBI1    | 10.179.108.41 |
+| Client                   |                            | LBDEN01CLIENT1  | 10.179.108.51 |
+
 
 ## Overview of the setup process
 
@@ -256,7 +258,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
-| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine DAX7SQLAOSQLA, the certificate's Domain Name System (DNS) name is DAX7SQLAOSQLA.contoso.com.</p><ul><li>**Common name (CN):** DAX7SQLAOSQLA.contoso.com</li><li>**DNS name:** DAX7SQLAOSQLA.contoso.com</li></ul> |
+| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine LBDEN01SQLA01, the certificate's Domain Name System (DNS) name is LBDEN01SQLA01.contoso.com.</p><ul><li>**Common name (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS name:** LBDEN01SQLA01.contoso.com</li></ul> |
 | Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that is presented to the client that connects to the cluster. | <p>For this certificate, you can also use the wildcard SSL certificate for your domain, such as \*.contoso.com. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
 | Service Fabric Client certificate            | Clients use this certificate to view and manage the Service Fabric cluster. | <ul><li>**CN:** client.d365ffo.onprem.contoso.com</li><li>**DNS name:** client.d365ffo.onprem.contoso.com</li></ul> |
 | Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and should not include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
@@ -377,7 +379,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> It's important that you put the **Infrastructure** folder in a file share. In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
+> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -441,9 +443,9 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
 You must set up the following SMB 3.0 file shares:
 
-- A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage).
-- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent).
-- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\DAX7SQLAOFILE1\\DiagnosticsStore).
+- A file share that stores user documents that are uploaded to AOS (for example, \\\\LBDEN01FS01\\aos-storage).
+- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\LBDEN01FS01\\agent).
+- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\LBDEN01FS01\\DiagnosticsStore).
 
     > [!WARNING]
     > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
@@ -460,7 +462,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
-2. Set up the **\\\\DAX7SQLAOFILE1\\aos-storage** file share:
+2. Set up the **\\\\LBDEN01FS01\\aos-storage** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
@@ -472,13 +474,13 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > [!NOTE]
     > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
 
-3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
+3. Set up the **\\\\LBDEN01FS01\\agent** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
 
-4. Optional: Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
+4. Optional: Set up the **\\\\LBDEN01FS01\\DiagnosticsStore** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
@@ -489,6 +491,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
+    > Avoid using named instances. If you use named instances, you might encounter issues, because the documentation and scripts assume that default instances are used.
+    >
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
@@ -555,6 +559,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
     > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
+    > - Do **not** use named instances when you set up the database engine or the SSRS service.
     > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the following steps. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 1. For each BI node, follow these steps:
@@ -612,7 +617,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
 
 > [!IMPORTANT]
-> - Make sure that the Management Studio setup is in english US.
+> - Make sure that the Management Studio setup is in US English.
 > - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table. Rename any files that don't have the expected name. Otherwise, you will encounter errors when you run the Configure-PreReqs.ps1 script.
 
 Next, follow these steps for each VM, or use remoting from a single machine.
@@ -1003,7 +1008,7 @@ Finally, verify that you can access the AD FS OpenID configuration URL on a Serv
 
 If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD FS configuration, and it will indicate that your AD FS URL is trusted.
 
-You've now completed the setup of the infrastructure. The following sections describe how set up your connector and deploy your Finance + Operations environment in LCS.
+You've now completed the setup of the infrastructure. The following sections describe how to set up your connector and deploy your Finance + Operations environment in LCS.
 
 ### <a name="configureconnector"></a>Step 20. Configure a connector and install an on-premises local agent
 

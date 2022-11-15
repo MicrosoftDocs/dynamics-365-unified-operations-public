@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources infrastructure merge FAQ
 description: This article answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and finance and operations apps.
 author: twheeloc
-ms.date: 08/13/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 

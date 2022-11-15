@@ -38,8 +38,8 @@ This article explains how to use the same instance of Active Directory Federatio
 ## Existing deployments
 
 1. Download the new local agent version from Microsoft Dynamics Lifecycle Services (LCS). It should be version 2.2.0 or later.
-2. Download the new version of the local agent configuration file, because it has additional configuration that is required for this functionality.
-3. Modify the new local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
+2. Update your agent configuration in LCS by setting the deployment option to **Enable AD FS Microsoft 365 Compatibility**.
+3. Download the new version of the local agent configuration file.
 4. Run the following command to uninstall the old local agent version from your cluster.
 
     ```powershell
@@ -69,6 +69,7 @@ This article explains how to use the same instance of Active Directory Federatio
 12. Execute the Reset-Sid.ps1 script.
     
     ```powershell
+    Import-Module ".\D365FO-OP" -Force
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
 

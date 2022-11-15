@@ -54,8 +54,8 @@ In RCS, you use the **Deploy** command to publish an electronic invoicing featur
 2. On the **Versions** tab on the right side of the page, select the electronic invoicing feature version that you want to deploy to the service environment or connected application. The selected version must have a status of **Complete** or **Published**.
 3. Select **Deploy**, and then select one or both of the following options to define the target of the deployment:
 
-    - **Connected application** – The configuration that is provided by the application setup is written in the instance of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management that was previously associated with it.
-    - **Service environment** – The electronic invoicing feature version is deployed to the service environment. Electronic invoicing is then ready to receive and process electronic documents that Finance or Supply Chain Management sends.
+    - **Connected application** – This is optional, but must be used if you want the configuration that's provided by the application setup be written in the instance of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management that was previously associated with it. Skipping this type of deployment requires manual configuration of the parameters defined in the application setup of Finance or Supply Chain Management.
+    - **Service environment** – This deploys the electronic invoicing feature version to the service environment. Electronic invoicing is then ready to receive and process electronic documents that Finance or Supply Chain Management sends.
 
 > [!NOTE]
 > Usually, you will change the parameters of the Electronic reporting (ER) feature that must be deployed to the service environment. Changes to the connected application will be rare. You should deploy new versions to the connected application only when you change the corresponding parameters of your application.

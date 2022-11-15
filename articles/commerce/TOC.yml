@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.31 (February 2023)
+          href: get-started/whats-new-commerce-10-0-31.md
         - name: Commerce 10.0.30 (November 2022)
           href: get-started/whats-new-commerce-10-0-30.md
         - name: Commerce 10.0.29 (October 2022)
@@ -254,8 +256,6 @@
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
           href: https://www.microsoft.com/download/details.aspx?id=103896
-        - name: Commerce offline implementation and troubleshooting
-          href: dev-itpro/implementation-considerations-offline.md
         - name: Publish an online store catalog
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
@@ -394,12 +394,16 @@
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
+          - name: Store Commerce app capabilities
+            href: store-commerce-capabilities.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
+          - name: Commerce offline implementation and troubleshooting
+            href: dev-itpro/implementation-considerations-offline.md
           - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
@@ -568,6 +572,8 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+          - name: Limit payment token usage
+            href: dev-itpro/limit-token-usage.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
           - name: Configure credit card processing
@@ -888,6 +894,8 @@
         href: async-customer-mode.md
       - name: Convert asynchronous customers to synchronous customers
         href: convert-async-to-sync.md
+      - name: Audit synchronization of customer operations
+        href: audit-async-customer-operations.md
       - name: Asynchronous customer creation mode FAQ
         href: async-customer-mode-faq.md
       - name: Clienteling
@@ -1234,6 +1242,8 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
+          - name: Checkout module error reference codes
+            href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
           - name: Shipping address module
@@ -1296,8 +1306,14 @@
             href: cookie-consent-module.md
         - name: Chat modules
           items:
-          - name: Commerce chat module
+          - name: Commerce chat features overview
+            href: commerce-chat-overview.md
+          - name: Commerce Chat with Omnichannel for Customer Service module
             href: commerce-chat-module.md
+          - name: Commerce Chat with Power Virtual Agents module
+            href: chat-module-pva.md
+          - name: Commerce chat module proactive chat parameters
+            href: chat-proactive-chat-parameters.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview

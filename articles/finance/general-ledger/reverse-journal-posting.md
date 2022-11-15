@@ -33,7 +33,7 @@ You can reverse journal lines individually. With reverse journal posting, you ca
 To reverse a journal: 
 
 - Filter on the posted journals and open the **Lines** view on the journal.
-- Select the **Reverse** menu at the top of the page.
+- Select the **Reverse entire journal** menu at the top of the page.
 - You will see the total number of vouchers and voucher lines as well as the total amount of the lines being reversed.
 - Select **Yes** to use the existing transaction dates or **No** to enter a new one. In some cases, the period of the original transaction may be closed and you must enter a new transaction date for the reversal.
 - If you select **No**, enter a transaction date for the reversal. 

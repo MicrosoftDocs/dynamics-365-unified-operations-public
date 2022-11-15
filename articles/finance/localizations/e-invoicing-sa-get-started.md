@@ -64,7 +64,7 @@ Some of the parameters from the **Saudi Arabian electronic invoice (SA)** electr
 
 8. On the **Setups** tab, select **Edit** for the selected configuration. 
 9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. In Key Vault, create certificates for Cryptographic Stamp Identifiers (CSIDs). For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
+10. In Key Vault, create certificates and secrets for Cryptographic Stamp Identifiers (CSIDs). For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
 
     > [!NOTE]
     > Depending on your place in the [onboarding](#onboarding) process, create a Compliance CSID (CCSID) or a Production CSID (PCSID).
@@ -93,6 +93,8 @@ Some of the parameters from the **Saudi Arabian electronic invoice (SA)** electr
     4. In the **Value** field, select **Invoice clearance** for tax invoices or **Invoice reporting** for simplified invoices.
     5. Select the **Certificate name** name.
     6. In the **Value** field, select **CCSID** or **PCSID**, depending on your place in the [onboarding](#onboarding) process.
+    7. Select the **Secret name** name.
+    8. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process. 
 
 19. Repeat steps 13 through 17 for the **Project invoice** and **Retail simplified invoice** feature setup. 
 19. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).

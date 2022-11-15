@@ -2,7 +2,7 @@
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,6 +37,7 @@ The following columns specify where the operations can be invoked:
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
+> For additional details regarding offline features and configuration, refer to the [Commerce offline implementation and troubleshooting](dev-itpro/implementation-considerations-offline.md) article.
 
 | ID   | Operation                                         | Description                                                                                                                                                                                                    | User operations    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
@@ -96,7 +97,7 @@ The following columns specify where the operations can be invoked:
 | 212  | Fleet card info                                   | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 213  | Pay credit memo                                   | Accept a credit memo (voucher) that the store issued.                                                                                                                                                          | Yes            | Yes                | No             | No                | No              |
 | 214  | Pay gift card                                     | Accept a gift card that the store issued.                                                                                                                                                                      | Yes            | Yes                | No             | No                | No              |
-| 215  | Cash out gift card                                | This operation isn't supported.                                                                                                                                                                                | Yes            | Yes                | No             | No                | No              |
+| 215  | Cash out gift card                                | Credit transaction with full amount of gift card remaining balance if within the configured cash out limit.                                                                                                                                                                              | Yes            | Yes                | No             | No                | No              |
 | 216  | Pay card exact                                    | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 217  | Pay check exact                                   | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 218  | Pay customer account exact                        | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
