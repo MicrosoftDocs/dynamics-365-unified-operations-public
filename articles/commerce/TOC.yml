@@ -1008,7 +1008,7 @@
           href: upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
           items:
-          - name: Set up a B2C tenant in Commerce
+          - name: Set up a B2C tenant
             href: set-up-B2C-tenant.md
           - name: Create or link to an existing Azure AD B2C tenant
             href: create-link-aad-b2c-tenant.md
@@ -1018,7 +1018,7 @@
             href: create-user-flow-policies.md
           - name: Add social identity providers
             href: add-social-identity-providers.md
-          - name: Update Commerce headquarters with new Azure AD B2C information
+          - name: Update Commerce headquarters with Azure AD B2C information
             href: update-hq-aad-b2c-info.md
           - name: Configure your B2C tenant in site builder
             href: config-b2c-tenant-site-builder.md
