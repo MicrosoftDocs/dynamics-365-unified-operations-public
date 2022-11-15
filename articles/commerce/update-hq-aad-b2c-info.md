@@ -28,7 +28,7 @@ To update headquarters with the new Azure AD B2C information, follow these steps
     1. In the **Name** box, enter a name for your issuer record.
     1. In the **Type** box, enter **Azure AD B2C (id_token)**.
 1. Under **Relying Parties**, with the above B2C identity provider item selected, do the following:
-    1. In the **ClientID** box, enter your B2C application ID. You can find this in the **Application ID** box of your B2C application's properties page.
+    1. In the **ClientID** box, enter your B2C application ID, which you can find in the **Application ID** box of your B2C application's properties page.
     1. In the **Type** box, enter **Public**.
     1. In the **User Type** box, enter **Customer**.
 1. On the action pane, select **Save**.
@@ -42,8 +42,8 @@ To obtain your identity provider issuer string, follow these steps.
 
 1. On the Azure AD B2C page of the Azure portal, navigate to your **Sign up and sign in** user flow.
 1. Select **Page layouts** in the left navigation menu, under **Layout name** select **Unified sign up or sign in page**, and then select **Run user flow**.
-1. Ensure that your application is set to your intended Azure AD B2C application created above, and then select the user flow link that appears under the **Run user flow** header that includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``. (Do not select **Run user flow**.) A new tab will open displaying metadata for the policy to collect the issuer string.
-1. On the metadata page displayed in your browser tab, copy the identity provider issuer string (the value for **issuer** starting with "https://" and ending with "/v2.0/" ) that looks similar to the following example.
+1. Ensure that your application is set to your intended Azure AD B2C application created above, and then select the user flow link that appears under the **Run user flow** header that includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``. (Don't select **Run user flow**.) A new tab will open displaying metadata for the policy to collect the issuer string.
+1. On the metadata page displayed in your browser tab, copy the identity provider issuer string (the value for **issuer** starting with "https://" and ending with "/v2.0/") that looks similar to the following example.
    - ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
  
 **OR**: To construct the same metadata URL manually, do the following steps.
