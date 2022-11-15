@@ -129,7 +129,7 @@ You should attend to any project data that wasn't automatically transferred and 
 
 The source project is then locked after successful migration, and data will be in read-only mode.  If you still have cloud-hosted environments deployed on the source project, you will still be allowed to deallocate and delete them despite the source project being locked.  This is to allow for cleaning up any resources as required on the source project.
 
-Microsoft will store the source project for up to one year until it will be automatically deleted.  Customers can certainly delete the source project sooner to remove the data from the source geography.
+Microsoft will store the source project for up to one year until it will be automatically deleted.  You can delete the source project sooner to remove the data from the source geography.
 
 ## Frequently asked questions (FAQ)
 
