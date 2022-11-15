@@ -69,6 +69,9 @@ The following features are required for omni-channel Commerce order payments to 
 | Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
 
+> [!NOTE]
+> If planning to accept multiple payment methods for online orders in your Online Channel (example: Loyalty points and credit card payment for the transaction) the **Omni-channel Commerce order payments** feature management feature and the call center **Enable order completion** (found in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**)  must both be **Enabled** to properly accept multiple payment methods for online orders. **Enable order completion** will be hidden and on by default if the **Omni-channel Commerce order payments** feature management feature is enabled.
+
 ### Configure prerequisites
 
 #### Map payment methods to operations
