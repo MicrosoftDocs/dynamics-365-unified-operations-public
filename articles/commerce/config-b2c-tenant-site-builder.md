@@ -2,7 +2,7 @@
 title: Configure your B2C tenant in Commerce site builder
 description: This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -78,11 +78,9 @@ To associate the B2C application to your site and channel, follow these steps.
 1. In the channel properties pane on the right, select your B2C application name from the **Select B2C Application** drop-down menu.
 1. Select **Close**, and then select **Save and Publish**.
 
+## Next steps
 
-
-
-Proceed to the next step: [Additional B2C information](additional-b2c-info.md)
-
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Additional B2C information](additional-b2c-info.md).
 
 ## Additional resources
 
