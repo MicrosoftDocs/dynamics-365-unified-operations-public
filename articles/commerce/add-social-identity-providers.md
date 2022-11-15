@@ -1,8 +1,8 @@
 ---
 title: Add social identity providers (Optional)
-description: This article describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+description: This article describes how to add social identity providers in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -15,6 +15,8 @@ ms.search.validFrom: 2020-02-13
 # Add social identity providers (Optional)
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to add social identity providers in the Microsoft Azure portal.
 
 Social identity providers allow users to use their social accounts for authentication. Adding social identity provider authentication is optional in Dynamics 365 Commerce. 
 
@@ -68,11 +70,9 @@ The following image shows an example of a default sign-in screen with a social i
  
 ![Example default login screen with Social Identity Provider sign-in button displayed.](./media/B2CImage_17.png)
 
+## Next steps
 
-
-
-Proceed to the next step: [Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
-
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
 
 ## Additional resources
 
