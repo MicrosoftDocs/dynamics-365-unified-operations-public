@@ -26,7 +26,7 @@ ms.assetid:
 
 ## Visual Studio Code Extension Release
 
-Users can now create, submit, and retrieve new DTS translation requests as well as view and manage existing resource files from VS Code. This release saves users the manual visit to our website and provides a better DTS experience from their IDE. 
+Localize AL projects and manage resource files from the editor. This extension saves users from visits to DTS by providing translation functionality in the development environment. 
 
 ### Where to download? 
 
@@ -50,7 +50,7 @@ This extension was created for Dynamics 365 Business Central users who develop e
 
 ## Visual Studio Extension Release
 
-Allows users to save time by creating translation requests and translation memories as well as regenerating the label resource files straight from Visual Studio app. Now users will not have to visit our website to submit their requests.  
+Submit translation, alignment, and regeneration requests through the F&O development environment.  This extension saves users from visits to DTS by providing translation functionality in the development environment.  
 
 ### Where to download? 
 
