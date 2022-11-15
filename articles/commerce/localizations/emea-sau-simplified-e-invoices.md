@@ -22,7 +22,7 @@ This article provides an overview of the functionality of simplified electronic 
 
 ## Overview of the electronic invoicing functionality for Saudi Arabia
 
-The electronic invoicing functionality that is available for Saudi Arabia in Commerce provides the following capabilities:
+The electronic invoicing functionality that is available to Saudi Arabia in Commerce provides the following capabilities:
 
 - Generation of an XML file of a simplified e-invoice upon concluding a sales transaction in Commerce point of sale (POS).
 - Generation of a cryptographic stamp (that is, a digital signature) for the simplified e-invoice.
@@ -33,7 +33,7 @@ For more information about the electronic invoicing requirements for Saudi Arabi
 
 The high-level, end-to-end process flow for Saudi Arabia is as follows:
 
-1. When the checkout process is completed for a sales transaction in POS, POS sends a request to generate and digitally sign an e-invoice to the Commerce runtime (CRT) via Commerce Scale Unit (CSU). The generation and digital signing of an e-invoice is implemented by using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
+1. When the checkout process is completed for a sales transaction in POS, POS sends a request to generate and digitally sign a simplified e-invoice to the Commerce runtime (CRT) via Commerce Scale Unit (CSU). The generation and digital signing of a simplified e-invoice is implemented by using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
 
     > [!NOTE]
     > If POS is in the offline mode, the generation and digital signing of an e-invoice occurs in the local copy of CRT on the POS machine.
@@ -45,10 +45,10 @@ The high-level, end-to-end process flow for Saudi Arabia is as follows:
     > [!NOTE]
     > If POS is in the offline mode, the local copy of CRT uses a digital certificate installed locally on the POS machine.
 
-1. CRT digitally signs the e-invoice data. The e-invoice and the signature, together with other information, is saved in the channel database (DB) in a fiscal transaction that is linked to the sales transaction.
-1. POS requests a sales receipt from CRT. CRT builds the receipt, including a QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
+1. CRT digitally signs the e-invoice data and generates a QR code that includes the digital signature data. The e-invoice, the signature, the QR code, and other information are saved in the channel database (DB) in a fiscal transaction that is linked to the sales transaction.
+1. POS requests a sales receipt from CRT. CRT builds the receipt, including the QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
 1. Commerce headquarters downloads the sales transaction data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the headquarters DB throughout the period of life of your production environment.
-1. Commerce headquarters extracts the e-invoice in the XML format from the fiscal transaction linked to the sales transaction and submits the e-invoice to ZATCA. The submission is done by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
+1. Commerce headquarters extracts the simplified e-invoice in the XML format from the fiscal transaction that is linked to the sales transaction and submits the e-invoice to ZATCA. The submission is done by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available to Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
 
 ## Set up Commerce for Saudi Arabia
 
@@ -67,7 +67,7 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 1. [Set up VAT](#set-up-vat-per-saudi-arabia-requirements) per the Saudi Arabia VAT regulations.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes in receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable generation and digital signing of simplified e-invoices.
-1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
+1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel side.
 1. [Specify Electronic reporting (ER) configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS and submit these simplified e-invoices from Commerce headquarters.
 1. [Configure e-invoice submission](#configure-e-invoice-submission) for simplified e-invoices generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
@@ -101,7 +101,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 |---------------------------------|---------|-----------------|
 | INVOICEQRCODE_SA                | Receipt | 900001          |
 
-On the **Commerce parameters** page, on the **Configuration parameters** tab, add the following records^
+On the **Commerce parameters** page, on the **Configuration parameters** tab, add the following records:
 
 | Name                                   | Value    |
 |----------------------------------------|----------|
@@ -116,7 +116,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 - **Footer:** Add the following fields:
 
-    - **QR Code** – This field the QR code for the receipt.
+    - **QR Code** – This field prints the QR code for the receipt.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
@@ -152,7 +152,7 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 
 ### Configure the digital signature parameters
 
-You must configure certificates that will be used for digital signing of simplified e-invoices. The signing is done by using digital certificates that are stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+You must configure certificates that will be used for digital signing of simplified e-invoices. The signing is done by using digital certificates that are stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters aren't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 <!-- NEED TO UPDATE THE NOTE BELOW AND ADD INFORMATION ABOUT HOW TO GET CERTIFICATES FOR SAUDI ARABIA
 
@@ -165,7 +165,7 @@ To configure certificates and certificate profiles that can be used for digital 
 
 After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and then, on the **Device** FastTab, select a certificate profile that you configured earlier in the **Certificate profile** field.
 
-You can also override the connector technical profile settings and specify certificate profiles on the individual store or register level. On the **Connector technical profile** page, select the **Override** menu item and create records for the stores or registers that you need to override the certificate profiles for. See [Create connector technical profiles](./setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles) for more details on how to override connector technical profile settings.
+You can also override the connector technical profile settings and specify certificate profiles on the individual store or register level. On the **Connector technical profile** page, select the **Override** menu item and create records for the stores or registers that you need to override the certificate profiles for. For more details on how to override connector technical profile settings, see [Create connector technical profiles](./setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles).
 
 ### Specify Electronic Reporting configurations
 
@@ -174,7 +174,7 @@ Depending on your purposes, you can download the ER configurations for electroni
 - If you don't have to customize the ER configurations that are provided by Microsoft or create your own ER configurations, you can import the Microsoft-provided configurations from Microsoft Dynamics Lifecycle Services. For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 - If you must customize the ER configurations that are provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Services (RCS) environment. For more information about how to work with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
 
-You must download the following versions (or later versions) of the configurations:
+You must download the latest versions of the following configurations:
 
 - E-invoice generation configurations:
     - **Invoice model** data model
@@ -199,9 +199,9 @@ Follow these steps to set up e-invoice submission parameters that are specific t
     1. Select *Retail fiscal document mapping* in the **Electronic document model mapping** field.
     1. Select number sequences for submitted file names and batch submission IDs.
 1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
-1. On the **Electronic Invoicing**, set the following fields:
-    1. **Endpoint URL**: specify the endpoint URL of the Electronic invoicing service instance.
-    1. **Environment**: specify the name of the Electronic Invoicing environment in the Regulatory Configuration Service (RCS).
+1. On the **Electronic Invoicing** tab, set the following fields:
+    1. **Endpoint URL**: specify the endpoint URL of the Electronic invoicing service instance that you are using.
+    1. **Environment**: specify the name of your Electronic Invoicing environment in the Regulatory Configuration Service (RCS).
 
 ### Enable the digital signature in offline mode
 
