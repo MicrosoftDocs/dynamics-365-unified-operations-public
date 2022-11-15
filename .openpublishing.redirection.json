@@ -1469,7 +1469,7 @@
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md",
-      "redirect_url": "setup-deploy-on-premises-pu12",
+      "redirect_url": "setup-deploy-on-premises-latest",
       "redirect_document_id": "false"
     },
     {
@@ -7239,12 +7239,7 @@
     },
     {
       "source_path": "articles/dev-itpro/deployment/setup-deploy-on-premises-pu12.md",
-      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "articles/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md",
-      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-latest",
       "redirect_document_id": "false"
     },
     {
