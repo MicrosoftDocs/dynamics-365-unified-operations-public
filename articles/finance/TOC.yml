@@ -1188,6 +1188,8 @@
           href: general-ledger/ledger-settlements.md
         - name: Awareness between ledger settlement and year-end close
           href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+        - name: Automate ledger settlements  
+          href: general-ledger/auto-settle.md
         - name: Foreign currency revaluation for General ledger
           href: general-ledger/foreign-currency-revaluation-general-ledger.md
         - name: General ledger account balances
