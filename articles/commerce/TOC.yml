@@ -1017,7 +1017,7 @@
           - name: Create user flow policies
             href: create-user-flow-policies.md
           - name: Add social identity providers
-            href: add-social-identity-providers
+            href: add-social-identity-providers.md
           - name: Update Commerce headquarters with new Azure AD B2C information
             href: update-hq-aad-b2c-info.md
           - name: Configure your B2C tenant in site builder
