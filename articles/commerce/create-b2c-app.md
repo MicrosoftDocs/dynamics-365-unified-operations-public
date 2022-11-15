@@ -1,8 +1,8 @@
 ---
 title: Create the B2C application
-description: This article describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+description: This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -16,7 +16,9 @@ ms.search.validFrom: 2020-02-13
 
 [!include [banner](includes/banner.md)]
 
-Once the B2C tenant has been created, you will create a B2C application within your new Azure AD B2C tenant to interact with Commerce.
+This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
+
+Once your B2C tenant has been created, you'll create a B2C application within your new Azure Active Directory (Azure AD) tenant to interact with Commerce.
 
 To create the B2C application, follow these steps.
 
@@ -41,9 +43,7 @@ In the **Reply URL** box on the **Azure AD B2c - Applications \> New application
 - ``https://www.fabrikam.com/_msdyn365/authresp`` (The domain should match the e-commerce domain completely. If you have multiple domains, you need to add this URL for each domain.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
-
-Proceed to the next step: [Create user flow policies](create-user-flow-policies.md)
-
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Create user flow policies](create-user-flow-policies.md).
 
 ## Additional resources
 
