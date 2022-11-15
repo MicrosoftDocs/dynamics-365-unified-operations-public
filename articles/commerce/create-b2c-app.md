@@ -49,25 +49,19 @@ To continue the process of setting up a B2C tenant in Commerce, proceed to [Crea
 
 ## Additional resources
 
-[Configure your domain name](configure-your-domain-name.md)
+[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)
 
-[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
+[Create or link to an existing Azure AD B2C tenant in the Azure portal](create-link-aad-b2c-tenant.md)
 
-[Create an e-commerce site](create-ecommerce-site.md)
+[Create user flow policies](create-user-flow-policies.md)
 
-[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
+[Add social identity providers (Optional)](add-social-identity-providers.md)
 
-[Manage robots.txt files](manage-robots-txt-files.md)
+[Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Configure your B2C tenant in Commerce site builder](config-b2c-tenant-site-builder.md)
 
-[Set up custom pages for user logins](custom-pages-user-logins.md)
-
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
-[Add support for a content delivery network (CDN)](add-cdn-support.md)
-
-[Enable location-based store detection](enable-store-detection.md)
+[Additional B2C information](additional-b2c-info.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
