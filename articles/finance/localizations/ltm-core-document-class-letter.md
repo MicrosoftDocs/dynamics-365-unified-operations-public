@@ -2,8 +2,7 @@
 title: Document class letter for Latin America
 description: This article provides information about the document class letter configuration for Latin America.
 author: Fhernandez0088
-ms.date: 11/09/2022
- can create the letter codes that are part of the fiscal document configuration that's used in transactions with third parties.
+ms.date: 11/16/2022
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -18,7 +17,7 @@ You
 
 ## Prerequisites
 
-Before you can create the letter codes for the configuration, the length of the document class letter prefix must be configured from the **LATAM Parameters** menu.
+Before you can create the letter codes for the configuration, the length of the document class letter prefix must be configured on the **LATAM Parameters** page.
 
 ## Set up a document class letter
 
