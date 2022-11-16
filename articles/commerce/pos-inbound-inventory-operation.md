@@ -24,7 +24,7 @@ In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbou
 The following video provides an overview of store inventory business processes and capabilities in Dynamics 365 Commerce.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## Prerequisite: Configure an asynchronous document framework
 
