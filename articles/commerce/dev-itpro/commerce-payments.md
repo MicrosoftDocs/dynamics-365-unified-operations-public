@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-01-01
 
 ---
 
-# Omni-channel Commerce order payments
+# Omnichannel Commerce order payments
 
 [!include [banner](../includes/banner.md)]
 
