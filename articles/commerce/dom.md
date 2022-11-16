@@ -28,6 +28,11 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
 ![Sales order lifecycle in the context of DOM.](./media/flow.png "Sales order lifecycle in the context of DOM")
 
+The following video provides an overview of DOM in Dynamcis 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+
 ## Set up DOM
 
 1. Go to **System administration \> Setup \> License configuration**.
