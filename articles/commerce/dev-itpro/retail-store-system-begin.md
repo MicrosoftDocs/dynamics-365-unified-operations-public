@@ -41,7 +41,7 @@ In scenarios where a stable internet connection is available and there is low la
 -   Direct database connectivity from POS to the channel database is not supported in the Commerce Scale Unit. The POS devices always use the Commerce Scale Unit for performing operations.
 
 > [!NOTE]
-> It is critical to note that Commerce Scale Unit (self-hosted) does not replace offline. Currently, Retail Modern POS with an offline database is the only way to have offline capabilities. 
+> It is critical to note that Commerce Scale Unit (self-hosted) does not replace offline. Currently, Store Commerce or Retail Modern POS with an offline database are the only ways to have offline capabilities. 
 
 ## Get started with Commerce Scale Unit (self-hosted)
 
