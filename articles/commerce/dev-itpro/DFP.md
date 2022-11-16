@@ -85,7 +85,7 @@ Purchase status events resemble bank events. After an order is created in the Co
 
 ### Setup
 
-After the merchant's Fraud Protection environment is available and purchase protection settings have been configured, the setup can continue in Commerce headquarters.  If the environment isn't yet configured, to complete the configuration, sign in to the [Fraud Protection portal](https://dfp.microsoft.com/) with tenant global administrator credentials.
+After the merchant's Fraud Protection environment is available and purchase protection settings have been configured, you can continue the setup in Commerce headquarters. If the environment isn't configured yet, to complete the configuration, sign in to the [Fraud Protection portal](https://dfp.microsoft.com/) with tenant global administrator credentials.
 
 #### Key Vault setup
 
