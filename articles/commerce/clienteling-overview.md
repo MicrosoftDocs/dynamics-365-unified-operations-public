@@ -4,26 +4,15 @@
 title: Clienteling overview
 description: This article provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
-ms.date: 02/01/2021
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: ["260624", "intro-internal"]
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Version 10.0.7
 
 ---
 
