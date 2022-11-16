@@ -18,9 +18,13 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. The Store Commerce app offers all the functionality of Modern POS, including integrated hardware support and offline mode.
+This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. 
 
-For more information about Store Commerce app, see [Store Commerce app](../store-commerce.md).
+The [Store Commerce app](../store-commerce.md) replaces MPOS as the point-of-sale application for Dynamics 365 Commerce. The Store Commerce app shares complete feature parity with MPOS, including integrated hardware support and offline mode. The Store Commerce app also offers improved performance as well as better deployment and management options. Read more about the benefits of Store Commerce in the [Store Commerce app](../store-commerce.md) help topic. 
+
+**Microsoft will deprecate MPOS in October 2023**. We recommend that you use the Store Commerce app or Store Commerce for web (CPOS) for all new deployments. Existing customers should plan to migrate from MPOS to Store Commerce before October 2023.
+
+If you are deploying the [Retail hybrid apps](../hybridapp.md) for Android and/or iOS, those apps will also be deprecated in favor of the Store Commerce apps for iOS and Android. See the [Store Commerce app for mobile platforms](../store-commerce-mobile.md) help topic for more information.
 
 ## Setup and configuration differences between MPOS and Store Commerce
 
@@ -33,7 +37,7 @@ For more information about Store Commerce app, see [Store Commerce app](../store
 | Device activation | Required | Required |
 | Installer | Download from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. | Download from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Modern POS (SEALED)**. |
 | Extensions | [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) | [Retail SDK](../retail-sdk/retail-sdk-overview.md) for non-sealed MPOS and [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) for sealed MPOS |
- 
+
 ## Migrate to the Store Commerce app from MPOS
 
 1. Synchronize all your transaction and custom data from the channel database to Commerce headquarters. This data includes any offline transaction and custom data.
