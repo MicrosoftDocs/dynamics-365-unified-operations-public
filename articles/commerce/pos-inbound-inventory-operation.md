@@ -2,20 +2,14 @@
 title: Inbound inventory operation in POS
 description: This article describes capabilities of the point of sale (POS) inbound inventory operation.
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.9
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-ms.search.form: 
+ms.search.validFrom: 2017-06-20
+
 ---
 
 # Inbound inventory operation in POS
