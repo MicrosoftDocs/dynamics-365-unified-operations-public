@@ -2,32 +2,23 @@
 # required metadata
 
 title: Store order fulfillment
-description: This article provides an overview of store order fulfillment. 
+description: This article provides an overview of store order fulfillment in Microsoft Dynamics 365 Commerce. 
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  RetailStoreTable, RetailTillLayout
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
-ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2017-10-30 
 
 ---
 
 # Store order fulfillment
 
 [!include [banner](includes/banner.md)]
+
+This article provides an overview of store order fulfillment in Microsoft Dynamics 365 Commerce.
 
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale.
 
