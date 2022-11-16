@@ -4,33 +4,21 @@
 title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: BrianShook
-ms.date: 10/19/2020 
+ms.date: 11/16/2022 
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: 10.0.8
 
 ---
 
 # Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
-
 
 This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
 
@@ -97,7 +85,7 @@ Purchase status events resemble bank events. After an order is created in the Co
 
 ### Setup
 
-After the merchant's Fraud Protection environment is available, and purchase protection settings have been configured, the setup can continue in the Commerce back office. Visit the [Fraud Protection portal](https://dfp.microsoft.com/), signing in with tenant global administrator credentials, for setup of your environment if not already configured.
+After the merchant's Fraud Protection environment is available, and purchase protection settings have been configured, the setup can continue in Commerce headquarters.  If the environment isn't yet configured, to complete configuration sign in to the [Fraud Protection portal](https://dfp.microsoft.com/) with tenant global administrator credentials.
 
 #### Key Vault setup
 
