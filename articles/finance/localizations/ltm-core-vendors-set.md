@@ -10,28 +10,29 @@ ms.custom: bap-template
 ---
 
 # Vendor set configuration
-You will be able to define which **Document classes** are allowed in transactions with vendors. It also will be possible to define the predetermined **Document classes** for transactions with specific vendors.
+
+You can define which **Document classes** are allowed in transactions with vendors. You can also define the predetermined **Document classes** for transactions with specific vendors.
+
 ## Prerequisites
-To complete a vendor set the **Document classes** that are included need to be previously created.
+
+To complete a vendor set, you must have already created the **Document classes** that you will include.
+
 ## Set up a customer or vendor set
-1. Access the **Vendors set** configuration from ** Accounts payable > Setup > LATAM > Vendors set**.
-2. In the **Vendors set** section complete the following fields:
 
-| Field                 | Description                                                                             |
-|-----------------------|-----------------------------------------------------------------------------------------|
-| Customer/Vendor       | This field shows if the register belons to customers or vendors.                        |
-| Customers/Vendors set | This field is completed manually with a code identifying the set that is being created. |
-| Description           | This field is completed manually with a description.                                    |
-3. Complete the **Authorized voucher** grid with the **Document classes** desired.
-4. In the **Default vouchers** section complete the following fields to set the predetermined **Document classes** when the vendor is used in a transaction:
+1. Go to **Accounts payable** > **Setup** > **LATAM** > **Vendors set**.
+2. In the **Vendors set** section, in teh **Customers/Vendors set** field, enter a code that identified the set you are creating.
+3. In the **Description** field, enter a brief description of the set.
+4. I the **Authorized voucher** grid, select the **Document classes** for the set.
+5. In the **Default vouchers** section, select or enter values in the following fields to define the predetermined **Document classes** for when the vendor is used in a transaction.
 
-| Field                | Transaction                              |
-|----------------------|------------------------------------------|
-| Purchase invoice     | Invoice from purchase order.             |
-| Purchase credit note | Credit note from purchase order.         |
-| Packing slip         | Packing slip from purchase order.        |
-| Return delivery note | Packing slip from return purchase order. |
-| Credit journal       | Credit movement in an invoice journal.   |
-| Debit journal        | Debit movement in an invoice journal.    |
-| Value document       | Payment line in a journal.               |
-5. On the Action Pane, select **Save**.
+  | Field                | Transaction                              |
+  |----------------------|------------------------------------------|
+  | Purchase invoice     | Invoice from purchase order.             |
+  | Purchase credit note | Credit note from purchase order.         |
+  | Packing slip         | Packing slip from purchase order.        |
+  | Return delivery note | Packing slip from return purchase order. |
+  | Credit journal       | Credit movement in an invoice journal.   |
+  | Debit journal        | Debit movement in an invoice journal.    |
+  | Value document       | Payment line in a journal.               |
+  
+6. On the Action Pane, select **Save**.
