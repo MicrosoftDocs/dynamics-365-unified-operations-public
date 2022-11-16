@@ -26,6 +26,11 @@ Orders for fulfillment at a specific store have the store's warehouse designated
 
 The order fulfillment operation in the point of sale provides a single work area in the point of sale that can be used to process orders. This includes everything from accepting the order, to marking it as shipped, or initiating store pickup.
 
+The following video provides an overview and demo of store fulfillment capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
+
 ## Access unified order fulfillment in the point of sale
 
 Order fulfillment, [Operation ID 928](pos-operations.md), can be used to access the store order fulfillment work area in the point of sale.
