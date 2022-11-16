@@ -28,6 +28,11 @@ You can set up your loyalty program so that they include the following options.
 - Issue loyalty cards from any channel that participates in your loyalty programs, and link loyalty cards to one or more loyalty programs that the customer can participate in. You can also link a customer record to a loyalty card, so that the customer can pool loyalty points from multiple cards and redeem them.
 - Manually adjust loyalty cards, or transfer the loyalty rewards balance from one card to another to accommodate or reward a customer.
 
+The following video provides an overview and demo of loyalty capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
+
 ## Setting up loyalty programs
 
 You must set up several components to enable the loyalty feature in Commerce. The following diagram illustrates the loyalty components and how they relate to each other.
