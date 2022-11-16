@@ -29,7 +29,7 @@ The order fulfillment operation in the point of sale provides a single work area
 The following video provides an overview and demo of store fulfillment capabilities in Dynamics 365 Commerce.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## Access unified order fulfillment in the point of sale
 
