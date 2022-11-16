@@ -21,7 +21,7 @@ In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbou
 > [!NOTE]
 > In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, there will be no further investments in it, from a functional or performance perspective, after version 10.0.9.
 
-The following video provides an overview of store inventory business processes in Dynamics 365 Commerce.
+The following video provides an overview of store inventory business processes and capabilities in Dynamics 365 Commerce.
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
