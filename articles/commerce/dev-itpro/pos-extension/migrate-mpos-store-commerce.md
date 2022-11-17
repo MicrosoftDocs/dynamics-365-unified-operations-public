@@ -2,16 +2,14 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 06/01/2022
+ms.date: 11/17/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-05-24
-ms.dyn365.ops.version: AX 10.0.25
+
 ---
 
 # Migrate Modern POS to Store Commerce
@@ -20,11 +18,11 @@ ms.dyn365.ops.version: AX 10.0.25
 
 This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. 
 
-The [Store Commerce app](../store-commerce.md) replaces MPOS as the point-of-sale application for Dynamics 365 Commerce. The Store Commerce app shares complete feature parity with MPOS, including integrated hardware support and offline mode. The Store Commerce app also offers improved performance as well as better deployment and management options. Read more about the benefits of Store Commerce in the [Store Commerce app](../store-commerce.md) help topic. 
+The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MPOS) as the POS application for Dynamics 365 Commerce. The Store Commerce app shares complete feature parity with MPOS, including integrated hardware support and offline mode. The Store Commerce app also offers improved performance, and better deployment and management options. For more information about the benefits of Store Commerce, see [Store Commerce app](../store-commerce.md). 
 
-**Microsoft will deprecate MPOS in October 2023**. We recommend that you use the Store Commerce app or Store Commerce for web (CPOS) for all new deployments. Existing customers should plan to migrate from MPOS to Store Commerce before October 2023.
-
-If you are deploying the [Retail hybrid apps](../hybridapp.md) for Android and/or iOS, those apps will also be deprecated in favor of the Store Commerce apps for iOS and Android. See the [Store Commerce app for mobile platforms](../store-commerce-mobile.md) help topic for more information.
+> [!IMPORTANT]
+> - Microsoft will deprecate MPOS in October 2023, and recommends that you use the Store Commerce app or Store Commerce for web (CPOS) for all new deployments. Existing customers should plan to migrate from MPOS to Store Commerce before October 2023.
+> - If you are deploying the [Retail hybrid apps](../hybridapp.md) for Android and/or iOS, those apps will also be deprecated in favor of the Store Commerce apps for iOS and Android. For more information, see [Store Commerce app for mobile platforms](../store-commerce-mobile.md).
 
 ## Setup and configuration differences between MPOS and Store Commerce
 
