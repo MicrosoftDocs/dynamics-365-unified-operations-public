@@ -197,7 +197,22 @@ The following example shows how to export an **Inventory value report storage** 
 1. On the **Export options** tab, select **Export now** to generate the export file.
 1. On the **Execution summary** page that appears, you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the **Inventory value** entity in the list, and then select **Download file** to download the data that was exported from that entity.
 
-For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/d`ata-import-export-job.md).
+
+## Delete an Inventory value report storage report
+
+After you have generated reports,you can view and explore them at any time under Cost management in Dynamics 365 Finance and Operations. 
+As the number of reports increase, the database space will be used up more and more. When substantial amount of databases are occupied, you may need to delete historical reports. While after deletion, the report will be removed permanently and may not generate successufully later since massive historical inventory transactions could time out.
+
+**Note**: We strongly recommend that you export and save these reports to an external storage before deleting them.
+
+Use the following procedure delete a report one by one.
+
+1. Go to **Cost management \> Inquiries and reports \> Inventory value report storage**.
+1. On the Action Pane, select **Delete**.
+1. In the dialog box, a warning message will remind you to back up generated reports, click **Yes** or **No** to proceed.
+
+For bulk deletion, please go to **Cost management \> Inquiries and reports \> Inventory value report data clean up**.
 
 ## Generate a standard Inventory value report
 
