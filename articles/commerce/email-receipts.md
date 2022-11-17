@@ -69,7 +69,7 @@ If you want to override the default option selected in **Commerce parameters** f
 
 ### Enable emailing for receipt types
 
-To enable emailing for individual receipt types within your receipt profile and specify whether cashiers are prompted to ask customers if they'd like an emailed receipt, open the receipt format for that receipt. In the **Email behavior** drop-down list, select one of the following options. 
+To enable emailing for individual receipt types within your receipt profile and to specify whether cashiers are prompted to ask customers if they'd like an emailed receipt, open the receipt format for that receipt. In the **Email behavior** drop-down list, select one of the following options. 
 - **Do not email** – Never send email receipts or prompt cashiers. This value overrides the **Email** and **Both** values on the **Commerce parameters** and **Customer profile** pages.
 - **Always email** – Always send emailed receipts, without prompting cashiers.
 - **Prompt user** – Prompt cashiers to ask customers whether they want to receive a receipt by email and, if they do, what email address the receipt should be sent to.
