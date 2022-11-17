@@ -94,7 +94,7 @@ Alternatively, you can import the officially published ER format configurations 
 
 For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-## Enable Business document management
+## !!! TO REMOVE THIS SECTION !!! Enable Business document management
 
 To start Business document management, you need to open the **Feature management** workspace and enable the **Business document management** feature.
 
