@@ -2,18 +2,14 @@
 title: Checkout module
 description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 11/04/2022
+ms.date: 11/17/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
+
 ---
 
 # Checkout module
@@ -79,7 +75,7 @@ A checkout module shows an order summary and provides the functionality for plac
     ![Example of terms and conditions on a checkout page.](./media/ecommerce-checkout-terms.PNG)
     
 > [!NOTE]
-> If planning to accept multiple payment methods for online orders in your Online Channel (example: Loyalty points and credit card payment for the transaction) the **Omni-channel Commerce order payments** feature management feature and the call center **Enable order completion** (found in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**)  must both be **Enabled** to properly accept multiple payment methods for online orders. **Enable order completion** will be hidden and on by default if the **Omni-channel Commerce order payments** feature management feature is enabled.
+> If you're planning to accept multiple payment methods for online orders in your online channel (for example, loyalty points and credit card payments), the **Omni-channel Commerce order payments** feature (in headquarters at **System administration \> Workspace \> Feature management**), and the call center **Enable order completion** setting (on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**) must both be enabled. If the **Omni-channel Commerce order payments** feature is enabled, the **Enable order completion** setting is enabled by default and hidden.
 
 ## Commerce Scale Unit interaction
 
