@@ -1,6 +1,6 @@
 ---
 title: Outbound inventory operation in POS
-description: This article describes capabilities of the point of sale (POS) outbound inventory operation in Microsoft Dynamics 365 Commerce.
+description: This article describes the capabilities of the point of sale (POS) outbound inventory operation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
 ms.date: 11/14/2022
 ms.topic: article
@@ -15,20 +15,20 @@ ms.author: hhaines
 
 [!include [banner](includes/banner.md)]
 
-This article describes capabilities of the point of sale (POS) outbound inventory operation in Microsoft Dynamics 365 Commerce.
+This article describes the capabilities of the point of sale (POS) outbound inventory operation in Microsoft Dynamics 365 Commerce.
 
 In Commerce version 10.0.10 and later, inbound and outbound operations in the point of sale (POS) replaced the picking and receiving operation.
 
 > [!NOTE]
-> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, it is recommended that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, from a functional or performance perspective there will be no further investments in it after Commerce version 10.0.9.
+> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, from a functional or performance perspective, there will be no further investments in it after Commerce version 10.0.9.
 
 ## Prerequisites
 
-Before your organization can use the outbound operation functionality, you must fulfill the following prerequisites.
+Before your organization can use the outbound operation functionality, you must complete the following prerequisites.
 
 ### Configure an asynchronous document framework
 
-For instructions on how to configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you've already configured an asynchronous document framework for other operations.
+For information about how to configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you've already configured an asynchronous document framework for other operations.
 
 ### Add Outbound operation to the POS screen layout
 
@@ -109,16 +109,16 @@ Use the **Cancel fulfillment** function on the app bar only if you want to back 
 
 If you're fulfilling the transfer order, you can use the **Pause fulfillment** function if you want to take a break from the process. For example, you might want to perform another operation from the POS, such as ringing up a customer sale, or delay posting of the shipment to headquarters.
 
-When you select **Pause fulfillment**, the document's status is changed to **Paused**. Therefore, user will know that data has been entered in the document, but the document hasn't yet been committed. When you're ready to resume the fulfillment process, select the paused document, and then select **Order details**. Any **Shipping now** quantities that were previously saved will be retained and can be viewed from the **Full order list** view.
+When you select **Pause fulfillment**, the document's status is changed to **Paused**. Therefore, the user will know that data has been entered in the document, but the document hasn't yet been committed. When you're ready to resume the fulfillment process, select the paused document, and then select **Order details**. Any **Shipping now** quantities that were previously saved will be retained and can be viewed from the **Full order list** view.
 
 ### Review
 
-Before the final commitment of the fulfillment to headquarters, you can use the **Review** function to validate the outbound document. This function alerts you to potential missing or incorrect data that may cause a processing failure, and provide you the opportunity to correct issues before submitting the fulfillment request. To enable the **Review** function on the app bar, enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in headquarters.
+Before the final commitment of the fulfillment to headquarters, you can use the **Review** function to validate the outbound document. This function alerts you to potential missing or incorrect data that may cause a processing failure, and gives you the opportunity to correct issues before submitting the fulfillment request. To enable the **Review** function on the app bar, enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in headquarters.
 
 The **Review** function validates the following issues in an outbound document:
 - **Over-shipping** – The shipping now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in headquarters.
 - **Under-shipping** – The shipping now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in headquarters.
-- **Serial number** – The serial number isn't provided or not available for a serialized item that requires a serial number to be registered in inventory.
+- **Serial number** – The serial number isn't provided or isn't available for a serialized item that requires a serial number to be registered in inventory.
 - **Location not set** – The location isn't specified for a location-controlled item where location isn't allowed to be blank.
 - **Deleted lines** – The order has lines deleted by a headquarters user that isn't known to the POS application.
 
