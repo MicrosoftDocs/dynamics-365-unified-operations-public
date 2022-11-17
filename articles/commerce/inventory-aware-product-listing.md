@@ -31,7 +31,7 @@ To enable these experiences, you must first enable the **Enhanced e-Commerce pro
 
 > [!NOTE]
 > - In Commerce version 10.0.29 and later, the **Enhanced e-Commerce product discovery to be inventory-aware** feature is enabled by default.
-> - Inventory-aware product listing is calculated in headquarters, and doesn't using channel-side inventory calculation. Discrepancies can occur between these two features.
+> - Inventory-aware product listing is calculated in headquarters and doesn't use channel-side inventory calculation. Discrepancies can occur between these two features.
 
 ## Set up product attribute for inventory availability
 
