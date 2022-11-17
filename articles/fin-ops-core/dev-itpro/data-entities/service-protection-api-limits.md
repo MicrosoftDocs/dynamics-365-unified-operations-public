@@ -90,7 +90,7 @@ To track API usage to enforce service protection API limits, each web server in 
 
 These values are taken from the access token that is used for the API request. For example, a company has an employee portal that is a web application that uses the OData API to connect to finance and operations data. Each employee signs in to the web app by using a company email address and password. In this scenario, the user object ID and the application client ID that are used in the API request are used to track usage against the service protection API limits. Each user of the application has API usage tracked and throttled independently. For more information about the authentication flow for this scenario, see [Authentication](services-home-page.md#authentication).
 
-If the application uses app authentication instead of user authentication, so that there is no user who signs in to the application, the user in the throttling key is the object ID of the application in Azure AD. For information about how to find the application object ID, see [Application and service principal objects in Azure Active Directory](../../../../azure/active-directory/develop/app-objects-and-service-principals.md#application-object).
+If the application uses app authentication instead of user authentication, so that there is no user who signs in to the application, the user in the throttling key is the object ID of the application in Azure AD. For information about how to find the application object ID, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals.md#application-object).
 
 ### Resource-based service protection API limits
 

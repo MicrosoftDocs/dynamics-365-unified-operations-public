@@ -113,8 +113,8 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 ### <a name="schedule"></a> Proactive quality update release: 10.0.30
-**App version: TBD**
-**Corresponding latest KB article: TBD**
+**App version: 10.0.1362.77**
+**Corresponding latest KB article: 767597**
 
 | Station | Regions | Upcoming Sandbox Schedule |
 |---|---|---|
