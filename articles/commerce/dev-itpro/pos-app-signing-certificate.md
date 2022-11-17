@@ -2,7 +2,7 @@
 title: Sign the MPOS .appx file with a code signing certificate
 description: This article explains how to sign MPOS with a code signing certificate.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 11/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -10,6 +10,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-2019
 ms.custom: 28021
+
 ---
 
 # Sign the MPOS .appx file with a code signing certificate
@@ -19,7 +20,6 @@ ms.custom: 28021
 To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
 
 > [NOTE]
->
 > Microsoft recommends that you proactively plan to renew and/or rotate your certificates in advance of their expiration. However, an expired MPOS certificate will only prevent the installation of new MPOS updates, and will not cause the MPOS application to stop functioning.
 
 To sign the MPOS app with a certificate, use one of these options in the **Retail SDK\\Build tool\\Customization.settings** file:
