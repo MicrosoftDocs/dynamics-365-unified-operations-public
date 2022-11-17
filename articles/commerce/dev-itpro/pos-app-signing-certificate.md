@@ -19,13 +19,12 @@ ms.custom: 28021
 
 To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
 
-> [NOTE]
+> [!NOTE]
 > Microsoft recommends that you proactively plan to renew and/or rotate your certificates in advance of their expiration. However, an expired MPOS certificate will only prevent the installation of new MPOS updates, and will not cause the MPOS application to stop functioning.
 
 To sign the MPOS app with a certificate, use one of these options in the **Retail SDK\\Build tool\\Customization.settings** file:
 
 - Add the Secure file task part of Azure DevOps build steps and upload the certificate to secure the file task. Use the secure file task output path variable as a parameter in the Customization.settings file.
-
     > [!NOTE]
     > The Secure File task doesn’t support a password protected certificate. You must remove the password before uploading this task. Because the certificate is uploaded to the secure file system task in Azure, you can remove the password only for this step. However, you should discuss removing the password with your security experts to determine if this is the correct action for your project. Don’t remove the certificate password for other scenarios.
 - Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Microsoft-hosted agent or build user should have access to this path and file.
