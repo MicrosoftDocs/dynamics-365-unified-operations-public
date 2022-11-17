@@ -2,20 +2,14 @@
 title: Support for external gift cards
 description: This article provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/04/2022
+ms.date: 11/17/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-10-02
-ms.dyn365.ops.version: Application update 4
-ms.custom: 
-ms.assetid: 
-ms.search.industry: retail
-ms.devlang: 
+
 ---
 
 # Support for external gift cards
@@ -135,8 +129,7 @@ In the following example, if the first four digits of a card number are **6036**
 
     > [!NOTE]
     > If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
-
-Also to note, existing buttons on the F2S1m (or version F*n*S1M you may be using for layout) button grid can similarly be configured for *Internal* Gift Cards also. The existing Issue Gift Card (sometimes depicted with the card and plut button in the existing layout) require the **Button properties** have the **Action** set (ex: Issue gift card) and the **Payment type** set ("Gift Card" for *Internal* gift cards). Same for the **Add to gift card** and **check gift card balance** buttons that are pre-configured for this view. If these buttons are intended to handle *Internal* gift cards, the "Gift Card" **Payment type** should be set for their properties.
+    > Existing buttons on the version F2S1m button grid (or version F*n*S1M that you may be using for layout) can be similarly configured for internal gift cards. The existing issue gift card (sometimes depicted with the card and plus button in the existing layout) requires that the **Button properties** have the **Action** property set (for example, to **Issue gift card**) and the **Payment type** property set (for example, to **Gift card** for internal gift cards). Similarly, for the  preconfigured **Add to gift card** and **Check gift card balance** buttons, the gift card **Payment type** property should be set if these buttons are intended to handle internal gift cards.
 
 ## Configure and test Modern POS
 
