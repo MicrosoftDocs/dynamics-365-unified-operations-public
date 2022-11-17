@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Announcements
-description: This page will be used to announce all the latest DTS releases to the users
+title: What's new in Dynamics Tranlsation Service - November 2022
+description: This article describes new or changed features in the Microsoft Dynamics Translation Service.
 author: arianapadilla
-ms.date: 11/08/2022
+ms.date: 11/16/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -19,55 +19,39 @@ ms.assetid:
 
 ---
 
-# Announcements
+# What's new in Dynamics Tranlsation Service - November 2022
 
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
 
-## Visual Studio Code Extension Release
+This article provides information about the new or changed features in the Microsoft Dynamics Translation Service (DTS). 
 
-Localize AL projects and manage resource files from the editor. This extension saves users from visits to DTS by providing translation functionality in the development environment. 
+## Visual Studio Code extension 
 
-### Where to download? 
+The Visual Studio (VS) Code extension was created for Dynamics 365 Business Central users who develop extensions in AL using the AL language extension. The VS code extension provides a Dynamics Translation Service integration into the AL environment for Business Central developers.
 
-[Dynamics 365 Translation Service Extension - Visual Studio Marketplace]([https://marketplace.visualstudio.com/](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Ddts-publisher.dts-vsc&data=05%7C01%7Carianap%40microsoft.com%7C2fcbec5426ce46f2a75108da4ad19678%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637904561304230329%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=bGNyOcGpLtlt%2Fs0D2LyoF3DyiOkipWHj0qbe1Mzep6g%3D&reserved=0))
+The following features are included in the Visual Studio Code extension:
 
-![Visual Studio Code Extension Download](./media/dts-vscode-extension1.jpg)
+  - **DTS Translation**: Create translation requests for resource files in workspace.
+  - **Resource file explorer**: View and manage existing resource files.
 
-
-### Features Included
-
-- **DTS Translation**: Create translation requests for resource files in workspace.
-- **Resource file explorer**: View and manage existing resource files.
-
-Documentation is available [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Flifecycle-services%2Fdts-vscode-doc&data=05%7C01%7Carianap%40microsoft.com%7C2fcbec5426ce46f2a75108da4ad19678%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637904561304230329%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=gkEl5PNldkEKdv9HVzggN8ij62%2B7AK99uoBJtYX%2BNj4%3D&reserved=0).
-
-### Who is this for? 
-
-This extension was created for Dynamics 365 Business Central users who develop extensions in AL using the AL language extension. The extension provides a DTS integration into the AL environment for Business Central developers.
+To download the Visual Studio Code extension, see [Dynamics 365 Translation Service Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=dts-publisher.dts-vsc). For additional details about the feature, see [Dynamics 365 Translation Service Visual Studio Code extension](dts-vscode-doc.md).
 
 
+## Visual Studio extension release
 
-## Visual Studio Extension Release
+The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio was created for finance and operations developers to perform actions in DTS directly from their Visual Studio integrated development environment (IDE). To use the DTS Visual Studio extension, you must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for finance and operations apps in Visual Studio.
 
-Submit translation, alignment, and regeneration requests through the F&O development environment.  This extension saves users from visits to DTS by providing translation functionality in the development environment.  
+The following features are included in the Visual Studio extension release:
 
-### Where to download? 
+  - **Translation**: Create translation requests for label resource files in the project.
+  - **Regenerate**: Post edit the XLIFF outputs and regenerate the label resource files.
+  - **Align**: Create XLIFF Translation Memories (TM) from previously translated label resource files.
 
-[Dynamics 365 Translation Service Extension - Visual Studio Marketplace](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Ddts-publisher.dts-vs-ext%26ssr%3Dfalse%23overview&data=05%7C01%7Carianap%40microsoft.com%7C86fbe9e548d84f345ab708da5478d62b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637915175207697758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=2GyaUhBDFpbrZQdoBawScYNAuj4sJUZojM63zN9JdA4%3D&reserved=0)
+To download the Visual Studio extension, go to [Dynamics 365 Translation Service Extension - Visual Studio Marketplace](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Ddts-publisher.dts-vs-ext%26ssr%3Dfalse%23overview&data=05%7C01%7Carianap%40microsoft.com%7C86fbe9e548d84f345ab708da5478d62b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637915175207697758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=2GyaUhBDFpbrZQdoBawScYNAuj4sJUZojM63zN9JdA4%3D&reserved=0).
 
-![Visual Studio Extension Download](./media/dts-vs-extension1.jpg)
+For additional details about the Visual Studio extension, see [Dynamics 365 Translation Service Visual Studio extension](dts-visual-studio.md).
 
-### Features Included
 
-- **Translation**: Create translation requests for label resource files in the project.
-- **Regenerate**: Post edit the XLIFF outputs and regenerate the label resource files.
-- **Align**: Create XLIFF Translation Memories (TM) from previously translated label resource files.
-
-Documentation is available [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Flifecycle-services%2Fdts-visual-studio&data=05%7C01%7Carianap%40microsoft.com%7C86fbe9e548d84f345ab708da5478d62b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637915175207697758%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=%2FH4%2B2xHeV3ma5iz5vg7zY7cJpnKCpGFNCVJCGL3bvTY%3D&reserved=0).
-
-### Who is this for? 
-
-The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio was created for finance and operations developers to perform actions in DTS directly from their Visual Studio integrated development environment (IDE). To use the DTS Visual Studio extension, the user must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for finance and operations apps in Visual Studio.
 
 
