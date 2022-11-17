@@ -28,7 +28,7 @@ This article provides information about the new or changed features in the Micro
 
 ## Visual Studio Code extension 
 
-The Visual Studio (VS) Code extension was created for Dynamics 365 Business Central users who develop extensions in AL using the AL language extension. The VS code extension provides a Dynamics Translation Service integration into the AL environment for Business Central developers.
+The Visual Studio Code extension was created for Dynamics 365 Business Central users who develop extensions in AL using the AL language extension. The VS code extension provides a Dynamics Translation Service integration into the AL environment for Business Central developers.
 
 The following features are included in the Visual Studio Code extension:
 
