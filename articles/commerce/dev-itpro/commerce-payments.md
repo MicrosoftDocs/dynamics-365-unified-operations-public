@@ -5,13 +5,12 @@ description: This article describes the omni-channel Commerce order payments fea
 author: ravimeda
 ms.date: 02/04/2022
 ms.topic: article
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: raeda
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
+
 ---
 
 # Omni-channel Commerce order payments
@@ -70,7 +69,7 @@ The following features are required for omni-channel Commerce order payments to 
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
 
 > [!NOTE]
-> If planning to accept multiple payment methods for online orders in your Online Channel (example: Loyalty points and credit card payment for the transaction) the **Omni-channel Commerce order payments** feature management feature and the call center **Enable order completion** (found in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**)  must both be **Enabled** to properly accept multiple payment methods for online orders. **Enable order completion** will be hidden and on by default if the **Omni-channel Commerce order payments** feature management feature is enabled.
+> If you're planning to accept multiple payment methods for online orders in your online channel (for example, loyalty points and credit card payments), the **Omni-channel Commerce order payments** feature (in headquarters at **System administration \> Workspace \> Feature management**), and the call center **Enable order completion** setting (on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**) must both be enabled. If the **Omni-channel Commerce order payments** feature is enabled, the **Enable order completion** setting is enabled by default and hidden.
 
 ### Configure prerequisites
 
