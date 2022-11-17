@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Dynamics Translation Service - November 2022
+title: What's new in Dynamics Translation Service 
 description: This article describes new or changed features in the Microsoft Dynamics Translation Service.
 author: arianapadilla
 ms.date: 11/16/2022
@@ -19,7 +19,7 @@ ms.assetid:
 
 ---
 
-# What's new in Dynamics Translation Service - November 2022
+# What's new in Dynamics Translation Service 
 
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
@@ -28,7 +28,7 @@ This article provides information about the new or changed features in the Micro
 
 ## Visual Studio Code extension 
 
-The Visual Studio Code extension was created for Dynamics 365 Business Central users who develop extensions in AL using the AL language extension. The VS code extension provides a Dynamics Translation Service integration into the AL environment for Business Central developers.
+The Visual Studio Code extension was created for Dynamics 365 Business Central users who develop extensions in AL using the AL language extension. The Visual Studio Code extension provides a Dynamics Translation Service integration into the AL environment for Business Central developers.
 
 The following features are included in the Visual Studio Code extension:
 
