@@ -19,18 +19,18 @@ ms.search.validFrom:
 
 This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
 
-In Dynamics 365 Commerce version 10.0.10 and later, inbound and outbound operations in the point of sale (POS) replaced the picking and receiving operation.
+In Commerce version 10.0.10 and later, inbound and outbound operations in POS replaced the picking and receiving operation.
 
 > [!NOTE]
-> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, it is recommended that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, from a functional or performance perspective there will be no further investments in it after Commerce version 10.0.9.
+> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, from a functional or performance perspective, there will be no further investments in it after Commerce version 10.0.9.
 
 ## Prerequisites
 
-Before your organization can use the inbound operation functionality, you must fulfill the following prerequisites.
+Before your organization can use the inbound operation functionality, you must complete the following prerequisites.
 
 ### Configure an asynchronous document framework
 
-For instructions on how to complete configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you have already configured an asynchronous document framework for other operations.
+For information about how to configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you've already configured an asynchronous document framework for other operations.
 
 ### Add Inbound operation to the POS screen layout
 
@@ -87,7 +87,7 @@ Alternatively, in a scenario where the item quantity is large, the user might pr
 
 Although the **Receiving now** view is optimized for bar code scanning, users can also select **Receive product** on the app bar, and then enter the item ID or bar code data via a dialog box. After the item that was entered is validated, the user is prompted to enter the receipt quantity.
 
-The **Receiving now** view provides a focused way for users to see which products they are receiving. Alternatively, the **Full order list** view can be used. This view shows the whole list of document lines for the selected purchase or transfer order document. Users can manually select lines in the list and then, on the **Details** pane, update the **Receiving quantity** field for the selected line. In the **Full order list** view, users can scan bar codes, or they can use the **Receive product** function to enter the item ID or bar code, and data about the received quantity, without first having to select the matching item line in the list.
+The **Receiving now** view provides a focused way for users to see which products they are receiving. Alternatively, the **Full order list** view can be used. This view shows the whole list of document lines for the selected purchase or transfer order document. Users can manually select lines in the list and then, in the **Details** pane, update the **Receiving quantity** field for the selected line. In the **Full order list** view, users can scan bar codes, or they can use the **Receive product** function to enter the item ID or bar code, and data about the received quantity, without first having to select the matching item line in the list.
 
 ### Over-receiving validations
 
