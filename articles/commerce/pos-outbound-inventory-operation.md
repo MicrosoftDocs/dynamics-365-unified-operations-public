@@ -53,7 +53,7 @@ The outbound inventory document list has three tabs.
 When you view documents on any of the tabs, the **Status** field can help you understand the stage that the document is in.
 
 - **Draft** – The transfer order document has only been saved locally to the store's channel database. No information about the transfer order request has yet been submitted to headquarters.
-- **Requested** – The purchase order or transfer order has been created in headquarters and is fully open. The user's current store has yet processed any shipments against the document.
+- **Requested** – The purchase order or transfer order has been created in headquarters and is fully open. The user's current store hasn't yet processed any shipments against the document.
 - **Partially shipped** – The transfer order document has one or more lines or partial line quantities that have been posted as shipped by the outbound warehouse. These shipped lines are available to be received through the inbound operation.
 - **Fully shipped** – The transfer order has had all its lines and full line quantities posted as shipped by the outbound warehouse.
 - **In progress** – This status is used to inform device users that the document is being actively worked on by another user.
