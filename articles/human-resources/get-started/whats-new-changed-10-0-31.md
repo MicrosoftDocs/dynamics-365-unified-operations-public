@@ -46,6 +46,7 @@ article was initially published.
 | Feature name | Overview | Release status |
 |----|----|----|
 | Course enhancements | <p>The Course enhancements feature enables the following capabilities:</p><ul><li>Courses can be designated as virtual, and course links can be defined.</li><li>A due date can be defined for course assignments.</li><li>**Employee self service** now shows employees an overview within Courses/Learning, so that they can view courses that are overdue, due soon, and assigned.</li><li>Employees can complete virtual courses and self-attest to them.</li></ul><p> | Preview |
+| Additional languages available | Four new languages are available for user selection in the preferred language list: Korean, Portuguese (Portugal), Vietnamese, and Chinese (Traditional). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |  
 
 ## Feature enhancements included in this release
 
