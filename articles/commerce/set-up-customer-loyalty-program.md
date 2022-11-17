@@ -2,19 +2,15 @@
 title: Loyalty overview
 description: This article describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: josaw1
-ms.date: 07/21/2020
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 16201,  ""intro-internal
+ms.custom: 16201, "intro-internal"
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
-ms.search.industry: Retail
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 ---
 
@@ -31,6 +27,11 @@ You can set up your loyalty program so that they include the following options.
 - Define earning rules to identify the activities that a customer must complete to earn rewards. You can also define redemption rules to identify when and how a customer can redeem rewards.
 - Issue loyalty cards from any channel that participates in your loyalty programs, and link loyalty cards to one or more loyalty programs that the customer can participate in. You can also link a customer record to a loyalty card, so that the customer can pool loyalty points from multiple cards and redeem them.
 - Manually adjust loyalty cards, or transfer the loyalty rewards balance from one card to another to accommodate or reward a customer.
+
+The following video provides an overview and demo of loyalty capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
 
 ## Setting up loyalty programs
 
