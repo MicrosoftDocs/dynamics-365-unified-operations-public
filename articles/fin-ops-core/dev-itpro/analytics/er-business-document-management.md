@@ -96,21 +96,8 @@ For more information about importing ER configurations, see [Manage the ER confi
 
 ## !!! TO REMOVE THIS SECTION !!! Enable Business document management
 
-To start Business document management, you need to open the **Feature management** workspace and enable the **Business document management** feature.
-
-Use the following procedure to enable Business document management functionality for all legal entities.
-
-1. Open the **Feature management** workspace.
-2. On the **New** tab, select the **Business document management** feature in the list.
-3. Select **Enable now** to turn on the selected feature.
-4. Refresh the page to access the new feature.
-
 > [!NOTE]
-> For more information about using the new document user interface in Business document management, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
-
-![Feature management workspace.](./media/BDM-Overview-FMEnabling.png)
-
-For more information about activating new features, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+> Business document management functionality is enabled out of the box, the previously existed feature **Business document management** enabling has been eliminated.
 
 ## Configure parameters
 
