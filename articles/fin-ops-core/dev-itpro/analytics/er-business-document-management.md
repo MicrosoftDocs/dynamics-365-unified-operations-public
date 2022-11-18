@@ -94,10 +94,10 @@ Alternatively, you can import the officially published ER format configurations 
 
 For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-## !!! TO REMOVE THIS SECTION !!! Enable Business document management
+## Enable Business document management
 
 > [!NOTE]
-> Business document management functionality is enabled out of the box, the previously existed feature **Business document management** enabling has been eliminated.
+> Business document management functionality is enabled out of the box, the previously existed feature for **Business document management** enabling has been eliminated.
 
 ## Configure parameters
 
