@@ -112,6 +112,8 @@ the cluster picking process. The setup is based on the product bar code setup.
     - If an appropriate line doesn't exist, select **New** on the Action Pane and then set the **Work type** to the appropriate type.
 1. Mark the **Product confirm** check box for your new or selected line. This will allow workers to verify each piece of inventory using the mobile device.
 
-
+> [!NOTE]
+> You might get an error: "Current work is frozen" on the Warehouse Management mobile app during the cluster picking process in case of having multiple works for the same item enabled for "Material picking in license plate locations" as "Staging", as this process is not supported.
+> As a workaround make sure only picking inventory from locations not being license plate tracked for the raw material cluster picking process or use "Order picking" setup for the items.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
