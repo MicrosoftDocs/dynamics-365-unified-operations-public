@@ -28,7 +28,7 @@ Some of the common planned maintenance activities performed by Microsoft are:
 - Microsoft quality updates
 
 ## <a name="windows"></a>What are the planned maintenance windows?
-A planned maintenance window is typically during the dark hours during saturday and sunday of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
+A planned maintenance window is typically during the dark hours during Saturday and Sunday of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
 |Geo | Maintenance window |
 |----|--------------------|
