@@ -560,6 +560,22 @@ To limit access to **SII** and **CollectionInCash** processing, follow these ste
 1.  Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
 2.  Select **SII** or **CollectionInCash** processing, and then add the security groups that must work with that processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
+## Set up Exempt code types on Issued and Received Invoice formats
+
+To support the Exempt code types applicable over the Issued and received invoices, follows these steps:
+
+1. Go to **Workspace \> Electronic reporting**.
+2. Go to **Reporting configurations**.
+3. Expand **Invoices Communication Model** node of the left panel.
+4. Select the format configurations **SII Invoice Issued Format (ES)** higher than version 108.54 or **SII Invoice Received Format (ES)** higher than version 108.47.
+5. Select **Configurations \> Application specific parameters \> Setup**
+6. Select **ExemptionCauseTypeLookUp**
+7. Under the **Conditions** tab, select **Add**.
+8. In **Lookup result**, select the applicable Exemption type, and then in **Tax exempt code**, enter the Tax exempt code for each Exemption type.
+9. Select **Save** and close the page.
+10. Select **Change status** to **Complete**.
+
+
 ## Additional setup in Finance for reporting to the SII system
 
 ### Exclude transactions that have a negative sales tax percentage from SII processing
@@ -604,6 +620,17 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 1.  Go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
 2.  Select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
 3.  On the Action Pane, select **Parameters**, and then set up the **TipoOperacion** value for the **Intra-community operation ID** additional field.
+
+### Set up Exempt code types over Sales tax codes
+
+To support the Exempt code types applicable over the Issued and received invoices, follows these steps:
+
+1. Go to **Modules \> Tax \> Indirect taxes \> Sales tax \> Sales tax groups**.
+2. Select a **Sales tax group**.
+3. For each sales tax code that is granted tax exemptions, under the **Setup** tab, select a **Sales tax code**.
+5. In the column **Exempt code**, enter the **Exemption code type**. It must be the same code entered in the LookUp of the **ExemptionCauseType** lookup entered above.
+6. Select **Save**.
+
 
 ## <a name="multiple-vat"></a>Reporting to the SII system of Spain for multiple VAT registrations
 
