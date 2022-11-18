@@ -28,7 +28,7 @@ Some of the common planned maintenance activities performed by Microsoft are:
 - Microsoft quality updates
 
 ## <a name="windows"></a>What are the planned maintenance windows?
-A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
+A planned maintenance window is typically during the dark hours during Saturday and Sunday of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
 |Geo | Maintenance window |
 |----|--------------------|
@@ -70,7 +70,7 @@ Please see [proactive quality updates](../../fin-ops/get-started/quality-updates
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
 
 ## What is the experience during the near-zero-downtime maintenance window?
-Upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt [priority-based scheduling](../sysadmin/priority-based-batch-scheduling.md) of batch jobs. In this way, they can eliminate the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing.
+Upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt [priority-based scheduling](../sysadmin/priority-based-batch-scheduling.md) of batch jobs. In this way, they can eliminate the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing or maintenance operations.
 
 ### Interactive usage
 Users who are connected to the environment might experience a brief disconnection of less than 60 seconds a few times during the servicing window. After recovery, users might experience one of the following outcomes:
