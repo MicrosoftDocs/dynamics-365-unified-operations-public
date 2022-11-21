@@ -179,6 +179,18 @@ You must download the latest versions of the following configurations:
     - **Retail fiscal document mapping** data model mapping
     - **Retail fiscal document format** format
 
+You must also configure legal entity-specific parameters of the e-invoice format:
+
+1. Open the **Electronic reporting** workspace.
+1. Click **Reporting configurations**.
+1. On the **Configurations** page, select the *Sales e-invoice (SA)* format that you imported earlier, and click **Configurations > Application specific parameters > Setup**.
+1. On the **Application specific parameters** page, select the version of the format configuration that you want to configure the parameters for.
+1. On the **Lookups** FastTab, select the record for the *PaymentMethodSubstitutionLookup* lookup.
+1. On the **Conditions** FastTab, create records to link methods of payment that are configured for customers in the **Accounts receivable** module to payment means that are defined for e-invoices by ZATCA:
+    1. In the **Lookup result** field, select a payment means code.
+    1. In the **Name** field, select a customer payment method that must correspond to the payment means code. You can also select \*Blank\* if you want the payment means code to be selected when the customer payment method is not specified, and \*Not blank\* if you want the payment means code to be selected for any customer payment method.
+    1. The **Line** field is populated automatically. It defines the order in which payment means codes are searched for a customer payment method. You can change the order by using the **Move up** and **Move down** buttons. 
+
 ### Configure e-invoice submission
 
 Before setting up e-invoice submission parameters for Commerce, you must configure the Electronic invoicing service to be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../finance/localizations/e-invoicing-sa-get-started.md).
