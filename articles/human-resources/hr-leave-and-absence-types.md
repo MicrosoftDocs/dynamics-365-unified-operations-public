@@ -52,11 +52,11 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 6. Select an earning code from the **Earning code** dropdown.
 7. Under **Reason code required**, choose whether you want to require a reason code. If you want to require reason codes, you might need to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it. 
 
- *  If the **Request type** is **Leave of absence**:
- *  Under **Open ended**, choose whether users should be allowed to create open ended leaves or not. 
- *  If **Open ended** is enabled, there is an option to choose if workers need to submit a return-to-work notice or not. 
- *  **Enable return to work notice** can be enabled if workers need to submit the same while returning from a leave of absence.
- *  If **Enable return to work notice** is enabled, then **Attachment required** is also enabled automatically and can't be disabled.  
+   *  If the **Request type** is **Leave of absence**:
+      *  Under **Open ended**, choose whether users should be allowed to create open ended leaves or not. 
+      *  If **Open ended** is enabled, there is an option to choose if workers need to submit a return-to-work notice or not. 
+      *  **Enable return to work notice** can be enabled if workers need to submit the same while returning from a leave of absence.
+      *  If **Enable return to work notice** is enabled, then **Attachment required** is also enabled automatically and can't be disabled.  
 
 8. **Attachment required** can be enabled if users should upload documents while creating or updating leave requests.
 9. Under **Restrict access to selected roles**, choose whether you want to restrict access. Then select the security roles under **Security roles for this leave type**. The security roles are defined in the workflow you selected under **Workflow ID** earlier in this procedure.
