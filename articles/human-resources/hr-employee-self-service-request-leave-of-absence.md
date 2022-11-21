@@ -58,6 +58,22 @@ You can submit a request for a leave of absence and see the status of your leave
 
 2. To view your leave of absence requests, select **View leave of absence**.
 
+## Update leave of absence request
+
+1.	In the **Employee self-service** workspace, select **More (...)** in the **Leave of absence** tile.
+2.	Select the leave to be updated, and choose **Update leave of absence**.
+3.	Leave of absence can be extended or shortened by updating the **End date** accordingly. 
+4.	If the **End date** is confirmed, then **Confirm end date** can be set to **Yes**.
+5.	Once **Confirm end date** is set to **Yes**. A return-to-work notice can be uploaded and the return to work notice is uploaded checkbox needs to be marked.
+6.	Click **Submit** to update the leave of absence request.
+
+## Cancel leave of absence request 
+
+1.	In the **Employee self-service** workspace, select **More (...)** in the **Leave of absence** tile.
+2.	Select the leave to be cancelled, and choose **Update leave of absence**.
+3.	Set **Cancel leave** to **Yes**.
+4.	Click **Submit** to cancel the leave of absence request. 
+
 ## Importing leave requests from other systems or older systems
 
 To import leave requests from another system, you must go through the regular workflow to create the appropriate leave transactions. Alternatively, you can import the leave bank transactions and the leave requests in a completed state. Note that the leave bank transactions aren't automatically created if you import only the leave requests.
