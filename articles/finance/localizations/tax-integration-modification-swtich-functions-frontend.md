@@ -1,6 +1,6 @@
 ---
 title: Modification on switch functions and frontend
-description: This topic introduces the modification on switch functions and frontent in order to integrate a new transaction.
+description: This article explains the modifications on switch functions and frontend to integrate a new transaction.
 author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-## Switch functions to enable a new transaction
+## Using switch functions to enable a new transaction
 
 Most logic to integrate a new transaction is done, still need to handle some switch functions and frontend stuff to enable the logic created above.
 
