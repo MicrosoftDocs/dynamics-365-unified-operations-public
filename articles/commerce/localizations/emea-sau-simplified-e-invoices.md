@@ -2,7 +2,7 @@
 title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: This article provides an overview and setup guidelines for the functionality of simplified electronic invoices that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 11/18/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,9 +29,9 @@ The electronic invoicing functionality that is available to Saudi Arabia in Comm
 - Generation and printing of QR code for the simplified e-invoice that includes the cryptographic stamp.
 - Submission of the simplified e-invoice from Commerce headquarters to Saudi Arabian tax authorities (Zakat, Tax and Customs Authority - ZATCA) for reporting purposes.
 
-For more information about the electronic invoicing requirements for Saudi Arabia, see [E-Invoicing portal by ZATCA](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx).
+For more information about the electronic invoicing requirements for Saudi Arabia, see the [E-Invoicing portal by ZATCA](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx).
 
-The high-level, end-to-end process flow for Saudi Arabia is as follows:
+The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follows:
 
 1. When the checkout process is completed for a sales transaction in POS, POS sends a request to generate and digitally sign a simplified e-invoice to the Commerce runtime (CRT) via Commerce Scale Unit (CSU). The generation and digital signing of a simplified e-invoice is implemented by using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
 
