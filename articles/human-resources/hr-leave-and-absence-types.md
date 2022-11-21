@@ -67,7 +67,6 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 ## Configure leave type rules
 
 1. Set rounding options for the **Leave and absence** type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
-
 2. Set **Holiday correction** for the leave type. When you select this option, the number of holidays that fall on a work day will be used to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
 
    You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md).
