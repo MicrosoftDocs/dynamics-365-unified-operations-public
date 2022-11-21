@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Get started with Electronic invoicing for Saudi Arabia - phase 2
+# Get started with Electronic invoicing for Saudi Arabia - Phase 2
 
 [!include [banner](../includes/banner.md)]
 
