@@ -47,14 +47,14 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 1. On the **Leave and absence** workspace, select the **Links** tab.
 2. Under **Setup**, select **Leave and absence types**.
 3. Select **New**.
-4. Enter a name for the leave type under **Type**, enter a description under **Description**, select a workflow from **Workflow ID** and select a **Request yype** based on the leave type. For example, **Time off** or **Leave of absence**.
+4. Enter a name for the leave type under **Type**, enter a description under **Description**, select a workflow from **Workflow ID** and select a **Request type** based on the leave type. For example, **Time off** or **Leave of absence**.
 5. In **General**, select **None**, **Scheduled**, or **Unscheduled** from the **Category** dropdown.
 6. Select an earning code from the **Earning code** dropdown.
 7. Under **Reason code required**, choose whether you want to require a reason code. If you want to require reason codes, you might need to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it. 
 
    *  If the **Request type** is **Leave of absence**:
       *  Under **Open ended**, choose whether users should be allowed to create open ended leaves or not. 
-      *  If **Open ended** is enabled, there is an option to choose if workers need to submit a return-to-work notice or not. 
+      *  If **Open ended** is enabled, there's an option to choose if workers need to submit a return-to-work notice or not. 
       *  **Enable return to work notice** can be enabled if workers need to submit the same while returning from a leave of absence.
       *  If **Enable return to work notice** is enabled, then **Attachment required** is also enabled automatically and can't be disabled.  
 
@@ -82,7 +82,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 1. On the **Leave and absence** page, on the **Links** tab, under **Setup**, select **Leave and absence types**.
 
-2. Select a leave and absence type in the list. Then, in the **General** section, use the **Attachment required** field to specify whether an attachment must be uploaded when an employee submits a new leave request for the selected leave type. 
+2. Select a **Leave and absence type** in the list. In the **General** section, use the **Attachment required** field to specify whether an attachment must be uploaded when an employee submits a new leave request for the selected leave type. 
 
 Employees will be required to upload an attachment when they submit a new leave request that has a leave type where the **Attachment required** field is enabled. To view the attachment that was uploaded as part of a leave request, leave request approvers can use the **Attachments** option for the work items that are assigned to them. If a leave request is accessed by using the Human Resources app in Microsoft Teams, the **View details** option for the leave request can be used to view its details and any attachments.
 
