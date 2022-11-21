@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Create an open ended leave of absence 
 
+> [!Important]
+> The functionality noted in this article will be available as part of a future release on the Finance infrastructure after Finance release 10.0.31.
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can submit requests for leave of absence that is open ended and see the status of your leave requests in Dynamics 365 Human Resources.
