@@ -97,7 +97,7 @@ For more information about importing ER configurations, see [Manage the ER confi
 ## Enable Business document management
 
 > [!NOTE]
-> Business document management functionality is enabled out of the box, the previously existed feature for **Business document management** enabling has been eliminated.
+> In versions of Finance before 10.0.29 **Business document management** functionality must have been explicitly enabled. Starting from version 10.0.29 **Business document management** feature became mandatory, i.e., turned on by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated. The system behaviour assumes **Business document management** functionality enabled out of the box. The chapter below is applicable to Finance versions earlier than 10.0.29.
 
 To start Business document management, you need to open the **Feature management** workspace and enable the **Business document management** feature.
 
