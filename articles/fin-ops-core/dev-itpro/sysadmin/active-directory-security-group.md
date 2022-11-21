@@ -34,6 +34,7 @@ Before you enable the **Active Directory security groups** feature, it's importa
 - Workflows that depend on assigned roles don't consider these role assignments.
 - Disabling a group in system administration doesn't stop JIT provisioning or role assignment.
 - The **User Id** value of users that are created through JIT provisioning has a leading dollar sign ($) and numbers.
+- Publishing views to security roles doesn't consider role assignments made to AAD security groups. 
 
 Microsoft doesn't expect to address these known limitations until the group experience is unified with the more comprehensive feature in Dataverse. For more information, see [Manage group teams](/power-platform/admin/manage-group-teams).
 
