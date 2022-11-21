@@ -152,20 +152,13 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 
 ### Configure the digital signature parameters
 
-You must configure certificates that will be used for digital signing of simplified e-invoices. The signing is done by using digital certificates that are stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters aren't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+To digitally sign and submit simplified e-invoices, you must obtain so called Cryptographic Stamp Identifiers (CSIDs) from ZATCA. The CSIDs are got in form of digital certificates. For more information on how to obtain CSIDs, see [Electronic invoicing onboarding in Saudi Arabia](../../finance/localizations/e-invoicing-sa-onboarding.md). You must obtain a CSID for each POS register you are going to use, because sequential numbering and digital signing of simplified e-invoices is done per POS register.
 
-<!-- NEED TO UPDATE THE NOTE BELOW AND ADD INFORMATION ABOUT HOW TO GET CERTIFICATES FOR SAUDI ARABIA
+The digital certificates that are to be used for digital signing of simplified e-invoices are stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters aren't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
-> [!NOTE]
-> You should use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
+To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles). You must configure a certificate profile for each individual CSID that you obtain from ZATCA.
 
--->
-
-To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles).
-
-After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and then, on the **Device** FastTab, select a certificate profile that you configured earlier in the **Certificate profile** field.
-
-You can also override the connector technical profile settings and specify certificate profiles on the individual store or register level. On the **Connector technical profile** page, select the **Override** menu item and create records for the stores or registers that you need to override the certificate profiles for. For more details on how to override connector technical profile settings, see [Create connector technical profiles](./setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles).
+After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles** and select the connector technical profile that you created earlier. To configure certificate profiles per POS register, select the **Override** menu item and create records for all registers that you need to specify certificate profiles for. In each record, specify a corresponding certificate profile in the **Certificate profile** field on the **Device** FastTab. For more details on how to override connector technical profile settings, see [Create connector technical profiles](./setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles).
 
 ### Specify Electronic Reporting configurations
 
