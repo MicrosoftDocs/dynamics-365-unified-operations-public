@@ -3,7 +3,7 @@
 
 title: Get started with Electronic invoicing for Saudi Arabia
 description: This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia.
-author: ikondo
+author: gionoder
 ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
