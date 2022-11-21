@@ -4,7 +4,7 @@
 title: Accounting source explorer
 description: This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 author: RyanCCarlson2
-ms.date: 06/20/2017
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,25 +33,25 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 
-Accounting source explorer is a new page that shows source information. You can use Accounting source explorer either as a stand-alone tool or to analyze the details behind general ledger accounting entries. For example, you can use Accounting source explorer to get the most detailed source information for a balance in Trail balance or for a voucher transaction. You can then use the Export to MS Excel feature to further slice and dice the information in Microsoft Excel (for example, in a PivotTable or on a PivotTable report).
+**Accounting source explorer** page shows source information. You can use **Accounting source explorer** either as a stand-alone tool or to analyze the details behind general ledger accounting entries. For example, you can use **Accounting source explorer** to get the most detailed source information for a balance in Trail balance or for a voucher transaction. You can then use the **Export to MS Excel** feature to further slice and dice the information in Microsoft Excel (for example, in a PivotTable or on a PivotTable report).
 
-Accounting source explorer always shows the same total amount per ledger account as General ledger shows (for example, in Trial balance). As in Trial balance, you can display segments in separate columns. Just select the appropriate financial dimension set. 
+**Accounting source explorer** always shows the same total amount per ledger account as General ledger shows (for example, in Trial balance). As in Trial balance, you can display segments in separate columns. Just select the appropriate financial dimension set. 
 
 You can use parameters to define a date interval for the analysis. This functionality also resembles the functionality in Trial balance.
 
-For all documents that use the source document framework, Accounting source explorer shows additional information, based on accounting distributions and, if applicable, project accounting distributions. This information includes the monetary amount type, project, activity, category, and line property. Here are some examples of the analysis that you can do:
+For all documents that use the source document framework, **Accounting source explorer** shows additional information, based on accounting distributions and, if applicable, project accounting distributions. This information includes the **Monetary amount type**, **Project**, **Activity**, **Category**, and **Line property**. Here are some examples of the analysis that you can do:
 
 -   Variances between purchase orders and vendor invoices, because each variance is represented by a monetary amount type, such as charge variance
 -   Billable versus non-billable hours and expenses per project, business unit, and main account
 
-For source documents that use the source document reference identities concept, Accounting source explorer shows even more details, such as the customer, vendor, worker, product, quantity, unit text, and descriptions. Here are some examples of the analysis that you can do:
+For source documents that use the source document reference identities concept, the **Accounting source explorer** shows even more details, such as the **Customer**, **Vendor**, **Worker**, **Product**, **Quantity**, **Unit text**, and **Description**. Here are some examples of the analysis that you can do:
 
 -   Hotel expenses per business unit and hotel brand for a fiscal period, based on expense reports
 -   Discounts per vendor, product, department
 
-For these documents, you can also navigate to the actual source document from Accounting source explorer.
+For these documents, you can also navigate to the actual source document from **Accounting source explorer**.
 
 > [!NOTE]
-> As of version 10.0.32, a new feature **Accounting source explorer advanced filtering** is available in feature management. This feature will replace the **Update** button in order to provide a more robust advanced query experience similar to the one found with the voucher transactions form.  The advanced filter will provide the ability to filter on similar fields you find in the voucher transactions query page such as ledger account, business unit, cost center, and department. 
+> As of version 10.0.32, a new feature **Accounting source explorer advanced filtering** is available in feature management. This feature replaces the **Update** button in order to provide a more robust advanced query experience similar to the one found on the **Voucher transactions** page. The advanced filter will provide the ability to filter on similar fields you find on the **Voucher transactions query** page such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
