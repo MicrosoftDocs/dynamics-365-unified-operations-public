@@ -235,7 +235,7 @@ Use the following procedure to edit free text invoice templates in the Business 
 2. Open the Business document management workspace.
 
 > [!NOTE]
-> Starting from version 10.0.29 **Office-like UI experience for Business document management** feature became mandatory, i.e., <ins>[**turned on**](#UIturnedOn)</ins> by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated.
+> Starting from version 10.0.29 **Office-like UI experience for Business document management** feature became mandatory, i.e., [**turned on**](#UIturnedOn) by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated.
 
 When the **Office-like UI experience for Business document management** feature is turned off in the **Feature management** workspace, the main grid in the **Business document management** workspace shows the following templates:
 
