@@ -562,7 +562,7 @@ To limit access to **SII** and **CollectionInCash** processing, follow these ste
 
 ## Set up Exempt code types on Issued and Received Invoice formats
 
-To support the Exempt code types applicable over the Issued and received invoices, follows these steps:
+To support the scenario of reporting the Exempt code types when applicable over the Issued and received invoices, follows these steps:
 
 1. Go to **Workspace \> Electronic reporting**.
 2. Go to **Reporting configurations**.
@@ -621,15 +621,28 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 2.  Select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
 3.  On the Action Pane, select **Parameters**, and then set up the **TipoOperacion** value for the **Intra-community operation ID** additional field.
 
-### Set up Exempt code types over Sales tax codes
+### Sales tax code set up to report the Exempt code types on Issued and received invoices files
 
-To support the Exempt code types applicable over the Issued and received invoices, follows these steps:
+In addition to the set up of Exempt code types on Issued and Received Invoice formats, follows these steps:
 
 1. Go to **Modules \> Tax \> Indirect taxes \> Sales tax \> Sales tax groups**.
 2. Select a **Sales tax group**.
 3. For each sales tax code that is granted tax exemptions, under the **Setup** tab, select a **Sales tax code**.
-5. In the column **Exempt code**, enter the **Exemption code type**. It must be the same code entered in the LookUp of the **ExemptionCauseType** lookup entered above.
+5. In the column **Exempt code**, enter the **Exemption code type**. It must be the same code entered in the LookUp of the **ExemptionCauseType** lookup entered above, as described in Set up Exempt code types on Issued and Received Invoice formats section.
 6. Select **Save**.
+
+This set up drives the fulfilling of tag CausaExencionType in the Issued and received invoices files.
+
+### Item sales tax code set up to flag the good investments on Received Invoices file
+
+In oder to distinguish the acquisition of goods between investments and not investments from the received invoices, follow these steps:
+
+1. Go to **Modules \> Tax \> Indirect taxes \> Sales tax \> Item sales tax groups**.
+2. Select an **Item sales tax group**.
+3. Select **Reporting type** as **Investment**.
+4. Select **Save**.
+
+This set up drives the fulfilling of tag BienInversion tag in the Received invoices file.
 
 
 ## <a name="multiple-vat"></a>Reporting to the SII system of Spain for multiple VAT registrations
