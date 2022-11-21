@@ -96,7 +96,11 @@ You can reverse a settlement that was made by mistake.
     > [!IMPORTANT]
     > All transactions that have the same settlement ID will be reversed, even if they aren't marked. For example, four lines were marked and settled. All four lines have the same settlement ID. If you mark one of those four lines and then select **Reverse marked transactions**, all four lines will be reversed.
 
+## Unmark for selected users
+Select the **Unmark for selected users** action to unmark ledger settled transactions for all legal entities by user ID. For instance, this will allow an accounting manager to unmark transactions for a user that left on vacation before finishing the settlement or for a user who has left the organization.  The action will free up those transactions for another user to mark them for settlement.
 
+## Unmark all transactions
+Select the **Unmark all transactions** action to unmark all ledger settled transactions for all users and all legal entities. This action is available for the Administrator role.
 
 
 
