@@ -4,7 +4,7 @@
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/09/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,14 +47,20 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 1. On the **Leave and absence** workspace, select the **Links** tab.
 2. Under **Setup**, select **Leave and absence types**.
 3. Select **New**.
-4. Enter a name for the leave type under **Type**, select a workflow from **Workflow ID**, and enter a description under **Description**.
+4. Enter a name for the leave type under **Type**, enter a description under **Description**, select a workflow from **Workflow ID** and select a **Request yype** based on the leave type. For example, **Time off** or **Leave of absence**.
 5. In **General**, select **None**, **Scheduled**, or **Unscheduled** from the **Category** dropdown.
 6. Select an earning code from the **Earning code** dropdown.
-7. Under **Reason code required**, choose whether you want to require a reason code. If you want to require reason codes, you might need to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it.
-8. Under **Restrict access to selected roles**, choose whether you want to restrict access. Then select the security roles under **Security roles for this leave type**. The security roles are defined in the workflow you selected under **Workflow ID** earlier in this procedure.
-9. Under **Calendar color**, choose what color to display on leave and absence calendars for this leave type. 
-10. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
-11. Select **Save**.
+7. Under **Reason code required**, choose whether you want to require a reason code. If you want to require reason codes, you might need to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it. 
+
+>[!NOTE]
+> If the **Request type** is **Leave of absence**:
+> Under **Open ended**, choose whether users should be allowed to create open ended leaves or not. If **Open ended** is enabled, then there is an option to also choose if workers need to submit a return-to-work notice or not. **Enable return to work notice** can be enabled if workers need to submit the same while returning from a leave of absence.If **Enable return to work notice** is enabled, then **Attachment required** is also enabled automatically and can't be disabled.  
+
+8. **Attachment required** can be enabled if users should upload documents while creating or updating leave requests.
+9. Under **Restrict access to selected roles**, choose whether you want to restrict access. Then select the security roles under **Security roles for this leave type**. The security roles are defined in the workflow you selected under **Workflow ID** earlier in this procedure.
+10. Under **Calendar color**, choose what color to display on leave and absence calendars for this leave type. 
+11. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
+12. Select **Save**.
 
 ## Configure leave type rules
 
