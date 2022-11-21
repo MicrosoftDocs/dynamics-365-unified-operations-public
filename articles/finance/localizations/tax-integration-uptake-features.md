@@ -5,7 +5,7 @@ author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 11/16/2022
 ms.custom: bap-template
 ---
 
@@ -13,18 +13,24 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Some extra functions/features are supported by tax integration now. If they also need to be enabled for the newly integrated transaction. Please follow the below steps to uptake them.
+There is new functionality that is now supported in the tax integration of Dynamis 365 Finance. This functionality includes:
+
+  - Override sales tax
+  - Multiple VAT ID
+  - List code
+  - Cash discount
 
 ## Override sales tax
 
-In tax integration, by default, user cannot edit the tax group and item tax group on line. Because they will be determined by tax calculation service and updated by system. Override sales tax group function provide an option to use tax group/item tax group specified on line to calculate sales tax, which override the tax groups determined by tax calculation service.
-A checkbox is added besides tax group and item tax group. When *Override sales tax* is checked, end user can select specific tax group and item tax group for tax calculation.
+In tax integration, you can't edit the tax group and item tax group on a line item because taxes determined by the tax calculation service. The **Override sales tax group** functionality allows you to change the tax group or item tax group specified on a line item to calculate sales tax. This calculation overrides the tax groups determined by tax calculation service.
+
+A new slider is added beside the tax group and item tax group. When **Override sales tax** is set to **Yes**, you can select a specific tax group and item tax group for tax calculation.
 
   ![OverrideSalesTax.jpg](./media/override-sales-tax.jpg)
 
-Follow below steps to update this function.
-
-1. Add override Sales tax field to transaction line table schema.
+Complete the following steps to enable this functionality.
+**
+1. Add the **Override Sales tax** field to the transaction line table schema.
     - Also add it to *Sales tax* field group if it exist.
     - Map it the **SalesPurchJournalLine** map. This map is used widely in tax integration. If not mapped, additional code may be need to realize the expected function.
     
