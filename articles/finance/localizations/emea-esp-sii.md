@@ -562,7 +562,7 @@ To limit access to **SII** and **CollectionInCash** processing, follow these ste
 
 ## Set up Exempt code types on Issued and Received Invoice formats
 
-To support the scenario of reporting the Exempt code types when applicable over the Issued and received invoices, follows these steps:
+To support the scenario of reporting the Exempt code types on the Issued and received invoices, follows these steps:
 
 1. Go to **Workspace \> Electronic reporting**.
 2. Go to **Reporting configurations**.
