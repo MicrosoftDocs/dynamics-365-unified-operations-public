@@ -60,7 +60,7 @@ There are two size variations to the view selector:
  
 If you select the view name, the view selector is opened and shows the list of available views for the page.
 
-**Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, the view selector shows the available views in two sections. The first section shows any views that are specific to the current legal entity, and the second shows views that are available to all legal entities. The first section is visible only if there are legal entity–specific views for the page.
+If the **Improved legal entity support for saved views** feature is turned on, the view selector shows the available views in two sections. The first section shows any views that are specific to the current legal entity, and the second shows views that are available to all legal entities. The first section is visible only if there are legal entity–specific views for the page.
 
 - **Standard view** – The **Standard** view is the out-of-box view of the page, where no personalizations are applied.
 - **Personal views** – The views without padlocks represent your personal views. These are views that either you have created or that an administrator has given to you.
@@ -86,7 +86,7 @@ If you want to save those changes, follow these steps.
     1. Select **Save as**. 
     2. In the **Save view as** pane, enter a name and, optionally, a description for the view.
     3. If you want this view to be your default view, select **Pin as default**. For more information about default views see the [Changing the default view](#changing-the-default-view) section that follows. 
-    4. **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, you can select whether you want this view to be available for all legal entities or just a subset of them.
+    4. If the **Improved legal entity support for saved views** feature is turned on, you can select whether you want this view to be available for all legal entities or just a subset of them.
     5. Select **Save**.
 
 ## Changing the default view
@@ -95,7 +95,7 @@ The default view is the view that the system tries to open when you first open t
 
 > [!NOTE]
 > - In the base **Saved views** feature, there is a single, global default view across legal entities. If you change the default view, that view will be opened by default, regardless of the legal entity that you're currently in.
-> - **Version 10.0.21 or later:** When the **Improved legal entity support for saved views** feature is turned on, each legal entity can have its own default view per page.
+> - When the **Improved legal entity support for saved views** feature is turned on, each legal entity can have its own default view per page.
 
 To change the default view for a page, follow these steps:
 
@@ -106,7 +106,7 @@ To change the default view for a page, follow these steps:
 Alternatively, when you create a new view (by using the **Save as** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
 
 > [!WARNING]
-> In some cases, the query that is associated with the default view isn't run when you first open a page. For example, if you open the page through a tile, the tile's query will be run, regardless of the query that is associated with the default view. Additionally, if you open a page that has a **standard** view that already has a defined query, the original query will be run instead of the default view's query. In this case, you will receive an informational message when the view is loaded. If you switch views after the page has been loaded, the view query should be able to be run as expected. In version 10.0.10 and later, the informational message that you receive will have an embedded action that lets you load the default view's query directly.
+> In some cases, the query that is associated with the default view isn't run when you first open a page. For example, if you open the page through a tile, the tile's query will be run, regardless of the query that is associated with the default view. Additionally, if you open a page that has a **standard** view that already has a defined query, the original query will be run instead of the default view's query. In this case, you will receive an informational message when the view is loaded with an embedded action that lets you load the default view's query directly. If you switch views after the page has been loaded, the view query should be able to be run as expected. 
 
 ## Managing personal views
 
