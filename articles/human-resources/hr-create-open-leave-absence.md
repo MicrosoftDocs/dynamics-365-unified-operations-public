@@ -35,14 +35,13 @@ ms.dyn365.ops.version: Human Resources
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can submit requests for leave of absence that is open ended and see the status of your leave requests in Dynamics 365 Human Resources.
-Request an open-ended leave of absence
 
-## Prerequisites
+## Request an open-ended leave of absence prerequisites
 
 1.	Under **Feature management**, the **Open ended leave** feature is turned on.
 
 >[!Note] 
-> This feature can't be turned off once it has been enabled.
+> This feature can't be turned off after it has been turned on.
 
 
 2.	Create a leave of absence leave type.
