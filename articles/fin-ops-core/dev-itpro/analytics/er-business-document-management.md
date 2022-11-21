@@ -235,7 +235,7 @@ Use the following procedure to edit free text invoice templates in the Business 
 2. Open the Business document management workspace.
 
 > [!NOTE]
-> Starting from version 10.0.29 **Office-like UI experience for Business document management** feature became mandatory, i.e., [**turned on**](#UIturnedOn) by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated.
+> Starting from version 10.0.29 **Office-like UI experience for Business document management** feature became mandatory, i.e., <ins>[**turned on**](#UIturnedOn)</ins> by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated.
 
 When the **Office-like UI experience for Business document management** feature is turned off in the **Feature management** workspace, the main grid in the **Business document management** workspace shows the following templates:
 
@@ -246,7 +246,7 @@ When the **Office-like UI experience for Business document management** feature 
 
 The **Template** tab presents the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
 
-<a name="UIturnedOn">When the **Office-like UI experience for Business document management** feature is turned on in the **Feature management** workspace, the main grid in the **Business document management** workspace shows templates that are owned by your ER configuration provider (that is, the provider that is currently marked as active in the **Electronic reporting** workspace). After you select one of these templates, you can select **Edit template** to start or continue to edit it.
+<a name="UIturnedOn"></a>When the **Office-like UI experience for Business document management** feature is turned on in the **Feature management** workspace, the main grid in the **Business document management** workspace shows templates that are owned by your ER configuration provider (that is, the provider that is currently marked as active in the **Electronic reporting** workspace). After you select one of these templates, you can select **Edit template** to start or continue to edit it.
 
 To work with templates that are owned by other ER configuration providers, select **New document** to create a copy of the template that is owned by your ER provider. You can then start to edit the copy. For more information, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
 
