@@ -132,6 +132,27 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 > [!NOTE]
 > If you want to read the email addresses and names of signed-in users from an e-commerce channel, you can add **Email** and **Name** as context variables of the **text** type, in addition to the **AccountNumber** context variable.
 
+## Update Content Security Policy in Microsoft Dynamics 365 Commerce site builder
+To update Content Security Policy in Microsoft Dynamics 365 Commerce site builder, follow these steps.
+
+1. In the Microsoft Dynamics 365 Commerce site builder tool, select your site.
+1. Select **‘Site Settings' \> Extensions** located on the bottom-left of the screen.
+1. Select **Content security policy** tab.
+1. Add **“https://oc-cdn-ocprod.azureedge.net”** as a new entry to the following sections:
+
+    1. Child-src
+    1. Connect-src
+    1. Font-src
+    1. Frame-ancestors
+    1. Frame-src
+    1. Img-src
+    1. Media-src
+    1. Object-src
+    1. Script-src
+    1. Style-src
+    
+1. Click **Save and Publish**.
+
 ## Additional resources
 
 [Commerce chat features overview](commerce-chat-overview.md)
