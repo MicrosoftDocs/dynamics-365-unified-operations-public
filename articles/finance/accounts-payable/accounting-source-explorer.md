@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
+This article provides information about **Accounting source explorer**, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 
-**Accounting source explorer** page shows source information. You can use **Accounting source explorer** either as a stand-alone tool or to analyze the details behind general ledger accounting entries. For example, you can use **Accounting source explorer** to get the most detailed source information for a balance in Trail balance or for a voucher transaction. You can then use the **Export to MS Excel** feature to further slice and dice the information in Microsoft Excel (for example, in a PivotTable or on a PivotTable report).
+The **Accounting source explorer** page shows source information. You can use **Accounting source explorer** either as a stand-alone tool or to analyze the details behind general ledger accounting entries. For example, you can use **Accounting source explorer** to get the most detailed source information for a balance in the Trail balance or for a voucher transaction. You can then use the **Export to MS Excel** feature to further slice and dice the information in Microsoft Excel (for example, in a PivotTable or on a PivotTable report).
 
-**Accounting source explorer** always shows the same total amount per ledger account as General ledger shows (for example, in Trial balance). As in Trial balance, you can display segments in separate columns. Just select the appropriate financial dimension set. 
+**Accounting source explorer** always shows the same total amount per ledger account as General ledger shows (for example, in a Trial balance). As in a Trial balance, you can display segments in separate columns. Just select the appropriate financial dimension set. 
 
 You can use parameters to define a date interval for the analysis. This functionality also resembles the functionality in Trial balance.
 
@@ -52,6 +52,6 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from **Accounting source explorer**.
 
 > [!NOTE]
-> As of version 10.0.32, a new feature **Accounting source explorer advanced filtering** is available in feature management. This feature replaces the **Update** button in order to provide a more robust advanced query experience similar to the one found on the **Voucher transactions** page. The advanced filter will provide the ability to filter on similar fields you find on the **Voucher transactions query** page such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
+> As of version 10.0.32, a new feature **Accounting source explorer advanced filtering** is available in **Feature management**. This feature replaces the **Update** button to provide a more robust advanced query experience similar to the one found on the **Voucher transactions** page. The advanced filter will provide the ability to filter on similar fields you find on the **Voucher transactions query** page such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
