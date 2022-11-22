@@ -2,7 +2,7 @@
 title: Report definitions in financial report designer
 description: This article provides information about report definitions.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,8 +32,8 @@ A report definition is a report component (or building block) that uses a row de
 However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.
 
 ## Create a report definition
-1. In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.
-2. Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.
+1. In Report designer, on the **File** menu, click **New**, and then select **Report definition**.
+2. Specify the appropriate information on the **Report**, **Output and distribution**, **Headers and footers**, and **Settings** tabs.
 
 ## Contents of a report definition
 The following table describes the tabs in a report definition and how the information is used.
@@ -51,11 +51,11 @@ The following table describes the tabs in a report definition and how the inform
 <td>Create a report, configure a report, or modify an existing report.</td>
 </tr>
 <tr>
-<td>Output and Distribution</td>
+<td>Output and distribution</td>
 <td>Change the output type and destination of the report.</td>
 </tr>
 <tr>
-<td>Headers and Footers</td>
+<td>Headers and footers</td>
 <td>Define and format the headers and footers for the report. For example, you can add text or images to the header or footer. Financial reporting supports .bmp, .jpg, and .png files for images. You can also add autotext codes to insert other information, such as a company name, report name, or page number.</td>
 </tr>
 <tr>
