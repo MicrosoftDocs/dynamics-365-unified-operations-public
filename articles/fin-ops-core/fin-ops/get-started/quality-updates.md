@@ -182,8 +182,8 @@ If there is any contention with a pre-scheduled action, for example a Point In T
 ## Can an environment be brought back to its previous state if there are issues after a quality update is applied?
 After a quality update is applied, there is no rollback under any circumstances. There are only patch forward options available to mitigate issues.
 
-## What about FDA regulation and GPX?
-The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. For now, all such customers are exempt from quality updates. To ensure a customer falls under FDA regulations, please visit [Microsoft Azure GPX Offering](/azure/compliance/offerings/offering-gxp).
+## What about FDA regulation and GxP?
+The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. For now, all such customers are exempt from quality updates. To ensure a customer falls under FDA regulations, please visit [Microsoft Azure GxP Offering](/azure/compliance/offerings/offering-gxp).
 
 ## What versions of service updates are supported for these quality updates?
 Customers on all supported version of service updates qualify for quality updates. 
