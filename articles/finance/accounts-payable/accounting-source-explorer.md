@@ -52,6 +52,6 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from **Accounting source explorer**.
 
 > [!NOTE]
-> As of version 10.0.32, a new feature **Accounting source explorer advanced filtering** is available in **Feature management**. This feature replaces the **Update** button to provide a more robust advanced query experience similar to the one found on the **Voucher transactions** page. The advanced filter will provide the ability to filter on similar fields you find on the **Voucher transactions query** page such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
+> As of version 10.0.31, a new feature **Accounting source explorer advanced filtering** is available in **Feature management**. This feature replaces the **Update** button to provide a more robust advanced query experience similar to the one found on the **Voucher transactions** page. The advanced filter will provide the ability to filter on similar fields you find on the **Voucher transactions query** page such as **Ledger account**, **Business unit**, **Cost center**, and **Department**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
