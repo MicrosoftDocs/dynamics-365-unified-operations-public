@@ -20,14 +20,14 @@ The following illustration shows the packing functionality that this scenario ad
 
 ![Warehouse app packing example scenario.](media/wma-packing-demo.png "Warehouse app packing example scenario")
 
-You can easily create a packing flow by creating mobile device menu items and detours handling. In the following example scenario the below menu items without () are used:
+You can easily create a packing flow by creating mobile device menu items and detours handling. In the following example scenario the below menu items without "(" ")" are explained in full:
 
-|**Pack inventory into containers**|**Container creation**|**Container closing**|(**Print container label**)|(**Container deletion**)|
-|----------------------------------|----------------------|---------------------|---------------------------|------------------------|
-|Look up location                  |Look up container type|Look up container    |(Look up container)        |(Look up container)     |
-|Look up shipment                  |                      |                     |                           |                        |
-|Look up item                      |                      |                     |                           |                        |
-|Look up container                 |                      |                     |                           |                        |
+|**Pack inventory into containers** |**Container creation**  |**Container closing** |(**Print container label**) |(**Container deletion**) |
+|-----------------------------------|------------------------|----------------------|----------------------------|-------------------------|
+|Look up location                   |Look up container type  |Look up container     |(Look up container)         |(Look up container)      |
+|Look up shipment                   |                        |                      |                            |                         |
+|Look up item                       |                        |                      |                            |                         |
+|Look up container                  |                        |                      |                            |                         |
 
 ## Prerequisites
 
@@ -45,9 +45,9 @@ Before you can pack containers by using the Warehouse Management mobile app, you
 1. Go to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names**, and then, on the Action Pane, select **Create default setup** to update the field names in the Warehouse Management mobile app. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**, and then, on the Action Pane, select **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.
 
-### Use the Warehouse Management mobile app version 2.0.36.0 or later
+### Use the Warehouse Management mobile app version 2.0.37.0 or later
 
-To see the newest icons and user experience (UX) enhancements that are related to the mobile app packing process, you must use Warehouse Management mobile app version 2.0.36.0 or later.
+To see the newest icons and user experience (UX) enhancements that are related to the mobile app packing process, you must use Warehouse Management mobile app version 2.0.37.0 or later.
 
 ### Make sample data available
 
