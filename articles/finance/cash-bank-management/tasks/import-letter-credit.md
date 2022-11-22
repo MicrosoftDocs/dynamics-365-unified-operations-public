@@ -45,7 +45,10 @@ This procedure uses the USMF demo company.
 10. In the list, click the link in the selected row.
 11. In the **Accounting date** field, enter a date.
 12. In the **Delivery date** field, enter a date.
-    * Note: The **Bank document type** field should be **Letter of credit**.  
+
+>[!Note] 
+>The **Bank document type** field should be **Letter of credit**.  
+
 13. Click **OK**.
 14. In the **Item number** field, enter or select a value.
 15. In the list, find and select the desired record.
@@ -82,7 +85,7 @@ This procedure uses the USMF demo company.
 43. Click **Save**.
 44. On the Action Pane, click **Purchase**.
 45. Click **Confirm**.
-    * Amend the Letter of credit, due to the change in Unit price.  
+    * Amend the letter of credit, due to the change in Unit price.  
 46. On the Action Pane, click **Manage**.
 47. Click **Letter of credit / import collection**.
     * Amend the letter of credit, due to the change in Purchase unit price.  
@@ -100,7 +103,7 @@ This procedure uses the USMF demo company.
 1. On the Action Pane, click **Receive**.
 2. Click **Product receipt**.
 3. In the **PurchParmTable_Num** field, type a value.
-    * Select the Shipment number created with reference to the Letter of credit.  
+    * Select the **Shipment number** created with reference to the Letter of credit.  
 4. In the list, click the link in the selected row.
 5. In the **Product receipt date** field, enter a date.
 6. Click **OK**.
@@ -111,7 +114,7 @@ This procedure uses the USMF demo company.
 1. Go to **Cash and bank management > Letters of credit > Import letter of credit and import collection**.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
-    * Verify the Import letter of credit status.     
+    * Verify the **Import letter of credit status**.     
 4. Close the page.
 5. Close the page.
 
@@ -155,10 +158,10 @@ This procedure uses the USMF demo company.
 6. In the **Date** field, enter a date.
 7. In the **Account** field, specify the desired values.
 8. Click **Settle transactions**.
-9. Expand the Totals section.
+9. Expand the **Totals** section.
 10. In the **Show** field, select an option.
     * Verify that the **Bank document number** and **Shipment number** fields have been updated.  
-11. Select the **Mark** check box.
+11. Select the **Mark** checkbox.
 12. Click **OK**.
 13. Click the Payment tab.
     * Verify that the **Bank document number** and **Shipment number** fields have been updated.  
@@ -170,12 +173,12 @@ This procedure uses the USMF demo company.
 1. Go to **Cash and bank management > Letters of credit > Import letter of credit and import collection**.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
-    * Verify the Import letter of credit status.   
+    * Verify the **Import letter of credit status**.   
 4. Close the page.
 
 ## Verify the Bank facility limit and utilization report
 1. Go to **Cash and bank management > Inquiries and reports > Letters of credit or guarantee > Bank facilities and utilization report**.
-2. Expand the Records to include section.
+2. Expand the **Records to include** section.
 3. Click **Filter**.
     * Define the **Criteria** field with the required bank account.  
 4. In the **Criteria** field, enter or select a value.
