@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can suspend a leave of absence for an employee to stop accruing leave from being processed for selected leave types. 
+You can suspend a leave of absence for an employee to stop accruing leave from being processed for selected leave types.
 
 ## Suspend leave and absence for an employee
 
@@ -50,8 +50,8 @@ You can suspend a leave of absence for an employee to stop accruing leave from b
 
 If accruals are processed while the employee's leave is suspended, no accrual will be made for the suspended leave types.
 
->[!NOTE]
->Leave of absence requests will suspend time off requests, but time off requests will not suspend leave of absence requests. 
+> [!NOTE]
+> Leave of absence requests will suspend time-off requests, but time-off requests won't suspend leave of absence requests.
 
 ## See also
 
