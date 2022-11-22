@@ -48,7 +48,7 @@ You can submit requests for a leave of absence that is open-ended and view the s
 4. In the **Request type** field, select **Leave of absence**.
 5. In the details section, for open-ended leaves, set the **Open ended** option to **Yes**.
 6. Set the **Return to work notice** option to **Yes** or **No**.
-7. A return-to-work notice can optionally be required for open-ended leave of absence leave requests.
+7. A return-to-work notice can optionally be required for open-ended leave of absence requests.
 
 > [!NOTE]
 > After this feature is enabled, the **Attachment required** feature will be enabled.
@@ -56,7 +56,7 @@ You can submit requests for a leave of absence that is open-ended and view the s
 ## Request an open-ended leave of absence
 
 1. In the **Employee self-service** workspace, on the **Time off balances** tile, select **More (...)**.
-2. To submit a leave of absence leave request, select **Request Leave of absence**.
+2. To submit a leave of absence request, select **Request Leave of absence**.
 3. Enter information in the **Leave type** and **Start date** fields. In the **End date** field, enter a tentative end date.
 4. If you must submit supporting documentation, under **Attachments**, select **Upload**.
 5. If you're ready to submit your request, select **Submit**. Otherwise, select **Save draft**.
