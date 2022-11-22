@@ -61,7 +61,7 @@ This task uses the USMF demo company.
 10. In the **Facility group** field, click the drop-down button to open the lookup.
 11. In the list, find and select the desired record.
 12. In the list, click the link in the selected row.
-13. In the **Facility nature field, select an option.
+13. In the **Facility nature** field, select an option.
 14. Click **Save**.
 15. Close the page.
 
