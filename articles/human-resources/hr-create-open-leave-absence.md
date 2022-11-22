@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create an open ended leave of absence 
-description: Create an open ended leave of absence in Dynamics 365 Human Resources.
+title: Create an open-ended leave of absence
+description: This article explains how to create an open-ended leave of absence in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 11/21/2022
 ms.topic: article
@@ -27,42 +27,39 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Create an open ended leave of absence 
+# Create an open-ended leave of absence
 
-> [!Important]
-> The functionality noted in this article will be available as part of a future release on the Finance infrastructure after Finance release 10.0.31.
+> [!IMPORTANT]
+> The functionality that is described in this article will be available on the Finance infrastructure as part of a future release after Microsoft Dynamics 365 Finance release 10.0.31.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can submit requests for leave of absence that is open ended and see the status of your leave requests in Dynamics 365 Human Resources.
+You can submit requests for a leave of absence that is open-ended and view the status of your leave requests in Dynamics 365 Human Resources.
 
-## Request an open-ended leave of absence prerequisites
+## Prerequisites
 
-1.	Under **Feature management**, the **Open ended leave** feature is turned on.
+1. Under **Feature management**, make sure that the **Open ended leave** feature is turned on.
 
->[!Note] 
-> This feature can't be turned off after it has been turned on.
+    > [!IMPORTANT]
+    > This feature can't be turned off after it has been turned on.
 
+2. Create a leave of absence leave type.
+3. Enter the details such as the leave type, description, and workflow ID.
+4. In the **Request type** field, select **Leave of absence**.
+5. In the details section, for open-ended leaves, set the **Open ended** option to **Yes**.
+6. Set the **Return to work notice** option to **Yes** or **No**.
+7. A return-to-work notice can optionally be required for open-ended leave of absence leave requests.
 
-2.	Create a leave of absence leave type.
-3.	Enter the details like **Leave type**, **Description**, **Workflow ID**. 
-4.	In the **Request type** field, select **Leave of absence**.
-5.	In the details section, for open ended leaves set the **Open ended** option to **Yes**. 
-6.	Set the **Return to work notice** as **Yes** or **No**. 
-7.	The **Return to work notice** can be optionally required for open end leave of absence leave requests.
-
->[!Note] 
->After this feature is enabled, the **Attachment required** feature will be enabled.
+> [!NOTE]
+> After this feature is enabled, the **Attachment required** feature will be enabled.
 
 ## Request an open-ended leave of absence
 
-1.	In the **Employee self-service** workspace, select **More (...)** in the **Time off balances** tile.
-2.	To submit a leave of absence request, select **Request Leave of absence**.
-3.	Enter information for **Leave type**, **Start date** and a tentative **End date**.
-4.	If you need to submit any supporting documentation, select **Upload** under **Attachments**.
-5.	Select **Submit** if you're ready to submit your request. Otherwise, select **Save draft**.
-6.	To update an open ended leave: Select the leave to be updated, enter the **End date**, set **Confirm end date** to **Yes** and upload documentation.
-7.	If the **Return to work notice** is set to **Yes**, click **Upload** and select the checkbox to confirm that a valid return to work notice is uploaded.
-8.	Select **Submit** when all the details are entered. 
- 
-
+1. In the **Employee self-service** workspace, on the **Time off balances** tile, select **More (...)**.
+2. To submit a leave of absence leave request, select **Request Leave of absence**.
+3. Enter information in the **Leave type** and **Start date** fields. In the **End date** field, enter a tentative end date.
+4. If you must submit supporting documentation, under **Attachments**, select **Upload**.
+5. If you're ready to submit your request, select **Submit**. Otherwise, select **Save draft**.
+6. To update an open-ended leave request, select the request, enter an end date in the **End date** field, set the **Confirm end date** option to **Yes**, and upload documentation.
+7. If the **Return to work notice** option is set to **Yes**, select **Upload**, and then select the checkbox to confirm that a valid return-to-work notice has been uploaded.
+8. When all the details have been entered, select **Submit**.
