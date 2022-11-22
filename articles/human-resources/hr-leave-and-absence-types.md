@@ -47,21 +47,20 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 1. On the **Leave and absence** workspace, select the **Links** tab.
 2. Under **Setup**, select **Leave and absence types**.
 3. Select **New**.
-4. Enter a name for the leave type under **Type**, enter a description under **Description**, select a workflow from **Workflow ID** and select a **Request type** based on the leave type. For example, **Time off** or **Leave of absence**.
+4. Enter a name for the leave type under **Type**, enter a description under **Description**, and select a workflow in the **Workflow ID** field. Based on the leave type, select a request type in the **Request type** field. For example, select **Time off** or **Leave of absence**.
 5. In **General**, select **None**, **Scheduled**, or **Unscheduled** from the **Category** dropdown.
 6. Select an earning code from the **Earning code** dropdown.
-7. Under **Reason code required**, choose whether you want to require a reason code. If you want to require reason codes, you might need to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it. 
+7. Under **Reason code required**, select whether you want to require a reason code. If you want to require reason codes, you might have to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it.
+8. If the request type is **Leave of absence**, follow these steps:
 
-   *  If the **Request type** is **Leave of absence**:
-      *  Under **Open ended**, choose whether users should be allowed to create open ended leaves or not. 
-      *  If **Open ended** is enabled, there's an option to choose if workers need to submit a return-to-work notice or not. 
-      *  **Enable return to work notice** can be enabled if workers need to submit the same while returning from a leave of absence.
-      *  If **Enable return to work notice** is enabled, then **Attachment required** is also enabled automatically and can't be disabled.  
+      1. Under **Open ended**, select whether users should be able to create open-ended leaves.
+      2. If **Open ended** is enabled, you can select whether workers must submit a return-to-work notice when they return from a leave of absence.
+      3. If workers must submit a return-to-work notice, you can enable **Enable return to work notice**. If **Enable return to work notice** is enabled, **Attachment required** is automatically enabled and can't be disabled.
 
-8. **Attachment required** can be enabled if users should upload documents while creating or updating leave requests.
-9. Under **Restrict access to selected roles**, choose whether you want to restrict access. Then select the security roles under **Security roles for this leave type**. The security roles are defined in the workflow you selected under **Workflow ID** earlier in this procedure.
-10. Under **Calendar color**, choose what color to display on leave and absence calendars for this leave type. 
-11. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
+9. If users should upload documents when they create or update leave requests, you can enable **Attachment required**.
+10. Under **Restrict access to selected roles**, select whether you want to restrict access. Then, under **Security roles for this leave type**, select the security roles. The security roles are defined in the workflow that you selected under **Workflow ID** earlier in this procedure.
+11. Under **Calendar color**, select the color to show on leave and absence calendars for this leave type.
+11. Under **Suspension relations**, select whether this leave type should either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type.
 12. Select **Save**.
 
 ## Configure leave type rules
