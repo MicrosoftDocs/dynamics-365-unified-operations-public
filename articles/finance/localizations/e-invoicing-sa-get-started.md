@@ -1,8 +1,8 @@
 ---
-title: Get started with Electronic invoicing for Saudi Arabia
+title: Get started with Electronic invoicing for Saudi Arabia - Phase two
 description: This article provides information that will help you get started with Electronic invoicing for Saudi Arabia.
 author: mrolecki
-ms.date: 06/30/2022
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,12 +17,12 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Get started with Electronic invoicing for Saudi Arabia - Phase 2
+# Get started with Electronic invoicing for Saudi Arabia - Phase two
 
 [!include [banner](../includes/banner.md)]
 
 
-This article provides information that will help you get started with phase 2 of the Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. This article guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
 ### Prerequisites
 
@@ -102,8 +102,9 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
 
 ## Finance configuration
 
-When the tax invoices are cleared, ZATCA generates a QR code containing the digital signature for that clearance. This QR code, as well others clearance information returned by the tax authority as result of the submission of the tax invoices, must be imported back in Finance. To achieve this result, you must configure the Response types in the Finance. 
-Follow these steps to complete this configuration:
+When tax invoices are cleared, ZATCA generates a QR code that contains the digital signature for that clearance. This QR code, as well others clearance information returned by the tax authority as result of the submission of the tax invoices, must be imported back into Finance. To achieve this result, configure the Response types in the Finance. 
+
+Complete the following steps to complete this configuration:
 
 1. Make sure that the country-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
