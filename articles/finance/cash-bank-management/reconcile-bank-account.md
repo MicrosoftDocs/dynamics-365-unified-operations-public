@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 When you receive a bank statement, you should periodically reconcile legal entity bank transactions with the transactions on the bank statement.
 
-You cannot reconcile a bank statement with a bank account if any of the checks or deposit slip payments that are listed on the statement currently have a status of **Pending cancellation**. After a reviewer posts or rejects a check reversal or deposit slip payment cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account.
+You can't reconcile a bank statement with a bank account if any of the checks or deposit slip payments that are listed on the statement currently have a status of **Pending cancellation**. After a reviewer posts or rejects a check reversal or deposit slip payment cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account.
 
 1. Go to **Cash and bank management** \> **Bank Accounts** \> **Bank accounts**. Select the bank account to reconcile with the bank statement and select **Reconcile** > **Account reconciliation**.
 
@@ -38,21 +38,21 @@ You cannot reconcile a bank statement with a bank account if any of the checks o
 
 3. Select **Transactions** to open the **Account reconciliation** page.
 
-4. For each transaction that is included on the bank statement, select the **Cleared** check box if the amount in Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
+4. For each transaction that is included on the bank statement, select the **Cleared** checkbox if the amount in Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
     
 
 >[!NOTE]
->Do not select the **Cleared** check box for transactions that are not on the bank statement. These transactions will continue to be displayed in on this page until they are reconciled with a future bank statement.
->The **Cleared** check box is not available if the transaction has a status of **Pending cancellation**. Transactions might have this status if Finance is set up to require that reversals or cancellations be sent to review before they are posted. After a reviewer posts or rejects the reversal or cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account with the bank statement.
+>Don't select the **Cleared** checkbox for transactions that are not on the bank statement. These transactions will continue to be displayed in on this page until they are reconciled with a future bank statement.
+>The **Cleared** checkbox is not available if the transaction has a status of **Pending cancellation**. Transactions might have this status if Finance is set up to require that reversals or cancellations be sent to review before they are posted. After a reviewer posts or rejects the reversal or cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account with the bank statement.
 
 
-To select the **Cleared** check box for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
+To select the **Cleared** checkbox for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
 
-5.  If the amount for a bank account transaction does not correspond to the amount for the transaction on the bank statement, enter the amount of the correction in the **Correction amount** field.
+5.  If the amount for a bank account transaction doesn't correspond to the amount for the transaction on the bank statement, enter the amount of the correction in the **Correction amount** field.
     
 
 > [!NOTE]
-> If the fiscal period of the transaction to be corrected is closed, the **Correction amount** field cannot be used. Instead, create a line that has a transaction date that is in an open fiscal period for the correction. In this case, you must add the financial dimensions that were used on the original transaction, and also the offset main account.
+> If the fiscal period of the transaction to be corrected is closed, the **Correction amount** field can't be used. Instead, create a line that has a transaction date that is in an open fiscal period for the correction. In this case, you must add the financial dimensions that were used on the original transaction, and also the offset main account.
 
 
 
@@ -60,17 +60,17 @@ To select the **Cleared** check box for an interval of checks that all are displ
 
 7.  As the transactions on the bank statement are marked as **Cleared**, the amount in the **Unreconciled** field, which is recalculated continuously as you make changes, approaches zero. When it reaches zero, select **Reconcile account** to post the reconciliation, and the transactions and corrections that you have created.
     
-    After the reconciliation is posted, the transactions that have been included cannot be modified or corrected, and they are not displayed for future account reconciliation.
+    After the reconciliation is posted, the transactions that have been included can't be modified or corrected, and they are not displayed for future account reconciliation.
 
 8.  To view bank transactions that have not yet been reconciled, use the **Unreconciled bank transactions** report. To view the bank statement for a bank account, use the **Bank statement** report.
 
 ## Cancel bank statement reconciliation 
 
-The Cancel bank statement reconciliation functionality enables you to cancel bank statement reconciliation. To use this feature, enable the **Cancel bank statement reconciliation** feature in the **Feature management** workspace. You also need to enable the **Allow bank statement edit** parameter. To do this, go to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation**.
+The **Cancel bank statement reconciliation** functionality enables you to cancel bank statement reconciliation. To use this feature, enable the **Cancel bank statement reconciliation** feature in the **Feature management** workspace. You also need to enable the **Allow bank statement edit** parameter. To do this, go to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation**.
  
 Bank statement reconciliations can only be canceled in the chronological order in which they were entered. When a bank statement reconciliation is canceled, new transactions and corrections will be reversed and all other transactions will be marked as un-reconciled.
  
-To cancel bank statement reconciliation, select the bank statement and select **Bank statement > Cancel bank reconciliation**. On the **Cancel bank reconciliation** page, provide the **Reason code**, **Reason comment**, and **Cancellation date**. Select **OK** to begin cancellation. Note, the bank statement cancellation date must be on or after the bank statement date. After the bank statement reconciliation has canceled, the **Cancellation date** field for the bank statement will be updated with the **Cancellation date** provided. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
+To cancel bank statement reconciliation, select the bank statement and select **Bank statement > Cancel bank reconciliation**. On the **Cancel bank reconciliation** page, provide the **Reason code**, **Reason comment**, and **Cancellation date**. Select **OK** to begin cancellation. Note, the bank statement cancellation date must be on or after the bank statement date. After the bank statement reconciliation has been canceled, the **Cancellation date** field for the bank statement will be updated with the **Cancellation date** provided. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
