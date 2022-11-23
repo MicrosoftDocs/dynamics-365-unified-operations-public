@@ -68,7 +68,7 @@ Microsoft makes frequent changes to the content, and those changes show up in th
 
 When you decide that it's time to get the latest version of the content from Microsoft, you can use the Git command line or GitHub Desktop. The Help for GitHub provides [an example that shows how this process works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, you use the **Merge into current branch** command to pull changes from the origin into your fork.
 
-If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. Microsoft has a GitHub repo for English (United States) version of the base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public. Use a third-party tool to retrieve the content of the HTML files.
+If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. Microsoft has a GitHub repo for English (United States) content, MicrosoftDocs/Dynamics-365-Unified-Operations-public. You can use a third-party tool to generate HTML files from the Markdown files stored in this repo.
 
 Because the Microsoft repos are public, you don't have to have a valid GitHub account to get the content. However, we recommend that, at a minimum, your organization have a system account that has access to GitHub.
 

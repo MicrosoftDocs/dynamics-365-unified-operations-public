@@ -59,6 +59,8 @@ The end-to-end process depends on the actual customer solution and the users' ex
 3. Index the content by using a search service.
 4. Connect the custom **Help** pane to the website and the search service.
 
+Microsoft provides a [toolkit](custom-help-toolkit.md) that can help you generate HTML files from the Microsoft Help repositories, generate JavaScript Object Notation (JSON) files for search services, and change the locale of HTML files so that it matches the locale of your solution.
+
 You're welcome to share your knowledge by contributing to this documentation through the link at the bottom of the page or by joining the [Dynamics 365 community](https://community.dynamics.com/).
 
 The following table outlines the main objectives that admins typically have for configuring the Help experience.

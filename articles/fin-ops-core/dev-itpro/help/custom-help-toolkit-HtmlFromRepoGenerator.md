@@ -30,8 +30,6 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 - Clone a Microsoft documentation repository (repo).
 - Remove developer and admin content from your clone of the Microsoft repo.
 - Update links to files that are no longer present in the clone.
-- Update the value of the **ms.locale** property so that it matches the language options that are supported by the finance and operations client.
-
 - Generate HTML files that can be used to publish content.
 
     The HTML files must be generated in the **d365F-O** subfolder. The files must be generated based on style sheets and templates that are part of the tool. For more information, see the [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files) section of this article.
@@ -62,17 +60,6 @@ Here is an explanation of the parameters.
 | ReplaceUrl | Specify the URL that should replace links between files when the target files aren't present. This parameter is intended to be used to turn relative links into absolute links. |
 | LogsDir | Specify the folder to save logs files to. |
 
-<!-- Seems like we need to remove this. Just verifying.
-
-The following additional parameters are used when the tool is run against the localized Microsoft documentation repos.
-
-| Parameter | Description |
-|-----------|-------------|
-| EnRepo | Specify the URL of the en-US repo. This parameter is optional if you run the tool against a previously cloned repo. The URL of the Microsoft documentation repo for English (United States) is `https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public`. |
-| EnOut | Specify the folder where the en-US repo exists, or the folder to clone it to. If you run the tool against a previously cloned repo, this folder must not already exist. |
-| Lng | Specify the language value that should be used for **ms.locale** metadata in the generated HTML files. The value must correspond to the value that is specified in the language settings of the finance and operations client. If this parameter isn't set, the tool uses **en-US**. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md). |
-| Rtl | Include this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew. |
--->
 ## Examples
 
 > [!NOTE]
@@ -90,20 +77,6 @@ The following example uses a previously cloned en-US repo and generates HTML fil
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://learn.microsoft.com/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
-<!--Seems like we should remove the examples for localized repos
-
-The following example clones the de-DE and en-US repos, and generates HTML files for de.
-
-```dos
-HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://learn.microsoft.com/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
-```
-
-The following example uses the existing de-DE and en-US repos, and generates HTML files for de. If you use the existing de-DE repo, make sure that it's up to date.
-
-```dos
-HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://learn.microsoft.com/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
-```
--->
 > [!IMPORTANT]
 > Because the **HtmlFromRepoGenerator** tool changes links during processing, don't run HtmlFromRepoGenerator.exe more than one time against a previously cloned repo. If it's run more than one time against the same content, links will be incorrect. If you want to rerun HtmlFromRepoGenerator.exe, either use the **HtmlFromRepoGenerator** tool to create a new clone of the repo, or revert all local changes that have been made to your existing clone.
 
