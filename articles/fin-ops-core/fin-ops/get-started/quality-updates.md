@@ -144,14 +144,14 @@ Microsoft strives to keep the release pipeline efficient enough to deliver small
 No. The main objective of quality updates is to ensure fundamentals like security, privacy, reliability, availability, and performance are continuously improving for our customers. By delaying or pausing an update, security, availability, and reliability will be at risk.
 
 ## How do I know what set of changes went into a quality update payload?
-Follow below to identify the list of changes that go into a quality update payload. 
+Follow the steps below to identify the list of changes that go into a quality update payload. 
 
 Use 10.0.28 Quality Update train and the related App version 10.0.1265.89.
 
 1. In Lifecycle Services, open the **Environment details** page for your sandbox. 
 2. In the **Available Updates** section, select **View Update** for the latest Quality Update build. 
 3. Export the build into a CSV or Microsoft Excel file.
-4. In the exported file, filter and choose the 'Build version' that are less than or equal to the build number 10.0.1265.89. You should now be able to see the delta payload.
+4. In the exported file, filter and select the **Build version** that is less than or equal to build number 10.0.1265.89. You should now be able to see the delta payload.
  
 > [!NOTE]
 > The export to a CSV or Excel file must happen before the environment is updated. Otherwise, you can use an environment with a similar configuration that doesn't have the update installed and follow the steps above.
