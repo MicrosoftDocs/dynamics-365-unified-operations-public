@@ -46,7 +46,7 @@ You can submit requests for a leave of absence that is open-ended and view the s
 2. Create a leave of absence leave type.
 3. Enter the details such as the leave type, description, and workflow ID.
 4. In the **Request type** field, select **Leave of absence**.
-5. In the details section, for open-ended leaves, set the **Open ended** option to **Yes**.
+5. In the details section, for open-ended leaves, set the **Open Ended** option to **Yes**.
 6. Set the **Return to work notice** option to **Yes** or **No**.
 7. A return-to-work notice can optionally be required for open-ended leave of absence requests.
 
