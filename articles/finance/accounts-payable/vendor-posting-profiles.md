@@ -2,7 +2,7 @@
 title: Vendor posting profiles
 description: Vendor posting profiles control the posting of vendor transactions to the general ledger.
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,7 +79,7 @@ If you want all vendor transactions to have the same posting profile, set up onl
 </tr>
 <tr class="even">
 <td><strong>Settle account</strong></td>
-<td>Select the liquidity ledger account that is used for cash flow forecasts. This fields is only available when cash flow forecasting is enabled.</td>
+<td>Select the liquidity ledger account that is used for cash flow forecasts. This field is only available when cash flow forecasting is enabled.</td>
 </tr>
 <tr class="odd">
 <td><strong>Sales tax prepayments</strong></td>
@@ -89,7 +89,7 @@ If you want all vendor transactions to have the same posting profile, set up onl
 </tr>
 <tr class="even">
 <td><strong>Arrival</strong></td>
-<td>Select the ledger account that information about unapproved vendor invoices is posted to. The information is entered in the Invoice register journal. For example, a user enters very basic information about vendor invoices when they are received in the invoice register. When the invoice register is posted, the transactions are posted to the account that is entered here and in the <strong>Offset account</strong> field. When the invoices are approved, the debt is transferred from the arrival account to the vendor summary account.</td>
+<td>Select the ledger account that information about unapproved vendor invoices is posted to. The information is entered in the <strong>Invoice register journal</strong>. For example, a user enters very basic information about vendor invoices when they are received in the invoice register. When the invoice register is posted, the transactions are posted to the account that is entered here and in the <strong>Offset account</strong> field. When the invoices are approved, the debt is transferred from the arrival account to the vendor summary account.</td>
 </tr>
 <tr class="odd">
 <td><strong>Offset account</strong></td>
@@ -105,10 +105,10 @@ For transactions that have the selected posting profile, specify whether transac
 
 Specify the following values to set up your posting profile
 
-| Field          | Description                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Field          | Description             |
+|----------------|--------------------------------------------------------------------------|
 | **Settlement** | Select this option to enable automatic settlement of transactions that have this posting profile. If this option is cleared, you must manually settle transactions by using the **Settle open transactions** page. |
-| **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                                                                                                               |
+| **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                              |
 | **Close**      | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                       |
 
 

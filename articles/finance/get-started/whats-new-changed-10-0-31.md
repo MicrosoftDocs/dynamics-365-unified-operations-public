@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.31 (February 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.31 preview release.
 author: kfend
-ms.date: 10/18/2022
+ms.date: 11/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,8 @@ The following table lists the features that are included in this release. We mig
 | Tax Calculation | Update tax exempt number from customer address | This feature automatically updates the **Tax exempt number** field on the sales order and free text invoice header, based on the customer address that is selected. You can enable this feature by using the **Update tax exempt number from customer address** parameter on the **Tax Calculation parameters** page when the Tax Calculation service is enabled. | Parameter |
 | General ledger | Automate ledger settlements process | The automation of ledger settlement uses the Process automation framework to define matching rules and the schedule that they will be run on. You can define matching criteria such as the posting type and financial dimensions. | Feature management |
 | Additional languages available | Four additional languages are available | Four new languages are available for user selection in the preferred language list: Korean, Portuguese (Portugal), Vietnamese, and Chinese (Traditional). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
-|General ledger|	Optimize yea-end close|	This feature accelerates the year-end close run by executing the year-end close processing on microservice, illustrates year-end close results, and manages financial dimensions transfer of balance sheet accounts.|	Feature management |
+|General ledger|	Optimize year-end close|	This feature accelerates the year-end close run by executing the year-end close processing on microservice, illustrates year-end close results, and manages financial dimensions transfer of balance sheet accounts.|	Feature management |
+|General ledger|	Financial Dimension Service |	This feature improves performance when you use the Data management framework to import a journal that has a large number of lines. It uses a new micro-service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries.|	LCS & Parameter |
 
 ## Feature enhancements included in this release
 
