@@ -84,6 +84,29 @@ The following illustration shows an example of the **Electronic reporting format
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
 
+### Adjustment of ER destinations in run-time
+
+Starting from Finance version **10.0.31**, the possibility to manually change assigned ER destinations was introduced for the following reports:
+ - Customer account statement
+ - Interest note
+ - Collection letter note
+ - Customer Payment advice
+ - Vendor Payment advice
+ 
+> [!NOTE]
+> For **Customer Payment advice** and **Vendor Payment advice** the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
+
+If ER report formats are configured to be used in Print management as report templates and ER destinations are defined for these reports, then related ER destinations will be shown on the processing forms. Users can manually adjust default ER destinations’ output channels prior to run reports.
+
+[![Adjustment of ER destinations in run-time.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+If several ER report templates are applicable, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment.
+
+The standard Print management destinations selection will be dynamically hidden if no SQL Server Reporting Services (SSRS) report templates are applicable for the selected document.
+
+> [!NOTE]
+> When **Use print management destination** option is set to **Yes**, the system will always use default ER destinations which are configured for specific ER reports. All manual changes made on the form will be ignored. Set **Use print management destination** option to **No** if you want to process documents to the ER destinations defined on the form right before reports running.
+
 ## Verify the provided user action
 
 You can verify what user action, if any, is provided for the running ER format when you perform a specific user action. This verification is important when you must configure action-dependent ER destinations, but you aren't sure which user action code, if any, is provided. For example, when you start to post a free text invoice and set the **Print invoice** option to **Yes** in the **Post free text invoice** dialog box, you can set the **Use print management destination** option to **Yes** or **No**.
