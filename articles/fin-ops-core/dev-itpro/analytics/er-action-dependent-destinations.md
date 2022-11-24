@@ -84,7 +84,7 @@ The following illustration shows an example of the **Electronic reporting format
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
 
-Starting from Finance version **10.0.31**, the possibility to manually change assigned ER destinations was introduced for the following documents:
+Starting from Finance version **10.0.31**, the possibility to manually change assigned ER destinations at runtime was introduced for the following business documents:
  - Customer account statement
  - Interest note
  - Collection letter note
@@ -94,14 +94,35 @@ Starting from Finance version **10.0.31**, the possibility to manually change as
 > [!NOTE]
 > For **Customer Payment advice** and **Vendor Payment advice** the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
 
-If several ER formats are applicable as report templates for the selected document, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment.
+If several ER formats are applicable as report templates for the selected document, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment at runtime.
 
 The standard Print management destinations selection will be dynamically hidden if no SQL Server Reporting Services (SSRS) report templates are applicable for the selected document.
 
 [![Adjustment of ER destinations in run-time.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
 
 > [!NOTE]
-> When **Use print management destination** option is set to **Yes**, the system will always use default ER destinations which are configured for specific ER reports. All manual changes made on the form will be ignored. Set **Use print management destination** option to **No** if you want to process documents to the ER destinations defined on the form right before reports running.
+> When the **Use print management destination** option is set to **Yes**, the system will always use default ER destinations which are configured for specific ER reports. All manual changes made on the form will be ignored. Set the **Use print management destination** option to **No** if you want to process documents to the ER destinations defined on the form right before reports running.
+
+The following business documents do not assume explicit action selection by the user when running:
+
+ - Customer account statement
+ - Interest note
+ - Collection letter note
+ - Customer Payment advice
+ - Vendor Payment advice
+
+The following logic is applicable for actions identification for the reports above:
+
+ - If the **ForcePrintJobSettings** flight is *enabled*:
+   - If the **Use print management destination** option is set to **Yes** then **Print** action is used while report processing.
+   - If the **Use print management destination** option is set to **No** then **View** action is used.
+
+ - If the **ForcePrintJobSettings** flight is *disabled*:
+   - If the **Use print management destination** is set to **Yes** then **Print** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
+   - If the **Use print management destination** is set to **No** then **View** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
+   - **Print** action is always ussd for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
+
+With the logic described above **Print** or **View** actions can be used for configuration of action-dependent ER report destinations, when necessary.
 
 ## Verify the provided user action
 
