@@ -90,8 +90,10 @@ Starting from Finance version **10.0.31**, the possibility to manually change as
  - Collection letter note
  - Customer Payment advice
  - Vendor Payment advice
- 
-> [!NOTE]
+
+To activate the possibility to change ER destinations at runtime enable the **Allow ER destinations adjustment at runtime** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+
+> [!IMPORTANT]
 > For **Customer Payment advice** and **Vendor Payment advice** the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
 
 If several ER formats are applicable as report templates for the selected document, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment at runtime.
