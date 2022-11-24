@@ -41,6 +41,7 @@ The following FAQ articles discuss issues specific to Supply Chain Management:
 - [Product information management FAQ](pim/product-information-faq.md)
 - [Sales order FAQs](sales-marketing/sales-orders-faq.md)
 - [Schedule sales history data cleanup](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
+- [DDMRP FAQ](master-planning/planning-optimization/ddmrp-faqs.md)
 
 The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including Supply Chain Management:
 

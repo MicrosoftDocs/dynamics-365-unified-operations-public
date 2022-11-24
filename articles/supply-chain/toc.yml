@@ -1929,6 +1929,8 @@
           href: master-planning/planning-optimization/ddmrp-planning.md
         - name: Visual and collaborative execution
           href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+        - name: DDMRP FAQ
+          href: master-planning/planning-optimization/ddmrp-faqs.md
       - name: Deprecated planning engine
         items:
           - name: Deprecated planning engine overview
