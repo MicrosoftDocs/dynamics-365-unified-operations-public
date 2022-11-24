@@ -1,11 +1,11 @@
 ---
 title: Message processor messages
-description: This article provides information about the message processor.
+description: This article provides information about the message processor, which is a framework for processing messages representing events.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace   
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/02/2022
 ms.custom: bap-template
 ---
@@ -25,9 +25,13 @@ The message processor is a framework for processing messages representing events
 
 <!-- KFM: Provide a bit more background and a couple of usage examples. -->
 
-<!-- KFM: The [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) topic provides API documentation. Don't we need that for this feature too? Maybe it's similar? -->
+<!-- KFM: The [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) topic provides API documentation. Don't we need something like that for this feature too? Maybe it's similar? -->
+
+<!-- KFM: Is any feature management needed to turn on this feature? -->
 
 ## The message processor messages list
+
+Use the **Message processor messages** page to view the list of incoming messages, view the message log, manually process messages, and troubleshoot issues.
 
 ### Open the message processor messages list
 
@@ -39,6 +43,10 @@ You can use the fields at the top of the **Message processor messages** page to 
 
 - **Message type** – Specifies the type of message.
 - **Message queue** – Specifies the name of the queue in which the message is to be processed. The following queues are provided:
+  - *Manufacturing Execution 3rd Party* – This queue holds messages created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is similar to the **Message processor messages** page, but focuses on that feature only. See also [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md). <!-- KFM: Please confirm this -->
+  - *Production* – This queue holds messages created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is similar to the **Message processor messages** page, but focuses on that feature only. See also [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md). <!-- KFM: Please confirm this -->
+  - *Warehouse* – <!-- KFM: Description needed -->
+  - *\<Custom queues\>* – <!-- KFM: I suppose we can have custom queues here? If so, how? -->
 - **Message state** – Specifies the state of the message. The following states exists:
   - *Queued* – The message is ready to be processed by the message processor.
   - *Processed* – The message was successfully processed by the message processor.
@@ -53,16 +61,16 @@ The **Message content** depends on the **Message type** and will therefore have 
 
 The toolbar on the **Log** tab includes the following buttons:
 
-- **Log** – Displays the processing results. This is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
+- **Log** – Select this button to show the processing results. This is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
 - **Bundle** – Multiple message processing operations can run as part of the same batch process. Select this button to view this detailed data. For example, you can see whether dependencies exist that require the system to process certain messages in a specific sequence.
 
 ### Manually process or cancel a message
 
 If needed, you can manually process or cancel a message, depending on its current state. To do so, select the message in the grid and then select **Process** or **Cancel** on the Action Pane.
 
-<!-- KFM: What about the **Queue** button. What does that do and how do we use it? We might need a new section about this...  -->
+<!-- KFM: What about the **Queue** button. What does that do and how do we use it? -->
 
-## Message processor batch job
+## Schedule message processing using the message processor batch job
 
 The *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
 
@@ -93,6 +101,37 @@ As part of the activation process, you will be guided to specify whether the eve
 >[!NOTE]
 > If **When a Business Event occurs** is set to *Microsoft Power Automate* (rather than *HTTPS*, for example), the **Endpoint name** will automatically be created in Supply Chain Management based on the *Microsoft Power Automate* setup.
 
+## Scheduler
+
+The message processor has one scheduler. The class `SysMessageKeyDateTimeSequenceProcessorScheduler` schedules messages with dependencies based on a key, date, and time to be processed in the correct order. Messages to be processed are stored in the tables `SysMessageProcessorTaskBundle` and `SysMessageProcessorTaskBundleMessage`. Dependent messages must be in the same bundle.
+
+The `SysMessageKeyDateTimeSequenceProcessorScheduler` is used by the [third-party manufacturing execution system (MES) integration](../production-control/mes-integration.md) feature to secure messages related to a production order, and are processed in the order they are received or created. The dependencies are defined by a key (production order number) and the time.
+
+For example, suppose the system receives or creates the following messages:
+
+- Production order 1 – Start message
+- Production order 2 – Start message
+- Production order 2 – Report as finished message
+- Production order 1 – Report as finished message
+
+In this case, the `SysMessageKeyDateTimeSequenceProcessorScheduler` will schedule the processing of messages in the following order:
+
+1. Production order 1 – Start message
+1. Production order 1 – Report as finished message
+1. Production order 2 – Start message
+1. Production order 2 – Report as finished message
+
+Each report-as-finished message depends on the related start message being processed successfully.
+
+Because a bottleneck can occur when picking up records to process for multiple tasks, and because there may be dependencies between the messages, the system bundles the messages. For example, if the bundle size is two, then the system will create the following bundles:
+
+- Bundle 1 - Production order 1 – Start message
+- Bundle 1 - Production order 1 – Report as finished message
+- Bundle 2 - Production order 2 – Start message
+- Bundle 2 - Production order 2 – Report as finished message
+
+For scalability, you can configure the number of tasks that should process the bundles. If the configuration uses two message processor tasks, then the two bundles can be processed in parallel. <!-- KFM: We should provide instructions on how to do this. Are you referring to the **Message queue setup**? (Described above) -->
+
 ## Implementation examples
 
 <!-- KFM: Add general intro -->
@@ -100,7 +139,6 @@ As part of the activation process, you will be guided to specify whether the eve
 ### Implement a new queue
 
 <!-- KFM: Introduce what this example is showing. Give a bit more context at the start (e.g., where are we?) -->
-
 
 1. Create an extension for the enum `SysMessageQueue`.
 1. Add a new enum value for the new queue.
@@ -299,7 +337,7 @@ As part of the activation process, you will be guided to specify whether the eve
 
 ## Microsoft Power Automate example
 
-In this example, use **When a Business Event occurs** with *Microsoft Power Automate* sends emails containing InfoLog messages and hyperlinks to open the **Message processor messages** page for a specific failed message. If needed, you can add extra logic to send the notifications in parallel using different channels and control the recipients based on the event data.
+In this example, using **When a Business Event occurs** with *Microsoft Power Automate* sends emails containing InfoLog messages and hyperlinks to open the **Message processor messages** page for a specific failed message. If needed, you can add extra logic to send the notifications in parallel using different channels and control the recipients based on the event data.
 
 1. In [Power Automate](https://preview.flow.microsoft.com), create a new automated cloud flow for the flow trigger **When a Business Event occurs - Fin & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
 
