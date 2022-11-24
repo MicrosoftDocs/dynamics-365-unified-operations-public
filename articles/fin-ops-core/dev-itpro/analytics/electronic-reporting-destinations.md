@@ -104,6 +104,12 @@ If ER report formats are configured to be used in Print management as report tem
 
 [![Adjustment of ER destinations in run-time.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
 
+> [!NOTE]
+> For **Customer Payment advice** and **Vendor Payment advice** the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
+
+If several ER report templates are applicable, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment.
+
+The standard Print management destinations selection will be dynamically hidden if no SQL Server Reporting Services (SSRS) report templates are applicable for the selected document.
 
 ## Destination types
 
