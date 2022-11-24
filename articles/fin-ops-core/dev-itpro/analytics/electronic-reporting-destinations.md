@@ -100,12 +100,12 @@ Starting from Finance version **10.0.31**, the possibility to manually change as
  - Customer Payment advice
  - Vendor Payment advice
  
+> [!NOTE]
+> For **Customer Payment advice** and **Vendor Payment advice** the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
+
 If ER report formats are configured to be used in Print management as report templates and ER destinations are defined for these reports, then related ER destinations will be shown on the processing forms. Users can manually adjust default ER destinations’ output channels prior to run reports.
 
 [![Adjustment of ER destinations in run-time.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
-
-> [!NOTE]
-> For **Customer Payment advice** and **Vendor Payment advice** the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
 
 If several ER report templates are applicable, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment.
 
