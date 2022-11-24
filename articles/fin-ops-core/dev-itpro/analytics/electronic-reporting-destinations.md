@@ -91,6 +91,18 @@ For example, you can use this capability to configure file destinations for a fi
 
 When you run an ER format, all destinations that were configured for components of the format are always run. In addition, in Finance **version 10.0.17 and later**, the ER destinations functionality has been improved and now lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
 
+### Adjustment of ER destinations in run-time
+
+Starting from Finance version **10.0.31**, the possibility to manually change assigned ER destinations was introduced for the following reports:
+ - Customer account statement
+ - Interest note
+ - Collection letter note
+ - Customer Payment advice
+ - Vendor Payment advice
+ 
+If ER report formats are configured to be used in Print management as report templates and ER destinations are defined for these reports, then related ER destinations will be shown on the processing forms. Users can manually adjust default ER destinations’ output channels prior to run reports.
+
+
 ## Destination types
 
 The following destinations are currently supported for ER formats. You can disable or enable all types at the same time. In this way, you can either do nothing or send the component to all configured destinations.
