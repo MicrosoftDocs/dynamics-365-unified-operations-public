@@ -111,6 +111,9 @@ If several ER report templates are applicable, then all ER destinations for all 
 
 The standard Print management destinations selection will be dynamically hidden if no SQL Server Reporting Services (SSRS) report templates are applicable for the selected document.
 
+> [!NOTE]
+> When **Use print management destination** option is set to **Yes**, the system will always use default ER destinations which are configured for specific ER reports. All manual changes made on the form will be ignored. Set **Use print management destination** option to **No** if you want to process documents to the ER destinations defined on the form right before reports running.
+
 ## Destination types
 
 The following destinations are currently supported for ER formats. You can disable or enable all types at the same time. In this way, you can either do nothing or send the component to all configured destinations.
