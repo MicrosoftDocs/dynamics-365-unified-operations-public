@@ -42,7 +42,7 @@ No automated functionality currently exists for this in Supply Chain Management,
 
 ### Q: Is there a data entity for importing usage history from legacy ERP systems?
 
-Yes, a data entity exists for updating your past buffer value history if you come from another system and would like to keep that history. <!-- KFM: Can we name the entity or give a link? -->
+Yes, a data entity exists for updating your past buffer value history if you come from another system and would like to keep that history.
 
 ### Q: Does DDMRP work with Supply Chain Management process manufacturing?
 
