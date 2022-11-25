@@ -2,7 +2,7 @@
 title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: This article provides an overview and setup guidelines for the functionality of simplified electronic invoices that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 11/21/2022
+ms.date: 11/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,7 +81,7 @@ You must enable the following features in the **Feature management** workspace:
 
 ### Set up VAT per Saudi Arabia requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](/dynamics365/finance/general-ledger/indirect-taxes-overview).
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview) and [Configure sales tax codes](../../finance/localizations/emea-sau-e-invoices.md#configure-sales-tax-codes).
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Saudi Arabia.
 
@@ -189,7 +189,8 @@ You must also configure legal entity-specific parameters of the e-invoice format
 1. On the **Conditions** FastTab, create records to link methods of payment that are configured for customers in the **Accounts receivable** module to payment means that are defined for e-invoices by ZATCA:
     1. In the **Lookup result** field, select a payment means code.
     1. In the **Name** field, select a customer payment method that must correspond to the payment means code. You can also select \*Blank\* if you want the payment means code to be selected when the customer payment method is not specified, and \*Not blank\* if you want the payment means code to be selected for any customer payment method.
-    1. The **Line** field is populated automatically. It defines the order in which payment means codes are searched for a customer payment method. You can change the order by using the **Move up** and **Move down** buttons. 
+    1. The **Line** field is populated automatically. It defines the order in which payment means codes are searched for a customer payment method. You can change the order by using the **Move up** and **Move down** buttons.
+1. Complete the configuration by setting **State** to *Completed*.
 
 ### Configure e-invoice submission
 
