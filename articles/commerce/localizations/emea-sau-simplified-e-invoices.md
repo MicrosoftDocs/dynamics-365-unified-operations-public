@@ -81,7 +81,7 @@ You must enable the following features in the **Feature management** workspace:
 
 ### Set up VAT per Saudi Arabia requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview) and [Configure sales tax codes](../../finance/localizations/emea-sau-e-invoices.md#configure-sales-tax-codes).
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../finance/general-ledger/indirect-taxes-overview.md) and [Configure sales tax codes](../../finance/localizations/emea-sau-e-invoices.md#configure-sales-tax-codes).
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Saudi Arabia.
 
@@ -200,9 +200,9 @@ Before setting up e-invoice submission parameters for Commerce, you must configu
 1. Create a feature setup of the *Processing pipeline* type for the electronic invoicing feature. To do this, you can configure the first feature setup and then create new feature setups by copying them from the first one and modifying its parameters.
 1. In the feature setup:
     1. In the integration action of the processing pipeline, specify the name of the CSID certificate added earlier.
-    1. In the applicability rule, specify Store and RegisterNumber.
+    1. In the applicability rule, specify corresponding Store and RegisterNumber.
 
-In Commerce headquaters, follow these steps to set up e-invoice submission parameters that are specific to Commerce for Saudi Arabia.
+In Commerce headquarters, follow these steps to set up e-invoice submission parameters that are specific to Commerce for Saudi Arabia.
 
 1. Open **Electronic document parameters**.
 1. On the **Electronic document** tab, create a new record and specify the following parameters:
