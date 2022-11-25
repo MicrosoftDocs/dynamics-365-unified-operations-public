@@ -122,7 +122,7 @@ The following logic is applicable for actions identification for the reports abo
  - If the **ForcePrintJobSettings** flight is *disabled*:
    - If the **Use print management destination** is set to **Yes** then **Print** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
    - If the **Use print management destination** is set to **No** then **View** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
-   - **Print** action is always ussd for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
+   - **Print** action is always used for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
 
 With the logic described above **Print** or **View** actions can be used for configuration of action-dependent ER report destinations, when necessary.
 
