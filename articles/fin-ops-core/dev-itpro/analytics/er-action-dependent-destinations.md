@@ -84,7 +84,7 @@ The following illustration shows an example of the **Electronic reporting format
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
 
-Starting from Finance version **10.0.31**, the possibility to manually change assigned ER destinations at runtime was introduced for the following business documents:
+Starting from version **10.0.31** of Microsoft Dynamics 365 Finance, the possibility to manually change assigned ER destinations at runtime was introduced for the following business documents:
  - Customer account statement
  - Interest note
  - Collection letter note
