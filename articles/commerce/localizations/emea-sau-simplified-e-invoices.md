@@ -194,7 +194,11 @@ You must also configure legal entity-specific parameters of the e-invoice format
 
 ### Configure e-invoice submission
 
-Before setting up e-invoice submission parameters for Commerce, you must configure the Electronic invoicing service to be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../finance/localizations/e-invoicing-sa-get-started.md).
+Before setting up e-invoice submission parameters for Commerce, you must configure the Electronic invoicing service to be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../finance/localizations/e-invoicing-sa-get-started.md). To support the configuration of CSIDs per POS register, you need to make the following steps for each POS register in your Electronic Invoicing environment:
+
+1. Add a corresponding CSID certificate to Key Vault parameters of the environment.
+2. Create a feature setup for the electronic invoicing feature. To do this, you can configure the first feature setup and then create new feature setups by copying them from the first one and modifying its parameters.
+3. In the  Specify the name of the CSID certificate added earlier and modify 
 
 Follow these steps to set up e-invoice submission parameters that are specific to Commerce for Saudi Arabia.
 
