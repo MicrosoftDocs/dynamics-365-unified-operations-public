@@ -27,7 +27,7 @@ In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an ER format ca
 
 ## Make action-dependent ER destinations available
 
-To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for [specific](#reports-list-wave1) reports at runtime, enable the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**.
+To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for reports at runtime, enable the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**.
 
 ## Configure action-dependent ER destinations
 
@@ -141,20 +141,6 @@ Follow these steps to verify the user action code that is provided.
 7. Review the log entries that must contain the record that presents the provided user action code, if any action has been provided for the ER format run.
 
     ![Electronic reporting run logs page that contains information about the user action code that has been provided for the filtered run of an ER format.](./media/er-destination-action-dependent-03.png)
-
-## <a name="reports-list-wave1">List of business documents (wave 1)</a>
-
-The following list of business documents are controlled by the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**:
-
-- Customer invoice (Free text invoice)
-- Customer invoice (Sales invoice)
-- Purchase order
-- Purchase order purchase inquiry
-- Sales order confirmation
-- Collections letter note
-- Interest note
-- Vendor payment advice
-- Request for quotation
 
 ## Additional resources
 
