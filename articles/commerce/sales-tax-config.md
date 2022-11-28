@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
 ms.custom: 
