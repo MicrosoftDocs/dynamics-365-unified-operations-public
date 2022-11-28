@@ -67,7 +67,7 @@ The onboarding process consists of two steps:
     basicConstraints = CA:FALSE
     keyUsage = digitalSignature, nonRepudiation, keyEncipherment
     [req_ext]
-    certificateTemplateName = ASN1:PRINTABLESTRING:TSTZATCACodeSigning
+    certificateTemplateName = ASN1:PRINTABLESTRING:ZATCA-Code-Signing
     subjectAltName = dirName:alt_names
     [alt_names]
     SN=1-TST|2-TST|3-ed22f1d8-e6a2-1118-9b58-d9a8f11e445f
