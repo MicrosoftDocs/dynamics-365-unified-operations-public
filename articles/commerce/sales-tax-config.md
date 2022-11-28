@@ -29,6 +29,8 @@ You may want your e-commerce channel to support options like delivery or pickup 
 
 In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details, such as country or region, state, county, and city in a hierarchical form.
 
+Configuration for **Retail destination based tax** can be found in the **Tax module > Indirect taxes > Sales tax > Sales Tax Groups**
+
 ### Orders delivered to customer address
 
 When an online order is placed, the Commerce tax engine uses the delivery address of every line item in the order and finds sales tax groups with matching destination-based tax criteria. For example, for an online order with a line item delivery address to San Francisco, California, the tax engine will find the sales tax group and sales tax code for California and then calculate tax for each line item accordingly.
