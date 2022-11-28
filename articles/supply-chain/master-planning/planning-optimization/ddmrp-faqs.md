@@ -26,7 +26,7 @@ DDMRP uses priority-based planning functionality to set the priority of planned 
 
 ### DDMRP seems to be an extension of the min/max coverage code functionality. Are there any scenarios where I might still use min/max functionality instead of DDMRP when I produce or procure stock?
 
-One of the key differences between min/max and DDMRP is that DDMRP doesn't consider all future net requirements when it's determining whether to reorder. DDMRP is run daily and looks only at past-due demand (today's demand) and order spikes to determine whether an order must be placed immediately. By contrast, min/max looks at all demand in the coverage time fence and will propose planned orders farther in the future, based on when net requirements will deplete inventory below the minimum point.
+One of the key differences between min/max and DDMRP is that DDMRP doesn't consider all future net requirements when it's determining whether to reorder. DDMRP is run daily and looks only at past-due demand (today's demand) and order spikes to determine whether an order must be placed immediately. By contrast, min/max looks at all demand in the coverage time fence. It will propose planned orders farther in the future, based on when net requirements will deplete inventory below the minimum point.
 
 ### Can I run the existing material requirements planning (MRP) functionality together with DDMRP (for example, when I use coverage groups)?
 
@@ -36,7 +36,7 @@ Yes, we expect that companies will run some combination of decoupling points and
 
 Unfortunately not. However, you can easily create an Excel worksheet that contains the formulas, and then use that worksheet to determine what the system would have created as the buffer values.
 
-### Can Supply Chain Management analyze whether an item is in the correct coverage group (for example, to test whether the factors that I set up for variability and so on will still meet my item consumption)?
+### Can Supply Chain Management analyze whether an item is in the correct coverage group (for example, to test whether the factors that I set up for variability, and so on, will still meet my item consumption)?
 
 No automated functionality for this purpose currently exists in Supply Chain Management. However, you can manually review the performance of your net flow and on-hand inventory by using the buffer values chart. This chart will help you determine whether your actual net flow and on-hand inventory values are in the zones that you expect them to be in.
 
@@ -87,7 +87,7 @@ No, the DDMRP model doesn't consider negative and positive days.
 
 ### Decoupling points can be added only at the item coverage level. Should I continue to indicate the coverage group at the item level, so that it can be considered for other locations that aren't specified in the item coverage?
 
-Yes, it's possible that not all locations for a given item must be set up as decoupling points. Therefore, you can choose to have a coverage group for an item that uses min/max, period, requirement, and so on, and then indicate the specific decoupling points on the item coverage page. The settings on the item coverage page overrides the item-level coverage group.
+Yes, it's possible that not all locations for a given item must be set up as decoupling points. Therefore, you can choose to have a coverage group for an item that uses min/max, period, requirement, and so on, and then indicate the specific decoupling points on the item coverage page. The settings on the item coverage page override the item-level coverage group.
 
 ### Is the new coverage code compatible with all product and storage dimensions?
 
