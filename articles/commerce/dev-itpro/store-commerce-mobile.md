@@ -26,7 +26,7 @@ The Store Commerce mobile apps retain full functional parity with current Retail
 
 > [!IMPORTANT]
 >
-> The new Store Commerce apps for Windows, Android and iOS are the next generation point-of-sale applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the [Retail hybrid apps](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridapp) in late 2023, and recommends that you use Store Commerce or Cloud POS (CPOS) for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid app to Store Commerce. See the [Migrate Modern POS to Store Commerce](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-extension/migrate-mpos-store-commerce) help topic for more information. 
+> The new Store Commerce apps for Windows, Android and iOS are the next generation point-of-sale applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the [Retail hybrid apps](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridapp) in late 2023, and recommends that you use Store Commerce or Cloud POS (CPOS) for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid app to Store Commerce. See the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) help topic for more information. 
 
 ## App architecture
 
