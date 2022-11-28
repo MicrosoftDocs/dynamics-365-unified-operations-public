@@ -201,30 +201,30 @@ For more information about how to use data management to export data, see [Data 
 
 ## Delete stored inventory value reports
 
-As the number of stored inventory value reports increases, they may eventually begin to take up too much space in your database, which can affect system performance and result in higher data-storage costs. Therefore, you'll probably need to clean them up from time to time by deleting older reports.
+As the number of stored inventory value reports increases, they might eventually begin to take up too much space in your database. This situation can affect system performance and cause higher data-storage costs. Therefore, you'll probably have to clean up the reports from time to time by deleting older reports.
 
 > [!IMPORTANT]
-> Before you delete any of your previously generated inventory value reports, we strongly recommend that you first [export the reports](#export-stored-report) and store them externally because you might not be able to regenerate them again later. This is because when you generate an inventory value report, the system works backwards from today and processes each inventory transaction record in reverse order as it goes. If you try to look too far back when generating a report, then the volume of transactions to be processed may eventually grow so large that the system will time out before it's able to finish generating the report. The distance into the past that you can generate new reports for depends on how many inventory transactions you have in your system for the relevant time span.
+> Before you delete any of your previously generated inventory value reports, we strongly recommend that you first [export the reports](#export-stored-report) and store them externally, because you might not be able to regenerate them again later. This limitation exists because when you generate an inventory value report, the system works backwards from today and processes each inventory transaction record in reverse order as it goes. If you try to look too far back when you generate a report, the volume of transactions to process might eventually become so large that the system will time out before it can finish generating the report. The distance into the past that you can generate new reports for depends on the number of inventory transactions that you have in your system for the relevant time span.
 
 ### Delete one report at a time
 
-Follow these steps to delete one stored report at a time:
+Follow these steps to delete one stored report at a time.
 
-1. [Export the report](#export-stored-report) you're planning to delete and store them somewhere externally for future reference.
+1. [Export the report](#export-stored-report) that you're planning to delete, and store it in an external location for future reference.
 1. Go to **Cost management \> Inquiries and reports \> Inventory value report storage**.
-1. On the list pane, select the report you want to delete.
+1. In the list pane, select the report to delete.
 1. On the Action Pane, select **Delete**.
-1. A warning message opens to remind you to back up generated reports. Select **Yes** if you're ready to proceed with the deletion.
+1. A warning message reminds you to back up generated reports. Select **Yes** if you're ready to proceed with the deletion.
 
-### Delete several reports at once
+### Delete several reports at the same time
 
-Follow these steps to delete several stored reports at once:
+Follow these steps to delete several stored reports at the same time.
 
-1. [Export all of the reports](#export-stored-report) you're planning to delete and store them somewhere externally for future reference.
-1. Go to  **Cost management \> Inventory accounting \> Clean up \> Inventory value report data clean up**.
-1. The **Inventory value report data clean up** dialog opens. In the **Delete inventory value report executed before**, select the date before which all inventory value reports should be deleted.
-1. On the **Records to include** FastTab, you can set additional filter conditions to limit the set of reports that will be deleted. Select the **Filter** button to open a standard query editor where you can define the properties of the reports to be deleted.
-1. On the **Run in the background** FastTab, you can specify how, when, and how often the reports should be deleted. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. Usually, however, you'll run this job manually each time, as needed.
+1. [Export all the reports](#export-stored-report) that you're planning to delete, and store them in an external location for future reference.
+1. Go to **Cost management \> Inventory accounting \> Clean up \> Inventory value report data clean up**.
+1. In the **Inventory value report data clean up** dialog box, in the **Delete inventory value report executed before** field, select the date before which all inventory value reports should be deleted.
+1. On the **Records to include** FastTab, you can set additional filter conditions to limit the set of reports that will be deleted. Select **Filter** to open a standard query editor where you can define the properties of the reports to delete.
+1. On the **Run in the background** FastTab, you can specify how, when, and how often the reports should be deleted. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, you'll typically run this job manually each time that it's required.
 1. Select **OK** to delete the specified reports.
 
 ## Generate a standard Inventory value report
