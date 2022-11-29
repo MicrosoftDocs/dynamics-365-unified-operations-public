@@ -68,7 +68,7 @@ The following table indicates which pricing and discount components are availabl
 | Affiliation price groups                              | Available          |
 | Commerce channel price groups                         | Available          |
 | Pricing priorities                                    | Available          |
-| Price simulator                                       | Not available      |
+| Price simulator                                       | Available          |
 
 ### Customer
 
