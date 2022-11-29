@@ -62,11 +62,11 @@ To use the Commerce functionality that is specific to Saudi Arabia, you must com
 You must also specify the following settings for Saudi Arabia. Note that you must run appropriate distribution jobs after you complete the setup.
 
 1. [Enable Commerce features](#enable-features-for-saudi-arabia) for Saudi Arabia in the **Feature management** workspace.
-1. [Set up value-added tax (VAT)](#set-up-vat-per-saudi-arabia-requirements) per the Saudi Arabian VAT regulations.
-1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes on receipts and comply with the local regulatory requirements.
+1. [Set up value-added tax (VAT)](#set-up-vat-per-saudi-arabian-requirements) per the Saudi Arabian VAT regulations.
+1. [Configure custom fields](#configure-custom-fields-to-use-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes on receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable the generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel side.
-1. [Specify the ER configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS and submit them from Commerce headquarters.
+1. [Specify the ER configurations](#specify-er-configurations) that should be used to generate simplified e-invoices in POS and submit them from Commerce headquarters.
 1. [Configure e-invoice submission](#configure-e-invoice-submission) for simplified e-invoices that are generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
