@@ -20,7 +20,7 @@ This article describes common reasons for asynchronous order creation failure in
 
 ## Symptom
 
-Asynchronous orders created from Dynamics 365 Commerce e-commerce or point of sale (POS) are not reflected in Commerce headquarters.
+Asynchronous orders created from Dynamics 365 Commerce e-commerce or point of sale (POS) aren't reflected in Commerce headquarters.
 
 ## Troubleshooting
 
@@ -28,7 +28,7 @@ There can be various reasons for order creation failure in headquarters, dependi
 
 ### Validate if the transaction related to the asynchronous order has reached headquarters
 
-For e-commerce orders, in headquarters go to **Retail and Commerce \> Inquiries and reports \> Online store transactions**. If you have a confirmation number for the order, filter transactions by entering the confirmation number to **Channel reference ID**. If the confirmation number isn't available, filter the transactions by entering the customer account number. For POS orders, go to the **Store transactions** form and filter the records with the receipt number or the customer account number. If the transaction isn't found, run the **P-0001** channel transactions job, which syncs transactions from the channels to headquarters. If the **P-0001** fails, open a support ticket for the job failure. If the **P-0001** job succeeds but the transactions stil don't appear in headquarters, then open a support ticket with the relevant information.
+For e-commerce orders, in headquarters go to **Retail and Commerce \> Inquiries and reports \> Online store transactions**. If you have a confirmation number for the order, filter transactions by entering the confirmation number to **Channel reference ID**. If the confirmation number isn't available, filter the transactions by entering the customer account number. For POS orders, go to the **Store transactions** form and filter the records with the receipt number or the customer account number. If the transaction isn't found, run the **P-0001** channel transactions job, which syncs transactions from the channels to headquarters. If the **P-0001** job fails, open a support ticket for the job failure. If the **P-0001** job succeeds but the transactions still don't appear in headquarters, then open a support ticket with the relevant information.
  
 ### Check the synchronization status of the transaction if present in headquarters, but isn't linked with a sales order
 
@@ -44,7 +44,7 @@ Number sequences are used to create sales orders in headquarters. If all the num
 
 #### The "Order error details" field displays "There must be a default payment service to process credit card transactions" error message
 
-To resolve this error, confirm that there is a default payment defined in headquarters. If not, a default payment must be set. Go to **Accounts receivable* \> Payment setup \> Payment services** and ensure that the **Default processor for new credit cards** option is set to **Yes** for one payment service.
+To resolve this error, confirm that there's a default payment defined in headquarters. If not, a default payment must be set. Go to **Accounts receivable* \> Payment setup \> Payment services** and ensure that the **Default processor for new credit cards** option is set to **Yes** for one payment service.
 	
 #### The "Order error details" field displays an account structure error message
 
