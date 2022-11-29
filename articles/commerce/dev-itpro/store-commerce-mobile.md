@@ -4,7 +4,7 @@
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: stuharg 
-ms.date: 10/07/2022
+ms.date: 11/29/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -25,8 +25,7 @@ The Dynamics 365 Commerce mobile apps for Android and iOS make the process of de
 The Store Commerce mobile apps retain full functional parity with current Retail hybrid apps. In addition, Store Commerce for iOS includes support for a dedicated hardware station, so that iOS devices can communicate with networked payment terminals, receipt printers, and cash drawers without requiring the deployment of a shared hardware station. 
 
 > [!IMPORTANT]
->
-> The new Store Commerce apps for Windows, Android and iOS are the next generation point-of-sale applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the [Retail hybrid apps](hybridapp.md) in late 2023, and recommends that you use Store Commerce or Cloud POS (CPOS) for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid app to Store Commerce. See the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) help topic for more information. 
+> The Store Commerce apps for Windows, Android and iOS are the next generation POS applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the Android and iOS Retail POS hybrid apps in late 2023, and recommends that you use Store Commerce or Cloud POS (CPOS) for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid apps to Store Commerce. For more information, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## App architecture
 
