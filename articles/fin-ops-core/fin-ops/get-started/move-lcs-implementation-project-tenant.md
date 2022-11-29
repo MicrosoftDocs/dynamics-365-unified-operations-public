@@ -76,7 +76,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 	3. Update your Business process modeler (BPM) library.
 
 > [!IMPORTANT]
-> During this period, you will have two parallel LCS projects. You can verify the name and ID of the Azure AD tenant that is associated with an LCS project on the **Subscriptions available** page in LCS.
+> During this period, you'll have two parallel LCS projects. You can verify the name and ID of the Azure AD tenant that is associated with an LCS project on the **Subscriptions available** page in LCS.
 
 ## Move your sandbox environments to the new tenant
 1. Deploy the non-production environments in the new LCS project.
@@ -109,17 +109,17 @@ Depending on your solution and scope, you might have to perform additional steps
 Calls to web services are allowed only from the **home** tenant for the environment. For example, the original tenant was companya.com, and integration ran as `services\@companya.com`. In this case, when you switch tenants to companyb.com, you can no longer use `services\@companya.com` for web service calls, even if you update **userInfo.networkdomain** to `https://sts.windows.net/companyb.com`.
 
 > [!IMPORTANT]
-> On your sandbox environments, you will lose any document handling attachments that are stored in Azure Blob storage. Blob storage will be moved by Microsoft only for production environments.
+> On your sandbox environments, you'll lose any document handling attachments that are stored in Azure Blob storage. Blob storage will be moved by Microsoft only for production environments.
 
 ## Move your production environment to the new tenant
 
-If you do not have a production environment deployed already on the old tenant, you can skip this section.
+If you don't have a production environment deployed already on the old tenant, you can skip this section.
 
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a pre-requisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime.
 
 Before requesting the production environment, ensure that all pre-requisites are completed:
 
-1. Get all required licenses that are needed to correctly license all users on the  production environment.
+1. Get all required licenses that are needed to correctly license all users on the production environment.
 2. When the licenses are in place, upload a subscription estimator to the new LCS project. It should match the subscription estimator that is active in the source LCS project, and it must correctly reflect peak transaction volumes.
 3. Send an email to Dynamics 365 FO Go-Live (d365fogl\@microsoft.com) stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, provide the following details in the email. We suggest that copy the following list to your email, and then answer all of the information line by line.
 
@@ -127,7 +127,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 	- Provide the LCS IDs (number in the LCS project URL) for source and target LCS project.
 	- Confirm that the go-live date is set correctly in the target LCS project.
 	- Confirm that the update schedules are set in the target LCS project (**LCS > Menu > Project settings > Update settings**).
-	- Confirm if you are using Azure Blob Storage for document attachments.
+	- Confirm if you're using Azure Blob Storage for document attachments.
 	- Confirm that your project is identified as a tenant move in the Project Onboarding wizard.
 	
 	**Testing**
@@ -135,7 +135,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 	
 	**Code Management**
 	- Confirm that your deployable package is marked as a release candidate in the target LCS project.
-	- List the ISV solutions you are using.
+	- List the ISV solutions you're using.
 	- Confirm which version your old production environment is running on.
 	- Confirm that non-standard code to be applied in the new production environment will be exactly the same as the non-standard code present in the old production environment in order to prevent database copy issues.
 	- Confirm if there were any non-typical actions taken on your old production environment, which need to be considered on the new production environment, like installation of a custom font or environment upscale.
@@ -149,7 +149,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 5. When the tenant move assessment is successfully completed, the FastTrack Solution Architect will approve your production request for deployment.
 6. Create the production deployment request on the new LCS project.
 
-	- It is not possible to select the same name for the new production environment, as it is in use for your old production environment. You will need to choose a new environment name so that a new URL will be generated.
+	- It's not possible to select the same name for the new production environment, as it's in use for your old production environment. You'll need to choose a new environment name so that a new URL will be generated.
 	- Make sure you select the same application version that is used by your current production environment.
 	- In the Production configuration wizard, select a generic user account, not a named user, as Environment Administrator.
 
@@ -162,8 +162,8 @@ Before requesting the production environment, ensure that all pre-requisites are
 	 
 	 
 	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
-	2. After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you will need to reimport all users from the new Azure Active Directory tenant. 
-	3. You will need to validate the new production environment to ensure that all business processes are successful. 
+	2. After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you'll need to reimport all users from the new Azure Active Directory tenant. 
+	3. You'll need to validate the new production environment to ensure that all business processes are successful. 
 	4. If you encounter an issue after the migration, file a support ticket.
 
 ## Tear down the LCS project on the old tenant
