@@ -20,7 +20,7 @@ ms.search.validFrom: 2018-10-29
 
 This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce apps for Android and iOS.
 
-The Dynamics 365 Commerce mobile apps for Android and iOS make the process of deploying full-featured mobile point of sale (POS) devices for your retail environment straightforward and simple. The Store Commerce mobile apps deliver nearly all the capabilities and advantages of the [Store Commerce app for Windows](store-commerce.md), and perform well on a wide range of iOS and Android phones and tablets. The Store Commerce mobile apps can be installed directly from the Apple and Google Play app stores, and don't require that a developer create a new application package to deploy or update them. 
+The Dynamics 365 Commerce mobile apps for Android and iOS make the process of deploying full-featured mobile point of sale (POS) devices for your retail environment straightforward and simple. The Store Commerce mobile apps deliver nearly all the capabilities and advantages of the [Store Commerce app for Windows](store-commerce.md), and perform well on a wide range of iOS and Android phones and tablets. The Store Commerce mobile apps can be installed directly from the Apple and Google Play app stores, and don't require a developer to create a new application package to deploy or update them. 
 
 The Store Commerce mobile apps retain full functional parity with current Retail hybrid apps. In addition, Store Commerce for iOS includes support for a dedicated hardware station, so that iOS devices can communicate with networked payment terminals, receipt printers, and cash drawers without requiring the deployment of a shared hardware station. 
 
