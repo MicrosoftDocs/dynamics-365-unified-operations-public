@@ -4,7 +4,7 @@
 title: Move LCS implementation projects to different Azure AD tenants
 description: This article explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: RicardoCaeiroPro
-ms.date: 11/30/2020
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -161,9 +161,10 @@ Before requesting the production environment, ensure that all pre-requisites are
 	 - **Both projects (old and new) are self-service deployments**: Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in the support ticket.
 	 
 	 
-	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request. 
-	2. After Microsoft has completed the activity and provided you with updated information, you will need to validate the new production environment. 
-	3. If you encounter an issue after the migration, file a support ticket.
+	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
+	2. After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you will need to re-import all users from the new Azure Active Directory (AAD) tenant. 
+	3. You will need to validate the new production environment to ensure that all business processes are successful. 
+	4. If you encounter an issue after the migration, file a support ticket.
 
 ## Tear down the LCS project on the old tenant
 
