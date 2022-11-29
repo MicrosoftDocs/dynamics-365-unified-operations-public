@@ -53,7 +53,7 @@ Ask the cloud service provider not to suspend the existing subscriptions at this
 
 ### Volume Licensing
 
-If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft 365 Admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
+If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft 365 admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
 
 - Public customer number.
 - Enrollment number.
@@ -91,7 +91,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
         SET SID='mysid', NETWORKALIAS='myalias/email', NETWORKDOMAIN='https://sts.windows.net'
         WHERE ID = 'Admin'
         ```
-5. Re-import all other users that have the correct security identifier (SID) and identity provider.
+5. Reimport all other users that have the correct security identifier (SID) and identity provider.
 6. Run the following commands to update the tenant ID in the appropriate tables. You can verify the Azure AD tenant ID that is associated with an LCS project on the **Subscriptions available** page in LCS.
 	
 	```sql
@@ -106,7 +106,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 
 Depending on your solution and scope, you might have to perform additional steps on the new Azure AD tenant. These steps might include registering applications (for recurring integrations and warehouse management), adding domains, and setting up directory synchronization to enable single sign-on (SSO).
 
-Note that calls to web services are allowed only from the **home** tenant for the environment. For example, the original tenant was companya.com, and integration ran as `services\@companya.com`. In this case, when you switch tenants to companyb.com, you can no longer use `services\@companya.com` for web service calls, even if you update **userInfo.networkdomain** to `https://sts.windows.net/companyb.com`.
+Calls to web services are allowed only from the **home** tenant for the environment. For example, the original tenant was companya.com, and integration ran as `services\@companya.com`. In this case, when you switch tenants to companyb.com, you can no longer use `services\@companya.com` for web service calls, even if you update **userInfo.networkdomain** to `https://sts.windows.net/companyb.com`.
 
 > [!IMPORTANT]
 > On your sandbox environments, you will lose any document handling attachments that are stored in Azure Blob storage. Blob storage will be moved by Microsoft only for production environments.
@@ -138,14 +138,14 @@ Before requesting the production environment, ensure that all pre-requisites are
 	- List the ISV solutions you are using.
 	- Confirm which version your old production environment is running on.
 	- Confirm that non-standard code to be applied in the new production environment will be exactly the same as the non-standard code present in the old production environment in order to prevent database copy issues.
-	- Confirm if there were any non-typical actions taken on your old production environment which need to be considered on the new production environment, like installation of a custom font or environment upscale.
+	- Confirm if there were any non-typical actions taken on your old production environment, which need to be considered on the new production environment, like installation of a custom font or environment upscale.
 	
 	**Environment**
 	- Share which environment version you plan to deploy your new production environment.
 	- Describe how you will conduct your cut over.
 	- Confirm the dates when the source LCS environments and project will be deallocated and deleted.
 	
-4. The Dynamics 365 FO Go-Live team will reply to you within 2 business days and a FastTrack Solution Architect will work with you on the assessment of the project readiness for production deployment.
+4. The Dynamics 365 FO Go-Live team will reply to you within two business days and a FastTrack Solution Architect will work with you on the assessment of the project readiness for production deployment.
 5. When the tenant move assessment is successfully completed, the FastTrack Solution Architect will approve your production request for deployment.
 6. Create the production deployment request on the new LCS project.
 
@@ -162,7 +162,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 	 
 	 
 	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
-	2. After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you will need to re-import all users from the new Azure Active Directory (AAD) tenant. 
+	2. After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you will need to reimport all users from the new Azure Active Directory tenant. 
 	3. You will need to validate the new production environment to ensure that all business processes are successful. 
 	4. If you encounter an issue after the migration, file a support ticket.
 
