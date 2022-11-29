@@ -113,11 +113,11 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
-3. Select **Pick up selected** or **Pick up all** to initiate the order pick up configuration.
+3. Select **Pick up selected** or **Pick up all** to initiate the order pickup configuration.
 4. Select the store location where the customer will pick up the selected products.
 5. Select a date when the item will be picked up.
 6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-7. If the full order total wasn't paid, select whether the customer will provide payment later (at pick up), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
+7. If the full order total wasn't paid, select whether the customer will provide payment later (at pickup), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
 
 ### Edit an existing customer order
 
