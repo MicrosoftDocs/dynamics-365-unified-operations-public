@@ -261,7 +261,7 @@ The following example shows how to set up French Intrastat and create the DEB re
     2. In the grid, select **Intrastat**. Then, on the Action Pane, on the **Category hierarchy** tab, in the **Maintain** group, select **Edit**.
     3. On the Action Pane, select **New category node**.
     4. In the **Name** field, enter **Autres Libournais**.
-    5. In the **Code** field, enter **2204 21 42**
+    5. In the **Code** field, enter **2204 21 42**.
     6. On the Action Pane, select **Save**.
 
 ### Set up VAT IDs
@@ -300,7 +300,7 @@ The following example shows how to set up French Intrastat and create the DEB re
 5. In the **Registration type** field, select **VAT ID**.
 6. In the **Registration number** field, enter **DE9012**.
 7. On the Action Pane, select **Save**. Then close the page.
-8. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **DE9012123456789**.
+8. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **DE9012**.
 
 ### Set up foreign trade parameters
 
@@ -340,8 +340,8 @@ The following example shows how to set up French Intrastat and create the DEB re
 
 1. Go to **Tax** > **Setup** > **Foreign trade** > **Statistics procedure**
 2. On the Action Pane, select **New**.
-3. In the **Statistics procedure** field, enter the regime code.
-4. In the **Text 1** field, enter the regime code description.
+3. In the **Statistics procedure** field, enter the **21**.
+4. In the **Text 1** field, enter **Regime code 21**.
 
 ### Change the site address
 
@@ -352,35 +352,66 @@ The following example shows how to set up French Intrastat and create the DEB re
 5. Select **OK**.
 6. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse.
 7. On the **Addresses** FastTab, select **Add**.
-8. In the **New address** dialog box, in the **City** field, select **Bordeaux**.
+8. In the **New address** dialog box, in the **Country/region** field, select **FRA**.
+9. In the **City** field, select **Bordeaux**.
+10. Select **OK** to close the dialog box.
+
+### Set up a transport method
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
+2. On the Action Pane, select **New**.
+3. In the **Transport** field, enter **3**.
+4. In the **Description** field, enter **Road transport**.
+
+### Assign a transport mode to a mode of delivery
+
+1. Go to **Procurement and sourcing** > **Setup** > **Distribution** > **Modes of delivery**.
+2. In the grid, select **50**.
+3. On the **Foreign trade** FastTab, in the **Transport** field, select **3**.
 
 ### Create a sales order with an EU customer that includes the new product
 
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. On the Action Pane, select **New**.
-3. In the **Create** **sales** **order** dialog box, in the **Customer** section, in the **Customer** **account** field, select **100001**.
+3. In the **Create** **sales** **order** dialog box, in the **Customer** section, in the **Customer account** field, select **DE-016**.
 4. In the **Address** section, in the **Delivery address** field, select the plus sign (**+**) to create an address.
 5. In the **New address** dialog box, in the **Name of description** field, enter **Germany**.
 6. In the **Country/region** field, select **DEU**.
 7. Select **OK**.
 8. In the **Create sales order** dialog box, select **OK**.
-9. On the **Sales** **order lines** FastTab, in the **Item number** field, select **0001**.
-10. On the Action Pane, select **Save**.
-11. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
-12. In the **Posting invoice** dialog box, on the **Parameters** FastTab, in the **Parameter** section, in the **Quantity** field, select **All**. Then select **OK** to post the invoice.
+9. On the **Sales order lines** FastTab, in the **Item number** field, select **0001**.
+10. On the **Lines details** FastTab, **Foreign trade** tab, in the **Statistics procedure** field, select **21**.
+11. In the **State of origin** field, select **AL**.
+12. On the Action Pane, select **Save**.
+13. On the **Header** tab, on the **Delivery** FastTab, in the **Mode of delivery** field, make sure that **50** is selected.
+14. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+15. In the **Posting invoice** dialog box, on the **Parameters** FastTab, in the **Parameter** section, in the **Quantity** field, select **All**. Then select **OK** to post the invoice.
 
 ### Transfer the transaction to the Intrastat journal and review the result
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**:
 2. On the Action Pane. select **Transfer**.
-3. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
-4. Sort transactions by the **Date** field. The top transaction is the result transaction. The **NGP** field is automatically set.
-5. On the Action Pane, select **Output** &gt; **Report**.
-6. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
-7. In the **Export options** section, set the **Generate file** option to **Yes**.
-8. In the **File name** field, enter the required name.
-9. Select OK to close the **Intrastat Report** dialog box.
-10. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
+4. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
+5. Sort transactions by the **Date** field. The top transaction is the result transaction.
+
+![image](https://user-images.githubusercontent.com/73891078/204784117-0b2e32c3-ef0b-481a-80fb-db4b5a6e3a52.png)
+
+7. Select the transaction line, and then select the **General** tab to view more details.
+
+![image](https://user-images.githubusercontent.com/73891078/204785175-46a74386-52b3-4b62-b7ed-47f965b83dd1.png)
+
+9. On the Action Pane, select **Output** > **Report**.
+10. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
+11. In the **Export options** section, set the **Generate file** option to **Yes**.
+12. In the **File name** field, enter the required name.
+13. Select OK to close the **Intrastat Report** dialog box.
+14. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
+
+![image](https://user-images.githubusercontent.com/73891078/204785400-1f28ad35-ac2c-4c71-8836-8d0fc48aa648.png)
+
+15. Review the generated Excel report.
+
+![image](https://user-images.githubusercontent.com/73891078/204785615-a79d9f79-9833-4329-8dfc-90ece163816b.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
