@@ -67,7 +67,7 @@ The onboarding process consists of two steps:
     basicConstraints = CA:FALSE
     keyUsage = digitalSignature, nonRepudiation, keyEncipherment
     [req_ext]
-    certificateTemplateName = ASN1:PRINTABLESTRING:TSTZATCACodeSigning
+    certificateTemplateName = ASN1:PRINTABLESTRING:ZATCA-Code-Signing
     subjectAltName = dirName:alt_names
     [alt_names]
     SN=1-TST|2-TST|3-ed22f1d8-e6a2-1118-9b58-d9a8f11e445f
@@ -108,7 +108,7 @@ After you obtain Compliance CSID using the PowerShell script, ZATCA requires you
 
 Ensure that all types of sample invoices that were configured in the Certificate Signing Request (CSR) configuration file are successfully submitted to ZATCA. Use the standard process for issuing electronic invoices. For more details, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country-specific Configuration section](e-invoicing-sa-get-started.md#country-specific-configuration-for-the-saudi-arabian-electronic-invoice-sa-electronic-invoicing-feature) steps using the Compliance CSID you obtained.
+Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country-specific Configuration section](e-invoicing-sa-get-started.md) steps using the Compliance CSID you obtained.
 
 After the compliance checks are successfully complete, use the PowerShell script to obtain Production CSID (refer on-boarding script).
 

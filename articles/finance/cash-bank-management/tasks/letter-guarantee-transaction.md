@@ -46,7 +46,7 @@ This procedure uses the USMF demo company.
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Click **New**.
 3. In the **Customer account** field, enter or select a value.
-4. Expand the General section.
+4. Expand the **General** section.
 5. In the **Site** field, enter or select a value.
 6. In the list, click the link in the selected row.
 7. In the **Warehouse** field, enter or select a value.
@@ -55,9 +55,12 @@ This procedure uses the USMF demo company.
 10. Click **OK**.
 11. In the **Item number** field, enter or select a value.
 12. In the **Unit price** field, enter a number.
-13. Expand the Line details section.
-14. Click the Delivery tab.
-    * Note: Select Delivery date control = None  
+13. Expand the **Line details** section.
+14. Click the **Delivery** tab.
+
+>[!Note] 
+>Select **Delivery date control** = **None**  
+
 15. In the **Requested ship date** field, enter a date.
 16. In the **Confirmed ship date** field, enter a date.
 
@@ -86,7 +89,7 @@ This procedure uses the USMF demo company.
 2. In the **Bank number** field, type a value.
     * Verify the values in the calculated **Margin** and **Expense** fields.  
 3. Click **OK**.
-4. Expand the Actions section.
+4. Expand the **Actions** section.
     * Verify the 'Receive from bank' record.  
 5. Click to follow the link in the **Journal batch number** field.
 6. Click **Lines**.
@@ -105,7 +108,7 @@ This procedure uses the USMF demo company.
 9. In the list, find and select the desired record.
 10. Click **Give to beneficiary** to open the drop dialog.
 11. Click **OK**.
-12. Expand the Actions section.
+12. Expand the **Actions** section.
     * Validate the 'Give to beneficiary' record.  
 
 ## Process letter of guarantee_Increase value
@@ -121,7 +124,7 @@ This procedure uses the USMF demo company.
 10. In the list, find and select the desired record.
 11. Click **Increase value** to open the drop dialog.
 12. Click **OK**.
-13. Expand the Actions section.
+13. Expand the **Actions** section.
     * Verify the 'Increase value' record.  
 14. In the list, find and select the desired record.
 15. Click to follow the link in the **Journal batch number** field.
@@ -140,7 +143,7 @@ This procedure uses the USMF demo company.
 9. In the list, find and select the desired record.
 10. Click **Liquidate** to open the drop dialog.
 11. Click **OK**.
-12. Expand the Actions section.
+12. Expand the **Actions** section.
     * Verify the 'Liquidate' record.  
 13. In the list, find and select the desired record.
 14. Click to follow the link in the **Journal batch number** field.
