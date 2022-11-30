@@ -4,7 +4,7 @@
 title: Product information overview
 description: This article provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 author: t-benebo 
-ms.date: 06/01/2017
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
