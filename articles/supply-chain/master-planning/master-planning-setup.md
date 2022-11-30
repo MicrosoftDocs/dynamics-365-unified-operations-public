@@ -4,7 +4,7 @@
 title: Set up master plans
 description: This article describes various important strategies and parameters that are used to set up master plans.
 author: t-benebo
-ms.date: 07/01/2019
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
