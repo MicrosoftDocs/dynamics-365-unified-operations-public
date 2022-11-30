@@ -4,7 +4,7 @@
 title: Coverage settings
 description: This article provides information about the coverage settings that master scheduling uses to calculate item requirements.
 author: t-benebo
-ms.date: 09/13/2019
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
