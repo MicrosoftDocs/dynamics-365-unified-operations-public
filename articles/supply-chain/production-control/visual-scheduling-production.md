@@ -4,7 +4,7 @@
 title: Gantt chart for job scheduling 
 description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
-ms.date: 11/03/2017
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
