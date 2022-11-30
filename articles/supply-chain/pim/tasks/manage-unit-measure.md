@@ -4,7 +4,7 @@
 title: Manage units of measure
 description: This article describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 author: t-benebo
-ms.date: 04/09/2021
+ms.date: 11/30/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
