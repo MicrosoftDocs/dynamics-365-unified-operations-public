@@ -4,7 +4,7 @@
 title: French Intrastat
 description: This article contains information about Intrastat declaration in France.
 author: anasyash
-ms.date: 07/9/2021
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
@@ -22,7 +22,11 @@ Companies in France that are registered for value-added tax (VAT), and that trad
 
 You can generate the DEB report in either of two electronic text file formats: SAISUNIC 330 or INTRACOM format.
 
-The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format. The table also indicates the report level of the field. The field can be **4** (tax declaration), **1** (statistical response), or **5** (statistical response to shipment and tax declaration, joint filling).
+The following table shows the fields that are included in the French Intrastat declaration in SAISUNIC 330 format. The table also indicates the report level of the field. The field can be:
+
+ - **4** - Tax declaration
+ - **1** - Statistical response
+ - **5** - Statistical response to shipment and tax declaration, and joint filling
 
 | **Field**                   | **Report level** |
 |-----------------------------|------------------|
@@ -50,7 +54,11 @@ The following table shows the fields that are included in the French Intrastat d
 | Transport Code              | 1, 5                | 
 
 The following table shows the fields that are included in the French Intrastat declaration in INTRACOM format.
-The table also indicates the report level of the field. The field can be **4** (tax declaration), **1** (statistical response), or **5** (statistical response to shipment and tax declaration, joint filling).
+The table also indicates the report level of the field. The field can be:
+
+   - **4** - Tax declaration
+   - **1** - Statistical response
+   - **5** - Statistical response to shipment and tax declaration, and joint filling
 
 | **Field**                   | **Report level**   | 
 |-----------------------------|--------------------|
@@ -80,7 +88,7 @@ The table also indicates the report level of the field. The field can be **4** (
 
 ## Set up Intrastat
 
-1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration:
+- In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration:
 
     - Intrastat model
     - Intrastat report
@@ -98,12 +106,12 @@ The table also indicates the report level of the field. The field can be **4** (
 3. In the **Country/region** field, select **FRA**.
 4. In the **Tax exempt number** field, enter your company's VAT number key.
 5. Go to **Organization administration** > **Organizations** > **Legal entities** and select your company.
-6. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields with the code created on step 4.
+6. On the **Foreign trade and logistics** FastTab, in the **Intrastat** section, set the **VAT exempt number export** and **VAT exempt number import** fields with the code created in step 4.
 7. On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
 
 #### Set up the VAT IDs for trading partners
 
-##### Create a registration type for the company code
+**Create a registration type for the company code**
 
 You must create VAT ID registration types for all the countries or regions that your company does business with.
 
@@ -113,56 +121,58 @@ You must create VAT ID registration types for all the countries or regions that 
 4. In the **Country/region** field, select the country or region of the trading partner.
 5. Select **Create**.
 
-##### Match the registration type with a registration category
+**Match the registration type with a registration category**
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between a registration type and a registration category.
 3. For the registration type for the VAT ID, select the **VAT ID** registration category.
 4. Repeat steps 2 and 3 for the other registration types that you created for the countries or regions that your company does business with.
 
-##### Set up the VAT number of a trading partner
+**Set up the VAT number of a trading partner**
 
-1. Go to **Accounts receivable** > **Customers** > **All customers.**
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 2. In the grid, select a customer.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the registration type that you created for the company code earlier in this article.
+5. In the **Registration type** field, select the registration type that you created for the company code.
 6. In the **Registration number** field, enter the company's VAT number.
-7. On the Action Pane, select **Save**. Then close the page.
+7. On the Action Pane, select **Save** and then close the page.
 
 For more information, see [Registration IDs](emea-registration-ids.md).
 
 ### Set up foreign trade parameters
 
-In Dynamics 365 Finance, go to **Tax** > **Setup** >  **Foreign trade** > **Foreign trade parameters**, and follow these steps:
 
-1. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)** or **Intrastat SAISUNIC (FR)**.
-2. In the **Report format mapping** field, select **Intrastat report**.
-3. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
-4. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
-5. In the **Credit note** field, select the code that is used for returns of goods.
-6. In the **Worker** field, select the name of the contact person.
-7. On the **Contact** tab, add information about contact person.
+1. Go to **Tax** > **Setup** >  **Foreign trade** > **Foreign trade parameters**.
+2. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)** or **Intrastat SAISUNIC (FR)**.
+3. In the **Report format mapping** field, select **Intrastat report**.
+4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+5. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
+6. In the **Credit note** field, select the code that is used for returns of goods.
+7. In the **Worker** field, select the name of the contact person.
+8. On the **Contact** tab, add information about the contact person.
 
     1. In the **Telephone** field, enter the telephone number of the contact person.
     2. In the **Fax** field, enter the fax number of the contact person.
 
-8. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For France, select **Domestic** in the **Country/region type** field.
+9. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For France, select **Domestic** in the **Country/region type** field.
 
 
 ### Set up compression of Intrastat
 
-Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For French Intrastat, select the following fields:
-- Statistics procedure
-- Country/region of origin
-- Transport
-- Correction
-- Country/region
-- County of origin/destination
-- Direction
-- Country/region of sender
-- Transaction code
-- Commodity
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. 
+2. For French Intrastat, select the following fields:
+ 
+   - Statistics procedure
+   - Country/region of origin
+   - Transport
+   - Correction
+   - Country/region
+   - County of origin/destination
+   - Direction
+   - Country/region of sender
+   - Transaction code
+   - Commodity
 
 ### Set up product parameters for the Intrastat declaration
 
@@ -190,7 +200,7 @@ In 2022, the NGP applies to only three types of products:
 #### Set up an NGP code
 
 1. Go to **Tax** > **Setup** > **Foreign trade** > **NGP codes**.
-2. On the Action Pane, select **New** to create an NGP code.
+2. On the Action Pane, select **New**.
 3. In the **NGP** field, enter a single-digit code.
 4. In the **Description** field, enter a description for the code.
 
@@ -202,20 +212,21 @@ In 2022, the NGP applies to only three types of products:
 
 ### Set up warehouse parameters for the Intrastat declaration
 
-Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**, select a warehouse, and then follow these steps:
-1. On the **Addresses** FastTab, select **Add** or **Edit**.
-2. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**.
+2. Select a warehouse, and on the **Addresses** FastTab, select **Add** or **Edit**.
+3. In the dialog box, in the **City** field, select the warehouse's city. The city's state will be used as a county for your DEB report.
 
 ### Set up the transport method
-Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
-On the Action Pane, select New.
-In the **Transport** field, enter a unique code. Companies in France use one-digit transport codes.
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
+2. On the Action Pane, select **New**.
+3. In the **Transport** field, enter a unique code. Companies in France use one-digit transport codes.
 
 ### Intrastat journal
 
 Go to **Tax** > **Declarations** > **Foreign** **trade** > **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries. For more information, see [Intrastat overview](emea-intrastat.md).
 
-The **NGP** column is specific to France. It shows the NGP code for the product. If the NGP isn't applicable to a product, **0** (zero) is shown. You can adjust the NGP code. Select the transaction, and then, on the **General** tab, in the **Codes** section, in the **NGP** field, select the required NGP code.
+The **NGP** column is specific to France and shows the NGP code for the product. If the NGP isn't applicable to a product, a **0** (zero) is shown. To adjust the NGP code, select the transaction, and on the **General** tab, in the **Codes** section, in the **NGP** field, select the required NGP code.
 
 #### Intrastat transfer
 
@@ -240,7 +251,7 @@ Because the DEB report is a combination of the EU Sales List and the Intrastat r
     | Only corrections | Set this option to **Yes** to report only corrections. Set it to **No** to report both normal transactions and corrections.         |
     | Direction        | Select **Arrivals** for a report about intracommunity arrivals. Select **Dispatches** for a report about intracommunity dispatches. |
 
-4. Select OK to close the **Intrastat Report** dialog box.
+4. Select **OK** to close the **Intrastat Report** dialog box.
 5. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select the report level. The report level can be **1 - statistical response**, **4 - tax declaration**, or **5 - statistical response to shipment and tax declaration**.
 
 ## Example
@@ -258,11 +269,12 @@ The following example shows how to set up French Intrastat and create the DEB re
 2.  Set up a product hierarchy:
 
     1. Go to **Product information management** > **Setup** > **Categories and attributes** > **Category hierarchies**.
-    2. In the grid, select **Intrastat**. Then, on the Action Pane, on the **Category hierarchy** tab, in the **Maintain** group, select **Edit**.
-    3. On the Action Pane, select **New category node**.
-    4. In the **Name** field, enter **Autres Libournais**.
-    5. In the **Code** field, enter **2204 21 42**.
-    6. On the Action Pane, select **Save**.
+    2. In the grid, select **Intrastat**.
+    3. On the Action Pane, on the **Category hierarchy** tab, in the **Maintain** group, select **Edit**.
+    4. On the Action Pane, select **New category node**.
+    5. In the **Name** field, enter **Autres Libournais**.
+    6. In the **Code** field, enter **2204 21 42**.
+    7. On the Action Pane, select **Save**.
 
 ### Set up VAT IDs
 
@@ -299,7 +311,7 @@ The following example shows how to set up French Intrastat and create the DEB re
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 5. In the **Registration type** field, select **VAT ID**.
 6. In the **Registration number** field, enter **DE9012**.
-7. On the Action Pane, select **Save**. Then close the page.
+7. On the Action Pane, select **Save** and then close the page.
 8. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **DE9012**.
 
 ### Set up foreign trade parameters
@@ -333,8 +345,8 @@ The following example shows how to set up French Intrastat and create the DEB re
 8. In the grid, select **D0003**.
 9. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
 10. In the **Origin** section, in the **Country/region** field, select **DEU**.
-11.On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **5**.
-12.On the Action Pane, select **Save**.
+11. On the **Manage inventory** FastTab, in the **Weight measurements** section, in the **Net weight** field, enter **5**.
+12. On the Action Pane, select **Save**.
 
 ### Set up Regime codes
 
@@ -394,24 +406,24 @@ The following example shows how to set up French Intrastat and create the DEB re
 4. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
 5. Sort transactions by the **Date** field. The top transaction is the result transaction.
 
-![Line that represents the sales order on the Intrastat page](media/intrastat_fr_1.png)
+   ![Line that represents the sales order on the Intrastat page](media/intrastat_fr_1.png)
 
-7. Select the transaction line, and then select the **General** tab to view more details.
+6. Select the transaction line, and then select the **General** tab to view more details.
 
-![Sales order details on the General tab of the Intrastat page](media/intrastat_fr_2.png)
+   ![Sales order details on the General tab of the Intrastat page](media/intrastat_fr_2.png)
 
-9. On the Action Pane, select **Output** > **Report**.
-10. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
-11. In the **Export options** section, set the **Generate file** option to **Yes**.
-12. In the **File name** field, enter the required name.
-13. Select OK to close the **Intrastat Report** dialog box.
-14. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
+7. On the Action Pane, select **Output** > **Report**.
+8. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
+9. In the **Export options** section, set the **Generate file** option to **Yes**.
+10. In the **File name** field, enter the required name.
+11. Select **OK** to close the **Intrastat Report** dialog box.
+12. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
 
-![Intrastat Intracom report on dispatches](media/intrastat_fr_3.png)
+    ![Intrastat Intracom report on dispatches](media/intrastat_fr_3.png)
 
-15. Review the generated Excel report.
+13. Review the generated Excel report.
 
-![Intrastat report on dispatches](media/intrastat_fr_4.png)
+    ![Intrastat report on dispatches](media/intrastat_fr_4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
