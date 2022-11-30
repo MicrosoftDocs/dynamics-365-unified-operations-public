@@ -4,7 +4,7 @@
 title: Product identifiers 
 description: This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: t-benebo
-ms.date: 03/27/2020
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
