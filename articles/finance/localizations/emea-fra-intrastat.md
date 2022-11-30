@@ -394,11 +394,11 @@ The following example shows how to set up French Intrastat and create the DEB re
 4. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
 5. Sort transactions by the **Date** field. The top transaction is the result transaction.
 
-![image](https://user-images.githubusercontent.com/73891078/204784117-0b2e32c3-ef0b-481a-80fb-db4b5a6e3a52.png)
+![Line that represents the sales order on the Intrastat page](media/intrastat_fr_1.png)
 
 7. Select the transaction line, and then select the **General** tab to view more details.
 
-![image](https://user-images.githubusercontent.com/73891078/204785175-46a74386-52b3-4b62-b7ed-47f965b83dd1.png)
+![Sales order details on the General tab of the Intrastat page](media/intrastat_fr_2.png)
 
 9. On the Action Pane, select **Output** > **Report**.
 10. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
@@ -407,11 +407,11 @@ The following example shows how to set up French Intrastat and create the DEB re
 13. Select OK to close the **Intrastat Report** dialog box.
 14. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
 
-![image](https://user-images.githubusercontent.com/73891078/204785400-1f28ad35-ac2c-4c71-8836-8d0fc48aa648.png)
+![Intrastat Intracom report on dispatches](media/intrastat_fr_3.png)
 
 15. Review the generated Excel report.
 
-![image](https://user-images.githubusercontent.com/73891078/204785615-a79d9f79-9833-4329-8dfc-90ece163816b.png)
+![Intrastat report on dispatches](media/intrastat_fr_4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
