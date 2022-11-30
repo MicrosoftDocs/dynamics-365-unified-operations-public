@@ -4,7 +4,7 @@
 title: Intrastat overview
 description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
 author: EvgenyPopovMBS
-ms.date: 01/13/2021
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
