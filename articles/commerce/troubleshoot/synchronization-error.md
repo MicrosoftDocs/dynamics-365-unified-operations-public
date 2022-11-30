@@ -2,7 +2,7 @@
 title: Asynchronous order synchronization issues 
 description: This article describes common reasons for asynchronous order creation failure in Microsoft Dynamics 365 Commerce, and provides troubleshooting steps to help system users and partners understand what went wrong.
 author: Shajain
-ms.date: 11/29/2022
+ms.date: 11/30/2022
 ms.topic: Troubleshooting
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -53,7 +53,7 @@ To fix this error, confirm that a default payment is defined in headquarters. If
 The text of the account structure error message can vary, as the following examples show. However, the errors share a common root cause that's related to the account structure configuration.
 
 - "Posting results for journal batch number 0009656328 Voucher ARP-000959899 1.00 for voucher ARP-000959899 in company usrt will be posted as an overpayment or underpayment"
-- "Posting results for journal batch number 0009656328 Voucher ARP-000959899 Voucher ARP-000959901 Account structure Account structure, for the combination 618160, is not valid for ledger Corporate Main Account Shared"
+- "Posting results for journal batch number 0009656328 Voucher ARP-000959899 Voucher ARP-000959901 Account structure, for the combination 618160, isn't valid for ledger Corporate Main Account Shared"
 - "Posting results for journal batch number 0009656328 Voucher ARP-000959899 Voucher ARP-000959901 Reported from company accounts usrt"
 - "Posting results for journal batch number 0009656328 Voucher ARP-000959899 Posting has been canceled"
 	
