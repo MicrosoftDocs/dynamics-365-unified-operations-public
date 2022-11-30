@@ -26,6 +26,6 @@ ms.dyn365.ops.version: 10.0.25
 
 ---
 
-# Awareness between ledger settlement and year-end close
+# Prerequisites for Awareness between ledger settlement and year-end close
 
 [!include [banner](../includes/banner.md)]
