@@ -38,11 +38,11 @@ The following capabilities are available as part of the Commerce chat feature:
 
 As a prerequisite, you must configure chat in the Omnichannel for Customer Service Administration widget and obtain some of the parameters to configure the Commerce chat experience. For instructions, see [Configure a chat channel](/dynamics365/customer-service/set-up-chat-widget).
 
-After you configure chat in the Omnichannel for Customer Service Administration widget, you will get a script that resembles the following example.
+After you configure chat in the Omnichannel for Customer Service Administration widget, you'll get a script that resembles the following example.
 
 `<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="xxxx-xxx-4be7-bcd5-1d118ecffe1f" data-org-id="5a0e73c0-xxxx-xxxxx-xxx- 76df135f375d" data-org-url="https://xxsxxxxssdb348f-crm.omnichannelengagementhub.com"></script>`
 
-Copy this script, because you will need the values in it to configure the chat module.
+Copy this script, because you'll need the values in it to configure the chat module.
 
 ### Commerce Chat with Omnichannel for Customer Service mandatory fields
 
@@ -137,7 +137,7 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 
 To update Content Security Policy (CSP) for your site in site builder, follow these steps.
 
-1. In site builder, select the site you are working on.
+1. In site builder, select the site you're working on.
 1. Select **Site Settings \> Extensions**.
 1. On the **Content security policy** tab, add `https://oc-cdn-ocprod.azureedge.net` as a new entry to the following directives:
     - Child-src
