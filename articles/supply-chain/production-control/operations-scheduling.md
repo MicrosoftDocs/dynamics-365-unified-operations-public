@@ -4,7 +4,7 @@
 title: Operations scheduling
 description: This article provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: johanhoffmann
-ms.date: 06/20/2019
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
