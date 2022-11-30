@@ -4,7 +4,7 @@
 title: Product data entities 
 description: This article provides information about the different entities that can be used to import and export product data. 
 author: t-benebo
-ms.date: 01/07/2020
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
