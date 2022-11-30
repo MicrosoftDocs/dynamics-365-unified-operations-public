@@ -2,7 +2,7 @@
 title: Demand forecasting setup
 description: This article describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: t-benebo
-ms.date: 11/23/2021
+ms.date: 11/30/2022
 ms.topic: article
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
