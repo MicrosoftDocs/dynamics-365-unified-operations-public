@@ -4,13 +4,14 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/18/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2022-07-20
+
 ---
 
 # Commerce Chat with Omnichannel for Customer Service module
@@ -132,26 +133,24 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 > [!NOTE]
 > If you want to read the email addresses and names of signed-in users from an e-commerce channel, you can add **Email** and **Name** as context variables of the **text** type, in addition to the **AccountNumber** context variable.
 
-## Update Content Security Policy in Microsoft Dynamics 365 Commerce site builder
-To update Content Security Policy in Microsoft Dynamics 365 Commerce site builder, follow these steps.
+## Update Content Security Policy (CSP) in site builder
 
-1. In the Microsoft Dynamics 365 Commerce site builder tool, select your site.
-1. Select **‘Site Settings' \> Extensions** located on the bottom-left of the screen.
-1. Select **Content security policy** tab.
-1. Add **“https://oc-cdn-ocprod.azureedge.net”** as a new entry to the following sections:
+To update Content Security Policy (CSP) for your site in site builder, follow these steps.
 
-    1. Child-src
-    1. Connect-src
-    1. Font-src
-    1. Frame-ancestors
-    1. Frame-src
-    1. Img-src
-    1. Media-src
-    1. Object-src
-    1. Script-src
-    1. Style-src
-    
-1. Click **Save and Publish**.
+1. In site builder, select the site you are working on.
+1. Select **Site Settings \> Extensions**.
+1. On the **Content security policy** tab, add `https://oc-cdn-ocprod.azureedge.net` as a new entry to the following directives:
+    - Child-src
+    - Connect-src
+    - Font-src
+    - Frame-ancestors
+    - Frame-src
+    - Img-src
+    - Media-src
+    - Object-src
+    - Script-src
+    - Style-src
+1. Select **Save and Publish**.
 
 ## Additional resources
 
@@ -160,3 +159,5 @@ To update Content Security Policy in Microsoft Dynamics 365 Commerce site builde
 [Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
 
 [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)
