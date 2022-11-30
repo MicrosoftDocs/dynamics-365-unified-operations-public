@@ -4,7 +4,7 @@
 title: Create a new product
 description: This article describes how to create a new shared product. 
 author: t-benebo
-ms.date: 07/22/2019
+ms.date: 11/30/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
