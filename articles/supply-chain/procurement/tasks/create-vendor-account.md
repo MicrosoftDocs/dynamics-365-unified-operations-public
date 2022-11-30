@@ -4,7 +4,7 @@
 title: Create a vendor account
 description: This procedure shows how to create a vendor account, and add an address and contact information. 
 author: GalynaFedorova
-ms.date: 06/26/2019
+ms.date: 11/30/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
