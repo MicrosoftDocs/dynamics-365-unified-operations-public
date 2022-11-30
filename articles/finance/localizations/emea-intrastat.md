@@ -3,7 +3,7 @@
 
 title: Intrastat overview
 description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
-author: EvgenyPopovMBS
+author: mrolecki
 ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: ["28581", "intro-internal"]
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
