@@ -4,7 +4,7 @@
 title: Get started with master planning
 description: This article explains how to start to use master planning functionality in Dynamics 365 Supply Chain Management. 
 author: t-benebo
-ms.date: 05/20/2021
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
