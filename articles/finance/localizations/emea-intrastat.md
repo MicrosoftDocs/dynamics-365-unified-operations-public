@@ -391,7 +391,8 @@ In this example, a company in Germany must purchase 10 units of goods from a com
 
    ![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_6.png)
    
-## List of country-specific topics
+## List of country/region-specific articles
+The following table lists the available country/region-specific intrastat articles.
 
 | Country          | Link      |
 |------------------|-----------|
