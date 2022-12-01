@@ -4,7 +4,7 @@
 title: Warehouse configuration overview
 description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 author: perlynne
-ms.date: 07/25/2019
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
