@@ -2,7 +2,7 @@
 title: National Motor Freight Classification (NMFC) codes
 description: This article describes how to work with National Motor Freight Classification (NMFC) codes in Microsoft Dynamics 365 Supply Chain Management
 author: Weijiesa
-ms.date: 04/22/2021
+ms.date: 11/30/2022
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
