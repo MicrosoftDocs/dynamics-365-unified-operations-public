@@ -86,7 +86,7 @@ The following illustration shows an example of the **Electronic reporting format
 
 If several ER formats are applicable as report templates for the selected document, then all ER destinations for all applicable ER report templates will be shown on the form and available for manual adjustment at runtime.
 
-The standard Print management destinations selection will be dynamically hidden if no [SQL Server Reporting Services (SSRS)](ssrs-report.md) report templates are applicable for the selected document.
+The standard Print management destinations selection will be dynamically hidden if no [SQL Server Reporting Services (SSRS)](SSRS-report.md) report templates are applicable for the selected document.
 
 Starting from version **10.0.31** of Microsoft Dynamics 365 Finance, the possibility to manually change assigned ER destinations at runtime was introduced for the following business documents:
  - Customer account statement
