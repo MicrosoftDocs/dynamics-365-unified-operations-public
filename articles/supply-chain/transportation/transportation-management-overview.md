@@ -4,7 +4,7 @@
 title: Transportation management overview
 description: This article gives an overview of the transportation management functionality in Supply Chain Management.
 author: Weijiesa
-ms.date: 06/20/2017
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
