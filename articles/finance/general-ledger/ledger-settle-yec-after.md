@@ -28,18 +28,15 @@ ms.dyn365.ops.version: 10.0.25
 # Awareness between ledger settlement feature after year-end close
 
 [!include [banner](../includes/banner.md)]
-Preparing for ledger settlement Awareness feature, after year-end close
+Preparing for ledger settlement Awareness feature, after year-end close.
 
 A major change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. 
 The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlement. 
 
+Before the Awareness feature is enabled, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal 
+years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
-In preparation for enabling the feature, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal 
-years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a
-different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
-
-This document walks you through the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal
-year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
+This topic describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
 
 ## Example setup
 
@@ -51,12 +48,12 @@ the ledger settlement reversed.
 
 ## Example 
 
-The following steps should be used if your organization wants to use the feature after you run the year-end close for fiscal year 2022. 
+The following steps should be used if your organization wants to use the feature after the year-end close is ran for fiscal year 2022. 
 
 A few notes:
  - The year-end close for 2022 and earlier fiscal years must only be rerun if new transactions are posted into the fiscal year 2022 or earlier. When completing the 
-following steps, no new transactions are posted into 2022 so the year-end close doesn’t have to be rerun.
- - Ledger transactions that are settled across fiscal years can remain ledger settled as long as they are not settled against a transaction posted into 2023 or later.  
+following steps, no new transactions should be posted into 2022 so the year-end close doesn’t have to be rerun.
+ - Ledger transactions that are settled across fiscal years can remain ledger settled as long as they're not settled against a transaction posted into 2023 or later.  
 For example, if you have settled transactions in 2019 and 2020, they can remain settled.
 
 1.	Complete the YEC for 2022 without the Awareness feature enabled. 
@@ -70,10 +67,10 @@ close process will not be run again.
 
 3.	Identify the total of all the transactions that are settled across fiscal years 2022 and 2023. This is possible by going to the **Ledger settlement** page. Note that 2021 transactions settled against 2022 transactions aren’t relevant because the year has already been closed for 2022. Those transactions can remain settled.
 -   Enter a date range for the entire fiscal year 2022. For example, enter January 1, 2022 to December 31, 2022 is using a calendar year.
--   Filter to show **Settled transactions**. 
+-   In the **Status** field, select **Settled**. 
 -   Filter on one ledger account at a time. 
-    -   You will need to repeat these steps for each ledger account for which ledger settlement occurs. 
-    -   If other ledger accounts are no longer setup for ledger settlement, you may need to temporarily add them back to the Ledger settlement setup and perform these 
+    -   You'll need to repeat these steps for each ledger account for which ledger settlement occurs. 
+    -   If other ledger accounts are no longer set up for ledger settlement, you may need to temporarily add them back to the Ledger settlement setup and perform these 
 steps if they have transactions within 2023 that are settled to transactions in 2022 or earlier.
 -   Right-click on the **Status** column and choose **Group by** this column. Right-click on the **Amount in transaction currency** column and choose **Total** this column. 
     -   If you only settled transactions within 2022, the total would be zero.  
@@ -91,7 +88,7 @@ steps if they have transactions within 2023 that are settled to transactions in 
 fiscal years. With the feature enabled, ledger settlement can't be reversed for fiscal year 2022, so the feature must be disabled before continuing.
 6.	Once the feature is disabled, use the same filters on the ledger settlement pages to reverse the ledger settlement of the detailed transactions.  
 -   Return to the **Ledger settlement** page and filter on transaction dates for 2023. From here, find the detailed transactions that comprise the $700 total. This may not be easy to filter. You may need to send the data to Excel to evaluate.  
--   Once you have the list of transactions, select the ledger transactions on the **Ledger settlement** page and choose **Mark selected**. You do not need to see both sides of the ledger transactions that were settled. If you mark either the debit or credit, it will reverse everything with the same **Settlement ID**, even if the **Marked amount** is not zero.
+-   Once you have the list of transactions, select the ledger transactions on the **Ledger settlement** page and choose **Mark selected**. You don't need to see both sides of the ledger transactions that were settled. If you mark either the debit or credit, it will reverse everything with the same **Settlement ID**, even if the **Marked amount** is not zero.
 -   Click **Reverse marked transactions** to unsettle the transactions. 
  
 ![Reverse transactions.](./media/afterYEC4.png)
@@ -104,11 +101,11 @@ because ledger settlement doesn’t allow partial settlement.
 -   The portion of the opening balance that was NOT settled to the previous year. 
     -   The second amount is the difference between the opening balance and the first amount of $525: the remaining amount is $1700 - $700 = $1000.  
 -   Go to the general journal and post the adjustment. Your organization will have to decide what transaction date to use based on what periods are open in 2023. 
--   It may be necessary to temporarily turn off the parameter on the **Main account** setup **Do not allow manual entry**. If the main account doesn’t allow manual entry, this adjustment won’t post.
+-   It may be necessary to temporarily turn off the **Do not allow manual entry** parameter on the **Main account** page. If the main account doesn’t allow manual entry, this adjustment won’t post.
  
 ![Adjust won't post.](./media/afterYEC5.png)
 
-8.	Next the unsettled transactions can be resettled again. Return to the **Ledger settlement** page and restrict the date range to January 1, 2022 to December 31, 2022. The following unsettled transactions now exist:
+8.	The unsettled transactions can be resettled again. Return to the **Ledger settlement** page and restrict the date range to January 1, 2022 to December 31, 2022. The following unsettled transactions now exist:
  
 ![Unsettled transactions.](./media/afterYEC6.png)
  
