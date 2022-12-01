@@ -4,7 +4,7 @@
 title: Confirm sales orders
 description: This procedure demonstrates how to confirm sales orders. 
 author: Henrikan
-ms.date: 06/26/2019
+ms.date: 11/30/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
