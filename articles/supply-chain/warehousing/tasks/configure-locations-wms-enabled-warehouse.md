@@ -28,6 +28,8 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). The process is typically done by a warehouse manager. You can run this guide in demo data company USMF or on your own data. A precondition is that you have at least one site configured.
+>[!NOTE]
+> You can get a full guide in setting up the warehouse management module [here](../get-started-with-setting-up-module.md).
 
 
 ## Create a new warehouse
