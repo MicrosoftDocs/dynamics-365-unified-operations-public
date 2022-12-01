@@ -4,7 +4,7 @@
 title: Wave label printing
 description: This article describes wave label printing and explains how to set it up.
 author: perlynne
-ms.date: 05/01/2020
+ms.date: 11/30/2022
 ms.topic: article
 ms.prod:
 ms.technology:
