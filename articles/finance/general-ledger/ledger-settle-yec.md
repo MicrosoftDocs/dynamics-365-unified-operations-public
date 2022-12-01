@@ -39,7 +39,7 @@ In preparation for enabling the feature, the fiscal year that will go through th
 different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
 
-This topic walks you through the steps required to identify, unsettle and resettle the ledger transactions that are settled across years. For exampe, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
+This topic walks you through the steps required to identify, unsettle and resettle the ledger transactions that are settled across years. For example, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
 
 ## Example setup
 The following transactions were posted for main account 110190. The ledger transactions in green are settled within the same fiscal year, and don’t need to change. Transactions in red are ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
@@ -59,7 +59,7 @@ The following steps should be used if your organization wants to use the feature
 -   If you choose to not enable the feature, it would be best to notify your team to not settle transactions across fiscal years. If cross-year settlement occurs after the following steps are completed, you will need to repeat the steps to identify and unsettle the ledger transactions.
 
 2.	Next you need to identify the total of all the transactions that are settled across fiscal years 2021 and 2022. This is possible by going to the **Ledger settlement** page.
--  Enter a date range for the entire fiscal year 2021. For example, enter 1/1/2021 to 12/31/2021 if using a calendar year.
+-  Enter a date range for the entire fiscal year 2021. For example, enter January 1, 2021 to December 31, 2021 if using a calendar year.
     -   If the feature is enabled, you'll receive a warning that transactions can't be settled or unsettled for a closed fiscal year. The warning isn’t an issue because no settlement or unsettlement is occurring in this step.
 -   Filter to show **Settled transactions**. 
 -   Filter on one ledger account at a time. 
@@ -74,29 +74,29 @@ The following steps should be used if your organization wants to use the feature
   ![Ledger transactions 2021-2022.](./media/YEC2.png)
    
 -   Identify which transactions were settled between 2020 and 2021 by further filtering on the **Settlement date**. 
-    -   Enter a date range filter of 1/1/2021 to 12/31/2021. No transactions are shown because no 2020 transactions were settled to transactions posted in 2021.
+    -   Enter a date range filter of January 1, 2021 to December 31, 2021. No transactions are shown because no 2020 transactions were settled to transactions posted in 2021.
 -   Identify which transactions were settled between 2021 and 2022 by changing the date filter on the **Settlement date**. 
-    -   Enter a date range filter of 1/1/2022 to 12/31/2022. The transactions are shown again and the total is $525.00 because all the transactions were settled between 2021 and 2022.
+    -   Enter a date range filter of January 1, 2022 to December 31, 2022. The transactions are shown again and the total is $525.00 because all the transactions were settled between 2021 and 2022.
 
 3.	Identify the total of all the transactions that are settled across fiscal years 2021 and 2022. 
     -   Go to the **Ledger settlement** page.
-    -   Enter a date range for the entire fiscal year 2022. For example, enter 1/1/2022 to 12/31/2022 if using a calendar year.
+    -   Enter a date range for the entire fiscal year 2022. For example, enter January 1, 2022 to December 31, 2022 if using a calendar year.
     -   Filter to only the **Settled transactions**. 
     -   Filter on one ledger account at a time.
     -   Right-click on the **Status** column and choose **Group** by this column. Right-click on the **Amount** in the **Transaction currency** column and choose **Total** this column.
   
   ![Ledger transactions total amounts.](./media/YEC3.png)
   
-   -   Add an additional filter on the **Settlement date** as 1/1/2022 to 12/31/2022. The same total of $525.00 is shown. This validates that the total amount of transactions settled across 2021 and 2022 is $525.00. 
+   -   Add an additional filter on the **Settlement date** as January 1, 2022 to December 31, 2022. The same total of $525.00 is shown. This validates that the total amount of transactions settled across 2021 and 2022 is $525.00. 
   
   ![Ledger transactions settlement date 2022 and 2023.](./media/YEC4.png)
  
-   -   Change the additional filter on the **Settlement date** as 1/1/2023 to 12/31/2023. A new total of $700 is shown. This is the total amount of the transactions that were settled across 2022 and 2023. 
+   -   Change the additional filter on the **Settlement date** as January 1, 2023 to December 31, 2023. A new total of $700 is shown. This is the total amount of the transactions that were settled across 2022 and 2023. 
  
 4.	Repeat the steps in #3 for fiscal year 2023. The total should match the $700 from 2022 because no 2023 transactions were settled to transactions in 2024.
 5.	If you enabled the feature in step 1, it must be disabled before continuing with the next step. The next steps are to reverse the ledger settlement that crossed fiscal years. With the feature enabled, ledger settlement can't be reversed for fiscal year 2021, so the feature must be disabled before continuing.
 6.	Once the feature is disabled, use the same filters on the ledger settlement pages to reverse the ledger settlement of the detailed transactions. 
-    -   Return to the **Ledger settlement** page and filter on transaction dates for 2021. Add an additional filter on the **Settlement date** between 1/1/2022 and 12/31/2022. Find the detailed transactions that comprise the $525 total. This may not be easy to filter. You may need to send the data to Excel to evaluate.  
+    -   Return to the **Ledger settlement** page and filter on transaction dates for 2021. Add an additional filter on the **Settlement date** between January 1, 2022 and December 31, 2022. Find the detailed transactions that comprise the $525 total. This may not be easy to filter. You may need to send the data to Excel to evaluate.  
     -   Once you have the list of transactions, select the ledger transactions on the **Ledger settlement** page and choose **Mark selected**. You don't need to see both sides of the ledger transactions that were settled. If you mark either the debit or credit, it will reverse everything with the same **Settlement ID**, even if the **Marked amount** isn't zero.
     -   Click **Reverse marked transactions** to unsettle the transactions. 
   
@@ -118,7 +118,7 @@ The following steps should be used if your organization wants to use the feature
   
   ![Adjustment not posting.](./media/YEC7.png)
  
-9.	The unsettled transactions can be resettled again. Go to the **Ledger settlement** page and restrict the date range to 1/1/2022 to 12/31/2022. The following unsettled transactions now exist:
+9.	The unsettled transactions can be resettled again. Go to the **Ledger settlement** page and restrict the date range to January 1, 2022 to December 31, 2022. The following unsettled transactions now exist:
 
 ![Unsettled transactions.](./media/YEC8.png)
 
