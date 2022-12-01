@@ -4,7 +4,7 @@
 title: Update process
 description: Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates for application and platform changes.
 author: twheeloc
-ms.date: 09/01/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,15 +61,6 @@ When needed, Human Resources provides the following types of fixes:
 - **Emergency fix**: Proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a biweekly service update release
 
 Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they're then deployed to production.
-
-## Release cadence exceptions in 2021
-
-To account for holidays, the release schedule for November and December 2021 is as follows:
-
-- November release: November 1 - November 14
-- December release: November 29 - December 12
- 
-The two-week release cadence will resume as usual on January 10, 2022.
 
 ## Communications
 
