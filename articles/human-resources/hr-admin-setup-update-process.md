@@ -47,7 +47,7 @@ Updates are released on a regular cadence to all environments. Human Resources i
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
-- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they are released. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Service updates**: Service updates include applicable platform updates when they are released. In addition to exception-based updates, regular service updates occur following the General Availability (GA) of Dynamics 365 Finance platform updates. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Dataverse. These updates are released to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
 
