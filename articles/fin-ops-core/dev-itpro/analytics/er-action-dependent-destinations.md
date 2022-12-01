@@ -124,7 +124,7 @@ The following logic is applicable for actions identification for the reports abo
    - If the **Use print management destination** is set to **No** then default SSRS report template is always used for the **Customer Payment advice** and **Vendor Payment advice** reports regardless any configured ER settings.
    - **Print** action is always used for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
 
-With the logic described above **Print** or **View** actions can be used for configuration of action-dependent ER report destinations, when necessary.
+With the logic described above **Print** or **View** actions can be used for configuration of action-dependent ER report destinations. During runtime only ER destinations configured for a specific action will be filtered on the form.
 
 ## Verify the provided user action
 
