@@ -46,7 +46,7 @@ A new inquiry has been introduced on release 10.0.29 that makes the identificati
 ## Scenario setup
 The following transactions were posted for main account 110190. The ledger transactions in green are settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
 
-![Ledger transactions.](.media/finance/general-ledger/yec1.png)
+![Ledger transactions.](.media/yec1.png)
 
 ## Scenario steps
 The following steps should be used if your organization wants to use the feature before you run the year-end close for fiscal year 2022. 
@@ -72,7 +72,7 @@ The following steps should be used if your organization wants to use the feature
     ii.	If you have transactions that were settled across fiscal years, it won’t be zero. 
   e.	In screen shot below, you can see a balance of $525.00 which is the total of the transactions that were settled against transactions in a different fiscal year.  Your total may include transactions settled between 2021/2022 and transactions settled between 2022/2023.  
   
-  ![Ledger transactions 2021-2022.](.media/finance/general-ledger/yec2.png)
+  ![Ledger transactions 2021-2022.](.media/yec2.png)
   
  
   f.	Identify which transactions were settled between 2020 and 2021 by further filtering on the **Settlement date**. 
@@ -87,11 +87,11 @@ The following steps should be used if your organization wants to use the feature
   d.	Filter on one ledger account at a time.
   e.	Right-click on the **Status** column and choose **Group** by this column. Next, right-click on the **Amount** in the **Transaction currency** column and choose **Total** this column.
   
-  ![Ledger transactions total amounts.](.media/finance/general-ledger/yec3.png)
+  ![Ledger transactions total amounts.](.media/yec3.png)
   
   f.	Add an additional filter on the **Settlement date** as 1/1/2022 to 12/31/2022. The same total of 525.00 is shown. This validates that the total amount of transactions settled across 2021 and 2022 is $525. 
   
-  ![Ledger transactions settlement date 2022 and 2023.](.media/finance/general-ledger/yec4.png)
+  ![Ledger transactions settlement date 2022 and 2023.](.media/yec4.png)
  
   f.	Change the additional filter on the **Settlement date** as 1/1/2023 to 12/31/2023. A new total of $700 is shown. This is the total amount of the transactions that were settled across 2022 and 2023. 
  
@@ -102,12 +102,12 @@ The following steps should be used if your organization wants to use the feature
   b.	Once you have the list of transactions, select the ledger transactions on the Ledger settlement page and choose **Mark selected**. You don't need to see both sides of the ledger transactions that were settled. If you mark either the debit or credit, it will reverse everything with the same **Settlement ID**, even if the **Marked amount** is not zero.
   c.	Click **Reverse marked transactions** to unsettle the transactions. 
   
-  ![Reverse marked transactions.](.media/finance/general-ledger/yec5.png)
+  ![Reverse marked transactions.](.media/yec5.png)
   
 
 7.	Repeat step 6 to reverse the settlement for the transactions that were settled across 2022 and 2023. 
 
-![Reverse ledger transactions.](.media/finance/general-ledger/yec6.png)
+![Reverse ledger transactions.](.media/yec6.png)
  
 
 8.	Next, post an adjusting general journal to split the opening balance for 2022 into two amounts: the portion settled to the 2021 fiscal year transaction and the portion not settled yet within 2022. This will allow you to settle the 2022 transactions against the $525 originally settled against 2021 transaction. This is required because ledger settlement doesn’t allow partial settlement. 
@@ -118,16 +118,16 @@ The following steps should be used if your organization wants to use the feature
   c.	Go to the general journal and post the adjustment. Your organization will have to decide what transaction date to use based on what periods are open. These transactions may have been settled with a settlement date of January or February 2022, but the adjustment may have to be posted in December if that is the only open period. 
   d.	It may be necessary to temporarily turn off the parameter on the Main account setup **Do not allow manual entry**. If the main account doesn’t allow manual entry, this adjustment won’t post. 
   
-  ![Adjustment not posting.](.media/finance/general-ledger/yec7.png)
+  ![Adjustment not posting.](.media/yec7.png)
  
 9.	Next, the unsettled transactions can be resettled again. Return to the **Ledger settlement** page and restrict the date range to 1/1/2022 to 12/31/2022. The following unsettled transactions now exist:
 
-![Unsettled transactions.](.media/finance/general-ledger/yec8.png)
+![Unsettled transactions.](.media/yec8.png)
 
   a.	The Opening balance of $1,025 can be settled against the adjustment for -$1,025. 
   b.	The detailed transactions that were unsettled for -$400, -$50, and -$75 can be settled against the adjustment for 525.00. 
   
-  ![Detailed transactions.](.media/finance/general-ledger/yec9.png)
+  ![Detailed transactions.](.media/yec9.png)
  
 10.	Enable the **Awareness** feature. You are now ready to run the year end close. 
   a.	Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see Awareness document for the benefits of doing this.   
