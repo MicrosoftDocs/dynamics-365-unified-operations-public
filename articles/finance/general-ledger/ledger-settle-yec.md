@@ -29,17 +29,16 @@ ms.dyn365.ops.version: 10.0.25
 # Awareness between ledger settlement feature before year-end close
 
 [!include [banner](../includes/banner.md)]
-Preparing for ledger settlement Awareness feature, before year-end close
+Preparing for ledger settlement Awareness feature, before year-end close.
 
 One primary change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. 
-The cross-year limitation is only relevant to ledger settlement, not accounts receivable or accounts payable settlement. 
+The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlement. 
 
 
-In preparation for enabling the feature, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a
-different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
+Before the Awareness feature is enabled, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
 
-This topic walks you through the steps required to identify, unsettle and resettle the ledger transactions that are settled across years. For example, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
+This topic describes the steps required to identify, unsettle and resettle the ledger transactions that are settled across years. For example, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
 
 ## Example setup
 The following transactions were posted for main account 110190. The ledger transactions in green are settled within the same fiscal year, and don’t need to change. Transactions in red are ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
@@ -61,7 +60,7 @@ The following steps should be used if your organization wants to use the feature
 2.	Next you need to identify the total of all the transactions that are settled across fiscal years 2021 and 2022. This is possible by going to the **Ledger settlement** page.
 -  Enter a date range for the entire fiscal year 2021. For example, enter January 1, 2021 to December 31, 2021 if using a calendar year.
     -   If the feature is enabled, you'll receive a warning that transactions can't be settled or unsettled for a closed fiscal year. The warning isn’t an issue because no settlement or unsettlement is occurring in this step.
--   Filter to show **Settled transactions**. 
+-   In the **Status** field, select **Settled**.  
 -   Filter on one ledger account at a time. 
     -   You'll need to repeat these steps for each ledger account for which ledger settlement occurs. If other ledger accounts are no longer setup for ledger settlement: 
         -   you may need to temporarily add them back to the Ledger settlement setup 
@@ -114,7 +113,7 @@ The following steps should be used if your organization wants to use the feature
 -   The portion of the opening balance that was NOT settled to the previous year. 
     -   The second amount is the difference between the opening balance and amount settled of $525. The remaining amount is $1025 - $525 = $500.  
 -   Go to the general journal and post the adjustment. Your organization will have to decide what transaction date to use based on what periods are open. These transactions may have been settled with a settlement date of January or February 2022, but the adjustment may have to be posted in December if that is the only open period. 
--   It may be necessary to temporarily turn off the parameter on the Main account setup **Do not allow manual entry**. If the main account doesn’t allow manual entry, this adjustment won’t post. 
+-   It may be necessary to temporarily turn off the **Do not allow manual entry** parameter on the **Main account** page. If the main account doesn’t allow manual entry, this adjustment won’t post. 
   
   ![Adjustment not posting.](./media/YEC7.png)
  
