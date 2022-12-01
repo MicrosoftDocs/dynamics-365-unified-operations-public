@@ -29,7 +29,7 @@ You may want your e-commerce channel to support options like delivery or pickup 
 
 In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details, such as country or region, state, county, and city in a hierarchical form.
 
-Configuration for **Retail destination based tax** can be found in the **Tax module > Indirect taxes > Sales tax > Sales Tax Groups**
+Configuration for **Retail destination based tax** can be found in the **Tax module > Indirect taxes > Sales tax > Sales Tax Groups** section.
 
 ### Orders delivered to customer address
 
