@@ -4,7 +4,7 @@
 title: Sales agreements overview
 description: This article provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.
 author: Henrikan
-ms.date: 07/25/2019
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
