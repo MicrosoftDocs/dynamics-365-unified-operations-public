@@ -41,8 +41,6 @@ different fiscal year. The transactions can then be resettled against transactio
 
 This topic walks you through the steps required to identify, unsettle and resettle the ledger transactions that are settled across years. For exampe, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
 
-A new inquiry has been introduced on release 10.0.29 that makes the identification and unsettling process easier. If on that release or later, use the steps can be found in scenarios 3 (preparing before year end close) or scenario 4 (preparing after year end close). 
-
 ## Example setup
 The following transactions were posted for main account 110190. The ledger transactions in green are settled within the same fiscal year, and don’t need to change. Transactions in red are ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
 
@@ -65,7 +63,9 @@ The following steps should be used if your organization wants to use the feature
     -   If the feature is enabled, you'll receive a warning that transactions can't be settled or unsettled for a closed fiscal year. The warning isn’t an issue because no settlement or unsettlement is occurring in this step.
 -   Filter to show **Settled transactions**. 
 -   Filter on one ledger account at a time. 
-    -   You'll need to repeat these steps for each ledger account for which ledger settlement occurs. If other ledger accounts are no longer setup for ledger settlement, you may need to temporarily add them back to the Ledger settlement setup, and perform these steps if they have transactions within 2022 that are settled to transactions in another fiscal year.
+    -   You'll need to repeat these steps for each ledger account for which ledger settlement occurs. If other ledger accounts are no longer setup for ledger settlement: 
+        -   you may need to temporarily add them back to the Ledger settlement setup 
+        -   perform these steps if they have transactions within 2022 that are settled to transactions in another fiscal year.
 -   Right-click on the **Status** column and choose **Group** by this column. Right-click on the **Amount** in **Transaction currency** column and choose **Total** this column. 
     -   If you only settled transactions within 2021, the total would be zero.  
     -   If you have transactions that were settled across fiscal years, it won’t be zero. 
@@ -87,11 +87,11 @@ The following steps should be used if your organization wants to use the feature
   
   ![Ledger transactions total amounts.](./media/YEC3.png)
   
-    -   Add an additional filter on the **Settlement date** as 1/1/2022 to 12/31/2022. The same total of $525.00 is shown. This validates that the total amount of transactions settled across 2021 and 2022 is $525.00. 
+   -   Add an additional filter on the **Settlement date** as 1/1/2022 to 12/31/2022. The same total of $525.00 is shown. This validates that the total amount of transactions settled across 2021 and 2022 is $525.00. 
   
   ![Ledger transactions settlement date 2022 and 2023.](./media/YEC4.png)
  
-    -   Change the additional filter on the **Settlement date** as 1/1/2023 to 12/31/2023. A new total of $700 is shown. This is the total amount of the transactions that were settled across 2022 and 2023. 
+   -   Change the additional filter on the **Settlement date** as 1/1/2023 to 12/31/2023. A new total of $700 is shown. This is the total amount of the transactions that were settled across 2022 and 2023. 
  
 4.	Repeat the steps in #3 for fiscal year 2023. The total should match the $700 from 2022 because no 2023 transactions were settled to transactions in 2024.
 5.	If you enabled the feature in step 1, it must be disabled before continuing with the next step. The next steps are to reverse the ledger settlement that crossed fiscal years. With the feature enabled, ledger settlement can't be reversed for fiscal year 2021, so the feature must be disabled before continuing.
