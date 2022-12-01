@@ -3006,7 +3006,7 @@
           href: troubleshoot/payment-type-credit-card-error.md
         - name: Taxes on online orders are incorrectly calculated
           href: troubleshoot/tax-miscalculated-online-order.md
-        - name: Order synchronization error related to default payment service
+        - name: Asynchronous order synchronization issues
           href: troubleshoot/synchronization-error.md
       - name: Payments processing
         items:
