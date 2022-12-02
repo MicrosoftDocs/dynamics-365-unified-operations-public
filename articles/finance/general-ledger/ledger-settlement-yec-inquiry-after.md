@@ -27,13 +27,16 @@ ms.dyn365.ops.version: 10.0.25
 ---
 # Awareness between ledger settlement feature after year-end close
 
-One primary change of the “Awareness between ledger settlement and year end close” feature (Awareness) is that ledger settlement cannot be done across fiscal years. The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlement. 
+One primary change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlements. 
 
-In preparation for enabling the feature, the fiscal year that will go through the year-end close must also not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you are running the year end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
+Before you enable the feature, the fiscal year that will go through the year-end close must also not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
-This article walks through the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
+This article describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions before running the 2023 year-end close. 
 
-If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and resettling the ledger transactions can be found using scenario 1 (preparing before year-end close) and scenario 2 (preparing after year-end close). 
+If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and resettling the ledger transactions can be found:
+
+ - scenario 1 (preparing before year-end close) 
+ - scenario 2 (preparing after year-end close) 
 
 ## Scenario setup
 The following transactions were posted for main account 110200. The transactions in green are ledger settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed. 
@@ -44,8 +47,8 @@ The following transactions were posted for main account 110200. The transactions
 The following steps should be used if your organization wants to use the feature after you run the year-end close for fiscal year 2022. 
 
 A few notes:
-•	The year-end close for 2022 and earlier fiscal years must only be rerun if new transactions are posted into the fiscal year 2022 or earlier. When completing the following steps, no new transactions are posted into 2022 so the year-end close doesn’t have to be rerun.
-•	Ledger transactions that are settled across fiscal years can remain ledger settled as long as they are not settled against a transaction posted into 2022 or later.  For example, if you have settled transactions in 2019 and 2020, they can remain settled.
+-   The year-end close for 2022 and earlier fiscal years must only be rerun if new transactions are posted into the fiscal year 2022 or earlier. When completing the following steps, no new transactions are posted into 2022 so the year-end close doesn’t have to be rerun.
+-   Ledger transactions that are settled across fiscal years can remain ledger settled as long as they're not settled against a transaction posted into 2022 or later.  For example, if you have settled transactions in 2019 and 2020, they can remain settled.
 
 1.	Complete the YEC for 2022 without the Awareness feature enabled. 
 2.	Identify all the transactions posted in other fiscal years but settled against transactions posted in 2023, which is the next fiscal year that will be closed. 
@@ -63,7 +66,7 @@ To identify the transactions in 2023, go to the **Ledger settlement** page, then
 -   Right click on the grid and choose **Export all** rows. These are all the transactions that must be unsettled from the transactions in 2022 in order to run the year-end close next year for 2023. You want a record of these transactions.  
 -   Once all the detailed transactions from 2022 are exported to Excel, you are ready to unsettle the transactions using the new inquiry page. 
     -   Select all the records in the grid and choose the **Unsettle marked records** button. All the selected transactions in the grid will be unsettled.
-    -   Two warning messages are given to ensure that the transaction details were exported to Excel before they are unsettled. If you accidentally unsettle before sending the detail to Excel, there is no way to revert the unsettlement of the ledger transactions. 
+    -   Two warning messages are given to ensure that the transaction details were exported to Excel before they are unsettled. If you accidentally unsettle before sending the detail to Excel, there's no way to revert the unsettlement of the ledger transactions. 
 
 ![Revert cross-year settlements](./media/revert-settlement.png)
 
