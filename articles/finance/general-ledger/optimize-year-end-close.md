@@ -70,7 +70,7 @@ In addition, when the **Optimize year-end close** feature is enabled, a **Balanc
 
 ## Architecture and data flow
 
-To use **Optimize year-end close** feature and run the year-end close on a microservice, you must install the Optimize year-end close service add-in from Lifecycle Services and then enable the **Optimize year-end close** feature in Feature management.
+To use **Optimize year-end close** feature and run the year-end close on a microservice, you must install the **Optimize year-end close service add-in** from Lifecycle Services and then enable the **Optimize year-end close** feature in Feature management.
 
 As the following illustration shows, the year-end close processing verifies that the add-in is installed and the feature is enabled. If both prerequisites are met, the year-end close runs on the microservice.
 
@@ -81,7 +81,7 @@ As the following illustration shows, the year-end close processing verifies that
 1. The year-end close process begins in Finance, at **General ledger \> Period close \> Year-end close**. The process creates closing batch jobs and tasks for the legal entities that are being closed.
 2. The year-end close determines whether the year-end close should be run on the microservice or on the current closing logic.
 
-    - If the Optimize year-end close service add-in is installed in Lifecycle Services, and the **Optimize year-end close** feature is enabled in Feature management, the year-end close will run on the microservice.
+    - If the **Optimize year-end close service add-in** is installed in Lifecycle Services, and the **Optimize year-end close** feature is enabled in Feature management, the year-end close will run on the microservice.
 
         1. The Optimize year-end close functionality creates a year-end close service job for each legal entity that's being closed, and then runs the year-end close logic. The microservice performs the year-end close.
         2. Finance listens to the year-end close on the microservice to determine when the microservice has finished. The year-end close results are then updated on the **Year-end close** page in Finance.
