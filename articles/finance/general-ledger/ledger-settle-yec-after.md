@@ -36,7 +36,7 @@ The cross-year limitation is only relevant to ledger settlement, not Accounts re
 Before the Awareness feature is enabled, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal 
 years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
-This article describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
+This article describes the steps required to identify, unsettle and settle the ledger transactions again that are settled across years. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
 
 ## Example setup
 
@@ -56,7 +56,7 @@ following steps, no new transactions should be posted into 2022 so the year-end 
  - Ledger transactions that are settled across fiscal years can remain ledger settled as long as they're not settled against a transaction posted into 2023 or later.  
 For example, if you have settled transactions in 2019 and 2020, they can remain settled.
 
-1.	Complete the YEC for 2022 without the Awareness feature enabled. 
+1.	Complete the year-end close (YEC) for 2022 without the Awareness feature enabled. 
 2.	Optional: Enable the Awareness feature after the year-end is complete for 2022. The year-end is considered complete when all adjustments are posted and the year-end
 close process will not be run again. 
 
@@ -65,7 +65,7 @@ close process will not be run again.
  
 -   If the year-end close is not complete, the next steps can still be completed without the feature enabled. The feature will be enabled in a later step.
 
-3.	Identify the total of all the transactions that are settled across fiscal years 2022 and 2023. This is possible by going to the **Ledger settlement** page. Note that 2021 transactions settled against 2022 transactions aren’t relevant because the year has already been closed for 2022. Those transactions can remain settled.
+3.	Identify the total of all the transactions that are settled across fiscal years 2022 and 2023. This is possible by going to the **Ledger settlement** page. The 2021 transactions settled against 2022 transactions aren’t relevant because the year has already been closed for 2022. Those transactions can remain settled.
 -   Enter a date range for the entire fiscal year 2022. For example, enter January 1, 2022 to December 31, 2022 is using a calendar year.
 -   In the **Status** field, select **Settled**. 
 -   Filter on one ledger account at a time. 
@@ -93,9 +93,11 @@ fiscal years. With the feature enabled, ledger settlement can't be reversed for 
  
 ![Reverse transactions.](./media/afterYEC4.png)
 
-7.	Post an adjusting general journal to split the opening balance for 2023 into two amounts: the portion settled to the 2022 fiscal year transaction and the 
-portion not settled yet within 2023. This will allow you to settle the 2023 transactions against the $700 originally settled against 2022 transaction. This is required
-because ledger settlement doesn’t allow partial settlement. 
+7.	Post an adjusting general journal to split the opening balance for 2023 into two amounts: 
+ - the portion settled to the 2022 fiscal year transaction 
+ - the portion not settled yet in 2023 
+
+This will allow you to settle the 2023 transactions against the $700 originally settled against 2022 transaction. This is required because ledger settlement doesn’t allow partial settlement. 
 -   The portion of the opening balance that was settled to the previous year.
     -   The first amount is $700 based on the totals found settled across 2022 and 2023.
 -   The portion of the opening balance that was NOT settled to the previous year. 
