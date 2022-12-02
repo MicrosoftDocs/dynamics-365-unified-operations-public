@@ -32,9 +32,9 @@ The cross-year limitation is only relevant to ledger settlement, not Accounts re
 
 Before you enable the feature, the fiscal year that will go through the year-end close must also not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
-This article describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
+This article describes the steps required to identify, unsettle and settle the ledger transactions again that are settled across years. For this scenario, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
 
-If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and resettling the ledger transactions can be found:
+If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and settling the ledger transactions again can be found:
 
  - scenario 1 (preparing before year-end close) 
  - scenario 2 (preparing after year-end close). 
@@ -88,18 +88,22 @@ A few notes:
 ![Revert cross-settlement transactions](./media/revert-unsettle.png)
 
 8.	Using the Excel data, find the total amount of transactions in 2021 and 2023 that were settled to transactions within 2022. For 2021, the transactions total $525 and for 2023, the transactions total $700. 
-9.	Post an adjusting general journal to split the opening balance for 2022 into two amounts: the portion settled to the 2021 fiscal year transaction and the portion not settled yet within 2022. This will allow you to settle the 2022 transactions against the $525 originally settled against 2021 transaction. This is required because ledger settlement doesn’t allow partial settlement. 
+9.	Post an adjusting general journal to split the opening balance for 2022 into two amounts: 
+ - the portion settled to the 2021 fiscal year transaction 
+ - the portion not settled yet within 2022 
+
+This will allow you to settle the 2022 transactions against the $525 originally settled against 2021 transaction. This is required because ledger settlement doesn’t allow partial settlement. 
 -   The portion of the opening balance that was settled to the previous year.
     -   The first amount is $525 based on the totals found settled across 2021 and 2022.
 -   The portion of the opening balance that was NOT settled to the previous year. 
     -   The second amount is the difference between the opening balance and amount settled of $525. The remaining amount is $1025 - $525 = $500.  
 -   Go to the general journal and post the adjustment. Your organization will have to decide what transaction date to use based on what periods are open. These transactions may have been settled with a settlement date of January or February 2022, but the adjustment may have to be posted in December if that is the only open period. 
--   It may be necessary to temporarily turn off the parameter on the 110200 main account setup **Do not allow manual entry**. If the main account doesn’t allow manual entry, this adjustment won’t post. 
+-   It may be necessary to temporarily turn off the **Do not allow manual entry** parameter on the **Main account** page for account 110200. If the main account doesn’t allow manual entry, this adjustment won’t post. 
 
 ![Do not allow manual entry](./media/not-post.png)
 
  
-10.	The unsettled transactions can be resettled again. Return to the **Ledger settlement** page, enter the date range 1/1/2022 to 12/31/2022 and filter on the main account 110200. Use the detailed transactions sent to Excel to find the specific transactions that need to be resettled. The following unsettled transactions now exist:
+10.	The unsettled transactions can be settled again. Return to the **Ledger settlement** page, enter the date range 1/1/2022 to 12/31/2022 and filter on the main account 110200. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
  
  ![Unsettled transations](./media/updated-unsettled.png)
  
