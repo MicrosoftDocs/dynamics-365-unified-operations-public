@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.0
 The Optimize year-end close service add-in for Microsoft Dynamics 365 Finance enables year-end close processing to run outside the Application Object Server (AOS) instance for Dynamics 365 Finance resources. It uses microservice technology. The benefits that are associated with the Optimize year-end close functionality include improved performance and minimized impact on the SQL database during year-end close processing.
 
 >[!NOTE]
-> The Optimized year-end close is available on APP 10.0.31. Also, it has been backported to 10.0.30 and 10.0.29 you'll need to take the latest quality update.   
+> The Optimized year-end close is available on version 10.0.31. This feature has been backported to versions 10.0.30 and 10.0.29 and you'll need to take the latest quality update.   
 
 To use the Optimize year-end close functionality, you must complete the following tasks:
 
