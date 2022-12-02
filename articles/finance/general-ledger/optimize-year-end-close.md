@@ -74,7 +74,7 @@ To use **Optimize year-end close** feature and run the year-end close on a micro
 
 As the following illustration shows, the year-end close processing verifies that the add-in is installed and the feature is enabled. If both prerequisites are met, the year-end close runs on the microservice.
 
-[![Data flow diagram.](./media/Optimize-year-end-close-Image5.jpg)](./media/Optimize-year-end-close-Image5.jpg)
+[![Data flow diagram.](./media/Optimize-year-end-close-Image5.png)](./media/Optimize-year-end-close-Image5.png)
 
 ## High-level flow for year-end close processing
 
