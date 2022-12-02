@@ -39,7 +39,7 @@ Version 10.0.20 introduced a year-end close enhancement, which is enabled by def
 
 The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. Historical year-end close information performed prior to enabling the feature won't be displayed. An accounting manager can initiate the year-end close from the new page. 
 
-To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. If you have enabled the **General ledger year-end enhancements** feature after completing a year-end close, and you want to reverse the historical year, you can reverse the historical year-end results by running the historical year-end close again with the General ledger parameter **Delete existing year-end close entries when re-closing the year** enabled. 
+To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and won't rerun the year-end close automatically. If you've enabled the **General ledger year-end enhancements** feature after completing a year-end close, and you want to reverse the historical year, you can reverse the historical year-end results by running the historical year-end close again with the General ledger parameter **Delete existing year-end close entries when re-closing the year** enabled. 
 
 You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.
 
@@ -50,16 +50,16 @@ Because the feature **Awareness between ledger settlement and year-end close** i
 Because the feature **Awareness between ledger settlement and year-end close** is enabled, reversals of the year-end processing aren't allowed if the opening transactions have been settled in the new fiscal year. Either reverse the ledger settlement in the new fiscal year 2023 before reversing the 1/1/2022 year or close 1/1/2022 year again, but only for new adjusting entries. Reclosing the year for adjustments only is accomplished by disabling the General ledger parameter **Delete existing year-end entries when re-closing the year**. 
 
 ## General ledger: Why isn’t the ledger settlement automation processing December’s ledger settlement transactions? 
-The **Automate ledger settlements** feature will run the automation for transactions dated from the first day of the fiscal year to the current date that the occurrence executes. You may need to adjust the execution date of your occurrence to ensure that it is run in December, for fiscal years that end on December 31. For example, assume that you have an automation set up to run monthly on the first day of the month. It will be executed on December 1st, 2022 and is scheduled to run on January 1st, 2023. It is recommended to alter the January 1st, 2023 occurrence to run instead on December 31, 2022. This will ensure that the transactions dated December 2-31 will be considered for automatic settlement. 
+The **Automate ledger settlements** feature will run the automation for transactions dated from the first day of the fiscal year to the current date that the occurrence executes. You may need to adjust the execution date of your occurrence to ensure that it's run in December, for fiscal years that end on December 31. For example, assume that you have an automation set up to run monthly on the first day of the month. It will be executed on December 1st, 2022 and is scheduled to run on January 1st, 2023. It's recommended to alter the January 1st, 2023 occurrence to run instead on December 31, 2022. This will ensure that the transactions dated December 2-31 will be considered for automatic settlement. 
 
-## General ledger: What is the difference between Reverse year-end close action and Delete existing year-end entries when re-closing the year parameter for year-end close? 
-Confusion might exist over the difference between the **Reverse year-end close** action, and the **Delete existing year-end entries when re-closing** parameter in General ledger (**General ledger > Ledger setup > General ledger parameters**). 
+## General ledger: What is the difference between Reverse year-end close action and Delete existing year-end entries when reclosing the year parameter for year-end close? 
+Confusion might exist over the difference between the **Reverse year-end close** action, and the **Delete existing year-end entries when reclosing** parameter in General ledger (**General ledger > Ledger setup > General ledger parameters**). 
  
-Select the **Reverse year-end close** action  when running the year-end close process to delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers will be deleted. The year-end close will not run again automatically. To run the year-end close, select the **Run year-end close** action. 
+Select the **Reverse year-end close** action when running the year-end close process to delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers will be deleted. The year-end close won't not run again automatically. To run the year-end close, select the **Run year-end close** action. 
 
-The **Delete existing year-end entries when re-closing the year** parameter in General ledger is used only when running (not reversing) the year-end close. If that parameter is set to **Yes**, all closing balance and opening balance entries will be deleted and the year-end close will run again. This process is used when the organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. 
+The **Delete existing year-end entries when re-closing the year** parameter in General ledger is used only when running (not reversing) the year-end close. If that parameter is set to **Yes**, all closing balance and opening balance entries will be deleted, and the year-end close will run again. This process is used when the organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. 
 
-If this option is set to **No**, all closing balance and opening balance entries remain. They are not deleted. Instead, a new closing balance and opening balance entry will be created for only the delta or new transactions posted since the last year-end close for that fiscal year.  
+If this option is set to **No**, all closing balance and opening balance entries remain. They aren't deleted. Instead, a new closing balance and opening balance entry will be created for only the delta or new transactions posted since the last year-end close for that fiscal year.  
 
 > [!NOTE]
 > The closing balance entry is created in the year being closed. This only occurs if the **Create closing transactions during transfer** parameter in General ledger is set to **Yes**. The opening balance entry is always created, because this is the beginning balance for the next year. 
@@ -68,7 +68,7 @@ If this option is set to **No**, all closing balance and opening balance entries
 You can make a number of changes to improve performance of the year-end close. We recommend that you evaluate these suggested changes to consider whether the change is appropriate for your organization.
 
 ### Optimize year-end close service
-**Optimize year-end close** empowers **Dynamics 365 Finance** customers to accelerate their year-end close by moving heavy processing of year-end to a microservice. With an efficient year-end close, the saved time enables each Finance team to react in a timely manner to necessary adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, valuable resources are freed up.  The processing elevation minimizes the load on SQL and gives an opportunity to customers to accelerate the year-end close processing.  
+**Optimize year-end close** empowers **Dynamics 365 Finance** customers to accelerate their year-end close by moving heavy processing of year-end to a microservice. With an efficient year-end close, the saved time enables each Finance team to react in a timely manner to necessary adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, valuable resources are freed up. The processing elevation minimizes the load on SQL and gives an opportunity to customers to accelerate the year-end close processing.  
   
 **Optimize year-end close** is available on APP 10.0.31 and to allow more customers to utilize the new service for the 2022 year-end season. Additionally, **Optimize year-end close** has been backported to 10.0.30 and 10.0.29 versions. For more information, see the [Optimize year-end close](optimize-year-end-close.md) article.
 
@@ -112,22 +112,22 @@ Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Se
 You can use the **Update 1099 information for multiple vendors** page to update the 1099 box on a vendor record, and to update transactions with the 1099 box information. You can open this page by going to **Accounts payable > Periodic task > Tax 1099**. You must be assigned to the **Update 1099 box and transactions for multiple vendors** security privilege to access the page. 
 
 ## Accounts payable: 1099 – Recalculate existing 1099 amounts versus Update all in the Update 1099 utility
-The **Recalculate existing 1099 amounts** check box will reset the 1099 amount to the total paid values, when used in conjunction with the **Update all** check box. 
+The **Recalculate existing 1099 amounts** checkbox will reset the 1099 amount to the total paid values, when used with the **Update all** checkbox. 
 
 [![Tax 1099 transactions: Before running the update routine.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
-The **Recalculate existing 1099 amounts** check box only comes into play when there are partial 1099 values on the invoice or if it was modified on the Tax 1099 form. For example, assume you have an invoice valued at $1000.00, but the user manually types in a 1099 amount on the invoice of $500.00.
+The **Recalculate existing 1099 amounts** checkbox only comes into play when there are partial 1099 values on the invoice or if it was modified on the Tax 1099 form. For example, assume you have an invoice valued at $1000.00, but the user manually types in a 1099 amount on the invoice of $500.00.
 
 [![Tax 1099 transactions: Marking both Update all and Recalculate existing 1099 amounts.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
-When this is paid, $500.00 will be the 1099 amount paid. If you perform the recalculation routine, the system will change the 1099 amount to be $1000.00, which is the total that was paid.
+When this is paid, $500.00 will be the 1099 amount paid. If you perform the recalculation routine, the 1099 amount will be changed to be $1000.00, which is the total that was paid.
 
 [![Tax 1099 transactions: After running the 1099 routine.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## Accounts payable: 1099 – Manually create 1099 transactions
 An organization might need to manually create 1099 transactions that aren't associated with an invoice. You can add manual 1099 transactions by going to **Accounts payable > Periodic tasks > Tax 1099 > Vendor settlement for 1099s**. Select the **Manual 1099 transactions** button. 
 
-Manually created 1099 transactions are not updated with the **Update all** process or the **Recalculate existing 1099 amounts** process in the **Update 1099** utility.
+Manually created 1099 transactions aren't updated with the **Update all** process or the **Recalculate existing 1099 amounts** process in the **Update 1099** utility.
 
 ## Accounts payable: 1099 – Does Dynamics 365 Finance support the 1096 form? 
 
