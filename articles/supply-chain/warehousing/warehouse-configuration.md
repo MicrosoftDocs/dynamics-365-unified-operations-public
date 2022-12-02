@@ -103,6 +103,6 @@ To make it easier and quicker to define the actions that are associated with eac
 ## Additional resources
 
 - [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md)
-- [Get started with setting up module](get-started-with-setting-up-module.md)
+- [Get started with setting up the Warehouse management module](get-started-with-setting-up-module.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
