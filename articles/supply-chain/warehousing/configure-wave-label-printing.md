@@ -63,6 +63,8 @@ As of Supply Chain Management version 10.0.21, this feature is mandatory, so it 
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Wave label printing*
+>[!NOTE]
+>In later versions the feature is no longer part of [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
 
 ## Scenario 1: Wave label printing where a single wave label is generated
 
