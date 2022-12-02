@@ -62,11 +62,11 @@ When the **Optimize year-end close** feature is enabled, two new columns, **Resu
 
 The following illustration shows an example of the **Results** and **Status** columns on the **Year-end close** page. You can select the **View results** link in the **Results** column to open the results of the year-end close. The **Status** column shows the current state of the year-end close process. Therefore, the new columns provide visibility into the progress of the year-end close process.
 
-[![Results and Status columns on the Year-end close page.](./media/Optimize year-end close - Image 3.png)](./media/Optimize year-end close - Image 3.png)
+[![Results and Status columns on the Year-end close page.](./media/Optimize year-end close - Image 3.png)
 
 In addition, when the **Optimize year-end close** feature is enabled, a **Balance sheet financial dimensions** FastTab becomes available on the **Year-end close template** page. You can use this FastTab to specify balance sheet financial dimensions in detail when you close a year. This capability is parallel to the capability that's already available for profit and loss accounts.
 
-[![Results and Status columns on the Year-end close page.](./media/Optimize year-end close - Image 4.png)](./media/Optimize year-end close - Image 4.png)
+[![Results and Status columns on the Year-end close page.](./media/Optimize year-end close - Image 4.png)
 
 ## Architecture and data flow
 
@@ -74,7 +74,7 @@ To use **Optimize year-end close** feature and run the year-end close on a micro
 
 As the following illustration shows, the year-end close processing verifies that the add-in is installed and the feature is enabled. If both prerequisites are met, the year-end close runs on the microservice.
 
-[![Data flow diagram.](./media/Lifecycle-services.jpg)](./media/Optimize year-end close - Image 5.jpg)
+[![Data flow diagram.](./media/Optimize year-end close - Image 5.jpg)
 
 ## High-level flow for year-end close processing
 
