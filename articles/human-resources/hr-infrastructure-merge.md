@@ -91,11 +91,12 @@ During the automatic process, the following actions are completed and should be 
 
     - Configurations
     - Security roles (including custom roles)
-    - Workflows
+    - Workflows (including notifications)
     - Personalizations and saved views
     - Transactions
     - Custom fields
     - Attachments
+    - Alerts
 
 - Data management – Bring your own database (BYOD).
 - Feature management - Enabled/disabled features.
