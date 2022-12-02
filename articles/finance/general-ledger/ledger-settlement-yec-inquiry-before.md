@@ -39,6 +39,8 @@ If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or abo
 ## Scenario setup
 The following transactions were posted for main account 110200. The transactions in green are ledger settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
 
+![Total main account](./media/ledgersettlement.png)
+
 ## Scenario steps
 The following steps should be used if your organization wants to use the feature before you run the year-end close for fiscal year 2022. 
 A few notes:
@@ -51,17 +53,24 @@ A few notes:
 -   Select the Financial dimension set to display the financial dimensions you want to see for the ledger account. The main account is always shown, even if a dimension set is selected that doesn’t contain a main account. 
 -   Click **Show transactions**. The inquiry page will show all transactions, for all ledger accounts (even if they're not in ledger settlement setup anymore), from all other fiscal years that are settled against transactions posted within 2022. There are three different ledger accounts shown. 
 
+![2022 cross-year settlements](./media/review-cross-year.png)
+
 
 3.	Right click on the grid and choose **Export all rows**. These are all the transactions that must be unsettled from the transactions in 2022 to run the year-end close. You want the detailed transaction list to correctly resettle the transactions later. 
 4.	Note the fiscal years for which the transactions were posted. In this scenario, there are transactions in 2021 and 2023. 
 5.	In the **Inquiry** page, change the fiscal year to 2021, the first fiscal year that contains transactions settled against 2022 transactions. 
 -   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2022 that were settled against transactions in 2021. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
 
+![2021 cross-year settlements](./media/review-cross.png)
+
+
 >[!IMPORTANT] 
 >Right-click on the grid and choose **Export all rows**. 
 
 6.	In the **Inquiry** page, change the fiscal year to 2023, the next fiscal year that contains transactions settled against 2022 transactions. 
 -   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2023 that were settled against transactions in 2022. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
+
+![2023 cross-year settlements](./media/filter-transactions.png)
 
 >[!IMPORTANT] 
 >Right-click on the grid and choose **Export all rows**.
@@ -71,6 +80,9 @@ A few notes:
 -   Change the fiscal year to 2022.
 -   Select all the records in the grid and choose the **Unsettle marked records** button. All the selected transactions in the grid will be unsettled.
 -   Two warning messages are given to ensure that the transaction details were exported to Excel before they're unsettled. If you accidentally unsettle before sending the detail to Excel, there's no way to revert the unsettlement of the ledger transactions. 
+
+![Revert cross-settlement transactions](./media/revert-unsettle.png)
+
 8.	Using the Excel data, find the total amount of transactions in 2021 and 2023 that were settled to transactions within 2022. For 2021, the transactions total $525 and for 2023, the transactions total $700. 
 9.	Post an adjusting general journal to split the opening balance for 2022 into two amounts: the portion settled to the 2021 fiscal year transaction and the portion not settled yet within 2022. This will allow you to settle the 2022 transactions against the $525 originally settled against 2021 transaction. This is required because ledger settlement doesn’t allow partial settlement. 
 -   The portion of the opening balance that was settled to the previous year.
@@ -79,8 +91,14 @@ A few notes:
     -   The second amount is the difference between the opening balance and amount settled of $525. The remaining amount is $1025 - $525 = $500.  
 -   Go to the general journal and post the adjustment. Your organization will have to decide what transaction date to use based on what periods are open. These transactions may have been settled with a settlement date of January or February 2022, but the adjustment may have to be posted in December if that is the only open period. 
 -   It may be necessary to temporarily turn off the parameter on the 110200 main account setup **Do not allow manual entry**. If the main account doesn’t allow manual entry, this adjustment won’t post. 
+
+![Do not allow manual entry](./media/not-post.png)
+
  
 10.	The unsettled transactions can be resettled again. Return to the **Ledger settlement** page, enter the date range 1/1/2022 to 12/31/2022 and filter on the main account 110200. Use the detailed transactions sent to Excel to find the specific transactions that need to be resettled. The following unsettled transactions now exist:
+ 
+ ![Unsettled transations](./media/updated-unsettled.png)
+ 
  
 -   The Opening balance of $1,025 can be settled against the adjustment for -$1,025. 
 -   The detailed transactions that were unsettled for -$400, -$50, and -$75 can be settled against the adjustment for $25.00.  
