@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Wave label printing
 description: This article describes wave label printing and explains how to set it up.
 author: perlynne
-ms.date: 11/30/2022
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: yyyy-mm-dd
-ms.dyn365.ops.version: 10.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
+ms.topic: how-to
+ms.date: 12/02/2022
+ms.custom: bap-template
 ---
 
 # Wave label printing
@@ -56,15 +40,6 @@ These enhancements make it more efficient to label cartons before palletization.
 
 > [!NOTE]
 > You can implement the configuration scenarios that are described in this article either separately or in combination, depending on your business requirements. You can design several wave label templates that work in sequence (as illustrated in scenario 3). For example, you can use scenario 1 to print carton labels and scenario 2 to print pallet labels (if pallets in stock vary in size and composition).
-
-## Turn on the Wave label printing feature
-
-As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Wave label printing*
->[!NOTE]
->In later versions the feature is no longer part of [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
 
 ## Scenario 1: Wave label printing where a single wave label is generated
 
