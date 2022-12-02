@@ -66,7 +66,7 @@ The following illustration shows an example of the **Results** and **Status** co
 
 In addition, when the **Optimize year-end close** feature is enabled, a **Balance sheet financial dimensions** FastTab becomes available on the **Year-end close template** page. You can use this FastTab to specify balance sheet financial dimensions in detail when you close a year. This capability is parallel to the capability that's already available for profit and loss accounts.
 
-[![Columns on the Year-end close page profit and loss.](./media/Optimize-year-end-close-Image4.png)](./media/Optimize-year-end-close-Image4.png)
+[![Balance sheet financial dimensions FastTab.](./media/Optimize-year-end-close-Image4.png)](./media/Optimize-year-end-close-Image4.png)
 
 ## Architecture and data flow
 
