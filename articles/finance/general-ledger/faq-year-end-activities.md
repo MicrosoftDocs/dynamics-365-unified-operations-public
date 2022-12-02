@@ -35,9 +35,9 @@ This article lists questions that can arise when closing a year, and the answers
 Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25, and is mandatory starting with version 10.0.29. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
  - Module: General ledger
- - Feature name: General ledger year-end enhancements
+ - Feature name: **General ledger year-end enhancements**
 
-The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. Historical year-end close information performed prior to enabling the feature won't be displayed. An accounting manager can initiate the year-end close from the new page. 
+The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the **General ledger foreign currency revaluation**, where a list displays each time the year-end close is run or reversed. Historical year-end close information performed prior to enabling the feature won't be displayed. An accounting manager can initiate the year-end close from the new page. 
 
 To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and won't rerun the year-end close automatically. If you've enabled the **General ledger year-end enhancements** feature after completing a year-end close, and you want to reverse the historical year, you can reverse the historical year-end results by running the historical year-end close again with the General ledger parameter **Delete existing year-end close entries when re-closing the year** enabled. 
 
