@@ -153,6 +153,8 @@ To update Content Security Policy (CSP) for your site in site builder, follow th
     - Style-src
 1. Select **Save and Publish**.
 
+For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
+
 ## Additional resources
 
 [Commerce chat features overview](commerce-chat-overview.md)
