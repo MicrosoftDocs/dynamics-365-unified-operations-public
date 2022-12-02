@@ -31,12 +31,12 @@ ms.dyn365.ops.version: 10.0.25
 Preparing for ledger settlement Awareness feature, after year-end close.
 
 A major change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. 
-The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlement. 
+The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlements. 
 
 Before the Awareness feature is enabled, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal 
 years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
-This topic describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
+This article describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2022 has been closed. The focus is preparing the ledger settlement transactions well before running the 2023 year-end close. 
 
 ## Example setup
 
