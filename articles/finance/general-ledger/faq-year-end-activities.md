@@ -4,7 +4,7 @@
 title: Year-end activities FAQ 
 description: This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
-ms.date: 11/08/2022
+ms.date: 12/01/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -32,14 +32,14 @@ ms.dyn365.ops.version: 10.0.14
 This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities. The information in this article primarily focuses on questions concerning year-end closing activities for General ledger and Accounts payable.
 
 ## General ledger year-end enhancements 
-Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25 and is mandatory starting from version 10.0.29. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25, and is mandatory starting with version 10.0.29. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
  - Module: General ledger
  - Feature name: General ledger year-end enhancements
 
-The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. Historical year end close information from those performed prior to enabling the feature will not be displayed. An accounting manager can initiate the year-end close from the new page. 
+The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. Historical year-end close information performed prior to enabling the feature won't be displayed. An accounting manager can initiate the year-end close from the new page. 
 
-To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. If you have enabled the **General ledger year-end enhancements** feature after completing a year-end close, and you want to reverse the historical year, you can reverse the historical year-end results by rerunning the historical year-end close with the General ledger parameter **Delete existing year-end close entries when re-closing the year** enabled. 
+To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. If you have enabled the **General ledger year-end enhancements** feature after completing a year-end close, and you want to reverse the historical year, you can reverse the historical year-end results by running the historical year-end close again with the General ledger parameter **Delete existing year-end close entries when re-closing the year** enabled. 
 
 You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.
 
@@ -47,7 +47,7 @@ You can rerun the year-end close by restarting the process for the fiscal year a
 Because the feature **Awareness between ledger settlement and year-end close** is enabled, only settled ledger transaction from the fiscal year being closed are excluded from the opening balance. This causes debits and credit to be out of balance. For more information, see the [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md) article.
 
 ## General ledger: The reversal of the year-end close process is failing because of an error “The year-end close for 1/1/2022 can’t be reversed because beginning balance transaction have been ledger settled in fiscal year 1/1/2023.” What does this mean? 
-Because the feature **Awareness between ledger settlement and year-end close** is enabled, reversals of the year-end processing are not allowed if the opening transactions have been settled in the new fiscal year. Either reverse the ledger settlement in the new fiscal year 2023 before reversing the 1/1/2022 year or close 1/1/2022 year again, but only for new adjusting entries. Reclosing the year for adjustments only is accomplished by disabling the General ledger parameter **Delete existing year-end entries when re-closing the year**. 
+Because the feature **Awareness between ledger settlement and year-end close** is enabled, reversals of the year-end processing aren't allowed if the opening transactions have been settled in the new fiscal year. Either reverse the ledger settlement in the new fiscal year 2023 before reversing the 1/1/2022 year or close 1/1/2022 year again, but only for new adjusting entries. Reclosing the year for adjustments only is accomplished by disabling the General ledger parameter **Delete existing year-end entries when re-closing the year**. 
 
 ## General ledger: Why isn’t the ledger settlement automation processing December’s ledger settlement transactions? 
 The **Automate ledger settlements** feature will run the automation for transactions dated from the first day of the fiscal year to the current date that the occurrence executes. You may need to adjust the execution date of your occurrence to ensure that it is run in December, for fiscal years that end on December 31. For example, assume that you have an automation set up to run monthly on the first day of the month. It will be executed on December 1st, 2022 and is scheduled to run on January 1st, 2023. It is recommended to alter the January 1st, 2023 occurrence to run instead on December 31, 2022. This will ensure that the transactions dated December 2-31 will be considered for automatic settlement. 
