@@ -35,8 +35,9 @@ This article describes the steps required to identify, unsettle and settle the l
 
 If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and settling the ledger transactions again can be found:
 
- - scenario 1 (preparing before year-end close) 
- - scenario 2 (preparing after year-end close) 
+ - Preparing to use [**Awareness between ledger settlements**](ledger-settle-yec.md) before year-end close 
+ - Preparing to use [**Awareness between ledger settlements**](ledger-settle-yec-after.md) after year-end close
+
 
 ## Scenario setup
 The following transactions were posted for main account 110200. The transactions in green are ledger settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed. 
@@ -92,7 +93,7 @@ This will allow you to settle the 2023 transactions against the $700 originally 
 -   The Opening balance of $1,700 can be settled against the adjustment for -$1,700. 
 -   The detailed transactions that were unsettled for -$700 can be settled against the adjustment for 700.00.  
 8.	Enable the **Awareness** feature. You're now ready to run the year end close. 
--   Before running the year-end close for 2023, consider marking the option **Keep details** on the **Ledger settlement setup** for all balance sheet accounts. For more information, see Awareness.   
+-   Before running the year-end close for 2023, consider marking the option **Keep details** on the **Ledger settlement setup** for all balance sheet accounts. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).   
 -   When beginning the year-end close for 2023, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you. This may happen if users settled transactions across fiscal years before the feature was enabled.
 -   If 2022 and 2023 transactions are still settled, you'll need to disable the feature again and repeat the previous steps to unsettle the transactions. This is because transactions can't be unsettled in a closed fiscal year, and 2022 is closed. 
 9.	After successfully running the year end close for 2022, the feature can remain enabled moving forward. 
