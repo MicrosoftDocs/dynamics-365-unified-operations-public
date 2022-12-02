@@ -61,7 +61,7 @@ A few notes:
 5.	In the **Inquiry** page, change the fiscal year to 2021, the first fiscal year that contains transactions settled against 2022 transactions. 
 -   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2022 that were settled against transactions in 2021. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
 
-![2021 cross-year settlements](./media/review-cross.png)
+![2021 cross-year settlements](./media/review-cross-year.png)
 
 
 >[!IMPORTANT] 
