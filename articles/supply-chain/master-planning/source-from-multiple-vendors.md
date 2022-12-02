@@ -259,3 +259,9 @@ For vendor A, the target allocation is 80 percent. For vendor B, it's 20 percent
 \* 100 accumulated + current demand
 
 \*\* Average of (100 – 80), (20 – 0) = average (20, 20) = 20
+
+## Considerations
+
+When using multisourcing, if the vendors have vendor calendars associated, these will not be taken into account when considering which vendor should be chosen. In other words, if there is a demand for a Wednesday and two vendors one open all days and another one only open on Fridays, if the multisorcing algorithms determines that the second vendor should supply as determined by the percentages, this vendor will be chosen. 
+In case of the short time demand, this could mean that the supply is delayed until the Friday. For short time cases, you may want to change it manually if desired. 
+In general, this is disregarded to make sure that the multisourcing is performed and there is a balance between the vendors selected. 
