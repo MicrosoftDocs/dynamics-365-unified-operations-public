@@ -36,8 +36,8 @@ This article describes the steps required to identify, unsettle and settle the l
 
 If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and settling the ledger transactions again can be found:
 
- - scenario 1 (preparing before year-end close) 
- - scenario 2 (preparing after year-end close). 
+ - Preparing to use [**Awareness between ledger settlements**](ledger-settle-yec.md) before year-end close 
+ - Preparing to use [**Awareness between ledger settlements**](ledger-settle-yec-after.md) after year-end close
 
 
 ## Scenario setup
