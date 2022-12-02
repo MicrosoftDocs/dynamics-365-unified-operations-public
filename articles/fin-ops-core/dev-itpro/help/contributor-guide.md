@@ -68,17 +68,26 @@ Microsoft makes frequent changes to the content, and those changes show up in th
 
 When you decide that it's time to get the latest version of the content from Microsoft, you can use the Git command line or GitHub Desktop. The Help for GitHub provides [an example that shows how this process works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, you use the **Merge into current branch** command to pull changes from the origin into your fork.
 
-If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. Microsoft has a GitHub repo for English (United States) content, MicrosoftDocs/Dynamics-365-Unified-Operations-public. You can use a third-party tool to generate HTML files from the Markdown files stored in this repo.
-
-Because the Microsoft repos are public, you don't have to have a valid GitHub account to get the content. However, we recommend that, at a minimum, your organization have a system account that has access to GitHub.
-
-For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
+Because the Microsoft repos are public, you don't have to have a valid GitHub account to get the content. However, we recommend that, at a minimum, your organization have a system account that has access to GitHub. For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
 
 ## Get the content without a GitHub account
 
 If you don't want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub even if you don't have a GitHub account. For example, you can just clone the relevant GitHub repo. A GitHub account isn't required to clone a repo. Because the Microsoft repos are public, anyone can always access them.
 
 ## Translate the content
+
+If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples.
+
+* Create the content in multiple languages without using Microsoft's content.
+* Create the content in one language, without using Microsoft's content, and then translate it. For example, by using the [Dynamics 365 Translation Service (DTS)](#dynamics-365-translation-service).
+* Pull Microsoft's English (United States) language content from our MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, customize the Markdown files, translate them, and then use a third-party tool or DocFX to build the HTML files.
+
+    > [!NOTE]
+    > DTS isn't an option for translating the content in this scenario because it doesn't support Markdown files.
+
+* Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool to pull Microsoft's English (United States) content, build the HTML files, customize them, and then translate them. You can use DTS to translate HTML files. 
+
+### Dynamics 365 Translation Service
 
 You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your own or the Microsoft-provided content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](../lifecycle-services/use-translation-service-ua.md).
 

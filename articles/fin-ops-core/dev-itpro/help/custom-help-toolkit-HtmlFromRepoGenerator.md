@@ -32,7 +32,7 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 - Update links to files that are no longer present in the clone.
 - Generate HTML files that can be used to publish content.
 
-    The HTML files must be generated in the **d365F-O** subfolder. The files must be generated based on style sheets and templates that are part of the tool. For more information, see the [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files) section of this article.
+    By default, the HTML files are generated in the **d365F-O** subfolder. The files are generated based on the style sheets and templates that are packaged by DocFX. For more information, see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly.
 
@@ -55,7 +55,7 @@ Here is an explanation of the parameters.
 | Out | Specify the folder where your existing cloned repo exists, or the folder to clone the repo to. If you run the **HtmlFromRepoGenerator** tool to clone a repo, this folder must not already exist. Use the language name as the folder name, as described in [Language and locale descriptors in the product and in Help](language-locale.md). |
 | ExternalText | Specify text that should be added to the updated links if the **HtmlFromRepoGenerator** tool must replace the original links. |
 | DoNotClone | Set this parameter when you run the tool against a previously cloned repo. |
-| Repo | Specify the repo URL. This parameter is optional if you run the tool against a previously cloned repo. An example of a URL for a Microsoft documentation repo for English (United States) is `https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public`.|
+| Repo | Specify the repo URL. This parameter is optional if you run the tool against a previously cloned repo. The URL of the repo for the English (United States) content is https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public.|
 | RemoveGitFolder| Specify whether the **.git** folder should be removed. |
 | ReplaceUrl | Specify the URL that should replace links between files when the target files aren't present. This parameter is intended to be used to turn relative links into absolute links. |
 | LogsDir | Specify the folder to save logs files to. |
