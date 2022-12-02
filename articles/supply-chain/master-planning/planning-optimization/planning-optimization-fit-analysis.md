@@ -74,7 +74,7 @@ The following table shows the various results that can be shown after a fit anal
 | Forecast | Coverage groups with "Include intercompany orders" enabled: *\#* | This feature is now supported. For additional information, see [Intercompany planning](Intercompany-planning.md) | Supported |
 | Forecast | Coverage groups with "Reduce forecast by" setting set to a value different than "Orders": *\#* | This feature is now supported. For additional information, see [Master planning with demand forecasts](demand-forecast.md) | Supported |
 | Forecast | Forecast models with sub models: *\#* |  This feature is now supported. For additional information, see [Master planning with demand forecasts](demand-forecast.md) | Supported |
-| Forecast | Master plans with "Include supply forecast" enabled: *\#* | This feature is pending. Currently, supply forecasts aren't supported when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 or later |
+| Forecast | Master plans with "Include supply forecast" enabled: *\#* | This feature is now supported, see [Master planning with supply forecasts](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/supply-forecast) | Supported |
 | Freeze time fence | Coverage groups with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | 2022 release wave 2 |
 | Freeze time fence | Item coverage records with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | 2022 release wave 2 |
 | Freeze time fence | Master plans with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | 2022 release wave 2 |
@@ -100,11 +100,11 @@ The following table shows the various results that can be shown after a fit anal
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
 | Production | Sales line reservation using explosion: *\#* | Sales line reservation that uses explosion isn't supported when Planning Optimization is enabled. | 2022 release wave 2 |
 | Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders isn't supported when Planning Optimization is enabled. Production orders can be scheduled individually. | 2022 release wave 2 |
-| Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is pending. Currently, requests for quotation (RFQs) aren't considered as demand when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 |
+| Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is supported, see [Plan based on quoations and RFQs](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/quotation-planning). | Supported |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. For additional information, see [Purchase requisitions](purchase-requisitions.md) | Supported |
 | Safety margins | Coverage groups with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) | Supported |
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) |  Supported |
-| Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 |
+| Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is now supported, see [Plan based on quotations and RFQs](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/quotation-planning) | Supported |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
 
 ## Additional resources
