@@ -40,7 +40,7 @@ To use the Optimize year-end close functionality, you must complete the followin
 2. Enable the **Optimize year-end close** feature in Feature management.
 
 > [!NOTE]
-> You can still use the current year-end close functionality for Finance resources by disabling the **Optimize year-end close** feature in Feature management.
+> You can still use the current year-end close functionality for Finance by disabling the **Optimize year-end close** feature in Feature management.
 
 ## Improved performance
 
@@ -78,7 +78,7 @@ As the following illustration shows, the year-end close processing verifies that
 
 ## High-level flow for year-end close processing
 
-1. The year-end close process begins in Finance, at **General ledger \> Period close \> Year-end close**. The process creates closing batch jobs and tasks for the legal entities that are being closed.
+1. The year-end close process begins in Finance, go to **General ledger \> Period close \> Year-end close**. The process creates closing batch jobs and tasks for the legal entities that are being closed.
 2. The year-end close determines whether the year-end close should be run on the microservice or on the current closing logic.
 
     - If the **Optimize year-end close service add-in** is installed in Lifecycle Services, and the **Optimize year-end close** feature is enabled in Feature management, the year-end close will run on the microservice.
