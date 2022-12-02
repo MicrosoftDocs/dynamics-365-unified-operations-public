@@ -127,7 +127,7 @@ The following steps should be used if your organization wants to use the feature
   ![Detailed transactions.](./media/YEC9.png)
  
 10.	Enable the **Awareness** feature. You're now ready to run the year-end close. 
-    -   Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see Awareness.   
+    -   Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).   
     -   When beginning the year-end close for 2022, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you.
     -   If 2021 and 2022 transactions are still settled, you'll need to disable the feature again, and repeat the previous steps to unsettle the transactions. This is because transactions can't be unsettled in a closed fiscal year, and 2021 is closed. 
     -   If 2022 and 2023 transactions are still settled, you do NOT need to disable the feature. The previous steps can be used to unsettle the transactions because neither 2022 or 2023 are closed. 
