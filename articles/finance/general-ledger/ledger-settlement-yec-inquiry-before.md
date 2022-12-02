@@ -28,13 +28,17 @@ ms.dyn365.ops.version: 10.0.25
 # Awareness between ledger settlement feature before year-end close using inquiry window
 
 One primary change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. 
-The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlement. 
+The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlements. 
 
-In preparation for enabling the feature, the fiscal year that will go through the year-end close must also not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
+Before you enable the feature, the fiscal year that will go through the year-end close must also not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
 This article describes the steps required to identify, unsettle and resettle the ledger transactions that are cross-year settled. For this scenario, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
 
-If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and resettling the ledger transactions can be found using scenario 1 (preparing before year-end close) and scenario 2 (preparing after year-end close). 
+If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or above, the steps for identifying, unsettling and resettling the ledger transactions can be found:
+
+ - scenario 1 (preparing before year-end close) 
+ - scenario 2 (preparing after year-end close). 
+
 
 ## Scenario setup
 The following transactions were posted for main account 110200. The transactions in green are ledger settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
