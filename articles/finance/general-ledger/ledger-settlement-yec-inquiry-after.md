@@ -38,7 +38,7 @@ If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or abo
 ## Scenario setup
 The following transactions were posted for main account 110200.  The transactions in green are ledger settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed. 
 
-
+![Total main account](./media/excel.png)
 
 ## Scenario steps
 The following steps should be used if your organization wants to use the feature after you run the year-end close for fiscal year 2022. A few notes:
@@ -51,12 +51,14 @@ a.	Select fiscal year 2023, the next fiscal year we want to run the year end clo
 b.	Select the Financial dimension set to display the financial dimensions you want to see for the ledger account. The main account is always shown, even if a dimension set is selected that doesn’t contain a main account. 
 c.	Click Show transactions. The inquiry page will show all transactions from other fiscal years that are settled against transactions posted within 2023.  
 
+![2023 cross-year settlements](./media/2023-cross-settlement.png)
 
 3.	Right click on the grid and choose Export all rows. These are all the transactions that must be unsettled from the transactions in 2022 in order to run the year-end close next year for 2023. You want a record of these transactions.  
 4.	Once all the detailed transactions from 2022 are exported to Excel, you are ready to unsettle the transactions using the new inquiry page. 
 a.	Select all the records in the grid and choose the Unsettle marked records button. All the selected transactions in the grid will be unsettled.
 b.	Two warning messages are given to ensure that the transaction details were exported to Excel before they are unsettled. If you accidentally unsettle before sending the detail to Excel, there is no way to revert the unsettlement of the ledger transactions. 
 
+![Revert cross-year settlements](./media/revert-settlement.png)
 
 5.	Using the Excel data, find the total amount of transactions in 2022 that were settled to transactions within 2023.  For 2023, the transactions total $700. 
 6.	Next, post an adjusting general journal to split the opening balance for 2022 into two amounts: the portion settled to the 2022 fiscal year transaction and the portion not settled yet within 2023. This will allow you to settle the 2023 transactions against the $700 originally settled against 2022 transaction. This is required because ledger settlement doesn’t allow partial settlement. 
@@ -67,8 +69,11 @@ i.	The second amount is the difference between the opening balance and amount se
 c.	Go to the general journal and post the adjustment.  Your organization will have to decide what transaction date to use based on what periods are open in 2023.
 d.	It may be necessary to temporarily turn off the parameter on the Main account setup Do not allow manual entry.  If the main account doesn’t allow manual entry, this adjustment won’t post. 
 
+![Do not allow manual entry](./media/no-manual4.png)
+
 7.	Next the unsettled transactions can be resettled again.  Return to the ledger settlement page and restrict the date range to 1/1/2023 to 12/31/2023. This step is where you will use the detailed transactions sent to Excel to find the specific transactions that need to be resettled. The following unsettled transactions now exist:
 
+![2023 Unsettled transactions](./media/2023-unsettled5.png)
 
 a.	The Opening balance of $1,700 can be settled against the adjustment for -$1,700. 
 b.	The detailed transactions that were unsettled for -$700 can be settled against the adjustment for 700.00.  
