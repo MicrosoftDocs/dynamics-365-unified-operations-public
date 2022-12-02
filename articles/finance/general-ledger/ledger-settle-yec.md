@@ -32,13 +32,13 @@ ms.dyn365.ops.version: 10.0.25
 Preparing for ledger settlement Awareness feature, before year-end close.
 
 One primary change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. 
-The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlement. 
+The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlements. 
 
 
 Before the Awareness feature is enabled, the fiscal year that will go through the year-end close must not have any ledger transactions that are settled across fiscal years. Specifically, any transactions posted in the fiscal year for which you're running the year-end close must be unsettled from transactions posted into a different fiscal year. The transactions can then be resettled against transactions within the same fiscal year. 
 
 
-This topic describes the steps required to identify, unsettle and resettle the ledger transactions that are settled across years. For example, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
+This topic describes the steps required to identify, unsettle and settle the ledger transactions again that are settled across years. For example, fiscal year 2021 has been closed. You're preparing to run the year-end close for fiscal year 2022. 
 
 ## Example setup
 The following transactions were posted for main account 110190. The ledger transactions in green are settled within the same fiscal year, and don’t need to change. Transactions in red are ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
@@ -127,7 +127,7 @@ The following steps should be used if your organization wants to use the feature
   ![Detailed transactions.](./media/YEC9.png)
  
 10.	Enable the **Awareness** feature. You're now ready to run the year-end close. 
-    -   Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see Awareness document for the benefits of doing this.   
+    -   Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see Awareness.   
     -   When beginning the year-end close for 2022, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you.
     -   If 2021 and 2022 transactions are still settled, you'll need to disable the feature again, and repeat the previous steps to unsettle the transactions. This is because transactions can't be unsettled in a closed fiscal year, and 2021 is closed. 
     -   If 2022 and 2023 transactions are still settled, you do NOT need to disable the feature. The previous steps can be used to unsettle the transactions because neither 2022 or 2023 are closed. 
