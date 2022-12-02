@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -70,10 +70,10 @@ You can make a number of changes to improve performance of the year-end close. W
 ### Optimize year-end close service
 **Optimize year-end close** empowers **Dynamics 365 Finance** customers to accelerate their year-end close by moving heavy processing of year-end to a microservice. With an efficient year-end close, the saved time enables each Finance team to react in a timely manner to necessary adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, valuable resources are freed up. The processing elevation minimizes the load on SQL and gives an opportunity to customers to accelerate the year-end close processing.  
   
-**Optimize year-end close** is available on APP 10.0.31 and to allow more customers to utilize the new service for the 2022 year-end season. Additionally, **Optimize year-end close** has been backported to 10.0.30 and 10.0.29 versions. For more information, see the [Optimize year-end close](optimize-year-end-close.md) article.
+**Optimize year-end close** is available on version 10.0.31 and to allow more customers to utilize the new service for the 2022 year-end season. Additionally, **Optimize year-end close** has been backported to 10.0.30 and 10.0.29 versions. For more information, see the [Optimize year-end close](optimize-year-end-close.md) article.
 
 ### Dimension sets
-When running the year end close, each dimension set balance is rebuilt, having a direct impact on the performance. Some organizations create dimension sets unnecessarily because they were used at one point or might be used at some point.  These unnecessary dimension sets are still rebuilt during the year end close, which adds time to the process. Take time to evaluate your dimension sets and delete any unnecessary dimension sets.
+When running the year end close, each dimension set balance is rebuilt, having a direct impact on the performance. Some organizations create dimension sets unnecessarily because they were used at one point or might be used at some point. These unnecessary dimension sets are still rebuilt during the year end close, which adds time to the process. Take time to evaluate your dimension sets and delete any unnecessary dimension sets.
 
 The unnecessary dimension sets also impact the batch job **BudgetDimensionFocusInitializeBalance** (**General ledger > Chart of accounts > Dimensions > Financial dimension sets**).
 
@@ -106,7 +106,7 @@ The following updates have been made on Form 1099-MISC for the 2022 tax year:
  - Box 18: Now used to report the state income. 
 
 ## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year?
-Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Select a vendor > Vendor tab in ribbon > Update 1099**) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the **Tax 1099** tab on the **Vendor** page.
+Use the **Update 1099** functionality (**Accounts payable > Vendors>All vendors > Select a vendor > Vendor tab in ribbon > Update 1099**) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the **Tax 1099** tab on the **Vendor** page.
 
 ## Can I run the Update 1099 for all my vendors at once?
 You can use the **Update 1099 information for multiple vendors** page to update the 1099 box on a vendor record, and to update transactions with the 1099 box information. You can open this page by going to **Accounts payable > Periodic task > Tax 1099**. You must be assigned to the **Update 1099 box and transactions for multiple vendors** security privilege to access the page. 
