@@ -35,6 +35,10 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
 - Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
+- Production onboarding for Proactive Quality updates will begin from “insert date”
+- Production onboarding will only start for LCS projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
+- For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
+
 
 ## Focus on quality updates
 
@@ -72,18 +76,19 @@ A set of process changes is being implemented ahead of the activation of proacti
     > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
 
 - **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If a fallback or turning a change off change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
-- **Sandbox sync designation** – Less than 20 percent of customers today have multiple sandboxes and keep one sandbox deployed where the version matches production, to help with troubleshooting. If a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
+- **Sandbox sync designation** – Staggered update to an isolated sandbox of choosing along with production is not supported at this time. All sandboxes will receive proactive updates 7 days prior to production environment in an LCS project. Again, this is only applicable to customer environments that are not provided any exceptions due to regulatory or other legal reasons.
 
 ## What is the rollout roadmap for quality updates?
 
-Distribution of proactive quality updates for sandbox environments is expected to begin in late September or October 2022 for Azure public cloud customers. Trial environments will also start to receive proactive update deployment at that time. In September, a notification will be sent to each customer to inform them about the expected schedule for their environments. Exceptions to the proactive updated distribution process will be allowed only for FDA-regulated customers. We're still working out how regulated environments and sovereign and government cloud customers will be managed.
+Distribution of proactive quality updates for sandbox environments began in September 2022 for Azure public cloud customers. By January 1st  2023, we will be completing onboarding 99% of sandboxes to proactive quality updates.
 
-Over the next six-month period, we will gradually increase the percentage of sandbox environments that receive proactive updates, until all designated environments are included and progress to updating production environments. Throughout the period, we will monitor to ensure that the deployment process is seamless and that we're hitting our target of non-disruptive payloads.
+Exceptions to the proactive updated distribution process are allowed only for FDA-regulated customers. We're still working out how regulated environments and sovereign and government cloud customers will be managed. 
 
-Because customers will regularly receive smaller payloads, we expect the process of staying current to become simpler. We will adjust the frequency of update deployment as we demonstrate the ability to run the process without disruption. This process is already working effectively for our Dataverse platform and applications, and is delivering the anticipated improvements in service quality. We're anxious to take the same step forward for finance and operations applications.
+Because customers will regularly receive smaller payloads, we expect the process of staying current to become simpler. We will adjust the frequency of update deployment as we demonstrate the ability to run the process without disruption. This process is already working effectively for our Dataverse platform and applications and is delivering the anticipated improvements in service quality. We are taking the same step forward for finance and operations applications.
+
 
 ## When will quality updates start for production environments?
-At this time, quality updates are only targeting sandboxes. We will update this space with a start date for production environments when we have more concrete data and metrics from proactive updates for sandboxes to gauge readiness for prod.
+Over the first few months of 2023, beginning Jan 15th - we will begin onboarding production environments to proactive updates and gradually increase the percentage of production environments that receive proactive updates. We will only target a production environment in an LCS project that has the sandbox environments already onboarded to receive proactive updates. Before an update, customers with the production environments being onboarded will be notified through message center or LCS banner. For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
 
 ## What is the schedule for sandbox proactive quality updates?
 For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
@@ -123,6 +128,25 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 3 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central | December 3 to December 6, 2022 |
 | Station 4 | West Europe, Central US, West US | December 4 to December 7, 2022 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled |
+
+### <a name="schedule"></a> Proactive quality update Calendar year 2023 schedule
+
+> [!NOTE]
+> This is a high level schedule for the year 2023. For a more concrete schedule see the sample below for January 10.0.30 release. The exact schedule and app version, KB article details will be updated 10 days prior to the start of a quality update train.
+
+| Quality Update train | Release cut | Train duration |
+|---|---|---|
+| 10.0.30 train | Jan 13th 2023 | Jan 23 to Feb 25 2023 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 train schedule
+
+| Station | Regions | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|---|
+| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | January 23 1 to January 26, 2023 |February 11, 2023 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | January 30 to February 2, 2023 |February 11, 2023 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central | January 31 to February 3, 2023 |February 18, 2023 |
+| Station 4 | West Europe, Central US, West US | February 6 to February 9, 2023 |February 25, 2023 |
+| Station 5 | DoD, Government Community Cloud, China | February 13 to February 16, 2023 |February 11, 2023 |TBD, 2023 |
 
 > [!IMPORTANT] 
 > Five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
