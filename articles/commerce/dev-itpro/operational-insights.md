@@ -26,7 +26,7 @@ Customers can enable Operational Insights for their environments in HQ, allowing
 
 ## Access logs in Application Insights
 
-Diagnostic events for Commerce components can also be accessed in Application Insights.
+Diagnostic events for Commerce components (Cloud scale unit and Point-of-sale) can be accessed in Application Insights.
 
 #### Commerce Scale Unit minimum version requirements
 
@@ -44,7 +44,7 @@ Commerce Scale Unit has the following minimum version requirements:
 
 To enable Commerce component diagnostic events, you must have an Application Insights account. You can use an existing account or [create a new account](/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). For data privacy reasons, we recommend that you use separate Application Insights accounts for production, sandbox, and development environments. After you have an account, you must enable the **Operational Insights** feature in Commerce headquarters.
 
-To enable diagnostic events in Application Insights in Commerce headquarters, follow these steps.
+To enable diagnostic events in Application Insights in Commerce headquarters, follow these steps - 
 
 1. In the **Feature Management** workspace, enable the **Operational Insights** feature.
 1. Go to **System administration \> Setup \> Operational Insights**.
@@ -58,7 +58,8 @@ To enable diagnostic events in Application Insights in Commerce headquarters, fo
 > [!NOTE]
 > The telemetry events in Operational Insights are subject to change. We recommend that you use Operational Insights events to perform preliminary analysis and troubleshooting on your own, and not to define dashboards or alerts. If you choose to use events beyond self-service troubleshooting, we recommend that you validate and update your queries with each Commerce Scale Unit/POS release.
 > 
-> In Commerce version 10.0.29 and later, the procedures in this section also enable streaming of POS Operational Insights events to your Application Insights account.
+> Starting Commerce version 10.0.29 and later, the procedures in this section also enable streaming of POS Operational Insights events to your Application Insights account. More details for Operational Insights for POS can be found here - 
+> https://download.microsoft.com/download/9/2/b/92be35b0-0e24-4a4d-940d-6f4db29791c0/Operational-Insights-Commerce-POS-events-queries.pdf
 >
 > To use the config file to control POS Operational Insights events, complete the following steps.
 >
