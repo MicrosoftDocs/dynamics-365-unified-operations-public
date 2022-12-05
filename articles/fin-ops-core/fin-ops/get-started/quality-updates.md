@@ -93,18 +93,6 @@ Over the first few months of 2023, beginning Jan 15th - we will begin onboarding
 ## What is the schedule for sandbox proactive quality updates?
 For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
-### Proactive quality update release: 10.0.28
-**App version: 10.0.1265.89**  
-**Corresponding latest KB article: 745340**
-
-| Station | Regions | Completed Schedule| Upcoming Sandbox Schedule
-|---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | September 15 to September 18, 2022, September 19 to September 22, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | September 25 to September 28, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | September 26 to September 29, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
-| Station 4 | North Europe, Central US, West US | September 28 to October 1, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
-
 ### <a name="schedule"></a> Proactive quality update release: 10.0.29
 **App version: 10.0.1326.70**  
 **Corresponding latest KB article: 750332**
