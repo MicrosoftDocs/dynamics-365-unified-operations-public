@@ -69,7 +69,7 @@ The **Delete existing year-end entries when re-closing the year** parameter in G
 
 ## General ledger: What can be changed to help enhance the performance of year-end processing?
 
-You can make several changes to help improve the performance of the year-end close. We recommend that you evaluate these suggested changes to determine whether they are appropriate for your organization.
+You can make several changes to help improve the performance of the year-end close. We recommend that you evaluate these suggested changes to determine whether they're appropriate for your organization.
 
 ### Optimize year-end close service
 
