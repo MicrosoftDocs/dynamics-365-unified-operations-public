@@ -315,9 +315,9 @@ The following example shows how to set up French Intrastat and create the DEB re
 3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)**.
 4. In the **Report format mapping** field, select **Intrastat report**.
 5. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
-6. In the **Worker** field, select **Jodi Christiansen**.
-7. On the **Contact** tab, in the **Telephone** field, enter **425-555-5068**.
-8. In the **Fax** field, enter **425-555-5106**.
+6. In the **Worker** field, select a record.
+7. On the **Contact** tab, in the **Telephone** field, enter the contact's telephone number
+8. In the **Fax** field, enter the contact's fax number.
 
 ### Create NGP code
 
