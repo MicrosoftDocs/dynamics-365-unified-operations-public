@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up on-premises projects in Lifecycle Services (LCS)
-description: This topic provides information about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS). 
+description: This article provides information about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS). 
 author: PeterRFriis
-ms.date: 10/02/2019
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Dynamics 365 Finance + Operations (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Price List flow, see the topic, [Buy Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
+You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Dynamics 365 Finance + Operations (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Price List flow, see the article, [Buy Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
 
  [![On-premises implementation project.](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 
@@ -50,6 +50,15 @@ The on-premises project has all the tools that you require in order to implement
 - **SharePoint online library** – Connect to an online Microsoft SharePoint library.
 
 To start your on-premises implementation, you must follow the steps in the methodology to correctly set up the project, deploy the developer and build environments, and then deploy sandbox and production environments. To help you with deployments, two environment slots are pre-allocated to the on-premises project. One slot is for a sandbox environment, and the other slot is for a production environment. These slots will be used during the Servicing flow to help guarantee that packages are tested in the sandbox environment before they are applied in the production environment.
+
+## Environment limits
+Customers and partners are limited in the number of specific environment types they can deploy in a given on-premises project.  These are outlined in the below table.
+
+|Organization type|Production environments|Sandbox environments|
+|-----------------|-----------------------|--------------------|
+| Customer | 1 | 1 or more |
+| Partner (with on-premises license) | 1 | 1 or more |
+| Partner (without on-premises license) | 0 | 1 |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

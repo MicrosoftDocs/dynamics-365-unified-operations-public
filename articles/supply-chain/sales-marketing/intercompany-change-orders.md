@@ -1,6 +1,6 @@
 ---
 title: Change intercompany orders
-description: This topic explains changing intercompany orders functionality
+description: This article explains changing intercompany orders functionality
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

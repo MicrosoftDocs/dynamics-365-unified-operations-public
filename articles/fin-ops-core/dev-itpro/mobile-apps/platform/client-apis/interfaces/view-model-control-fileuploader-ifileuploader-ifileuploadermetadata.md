@@ -1,12 +1,12 @@
 ---
 title: FileUploaderMetadata type
 description: File uploader metadata type.
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # FileUploaderMetadata type

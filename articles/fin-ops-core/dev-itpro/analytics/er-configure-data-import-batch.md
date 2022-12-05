@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Import data from manually selected files in batch mode
-description: This topic explains how to import data from manually selected files in batch mode.
-author: NickSelin
+description: This article explains how to import data from manually selected files in batch mode.
+author: kfend
 ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
 ---
 # Import data from manually selected files in batch mode
 
@@ -35,11 +25,11 @@ To use the [Electronic reporting (ER)](general-electronic-reporting.md) framewor
 
 The new ER capability that supports data import in batch mode enables this process to be configured as unattended. You can use ER configurations to perform data import by scheduling a new batch job from the ER user interface (UI).
 
-This topic explains how to complete data import from a manually selected file in batch mode. The examples use vendor transactions as business data. The steps of these examples can be completed in the **USMF** company. No coding is required.
+This article explains how to complete data import from a manually selected file in batch mode. The examples use vendor transactions as business data. The steps of these examples can be completed in the **USMF** company. No coding is required.
 
 ## Prerequisites
 
-To complete the examples in this topic, you must have the following access:
+To complete the examples in this article, you must have the following access:
 
 - One of the following roles:
 

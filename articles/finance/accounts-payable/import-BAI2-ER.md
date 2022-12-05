@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up advanced bank reconciliation import by using Electronic reporting
-description: This topic explains how to use Electronic reporting to set up the advanced bank reconciliation import process.
-author: panolte
+description: This article explains how to use Electronic reporting to set up the advanced bank reconciliation import process.
+author: angelad116
 ms.date: 03/30/2022
 ms.topic: article
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This topic explains how to set up the import functionality for your bank statements. The setup for bank statement import varies, depending on the format of your electronic bank statement. Microsoft Dynamics 365 Finance supports three bank statement formats: ISO20022, MT940 and BAI2. 
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. The setup for bank statement import varies, depending on the format of your electronic bank statement. Microsoft Dynamics 365 Finance supports three bank statement formats: ISO20022, MT940 and BAI2. 
 
 ## Set up the Electronic reporting configuration
 
@@ -38,9 +38,12 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 2. On the tile for the **Microsoft** configuration provider, select **Repositories**.
 3. Select **Global**, and then select **Open**.
 4. If a connection to the repository must be established, select the blue link in the dialog box.
-5. In the configuration list, find **Bank statement model \> Bank statement model of BAI2**.
+5. In the configuration list, find **Advanced bank reconciliation statement model \> ABR BAI2 format**.
 6. Select the **BAI2** format.
 7. On the **Versions** FastTab, select the latest version, and then select **Import**.
+
+>[!NOTE]
+>The **Bank statement model of BAI2** will be deprecated at a later date. 
 
 ## Set up the bank statement format
 

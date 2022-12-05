@@ -2,8 +2,8 @@
 # required metadata
 
 title: Revenue recognition reallocation - Scenario 2
-description: This topic goes through a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order.
-author: kweekley
+description: This article goes through a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order.
+author: bking
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic goes through a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order.
+This article goes through a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order.
 
 For this scenario, the **Post invoice corrections to Accounts receivable** option is set to **No** on the **Revenue recognition** tab of the **General ledger parameters** page (**Revenue recognition \> Setup \> General ledger parameters**).
 

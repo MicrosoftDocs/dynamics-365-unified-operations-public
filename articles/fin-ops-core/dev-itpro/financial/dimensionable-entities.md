@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make backing tables consumable as financial dimensions
-description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
+description: This article provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: RyanCCarlson2
 ms.date: 03/04/2019
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
+This article provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
 
 > [!IMPORTANT]
-> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. Views cannot be used as a source of dimension values for a DimAttribute. Although this may seem to work, it will cause MR to fall back to row-by-row processing in order to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
+> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. A physical table, and not a view must be used as a source of dimension values for a DimAttribute[BackingTable] view you will create in the following steps. Though using a view as the base data source may seem to work, financial reporting queries will fall back to row-by-row processing to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
 >
 > The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.
      
@@ -169,7 +169,7 @@ If a new Organization Model OMOperatingUnitType enumeration is added, the steps 
 1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately, and then adjust all associated labels and help text.
 1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
 1. Build and synchronize the project.
-1. Follow the steps in this topic starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
+1. Follow the steps in this article starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
 
 Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, generic code already exists to handle the delete, update, and **renamePrimaryKey** methods. Therefore, you do not need to update these methods.
 

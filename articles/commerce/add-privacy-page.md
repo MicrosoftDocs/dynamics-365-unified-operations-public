@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Add a privacy policy page
-description: This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
+description: This article describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Add a privacy policy page
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
+This article describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
 
 Privacy compliance includes organizational measures that inform site users about how their data is collected and handled. Users can then decide how they want their personal data to be handled and can take appropriate action.
 

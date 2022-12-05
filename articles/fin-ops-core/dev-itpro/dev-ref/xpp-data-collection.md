@@ -1,12 +1,12 @@
 ---
 title: X++ collection classes
-description: This topic describes collection classes in X++.
-author: RobinARH
+description: This article describes collection classes in X++.
+author: josaw1
 ms.date: 09/01/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

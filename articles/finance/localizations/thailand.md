@@ -2,7 +2,7 @@
 # required metadata
 
 title: Thailand overview
-description: This topic provides links to documentation resources for Thailand. 
+description: This article provides links to documentation resources for Thailand. 
 author: kfend
 ms.date: 03/09/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Thailand. 
+This article provides links to documentation resources for Thailand. 
 
 - [Stock card reports](apac-tha-stock-card-reports.md)
 - [Tax invoices](apac-tha-tax-invoices.md)

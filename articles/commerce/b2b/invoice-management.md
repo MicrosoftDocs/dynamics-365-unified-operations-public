@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Invoice management for B2B e-commerce websites
-description: This topic describes the invoice management capabilities of Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
-author: shajain
+description: This article describes the invoice management capabilities of Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
+author: ShalabhjainMSFT
 ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: v-chgriffin
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Invoice management for B2B e-commerce websites
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the invoice management capabilities of Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
+This article describes the invoice management capabilities of Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 
 It's a common practice for companies that handle B2B transactions to accept orders on customer credit and then send an invoice to customers after they fulfill the order. Payment terms are defined for customers, and there might be some discounts to motivate customers to pay on time or before time. To help increase the probability that payments will be received on time, B2B e-commerce websites let customers view all their invoices. Customer can easily filter the invoices to view paid, unpaid, and partially paid invoices together with the due dates.
 

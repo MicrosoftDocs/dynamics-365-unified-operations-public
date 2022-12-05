@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 # Request time off
 
 >[!Important]
->The functionality noted in this topic is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
+>The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,6 +69,10 @@ When updating an existing time off request, you can add an attachment. You can a
 2. To view your approved time off requests, select **Approved time off**. To view your pending time off requests, select **Time off requests**.
 
 ## Cancel time off requests
+
+>[!NOTE] 
+> **Cancel time off** is available when the feature **Leave request workflow experience enhancements** is enabled in the **Feature management** workspace.  
+
 
 1. In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.
 

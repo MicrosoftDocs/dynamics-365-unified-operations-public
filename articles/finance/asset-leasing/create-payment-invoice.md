@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create payment invoices
-description: This topic explains how to create monthly lease invoices. You can create invoices for individual leases, or you can use a batch process to create them for multiple leases.
+description: This article explains how to create monthly lease invoices. You can create invoices for individual leases, or you can use a batch process to create them for multiple leases.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article

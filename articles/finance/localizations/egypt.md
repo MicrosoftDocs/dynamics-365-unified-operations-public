@@ -1,36 +1,24 @@
 ---
-# required metadata
-
 title: Egypt overview
-description: This topic provides an overview of functionality specific to Egypt. 
-author: ilkond
+description: This article provides an overview of functionality specific to Egypt.
+author: mrolecki
 ms.date: 09/15/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-
 ms.search.region: Egypt
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-
 ---
 
 # Egypt overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to documentation resources for Egypt.
+This article includes information and links to documentation resources for Egypt.
 
 - [Configure registration numbers](emea-egy-reg-numbers.md)
 - [Configure invoice layout for Egypt](emea-egy-invoice-layout.md)

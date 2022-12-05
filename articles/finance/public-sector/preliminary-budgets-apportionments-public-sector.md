@@ -1,39 +1,30 @@
 ---
-# required metadata
-
 title: Preliminary budgets and apportionments in the public sector
-description: This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
-author: v-kiarnd
+description: This article covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget.
+author: velofog
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 19701
-ms.assetid: 8885478d-67f5-4db8-b97b-c0734216f8dd
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: kfend
+ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19701
+ms.assetid: 8885478d-67f5-4db8-b97b-c0734216f8dd
+ms.search.industry: Public sector
+ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 ---
 
 # Preliminary budgets and apportionments in the public sector
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
+This article covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 
-The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
+The following sections in this article describe the budgeting features that are available for the public sector.  Before you read this article, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
 
 -   Setting up budgeting and budget control for apportionments - You can define one or more budget codes for the apportionment budget type and configure budget control for apportionments.
 -   Setting up budgeting and budget control for a preliminary budget - You can define budget codes for the preliminary budget type and configure budget control for preliminary budgets.
@@ -65,7 +56,7 @@ In the **Budget funds available** section, when you select the **Use only apport
 
 In the **Documents and journals** section, when you select **Purchase requisitions**, note that the options for purchase orders and vendor invoices are automatically selected. 
 
-After you define budget codes for basic budgeting and configure budget control for apportionments, you can create budget register entries for the original budget and apportionment budget types. For more information, see "How do I create and view a preliminary budget?" later in this topic.
+After you define budget codes for basic budgeting and configure budget control for apportionments, you can create budget register entries for the original budget and apportionment budget types. For more information, see "How do I create and view a preliminary budget?" later in this article.
 
 ### Tips
 

@@ -1,54 +1,28 @@
 ---
-# required metadata
-
 title: Reimbursements in the public sector
-description: This topic answers common questions related to reimbursements in the public sector. 
-author: v-kiarnd
-ms.date: 06/20/2017
+description: This article answers common questions related to reimbursements in the public sector.
+author: JodiChristiansen
+ms.date: 11/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustBillingClassification
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27311
-ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: kfend
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27311
+ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
+ms.search.industry: Public sector
+ms.search.form: CustBillingClassification
 ---
 
 # Reimbursements in the public sector
 
 [!include [banner](../includes/banner.md)]
 
-This topic answers common questions related to reimbursements in the public sector. 
-
-## What happens if I create a separate reimbursement transaction for each billing classification?
-
-When you create a separate reimbursement transaction for each billing classification, the credit note transactions that are distributed to the same ledger account and that have the same billing classification will be combined into a single reimbursement transaction. Credit note transactions that are distributed to the same ledger account and that have different billing classifications will generate separate reimbursement transactions. For example, let’s say that you process reimbursements for three credit notes. All three credit notes are for $1000.
-
--   The first credit note has billing classification UTL, is distributed to three accounts, with 15% going to account 1110, 30% to account 2210, and 55% to account 3210.
--   The second credit note also has billing classification UTL. It is distributed 100% to account 3210.
--   The third credit note, with billing classification GEN, is distributed 100% to account 1110.
-
-If you create a separate reimbursement transaction for each billing classification, four reimbursement transactions will be created, as follows:
-
--   $150 to account 1110
--   $1000 to account 1110
--   $300 to account 2210
--   $1550 to account 3210
-
-The amounts going to account 3210 are combined, because they both use the same billing classification. The amounts going to account 1110 are not combined, because they do not use the same billing classification. If you do not create a separate reimbursement for each billing classification, the transactions for account 1110 would be combined, and only three reimbursement transactions would be created.
+This article answers common questions related to reimbursements in the public sector. 
 
 ## How do billing classifications affect reimbursements for overpayments?
 They don’t. Billing classifications are never applied to customer payments, so they aren’t used when processing reimbursements for overpayments.

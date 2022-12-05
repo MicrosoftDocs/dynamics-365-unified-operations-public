@@ -2,7 +2,7 @@
 # required metadata
 
 title: Human Resources app in Teams
-description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
+description: This article introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
@@ -118,7 +118,7 @@ The Dynamics 365 Human Resources app in Teams supports the following languages:
 | it-IT | Italian (Italy) |
 | nl-NL | Dutch (Netherlands) |
 | pt-BR | Portuguese (Brazil) |
-| tr-TR | Turkish (Turkey) |
+| tr-TR | Turkish (Türkiye) |
 | zh-CN | Chinese (Simplified) |
 
 ## Notes

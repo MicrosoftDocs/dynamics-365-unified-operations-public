@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Set up fiscal document source text (Brazil)
-description: You can attach fiscal document texts to a sales order, purchase order, or free text invoice. 
-author: sndray
+description: You can attach fiscal document texts to a sales order, purchase order, or free text invoice.
+author: AdamTrukawka
 ms.date: 06/26/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up fiscal document source text (Brazil)
 

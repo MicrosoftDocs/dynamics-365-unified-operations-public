@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Country/region picker module
-description: This topic covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce. 
-author: stuharg
+description: This article covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce.
+author: bicyclingfool
 ms.date: 04/06/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt\_pltfrm:
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Country/region picker module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce.
+This article covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce.
 
 The country/region picker module uses the [geo detection and redirection](geo-detection-redirection.md) feature in Dynamics 365 Commerce to show recommended sites to customers who request an e-commerce site URL that isn't associated with their country or region.
 

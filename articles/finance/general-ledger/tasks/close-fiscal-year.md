@@ -4,7 +4,7 @@
 title: Close the fiscal year
 description: This procedure steps through the year end close process that transfers balances to a new fiscal year. 
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -43,7 +43,7 @@ If set to **Yes**, two transactions are created. One voucher is created in the f
 
 5. Select **Yes** or **No** for the **Set fiscal year status to permanently closed** option.
 
-If set to **Yes**, the fiscal year status will be set to Permanently closed. Because a permanently closed year cannot be reopened, it would be a best practice to set this option to **No**.  
+If set to **Yes**, the fiscal year status will be set to **Permanently closed**. Because a permanently closed year can't be reopened, it would be a best practice to set this option to **No**.  
 
 6. Select **Yes** or **No** for the **Voucher number must be filled in during the year end close** option.
 

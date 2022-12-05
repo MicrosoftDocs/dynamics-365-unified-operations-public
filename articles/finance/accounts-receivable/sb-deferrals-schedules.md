@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deferral schedules in revenue and expense deferrals
-description: This topic describes deferral schedules in revenue and expense deferrals.
+description: This article describes deferral schedules in revenue and expense deferrals.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Auto-update for Commerce Scale Unit (cloud)
-description: This topic describes auto-updates for Commerce Scale Unit (cloud).
-author: AamirAllaq
-manager: tonyafehr
+description: This article describes auto-updates for Commerce Scale Unit (cloud).
+author: jashanno
 ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: retail
-ms.author: aamiral
-ms.search.validFrom: 2020-07-13 
-ms.dyn365.ops.version: 8.0 
+ms.author: jashanno
+ms.search.validFrom: 2020-07-13
+ms.dyn365.ops.version: 8
+manager: tonyafehr
 ---
 
 # Auto-update for Commerce Scale Unit (cloud)

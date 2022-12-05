@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Dispose of a fixed asset using a free text invoice
-description: This topic explains how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
+description: This article explains how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
 author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to dispose of a fixed asset using the free text invoice.
+This article explains how to dispose of a fixed asset using the free text invoice.
 
 1. In the navigation pane, go to **Modules > Accounts receivable > Invoices > All free text invoices**.
 2. Select **New**.

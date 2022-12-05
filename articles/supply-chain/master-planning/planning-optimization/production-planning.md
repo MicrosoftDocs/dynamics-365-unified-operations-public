@@ -1,8 +1,8 @@
 ---
 title: Production planning
-description: This topic describes planning for production and explains how to modify planned production orders by using Planning Optimization.
+description: This article describes planning for production and explains how to modify planned production orders by using Planning Optimization.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -17,13 +17,11 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimizations supports several production scenarios. If you're migrating from the existing, built-in master planning engine, it's important to be aware of some changed behavior.
+The following video gives a short introduction to some of the concepts discussed in this article: [Dynamics 365 Supply Chain Management: Planning Optimization enhancements](https://youtu.be/u1pcmZuZBTw).
 
-The following video gives a short introduction to some of the concepts discussed in this topic: [Dynamics 365 Supply Chain Management: Planning Optimization enhancements](https://youtu.be/u1pcmZuZBTw).
+## Turn this feature on or off for your system
 
-## Turn on this feature for your system
-
-If your system doesn't already include the features described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned production orders for Planning Optimization* feature.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Planned production orders for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Planned production orders
 
@@ -42,10 +40,6 @@ Planned production orders include the route ID that is required for production s
 - **Planned production order** – The lead time is based on the static lead time from the released product.
 - **Firmed production order** – The lead time is based on scheduling that uses route information and related resource constraints.
 
-For more information about expected feature availability, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
-
-If you depend on production functionality that isn't yet available for Planning Optimization, you can continue to use the built-in master planning engine. No exception is required.
-
 ## Delays
 
 If the lead time for required material is longer than the period between today's date and the material requirement date, the planned order for the required material and the related production order will be delayed. For planned orders, the delay (in days) is calculated based on the lead time from the released product. The delay information is then propagated through all levels of the BOM structure. Therefore, you can follow the impact of delayed raw material all the way to the customer sales order.
@@ -60,7 +54,7 @@ If you want to change information on a planned order and see the impact on the r
 2. Approve the planned order.
 3. Run master planning.
 
-When you run master planning, you should not use filters if planned production orders are included. For more information, see the [Filters](#filters) section later in this topic.
+When you run master planning, you should not use filters if planned production orders are included. For more information, see the [Filters](#filters) section later in this article.
 
 > [!NOTE]
 > If the delivery date of the planned order is changed to a later date, the demand might be pegged against a new planned order. This behavior occurs when the new supply date causes a delay for the pegged demand but, according to the lead time settings, the delay can be avoided.
@@ -71,15 +65,15 @@ You can use the **Explosion** page to analyze the demand that is required for a 
 
 ## <a name="filters"></a>Filters
 
-To ensure that Planning Optimization has the information that it needs to calculate the correct result, you must include all products that have any relation to products in the whole BOM structure of the planned order. For planning scenarios that include production, we therefore recommend that you avoid filtered master planning runs.
+To ensure that master planning has the information that it needs to calculate the correct result, you must include all products that have any relation to products in the whole BOM structure of the planned order. For planning scenarios that include production, we therefore recommend that you avoid filtered master planning runs.
 
-Although dependent child items are automatically detected and included in master planning runs when the built-in master planning engine is used, Planning Optimization doesn't currently perform this action.
+Although dependent child items are automatically detected and included in master planning runs when the deprecated master planning engine is used, Planning Optimization doesn't currently perform this action.
 
 For example, if a single bolt from the BOM structure of product A is also used to produce product B, all products in the BOM structure of products A and B must be included in the filter. Because it can be complex to ensure that all products are part of the filter, we recommend that you avoid filtered master planning runs when production orders are involved. Otherwise, master planning will provide undesired results.
 
 ### Reasons to avoid filtered master planning runs
 
-When you run filtered master planning for a product, Planning Optimization (unlike the built-in master planning engine) doesn't detect all the subproducts and raw materials in the BOM structure of that product, and therefore doesn't include them in the master planning run. Even though Planning Optimization identifies the first level in the BOM structure of the product, it doesn't load any product settings (such as the default order type or item coverage) from the database.
+When you run filtered master planning for a product, Planning Optimization (unlike the deprecated master planning engine) doesn't detect all the subproducts and raw materials in the BOM structure of that product, and therefore doesn't include them in the master planning run. Even though Planning Optimization identifies the first level in the BOM structure of the product, it doesn't load any product settings (such as the default order type or item coverage) from the database.
 
 In Planning Optimization, data for the run is loaded beforehand and applies the filters. This means that if a subproduct or raw material included in a specific product isn't part of the filter, information about it won't be captured for the run. Additionally, if the subproduct or raw material is also included in another product, then a filtered run that includes only the original product and its components would remove existing planned demand that was created for that other product.
 

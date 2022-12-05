@@ -2,9 +2,9 @@
 # required metadata
 
 title: Enable Microsoft Dataverse virtual entities
-description: This topic explains how to enable Finance and Operations apps virtual entities in Microsoft Dataverse.
+description: This article explains how to enable finance and operations apps virtual entities in Microsoft Dataverse.
 author: jaredha
-ms.date: 05/12/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: 10.0.12
 
 
 
-Because many entities that are available in Finance and Operations apps are enabled for Open Data Protocol (OData), the entities aren't available as virtual entities in Microsoft Dataverse by default. After configuration is completed for Finance and Operations apps virtual entities in Dataverse, the virtual entities can be enabled in the Dataverse environment. Administrators can then determine which entities will be exposed as virtual entities that can be used in Dataverse.
+Because many entities that are available in finance and operations apps are enabled for Open Data Protocol (OData), the entities aren't available as virtual entities in Microsoft Dataverse by default. After configuration is completed for finance and operations apps virtual entities in Dataverse, the virtual entities can be enabled in the Dataverse environment. Administrators can then determine which entities will be exposed as virtual entities that can be used in Dataverse.
 
 > [!NOTE]
-> Configuration of Finance and Operations apps virtual entities in Dataverse is a prerequisite for enabling the virtual entities. The configuration is automatically done for Finance and Operations apps environments that are linked to a Microsoft Power Platform environment. For unlinked environments, manual configuration must be completed before the virtual entities can be enabled. For step-by-step information about how to configure Finance and Operations apps virtual entities in Dataverse, see [Configure Dataverse virtual entities](admin-reference.md).
+> Configuration of finance and operations apps virtual entities in Dataverse is a prerequisite for enabling the virtual entities. The configuration is automatically done for finance and operations apps environments that are linked to a Microsoft Power Platform environment. For unlinked environments, manual configuration must be completed before the virtual entities can be enabled. For step-by-step information about how to configure finance and operations apps virtual entities in Dataverse, see [Configure Dataverse virtual entities](admin-reference.md).
 
 ## Generate virtual entities
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and select the **Environments** tab.
-2. In the **Environments** list, select the Power Platform environment associated with your Finance and Operations apps environment.
+2. In the **Environments** list, select the Power Platform environment associated with your finance and operations apps environment.
 3. In the **Details** section of the environment page, select the **Environment URL** link to open the Power Platform environment.
 4. At the top-right of the page, select the **Settings** gear icon, and select **Advanced Settings**.
 5. At the top-right of the **Settings** page, select the **Advanced find** filter icon.
-6. In the **Advanced find** page, select **Available Finance and Operations entities** in the **Look for** drop-down list. 
+6. In the **Advanced find** page, select **Available finance and operations entities** in the **Look for** drop-down list. 
 7. Enter any additional filter criteria to restrict the results to specific entities, and select **Results**.
 
     ![Catalog of entities.](../media/fovecatalog.png)
@@ -56,7 +56,15 @@ The virtual entity is generated and will appear on all the appropriate menus. Fo
 
 ## Refresh virtual entity metadata
 
-You can force a refresh of a virtual entity's metadata when you expect that the entity metadata in Finance and Operations apps has changed. To force a refresh, select the **Refresh** checkbox, and then save your change. The latest entity definition from Finance and Operations apps is synchronized to Dataverse, and the virtual entity is updated.
+You can force a refresh of a virtual entity's metadata when you expect that the entity metadata in finance and operations apps has changed. To force a refresh, select the **Refresh** checkbox, and then save your change. The latest entity definition from finance and operations apps is synchronized to Dataverse, and the virtual entity is updated.
+
+## Disable virtual entities
+
+Virtual entities for finance and operations apps are in a managed solution and can't be deleted directly from the maker portal. To disable a virtual entity and remove the virtual entity metadata from the Dataverse environment, follow these steps.
+
+1. Find and open the entity by following steps 1 through 8 in the [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities) section of this article.
+1. Clear the **Visible** checkbox.
+1. Save your change.
 
 ## Reference virtual entities
 
@@ -78,3 +86,4 @@ You can use the development tools to modify existing elements for the virtual en
 When the solution is exported, it will contain hard dependencies on the virtual entity that is generated in the **MicrosoftOperationsERPVE** solution.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

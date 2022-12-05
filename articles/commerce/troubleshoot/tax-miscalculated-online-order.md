@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Taxes on online orders are incorrectly calculated
-description: This topic provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
+description: This article provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
 author: Reza-Assadi
 ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Taxes on online orders are incorrectly calculated
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
+This article provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
 
 ## Description
 

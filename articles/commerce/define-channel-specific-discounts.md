@@ -1,38 +1,28 @@
 ---
-# required metadata
-
 title: Define channel-specific discounts
-description: Retailers often set different discounts in different channels. This topic reviews the concepts you need to know to create a discount for a specific channel. 
-author: scott-tucker
+description: Retailers often set different discounts in different channels. This article reviews the concepts you need to know to create a discount for a specific channel.
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 16401
-ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 16401
+ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
+ms.search.industry: Retail
+ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 ---
 
 # Define channel-specific discounts
 
 [!include [banner](includes/banner.md)]
 
-This topic reviews the concepts you need to know to create a discount for a specific channel.
+This article reviews the concepts you need to know to create a discount for a specific channel.
 
 ## Channel-specific discounts
 

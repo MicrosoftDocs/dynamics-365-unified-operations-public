@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create workflows overview
-description: This topic explains how to create a workflow.
+description: This article explains how to create a workflow.
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how to create a workflow.
+This article explains how to create a workflow.
 
 ## Open the workflow editor
 
@@ -59,7 +59,7 @@ Follow these steps to configure the properties of the workflow.
 
 1. Click the canvas to make sure that no workflow element is selected.
 2. Click **Properties** to open the **Properties** page for the workflow.
-3. Follow the procedures in the [Configure workflow properties](configure-workflow-properties.md) topic.
+3. Follow the procedures in the [Configure workflow properties](configure-workflow-properties.md) article.
 
 ## Configure the elements of the workflow
 

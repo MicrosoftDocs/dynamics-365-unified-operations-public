@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts receivable in the public sector overview
-description: This topic describes the Accounts receivable functionality that is available for the public sector.
+description: This article describes the Accounts receivable functionality that is available for the public sector.
 author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Accounts receivable functionality that is available for the public sector.
+This article describes the Accounts receivable functionality that is available for the public sector.
 
 ## How do I set Accounts receivable parameters for the public sector?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Run the periodic TDS settlement process
-description: This topic explains how to settle periodic Tax Deducted at Source (TDS).
+description: This article explains how to settle periodic Tax Deducted at Source (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to settle periodic Tax Deducted at Source (TDS).
+This article explains how to settle periodic Tax Deducted at Source (TDS).
 
 1. Go to **Tax \> Declarations \> Withholding tax \> Withholding tax payment**.
 

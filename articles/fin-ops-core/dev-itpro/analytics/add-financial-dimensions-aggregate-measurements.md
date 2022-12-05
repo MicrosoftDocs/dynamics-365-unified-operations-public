@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Add financial dimensions to aggregate measurements
-description: This topic explains how a power user can include financial dimensions in ready-made Power BI reports.
-author: MilindaV2 
+description: This article explains how a power user can include financial dimensions in ready-made Power BI reports.
+author: MilindaV2
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
-ms.search.region: Global 
-# ms.search.industry: 
+ms.reviewer: sericks
+ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8 for Finance and Operations
+ms.dyn365.ops.version: Platform update 8 for finance and operations
+ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
 ---
 
 # Add financial dimensions to aggregate measurements
@@ -36,7 +26,7 @@ Financial dimensions are user-defined configuration data that enables the ledger
 After financial dimension fields are included in the report, you can share the report with other users. Those other users can modify existing visuals, such as charts, by including all or some of the financial dimension fields.
 
 > [!NOTE]
-> This feature is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). Platform update 8 or later is also required. 
+> This feature is available in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017). Platform update 8 or later is also required. 
 
 ## How does this feature work?
 
@@ -175,7 +165,7 @@ Both primary accounts and offset accounts must be associated with transaction da
 
 ![Example of role-playing dimensions.](media/062a0d860fe1633a6616bca6e871f95e.png)
 
-We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
+We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this article.
 
 The second reference, OffsetDimensionCombination, is another reference to the same dimension. We have reused the DimensionCombination aggregate dimension and given it a new name. In the second case, we can join by using the **OffsetLedgerDimension** field.
 

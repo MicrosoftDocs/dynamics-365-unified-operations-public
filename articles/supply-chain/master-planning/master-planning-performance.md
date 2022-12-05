@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Improve master planning performance
-description: This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues.
+description: This article explains the various options that can help you improve the performance of master planning or troubleshoot issues.
 author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues. It includes information about parameters and settings, as well as recommended configurations and actions. Also included is a summary of all the important parameters that you should consider when you have long-running master planning jobs.
+This article explains the various options that can help you improve the performance of master planning or troubleshoot issues. It includes information about parameters and settings, as well as recommended configurations and actions. Also included is a summary of all the important parameters that you should consider when you have long-running master planning jobs.
 
-This topic is intended for system admins or IT users who have the capability to troubleshoot. It's also intended for production or supply planners because it includes information about parameters that are related to business planning requirements. 
+This article is intended for system admins or IT users who have the capability to troubleshoot. It's also intended for production or supply planners because it includes information about parameters that are related to business planning requirements. 
 
 ## Parameters related to master planning performance
 
@@ -153,9 +153,9 @@ Before the coverage step starts, there is a pre-coverage step during which items
 ## Performance checklist summary
 
 - **Number of threads** – Set to a value that is more than **0** (zero).
-- **Number of tasks in helper task bundle** – Set to a value that is more than **0** (zero). (Use the formulas that are given earlier in this topic.)
+- **Number of tasks in helper task bundle** – Set to a value that is more than **0** (zero). (Use the formulas that are given earlier in this article.)
 - **Use of cache** – Set to **Maximum** unless your system is low on memory.
-- **Number of orders in firming bundle** – Set to a value that is more than **0** (zero). (Use the formula that is given earlier in this topic.)
+- **Number of orders in firming bundle** – Set to a value that is more than **0** (zero). (Use the formula that is given earlier in this article.)
 - **Time fences** – Adjust to your business needs.
 - **Actions and futures** – Disable actions and future if you don't use them.
 - **One heavy routine at a time** – Don't run master planning together with any other heavy routine.

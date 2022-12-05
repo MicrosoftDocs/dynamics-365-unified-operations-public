@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Site picker module
-description: This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+description: This article covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt\_pltfrm:
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Site picker module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This article covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and select their preferred shopping site. To accommodate this scenario, the site picker module lets users browse across multiple sites. A site picker is also recommended when [geo detection and redirection](geo-detection-redirection.md) have been implemented for your e-commerce site, so that customers have a way to override the site preference that they indicate by using the [country/region picker](country-region-picker-module.md) module. 
 

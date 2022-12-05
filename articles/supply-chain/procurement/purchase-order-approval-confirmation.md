@@ -2,7 +2,7 @@
 # required metadata
 
 title: Approve and confirm purchase orders
-description: This topic describes the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
+description: This article describes the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
 author: GalynaFedorova
 ms.date: 04/02/2020
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
+This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 
 After a purchase order (PO) has been created, it might have to go through an approval process. After the vendor has agreed to the order, the PO is set to a status of **Confirmed**.
 
@@ -57,7 +57,7 @@ When change management is enabled, POs move through six approval statuses, from 
 ## Confirming purchase orders
 POs that have an approval status of **Approved** can go through additional steps before they are confirmed. For example, you might have to send a purchase inquiry to the vendor to inquire about prices, discounts, or delivery dates. In this case, you can set the PO to the **In external review** status by using the **Purchase inquiry** action.
 
-Vendors that are set up to use the Vendor portal can review orders on the portal, and approve or reject them. During this review process, the PO has a status of **In external review**. The Vendor portal can be configured so that a confirmation from the vendor automatically confirms the order in Supply Chain Management. Alternatively, you can manually confirm a PO after you receive confirmation from the vendor. If a vendor rejects a PO, the rejection is received together with the reason for the rejection and suggestions for changes. In this case, the status of the PO remains **In external review**.
+Vendors that are set up to use the vendor collaboration module can review orders on the portal, and approve or reject them. During this review process, the PO has a status of **In external review**. The vendor collaboration module can be configured so that a confirmation from the vendor automatically confirms the order in Supply Chain Management. Alternatively, you can manually confirm a PO after you receive confirmation from the vendor. If a vendor rejects a PO, the rejection is received together with the reason for the rejection and suggestions for changes. In this case, the status of the PO remains **In external review**.
 
 There is also an option to generate a pro-forma confirmation for an order before the actual confirmation has been processed. This option just creates a report that you can share with the vendor. It doesn't create any journal information.
 

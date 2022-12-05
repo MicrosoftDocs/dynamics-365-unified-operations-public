@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Audit invoices and key data in accounts payable
-description: This topic shows how to audit invoices and key data in accounts payable. 
+description: This article shows how to audit invoices and key data in accounts payable. 
 author: kweekley
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment. Before you begin, make sure that the Invoice matching configuration key is selected. 
 
-In the **Accounts payable parameters** page, ensure that the Enable invoice matching validation option is selected, the **Post invoice with discrepancies** field is set to **Require approval**, and the **Line matching policy** field is set to **Three-way matching**.
+In the **Accounts payable parameters** page, ensure that the **Enable invoice matching validation** option is selected, the **Post invoice with discrepancies** field is set to **Require approval**, and the **Line matching policy** field is set to **Three-way matching**.
 
 This procedure uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps.
 

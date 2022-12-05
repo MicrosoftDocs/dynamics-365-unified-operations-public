@@ -1,16 +1,16 @@
 ---
 title: Task recorder resources
-description: This topic describes how to use Task recorder to record business processes.
+description: This article describes how to use Task recorder to record business processes.
 author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
-ms.search.form: SysTaskRecorderPane 
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SysTaskRecorderPane
 ---
 
 # Task recorder resources
@@ -20,19 +20,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic describes how to use Task recorder to record business processes.
+This article describes how to use Task recorder to record business processes.
 
 ## Overview
 
 ### Task recorder
 
-Task recorder for Finance and Operations apps is a utility that lets users record business processes for several different use cases. Here are some examples: 
+Task recorder for finance and operations apps is a utility that lets users record business processes for several different use cases. Here are some examples: 
 - Step-by-step guided tours of a specific business process in the application itself 
 - Documentation of a business process as a Microsoft Word document that can optionally include screenshots
 - Regression tests for a business process
 - Automatic playback of a business process in the application
 
-Task recorder for Finance and Operations apps boasts high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Task recorder is also integrated with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle Services (LCS), so that users can continue to organize their recordings. However, users can no longer produce business process diagrams from recordings.
+Task recorder for finance and operations apps boasts high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Task recorder is also integrated with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle Services (LCS), so that users can continue to organize their recordings. However, users can no longer produce business process diagrams from recordings.
 
 Task recorder can automatically generate application regression tests from business process recordings and play back previously recorded processes. These features also include test-specific gestures that let users take full advantage of Task recorder.
 
@@ -42,10 +42,10 @@ Task recorder can record user actions in the client with exact fidelity, because
 
 ### Basic configuration
 
-Task recorder is included with every Finance and Operations app, and lets users begin to record business processes immediately after they open the client for the first time.
+Task recorder is included with every finance and operations app, and lets users begin to record business processes immediately after they open the client for the first time.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available at [Finance and Operations application documentation](../../fin-ops/index.md) for both Commerce and Human Resources.
+> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available at [finance and operations application documentation](../../fin-ops/index.md) for both Commerce and Human Resources.
 
 ## Start a new recording
 The following steps show how to use Task recorder to start a new recording.
@@ -436,7 +436,7 @@ After a business process recording has been completed by using Task recorder, a 
 
 ### Import a recorded test
 
-1.  Open Visual Studio by using the Finance and Operations development tools.
+1.  Open Visual Studio by using the finance and operations development tools.
 2.  Go to **Dynamics 365 &gt; Addins &gt; Import task recording**.
 3.  In the **Import task recording** menu, use the **Browse** button to locate a previously downloaded recording file.
 4.  Optionally, choose to have the generated test code be added to the startup project. This requires that a solution containing a project is set as the startup project. This will place the generated X++ test into the same model as the project.
@@ -482,3 +482,4 @@ After a business process recording has been completed by using Task recorder, a 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

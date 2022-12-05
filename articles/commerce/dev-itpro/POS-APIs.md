@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Point of sale (POS) APIs
-description: This topic contains a list of available POS APIs and how to access them.
-author: mugunthanm 
+description: This article contains a list of available POS APIs and how to access them.
+author: josaw1
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 # Point of sale (POS) APIs
 [!include [banner](../includes/banner.md)]

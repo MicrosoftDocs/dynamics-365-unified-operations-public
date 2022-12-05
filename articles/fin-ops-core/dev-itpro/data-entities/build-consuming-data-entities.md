@@ -87,7 +87,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 
 ### Create a new project
 
-1. In Visual Studio click **File** &gt; **New** &gt; **Project**, and then select **Finance and Operations Project**.
+1. In Visual Studio click **File** &gt; **New** &gt; **Project**, and then select **finance and operations Project**.
 2. Right-click the project, click **Properties**, and verify that the project is in the Fleet Management model. If it isn't, set the **Model** property to **Fleet Management**.
 
 ### Add a new data entity to your project
@@ -445,3 +445,4 @@ If an entity has container fields and these fields need to be exported, the enti
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

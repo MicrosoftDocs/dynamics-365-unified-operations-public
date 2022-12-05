@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Configure consolidated invoice parameters and setup for accounts payable
-description: This topic explains how to set up and configure consolidated invoices. 
-author: ShylaThompson
+description: This article explains how to set up and configure consolidated invoices.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendParameters, PaymDay, PaymTerm   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Japan
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: VendParameters, PaymDay, PaymTerm
 ---
 # Configure consolidated invoice parameters and setup for accounts payable
 

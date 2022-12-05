@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate Affordable Care Act reports in Benefits management
-description: This topic describes how Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
+description: This article describes how Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -28,9 +28,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Generate ACA reports in Benefits management
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

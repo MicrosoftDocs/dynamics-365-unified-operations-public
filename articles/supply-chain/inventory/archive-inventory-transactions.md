@@ -2,7 +2,7 @@
 # required metadata
 
 title: Archive inventory transactions
-description: This topic describes how to archive inventory transaction data to help improve system performance.
+description: This article describes how to archive inventory transaction data to help improve system performance.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: yufeihuang
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This topic describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
+Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
 
 > [!NOTE]
 > Only financially updated inventory transactions can be archived in a selected closed ledger period. To be archived, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
@@ -38,7 +38,7 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 
 ## Turn on the feature in your system
 
-If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
+If your system doesn't already include the features that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
 
 ## Things to consider before you archive inventory transactions
 

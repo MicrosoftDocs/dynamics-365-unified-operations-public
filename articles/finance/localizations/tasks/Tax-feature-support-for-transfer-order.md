@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax feature support for transfer orders
-description: This topic explains the new tax feature support for transfer orders by using the tax calculation service.
+description: This article explains the new tax feature support for transfer orders by using the tax calculation service.
 author: Kai-Cloud
 ms.date: 10/13/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about tax calculation and posting integration in transfer orders. This functionality lets you set up tax calculation and posting in transfer orders for stock transfers. Under European Union (EU) value-added tax (VAT) regulations, stock transfers are considered intra-community supply and intra-community acquisitions.
+This article provides information about tax calculation and posting integration in transfer orders. This functionality lets you set up tax calculation and posting in transfer orders for stock transfers. Under European Union (EU) value-added tax (VAT) regulations, stock transfers are considered intra-community supply and intra-community acquisitions.
 
 To configure and use this functionality, you must complete three main steps:
 
@@ -68,7 +68,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         7. Select **Save**.
         
         Create the tax code **BE-RC+21**.
-        1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
+        1. Select **Add**, enter **BE-RC+21** in the **Tax code** field.
         2. Select **By Net Amount** in the **Tax component** field.
         3. Select **Save**.
         4. Select **Add** in the **Rate** table.
@@ -116,7 +116,10 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 6. Define the applicability of the item tax group.
 
     1. Select **Manage columns**, and then select columns that should be used to build the applicability table.
-    2. Add applicability rules. Don't leave the **Item Tax group** field blank.
+    2. Add applicability rules.
+        
+       > [!NOTE]
+       > If the item sales tax group defaulted on your taxable document lines is already correct, leave this matrix blank. 
         
         Add a new rule for transfer order shipment and receipt.
         1. On the **Applicability rules** page, select **Add**.

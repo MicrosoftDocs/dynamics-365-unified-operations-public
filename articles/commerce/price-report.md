@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Retail price reports
-description: This topic provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products. 
-author: shajain
+description: This article provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products.
+author: ShalabhjainMSFT
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 16181
-ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-
+ms.custom: 16181
+ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 # Retail price reports

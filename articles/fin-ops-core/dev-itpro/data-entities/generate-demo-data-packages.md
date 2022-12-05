@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate demo data by using data packages
-description: This topic explains how to use demo data packages to generate data for your system.
+description: This article explains how to use demo data packages to generate data for your system.
 author: panolte
 ms.date: 04/28/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
+In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -90,14 +90,14 @@ These names of these data packages consist of **300-Supply chain** followed by t
 
 The demo data packages will be released through LCS and will be specific to a release. Note that the contents of a given package are subject to change as we add more demo scenarios and tune the packages. Additional packages will also be released as we add more module areas and industry-specific scenarios.
 
-Package names will include a release identifier. For example, for Finance and Operations 7.3, **Demo data-7.3-** will precede the package name that uses the previously described naming conventions. For example, the full name of the Financials package for the HQUS legal entity for Finance and Operations 7.3 will be **Demo data-7.3-200-Financials-HQUS.zip**.
+Package names will include a release identifier. For example, for finance and operations 7.3, **Demo data-7.3-** will precede the package name that uses the previously described naming conventions. For example, the full name of the Financials package for the HQUS legal entity for finance and operations 7.3 will be **Demo data-7.3-200-Financials-HQUS.zip**.
 
 ## Before you load the packages
 
 Before you load the data packages, you must manually follow these steps.
 
 1. If you want to sign in as a specific user, change the user's email address to the sign-in address that you want to use. You can make this change in the **User information** data entity spreadsheet or, after you load data, on the **Users** page (**System administration** &gt; **Users**).
-2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
+2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this article.
 3. If you aren't using the en-us locale, you may need to alter the source data format to match the format the packages were built on. 
 Once you've loaded a data entity, click into the source data format column which should be specified as value = Excel. From the next page, again select Excel. From within the source data formats page, the bottom fast-tab will be regional settings. Change the language locale to en-us if it isn't specified as en-us. After loading packages, you can change it back to its original non en-us value. 
 
@@ -249,3 +249,4 @@ If you have a mixture of transactions, some of which should be processed whereas
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

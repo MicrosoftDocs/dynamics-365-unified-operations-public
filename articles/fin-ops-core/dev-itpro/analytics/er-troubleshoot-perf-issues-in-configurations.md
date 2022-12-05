@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Troubleshooting performance issues in ER configurations
-description: This topic explains how to find and fix performance issues in Electronic reporting (ER) configurations.
-author: NickSelin
+description: This article explains how to find and fix performance issues in Electronic reporting (ER) configurations.
+author: kfend
 ms.date: 05/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERFormatMappingRunJobTable, ERParameters, ERSolutionTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERFormatMappingRunJobTable, ERParameters, ERSolutionTable
 ---
 
 # Troubleshooting performance issues in ER configurations
 
-This topic explains how to find and solve performance issues in [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration).
+This article explains how to find and solve performance issues in [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration).
 
 Typically, performance investigation consists of several steps.
 

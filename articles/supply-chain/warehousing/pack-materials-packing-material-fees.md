@@ -2,7 +2,7 @@
 # required metadata
 
 title: Packing materials and fees
-description: This topic provides information about packing material fees that are paid to recycling companies at specific intervals.
+description: This article provides information about packing material fees that are paid to recycling companies at specific intervals.
 author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: article

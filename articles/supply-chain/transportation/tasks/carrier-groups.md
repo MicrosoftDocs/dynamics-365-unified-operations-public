@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Carrier groups
-description: This topic describes how to set up data for carrier groups.
+description: This article describes how to set up data for carrier groups.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process 

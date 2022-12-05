@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a fixed asset
-description: This topic explains how to create a new fixed asset record from the Fixed asset list page.
+description: This article explains how to create a new fixed asset record from the Fixed asset list page.
 author: moaamer
 ms.date: 07/01/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a new fixed asset record from the **Fixed asset** list page.
+This article explains how to create a new fixed asset record from the **Fixed asset** list page.
 
 The system assigns the asset number, based on the number sequence that is assigned to the fixed asset group. If you use the fixed asset template to import assets via the Microsoft Excel add-in, or if you use another import job, the system automatically creates fixed asset records and increments the asset number.
 

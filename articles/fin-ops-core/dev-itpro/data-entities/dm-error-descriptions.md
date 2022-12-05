@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management error descriptions
-description: This topic describes the error messages that you might encounter in data management.
+description: This article describes the error messages that you might encounter in data management.
 author: peakerbl
 ms.date: 01/08/2020
 ms.topic: article
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Platform update 20
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic documents the scenarios when a specific error will be seen. These scenarios aren't a complete list of errors and scenarios, however this list will be continuously updated so keep checking back for updates. Any feedback on this page with regards to specific errors that should be covered are welcome.
+This article documents the scenarios when a specific error will be seen. These scenarios aren't a complete list of errors and scenarios, however this list will be continuously updated so keep checking back for updates. Any feedback on this page with regards to specific errors that should be covered are welcome.
 
-This topic describes the error messages that you might encounter in data management.
+This article describes the error messages that you might encounter in data management.
 
 ## Import to target failed due to an update conflict as more than one process is trying to update the same record at the same time
 

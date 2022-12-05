@@ -8,18 +8,18 @@ ms.author: ramasri
 
 ###  <a name="138"></a>All products (msdyn_globalproducts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTNAME | > | msdyn_productname |
 PRODUCTNUMBER | > | msdyn_productnumber |
 
 ###  <a name="119"></a>Asset management asset lifecycle models (msdyn_assetlifecyclemodels)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ACTIVELIFECYCLESTATEID | = | msdyn_activelifecyclestate.msdyn_assetlifecyclestate_id |
 INBOUNDLIFECYCLESTATEID | = | msdyn_inboundlifecyclestate.msdyn_assetlifecyclestate_id |
@@ -32,9 +32,9 @@ RECEIVEDLIFECYCLESTATEID | = | msdyn_receivedlifecyclestate.msdyn_assetlifecycle
 
 ###  <a name="120"></a>Asset management asset lifecycle states (msdyn_assetlifecyclestates)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DELETEOPENCALENDARLINES | ><<br>`yes` : `True`<br>`no` : `False` | msdyn_deleteopencalendarlines |
 LIFECYCLESTATEID | = | msdyn_assetlifecyclestate_id |
@@ -44,9 +44,9 @@ NAME | = | msdyn_name |
 
 ###  <a name="124"></a>Asset management asset types (msdyn_customerassetcategories)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LIFECYCLEMODELID | = | msdyn_lifecyclemodel.msdyn_assetlifecyclemodel_id |
 MAINTENANCEASSETTYPEID | = | msdyn_maintenanceassettypeid |
@@ -55,9 +55,9 @@ CALCULATEKPITOTAL | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_calculatekpit
 
 ###  <a name="125"></a>Asset management assets (msdyn_customerassets)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ACQUISITIONCOST | = | msdyn_acquisitioncost |
 ACQUISITIONDATE | = | msdyn_acquisitiondate |
@@ -86,18 +86,18 @@ PRODUCTID | = | msdyn_manufacturer.msdyn_manufacturer_id |
 
 ###  <a name="134"></a>Asset management functional location lifecycle models (msdyn_functionallocationlifecyclemodels)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LIFECYCLEMODELID | = | msdyn_functionallocationlifecyclemodel_id |
 NAME | = | msdyn_name |
 
 ###  <a name="135"></a>Asset management functional location lifecycle states (msdyn_functionallocationlifecyclestates)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ALLOWDELETELOCATION | ><<br>`yes` : `True`<br>`no` : `False` | msdyn_allowdeletelocation |
 ALLOWNEWSUBLOCATIONS | ><<br>`yes` : `True`<br>`no` : `False` | msdyn_allownewsublocations |
@@ -111,9 +111,9 @@ MAINTENANCEASSETLIFECYCLESTATEID | = | msdyn_assetlifecyclestate.msdyn_assetlife
 
 ###  <a name="137"></a>Asset management functional location types (msdyn_functionallocationtypes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ALLOWMULTIPLEINSTALLEDASSETS | ><<br>`yes` : `True`<br>`no` : `False` | msdyn_allowmultipleinstalledassets |
 FUNCTIONALLOCATIONTYPEID | = | msdyn_functionallocationtype_id |
@@ -124,9 +124,9 @@ MAINTENANCEASSETTYPEID | = | msdyn_maintenanceassettype.msdyn_maintenanceassetty
 
 ###  <a name="136"></a>Asset management functional locations (msdyn_functionallocations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 FUNCTIONALLOCATIONID | = | msdyn_functionallocation_id |
 INVENTORYLOCATIONID | = | msdyn_inventorylocationid |
@@ -139,18 +139,18 @@ FUNCTIONALLOCATIONTYPEID | = | msdyn_functionallocationtype.msdyn_functionalloca
 
 ###  <a name="153"></a>Asset management manufacturers (msdyn_manufacturers)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DESCRIPTION | = | msdyn_description |
 PRODUCTID | = | msdyn_manufacturer_id |
 
 ###  <a name="154"></a>Asset management models (msdyn_models)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DESCRIPTION | = | msdyn_description |
 MODELID | = | msdyn_model_id |
@@ -159,22 +159,22 @@ MAINTENANCEASSETTYPEID | = | msdyn_maintenanceassettype.msdyn_maintenanceassetty
 
 ###  <a name="209"></a>Asset management warranty (msdyn_warranties)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 WARRANTYID | = | msdyn_warranty_id |
 
 ###  <a name="115"></a>CDS Contacts V2 (contacts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: (AssociatedContactType = 1)
 
 Reversed source filter: msdyn_contactforvendor eq true and msdyn_sellable eq false and msdyn_contactpersonid ne null
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CONTACTPERSONPARTYNUMBER | = | msdyn_partyid.msdyn_partynumber |
 ASSOCIATEDCONTACTTYPE | << | none | Vendor
@@ -189,9 +189,9 @@ CONTACTPERSONID | = | msdyn_contactpersonid |
 
 ###  <a name="123"></a>CDS Exchange Rates (msdyn_currencyexchangerates)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 EXCHANGERATETYPENAME | > | msdyn_currencyexchangeratepair.msdyn_currencyexchangeratetypeid.msdyn_name |
 FROMCURRENCYCODE | > | msdyn_currencyexchangeratepair.msdyn_fromtransactioncurrencyid.isocurrencycode |
@@ -202,9 +202,9 @@ VALIDTO | > | msdyn_validto |
 
 ###  <a name="220"></a>CDS Parties (msdyn_parties)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PARTYNUMBER | = | msdyn_partynumber |
 PARTYTYPE | ><<br>`person` : `192350001`<br>`organization` : `192350002`<br>`legalEntity` : `192350003`<br>`team` : `192350004`<br>`operatingUnit` : `192350005`<br>`none` : `192350000` | msdyn_partytype |
@@ -239,9 +239,9 @@ PERSONBIRTHMONTH | ><<br>`none` : `0`<br>`january` : `1`<br>`february` : `2`<br>
 
 ###  <a name="233"></a>CDS Party postal address locations (msdyn_partypostaladdresses)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ISPRIMARY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isprimary |
 LOCATIONID | = | msdyn_postaladdresscollectionid.msdyn_location |
@@ -251,9 +251,9 @@ ISLOCATIONOWNER | >><br>`no` : `False`<br>`yes` : `True` | msdyn_islocationowner
 
 ###  <a name="145"></a>CDS inventory on-hand entries (msdyn_inventoryonhandentries)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 REQUESTID | = | msdyn_request.msdyn_requestid |
 INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid |
@@ -276,9 +276,9 @@ UNAVAILABLEONHANDQUANTITY | > | msdyn_unavailableonhandquantity |
 
 ###  <a name="147"></a>CDS inventory on-hand requests (msdyn_inventoryonhandrequests)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 REQUESTID | = | msdyn_requestid |
 PRODUCTNUMBER | < | msdyn_product.msdyn_productnumber |
@@ -291,9 +291,9 @@ LINECREATIONSEQUENCENUMBER | < | msdyn_linecreationsequencenumber |
 
 ###  <a name="235"></a>CDS postal address history V2 (msdyn_postaladdresses)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LOCATIONID | = | msdyn_postaladdresscollectionid.msdyn_location |
 VALIDFROM | = | msdyn_validfrom |
@@ -312,18 +312,18 @@ POSTBOX | = | msdyn_postbox |
 
 ###  <a name="234"></a>CDS postal address locations (msdyn_postaladdresscollections)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DESCRIPTION | = | msdyn_description |
 LOCATIONID | = | msdyn_location |
 
 ###  <a name="181"></a>CDS purchase order line entity (msdyn_purchaseorderproducts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 REQUESTEDDELIVERYDATE | = | msdyn_dateexpected |
 LINEDESCRIPTION | = | msdyn_description |
@@ -366,9 +366,9 @@ DELIVERYADDRESSNAME | > | msdyn_deliveryaddressname |
 
 ###  <a name="182"></a>CDS purchase order line soft deleted entity (msdyn_purchaseorderproducts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LINENUMBER | > | msdyn_lineorder |
 PURCHASEORDERNUMBER | > | msdyn_purchaseorder.msdyn_name |
@@ -376,9 +376,9 @@ ISDELETED | >><br>`yes` : `true`<br>`no` : `false` | msdyn_issoftdeletedinscm |
 
 ###  <a name="213"></a>CDS released distinct products (products)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTNUMBER | > | msdyn_productnumber |
 PRODUCTNAME | > | name |
@@ -400,17 +400,17 @@ FIELDSERVICEPRODUCTTYPE | >><br>`Inventory` : `690970000`<br>`NonInventory` : `6
 
 ###  <a name="217"></a>CDS sales order headers (salesorders)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Reversed source filter: msdyn_ordertype eq 192350000
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 SALESORDERNUMBER | = | msdyn_salesordernumber |
 ORDERINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
 CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
 DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
 DELIVERYADDRESSSTREET | = | shipto_line1 |
@@ -477,13 +477,13 @@ CURRENCYCODE | > | msdyn_isocurrencycode |
 
 ###  <a name="216"></a>CDS sales order lines (salesorderdetails)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
 DELIVERYADDRESSSTATEID | = | shipto_stateorprovince |
 DELIVERYADDRESSSTREET | = | shipto_line1 |
@@ -540,18 +540,18 @@ DELIVERYTERMSID | = | msdyn_deliveryterms.msdyn_termscode |
 
 ###  <a name="215"></a>CDS sales quotation header (quotes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Reversed source filter: msdyn_ordertype eq 192350000 and statecode eq 0
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 SALESQUOTATIONNUMBER | = | msdyn_quotenumber |
 REQUESTINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
 CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
 CUSTOMERSREFERENCE | = | msdyn_customersreference |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
 DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
 DELIVERYADDRESSSTREET | = | shipto_line1 |
@@ -615,9 +615,9 @@ OPERATINGUNITPARTYNUMBER | = | msdyn_operatingunit.msdyn_partynumber |
 
 ###  <a name="214"></a>CDS sales quotation lines (quotedetails)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ALLOWEDOVERDELIVERYPERCENTAGE | = | msdyn_allowedoverdeliverypercentage |
 ALLOWEDUNDERDELIVERYPERCENTAGE | = | msdyn_allowedunderdeliverypercentage |
@@ -625,7 +625,7 @@ SALESQUOTATIONNUMBER | = | quoteid.msdyn_quotenumber |
 LINECREATIONSEQUENCENUMBER | = | sequencenumber |
 CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSCOUNTYID | = | msdyn_deliveryaddresscountyid |
 DELIVERYADDRESSDESCRIPTION | = | msdyn_deliveryaddressdescription |
 DELIVERYADDRESSDISTRICTNAME | = | msdyn_deliveryaddressdistrictname |
@@ -673,9 +673,9 @@ none | >> | ispriceoverridden | true
 
 ###  <a name="121"></a>Chart of accounts (msdyn_chartofaccountses)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DESCRIPTION | = | msdyn_description |
 MAINACCOUNTMASK | = | msdyn_mainaccountmask |
@@ -683,26 +683,26 @@ CHARTOFACCOUNTS | = | msdyn_name |
 
 ###  <a name="170"></a>Colors (msdyn_productcolors)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 COLORID | > | msdyn_productcolorname |
 
 ###  <a name="105"></a>Compensation job function (cdm_jobfunctions)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 JOBFUNCTIONID | = | cdm_name |
 DESCRIPTION | = | cdm_description |
 
 ###  <a name="108"></a>Compensation job type (cdm_jobtypes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 JOBTYPEID | = | cdm_name |
 DESCRIPTION | = | cdm_description |
@@ -710,34 +710,34 @@ EXEMPTSTATUS | ><<br>`exempt` : `754400000`<br>`nonexempt` : `754400001`<br>`doe
 
 ###  <a name="222"></a>Complimentary closings (msdyn_complimentaryclosings)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CLOSINGPHRASE | = | msdyn_closingphrase |
 
 ###  <a name="171"></a>Configurations (msdyn_productconfigurations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CONFIGURATIONID | > | msdyn_productconfiguration |
 
 ###  <a name="223"></a>Contact person titles (msdyn_salescontactpersontitles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 JOBTITLE | = | msdyn_jobtitle |
 JOBTITLEALIAS | = | msdyn_jobtitlealias |
 
 ###  <a name="221"></a>Contacts V2 (msdyn_contactforparties)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CONTACTPERSONID | = | msdyn_contactforpartynumber |
 CONTACTPERSONPARTYNUMBER | = | msdyn_contactpartyid.msdyn_partynumber |
@@ -774,11 +774,11 @@ SPOUSENAME | = | msdyn_spousename |
 
 ###  <a name="218"></a>Currencies (transactioncurrencies)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((CURRENCYCODE != "999"))
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CURRENCYCODE | = | isocurrencycode |
 NAME | = | currencyname |
@@ -787,13 +787,13 @@ none | >> | exchangerate | 1.0000000000
 
 ###  <a name="230"></a>Customer Attachments (annotations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((TypeId == "Note") || (TypeId == "URL"))
 
 Reversed source filter: (objecttypecode eq 'account' or objecttypecode eq 'contact') and msdyn_relatedentityid ne null
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DOCUMENTID | = | msdyn_notesid |
 NAME | = | subject |
@@ -805,9 +805,9 @@ RESTRICTION | ><<br>`internal` : `0`<br>`external` : `1` | msdyn_restriction |
 
 ###  <a name="126"></a>Customer groups (msdyn_customergroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CUSTOMERGROUPID | = | msdyn_groupid |
 DESCRIPTION | = | msdyn_description |
@@ -817,9 +817,9 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn_clearingperiodpaymenttermname.msdyn_na
 
 ###  <a name="146"></a>Customer hierarchies (msdyn_customerhierarchies)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CUSTOMERHIERARCHYID | = | msdyn_customerhierarchynumber |
 NAME | = | msdyn_name |
@@ -828,9 +828,9 @@ PURPOSE | ><<br>`B2BOrganization` : `192350000` | msdyn_purpose |
 
 ###  <a name="163"></a>Customer hierarchy nodes (msdyn_customerhierarchynodes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CUSTOMERHIERARCHYID | = | msdyn_customerhierarchynumber.msdyn_customerhierarchynumber |
 NODEPARTYNUMBER | = | msdyn_nodepartynumber.msdyn_partynumber |
@@ -839,9 +839,9 @@ ROLE | ><<br>`Admin` : `192350000`<br>`User` : `192350001` | msdyn_role |
 
 ###  <a name="127"></a>Customer payment method (msdyn_customerpaymentmethods)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 ACCOUNTTYPE | ><<br>`ledger` : `806380000`<br>`cust` : `806380001`<br>`vend` : `806380002`<br>`project` : `806380003`<br>`fixedassets` : `806380004`<br>`bank` : `806380005` | msdyn_accounttype |
@@ -861,13 +861,13 @@ DIRECTDEBIT | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_directdebit |
 
 ###  <a name="101"></a>Customers V3 (accounts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((PartyType == "Organization"))
 
 Reversed source filter: customertypecode eq 3
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CUSTOMERACCOUNT | = | accountnumber |
 CREDITLIMIT | = | creditlimit |
@@ -897,13 +897,13 @@ SALESTAXGROUP | = | msdyn_salestaxgroup.msdyn_name |
 
 ###  <a name="116"></a>Customers V3 (contacts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((PartyType == "Person"))
 
 Reversed source filter: msdyn_sellable eq true  and msdyn_contactpersonid ne null
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 none | >> | msdyn_sellable | True
 PARTYTYPE | << | none | Person
@@ -924,18 +924,18 @@ CONTACTPERSONID | = | msdyn_primarycontact.msdyn_contactforpartynumber |
 
 ###  <a name="224"></a>Decision making roles (msdyn_decisionmakingroles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ROLEDESCRIPTION | = | msdyn_roledescription |
 ROLENAME | = | msdyn_rolename |
 
 ###  <a name="172"></a>Default order settings (msdyn_productdefaultordersettings)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 INVENTWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier |
 INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid |
@@ -990,18 +990,18 @@ ISSALESWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_issal
 
 ###  <a name="225"></a>Employment job functions (msdyn_employmentjobfunctions)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 FUNCTIONDESCRIPTION | = | msdyn_functiondescription |
 FUNCTIONNAME | = | msdyn_functionname |
 
 ###  <a name="104"></a>Employment per company (cdm_employments)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 EMPLOYMENTENDDATE | = | cdm_employmentenddate |
 PERSONNELNUMBER | = | cdm_workerid.cdm_workernumber |
@@ -1010,18 +1010,18 @@ WORKERTYPE | >><br>`employee` : `754400000`<br>`contractor` : `754400001`<br>`bo
 
 ###  <a name="103"></a>Ethnic origins (cdm_ethnicorigins)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ETHNICORIGINID | = | cdm_name |
 DESCRIPTION | = | cdm_description |
 
 ###  <a name="122"></a>Exchange rate currency pair (msdyn_currencyexchangeratepairs)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 EXCHANGERATEDISPLAYFACTOR | ><<br>`one` : `192350000`<br>`ten` : `192350001`<br>`hundred` : `192350002`<br>`thousand` : `192350003`<br>`tenThousand` : `192350004` | msdyn_displayfactor |
 EXCHANGERATETYPENAME | = | msdyn_currencyexchangeratetypeid.msdyn_name |
@@ -1030,18 +1030,18 @@ TOCURRENCYCODE | = | msdyn_totransactioncurrencyid.isocurrencycode |
 
 ###  <a name="129"></a>Exchange rate type (msdyn_exchangeratetypes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="130"></a>Financial dimension format (msdyn_financialdimensionformats)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DIMENSIONFORMATNAME | = | msdyn_dimensionformatname |
 DIMENSIONFORMATTYPE | ><<br>`dataEntityDefaultDimensionFormat` : `192350000`<br>`dataEntityLedgerDimensionFormat` : `192350001`<br>`dataEntityBudgetDimensionFormat` : `192350002`<br>`dataEntityBudgetPlanningDimensionFormat` : `192350003` | msdyn_dimensionformattype |
@@ -1050,9 +1050,9 @@ ISACTIVE | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isactive |
 
 ###  <a name="128"></a>Financial dimensions (msdyn_dimensionattributes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DIMENSIONNAME | = | msdyn_dimensionname |
 COPYVALUESONCREATE | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_copyvaluesoncreate |
@@ -1063,18 +1063,18 @@ DimensionValueMask | = | msdyn_dimensionvaluemask |
 
 ###  <a name="132"></a>Fiscal calendar integration entity (msdyn_fiscalcalendars)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CALENDARID | = | msdyn_calendar |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="131"></a>Fiscal calendar period (msdyn_fiscalcalendarperiods)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 COMMENTS | = | msdyn_comments |
 ENDDATE | = | msdyn_enddate |
@@ -1090,9 +1090,9 @@ CALENDAR | = | msdyn_fiscalcalendaryear.msdyn_fiscalcalendarname |
 
 ###  <a name="133"></a>Fiscal calendar year integration entity (msdyn_fiscalcalendaryears)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 FISCALCALENDAR_CALENDARID | = | msdyn_fiscalcalendarname |
 NAME | = | msdyn_name |
@@ -1102,9 +1102,9 @@ FISCALCALENDAR_CALENDARID | = | msdyn_calendar.msdyn_calendar |
 
 ###  <a name="203"></a>Inventory aisle (msdyn_warehouseaisles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 AISLEID | = | msdyn_aisleid |
 AISLENUMBER | = | msdyn_aislenumber |
@@ -1115,18 +1115,18 @@ ISSORTORDERCODEASSIGNEDDESCENDING | ><<br>`yes` : `True`<br>`no` : `False` | msd
 
 ###  <a name="196"></a>Item sales tax group (msdyn_taxitemgroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 TAXITEMGROUP | = | msdyn_name |
 NAME | = | msdyn_description |
 
 ###  <a name="107"></a>Jobs (cdm_jobs)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 JOBID | = | cdm_name |
 MAXIMUMNUMBEROFPOSITIONS | = | cdm_maximumnumberofpositions |
@@ -1141,18 +1141,18 @@ FULLTIMEEQUIVALENT | = | cdm_defaultfulltimeequivalent |
 
 ###  <a name="109"></a>Language codes (cdm_languages)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LANGUAGECODEID | = | cdm_name |
 DESCRIPTION | = | cdm_description |
 
 ###  <a name="148"></a>Ledger (msdyn_ledgers)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LEGALENTITYID | > | msdyn_company.cdm_companycode |
 DESCRIPTION | > | msdyn_description |
@@ -1168,18 +1168,18 @@ REPORTINGCURRENCYEXCHANGERATETYPE | > | msdyn_reportingcurrencyexchangeratetype.
 
 ###  <a name="102"></a>Legal entities (cdm_companies)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | > | cdm_name |
 LEGALENTITYID | > | cdm_companycode |
 
 ###  <a name="142"></a>Legal entities (msdyn_internalorganizations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAMEALIAS | > | msdyn_namealias |
 LANGUAGEID | > | msdyn_languageid |
@@ -1190,9 +1190,9 @@ LEGALENTITYID | > | msdyn_companycode |
 
 ###  <a name="149"></a>Loyalty card (msdyn_loyaltycards)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CARDNUMBER | = | msdyn_cardnumber |
 CARDTENDERTYPE | ><<br>`asCardTender` : `806380000`<br>`asContactTender` : `806380001`<br>`noTender` : `806380002`<br>`blocked` : `806380003` | msdyn_cardtendertype |
@@ -1204,18 +1204,18 @@ LOYALTYENROLLMENTDATELOCAL | = | msdyn_effectivedate |
 
 ###  <a name="226"></a>Loyalty levels (msdyn_loyaltylevels)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LEVELPHRASE | = | msdyn_levelphrase |
 LEVELDESCRIPTION | = | msdyn_description |
 
 ###  <a name="150"></a>Loyalty reward points (msdyn_loyaltyrewardpoints)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 EXPIRATIONTIMEUNIT | ><<br>`day` : `806380000`<br>`month` : `806380001`<br>`year` : `806380002` | msdyn_expirationtimeunit |
 EXPIRATIONTIMEVALUE | = | msdyn_expirationtimevalue |
@@ -1230,9 +1230,9 @@ VESTINGTIMEVALUE | = | msdyn_vestingtimevalue |
 
 ###  <a name="152"></a>Main account (msdyn_mainaccounts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 MAINACCOUNTID | = | msdyn_accountnumber |
 CHARTOFACCOUNTS | = | msdyn_chartofaccounts.msdyn_name |
@@ -1261,9 +1261,9 @@ VALIDATEPOSTINGTYPE | ><<br>`optional` : `192350000`<br>`fillIn` : `192350001`<b
 
 ###  <a name="151"></a>Main account categories (msdyn_mainaccountcategories)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 MAINACCOUNTCATEGORY | = | msdyn_mainaccountcategory |
 REFERENCEID | = | msdyn_referenceid |
@@ -1274,9 +1274,9 @@ MAINACCOUNTTYPE | ><<br>`blank` : `192350000`<br>`profitAndLoss` : `192350001`<b
 
 ###  <a name="212"></a>Mixed reality guides entity (msmrw_guides)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 INTEGRATIONKEY | < | msmrw_integrationkey |
 NAME | < | msmrw_name |
@@ -1287,18 +1287,18 @@ LASTMODIFIEDON | < | modifiedon |
 
 ###  <a name="192"></a>Modes of delivery (msdyn_shipvias)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 MODECODE | = | msdyn_name |
 MODEDESCRIPTION | = | msdyn_description |
 
 ###  <a name="155"></a>Name affixes (msdyn_nameaffixes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 AFFIX | = | msdyn_affix |
 TYPE | ><<br>`personalSuffix` : `806380001`<br>`personalPrefix` : `806380000` | msdyn_affixtype |
@@ -1306,9 +1306,9 @@ DESCRIPTION | = | msdyn_description |
 
 ###  <a name="143"></a>Operating unit (msdyn_internalorganizations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 LANGUAGEID | > | msdyn_languageid |
 NAMEALIAS | > | msdyn_namealias |
@@ -1318,9 +1318,9 @@ OPERATINGUNITTYPE | >><br>`omDepartment` : `806380001`<br>`none` : `806380002`<b
 
 ###  <a name="139"></a>Organization hierarchy - published (msdyn_internalorganizationhierarchies)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 VALIDTO | > | msdyn_validto |
 VALIDFROM | > | msdyn_validfrom |
@@ -1333,9 +1333,9 @@ PARENTORGANIZATIONPARTYNUMBER | > | msdyn_parentid.msdyn_partynumber |
 
 ###  <a name="140"></a>Organization hierarchy purposes (msdyn_internalorganizationhierarchypurposes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 HIERARCHYTYPE | > | msdyn_hierarchypurposetypename |
 HIERARCHYTYPE | > | msdyn_hierarchytype.msdyn_name |
@@ -1345,17 +1345,17 @@ SETASDEFAULT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_setasdefault |
 
 ###  <a name="141"></a>Organization hierarchy type (msdyn_internalorganizationhierarchytypes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | > | msdyn_name |
 
 ###  <a name="236"></a>Party contacts V3 (msdyn_partyelectronicaddresses)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 COUNTRYREGIONCODE | = | msdyn_internationalcallingcode |
 DESCRIPTION | = | msdyn_description |
@@ -1372,9 +1372,9 @@ TYPE | ><<br>`phone` : `192350001`<br>`email` : `192350002`<br>`url` : `19235000
 
 ###  <a name="157"></a>Payment day lines CDS V2 (msdyn_paymentdaylines)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_paymentday.msdyn_name |
 LINENUMBER | = | msdyn_linenumber |
@@ -1384,18 +1384,18 @@ DAYOFMONTH | = | msdyn_dayofmonth |
 
 ###  <a name="158"></a>Payment days CDS (msdyn_paymentdays)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="160"></a>Payment schedule (msdyn_paymentschedules)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
@@ -1410,9 +1410,9 @@ NOTES | = | msdyn_note |
 
 ###  <a name="159"></a>Payment schedule lines (msdyn_paymentschedulelines)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PAYMENTSCHEDULENAME | = | msdyn_paymentschedule.msdyn_name |
 LINENUMBER | = | msdyn_linenumber |
@@ -1422,18 +1422,18 @@ PERCENTORAMOUNTVALUE | = | msdyn_percentoramountvalue |
 
 ###  <a name="227"></a>Personal character types (msdyn_personalcharactertypes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 TYPEDESCRIPTION | = | msdyn_typedescription |
 TYPENAME | = | msdyn_typename |
 
 ###  <a name="110"></a>Position type (cdm_positiontypes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 POSITIONTYPEID | = | cdm_name |
 DESCRIPTION | = | cdm_description |
@@ -1441,9 +1441,9 @@ CLASSIFICATION | ><<br>`fulltime` : `754400000`<br>`parttime` : `754400001`<br>b
 
 ###  <a name="111"></a>Position worker assignments (cdm_positionworkerassignmentmaps)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PERSONNELNUMBER | = | cdm_workerid.cdm_workernumber |
 POSITIONID | = | cdm_jobpositionid.cdm_jobpositionnumber |
@@ -1452,9 +1452,9 @@ VALIDTO | = | cdm_validto |
 
 ###  <a name="106"></a>Positions V2 (cdm_jobpositions)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 POSITIONID | = | cdm_jobpositionnumber |
 DESCRIPTION | = | cdm_description |
@@ -1469,18 +1469,18 @@ JOBID | = | cdm_jobid.cdm_name |
 
 ###  <a name="162"></a>Price customer groups (msdyn_pricecustomergroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 GROUPCODE | = | msdyn_groupcode |
 GROUPNAME | = | msdyn_groupname |
 
 ###  <a name="164"></a>Product Number Identified Barcode (msdyn_productbarcodes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTNUMBER | > | msdyn_productnumberid.msdyn_productnumber |
 BARCODE | > | msdyn_name |
@@ -1495,9 +1495,9 @@ ISDEFAULTDISPLAYEDBARCODE | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isdef
 
 ###  <a name="166"></a>Product categories (msdyn_productcategories)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_hierarchy.msdyn_name |
 ISCATEGORYINHERITINGPARENTPRODUCTATTRIBUTES | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isinheritingparentproductattributes |
@@ -1516,9 +1516,9 @@ EXTERNALID | = | msdyn_integrationid |
 
 ###  <a name="167"></a>Product category assignments (msdyn_productcategoryassignments)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTNUMBER | = | msdyn_globalproduct.msdyn_productnumber |
 PRODUCTCATEGORYNAME | = | msdyn_productcategory.msdyn_name |
@@ -1527,27 +1527,27 @@ PRODUCTNUMBER | > | msdyn_name |
 
 ###  <a name="168"></a>Product category hierarchies (msdyn_productcategoryhierarchies)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 HIERARCHYNAME | = | msdyn_name |
 HIERARCHYDESCRIPTION | = | msdyn_description |
 
 ###  <a name="169"></a>Product category hierarchy roles (msdyn_productcategoryhierarchyroles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_hierarchy.msdyn_name |
 HIERARCHYROLE | ><<br>`procurement` : `192350000`<br>`sales` : `192350001`<br>`retail` : `192350002`<br>`commodity` : `192350003`<br>`financials` : `192350004`<br>`retailSpecialGroup` : `192350005`<br>`retailVendorProductHierarchy` : `192350006`<br>`retailChannelNavigation` : `192350007`<br>`packingMaterials_W` : `192350008`<br>`commonDataService` : `192350009`<br>`costManagement` : `192350010`<br>`engineeringProduct` : `192350011` | msdyn_hierarchyrole |
 
 ###  <a name="175"></a>Product default order settings V2 (msdyn_productspecificdefaultordersettings)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 INVENTORYWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier |
 INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid |
@@ -1607,9 +1607,9 @@ PRODUCTSTYLEID | = | msdyn_productstyle.msdyn_productstyle |
 
 ###  <a name="173"></a>Product dimension groups (msdyn_productdimensiongroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 WILLSALESPRICESEARCHUSEPRODUCTSTYLE | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_willsalespricesearchuseproductstyle |
 WILLPURCHASEPRICESEARCHUSEPRODUCTSIZE | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_willpurchasepricesearchuseproductsize |
@@ -1629,9 +1629,9 @@ WILLSALESPRICESEARCHUSEPRODUCTSIZE | ><<br>`yes` : `true`<br>`no` : `false` | ms
 
 ###  <a name="187"></a>Product master colors (msdyn_sharedproductcolors)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTCOLORID | > | msdyn_productcolor.msdyn_productcolorname |
 PRODUCTMASTERNUMBER | > | msdyn_globalproduct.msdyn_productnumber |
@@ -1640,9 +1640,9 @@ DISPLAYSEQUENCENUMBER | > | msdyn_displaysequencenumber |
 
 ###  <a name="188"></a>Product master configurations (msdyn_sharedproductconfigurations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CONTAINERUNITSYMBOL | > | msdyn_containerunit.msdyn_symbol |
 PRODUCTCONFIGURATIONID | > | msdyn_productconfiguration.msdyn_productconfiguration |
@@ -1652,9 +1652,9 @@ DISPLAYSEQUENCENUMBER | > | msdyn_displaysequencenumber |
 
 ###  <a name="190"></a>Product master sizes (msdyn_sharedproductsizes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTMASTERNUMBER | > | msdyn_globalproduct.msdyn_productnumber |
 PRODUCTSIZEID | > | msdyn_productsize.msdyn_productsize |
@@ -1663,9 +1663,9 @@ DISPLAYSEQUENCENUMBER | > | msdyn_displaysequencenumber |
 
 ###  <a name="191"></a>Product master styles (msdyn_sharedproductstyles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTMASTERNUMBER | > | msdyn_globalproduct.msdyn_productnumber |
 PRODUCTSTYLEID | > | msdyn_productstyle.msdyn_productstyle |
@@ -1674,9 +1674,9 @@ DISPLAYSEQUENCENUMBER | > | msdyn_displaysequencenumber |
 
 ###  <a name="185"></a>Product receipt header (msdyn_purchaseorderreceipts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 RECORDID | > | msdyn_recordid |
 PRODUCTRECEIPTDATE | > | msdyn_datereceived |
@@ -1711,9 +1711,9 @@ DELIVERYADDRESSDUNSNUMBER | > | msdyn_deliveryaddressdunsnumber |
 
 ###  <a name="184"></a>Product receipt line (msdyn_purchaseorderreceiptproducts)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 RECORDID | > | msdyn_recordid |
 DELIVERYADDRESSCOUNTRYREGIONID | > | msdyn_deliveryaddresscountryregionid |
@@ -1747,9 +1747,9 @@ PRODUCTNUMBER | > | msdyn_product.msdyn_productnumber |
 
 ###  <a name="176"></a>Product specific unit conversions (msdyn_productspecificunitofmeasureconversions)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DENOMINATOR | = | msdyn_denominator |
 NUMERATOR | = | msdyn_numerator |
@@ -1763,13 +1763,13 @@ ROUNDING | ><<br>`nearest` : `192350000`<br>`up` : `192350001`<br>`down` : `1923
 
 ###  <a name="180"></a>Prospects (leads)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: (IsB2BProspect == 1)
 
 Reversed source filter: (msdyn_b2bcommerceprospect eq true)
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PROSPECTNAME | = | fullname |
 PROSPECTPARTYNUMBER | = | msdyn_partyid.msdyn_partynumber |
@@ -1806,13 +1806,13 @@ B2BPROSPECTSTATUS | ><<br>`Pending` : `192350000`<br>`Approved` : `192350001`<br
 
 ###  <a name="232"></a>Purchase order header document attachments (annotations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((DocumentAttachmentTypeCode == "Note") || (DocumentAttachmentTypeCode == "URL"))
 
 Reversed source filter: objecttypecode eq 'msdyn_purchaseorder'
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DOCUMENTID | = | msdyn_notesid |
 NOTES | = | notetext |
@@ -1824,9 +1824,9 @@ ACCESSRESTRICTION | ><<br>`internal` : `0`<br>`external` : `1` | msdyn_restricti
 
 ###  <a name="183"></a>Purchase order headers V2 (msdyn_purchaseorders)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DELIVERYADDRESSNAME | > | msdyn_addressname |
 REQUESTEDDELIVERYDATE | = | msdyn_dateexpected |
@@ -1889,9 +1889,9 @@ INVOICEADDRESSZIPCODE | > | msdyn_invoiceaddresszipcode |
 
 ###  <a name="189"></a>Released products V2 (msdyn_sharedproductdetails)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PRODUCTNUMBER | > | msdyn_globalproduct.msdyn_productnumber |
 INTRASTATCHARGEPERCENTAGE | > | msdyn_intrastatchargepercentage |
@@ -2004,13 +2004,13 @@ TRACKINGDIMENSIONGROUPNAME | > | msdyn_trackingdimensiongroup.msdyn_groupname |
 
 ###  <a name="118"></a>Sales invoice headers V2 (invoices)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: (SalesOrderNumber != "")
 
 Reversed source filter: msdyn_ordertype eq 192350000
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 none | >> | ispricelocked | False
 none | >> | statuscode | 4
@@ -2038,9 +2038,9 @@ none | >> | msdyn_ordertype | 192350000
 
 ###  <a name="117"></a>Sales invoice lines V2 (invoicedetails)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 CONFIRMEDSHIPPINGDATE | > | msdyn_confirmedshippingdate |
 CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
@@ -2067,13 +2067,13 @@ none | >> | ispriceoverridden | True
 
 ###  <a name="229"></a>Sales order header document attachments (annotations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((DocumentAttachmentTypeCode == "Note") || (DocumentAttachmentTypeCode == "URL"))
 
 Reversed source filter: objecttypecode eq 'salesorder'
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DOCUMENTID | = | msdyn_notesid |
 NOTES | = | notetext |
@@ -2085,18 +2085,18 @@ ACCESSRESTRICTION | ><<br>`internal` : `0`<br>`external` : `1` | msdyn_restricti
 
 ###  <a name="186"></a>Sales order origin codes (msdyn_salesorderorigins)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ORIGINCODE | = | msdyn_origincode |
 ORIGINDESCRIPTION | = | msdyn_origindescription |
 
 ###  <a name="193"></a>Sales tax authorities (msdyn_taxauthorities)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 TAXAUTHORITYCODE | = | msdyn_taxauthoritycode |
 TAXAUTHORITYIDENTIFICATION | = | msdyn_taxauthorityidentificator |
@@ -2110,44 +2110,44 @@ URL | = | msdyn_url |
 
 ###  <a name="194"></a>Sales tax exempt code entity CDS (msdyn_taxexemptcodes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="195"></a>Sales tax groups (msdyn_taxgroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 TAXGROUPCODE | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="197"></a>Sales tax ledger posting groups V2 (msdyn_taxpostinggroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 TAXPOSTINGGROUPCODE | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="228"></a>Salutations (msdyn_salutations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 SALUTATIONPHRASE | = | msdyn_salutationphrase |
 
 ###  <a name="156"></a>Sites (msdyn_operationalsites)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DEFAULTFINANCIALDIMENSIONVALUE | = | msdyn_defaultfinancialdimensionvalue |
 DEFAULTINVENTORYSTATUSID | = | msdyn_defaultinventorystatusid |
@@ -2179,17 +2179,17 @@ PRIMARYADDRESSSTREETNUMBER | = | msdyn_primaryaddressstreetnumber |
 
 ###  <a name="174"></a>Sizes (msdyn_productsizes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 SIZEID | > | msdyn_productsize |
 
 ###  <a name="177"></a>Storage dimension groups (msdyn_productstoragedimensiongroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 WILLSALESPRICESEARCHUSEWAREHOUSE | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_willsalespricesearchusewarehouse |
 WILLSALESPRICESEARCHUSESITE | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_willsalespricesearchusesite |
@@ -2214,17 +2214,17 @@ ISBLANKISSUEALLOWEDFORLOCATION | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_
 
 ###  <a name="178"></a>Styles (msdyn_productstyles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 STYLEID | > | msdyn_productstyle |
 
 ###  <a name="198"></a>Terms of delivery (msdyn_termsofdeliveries)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 TERMSCODE | = | msdyn_termscode |
 INTRASTATCODE | = | msdyn_intrastatcode |
@@ -2237,9 +2237,9 @@ WILLSHIPMENTCONFIRMATIONTRANSFERCHARGES | ><<br>`no` : `False`<br>`yes` : `True`
 
 ###  <a name="161"></a>Terms of payment (msdyn_paymentterms)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DESCRIPTION | = | msdyn_description |
 NAME | = | msdyn_name |
@@ -2257,9 +2257,9 @@ PAYMENTSCHEDULENAME | = | msdyn_paymentschedulename.msdyn_name |
 
 ###  <a name="179"></a>Tracking dimension groups (msdyn_producttrackingdimensiongroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 SERIALNUMBERCAPTURINGOPERATION | ><<br>`none` : `806380000`<br>`picking` : `806380001`<br>`packing` : `806380002` | msdyn_serialnumbercapturingoperation |
 GROUPNAME | = | msdyn_groupname |
@@ -2289,9 +2289,9 @@ ISINVENTORYOWNERACTIVE | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_isinvent
 
 ###  <a name="199"></a>Unit conversions (msdyn_unitofmeasureconversions)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DENOMINATOR | = | msdyn_denominator |
 NUMERATOR | = | msdyn_numerator |
@@ -2304,9 +2304,9 @@ FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol |
 
 ###  <a name="219"></a>Units (uoms)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 UNITSYMBOL | > | msdyn_symbol |
 UNITCLASS | > | msdyn_externalunitclassname |
@@ -2319,13 +2319,13 @@ UNITDESCRIPTION | > | msdyn_description |
 
 ###  <a name="231"></a>Vendor document attachments (annotations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((DocumentAttachmentTypeCode == "Note") || (DocumentAttachmentTypeCode == "URL"))
 
 Reversed source filter: (objecttypecode eq 'msdyn_vendor'  and msdyn_relatedentityid2 ne null) or (objecttypecode eq 'account' and msdyn_relatedentityid2 ne null)  or (objecttypecode eq 'contact' and msdyn_relatedentityid2 ne null)
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DOCUMENTID | = | msdyn_notesid |
 NOTES | = | notetext |
@@ -2337,9 +2337,9 @@ ACCESSRESTRICTION | ><<br>`internal` : `0`<br>`external` : `1` | msdyn_restricti
 
 ###  <a name="200"></a>Vendor groups (msdyn_vendorgroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DEFAULTPAYMENTTERMNAME | = | msdyn_paymentterms.msdyn_name |
 DESCRIPTION | = | msdyn_description |
@@ -2348,9 +2348,9 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn_clearingperiodpaymentpermname.msdyn_na
 
 ###  <a name="201"></a>Vendor payment method (msdyn_vendorpaymentmethods)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 NAME | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
@@ -2369,11 +2369,11 @@ DIRECTDEBIT | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_directdebit |
 
 ###  <a name="202"></a>Vendors V2 (msdyn_vendors)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
 Source filter: ((VendorPartyType == "Organization") || (VendorPartyType == "Person"))
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 VENDORACCOUNTNUMBER | = | msdyn_vendoraccountnumber |
 VENDORGROUPID | = | msdyn_vendorgroupid.msdyn_vendorgroup |
@@ -2410,9 +2410,9 @@ PRIMARYCONTACTPERSONID | = | msdyn_primarycontact.msdyn_contactforpartynumber |
 
 ###  <a name="112"></a>Veteran status (cdm_veteranstatuses)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 VETERANSTATUSID | = | cdm_name |
 DESCRIPTION | = | cdm_description |
@@ -2420,9 +2420,9 @@ ISPROTECTEDVETERAN | ><<br>`no` : `false`<br>`yes` : `true` | cdm_isprotectedvet
 
 ###  <a name="144"></a>Warehouse locations (msdyn_inventorylocations)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 BINID | = | msdyn_binid |
 CHECKDIGITS | = | msdyn_checkdigits |
@@ -2470,9 +2470,9 @@ ITEMNUMBERINLOCATION | = | msdyn_itemnumberinlocation.msdyn_itemnumber |
 
 ###  <a name="205"></a>Warehouse work headers (msdyn_warehouseworkheaders)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ACTUALPROCESSINGTIMESECONDS | > | msdyn_actualprocessingtimeseconds |
 ESTIMATEDPROCESSINGTIMESECONDS | > | msdyn_estimatedprocessingtimeseconds |
@@ -2497,9 +2497,9 @@ WAREHOUSEWORKPOOLID | > | msdyn_warehouseworkpoolid |
 
 ###  <a name="206"></a>Warehouse work lines (msdyn_warehouseworklines)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ACTUALPROCESSINGTIMESECONDS | > | msdyn_actualprocessingtimeseconds |
 ESTIMATEDPROCESSINGTIMESECONDS | > | msdyn_estimatedprocessingtimeseconds |
@@ -2541,18 +2541,18 @@ PRODUCTSTYLEID | > | msdyn_productstyle.msdyn_productstyle |
 
 ###  <a name="207"></a>Warehouse zone groups (msdyn_warehousezonegroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 GROUPID | = | msdyn_groupid |
 GROUPNAME | = | msdyn_groupname |
 
 ###  <a name="208"></a>Warehouse zones (msdyn_warehousezones)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 WAREHOUSEZONEGROUPID | = | msdyn_warehousezonegroup.msdyn_groupid |
 ZONEID | = | msdyn_zoneid |
@@ -2560,9 +2560,9 @@ ZONENAME | = | msdyn_zonename |
 
 ###  <a name="204"></a>Warehouses (msdyn_warehouses)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 DEFAULTCONTAINERTYPEID | = | msdyn_defaultcontainertypeid |
 AREITEMSCOVERAGEPLANNEDMANUALLY | ><<br>`no` : `false`<br>`yes` : `true` | msdyn_areitemscoverageplannedmanually |
@@ -2634,9 +2634,9 @@ WILLWAREHOUSELOCATIONIDINCLUDESHELFIDBYDEFAULT | ><<br>`yes` : `true`<br>`no` : 
 
 ###  <a name="210"></a>Withholding tax codes (msdyn_withholdingtaxcodes)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 WITHHOLDINGCODE | = | msdyn_name |
 WITHHOLDINGTAXNAME | = | msdyn_description |
@@ -2647,18 +2647,18 @@ WITHHOLDINGTAXBASE | ><<br>`pctPerNet` : `192350000`<br>`pctPerGross` : `1923500
 
 ###  <a name="211"></a>Withholding tax groups (msdyn_withholdingtaxgroups)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 WITHHOLDINGTAXGROUPCODE | = | msdyn_name |
 DESCRIPTION | = | msdyn_description |
 
 ###  <a name="113"></a>Worker (cdm_workers)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 PERSONNELNUMBER | = | cdm_workernumber |
 FIRSTNAME | = | cdm_firstname |
@@ -2678,10 +2678,11 @@ NAME | > | cdm_fullname |
 
 ###  <a name="301"></a>CDS location roles (msdyn_addressroles)
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between finance and operations apps and Dataverse.
 
-Finance and Operations field | Map type | Customer engagement column | Default value
+Finance and operations field | Map type | Customer engagement column | Default value
 ---|---|---|---
 ISCONTACTINFORMATION | ><<br>`yes` : `true`<br>`no` : `false` | msdyn_iselectronicaddressrole |
 ISPOSTALADDRESS | ><<br>`yes` : `true`<br>`no` : `false` | msdyn_ispostaladdressrole |
 PURPOSE | = | msdyn_name |
+

@@ -123,7 +123,7 @@ The illustration that follows shows these transactions:
 - 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions)
 - 7\. Inventory close is performed. Based on the marking principle that uses the LIFO method, the marked transactions are settled against each other. In this example, 3b is settled against 2b, and an adjustment for USD 6.00 is posted to 3b to bring the value to USD 22.00. In this example, no additional settlements are made, because the close creates settlements only for financially updated transactions.
 
-The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50.
+The new running average cost price reflects the average of the financially and physically updated transactions, USD 17.50.
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when marking between issues and receipts is used.
 

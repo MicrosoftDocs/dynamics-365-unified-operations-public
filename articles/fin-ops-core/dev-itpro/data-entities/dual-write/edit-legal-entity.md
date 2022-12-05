@@ -1,11 +1,11 @@
 ---
 title: Edit a legal entity after dual-write setup
-description: This topic explains how to add or remove a company or legal entity after dual-write has been set up.
+description: This article explains how to add or remove a company or legal entity after dual-write has been set up.
 author: nhelgren
 ms.date: 07/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -22,7 +22,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The dual-write wizard enables you to add or remove a company or legal entity after dual-write has been set up. You can do this without having to unlink and relink your dual-write environment. 
 
-The wizard enables you to link your Finance and Operations apps to Dataverse environments. As part of this wizard, you also can select one or more companies or legal entities. The company or legal entity list doesn’t remain static and is constantly changing. This is because you may need to add new companies, especially as part of a phased rollout or acquisitions. Until now, you were unable to add a company or legal entity without system down-time, which required you to unlink and relink your environment. All of this can be expensive, especially because of pre-existing data. With this feature, you can add a company in a live environment without the need to unlink your existing dual-write environment.
+The wizard enables you to link your finance and operations apps to Dataverse environments. As part of this wizard, you also can select one or more companies or legal entities. The company or legal entity list doesn’t remain static and is constantly changing. This is because you may need to add new companies, especially as part of a phased rollout or acquisitions. Until now, you were unable to add a company or legal entity without system down-time, which required you to unlink and relink your environment. All of this can be expensive, especially because of pre-existing data. With this feature, you can add a company in a live environment without the need to unlink your existing dual-write environment.
 
 ## Add a company or legal entity after dual-write has been set up 
 

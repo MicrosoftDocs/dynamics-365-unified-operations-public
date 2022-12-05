@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales of exempted items
-description: This topic provides information about the sale of exempted items.
+description: This article provides information about the sale of exempted items.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

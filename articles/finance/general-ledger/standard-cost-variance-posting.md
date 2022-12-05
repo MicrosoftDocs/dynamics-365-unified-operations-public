@@ -2,7 +2,7 @@
 # required metadata
 
 title: Standard cost variance posting
-description: This topic provides information about setting up posting profiles for standard costing.
+description: This article provides information about setting up posting profiles for standard costing.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -22,7 +22,7 @@ ms.author: raprofit
 
 # Standard cost variance posting
 
-When you use standard costing for one or more products in your organization, you must configure the [prerequisites for standard costing](/supply-chain/cost-management/prerequisites-standard-costs.md). This topic explains the posting accounts that are required for step 3 of the prerequisites, "Assign ledger accounts to item postings that are related to standard cost variances."
+When you use standard costing for one or more products in your organization, you must configure the [prerequisites for standard costing](/supply-chain/cost-management/prerequisites-standard-costs.md). This article explains the posting accounts that are required for step 3 of the prerequisites, "Assign ledger accounts to item postings that are related to standard cost variances."
 
 Different types of variances can occur for purchases and production orders. For examples of production variances, see [Common sources of production variances](/supply-chain/cost-management/common-sources-of-production-variances.md). Purchase order price variances occur when you use standard cost for a purchased item, and there is a difference between the product's standard cost and the invoiced amount on the purchase order.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up rounding rules
-description: This topic describes how to set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.
+description: This article describes how to set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -28,9 +28,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Set up rounding rules
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

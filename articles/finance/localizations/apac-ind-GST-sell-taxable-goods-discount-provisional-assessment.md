@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales of taxable goods that have a discount and a provisional assessment
-description: This topic provides information about sales of taxable goods that have a discount and a provisional assessment.
+description: This article provides information about sales of taxable goods that have a discount and a provisional assessment.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

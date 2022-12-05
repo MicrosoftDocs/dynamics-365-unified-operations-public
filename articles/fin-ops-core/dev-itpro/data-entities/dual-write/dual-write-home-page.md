@@ -1,16 +1,16 @@
 ---
 title: Dual-write home page
-description: This topic provides links to information about dual-write.
-author: tonyafehr
+description: This article provides links to information about dual-write.
+author: sericks007
 ms.date: 11/24/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: "intro-internal"
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: "intro-internal"
 ---
 
 # Dual-write home page
@@ -34,13 +34,13 @@ These topics describe dual-write integration.
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Guidance for how to set up dual-write](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
-+ Enable dual-write for existing Finance and Operations apps
++ Enable dual-write for existing finance and operations apps
 
-    + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
+    + [Enable dual-write for existing finance and operations apps](enable-dual-write.md)
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable table map for dual-write](enable-entity-map.md)
- + [Separated Dual-write Application Orchestration package](separated-solutions.md)
+  + [Separated Dual-write Application Orchestration package](separated-solutions.md)
 
 ## Managing dual-write after setup
 
@@ -113,11 +113,12 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
 + [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
 + [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
-+ [Troubleshoot dual-write issues in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
++ [Troubleshoot dual-write issues in finance and operations apps](dual-write-troubleshooting-dual-write-module.md)
 + [Troubleshoot party and global address book problems](dual-write-troubleshooting-party-gab.md)
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
-+ [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
-+ [Verify dual-write configuration in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
++ [Troubleshoot issues from upgrades of finance and operations apps](dual-write-troubleshooting-finops-upgrades.md)
++ [Verify dual-write configuration in finance and operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
 + [Errors codes for table map health check](table-map-health-check.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

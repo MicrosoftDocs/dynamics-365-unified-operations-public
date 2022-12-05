@@ -1,12 +1,12 @@
 ---
 title: X++ conditional statements
-description: This topic describes conditional statements in X++.
-author: RobinARH
+description: This article describes conditional statements in X++.
+author: josaw1
 ms.date: 06/17/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes conditional statements in X++. The conditional statements are **if**, **if**...**else**, **switch**, and the ternary operator (**?**). You use conditional statements to specify whether a block of code is executed. Different conditional statements offer advantages in different situations.
+This article describes conditional statements in X++. The conditional statements are **if**, **if**...**else**, **switch**, and the ternary operator (**?**). You use conditional statements to specify whether a block of code is executed. Different conditional statements offer advantages in different situations.
 
 ## if and if...else statements
 

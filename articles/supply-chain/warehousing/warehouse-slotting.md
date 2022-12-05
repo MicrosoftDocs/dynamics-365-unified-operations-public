@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse slotting
-description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
+description: This article provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -37,7 +37,7 @@ The *Warehouse slotting allocation enhancements* feature adds an option for the 
 
 ## Turn on the warehouse slotting features
 
-Before you can use these features, they must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. Turn on the following features as required:
+Before you can use these features, they must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. Turn on the following features as required:
 
 - Warehouse slotting feature
 - Warehouse slotting for transfer orders
@@ -159,7 +159,7 @@ For each sales order template that you create, follow these steps to add a line 
 
     - **Unit of Measure Tier:** _EaBoxPl_
 
-        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this topic.)
+        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
 
     - **Assign slot criteria:** _Consider qty_
 
@@ -287,7 +287,7 @@ For this scenario, use the built-in sample data, and create the records that are
 
 #### Use the USMF sample data
 
-To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 #### Create demand
 

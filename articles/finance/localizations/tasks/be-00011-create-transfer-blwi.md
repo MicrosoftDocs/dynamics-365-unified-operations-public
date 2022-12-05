@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Create and transfer transactions to the BLWI (Belgium)
-description: This procedure walks you through creating BLWI report for Belgium. 
-author: v-oloski
+description: This procedure walks you through creating BLWI report for Belgium.
+author: AdamTrukawka
 ms.date: 07/12/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Belgium
-# ms.search.industry: 
-ms.author: v-oloski
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and transfer transactions to the BLWI (Belgium)
 

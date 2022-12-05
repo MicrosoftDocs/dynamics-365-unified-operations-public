@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: ER Create required configurations to import data from an external file
-description: This topic describes how to design Electronic reporting configurations to import data in to the Microsoft Dynamics 365 Finance app from an external file. 
-author: NickSelin
+description: This article describes how to design Electronic reporting configurations to import data in to the Microsoft Dynamics 365 Finance app from an external file.
+author: kfend
 ms.date: 03/24/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 ---
 # ER Create required configurations to import data from an external file
 

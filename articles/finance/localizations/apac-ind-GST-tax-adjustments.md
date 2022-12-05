@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax amount adjustment
-description: This topic explains how to adjust tax amounts on purchase and sales orders during invoicing.
+description: This article explains how to adjust tax amounts on purchase and sales orders during invoicing.
 author: kfend
 ms.date: 06/05/2019
 ms.topic: article

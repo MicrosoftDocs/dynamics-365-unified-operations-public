@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Workspace form pattern
-description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
+description: This article discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
 ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29151
-ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29151
+ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
 ---
 
 # Workspace form pattern
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
+This article discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 
 ## Usage
 
@@ -44,7 +33,7 @@ Workspaces are intended to be the primary way that users navigate to tasks and s
 - (Deprecated) **Tabbed workspace** – This pattern was initially created to facilitate embedded Power BI reports and a more vertical orientation of workspaces. It's now deprecated and should be replaced by the **Operational workspace w/Tabs** pattern wherever possible.
 - (Obsolete) **Workspace** – This pattern is mentioned only for the sake of completeness and can't be used after version 10.0.25. We recommend that any remaining uses of this pattern be migrated to one of the other patterns.
 
-The rest of this topic will focus on the **Operational workspace** patterns.
+The rest of this article will focus on the **Operational workspace** patterns.
 
 ## Wireframe
 
@@ -52,7 +41,7 @@ The rest of this topic will focus on the **Operational workspace** patterns.
 
 [![Wireframe for operational workspace.](./media/verticalOperationalWorkspace.png)](./media/verticalOperationalWorkspace.png)
 
-## Pattern changes for Finance and Operations
+## Pattern changes for finance and operations apps
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
 
 ## Model
@@ -152,7 +141,7 @@ For forms that follow the **Operational workspace** form pattern and its related
 
 2. After the BP fixer tool has finished running, a small number of properties must currently be set manually.
 
-    - For any **Group** control in the link sections of the workspace, set the **FrameOptionButton** property to **Hide** to suppress the ability to collapse the section. This setting also removes the visual line under that section.
+    - For any **Group** control in the link sections of the workspace, set the **FrameOptionButton** property to **None** to suppress the ability to collapse the section. This setting also removes the visual line under that section.
     - For any **FormPartControl** control in the list sections of the workspace, set the **Width mode** property to **SizeToAvailable**. This setting enables the subform to span the full width of the page.
 
 3. Perform a [fit and finish review](#fit-and-finish-reviews) of the workspace to optimize it for a vertical orientation.
@@ -208,3 +197,4 @@ This section will have answers to frequently asked questions that are related to
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

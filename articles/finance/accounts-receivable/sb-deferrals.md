@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Revenue and expense deferrals in Subscription billing
-description: This topic explains how to set up revenue and expense deferrals in Subscription billing.
+description: This article explains how to set up revenue and expense deferrals in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Revenue and expense deferrals in Subscription billing
 
-This topic explains how to set up and use revenue and expense deferrals in Subscription billing. Deferral schedules are always based on and depend on an underlying originating document or billing schedule. Because they are created based on default values, they can't be entered or created separately.
+This article explains how to set up and use revenue and expense deferrals in Subscription billing. Deferral schedules are always based on and depend on an underlying originating document or billing schedule. Because they are created based on default values, they can't be entered or created separately.
 
 The process of setting up and using revenue and expense deferrals occurs on multiple pages:
 

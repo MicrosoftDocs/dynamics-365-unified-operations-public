@@ -1,45 +1,35 @@
 ---
-# required metadata
-
-title: What's new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
-author: tonyafehr
+title: What's new or changed in Dynamics 365 Finance and Operations version 8.0 (April 2018)
+description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 8.0. This version was released in April 2018.
+author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2017-09-30
+ms.dyn365.ops.version: Release 8.0
 ms.custom: 
 ms.assetid: b265d51c-52d1-45c5-b578-64c5242c592a
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom: 2017-09-30 
-ms.dyn365.ops.version: Release 8.0
-
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)
+# What's new or changed in Dynamics 365 Finance and Operations version 8.0 (April 2018)
 
 [!include [banner](../includes/banner.md)]
 
 
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
-To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
+To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 Finance and Operations.
 
-### Introducing Dynamics 365 for Finance and Operations
+### Introducing Dynamics 365 Finance and Operations
 
-Users and developers will see an updated product name, "Microsoft Dynamics 365 for Finance and Operations." With version 8.0, Microsoft is further simplifying our Dynamics 365 offerings and increasing ease of selection for our customers and ecosystem. Going forward, Microsoft is no longer offering separate editions (Business edition and Enterprise edition), so the product name for this Dynamics 365 application is Microsoft Dynamics 365 for Finance and Operations.
+Users and developers will see an updated product name, "Microsoft Dynamics 365 Finance and Operations." With version 8.0, Microsoft is further simplifying our Dynamics 365 offerings and increasing ease of selection for our customers and ecosystem. Going forward, Microsoft is no longer offering separate editions (Business edition and Enterprise edition), so the product name for this Dynamics 365 application is Microsoft Dynamics 365 Finance and Operations.
 
 ## Business productivity
 
@@ -106,7 +96,7 @@ Organizations can add custom fields to tailor their application to their busines
 
 ### Integration with Dataverse
 
-Dynamics 365 for Finance and Operations has enabled cross-application business processes between Finance and Operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and Dataverse to enable the cross-application scenarios.
+Dynamics 365 Finance and Operations has enabled cross-application business processes between finance and operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and Dataverse to enable the cross-application scenarios.
 
 ### Integration with Dynamics 365 for Field Service
 
@@ -160,7 +150,7 @@ New Analytical workspaces for Cost management are embedded in the Cost administr
 
 ### India localization – project and upgrade
 
-Users can manage India Goods and Services Tax (GST) for the Project management and accounting module, and AX 2012 customers can upgrade to Dynamics 365 for Finance and Operations.
+Users can manage India Goods and Services Tax (GST) for the Project management and accounting module, and AX 2012 customers can upgrade to Dynamics 365 Finance and Operations.
 
 ### Enhanced configurability
 
@@ -196,3 +186,4 @@ Go to the [Trust Center](https://www.microsoft.com/trustcenter/compliance/access
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

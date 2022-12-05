@@ -1,25 +1,19 @@
 ---
 title: Respond by using EventHandlerResult
-description: This topic describes how to subscribe to events that has a parameter of any type that implements the IEventHandlerResult interface.
+description: This article describes how to subscribe to events that has a parameter of any type that implements the IEventHandlerResult interface.
 author: MichaelFruergaardPontoppidan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Respond by using EventHandlerResult

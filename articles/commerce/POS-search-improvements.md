@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product search and customer search in the point of sale (POS)
-description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
+description: This article provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
 ms.date: 05/25/2022
 ms.topic: article

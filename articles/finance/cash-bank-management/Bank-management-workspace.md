@@ -2,8 +2,8 @@
 # required metadata
 
 title: Bank management workspace
-description: This topic provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
-author: kweekley
+description: This article provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
+author: angelad116
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: angelading
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---

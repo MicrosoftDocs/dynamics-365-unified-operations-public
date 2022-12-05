@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Statistics on payment practices report
-description: This topic provides information about the Statistics on payment practices report.
-author: anasyash
+description: This article provides information about the Statistics on payment practices report.
+author: AdamTrukawka
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.8
-
 ---
 
 # Statistics on payment practices report

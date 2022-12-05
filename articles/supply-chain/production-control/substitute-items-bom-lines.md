@@ -2,7 +2,7 @@
 # required metadata
 
 title: Material substitution in manufacturing
-description: This topic describes how to substitute materials during the production process. 
+description: This article describes how to substitute materials during the production process. 
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to substitute materials during the production process. 
+This article describes how to substitute materials during the production process. 
 
 There are three methods for substituting materials during the production process:
 

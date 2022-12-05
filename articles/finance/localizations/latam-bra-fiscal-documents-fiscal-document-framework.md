@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Fiscal documents and fiscal document framework for Brazil
-description: This topic describes fiscal documents for Brazil.
-author: sndray
+description: This article describes fiscal documents for Brazil.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FiscalDocument_BR, FiscalDocumentAmounts_BR, FiscalDocumentChargesTotals_BR, FiscalDocumentElectronic_BR
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 269094
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 269094
+ms.search.form: FiscalDocument_BR, FiscalDocumentAmounts_BR, FiscalDocumentChargesTotals_BR, FiscalDocumentElectronic_BR
 ---
 
 # Fiscal documents and fiscal document framework for Brazil
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes fiscal documents for Brazil.
+This article describes fiscal documents for Brazil.
 
 ## Overview
 

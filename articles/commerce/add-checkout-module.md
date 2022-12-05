@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Checkout module
-description: This topic describes how to add a checkout module to a page and set the required properties.
+description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Checkout module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic describes how to add a checkout module to a page and set the required properties.
+This article describes how to add a checkout module to a page and set the required properties.
 
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 
@@ -109,6 +100,9 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
+
+> [NOTE]
+> When using single payment authorization as described in [Enhanced payments in storefront checkout](./dev-itpro/enhanced-sca.md), in the **Checkout information** section of the checkout page, confirm that the checkout section container is positioned last. This ensures that all required information is gathered by the checkout page prior to the final payment checkout and order completion actions. 
 
 ## Additional resources
 

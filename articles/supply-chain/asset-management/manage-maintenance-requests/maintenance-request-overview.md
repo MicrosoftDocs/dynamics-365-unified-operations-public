@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance requests
-description: This topic provides an overview about managing maintenance requests in Asset Management
+description: This article provides an overview about managing maintenance requests in Asset Management
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: overview
@@ -43,7 +43,7 @@ Maintenance requests can be created for any asset in Asset Management. Various t
 
 ## View maintenance requests
 
-To view maintenance requests, select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests**, **Active maintenance requests**, or **My functional location maintenance requests**. Each list page shows some of the information that is related to a maintenance request.
+To view maintenance requests, select **Asset management** \> **Maintenance requests** \> **All maintenance requests**, **Active maintenance requests**, or **My functional location maintenance requests**. Each list page shows some of the information that is related to a maintenance request.
 
 ![View maintenance requests.](media/01-manage-maintenance-requests.png)
 

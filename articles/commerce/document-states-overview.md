@@ -1,38 +1,30 @@
 ---
-# required metadata
-
 title: Document states and lifecycle
-description: This topic covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
+description: This article covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: "intro-internal"
+ms.search.industry: 
+ms.search.form: 
 ---
 # Document states and lifecycle
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
+This article covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 
 ## Document state descriptions
 
-The [Page elements](page-elements-overview.md) topic lists various documents types in the content management system (CMS). These document types can have several states in the authoring tool. The document states help prevent data conflicts and enforce version control. They determine who can change the documents, when the documents can be changed, and when changes can be viewed by other people.
+The [Page elements](page-elements-overview.md) article lists various documents types in the content management system (CMS). These document types can have several states in the authoring tool. The document states help prevent data conflicts and enforce version control. They determine who can change the documents, when the documents can be changed, and when changes can be viewed by other people.
 
 The following table shows the possible document states of page elements in Commerce.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work split
-description: This topic provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
+description: This article provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
 author: Mirzaab
 ms.date: 10/15/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab

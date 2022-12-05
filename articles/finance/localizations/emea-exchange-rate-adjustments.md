@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Exchange rate adjustments
-description: This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
-author: ShylaThompson
+description: This article provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
+author: AdamTrukawka
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 272683
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.search.industry: 
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 272683
+ms.search.form: LedgerParameters
 ---
 
 # Exchange rate adjustments
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
+This article provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 
 The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:
 

@@ -1,40 +1,30 @@
 ---
-# required metadata
-
 title: Apply the latest platform update to environments
-description: This topic explains how to apply the latest platform update to your Finance and Operations environment.
-author: tariqbell
+description: This article explains how to apply the latest platform update to your finance and operations environment.
+author: LaneSwenka
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 253274
-ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
+ms.custom: 253274
+ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ---
 
 # Apply the latest platform update to environments
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to apply the latest platform release to your Finance and Operations environment.
+This article explains how to apply the latest platform release to your finance and operations environment.
 
 ## Overview
 
-In Finance and Operations, the platform consists of the following components:
+In finance and operations, the platform consists of the following components:
 
 -   Binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
 -   The following Application Object Tree (AOT) packages:
@@ -43,7 +33,7 @@ In Finance and Operations, the platform consists of the following components:
     -   Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. 
+> To move to the latest platform, your finance and operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. 
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the platform to the latest update.
@@ -180,11 +170,11 @@ If the build machine has been used for one or more builds, you should restore th
 if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 ```
 
-If a complete metadata backup doesn't exist, the command will create a new backup. This command will also stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. 
+If a complete metadata backup doesn't exist, the command will create a new backup. This command will also stop the finance and operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. 
 You should see output that resembles the following example. 
 
 ```powershell
-6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping Finance and Operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
+6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping finance and operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
 ```
 
 After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
@@ -195,7 +185,7 @@ After you've prepared your build environment for this update, apply the platform
 
 ## Additional resources
 
-[Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
+[Process for moving to the latest update of finance and operations](upgrade-latest-update.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

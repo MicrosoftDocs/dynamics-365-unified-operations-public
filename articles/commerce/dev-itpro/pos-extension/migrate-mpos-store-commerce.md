@@ -1,7 +1,7 @@
 ---
 title: Migrate Modern POS to Store Commerce
-description: This topic explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
-author: mugunthanm
+description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: overview
 ms.prod: 
@@ -9,17 +9,16 @@ ms.technology:
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 05-24-2022
+ms.author: josaw
+ms.search.validFrom: 2022-05-24
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
 # Migrate Modern POS to Store Commerce
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
-This topic explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. The Store Commerce app offers all the functionality of Modern POS, including integrated hardware support and offline mode.
+This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. The Store Commerce app offers all the functionality of Modern POS, including integrated hardware support and offline mode.
 
 For more information about Store Commerce app, see [Store Commerce app](../store-commerce.md).
 
@@ -28,7 +27,7 @@ For more information about Store Commerce app, see [Store Commerce app](../store
 | Features | Store Commerce | MPOS |
 | ------ | ------ |------ |
 | System requirements | Windows 11, Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise editions) with the latest available updates, or Windows Server 2019 | Windows 11, Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise editions) with the latest available updates, or Windows Server 2019 |
-| GitHub | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
+| Offline | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
 | Local or Dedicated HWS support | Yes | Yes | 
 | Device setup in Dynamics 365 Commerce headquarters | On the **Devices** page in Commerce headquarters, use the application as Store Commerce. | On the **Devices** page in Commerce headquarters, use the application as Retail Modern POS. |
 | Device activation | Required | Required |

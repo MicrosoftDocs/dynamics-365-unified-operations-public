@@ -1,11 +1,11 @@
 ---
 title: Use the dual-write wizard to link your environments
-description: This topic explains how to use the dual-write wizard to link a Finance and Operations app environment to your Dataverse environment.
+description: This article explains how to use the dual-write wizard to link a finance and operations app environment to your Dataverse environment.
 author: nhelgren
 ms.date: 05/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -18,13 +18,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-1. Sign in to the Finance and Operations app environment that you want to link to your Dataverse environment.
+1. Sign in to the finance and operations app environment that you want to link to your Dataverse environment.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
 
     ![Dual Write tile.](media/navigate-to-data-management.png)
 
 > [!NOTE]
-> If you are unable to access the Finance and Operations app and need to make changes to your environments you can also use this link to the [Data Integration Admin Portal](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftip.dataintegrator.trafficmanager.net%2FdualWrite%3Faxenv%3Ddxxxxxxxxx.cloudax.dynamics.com&data=04%7C01%7Csushmu%40microsoft.com%7C63cee32877c141d7c55108d96c9d49ba%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637660245076784515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=71dmOTyAgXpSHrwx4OVahwoFJLclbIsAW2DIVwZFUhk%3D&reserved=0) to go directly to the administration page.
+> If you are unable to access the finance and operations app and need to make changes to your environments you can also use this link to the [Data Integration Admin Portal](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftip.dataintegrator.trafficmanager.net%2FdualWrite%3Faxenv%3Ddxxxxxxxxx.cloudax.dynamics.com&data=04%7C01%7Csushmu%40microsoft.com%7C63cee32877c141d7c55108d96c9d49ba%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637660245076784515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=71dmOTyAgXpSHrwx4OVahwoFJLclbIsAW2DIVwZFUhk%3D&reserved=0) to go directly to the administration page.
 > 
 3. Select **New link to environment** to open the **Setup link to Dataverse** wizard.
 4. The **Choose environment** page lists all the Dataverse environments where the signed-in user is an environment admin. Select the Dataverse environment to link to, and then select **Next**.
@@ -43,14 +43,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 6. Review the summary, privacy notice, and consent, and then select **Create**.
 
-You've now linked your Finance and Operations app to the Dataverse environment. 
+You've now linked your finance and operations app to the Dataverse environment. 
 
 > [!NOTE]
 > If you don't see your table maps, or if you see a blank page, be sure to **Apply** the Dual-write application orchestration solution that you installed as part of the system requirements and prerequisities.
 
 7. Apply the dual-write application orchestration solution.
 
-    In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the table maps that you just downloaded and installed. After you apply the solution, you should see that the default table maps are published.
+    In the finance and operations app, on the **Dual-write** page, select **Apply Solution** to apply the table maps that you just downloaded and installed. After you apply the solution, you should see that the default table maps are published.
 
      ![Applying the table maps.](media/apply-entity-maps.png)
 
@@ -65,3 +65,4 @@ You've now successfully imported and applied a Microsoft-published dual-write ta
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

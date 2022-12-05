@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up vendor accounts
-description: This topic describes the types of information that you must specify when you create a new vendor account.
+description: This article describes the types of information that you must specify when you create a new vendor account.
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the types of information that you must specify when you create a new vendor account.
+This article describes the types of information that you must specify when you create a new vendor account.
 
 When you create a vendor account, you enter information about the vendor. This information is used to automatically enter data in documents and to track activity that involves the vendor. For example, you can configure the following information for a vendor:
 

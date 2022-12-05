@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Power BI integration with Entity store
-description: This topic describes how Entity store enables Power BI integration.
+description: This article describes how Entity store enables Power BI integration.
 author: MilindaV2
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BIMeasurementDeployManagementEntityStore
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265974
-ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 265974
+ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
+ms.search.form: BIMeasurementDeployManagementEntityStore
 ---
 
 # Power BI integration with Entity store
 
 [!include [banner](../includes/banner.md)]
 
-Entity store is an operational data store that is included with Microsoft Dynamics 365 Finance. This topic describes how Entity store enables Power BI integration.
+Entity store is an operational data store that is included with Microsoft Dynamics 365 Finance. This article describes how Entity store enables Power BI integration.
 
 Entity store is an operational data store that is included with the application. The Entity store feature was introduced in the Microsoft Dynamics AX platform update 1 (May 2016) release. This feature lets an administrator or power user stage aggregate measurements in a dedicated data store for reporting and analytics. (Aggregate measurements are a star schema that is modeled by using entities.) We call this data store Entity store. It’s a database that is optimized for reporting purposes. Entity store uses the in-memory, clustered columnstore index (CCI) functionality that is built into Microsoft SQL Server to optimize reporting and queries. Customers can use Microsoft Power BI DirectQuery models together with Entity store to enable high-volume, near-real-time analytical reporting over large volumes of data.
 

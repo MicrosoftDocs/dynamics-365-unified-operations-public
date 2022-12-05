@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-
+ms.custom: "intro-internal"
+ms.assetid: 
 ---
 
 # Mobile platform resources
@@ -96,14 +85,14 @@ During development it can be useful to attach a debugger to get more detailed in
 - Azure-hosted development machine (so the mobile device can point to it)
 
 #### Steps to debug the client side
-1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Finance and Operations app. For information about publishing a mobile workspace, see [Publish mobile workspaces](../publish-mobile-workspace.md).
+1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the finance and operations app. For information about publishing a mobile workspace, see [Publish mobile workspaces](../publish-mobile-workspace.md).
 
-2. Install the Android debug apk for the Finance and Operations app on an Android device:
+2. Install the Android debug apk for the finance and operations app on an Android device:
     - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
-    - Uninstall the Finance and Operations app - Ensure that any previous version of the Finance and Operations app has been uninstalled.
-    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on GitHub](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
-    - Install the Finance and Operations apk file - Confirm install of the Finance and Operations app via the apk file.
-    - Run the debug Finance and Operations app on the device and sign in.
+    - Uninstall the finance and operations app - Ensure that any previous version of the finance and operations app has been uninstalled.
+    - Download the apk file - From the device’s browser, navigate to the latest [finance and operations Android debug apk on GitHub](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Install the finance and operations apk file - Confirm install of the finance and operations app via the apk file.
+    - Run the debug finance and operations app on the device and sign in.
 
 3. Connect to the device from the debugging machine.
 
@@ -133,7 +122,7 @@ During development it can be useful to attach a debugger to get more detailed in
 - Azure-hosted development machine (so the mobile device can point to it)
 
 #### Steps to debug the server side
-1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Finance and Operations app. For information about publishing a mobile workspace, see [Publish mobile workspaces](../publish-mobile-workspace.md).
+1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the finance and operations app. For information about publishing a mobile workspace, see [Publish mobile workspaces](../publish-mobile-workspace.md).
 
 2. Open the app on your device, point to the Azure-hosted development machine, and sign in.
 
@@ -154,20 +143,20 @@ During development it can be useful to attach a debugger to get more detailed in
 ## Troubleshooting the app
 
 ### **[Resolved]** - No support for iOS14 due to issues with date and time controls
-Version 2.2.8 of the Finance and Operations mobile app fixes the known issues with the date and time pickers in iOS14. Ensure that you have the latest version of the app if you are experiencing issues running the application on iOS14.  
+Version 2.2.8 of the finance and operations mobile app fixes the known issues with the date and time pickers in iOS14. Ensure that you have the latest version of the app if you are experiencing issues running the application on iOS14.  
 
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
-To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Finance and Operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
+To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Finance and operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
 
 ### On Android devices with non-English regions, the comma can't be used as the decimal separator in an amount field
 On Android devices with non-English regions, using a comma as the decimal separator is standard practice. Problems using a comma in an amount field is an Android-specific problem because iPhone works as expected. On Android, use of the comma in an amount field is a problem with the default "gboard" keyboard and some other keyboards. Installing the SwiftKey keyboard (published by Microsoft) allows the entry of commas just like on iPhone: [SwiftKey Keyboard](https://www.microsoft.com/swiftkey).
 
 ### Change needed for ADFS to support Mobile Client in on-premises environments 
-If Active Directory Federation Services (ADFS) is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Finance and Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support WIA](/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
+If Active Directory Federation Services (ADFS) is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The finance and operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support WIA](/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
 
-### Using multi-factor authentication with the Finance and Operations app
-The Finance and Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in, it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this include:
+### Using multi-factor authentication with the finance and operations app
+The finance and operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in, it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this include:
 
 - Different device - Use a different device for the multi-factor authentication response so the app remains active on the original device.
 - Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
@@ -176,7 +165,7 @@ The Finance and Operations (Mobile Client) app facilitates user authentication w
 If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
 
 ### Intune support and conditional access
-The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune. Manually adding the app (following [Add iOS store apps to Microsoft Intune](/mem/intune/apps/store-apps-ios)) is also not supported because the device identifier cannot be passed.
+The finance and operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune. Manually adding the app (following [Add iOS store apps to Microsoft Intune](/mem/intune/apps/store-apps-ios)) is also not supported because the device identifier cannot be passed.
 
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
@@ -231,3 +220,4 @@ Avoid using forms with these patterns and controls when creating workspace recor
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

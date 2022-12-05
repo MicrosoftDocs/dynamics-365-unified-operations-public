@@ -2,7 +2,7 @@
 # required metadata
 
 title: Allocation bases
-description: This topic provides information about allocation bases. Allocation bases are key components in Cost accounting and are mostly used to allocate overhead costs. 
+description: This article provides information about allocation bases. Allocation bases are key components in Cost accounting and are mostly used to allocate overhead costs. 
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -178,7 +178,7 @@ Cost accounting supports a collection of statistical measures by using the follo
 - Data management import/export tool
 - Statistical measures
 
-To pull statistical measures from the system, a statistical measure provider template is required. For more information, see Statistical measure provider template. (Will add a link once this topic is written.)
+To pull statistical measures from the system, a statistical measure provider template is required. For more information, see Statistical measure provider template. (Will add a link once this article is written.)
 
 **Statistical measure provider templates**
 

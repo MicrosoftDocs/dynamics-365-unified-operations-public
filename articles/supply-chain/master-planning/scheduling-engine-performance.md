@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improve scheduling engine performance
-description: This topic provides information about the scheduling engine and how to improve performance. 
+description: This article provides information about the scheduling engine and how to improve performance. 
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 The resource scheduling engine is used when scheduling routes for planned and released production orders. The engine was originally released as part of Dynamics AX 2012 and has gone through several improvements since its release.
 
-The [job shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling) is an extremely complex combinatorial problem where solution time grows exponentially with the number of decision variables. Oftentimes, customers set up production routes and related data in a way that results in a scheduling problem that can't be solved in reasonable time even on the most modern hardware. This topic will help you understand the scheduling engine and how a specific setup can have influence on the performance.
+The [job shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling) is an extremely complex combinatorial problem where solution time grows exponentially with the number of decision variables. Oftentimes, customers set up production routes and related data in a way that results in a scheduling problem that can't be solved in reasonable time even on the most modern hardware. This article will help you understand the scheduling engine and how a specific setup can have influence on the performance.
 
 When it comes to improving the performance of the scheduling, general guidelines recommend reducing the complexity of the problem the engine needs to solve. Some of the main factors that can affect performance include:
 
@@ -298,7 +298,9 @@ An alternative to using parallel operations is either to model the pairs as "vir
 
 ### Route with quantity of resources higher than 1
 
-If setting the quantity of resources needed for an operation higher than one, then it results effectively the same as using primary/secondary operations because multiple parallel jobs are sent to the engine. However, for this case there is not an option of using specific resource assignments, because a quantity higher than one requires that more than one resource is applicable for the operation.
+If the quantity of resources needed for an operation is greater than one, then the result is effectively the same as using primary/secondary operations because multiple parallel jobs will be sent to the engine. However, for this case, it isn't possible to use specific resource assignments because a quantity higher than one requires more than one resource to be applicable for the operation.
+
+A secondary operation that has a resource load quantity greater than one means that the specified quantity of secondary resources is needed for each resource of the primary operation. For example, if a primary operation has its quantity of resources set to two and its secondary operation has its resource quantity set to three, then a total of six resources is needed for the secondary operation.
 
 ### Excessive use of finite capacity
 

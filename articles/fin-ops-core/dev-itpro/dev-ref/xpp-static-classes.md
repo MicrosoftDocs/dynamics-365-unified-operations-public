@@ -1,12 +1,12 @@
 ---
 title: X++ static class members
-description: This topic describes static classes in X++.
-author: RobinARH
+description: This article describes static classes in X++.
+author: josaw1
 ms.date: 12/02/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes static class members in X++. In general, static methods are intended for these cases:
+This article describes static class members in X++. In general, static methods are intended for these cases:
 
 -   The method has no reason to access the member variables that are declared in the class.
 -   The method has no reason to call any instance (non-static) methods of the class.

@@ -160,7 +160,7 @@ In this exercise, you will complete the following tasks:
 
     1. In the **LCS Service Connection** field, select the service connection that you created earlier.
     1. Enter any request name.
-    1. Select **Finance and Operations** as the product.
+    1. Select **finance and operations** as the product.
     1. Select **English** as the source language.
     1. Select a target language (that is, the language that you will be translating to).
     1. Select **User interface** as the translation type.
@@ -355,7 +355,7 @@ In this exercise, you will complete the following tasks:
 1. Configure the **DTS Alignment** task:
 
     1. In the **LCS Service Connection** field, select the service connection that you created earlier.
-    1. Select **Finance and Operations** as the product.
+    1. Select **finance and operations** as the product.
     1. Select **English** as the source language.
     1. Select **French** as the target language.
     1. Select **User Interface** as the translation type.
@@ -390,3 +390,4 @@ After the pipeline is run, you're redirected to the pipeline summary page.
 ## Summary
 
 In this tutorial, you learned about the functionality and features that the DTS Azure DevOps extension provides. You learned how to create a pipeline to automate translation requests. You also learned how to edit the translations and then regenerate them, based on your edits. Finally, you learned how to create XLIFF translation memories by using the alignment task.
+

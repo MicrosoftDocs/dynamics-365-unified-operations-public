@@ -2,7 +2,7 @@
 # required metadata
 
 title: Results of machine learning models
-description: This topic discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results.
+description: This article discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results. The target audience includes engineers, analysts, and managers who want to build their knowledge and skills in data science.
+This article discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results. The target audience includes engineers, analysts, and managers who want to build their knowledge and skills in data science.
 
 ## Confusion matrix
 After a supervised ML problem is trained on a set of historical data, it's tested by using data that is withheld from the training process. In this way, you can compare the predictions from the trained model with the actual values. The confusion matrix provides a means of evaluating how successful a classification problem is and where it makes mistakes (that is, where it becomes "confused").
@@ -77,7 +77,7 @@ Accuracy is an important tool for communicating with domain experts who aren't f
 
 For the payment prediction scenario, you can set a target for the ML model that includes factors in different payment behaviors. The target is that the model should improve upon a naïve guess by reducing the number of incorrect answers by at least 50 percent. In other words, you want a target accuracy that splits the different between the accuracy of a naïve guess and 100 percent.
 
-The following table summarizes this principle for the confusion matrices in this topic.
+The following table summarizes this principle for the confusion matrices in this article.
 
 | Model   | Naïve guess | Target | Model accuracy | Is the goal met?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
@@ -86,7 +86,7 @@ The following table summarizes this principle for the confusion matrices in this
 
 ## Classification F1 accuracy
 
-The final consideration in this topic is a more advanced measure of classification ML performance that is known as F1 accuracy.
+The final consideration in this article is a more advanced measure of classification ML performance that is known as F1 accuracy.
 
 Before F1 accuracy can be defined, two additional metrics must be introduced: precision and recall. Precision indicates how many of the total number of predictions that are specified as positive are correctly assigned. This metric is also known as the positive predictive value. Recall is the total number of the actual positive cases that were predicted correctly. This metric is also known as sensitivity.
 
@@ -101,7 +101,7 @@ The F1 measure combines precision and recall. The result is the harmonic mean of
 
 - F1 = 2 × (Precision × Recall) ÷ (Precision + Recall)
 
-Let's look at a concrete example. Earlier in this topic, there was an example of a model that predicted whether an animal was a dog or a cat. The illustration is repeated here.
+Let's look at a concrete example. Earlier in this article, there was an example of a model that predicted whether an animal was a dog or a cat. The illustration is repeated here.
 
 [![Species prediction example (repeated).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -115,7 +115,7 @@ As you can see, the F1 value is between the values for precision and recall.
 
 Although F1 accuracy isn't as easy to understand, it adds nuance to the basic accuracy number. It can also help with unbalanced datasets, as the following discussion will show.
 
-The [Model accuracy](#model-accuracy) section of this topic compared the following two confusion matrices. Even though the first model had lower accuracy, it was deemed a more useful model because it showed more improvement than the default guess of an on-time payment.
+The [Model accuracy](#model-accuracy) section of this article compared the following two confusion matrices. Even though the first model had lower accuracy, it was deemed a more useful model because it showed more improvement than the default guess of an on-time payment.
 
 ![Payment prediction vs. actuals example.](media/payment-prediction-matrix.png)
 

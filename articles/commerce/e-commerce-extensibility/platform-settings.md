@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Platform settings file
-description: This topic covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
-
+description: This article covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 author: samjarawan
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Platform settings file
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
+This article covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 
 The **platform.settings.json** file under the **\\src\\settings\\** directory holds various platform property settings that are used by the Commerce e-commerce runtime. This file might not exist by default. If it doesn't exist, you can add it under the **\\src\\settings\\** directory. The following example of a **platform.settings.json** file shows various supported property settings.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchases of fixed assets
-description: This topic provides information about purchases of fixed assets.
+description: This article provides information about purchases of fixed assets.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

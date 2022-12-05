@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: SPED fiscal resolution 13/2019 RJ
-description: This topic provides information about resolution 13/2019, and how a Nota fiscal eletrônica (NF-e) should be issued and recorded.
-author: v-oloski
+description: This article provides information about resolution 13/2019, and how a Nota fiscal eletrônica (NF-e) should be issued and recorded.
+author: AdamTrukawka
 ms.date: 10/22/2019
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:  
+ms.technology: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.0
-
+ms.dyn365.ops.version: 7
 ---
 
 # SPED fiscal resolution 13/2019 RJ

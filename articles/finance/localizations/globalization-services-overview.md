@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Dynamics 365 globalization services
-description: This topic provides an overview of Microsoft Dynamics 365 globalization services.
-author: JaneA07
+description: This article provides an overview of Microsoft Dynamics 365 globalization services.
+author: kfend
 ms.date: 04/12/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RCS, Regulatory Configuration Services, Localization, Electronic invoicing, Tax calculation
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["97423", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-
+ms.custom: 97423,  ""intro-internal
+ms.assetid: 
+ms.search.form: RCS, Regulatory Configuration Services, Localization, Electronic invoicing, Tax calculation
 ---
 # Dynamics 365 globalization services
 

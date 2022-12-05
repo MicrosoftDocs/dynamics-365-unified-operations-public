@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Standard audit file (SAF) for Poland
-description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
-author: LizaGolub
+description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This article provides information about the formats for Poland.
+author: AdamTrukawka
 ms.date: 05/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.search.region: Poland
+ms.author: atrukawk
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
-ms.search.region: Poland
-# ms.search.industry: 
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # Standard audit file (SAF) for Poland
 
 [!include [banner](../includes/banner.md)]
 
-Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
+Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This article provides information about the formats for Poland. 
 
 -  [SAF Accounting books - JPK_KR](#jpk-kr)
 -  [SAF Bank statements - JPK_WB](#jpk-wb)
@@ -715,7 +705,7 @@ To review or change the configuration for the SAF VAT sales and purchase registe
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization requirements - Create an ER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this topic. If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
+Initially, the configuration is an example of the VAT Invoices report (JPK_FA) based on the reporting codes that are described in table earlier in this article. If you have to adapt the configuration to another set of reporting codes, use the configuration to derive the format. 
 
 1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
 2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 

@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Test forms that use custom patterns
-description: This topic how to test forms using custom patterns.
+description: This article how to test forms using custom patterns.
 author: jasongre
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28291
-ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28291
+ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
 ---
 
 # Test forms that use custom patterns
 
 [!include [banner](../includes/banner.md)]
 
-This topic how to test forms using custom patterns.
+This article how to test forms using custom patterns.
 
 ## Introduction
 

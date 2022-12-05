@@ -1,6 +1,6 @@
 ---
 title: Intercompany currency conversions
-description: This topic explains currency conversions for intercompany transactions
+description: This article explains currency conversions for intercompany transactions
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

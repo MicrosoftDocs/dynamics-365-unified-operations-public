@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefits management overview
-description: This topic provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
+description: This article provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
 author: twheeloc  
 ms.date: 12/06/2021
 ms.topic: overview
@@ -29,11 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits management overview
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. Benefits management in Microsoft Dynamics 365 Human Resources provides a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
 
 - Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for an easier employee experience.
@@ -51,7 +46,7 @@ If you would like to access the demo data, you'll need to redeploy your sandbox 
 
 ## Enable Benefits management
 
-This topic describes how to turn on features in Human Resources. It also explains which existing features in Human Resources are replaced by Benefits management and which features are disabled after you turn on Benefits management.
+This article describes how to turn on features in Human Resources. It also explains which existing features in Human Resources are replaced by Benefits management and which features are disabled after you turn on Benefits management.
 
 > [!IMPORTANT]
 > After you enable Benefits management in a **Production** environment, you can't disable it. We recommend enabling and testing Benefits management in a **Sandbox** environment before enabling it in a **Production** environment. There are significant differences between the legacy Benefit functionality and new Benefits management functionality that require additional setup and should be tested prior to being placed into production.
@@ -155,6 +150,16 @@ Before you can process life events, you must have run open enrollment at least o
 - [Process life events](hr-benefits-process-life-events.md)
 - [Process life event changes](hr-benefits-process-life-event-changes.md)
 - [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
+
+After the life event processing is completed and for as long as the life event enrollment period is open, employees can make changes to the plan options that are affected by the life event. Admins can make the changes on behalf of employees. After the enrollment period has ended and no unconfirmed plan types are related to the life event transaction, the transaction is closed.
+
+All the plans that are affected by the life event must be either selected or waived and then confirmed. If a plan isn't selected, isn't waived, and therefore isn't confirmed, the life event transaction isn't closed.
+
+Admins can manually close a life event transaction as required, by selecting it and then selecting **Close**. If there are unconfirmed plans in the transaction, and an admin wants to close it, closure of the life event might restrict edits to those plans.
+
+Closed life events can't be deleted.
+
+Admins can reopen a life event transaction as required, by selecting it and then selecting **Reopen**.
 
 ## Rate updates (optional)
 

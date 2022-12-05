@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset criticality types
-description: The topic explains asset criticality types in Asset Management.
+description: The article explains asset criticality types in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-The topic explains asset criticality types in Asset Management. Asset criticality is related to assets and is transferred to work orders. It can't be changed on a work order. Asset criticality is used to calculate work order criticality during work order scheduling. In other words, it's used to calculate the extent to which a maintenance job on an asset affects the production schedule and productivity in your company. For more information about the setup that is related to the calculation of rating scores for work order scheduling, see [Asset Management parameters](../setup-for-objects/enterprise-asset-management-parameters.md).
+The article explains asset criticality types in Asset Management. Asset criticality is related to assets and is transferred to work orders. It can't be changed on a work order. Asset criticality is used to calculate work order criticality during work order scheduling. In other words, it's used to calculate the extent to which a maintenance job on an asset affects the production schedule and productivity in your company. For more information about the setup that is related to the calculation of rating scores for work order scheduling, see [Asset Management parameters](../setup-for-objects/enterprise-asset-management-parameters.md).
 
 To set up criticality, you first create the criticality types that should be used in the asset setup. You then set up asset criticalities.
 

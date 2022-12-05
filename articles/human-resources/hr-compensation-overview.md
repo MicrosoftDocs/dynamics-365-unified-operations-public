@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compensation plans
-description: This topic describes how to use compensation management to manage and process compensation plans.
+description: This article describes how to use compensation management to manage and process compensation plans.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: overview

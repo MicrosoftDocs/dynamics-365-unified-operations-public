@@ -1,6 +1,6 @@
 ---
 title: Intercompany packing slips
-description: This topic describes how to generate and print packing slips for intercompany transactions
+description: This article describes how to generate and print packing slips for intercompany transactions
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

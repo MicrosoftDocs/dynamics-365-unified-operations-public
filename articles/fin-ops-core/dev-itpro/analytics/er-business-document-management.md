@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Business document management overview
-description: This topic provides information about how to use the Business document management feature of the ER framework.
-author: NickSelin
+description: This article provides information about how to use the Business document management feature of the ER framework.
+author: kfend
 ms.date: 04/23/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-
+ms.assetid: 
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ---
 
 # Business document management overview
@@ -56,7 +45,7 @@ For a complete list of all the reports planned for the October 2020 release, see
 
 More reports will become available in future releases. Special notifications about additional reports will be sent separately. To learn how to review the list of currently available reports, see the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
 
-To learn more about this feature, complete the example in this topic.
+To learn more about this feature, complete the example in this article.
 
 ## Configure ER parameters
 
@@ -237,7 +226,7 @@ Business users can access business document templates for editing in the Busines
 - Users assigned to the role, **System administrator**.
 - Users assigned to any role that is configured to perform the duty, **Manage Business document templates** (AOT name **ERBDManageTemplates**).
 
-Use the following procedure to edit free text invoice templates in the Business document management workspace. Before you complete this procedure, you must have completed all of the preceding procedures in this topic.
+Use the following procedure to edit free text invoice templates in the Business document management workspace. Before you complete this procedure, you must have completed all of the preceding procedures in this article.
 
 1. Sign in as a user with access to the Business document management workspace.
 2. Open the Business document management workspace.

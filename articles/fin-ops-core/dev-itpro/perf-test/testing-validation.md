@@ -1,26 +1,19 @@
 ---
 title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
-author: jorisdg
+author: gianugo
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 24231
-ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 24231
+ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
 ---
 
 # Testing and validations
@@ -48,7 +41,7 @@ You can create new test cases to test the functionality in an application.
 1.  Open Visual Studio as an administrator.
 1.  On the **File** menu, click **Open** &gt; **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 1.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
-1.  Choose **Finance and Operations** as the project type to create.
+1.  Choose **finance and operations** as the project type to create.
 1.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then click **OK**. 
 1.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
 1.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 

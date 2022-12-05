@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch balancing
-description: This topic describes the batch balancing process.
+description: This article describes the batch balancing process.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the batch balancing process is supported.
+This article describes how the batch balancing process is supported.
 
 For more information, watch a [video on batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -211,7 +211,7 @@ that have a status of **Started**.
 In general, batch balancing can be applied to batch orders if the formula has at
 least one formula line where the **Ingredient type** is *Active*. (For the
 exception to this rule, see the "Batch orders that aren't applicable for batch
-balancing" section later in this topic.)
+balancing" section later in this article.)
 
 The batch balancing process can be divided into two subprocesses:
 
@@ -235,28 +235,27 @@ calculation to complete the process.
 
 After the ingredient quantities have been calculated, you can confirm and
 release the formula. The release process differs, depending on whether the
-products are enabled for the warehouse management processes:
+products are enabled for warehouse management processes (WMS):
 
-- If a product is enabled for the warehouse management processes, the formula line is released to the warehouse according to the principles for the warehouse management processes. The formula line is released in quantities that match the balanced quantities, and it's released for the specific batches that are selected for the active ingredients.
+- If a product is enabled for WMS, the formula line is released to the warehouse according to the principles for WMS. The formula line is released in quantities that match the balanced quantities, and it's released for the specific batches that are selected for the active ingredients.
 
     > [!NOTE]
     > Formula lines can be released to warehouse only as part of the batch balancing process. Although there are other options for releasing materials for production to warehouse, those options can't be used for formula lines.
 
-- If a product isn't enabled for the warehouse management processes, a production picking list is created for the product when you confirm and release the formula.
+- If a product isn't enabled for WMS, a production picking list is created for the product when you confirm and release the formula.
 
 In a single formula, you can combine products that are enabled for the warehouse
 management processes and products that aren't enabled for the warehouse
 management processes. When the two types of products are included in one
-formula, the products that are enabled for the warehouse management processes
-are released to warehouse. For the products that aren't enabled for the
-warehouse management processes, a picking list is created when the formula is
+formula, the products that are enabled for WMS
+are released to warehouse. For the products that aren't enabled for WMS, a picking list is created when the formula is
 confirmed and released.
 
 ### Batch orders that aren't applicable for batch balancing
 
 There are two exceptions to the rule that batch orders are applicable for batch balancing if the formula has at least one formula line where the **Ingredient type** is *Active*.
 
-1. If a formula contains an active ingredient for a product that is enabled for the warehouse management processes, but batch number is below location in the reservation hierarchy, the batch order isn't applicable for batch balancing.
+1. If a formula contains an active ingredient for a product that is enabled for the WMS, but batch number is below location in the reservation hierarchy, the batch order isn't applicable for batch balancing.
 1. If the formula unit of measure is different from the inventory unit of measure of the active ingredient, the batch order isn't applicable for batch balancing.
 
 A batch order that isn't applicable for batch balancing goes through the regular process cycle for batch orders.

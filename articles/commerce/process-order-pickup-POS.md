@@ -1,24 +1,14 @@
 ---
-# required metadata
-
 title: Process customer order pickups in POS
-description: This topic explains the functionality that is available in the point of sale (POS) application for processing customer order pickups.
-author: Hhainesms
+description: This article explains the functionality that is available in the point of sale (POS) application for processing customer order pickups.
+author: hhainesms
 ms.date: 01/06/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: global
-# ms.search.industry:
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8

@@ -2,28 +2,17 @@
 # required metadata
 
 title: Clienteling overview
-description: This topic provides an overview of new clienteling capabilities that are available in the store application.
+description: This article provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
-ms.date: 02/01/2021
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: ["260624", "intro-internal"]
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Version 10.0.7
 
 ---
 
@@ -33,6 +22,11 @@ ms.dyn365.ops.version: Version 10.0.7
 
 
 Many retailers, especially high-end specialty retailers, want their sales associates to form long-term relationships with their key customers. The associates are expected to know about these customers' likes and dislikes, purchase history, product preferences, and important dates, such as anniversaries and birthdays. Associates need a place where they can capture this information and easily find it when it's required. If this information is available in a single view, the associates can easily target customers who meet specific criteria. For example, they can find all customers who prefer to shop for handbags, or customers who have an important event approaching, such as a birthday or anniversary.
+
+The following video walks through an example scenario of clienteling in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSP]
 
 ## Client book
 
@@ -83,7 +77,7 @@ To turn on the clienteling functionality in your environment, follow these steps
     - Set the display order for these attributes. This display order determines which attributes should be shown on the customer card in the client book. A display order of 1 is considered higher than a display order of 2. Therefore, the attribute that has a display order of 1 will be shown before to the attribute that has a display order of 2.
 
     > [!NOTE]
-    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Turn on the integration of Customer Insights with Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) section later in this topic.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
+    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Turn on the integration of Customer Insights with Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) section later in this article.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
 
 6. On the **Commerce parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you just created.
 

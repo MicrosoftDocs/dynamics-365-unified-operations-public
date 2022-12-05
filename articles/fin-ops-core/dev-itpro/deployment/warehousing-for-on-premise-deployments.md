@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Warehousing app for on-premises deployments
-description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
+description: This article describes the prerequisites for the warehousing app for on-premises deployments.
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure Dynamics 365 for Finance and Operations – Warehousing app for on-premises deployments.
+This article describes how to configure Dynamics 365 Finance – Warehousing app for on-premises deployments.
 
 ## Prerequisites
 The Warehousing app is available on Android and Windows operating systems. To use the app for on-premises deployments, at a minimum, it must be version 1.1.1.0. You must also have one of the following supported versions of Dynamics 365 Finance + Operations (on-premises). Use the information in the following table to evaluate if your hardware and software environment supports the configuration.
@@ -50,7 +50,7 @@ For a successful authentication exchange between AD FS and Finance + Operations,
 1.  Enter the following command in the Windows PowerShell console to create the application entry.  
 
     ```powershell
-    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+    Add-AdfsClient -Name 'Dynamics 365 Finance - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
     ```
 
     - The \<Resource URL\> can, for example, be `https://ax.d365ffo.onprem.contoso.com` (where `https://ax.d365ffo.onprem.contoso.com`
@@ -187,3 +187,4 @@ The application connects to Finance + Operations (on-premises), and the sign-in 
 > In older releases, if you don't have a telemetry ID for the Warehousing app user, you might encounter some errors. The workaround is to sign in to Finance + Operations (on-premises) through the web client to get a telemetry ID.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

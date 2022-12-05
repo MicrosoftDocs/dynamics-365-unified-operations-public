@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Russian address formats
-description: This topic provides information about Russian address formats and importing from the FIAS.
-author: v-nadyuz
+description: This article provides information about Russian address formats and importing from the FIAS.
+author: AdamTrukawka
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Russian address formats
@@ -29,7 +19,12 @@ ms.dyn365.ops.version: 8.1
 
 Address formats determine how address data will appear when it's printed. In the system, you can set up address formats for every country or region where business is done. In Russia, addresses have a standardized form. However, additional information can be included, such as the district, street code, building complement, building, apartment, group of houses, group of flats, and land plot.
 
-The Federal Informational Address System (or FIAS) address database might be required for businesses in the Russian Federation. You can use specialized tools to import FIAS into your system and keep it up to date. This topic explains how to set up and use the FIAS import mechanisms.
+The Federal Informational Address System (or FIAS) address database might be required for businesses in the Russian Federation. You can use specialized tools to import FIAS into your system and keep it up to date. This article explains how to set up and use the FIAS import mechanisms.
+
+> [!NOTE]
+> The Federal Tax Service (FTS) stopped updating files with address information in the FIAS format in August 2021. The new format was approved by an order of the FTS that was dated May 13, 2020: No. ED-7-6 / 329 @ FIAS (old format that contains information about addresses in the structure of the administrative-territorial division); State address register (GAR, a new format that contains information about addresses in the municipal division). 
+>
+> For more information about how to import addresses in the GAR format, see [Import from GAR](rus-russian-address-format-import-gar.md)
 
 ## Set up Russian address formats
 

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Identity management pages and modules
-description: This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce.
+description: This article covers identity management pages and modules in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: brshoo
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Identity management pages and modules
@@ -32,7 +21,7 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce.
+This article covers identity management pages and modules in Microsoft Dynamics 365 Commerce.
 
 Identity management modules show elements on identity management pages that e-commerce site users use to interact with the identity management system that is associated with your Dynamics 365 Commerce environment. Specifically, identity management modules are used on sign-in, sign-up, password reset, and account profile edit pages. By default, Commerce modules are configured to use Azure Active Directory B2C (Azure AD B2C) as the identity provider.
 

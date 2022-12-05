@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create variable compensation plans
-description: This topic describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
+description: This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This topic explains how to set up the components that are needed for variable compensation and enroll an employee in a variable compensation plan.
+Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article explains how to set up the components that are needed for variable compensation and enroll an employee in a variable compensation plan.
 
 The calculation of variable compensation amounts for your employees can be based on several factors, such as the employee's performance, the employee's compensation level, and the department's performance.
 
@@ -48,7 +48,11 @@ The calculation of variable compensation amounts for your employees can be based
 Optionally, companies can set up **Vesting rules**. **Vesting rules** describe how the variable award should be allocated over time. For example, a vesting rule might state that the employee will receive 25 percent of the total award every year for the next four years. Vesting rules are informational only.
 
 ## Variable compensation plans
-The **variable compensation plan** contains the rules, calculation methods, and default values for the calculation of variable compensation for enrolled employees. When you create a variable compensation plan, you must set the variable compensation type. The variable compensation type determines whether the system calculates a currency amount or a number of units as the award. You must also set the calculation method:
+The **variable compensation plan** contains the rules, calculation methods, and default values for the calculation of variable compensation for enrolled employees. When you create a variable compensation plan, you must set the variable compensation type. The variable compensation type determines whether the system calculates a currency amount or a number of units as the award. 
+
+The **Restrict access to selected roles** parameter restricts access to the compensation plan to selected security roles that have been assigned to that plan in Human Resources. For example, when you create compensation plans that are for executives and should not be visible to all HR-specific roles, you can use this parameter to restrict access to those compensation plans. 
+
+You must also set the calculation method:
 
 -   **Point in time** – The calculation of the variable award is based on the fixed compensation that the employee had on a specific date. That date is specified on the process event when new compensation amounts are processed.
 -   **Composite** – An award amount is calculated for each unique fixed compensation pay rate that the employee had between the cycle start date and the cycle end date on the process event. The rates are then added together to determine the final award. For example, during the cycle, an employee transferred to a different position that had a different pay rate. In this case, the variable award is adjusted for the length of time that the employee had each pay rate.

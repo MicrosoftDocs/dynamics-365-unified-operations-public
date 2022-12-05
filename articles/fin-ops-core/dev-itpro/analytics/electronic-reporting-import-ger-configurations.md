@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Import Electronic reporting (ER) configurations
-description: This topic explains how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
-author: NickSelin
+description: This article explains how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
+author: kfend
 ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27621
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-
+ms.custom: 27621
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 ---
 
 # Import Electronic reporting (ER) configurations
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from Microsoft Dynamics Lifecycle Services (LCS) to a local business data application. It also explains how to upload the ER configurations from an ER repository to the local business data (LBD) application.
+This article explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from Microsoft Dynamics Lifecycle Services (LCS) to a local business data application. It also explains how to upload the ER configurations from an ER repository to the local business data (LBD) application.
 
 > [!IMPORTANT]
 > The use of LCS as a storage repository for ER configurations is being [deprecated](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). For more information, see [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
@@ -68,7 +58,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
     > All the ER configurations will be put into a zip file for download.
 
 8. Open the file, select all the ER configurations, and then copy them to the working directory for the repository of the **File system** type.
-9. On the **ER repositories** page, on the **Dynamics 365 for Finance and Operations** tab, click **Open** to view the list of ER configurations for the selected repository.
+9. On the **ER repositories** page, on the **Dynamics 365 Finance** tab, click **Open** to view the list of ER configurations for the selected repository.
 10. In the **Configurations** tree in the left pane, select an ER configuration.
 11. On the **Versions** FastTab, select the required version of the ER configuration.
 12. Click **Import** to download the selected version from this repository to the current instance.
@@ -87,3 +77,4 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

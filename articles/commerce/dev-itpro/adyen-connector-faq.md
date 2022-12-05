@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Dynamics 365 Payment Connector for Adyen FAQ
-description: This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
-author: rassadi
-ms.date: 03/10/2022
+description: This article provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
+author: Reza-Assadi
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Dynamics 365 Payment Connector for Adyen FAQ
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md). 
+This article provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md). 
 
 ### Can I share a payment terminal with multiple hardware stations?
 
@@ -61,11 +52,11 @@ The following tables show common payment events in Dynamics 365 Commerce and the
 
 | Commerce event | Adyen payment status code |
 |---|---|
-| Initial transaction in progress | **AuthorisedPending** |
-| Successful transaction | **Authorised** |
+| Initial transaction in progress | **AuthorizedPending** |
+| Successful transaction | **Authorized** |
 | Successful transaction in progress | **SentForSettle** |
 | Successful transaction completed | **Settled** |
-| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Void | **Canceled** (if authorized state only) or **Refunded** (if funds have been captured) |
 | Cancel | Canceled items aren't expected to appear in the Adyen portal. |
 | Linked refund | **SentForRefund** or **Refunded** |
 | Unlinked refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. |
@@ -76,9 +67,9 @@ The following tables show common payment events in Dynamics 365 Commerce and the
 
 | Commerce event | Adyen payment status code |
 |---|---|
-| Successful Transaction | **Authorised** |
+| Successful Transaction | **Authorized** |
 | Authorisation | **Settled** |
-| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Void | **Canceled** (if authorized state only) or **Refunded** (if funds have been captured) |
 | Cancel | Canceled items aren't expected to appear in the Adyen portal. |
 | Linked Refund | **SentForRefund** or **Refunded** (*Call center only*) |
 | Unlinked Refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. (*Call center only*) |
@@ -92,6 +83,10 @@ For a complete list of Adyen payment status codes, see [Payments lifecycle](http
 ### Can I cancel a refund action?
 
 Adyen supports two types of refunds: referenced and unreferenced. Referenced refunds can't be canceled. For unreferenced refunds, a cancellation attempt is made, but successful cancellation depends on the payment issuer and the potential delay that is configured for the processing by Adyen. If an error occurs when you force a local refund cancellation in POS, POS allows for a credit. However, if the cancellation of the unlinked refund isn't accepted on the payment gateway, discrepancies might occur between Dynamics 365 reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
+
+### Is 3D Secure (3DS) authentication supported in Commerce call center iFrame payment windows?
+
+No, the payment window used in the Commerce call center payment forms (configured via the connector on the **Payment Services** page in headquarters) doesn't support 3DS authentication flows. Customer authentications requiring passwords or Strong Customer Authentication (SCA) are only supported in the online channel where customers are directly entering their sensitive and protective data.
 
 ## Next steps
 

@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: RB/SL depreciation
 description: RB/SL is a depreciation method that is used in France. Depreciation amounts are calculated by using both the reducing balance depreciation method and the straight-line remaining depreciation method. The larger of the two calculated depreciation amounts is then used as the RB/SL reducing balance depreciation amount.
-author: Anasyash
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetRBSLFactorTable
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 30271
 ms.search.region: France
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 30271
+ms.search.form: AssetRBSLFactorTable
 ---
 
 # RB/SL depreciation

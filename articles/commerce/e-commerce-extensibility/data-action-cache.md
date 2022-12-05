@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Data action cache options
-description: This topic provides an overview of supported data action cache options in Dynamics 365 Commerce. 
+description: This article provides an overview of supported data action cache options in Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Data action cache options
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of supported data action cache options in Dynamics 365 Commerce.
+This article provides an overview of supported data action cache options in Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce online software development kit (SDK) supports caching entities at the application level, which enables caching of data action responses to improve rendering performance and reduce server load. For more information, see [Data actions overview](data-actions.md).
 

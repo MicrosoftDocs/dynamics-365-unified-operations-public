@@ -3,7 +3,7 @@
 
 
 title: Map channels to e-commerce sites
-description: This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
+description: This article describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Map channels to e-commerce sites
 
-This topic describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
+This article describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that can be extrapolated for most other business requirements.
 
 Dynamics 365 Commerce supports many business scenarios for mapping [online channels](#channels) that have a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-sites) experiences for customers.
 
-This topic covers the following scenarios:
+This article covers the following scenarios:
 
 - **A single-language channel that has a single e-commerce site experience.** For example, this scenario might involve a single brand site that is configured for the US English market.
 - **A multi-language channel that has a single localized site experience.** For example, this scenario might involve a single brand site that is configured for Canada with French and English language support. In this scenario, users who select different languages have the same site experience, but it's localized into each user's selected language.
@@ -68,7 +68,7 @@ The following example illustration shows a channel configuration in Commerce hea
 
 ![Legal entity, currency, and language values for the Adventure Works online store highlighted in Commerce headquarters.](media/channel-mapping-3.png)
 
-The single online channel can be mapped to a single e-commerce site in site builder. For information about how to create a new site and map it to a channel, see the [Map a channel to a site in site builder](#map-a-channel-to-a-site-in-site-builder) section of this topic.
+The single online channel can be mapped to a single e-commerce site in site builder. For information about how to create a new site and map it to a channel, see the [Map a channel to a site in site builder](#map-a-channel-to-a-site-in-site-builder) section of this article.
 
 ### Multi-language channel that has a single localized site experience
 
@@ -78,7 +78,7 @@ The limitation of this scenario is that a single channel can be configured with 
 
 Each language in a channel can be configured with its own domain name. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and the `www.adventure-works-fr.ca` domain can be configured for the Canada French version. Alternatively, different languages in a channel can be configured in a single domain, and then a different path can be used for each language. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and then the `www.adventure-works.ca/fr` path can be used for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site, based on the user's location.
 
-For information about how to enable customers to manually switch between languages, see the [Add and configure the site picker module](#add-and-configure-the-site-picker-module) section of this topic. For information about how to customize localized pages and fragments, see the [Manage site content that has multiple channels and languages](#manage-site-content-that-has-multiple-channels-and-languages) section.
+For information about how to enable customers to manually switch between languages, see the [Add and configure the site picker module](#add-and-configure-the-site-picker-module) section of this article. For information about how to customize localized pages and fragments, see the [Manage site content that has multiple channels and languages](#manage-site-content-that-has-multiple-channels-and-languages) section.
 
 ### Multi-language channel that has a different site experience per language
 
@@ -92,7 +92,7 @@ A branded site might require multiple online channels per region to support a di
 
 In this scenario, each market can be configured with its own domain names. For example, the `www.adventure-works.com` domain can be configured for the US market, and the `www.adventure-works.de` domain can be configured for the German market. Alternatively, each market can be configured to use a different path. For example, the `www.adventure-works.com` domain can be configured for the US market, and then the `www.adventure-works.com/de` path can be used for the German market. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect users to the correct site, based on their region.
 
-You might also want your site to provide a drop-down list that lets users manually switch to a specific market. For more information, see the [Add and configure the site picker module](#add-and-configure-the-site-picker-module) section of this topic.
+You might also want your site to provide a drop-down list that lets users manually switch to a specific market. For more information, see the [Add and configure the site picker module](#add-and-configure-the-site-picker-module) section of this article.
 
 For information about how to configure multiple channels on a single site, see the [Configure multiple channels on an e-commerce site](#configure-multiple-channels-on-an-e-commerce-site) section.
 
@@ -185,7 +185,7 @@ Instead of manually creating each page and fragment, you can export each page an
 
 A site that has multiple channels and/or languages stores a unique variant of each page and fragment for each combination of a channel and a language. This behavior enables the page variants to contain localized data but also gives you the flexibility to change the look and feel of a page for a specific variant.
 
-For information about how to work with page variants, see the [Implement page variants for each language](#implement-page-variants-for-each-language) section of this topic.
+For information about how to work with page variants, see the [Implement page variants for each language](#implement-page-variants-for-each-language) section of this article.
 
 ## Configure multiple channels on an e-commerce site
 

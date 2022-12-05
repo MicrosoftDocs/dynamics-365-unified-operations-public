@@ -1,38 +1,28 @@
 ---
-
-# required metadata
-
 title: Create rules for Optimization advisor
-description: This topic discusses how to add new rules to Optimization advisor. 
-author: roxanadiaconu
+description: This article discusses how to add new rules to Optimization advisor.
+author: kamaybac
 ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SelfHealingWorkspace
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.reviewer: kamaybac
+ms.search.region: global
+ms.author: kamaybac
+ms.search.validFrom: 2017-12-01
+ms.dyn365.ops.version: 7.3
 ms.custom: 
 ms.assetid: 
-ms.search.region: global
 ms.search.industry: 
-ms.author: sericks
-ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 
-
+ms.search.form: SelfHealingWorkspace
 ---
 
 # Create rules for Optimization advisor
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create new rules for **Optimization advisor**. For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title. Using titles on cases makes them easily identifiable and searchable. While quite simple, this example shows what can be achieved with optimization rules. 
+This article explains how to create new rules for **Optimization advisor**. For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title. Using titles on cases makes them easily identifiable and searchable. While quite simple, this example shows what can be achieved with optimization rules. 
 
 A *rule* is a check on application data. If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created. The opportunities can be acted upon and, optionally, the impact of the actions can be measured. 
 
@@ -256,7 +246,7 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-For more information, watch the short YouTube video: [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+For more information, watch the short YouTube video: [Optimization advisor in Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

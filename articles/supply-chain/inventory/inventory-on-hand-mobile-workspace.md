@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory on-hand mobile workspace
-description: This topic provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
+description: This article provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
 author: yufeihuang
 ms.date: 05/24/2022
 ms.topic: article
@@ -32,9 +32,9 @@ ms.search.validFrom: 2016-11-30
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
+This article provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
 
-This mobile workspace is intended to be used with the Finance and Operations (Dynamics 365) mobile app.
+This mobile workspace is intended to be used with the finance and operations (Dynamics 365) mobile app.
 
 ## Overview
 Typically, companies have multiple shipments and multiple receipts of inventory every day. These movements constantly change the on-hand inventory status. The **Inventory on-hand** mobile workspace lets you see the cross-company on-hand inventory status, so that you can gain the latest insights into inventory data on the mobile device of your choice. Regardless of whether you work in the warehouse, purchasing, sales, manufacturing, or management, or have other roles, you can access on-hand inventory data anytime and anywhere. 
@@ -99,7 +99,7 @@ If Platform update 3 or later has been deployed for your organization, the syste
 
 ## Download and install the mobile app
 
-Download and install the Finance and Operations (Dynamics 365) mobile app:
+Download and install the finance and operations (Dynamics 365) mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -136,3 +136,4 @@ Download and install the Finance and Operations (Dynamics 365) mobile app:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

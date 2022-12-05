@@ -1,8 +1,8 @@
 ---
 title: What's new or changed in dual-write
-description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
+description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 05/05/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,7 +16,81 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../../includes/banner.md)]
 
-Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## October 2022 release 
+
+The October release of [Dual-write core solution 1.0.37.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug | Before this release, dual-write plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. | Preview |
+
+The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | An OnLoad error occurred when the **Contact for Party** page was used to create a new record in **Contact for Customer or Vendor**. | General availability |
+| Bug fix | During some lead qualification scenarios, the postal address and electronic address weren't being synced from the contact entity to the party entity. Global address book plug-ins weren't being invoked in these scenarios. | General availability |
+| Error handling | Provide an actionable error message if a company ID isn't included on the **Account** page. | General availability |
+| Bug fix | The street information on the **Address** page wasn't shown correctly in the **Street** field on the **Postal address** page if **Street 2** information wasn't present. | General availability |
+| Bug fix | County information for the customer address wasn't synced between finance and operations apps and customer engagement apps. Global address book plug-ins have been corrected to address this issue. | General availability |
+
+## August 2022 release
+
+The August release of Dual-write Global Address Book solution 3.5.1.22 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Contacts that were created from the marketing portal and during the lead qualification scenario didn't having a valid party ID. | General availability |
+| Bug fix | Fixed the following error that occurred when a contact was created from CRM portals: "The 'contact' entity must be in the default (null) or unchanged state." | General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABExtended | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABPartyAnchor | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.22 | 3.5.1.55 |
+
+## July 2022 release 
+
+The July release of [Dual-write core solution 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Feature | [Enable a five-minute session time-out window for dual-write sessions](5-minute-mode.md) | General availability |
+
+The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Update the Postal address table when an address is updated in the Marketing portal. | General availability |
+| Bug fix | Fix the time zone conversion for addresses that have an expiration date of **Never** when a date is passed from customer engagement apps to finance and operations apps. | General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.0.1 | 3.5.1.6 |
+| Dynamics365GABExtended | Yes | 3.5.0.1 | 3.5.1.6 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.0.1 | 3.5.1.6 |
+| Dynamics365GABPartyAnchor | Yes | 3.5.0.1 |3.5.1.6 |
+| Dynamics365GABPartyCommon | Yes | 3.5.0.1 | 3.5.1.6 |
+
+## June 2022 release
+
+The June release of [Dual-write core solution 1.0.35.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following features and bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Fixes a bug where dual-write fails for incorrectly formatted table look-ups that have a missing look-up attribute value in the transform. | General availability |
+| Error handling | Provides an actionable error message for an invalid authentication failure during the setup from Microsoft Dynamics Lifecycle Services (LCS) or Power Platform admin center. | General availability |
+| Performance | Manages the dual-write plug-ins volume and removes outdated plug-ins from the environment. | General availability |
+| Bug fix | The dual-write plug-in time-out duration is now synchronized with the finance and operations live sync time-out duration. Therefore, the dual-write transaction commit must succeed on both sides within a two-minute window. Otherwise, it fails on both sides. | General availability |
+| Compliance | For compliance reasons, when entity maps are paused in dual-write, the data is stored for only 24 hours. Administrators are requested to run the maps within 24 hours. | General availability |
 
 ## April 2022 release
 
@@ -29,7 +103,7 @@ The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 
 | Bug fix | Updates to electronic address fields on the Contact table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
 | Bug fix | Show the primary contact name for the primary contact that is selected on the **Associated contacts** tab on account, contact, and vendor pages. | General availability |
 | Bug fix | Initial synchronization of accounts/contacts isn't creating electronic addresses in accounts/contacts tables, even though electronic addresses are created on the **Electronic addresses** tab (msdyn_partyelectronicaddress table). | General availability |
-| Bug fix | Addresses of accounts aren't available under **Ship To/Bill To address** on the quote page after the address is updated for the accounts in Finance and Operations apps. | General availability |
+| Bug fix | Addresses of accounts aren't available under **Ship To/Bill To address** on the quote page after the address is updated for the accounts in finance and operations apps. | General availability |
 | Bug fix | Fix the duplicate address record error that occurs while new addresses are created in the Customer Address table in Dataverse. | General availability |
 | Bug fix | Fix a language transformation issue that occurs on party records when the **en-us** language is selected in Dataverse. | General availability |
 | Bug fix | Fixed the error ("The length of the 'msdyn_firstname' attribute of the 'msdyn_vendor' entity exceeded the maximum allowed") that occurred during update of account records if the workflows for data synchronization between the accounts and msdyn_vendor tables are activated. | General availability |
@@ -48,7 +122,7 @@ The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 
 This release includes the following map changes:
 
 + Apply the latest map version 1.0.0.2 for the CDS Parties - msdyn_parties map.
-+ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information will be synced from Finance and Operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. Note that no subsequent updates/additions are allowed with this map, because the Finance and Operations entity for address roles is read only.
++ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information will be synced from finance and operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. Note that no subsequent updates/additions are allowed with this map, because the finance and operations entity for address roles is read only.
 
 
 ## March 2022 release
@@ -89,8 +163,8 @@ The January 2022 release of [Dual-write application orchestration solution versi
 | Feature | Description | Status |
 |------|---------|-------|
 | Bug fix| In the customer engagement apps, the quote line information form filters warehouses by site, instead of by company. | General availability |
-| Bug fix| In Finance and Operations apps, when a product is released without an item model group set, the operation fails due to a blank value being set for the **FieldServiceProductType** attribute in customer engagement apps. This has been fixed by allowing the **FieldServiceProductType** attribute to allow a “NotAvailable” value. | General availability |
-| Bug fix| When Dataverse sends an updated sales price of 0.00, it doesn't get updated in Finance and Operations apps. | General availability |
+| Bug fix| In finance and operations apps, when a product is released without an item model group set, the operation fails due to a blank value being set for the **FieldServiceProductType** attribute in customer engagement apps. This has been fixed by allowing the **FieldServiceProductType** attribute to allow a “NotAvailable” value. | General availability |
+| Bug fix| When Dataverse sends an updated sales price of 0.00, it doesn't get updated in finance and operations apps. | General availability |
 
 This release includes one map change named [CDS released distinct products] - [products]. In order to take the map changes, apply "Dynamics365FinanceAndOperationsDualWriteMaps" solution version 2.3.3.2 and update the [CDS released distinct products] - [products] map to version 1.0.0.3.
 
@@ -116,10 +190,10 @@ The November 2021 release of [Dual-write Party and Global Address Book Solutions
 | Feature | Description | Status |
 |------|---------|-------|
 | [Single view for party](view-party.md)| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
-| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and Finance and Operations apps. | General availability |
+| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and finance and operations apps. | General availability |
 | Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
-| Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in Finance and Operations apps. | General availability |
-| Bug fix| In Finance and Operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change does not reflect in Dataverse. | General availability |
+| Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in finance and operations apps. | General availability |
+| Bug fix| In finance and operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change does not reflect in Dataverse. | General availability |
 
 ## September 2021 release of party and global address book 
 
@@ -155,7 +229,7 @@ This release contains the features and bug fixes listed in the following table.
 |Bug fix | Some client APIs have been deprecated and replaced with new APIs. The JavaScript code in the dual-write orchestration package has been upgraded to use the new client APIs.| 	General availability |
 |Bug fix | Because dual-write doesn’t support offline mode, the company name does not automatically contain a default value. You must select the company manually.| 	General availability |
  |Bug fix | The **Vendor** group field on the **Accounts** form does not filter values based on the selected company.| 	General availability |
-|Bug fix | Saving a **Vendor** record in a Finance and Operations app fails with the error message *Cannot convert the literal '' to the expected type 'Edm.Int32'*. | 	General availability |
+|Bug fix | Saving a **Vendor** record in a finance and operations app fails with the error message *Cannot convert the literal '' to the expected type 'Edm.Int32'*. | 	General availability |
 |Bug fix | The transformation on the **Vendor payment method** map required an update. The enumeration on the **PAYMENTSTATUS** field is incorrect resulting in error message *Cannot convert the literal 'Confirmed' to expected type 'Edm.Int32'*. | 	General availability |
 |Bug fix | **Sales order header** and **Sales order line** maps conflict with **Project contract header** and **Project contract line** maps. You couldn't enable both at once.| 	General availability |
 |Bug fix | Create an error message to state that **Ship To Country/Region** is a mandatory field on **Sales order** and **Purchase order**.| 	General availability |
@@ -233,8 +307,8 @@ This release contains the bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Bug fix| In customer engagement apps, when a lead contains postal address and is qualified, the postal address is associated with the account. It doesn't flow to Finance and Operations apps, however.| General availability |
-| Bug fix| In customer engagement apps, when you add an address to an existing account or contact, the address doesn't flow to Finance and Operations apps.| General availability |
+| Bug fix| In customer engagement apps, when a lead contains postal address and is qualified, the postal address is associated with the account. It doesn't flow to finance and operations apps, however.| General availability |
+| Bug fix| In customer engagement apps, when you add an address to an existing account or contact, the address doesn't flow to finance and operations apps.| General availability |
 | Bug fix| More address fields are added to the Customer Address table. | General availability |
 | Bug fix| In Dataverse, we changed the display name of msdyn_contactforparties table to **Contact for Customer or Vendor** | General availability |
 | Bug fix| We fixed a language transformation in the Contacts V2 (msdyn_contactforparties) mapping. | General availability |
@@ -280,29 +354,29 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
-| [Party and Global Address Book](party-gab.md) | Brings schema parity with Finance and Operations apps, and gives you the ability to solve complex business problems on Dataverse related to customers, vendors, and contact persons. To use this feature, install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).<br>Supported Finance and Operations versions are 10.0.605.30025 (platform update 14), 10.0.644.20031 (platform update15), 10.0.689.10027 (platform update 16), and 10.0.761.1 (platform update 17) | General availability |
-| Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a Finance and Operations app cause an insert in Dataverse instead of an update. Please use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported Finance and Operations version is 10.0.778.0 (platform update 42) | General availability |
+| [Party and Global Address Book](party-gab.md) | Brings schema parity with finance and operations apps, and gives you the ability to solve complex business problems on Dataverse related to customers, vendors, and contact persons. To use this feature, install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).<br>Supported finance and operations versions are 10.0.605.30025 (platform update 14), 10.0.644.20031 (platform update15), 10.0.689.10027 (platform update 16), and 10.0.761.1 (platform update 17) | General availability |
+| Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a finance and operations app cause an insert in Dataverse instead of an update. Please use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported finance and operations version is 10.0.778.0 (platform update 42) | General availability |
 | Bug fix| Localization bug fixes and updates. | General availability |
 | Bug fix| A note without a description throws error. | General availability |
-| Bug fix| In Finance and Operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order for example, **canceled** or **fulfilled**. That action triggers a re-cancellation or re-fulfillment causing a conflict error. | General availability |
+| Bug fix| In finance and operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order for example, **canceled** or **fulfilled**. That action triggers a re-cancellation or re-fulfillment causing a conflict error. | General availability |
 
 ## February 2021 release
 
-The February 2021 release of [Dual-write application orchestration solution version  2.2.2.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of Finance and Operations apps and version 9.1.0000.11732 or newer of Dataverse.
+The February 2021 release of [Dual-write application orchestration solution version  2.2.2.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of finance and operations apps and version 9.1.0000.11732 or newer of Dataverse.
 
 This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
 | [Commerce price engine for sales quotations](commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
-| [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and Finance and Operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
+| [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and finance and operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
 
 > [!IMPORTANT]
 > If you don't need notes integration, do not install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or later. If you install the update, you won't be able to uninstall the notes feature. 
 
 ## January 2021 release
 
-The January 2021 release of [Dual-write application orchestration solution version 2.2.1.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of Finance and Operations apps.  
+The January 2021 release of [Dual-write application orchestration solution version 2.2.1.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -311,7 +385,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | French-localized strings in the user interface exceeded the maximum limit of 100 characters. | General availability |
 | Bug fix | Error while starting the Dataverse released distinct products map. | General availability |
 
-The January 2021 release of [Dual-write application orchestration solution version 2.2.1.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of Finance and Operations apps.  
+The January 2021 release of [Dual-write application orchestration solution version 2.2.1.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -327,7 +401,7 @@ The December 2020 release of the Dual-write core solution (1.0.24) contains the 
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Signal repeater service | Enables the dual-write runtime plugin to communicate with the Finance and Operations signal repeater service with authentication support. | General availability
+| Signal repeater service | Enables the dual-write runtime plugin to communicate with the finance and operations signal repeater service with authentication support. | General availability
 
 ## November 2020 release
 
@@ -356,7 +430,7 @@ The September 2020 release contains the features and bug fixes listed in the fol
 |------|---------|-------|
 | Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** tables. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that is due in October 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [dual-write Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all). | General availability |
 | [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** column. |   General availability   |  
-| [Money to decimal data type conversion](currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. Finance and Operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
+| [Money to decimal data type conversion](currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
 | Security role for company and currency exchange | Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
 | Security role for setup | Adds the **Dual-write Runtime User** security role. This role allows non-administrator users to create rows that are set up for dual-write. This feature is part of Dual-write core solution 10.0.21. | General availability |
 | Tracing | Internal column added for use in tracing. This feature is part of Dual-write core solution 10.0.21. | General availability |
@@ -387,10 +461,10 @@ The May 2020 release of the dual-write orchestration package (version 2.0.777.35
 | Feature | Description | Status |
 |------|---------|-------|
 | Look up on-hand inventory | Ability to look up on-hand inventory and available-to-promise dates on forms in customer engagement apps. | General availability |
-| Unit conversions | When unit conversions occur in a Finance and Operations app at the quote line and order line, the customer engagement app honors the unit conversions and reflects the respective changes to unit and price in the customer engagement app quote detail and order detail. | General availability |
-| Currency change restriction | When you try to change the currency in a Finance and Operations app for an existing quote or order, the change fails.   | General availability |
+| Unit conversions | When unit conversions occur in a finance and operations app at the quote line and order line, the customer engagement app honors the unit conversions and reflects the respective changes to unit and price in the customer engagement app quote detail and order detail. | General availability |
+| Currency change restriction | When you try to change the currency in a finance and operations app for an existing quote or order, the change fails.   | General availability |
 | Parity in **Account** and **Contact** forms | Bring attribute parity in **Account** and **Contact** forms in customer engagement apps for B2B and B2C customers.  | General availability |
-| No address duplication | Don’t duplicate an address in a Finance and Operations app when there's a create or update action on a customer engagement app quote or order.  | General availability |
+| No address duplication | Don’t duplicate an address in a finance and operations app when there's a create or update action on a customer engagement app quote or order.  | General availability |
 | **SalesTaxGroup** support | Support for **SalesTaxGroup** in **Account** and **Contact** forms for business-to-business (B2B) and business-to-consumer (B2C) customers. | General availability |
 | Create sellable contacts | Allow creation of a sellable contact using the **Quick Create: Contact** form in customer engagement apps. | General availability |
 | Quote and order creation | Enable quote and order creation for B2C customers. | General availability |

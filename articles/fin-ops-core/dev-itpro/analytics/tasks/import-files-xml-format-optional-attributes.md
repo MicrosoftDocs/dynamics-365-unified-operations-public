@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: (RCS) Import files in XML format with optional attributes
-description: This topic provides information about how a user can design ER format configuration to import files in XML format containing optional attributes.
-author: NickSelin
+description: This article provides information about how a user can design ER format configuration to import files in XML format containing optional attributes.
+author: kfend
 ms.date: 07/01/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form:  
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2019-07-28 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2019-07-28
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: 
 ---
 # (RCS) Import files in XML format with optional attributes
 

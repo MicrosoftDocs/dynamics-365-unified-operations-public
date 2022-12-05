@@ -1,25 +1,190 @@
 ---
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
-description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
-author: mugunthanm
+description: This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
+author: josaw1
 ms.date: 05/03/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-11-10
 ms.dyn365.ops.version: 10.0.16
+ms.search.industry: Retail
 ---
 
-# Download Retail SDK samples and reference packages from GitHub and NuGet
+# Download Commerce SDK samples and reference packages from GitHub and NuGet
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+This article describes to how to download Microsoft Dynamics 365 Commerce software development kit (SDK) samples from GitHub and reference packages. 
 
-This topic applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
+> [!NOTE]
+> This article applies to Commerce SDK version 10.0.16 or later. For more information about how to download earlier versions of the Commerce SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
+
+The Commerce SDK includes the code, code samples, templates, and tools that are required to extend or customize Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+
+The Commerce SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
+
+![Commerce components.](media/developer-environment.png)
+
+## Extension components in Dynamics 365 Commerce 
+
+The following tables provide information about the components in the Commerce SDK that can be customized for different scenarios. 
+
+### Client (Store Commerce)
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Extend the Store Commerce app for user experience (UX) changes, client logic, workflows, and simple validations.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.InStore">Store Commerce app samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>TypeScript, HTML, and CSS</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../pos-run-samples.md">Run the point of sale (POS) samples</a></td>
+</tr>
+</tbody>
+</table>
+
+### Commerce Runtime (CRT)
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Extend CRT to add or change business logic (for example, logic for calculating tax, prices, or discounts).</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.ScaleUnit">CRT samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../commerce-runtime-extensibility.md">Commerce runtime (CRT) and Retail Server extensibility</a></td>
+</tr>
+</tbody>
+</table>
+
+### Headless Commerce APIs
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Create a Headless Commerce API extension to expose new Commerce APIs to the client.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.ScaleUnit">Retail Server samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>Open Data Protocol (OData) and C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+### TypeScript proxy
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>A TypeScript proxy is required if new Headless Commerce API extensions must be consumed in the POS or E-Commerce clients.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.ScaleUnit">CommerceProxyGenerator</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>OData and C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Hardware station
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>A Hardware station is required to add or change logic that is related to peripherals.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.InStore">src\HardwareStationSample samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../hardware-device-extension.md">Integrate POS with a new hardware device</a></td>
+</tr>
+</tbody>
+</table>
+
+### Payment connector
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Integrate the POS with a new payment connector.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.InStore">src\HardwareStationSample\PaymentDevices</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../end-to-end-payment-extension.md">Create an end-to-end payment integration for a payment terminal</a></td>
+</tr>
+</tbody>
+</table>
+
+## Best practices for naming
+
+The C\# source code in the Commerce SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and extension types. If your extension code references a type from the Microsoft binary, use **Microsoft.Dynamics** for the reference, to distinguish between Microsoft libraries and the libraries from the extension. The extension libraries must not begin with the **Microsoft.Dynamics** name.
+
+## Deployment packages
+
+After extension development (CRT, Retail Server, database scripts, POS, and Hardware station), you can generate deployment packages to deploy into test, sandbox, and production environments. For more information, see [Create deployable packages](../CSU-packaging.md).
 
 The following sample repositories contain code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repositories in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
 
@@ -31,12 +196,10 @@ The samples in the repository are organized by Dynamics 365 Commerce application
 
 | Release branch name                                                                          | Version | Application release version |
 | -------------------------------------------------------------------------------------------- | ------- | --------------------------- |
-| [Release/9.26](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.26) | 9.26.\* | 10.0.16                     |
-| [Release/9.27](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.27) | 9.27.\* | 10.0.17                     |
-| [Release/9.28](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.28) | 9.28.\* | 10.0.18                     |
-| [Release/9.29](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29) | 9.29.\* | 10.0.19                     |
-| [Release/9.30](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.30) | 9.30.\* | 10.0.20                     |
-| [Release/9.31](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.31) | 9.31.\* | 10.0.21                     |
+| [Release/9.38](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.38) | 9.38.\* | 10.0.28                     |
+| [Release/9.37](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.37) | 9.37.\* | 10.0.27                     |
+| [Release/9.38](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.36) | 9.36.\* | 10.0.26                     |
+                   |
 
 ### Extension repository (Dynamics365Commerce.ScaleUnit)
 
@@ -65,10 +228,10 @@ The samples in the repository are organized by Dynamics 365 Commerce application
 
 | Release branch name                                                                        | Version | Application release version |
 |--------------------------------------------------------------------------------------------|---------|-----------------------------|
-| [Release/9.28](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28) | 9.28.\* | 10.0.18                     |
-| [Release/9.29](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29) | 9.29.\* | 10.0.19                     |
-| [Release/9.30](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.30) | 9.30.\* | 10.0.20                     |
-| [Release/9.31](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31) | 9.31.\* | 10.0.21                     |
+| [Release/9.38](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.38) | 9.38.\* | 10.0.28                     |
+| [Release/9.37](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.37) | 9.37.\* | 10.0.27                     |
+| [Release/9.36](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.36) | 9.36.\* | 10.0.26                     |
+
 
 ### Extension repository (Dynamics365Commerce.InStore)
 
@@ -143,18 +306,15 @@ Use the packages from [index.json](https://pkgs.dev.azure.com/commerce-partner/R
 
 | Package version  | Application release      |
 | ---------------- | ------------------------ |
-| 9.28.x.x-preview | 10.0.18 PEAP/Preview release     |
-| 9.28.x.x         | 10.0.18 Customer preview |
-| 9.28.x.x         | 10.0.18 GA               |
-| 9.29.x.x-preview | 10.0.19 PEAP/Preview release     |
-| 9.29.x.x         | 10.0.19 Customer preview |
-| 9.29.x.x         | 10.0.19 GA               |
-| 9.30.x.x-preview | 10.0.20 PEAP/Preview release     |
-| 9.30.x.x         | 10.0.20 Customer preview |
-| 9.30.x.x         | 10.0.20 GA               |
-| 9.31.x.x-preview | 10.0.21 PEAP/Preview release     |
-| 9.31.x.x         | 10.0.21 Customer preview |
-| 9.31.x.x         | 10.0.21 GA               |
+| 9.36.x.x-preview | 10.0.26 PEAP/Preview release     |
+| 9.36.x.x         | 10.0.26 Customer preview |
+| 9.36.x.x         | 10.0.26 GA               |
+| 9.37.x.x-preview | 10.0.27 PEAP/Preview release     |
+| 9.37.x.x         | 10.0.27 Customer preview |
+| 9.37.x.x         | 10.0.27 GA               |
+| 9.38.x.x-preview | 10.0.28 PEAP/Preview release     |
+| 9.38.x.x         | 10.0.28 Customer preview |
+| 9.38.x.x         | 10.0.28 GA               |
 
 An extension project can consume the correct version if you add the package reference to the project and include the full version number. Alternatively, to make the extension project always get the latest version, use a wildcard character. We recommend that you use the full version number, and that you update the version, based on your go-live version. There are two options:
 

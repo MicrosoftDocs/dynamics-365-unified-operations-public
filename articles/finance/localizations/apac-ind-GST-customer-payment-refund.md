@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer payment refunds
-description: This topic provides information about customer payment refunds.
+description: This article provides information about customer payment refunds.
 author: EricWangChen
 ms.date: 06/03/2019
 ms.topic: article

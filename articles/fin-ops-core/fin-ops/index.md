@@ -1,36 +1,26 @@
 ---
-# required metadata
-
-title: Finance and Operations application documentation
-description: Documentation for Finance and Operations apps. 
-author: tonyafehr
+title: Finance and operations application documentation
+description: Documentation for finance and operations apps.
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
+ms.search.form: DefaultDashboard
 ---
 
-# Finance and Operations application documentation
+# Finance and operations application documentation
 
 [!include [banner](includes/banner.md)]
 
-Learn how to make Finance and Operations applications work for your business, using the resources in this topic to find great content for end users, developers, and IT professionals. 
+Learn how to make finance and operations applications work for your business, using the resources in this article to find great content for end users, developers, and IT professionals. 
 
 Much of this content also applies to the related products: Dynamics 365 Commerce and Dynamics 365 Human Resources. 
 
@@ -46,7 +36,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <h3><a href="get-started/before-you-buy.md">Before you buy</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Sign up for a preview subscription</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Choose a deployment option</a></p>
- <p><a href="get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Buy finance and operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementation lifecycle</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
@@ -148,3 +138,4 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

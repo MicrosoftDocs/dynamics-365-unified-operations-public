@@ -1,41 +1,31 @@
 ---
-# required metadata
-
 title: Assign task lists to stores or employees
-description: This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
+description: This article describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
+ms.search.industry: 
 ---
 
 # Assign task lists to stores or employees
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
+This article describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
 
 Task management in Dynamics 365 Commerce lets you assign a task list to multiple stores or employees, or to a combination of stores and employees. For example, a regional manager for 20 stores might want to assign the **Holiday season preparation** task list to all 20 stores.
 
 ## Start the task list assignment process
 
-To start the process of assigning a task list, follow these steps.
+Before you start the process of assigning tasks, make sure that you created a task list by following the steps in the [Create task lists and add tasks](task-mgmt-create-lists.md) article. To start the process of assigning a task list, follow these steps.
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select the task list to assign.

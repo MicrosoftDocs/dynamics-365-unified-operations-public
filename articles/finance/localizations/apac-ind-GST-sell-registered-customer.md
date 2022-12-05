@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales to registered customers
-description: This topic provides information about sales to registered customers.
+description: This article provides information about sales to registered customers.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

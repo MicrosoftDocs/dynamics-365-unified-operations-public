@@ -111,7 +111,7 @@ should be grouped by service task ID as their initial grouping criteria.
 
 **Group by service task**
 
-1. Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1. Click **Service management** \> **Service agreements** \> **Service agreements**.
 2. On the **Setup** tab, select **By service task** in the **Combine service orders** field.
 
 

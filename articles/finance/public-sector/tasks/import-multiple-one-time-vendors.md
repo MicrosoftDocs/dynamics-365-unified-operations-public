@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Import and create multiple one-time vendors and invoices in the public sector
-description: This topic provides information about how to simultaneously create an invoice and record for a new vendor when no purchase order is required.
+description: This article provides information about how to simultaneously create an invoice and record for a new vendor when no purchase order is required.
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: business-process 

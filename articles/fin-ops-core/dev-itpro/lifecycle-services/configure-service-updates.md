@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure service updates through Lifecycle Services (LCS)
-description: This topic explains how to specify how and when you receive service updates for your environments.
+description: This article explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-ms.date: 01/26/2022
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,7 +96,7 @@ The additional sandbox environments will be updated on the same cadence as your 
 
 If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated.
 
-If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email about the production update is sent, then the production environment **will** be canceled, but additional sandbox enviornments will get updated.
+If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email about the production update is sent, then the production environment update **will** be canceled, but additional sandbox environments will get updated.
 
 If there’s any update failure on the production environment or any of the additional sandbox environments, it will not interfere with the remaining updates. That is, if the production update failed, the additional sandbox update will continue. Similarly, if you have additional sandbox environments and one of them failed during the update, the others will continue.
 

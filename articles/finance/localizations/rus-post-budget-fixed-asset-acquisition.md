@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Create and post budget journals for fixed asset acquisitions (Russia)
-description: This topic explains how to create and post a budget journal for a fixed asset acquisition for Russia. 
-author: ShylaThompson
+description: This article explains how to create and post a budget journal for a fixed asset acquisition for Russia.
+author: AdamTrukawka
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetModel 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.search.form: BudgetModel
 ---
 
 # Create and post budget journals for fixed asset acquisitions (Russia)

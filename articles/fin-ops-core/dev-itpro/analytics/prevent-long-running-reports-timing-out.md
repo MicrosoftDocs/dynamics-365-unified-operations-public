@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Help prevent long-running reports from timing out
 description: This article provides tips that can help you prevent reports that run for a long time from timing out.
 author: RichdiMSFT
@@ -8,23 +6,14 @@ ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 20521
-ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 20521
+ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
 ---
 
 # Help prevent long-running reports from timing out

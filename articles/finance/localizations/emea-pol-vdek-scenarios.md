@@ -1,32 +1,23 @@
 ---
-# required metadata
-
 title: Details of specific business scenarios in the JPK-V7M report
-description: This topic explains details of specific business scenarios in the JPK-V7M report in Poland. 
-author: liza-golub
+description: This article explains details of specific business scenarios in the JPK-V7M report in Poland.
+author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: elgolu
-
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # Details of specific business scenarios in the JPK-V7M report
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains details of specific business scenarios in the JPK-V7M report in Poland.
+This article explains details of specific business scenarios in the JPK-V7M report in Poland.
 
 ## Reporting of overdue customer invoices
 

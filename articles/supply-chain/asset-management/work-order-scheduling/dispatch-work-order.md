@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dispatch work order
-description: This topic explains how to dispatch a work order in Asset Management.
+description: This article explains how to dispatch a work order in Asset Management.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 You can schedule one work order or work order jobs to one worker using the **Dispatch** functionality.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order in the list.
 

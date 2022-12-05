@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Zakat reporting
 description: People of the Islamic faith whose annual earnings exceed a level called Nisab are legally obligated to pay 2.5 percent of their earnings to the government as Zakat.
-author: ShylaThompson
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265024
 ms.search.region: Saudi Arabia
-# ms.search.industry: 
-ms.author: leguo
+ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 265024
 ---
 
 # Zakat reporting

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Location stocking limits
-description: This topic describes the functionality for location stocking limits.
+description: This article describes the functionality for location stocking limits.
 author: perlynne
 ms.date: 11/11/2020
 ms.topic: article

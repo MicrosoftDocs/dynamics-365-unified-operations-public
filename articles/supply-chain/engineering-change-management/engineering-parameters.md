@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering change management parameters
-description: This topic explains how to configure engineering change management features for Microsoft Dynamics 365 Supply Chain Management.
+description: This article explains how to configure engineering change management features for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -32,7 +32,7 @@ The **Engineering change management parameters** page contains setup parameters 
 
 ## Open the Engineering change management parameters page
 
-To open the **Engineering change management parameters** page, go to **Engineering change management \> Setup \> Engineering change management parameters**. You can then set the fields as described in the remaining sections of this topic.
+To open the **Engineering change management parameters** page, go to **Engineering change management \> Setup \> Engineering change management parameters**. You can then set the fields as described in the remaining sections of this article.
 
 ## Release control tab
 

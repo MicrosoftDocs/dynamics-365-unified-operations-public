@@ -1,12 +1,12 @@
 ---
 title: List module
 description: A list is a control that contains any numbers of rows.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # List module

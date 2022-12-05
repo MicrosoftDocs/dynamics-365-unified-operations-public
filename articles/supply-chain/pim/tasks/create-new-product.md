@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a new product
-description: This topic describes how to create a new shared product. 
+description: This article describes how to create a new shared product. 
 author: t-benebo
 ms.date: 07/22/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to create a new shared product. It is usually carried out by a product designer. The demo data company used to create this task is USMF.
+This article describes how to create a new shared product. It is usually carried out by a product designer. The demo data company used to create this task is USMF.
 
 
 ## Create a product

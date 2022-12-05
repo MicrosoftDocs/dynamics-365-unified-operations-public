@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize BYOD scheduled batch jobs
-description: This topic explains how to optimize performance when you're using the bring your own database (BYOD) feature with Microsoft Dynamics 365 Human Resources.
+description: This article explains how to optimize performance when you're using the bring your own database (BYOD) feature with Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/17/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 36
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how to optimize performance when you're using the bring your own database (BYOD) feature. For more information about BYOD, see [Bring your own database (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+This article explains how to optimize performance when you're using the bring your own database (BYOD) feature. For more information about BYOD, see [Bring your own database (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## Performance considerations for data export
 

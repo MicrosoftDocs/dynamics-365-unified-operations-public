@@ -1,14 +1,14 @@
 ---
 title: Create a Store Commerce extension installer package
-description: This topic describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
-author: mugunthanm
+description: This article describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
+This article describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
 
 > [!NOTE]
 > You can find the full code samples in the [Store Commerce Extension samples GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.InStore).

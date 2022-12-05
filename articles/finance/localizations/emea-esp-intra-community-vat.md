@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Intra-community VAT for Spain
-description: This topic provides information about the functionality for intra-community value-added tax (VAT).
-author: Anasyash
+description: This article provides information about the functionality for intra-community value-added tax (VAT).
+author: AdamTrukawka
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 271523
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 271523
+ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 ---
 
 # Intra-community VAT for Spain
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the functionality for intra-community value-added tax (VAT). It explains how to turn on the functionality, calculate and print intra-community VAT amounts, and review intra-community VAT amounts that have been posted.
+This article provides information about the functionality for intra-community value-added tax (VAT). It explains how to turn on the functionality, calculate and print intra-community VAT amounts, and review intra-community VAT amounts that have been posted.
 
 Information about intra-community value-added tax (VAT) can be calculated and posted automatically. When you post a European Union (EU) vendor invoice, two VAT transactions are created. One VAT transaction is created for payable sales tax, and the other VAT transaction is created for receivable sales tax. Before you can use the intra-community VAT functionality, you must enable the **Intra-community VAT** option on the **Sales tax** FastTab of the **Ledger and sales tax** tab on the **Accounts payable parameters** page (**Accounts payable** \> **Setup** \> **Accounts payable parameters**).
 

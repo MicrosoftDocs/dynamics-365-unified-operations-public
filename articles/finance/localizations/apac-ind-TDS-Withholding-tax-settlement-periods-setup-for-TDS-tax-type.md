@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax settlement periods for the TDS tax type
-description: This topic explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
+description: This article explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
+This article explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 

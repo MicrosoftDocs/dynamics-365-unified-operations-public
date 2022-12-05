@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: GB-00002 Set up sales tax groups for reverse charge VAT
-description: This task walks you through setting up reverse charge sales tax groups for purchasing and sales purposes. 
-author: epodkolz
+description: This task walks you through setting up reverse charge sales tax groups for purchasing and sales purposes.
+author: EricWangChen
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxGroup   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: wangchen
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: TaxGroup
 ---
 # GB-00002 Set up sales tax groups for reverse charge VAT
 

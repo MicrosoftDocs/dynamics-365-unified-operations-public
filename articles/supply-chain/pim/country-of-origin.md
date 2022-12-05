@@ -2,7 +2,7 @@
 # required metadata
 
 title: Country of origin
-description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. This topic provides information about the country of origin feature, which lets you link a product to its country of origin and keep track of its product certifications.
+description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. This article provides information about the country of origin feature, which lets you link a product to its country of origin and keep track of its product certifications.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg

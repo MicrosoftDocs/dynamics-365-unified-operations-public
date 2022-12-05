@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create ER configurations in RCS and upload them to the Global repository
-description: This topic explains how to create an Electronic reporting (ER) configuration in Microsoft Regulatory Configuration Services (RCS) and upload it to the Global repository.
-author: JaneA07
+description: This article explains how to create an Electronic reporting (ER) configuration in Microsoft Regulatory Configuration Services (RCS) and upload it to the Global repository.
+author: kfend
 ms.date: 01/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERWorkspace, RCS
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERWorkspace, RCS
 ---
 
 # Create ER configurations in Regulatory Configuration Services (RCS) and upload them to the Global repository
@@ -42,7 +32,7 @@ Before you can complete those procedures, you must complete the following prereq
 
 You must make sure that an RCS environment is provisioned for your organization. If you do not have an RCS instance provisioned for your organization, you can do so using the following steps:
 
-1. In a Finance and Operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+1. In a finance and operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. In **Related links / External links**, select **Regulatory services – Configuration**, and then follow the instructions to **Sign up** to provision one.
 
 If an RCS environment has been already provisioned for your organization, use the page URL to access it and select the **sign-in** option.
@@ -110,3 +100,4 @@ The configuration version is deleted, and confirmation message is shown.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

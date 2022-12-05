@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscription workflow overview 
-description: This topic provides an overview of subscription workflow. 
+description: This article provides an overview of subscription workflow. 
 author: sorenva
 ms.date: 05/07/2018
 ms.topic: overview

@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Fixed assets accounting for tax purposes
-description: This topic provides information about the tax Depreciation functionality for Latvia. 
-author: ShylaThompson
+description: This article provides information about the tax Depreciation functionality for Latvia.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDepreciation
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264374
-ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
 ms.search.region: Latvia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264374
+ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
+ms.search.form: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDepreciation
 ---
 
 # Fixed assets accounting for tax purposes
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the tax depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report. 
+This article provides information about the tax depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report. 
 > [!NOTE]
 > Tax depreciation works with the value models. The value model and depreciation book have been merged into a single concept that is called a *book.* For more information, see [Fixed asset value model and depreciation book merge](../fixed-assets/fixed-asset-value-model-depreciation-book-merge.md).
 

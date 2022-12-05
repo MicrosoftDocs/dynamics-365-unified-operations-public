@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)
-description: This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps.
+title: Platform updates for version 10.0.25 of finance and operations apps (April 2022)
+description: This article lists the features that are included in the platform updates for version 10.0.25 of finance and operations apps.
 author: sericks007
-ms.date: 02/09/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,11 +13,11 @@ ms.author: sericks
 ms.search.validFrom: 2022-01-31
 
 ---
-# Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)
+# Platform updates for version 10.0.25 of finance and operations apps (April 2022)
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps. This version has a build number of 7.0.6316 and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.25 of finance and operations apps. This version has a build number of 7.0.6316 and is available on the following schedule:
 
 - **Preview of release:** January 2022
 - **General availability of release (self-update):** March 2022
@@ -33,7 +33,7 @@ For more information about how to use Feature management, see [Feature managemen
 |-----------------|---------|------------------|---------------------------|
 | Web client | **Priority-based scheduling for batch jobs**<br><br>Priority-based scheduling decouples batch groups from the batch server and allows you to define priorities for batch groups.<br><br>It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers. | [Priority-based batch scheduling](../sysadmin/priority-based-batch-scheduling.md) | Feature management (*Batch priority-based scheduling*) |
 | Web client | [Vertically scrolling workspaces](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/vertically-scrolling-workspaces)  | <ul><li>[Workspace form pattern](../user-interface/workspace-form-pattern.md)</li><li>[Build operational workspaces](../user-interface/build-workspaces.md)</li></ul> | Internal workspaces have been migrated to the newest visuals. External workspaces will need to migrate to maintain visual consistency.  |
-| Web client  | <p>**Upgrade jQuery UI to 1.13.0**</p><p>This feature upgrades the jQuery user interface (UI) to version 1.13.0 (from 1.12.1) for Finance and Operations applications. Before enabling this feature, you should test any extensible controls or custom JavaScript code, specifically those utilizing jQuery UI APIs. This feature is targeted to be required with the Fall 2022 release, but is currently optional to allow time for migration of affected APIs.</p> | | Feature management<br>(*Upgrade jQuery UI to 1.13.0*)|
+| Web client  | [Upgrade jQuery UI to 1.13.0](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/open-source-software-update-upgrade-jquery-ui-1130) | | Feature management<br>(*Upgrade jQuery UI to 1.13.0*)|
 | Web client  | [Saved views support for dialogs](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-dialogs)  | [Building forms that fully utilize saved views](../user-interface/understanding-saved-views.md)  | Feature management<br>(*Saved views support for dialogs*)  |
 | Web client  | [Allow queries to be saved to views on Task Single and Task Double pages](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#queries-on-views-on-task-pages)  | [Building forms that fully utilize saved views](../user-interface/understanding-saved-views.md)  | Feature management<br>(*Allow queries to be saved to views on Task Single and Task Double pages*)  |
 | Web client  | [(Preview) Saved views support for workspaces](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-workspaces)  | <ul><li>[Building forms that fully utilize saved views](../user-interface/understanding-saved-views.md)</li><li>[Personalize the user experience](../../fin-ops/get-started/personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace)</li></ul>  | Feature management<br>(*Saved views support for workspaces*)  |
@@ -57,11 +57,12 @@ Check out the [Dynamics 365: 2022 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
+A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+

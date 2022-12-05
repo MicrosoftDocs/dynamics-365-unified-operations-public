@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pay based on registrations
-description: This topic explains how pay is calculated based on worker registrations.
+description: This article explains how pay is calculated based on worker registrations.
 author: johanhoffmann
 ms.date: 03/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains, in detail, how pay is calculated based on worker registrations. It includes examples that show how the various combinations of setup options that are available for the calculation affect the result. Here are some of the areas that will be covered:
+This article explains, in detail, how pay is calculated based on worker registrations. It includes examples that show how the various combinations of setup options that are available for the calculation affect the result. Here are some of the areas that will be covered:
 
 - Flex time
 - Overtime

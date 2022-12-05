@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot GTE 
-description: This topic provides information about some of the issues that you might encounter while you use the tax engine (GTE), and explains how to fix them.
+description: This article provides information about some of the issues that you might encounter while you use the tax engine (GTE), and explains how to fix them.
 author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-The tax engine is a highly configurable engine that handles tax applicability, calculation, posting, and settlement. This topic lists issues that users typically encounter while they use the tax engine, and it explains how to fix those issues.
+The tax engine is a highly configurable engine that handles tax applicability, calculation, posting, and settlement. This article lists issues that users typically encounter while they use the tax engine, and it explains how to fix those issues.
 
 > [!NOTE]
 > The tax engine functionality is available only for legal entities that have their primary address in India.

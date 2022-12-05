@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales tax calculation on general journal lines
-description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
+description: This article explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 author: EricWangChen
 ms.date: 02/16/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.6
 # Sales tax calculation on general journal lines
 [!include [banner](../includes/banner.md)]
 
-This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
+This article explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 
 The process can be divided into three steps:
 

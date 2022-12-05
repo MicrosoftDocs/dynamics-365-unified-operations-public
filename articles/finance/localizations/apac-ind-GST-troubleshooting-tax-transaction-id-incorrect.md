@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax transaction ID is incorrect
-description: This topic provides troubleshooting information when the tax transaction ID is incorrect.
+description: This article provides troubleshooting information when the tax transaction ID is incorrect.
 author: shaoling
 ms.date: 04/29/2021
 ms.topic: article
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides troubleshooting information when the tax transaction ID is incorrect.
+This article provides troubleshooting information when the tax transaction ID is incorrect.
 
-Complete the steps in this topic to resolve this issue.
+Complete the steps in this article to resolve this issue.
 
 1. The code logic to generate transaction ID is in **TaxGSTInvoiceHelper_IN::generateGSTTransID()**. Set a breakpoint there, and start debugging.
 

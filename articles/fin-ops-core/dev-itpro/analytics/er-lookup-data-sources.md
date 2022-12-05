@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Configure Lookup data sources to use ER application-specific parameters
-description: This topic explains how you can configure Lookup data sources in Electronic reporting (ER) formats to use ER application-specific parameters.
-author: NickSelin
+description: This article explains how you can configure Lookup data sources in Electronic reporting (ER) formats to use ER application-specific parameters.
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 ---
 
 # Configure Lookup data sources to use ER application-specific parameters 

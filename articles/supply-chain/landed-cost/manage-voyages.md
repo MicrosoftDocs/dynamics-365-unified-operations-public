@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage voyages
-description: This topic describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
+description: This article describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -34,7 +34,8 @@ A voyage typically represents a vessel. However, depending on your practices and
 The **All voyages** page provides voyage details, delivery and costing information, and information about items, purchase orders, and transfer orders. To open the **All voyages** page, go to **Landed cost \> Voyages \> All voyages**. This page shows a list of all current voyages. You can use the buttons on the Action Pane to create, delete, and work with voyages. Select any voyage in the list to view its details.
 
 > [!NOTE]
-> Shipping containers and folios are linked to a voyage. Purchase lines are linked to a shipping container. If shipping containers and folios are turned off, they can also be linked directly to a voyage. In addition, costs that are entered here are apportioned to all attached purchase lines.
+> Shipping containers and folios are linked to a voyage. Purchase lines are linked to a shipping container. In addition, costs that are entered here are apportioned to all attached purchase lines.
+> Project purchase order does not supported in Landed Cost.
 
 ## Action Pane
 
@@ -101,7 +102,7 @@ To open the **Lines** view, open a voyage, and then select the **Lines** tab in 
 
 ### Information on the Voyage header FastTab
 
-The **Voyage header** FastTab in the **Lines** view of a voyage contains basic information that describes the voyage. Many of the fields that appear on this FastTab also appear in the **Header** view, as described later in this topic.
+The **Voyage header** FastTab in the **Lines** view of a voyage contains basic information that describes the voyage. Many of the fields that appear on this FastTab also appear in the **Header** view, as described later in this article.
 
 ### Information on the Voyage lines FastTab
 

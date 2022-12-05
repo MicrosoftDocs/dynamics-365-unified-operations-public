@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot Finance insights setup issues
-description: This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
+description: This article lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
+This article lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 
 ## Symptom: Why can't I map the Customer payment insights Data Integration template destination column?
 
@@ -91,10 +91,14 @@ The following steps should have been completed.
 - Verify that a Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
 - Verify that the following Azure AD app is registered in Azure AD: 
 
-  | Application                  | App ID           |
-  | ---------------------------- | ---------------- |
-  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+    | Application                  | App ID           |
+    | ---------------------------- | ---------------- |
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+    To verify the application is registered in Azure AD, check the **All Applications** list. For more details, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    If the application isn't registered in Azure AD, contact support.
+
 ## Symptom: Error, “We didn’t’ find any data for the selected filter range. Please select a different filter range and try again.” 
 
 ### Resolution
@@ -124,4 +128,4 @@ The **Budget proposal** feature requires a minimum of three years of budget or a
 
 ### Resolution
 
-The environment has reached the Data Lake Services maximum table limit. For more information about the limit, see the **Enable near real-time data changes** section of the topic, [Export to Azure Data Lake overview](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+The environment has reached the Data Lake Services maximum table limit. For more information about the limit, see the **Enable near real-time data changes** section of the article, [Export to Azure Data Lake overview](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

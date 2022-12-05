@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Electronic reporting (ER) destinations
-description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
-author: nselin
-ms.date: 05/18/2022
+description: This article provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
+author: kfend
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DocuType, ERSolutionTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
 ---
 
 # Electronic reporting (ER) destinations
 
 [!include [banner](../includes/banner.md)]
 
-You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This topic explains ER destination management, the types of destinations that are supported, and security considerations.
+You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 
 ER format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, XLSX, DOCX, or PDF) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets you save or open the file. The same behavior also occurs when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
 
@@ -123,7 +113,7 @@ When you configure file destinations for a selected format, you configure them f
 
 [![Configuration link.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-At the same time, you might have multiple [versions](general-electronic-reporting.md#component-versioning) of the format that have been imported into the current Finance instance. You can view them if you select the **Configuration** link that is offered when you select the **Reference** field.
+At the same time, you might have multiple versions of the format that have been imported into the current Finance instance. You can view them if you select the **Configuration** link that is offered when you select the **Reference** field.
 
 [![Configuration versions.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -186,6 +176,16 @@ As of Finance **version 10.0.9**, only landscape page orientation is supported i
 
 Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 
+### Resources
+
+Before Finance version 10.0.29, PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature. This feature lets you convert generated Word documents to PDF format locally by using application server resources in the current Finance instance. 
+
+Here are the advantages of local PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
+
+- The PDF document that is produced isn't [limited](#limitations) to a maximum number of pages.
+- The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Internet connectivity isn't required in on-premises deployments.
+
 ### Use the PDF conversion option
 
 To turn on PDF conversion for a file destination, select the **Convert to PDF** check box.
@@ -235,13 +235,59 @@ On the **General** FastTab, in the **Send folder as** field, select one of the f
 - **Separate files** – Deliver every file of a generated zip file as an individual file.
 
     > [!NOTE]
-    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output too be quite large.
+    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output to be quite large.
 
 [![Configuring a destination for a Folder format component.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### Limitations
 
 If you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, the setting isn't recursively applied to the nested **Folder** components.
+
+## <a name="change-page-layout-properties-of-a-template"></a> Change page layout properties of a template
+
+You can configure an ER destination for an ER format component that's designed to use a template in a Microsoft Office (Excel or Word) format for report generation. If you aren't the owner of this format and you need to change page layout properties of the format's template, in versions of Finance before version 10.0.29, you have to create a derived format and modify the template properties. Then, you have to maintain the derived format configuration. However, in version 10.0.29 and later, you can change the page layout properties of the template at runtime to avoid creating and maintaining the derived format configuration. To do this, set up the desired properties as part of the settings of the configured ER destination. When you run an ER format and execute an ER destination that's configured to use certain page layout properties, the values of page layout properties of the executed destination are applied to the template you're using, replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the template in use.
+
+The following properties can be configured in an ER destination for a format component that's designed to use a template in Excel or Word format:
+
+- Page orientation
+    - Portrait
+    - Landscape
+- Paper size
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Legal
+    - Letter
+    - Statement
+    - Tabloid
+- Page margins
+    - Top
+        - Header
+    - Bottom
+        - Footer
+    - Left
+    - Right
+
+> [!NOTE]
+> The page orientation of the template that's configured in this way must be aligned with the [page orientation for PDF conversion](#select-a-page-orientation-for-pdf-conversion) if the PDF conversion is configured.
+
+You must select the length unit for setting page margins:
+
+- Inches
+- Centimeters
+- Millimeters
+
+![Set up page layout properties on the Electronic reporting destination page.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> When a margin value is nominated in centimeters and specified with multiple decimals, it's rounded at runtime to the nearest value with 1 decimal point.
+>
+> When a margin value is nominated in millimeters and specified with decimals, it's rounded at runtime for Excel to the nearest integer value with no decimal point.
+>
+> When a margin value is nominated in millimeters and specified with multiple decimals, it's rounded at runtime for Word to the nearest value with one decimal point.
 
 ## Security considerations
 

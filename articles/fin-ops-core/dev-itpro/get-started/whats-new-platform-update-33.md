@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Platform update 33 for Finance and Operations apps (April 2020)
-description: This topic lists the features that are new or changed in Platform update 33 for Finance and Operations apps. 
+title: What's new or changed in Platform update 33 for finance and operations apps (April 2020)
+description: This article lists the features that are new or changed in Platform update 33 for finance and operations apps. 
 author: sericks007
 ms.date: 03/11/2020
 ms.topic: article
@@ -26,11 +26,11 @@ ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 
 ---
-# What's new or changed in Platform update 33 for Finance and Operations apps (April 2020)
+# What's new or changed in Platform update 33 for finance and operations apps (April 2020)
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the features that are new or changed for Platform update 33 for Finance and Operations apps. This version has a build number of 7.0.5559 and is available on the following schedule:
+This article lists the features that are new or changed for Platform update 33 for finance and operations apps. This version has a build number of 7.0.5559 and is available on the following schedule:
 
 - **Preview release:** February 2020
 - **General availability (self-update):** March 2020
@@ -64,8 +64,8 @@ To read a description of this feature, see [Recommended fields](/dynamics365-rel
 ### New task recorder capabilities: Resizable task recorder pane 
 To read a description of this feature, see [New task recorder capabilities for RSAT](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) in the release plan.
 
-### (Preview) Branding changes for updated Finance and Operations licensing
-To read a description of this feature, see [Finance and Operations licensing](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) in the release plan.
+### (Preview) Branding changes for updated finance and operations licensing
+To read a description of this feature, see [Finance and operations licensing](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) in the release plan.
 
 ## Additional resources
 
@@ -81,12 +81,12 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
+A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
 

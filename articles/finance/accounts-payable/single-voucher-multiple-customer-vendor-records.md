@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Single voucher with multiple customer or vendor records
-description: This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 Finance, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
+description: This article provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 Finance, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: roschlom
-# ms.tgt_pltfrm: 
-ms.custom: 222534
-ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
+ms.reviewer: twheeloc
 ms.search.region: global
-# ms.search.industry: 
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 222534
+ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ---
 
 # Single voucher with multiple customer or vendor records
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
+This article provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 
 Some common examples where one voucher is used for multiple customers or vendors include balance transfers between customers, and netting balances between customers and vendors in the same organization. 
 
@@ -41,7 +30,7 @@ A voucher containing more than one customer or vendor can be entered using one o
 -   Using a multi-line voucher, where there is no offset ledger account, with more than one customer or vendor.
 -   Entering a voucher with the account and offset account being vendor/vendor, customer/customer, vendor/customer, or customer/vendor.
 
-This topic shows how settlement will be processed when one voucher  with multiple customer or vendor records is posted. Additionally, this topic provides workarounds to help you understand how to avoid using one voucher with multiple customers or vendors. In particular, there are examples which illustrate two common settlement scenarios that are impacted by the use of one voucher with multiple customers or vendors:
+This article shows how settlement will be processed when one voucher  with multiple customer or vendor records is posted. Additionally, this article provides workarounds to help you understand how to avoid using one voucher with multiple customers or vendors. In particular, there are examples which illustrate two common settlement scenarios that are impacted by the use of one voucher with multiple customers or vendors:
 
 -   Cash discount accounting
 -   Revaluation accounting

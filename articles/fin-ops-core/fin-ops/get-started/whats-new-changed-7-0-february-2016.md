@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics AX 7.0 (February 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
 author: sericks007
@@ -8,23 +6,15 @@ ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 91243
-ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 91243
+ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What's new or changed in Dynamics AX 7.0 (February 2016)
@@ -324,8 +314,8 @@ This feature works independently of costing methods that are assigned to the pro
 <tr>
 <td>Access guided procedural Help (task guides) and conceptual topics by clicking <strong>Help</strong>.</td>
 <td>The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.</td>
-<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft docs site. For more information, see <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Help system</a> and <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">New task guides (February 2016)</a>.</td>
-<td>Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The topic provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.</td>
+<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from Microsoft Learn. For more information, see <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Help system</a> and <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">New task guides (February 2016)</a>.</td>
+<td>Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The article provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.</td>
 </tr>
 </tbody>
 </table>
@@ -1033,9 +1023,10 @@ No new features have been added.
 
 ## Additional resources
 
-[What's new or changed in Finance and Operations home page](whats-new-changed.md)
+[What's new or changed in finance and operations home page](whats-new-changed.md)
 
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

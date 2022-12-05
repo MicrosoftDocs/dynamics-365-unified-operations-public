@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Public sector accounting in France
 description: This article describes public sector accounting in France.
-author: rschloma
+author: brpotter
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 19621
-ms.assetid: f6bfb9dd-c3a7-48d3-b31d-23e6f27c1323
 ms.search.region: France
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19621
+ms.assetid: f6bfb9dd-c3a7-48d3-b31d-23e6f27c1323
+ms.search.industry: Public sector
 ---
 
 # Public sector accounting in France

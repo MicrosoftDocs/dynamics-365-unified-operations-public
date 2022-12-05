@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Generate reports by adding content as raw XML
 description: You can design Electronic reporting (ER) formats that generate outgoing documents in XML format.
-author: NickSelin
+author: kfend
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 
 # Generate reports by adding content as raw XML

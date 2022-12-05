@@ -2,7 +2,7 @@
 # required metadata
 
 title: Coverage settings
-description: This topic provides information about the coverage settings that master scheduling uses to calculate item requirements.
+description: This article provides information about the coverage settings that master scheduling uses to calculate item requirements.
 author: t-benebo
 ms.date: 09/13/2019
 ms.topic: article
@@ -66,7 +66,7 @@ Each replenishment method is assigned one of the following coverage codes:
 
 ## Additional resources
 
-[Master plans overview](master-plans.md)
+- [Master plans overview](master-plans.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

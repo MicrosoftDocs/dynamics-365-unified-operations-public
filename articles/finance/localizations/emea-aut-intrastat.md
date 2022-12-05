@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Austrian Intrastat
-description: This topic contains information about the Austrian Intrastat report.
-author: anasyash
+description: This article contains information about the Austrian Intrastat report.
+author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

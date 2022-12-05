@@ -1,41 +1,30 @@
 ---
-# required metadata
-
 title: Configure Electronic reporting (ER) to pull data into Power BI
-description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. 
-author: NickSelin
+description: This article explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services.
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 
 # Configure Electronic reporting (ER) to pull data into Power BI
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. As an example, this topic uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
+This article explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. As an example, this article uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
 
 ## Overview
 
-Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn external sources of data into coherent, visually immersive, and interactive insights. Electronic reporting (ER) lets users easily configure data sources and arrange the transfer of data from the application to Power BI. The data is transferred as files in the OpenXML worksheet (Microsoft Excel workbook file) format. The transferred files are stored on a Microsoft SharePoint Server that has been configured for that purpose. The stored files are used in Power BI to make reports that include visualizations (tables, charts, maps, and so on). Power BI reports are shared with Power BI users, and they are accessed in Power BI dashboards and on the application pages. This topic explains the following tasks:
+Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn external sources of data into coherent, visually immersive, and interactive insights. Electronic reporting (ER) lets users easily configure data sources and arrange the transfer of data from the application to Power BI. The data is transferred as files in the OpenXML worksheet (Microsoft Excel workbook file) format. The transferred files are stored on a Microsoft SharePoint Server that has been configured for that purpose. The stored files are used in Power BI to make reports that include visualizations (tables, charts, maps, and so on). Power BI reports are shared with Power BI users, and they are accessed in Power BI dashboards and on the application pages. This article explains the following tasks:
 
 - Configure Microsoft Dynamics 365 Finance.
 - Prepare your ER format configuration to get data from the Finance application.
@@ -44,7 +33,7 @@ Microsoft Power BI is a collection of software services, apps, and connectors th
 - Make the Power BI report accessible in Finance.
 
 ## Prerequisites
-To complete the example in this topic, you must have the following access:
+To complete the example in this article, you must have the following access:
 
 - Access for one of the following roles:
 

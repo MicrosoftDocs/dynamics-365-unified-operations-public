@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Embed images and shapes in documents that you generate by using ER
-description: This topic explains how to use the Electronic reporting tool to generate business documents that have embedded images and shapes.
-author: NickSelin
+description: This article explains how to use the Electronic reporting tool to generate business documents that have embedded images and shapes.
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner, ERParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27621
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-
+ms.custom: 27621
+ms.assetid: 
+ms.search.form: EROperationDesigner, ERParameters
 ---
 
 # Embed images and shapes in documents that you generate by using ER

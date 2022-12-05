@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Control checklist
 description: This article categorizes and describes all the release criteria for controls.
-author: RobinARH
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 30141
-ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 30141
+ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 ---
 
 # Control checklist

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconfigure environments to take a new platform or topology
-description: This topic describes how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
+description: This article describes how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: PeterRFriis
 ms.date: 12/05/2017
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
+This article provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 
 ## Prerequisites
-Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, [Update the local agent](update-local-agent.md). The procedure in this topic will only work with local agents that are on or above version 1.1.0. 
+Before you complete the steps in this article, you must update your local agent. For more information, see the article, [Update the local agent](update-local-agent.md). The procedure in this article will only work with local agents that are on or above version 1.1.0. 
 
 ## Reconfigure your environment
 

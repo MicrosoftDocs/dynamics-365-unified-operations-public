@@ -2,9 +2,9 @@
 # required metadata
 
 title: Ledger settlements
-description: This topic explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
+description: This article explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,7 +39,7 @@ Settled transactions can be excluded from inquiries and reports. In this way, it
 
 ## Ledger settlement features
 In Microsoft Dynamics 365 Finance version 10.0.21, the **Enable advanced ledger settlement** option was removed from the **General ledger parameters** page. Advanced ledger settlement is now always enabled.
-In Finance version 10.0.25, the **Awareness between ledger settlement and year-end close** feature was introduced. This feature changes the fundamental functionality in both ledger settlement and General ledger year-end close. Before you enable this feature in the **Feature management** workspace, see, [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).
+In Finance version 10.0.25, the **Awareness between ledger settlement and year-end close** feature was introduced. This feature changes the fundamental functionality in both ledger settlement and General ledger year-end close. Before you enable this feature in the **Feature management** workspace, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).
 
 ## Set up ledger settlement
 You must select the main accounts that you want to do ledger settlement for. There are two ways to select these main accounts.
@@ -81,7 +81,7 @@ To settle ledger transactions, follow these steps.
 ## Make transactions easier to find
 The **Ledger settlements** page includes capabilities that make it easier to view the transactions that you require for settlement.
 
-- Use the **Marked** filter to filter transactions based on whether the **Marked** check box is selected for them.
+- Use the **Marked** filter to filter transactions based on whether the **Marked** checkbox is selected for them.
 - Use the **Status** filter to filter transactions based on their status.
 - Select **Sort by absolute amount** to sort the amounts by absolute value. In this way, you can group debits and credits that have the same amount.
 
@@ -96,7 +96,12 @@ You can reverse a settlement that was made by mistake.
     > [!IMPORTANT]
     > All transactions that have the same settlement ID will be reversed, even if they aren't marked. For example, four lines were marked and settled. All four lines have the same settlement ID. If you mark one of those four lines and then select **Reverse marked transactions**, all four lines will be reversed.
 
+## Unmark for selected users
+Select **Unmark for selected users** to unmark ledger settled transactions for all legal entities by user ID. For instance, this will allow an accounting manager to unmark transactions for a user that left on vacation before finishing the settlement or for a user who has left the organization. The action will allow those transactions to be marked for settlement by another user.
 
+
+## Unmark all transactions
+Select **Unmark all transactions** to unmark all ledger settled transactions for all users and all legal entities. This action is available for the Administrator role.
 
 
 

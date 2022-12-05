@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize images on product details pages
-description: This topic describes how to optimize images on product details pages in Microsoft Dynamics 365 Commerce.
+description: This article describes how to optimize images on product details pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/04/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to optimize images on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
+This article describes how to optimize images on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
 One way to improve the performance of PDPs is to optimize the way that product images are rendered. By default, the media gallery module doesn't load images until after the rendering of the PDP buy box has completed on the client side. First a call is made to get the location of the media files, then all images are validated with additional network calls, and then only valid images are rendered on the page. These client-side network calls impact the total loading time for site pages, resulting in degraded performance. With the Commerce version 10.0.26 release, an option has been added to the media library module to improve performance by first loading images on the server side and validating that they exist.
 

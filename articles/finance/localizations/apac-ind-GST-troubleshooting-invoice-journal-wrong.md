@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incorrect field value in an invoice journal or voucher
-description: This topic provides troubleshooting information that can help when a field value in an invoice journal or voucher is incorrect.
+description: This article provides troubleshooting information that can help when a field value in an invoice journal or voucher is incorrect.
 author: yungu
 ms.date: 06/08/2021
 ms.topic: article
@@ -37,9 +37,9 @@ When you work with an invoice journal or a voucher, you might find an incorrect 
 - **TaxDocumentComponentTransaction** table
 - Voucher (**GeneralJournalAccountEntry** table)
 
-If this issue occurs, follow the steps in the sections of this topic to try to fix it.
+If this issue occurs, follow the steps in the sections of this article to try to fix it.
 
-This topic uses a free text invoice as an example.
+This article uses a free text invoice as an example.
 
 ## Review the tax document
 

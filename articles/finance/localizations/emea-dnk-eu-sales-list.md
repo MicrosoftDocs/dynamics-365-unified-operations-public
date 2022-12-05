@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: EU Sales list for Denmark
-description: This topic provides information about the European Union (EU) sales list report for Denmark.
-author: AKroshkina
+description: This article provides information about the European Union (EU) sales list report for Denmark.
+author: AdamTrukawka
 ms.date: 05/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for Denmark
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report for Denmark. The Danish EU sales list report contains information about the sale of goods and services for reporting in text format. The following fields are included on the Danish EU sales list report:
+This article provides information about the European Union (EU) sales list report for Denmark. The Danish EU sales list report contains information about the sale of goods and services for reporting in text format. The following fields are included on the Danish EU sales list report:
 
 - **EU sales list header:**
     - Company's VAT ID without country/region code

@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Set up fixed asset locations and numbering (Russia)
-description: This topic explains how to set up locations and numbering for Russian fixed asset.
-author: anasyash
+description: This article explains how to set up locations and numbering for Russian fixed asset.
+author: AdamTrukawka
 ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: 
 ---
 
 # Set up fixed asset locations and numbering (Russia)

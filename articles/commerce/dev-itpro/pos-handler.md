@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Override POS request handler
-description: This topic explains how to override a POS request handler.
-author: mugunthanm
+description: This article explains how to override a POS request handler.
+author: josaw1
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 68673
-ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-
+ms.custom: 68673
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ---
 
 # Override POS request handler
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to override POS request handler. We've introduced an extension pattern for overriding the POS business logic. If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.
+This article explains how to override POS request handler. We've introduced an extension pattern for overriding the POS business logic. If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.
 
 For example, when you sell a serial item, POS will display a dialog box where you can enter the serial number for that item after the scan. If you want to automate the serial number process by entering the serial number through code, then you can override this serial number request handler and use custom business logic. Most of the business logic in POS is implemented in request handler, however, you can override the relevant request handler and return the response according to your business flow.
 
@@ -40,7 +29,7 @@ For example, when you sell a serial item, POS will display a dialog box where yo
 
 ## POS request handler logic exposed for overriding
 
-This list is based on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1).
+This list is based on [Microsoft Dynamics 365 Finance - Version 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1).
 
 In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list.
 

@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Install metadata hotfixes in development environments
-description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
-author: RobinARH
+description: This article will guide you through installing an Application Metadata hotfix on your development environment.
+author: gianugo
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 79822
-ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 79822
+ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
 ---
 
 # Install metadata hotfixes in development environments
 
 [!include [banner](../includes/banner.md)]
 
-This topic will guide you through installing an Application Metadata hotfix on your development environment.
+This article will guide you through installing an Application Metadata hotfix on your development environment.
 
 A metadata hotfix package contains changes (metadata or X++ source code) to model elements (XML files) in your development environment. A hotfix can also contain new model elements. A metadata hotfix package is in the form of an SCDP file. This article describes the process for installing a metadata hotfix package and explains how to share the package with other developers who are working on the same project.
 
@@ -46,7 +35,7 @@ For instructions about how to download a hotfix, see [Download updates from Life
 ## Install the hotfix
 ### Before you begin
 
--   This topic assumes that your packages folder is located at c:\\AOSService\\PackagesLocalDirectory\\Bin. On some virtual machines (VMs), it might be located at c:\\Packages, i:\\AOSService\\PackagesLocalDirectory\\Bin, or k:\\AOSService\\PackagesLocalDirectory\\Bin.
+-   This article assumes that your packages folder is located at c:\\AOSService\\PackagesLocalDirectory\\Bin. On some virtual machines (VMs), it might be located at c:\\Packages, i:\\AOSService\\PackagesLocalDirectory\\Bin, or k:\\AOSService\\PackagesLocalDirectory\\Bin.
 -   If you're not using Microsoft Azure DevOps or another source control system, create a backup of your packages folder (which is also known as the metadata store). We don't recommend that you do development unless you use Azure DevOps.
 -   If you have Azure DevOps or Microsoft Team Foundation Server (TFS) version control, make sure that there are no files in the **Pending Changes** list of your current workspace. If you have pending changes, we recommend that you submit them or shelve them before you install the metadata hotfix.
 

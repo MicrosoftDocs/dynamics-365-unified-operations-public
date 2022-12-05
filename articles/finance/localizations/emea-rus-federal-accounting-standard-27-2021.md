@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Federal Accounting Standard 27-2021
-description: This topic provides information about the Federal Accounting Standard 27-2021 for Russia.
-author: anasyash
+description: This article provides information about the Federal Accounting Standard 27-2021 for Russia.
+author: AdamTrukawka
 ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261354
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 261354
+ms.search.form: 
 ---
 
 # Federal Accounting Standard 27-2021

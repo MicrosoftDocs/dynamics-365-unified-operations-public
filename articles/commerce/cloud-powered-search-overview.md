@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Cloud-powered search overview
-description: This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
+description: This article gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.assetid: 
 ---
 
 # Cloud-powered search overview
 
 [!include [banner](includes/banner.md)]
 
-This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
+This article gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 
 Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across channels powered by Cloud Scale Unit (CSU), such as e-commerce and point of sale (POS).
 
@@ -69,11 +59,14 @@ The following illustration shows an example where immersive autosuggest is being
 
 ## Sort
 
-Enhanced sorting in Commerce lets customers sort, search, and browse search results, and refine them by criteria such as price, product name, and product number. Customers can also sort results based on whether a product is new, top-selling, or recently added.
+Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md)in your environment, customers can also sort results based on advanced sorting criteria such as new, best-selling, and trending.
+
 
 > [!NOTE]
 > These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**. 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
+>Advanced sorting options like new, best-selling, and trending are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.  
+
 
 ## Additional resources
 

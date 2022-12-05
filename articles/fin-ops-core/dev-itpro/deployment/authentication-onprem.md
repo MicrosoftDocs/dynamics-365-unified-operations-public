@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Authentication in Dynamics 365 Finance + Operations (on-premises)
-description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
+title: Authentication in Dynamics 365 Finance + Operations (on-premises) environments
+description: This article provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
 ms.date: 11/18/2020
 ms.topic: article
@@ -26,11 +26,11 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Authentication in Dynamics 365 Finance + Operations (on-premises)
+# Authentication in Dynamics 365 Finance + Operations (on-premises) environments
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains authentication in Dynamics 365 Finance + Operations (on-premises). This topic also provides background information about how the process works so that if you encounter issues with authentication you can work to resolve them.
+This article explains authentication in Dynamics 365 Finance + Operations (on-premises). This article also provides background information about how the process works so that if you encounter issues with authentication you can work to resolve them.
 
 ## The URL for Active Directory Federation Services (AD FS)
 
@@ -41,7 +41,7 @@ You'll find this URL in the deployment instructions found in [Configure AD FS](
 C:\\ProgramData\\SF\\AOS_10\\Fabric\\work\\Applications\\AXSFType_App218\\AXSF.Package.1.0.xml
 
 ## XML configuration file
-There is a file called AXSF.Package.Current.xml. This file will be a copy of the AXSF.Package.1.0.xml in Finance and Operations deployments. The AXSF.Package.Current.xml file represents the variable that have been used to initialize the currently running AOS instance (AxService.exe).
+There is a file called AXSF.Package.Current.xml. This file will be a copy of the AXSF.Package.1.0.xml in finance and operations deployments. The AXSF.Package.Current.xml file represents the variable that have been used to initialize the currently running AOS instance (AxService.exe).
 
 Within this configuration file (which is on each AOS machine), you'll find some sections that are set from the Lifecycle Services (LCS) deployment setting for AD FS.
 
@@ -100,7 +100,7 @@ If values in the AOS config file are incorrect, then that typically means the va
 Receiving a 500 error when accessing the application URL is an indication that there may be an invalid URL for AD FS. This is because on startup the AOS will use that URL to obtain information from the AD FS server. If the URL is incorrect or inaccessible, the AOS will be unable to start.
 
 ## AD FS
-The second part of the authentication process is AD FS itself. On the AD FS server if you open AD FS Management ((from **Control Panel > System and Security > Administrative Tools**), and go to **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics 365 application are stored.
+The second part of the authentication process is AD FS itself. On the AD FS server, if you open AD FS Management (from **Control Panel > System and Security > Administrative Tools**), and go to **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics 365 application are stored.
 
 ![AD FS application group setup.](media/ADFS.png)
 
@@ -112,3 +112,4 @@ If any of the AD FS application group setup is incorrect, you're likely see an e
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

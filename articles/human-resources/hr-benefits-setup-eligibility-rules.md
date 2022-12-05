@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure eligibility rules and options
-description: This topic describes how to set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
+description: This article describes how to set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,11 +28,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure eligibility rules and options 
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 After you've configured the required parameters for Benefits management, you can create the eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.
 
@@ -186,6 +181,7 @@ Bundles are a set of related benefit plans. You can use benefits bundles to grou
    | **Bundle** | A unique identifier for the bundle. |
    | **Description** | A description of the bundle. |
    | **Master** | Indicates whether one of the plans in the bundle must be marked as the master plan. The master plan must be selected during open enrollment as part of the bundle before the benefits administrator can confirm the employee's benefits elections. |
+   | **Required**| Indicates that the plan is required to be selected to check out any other plan in the bundle. More than one plans can be marked as **Required**. In that case, all the plans that are marked as **Required** will need to be selected to check out any of the plans in the bundle.|
    | **Valid from date and time** | The date and time the bundle becomes active. |
    | **Valid to** | The date the bundle expires. The default is 12/31/2154, which represents never. |
 

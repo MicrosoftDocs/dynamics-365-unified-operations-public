@@ -46,7 +46,7 @@ The X++ workflow runtime consists of the following components:
 
 Either the messaging batch job or the workflow runtime API can invoke the application code, if it's required. The X++ workflow runtime is compiled into the Common Intermediate Language (CIL) of the Microsoft .NET Framework.
 
-The managed workflow runtime consists of the Windows Workflow Foundation and Finance and Operations apps extensions.
+The managed workflow runtime consists of the Windows Workflow Foundation and finance and operations apps extensions.
 
 Logically, the workflow infrastructure is an extension and is transparent to users. Physically, both the X++ workflow and the managed workflow runtimes are hosted on AOS. The workflow infrastructure uses batch processing on AOS and .NET Interop to integrate both subsystems, and to pass messages from one subsystem to the other. The X++ code that is run in the batch processor is compiled to .NET CIL. The batch processing runs in the .NET common language runtime (CLR).
 
@@ -69,3 +69,4 @@ The workflow architecture helps provide a reliable and durable messaging system,
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Establish customer method of payment
-description: This topic explains how to create a method of payment for customer payments. 
+description: This article explains how to create a method of payment for customer payments. 
 author: ShivamPandey-msft
 ms.date: 07/31/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a method of payment for customer payments. This task uses the USMF demo company.
+This article explains how to create a method of payment for customer payments. This task uses the USMF demo company.
 
 1. In the navigation pane, go to **Modules > Accounts receivable > Payments setup > Methods of payment**.
 2. Select **New**.

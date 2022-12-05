@@ -1,12 +1,12 @@
 ---
 title: Application type
 description: Represents a runtime instance of an application.
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # Application type

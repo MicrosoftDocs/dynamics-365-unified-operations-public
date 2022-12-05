@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Point of sale (POS) device activation
 description: This article explains the new guided device activation for Cloud POS and Modern POS.
-author: athinesh99
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailSharedParameters, RetailDevice
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 18341
-ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 18341
+ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
+ms.search.form: RetailSharedParameters, RetailDevice
 ---
 
 # Point of sale (POS) device activation

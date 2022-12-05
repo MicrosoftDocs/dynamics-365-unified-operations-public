@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimension sets
-description: This topic describes financial dimension sets and provides some tips for optimizing their use.
+description: This article describes financial dimension sets and provides some tips for optimizing their use.
 author: yukonpeegs
 ms.date: 03/07/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes financial dimension sets and provides some tips for optimizing their use.
+This article describes financial dimension sets and provides some tips for optimizing their use.
 
 A dimension set is an ordered list of financial dimensions that can be used to summarize General ledger data in a user-defined way. A primary use of dimension sets is to define a trial balance.
 

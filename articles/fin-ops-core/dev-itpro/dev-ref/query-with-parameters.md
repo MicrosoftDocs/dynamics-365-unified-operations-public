@@ -1,12 +1,12 @@
 ---
 title: Mitigate a SQL injection attack
-description: This topic explains how to mitigate SQL injection attacks in X++.
+description: This article explains how to mitigate SQL injection attacks in X++.
 author: pvillads
 ms.date: 12/01/2020
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: pvillads
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview-banner](../includes/preview-banner.md)]
 
-An SQL injection attack occurs when malicious data values are passed to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you aren't careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in Finance and Operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
+An SQL injection attack occurs when malicious data values are passed to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you aren't careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in finance and operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
 
-A new API will help mitigate these attacks. The API is available starting with platform updates for version 10.0.17 of Finance and Operations apps (April 2021).
+A new API will help mitigate these attacks. The API is available starting with platform updates for version 10.0.17 of finance and operations apps (April 2021).
 
 ## The issue
 

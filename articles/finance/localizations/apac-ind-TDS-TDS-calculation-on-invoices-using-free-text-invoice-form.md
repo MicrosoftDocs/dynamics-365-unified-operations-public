@@ -2,7 +2,7 @@
 # required metadata
 
 title: TDS calculation on invoices from the Free text invoice page
-description: This topic explains how to calculate Tax Deducted at Source (TDS) on invoices by using the Free text invoice page.
+description: This article explains how to calculate Tax Deducted at Source (TDS) on invoices by using the Free text invoice page.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to calculate Tax Deducted at Source (TDS) on invoices by using the **Free text invoice** page.
+This article explains how to calculate Tax Deducted at Source (TDS) on invoices by using the **Free text invoice** page.
 
 1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
 

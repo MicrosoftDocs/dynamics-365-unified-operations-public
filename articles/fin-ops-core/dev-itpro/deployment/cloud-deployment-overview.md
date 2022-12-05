@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud deployment overview
-description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
+description: This article describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
 ms.date: 06/01/2022
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
  
-Working with Microsoft to deploy Finance and Operations apps in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
+Working with Microsoft to deploy finance and operations apps in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
 We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementation project. 
 
 ## Customer lifecycle, subscriptions, and environment types
@@ -45,7 +45,7 @@ Microsoft assumes that all customers will follow a lifecycle similar to the foll
 
 At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-You may notice the terms cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A *Microsoft subscription* means that the customer purchases Finance and Operations licenses, which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
+You may notice the terms cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys finance and operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A *Microsoft subscription* means that the customer purchases finance and operations licenses, which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
 
 With each Enterprise offer, two environments are included by default:
 - One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
@@ -75,7 +75,7 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 | Lifecycle operation | Description | Learn more
 |---------------------|-------------|------------|
 | Apply software | Install Microsoft updates, ISV solutions, or your own customization packages. | [Apply updates to cloud environments](apply-deployable-package-system.md)
-| Enable access | Allow list your IP for Remote Desktop or database access | See the [Remote Desktop](cloud-deployment-overview.md#remote-desktop) section later in this topic
+| Enable access | Allow list your IP for Remote Desktop or database access | See the [Remote Desktop](cloud-deployment-overview.md#remote-desktop) section later in this article
 | Restart services | Ability to restart components of your environment | [Restart environment services](../lifecycle-services/restart-environment-services.md)
 | Move database | Full data lifecycle management | [Database movement operations](../database/dbmovement-operations.md)
 | Maintenance mode | Ability to change configuration with only admin access | [Maintenance mode](../sysadmin/maintenance-mode.md)
@@ -86,9 +86,9 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 
 
 ## Security and compliance
-Finance and Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
+finance and operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
-All Finance and Operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
+All finance and operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
 
 > [!IMPORTANT]
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
@@ -96,7 +96,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to reset the admin password, and will do so.  
 > - Adding new user accounts to any Microsoft-managed VM is NOT permitted. Microsoft reserves the right to do this, and will remove the newly added user accounts without providing notice.
 >
-> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States. Finance and Operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
+> finance and operations is not covered by a FedRAMP ATO at this time. If finance and operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States. Finance and operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
 ## Remote Desktop
 
@@ -130,7 +130,7 @@ Windows Remoting (WinRM) is disabled on all environments. Although you can enabl
 > Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
-The guaranteed uptime for Finance and Operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn't always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../lifecycle-services/lcs-support.md).
+The guaranteed uptime for finance and operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn't always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Azure availability sets are used to prevent single-point-of-failure events. For more information about Azure availability sets, see [Use availability zones to protect from datacenter level failures](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures).
@@ -141,14 +141,14 @@ Databases for Microsoft-managed or Self-service Tiers 2-5 environments have auto
 
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
-- Azure SQL active-geo replication is configured for the Finance and Operations database of the production environment. For more information about SQL replication, see [Compare geo-replication with failover groups](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
+- Azure SQL active-geo replication is configured for the finance and operations database of the production environment. For more information about SQL replication, see [Compare geo-replication with failover groups](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
 - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions. For more information, see [Azure Storage redundancy](/azure/storage/common/storage-redundancy).
 - Same secondary region for the Azure SQL and Azure blog storage replication.  
 
-Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the Finance and Operations service has started. 
+Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the finance and operations service has started. 
 
 ## Service availability in Azure regions
-Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for Finance and Operations apps](../../fin-ops/get-started/service-description.md).
+finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it. For more information, see the following articles:
@@ -160,7 +160,7 @@ Finance and Operations apps can be deployed into a subset of Microsoft Azure dat
 ### Upcoming changes to region availability
 Dynamics 365 solutions consist of a collection of multiple services. Looking across Dynamics 365 applications, the Power Platform and the Azure services that they both depend on, the required matrix of services is quite large and growing. We have locked on a strategy of selecting a subset of data center regions across the globe to simplify ensuring that we have availability of the full portfolio of required services. Our plan is to optimize to have minimal latency between the component services of a solution and as a result, we are focused on having the full portfolio of services available in each of the designated data centers.
 
-Additionally, the Finance and Operations architecture is being enhanced to build on self-service for greater elasticity, stronger reliability, and more seamless maintenance. Customers gain material efficiency by having deeper self-service deployments in fewer data centers. This transition also benefits from selecting a subset of Azure regions. To that effect, the regional availability of Finance and Operations apps will now be <strong>limited to East US, West US, and Central US in North America </strong> for all new projects. For a list of the latest supported regions, see the following articles:
+Additionally, the finance and operations architecture is being enhanced to build on self-service for greater elasticity, stronger reliability, and more seamless maintenance. Customers gain material efficiency by having deeper self-service deployments in fewer data centers. This transition also benefits from selecting a subset of Azure regions. To that effect, the regional availability of finance and operations apps will now be <strong>limited to East US, West US, and Central US in North America </strong> for all new projects. For a list of the latest supported regions, see the following articles:
 
 - [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](deployment-options-geo.md)
 - [Dynamics 365 Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)](us-gcc-deployment.md)
@@ -182,7 +182,7 @@ To provide the best experience and performance, Microsoft performs maintenance o
 - Prepared for maintenance
 - Maintenance in progress
 
-While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
+While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to finance and operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my sandbox environment?
 To connect to the SQL database in your sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
@@ -197,10 +197,10 @@ A demo environment includes only Microsoft demo data. You can use a demo environ
 To move customizations from a development to a sandbox or production environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
 
 ### Can I bring my own domain name?
-You can bring your own domain name if it is running Azure Active Directory (Azure AD), and the administrator of your Azure AD instance has enabled the Finance and Operations apps within their Azure AD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, Azure AD is set up for you.
+You can bring your own domain name if it is running Azure Active Directory (Azure AD), and the administrator of your Azure AD instance has enabled the finance and operations apps within their Azure AD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, Azure AD is set up for you.
 
 ### Can I add guest Azure AD accounts as users?
-You can add guest Azure AD accounts if you have correctly configured them within Azure AD and enabled the Finance and Operations apps within your Azure AD. 
+You can add guest Azure AD accounts if you have correctly configured them within Azure AD and enabled the finance and operations apps within your Azure AD. 
 
 ### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 sandbox environments?
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
@@ -212,10 +212,10 @@ Microsoft-managed Tier 1 through Tier 5 sandbox environments require Remote Desk
 - Your IP has changed from the IP address listed in the safe list. 
 - Microsoft deleted the rule containing your IP address from the safe list because it violated a guideline.
 
-To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this topic.
+To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this article.
 
 ### When will the availability of reduced regions go into effect for new onboarding?
-Beginning August 1, 2020, new projects for Finance and Operations will be onboarded to the following regions:
+Beginning August 1, 2020, new projects for finance and operations will be onboarded to the following regions:
 
 - East US
 - West US
@@ -239,3 +239,4 @@ This is due to the license expiring, which means that you no longer have the min
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

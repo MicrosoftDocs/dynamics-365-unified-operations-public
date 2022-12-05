@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Customer management in stores
-description: This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
+description: This article explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Customer management in stores
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
+This article explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 
 It's important that store associates can create and edit customer records at the POS. In that way, they can capture any updates to customer information such as the email address, phone number, and address. This information is helpful in downstream systems such as marketing, because the effectiveness of those systems depends on the accuracy of their customer data.
 

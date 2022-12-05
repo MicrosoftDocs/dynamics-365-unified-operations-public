@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Swedish Intrastat
-description: This topic contains information about Intrastat reporting in Sweden.
-author: anasyash
-ms.date: 8/24/2021
+description: This article contains information about Intrastat reporting in Sweden.
+author: AdamTrukawka
+ms.date: 08/24/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add financial dimensions to the CFO workspace
-description: This topic explains how to add financial dimensions to the CFO workspace, so that they can be used for the ledger and budget reports. 
+description: This article explains how to add financial dimensions to the CFO workspace, so that they can be used for the ledger and budget reports. 
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports. The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure. There is a relation between those two measures and the DimensionCombinationEntity entity. Therefore, you can select dimensions.
+This article explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports. The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure. There is a relation between those two measures and the DimensionCombinationEntity entity. Therefore, you can select dimensions.
 
 1. In Finance, on the **Entity Store** page, update the **LedgerActivityMeasure** and the **BudgetActivityMeasure** measures.
 2. In Microsoft Visual Studio, open Application Explorer, and search for **LedgerCFO**.

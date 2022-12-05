@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor request configurations
-description: This topic describes the fields that are required to be populated in a new vendor request.
+description: This article describes the fields that are required to be populated in a new vendor request.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article

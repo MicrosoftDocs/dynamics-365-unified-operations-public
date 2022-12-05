@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize images on search and category pages
-description: This topic describes how to optimize images on search and category pages in Microsoft Dynamics 365 Commerce.
+description: This article describes how to optimize images on search and category pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/04/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to optimize images on search and category pages in Microsoft Dynamics 365 Commerce.
+This article describes how to optimize images on search and category pages in Microsoft Dynamics 365 Commerce.
 
 One way to improve the performance of e-commerce site category and search pages is to optimize the way that product images are rendered. Prior to the Commerce version 10.0.26 release, product images were loaded on the client side to support image fallback to a default image when a product variant or master image didn't exist. 
 

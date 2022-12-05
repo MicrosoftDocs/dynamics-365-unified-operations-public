@@ -1,37 +1,27 @@
 ---
-# required metadata
-
-title: Navigation menu module 
-description: This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+title: Navigation menu module
+description: This article covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Navigation menu module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 The primary purpose of navigation menu modules is to allow site users to browse products and site pages according to the channel navigation hierarchy defined in Dynamics 365 Commerce headquarters. Items configured in a navigation menu module appear as site header navigation. Navigation menu modules also support static menu items that link to other pages on an e-Commerce site.
 

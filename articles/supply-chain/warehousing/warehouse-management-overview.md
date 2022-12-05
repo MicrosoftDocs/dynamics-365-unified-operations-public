@@ -42,7 +42,7 @@ You must configure components for inbound and outbound warehouse process workflo
 - [Set up a location directive for purchase order put-away](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [Set up a work template for purchase orders](./tasks/set-up-work-template-purchase-orders.md)
 
-## Warehouse management processes
+## Warehouse management processes (WMS)
 - Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
 - Flexible, inbound and outbound material workflow support based on queries
 - Full integration with the Manufacturing and Transportation offerings

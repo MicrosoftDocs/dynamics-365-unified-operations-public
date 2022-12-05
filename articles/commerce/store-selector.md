@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Store selector module
-description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
-manager: annbe
+description: This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt\_pltfrm:
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
-ms.dyn365.ops.version:
-
+ms.dyn365.ops.version: 
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
+manager: annbe
 ---
 
 # Store selector module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 Customers can use the store selector module to pick up a product in a selected store after an online purchase. In Commerce version 10.0.13, the store selector module also includes additional capabilities that can showcase a **Find a Store** page that shows nearby stores.
 
@@ -136,7 +127,7 @@ For **Pickup in store** mode, the module can be used only on PDPs and cart pages
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
-To configure the store selector module to show available stores for a store locations page, as in the illustration that appears earlier in this topic, follow these steps.
+To configure the store selector module to show available stores for a store locations page, as in the illustration that appears earlier in this article, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.

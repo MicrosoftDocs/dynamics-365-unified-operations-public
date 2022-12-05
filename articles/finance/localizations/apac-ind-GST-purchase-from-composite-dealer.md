@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchases from composite dealers
-description: This topic provides information about purchases that are made from a composite dealer.
+description: This article provides information about purchases that are made from a composite dealer.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

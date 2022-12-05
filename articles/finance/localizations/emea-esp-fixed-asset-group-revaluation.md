@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset revaluation groups
-description: This topic provides information about fixed asset revaluation groups for Spain.
+description: This article provides information about fixed asset revaluation groups for Spain.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about fixed asset revaluation groups for Spain.
+This article provides information about fixed asset revaluation groups for Spain.
 
 Revaluation groups are used to set up revaluation conditions for the fixed asset. For example, the revaluation group could be a factor or revaluation date. Value from the revaluation group will be used in the fixed asset journal for revaluation proposals and for individual value adjustments of revaluation transactions. To revaluate a fixed asset, you must specify the revaluation group on the **Books** page. Value from the revaluation group will be used in the fixed asset journal for revaluation proposals and for individual value adjustments of revaluation transactions.
 

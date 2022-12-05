@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Formula designer in Electronic reporting (ER)
-description: This topic provides information about how to use the formula designer in Electronic reporting (ER).
-author: NickSelin
+description: This article provides information about how to use the formula designer in Electronic reporting (ER).
+author: kfend
 ms.date: 04/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # Formula designer in Electronic reporting (ER)
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, and data type conversion functions, and also other, business domain–specific functions.
+This article explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, and data type conversion functions, and also other, business domain–specific functions.
 
 ## Formula designer overview
 
@@ -142,7 +132,29 @@ The following illustration shows expressions of this type. (Version 11.12.11 of 
 > 
 > Based on this setup, the message that is generated for each debtor payment, the **Ustrd** XML element, will contain either the text of payment notes or, when that text is blank, a comma-separated list of the invoice numbers that are used to settle the payment.
 
-## <a name="TestFormula"></a>Validation of configured formulas
+## Assistance in formulas writing
+
+### Data sources navigator
+
+You can edit a formula that represents an element of a structured data source. When you configured your ER parameters to present the path to an element of a structured data source as the [relative path](relative-path-data-bindings-er-models-format.md), the "at" (@) sign is [shown](er-formula-language.md#relative-path) in the formula instead of the remaining part of the absolute path of the hierarchical tree structure that is used. This remaining part of the absolute path is pointed to a parent element of the editable one. In Finance version **10.0.30 and later**, on the **Formula designer** page, in the **Data sources** pane, you can select the **Go to @** option to position the cursor of the data sources tree to an element that is the parent of the editable one. The structure of all collapsed ascending elements will be automatically and recursively expanded when required. This expansion can help you to quickly visualize the base element of the editable one, observe siblings of the editable element in the data sources tree, and use each of them in the editable formula if needed.
+
+![Use the "Go to @" option to position the cursor of the data sources tree to an element that is the parent of the editable one on the Formula designer page.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### Data sources picker
+
+On the **Formula designer** page, in the **Data sources** pane on the left, select an element of a data source that you want to bring in to the editable formula. Then select **Add data source**. Notice that the selected element is added to the text of the editable formula.
+
+> [!TIP]
+> When you use the **Add data source** option in the default formula editor, the selected element is always added to the end of the formula text. When you do the same in the [Advanced formula editor](er-advanced-formula-editor.md), the selected element is inserted to the formula text at the current cursor position.
+
+### Built-in functions picker
+
+On the **Formula designer** page, in the **Functions** pane on the right, select an ER built-in function that you want to bring in to the editable formula. Then, select **Add function**. Notice that the selected function is added to the text of the editable formula.
+
+> [!TIP]
+> When you use the **Add function** option in the default formula editor, the selected function is always added to the end of the formula text. When you do the same in the [Advanced formula editor](er-advanced-formula-editor.md), the selected function is inserted to the formula text at the current cursor position.
+
+### <a name="TestFormula"></a>Validation of configured formulas
 
 On the **Formula designer** page, select **Test** to validate how the configured formula works.
 

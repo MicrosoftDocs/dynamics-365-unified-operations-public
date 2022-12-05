@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Process collection letters example
-description: This topic goes through an example that shows the process of creating, printing, and posting collection letters. 
+description: This article goes through an example that shows the process of creating, printing, and posting collection letters. 
 author: JodiChristiansen
 ms.date: 02/03/2021
 ms.topic: business-process 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This topic goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
+This article goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
 
 To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and then enter the required information to create customer US-045.
 
@@ -37,11 +37,11 @@ When you've finished, follow these steps.
 
 1. Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the collection letter sequence as shown in the following table that is assigned to the customer posting profile.
 
-|     Collection   letter code    	|     Description                       	|     Currency    	|     Main   account    	|     Fee   in currency    	|     Minimum   over    	|     Days   Block    	|
-|---------------------------------	|---------------------------------------	|-----------------	|-----------------------	|--------------------------	|-----------------------	|---------------------	|
-|     Collection   letter 1       	|     Second   notification with fee    	|     USD         	|                       	|     0.00                 	|     0.00              	|     2               	|
-|     Collection   letter 2       	|     Second   notification with fee    	|     USC         	|     403150            	|     20.00                	|     10.00             	|     3               	|
-|     Collection                  	|     Final   notification with fee     	|     USD         	|     403150            	|     50.00                	|     100.00            	|     15              	|
+|   Collection letter code    	|     Description    	|     Currency    	|     Main   account    	|     Fee in currency    	|   Minimum   over 	|   Days   Block    	|
+|-----------------------------	|--------------------	|-----------------	|-----------------------	|--------------------	|-----------------------	|------------------	|
+|  Collection letter 1       	|     First notification |     USD      	|                 	|     0.00             	|     0.00              	|     2               	|
+|  Collection letter 2       	|     Second notification with fee    	|     USD      |     403150     	|     20.00        	|     10.00    	|     3               	|
+|  Collection               	|     Final notification with fee     	|     USD         	|     403150  	|     50.00     	|     100.00            	|     15         	|
 
 The following illustration shows the information that's in the table as it would appear on the **Collection letters** page. 
 

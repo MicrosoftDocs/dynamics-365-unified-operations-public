@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales of taxable goods that have tax on shipping charges
-description: This topic provides information about sales of taxable goods that have tax on the shipping charges. 
+description: This article provides information about sales of taxable goods that have tax on the shipping charges. 
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

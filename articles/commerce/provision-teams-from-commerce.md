@@ -1,23 +1,14 @@
 ---
-# required metadata
 title: Provision Microsoft Teams from Dynamics 365 Commerce
-description: This topic describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
+description: This article describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-# ms.search.form: 
-#ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
@@ -27,7 +18,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
+This article describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
 
 Dynamics 365 Commerce offers an easy way to provision Teams if you haven't yet set up teams for your retail stores there. By taking advantage of well-defined information from Commerce that you want to use in Teams, you can help your store employees get started in Teams. This information includes the organizational hierarchy, store names, employee information, and Azure Active Directory (Azure AD) accounts. 
 

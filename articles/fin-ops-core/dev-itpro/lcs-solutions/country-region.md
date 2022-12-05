@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Globalization resources
-description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
-author: kfend
+description: This article includes lists of resources that can help you learn more about country/region-specific functionality and offerings.
+author: sericks007
 ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 104173
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 104173
+ms.search.form: ERWorkspace
 ---
 
 # Globalization resources
@@ -30,15 +21,15 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Local and regional deployments
 If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider during deployment. Consider the following resources that might be relevant to you:
 
-[Finance and Operations apps operated by 21Vianet in China](../deployment/china-local-deployment.md)
+[Finance and operations apps operated by 21Vianet in China](../deployment/china-local-deployment.md)
 
 ## Localization and regulatory features
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations apps include functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
+Finance and operations apps include functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
 
-This topic includes lists of resources that can help you do the following: 
+This article includes lists of resources that can help you do the following: 
 - Learn more about developing country/region-specific solutions.
 - Get country/region specific updates.
 - Submit and review regulatory alerts.
@@ -66,8 +57,8 @@ The following resources provide information about planned and new localization f
 #### Dynamics 365 release plans
 The [Dynamics 365 release plans](/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms. 
 
-#### Finance and Operations apps what's new
-The [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md) lists the features that are included in specific releases of the Finance and Operations apps.
+#### Finance and operations apps what's new
+The [What's new or changed in finance and operations home page](../../fin-ops/get-started/whats-new-changed.md) lists the features that are included in specific releases of the finance and operations apps.
 
 ### Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
@@ -137,3 +128,4 @@ To learn more, see [Help system](../../fin-ops/get-started/help-overview.md#task
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

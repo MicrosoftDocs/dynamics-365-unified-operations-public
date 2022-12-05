@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Add links to your organization's legal terms and privacy statement
-description: This topic explains how administrators can add links to their organization's legal terms and privacy statement in the About pane.
-author: aneesmsft
+description: This article explains how administrators can add links to their organization's legal terms and privacy statement in the About pane.
+author: jasongre
 ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters, SysAbout
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 267894
-ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-
+ms.custom: 267894
+ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
+ms.search.form: SystemParameters, SysAbout
 ---
 
 # Add links to your organization's legal terms and privacy statement
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce.
+This article explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce.
 
 Organizations often need to ensure that the links to their legal terms and privacy statement are readily available and visible to users in order to meet legal and compliance requirements. Administrators of an organization can follow these steps to have the links to their legal terms and privacy statement be available in the **About** pane (**Settings** &gt; **About**).
 

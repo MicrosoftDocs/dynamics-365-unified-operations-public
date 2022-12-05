@@ -2,9 +2,9 @@
 # required metadata
 
 title: View journal entries and transactions
-description: This topic explains the various ways that you can view journal entries and transactions. 
+description: This article explains the various ways that you can view journal entries and transactions. 
 author: aprilolson
-ms.date: 08/01/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the various ways that you can view journal entries and transactions. 
+This article explains the various ways that you can view journal entries and transactions. 
 
 Users who want to view journals and transactions have several ways to access the data. They can take advantage of inquiry pages that provide drill-down ability, or they can use various report options in the general ledger.
 

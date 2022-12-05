@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: EU Sales list for France
-description: This topic provides information about the European Union (EU) sales list report for services (Déclaration européenne de services [DES]).
-author: AKroshkina
+description: This article provides information about the European Union (EU) sales list report for services (Déclaration européenne de services DES).
+author: AdamTrukawka
 ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for France
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report for services (Déclaration européenne de services [DES]). The French EU sales list report contains information about the sale of services for reporting in XML format.
+This article provides information about the European Union (EU) sales list report for services (Déclaration européenne de services [DES]). The French EU sales list report contains information about the sale of services for reporting in XML format.
 
 The following fields are included on the French EU sales list report:
 
@@ -118,7 +107,7 @@ For general information about which types of transactions are included in the EU
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for France, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this topic, create **FR83404833048** as the company's VAT ID. Additionally, create postings by using item sales tax groups where the **Reporting type** field is set to **Service**.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for France, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this article, create **FR83404833048** as the company's VAT ID. Additionally, create postings by using item sales tax groups where the **Reporting type** field is set to **Service**.
 
 ### Create an EU sales list report
 

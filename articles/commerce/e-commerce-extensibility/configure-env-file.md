@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Configure a development environment (.env) file
-description: This topic describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Configure a development environment (.env) file
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure the .env file that is used for the development environment in Microsoft Dynamics 365 Commerce.
+This article describes how to configure the .env file that is used for the development environment in Microsoft Dynamics 365 Commerce.
 
 The .env file that is provided as part of the Dynamics 365 Commerce online software development kit (SDK) is a simple configuration text file. It defines a set of variables that is used by a Node app that runs in the development environment.
 
@@ -41,7 +31,7 @@ The default .env file that is provided with the online SDK should resemble the f
 ### Environment File ##################################################################
 # This is a simple configuration 
 # Online documentation for this file is available at 
-# https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-env-file
+# https://learn.microsoft.com/dynamics365/commerce/e-commerce-extensibility/configure-env-file
 ########################################################################################
 
 # MSDyn365_APP_TYPE variable is required. It can be set only to the value partner.

@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
-description: This topic explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on Finance and Operations. 
-author: jorisdg
+description: This article explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on finance and operations.
+author: gianugo
 ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -30,11 +20,11 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-*Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before Finance and Operations is turned on. The purpose of upgrade cutover testing (mock cutover) is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
+*Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before finance and operations is turned on. The purpose of upgrade cutover testing (mock cutover) is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
 
 There are three main workstreams during a cutover:
 
-- **Technical workstream** – This workstream includes the data upgrade execution process. Your business will enforce a limit on the amount of downtime that is allowed. During this downtime, neither AX 2012 nor Finance and Operations will be available. This workstream might have to tune the data upgrade procedure to meet the business's downtime limit.
+- **Technical workstream** – This workstream includes the data upgrade execution process. Your business will enforce a limit on the amount of downtime that is allowed. During this downtime, neither AX 2012 nor finance and operations will be available. This workstream might have to tune the data upgrade procedure to meet the business's downtime limit.
 - **Functional workstream** – This workstream includes the configuration tasks that are performed after the data upgrade is completed. All these tasks must be documented and quantified, and a resource must be assigned, because both the functional workstream and the technical workstream must fit within the business's downtime limit.
 - **AX 2012 rollback** - This workstream includes rolling back to an AX 2012 environment. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
 
@@ -52,11 +42,11 @@ The mock cutover process is very similar to data upgrade validation in a sandbox
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
 
 > [!NOTE]
-> In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
-The technical workstream involves various technical team members: the database administrator (DBA), the AX 2012 system administrator, server administrators, and developers who are familiar with AX 2012 and Finance and Operations. 
+The technical workstream involves various technical team members: the database administrator (DBA), the AX 2012 system administrator, server administrators, and developers who are familiar with AX 2012 and finance and operations. 
 
 During cutover testing, the technical team is focused on performance and reliability testing of the data upgrade process, to make sure that it meets the business's downtime limit. Many elements of hardware and software are involved in this process. Some of these elements are on-premises, whereas others are in the Microsoft cloud. In addition, many elements of custom application code and standard code are involved. The result of this testing should be confidence in the cutover process for your environment.
 
@@ -91,3 +81,4 @@ When you have fully configured your environment, add users, and perform appropri
 The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

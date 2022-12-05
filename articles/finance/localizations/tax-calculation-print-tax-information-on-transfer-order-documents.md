@@ -2,7 +2,7 @@
 # required metadata
 
 title: Print tax information on transfer order documents
-description: This topic explains how the tax information that is determined by the tax calculation service can be printed on transfer order documents.
+description: This article explains how the tax information that is determined by the tax calculation service can be printed on transfer order documents.
 author: Kai-Cloud
 ms.date: 10/15/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to print tax information on transfer order documents. You can print the pro-forma invoice document of a transfer order for stock transfers that are considered intra-community supply and intra-community acquisitions under European Union (EU) value-added tax (VAT) regulations. 
+This article explains how to print tax information on transfer order documents. You can print the pro-forma invoice document of a transfer order for stock transfers that are considered intra-community supply and intra-community acquisitions under European Union (EU) value-added tax (VAT) regulations. 
 
 The following tax-relevant data is added to the transfer order documents:
 

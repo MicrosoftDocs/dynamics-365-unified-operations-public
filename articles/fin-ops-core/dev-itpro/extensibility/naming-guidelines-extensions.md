@@ -1,25 +1,19 @@
 ---
 title: Naming guidelines for extensions
-description: This topic describes the naming guidelines for extensions. Artifacts must have a name that is unique across all models at installation time. 
-author: LarsBlaaberg
+description: This article describes the naming guidelines for extensions. Artifacts must have a name that is unique across all models at installation time.
+author: pvillads
 ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Naming guidelines for extensions

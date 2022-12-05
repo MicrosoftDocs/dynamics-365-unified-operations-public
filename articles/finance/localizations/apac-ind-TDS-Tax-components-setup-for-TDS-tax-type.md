@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up tax components for the TDS tax type
-description: This topic explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. It also explains how to define the threshold limit that is used to calculate TDS for each TDS component.
+description: This article explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. It also explains how to define the threshold limit that is used to calculate TDS for each TDS component.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. The TDS components are TDS, surcharge, PE-Cess, and SHE Cess. This topic also explains how to define the threshold that is used to calculate TDS for each TDS component. Additionally, you can define an exception threshold that is used to calculate TDS for each TDS component.
+This article explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. The TDS components are TDS, surcharge, PE-Cess, and SHE Cess. This article also explains how to define the threshold that is used to calculate TDS for each TDS component. Additionally, you can define an exception threshold that is used to calculate TDS for each TDS component.
 
 Follow these steps to set up TDS components.
 

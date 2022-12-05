@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Configure the customer account payment method for B2B e-commerce sites
-description: This topic describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce. It also describes how credit limits affect on-account payment capture on business-to-business (B2B) e-commerce sites.
+description: This article describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce. It also describes how credit limits affect on-account payment capture on business-to-business (B2B) e-commerce sites.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Configure the customer account payment method for B2B e-commerce sites
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce. It also describes how credit limits affect on-account payment capture on business-to-business (B2B) e-commerce sites.
+This article describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce. It also describes how credit limits affect on-account payment capture on business-to-business (B2B) e-commerce sites.
 
 Retailers can accept various types of payment in exchange for the products and services that they sell in an e-commerce channel. Each payment type that a retailer accepts must be configured in Dynamics 365 Commerce when the system is set up. The customer account (or "on-account") payment method must be supported on B2B e-commerce sites. 
 

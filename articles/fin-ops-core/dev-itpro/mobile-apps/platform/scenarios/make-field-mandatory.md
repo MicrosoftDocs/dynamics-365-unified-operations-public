@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Make fields mandatory by using workspace classes
-description: This topic explains how to use workspace classes to make a field mandatory.
-author: tonyafehr
+description: This article explains how to use workspace classes to make a field mandatory.
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-
+ms.custom: 255544
+ms.assetid: 
 ---
 
 # Make fields mandatory by using workspace classes

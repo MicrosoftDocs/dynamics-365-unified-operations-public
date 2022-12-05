@@ -2,9 +2,9 @@
 # required metadata
 
 title: Priority-based batch scheduling
-description: This topic provides information about the functionality for priority-based batch scheduling.
+description: This article provides information about the functionality for priority-based batch scheduling.
 author: matapg007
-ms.date: 05/31/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,12 +35,12 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 
 > [!IMPORTANT]
 > - This feature is available with version 10.0.25.
-> - This feature is enabled by default for all new intances with version 10.0.28.
-> - This feature will be enabled by default for all existing intances with version 10.0.29.
+> - This feature is enabled by default for all new instances with version 10.0.28.
+> - This feature will be enabled by default for all existing instances with version 10.0.29.
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. 
 
-**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section later in this topic.
+**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section later in this article.
 
 For example, there are 100 batch tasks for processing. Forty tasks will be served from the reserved queue, 30 from the critical queue, 15 from the high queue, ten from the normal queue, and five from the low queue. It isn't the priority-based order of execution that will be selected for processing, but the weight of the batch tasks from each priority.
 
@@ -55,7 +55,7 @@ For example, there are 100 batch tasks for processing. Forty tasks will be serve
 > [!NOTE]
 > Because the schedule priority is set to **Normal** for all existing batch groups when the feature is turned on, it's important that you plan and update the scheduling priority for each batch group so that it represents the relative priorities according to business requirements for the related batch jobs and their related business processes.
 
-Platform update 32 includes upgrade support for existing batch jobs. For more information, see the [Automatic batch group migration for batch jobs](priority-based-batch-scheduling.md#automatic-batch-group-migration-for-batch-jobs) section later in this topic.
+Platform update 32 includes upgrade support for existing batch jobs. For more information, see the [Automatic batch group migration for batch jobs](priority-based-batch-scheduling.md#automatic-batch-group-migration-for-batch-jobs) section later in this article.
 
 Advantages of priority-based batch scheduling include:
 
@@ -149,6 +149,34 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 > Any reserved capacity is exclusive to batch jobs that have **Reserved capacity** priority. The reserved capacity won't be made available for batch jobs that have other priorities, even if there is idle reserved capacity.
 
 A new internal system batch job, **System job to clean up expired batch heartbeat records**, cleans up the new BatchHeartbeatTable table. This batch job has the class name **SysCleanupBatchHeartbeatTable**. BatchHeartbeatTable is an internal monitoring table that is used to determine, configure, and distribute reserved capacity threads among online nodes.
+
+## Best practices
+- We recommend that you adjust the priority so that all batch jobs don't have the same priority. For example, don't set the priority for all batch jobs to **High** or **Critical**. The following table provides the distribution that you should consider when configuring batch priorities.
+
+    | Priority	| Possible distribution percentage of batch jobs, excluding **Reserved capacity** |
+    |----------|--------|
+    | Low | 10% to 50%
+    | Normal |	15% to 35%
+    | High	| 15% to 35%
+    | Critical | 	10% to 30%
+
+- Batch jobs should be scheduled in such a way that there is always a mix of jobs with different priorities around the clock. For example, don't schedule all batch jobs with the **Normal** priority in the morning, **High** in the afternoon, **Critical** in the evening, and **Low** at night.
+- The reserved queue, when used with **Reserved capacity** priority, will give the experience as having dedicated resources for batch job. If not required, then do not allocate batch jobs to the **Reserved capacity** priority.
+- Priorities are not used to stack rank tasks against each other. Instead, priorities determine the probability with which a task will be picked for execution.
+- We recommend that you keep the number of threads the same across the servers to eliminate performance degradation.
+- We recommend implementing the BatchRetryable interface to batch tasks to prevent issues from SQL Server transient errors. For more information, see [Retry the batch job task when transient SQL Server errors occur](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur).
+- Batch tasks should be idempotent in nature. Regardless of how many times you execute them, you should achieve the same result, and tasks should be set up with a retry count greater than zero. This allows the system to recover from any kind of transient errors that may occur during job execution. For more information, see [Retry the batch job task when transient SQL Server errors occur](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur).
+- If there are larger workloads, we recommend breaking them down into smaller workloads or tasks so that they execute and complete in ten minutes or less.
+- SQL Server transactions in batch tasks should be as small as possible in duration so that it doesn't cause SQL Server blocking that may impact performance of other batch jobs and user activity.
+- We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
+- When debugging batches in UAT by connecting to a development machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the development machine. 
+
+    ```
+    UPDATE ssc
+    SET ssc.enablebatch = 0
+    FROM dbo.sysserverconfig ssc
+    WHERE ssc.serverid = '<servername Tier2 batch server>'   
+    ```
 
 ## Automatic batch group migration for batch jobs
 

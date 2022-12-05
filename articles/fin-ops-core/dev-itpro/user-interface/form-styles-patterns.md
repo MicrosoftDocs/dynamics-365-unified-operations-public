@@ -1,43 +1,32 @@
 ---
-# required metadata
-
 title: Form styles and patterns
-description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns.
+description: This article describes the concept of form patterns and discusses the process for applying and removing patterns.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28891
-ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28891
+ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
 ---
 
 # Form styles and patterns
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
+This article describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this article. 
 
 ## Dynamics AX 2012: Form styles and templates
 
 In Microsoft Dynamics AX 2012, several form styles were introduced and formalized. Primary data types are represented by the List Page and Details Form styles. Secondary data types are represented by the Simple List and Details Form and Simple List Form styles. In addition to these core form types, other form styles exist for supporting forms, such as Table of Contents for settings and Drop Dialog for dialog forms, and Lookup for lookup forms. Other less formal form patterns, such as Wizard, also exist. Developers who wanted to build a new form of a specific style in Dynamics AX 2012 often used the corresponding template form as a starting point. After they included form content and made any modifications that were required, developers could then run the Form Style Checker add-in to validate their form in terms of structure and property values against that form style's template form.
 
-## Finance and Operations: Form patterns
+## Finance and operations: Form patterns
 
 Form patterns (a new concept that is the evolution of the Dynamics AX 2012 form templates, style, and Form Style Checker) are now an integrated part of the form development experience. These patterns provide form structure, based on a particular style (including required and optional controls), and also provide many default control properties. In addition to top-level form patterns, subpatterns can be applied to container controls, and that provide guidance and consistency for subcontent on a form (for example, on a FastTab). Patterns have made form development easier by providing a guided experience for applying patterns to forms to guarantee that they are correct and consistent. Patterns help validate form and control structures, and also the use of controls in some places. Patterns also help guarantee that each new form that a user encounters is immediately recognizable in appearance and function. Form patterns can provide many default control properties, and these also contribute to a more guided development experience. Because patterns provide many default layout properties, they help guarantee that forms have a responsive layout. Finally, patterns also help guarantee better compatibility with upgrades. Many of the existing form styles and templates from Dynamics AX 2012 continue to be supported. However, legacy form styles and templates that aren't supported have a migration path. Because the foundational elements are built based on those legacy form styles and patterns, the transition is as easy as possible.
 
@@ -55,7 +44,7 @@ First, you must identify a target form and add it to your project. The **Form Pa
 
 ### Determine the pattern
 
-Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Finance and Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md) topic. For more detailed information about specific patterns, see the individual pattern guideline documents. For more information about applying a pattern, see [Select a form pattern](select-form-pattern.md).
+Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for finance and operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md) article. For more detailed information about specific patterns, see the individual pattern guideline documents. For more information about applying a pattern, see [Select a form pattern](select-form-pattern.md).
 
 ### Apply the pattern
 You can apply a pattern in three ways:

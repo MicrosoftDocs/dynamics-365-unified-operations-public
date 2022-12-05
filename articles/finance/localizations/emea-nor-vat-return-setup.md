@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
-description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
-author: liza-golub
-ms.date: 05/27/2022
+description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
+author: AdamTrukawka
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-
 ---
 
 # Prepare your environment to interoperate with ID-porten and Altinn web services
@@ -108,7 +97,7 @@ Follow these steps to set up the application-specific parameters for the **VAT D
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result.
 
-    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this topic.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this article.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
@@ -154,11 +143,24 @@ The following table shows the lookup results for **NoteForTaxCode_Lookup**.
 | sesongvariasjon | Seasonal variation |
 | kreditnota | Credit note |
 | Annet | Other |
+| utenfor rekkevidde | Out of scope (introduced in [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315)) |
 
 > [!IMPORTANT]
-> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reasom** is not a mandatory field in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in the **Reason** column, and **\*Not blank\*** in all the other columns.
+> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reason** is not a mandatory field in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in the **Reason** column, and **\*Not blank\*** in all the other columns.
+>
+> If you select a financial reason code for a document that isn't associated with any lookup result from the previous table (so that the **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node. The comment will be reported as-is in the related **Reason comment** field of the original document.
 
-If you select a financial reason code for a document that isn't associated with any lookup result from the previous table (this means that **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the comment will be reported \"as-is\" in the related **Reason comment** field of the original document'
+Hotfix [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315) introduces a new **utenfor rekkevidde** (out of scope) value for the lookup result of the **NoteForTaxCode_Lookup** lookup field. Use this value to map all the financial reasons that should be omitted in your VAT return. Specifically, you can use this value to map **\*Blank\*** and **\*Not blank\*** values.
+
+The following illustration shows an example of the setup for the **NoteForTaxCode_Lookup** lookup field.
+
+![Setup of an "out of scope" value of NoteForTaxCode_Lookup.](media/emea-nor-vat-return-outofscope.png)
+
+Finance will interpret this setup in the following way:
+
+- All tax transactions that are posted with the **ERROR** reason code will be grouped and reported with the *feil i regnskapsprogram* value in the `<merknad/utvalgtMerknad>` tag under the `<mvaSpesifikasjonslinje>` node.
+- All tax transactions that are posted with the **MISC** reason code will be reported with their financial reason comment in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node. The financial reason comment will be reported as-is in the related **Reason comment** field of the original document.
+- All other tax transactions that have a **\*Blank\*** or not **\*Not blank\*** value for the reason code will be grouped, and the `<merknad>` tag under the `<mvaSpesifikasjonslinje>` node will be omitted.
 
 #### <a id="tax-transaction-classifier"></a>Detailed description of the tax transaction classifier
 
@@ -339,7 +341,7 @@ To prepare Finance to report a VAT return for a VAT group, make sure that your b
 - The **Settle and post sales tax** job is completed in each subsidiary legal entity.
 - Application-specific parameters for the VAT return format are set up for each subsidiary legal entity. The setup configurations are completed for both the **VAT Declaration XML (NO)** format and the **VAT Declaration Excel (NO)** format.
 - A VAT return in Excel format is correctly generated in each subsidiary legal entity.
-- One legal entity is set up for interoperation with Altinn according to the information in this topic.
+- One legal entity is set up for interoperation with Altinn according to the information in this article.
 - Sales tax settlement periods for the **NO VAT Collect sales tax payments** action are defined for each subsidiary legal entity.
 
 To enable Finance to report VAT returns from multiple legal entities in the same system database, you must enable the **Cross-company queries for the populate records actions** feature in the **Feature management** workspace. 
@@ -362,7 +364,7 @@ The **NO VAT return** processing lets you collect sales tax payment transactions
 
     If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting.
 
-If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this topic are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
+If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this article are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records**.
 

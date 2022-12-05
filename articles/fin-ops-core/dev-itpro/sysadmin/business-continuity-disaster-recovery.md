@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business continuity and disaster recovery
-description: This topic describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
+description: This article describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
 author: MicroSri
 ms.date: 04/25/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-07-31
 
 Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications if a Microsoft Azure region-wide outage occurs.
 
-Customers who have purchased the appropriate licenses can deploy a production instance of a Finance and Operations app. For more information, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
+Customers who have purchased the appropriate licenses can deploy a production instance of a finance and operations app. For more information, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
 For production environments, replicas of the different storage services (Azure SQL Database and file storage) are established in the secondary region at the time of deployment. These replicas are known as *geo-secondaries*.
 
@@ -31,7 +31,7 @@ For more information about data protection in non-production environments, see [
 
 As the preceding illustration shows, compute infrastructure, like data storage services, is provisioned in both regions in such a way that it can handle the traffic volume in the event of an environment-level or region-level failover. To provide region-level resiliency, Azure Virtual Machine Scale Sets is configured with five-level fault domains. In this way, it can handle transient issues that are caused by faulty hardware and other factors, and automatically load balance the traffic. The result is an experience where customers barely notice that there is any issue and experience no data loss. The following sections describe the different types of failovers that are possible and how Microsoft manages service continuity in both these situations.
 
-Finance and Operations apps adhere to the Microsoft Business Continuity and Disaster Recovery (BCDR) standard. This standard requires that a BCDR plan be reviewed, updated, and tested at least once a year for every online service. The Microsoft Cloud Business Continuity and Disaster Recovery Plan Validation Report is available to customers in [Service Trust Portal](https://servicetrust.microsoft.com/).
+Finance and operations apps adhere to the Microsoft Business Continuity and Disaster Recovery (BCDR) standard. This standard requires that a BCDR plan be reviewed, updated, and tested at least once a year for every online service. The Microsoft Cloud Business Continuity and Disaster Recovery Plan Validation Report is available to customers in [Service Trust Portal](https://servicetrust.microsoft.com/).
 
 If the outage is caused by issues with underlying services, because of factors such as faulty hardware or network outage, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it's routed to the secondary region instances. In these cases, the recovery point objective (RPO) is small: up to a few seconds or a couple of minutes.
 
@@ -46,7 +46,7 @@ If a failover occurs, the applicable service will work in limited mode. Update m
 When Microsoft determines that the primary region is back online and fully operational, it will notify customers and switch the environments back so that they work out of the primary region. Users who are connected to the systems will experience a brief interruption of up to a few minutes, and the batch service might be unavailable for up to 25 minutes. The service, including all non-production instances, will be fully restored. There will be no data loss during the failback process.
 
 > [!IMPORTANT]
-> While the environment is operating out of the secondary region, the Finance and Operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
+> While the environment is operating out of the secondary region, the finance and operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
 >
 > Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
 
@@ -62,3 +62,4 @@ The following table describes responsibilities for disaster recovery.
 | If a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | The customer can't request package deployments or other regular maintenance requests in failover mode. |
 | When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations are resumed. A notification will be published to customers. Although customers might experience brief interruptions or disconnections during this window, they won't have to take a full downtime. | None |
 | None | The customer should plan disaster recovery for resources that aren't provisioned by Microsoft as part of the service. This includes resources that run independently, as well as ones that are hosted in customer subscriptions in Azure. |
+

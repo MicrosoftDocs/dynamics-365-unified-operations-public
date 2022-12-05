@@ -2,9 +2,9 @@
 # required metadata
 
 title: Go-live for implementation projects FAQ
-description: This topic lists frequently asked questions about how to go live with an implementation project.
-author: OlgaPetrovaFT
-ms.date: 05/10/2022
+description: This article lists frequently asked questions about how to go live with an implementation project.
+author: alejandra-cabrales
+ms.date: 06/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: olpetrov
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists frequently asked questions about how to go live with an implementation project.
+This article lists frequently asked questions about how to go live with an implementation project.
 
 ## When can I configure and request my production environment?
 
@@ -48,25 +48,27 @@ The Go-live Readiness Review is aimed to assess project readiness and help you h
 This review is mandatory for every implementation project before you can deploy a production environment.
 
 ## I want to request my production environment. Who do I contact for a Go-live Readiness Review?
-Please follow the guidance in this article to understand how to initiate the Go-live Readiness Review.  For more information, see [Prepare for go-live](prepare-go-live.md).
+Please follow the guidance in the [Prepare for go-live](prepare-go-live.md) article to understand how to initiate the Go-live Readiness Review.  
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
 The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology and a **Go-live Readiness Review** is completed with Microsoft. For more information, see [Prepare for go-live](prepare-go-live.md).
 
-For more information about how to complete methodology phases in LCS, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+For more information about how to complete methodology phases in LCS, see [Lifecycle Services (LCS) for finance and operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 ## My sandbox environment is currently on an update that is set to expire in two months. Can I request a production environment that has the latest update?
 
-No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the versions that you select must match the versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest update to your sandbox environment, test it, and sign off.
+We strongly recommended that you deploy the production environment with the same version used in the acceptance testing environment, which should be the version you are planning to go live with. Going live on a version different from the version you tested on is **not** recommended, as it can lead to unexpected behavior and unforeseen issues that can negatively impact the go-live experience. 
 
-For more information, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+It is strongly recommended that you go live on a version that is **not** near end of service, so that you are able to apply quality updates for some time after the go-live, if needed. It is important to carefully plan the version on which you are conducting the User Acceptance Test (UAT), and keep it as up-to-date as possible.
 
-## Our sandbox environments are deployed in the Central US datacenter, but we want our production environments to be deployed in the West US datacenter. Can I select West US as the datacenter in my production configuration?
+For more information, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md) and [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
-No. We will deny any request for a production environment that is in a different datacenter than your sandbox environment. We require that all your environments reside in the same datacenter. If you want your production environment to reside in the West US datacenter, you must first redeploy your sandbox environments to the West US datacenter, test them, and sign off.
+## Our sandbox environments are deployed in a different datacenter from where we want our production environment to be deployed. Can I select a different datacenter for my production environment?
 
-For information that can help you select the correct datacenter, see the [Network requirements](../get-started/system-requirements.md#network-requirements) section of the "System requirements" topic.
+It is strongly recommended to deploy the production environment in the same datacenter used in the acceptance testing environment, which should be the data center you are planning to go live with. Using the same datacenter helps ensure that you are validating latency as well as support for all services under production-like conditions. Going live on a datacenter different from the one you tested on is **not** recommended, as it can lead to unexpected performance issues and unforeseen functionality gaps that can negatively impact the go-live experience.
+
+For information that can help you select the correct datacenter, see the [Network requirements](../get-started/system-requirements.md#network-requirements) section of the "System requirements" article.
 
 ## How will my production environment be sized?
 
@@ -77,7 +79,7 @@ Your production environment will be sized based on the current user license coun
 
 ## I submitted the request for a production environment, but I made a mistake. Can I still change it?
 
-Please log a support ticket to address the issue.
+No. Production environment deployment starts as soon as you submit the request. Please wait until the deployment has completed and then log a support ticket to have the production environment deleted, so that you can redeploy it.
 
 ## How long does it take to deploy my production environment?
 
@@ -95,23 +97,24 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 
 ## Can I request a copy of the backup of my production database?
 
-No. However, you can submit a database refresh service request to copy your production database to your Tier 2 and higher sandbox environment. After the copy request is completed, you can back up your sandbox environment.
+No. However, you can copy your production database to your Tier 2 or higher sandbox environment. After the copy operation is completed, you can back up your sandbox environment. For more information, see [Database refresh](../../dev-itpro/database/database-refresh.md).
 
 ## My golden configuration database is in a Tier 1 sandbox environment. How can I copy and restore it to my production environment?
-To copy and restore your database, follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
+To copy and restore your database, follow the instructions in the article, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
 
 > [!NOTE]
 > If your golden configuration is in data packages, you must manually import the data packages to the production environment.
 
 ## After go-live, can I apply new code changes to the production environment?
 
-Yes. In LCS, you can submit a service request to apply a deployable package to your production environment. Application of one deployable package to a production environment involves a lead time of five hours and downtime of approximately five hours.
+Yes. 
 
 For more information, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
 
 ## What should I do if my production environment is down?
 
-To report a production outage, follow the process described in the topic, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
+To report a production outage, follow the process described in the article, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

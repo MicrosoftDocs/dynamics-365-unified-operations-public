@@ -2,7 +2,7 @@
 # required metadata
 
 title: BOM calculations
-description: The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This topic provides information about BOM calculations.
+description: The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This article provides information about BOM calculations.
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../includes/banner.md)]
 
-The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This topic provides information about BOM calculations.
+The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This article provides information about BOM calculations.
 
 The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the **Calculations** page. You use the **Calculations** page to perform the following tasks:
 

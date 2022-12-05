@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.9.
+description: This article describes features that are either new or changed in Dynamics 365 Finance version 10.0.9.
 author: kfend
 ms.date: 02/03/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
 
 - **Preview release:** February 2020
 - **General availability (self-update):** March 2020
@@ -77,7 +77,7 @@ Microsoft Dynamics 365 Finance 10.0.9 includes Platform update 33. To learn more
 For information about the bug fixes included in each of the updates that are part of 10.0.9, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415034&dbType=3&qc=7bdf05cf1859a5a56f4b9c0dae88fa1653d489181b3a2c1f19429225daf5724b).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 
 ### Dynamics 365: 2020 release wave 1 plan
@@ -88,14 +88,15 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

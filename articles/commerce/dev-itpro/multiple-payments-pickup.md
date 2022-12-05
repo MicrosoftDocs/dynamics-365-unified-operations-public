@@ -2,7 +2,7 @@
 # required metadata
 
 title: Multiple available payment methods for in-store pickup
-description: This topic covers the capabilities of Microsoft Dynamics 365 Commerce point of sale (POS) when one or more pre-existing payment methods can be used against a transaction.
+description: This article covers the capabilities of Microsoft Dynamics 365 Commerce point of sale (POS) when one or more pre-existing payment methods can be used against a transaction.
 author: BrianShook
 ms.date: 12/03/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers the capabilities of Microsoft Dynamics 365 Commerce point of sale (POS) when one or more pre-existing payment methods are available to be used against a transaction.
+This article covers the capabilities of Microsoft Dynamics 365 Commerce point of sale (POS) when one or more pre-existing payment methods are available to be used against a transaction.
 
 In many cases, when a customer creates an order and provides payment that is authorized, the payment is against an order that will be picked up in the store. When the customer arrives at the store, and their transaction is brought up in POS, the usual preference is to use any existing authorized payments instead of accepting a new payment method. Dynamics 365 Commerce helps the POS user identify any available payment methods and apply them against the transaction.
 

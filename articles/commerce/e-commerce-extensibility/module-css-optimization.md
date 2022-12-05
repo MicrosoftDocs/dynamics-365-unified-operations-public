@@ -2,9 +2,9 @@
 # required metadata
 
 title: Module CSS optimization
-description: This topic describes how to use the module CSS optimization feature in Microsoft Dynamics 365 Commerce to help reduce the overall CSS bundle size of an e-commerce page and improve page performance.
+description: This article describes how to use the module CSS optimization feature in Microsoft Dynamics 365 Commerce to help reduce the overall CSS bundle size of an e-commerce page and improve page performance.
 author: samjarawan
-ms.date: 03/15/2022
+ms.date: 08/05/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the module Cascading Style Sheets (CSS) optimization feature in Microsoft Dynamics 365 Commerce to help reduce the overall CSS bundle size of an e-commerce page and improve page performance.
+This article describes how to use the module Cascading Style Sheets (CSS) optimization feature in Microsoft Dynamics 365 Commerce to help reduce the overall CSS bundle size of an e-commerce page and improve page performance.
 
 By default, a theme bundles all module CSS code into a single static file in the theme styles directory. This file is named **\<THEME\_NAME\>.theme.scss file**, where **\<THEME\_NAME\>** is the name of the theme. The online software development kit (SDK) then injects this single theme CSS file from the content delivery network (CDN) into every e-commerce page that is rendered.
 
@@ -71,6 +71,9 @@ The **\<MODULE\_NAME\>.js** file is the entry file for creating the module CSS c
 ```javascript
 import "./header.scss"
 ```
+
+> [!NOTE]
+> SDK Release 1.39 includes an [optimize-module-css CLI command](cli-command-reference.md#optimize-module-css) to help create the required file structure for an existing theme.
 
 ## Configure assets in CSS for use with module CSS optimization
 

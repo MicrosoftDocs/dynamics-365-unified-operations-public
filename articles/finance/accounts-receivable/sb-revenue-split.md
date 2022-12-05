@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue split templates in Subscription billing
-description: This topic explains how to set up revenue split templates for items that are sold as bundles.
+description: This article explains how to set up revenue split templates for items that are sold as bundles.
 author: JodiChristiansen
 ms.date: 04/21/2022
 ms.topic: article

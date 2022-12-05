@@ -1,41 +1,32 @@
 ---
-# required metadata
-
 title: Budget analysis in the public sector
-description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
+description: This article describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page.
 author: v-kiarnd
 ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 19641
-ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19641
+ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
+ms.search.industry: Public sector
+ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 ---
 
 # Budget analysis in the public sector
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the Budget analysis page to view posted revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
+This article describes how to use the Budget analysis page to view posted revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 
-This topic describes the budget analysis functionality available for the public sector. 
+This article describes the budget analysis functionality available for the public sector. 
 
-Before you read this topic, you should also read [Budgeting in the public sector overview](budgeting-public-sector.md). 
+Before you read this article, you should also read [Budgeting in the public sector overview](budgeting-public-sector.md). 
 
 You may be required to set up the following Budgeting features for the public sector. Use the **Budget analysis** page to view posted revenues and expenditures by financial dimension, using a combination of general ledger and budget control data. You can view summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances. 
 

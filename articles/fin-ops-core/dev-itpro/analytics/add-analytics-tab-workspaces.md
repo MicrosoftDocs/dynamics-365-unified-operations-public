@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Add analytics to workspaces by using Power BI Embedded
-description: This topic shows how to embed a Power BI report on the Analytics tab of a workspace. 
+description: This article shows how to embed a Power BI report on the Analytics tab of a workspace.
 author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Application user, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: richdi
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Add analytics to workspaces by using Power BI Embedded
@@ -30,10 +19,10 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This feature is supported in Finance and Operations (version 7.2 and later).
+> This feature is supported in finance and operations (version 7.2 and later).
 
 ## Introduction
-This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
+This article shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
 
 ## Prerequisites
 + Access to a developer environment that runs Platform update 8 or later.

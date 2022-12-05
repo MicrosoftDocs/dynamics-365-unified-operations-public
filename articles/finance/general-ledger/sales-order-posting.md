@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales order posting
-description: This topic provides information about the Sales order tab of the inventory posting profile page.   
+description: This article provides information about the Sales order tab of the inventory posting profile page.   
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview

@@ -1,14 +1,14 @@
 ---
 title: Debug MPOS (sealed) and CPOS extensions
-description: This topic explains how to debug Modern Point of Sale (Sealed) and Cloud POS extensions.
-author: mugunthanm
+description: This article explains how to debug Modern Point of Sale (Sealed) and Cloud POS extensions.
+author: josaw1
 ms.date: 05/05/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to debug **sealed** Modern Point of Sale (MPOS) and Cloud POS extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK). 
+This article explains how to debug **sealed** Modern Point of Sale (MPOS) and Cloud POS extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK). 
 
  > [!NOTE]
  > To debug the Store Commerce app, see [Debug Store Commerce extensions using Visual Studio Code](../sc-debug.md)
@@ -89,7 +89,7 @@ Follow these steps the first time that an extension package is developed on the 
 
 ## Debug CPOS by using the Microsoft Edge developer tools
 
-1. Follow the steps in the [Configure the Cloud POS extension development environment](#configure-cloud-pos) section earlier in this topic.
+1. Follow the steps in the [Configure the Cloud POS extension development environment](#configure-cloud-pos) section earlier in this article.
 2. Build your CPOS extension project.
 3. In Microsoft Edge, open the CPOS website.
 4. Select the **F12** key to open the Microsoft Edge developer tools.

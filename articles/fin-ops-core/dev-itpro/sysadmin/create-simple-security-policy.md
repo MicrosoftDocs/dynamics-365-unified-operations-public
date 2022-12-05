@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a security policy
-description: This topic explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
+description: This article explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 author: Peakerbl
 ms.date: 07/14/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.12
 # Create a security policy
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
+This article explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 
 ## Add a new query
 

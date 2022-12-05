@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Goods and Service Tax (GST) project transactions
-description: This topic provides information about transactions for Goods and Service Tax (GST) projects.
-author: kfend
+description: This article provides information about transactions for Goods and Service Tax (GST) projects.
+author: EricWangChen
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: ralin
+ms.author: wangchen
+ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: 7.3.1
-ms.search.validFrom: 2019-7-02
 ---
 
 # Goods and Service Tax (GST) project transactions

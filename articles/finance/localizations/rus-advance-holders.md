@@ -1,26 +1,19 @@
 ---
-# required metadata
 title: Russia advance holders overview
-description: This topic explains how to register and set up advance holders for Russia.
-author: ShylaThompson
+description: This article explains how to register and set up advance holders for Russia.
+author: mrolecki
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: mrolecki
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.custom: "intro-internal"
+ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
 ---
 
 # Russia advance holders overview
@@ -32,7 +25,7 @@ ms.dyn365.ops.version: 8.1
 2. On the **Advance holders** tab, in the **Posting profile** field, select the default posting profile that should be used to complete transactions for advance holders.
 
     > [!NOTE]
-    > For more information, see the "Set up posting profiles for accounting vouchers" section later in this topic.
+    > For more information, see the "Set up posting profiles for accounting vouchers" section later in this article.
 
 3. Set the **Set default advance holder** option to **Yes** to set the current user as the advance holder.
 4. Set the **Advance holder sorting** option to **Yes** to show advance holders at the top of the grid on the **Advance holders** page.

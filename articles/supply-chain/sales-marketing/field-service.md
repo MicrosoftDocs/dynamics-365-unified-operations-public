@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration with Microsoft Dynamics 365 Field Service overview
-description: This topic provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
+description: This article provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -78,7 +78,7 @@ The additional functionality in this second phase focused on giving field techni
 ### System requirements for Supply Chain Management
 Field Service integration supports the following versions:
 
-- Dynamics 365 for Finance and Operations version 8.1.2 (December 2018) was released in December 2018 and has an application build number 8.1.195 with Platform update 22 (7.0.5095). 
+- Dynamics 365 Finance and Operations version 8.1.2 (December 2018) was released in December 2018 and has an application build number 8.1.195 with Platform update 22 (7.0.5095). 
 
 ### System requirements for Field Service
 To use the Field Service integration solution, you must install the following components:

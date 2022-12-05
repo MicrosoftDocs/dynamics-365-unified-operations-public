@@ -1,36 +1,27 @@
 ---
-# required metadata
-
-title: Tab module 
-description: This topic covers tab modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+title: Tab module
+description: This article covers tab modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Tab module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers tab modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers tab modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Tab modules are container-like modules that are used to organize the information on a site page on tabs. They can be used on any page where information must be presented on tabs.
 

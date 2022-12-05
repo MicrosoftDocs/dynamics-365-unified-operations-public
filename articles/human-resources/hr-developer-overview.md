@@ -2,7 +2,7 @@
 # required metadata
 
 title: Development overview
-description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
+description: This article provides an API and custom fields reference. It also provides information on integrating with other apps.
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
@@ -34,9 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
-This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
+This article provides an API and custom fields reference. It also provides information on integrating with other apps.
 
 - [Overview](hr-developer-overview.md)
 
@@ -68,7 +66,7 @@ This Developer Guide provides an API and custom fields reference. It also provid
 
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Administrator Guide](hr-admin-overview.md)
-- [User Guide](hr-hrpro-overview.md)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

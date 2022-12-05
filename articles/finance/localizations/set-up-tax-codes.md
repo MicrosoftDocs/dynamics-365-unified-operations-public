@@ -2,7 +2,7 @@
 # required metadata 
 
 title: Set up tax codes
-description: This topic explains how to set up tax codes in the Tax Calculation Service. 
+description: This article explains how to set up tax codes in the Tax Calculation Service. 
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up tax codes in the Tax Calculation service. It includes the setup for a simple scenario to make the tax code work and information about some advanced tax code functionality for complex scenarios.
+This article explains how to set up tax codes in the Tax Calculation service. It includes the setup for a simple scenario to make the tax code work and information about some advanced tax code functionality for complex scenarios.
 
 > [!IMPORTANT]
 > The setup of tax codes in the Tax Calculation Service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. Tax codes are automatically synced to Microsoft Dynamics 365 Finance when you enable the Tax Calculation service for a selected legal entity in Finance.

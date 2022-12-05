@@ -2,9 +2,9 @@
 # required metadata
 
 title: Advance invoices for Eastern Europe
-description: This topic provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order.
+description: This article provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order.
 author: EvgenyPopovMBS
-ms.date: 05/25/2022
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. 
+This article provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. 
 
 > [!NOTE]
 > Another option is to use the prepayment invoice functionality. As of Microsoft Dynamics 365 Finance version 10.0.28, you can use this functionality by going to **Accounts payable** &gt; **Setup** &gt; **Parameters** &gt; **Ledger and sales tax** and setting the **Use prepayment invoice** option on the **Prepayment invoice** FastTab to **Yes**. For more information, see [Prepayment invoices vs. prepayments](../accounts-payable/prepayments-invoices-vs-prepayments.md).
@@ -42,6 +42,26 @@ Advance invoice functionality lets you perform the following tasks:
 - Link prepayments that are received from customers to advance invoices (either before or after you post the prepayment).
 - Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).
 - *For the Czech Republic only:* Create a tax document for the VAT liable delivery.
+
+The article contains the following sections:
+
+- [Advance invoices for Poland](#advance-invoices-for-poland)
+- [Set up Accounts receivable for advance invoices](#set-up-accounts-receivable-for-advance-invoices)
+- [Create a customer advance invoice](#create-a-customer-advance-invoice)
+- [VAT on advance invoices](#vat-on-advance-invoices)
+- [Link an advance invoice to a sales order or a free text invoice](#link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice)
+- [Create a customer advance invoice from a sales order](#create-a-customer-advance-invoice-from-a-sales-order)
+- [Create a customer advance invoice from a free text invoice](#create-a-customer-advance-invoice-from-a-free-text-invoice)
+- [Print an advance invoice](#print-an-advance-invoice)
+- [Create a payment proposal from an advance invoice](#create-a-payment-proposal-from-an-advance-invoice)
+- [Link a prepayment to an advance invoice](#link-a-prepayment-to-an-advance-invoice)
+- [Link an advance invoice to a prepayment](#link-an-advance-invoice-to-a-prepayment)
+- [Advance invoice credit notes](#advance-invoice-credit-notes)
+- [Tax documents for the Czech Republic](#tax-documents-for-the-czech-republic)
+- [Set up Accounts payable for advance invoices](#set-up-accounts-payable-for-advance-invoices)
+- [Create a vendor advance invoice](#create-a-vendor-advance-invoice)
+- [Use the Advance invoice and Prepayment handling functionality](#use-the-advance-invoice-and-prepayment-handling-functionality)
+- [Reversing sales tax amounts for Czech Republic](#reversing-sales-tax-amounts-for-czech-republic)
 
 ## Advance invoices for Poland
 
@@ -247,5 +267,33 @@ To link an advance invoice to a purchase order, follow these steps.
     | Percent | Specify the percentage of the prepayment for the purchase order. |
     | Update purchase | Select an option. The advance invoice amount will be calculated based on the purchase order amount for the items. |
     | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment. |
+
+## Use the Advance invoice and Prepayment handling functionality
+
+You can use the **Advance invoice** and **Prepayment handling** functionality in the business process. Here is an example:
+
+1. A user submits an advance invoice that has VAT to a customer for a prepayment. The advance invoice isn't posted in the ledger.
+2. The user creates and posts the prepayment without VAT.
+3. The user creates a prepayment handling and relates it to the advance invoice. The user then posts the prepayment handling and creates the tax document. The system posts the VAT to the ledger and relates the VAT to the prepayment.
+
+> [!NOTE]
+> Clear the value in the **Posting profile** field on the **Advance invoice** FastTab on the **Update** tab of the **Account receivable parameters**. When you create the advance invoice, set the **Post tax** option to **Yes**.
+
+To create a prepayment handling and link it to an advance invoice, follow these steps.
+
+1. Go to **Accounts receivable** \> **Customers**, and find and open the customer record.
+2. On the Action Pane, select **Customer** \> **Transactions**, select the prepayment transaction, and then select **Prepayment handling**.
+3. Set the **Transform to payment** option to **No**.
+4. Select **Advance invoice** to link the prepayment handling to the advance invoice. The system automatically creates VAT lines from the advance invoice.
+5. Post the prepayment handling. The system automatically creates sales tax transactions for the prepayment.
+
+## Reversing sales tax amounts for Czech Republic
+
+To manually define the reversal of sales tax amounts, based on a prepayment handling, enable the **(Czech) Enable manual input sales tax amounts** feature. For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+> [!NOTE]
+> This functionality is available only for Accounts payable.
+
+When you mark an invoice transaction for settlement against a payment, you can update the sales tax amounts for reversal on the **Reverse sales tax amounts** tab of the **Settle transaction** page. As required, you can update tax amounts in the **Tax amount for settlement** field.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

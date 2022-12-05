@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
-description: This topic lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,97 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.0.37.0
+
+This version introduces the following new features, fixes, and improvements:
+- Added a user setting that lets workers choose where the app displays product photos (in both cards and step headers, only in step headers, or not at all). 
+- Improved the details card screen layout by reducing the size of the step banner and quantity input spinner, which leaves more room for other content. 
+- Improved the user interface when running on a Honeywell Thor device. 
+- Improved full-screen mode (only applies to devices with a hardware keyboard). 
+- Improved results when sorting details cards and custom pages by priority or sub-priority (DataPriority or DisplaySubPriority). 
+- Added support for more languages. 
+- Improved stability. 
+- Improved several images and icons. 
+
+## Version 2.0.35.0
+
+This version introduces the following new features, fixes, and improvements:
+- Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards were to be shown.
+
+## Version 2.0.34.0
+
+This version introduces the following new features, fixes, and improvements:
+- Improved stability.
+- Improved performance.
+- Improved the screen layout to allow more space for the details card.
+- Added a search function to the **Work List** page. Workers can now scan or type to search in all the fields and titles on the page.
+- The list of available connections is now sorted alphabetically.
+- Fixed an issue where duplicate cards were shown for items that have multiple inventory statuses at the same location.
+- Fixed an issue where the **Large Selection List** page didn't scroll to show the preselected item.
+- Fixed the search bar colors on the **Large Selection List** page.
+- Fixed an issue where the default button defined in the XML wasn't used as the submit button.
+- Fixed an issue where the buttons in the multi-scan and fast validation flows didn't update when new IDs were scanned.
+- Added support for more languages.
+
+## Version 2.0.32.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+
+## Version 2.0.31.0
+
+This version introduces the following new features, fixes, and improvements:
+
+-	Enhanced performance and stability.
+-	Improved user interface that makes it faster and easier to work with long selection lists. Workers can now search for a list item by name rather than scroll through the full list.
+-	Fixed an issue where pre-entered values didn't get overwritten when scanning by character.
+
+## Version 2.0.30.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+
+## Version 2.0.28.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+- Introduced the ability to continue scanning even while an error dialog is shown on the screen.
+- Added support for ASCII 10 in barcodes.
+- Improved the usability of step instruction dialogs.
+- Fixed an issue where a blank screen could sometimes be shown.
+- Fixed an issue where work lists didn't scroll correctly when running on Microsoft Windows.
+
+## Version 2.0.25.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Increased performance.
+- Increased stability.
+- Improved the **Inquiry** page to support longer texts in subheaders.
+- Introduced the ability to immediately cancel a flow with a single tap or click (when **Cancel** is the only action available under **More actions**).
+- Fixed an issue where focus could sometimes be lost between entry controls on the **Edit connection** page and custom pages.
+- Fixed an issue where buttons could sometimes become irresponsive and remain shown as selected when included in a scrolling view.
+- Fixed an issue where the wrong layout could sometimes be used on the main page.
+
+## Version 2.0.24.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved scanner pages to enable the scan option on **Details** pages.
+- Improved gestures, such as touch/tap screen.
+- Improved performance issues for Android.
+- Fixed placement of multiple headers to allow more cards to display on the **Inquiry** page.
+- Improved scrolling so less distance for scrolling pagination is enabled.
+- Added long press to display additional text on the **Inquiry** page.
+- Fixed missing device ID information for Android.
+- Increased stability.
+- Optimized the login layout.
+- Added swipe-right gesture to close dialog pop-up pages on the number pad, **Details** page, and input pages.
 
 ## Version 2.0.22.0
 

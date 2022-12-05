@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: Suppress Word content controls in generated reports
-description: This topic explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
-author: NickSelin
+description: This article explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed.
+author: kfend
 ms.date: 02/11/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2020-01-01 
-ms.dyn365.ops.version: Version 10.0.6 
+ms.author: filatovm
+ms.search.validFrom: 2020-01-01
+ms.dyn365.ops.version: Version 10.0.6
+ms.search.form: 
+  - ERWorkspace, ERSolutionTable, EROperationDesigner
+  - LedgerJournalTable, LedgerJournalTransVendPaym
 ---
 
 # Suppress Word content controls in generated reports
@@ -46,7 +39,7 @@ To complete these steps, you must first complete the steps in the following task
 When you complete the steps of these task guides, the following items are prepared:
 
 - A **Sample worksheet report** ER format that is configured to generate a document in Word format
-- A [draft](general-electronic-reporting.md#component-versioning) version of the **Sample worksheet report** ER format that is marked as **Runnable**
+- A draft version of the **Sample worksheet report** ER format that is marked as **Runnable**
 - An **Electronic** method of payments that is configured to use the **Sample worksheet report** ER format for vendor payment processing
 
 You must also download and save the following template for the sample report:

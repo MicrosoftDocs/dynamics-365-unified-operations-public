@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Brazilian tax in sales quotations
-description: Use this procedure to create a sales quotation that uses Brazilian taxes. 
-author: sndray
+description: Use this procedure to create a sales quotation that uses Brazilian taxes.
+author: AdamTrukawka
 ms.date: 06/24/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Brazil
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Brazilian tax in sales quotations
 

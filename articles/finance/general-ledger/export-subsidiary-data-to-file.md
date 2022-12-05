@@ -2,9 +2,9 @@
 # required metadata
 
 title: Export subsidiary data to files
-description: This topic explains how to prepare to export data from Microsoft Dynamics 365 Finance and then import it into a consolidated legal entity.
+description: This article explains how to prepare to export data from Microsoft Dynamics 365 Finance and then import it into a consolidated legal entity.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -38,14 +38,14 @@ You use the **Export** page (**System administration \> Workspaces \> Import/Exp
 
     | Field                             | Description |
     |-----------------------------------|-------|
-    | Main account                      | Specify the accounts to consolidate. To include all accounts, leave this field blank. |
-    | Use consolidation account         | If you've specified consolidation accounts, set this option to **Yes**. |
-    | Select consolidation account from | Select either **Main account** or **Consolidation account group**. |
-    | Consolidation account group       | Select a consolidation account group for the consolidation account that you selected. |
-    | Consolidation period              | Specify "from" and "to" dates for the consolidation. |
-    | Include actual amounts            | Set this option to **Yes** to include actual amounts. |
-    | Include budget amounts            | Set this option to **Yes** to include budget amounts in consolidations. |
-    | Budget models                     | Specify the budget model to include. |
+    | **Main account**                      | Specify the accounts to consolidate. To include all accounts, leave this field blank. |
+    | **Use consolidation account**         | If you've specified consolidation accounts, set this option to **Yes**. |
+    | **Select consolidation account from** | Select either **Main account** or **Consolidation account group**. |
+    | **Consolidation account group**       | Select a consolidation account group for the consolidation account that you selected. |
+    | **Consolidation period**              | Specify "from" and "to" dates for the consolidation. |
+    | **Include actual amounts**            | Set this option to **Yes** to include actual amounts. |
+    | **Include budget amounts**            | Set this option to **Yes** to include budget amounts in consolidations. |
+    | **Budget models**                     | Specify the budget model to include. |
 
 3. On the **Financial dimensions** tab, specify the details of the consolidation:
 

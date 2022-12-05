@@ -2,9 +2,9 @@
 # required metadata
 
 title: Location directive inventory picking aging
-description: This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
+description: This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: Mirzaab
-ms.date: 07/15/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
+This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking. These strategies work in conjunction with the aging dates that are recorded for locations to track when inventory first entered the warehouse. The *Location directive inventory picking aging* feature uses the date on the location to determine aging. The *Warehouse location status* feature updates the date on the location, based on the date from the license plate.
 
 You can use FIFO and LIFO strategies to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting.
 
@@ -38,8 +38,8 @@ When inventory is first received or created in the warehouse, the system updates
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
 
-1. Warehouse location status
-1. Location directive inventory picking aging
+1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
+1. *Location directive inventory picking aging*
 
 ## Feature requirements
 
@@ -54,7 +54,7 @@ This section provides examples that show how to set up and use FIFO and LIFO str
 
 ### Make sample data available
 
-To work through these scenarios by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through these scenarios by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 You can also use these scenarios as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
 
@@ -86,7 +86,7 @@ The demo data requires setup and inventory adjustments to support the scenarios.
 
 1. Select **OK** to apply your settings and close the query dialog box.
 1. Select **Save** to save your changes to the location directive.
-1. On a mobile device or in the *Dynamics 365 for Finance and Operations - Warehousing* app on your PC, follow these steps to remove existing inventory from the warehouse location to support the scenarios:
+1. On a mobile device or in the *Dynamics 365 Supply Chain Management - Warehousing* app on your PC, follow these steps to remove existing inventory from the warehouse location to support the scenarios:
 
     1. Sign in to warehouse *63* by using the appropriate user ID and password.
     1. On the main menu, select **Quality**.

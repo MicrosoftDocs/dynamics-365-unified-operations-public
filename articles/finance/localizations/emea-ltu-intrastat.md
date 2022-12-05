@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Lithuanian Intrastat
-description: This topic contains information about the Lithuanian Intrastat report.
-author: andosip
+description: This article contains information about the Lithuanian Intrastat report.
+author: AdamTrukawka
 ms.date: 05/19/2022
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 
@@ -485,7 +483,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
     | Contact person's phone                                                  | 425-555-5049                                      |
     | Contact person's fax                                                    | 425-555-5049                                      |
     | Contact person's email                                                  | manishc@contoso.com                               |
-    | Software used                                                           | Microsoft Dynamics 365 for Finance and Operations |
+    | Software used                                                           | Microsoft Dynamics 365 Finance |
     | Declaration identifier                                                  | 123456                                            |
     | VAT registration number                                                 | 1234567890                                        |
     | Function code                                                           | O                                                 |
@@ -578,7 +576,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
     | Contact person's phone                                                  | 425-555-5049                                      |
     | Contact person's fax                                                    | 425-555-5049                                      |
     | Contact person's email                                                  | manishc@contoso.com                               |
-    | Software used                                                           | Microsoft Dynamics 365 for Finance and Operations |
+    | Software used                                                           | Microsoft Dynamics 365 Finance |
     | Declaration identifier                                                  | 654321                                            |
     | VAT registration number                                                 | 1234567890                                        |
     | Function code                                                           | O                                                 |
@@ -603,3 +601,4 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
    ![Intrastat report on arrivals](media/536b01cd91e70bb8872abbbcc8460150.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

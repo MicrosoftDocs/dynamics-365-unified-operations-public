@@ -38,11 +38,11 @@ You can cancel a return order, instead of deleting it, when you want to save a r
 > <P>Only return orders that have a <STRONG>Created</STRONG> status can be canceled. Return orders with an <STRONG>Open</STRONG> or <STRONG>Closed</STRONG> status cannot be canceled.</P>
 
 
-1.  Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.
+1.  Click **Sales and marketing** \> **Sales returns** \> **All return orders**.
     
     –or–
     
-    Click **Sales and marketing** \> **Common** \> **Return orders** \> **Created return orders**.
+    Click **Sales and marketing** \> **Sales returns** \> **Created return orders**.
 
 2.  Select the return order to cancel.
 

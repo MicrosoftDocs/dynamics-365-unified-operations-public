@@ -2,21 +2,21 @@
 # required metadata
 
 title: Outbound workload visualization
-description: This topic provides information about outbound workload visualization. This functionality lets warehouse managers and supervisors create custom workload charts that can be used to monitor the progress of current work and the amount of it that remains. Warehouse managers can create multiple views and set up automatic refresh as they require.
+description: This article provides information about outbound workload visualization. This functionality lets warehouse managers and supervisors create custom workload charts that can be used to monitor the progress of current work and the amount of it that remains. Warehouse managers can create multiple views and set up automatic refresh as they require.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -34,7 +34,7 @@ This functionality can be used to track the progress of picking work. The featur
 
 ## Turn the Outbound workload visualization feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Outbound workload visualization* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Outbound workload visualization* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up outbound workload visualizations
 

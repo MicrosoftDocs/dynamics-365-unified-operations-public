@@ -1,12 +1,12 @@
 ---
 title: ContainerControl type
 description: Container control interface with methods and attributes for all container controls. A container control can contain any number of controls.
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # ContainerControl type

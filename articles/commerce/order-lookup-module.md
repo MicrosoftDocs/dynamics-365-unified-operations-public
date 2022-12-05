@@ -1,34 +1,26 @@
 ---
 title: Order lookup module
-description: This topic covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
-author: stuharg
+description: This article covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+author: bicyclingfool
 ms.date: 09/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Order lookup module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+This article covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
 The order lookup module provides a form that customers can use to look up orders that they placed on an e-commerce site. It's used as part of the [Enable order lookup for guest checkouts](order-lookup-guest.md) feature. The order lookup module can be used to look up orders that were submitted through an e-commerce site, the retail point of sale (POS), or a call center. The form can retrieve orders that were submitted both by guest users and by registered users.
 
@@ -47,6 +39,12 @@ The following illustration shows an example of the form that is rendered by the 
 ## Add an order lookup module to a page
 
 The order lookup module can be added to the body of any page of your e-commerce site. If you want to use the order lookup module to enable order lookup for guest checkouts, be sure to add it to a page that doesn't require that the user be signed in. To find a page's **Requires sign in?** setting in the Commerce site builder tree view, select the **Default page (Required)** slot, and look at the bottom of the right pane.
+
+
+> [!NOTE]
+> To enable the order lookup feature, ensure that the **Quotations** key is enabled under **License configuration** > **Configuration keys**.
+>
+> ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
 
 ## Additional resources
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Image component
-description: This topic describes how to use the Image component in the online SDK to embed images into a module in Microsoft Dynamics 365 Commerce.
+description: This article describes how to use the Image component in the online SDK to embed images into a module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 12/14/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the Image component in the online software development kit (SDK) to embed images into a module in Microsoft Dynamics 365 Commerce. The Image component uses the Dynamics 365 image resizer service to optimize image sizes, so that appropriately sized images can be loaded for the different viewport layouts that a module supports. The Image component also supports fallback and thumbnail images.
+This article describes how to use the Image component in the online software development kit (SDK) to embed images into a module in Microsoft Dynamics 365 Commerce. The Image component uses the Dynamics 365 image resizer service to optimize image sizes, so that appropriately sized images can be loaded for the different viewport layouts that a module supports. The Image component also supports fallback and thumbnail images.
 
 ## Use the Image component in a module
 

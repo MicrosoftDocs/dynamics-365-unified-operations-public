@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage changes to engineering products
-description: This topic provides information about engineering change management. Engineering change management provides structured processes for managing changes to engineering products, from proposing, requesting, and making changes, to reviewing and approving changes, assessing their impact on existing transactions, and following up on them.
+description: This article provides information about engineering change management. Engineering change management provides structured processes for managing changes to engineering products, from proposing, requesting, and making changes, to reviewing and approving changes, assessing their impact on existing transactions, and following up on them.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -145,6 +145,8 @@ As you're reviewing production order notifications on the **Engineering notifica
 ### Create a change order from a change request
 
 An engineer who is reviewing an engineering change request can create an engineering change order directly from the **Engineering change requests** page. On the Action Pane, on the **Change request** tab, in the **Engineering change order** group, select **Copy link and products**.
+
+Be sure to select the correct company for the new engineering change order. If the change order will result in the engineering product itself being changed (new version, new product, or new variant), then the change order must be assigned to the engineering company. If only a local change is needed (**Impact** is set to *None*), then the change order can be assigned to a local company and the changes will apply to the current product.
 
 ## Engineering change orders
 

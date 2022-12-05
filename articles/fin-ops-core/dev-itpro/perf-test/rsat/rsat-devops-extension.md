@@ -1,6 +1,6 @@
 ---
 title: Integrate RSAT with Azure DevOps pipelines
-description: This topic explains how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure DevOps pipelines to automate validation.
+description: This article explains how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure DevOps pipelines to automate validation.
 author: FrankDahl
 ms.date: 04/05/2022
 ms.topic: article
@@ -20,7 +20,7 @@ You can set up Microsoft Azure DevOps pipelines to seamlessly automate the sched
 
 Azure DevOps pipeline jobs can use the RSAT command-line program (Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe, also referred to as the RSAT console app) to run RSAT via Windows PowerShell tasks. You can also add preconfigured RSAT tasks that are available in the Visual Studio Marketplace to your Azure DevOps pipelines. In this way, you can build or run RSAT test suites without having to write custom Windows PowerShell scripts.
 
-This topic assumes that you're familiar with the management of Azure DevOps organizations and [pipelines](/azure/devops/pipelines). It also assumes that you're familiar with RSAT functionality.
+This article assumes that you're familiar with the management of Azure DevOps organizations and [pipelines](/azure/devops/pipelines). It also assumes that you're familiar with RSAT functionality.
 
 ## Prerequisite: Install an Azure DevOps self-hosted Windows agent
 
@@ -84,7 +84,7 @@ After you've set up the Azure Dev Ops agent, follow these steps to create a pipe
 
 1. In Azure DevOps, select the project that should host the pipeline. Then go to **Pipelines**, and select **New pipeline** in the upper-right corner.
 
-    Pipelines can be designed by using YAML. Although this approach is quite powerful, it requires some experience to master. Because the purpose of this topic isn't to provide in-depth information about pipeline design but to help you get started, this procedure shows how to build a basic pipeline without using YAML.
+    Pipelines can be designed by using YAML. Although this approach is quite powerful, it requires some experience to master. Because the purpose of this article isn't to provide in-depth information about pipeline design but to help you get started, this procedure shows how to build a basic pipeline without using YAML.
 
 2. Select the **Use the classic editor** link to create a pipeline without using YAML.
 
@@ -133,7 +133,7 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 1. Enter a display name for the task.
 2. In the **Command** field group, select the **Build test cases** option to create a task that builds test suites. This task will generate test execution files and upload them to Azure DevOps test cases. This task is required after you make changes to your recordings or install a new version of RSAT.
 3. In the **RSAT location**, double-check the RSAT installation folder.
-4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the Finance and Operations test environment, and the preferred browser.
+4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
 5. Select the **Generate test execution files only** checkbox if you don't want to regenerate or overwrite existing Excel parameter files. This scenario is the most common, and the checkbox is selected by default.
 6. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
 7. Enter the name or ID of the test suite that you want to build. To specify multiple test suites, use commas to separate the values.
@@ -146,7 +146,7 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 1. Enter a display name for the task.
 2. In the **Command** field group, select the **Execute test cases** option to create a task that runs test suites that are ready for execution.
 3. In the **RSAT location**, double-check the RSAT installation folder.
-4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the Finance and Operations test environment, and the preferred browser.
+4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
 5. Select the **Download** checkbox if you want to download attachments (test execution and parameter files) from the Azure DevOps test cases before execution starts. Clear the checkbox if files were downloaded from an earlier build task. In this case, the current files in the working directory will be used.
 6. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
 7. Enter the name or ID of the test suite that you want to execute.  To specify multiple test suites, use commas to separate the values.
@@ -214,3 +214,4 @@ Here are some examples:
 By default, the console app uses settings configured by the user account via the RSAT user interface. To specify a different settings file, use the `settings` parameter, as shown in the following example.
 
 `.\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Users\rob\Documents\RSAT\SettingFiles\Canaryenv.settings" playbacksuite "Acceptance Test Suite 1"`
+

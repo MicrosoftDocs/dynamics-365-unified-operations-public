@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set TDS parameters in Accounts payable and Accounts receivable
-description: This topic explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
+description: This article explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
+This article explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 
 1. Go to **Tax \> Setup \> Parameters \> Accounts receivable parameters**.
 2. On the **Updates** tab, select **Update order lines** to open the **Update order lines** dialog box.

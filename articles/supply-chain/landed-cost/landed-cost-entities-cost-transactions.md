@@ -1,6 +1,6 @@
 ---
 title: Cost transaction entities
-description: This topic provides information about cost transaction entities, which enable the value of a cost to be split among the contents of a cost area through the selection of an apportionment method. 
+description: This article provides information about cost transaction entities, which enable the value of a cost to be split among the contents of a cost area through the selection of an apportionment method. 
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Cost transaction entities
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 ## Apportionment
 

@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Delivery options module
-description: This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
+description: This article covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 02/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Delivery options module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
+This article covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 
 Delivery options modules let customers select a mode of delivery such as shipping or pickup for their online order. A shipping address is required to determine the mode of delivery. If the shipping address changes, the delivery options must be retrieved again. If an order includes only items that will be picked up in a store, this module is automatically hidden.
 

@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Consume Retail Server APIs in external applications
-description: This topic describes how to consume the Retail Server APIs in external applications.
-author: mugunthanm
+description: This article describes how to consume the Retail Server APIs in external applications.
+author: josaw1
 ms.date: 01/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.custom: 28021
+ms.assetid: 
 ---
 
 # Consume Retail Server APIs in external applications
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to consume the Retail Server APIs in external applications. Retail Server exposes the Open Data Protocol (OData) web endpoint so that external applications can consume the APIs. Retail Server also hosts the Commerce runtime (CRT) business logic and exposes it as OData endpoints. These endpoints are known as the Retail Server APIs.
+This article describes how to consume the Retail Server APIs in external applications. Retail Server exposes the Open Data Protocol (OData) web endpoint so that external applications can consume the APIs. Retail Server also hosts the Commerce runtime (CRT) business logic and exposes it as OData endpoints. These endpoints are known as the Retail Server APIs.
 
 External applications can consume the OData service through HTTPS. Retail Server provides multiple options for consuming the APIs:
 
@@ -60,7 +49,7 @@ Access to each API is natively restricted according to the following roles:
 
 External application integration requires only the **Application** authentication flow to access the APIs. E-commerce application integration requires **Customer** authentication.
 
-This topic is focused on setting up **Application** authentication flows and accessing the APIs by using the **Application** authentication context.
+This article is focused on setting up **Application** authentication flows and accessing the APIs by using the **Application** authentication context.
 
 Before the APIs are accessed from an external application, the external application must be registered in Azure App registration, and details of the registered application must be added in the Commerce Headquarters.
 
@@ -106,7 +95,7 @@ The client secret is also known as an *application password*. It's a string valu
 5. Select **Add**.
 6. Be sure to record the secret's value so that you can use it in your client application code. 
 
-## Register the app in the Finance and Operations app so that Retail Server trusts it
+## Register the app in the finance and operations app so that Retail Server trusts it
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 2. On the **Identity providers** FastTab, select the provider with type `Azure Active Directory`. The values on the **Relying parties** FastTab are set based on your selection.
@@ -277,3 +266,4 @@ After the request has finished running, the response body will contain the custo
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

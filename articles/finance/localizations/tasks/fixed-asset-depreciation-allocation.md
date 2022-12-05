@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: Setup fixed asset depreciation allocation
-description: In Japan, the depreciation expenses of a particular fixed asset can be shared among multiple departments. 
-author: ShylaThompson
+description: In Japan, the depreciation expenses of a particular fixed asset can be shared among multiple departments.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: China (PRC), Japan
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: 
+  - AssetAllocationRuleSetup_CN
+  - AssetPosting
 ---
 # Setup fixed asset depreciation allocation
 

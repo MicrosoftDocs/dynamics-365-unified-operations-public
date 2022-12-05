@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade data in development or demo environments
-description: This topic provides instructions for upgrading your Finance and Operations application release.
+description: This article provides instructions for upgrading your finance and operations application release.
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -31,16 +31,16 @@ ms.dyn365.ops.version: Platform update 1
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The process that is described here is now deprecated for data upgrade between older versions of Finance and Operations apps and the latest version. For more information about Dynamic AX 2012 upgrades, see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md).
+> The process that is described here is now deprecated for data upgrade between older versions of finance and operations apps and the latest version. For more information about Dynamic AX 2012 upgrades, see [Upgrade from AX 2012 to finance and operations](upgrade-overview-2012.md).
 
-This topic explains how to upgrade an older database to the latest Finance and Operations application release.
+This article explains how to upgrade an older database to the latest finance and operations application release.
 
-The topic provides instructions for upgrading your Finance and Operations database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. 
+The article provides instructions for upgrading your finance and operations database in a Tier 1 environment to the latest update. A Tier 1 environment is also known as a development, one-box, or demo environment. 
 
 In Tier 2 or higher environments, including Production, you will run through the self-service upgrade steps as outlined in [Self-service upgrade to the latest version](self-service-upgrade.md).
 
 > [!IMPORTANT]
-> - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Finance and Operations 8.0.
+> - You do **not** have to upgrade your database if you're updating to the latest **platform** of finance and operations. Platform updates are backward-compatible. This article applies only to the process of upgrading between releases of finance and operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Finance and Operations 8.0.
 > - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 > - All upgraded custom code has to be applied on the environment before running the data upgrade process.
 > - If you are on version 8.0 or later, there is no longer a data upgrade between application versions.
@@ -111,7 +111,7 @@ To obtain the latest data upgrade deployable package for a target environment th
 > [!NOTE]
 > If you are upgrading a database on a development environment, you can instead execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
 >
-> This will upgrade your Finance and Operations database, channel database, and reset the Financial reporting database.
+> This will upgrade your finance and operations database, channel database, and reset the Financial reporting database.
 
 ## Re-enable SQL change tracking
 
@@ -270,7 +270,7 @@ When you upgrade a database, you might receive the following error message durin
 
 > Cannot create index on InventDistinctProduct a duplicate key exists on column Product.
 
-This issue is a known issue that will be resolved in a future release. The workaround is to delete all records in the InventDistinctProduct table and then resume the runbook from the current step. The records in the InventDistinctProduct table are disposable. They will be regenerated the first time that Finance and Operations is started, when an item is created, or when MRP is run. To delete all records in InventDistinctProduct, run the following query against the current database from Management Studio.
+This issue is a known issue that will be resolved in a future release. The workaround is to delete all records in the InventDistinctProduct table and then resume the runbook from the current step. The records in the InventDistinctProduct table are disposable. They will be regenerated the first time that finance and operations is started, when an item is created, or when MRP is run. To delete all records in InventDistinctProduct, run the following query against the current database from Management Studio.
 
 ```sql
 truncate table InventDistinctProduct
@@ -407,7 +407,8 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 
 ## Additional resources
 
-[Process for moving to the latest update of Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+[Process for moving to the latest update of finance and operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

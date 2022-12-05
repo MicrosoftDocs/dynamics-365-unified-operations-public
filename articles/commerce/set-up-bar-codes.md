@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Set up bar codes
 description: This article describes how to use bar codes in Dynamics 365 Commerce.
-author: jblucher
+author: josaw1
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 15971
-ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 15971
+ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
+ms.search.industry: Retail
+ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 ---
 
 # Set up bar codes

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database Movement API
-description: This topic provides an overview of the Microsoft Dynamics Lifecycle Services (LCS) Database Movement application programming interface (API).
+description: This article provides an overview of the Microsoft Dynamics Lifecycle Services (LCS) Database Movement application programming interface (API).
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: overview

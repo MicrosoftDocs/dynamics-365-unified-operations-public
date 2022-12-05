@@ -2,16 +2,16 @@
 # required metadata
 
 title: Troubleshoot business events
-description: This topic provides information about troubleshooting business events.
+description: This article provides information about troubleshooting business events.
 author: Sunil-Garg
-ms.date: 04/01/2022
+ms.date: 10/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides tips for troubleshooting issues that involve business events.
+This article provides tips for troubleshooting issues that involve business events.
 
 | Issue | Possible resolution | 
 |---------------|---------------------|
@@ -39,9 +39,9 @@ This topic provides tips for troubleshooting issues that involve business events
 |**Error:** Unable to construct endpoint. Exception message: Error retrieving secret '[KeyValueSecretName]' from key vault 'https://[KeyVaultName].vault.azure.net/': Access denied|This is likely due to the **Azure Active Directory Application ID** not having the appropriate permissions in the Key Vault. To resolve this, go to the Azure portal and open the **Key Vault** object. Go to **Access Policies** and add the AAD application with Key, Secret, and Certificate Management template.|
 |**Error:** Unable to send test event to endpoint. Exception message: 40400: Endpoint not found., Resource:sb://[ServiceBusName].servicebus.windows.net/[QueueName]. |This issue is likely a result of the queue/topic/hub name being incorrect. Check the **Name** field by going to service bus in the Azure portal and reviewing the **Topic** or **Queue** name. If it's an Event Hub, go to the **Event Hub** object in Azure and validate the **Hub** name.|
 |**Error:** Unable to send test event to endpoint. Exception message: An error occurred while sending the request.|This is likely due to an incorrect endpoint value specified in the **Endpoint URL** field. Go to the **Event Grid** object in the Azure portal and open the **Event Grid**. In the **Overview** section, this value will be the **Topic Endpoint**.|
-|Business events don't show up in the **Business event catalog** in Finance and Operations apps. | The **Business event catalog** is built during the full database sync. As a result, there are some use cases, as noted below, where a manual refresh of the catalog is needed in order to see the new business events. A manual refresh can be invoked from the catalog by going to **Manage > Rebuild business events catalog**.<br><br>When you're implementing business events in Visual Studio you may not see the newly-coded business event in the catalog.<br><br>When new workflows are configured, such as the workflow elements or steps, events might not show up in the business events catalog.<br><br>In other situations, when you don’t see certain business events, doing a manual refresh should resolve the issue.|
-|Finance and Operations business events aren't available in the **Catalog Assignment** tab of the virtual entity solution in the Power Platform maker portal. | Business events that are available in the **Business event catalog** in Finance and Operations apps should sync automatically to the virtual entity solution in the Power Platform portal. If the business events aren't available in the Power Platform portal automatically, a sync can be triggered manually by using the **Rebuild business event catalog** action on the **Manage** menu of the **Business event catalog** page. |
-|- 0 is an invalid bundle size<br>- Business events aren't getting triggered<br>- Microsoft Flow isn't getting triggered by business events<br>- Unable to configure business event because it has reached the limit of 0 configured endpoints |One of the reasons why this issue can occur is if certain parameters aren't set as expected in the **BusinessEventsParameters** table. This is due to an update in which some of the business events parameters not being set correctly.<br><br>In a non-production environment, you must update the parameters in **System administration > Setup** to set retry count = 3; End points allowed per event = 10 and wait time = 1000. After this update, restart the batch service and run IISReset to pick up the latest values.<br><br> If business events still don't trigger, then the dedicated capacity isn't working to process business events. A manual batch job must be scheduled to process business events, which can be enabled from the **Business events parameters** page in **System administration > Set up**.
+|Business events don't show up in the **Business event catalog** in finance and operations apps. | The **Business event catalog** is built during the full database sync. As a result, there are some use cases, as noted below, where a manual refresh of the catalog is needed in order to see the new business events. A manual refresh can be invoked from the catalog by going to **Manage > Rebuild business events catalog**.<br><br>When you're implementing business events in Visual Studio you may not see the newly-coded business event in the catalog.<br><br>When new workflows are configured, such as the workflow elements or steps, events might not show up in the business events catalog.<br><br>In other situations, when you don’t see certain business events, doing a manual refresh should resolve the issue.|
+|Finance and operations business events aren't available in the **Catalog Assignment** tab of the virtual entity solution in the Power Platform maker portal. | Business events that are available in the **Business event catalog** in finance and operations apps should sync automatically to the virtual entity solution in the Power Platform portal. If the business events aren't available in the Power Platform portal automatically, a sync can be triggered manually by using the **Rebuild business event catalog** action on the **Manage** menu of the **Business event catalog** page. |
+|- 0 is an invalid bundle size<br>- Business events aren't getting triggered<br>- Microsoft Flow isn't getting triggered by business events<br>- Unable to configure business event because it has reached the limit of 0 configured endpoints |One of the reasons why this issue can occur is if certain parameters aren't set as expected in the **BusinessEventsParameters** table. This is due to an update in which some of the business events parameters not being set correctly.<br><br>In a non-production environment, you must update the parameters in **System administration > Setup** to set retry count = 3; End points allowed per event = 10 and wait time = 1000. After this update, restart the batch service and run IISReset to pick up the latest values.
 |Platform update 30 compiler warning when creating custom payload context fields by augmenting via Chain of Command (CoC) the addProperties method in the adapter class. **Class 'BusinessEventsServiceBusAdapter' is internal in model 'ApplicationFoundation' and cannot be extended**.  |This is a change in the compiler that prevents an internal API from being extended. This is being tracked as a bug to provide alternate ways to add custom properties. For more information, see this [Yammer discussion](https://www.yammer.com/dynamicsaxfeedbackprograms/threads/376155850727424).
 |**Error:** Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information|This error message on the error tab of active business events can typically be resolved by rebuilding the catalog.
 |Alert business events don't trigger|One of the reasons why an event isn't triggering could be a potential issue with alerts email functionality. Try turning off the send email option in the alert to see if that resolves the issue.
@@ -50,3 +50,4 @@ This topic provides tips for troubleshooting issues that involve business events
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

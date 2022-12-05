@@ -1,34 +1,23 @@
 ---
-# required metadata
-
 title: Set up the Azure Key Vault client
-description: This topic provides information about storing advanced certificates and defining the certificate storage type.
-author: anasyash
+description: This article provides information about storing advanced certificates and defining the certificate storage type.
+author: AdamTrukawka
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.10
-
 ---
 
 # Set up the Azure Key Vault client
 [!include [banner](../includes/banner.md)]
 
-The functionality for storing advanced certificates lets you define the type of certificate storage that is used in Finance and Operations apps.
+The functionality for storing advanced certificates lets you define the type of certificate storage that is used in finance and operations apps.
 
 The functionality provides two options for storing certificates: local storage and Microsoft Azure Key Vault storage. You can define the option that is used by setting the new **Use advanced certificate store** option on the **General** tab of the **System parameters** page (**System administration** \> **Setup** \> **System parameters**).
 
@@ -37,7 +26,7 @@ The functionality provides two options for storing certificates: local storage a
 
 ![System parameters page, General tab.](media/1_System_parameters.jpg)
 
-Some setup is required before you can work with certificates that are stored in Key Vault. For information about the required settings, see the following Microsoft Knowledge Base (KB) article: [4040294 - Maintaining Azure Key Vault storage](https://support.microsoft.com/en-us/help/4040294/maintaining-azure-key-vault-storage). After you set up the Key Vault storage, you should link to the certificates in Finance and Operations apps.
+Some setup is required before you can work with certificates that are stored in Key Vault. For information about the required settings, see the following Microsoft Knowledge Base (KB) article: [4040294 - Maintaining Azure Key Vault storage](https://support.microsoft.com/en-us/help/4040294/maintaining-azure-key-vault-storage). After you set up the Key Vault storage, you should link to the certificates in finance and operations apps.
 
 After the certificate is installed in Key Vault, it must be set up in the application.
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Credit management parameters setup
-description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
+description: This article describes the options that you can use to configure Credit management to meet your business's requirements.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
+This article describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
 
 ## Credit parameters
 
@@ -52,19 +52,19 @@ There are four FastTabs in the **Credit** section where you can change the param
 
 ### Credit management checkpoint
 
-You can set the timing that is used to check sales orders for credit issues. The **Credit management checkpoint** FastTab identifies the document posting processes that include processing of credit management rules. You can also check the credit rules while you do either a pro-forma posting or a full posting of the sales order. Select the check boxes to define the posting processes that should put an order on hold if an issue is found after the credit management blocking rules are processed.
+You can set the timing that is used to check sales orders for credit issues. The **Credit management checkpoint** FastTab identifies the document posting processes that include processing of credit management rules. You can also check the credit rules while you do either a pro-forma posting or a full posting of the sales order. Select the checkboxes to define the posting processes that should put an order on hold if an issue is found after the credit management blocking rules are processed.
 
-You can also define the number of grace days before the credit rules are checked again. Although you can specify that the credit management rules are checked at posting, the rules won't be checked for the specified number of grace days. For example, you confirm a sales order on day 1, and you specify two grace days for the confirmation step. In this case, credit rules won't be checked at the next posting step (for example, creation of a packing slip or invoicing of the order) until day 4. On or after day 4, the rules will be checked again when posting occurs, and the number of grace days will be changed to the value that is specified for the next posting checkpoint.
+You can also define the number of grace days before the credit rules are checked again. Although you can specify that the credit management rules are checked at posting, the rules won't be checked for the specified number of grace days. For example, you confirm a sales order on day one, and you specify two grace days for the confirmation step. In this case, credit rules won't be checked at the next posting step (for example, creation of a packing slip or invoicing of the order) until day four. On or after day four, the rules will be checked again when posting occurs, and the number of grace days will be changed to the value that is specified for the next posting checkpoint.
 
 If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set up to run credit management rules. If you release the sales order without posting and then run the same order processing step again, the credit rules will be checked again. For example, an order is put on hold after a confirmation, and you release it either with or without posting. In this case, the order will be put on hold again if you confirm it again. Use grace days if the order should move on to the next processing step without being held again.
 
 > [!Note]
 > If one posting checkpoint has a grace day entered, all checkpoints that are marked for posting need to have grace days.
 
-- Select the **Posting** check box to run the credit management rules when the posting checkpoint that is shown on the line is run. If you don't select the check box, the rules will be checked only once during the whole posting process.
-- If you select the **Posting** check box, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** check box is cleared.
-- Select the **Pro forma** check box to run the credit management rules when the pro-forma posting checkpoint that is shown on the line is run. In most cases, the **Posting** field is set to **No** in the dialog box that appears when a sales order is posted.
-- If you select the **Posting** check box, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** check box is cleared.
+- Select the **Posting** checkbox to run the credit management rules when the posting checkpoint that is shown on the line is run. If you don't select the checkbox, the rules will be checked only once during the whole posting process.
+- If you select the **Posting** checkbox, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** checkbox is cleared.
+- Select the **Pro forma** checkbox to run the credit management rules when the pro-forma posting checkpoint that is shown on the line is run. In most cases, the **Posting** field is set to **No** in the dialog box that appears when a sales order is posted.
+- If you select the **Posting** checkbox, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** checkbox is cleared.
 
 ### Credit management statistics
 
@@ -81,7 +81,7 @@ Several credit management statistics are included in the **Customer credit manag
 
 - In Credit management, the customer credit limit is shown in the customer's currency. You must define the exchange rate type for the credit limit in the customer's currency. In the **Credit limit exchange rate type** field, select the type of exchange rate that should be used to convert the primary credit limit to the customer's credit limit.
 - Set the **Allow manual editing of credit limits** option to **No** to prevent users from editing credit limits on the **Customer** page. If this option is set to **No**, changes to a customer's credit limit can be made only by posting credit limit adjustment transactions.
-- Set the **Bypass inventory reservations** option to **Yes** to disregard inventory reservations when credit management blocking rules are checked. In this case, the system checks complete line quantities and enables checkpoint grace periods, regardless of the inventory reservation quantity.
+- Set the **Bypass inventory reservations** option to **Yes** to disregard inventory reservations when credit management blocking rules are checked. In this case, the quantities will be checked and checkpoint grace periods will be enabled, regardless of the inventory reservation quantity.
 - When Credit management is enabled, the setting of the **Message when exceeding credit limit** field is used to process only free text invoices. Although messages are still added to sales orders when customers have exceeded their credit limit, the presence of those messages won't block confirmation, printing of picking lists and packing slips, or posting of invoices.
 
     Credit management is enabled by default, but you can disable it. If it's enabled, you use the Credit management blocking rules and checkpoints to identify when customers have exceeded their credit limit. If it's disabled, the messages that are added to sales orders based on the setting of the **Message when exceeding credit limit** field can help you identify when customers have exceeded their credit limit.

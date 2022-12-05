@@ -1,11 +1,11 @@
 ---
 title: Organization hierarchy in Dataverse
-description: This topic describes the integration of organizational data between Finance and Operations apps and Dataverse.
-author: RamaKrishnamoorthy 
+description: This article describes the integration of organizational data between finance and operations apps and Dataverse.
+author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
@@ -23,11 +23,11 @@ Although Dataverse doesn't have the concept of an organization hierarchy, it doe
 
 ## Data flow
 
-A business ecosystem that consists of Finance and Operations apps and Dataverse will continue to have an organization hierarchy. This organization hierarchy is built on Finance and Operations apps, but it's exposed in Dataverse for informational and extensibility purposes. The following illustration shows the organization hierarchy information that is exposed in Dataverse as a one-way data flow from Finance and Operations apps to Dataverse.
+A business ecosystem that consists of finance and operations apps and Dataverse will continue to have an organization hierarchy. This organization hierarchy is built on finance and operations apps, but it's exposed in Dataverse for informational and extensibility purposes. The following illustration shows the organization hierarchy information that is exposed in Dataverse as a one-way data flow from finance and operations apps to Dataverse.
 
 ![Architecture image.](media/dual-write-data-flow.png)
 
-Organization hierarchy table maps are available for one-way synchronization of data from Finance and Operations apps to Dataverse.
+Organization hierarchy table maps are available for one-way synchronization of data from finance and operations apps to Dataverse.
 
 ## Templates
 
@@ -47,3 +47,4 @@ Finance and operations apps | Customer engagement apps     | Description
 Internal organization information in Dataverse comes from two tables, **Operating unit** and **Legal entities**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

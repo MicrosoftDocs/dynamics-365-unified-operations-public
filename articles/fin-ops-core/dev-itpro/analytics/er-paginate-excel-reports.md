@@ -1,41 +1,31 @@
 ---
-# required metadata
-
 title: Design an ER format to paginate generated documents in Excel
-description: This topic explains how to design an Electronic reporting (ER) format that paginates a generated document in Microsoft Excel.
-author: NickSelin
+description: This article explains how to design an Electronic reporting (ER) format that paginates a generated document in Microsoft Excel.
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
 ---
 
 # Design an ER format to paginate generated documents in Excel
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) format to generate outbound documents in Microsoft Excel and manage document pagination.
+This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) format to generate outbound documents in Microsoft Excel and manage document pagination.
 
 In this example, you will modify the Microsoft-provided ER format that is used to print the control report when the Intrastat declaration is [generated](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). This report lets you observe reported Intrastat transactions. Your modifications will let you manage the pagination of control reports that are generated.
 
-The procedures in this topic can be completed in the **DEMF** company. No coding is required. Before you begin, download and save the following files.
+The procedures in this article can be completed in the **DEMF** company. No coding is required. Before you begin, download and save the following files.
 
 | Description       | File name |
 |-------------------|-----------| 
@@ -63,11 +53,11 @@ In this scenario, you're the representative of Litware, Inc., which is currently
 5. In the **Name** field, enter **Intrastat report Litware**.
 6. Select **Create configuration** to create the new format.
 
-Version 1.9.1 of the **Intrastat report Litware** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
+Version 1.9.1 of the **Intrastat report Litware** ER format configuration is created. This version has a status of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
 ### Make the custom format runnable
 
-Now that the first version of your custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
+Now that the first version of your custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are considered. This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
 
 To use the draft version of an ER format, you must explicitly mark the ER format.
 
@@ -170,7 +160,7 @@ Then use the custom ER format to generate the control report of the Intrastat de
 
 ### Repeat the replacement of the current Excel template in the custom ER format
 
-1. Follow the steps in the [Replace the current Excel template in the custom ER format](#replace-template) section of this topic. However, in step 7, select the **ERIntrastatReportDemo2.xlsx** file.
+1. Follow the steps in the [Replace the current Excel template in the custom ER format](#replace-template) section of this article. However, in step 7, select the **ERIntrastatReportDemo2.xlsx** file.
 2. On the **Format designer** page, expand **Intrastat**.
 3. Name the [Range](er-fillable-excel.md#range-component) format components that have been added to the editable ER format to sync the structure with the structure of the applied Excel template:
 
@@ -411,7 +401,7 @@ To change the visibility, update the **Enabled** property of the **Report page h
 
 ## Generate an Intrastat declaration control report (updated)
 
-1. Make sure that you have 24 transactions on the **Intrastat** page. Repeat the steps in the [Generate an Intrastat declaration control report](#generate-intrastat-control-report) section of this topic to generate and review the control report.
+1. Make sure that you have 24 transactions on the **Intrastat** page. Repeat the steps in the [Generate an Intrastat declaration control report](#generate-intrastat-control-report) section of this article to generate and review the control report.
 
     All transactions are presented on the first page. The page totals and counters equal the report totals and counters. The page header range is hidden on the first page because the report header already contains column titles. The page header and footer are hidden on the second page because that page contains no transactions.
 

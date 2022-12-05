@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Export ledger transactions
-description: This topic provides information about how to export ledger account balances to a plain text (ASCII) file in CED format for Belgium.
-author: anasyash
+description: This article provides information about how to export ledger account balances to a plain text (ASCII) file in CED format for Belgium.
+author: AdamTrukawka
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxReportExtraFieldsBE
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 273103
 ms.search.region: Belgium
-# ms.search.industry: 
-ms.author: roschlom
-ms.dyn365.ops.version: AX 7.0.1
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
-
+ms.dyn365.ops.version: AX 7.0.1
+ms.custom: 273103
+ms.search.form: TaxReportExtraFieldsBE
 ---
 
 # Export ledger transactions
 
 [!include [banner](../includes/banner.md)]
 
-The feature described in this topic is used to export the total balance of each ledger account for a specific period to a plain text (ASCII) file in CED format. You can then import the generated file into third-party software to create an accounting report according to country/region-specific requirements.
+The feature described in this article is used to export the total balance of each ledger account for a specific period to a plain text (ASCII) file in CED format. You can then import the generated file into third-party software to create an accounting report according to country/region-specific requirements.
 
 This functionality is available for legal entities that have their primary address in Belgium.
 

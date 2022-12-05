@@ -2,7 +2,7 @@
 # required metadata
 
 title: Run and monitor an experiment
-description: This topic describes how to run and monitor an experiment in a third-party service. It also describes how to make changes to variations after the experiment started.
+description: This article describes how to run and monitor an experiment in a third-party service. It also describes how to make changes to variations after the experiment started.
 author:  sushma-rao 
 ms.date: 10/21/2020
 ms.topic: article
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Run and monitor an experiment
 
-This topic describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this topic, you'll first need to [publish](experimentation-preview-publish.md) your experiment in Commerce. 
+This article describes how to run and monitor your experiment in a third-party app, and change variations if needed. Before you complete the steps in this article, you'll first need to [publish](experimentation-preview-publish.md) your experiment in Commerce. 
 
-The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
+The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.
 
 [ ![Experimentation user journey - Run & Monitor.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

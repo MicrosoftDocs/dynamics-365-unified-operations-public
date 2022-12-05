@@ -1,6 +1,6 @@
 ---
 title: Customize the production floor execution interface
-description: This topic explains how to extend current forms or create new forms and buttons for the production floor execution interface.
+description: This article explains how to extend current forms or create new forms and buttons for the production floor execution interface.
 author: johanhoffmann
 ms.date: 05/04/2022
 ms.topic: article

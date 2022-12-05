@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance attribute types
-description: This topic explains how to create attribute types in Asset Management. 
+description: This article explains how to create attribute types in Asset Management. 
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to create attribute types in Asset Management. Attributes are used to describe the properties of various elements. You can set up attributes on the following elements:
+This article explains how to create attribute types in Asset Management. Attributes are used to describe the properties of various elements. You can set up attributes on the following elements:
 
 - [Functional location types](../setup-for-functional-locations/functional-location-types.md)
 - [Create functional locations](../functional-locations/create-functional-locations.md)

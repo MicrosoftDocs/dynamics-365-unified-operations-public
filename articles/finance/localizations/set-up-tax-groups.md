@@ -2,7 +2,7 @@
 # required metadata 
 
 title: Set up tax groups
-description: This topic explains how to set up tax groups in the Tax Calculation service.
+description: This article explains how to set up tax groups in the Tax Calculation service.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up tax groups in the Tax Calculation service. It also explains how to set up the tax group applicability rule matrix and configure lines in the matrix.
+This article explains how to set up tax groups in the Tax Calculation service. It also explains how to set up the tax group applicability rule matrix and configure lines in the matrix.
 
 The concept of tax groups in the Tax Calculation service resembles the concept of sales tax groups in Microsoft Dynamics 365 Finance. They are groups of tax codes. The Tax Calculation service uses the intersection of a tax group and an item tax group to determine the tax codes.
 

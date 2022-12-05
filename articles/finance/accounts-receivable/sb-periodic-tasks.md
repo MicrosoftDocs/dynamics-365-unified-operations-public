@@ -2,7 +2,7 @@
 # required metadata
 
 title: Periodic tasks in Recurring contract billing
-description: This topic describes the periodic tasks that are available in Recurring contract billing.
+description: This article describes the periodic tasks that are available in Recurring contract billing.
 author: JodiChristiansen
 ms.date: 04/29/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.24
 ---
 # Periodic tasks in Recurring contract billing
 
-This topic describes the periodic tasks that are available in Recurring contract billing.
+This article describes the periodic tasks that are available in Recurring contract billing.
 
 ## Generate invoice
 

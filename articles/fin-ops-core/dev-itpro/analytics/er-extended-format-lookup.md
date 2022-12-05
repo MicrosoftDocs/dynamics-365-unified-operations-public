@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Electronic reporting (ER) extended format lookup
-description: This topic describes how an ER format reference can be set up in the ER format lookup when the required format is stored in the Global repository.
-author: NickSelin
+description: This article describes how an ER format reference can be set up in the ER format lookup when the required format is stored in the Global repository.
+author: kfend
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERWorkspace
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERWorkspace
 ---
 
 # Allow users to set up an ER format reference inquiring a format from the Global repository

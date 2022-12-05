@@ -1,6 +1,6 @@
 ---
 title: GS1 bar codes
-description: This topic describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
+description: This article describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -25,11 +25,11 @@ GS1 support in Supply Chain Management dramatically simplifies the scanning proc
 
 Logistics managers must set up the required list of application identifiers and associate each of them with the appropriate mobile device menu items. The application identifiers can then be used across warehouses as a global setting for moving and packing purposes. Therefore, all shipping labels will take a unified form.
 
-Unless otherwise stated, this topic uses the term *bar code* to refer to both linear (1D) bar codes and 2D bar codes.
+Unless otherwise stated, this article uses the term *bar code* to refer to both linear (1D) bar codes and 2D bar codes.
 
 ## The GS1 bar code format
 
-The GS1 General Specifications specify which symbologies can be used for GS1 bar codes and how to encode the data in the bar code. This section provides a short introduction to the topic. For full details, see the [GS1 General Specifications](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) that are published by GS1. The GS1 specifications document is regularly updated, and the information that it provides is up to date with GS1 General Specifications release 22.0.
+The GS1 General Specifications specify which symbologies can be used for GS1 bar codes and how to encode the data in the bar code. This section provides a short introduction to the article. For full details, see the [GS1 General Specifications](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) that are published by GS1. The GS1 specifications document is regularly updated, and the information that it provides is up to date with GS1 General Specifications release 22.0.
 
 GS1 bar codes use the following symbologies:
 
@@ -103,14 +103,14 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 
 ## Turn on the GS1 feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
-- **Feature name:** *Scan GS1 bar codes*
+- **Feature name:** *Scan GS1 barcodes*
 
 ### Turn on the Enhanced parser for GS1 barcodes feature
 
-If you use GS1 bar codes, we recommend that you also enable the *Enhanced parser for GS1 barcodes* feature. This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
+If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature. This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
 
 - It follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid according to the specification.
 - It doesn't require that you to set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.
@@ -129,7 +129,7 @@ To set up global GS1 options, follow these steps.
 
     - **FNC1 Character**, **Datamatrix character**, and **QR code character** – Specify characters that should be interpreted as a prefix for each type of GS1 bar code.
     - **Group separator** – Specify the character that replaces the ASCII group separator character.
-    - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on in your system.
+    - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on for your system.
 
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.

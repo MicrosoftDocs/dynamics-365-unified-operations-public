@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: FIRSTORNULL ER function
-description: This topic explains how the FIRSTORNULL Electronic reporting (ER) function is used
-author: NickSelin
+description: This article explains how the FIRSTORNULL Electronic reporting (ER) function is used
+author: kfend
 ms.date: 11/29/2019
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # FIRSTORNULL ER function

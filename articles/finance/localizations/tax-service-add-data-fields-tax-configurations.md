@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add data fields in tax configurations
-description: This topic explains how to customize tax configurations by adding data fields.
+description: This article explains how to customize tax configurations by adding data fields.
 author: Kai-Cloud
 ms.date: 10/21/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to customize tax configurations by using [data fields that are added in the tax integration](tax-service-add-data-fields-tax-integration-by-extension.md).
+This article explains how to customize tax configurations by using [data fields that are added in the tax integration](tax-service-add-data-fields-tax-integration-by-extension.md).
 
 ## Customize the tax data model
 

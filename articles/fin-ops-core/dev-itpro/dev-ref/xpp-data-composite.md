@@ -1,12 +1,12 @@
 ---
 title: X++ composite data types
-description: This topic describes composite data types in X++.
-author: RobinARH
+description: This article describes composite data types in X++.
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes composite data types in X++. The composite data types in X++ are arrays, containers, classes as data types, delegates as data types, and tables as data types.
+This article describes composite data types in X++. The composite data types in X++ are arrays, containers, classes as data types, delegates as data types, and tables as data types.
 
 ## Array
 
@@ -239,7 +239,7 @@ A *class* is a type definition that describes both variables and methods for ins
 
 Classes can be nested in source code. Nested classes are available only inside forms (such as a class that extends **FormRun**), and are used to represent controls, data sources, or data fields. An attribute decoration, such as the attribute decoration on a class or a method, can omit the suffix of the attribute name if the suffix is **Attribute**. Therefore, X++ allows **\[MyFavorite\]** instead of requiring **\[MyFavoriteAttribute\]**. Additionally, attributes are now applied to the handlers of delegates and methods, to map the handlers to those targets.
 
-In AX 2012 and earlier versions, you could designate a method to run on either the client or the server. However, in Finance and Operations applications, all compiled X++ code is run as .NET Common Intermediate Language (CIL) on the server. There is no longer any code that is evaluated at the client site or in the browser. Therefore, the **client** and **server** keywords are now ignored. Although these keywords don't cause a compile error if they are used, they should not be used in any new code.
+In AX 2012 and earlier versions, you could designate a method to run on either the client or the server. However, in finance and operations applications, all compiled X++ code is run as .NET Common Intermediate Language (CIL) on the server. There is no longer any code that is evaluated at the client site or in the browser. Therefore, the **client** and **server** keywords are now ignored. Although these keywords don't cause a compile error if they are used, they should not be used in any new code.
 
 ### Private and protected member variables
 
@@ -455,3 +455,4 @@ public void printCust()
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

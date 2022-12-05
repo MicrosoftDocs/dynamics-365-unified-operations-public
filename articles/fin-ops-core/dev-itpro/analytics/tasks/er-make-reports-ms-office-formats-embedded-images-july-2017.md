@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Design configurations to generate reports in Office format that have embedded images
-description: This topic describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images. 
-author: NickSelin
+description: This article describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images.
+author: kfend
 ms.date: 04/23/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Design configurations to generate reports in Office format that have embedded images
 

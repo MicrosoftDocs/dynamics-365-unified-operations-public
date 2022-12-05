@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend inventory on-hand data entities
-description: This topic provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entities can work with the extensions.
+description: This article provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entities can work with the extensions.
 author: yufeihuang
 ms.date: 07/27/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: yufeihuang
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md). This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand data entities can work with the extensions. For more information about data entities, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md). This article provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand data entities can work with the extensions. For more information about data entities, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 > [!NOTE]
 > Here is a list of some of the inventory on-hand data entities:

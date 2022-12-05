@@ -47,7 +47,7 @@ When you are planning hierarchies, it is also important to consider the relation
 
 You must have at least one legal entity to represent your business. A legal entity can enter legal contracts and is required to prepare financial statements that report on its performance.
 
-Legal entities can be used for transactional business or for consolidation. This means that a legal entity in Finance and Operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
+Legal entities can be used for transactional business or for consolidation. This means that a legal entity in finance and operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
 
 Internal organizations in your business, such as regional offices, can be represented as additional legal entities, or as operating units of the main legal entity. An operating unit is not required to be a legally defined organization. Operating units are used to control economic resources and operational processes in the business. For example, departments and cost centers are operating units.
 
@@ -176,7 +176,7 @@ For countries/regions that are supported, most statutory reports can be created.
 
 #### If the organization is modeled as an operating unit
 
-Statutory reports must be created by using another application. You must ensure that data is captured in Finance and Operations apps to support the requirements of each operating unit, where they differ from the requirements of headquarters.
+Statutory reports must be created by using another application. You must ensure that data is captured in finance and operations apps to support the requirements of each operating unit, where they differ from the requirements of headquarters.
 
 ### Currency
 
@@ -247,3 +247,4 @@ Consider the following best practices when you implement an organization hierarc
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

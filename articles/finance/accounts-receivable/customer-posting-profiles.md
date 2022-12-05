@@ -2,9 +2,9 @@
 # required metadata
 
 title: Customer posting profiles
-description: This topic describes customer posting profiles, which control the posting of customer transactions to the general ledger.
+description: This article describes customer posting profiles, which control the posting of customer transactions to the general ledger.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes customer posting profiles, which control the posting of customer transactions to the general ledger.
+This article describes customer posting profiles, which control the posting of customer transactions to the general ledger.
 
 ## Customer posting profiles
 
@@ -63,15 +63,15 @@ If you want all customer transactions to have the same posting profile, set up o
 </thead>
 <tbody>
 <tr>
-<td>Posting profile</td>
+<td><strong>Posting profile</strong></td>
 <td>Enter a code for the posting profile. For example, you could create two posting profiles to obtain one account for customer balances in the national currency and another for customer balances in a foreign currency. You could call one account National and the other Foreign.</td>
 </tr>
 <tr>
-<td>Description</td>
+<td><strong>Description</strong></td>
 <td>Enter a description of the posting profile. This is only used to better identify the posting profile when you view it in this page.</td>
 </tr>
 <tr>
-<td>Account code</td>
+<td><strong>Account code</strong></td>
 <td>Specify whether the posting profile applies to a single customer, a group of customers, or all customers:
 <ul>
 <li><b>Table</b> – The posting profile applies to a single customer. Select the customer account in the <b>Account/Group number</b> field.</li>
@@ -81,33 +81,33 @@ If you want all customer transactions to have the same posting profile, set up o
 </td>
 </tr>
 <tr>
-<td>Account/Group number</td>
+<td><strong>Account/Group number</strong></td>
 <td>If <b>Table</b> is selected in the <b>Account code</b> field, select the account number of the customer who is associated with the posting profile. If <b>Group</b> is selected, select the customer group. If <b>All</b> is selected, leave this field blank.</td>
 </tr>
 <tr>
-<td>Summary account</td>
+<td><strong>Summary account</strong></td>
 <td>Select the main account that will be used as the Accounts receivable trade account for the customers who are associated with the posting profile. This account is the account for the <b>Customer balance</b> posting type.</td>
 </tr>
 <tr>
-<td>Liquidity account for payments</td>
-<td>Select the liquidity ledger account that is used for cash flow forecasts. This field will appear only if cash flow forecasts are enabled.</td>
+<td><strong>Liquidity account for payments</strong></td>
+<td>Select the <strong>Liquidity ledger account</strong> that is used for cash flow forecasts. This field will appear only if cash flow forecasts are enabled.</td>
 </tr>
 <tr>
-<td>Sales tax prepayments</td>
+<td><strong>Sales tax prepayments</strong></td>
 <td><p>Select the account for sales tax for payments that are received in advance.</p>
 <p><strong>Note:</strong> Use the <b>Accounts receivable parameters</b> page to specify the posting profile that is used when a payment is marked as a prepayment.</p>
 </td>
 </tr>
 <tr>
-<td>Liabilities for discount account</td>
+<td><strong>Liabilities for discount account</strong></td>
 <td>Select the ledger account for liabilities of discount.</td>
 </tr>
 <tr>
-<td>Collection letter sequence</td>
+<td><strong>Collection letter sequence</strong></td>
 <td>Select the identifier of the collection letter sequence to use for customers to whom the posting profile is assigned.</td>
 </tr>
 <tr>
-<td>Interest code</td>
+<td><strong>Interest code</strong></td>
 <td>Select the interest code to use for the calculation of interest for customers to whom the posting profile is assigned.</td>
 </tr>
 </tbody>
@@ -115,7 +115,7 @@ If you want all customer transactions to have the same posting profile, set up o
 
 ## Posting examples
 
-The following table shows examples of the default posting types with sample main accounts and descriptions. The **Debit/Credit** column indicates if the transaction typically Debit or Credits or in some cases can post either. The **Clearing account** column indicates of the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
+The following table shows examples of the default posting types with sample main accounts and descriptions. The **Debit/Credit** column indicates if the transaction typically Debits or Credits or in some cases can post either. The **Clearing account** column indicates of the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|

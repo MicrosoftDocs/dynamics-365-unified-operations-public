@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Import fiscal documents for Brazil
-description: This topic describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
-author: sndray
+description: This article describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, PurchImportDeclarationList_BR, VendEditInvoice
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 270204
-ms.assetid: b2389297-1359-498f-b755-c20574248ae1
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 270204
+ms.assetid: b2389297-1359-498f-b755-c20574248ae1
+ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, PurchImportDeclarationList_BR, VendEditInvoice
 ---
 
 # Import fiscal documents for Brazil
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
+This article describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
 
 You can issue a direct import fiscal document when you create a purchase order to import items from a foreign vendor. An import fiscal document records transit information about the items that you import. The import fiscal document is used to release items from customs and to validate the entry of the items in the warehouse of the legal entity. You must specify the import declaration information (the addition number and import declaration number) for a purchase order that is issued to import items from a foreign vendor before you post the purchase order. A direct import fiscal document includes the following information:
 

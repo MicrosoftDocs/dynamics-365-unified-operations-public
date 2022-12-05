@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product recommendations FAQ
-description: This topic provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
+description: This article provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about processes and tools that you can use to troubleshoot issues that are related to [product recommendations](product-recommendations.md) or their results.
+This article provides information about processes and tools that you can use to troubleshoot issues that are related to [product recommendations](product-recommendations.md) or their results.
 
 ## Best practices
 It's very important to utilize the concept of product masters and variants. The sensible grouping of variants to a parent product master helps the list algorithms and service create better models. Additionally, the service can serve just one instance of a product instead of putting all closely related variants in a list. When all closely related variants are put in a list, erroneous or duplicate results can occur.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Forecast reduction keys
-description: This topic provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
+description: This article provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the different methods that are used to reduce forecast requirements. It includes examples of the results of each method. It also explains how to create, set up, and use a forecast reduction key. Some methods use a forecast reduction key to reduce forecast requirements.
+This article provides information about the different methods that are used to reduce forecast requirements. It includes examples of the results of each method. It also explains how to create, set up, and use a forecast reduction key. Some methods use a forecast reduction key to reduce forecast requirements.
 
 ## Methods that are used to reduce forecast requirements
 
@@ -137,7 +137,7 @@ When this option is used, the following behavior occurs:
 - Reduction keys aren't required or used. 
 - If the forecast is completely reduced, the forecast requirements for the current forecast become 0 (zero).
 - If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.
-- Time fences are included in the forecast reduction calculation.
+- The demand forecast reduction time fence isn't included in the forecast reduction calculation. Instead, the coverage group time fence is used for forecast reduction.
 - Positive days are included in the forecast reduction calculation.
 - If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
@@ -238,7 +238,7 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 ## Additional resources
 
-[Master plans overview](master-plans.md)
+- [Master plans overview](master-plans.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

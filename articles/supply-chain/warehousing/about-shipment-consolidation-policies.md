@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Shipment consolidation policies
-description: This topic provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
+title: Shipment consolidation policies overview
+description: This article provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Shipment consolidation policies
+# Shipment consolidation policies overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Before shipment consolidation policies were introduced, the consolidation functi
 
 Queries are used to identify the shipment consolidation policy that applies, and then an editable set of fields determines how the load lines are grouped at the shipment level. (This pattern resembles the pattern that wave templates follow.) In addition, a **Consolidate with existing shipments** option has been added to each policy. When this option is turned on, the *Release to warehouse* procedure finds shipments for consolidation by searching among existing shipments that were created based on the same consolidation policy. In this case, the system will select an existing shipment or load instead of creating a new one. However, the system will only consolidate with existing shipments that have a status of *Open*; shipments that belong to a wave release with a status of *Released* or higher won't be considered as targets for consolidation.
 
-When shipment consolidation policies are made available, the **Consolidate shipment at release to warehouse** setting that was previously available on the **Warehouses** setup page is hidden. To help you transition to the new shipment consolidation feature, a function on the **Shipment consolidation policies** page creates a default policy that automatically includes the old setting for existing warehouses. After that default policy is created, the **Consolidate shipment at release to warehouse** setting on the **Warehouses** setup page will no longer be considered.
+When the *Shipment consolidation policies* feature is turned on for your system, the **Consolidate shipment at release to warehouse** setting that was previously available on the **Warehouses** setup page is hidden. To help you transition to the new shipment consolidation feature, a function on the **Shipment consolidation policies** page lets you create a default policy that automatically includes the old setting for existing warehouses. After that default policy is created, the **Consolidate shipment at release to warehouse** setting on the **Warehouses** setup page will no longer be considered. For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 
 You can use the **Release to warehouse** page to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
 

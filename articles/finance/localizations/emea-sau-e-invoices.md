@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Customer electronic invoices in Saudi Arabia
-description: This topic explains how to configure and submit customer electronic invoices in Saudi Arabia.
-author: ikondo
+description: This article explains how to configure and submit customer electronic invoices in Saudi Arabia.
+author: mrolecki
 ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 574540
 ms.search.region: Saudi Arabia
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.21
-
+ms.custom: 574540
+ms.search.form: 
 ---
 
 # Customer electronic invoices in Saudi Arabia
@@ -34,7 +23,7 @@ ms.dyn365.ops.version: 10.0.21
 According to Saudi Arabian legal requirements, invoices that are issued to customers must be generated in an electronic format. To generate electronic invoices, the following two-part system configuration is required.
 
 - **Electronic invoicing service** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md).
-- **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
+- **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
 

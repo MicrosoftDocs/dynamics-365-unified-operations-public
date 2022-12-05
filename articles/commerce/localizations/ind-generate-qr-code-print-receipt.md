@@ -1,37 +1,29 @@
 ---
-# required metadata
 
 title: Generate QR codes and print them on receipts for India
-description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
+description: This article explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 author: prabhatb2011
 ms.date: 01/31/2022
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
-
-# ms.search.form:
 audience: IT Pro
-# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
 ms.search.region: India
 ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.17
+
 ---
 # Generate QR codes and print them on receipts for India
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
+This article provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 
 ## Prerequisites
 
-Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.13. Therefore, the information in this topic is valid only for version 10.0.13 and later.
+Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.13. Therefore, the information in this article is valid only for version 10.0.13 and later.
 
 Commerce versions 10.0.17 and later support printing QR codes on receipts using Retail Hardware Station. In versions 10.0.16 and earlier, QR codes can only be printed from Modern POS (MPOS).
 
@@ -1172,5 +1164,3 @@ namespace Contoso
     }
 }
 ```     
-
----

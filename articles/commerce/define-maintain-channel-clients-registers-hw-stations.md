@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect peripherals to the point of sale (POS)
-description: This topic covers how to connect peripherals to your Retail POS.
+description: This article covers how to connect peripherals to your Retail POS.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic covers how to connect peripherals to your Retail POS.
+This article covers how to connect peripherals to your Retail POS.
 
 > [!NOTE]
 > For specific installation instructions, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) and [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
@@ -162,7 +162,7 @@ Receipt profiles are assigned to printers within the hardware profile. They are 
 
 #### Hardware profiles
 
-Hardware profiles are explained as a component for client setup earlier in this topic. Hardware profiles are assigned directly to the POS register or to a shared hardware station, and are used to specify the types of devices that a specific POS register or hardware station uses. Hardware profiles are also used to specify the EFT settings that are used to communicate with the payment SDK.
+Hardware profiles are explained as a component for client setup earlier in this article. Hardware profiles are assigned directly to the POS register or to a shared hardware station, and are used to specify the types of devices that a specific POS register or hardware station uses. Hardware profiles are also used to specify the EFT settings that are used to communicate with the payment SDK.
 
 #### Visual profiles
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring contract billing parameters
-description: This topic explains how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
+description: This article explains how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -33,7 +33,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 
 ## General tab
 
-1. On the **Recurring contract billing parameters** page, on the **General** tab, in the **Billing schedule group** field, select a billing schedule group. For information about how to set up billing schedule groups, see the [Billing schedule groups](#set-up-billing-schedule-groups) section later in this topic.
+1. On the **Recurring contract billing parameters** page, on the **General** tab, in the **Billing schedule group** field, select a billing schedule group. For information about how to set up billing schedule groups, see the [Billing schedule groups](#set-up-billing-schedule-groups) section later in this article.
 2. In the **Termination type** field, select how the final invoice is calculated when a billing schedule is terminated:
 
     - **Adjust schedule** – Cut off the billing schedule on the termination date, change the status of the schedule to **Last billing**, and adjust the associated deferral schedule by reversing the amount that no longer must be recognized. If the billing start date is after the termination date, the remaining billing periods are removed.
@@ -52,7 +52,8 @@ Use the **Recurring contract billing parameters** page to set up the default val
 8. In the **Invoice transaction type** field, select the default invoice transaction type for new billing schedules.
 9. Set the **Align deferral to billing** option to **Yes** to align the corresponding deferral schedule so that it uses the same dates as the billing schedule. Set it to **No** to have different dates.
 10. If you're using the revenue split feature, set the **Automatically create revenue split** option to **Yes** when items are added to a billing schedule. The **Revenue split** checkbox will automatically be selected on the billing schedule line if the item is set up as a revenue split item. Set the option to **No** if you want to manually select the **Revenue split** checkbox.
-11. Set the fields for sales order creation:
+11. Set the **Customer split** option to **Yes** to allow a billing schedule to be billed to different customers. When set to **Yes** the **Customer split** option is available on the billing schedule header and billing schedule line. 
+12. Set the fields for sales order creation:
 
     - Invoices can be consolidated by period, customer, or item. Any combination of **Yes** and **No** values can be set. Invoices can also be split by item group.
     - The following posting options are available for invoices:
@@ -98,6 +99,9 @@ Use the **Recurring contract billing parameters** page to set up the default val
     - **Issue credit** – Create a credit note when a billing schedule or billing schedule line is terminated.
     - **Credit adjustment** – Create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule. The credit adjustment will update the invoice amount for the next billing period until the credit has finished being applied to the billing schedule.
     - **No credit** – Don't create a credit adjustment or a credit note when a billing schedule or billing schedule line is terminated. This option is available only when the **No adjustment** option is used to terminate a billing schedule.
+18. When the option **One time can terminate with refund** is set to **No** and a billing schedule with a billing frequency of **One time**, the status of the billing schedule line changes to **Terminated** once the billing schedule is invoiced. This billing schedule can't be terminated and no credit can be issued. When **One time can terminate with refund** is set to **Yes** the billing schedule line with a billing frequency of **One time** will have an **Active** status after the billing schedule is invoiced. The billing schedule line can be terminated and a refund processed. 
+19. The **Prorate daily** option set in parameters will default to the mass termination page and the billing schedule header and line Terminate dialogs. It can be changed during the termination process. When set to **Yes** any refund amount will be calculated using a daily rate. When set to **No** it will credit based on the termination date and billing frequency. For example, if using Monthly frequency and the billing amount was $100 per month, the credit amount is in increments of $100. If the billing frequency is One-time the credit amount is $0.00. You must have Prorate daily set to Yes to get a refund for One-time billing frequency. 
+20. Set **Create deferral for credit** option to **Yes** to create a new deferral schedule if crediting an existing deferral schedule. Leave the option set to **No** to create the credit on the existing deferral schedule.
 
 ## Sequence number tab
 

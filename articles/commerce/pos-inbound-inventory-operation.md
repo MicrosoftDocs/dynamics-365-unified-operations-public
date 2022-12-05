@@ -1,31 +1,14 @@
 ---
-# required metadata
-
 title: Inbound inventory operation in POS
-description: This topic describes capabilities of the point of sale (POS) inbound inventory operation.
-author: hhaines
-
-ms.date: 09/17/2020
+description: This article describes capabilities of the point of sale (POS) inbound inventory operation.
+author: hhainesms
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.9
-
+ms.search.validFrom: 2017-06-20
 
 ---
 
@@ -37,6 +20,11 @@ In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbou
 
 > [!NOTE]
 > In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, there will be no further investments in it, from a functional or performance perspective, after version 10.0.9.
+
+The following video provides an overview of store inventory business processes and capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## Prerequisite: Configure an asynchronous document framework
 
@@ -147,7 +135,7 @@ Underdelivery tolerance percentages for a purchase order line can be predefined 
 
 After an organization completes the purchase order underdelivery configurations, POS users will see a new **Close remaining quantity** option in the **Details** pane when an inbound purchase order line is selected in the **Inbound inventory** operation. If the user closes the remaining quantity, POS performs a validation to verify whether the quantity being closed is within the underdelivery tolerance percentage defined on the purchase order line. If the underdelivery tolerance is exceeded, an error message is displayed and the user won’t be able to close the remaining quantity until the previously received quantity plus the **Receiving now** quantity meets or exceeds the minimal quantity that needs to be received based on the underdelivery tolerance percentage. 
 
-With **Close remaining quantity** option turned on for a purchase order line, when the user completes the receipt by using the **Finish receiving** action, a closure request is also sent to Commerce headquarters, and any unreceived quantity of this order line will be cancelled. At that point the line is considered fully received. 
+With **Close remaining quantity** option turned on for a purchase order line, when the user completes the receipt by using the **Finish receiving** action, a closure request is also sent to Commerce headquarters, and any unreceived quantity of this order line will be canceled. At that point the line is considered fully received. 
 
 ### Receiving location-controlled items
 
@@ -161,15 +149,13 @@ As you require, you can select **Receive all** on the app bar to quickly update 
 
 ### Receipt of unplanned items on purchase orders
 
-In Commerce version 10.0.14 and later, users can receive a product that was not originally on the purchase order. To enable this functionality, turn on **Add lines to Purchase Order during Point of Sale receiving**.  
-
-This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items weren't previously ordered and shipped from the outbound warehouse.
+In Commerce version 10.0.14 and later, users can receive a product that was not originally on the purchase order. This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items weren't previously ordered and shipped from the outbound warehouse.
 
 Users can't add new products to the purchase order during POS receiving if purchase order [change management workflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) is enabled in Commerce headquarters (HQ). To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving will fail if the change management workflow is enabled. If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, the user can't add new products to the purchase order during receiving in POS.
 
 The functionality that enables adding lines can't be used as a workaround for receiving additional quantities of products already on the purchase order. Over-receiving is managed through the standard [over-receiving](#over-receiving-validations) settings for the product line on the purchase order.
 
-If **Add lines to Purchase Order during Point of Sale receiving** is enabled and a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that isn't recognized as an item on the current purchase order, but is recognized as a valid item, the user receives a message about adding the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
+When a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that is recognized as a valid item but isn't recognized as an item on the current purchase order, the user receives a message prompting them to add the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
 
 When the purchase order receipt is complete and submitted to HQ for processing, the added lines are created on the purchase order master document. On the purchase order line in HQ, there will be an **Added by POS** flag on the **General** tab of the purchase order line. The **Added by POS** flag indicates that the purchase order line was added by the POS receiving process and was not a line that was on the purchase order prior to receiving.
 
@@ -221,7 +207,7 @@ After the draft document is successfully submitted to Commerce Headquarters, it 
 
 After the document is in **Requested** status, it's visible on the **Active** tab. However, it can't yet be received by the inbound store or warehouse. After the outbound warehouse has shipped some or all of the transfer order, the inbound store or warehouse can post receipts in POS. When the outbound side processes the transfer order documents, their status is updated from **Requested** to **Shipped** or **Partially Shipped**. After the documents are in **Shipped** or **Partially Shipped** status, the inbound store or warehouse can post receipts against them using the inbound operation receiving process.
 
-## Related topics
+## Related articles
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
 

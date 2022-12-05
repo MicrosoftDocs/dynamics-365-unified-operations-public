@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Localize Commerce extension resources and label files
-description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
-author: mugunthanm
-ms.date: 01/06/2020
+description: This article explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
+author: josaw1
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.search.region: Global 
-ms.search.industry: retail
-ms.author: mumani
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-
+ms.search.industry: retail
 ---
 
 # Localize Commerce extension resources and label files
@@ -29,7 +20,7 @@ ms.dyn365.ops.version: 8.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Commerce Scale Unit or Commerce Runtime Services (CRT). You can also add custom error messages for in the same way. However, for new POS extension labels, you should use the localization framework in the POS extension.
+This article explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Commerce Scale Unit or Commerce Runtime Services (CRT). You can also add custom error messages for in the same way. However, for new POS extension labels, you should use the localization framework in the POS extension.
 
 ## POS labels and messages (error, warning, and information)
 
@@ -55,7 +46,7 @@ You can override the default strings in the POS by using the language text entri
 4. On the Action Pane, select **Save**.
 5. Go to **Retail and Commerce &gt; Retail and Commerce IT &gt; Distribution schedule**.
 6. Select the **Registers** (**1090**) job, and then select **Run now**.
-7. After the data is pushed, sign off, and then sign in to Cloud POS or Modern POS to see the changed labels.
+7. After the data is pushed, you'll need to wait up to one hour for the localized string cache to refresh. When the refresh of the string cache is complete, sign out and sign back in to Cloud POS, Modern POS or Store Commerce to display the changed labels. You can also force a cache refresh by restarting Retail Server. 
 
 ### Get the text ID for POS strings
 

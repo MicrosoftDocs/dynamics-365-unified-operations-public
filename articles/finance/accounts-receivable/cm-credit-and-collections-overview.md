@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit and collections overview
-description: This topic provides an overview of the functionality for credit and collections.
+description: This article provides an overview of the functionality for credit and collections.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: overview

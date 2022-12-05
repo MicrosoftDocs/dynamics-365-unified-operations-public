@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Switzerland overview
-description: This topic provides links to documentation resources for Switzerland. 
-author: ShylaThompson
+description: This article provides links to documentation resources for Switzerland.
+author: kfend
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Switzerland
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Switzerland overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Switzerland. 
+This article provides links to documentation resources for Switzerland. 
 
 - [ESR customer payments import](emea-che-esr-customer-payments-import.md)
 - [Swiss QR-bills](emea-che-swiss-qr-bills.md)

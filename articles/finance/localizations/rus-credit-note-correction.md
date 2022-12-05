@@ -1,26 +1,18 @@
 ---
-# required metadata
 title: Credit note corrections (Russia)
-description: This topic provides information about creating credit note corrections in Accounts receivable and Accounts payable.
-author: anasyash
+description: This article provides information about creating credit note corrections in Accounts receivable and Accounts payable.
+author: AdamTrukawka
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.0
-
+ms.search.form: 
 ---
 
 # Credit note corrections (Russia)
@@ -88,7 +80,7 @@ On the **Invoice journal** page, you can perform these actions:
 - Select **Preview/Print** to print the report.
 
 ### Post vendor invoices as credit corrections
-On the **Open vendor invoices** page, you can create and post vendor invoices as credit corrections for return item transactions. The procedure resembles the procedure for posting a reverse transaction for a purchase order credit note, earlier in the topic.
+On the **Open vendor invoices** page, you can create and post vendor invoices as credit corrections for return item transactions. The procedure resembles the procedure for posting a reverse transaction for a purchase order credit note, earlier in the article.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

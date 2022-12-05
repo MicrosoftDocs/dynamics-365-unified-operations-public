@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.25 (April 2022)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.25. 
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.25. 
 author: kamaybac
 ms.date: 03/14/2022
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
+This article lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
 
 - **Preview of release:** February 2022
 - **General availability of release (self-update):** March 2022
@@ -25,15 +25,14 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory&nbsp;and&nbsp;logistics | [Hazardous materials enhancements](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Coming soon | Feature management:<br>*Hazardous materials enhancements* |
-| Inventory&nbsp;and&nbsp;logistics | [Packing work for packing stations](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Coming soon | Feature management:<br>*Packing work for packing stations* |
+| Inventory&nbsp;and&nbsp;logistics | [Packing work for packing stations](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | [Packing work for packing outbound containers and processing shipments](../warehousing/packing-work.md) | Feature management:<br>*Packing work for packing stations* |
 | Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) | Feature management:<br>*Scan GS1 barcodes* |
-| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (non-WMS)*<br><br>And/or:<br><br>Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* |
-| Manufacturing | [Register material consumption on scale units](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md) | Feature management:<br>*Register material consumption on the mobile app on a scale unit* |
+| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management:<br>*Register material consumption on the production floor execution interface (non-WMS)*<br><br>And/or:<br><br>Feature management:<br>*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* |
 | Planning | [Planning Optimization centralized calendar maintenance](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Calendars and master planning](../master-planning/supply-chain-calendars-master-planning.md) | Enabled by default |
 | Planning | [Planning Optimization suggestions to optimize existing supply](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Action messages](../master-planning/action-messages.md) | Enabled by default |
 | Planning | Planned orders simplified | [Planned orders simplified](../master-planning/planning-optimization/planned-orders-simplified.md ) | Feature management:<br>*Planned orders simplified* |
@@ -151,14 +150,14 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Deferred processing of manual inventory movement operation](../warehousing/deferred-processing-manual-inventory-movement.md) | Mandatory |
 | Warehouse management | Do not allow to create loads, that do not meet wave load building template requirements | Mandatory |
 | Warehouse management | [Enhanced license plate label layouts](../warehousing/document-routing-layout-for-license-plates.md) | Mandatory |
-| Warehouse management | [Evaluate all actions for Multi SKU location directives](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Mandatory |
+| Warehouse management | [Evaluate all actions for Multi SKU location directives](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Mandatory |
 | Warehouse management | Hide the Total Value field on the "All Loads" and "Load Details" pages | Mandatory |
 | Warehouse management | License plate label build configuration | Mandatory |
 | Warehouse management | Load line manual correction for admin or similar trusted users | Mandatory |
 | Warehouse management | [Location license plate positioning](../warehousing/location-license-plate-positioning.md) | Mandatory |
 | Warehouse management | [Location product dimension mixing](../warehousing/location-product-dimension-mixing.md) | Mandatory |
 | Warehouse management | Make mobile device inventory movement inventory status field editable | Mandatory |
-| Warehouse management | Manual sales line picking service for admin or similar trusted users | Mandatory |
+| Warehouse management | [Manual sales line picking service for admin or similar trusted users](../warehousing/manual-order-line-picking-exception-handling.md) | Mandatory |
 | Warehouse management | [Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
 | Warehouse management | Prompt to resolve ambiguous 'Loc / LP' names | Mandatory |
 | Warehouse management | [Quality check](../warehousing/quality-check.md) | Mandatory |
@@ -179,9 +178,9 @@ The table also lists features that were previously in public preview, but have c
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of finance and operations apps (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### Bug fixes
 
@@ -195,13 +194,14 @@ Check out the [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dyna
 
 ### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

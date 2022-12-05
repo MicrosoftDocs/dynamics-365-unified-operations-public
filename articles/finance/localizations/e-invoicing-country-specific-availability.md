@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Availability of Electronic invoicing features by country or region
-description: This topic provides information about the out-of-box features that are available for each country or region.
-author: dkalyuzh
+description: This article provides information about the out-of-box features that are available for each country or region.
+author: gionoder
 ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Availability of Electronic invoicing features by country or region

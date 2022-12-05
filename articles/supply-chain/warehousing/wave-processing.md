@@ -2,9 +2,9 @@
 # required metadata
 
 title: Wave creation and processing
-description: This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
+description: This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
+This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
 
 - **Sales orders** – Use shipping waves to include lines from sales orders. When a sales order is released to the warehouse, the sales order lines can be included in the wave.
 - **Production orders** – Use production waves to include lines from the bill of materials (BOM) for a product.
@@ -65,9 +65,9 @@ To manually create a wave, follow these steps:
 1. Make sure that the relevant [Wave templates](wave-templates.md) aren't set to automatically create a wave for the warehouse and order types where you want to do so manually.
 1. Depending on the type of wave you want to create, do one of the following:
 
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. In the **Description** field, enter a short description of the wave. This should indicate what you are processing in the wave.
 
@@ -92,9 +92,9 @@ When a wave has been created but not yet released, you can manually specify what
 
 1. Depending on the type of wave to add lines to, do one of the following:
 
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave. On the Action Pane, select one of the following:
 
@@ -126,9 +126,9 @@ To manually process a wave that has all of its required content, follow these st
 
 1. Depending on the type of wave to process, do one of the following:
 
-    - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-    - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-    - Select **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+    - Select **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+    - Select **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+    - Select **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave to process. On the Action Pane, select **Process**.
 
@@ -146,9 +146,9 @@ To release a wave manually, follow these steps:
 
 1. Depending on the type of wave to release, do one of the following:
 
-      - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-      - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-      - Select **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+      - Select **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+      - Select **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+      - Select **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave to release. On the Action Pane, select **Release wave**.
 
@@ -184,9 +184,9 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 
 1. Depending on the type of wave to cancel, do one of the following:
 
-      - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**.
-      - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**.
-      - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**.
+      - Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**.
+      - Go to **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**.
+      - Go to **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**.
 
 1. Select the wave to cancel. On the Action Pane, on the **Work** tab, select **Cancel**.
 
@@ -196,7 +196,7 @@ Use the **Wave batch job details** page to inspect the batch jobs and related ta
 
 ### Turn the Wave batch job details page on or off
 
-As of Supply Chain Management version 10.0.25, the **Wave batch job details** page is turned on by default. Admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 

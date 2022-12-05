@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create charges codes
-description: This topic explains how to configure charges codes for both Accounts payable and Accounts receivable. 
+description: This article explains how to configure charges codes for both Accounts payable and Accounts receivable. 
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create charges codes
 
-This topic explains how to configure charges codes for both Accounts payable and Accounts receivable. If your organization requires that sales amounts or purchase amounts be tracked in addition to line items on a sales order or purchase order, you can use charges codes for this purpose. For example, you pay freight and insurance on a purchase order, and these amounts are itemized separately on the purchase order. In this case, you can specify whether the amounts are posted to expense accounts or added to the cost of the items.
+This article explains how to configure charges codes for both Accounts payable and Accounts receivable. If your organization requires that sales amounts or purchase amounts be tracked in addition to line items on a sales order or purchase order, you can use charges codes for this purpose. For example, you pay freight and insurance on a purchase order, and these amounts are itemized separately on the purchase order. In this case, you can specify whether the amounts are posted to expense accounts or added to the cost of the items.
 
 ## Set up charges codes for Accounts receivable
 

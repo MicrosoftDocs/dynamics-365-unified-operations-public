@@ -1,38 +1,28 @@
 ---
 title: Extend, customize, and collaborate on the Help (contains video)
-description: This topic provides tips and tricks for working with the GitHub repos and Markdown files for Finance and Operations apps.
+description: This article provides tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
+ms.date: 11/03/2022
 ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.date: 05/11/2020
-ms.author: edupont
 ---
 
-# Extend, customize, and collaborate on the Help
+# Extend and collaborate on the Help
 
-The source files for the Microsoft Help for Finance and Operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This topic explains how to work with the GitHub repos and Markdown files.
+The source files for the Microsoft Help for finance and operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This article explains how to work with the GitHub repos and Markdown files.
 
 For information about how to create Markdown files in GitHub repos, see the [Docs contributor guide](/contribute/). For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).
 
 ## Contribute to the content
 
-One benefit of GitHub is that you can contribute to the core content that the Microsoft team provides in the [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo. For example, you have a new topic that you think will be helpful to other users, or you have a correction to an existing topic. If you want to contribute to the Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include your changes as appropriate.
+One benefit of GitHub is that you can contribute to the core content that the Microsoft team provides in the [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo. For example, you have a new article that you think will be helpful to other users, or you have a correction to an existing article. If you want to contribute to the Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include your changes as appropriate.
 
-You can also contribute and make edits to the existing documentation. To get started, select the **Edit** button (pencil symbol) in a topic. The following video shows how you can contribute to the Microsoft documentation.
+You can also contribute and make edits to the existing documentation. To get started, select the **Edit** button (pencil symbol) in a article. The following video shows how you can contribute to the Microsoft documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -45,11 +35,8 @@ Microsoft uses separate repos in GitHub for the source content and for each lang
 
 When Microsoft publishes an update to the content, the *main* branch in the corresponding GitHub repo is updated. The source repo is updated weekly. However, the related language-specific repos are updated less often. The frequency depends on when new translations are made available. If you fork one of the Microsoft repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less often, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you change files that Microsoft has also changed. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs authoring guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.
 
-> [!IMPORTANT]
-> In April 2021, the default branch in the public source repo has been renamed from *live* to *main*. If you have any scripts that rely on the *live* branch, please update them to rely on *main* instead. The default branches in the language-specific repos will be renamed later.
-
 > [!TIP]
-> If you just want to get the Microsoft content as it is, you don't have to be familiar with GitHub. For more information, see the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section of this topic. However, if you want to extend or customize the Microsoft content, we recommend that you join Microsoft on GitHub.
+> If you just want to get the Microsoft content as it is, you don't have to be familiar with GitHub. For more information, see the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section of this article. However, if you want to extend or customize the Microsoft content, we recommend that you join Microsoft on GitHub.
 
 <!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 
@@ -63,7 +50,7 @@ To join Microsoft in the world of GitHub and Markdown, you must be familiar with
 
 2. Fork the appropriate repo.
 
-    To extend and customize Microsoft content for a custom Help solution, you must create a fork of the repo. If you want to customize Microsoft content in Markdown format, we recommend that you manually fork the relevant repo and use your favorite Markdown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
+    If you want to supplement Microsoft's content, then you do not need a fork of our repo. If you will customize Microsoft content using the MarkDown format, we recommend that you manually fork the relevant repo and use your favorite MarkDown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
 
     > [!TIP]
     > You aren't required to make your GitHub repos public. When you fork a public repo, in the settings for the new repo, you can specify whether the repo is public, private, or available only to specific GitHub accounts.
@@ -107,3 +94,4 @@ You can use the [Dynamics 365 Translation Service](../lifecycle-services/transla
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

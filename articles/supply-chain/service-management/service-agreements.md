@@ -93,7 +93,7 @@ service work. The lines contain the following settings:
 -  Whether a line is stopped. If a line is stopped, you cannot create service orders for that individual line.
 -  Project settings, such as the category and the line property.
 
-## Related topics
+## Related articles
 
 [Create service agreements](create-service-agreements.md)
 

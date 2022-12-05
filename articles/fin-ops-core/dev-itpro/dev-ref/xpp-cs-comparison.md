@@ -1,12 +1,12 @@
 ---
 title: X++ and C# comparison
-description: This topic compares X++ and C# syntax and programming.
-author: RobinARH
+description: This article compares X++ and C# syntax and programming.
+author: josaw1
 ms.date: 04/10/2020
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic compares X++ and C# syntax and programming.
+This article compares X++ and C# syntax and programming.
 
 ## X++, C# Comparison: Hello World
 
@@ -640,7 +640,7 @@ The output from the C# program to the command line console is as follows:
 The **container** is a special data type that is available in X++. It can be considered as similar to an array, or similar to a `List` collection.
 
 ## Comparison: Collections
-In a Finance and Operations application, you can use the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
+In a finance and operations application, you can use the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
 
 ### Comparing the Use of the List Classes
 
@@ -783,7 +783,7 @@ listStrings.InsertRange(listStrings.Count ,listStr3);
 
 ## Comparison: Collections of keys with values
 
-In a Finance and Operations application, you can use the `Map` collection class. The `Map` collection holds pairs of values, the key value plus a data value. This resembles the .NET Framework class named `System.Collections.Generic.Dictionary`.
+In a finance and operations application, you can use the `Map` collection class. The `Map` collection holds pairs of values, the key value plus a data value. This resembles the .NET Framework class named `System.Collections.Generic.Dictionary`.
 
 ### Similarities
 
@@ -1630,3 +1630,4 @@ The following table lists other differences of the **select** statement between 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

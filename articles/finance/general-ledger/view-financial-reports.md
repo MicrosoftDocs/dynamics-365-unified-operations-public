@@ -2,9 +2,9 @@
 # required metadata
 
 title: View financial reports
-description: This topic describes how to view and explore financial reports in Microsoft Dynamics 365 Finance. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+description: This article describes how to view and explore financial reports in Microsoft Dynamics 365 Finance. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to view and explore financial reports. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+This article describes how to view and explore financial reports. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
 ## Financial reporting overview
 
 ## Open a financial report
-To open a report, select the report name. The first time that a report is opened, it’s automatically generated for the previous month. For example, if you open a report for the first time in August 2015, the report is generated for July 31, 2015. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
+To open a report, select the report name. The first time that a report is opened, it’s automatically generated for the previous month. For example, if you open a report for the first time in August 2020, the report is generated for July 31, 2020. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
 
 ## Drill down on a financial report
 Financial reports can include multiple levels of detail. The financial level is the first level that you see when you open a financial report. To go to the account level, select the data to drill down on. For example, to view the account details for sales, select the sales data that you want to explore. From the account level, you can drill down to view the transactions that make up the account balance. There are two ways to view transactions: report transactions and voucher transactions.
@@ -50,12 +50,12 @@ You can apply attribute and dimension filters, or change the budget scenario on 
 
 -   To apply attribute filters to a report, select **Add an attribute filter**. Select the attribute, type the attribute value, and then click **OK**. For example, if you select the **Account Category** attribute, enter **SALES** as the attribute value. To remove an attribute filter, click **Clear**.
 -   To apply dimension filters to a report, select **Add a dimension filter**. Select the dimension, and then either type the dimension ID or select the dimension in the list. To remove a dimension filter, click **Clear**.
--   To change the scenario on an **Actual versus budget** report, select a new scenario, and then click **OK**. If the selected scenario is for a different fiscal year, there will not be any results returned. For example, if a report is generated for FY2015 and the current scenario is for FY2015 and the new scenario selected is for FY2016, no results will be returned. If a new scenario for a different fiscal year is needed, generate a new version of the report for the fiscal year related to the scenario.
+-   To change the scenario on an **Actual versus budget** report, select a new scenario, and then click **OK**. If the selected scenario is for a different fiscal year, there will not be any results returned. For example, if a report is generated for FY2015 and the current scenario is for FY2020 and the new scenario selected is for FY2016, no results will be returned. If a new scenario for a different fiscal year is needed, generate a new version of the report for the fiscal year related to the scenario.
 
 When you click **OK**, all the options that you selected are applied to the report. If you decide that you don't want to apply the selected options, click **Cancel**.
 
 ## Update a financial report
-You can refresh (update) a financial report so that it shows the most recent data for the period and year that the report was generated for. For example, if you update a financial report that was generated for October 2015, the report reflects any new transactions that have been posted for October 2015. To update a financial report, on the Action Pane, click **Refresh**. An updated report is available only to the person who updated it. In order for other people to see the same data, the report must be published.
+You can refresh (update) a financial report so that it shows the most recent data for the period and year that the report was generated for. For example, if you update a financial report that was generated for October 2020, the report reflects any new transactions that have been posted for October 2020. To update a financial report, on the Action Pane, click **Refresh**. An updated report is available only to the person who updated it. In order for other people to see the same data, the report must be published.
 
 ## Publish a financial report
 After you update a financial report, you can publish it. Other people in the organization will then be able to view it. To publish a report, on the Action Pane, click **Publish**.

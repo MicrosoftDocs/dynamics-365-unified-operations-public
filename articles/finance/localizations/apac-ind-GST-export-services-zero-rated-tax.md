@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export services that have zero-rated tax
-description: This topic explains how to export services that have zero-rated tax.
+description: This article explains how to export services that have zero-rated tax.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../includes/banner.md)]
 
-Complete the procedures in this topic to export services that have zero-rated tax.
+Complete the procedures in this article to export services that have zero-rated tax.
 
 1. Go to **General journal** \> **Journals** \> **Invoices** \> **General journal**.
 2. Create a journal.

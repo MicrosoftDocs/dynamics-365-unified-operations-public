@@ -1,6 +1,6 @@
 ---
 title: Product configuration model calculations
-description: This topic describes how to create calculations for attributes in a product configuration model
+description: This article describes how to create calculations for attributes in a product configuration model
 author: t-benebo
 ms.date: 03/18/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create calculations for attributes in a product configuration model.
+This article describes how to create calculations for attributes in a product configuration model.
 
 ## Prerequisites
 

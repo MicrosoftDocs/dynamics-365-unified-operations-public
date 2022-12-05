@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recommended practices for posting profiles
-description: This topic describes recommended practices for configuring posting profiles.
+description: This article describes recommended practices for configuring posting profiles.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Recommended practices for posting profiles
 
-There are several recommended practices that you should follow when you configure posting profiles throughout the system. This topic describes different scenarios and the corresponding recommended practices.
+There are several recommended practices that you should follow when you configure posting profiles throughout the system. This article describes different scenarios and the corresponding recommended practices.
 
 ## Setting the Do not allow manual entry flag
 

@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Work with CSS override files
-description: This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
+description: This article describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.search.industry: 
+ms.search.form: 
 ---
 # Work with CSS override files
 
 [!include [banner](includes/banner.md)]
 
-This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
+This article describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 
 Permanent site styles should usually be handled through a site's theme. Themes provide the foundational CSS and style settings for the modules on any page of your site. Themes are created by using the Dynamics 365 Commerce online software development kit (SDK), and they are deployed to your websites through Microsoft Dynamics Lifecycle Services (LCS). Theme debugging capabilities and module interface configurations in the SDK help site developers create customizable and cohesive site design packages. When these design packages are deployed to a site, site authors can focus on creating, editing, and publishing content instead of site development.
 

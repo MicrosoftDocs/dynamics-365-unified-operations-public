@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts payable in the public sector overview
-description: This topic explains the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. T
+description: This article explains the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. T
 author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the public sector functionality for Accounts payable that's integrated with Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
+This article describes the public sector functionality for Accounts payable that's integrated with Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 
 ## What are the prerequisites for setting up Accounts payable in the public sector?
 

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up sales tax codes
-description: This topic explains how to set up sales tax codes in Dynamics 365 Finance. 
+description: This article explains how to set up sales tax codes in Dynamics 365 Finance. 
 author: twheeloc
 ms.date: 09/27/2021
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up sales tax codes. Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.
+This article explains how to set up sales tax codes. Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.
 
 This task uses the USMF demo company.
 

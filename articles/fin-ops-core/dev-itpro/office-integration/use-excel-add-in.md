@@ -2,7 +2,7 @@
 # required metadata
 
 title: View and update entity data with Excel 
-description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
+description: This article explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
 author: jasongre
 ms.date: 05/16/2022
 ms.topic: article
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
+This article explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or finance and operations apps.
 
 By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016 or later.
 
@@ -46,15 +46,15 @@ By opening entity data in Excel, you can quickly and easily view and edit the da
 
 To learn more about how to use the Excel add-in, watch the short [Create an Excel template for header and line patterns](https://youtu.be/RTicLb-6dbI) video.
 
-## Open entity data in Excel when you start from a Finance and Operations app
-1. On a page in a Finance and Operations app, select **Open in Microsoft Office**.
+## Open entity data in Excel when you start from a finance and operations app
+1. On a page in a finance and operations app, select **Open in Microsoft Office**.
 
     If the root data source (table) for the page is the same as the root data source for any entities, default **Open in Excel** options are generated for the page. **Open in Excel** options can be found on frequently used pages, such as **All vendors** and **All customers**.
  
 2. Select an **Open in Excel** option, and open the workbook that is generated. This workbook has binding information for the entity, a pointer to your environment, and a pointer to the Excel add-in.
 3. In Excel, select **Enable editing** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. If you're running the Excel add-in for the first time, select **Trust this Add-in**.
-5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the Finance and Operations app. The Excel add-in will use a previous sign-in context from the browser and automatically sign you in, if it can. (For information about the browser that is used based on the operating system, see [Browsers used by Office add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). To ensure that sign-in was successful, verify the user name in the upper-right corner of the Excel add-in. 
+5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the finance and operations app. The Excel add-in will use a previous sign-in context from the browser and automatically sign you in, if it can. (For information about the browser that is used based on the operating system, see [Browsers used by Office add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). To ensure that sign-in was successful, verify the user name in the upper-right corner of the Excel add-in. 
 
 The Excel add-in automatically reads the data for the entity that you selected. Note that there will be no data in the workbook until the Excel add-in reads it in.
 
@@ -63,7 +63,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 2. In the Office Store, search on the keyword **Dynamics**, and then select **Add** next to **Microsoft Dynamics Office Add-in** (the Excel add-in).
 3. If you're running the Excel add-in for the first time, select **Trust this Add-in** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. Select **Add server information** to open the **Options** pane.
-5. In your browser, copy the URL of your target Finance and Operations app instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have only the host name.
+5. In your browser, copy the URL of your target finance and operations app instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have only the host name.
 
     For example, if the URL is `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, delete everything except `https://xxx.dynamics.com`.
 
@@ -82,7 +82,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 After the Excel add-in reads entity data into the workbook, you can update the data at any time by selecting **Refresh** in the Excel add-in.
 
 ## Edit entity data in Excel
-You can change entity data as you require and then publish it back to Finance and Operations apps by selecting **Publish** in the Excel add-in. To edit a record, select a cell in the worksheet, and then change the cell value. To add a new record, follow one of these steps:
+You can change entity data as you require and then publish it back to finance and operations apps by selecting **Publish** in the Excel add-in. To edit a record, select a cell in the worksheet, and then change the cell value. To add a new record, follow one of these steps:
 
 - Click anywhere in the data sources table, and then select **New** in the Excel add-in.
 - Click anywhere in the last row of the data sources table, and then press the Tab key until the cursor moves out of the last column of that row and a new row is created.
@@ -152,3 +152,4 @@ There are a few issues that can be resolved through some easy steps.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

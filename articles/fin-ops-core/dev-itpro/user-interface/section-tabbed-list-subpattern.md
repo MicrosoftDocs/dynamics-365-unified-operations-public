@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Section Tabbed List subpattern
 description: This article provides information about the Section Tabbed List subpattern.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29291
-ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29291
+ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
 ---
 
 # Section Tabbed List subpattern

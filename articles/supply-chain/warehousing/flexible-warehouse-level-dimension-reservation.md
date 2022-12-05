@@ -2,9 +2,9 @@
 # required metadata
 
 title: Flexible warehouse-level dimension reservation policy
-description: This topic describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
+description: This article describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-When an inventory reservation hierarchy of the *Batch-below\[location\]* type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the Microsoft Dynamics 365 Warehouse Management System (WMS) can't reserve specific batches of those products for customer sales orders.
+When an inventory reservation hierarchy of the *Batch-below\[location\]* type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the warehouse management processes (WMS) can't reserve specific batches of those products for customer sales orders.
 
 In a similar way, specific license plates can't be reserved for products on sales orders when those products are associated with the default reservation hierarchy.
 
-This topic describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
+This article describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
 
 ## Inventory reservation hierarchy
 
@@ -203,12 +203,12 @@ In this scenario, a company uses warehouse management and work processing, and h
 - A license plate can be recorded and reserved when the order is taken by the sales processor, and it can't be taken by other demands. This behavior helps guarantee that the license plate that was planned is shipped to the customer.
 - If the license plate isn't already assigned to a sales order line, warehouse personnel can select a license plate during picking work, after sales order registration and reservation are completed.
 
-### Turn on flexible license plate reservation
+### Turn flexible license plate reservation on or off
 
-Before you can use flexible license plate reservation, two features must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
+Before you can use flexible license plate reservation, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
 
-1. **Feature name:** *Flexible warehouse-level dimension reservation*
-1. **Feature name:** *Flexible order-committed license plate reservation*
+1. *Flexible warehouse-level dimension reservation*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Flexible order-committed license plate reservation*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
 
 ### Reserve a specific license plate on the sales order
 

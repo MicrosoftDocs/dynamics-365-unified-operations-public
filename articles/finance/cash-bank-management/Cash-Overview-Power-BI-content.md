@@ -2,8 +2,8 @@
 # required metadata
 
 title: Cash overview Power BI content
-description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
-author: panolte
+description: This article describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
+author: angelad116
 ms.date: 07/16/2020
 ms.topic: overview
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: July 2017 update 
 ---
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Cash overview** Microsoft Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
+This article describes the **Cash overview** Microsoft Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
 
 ## Overview
 

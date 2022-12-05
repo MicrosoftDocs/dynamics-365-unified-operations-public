@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Development in cloud-hosted environments without admin access
-description: This topic demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
-author: mugunthanm 
+description: This article demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
+author: josaw1
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 # Development in cloud-hosted environments without admin access
 
 [!include [banner](../../includes/banner.md)]
 
-As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, you will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running Microsoft subscriptions and you will not be able to deploy Tier 1 environment using a Microsoft subscription.
+As of Microsoft Dynamics 365 Finance, Enterprise edition, Platform update 12, you will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running Microsoft subscriptions and you will not be able to deploy Tier 1 environment using a Microsoft subscription.
 
 You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. For more information about environments that don't allow administrator access, see [Development and build VMs that don't allow administrator access FAQ](../../fin-ops-core/dev-itpro/sysadmin/vms-no-admin-access.md).
 

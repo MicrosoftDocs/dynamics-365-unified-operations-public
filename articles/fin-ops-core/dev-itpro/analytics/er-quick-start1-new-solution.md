@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Design a new ER solution to print a custom report
-description: This topic explains how to design an Electronic reporting (ER) solution to print a custom report.
-author: NickSelin
+description: This article explains how to design an Electronic reporting (ER) solution to print a custom report.
+author: kfend
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["220314", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314,  ""intro-internal
+ms.assetid: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 ---
 
 # Design a new ER solution to print a custom report
@@ -292,7 +282,7 @@ The status of version 1 of this configuration is changed from **Draft** to **Com
 
 ![Versions of the editable configuration on the Configurations page.](./media/er-quick-start1-model-configuration.png)
 
-For more information about versioning for ER configurations, see [Electronic reporting (ER) overview](general-electronic-reporting.md#component-versioning).
+For more information about versioning for ER configurations, see [Electronic reporting (ER) overview](general-electronic-reporting.md).
 
 > [!NOTE]
 > The configured data model is your abstract representation of the **Questionnaire** business domain and contains no relations to artefacts that are specific to Microsoft Dynamics 365 Finance.

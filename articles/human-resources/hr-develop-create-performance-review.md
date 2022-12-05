@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create performance reviews
-description: This topic explains how to create a performance review and describes the purpose for each section of the review. 
+description: This article explains how to create a performance review and describes the purpose for each section of the review. 
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: business-process 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-This topic explains how to create a performance review and describes the purpose for each section of the review. This procedure was created using the USMF demo data company.
+This article explains how to create a performance review and describes the purpose for each section of the review. This procedure was created using the USMF demo data company.
 
 1. On the home page, select the **Employee self service** workspace.
 2. Select **New review** to create a new review.

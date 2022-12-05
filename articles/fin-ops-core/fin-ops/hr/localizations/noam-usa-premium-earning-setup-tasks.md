@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up premium earnings
-description: This topic provides information about premium earnings and how to set them up.
-author: andreabichsel
+description: This article provides information about premium earnings and how to set them up.
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarni
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221084
 ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
+This article provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
 
-To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md). Other premiums are based on other earnings, or on characteristics of the worker or position. This topic explains how to set up the more complex types of premiums that are supported.
+To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md). Other premiums are based on other earnings, or on characteristics of the worker or position. This article explains how to set up the more complex types of premiums that are supported.
 
 ## Prerequisites
 

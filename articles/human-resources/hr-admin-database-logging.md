@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can track changes to tables and fields in Dynamics 365 Human Resources with database logging. This topic describes how to:
+You can track changes to tables and fields in Dynamics 365 Human Resources with database logging. This article describes how to:
 
 - Manage security and performance for database logging
 - Set up database logging

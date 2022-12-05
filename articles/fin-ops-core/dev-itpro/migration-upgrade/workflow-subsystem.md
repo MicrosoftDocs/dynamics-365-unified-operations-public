@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Workflow subsystem updates in Finance and Operations
-description: This topic reviews the workflow system in Finance and Operations.
+title: Workflow subsystem updates in finance and operations
+description: This article reviews the workflow system in finance and operations.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -27,15 +27,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Workflow subsystem updates in Finance and Operations
+# Workflow subsystem updates in finance and operations
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews the workflow system in Finance and Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
+This article reviews the workflow system in finance and operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 
-The workflow system in Finance and Operations will be familiar to you if you've used Dynamics AX 2012. For more information about the workflow subsystem in Dynamics AX 2012, see the following topics.
+The workflow system in finance and operations will be familiar to you if you've used Dynamics AX 2012. For more information about the workflow subsystem in Dynamics AX 2012, see the following topics.
 
-| To learn about this subject | See this topic                                             |
+| To learn about this subject | See this article                                             |
 |-----------------------------|------------------------------------------------------------|
 | The workflow system         | <https://technet.microsoft.com/library/dd309672.aspx> |
 | Workflow types by module    | <https://technet.microsoft.com/library/dd362043.aspx> |
@@ -47,10 +47,10 @@ The workflow system in Finance and Operations will be familiar to you if you've 
 | Implementing a workflow     | <https://msdn.microsoft.com/library/cc585061.aspx>    |
 
 ## Primary changes to the workflow system
-Here are the primary changes that have been implemented in Finance and Operations:
+Here are the primary changes that have been implemented in finance and operations:
 
 -   Integration with the new Application State Machine feature enables workflow events to be bound to state transitions on the underlying entity's state machine. This binding enables business logic to be centralized within the state machine and also enables the workflow system to be a declarative consumer of that state machine. The workflow metadata can reference a state transition that is performed when a specific workflow event occurs. Therefore, you can do state transitions within a workflow without writing any additional code.
--   The workflow editor is now a program that you click one time to download. The editor communicates with Finance and Operations by using services, which means that you can carry forward the rich, graphical workflow design experience from Dynamics AX 2012.
+-   The workflow editor is now a program that you click one time to download. The editor communicates with finance and operations by using services, which means that you can carry forward the rich, graphical workflow design experience from Dynamics AX 2012.
 -   Workflow development wizards have been ported into Microsoft Visual Studio.
 
 

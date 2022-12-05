@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Design a configuration for generating documents in Excel format
-description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
-author: NickSelin
+description: This article describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
+author: kfend
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner, ERParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner, ERParameters
 ---
 
 # Design a configuration for generating documents in Excel format
@@ -33,7 +23,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 You can design an [Electronic reporting (ER)](general-electronic-reporting.md) format configuration that has an ER format component that you can configure to generate an outbound document in a Microsoft Excel workbook format. Specific ER format components must be used for this purpose.
 
-To learn more about this feature, follow the steps in the topic, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
+To learn more about this feature, follow the steps in the article, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Add a new ER format
 
@@ -192,6 +182,9 @@ When a **Cell** component is configured to enter a value in an Excel picture, it
 > [!NOTE]
 > Every Excel picture and shape is considered to be anchored by its upper-left corner to a specific Excel cell or range. If you want to replicate an Excel picture or shape, you must configure the cell or range that it's anchored to as a replicated cell or range.
 
+> [!TIP]
+> If you plan to use an image with custom scaling and aspect ratio at runtime, we recommend you set the option **Respect pictures scaling** of the parent [Excel file component](#excel-file-component) to **Yes** to apply the scaling and aspect ratio as a placeholder of that image in the Excel template you are using.
+
 To learn more about how to embed images and shapes, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
 ## Page break component
@@ -268,7 +261,7 @@ For a single **Sheet** component, you can add several **Footer** components, eac
 
 Under the added **Footer** component, add the required nested components of the **Text\\String**, **Text\\DateTime**, or other type. Configure the bindings for those components to specify how your page footer is filled in.
 
-You can also use special [formatting codes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) to correctly format the content of a generated footer. To learn how to use this approach, follow the steps in [Example 1](#example-1), later in this topic.
+You can also use special [formatting codes](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) to correctly format the content of a generated footer. To learn how to use this approach, follow the steps in [Example 1](#example-1), later in this article.
 
 > [!NOTE]
 > When you configure ER formats, be sure to consider the Excel [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) and the maximum number of characters for a single header or footer.

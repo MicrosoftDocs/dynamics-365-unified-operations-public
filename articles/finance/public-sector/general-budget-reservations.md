@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: General budget reservations
-description: This topic provides information about general budget reservations for Public sector.
-author: TaylorVH
+description: This article provides information about general budget reservations for Public sector.
+author: brpotter
 ms.date: 08/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetReservation_PSN
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: Public sector
+ms.search.form: BudgetReservation_PSN
 ---
 
 # General budget reservations

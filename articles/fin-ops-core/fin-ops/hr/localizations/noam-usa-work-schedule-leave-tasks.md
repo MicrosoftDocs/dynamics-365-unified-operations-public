@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up work schedules and leave
-description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
-author: andreabichsel
+description: This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+author: twheeloc
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmLeaveType, WorkTimeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221494
 ms.assetid: 60ce2f9f-73a7-4903-89da-6af7d681cc7a

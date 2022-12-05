@@ -2,9 +2,9 @@
 # required metadata
 
 title: Warehouse location status
-description: This topic provides an overview of the Warehouse location status feature.
+description: This article provides an overview of the Warehouse location status feature.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,12 +45,9 @@ The following four fields on the **Locations** page track information about the 
     - **Picking** – Outbound transactions have been performed against the location since it was last empty.
     - **Storage** – Only inbound transactions have been performed against the location since the location was last empty.
 
-## Turn on the Warehouse location status feature
+## Turn the Warehouse location status feature on or off
 
-Before you can use the *Warehouse location status* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse location status*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Warehouse location status* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up warehouse location status
 
@@ -60,7 +57,7 @@ Before you start to work through the scenario, you must activate sample data and
 
 #### Use the USMF legal entity
 
-To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 #### Set up location profiles
 
@@ -170,7 +167,7 @@ The example scenario requires that you prepare two location profiles.
 1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field has been updated.
 
 > [!NOTE]
-> The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WHS processes, the fields won't be updated.
+> The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WMS processes, the fields won't be updated.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

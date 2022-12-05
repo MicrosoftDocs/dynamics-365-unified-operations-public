@@ -29,11 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure life event types
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Dynamics 365 Human Resources uses **Life event types** to define events where it is valid to update employee benefits enrollment, such as getting married or having a child. Each life event type ID may only be associated with one life event type. For example, if you create a **Life event ID** called **Address change** that is associated with the life event type **Employee address change**, you can’t create another ID labeled **Employee address change** and associate it with the life event type **Employee address change**. If a life event type isn't associated with a plan type, the life event type won't trigger a life event. For more information, see [Create plan types](hr-benefits-setup-plan-types.md).
 
 ## Create a life event type

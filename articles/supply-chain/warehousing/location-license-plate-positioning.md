@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -31,11 +31,11 @@ License plate location positioning lets you see where a license plate is located
 
 The feature adds a sequence number to each license plate that is put into a storage location. This sequence number is used to order the license plates in the storage location. Therefore, the feature intelligently supports scenarios where customers are using a gravity racking system and must know, for picking purposes, which license plate is front-facing.
 
-This topic presents a scenario that shows how to set up and use the feature.
+This article presents a scenario that shows how to set up and use the feature.
 
 ## Turn the Location license plate positioning feature on or off
 
-To use the functionality described in this topic, the *Location license plate positioning* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location license plate positioning* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the functionality described in this article, the *Location license plate positioning* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location license plate positioning* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Example scenario
 
@@ -45,7 +45,7 @@ To work through this scenario by using the values that are suggested here, you m
 
 ### Set up the feature for this scenario
 
-Complete the following procedures to set up the *Location license plate positioning* feature for the scenario that is presented in this topic.
+Complete the following procedures to set up the *Location license plate positioning* feature for the scenario that is presented in this article.
 
 #### Location profiles
 

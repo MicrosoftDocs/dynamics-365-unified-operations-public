@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable delayed tax calculation on journals
-description: This topic explains how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
+description: This article explains how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
 
 author: EricWang
 ms.date: 09/18/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how you can delay sales tax calculation on journals. This capability helps improve the performance of tax calculations when there are many journal lines.
+This article explains how you can delay sales tax calculation on journals. This capability helps improve the performance of tax calculations when there are many journal lines.
 
 By default, sales tax amounts on journal lines are calculated whenever tax-related fields are updated. These fields include the fields for sales tax groups and item sales tax groups. Any update to a journal line causes tax amounts to be recalculated for all journal lines. Although this behavior helps user see tax amounts calculated in real time, it can also affect performance if the number of journal lines is very large.
 

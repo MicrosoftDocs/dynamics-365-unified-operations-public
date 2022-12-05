@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Import features from the Global repository
-description: This topic explains how to import Globalization features from the Global repository.
-author: dkalyuzh
+description: This article explains how to import Globalization features from the Global repository.
+author: gionoder
 ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Import features from the Global repository

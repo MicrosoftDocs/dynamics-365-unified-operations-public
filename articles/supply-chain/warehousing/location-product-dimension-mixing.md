@@ -2,7 +2,7 @@
 # required metadata
 
 title: Location product dimension mixing
-description: This topic provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
+description: This article provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -32,7 +32,7 @@ Location product dimension mixing is location profile functionality that helps i
 
 ## Turn the Location product dimension mixing feature on or off
 
-To use the functionality described in this topic, the *Location product dimension mixing* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location product dimension mixing* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the functionality described in this article, the *Location product dimension mixing* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location product dimension mixing* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Setup
 
@@ -48,7 +48,7 @@ Every location in the warehouse needs to have a location profile associated with
     > [!NOTE]
     > You can set this option to *Yes* only if the **Allow mixed items** option is set to *No*.
 
-1. On the **Allowed product dimension mixing** FastTab, set the **Size** option to *Yes*. In the scenario that is described in this topic, mixing can be done only for products that have different **Size** dimensions. However, other options are also available.
+1. On the **Allowed product dimension mixing** FastTab, set the **Size** option to *Yes*. In the scenario that is described in this article, mixing can be done only for products that have different **Size** dimensions. However, other options are also available.
 1. Select **Save**.
 
 ### Create a new product master and product variants

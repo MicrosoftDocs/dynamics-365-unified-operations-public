@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply a payment schedule to the invoice journal
-description: This topic describes how to add a payment to the vendor invoice journal.
+description: This article describes how to add a payment to the vendor invoice journal.
 author: sunfzam
 ms.date: 01/31/2022
 ms.topic: article

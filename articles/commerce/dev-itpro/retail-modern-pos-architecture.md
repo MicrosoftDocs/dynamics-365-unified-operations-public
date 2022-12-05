@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Modern POS (MPOS) architecture
-description: This topic describes the POS topology.
-author: RobinARH
+description: This article describes the POS topology.
+author: josaw1
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 83892
-ms.assetid: 210953fb-4d5a-49e6-b4db-6f31b3472789
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 83892
+ms.assetid: 210953fb-4d5a-49e6-b4db-6f31b3472789
 ---
 
 # Modern POS (MPOS) architecture
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the POS topology.
+This article describes the POS topology.
 
 ## Modern POS topology
 

@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Inventory reports
-description: This topic provides information about the Inventory reports available for Russia.
-author: v-nadyuz
+description: This article provides information about the Inventory reports available for Russia.
+author: AdamTrukawka
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Inventory reports

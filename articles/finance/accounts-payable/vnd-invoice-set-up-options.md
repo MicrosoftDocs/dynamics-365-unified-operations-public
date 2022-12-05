@@ -2,7 +2,7 @@
 # required metadata
 
 title: Setup options for vendor invoice automation (Preview)
-description: This topic describes the options that are available for setting up and configuring vendor invoice automation.
+description: This article describes the options that are available for setting up and configuring vendor invoice automation.
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the options that are available for setting up and configuring vendor invoice automation. Invoice automation features use the following types of setup parameters:
+This article describes the options that are available for setting up and configuring vendor invoice automation. Invoice automation features use the following types of setup parameters:
 
 - Parameters for automatically applying prepayments in imported invoices.
 - Parameters for submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.

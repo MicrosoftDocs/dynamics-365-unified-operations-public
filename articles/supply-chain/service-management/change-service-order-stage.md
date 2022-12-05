@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Select the service order, and then click the **Dispatch** tab.
 

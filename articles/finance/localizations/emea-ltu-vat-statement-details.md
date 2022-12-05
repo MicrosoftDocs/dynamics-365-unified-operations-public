@@ -1,38 +1,28 @@
 ---
-# required metadata
-
 title: VAT statement details for Lithuania
-description: This topic explains how to set up a VAT statement for legal entities in Lithuania.
-author: ShylaThompson
+description: This article explains how to set up a VAT statement for legal entities in Lithuania.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266884
 ms.search.region: Lithuania
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 266884
+ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 ---
 
 # VAT statement details for Lithuania
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up a VAT statement for legal entities in Lithuania.
+This article explains how to set up a VAT statement for legal entities in Lithuania.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
+This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for sales tax codes.

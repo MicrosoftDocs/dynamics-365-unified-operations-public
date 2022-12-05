@@ -2,9 +2,9 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
+description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,10 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps. 
+Keyboard shortcuts can help you quickly and efficiently enter data in finance and operations apps. 
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
@@ -55,7 +56,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Close a tab on the Action Pane or a menu        | Esc                              |
 | Simulate a right-click                          | Shift+F10                        |
 | Open the context menu    | Ctrl+F10                         |
-| Execute the default button on a form/dialog box | Alt+Enter                        |
+| Execute the default button on a page/dialog box | Alt+Enter                        |
 | Click a button or tile                          | Enter or Space                   |
 | View refresh information for a count tile       | Alt+Up arrow                     |
 | View currently available shortcuts              | Alt+Shift+K                      |
@@ -90,11 +91,13 @@ Users can discover currently available shortcuts directly from the user interfac
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Open grid filtering for the current column                                                                          | Ctrl+G                   |
 | Close grid filtering for the current column                                                                         | Esc                      |
-| Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
+| Open the Filter pane (or switch focus between the Filter pane and the main page if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
 | Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
 | Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            |
+| Apply the Quick Filter (when focus is in Quick Filter)                                                              | Enter                    |
+| Apply the grid filter (when focus is in the filter field of the column header)                                             | Enter                    |
 
-## Form shortcuts
+## Page shortcuts
 
 | To do this                                    | Press             |
 |-----------------------------------------------|-------------------|
@@ -103,7 +106,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Save record                                   | Alt+S or Ctrl+S   |
 | Revert (restore)                              | Ctrl+Shift+F5     |
 | Data refresh                                  | Shift+F5          |
-| Move to the visible first field on the form   | Alt+Shift+F       |
+| Move to the visible first field on the page   | Alt+Shift+F       |
 | Toggle edit mode                              | F2                |
 | Attach a document                             | Ctrl+Shift+A      |
 | Export to Excel                               | Ctrl+Shift+E      |
@@ -111,11 +114,11 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next record (outside a grid)      | Ctrl+Down arrow   |
 | Move to the first record (outside a grid)     | Ctrl+Home         |
 | Move to the last record (outside a grid)      | Ctrl+End          |
-| Close the form (click Back)                   | Esc               |
-| Close the form with explicit save             | Shift+Esc         |
-| Close the form discarding any unsaved changes | Alt+Shift+Q       |
+| Close the page (select the Back button)<br><br>**Note:** If there is a popup window (tooltip, date picker, dropdown, etc.) open, the first use of Esc will dismiss the popup.       | Esc               |
+| Close the page with explicit save             | Shift+Esc         |
+| Close the page discarding any unsaved changes | Alt+Shift+Q       |
 
-## Form navigation shortcuts
+## Page navigation shortcuts
 
 | To do this                                          | Press                                        |
 |-----------------------------------------------------|----------------------------------------------|
@@ -141,10 +144,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
-| Move to the next/previous row without selecting<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote> | Ctrl+Up arrow / Ctrl+Down arrow |
-| Select/clear the current row<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>                    | Ctrl+Space / Ctrl+Click         |
-| Add the next/previous row to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>   | Shift+Space                     |
-| Add a range of rows to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>         | Shift+Click                     |
+| Move to the next/previous row without selecting<br><br>**Note:** This shortcut applies to multi-select scenarios only. | Ctrl+Up arrow / Ctrl+Down arrow |
+| Select/clear the current row<br><br>**Note:** This shortcut applies to multi-select scenarios only.                   | Ctrl+Space / Ctrl+Click         |
+| Add the next/previous row to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.  | Shift+Space                     |
+| Add a range of rows to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
 | Go to the next/previous page of data                                                                                   | Page up / Page down             |
 | Create a new row at the bottom of the grid                                                                             | Down arrow (from the last row)  |
 | Move to the first record                                                                                               | Ctrl+Home                       |
@@ -154,7 +157,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next marked row                                                                                            | Alt+Shift+M, L                  |
 | Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
 | Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
-| Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
+| Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks. | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
 | Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
@@ -166,9 +169,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
+| Open the hyperlink (when focus is on a read-only control)<br><br>**Note:** This shortcut only applies when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled                   | Enter    |
 | Enter the session date in a date field                                       | D                             |
 | Enter the current date in a date field                                       | T                             |
-| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
+| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow<br><br>Enter (when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled)                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
 | Open the control's enhanced preview                                          | Alt+Up arrow                  |
@@ -194,15 +198,16 @@ Users can discover currently available shortcuts directly from the user interfac
 | Open the help pane                                                            | Ctrl+?                     |
 | Open the trace parser                                                         | Alt+Shift+T                |
 | Move to the navigation pane                                                   | Alt+F1                     |
-| Add/remove form as a favorite (with focus on a form in the navigation pane)   | Shift+F                    |
+| Add/remove page as a favorite (with focus on a page in the navigation pane)   | Shift+F                    |
 | Move to the standard Action Pane                                              | Alt+M,A or Ctrl+F6         |
 | Move to the Filter pane (which may include opening it)                        | Alt+M,F or Ctrl+F3         |
 | Move focus to the page content (with focus in the Filter pane)                | Alt+M,M or Ctrl+F3         |
-| Move to the navigation list on Details form (which may include opening it)    | Alt+M,S or Ctrl+F8         |
+| Move to the navigation list (which may include opening it)    | Alt+M,S or Ctrl+F8         |
 | Move focus to the page content (with focus in the navigation list)            | Alt+M,M or Ctrl+F8         |
-| Close the navigation list on Details form (with focus in the navigation list) | Esc                        |
+| Close the navigation list (with focus in the navigation list) | Esc                        |
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
+| Move to the next feature callout                                              | Alt+M,C                    |
 
 > [!NOTE]
 > The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
@@ -265,13 +270,14 @@ Users can discover currently available shortcuts directly from the user interfac
 | Show more/less information in the animated pop-up prompt (while playing a task guide) | Alt+R,M                    |
 
 ## Focus management 
-Focus management describes how user focus is handled in an application. Finance and Operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. Focus behaviors include the following:  
+Focus management describes how user focus is handled in an application. Finance and operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. Focus behaviors include the following:  
 
 -  When a page is loaded, the first editable input control on the page will have focus and can accept user input immediately. If there is no editable input control on the page, the fallback option for initial focus is the first input control on the page followed by the first, focusable control on the page.   
--  Typically when a button is selected, the action is processed and focus may return to the page. When this happens, focus tends to return to the button control that was selected. This is true in Finance and Operations apps **except** when the button is located in the Action Pane or on a toolbar. In these cases, when the action completes, focus returns to the last control *outside* of the Action Pane (or toolbar) that had focus before the button was selected.
+-  Typically when a button is selected, the action is processed and focus may return to the page. When this happens, focus tends to return to the button control that was selected. This is true in finance and operations apps **except** when the button is located in the Action Pane or on a toolbar. In these cases, when the action completes, focus returns to the last control *outside* of the Action Pane (or toolbar) that had focus before the button was selected.
 
 ## Additional resources
 
 [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

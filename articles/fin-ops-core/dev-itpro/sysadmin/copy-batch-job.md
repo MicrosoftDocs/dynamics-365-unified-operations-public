@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy a batch job
-description: This topic provides information about copying a batch job and batch tasks.
+description: This article provides information about copying a batch job and batch tasks.
 author: Peakerbl
 ms.date: 10/25/2018
 ms.topic: article

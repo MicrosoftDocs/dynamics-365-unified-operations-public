@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process guide framework
-description: This topic provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
+description: This article provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the process guide framework for developers who are extending the warehouse mobile processes in X++. The warehouse mobile processes are extensible as a result of the processes being broken into small steps. The business logic and user interface building of each step has been extracted into individual classes, which allows for extensibility.
+This article provides information about the process guide framework for developers who are extending the warehouse mobile processes in X++. The warehouse mobile processes are extensible as a result of the processes being broken into small steps. The business logic and user interface building of each step has been extracted into individual classes, which allows for extensibility.
 
 ## Overview of the existing design
 
@@ -333,7 +333,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> You can find the same source code for the X++ methods in this topic by using the Application Explorer. Filter on the class name, and then right-click the class name and select **View code**.
+> You can find the same source code for the X++ methods in this article by using the Application Explorer. Filter on the class name, and then right-click the class name and select **View code**.
 
 ### Step 3: Start the production order
 
@@ -433,7 +433,7 @@ In doing so, it asks the step to create an action class for the passed name and 
 
 ### Summary
 
-To summarize everything that's been explained in this topic, here's a comprehensive summary of the code needed for the process:
+To summarize everything that's been explained in this article, here's a comprehensive summary of the code needed for the process:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -582,7 +582,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
         ```
 
         > [!NOTE]
-        > The **generateItemInfoForProdId()** method, which is used for generating the item information labels, is excluded from this topic. This method queries a few tables to get item ID, description, and dimensions. If you want a better understanding of **generateItemInfoForProdId()**, look at the source code.
+        > The **generateItemInfoForProdId()** method, which is used for generating the item information labels, is excluded from this article. This method queries a few tables to get item ID, description, and dimensions. If you want a better understanding of **generateItemInfoForProdId()**, look at the source code.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -618,7 +618,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
 
 ### Extending a business process
 
-So far, this topic has highlighted how to build a new process using the **ProcessGuide** framework. In this final section, you will find some examples of how this business process can be extended.
+So far, this article has highlighted how to build a new process using the **ProcessGuide** framework. In this final section, you will find some examples of how this business process can be extended.
 
 ### Add a step in a flow (using ProcessGuideNavigationAgentDefault)
 

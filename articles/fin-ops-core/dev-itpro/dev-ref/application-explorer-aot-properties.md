@@ -1,12 +1,12 @@
 ---
 title: Application Explorer properties
-description: This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
-author: RobinARH
+description: This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
+author: josaw1
 ms.date: 11/03/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
+This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 
 Many nodes in Application Explorer represent elements that have properties associated with them. You can read or modify these properties in the **Properties** window of Microsoft Visual Studio.
 
@@ -821,7 +821,7 @@ The following properties are related to report models that are used to add infor
 <li>The minimum date-time isn&#39;t acceptable for date-time fields such as date and utcdatetime.</li>
 <li>A value of 0 (zero) isn&#39;t acceptable for numeric fields such as int, real, and enum.</li>
 </ul>
-Finance and Operations doesn&#39;t support the semantics for the <strong>null</strong> value that is standard in most SQL database products. Field can&#39;t be nulled in the database. Therefore, the <strong>Mandatory</strong> property has nothing to do with the concept of a <strong>null</strong> value. <strong>Caution:</strong> A mandatory table field can have its <strong>EnumType</strong> property set to an enumeration. You might define a field as an enum type that includes an item that has the integer value <strong>0</strong>. In this case, <strong>0</strong> isn&#39;t an item that&#39;s available for selection on the page. The forms system automatically calls the <strong>validateWrite</strong> method to enforce the setting of the <strong>Mandatory</strong> property. However, the <strong>Mandatory</strong> property has no effect on the behavior of direct X++ SQL that inserts or updates the value of a table field. In your direct X++ SQL, you can include calls to the <strong>validateWrite</strong> method on your table buffer variable. Your buffer variable inherits the method from the <strong>xRecord</strong> class.</td>
+finance and operations doesn&#39;t support the semantics for the <strong>null</strong> value that is standard in most SQL database products. Field can&#39;t be nulled in the database. Therefore, the <strong>Mandatory</strong> property has nothing to do with the concept of a <strong>null</strong> value. <strong>Caution:</strong> A mandatory table field can have its <strong>EnumType</strong> property set to an enumeration. You might define a field as an enum type that includes an item that has the integer value <strong>0</strong>. In this case, <strong>0</strong> isn&#39;t an item that&#39;s available for selection on the page. The forms system automatically calls the <strong>validateWrite</strong> method to enforce the setting of the <strong>Mandatory</strong> property. However, the <strong>Mandatory</strong> property has no effect on the behavior of direct X++ SQL that inserts or updates the value of a table field. In your direct X++ SQL, you can include calls to the <strong>validateWrite</strong> method on your table buffer variable. Your buffer variable inherits the method from the <strong>xRecord</strong> class.</td>
 </tr>
 <tr class="even">
 <td>MinReadAccess</td>
@@ -1900,7 +1900,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>HelpText</td>
-<td>Create a Help string for the menu item. The text appears on the status bar when you select the object that is opened by the menu item (for example, a form). <strong>Note:</strong> To write a Help topic for the menu item, in Application Explorer, in the <strong>Application Documentation/Menu Items</strong> node, find the topic that has the same name as your menu item. This topic will then be shown instead of any Help topic that was written about the object that is opened by the menu item.</td>
+<td>Create a Help string for the menu item. The text appears on the status bar when you select the object that is opened by the menu item (for example, a form). <strong>Note:</strong> To write a Help article for the menu item, in Application Explorer, in the <strong>Application Documentation/Menu Items</strong> node, find the article that has the same name as your menu item. This article will then be shown instead of any Help article that was written about the object that is opened by the menu item.</td>
 </tr>
 <tr class="even">
 <td>ImageLocation</td>

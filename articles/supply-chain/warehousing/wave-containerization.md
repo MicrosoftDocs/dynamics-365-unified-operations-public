@@ -2,7 +2,7 @@
 # required metadata
 
 title: Containerization
-description: This topic describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
+description: This article describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
+This article describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
 
 To set up containerization, you must create the following:
 

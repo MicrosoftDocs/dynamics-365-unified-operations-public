@@ -38,7 +38,7 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order manually from a service agreement
 
-1.  Select **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Select **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Select a service agreement or create a new service agreement.
 
@@ -46,7 +46,7 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order manually in the Service orders form
 
-1.  Select **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Select **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Select **New** to create a new service order.
 
@@ -57,7 +57,7 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order from a project
 
-1.  Go to **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.
+1.  Go to **Project management and accounting** \> **Projects** \> **All projects**.
 
 2.  In the **Projects** form, on the **Action Pane**, select the **Manage** tab \> select **Service** \> **Service orders**.
 
@@ -70,7 +70,7 @@ You can create service orders manually by using a service agreement or by using 
 
 You can create a service order from the **Sales orders** form by using the **Create a new service order based on the sales order** wizard.
 
-1.  Go to **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders**.
+1.  Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 
 2.  Open the relevant sales order.
 

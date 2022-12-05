@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make manual adjustments to the baseline forecast
-description: This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
+description: This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
+This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 
 Before you make manual adjustments, it's important that you understand a few concepts on various pages.
 
@@ -79,9 +79,8 @@ You can also make manual adjustments to the forecast on the **Demand forecast de
 
 ## Additional resources
 
-[Monitor forecast accuracy](monitor-forecast-accuracy.md)
-
-[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+- [Monitor forecast accuracy](monitor-forecast-accuracy.md)
+- [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
 
 

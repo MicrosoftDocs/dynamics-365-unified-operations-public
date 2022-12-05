@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Configure multiple B2C tenants in a Commerce environment
-description: This topic describes when and how to set up multiple per-channel Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user authentication in a dedicated Dynamics 365 Commerce environment.
+description: This article describes when and how to set up multiple per-channel Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user authentication in a dedicated Dynamics 365 Commerce environment.
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: 
-
+ms.search.industry: retail
+ms.search.form: 
 ---
 
 # Configure multiple B2C tenants in a Commerce environment
 
 [!include [banner](includes/banner.md)]
 
-This topic describes when and how to set up multiple Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants per channel for user authentication in a dedicated Dynamics 365 Commerce environment.
+This article describes when and how to set up multiple Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants per channel for user authentication in a dedicated Dynamics 365 Commerce environment.
 
 Dynamics 365 Commerce uses the Azure AD B2C cloud identity service to support user credentials and authentication flows. Users can use the authentication flows to sign up, sign in, and reset their password. Azure AD B2C stores a user's sensitive authentication information, such as the user name and password. The user record is unique to each B2C tenant, and it uses either user name (email address) credentials or social identity provider credentials.
 

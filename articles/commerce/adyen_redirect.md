@@ -2,7 +2,7 @@
 # required metadata
 
 title: Strong Customer Authentication (SCA) using the Adyen connector
-description: This topic describes Strong Customer Authentication (SCA) in the storefront checkout.
+description: This article describes Strong Customer Authentication (SCA) in the storefront checkout.
 author: BrianShook
 ms.date: 05/21/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes Strong Customer Authentication (SCA) support built into the Adyen connector.
+This article describes Strong Customer Authentication (SCA) support built into the Adyen connector.
 
 ## Key terms
 

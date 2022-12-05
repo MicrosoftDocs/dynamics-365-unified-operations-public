@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Financials development home page
-description: This topic provides links to topics about financials development.
-author: tonyafehr
+description: This article provides links to topics about financials development.
+author: josaw1
 ms.date: 09/12/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
 ---
 
 # Financials development home page
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to topics about financials development.
+This article provides links to topics about financials development.
 
 - Financial dimension framework
 
@@ -59,7 +48,7 @@ This topic provides links to topics about financials development.
 - Currency Exchange rate providers
 
     + [Create exchange rate providers](../financial/create-exchange-rate-providers.md)
-    + [Create exchange rate providers in Finance and Operations version 8.0](../financial/create-exchange-rate-8.md)
+    + [Create exchange rate providers in finance and operations version 8.0](../financial/create-exchange-rate-8.md)
 
 - Process automation framework
 

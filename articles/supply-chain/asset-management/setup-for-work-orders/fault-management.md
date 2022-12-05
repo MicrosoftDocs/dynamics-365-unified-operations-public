@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fault management
-description: This topic explains fault management in Asset Management.
+description: This article explains fault management in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article

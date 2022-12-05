@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: EU Sales list for Lithuania
 description: This article provides information about the European Union (EU) sales list report for Lithuania.
-author: AKroshkina
+author: AdamTrukawka
 ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for Lithuania
@@ -132,7 +122,7 @@ For general information about which types of transactions are included in the EU
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Lithuania, see Example for generic [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this topic, create **LT123456789** as the company’s VAT ID. Enter this VAT ID in the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab of the **Legal entities** page. Additionally, create **000000009** as the company’s routing number.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Lithuania, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this article, create **LT123456789** as the company’s VAT ID. Enter this VAT ID in the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab of the **Legal entities** page. Additionally, create **000000009** as the company’s routing number.
 
 **Create an EU sales list report**
 
@@ -153,7 +143,7 @@ For information about how to create a general setup, create postings, and transf
     | Field            | Value     | Comment    |
     |------------------|-----------|------------|
     | Version          | 7.0       |    &nbsp;  |
-    | Created By App   | Microsoft Dynamics 365 for Finance and Operations |  &nbsp; |
+    | Created By App   | Microsoft Dynamics 365 Finance |  &nbsp; |
     | Created By Login | Admin     |    &nbsp;      |
     | Created On       | 2021-09-24     | The date when the report was created.   |
     | Pages Count      | 1      | The number of pages.    |
@@ -198,3 +188,4 @@ For information about how to create a general setup, create postings, and transf
 5. Review the report in Excel format that is generated.
 
     ![EU sales list report.](media/EUSL-ltu.png)
+

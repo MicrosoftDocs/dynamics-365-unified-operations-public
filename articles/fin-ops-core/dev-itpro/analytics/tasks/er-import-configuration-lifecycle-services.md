@@ -1,35 +1,25 @@
---- 
-# required metadata 
- 
+---
 title: Import a configuration from Lifecycle Services
-description: This topic describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
-author: NickSelin
+description: This article describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).
+author: kfend
 ms.date: 06/17/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
-
-# optional metadata 
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 ---
 
 # Import a configuration from Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).
+This article explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
 > The use of LCS as a storage repository for ER configurations is being [deprecated](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). For more information, see [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
@@ -54,7 +44,7 @@ In this example, you will select the desired version of the ER configuration and
 
 1. On the **Configurations** page, in the configurations tree, select **Sample model configuration**.
 
-    You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this topic.
+    You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this article.
 
 2. In the list, find and select the desired record.
 

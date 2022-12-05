@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure manual decisions in a workflow
-description: This topic explains how to configure the properties of a manual decision.
+description: This article explains how to configure the properties of a manual decision.
 author: ChrisGarty
 ms.date: 06/15/2020
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how to configure the properties of a manual decision.
+This article explains how to configure the properties of a manual decision.
 
 To configure a manual decision in the workflow editor, right-click the manual decision, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the manual decision.
 

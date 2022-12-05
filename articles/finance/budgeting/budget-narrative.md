@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget plan narrative
-description: This topic explains how to include a description and a revenue summary in a budget plan. 
+description: This article explains how to include a description and a revenue summary in a budget plan. 
 author: v-kiarnd
 ms.date: 06/29/2021
 ms.topic: article

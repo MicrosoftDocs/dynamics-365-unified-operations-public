@@ -1,23 +1,14 @@
 ---
-# required metadata
 title: Ratings and reviews FAQ
-description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
+description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 author: gvrmohanreddy
 ms.date: 09/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-# ms.search.form: 
-#ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
@@ -27,7 +18,7 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](includes/banner.md)]
 
-This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
+This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 
 ### How do I hide the ratings refiner that appears on search results and category pages if my e-commerce site doesn't use the ratings and reviews solution?
 

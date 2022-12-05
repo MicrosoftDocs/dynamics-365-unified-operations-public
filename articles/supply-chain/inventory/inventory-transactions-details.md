@@ -1,6 +1,6 @@
 ---
 title: Inventory transaction details
-description: This topic provides an overview of the Transactions details page that shows details of a selected inventory transaction. 
+description: This article provides an overview of the Transactions details page that shows details of a selected inventory transaction. 
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -31,8 +31,8 @@ The **Transactions details** page is split into several FastTabs. The following 
 
 | FastTab | Description |
 |---|---|
-| General | This FastTab shows basic information about the selected inventory transaction. In addition to the fields that appear on the **Inventory transactions** page, it includes the additional fields that are described later in this topic. |
-| Updates | This FastTab shows information that is related to the physical, financial, and settlement aspects of the selected inventory transaction. Depending on the current status of the transaction, some fields might be blank. However, those fields will automatically be set when transactions are posted. In addition to the fields that appear on the **Inventory transactions** page, this FastTab includes the additional fields that are described later in this topic. |
+| General | This FastTab shows basic information about the selected inventory transaction. In addition to the fields that appear on the **Inventory transactions** page, it includes the additional fields that are described later in this article. |
+| Updates | This FastTab shows information that is related to the physical, financial, and settlement aspects of the selected inventory transaction. Depending on the current status of the transaction, some fields might be blank. However, those fields will automatically be set when transactions are posted. In addition to the fields that appear on the **Inventory transactions** page, this FastTab includes the additional fields that are described later in this article. |
 | Ledger postings | This FastTab shows the posting type and ledger account that are used for the physical update, financial update, physical revenue, physical charges, financial revenue, and financial charges that are related to the selected inventory transaction. |
 | References | This FastTab shows additional information about the source transaction that created the selected inventory transaction. For example, this information might include details from the purchase order or sales order. |
 | Related information | This FastTab shows additional information about the selected inventory transaction. These fields might not be set if you aren't using some features, such as procurement categories or projects. |

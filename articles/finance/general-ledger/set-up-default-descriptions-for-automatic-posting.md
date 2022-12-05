@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up default descriptions for automatic posting
-description: This topic explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
+description: This article explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
 author: aprilolson
 ms.date: 07/23/2019
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
+This article explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using free-form text or by selecting fixed variables.
 
 > [!NOTE]
-> For some transaction types in some countries or regions, you can also include text from fields that are related to those transaction types. For a list of the transaction types, and the countries and regions, see the [Optional: Add other text to default descriptions](#optional-add-other-text-to-default-descriptions) section later in this topic.
+> For some transaction types in some countries or regions, you can also include text from fields that are related to those transaction types. For a list of the transaction types, and the countries and regions, see the [Optional: Add other text to default descriptions](#optional-add-other-text-to-default-descriptions) section later in this article.
 
 ## Set up default descriptions
 
@@ -84,7 +84,7 @@ This option is available for the following countries and regions:
 
 ### Add text to default descriptions
 
-After you complete the steps in the [Set up default descriptions](#set-up-default-descriptions) section earlier in this topic, follow these steps to add other text to the default descriptions.
+After you complete the steps in the [Set up default descriptions](#set-up-default-descriptions) section earlier in this article, follow these steps to add other text to the default descriptions.
 
 1. On the **Parameters** FastTab, select **Add**.
 2. In the **Reference table** field, select the database table from which to add parameter data to the description.

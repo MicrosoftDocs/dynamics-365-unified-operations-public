@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy billing schedules
-description: This topic explains how to copy billing schedules.
+description: This article explains how to copy billing schedules.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article

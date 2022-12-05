@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot the Office integration
-description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
 ms.date: 04/12/2022
 ms.topic: article
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
+This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions
 
@@ -55,7 +55,7 @@ No. The Office JavaScript (JS) APIs work differently in Apple Safari and Microso
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
-For more information, see the "Troubleshooting issue" section later in this topic.
+For more information, see the "Troubleshooting issue" section later in this article.
 
 ### How can I force an update of Office?
 
@@ -163,7 +163,7 @@ Skype integration is available for environments in the public cloud. For environ
 
 -  **Registration data not initialized**: If the issue wasn't addressed by signing back in to the add-in, another potential cause is that the environment doesn't yet have the add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, select the appropriate **Initialize** button on that tab. 
 
--  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with Finance and Operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
+-  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with finance and operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
 
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
 
@@ -171,7 +171,7 @@ Skype integration is available for environments in the public cloud. For environ
 -  "AADSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
 -  "Selected user account does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant."
 
-**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the Finance and Operations apps, it can affect customers on any version of the platform or application.  
+**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the finance and operations apps, it can affect customers on any version of the platform or application.  
 
 **Fix:** All external users need to be invited to the tenant through Azure AD. For more information, see [Invite users with Azure Active Directory B2B collaboration](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration).
 
@@ -274,3 +274,4 @@ The following URLs are accessed for authentication.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

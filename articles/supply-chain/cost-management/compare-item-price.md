@@ -4,7 +4,7 @@
 title: Compare item prices storage report
 description: Learn how to generate a Compare item prices storage report and then browse and/or export the result.
 author: JennySong-SH
-ms.date: 01/30/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to run a **Compare item prices storage** report and make the output available digitally, either as an interactive page in Dynamics 365 Supply Chain Management, or as an exported document in any of several formats.
+This article explains how to run a **Compare item prices storage** report and make the output available digitally, either as an interactive page in Dynamics 365 Supply Chain Management, or as an exported document in any of several formats.
 
 When you view the report in your browser, columns and aggregate balances are dynamically adjusted, depending on your configured layout. You can sort the results, filter them, drill down into the data, and more.
 
@@ -39,12 +39,9 @@ Report results are stored in the **Compare item prices** data entity, which lets
 
 The **Compare item prices storage** report is helpful in cases where the output contains many lines. For example, the output will contain many lines if you have more than 40,000 items holding a pending item price in the costing version.
 
-## Enable compare item prices storage
+## Turn the Compare item prices storage feature on or off
 
-Before you can use this feature, you must enable it on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - Cost management
-- **Feature name** - Compare item price storage
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Compare item price storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Generate a Compare item prices storage report
 

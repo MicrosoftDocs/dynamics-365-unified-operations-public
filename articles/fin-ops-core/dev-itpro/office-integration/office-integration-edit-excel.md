@@ -66,6 +66,9 @@ The following image shows the **Open in Microsoft Office** menu on the **Fleet C
 ## When will an entity show as an Open in Excel option?
 When an entity has the same root datasource (table) as a form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. This is referred to as a “generated” option.
 
+> [!NOTE]
+> The user must have security access to the underyling entity for that option to appear in the Open in Excel menu. See [Security and data entities](../data-entities/security-data-entities.md) for more details.
+
 ## What fields will be shown in the workbook?
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image shows the Visual Studio view of the AutoReport field group for the FMCustomerEntity.
 
@@ -335,7 +338,7 @@ To enable relationship lookups in the Excel Data Connector, you must ensure that
 ## How can I enable users to create new header records as well as lines in a workbook?
 To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
 
-To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
+To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 Finance](https://youtu.be/RTicLb-6dbI) video.
 
 To design a workbook with header fields and a lines table that enables header creation:
 1. In the Excel Add-in, click **Design** to open the Designer. Select **Add fields** to add a header data source.
@@ -405,7 +408,7 @@ If a formula is needed in a table, then add a formula column. When in the field 
 
 This issue occurs when the user selects an Excel template from an **Open in Excel** button and receives the following error: `Record for Id {guid} not found`
 
-The error occurs when a custom Excel template cannot be found. One scenario that could cause this error is moving the Finance and Operations database between environments, but not copying the Excel templates.  
+The error occurs when a custom Excel template cannot be found. One scenario that could cause this error is moving the finance and operations database between environments, but not copying the Excel templates.  
 
 To resolve this issue, delete the database entry for the template from the **Document templates** page (**Common > Common > Office integration > Document templates**) and then reload the template. 
 
@@ -444,3 +447,4 @@ To resolve this, change the binding information in the affected template so that
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Use USER INPUT PARAMETER data sources to specify parameters for a report
-description: This topic explains how to use USER INPUT PARAMETER data sources to specify parameters for reports that you generate.
-author: NickSelin
+description: This article explains how to use USER INPUT PARAMETER data sources to specify parameters for reports that you generate.
+author: kfend
 ms.date: 04/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.27
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Use USER INPUT PARAMETER data sources to specify parameters for a report
 
 [!include[banner](../includes/banner.md)]
 
-When you design [Electronic reporting](general-electronic-reporting.md) (ER) [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components, you can use data sources of a *USER INPUT PARAMETER* type to obtain the required values that can be specified in data entry fields in the dialog box at runtime, before execution of an ER format begins. This topic describes the *USER INPUT PARAMETER* data sources that are currently supported.
+When you design [Electronic reporting](general-electronic-reporting.md) (ER) [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components, you can use data sources of a *USER INPUT PARAMETER* type to obtain the required values that can be specified in data entry fields in the dialog box at runtime, before execution of an ER format begins. This article describes the *USER INPUT PARAMETER* data sources that are currently supported.
 
 ## <a name="mandatory-properties"></a>Mandatory properties
 

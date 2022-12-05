@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flowcharts in Business process modeler (BPM)
-description: This topic describes how to modify connected flowcharts, create and upload flowcharts from Task recorder, and import a business process model flowchart.
+description: This article describes how to modify connected flowcharts, create and upload flowcharts from Task recorder, and import a business process model flowchart.
 author: AngelMarshall 
 ms.date: 02/01/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 7.0
 > [!IMPORTANT]
 > Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler).
 
-You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This topic explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and upload and view unconnected flowcharts.
+You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and upload and view unconnected flowcharts.
 
 -   Connected flowcharts are the automatically generated flowcharts based on data recorded in Task recorder and uploaded to Business process modeler, this also includes the process steps from the task recording. 
 -   Unconnected flowcharts are uploaded directly from Visio.
@@ -50,9 +50,9 @@ Activities that can appear in flowcharts are described in the following table.
 | Script                    | Action performed by a script.                                                                                                                                    |
 | Loop                      | Action performed repetitively.                                                                                                                                   |
 | Service                   | Action performed by a service.                                                                                                                                   |
-| Manual                    | Step performed outside of a Finance and Operations app.                                                                                                                               |
-| Receive                   | Information received from outside of a Finance and Operations app without using a service or script.                                                                                  |
-| Send                      | Information sent outside of a Finance and Operations app without using a service or script.                                                                                           |
+| Manual                    | Step performed outside of a finance and operations app.                                                                                                                               |
+| Receive                   | Information received from outside of a finance and operations app without using a service or script.                                                                                  |
+| Send                      | Information sent outside of a finance and operations app without using a service or script.                                                                                           |
 | User                      | Action performed by a user.                                                                                                                                      |
 | Collapsed                 | A sub-process that is not shown in the diagram. Collapsed processes cannot be expanded.                                                                          |
 | Arrow                     | Indicates direction of flow between process steps.                                                                                                               |
@@ -135,7 +135,7 @@ To generate a gap analysis and export it, follow these steps:
 -->
 
 ## Unconnected flowcharts
-Unconnected flowcharts, such as a Visio diagram, can be very helpful for describing high-level business processes that are performed outside of the Finance and Operations apps.
+Unconnected flowcharts, such as a Visio diagram, can be very helpful for describing high-level business processes that are performed outside of the finance and operations apps.
 
 ### Upload an unconnected flowchart
 

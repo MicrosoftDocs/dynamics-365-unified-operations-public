@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calendars and master planning
-description: This topic provides an overview of supply chain calendars and how they affect master planning.
+description: This article provides an overview of supply chain calendars and how they affect master planning.
 author: t-benebo
 ms.date: 08/19/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
+This article provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
 
 ## Definition of a calendar
 

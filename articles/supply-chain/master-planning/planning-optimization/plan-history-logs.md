@@ -2,7 +2,7 @@
 # required metadata
 
 title: View plan history and planning logs
-description: This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
+description: This article explains how to view the history of planning jobs.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.
+This article explains how to view the history of planning jobs in Microsoft Dynamics 365 Supply Chain Management.
 
 To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**. The history lists all the jobs for the selected plan. The list includes completed and active jobs.
 
@@ -50,14 +50,6 @@ To view auto-firming errors and other warnings or errors that occurred during a 
     - If you're using the legacy form: On the Action Pane, on the **Batch job** tab, select **Log**.
 
 1. Select **Message details** to open the **Message details** pane, where you can view all warnings and errors that were captured during processing.
-
-## Related resources
-
-- [Planning Optimization overview](planning-optimization-overview.md)
-- [Get started with Planning Optimization](get-started.md)
-- [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-- [Apply filters to a plan](plan-filters.md)
-- [Cancel a planning job](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

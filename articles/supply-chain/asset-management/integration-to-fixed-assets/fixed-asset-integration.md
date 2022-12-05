@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate asset management with fixed assets
-description: This topic explains how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
+description: This article explains how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
 author: johanhoffmann 
 ms.date: 04/17/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.11
 By integrating the **Asset management** and **Fixed assets** modules, you can link fixed assets with maintenance assets. Fixed assets users can then create a maintenance asset from a new or existing fixed asset, and Asset management users can associate a maintenance asset with an existing fixed asset. This feature also makes it easy for Fixed assets users to view the costs that were posted from work orders for related maintenance assets.
 
 > [!NOTE]
-> In this topic, *maintenance assets* refer to assets from the **Asset management** module, and *fixed assets* refer to assets from the **Fixed assets** module.
+> In this article, *maintenance assets* refer to assets from the **Asset management** module, and *fixed assets* refer to assets from the **Fixed assets** module.
 
 ## Set a default location for new maintenance assets that are created from fixed assets (optional)
 

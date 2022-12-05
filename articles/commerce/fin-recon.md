@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial reconciliation in retail stores
-description: This topic describes financial reconciliation in retail stores for POS for Microsoft Dynamics 365 Commerce.
+description: This article describes financial reconciliation in retail stores for POS for Microsoft Dynamics 365 Commerce.
 author: anpurush
 ms.date: 06/09/2020
 ms.topic: article

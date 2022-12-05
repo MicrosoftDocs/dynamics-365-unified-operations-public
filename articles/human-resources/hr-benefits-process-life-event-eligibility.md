@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process life event eligibility
-description: This topic explains how to process life event eligibility.
+description: This article explains how to process life event eligibility.
 author: twheeloc  
 ms.date: 08/23/2021
 ms.topic: article
@@ -30,11 +30,9 @@ ms.dyn365.ops.version: Human Resources
 # Process life event eligibility
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how to process for life event eligibility.
+This article explains how to process for life event eligibility.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Life event eligibility processing**.
 

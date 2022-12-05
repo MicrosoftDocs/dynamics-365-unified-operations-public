@@ -2,9 +2,9 @@
 # required metadata
 
 title: Override the default reservation principle for materials in production
-description: This topic describes how to set a default reservation principle for each item model group, so that different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula.
+description: This article describes how to set a default reservation principle for each item model group, so that different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -37,7 +37,7 @@ For example, if you have raw materials or ingredients that require pick work, BO
 
 ## Turn the Override default production reservation feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Override default production reservation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Override default production reservation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Assign a production reservation policy to an item model group
 

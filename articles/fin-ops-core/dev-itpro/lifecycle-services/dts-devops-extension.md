@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Translation Service Azure DevOps extension
-description: This topic explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+description: This article explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
 ms.date: 04/14/2022
 ms.topic: article
@@ -20,9 +20,9 @@ ms.search.validFrom: 2021-11-19
 
 The Microsoft Dynamics 365 Translation Service (DTS) extension for Azure DevOps has several pipeline tasks that let you perform actions in DTS. For example, you can translate user interface (UI) files, regenerate translation requests, and create translation memory (TM) files.
 
-To start to use the DTS pipeline tasks, you must install the extension in your organization and then connect to the translation service. For more information, see the [Setting up the extension](#setting-up-the-extension) section later in this topic.
+To start to use the DTS pipeline tasks, you must install the extension in your organization and then connect to the translation service. For more information, see the [Setting up the extension](#setting-up-the-extension) section later in this article.
 
-This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
+This article assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
 
 ## Running a task
 
@@ -46,7 +46,7 @@ The following example shows the definition for a new translation task.
 
 ![Definition of a new translation task in the Azure Pipelines UI.](media/dts-ado-pipeline-sample.PNG)
 
-By default, the request output is prepared in the Build.ArtifactStagingDirectory staging folder. For information about how to download the translation output, see [Publish and download artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/pipeline-artifacts). If you want to push the translation output back to your repository, see the [Commit translation output to your repository](#commit-translation-output-to-your-repository) section later in this topic.
+By default, the request output is prepared in the Build.ArtifactStagingDirectory staging folder. For information about how to download the translation output, see [Publish and download artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/pipeline-artifacts). If you want to push the translation output back to your repository, see the [Commit translation output to your repository](#commit-translation-output-to-your-repository) section later in this article.
 
 ## Overview of task inputs
 
@@ -56,7 +56,7 @@ The translation task lets users submit new translation requests through DTS.
 
 | Input | Required | Description |
 |-------|----------|-------------|
-| Dynamics Lifecycle Services service connection | Yes | The Microsoft Dynamics Lifecycle Services (LCS) service connection that is used for authentication with LCS. For more information, see the [Create a service connection](#create-a-service-connection) section later in this topic. |
+| Dynamics Lifecycle Services service connection | Yes | The Microsoft Dynamics Lifecycle Services (LCS) service connection that is used for authentication with LCS. For more information, see the [Create a service connection](#create-a-service-connection) section later in this article. |
 | Request Name | Yes | Enter a name for the request. |
 | Product Name | Yes | Select a product name. |
 | Product Version | Yes | Select a product version. |
@@ -76,7 +76,7 @@ If you have files that were previously translated, and you also have correspondi
 
 | Input | Required | Description |
 |-------|----------|-------------|
-| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. For more information, see the [Create a service connection](#create-a-service-connection) section later in this topic. |
+| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. For more information, see the [Create a service connection](#create-a-service-connection) section later in this article. |
 | Product Name | Yes | The product to translate resource files for. |
 | Product Version | Yes | Select a product version. |
 | Source Language | Yes | The language to translate from. |
@@ -91,7 +91,7 @@ The regeneration task lets users submit new regeneration requests through DTS.
 
 | Input | Required | Description |
 |-------|----------|-------------|
-| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. For more information, see the [Create a service connection](#create-a-service-connection) section later in this topic. |
+| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. For more information, see the [Create a service connection](#create-a-service-connection) section later in this article. |
 | Regenerate File | Yes | The path of the edited TM files. |
 | DTS Translation ID | Yes | <p>The ID of the original translation.</p><p>If you're regenerating from the [translation task](#dts-translation-task), the translation ID is in the task output.</p> |
 | Output Path | Yes | The path to save the translation output to. This path is relative to your pipeline. For more information, see [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts). |
@@ -150,7 +150,7 @@ The service connection takes the following inputs.
 | Lifecycle Services API Endpoint | Yes | The LCS API endpoint.  The default value is https://lcsapi.lcs.dynamics.com. If you are required to have all data processed within the European Union (EU), use https://lcsapi.eu.lcs.dynamics.com.
 | Username | Yes | <p>The user who is submitting the requests through DTS.</p><p><strong>Note:</strong> MFA must be turned off.</p> |
 | Password | Yes | The user's password. |
-| Client ID | Yes | The client ID of the registered app. For more information, see the [Register an application](#register-an-application) section earlier in this topic. |
+| Client ID | Yes | The client ID of the registered app. For more information, see the [Register an application](#register-an-application) section earlier in this article. |
 
 
 1. In your Azure DevOps project, at the bottom of the left menu, select **Project settings**.
@@ -166,7 +166,7 @@ After translation is completed, you might be interested in automatically pushing
 
 1. Go to **Organization Settings \> General \> Projects**.
 2. On the project settings page, select the project to edit.
-3. In the **Project Settings** pane, under **Repos**, select **Repositories**. Then select the repository that you're using for this topic.
+3. In the **Project Settings** pane, under **Repos**, select **Repositories**. Then select the repository that you're using for this article.
 4. Select the **Security** tab to edit the security settings.
 5. Search for the **Project Collection Build Service** user.
 6. Grant the permissions that are required for the Git commands that you want to run. You will likely want to grant the following permissions:

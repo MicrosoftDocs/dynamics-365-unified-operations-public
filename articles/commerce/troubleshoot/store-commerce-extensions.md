@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Troubleshoot Store Commerce extension issues
-description: This topic explains how to troubleshoot extension issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
-author: mugunthanm
+description: This article explains how to troubleshoot extension issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
@@ -11,15 +9,13 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2017-06-20
-
 ---
 
 # Troubleshoot Store Commerce extension issues
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to troubleshoot extension issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
+This article explains how to troubleshoot extension issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
 ## Extensions packages aren't loaded
 

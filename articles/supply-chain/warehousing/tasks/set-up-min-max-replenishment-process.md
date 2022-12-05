@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, work will be created to replenish the location. The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job. These tasks would typically be carried out by a warehouse manager. You can run this procedure in the USMF demo data company using the example values below, or can run it on your own data. If you're using your own data, make sure that you have a warehouse that's enabled for Warehouse management processes.
+This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, work will be created to replenish the location. The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job. These tasks would typically be carried out by a warehouse manager. You can run this procedure in the USMF demo data company using the example values below, or can run it on your own data. If you're using your own data, make sure that you have a warehouse that's enabled for Warehouse management processes (WMS).
 
 
 ## Create a fixed picking location

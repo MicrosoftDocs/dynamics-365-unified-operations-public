@@ -2,7 +2,7 @@
 # required metadata
 
 title: Comparison of cloud and on-premises features
-description: The topic shows which features are supported in Cloud and on-premises.
+description: The article shows which features are supported in Cloud and on-premises.
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows a comparison of features available in cloud vs. on-premises for the following applications:
+This article shows a comparison of features available in cloud vs. on-premises for the following applications:
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
@@ -123,7 +123,8 @@ The following tables list the application areas. Cloud and on-premises support i
 | Localizations                        |                                                                                           | Yes       | Yes             |
 | Manufacturing                        |                                                                                           | Yes       | Yes             |
 | Master planning and forecasting      |                                                                                           | Yes       | Yes             |
-| Planning optimization                |                                                                                           | Yes       | No              |
+|                                      | Planning optimization                                                                     | Yes       | No              |
+|                                      | Demand forecasting                                                                        | Yes       | No              |
 | Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
 | Office integration                   |                                                                                           | Yes       | Yes             |
 | Organization administration          |                                                                                           | Yes       | Yes             |

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Prepare for go-live
-description: This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
-author: ClaudiaBetz-Haubold
-ms.date: 05/19/2022
+description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
+author: alejandra-cabrales
+ms.date: 07/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
@@ -28,9 +28,13 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidance about how to prepare for the go-live for Finance and Operations apps.
+This article provides guidance about how to prepare for the go-live for finance and operations apps.
 
 To ensure that the production environment is used for live operations, Microsoft provisions the production instance when the solution is ready and after project readiness has been validated as part of the Go-live Readiness Review with Microsoft. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
+
+> [!Note]
+> Most projects are **required** to use the **FastTrack for Dynamics 365 implementation portal** for their Go-live Readiness Review with Microsoft.
+
 
 For answers to common questions about go-live, see the [Go-live FAQ](go-live-faq.md).
 
@@ -79,22 +83,16 @@ The project team should validate solution readiness. The following prerequisites
 
 ## <a name="readiness"></a>Go-live Readiness Review with Microsoft
 
-> [!IMPORTANT]
-> In May 2022, the process transitioned from a Word checklist to the FastTrack for Dynamics 365 implementation portal.
->
-> **As of June 20, 2022, Word checklists will no longer be accepted. Go-live reviews can be initiated only in the portal.**
->
-> If you're already in the process of using a Word checklist, you can continue if you plan to submit it before June 20. However, because the portal and the Word checklist include the same questions, we invite you to use the portal.
-
-All Finance and Operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environments can be deployed. The main purpose of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an email reminder about the Go-live Readiness Review, based on the go-live date in LCS.
+All finance and operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environments can be deployed. The main purpose of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an email reminder about the Go-live Readiness Review, based on the go-live date in LCS.
 
 The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required. Determine an appropriate time to start this review, so that you can meet the go-live timeline.
 
-The Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
+For most projects, the Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
 
-There are two exceptions that will not use the FastTrack for Dynamics 365 implementation portal:
-- Projects that are in [United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md). Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
-- For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing new Go-live Readiness review is not necessary. Please follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
+> [!Note]
+> There are only **two exceptions** that will not use the FastTrack for Dynamics 365 implementation portal:
+> - Projects that are in **[United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md)**. Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details, and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
+> - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing a new Go-live Readiness review is not necessary. Please follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
 
 ### Initiate the Go-live Readiness Review in the Portal
 
@@ -143,3 +141,4 @@ The production environment is sized based on the number of licenses that have be
 After production has been deployed, the project team can apply the deployable package by following the instructions in [Promote an update to production environments](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments) and then migrate the data. For data migration, we recommend that you prepare and validate data in a non-production environment and then [copy the sandbox database to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

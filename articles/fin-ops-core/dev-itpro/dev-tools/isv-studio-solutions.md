@@ -1,22 +1,22 @@
 ---
 title: Link X++ modules from ISV packages by using ISV Studio
-description: This topic describes linking X++ packages by using ISV Studio.
-author: jorisdg
+description: This article describes linking X++ packages by using ISV Studio.
+author: gianugo
 ms.date: 04/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 70381
-ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 70381
+ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ---
 
 # Link X++ modules from ISV packages by using ISV Studio
 
-Independent software vendors (ISVs) can link their X++ modules to their registered products and solutions by using [Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management). Linking enables ISV's to monitor the success and usage of their applications in Finance and Operations apps.
+Independent software vendors (ISVs) can link their X++ modules to their registered products and solutions by using [Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management). Linking enables ISV's to monitor the success and usage of their applications in finance and operations apps.
 
 > [!NOTE]
 > For the link from X++ into ISV Studio to work correctly, customers need to have deployed ISV packages with the correct solution ID in all the ISV models. The customer's environment also has to be version 10.0.16 or higher.
@@ -39,3 +39,4 @@ For all models that make up your solution, locate the descriptor XML files. For 
 :::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 
 After you recompile, the X++ binaries will contain the product ID and will link to ISV Studio after they are deployed to a Tier 2+ sandbox or production environment.
+

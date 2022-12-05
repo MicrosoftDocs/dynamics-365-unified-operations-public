@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create vendor payments by using a payment proposal
-description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
+description: This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: abruer
 ms.date: 04/04/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
+This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 
 Organizations often use payment proposals to create vendor payments, because the payment proposal query can be used to quickly select vendor invoices for payment, based on the due date, cash discount, and other criteria. 
 
@@ -116,7 +116,7 @@ Dimension control allows you to control grouping of generated lines by payment p
 -   **Dimension control** field is activated without further defining the dimensions. The payment proposal will be created without taking dimensions into consideration. The created transaction inherits no dimensions from the applied entry.
 -   **Dimension control** field is activated and the further dimensions are enabled. Now you define how the dimensions will be copied to the journal. For example: • Select the **BusinessUnit** check box to create a payment proposal per business unit for the method of payment, • Select the **CostCenter** check box to create a payment proposal per cost center for the method of payment
 
-> [[!NOTE]
+>[!NOTE]
 > If you select more than one dimension in the third option, a payment proposal is created for the dimension combination.
 
 #### Bank account selection

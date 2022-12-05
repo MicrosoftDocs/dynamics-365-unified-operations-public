@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Commerce Scale Unit (self-hosted)
-description: This topic describes Commerce Scale Unit (self-hosted) and when to use it.
-author: athinesh99
+description: This article describes Commerce Scale Unit (self-hosted) and when to use it.
+author: josaw1
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 219714
-ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 219714
+ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
+ms.search.industry: Retail
 ---
 
 # Commerce Scale Unit (self-hosted)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes Commerce Scale Unit (self-hosted) and when to use it.
+This article describes Commerce Scale Unit (self-hosted) and when to use it.
 
 ## Overview
 
@@ -55,7 +45,7 @@ In scenarios where a stable internet connection is available and there is low la
 
 ## Get started with Commerce Scale Unit (self-hosted)
 
-To get started, review the following topic on configuring the Commerce Scale Unit (self-hosted), [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md).
+To get started, review the following article on configuring the Commerce Scale Unit (self-hosted), [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md).
 
 ## Additional resources
 

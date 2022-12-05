@@ -4,33 +4,25 @@ description: The Regression suite automation tool (RSAT) lets you record busines
 author: FrankDahl
 ms.date: 03/29/2022
 ms.topic: overview
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) of Finance and Operations apps. UAT is typically required before you take a Microsoft application update, or before you apply custom code and configurations to your production environment. RSAT lets functional power users record business tasks by using Task recorder and then convert the recordings into a suite of automated tests, without having to write source code. For more information about Task recorder, see [Task recorder resources](../../user-interface/task-recorder.md).
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing (UAT) of finance and operations apps. UAT is typically required before you take a Microsoft application update, or before you apply custom code and configurations to your production environment. RSAT lets functional power users record business tasks by using Task recorder and then convert the recordings into a suite of automated tests, without having to write source code. For more information about Task recorder, see [Task recorder resources](../../user-interface/task-recorder.md).
 
 RSAT is fully integrated with Microsoft Azure DevOps for test execution, reporting, and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
-In addition to this topic, RSAT usage is described in these topics:
+In addition to this article, RSAT usage is described in these topics:
 
 + [Regression suite automation tool (RSAT) installation and configuration](rsat-install-configure.md)
 + [Run Regression suite automation tool (RSAT) test cases](rsat-run.md)
@@ -54,25 +46,25 @@ These videos will help introduce RSAT and get you started.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
 
-The [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Create a test plan in Azure DevOps to use with RSAT
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
 
-The [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### How to use RSAT
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
 
-The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### The improved Excel experience in RSAT 2.0
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
 
-The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## End-to-end flow
 
@@ -104,7 +96,7 @@ RSAT is intended to be used for business cycle tests and scenario tests (multipl
 
 ### Cloud POS
 
-In addition to testing processes recorded using the Finance and Operations Task recorder, RSAT also supports testing of Cloud POS processes in Dynamics 365 Commerce. For more information about RSAT with Cloud POS, see [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat.md).
+In addition to testing processes recorded using the finance and operations Task recorder, RSAT also supports testing of Cloud POS processes in Dynamics 365 Commerce. For more information about RSAT with Cloud POS, see [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat.md).
 
 ### Warehouse mobile app
 
@@ -152,7 +144,7 @@ Select the **Cloud POS Settings** tab to configure RSAT to execute Cloud POS tes
 
 ### Useful links
 
-The **Links** tab provides new functionality. Select the **Links** tab to quickly navigate to your Finance and Operations environment, Cloud POS, or go to useful Azure DevOps pages showing recent test runs, the last test run, and current test plan. There is also a link to the RSAT docs page.
+The **Links** tab provides new functionality. Select the **Links** tab to quickly navigate to your finance and operations environment, Cloud POS, or go to useful Azure DevOps pages showing recent test runs, the last test run, and current test plan. There is also a link to the RSAT docs page.
 
 ![UI Links Tab.](media/UI-links-tab.png)
 
@@ -170,3 +162,4 @@ This tab provides quick access to the most relevant pages in Azure DevOps.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

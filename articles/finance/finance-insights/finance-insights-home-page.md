@@ -45,7 +45,7 @@ A Tier-2 environment (multi-box) is required to preview Finance insights. For ba
 
 ### Version requirements
 
-This topic applies to Microsoft Dynamics 365 Finance version 10.0.21 and later.
+This article applies to Microsoft Dynamics 365 Finance version 10.0.21 and later.
 
 ### License requirements
 
@@ -100,9 +100,5 @@ The Cash flow forecast capability can help you more accurately estimate your cas
 ### Using Budget proposal
 
 For information about accelerating the creation of a budget, see [Budget proposals](budget-proposals.md). 
-
-## Feedback and support
-
-If you're interested in providing feedback, or if you need support, send email to [Finance insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,11 +57,11 @@ The following table shows the prerequisites that must be in place before you can
 <tbody>
 <tr class="odd">
 <td>Item</td>
-<td>The item must be enabled for warehouse management processes.</td>
+<td>The item must be enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr class="even">
 <td>Warehouse</td>
-<td>The warehouse must be enabled for warehouse management processes. To enable the warehouse for warehouse management processes, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. To enable workers to move pallets during a cycle count, on the <strong>Warehouse management</strong> FastTab, select the <strong>Allow pallet moves during cycle counting</strong> option.</td>
+<td>The warehouse must be enabled for warehouse management processes (WMS). To enable the warehouse for WMS, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. To enable workers to move pallets during a cycle count, on the <strong>Warehouse management</strong> FastTab, select the <strong>Allow pallet moves during cycle counting</strong> option.</td>
 </tr>
 <tr class="odd">
 <td>Work pools</td>

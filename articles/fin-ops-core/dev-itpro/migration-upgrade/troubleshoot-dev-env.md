@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot development environments during upgrade 
-description: This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
+description: This article provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
 author: ttreen 
 ms.date: 04/26/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.form: 2022-04-08
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
+This article provides troubleshooting guidance for upgrades of Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises) Tier-1 development environments.
 
 ## Scenario 1: The data upgrade is running slowly on the Tier-1 development environment.
 
@@ -37,7 +37,7 @@ Set the recovery mode on the database to **Simple**.
 
 During the additive or partial synchronization that is done as part of the prerequisite steps for the upgrade, you might receive an error that resembles the following example in the downloaded synchronization log:
 
-> Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations.
+> Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 Finance.
 
 **Possible causes**
 
@@ -52,3 +52,4 @@ During the additive or partial synchronization that is done as part of the prere
     ```SQL
     TRUNCATE TABLE SYSCLIENTSESSIONS;
     ```
+

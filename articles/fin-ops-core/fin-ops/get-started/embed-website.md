@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed third-party apps 
-description: This topic explains how to embed third-party apps to augment the product's functionality.
+description: This article explains how to embed third-party apps to augment the product's functionality.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with Finance and Operations apps. To provide a more seamless user experience, you can use the **Full page apps** feature to embed those third-party apps directly into your Finance and Operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.
+Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with finance and operations apps. To provide a more seamless user experience, you can use the **Full page apps** feature to embed those third-party apps directly into your finance and operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.
 
-Before you can embed third-party apps into the product, you must turn on the **Full page apps** feature in Feature management. You can then use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into Finance and Operations apps.
+Before you can embed third-party apps into the product, you must turn on the **Full page apps** feature in Feature management. You can then use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into finance and operations apps.
 
 - Embed the app or website on an existing page as a new tab page (pivot tab, FastTab, blade, or workspace section).
 - Create a new full-page experience for the app or website from the dashboard.
@@ -58,14 +58,14 @@ Use this procedure if you want to supplement an existing page in the system with
     > - The app or website must be configured to allow itself to be embedded.
 
 6. Select **Save** to embed the app on the page. The app is added as the last tab or section in the group.
-7. Confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
+7. Confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this article.
 8. Open the view selector, and select either **Save** (if the app should be associated with the current view) or **Save as** (to save the app to a different view).
 
     If the page doesn't have a view selector (for example, if the page is a dialog box or a workspace), you can skip this step.
 
 ## Embed a website as a full-page experience from the dashboard
 
-Use this procedure if the app that you want to embed isn't related to an existing page, or if you just want a full-page experience for the app inside the Finance and Operations app.
+Use this procedure if the app that you want to embed isn't related to an existing page, or if you just want a full-page experience for the app inside the finance and operations app.
 
 1. Open the dashboard.
 2. Select and hold (or right-click) on the dashboard, select **Personalize**, and then select **Add a page**.
@@ -80,7 +80,7 @@ Use this procedure if the app that you want to embed isn't related to an existin
     > - The app or website must be configured to allow itself to be embedded.
 
 5. Select **Save** to add the app to the dashboard as a new tile.
-6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't being rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
+6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't being rendered, see the [Troubleshooting](#troubleshooting) section later in this article.
 
 ## Sharing embedded apps
 
@@ -94,7 +94,7 @@ After you've embedded an app by using one of the methods that are described in t
 
 ## Viewing embedded apps
 
-To view an embedded app on a page in Finance and Operations apps, open the page that has the embedded app. Remember that, on some pages, embedded apps can be accessed by using the **Power Apps** button on the standard Action Pane. Alternatively, they might appear directly on the page as a new tab, FastTab, or blade, or as a new section in a workspace.
+To view an embedded app on a page in finance and operations apps, open the page that has the embedded app. Remember that, on some pages, embedded apps can be accessed by using the **Power Apps** button on the standard Action Pane. Alternatively, they might appear directly on the page as a new tab, FastTab, or blade, or as a new section in a workspace.
 
 ## Editing or removing embedded apps
 
@@ -131,6 +131,7 @@ If a website isn't rendered correctly after it's embedded in a Finance and Opera
 
 ### [Developer] Modeling a website on a form
 
-Although this topic is focused on embedding third-party apps or websites through personalization, developers can also embed them in a form by using the Visual Studio development experience. Just add a **WebsiteHostControl** control to the form. The metadata properties that are available for the control provide the same capabilities as the personalization experience.
+Although this article is focused on embedding third-party apps or websites through personalization, developers can also embed them in a form by using the Visual Studio development experience. Just add a **WebsiteHostControl** control to the form. The metadata properties that are available for the control provide the same capabilities as the personalization experience.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

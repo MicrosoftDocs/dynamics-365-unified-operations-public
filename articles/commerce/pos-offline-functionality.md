@@ -4,7 +4,7 @@
 title: Offline point of sale (POS) functionality
 description: This article provides information about offline mode for Modern POS, in which POS devices automatically switch from the channel database to the offline database if the Commerce Scale Unit is unavailable. This article also includes general setup information for offline mode and explains the data synchronization that occurs between the offline database and the channel database.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ You can add a button to Modern POS to manually switch between online and offline
 
 ## Setup
 
-To enable offline support for a POS device (register), set the **Support offline** option to **Yes** on the **Register** page. A new channel database entity is created and added to the store's channel data group. Then run all the required distribution schedules to generate the data packages for the offline database. Next, install the offline version of Modern POS. The installation process creates the offline database. Additionally, install Microsoft SQL Server 2014 Express if it is required. Offline data synchronization starts after the first sign-in to Modern POS.
+To enable offline support for a POS device (register), set the **Support offline** option to **Yes** on the **Register** page. A new channel database entity is created and added to the store's channel data group. Then run all the required distribution schedules to generate the data packages for the offline database. Next, install the offline version of Modern POS. The installation process creates the offline database. Additionally, install a currently supported version of Microsoft SQL Server Express if it is required. (Currently, SQL 2019 is the most up-to-date version available). Offline data synchronization starts after the first sign-in to Modern POS.
 
 ## Data synchronization
 

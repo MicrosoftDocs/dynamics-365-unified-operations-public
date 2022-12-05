@@ -2,7 +2,7 @@
 # required metadata
 
 title: How do I set up balancing financial dimensions?
-description: This topic describes the options for setting up and using the Balancing financial dimension feature.
+description: This article describes the options for setting up and using the Balancing financial dimension feature.
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.210
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the options for setting up and using the Balancing financial dimension feature.
+This article describes the options for setting up and using the Balancing financial dimension feature.
 
 ## Symptom
 
-There are two options for setting up balancing financial dimensions. The first option is to use the **Balancing financial dimension** field on the **Ledger** setup page (**General ledger \> Ledger setup \> Ledger**). The second option is to use the **Require the dimension to be balanced** field on the **Financial dimensions** page (**General ledger > Chart of accounts \> Dimensions \> Financial dimensions**). This topic explains the difference between these two options.
+There are two options for setting up balancing financial dimensions. The first option is to use the **Balancing financial dimension** field on the **Ledger** setup page (**General ledger \> Ledger setup \> Ledger**). The second option is to use the **Require the dimension to be balanced** field on the **Financial dimensions** page (**General ledger > Chart of accounts \> Dimensions \> Financial dimensions**). This article explains the difference between these two options.
 
 ## Resolution
 

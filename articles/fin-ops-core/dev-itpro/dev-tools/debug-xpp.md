@@ -1,24 +1,24 @@
 ---
 title: Debug X++ code by using the debugger in Visual Studio
-description: This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
-author: RobinARH
+description: This article reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 23921
-ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 23921
+ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
 ---
 
 # Debug X++ code by using the debugger in Visual Studio
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.
+This article reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio.
 
 To debug X++ code, you use the debugger in Microsoft Visual Studio. The process is similar to the process that is used for any other application that is created in Visual Studio. For example, the standard tools for examining the application are available when your code is stopped at a breakpoint.
 
@@ -44,7 +44,7 @@ To debug X++ code, follow these steps.
 
    [![Hover.](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Another tool that is specific to Finance and Operations applications is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**.
+   Another tool that is specific to finance and operations applications is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**.
 
    [![Infolog.](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 
@@ -126,3 +126,4 @@ Put a breakpoint on the print statements by pressing F9 while that statement is 
 The **Immediate** window is a debugger feature that lets you enter expressions and statements to evaluate at any given time. This feature isn't implemented in the X++ stack. However, you can still benefit from the immediate window. The snippets must be expressed in C\#, not in X++.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

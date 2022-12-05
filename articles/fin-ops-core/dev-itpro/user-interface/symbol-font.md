@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Dynamics Symbol font
-description: This topic provides a link to the list of available symbols for each release.
-author: RobinARH
+description: This article provides a link to the list of available symbols for each release.
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 16321
-ms.assetid: 32e3235e-46b0-4fd9-a138-ff712191ba84
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: bensm
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16321
+ms.assetid: 32e3235e-46b0-4fd9-a138-ff712191ba84
 ---
 
 # Dynamics Symbol font

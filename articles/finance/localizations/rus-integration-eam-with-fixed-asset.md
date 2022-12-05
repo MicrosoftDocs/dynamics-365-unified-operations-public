@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: Integration of the Asset management module with the Fixed asset (Russia) module 
-description: This topic provides information about the integration of the Asset management module with the Fixed asset (Russia) module.
-author: v-oloski
+title: Integration of the Asset management module with the Fixed asset (Russia) module
+description: This article provides information about the integration of the Asset management module with the Fixed asset (Russia) module.
+author: AdamTrukawka
 ms.date: 01/31/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: v-olgaoskina
+ms.author: atrukawk
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: 10.0.25
-
+ms.search.form: 
 ---
 # Integration of the Asset management module with the Fixed asset (Russia) module
 

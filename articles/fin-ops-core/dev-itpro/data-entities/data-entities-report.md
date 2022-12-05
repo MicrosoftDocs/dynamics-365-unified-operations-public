@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Find information about standard data entities
-description: This topic describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
-author: tonyafehr
+description: This article describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
+author: peakerbl
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 202654
-ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 202654
+ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ---
 
 # Find information about standard data entities

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and work with call center fraud alerts
-description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes that are used to automatically or manually put suspicious orders on hold. 
+description: This article explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes that are used to automatically or manually put suspicious orders on hold. 
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to set up criteria and rules to put potentially fraudulent sales orders on hold for further review. The fraud check feature is used to determine the validity of the information in a sales order. If the information in the sales order appears to be questionable, based on an organization's fraud criteria and rules, the order can be put on hold for further review. In this case, the order can't be released to the warehouse for further processing until the hold has been cleared.
+This article explains how to set up criteria and rules to put potentially fraudulent sales orders on hold for further review. The fraud check feature is used to determine the validity of the information in a sales order. If the information in the sales order appears to be questionable, based on an organization's fraud criteria and rules, the order can be put on hold for further review. In this case, the order can't be released to the warehouse for further processing until the hold has been cleared.
 
 > [!NOTE]
 > This feature can be used only with sales order processing for the Commerce call center channel.

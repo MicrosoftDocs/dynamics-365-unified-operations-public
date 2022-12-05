@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and work with custom fields
-description: This topic shows you how to create custom fields through the user interface to tailor the application to fit your business.
+description: This article shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
 ms.date: 05/24/2021
 ms.topic: article

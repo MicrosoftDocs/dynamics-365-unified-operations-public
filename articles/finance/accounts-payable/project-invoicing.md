@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project invoicing
-description: This topic provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
+description: This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 author: TaylorVH
 ms.date: 07/10/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
+This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 
 The project type determines which invoicing procedure should be applied. Only the two external project types, Time and material and Fixed-price, can be invoiced. Time and material projects and Fixed-price projects are always attached to a project contract.
 

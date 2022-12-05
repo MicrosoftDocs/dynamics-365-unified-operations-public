@@ -70,7 +70,7 @@ The following list pages help you organize collections information.
 
 > [!NOTE]
 > An aging snapshot must be created before you can view information on these list pages. Information is displayed only for customers for whom an aging snapshot has been created. The records that are shown on the list page can be additionally filtered, as follows:
-> <li>By default, a Finance and Operations user has access to all customers who have an aging snapshot.</li>
+> <li>By default, a finance and operations user has access to all customers who have an aging snapshot.</li>
 > <li>If customer pools exist, a user must be set up as a collections agent to use the pools to filter information on the collections list pages. Information is limited to the customers who are included in the selected customer pool.</li>
 > <li>If a user is set up as a collections agent, only the pools that are selected for that collections agent are available on the list page. If the Allow agent to view all customer pools toggle is selected in the Collections agent page for the collections agent, all pools are available for that agent.</li>
 
@@ -115,3 +115,4 @@ You can process NSF payments by clicking NSF payment in the Collections page. Wh
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

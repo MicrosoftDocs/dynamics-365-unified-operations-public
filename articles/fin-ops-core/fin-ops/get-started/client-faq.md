@@ -2,7 +2,7 @@
 # required metadata
 
 title: Client FAQ
-description: This article provides answers to frequently asked questions about the Finance and Operations client.
+description: This article provides answers to frequently asked questions about the finance and operations client.
 author: jasongre
 ms.date: 09/11/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This article provides answers to frequently asked questions about the Finance and Operations client.
+This article provides answers to frequently asked questions about the finance and operations client.
 
 ## Why aren't symbols loaded?
 

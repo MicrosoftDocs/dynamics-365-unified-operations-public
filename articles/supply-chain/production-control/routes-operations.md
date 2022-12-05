@@ -2,7 +2,7 @@
 # required metadata
 
 title: Routes and operations
-description: This topic provides information about routes and operations. 
+description: This article provides information about routes and operations. 
 author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
+This article provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 
 ## Overview
 

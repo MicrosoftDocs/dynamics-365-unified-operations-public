@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: DATETIMEFORMAT ER function
-description: This topic provides information about how the DATETIMEFORMAT Electronic reporting (ER) function is used.
-author: NickSelin
+description: This article provides information about how the DATETIMEFORMAT Electronic reporting (ER) function is used.
+author: kfend
 ms.date: 09/08/2021
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # DATETIMEFORMAT ER function

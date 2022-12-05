@@ -1,6 +1,6 @@
 ---
 title: Upgrade to the party and global address book model
-description: This topic describes how to upgrade dual-write data to the party and global address book model.
+description: This article describes how to upgrade dual-write data to the party and global address book model.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-03-31
 
 The [Microsoft Azure Data Factory templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) help you upgrade the following existing data in dual-write to the party and global address book model: data in the **Account**, **Contact**, and **Vendor** tables, and postal and electronic addresses.
 
-The following three Data Factory templates are provided. They help reconcile the data from both Finance and Operations apps and customer engagement apps.
+The following three Data Factory templates are provided. They help reconcile the data from both finance and operations apps and customer engagement apps.
 
 - **[Party template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Upgrade data to dual-write Party-GAB schema/arm_template.json)** – This template helps upgrade **Party** and **Contact** data that is associated with **Account**, **Contact**, and **Vendor** data.
 - **[Party postal address template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Upgrade data to dual-write Party-GAB schema/Upgrade to Party Postal Address - GAB/arm_template.json)** – This template helps upgrade the postal addresses that are associated with **Account**, **Contact**, and **Vendor** data.
@@ -29,13 +29,13 @@ At the end of the process, the following comma-separated values (.csv) files are
 
 | File name | Purpose |
 |---|---|
-| FONewParty.csv | This file helps create new **Party** records inside the Finance and Operations app. |
-| ImportFONewPostalAddressLocation.csv | This file helps create new **Postal Address Location** records in the Finance and Operations app. |
-| ImportFONewPartyPostalAddress.csv | This file helps create new **Party Postal address** records in the Finance and Operations app. |
-| ImportFONewPostalAddress.csv | This file helps create new **Postal Address** records in the Finance and Operations app. |
-| ImportFONewElectronicAddress.csv | This file helps create new **Electronic Address** records in the Finance and Operations app. |
+| FONewParty.csv | This file helps create new **Party** records inside the finance and operations app. |
+| ImportFONewPostalAddressLocation.csv | This file helps create new **Postal Address Location** records in the finance and operations app. |
+| ImportFONewPartyPostalAddress.csv | This file helps create new **Party Postal address** records in the finance and operations app. |
+| ImportFONewPostalAddress.csv | This file helps create new **Postal Address** records in the finance and operations app. |
+| ImportFONewElectronicAddress.csv | This file helps create new **Electronic Address** records in the finance and operations app. |
 
-This topic explains how to use the Data Factory templates and upgrade your data. If you don't have any customizations, you can use the templates as they are. However, if you have customizations for **Account**, **Contact**, and **Vendor** data, you must modify the templates as described in this topic.
+This article explains how to use the Data Factory templates and upgrade your data. If you don't have any customizations, you can use the templates as they are. However, if you have customizations for **Account**, **Contact**, and **Vendor** data, you must modify the templates as described in this article.
 
 > [!IMPORTANT]
 > There are special instructions for running the Party postal address and Party electronic address templates. You must run the Party template first, then the Party postal address template, and then the Party electronic address template. Each template is designed to import in a separate data factory.
@@ -56,7 +56,7 @@ An upgrade requires the following preparation:
 + **Integration keys:** The **Account (Customer)**, **Contact**, and **Vendor** tables in customer engagement apps are using the out-of-box integration keys. If you customized the integration keys, you must customize the template.
 + **Party number:** All **Account (Customer)**, **Contact**, and **Vendor** records that will be upgraded have a party number. Records that don't have a party number will be ignored. If you want to upgrade those records, add a party number to them before you start the upgrade process.
 + **System outage:** During the upgrade process, you will have to take both the Finance and operations environment and the customer engagement environment offline.
-+ **Snapshot:** Take a snapshot of both the Finance and Operations apps and the customer engagement apps. You can then use the snapshots to restore the previous state if you must.
++ **Snapshot:** Take a snapshot of both the finance and operations apps and the customer engagement apps. You can then use the snapshots to restore the previous state if you must.
 
 ## Deployment
 
@@ -115,7 +115,7 @@ This section describes the setup that is required before you run the Party posta
 
 ### Setup to run the Party postal address template
 
-1. Sign in to customer engagement apps, and go to **Settings** \> **Personalization Settings**. Then, on the **General** tab, configure time zone setting for the system admin account. The time zone must be in Coordinated Universal Time (UTC) to update the "valid from" and "valid to" dates of postal addresses from Finance and Operations apps.
+1. Sign in to customer engagement apps, and go to **Settings** \> **Personalization Settings**. Then, on the **General** tab, configure time zone setting for the system admin account. The time zone must be in Coordinated Universal Time (UTC) to update the "valid from" and "valid to" dates of postal addresses from finance and operations apps.
 
     ![Time zone setting for the system admin account.](media/ADF-1.png)
 
@@ -123,7 +123,7 @@ This section describes the setup that is required before you run the Party posta
 
     | Number | Name | Type | Value |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | string | This parameter appends a serial number to newly created postal addresses as a prefix. Be sure to provide a string that doesn't conflict with postal addresses in Finance and Operations apps and customer engagement apps. For example, use **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | string | This parameter appends a serial number to newly created postal addresses as a prefix. Be sure to provide a string that doesn't conflict with postal addresses in finance and operations apps and customer engagement apps. For example, use **ADF-PAD-**. |
 
     ![PostalAddressIdPrefix global parameter created on the Manage tab.](media/ADF-2.png)
 
@@ -137,8 +137,8 @@ This section describes the setup that is required before you run the Party posta
 
     | Number | Name | Type | Value |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | This parameter determines which primary system addresses are replaced in the event of conflicts. If the value is **true**, the primary addresses in Finance and Operations apps will replace the primary addresses in customer engagement apps. If the value is **false**, the primary addresses in customer engagement apps will replace the primary addresses in Finance and Operations apps. |
-    | 2 | ElectronicAddressIdPrefix | string | This parameter appends a serial number to newly created electronic addresses as a prefix. Be sure to provide a string that doesn't conflict with electronic addresses in Finance and Operations apps and customer engagement apps. For example, use **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | This parameter determines which primary system addresses are replaced in the event of conflicts. If the value is **true**, the primary addresses in finance and operations apps will replace the primary addresses in customer engagement apps. If the value is **false**, the primary addresses in customer engagement apps will replace the primary addresses in finance and operations apps. |
+    | 2 | ElectronicAddressIdPrefix | string | This parameter appends a serial number to newly created electronic addresses as a prefix. Be sure to provide a string that doesn't conflict with electronic addresses in finance and operations apps and customer engagement apps. For example, use **ADF-EAD-**. |
 
     ![IsFOSource and ElectronicAddressIdPrefix global parameters created on the Manage tab.](media/ADF-4.png)
 
@@ -162,7 +162,7 @@ This section describes the setup that is required before you run the Party posta
 
 2. Make sure that the maps are removed from the **msdy_dualwriteruntimeconfig** table in Dataverse.
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab) from AppSource.
-4. In the Finance and Operations app, run **Initial Sync** for the following tables if they contain data:
+4. In the finance and operations app, run **Initial Sync** for the following tables if they contain data:
 
     + Salutations
     + Personal character types
@@ -262,21 +262,21 @@ This section describes the setup that is required before you run the Party posta
     > [!NOTE]
     > If you have customizations for **Account**, **Contact**, and **Vendor**, you must modify the template.
 
-8. Import the new **Party** records into the Finance and Operations app.
+8. Import the new **Party** records into the finance and operations app.
 
     1. Download the **FONewParty.csv** file from Azure Blob storage. The path is **partybootstrapping/output/FONewParty.csv**.
-    2. Convert the **FONewParty.csv** file to an Excel file, and import the Excel file into the Finance and Operations app. Alternatively, if the CSV import works for you, you can import the .csv file directly. This step might take a few hours to be completed, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
+    2. Convert the **FONewParty.csv** file to an Excel file, and import the Excel file into the finance and operations app. Alternatively, if the CSV import works for you, you can import the .csv file directly. This step might take a few hours to be completed, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
 
     ![Importing the Dataverse Party records.](media/data-factory-import-party.png)
 
-9. In the data factory, run the Party postal address and Party electronic address templates, one after the other.
+9. In the data factory, run the Party electronic address and then the Party postal address templates, one after the other.
 
     + The Party postal address template upserts all postal address records in the customer engagement app, and associates them with corresponding **Account**, **Contact**, and **Vendor** records. It also generates three .csv files: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv, and ImportFONewPostalAddress.csv.
     + The Party electronic address template upserts all electronic addresses in the customer engagement app, and associates them with corresponding **Account**, **Contact**, and **Vendor** records. It also generates one .csv file: ImportFONewElectronicAddress.csv.
 
     ![Running the Party postal address and Party electronic address templates.](media/ADF-7.png)
 
-10. To update the Finance and Operations app with this data, you must convert the .csv files into an Excel workbook and [import it into the Finance and Operations app](../data-import-export-job.md). Alternatively, if the CSV import works for you, you can import the .csv files directly. This step might take a few hours to be completed, depending on the volume.
+10. To update the finance and operations app with this data, you must convert the .csv files into an Excel workbook and [import it into the finance and operations app](../data-import-export-job.md). Alternatively, if the CSV import works for you, you can import the .csv files directly. This step might take a few hours to be completed, depending on the volume.
 
     ![Successful import.](media/ADF-8.png)
 
@@ -359,9 +359,9 @@ This section takes you through the steps in each Data Factory template.
 ### Steps in the Party template
 
 1. Steps 1 through 6 identify the companies that are enabled for dual-write and builds a filter clause for them.
-2. Steps 7-1 through 7-9 retrieve data from both the Finance and Operations app and the customer engagement app, and stage that data for upgrade.
-3. Steps 8 through 9 compare the party number for **Account**, **Contact**, and **Vendor** records between the Finance and Operations app and the customer engagement app. Any records that don't have a party number are skipped.
-4. Step 10 generates two .csv file for the party records that must be created in the customer engagement app and the Finance and Operations app.
+2. Steps 7-1 through 7-9 retrieve data from both the finance and operations app and the customer engagement app, and stage that data for upgrade.
+3. Steps 8 through 9 compare the party number for **Account**, **Contact**, and **Vendor** records between the finance and operations app and the customer engagement app. Any records that don't have a party number are skipped.
+4. Step 10 generates two .csv file for the party records that must be created in the customer engagement app and the finance and operations app.
 
     - **FOCDSParty.csv** – This file contains all party records of both systems, regardless of whether the company is enabled for dual-write.
     - **FONewParty.csv** – This file contains a subset of the party records that Dataverse is aware of (for example, accounts of the **Prospect** type).
@@ -377,12 +377,12 @@ This section takes you through the steps in each Data Factory template.
 
 ### Steps in the Party postal address template
 
-1. Steps 1-1 through 1-10 retrieve data from both the Finance and Operations app and the customer engagement app, and stage that data for upgrade.
-2. Step 2 de-normalizes the postal address data in the Finance and Operations app by joining the postal address and the party postal address.
+1. Steps 1-1 through 1-10 retrieve data from both the finance and operations app and the customer engagement app, and stage that data for upgrade.
+2. Step 2 de-normalizes the postal address data in the finance and operations app by joining the postal address and the party postal address.
 3. Step 3 de-duplicates and merges account, contact, and vendor address data from the customer engagement app.
-4. Step 4 creates .csv files for the Finance and Operations app to create new address data that is based on account, contact, and vendor addresses.
-5. Step 5-1 creates .csv files for the customer engagement app to create all address data, based on both the Finance and Operations app and the customer engagement app.
-6. Step 5-2 converts the .csv files into the Finance and Operations import format for manual import.
+4. Step 4 creates .csv files for the finance and operations app to create new address data that is based on account, contact, and vendor addresses.
+5. Step 5-1 creates .csv files for the customer engagement app to create all address data, based on both the finance and operations app and the customer engagement app.
+6. Step 5-2 converts the .csv files into the finance and operations import format for manual import.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -396,13 +396,13 @@ This section takes you through the steps in each Data Factory template.
 
 ### Steps in the Party electronic address template
 
-1. Steps 1-1 through 1-5 retrieve data from both the Finance and Operations app and the customer engagement app, and stage that data for upgrade.
+1. Steps 1-1 through 1-5 retrieve data from both the finance and operations app and the customer engagement app, and stage that data for upgrade.
 2. Step 2 consolidates electronic addresses in the customer engagement app from account, contact, and vendor entities.
-3. Step 3 merges primary electronic address data from the customer engagement app and the Finance and Operations app.
+3. Step 3 merges primary electronic address data from the customer engagement app and the finance and operations app.
 4. Step 4 creates .csv files.
 
-    - Create new electronic address data for the Finance and Operations app, based on account, contact, and vendor addresses.
-    - Create new electronic address data for the customer engagement app, based on electronic address, account, contact and vendor addresses in the Finance and Operations app.
+    - Create new electronic address data for the finance and operations app, based on account, contact, and vendor addresses.
+    - Create new electronic address data for the customer engagement app, based on electronic address, account, contact and vendor addresses in the finance and operations app.
 
 5. Step 5-1 imports electronic addresses into the customer engagement app.
 6. Step 5-2 creates .csv files to update primary addresses for accounts and contacts in the customer engagement app.
@@ -420,3 +420,4 @@ This section takes you through the steps in each Data Factory template.
 ## Learn more about the template
 
 For more information about the template, see [Comments for Azure Data Factory template readme](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+

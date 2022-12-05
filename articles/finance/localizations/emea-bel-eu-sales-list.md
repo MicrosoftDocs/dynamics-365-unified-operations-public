@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: EU Sales list for Belgium
-description: This topic provides information about the European Union (EU) sales list report for Belgium.
-author: AKroshkina
+description: This article provides information about the European Union (EU) sales list report for Belgium.
+author: AdamTrukawka
 ms.date: 05/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # EU sales list for Belgium
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report for Belgium. The Belgian EU sales list report contains information about the sale of goods and services for reporting in XML format.
+This article provides information about the European Union (EU) sales list report for Belgium. The Belgian EU sales list report contains information about the sale of goods and services for reporting in XML format.
 
 The following fields are included in the Belgian EU sales list report:
 

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up number sequences using a wizard
-description: This topic explains how to set up all required number sequences at the same time by using a wizard. 
+description: This article explains how to set up all required number sequences at the same time by using a wizard. 
 author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. This topic explains how to set up all required number sequences at the same time by using a wizard. The demo data company used to create this procedure is USMF.
+Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. This article explains how to set up all required number sequences at the same time by using a wizard. The demo data company used to create this procedure is USMF.
 
 1. Go to **Navigation > Modules > Organization administration > Number sequences > Number sequences**.
 2. Select **Generate**.

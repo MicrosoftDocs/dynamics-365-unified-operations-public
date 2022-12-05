@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll employee
-description: This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
 author: jcart
 ms.date: 08/25/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Payroll employee entity for Dynamics 365 Human Resources.
+This article describes the Payroll employee entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_payrollemployeeentity.
 

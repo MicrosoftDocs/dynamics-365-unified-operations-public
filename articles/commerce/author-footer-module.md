@@ -1,35 +1,26 @@
 ---
-# required metadata
-
-title: Footer module 
-description: This topic covers footer modules and how to author them in Dynamics 365 Commerce.
+title: Footer module
+description: This article covers footer modules and how to author them in Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+ms.assetid: 
 ---
 
 # Footer module  
 
 [!include [banner](includes/banner.md)]
 
-This topic covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.
+This article covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 
 The footer module is a special container that is used to host the modules that appear in the page footer. For example, it can include links to various pages across the site, such as **Contact Us** and **Store Policies** pages.
 

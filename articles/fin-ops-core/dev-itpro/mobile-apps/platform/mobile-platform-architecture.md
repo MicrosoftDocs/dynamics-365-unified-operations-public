@@ -1,13 +1,13 @@
 ---
 title: Architecture and design considerations for the mobile platform
-description: This topic provides architecture and design considerations for the mobile platform.
-author: tonyafehr
+description: This article provides architecture and design considerations for the mobile platform.
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: overview
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---
@@ -21,7 +21,7 @@ The mobile app communicates with Application Object Server (AOS) to get the meta
 
 ![Mobile architecture.](media/mobilearchitecture.png)
 
-The mobile app platform doesn't assume connectivity to Finance and Operations apps. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
+The mobile app platform doesn't assume connectivity to finance and operations apps. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
@@ -77,3 +77,4 @@ The mobile app designer lets you select the specific data fields from forms that
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

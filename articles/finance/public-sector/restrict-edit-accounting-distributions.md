@@ -2,7 +2,7 @@
 # required metadata
 
 title: Restrict editing of accounting distributions on invoices
-description: This topic explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
+description: This article explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
 author: v-kiarnd
 ms.date: 10/14/2020
 ms.topic: article
@@ -11,10 +11,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice. You can set up specific financial dimensions that must match between a PO and an invoice that is created from it. For example, you can require that all financial dimensions match between POs and invoices. On invoices that are associated with a PO, you can't change the general ledger accounts on the invoice detail lines so that they differ from the accounts that were entered on the PO lines.
+This article explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice. You can set up specific financial dimensions that must match between a PO and an invoice that is created from it. For example, you can require that all financial dimensions match between POs and invoices. On invoices that are associated with a PO, you can't change the general ledger accounts on the invoice detail lines so that they differ from the accounts that were entered on the PO lines.
 
 ## Set up locked financial dimensions
 

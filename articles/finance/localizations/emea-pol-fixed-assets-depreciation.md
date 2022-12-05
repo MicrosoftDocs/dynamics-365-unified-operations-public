@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Fixed assets depreciation for Poland
-description: This topic provides information about fixed assets depreciation for legal entities in Poland.
-author: ShylaThompson
+description: This article provides information about fixed assets depreciation for legal entities in Poland.
+author: AdamTrukawka
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264274
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 264274
+ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
 ---
 
 # Fixed assets depreciation for Poland
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about fixed assets depreciation for legal entities in Poland.
+This article provides information about fixed assets depreciation for legal entities in Poland.
 
 The Fixed assets depreciation features that are based on legal requirements in Poland include:
 

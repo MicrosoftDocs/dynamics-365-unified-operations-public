@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Adjust an ER format to generate a custom electronic document
-description: This topic explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
-author: NickSelin
+description: This article explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["220314", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314,  ""intro-internal
+ms.assetid: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 ---
 
 # Adjust an ER format to generate a custom electronic document
 
 [!include[banner](../includes/banner.md)]
 
-The procedures in this topic explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
+The procedures in this article explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER) framework](general-electronic-reporting.md).
 - Import ER configurations that are provided by Microsoft and used to generate a payment file while a [vendor payment](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) is being processed.
@@ -274,7 +264,7 @@ In this case, as the representative of Litware, Inc., you must create (derive) a
 
 6. Select **Create configuration**.
 
-Version 1.1.1 of the **BACS (UK custom)** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
+Version 1.1.1 of the **BACS (UK custom)** ER format configuration is created. This version has a status of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
 ![Configurations page with Version 1.1.1 of the BACS (UK custom) ER format configuration.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -327,7 +317,7 @@ You must configure your custom format so that it meets bank-specific requirement
 
 ### <a id="MarkFormatRunnable"></a>Mark a custom format as runnable
 
-Now that the first version of your custom format has been created and has a status of **Draft**, you can run it for testing purposes. To run the report, you must process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
+Now that the first version of your custom format has been created and has a status of **Draft**, you can run it for testing purposes. To run the report, you must process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are considered. This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
 
 To use the draft version of an ER format, you must explicitly mark the ER format.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dimension hierarchy
-description: This topic provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
+description: This article provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
+This article provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 
 ## Overview
 

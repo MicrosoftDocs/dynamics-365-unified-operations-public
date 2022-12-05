@@ -2,7 +2,7 @@
 # required metadata
 
 title: Supply Chain Management home page
-description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
+description: This page provides a list of the help articles and other resources for Supply Chain Management features.   
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources in Dynamics 365 Supply Chain Management.
+This article provides a list of the help articles and other resources in Dynamics 365 Supply Chain Management.
 
 ## What's new and in development
 
@@ -61,16 +61,16 @@ For information on Dynamics 365 Finance, go to the [Finance home page](../financ
 
 ## Videos
 
-This short video summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
+This short video summarize the new supply chain management features added to Microsoft Dynamics 365 Finance version 8.0 (April 2018).
 
-- [Synchronize a work order between Field Service and Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronize a work order between Field Service and finance and operations](https://youtu.be/hAB4TDVMjxU)
 
-These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
+These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (December 2017).
 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 Finance, Enterprise edition (July 2017).
 
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
@@ -78,7 +78,7 @@ These short videos summarize the new supply chain management features added to M
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 - [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
-The following tech conference recordings discuss supply chain management functionality from previous versions of Finance and Operations. This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.
+The following tech conference recordings discuss supply chain management functionality from previous versions of finance and operations. This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.
 
 - **Cost management:**
   - [Overview of Cost management](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -98,7 +98,7 @@ The following tech conference recordings discuss supply chain management functio
 
 ## Blogs
 
-There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
+There are many articles about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
 
 ## White papers
 
@@ -107,7 +107,6 @@ There are many topics about manufacturing and supply chain management on the [Dy
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Supply Chain Management on Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
-
+For online courses and training, check out [Dynamics 365 Supply Chain Management](/training/browse/?products=dynamics-scm&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

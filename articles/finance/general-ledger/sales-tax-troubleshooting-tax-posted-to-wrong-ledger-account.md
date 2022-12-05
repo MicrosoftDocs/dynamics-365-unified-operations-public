@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax is posted to the wrong ledger account in the voucher
-description: This topic provides troubleshooting information that can help when tax is posted to the wrong ledger account in the voucher.
+description: This article provides troubleshooting information that can help when tax is posted to the wrong ledger account in the voucher.
 author: qire
 ms.date: 04/12/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-During posting, tax might be posted to the wrong ledger account in the voucher. To troubleshoot this issue, follow the steps in the following sections as required. The examples in this topic use a sales order as the business document.
+During posting, tax might be posted to the wrong ledger account in the voucher. To troubleshoot this issue, follow the steps in the following sections as required. The examples in this article use a sales order as the business document.
 
 ## Find the tax code of the incorrectly posted tax transaction
 

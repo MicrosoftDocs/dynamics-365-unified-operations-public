@@ -56,7 +56,7 @@ Service orders that you create automatically are not attached to an SLA.
 
 ## Apply the service level agreement to the service agreement
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**. Select the service agreement that you want to apply the SLA to, and then click **Edit** on the **Action Pane**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**. Select the service agreement that you want to apply the SLA to, and then click **Edit** on the **Action Pane**.
 
 2.  In the **Service level agreement** field, select the SLA that you want to assign.
 

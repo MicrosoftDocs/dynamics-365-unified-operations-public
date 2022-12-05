@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment methods in call centers
-description: This topic describes the various payment methods that you can use in a call center in Dynamics 365 Commerce.
+description: This article describes the various payment methods that you can use in a call center in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 03/28/2018
 ms.topic: article

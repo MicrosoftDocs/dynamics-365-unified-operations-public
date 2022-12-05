@@ -1,39 +1,28 @@
 ---
-# required metadata
-
 title: Create custom designs for business documents
-description: This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
+description: This article shows how to create a custom report design for an existing application business document by using a pure extension model.
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266574
-ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
+ms.custom: 266574
+ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
 ---
 
 # Create custom designs for business documents
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to create a custom report design for an existing application business document by using a pure extension model.
+This article shows how to create a custom report design for an existing application business document by using a pure extension model.
 
-Microsoft Dynamics 365 Finance includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.
+Microsoft Dynamics 365 Finance includes an expanded set of tools to support custom solutions. This article focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this article to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.
 
 [![extendingprintmgt.](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)
 

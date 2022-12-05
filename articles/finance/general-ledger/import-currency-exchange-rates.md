@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import currency exchange rates
-description: This topic provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
+description: This article provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
 author: EvgenyPopovMBS
 ms.date: 03/17/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
+If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This article provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
 
 The following sections describe the flow of information that is used for setting up and processing the import of foreign exchange rates.
 

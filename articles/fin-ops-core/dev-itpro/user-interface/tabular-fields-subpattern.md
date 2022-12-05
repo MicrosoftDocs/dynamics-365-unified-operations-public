@@ -1,11 +1,11 @@
 ---
 title: Tabular Fields subpattern
-description: This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
+description: This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-audience: Developer 
-ms.reviewer: tfehr
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28

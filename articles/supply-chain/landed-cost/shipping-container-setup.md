@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipping containers
-description: This topic describes how to set up shipping containers for the Landed cost module.
+description: This article describes how to set up shipping containers for the Landed cost module.
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up shipping containers for the **Landed cost** module.
+This article describes how to set up shipping containers for the **Landed cost** module.
 
 ## <a id="shipping-container-types"></a>Set up shipping container types
 
@@ -58,7 +58,7 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 | Field | Description |
 |---|---|
 | Shipping container | Enter a unique identification name/number for the shipping container. |
-| Shipping container type | Select the type of shipping container. For more information, see the [Set up shipping container types](#shipping-container-types) section earlier in this topic. |
+| Shipping container type | Select the type of shipping container. For more information, see the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
 
 > [!NOTE]
 > - The shipping container setup is optional. Typically, you will use it only if your company owns its own shipping containers or often reuses the same shipping containers.

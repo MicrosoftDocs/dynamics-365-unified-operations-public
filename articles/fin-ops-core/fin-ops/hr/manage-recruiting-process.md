@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage recruiting processes
-description: This topic describes a concept that recruiters can use to track the steps in a recruiting process.
+description: This article describes a concept that recruiters can use to track the steps in a recruiting process.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
@@ -30,10 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0
 # Manage recruiting processes
 
 > [!IMPORTANT]
-> The recruiting functionality in this topic will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects. 
+> The recruiting functionality in this article will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects. 
 
 
-This topic describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
+This article describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
 
 ## Overview
 

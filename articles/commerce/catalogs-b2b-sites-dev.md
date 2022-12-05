@@ -3,9 +3,9 @@
 # required metadata
 
 title: Extensibility impact of Commerce catalogs for B2B customizations
-description: This topic describes the extensibility impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
+description: This article describes the extensibility impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,9 +17,8 @@ ms.search.validFrom: 2022-02-28
 # Extensibility impact of Commerce catalogs for B2B customizations
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-This topic describes the extensibility impact of the **Commerce catalogs for B2B** feature in Microsoft Dynamics 365 Commerce.
+This article describes the extensibility impact of the **Commerce catalogs for B2B** feature in Microsoft Dynamics 365 Commerce.
 
 If you're interested in extending the catalog context to custom scenarios, your customizations might have to be updated. This update follows the standard process that customers must follow, because their customizations might not automatically support the latest features after upgrades are done. If your customizations include any new feature or bug fixes in their experiences, we recommend that you update the customization code accordingly. This update resembles the changes that Microsoft might have made for the core code.
 
@@ -66,3 +65,5 @@ The following customization cases require development updates:
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
+
+[Catalog picker module](catalog-picker.md)

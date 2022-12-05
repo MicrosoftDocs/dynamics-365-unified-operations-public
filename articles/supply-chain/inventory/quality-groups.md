@@ -2,7 +2,7 @@
 # required metadata
 
 title: Item quality groups
-description: This topic describes how to use and create item quality groups to logically group products so that they can be assigned to quality associations for the automatic generation of quality orders.
+description: This article describes how to use and create item quality groups to logically group products so that they can be assigned to quality associations for the automatic generation of quality orders.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A quality group represents common testing requirements for items. This topic describes how to use and create item quality groups to logically group products so that they can be assigned to quality associations for the automatic generation of quality orders.
+A quality group represents common testing requirements for items. This article describes how to use and create item quality groups to logically group products so that they can be assigned to quality associations for the automatic generation of quality orders.
 
 To set up, edit, and view the items that are assigned to a quality group, or the quality groups that are assigned to an item, go to **Inventory management \> Setup \> Quality groups**. After you define the test requirements on the **Test groups** page, you can define the rules for automatically generating quality orders. To simplify the process, you don't define rules for individual items. Instead, you can define the rules for a quality group on the **Quality associations** page.
 

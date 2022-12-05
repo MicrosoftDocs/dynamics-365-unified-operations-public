@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer aging data storage
-description: This topic describes the process of using external storage for customer aging data. You can run the Customer aging data storage process to make the output available for export to an external system.
+description: This article describes the process of using external storage for customer aging data. You can run the Customer aging data storage process to make the output available for export to an external system.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run the **Customer aging data storage** process to make the output available for export to an external system. When you run the process, the same aging report options that are available in the system are available to external systems. The details are always included in the exported data.
+This article describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run the **Customer aging data storage** process to make the output available for export to an external system. When you run the process, the same aging report options that are available in the system are available to external systems. The details are always included in the exported data.
 
 It can be helpful to make customer aging data available to an external system for storage in cases where the output contains many customers and/or many transactions. If the existing **Customer aging** report times out because it has too much data to print, this feature provides an alternative way to get the same data.
 

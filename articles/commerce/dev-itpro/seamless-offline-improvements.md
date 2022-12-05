@@ -2,7 +2,7 @@
 # required metadata
 
 title: Seamless offline switch for gift card and credit memo operations
-description: This topic provides an overview of improvements that provide a seamless offline switch for specific payment types. 
+description: This article provides an overview of improvements that provide a seamless offline switch for specific payment types. 
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-If a point of sale (POS) device loses its connection to the channel database, most POS operations and transactions that were in progress can proceed after the cashier receives a warning message about the loss of connectivity. However, in some cases, transactions have elements that rely on the real-time service, and those elements aren't supported when the POS is offline. This topic describes some functionality that helps reduce the impact of lost connectivity in these scenarios.
+If a point of sale (POS) device loses its connection to the channel database, most POS operations and transactions that were in progress can proceed after the cashier receives a warning message about the loss of connectivity. However, in some cases, transactions have elements that rely on the real-time service, and those elements aren't supported when the POS is offline. This article describes some functionality that helps reduce the impact of lost connectivity in these scenarios.
 
 ## Completing gift card transactions in offline mode
 
@@ -55,7 +55,7 @@ To enable the functionality to conclude credit memo transactions after switching
 
 Commerce parameters are typically cached. Therefore, after the setting of this parameter is updated, and the distribution schedule is initiated to sync the change to the channel, the change can take up to 24 hours to take effect. To make the change effective immediately, reset IIS.
 
-## Related topics
+## Related articles
 
 - [Offline point of sale (POS) functionality](../pos-offline-functionality.md)
 - [Online and offline point of sale (POS) operations](../pos-operations.md)

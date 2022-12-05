@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Sales tax report for Sweden
-description: This topic explains how to set up and generate the sales tax report for legal entities in Sweden.
-author: anasyash
+description: This article explains how to set up and generate the sales tax report for legal entities in Sweden.
+author: AdamTrukawka
 ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 262684
 ms.search.region: Sweden
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262684
+ms.search.form: 
 ---
 
 # Sales tax report for Sweden
@@ -119,7 +109,7 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
 You can also generate a Swedish sales tax report by using the **Report sales tax for settlement period** inquiry.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
-2. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](#generate) section earlier in this topic.
+2. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](#generate) section earlier in this article.
 3. In **Sales tax payment version** field, select one of the following options:
 
     - **Original** – Generate a report for sales tax transactions of the first posted settlement calculation for the period.

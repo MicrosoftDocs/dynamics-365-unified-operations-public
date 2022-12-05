@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Czech Intrastat
-description: This topic contains information about the Czech Intrastat report.
-author: anasyash
+description: This article contains information about the Czech Intrastat report.
+author: AdamTrukawka
 ms.date: 01/18/2022
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

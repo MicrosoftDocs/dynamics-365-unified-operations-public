@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure workflow properties
-description: This topic explains how to configure the various properties of a workflow.
+description: This article explains how to configure the various properties of a workflow.
 author: ChrisGarty
 ms.date: 07/07/2020
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how to configure the various properties of a workflow.
+This article explains how to configure the various properties of a workflow.
 
 To configure the properties of a workflow, open the workflow in the workflow editor. Click the canvas of the workflow editor, and then click **Properties** to open the **Properties** page. You can then use the following procedures to configure the various properties of the workflow.
 

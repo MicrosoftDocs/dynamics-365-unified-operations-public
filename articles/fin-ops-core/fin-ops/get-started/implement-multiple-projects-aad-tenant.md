@@ -2,7 +2,7 @@
 # required metadata
 
 title: Multiple LCS projects and environments on one Azure AD tenant
-description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
+description: This article explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
 ms.date: 02/03/2022
 ms.topic: article
@@ -81,8 +81,9 @@ After the allocation has been determined, open the [Subscription estimator](../.
 
 ## Online deployments in China sovereign cloud
 
-If your implementation includes China deployment/rollout, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service that has a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
+If your implementation includes China deployment/rollout, see [finance and operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service that has a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
 
 In this case, there is a single organization in multiple clouds with a different tenant (Azure Active Directory). The previously described advantages and disadvantages of multiple LCS projects or production environments still apply. However, the licensing requirements and request procedures differ. If you require process assistance, work with your Microsoft account executive or your implementation partners.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Commerce capabilities that are available in on-premises deployments
-description: This topic lists the Commerce capabilities available in on-premises deployments.
-author: aamirallaqaband
+description: This article lists the Commerce capabilities available in on-premises deployments.
+author: ShalabhjainMSFT
 ms.date: 01/31/2022
 ms.topic: article
 ms.prod: dynamics-365
-ms.service:
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
-ms.author: aamiral
-ms.search.validFrom: July 2017 update 
-ms.dyn365.ops.version: 2017-06-30 
+ms.author: shajain
+ms.search.validFrom: July 2017 update
+ms.dyn365.ops.version: 6/30/2017
+ms.service: 
 ---
 
 # Commerce capabilities that are available in on-premises deployments
 
 [!include [banner](includes/banner.md)]
 
-This topic lists Commerce capabilities that are available in on-premises deployments.
+This article lists Commerce capabilities that are available in on-premises deployments.
 
 For more information about on-premises deployments, see [On-premises deployment home page](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md).
 

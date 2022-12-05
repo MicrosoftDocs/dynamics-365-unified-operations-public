@@ -2,7 +2,7 @@
 # required metadata
 
 title: Known issues with self-service deployment
-description: This topic lists known issues that you might experience when using self-service deployment.
+description: This article lists known issues that you might experience when using self-service deployment.
 author: rashmansur
 ms.date: 03/31/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,8 +28,9 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
-This topic describes the known issues with [self-service deployment](infrastructure-stack.md).
+This article describes the known issues with [self-service deployment](infrastructure-stack.md).
 
 ## Lifecycle Services (LCS)
 
@@ -42,7 +43,7 @@ The following LCS features will not be implemented in self-service deployment.
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
-## Finance and Operations apps 
+## Finance and operations apps 
 
 > [!NOTE]
 > Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. For more information, see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md).
@@ -51,7 +52,7 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 The following feature will not be implemented in self-service deployment.
 
 - **Custom fonts** - Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
-- **Customizations related to user interface (UI) components on self service** - Customizations that do not use the standard Financial Reporting or SQL Server Reporting Services (SSRS) in Finance and Operations apps often take a dependency on UI components of the operating system where the AOS runs. Example dependencies include Windows fonts, web browsers such as Internet Explorer, or custom PDF rendering. We do not ensure the host operating system will include any support for font infrastructure, web browsers, or any general UI components. The host operating system will change when migrating to self-service infrastructure. If you have such dependencies and have additional questions, please contact Microsoft Support.
+- **Customizations related to user interface (UI) components on self service** - Customizations that do not use the standard Financial Reporting or SQL Server Reporting Services (SSRS) in finance and operations apps often take a dependency on UI components of the operating system where the AOS runs. Example dependencies include Windows fonts, web browsers such as Internet Explorer, or custom PDF rendering. We do not ensure the host operating system will include any support for font infrastructure, web browsers, or any general UI components. The host operating system will change when migrating to self-service infrastructure. If you have such dependencies and have additional questions, please contact Microsoft Support.
 
 ### Features no longer supported
 The following feature is no longer supported with self-service deployment.
@@ -61,7 +62,7 @@ Customizations relying on FTP are not supported with self-service deployment. Yo
 
 - We do not ensure that all outbound requests from an Application Object Server (AOS) are on a static IP address. 
 
-- Until June 2021, we will ensure that all outbound requests during a particular AOS session will be on the same IP address. This can have implications for some processes, such as FTP. We recommend removing the use of FTP by using Power Apps to pull the files in and make API calls into Finance and Operations apps to import the files using the Data Integration framework. For more information, see [Data entities integration overview](../data-entities/integration-overview.md). Some specific examples include:
+- Until June 2021, we will ensure that all outbound requests during a particular AOS session will be on the same IP address. This can have implications for some processes, such as FTP. We recommend removing the use of FTP by using Power Apps to pull the files in and make API calls into finance and operations apps to import the files using the Data Integration framework. For more information, see [Data entities integration overview](../data-entities/integration-overview.md). Some specific examples include:
 
   - Use the native SFTP connector (as described in [Monitor, create, and manage SFTP files in Azure Logic Apps](/azure/connectors/connectors-create-api-sftp)), which still requires some port opening on the firewall to call the on-premises service. Consider that for Logic Apps, the list of IPs is much shorter than the entire [region allowlist](/azure/logic-apps/logic-apps-limits-and-config#outbound) and the [limits and configuration in Power Automate](/power-automate/limits-and-config#logic-apps).
 

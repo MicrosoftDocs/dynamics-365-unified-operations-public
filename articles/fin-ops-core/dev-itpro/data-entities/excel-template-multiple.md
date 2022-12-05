@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data templates with multiple worksheets
-description: This topic describes how to import data using Excel data entity templates into Finance and Operations.
+description: This article describes how to import data using Excel data entity templates into finance and operations.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -59,3 +59,4 @@ You can upload an Excel file while using the **Run project** option to execute a
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

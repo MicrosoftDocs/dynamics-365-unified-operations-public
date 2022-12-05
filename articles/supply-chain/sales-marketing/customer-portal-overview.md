@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer portal for Dynamics 365 Supply Chain Management overview (contains video)
-description: This topic introduces the Customer portal, and explains who should use it and how it works.
+description: This article introduces the Customer portal, and explains who should use it and how it works.
 author: Henrikan
 ms.date: 06/16/2020
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -47,7 +47,7 @@ The Customer portal template has all the customization capabilities that the por
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Who should use it?
 
@@ -67,7 +67,7 @@ The Customer portal is provided as a Power Apps portals template. It depends on 
 
 [Power Apps portals](/powerapps/maker/portals/overview) is a feature that lets users create an externally facing website that people from outside the organization can sign in to. Little to no coding is required to make portals. The Customer portal is one of many [Dynamics 365 portal templates](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) that are available from Microsoft.
 
-[Dual-write](/powerapps/maker/portals/overview) is an out-of-box infrastructure product that provides near-real-time interaction between customer engagements apps and Finance and Operations apps. Dual-write provides bidirectional integration between Finance and Operations apps and Microsoft Dataverse. Therefore, it provides an integrated user experience across the apps. The Customer portal depends on tables that are synced with dual-write. Before data from Supply Chain Management can be surfaced in the Customer portal, dual-write must be enabled for all the appropriate tables.
+[Dual-write](/powerapps/maker/portals/overview) is an out-of-box infrastructure product that provides near-real-time interaction between customer engagements apps and finance and operations apps. Dual-write provides bidirectional integration between finance and operations apps and Microsoft Dataverse. Therefore, it provides an integrated user experience across the apps. The Customer portal depends on tables that are synced with dual-write. Before data from Supply Chain Management can be surfaced in the Customer portal, dual-write must be enabled for all the appropriate tables.
 
 ![Customer portal dependencies.](media/customer-portal-elements.png "Customer portal dependencies")
 

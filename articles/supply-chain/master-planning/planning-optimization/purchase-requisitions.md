@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase requisitions
-description: This topic describes how purchase requisitions are supported in Planning Optimization.
+description: This article describes purchase requisitions.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -62,7 +62,7 @@ When you set an approved requisitions time fence for an individual master plan, 
 1. Repeat steps 2 and 3 for each additional master plan where you want to set an approved requisitions time fence.
 
 > [!IMPORTANT]
-> **Coming soon:** Approved requisitions time fences aren't yet supported for Planning Optimization. Until they are supported, all values that you enter in the **Approved requisitions time fence (days)** field will be ignored.
+> Approved requisitions time fences aren't supported for Planning Optimization. Until they are supported, all values that you enter in the **Approved requisitions time fence (days)** field will be ignored.
 
 ## Independent supply, regardless of coverage code
 

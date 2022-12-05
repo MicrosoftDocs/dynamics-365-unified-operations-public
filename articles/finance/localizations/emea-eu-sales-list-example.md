@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Example for generic European Union (EU) sales list
-description: This topic provides information on how to set up and transfer a European Union (EU) sales list.
-author: AKroshkina
+description: This article provides information on how to set up and transfer a European Union (EU) sales list.
+author: AdamTrukawka
 ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # Example for generic EU Sales list 
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and transfer a European Union (EU) sales list. The example uses the **DEMF** legal entity. It also uses Germany as a country of the **Domestic** country/region type, and Spain and Sweden as countries of the **EU** country/region type.
+This article explains how to set up and transfer a European Union (EU) sales list. The example uses the **DEMF** legal entity. It also uses Germany as a country of the **Domestic** country/region type, and Spain and Sweden as countries of the **EU** country/region type.
 
 ## Setup
 

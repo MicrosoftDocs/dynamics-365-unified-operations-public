@@ -2,7 +2,7 @@
 # required metadata
 
 title: Depreciation rounding
-description: This topic explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
+description: This article explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
+This article explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
 
 Depreciation amounts are rounded up or down, based on the value that is entered in the **Round off depreciation** field and the rounding method that is specified in the **Rounding method** field on the **Depreciation books** page. For a depreciation amount (x) that has a **Round off depreciation** value (y), the depreciation amount (z) is calculated as x ÷ y. The rounded-up or rounded-down depreciation amount is calculated as z × y. For example, for the depreciation amount CZK 1,111.11 and a **Round off depreciation** value of **1**, the depreciation amount is calculated as CZK 1,111.11 ÷ 1, or CZK 1,111.11. The rounded-up depreciation amount is calculated as CZK 1,112 × 1, or CZK 1,112. The rounded-down depreciation amount is calculated as CZK 1,111 × 1, or CZK 1,111. The following table shows rounded-up and rounded-down depreciation amounts for various depreciation amounts and **Round off depreciation** values.
 

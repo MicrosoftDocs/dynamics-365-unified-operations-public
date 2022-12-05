@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Create and update store hours
-description: This topic describes how to create and update store hours in Commerce Headquarters.
+description: This article describes how to create and update store hours in Commerce Headquarters.
 author: josaw1
-ms.date: 7/30/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: rapraj
+ms.author: anupamar
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Create and update store hours

@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Get started with Tax Calculation
-description: This topic explains how to set up Tax Calculation.
-author: wangchen
-ms.date: 03/25/2022
+description: This article explains how to set up Tax Calculation.
+author: EricWangChen
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-
+ms.custom: "intro-internal"
+ms.search.form: TaxIntegrationTaxServiceParameters
 ---
 
 
@@ -31,7 +21,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to get started with Tax Calculation. The sections in this topic guide you through the high-level design and configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
+This article provides information about how to get started with Tax Calculation. The sections in this article guide you through the high-level design and configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
 
 The setup consists of three main steps.
 
@@ -83,11 +73,11 @@ After you complete these steps, the following setups are automatically synced fr
 - Sales tax groups
 - Item sales tax groups
 
-The remaining sections in this topic provide more detailed configuration steps.
+The remaining sections in this article provide more detailed configuration steps.
 
 ## Prerequisites
 
-Before you can complete the remaining procedures in this topic, the following prerequisites must be met:<!--TO HERE-->
+Before you can complete the remaining procedures in this article, the following prerequisites must be met:<!--TO HERE-->
 
 - You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or later.
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
@@ -130,6 +120,10 @@ The steps in this section aren't related to a specific legal entity. You must co
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
 8. Select the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version, and then select **Import**.
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
+
+    > [!NOTE]
+    > In version 10.0.26 and later, you can import a demo feature for the **DEMF** demo legal entity. For more information, see [Import feature demo data](tax-calculation-import-export-feature.md).
+
 10. Select one of the following feature types:
 
     - **New feature** – Create a feature setup that has blank content.
@@ -160,8 +154,8 @@ The steps in this section aren't related to a specific legal entity. You must co
     - **Vendor tax registration number applicability** – If you have multiple tax registration numbers for one vendor, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for purchase transactions.
     - **List code applicability** – Automatically determine the value of the **List code** field through more flexible and configurable rules. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default code on taxable documents.
 
-14. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
-15. Select **Tax component**. The tax component is a group of methods that were defined in the previous version of the selected tax configuration. The following tax components are available:
+15. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
+16. Select **Tax component**. The tax component is a group of methods that were defined in the previous version of the selected tax configuration. The following tax components are available:
 
     - By net amount
     - By gross amount
@@ -169,8 +163,8 @@ The steps in this section aren't related to a specific legal entity. You must co
     - By margin
     - Tax on tax
 
-16. Select **Save**. More fields become available, based on the tax component that you selected.
-17. Use the following options to identify the nature of the tax code:
+17. Select **Save**. More fields become available, based on the tax component that you selected.
+18. Use the following options to identify the nature of the tax code:
 
     - Is exempt
     - Is use tax
@@ -185,19 +179,19 @@ The steps in this section aren't related to a specific legal entity. You must co
 
     Maintain tax rates and the tax amount limits for this tax code.
 
-18. Repeat steps 14 through 17 to add all other tax codes that are required.
-19. On the **Tax group** tab, select the **Tax group** column, add it to the matrix as the input condition, and then add lines to maintain the tax group master data.
+19. Repeat steps 15 through 18 to add all other tax codes that are required.
+20. On the **Tax group** tab, select the **Tax group** column, add it to the matrix as the input condition, and then add lines to maintain the tax group master data.
 
     Here is an example.
 
     | Tax group    | Tax codes           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. On the **Item tax group** tab, select **Item tax group** column, add it to the matrix as the input condition, and then add lines to maintain the item tax group master data.
+21. On the **Item tax group** tab, select **Item tax group** column, add it to the matrix as the input condition, and then add lines to maintain the item tax group master data.
 
     Here is an example.
 
@@ -206,21 +200,21 @@ The steps in this section aren't related to a specific legal entity. You must co
     | Full           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Reduced        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. On the **Tax group applicability** tab, select the columns that are required to determine the correct tax group, and then select **Add**. Enter or select values for each column. The **Tax group** field will be the output of this matrix. If this tab isn't configured, the sales tax group on the transaction line will be used.
+22. On the **Tax group applicability** tab, select the columns that are required to determine the correct tax group, and then select **Add**. Enter or select values for each column. The **Tax group** field will be the output of this matrix. If this tab isn't configured, the sales tax group on the transaction line will be used.
 
     Here is an example.
 
     | Business process | Ship from | Ship to | Tax group    |
     | ---------------- | --------- | ------- | ------------ |
-    | Sales            | DEU       | DEU     | DEU_Domestic |
+    | Sales            | DEU       | DEU     | DEU_Dom |
     | Sales            | DEU       | FRA     | DEU_EU       |
-    | Sales            | BEL       | BEL     | BEL_Domestic |
+    | Sales            | BEL       | BEL     | BEL_Dom |
     | Sales            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > If the default sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this topic.
+    > If the default sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this article.
 
-22. On the **Item tax group applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**. Enter or select values for each column. The **Item tax group** field will be the output of this matrix. If this tab isn't configured, the item sales tax group on the transaction line will be used.
+23. On the **Item tax group applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**. Enter or select values for each column. The **Item tax group** field will be the output of this matrix. If this tab isn't configured, the item sales tax group on the transaction line will be used.
 
     Here is an example.
 
@@ -230,14 +224,14 @@ The steps in this section aren't related to a specific legal entity. You must co
     | D0003     | Reduced        |
 
     > [!NOTE]
-    > If the default item sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this topic.
+    > If the default item sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this article.
 
     For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
 
-23. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes based on the business needs.
-24. Select **Save**, and then close the page.
-25. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited.
-26. Select **Change status** \> **Publish**. This version of the tax feature setup will be pushed to the global repository and will be visible to each legal entity in Finance.
+24. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes based on the business needs.
+25. Select **Save**, and then close the page.
+26. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited.
+27. Select **Change status** \> **Publish**. This version of the tax feature setup will be pushed to the global repository and will be visible to each legal entity in Finance.
 
 ## Set up Tax Calculation in Dynamics 365
 
@@ -249,7 +243,7 @@ The setup in this section is done by legal entity. You must configure it for eac
 2. On the **General** tab, set the following fields:
 
     - **Enable Tax Calculation Service** – Select this checkbox to enable Tax Calculation for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
-    - **Feature setup** – Select a published tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this topic.
+    - **Feature setup** – Select a published tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this article.
     - **Business Process** – Select the business processes to enable.
 
 3. On the **Calculation** tab, define the expected rounding rule for the legal entity. For more information about the rounding logic, see [Tax calculation rounding rules](https://go.microsoft.com/fwlink/?linkid=2166988).

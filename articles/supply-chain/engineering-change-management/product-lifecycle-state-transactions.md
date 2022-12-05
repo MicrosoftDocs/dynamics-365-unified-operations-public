@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product lifecycle states and transactions
-description: This topic explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
+description: This article explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -41,7 +41,7 @@ To work with product lifecycle states, go to **Engineering change management \> 
 - To delete an existing lifecycle state, select it in the list pane, and then select **Delete** on the Action Pane.
 
 > [!NOTE]
-> Engineering products use the same product lifecycle states as standard (non-engineering) products. You can also open the **Product lifecycle state** page that is described in this topic by going to **Product information management \> Setup \> Product lifecycle state**. For more information about product lifecycle states, for both engineering products and standard products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
+> Engineering products use the same product lifecycle states as standard (non-engineering) products. You can also open the **Product lifecycle state** page that is described in this article by going to **Product information management \> Setup \> Product lifecycle state**. For more information about product lifecycle states, for both engineering products and standard products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
 
 ### Header
 

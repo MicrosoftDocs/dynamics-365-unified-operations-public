@@ -3,8 +3,8 @@
 
 title: Cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
-author: panolte
-ms.date: 06/20/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -58,7 +58,9 @@ The customer submits a payment for 95.00 within the cash discount period. The pa
 | Payment       | -95.00 | 0.00    |
 | Cash discount | -10.50 | 0.00    |
 
-The following accounting entries are generated for the payment and the settlement. **Payment**
+The following accounting entries are generated for the payment and the settlement.
+
+**Payment**
 
 | Account             | Debit amount | Credit amount |
 |---------------------|--------------|---------------|
@@ -90,7 +92,9 @@ The customer submits a payment for 95.00 within the cash discount period. The pa
 | Payment       | -95.00 | -0.50   |
 | Cash discount | -10.50 | 0.00    |
 
-The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice. The following accounting entries are generated for the payment and the settlement. **Payment**
+The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice. The following accounting entries are generated for the payment and the settlement. 
+
+**Payment**
 
 | Account             | Debit amount | Credit amount |
 |---------------------|--------------|---------------|
@@ -123,7 +127,9 @@ The customer submits a payment for 95.00 within the cash discount date. The paym
 | Payment       | -95.00 | -0.00   |
 | Cash discount | -10.00 | 0.00    |
 
-The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice are considered settled. **Payment**
+The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice are considered settled. 
+
+**Payment**
 
 | Account             | Debit amount | Credit amount |
 |---------------------|--------------|---------------|

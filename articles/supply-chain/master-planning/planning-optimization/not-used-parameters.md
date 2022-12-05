@@ -1,6 +1,6 @@
 ---
 title: Parameters not used by Planning Optimization
-description: This topic lists the parameters that Planning Optimization doesn't currently consider during its operation.
+description: This article lists the parameters that Planning Optimization doesn't currently consider during its operation.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../../includes/banner.md)]
 
-This topic lists the parameters that Planning Optimization doesn't currently consider during its operation. The planning service might skip a parameter because, for example, related functionality isn't yet supported. Alternatively, the parameter might have become obsolete because of functional changes.
+This article lists the parameters that Planning Optimization doesn't currently consider during its operation. The planning service might skip a parameter because, for example, related functionality isn't yet supported. Alternatively, the parameter might have become obsolete because of functional changes.
 
 The following sections list the parameters that Planning Optimization doesn't use on specific pages. They also explain why each parameter isn't used.
 
@@ -106,10 +106,8 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **General** FastTab:
 
-  - **Include on-hand inventory** – Pending *Consumption of on-hand inventory* support.
   - **Override on hand** – Pending *Consumption of on-hand inventory* support.
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
-  - **Include inventory transactions** – Pending *Consumption of on-hand inventory* support.
   - **Include sales quotations** – Pending *Sales quotations* support.
   - **Include request for quotations** – Pending *Request for quotations* support.
   - **Use shelf life dates** – Pending *Shelf life* support.
@@ -184,3 +182,4 @@ Planning Optimization doesn't use the following parameter on the **Batch disposi
 - **Setup** FastTab:
 
   - **Nettable** – Pending *Batch disposition codes* support.
+ 

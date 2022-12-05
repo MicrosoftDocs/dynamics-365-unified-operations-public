@@ -1,27 +1,26 @@
 ---
 title: Merge Cloud Scale Unit extension packages for deployment
-description: This topic describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages for deployment.
-author: mugunthanm
+description: This article describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages for deployment.
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
 # Merge Cloud Scale Unit extension packages for deployment
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
+This article describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
 
 Extensions packages that independent software vendors (ISVs), partners, and customers generate for CSU must be merged into a single package before they are deployed to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index). Currently, LCS doesn't support the deployment of multiple extension packages. The last extension package that is deployed will override the previous extension deployment.
 
-There are multiple options for merging CSU extension packages. This topic guides you through the process of merging them by generating a NuGet package for ISV CSU extensions.
+There are multiple options for merging CSU extension packages. This article guides you through the process of merging them by generating a NuGet package for ISV CSU extensions.
 
 > [!NOTE]
 > Extension package merging isn't required for on-premises CSU deployments, Store Commerce, or shared Hardware Station. On-premises components support multiple extension deployments.

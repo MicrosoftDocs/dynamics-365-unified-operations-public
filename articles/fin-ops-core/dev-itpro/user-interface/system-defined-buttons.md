@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: System-defined buttons
-description: This topic describes the system-defined buttons.
+description: This article describes the system-defined buttons.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28271
-ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28271
+ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
 ---
 
 # System-defined buttons
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the system-defined buttons.
+This article describes the system-defined buttons.
 
 ## Overview
 

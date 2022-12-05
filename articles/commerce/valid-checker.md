@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validate store transactions for statement calculation
-description: This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce.
+description: This article describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 01/31/2022
 ms.topic: index-page
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce. The validation process identifies and marks transactions that will cause posting errors, before they are picked up by the statement posting process.
+This article describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce. The validation process identifies and marks transactions that will cause posting errors, before they are picked up by the statement posting process.
 
 When you try to post a statement, the validation process can fail because of inconsistent data in the commerce transaction tables. Here are some examples of factors that can cause these inconsistencies:
 

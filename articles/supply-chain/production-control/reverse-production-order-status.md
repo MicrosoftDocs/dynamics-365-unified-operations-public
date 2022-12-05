@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse the production order status
-description: This topic describes how to reverse production order status. 
+description: This article describes how to reverse production order status. 
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to reverse production order status. 
+This article describes how to reverse production order status. 
 
 If you reverse the status of a production order, the order and all operations that are associated with the routes revert to a previous step in the production life cycle. For example, a production order has a status of **Scheduled**, and you change the status back to **Created**. In this case, the system must first change the status to **Estimated**, which is the status that immediately precedes **Scheduled**. It can then change the status to the status that you want, **Created**. **Note:** If your order has reached the **Report as finished** status, you can still reverse it to an earlier status. However, you must re-run estimation and operations scheduling, job scheduling, or both types of scheduling, to update the information on the order. This step is required, because any reservations of remaining item consumption and operations resource consumption must also be reset. The rest of this article explains what occurs when you reverse the status of a production order in the following ways:
 

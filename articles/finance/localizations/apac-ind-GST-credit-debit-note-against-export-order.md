@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Credit or debit note against an export order
-description: This topic provides information about how to post a credit note against an export invoice in Microsoft Dynamics 365 transactions.
-author: prabhatb
+description: This article provides information about how to post a credit note against an export invoice in Microsoft Dynamics 365 transactions.
+author: EricWangChen
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2020-09-01
 ms.dyn365.ops.version: 10.0.13
-
 ---
 
 # Credit or debit note against an export order

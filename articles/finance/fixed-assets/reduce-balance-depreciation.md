@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reduce balance depreciation
-description: This topic gives an overview of the Reducing balance method of depreciation.
+description: This article gives an overview of the Reducing balance method of depreciation.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic gives an overview of the Reducing balance method of depreciation.
+This article gives an overview of the Reducing balance method of depreciation.
 
 When you set up a fixed asset depreciation profile and select Reducing balance in the **Method** field on the **Depreciation profiles** page, the assets that have this depreciation profile assigned to them are depreciated by the same percentage in each depreciation period.
 
@@ -46,7 +46,7 @@ You can select either **Calendar** or **Fiscal** in the **Depreciation year** fi
 
 ### Calendar
 
-The **Calendar option** updates the depreciation base, which is typically the net book value minus the scrap value, on January 1 of each year. In the reducing balance depreciation example later in this topic, the depreciation base is the numerator in the first expression in the calculations column. 
+The **Calendar option** updates the depreciation base, which is typically the net book value minus the scrap value, on January 1 of each year. In the reducing balance depreciation example later in this article, the depreciation base is the numerator in the first expression in the calculations column. 
 
 If you select **Calendar**, the following options are available in the **Period frequency** field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:
 

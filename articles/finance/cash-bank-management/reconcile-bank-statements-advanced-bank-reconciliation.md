@@ -2,8 +2,8 @@
 # required metadata
 
 title: Reconcile bank statements by using advanced bank reconciliation
-description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This topic explains the reconciliation process.  
-author: moaamer
+description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains the reconciliation process.  
+author: angelad116
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
 # ms.search.industry: 
-ms.author: moaamer
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This topic explains the reconciliation process.  
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains the reconciliation process.  
 
 ## Import an electronic bank statement
 
@@ -42,7 +42,10 @@ You can upload a bank statement that contains information for either a single ac
 -   To import a single bank statement file for a single account, set the **Import statement for multiple bank accounts in all legal entities** option to **No**, and select the bank account that is associated with the statement. Click **Browse** to select the associated bank statement file, and then click **Upload**.
 -   To import a single bank statement file for multiple accounts, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Click **Browse** to select the associated bank statement file, and then click **Upload**.
 
-If any statements in the electronic file can't be associated with a bank account or if it is associated with multiple bank accounts by using the identifying fields, they won't be imported. However, other statements in the file can still be imported. The user then receives a message that states that the import of bank statements was unsuccessful for specific bank accounts. Note that the user who is importing the bank statement file must have access to a legal entity to import statements for that legal entity's bank accounts. 
+If any statements in the electronic file can't be associated with a bank account or if it is associated with multiple bank accounts by using the identifying fields, they won't be imported. However, other statements in the file can still be imported. The user then receives a message that states that the import of bank statements was unsuccessful for specific bank accounts. 
+
+>[!Note] 
+>The user who is importing the bank statement file must have access to a legal entity to import statements for that legal entity's bank accounts. 
 
 You can use a zip file to upload multiple statement files to Finance in a single process. To import multiple bank statement files for multiple accounts, combine all the bank statement files into one zip file. In the **Import bank statements** dialog box, set the **Import statement for multiple bank accounts in all legal entities** option to **Yes**. Click **Browse** to select the zip file that contains the bank statement files, and then click **Upload**. The import process will recognize the zip file and upload each statement that is included in it, regardless of the legal entity of the bank account.
 

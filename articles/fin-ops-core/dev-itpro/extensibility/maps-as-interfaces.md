@@ -1,26 +1,19 @@
 ---
-
 title: Extend table maps that are used as interfaces
-description: This topic describes how to extend table maps that are used as interfaces.
+description: This article describes how to extend table maps that are used as interfaces.
 author: MichaelFruergaardPontoppidan
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Extend table maps that are used as interfaces

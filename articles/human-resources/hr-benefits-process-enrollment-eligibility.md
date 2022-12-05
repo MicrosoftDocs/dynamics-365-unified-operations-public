@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process enrollment eligibility
-description: This topic explains how to run the enrollment eligibility process.
+description: This article explains how to run the enrollment eligibility process.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Process enrollment eligibility
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how to run the enrollment eligibility process.
+This article explains how to run the enrollment eligibility process.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Enrollment eligibility processing**.
 
@@ -61,7 +58,7 @@ This topic explains how to run the enrollment eligibility process.
 
 ## View Process Results
 
-This topic explains how to view eligibility process results.
+This article explains how to view eligibility process results.
 
 1.	In the **Benefits management** workspace, under **Processing**, select **Process results**.
 

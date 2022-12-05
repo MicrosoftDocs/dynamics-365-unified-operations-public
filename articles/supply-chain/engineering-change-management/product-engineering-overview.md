@@ -2,16 +2,16 @@
 # required metadata
 
 title: Engineering change management overview (contains video)
-description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
+description: This article provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -45,7 +45,7 @@ Engineering change management helps you plan and manage product versioning, and 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Turn on the engineering change management features for your system
 
@@ -79,17 +79,21 @@ Next, turn on the configuration keys by following these steps. These are not tur
     - **For Tier 1 (development) environments**: Open your project in Microsoft Visual Studio and then select **Dynamics 365 \> Synchronize database \> Synchronize**.
     - **For Tier 2 (and higher) environments**: The database syncs automatically after you put the environment in and out of maintenance mode, so you can skip this step.
 
+> [!NOTE]
+> To use engineering change management, both the BOM number sequence and the formula number sequence (if you are using formulas) must be set to *Automatic* on the **Number sequences** page.
+
 ### Turn on additional engineering change management features
 
-After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information. As of Supply Chain Management version 10.0.25, all of these features are turned on by default, but you can still choose to turn them off.
+After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information.
 
 | Feature name in feature management | Description | Feature state |
 |---|---|---|
-| Enable change management on existing products | <p>This feature lets you convert existing products to engineering products so that you can start to manage them by using engineering change management.</p><p>For more information, see [Enable change management on existing products](change-management-existing-products.md).</p> |
-| Engineering notifications for production | <p>When a product is changed in engineering, it might be important to notify production about those changes. In that way, production workers can take appropriate action, such as component substitution, bill of materials (BOM) replacement, or route replacement. This feature lets you notify production about changes to products that are being produced.</p><p>For more information, see [Manage changes to engineering products](engineering-change-management.md).</p> |
-| Improved attribute inheritance for Engineering Change Management | <p>This feature simplifies the management of attributes for finished goods or intermediate items. When this feature is turned on, it's easier to identify all the attributes that belong to an item, and you can select the attributes that should be propagated from that item to its parent item. This feature is useful when, for example, one component of a finished good is fragile, toxic, or flammable, because you can easily identify the fragile, toxic, or flammable attribute and propagate it to the finished good.</p><p>For more information, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).</p> |
-| Product readiness checks | <p>This feature lets you set up readiness checks for standard (non-engineering) products. Use product readiness checks to ensure that each product is fully defined and all the required policies are configured before the product is made available and used in transactions. If you disable this feature after you've used it for a while, all existing readiness checks for standard products will be deleted.</p><p>For more information, see [Product readiness](product-readiness.md).</p> |
-| Manage changes to formulas and their ingredients | <p>This feature lets you track changes to formula ingredients, co-products, and by-products.</p><p>For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).</p> |
-| Variant generation for engineering products | <p>This feature lets you generate variants for engineering products, based on available dimension values.</p><p>For more information, see [Generate variants for engineering products](engineering-variants.md).</p> |
+| Enable change management on existing products | <p>This feature lets you convert existing products to engineering products so that you can start to manage them by using engineering change management.</p><p>For more information, see [Enable change management on existing products](change-management-existing-products.md).</p> | On by default as of version 10.0.25. |
+| Engineering notifications for production | <p>When a product is changed in engineering, it might be important to notify production about those changes. In that way, production workers can take appropriate action, such as component substitution, bill of materials (BOM) replacement, or route replacement. This feature lets you notify production about changes to products that are being produced.</p><p>For more information, see [Manage changes to engineering products](engineering-change-management.md).</p> |  On by default as of version 10.0.25. |
+| Improved attribute inheritance for Engineering Change Management | <p>This feature simplifies the management of attributes for finished goods or intermediate items. When this feature is turned on, it's easier to identify all the attributes that belong to an item, and you can select the attributes that should be propagated from that item to its parent item. This feature is useful when, for example, one component of a finished good is fragile, toxic, or flammable, because you can easily identify the fragile, toxic, or flammable attribute and propagate it to the finished good.</p><p>For more information, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).</p> |  On by default as of version 10.0.25. |
+| Product readiness checks | <p>This feature lets you set up readiness checks for standard (non-engineering) products. Use product readiness checks to ensure that each product is fully defined and all the required policies are configured before the product is made available and used in transactions. If you disable this feature after you've used it for a while, all existing readiness checks for standard products will be deleted.</p><p>For more information, see [Product readiness](product-readiness.md).</p> |  On by default as of version 10.0.25. |
+| Manage changes to formulas and their ingredients | <p>This feature lets you track changes to formula ingredients, co-products, and by-products.</p><p>For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).</p> |  On by default as of version 10.0.25. |
+| Variant generation for engineering products | <p>This feature lets you generate variants for engineering products, based on available dimension values.</p><p>For more information, see [Generate variants for engineering products](engineering-variants.md).</p> |  On by default as of version 10.0.25. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

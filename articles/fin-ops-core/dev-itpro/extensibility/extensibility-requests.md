@@ -1,25 +1,19 @@
 ---
 title: Extensibility requests
-description: This topic explains how to file a request for additional extension points for Finance and Operations. 
+description: This article explains how to file a request for additional extension points for Finance and Operations.
 author: FrankDahl
 ms.date: 06/02/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Extensibility requests

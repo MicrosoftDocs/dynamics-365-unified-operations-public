@@ -1,42 +1,31 @@
 ---
-# required metadata
-
 title: Analytics, aggregate measurements, and KPI modeling
-description: This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+description: This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: MilindaV2
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 24491
-ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 24491
+ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
 ---
 
 # Analytics, aggregate measurements, and KPI modeling
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 
 ## Embedded business intelligence
 
 
-The term embedded business intelligence (BI) refers to experiences that use highly intuitive and fluid visualizations to provide insights that are relevant to a task, so that user is more informed and can make better choices. For example, a rental clerk in a car rental organization views the previous rental preferences of a customer when the customer makes a reservation. In this case, the clerk can see the vehicles and colors that the customer has selected in the past, and therefore can offer options that are likely to please the customer. Embedded BI is used throughout the user interface. At a technical level, building rich visualizations requires a powerful charting framework, and also an efficient way to access aggregated data that enables the display of fluid visualizations. Microsoft Dynamics 365 Finance and Operations meets both of these requirements, so that application developers can build rich and deep embedded BI–enabled scenarios.
+The term embedded business intelligence (BI) refers to experiences that use highly intuitive and fluid visualizations to provide insights that are relevant to a task, so that user is more informed and can make better choices. For example, a rental clerk in a car rental organization views the previous rental preferences of a customer when the customer makes a reservation. In this case, the clerk can see the vehicles and colors that the customer has selected in the past, and therefore can offer options that are likely to please the customer. Embedded BI is used throughout the user interface. At a technical level, building rich visualizations requires a powerful charting framework, and also an efficient way to access aggregated data that enables the display of fluid visualizations. Microsoft Dynamics 365 finance and operations meets both of these requirements, so that application developers can build rich and deep embedded BI–enabled scenarios.
 
 ## Where are the perspectives?
 Perspectives were a concept that was designed to present data from a reporting point of view. Perspectives have evolved over the past three releases for analytical scenarios.
@@ -46,7 +35,7 @@ Perspectives were a concept that was designed to present data from a reporting p
 | Microsoft Dynamics AX 4.0                         | Perspectives provided the ability to model ad-hoc reporting models.                                                                            |
 | Microsoft Dynamics AX 2009                        | Perspectives added support for modeling analysis cubes.                                                                                        |
 | Microsoft Dynamics AX 2012                        | Perspective modeling capabilities were improved through richer modeling support and deeper integration with the Application Object Tree (AOT). |
-| Finance and Operations apps | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
+| Finance and operations apps | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
 
 Perspectives reside within the analytics collection in the Application Explorer. Perspectives have undergone a major upgrade and now incorporate the following improvements:
 
@@ -58,7 +47,7 @@ Perspectives reside within the analytics collection in the Application Explorer.
 - The aggregate data infrastructure is maintained completely within the environment. By default, aggregate measurements are real-time. As a system administrator, you can manage the latency of aggregate data and controls based on available resources and business needs, without having to deal with the complexity of scheduling and external tools.
 - Developers can reuse existing business models, making the modeling process quicker and easier.
 
-Projects that were generated by using perspectives from Dynamics AX 2012 and later can be upgraded to Finance and Operations metadata equivalents.
+Projects that were generated by using perspectives from Dynamics AX 2012 and later can be upgraded to finance and operations metadata equivalents.
 
 ## Aggregate measurements and aggregate dimensions
 An aggregate measurement is a model that contains a collection of measures together with their corresponding dimensions. Measures are aggregate numbers, such as Total Sales or Number of Orders. Dimensions are slicers, such as Product, Vendor, or Customer, that help you analyze the measure. For example, the measure of Total Sales isn't useful unless it can be sliced by Product, Region, and Customer. Aggregate measurements are the evolution of AX 2012 analysis cubes. Whereas a cube was based on a multidimensional online analytical processing (OLAP) technology, an aggregate measurement abstracts the underlying technology. Therefore, you no longer have to know a lot about the underlying implementation technology. Additionally, the underlying technology infrastructure can take advantage of improvements in in-memory real-time technology without requiring the developer to rewrite the program. Aggregate dimensions are shared across an implementation. Aggregate measurements associate themselves with relevant aggregate dimensions. For example, Total Sales can be associated with Customer, Product, and Sales Region dimensions. However, Total Sales can't be associated with Vendor and Warehouse dimensions. Aggregate dimensions and aggregate measurements are modeled by using Visual Studio tools. The Upgrade tool lets customers and partners migrate existing Dynamics AX 2012 cubes to newer versions of the product.

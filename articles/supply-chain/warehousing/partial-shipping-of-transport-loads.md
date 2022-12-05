@@ -2,7 +2,7 @@
 # required metadata
 
 title: Partial shipment of a transport load
-description: This topic explains how you can partially ship a load and postpone the planning of capacity for the load.
+description: This article explains how you can partially ship a load and postpone the planning of capacity for the load.
 author: Mirzaab
 ms.date: 03/15/2017
 ms.topic: article

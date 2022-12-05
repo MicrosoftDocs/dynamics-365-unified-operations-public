@@ -2,7 +2,7 @@
 # required metadata
 
 title: TCS on sales of goods 
-description: This topic provides information about the functionality for Tax Collection at Source (TCS) on sales of goods.
+description: This article provides information about the functionality for Tax Collection at Source (TCS) on sales of goods.
 author: prabhatb
 ms.date: 03/16/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the functionality for Tax Collection at Source (TCS) on sales of goods. For example, it describes how to do the basic setup for TCS deduction on sale of goods transactions, how to calculate TCS on transactions from customers or groups of customers, and how to calculate TCS on transactions when customers don't have a permanent account number (PAN).
+This article provides information about the functionality for Tax Collection at Source (TCS) on sales of goods. For example, it describes how to do the basic setup for TCS deduction on sale of goods transactions, how to calculate TCS on transactions from customers or groups of customers, and how to calculate TCS on transactions when customers don't have a permanent account number (PAN).
 Per section 206C (1H), TCS should be collected when payment is received from a customer against a sale consideration. When the seller receives the payment, the TCS amount is debited to the interim account and credited to the TCS payable account. When the invoice is posted, the TCS amount will be posted to the interim payable account and added to the invoice value.
 One important aspect of this feature is that if multiple customers have the same PAN, the transaction amount will be accumulated and compared to a threshold to determine whether the transaction is eligible for TCS deduction.
 
@@ -71,7 +71,7 @@ Initially, experts interpreted the new TCS provision in the following way:
    - Tax must be collected when the amount of the sale exceeds INR 50,00,000, regardless of the amount of the sale consideration that was received during the previous year.
    - Tax must be collected when the amount that was received as a sale consideration exceeds INR 50,00,000, regardless of the amount of the sale that was made during the previous year.
    
-Based on this initial interpretation Finance and Operations apps provided functionality for the first option. However, some scenarios didn't comply with the intended law.
+Based on this initial interpretation finance and operations apps provided functionality for the first option. However, some scenarios didn't comply with the intended law.
 
 To clarify the applicability of the new TCS provisions, the CBDT issued circular no. 17, dated September 30, 2020. According to this circular, the third option is a more convenient, realistic, and reasonable way to get the expected result.
 
@@ -299,3 +299,4 @@ Every organization will claim a credit for TCS deduction after it reconciles the
 2. Select the required column fields to generate the report.
 
    ![Tax transaction inquiry page.](media/TCS-on-Sale-of-Goods-008.PNG)
+

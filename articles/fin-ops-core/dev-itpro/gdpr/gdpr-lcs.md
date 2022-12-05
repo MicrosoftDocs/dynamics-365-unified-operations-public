@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: GDPR data requests for Lifecycle Services (LCS)
-description: This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). 
-author: tfehr
+description: This article offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS).
+author: josaw1
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 10031
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr 
+ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 10031
 ---
 
 # GDPR data requests for Lifecycle Services (LCS)
@@ -31,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview 
-This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [General Data Protection Regulation overview](./gdpr-guide.md).
+This article offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [General Data Protection Regulation overview](./gdpr-guide.md).
 
 ## User management 
 

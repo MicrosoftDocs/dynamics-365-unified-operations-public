@@ -2,7 +2,7 @@
 # required metadata
 
 title: Duplicate payments prevention
-description: This topic describes how Dynamics 365 Commerce helps to prevent duplicate payments in the Modern POS.
+description: This article describes how Dynamics 365 Commerce helps to prevent duplicate payments in the Modern POS.
 author: BrianShook
 ms.date: 10/23/2020
 ms.topic: article
@@ -31,18 +31,18 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the duplicate payments protection feature for Dynamics 365 Commerce Modern POS.
+This article provides an overview of the duplicate payments protection feature for Dynamics 365 Commerce Modern POS.
 
 ## Overview
 
-This topic describes the user experience when the point of sale (POS) recovers from a loss of communication with the payment terminal, which causes the POS and the payment terminal to be out of sync.
+This article describes the user experience when the point of sale (POS) recovers from a loss of communication with the payment terminal, which causes the POS and the payment terminal to be out of sync.
 
 The duplicate payment protection feature ensures that Modern POS can seamlessly recover from a loss of communication without requiring the shopper to process another payment through the payment terminal, which can lead to duplicate payments.
 
 > [!NOTE]
 > The duplicate payments protection feature is only supported for payments made using payment terminals.
 
-This topic covers the following aspects of the duplicate payment protection feature:
+This article covers the following aspects of the duplicate payment protection feature:
 
 - [Prerequisites](#prerequisites) – Set of prerequisites to use this feature in Modern POS.
 - [Scenario details](#scenario-details) – Detailed description of the scenarios covered by the duplicate payment protection feature.
@@ -51,7 +51,7 @@ This topic covers the following aspects of the duplicate payment protection feat
 
 ## Prerequisites
 
-- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension that facilitates communication between Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension that facilitates communication between Commerce (and associated components) and a payment service. The connector described in this article was implemented using the standard payments SDK.
 - If a connector implements the corresponding duplicate payment protection interfaces, the feature is automatically enabled in Modern POS. Otherwise, it is automatically turned off.
 
 <!---

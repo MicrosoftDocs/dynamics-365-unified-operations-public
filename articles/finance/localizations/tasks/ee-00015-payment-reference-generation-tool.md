@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: EE-00015 Payment reference generation tool
-description: This procedure walks you through generating the payment references. 
-author: v-oskinaolga
+description: This procedure walks you through generating the payment references.
+author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Estonia
-# ms.search.industry: 
-ms.author: v-oskinaolga
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
 ---
 # EE-00015 Payment reference generation tool
 

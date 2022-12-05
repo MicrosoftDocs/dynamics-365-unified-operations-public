@@ -2,7 +2,7 @@
 # required metadata
 
 title: Self-service deployment overview
-description: This topic provides an overview of self-service deployment.
+description: This article provides an overview of self-service deployment.
 author: rashmansur
 ms.date: 05/29/2020
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.1
 Self-service deployment is available for cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 > [!IMPORTANT]
-> The functionality for this feature will be released incrementally, based on your Microsoft Azure country/region. However, this functionality is currently available only for **new customers** who are in the process of signing up for Finance and Operations apps. There is no change in existing environments for current customers.
+> The functionality for this feature will be released incrementally, based on your Microsoft Azure country/region. However, this functionality is currently available only for **new customers** who are in the process of signing up for finance and operations apps. There is no change in existing environments for current customers.
 >
 > Note that not all new customers will see this functionality. However, the number of new customers who have access to it will gradually increase. 
 
@@ -61,7 +61,7 @@ Customers using the self-service capabilities will see the following changes in 
 
 - The document preview experience has been improved to deliver greater fidelity with the printed output. Before this change, documents viewed on screen were displayed using an HTML viewer. Although the HTML format supported interactive functions like embedded drill-thru links and collapsible sections, this was not a true representation of the document rendered by the service. With the new embedded PDF Viewer, customers have access to a preview that's consistent with the printed documents. For more information, see [Preview PDF documents with an embedded viewer](../analytics/preview-pdf-documents.md).
 
-- Custom fonts are no longer supported for document reports rendered using the built-in SSRS framework. Finance and Operations apps include access to hundreds of [standard, business-ready fonts](../analytics/supported-fonts.md) available for documents rendered by the cloud-hosted service. This portfolio will continue to grow as the service expands into new regions and industries. However, the service no longer supports the installation of custom fonts in customer environments. Requests to expand the collection of fonts supported by the service will be considered on a case-by-case basis.
+- Custom fonts are no longer supported for document reports rendered using the built-in SSRS framework. Finance and operations apps include access to hundreds of [standard, business-ready fonts](../analytics/supported-fonts.md) available for documents rendered by the cloud-hosted service. This portfolio will continue to grow as the service expands into new regions and industries. However, the service no longer supports the installation of custom fonts in customer environments. Requests to expand the collection of fonts supported by the service will be considered on a case-by-case basis.
 
 - The service no longer supports business logic defined using Visual Basic script embedded in SQL Server Reporting Services (SSRS) reports. Visual Basic expressions defined in Tablix controls used to format and evaluate data at runtime will continue to be fully supported. However, the service will ignore instructions defined in Visual Basic script functions. This change was necessary to improve the security and reliability of the service.
 
@@ -72,3 +72,4 @@ Customers using the self-service capabilities will see the following changes in 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Commerce localization for Russia
-description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
-author: akviklis@microsoft.com
+description: This article provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
+author: EvgenyPopovMBS
 ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Russia
-ms.search.industry: Retail
-ms.author: akviklis
-ms.search.validFrom: 2021-6-23
+ms.author: josaw
+ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 10.0.21
-
+ms.search.industry: Retail
 ---
 # Commerce localization for Russia
 
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia and describes the scope of Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of [Russian localization](../../finance/localizations/russia.md)).
+This article provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia and describes the scope of Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of [Russian localization](../../finance/localizations/russia.md)).
 
 Because laws and regulations vary in the way that they affect organizations, Commerce doesn't address all laws, regulations, or commercial requirements in Russia. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 

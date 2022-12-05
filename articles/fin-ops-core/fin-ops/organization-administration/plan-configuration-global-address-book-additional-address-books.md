@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan for the global address book and other address books
-description: This topic describes the considerations and decisions that you must make during the planning process.
+description: This article describes the considerations and decisions that you must make during the planning process.
 author: msftbrking 
 ms.date: 01/13/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
+This article describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
 
 ## Global address book
 

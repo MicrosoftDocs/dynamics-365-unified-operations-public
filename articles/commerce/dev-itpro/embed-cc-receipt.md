@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Embed processor credit card receipts in customer receipts
-description: This topic describes how to embed a credit card receipt from a payment processor directly into a customer's itemized transaction receipt in Microsoft Dynamics 365 Commerce.
-author: rubendel
+description: This article describes how to embed a credit card receipt from a payment processor directly into a customer's itemized transaction receipt in Microsoft Dynamics 365 Commerce.
+author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: stuharg
+ms.author: josaw
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Embed processor credit card receipts in customer receipts
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to embed a credit card receipt from a payment processor directly into a customer's itemized transaction receipt in Microsoft Dynamics 365 Commerce. This capability is available as of the Commerce version 10.0.8 release.
+This article describes how to embed a credit card receipt from a payment processor directly into a customer's itemized transaction receipt in Microsoft Dynamics 365 Commerce. This capability is available as of the Commerce version 10.0.8 release.
 
 In Dynamics 365 Retail version 10.0.7 and earlier, several elements from a customer's credit card receipt could be embedded into the customer's itemized transaction receipt. However, the actual receipt that comes from the payment processor could not be included. That solution wasn't acceptable for all retailers, because the configurable receipt fields in the customer's credit card receipt didn't always include all the details that local statutory requirements stipulate.
 

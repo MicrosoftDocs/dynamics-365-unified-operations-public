@@ -105,7 +105,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControl.reactivate();
 ```
 
-### Finance and Operations
+### Finance and operations
 The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource, then an optimization can be manually made to improve performance and reduce code uptake:
 
 1. Remove the parmCompany() and reactivate() calls during the datasource active process.
@@ -130,7 +130,7 @@ DimensionEntryControl.setEditability(true, 0);
 ```
 
 
-### Finance and Operations
+### Finance and operations
 If a specific editable dimension set is needed, replace this call with:
 
 ```xpp
@@ -150,7 +150,7 @@ no custom implementation */
 // dimensionDefaultingController.pageActivated();
 ```
 
-### Finance and Operations
+### Finance and operations
 If this call is made within the pageActivated method of the Dimension Entry control’s parent control or the form init method, it can be removed. The intent of this method call outside the above mentioned locations isn’t clear. Remove the call and test the control.
 
 ### Dynamics AX 2012
@@ -161,7 +161,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControl.deleted();
 ```
 
-### Finance and Operations
+### Finance and operations
 A TODO will be left for a call to deleted() that is not inside a data source delete method. These calls are only expected to be in data source delete methods, and there is no replacement. Try to remove the call and test the control.
 
 ### Dynamics AX 2012
@@ -172,7 +172,7 @@ Replace this based on the migration guidance. */
 // dimensionDefaultingController.writing();
 ```
 
-### Finance and Operations
+### Finance and operations
 The Dimension Entry control framework will save values. Remove the call and test the control.
 
 ### Dynamics AX 2012
@@ -183,7 +183,7 @@ Replace this based on the migration guidance. */
 dimensionDefaultingController::findBackingEntityInstance();
 ```
 
-### Finance and Operations
+### Finance and operations
 To find the entity, the getEntityInstance method needs to be called from the DimensionAttributeValue. Replace this call with something similar to the following:
 
 ```xpp
@@ -204,7 +204,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);
 ```
 
-### Finance and Operations
+### Finance and operations
 Since the updateValues() method is only called with one parameter here, the call can be replaced with a call to allowEdit().
 
 ```xpp
@@ -221,7 +221,7 @@ DimensionEntryControlHeader.updateValues(
     NoYesUnchanged::No, true);
 ```
 
-### Finance and Operations
+### Finance and operations
 Since the call to updateValues() has two parameters in this case, it needs to be replaced with a call to allowEdit() to change the editability of the control and a call to loadAttributeValueSet() to clear the control’s values.
 
 ```xpp
@@ -242,7 +242,7 @@ Any leftover methods on the datasource or tabpage/group that holds the Dimension
 public int active(){int ret;ret = super();return ret;}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -251,7 +251,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public void delete(){super();}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -260,7 +260,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public void deleted(){super();}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -269,7 +269,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public void deleting(){super();}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -278,7 +278,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public boolean validateDelete(){boolean ret;ret = super();return ret;}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -287,7 +287,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public void write(){super();}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -296,7 +296,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public void writing(){super();}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -305,7 +305,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public void written(){super();}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -314,7 +314,7 @@ This method will be on the data source. It can be removed if there is no custom 
 public boolean validateWrite(){boolean ret;ret = super();return ret;}
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
@@ -329,7 +329,7 @@ public void pageActivated()
 }
 ```
 
-### Finance and Operations
+### Finance and operations
 This method will be on the tabpage or group that holds the Dimension Entry control. If there is no custom logic, the method can be deleted.
 
 ## Compile Errors
@@ -360,7 +360,7 @@ parmDimensionDefaultingControllerHeader(
 }
 ```
 
-### Finance and Operations
+### Finance and operations
 
 <strong>On the form (PurchTable):</strong>
 
@@ -396,3 +396,4 @@ parmDimensionEntryControlHeader(
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add location and party relationship types
-description: This topic explains how to add a new location and party relationship type.
+description: This article explains how to add a new location and party relationship type.
 author: ShivamPandey-msft
 ms.date: 05/01/2018
 ms.topic: article

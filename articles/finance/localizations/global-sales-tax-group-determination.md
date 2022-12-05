@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Sales tax applicability and sales tax group determination logic
-description: This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
-author: epodkolz
+description: This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
+author: EricWangChen
 ms.date: 12/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region:
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom:
+ms.search.region: 
+ms.author: wangchen
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.21
 ---
 
@@ -30,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
+This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 
 ## Matching logic
 
@@ -57,10 +45,37 @@ For the first line in the table, two input fields are set. Therefore, the line h
 
 When sales tax is calculated for a purchase order that has the EUR currency and item D0001, the Tax calculation service uses the condition that has a higher weight. Therefore, it uses the second line in the table.
 
+## Adjust execution sequence
+
+In the 10.0.28 update, you can adjust the execution sequence of the applicability rules which are equally weighted.
+
 > [!NOTE]
-> On the **Applicability rule** tabs, line numbers aren't visible, and the **Move up** and **Move down** buttons are no longer available. After you save a setup and reopen the page, the lines are ordered according to their weight.
-> 
-> Even though line numbers aren't visible in the UI, they are still available in the table. If two lines have the same weight, the line that has the smaller line number is used.
+> The **Tax calculation service feature setup new UI** feature must be enabled in feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
+
+### Example
+
+The following example shows how the **Adjust execution sequence** button works.
+
+In the Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as follows:
+
+| Business process | Currency | Item code | Tax group | Weight |
+|------------------|----------|-----------|-----------|--------|
+| Purchase         | EUR      | &nbsp;    | TG\_A     | 20     |
+| Purchase         | &nbsp;   | D0001     | TG\_B     | 20     |
+
+Per the matching logic, the rules in the table are equally weighted. If you are purchase item **D0001** with the transaction currency **EUR**, the first rule (Tax group **TG\_A**) is applied.
+
+Complete the following steps to adjust the rule which is applied.
+
+1. Select **Adjust execution sequence**.
+2. Select the second rule, and the select **Move up**. 
+3. Select **Complete**.
+
+Now, the second rule (Tax group **TG\_B**) is moved above the first one, and would be applied first.
+
+> [!NOTE]
+> You can't move a rule above or under another rule which has a different **Weight**.
+
 
 ## Sales tax group and item sale tax group determination logic
 

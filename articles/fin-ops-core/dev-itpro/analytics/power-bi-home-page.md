@@ -1,31 +1,20 @@
 ---
-# required metadata
-
-
 title: Power BI content home page
-description: This topic lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
+description: This article lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: PowerBIPbixDeployForm
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["265694", "intro-internal"]
-ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 265694,  ""intro-internal
+ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
+ms.search.form: PowerBIPbixDeployForm
 ---
 
 # Power BI content home page

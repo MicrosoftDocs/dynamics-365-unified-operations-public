@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Create a corrective invoice (Spain)
-description: This procedure walks you through how to create a corrective invoice. 
-author: ShylaThompson
+description: This procedure walks you through how to create a corrective invoice.
+author: kfend
 ms.date: 12/06/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Spain
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a corrective invoice (Spain)
 

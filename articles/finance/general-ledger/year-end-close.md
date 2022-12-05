@@ -2,9 +2,9 @@
 # required metadata
 
 title: Year-end close
-description: This topic describes the required setup and steps for running the general ledger year-end close process. 
+description: This article describes the required setup and steps for running the general ledger year-end close process. 
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerClosingSheet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the required setup and steps for running the general ledger year-end close process.
+This article describes the required setup and steps for running the general ledger year-end close process.
 
 At the end of a fiscal year, you must run the year-end close process to transfer opening balances to the new year. Most organizations will run the year-end close process multiple times. The first run moves the balances into the new fiscal year. The process can then be rerun as many times as required to move the balances from adjusting entries into the new fiscal year.
 
@@ -67,7 +67,7 @@ On the **Year-end close template setup** page:
 
 ## Define year-end close templates
 
-After the system is configured, the year-end close process can be run. On the **Year-end close template setup** page, a template can be defined for the group of legal entities that the year-end close process will be run for. The template will be reused at each year-end close, but it can be modified if your organization changes.
+After the configuration is complete, the year-end close process can be run. On the **Year-end close template setup** page, a template can be defined for the group of legal entities that the year-end close process will be run for. The template will be reused at each year-end close, but it can be modified if your organization changes.
 
 First, set the **Group name** field for the template, and select the fiscal calendar. The group name should identify the group of legal entities that is included. When you're determining the groups of legal entities, remember that legal entities can be included in the same group only if the same fiscal calendar is selected for them. For example, the templates can be set up based on geography, and separate groups can be created for North American legal entities, Europe, the Middle East, and Africa (EMEA) legal entities, and Asia-Pacific (APAC) legal entities.
 

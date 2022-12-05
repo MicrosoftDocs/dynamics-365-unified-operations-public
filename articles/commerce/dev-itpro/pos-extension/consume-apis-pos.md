@@ -1,14 +1,14 @@
 ---
 title: Consume custom headless Commerce APIs and entities in POS
-description: This topic explains how to use Proxy to consume custom headless Commerce APIs and entities in Point of Sale (POS).
-author: mugunthanm
+description: This article explains how to use Proxy to consume custom headless Commerce APIs and entities in Point of Sale (POS).
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to use Proxy to consume custom headless Commerce APIs and entities in Point of Sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article explains how to use Proxy to consume custom headless Commerce APIs and entities in Point of Sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 1. Make sure that your Commerce runtime (CRT) extension project references the **Microsoft.Dynamics.Commerce.Sdk.Runtime** NuGet package, and that your POS extension project references the **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet package.
 2. Add a project reference from your POS extension project to the CRT project that defines your APIs.

@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Buy box module
-description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Buy box module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 The term *buy box* typically refers to the area of a product details page (PDP) that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
 

@@ -1,6 +1,6 @@
 ---
 title: Global Inventory Accounting home page
-description: This topic is the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management.
+description: This article is the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.20
 # Global Inventory Accounting home page
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 International organizations are under increasing pressure from authorities to comply with local and global accounting standards. The valuation of inventory plays a significant role in ensuring compliance. The Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management provides a comprehensive solution that enables organizations (especially international organizations) to use multiple costing ledgers to do inventory accounting. Therefore, those organizations can comply with multiple accounting standards and internal management accounting at the same time.
 

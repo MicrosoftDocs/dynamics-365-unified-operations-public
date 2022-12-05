@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Procurement and sourcing in the public sector
-description: This topic explains the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
-author: v-kiarnd
+description: This article explains the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
+author: velofog
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 19681
-ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19681
+ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
+ms.search.industry: Public sector
+ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
 ---
 
 # Procurement and sourcing in the public sector
 
 [!include [banner](../includes/banner.md)]
 
-This topic introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
+This article introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 
 ## What are the prerequisites for setting up Procurement and sourcing in the public sector?
 Before you begin to adjust the settings and input your data, you should:

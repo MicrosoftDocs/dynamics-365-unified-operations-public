@@ -2,7 +2,7 @@
 # required metadata
 
 title: Over/under transactions
-description: This topic provides information that will help you set up the details of policies for over/under transactions, so that the system can determine how to manage the over-processing and under-processing of goods at the time of receipt.
+description: This article provides information that will help you set up the details of policies for over/under transactions, so that the system can determine how to manage the over-processing and under-processing of goods at the time of receipt.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa

@@ -2,7 +2,7 @@
 # required metadata
 
 title: System-directed work sequencing
-description: This topic provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
+description: This article provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -38,7 +38,7 @@ Therefore, this functionality allows for further optimization of warehouse picki
 
 ## Turn on the Organization-wide system directed work sequencing feature
 
-Before you can use system-directed work sequencing, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use system-directed work sequencing, the feature must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Organization-wide system directed work sequencing*
@@ -47,7 +47,7 @@ Before you can use system-directed work sequencing, the feature must be turned o
 
 ### Make demo data available
 
-To work through the scenario by using the values that are presented in this topic, you must work on a system where the standard demo data is installed. Additionally, you must select the **USMF** legal entity. The scenario uses warehouse *51* from the demo data.
+To work through the scenario by using the values that are presented in this article, you must work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity. The scenario uses warehouse *51* from the demo data.
 
 > [!IMPORTANT]
 > Before you release the orders to the warehouse, make sure that the pick locations have enough inventory for all the items on the orders.

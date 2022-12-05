@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Quality management item sampling
-description: This topic describes how to set up item sampling.
+description: This article describes how to set up item sampling.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Basis change in ICMS-DIF tax calculations for products from suppliers in other states
-description: This topic describes the configuration for calculations of the ICMS-DIF tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
+description: This article describes the configuration for calculations of the ICMS-DIF tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
 author: Kai-Cloud
-ms.date: 1/20/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,9 +25,9 @@ ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
 ---
 
-# Basis change in ICMS-DIF tax calculations for products from suppliers in other states
+# Basis change (dual base) in ICMS-DIF tax calculations for products from suppliers in other states
 
-This topic describes the configuration for calculations of the **ICMS-DIF** tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
+This article describes the configuration for calculations of the **ICMS-DIF** tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
 
 According to the definition in the state law, the Imposto sobre Circulação de Mercadorias e Serviços (ICMS) that is collected must follow this rule:
 
@@ -50,6 +50,25 @@ To calculate differential ICMS (ICMS-DIF) according to the rules of the RS state
 2. Create a sales tax code to collect the ICMS-DIF. This sales tax code should have a percentage amount of 18 percent (for your own state) to define the difference between 18 percent and 12 percent. Set the tax type to **ICMS-DIF**. This sales tax code must be defined in the following way in the calculation parameters:
 
     - In the **Origin** field, select **Percentage of gross amount**.
-    - In the **Marginal base** field, select **Net amount per line** or **Net amount of invoice balance**.
+    - In the **Marginal base** field, select **Net amount per line**.
     - Define the taxation code so that it has a fiscal value of **3**. In this way, the adjustment transaction will automatically be created when the **Fiscal books** module is enabled.
     - In the configuration of the sales tax group, select the **Use tax** option for the **ICMS-DIF** sales tax code.
+
+### Use the delta tax rate in the configuration of dual-base ICMS-DIF sales tax codes
+
+When the previously described settings are used, the **ICMS-DIF** sales tax code will be calculated in the dual base rule. However, the nominal tax rate becomes 18 percent, which differs from the 6-percent rate in the simple base rule. This difference causes inconsistency issues in fiscal document and tax reporting. As of Microsoft Dynamics 365 Finance version 10.0.29, you can enable the **(Brazil) Configure the delta tax rate in ICMS-DIF tax code for the dual base case** feature in **Feature management** to remove the inconsistency.
+
+- In addition to completing the steps in the previous section, select the **ICMS 12** sales tax code in the **Sales tax on sales tax** field.
+- Set the tax rate of the **ICMS-DIF** sales tax code to 18 percent. The **Percentage/Amount** field will show the nominal tax rate as 6 percent.
+
+> [!NOTE]
+> The **ICMS-DIF** and **ICMS 12** sales tax codes must be assigned in the same sales tax group.
+
+## Basis change (dual base) in ICMS-DIF tax calculations for products to non-taxpayer consumers (DIFAL) in other states
+
+Enable the **(Brazil) Dual base calculation for ICMS-DIFAL in sales transactions** feature in **Feature management** to support the basis-change ICMS-DIF on trading to non-taxpayer consumers from another state. The sample ICMS-DIF sales tax code becomes effective in sales order and free text invoice transactions.
+
+Enable the **(Brazil) Dual base calculation for ICMS-DIFAL for IPI cases** feature in **Feature management** to support scenarios where trading to non-taxpayer consumers from another state is also liable for Imposto sobre Produtos Industrializados (IPI). The tax amount of the IPI sales tax code will be recognized and applied in the ICMS-DIFAL tax base.
+
+- On the header of the sales order or free text invoice, on the **Fiscal information** FastTab, the **Final user** option must be set to **Yes**.
+- On the header of the purchase order or vendor invoice, on the **Fiscal information** FastTab, the **Use and consumption** option must be set to **Yes**.

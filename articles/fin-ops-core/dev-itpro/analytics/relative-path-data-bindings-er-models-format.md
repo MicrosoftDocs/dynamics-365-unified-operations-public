@@ -1,37 +1,25 @@
 ---
-# required metadata
-
 title: Use a relative path in data bindings of ER models and formats
-description: The Electronic reporting tool lets you define electronic format structures and then describe how those structures should be filled. 
-author: NickSelin
+description: The Electronic reporting tool lets you define electronic format structures and then describe how those structures should be filled.
+author: kfend
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.search.form: ERSolutionTable, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 ---
 
 # Use a relative path in data bindings of ER models and formats
 
 [!include[banner](../includes/banner.md)]
 
-The Electronic reporting (ER) tool lets users define electronic format structures and then describe how those structures should be filled by using data and algorithms that exist in the application. For more information, see [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md). To specify the data flow for retrieving Finance and Operations data and using it to generate  an electronic document, you need to do the following:
+The Electronic reporting (ER) tool lets users define electronic format structures and then describe how those structures should be filled by using data and algorithms that exist in the application. For more information, see [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md). To specify the data flow for retrieving finance and operations data and using it to generate  an electronic document, you need to do the following:
 
 - Bind configured data sources to elements of the designed domain-specific data model. The model structure and selected data sources might be part of a complex hierarchical structure. Because of this, final bindings can be quite large and contain many elements of different types (for example, relations, tables, and methods,). The bindings can become less readable and quite complex to review and understand, especially for non-owners. 
 - Bind data model elements with format components to define what data will be populated from the data model to the generated format’s output.
@@ -66,3 +54,4 @@ This feature does not break the backward compatibility of the ER framework. All 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

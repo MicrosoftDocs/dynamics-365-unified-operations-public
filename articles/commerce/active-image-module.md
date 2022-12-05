@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Active image module
-description: This topic covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.search.industry: 
+ms.search.form: 
 ---
 # Active image module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 An active image module can be used to embed product tags in an image. E-commerce site users can then hover over the tags to preview products that are shown in the image. The previews are shown in pop-up windows. By selecting a preview pop-up window, users can go directly to the product details page (PDP) for the corresponding product.
 

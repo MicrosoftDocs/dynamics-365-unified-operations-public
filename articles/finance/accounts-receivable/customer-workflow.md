@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer workflow
-description: This topic provides information about the customer workflow. You change specific fields for a customer and then send those changes for approval by using the workflow before they are added to the customer.
+description: This article provides information about the customer workflow. You change specific fields for a customer and then send those changes for approval by using the workflow before they are added to the customer.
 author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page

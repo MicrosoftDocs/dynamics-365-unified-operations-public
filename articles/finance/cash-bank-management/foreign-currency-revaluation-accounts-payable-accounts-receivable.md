@@ -2,9 +2,9 @@
 # required metadata
 
 title: Currency revaluation for Accounts payable and Accounts receivable
-description: This topic provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
-author: kweekley
-ms.date: 06/20/2017
+description: This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time. This topic provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
+Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time. This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
 
 The theoretical value, or book value, of open transactions in foreign currencies varies over time because of fluctuations in exchange rates. To update the value of open transactions in Accounts payable and Accounts receivable, run the foreign currency revaluation process. Foreign currency revaluation can be run for both Accounts payable and Accounts receivable. The process uses a new exchange rate to revalue the open amounts, or not settled amounts, on a specified date. The differences between the original posted amounts and the revalued amounts will cause an unrealized gain or loss for each open transaction. The Accounts payable and Accounts receivable subledgers are then updated to reflect the unrealized gain or loss, and an accounting entry is posted to General ledger.
 

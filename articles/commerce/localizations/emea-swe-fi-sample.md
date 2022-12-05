@@ -1,23 +1,20 @@
 ---
-# required metadata
-
 title: Control unit integration sample for Sweden
-description: This topic provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2019-10-08
-
 ---
 # Control unit integration sample for Sweden
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > This sample fiscal integration functionality replaces the earlier [sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the sample that corresponds to Dynamics 365 Commerce version **10.0.22 and earlier**, see [Migrating from the earlier integration sample](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -39,7 +36,7 @@ The control unit integration sample for Sweden includes the following capabiliti
 - Several error handling options are available. Here are some examples:
 
     - Retry fiscal registration, if a retry is possible. You can retry fiscal registration if, for example, the control unit isn't connected, isn't ready, or isn't responding.
-    - Postpone fiscal registration.
+    - Defer fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Verify the availability of the control unit before a new sales transaction is opened or a sales transaction is finalized.
 
@@ -80,7 +77,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
 
-In the Receipt format designer, add the following custom fields to the **Footer** section. Note that field names correspond to the language texts that you defined in the previous section of this topic.
+In the Receipt format designer, add the following custom fields to the **Footer** section. Note that field names correspond to the language texts that you defined in the previous section of this article.
 
 - **Register control code** – This field prints the control code.
 - **Register device** – This field prints the manufacturing number of the control unit.
@@ -100,7 +97,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also, make a note of the settings for the fiscal registration process that are [specific to this control unit integration sample](#set-up-the-registration-process).
 1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Configure channel components](#configure-channel-components).
 
 ### Set up the registration process

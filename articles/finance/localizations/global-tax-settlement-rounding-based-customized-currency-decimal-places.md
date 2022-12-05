@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax settlement rounding based on customized currency decimal places
-description: This topic explains how to do tax settlement rounding that is based on customized currency decimal places.
+description: This article explains how to do tax settlement rounding that is based on customized currency decimal places.
 author: shtao
 ms.date: 09/15/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to do tax settlement rounding that is based on customized currency decimal places.
+This article explains how to do tax settlement rounding that is based on customized currency decimal places.
 
 ## Requirements
 

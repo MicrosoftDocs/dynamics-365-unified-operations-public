@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bill for maintenance on customer-owned assets
-description: This topic explains how to create, process, and bill maintenance work that is done on assets that your customers own.
+description: This article explains how to create, process, and bill maintenance work that is done on assets that your customers own.
 author: johanhoffmann
 ms.date: 01/28/2021
 ms.topic: article
@@ -44,7 +44,7 @@ In addition, the feature provides the following functionality:
 
 ## Turn on the customer billing feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Project management and accounting*
 - **Feature name:** *Work order billing*
@@ -53,7 +53,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 To learn how this feature works, work through the following example scenario.
 
-To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. You must select the **USMF** legal entity before you begin.
+To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must select the **USMF** legal entity before you begin.
 
 You can also use this scenario as guidance for using the feature when you work on a production system. However, in that case, you must substitute your own values, and you might be missing some types of required records that the standard demo data provides.
 

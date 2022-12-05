@@ -1,10 +1,10 @@
 ---
 title: Inventory value reports
-description: This topic explains how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities and amounts.
+description: This article explains how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities and amounts.
 author: JennySong-SH
-ms.date: 10/19/2021
+ms.date: 11/28/2022
 ms.topic: article
-ms.search.form: InventValueProcess, InventValueReportSetup
+ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -50,11 +50,11 @@ The **Inventory value report storage** report is helpful when the output contain
 
 ## Turn the Inventory value report storage feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## <a name="report-configuration"></a>Define inventory value report configurations
 
-Use the **Inventory value reports** page to set up the content that is included in the different types of inventory value report. You can define any number of report types. Each time that you generate either type of inventory value report, you will select a report type.
+Use the **Inventory value reports** page to set up the content that is included in the different types of inventory value report. You can define any number of report types. Each time that you generate either type of inventory value report, you'll select a report type.
 
 1. Go to **Cost management \> Inventory accounting policies setup \> Inventory value reports**.
 1. Follow one of these steps:
@@ -106,7 +106,7 @@ Use the **Inventory value reports** page to set up the content that is included 
         - **Labor** – The column shows the `WorkCenterID` field value for the relevant labor record.
         - **Indirect cost** – The column shows the `CodeID` field value for the relevant cost record.
 
-        If the **View** option is set to *No* for both the **Resource ID** field and the **Resource Group** field, you will see only a total inventory value that is based on the inventory dimensions that you selected.
+        If the **View** option is set to *No* for both the **Resource ID** field and the **Resource Group** field, you'll see only a total inventory value that is based on the inventory dimensions that you selected.
 
     - **Resource Group** – Set the **View** option to *Yes* to display a column that identifies the resource group for each row. Set the **Total** option to *Yes* to include totals too. Depending on the type of item that is listed in each row, the column shows one of the following types of information:
 
@@ -114,7 +114,7 @@ Use the **Inventory value reports** page to set up the content that is included 
         - **Labor** – The column shows the `WorkcenterGroup` field value for the relevant labor record.
         - **Indirect cost** – The column shows the `CostGroup` field value for the relevant cost record. (The `CostGroupType` value must be *Indirect*.)
 
-        If the **View** option is set to *No* for both the **Resource ID** field and the **Resource Group** field, you will see only a total inventory value that is based on the inventory dimensions that you selected.
+        If the **View** option is set to *No* for both the **Resource ID** field and the **Resource Group** field, you'll see only a total inventory value that is based on the inventory dimensions that you selected.
 
 1. On the **Rows** FastTab, set the following fields. These fields let you add corresponding WIP-related subsections to the report or remove them.
 
@@ -124,7 +124,7 @@ Use the **Inventory value reports** page to set up the content that is included 
     - **Direct outsourcing** – Set this option to *Yes* to show direct outsourcing costs of WIP. This information is useful for subcontracting.
     - **Detail Level** – Select a view option for the report:
 
-        - *Transactions* – View all relevant transactions on the report. Note that you might experience performance issues when you view reports that include a large volume of transactions. Therefore, if you want to use this view option, we recommend that you use the **Inventory value report storage** report.
+        - *Transactions* – View all relevant transactions on the report. You might experience performance issues when you view reports that include a large volume of transactions. Therefore, if you want to use this view option, we recommend that you use the **Inventory value report storage** report.
         - *Totals* – View the total result.
 
     - **Include beginning balance** – Set this option to *Yes* to show the beginning balance. This option is available only when the **Detail level** field is set to *Transactions*.
@@ -167,7 +167,7 @@ After you've generated a report, you can view and explore it at any time by foll
     - Use the **Filter** field to filter the report by any value in any of several available columns.
     - Use the view menu (above the **Filter** field) to save and load your favorite combinations of sort and filter options.
 
-## Export an Inventory value report storage report
+## <a name="export-stored-report"></a>Export an Inventory value report storage report
 
 Every report that you generate is stored in the **Inventory value** data entity. You can use the standard data management features of Supply Chain Management to export data from this entity to any supported data format, such as CSV or Excel format.
 
@@ -175,7 +175,7 @@ The following example shows how to export an **Inventory value report storage** 
 
 1. Go to **System administration \> Workspaces \> Data management**.
 1. In the **Import / Export** section, select the **Export** tile.
-1. On the **Export** page that appears, you will set up the export job. First enter a group name for the job.
+1. On the **Export** page that appears, set up the export job. First enter a group name for the job.
 1. In the **Selected entities** section, select **Add entity**.
 1. In the dialog box that appears, set the following fields:
 
@@ -183,12 +183,12 @@ The following example shows how to export an **Inventory value report storage** 
     - **Target data format** – Select the format to export data to.
 
 1. Select **Add** to add the new row, and then select **Close** to close the dialog box.
-1. Usually, you will export one report at a time. To export a single report, set up a filter for the row that you just added to the **Inquiry** dialog box. In this way, you can define which report from the **Inventory value** entity is included in your export. Follow these steps to set the following filter options to export a single report:
+1. Usually, you'll export one report at a time. To export a single report, set up a filter for the row that you just added to the **Inquiry** dialog box. In this way, you can define which report from the **Inventory value** entity is included in your export. Follow these steps to set the following filter options to export a single report:
 
     1. On the **Range** tab, select **Add** to add a row.
     2. Set the **Table** field to *Inventory value*.
     3. Set the **Derived table** field to *Inventory value*.
-    4. Set the **Field** field to the field that you want to filter by. Usually, you will use the **Execution name** field and/or the **Execution time** field.
+    4. Set the **Field** field to the field that you want to filter by. Usually, you'll use the **Execution name** field and/or the **Execution time** field.
     5. Set the **Criteria** field to the value that you want to look for in the selected field. (If you selected the **Execution name** field in the previous step, this value will be the name of the report. If you selected the **Execution time** field, it will be the time when the report was generated.)
     6. Add more rows to the **Range** tab as you require, until you've uniquely identified the report that you're looking for.
 
@@ -198,6 +198,34 @@ The following example shows how to export an **Inventory value report storage** 
 1. On the **Execution summary** page that appears, you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the **Inventory value** entity in the list, and then select **Download file** to download the data that was exported from that entity.
 
 For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+## Delete stored inventory value reports
+
+As the number of stored inventory value reports increases, they might eventually begin to take up too much space in your database. This situation can affect system performance and cause higher data-storage costs. Therefore, you'll probably have to clean up the reports from time to time by deleting older reports.
+
+> [!IMPORTANT]
+> Before you delete any of your previously generated inventory value reports, we strongly recommend that you first [export the reports](#export-stored-report) and store them externally, because you might not be able to regenerate them again later. This limitation exists because when you generate an inventory value report, the system works backwards from today and processes each inventory transaction record in reverse order as it goes. If you try to look too far back when you generate a report, the volume of transactions to process might eventually become so large that the system will time out before it can finish generating the report. The distance into the past that you can generate new reports for depends on the number of inventory transactions that you have in your system for the relevant time span.
+
+### Delete one report at a time
+
+Follow these steps to delete one stored report at a time.
+
+1. [Export the report](#export-stored-report) that you're planning to delete, and store it in an external location for future reference.
+1. Go to **Cost management \> Inquiries and reports \> Inventory value report storage**.
+1. In the list pane, select the report to delete.
+1. On the Action Pane, select **Delete**.
+1. A warning message reminds you to back up generated reports. Select **Yes** if you're ready to proceed with the deletion.
+
+### Delete several reports at the same time
+
+Follow these steps to delete several stored reports at the same time.
+
+1. [Export all the reports](#export-stored-report) that you're planning to delete, and store them in an external location for future reference.
+1. Go to **Cost management \> Inventory accounting \> Clean up \> Inventory value report data clean up**.
+1. In the **Inventory value report data clean up** dialog box, in the **Delete inventory value report executed before** field, select the date before which all inventory value reports should be deleted.
+1. On the **Records to include** FastTab, you can set additional filter conditions to limit the set of reports that will be deleted. Select **Filter** to open a standard query editor where you can define the properties of the reports to delete.
+1. On the **Run in the background** FastTab, you can specify how, when, and how often the reports should be deleted. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, you'll typically run this job manually each time that it's required.
+1. Select **OK** to delete the specified reports.
 
 ## Generate a standard Inventory value report
 
@@ -229,17 +257,17 @@ When you understand these two concepts, it should be easy to understand the foll
 - **Inventory: Financial Amount** – The amount value of inventory that has been financially updated.
 - **Inventory: Physical Quantity Posted** – The quantity that has been physical updated.
 - **Inventory: Physical Amount Posted** – The amount value of inventory that has been physical updated.
-- **Inventory: Physical Quantity Not Posted** – The quantity that has inventory transactions but hasn't been posted to the general ledger. For example, you have an item model group where the **Post physical inventory** and **Post financial inventory** options are cleared, and you have an item that is linked to that group. You then create a purchase order, receive it, and invoice it. At this point, if you review the inventory value report for the item, you will see that the quantity and the value on the purchase order are shown in the **Inventory: Physical Quantity Not Posted** and **Inventory: Physical Amount Not Posted** columns.
+- **Inventory: Physical Quantity Not Posted** – The quantity that has inventory transactions but hasn't been posted to the general ledger. For example, you have an item model group where the **Post physical inventory** and **Post financial inventory** options are cleared, and you have an item that is linked to that group. You then create a purchase order, receive it, and invoice it. At this point, if you review the inventory value report for the item, you'll see that the quantity and the value on the purchase order are shown in the **Inventory: Physical Quantity Not Posted** and **Inventory: Physical Amount Not Posted** columns.
 - **Inventory: Physical Amount Not Posted** – You can set up your reports so that they show unposted amounts. However, if you're using the report for inventory reconciliation, don't use this value. Otherwise, the amount isn't posted to the general ledger.
 - **Inventory: Quantity** – The total quantity of all the quantity columns on the report.
 - **Inventory: Amount** – The total quantity of all the amount columns on the report. When you do inventory reconciliation, don't use this column if your report includes the **Inventory: Physical Amount Not Posted** column. In this case, you must exclude the **Inventory: Physical Amount Not Posted** amount from the total amount.
 - **Average unit cost** – The total amount divided by the total quantity.
 
-Typically, you will use an inventory value report to view the inventory value and quantity. However, sometimes the report won't show all the relevant inventory dimensions. If you don't see the dimensions that you expect, validate the following settings:
+Typically, you'll use an inventory value report to view the inventory value and quantity. However, sometimes the report won't show all the relevant inventory dimensions. If you don't see the dimensions that you expect, validate the following settings:
 
 - Review the item storage and tracking dimension groups. Only dimensions where the **Financial inventory** option is enabled can be shown on the report.
 - Go to **Cost management \> Inventory accounting policies setup \> Inventory value reports**, select the report configuration that you used to generate the report, and make sure that the required inventory dimensions are selected in the **View** column.
 
-For example, you have an item that has the item number *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not for financial inventory. You then use a report configuration where site, warehouse, and batch number are all selected. When you view the report, you see a value only for the site. The columns for the warehouse and batch number are blank. As this example shows, inventory value reports can show only inventory dimension that are enabled for financial inventory.
+For example, you have an item that has the item number *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not for financial inventory. You then use a report configuration where site, warehouse, and batch number are all selected. When you view the report, you see a value only for the site. The columns for the warehouse and batch number are blank. As this example shows, inventory value reports can show only inventory dimensions that are enabled for financial inventory.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

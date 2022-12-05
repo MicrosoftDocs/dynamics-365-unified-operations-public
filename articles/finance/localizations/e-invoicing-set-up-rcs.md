@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Set up Regulatory Configuration Service (RCS)
-description: This topic explains how to set up Regulatory Configuration Service (RCS).
-author: dkalyuzh
-ms.date: 02/09/2022
+description: This article explains how to set up Regulatory Configuration Service (RCS).
+author: gionoder
+ms.date: 10/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["97423", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: gionoder
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.custom: 97423,  ""intro-internal
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Set up Regulatory Configuration Service (RCS)
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up Regulatory Configuration Service (RCS).
+This article explains how to set up Regulatory Configuration Service (RCS).
 
 ## Turn on Globalization features
 
@@ -44,7 +34,16 @@ A tile for the **Globalization features** workspace should now  appear on the ma
 ## Set up the parameters for RCS integration with Electronic invoicing
 
 1. In the **Globalization features** workspace, in the **Related settings** section, select **Electronic reporting parameters**.
-2. On the **Electronic Invoicing** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Microsoft Azure geography, as shown in the following table.
+2. The first time you set up the parameters, you will be prompted to connect to Life Cycle Services (LCS). Select **Click here to connect to Lifecycle Services**, and after the connection is established, select **OK**.
+
+    > [!IMPORTANT]
+    > In countries or regions where the data residence is enforced, and if your RCS was provisioned in a region different where LCS is provisioned, you may receive the following connection error message in RCS: “No HTTP resource was found that matches the request URI”. Select **OK**. You may receive another error message in RCS: "Failed to generate the user token for Dynamics Lifecycle services on behalf on user (). Please contact your system administrator."
+    >  
+    > This happens because LCS is a global service and is provisioned in a US region. Because of the data residence policy, the RCS from your current region is unable to connect to LCS. Under these circunstances, there are 2 possible solutions:
+    > - Delete RCS from your current region and recreate it in US region.
+    > - Ignore the errors and continue with Electronic invoicing setup. These errors have no impact on the Electronic invoicing functionality.
+
+3. On the **Electronic Invoicing** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Microsoft Azure geography, as shown in the following table.
 
     | Datacenter Azure geography | Service endpoint URI |
     |----------------------------|----------------------|
@@ -60,8 +59,10 @@ A tile for the **Globalization features** workspace should now  appear on the ma
     | Canada                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | France                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | India                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Norway                     | <p>`https://gw.no-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | South Africa               | <p>`https://gw.za-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. Verify that the **Application ID** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value. Make sure that only a globally unique identifier (GUID) is entered, and that the value doesn't include any other symbols, such as spaces, commas, periods, or quotation marks.
+3. Review and enter in the **Application ID** field the fixed value **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Make sure that only a globally unique identifier (GUID) is entered, and that the value doesn't include any other symbols, such as spaces, commas, periods, or quotation marks.
 4. In the **LCS Environment ID** field, enter the ID of your Microsoft Dynamics Lifecycle Services (LCS) environment. This value is the reference to the Finance or Supply Chain Management environment that you will use with the Electronic Invoicing service. To get your ID, sign in to [LCS](https://lcs.dynamics.com/), open your project, and then, on the **Manage environment** tab, in the **Environment details** section, look in the **Environment Id** field.
 
     > [!IMPORTANT]

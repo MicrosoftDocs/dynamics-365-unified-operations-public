@@ -35,7 +35,7 @@ This procedure uses the USMF demo company. The accounts payable manager or accou
 
 
 ## Create a purchase order
-1. Go to All purchase orders.
+1. Go to **All purchase orders**.
 2. Click **New**.
 3. In the **Vendor account** field, click the drop-down button to open the lookup.
 4. In the **Vendor account** field, type a value.

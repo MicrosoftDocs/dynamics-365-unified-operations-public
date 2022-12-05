@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Manage units of measure
-description: This topic describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
+description: This article describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process 
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
+This article describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 
 ## Open the Units page
 
 To create and work with the units of measure that are available in your system, go to **Organization administration \> Setup \> Units \> Units**.
 
-The remaining sections of this topic describe what you can do on the **Units** page.
+The remaining sections of this article describe what you can do on the **Units** page.
 
 ## Create standard units and conversions
 

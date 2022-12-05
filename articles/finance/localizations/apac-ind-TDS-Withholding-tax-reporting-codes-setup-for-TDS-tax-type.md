@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax reporting codes for the TDS tax type
-description: Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
+description: Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This article explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
+Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This article explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax reporting codes**.
 

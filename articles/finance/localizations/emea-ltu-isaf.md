@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: i.SAF reporting for Lithuania
-description: This topic explains how to set up and work with the i.SAF report for legal entities in Lithuania.
-author: LizaGolub
+description: This article explains how to set up and work with the i.SAF report for legal entities in Lithuania.
+author: AdamTrukawka
 ms.date: 03/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266884
 ms.search.region: Lithuania
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 266884
+ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 ---
 
 # i.SAF reporting for Lithuania
@@ -34,9 +24,9 @@ According to Order No VA-55, "On the Approval of Rules for the Processing and Su
 
 ## Overview
 
-This topic describes how to set up Electronic Reporting (ER) configurations for the i.SAF report and how to set up and use Electronic Messages (EM) functionality in Dynamics 365 Finance.
+This article describes how to set up Electronic Reporting (ER) configurations for the i.SAF report and how to set up and use Electronic Messages (EM) functionality in Dynamics 365 Finance.
 
-The topic includes information about:
+The article includes information about:
 
 - Import and set up ER configurations and application-specific parameters
 - Set up EM functionality

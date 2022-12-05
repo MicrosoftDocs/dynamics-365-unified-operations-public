@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate Customer Voice into e-commerce site pages
-description: This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into Dynamics 365 Commerce e-commerce site pages.
+description: This article describes how to integrate Microsoft Dynamics 365 Customer Voice into Dynamics 365 Commerce e-commerce site pages.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to integrate Microsoft Dynamics 365 Customer Voice into Dynamics 365 Commerce e-commerce site pages.
+This article describes how to integrate Microsoft Dynamics 365 Customer Voice into Dynamics 365 Commerce e-commerce site pages.
 
 You can integrate [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) into your e-commerce site to collect, analyze, and track real-time customer feedback. To get started with the integration, you must create an account and select a Customer Voice project template for the type of feedback that you want to collect.
 
@@ -34,7 +34,7 @@ To select a Customer Voice project template, follow these steps.
 1. Select the project template for the type of feedback that you want to collect, and then select **Next**.
 1. On the **Send** tab, under **Choose an embed format**, select an embed format. The **Embedded code** field shows the code that must be embedded in Commerce site builder.
 
-The examples in this topic use the **Periodic customer survey** project template and the **Button** embed format.
+The examples in this article use the **Periodic customer survey** project template and the **Button** embed format.
 
 The following example illustration shows the **Periodic customer survey** project template page, where the option for the **Button** embed format is selected, and the embed code for that option appears in the **Embedded code** field. Three separate actions are required to embed the provided code in your site pages, as described in the following sections.
 

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Workspace Page Filter Group subpattern
 description: This article provides information about the Workspace Page Filter Group subpattern.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29231
-ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29231
+ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607
 ---
 
 # Workspace Page Filter Group subpattern

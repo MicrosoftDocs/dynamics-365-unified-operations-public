@@ -43,7 +43,7 @@ To use a cost other than the current cost for returns from a customer, use one o
 
 By default, when you add items to a return order, the items are returned to inventory at the current cost price. To specify a different return cost price, follow these steps.
 
-1.  Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.
+1.  Click **Sales and marketing** \> **Sales returns** \> **All return orders**.
 
 2.  On the **Action Pane**, in the **New** group, click **Return order**.
 
@@ -59,7 +59,7 @@ By default, when you add items to a return order, the items are returned to inve
 
 This is the preferred method to use to create return lines. To use the cost of the products at the time when you sold the products to the customer, create a return order and specify a sales line to return.
 
-1.  Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.
+1.  Click **Sales and marketing** \> **Sales returns** \> **All return orders**.
 
 2.  On the **Action Pane**, in the **New** group, click **Return order**.
 

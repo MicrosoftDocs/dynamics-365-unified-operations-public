@@ -2,9 +2,9 @@
 # required metadata
 
 title: Environment planning
-description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
-author: laneswenka
-ms.date: 02/01/2021
+description: This article provides an overview of various aspects that you must consider while you plan for your project's environment.
+author: skaue-ms
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,9 +21,9 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laswenka
+ms.author: toskaue
 ms.search.validFrom: 2018-08-01
-ms.dyn365.ops.version: Finance and Operations
+ms.dyn365.ops.version: Finance and operations
 
 ---
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, it's important that you discuss and plan your environment early in the project.
+This article provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, it's important that you discuss and plan your environment early in the project.
 
 ## Environment planning overview
 
@@ -145,11 +145,14 @@ The following table compares the deployment options.
 
 ### Selecting the correct Tier-2 or higher environment
 
-It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. The guidance that is provided in the following illustration is a *baseline*. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
+It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. 
 
 ![Environment tiers.](./media/environment-planning-3-environment-tiers.png)
 
-After a subscription estimate is activated, you can view transaction lines per hour in LCS, as shown in the following illustration.
+> [!IMPORTANT]
+> The provided values are for reference only. You must work with your implementation partner to adjust this guidance based on your specific business scenarios and factors such as type of users, complexity, and volumes.
+
+The [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) could be leveraged to get an indication of the transaction lines per hour in LCS for a volume check, as shown in the following illustration.
 
 ![Subscription estimate.](./media/environment-planning-4-subscription-estimate.png)
 
@@ -181,3 +184,4 @@ After you've identified the environments, the environments plan can be used to s
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,16 +2,16 @@
 # required metadata
 
 title: One Version service updates FAQ
-description: This topic provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
+description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 05/03/2022
+ms.date: 07/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this topic as required.
+This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this article as required.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -134,11 +134,11 @@ Yes, you can pause, delay, or opt out of an update via the update settings in LC
 
 No. Service updates will automatically be applied to the sandbox. Then, seven days later, the update will be applied to all additional sandbox and production environments, if those environments are more than three service updates old. A customer can pause only up to three consecutive updates in a row. For example, if a customer on version 10.0.22 chooses to pause updates 10.0.23, 10.0.24, and 10.0.25, service update 10.0.26 will automatically be applied first to the sandbox environment and later to all additional sandbox and production environments. 
 
-### What happens to an environment that is running a Finance and Operations app version that is no longer supported?
+### What happens to an environment that is running a finance and operations app version that is no longer supported?
 
-For environments that are running a Finance and Operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
+For environments that are running a finance and operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
 
-For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a Finance and Operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
+For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a finance and operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
 
 - Enable maintenance mode.
 - Use all capabilities that are provided for moving databases on an environment or across environments.
@@ -149,7 +149,7 @@ For all Microsoft-managed environments, and sandbox and production environments 
 After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
 > [!NOTE]
-> In this topic, versions are noted in the following ways:
+> In this article, versions are noted in the following ways:
 >
 > - Version N is the latest version, such as 10.0.25
 > - Version N-1 is one version older than N, such as 10.0.24
@@ -165,13 +165,15 @@ All additional sandbox environments will be updated during the same update windo
 
 All environments will be updated to version N. 
 
-### What if the default sandbox environment is manually updated before the default sandbox environment email is sent? 
+### What if the default sandbox environment is manually updated to the exact same version or higher version than the automatic update version? 
 
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled.
+Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
+ 
+The default sandbox environment update will be canceled. 
 
-### What if the default sandbox environment is manually updated after the default sandbox email is sent? 
-
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
+### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
+ 
+The default sandbox environment, production environment, and all additional sandbox environments will be updated to the current N version.
 
 ### What if the production environment is manually updated before the production environment email is sent? 
 
@@ -244,7 +246,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I determine what is changed in a service update?
 
-The "What's new or changed" documentation is the primary source for the details of each service update. The [release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include Help topics on docs.microsoft.com as needed. 
+The "What's new or changed" documentation is the primary source for the details of each service update. The [release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include Help topics on Microsoft Learn as needed.
 
 ### If I'm not doing active development/recompilation of my code, how will I learn whether there is a deprecated feature that will affect me? 
 
@@ -254,7 +256,7 @@ Deprecated features will be documented for each release. For more information, s
 
 ### How can I log an extensibility request?
 
-Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) topic. Note the following timelines for logging and using the available extensions.
+Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) article. Note the following timelines for logging and using the available extensions.
 
 | Date         | Extensibility requests |
 |--------------|------------------------|

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Load templates
-description: This topic describes how to set up load templates, and how to associate a load template with a new load.
+description: This article describes how to set up load templates, and how to associate a load template with a new load.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.15
 
 When you create a new load, you can assign a load template. The load template contains information about equipment, and about measures such as the height, width, depth, and volume of the load.
 
-This topic describes how to set up load templates, and how to associate a load template with a new load.
+This article describes how to set up load templates, and how to associate a load template with a new load.
 
 ## Set up a load template
 

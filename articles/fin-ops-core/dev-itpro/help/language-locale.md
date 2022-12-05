@@ -1,33 +1,20 @@
 ---
-# required metadata
-
 title: Language and locale descriptors in the product and in Help
-description: This topic maps the language names between the Finance and Operations client and the GitHub repos that contain translated Microsoft Help content. 
+description: This article maps the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
 author: edupont04
-ms.topic: article
 ms.date: 05/11/2020
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.topic: article
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Language and locale descriptors in the product and in Help
 
-The client that Finance and Operations apps use supports multiple languages and locales. To add custom Help content for one or more locales to the in-product **Help** pane, you must make sure that both the following conditions are met:
+The client that finance and operations apps use supports multiple languages and locales. To add custom Help content for one or more locales to the in-product **Help** pane, you must make sure that both the following conditions are met:
 
 - The value of the **ms.locale** property in each HTML file matches the locale of the content.
 
@@ -41,7 +28,7 @@ For more information, see [Custom Help overview](custom-help-overview.md) and [D
 
 ## Languages and descriptors
 
-The following table maps the language names between the Finance and Operations client and the GitHub repositories (repos) that contain translated Microsoft Help content.
+The following table maps the language names between the finance and operations client and the GitHub repositories (repos) that contain translated Microsoft Help content.
 
 | Language/locale in the client | Language/region name | Name of the GitHub repo |
 |-------------------------------|----------------------|-------------------------|

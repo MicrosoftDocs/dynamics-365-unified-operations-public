@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Enable custom Commerce Data Exchange synchronization via extension
-description: This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
-author: mugunthanm
+description: This article explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
+author: josaw1
 ms.date: 12/08/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 # Enable custom Commerce Data Exchange synchronization via extension
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations platform update 8 or Microsoft Dynamics 365 Retail platform update 8.
+This article explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 Finance platform update 8 or Microsoft Dynamics 365 Retail platform update 8.
 
 CDX is a system that transfers data between Commerce Headquarters (HQ) and channels, such as online stores or brick-and-mortar stores. The data transfer between HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the names of the source tables and destination tables, and the transfer field mapping of those tables. There are two ways to configure the data synchronization between HQ and the channel database:
 

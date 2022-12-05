@@ -3,8 +3,8 @@
 
 title: Set up centralized payments
 description: Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization.
-author: kweekley
-ms.date: 05/09/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +39,10 @@ Follow these steps to prepare to process payments in one legal entity on behalf 
 -   Set up intercompany accounting.
 
 ## Set up an organizational hierarchy for centralized payments
-You must set up an organizational hierarchy for centralized payments. The same organizational hierarchy is used to process centralized vendor payments and centralized customer payments. **Note:** For centralized payments, the structure of the hierarchy doesn't matter. Any legal entity in the hierarchy will be able to process payments on behalf of any other legal entity in the hierarchy. On the **Organization hierarchies** page, you can create a new organization hierarchy. In the **Purpose** field, you must select **Centralized payments**. 
+You must set up an organizational hierarchy for centralized payments. The same organizational hierarchy is used to process centralized vendor payments and centralized customer payments. 
+
+>[!Note] 
+>For centralized payments, the structure of the hierarchy doesn't matter. Any legal entity in the hierarchy will be able to process payments on behalf of any other legal entity in the hierarchy. On the **Organization hierarchies** page, you can create a new organization hierarchy. In the **Purpose** field, you must select **Centralized payments**. 
 
 ## Set up an intercompany account for centralized payments
 When payment transactions in the current legal entity are settled against invoices in other legal entities, the appropriate due-to and due-from transactions are created for each legal entity. You must specify the legal entity where any applicable cash discounts and realized gain or loss amounts are posted. Before you begin, decide which legal entity you will use to process vendor and customer payments. If one legal entity processes vendor payments but another legal entity processes customer payments, you will have to switch to each legal entity. On the **Intercompany accounting** page, you can select an intercompany relationship record for a legal entity that you will process payments on behalf of. 

@@ -1,35 +1,24 @@
 ---
-# required metadata
-
-title: Migrate code for Finance and Operations apps solutions
-description: This topic describes how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services (LCS).
-author: kfend
+title: Migrate code for finance and operations apps solutions
+description: This article describes how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services (LCS).
+author: sericks007
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
 ---
 
-# Migrate code for Finance and Operations apps solutions
+# Migrate code for finance and operations apps solutions
 
 [!include[banner](../includes/banner.md)]
 
-To complete your solution package, the first step is to upgrade your code by using the best practices in **Migrate and Create Finance and Operations Apps Solutions** in Microsoft Dynamics Lifecycle Services (LCS). After that step is completed, you must run the Customization Analysis Report (CAR). This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
+To complete your solution package, the first step is to upgrade your code by using the best practices in **Migrate and Create finance and operations Apps Solutions** in Microsoft Dynamics Lifecycle Services (LCS). After that step is completed, you must run the Customization Analysis Report (CAR). This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
 To generate the CAR, run the following command on a development environment.
 
@@ -46,9 +35,9 @@ xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\
 The xppbp.exe file is located in c:\\packages\\bin or I:\\AosService\\Packages\\LocalDirectory\\bin. You must resolve any warnings or errors that appear on the **Issues** tab of the report. You must then submit a copy of the CAR to Microsoft before your validation meeting. For more information, see [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md). For information about issues and exceptions, see the [Customization Analysis Report: Exceptions and known issues](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) post on the Dynamics 365 Community blog.
 
 ## Extensibility
-In Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018), all product models are sealed. Therefore, only extension-based customizations are currently supported. For more information about extensibility, see [Extensibility](../extensibility/extensibility-home-page.md).
+In Microsoft Dynamics 365 Finance version 8.0 (April 2018), all product models are sealed. Therefore, only extension-based customizations are currently supported. For more information about extensibility, see [Extensibility](../extensibility/extensibility-home-page.md).
 
-The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Finance and Operations Apps Solutions</strong> in LCS. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
+The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create finance and operations Apps Solutions</strong> in LCS. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
 To generate the Customization Analysis report (CAR), run the following command on a development environment.
 
@@ -71,3 +60,4 @@ The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\Lo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

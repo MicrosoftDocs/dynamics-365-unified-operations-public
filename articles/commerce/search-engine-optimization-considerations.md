@@ -1,18 +1,14 @@
 ---
-# required metadata
-
 title: Search engine optimization (SEO) considerations for your site
-description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
-author: psimolin
+description: This article covers search engine optimization (SEO) considerations for your site from development to production.
+author: josaw1
 ms.date: 05/25/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-
 ---
 
 # Search engine optimization (SEO) considerations for your site
@@ -20,7 +16,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](includes/banner.md)]
 
-This topic covers search engine optimization (SEO) considerations for your site from development to production.
+This article covers search engine optimization (SEO) considerations for your site from development to production.
 
 ## A site that is under development
 

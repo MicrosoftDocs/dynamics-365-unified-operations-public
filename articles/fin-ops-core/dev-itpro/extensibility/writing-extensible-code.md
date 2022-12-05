@@ -1,26 +1,19 @@
 ---
 title: Write extensible code
-description: This topic provides information about how to write extensible code.
+description: This article provides information about how to write extensible code.
 author: MichaelFruergaardPontoppidan
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 268724
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
+ms.custom: 268724
+ms.assetid: 
 ---
 
 # Write extensible code
@@ -32,7 +25,7 @@ X++ and the metadata model provide a powerful foundation for building business s
 Extensibility is another technical concern. You want other people to be able to extend your solution in a safe, robust, and maintainable way. By default, your solution is highly extensible. However, there are a few guidelines that you should follow to help guarantee completeness.
 
 ## Responsibilities
-Any Finance and Operations environment runs a business solution that includes components from many sources. Typically, each solution has code from Microsoft, independent software vendors (ISVs) and partners, and also internally developed code. Each contributor is responsible for its own contribution to the solution and for the way that its contribution interacts with other contributions.
+Any finance and operations environment runs a business solution that includes components from many sources. Typically, each solution has code from Microsoft, independent software vendors (ISVs) and partners, and also internally developed code. Each contributor is responsible for its own contribution to the solution and for the way that its contribution interacts with other contributions.
 
 When you write extensible code, you invite other people to interact with your solution. Your responsibility is to enable other people to be good guests. Here is how you meet this responsibility:
 
@@ -41,7 +34,7 @@ When you write extensible code, you invite other people to interact with your so
 + **Trust that extenders will be well-behaved** – All responsible parties share the same goal: to create great, lasting solutions for the customer. When you create extension points, you give up control and share the responsibility with other people. Assume that extenders will be cautious and use your extension points as they were intended.
 
 ## Proven principles
-All the good engineering practices that you're already using still apply. Everything that you've learned still applies. You don't have to learn new principles or unlearn old practices. This topic is just highlighting three principles of software craftmanship that have been sought and taught for decades. These principles not only make your code easier to read, maintain, test, review, and refactor, but also make your code easier to extend. Apply and advocate these principles.
+All the good engineering practices that you're already using still apply. Everything that you've learned still applies. You don't have to learn new principles or unlearn old practices. This article is just highlighting three principles of software craftmanship that have been sought and taught for decades. These principles not only make your code easier to read, maintain, test, review, and refactor, but also make your code easier to extend. Apply and advocate these principles.
 
 ### Extend code by using the SOLID principles
 SOLID is an acronym for five principles that you can use to make your code easier to extend:

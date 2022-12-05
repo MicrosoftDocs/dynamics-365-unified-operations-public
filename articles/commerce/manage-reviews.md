@@ -1,36 +1,27 @@
 ---
-# required metadata
-
-title: Manage ratings and reviews 
-description: This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
-author:  gvrmohanreddy 
+title: Manage ratings and reviews
+description: This article explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
+author: gvrmohanreddy
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Manage ratings and reviews
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
+This article explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 
 Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, moderators can use Dynamics 365 Commerce site builder to implement the following manual tasks:
 

@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: MX-00020 - Specify the RFC registration ID for Mexican bank accounts
-description: This task walks you through creating the Bank account for Mexico and assigning the RFC tax registration ID. 
-author: sndray
+description: This task walks you through creating the Bank account for Mexico and assigning the RFC tax registration ID.
+author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankAccountTable,  DefaultDashboard   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: 
+  - BankAccountTable
+  - DefaultDashboard
 ---
 # MX-00020 - Specify the RFC registration ID for Mexican bank accounts
 

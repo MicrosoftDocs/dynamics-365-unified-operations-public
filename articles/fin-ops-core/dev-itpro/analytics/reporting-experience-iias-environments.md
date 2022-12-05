@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Default reporting experiences in IaaS environments
-description: This topic provides information about paginated reporting in Finance and Operations apps.
+description: This article provides information about paginated reporting in finance and operations apps.
 author: RichdiMSFT
 ms.date: 05/13/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27661
-ms.assetid: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 27661
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Document Reporting Service in Dynamics 365 applications
@@ -33,12 +23,12 @@ ms.dyn365.ops.version:
 
 ## Reporting scenarios in ERP
 
-The Document Reporting Service bundled with Finance and Operations apps provide user tooling to facilitate two basic user functions, or generic scenarios, in enterprise resource planning (ERP): **document generation** and **business intelligence (BI) and analytics**. These generic scenarios represent the two most frequently used methods for accessing business data.
+The Document Reporting Service bundled with finance and operations apps provide user tooling to facilitate two basic user functions, or generic scenarios, in enterprise resource planning (ERP): **document generation** and **business intelligence (BI) and analytics**. These generic scenarios represent the two most frequently used methods for accessing business data.
 
 - **Document generation** – The production of structured documents, where the primary purpose are often printing and bulk email distribution.
 - **BI and analytics** – Interactive visualizations that are based on aggregations, and that contain embedded links to referenced data. Users rely on these visualizations to identify patterns and trends in large amounts of data.
 
-Although the Document Reporting Service continues to be the ideal tool for bulk production of business documents, they lack the extensibility options that power users require so that they can adapt analytical views and account for frequent changes in the business environment. At the same time, the [Microsoft Power BI service](/power-bi/fundamentals/power-bi-overview) is recognized as an industry leader in the delivery of powerful analytics for businesses of all sizes. Integration options for Finance and Operations apps and the Power BI service are available to accommodate seamless exploration of customer business data.
+Although the Document Reporting Service continues to be the ideal tool for bulk production of business documents, they lack the extensibility options that power users require so that they can adapt analytical views and account for frequent changes in the business environment. At the same time, the [Microsoft Power BI service](/power-bi/fundamentals/power-bi-overview) is recognized as an industry leader in the delivery of powerful analytics for businesses of all sizes. Integration options for finance and operations apps and the Power BI service are available to accommodate seamless exploration of customer business data.
 
 > [!NOTE]
 > When the platform updates for version 10.0.12 are released, the Dynamics 365 service will discontinue support for the Report Viewer control that is used to facilitate BI and analytics interactions with paginated reports. Instead, reports that the Document Reporting service renders on the screen will use the embedded PDF viewer. For more information about the embedded PDF viewer, see [Preview PDF documents with an embedded viewer](preview-pdf-documents.md).
@@ -61,7 +51,7 @@ The following table compares the fundamentals of the two reporting experiences.
 
 ## Enhancements in paginated reporting
 
-There are several advantages to using PDFs to interact with documents that are rendered by the Document Reporting Service that is bundled with Finance and Operations apps:
+There are several advantages to using PDFs to interact with documents that are rendered by the Document Reporting Service that is bundled with finance and operations apps:
 
 - **Reports are shown on the screen more quickly.** Users benefit from improved performance when reports are shown on the screen. This performance improvement includes a reduction in the number of progress bars, so that reports are faster.
 - **Service reliability is enhanced.** The latest Document Reporting Service architecture delivers the power of the cloud scale to customer environments. The service includes automatic scaling to help maximize resource utilization.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create time windows 
-description: This topic provides a procedure that shows how to create time windows.
+description: This article provides a procedure that shows how to create time windows.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -39,7 +39,7 @@ You can use time windows to optimize the scheduling of service order lines.
 4. In the **Description** field, enter a description for the time window.
 5. In the **Method** field, select the method to be autocreated. If the method is of the **Manual** type, specify the number of days before or after the calculated date that the service order line can be moved.
 
-## Related topics
+## Related articles
 
 [Time windows](time-windows.md)
 

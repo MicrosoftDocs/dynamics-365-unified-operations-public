@@ -2,7 +2,7 @@
 # required metadata
 
 title: Online financial consolidations
-description: This topic describes online financial consolidations in General ledger.
+description: This article describes online financial consolidations in General ledger.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes online financial consolidations in General ledger. Before you read this topic, be sure to read the [Financial consolidations and currency translation overview](financial-consolidations-currency-translation.md) topic.
+This article describes online financial consolidations in General ledger. Before you read this article, be sure to read the [Financial consolidations and currency translation overview](financial-consolidations-currency-translation.md) article.
 
 After you've completed your setup, you enter the details of the consolidation on the **Consolidate [Online]** page. When you've finished, you can click **OK** or **Batch** to process the consolidation.
 
@@ -96,7 +96,7 @@ On the **Currency translation** tab, you define the legal entity, account and ex
 
 ## Additional resources
 
-For more information about consolidation and currency translations, see the parent topic of this topic, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
+For more information about consolidation and currency translations, see the parent article of this article, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
 
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use Azure Data Explorer to query raw information logs
-description: This topic explains how to use Azure Data Explorer to query raw information logs.
+description: This article explains how to use Azure Data Explorer to query raw information logs.
 author: andreashofmann1
 ms.date: 09/13/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-08-20
 
 [!include[banner](../includes/banner.md)]
 
-There are occasions when a customer, partner, consultant, or support engineer needs to look at the low-level telemetry data for a Finance and Operations app. These use cases include troubleshooting of errors, performance-related investigations, or just trying to gain some additional understanding of how the Finance and Operations app works. Telemetry data can be accessed by authorized users via the Environment monitoring features of Lifecycle Services (LCS) and can be filtered in a few different ways and displayed inside the LCS's [raw information logs](monitoring-diagnostics.md#raw-information-logs). A data grid can be used to inspect the log entries. LCS does not allow for more sophisticated pivoting, so users can use Excel for that purpose. The telemetry data can also be downloaded and formatted in CSV format. 
+There are occasions when a customer, partner, consultant, or support engineer needs to look at the low-level telemetry data for a finance and operations app. These use cases include troubleshooting of errors, performance-related investigations, or just trying to gain some additional understanding of how the finance and operations app works. Telemetry data can be accessed by authorized users via the Environment monitoring features of Lifecycle Services (LCS) and can be filtered in a few different ways and displayed inside the LCS's [raw information logs](monitoring-diagnostics.md#raw-information-logs). A data grid can be used to inspect the log entries. LCS does not allow for more sophisticated pivoting, so users can use Excel for that purpose. The telemetry data can also be downloaded and formatted in CSV format. 
 
 Excel is not the optimal tool for advanced querying of this data. A tool that is better designed for this purpose is the Azure Data Explorer. It provides an innovative query language, Kusto, that is optimized for high-performance data analytics. Answering questions like *how often a certain process has occurred*, *how long has it taken in 90% of the occurrences*, *how often per hour has a certain action taken place over the course of a day* becomes a lot easier and can be backed up with powerful graphics as well. 
 
@@ -83,3 +83,4 @@ new2
 | project apiAction, percentile_executionTimeMilliseconds_90
 | render columnchart
 ```
+
