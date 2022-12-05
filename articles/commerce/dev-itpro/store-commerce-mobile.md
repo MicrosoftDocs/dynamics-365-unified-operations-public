@@ -49,7 +49,7 @@ The Store Commerce mobile apps require Dynamics 365 Commerce, specifically the C
 You can install Store Commerce mobile apps directly from the Google Play store or Apple App Store. 
 
 - [Store Commerce app for Android](https://aka.ms/storecommerceandroid)
-- Store Commerce app for iOS (available soon)
+- [Store Commerce app for iOS](https://aka.ms/storecommerceios)
 
 The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
 
