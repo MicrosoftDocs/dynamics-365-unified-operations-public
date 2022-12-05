@@ -126,11 +126,11 @@ You can use the **Update 1099 information for multiple vendors** page to update 
 
 The **Recalculate existing 1099 amounts** checkbox will reset the 1099 amount to the total paid values when it's used together with the **Update all** checkbox.
 
-[![Tax 1099 transactions: Before running the update routine.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![Tax 1099 transactions: Before running the update routine.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
 The **Recalculate existing 1099 amounts** checkbox comes into play only if there are partial 1099 values on the invoice, or if the invoice was modified on the Tax 1099 form. For example, you have an invoice that's valued at $1,000.00, but the user manually enters a 1099 amount of $500.00 on the invoice.
 
-[![Tax 1099 transactions: Marking both Update all and Recalculate existing 1099 amounts.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![Tax 1099 transactions: Marking both Update all and Recalculate existing 1099 amounts.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
 When this invoice is paid, $500.00 will be the 1099 amount that's paid. If you perform the recalculation routine, the 1099 amount will be changed to $1,000.00, which is the total that was paid.
 
