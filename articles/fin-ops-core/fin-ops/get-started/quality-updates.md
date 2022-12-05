@@ -35,7 +35,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
 - Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
-- Production onboarding for Proactive Quality updates will begin from “insert date.”
+- Production onboarding for Proactive Quality updates will begin from “January 21, 2023”
 - Production onboarding will only start for Lifecycle Services projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
 - For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
 
