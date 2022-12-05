@@ -21,12 +21,14 @@ ms.search.industry: Retail
 
 This feature allows you to improve search order performance by enabling the use of intermediate order totals calculated by “Calculate sales totals” job.  To enable this feature, navigate to “Feature management” and locate ‘Improve performance of Commerce Order search’ to enable it. 
 
-![Enable order search performance improvements from feature management](articles/commerce/media/EnableFeatureImproveOrderSearchPerformance.png)
+![Enable order search performance improvements from feature management](./media/EnableFeatureImproveOrderSearchPerformance.png)
+
 
 ### Prior to enabling ‘Improve performance of Commerce order search’ from feature management 
 
 Navigate to ‘Sales and marketing’ > Periodic tasks > ‘Calculate sales total’ 
 
+![Launch calculate sales totals](./media/LaunchCalculateSalesTotals.png)
 
 To properly schedule this job we use these steps:
 1.	Navigate to Batch Jobs and click “+New”, give a good name, e.g.: Calculate Sales Totals
@@ -35,6 +37,8 @@ a.	Give similar name to the batch task
 b.	Put “SalesTotalsCalculateBatch” as a Class name.
 c.	Select company/LE, e.g.: USRT
 d.	In parameters of the task set both toggles to Yes as shown on the picture below:
+
+![Schedule calculate sales total batch job](./media/ScheduleCalculateSalesTotals.png)
 
 e. 	Schedule the job recurrence to run every 5-10 minutes.
 f.	Change status to “Waiting”
