@@ -26,7 +26,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 ## What you need to know
 
 - Proactive quality updates are applied on a monthly basis.
-- Exceptions for proactive quality updates will be allowed for customers that are regulated by the US Food and Drug Administration (FDA) only.
+- Exceptions for proactive quality updates are allowed for customers that are regulated by the US Food and Drug Administration (FDA) only.
 - Proactive quality updates will never downgrade the environment or automatically upgrade from one service update version to another. 
 - Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
 - Notifications that are related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/).
@@ -35,8 +35,8 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
 - Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
-- Production onboarding for Proactive Quality updates will begin from “insert date”
-- Production onboarding will only start for LCS projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
+- Production onboarding for Proactive Quality updates will begin from “insert date.”
+- Production onboarding will only start for Lifecycle Services projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
 - For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
 
 
@@ -76,11 +76,11 @@ A set of process changes is being implemented ahead of the activation of proacti
     > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
 
 - **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If a fallback or turning a change off change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
-- **Sandbox sync designation** – Staggered update to an isolated sandbox of choosing along with production is not supported at this time. All tier-2 and tier-3 sandboxes will receive proactive updates atleast 7 days prior to production environment in an LCS project. Again, this is only applicable to customer environments that are not provided any exceptions due to regulatory or other legal reasons.
+- **Sandbox sync designation** – Staggered update to an isolated sandbox of choosing along with production is not supported at this time. All tier-2 and tier-3 sandboxes will receive proactive updates atleast 7 days prior to production environment in an Lifecycle Services project. Again, this is only applicable to customer environments that are not provided any exceptions due to regulatory or other legal reasons.
 
 ## What is the rollout roadmap for quality updates?
 
-Distribution of proactive quality updates for sandbox environments began in September 2022 for Azure public cloud customers. By January 1st  2023, we will be completing onboarding 99% of sandboxes to proactive quality updates.
+Distribution of proactive quality updates for sandbox environments began in September 2022 for Azure public cloud customers. By January 1, 2023, we will be completing onboarding 99% of sandboxes to proactive quality updates.
 
 Exceptions to the proactive updated distribution process are allowed only for FDA-regulated customers. We're still working out how regulated environments and sovereign and government cloud customers will be managed. 
 
@@ -88,7 +88,7 @@ Because customers will regularly receive smaller payloads, we expect the process
 
 
 ## When will quality updates start for production environments?
-Over the first few months of 2023, beginning Jan 15th - we will begin onboarding production environments to proactive updates and gradually increase the percentage of production environments that receive proactive updates. We will only target a production environment in an LCS project that has the sandbox environments already onboarded to receive proactive updates. Before an update, customers with the production environments being onboarded will be notified through message center or LCS banner. For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
+Over the first few months of 2023, beginning Jan 15th - we will begin onboarding production environments to proactive updates and gradually increase the percentage of production environments that receive proactive updates. We will only target a production environment in an Lifecycle Services project that has the sandbox environments already onboarded to receive proactive updates. Before an update, customers with the production environments being onboarded will be notified through message center or Lifecycle Services banner. For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
 
 ## What is the schedule for sandbox proactive quality updates?
 For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
