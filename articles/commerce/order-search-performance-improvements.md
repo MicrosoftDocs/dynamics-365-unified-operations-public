@@ -27,6 +27,7 @@ This feature allows you to improve search order performance by enabling the use 
 ### Prior to enabling ‘Improve performance of Commerce order search’ from feature management 
 
 Navigate to ‘Sales and marketing’ > Periodic tasks > ‘Calculate sales total’ 
+_This feature helps improve performance by enabling the system to use parallel processing when it calculates sales totals in a batch. The feature adds a new Number of threads field to the Calculate sales totals dialog box. If you choose to run the calculation in a batch, you can use this field to set the maximum number of threads. If you set the value to 0 (zero) or 1, a single thread will be used. Values above 1 enable multithreading. It is advisable to enable the following feature ‘Calculate sales totals using multiple threads’ to speed up totals processing in case if there is a large number of ‘Sales orders and quotations.’_
 
 ![Launch calculate sales totals](./media/LaunchCalculateSalesTotals.png)
 
@@ -44,5 +45,5 @@ e. 	Schedule the job recurrence to run every 5-10 minutes.
 f.	Change status to “Waiting”
 g.	Go to “Batch job history” and inspect 100% correct execution.
 
-It is advisable to enable the following feature ‘Calculate sales totals using multiple threads’ to speed up totals processing in case if there is a large number of ‘Sales orders and quotations.’
+
 
