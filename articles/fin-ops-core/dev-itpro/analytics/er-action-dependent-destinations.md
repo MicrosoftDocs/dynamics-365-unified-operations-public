@@ -27,7 +27,7 @@ In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an ER format ca
 
 ## Make action-dependent ER destinations available
 
-To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for reports at runtime, enable the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**.
+To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for reports at runtime, enable the **Route output of PM reports based on ER destinations that are user action specific (wave 1)** feature.
 
 ## Configure action-dependent ER destinations
 
@@ -84,48 +84,50 @@ The following illustration shows an example of the **Electronic reporting format
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
 
-If several ER formats are applicable as report templates for the selected document, then all ER destinations for all applicable ER report templates are shown on the form and available for manual adjustment at runtime.
+If several ER formats are applicable as report templates for the selected document, all ER destinations for all applicable ER report templates are shown in the dialog box and available for manual adjustment at runtime.
 
-The standard Print management destinations selection is dynamically hidden if no [SQL Server Reporting Services (SSRS)](SSRS-report.md) report templates are applicable for the selected document.
+If no [SQL Server Reporting Services (SSRS)](SSRS-report.md) report templates are applicable to the selected document, the standard selection of Print management destinations is dynamically hidden.
 
-Starting in version **10.0.31** of Microsoft Dynamics 365 Finance, you can manually change assigned ER destinations at runtime for the following business documents:
+As of Finance version **10.0.31**, you can manually change the assigned ER destinations at runtime for the following business documents:
 
- - Customer account statement
- - Interest note
- - Collection letter note
- - Customer Payment advice
- - Vendor Payment advice
+- Customer account statement
+- Interest note
+- Collection letter note
+- Customer Payment advice
+- Vendor Payment advice
 
-To activate the possibility to change ER destinations at runtime, enable the **Allow ER destinations adjustment at runtime** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+To activate the capability to change ER destinations at runtime, enable the **Allow ER destinations adjustment at runtime** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 > [!IMPORTANT]
-> For **Customer Payment advice** and **Vendor Payment advice**, the possibility to manually change ER destinations appears only if the **ForcePrintJobSettings** flight is enabled.
+> For the **Customer Payment advice** and **Vendor Payment advice** reports, the capability to manually change ER destinations is available only if the **ForcePrintJobSettings** flight is enabled.
 
-[![Adjustment of ER destinations in run-time.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+[![Adjusting ER destinations at runtime.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
 
 > [!NOTE]
-> When the **Use print management destination** option is set to **Yes**, the system uses default ER destinations which are configured for specific ER reports. All manual changes made on the form are ignored. Set the **Use print management destination** option to **No** to process documents to the ER destinations defined on the form right before you run the reports.
+> When the **Use print management destination** option is set to **Yes**, the system uses the default ER destinations that are configured for specific ER reports. All manual changes that are made in the dialog box are ignored. Set the **Use print management destination** option to **No** to process documents to the ER destinations that are defined in the dialog box immediately before you run the reports.
 
-The following business documents don't assume explicit action selection by the user when running:
+The following business documents don't assume explicit user selection of an action when they're run:
 
- - Customer account statement
- - Interest note
- - Collection letter note
- - Customer Payment advice
- - Vendor Payment advice
+- Customer account statement
+- Interest note
+- Collection letter note
+- Customer Payment advice
+- Vendor Payment advice
 
-The following logic is applicable for action identification for the reports above:
+The following logic is used to determine which action is used while the preceding reports are processed:
 
- - If the **ForcePrintJobSettings** flight is enabled:
-   - If the **Use print management destination** option is set to **Yes** then the **Print** action is used while reports are processing.
-   - If the **Use print management destination** option is set to **No** then the **View** action is used.
+- If the **ForcePrintJobSettings** flight is enabled:
 
- - If the **ForcePrintJobSettings** flight is not enabled:
-   - If the **Use print management destination** is set to **Yes**, the **Print** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
-   - If the **Use print management destination** is set to **No**, the default SSRS report template is always used for the **Customer Payment advice** and **Vendor Payment advice** reports regardless any configured ER settings.
-   - The **Print** action is always used for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
+    - If the **Use print management destination** option is set to **Yes**, the **Print** action is used.
+    - If the **Use print management destination** option is set to **No**, the **View** action is used.
 
-With the logic described above, the **Print** or **View** actions can be used to configure action-dependent ER report destinations. During runtime, only ER destinations configured for a specific action are filtered on the form.
+- If the **ForcePrintJobSettings** flight isn't enabled:
+
+    - If the **Use print management destination** option is set to **Yes**, the **Print** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
+    - If the **Use print management destination** option is set to **No**, the default SSRS report template is always used for the **Customer Payment advice** and **Vendor Payment advice** reports, regardless of any ER settings that are configured.
+    - The **Print** action is always used for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
+
+For the preceding logic, the **Print** or **View** actions can be used to configure action-dependent ER report destinations. At runtime, only ER destinations that are configured for a specific action are filtered in the dialog box.
 
 ## Verify the provided user action
 
