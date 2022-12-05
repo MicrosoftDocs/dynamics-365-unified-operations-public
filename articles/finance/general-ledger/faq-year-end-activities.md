@@ -33,7 +33,7 @@ This article lists questions that can arise when closing a year, and the answers
 
 ## General ledger year-end enhancements
 
-Version 10.0.20 introduced a year-end close enhancement. This enhancement is enabled by default as of version 10.0.25 and mandatory as of version 10.0.29. If your organization uses a version earlier than 10.0.25, we recommend that you enable this feature before you begin the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Microsoft Dynamics 365 Finance version 10.0.20 introduced a year-end close enhancement. This enhancement is enabled by default as of version 10.0.25 and mandatory as of version 10.0.29. If your organization uses a version earlier than 10.0.25, we recommend that you enable this feature before you begin the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** General ledger
 - **Feature name:** General ledger year-end enhancements
