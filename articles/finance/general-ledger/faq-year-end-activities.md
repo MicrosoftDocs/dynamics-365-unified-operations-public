@@ -73,7 +73,7 @@ You can make several changes to help improve the performance of the year-end clo
 
 ### Optimize year-end close service
 
-The **Optimize year-end close** service empowers Microsoft Dynamics 365 Finance customers to accelerate their year-end close by moving the heavy year-end processing to a microservice. The time that's saved through an efficient year-end close enables each Finance team to react in a timely manner to required adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, valuable resources are freed up. The processing elevation minimizes the load on SQL and gives customers an opportunity to accelerate the year-end close processing.
+The **Optimize year-end close** service empowers Microsoft Dynamics 365 Finance customers to accelerate their year-end close by moving the heavy year-end processing to a microservice. The time that's saved through an efficient year-end close enables each Finance team to react in a timely manner to required adjustments, ending in the generation of the financial reports. By processing the year-end close on a microservice, valuable resources are freed up. The processing elevation minimizes the load on the SQL server and gives customers an opportunity to accelerate the year-end close processing.
 
 The **Optimize year-end close** service is available in version 10.0.31, so that more customers can use the new service for the 2022 year-end season. Additionally, the service has been backported to versions 10.0.30 and 10.0.29. For more information, see [Optimize year-end close](optimize-year-end-close.md).
 
