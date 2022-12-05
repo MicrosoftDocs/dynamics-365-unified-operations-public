@@ -1422,6 +1422,8 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Set up Operational Insights for Commerce components
+        href: operational-insights.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
