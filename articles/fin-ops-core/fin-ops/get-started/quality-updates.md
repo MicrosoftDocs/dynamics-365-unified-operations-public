@@ -76,7 +76,7 @@ A set of process changes is being implemented ahead of the activation of proacti
     > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
 
 - **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If a fallback or turning a change off change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
-- **Sandbox sync designation** – Staggered update to an isolated sandbox of choosing along with production is not supported at this time. All sandboxes will receive proactive updates atleast 7 days prior to production environment in an LCS project. Again, this is only applicable to customer environments that are not provided any exceptions due to regulatory or other legal reasons.
+- **Sandbox sync designation** – Staggered update to an isolated sandbox of choosing along with production is not supported at this time. All tier-2 and tier-3 sandboxes will receive proactive updates atleast 7 days prior to production environment in an LCS project. Again, this is only applicable to customer environments that are not provided any exceptions due to regulatory or other legal reasons.
 
 ## What is the rollout roadmap for quality updates?
 
