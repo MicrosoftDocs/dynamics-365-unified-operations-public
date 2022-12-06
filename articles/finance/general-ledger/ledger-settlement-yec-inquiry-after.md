@@ -86,7 +86,7 @@ This will allow you to settle the 2023 transactions against the $700 originally 
 
 ![Do not allow manual entry](./media/no-manual4.png)
 
-7.	The unsettled transactions can be settled again. Go to the **Ledger settlement** page and restrict the date range to 1/1/2023 to 12/31/2023. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
+7.	The unsettled transactions can be settled again. Go to the **Ledger settlement** page and restrict the date range to January 1, 2023 to December 31, 2023. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
 
 ![2023 Unsettled transactions](./media/2023-unsettled5.png)
 
