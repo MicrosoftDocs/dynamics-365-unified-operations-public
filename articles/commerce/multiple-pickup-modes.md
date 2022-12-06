@@ -29,17 +29,17 @@ ms.dyn365.ops.version: 10.0.16
 [!include [banner](includes/banner.md)]
 
 
-In Microsoft Dynamics 365 Commerce version 10.0.16 and later, organizations can define multiple modes of delivery that shoppers or sales associates can choose among when they create an order that will be picked up at a store. In this way, organizations can provide multiple pickup options to their shoppers. For example, many retailers now offer shoppers the choice of in-store pickup or curbside pickup for their orders. Commerce supports the configuration of these different pickup delivery modes. Users can then take advantage of them when they create customer orders in any supported Commerce channel (e-commerce, call center, or store).
+In Microsoft Dynamics 365 Commerce, organizations can define multiple modes of delivery that shoppers or sales associates can choose among when they create an order that will be picked up at a store. In this way, organizations can provide multiple pickup options to their shoppers. For example, many retailers now offer shoppers the choice of in-store pickup or curbside pickup for their orders. Commerce supports the configuration of these different pickup delivery modes. Users can then take advantage of them when they create customer orders in any supported Commerce channel (e-commerce, call center, or store).
 
 ## Enable and configure pickup delivery modes
 
-To use this functionality, turn on the **Support for multiple pickup delivery modes** feature in the **Feature management** workspace in Commerce headquarters. After you turn on the feature, additional configuration is required.
+To use this functionality, the feature **Support for multiple pickup delivery modes** needs to be enabled in the **Feature management** workspace in Commerce headquarters. This feature was made mandatory as of November 2020 so it should already be enabled in the environment.
 
-In Commerce version 10.0.15 and earlier, organizations can define only one mode of delivery as the designated pickup delivery mode. This definition is done on the **Commerce parameters** page. In version 10.0.16 and later, when you turn on the **Support for multiple pickup delivery modes** feature, the mode of delivery that was previously defined as the pickup delivery mode on the **Commerce parameters** page is automatically copied into the new configuration for pickup delivery modes.
+Prior to this feature, organizations could define only one mode of delivery as the designated pickup delivery mode. This definition was done on the **Commerce parameters** page. However, with this feature, the mode of delivery that was previously defined as the pickup delivery mode on the **Commerce parameters** page is automatically copied into the new configuration for pickup delivery modes.
 
 ![Pickup delivery modes on the Commerce parameters page.](media/multiplepickupparameter.png)
 
-After you turn on the **Support for multiple pickup delivery modes** feature, you can define multiple pickup delivery modes in the **Pickup mode of delivery** grid on the **Modes of delivery** FastTab on the **Customer orders** tab of the **Commerce parameters** page.
+The user can now define multiple pickup delivery modes in the **Pickup mode of delivery** grid on the **Modes of delivery** FastTab on the **Customer orders** tab of the **Commerce parameters** page.
 
 The **Carry Out mode of delivery** and **Electronic mode of delivery** fields, and the **Show only carrier mode options for ship orders** option, have been relocated to this FastTab.
 
@@ -52,8 +52,6 @@ After you define the additional pickup delivery modes, add them to the **Pickup 
 > [!NOTE]
 > Apart from the existing pickup delivery mode that is copied to the **Pickup mode of delivery** grid when you turn on the **Support for multiple pickup delivery modes** feature, for every additional pickup delivery mode configuration that you create, you should configure new modes of delivery. When you add modes of delivery to the **Pickup mode of delivery** grid, Commerce validates whether any active open sales lines already use them. If any open sales lines are found, you receive an error message. Modes of delivery aren't considered pickup delivery modes until all open sales lines that use them have been closed (either invoiced or canceled).
 
-> [!IMPORTANT]
-> After you define more than one pickup delivery mode on the **Commerce parameters** page, the **Support for multiple pickup delivery modes** feature becomes mandatory and can no longer be turned off. If you must turn off the feature, remove all but one pickup delivery mode from the **Pickup mode of delivery** grid. When only one pickup delivery mode is defined, the feature is longer considered mandatory and can be turned off.
 
 ### E-commerce site configurations
 
