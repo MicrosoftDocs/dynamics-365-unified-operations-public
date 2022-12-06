@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Awareness between ledger settlement feature after the year-end close
-description: This article provides information about awareness between ledger settlements feature after the General ledger year-end close.
+title: Awareness between ledger settlement feature after the year-end close using the new inquiry window
+description: This article provides information about awareness between ledger settlements feature using the new inquiry window after the General ledger year-end close.
 author: kweekley
 ms.date: 12/02/2022
 ms.topic: article
@@ -25,7 +25,7 @@ ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
 
 ---
-# Awareness between ledger settlement feature after year-end close
+# Awareness between ledger settlement feature after year-end close using the new inquiry window
 
 One primary change of the **Awareness between ledger settlement and year end close** feature (Awareness) is that ledger settlement can't be done across fiscal years. The cross-year limitation is only relevant to ledger settlement, not Accounts receivable or Accounts payable settlements. 
 
