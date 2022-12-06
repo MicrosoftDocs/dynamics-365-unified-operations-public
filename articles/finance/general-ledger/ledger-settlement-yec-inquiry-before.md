@@ -63,7 +63,7 @@ A few notes:
 3.	Right-click on the grid and choose **Export all rows**. These are all the transactions that must be unsettled from the transactions in 2022 to run the year-end close. You want the detailed transaction list to correctly resettle the transactions later. 
 4.	Note the fiscal years for which the transactions were posted. In this scenario, there are transactions in 2021 and 2023. 
 5.	In the **Inquiry** page, change the fiscal year to 2021, the first fiscal year that contains transactions settled against 2022 transactions. 
--   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2022 that were settled against transactions in 2021. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
+-   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2022 that were settled against transactions in 2021. These transactions are unsettled and settled again to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
 
 ![2021 cross-year settlements](./media/review-cross-year.png)
 
@@ -108,7 +108,7 @@ This will allow you to settle the 2022 transactions against the $525 originally 
  ![Unsettled transations](./media/updated-unsettled.png)
  
  
--   The Opening balance of $1,025 can be settled against the adjustment for -$1,025. 
+-   The **Opening balance** of $1,025 can be settled against the adjustment for -$1,025. 
 -   The detailed transactions that were unsettled for -$400, -$50, and -$75 can be settled against the adjustment for $25.  
 11.	Enable the **Awareness** feature. You are now ready to run the year end close. 
 -   Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).   
