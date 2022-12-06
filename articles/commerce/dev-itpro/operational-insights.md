@@ -1,34 +1,32 @@
 ---
 title: Commerce Operational Insights
-description: This article explains how to access telemetry logs in customer's own instance of App Insights.
+description: This article describes the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 author: ashishMSFT
 ms.date: 12/05/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 10.0.0 
-ms.custom: 85493
-ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
-ms.search.industry: Retail
+
 ---
 
 # Commerce Operational Insights
 
-Operational Insights is a feature of Dynamics 365 Commerce that is designed to help give customers better visibility into their service health and business functionality by sending telemetry directly to a customer-owned Application Insights account.
+[!include [banner](../includes/banner.md)]
 
-Customers can enable Operational Insights for their environments in HQ, allowing them to collect a curated list of events from both CSU and their POS devices. These events will help customers better understand how their systems are performing and allow them to monitor key technical and business metrics. In cases where customers do not want to always be collecting this telemetry, they can still benefit by quickly enabling/disabling the collection for specific environments to help with troubleshooting or debugging scenarios during development or in production.
+This article describes the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 
+Operational Insights is a Dynamics 365 Commerce feature designed to help provide customers better visibility into their service health and business functionality by sending telemetry directly to a customer-owned Application Insights account.
+
+Enabling Operational Insights for your environments in Commerce headquarters allows you to collect a curated list of events from both Commerce Scale Unit (CSU) and your point-of-sale (POS) devices. These events help you better understand how your systems are performing and allow you to monitor key technical and business metrics. In cases where you don't want to always be collecting this telemetry, you can still benefit by quickly enabling or disabling the collection for specific environments to help with troubleshooting or debugging scenarios during development or in production.
 
 ## Access logs in Application Insights
 
-Diagnostic events for Commerce components (Cloud scale unit and Point-of-sale) can be accessed in Application Insights.
+Diagnostic events for Commerce CSU and POS components can be accessed in Application Insights.
 
-#### Commerce Scale Unit minimum version requirements
+### Commerce Scale Unit minimum version requirements
 
 Commerce Scale Unit has the following minimum version requirements:
 
@@ -44,7 +42,7 @@ Commerce Scale Unit has the following minimum version requirements:
 
 To enable Commerce component diagnostic events, you must have an Application Insights account. You can use an existing account or [create a new account](/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). For data privacy reasons, we recommend that you use separate Application Insights accounts for production, sandbox, and development environments. After you have an account, you must enable the **Operational Insights** feature in Commerce headquarters.
 
-To enable diagnostic events in Application Insights in Commerce headquarters, follow these steps - 
+To enable diagnostic events in Application Insights in Commerce headquarters, follow these steps. 
 
 1. In the **Feature Management** workspace, enable the **Operational Insights** feature.
 1. Go to **System administration \> Setup \> Operational Insights**.
