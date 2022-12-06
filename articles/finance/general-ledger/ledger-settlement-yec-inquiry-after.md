@@ -64,7 +64,7 @@ To identify the transactions in 2023, go to the **Ledger settlement** page, sele
 
 ![2023 cross-year settlements](./media/2023-cross-settlement.png)
 
--   Right click on the grid and choose **Export all** rows. These are all the transactions that must be unsettled from the transactions in 2022 in order to run the year-end close next year for 2023. You want a record of these transactions.  
+-   Right-click on the grid and choose **Export all** rows. These are all the transactions that must be unsettled from the transactions in 2022 in order to run the year-end close next year for 2023. You want a record of these transactions.  
 -   Once all the detailed transactions from 2022 are exported to Excel, you are ready to unsettle the transactions using the new inquiry page. 
     -   Select all the records in the grid and choose the **Unsettle marked records** button. All the selected transactions in the grid will be unsettled.
     -   Two warning messages are given to ensure that the transaction details were exported to Excel before they are unsettled. If you accidentally unsettle before sending the detail to Excel, there's no way to revert the unsettlement of the ledger transactions. 
