@@ -501,7 +501,7 @@ Follow these steps to set up the feature:
 
 1. Sign into the Inventory Visibility power app.
 1. Go to **Configuration \> Feature Management & Settings**.
-1. If the *OnHandIndexQueryPreloadBackgroundService* feature is already enabled, then we recommend you turn it off for now because the cleanup process might take a very long time to complete. You'll turn it on again later in this procedure. <!-- KFM: Please confirm this feature name. Your original draft name the feature as *OnHandIndexQueryPreload*, but I think you meant this one. -->
+1. If the *OnHandIndexQueryPreloadBackgroundService* feature is already enabled, then we recommend you turn it off for now because the cleanup process might take a very long time to complete. You'll turn it on again later in this procedure.
 1. Open the **Preload Setting** tab.
 1. In the **Step 1: Clean up Preload Storage** section, select **Clean** to clean up the database and make it ready to accept your new group-by settings.
 1. In the **Step 2: Set up Group By Values** section, in the **Group Result By** field, enter a comma-separated list of field names by which to group your query results. Once you have data in the preload storage database, you won't be able to change this setting until you clean the database, as described in the previous step.
