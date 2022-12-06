@@ -86,12 +86,12 @@ This will allow you to settle the 2023 transactions against the $700 originally 
 
 ![Do not allow manual entry](./media/no-manual4.png)
 
-7.	The unsettled transactions can be settled again. Return to the **Ledger settlement** page and restrict the date range to 1/1/2023 to 12/31/2023. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
+7.	The unsettled transactions can be settled again. Go to the **Ledger settlement** page and restrict the date range to 1/1/2023 to 12/31/2023. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
 
 ![2023 Unsettled transactions](./media/2023-unsettled5.png)
 
 -   The Opening balance of $1,700 can be settled against the adjustment for -$1,700. 
--   The detailed transactions that were unsettled for -$700 can be settled against the adjustment for 700.00.  
+-   The detailed transactions that were unsettled for -$700 can be settled against the adjustment for $700.00.  
 8.	Enable the **Awareness** feature. You're now ready to run the year end close. 
 -   Before running the year-end close for 2023, consider marking the option **Keep details** on the **Ledger settlement setup** for all balance sheet accounts. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).   
 -   When beginning the year-end close for 2023, if transactions are still found that were settled across fiscal years, the year-end close process will immediately notify you. This may happen if users settled transactions across fiscal years before the feature was enabled.
