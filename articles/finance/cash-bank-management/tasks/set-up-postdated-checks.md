@@ -37,8 +37,8 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 ## Set up postdated checks
 1. Go to **Cash and bank management > Setup > Cash and bank management parameters**.
 2. Click the **Postdated checks** tab.
-3. Select or clear the **Enable postdated checks** check box.
-4. Select or clear the **Post journal entries for postdated checks** check box.
+3. Select or clear the **Enable postdated checks** checkbox.
+4. Select or clear the **Post journal entries for postdated checks** checkbox.
 5. In the **Clearing account for issued checks** field, specify the desired values.
 6. In the **Clearing account for received checks** field, specify the desired values.
 7. In the **General journal for clearing entries** field, type a value.

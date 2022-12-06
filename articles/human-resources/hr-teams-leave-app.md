@@ -164,7 +164,7 @@ The Dynamics 365 Human Resources app in Teams supports the following languages:
 | it-IT | Italian (Italy) |
 | nl-NL | Dutch (Netherlands) |
 | pt-BR | Portuguese (Brazil) |
-| tr-TR | Turkish (Turkey) |
+| tr-TR | Turkish (Türkiye) |
 | zh-CN | Chinese (Simplified) |
 
 ## Troubleshooting

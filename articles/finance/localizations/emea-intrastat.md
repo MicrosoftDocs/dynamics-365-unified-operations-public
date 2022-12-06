@@ -3,8 +3,8 @@
 
 title: Intrastat overview
 description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
-author: EvgenyPopovMBS
-ms.date: 01/13/2021
+author: mrolecki
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: ["28581", "intro-internal"]
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -390,6 +390,28 @@ In this example, a company in Germany must purchase 10 units of goods from a com
 5. Review the **General** tab for the purchase order. Notice that the **Quantity of additional units** and **Additional unit** fields in the **Unit** section are automatically set.
 
    ![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_6.png)
+   
+## List of country/region-specific articles
+The following table lists the available country/region-specific intrastat articles.
+
+| Country          | Link      |
+|------------------|-----------|
+| Austria          |[Austrian Intrastat](emea-aut-intrastat.md)| 
+| Belgium          |[Belgium Intrastat](emea-bel-intrastat.md)|
+| Czech Republic   |[Czech Intrastat](emea-cze-intrastat.md)|
+| Denmark          |[Danish Intrastat](emea-dnk-intrastat.md)|
+| Estonia          |[Estonian Intrastat](emea-est-intrastat.md)|
+| Finland          |[Finnish Intrastat](emea-fin-intrastat.md)|
+| France           |[French Intrastat](emea-fra-intrastat.md)|
+| Germany          |[German Intrastat](emea-deu-intrastat.md)|
+| Hungary          |[Hungarian Intrastat](emea-hun-intrastat.md)|
+| Italy            |[Italian Intrastat](emea-ita-intrastat.md)|
+| Latvia           |[Latvian Intrastat](emea-lva-intrastat.md)|
+| Lithuania        |[Lithuanian Intrastat](emea-ltu-intrastat.md)|
+| Netherlands      |[Netherlands Intrastat](emea-nl-intrastat.md)|
+| Poland           |[Polish Intrastat](emea-pol-intrastat.md)|
+| Spain            |[Spanish Intrastat](emea-esp-intrastat.md)|
+| Sweden           |[Swedish Intrastat](emea-swe-intrastat.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

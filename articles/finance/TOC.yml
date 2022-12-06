@@ -1188,6 +1188,10 @@
           href: general-ledger/ledger-settlements.md
         - name: Awareness between ledger settlement and year-end close
           href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+        - name: Prepare for Awareness between ledger settlement before year-end close  
+          href: general-ledger/ledger-settle-yec.md  
+        - name: Prepare for Awareness between ledger settlement after year-end close   
+          href: general-ledger/ledger-settle-yec-after.md     
         - name: Automate ledger settlements  
           href: general-ledger/auto-settle.md
         - name: Foreign currency revaluation for General ledger
@@ -1606,7 +1610,9 @@
               href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Poland
               href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-            - name: Get started with Electronic invoicing for Saudi Arabia
+            - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
+              href: localizations/e-invoicing-sa-get-started-phase-one.md
+            - name: Get started with Electronic invoicing for Saudi Arabia - Phase two
               href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Electronic invoicing onboarding in Saudi Arabia
               href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
