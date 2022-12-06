@@ -1,37 +1,24 @@
 ---
-# required metadata
-
 title: Product data entities 
 description: This article provides information about the different entities that can be used to import and export product data. 
 author: t-benebo
-ms.date: 01/07/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
 ms.author: benebotg
-ms.dyn365.ops.version: 7.3 
-ms.search.validFrom: 2019-12-1
-
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: conceptual
+ms.date: 12/06/2022
+ms.custom: bap-template
 ---
 
 # Product data entities
 
 [!include [banner](../includes/banner.md)]
 
-To import and export product data, you must use data entities. The following table provides details about the product-related data entities and describes the purpose of each.
+To import and export product data, you must use data entities. 
+
+## Product-related data entities
+
+The following table provides details about the product-related data entities and describes the purpose of each.
 
 | Entity | Application Object Tree (AOT) name (type) | Notes |
 |--------|-------------------------------------------|-------|
@@ -52,5 +39,8 @@ To import and export product data, you must use data entities. The following tab
 > [!NOTE]
 > You can use the **Released Products V2** data entity to import products into the system only if the shared product has already been created. Otherwise, to import products into the system, you must use the **Product creation** data entity.
 
+## Next steps
+
+- [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
