@@ -177,6 +177,6 @@ The following legacy fiscal integration functionality that is available in the C
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
 - [Digital signature for France (legacy)](./emea-fra-deployment.md)
-- [Digital signature for Norway](./emea-nor-loc-deployment-guidelines.md)
+- [Digital signature for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
