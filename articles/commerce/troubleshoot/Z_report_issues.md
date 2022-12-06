@@ -31,11 +31,15 @@ This article provides troubleshooting guidance that can help if you encounter is
 
 The most common root cause of the symptoms mentioned above is the creation of duplicate transaction IDs in the channel database. This can happen for the following reasons:
 
-- I the local database storage of Modern Point of Sale (MPOS) get corrupted.
-- MPOS that has some transactions in the offline mode, gets reactivated with an account that has no access to offline db, or it could be because of some customization related to the transaction ID generation.
+- If the local database storage of Modern Point of Sale (MPOS) get corrupted.
+- If MPOS has some transactions in the offline mode and is reactivated with an account that has no access to offline database.
+- If there is an issue with customization related to transaction ID generation.
 
 ## Resolution
 
-The duplicate transaction ID occurs because traditionally, the transaction ID in the Dynamics 365 Commerce relied on the number sequence to provide the sequential transaction ID's and if for any reason the system becomes unaware of a used number sequence, then it will result in the duplicate transaction ID. So, to mitigate this issue in future, as of 10.0.19, a new feature named *"Enable new transaction id to avoid duplicate transaction ids"* has been introduced, which does not create sequential transaction ID's, but guarantees a unique transaction ID for each transaction. You can find more details on this feature here: [Prevent duplicate transaction IDs](https://learn.microsoft.com/en-us/dynamics365/commerce/channel-setup-retail#ensure-unique-transaction-ids).
+The duplicate transaction ID occurs because normally a transaction ID in Commerce relies on the number sequence to provide sequential transaction IDs. If for any reason the system becomes unaware of a used number sequence, the result is a duplicate transaction ID. 
 
-For the current issue, please create a support ticket to see if the data can be fixed, but please note that in some cases no data fix might be possible or no data fix might be needed e.g. if there is no data loss in HQ.
+To resolve the duplicate transaction ID issue, create a support ticket to check if the transaction data can be fixed. In some cases no data fix may be possible or needed, for example if there is no data loss in headquarters.
+
+To prevent this issue in the future, in headquarters you must enable the **Enable new transaction id to avoid duplicate transaction ids** feature that was introduced in Commerce version 10.0.19. This feature prevents the creation of sequential transaction IDs by ensuring that a unique transaction ID is created for each transaction. For more information on this feature, see [Prevent duplicate transaction IDs](../channel-setup-retail#ensure-unique-transaction-ids.md).
+
