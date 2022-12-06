@@ -35,7 +35,7 @@ The most common root cause of the previously described symptoms is the generatio
 
 ## Resolution
 
-Usually, Commerce relies on a number sequence to generate sequential transaction IDs. If, for any reason, the system can't determine that a number sequence was used, a duplicate transaction ID is generated. 
+Usually, Commerce relies on a number sequence to generate sequential transaction IDs. If the system can't determine that a number sequence was used for any reason, a duplicate transaction ID is generated. 
 
 To fix the duplicate transaction ID issue, create a support ticket to check whether the transaction data can be fixed. In some cases, such as when there's no data loss in headquarters, no data fix is possible or required.
 
