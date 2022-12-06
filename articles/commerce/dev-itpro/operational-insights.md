@@ -1,6 +1,6 @@
 ---
-title: Commerce Operational Insights
-description: This article describes the Operational Insights feature in Microsoft Dynamics 365 Commerce.
+title: Set up Operational Insights
+description: This article describes how to set up and use the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 author: ashishMSFT
 ms.date: 12/06/2022
 ms.topic: article
@@ -16,15 +16,17 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the Operational Insights feature in Microsoft Dynamics 365 Commerce.
+This article describes how to set up and use the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 
 Operational Insights is a Dynamics 365 Commerce feature designed to help provide customers better visibility into their service health and business functionality by sending telemetry directly to a customer-owned Application Insights account.
 
-Enabling Operational Insights for your environments in Commerce headquarters allows you to collect a curated list of events from both Commerce Scale Unit (CSU) and your point-of-sale (POS) devices. These events help you better understand how your systems are performing and allow you to monitor key technical and business metrics. In cases where you don't want to always be collecting this telemetry, you can still benefit by quickly enabling or disabling the collection for specific environments to help with troubleshooting or debugging scenarios during development or in production.
+Enabling Operational Insights for your environments in Commerce headquarters allows you to collect a curated list of events from both Commerce Scale Unit (CSU) and your point-of-sale (POS) devices. These events help you better understand how your systems are performing, and allow you to monitor key technical and business metrics. 
+
+In cases where you don't always want to collect this telemetry, you can still benefit by quickly enabling or disabling the collection for specific environments to help with troubleshooting or debugging scenarios during development or in production.
 
 ## Access logs in Application Insights
 
-To access diagnostic event logs for Commerce CSU and POS components in Application Insights, follow the procedures below.
+To access diagnostic event logs for Commerce CSU and POS components via Application Insights, follow the procedures below.
 
 ### Commerce Scale Unit minimum version requirements
 
@@ -38,7 +40,7 @@ Commerce Scale Unit has the following minimum version requirements:
 ### Enable diagnostic events in Application Insights
 
 > [!IMPORTANT]
-> If you previously used Operational Insights preview, you must complete the following procedure to enable Operational Insights to ensure that reliable and secure access to events can continue.
+> If you previously used a preview version of Operational Insights, you must enable Operational Insights by following the procedure below to ensure that reliable and secure access to events can continue.
 
 To enable Commerce component diagnostic events, you must have an Application Insights account. You can use an existing account, or [create a new account](/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). For data privacy reasons, Microsoft recommends that you use separate Application Insights accounts for production, sandbox, and development environments. After you create an account, you must then enable the **Operational Insights** feature in headquarters.
 
@@ -50,7 +52,7 @@ To enable diagnostic events in Application Insights, follow these steps.
 1. On the **Environments** tab, enter **LCS Environment ID** and **Environment mode** values for every environment where you plan to use Application Insights. You can find each environment's Microsoft Dynamics Lifecycle Services (LCS) environment ID on the **Environment details** page for that environment in LCS. This step is required to prevent diagnostic events from being inadvertently sent to an incorrect environment when database copy operations are performed.
 1. On the **Application Insights registry** tab, specify the Application Insights **Instrumentation Key** and the corresponding **Environment Mode** of the environments where you plan to use each Application Insights account.
 1. After you've completed the preceding configuration, you must run the **CDX Job 1110** job. You can wait for this job to run on its own schedule, or you can run it manually.
-1. Restart each CSU. In LCS, go to **Environment details \> Commerce \> Manage**, select a CSU instance, and then select **Restart**.
+1. In LCS, go to **Environment details \> Commerce \> Manage**, select a CSU instance, and then select **Restart**. Repeat this step for each CSU.
 1. Repeat the preceding steps for each environment where you plan to use Application Insights.
 
 > [!NOTE]
@@ -62,22 +64,21 @@ Events and queries](https://download.microsoft.com/download/9/2/b/92be35b0-0e24-
 
 To use the DLLHost.exe.config file to control POS Operational Insights events, follow these steps.
 
-1. With a text editor, open the "DLLHost.exe.config" file that is located at `C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker`.
-1. Remove the sink XML element with the class name **Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger** from the **diagnosticsSection**. 
+1. With a text editor, open the "DLLHost.exe.config" file located at `C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker`.
+1. In the **diagnosticsSection**, remove the sink XML element with the class name **Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger**. 
+1. Save the config file.
 
 ### Disable diagnostic events in Application Insights
 
-If you no longer want to send diagnostic events to Application Insights, you must disable the feature.
-
 > [!IMPORTANT]
-> If you want to disable diagnostic events, you must follow the procedure below. It isn't enough to just turn off the feature in **Feature management**.
+> If you want to disable diagnostic events and no longer send them to Application Insights, you must follow the procedure below. It isn't enough to just disable the feature in **Feature management**.
 
 To disable diagnostic events in Application Insights, follow these steps.
 
 1. In headquarters, go to **System administration \> Operational Insights**.
 1. On the **Configure** tab, set the **Commerce channel events** option to **No**.
 1. After you've completed the preceding configuration, you must run the **CDX Job 1110** job. You can wait for this job to run on its own schedule, or you can run the job manually.
-1. Restart each Commerce Scale Unit. In LCS, go to **Environment details \> Commerce \> Manage**, select a CSU instance, and then select **Restart**.
+1. In LCS, go to **Environment details \> Commerce \> Manage**, select a CSU instance, and then select **Restart**. Repeat this step for each CSU.
 1. Repeat the preceding steps for each environment where you plan to turn off Application Insights.
 
 To disable diagnostic events for a single environment, delete the instrumentation key on the **Application Insights registry** tab of the **Operational Insights** form, then complete steps 3 and 4 of the procedure above.
