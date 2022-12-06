@@ -50,7 +50,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
  - Copy the existing Dataverse environment, which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
 
 > [!NOTE]
-> When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment)
+> When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### Dataverse capacity
 
@@ -61,7 +61,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 
 ### Create a Lifecycle Services project for Human Resources migration
 
-The first step is to create a new finance and operations Implementation project in Lifecycle Services. The customer will have an existing Human Resources Lifecycle Services project. The existing Human Resources environments will be migrated to the new finance and operations Implementation project.
+The first step is to create a new finance and operations Implementation project in Lifecycle Services. The customer will have an existing Human Resources Lifecycle Services project. The existing Human Resources environments will be migrated to the new finance and operations implementation project.
 
 To create a new project, follow these steps.
 
@@ -74,7 +74,7 @@ To create a new project, follow these steps.
 7. Select the checkbox to agree to the terms and conditions.
 8. Select **Create**.
 
-After you've created a new Lifecycle Services project, follow these steps to set up and configure it.
+After you've created a new Lifecycle Services project, follow these steps to set up and configure the project.
 
 1. Select **Project onboarding** to complete the project onboarding. For more information, see [Project onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
