@@ -2355,7 +2355,7 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Use data entities
+        - name: Product data entities
           href: pim/data-entities.md
         - name: Product lifecycle state
           items:
