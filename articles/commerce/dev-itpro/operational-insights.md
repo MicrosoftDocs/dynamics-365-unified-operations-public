@@ -2,7 +2,7 @@
 title: Commerce Operational Insights
 description: This article describes the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 author: ashishMSFT
-ms.date: 12/05/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -12,7 +12,7 @@ ms.search.validFrom: 2016-02-28
 
 ---
 
-# Commerce Operational Insights
+# Set up Operational Insights
 
 [!include [banner](../includes/banner.md)]
 
@@ -24,7 +24,7 @@ Enabling Operational Insights for your environments in Commerce headquarters all
 
 ## Access logs in Application Insights
 
-Diagnostic events for Commerce CSU and POS components can be accessed in Application Insights.
+To access diagnostic event logs for Commerce CSU and POS components in Application Insights, follow the procedures below.
 
 ### Commerce Scale Unit minimum version requirements
 
