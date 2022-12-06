@@ -2,7 +2,7 @@
 # required metadata
 
 title: Safety margins
-description: This article describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how safety margins work during master planning.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
+This article describes how safety margins work during master planning.
 
 ## Safety margins overview
 
@@ -168,12 +168,5 @@ All three types of safety margins are included when the system determines whethe
 For example, an item has lead time of one day and a receipt margin of three days. A sales order for this item is set as required today. In this case, the delay is calculated as *lead time* + *receipt margin* = four days. Therefore, if today is August 14, the four days of delay produces a delivery on August 18. The following illustration shows this example.
 
 ![Delay calculation example.](media/safety-margins-delays.png)
-
-## Additional resources
-
-[Get started with Planning Optimization](get-started.md)
-
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

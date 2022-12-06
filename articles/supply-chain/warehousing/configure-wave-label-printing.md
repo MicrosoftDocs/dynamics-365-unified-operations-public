@@ -1,29 +1,13 @@
 ---
-# required metadata
-
 title: Wave label printing
 description: This article describes wave label printing and explains how to set it up.
 author: perlynne
-ms.date: 05/01/2020
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: yyyy-mm-dd
-ms.dyn365.ops.version: 10.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
+ms.topic: how-to
+ms.date: 12/02/2022
+ms.custom: bap-template
 ---
 
 # Wave label printing
@@ -56,13 +40,6 @@ These enhancements make it more efficient to label cartons before palletization.
 
 > [!NOTE]
 > You can implement the configuration scenarios that are described in this article either separately or in combination, depending on your business requirements. You can design several wave label templates that work in sequence (as illustrated in scenario 3). For example, you can use scenario 1 to print carton labels and scenario 2 to print pallet labels (if pallets in stock vary in size and composition).
-
-## Turn on the Wave label printing feature
-
-As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Wave label printing*
 
 ## Scenario 1: Wave label printing where a single wave label is generated
 
@@ -115,7 +92,7 @@ The label layout controls what information is printed on the label and how it's 
 
     - **Row height:** *0*
 
-        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there is just one row in this example, you can set the value to *0* (zero).
+        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, you can set the value to *0* (zero).
 
     - **Rows per page:** *1*
 
@@ -177,7 +154,7 @@ The label layout controls what information is printed on the label and how it's 
     ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)39021^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here is an example.
+1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -196,7 +173,7 @@ The label layout controls what information is printed on the label and how it's 
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here is an example.
+1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
@@ -324,8 +301,8 @@ This scenario lets you print wave labels when you use containerization to automa
 
 Here are the main differences between this scenario and scenario 1:
 
-- **Wave label templates:** You won't select a wave label type on the wave label template, and you won't require a label build grouping. Otherwise, you will configure the wave label template and link to the wave template in the same way that is described in scenario 1. You must leave the wave label type blank to prevent wave labels from being generated.
-- **Wave label layouts:** You will configure the wave label layout row settings for work lines instead of wave label records. You must configure the row setting for the label layout by using the **WHSWorkLine** table instead of the **WHSWaveLabel** table. The **Rows per page** setting controls the number of rows that the body section will have. 
+- **Wave label templates:** You won't select a wave label type on the wave label template, and you won't require a label build grouping. Otherwise, you'll configure the wave label template and link to the wave template in the same way that is described in scenario 1. You must leave the wave label type blank to prevent wave labels from being generated.
+- **Wave label layouts:** You'll configure the wave label layout row settings for work lines instead of wave label records. You must configure the row setting for the label layout by using the **WHSWorkLine** table instead of the **WHSWaveLabel** table. The **Rows per page** setting controls the number of rows that the body section will have. 
 
 This configuration is also suitable for business scenarios where multiple different items are packed into one labeled box or into a pallet, and this packing process can be defined by work creation (for example, work that is grouped by shipment).
 
@@ -405,7 +382,7 @@ Wave templates let you link specific instances of wave methods to a correspondin
     ^FO0,150 ^AT ^FD$WHSShipmentTable.BillOfLadingId$ ^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here is an example.
+1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WorkLine">
@@ -419,7 +396,7 @@ Wave templates let you link specific instances of wave methods to a correspondin
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here is an example.
+1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
@@ -512,13 +489,13 @@ You can reprint these wave labels by going to **Warehouse management \> Inquirie
 
 ## Scenario 3: Wave label printing for multi-tiered labels
 
-This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a bar code, so that the labels can easily be sorted after they are printed.
+This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a bar code, so that the labels can easily be sorted after they're printed.
 
 The main difference between the configuration of this scenario and the configuration of scenario 1, besides the fact that break labels are enabled, is that multiple wave label types must be associated with wave label templates and unit sequence group lines. To accomplish this configuration, you set up the following elements for this scenario:
 
-- **Wave processing methods:** You will mark the wave label method as "repeatable," add it two (or more) times to the wave template, and set different wave step codes.
-- **Wave label templates:** You will configure the wave label templates and link them to the wave template. Each wave label template has its own wave label type.
-- **Wave label layouts:** You will create multiple wave label layouts. There will be a separate label layout for each "tier" of labels, and there will also be a break label layout.
+- **Wave processing methods:** You'll mark the wave label method as "repeatable," add it two (or more) times to the wave template, and set different wave step codes.
+- **Wave label templates:** You'll configure the wave label templates and link them to the wave template. Each wave label template has its own wave label type.
+- **Wave label layouts:** You'll create multiple wave label layouts. There will be a separate label layout for each "tier" of labels, and there will also be a break label layout.
 
 This scenario shows the end-to-end flow.
 
@@ -564,7 +541,7 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     - **Row height:** *0*
 
-        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there is just one row in this example, you can set the value to *0* (zero).
+        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, you can set the value to *0* (zero).
 
     - **Rows per page:** *1*
 
@@ -627,7 +604,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)39021^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here is an example.
+1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -646,7 +623,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here is an example.
+1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
@@ -676,7 +653,7 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     - **Row height:** *0*
 
-        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there is just one row in this example, you can set the value to *0* (zero).
+        This field defines the height of each row (in points), according to the ZPL standard. The row height is positive for horizontal labels and negative for vertical labels. Because there's just one row in this example, you can set the value to *0* (zero).
 
     - **Rows per page:** *1*
 
@@ -709,7 +686,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     ^FO0,150 ^AT ^FD$WHSShipmentTable.BillOfLadingId$ ^FS
     ```
 
-1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here is an example.
+1. In the **Body section** section, in the **Label body** field, enter ZPL code for the required body. Here's an example.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -720,7 +697,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     </Row>
     ```
 
-1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here is an example.
+1. In the **Body section** section, in the **Label footer** field, enter ZPL code for the required footer. Here's an example.
 
     ```plaintext
     ^PQ1^XZ
@@ -736,7 +713,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     - **Description:** *Break label*
 
 1. On the Action Pane, select **Save**.
-1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter ZPL code for the required header. Here is an example.
+1. The **Printer text Layout** FastTab has three sections where you can write printer code: **Header section**, **Body section**, and **Footer section**. In the **Header section** section, in the **Label header** field, enter ZPL code for the required header. Here's an example.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -745,7 +722,7 @@ To follow this scenario, you must have demo data installed, and you must select 
     ^FO0,0 ^AT ^FD$WHSWorkLine.ShipmentId$ ^FS
     ```
 
-1. This time, no body is required. Therefore, just enter the required text in the **Footer section** section. Here is an example.
+1. This time, no body is required. Therefore, just enter the required text in the **Footer section** section. Here's an example.
 
     ```plaintext
     ^XZ
@@ -825,7 +802,7 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     - **Print break label:** Select this check box.
     - **Label layout ID:** Select a break label. (For example, select the *Break* label layout that you created earlier in this scenario.)
-    - **Printer name:** Select the printer for the break label. (Typically, for the purpose of splitting label rolls, you should select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
+    - **Printer name:** Select the printer for the break label. (Typically, when splitting label rolls, you would select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
 
 1. For the row where the **Reference field name** field is set to *Reference load line id*, select the **Label build ID** check box.
 
@@ -879,7 +856,7 @@ To follow this scenario, you must have demo data installed, and you must select 
 
     - **Print break label:** Select this check box.
     - **Label layout ID:** Select a break label. (For example, select the *Break* label layout that you created earlier in this scenario.)
-    - **Printer name:** Select the printer for the break label. (Typically, for the purpose of splitting label rolls, you should select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
+    - **Printer name:** Select the printer for the break label. (Typically, when splitting label rolls, you would select the same printer that is selected on the **Wave label template details** FastTab. However, other scenarios are possible.)
 
 1. For the row where the **Reference field name** field is set to *Reference load line id*, select the **Label build ID** check box.
 

@@ -2,20 +2,14 @@
 title: Inbound inventory operation in POS
 description: This article describes capabilities of the point of sale (POS) inbound inventory operation.
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.9
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-ms.search.form: 
+ms.search.validFrom: 2017-06-20
+
 ---
 
 # Inbound inventory operation in POS
@@ -26,6 +20,11 @@ In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbou
 
 > [!NOTE]
 > In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, there will be no further investments in it, from a functional or performance perspective, after version 10.0.9.
+
+The following video provides an overview of store inventory business processes and capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## Prerequisite: Configure an asynchronous document framework
 

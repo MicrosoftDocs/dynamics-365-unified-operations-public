@@ -72,7 +72,7 @@ Describes a request to recruit for a job.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -91,7 +91,7 @@ Describes a request to recruit for a job.
 | **Status**<br>mshr_status<br>*RecruitingRequestStatus* option set | Read/write<br>Required<br> | Indicates the status of the recruiting request. |
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Required | Describes the request. |
 | **Recruiting Request Location ID**<br>mshr_recruitingrequestlocationid<br>*String* | Read/write<br>Optional | The user-readable unique identifier of the job location associated with this request. |
-| **Recruiting Location ID Value**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmrecruitingrequestlocationentityid of mshr_hcmrecruitingrequestlocationentity entity | System-generated GUID value to identify the recruiting request location selected for the request. |
+| **Recruiting Location ID Value**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmrecruitingrequestlocationentityid of mshr_hcmrecruitingrequestlocationentity entity | System-generated GUID value to identify the recruiting request location selected for the request. |
 | **Comments**<br>mshr_comments<br>*String* | Read/write<br>Optional | Comments about the request for use by hiring managers and recruiters. |
 | **Job ID**<br>mshr_jobid<br>*String* | Write-once<br>Required |	The user-readable unique identifier of the job shared by all Positions associated with this request. |
 | **Job ID Value**<br>_mshr_fk_job_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmjobentityid of mshr_hcmjobentity entity | The system-generated unique identifier of the job shared by all Positions associated with the recruiting request. |

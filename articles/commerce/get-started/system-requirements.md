@@ -100,7 +100,7 @@ This section lists the supported operating systems for each Commerce self-servic
 > [!WARNING]
 > The Windows 7 operating system isn't supported for anything except security-related fixes. Therefore, although Commerce components might work on Windows 7, there will be no bug fixes that are specifically related to supporting this operating system.
 
-#### Modern POS
+#### Modern POS or Store Commerce
 
 - Windows 11, Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
@@ -109,11 +109,11 @@ This section lists the supported operating systems for each Commerce self-servic
 
 - Windows Server 2019 is supported.
 - We don't recommend that you use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- Modern POS for iOS supports iOS version 11 or later.
-- Modern POS for Android supports Android version 6.0 or later.
+- iOS support requires iOS version 11 or later.
+- Android support requires Android version 6.0 or later.
 
 > [!NOTE]
-> If Modern POS will use an offline database, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, we recommend a minimum of 25 GB of available disk space.
+> If an offline database will be used, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, we recommend a minimum of 25 GB of available disk space.
 
 #### Hardware station and Commerce Scale Unit (self-hosted)
 

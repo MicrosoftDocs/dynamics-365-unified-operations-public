@@ -2,7 +2,7 @@
 title: Localize Commerce extension resources and label files
 description: This article explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ You can override the default strings in the POS by using the language text entri
 4. On the Action Pane, select **Save**.
 5. Go to **Retail and Commerce &gt; Retail and Commerce IT &gt; Distribution schedule**.
 6. Select the **Registers** (**1090**) job, and then select **Run now**.
-7. After the data is pushed, sign off, and then sign in to Cloud POS or Modern POS to see the changed labels.
+7. After the data is pushed, you'll need to wait up to one hour for the localized string cache to refresh. When the refresh of the string cache is complete, sign out and sign back in to Cloud POS, Modern POS or Store Commerce to display the changed labels. You can also force a cache refresh by restarting Retail Server. 
 
 ### Get the text ID for POS strings
 

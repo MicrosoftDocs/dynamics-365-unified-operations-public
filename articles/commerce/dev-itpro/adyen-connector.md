@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 10/27/2022
+ms.date: 11/16/2022
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -14,7 +14,6 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -94,6 +93,11 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
+
+The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
 
 ### Supported payment instruments
 
@@ -274,7 +278,7 @@ The following countries are supported by Adyen for card not present transactions
 | Taiwan |
 | Tanzania |
 | Thailand |
-| Turkey |
+| Türkiye |
 | United Arab Emirates (UAE) |
 | United Kingdom |
 | United States of America including Puerto Rico  |

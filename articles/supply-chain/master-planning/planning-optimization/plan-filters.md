@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization lets you set up filters to limit the set of items that are included in a planning run, so that not all items are planned. 
+Master planning lets you set up filters to limit the set of items that are included in a planning run, so that not all items are planned. 
 
 You can use two types of filters to limit the set of items that is planned:
 
@@ -81,13 +81,5 @@ To see how the plan and runtime filters are combined, consider this example. You
 - **Run 4: The runtime filter includes all items (blank filter)** – Items A, B, and C are included, and the previous planning output for items A and B is overwritten.
 
 The system will also include all the relevant BOM components and subcomponents for the manufactured products that are found by the combined filters, as specified by the BOM level settings that you entered in the **Planning Optimization** run dialog box when you set up the job.
-
-## Related resources
-
-- [Planning Optimization overview](planning-optimization-overview.md)
-- [Get started with Planning Optimization](get-started.md)
-- [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-- [View plan history and planning logs](plan-history-logs.md)
-- [Cancel a planning job](cancel-planning-job.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

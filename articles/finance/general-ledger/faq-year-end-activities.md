@@ -4,7 +4,7 @@
 title: Year-end activities FAQ 
 description: This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
-ms.date: 12/21/2021
+ms.date: 11/08/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -99,6 +99,23 @@ Before you can use this feature, it must be turned on in your system. Admins can
  
 - Module: General ledger
 - Feature name: Performance improvements for rebuilding financial dimension sets
+
+## Accounts payable: What changes have been made to support 1099 year-end reporting for 2022?
+
+#### Update to all 1099 forms
+The following changes have been made to all 1099 forms for the 2022 tax year:
+
+  - In 2021, the year was fixed on 1099 forms. Starting in 2022, the year is filled in by the report. 
+
+#### 1099-MISC
+The following updates have been made on Form 1099-MISC for the 2022 tax year:
+
+ - Box 13: Now indicates the Foreign Account Tax Compliance Act (FATCA) filing requirement. 
+ - Box 14: Now used to report the excess golden parachute payments. 
+ - Box 15: Now used to report the payment under nonqualified deferred compensation (NQDC) plans. 
+ - Box 16: Now used to report state withheld taxes.
+ - Box 17: Now used to report the payer's state number.
+ - Box 18: Now used to report the state income. 
 
 ## Accounts payable: What changes have been made to support 1099 year-end reporting for 2021?
 

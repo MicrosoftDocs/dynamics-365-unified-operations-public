@@ -19811,6 +19811,11 @@
       "source_path": "articles/supply-chain/iot/iot-schema-format.md",
       "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/master-planning/planning-optimization/planning-optimization-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/master-planning-architecture",
+      "redirect_document_id": "false"
     }
   ]
 }

@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -35,12 +35,12 @@ This article describes how to invoice a sales order, including merging invoices 
 2. Select a sales order in the list. 
 3. On the **Action Pane**, click **Invoice > Generate > Invoice**. Note that this sales order has multiple packing slips associated with it. It will only show the word *multiple* instead of the packing slip number.  
 4. Expand the **Parameters** section.
-    - Posting must be set to Yes to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
+    - Posting must be set to **Yes** to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
     - This option is used for batch jobs. The query is run when the batch job is run.
-5. In the **Print** field, select 'After'.
-6. Select **Yes** for **Print invoice**. Print management can print  multiple copies of the invoice and also send the invoice via email as a PDF file.  
-7. In the **Print charges** field, select 'Summarize'.
-8. In the **Check credit limit** field, select 'Balance'.
+5. In the **Print** field, select **After**.
+6. Select **Yes** for **Print invoice**. Print management can print multiple copies of the invoice and also send the invoice via email as a PDF file.  
+7. In the **Print charges** field, select **Summarize**.
+8. In the **Check credit limit** field, select **Balance**.
 9. Click **Cancel**.
 
 ## Combine orders into a single invoice
@@ -49,8 +49,8 @@ This article describes how to invoice a sales order, including merging invoices 
 3. Select multiple open sales orders from the same customer.
 4. On the **Action Pane**, click **Invoice > Generate > Invoice**.
 5. Expand the **Parameters** section.
-6. In the **Quantity** field, select 'All'. Note that there are two invoices listed in the overview section. Now let's merge them into a single invoice.  
-7. In the **Summary update for** field, select 'Invoice account'.
+6. In the **Quantity** field, select **All**. Note that there are two invoices listed in the overview section. Now let's merge them into a single invoice.  
+7. In the **Summary update for** field, select **Invoice account**.
 8. Click **Arrange** to merge the sales orders into a single invoice. The two sales orders are now merged into a single invoice.   
 9. Click **Cancel**.
 10. Click **Yes**.
