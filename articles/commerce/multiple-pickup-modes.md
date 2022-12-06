@@ -4,7 +4,7 @@
 title: Enable multiple pickup delivery modes for customer orders
 description: This article explains the functionality in Microsoft Dynamics 365 Commerce that lets you create customer orders for pickup at a store.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -33,13 +33,13 @@ In Microsoft Dynamics 365 Commerce, organizations can define multiple modes of d
 
 ## Enable and configure pickup delivery modes
 
-To use this functionality, the feature **Support for multiple pickup delivery modes** needs to be enabled in the **Feature management** workspace in Commerce headquarters. This feature was made mandatory as of November 2020 so it should already be enabled in the environment.
+The feature **Support for multiple pickup delivery modes** in the **Feature management** workspace in Commerce headquarters has been made mandatory and should be enabled in the environment.
 
-Prior to this feature, organizations could define only one mode of delivery as the designated pickup delivery mode. This definition was done on the **Commerce parameters** page. However, with this feature, the mode of delivery that was previously defined as the pickup delivery mode on the **Commerce parameters** page is automatically copied into the new configuration for pickup delivery modes.
+If you previously defined a pickup delivery mode on the **Commerce parameters** page, that mode appears in the current configuration for pickup delivery modes.
 
 ![Pickup delivery modes on the Commerce parameters page.](media/multiplepickupparameter.png)
 
-The user can now define multiple pickup delivery modes in the **Pickup mode of delivery** grid on the **Modes of delivery** FastTab on the **Customer orders** tab of the **Commerce parameters** page.
+You can define multiple pickup delivery modes on the **Pickup mode of delivery** grid at **Commerce parameters** > **Customer orders** tab > **Modes of delivery** FastTab.  
 
 The **Carry Out mode of delivery** and **Electronic mode of delivery** fields, and the **Show only carrier mode options for ship orders** option, have been relocated to this FastTab.
 
