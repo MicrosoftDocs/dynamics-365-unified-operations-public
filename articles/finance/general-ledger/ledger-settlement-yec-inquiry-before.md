@@ -52,7 +52,7 @@ A few notes:
 -   Ledger transactions that are settled across fiscal years can remain ledger settled as long as they're not settled against a transaction posted into 2022 (the year being closed) or later. For example, if you have settled transactions in 2019 and 2020, they can remain settled.
 
 1.	Do NOT enable the Awareness feature. 
-2.	Identify all the transactions posted in other fiscal years but settled against transactions posted in 2022. This is possible by going to the **Ledger settlement** page, then directly select the **Review cross-year settlement** button. 
+2.	Identify all the transactions posted in other fiscal years but settled against transactions posted in 2022. Go to the **Ledger settlement** page, then select the **Review cross-year settlement** button. 
 -   Select fiscal year 2022, the fiscal year we want to run the year end close process for.
 -   Select the **Financial dimension set** to display the financial dimensions you want to see for the ledger account. The main account is always shown, even if a dimension set is selected that doesn’t contain a main account. 
 -   Click **Show transactions**. The inquiry page will show all transactions, for all ledger accounts (even if they're not in ledger settlement setup anymore), from all other fiscal years that are settled against transactions posted within 2022. There are three different ledger accounts shown. 
@@ -60,7 +60,7 @@ A few notes:
 ![2022 cross-year settlements](./media/review-cross-year.png)
 
 
-3.	Right click on the grid and choose **Export all rows**. These are all the transactions that must be unsettled from the transactions in 2022 to run the year-end close. You want the detailed transaction list to correctly resettle the transactions later. 
+3.	Right-click on the grid and choose **Export all rows**. These are all the transactions that must be unsettled from the transactions in 2022 to run the year-end close. You want the detailed transaction list to correctly resettle the transactions later. 
 4.	Note the fiscal years for which the transactions were posted. In this scenario, there are transactions in 2021 and 2023. 
 5.	In the **Inquiry** page, change the fiscal year to 2021, the first fiscal year that contains transactions settled against 2022 transactions. 
 -   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2022 that were settled against transactions in 2021. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
@@ -72,7 +72,7 @@ A few notes:
 >Right-click on the grid and choose **Export all rows**. 
 
 6.	In the **Inquiry** page, change the fiscal year to 2023, the next fiscal year that contains transactions settled against 2022 transactions. 
--   Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2023 that were settled against transactions in 2022. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
+Filter on the **Transaction date** column to only include transactions posted within 2022. These are the detailed transactions from 2023 that were settled against transactions in 2022. These transactions are unsettled and resettled to transactions within 2022, in the following steps. It’s essential to maintain this detail in Excel.
 
 ![2023 cross-year settlements](./media/filter-transactions.png)
 
@@ -103,13 +103,13 @@ This will allow you to settle the 2022 transactions against the $525 originally 
 ![Do not allow manual entry](./media/not-post.png)
 
  
-10.	The unsettled transactions can be settled again. Return to the **Ledger settlement** page, enter the date range 1/1/2022 to 12/31/2022 and filter on the main account 110200. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
+10.	The unsettled transactions can be settled again. Return to the **Ledger settlement** page, specify a date range of January 1, 2022 to December 31, 2022 and filter on the main account 110200. Use the detailed transactions sent to Excel to find the specific transactions that need to be settled again. The following unsettled transactions now exist:
  
  ![Unsettled transations](./media/updated-unsettled.png)
  
  
 -   The Opening balance of $1,025 can be settled against the adjustment for -$1,025. 
--   The detailed transactions that were unsettled for -$400, -$50, and -$75 can be settled against the adjustment for $25.00.  
+-   The detailed transactions that were unsettled for -$400, -$50, and -$75 can be settled against the adjustment for $25.  
 11.	Enable the **Awareness** feature. You are now ready to run the year end close. 
 -   Before running the YEC, consider marking the option **Keep details in the Ledger settlement** setup for all balance sheet accounts. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).   
 -   When beginning the year-end close for 2022, if transactions are still found that were settled across fiscal years, the year-end close process will notify you. This may happen if users settled transactions across fiscal years after you completed the previous steps.
