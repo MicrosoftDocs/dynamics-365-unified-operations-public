@@ -110,6 +110,8 @@
           href: hr-admin-integration-common-data-service-virtual-entities.md
         - name: Human Resources virtual tables FAQ
           href: hr-admin-virtual-entity-faq.md
+        - name: Configure integration with Dataverse  
+          href: hr-dataverse-integration.md
         - name: Configure integration with Finance
           href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
