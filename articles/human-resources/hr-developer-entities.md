@@ -123,7 +123,7 @@ The following Dataverse tables are available based on Human Resources entities.
 | Pay Period | cdm_payperiod |          |     |
 | Payroll Earning Code | cdm_payrollearningcode |   754458        |   Closed  |
 | Bank Account Disbursement | cdm_bankaccountdisbursement |    751904     |   Closed  |
-| Tax Region | cdm_taxregion |         |     |
+| Tax Region | cdm_taxregion |          |     |
 
 ## Worker tables
 
