@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Commerce 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.30. 
 author: josaw1
-ms.date: 08/31/2022
+ms.date: 12/07/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
