@@ -30,9 +30,7 @@ ms.dyn365.ops.version: Human Resources
 # Configure integration with Dataverse Tables
 
 
-To integrate Dynamics 365 Human Resources with dataverse, you can use the [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to dataverse
-template enables data flow for jobs, positions workers and others. The template allows data to flow from Human Resources into dataverse and vice versa, creating a 
-write in both systems.
+To integrate Microsoft Dynamics 365 Human Resources with dataverse, you can use the [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources to Dataverse template enables data flow for jobs, positions workers and others. The template allows data to flow from Human Resources into Dataverse and vice versa, creating a write in both systems.
 
 
 ## System requirements for Human Resources
@@ -48,21 +46,23 @@ To access the Human Resources to Finance template.
 
 1. Open [Power Apps Admin Center](https://admin.powerapps.com/). 
 
-2. Under your environment, Select **Dyanmics 365 Apps**, and then select **App source** on the top banner. Search for "Dual-write Human Resources" or use this direct 
-link: https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.hcm_dualwrite to install this offering in your environment.
+2. Under your environment, Select **Dynamics 365 Apps**, and then select **App source** on the top banner. Search for "Dual-write Human Resources" or use this direct 
+link: https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.hcm_dualwrite to install.
 
-3. After installing, open your D365 Finance instance and navigate to Data Management. Click on **Dual Write**. 
+3. After installing, go to Dynamics 365 Finance.
+4. Open the **Data Management** workspace. 
+5. Click on **Dual Write**. 
 
-4. Follow the process for linking your environment for at least one company in your organization. 
+6. Follow the process for linking your environment for at least one company in your organization. 
 
-5. When finished setting up a link to your dataverse environment, click **Apply Solution**. This will apply the solution and install the mappings into the integrator 
+7. When finished setting up a link to your Dataverse environment, click **Apply Solution**. This will apply the solution and install the mappings into the integrator 
 app.
 
 ## Template mappings
 
 In the following template mapping tables, the name of the task contains the entities used in each application. Finance is found on the left and Dataverse on the right.
 
-### Bank account disbursements (Dual-Write) to Bank Account Disbursement
+### Bank account disbursements (Dual-write) to Bank Account Disbursement
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | ACCOUNTIDENTIFICATIONID        | cdm_bankaccountid.cdm_accountidentification        |
@@ -73,7 +73,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 
-### Benefit calculation rate detail (Dual Write) to Benefit Calculation Rate Detail
+### Benefit calculation rate detail (Dual-write) to Benefit Calculation Rate Detail
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | CONTRIBUTIONMETHOD             | cdm_contributionmethod                             |
@@ -559,7 +559,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 
-### Jobs Dual Write to Job
+### Jobs Dual-write to Job
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | JOBID                          | cdm_name                                           |
@@ -640,7 +640,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 
-### Leave time off request detail to Leave Request Detail
+### Leave time-off request detail to Leave Request Detail
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | AMOUNT                         | cdm_amount                                         |
@@ -650,7 +650,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 
-### Leave time off request header to Leave Request
+### Leave time-off request header to Leave Request
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | REQUESTID                      | cdm_leaverequestnumber                             |
@@ -759,7 +759,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 
-### Reference Point Setup Line (Dual Write) to Compensation Reference Point Setup Line
+### Reference Point Setup Line (Dual-write) to Compensation Reference Point Setup Line
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | DESCRIPTION                    | cdm_description                                    |
@@ -929,7 +929,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 
-### Worker postal addresses dual write to Worker Address
+### Worker postal addresses dual-write to Worker Address
 | Finance entity                 | Dataverse table                                    | 
 |--------------------------------|----------------------------------------------------|
 | PERSONNELNUMBER                | cdm_workerid.cdm_workernumber                      |
@@ -976,11 +976,11 @@ In the following template mapping tables, the name of the task contains the enti
 
 ## Integration considerations
 
-- All changes made to data on either system will be subject to validation by the other system. If a failure occurs then data will not be written in either system. 
+- All changes made to data on either system will be subject to validation by the other system. If a failure occurs, data won't be written in either system. 
 
 - All writes are subject to data defaulting (if custom logic occurs in Finance).
 
-- The dual write integrator app uses Integration keys to map between the two systems. Sometimes it has a hard time choosing the correct integration key, especially if there are multiple that satisfy the requirements. To aide with this we have created a list of suggested integration keys for your mappings. 
+- The dual-write integrator app uses Integration keys to map between the two systems. Sometimes, it's difficult to choose the correct integration key, especially if there are multiple that satisfy the requirements. To help with this, below is a list of suggested integration keys for your mappings. 
 
 | Dataverse Table                          | Integration Keys |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
