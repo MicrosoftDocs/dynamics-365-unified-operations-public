@@ -99,7 +99,7 @@ On the **Elimination** tab, you have three options for processing eliminations:
 For more information about eliminations, see [Elimination rules](./elimination-rules.md).
 
 ## Currency translation
-On the **Currency translation** tab, you define the legal entity, account and exchange rate type, and rate. Three options are available in the **Apply exchange rate from** field:
+On the **Currency translation** tab, you define the legal entity, account and exchange rate type, and rate. If the consolidation company is mapped to different main accounts than the source company, the consolidation company’s main account must be entered in the **From date** and **To date** fields, not the source company’s main accounts. For each row of legal entity and main accounts, three options are available in the **Apply exchange rate from** field:
 
 - **Consolidation date** – The date that's defined in the **Consolidation period To** field on the **Criteria** tab for the consolidation will be used to get the exchange rate. This rate is equivalent to the spot or month-end rate. You will see a preview of the rate, but you can't edit it.
 - **Transaction date** – The date of each transaction will be used to select an exchange rate. This option is most often used for fixed assets and is often referred to as a historical rate. You can't see a preview of the rate, because there will be many rates for the various transactions in the account range.
