@@ -4,7 +4,7 @@
 title: Purchase order overview
 description: This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
 author: GalynaFedorova
-ms.date: 11/30/2022
+ms.date: 12/07/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -60,11 +60,11 @@ There are three types of POs. When you create a PO, you must specify the type. Y
 | Returned order | Use this type when you return goods to the vendor. This type of order requires that you specify the return material authorization (RMA) number that the vendor gives you. You specify the RMA number on the **General** tab of the PO. The order lines must have negative quantities. |
 
 ## Purchase order statuses
-POs include several status fields that indicate the progress of the order. All these fields are visible in the **Header** view of the order, and a few of them are also visible in the grid overview of all orders. The **Status** field show the status for quantities on the order. The following values are available:
+POs include several status fields that indicate the progress of the order. All these fields are visible in the **Header** view of the order, and a few of them are also visible in the grid overview of all orders. The **Purchase order status** field show the status for quantities on the order. The following values are available:
 
 -   **Open order** – Orders have been created, and quantities are on order.
--   **Received** – Some of the quantities have been received, but they haven't been invoiced yet.
--   **Invoiced** – The full quantity on the order has been invoiced. **Note:** If an order has been *partially* invoiced, neither **Received** status nor **Invoiced** status is appropriate. Therefore, the order will still have a status of **Open order**.
+-   **Received** – The full quantity on the order has been received, but they haven't been invoiced yet. 
+-   **Invoiced** – The full quantity on the order has been invoiced. **Note:** If an order has been *partially* received or invoiced, neither **Received** status nor **Invoiced** status is appropriate. Therefore, the order will still have a status of **Open order**.
 -   **Canceled** – An order was confirmed but later canceled. Therefore, this status indicates that there are no longer any open quantities on order.
 
 The **Document status** field helps you quickly review the order's progress in terms of documents that have been processed. It shows the status of the most recent document that has been completed for the order. The following values are available:
