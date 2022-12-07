@@ -57,8 +57,8 @@ The following Dataverse tables are available based on Human Resources entities.
 
 | Name | Table |Known Issues  | Status |
 | --- | --- |   --------|----------   |
-| Business Process Calendar | cdm_businessprocesscalendar | 751867 | Resolved
-| Business Process Group Assignment | cdm_businessprocessgroupassignment | 751869? | Active|
+| Business Process Calendar | cdm_businessprocesscalendar | 751867 | Resolved |
+| Business Process Group Assignment | cdm_businessprocessgroupassignment | 751869  751863 | Active|
 | Business Process Library Task Group | cdm_businessprocesslibrarytaskgroup |751866 | Closed |
 | Business Process Stage | cdm_businessprocessstage |      |     |
 | Checklist Template Header | cdm_businessprocesstemplateheader |     |     |
