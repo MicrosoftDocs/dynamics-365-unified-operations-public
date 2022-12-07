@@ -39,6 +39,7 @@ If you're not currently on Microsoft Dynamics 365 Finance release 10.0.29 or abo
  - Preparing to use [**Awareness between ledger settlements**](ledger-settle-yec.md) before year-end close 
  - Preparing to use [**Awareness between ledger settlements**](ledger-settle-yec-after.md) after year-end close
 
+Beginning in Dynamics 365 Finance release 10.0.29, a new inquiry
 
 ## Example setup
 The following transactions were posted for main account 110200. The transactions in green are ledger settled within the same fiscal year, and don’t need to change. Transactions in red were ledger settled but the transactions have transaction dates in different fiscal years. Those transactions must be identified and potentially have the ledger settlement reversed.  
