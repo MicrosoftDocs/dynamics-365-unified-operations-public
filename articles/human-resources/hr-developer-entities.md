@@ -117,6 +117,9 @@ For more information about the known issues, see [Issue search in Lifecycle Serv
 | Leave Type | cdm_leavetype |      |     |
 | Leave Type Reason Code | cdm_leavetypereasoncode |         |     |
 
+>[!NOTE]
+>The dual-write integration using Dataverse tables for Leave and absence is only available when the **Configure multiple leave types on a single leave plan** feature is enabled using **Feature management**. 
+
 ## Payroll tables
 
 | Name | Table |Known issues  | Status |
