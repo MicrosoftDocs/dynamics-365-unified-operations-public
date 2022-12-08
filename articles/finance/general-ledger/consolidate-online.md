@@ -4,7 +4,7 @@
 title: Online financial consolidations
 description: This article describes online financial consolidations in General ledger.
 author: aprilolson
-ms.date: 07/09/2018
+ms.date: 12/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,6 +51,19 @@ Here is an explanation of the various fields on this tab:
 - **Consolidation period** – Use the fields in this section to define the consolidation period.
 
     - **From** and **To** – Specify a range of dates for the consolidation. If you leave these fields blank, the consolidation will be processed for all periods that are defined in the ledger calendar for the company. We don't recommend that you leave these fields blank.
+    - **Select consolidation amount from** – Use this field to specify whether the accounting currency amounts or the reporting currency amounts from the source companies will be used to update the accounting currency amounts of the consolidation company.
+
+        - Select **Accounting currency** to use the accounting currency amounts from the source companies to update the accounting currency amounts in the consolidation company. When this value is selected, use the **Consolidate accounting currency** field to define how the accounting currencies in the consolidation company will be calculated.
+        - Select **Reporting currency** to use the reporting currency amounts from the source companies to calculate the accounting currency amounts in the consolidation company.
+
+            - If the reporting currency from the source company is the same as the accounting currency of the consolidation company, the reporting currency amounts are copied from the source company to the consolidation company.
+            - If the reporting currency from the source company differs from the accounting currency of the consolidation company, the values are translated by using the exchange information that's defined on the **Currency translation** tab of this page to calculate the consolidation company values.
+
+    - **Consolidate accounting currency** – This field is available only if the **Select consolidation amount from** field is set to **Accounting currency**. Use it to specify whether the accounting currency amounts from the source companies are translated through exchange rates or copied to the consolidation company. Select **Use currency translation** to use the exchange rate information that's defined on the **Currency translation** tab to calculate the consolidation accounting balances. Select **Use accounting currency amount** to copy the accounting currency amounts from the source companies to the consolidation company.
+
+        - If the accounting currency from the source company is the same as the accounting currency of the consolidation company, the currency amounts are copied from the source company to the consolidation company.
+        - If the accounting currency from the source company differs from the accounting currency of the consolidation company, the values are translated by using the exchange information that's defined on the **Currency translation** tab to calculate the consolidation company values.
+
     - **Include actual amounts** – Set this option to **Yes** to consolidate your actual data.
     - **Include budget amounts** – Set this option to **Yes** to consolidate data from the budget register.
     - **Rebuild balances during consolidation** – We don't recommend that you set this option to **Yes**. Instead, rebuild balances as a separate batch job.
@@ -86,9 +99,9 @@ On the **Elimination** tab, you have three options for processing eliminations:
 For more information about eliminations, see [Elimination rules](./elimination-rules.md).
 
 ## Currency translation
-On the **Currency translation** tab, you define the legal entity, account and exchange rate type, and rate. Three options are available in the **Apply exchange rate from** field:
+On the **Currency translation** tab, you define the legal entity, account and exchange rate type, and rate. If the consolidation company is mapped to different main accounts than the source company, the consolidation company’s main account must be entered in the **From date** and **To date** fields, not the source company’s main accounts. For each row of legal entity and main accounts, three options are available in the **Apply exchange rate from** field:
 
-- **Consolidation date** – The date of the consolidation will be used to get the exchange rate. This rate is equivalent to the spot or month-end rate. You will see a preview of the rate, but you can't edit it.
+- **Consolidation date** – The date that's defined in the **Consolidation period To** field on the **Criteria** tab for the consolidation will be used to get the exchange rate. This rate is equivalent to the spot or month-end rate. You will see a preview of the rate, but you can't edit it.
 - **Transaction date** – The date of each transaction will be used to select an exchange rate. This option is most often used for fixed assets and is often referred to as a historical rate. You can't see a preview of the rate, because there will be many rates for the various transactions in the account range.
 - **User defined rate** – After you select this option, you can enter the exchange rate that you want. This option can be useful for average exchange rates or if you're consolidating against a fixed exchange rate.
 

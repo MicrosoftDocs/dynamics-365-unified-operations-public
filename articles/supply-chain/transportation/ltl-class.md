@@ -49,7 +49,7 @@ To create an LTL class, follow these steps.
 
 The following example shows how to set up two different LTL classes that you can use with different types of products.
 
-1. Go to **Warehouse management \> Setup \> Inventory \> LTL classes**.
+1. Go to **Warehouse management \> Setup \> Inventory \> LTL classes** or **Transportation management \> Setup \> Transportation standards \> LTL classes**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 
