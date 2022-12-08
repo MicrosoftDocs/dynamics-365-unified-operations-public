@@ -118,7 +118,7 @@ For more information about the known issues, see [Issue search in Lifecycle Serv
 | Leave Type Reason Code | cdm_leavetypereasoncode |         |     |
 
 >[!NOTE]
->The dual-write integration using Dataverse tables for Leave and absence is only available when the **Configure multiple leave types on a single leave plan** feature is enabled using **Feature management**. 
+>The dual-write integration using Dataverse tables for Leave and absence is only available when the **Configure multiple leave types on a single leave plan** feature is enabled in Microsoft Dynamics 365 Finance using **Feature management**. 
 
 ## Payroll tables
 
