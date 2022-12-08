@@ -4,7 +4,7 @@
 title: Dataverse tables
 description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 author: twheeloc
-ms.date: 01/25/2021
+ms.date: 12/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,105 +41,107 @@ Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility an
 
 The following Dataverse tables are available based on Human Resources entities.
 
+For more information about the known issues, see [Issue search in Lifecycle Services (LCS)](/dev-itpro/lifecycle-services/issue-search-lcs).
+
 ## Benefit tables
 
-| Name | Table |
-| --- | --- |
-| Benefit Calculation Frequency | cdm_benefitcalculationfrequency |
-| Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |
-| Benefit Calculation Rate | cdm_benefitcalculationrate |
-| Benefit Calculation Rate Detail | cdm_benefitcalculationratedetail |
-| Benefit Option | cdm_benefitoption |
-| Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |
-| Benefit Type | cdm_benefittype |
+| Name | Table | Known issues  | Status |
+| --- | --- |    --------|----------  |
+| Benefit Calculation Frequency | cdm_benefitcalculationfrequency |     |     |
+| Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |     |     |
+| Benefit Calculation Rate | cdm_benefitcalculationrate |    |     |
+| Benefit Calculation Rate Detail | cdm_benefitcalculationratedetail |753225 | Resolved  |
+| Benefit Option | cdm_benefitoption |    |     |
+| Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |    |     |
+| Benefit Type | cdm_benefittype |    |     |
 
 ## Business process tasks tables
 
-| Name | Table |
-| --- | --- |
-| Business Process Calendar | cdm_businessprocesscalendar |
-| Business Process Group Assignment | cdm_businessprocessgroupassignment |
-| Business Process Library Task Group | cdm_businessprocesslibrarytaskgroup |
-| Business Process Stage | cdm_businessprocessstage |
-| Checklist Template Header | cdm_businessprocesstemplateheader |
-| Checklist Template Task | cdm_businessprocesstemplatetask |
+| Name | Table |Known issues  | Status |
+| --- | --- |   --------|----------   |
+| Business Process Calendar | cdm_businessprocesscalendar | 751867 | Resolved |
+| Business Process Group Assignment | cdm_businessprocessgroupassignment | 751869  751863 | Active|
+| Business Process Library Task Group | cdm_businessprocesslibrarytaskgroup |751866 | Closed |
+| Business Process Stage | cdm_businessprocessstage |      |     |
+| Checklist Template Header | cdm_businessprocesstemplateheader |     |     |
+| Checklist Template Task | cdm_businessprocesstemplatetask |      |     |
 
 ## Compensation tables
 
-| Name | Table |
-| --- | --- |
-| Compensation Fixed Plan | cdm_compensationfixedplan |
-| Compensation Grid | cdm_compensationgrid |
-| Compensation Level | cdm_compensationlevel |
-| Compensation Pay Frequency | cdm_compensationpayfrequency |
-| Compensation Reference Point Setup | cdm_compensationreferencepointsetup |
-| Compensation Reference Point Setup Line | cdm_compensationreferencepointsetupline |
-| Compensation Region | cdm_compensationregion |
-| Compensation Structure | cdm_compensationstructure |
-| Compensation Variable Plan | cdm_compensationvariableplan |
-| Compensation Variable Plan Level | cdm_compensationvariableplanlevel |
-| Compensation Variable Plan Type | cdm_compensationvariableplantype |
-| Fixed Compensation Event | cdm_fixedcompensationevent |
-| Vesting Rule | cdm_vestingrule |
-| Worker Fixed Compensation | cdm_workerfixedcompensation |
+| Name | Table |Known issues  | Status |
+| --- | --- | ----------      | -------    |
+| Compensation Fixed Plan | cdm_compensationfixedplan |754453 | Closed |
+| Compensation Grid | cdm_compensationgrid |             |     |
+| Compensation Level | cdm_compensationlevel |           |     |
+| Compensation Pay Frequency | cdm_compensationpayfrequency |                  |     |
+| Compensation Reference Point Setup | cdm_compensationreferencepointsetup |               |     |
+| Compensation Reference Point Setup Line | cdm_compensationreferencepointsetupline |             |     |
+| Compensation Region | cdm_compensationregion |                   |     |
+| Compensation Structure | cdm_compensationstructure |    754456        | Closed    |
+| Compensation Variable Plan | cdm_compensationvariableplan |               |     |
+| Compensation Variable Plan Level | cdm_compensationvariableplanlevel |                |     |
+| Compensation Variable Plan Type | cdm_compensationvariableplantype |               |     |
+| Fixed Compensation Event | cdm_fixedcompensationevent |               |     |
+| Vesting Rule | cdm_vestingrule |              |     |
+| Worker Fixed Compensation | cdm_workerfixedcompensation |              |     |
 
 ## Organization tables
 
-| Name | Table |
-| --- | --- |
-| Department | cdm_department |
-| Employment | cdm_employment |
-| Company | cdm_company |
-| Job | cdm_job |
-| Job Function | cdm_jobfunction |
-| Job Position | cdm_jobposition |
-| Position Type | cdm_positiontype |
-| Position Worker Assignment | cdm_positionworkerassignmentmap |
-| Job Position Dimension | cdm_jobpositiondimension|
-| Job Type | cdm_jobtype |
-| Language | cdm_language |
-| Title | cdm_title |
+| Name | Table |Known issues  | Status |
+| --- | --- | ----------      | -------    |
+| Department | cdm_department |  752194    | Closed    |
+| Employment | cdm_employment | 762414  |  Closed  |
+| Company | cdm_company |  |     |
+| Job | cdm_job |  |     |
+| Job Function | cdm_jobfunction |        |     |
+| Job Position | cdm_jobposition | 752214      | Closed    |
+| Position Type | cdm_positiontype |            |     |
+| Position Worker Assignment | cdm_positionworkerassignmentmap | 752224    |  Closed   |
+| Job Position Dimension | cdm_jobpositiondimension|       |     |
+| Job Type | cdm_jobtype |      |     |
+| Language | cdm_language |        |     |
+| Title | cdm_title |       |     |
 
 > [!NOTE]
 > Financial dimensions for **Position Type**, **Position Worker Assignment**, and **Employment** provide one-direction integration to Dataverse. Financial dimensions updates currently can't synchronize from Dataverse to Human Resources. 
 
 ## Leave and absence tables
 
-| Name | Table |
-| --- | --- |
-| Leave Bank Transaction | cdm_leavebanktransaction |
-| Leave Enrollment | cdm_leaveenrollment |
-| Leave Plan | cdm_leaveplan |
-| Leave Request | cdm_leaverequest |
-| Leave Request Detail | cdm_leaverequestdetail |
-| Leave Type | cdm_leavetype |
-| Leave Type Reason Code | cdm_leavetypereasoncode |
+| Name | Table | Known issues  | Status |
+| --- | --- |   ----------      | -------    |
+| Leave Bank Transaction | cdm_leavebanktransaction |  752252    |    Resolved |
+| Leave Enrollment | cdm_leaveenrollment |  752934    |Closed     |
+| Leave Plan | cdm_leaveplan |   752232   |   Closed  |
+| Leave Request | cdm_leaverequest | 753207     | Closed    |
+| Leave Request Detail | cdm_leaverequestdetail | 753207     |   Closed  |
+| Leave Type | cdm_leavetype |      |     |
+| Leave Type Reason Code | cdm_leavetypereasoncode |         |     |
 
 ## Payroll tables
 
-| Name | Table |
-| --- | --- |
-| Pay Cycle | cdm_paycycle |
-| Pay Period | cdm_payperiod |
-| Payroll Earning Code | cdm_payrollearningcode |
-| Bank Account Disbursement | cdm_bankaccountdisbursement |
-| Tax Region | cdm_taxregion |
+| Name | Table |Known issues  | Status |
+| --- | --- |  ----------      | -------    |
+| Pay Cycle | cdm_paycycle |    |     |
+| Pay Period | cdm_payperiod |          |     |
+| Payroll Earning Code | cdm_payrollearningcode |   754458        |   Closed  |
+| Bank Account Disbursement | cdm_bankaccountdisbursement |    751904     |   Closed  |
+| Tax Region | cdm_taxregion |          |     |
 
 ## Worker tables
 
-| Name | Table |
-| --- | --- |
-| Worker | cdm_worker |
-| Worker Address | cdm_workeraddress |
-| Worker Personal Detail | cdm_workerpersonaldetail |
-| Worker Person Identification Number | cdm_workerpersonidentificationnumber |
-| Worker Person Identification Type | cdm_workerpersonidentificationtype |
-| Work Calendar | cdm_workcalendar |
-| Work Calendar Day | cdm_workcalendarday |
-| Work Calendar Holiday |cdm_workcalendarholiday |
-| Work Calendar Holiday Line | cdm_workcalendarholidayline |
-| Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |
-| Worker Bank Account | cdm_workerbankaccount |
+| Name | Table |Known issues  | Status |
+| --- | --- |----------      | -------    |
+| Worker | cdm_worker |    751906    |    Closed |
+| Worker Address | cdm_workeraddress |   754465     |Closed     |
+| Worker Personal Detail | cdm_workerpersonaldetail |   751906     |   Closed  |
+| Worker Person Identification Number | cdm_workerpersonidentificationnumber |  766704      |   Closed  |
+| Worker Person Identification Type | cdm_workerpersonidentificationtype |        |     |
+| Work Calendar | cdm_workcalendar |        |     |
+| Work Calendar Day | cdm_workcalendarday |        |     |
+| Work Calendar Holiday |cdm_workcalendarholiday |        |     |
+| Work Calendar Holiday Line | cdm_workcalendarholidayline |        |     |
+| Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |        |     |
+| Worker Bank Account | cdm_workerbankaccount |        |     |
 
 ## Worker setup tables
 

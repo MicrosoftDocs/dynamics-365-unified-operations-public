@@ -110,6 +110,8 @@
           href: hr-admin-integration-common-data-service-virtual-entities.md
         - name: Human Resources virtual tables FAQ
           href: hr-admin-virtual-entity-faq.md
+        - name: Configure integration with Dataverse  
+          href: hr-dataverse-integration.md
         - name: Configure integration with Finance
           href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
@@ -530,7 +532,7 @@
             href: ../human-resources/hr-personnel-set-up-positions.md
           - name: Hire candidates through recruitment
             href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-          - name: Hire an existing employees through recruitment
+          - name: Hire an existing employee through recruitment
             href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
           - name: Identify and deploy candidate selection tools
             href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
