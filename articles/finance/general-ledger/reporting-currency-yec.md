@@ -41,27 +41,27 @@ The following example walks through the scenario and the steps for how to addres
 
 The Awareness feature is enabled and main account 110180 is setup for Ledger settlement. The following illustration shows the ledger transactions that were posted within the DEMF legal entity. DEMF has an accounting currency of USD and a reporting currency of EUR.  
 
-reporting currency 1 - image
+![Reporting currency](./media/reporting-currency1.png)
 
 
 On the **Ledger settlement** page, (**General ledger > Periodic tasks > Ledger settlement**, the ledger transactions for main account 110180 are shown. Right-click on the grid and select **Insert columns**. Add the column **Amount in reporting currency** so you can see the transaction currency, accounting currency, and reporting currency amounts. 
 
-ledger settlement 2 - image
+![Amount in reporting currency](./media/Ledger-settlement2.png)
 
 The first two ledger transactions for 100.00 EUR are settled as a group, and the next two ledger transactions for 200.00 EUR are settled as a group (so they have different settlement IDs). This was done to simulate that organizations will have multiple groups of ledger transactions settled at different times and with different settlement dates. After settlement is complete, the **Ledger settlement** page shows the following information when filtered to view **Settled transactions**. 
 
-settled trans filter 3 - image
+![Settled transactions](./media/Settled-trans-filtered3.png)
 
 
 On the **Ledger settlement** page, right-click on the **Amount** column and **Amount in reporting currency** columns and choose **Total this column**. The accounting currency must have a difference of zero in order to settle. There is no validation though on the settlement amount for the reporting currency. As shown, there is a difference of -27.79 USD for the reporting currency. 
 
-difference 4 - image
+![Settled amount in reporting currency](./media/Difference4.png) 
 
 ## Year-end close
 
-If the year-end close is now run for 2022, the process will end in an out of balance error. This is directly a result of the reporting currency not having a ledger settlement amount that nets to zero
+If the year-end close is now run for 2022, the process will end in an out of balance error. This is directly a result of the reporting currency not having a ledger settlement amount that nets to zero.
 
-YEC 5 - image
+![Ledger settlement amount not zero](./media/YEC5.png) 
 
 ## Posting reporting currency gain/loss
 
@@ -82,18 +82,18 @@ As described earlier, this can be done on the **Ledger settlement** page:
 7. Enter the transaction for the gain/loss. This journal will only post an adjustment in the reporting currency. The transaction currency and accounting currency amounts are always posted with a zero amount. If this journal hasn’t been used before, you may need to create a journal name with a journal type of **Reporting currency adjustment** under **General ledger – Journal setup – Journal names**. 
 8. You might have to temporarily turn off the **Do not allow manual entry parameter** on the **Main account** page. This adjustment won't be posted if the main account doesn't allow for manual entry.
 
-Manual entry 6 - image
+![Manual entry](./media/Manual-entry6.png)
 
 Post the adjustment journal and return to the **Ledger settlement** page. Select the main account for which you posted the gain/loss. The gain/loss adjustment must be included in a ledger settlement. Because the reporting currency amount isn’t required to net to zero, you can unsettle any prior transaction and settle them again, but this time include the gain/loss. How precise you want to be with the posting of the gain/loss and with the settlement of that gain/loss within Ledger settlements is up to your organization. 
 
 Here the transactions for 200 EUR were unsettled and marked for settlement again, this time including the gain/loss adjustment. 
 
-gain/loss 7 - image
+![Gain or loss adjustment](./media/gain-loss7.png)
 
 
-After settlement of those transactions, change the **Status** filter to view **Settled transactions**. The total Amount in reporting currency is now zero. The year-end close can now be run successfully. 
+After settlement of those transactions, change the **Status** filter to view **Settled transactions**. The total **Amount in reporting currency** is now zero. The year-end close can now be run successfully. 
 
-zero settled 8 - image
+![Reporting currency is zero](./media/Zero-settled8.png) 
 
 
 
