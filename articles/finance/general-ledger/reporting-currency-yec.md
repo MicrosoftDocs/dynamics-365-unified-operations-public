@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.25
 After enabling the **Awareness between ledger settlement and year end close feature** (the Awareness feature), ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when running the general ledger year end close. Excluding ledger transactions that are settled may present a challenge for customers at year-end close if the Ledger is defined with a reporting currency.  
 
 
-Ledger settlement is performed for only the accounting currency. When the ledger transactions are settled, validation only ensures the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren’t validated and may not have debits = credits. In addition, ledger settlement doesn’t automatically calculate and post a gain/loss in the reporting currency. 
+Ledger settlement is performed for only the accounting currency. When the ledger transactions are settled, validation will only confirm the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren’t validated and may not have debits = credits. In addition, ledger settlement doesn’t automatically calculate and post a gain/loss in the reporting currency. 
 
 Due to these limitations, a gain/loss transaction must exist in the reporting currency when performing ledger settlement. If the gain/loss isn’t included in the ledger settlement, the year-end close will result in an out of balance message. 
 
@@ -44,7 +44,7 @@ The Awareness feature is enabled and main account 110180 is setup for Ledger set
 ![Reporting currency](./media/reporting-currency-1.png)
 
 
-On the **Ledger settlement** page, (**General ledger > Periodic tasks > Ledger settlement**, the ledger transactions for main account 110180 are shown. Right-click on the grid and select **Insert columns**. Add the column **Amount in reporting currency** so you can see the transaction currency, accounting currency, and reporting currency amounts. 
+On the **Ledger settlement** page, (**General ledger > Periodic tasks > Ledger settlement**), the ledger transactions for main account 110180 are shown. Right-click on the grid and select **Insert columns**. Add the column **Amount in reporting currency** so you can see the transaction currency, accounting currency, and reporting currency amounts. 
 
 ![Amount in reporting currency](./media/Ledger-settlement2.png)
 
