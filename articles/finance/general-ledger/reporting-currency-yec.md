@@ -39,7 +39,7 @@ The following example walks through the steps for how to address this prior to r
 
 ## Example setup
 
-The Awareness feature is enabled and main account 110180 is setup for Ledger settlement. The following illustration shows the ledger transactions that were posted within the DEMF legal entity. DEMF has an accounting currency of USD and a reporting currency of EUR.  
+To set up this example, the **Awareness** feature is enabled and main account 110180 is set up for **Ledger settlement**. The following illustration shows the ledger transactions that were posted within the DEMF legal entity. DEMF has an accounting currency of USD and a reporting currency of EUR.  
 
 ![Reporting currency](./media/reporting-currency-1.png)
 
