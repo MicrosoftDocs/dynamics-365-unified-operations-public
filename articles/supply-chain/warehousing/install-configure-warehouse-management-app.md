@@ -62,10 +62,10 @@ The easiest way to install the app on single device is to install it from an app
 
 As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides installable packages that you can sideload. In addition to the current version, the App Center also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
 
-- **Windows (UWP):** [Warehouse Management (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)  
     For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](/appcenter/distribution/installation).
 
-- **Android:** [Warehouse Management (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)  
     If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
 
 For information about how install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
