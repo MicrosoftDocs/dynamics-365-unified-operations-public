@@ -1,28 +1,15 @@
---- 
-# required metadata 
- 
+---
 title: Manage units of measure
 description: This article describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 author: t-benebo
-ms.date: 11/30/2022
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
+ms.topic: how-to
+ms.date: 12/08/2022
+ms.custom: bap-template
 ---
+
 # Manage units of measure
 
 [!include [banner](../../includes/banner.md)]
@@ -116,7 +103,7 @@ To define rules for conversions between units of measure, follow these steps.
 
     - **Product** – Select the specific product that the conversion applies to. This field is available only for intra-class and inter-class conversions.
     - **Formula layout** – Leave this field set to *Simple* to specify a simple conversion that has a single factor. Set it to *Advanced* to set up a more complex equation. The format for advanced equations varies, depending on the unit class.
-    - **From unit** – This field shows the selected unit. Usually, you should not change the value. (If you do change the value, you must open the **Unit conversions** page for the selected unit to view your new conversion after you save it.)
+    - **From unit** – This field shows the selected unit. Usually, you shouldn't change the value. (If you do change the value, you must open the **Unit conversions** page for the selected unit to view your new conversion after you save it.)
     - **To unit** – Select the unit to convert to.
     - **Rounding** – Select how fractions should be rounded, based on the **Decimal precision** value of the selected unit (*To nearest*, *Up*, or *Down*).
     - **Conversion formula** – Use the remaining fields at the top of the drop-down dialog box to specify the formula for converting between the two units. The available fields vary, depending on the unit class and formula layout that you've selected.
