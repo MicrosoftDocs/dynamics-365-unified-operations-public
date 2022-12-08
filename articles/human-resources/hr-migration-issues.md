@@ -50,3 +50,7 @@ The following environment types are required before you can do the migration:
 
 The existing Human Resources app in Teams is currently being shifted to a Microsoft Power Platform solution. For more information, see [Human Resources app in Teams](hr-admin-teams-leave-app.md).
 
+## Dual-write integration
+
+Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, you may be impacted by some of the issues that were found. For more information about dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
+
