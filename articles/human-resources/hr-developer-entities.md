@@ -4,7 +4,7 @@
 title: Dataverse tables
 description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 author: twheeloc
-ms.date: 01/25/2021
+ms.date: 12/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,9 +41,11 @@ Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility an
 
 The following Dataverse tables are available based on Human Resources entities.
 
+For information about known issues, sign in to Lifecycle Services (LCS).
+
 ## Benefit tables
 
-| Name | Table | Known Issues  | Status |
+| Name | Table | Known issues  | Status |
 | --- | --- |    --------|----------  |
 | Benefit Calculation Frequency | cdm_benefitcalculationfrequency |     |     |
 | Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |     |     |
@@ -55,7 +57,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Business process tasks tables
 
-| Name | Table |Known Issues  | Status |
+| Name | Table |Known issues  | Status |
 | --- | --- |   --------|----------   |
 | Business Process Calendar | cdm_businessprocesscalendar | 751867 | Resolved |
 | Business Process Group Assignment | cdm_businessprocessgroupassignment | 751869  751863 | Active|
@@ -66,7 +68,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Compensation tables
 
-| Name | Table |Known Issues  | Status |
+| Name | Table |Known issues  | Status |
 | --- | --- | ----------      | -------    |
 | Compensation Fixed Plan | cdm_compensationfixedplan |754453 | Closed |
 | Compensation Grid | cdm_compensationgrid |             |     |
@@ -85,7 +87,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Organization tables
 
-| Name | Table |Known Issues  | Status |
+| Name | Table |Known issues  | Status |
 | --- | --- | ----------      | -------    |
 | Department | cdm_department |  752194    | Closed    |
 | Employment | cdm_employment | 762414  |  Closed  |
@@ -105,7 +107,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Leave and absence tables
 
-| Name | Table | Known Issues  | Status |
+| Name | Table | Known issues  | Status |
 | --- | --- |   ----------      | -------    |
 | Leave Bank Transaction | cdm_leavebanktransaction |  752252    |    Resolved |
 | Leave Enrollment | cdm_leaveenrollment |  752934    |Closed     |
@@ -117,7 +119,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Payroll tables
 
-| Name | Table |Known Issues  | Status |
+| Name | Table |Known issues  | Status |
 | --- | --- |  ----------      | -------    |
 | Pay Cycle | cdm_paycycle |    |     |
 | Pay Period | cdm_payperiod |          |     |
@@ -127,7 +129,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Worker tables
 
-| Name | Table |Known Issues  | Status |
+| Name | Table |Known issues  | Status |
 | --- | --- |----------      | -------    |
 | Worker | cdm_worker |    751906    |    Closed |
 | Worker Address | cdm_workeraddress |   754465     |Closed     |
