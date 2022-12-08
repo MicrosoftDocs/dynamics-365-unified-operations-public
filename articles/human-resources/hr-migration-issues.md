@@ -52,5 +52,5 @@ The existing Human Resources app in Teams is currently being shifted to a Micros
 
 ## Dual-write integration
 
-Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, you may be impacted by some of the issues that were found. For more information about dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
+Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, you may be impacted by some of the issues that were found. For more information about Dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
 
