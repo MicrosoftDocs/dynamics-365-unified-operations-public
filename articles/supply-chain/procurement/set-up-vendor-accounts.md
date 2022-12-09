@@ -92,6 +92,7 @@ You can put a vendor on hold for various transaction types. The following option
 -   **Payment** – No payments can be generated for the vendor.
 -   **Requisition** – Purchase requisitions can't be created for the vendor, and requisition lines already created before the vendor was set on hold can't be converted to a purchase order. Requisition lines for the vendor will be canceled if your policy is set to create purchase orders automatically.
 -   **Never** – The vendor is never put on hold for inactivity.
+-   **Purchase order** – Purchase orders can't be created for the vendor but meanwhile it is possible to proceed with any open invoices or payments to vendor. This option is availbale only when **Put vendor on hold for purchase orders** feature is enabled. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.
 
