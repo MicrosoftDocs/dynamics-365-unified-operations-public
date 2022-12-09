@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America, and Japan regions. If your finance and operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [Project Como Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
+> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America, and Japan regions. If your finance and operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 
 The **Export to Data Lake** feature lets you copy data from your finance and operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your finance and operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
@@ -55,13 +55,13 @@ You can select the tables and entities that should be staged in data lake.
 
     ![Selecting tables.](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
-4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of data. When the initial copy is completed, the system changes the status to **Running**.
+4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of data. When the initial copy is completed, the system changes the status to **Running**. After initial copy, as data changes in Finance and Operations, the data gets updated in the lake. You can see most recent data change from Finance and Operations in the **Last processed change** column. If there are no data changes in the system after initial copy, this field will remain blank.
 
     In the event of an error, the system shows the status as **Deactivated**.
 
     You can consume data in the data lake when the status is **Running**. If you consume data in the data lake while the status is **Initializing** or **Deactivated** status, you might not see all the data. 
 
-    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you also select the tables that include them.
+    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you are selecting the underlying tables that comprise the entity. 
 
     > [!NOTE]
     > When you open the **Choose using Entities** tab for the first time, you might notice that the list of entities on the page is empty. The system might require some time to fill in the list of entities. You can force a refresh of the list by selecting **Manage \> Rebuild data feed catalog** on the Action Pane. 
@@ -80,7 +80,7 @@ When you select data, the Export to Azure Data Lake service makes an initial cop
 
 After the initial copy is made, the system continuously updates the data as changes occur in finance and operations apps. When records are inserted, updated, or deleted, data records in the data lake are inserted, updated, or deleted accordingly.
 
-If you use the optional near-real-time change feature (currently in preview), data in the data lake is updated within minutes of a change in the finance and operations environment. Otherwise, data in the data lake is updated within a few hours of a change in the finance and operations environment.
+If you use the "near-real-time change" feature, data in the data lake is updated within minutes of a change in the finance and operations environment. Otherwise, data in the data lake is updated within a few hours of a change in the finance and operations environment. 
 
 The Export to Data Lake page in a finance and operations environment shows the time stamp of the last update of the data in the data lake. The system also adds data fields that help you identify the time when the data in the data lake was updated. Your downstream processes can use the time stamps to detect and process data as it changes in the data lake.
 
@@ -89,7 +89,7 @@ The Export to Data Lake page in a finance and operations environment shows the t
 ### Export to Data Lake feature is not available in your region and/or your environment at this time
 This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature may not be available in all Azure regions where finance and operations apps are available, or this feature may not be available for your environment. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by completing the survey. You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. We are working hard to make this feature available soon.
+This feature may not be available in all Azure regions where finance and operations apps are available, or this feature may not be available for your environment. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch with upcoming improvements and availability in your region.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
 Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
