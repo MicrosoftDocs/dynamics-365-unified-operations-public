@@ -28,7 +28,8 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, work will be created to replenish the location. The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job. These tasks would typically be carried out by a warehouse manager. You can run this procedure in the USMF demo data company using the example values below, or can run it on your own data. If you're using your own data, make sure that you have a warehouse that's enabled for Warehouse management processes (WMS).
-
+> [!NOTE]
+> Running with batch tracked items enabled with the *Batch number* dimension below the *Location* in the reservation hierarchy allows for creation of replenishment work which can result in conflicts when processing the work in case of not allowing mixing of batch numbers on the put locations. This because only "batch above location"-items gets the batch number information assigned on work lines and the *Replenishment* location directives *Put* work type is not used.
 
 ## Create a fixed picking location
 1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse > Fixed locations**. This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.
@@ -76,6 +77,9 @@ This procedure shows you how to set up a new replenishment process which uses th
 12. In the **Work class ID** field, enter or select a value.
 13. Click **Save**.
 14. Close the page.
+> [!NOTE]
+> For the the *Minimum or maximum* **Replenishment type** the locations to replenish gets defined as part of the **Replenishment templates** setup and not by the **Location directives** *Put* **Work type**.
+ 
 
 ## Create a new replenishment template
 1. Go to **Warehouse management > Setup > Replenishment > Replenishment templates**. The replenishment template is used to define the items and quantities, and the location to replenish.
