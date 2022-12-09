@@ -39,7 +39,7 @@ The **Export to Data Lake** feature lets you copy data from your finance and ope
 ## Enable the Export to Data Lake feature
 Before you can use this feature, see [Install the Export to Azure Data Lake Add-in](configure-export-data-lake.md).
 
-## Select data
+## Select data 
 
 > [!NOTE]
 > If the feature, **Export to Azure Data Lake** isn't available in the **Feature management** module in your environment, sign in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace. For example, `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace`.
