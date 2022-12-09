@@ -69,7 +69,6 @@ To run the year-end close successfully, the difference in the reporting currency
 
 •	If the main account is accounts payable or accounts receivable, the AR/AP settlement of those documents will generate the necessary gain/loss. That accounting entry must be included in the ledger settlement when settling the corresponding ledger transactions from the invoice, payments, credit notes, etc. 
 •	If the main account is any account other than accounts payable or account receivable, the gain/loss will have to be manually entered. When the gain/loss is posted, the level of detail for the accounting entry is determined by your organization. 
-
 • Identify the reporting currency gain/loss amount that must be posted. This must be done for each main account. 
 
 As described earlier, this can be done on the **Ledger settlement** page:
