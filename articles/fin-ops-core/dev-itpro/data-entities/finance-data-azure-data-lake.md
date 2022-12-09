@@ -109,11 +109,20 @@ The system does not export fields of type Memo, nVarchar(max), VarBinary, or Blo
 ### How to locate data in the lake
 Data exported using this feature is stored in a folder structure in the storage account you [configured via Life cycle services](configure-export-data-lake.md). Exact location of data within the folder structure depends on table metadata properties as described [here](azure-data-lake-enhanced-metadata.md). In the event these metadata properties change, the location of data within the folder structure may change. You can detect such changes and find the new path using the "Initialize Business event" as explained [here](azure-data-lake-generates-biz-events.md). While consuing data files in the lake is possible, you can access data using T-SQL by configuring Azure Synapse Analytics serverless SQL pools using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). 
 
-### No data has been exported, I can;t find the data file 
+### No data has been exported, I can't find the data file 
 If the table you have chosen has no data, the system will shor that the table is in "Running" state. However, the system will not create a CSV file in the lake (you may see other system files in the folder). When data is added in Finance and Operations, the CSV file will be created with the data. 
 
 ### Some tables have been "Initialized" without user action
 When you add a table, on completion of the Initial copy, the table will remain in "Running" state and the system will update data changes in the lake. On rare occasions (ex. there was a database restore or an issue in the underlying environment), the system may re-initialize data in the lake to recover from issues. If you are copying change data into a downstream system, you may need to react to re-initialize events. You can use Business events to monitor such conditions as explained [here](azure-data-lake-generates-biz-events.md) 
+
+### When I read data files using Synapse serverless, I notice an intermittent error "Unexpected end-of-input within record at..."
+In case of tables whose records are frequently updated or deleted in Finance and Operations, you may notice a read/ write contention on CSV files with the above error. This happens when Synapse serverless SQL service queries the same CSV file as it is being updated. In many instances, re-trying the query may resolve this issue. 
+
+### How can I enable "near real time" or "Enhanced metadata" feature
+In order to enable new features, you need to re-install the add-in using the process mentioned in [Configure export to Azure Data Lake](configure-export-data-lake.md). When you uninstall the add-in, existing data in the lake will remain. When you re-install the add-in, you need to add the tables using the "Export to Data lake" form. System will re-initialize the tables however the folder path will not change and your downstream consumption may not be impacted.  
+
+### How can I rotate/ renew application secrets in the Key vault provided for Export to Data lake add-in
+We advise you to renew/ extend application secrets in periodically. You can create a new client secret and replace the secrets in the key vault. 
 
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
