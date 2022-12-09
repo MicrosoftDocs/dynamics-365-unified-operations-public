@@ -109,6 +109,9 @@ The system does not export fields of type Memo, nVarchar(max), VarBinary, or Blo
 ### How to locate data in the lake
 Data exported using this feature is stored in a folder structure in the storage account you [configured via Life cycle services](configure-export-data-lake.md). Exact location of data within the folder structure depends on table metadata properties as described [here](azure-data-lake-enhanced-metadata.md). While consuing data files in the lake is possible, you can access data using T-SQL by configuring Azure Synapse Analytics serverless SQL pools using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). 
 
+### Some tables have been "Initialized" without user action
+When you add a table, on completion of the Initial copy, the table will remain in "Running" state and the system will update data changes in the lake. On rare occasions (ex. there was a database restore or an issue in the underlying environment), the system may re-initialize data in the lake to recover from issues. If you are copying change data into a downstream system, you may need to react to re-initialize events. You can use Business events to monitor such conditions as explained [here](azure-data-lake-generates-biz-events.md) 
+
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
 
