@@ -74,6 +74,8 @@ For information about how to print these documents, see [Petty cash for Eastern 
 | KO-4                | Cash book KO-4                               | KO-4           | Кассовая книга                                               | КО-4           | Excel     | No               |
 | CashDueAnnouncement | Cash contribution to the bank - form 0402001 | 402001         | Объявление на взнос наличными                                | 402001         | Excel     | No               |
 | CashCountStatement  | Cash inventory act INV-15                    | INV-15         | Акт инвентаризации наличных денежных средств                 | ИНВ-15         | Excel     | No               |
+|CashCountStatementSupplement|Supplement for Cash inventory act INV-15|               | Приложение к Акту инвентаризации наличных денежных средств   |                 | Excel     | No               |
+|RetailCashCollection | Cash collection reports                      |                | Отчеты по инкассированию                                     |                 | Excel     | No               |
 
 ### Bank
 
@@ -84,6 +86,7 @@ For information about how to print these documents, see [Set up and process paym
 | PaymentOrder        | Payment order - form 0401060 | 401060         |                             | 401060         | Excel     | No               |
 | CurrencyTransfer    | Currency sale order          |                | Поручение на продажу валюты |                | Word      | No               |
 | CurrencyTransfer    | Currency purchase order      |                | Поручение по покупку валюты |                | Word      | No               |
+| InvoiceForPayment   | Invoice For Payment          |                | Счет на оплату              |                | Excel     | Yes               |
 
 ### Fixed assets
 
@@ -173,6 +176,11 @@ For information about how to print these documents, see [Local reports and prima
 | MH-3                | Return report from storage MH-3          | MH-3           | Акт о возврате товарно-материальных ценностей, сданных на хранение                                   | МХ-3           | Excel     | Yes              |
 | INV-5               | Counting list INV-5                      | INV-5          | Инвентаризационная опись товарно-материальных ценностей, принятых на ответственное хранение          | ИНВ-5          | Excel     | No               |
 | INV-6               | Act of inventory holdings en route INV-6 | INV-6          | Акт инвентаризации товарно-материальных ценностей находящихся в пути                                 | ИНВ-6          | Excel     | No               |
+| CorrFacture         | Correcting facture                       |                | Корректирующий счет-фактура                                                                         |                | Excel     | No               |
+|FactureAccountingJournal| Facture Accounting Journal               |      | Журнал учета счетов-фактур                                                                           |                | Excel     | No               |
+|ActAdjust             | Act of adjustment                 |          | Акт сверки взаиморасчетов                                                                             |                | Excel     | No               |
+|PurchBook             | Purchase book                |          | Книга покупок                                                                            |                | Excel     | No               |
+|SalesBook             | Sales book                |          | Книга продаж                                                                            |                | Excel     | No               |
 
 ### General ledger
 
@@ -184,6 +192,8 @@ For information about how to print these documents, see [Account activity report
 | AccountReview                 | Review of account                  | Анализ счета                           | Excel     | No               |
 | JournalOrder                  | Journal order/account activity     | Журнал ордер/ведомость                 | Excel     | No               |
 | AccountActivityGeneralLedger  | General ledger                     | Главная книга                          | Excel     | No               |
+| FactureAccountingJournal      | Facture Accounting Journal         | Журнал учета счетов-фактур             | Excel     | No               |
+| RTax25RegTrans                | Register lines                     | Строки регистра                        | Excel     | No               |
 
 ### Inventory reports
 
