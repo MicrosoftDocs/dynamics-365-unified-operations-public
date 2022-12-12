@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 This article describes features that are new, changed, or coming soon in Microsoft Dynamics 365 Human Resources.
 
-# Dynamics 365 Human Resources (stand-alone) scheduled downtime for service maintenance  
+## Dynamics 365 Human Resources (stand-alone) scheduled downtime for service maintenance  
  
 Dynamics 365 Human Resources (stand-alone) will be scheduled for service maintenance between December 16, 2022 and December 23, 2022. The service maintenance is 
 generally performed during business downtime for the customer's respective region.  Customers may notice a downtime of approximately 15 minutes, during this period. 
