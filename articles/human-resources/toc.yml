@@ -32,6 +32,8 @@
           href: ./get-started/whats-new-changed-10.0.28.md
         - name: What's new in Dynamics 365 Human Resources (stand-alone)
           items: 
+          - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
+            href: hr-whats-new-2022-12-12.md         
           - name: What's new in Dynamics 365 Human Resources (stand-alone) archives 2021
             href: hr-admin-whats-new.md    
           - name: November 29, 2021
