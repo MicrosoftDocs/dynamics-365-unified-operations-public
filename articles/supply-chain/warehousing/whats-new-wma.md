@@ -24,12 +24,12 @@ This article lists new features, fixes, improvements, and known issues for each 
 This version introduces the following new features, fixes, and improvements:
 - Increased stability. 
 - The fields of the **Custom** page are no longer sorted automatically based on their priority and sub-priority settings.  
-- The app now uses the priority and sub-priority settings for each field to identify the primary field for a page, which is then shown in the step header. 
+- The app now uses the priority and sub-priority settings for each field to identify the primary field for a page. The primary field is shown in the step header. 
 - Fixed an issue where the soft keyboard wouldn't hide on Android.
-- Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the _movement_ flow. 
+- Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the *movement* flow. 
 - Fixed an issue where the read-only quantity spinner value wasn't centered correctly. 
 - Fixed an issue where web pages wouldn't open from the **About** page. 
-- The _Auto_ color theme now takes its default appearance (light or dark) based on the global theme set in the mobile device's operating system. 
+- The *Auto* color theme now takes its default appearance (light or dark) based on the global theme set in the mobile device's operating system.
 
 ## Version 2.0.37.0
 
