@@ -74,7 +74,7 @@ To run the year-end close successfully, the difference in the reporting currency
 As described earlier, this can be done on the **Ledger settlement** page:
 1. Filter to the date range for which you want to post the gain/loss. If you plan on posting a gain/loss per month, filter for each month. If you plan on posting a gain/loss per fiscal year, filter for the entire year. 
 2. Filter on the main account.
-3. Filter show only **Settled transactions**.
+3. Filter to show only **Settled transactions**.
 4. Add a **Total** on the **Amount in reporting currency** column.
 5. If you want to post the gain/loss at a more granular level, additional filtering can be done on the settlement ID, financial dimensions, etc. This total amount on the **Amount in reporting currency** column represents the amount for which to post the gain/loss. 
 6. Go to **General ledger – Journal entries – Reporting currency adjustment journals**. 
