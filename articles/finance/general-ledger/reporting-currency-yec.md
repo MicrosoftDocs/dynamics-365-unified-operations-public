@@ -44,7 +44,7 @@ To set up this example, the **Awareness** feature is enabled and main account 11
 ![Reporting currency](./media/reporting-currency-1.png)
 
 
-On the **Ledger settlement** page, (**General ledger > Periodic tasks > Ledger settlement**), the ledger transactions for main account 110180 are shown. Right-click on the grid and select **Insert columns**. Add the column **Amount in reporting currency** so you can see the transaction currency, accounting currency, and reporting currency amounts. 
+On the **Ledger settlement** page, the ledger transactions for main account 110180 are shown. Right-click on the grid and select **Insert columns**. Add the column **Amount in reporting currency** so you can see the transaction currency, accounting currency, and reporting currency amounts. 
 
 ![Amount in reporting currency](./media/Ledger-settlement2.png)
 
