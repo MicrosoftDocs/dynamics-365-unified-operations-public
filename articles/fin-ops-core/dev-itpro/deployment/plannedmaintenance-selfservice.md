@@ -88,7 +88,8 @@ Individual batch servers will not be available for up to 30 minutes. The followi
   - Check printing 
   - Statement posting
 
-For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to learn more about batch retry.
+
+For more information, see [Retry the batch job task regardless of the error type](../sysadmin/retryable-batch.md#Retry-the-batch-job-task-regardless-of-the-error-type) to learn more about batch retry.
 
 ### Priority-based scheduling
 - If priority-based scheduling is enabled, users will experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs will be served by the available AOS instances. Therefore, there will eventually be no complete downtime during the servicing window.
