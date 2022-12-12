@@ -68,6 +68,7 @@ The following table shows the data that can be transferred between instances and
 | Manual | Asset library | You will be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
 | Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager. They will have the same environment IDs but will be in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
 | Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project will be locked but you will still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
+| Manual | Project users | Remaining users must be added manually by project owners. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics will be generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated.  Upgrade analysis data can't be exported. |
 | Not supported | Globalization | Regulatory alerts are not transferrable between projects. |
