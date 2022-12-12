@@ -36,5 +36,5 @@ This article describes features that are new, changed, or coming soon in Microso
 ## Dynamics 365 Human Resources (stand-alone) scheduled downtime for service maintenance  
  
 Dynamics 365 Human Resources (stand-alone) will be scheduled for service maintenance between December 16, 2022 and December 23, 2022. The service maintenance is 
-generally performed during business downtime for the customer's respective region.  Customers may notice a downtime of approximately 15 minutes, during this period. 
+generally performed during business downtime for the customer's respective region. Customers may notice a downtime of approximately 15 minutes during this period. 
 For more information on scheduled downtime, see [The service level agreements (SLA) guide](https://microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services). 
