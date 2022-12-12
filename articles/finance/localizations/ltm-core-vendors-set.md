@@ -1,8 +1,8 @@
 ---
-title: Vendors set for Latin America 
+title: Vendor set configuration 
 description: This article provides information about the Vendors set configuration for Latin America. 
 author: Fhernandez0088
-ms.date: 11/10/2022
+ms.date: 12/12/2022
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
