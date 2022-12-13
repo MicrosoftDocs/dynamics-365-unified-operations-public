@@ -1,5 +1,6 @@
 ---
 title: Reset functionality
+description: This article describes the reset button functionality of dual-write.
 author: ramasri
 ms.date: 12/12/2022
 ms.topic: article
@@ -14,8 +15,8 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 
 # Reset functionality
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Currently when you either want to clear a configuration and start from scratch or you encounter a stuck state, you **Link** and **Unlink** the dual-write connection between finance and operations applications and Dataverse. During this process, you could accidentally choose an incorrect Dataverse organization that results in data corruption. To avoid this mistake, we're removing these buttons from dual-write administration UI inside finance and operations applications starting 10.0.30 PU54. All dual-write connections will take place from Lifecycle Services using the power platform integration setup. Instead we're introducing a new **Reset** button on the dual-write administration UI to help you to refresh the connection without changing the underlying Dataverse organization id.
 
@@ -29,17 +30,12 @@ Currently when you either want to clear a configuration and start from scratch o
 When you select the **Reset** button, the dual-write service does the following things at the backend:
 
 - Clears out all dual-write runtime configuration data from the following tables.
-
-Finance and operations tables:
-
-    - DualWriteProjectConfiguration
-    - DualWriteProjectFieldConfiguration
-    - BusinessEventsDefinition
-
-Dataverse table:
-
+  - Finance and operations tables:
+     - DualWriteProjectConfiguration
+     - DualWriteProjectFieldConfiguration
+     - BusinessEventsDefinition
+  - Dataverse table:
     - Dual Write Runtime Configurations
-
 - Removes all dual-write maps including their metadata like integration keys, filters, status etc., static data like legal entities configured for dual-write, default settings and transformations on map etc., and runtime data like activity logs, version history etc.
 - Restores the dual-write connection set between finance and operations applications and Dataverse from power platform integration setup.
 
