@@ -52,7 +52,7 @@ Based on your Finance and Operations environment type (production/sandbox/cloud 
 
 Clicking "Reset" button shows the following window with environment details displayed for your reference.
 
-![reset-image-1](reset-image-1.png)
+![reset-image-1](media/reset-image-1.png)
 
 - By choosing the "Acknowledge Reset" checkbox, you are acknowledging to reset the dual-write configuration setup.
 - By choosing the "Force Reset" checkbox, you are asking to stop any maps in running state before initiating reset. We have restored this checkbox and associated behavior from the "Unlink" functionality for familarity reasons.
@@ -62,13 +62,13 @@ Clicking "Reset" button shows the following window with environment details disp
 
 In case, before clicking the Reset button you forgot to stop the running dual-write maps and also inside the "Reset" screen you forgot to select the "Force Reset" checkbox, your reset action will fail with a "Failed" message as shown below:
 
-![reset-image-2](reset-image-2.png)
+![reset-image-2](media/reset-image-2.png)
 
 **Scenario #2:** The dataverse organization id used by dual-write is different from the one setup for power platform integration.
 
 Clicking "Reset" button shows the following window with **Current Dataverse Environment** and **Power Platform Linked Dataverse Environment** as shown below.
 
-![reset-image-3](reset-image-3.png)
+![reset-image-3](media/reset-image-3.png)
 
 The **Current Dataverse Environment** refers to the dataverse database associated with your dual-write connection. **Power Platform Link Dataverse Environment** refers to the dataverse database associated with your Finance and Operations environment's power platform integration setup. As you can see, both are different.
 
@@ -76,7 +76,8 @@ Similar to scenario #1, you should choose "Acknowledge Reset" and "Force Reset" 
 
 Since the dataverse databases are different, clicking the Next button will replace the **Current Dataverse Environment** with thedataverse database mentioned under **Power Platform Link Dataverse Environment.** If you'd like to continue dual-write with the dataverse database mentioned under **Current Dataverse Environment** and the environment type is production, then you should cancel the reset action by clicking the "Cancel" button. Raise a support case with Microsoft by referring to ICM 349669515 and we will help you with the replacement.
 
-> [!Note] Backend replacement through Microsoft support cases is facilitated only for Finance and Operations production environments. Not for other types of environments.
+> [!Note] 
+> Backend replacement through Microsoft support cases is facilitated only for Finance and Operations production environments. Not for other types of environments.
 
 Similar to scenario #1, clicking next will allow you to choose the legal entities to which you wish to reset your dual-write connection followed by Health check and Summary screens. In case one or more table maps are in running state and you forgot to stop them before reset and you also forgot to select "Force Reset" checkbox, then your reset action will fail with a "Failed" message.
 
@@ -84,7 +85,7 @@ Similar to scenario #1, clicking next will allow you to choose the legal entitie
 
 Clicking "Reset" button shows the following window with current environment details displayed for your reference.
 
-![reset-image-4](reset-image-4.png)
+![reset-image-4](media/reset-image-4.png)
 
 In this case, please go to [Power Platform Integration](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Fpower-platform%2Fenable-power-platform-integration%23connect-to-existing-dataverse&data=05%7C01%7Cramasri%40microsoft.com%7C2f8fe7106138411f6c0408daa369b317%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638001971624185428%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=8xwIg39VdzXXtcBzETMbH1%2F%2BzCBIkSUVyomsPLRbHtE%3D&reserved=0) and choose **Current Dataverse Environment** as the Power Platform Environment ID and Save changes. After completing it, you can re-initiate the reset action.
 
@@ -92,7 +93,7 @@ In this case, please go to [Power Platform Integration](https://nam06.safelinks.
 
 Clicking "Reset" button shows the following window with environment details displayed for your reference.
 
-![reset-image-5](reset-image-5.png)
+![reset-image-5](media/reset-image-5.png)
 
 The **Current Dataverse Environment** refers to the database associated with dual-write connection. Since there will not be any power platform integration setup, reset functionality will refresh the displayed dual-write connection set as-is. In case you wish to associate the finance and operations environment with a different dataverse organization, then you need to redeploy Finance and Operations environment.
 
