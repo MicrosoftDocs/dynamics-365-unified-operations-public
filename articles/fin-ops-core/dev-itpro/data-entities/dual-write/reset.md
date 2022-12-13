@@ -14,6 +14,9 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 
 # Reset functionality
 
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 Currently when you either want to clear a configuration and start from scratch or you encounter a stuck state, you **Link** and **Unlink** the dual-write connection between finance and operations applications and Dataverse. During this process, you could accidentally choose an incorrect Dataverse organization that results in data corruption. To avoid this mistake, we're removing these buttons from dual-write administration UI inside finance and operations applications starting 10.0.30 PU54. All dual-write connections will take place from Lifecycle Services using the power platform integration setup. Instead we're introducing a new **Reset** button on the dual-write administration UI to help you to refresh the connection without changing the underlying Dataverse organization id.
 
 ## Pre-requisites
