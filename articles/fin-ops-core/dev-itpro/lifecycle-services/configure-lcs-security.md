@@ -71,7 +71,7 @@ Only an administrator can manage users. Follow these steps.
 
 1.  Sign in to [LCS](https://lcs.dynamics.com/).
 2.  Select the project to add the user to.
-3.  Select the **Project users** tile, and then, on the **Project users** page, select the plus sign (**+**).
+3.  Select **Project users** on the hamburger menu or the **Project users** tile, and then, on the **Project users** page, select the plus sign (**+**).
 4.  Enter the user’s email address, select the correct security role, and then select **Invite**.
 
 > [!NOTE]
