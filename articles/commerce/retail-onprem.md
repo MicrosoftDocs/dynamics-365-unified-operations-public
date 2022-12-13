@@ -2,7 +2,7 @@
 title: Commerce capabilities that are available in on-premises deployments
 description: This article lists the capabilities available in on-premises deployments of Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 11/29/2022
+ms.date: 12/13/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
