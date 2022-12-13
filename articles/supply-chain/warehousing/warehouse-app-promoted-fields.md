@@ -4,7 +4,7 @@ description: This article describes how to promote and highlight specific inform
 author: Mirzaab
 ms.date: 08/09/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

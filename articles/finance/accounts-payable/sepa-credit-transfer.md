@@ -3,7 +3,7 @@
 
 title: SEPA credit transfer overview
 description: This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
-author: sunfzam
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: 

@@ -4,26 +4,16 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 09/14/2022
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -50,16 +40,11 @@ The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard paymen
 #### Microsoft Dynamics 365 supported versions
 The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 Finance version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
 
-#### Supported Adyen Firmware versions
+#### Supported Adyen firmware versions
+
 The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
 
 ---
-
-# [10.0.24](#tab/10-0-24)
-### Dynamics 365 Retail POS version 10.0.24
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_69p5 | adyen_v1_71p16 |
 
 # [10.0.25](#tab/10-0-25)
 ### Dynamics 365 Retail POS version 10.0.25
@@ -91,6 +76,12 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_71p16 | adyen_v1_78p6 |
 
+# [10.0.30](#tab/10-0-30)
+### Dynamics 365 Retail POS version 10.0.30
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_71p16 | adyen_v1_78p6 |
+
 ---
 
 > [!NOTE]
@@ -102,6 +93,11 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
+
+The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
 
 ### Supported payment instruments
 
@@ -282,7 +278,7 @@ The following countries are supported by Adyen for card not present transactions
 | Taiwan |
 | Tanzania |
 | Thailand |
-| Turkey |
+| Türkiye |
 | United Arab Emirates (UAE) |
 | United Kingdom |
 | United States of America including Puerto Rico  |

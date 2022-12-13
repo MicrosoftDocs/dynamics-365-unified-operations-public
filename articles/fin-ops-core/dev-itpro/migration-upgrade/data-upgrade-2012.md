@@ -50,6 +50,10 @@ We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.
 
 Ensure that you've completed the pre-upgrade checklist in AX 2012. For more information, see [Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+
+
 ### Back up your AX 2012 database
 
 To back up your AX 2012 database, use the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.

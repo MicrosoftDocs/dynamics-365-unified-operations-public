@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.29. 
 author: kamaybac
 ms.date: 08/12/2022
@@ -13,12 +13,11 @@ ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
 
 - **Preview of release:** August 2022
 - **General availability of release (self-update):** September 2022
@@ -30,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Allocate and reserve WMS items in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Coming soon | Enabled by default |
+| Inventory and logistics | [Allocate and reserve WMS items in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [Inventory Visibility support for WMS items](../inventory/inventory-visibility-whs-support.md) | Enabled by default |
 | Inventory and logistics | [Preload streamlined on-hand inventory lists](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Use the Inventory Visibility app](../inventory/inventory-visibility-power-platform.md) | Enabled by service configuration |
 | Make-to-order supply automation | [Make-to-order supply automation](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Feature management:<br>*Make-to-order supply automation* |
 | Planning | [View and apply detailed insights for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |

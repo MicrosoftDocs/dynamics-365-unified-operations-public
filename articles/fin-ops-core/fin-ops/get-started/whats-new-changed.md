@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in finance and operations apps home page
-description: This page points you to topics that can help you learn about the new features in the latest finance and operations applications.
-author: sericks007
-ms.date: 02/14/2020
+description: This page points you to article that can help you learn about the new features in the latest finance and operations applications.
+author: twheeloc
+ms.date: 11/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: sericks
+ms.author: twheeloc
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
 ms.custom: 27141,  ""intro-internal

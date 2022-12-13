@@ -2,7 +2,7 @@
 title: Inventory Visibility public APIs
 description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -17,7 +17,6 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-
 This article describes the public APIs that are provided by Inventory Visibility.
 
 The public REST API of the Inventory Visibility Add-in presents several specific endpoints for integration. It supports four main interaction types:
@@ -31,37 +30,38 @@ The following table lists the APIs that are currently available:
 
 | Path | Method | Description |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Post | [Create one on-hand change event](#create-one-onhand-change-event) |
+| /api/environment/{environmentId}/onhand | Post | [Create one on-hand change event](#create-one-onhand-change-event)|
 | /api/environment/{environmentId}/onhand/bulk | Post | [Create multiple change events](#create-multiple-onhand-change-events) |
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
-| /api/environment/{environmentId}/onhand/reserve | Post | [Create one reservation event](#create-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple reservation events](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one reservation event](#reverse-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple reservation events](#reverse-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/reserve | Post | [Create one soft reservation event](#create-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) (recommended) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
-| /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
+| /api/environment/{environmentId}/allocation<wbr>/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services (LCS).
+> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
 > 
 > The bulk API can return a maximum of 512 records for each request.
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-## Find the endpoint according to your Lifecycle Services environment
+## <a name = "endpoint-lcs"></a>Find the endpoint according to your Lifecycle Services environment
 
 The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. There isn't currently a central endpoint that can automatically redirect your request to the corresponding geography and region. Therefore, you must compose the pieces of information into a URL by using the following pattern:
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
-The region short name can be found in the Microsoft Dynamics Lifecycle Services (LCS) environment. The following table lists the regions that are currently available.
+The region short name can be found in the Lifecycle Services environment. The following table lists the regions that are currently available.
 
 | Azure region        | Region short name |
 | ------------------- | ----------------- |
@@ -77,16 +77,26 @@ The region short name can be found in the Microsoft Dynamics Lifecycle Services 
 | West UK             | wuk               |
 | East Japan          | ejp               |
 | West Japan          | wjp               |
-| South Brazil        | sbr               |
-| South Central US    | scus              |
+| Central India       | cin               |
+| South India         | sin               |
+| Switzerland North   | nch               |
+| Switzerland West    | wch               |
+| France South        | sfr               |
+| East Asia           | eas               |
+| South East Asia     | seas              |
+| Uae North           | nae               |
+| Norway East         | eno               |
+| Norway West         | wno               |
+| South Africa West   | wza               |
+| South Africa North  | nza               |
 
-The island number is where your LCS environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
+The island number is where your Lifecycle Services environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
 
 Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
-The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an _Azure Active Directory (Azure AD) token_ by using your Azure AD application. You must then use the Azure AD token to get the _access token_ from the security service.
+The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an *Azure Active Directory (Azure AD) token* by using your Azure AD application. You must then use the Azure AD token to get the *access token* from the security service.
 
 Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -95,63 +105,63 @@ To get a security service token, follow these steps.
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
 1. Fetch an Azure AD token (`aadToken`) by submitting an HTTP request that has the following properties:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
-   - **Method:** `GET`
-   - **Body content (form data):**
+    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
+    - **Method:** `GET`
+    - **Body content (form data):**
 
-     | Key           | Value                                            |
-     | ------------- | -------------------------------------------------|
-     | client_id     | ${aadAppId}                                      |
-     | client_secret | ${aadAppSecret}                                  |
-     | grant_type    | client_credentials                               |
-     | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
+        | Key           | Value                                            |
+        | ------------- | -------------------------------------------------|
+        | client_id     | ${aadAppId}                                      |
+        | client_secret | ${aadAppSecret}                                  |
+        | grant_type    | client_credentials                               |
+        | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
-   You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
+    You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
 
-   ```json
-   {
-       "token_type": "Bearer",
-       "expires_in": "3599",
-       "ext_expires_in": "3599",
-       "access_token": "eyJ0eX...8WQ"
-   }
-   ```
+    ```json
+    {
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "access_token": "eyJ0eX...8WQ"
+    }
+    ```
 
 1. Formulate a JavaScript Object Notation (JSON) request that resembles the following example.
 
-   ```json
-   {
-       "grant_type": "client_credentials",
-       "client_assertion_type": "aad_app",
-       "client_assertion": "{Your_AADToken}",
-       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "{$LCS_environment_id}",
-       "context_type": "finops-env"
-   }
-   ```
+    ```json
+    {
+        "grant_type": "client_credentials",
+        "client_assertion_type": "aad_app",
+        "client_assertion": "{Your_AADToken}",
+        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "{$LCS_environment_id}",
+        "context_type": "finops-env"
+    }
+    ```
 
-   Note the following points:
+    Note the following points:
 
-   - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
-   - The `context` value must be the LCS environment ID where you want to deploy the add-in.
-   - Set all the other values as shown in the example.
+    - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
+    - The `context` value must be the Lifecycle Services environment ID where you want to deploy the add-in.
+    - Set all the other values as shown in the example.
 
 1. Fetch an access token (`access_token`) by submitting an HTTP request that has the following properties:
 
-   - **URL:** `https://securityservice.operations365.dynamics.com/token`
-   - **Method:** `POST`
-   - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
-   - **Body content:** Include the JSON request that you created in the previous step.
+    - **URL:** `https://securityservice.operations365.dynamics.com/token`
+    - **Method:** `POST`
+    - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
+    - **Body content:** Include the JSON request that you created in the previous step.
 
-   You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
+    You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
 
-   ```json
-   {
-       "access_token": "{Returned_Token}",
-       "token_type": "bearer",
-       "expires_in": 3600
-   }
-   ```
+    ```json
+    {
+        "access_token": "{Returned_Token}",
+        "token_type": "bearer",
+        "expires_in": 3600
+    }
+    ```
 
 > [!IMPORTANT]
 > When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
@@ -172,10 +182,12 @@ The following table summarizes the meaning of each field in the JSON body.
 | `productId` | The identifier of the product. |
 | `quantities` | The quantity that the on-hand quantity must be changed by. For example, if 10 new books are added to a shelf, this value will be `quantities:{ shelf:{ received: 10 }}`. If three books are removed from the shelf or sold, this value will be `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | The data source of the dimensions that are used in the posting change event and query. If you specify the data source, you can use the custom dimensions from the specified data source. Inventory Visibility can use the dimension configuration to map the custom dimensions to the general default dimensions. If no `dimensionDataSource` value is specified, you can use only the general [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension) in your queries. |
-| `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, _Source_) to indicate whether the event is coming from Supply Chain Management or an external system. |
+| `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
 > The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
+
+The following subsections provide examples that show how to use these APIs.
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -208,17 +220,17 @@ Body:
     }
 ```
 
-The following example shows sample body content. In this sample, you post a change event for the *T-shirt* product. This event is from the point of sale (POS) system, and the customer has returned a red T-shirt back to your store. This event will increase the quantity of the *T-shirt* product by 1.
+The following example shows sample body content. In this example, the company has a point-of-sale (POS) system that processes in-store transactions and therefore inventory changes. The customer has returned a red T-shirt to your store. To reflect the change, you post a single change event for the *T-shirt* product. This event will increase the quantity of the *T-shirt* product by 1.
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
+    "id": "Test201",
+    "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "posMachineId": "0001",
         "colorId": "red"
     },
@@ -234,12 +246,12 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "id": "Test202",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "colorId": "red"
     },
     "quantities": {
@@ -252,7 +264,14 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create multiple records at the same time. The only differences between this API and the [single-event API](#create-one-onhand-change-event) are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API  can support up to 512 change events at a time.
+This API can create change events, just as the [single-event API](#create-one-onhand-change-event) can. The only difference is that this API can create multiple records at the same time. Therefore, the `Path` and `Body` values differ. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change bulk API can support up to 512 change events at a time. 
+
+For example, a retail store POS machine processed the following two transactions:
+
+- One return order of one red T-shirt
+- One sales transaction of three black T-shirts
+
+In this case, you can include both inventory updates in one API call.
 
 ```txt
 Path:
@@ -289,26 +308,27 @@ The following example shows sample body content.
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_1",
+        "id": "Test203",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "posSite1",
-            "posLocationId": "posLocation1",
+            "SiteId": "Site1",
+            "LocationId": "11",
             "posMachineId": "0001"
+            "colorId": "red"
         },
         "quantities": {
             "pos": { "inbound": 1 }
         }
     },
     {
-        "id": "654321",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_2",
+        "id": "Test204",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensions": {
-            "siteId": "iv_postman_site",
-            "locationId": "iv_postman_location",
+            "siteId": "1",
+            "locationId": "11",
             "colorId": "black"
         },
         "quantities": {
@@ -320,7 +340,7 @@ The following example shows sample body content.
 
 ## <a name="set-onhand-quantities"></a>Set/override on-hand quantities
 
-The _Set on-hand_ API overrides the current data for the specified product.
+The *Set on-hand* API overrides the current data for the specified product. This functionality is typically used to do inventory counting updates. For example, during its daily inventory counting, a store might find that the actual on-hand inventory for a red T-shirt is 100. Therefore, the POS inbound quantity must be updated to 100, regardless of what the previous quantity was. You can use this API to override the existing value.
 
 ```txt
 Path:
@@ -358,18 +378,19 @@ The following example shows sample body content. The behavior of this API differ
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
+        "id": "Test204",
+        "organizationId": "usmf",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "iv_postman_site",
-            "posLocationId": "iv_postman_location",
+            "SiteId": "1",
+            "LocationId": "11",
             "posMachineId": "0001"
+            "colorId": "red"
         },
         "quantities": {
             "pos": {
-                "inbound": 1
+                "inbound": 100
             }
         }
     }
@@ -378,7 +399,7 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
+To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information (including a dataflow and sample scenario), see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
@@ -386,7 +407,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. For more information, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
+If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. For more information, see [Unreserve one reservation event](#reverse-reservation-events) section.
 
 ```txt
 Path:
@@ -587,7 +608,7 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. The API currently supports querying up to 5000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -631,16 +652,16 @@ The `returnNegative` parameter controls whether the results contain negative ent
 > [!NOTE]
 > If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-The following example shows sample body content.
+The following example shows sample body content. It shows that you can query the on-hand inventory from multiple locations (warehouses).
 
 ```json
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["SCM_IV"],
-        "productId": ["iv_postman_product"],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "organizationId": ["usmf"],
+        "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "locationId": ["11","12","13"],
         "colorId": ["red"]
     },
     "groupByValues": ["colorId", "sizeId"],
@@ -653,10 +674,10 @@ The following example shows how to query all products in a specific site and loc
 ```json
 {
     "filters": {
-        "organizationId": ["SCM_IV"],
+        "organizationId": ["usmf"],
         "productId": [],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "siteId": ["1"],
+        "locationId": ["11"],
     },
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
@@ -685,6 +706,96 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+## <a name="exact-query-with-post-method"></a>On-hand exact query
+
+On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
+
+- Site 1, which is mapped to location A
+- Site 2, which is mapped to location B
+
+For a regular on-hand query, if you specify `"siteId": ["1","2"]` and `"locationId": ["A","B"]`, Inventory Visibility will automatically query the result for the following sites and locations:
+
+- Site 1, location A
+- Site 1, location B
+- Site 2, location A
+- Site 2, location B
+
+As you see, the regular on-hand query doesn't recognize that location A exists only in site 1, and location B exists only in site 2. Therefore, it makes redundant queries. To accommodate this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in the query body. In this case, you'll query and receive results for only site 1, location A and site 2, location B.
+
+### <a name="exact-query-with-post-method"></a>Exact query by using the post method
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+In the body part of this request, `dimensionDataSource` is an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
+
+- `organizationId` should contain only one value, but it's still an array.
+- `productId` could contain one or more values. If it's an empty array, all products will be returned.
+- In the `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
+- `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
+
+`dimensions` in `filters` will be automatically added to `groupByValues`.
+
+The `returnNegative` parameter controls whether the results contain negative entries.
+
+The following example shows sample body content.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+The following example shows how to query all products in multiple sites and locations.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## Available to promise

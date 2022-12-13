@@ -3,8 +3,8 @@
 
 title: Balance sheet financial reports
 description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,9 +38,9 @@ This article describes the default reports for balance sheets. It also describes
 There are two default balance sheet reports. On one report, the sections are stacked. On the other report, the sections are side by side.
 
 | Default report                       | What it does                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------|
-| Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                                                                 |
-| Side by Side Balance Sheet – Default | Provides a view of the organization's financial position for the year. Assets and liability and shareholder’s equity are side by side. |
+|--------------------------------------|--------------------------------------------------------------------------------------|
+| Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                    |
+| Balance Sheet and Income Statement Side by Side – Default | Provides a view of the organization's financial position for the year side by side. |
 
 ## Building blocks
 The balance sheet financial reports use the following building blocks.
@@ -48,7 +48,7 @@ The balance sheet financial reports use the following building blocks.
 | Default report                       | Row definition                       | Column definition             |
 |--------------------------------------|--------------------------------------|-------------------------------|
 | Balance Sheet - Default              | Balance Sheet - Default              | YTD and Variance - Default    |
-| Side by Side Balance Sheet – Default | Side by Side Balance Sheet – Default | Year to Date Column - Default |
+| Balance Sheet and Income Statement Side by Side – Default | Balance Sheet and Income Statement Side by Side – Default | Year to Date Column - Default |
 
 ### Row definition
 

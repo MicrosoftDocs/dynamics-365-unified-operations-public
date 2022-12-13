@@ -1,45 +1,32 @@
---- 
-# required metadata 
- 
+---
 title: Define configuration groups
 description: This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. 
 author: t-benebo
-ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ConfigGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.reviewer: kamaybac
+ms.search.form: ConfigGroup   
+ms.topic: how-to
+ms.date: 11/10/2022
+ms.custom: bap-template
 ---
+
 # Define configuration groups
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.
+This procedure shows how to define product configuration groups.
 
-1. Go to Product information management > Setup > Bills of materials and formulas > Configuration groups.
-2. Click New.
-3. In the Configuration group field, type a value.
+This is the fourth procedure [of an eight-procedure sequence](../dimension-based-product-configuration.md#sequence) that explains how to build combinations for dimension-based configuration. You should do all eight procedures, in order, because each new procedure builds on data created by the previous procedures. To work through this sequence by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed, and you must select the *USMF* legal entity before you begin.
+
+1. Go to **Product information management \> Setup \> Bills of materials and formulas \> Configuration groups**.
+2. Select **New**.
+3. In the **Configuration group** field, type a value.
     * Type a name for the configuration group that will be used for the bill of material lines.  
-4. In the Name field, type a value.
-5. Click New.
-6. In the Configuration group field, type a value.
+4. In the **Name** field, type a value.
+5. Select **New**.
+6. In the **Configuration group** field, type a value.
     * Type a name for the configuration group that will be used for the bill of material lines.  
-7. In the Name field, type a value.
+7. In the **Name** field, type a value.
 8. Close the page.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

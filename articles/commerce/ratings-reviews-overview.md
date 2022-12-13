@@ -2,18 +2,14 @@
 title: Ratings and reviews overview
 description: This article covers ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: 
-ms.search.industry: 
+
 ---
 
 # Ratings and reviews overview
@@ -22,7 +18,7 @@ ms.search.industry:
 
 This article covers ratings and reviews in Microsoft Dynamics 365 Commerce.
 
-Ratings and reviews are crucial for e-Commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-Commerce website.
+Ratings and reviews are crucial for e-commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-commerce website.
 
 Average rating information is shown in point of sale (POS) and call center channels. Therefore, sales associates can use it to help users make decisions. Ratings and reviews can also serve as a feedback mechanism that retailers can use to improve the quality of a product and therefore increase sales.
 
@@ -37,6 +33,11 @@ The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive S
 The ratings and reviews solution provides widgets that show rating summaries in product lists, in search results, on product details page, and in other places. The widgets show complete review lists, and they also provide sorting and filtering options.
 
 The ratings and reviews solution also provides a business intelligence (BI) template that includes a set of metrics to provide insights into ratings and reviews. Ratings and reviews data can be exported for further analysis.
+
+The following video provides an overview of ratings and reviews capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
 
 ## Additional resources
 

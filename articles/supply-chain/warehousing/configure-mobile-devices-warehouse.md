@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Set up mobile devices for warehouse work
 description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: Mirzaab
-ms.date: 03/23/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 29941
-ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
+ms.topic: how-to
+ms.date: 10/14/2022
+ms.custom: bap-template
 ---
 
 # Set up mobile devices for warehouse work
@@ -40,10 +23,10 @@ This article describes how to configure the menu items that warehouse workers us
 - Create work that will be performed through another process. For example, receiving an item for a purchase order can create put-away work for another worker.
 - Perform work that was created by another process (existing work), such as put-away work that was created when an item was received for a purchase order.
 
-To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**. 
+To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**.
 
 > [!NOTE]
-> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this article.
+> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the "Additional menu item options" section later in this article.
 
 ## Configure menu items for activities and inquiries
 
@@ -63,12 +46,17 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Reprint label | Reprint a license plate label. |
 | License plate build | Create a parent license plate by combining multiple license plates in the same location. This option is useful if you move multiple license plates at the same time. After the parent license plate is moved, you must perform a license plate break before you can pick items from each license plate. <p></p>**Tip:** To move a parent license plate, you must use a mobile device that is configured to create work for movements. |
 | License plate break | Break up a license plate build so that you can pick items from the license plates that were in the build. |
-| Driver check in | If you’re using Transportation management, register the arrival of a driver by scanning the outbound load ID, appointment ID, or shipment ID. For this option, a load must be assigned to the appointment, and the status of the load must be **Loaded**. |
+| Driver check in | If you're using Transportation management, register the arrival of a driver by scanning the outbound load ID, appointment ID, or shipment ID. For this option, a load must be assigned to the appointment, and the status of the load must be **Loaded**. |
 | Driver check out | Register that a driver has completed their appointment. |
 | Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
-| Create transfer order from license plates | Allows warehouse workers create and process transfer orders directly from the Warehouse Management mobile app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)
+| Create transfer order from license plates | Allow warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. A worker starts by selecting the destination warehouse. The worker can then scan one or more license plates by using the app. After the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines, based on the on-hand inventory that is registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md). |
+| Data inquiry | Enable the creation of warehouse app menu items that can be used to look up data from the mobile device as an inquiry list. For more information, see [Warehouse app data inquiry](warehouse-app-data-inquiry.md). |
+| Pack inventory into containers | Enable support for warehouse workers as they pack inventory items into containers. A worker starts by scanning a shipment to identify the inventory items that must be packed. The worker then identifies the destination shipping container by entering its ID or scanning its bar code. Finally, when the container is fully packed, the worker registers it as closed. This step makes the container ready for further processing by Microsoft Dynamics 365 Supply Chain Management. For more information, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
+| Container creation | Enable the container creation process. This process is typically part of the process of [packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
+| Container closing | Enable the container closing process. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
+| Print container label | Enable container label printing. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). For more information, see [Print container labels](print-container-labels.md). |
 
 ## Configure menu items to create work for another worker or process
 
@@ -272,7 +260,7 @@ This option is useful when, for example, multiple pallets are staged for a load.
 </table>
 
 ## Additional menu item options
-Additional menu items options are available on the **Mobile device menu items** page. The options vary, depending on the process that you’re configuring the menu item for. 
+Additional menu items options are available on the **Mobile device menu items** page. The options vary, depending on the process that you're configuring the menu item for. 
 
 The following table describes these options.
 
@@ -294,7 +282,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Anchoring</td>
-<td>Select this option to let workers specify a location that overrides the suggested staging or loading location. All the remaining put-away work is directed to the new location. This option is useful when, for example, a worker who must put items for order 1 in a staging location by Dock 1 can’t, because a previous load hasn’t cleared the location. Instead of waiting for the Dock 1 staging location to become available, the worker can decide to use the staging location for Dock 2. In this case, the worker overrides the suggested staging location. The put location for all remaining items for the work order is then updated to the Dock 2 staging location. If you select this option, you must set the <strong>Anchor by</strong> field.</td>
+<td>Select this option to let workers specify a location that overrides the suggested staging or loading location. All the remaining put-away work is directed to the new location. This option is useful when, for example, a worker who must put items for order 1 in a staging location by Dock 1 can't, because a previous load hasn't cleared the location. Instead of waiting for the Dock 1 staging location to become available, the worker can decide to use the staging location for Dock 2. In this case, the worker overrides the suggested staging location. The put location for all remaining items for the work order is then updated to the Dock 2 staging location. If you select this option, you must set the <strong>Anchor by</strong> field.</td>
 </tr>
 <tr class="odd">
 <td>Anchor by</td>
@@ -318,7 +306,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Directive code</td>
-<td>To use a specific location directive, select the directive code that is associated the location directive. This field is available when you create work and the work creation process is <strong>Movement by template</strong>.</td>
+<td>To use a specific location directive, select the directive code that is associated with the location directive. This field is available when you create work and the work creation process is <strong>Movement by template</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Disable cycle count thresholds</td>
@@ -366,7 +354,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Pick and pack</td>
-<td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for the sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</td>
+<td><p>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for a sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</p><p>Note that only work headers that contain a single initial pick work line can be combined by using this group picking concept.</p></td>
 </tr>
 <tr class="even">
 <td>Pick oldest batch</td>
@@ -383,7 +371,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>System grouping field</td>
-<td>Select the field that determine how Supply Chain Management will group picking work for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker will scan the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. You must also enter text in the <strong>System grouping label</strong> field to instruct the worker what to scan.</td>
+<td>Select the field that determines how Supply Chain Management will group picking work for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker will scan the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. You must also enter text in the <strong>System grouping label</strong> field to instruct the worker what to scan.</td>
 </tr>
 <tr class="odd">
 <td>System grouping label</td>
@@ -399,7 +387,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Validated User Directed Label</td>
-<td>Enter the text that will instruct the worker what to scan when picking work is grouped by a validated user-directed field. For example, if you’re using the <strong>LoadId</strong> field to group picking work for a load, you might enter <strong>Load ID</strong> in the field.</td>
+<td>Enter the text that will instruct the worker what to scan when picking work is grouped by a validated user-directed field. For example, if you're using the <strong>LoadId</strong> field to group picking work for a load, you might enter <strong>Load ID</strong> in the field.</td>
 </tr>
 <tr class="odd">
 <td>Work template code</td>
@@ -413,7 +401,7 @@ The following table describes these options.
 
 ## Require workers to confirm the product, location, or quantity when they pick items
 
-You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when they perform work in the warehouse. Work confirmations help ensure that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
+You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when they perform work in the warehouse. Work confirmations help ensure that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker's registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
 
 The following table describes the various work types that you can use work confirmations with.
 

@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 08/10/2022
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -133,44 +133,46 @@ The following table shows an example of a hardware layout. This example is used 
 
 | Machine purpose          | Service Fabric node type | Machine name    | IP address    |
 |--------------------------|--------------------------|-----------------|---------------|
-| Domain controller        |                          | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                    |                          | DAX7SQLAOADFS1  | 10.179.108.3  |
-| File server              |                          | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On cluster    |                          | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                          |                          | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                          |                          | DAX7SQLAOSQLA   | 10.179.108.9  |
-| Client                   |                          | SQLAOCLIENT1    | 10.179.108.11 |
-| AOS 1                    | AOSNodeType              | SQLAOSF1AOS1    | 10.179.108.12 |
-| AOS 2                    | AOSNodeType              | SQLAOSF1AOS2    | 10.179.108.13 |
-| AOS 3                    | AOSNodeType              | SQLAOSF1AOS3    | 10.179.108.14 |
-| Orchestrator 1           | OrchestratorType         | SQLAOSF1ORCH1   | 10.179.108.21 |
-| Orchestrator 2           | OrchestratorType         | SQLAOSF1ORCH2   | 10.179.108.22 |
-| Orchestrator 3           | OrchestratorType         | SQLAOSF1ORCH3   | 10.179.108.23 |
-| Management Reporter node | MRType                   | SQLAOSMR1       | 10.179.108.31 |
-| SSRS node 1              | ReportServerType         | SQLAOSFBI1      | 10.179.108.41 |
+| Domain controller        |                          | LBDEN01DC1      | 10.179.108.2  |
+| AD FS                    |                          | LBDEN01ADFS1    | 10.179.108.3  |
+| File server              |                          | LBDEN01FS01     | 10.179.108.4  |
+| SQL Always-On cluster    |                          | LBDEN01SQLA01   | 10.179.108.5  |
+|                          |                          | LBDEN01SQLA02   | 10.179.108.6  |
+|                          |                          | LBDEN01SQLA     | 10.179.108.9  |
+| AOS 1                    | AOSNodeType              | LBDEN01SFAOS1   | 10.179.108.11 |
+| AOS 2                    | AOSNodeType              | LBDEN01SFAOS2   | 10.179.108.12 |
+| AOS 3                    | AOSNodeType              | LBDEN01SFAOS3   | 10.179.108.13 |
+| Orchestrator 1           | OrchestratorType         | LBDEN01SFORCH1  | 10.179.108.21 |
+| Orchestrator 2           | OrchestratorType         | LBDEN01SFORCH2  | 10.179.108.22 |
+| Orchestrator 3           | OrchestratorType         | LBDEN01SFORCH3  | 10.179.108.23 |
+| Management Reporter node | MRType                   | LBDEN01SFMR1    | 10.179.108.31 |
+| SSRS node 1              | ReportServerType         | LBDEN01SFBI1    | 10.179.108.41 |
+| Client                   |                          | LBDEN01CLIENT1  | 10.179.108.51 |
+
 
 The following table shows an example of a hardware layout where batch execution and interactive sessions are run in dedicated nodes. For more information, see [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md).
 
 | Machine purpose          | Service Fabric node type   | Machine name    | IP address    |
 |--------------------------|----------------------------|-----------------|---------------|
-| Domain controller        |                            | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                    |                            | DAX7SQLAOADFS1  | 10.179.108.3  |
-| File server              |                            | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On cluster    |                            | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                          |                            | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                          |                            | DAX7SQLAOSQLA   | 10.179.108.9  |
-| Client                   |                            | SQLAOCLIENT1    | 10.179.108.11 |
-| AOS 1                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS1    | 10.179.108.12 |
-| AOS 2                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS2    | 10.179.108.13 |
-| AOS 3                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS3    | 10.179.108.14 |
-| AOS 4                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS4    | 10.179.108.15 |
-| AOS 5                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS5    | 10.179.108.16 |
-| AOS 6                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS6    | 10.179.108.17 |
-| Orchestrator 1           | OrchestratorType           | SQLAOSF1ORCH1   | 10.179.108.21 |
-| Orchestrator 2           | OrchestratorType           | SQLAOSF1ORCH2   | 10.179.108.22 |
-| Orchestrator 3           | OrchestratorType           | SQLAOSF1ORCH3   | 10.179.108.23 |
-| Management Reporter node | MRType                     | SQLAOSMR1       | 10.179.108.31 |
-| SSRS node 1              | ReportServerType           | SQLAOSFBI1      | 10.179.108.41 |
+| Domain controller        |                            | LBDEN01DC1      | 10.179.108.2  |
+| AD FS                    |                            | LBDEN01ADFS1    | 10.179.108.3  |
+| File server              |                            | LBDEN01FS01     | 10.179.108.4  |
+| SQL Always-On cluster    |                            | LBDEN01SQLA01   | 10.179.108.5  |
+|                          |                            | LBDEN01SQLA02   | 10.179.108.6  |
+|                          |                            | LBDEN01SQLA     | 10.179.108.9  |
+| AOS 1                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS1   | 10.179.108.11 |
+| AOS 2                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS2   | 10.179.108.12 |
+| AOS 3                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS3   | 10.179.108.13 |
+| AOS 4                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS4   | 10.179.108.14 |
+| AOS 5                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS5   | 10.179.108.15 |
+| AOS 6                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS6   | 10.179.108.16 |
+| Orchestrator 1           | OrchestratorType           | LBDEN01SFORCH1  | 10.179.108.21 |
+| Orchestrator 2           | OrchestratorType           | LBDEN01SFORCH2  | 10.179.108.22 |
+| Orchestrator 3           | OrchestratorType           | LBDEN01SFORCH3  | 10.179.108.23 |
+| Management Reporter node | MRType                     | LBDEN01SFMR1    | 10.179.108.31 |
+| SSRS node 1              | ReportServerType           | LBDEN01SFBI1    | 10.179.108.41 |
+| Client                   |                            | LBDEN01CLIENT1  | 10.179.108.51 |
+
 
 ## Overview of the setup process
 
@@ -212,29 +214,17 @@ Before you start the setup, the following prerequisites must be in place. The se
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD CS is installed and configured in your network.
 
-The following table shows the prerequisite software that is installed on the VMs by the infrastructure setup scripts that are downloaded from LCS.
+The following table shows the Microsoft Windows features that will be installed on the VMs by the infrastructure setup scripts that are downloaded from LCS. For details on additional prerequisite software that will need to be downloaded and installed see [Set up VMs](#setupvms).
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver 13 | [ODBC driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
-| AOS       | SNAC – ODBC driver 17.5.x | [ODBC driver 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | AOS       | Microsoft Internet Information Services (IIS) | **Windows features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
-| AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
-| AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
-| AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. |
-| AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | The .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | BI        | The .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| BI        | The .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
-| BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | MR        | The .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | MR        | The .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
-| MR        | The .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
-| MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
-| ORCH      | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | https://go.microsoft.com/fwlink/?linkid=2088631 |
 
 ### <a name="plandomain"></a>Step 1. Plan your domain name and DNS zones
 
@@ -268,7 +258,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
-| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine DAX7SQLAOSQLA, the certificate's Domain Name System (DNS) name is DAX7SQLAOSQLA.contoso.com.</p><ul><li>**Common name (CN):** DAX7SQLAOSQLA.contoso.com</li><li>**DNS name:** DAX7SQLAOSQLA.contoso.com</li></ul> |
+| SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine LBDEN01SQLA01, the certificate's Domain Name System (DNS) name is LBDEN01SQLA01.contoso.com.</p><ul><li>**Common name (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS name:** LBDEN01SQLA01.contoso.com</li></ul> |
 | Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that is presented to the client that connects to the cluster. | <p>For this certificate, you can also use the wildcard SSL certificate for your domain, such as \*.contoso.com. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
 | Service Fabric Client certificate            | Clients use this certificate to view and manage the Service Fabric cluster. | <ul><li>**CN:** client.d365ffo.onprem.contoso.com</li><li>**DNS name:** client.d365ffo.onprem.contoso.com</li></ul> |
 | Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and should not include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
@@ -389,7 +379,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> It's important that you put the **Infrastructure** folder in a file share. In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
+> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -453,9 +443,9 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
 You must set up the following SMB 3.0 file shares:
 
-- A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage).
-- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent).
-- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\DAX7SQLAOFILE1\\DiagnosticsStore).
+- A file share that stores user documents that are uploaded to AOS (for example, \\\\LBDEN01FS01\\aos-storage).
+- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\LBDEN01FS01\\agent).
+- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\LBDEN01FS01\\DiagnosticsStore).
 
     > [!WARNING]
     > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
@@ -472,7 +462,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
-2. Set up the **\\\\DAX7SQLAOFILE1\\aos-storage** file share:
+2. Set up the **\\\\LBDEN01FS01\\aos-storage** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
@@ -484,13 +474,13 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > [!NOTE]
     > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
 
-3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
+3. Set up the **\\\\LBDEN01FS01\\agent** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
 
-4. Optional: Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
+4. Optional: Set up the **\\\\LBDEN01FS01\\DiagnosticsStore** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
@@ -501,6 +491,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
+    > Avoid using named instances. If you use named instances, you might encounter issues, because the documentation and scripts assume that default instances are used.
+    >
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
@@ -567,6 +559,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
     > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
+    > - Do **not** use named instances when you set up the database engine or the SSRS service.
     > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the following steps. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 1. For each BI node, follow these steps:
@@ -601,26 +594,31 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
-    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    # .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "10.0.17"
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "<Version of D365 that you will deploy>"
     ```
+
+    > [!NOTE]
+    > The scripts will install/require different versions according to the version of D365 Finance + Operations that you deploy. Specify the application version that you will deploy so that the scripts correctly configure your environment for the version you are deploying. If you will be deploying application 10.0.17 with platform update 41, you should specify 10.0.17 for the D365FOVersion parameter.
 
 2. Download the following Microsoft Windows Installers (MSIs) into a file share that can be accessed by all VMs. For example, use the same file share where you put your **Infrastructure** folder.
 
-    | Component | Download link | Expected file name |
-    |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | [ODBC Driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | msodbcsql.msi |
-    | SNAC – ODBC driver 17.5.x | [ODBC Driver 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) | msodbcsql\_17.msi |
-    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) | SSMS-Setup-\*.exe |
-    | Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
-    | Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
-    | Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
-    | The .NET Framework version 4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> | ndp48-x86-x64-allos-enu.exe |
-    | The .NET Framework version 4.7.2 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net472-offline> | ndp472-x86-x64-allos-enu.exe |
+    | Component | Download link | Expected file name | Required since | Not required after |
+    |-----------|---------------|--------------------|----------------|--------------------|
+    | SNAC – ODBC driver 13 | [ODBC Driver 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | msodbcsql.msi | 10.0.0 | Not applicable |
+    | SNAC – ODBC driver 17.5.x | [ODBC Driver 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) | msodbcsql\_17\_5.msi | 10.0.17 | Not applicable |
+    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) | SSMS-Setup-ENU.exe | 10.0.0 | 10.0.30 |
+    | SQL Server Management Studio 18.x | [SSMS 18.x](/sql/ssms/release-notes-ssms##current-ssms-release) | SSMS-Setup-18-ENU.exe | 10.0.31 | Not applicable |
+    | Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | [Update for Visual C++ 2013 and Visual C++ Redistributable Package](https://support.microsoft.com/help/3179560) | vcredist\_x64.exe | 10.0.0 | Not applicable |
+    | Microsoft Visual C++ 2015-2019 Redistributable | [Combined Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1519.exe | 10.0.17 | 10.0.30 |
+    | Microsoft Visual C++ 2015-2022 Redistributable | [Combined Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1522.exe | 10.0.31 | Not applicable|
+    | Access Database Engine 2010 Redistributable | [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) | AccessDatabaseEngine\_x64.exe | 10.0.0 | Not applicable |
+    | The .NET Framework version 4.8 (CLR 4.0) | [.NET Framework 4.8 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net48-offline) | ndp48-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
+    | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
 
 > [!IMPORTANT]
-> - Make sure that the Management Studio setup is in the same language as the operating system of the target machine.
+> - Make sure that the Management Studio setup is in US English.
 > - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table. Rename any files that don't have the expected name. Otherwise, you will encounter errors when you run the Configure-PreReqs.ps1 script.
-> - When you download VC++ 17 Redistributables, the executable file is inside the zip file.
 
 Next, follow these steps for each VM, or use remoting from a single machine.
 
@@ -1010,7 +1008,7 @@ Finally, verify that you can access the AD FS OpenID configuration URL on a Serv
 
 If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD FS configuration, and it will indicate that your AD FS URL is trusted.
 
-You've now completed the setup of the infrastructure. The following sections describe how set up your connector and deploy your Finance + Operations environment in LCS.
+You've now completed the setup of the infrastructure. The following sections describe how to set up your connector and deploy your Finance + Operations environment in LCS.
 
 ### <a name="configureconnector"></a>Step 20. Configure a connector and install an on-premises local agent
 

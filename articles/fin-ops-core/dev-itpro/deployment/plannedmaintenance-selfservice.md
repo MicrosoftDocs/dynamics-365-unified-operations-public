@@ -28,7 +28,7 @@ Some of the common planned maintenance activities performed by Microsoft are:
 - Microsoft quality updates
 
 ## <a name="windows"></a>What are the planned maintenance windows?
-A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
+A planned maintenance window is typically during the dark hours during Saturday and Sunday of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
 |Geo | Maintenance window |
 |----|--------------------|
@@ -52,12 +52,10 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 | Month and year | Americas (5:00 AM–8:00 AM UTC) | EMEA (2:00 AM–5:00 AM UTC) | APAC (6:00 PM–9:00 PM UTC) |
 |----------|--------------------------|----------------------|----------------------|
-| May 2022 | May 22, 2022 | May 21, 2022 | May 21, 2022 |
-| June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
-| July 2022 | July 24, 2022 | July 23, 2022 | July 23, 2022 |
 | August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
 | September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
 | October 2022 | October 23, 2022 | October 22, 2022 | October 22, 2022 |
+| November 2022 | November 20, 2022 | November 19, 2022 | November 19, 2022 |
 
 ## What is the schedule for proactive quality updates?
 
@@ -72,7 +70,7 @@ Please see [proactive quality updates](../../fin-ops/get-started/quality-updates
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
 
 ## What is the experience during the near-zero-downtime maintenance window?
-Upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt [priority-based scheduling](../sysadmin/priority-based-batch-scheduling.md) of batch jobs. In this way, they can eliminate the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing.
+Upgrades will occur in batches. Therefore, most capacity is always online, and only a subset is upgraded at a time to help eliminate complete downtime. We recommend that customers adopt [priority-based scheduling](../sysadmin/priority-based-batch-scheduling.md) of batch jobs. In this way, they can eliminate the stickiness of batch jobs that are associated with a batch server and enable near-zero-downtime servicing for security patching and quality updates. By design, all Tier 2 and Tier 3 environments might experience approximately 30 minutes of downtime during the servicing or maintenance operations.
 
 ### Interactive usage
 Users who are connected to the environment might experience a brief disconnection of less than 60 seconds a few times during the servicing window. After recovery, users might experience one of the following outcomes:
@@ -90,7 +88,8 @@ Individual batch servers will not be available for up to 30 minutes. The followi
   - Check printing 
   - Statement posting
 
-For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to learn more about batch retry.
+
+For more information, see [Retry the batch job task regardless of the error type](../sysadmin/retryable-batch.md#Retry-the-batch-job-task-regardless-of-the-error-type) to learn more about batch retry.
 
 ### Priority-based scheduling
 - If priority-based scheduling is enabled, users will experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs will be served by the available AOS instances. Therefore, there will eventually be no complete downtime during the servicing window.

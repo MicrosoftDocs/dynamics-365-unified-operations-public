@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 For years, companies have used material requirements planning (MRP) as a system for calculating the materials and components that are required to manufacture a product. However, supply chains have now changed. Parts have longer lead times because they are increasingly sourced from overseas. Therefore, many companies have reported experiencing stockouts or overstocks, because they don't know how much inventory to stock. There is also more market fluctuation (sometimes inaccurately forecast), and customers are demanding products at a short lead time. Therefore, there are supply chain shortages all over the world. In addition, MRP tools often give planners thousands of actions to do. Therefore, it's hard to know what to focus on. Often, the solution to many of these issues is to switch to Demand Driven Material Requirements Planning (DDMRP).
 
@@ -38,6 +39,6 @@ DDMRP is typically used by manufacturers that have a multi-level bill of materia
 
 ## DDMRP in Dynamics 365 Supply Chain Management
 
-DDMRP is included with Microsoft Dynamics 365 Supply Chain Management and requires no additional license fees. In Supply Chain Management, DDMRP functionality has been added to the existing **Master planning** module. However, it requires that you use the Planning Optimization Add-in. 
+DDMRP is included with Microsoft Dynamics 365 Supply Chain Management and requires no additional license fees. In Supply Chain Management, DDMRP functionality has been added to the existing **Master planning** module. However, it requires that you use the Planning Optimization Add-in.
 
 DDMRP is integrated with the existing planning setups in Supply Chain Management and is used together with those setups to arrive at the correct planning configuration for your business. It's controlled by a new coverage code that is completely different from period, min/max, requirement, and so on. It isn't a new module, and it doesn't replace existing planning functionality. However, it does give you more functionality to use.

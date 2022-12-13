@@ -36,11 +36,17 @@ A convention is a collection of inventory accounting policies that can be associ
 
 Global Inventory Accounting is currently available in the following Azure geographic regions:
 
-- United States
-- Europe
-- United Kingdom
 - Australia
 - Canada
+- China
+- Europe
+- France
+- Norway
+- South Africa
+- Switzerland
+- UAE
+- United Kingdom
+- United States
 
 If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services (LCS) will show a message that your geographic region isn't supported. Global Inventory Accounting doesn't support on-premises deployments of Supply Chain Management.
 

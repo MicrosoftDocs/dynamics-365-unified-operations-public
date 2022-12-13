@@ -4,7 +4,7 @@
 title: Create a benefits plan
 description: This article shows how to set up benefit plans in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,8 +48,9 @@ This article shows how to set up benefit plans in Dynamics 365 Human Resources.
    | **Program** | Specifies a program to optionally assign the plan to. |
    | **Bundle** | Specifies a bundle to optionally assign the plan to. |
    | **Master** | Specifies whether the plan is the master plan within the bundle it is assigned to. |
+   | **Required** | Indicates that the plan is required to be selected to check out any other plan in the bundle. More than one plans can be marked as **Required**. In that case, all the plans that are marked as **Required** will need to be selected to check out any of the plans in the bundle.|
    | **Valid from date and time** | The date and time the plan starts. The default value is the current system date. |
-   | **Valid to date and time** | The date and time the plan ends. The default value is 12/31/2154, which signifies never. |
+   | **Valid to date and time** | The date and time the plan ends. The default value is 12/31/2154, which signifies never.  |
 
 4. On the **Configuration** tab, specify values for the following fields, depending on the type of plan you're creating:
 

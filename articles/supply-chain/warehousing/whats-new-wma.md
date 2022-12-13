@@ -19,6 +19,50 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.39.0
+
+This version introduces the following new features, fixes, and improvements:
+- Increased stability. 
+- The fields of the **Custom** page are no longer sorted automatically based on their priority and sub-priority settings.  
+- The app now uses the priority and sub-priority settings for each field to identify the primary field for a page. The primary field is shown in the step header. 
+- Fixed an issue where the soft keyboard wouldn't hide on Android.
+- Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the *movement* flow. 
+- Fixed an issue where the read-only quantity spinner value wasn't centered correctly. 
+- Fixed an issue where web pages wouldn't open from the **About** page. 
+- The *Auto* color theme now takes its default appearance (light or dark) based on the global theme set in the mobile device's operating system.
+
+## Version 2.0.37.0
+
+This version introduces the following new features, fixes, and improvements:
+- Added a user setting that lets workers choose where the app displays product photos (in both cards and step headers, only in step headers, or not at all). 
+- Improved the details card screen layout by reducing the size of the step banner and quantity input spinner, which leaves more room for other content. 
+- Improved the user interface when running on a Honeywell Thor device. 
+- Improved full-screen mode (only applies to devices with a hardware keyboard). 
+- Improved results when sorting details cards and custom pages by priority or sub-priority (DataPriority or DisplaySubPriority). 
+- Added support for more languages. 
+- Improved stability. 
+- Improved several images and icons. 
+
+## Version 2.0.35.0
+
+This version introduces the following new features, fixes, and improvements:
+- Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards were to be shown.
+
+## Version 2.0.34.0
+
+This version introduces the following new features, fixes, and improvements:
+- Improved stability.
+- Improved performance.
+- Improved the screen layout to allow more space for the details card.
+- Added a search function to the **Work List** page. Workers can now scan or type to search in all the fields and titles on the page.
+- The list of available connections is now sorted alphabetically.
+- Fixed an issue where duplicate cards were shown for items that have multiple inventory statuses at the same location.
+- Fixed an issue where the **Large Selection List** page didn't scroll to show the preselected item.
+- Fixed the search bar colors on the **Large Selection List** page.
+- Fixed an issue where the default button defined in the XML wasn't used as the submit button.
+- Fixed an issue where the buttons in the multi-scan and fast validation flows didn't update when new IDs were scanned.
+- Added support for more languages.
+
 ## Version 2.0.32.0
 
 This version introduces the following new features, fixes, and improvements:

@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.31 (February 2023)
+          href: get-started/whats-new-commerce-10-0-31.md
         - name: Commerce 10.0.30 (November 2022)
           href: get-started/whats-new-commerce-10-0-30.md
         - name: Commerce 10.0.29 (October 2022)
@@ -254,8 +256,6 @@
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
           href: https://www.microsoft.com/download/details.aspx?id=103896
-        - name: Commerce offline implementation and troubleshooting
-          href: dev-itpro/implementation-considerations-offline.md
         - name: Publish an online store catalog
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
@@ -394,12 +394,16 @@
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
+          - name: Store Commerce app capabilities
+            href: store-commerce-capabilities.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
+          - name: Commerce offline implementation and troubleshooting
+            href: dev-itpro/implementation-considerations-offline.md
           - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
@@ -568,6 +572,8 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+          - name: Limit payment token usage
+            href: dev-itpro/limit-token-usage.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
           - name: Configure credit card processing
@@ -584,6 +590,8 @@
               href: dev-itpro/adyen-connector-faq.md
             - name: Configure Google Pay with Adyen
               href: dev-itpro/google-pay-adyen.md
+            - name: Set up Apple Pay with Adyen
+              href: dev-itpro/apple-pay-adyen.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -596,6 +604,8 @@
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
+          - name: Prepayments in Dynamics 365 Commerce
+            href: dev-itpro/prepayments-commerce.md
           - name: Duplicate payments prevention 
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
@@ -888,6 +898,8 @@
         href: async-customer-mode.md
       - name: Convert asynchronous customers to synchronous customers
         href: convert-async-to-sync.md
+      - name: Audit synchronization of customer operations
+        href: audit-async-customer-operations.md
       - name: Asynchronous customer creation mode FAQ
         href: async-customer-mode-faq.md
       - name: Clienteling
@@ -999,7 +1011,23 @@
         - name: Upload URL redirects in bulk
           href: upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
-          href: set-up-B2C-tenant.md
+          items:
+          - name: Set up a B2C tenant
+            href: set-up-B2C-tenant.md
+          - name: Create or link to an existing Azure AD B2C tenant
+            href: create-link-aad-b2c-tenant.md
+          - name: Create a B2C application
+            href: create-b2c-app.md
+          - name: Create user flow policies
+            href: create-user-flow-policies.md
+          - name: Add social identity providers
+            href: add-social-identity-providers.md
+          - name: Update Commerce headquarters with Azure AD B2C information
+            href: update-hq-aad-b2c-info.md
+          - name: Configure your B2C tenant in site builder
+            href: config-b2c-tenant-site-builder.md
+          - name: Additional B2C information
+            href: additional-b2c-info.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
         - name: Enable automatic linking of identity records to customer accounts
@@ -1234,6 +1262,8 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
+          - name: Checkout module error reference codes
+            href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
           - name: Shipping address module
@@ -1296,8 +1326,14 @@
             href: cookie-consent-module.md
         - name: Chat modules
           items:
-          - name: Commerce chat module
+          - name: Commerce chat features overview
+            href: commerce-chat-overview.md
+          - name: Commerce Chat with Omnichannel for Customer Service module
             href: commerce-chat-module.md
+          - name: Commerce Chat with Power Virtual Agents module
+            href: chat-module-pva.md
+          - name: Commerce chat module proactive chat parameters
+            href: chat-proactive-chat-parameters.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1386,6 +1422,8 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Set up Operational Insights
+        href: dev-itpro/operational-insights.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -1550,6 +1588,8 @@
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
           href: localizations/emea-sau-qr-code.md
+        - name: Generate and submit simplified electronic invoices for Saudi Arabia
+          href: localizations/emea-sau-simplified-e-invoices.md
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -2968,7 +3008,7 @@
           href: troubleshoot/payment-type-credit-card-error.md
         - name: Taxes on online orders are incorrectly calculated
           href: troubleshoot/tax-miscalculated-online-order.md
-        - name: Order synchronization error related to default payment service
+        - name: Asynchronous order synchronization issues
           href: troubleshoot/synchronization-error.md
       - name: Payments processing
         items:
@@ -3018,6 +3058,10 @@
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
           href: troubleshoot/set-up-dev-environment-debugging.md
+      - name: Store financials
+        items:
+        - name: Issues with the data reconciliation of a Z report
+          href: troubleshoot/z-report-issues.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance

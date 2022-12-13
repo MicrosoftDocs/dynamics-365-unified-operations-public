@@ -4,18 +4,20 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 12/02/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: mashneer
 ms.search.validFrom: 2022-07-20
+
 ---
 
 # Commerce Chat with Omnichannel for Customer Service module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes the *Commerce Chat with Omnichannel for Customer Service* module in Microsoft Dynamics 365 Commerce.
 
@@ -37,11 +39,11 @@ The following capabilities are available as part of the Commerce chat feature:
 
 As a prerequisite, you must configure chat in the Omnichannel for Customer Service Administration widget and obtain some of the parameters to configure the Commerce chat experience. For instructions, see [Configure a chat channel](/dynamics365/customer-service/set-up-chat-widget).
 
-After you configure chat in the Omnichannel for Customer Service Administration widget, you will get a script that resembles the following example.
+After you configure chat in the Omnichannel for Customer Service Administration widget, you'll get a script that resembles the following example.
 
 `<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="xxxx-xxx-4be7-bcd5-1d118ecffe1f" data-org-id="5a0e73c0-xxxx-xxxxx-xxx- 76df135f375d" data-org-url="https://xxsxxxxssdb348f-crm.omnichannelengagementhub.com"></script>`
 
-Copy this script, because you will need the values in it to configure the chat module.
+Copy this script, because you'll need the values in it to configure the chat module.
 
 ### Commerce Chat with Omnichannel for Customer Service mandatory fields
 
@@ -79,6 +81,9 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. In the **Select modules** dialog box, select the chat fragment that you created earlier, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
+> [!NOTE]
+> For a complete list of configuration parameters, see [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md).
+
 ## Add Commerce headquarters as an application tab for Omnichannel for Customer Service
 
 You can add an application tab for Commerce headquarters in Omnichannel for Customer Service. Live agents can then use the user interface for the Omnichannel for Customer Service agent experience to easily access the Dynamics 365 Commerce Customer Service module that contains contextual information for the customer together with their sales orders information. In addition, customer service agents can place new orders, initiate returns, and verify order status information.
@@ -112,6 +117,9 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 1. Open the workstream that you've created for your agents, and then, under **Advanced settings**, select **Sessions default**.
 1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab that you created earlier. This step ensures that an application tab that loads Commerce headquarters in an iFrame module will appear when an agent receives an incoming chat call from your e-commerce website.
 
+> [!NOTE]
+> You can't modify the default chat session template in the workstream. Therefore, you might want to create a new template or duplicate the existing template to update it. For more information, see [Associate templates with workstream](/dynamics365/app-profile-manager/associate-templates).
+
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
 To add context variables in Dynamics 365 Omnichannel for Customer Service, follow these steps.
@@ -125,3 +133,34 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 
 > [!NOTE]
 > If you want to read the email addresses and names of signed-in users from an e-commerce channel, you can add **Email** and **Name** as context variables of the **text** type, in addition to the **AccountNumber** context variable.
+
+## Update Content Security Policy (CSP) in site builder
+
+To update Content Security Policy (CSP) for your site in site builder, follow these steps.
+
+1. In site builder, select the site you're working on.
+1. Select **Site Settings \> Extensions**.
+1. On the **Content security policy** tab, add `https://oc-cdn-ocprod.azureedge.net` as a new entry to the following directives:
+    - Child-src
+    - Connect-src
+    - Font-src
+    - Frame-ancestors
+    - Frame-src
+    - Img-src
+    - Media-src
+    - Object-src
+    - Script-src
+    - Style-src
+1. Select **Save and Publish**.
+
+For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
+
+## Additional resources
+
+[Commerce chat features overview](commerce-chat-overview.md)
+
+[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
+
+[Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)

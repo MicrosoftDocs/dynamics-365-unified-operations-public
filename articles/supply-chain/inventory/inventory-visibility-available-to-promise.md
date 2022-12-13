@@ -200,6 +200,7 @@ You can use the following application programming interface (API) URLs to submit
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Create multiple change events. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Query by using the `POST` method. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Query by using the `GET` method. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Exact query by using the `POST` method. |
 
 For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
@@ -389,6 +390,8 @@ In your request, set `QueryATP` to *true* if you want to query scheduled on-hand
 > [!NOTE]
 > Regardless of whether the `returnNegative` parameter is set to *true* or *false* in the request body, the result will include negative values when you query for scheduled on-hand changes and ATP results. These negative values will be included because, if only demand orders are scheduled, or if supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. If negative values weren't included, the results would be confusing. For more information about this option and how it works for other types of queries, see [Inventory Visibility public APIs](inventory-visibility-api.md#query-with-post-method).
 
+### Query by using the POST method
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -414,14 +417,14 @@ Body:
     }
 ```
 
-The following example shows how to create a request body that can be submitted to Inventory Visibility by using the `POST` method.
+The following example shows how to create an index query request body that can be submitted to Inventory Visibility by using the `POST` method.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -430,7 +433,7 @@ The following example shows how to create a request body that can be submitted t
 }
 ```
 
-### GET method example
+### Query by using the GET method
 
 ```txt
 Path:
@@ -448,7 +451,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-The following example shows how to create a request URL as a `GET` request.
+The following example shows how to create an index query request URL as a `GET` request.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -456,9 +459,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 The result of this `GET` request is exactly the same as the result of `POST` request in the previous example.
 
+### Exact query by using the POST method
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+The following example shows how to create an exact query request body that can be submitted to Inventory Visibility by using the `POST` method.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### Query result example
 
-Both the previous query examples might produce the following reply. For this example, the system is configured with the following settings:
+Any of the previous query examples might produce the following reply. For this example, the system is configured with the following settings:
 
 - **ATP calculated measure:** *iv.onhand = pos.inbound – pos.outbound*
 - **Schedule period:** *7*
