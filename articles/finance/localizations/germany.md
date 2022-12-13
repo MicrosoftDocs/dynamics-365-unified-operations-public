@@ -34,7 +34,7 @@ This article includes information and links to resources that should be consider
 -   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
-This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes). For more information about VAT declaration, see [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md)
+This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format). For more information about VAT declaration, see [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [ELSTER VAT statement for Germany](emea-de-vat-declaration.md)
 
