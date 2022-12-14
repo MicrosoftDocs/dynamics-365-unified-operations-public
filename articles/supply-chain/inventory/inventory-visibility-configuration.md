@@ -180,12 +180,12 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 
 ### Extended dimensions
 
-Customers who want to use external data sources in the data source can take advantages of the extensibility that Dynamics 365 offers by creating [Class Extensions](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/class-extensions) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
+Customers who want to use external data sources in the data source can take advantages of the extensibility that Dynamics 365 offers by creating [Class Extensions](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
 
 Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to Dimensions section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
 > [!NOTE] 
-> For additional details about creating extensions, see [Extensibility home page](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page).
+> For additional details about creating extensions, see [Extensibility home page](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### Calculated measures
 
