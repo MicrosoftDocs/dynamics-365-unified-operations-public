@@ -184,7 +184,8 @@ Customers who want to use external data sources in the data source can take adva
 
 Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to Dimensions section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
->[!NOTE] For additional details about creating extensions, see [Extensibility home page](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page).
+> [!NOTE] 
+> For additional details about creating extensions, see [Extensibility home page](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page).
 
 ### Calculated measures
 
