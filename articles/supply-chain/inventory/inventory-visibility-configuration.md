@@ -180,11 +180,11 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 
 ### Extended dimensions
 
-Customers who wish to use external data sources in the FnO data source are able to take advantages of the great extensibility that Dynamics 365 offers by creating [Class Extensions](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/class-extensions) for  `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` class.
+Customers who want to use external data sources in the data source can take advantages of the extensibility that Dynamics 365 offers by creating [Class Extensions](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/class-extensions) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
 
-Remember to synchronize with database after creating the extensions in order for the custom fields to be added in `InventSum` table. You can then refer to Dimensions section above to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in IV.
+Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to Dimensions section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
->[!Note] Please refer to [Extensibility home page](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page) for details about creating extensions.
+>[!NOTE] For additional details about creating extensions, see [Extensibility home page](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page).
 
 ### Calculated measures
 
