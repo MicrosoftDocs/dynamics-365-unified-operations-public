@@ -48,7 +48,7 @@ The following prerequisites must be in place before you begin:
    - **Username** - Enter the user name for the email account.
    - **Password** - Enter the password for the email account.
 
-- To support modern authentication due to the [deprecation of basic authentication in Exchange online](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online), enter additional details.
+- To support modern authentication due to the [deprecation of basic authentication in Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online), enter additional details.
    - **Use modern authentication** - Select this checkbox to use modern OAuth-based authentication to connect to the POP3 server.
    - **Server resource ID** - Enter the exchange server URI (https://outlook.office.com/ or https://outlook.office365.com/).
    - **Tenant ID** - Enter the key vault certificate reference for the tenant ID where the azure AAD application that has the required mailbox permissions is hosted.
