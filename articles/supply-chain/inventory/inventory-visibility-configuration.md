@@ -36,7 +36,7 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 ## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 
-In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this article explain how to use each part of the **Configuration** page.
+In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across multiple systems. The remaining sections of the article explain how to use each part of the **Configuration** page.
 
 After the configuration is completed, be sure to select **Update Configuration** in the app.
 
@@ -48,7 +48,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 |---|---|
 | *OnHandReservation* | This feature lets you create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. The default synchronization frequency is once every 15 minutes, and can be set as high as once every 5 minutes. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
-| *OnHandIndexQueryPreloadBackgroundService* | This feature periodically fetches and stores a set of on-hand inventory summary data based on your preconfigured dimensions. This provides an inventory summary that only includes the dimensions that are relevant to your daily business and that is compatible with items enabled for warehouse management processes (WMS). For more information, see [Turn on and configure preloaded on-hand queries](#query-preload-configuration) and [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | This feature periodically fetches and stores a set of on-hand inventory summary data based on your preconfigured dimensions. It provides an inventory summary that only includes the dimensions that are relevant to your daily business and that is compatible with items enabled for warehouse management processes (WMS). For more information, see [Turn on and configure preloaded on-hand queries](#query-preload-configuration) and [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
 | *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ring fencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
 | *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
@@ -177,6 +177,15 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
 1. On the **Data Source** tab, select the data source to add physical measures to (for example, the `ecommerce` data source). Then, in the **Physical Measures** section, select **Add**, and specify the measure name (for example, `Returned` if you want to record returned quantities in this data source to Inventory Visibility). Save your changes.
+
+### Extended dimensions
+
+Customers who want to use external data sources in the data source can take advantages of the extensibility that Dynamics 365 offers by creating [Class Extensions](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/class-extensions) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
+
+Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to Dimensions section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
+
+> [!NOTE] 
+> For additional details about creating extensions, see [Extensibility home page](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page).
 
 ### Calculated measures
 
@@ -501,7 +510,7 @@ You can set up Inventory Visibility to let you schedule future on-hand changes a
 Inventory Visibility can periodically fetch and store a set of on-hand inventory summary data based on your preconfigured dimensions. This provides the following benefits:
 
 - A cleaner view that stores an inventory summary that only includes the dimensions that are relevant to your daily business.
-- A inventory summary that is compatible with items enabled for warehouse management processes (WMS).
+- An inventory summary that is compatible with items enabled for warehouse management processes (WMS).
 
 See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) for more information about how to work with this feature after you have set it up.
 
