@@ -37,7 +37,7 @@ The following prerequisites must be in place before you begin:
  - Set up NF-e parameters for fiscal establishments.
 
 > [!NOTE] 
-> If you wish to use modern authentication to authenticate the connections to the POP3 server to read emails, as a **pre-requisite**, follow the steps outlined [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to create an azure AAD application which will have the required mailbox permissions (POP) to read emails from the shared mailbox that you’re using to receive emails sent by a vendor.
+> If you wish to use modern authentication to authenticate the connections to the POP3 server to read emails, as a **pre-requisite**, follow the steps outlined [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to create an azure AAD application which will have the required mailbox permissions (POP) to read emails from the shared mailbox that you are using to receive emails sent by a vendor.
 > Next, add the azure AAD application client Id, client secret and tenant Ids as secrets to a key vault in azure and configure the same in Dynamics 365 Finance.
 
 ## Set up email accounts to import XML files and DANFE for NF-e
@@ -48,7 +48,7 @@ The following prerequisites must be in place before you begin:
    - **Username** - Enter the user name for the email account.
    - **Password** - Enter the password for the email account.
 
-- In order to support modern authentication due to the [deprecation of basic authentication in Exchange online](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online), following additional fields have been added to this form.
+- In order to support modern authentication due to the [deprecation of basic authentication in Exchange online](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online), enter additioanl deatils.
    - **Use modern authentication** - Check this checkbox to use modern OAuth-based authentication to connect to the POP3 server.
    - **Server resource id** - Enter the exchange server URI. (https://outlook.office.com/ or https://outlook.office365.com/ )
    - **Tenant Id** - Enter the key vault certificate reference for the tenant ID where the azure AAD application that has the required mailbox permissions is hosted.
