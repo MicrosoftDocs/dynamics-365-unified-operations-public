@@ -97,7 +97,7 @@ For more information about importing ER configurations, see [Manage the ER confi
 ## Enable Business document management
 
 > [!NOTE]
-> In versions of Finance before 10.0.21 **Business document management** functionality must have been explicitly enabled. Starting from version 10.0.21 **Business document management** feature is turned on by default. Starting from version 10.0.29 the feature became mandatory, i.e., turned on by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated. The system behaviour assumes **Business document management** functionality enabled out of the box. The chapter below is applicable to Finance versions earlier than 10.0.21.
+> In versions of Finance before 10.0.21, **Business document management** functionality had to be explicitly enabled. Beginning in version 10.0.21, the **Business document management** feature is automatically enabled. Starting in version 10.0.29, the feature became mandatory and is utomatically turned on without the possibility of turning it off. In version 10.0.32, the feature has been eliminated. The system behaviour assumes **Business document management** functionality is enabled out-of-the-box. This section is applicable to Finance versions earlier than 10.0.21.
 
 To start Business document management, you need to open the **Feature management** workspace and enable the **Business document management** feature.
 
@@ -235,7 +235,7 @@ Use the following procedure to edit free text invoice templates in the Business 
 2. Open the Business document management workspace.
 
 > [!NOTE]
-> Starting from version 10.0.21 **Office-like UI experience for Business document management** feature is turned on by default. Starting from version 10.0.29 the feature became mandatory, i.e., <ins>[**turned on**](#UIturnedOn)</ins> by default without possibility of turning it off. Starting from version 10.0.32 the feature has been eliminated.
+> Starting in Finance version 10.0.21, the **Office-like UI experience for Business document management** feature is turned on by default. In Finance version 10.0.29, the feature became mandatory and couldn't be turned off. Starting in Finance version 10.0.32, the feature has been eliminated.
 
 When the **Office-like UI experience for Business document management** feature is turned off in the **Feature management** workspace, the main grid in the **Business document management** workspace shows the following templates:
 
