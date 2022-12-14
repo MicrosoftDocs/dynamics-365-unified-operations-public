@@ -44,6 +44,10 @@ To reverse the year-end close, select the most recent fiscal year for the approp
 
 You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or whether it will the process will be rerun for all transactions and completely reverse the previous close.
 
+## General ledger: The General ledger year-end enhancements feature is enabled. Why can’t I view my previous year closings in the History section of the Year-end close page?
+
+Prior to enabling the **General ledger year-end enhancements** feature, the system tracked the date and time that the last year-end close process was run. It didn’t track history for each time the year-end close was performed. As such, the details of each year-end close run are not available to display. After enabling the feature, subsequent year-end close process information is maintained. Vouchers from all year-end close processes, even those run before the feature enablement, can be viewed on the **Voucher transactions** page. 
+
 ## General ledger: The year-end close process is failing because of the following error: "The year-end close can't be run because one or more ledger transactions posted into the fiscal year that you are closing were settled to a ledger transaction in a different fiscal year." What does this error mean?
 
 Because the **Awareness between ledger settlement and year-end close** feature is enabled, only settled ledger transaction from the fiscal year that's being closed are excluded from the opening balance. This behavior causes debits and credit to be out of balance. For more information, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md).
@@ -66,6 +70,19 @@ The **Delete existing year-end entries when re-closing the year** parameter in G
 
 > [!NOTE]
 > The closing balance entry is created in the year being closed. This only occurs if the **Create closing transactions during transfer** parameter in General ledger is set to **Yes**. The opening balance entry is always created, because this is the beginning balance for the next year.
+
+## General ledger: What is the difference between “Close all” and “Close single” options on the Transfer profit and loss dimension section of the Year-end close process?
+
+**Close all** maintains the original financial dimension values from posted transactions and uses them to create the opening balances for the retained earnings account. Separate retained earnings beginning balances will be created for each unique combination of financial dimension values. If **Close single** is selected, all posted transactions that have that financial dimension will be summarized into a retained earnings beginning balance for the dimension value that is entered in the field that appears after **Close single**. For example, all transactions for the fiscal year were posted with the account structure Main account - Department. For the Department financial dimension on the template, **Close single** is selected, and 100 is entered as the dimension value. If the total income of all transactions that are posted to departments 200, 300, and 400 is $100,000, one opening balance will be created for Retained earnings - 100. If you select **Close single** but leave the financial dimension value blank, all transactions will be posted to retained earnings, and the dimension value will be blank.
+
+## General ledger: When I select “Close single” option on the Transfer profit and loss dimension section of the Year-end close process, will my detailed transactional information be lost?
+
+The **Close all** and **Close single** options are used to specify which financial dimensions on transactions that are posted to profit and loss accounts will be transferred to the retained earnings main account. The historical, detailed posting to the profit and loss accounts is not impacted and will remain detail. The option impacts the level of detail that is transferred to the retained earnings accounts as an opening balance in the new year. 
+
+## General ledger: The year-end close process is failing because the reporting currency for the year does not balance. What does this mean?
+
+This error can be experienced after enabling the **Awareness between ledger settlement and year end close** feature (the Awareness feature). When the feature is enabled, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year when running the general ledger year end close. Excluding ledger transactions that are settled may present a challenge for customers at year-end close if the Ledger is defined with a reporting currency.   
+Ledger settlement is performed for only the accounting currency.  When the ledger transactions are settled, validation only ensures the accounting currency debits equal the accounting currency credits. The reporting currency amounts for those ledger transactions aren’t validated and may not have debits = credits.  In addition, ledger settlement doesn’t automatically calculate and post a gain/loss in the reporting currency.  Due to these limitations, a gain/loss transaction must exist in the reporting currency when performing ledger settlement.  If the gain/loss isn’t included in the ledger settlement, the year-end close will result in an out of balance message.  For more information, see [Awareness between ledger settlement feature and reporting currency is out of balance](reporting-currency-yec.md).
 
 ## General ledger: What can be changed to help enhance the performance of year-end processing?
 
