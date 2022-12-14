@@ -36,6 +36,10 @@ The following prerequisites must be in place before you begin:
  - Set up NF-e federal parameters, including the IBGE code selected in the tax authority parameters.
  - Set up NF-e parameters for fiscal establishments.
 
+> [!NOTE] 
+> If you wish to use modern authentication to authenticate the connections to the POP3 server to read emails, as a **pre-requisite**, follow the steps outlined [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) to create an azure AAD application which will have the required mailbox permissions (POP) to read emails from the shared mailbox that you’re using to receive emails sent by a vendor.
+> Next, add the azure AAD application client Id, client secret and tenant Ids as secrets to a key vault in azure and configure the same in Dynamics 365 Finance.
+
 ## Set up email accounts to import XML files and DANFE for NF-e
 - On the **Configure email accounts** page, select **New**, and enter the account details.
    - **Server address** - Enter the POP3 server address for the email account.
@@ -43,6 +47,18 @@ The following prerequisites must be in place before you begin:
    - **Required SSL** - Select this option to indicate that the server requires a Secure Socket Layer (SSL) encrypted connection.
    - **Username** - Enter the user name for the email account.
    - **Password** - Enter the password for the email account.
+
+- In order to support modern authentication due to the [deprecation of basic authentication in Exchange online](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online), following additional fields have been added to this form.
+   - **Use modern authentication** - Check this checkbox to use modern OAuth-based authentication to connect to the POP3 server.
+   - **Server resource id** - Enter the exchange server URI. (https://outlook.office.com/ or https://outlook.office365.com/ )
+   - **Tenant Id** - Enter the key vault certificate reference for the tenant ID where the azure AAD application that has the required mailbox permissions is hosted.
+   - **Client Id** - Enter the key vault certificate reference for the app ID of the azure AAD application that has the required mailbox permissions.
+   - **Client secret** - Enter the key vault certificate reference for the client secret of the azure AAD application.
+   - **Login authority** - Enter the login authority URI. (https://login.microsoftonline.com/ )
+
+> [!NOTE] 
+> Only Exchange online is currently supported to import XML files using modern authentication.
+
 
 ## Import and verify the NF-e XML files and DANFE from emails
 1. On the **Import XML files from email** page, if necessary, enter the batch processing parameters, recurrences, and schedule.
