@@ -1186,6 +1186,8 @@
           href: general-ledger/faq-year-end-activities.md
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
+      - name: Awareness between ledger settlement and year-end close
+        items:          
         - name: Awareness between ledger settlement and year-end close
           href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
         - name: Prepare for Awareness between ledger settlement before year-end close  
