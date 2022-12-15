@@ -44,11 +44,11 @@ If you're using the standard cost method, the update conflict error message you 
 
 ### Workaround for the inventory error
 
-You can mitigate the "not enough inventory" error either by manually updating the inventory for the item, or turning on the physical negative inventory on the item model group associated with the item in Commerce headquarters.
+You can mitigate the inventory error either by manually updating the inventory for the item, or turning on the physical negative inventory on the item model group associated with the item in Commerce headquarters.
 
 For a consistent posting experience, Microsoft recommends turning on the physical negative inventory for the item model group. In some scenarios, statements may not be able to be posted unless there's physical negative inventory enabled. 
 
-For example, if there is no inventory available for an item, but to mimic a price match a cashier returns the item and adds it back to the same transaction at a reduced price, then both the return and sale transactions will be pulled in the same statement of the single customer order. Since there's no guarantee that the return (to increase the inventory) will be posted before the sales line (to reduce the inventory) is posted, inventory errors can occur. If physical negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system correctly reflects the inventory.
+For example, if there's no inventory available for an item, but to mimic a price match a cashier returns the item and adds it back to the same transaction at a reduced price, then both the return and sale transactions will be pulled in the same statement of the single customer order. Since there's no guarantee that the return (to increase the inventory) will be posted before the sales line (to reduce the inventory) is posted, inventory errors can occur. If physical negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system correctly reflects the inventory.
 
 #### Turn on the negative physical inventory for an item model group
 
@@ -62,7 +62,7 @@ To turn on the negative physical inventory for an item model group in Commerce h
  
 ### Workaround for the update conflict error
 
-For possible workarounds for the update conflict the error message, see [Update conflict mitigation](/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation).
+For possible workarounds to resolve the update conflict error message, see [Update conflict mitigation](/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation).
 
 > [!NOTE]
 > For the update conflict error, you don't need to delete the customer orders generated with the aggregation step of posting. After implementing the suggested workarounds, reattempting the statement posting should post the statement.
