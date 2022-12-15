@@ -1167,7 +1167,9 @@
         - name: General ledger statement by main account
           href: general-ledger/general-ledger-statement-by-main-account.md
         - name: Standard Audit File for Tax (SAF-T) electronic report
-          href: general-ledger/standard-audit-file.md      
+          href: general-ledger/standard-audit-file.md
+        - name: Ledger settlement inquiry
+          href: general-ledger/ledger-settlement-inquiry.md          
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
