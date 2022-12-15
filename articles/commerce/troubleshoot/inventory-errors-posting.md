@@ -41,18 +41,18 @@ If you're using the standard cost method, the update conflict error message you 
 
 ### Workaround for the not enough inventory error
 
-You can mitigate the "not enough inventory" error either by manually updating the inventory for the item, or by turning on the physical negative inventory on the item model group associated with the item in Commerce headquarters.
+You can mitigate the "not enough inventory" error either by manually updating the inventory for the item, or turning on the physical negative inventory on the item model group associated with the item in Commerce headquarters.
 
 For a consistent posting experience, Microsoft recommends turning on the physical negative inventory for the item model group. In some scenarios, statements may not be able to be posted unless there's physical negative inventory enabled. 
 
-For example, if there was no inventory available for an item, but to mimic a price match the cashier returns the item and adds it back to the same transaction at a reduced price, then both the return and sale transactions will be pulled in the same statement of a single customer order. Since there's no guarantee that the return to increase the inventory will be posted before the sales line to reduce the inventory is posted, inventory errors can occur. If physical negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system correctly reflects the inventory.
+For example, if there is no inventory available for an item, but to mimic a price match a cashier returns the item and adds it back to the same transaction at a reduced price, then both the return and sale transactions will be pulled in the same statement of the single customer order. Since there's no guarantee that the return (to increase the inventory) will be posted before the sales line (to reduce the inventory) is posted, inventory errors can occur. If physical negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system correctly reflects the inventory.
 
 #### Turn on the negative physical inventory for an item model group
 
 To turn on the negative physical inventory for an item model group in Commerce headquarters, follow these steps.
 
 1. Go to **Inventory management \> Setup \> Inventory**.
-1. In the left navigation pane, select the **FIFO** item model group. 
+1. In the left navigation pane, select the item model group. 
 1. Under **Inventory policies \> NEGATIVE INVENTORY**, select the **Physical negative inventory** checkbox, as shown in the following example image. 
  
 ![Enable physical negative inventory](./media/Physical_Negative_Inventory.png)
