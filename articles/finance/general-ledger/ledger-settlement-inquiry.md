@@ -68,7 +68,7 @@ currencies (transaction, accounting, and reporting).
 •	**Status** – This value is either **Settled** or **Not settled**.
 •	**Settlement ID** – The ID that is assigned to the settled transactions.
 
-[![Ledger settlement inquiry page](.media
+[![Ledger settlement inquiry page](./media/Inquiry1.png)](./media/Inquiry1.png)
 
  
 Totals can be shown under the grid.
