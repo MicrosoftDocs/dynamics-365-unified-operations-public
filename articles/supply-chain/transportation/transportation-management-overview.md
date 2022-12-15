@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 ms.topic: overview
 ms.date: 12/13/2022
+audience: Application User
 ms.custom: bap-template
 ---
 
