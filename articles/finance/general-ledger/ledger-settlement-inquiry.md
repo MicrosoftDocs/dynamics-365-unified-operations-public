@@ -43,30 +43,30 @@ for ledger settlement on the **General ledger parameters** page.
 4.	Use the **Financial dimension set** field to show the financial dimensions in the grid. Because the main account is required, the **Main account** field value will
 always be shown as the first column, even if you select a financial dimension set that doesn't include the main account.
 5.	In the **Status** field, select:
- -  **All** to view both settled and unsettled transactions
- -  **Not settled** to view only unsettled transactions 
- -  **Settled** to view only settled transactions
+-   **All** to view both settled and unsettled transactions
+-   **Not settled** to view only unsettled transactions 
+-   **Settled** to view only settled transactions
 6.	Select **Show transactions**. Ledger transactions appear in the grid, based on the criteria that you entered. You can export the results of the inquiry to Microsoft
 Excel for further analysis. Select and hold (or right-click) in the grid.
 
 ### Column details
 The grid on the **Ledger settlement inquiry** page includes the following columns:
-•	**Main account** – This field is required and is always shown.
-•	**Financial dimensions** – Financial dimensions are shown based on the financial dimension set that is selected.
-•	**Transaction date** – The posting date of the ledger transaction.
-•	**Original transaction date** – If the year-end close has been run, and ledger settlement is set up so that it keeps details for a main account, the unsettled 
+-   **Main account** – This field is required and is always shown.
+-   **Financial dimensions** – Financial dimensions are shown based on the financial dimension set that is selected.
+-   **Transaction date** – The posting date of the ledger transaction.
+-   **Original transaction date** – If the year-end close has been run, and ledger settlement is set up so that it keeps details for a main account, the unsettled 
 transactions are brought over in detail as an opening balance. The original posting date of the ledger transaction is maintained in the **Original transaction date** field.
-•	**Transaction age** – The value is 0 (zero) for all settled transactions. For unsettled transactions, the value is calculated as the number of days from either the 
+-   **Transaction age** – The value is 0 (zero) for all settled transactions. For unsettled transactions, the value is calculated as the number of days from either the 
 original transaction date or the transaction date to the date when the inquiry is run.
 For example, a ledger transaction has a transaction date of January 1, 2022 (1/1/2022) and an original transaction date of December 30, 2021 (12/30/2021). If the 
 inquiry is run on January 2, 2022 (1/2/2022) for the fiscal year 2022, the **Transaction age value** will be 4. This value is calculated as the number of days between 
 the original transaction date (12/30/2021) and 1/2/2022.
 
 If there is no original transaction date, the transaction date is used instead.
-•	**(Other transactional information)** – Additional columns show information such as the voucher number, the description, and debit and credit amounts in all three 
+-   **(Other transactional information)** – Additional columns show information such as the voucher number, the description, and debit and credit amounts in all three 
 currencies (transaction, accounting, and reporting).
-•	**Status** – This value is either **Settled** or **Not settled**.
-•	**Settlement ID** – The ID that is assigned to the settled transactions.
+-   **Status** – This value is either **Settled** or **Not settled**.
+-   **Settlement ID** – The ID that is assigned to the settled transactions.
 
 [![Ledger settlement inquiry page](./media/Inquiry1.png)](./media/Inquiry1.png)
 
