@@ -62,7 +62,7 @@ To turn on the negative physical inventory for an item model group in Commerce h
  
 ### Workaround for the update conflict error
 
-For possible workarounds to resolve the update conflict error message, see [Update conflict mitigation](/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation).
+For possible workarounds to resolve the update conflict error, see [An update conflict occurs when the inventory valuation method is either standard cost or moving average](/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation).
 
 > [!NOTE]
 > For the update conflict error, you don't need to delete the customer orders generated with the aggregation step of posting. After implementing the suggested workarounds, reattempting the statement posting should post the statement.
