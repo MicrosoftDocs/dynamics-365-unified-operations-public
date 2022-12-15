@@ -25,21 +25,24 @@ During the posting of Commerce transactions, you may receive error messages rela
 ### Inventory issues error message
 
 If you encounter inventory issues, the error message you see will be similar to this example:
+
 `xx cannot be picked because only yy is/are available from the inventory`
 
-## Update conflict error messages
+### Update conflict error messages
 
 An update conflict issue can occur when the inventory valuation method is either *standard cost* or *moving average*. Both of these methods are perpetual costing methods, which means that the final cost is determined at the time of posting.
 
 If you're using the moving average method, the update conflict error message you see will be similar to this example:
+
 `Inventory value xx.xx is not expected after the proportional expense calculation`
 
 If you're using the standard cost method, the update conflict error message you see will be similar to this example:
+
 `The standard cost does not match with the financial inventory value after the update. Value = xx.xx, Qty = yy.yy, Standard cost = zz.zz`
 
 ## Resolutions
 
-### Workaround for the not enough inventory error
+### Workaround for the inventory error
 
 You can mitigate the "not enough inventory" error either by manually updating the inventory for the item, or turning on the physical negative inventory on the item model group associated with the item in Commerce headquarters.
 
