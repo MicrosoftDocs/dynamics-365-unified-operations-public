@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 ms.topic: conceptual
 ms.date: 12/02/2022
+audience: Application User
 ms.custom: bap-template
 ---
 

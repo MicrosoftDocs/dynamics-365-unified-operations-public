@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form: PowerBIConfiguration
 ms.topic: how-to
 ms.date: 12/12/2022
+audience: Application User
 ms.custom: bap-template
 ---
 
