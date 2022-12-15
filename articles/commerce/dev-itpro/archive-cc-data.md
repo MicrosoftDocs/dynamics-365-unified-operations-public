@@ -22,7 +22,7 @@ ms.search.industry: Retail
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions. This job is available as of the Commerce version 10.0.17 release.
+This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens. This job is available as of the Commerce version 10.0.17 release.
 
 For every credit card authorization, the authentication binary large object ([auth blob](#key-terms)) is stored in the database. Auth blobs contain data that is related to the authorization. Over time, these auth blobs can grow and take up a significant amount of space in the database. The job that is described in this article lets you archive auth blob data by exporting it to Azure Blob storage and then deleting the data from the database.
 
@@ -57,7 +57,7 @@ You can access the archival job in Commerce headquarters at **Retail and Commerc
 
 The **Parameters** section of the **Archive credit card transaction data** flyout menu contains the following parameters:
   - **Minimum transaction age in days** - Setting this parameter is required. Enter the age, in days, of credit card authorizations that will be subject to archiving. The value you enter should be the time period that customers can have refunds linked to their original credit card authorization. For example, if you set the field to 365 days, a return for a transaction that is 366 days old might still be eligible for refund, depending on the merchant's policies. However, because the data that is required to do a linked refund won't be available in Dynamics after it's archived, any refund that is processed will have to be a standalone refund.
-  - **Delete data without archiving** - When this parameter is set to **Yes**, Commerce will delete (not archive) the transaction and signature capture data for all transactional records that meet the criteria of minimum transaction age in days.
+  - **Delete data without archiving** - When this parameter is set to **Yes**, Commerce will delete (not archive) the payment tokens and signature capture data for all transactional records that meet the criteria of minimum transaction age in days.
   - **Corresponding transaction date** - This parameter is a reference field that displays the date in the past that currently corresponds to the value of the **Minimum transaction age in days** parameter. Records older than the date shown will be affected by the job.
   - **Use compression** - When this parameter is set to **Yes**, Commerce compresses tokens to save on storage space. For more information, see [Further storage management with token compression](#further-storage-management-with-token-compression) below.
 
