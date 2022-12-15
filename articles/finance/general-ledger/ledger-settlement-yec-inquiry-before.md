@@ -4,7 +4,7 @@
 title: Awareness between ledger settlement feature before year-end close using the inquiry page
 description: This article explains how to use the Awareness between ledger settlements feature by using the new inquiry page before the General ledger year-end close is run.
 author: kweekley
-ms.date: 12/02/2022
+ms.date: 12/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,8 @@ As of Microsoft Dynamics 365 Finance release 10.0.29, you can identify, unsettle
 
 - [Awareness between ledger settlement feature before year-end close](ledger-settle-yec.md)
 - [Awareness between ledger settlement feature after year-end close](ledger-settle-yec-after.md)
+
+For more information about the new inquiry window, see [Ledger settlement inquiry](ledger-settlement-inguiry.md). 
 
 ## Example setup
 
