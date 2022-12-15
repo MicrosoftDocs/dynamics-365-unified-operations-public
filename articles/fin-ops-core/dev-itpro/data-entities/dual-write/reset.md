@@ -92,7 +92,7 @@ When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The
 
 ![Choose environment page in the Reset link to Dataverse wizard for scenario 3, informing you that you must set up a Power Platform link to Dataverse.](media/reset-image-4.png)
 
-In this case, go to the [Power Platform integration](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration#connect-to-existing-dataverse), select **Current Dataverse Environment** in the **Power Platform Environment ID** field, and then select **Save** to save your change. You can then reinitiate the reset action.
+In this case, go to the [Power Platform integration](../../power-platform/enable-power-platform-integration#connect-to-existing-dataverse.md), select **Current Dataverse Environment** in the **Power Platform Environment ID** field, and then select **Save** to save your change. You can then reinitiate the reset action.
 
 ### Scenario 4: You're using a cloud-hosted instance of finance and operations apps
 
