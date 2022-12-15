@@ -39,7 +39,7 @@ As of Microsoft Dynamics 365 Finance release 10.0.29, you can identify, unsettle
 - [Awareness between ledger settlement feature before year-end close](ledger-settle-yec.md)
 - [Awareness between ledger settlement feature after year-end close](ledger-settle-yec-after.md)
 
-For more information about the new inquiry window, see [Ledger settlement inquiry](ledger-settlement-inguiry.md). 
+For more information about the new inquiry window, see [Ledger settlement inquiry](ledger-settlement-inquiry.md). 
 
 ## Example setup
 
