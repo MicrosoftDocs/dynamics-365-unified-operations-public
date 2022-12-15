@@ -35,11 +35,11 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
 - Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
-- ALL sandboxes except those that have a time bound exception due to regulatory reasons will be onboarded by January 7th 2023
+- ALL sandboxes, except those that have a time bound exception due to regulatory reasons, will be onboarded by January 7th 2023.
 - Production onboarding for Proactive Quality updates will begin from January 21, 2023. 
 - Production onboarding will only start for Lifecycle Services projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
 - For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
-- Please note every service update has atleast one PQU train ongoing or slated to begin at any point in time. So, once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all those environments, when you move to a higher Service update version. Please check the schedule in order to be informed about when a PQU for a service update is scheduled in case you plan to upgrade to a newer service update version.
+- Please note every service update has atleast one PQU train ongoing or slated to begin at any point in time. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all those environments when you move to a higher Service update version. Please check the schedule in order to be informed about when a PQU for a service update is scheduled in case you plan to upgrade to a newer service update version.
 
 
 ## Focus on quality updates
