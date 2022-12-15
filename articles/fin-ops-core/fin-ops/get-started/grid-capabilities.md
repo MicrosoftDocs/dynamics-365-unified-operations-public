@@ -229,6 +229,7 @@ This section maintains a list of known issues for the new grid control.
 ### Open issues
 - After enabling the **New grid control** feature, some pages will continue to utilize the existing grid control. This will happen in the following situations:
  
+    - [Resolved] Issue 762533: Unexpected client error when selecting a row in a card list
     - [Resolved] A card list exists on the page that is rendered in multiple columns.
         - This type of card list is supported by the **New grid control** starting in version 10.0.30. Any usages of forceLegacyGrid() for this purpose can be removed. 
     - [Resolved] A grouped card list exists on the page.
