@@ -2,7 +2,7 @@
 title: Statement posting error either due to unavailable inventory or due to update conflict
 description: This article provides possible workarounds for inventory related issues during statement posting in Microsoft Dynamics 365 Commerce.
 author: Shajain
-ms.date: 12/14/2022
+ms.date: 12/15/2022
 ms.topic: Troubleshooting
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -20,29 +20,48 @@ This article provides possible workarounds for inventory related issues during s
 
 ## Description
 
-During the posting of Commerce transactions, you may receive an error message similar to `xx cannot be picked because only yy is/are available from the inventory`.
+During the posting of Commerce transactions, you may receive error messages related to inventory issues or update conflicts. 
 
-The second type of error you might encounter is about an update conflict. This issue can occur when the inventory valuation method is either *standard cost* or *moving average*. Both of these methods are perpetual costing methods, which means that the final cost is determined at the time of posting.
+### Inventory issues error message
 
-If you're using the moving average method, the error message will be similar to this example:
+If you encounter inventory issues, the error message you see will be similar to this example:
+`xx cannot be picked because only yy is/are available from the inventory`
+
+## Update conflict error messages
+
+An update conflict issue can occur when the inventory valuation method is either *standard cost* or *moving average*. Both of these methods are perpetual costing methods, which means that the final cost is determined at the time of posting.
+
+If you're using the moving average method, the update conflict error message you see will be similar to this example:
 `Inventory value xx.xx is not expected after the proportional expense calculation`
 
-If you're using the standard cost method, the error message will be similar to this example:
+If you're using the standard cost method, the update conflict error message you see will be similar to this example:
 `The standard cost does not match with the financial inventory value after the update. Value = xx.xx, Qty = yy.yy, Standard cost = zz.zz`
 
-## Resolution
+## Resolutions
 
 ### Workaround for the not enough inventory error
 
-This issue can be mitigated by either manually updating the inventory for the item or by turning on the negative physical inventory on the item model group associated with the item (refer the image below to enable physical negative inventory). We recommend turning on the negative physical inventory on the item model group, for a seamless posting experience. In some scenarios, statements might not be able to be posted unless there's negative physical inventory enabled. For example, if there was no inventory available for an item, but to mimic a price match, the cashier returns the item and adds it back to the same transaction at a reduced price, then both return and sale transactions will be pulled in the same statement in a single customer order. There's no guarantee that the return will be posted first (to increase the inventory), followed by the sales line (to reduce the inventory) and thus errors can occur. If negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system will correctly reflect the inventory.
+You can mitigate the "not enough inventory" error either by manually updating the inventory for the item, or by turning on the physical negative inventory on the item model group associated with the item in Commerce headquarters.
 
+For a consistent posting experience, Microsoft recommends turning on the physical negative inventory for the item model group. In some scenarios, statements may not be able to be posted unless there's physical negative inventory enabled. 
+
+For example, if there was no inventory available for an item, but to mimic a price match the cashier returns the item and adds it back to the same transaction at a reduced price, then both the return and sale transactions will be pulled in the same statement of a single customer order. Since there's no guarantee that the return to increase the inventory will be posted before the sales line to reduce the inventory is posted, inventory errors can occur. If physical negative inventory is turned on in this scenario, the transaction posting isn't negatively affected, and the system correctly reflects the inventory.
+
+#### Turn on the negative physical inventory for an item model group
+
+To turn on the negative physical inventory for an item model group in Commerce headquarters, follow these steps.
+
+1. Go to **Inventory management \> Setup \> Inventory**.
+1. In the left navigation pane, select the **FIFO** item model group. 
+1. Under **Inventory policies \> NEGATIVE INVENTORY**, select the **Physical negative inventory** checkbox, as shown in the following example image. 
+ 
 ![Enable physical negative inventory](./media/Physical_Negative_Inventory.png)
  
 ### Workaround for the update conflict error
 
-For the error message related to the update conflict, see [Update conflict mitigation](/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation) for possible workarounds.
+For possible workarounds for the update conflict the error message, see [Update conflict mitigation](/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation).
 
 > [!NOTE]
-> For this error, you don't need to delete the customer orders generated with the aggregation step of posting. After implementing the suggested workarounds, reattempting the statement posting should post the statement.
+> For the update conflict error, you don't need to delete the customer orders generated with the aggregation step of posting. After implementing the suggested workarounds, reattempting the statement posting should post the statement.
 
 
