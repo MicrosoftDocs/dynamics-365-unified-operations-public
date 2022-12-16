@@ -39,8 +39,10 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Production onboarding for Proactive Quality updates will begin from January 21, 2023. 
 - Production onboarding will only start for Lifecycle Services projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
 - For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
-- Please note every service update has atleast one PQU train ongoing or slated to begin at any point in time. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all those environments when you move to a higher Service update version. Please check the schedule in order to be informed about when a PQU for a service update is scheduled in case you plan to upgrade to a newer service update version.
+- Please note every service update has atleast one PQU train ongoing or slated to begin at any point in time. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all those environments when you move to a higher Service update version. Please check the schedule in order to be informed about when a PQU for a service update is scheduled in case you plan to upgrade to a newer service update version. 
 
+> [!Note]
+> Standard performance test(tier4), Premium performance test(tier5) sandboxes and production environments will receive PQUs on weekends. 
 
 ## Focus on quality updates
 
@@ -168,6 +170,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 6, 2024|
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-2 train schedule
+**App version: 10.0.1362.99**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
