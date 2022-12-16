@@ -177,5 +177,9 @@ For performance and technical reasons, only tables that meet the following condi
 
 Custom fields can only be managed through the user interface and cannot be referenced by code. 
 
+### How can I move custom fields between environments? 
+
+The current recommendation for moving custom fields between environments is to manually re-create the custom fields in the target environment(s). To see the full list of custom fields on a particular table, navigate to the **Custom fields** page and select that table from the dropdown. In the target environment, following the process described earlier in this article to recreate each field. Once all the fields have been created and the **Apply changes** button has been triggered, you can move all the personalizations containing custom fields by exporting those personalizations from the original environment and importing them into the target environment.  
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
