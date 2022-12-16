@@ -56,6 +56,27 @@ We recommend that you restrict table schema changes to support faster schema syn
 - Fields are added to or removed from the columnstore index.
 - Fields are added to or removed from the primary index.
 
+### Common failures
+This section provides troubleshooting and mitigation guidance for most common issues faced during pre-servicing and caused due to custom integrations. We recommend reviewing the logs of a service action from the environment's LCS portal, go to environment history and select target service action and download the logs. After you download logs in zip format containing multiple files, locate the file that starts with “dbsyncadhoc_precheck_error” that provides precheck failure logs. If there are multiple files with the same name you can choose any one for troubleshooting.
+
+Pre-check servicing may fail due to various different reasons but below are few common generic patterns commonly faced by multiple customers. If you see any of the below errors in the error file, the servicing deployment won't succeed unless the package or database issue is fixed.Please seee below most common reason of failures and recommended actions to perform before retrying servicing.
+
+- Error Message contains **"Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name 'Table Name' and the index name 'Index Name' ".** This error occurs when a user attempts to create a unique index and more than one row in the table contains the duplicate values. If there is, Dbsync will fail in this case and the error logs will have the details of the failed index.
+
+Recommended action
+Connect to the environment's database axDB and remove duplicate values in the unique index columns from [table name] found in error logs and the retry the servicing will succeed.
+
+- Error Message  contains **"Package deployment failed with error like 'Converting Field XXX of Type 'AxTableFieldXXX' to 'AxTableFieldXXX' is not supported. Please drop the original field, sync the table and add new field with same name if needed'**. This error occurs when a user has created a table and changing the column type is not supported. We recommend customer to fix by converting to field original type and then retry the next servicing.
+ 
+Recommended action
+Specific field type conversion is not supported and the table in question is a customer created table. We recommend fixing it by converting the field type to the original type and then retry the servicing.
+
+- Error Message contains **“The enum value ‘XXX’ on the extension ‘YYY.ZZZ’ already exists. This extension cannot be applied to the base element.”** This error occurs if an ISV or a user has added an enumeration value to an extensible enum, and then a subsequent addition to the same extensible enumeration with the same name from the Microsoft-shipped application collides with it. Since naming guidelines require that ISV and customer extensions are prefixed in order to avoid type of collision is documented [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions#naming-model-elements)
+
+Recommended action
+If it does occur, the only workaround is to rename the customer or ISV enumeration value to follow naming guidelines and not collide with the new application value.
+
+ 
 ## FAQ
 
 ### What are the most common errors that can cause pre-servicing to fail?
