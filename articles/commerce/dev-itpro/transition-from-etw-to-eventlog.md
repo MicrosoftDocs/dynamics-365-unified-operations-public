@@ -126,7 +126,7 @@ This query will display all logs from `Microsoft-Dynamics-Commerce-RetailServer/
 This query will display all logs from `Application` log, with provider `Microsoft Dynamics - Retail Server` and with event name `Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh`.
 
 #### Filter by original log level
-EventLog supports following entry types: `Error`, `Warning`, `Information`, `SuccessAudit`, `FailureAudit` (https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1 ). So, logger maps log levels from different subsystems to match such limitations. Current mapping:
+EventLog supports following entry types: `Error`, `Warning`, `Information`, `SuccessAudit`, `FailureAudit` (https://docs.microsoft.com/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1 ). So, logger maps log levels from different subsystems to match such limitations. Current mapping:
 | EventLevel (legacy events) | LogLevel (Microsoft.Extensions.Logging) | EventLogEntryType |
 | -------------------------- | --------------------------------------- | ----------------- |
 | Undefined                  | None                                    | Not logged        |
