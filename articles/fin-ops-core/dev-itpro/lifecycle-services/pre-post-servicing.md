@@ -4,7 +4,7 @@
 title: Pre-servicing and post-servicing
 description: This article explains new changes that have been introduced for the servicing process.
 author: matapg007
-ms.date: 05/19/2022
+ms.date: 12/19/2022
 ms.topic: article
 audience: ADeveloper, IT Pro
 ms.reviewer: sericks
