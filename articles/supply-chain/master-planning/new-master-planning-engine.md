@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-The built-in master planning engine is scheduled to be made obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This article provides information about the impact on new and existing deployments. It includes information about required actions.
+The built-in master planning engine is obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This article provides information about the impact on new and existing deployments. It includes information about required actions.
 
 Planning Optimization enables master planning calculations to occur outside Supply Chain Management and its Azure SQL database. The benefits that are associated with Planning Optimization include improved performance and minimized impact on the SQL database during master planning runs. Because quick planning runs can be done even during office hours, planners can immediately react to demand or parameter changes.
 
@@ -39,19 +39,59 @@ For more information about Planning Optimization, see [Master planning system ar
 
 ## Obsolescence of the existing master planning engine
 
-Microsoft is in the process of making the deprecated master planning engine obsolete in favor of Planning Optimization. This change affects all cloud environments. On-premises installations aren't affected. In version 10.0.16 and later, you will receive an error message if you run the deprecated master planning engine without generating planned production orders. However, the master planning run will be successfully completed despite the error message.
+Microsoft has deprecated the built-in master planning engine obsolete in favor of Planning Optimization. This change affects all cloud environments. On-premises installations aren't affected. 
 
 For more information about the deprecated master planning engine, see the announcements in [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
-## Migration, messages, and exceptions
+## New deployments
+
+Planning Optimization must be considered the default master planning engine for all new deployments in the cloud. In general, Planning Optimization should be used for all new deployments that don't generate planned production orders during master planning. If a new deployment depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the deprecated master planning engine.
+
+## Existing deployments
+
+Owners of existing cloud-based deployments that depend on master planning should plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the deprecated master planning engine.
+
+## Exception process from release 10.0.32 and onwards
+
+From release 10.0.32 the release process is fully automated and from inside the dynamics application. The system will show you the right instructions depending on your case. The following are the possible cases you could be in and details on each of them.
+
+### Supported customers
+
+When the system detects that the features you are using are supported by Planning Optimization it will ask you to migrate. You will see the following message in the application when you run master planning manually:
+
+_You are supported to use the non-deprecated and faster master planning (Planning Optimization). More information about it on [Get started with Planning Optimization](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/get-started#install-and-enable-planning-optimization)_
+
+_We need you to provide some information regarding master planning. 
+
+Do you have customizations on the master planning engine?_
+
+If you do not have customizations, then you must migrate to Planning Optimization. If you need some time to test and migrate, it will be possible to select some time from the shown dialog and an exception will be automatically applied for the selected time.
+
+If you have customizations, you must move them to the existing extensibility point [Planning Optimization extensibility](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/extensibility)
+
+### Not supported yet customers
+
+If you are not yet supported on Planning Optimization, you will also get a message when running planning manually so that you are made aware that you must move to Planning Optimization once you are supported. 
+
+The action required from you is to evaluate your customizations if you have them to be migrated to the existing extensibility point, or to prepare for the migration, for example, contacting your partner and preparing for the migration.
+
+
+### Your environment does not support Plannning Optimization
+
+You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
+
+If this is the case, you will be prompted on the screen _You can only run deprecated master plannign in this environment. If you would like to get and enviornment that supports non-deprecated planning (Planning Optimization) please follow the instructions:_ _[Get started with Planning Optimization](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/get-started)_
+
+For partners or ISVs it is possible to obtain non-production environments with Biz Apps products and sales plays demo data to learn, test, and deliver end to end customer demos with their own solutions also supporting Planning Optimization for a reduced parice. These offers are only to be used on partner tenants, never on a customer’s tenant. You must request a license to do so on [the Partner sandbox request page](https://experience.dynamics.com/requestlicense/).
+
+
+## Exception process for releases up to 10.0.31
 
 Owners of existing environments who run the deprecated master planning engine without generating planned production orders will receive an email that provides details about the exception process. We recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
 
 As has been mentioned, you will receive an error message in version 10.0.16 and later if you run the deprecated master planning engine without generating planned production orders. This error message includes guidance about migration and instructions for requesting an exception.
 
-### New deployments
 
-Planning Optimization must be considered the default master planning engine for all new deployments in the cloud. In general, Planning Optimization should be used for all new deployments that don't generate planned production orders during master planning. If a new deployment depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the deprecated master planning engine.
 
 ### Existing deployments
 
