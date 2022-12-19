@@ -4,7 +4,7 @@
 title: Create and work with custom fields
 description: This article shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
-ms.date: 05/24/2021
+ms.date: 12/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -179,7 +179,11 @@ Custom fields can only be managed through the user interface and cannot be refer
 
 ### How can I move custom fields between environments? 
 
-The current recommendation for moving custom fields between environments is to manually re-create the custom fields in the target environment(s). To see the full list of custom fields on a particular table, navigate to the **Custom fields** page and select that table from the dropdown. In the target environment, following the process described earlier in this article to recreate each field. Once all the fields have been created and the **Apply changes** button has been triggered, you can move all the personalizations containing custom fields by exporting those personalizations from the original environment and importing them into the target environment.  
+The current recommendation for moving custom fields between environments is to manually re-create the custom fields in the target environment. To see the full list of custom fields on a particular table:
+1. Go to the **Custom fields** page, select that table from the dropdown. 
+2. In the target environment, follow the process described earlier in this article to recreate each field. 
+3. Once all the fields have been created, click **Apply changes**.  
+4. Move all the personalizations containing custom fields by exporting those personalizations from the original environment and importing them into the target environment.  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
