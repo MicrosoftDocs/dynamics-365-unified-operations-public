@@ -53,7 +53,7 @@ To create an NMFC code, follow these steps.
 
 The following example shows how to set up two different NMFC codes that can be used with different products.
 
-1. Go to **Warehouse management \> Setup \> Inventory \> NMFC codes**.
+1. Go to **Warehouse management \> Setup \> Inventory \> NMFC codes** or **Transportation management \> Setup \> Transportation standards \> NMFC codes**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 

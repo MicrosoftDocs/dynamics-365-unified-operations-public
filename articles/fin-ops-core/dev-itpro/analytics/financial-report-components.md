@@ -60,7 +60,7 @@ To unlock a locked building block, open the building block, and then click **Pro
 
 ## Building block groups
 
-Building blocks are the row definitions, column definitions, reporting tree definitions, and report definitions that you create for a report. Building block groups are collections of the definitions and dimension sets.
+Building blocks are the row definitions, column definitions, reporting tree definitions, and report definitions that you create for a report. Building block groups are collections of the definitions and dimension value sets.
 
 ### View a building block group
 
@@ -73,17 +73,17 @@ You can view all the building blocks that are assigned to a building block group
 
 ### Export a building block group
 
-You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
+You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between installations. Report designer includes the referenced font styles and dimension value sets together with the building block group.
 
 1. In Report Designer, on the **Company** menu, click **Building block groups**.
 2. In the **Building block groups** dialog box, select the building block group to export, and then click **Export**.
 3. In the **Export** dialog box, select the report definitions to export:
 
     - To export all your report definitions and the associated building blocks, click **Select all**.
-    - To export specific reports, rows, columns, trees, or dimension sets, click the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab.
+    - To export specific reports, rows, columns, trees, or dimension value sets, click the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab.
 
     > [!NOTE]
-    > When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
+    > When you select reports to export, the associated rows, columns, trees, and dimension value sets are selected.
 
 4. When you've finished selecting items to export, click **Export**.
 5. In the **Save As** dialog box, select a location to export the building block group to.
@@ -92,7 +92,7 @@ You can export a building block group or specific report building blocks in a bu
 
 ### Import a building block group
 
-You can import a building block group into an existing building block group. All imported building block groups retain their original font styles and company references, and include the relevant dimension sets.
+You can import a building block group into an existing building block group. All imported building block groups retain their original font styles and company references, and include the relevant dimension value sets.
 
 1. In Report designer, on the **Company** menu, click **Building block groups**.
 2. In the **Building block groups** dialog box, select the building block to import a building block group into, and then click **Import**.
@@ -100,7 +100,7 @@ You can import a building block group into an existing building block group. All
 4. In the **Import** dialog box, select the report definitions to import:
 
     - To import all the report definitions and the supporting building blocks, click **Select all**.
-    - To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
+    - To import specific reports, rows, columns, trees, or dimension value sets, select the reports, rows, columns, trees, or dimension value sets to import.
 
 5. When you've finished selecting items to import, click **Import**.
 
