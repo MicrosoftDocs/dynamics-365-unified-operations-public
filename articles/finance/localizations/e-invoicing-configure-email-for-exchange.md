@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Configure an email channel
+# Configure an email channel for Office 365 Exchange Online
 
 [!include [banner](../includes/banner.md)]
 
