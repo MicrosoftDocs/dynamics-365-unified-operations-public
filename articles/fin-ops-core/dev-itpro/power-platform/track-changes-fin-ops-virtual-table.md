@@ -41,9 +41,9 @@ A new change tracking option has been added to finance and operations apps to en
  
  ## Track changes for finance and operations virtual tables in Dataverse 
 
-If the above prerequisites are met, then the final step is to enable change tracking by selecting **Track changes** for the Virtual table in the Power Apps, see [Enable change tracking to control data synchronization](/dev-itpro/power-platform/admin/enable-change-tracking-control-data-synchronization).
+If the above prerequisites are met, then the final step is to enable change tracking by selecting **Track changes** for the Virtual table in the Power Apps, see [Enable change tracking to control data synchronization](/power-platform/admin/enable-change-tracking-control-data-synchronization).
 
 > [!IMPORTANT]
-> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](./enable-power-platform-integration.md). To enable see [What are Preview features, and how do I enable them?](/dev-itpro/power-platform/admin/what-are-preview-features-how-do-i-enable-them.md).
+> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](./enable-power-platform-integration.md). To enable see [What are Preview features, and how do I enable them?](/power-platform/admin/what-are-preview-features-how-do-i-enable-them).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
