@@ -83,6 +83,8 @@ When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The
 
 As for scenario 1, you should select the **Acknowledge Reset** to proceed futher. If maps are in **not running** state, then you will see a **Force Reset** button for selection.
 
+![Choose environment page in the Reset link to Dataverse wizard for scenario 2.](media/reset-image-7.png)
+
 When you select **Next** on the **Choose environment** page, the Dataverse database that's specified under **Current Dataverse Environment** is replaced with the database that's specified under **Power Platform Link Dataverse Environment**. If you want to continue to use dual-write with the Dataverse database that's specified under **Current Dataverse Environment**, then select **Cancel** to cancel the reset action. Open a support case with Microsoft, and we'll help you with the replacement. Refer to ICM 349669515.
 
 As for scenario 1, after you select **Next** on the **Choose environment** page, the **Select legal entities** page appears, where you can select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page. 
@@ -104,5 +106,7 @@ When you select **Reset link**, the **Reset link to Dataverse** wizard is opened
 **Current Dataverse Environment** refers to the database that's associated with your dual-write connection. Because there won't be any Power Platform integration setup, the reset functionality will refresh the displayed dual-write connection set as-is. If you want to associate the finance and operations environment with a different Dataverse organization, you must redeploy the finance and operations environment.
 
 As for scenario 1, you should select the **Acknowledge Reset** to proceed futher. If maps are in **not running** state, then you will see a **Force Reset** button for selection.
+
+![Choose environment page in the Reset link to Dataverse wizard for scenario 4.](media/reset-image-6.png)
 
 On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page.
