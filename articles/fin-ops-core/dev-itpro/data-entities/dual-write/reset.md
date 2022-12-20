@@ -2,7 +2,7 @@
 title: Reset functionality
 description: This article describes the reset button functionality of dual-write.
 author: ramasri
-ms.date: 12/12/2022
+ms.date: 12/20/2022
 ms.topic: article
 audience: Administrator
 ms.reviewer: johnmichalak
@@ -83,7 +83,7 @@ When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The
 
 As for scenario 1, you should select the **Acknowledge Reset** to proceed futher. If maps are in **not running** state, then you will see a **Force Reset** button for selection.
 
-![Choose environment page in the Reset link to Dataverse wizard for scenario 2.](media/reset-image-7.png)
+![Choose environment page in the Reset link to Dataverse wizard for scenario 2. Reset Power Platfor link to Dataverse.](media/reset-image-7.png)
 
 When you select **Next** on the **Choose environment** page, the Dataverse database that's specified under **Current Dataverse Environment** is replaced with the database that's specified under **Power Platform Link Dataverse Environment**. If you want to continue to use dual-write with the Dataverse database that's specified under **Current Dataverse Environment**, then select **Cancel** to cancel the reset action. Open a support case with Microsoft, and we'll help you with the replacement. Refer to ICM 349669515.
 
@@ -107,6 +107,6 @@ When you select **Reset link**, the **Reset link to Dataverse** wizard is opened
 
 As for scenario 1, you should select the **Acknowledge Reset** to proceed futher. If maps are in **not running** state, then you will see a **Force Reset** button for selection.
 
-![Choose environment page in the Reset link to Dataverse wizard for scenario 4.](media/reset-image-6.png)
+![Choose environment page in the Reset link to Dataverse wizard for scenario 4. Reset Link to Dataverse](media/reset-image-6.png)
 
 On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page.
