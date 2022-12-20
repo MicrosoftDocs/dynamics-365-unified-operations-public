@@ -51,6 +51,21 @@ Planning Optimization must be considered the default master planning engine for 
 
 Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, exception can be requested so that you can continue to use the deprecated master planning engine.
 
+## Recommendations for migration
+
+There are expected differences between the deprecated built-in (classic) master planning and Planning Optimization. Therefore, a one to one comparison cannot be made. 
+For distribution customers, differences are minimal and from the experience of other customers migrating, our recommendation is to enable and test Planning Optimization in UAT and when successful enable it on production environment. 
+Manufacturing customers may be more affected by some of the small architectural changes between classic planning and planning optimization. From the experience of other customers, we recommend that you enable and test Optimization in UAT:
+- Create two "testing plans" one for built-in planning and another one for Planning Optimization, with same settings as your existing used plan
+- With classic planning enabled, run the classic plan 
+- Now enable Planning Optimization and run the Planning Optimization plan
+- Export the planned orders from both plans on an excel file
+- Sum the planned order quantities up for a certain time periods (e.g. every month) for the classic plan
+- Sum the planned order quantities up for the same certain time periods (e.g. every month) for the Planning Optimization plan
+- Compare the quantities to make sure the result is the same (or very similar), it is expected that some orders may vary when at the end/beginning of the time period
+- If successful, test in UAT
+- Then, enable on Planning Optimization
+
 ## Exception process from release 10.0.32 and onwards
 
 From release 10.0.32 the release process is fully automated and from inside the dynamics application. The system will show you the right instructions depending on your case. The following are the possible cases you could be in and details on each of them.
