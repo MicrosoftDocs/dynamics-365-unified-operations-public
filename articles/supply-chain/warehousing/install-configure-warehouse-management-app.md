@@ -33,6 +33,8 @@ ms.dyn365.ops.version: 10.0.17
 
 This article explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how configure the app to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
+The Warehouse Management mobile app is only for your internal business use.  You may not republish or distribute the Warehouse Management mobile app externally in any app store or similar distribution service.  
+
 ## System requirements
 
 The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
@@ -69,6 +71,10 @@ As an alternative to installing from an app store, you can instead download the 
     If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
 
 For information about how install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
+
+The Warehouse Management mobile app is not available in app stores in China. However, downloading it from Microsoft App Center and using it along with Dynamics 365 Supply Chain Management operated by 21Vianet in China is officially supported. 
+
+
 
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
