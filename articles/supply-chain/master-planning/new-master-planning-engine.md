@@ -49,7 +49,7 @@ Planning Optimization must be considered the default master planning engine for 
 
 ## Existing deployments
 
-Owners of existing cloud-based deployments that depend on master planning should plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you can request an exception so that you can continue to use the deprecated master planning engine.
+Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, exception can be requested so that you can continue to use the deprecated master planning engine.
 
 ## Exception process from release 10.0.32 and onwards
 
@@ -63,7 +63,7 @@ _You are supported to use the non-deprecated and faster master planning (Plannin
 
 _We need you to provide some information regarding master planning. 
 
-Do you have customizations on the master planning engine?_
+_Do you have customizations on the master planning engine?_
 
 If you do not have customizations, then you must migrate to Planning Optimization. If you need some time to test and migrate, it will be possible to select some time from the shown dialog and an exception will be automatically applied for the selected time.
 
@@ -75,14 +75,17 @@ If you are not yet supported on Planning Optimization, you will also get a messa
 
 The action required from you is to evaluate your customizations if you have them to be migrated to the existing extensibility point, or to prepare for the migration, for example, contacting your partner and preparing for the migration.
 
+In the page [Planning Optimization fit analysis](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis) you can see the targeted waves for the coming functionality.
+
+Customers that previously had an exception will be kept until their needed features are supported.
 
 ### Your environment does not support Plannning Optimization
 
 You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
 
-If this is the case, you will be prompted on the screen _You can only run deprecated master plannign in this environment. If you would like to get and enviornment that supports non-deprecated planning (Planning Optimization) please follow the instructions:_ _[Get started with Planning Optimization](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/get-started)_
+If your environment does not support Planning Optimization, you will be prompted on the screen _You can only run deprecated master plannign in this environment. If you would like to get and enviornment that supports non-deprecated planning (Planning Optimization) please follow the instructions:_ _[Get started with Planning Optimization](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/get-started)_
 
-For partners or ISVs it is possible to obtain non-production environments with Biz Apps products and sales plays demo data to learn, test, and deliver end to end customer demos with their own solutions also supporting Planning Optimization for a reduced parice. These offers are only to be used on partner tenants, never on a customer’s tenant. You must request a license to do so on [the Partner sandbox request page](https://experience.dynamics.com/requestlicense/).
+These instructions are indicative, specially for partners and ISVs to bring awareness of Planning Optimization. For partners or ISVs it is possible to obtain non-production environments with Biz Apps products and sales plays demo data to learn, test, and deliver end to end customer demos with their own solutions also supporting Planning Optimization for a reduced price. These offers are only to be used on partner tenants, never on a customer’s tenant. You must request a license to do so on [the Partner sandbox request page](https://experience.dynamics.com/requestlicense/).
 
 
 ## Exception process for releases up to 10.0.31
