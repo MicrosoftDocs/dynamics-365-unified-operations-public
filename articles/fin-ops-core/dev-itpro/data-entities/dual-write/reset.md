@@ -63,13 +63,12 @@ When you select **Reset link**, the **Reset link to Dataverse** wizard is opened
 ![Choose environment page in the Reset link to Dataverse wizard for scenario 1.](media/reset-image-1.png)
 
 1. On the **Choose environment** page, select the **Acknowledge Reset** checkbox to confirm that you want to reset the setup of the dual-write configuration.
-2. Select the **Force Reset** checkbox to stop any maps that are in the **Running** state before the reset is started. This checkbox and the associated behavior have been adopted from the **Unlink** functionality because users are familiar with them.
-3. Select **Next** to continue.
-4. On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. By default, **None** is selected.
-5. When you've finished selecting the legal entities, select **Next** to open the **Health check** page.
-6. Select **Next** to open the **Summary** page.
+2. Select **Next** to continue.
+3. On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. By default, **None** is selected.
+4. When you've finished selecting the legal entities, select **Next** to open the **Health check** page.
+5. Select **Next** to open the **Summary** page.
 
-If you forgot to stop the running dual-write maps before you selected the **Reset** button, and if you also forgot to select the **Force Reset** checkbox on the **Choose environment** page of the **Reset link to Dataverse** wizard, the reset action will fail, and you'll receive a "Failed" message, as shown in the following illustration.
+If you forgot to stop the running dual-write maps before you selected the **Reset link** button, then you will see an additional **Force Reset** checkbox on the **Choose environment** page. This checkbox and its associated behavior have been adopted from the **Unlink** functionality because users are familiar with them. You must select this checkbox to proceed further.
 
 ![Failed message in the Reset link to Dataverse wizard.](media/reset-image-2.png)
 
@@ -82,18 +81,15 @@ When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The
 - **Current Dataverse Environment** refers to the Dataverse database that's associated with your dual-write connection.
 - **Power Platform Link Dataverse Environment** refers to the Dataverse database that's associated with the Power Platform integration setup for your finance and operations environment. As you'll see, the two values differ.
 
-As for scenario 1, you should select the **Acknowledge Reset** and **Force Reset** checkboxes before you select **Next**.
+As for scenario 1, you should select the **Acknowledge Reset** to proceed futher. If maps are in **not running** state, then you will see a **Force Reset** button for selection.
 
-When you select **Next** on the **Choose environment** page, the Dataverse database that's specified under **Current Dataverse Environment** is replaced with the database that's specified under **Power Platform Link Dataverse Environment**. If you want to continue to use dual-write with the Dataverse database that's specified under **Current Dataverse Environment**, and the finance and operations environment is a production environment, select **Cancel** to cancel the reset action. Then open a support case with Microsoft, and we'll help you with the replacement. Refer to ICM 349669515.
+When you select **Next** on the **Choose environment** page, the Dataverse database that's specified under **Current Dataverse Environment** is replaced with the database that's specified under **Power Platform Link Dataverse Environment**. If you want to continue to use dual-write with the Dataverse database that's specified under **Current Dataverse Environment**, then select **Cancel** to cancel the reset action. Open a support case with Microsoft, and we'll help you with the replacement. Refer to ICM 349669515.
 
-> [!NOTE]
-> Back-end replacement through Microsoft support cases is available only for finance and operations production environments, not for other types of environments.
-
-As for scenario 1, after you select **Next** on the **Choose environment** page, the **Select legal entities** page appears, where you can select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page. If you forgot to stop any table maps that were in a **Running** state before you selected the **Reset** button, and if you also forgot to select the **Force Reset** checkbox on the **Choose environment** page of the wizard, the reset action will fail, and you'll receive a "Failed" message.
+As for scenario 1, after you select **Next** on the **Choose environment** page, the **Select legal entities** page appears, where you can select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page. 
 
 ### Scenario 3: Your Power Platform integration setup is blank, and no Dataverse organization ID is set up for it
 
-When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The first page, **Choose environment**, informs you that you must set up a Power Platform link to Dataverse.
+When you select **Reset link**, the **Reset link to Dataverse** wizard is opened. The first page, **Choose environment**, informs you that you must set up a Power Platform link to Dataverse.
 
 ![Choose environment page in the Reset link to Dataverse wizard for scenario 3, informing you that you must set up a Power Platform link to Dataverse.](media/reset-image-4.png)
 
@@ -101,12 +97,12 @@ In this case, go to the [Power Platform integration](../../power-platform/enable
 
 ### Scenario 4: You're using a cloud-hosted instance of finance and operations apps
 
-When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The first page, **Choose environment**, shows the current environment details for your reference.
+When you select **Reset link**, the **Reset link to Dataverse** wizard is opened. The first page, **Choose environment**, shows the current environment details for your reference.
 
 ![Choose environment page in the Reset link to Dataverse wizard for scenario 4.](media/reset-image-5.png)
 
 **Current Dataverse Environment** refers to the database that's associated with your dual-write connection. Because there won't be any Power Platform integration setup, the reset functionality will refresh the displayed dual-write connection set as-is. If you want to associate the finance and operations environment with a different Dataverse organization, you must redeploy the finance and operations environment.
 
-As for scenario 1, you should select the **Acknowledge Reset** and **Force Reset** checkboxes before you select **Next**.
+As for scenario 1, you should select the **Acknowledge Reset** to proceed futher. If maps are in **not running** state, then you will see a **Force Reset** button for selection.
 
-On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page. If you forgot to stop any table maps that are in the **Running** state before you selected the **Reset** button, and if you also forgot to select the **Force Reset** checkbox on the **Choose environment** page of the wizard, the reset action will fail, and you'll receive a "Failed" message.
+On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page.
