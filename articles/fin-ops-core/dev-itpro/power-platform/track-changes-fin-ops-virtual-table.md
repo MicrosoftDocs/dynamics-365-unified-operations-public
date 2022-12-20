@@ -38,13 +38,13 @@ A new change tracking option has been added to finance and operations apps to en
 
 track-changes-fin-ops-virtual-table.md)
 - The **Allow Row Version Change Tracking** metadata property, must be set to **Yes** for the data entity, see [Allow Row version change tracking for Data entities](../data-entities/rowversion-change-track.md)
-- Finance and Operations entities must be visible in Dataverse, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md)
+- Finance and Operations entities must be visible in Dataverse, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md).
  
  ## Track changes for finance and operations virtual tables in Dataverse 
 
 If the above prerequisites are met, then the final step is to enable change tracking by selecting **Track changes** for the Virtual table in the Power Apps, see [Enable change tracking to control data synchronization](/power-platform/admin/enable-change-tracking-control-data-synchronization).
 
 > [!IMPORTANT]
-> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](/power-platform/enable-power-platform-integration). To enable see [What are Preview features, and how do I enable them?](/power-platform/edit/main/power-platform/admin/what-are-preview-features-how-do-i-enable-them).
+> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](/power-platform/enable-power-platform-integration). To enable see [What are Preview features, and how do I enable them?](/power-platform/admin/what-are-preview-features-how-do-i-enable-them).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
