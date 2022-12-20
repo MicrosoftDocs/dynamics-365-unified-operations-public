@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS Transition from ETW to EventLog logger
+title: POS transition from ETW to EventLog logger
 description: This article describes how to view POS telemetry from the new EventLog logger.
 author: stuharg
 ms.date: 12/18/2022
@@ -15,7 +15,7 @@ ms.search.validFrom: 2023-01-30
 
 # POS Transition from ETW to EventLog logger
 
-## Introduction 
+[!include [banner](../includes/banner.md)]
 
 Dynamics 365 Commerce is switching to a new logging approach based on the Microsoft.Extensions.Logging framework and structured logging patterns, which will simplify log generation and maintenance. Previously an ETW logger was used, but the new decentralized nature of event definitions requires that we switch to using an EventLog logger.
 
@@ -51,7 +51,7 @@ With ETW logger, Event Viewer legacy events were logged and presented according 
 
 ![ETW Logs Structure](media\ETWLogsStructure.png)
 
-### New events
+#### New events
 
 The ETW logger has limited support for structured logging. 
 All events will be logged as `GenericStructuredLogging*` events according to the table:
@@ -83,27 +83,25 @@ With EventLog logger, Event Viewer new events are logged in structured format (f
 
 ## Querying and filtering structured events from ETW and EventLog loggers
 
-### Basics
-
 For basic filtering, it's possible to use the Event Viewer UI where you can filter by criteria such as specific provider and log level. Filter for structured information logs from Retail Server:
 
-#### ETW
+### ETW
 
 ![ETW Basic Filters](media\ETWBasicFilters.png)
 
-#### EventLog
+### EventLog
 
 ![EventLog Basic Filters](media\EventLogBasicFilters.png)
 
-### Advanced filters
+## Advanced filters
 
 Event Viewer allows a subset of XPath queries to be used for filtering. You can save such filters as custom views (for example, filtering by event name or filtering by original log level) that allow you to easily perform such tasks in future (for example, substituting event names in filters instead of writing a new XPath query).
 
-#### Filter by event name
+### Filter by event name
 
 Design for new way of logging (i.e. structured logging via LogInformation, etc.) assumed that events will be uniquely identifiable only by EventName, so EventIds are just default enum values (since events are now distributed across repositories and classes there's no feasible way to enforce uniqueness of EventId, since it is just simple integer). To search for specific events, we can query them by event name via XPath:
 
-##### ETW
+#### ETW
 
 ![ETW Filter By Event Name](\media\ETWFilterByEventName.png)
 
@@ -138,7 +136,7 @@ This query will display all logs from `Microsoft-Dynamics-Commerce-RetailServer/
 
 This query will display all logs from `Application` log, with provider `Microsoft Dynamics - Retail Server` and with event name `Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh`.
 
-#### Filter by original log level
+### Filter by original log level
 
 EventLog supports following entry types: `Error`, `Warning`, `Information`, `SuccessAudit`, `FailureAudit` ([see link for more details](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true)). So, logger maps log levels from different subsystems to match such limitations. Current mapping:
 | EventLevel (legacy events) | LogLevel (Microsoft.Extensions.Logging) | EventLogEntryType |
