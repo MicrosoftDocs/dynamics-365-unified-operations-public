@@ -18,16 +18,21 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-Currently, when you want to clear a configuration and start from scratch, or when you encounter a stuck state, you link and unlink the dual-write connection between finance and operations apps and Microsoft Dataverse. During this process, if you accidentally select an incorrect Dataverse organization, data can become corrupted. To help prevent this issue, as of Platform update 54 (PU54) for version 10.0.30 of finance and operations apps, Microsoft is removing the **Link** and **Unlink** buttons from the dual-write administration user interface (UI). All dual-write connections are now handled through Microsoft Dynamics Lifecycle Services, by using the Power Platform integration setup. Instead, a new **Reset** button that's being added in the dual-write administration UI will help you refresh the connection without changing the underlying Dataverse organization ID.
+Currently, when you want to clear a configuration and start from scratch, or when you encounter a stuck state, you link and unlink the dual-write connection between finance and operations apps and Microsoft Dataverse. During this process, if you accidentally select an incorrect Dataverse organization, data can become corrupted. To help prevent this issue, as of Platform update 54 (PU54) for version 10.0.30 of finance and operations apps, Microsoft is removing the **Link** and **Unlink** buttons from the dual-write administration user interface (UI). All dual-write connections are now handled through Microsoft Dynamics Lifecycle Services, by using the Power Platform integration setup. Instead, a new **Reset link** button that's being added in the dual-write administration UI will help you refresh the connection without changing the underlying Dataverse organization ID.
 
 ## Prerequisites
 
-- To see the **Reset** button, you must have Platform update 54 for version 10.0.30 of finance and operations apps, or later.
-- You must stop all dual-write maps before you use the **Reset** button.
+- To see the **Reset link** button, you must have Platform update 54 for version 10.0.30 of finance and operations apps, or later.
+- You must stop all dual-write maps before you use the **Reset link** button.
 
-## What does the Reset button do? 
+## New banner on dual-write administration screen
+As soon as you open the dual-write administration screen, you will see an information banner at the top saying "The 'link' and 'Unlink' buttons have been replaced with the ‘reset link’ button. Learn more". This is to make sure you are aware of the change.
 
-When you select **Reset**, the dual-write service performs the following back-end actions:
+![Information banner on dual-write administration page.](media/reset-banner-1.png)
+
+## What does the Reset link button do? 
+
+When you select **Reset link**, the dual-write service performs the following back-end actions:
 
 - Clear all dual-write runtime configuration data from the following tables:
 
@@ -41,19 +46,19 @@ When you select **Reset**, the dual-write service performs the following back-en
 
         - Dual Write Runtime Configurations
 
-- Remove all dual-write maps, including their metadata (such as integration keys, filters, and status), static data (such as legal entities that are configured for dual-write, and default settings and transformations on maps), and runtime data (such as activity logs and version history).
+- Remove all dual-write **configuration data** like dual-write maps, integration keys, legal entity mapping for dual-write, default alert settings, activity logs, initial sync history etc.
 - Restore the dual-write connection set between finance and operations apps and Dataverse from the Power Platform integration setup.
 
 > [!IMPORTANT]
-> After a reset, you must bring over the maps and start over from scratch by using the **Apply Solution** functionality to apply the required solutions. Therefore, unless you're sure that you want to reset dual-write, don't select the **Reset** button.
+> After a reset, you must bring over the maps and start over from scratch by using the **Apply Solution** functionality to apply the required solutions. Therefore, unless you're sure that you want to reset dual-write, don't select the **Reset link** button.
 
 ## Reset scenarios
 
-Your experience when you select the **Reset** button will vary slightly, depending on the type of your finance and operations environment (production, sandbox, or cloud-hosted) and the status of the Power Platform integration setup. The following scenarios describe these variations.
+Your experience when you select the **Reset link** button will vary slightly, depending on the type of your finance and operations environment (production, sandbox, or cloud-hosted) and the status of the Power Platform integration setup. The following scenarios describe these variations.
 
 ### Scenario 1: Dual-write uses the same Dataverse organization ID that's set up for Power Platform integration
 
-When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The first page, **Choose environment**, shows environment details for your reference.
+When you select **Reset link**, the **Reset link to Dataverse** wizard is opened. The first page, **Choose environment**, shows environment details for your reference.
 
 ![Choose environment page in the Reset link to Dataverse wizard for scenario 1.](media/reset-image-1.png)
 
