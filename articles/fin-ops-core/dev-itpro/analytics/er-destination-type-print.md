@@ -36,6 +36,10 @@ To make the **Printer** destination available in the current instance of Microso
 
 [![Turning on the ER printer destination feature in Feature management.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
+### Run the Document Routing Agent as a service
+
+The Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Microsoft Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
+
 ### Applicability
 
 #### PDF printing
