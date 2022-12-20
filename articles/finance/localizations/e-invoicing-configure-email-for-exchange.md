@@ -47,6 +47,9 @@ If the Electronic invoicing feature that you created imports electronic vendor i
 12. Select **Certificates & secrets** blade.
 13. On the **Client secrets** tab, select **New client secret**. Pay attention on Expiration setting: once a secret expires, it cannot be used anymore and a new secret should be created.
 14. After secret is created, copy it's **Value** and save it into Azure Key Vault associated with the Electronic Invoicing Service Environment. Then add a link to this secret into RCS service environment: [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md)
+
+	![Copy the value of the application secret.](media/e-invoicing-configure-email-for-exchange3.png)
+
 15. Save **Application (client) ID** value as secret into the same Key Vault and add a link to this secret into Electronic Invoicing Service service environment in RCS.
 16. In the Azure portal, chose the **Enterprise Applications** service.
 17. Find the application with the same name as App registration created in step 3.
