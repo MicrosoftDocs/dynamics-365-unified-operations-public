@@ -65,9 +65,13 @@ However, as of version 10.0.18, you can configure the **Printer** destination fo
 #### <a name="EMFprinting"></a>EMF printing
 
 Starting from version 10.0.32 of Finance, the possibility to generate outbound documents in Enhanced Metafile (**EMF**) format has been implemented.
-To activate documents generation in EMF format, do perform the following configurations steps:
+To activate documents generation in EMF format, perform the following configurations steps:
+  
 1. Make sure that the [Enable support of Document Routing agent running as a service](#DRAservice) feature is turned on in the Feature management.
-
+2. Configure the **Printer** destination for the required format component by selecting **EMF** for the **Document routing type** parameter.
+  
+  [![Configure EMF file generation.](./media/ER_Destinations-EMF.jpg)](./media/ER_Destinations-EMF.jpg)
+  
 #### ZPL printing
 
 In version 10.0.26 and later, you can configure the **Printer** destination for the **Common\\File** format element by selecting **ZPL** for the **Document routing type** parameter. In this case, the **Convert to PDF** option is ignored at runtime, and the TXT or XML output is sent directly to a selected printer by using the Zebra Programming Language (ZPL) contract of the [Document routing agent (DRA)](install-document-routing-agent.md). Use this feature for an ER format that represents a ZPL II label layout to print various labels.
