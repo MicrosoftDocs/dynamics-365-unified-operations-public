@@ -40,6 +40,10 @@ To make the **Printer** destination available in the current instance of Microso
 
 The Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Microsoft Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
 
+Starting from version 10.0.32 of Finance, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, go to the **Feature management** workspace, and turn on the **Enable support of Document Routing agent running as a service** feature:
+
+[![Enable support of Document Routing agent running as a service.](./media/ER_Destinations-EnableDRAasService.jpg)](./media/ER_Destinations-EnableDRAasService.jpg)
+
 ### Applicability
 
 #### PDF printing
