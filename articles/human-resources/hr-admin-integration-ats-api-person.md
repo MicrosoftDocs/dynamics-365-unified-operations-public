@@ -4,7 +4,7 @@
 title: Person
 description: This article describes the Person entity for Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,8 +74,8 @@ This entity provides the personal information for the individual who is the cand
     "mshr_addresscounty": "String",
     "mshr_addressdistrictname": "String",
     "mshr_addresslatitude": Decimal,
-    "mshr_addresslocationid": "000003212",
-    "mshr_addresslocationroles": "Home",
+    "mshr_addresslocationid": "String",
+    "mshr_addresslocationroles": "String",
     "mshr_addresslongitude": Decimal,
     "mshr_addressstate": "String",
     "mshr_addressstreet": "String",

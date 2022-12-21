@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup   
 ms.topic: how-to
 ms.date: 11/10/2022
+audience: Application User
 ms.custom: bap-template
 ---
 

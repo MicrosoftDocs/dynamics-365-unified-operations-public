@@ -55,7 +55,7 @@ Due to certain technical dependencies, the following features listed will not be
 
 -   [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 
--   Certain **mobile apps** (e.g., [Install and configure the Warehousing app overview](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
+-   Certain **mobile apps** (e.g., [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
 

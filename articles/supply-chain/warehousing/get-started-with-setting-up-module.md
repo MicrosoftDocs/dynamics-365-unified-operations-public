@@ -8,6 +8,7 @@ ms.search.form: WHSWarehouseInitiationWizard, WHSManagementInitiationWizard, WHS
 ms.service: dynamics-365
 ms.topic: how-to
 ms.date: 11/09/2022
+audience: Application User
 ms.custom: bap-template
 ---
 

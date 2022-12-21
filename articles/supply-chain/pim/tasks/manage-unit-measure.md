@@ -7,6 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
 ms.topic: how-to
 ms.date: 12/08/2022
+audience: Application User
 ms.custom: bap-template
 ---
 
