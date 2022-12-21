@@ -37,15 +37,13 @@ To make the **Printer** destination available in the current instance of Microso
 [![Turning on the ER printer destination feature in Feature management.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 > [!NOTE]
-> Starting from version 10.0.32 of Finance, the features **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** and **Document Routing Agent as Electronic Reporting destination for outbound documents** have been eliminated. The functionality controlled by these features is enabled by default out-of-the-ox.
+> Starting from version 10.0.32 of Finance, the features **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** and **Document Routing Agent as Electronic Reporting destination for outbound documents** have been eliminated. The functionality controlled by these features is enabled by default out-of-the-box.
 
 ### Run the Document Routing Agent as a service
 
 The Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Microsoft Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
 
-<a name="DRAservice"></a>Starting from version 10.0.32 of Finance, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, go to the **Feature management** workspace, and turn on the **Enable support of Document Routing agent running as a service** feature:
-
-[![Enable support of Document Routing agent running as a service.](./media/ER_Destinations-EnableDRAasService.jpg)](./media/ER_Destinations-EnableDRAasService.jpg)
+<a name="DRAservice"></a>Starting from version 10.0.32 of Finance, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, go to the **Feature management** workspace, and turn on the **Enable support of Document Routing agent running as a service** feature.
 
 ### Applicability
 
