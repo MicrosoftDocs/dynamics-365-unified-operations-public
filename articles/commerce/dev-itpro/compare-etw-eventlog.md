@@ -106,9 +106,9 @@ Event Viewer allows a subset of XPath queries to be used for filtering. You can 
 
 ### Filter by event name
 
-Design for new way of logging (in other words, structured logging via LogInformation, etc.) assumed that events will be uniquely identifiable only by EventName, so EventIds are just default enum values (since events are now distributed across repositories and classes there's no feasible way to enforce uniqueness of EventId, since it is just simple integer). To search for specific events, you can query them by event name via XPath:
-
 #### ETW
+
+To search for specific events using the ETW logger, you can query them by event name via XPath as shown in the following example image and XML code block.
 
 ![ETW Filter By Event Name](\media\ETWFilterByEventName.png)
 
@@ -122,9 +122,13 @@ Design for new way of logging (in other words, structured logging via LogInforma
 </QueryList>
 ````
 
-This query will display all logs from `Microsoft-Dynamics-Commerce-RetailServer/Operational` log, with `eventName` equal to `Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh`.
+This query displays all logs from the **Microsoft-Dynamics-Commerce-RetailServer/Operational** log, with **eventName** equal to **Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh**.
 
 #### EventLog
+
+With the EventLog logger, structured logging assumes that events are uniquely identifiable by **EventName**. **EventIds** are just default enum values because events are distributed across repositories and classes and there's no feasible way to enforce the uniqueness of **EventId** values since they are just simple integers.
+
+To search for specific events using the EventLog logger, you can query them by event name via XPath as shown in the following example image and XML code block.
 
 ![EventLog Filter By Event Name](media\EventLogFilterByEventName.png)
 
@@ -145,7 +149,18 @@ This query will display all logs from `Application` log, with provider `Microsof
 
 ### Filter by original log level
 
-EventLog supports following entry types: `Error`, `Warning`, `Information`, `SuccessAudit`, `FailureAudit` ([see link for more details](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true)). So, logger maps log levels from different subsystems to match such limitations. Current mapping:
+The EventLog logger supports following entry types: 
+
+- **Error
+- **Warning**
+- **Information**
+- **SuccessAudit**
+- **FailureAudit** 
+
+EventLog logger maps log levels from different subsystems to match entry type limitations. For more information, see [EventLogEntryType Enum](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true).
+
+THe following table displays current log mapping
+
 | EventLevel (legacy events) | LogLevel (Microsoft.Extensions.Logging) | EventLogEntryType |
 | -------------------------- | --------------------------------------- | ----------------- |
 | Undefined                  | None                                    | Not logged        |
@@ -157,7 +172,7 @@ EventLog supports following entry types: `Error`, `Warning`, `Information`, `Suc
 | Verbose                    | Debug                                   | Information       |
 |                            | Trace                                   | Information       |
 
-To allow more precise filtering, information about original log level (from Microsoft.Extensions.Logging) is stored as part of the event. So, we can query them by original log level via XPath:
+To allow more precise filtering, information about the original log level from Microsoft.Extensions.Logging is stored as part of the event. This allows you to query them by original log level via XPath, as shown in the following example query.
 
 ````xml
 <QueryList>
@@ -172,4 +187,4 @@ To allow more precise filtering, information about original log level (from Micr
 </QueryList>
 ````
 
-This query will display all logs from `Application` log, with provider `Microsoft Dynamics - Retail Server` and with original log level being `Information` (i.e. it will allow us separate `Information` logs from `Debug` and `Trace`).
+The query above displays all logs from the **Application** log, with the provider **Microsoft Dynamics - Retail Server** and with the original log level of **Information**, which allows you to separate **Information** logs from **Debug** and **Trace** logs).
