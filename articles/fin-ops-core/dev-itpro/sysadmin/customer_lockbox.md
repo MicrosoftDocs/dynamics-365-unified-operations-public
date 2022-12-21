@@ -55,5 +55,5 @@ Not all finance and operations apps fully support Customer Lockbox in the curren
 |---|---|
 | Dynamics 365 Supply Chain Management | Supports Customer Lockbox for all environment-specific resources.|
 | Dynamics 365 Human Resources | .???. |
-| Dynamics 365 Finance | Supports Customer Lockbox for all environment-specific resources.<br/><br/>.???.<br/><br/>Dynamics 365 Finance environments running the [Regular Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) aren't currently supported by Customer Lockbox. Support for RCS is planned for late 2023.|
+| Dynamics 365 Finance | Supports Customer Lockbox for all environment-specific resources.<br/><br/>.???.<br/><br/>Dynamics 365 Finance environments running the [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) aren't currently supported by Customer Lockbox. Support for RCS is planned for late 2023.|
 |  |  |
