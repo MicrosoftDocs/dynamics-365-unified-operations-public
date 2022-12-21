@@ -2,26 +2,29 @@
 # required metadata
 
 title: POS transition from ETW to EventLog logger
-description: This article describes how to view POS telemetry from the new EventLog logger.
+description: This article covers the POS transition from ETW to EventLog logger and describes how to view POS telemetry from the EventLog logger in Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 12/18/2022
+ms.date: 12/21/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.search.region: global
 ms.author: stuharg
-ms.search.validFrom: 2023-01-30
+ms.reviewer: v-chgriffin
+ms.search.validFrom: 2022-12-30
 
 ---
 
-# POS Transition from ETW to EventLog logger
+# POS transition from ETW to EventLog logger
 
 [!include [banner](../includes/banner.md)]
+
+This article covers the POS transition from ETW to EventLog logger and describes how to view POS telemetry from the EventLog logger in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce is switching to a new logging approach based on the Microsoft.Extensions.Logging framework and structured logging patterns, which will simplify log generation and maintenance. Previously an ETW logger was used, but the new decentralized nature of event definitions requires that we switch to using an EventLog logger.
 
 The EventLog logger will log structured XML event data and include additional information (such as original log level). Such events can be filtered and queried, for example by using XPath in Event Viewer (**filter \> XML \> Edit query manually**). During the transition period from Commerce version 10.0.21 to version 10.0.32, both the ETW and EventLog loggers were enabled. The ETW logger will be removed starting in 10.0.32.
 
-Further in these transition guidelines we'll be using `Retail Server` logs as an example.
+Further in these transition guidelines we'll be using Retail Server logs as an example.
 
 ## Log location
 
@@ -99,7 +102,7 @@ Event Viewer allows a subset of XPath queries to be used for filtering. You can 
 
 ### Filter by event name
 
-Design for new way of logging (i.e. structured logging via LogInformation, etc.) assumed that events will be uniquely identifiable only by EventName, so EventIds are just default enum values (since events are now distributed across repositories and classes there's no feasible way to enforce uniqueness of EventId, since it is just simple integer). To search for specific events, we can query them by event name via XPath:
+Design for new way of logging (in other words, structured logging via LogInformation, etc.) assumed that events will be uniquely identifiable only by EventName, so EventIds are just default enum values (since events are now distributed across repositories and classes there's no feasible way to enforce uniqueness of EventId, since it is just simple integer). To search for specific events, we can query them by event name via XPath:
 
 #### ETW
 
