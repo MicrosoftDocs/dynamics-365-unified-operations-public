@@ -66,43 +66,47 @@ Because the ETW logger has limited support for structured logging, all new event
 | LogInformation                 | GenericStructuredLoggingInformation | 65003    |
 | LogDebug                       | GenericStructuredLoggingDebug       | 65004    |
 
-Due to manifest limitations, only generic and the most commonly used properties are logged as separate event data entries. The rest of the properties are logged as aggregated JSON objects.
+Due to manifest limitations, only generic and the most commonly used properties are logged as separate event data entries. The rest of the properties are logged as aggregated JSON objects, as shown in the following example image.
 
 ![ETW New Logs Structure](media\ETWNewLogsStructure.png)
 
-### Event log
+### EventLog
 
 #### Legacy events
 
-With EventLog logger, Event Viewer legacy events are logged in legacy format (for example, only a formatted message is logged) for backward compatibility, as shown in the following example image.
+With EventLog logger, legacy Event Viewer events are logged in legacy format for backward compatibility. For example, only a formatted message is logged, as shown in the following image.
 
 ![EventLog Legacy Logs Structure](media\EventLogLegacyLogsStructure.png)
 
 #### New events
 
-With EventLog logger, Event Viewer new events are logged in structured format (for example, both the formatted message and all properties from state and scope are logged as separate event data entries) to provide more information and allow precise filtering and querying, as shown in the following example image.
+With EventLog logger, new Event Viewer events are logged in structured format to provide more information and allow precise filtering and querying. For example, both the formatted message and all properties from state and scope are logged as separate event data entries, as shown in the following image.
 
 ![EventLog New Logs Structure](media\EventLogNewLogsStructure.png)
 
-## Querying and filtering structured events from ETW and EventLog loggers
+## Query and filter structured events
 
-For basic filtering, it's possible to use the Event Viewer UI where you can filter by criteria such as specific provider and log level. Filter for structured information logs from Retail Server:
+For basic filtering, it's possible to use the Event Viewer UI to filter by criteria such as specific provider and log level. 
 
 ### ETW
+
+With ETW logger, you can filter and query for structured information logs as shown in the following example image.
 
 ![ETW Basic Filters](media\ETWBasicFilters.png)
 
 ### EventLog
 
+With EventLog logger, you can filter and query for structured information logs as shown in the following example image.
+
 ![EventLog Basic Filters](media\EventLogBasicFilters.png)
 
 ## Advanced filters
 
-Event Viewer allows a subset of XPath queries to be used for filtering. You can save such filters as custom views (for example, filtering by event name or filtering by original log level) that allow you to easily perform such tasks in future (for example, substituting event names in filters instead of writing a new XPath query).
+Event Viewer allows a subset of XPath queries to be used for filtering. You can save such filters as custom views, for example, filtering by event name or filtering by original log level. Filters saved as custom views allow you to easily perform the same tasks at a later time. for example, substituting event names in filters instead of writing a new XPath query.
 
 ### Filter by event name
 
-Design for new way of logging (in other words, structured logging via LogInformation, etc.) assumed that events will be uniquely identifiable only by EventName, so EventIds are just default enum values (since events are now distributed across repositories and classes there's no feasible way to enforce uniqueness of EventId, since it is just simple integer). To search for specific events, we can query them by event name via XPath:
+Design for new way of logging (in other words, structured logging via LogInformation, etc.) assumed that events will be uniquely identifiable only by EventName, so EventIds are just default enum values (since events are now distributed across repositories and classes there's no feasible way to enforce uniqueness of EventId, since it is just simple integer). To search for specific events, you can query them by event name via XPath:
 
 #### ETW
 
@@ -120,7 +124,7 @@ Design for new way of logging (in other words, structured logging via LogInforma
 
 This query will display all logs from `Microsoft-Dynamics-Commerce-RetailServer/Operational` log, with `eventName` equal to `Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh`.
 
-#### Event Log
+#### EventLog
 
 ![EventLog Filter By Event Name](media\EventLogFilterByEventName.png)
 
