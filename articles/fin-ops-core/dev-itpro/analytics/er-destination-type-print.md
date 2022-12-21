@@ -45,6 +45,8 @@ The Document Routing Agent includes an option that lets you select the mode of e
 
 <a name="DRAservice"></a>Starting from version 10.0.32 of Finance, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, go to the **Feature management** workspace, and turn on the **Enable support of Document Routing agent running as a service** feature.
 
+[![Enable support of Document Routing agent running as a service.](./media/ER_Destinations-EnableDRAasService.jpg)](./media/ER_Destinations-EnableDRAasService.jpg)
+
 ### Applicability
 
 #### PDF printing
