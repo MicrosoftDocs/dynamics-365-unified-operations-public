@@ -126,7 +126,7 @@ This query displays all logs from the **Microsoft-Dynamics-Commerce-RetailServer
 
 #### EventLog
 
-With the EventLog logger, structured logging assumes that events are uniquely identifiable by **EventName**. **EventIds** are just default enum values because events are distributed across repositories and classes and there's no feasible way to enforce the uniqueness of **EventId** values since they're simple integers.
+With the EventLog logger, structured logging assumes that events are uniquely identifiable by **EventName**. **EventIds** are default enum values because events are distributed across repositories and classes and there's no feasible way to enforce the uniqueness of **EventId** values that are simple integers.
 
 To search for specific events using the EventLog logger, you can query them by event name via XPath as shown in the following example image and XML code block.
 
