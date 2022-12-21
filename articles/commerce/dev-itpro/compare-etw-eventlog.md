@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: POS transition from ETW to EventLog logger
-description: This article covers the POS transition from ETW to EventLog logger and describes how to view POS telemetry from the EventLog logger in Microsoft Dynamics 365 Commerce.
+title: Comparison of ETW and EventLog logger functionality
+description: This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger with the EventLog logger, as used in Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 12/21/2022
 ms.topic: article
@@ -14,33 +14,33 @@ ms.search.validFrom: 2022-12-30
 
 ---
 
-# POS transition from ETW to EventLog logger
+# Comparison of ETW and EventLog logger functionality
 
 [!include [banner](../includes/banner.md)]
 
-This article covers the POS transition from ETW to EventLog logger and describes how to view POS telemetry from the EventLog logger in Microsoft Dynamics 365 Commerce.
+This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger with the EventLog logger, as used in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce is switching to a new logging approach based on the Microsoft.Extensions.Logging framework and structured logging patterns, which will simplify log generation and maintenance. Previously an ETW logger was used, but the new decentralized nature of event definitions requires that we switch to using an EventLog logger.
+As of Dynamics 365 Commerce version 10.0.32, the decentralized nature of event definitions prompted Commerce to switch from using ETW to using EventLog logger to log events. The EventLog logger is based on the Microsoft.Extensions.Logging framework and structured logging patterns, which simplifies log generation and maintenance.
 
-The EventLog logger will log structured XML event data and include additional information (such as original log level). Such events can be filtered and queried, for example by using XPath in Event Viewer (**filter \> XML \> Edit query manually**). During the transition period from Commerce version 10.0.21 to version 10.0.32, both the ETW and EventLog loggers were enabled. The ETW logger will be removed starting in 10.0.32.
+The EventLog logger logs structured XML event data and includes additional information such as the original log level. Structured XML event data can be filtered and queried, for example by using XPath in Event Viewer (**Filter \> XML \> Edit query manually**). During the transition period from Commerce version 10.0.21 to version 10.0.32, both the ETW and EventLog loggers were enabled. The ETW logger was removed starting in Commerce version 10.0.32.
 
-Further in these transition guidelines we'll be using Retail Server logs as an example.
+For the comparison between loggers, we'll be using Retail Server logs in the examples.
 
 ## Log location
 
 ### ETW
 
-Previously, with ETW logger, in `Event Viewer` events were placed in `Applications and Services Logs` under `Microsoft/Dynamics` in provider-specific folder, as shown in the following example image.
+With the ETW logger, Event Viewer events were placed under **Applications and Services Logs /> Microsoft /> Dynamics** in a provider-specific directory, as shown in the following example image.
 
 ![ETW Logs Location](media\ETWLogsLocation.png)
 
 ### Event Log
 
-Now, with EventLog logger, in `Event Viewer` events are placed in `Windows Logs` in `Application` log, as shown in the following example image.
+With the EventLog logger, Event Viewer events are placed in the **Windows Logs  \> Application** log, as shown in the following example image.
 
 ![EventLog Logs Location](media\EventLogLogsLocation.png)
 
-Inside `Application`, logs from providers can be differentiated by `Source` property, as shown in the following example image.
+In **Application**, logs from providers are grouped by the source property, shown in the following example image as **Microsoft Dynamics - Retail Server**.
 
 ![EventLog Logs Source](media\EventLogLogsSource.png)
 
@@ -50,14 +50,14 @@ Inside `Application`, logs from providers can be differentiated by `Source` prop
 
 #### Legacy events
 
-With ETW logger, Event Viewer legacy events were logged and presented according to manifest, as shown in the following example image.
+With ETW logger, legacy Event Viewer events are logged and presented according to the manifest, as shown in the following example image.
 
 ![ETW Logs Structure](media\ETWLogsStructure.png)
 
 #### New events
 
-The ETW logger has limited support for structured logging. 
-All events will be logged as `GenericStructuredLogging*` events according to the table:
+Because the ETW logger has limited support for structured logging, all new events are logged as "GenericStructuredLogging" events, as listed in the following table.
+
 | Structured logging method name | Translated method name              | Event ID |
 | ------------------------------ | ----------------------------------- | -------- |
 | LogCritical                    | GenericStructuredLoggingCritical    | 65000    |
@@ -66,7 +66,7 @@ All events will be logged as `GenericStructuredLogging*` events according to the
 | LogInformation                 | GenericStructuredLoggingInformation | 65003    |
 | LogDebug                       | GenericStructuredLoggingDebug       | 65004    |
 
-Due to manifest limitations, only generic and most commonly used properties are logged as separate event data entries. The rest of the properties are logged as aggregated JSON objects.
+Due to manifest limitations, only generic and the most commonly used properties are logged as separate event data entries. The rest of the properties are logged as aggregated JSON objects.
 
 ![ETW New Logs Structure](media\ETWNewLogsStructure.png)
 
