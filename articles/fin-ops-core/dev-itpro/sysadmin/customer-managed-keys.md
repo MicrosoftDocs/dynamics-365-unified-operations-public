@@ -24,8 +24,8 @@ A number of Add-Ins may be available in LCS for each Finance and Operations envi
 
 |Add In  |Status  |
 |--------|--------|
-|Tax Calculation|Tax Calculation uses RCS which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
-|Electronic Invoicing|Electronic Invoicing uses RCS which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
+|Tax Calculation|Tax Calculation uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
+|Electronic Invoicing|Electronic Invoicing uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
 |||
 
 ### CMK support across Finance and Operations Offers / Applications
