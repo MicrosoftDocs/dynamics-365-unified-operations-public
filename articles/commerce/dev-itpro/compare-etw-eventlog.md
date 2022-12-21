@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-12-30
 
 This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger with the EventLog logger, as used in Microsoft Dynamics 365 Commerce.
 
-As of Dynamics 365 Commerce version 10.0.32, the decentralized nature of event definitions prompted Commerce to switch from using ETW to using EventLog logger to log events. The EventLog logger is based on the Microsoft.Extensions.Logging framework and structured logging patterns, which simplifies log generation and maintenance.
+As of Dynamics 365 Commerce version 10.0.32, the decentralized nature of event definitions prompted Commerce to switch from using ETW to using EventLog logger to log events. The EventLog logger is based on the Microsoft.Extensions.Logging framework and uses structured logging patterns, which simplify log generation and maintenance.
 
 The EventLog logger logs structured XML event data and includes additional information such as the original log level. Structured XML event data can be filtered and queried, for example by using XPath in Event Viewer (**Filter \> XML \> Edit query manually**). During the transition period from Commerce version 10.0.21 to version 10.0.32, both the ETW and EventLog loggers were enabled. The ETW logger was removed starting in Commerce version 10.0.32.
 
@@ -126,7 +126,7 @@ This query displays all logs from the **Microsoft-Dynamics-Commerce-RetailServer
 
 #### EventLog
 
-With the EventLog logger, structured logging assumes that events are uniquely identifiable by **EventName**. **EventIds** are just default enum values because events are distributed across repositories and classes and there's no feasible way to enforce the uniqueness of **EventId** values since they are just simple integers.
+With the EventLog logger, structured logging assumes that events are uniquely identifiable by **EventName**. **EventIds** are just default enum values because events are distributed across repositories and classes and there's no feasible way to enforce the uniqueness of **EventId** values since they're simple integers.
 
 To search for specific events using the EventLog logger, you can query them by event name via XPath as shown in the following example image and XML code block.
 
@@ -159,7 +159,7 @@ The EventLog logger supports following entry types:
 
 EventLog logger maps log levels from different subsystems to match entry type limitations. For more information, see [EventLogEntryType Enum](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true).
 
-THe following table displays current log mapping
+The following table displays current log mapping
 
 | EventLevel (legacy events) | LogLevel (Microsoft.Extensions.Logging) | EventLogEntryType |
 | -------------------------- | --------------------------------------- | ----------------- |
@@ -172,7 +172,7 @@ THe following table displays current log mapping
 | Verbose                    | Debug                                   | Information       |
 |                            | Trace                                   | Information       |
 
-To allow more precise filtering, information about the original log level from Microsoft.Extensions.Logging is stored as part of the event. This allows you to query them by original log level via XPath, as shown in the following example query.
+To allow more precise filtering, information about the original log level from Microsoft.Extensions.Logging is stored as part of the event. This approach allows you to query by original log level via XPath, as shown in the following example query.
 
 ````xml
 <QueryList>
