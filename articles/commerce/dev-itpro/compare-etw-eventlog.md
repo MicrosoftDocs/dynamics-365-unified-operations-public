@@ -145,7 +145,7 @@ To search for specific events using the EventLog logger, you can query them by e
 </QueryList>
 ````
 
-This query will display all logs from `Application` log, with provider `Microsoft Dynamics - Retail Server` and with event name `Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh`.
+The query above displays all logs from the **Application** log, with the provider **Microsoft Dynamics - Retail Server** and the event name **Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh**.
 
 ### Filter by original log level
 
@@ -159,7 +159,7 @@ The EventLog logger supports following entry types:
 
 EventLog logger maps log levels from different subsystems to match entry type limitations. For more information, see [EventLogEntryType Enum](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true).
 
-The following table displays current log mapping
+The following table displays current log mapping.
 
 | EventLevel (legacy events) | LogLevel (Microsoft.Extensions.Logging) | EventLogEntryType |
 | -------------------------- | --------------------------------------- | ----------------- |
