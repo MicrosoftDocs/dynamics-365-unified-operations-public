@@ -57,26 +57,35 @@ If the Electronic invoicing feature that you created imports electronic vendor i
 
 ## Register service principals in Exchange
 
-Once your Azure AD application is consented to by a tenant admin, the tenant admin must register your AAD application's service principal in Exchange via Exchange Online PowerShell. 
+Once your Azure AD application is consented to by a tenant admin, the tenant admin must register your AAD application's service principal in Exchange via Exchange Online PowerShell. To perform this operation, run the next PowerShell snippets, where:
 
-1. Install the **ExchangeOnlineManagement** and connect to your tenant as shown in the following snippet, where:
 	- <ORGANIZATION_ID> is **Directory (tenant) ID**
 	- <APPLICATION_ID> is **Application (client) ID**
 	- <OBJECT_ID> is **Object ID**
 
+1. Install the **ExchangeOnlineManagement** module:
+
 	```powershell
     Install-Module -Name ExchangeOnlineManagement -allowprerelease
-	Import-module ExchangeOnlineManagement 
+	Import-module ExchangeOnlineManagement
+    ```
+	
+> [!NOTE]
+> ExchangeOnlineManagement module need to be installed only once on the Exchange administrator's machine.
+	
+2. Connect to your Exchange Online:
+
+	```powershell
 	Connect-ExchangeOnline -Organization <ORGANIZATION_ID>
     ```
 	
-2. The following is an example of registering an Azure AD application's service principal in Exchange:
+3. The following is an example of registering an Azure AD application's service principal in Exchange:
 
 	```powershell
     New-ServicePrincipal -AppId <APPLICATION_ID> -ServiceId <OBJECT_ID> -Organization <ORGANIZATION_ID>
     ```
 
-3. The following is an example of how to give your application's service principal access to one mailbox:
+4. The following is an example of how to give your application's service principal access to one mailbox:
 
 	```powershell
     Add-MailboxPermission -Identity "john.smith@contoso.com" -User <OBJECT_ID> -AccessRights FullAccess
