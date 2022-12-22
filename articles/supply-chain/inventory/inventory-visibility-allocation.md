@@ -114,7 +114,7 @@ To use allocation, you must correctly set up the formula for the available-to-al
 A maximum of eight allocation group names can be set, each corresponds to `Group0` to `Group7` in hierarchy. `Group0` and `Group7` correspond to the highest and lowest level of hierarchy. When creating an allocation, hierarchies have to be specified from the highest to the lowest order. E.g, suppose your configuration has `Country` for `Group0`, `State` for `Group1` and `City` for `Group2`, `Country` and `State` are both required when specifying `City`, however, an allocation can be created with `Country` and `State`, or `Country` only. Follow these steps to view and update allocation groups.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In default allocation configuraiotn, there are four levels of hierarchy, from the highest to lowest:`Channel` (Group0), `customerGroup` (Group1),`Region` (Group2), and `OrderType` (Group3).
+1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In default allocation configuration, there are four levels of hierarchy, from the highest to lowest:`Channel` (Group0), `customerGroup` (Group1),`Region` (Group2), and `OrderType` (Group3).
 1. You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
 
     > [!IMPORTANT]
