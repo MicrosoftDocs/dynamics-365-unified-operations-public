@@ -46,7 +46,7 @@ The following terms and concepts are useful in discussions of inventory allocati
 
 - **Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type.
 - **Allocation group value** – The value of each allocation group. For example, *web* or *store* might be the value of the sales channel allocation group, whereas *VIP* or *normal* might be the value of the customer allocation group.
-- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. For example, you can define *channel* as hierarchy level 1, *region* as level 2, and *customer group* as level 3. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you might allocate 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
+- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. A maximum of eight levels of hierarchies is supported. In **Allocation Configuration** page for Inventory Visibility UI on Power Apps, they are labeled `Group0` to `Group7`. For example, you can define *channel* as hierarchy level 1 (`Group0`), *region* as level 2 (`Group1`), and *customer group* as level 3 (`Group2`). During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. A real life example could be, you create an allocation of 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
 - **Available to allocate** – The *virtual common pool* that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
 - **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It's deducted at the same time that the consumed quantity is added.
 - **Consumed** – A physical measure that indicates that quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
@@ -55,7 +55,7 @@ The following illustration shows the business workflow for inventory allocation.
 
 ![Inventory Visibility allocation business workflow.](media/inventory-visibility-allocation-flow.png "Inventory Visibility allocation business workflow.")
 
-The following illustration shows the allocation hierarchy and allocation groups. The *virtual common pool* that is shown here is the available-to-allocate quantity.
+The following illustration shows the allocation hierarchy and allocation groups. The *virtual common pool* shown here is the available-to-allocate quantity.
 
 [<img src="media/inventory-visibility-allocation-hierarchy.png" alt="Inventory Visibility allocation hierarchy." title="Inventory Visibility allocation hierarchy" width="720" />](media/inventory-visibility-allocation-hierarchy.png)
 
@@ -111,36 +111,38 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 ### Manage allocation groups
 
-A maximum of eight allocation group names can be set. The groups have a hierarchy. Follow these steps to view and update allocation groups.
+A maximum of eight allocation group names can be set, each corresponds to `Group0` to `Group7` in hierarchy. `Group0` and `Group7` correspond to the highest and lowerest level of hierarchy. When creating an allocation, hierarchies have to be specified from the highest to the lowest order. E.g, suppose your configuration has `Country` for `Group0`, `State` for `Group1` and `City` for `Group2`, `Country` and `State` are both required when specifying `City`, however, an allocation can be created with `Country` and `State`, or `Country` only. Follow these steps to view and update allocation groups.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. By default, there's an allocation hierarchy that has four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
+1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In default allocation configuraiotn, there are four levels of hierarchy, from the highest to lowest:`Channel` (Group0), `customerGroup` (Group1),`Region` (Group2), and `OrderType` (Group3).
 1. You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
 
     > [!IMPORTANT]
     > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](#allocation-tips).
 
-1. When you've finished configuring the allocation group and hierarchy settings, save your changes, and then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
+1. When you've finished configuring the allocation group and hierarchy settings, click "Save", then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
 
 If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
 ### <a name="allocation-tips"></a>Tips for using allocation
 
 - For every product, the allocation function should use in the same *dimension level* according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
-- **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to manually clean up all the old data before you update your new configuration. However, because the addition of new allocation groups to the lowest hierarchy doesn't affect existing mappings, you won't need to clean the data.
+- **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to remove all old data with `unallocate` API before updating the configuration. However, no clean up is needed when only adding new allocation groups to the lowest hierarchy.
 - Allocation will succeed only if the product has a positive `available_to_allocate` quantity.
-- To allocate products from a high *allocation level* group to a subgroup, use the `Reallocate` API. For example, you have an allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], and you want to allocate some product from allocation group \[Online, VIP\] to the sub allocation group \[Online, VIP, EU\], use the `Reallocate` API to move the quantity. If you use the `Allocate` API, it will allocate the quantity from the virtual common pool.
+- To allocate products from a high *allocation hierarchy* group to a subgroup, use the `Reallocate` API. For example, you have an allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], and you want to allocate some product from allocation group \[`Online`, `VIP`\] to the sub allocation group \[`Online`, `VIP`, `EU`\], use the `Reallocate` API to move the quantity. If you use the `Allocate` API, it will allocate the quantity from the virtual common pool.
 - To view overall product availability (the common pool), use the [query on-hand](inventory-visibility-api.md#query-on-hand) API to request the inventory amount that is *available to allocate*. You can then make allocation decisions based on this information.
 
-## <a name="using-allocation-api"></a>Use the allocation API
+## <a name="using-allocation-api"></a>Use the allocation APIs
 
-Currently, five allocation APIs are opened:
-
-- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate** – This API is used to create the initial allocation.
-- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/unallocate** – This API is used to revert or remove the allocated quantities.
-- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/reallocate** – This API is used to move the allocated quantity from an existing allocation to other allocation groups.
-- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/consume** – This API is used to deduct (use) the allocated quantity.
-- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/query** – This API is used to check existing allocation records against the allocation groups and hierarchy.
+Five allocation APIs are available:
+ 
+|   Method    | API | Description |
+|   ---: | :--- |   :---   |
+|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate | Create an allocation |
+|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/unallocate | Revert or remove allocated records | 
+|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/reallocate | Move allocated quantities from an existing allocation to other allocation groups
+|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/consume | Deduct (use) the allocated quantity |
+|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/query | Check existing allocation records against the allocation groups and hierarchy |
 
 ### Allocate
 
@@ -156,7 +158,7 @@ Call the `Allocate` API to allocate a product that has specific dimensions. Here
         "groupB": "string",
         "groupC": "string"
     },
-    "quantity": 0,
+    "quantity": decimal,
     "organizationId": "string",
     "dimensions": {
         "dimension1": "string",
@@ -173,7 +175,7 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
     "id": "test101",
     "productId": "Bike",
     "groups": {
-        "channel": "Web",
+        "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -186,8 +188,10 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
     }
 }
 ```
+The quantity must always be more than 0 (zero). 
 
-The quantity must always be more than 0 (zero).
+> [!NOTE]
+> More often than not, `siteId` and `locationId` are mandatory when for creating an allocation since they are non-empty in data sources. 
 
 ### Unallocate
 
@@ -212,7 +216,7 @@ Use the `Reallocate` API to move some allocated quantity to another group combin
         "groupE": "string",
         "groupF": "string"
     },
-    "quantity": 0,
+    "quantity": decimal,
     "organizationId": "string",
     "dimensions": {
         "dimension1": "string",
@@ -229,12 +233,12 @@ For example, you can move two bikes that have the dimensions \[site=1, location=
     "id": "test102",
     "productId": "Bike",
     "sourceGroups": {
-        "channel": "Web",
+        "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
     },
     "groups": {
-        "channel": "Web",
+        "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
     },
@@ -250,7 +254,7 @@ For example, you can move two bikes that have the dimensions \[site=1, location=
 
 ### Consume
 
-Use the `Consume` API to post the consumption quantity against allocation. For example, you might use this API to move allocated quantity to some real measures. Here's the schema for the request body.
+Use the `Consume` API to post the consumption quantity against allocation. For example, you could use this API to move allocated quantity to some real measures. Here's the schema for the request body.
 
 ```json
 {
@@ -262,7 +266,7 @@ Use the `Consume` API to post the consumption quantity against allocation. For e
         "groupB": "string",
         "groupC": "string"
     },
-    "quantity": 0,
+    "quantity": decimal,
     "organizationId": "string",
     "dimensions": {
         "dimension1": "string",
@@ -296,7 +300,7 @@ Now, three bikes are sold, and they're taken from the allocation pool. To regist
         "colorId": "red"
     },
     "groups": {
-        "channel": "Web",
+        "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -309,15 +313,15 @@ Now, three bikes are sold, and they're taken from the allocation pool. To regist
 }
 ```
 
-After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `pos.inbound` = *-3*. Alternatively, you can keep the `pos.inbound` value as it is and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
+After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `pos.inbound` = *-3*. Alternatively, you can keep the `pos.inbound` value as is, and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
 
 In this request, notice that the physical measure you use in the consume request body should use the opposite modifier type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body, `iv.inbound` has the value `Subtraction`, not `Addition`.
 
-The `fno` data source can't be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
+The `fno` data source can't be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment. 
 
 ### <a name="consume-to-soft-reserved"></a>Consume as a soft reservation
 
-The `Consume` API can also consume the allocated quantity as a soft reservation. In this case, the `Consume` operation will reduce the allocated quantity and then do a soft reservation for that quantity. To use this approach, you must also be using the [soft reservation](inventory-visibility-reservations.md) feature of Inventory Visibility.
+The `Consume` API can also consume the allocated quantity as a soft reservation. In this case, the `Consume` operation will reduce the allocated quantity and then create a soft reservation for that quantity. To use this approach, you must also be using the [soft reservation](inventory-visibility-reservations.md) feature of Inventory Visibility.
 
 For example, you've set a soft reservation physical measure as `iv.softreserved`. The following formula is used for the available-to-reserve calculated measure:
 
@@ -342,7 +346,7 @@ When you want to consume a quantity of 3 and directly reserve this quantity, you
         "colorId": "red"
     },
     "groups": {
-        "channel": "Web",
+        "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -359,7 +363,7 @@ In this request, notice that `iv.softreserved` has the value `Addition`, not `Su
 
 ### Query
 
-Use the `Query` API to retrieve allocation related information for some products. You can use dimension filters and allocation group filters to narrow down the results. The dimensions must match exactly the one you want to retrieve, for example, \[site=1, location=11\] will have non-related results compared with \[site=1, location=11, color=red\].
+Use the `Query` API to retrieve allocation related information for some products. You can use dimension filters and allocation group filters to narrow down the results. *The dimensions must match exactly the one you want to retrieve*, for example, \[site=1, location=11\] will have unrelated results compared with \[site=1, location=11, color=red\].
 
 ```json
 {
@@ -389,11 +393,7 @@ For example, use \[site=1, location=11, color=red\] and empty groups field to ge
         "locationId": "11",
         "colorId": "red"
     },
-    "groups": {
-        "channel": "Web",
-        "customerGroup": "VIP",
-        "region": "US"
-    },
+    "groups": {},
 }
 ```
 
@@ -409,7 +409,7 @@ Use \[site=1, location=11, color=red\] and groups \[channel=Online, customerGrou
         "colorId": "red"
     },
     "groups": {
-        "channel": "Web",
+        "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -430,7 +430,7 @@ Follow these steps to create an allocation from the **Allocation** page of the I
 
 ### Consume an allocation
 
-Select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details that you entered when you created the allocation.
+Select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details when creating the allocation.
 
 ### Reallocate an allocation
 
