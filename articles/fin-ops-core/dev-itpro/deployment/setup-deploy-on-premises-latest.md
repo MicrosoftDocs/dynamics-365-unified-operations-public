@@ -188,6 +188,7 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Join VMs to the domain](#joindomain)
 1. [Download setup scripts from LCS](#downloadscripts)
 1. [Describe your configuration](#describeconfig)
+1. [Create gMSA accounts](#setupgMSA)
 1. [Set up file storage](#setupfile)
 1. [Set up SQL Server](#setupsql)
 1. [Configure certificates](#configurecert)
@@ -399,6 +400,8 @@ The infrastructure setup scripts use the following configuration files to drive 
 > [!IMPORTANT]
 > To ensure that the setup scripts work correctly, you must update these configuration files with the correct computer names, IP addresses, service accounts, and domain, based on the setup of your environment.
 
+For detailed information on the configuration files available in the infrastructure scripts and additional information on how to fill out your configuration file see [Infrastructure Scripts Configuration](./configure-infrascripts-onprem.md).
+
 The infrastructure\\ConfigTemplate.xml configuration file describes the following details:
 
 - The service accounts that are required for the application to work
@@ -428,12 +431,12 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 - The database settings
 - The mappings between users and roles
 
-#### Create gMSA and domain user accounts
+### <a name="setupgMSA"></a>Step 8. Create gMSA accounts
 
 1. Open Windows PowerShell in elevated mode, change the directory to the **Infrastructure** folder in your file share, and run the following commands.
 
     > [!IMPORTANT]
-    > These commands don't create an AxServiceUser domain user for you. You must create it yourself.
+    > These commands don't create an AxServiceUser domain user for you. You must create it yourself. This account is only needed for base deployments prior to Application version 10.0.20.
 
     ```powershell
     .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -445,7 +448,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
     ```
 
-### <a name="setupfile"></a>Step 8. Set up file storage
+### <a name="setupfile"></a>Step 9. Set up file storage
 
 You must set up the following SMB 3.0 file shares:
 
@@ -489,7 +492,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     Test-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupsql"></a>Step 9. Set up SQL Server
+### <a name="setupsql"></a>Step 10. Set up SQL Server
 
 1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
@@ -506,7 +509,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 2. Run the SQL service as either a domain user or a gMSA.
 3. In the **ConfigTemplate.xml** file, fill in the SQL cluster configuration. If you're creating a SQL cluster, specify the name of each machine together with the listener name of your availability group. If you're creating a single instance instead of a cluster, specify the name of the machine, but leave the listener name blank. If you don't want the scripts to generate a certificate for your SQL cluster/instance, set the **disabled** property to **true** for the certificate of the **SQLCert** type.
 
-### <a name="configurecert"></a>Step 10. Configure certificates
+### <a name="configurecert"></a>Step 11. Configure certificates
 
 1. Go to a machine where Remote Server Administration Tools are installed, or go to your domain controller.
 1. Open PowerShell, and navigate to the file share that contains your **Infrastructure** folder.  
@@ -543,9 +546,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupssis"></a>Step 11. Set up SSIS
+### <a name="setupssis"></a>Step 12. Set up SSIS
 
-To enable Data management and SSIS workloads, you must install SSIS on at least two nodes (at least 1 if the environment is a sandbox environment). This is a requirement so that the data management framework service can run. 
+To enable Data management and SSIS workloads, you must install SSIS on at least two nodes (at least 1 if the environment is a sandbox environment). This is a requirement so that the data management framework (DMF) service can run.
+
+> [!IMPORTANT]
+> Environments that were deployed with a base topology older than Application version 10.0.32 must have SSIS installed on all AOS nodes. Furthermore, the DMF service will not be available and data management operations will be carried out by the AOS.
 
 You can have dedicated nodes that contain SSIS or you can install SSIS on other node types. If you would like to have dedicated SSIS nodes then specify which machines will host this node type by filling in the details for that node in the **ConfigTemplate.xml**.
 
@@ -554,15 +560,13 @@ If your use of the data management framework is low you can instead choose to no
 > [!NOTE]
 > If you disable the **SSISNodeType** but don't set the **hasSSIS** property on any node, the scripts and installation logic will provision the DMF service to all nodes belonging to BatchOnlyAOSNodeType. If that node type doesn't exist then the DMF service will be provisioned to all nodes belonging to AOSNodeType.
 
-
-
 1. Once you have decided which VMs will need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
 3. Complete the setup, and verify that the installation was successful.
 
 For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
 
-### <a name="setupssrs"></a>Step 12. Set up SSRS
+### <a name="setupssrs"></a>Step 13. Set up SSRS
 
 You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
 
@@ -600,7 +604,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > 
     > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
-### <a name="setupvms"></a>Step 13. Set up VMs
+### <a name="setupvms"></a>Step 14. Set up VMs
 
 1.  Open Windows PowerShell in elevated mode, and navigate to the **Infrastructure** folder in your file share.
 
@@ -674,7 +678,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="setupsfcluster"></a>Step 14. Set up a standalone Service Fabric cluster
+### <a name="setupsfcluster"></a>Step 15. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
 2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -714,7 +718,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that is running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-### <a name="configurelcs"></a>Step 15. Configure LCS connectivity for the tenant
+### <a name="configurelcs"></a>Step 16. Configure LCS connectivity for the tenant
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations through LCS. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf of your Azure AD tenant (for example, contoso.onmicrosoft.com).
 
@@ -753,7 +757,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
 
-### <a name="configuresqlcert"></a>Step 16. Configure the SQL Server certificate
+### <a name="configuresqlcert"></a>Step 17. Configure the SQL Server certificate
 
 Get an SSL certificate from a CA to configure SQL Server for Finance + Operations. By default, an AD CS or self-signed certificate was generated by a previous step.
 
@@ -811,7 +815,7 @@ You can verify that everything has been configured correctly by running the foll
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="configuredb"></a>Step 17. Configure the databases
+### <a name="configuredb"></a>Step 18. Configure the databases
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 1. On the dashboard, select the **Shared asset library** tile.
@@ -914,7 +918,7 @@ You can verify that everything has been configured correctly by running the foll
         | svc-FRPS$       | gMSA | db\_owner     |
         | svc-FRAS$       | gMSA | db\_owner     |
 
-### <a name="encryptcred"></a>Step 18. Encrypt credentials
+### <a name="encryptcred"></a>Step 19. Encrypt credentials
 
 1. Copy your infrastructure folder to an AOS node.
 2. Create the **Credentials.json** file by running the following command.
@@ -934,7 +938,7 @@ You can verify that everything has been configured correctly by running the foll
     >
     > The script will request the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
-### <a name="configureadfs"></a>Step 19. Configure AD FS
+### <a name="configureadfs"></a>Step 20. Configure AD FS
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
@@ -1012,7 +1016,7 @@ If you can access the URL, a JavaScript Object Notation (JSON) file is returned.
 
 You've now completed the setup of the infrastructure. The following sections describe how to set up your connector and deploy your Finance + Operations environment in LCS.
 
-### <a name="configureconnector"></a>Step 20. Configure a connector and install an on-premises local agent
+### <a name="configureconnector"></a>Step 21. Configure a connector and install an on-premises local agent
 
 1. Sign in to [LCS](https://lcs.dynamics.com/), and open your on-premises implementation project.
 2. Select the Menu button (sometimes referred to as the hamburger or the hamburger button), and then select **Project settings**.
@@ -1046,7 +1050,7 @@ You've now completed the setup of the infrastructure. The following sections des
 14. After the local agent is successfully installed, go back to your on-premises connector in LCS.
 15. On the **3: Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, you will receive the following message: "Validation complete. Agent connection established."
 
-### <a name="teardowncredssp"></a>Step 21. Tear down CredSSP, if remoting was used
+### <a name="teardowncredssp"></a>Step 22. Tear down CredSSP, if remoting was used
 
 If you used any of the remoting scripts during setup, be sure to run the following command during breaks in the setup process, or after the setup is completed.
 
@@ -1056,7 +1060,7 @@ If you used any of the remoting scripts during setup, be sure to run the followi
 
 If the previous remoting Windows PowerShell window was accidentally closed, and CredSSP was left enabled, this command disables it on all the machines that are specified in the configuration file.
 
-### <a name="deploy"></a>Step 22. Deploy your Finance + Operations environment from LCS
+### <a name="deploy"></a>Step 23. Deploy your Finance + Operations environment from LCS
 
 1. In LCS, open your on-premises implementation project.
 2. Go to **Environment** \> **Sandbox**, and select **Configure**. To get the required values, run the following command on the primary domain controller VM. That VM must have access to ADFS and the DNS server settings.
@@ -1093,7 +1097,7 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ![Successfully deployed environment.](./media/Deployed2021.png)
 
-### <a name="connect"></a>Step 23. Connect to your Finance + Operations environment
+### <a name="connect"></a>Step 24. Connect to your Finance + Operations environment
 
 - In a web browser, go to `https://[yourD365FOdomain]/namespaces/AXSF`, where **yourD365FOdomain** is the domain name that you defined in the [Step 1. Plan your domain name and DNS zones](#plandomain) section earlier in this article.
 
