@@ -43,8 +43,8 @@ Microsoft Lifecycle Services (LCS) may provide several add-ins for finance and o
 
 | Add in | Status |
 |---|---|
-|Tax Calculation|Tax Calculation uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t supports Customer Lockbox for all Add in specific resources as of now. Support for this will be enabled in late 2023.|
-|Electronic Invoicing|Electronic Invoicing uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t supports Customer Lockbox for all Add in specific resources as of now. Support for this will be enabled in late 2023.|
+|Tax Calculation|A deployment of Tax Calculation Add in that uses standalone [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) doesn’t supports Customer Lockbox for related resources. Support for Customer Lockbox will be enabled in late 2023 when RCS functionality moves onto the Finance and Operations platform.|
+|Electronic Invoicing|A deployment of Electronic Invoicing Add in that uses standalone [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) doesn’t supports Customer Lockbox for related resources. Support for Customer Lockbox will be enabled in late 2023 when RCS functionality moves onto the Finance and Operations platform.|
 | All other add-ins | Support Customer Lockbox |
 
 ### Customer Lockbox support across finance and operations apps
@@ -55,5 +55,5 @@ Not all finance and operations apps fully support Customer Lockbox in the curren
 |---|---|
 | Dynamics 365 Supply Chain Management | Finance and Operations environment provisioned under Dynamics 365 Supply Chain Management offering supports Customer Lockbox for all environment specific resources.|
 | Dynamics 365 Human Resources |Dynamics 365 Human Resources provisioned via Finance and Operations environment supports Customer Lockbox for all environment specific resources.<br/><br/>Dynamics 365 Human Resources Standalone offering does not support Customer Lockbox; customers will have to use migration tooling to migrate their environments to Finance and Operations environment and then they can enable Customer Lockbox.|
-| Dynamics 365 Finance | Finance and Operations environment provisioned under Dynamics 365 Finance offering supports Customer Lockbox for all environment specific resources.<br/><br/>If you use [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) to compliment your Dynamics 365 Finance environment then please note that data managed under RCS environment, currently doesn’t support Customer Lockbox. Customer Lockbox support for RCS will be enabled in late 2023.|
+| Dynamics 365 Finance | Finance and Operations environment provisioned under Dynamics 365 Finance offering supports Customer Lockbox for all environment specific resources.<br/><br/>If you use [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) to compliment your Dynamics 365 Finance environment then please note that data managed under RCS environment, currently doesn’t support Customer Lockbox. Support for Customer Lockbox will be enabled in late 2023 when RCS functionality moves onto the Finance and Operations platform.|
 |  |  |
