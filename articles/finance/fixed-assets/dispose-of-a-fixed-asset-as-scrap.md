@@ -51,6 +51,14 @@ Before you dispose of a fixed asset as scrap, you must create ledger accounts th
 
 [![Disposing of an asset as scap, Fig. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
+The disposal posting profile has two ways to account the acquisition values during the disposal process, the first way is the lumpsum of all acquisitions that is represented in “Acquisition value” posting type, the second way is to differentiate between acquisitions this/prior years that is represented in “Acquisitions this and Acquisition prior years” posting types.
+
+-	**Acquisition value** combines all acquisition transactions in all times in one transaction line and disposal transaction post it to the corresponding account to acquisition value in the posting profile.  This could be used if you do not want to break down the acquisitions of this year and prior years. In this case you need to set the **Post disposal transactions in detail** option in the Fixed assets parameters to No.  
+-	**Acquisition this year** and **Acquisition prior years** breakdown the acquisition values in the case of there are different acquisitions posted to the disposed asset this year or prior years. In this case you need to set the **Post disposal transactions in detail** option in the Fixed assets parameters to **Yes**, to ensure the system will validates against detailed posting types in the posting profile
+
+> [!NOTE]
+>You can’t define the both options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting. 
+
 For the following example, a fixed asset was acquired on January 1, 2018, and it will be scrapped on March 31, 2019.
 
 - **Acquisition price:** 24,000.00 US dollars (USD)
