@@ -9,10 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
+ms.search.form: Retail_Statement
 
 ---
 
 # Statement posting errors due to unavailable inventory or update conflicts
+Error code: SYS103633
 
 [!include [banner](../../includes/banner.md)]
 
