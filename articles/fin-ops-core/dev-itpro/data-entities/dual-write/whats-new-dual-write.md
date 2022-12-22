@@ -18,13 +18,21 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## January 2023 release 
+
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and will complete in January.
+
+## November 2022 release 
+
+The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
+
 ## October 2022 release 
 
 The October release of [Dual-write core solution 1.0.37.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug | Before this release, dual-write plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. | Preview |
+| Bug | Before this release, dual-write platform core plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
 
 The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
 
