@@ -2,7 +2,7 @@
 # required metadata
 
 title: Comparison of ETW and EventLog logger functionality
-description: This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger with the EventLog logger in Microsoft Dynamics 365 Commerce.
+description: This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger and the EventLog logger in Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 12/22/2022
 ms.topic: article
@@ -18,31 +18,31 @@ ms.search.validFrom: 2022-12-30
 
 [!include [banner](../includes/banner.md)]
 
-This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger with the EventLog logger in Microsoft Dynamics 365 Commerce.
+This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger and the EventLog logger in Microsoft Dynamics 365 Commerce.
 
-As of Dynamics 365 Commerce version 10.0.32, the new, decentralized nature of event definitions required Commerce to switch from using the ETW logger to using the EventLog logger to log events. The EventLog logger is based on the Microsoft.Extensions.Logging framework and uses structured logging patterns, which simplify log generation and maintenance.
+Because of the new decentralized nature of event definitions, Dynamics 365 Commerce can no longer use the ETW logger to log events as of version 10.0.32. Instead, it must use the EventLog logger. The EventLog logger is based on the Microsoft.Extensions.Logging framework and uses structured logging patterns, which simplify log generation and maintenance.
 
-The EventLog logger logs structured XML event data and includes additional information, such as the original log level. Structured XML event data can be filtered and queried, for example by using XPath in Event Viewer (**Filter \> XML \> Edit query manually**). During the transition period from Commerce version 10.0.21 to version 10.0.32, both the ETW and EventLog loggers were enabled. The ETW logger was removed from Commerce starting in version 10.0.32.
+The EventLog logger logs structured XML event data and includes additional information, such as the original log level. Structured XML event data can be filtered and queried by using, for example, XPath in Event Viewer (**Filter \> XML \> Edit query manually**). During the transition from Commerce version 10.0.21 to version 10.0.32, both the ETW logger and the EventLog logger were enabled. However, the ETW logger was removed from Commerce in version 10.0.32.
 
-For the comparison between loggers, Retail Server logs are used in the following examples.
+For the following comparison of the loggers, Retail Server logs are used in the examples.
 
 ## Log location
 
 ### ETW
 
-With the ETW logger, Event Viewer events are placed under **Applications and Services Logs \> Microsoft \> Dynamics** in a provider-specific directory, as shown in the following example image.
+For the ETW logger, Event Viewer events are put in a provider-specific directory under **Applications and Services Logs \> Microsoft \> Dynamics**, as shown in the following example illustration.
 
-![ETW logs location](media\ETWLogsLocation.png)
+![ETW logs location.](media\ETWLogsLocation.png)
 
-### Event Log
+### EventLog
 
-With the EventLog logger, Event Viewer events are placed in the **Windows Logs  \> Application** log, as shown in the following example image.
+For the EventLog logger, Event Viewer events are put in the **Application** log under **Windows Logs**, as shown in the following example illustration.
 
-![EventLog logs location](media\EventLogLogsLocation.png)
+![EventLog logs location.](media\EventLogLogsLocation.png)
 
-In the **Application** log, logs from providers are grouped by the source property, shown in the following example image as **Microsoft Dynamics - Retail Server**.
+In the **Application** log, logs from providers are grouped by the value of the **Source** property. In the following example illustration, the source is **Microsoft Dynamics - Retail Server**.
 
-![EventLog Logs Source](media\EventLogLogsSource.png)
+![EventLog logs source.](media\EventLogLogsSource.png)
 
 ## Log structure
 
@@ -50,9 +50,9 @@ In the **Application** log, logs from providers are grouped by the source proper
 
 #### Legacy events
 
-With ETW logger, legacy Event Viewer events are logged and presented according to the manifest, as shown in the following example image.
+For the ETW logger, legacy Event Viewer events are logged and presented according to the manifest, as shown in the following example illustration.
 
-![ETW Logs Structure](media\ETWLogsStructure.png)
+![ETW logs structure.](media\ETWLogsStructure.png)
 
 #### New events
 
@@ -66,100 +66,100 @@ Because the ETW logger has limited support for structured logging, all new event
 | LogInformation                 | GenericStructuredLoggingInformation | 65003    |
 | LogDebug                       | GenericStructuredLoggingDebug       | 65004    |
 
-Due to manifest limitations, only generic and the most commonly used properties are logged as separate event data entries. The rest of the properties are logged as aggregated JSON objects, as shown in the following example image.
+Because of manifest limitations, only generic properties and the most frequently used properties are logged as separate event data entries. The remaining properties are logged as aggregated JavaScript Object Notation (JSON) objects, as shown in the following example illustration.
 
-![ETW New Logs Structure](media\ETWNewLogsStructure.png)
+![ETW new logs structure.](media\ETWNewLogsStructure.png)
 
 ### EventLog
 
 #### Legacy events
 
-With EventLog logger, legacy Event Viewer events are logged in legacy format for backward compatibility. For example, only a formatted message is logged, as shown in the following image.
+For the EventLog logger, legacy Event Viewer events are logged in legacy format for backward compatibility. For example, only a formatted message is logged, as shown in the following example illustration.
 
-![EventLog Legacy Logs Structure](media\EventLogLegacyLogsStructure.png)
+![EventLog legacy logs structure.](media\EventLogLegacyLogsStructure.png)
 
 #### New events
 
-With EventLog logger, new Event Viewer events are logged in structured format to provide more information and allow precise filtering and querying. For example, both the formatted message and all properties from state and scope are logged as separate event data entries, as shown in the following image.
+For the EventLog logger, new Event Viewer events are logged in structured format to provide more information, and to enable precise filtering and querying. For example, both the formatted message and all properties from state and scope are logged as separate event data entries, as shown in the following example illustration.
 
-![EventLog New Logs Structure](media\EventLogNewLogsStructure.png)
+![EventLog new logs structure.](media\EventLogNewLogsStructure.png)
 
 ## Query and filter structured events
 
-For basic filtering, it's possible to use the Event Viewer UI to filter by criteria such as specific provider and log level. 
+You can use the Event Viewer user interface (UI) to do basic filtering by criteria such as specific provider and log level.
 
 ### ETW
 
-With ETW logger, you can filter and query for structured information logs as shown in the following example image, where the **Event logs** location is specified as being under **Microsoft-Dynamics-Retail-Server**, and the **Event sources** value is **Commerce-RetailServer**.
+For the ETW logger, you can filter and query for structured information logs as shown in the following example illustration. In this example, the **Event logs** location is specified as being under **Microsoft-Dynamics-Retail-Server**, and the **Event sources** value is **Commerce-RetailServer**.
 
-![ETW Basic Filters](media\ETWBasicFilters.png)
+![ETW basic filters.](media\ETWBasicFilters.png)
 
 ### EventLog
 
-With EventLog logger, you can filter and query for structured information logs as shown in the following example image, where the **Event logs** location is specified as being under **Application**, and the **Event sources** value is **Microsoft-Dynamics-Retail-Server**.
+For the EventLog logger, you can filter and query for structured information logs as shown in the following example illustration. In this example, the **Event logs** location is specified as being under **Application**, and the **Event sources** value is **Microsoft-Dynamics-Retail-Server**.
 
-![EventLog Basic Filters](media\EventLogBasicFilters.png)
+![EventLog basic filters.](media\EventLogBasicFilters.png)
 
 ## Advanced filters
 
-Event Viewer allows a subset of XPath queries to be used for filtering. You can save such filters as custom views, for example filtering by event name or filtering by original log level. Filters saved as custom views allow you to easily perform the same or similar tasks at a later time, for example substituting event names in filters instead of writing a new XPath query.
+Event Viewer enables a subset of XPath queries to be used for filtering. You can save such filters as custom views that are filtered by, for example, event name or original log level. By saving filters as custom views, you can easily perform the same or similar tasks later. For example, you can just substitute event names in filters instead of writing a new XPath query.
 
-### Filter by event name
+### Filtering by event name
 
 #### ETW
 
-To search for specific events using the ETW logger, you can query them by event name via XPath, as shown in the following example image and XML code block.
+To search for specific events by using the ETW logger, you can query by event name via XPath, as shown in the following example illustration and XML code block.
 
-![ETW Filter By Event Name](\media\ETWFilterByEventName.png)
+![ETW filtering by event name.](\media\ETWFilterByEventName.png)
 
 ````xml
 <QueryList>
-  <Query Id="0" Path="Microsoft-Dynamics-Commerce-RetailServer/Operational">
-    <Select Path="Microsoft-Dynamics-Commerce-RetailServer/Operational">
-    *[EventData[Data[@Name='eventName'] and (Data='Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh')]]
-    </Select>
-  </Query>
+    <Query Id="0" Path="Microsoft-Dynamics-Commerce-RetailServer/Operational">
+        <Select Path="Microsoft-Dynamics-Commerce-RetailServer/Operational">
+        *[EventData[Data[@Name='eventName'] and (Data='Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh')]]
+        </Select>
+    </Query>
 </QueryList>
 ````
 
-This query displays all logs from the **Microsoft-Dynamics-Commerce-RetailServer/Operational** log, with **eventName** equal to **Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh**.
+This query shows all logs from the **Microsoft-Dynamics-Commerce-RetailServer/Operational** log that have the event name **Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh**.
 
 #### EventLog
 
-With the EventLog logger, structured logging assumes that events are uniquely identifiable by **EventName**. **EventIds** are default enum values because events are distributed across repositories and classes and there's no feasible way to enforce the uniqueness of **EventId** values that are simple integers.
+For the EventLog logger, structured logging assumes that events are uniquely identifiable by their **EventName** value. **EventId** values are default enumeration (enum) values. Because events are distributed across repositories and classes, there's no feasible way to enforce the uniqueness of **EventId** values that are simple integers.
 
-To search for specific events using the EventLog logger, you can query them by event name via XPath, as shown in the following example image and XML code block.
+To search for specific events by using the EventLog logger, you can query by event name via XPath, as shown in the following example illustration and XML code block.
 
-![EventLog Filter By Event Name](media\EventLogFilterByEventName.png)
+![EventLog filtering by event name.](media\EventLogFilterByEventName.png)
 
 ````xml
 <QueryList>
-  <Query Id="0" Path="Application">
-    <Select Path="Application">
-    *[System[Provider[@Name=
-    'Microsoft Dynamics - Retail Server']] and 
-    EventData[Data and 
-    (Data=
-    'EventName: Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh')]]</Select>
-  </Query>
+    <Query Id="0" Path="Application">
+        <Select Path="Application">
+        *[System[Provider[@Name=
+        'Microsoft Dynamics - Retail Server']] and 
+        EventData[Data and 
+        (Data=
+        'EventName: Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh')]]</Select>
+    </Query>
 </QueryList>
 ````
 
-The query above displays all logs from the **Application** log, with the provider **Microsoft Dynamics - Retail Server** and the event name **Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh**.
+This query shows all logs from the **Application** log that have the **Microsoft Dynamics - Retail Server** provider and the event name **Microsoft.Dynamics.Retail.RetailServerLibrary.Authentication.JsonWebKeySetResolver+Events.KeyFoundAfterJwksForceRefresh**.
 
-### Filter by original log level
+### Filtering by original log level
 
-The EventLog logger supports following entry types: 
+The EventLog logger supports following entry types:
 
-- **Error**
-- **Warning**
-- **Information**
-- **SuccessAudit**
-- **FailureAudit** 
+- Error
+- Warning
+- Information
+- SuccessAudit
+- FailureAudit
 
-EventLog logger maps log levels from different subsystems to match entry type limitations. For more information, see [EventLogEntryType Enum](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true).
+The EventLog logger maps log levels from different subsystems to match entry type limitations. For more information, see [EventLogEntryType Enum](/dotnet/api/system.diagnostics.eventlogentrytype?view=netframework-4.6.1&preserve-view=true).
 
-The following table shows current log level mapping between subsystems.
+The following table shows the current log level mapping between subsystems.
 
 | EventLevel (legacy events) | LogLevel (Microsoft.Extensions.Logging) | EventLogEntryType |
 | -------------------------- | --------------------------------------- | ----------------- |
@@ -172,19 +172,19 @@ The following table shows current log level mapping between subsystems.
 | Verbose                    | Debug                                   | Information       |
 |                            | Trace                                   | Information       |
 
-To allow for more precise filtering, information about the original log level from Microsoft.Extensions.Logging is stored as part of the event. This approach allows you to query by original log level via XPath, as shown in the following example query.
+To allow for more precise filtering, information about the original log level from Microsoft.Extensions.Logging is stored as part of the event. This approach lets you query by original log level via XPath, as shown in the following example query.
 
 ````xml
 <QueryList>
-  <Query Id="0" Path="Application">
-    <Select Path="Application">
-    *[System[Provider[@Name=
-    'Microsoft Dynamics - Retail Server']] and 
-    EventData[Data and 
-    (Data=
-    'LogLevel: Information')]]</Select>
-  </Query>
+    <Query Id="0" Path="Application">
+        <Select Path="Application">
+        *[System[Provider[@Name=
+        'Microsoft Dynamics - Retail Server']] and 
+        EventData[Data and 
+        (Data=
+        'LogLevel: Information')]]</Select>
+    </Query>
 </QueryList>
 ````
 
-The query above displays all logs from the **Application** log with the provider **Microsoft Dynamics - Retail Server** and the original log level of **Information**, which allows you to separate **Information** logs from **Debug** and **Trace** logs.
+This query shows all logs from the **Application** log that have the **Microsoft Dynamics - Retail Server** provider and an original log level of **Information**. Therefore, you can separate **Information** logs from **Debug** and **Trace** logs.
