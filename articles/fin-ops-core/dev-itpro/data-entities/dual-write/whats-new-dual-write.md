@@ -20,11 +20,11 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## January 2023 release 
 
-The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesnt include customer facing bug fixes or features. The rollout has started and completes in January.
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and completes in January.
 
 ## November 2022 release 
 
-The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesnt include customer facing bug fixes or features. 
+The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
 
 ## October 2022 release 
 
