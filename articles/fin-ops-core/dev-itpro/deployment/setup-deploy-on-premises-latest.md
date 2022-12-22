@@ -402,35 +402,6 @@ The infrastructure setup scripts use the following configuration files to drive 
 
 For detailed information on the configuration files available in the infrastructure scripts and additional information on how to fill out your configuration file see [Infrastructure Scripts Configuration](./configure-infrascripts-onprem.md).
 
-The infrastructure\\ConfigTemplate.xml configuration file describes the following details:
-
-- The service accounts that are required for the application to work
-- The certificates that are required to help secure communications
-- The database configuration
-- The Service Fabric cluster configuration
-- The file shares that are required for the application to work
-- The SQL cluster information 
-
-    > [!IMPORTANT]
-    > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
-
-For each Service Fabric node type, the infrastructure\\D365FO-OP\\NodeTopologyDefinition.xml configuration file describes the following details:
-
-- The mapping between each node type and the application, domain and service accounts, and certificates
-- Whether User Account Control (UAC) is enabled
-- The prerequisites for Windows features and system software
-- Whether strong name validation should be enabled
-- The list of firewall ports that should be opened
-- Which permissions an account requires for a machine
-- Whether the .NET Framework should be configured to use the operating system's default Transport Layer Security (TLS) protocol.
-- Whether insecure TLS and SSL protocols should be disabled.
-- Whether insecure TLS ciphers should be disabled.
-
-For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml configuration file describes the following details:
-
-- The database settings
-- The mappings between users and roles
-
 ### <a name="setupgMSA"></a>Step 8. Create gMSA accounts
 
 1. Open Windows PowerShell in elevated mode, change the directory to the **Infrastructure** folder in your file share, and run the following commands.
