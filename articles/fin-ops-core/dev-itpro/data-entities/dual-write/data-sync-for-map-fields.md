@@ -20,14 +20,14 @@ Today when a table participating in dual-write gets updated, the dual-write plat
 
 Going forward, dual-write platform core plugins will be triggered only when the updated field is configured in dual-write map. 
 
-Here is an example to explain the behavior: 
-There is a Microsoft Dataverse table with 3 fields named A, B, and C and there is a dual-write map for this table. Only fields B and C are configured in the dual-write map. 
+Here's an example to explain the behavior: 
+There's a Microsoft Dataverse table with three fields named A, B, and C and there's a dual-write map for this table. Only fields B and C are configured in the dual-write map. 
 
-- If A is updated, dual-write plugin will not be invoked unlike before where it used to.
-- If B is updated, dual-write plugin will be invoked and will send both B and C fields as part of payload to finance and operations apps.
-- If B is updated and C is calculated based on B, dual-write plugin will be invoked (due to B being mapped) and will send both B and C fields as part of payload to 
+- If A is updated, the dual-write plugin won't be invoked unlike before where it used to.
+- If B is updated, the dual-write plugin will be invoked and will send both B and C fields as part of payload to finance and operations apps.
+- If B is updated and C is calculated based on B, the dual-write plugin will be invoked because B is being mapped and will send both B and C fields as part of payload to 
 finance and operations apps.
-- If A is updated and C is calculated based on A, dual-write plugin will not be invoked (Current limitation for this feature.).
+- If A is updated and C is calculated based on A, the dual-write plugin won't be invoked (Current limitation for this feature.).
 
 
 >[!Note]
