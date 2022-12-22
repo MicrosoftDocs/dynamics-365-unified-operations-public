@@ -32,7 +32,7 @@ The October release of [Dual-write core solution 1.0.37.0](https://appsource.mic
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug | Before this release, dual-write plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. | Preview |
+| Bug | Before this release, dual-write platform core plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
 
 The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
 
