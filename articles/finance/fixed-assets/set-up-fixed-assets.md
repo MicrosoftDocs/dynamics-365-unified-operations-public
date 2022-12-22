@@ -79,6 +79,11 @@ One important option is named **Automatically create depreciation adjustment amo
 
 The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system will verify that the same asset book hasn’t been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
 
+The **Post disposal transactions in detail** Lets you determine the disposal scrap/sale to consider detailed disposal posting of acquisition to **Acquisition this year** and **acquisition prior years** if you set this option to Yes, in this case the disposal sale/scrap posting process validates the posting profile to ensure that you have configured the posting profile with all posting types. In the case of you set this option to No, the disposal scrap/sale posting process validates the posting profile to have the “Acquisition value” defined in the posting profile.  
+
+[!NOTE]
+>You can’t define the both options of posting types Acquisition value and Acquisition this year or Acquisition prior year in the disposal sale/scrap at the same time to ensure accurate disposal posting.
+
 On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when the invoice is posted. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition won't be posted. Posting must be done as a separate step, from the Fixed assets journal. The **Create asset during product receipt or invoice posting** option lets you create a new asset "on the fly" during posting. Therefore, the asset doesn't have to be set up as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
 
 You can configure reason codes so that they are required for changes to a fixed asset or for specific fixed asset transactions.
