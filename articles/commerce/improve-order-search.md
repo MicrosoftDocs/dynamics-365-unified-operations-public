@@ -30,7 +30,7 @@ To enable the **Improve Performance of Commerce Order search** feature in Commer
 
 To create and schedule the **Calculate sales totals** job, follow these steps.
 
-1. In Commerce headquarters, go to **System administration \> Enquiries \> Batch Jobs**.
+1. In Commerce headquarters, go to **System administration \> Inquiries \> Batch Jobs**.
 1. Select **New**.
 1. In the **Job description** field, enter **Calculate sales totals**.
 1. While the new job has a status of **Withhold**, follow these steps:
