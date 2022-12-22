@@ -36,7 +36,7 @@ Although the allocation feature in Inventory Visibility doesn't set aside physic
 
 ### Difference between inventory allocation and soft reservation
 
-[Soft reservations](inventory-visibility-reservations.md) are usually linked to actual sales transactions (sales order lines). Both allocation and soft reservation can be used independently, but if you want to use them together, soft reservation should be done after allocation. We recommend that you do inventory allocation first and then soft reserve against the allocated quantities to achieve near-real-time consumption against allocation. For more information, see [Consume as a soft reservation](#consume-to-soft-reserved).
+[Soft reservations](inventory-visibility-reservations.md) are often linked to actual sales transactions (sales order lines). Both allocation and soft reservation can be used independently, but if you want to use them together, soft reservation should be done after allocation. We recommend that you do inventory allocation first and then soft reserve against the allocated quantities to achieve near-real-time consumption against allocation. For more information, see [Consume as a soft reservation](#consume-to-soft-reserved).
 
 The inventory allocation feature lets sales planners or key account managers manage and preallocate important stock across allocation groups (such as channels, regions, and customer groups). It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, to ensure that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast-sale or promotion events.
 
@@ -111,7 +111,7 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 ### Manage allocation groups
 
-A maximum of eight allocation group names can be set, each corresponds to `Group0` to `Group7` in hierarchy. `Group0` and `Group7` correspond to the highest and lowerest level of hierarchy. When creating an allocation, hierarchies have to be specified from the highest to the lowest order. E.g, suppose your configuration has `Country` for `Group0`, `State` for `Group1` and `City` for `Group2`, `Country` and `State` are both required when specifying `City`, however, an allocation can be created with `Country` and `State`, or `Country` only. Follow these steps to view and update allocation groups.
+A maximum of eight allocation group names can be set, each corresponds to `Group0` to `Group7` in hierarchy. `Group0` and `Group7` correspond to the highest and lowest level of hierarchy. When creating an allocation, hierarchies have to be specified from the highest to the lowest order. E.g, suppose your configuration has `Country` for `Group0`, `State` for `Group1` and `City` for `Group2`, `Country` and `State` are both required when specifying `City`, however, an allocation can be created with `Country` and `State`, or `Country` only. Follow these steps to view and update allocation groups.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In default allocation configuraiotn, there are four levels of hierarchy, from the highest to lowest:`Channel` (Group0), `customerGroup` (Group1),`Region` (Group2), and `OrderType` (Group3).
@@ -120,7 +120,7 @@ A maximum of eight allocation group names can be set, each corresponds to `Group
     > [!IMPORTANT]
     > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](#allocation-tips).
 
-1. When you've finished configuring the allocation group and hierarchy settings, click "Save", then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
+1. When you've finished configuring the allocation group and hierarchy settings, select **Save**, then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
 
 If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
@@ -191,7 +191,7 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
 The quantity must always be more than 0 (zero). 
 
 > [!NOTE]
-> More often than not, `siteId` and `locationId` are mandatory when for creating an allocation since they are non-empty in data sources. 
+> More often than not, `siteId` and `locationId` are reqrired since they are not empty for most data sources. If in a rare case where either `siteId` or `locationId` is empty for a data source, allocation from that data source has to omit the empty dimension as well.  
 
 ### Unallocate
 
