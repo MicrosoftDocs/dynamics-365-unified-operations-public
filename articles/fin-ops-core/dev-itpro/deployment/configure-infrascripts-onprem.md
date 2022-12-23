@@ -117,140 +117,112 @@ In this section we currently support two types of ADServiceAccounts, group Manag
 <ADServiceAccount type="DomainUser" name="AXServiceUser" refName="axserviceuser" disabled="true" />
 ```
 
-For an ADServiceAccount, you should only be updating the **name** and **DNSHostName**. If you do not want to use Management Reporter and will not be deploying it, then you can set **disabled** to false for those accounts. This will ensure that configuration related to those accounts are not generated.
+For an ADServiceAccount, you should only be updating the **name** and **DNSHostName** (only for gMSA accounts). If you do not want to use Management Reporter and will not be deploying it, then you can set **disabled** to false for those accounts. This will ensure that configuration related to those accounts are not generated.
 
 ```xml
 <ADServiceAccount type="gMSA" name="svc-LA-sb$" refName="gmsaLocalAgent" disabled="false">
     <DNSHostName>svc-LA-sb.lab.local</DNSHostName>
 </ADServiceAccount>
-<ADServiceAccount type="DomainUser" name="AXServiceUser" refName="axserviceuser" disabled="true" />
+<ADServiceAccount type="DomainUser" name="AXServiceUser-sb" refName="axserviceuser" disabled="true" />
 ```
 
 If your deployment is still on an old base deployment version (prior to Application version 10.0.20), you will need to keep using the DomainUser. As such, make sure that it is enabled by setting **disabled** to false.
 
 ```xml
-<ADServiceAccounts>
-  <ADServiceAccount type="gMSA" name="svc-LocalAgent$" refName="gmsaLocalAgent" disabled="false">
-    <DNSHostName>svc-LocalAgent.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="gMSA" name="svc-FRAS$" refName="gmsaFRAS" disabled="false">
-    <DNSHostName>svc-FRAS.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="gMSA" name="svc-FRPS$" refName="gmsaFRPS" disabled="false">
-    <DNSHostName>svc-FRPS.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="gMSA" name="svc-FRCO$" refName="gmsaFRCO" disabled="false">
-    <DNSHostName>svc-FRCO.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="gMSA" name="svc-AXSF$" refName="gmsaAXSF" disabled="false">
-    <DNSHostName>svc-AXSF.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="gMSA" name="svc-ReportSvc$" refName="gmsaSSRS" disabled="false">
-    <DNSHostName>svc-ReportSvc.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="gMSA" name="svc-DIXF$" refName="gmsaDIXF" disabled="false">
-    <DNSHostName>svc-DIXF.contoso.com</DNSHostName>
-  </ADServiceAccount>
-  <ADServiceAccount type="DomainUser" name="AXServiceUser" refName="axserviceuser" disabled="true" />
-</ADServiceAccounts>
+  <ADServiceAccount type="DomainUser" name="AXServiceUser" refName="axserviceuser" disabled="false" />
 ```
 
 #### Certificates
 
+Certificates can be generated through Active Directory Certificate Services (ADCS) or can be self-signed. To set how you want to generate the certificate set **generateSelfSignedCert** or **generateADCSCert** appropriately. We strongly recommend that you use ADCS certificates over self-signed certificates. Do not fill in the **Thumbprint** of the certificate if you are using the scripts to generate the certificate as they will get auto populated.
+
 ```xml
-<Certificates>
-  <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="false">
-    <Name>star.contoso.com</Name>
-    <FileName>star.contoso.com</FileName>
-    <DNSName>ax.contoso.com;sf.contoso.com;*.contoso.com</DNSName>
-    <Subject>*.contoso.com</Subject>
+ <Certificate type="OnpremLocalAgent" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
+      <Name>OnpremLocalAgent</Name>
+      <Provider></Provider>
+      <Thumbprint></Thumbprint>
+      <ProtectTo></ProtectTo>
+</Certificate>
+```
+
+If you have generated a certificate elsewhere and already have the certificate provisioned in your machines, you can set **exportable** to false, and then the Export-Certificates.ps1 script will not attempt to export it. However you should still be defining the thumbprint so that the correct ACL can be generated and applied.
+
+```xml
+ <Certificate type="" exportable="false" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
+      <Name>OnpremLocalAgent</Name>
+      <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+      <Thumbprint>55a4ef521a3a00f64c4ac665dbaf3f17408cfe3d</Thumbprint>
+      <ProtectTo></ProtectTo>
+</Certificate>
+```
+
+When specifying the ProtectTo field for a certificate, it is common to set the user that is carrying out the deployment. However, this is a bad idea as if that user leaves the company you will lose access to those exported certificates. Instead, set the ProtectTo to  an active directory group that IT administrators for your D365 deployment belong to. You can specify multiple groups, users, or a combination of both.
+
+```xml
+ <Certificate type="" exportable="false" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
+      <Name>OnpremLocalAgent</Name>
+      <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+      <Thumbprint></Thumbprint>
+      <ProtectTo>LAB\D365Admins;LAB\Domain Admins;LAB\Adminuser</ProtectTo>
+</Certificate>
+```
+
+The certificate of type **ServiceFabric** is your wildcard certificate that protects your cluster and is presented by other services hosted in the cluster. The **Name** field is mapped to the Friendly Name of a certificate. The **FileName** field is used when exporting the certificate to give the exported certificate a file name. The **DNSName** field is mapped to the Subject Alternative Names of a certificate. The **Subject** field is mapped to the Subject Name (also known as Common Name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage** or **CertificateType** fields as these fields are hardcoded where necessary to generate the certificate correctly. If you update them there is no guarantee that the certificate will work, or that the scripts themselves would support the option specified.
+
+```xml
+<Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
+    <Name>star.lab.local</Name>
+    <FileName>star.lab.local</FileName>
+    <DNSName>ax.lab.local;sf.lab.local;*.lab.local</DNSName>
+    <Subject>*.lab.local</Subject>
     <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
     <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
     <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
-    <Thumbprint>55a4ef521a3a00f64c4ac665dbaf3f17408cfe3d</Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="ServiceFabricClient" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>client-prod.contoso.com</Name>
-    <Subject>client-prod.contoso.com</Subject>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
-    <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
     <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="ServiceFabricEncryption" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>axdataenciphermentcert-prod</Name>
-    <Provider>Microsoft Enhanced Cryptographic Provider v1.0</Provider>
-    <CertificateType>DocumentEncryptionCert</CertificateType>
-    <KeyUsage>DataEncipherment</KeyUsage>
-    <EnhancedKeyUsage>DocumentEncryption</EnhancedKeyUsage>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="SessionAuthentication" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>SessionAuthentication-prod</Name>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="DataEncryption" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>DataEncryption-prod</Name>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="DataSigning" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>DataSigning-prod</Name>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="FinancialReporting" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>FinancialReporting-prod</Name>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="ReportingService" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>ReportingService-prod</Name>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="Orchestrator" exportable="true" generateSelfSignedCert="false" generateADCSCert="false" disabled="false">
-    <Name>OnPremLocalAgent</Name>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint>66a4ea345a3a44f6e33ac215dbaf3f34a19cee3d</Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
-    <Name>LBDEN01SFBI.contoso.com</Name>
-    <FileName>LBDEN01SFBI.contoso.com</FileName>
-    <DNSName>LBDEN01SFBI1.contoso.com;LBDEN01SFBI2.contoso.com;LBDEN01SFBI.contoso.com</DNSName>
-    <Subject>LBDEN01SFBI.contoso.com</Subject>
-    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
-    <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="SQLCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false" manualProperties="false">
+    <ProtectTo>LAB\D365Admins</ProtectTo>
+</Certificate>
+```
+
+The certificate of type **SQLCluster** will be automatically generated by the scripts that generate the certificates. The scripts will use the information from the SQLCluster section later in the configuration file to automatically calculate the values. In such a scenario, simply set the **ProtectTo** field to the appropriate users or groups.
+
+```xml
+<Certificate type="SQLCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false" manualProperties="false">
     <Name></Name>
     <DNSName></DNSName>
     <Subject></Subject>
     <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
     <Thumbprint></Thumbprint>
-    <ProtectTo>contoso\D365Admins</ProtectTo>
-  </Certificate>
-  <Certificate type="RSAT" exportable="true" generateSelfSignedCert="true" disabled="true">
+    <ProtectTo>LAB\D365Admins</ProtectTo>
+</Certificate>
+```
+
+In the cases where the logic that automatically calculates the configuration for the **SQLCluster** certificate does not correctly reflect your setup you can override the automated calculation and set it to manually specify it yourself. Simply set **manualProperties** to true and fill out the certificate information. For this certificate, ensure that the certificate SAN contains the name of each SQL server as well as the always on availability group listener (if you have one).
+
+```xml
+<Certificate type="SQLCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false" manualProperties="true">
+    <Name>LBDEN01SQLA.lab.local</Name>
+    <DNSName>LBDEN01SQLA.lab.local;LBDEN01SQLA01.lab.local;LBDEN01SQLA02.lab.local</DNSName>
+    <Subject>LBDEN01SQLA.lab.local</Subject>
+    <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
+    <Thumbprint></Thumbprint>
+    <ProtectTo>LAB\D365Admins</ProtectTo>
+</Certificate>
+```
+
+The certificate of type **RSAT** is a special certificate as it can only be self-signed due to requirements from the Performance SDK that the Regression Suite Automation Tool (RSAT) is built on. Additionally, similar to the **SQLCluster** certificate you should only update the **ProtectTo** field. All other settings should stay the same.
+
+```xml
+<Certificate type="RSAT" exportable="true" generateSelfSignedCert="true" disabled="true">
     <Name>RSAT</Name>
     <FileName>RSAT</FileName>
     <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
     <Subject>127.0.0.1</Subject>
     <Thumbprint></Thumbprint>
-    <ProtectTo></ProtectTo>
-  </Certificate>
-</Certificates>
+    <ProtectTo>LAB\D365Admins</ProtectTo>
+</Certificate>
 ```
+
+
 
 ### Filling out a ConfigTemplate.xml for Contoso Corporation
 
@@ -331,7 +303,7 @@ Contoso corporation has acquired a certificate from a public certificate authori
 
 Contoso corporation has an Active Directory Certificate Services (ADCS) server and has decided to use it to generate all of the other certificates.
 
-As Contoso corporation does not want to lose access to the certificate private keys if their IT administrator leaves, they have set the **ProtectTo** field to an Active Directory group that all of their IT administrators are a part of.
+As Contoso corporation does not want to lose access to the certificate private keys if their IT administrator leaves, they have set the **ProtectTo** field to an Active Directory group that all of their IT administrators are a part of. This is a best practice instead of specifying a single user.
 
 As they did previously with the gMSA accounts, Contoso corporation has chosen to add the **-prod** suffix to all of their other certificates (except the SQLCluster, OnpremLocalAgent and RSAT certificates) to be able to distinguish them better.
 
@@ -508,8 +480,8 @@ Contoso corporation has a file server with a single node, but will ensure that t
 #### ServiceFabricCluster
 
 To be able to correctly identify the cluster they are connected to Contoso coporation has updated the **ClusterName** to reflect that this is their production cluster.
- 
-Contoso corporation has observed that they have resource heavy batch jobs that run during normal operation hours. Since they don't want their users to be impacted they have chosen to split batch and interactive sessions into separate nodes. So they have added the new NodeType references to the configuration.
+
+Contoso corporation has observed that they have resource heavy batch jobs that run during normal operation hours. Since they don't want their users to be impacted they have chosen to split batch and interactive sessions into separate nodes. To accomplish this they have added the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types and set the disabled field for the **AOSNodeType** to true.
 
 Foreach machine that belongs to a nodetype they have filled in the VM name, the ip address of the VM as well as the fault domain and update domain.
 
@@ -524,6 +496,13 @@ To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, 
 ```xml
   <ServiceFabricCluster>
     <ClusterName>Contoso Production</ClusterName>
+    <NodeType name="AOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="true">
+      <VMList>
+        <VM name="" ipAddress="" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+        <VM name="" ipAddress="" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+        <VM name="" ipAddress="" faultDomain="fd:/fd2" updateDomain="ud2" hasSSIS="false" />
+      </VMList>
+    </NodeType>
     <NodeType name="BatchOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="false">
       <VMList>
         <VM name="LBDEN01SFAOS1" ipAddress="10.0.0.11" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
