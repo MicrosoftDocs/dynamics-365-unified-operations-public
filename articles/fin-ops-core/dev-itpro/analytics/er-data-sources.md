@@ -310,7 +310,7 @@ To learn more, review the [Parse incoming documents](er-parse-incoming-documents
 
 ### <a name="class"></a>Class
 
-You can use the **[Class](er-formula-supported-data-types-composite.md#class)** data source to call from your ER solution a static method of a public class. Values of arguments for calling classes can be dynamically defined at runtime. To invoke a class, configure a data source of the ***Calculated field*** type with an expression that refers the desired class of application source code. To learn more, complete the steps of the procedure in the [Design ER expressions to call application class methods](../tasks/design-expressions-app-class-er.md) article.
+You can use the **[Class](er-formula-supported-data-types-composite.md#class)** data source to call from your ER solution a static method of a public class. Values of arguments for calling classes can be dynamically defined at runtime. To invoke a class, configure a data source of the ***Calculated field*** type with an expression that refers the desired class of application source code. To learn more, complete the steps of the procedure in the [Design ER expressions to call application class methods](./tasks/design-expressions-app-class-er.md) article.
 
 You can add a data source of the ***Class*** type in the editable **Model mapping** component. Should you identify the editable model mapping as the preferrable one for execution, set the **Integration point** option of this data source of the ***Class*** type to **Yes**. To learn more about this option, review the [API to run a format mapping for the generation of outbound documents](er-apis-app10-0-11.md#api-to-run-a-format-mapping-for-the-generation-of-outbound-documents) section.
 
@@ -559,10 +559,10 @@ The following illustration shows the data source of the ***Financial dimensions 
 
 To learn more, complete the steps of the procedure in the following **ER Use financial dimensions as a data source** articles:
 
--   [Part 1 - Design data model](../tasks/er-financial-dimensions-data-source-1.md)
--   [Part 2 - Model mapping](../tasks/er-financial-dimensions-data-source-2.md)
--   [Part 3 - Design the report](../tasks/er-financial-dimensions-data-source-3.md)
--   [Part 4 - Run the report](../tasks/er-financial-dimensions-data-source-4.md)
+-   [Part 1 - Design data model](./tasks/er-financial-dimensions-data-source-1.md)
+-   [Part 2 - Model mapping](./tasks/er-financial-dimensions-data-source-2.md)
+-   [Part 3 - Design the report](./tasks/er-financial-dimensions-data-source-3.md)
+-   [Part 4 - Run the report](./tasks/er-financial-dimensions-data-source-4.md)
 
 ### <a name="inventory-dimensions-details"></a>Inventory dimensions details
 
