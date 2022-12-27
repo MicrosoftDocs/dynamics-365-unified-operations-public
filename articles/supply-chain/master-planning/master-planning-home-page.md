@@ -4,7 +4,7 @@
 title: Master planning home page
 description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
 author: t-benebo
-ms.date: 11/30/2022
+ms.date: 12/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,16 +56,6 @@ The following learning map shows the major concepts and tasks that make up the f
 
 [![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
-## Quick links
-
-- [Master plans overview](master-plans.md)  
-- [Generate a constrained plan](./tasks/constrained-plan.md)
-- [Create a material plan for co-products](./tasks/create-material-plan-co-products.md)
-- [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
-- [Create an intercompany plan](./tasks/create-intercompany-plan.md)
-- [Demand forecasting overview](introduction-demand-forecasting.md)
-- [Forecast reduction keys](reduction-keys.md)
-
 ## Additional resources
 
 ### Roadmaps
@@ -77,18 +67,17 @@ Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see
 You can find opinions, news, and other information about Master planning and other solutions on the
 [Dynamics AX Manufacturing R&D Team blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
-### Task guides
-
-Additional help is available as task guides. To access task guides, click the **Help** button on any page.
-
 ### Webinars
 
 [Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### Tech conference recordings
 
+- [Planning Optimization service](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-supply-chain-management---planning-optimization-service-february-21-2020)
+- [Get started with Planning Optimization](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/get-started-with-planning-optimization-for-dynamics-365-supply-chain-management-march-1-2021)
+- [Demand forecasting series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/demand-forecasting-with-azure-machine-learning-series)
 - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [MRP performance tuning](https://youtu.be/RLXybx20B5o)
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
