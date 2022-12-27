@@ -31,78 +31,13 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes various important strategies and parameters that are used to set up master planning. It includes an overview of the types of plans that are used by master planning and explains which plan strategy you should use, depending on your business requirements. It also describes the main parameters that affect the plan and explains how those parameters influence the planned orders that are suggested.
+This article describes various important strategies and parameters that are used to set up master planning. It also describes the main parameters that affect the plan and explains how those parameters influence the planned orders that are suggested.
 
-## Types of master plans
+## Use of master plans
 
-Master planning has two types of plans: static and dynamic. Each type is designed for a different use. For the best performance, we recommend that you use the appropriate plan for your scenario.
+Due to the speed of master planning on the system, you are able to setup as many plans as needed and run them as often as needed to fit your business requirements. For example, it is possible to run a plan twice a day to always keep with the latest updated demand and supply to fulfill it and have other plans for different forecasts or simulations. 
 
-### Static plan
-
-The static plan remains unchanged, regardless of any changes in the supply and demand, until the next time that master planning is run.
-
-The static plan is used to approve and firm the orders that are suggested. It's an operating plan that various company personnel (such as a purchaser or production planner) can base their decisions on and use to perform their daily tasks and activities.
-
-The static plan also supports regeneration. A totally new optimized plan is calculated every time that master planning is run, and existing orders that haven't been approved are deleted.
-
-### Dynamic plan
-
-The dynamic plan usually starts as a copy of the static plan, but it can be updated every time that master data changes. For example, if the data changes, a new sales order is created.
-
-The dynamic plan is used for ad-hoc planning. It lets the company monitor the changing order network and item availability without disturbing the static plan that other people are using for their work processes. It's especially used for capable to promise (CTP). The dynamic plan is the default plan when net requirements are opened from order pages (such as sales order, purchase order, or production order pages).
-
-The dynamic plan uses net change. Therefore, it helps guarantee a faster running time.
-
-## Strategies for using master plans
-
-You can use either one plan or two plans in master planning. The strategy that you use depends on your business requirements.
-
-### One-plan strategy
-
-For the one-plan strategy, you use the same master plan for the static plan and the dynamic plan. This strategy is used for make-to-stock scenarios, where you don't usually have to simulate a plan that fulfills an order.
-
-The one-plan strategy is typically used in retail and distribution industries, or where sales delivery dates are confirmed based on service level agreements (SLAs) or lead times. For the plan, delivery date control can be used without CTP.
-
-If you must do a simulation, the plan can be run again for the items that require the simulation. The planned orders that order simulations produce are usually firmed.
-
-### Two-plan strategy
-
-For the two-plan strategy, you use a static plan and a different dynamic plan. The two-plan strategy is typically used for configure-to-order and make-to-order scenarios, where you must do sales order simulations and calculate exact delivery dates for sales orders, but the calculations must not affect everyday operations. These simulations are always done in the dynamic plan. The two-plan strategy is useful in the automotive and original equipment manufacturer (OEM) industries, for example.
-
-For the two-plan strategy, delivery date control CTP can be used. When CTP is used, it automatically triggers the run in the dynamic plan.
-
-### Setting up the plans
-
-You can create plans on the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**).
-
-You can specify which plans will be used for the static plan and the dynamic plan by setting the **Current static master plan** and **Current dynamic master plan** fields on the **Master planning parameters** page (**Master planning \> Setup \> Master planning parameters**). To use a one-plan strategy, select the same plan in the **Current static master plan** and **Current dynamic master plan** fields.
-
-## Types of planning methods
-
-Three calculation methods can be used to run master planning: regeneration and net change. Each method produces a different plan when it's run.
-
-You specify the planning method in the **Master planning run** dialog box. To open this dialog box, go to **Master planning \> Master planning \> Run \> Master planning**, or select **Run** in the **Master planning** workspace.
-
-### Regeneration
-
-The regeneration planning method deletes existing planned orders, unless they are firmed. It generates new planned orders, based on all the requirements. Regeneration is the only planning method that is available for static plans.
-
-- Changes in supply are considered. These changes include changes in the forecast.
-- This method respects the **Period** coverage code.
-- This method supports product substitution functionality (PI).
-
-### Net change
-
-The net change planning method generates planned orders to cover the requirements that have been created or changed since the last master planning run. Changes in supply aren't considered when this method is run. The system doesn't consider any new supplies, and previously created planned orders aren't deleted if they are no longer required. The net change planning method runs faster than the regeneration method. It's available only for dynamic plans.
-
-- Action dates and futures are updated for all requirements.
-- This method doesn't respect the **Period** coverage code.
-- This method doesn't fulfill the forecast, even if it's selected on the plan.
-- This method doesn't support product substitution functionality (PI).
-
-### Net change minimized
-
-The net change minimized planning method generates planned orders to cover only the requirements that have been created or changed since the last master planning scheduling run. For this method, unlike the net change method, action dates and future dates are updated only for new or changed requirements. This planning method is available only for dynamic plans.
+If you use CTP for Planning Optimization, it will run the plan specified as the **Current dynamic master plan** fields on the **Master planning parameters** page (**Master planning \> Setup \> Master planning parameters**).
 
 ## Types of scheduling methods
 
