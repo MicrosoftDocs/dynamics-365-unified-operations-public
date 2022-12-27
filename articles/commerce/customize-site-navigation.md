@@ -41,7 +41,7 @@ You can now assign products to each category that you created under the top-leve
 
 ## Customize the order of categories
 
-By default, the categories that you define will appear in alphabetical order on your site. However, you can also customize the display order of categories.
+By default, the categories that you define will appear in alphabetical order on your site. However, you can also customize the display order of categories. Learn more [how to manage display orders for categories](custom-order-categories-nav-retail-prod-hierarchy.md#configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy)  
 
 ## Assign a category hierarchy type
 
