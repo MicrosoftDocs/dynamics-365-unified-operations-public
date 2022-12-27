@@ -73,6 +73,12 @@ For detailed information about how to use product lifecycle state to exclude pro
 > [!NOTE]
 > For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.  
 
+## Detail control of business processes
+
+It is possible to setup a more detail control of which business processes should be allowed or blocked by the system for a specific lifecycle state. This can be useful in product introduction scenarios (where for example, it may be possible to purchase the item but receive a warning that it is still a prototype) or to discontinue or end of life of a product (where it may be possible to sell the existing on-hand but not to purchase it or to produce it). 
+
+For enabling these detail control of the business processes, the Engineering Change Management configuration key must be enabled for the processes to appear. You can use these detail control of business processes in products and variants, as well as with engineering products. You can safely enable the configuration key and use the lifefycle state for standard products even if you do not use any of the rest of the engineering change management processes. 
+
 ## Default migration, import, and export
 
 The product lifecycle states are supported by data entities, and the lifecycle state can be set to a variable state through either the released product data entity or the released variant data entity.
