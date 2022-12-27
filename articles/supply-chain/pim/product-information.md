@@ -4,7 +4,7 @@
 title: Product information overview
 description: This article provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 author: t-benebo 
-ms.date: 11/30/2022
+ms.date: 12/30/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -100,6 +100,11 @@ The workspace consists of a summary of tiles and two lists. The **Open cases** l
 ### Manually creating a new released product
 
 You can manually create a released product in a single run, depending on the organization's business processes and any rules about whether this function should be used. This function creates a new product and automatically releases it to the current legal entity. To create a new product, click **Released products** in the **Released product maintenance** workspace or on the **Released product** list page.
+
+## Change managed products (versioned products)
+
+For products, specially with BOMs or formulas, where it is needed to keep track of versions and have an established change management process, you can set them up in the system as **engineering products**. Engineering products are changed managed, having versions and keeping track of the changes in between versions with change orders. It is possible to track the version in transactions (each version is a product variant) or not track it. 
+More information on engineering change management [on the following page.](https://learn.microsoft.com/en-us/dynamics365/supply-chain/engineering-change-management/product-engineering-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
