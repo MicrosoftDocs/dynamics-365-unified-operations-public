@@ -232,7 +232,7 @@ RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursCo
 
 ```csharp
 
-private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+private async Task<CommerceEntity> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
             {
                 ThrowIf.Null(request, "request");
 
