@@ -44,30 +44,30 @@ If you're using a Tier-2 sandbox or production environment that has application 
 ## Region availability
 Commerce Scale Unit is available for deployment in the following regions.
 
-| Global location | Region              | Availability        | Comments                  |
-|-----------------|---------------------|---------------------|---------------------------|
+| Global location | Region              | Availability        | Comments                              |
+|-----------------|---------------------|---------------------|---------------------------------------|
 | AMERICAS        | East US             | Generally available |  No comments.                         |
-| AMERICAS        | East US 2           | Generally available |  No comments.                          |
-| AMERICAS        | North Central US    | Limited capacity    |  No comments.                            |
-| AMERICAS        | South Central US    | Limited capacity    |  No comments.                            |
-| AMERICAS        | Central US          | Generally available |  No comments.                            |
-| AMERICAS        | West US             | Generally available |  No comments.                            |
-| AMERICAS        | West US 2           | Generally available |  No comments.                            |
-| AMERICAS        | Canada Central      | Limited capacity    |  No comments.                            |
-| AMERICAS        | Canada East         | Limited capacity    |   No comments.                           |
-| AMERICAS        | West Central US     | Limited capacity    |   No comments.                           |
-| APAC            | Australia East      | Generally available |   No comments.                           |
-| APAC            | Southeast Asia      | Capacity restricted | No deployments allowed.    |
-| APAC            | Japan East          | Generally available |  No comments.                            |
-| APAC            | Japan West          | Generally available |   No comments.                           |
-| APAC            | Australia Southeast | Generally available |   No comments.                           |
-| APAC            | East Asia           | Limited capacity    |   No comments.                           |
-| APAC            | India South         | Capacity restricted | No deployments allowed.    |
-| APAC            | India Central       | Limited capacity    | Requires approval process. |
-| EMEA            | West Europe         | Generally available |  No comments. |
-| EMEA            | North Europe        | Generally available |  No comments. |
-| EMEA            | UK South            | Generally available |    No comments.                          |
-| EMEA            | UK West             | Generally available |    No comments.                          |
+| AMERICAS        | East US 2           | Generally available |  No comments.                         |
+| AMERICAS        | North Central US    | Limited capacity    |  No comments.                         |
+| AMERICAS        | South Central US    | Limited capacity    |  No comments.                         |
+| AMERICAS        | Central US          | Generally available |  No comments.                         |
+| AMERICAS        | West US             | Generally available |  No comments.                         |
+| AMERICAS        | West US 2           | Generally available |  No comments.                         |
+| AMERICAS        | Canada Central      | Limited capacity    |  No comments.                         |
+| AMERICAS        | Canada East         | Limited capacity    |   No comments.                        |
+| AMERICAS        | West Central US     | Limited capacity    |   No comments.                        |
+| APAC            | Australia East      | Generally available |   No comments.                        |
+| APAC            | Southeast Asia      | Capacity restricted | No deployments allowed.               |
+| APAC            | Japan East          | Generally available |  No comments.                         |
+| APAC            | Japan West          | Generally available |   No comments.                        |
+| APAC            | Australia Southeast | Generally available |   No comments.                        |
+| APAC            | East Asia           | Limited capacity    |   No comments.                        |
+| APAC            | India South         | Capacity restricted | No deployments allowed.               |
+| APAC            | India Central       | Limited capacity    | Requires approval process.            |
+| EMEA            | West Europe         | Generally available |  No comments.                         |
+| EMEA            | North Europe        | Generally available |  No comments.                         |
+| EMEA            | UK South            | Generally available |    No comments.                       |
+| EMEA            | UK West             | Generally available |    No comments.                       |
 | UAE             | UAE North           | Not available       | US or EU based LCS project must be used. UAE based environments can deploy UAE based CSUs. Per this writing (December 2022), UAE based environments are not deployable in US or EU based LCS projects. Work is in progress to resolve. |
 
 Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case by case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
