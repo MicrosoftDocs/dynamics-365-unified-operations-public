@@ -18,6 +18,9 @@ ms.search.validFrom: 2021-04-30
 
 [!include [banner](../includes/banner.md)]
 
+> [!WARNING]
+> Once the Commerce Scale Unit (CSU) is updated to version 10.0.29 or newer, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or newer (Seen in point of sale as 9.27). This is due to the migration to .NET Core.
+
 This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
 
 This article explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
