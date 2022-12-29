@@ -110,7 +110,7 @@ Migration from the old self-service framework component installers to the new fr
 
 ### Before you begin
 
-It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article.
+It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. Further, it is an additional requirement beyond that of legacy Modern POS that the SQL instance used must have both **Windows authentication** and **SQL Server authentication** modes. This can be managed and changed in **SQL Server Management Studio**, in the **Properties** window under the **Security** sub-heading.
 
 > [!NOTE]
 > On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it is possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
