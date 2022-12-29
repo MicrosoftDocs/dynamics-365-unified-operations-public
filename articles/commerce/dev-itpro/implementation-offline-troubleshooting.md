@@ -38,7 +38,7 @@ If the following table does not list an error that you are receiving, create a s
 | Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | This error occurs when the same user attempts to perform a manager override. A different user must be used. |
 | Commerce_Runtime_RealtimeServiceNotSupported Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been set up successfully. Please contact your system administrator. |
 | Commerce_Runtime_TerminalNotFound Commerce_Runtime_DeviceConfigurationNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Internal_Server_Error Request_Timeout_Error | These errors cover a variety of possible scenarios so we recommend to contact support and get assistance directly, where applicable. |
+| Internal_Server_Error Request_Timeout_Error Commerce_Runtime_InvalidFormat | These errors cover a variety of possible scenarios so we recommend to contact support and get assistance directly, where applicable. |
 
 ## Additional resources
 
