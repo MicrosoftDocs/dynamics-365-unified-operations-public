@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Commerce offline implementation and troubleshooting
-description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
+title: Commerce offline implementation considerations
+description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations.
 author: jashanno
 ms.date: 09/29/2022
 ms.topic: article
@@ -15,11 +15,11 @@ ms.search.validFrom: 2021-08-31
 
 ---
 
-# Commerce offline implementation and troubleshooting
+# Commerce offline implementation considerations
 
 [!include[banner](../includes/banner.md)]
 
-This article is intended for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce applications. This article describes features and functionality, implementation tips, and troubleshooting methods related to the usage of offline functionality.
+This article is intended for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce applications. This article describes features and functionality and implementation tips related to the usage of offline functionality.
 
 ## Overview
 
@@ -89,25 +89,13 @@ When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS
 -	Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
 -	Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
 
-
 ## Troubleshooting
 
-If the following table does not list an error that you are receiving, create a support request, so that Microsoft Support can help you fix the issue. This section will be updated over time with additional errors so it is valuable to review this document prior to implementing or updating Modern POS registers that utilize offline databases.
-Note that all troubleshooting errors begin with **Microsoft_Dynamics_**. This is omitted for purposes of shortening error codes.
-
-| Error | Description |
-|--------------------------------------------|-------------------------------------|
-| Commerce_Runtime_AuthenticationFailed Commerce_Runtime_AuthorizationFailed | A logon related issue has occurred. This could be due to data not correctly found or configured in the offline database. |
-| Commerce_Runtime_AuthenticationMethodDisabled Commerce_Runtime_ChannelConfigurationNotFound Commerce_Runtime_ChannelNotPublished Commerce_Runtime_ChannelRecordNotFound Commerce_Runtime_EmployeePermissionContextNotFound Commerce_Runtime_InvalidChannel Commerce_Runtime_InvalidChannelConfiguration Commerce_Runtime_StaffIdContextMissing |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Commerce_Runtime_CredentialsNotConfigured Commerce_Runtime_CredentialsNotFound Commerce_Runtime_InvalidAuthenticationCredentials Commerce_Runtime_LocalLogonFailed Commerce_Runtime_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either not available or not configured correctly. To resolve this issue, run the Staff scheduler job (by default, this is the 1060 scheduler job). Please contact your system administrator. |
-| Commerce_Runtime_CriticalStorageError  | To check the status offline db permissions, size, disk space (could use offline dashboard) |
-| Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | This error occurs when the same user attempts to perform a manager override. A different user must be used. |
-| Commerce_Runtime_RealtimeServiceNotSupported Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been set up successfully. Please contact your system administrator. |
-| Commerce_Runtime_TerminalNotFound Commerce_Runtime_DeviceConfigurationNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Internal_Server_Error Request_Timeout_Error | These errors cover a variety of possible scenarios so we recommend to contact support and get assistance directly, where applicable. |
+For additional information regarding troubleshooting, see the **Commerce offline implementation troubleshooting** document linked below.
 
 ## Additional resources
 
+- [Commerce offline implementation troubleshooting](implementation-offline-troubleshooting.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
