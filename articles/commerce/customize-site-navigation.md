@@ -2,7 +2,7 @@
 title: Customize site navigation
 description: This article describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
-ms.date: 12/28/2022
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
