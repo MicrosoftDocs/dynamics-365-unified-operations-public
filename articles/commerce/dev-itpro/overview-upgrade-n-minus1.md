@@ -19,6 +19,9 @@ ms.custom: 44351,  ""intro-internal
 
 [!include [banner](../../includes/banner.md)]
 
+> [!WARNING]
+> Dynamics AX 2012 R3 support is ending.  While the upgrade and migration is still supported, note the dates relevant to this end of support.  More information can be read in the [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md) article.
+
 Upgrade and N-1 support have been enabled in the July 2017 release of Microsoft Dynamics 365 Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud.
 
 The following features let customers upgrade in a seamless manner:
