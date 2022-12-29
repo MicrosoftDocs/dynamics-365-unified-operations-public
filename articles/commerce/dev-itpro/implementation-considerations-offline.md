@@ -97,13 +97,14 @@ Note that all troubleshooting errors begin with **Microsoft_Dynamics_**. This is
 
 | Error | Description |
 |--------------------------------------------|-------------------------------------|
-| Commerce_Runtime_AuthenticationMethodDisabled Commerce_Runtime_ChannelConfigurationNotFound Commerce_Runtime_ChannelNotPublished Commerce_Runtime_InvalidChannelConfiguration |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
+| Commerce_Runtime_AuthenticationFailed Commerce_Runtime_AuthorizationFailed | A logon related issue has occurred. This could be due to data not correctly found or configured in the offline database. |
+| Commerce_Runtime_AuthenticationMethodDisabled Commerce_Runtime_ChannelConfigurationNotFound Commerce_Runtime_ChannelNotPublished Commerce_Runtime_ChannelRecordNotFound Commerce_Runtime_EmployeePermissionContextNotFound Commerce_Runtime_InvalidChannel Commerce_Runtime_InvalidChannelConfiguration Commerce_Runtime_StaffIdContextMissing |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
 | Commerce_Runtime_CredentialsNotConfigured Commerce_Runtime_CredentialsNotFound Commerce_Runtime_InvalidAuthenticationCredentials Commerce_Runtime_LocalLogonFailed Commerce_Runtime_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either not available or not configured correctly. To resolve this issue, run the Staff scheduler job (by default, this is the 1060 scheduler job). Please contact your system administrator. |
 | Commerce_Runtime_CriticalStorageError  | To check the status offline db permissions, size, disk space (could use offline dashboard) |
 | Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | This error occurs when the same user attempts to perform a manager override. A different user must be used. |
 | Commerce_Runtime_RealtimeServiceNotSupported Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been set up successfully. Please contact your system administrator. |
-| Commerce_Runtime_TerminalNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Internal_Server_Error | This error covers several possible scenarios, so we recommend that you contact support and get assistance directly. |
+| Commerce_Runtime_TerminalNotFound Commerce_Runtime_DeviceConfigurationNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
+| Internal_Server_Error Request_Timeout_Error | These errors cover a variety of possible scenarios so we recommend to contact support and get assistance directly, where applicable. |
 
 ## Additional resources
 
