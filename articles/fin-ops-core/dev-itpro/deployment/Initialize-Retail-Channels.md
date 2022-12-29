@@ -68,7 +68,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | North Europe        | Generally available |  No comments. |
 | EMEA            | UK South            | Generally available |    No comments.                          |
 | EMEA            | UK West             | Generally available |    No comments.                          |
-| UAE             | UAE North           | Not available       | Utilizing a US or EU based LCS project, a UAE based environment could deploy a UAE based CSU. At the time of this writing (December 29th, 2022), a UAE based environment is not deployable in a US or EU based LCS project.  Work in progress to fix. |
+| UAE             | UAE North           | Not available       | US or EU based LCS project must be used. UAE based environments can deploy UAE based CSUs. Per this writing (December 2022), UAE based environments are not deployable in US or EU based LCS projects. Work is in progress to resolve. |
 
 Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case by case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
 
