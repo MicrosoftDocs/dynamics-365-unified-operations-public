@@ -32,6 +32,8 @@ We have made some improvements to how extensions are handled during an upgrade. 
 - Microsoft Dynamics 365 Retail 7.3, which includes application update 5.
 - Microsoft Dynamics 365 Finance 7.3, which includes application update 5.
 
+Additional reference material can be reviewed in the [Pre-extended columns in the channel database](extended-columns.md) article.
+
 ## Ext schema
 
 In Finance and Commerce there is a now schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions will not have permission to read the CRT, AX, and DBO schema definition during deployment, do not include any queries in the extension script to read the CRT, AX, and DBO schema definition.
