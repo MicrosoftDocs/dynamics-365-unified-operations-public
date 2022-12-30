@@ -141,8 +141,8 @@ namespace Contoso
 
 The following table lists the columns that are pre-extended.
 
-| Table                         | Column                             | Length        | Extension in CRT      | Extension in POS                    |
-|-------------------------------|------------------------------------|---------------|-----------------------|-------------------------------------|
+| Table                         | Column                             | Length        | Extension in CRT      | Extension in POS  |
+|-------------------------------|------------------------------------|---------------|-----------------------|-------------------|
 | INVENTSERIAL                  | INVENTSERIALID | nvarchar(50)  |                       | GetSerialNumberClientRequestHandler |
 | LOGISTICSPOSTALADDRESS        | ADDRESS        | nvarchar(500) | ValidateAddressLength |                                     |
 | LOGISTICSPOSTALADDRESS        | STREET         | nvarchar(400) | ValidateAddressLength |                                     |
