@@ -5,7 +5,7 @@ author: toskaue
 ms.date: 01/04/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: johnmichalak
+ms.reviewer: josaw1
 ms.search.region: Global
 ms.author: ms-skaue
 ms.search.validFrom: 2023-01-01
