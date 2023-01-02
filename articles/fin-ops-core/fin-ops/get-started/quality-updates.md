@@ -109,18 +109,6 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022, November 2 to November 5, 2022, November 15 to November 18, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
-### <a name="schedule"></a> Proactive quality update release: 10.0.30
-**App version: 10.0.1362.77**
-**Corresponding latest KB article: 767597**
-
-| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule |
-|---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | December 1 to December 4, 2022 |  December 13 to December 16, 2022 | 
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | December 2 to December 5, 2022 |  December 13 to December 16, 2022 | 
-| Station 3 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central | December 3 to December 6, 2022 |  December 13 to December 16, 2022 | 
-| Station 4 | West Europe, Central US, West US | December 4 to December 7, 2022 |  December 13 to December 16, 2022 | 
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
-
 ### <a name="schedule"></a> Proactive quality update Calendar year 2023 schedule
 
 #### <a name="Stations-Regions"></a> Stations to Region Mapping
@@ -179,6 +167,17 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 3 | January 3 to January 6, 2023 | January 28 to January 29, 2023 |
 | Station 4 | January 9 to January 12, 2023 | NA |
 | Station 5 | January 16 to January 19, 2023 | NA |
+| Station 6 | NA | NA |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | January 30 to February 2, 2023 | February 11 to February 12, 2023 |
+| Station 3 | January 31 to February 3, 2023 | February 11 to February 12, 2023 |
+| Station 4 | February 6 to February 9, 2023 | February 18 to February 19, 2023 |
+| Station 5 | February 13 to February 16, 2023 | February 25 to February 26, 2023 |
 | Station 6 | NA | NA |
 
 > [!IMPORTANT] 
