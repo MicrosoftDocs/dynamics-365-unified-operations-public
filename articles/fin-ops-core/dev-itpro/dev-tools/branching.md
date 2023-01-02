@@ -47,7 +47,7 @@ Sequential branching is a branching approach where the branches mirror the phase
 
 When a developer believes their in-development work item is ready for functional testing, they merge or "promote" all changes associated with their work to the Testing branch, which contains all code awaiting functional validation. When the changes associated with a work item pass functional validation, they are promoted to the Production branch, which contains the code running on (or soon to be deployed to) the live environment.
 
-Unlike a [feature](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) or [release](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
+Unlike a [feature](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) or [release](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
 
 ```mermaid
 graph LR
@@ -63,15 +63,11 @@ Compared to other branching strategies, sequential branching is relatively easy 
 
 #### Cons
 
-If your X++ development naturally breaks into feature or release partitions (as is often the case for ISV solutions but less commonly the case for customer specific customizations), sequential branching is not the best fit. Also, for sequential branching to work optimally, two Tier 2 sandbox environments are preferred: a functional testing environment for code validation, and a production mirror environment deployment testing and production troubleshooting. Tier 2 environments are relatively expensive, so budget-sensitive projects may not prefer this approach. Lastly, because the branch names so closely reflect the environments they support, the relationship between the branches and the environments can be confusing. The below diagram helps clarify the relationship.
-
-![Image mapping Dev, Test, and Prod repo branches to Dev, Test, Production Mirror, and Production environments](../media/D365FnORepoBranchesToEnvironment.drawio.png)
-
-*Figure 2. Environment branch relationship and code flow. Note that the build VM is not a user-facing environment and is only shown here for completeness.*
+If your X++ development naturally breaks into feature or release partitions (as is often the case for ISV solutions but less commonly the case for customer specific customizations), sequential branching is not the best fit. Also, for sequential branching to work optimally, two Tier 2 sandbox environments are preferred: a functional testing environment for code validation, and a production mirror environment deployment testing and production troubleshooting. Tier 2 environments are relatively expensive, so budget-sensitive projects may not prefer this approach. Lastly, because the branch names so closely reflect the environments they support, the relationship between the branches and the environments can be confusing.
 
 ### Option 2: Feature Branches
 
-[Feature branching](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
+[Feature branching](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
 
 ```mermaid
     gitGraph
