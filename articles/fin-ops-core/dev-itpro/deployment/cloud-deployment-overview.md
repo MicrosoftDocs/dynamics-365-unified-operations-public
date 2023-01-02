@@ -235,9 +235,6 @@ This will not affect any environments that have their data stored in the depreca
 ### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
 This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
-### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
-This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
-
 ### What does it mean when some deployment regions options are marked as "Data resident region"
 If you select a region which is not "Data resident" you will see a warning calling out the selected region for environment deployment is not the same as where LCS is storing the project data. See [Project migration manager](../lifecycle-services/project-migration-manager.md) for information about migrating LCS project data to a different geography.
 
