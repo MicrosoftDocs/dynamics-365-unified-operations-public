@@ -1,13 +1,13 @@
 ---
 title: Branching
 description: This article discuss branching strategy considerations for X++ development.
-author: toskaue
+author: ms-skaue
 ms.date: 01/04/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: josaw1
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: ms-skaue
+ms.author: toskaue
 ms.search.validFrom: 2023-01-01
 ms.dyn365.ops.version: 10.0.30
 ---
@@ -47,7 +47,7 @@ Sequential branching is a branching approach where the branches mirror the phase
 
 When a developer believes their in-development work item is ready for functional testing, they merge or "promote" all changes associated with their work to the Testing branch, which contains all code awaiting functional validation. When the changes associated with a work item pass functional validation, they are promoted to the Production branch, which contains the code running on (or soon to be deployed to) the live environment.
 
-Unlike a [feature](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) or [release](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
+Unlike a [feature](../../../../azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) or [release](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
 
 ```mermaid
 graph LR
@@ -67,7 +67,7 @@ If your X++ development naturally breaks into feature or release partitions (as 
 
 ### Option 2: Feature Branches
 
-[Feature branching](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
+[Feature branching](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
 
 ```mermaid
     gitGraph
