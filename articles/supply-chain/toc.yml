@@ -3409,7 +3409,7 @@
           href: warehousing/tasks/register-items-basic-warehousing.md
         - name: Import inbound ASNs through the V3 data entity
           href: warehousing/import-asn-data-entity.md
-        - name: Direct inbound putaway based on container type
+        - name: Manage inbound putaway based on container types
           href: warehousing/inbound-putaway-by-container-type.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
