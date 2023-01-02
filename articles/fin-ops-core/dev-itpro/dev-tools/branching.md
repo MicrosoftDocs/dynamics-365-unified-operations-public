@@ -47,7 +47,7 @@ Sequential branching is a branching approach where the branches mirror the phase
 
 When a developer believes their in-development work item is ready for functional testing, they merge or "promote" all changes associated with their work to the Testing branch, which contains all code awaiting functional validation. When the changes associated with a work item pass functional validation, they are promoted to the Production branch, which contains the code running on (or soon to be deployed to) the live environment.
 
-Unlike a [feature](../../../../azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) or [release](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
+Unlike a [feature](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) or [release](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
 
 ```mermaid
 graph LR
