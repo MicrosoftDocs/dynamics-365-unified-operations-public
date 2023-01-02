@@ -86,7 +86,7 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 
 
 ## Security and compliance
-finance and operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
+Finance and operations apps are PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
 All finance and operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
 
@@ -148,7 +148,7 @@ Production environments are configured with Azure disaster recovery support that
 Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the finance and operations service has started. 
 
 ## Service availability in Azure regions
-finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
+Finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it. For more information, see the following articles:
@@ -235,8 +235,11 @@ This will not affect any environments that have their data stored in the depreca
 ### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
 This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
+### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
+This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
-
+### What does it mean when some deployment regions options are marked as "Data resident region"
+If you select a region which is not "Data resident" you will see a warning calling out the selected region for environment deployment is not the same as where LCS is storing the project data. See [Project migration manager](../lifecycle-services/project-migration-manager.md) for information about migrating LCS project data to a different geography.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
