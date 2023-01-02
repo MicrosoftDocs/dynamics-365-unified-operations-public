@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.30
 ---
 # Branching
 
-Branch configurations for X++ repositories can vary significantly depending on the preferences of the development team and the current phase of a Dynamics 365 Finance and Supply Chain Management (D365 F&SCM) implementation. If the customer or team you are working with already has a preferred branching structure and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you can use their structure to manage new development. If there is no currently defined branching structure, this document recommends two possible approaches which have been validated on actual F&SCM projects.
+Branch configurations for X++ repositories can vary significantly depending on the preferences of the development team and the current phase of a finance and operations apps implementation. If the customer or team you are working with already has a preferred branching structure and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you can use their structure to manage new development. If there is no currently defined branching structure, this document recommends two possible approaches which have been validated on actual F&SCM projects.
 
 ## Considerations
 
@@ -30,7 +30,7 @@ Any X++ repo branching strategy should support, at a minimum:
 - The isolation of un-tested development code from unit-tested development code. Developers should be protected from teammates accidentally breaking any active development branch, and isolating untested code from in-development code is an ideal way to provide this protection.
 - The isolation of unit-tested in-development code from test-eligible code. A code change may pass unit testing but the associated task may still not be ready for functional testing, so any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
 - The isolation if in-test code from production code. This is the fundamental purpose of all version control: avoiding code releases to production environments until code changes have been fully validated.
-- Relatively long (1+ week) functional testing cycles. See the [Considerations](#considerations) section for more details on why F&SCM customizations take longer to validate.
+- Relatively long (weeks) functional testing cycles. See the [Considerations](#considerations) section for more details on why finance and operations apps customizations take longer to validate.
 
 ## Branch Policy Guidance
 
@@ -47,7 +47,7 @@ Sequential branching is a branching approach where the branches mirror the phase
 
 When a developer believes their in-development work item is ready for functional testing, they merge or "promote" all changes associated with their work to the Testing branch, which contains all code awaiting functional validation. When the changes associated with a work item pass functional validation, they are promoted to the Production branch, which contains the code running on (or soon to be deployed to) the live environment.
 
-Unlike a [feature](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) or [release](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
+Unlike a [feature](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) or [release](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
 
 ```mermaid
 graph LR
@@ -63,7 +63,7 @@ Compared to other branching strategies, sequential branching is relatively easy 
 
 #### Cons
 
-If your X++ development naturally breaks into feature or release partitions (as is often the case for F&SCM ISVs but less commonly the case for F&SCM customers), sequential branching is not the best fit. Also, for sequential branching to work optimally, two [Tier 2 environments](Environments.md) are preferred: a functional testing environment for code validation, and a production mirror environment deployment testing and production troubleshooting. Tier 2 environments are relatively expensive, so budget-sensitive projects may not prefer this approach. Lastly, because the branch names so closely reflect the environments they support, the relationship between the branches and the environments can be confusing. The below diagram helps clarify the relationship.
+If your X++ development naturally breaks into feature or release partitions (as is often the case for ISV solutions but less commonly the case for customer specific customizations), sequential branching is not the best fit. Also, for sequential branching to work optimally, two Tier 2 sandbox environments are preferred: a functional testing environment for code validation, and a production mirror environment deployment testing and production troubleshooting. Tier 2 environments are relatively expensive, so budget-sensitive projects may not prefer this approach. Lastly, because the branch names so closely reflect the environments they support, the relationship between the branches and the environments can be confusing. The below diagram helps clarify the relationship.
 
 ![Image mapping Dev, Test, and Prod repo branches to Dev, Test, Production Mirror, and Production environments](../media/D365FnORepoBranchesToEnvironment.drawio.png)
 
@@ -71,7 +71,7 @@ If your X++ development naturally breaks into feature or release partitions (as 
 
 ### Option 2: Feature Branches
 
-[Feature branching](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
+[Feature branching](../../../../azure/devops/repos/git/git-branching-guidance.md?view=azure-devops#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
 
 ```mermaid
     gitGraph
@@ -102,7 +102,7 @@ If your X++ development naturally breaks into feature or release partitions (as 
 
 #### Pros
 
-Feature branches work well for X++ when development work items are relatively small and move quickly, as is often the case after major development has completed on a F&SCM project. They are the best approach for encapsulating the changes associated with a single work item, as feature branches are almost always isolated to the development of one enhancement or bug fix.
+Feature branches work well for X++ when development work items are relatively small and move quickly, as is often the case after major development has completed on a finance and operations app implementation project. They are the best approach for encapsulating the changes associated with a single work item, as feature branches are almost always isolated to the development of one enhancement or bug fix.
 
 #### Cons
 
