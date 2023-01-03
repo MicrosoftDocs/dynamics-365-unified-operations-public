@@ -1,6 +1,6 @@
 ---
 title: Printer ER destination type
-description: This article explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
+description: This article explains how to configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: kfend
 ms.date: 02/14/2022
 ms.topic: article
@@ -37,13 +37,13 @@ To make the **Printer** destination available in the current instance of Microso
 [![Turning on the ER printer destination feature in Feature management.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 > [!NOTE]
-> Starting from version 10.0.32 of Finance, the features **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** and **Document Routing Agent as Electronic Reporting destination for outbound documents** have been eliminated. The functionality controlled by these features is enabled by default out-of-the-box.
+> Starting in Finance version 10.0.32, the features **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** and **Document Routing Agent as Electronic Reporting destination for outbound documents** have been eliminated. The functionality controlled by these features is now enabled by default.
 
 ### Run the Document Routing Agent as a service
 
-The Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Microsoft Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
+The Document Routing Agent lets you select the mode of execution. The process can run as a desktop application or a Microsoft Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
 
-<a name="DRAservice"></a>Starting from version 10.0.32 of Finance, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, go to the **Feature management** workspace, and turn on the **Enable support of Document Routing agent running as a service** feature.
+<a name="DRAservice"></a>Starting in Finance version 10.0.32, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, in the **Feature management** workspace, turn on the **Enable support of Document Routing agent running as a service** feature.
 
 [![Enable support of Document Routing agent running as a service.](./media/ER_Destinations-EnableDRAasService.jpg)](./media/ER_Destinations-EnableDRAasService.jpg)
 
@@ -52,9 +52,9 @@ The Document Routing Agent includes an option that lets you select the mode of e
 #### PDF printing
 
 > [!NOTE]
-> Direct printing of PDF documents to a network printer assumes that the Document Routing Agent is runnig as a desktop application. If the Document Routing Agent is runnig as a service then PDF documents will not be send directly to a printer but stored in a **target forlder** which must be configured in advance in the Document Routing Agent's parameters. For more information, see [how to configure the Document Routing Agent](run-document-routing-agent-as-windows-service.md#update-the-execution-mode-for-the-document-routing-agent).
+> Direct printing of PDF documents to a network printer assumes that the Document Routing Agent is runnig as a desktop application. If the Document Routing Agent is running as a service, PDF documents won't be sent directly to a printer. Instead, the documents are stored in a target folder which must be configured in advance in the Document Routing Agent's parameters. For more information, see [how to configure the Document Routing Agent](run-document-routing-agent-as-windows-service.md#update-the-execution-mode-for-the-document-routing-agent).
 >
-> To continue sending prinatble documents to directly to a printer when the Document Routing Agent is runnig as a service, use [EMF printing](#EMFprinting).
+> To continue sending printable documents directly to a printer when the Document Routing Agent is runnig as a service, use [EMF printing](#EMFprinting).
 
 In versions of Finance before version 10.0.18, the **Printer** destination can be configured only for file components that are used to generate output in printable PDF format (**PDF Merger** or **PDF file** format elements) or Microsoft Office Excel and Word format (**Excel file** format element). When the output is generated in PDF format, it's sent to a printer. When the output is generated in Office format by using the **Excel file** format element, it's automatically converted to PDF format and then sent to a printer.
 
