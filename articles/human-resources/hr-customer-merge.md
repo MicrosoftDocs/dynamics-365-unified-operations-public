@@ -56,13 +56,13 @@ To move custom fields from one environment to another:
       o	Click **Generate scripts**
       
       
-![Generate scripts.](media/generate-scripts1.png)
+![Generate scripts.](media/Generate-scripts-1.png)
      
 o	Click “Next”
 o	Click on “Select specific database objects”
 Extract the “Tables” node and select the “MetaDataExtensionTable” table as shown below
 
-![Database objects](media/database-objects.png)
+![Database objects](media/database-objects3.png)
 
 o	Scroll down the tables list and select the tables  SysCustomFieldLabels, SysCustomFieldPicklist, SysCustomFieldPicklistValues as shown below.
 Click on “Next
