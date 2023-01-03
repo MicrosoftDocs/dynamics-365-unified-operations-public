@@ -1,6 +1,6 @@
 ---
-title: Dual-write Security Roles and Permissions
-description: This article describes the security role permissions setup required to complete the dual-write setup.
+title: Set up dual-write security roles and permissions
+description: This article describes the special security roles and permissions that are required for dual-write to work as expected.
 author: ramasri
 ms.date: 1/3/2023
 ms.topic: article
@@ -13,19 +13,21 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 ms.custom: "intro-internal"
 ---
 
-# Setup Security Roles and Permissions
+# Set up dual-write security roles and dermissions
 
-Special security roles and permissions are required for dual-write to work as expected. This article talks about it.
+This article describes the special security roles and permissions that are required for dual-write to work as expected. 
 
-## Assign security roles to Dataverse users
-All Dataverse users should be added to "dual-write runtime configuration" security role.
+## Assign security roles to Microsoft Dataverse users
+All Microsoft Dataverse users should be added to the **dual-write runtime configuration** security role.
 
 ## Assign security role to default owning team
 
-In Dataverse, each business unit has a default owning team and it has the same name as the business unit. This team should be assigned to a security role that gives read permissions to all Dataverse tables participating in dual-write. Follow [manage security roles guidance](https://learn.microsoft.com/en-us/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team) to set this up properly. Global tables are associated to the root business unit. To locate the root business unit and default teams, follow the instructions below.
+In Dataverse, each business unit has a default owning team and it has the same name as the business unit. This team should be assigned to a security role that gives read permissions to all Dataverse tables participating in dual-write. To set up the security role, see [manage security roles guidance](/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team.md). Global tables are associated to the root business unit. 
+
+To locate the root business unit and default teams, follow these steps.
 
 1. Log on to the Dataverse(CE/CDS/CRM) environment (e.g. ```https://???.dynamics.com```) using a web browser;
-2. In the different tab, issue 
+2. Using a different tab, type  
    ```https://???.dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null``` to get the result as below;
 
 ```
