@@ -50,7 +50,6 @@ To move custom fields from one environment to another:
   •	SysCustomFieldLabels
   • SysCustomFieldPicklist
   • SysCustomFieldPicklistValues
-
       o	Open SSMS
       o	Find AXDB Data base
       o	Right click, select **Tasks**
