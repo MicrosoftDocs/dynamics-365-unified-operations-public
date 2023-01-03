@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 As part of the infrastructure merge, all capabilities of the Human Resources application have been made available in finance and operations environments. Customers can migrate their Human Resources environments by using the migration tooling that is available in Microsoft Dynamics Lifecycle Services. They can also optionally merge their data with their existing finance and operations environment.
 
-Customer merge or consolidation of their Human resources environment with another finance and operations environment is not required by Microsoft. It is done at the customer's discretion and on the customer's own timeline. During this step, customer moves their data into an existing environment, such as a Finance or Project Operations environment. It's mostly manual and can be done by using Data Management Framework (DMF) data entities.
+Customer merge or consolidation of their Human resources environment with another finance and operations environment isn't required by Microsoft. It's done at the customer's discretion and on the customer's own timeline. During this step, customer moves their data into an existing environment, such as a Finance or Project Operations environment. It's mostly manual and can be done by using Data Management Framework (DMF) data entities.
 
 This page includes some of the resources and information that may be relevant for various customer scenarios when merging their finance and operations based environments. 
 
@@ -104,7 +104,7 @@ XXXX - picture 8
 
 d.	Make note of the Dataverse instance name.
 e.	Open a new browser tab and navigate to PowerApps Maker portal (https://make.powerapps.com).
-f.	In the upper right corner, click on the Environment drop down and find the name of the Dataverse instance.
+f.	In the upper right corner, click on the Environment drop-down and find the name of the Dataverse instance.
 
 XXXX - picture 10
 
@@ -127,25 +127,25 @@ g.	The table screen should now reflect the number of objects selected, so click 
 h.	The solution screen should now show the name of the table added to the unmanaged solution.
 i.	Repeat the process by clicking Add Existing again until all the custom fields have been added to the new solution.
 j.	Go back to the Solutions list by clicking the back arrow provided in the upper left with a tool tip that says “Back to solutions”.
-3.	Export the solution as managed
+3.	Export the solution as managed.
 a.	Check the new solution created.
 b.	Click the next button since all the customizations are existing and have been published.
 c.	Managed is checked by default, so simply click Export to start the export process.
-d.	Once the export process is completed, click the download button and the solution should be saved to the browser’s default download folder.
+d.	Once the export process is completed, click **Download**. The solution should be saved to the browser’s default download folder.
 4.	Import managed solution into the other Dataverse environment
-a.	In the Maker portal, change the Environment drop down from step 1 to the destination Dataverse environment.
+a.	In the Maker portal, change the Environment drop-down from step 1 to the destination Dataverse environment.
 
 
-b.	In the Solutions list screen, click the Import button.
-c.	Click the Browse button and locate the exported managed solution from step 3.
-d.	Click Next, then click Import and wait for the managed solution to be applied to the destination Dataverse environment.
+b.	In the Solutions list screen, click **Import**.
+c.	Click **Browse**. Locate the exported managed solution from step 3.
+d.	Click **Next**, then click **Import** and wait for the managed solution to be applied to the destination Dataverse environment.
 
 
 Personalizations
 
 In Order to move the personalizations:
 
-o	From Source environment, export personalization on the e.g form that has been modified. 
+o	From Source environment, export personalization on the page that has been modified. 
 
 XXXX - picture 12
 
