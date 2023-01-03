@@ -26,9 +26,9 @@ In Dataverse, each business unit has a default owning team and it has the same n
 
 To locate the root business unit and default teams, follow these steps.
 
-1. Log on to the Dataverse(CE/CDS/CRM) environment (e.g. ```https://???.dynamics.com```) using a web browser;
-2. Using a different tab, type  
-   ```https://???.dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null``` to get the result as below;
+1. Log on to the Dataverse(CE/CDS/CRM) environment (e.g. ```https://???.dynamics.com```) using a web browser.
+2. Using a different tab, type the following command in the URL: 
+   ```https://???.dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null``` to get a result similar to the following:
 
 ```
 {
@@ -41,8 +41,8 @@ To locate the root business unit and default teams, follow these steps.
     ]
 }
 ```
- 3. Record the GUID value of ***businessunitid***;
- 4. In another tab, issue ```https://???.dynamics.com/api/data/v9.0/teams?$select=name,teamid&$filter=_businessunitid_value%20eq%20[businessunitid]%20and%20isdefault%20eq%20true```, while replacing ***[businessunitid]*** with the value recorded at step 3, and observe the result;
+ 3. Locate the ***businessunitid*** and record the value.
+ 4. Using a different tab, type the following command in the URL: ```https://???.dynamics.com/api/data/v9.0/teams?$select=name,teamid&$filter=_businessunitid_value%20eq%20[businessunitid]%20and%20isdefault%20eq%20true```, while replacing ***[businessunitid]*** with the value recorded in step three to get a result similar to the following:
 
 ```
 {
@@ -56,12 +56,11 @@ To locate the root business unit and default teams, follow these steps.
     ]
 }
 ```
-The value of ***name*** property is the default team of the root business unit.
-
+The value of ***name*** property is the default team of the root business unit and should be used to assign the security role.
 
 ## What if you missed the security setup for the default owning team?
 
-When dual-write is invoked to propagate data changes from Finance and Operations apps to Dataverse, it uses the specific team as the owner of the record 
+When dual-write is invoked to propagate data changes from finance and operations apps to Dataverse, it uses the specific team as the owner of the record 
 to be dual-written in Dataverse. If the security role with read permissions is not assigned, then Dataverse table will throw an exception like below: 
 
 ```
@@ -70,33 +69,33 @@ Unable to write data to table
 Principal team (Id=***, ..., is missing prvReadcol_*** privilege (Id=***) on OTC=***.
 ```
 
-In such case, follow the steps to assign proper permission to the team to allow dual-write to work as expected.
+If the exception occurs, follow theses steps to assign proper permission to the team to allow dual-write to work as expected.
 
-1. Log on to the Dataverse environment (e.g. ttps://???.dynamics.com) using a web browser
+1. Log on to the Dataverse environment (e.g. ttps://???.dynamics.com) using a web browser.
 
-2. In another tab, issue 
+2. Using a different tab, type the following URL. 
 
 ```
 https://???.crm.dynamics.com/api/data/v9.0/teams?$select=name&$filter=teamid eq [ID]
 ```
 
-The value of **[ID]** should be the same as the one shown in the error message
+The value of **[ID]** should be the same as the one shown in the error message.
 
-3. Record the **name** of the team
+3. Record the **name** of the team.
 
-4. Log on to Power Platform Admin Center (https://admin.powerplatform.microsoft.com/environments)
+4. Log on to Microsoft [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
 
 ![Principal Team Security Role1](media/PrincipalTeam-Security-Role-1.png)
 
-5. Locate the click the power apps environment associated with the Dataverse environment
+5. Locate and then select the power apps environment associated with the Dataverse environment.
 
-6. From **Access** tab, click **See all** under **Teams**
+6. From **Access** tab, select **See all** under **Teams**.
 
 ![Principal Team Security Role2](media/PrincipalTeam-Security-Role-2.png)
 
 7. From the list, select the team with name that matches the one recorded at step 3.
 
-8. From the command bar, select **Manage Security Roles**
+8. From the command bar, select **Manage Security Roles**.
 
 ![Principal Team Security Role3](media/PrincipalTeam-Security-Role-3.png)
 
@@ -105,7 +104,7 @@ with the read permissions to the Dataverse table and select it from the list of 
 
 ![Principal Team Security Role4](media/PrincipalTeam-Security-Role-4.png)
 
-10. For more information on Dataverse security role and privilege, please refer to https://docs.microsoft.com/en-us/power-platform/admin/database-security.
+For more information on Dataverse security roles and privileges, see [Configure user security to resources in an environment](/power-platform/admin/database-security.md).
 
 
 
