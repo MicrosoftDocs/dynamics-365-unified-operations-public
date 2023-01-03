@@ -15,9 +15,52 @@ ms.custom: "intro-internal"
 
 # Setup Security Roles and Permissions
 
+Special security roles and permissions are required for dual-write to work as expected. This article talks about it.
+
+## Assign security roles to Dataverse users
+All Dataverse users should be added to "dual-write runtime configuration" security role.
+
+## Assign security role to default owning team
+
+In Dataverse, each business unit has a default owning team and it has the same name as the business unit. This team should be assigned to a security role that gives read permissions to all Dataverse tables participating in dual-write. Follow [manage security roles guidance](https://learn.microsoft.com/en-us/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team) to set this up properly. Global tables are associated to the root business unit. To locate the root business unit and default teams, follow the instructions below.
+
+1. Log on to the Dataverse(CE/CDS/CRM) environment (e.g. ```ttps://???.dynamics.com```) using a web browser;
+2. In the different tab, issue 
+   ```https://???.dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null``` to get the result as below;
+
+```
+{
+    "@odata.context": "https://???.dynamics.com/api/data/v9.0/$metadata#businessunits(name,businessunitid)",
+    "value": [{
+            "@odata.etag": "W/\"...\"",
+            "name": "[***]",
+            "businessunitid": "????????-????-????-????????"
+        }
+    ]
+}
+```
+ 3. record the GUID value of ***businessunitid***;
+ 4. In another tab, issue ```https://???.dynamics.com/api/data/v9.0/teams?$select=name,teamid&$filter=_businessunitid_value%20eq%20[businessunitid]%20and%20isdefault%20eq%20true```, while replacing ***[businessunitid]*** with the value recorded at step 3, and observe the result;
+
+```
+{
+    "@odata.context": "https://???.dynamics.com/api/data/v9.0/$metadata#teams(name,teamid)",
+    "value": [{
+            "@odata.etag": "W/\"...\"",
+            "name": "[***]",
+            "teamid": "...",
+            "ownerid": "..."
+        }
+    ]
+}
+```
+The value of ***name*** property is the default team of the root business unit.
+
+
+## What if you missed the security setup for the default owning team?
+
 When dual-write is invoked to propagate data changes from Finance and Operations apps to Dataverse, it uses the specific team as the owner of the record 
-to be dual-written in Dataverse. The team in question will require at least read privilege for the Dataverse entity, otherwise the following exceptions will be 
-thrown from the Dataverse platform.
+to be dual-written in Dataverse. If the security role with read permissions is not assigned, then Dataverse entity will throw an exception like below: 
 
 ```
 Unable to write data to entity
@@ -25,7 +68,7 @@ Unable to write data to entity
 Principal team (Id=***, ..., is missing prvReadcol_*** privilege (Id=***) on OTC=***.
 ```
 
-Follow the steps to assign proper permission privilege to the team to allow dual-write to work as expected.
+In such case, follow the steps to assign proper permission to the team to allow dual-write to work as expected.
 
 1. Log on to the Dataverse environment (e.g. ttps://???.dynamics.com) using a web browser
 
