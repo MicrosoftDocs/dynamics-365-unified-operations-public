@@ -65,6 +65,10 @@ Compared to other branching strategies, sequential branching is relatively easy 
 
 If your X++ development naturally breaks into feature or release partitions, sequential branching is not the best fit. This is often the case for ISV solutions but less commonly the case for customer specific customizations. For sequential branching to work optimally, two Tier 2 sandbox environments are preferred: a functional testing environment for code validation, and a production mirror environment deployment testing and production troubleshooting. Tier 2 environments are relatively expensive, so budget-sensitive projects may not prefer this approach. Lastly, because the branch names so closely reflect the environments they support, the relationship between the branches and the environments can be confusing.
 
+![Image mapping Dev, Test, and Prod repo branches to Dev, Test, Production Mirror, and Production environments](media/D365FnORepoBranchesToEnvironment.drawio.png)
+
+*Figure 2. Environment branch relationship and code flow. Note that the build VM is not a user-facing environment and is only shown here for completeness.*
+
 ### Option 2: Feature Branches
 
 [Feature branching](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
