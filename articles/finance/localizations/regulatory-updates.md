@@ -4,7 +4,7 @@
 title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 09/26/2022
+ms.date: 01/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,8 +54,8 @@ For the latest regulatory update plans, refer to the following table.
 |      Hungary         |   July 2022         | 10.0.30         |    VAT declaration in XML (2065A) and preview in Excel. Purchase invoices appendix in XML (2065M)  |
 |      Russia          |   June 2022     | 10.0.29    |  Import address data from the State Address Register (GAR)|
 |      Saudi Arabia      |   October 2022| 10.0.29 | Electronic invoicing in Saudi Arabia - Phase 2|
-|      Saudi Arabia      |   November 2022| 10.0.29HF, 10.0.30, 10.0.31HF | Retail - Electronic invoicing in Saudi Arabia - Phase 2|
-|      Singapore      |   July 2022| 10.0.29 | IRAS Audit File (IAF) in TXT format|
+|      Saudi Arabia      |   November 2022| 10.0.29HF, 10.0.30, 10.0.31HF | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
+|      Singapore      |   July 2022| 10.0.29 | IRAS Audit File (IAF) in TXT format |
 
 
 ## Additional resources
