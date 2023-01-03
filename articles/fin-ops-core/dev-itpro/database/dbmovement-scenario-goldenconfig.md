@@ -137,7 +137,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 
 ## Export the database from SQL Server
 
-Download sqlpackage .NET Core for Windows from Get sqlpackage .NET Core for Windows. Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
+Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
