@@ -128,7 +128,8 @@ When these cash management transactions are processed in the Commerce Headquarte
 - In the Feature management workspace, turn on the **Retail statements - Trickle feed feature.**
 - In the POS functionality profile for the appropriate store, set the **Enable financial reconciliation in store** option to **Yes**.
 	
-	Add image here
+![Financial reconciliation in store](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Shalabh_cashmanagement/articles/commerce/media/FinancialReconciliation.png)
+
 Please refer the following link for more details on this feature: [Financial reconcialiation in store](https://learn.microsoft.com/en-us/dynamics365/commerce/fin-recon)
 
 
