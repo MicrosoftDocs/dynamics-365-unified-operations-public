@@ -56,27 +56,27 @@ To move custom fields from one environment to another:
       o	Click **Generate scripts**
       
       
- XXXXXXXX - picture 1
+![Generate scripts.](media/generate-scripts1.png)
      
 o	Click “Next”
 o	Click on “Select specific database objects”
 Extract the “Tables” node and select the “MetaDataExtensionTable” table as shown below
 
-XXXXX - picture 3
+![Database objects](media/database-objects.png)
 
 o	Scroll down the tables list and select the tables  SysCustomFieldLabels, SysCustomFieldPicklist, SysCustomFieldPicklistValues as shown below.
 Click on “Next
 
-XXXXX - picture 4
+![Choose objects](media/choose-objects4.png)
 
 o	Select the highlighted options below (“Save script to a specific location”, “Save to file”, “Unicode text”.
 o	Click on “Advanced”, go down to “Types of data to script” press the look up and select “Data only” and  click “Ok”
 
-XXXX - picture 5
+![Scripting.](media/set-scripting5.png)
 
 o	 Select a file name to save and click “Next”
 
-XXXX - picture 6
+![File name](media/file-name6.png)
 
 o	Click “Next”
 o	Click “Finish”
@@ -88,7 +88,7 @@ o	Outcomment the lines for “DimensionAttributeValueCombination” and “Dimen
 
 o	Run the script, this will import the records into DB.
 
-XXXXX - picture 7
+![Import records](media/record-import7.png)
 
 ### Copy custom fields metadata in Dataverse
 
@@ -99,19 +99,21 @@ a.	Log into Dynamics 365 Human Resources.
 b.	Navigate to System Administration > Integrations > Dataverse Configuration.
 c.	The banner at the top of page will provide you with the name of the Dataverse instance being synced to and a link to the Admin Center. 
 
-XXXX - picture 8
+![Dataverse instance](media/dataverse-integration8.png)
 
 d.	Make note of the Dataverse instance name.
 e.	Open a new browser tab and navigate to PowerApps Maker portal (https://make.powerapps.com).
 f.	In the upper right corner, click on the Environment drop-down and find the name of the Dataverse instance.
 
-XXXX - picture 10
+![Environment drop-down](media/environment-name10.png)
+
 
 g.	Click on Solutions in the pane on the left side toward the bottom.
 h.	Click the New Solution.
 i.	Enter a name, description and select the Default Publisher and click OK and the new solution will show up in the Solutions list.
 
-XXXX - picture 11
+![Solutions list](media/solutions-list11.png)
+
 
 2.	Add the custom fields created through HR to the new unmanaged solution
 a.	Click on the name of the new solution created in step 1.
@@ -146,7 +148,7 @@ In Order to move the personalizations:
 
 o	From Source environment, export personalization on the page that has been modified. 
 
-XXXX - picture 12
+![Personalizations](media/export12.png)
 
 o	Copy the personalization file (from step 15) to Target environment
 
