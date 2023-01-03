@@ -1602,6 +1602,8 @@
         href: lifecycle-services/cloud-powered-support-lcs.md
       - name: Production support and monitoring
         href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
+      - name: Use Customer Lockbox to manage secure access to customer data
+        href: sysadmin/customer-lockbox.md
     - name: System administration
       items:
       - name: System administration home page
