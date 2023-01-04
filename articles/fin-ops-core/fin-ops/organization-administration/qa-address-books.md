@@ -4,7 +4,7 @@
 title: Address books FAQ
 description: This article provides answers to frequently asked questions related to address books. 
 author: msftbrking 
-ms.date: 02/03/2021
+ms.date: 01/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 23601
 ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
@@ -41,6 +41,46 @@ Yes, you can add multiple party records to an address book and also remove multi
 
 - To add multiple party records to an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, click **Assign parties**. Select the address books to add the selected party records to, and then click **OK**. All the selected party records are added to the address books that you selected.
 - To remove multiple party records from an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, click **Remove parties**. Select the address books to remove the parties from, and then click **OK**. All the selected party records are removed from the address books that you selected.
+
+## Can I remove any historical addresses?  
+
+With release 10.0.32, an administrator can enable the advanced address maintenance feature to allow users to delete historical addresses using the following steps:  
+
+1. Go to **Feature Management-> Check for updates**.
+2. Search for **Advanced address maintenance**. The advanced address maintenance is disabled by default. 
+3. Click **Enable**.  
+
+  
+
+After the **Advanced address maintenance** feature is enabled by the administrator, follow these steps to delete historical addresses:  
+1. Go to the **Global address book** list page. 
+2. Select the party record for which you want to remove a historical address.  
+3. Go to the **Addresses** tab. 
+4. Click **More options > Advanced**.  
+5. Click **History** tab.
+6. Select one or more addresses, click **Delete** to delete the addresses. 
+
+If this address is also linked to another record, you will receive an error message.  
+
+ 
+
+Alternatively, you can also set up a SysOperation framework batch job to delete multiple historical addresses using the following steps: 
+1. Go to **Organization administration > Periodic > Delete inactivated addresses**.
+2. Click **OK**.  
+
+You will be notified if the batch job was successful or failed.  
+
+Another way to delete inactive postal addresses is through the MS Office add-in.  
+1. Go to the **Global address book** list page. 
+2. Select the party record for which you want to remove a historical address.  
+3. Go to the **Addresses** tab.
+4. Click **More options > Advanced**.  
+5. Click on the MS Office logo on the top right corner. 
+6. Select **Inactive Logistics Postal Address**.  
+7. Log into the add-in using your credentials. You may only use this add-in to delete any inactive addresses.  
+
+>[!NOTE]
+>You can't update or insert new records using this method. For example, if you try to update the ValidFrom date, the record will get deleted instead.  
 
 ## Can I change the party type of a record, or do I have to delete the old record and create a new one?
 
