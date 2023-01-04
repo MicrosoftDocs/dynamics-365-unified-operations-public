@@ -68,9 +68,9 @@ Cash management is handled in the following ways when the cash traceability feat
 
 ## Transaction reconciliation
 
-When a user chooses to close a shift, system validates that there are no unreconciled cash management transactions in the shift. Thus, a shift cannot be closed if there are unreconciled transactions. 
+When a user chooses to close a shift, the system validates that there are no unreconciled cash management transactions in the shift. A shift cannot be closed if there are unreconciled transactions. 
 
-A transaction can be reconciled **systematically** or **manually**. 
+A transaction can be reconciled systematically or manually. 
 
 ### Systematic transaction reconciliation
 
