@@ -844,6 +844,8 @@
           href: process-order-pickup-POS.md
         - name: Enable order lookup for guest checkouts
           href: order-lookup-guest.md
+        - name: Improve the performance of Commerce order search
+          href: improve-order-search.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
