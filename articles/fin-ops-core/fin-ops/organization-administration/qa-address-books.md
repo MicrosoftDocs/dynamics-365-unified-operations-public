@@ -55,8 +55,8 @@ After the **Advanced address maintenance** feature is enabled by the administrat
 2. Select the party record for which you want to remove a historical address.  
 3. Go to the **Addresses** tab. 
 4. Click **More options > Advanced**.  
-5. Click **History** tab.
-6. Select one or more addresses, click **Delete** to delete the addresses. 
+5. On the **History** tab, select one or more addresses. 
+6. Click **Delete** to delete the addresses. 
 
 If this address is also linked to another record, you will receive an error message.  
 
