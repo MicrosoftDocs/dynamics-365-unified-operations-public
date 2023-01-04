@@ -42,7 +42,7 @@ Yes, you can add multiple party records to an address book and also remove multi
 - To add multiple party records to an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, click **Assign parties**. Select the address books to add the selected party records to, and then click **OK**. All the selected party records are added to the address books that you selected.
 - To remove multiple party records from an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, click **Remove parties**. Select the address books to remove the parties from, and then click **OK**. All the selected party records are removed from the address books that you selected.
 
-## Can I remove any historical addresses?  
+## Can I delete historical addresses?  
 
 With release 10.0.32, an administrator can enable the advanced address maintenance feature to delete historical addresses using the following steps:  
 
@@ -60,12 +60,9 @@ After the **Advanced address maintenance** feature is enabled by the administrat
 
 If this address is also linked to another record, you will receive an error message.  
 
- 
-
 Alternatively, you can also set up a SysOperation framework batch job to delete multiple historical addresses using the following steps: 
 1. Go to **Organization administration > Periodic > Delete inactivated addresses**.
 2. Click **OK**.  
-
 You will be notified if the batch job was successful or failed.  
 
 Another way to delete inactive postal addresses is through the MS Office add-in.  
