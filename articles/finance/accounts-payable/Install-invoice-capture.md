@@ -46,6 +46,9 @@ Before you can install the Invoice capture solution, you must complete the follo
 
 2. Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
+>[!NOTE]
+>Install capture is supported on Dynamics 365 finance and operations version 10.0.29 and later.
+
 ## Install and set up the solution
 
 To install the Invoice capture solution, go to AppSource, and select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you will see the solution installed in the selected environment in Power Apps.
@@ -71,5 +74,3 @@ To complete the setup, follow these steps.
     - **Client Secret** – The client secret that was generated for the Azure application.
 
 
-## Version Requirement of Dynamics 365 Finance and Operation
-To successfully run the invoice capture on the top of Dynamics 365 Finance and Operation, the lowest version required is 10.0.29.
