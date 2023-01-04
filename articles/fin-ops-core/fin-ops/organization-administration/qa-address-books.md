@@ -44,13 +44,11 @@ Yes, you can add multiple party records to an address book and also remove multi
 
 ## Can I remove any historical addresses?  
 
-With release 10.0.32, an administrator can enable the advanced address maintenance feature to allow users to delete historical addresses using the following steps:  
+With release 10.0.32, an administrator can enable the advanced address maintenance feature to delete historical addresses using the following steps:  
 
 1. Go to **Feature Management-> Check for updates**.
 2. Search for **Advanced address maintenance**. The advanced address maintenance is disabled by default. 
 3. Click **Enable**.  
-
-  
 
 After the **Advanced address maintenance** feature is enabled by the administrator, follow these steps to delete historical addresses:  
 1. Go to the **Global address book** list page. 
