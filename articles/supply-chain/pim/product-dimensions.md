@@ -35,7 +35,10 @@ ms.dyn365.ops.version: 10.0.13
 
 There are five product dimensions: color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 
-Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant.
+Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant. 
+
+> [!NOTE]
+> Notice that you cannot use physical dimensions to create product variants. Physical dimensions are specified on the product master and are shared by all its variants. 
 
 ## Product variants
 
