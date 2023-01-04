@@ -1,16 +1,15 @@
 ---
 # required metadata
 
-title: Cash management improvements
-description: This article describes the cash management improvements in POS for Dynamics 365 Commerce.
+title: Cash management overview
+description: This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce POS, focusing on the cash traceability capability of two-sided transactions.
 author: ShalabhjainMSFT
 ms.date: 01/04/2023
-ms.topic: article
+ms.topic: overview
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-05-21
 
@@ -20,33 +19,43 @@ ms.search.validFrom: 2019-05-21
 
 [!include [banner](includes/banner.md)]
 
+This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce point of sale (POS), focusing on the cash traceability capability of two-sided transactions.
+
 Cash management is a key function for retailers in physical stores. Retailers want their stores to have systems that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in a store. They must be able to reconcile any differences and determine accountability.
 
-Microsoft Dynamics 365 Commerce provides cash management capabilities in its point of sale (POS) application. Retailers have an option to either use simple one sided cash transactions which enables them to reconcile the cash for a store, but they can't precisely determine accountability in the event of a cash discrepancy or they can enable the cash traceability capability which enforces two-sided cash transactions and thus helps determine accountability for all cash movements. 
+Microsoft Dynamics 365 Commerce provides cash management capabilities in its point of sale (POS) application. Retailers have two cash management options:
 
-Note: A single sided cash transaction means that once performed, then there is no further action required for this operation as it is considered completed. But for two sided cash transaction, when a cashier performs an operation e.g. "Tender removal", then the other cashier who received this money would need to reconcile this action to ensure that the amount mentioned with the operation is correct.
-
-This article is aimed to provide a detailed overview of the cash traceability capability i.e. the two sided transactions 
-
-> [!NOTE]
-> The following document describes what is a shift and provides a quick overview of the cash management operations. Thus, it is a prerequisite for the current document: [Shift management basics](shift-drawer-management.md)
-
-## Setup
-
-To set up the new cash traceability functionality, follow these steps to configure the functionality profile for stores.
-
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and select a functionality profile that is linked to the stores where you want to make the improvements for cash management available.
-2. On the **Functions** section of the functionality profile, under **Advanced cash management**, set the **Enable cash traceability** option to **Yes**.
+- **One-sided cash transactions** - This option enables retailers to reconcile the cash for a store, but doesn't allow them to precisely determine accountability in the event of a cash discrepancy. Once performed, a one-sided cash transaction requires no further action since it is considered completed.
+- **Two-sided cash transactions** This option enables the cash traceability capability, which enforces two-sided cash transactions and helps determine accountability for all cash movements. When a cashier performs an operation (for example, tender removal), the other cashier who receives the money must reconcile this action to ensure that the amount of the transaction is correct.
 
 > [!NOTE]
-> To use the cash traceability functionality, it is required to setup one or more "Safe" for the store. This is because the for "Declare start amount" and "Safe drop" actions, the system expects a safe to be selected.
+> As a prerequisite for better understanding this article, first see [Shift and cash drawer management](shift-drawer-management.md).
 
-### Safe setup
+## Set up cash traceability functionality
+
+To set up cash traceability functionality by configuring the functionality profile for stores, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
+1. Select a functionality profile that is linked to the stores where you want to set up cash traceability functionality.
+1. In the **Functions** section of the functionality profile, under **Advanced cash management**, set the **Enable cash traceability** option to **Yes**.
+
+> [!NOTE]
+> To use the cash traceability functionality, you must first set up one or more safes for the store. This is because the system expects a safe to be selected for the "Declare start amount" and "Safe drop" actions.
+
+### Set up a safe
+
+You can define and maintain multiple safes for a store.
+
+To set up a safe in Commerce headquarters, follow these steps.
 	
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select a store.
-2. On the **Stores** page, on the Action Pane, on the **Set up** tab, in the **Set up** group, select **Safes**. By using this option, you can define and maintain multiple safes for a store.
-
-Run the **1070 Channel configuration** distribution schedule job to sync these configurations to the channel database.
+1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
+1. Select the **Retail Channel ID** of the store for which you want to set up a safe.
+1. On the Action Pane of the store page, select the **Set up** tab. 
+1. in the **Set up** group, select **Safes**. 
+1. On the **Safe declaration** page, select **+New**.
+1. Under **Name**, enter a name for the safe. 
+1. To add additional safes, repeat steps 5 and 6 for each new safe. 
+1. Run the **1070 Channel configuration** distribution schedule job to sync the safe configurations to the channel database.
 
 ## Cash management process details
 
