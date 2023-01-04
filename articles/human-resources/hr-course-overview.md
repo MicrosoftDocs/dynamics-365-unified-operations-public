@@ -40,7 +40,7 @@ In our learning module, Human Resources professionals, administrators, training 
 
 
 > [!IMPORTANT]
-> The functionality noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
+> The virtual courses functionaliy noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
 
 ## Set up virtual courses
 
