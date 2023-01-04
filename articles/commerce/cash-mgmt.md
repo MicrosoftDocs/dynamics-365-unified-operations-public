@@ -82,52 +82,53 @@ Referring to the above example, if the user on shift 2 does not perform a float 
 
 ## Safe management
 
-In Dynamics 365 Commerce, the cash reconciliation can only be done at a shift level. So to manage cash in a safe, the safe must be managed via a shift. Additionally, it is required to have a dedicated register for safe management such that this register is not used for any sale transactions. 
+In Dynamics 365 Commerce, cash reconciliation can only be done at the shift level. To to manage cash in a safe, the safe must be managed via a shift. . 
 
 > [!IMPORTANT]
-> A dedicated register for a safe is required and this register should not be used for sale transactions
+> It is required to have a dedicated register for safe management that isn't used for any sale transactions.
 
-A sample business process for cash management using safe is explained below:
-- At the start of the day, the store manager declares the start amount in the safe. To do so, the store manager needs to do the following:
-    - Open a shift in a dedicated register for the safe
-    - Navigate to the "Manage safe" operation, select a safe and press the "Declare start amount" button
-    - Enter the amount and save
+A sample business process for cash management using a safe is explained below.
 
-- When the cashier is ready to start the day, they open the shift and get the starting amount from the safe via store manager. To do so, the cashier and the store manager needs to do the following:
-    - The cashier needs to open the shift on a register e.g. Shift A
-    - The store manager would navigate to the "Manage safe" operation on the dedicated register for safe and perform the "Tender removal" operation and choose the right amount and the right shift i.e. Shift A for this removal. **Note:** It is important that the shift is opened on the register to which the money is being transferred from the safe.
-    - The cashier would take the money and perform a "Declare start amount" on their register and choose the transaction created above to reflect the start amount. This will systematically reconcile the two transactions
+At the start of the day, the store manager declares the start amount in the safe. To do so, the store manager must do the following:
+    1. Open a shift in a dedicated register for the safe.
+    1. Navigate to the **Manage safe** operation, select a safe, and then select **Declare start amount**.
+    1. Enter the amount, and then select **Save**.
 
-- The cashier performs the regular sale transactions throughout the day
-- When the cash is the cash drawer is above the defined limit, the cashier is notified about the excess cash and the cashier performs a safe drop. To do so, the cashier needs to do the following:
-    - Press the "Safe drop" button, enter the amount and select safe to drop the money
-    - Hand over the money to store manager or drop it in the safe
-    - The store manager would count the money and then navigate to the "Manage safe" operation on the dedicated register for the safe
-    - Select the safe, press the "Float entry" button and select the transaction created above. This will systematically reconcile the two transactions.
+When the cashier is ready to start the day, they open the shift and get the starting amount from the safe via the store manager. To do so, the cashier and the store manager must do the following:
+    1. The cashier opens the shift on a register (for example, Shift A).
+    1. The store manager navigates to the **Manage safe** operation on the dedicated register for the safe, performs the **Tender removal** operation, and selects the correct amount and shift for this removal. It is important that the shift is opened on the register to which the money is being transferred from the safe.
+    1. The cashier takes the money, performs a **Declare start amount** operation on their register, and selects the transaction created above to reflect the start amount. These actions systematically reconcile the two transactions.
 
-- At the end of the day, the cashier drops the entire cash from the cash drawer to the safe, declares the tender and blind closes the shift. To do so, the cashier needs to do the following:
-    - Press the "Safe drop" button, enter the amount and select safe to drop the money.
-    - Press the "Tender declaration" button and select the amount as 0.
-    - Press the "Blind close" button to blind close the shift.
-    - Hand over the money to store manager or drop it in the safe.
+The cashier performs the regular sale transactions throughout the day.
 
-- The manager reconciles the last safe drop transaction, performs a bank drop and closes both the shifts i.e. the cashier's shift and the shift for the safe. To do so, the store manager needs to do the following:
-    - Navigate to the "Manage safe" operation on the dedicated register for the safe.
-    - Select a safe, press the "Float entry" button and select the transaction created above. This will systematically reconcile the two transactions.
-    - For the selected safe, press the "Bank drop" button and select the money to be dropped at the bank
-    - Navigate out of the "Manage safe" operation and **press the "Tender declaration" button to declare the balance in the safe**
-    - Navigate to the **"Manage shifts"** operation and select the blind closed shift for the cashier and close the shift
-    - The shift on the dedicated register for the safe will show one unreconciled transaction i.e. "Declare start amount" transaction performed for the safe. This transaction cannot be systematically reconciled because this money is expected to be added from an external source e.g. a Bank and thus this needs to be manually reconciled. The store manager would select the unreconciled transaction and then close the shift
+When the cash in the cash drawer is above the defined limit, the cashier is notified about the excess cash and the cashier performs a safe drop. To do so, the cashier and the store manager must do the following:
+    1. Select the **Safe drop** button, enter the amount, and select the safe to drop the money into.
+    1. The cashier hands over the money to store manager, or drops it in the safe.
+    1. The store manager counts the money and then navigates to the **Manage safe** operation on the dedicated register for the safe.
+    1. The store manager selects the safe, selects the **Float entry** button, and then selects the transaction created above. This systematically reconciles the two transactions.
+
+At the end of the day, the cashier drops the entire amount of cash in the cash drawer to the safe, declares the tender, and blind closes the shift. To do so, the cashier must do the following:
+    1. Select the **Safe drop** button, enter the amount, and select the safe to drop the money into.
+    1. Select the **Tender declaration** button, and then select the amount as "0" (zero).
+    1. Select the **Blind close** button to blind close the shift.
+    1. Hand over the money to the store manager, or drop it in the safe.
+
+The manager reconciles the last safe drop transaction, performs a bank drop, and closes both of the shifts (the cashier's shift and the shift for the safe). To do so, the store manager must do the following:
+    1. Navigate to the **Manage safe** operation on the dedicated register for the safe.
+    1. Select a safe, select the **Float entry** button, and then select the transaction created above. This systematically reconciles the two transactions.
+    1. For the selected safe, select the **Bank drop** button, and then select the money to be dropped into the bank.
+    1. Navigate out of the **Manage safe** operation, and then select the **Tender declaration** button to declare the balance in the safe.
+    1. Navigate to the **"Manage shifts"** operation, select the blind closed shift for the cashier, and then close the shift. The shift on the dedicated register for the safe will show one unreconciled transaction ("Declare start amount) performed for the safe. This transaction can't be systematically reconciled because this money is expected to be added from an external source (for example, a bank) and so must be manually reconciled. The store manager selects the unreconciled transaction and then closes the shift.
 		
-**A few important things to note:**
-- Any money left in the safe by the end of the day is not automatically carried over the next day. The store manager needs to declare the start amount in the safe the next day.
-- For all safe related actions, the user must use the "Manage safe" operation as this is the only way to select the safe for which the cash transactions are recorded. Thus, the "Declare start amount", "Float entry", "Tender removal" and "Bank drop" operations must be performed in the context of the safe. 
-- Before the shift associated with the safe can be closed, the user must perform the **"Tender declaration"** on the dedicated register for the safe. This is the only operation that does not have to be in the context of a safe and thus this operation is not available in the "Manage safe" operation. If there the same register is used to manage multiple safes, then the tender declaration should be a sum of the money in all these safes.
-- The "Declare start amount" operation on the safe is not reconciled automatically and thus it needs manual reconciliation
-- The "Declare start amount" operation is available at two levels i.e. at the **shift** level and at the **safe** level (within the "Manage safe" operation). On the dedicated register for the safe, to declare the start amount for a safe, the user must use the "Declare start amount" within the "Manage safe" operation. The one at the shift level can be used if there is any additional money in the cash drawer associated with this register.
-- To transfer the money to or from safe to a shift, it is required that the shift is opened on the register which is sending or receiving the money. In the example used above for Safe management, the shift A is required to be open before the money could be transferred from Safe to this shift.
-- If the cash traceability feature is enabled, then the user can to do a safe drop by selecting a single tender type in one transaction. Thus, if the cash drawer includes multiple tenders e.g. Cash (USD), Cash (CAD), Check, then the user needs to perform one safe drop per tender type. 
-- The system supports posting the safe drops and bank drops into respective General Ledger (GL) accounts as defined on the **Store** -> "Payment methods" -> Tender (e.g. Cash) form in HQ. When the money is moved from safe to bank using the bank drop operation, the money is reduced from the safe drop GL and increased in the bank drop GL. However, there is a limitation that only the amounts that are dropped to the safe are recorded in safe drop GL, but the money moving out of the safe does not update this GL. Secondly, other cash management transactions e.g. Float entry and Tender removal are not recorded in any specific GL.
+> [!IMPORTANT]
+> - Any money left in the safe by the end of the day is not automatically carried over the next day. The store manager needs to declare the start amount in the safe the next day.
+> - For all safe related actions, the user must use the "Manage safe" operation as this is the only way to select the safe for which the cash transactions are recorded. Thus, the "Declare start amount", "Float entry", "Tender removal" and "Bank drop" operations must be performed in the context of the safe. 
+> - Before the shift associated with the safe can be closed, the user must perform the **"Tender declaration"** on the dedicated register for the safe. This is the only operation that does not have to be in the context of a safe and thus this operation is not available in the "Manage safe" operation. If there the same register is used to manage multiple safes, then the tender declaration should be a sum of the money in all these safes.
+> - The "Declare start amount" operation on the safe is not reconciled automatically and thus it needs manual reconciliation
+> - The "Declare start amount" operation is available at two levels i.e. at the **shift** level and at the **safe** level (within the "Manage safe" operation). On the dedicated register for the safe, to declare the start amount for a safe, the user must use the "Declare start amount" within the "Manage safe" operation. The one at the shift level can be used if there is any additional money in the cash drawer associated with this register.
+> - To transfer the money to or from safe to a shift, it is required that the shift is opened on the register which is sending or receiving the money. In the example used above for Safe management, the shift A is required to be open before the money could be transferred from Safe to this shift.
+> - If the cash traceability feature is enabled, then the user can to do a safe drop by selecting a single tender type in one transaction. Thus, if the cash drawer includes multiple tenders e.g. Cash (USD), Cash (CAD), Check, then the user needs to perform one safe drop per tender type. 
+> - The system supports posting the safe drops and bank drops into respective General Ledger (GL) accounts as defined on the **Store** -> "Payment methods" -> Tender (e.g. Cash) form in HQ. When the money is moved from safe to bank using the bank drop operation, the money is reduced from the safe drop GL and increased in the bank drop GL. However, there is a limitation that only the amounts that are dropped to the safe are recorded in safe drop GL, but the money moving out of the safe does not update this GL. Secondly, other cash management transactions e.g. Float entry and Tender removal are not recorded in any specific GL.
 
 ## Financial reconciliation in store
 
