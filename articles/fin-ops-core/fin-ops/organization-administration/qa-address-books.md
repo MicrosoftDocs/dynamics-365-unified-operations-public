@@ -44,7 +44,7 @@ Yes, you can add multiple party records to an address book and also remove multi
 
 ## Can I delete historical addresses?  
 
-With release 10.0.32, an administrator can enable the advanced address maintenance feature to delete historical addresses using the following steps:  
+With Dynamics 365 Finance version 10.0.32, an administrator can enable the advanced address maintenance feature to delete historical addresses using the following steps:  
 
 1. Go to **Feature Management-> Check for updates**.
 2. Search for **Advanced address maintenance**. The advanced address maintenance is disabled by default. 
@@ -58,14 +58,14 @@ After the **Advanced address maintenance** feature is enabled by the administrat
 5. On the **History** tab, select one or more addresses. 
 6. Click **Delete** to delete the addresses. 
 
-If this address is also linked to another record, you will receive an error message.  
+If this address is linked to another record, you will receive an error message.  
 
 Alternatively, you can also set up a SysOperation framework batch job to delete multiple historical addresses using the following steps: 
 1. Go to **Organization administration > Periodic > Delete inactivated addresses**.
 2. Click **OK**.  
 You will be notified if the batch job was successful or failed.  
 
-Another way to delete inactive postal addresses is through the MS Office add-in.  
+You can also delete inactive postal addresses through the MS Office add-in.  
 1. Go to the **Global address book** list page. 
 2. Select the party record for which you want to remove a historical address.  
 3. Go to the **Addresses** tab.
