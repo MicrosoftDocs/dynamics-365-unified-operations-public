@@ -69,3 +69,6 @@ To complete the setup, follow these steps.
     - **Tenant ID** – The tenant ID for the Finance environment.
     - **Client ID** – The Azure application ID that was registered.
     - **Client Secret** – The client secret that was generated for the Azure application.
+
+## Version Requirement of Dynamics 365 Finance and Operation
+To successfully run the invoice capture on the top of Dynamics 365 Finance and Operation, the lowest version required is 10.0.29.
