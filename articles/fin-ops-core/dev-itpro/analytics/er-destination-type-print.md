@@ -37,24 +37,24 @@ To make the **Printer** destination available in the current instance of Microso
 [![Turning on the ER printer destination feature in Feature management.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 > [!NOTE]
-> Starting in Finance version 10.0.32, the features **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** and **Document Routing Agent as Electronic Reporting destination for outbound documents** have been eliminated. The functionality controlled by these features is now enabled by default.
+> As of Finance version 10.0.32, the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** and **Document Routing Agent as Electronic Reporting destination for outbound documents** features have been eliminated. The functionality that these features controlled is now enabled by default.
 
 ### Run the Document Routing Agent as a service
 
-The Document Routing Agent lets you select the mode of execution. The process can run as a desktop application or a Microsoft Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
+The Document Routing Agent lets you select the mode of execution. The process can run either as a desktop application or as a Windows service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
 
-<a name="DRAservice"></a>Starting in Finance version 10.0.32, the possibility to support the Document Routing Agent running as a Windows service has been implemented. To activate this possibility in the system, in the **Feature management** workspace, turn on the **Enable support of Document Routing agent running as a service** feature.
+<a name="DRAservice"></a>As of Finance version 10.0.32, the capability to support running the Document Routing Agent as a Windows service has been implemented. To activate this capability in the system, turn on the **Enable support of Document Routing agent running as a service** feature in the **Feature management** workspace.
 
-[![Enable support of Document Routing agent running as a service.](./media/ER_Destinations-EnableDRAasService.jpg)](./media/ER_Destinations-EnableDRAasService.jpg)
+[![Turning on the Enable support of Document Routing agent running as a service feature in Feature management.](./media/ER_Destinations-EnableDRAasService.jpg)](./media/ER_Destinations-EnableDRAasService.jpg)
 
 ### Applicability
 
 #### PDF printing
 
 > [!NOTE]
-> Direct printing of PDF documents to a network printer assumes that the Document Routing Agent is runnig as a desktop application. If the Document Routing Agent is running as a service, PDF documents won't be sent directly to a printer. Instead, the documents are stored in a target folder which must be configured in advance in the Document Routing Agent's parameters. For more information, see [how to configure the Document Routing Agent](run-document-routing-agent-as-windows-service.md#update-the-execution-mode-for-the-document-routing-agent).
+> PDF documents can be printed directly to a network printer only if the Document Routing Agent is running as a desktop application. If the Document Routing Agent is running as a service, PDF documents won't be sent directly to a printer. Instead, they will be stored in a target folder. This folder must be configured in advance in the Document Routing Agent's parameters. For more information, see [Update the execution mode for the Document Routing Agent](run-document-routing-agent-as-windows-service.md#update-the-execution-mode-for-the-document-routing-agent).
 >
-> To continue sending printable documents directly to a printer when the Document Routing Agent is runnig as a service, use [EMF printing](#EMFprinting).
+> To continue to send printable documents directly to a printer when the Document Routing Agent is running as a service, use [EMF printing](#EMFprinting).
 
 In versions of Finance before version 10.0.18, the **Printer** destination can be configured only for file components that are used to generate output in printable PDF format (**PDF Merger** or **PDF file** format elements) or Microsoft Office Excel and Word format (**Excel file** format element). When the output is generated in PDF format, it's sent to a printer. When the output is generated in Office format by using the **Excel file** format element, it's automatically converted to PDF format and then sent to a printer.
 
@@ -67,14 +67,13 @@ However, as of version 10.0.18, you can configure the **Printer** destination fo
 
 #### <a name="EMFprinting"></a>EMF printing
 
-Starting from version 10.0.32 of Finance, the possibility to generate outbound documents in Enhanced Metafile (**EMF**) format has been implemented.
-To activate documents generation in EMF format, perform the following configurations steps:
-  
-1. Make sure that the [Enable support of Document Routing agent running as a service](#DRAservice) feature is turned on in the Feature management.
+As of Finance version 10.0.32, the capability to generate outbound documents in Enhanced Metafile (EMF) format has been implemented. To activate this capability, follow these configurations steps.
+
+1. Make sure that the [Enable support of Document Routing agent running as a service](#DRAservice) feature is turned on in Feature management.
 2. Configure the **Printer** destination for the required format component by selecting **EMF** for the **Document routing type** parameter.
-  
-  [![Configure EMF file generation.](./media/ER_Destinations-EMF.jpg)](./media/ER_Destinations-EMF.jpg)
-  
+
+[![Configuring EMF file generation.](./media/ER_Destinations-EMF.jpg)](./media/ER_Destinations-EMF.jpg)
+
 #### ZPL printing
 
 In version 10.0.26 and later, you can configure the **Printer** destination for the **Common\\File** format element by selecting **ZPL** for the **Document routing type** parameter. In this case, the **Convert to PDF** option is ignored at runtime, and the TXT or XML output is sent directly to a selected printer by using the Zebra Programming Language (ZPL) contract of the [Document routing agent (DRA)](install-document-routing-agent.md). Use this feature for an ER format that represents a ZPL II label layout to print various labels.
