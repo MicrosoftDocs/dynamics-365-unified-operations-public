@@ -108,14 +108,11 @@ How to copy Dynamics 365 Human Resources custom fields metadata created in Datav
     -   The banner at the top of page provides the name of the Dataverse instance being synced to and a link to the Admin Center. 
 
 ![Dataverse instance](media/dataverse-integration8.png)
-
     -   Make note of the name of the Dataverse instance.
     -   Open a new browser tab and go to the PowerApps Maker portal (https://make.powerapps.com).
     -   In the upper right corner, click on the **Environment** drop-down and find the name of the Dataverse instance.
 
 ![Environment drop-down](media/environment-name10.png)
-
-
     -   Click **Solutions**.
     -   Click **New solution**.
     -   Enter a name, description and select the **Default publisher**. 
