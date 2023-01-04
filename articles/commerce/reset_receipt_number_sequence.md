@@ -60,6 +60,7 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 
 > [!NOTE]
 > - The reset date set in Functionality profiles is a date which doesn't have any time zones. For example, if you select **January 1, 2020** as the reset date, POS devices in any time zones will reset receipt back to 1 on **January 1, 2020** in their local time zones.
+> - If you want the receipt masks to be changed together when reset date comes, you need first set reset date in Functionality profiles for example **January 1, 2020** as the reset date. Then when at **January 1, 2020**, before you creating orders, set the receipt masks to what you want in Functionality profiles and sync data to both CSU / offline database. After you finish all these settings, POS will start creating orders using new receipt masks with receipt id reset.
 > - Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
