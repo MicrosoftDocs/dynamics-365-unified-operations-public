@@ -57,13 +57,14 @@ To set up a safe in Commerce headquarters, follow these steps.
 1. To add additional safes, repeat steps 5 and 6 for each new safe. 
 1. Run the **1070 Channel configuration** distribution schedule job to sync the safe configurations to the channel database.
 
-## Cash management process details
+## How cash management is handled when the cash traceability feature is enabled
 
-This section provides an overview of how the cash management is handled when the cash traceability feature is enabled.
-- A user who does a "Declare start amount" must enter the source of cash. The user can search for the available **safes** that are defined in the store and select the safe that the cash is being taken out of so that it can be put into the register. 
-- A user who does a "Tender removal" operation is prompted to select from a list of open "Float entry" transactions. If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.
-- A "Float entry" operation prompts the user to select from a list of open "Tender removal" transactions. If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.
-- A user who makes a "Safe drop" is prompted to select the safe where the cash is being dropped.
+Cash management is handled in the following ways when the cash traceability feature is enabled.
+
+- A user who runs a "Declare start amount" operation must enter the source of cash. The user can search for the available safes that are defined in the store and select the safe that the cash is being taken out of so that it can be put into the register. 
+- A user who runs a "Tender removal" operation is prompted to select from a list of open "Float entry" transactions. If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.
+- A user who runs a "Float entry" operation is prompted to select from a list of open "Tender removal" transactions. If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.
+- A user who runs a "Safe drop" operation is prompted to select the safe where the cash is being dropped.
 
 ## Transaction reconciliation
 
@@ -82,6 +83,7 @@ Referring to the above example, if the user on shift 2 does not perform a float 
 ## Safe management
 
 In Dynamics 365 Commerce, the cash reconciliation can only be done at a shift level. So to manage cash in a safe, the safe must be managed via a shift. Additionally, it is required to have a dedicated register for safe management such that this register is not used for any sale transactions. 
+
 > [!IMPORTANT]
 > A dedicated register for a safe is required and this register should not be used for sale transactions
 
