@@ -4,7 +4,7 @@
 title: Comparison of ETW and EventLog logger functionality
 description: This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger and the EventLog logger in Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 12/22/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.search.region: global
@@ -17,6 +17,7 @@ ms.search.validFrom: 2022-12-30
 # Comparison of ETW and EventLog logger functionality
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger and the EventLog logger in Microsoft Dynamics 365 Commerce.
 
@@ -170,7 +171,7 @@ The following table shows the current log level mapping between subsystems.
 | Warning                    | Warning                                 | Warning           |
 | Informational              | Information                             | Information       |
 | Verbose                    | Debug                                   | Information       |
-|                            | Trace                                   | Information       |
+| (No corresponding EventLevel) | Trace                                   | Information       |
 
 To allow for more precise filtering, information about the original log level from Microsoft.Extensions.Logging is stored as part of the event. This approach lets you query by original log level via XPath, as shown in the following example query.
 
