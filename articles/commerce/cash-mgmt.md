@@ -3,34 +3,22 @@
 
 title: Cash management improvements
 description: This article describes the cash management improvements in POS for Dynamics 365 Commerce.
-author: shajain
-ms.date: 05/21/2019
+author: ShalabhjainMSFT
+ms.date: 01/04/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: v-chgriffin
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: shajain
 ms.search.validFrom: 2019-05-21
-ms.dyn365.ops.version: 
 
 ---
 
 # Cash management overview
 
 [!include [banner](includes/banner.md)]
-
 
 Cash management is a key function for retailers in physical stores. Retailers want their stores to have systems that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in a store. They must be able to reconcile any differences and determine accountability.
 
@@ -41,9 +29,9 @@ Note: A single sided cash transaction means that once performed, then there is n
 This article is aimed to provide a detailed overview of the cash traceability capability i.e. the two sided transactions 
 
 > [!NOTE]
-> The following document describes what is a shift and provides a quick overview of the cash management operations. Thus, it is a prerequisite for the current document: [Shift management basics](https://learn.microsoft.com/en-us/dynamics365/commerce/shift-drawer-management)
+> The following document describes what is a shift and provides a quick overview of the cash management operations. Thus, it is a prerequisite for the current document: [Shift management basics](shift-drawer-management.md)
 
-# Setup
+## Setup
 
 To set up the new cash traceability functionality, follow these steps to configure the functionality profile for stores.
 
@@ -53,14 +41,15 @@ To set up the new cash traceability functionality, follow these steps to configu
 > [!NOTE]
 > To use the cash traceability functionality, it is required to setup one or more "Safe" for the store. This is because the for "Declare start amount" and "Safe drop" actions, the system expects a safe to be selected.
 
-## Safe setup
+### Safe setup
 	
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select a store.
 2. On the **Stores** page, on the Action Pane, on the **Set up** tab, in the **Set up** group, select **Safes**. By using this option, you can define and maintain multiple safes for a store.
 
 Run the **1070 Channel configuration** distribution schedule job to sync these configurations to the channel database.
 
-# Cash management process details
+## Cash management process details
+
 This section provides an overview of how the cash management is handled when the cash traceability feature is enabled.
 - A user who does a "Declare start amount" must enter the source of cash. The user can search for the available **safes** that are defined in the store and select the safe that the cash is being taken out of so that it can be put into the register. 
 - A user who does a "Tender removal" operation is prompted to select from a list of open "Float entry" transactions. If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.
@@ -68,17 +57,21 @@ This section provides an overview of how the cash management is handled when the
 - A user who makes a "Safe drop" is prompted to select the safe where the cash is being dropped.
 
 ## Transaction reconciliation
+
 When a user chooses to close a shift, system validates that there are no unreconciled cash management transactions in the shift. Thus, a shift cannot be closed if there are unreconciled transactions. 
 
 A transaction can be reconciled **systematically** or **manually**. 
 
 ### Systematic transaction reconciliation
+
 Let's use an example to understand systematic transaction reconciliation. When a user performs a cash management operation e.g. "Tender removal" for $20 on shift 1 to be sent to shift 2, then, when the user on shift 2 performs a "Float entry" action and chooses the above transaction, then these two transactions are systematically reconciled. 
 		
 ### Manual transaction reconciliation
+
 Referring to the above example, if the user on shift 2 does not perform a float entry action or does not choose the correct transaction during float entry, then this tender removal action would remain unreconciled and thus would need manual reconciliation. To perform a manual reconciliation within a shift or across shifts, the users, with the necessary permissions, can use the **"Manage shifts"** operation. This view makes it easy to view shifts with unreconciled transactions. The user can select a shift and press **Reconcile** button to view a list of reconciled and unreconciled transactions on separate tabs. From this view, users can either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them. During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can continue to reconcile and unreconcile transactions until the shift is closed. However, after a shift is closed, the transactions can't be unreconciled.
 
 ## Safe management
+
 In Dynamics 365 Commerce, the cash reconciliation can only be done at a shift level. So to manage cash in a safe, the safe must be managed via a shift. Additionally, it is required to have a dedicated register for safe management such that this register is not used for any sale transactions. 
 > [!IMPORTANT]
 > A dedicated register for a safe is required and this register should not be used for sale transactions
@@ -102,10 +95,10 @@ A sample business process for cash management using safe is explained below:
     - Select the safe, press the "Float entry" button and select the transaction created above. This will systematically reconcile the two transactions.
 
 - At the end of the day, the cashier drops the entire cash from the cash drawer to the safe, declares the tender and blind closes the shift. To do so, the cashier needs to do the following:
-    - Press the "Safe drop" button, enter the amount and select safe to drop the money
-    - Press the "Tender declaration" button and select the amount as 0
-    - Press the "Blind close" button to blind close the shift
-    - Hand over the money to store manager or drop it in the safe
+    - Press the "Safe drop" button, enter the amount and select safe to drop the money.
+    - Press the "Tender declaration" button and select the amount as 0.
+    - Press the "Blind close" button to blind close the shift.
+    - Hand over the money to store manager or drop it in the safe.
 
 - The manager reconciles the last safe drop transaction, performs a bank drop and closes both the shifts i.e. the cashier's shift and the shift for the safe. To do so, the store manager needs to do the following:
     - Navigate to the "Manage safe" operation on the dedicated register for the safe.
@@ -125,8 +118,8 @@ A sample business process for cash management using safe is explained below:
 - If the cash traceability feature is enabled, then the user can to do a safe drop by selecting a single tender type in one transaction. Thus, if the cash drawer includes multiple tenders e.g. Cash (USD), Cash (CAD), Check, then the user needs to perform one safe drop per tender type. 
 - The system supports posting the safe drops and bank drops into respective General Ledger (GL) accounts as defined on the **Store** -> "Payment methods" -> Tender (e.g. Cash) form in HQ. When the money is moved from safe to bank using the bank drop operation, the money is reduced from the safe drop GL and increased in the bank drop GL. However, there is a limitation that only the amounts that are dropped to the safe are recorded in safe drop GL, but the money moving out of the safe does not update this GL. Secondly, other cash management transactions e.g. Float entry and Tender removal are not recorded in any specific GL.
 
-	
 ## Financial reconciliation in store
+
 When these cash management transactions are processed in the Commerce Headquarters (HQ) the parameters defined on the **Statement/closing** section of the **All stores** page in HQ are used to perform validations on these transactions. However, if the user enables the following configurations, the POS user will see the result of these validations in POS when they attempt to close the shift. Refer the below image showing the financial reconciliation view.
 	
 ![Financial reconciliation in store](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Shalabh_cashmanagement/articles/commerce/media/FinancialReconciliation.png)
@@ -134,7 +127,7 @@ When these cash management transactions are processed in the Commerce Headquarte
 - In the Feature management workspace, turn on the **Retail statements - Trickle feed feature.**
 - In the POS functionality profile for the appropriate store, set the **Enable financial reconciliation in store** option to **Yes**.
 
-Please refer the following link for more details on this feature: [Financial reconcialiation in store](https://learn.microsoft.com/en-us/dynamics365/commerce/fin-recon)
+Please refer the following link for more details on this feature: [Financial reconcialiation in store](fin-recon.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
