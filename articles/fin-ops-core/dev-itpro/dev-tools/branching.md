@@ -27,8 +27,8 @@ You will find that a few elements of the X++ development cycle differ from gener
 
 Any X++ repo branching strategy should support, at a minimum:
 
-- The isolation of un-tested development code from unit-tested development code. Developers should be protected from teammates accidentally breaking any active development branch, and isolating untested code from in-development code is an ideal way to provide this protection.
-- The isolation of unit-tested in-development code from test-eligible code. A code change may pass unit testing but the associated task may still not be ready for functional testing. Any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
+- The isolation of un-tested development code or code in development. Developers should be protected from teammates accidentally breaking any active development branch. If there is only one DEV branch shared, each developer would need to ensure they do not commit code that breaks teammates. Additional configuration of the version control capabilities should be leveraged. Otherwise, isolating untested code from in-development code is an ideal way to provide this protection. 
+- The isolation of in-development code from test-eligible code. A code change may pass unit testing or manual developer testing but the associated task may still not be ready for functional testing. Any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
 - The isolation if in-test code from production code. This is the fundamental purpose of all version control: avoiding code releases to production environments until code changes have been fully validated.
 - Relatively long (weeks) functional testing cycles. See the [Considerations](#considerations) section for more details on why finance and operations apps customizations take longer to validate.
 
