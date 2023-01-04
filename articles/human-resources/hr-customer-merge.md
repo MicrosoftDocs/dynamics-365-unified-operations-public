@@ -41,7 +41,7 @@ Customer merge or consolidation of their Human resources environment with anothe
 This page includes resources and information regarding various customer scenarios when merging finance and operations based environments. 
 
 ## Custom fields
-There's an extensive set of fields out-of-the-box for managing a broad range of business processes. Sometimes there's a need for a company to track additional information. While programmers can be used to add those fields as extensions in developer tools, the custom fields feature allows fields to be added directly from the user interface. This allows you to tailor the application to fit your business. For more information, see [How to create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md). 
+There's an extensive set of fields out-of-the-box for managing a broad range of business processes. Sometimes there's a need for a company to track additional information. While programmers can be used to add those fields as extensions in developer tools, the custom fields feature allows fields to be added directly from the user interface. This allows you to tailor the application to fit your business. For more information, see [How to create and work with custom fields](../fin-ops/get-started/user-defined-fields.md). 
 
 ### Move custom fields from one environment to another
 To move custom fields from one environment to another: 
