@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Human Resources
 
 ## Dynamics Human Resources 365 customer merge
 
-As part of the infrastructure merge, all capabilities of the Human Resources application have been made available in finance and operations environments. Customers can migrate their Human Resources environments by using the migration tooling that is available in Microsoft Dynamics Lifecycle Services. They can also optionally merge their data with their existing finance and operations environment.
+As part of the infrastructure merge, all of the Human Resources application capabilities are available in finance and operations environments. Customers can migrate their Human Resources environments by using the migration tooling that is available in Microsoft Dynamics Lifecycle Services. They can also merge their data with their existing finance and operations environment.
 
 Customer merge or consolidation of their Human resources environment with another finance and operations environment isn't required by Microsoft. It's done at the customer's discretion and on the customer's own timeline. During this step, customer moves their data into an existing environment, such as a Finance or Project Operations environment. It's mostly manual and can be done by using Data Management Framework (DMF) data entities.
 
-This page includes some of the resources and information regarding various customer scenarios when merging finance and operations based environments. 
+This page includes resources and information regarding various customer scenarios when merging finance and operations based environments. 
 
 ## Custom fields
 There's an extensive set of fields out-of-the-box for managing a broad range of business processes. Sometimes there's a need for a company to track additional information. While programmers can be used to add those fields as extensions in developer tools, the custom fields feature allows fields to be added directly from the user interface. This allows you to tailor the application to fit your business. For more information, see [How to create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md). 
