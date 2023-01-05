@@ -49,6 +49,7 @@ To turn on the reset, follow these steps.
 1. In the drop-down dialog box, in the **Reset date** field, select a future date when the reset should occur.
 1. In the **Reset receipt type** field, select **One time only** or **Yearly**.
 1. Select **OK**.
+1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule** and run the **1070 (Channel configuration)** job to synchronize the latest functionality profile settings to POS clients.
 
 ![Selecting a receipt reset date.](media/Enable_receipt_reset.png "Selecting a receipt reset date")
 
