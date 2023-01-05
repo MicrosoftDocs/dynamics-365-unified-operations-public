@@ -4,7 +4,7 @@
 title: Cash management overview
 description: This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce POS, focusing on the cash traceability capability of two-sided transactions.
 author: ShalabhjainMSFT
-ms.date: 01/04/2023
+ms.date: 01/05/2023
 ms.topic: overview
 audience: Application User
 ms.reviewer: v-chgriffin
