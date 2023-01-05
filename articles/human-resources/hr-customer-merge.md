@@ -27,129 +27,126 @@ ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 
 ---
-# Dynamics 365 Human Resources customer merge 
+# Dynamics 365 Human Resources customer merge overview
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 ## Dynamics Human Resources 365 customer merge
 
-As part of the infrastructure merge, all of the Human Resources application capabilities are available in finance and operations environments. Customers can migrate their Human Resources environments by using the migration tooling that is available in Microsoft Dynamics Lifecycle Services. They can also merge their data with their existing finance and operations environment.
+As part of the infrastructure merge, all capabilities of the Microsoft Dynamics 365 Human Resources application are available in finance and operations environments. Customers can migrate their Human Resources environments by using the migration tooling that's available in Microsoft Dynamics Lifecycle Services. They can also merge their data with their existing finance and operations environment.
 
-Customer merge or consolidation of their Human resources environment with another finance and operations environment isn't required by Microsoft. It's done at the customer's discretion and on the customer's own timeline. During this step, customer moves their data into an existing environment, such as a Finance or Project Operations environment. It's mostly manual and can be done by using Data Management Framework (DMF) data entities.
+Microsoft doesn't require that customers merge or consolidate their Human Resources environment with another finance and operations environment. This step is completed at the customer's discretion and on the customer's own timeline. During this step, customers move their data into an existing environment, such as a Dynamics 365 Finance or Dynamics 365 Project Operations environment. This step is mostly manual and can be done by using Data Management Framework (DMF) data entities.
 
-This page includes resources and information regarding various customer scenarios when merging finance and operations based environments. 
+This article includes resources and information about various customer scenarios where finance and operations app–based environments are merged.
 
 ## Custom fields
-There's an extensive set of fields out-of-the-box for managing a broad range of business processes. Sometimes there's a need for a company to track additional information. While programmers can be used to add those fields as extensions in developer tools, the custom fields feature allows fields to be added directly from the user interface. This allows you to tailor the application to fit your business. For more information, see [How to create and work with custom fields](/fin-ops/get-started/user-defined-fields). 
+
+There's an extensive set of out-of-box fields for managing a broad range of business processes. However, a company must sometimes track additional information. One approach is to ask programmers to add the required fields as extensions in developer tools. Alternatively, the custom fields feature enables fields to be added directly from the user interface (UI). This approach lets you tailor the application to your business. For more information, see [How to create and work with custom fields](/fin-ops/get-started/user-defined-fields).
 
 ### Move custom fields from one environment to another
-To move custom fields from one environment to another: 
-•	Move the MetadataExtensionTable.
-•	Move the tables that contain labels/translations/picklists. These tables are:
-  •	SysCustomFieldLabels
-  • SysCustomFieldPicklist
-  • SysCustomFieldPicklistValues
-      o	Open SSMS
-      o	Find the AXDB Database
-      o	Right-click, select **Tasks**
-      o	Click **Generate scripts**
-      
-      
-![Generate scripts.](media/Generate-scripts-1.png)
-     
- - Click **Next**
- - Click **Select specific database objects**
- - Extract the **Tables** node and select the “MetaDataExtensionTable” table as shown below:
 
-![Database objects](media/database-objects3.png)
+Follow these steps to move custom fields from one environment to another.
 
- - Scroll down the tables list and select the following tables:  
-  - SysCustomFieldLabels 
-  - SysCustomFieldPicklist 
-  - SysCustomFieldPicklistValues 
-  
-  
- - Click **Next**.
+1. Move the **MetadataExtensionTable** table, and the following three tables that contain labels, translations, and picklists:
 
-![Choose objects](media/choose-objects4.png)
+    - SysCustomFieldLabels
+    - SysCustomFieldPicklist
+    - SysCustomFieldPicklistValues
 
- - Select the highlighted options shown below: 
-  - **Save script to a specific location** 
-  - **Save to file** 
-  - **Unicode text**
+    Follow these steps to move the tables:
 
- - Click **Advanced**, go to **Types of data to script**. Select the lookup, select **Data only**. Click **Ok**.
+    1. Open SQL Server Management Studio (SSMS).
+    2. Find the **AXDB** database, select and hold (or right-click) it, and then select **Tasks** \> **Generate scripts**.
 
-![Scripting.](media/set-scripting5.png)
+        ![Selecting the Generate scripts command for the AXDB database.](media/Generate-scripts-1.png)
 
- - Select a file name to save and click **Next**.
+        The **Generate and Publish Scripts** wizard is opened.
 
-![File name](media/file-name6.png)
+    3. On the **Introduction** page, select **Next**.
+    4. On the **Choose Objects** page, select the **Select specific database objects** option.
+    5. In the list, expand the **Tables** node, and then select the **MetaDataExtensionTable** table.
 
- - Click **Next**.
- - Click **Finish**.
+        ![Selecting the MetaDataExtensionTable table.](media/database-objects3.png)
 
+    6. Scroll down the list, and select the following additional tables:
 
- - Move the created SQL file to the target environment and open by SQL query editor.
+        - SysCustomFieldLabels
+        - SysCustomFieldPicklist
+        - SysCustomFieldPicklistValues
 
- - Outcomment the lines for “DimensionAttributeValueCombination” and “DimensionAttributeValueSet” and run the script. 
- - This will import the records into the database.
+        ![Selecting the tables that contain labels, translations, and picklists.](media/choose-objects4.png)
 
-![Import records](media/record-import7.png)
+    7. Select **Next**.
+    8. On the **Set Scripting Options** page, select the following options:
 
-### Copy custom fields metadata in Dataverse
+        - Save scripts to a specific location
+        - Save to file
+        - Unicode text
 
-How to copy Dynamics 365 Human Resources custom fields metadata created in Dataverse to another instance of a Dataverse environment.
+    9. Select **Advanced**, find **Types of data to script**, and select **Data only** in the drop-down list. Then select **OK**.
 
- - Create a new unmanaged solution
-    -   Log into Dynamics 365 Human Resources.
-    -   Go to **System administration > Integrations > Dataverse configuration**.
-    -   The banner at the top of page provides the name of the Dataverse instance being synced to and a link to the Admin Center. 
+        ![Setting scripting options.](media/set-scripting5.png)
 
-![Dataverse instance](media/dataverse-integration8.png)
-    -   Make note of the name of the Dataverse instance.
-    -   Open a new browser tab and go to the PowerApps Maker portal (https://make.powerapps.com).
-    -   In the upper right corner, click on the **Environment** drop-down and find the name of the Dataverse instance.
+    10. Select the file name to save, and then select **Next**.
 
-![Environment drop-down](media/environment-name10.png)
-    -   Click **Solutions**.
-    -   Click **New solution**.
-    -   Enter a name, description and select the **Default publisher**. 
-    -   Click **OK**. The new solution will display in the **Solutions** list.
+        ![Selecting the file name to save.](media/file-name6.png)
 
-![Solutions list](media/solutions-list11.png)
+    11. Select **Next**.
+    12. On the **Summary** page, select **Finish**.
 
+3. Move the SQL file that's created to the target environment, and open it in the SQL query editor.
+4. Comment out the lines for **DimensionAttributeValueCombination** and **DimensionAttributeValueSet**, and then run the script. The records are imported into the database.
 
-2.	Add the custom fields created through HR to the new unmanaged solution
-    a.   Click on the name of the new solution created in step 1.
-    b.   Click **Add existing > Table**.
-    c.   Search for the table name where custom fields have been added. 
-    d.   Select the table, click **Next**.
-    e.   Click **Select objects**, go to the **Fields** tab.
-    f.   In the search, find all the fields that end in **_custom**. 
-    g.   Select the fields, click **Add**. 
-    h.   The table screen should now reflect the number of objects selected. Click **Add** on this dialog.
-    i.   The solution screen should now show the name of the table added to the unmanaged solution.
-    j.   Repeat the process by clicking Add Existing again until all the custom fields have been added to the new solution.
-    k.   Go to the **Solutions** list by clicking the back arrow.
-    
-    
-3.	Export the solution as managed.
-    a.   Check the new solution created.
-    b.   Click **Next**.
-    c.   **Managed** is checked by default. Click **Export** to start the export process.
-    d.   Once the export process is completed, click **Download**. The solution should be saved to the browser’s default download folder.
+    ![Commenting out lines in the SQL query editor and running the script.](media/record-import7.png)
 
-4.	Import managed solution into the other Dataverse environment
-    a.   In the Maker portal, in the **Environment** drop-down from step 1 to the destination Dataverse environment.
-    a.   In the **Solutions** list, click **Import**.
-    a.   Click **Browse**. Locate the exported managed solution from step 3.
-    a.   Click **Next**, then click **Import** and wait for the managed solution to be applied to the destination Dataverse environment.
+### Copy custom field metadata in Dataverse
 
+Follow these steps to copy Human Resources custom field metadata that's created in Dataverse to another instance of a Dataverse environment.
 
+1. Create a new unmanaged solution.
 
+    1. Sign in to Human Resources.
+    2. Go to **System administration \> Integrations \> Dataverse configuration**.
+    3. The **Environment** section at the top of the page provides the name of the Dataverse instance that's being synced to and a link to the Admin center. Make a note of the name of the Dataverse instance.
 
+        ![Name of the Dataverse instance and link to the Admin center.](media/dataverse-integration8.png)
 
+    4. Open a new browser tab, and go to the Power Apps Maker portal (<https://make.powerapps.com>).
+    5. In the upper-right corner, on the **Environment** drop-down menu, select the name of the Dataverse instance that you made a note of in step 3.
 
+        ![Environment menu.](media/environment-name10.png)
 
+    6. In the left navigation, select **Solutions**.
+    7. On the **Solutions** page, select **New solution**.
+    8. Enter a name and description for the new solution, and select the default publisher.
+    9. Select **OK**. The new solution appears in the list of solutions on the **Solutions** page.
+
+        ![Solution list.](media/solutions-list11.png)
+
+2. Add the custom fields that were created through Dynamics 365 Human Resources to the new unmanaged solution.
+
+    1. Select the name of the solution that you created in step 1.
+    2. Select **Add existing \> Table**.
+    3. Search for the name of the table where custom fields have been added.
+    4. Select the table, and then select **Next**.
+    5. Select **Select objects**.
+    6. On the **Fields** tab, use the search functionality to find all fields that have names that end in **\_custom**.
+    7. Select the fields, and then select **Add**. The table page should now reflect the number of objects that you selected.
+    8. Select **Add**. The solution page should now show the name of the table that you added to the unmanaged solution.
+    9. Repeat steps 2 through 8 until you've added all the custom fields to the solution.
+    10. Return to the **Solutions** page by selecting the back arrow.
+
+3. Export the solution as managed.
+
+    1. Select the checkbox for the solution that you created.
+    2. Select **Next**.
+    3. **Managed** is selected by default. Select **Export** to start the export process.
+    4. After the export process is completed, select **Download**. The solution should be saved to the browser's default download folder.
+
+4. Import the managed solution into the other Dataverse environment.
+
+    1. In the Power Apps Maker portal, on the **Environment** drop-down menu, select the destination Dataverse environment.
+    2. On the **Solutions** page, select **Import**.
+    3. Select **Browse**, and select the managed solution that you exported in step 3.
+    4. Select **Next**, select **Import**, and wait until the managed solution is applied to the destination Dataverse environment.
