@@ -24,6 +24,7 @@ This article explains how to use the new installers to perform silent installati
 
 > [!NOTE]
 > The new self-service, sealed installers will not be made available in Headquarters and are only downloadable through LCS.
+> Beginning in the 10.0.32 release, 
 
 ## Delimiters for mass deployment
 
