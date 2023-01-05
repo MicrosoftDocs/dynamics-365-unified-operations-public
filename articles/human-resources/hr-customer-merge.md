@@ -126,7 +126,7 @@ Follow these steps to copy Human Resources custom field metadata that's created 
 
 2. Add the custom fields that were created through Dynamics 365 Human Resources to the new unmanaged solution.
 
-    1. Select the name of the solution that you created in step 1.
+    1. Select the name of the solution that you created in step 1. 
     2. Select **Add existing \> Table**.
     3. Search for the name of the table where custom fields have been added.
     4. Select the table, and then select **Next**.
