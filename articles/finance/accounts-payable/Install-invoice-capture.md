@@ -73,4 +73,5 @@ To complete the setup, follow these steps.
     - **Client ID** – The Azure application ID that was registered.
     - **Client Secret** – The client secret that was generated for the Azure application.
 
-
+## Support channel
+Since the Invoice capture is still in public preview, IcM tickets are not the official channel to support the customer issue or problems. Please send the questions directly via email daxaphelp@service.microsoft.com. 
