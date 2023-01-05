@@ -54,14 +54,14 @@ To set up a safe in Commerce headquarters, follow these steps.
 1. in the **Set up** group, select **Safes**. 
 1. On the **Safe declaration** page, select **+New**.
 1. Under **Name**, enter a name for the safe. 
-1. To add additional safes, repeat steps 5 and 6 for each new safe. 
+1. To add more safes, repeat steps 5 and 6 for each new safe. 
 1. Run the **1070 Channel configuration** distribution schedule job to sync the safe configurations to the channel database.
 
 ## How cash management is handled when the cash traceability feature is enabled
 
 Cash management is handled in the following ways when the cash traceability feature is enabled.
 
-- A user who runs a "Declare start amount" operation must enter the source of cash. The user can search for the available safes that are defined in the store and select the safe that the cash is being taken out of so that it can be put into the register. 
+- A user who runs a "Declare start amount" operation must enter the source of cash. The user can search for the available safes defined in the store, and then select the safe that the cash is being taken out of so that it can be put into the register. 
 - A user who runs a "Tender removal" operation is prompted to select from a list of open "Float entry" transactions. If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.
 - A user who runs a "Float entry" operation is prompted to select from a list of open "Tender removal" transactions. If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.
 - A user who runs a "Safe drop" operation is prompted to select the safe where the cash is being dropped.
@@ -95,31 +95,31 @@ In Dynamics 365 Commerce, cash reconciliation can only be done at the shift leve
 
 A sample business process for cash management using a safe is explained below.
 
-At the start of the day, the store manager declares the start amount in the safe. To do so, the store manager must do the following:
+At the start of the day, the store manager declares the start amount in the safe. To do so, the store manager must follow these steps:
     1. Open a shift in a dedicated register for the safe.
     1. Navigate to the **Manage safe** operation, select a safe, and then select **Declare start amount**.
     1. Enter the amount, and then select **Save**.
 
-When the cashier is ready to start the day, they open the shift and get the starting amount from the safe via the store manager. To do so, the cashier and the store manager must do the following:
+When the cashier is ready to start the day, they open the shift and get the starting amount from the safe via the store manager. To do so, the cashier and the store manager must follow these steps:
     1. The cashier opens the shift on a register (for example, Shift A).
     1. The store manager navigates to the **Manage safe** operation on the dedicated register for the safe, performs the **Tender removal** operation, and selects the correct amount and shift for this removal. It's important that the shift is opened on the register to which the money is being transferred from the safe.
     1. The cashier takes the money, performs a **Declare start amount** operation on their register, and selects the transaction created above to reflect the start amount. These actions systematically reconcile the two transactions.
 
 The cashier performs the regular sale transactions throughout the day.
 
-When the cash in the cash drawer is above the defined limit, the cashier is notified about the excess cash and the cashier performs a safe drop. To do so, the cashier and the store manager must do the following:
+When the cash in the cash drawer is above the defined limit, the cashier is notified about the excess cash, and the cashier performs a safe drop. To do so, the cashier and the store manager must follow these steps:
     1. Select the **Safe drop** button, enter the amount, and select the safe to drop the money into.
     1. The cashier hands over the money to store manager, or drops it in the safe.
     1. The store manager counts the money and then navigates to the **Manage safe** operation on the dedicated register for the safe.
-    1. The store manager selects the safe, selects the **Float entry** button, and then selects the transaction created above. This systematically reconciles the two transactions.
+    1. The store manager selects the safe, selects the **Float entry** button, and then selects the transaction created above. These actions systematically reconcile the two transactions.
 
-At the end of the day, the cashier drops the entire amount of cash in the cash drawer to the safe, declares the tender, and blind closes the shift. To do so, the cashier must do the following:
+At the end of the day, the cashier drops the entire amount of cash in the cash drawer to the safe, declares the tender, and blind closes the shift. To do so, the cashier must follow these steps:
     1. Select the **Safe drop** button, enter the amount, and select the safe to drop the money into.
     1. Select the **Tender declaration** button, and then select the amount as "0" (zero).
     1. Select the **Blind close** button to blind close the shift.
     1. Hand over the money to the store manager, or drop it in the safe.
 
-The manager reconciles the last safe drop transaction, performs a bank drop, and closes both of the shifts (the cashier's shift and the shift for the safe). To do so, the store manager must do the following:
+The manager reconciles the last safe drop transaction, performs a bank drop, and closes both of the shifts (the cashier's shift and the shift for the safe). To do so, the store manager must follow these steps:
     1. Navigate to the **Manage safe** operation on the dedicated register for the safe.
     1. Select a safe, select the **Float entry** button, and then select the transaction created above. This systematically reconciles the two transactions.
     1. For the selected safe, select the **Bank drop** button, and then select the money to be dropped into the bank.
