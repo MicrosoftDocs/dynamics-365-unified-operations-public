@@ -4,7 +4,7 @@ description: This article describes the setup tasks that you must perform to pre
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
+ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ms.topic: how-to
 ms.date: 01/05/2023
 audience: Application User
