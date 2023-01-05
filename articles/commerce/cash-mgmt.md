@@ -68,7 +68,7 @@ Cash management is handled in the following ways when the cash traceability feat
 
 ## Transaction reconciliation
 
-When a user chooses to close a shift, the system validates that there are no unreconciled cash management transactions in the shift. A shift cannot be closed if there are unreconciled transactions. 
+When a user chooses to close a shift, the system validates that there are no unreconciled cash management transactions in the shift. A shift can't be closed if there are unreconciled transactions. 
 
 A transaction can be reconciled systematically or manually. 
 
@@ -78,14 +78,14 @@ Let's use an example to understand systematic transaction reconciliation. When a
 		
 ### Manual transaction reconciliation
 
-Referring to the above example, if the user on shift 2 does not perform a float entry action or does not choose the correct transaction during float entry, then this tender removal action would remain unreconciled and thus would need manual reconciliation. To perform a manual reconciliation within a shift or across shifts, the users, with the necessary permissions, can use the **"Manage shifts"** operation. This view makes it easy to view shifts with unreconciled transactions. The user can select a shift and press **Reconcile** button to view a list of reconciled and unreconciled transactions on separate tabs. From this view, users can either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them. During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can continue to reconcile and unreconcile transactions until the shift is closed. However, after a shift is closed, the transactions can't be unreconciled.
+Referring to the above example, if the user on shift 2 doesn't perform a float entry action or doesn't choose the correct transaction during float entry, then this tender removal action would remain unreconciled and thus would need manual reconciliation. To perform a manual reconciliation within a shift or across shifts, the users, with the necessary permissions, can use the **"Manage shifts"** operation. This view makes it easy to view shifts with unreconciled transactions. The user can select a shift and press **Reconcile** button to view a list of reconciled and unreconciled transactions on separate tabs. From this view, users can either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them. During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can continue to reconcile and unreconcile transactions until the shift is closed. However, after a shift is closed, the transactions can't be unreconciled.
 
 ## Safe management
 
-In Dynamics 365 Commerce, cash reconciliation can only be done at the shift level. To to manage cash in a safe, the safe must be managed via a shift. . 
+In Dynamics 365 Commerce, cash reconciliation can only be done at the shift level. To to manage cash in a safe, the safe must be managed via a shift. 
 
 > [!IMPORTANT]
-> It is required to have a dedicated register for safe management that isn't used for any sale transactions.
+> It's required to have a dedicated register for safe management that isn't used for any sale transactions.
 
 A sample business process for cash management using a safe is explained below.
 
@@ -96,7 +96,7 @@ At the start of the day, the store manager declares the start amount in the safe
 
 When the cashier is ready to start the day, they open the shift and get the starting amount from the safe via the store manager. To do so, the cashier and the store manager must do the following:
     1. The cashier opens the shift on a register (for example, Shift A).
-    1. The store manager navigates to the **Manage safe** operation on the dedicated register for the safe, performs the **Tender removal** operation, and selects the correct amount and shift for this removal. It is important that the shift is opened on the register to which the money is being transferred from the safe.
+    1. The store manager navigates to the **Manage safe** operation on the dedicated register for the safe, performs the **Tender removal** operation, and selects the correct amount and shift for this removal. It's important that the shift is opened on the register to which the money is being transferred from the safe.
     1. The cashier takes the money, performs a **Declare start amount** operation on their register, and selects the transaction created above to reflect the start amount. These actions systematically reconcile the two transactions.
 
 The cashier performs the regular sale transactions throughout the day.
@@ -141,7 +141,7 @@ To set up the financial reconciliation functionality in headquarters, follow the
 1. In the Feature management workspace, turn on the **Retail statements - Trickle feed** feature.
 1. In the POS functionality profile for the appropriate store, set the **Enable financial reconciliation in store** option to **Yes**.
 
-For more information on the financial reconciliation functionality, see [Financial reconcialiation in store](fin-recon.md).
+For more information on the financial reconciliation functionality, see [Financial reconciliation in store](fin-recon.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
