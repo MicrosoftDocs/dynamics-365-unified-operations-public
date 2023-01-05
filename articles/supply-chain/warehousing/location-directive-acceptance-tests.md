@@ -8,6 +8,7 @@ ms.search.form: WHSLocDirTable, WHSLocationDirectiveAcceptanceTest
 ms.service: dynamics-365
 ms.topic: how-to
 ms.date: 09/29/2022
+audience: Application User
 ms.custom: bap-template
 ---
 

@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
  - Copy the existing Dataverse environment, which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
 
 > [!NOTE]
-> When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment)
+> When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment).
 
 ### Dataverse capacity
 
@@ -61,7 +61,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 
 ### Create a Lifecycle Services project for Human Resources migration
 
-The first step is to create a new finance and operations Implementation project in Lifecycle Services. The customer will have an existing Human Resources Lifecycle Services project. The existing Human Resources environments will be migrated to the new finance and operations Implementation project.
+The first step is to create a new finance and operations Implementation project in Lifecycle Services. The customer will have an existing Human Resources Lifecycle Services project. The existing Human Resources environments will be migrated to the new finance and operations implementation project.
 
 To create a new project, follow these steps.
 
@@ -74,7 +74,7 @@ To create a new project, follow these steps.
 7. Select the checkbox to agree to the terms and conditions.
 8. Select **Create**.
 
-After you've created a new Lifecycle Services project, follow these steps to set up and configure it.
+After you've created a new Lifecycle Services project, follow these steps to set up and configure the project.
 
 1. Select **Project onboarding** to complete the project onboarding. For more information, see [Project onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
@@ -165,6 +165,7 @@ After you've finished migrating and validating a sandbox environment, follow the
 
 - The Subscription estimator should be completed.
 - The Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed.
+- The user initiating the Production migration in Lifecycle services should have a System administrator role on the Power Platform. 
 
 #### Migrate the production environment
 

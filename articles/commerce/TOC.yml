@@ -844,6 +844,8 @@
           href: process-order-pickup-POS.md
         - name: Enable order lookup for guest checkouts
           href: order-lookup-guest.md
+        - name: Improve the performance of Commerce order search
+          href: improve-order-search.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -1422,6 +1424,8 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Set up Operational Insights
+        href: dev-itpro/operational-insights.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -3056,6 +3060,12 @@
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
           href: troubleshoot/set-up-dev-environment-debugging.md
+      - name: Store financials
+        items:
+        - name: Issues with the data reconciliation of a Z report
+          href: troubleshoot/z-report-issues.md
+        - name: Statement posting errors due to unavailable inventory or update conflicts
+          href: troubleshoot/inventory-errors-posting.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
