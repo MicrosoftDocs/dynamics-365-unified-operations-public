@@ -74,11 +74,17 @@ A transaction can be reconciled systematically or manually.
 
 ### Systematic transaction reconciliation
 
-Let's use an example to understand systematic transaction reconciliation. When a user performs a cash management operation e.g. "Tender removal" for $20 on shift 1 to be sent to shift 2, then, when the user on shift 2 performs a "Float entry" action and chooses the above transaction, then these two transactions are systematically reconciled. 
+Systematic transaction reconciliation occurs when transactions are automatically reconciled once certain actions are taken. 
+
+For example, when a user performs a cash management operation (such as **Tender removal**) for $20 on shift 1 to be sent to shift 2, when the user on shift 2 performs a **Float entry** operation and selects the transaction, the two transactions are systematically reconciled. 
 		
 ### Manual transaction reconciliation
 
-Referring to the above example, if the user on shift 2 doesn't perform a float entry action or doesn't choose the correct transaction during float entry, then this tender removal action would remain unreconciled and thus would need manual reconciliation. To perform a manual reconciliation within a shift or across shifts, the users, with the necessary permissions, can use the **"Manage shifts"** operation. This view makes it easy to view shifts with unreconciled transactions. The user can select a shift and press **Reconcile** button to view a list of reconciled and unreconciled transactions on separate tabs. From this view, users can either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them. During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can continue to reconcile and unreconcile transactions until the shift is closed. However, after a shift is closed, the transactions can't be unreconciled.
+Manual transaction reconciliation is needed when systematic transaction reconciliation does not occur.
+
+Continuing with the example above, if the user on shift 2 doesn't perform a **Float entry** action, or doesn't choose the correct transaction during the **Float entry** action, then the tender removal action remains unreconciled and requires manual reconciliation. 
+
+To perform a manual reconciliation within a shift or across shifts, users with the necessary permissions can perform the **Manage shifts** operation. The **Manage shifts** view makes it easy to view shifts with unreconciled transactions. The user can select a shift and select **Reconcile** to view a list of reconciled and unreconciled transactions on separate tabs. Users can then either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them. During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can continue to reconcile and unreconcile transactions until the shift is closed. However, transactions can't be unreconciled after a shift is closed.
 
 ## Safe management
 
