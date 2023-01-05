@@ -57,7 +57,7 @@ For detailed information about how to use product lifecycle state to exclude pro
 > [!NOTE]
 > For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.  
 
-## Detailed control of business processes
+## Enable and apply detailed control of business processes
 
 It's possible set up your system to provide control over which business processes should be allowed or blocked by the system for a specific lifecycle state. This capability can be useful when introducing new products (where, for example, it may be possible to purchase the item but receive a warning that it's still a prototype) or to discontinue or end-of-life of a product (where it may be possible to sell the existing on-hand but not to purchase it or to produce it).
 
