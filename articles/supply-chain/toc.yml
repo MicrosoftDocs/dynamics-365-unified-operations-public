@@ -1835,8 +1835,6 @@
         items:
         - name: Master plans overview
           href: master-planning/master-plans.md
-        - name: Set up master plans
-          href: master-planning/master-planning-setup.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
         - name: Generate a constrained plan
@@ -1947,6 +1945,8 @@
             href: master-planning/master-planning-performance.md
           - name: Improve scheduling engine performance
             href: master-planning/scheduling-engine-performance.md
+          - name: Set up master plans for the deprecated planning engine
+            href: master-planning/deprecated-master-plans.md
           - name: Create an intercompany plan
             href: master-planning/tasks/create-intercompany-plan.md
           - name: View outbound planned intercompany demand
