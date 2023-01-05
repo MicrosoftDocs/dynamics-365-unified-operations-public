@@ -114,7 +114,7 @@ When the cash in the cash drawer is above the defined limit, the cashier is noti
 1. The store manager counts the money and then navigates to the **Manage safe** operation on the dedicated register for the safe.
 1. The store manager selects the safe, selects **Float entry**, and then selects the transaction created above. These actions trigger the systematic reconciliation of the two transactions.
 
-At the end of the day, the cashier drops the entire amount of cash in the cash drawer to the safe, declares the tender, and [blind-closes](https://learn.microsoft.com/en-us/dynamics365/commerce/shift-drawer-management#blind-close-shift) the shift. To do so, the cashier must follow these steps:
+At the end of the day, the cashier drops the entire amount of cash in the cash drawer to the safe, declares the tender, and [blind-closes](shift-drawer-management.md#blind-close-shift) the shift. To do so, the cashier must follow these steps:
 1. Select **Safe drop**, enter the amount, and select the safe to drop the money into.
 1. Select **Tender declaration**, and then select the amount as "0" (zero).
 1. Select **Blind close** to blind close the shift.
