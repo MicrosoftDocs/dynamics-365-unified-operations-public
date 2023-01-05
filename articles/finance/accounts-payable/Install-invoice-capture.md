@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 09/25/2022
+ms.date: 01/05/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -73,4 +73,5 @@ To complete the setup, follow these steps.
     - **Client ID** – The Azure application ID that was registered.
     - **Client Secret** – The client secret that was generated for the Azure application.
 
-
+## Support 
+IcM tickets are not currently the official channel for customer support. Send questions directly to daxaphelp@service.microsoft.com. 
