@@ -33,49 +33,51 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## How do I check for duplicate records?
 
-You can check for duplicate records directly from the **Global address book** list page. On the Action Pane, on the **Party** tab, in the **Maintain** group, click **Check for duplicates**. Then select the values to include in the check for duplicates.
+You can check for duplicate records directly from the **Global address book** list page. On the Action Pane, on the **Party** tab, in the **Maintain** group, select **Check for duplicates**. Then select the values to include in the check for duplicates.
 
 ## Can I bulk add or delete party records from an address book?
 
 Yes, you can add multiple party records to an address book and also remove multiple party records.
 
-- To add multiple party records to an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, click **Assign parties**. Select the address books to add the selected party records to, and then click **OK**. All the selected party records are added to the address books that you selected.
-- To remove multiple party records from an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, click **Remove parties**. Select the address books to remove the parties from, and then click **OK**. All the selected party records are removed from the address books that you selected.
+- To add multiple party records to an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, select **Assign parties**. Select the address books to add the selected party records to, and then select **OK**. All the selected party records are added to the address books that you selected.
+- To remove multiple party records from an address book, on the **Global address book** list page, select the parties in the list. Then, on the Action Pane, on the **Party** tab, in the **Maintain** group, select **Remove parties**. Select the address books to remove the parties from, and then select **OK**. All the selected party records are removed from the address books that you selected.
 
-## Can I delete historical addresses?  
+## Can I delete historical addresses?
 
-With Dynamics 365 Finance version 10.0.32, an administrator can enable the advanced address maintenance feature to delete historical addresses using the following steps:  
+As of Microsoft Dynamics 365 Finance version 10.0.32, an administrator can use the following procedure to enable the advanced address maintenance feature so that historical addresses can be deleted.
 
-1. Go to **Feature Management-> Check for updates**.
-2. Search for **Advanced address maintenance**. The advanced address maintenance is disabled by default. 
-3. Click **Enable**.  
+1. Go to **Feature Management \> Check for updates**.
+2. Search for **Advanced address maintenance**. Advanced address maintenance is disabled by default.
+3. Select **Enable**.
 
-After the **Advanced address maintenance** feature is enabled by the administrator, follow these steps to delete historical addresses:  
-1. Go to the **Global address book** list page. 
-2. Select the party record for which you want to remove a historical address.  
-3. Go to the **Addresses** tab. 
-4. Click **More options > Advanced**.  
-5. On the **History** tab, select one or more addresses. 
-6. Click **Delete** to delete the addresses. 
+After the **Advanced address maintenance** feature is enabled by an administrator, follow these steps to delete historical addresses.
 
-If this address is linked to another record, you will receive an error message.  
+1. Open the **Global address book** list page.
+2. Select the party record to remove historical addresses for.
+3. On the **Addresses** tab, select **More options \> Advanced**.
+4. On the **History** tab, select one or more addresses.
+5. Select **Delete** to delete the selected addresses.
 
-Alternatively, you can also set up a SysOperation framework batch job to delete multiple historical addresses using the following steps: 
-1. Go to **Organization administration > Periodic > Delete inactivated addresses**.
-2. Click **OK**.  
-You will be notified if the batch job was successful or failed.  
+If an address that you're trying to delete is linked to another record, you receive an error message.
 
-You can also delete inactive postal addresses through the MS Office add-in.  
-1. Go to the **Global address book** list page. 
-2. Select the party record for which you want to remove a historical address.  
-3. Go to the **Addresses** tab.
-4. Click **More options > Advanced**.  
-5. Click on the MS Office logo on the top right corner. 
-6. Select **Inactive Logistics Postal Address**.  
-7. Log into the add-in using your credentials. You may only use this add-in to delete any inactive addresses.  
+Alternatively, you can set up a SysOperation framework batch job to delete multiple historical addresses.
 
->[!NOTE]
->You can't update or insert new records using this method. For example, if you try to update the ValidFrom date, the record will get deleted instead.  
+1. Go to **Organization administration \> Periodic \> Delete inactivated addresses**.
+2. Select **OK**.
+
+You're notified whether the batch job succeeded or failed.
+
+You can also delete inactive postal addresses through the Microsoft Office add-in.
+
+1. Open the **Global address book** list page.
+2. Select the party record to remove historical addresses for.
+3. On the **Addresses** tab, select **More options \> Advanced**.
+4. Select the Microsoft Office logo in the upper-right corner.
+5. Select **Inactive Logistics Postal Address**.
+6. Sign in to the add-in by using your credentials. You can use the add-in to delete only inactive addresses.
+
+> [!NOTE]
+> You can't use this procedure to update records or insert new records. For example, if you try to update the **ValidFrom** date, the record will be deleted instead.
 
 ## Can I change the party type of a record, or do I have to delete the old record and create a new one?
 
@@ -85,8 +87,8 @@ Occasionally, you might have to change the party type of a record from person to
 
 You can update the name of a party record, and the addresses that are associated with that record, at any time.
 
-- To update the name of a party record, open the party record, and then, on the Action Pane, click **Edit**. On the **General** FastTab, enter the new name for the party, and then save the record.
-- To update an address for a party record, open the party record, and then, on the **Addresses** FastTab, select the address to update. Click **Edit**, and then, on the **Edit address** page, make the required changes to the address or address parameters.
+- To update the name of a party record, open the party record, and then, on the Action Pane, select **Edit**. On the **General** FastTab, enter the new name for the party, and then save the record.
+- To update an address for a party record, open the party record, and then, on the **Addresses** FastTab, select the address to update. Select **Edit**, and then, on the **Edit address** page, make the required changes to the address or address parameters.
 
 ## Can I merge two or more party records into one record?
 
