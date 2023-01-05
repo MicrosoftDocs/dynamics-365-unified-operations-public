@@ -101,7 +101,7 @@ The net change minimized planning method generates planned orders to cover only 
 
 ## Scheduling methods, time fences, positive days, and negative days
 
-Other aspects of setting up master plans (including Scheduling methods, time fences, positive days, and negative days), work the same way when using the deprecated planning engine as they do when using Planning Optimization. For more information about these topics, see [Master plans overview](master-plans.md).
+Other aspects of setting up master plans (including Scheduling methods, time fences, positive days, and negative days) work the same way when using the deprecated planning engine as they do when using Planning Optimization. For more information about these topics, see [Master plans overview](master-plans.md).
 
 ## Additional resources
 
