@@ -42,7 +42,7 @@ This article includes resources and information about various customer scenarios
 
 ## Custom fields
 
-There's an extensive set of out-of-box fields for managing a broad range of business processes. However, a company must sometimes track additional information. One approach is to ask programmers to add the required fields as extensions in developer tools. Alternatively, the custom fields feature enables fields to be added directly from the user interface (UI). This approach lets you tailor the application to your business. For more information, see [How to create and work with custom fields](/fin-ops/get-started/user-defined-fields).
+There's an extensive set of out-of-box fields for managing a broad range of business processes. However, a company must sometimes track additional information. One approach is to have programmers to add the required fields as extensions in developer tools. Alternatively, the custom fields feature enables fields to be added directly from the user interface (UI). This approach lets you tailor the application to your business. For more information, see [How to create and work with custom fields](/fin-ops/get-started/user-defined-fields).
 
 ### Move custom fields from one environment to another
 
