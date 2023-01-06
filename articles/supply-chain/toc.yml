@@ -2343,8 +2343,6 @@
           href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
         - name: Create a product number nomenclature for configured product variants
           href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
-        - name: Create a new product
-          href: pim/tasks/create-new-product.md
         - name: Create a product master
           href: pim/tasks/create-product-master.md
         - name: Create predefined product variants
