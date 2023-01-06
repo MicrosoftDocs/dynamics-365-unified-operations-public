@@ -20,6 +20,9 @@ There are five product dimensions: color, configuration, size, style, and versio
 
 Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant.
 
+> [!NOTE]
+> You can't use physical dimensions to create product variants. Physical dimensions are specified on the product master and are shared by all its variants. 
+
 ## Product variants
 
 Product variants are also referred to as items. An item is a tangible product, which isn't the same as a service. It's also possible to define a product master with the service type. By using the service type, you can specify product variants that include services. For example, you can specify a product master for consultancy work and product variants for work that is performed by senior consultants and junior consultants.

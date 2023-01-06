@@ -1809,6 +1809,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Set up scrap to calculate raw material requirements
+          href: master-planning/scrap-calculations.md
         - name: Master planning for products with limited shelf life
           href: master-planning/planning-optimization/shelf-life.md
         - name: Scheduling with infinite capacity
@@ -1835,8 +1837,6 @@
         items:
         - name: Master plans overview
           href: master-planning/master-plans.md
-        - name: Set up master plans
-          href: master-planning/master-planning-setup.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
         - name: Generate a constrained plan
@@ -1947,6 +1947,8 @@
             href: master-planning/master-planning-performance.md
           - name: Improve scheduling engine performance
             href: master-planning/scheduling-engine-performance.md
+          - name: Set up master plans for the deprecated planning engine
+            href: master-planning/deprecated-master-plans.md
           - name: Create an intercompany plan
             href: master-planning/tasks/create-intercompany-plan.md
           - name: View outbound planned intercompany demand
@@ -2341,8 +2343,6 @@
           href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
         - name: Create a product number nomenclature for configured product variants
           href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
-        - name: Create a new product
-          href: pim/tasks/create-new-product.md
         - name: Create a product master
           href: pim/tasks/create-product-master.md
         - name: Create predefined product variants
@@ -2355,7 +2355,7 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Use data entities
+        - name: Product data entities
           href: pim/data-entities.md
         - name: Product lifecycle state
           items:
@@ -3409,6 +3409,8 @@
           href: warehousing/tasks/register-items-basic-warehousing.md
         - name: Import inbound ASNs through the V3 data entity
           href: warehousing/import-asn-data-entity.md
+        - name: Manage inbound putaway based on container types
+          href: warehousing/inbound-putaway-by-container-type.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order put-away

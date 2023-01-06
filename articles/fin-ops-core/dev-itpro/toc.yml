@@ -1104,8 +1104,6 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
-            - name: Enable a five-minute session time-out window for dual-write sessions
-              href: data-entities/dual-write/5-minute-mode.md
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
@@ -1134,8 +1132,8 @@
               href: data-entities/dual-write/app-lifecycle-management.md
             - name: User-specified team owner
               href: data-entities/dual-write/user-specified-team-owner.md
-            - name: Unlink and relink dual-write environments
-              href: data-entities/dual-write/relink-environments.md
+            - name: Reset dual-write connection
+              href: data-entities/dual-write/reset.md
         - name: Mapping concepts between apps
           items:
             - name: Integrated customer master
@@ -1602,6 +1600,8 @@
         href: lifecycle-services/cloud-powered-support-lcs.md
       - name: Production support and monitoring
         href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
+      - name: Use Customer Lockbox to manage secure access to customer data
+        href: sysadmin/customer-lockbox.md
     - name: System administration
       items:
       - name: System administration home page

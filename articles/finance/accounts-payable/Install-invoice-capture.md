@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 09/25/2022
+ms.date: 01/05/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -46,6 +46,9 @@ Before you can install the Invoice capture solution, you must complete the follo
 
 2. Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
+>[!NOTE]
+>Install capture is supported on Dynamics 365 finance and operations version 10.0.29 and later.
+
 ## Install and set up the solution
 
 To install the Invoice capture solution, go to AppSource, and select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you will see the solution installed in the selected environment in Power Apps.
@@ -69,3 +72,6 @@ To complete the setup, follow these steps.
     - **Tenant ID** – The tenant ID for the Finance environment.
     - **Client ID** – The Azure application ID that was registered.
     - **Client Secret** – The client secret that was generated for the Azure application.
+
+## Support 
+IcM tickets are not currently the official channel for customer support. Send questions directly to daxaphelp@service.microsoft.com. 
