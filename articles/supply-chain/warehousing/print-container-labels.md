@@ -8,6 +8,7 @@ ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSour
 ms.topic: how-to
 ms.date: 10/14/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

@@ -6,7 +6,8 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSContainerType, WHSAllowedContainerTypeGroup, WHSLocationProfile, WHSLocationLimit, WHSParameters, InventLocation, WHSUOMSeqGroupTable, WHSRFMenuItem, UnitOfMeasureLookup, UnitOfMeasureConversion 
 ms.topic: how-to
-ms.date: 12/12/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

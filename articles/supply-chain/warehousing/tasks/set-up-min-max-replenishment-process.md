@@ -8,6 +8,7 @@ ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdL
 ms.topic: how-to
 ms.date: 12/13/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
