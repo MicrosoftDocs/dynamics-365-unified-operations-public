@@ -27,10 +27,10 @@ In Dataverse, each business unit has a default owning team that uses the same na
 
 To find the root business unit and default teams, follow these steps.
 
-1. In a web browser, sign in to the Dataverse(CE/CDS/CRM) environment (for example, `https://???.dynamics.com`).
+1. In a web browser, sign in to the Dataverse or Customer Engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[businessunitid\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL.
 
-    `https://???.dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null`
+    `https://[environment].dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null`
 
     The result will resemble the following example.
 
@@ -56,7 +56,7 @@ To find the root business unit and default teams, follow these steps.
 
     ```
     {
-        "@odata.context": "https://???.dynamics.com/api/data/v9.0/$metadata#teams(name,teamid)",
+        "@odata.context": "https://[environment].dynamics.com/api/data/v9.0/$metadata#teams(name,teamid)",
         "value": [
             {
                 "@odata.etag": "W/\"...\"",
@@ -80,10 +80,10 @@ When dual-write is invoked to propagate data changes from finance and operations
 
 If the exception occurs, follow these steps to assign the correct permissions to the team so that dual-write can work as expected.
 
-1. In a web browser, sign in to the Dataverse environment (for example, `https://???.dynamics.com`).
+1. In a web browser, sign in to the Dataverse environment (for example, `https://[environment].dynamics.com`). Replace **\[businessunitid\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL. Replace **\[ID\]** with the ID that's shown in the error message.
 
-    `https://???.crm.dynamics.com/api/data/v9.0/teams?$select=name&$filter=teamid eq [ID]`
+    `https://[environment].crm.dynamics.com/api/data/v9.0/teams?$select=name&$filter=teamid eq [ID]`
 
 3. Record the **name** value for the team.
 4. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).
