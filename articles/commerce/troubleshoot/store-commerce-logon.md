@@ -17,14 +17,14 @@ ms.search.validFrom: 2023-01-06
 
 This article explains how to troubleshoot logon issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
-## The audience validation failed
+## Audience validation failed
 
-After you enter the valid Cloud Point of Sale (CPOS) staff id and password or enter a AAD user account, you might receive error message that resembles the following example:
+After entering the employee credentials on point of sale (POS) sign-in screen, you might receive error message that resembles the following example:
 
 > Audience validation failed. Contact your system administrator to properly configure identity providers in Commerce headquarters.
 
 In this case, 
 
-If you are using Personnel ID and Password logon, make sure relying parties are correctly configured.
+If the POS application is configured to use **Personal ID and Password** logon authentication method, please go to **Commerce shared parameters** > **Identity providers**, for the identity provider issuer named **Commerce Identity Provider**, make sure the **Relying parties** section has **Cloud POS** and **Modern POS** records correctly configured.
 
-If you are using Azure AD logon, make sure both relying parties and server resource ids are correctly configured. For more information about detailed config steps, see [Update identity providers settings in Commerce headquarters](../cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
+If the POS application is configured to use **Azure AD** logon authentication method, please go to **Commerce shared parameters** > **Identity providers**, for the identity provider issuers with type **Azure Active Directory**, make sure the **Relying parties** and **Server resource IDs** are correctly configured. For more information about detailed configuration steps, see [Update identity providers settings in Commerce headquarters](../cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
