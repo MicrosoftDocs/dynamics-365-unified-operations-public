@@ -8,6 +8,7 @@ ms.search.form: ReqCreatePlanWorkspace, ReqPlanSched
 ms.topic: how-to
 ms.date: 01/03/2023
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

@@ -8,6 +8,7 @@ ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, 
 ms.topic: how-to
 ms.date: 12/08/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
