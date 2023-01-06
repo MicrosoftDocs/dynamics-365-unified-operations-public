@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash management overview
-description: This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce POS and guidance about setting up the cash traceability capability for two-sided transactions.
+description: This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce POS. It also provides guidance about setting up the cash traceability capability for two-sided transactions.
 author: ShalabhjainMSFT
 ms.date: 01/05/2023
 ms.topic: overview
@@ -19,7 +19,7 @@ ms.search.validFrom: 2019-05-21
 
 [!include [banner](includes/banner.md)]
 
-This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce point of sale (POS) and guidance about setting up the cash traceability capability for two-sided transactions.
+This article provides an overview of the cash management capabilities in Microsoft Dynamics 365 Commerce point of sale (POS). It also provides guidance about setting up the cash traceability capability for two-sided transactions.
 
 > [!NOTE]
 > For background information about the cash management capabilities in Commerce, see [Shift and cash drawer management](shift-drawer-management.md).
@@ -36,7 +36,7 @@ Dynamics 365 Commerce provides cash management capabilities in its POS applicati
 To set up cash traceability functionality by configuring the functionality profile for stores, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
-1. Select a functionality profile that is linked to the stores that you want to set up cash traceability functionality for.
+1. Select a functionality profile that's linked to the stores that you want to set up cash traceability functionality for.
 1. In the **Functions** section of the functionality profile, under **Advanced cash management**, set the **Enable cash traceability** option to **Yes**.
 
 > [!NOTE]
@@ -60,7 +60,7 @@ To set up a safe in Commerce headquarters, follow these steps.
 
 Cash management is handled in the following ways when the cash traceability feature is enabled:
 
-- A user who runs a **Declare start amount** operation must enter the source of cash. The user can search for the available safes that are defined in the store, and then select the safe that the cash is being taken out of so that it can be put into the register.
+- A user who runs a **Declare start amount** operation must enter the source of cash. The user can search for the available safes that are defined in the store. They can then select the safe that the cash is being taken out of so that it can be put into the register.
 - A user who runs a **Tender removal** operation is prompted to select from a list of open float entry transactions. If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.
 - A user who runs a **Float entry** operation is prompted to select from a list of open tender removal transactions. If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.
 - A user who runs a **Safe drop** operation is prompted to select the safe where the cash is being dropped.
@@ -137,10 +137,10 @@ The manager reconciles the last safe drop transaction, performs a bank drop, and
 - For all safe-related actions, the user must use the **Manage safe** operation. There's no other way to select the safe that the cash transactions are recorded for. The **Declare start amount**, **Float entry**, **Tender removal**, and **Bank drop** operations must be performed in the context of the **Manage safe** operation.
 - Before the shift that's associated with the safe can be closed, the user must perform the **Tender declaration** operation on the dedicated register for the safe. This operation is the only one that doesn't occur in the context of a safe. Therefore, it isn't available in the **Manage safe** operation. If the same register is used to manage multiple safes, the tender declaration should be the sum of the money in all those safes.
 - The **Declare start amount** operation on the safe isn't automatically reconciled. It must be manually reconciled.
-- The **Declare start amount** operation is available at two levels in the **Manage safe** operation: the shift level and the safe level. To declare the start amount for a safe on the dedicated register for that safe, the user must run the **Declare start amount** operation in the **Manage safe** operation. The **Declare start amount** operation at the shift level can be used if there is any additional money in the cash drawer that's associated with that register.
+- The **Declare start amount** operation is available at two levels in the **Manage safe** operation: the shift level and the safe level. To declare the start amount for a safe on the dedicated register for that safe, the user must run the **Declare start amount** operation in the **Manage safe** operation. The **Declare start amount** operation at the shift level can be used if there's any additional money in the cash drawer that's associated with that register.
 - To transfer money in either direction between a safe and a shift, the shift must be opened on the register that's sending or receiving the money. In the preceding example for [safe management](#safe-management), shift A must be open before the money can be transferred from the safe to that shift.
 - If the cash traceability feature is enabled, the user can do a safe drop by selecting a single tender type in one transaction. If the cash drawer includes multiple tenders (for example, cash in US dollars \[USD\], cash in Canadian dollars \[CAD\], and check), the user must perform one safe drop per tender type.
-- The system supports posting the safe drops and bank drops into the appropriate general ledger (GL) accounts, as defined on the **Tender** page in Commerce headquarters (**Store \> Payment methods \> Tender**). When the **Bank drop** operation is used to move money from the safe to the bank, the money is reduced from the safe drop GL and increased in the bank drop GL. Although amounts that are dropped into the safe are recorded in the safe drop GL, money that is moved out of the safe doesn't update this GL. Other cash management transactions (for example, **Float entry** and **Tender removal**) aren't recorded in any specific GL.
+- The system supports posting the safe drops and bank drops into the appropriate general ledger (GL) accounts, as defined on the **Tender** page in Commerce headquarters (**Store \> Payment methods \> Tender**). When the **Bank drop** operation is used to move money from the safe to the bank, the money is reduced from the safe drop GL and increased in the bank drop GL. Although amounts that are dropped into the safe are recorded in the safe drop GL, money that's moved out of the safe doesn't update this GL. Other cash management transactions (for example, **Float entry** and **Tender removal**) aren't recorded in any specific GL.
 
 ## Financial reconciliation in store
 
