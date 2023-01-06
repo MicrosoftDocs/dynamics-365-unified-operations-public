@@ -37,7 +37,7 @@ Master scheduling plans typically involve the short term, which can be anywhere 
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. Select the links in the [Quick links](#quick-links) section to learn how to use the module.
+The following learning map shows the major concepts and tasks that make up the framework of the Master planning module.
 
 [![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
