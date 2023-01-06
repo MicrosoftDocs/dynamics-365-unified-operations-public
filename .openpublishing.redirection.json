@@ -19818,6 +19818,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/supply-chain/master-planning/master-planning-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/master-plans",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/pim/tasks/create-new-product.md",
       "redirect_url": "/dynamics365/supply-chain/pim/product-information",
       "redirect_document_id": "false"
