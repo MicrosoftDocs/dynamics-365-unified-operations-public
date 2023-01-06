@@ -416,7 +416,7 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management improvements
+          - name: Cash management overview
             href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
