@@ -255,6 +255,10 @@ This means that if there is load on a specific resource, the load is considered 
 
 The above logic is complicated, as this is the same for each type of "property" so using operations scheduling with finite capacity requires a significant amount of data to be loaded.
 
+## Improve MRP performance
+
+The following tech conference video provides several tips on how to improve master planning performance when you're using MRP with the deprecated master planning engine: [Help! MRP is slow!](https://www.youtube.com/watch?v=RLXybx20B5o).
+
 ## Viewing scheduling engine input and output
 
 To get specific details of the input and output of the scheduling process,  enable logging by going to **Organization administration \> Setup \> Scheduling \> Scheduling tracing cockpit**.

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
@@ -62,7 +62,7 @@ To create a warranty item in Commerce, follow these steps.
 1. Select **New** to create a warranty item.
 1. In the **New product** dialog box, in the **Product type** field, select **Service**.
 1. In the **Product subtype** field, select **Product**.
-1. In the **Product service type** field, select **Service**.
+1. In the **Product service type** field, select **Warranty**.
 1. In the **Product name** field, enter the product name.
 1. In the **Retail category** field, select a value in the drop-down dialog box, and then select **OK**.
 1. In the **Product number**, enter the product number.
