@@ -115,7 +115,7 @@ Follow these steps to copy Human Resources custom field metadata that's created 
     4. Open a new browser tab, and go to the Power Apps Maker portal (<https://make.powerapps.com>).
     5. In the upper-right corner, on the **Environment** drop-down menu, select the name of the Dataverse instance that you made a note of in step 3.
 
-        ![Environment menu.](media/environment-name10.png)
+        ![Environment menu.](media/environment-name10.png) 
 
     6. In the left navigation, select **Solutions**.
     7. On the **Solutions** page, select **New solution**.
@@ -140,7 +140,7 @@ Follow these steps to copy Human Resources custom field metadata that's created 
 3. Export the solution as managed.
 
     1. Select the checkbox for the solution that you created.
-    2. Select **Next**.
+    2. Select **Next**. 
     3. **Managed** is selected by default. Select **Export** to start the export process.
     4. After the export process is completed, select **Download**. The solution should be saved to the browser's default download folder.
 
