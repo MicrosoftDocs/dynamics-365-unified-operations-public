@@ -55,7 +55,7 @@ Install the Invoice capture solution:
 
 1. Go to AppSource, and select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you will see the solution installed in the selected environment in Power Apps.
 
-To complete the setup, follow these steps:
+To complete the setup, follow these steps:  
 
 1. Download the [assistant solution](https://github.com/InvoiceCapture/InstallationTools/releases/download/latest/msdyn_InvoiceCaptureIntallationTools.zip) to set up the following details:
 
