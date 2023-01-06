@@ -8,6 +8,7 @@ ms.search.form: MpsMultiSourcePolicy, MpsMultiSourcePolicyAssignment
 ms.topic: how-to
 ms.date: 12/02/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

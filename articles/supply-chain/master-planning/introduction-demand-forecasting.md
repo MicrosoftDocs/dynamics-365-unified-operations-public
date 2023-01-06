@@ -4,7 +4,7 @@ description: Demand forecasting is used to predict independent demand from sales
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: ReqDemPlanCreateForecastDialog
 ms.topic: overview
 ms.date: 01/06/2023
 audience: Application User

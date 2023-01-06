@@ -4,7 +4,7 @@ description: This article provides information about the coverage settings that 
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 ms.topic: how-to
 ms.date: 01/06/2023
 audience: Application User
