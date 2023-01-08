@@ -38,7 +38,7 @@ The account management landing page uses the following modules:
 
 ### Order history page
 
-The order history page uses the order history module to show all the recent orders that the user has placed.
+The order history page uses the order history module to show all the recent orders that the user has placed. The orders are retrieved for a period of time, that is defined for "Days of customer history" configuration in the online functionality profile.
 
 ### Order details page
 
