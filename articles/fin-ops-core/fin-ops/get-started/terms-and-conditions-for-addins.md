@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Terms and conditions for add-ins to Microsoft Dynamics 365
-description: This article provides terms and conditions for add-ins to Microsoft Dynamics 365 applications.
+title: Terms and conditions for add-ins to Microsoft Dynamics 365 finance and operations apps
+description: This article provides terms and conditions for add-ins to Microsoft Dynamics 365 finance and operations apps.
 author: ChristianRytt
-ms.date: 04/20/2020
+ms.date: 01/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,11 +25,11 @@ ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.7
 ---
 
-# Terms and conditions for add-ins to Microsoft Dynamics 365 applications
+# Terms and conditions for add-ins to Microsoft Dynamics 365 finance and operations apps
 
 [!include[banner](../includes/banner.md)]
 
-Add-ins are features of Microsoft Dynamics 365 applications. Your use of Dynamics 365 applications and related add-ins that are generally available are governed by the terms and conditions of the agreement under which you obtained this service.
+Add-ins are features of Microsoft Dynamics 365 finance and operations apps. Use of finance and operations and related add-ins that are generally available are governed by the terms and conditions of the agreement under which you obtained this service.
 
 - For customers who purchase through a volume licensing agreement, such as an Enterprise Agreement, your use is governed by the volume licensing agreement under which you purchased the services, which incorporates the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). You can obtain a copy of your volume licensing agreement by contacting your Microsoft account representative or volume licensing.
 
