@@ -31,7 +31,7 @@ A new change tracking option has been added to finance and operations apps. This
 
 Before you create or update data entities so that you can use them with row version change tracking, verify that all tables that are used as data sources for those entities allow for row version change tracking.
 
-For information about how to create a new entity, see [Build and consume data entities](/dev-itpro/data-entities/build-consuming-data-entities.md).
+For information about how to create a new entity, see [Build and consume data entities](build-consuming-data-entities.md).
 
 ## Enable row version change tracking for tables
 

@@ -40,8 +40,8 @@ The Project migration manager lets you move your Lifecycle Services project from
 
 Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
 
-> [!NOTE]
-    > During the preview, new geographies will be supported over time starting with "EU". For a full list of geographies that will become available, visit [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo). 
+>[!NOTE]
+>During the preview, new geographies will be supported over time starting with "EU". For a full list of geographies that will become available, visit [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo). 
 
 There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations will be described later in this article.
 

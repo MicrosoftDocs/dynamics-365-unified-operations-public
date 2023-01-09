@@ -278,7 +278,7 @@ The following countries are supported by Adyen for card not present transactions
 | Taiwan |
 | Tanzania |
 | Thailand |
-| Turkey |
+| Türkiye |
 | United Arab Emirates (UAE) |
 | United Kingdom |
 | United States of America including Puerto Rico  |

@@ -70,7 +70,7 @@ Here are some of the consolidation scenarios that Consolidate online supports:
 - Consolidations that involve multiple reporting currencies
 
 ## Legal entity setup
-Before you process a consolidation, you must set up the legal entity. You can run consolidation as many times as you require, and all data will be translated from the source company's accounting currency to the currency that is defined for the consolidation company. Therefore, for the following organizational structure, if you must translate all North American companies first to US dollars (USD) and then to euros (EUR), the currency of the parent company, you must have at least two consolidation companies.
+Before you process a consolidation, you must set up the legal entity. You can run consolidation as many times as you require, and all data will be translated from the source company's accounting currency or reporting currency to the currency that is defined for the consolidation company. Therefore, for the following organizational structure, if you must translate all North American companies first to US dollars (USD) and then to euros (EUR), the currency of the parent company, you must have at least two consolidation companies.
 
 ![Organizational structure.](./media/organizational-structure.png "Organizational structure")
 

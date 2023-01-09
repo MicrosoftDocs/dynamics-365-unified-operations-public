@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: OperationalInsightsProvisioningForm
 ms.topic: how-to
 ms.date: 10/18/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

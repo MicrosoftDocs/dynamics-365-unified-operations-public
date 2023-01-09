@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp   
 ms.topic: how-to
 ms.date: 11/10/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

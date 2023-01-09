@@ -6,7 +6,9 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: MpsMultiSourcePolicy, MpsMultiSourcePolicyAssignment
 ms.topic: how-to
-ms.date: 11/09/2022
+ms.date: 12/02/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
@@ -159,6 +161,11 @@ The system uses the following rules to select the vendor for a new planned order
 
     - The minimum, multiple, and maximum values that are defined in the default order settings will be respected if they're specified.
     - If the multisource policy includes a relevant minimum order quantity for the vendor, that minimum quantity will also be applied. Therefore, the higher of the two minimum order values (the default order settings and the minimum vendor quantity) will take effect.
+
+> [!IMPORTANT]
+> Vendor calendars aren't taken into account when you use multi-vendor sourcing. In some cases, this may result in an order arriving later than it could if you chose a vendor manually.
+>
+> For example, suppose it's Monday and you have demand for Wednesday for an item provided by two vendors. One vendor is open all days while the second vendor is only open on Fridays. If the sourcing algorithm determines that the second vendor should supply (based on the target percentages), then this vendor will be chosen even though the demand won't arrive until Friday. Therefore, you may want to assign a vendor manually when fulfilling short-term demand.
 
 ### Example: How vendors are selected based on a multisource policy
 
