@@ -4,7 +4,7 @@ description: This article describes Asset Management functionality in Dynamics 3
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form:
 ms.topic: overview
 ms.date: 01/09/2023
 audience: Application User
