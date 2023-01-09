@@ -6,40 +6,10 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: MM/DD/YYYY
+ms.date: 01/09/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
-
-
-
-
-# required metadata
-
-title: Schedule maintenance plans
-description: This article explains schedule maintenance plans in Asset Management.
-author: johanhoffmann
-ms.date: 11/30/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: johanho
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Schedule maintenance plans
