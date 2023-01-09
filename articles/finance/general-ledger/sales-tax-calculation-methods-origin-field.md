@@ -4,7 +4,7 @@
 title: Sales tax calculation methods in the Origin field
 description: This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.
 author: kailiang
-ms.date: 10/24/2022
+ms.date: 01/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -81,7 +81,7 @@ When you select Amount per unit in the Origin field, sales tax is calculated as 
 Sales tax code is set up as: USD 1.20 per unit = box On a sales invoice line 25 boxes of an item are sold Sales tax is calculated as 25 x 1.20 = 30.00
 
 | **Note**                                                                                                                                                                                                 |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------|
 | If the transaction is entered in different unit than the unit specified on the sales tax code, it is converted automatically based on the unit conversions that are set up in the Unit conversions page. |
 
 ###  Amount per unit, additional option
@@ -123,9 +123,10 @@ Document / journal is set to Amounts include sales tax = Yes Transaction line am
 Document / journal is set to Amounts include sales tax = No Transaction line amount: 10.00 Tax rate: 25% Sales tax: (Transaction line amount x tax rate) / (100 - tax rate) (10.00 x 25%) / (100% - 25%) = 3.33 Tax base amount (origin amount): Transaction line amount = 10.00
 
 ## Percentage of margin
-The Percentage of margin calculation method is introduced by the [tax calculation service](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
-### Example
+The Percentage of margin calculation method is introduced by the [tax calculation service](./localizations/global-tax-calcuation-service-overview) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
 
+
+### Example
 The tax rate is 20%. The invoice line shows a quantity of 2 items at 329.00 each. The return cost price of each item is 318.00. Net amount: (2 x 329.00) = 658.00 Sales tax: (658.00 - (2 x 318.00))  x 20% = 4.40
 
 ## Additional resources
