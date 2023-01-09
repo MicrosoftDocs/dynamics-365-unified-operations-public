@@ -1,8 +1,8 @@
 ---
 title: Supported data source types for ER components
-description: This article explains what kind of data sources are supported in the Electronic reporting framework.
+description: This article explains the data sources that are supported in the Electronic reporting framework.
 author: NickSelin
-ms.date: 12/26/2022
+ms.date: 01/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 7.0.0
-ms.custom: 
+ms.custom: bap-template
 ms.assetid: 
 ms.search.form: ERSolutionTable, EROperationDesigner, ERModelMappingDesigner, ERExpressionDesignerFormula
 ---
@@ -21,7 +21,7 @@ ms.search.form: ERSolutionTable, EROperationDesigner, ERModelMappingDesigner, ER
 
 [!include[banner](../includes/banner.md)]
 
-You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design an ER solution that you can run in Dynamics 365 Finance application for [generation](er-overview-components.md#format-components-for-outgoing-electronic-documents) of an outbound business document or for [parsing](er-overview-components.md#format-components-for-incoming-electronic-documents) an inbound business document. To fill in a generated document by application data or to update application database by using data from an inbound business document, you must specify in your ER solution how this data is fetched from the appropriate data storage, transformed in accordance to the layout of a processed document, formatted based on specific requirements, etc. For specifying data fetching, transformation, and formatting, you can use various types of ER data sources. The following ER data source types are currently supported for Finance:
+You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design an ER solution that you can run in the Dynamics 365 Finance application to [generate](er-overview-components.md#format-components-for-outgoing-electronic-documents) an outbound business document or to [parse](er-overview-components.md#format-components-for-incoming-electronic-documents) an inbound business document. To fill in a generated document with application data or to update the application database using data from an inbound business document, specify in your ER solution how this data is fetched from the appropriate data storage, transformed in accordance to the layout of a processed document, and formatted based on specific requirements. To specify data fetching, transformation, and formatting, use various types of ER data sources. The following ER data source types are currently supported for Finance:
 
 -   [Data model](#data-model-group)
     -   [Data model](#data-model)
@@ -57,45 +57,45 @@ You can use the [Electronic reporting (ER)](general-electronic-reporting.md) fra
     -   [Endless list](#endless-list)
     -   [User input parameter](#user-input-parameter)
 
-This article provides a summary of these ER data source types.
+This article provides a summary of the ER data source types.
 
 ## Add a new data source
 
-You can configure ER data sources in the ER [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components of your ER solution for data fetching, transformation, and formatting. Then, you can bind configured data sources with data consumers - a [data model](er-overview-components.md#data-model-component) of the designed ER model mapping or format elements of the designed ER format.
+You can configure ER data sources in the ER [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components of your ER solution for data fetching, transformation, and formatting. Then you can bind configured data sources with data consumers. Data consumers include a [data model](er-overview-components.md#data-model-component) of the designed ER model mapping or format elements of the designed ER format.
 
-Select more convenient grouping mode to quickly discover a data source that you want to review or modify.
+Select a more convenient grouping mode to quickly discover a data source that you want to review or modify.
 
--   When the **Group view** toggle of the **Model mapping designer** or **Format designer** page is on, the configured data sources are grouped by the data source type.
+- When the **Group view** toggle of the **Model mapping designer** or **Format designer** page is on, the configured data sources are grouped by the data source type.
 
     ![Toggle the Group view option on the Format designer page.](./media/er-data-sources-toggle-group-view2.png)
 
--   When this toggle is off, the added data sources are sorted in alphabetic order.
+- When this toggle is off, the added data sources are sorted in alphabetic order.
     
     ![Toggle the Group view option off the Format designer page.](./media/er-data-sources-toggle-group-view1.png)
 
-You can filter the list of configured data sources selecting the more appropriate view mode on the **Model mapping designer** or **Format designer** page:
+You can filter the list of configured data sources by selecting the more appropriate view mode on the **Model mapping designer** or **Format designer** page:
 
--   Select the **Show all** option to observe all configured data sources.
--   Select **Show mapped only** option to leave visible the only data sources that are explicitly used in configured bindings.
--   Select **Show not-mapped only** option to leave visible the only data sources that are not used in configured bindings.
+- Select **Show all** to observe all configured data sources.
+- Select **Show mapped only** to list only the data sources that are explicitly used in configured bindings.
+- Select **Show not-mapped only** to list only the data sources that aren't used in configured bindings.
 
     ![Select the Show mapped only option on the Format designer page.](./media/er-data-sources-select-mapped-only-view.png)
 
 ### Model mapping designer
 
-When you want to add a new data source, choose the desired data source type on the left **DATA SOURCE TYPES** pane of the **Model mapping designer** page that offers the tree of supported ER data sources.
+When you want to add a new data source, select the desired data source type in the left **Data Source Types** pane of the **Model mapping designer** page that offers the tree of supported ER data sources.
 
-The center **DATA SOURCES** pane of this page presents data sources that have been already added to the current model mapping. Use the **Add root** and **Add** options of this pane to initiate a new data source entry.
+The center **Data sources** pane of this page presents data sources that have already been added to the current model mapping. Select **Add root** and **Add** to initiate a new data source entry.
 
--   To add a new top level data source, select the **Add root** option.
--   To add a new child data source, select an existing data source in the **DATA SOURCES** pane as the parent node for the adding data source, and select the **Add** option.
+- To add a new top level data source, select **Add root**.
+- To add a new child data source, select an existing data source in the **Data sources** pane as the parent node for the adding data source, and then select **Add**.
 
 The following illustration shows the entry of a new child data source of the ***Enumeration*** type.
 
 ![Entry of a new child data source on the Model mapping designer page.](./media/er-data-sources-new-child-ds-entry.gif)
 
 > [!TIP]
-> Use the DATA SOURCE TYPES picker to hide the **DATA SOURCE TYPES** pane and free additional space to enlarge **DATA SOURCES** and **DATA MODEL** panes.
+> Use the Data source types picker to hide the **Data source types** pane and free additional space to enlarge the **Data sources** and **Data model** panes.
 
 ![Hide the DATA SOURCE TYPES pane on the Model mapping designer page.](./media/er-data-sources-hide-ds-pane.gif)
 
@@ -103,42 +103,41 @@ The following illustration shows the entry of a new child data source of the ***
 
 The **Mapping** tab of the **Format designer** page presents data sources that have been already added to the current format.
 
--   To add a new top level data source, select the **Add root** option. Then, on the **Add data source** dialog, select the desired data source type.
--   To add a new child data source, select an existing data source in the **Mapping** tab as the parent node for the adding data source, and select the **Add** option. Then, on the **Add data source** dialog, select the desired data source type.
+- To add a new top level data source, select **Add root**. Then, in the **Add data source** dialog box, select the desired data source type.
+- To add a new child data source, select an existing data source on the **Mapping** tab as the parent node for the adding data source, and select **Add**. Then, in the **Add data source** dialog box, select the desired data source type.
 
-The following illustration shows the entry of a new top level data source of the ***Data model \> Enumeration*** type.
+The following illustration shows the entry of a new top level data source of the ***Data model > Enumeration*** type.
 
 ![Entry of a new top level data source on the Format designer page.](./media/er-data-sources-new-root-ds-entry.gif)
 
 > [!NOTE]
 > Be aware that the following data source types are only offered for entry when the **Show details** toggle of the **Format designer** page is on:
 > 
-> -   Dynamics 365 application (Finance)
->     -   Class
->     -   Object
->     -   Table
->     -   Table records
+>   - Class
+>   - Object
+>   - Table
+>   - Table records
 
 ## Common properties of ER data sources
 
-The described in this section properties can be specified for a data source of any type.
+The properties described in this section can be specified for any type of data source.
 
 ### Name property
 
-Data source names must be unique in the configured ER component. So, the **Name** property is mandatory. Use this property to uniquely identify the added data source in the configured ER component.
+As data source names must be unique in the ER component, the **Name** property is mandatory. Use this property to uniquely identify the added data source in the configured ER component.
 
 ### Label property
 
-The **Label** property is optional. Use this property to specify the alternative data source name. You can use the **Translate** option to specify language dependent text for the label of the editable data source. When the label is [translated](er-design-multilingual-reports.md#entry), the label is presented on the **Model mapping designer** or **Format designer** page in the language that is preferred by the current user.
+The **Label** property is optional. Use this property to specify the alternative data source name. Select **Translate** to specify language dependent text for the label of the editable data source. When the label is [translated](er-design-multilingual-reports.md#entry), the label is presented on the **Model mapping designer** or **Format designer** page in the language that is preferred by the current user.
 
 > [!TIP]
-> Use the **Show name first** toggle of the **Model mapping designer** or **Format designer** page to sort data sources either by name or label.
+> Use the **Show name first** toggle of the **Model mapping designer** or **Format designer** page to sort data sources by name or label.
 
-When this property is specified for a data source that is used to let user fill in a data entry field, the configured label is used as the prompt text of that data entry field. When this property is translated, the prompt text of that data entry field is presented in the language that is preferred by the current user.
+When this property is specified for a data source that's used to let you enter information in a data entry field, the configured label is used as the prompt text of that data entry field. When this property is translated, the prompt text of that data entry field is presented in your preferred language, or the preferred language of the current user.
 
 ### Help property
 
-The **Help** property is optional. Use this property to specify the data source description. You can use the **Translate** option to specify language dependent text for the description of the editable data source. When the description is translated, the description is presented on the bottom of the **Model mapping designer** or **Format designer** page in the language that is preferred by the current user.
+The **Help** property is optional. Use this property to specify the data source description. You can use the **Translate** option to specify language dependent text for the description of the editable data source. When the description is translated, the description is presented on the bottom of the **Model mapping designer** or **Format designer** page in the preferred language.
 
 The following illustration shows the entry of data source properties on the **Format designer** page.
 
@@ -146,7 +145,7 @@ The following illustration shows the entry of data source properties on the **Fo
 
 ## <a name="data-model-group"></a>Data model group
 
-You can configure data sources of different types that represent a data model that has been selected as a base of the editable ER model mapping or ER format component. This section provides a summary of properties that are common for all types of ER data sources that belongs to the **Data model** group.
+You can configure data sources of different types that represent a data model that has been selected as a base of the editable ER model mapping or ER format component. This section provides a summary of properties that are common for all types of ER data sources that belong to the **Data model** group.
 
 ### Model property
 
@@ -164,19 +163,19 @@ The optional **Definition** property points to a single root element of the sele
 The optional **Version** property is used to specify the revision of the data model component of this data source. Expand the **Versions** FastTab of the **Configurations** page for the appropriate data model configurations to review the list of data model revisions that are available in the current Finance instance.
 
 > [!TIP]
-> Keep this property blank to use a data model component from the configuration [version](er-overview-components.md#component-versioning) in the **Draft** status. This will allow you to simultaneously edit you ER model mapping or ER format along with its base data model.
+> Keep this property blank to use a data model component from the configuration [version](er-overview-components.md#component-versioning) in the **Draft** status. This allows you to simultaneously edit you ER model mapping or ER format along with its base data model.
 
 > [!IMPORTANT]
-> Notice that this property must be specified when the status of the editable configuration is changed from **Draft** to **Completed**. Therefore, in case you changed the structure of the draft data model and used these changes in the edited ER model mapping or ER format, change the status of the edited base data model configuration version from **Draft** to **Completed** before you do the same change for the edited configuration version of the ER model mapping or ER format. Otherwise, the [Path not found](er-components-inspections.md#i3) exception will be thrown when you try to complete the draft version of the edited ER model mapping or ER format configuration.
+> This property must be specified when the status of the editable configuration is changed from **Draft** to **Completed**. If you change the structure of the draft data model and use these changes in the edited ER model mapping or ER format, change the status of the edited base data model configuration version from **Draft** to **Completed** before you do the same change for the edited configuration version of the ER model mapping or ER format. Otherwise, the [Path not found](er-components-inspections.md#i3) exception will be thrown when you try to complete the draft version of the edited ER model mapping or ER format configuration.
 
 ### <a name="data-model"></a>Data model
 
-The **Data model** data source represents the ER data model component that is filled in by actual data at runtime upon data consumer requests.
+The **Data model** data source represents the ER data model component that is filled in by actual data at runtime when a data consumer request occurs.
 
 > [!TIP]
-> This data source is automatically added for any ER format component that is created to generate an outbound document.
+> This data source is automatically added for any ER format component that's created to generate an outbound document.
 
-The following illustration shows properties of a data source of the ***Data model*** type on the **Data source properties** dialog.
+The following illustration shows the data source properties of the ***Data model*** type in the **Data source properties** dialog box.
 
 ![Entry of data source properties on the Data source properties dialog.](./media/er-data-sources-ds-data-model-properties.png)
 
@@ -186,13 +185,13 @@ The **Data model enumeration** data source represents the enumeration of the bas
 
 The mandatory **Model enumeration** property points to a data model enumeration of the selected ER data model component to specify what values of the referred ER data model enumeration are used in this data source.
 
-The following illustration shows properties of a data source of the ***Model enumeration*** type on the **Data source properties** dialog.
+The following illustration shows the data source properties of the ***Model enumeration*** type in the **Data source properties** dialog box.
 
 ![Entry of data source properties on the Data source properties dialog.](./media/er-data-sources-ds-data-model-enum-properties.png)
 
 ### <a name="model-enumeration-user-input-parameter"></a>Model enumeration user input parameter
 
-The **Model enumeration user input parameter** data source represents the enumeration of the base data model. Usually, this data source is required when you want user to specify a value of the referred enumeration in the related data entry field in the dialog box at runtime, before execution of an ER format begins.
+The **Model enumeration user input parameter** data source represents the enumeration of the base data model. Usually, this data source is required when you want the value of the referred enumeration specified in the related data entry field in the dialog box at runtime, before the ER format is executed.
 
 The mandatory **Model enumeration** property of **Model enumeration user input parameter** data source points to a data model enumeration of the selected ER data model component to specify what values of the referred ER data model enumeration are returned by this data source.
 
