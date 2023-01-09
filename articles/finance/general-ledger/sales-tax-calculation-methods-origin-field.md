@@ -123,7 +123,7 @@ Document / journal is set to Amounts include sales tax = Yes Transaction line am
 Document / journal is set to Amounts include sales tax = No Transaction line amount: 10.00 Tax rate: 25% Sales tax: (Transaction line amount x tax rate) / (100 - tax rate) (10.00 x 25%) / (100% - 25%) = 3.33 Tax base amount (origin amount): Transaction line amount = 10.00
 
 ## Percentage of margin
-The Percentage of margin calculation method is introduced by the [tax calculation service](/localizations/global-tax-calcuation-service-overview) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
+The Percentage of margin calculation method is introduced by the [tax calculation service](../../localizations/global-tax-calcuation-service-overview.md) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
 
 
 ### Example
