@@ -70,8 +70,8 @@ Given the following sales tax codes:
 
 Net amount: 10.00 DUTY 1: 10.00 x 10% = 1.00 DUTY 2: 1.00 x 20% = 0.20 Gross amount: 10.00 + 1.00 + 0.20 = 11.20 SALESTAX: 11.20 x 25% = 2.80 Total DUTIES and SALESTAX: 1.00 + 0.20 + 2.80 = 4.00 Total amount: 10.00 + 4.00 = 14.00
 
-| **Note**                                                                                                                                                                                                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Note**                                                                 |
+|-----------------------------------------------------------------------------------------------------|
 | Multilevel tax on tax calculations are not possible. A tax cannot be calculated based on a tax which already is calculated based on another tax. Multiple single level tax on tax codes can be calculated on a transaction. |
 
 ## Amount per unit
@@ -123,7 +123,7 @@ Document / journal is set to Amounts include sales tax = Yes Transaction line am
 Document / journal is set to Amounts include sales tax = No Transaction line amount: 10.00 Tax rate: 25% Sales tax: (Transaction line amount x tax rate) / (100 - tax rate) (10.00 x 25%) / (100% - 25%) = 3.33 Tax base amount (origin amount): Transaction line amount = 10.00
 
 ## Percentage of margin
-The Percentage of margin calculation method is introduced by the [tax calculation service](./localizations/global-tax-calcuation-service-overview) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
+The Percentage of margin calculation method is introduced by the [tax calculation service](./localizations/global-tax-calcuation-service-overview.md) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
 
 
 ### Example
