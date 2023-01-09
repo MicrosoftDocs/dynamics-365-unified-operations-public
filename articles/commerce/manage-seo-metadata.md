@@ -28,14 +28,20 @@ SEO metadata for a site can be managed by using site maps and page metadata.
 
 A site map is a machine-readable list, in XML format, of the pages on your website. It's intended to be consumed by search engines, so that they can provide better search results from your site. Site maps can be manually ingested by search engines or published in a robots.txt file.
 
-Dynamics 365 Commerce supports automatic generation of site maps. Site maps are automatically updated when pages are published and unpublished.
+Dynamics 365 Commerce supports either automatic generation of site maps or manual curation. When the automated site map feature is enabled, site maps are automatically updated when pages are published and unpublished.
 
-### Turn on site map generation
+### Option 1: Enable automated site map generation
 
-1. Sign in to the authoring tool.
-1. Under **Sites**, select **Fabrikam** (or the name of your site).
-1. In the navigation pane on the left, select **Site Management**.
-1. Make sure that the **Site maps enabled** option is turned on.
+1. Sign in to the **site builder** authoring toolset.
+1. Under **Sites**, select the name of your site (example: Adventure Works).
+1. In the navigation pane on the left, expand the **Site settings** control at the bottom.
+2. Select the **General** tab.
+3. Set the **Site maps enabled** control to **On**.
+4. Click the **Save and publish** button in the command bar.
+
+> [!NOTE]
+> Once automated site maps are enabled, it will take some time for the initial site map to be written.  This can be monitored in the **[Your site] > Site settings > General > Site map additional data** where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (example: new page or URL published), will trigger an update to the site map file. Once the sitemap is generated, the URL(s)s to the file(s) can be found by navigating to **[Your site] > Site settings > General > Site map URLs**
+
 
 ## Page metadata
 
