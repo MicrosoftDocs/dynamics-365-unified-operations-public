@@ -53,8 +53,8 @@ The tax authority has imposed special duties on an item. The duty amounts are ad
 
 If the net amount is 10.00, then DUTY 1 is 1.00 (10.00 x 10%) and DUTY 2 = 2.00 (10.00 x 20%). The amounts would be as follows: Gross amount: Net amount + DUTY 1 amount + DUTY 2 amount (10.00 + 1.00 + 2.00) = 13.00 SALESTAX = 13.00 x 25% = 3.25 Total DUTIES and SALESTAX: 1.00 + 2.00 + 3.25 = 6.25 Total amount: 10.00 + 6.25 = 16.25
 
-| **Note**                                                                                                                                                                                                                 |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Note**                                                                       |
+|-------------------------------------------------------------------------------------|
 | Only one tax code with Origin = Percentage of gross amount can be used for a transaction. If more than one such tax code is determined for a transaction an error will be displayed that sales tax cannot be calculated. |
 
 
@@ -123,7 +123,7 @@ Document / journal is set to Amounts include sales tax = Yes Transaction line am
 Document / journal is set to Amounts include sales tax = No Transaction line amount: 10.00 Tax rate: 25% Sales tax: (Transaction line amount x tax rate) / (100 - tax rate) (10.00 x 25%) / (100% - 25%) = 3.33 Tax base amount (origin amount): Transaction line amount = 10.00
 
 ## Percentage of margin
-The Percentage of margin calculation method is introduced by the [tax calculation service](../../localizations/global-tax-calcuation-service-overview.md) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
+The Percentage of margin calculation method is introduced by the [tax calculation service](../localizations/global-tax-calcuation-service-overview.md) and is effective only in the tax calculation service. The sales tax is calculated as a percentage of the difference between the sales price and the return cost price.
 
 
 ### Example
