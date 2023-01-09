@@ -2,7 +2,7 @@
 # required metadata
 
 title: Terms and conditions for add-ins to Microsoft Dynamics 365 finance and operations apps
-description: This article provides terms and conditions for add-ins to Microsoft Dynamics 365 finance and operations apps.
+description: This article provides terms and conditions for add-ins to finance and operations.
 author: ChristianRytt
 ms.date: 01/09/2023
 ms.topic: article
