@@ -2427,7 +2427,7 @@
           items:
           - name: Dimension-based product configuration overview
             href: pim/dimension-based-product-configuration.md
-          - name: Product dimension
+          - name: Product dimensions
             href: pim/product-dimensions.md
           - name: Create a dimension-based product master
             href: pim/tasks/create-dimension-based-product-master.md
