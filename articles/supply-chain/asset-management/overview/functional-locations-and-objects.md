@@ -22,7 +22,6 @@ Asset Management is integrated seamlessly with several modules for Supply Chain 
 
 [<img src="media/01-overview-image.png" alt="How Asset Management interfaces with other modules." title="How Asset Management interfaces with other modules" width="520" />](media/01-overview-image.png)
 
-
 Asset Management lets you efficiently manage and perform all tasks that are related to managing and servicing many types of equipment in your company. This equipment includes machines, production equipment, and vehicles. Asset Management also supports solutions across numerous industries.
 
 The following illustration shows an overview of the main functionality that is covered by Asset Management.
