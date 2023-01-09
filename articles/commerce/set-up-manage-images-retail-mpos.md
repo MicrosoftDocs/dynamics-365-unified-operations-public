@@ -186,10 +186,13 @@ The product images that must be used in Offline mode can be set up by uploading 
 3. Click **Edit**, and then click the arrow in the right corner to show the right pane.
 4. On the **Product image** FastTab, click **Change image**, and upload the physical image to use for the selected product in Offline mode.
 5. Save and close the page.
-6. While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.
+6. While MPOS is in Online mode, run the Products (1040) job in HQ, to make sure that the data is sent at least one time to the offline database.
 7. Put MPOS into Offline mode. You should see the image that you uploaded for the specific product in HQ.
 
     [![Product image in Offline mode.](./media/offline1.png)](./media/offline1.png)
+    
+> [!NOTE]
+> Offline image support is only available for Product images
 
 ### Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS
 
