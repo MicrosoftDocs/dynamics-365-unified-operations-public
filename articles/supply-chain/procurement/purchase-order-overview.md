@@ -6,7 +6,7 @@ ms.author: gfedorova
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 ms.topic: overview
-ms.date: -1/09/2023
+ms.date: 01/09/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
