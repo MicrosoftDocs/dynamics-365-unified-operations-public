@@ -16,8 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-
-Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management. Asset Management integrates seamlessly with several finance and operations apps.
+Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management. Asset Management integrates seamlessly with several other finance and operations apps.
 
 The following illustration shows the interfaces between Asset Management and other finance and operations apps.
 
