@@ -80,7 +80,7 @@ When you select Amount per unit in the Origin field, sales tax is calculated as 
 
 Sales tax code is set up as: USD 1.20 per unit = box On a sales invoice line 25 boxes of an item are sold Sales tax is calculated as 25 x 1.20 = 30.00
 
-| **Note**                                                                                                                                                                                                 |
+| **Note**                                  |
 |-------------------------------------------------------------------------|
 | If the transaction is entered in different unit than the unit specified on the sales tax code, it is converted automatically based on the unit conversions that are set up in the Unit conversions page. |
 
