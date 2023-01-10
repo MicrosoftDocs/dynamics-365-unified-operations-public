@@ -7,8 +7,9 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
 ms.date: 01/10/2023
-ms.custom: bap-template
 audience: IT Pro
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Use Customer Lockbox to manage secure access to customer data
