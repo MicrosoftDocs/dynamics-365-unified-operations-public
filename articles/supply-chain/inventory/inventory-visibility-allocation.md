@@ -427,7 +427,7 @@ Follow these steps to create an allocation from the **Allocation** page of the I
 
 ### Consume an allocation
 
-Select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details when creating the allocation.
+Select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details when you create the allocation.
 
 ### Reallocate an allocation
 
