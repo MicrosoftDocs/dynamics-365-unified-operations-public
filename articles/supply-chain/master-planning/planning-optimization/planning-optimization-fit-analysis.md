@@ -72,7 +72,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | 2022 release wave 2 |
 | Production | BOM/formula lines with negative quantity: *\#* | This feature is pending. BOM and formula lines that have negative quantity will be included with a quantity of 0 (zero) and a warning will be issued when Planning Optimization is enabled. Update master data to avoid warnings. | 2022 release wave 2 |
 | Production | BOM/formula lines with resource consumption: *\#* | This feature is now supported. | Supported|
-| Production | BOM/formula lines with step consumption: *\#* | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | 2022 release wave 2 |
+| Production | BOM/formula lines with step consumption: *\#* | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | Future wave |
 | Production | BOMs with constant scrap or variable scrap defined: *\#* | This feature is pending. Currently, constant scrap and variable scrap that are defined on BOMs are ignored when Planning Optimization is enabled. | 2022 release wave 2 |
 | Production | BOMs with subcontracting: *\#* | This feature is now supported. | Supported |
 | Production | BOMs without a site: *\#* | This feature is now supported. For additional information, see [Production planning](production-planning.md) | Supported |
