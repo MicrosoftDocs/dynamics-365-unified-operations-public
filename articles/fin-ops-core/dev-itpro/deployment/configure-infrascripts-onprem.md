@@ -263,7 +263,7 @@ Currently only, a single database needs to be restored from a backup when creati
 
 #### FileShares
 
-The fileshares have default share names, if you need to update the name of the share you can update the **name** field.
+The fileshares have default share names, if you need to update the name of the share you can update the **name** field. This is important if the same file server will host the shares for multiple environments. 
 
 ```xml
 <FileShare refName="agent" name="D365Agent" disabled="false">
@@ -273,7 +273,7 @@ The fileshares have default share names, if you need to update the name of the s
 </FileShare>
 ```
 
-By default, fileshares will be created in the C:\Shares directory, however if you want to override that location you can do so by specifying the full path to the folder that you would like the shares to be created in.
+By default, file shares will be created in the C:\Shares directory, however if you want to override that location you can do so by specifying the full path to the folder that you would like the shares to be created in. If you are using the scripts to create the file shares, then do not fill out the LocalPath. Only fill out the LocalPath with the full path to the file share folder if the share was created without the scripts.
 
 ```xml
 <FileShare refName="agent" name="agent" disabled="false">
@@ -291,6 +291,102 @@ In case that you don't want one of the scripts to create/configure the fileshare
     <BasePath></BasePath>
     <LocalPath></LocalPath>
 </FileShare>
+```
+
+#### ServiceFabricCluster
+
+The ClusterName is only used locally to define the name of the Service Fabric cluster. This can be customized as you wish.
+
+```xml
+<ClusterName>Dynamics365Operations</ClusterName>
+```
+
+The Service Fabric Cluster requires multiple NodeTypes to be defined. A NodeType definition will look like this. Do not modify the name, namePrefix or purpose fields as they are pre-configured for the NodeType already. You should only modify the disabled or primary fields in certain situations.
+
+If you are not going to be using the specified node type you can set the disabled field to true. For example, if you want to have separate BatchOnly or InteractiveOnly nodes you would disable the AOSNodeType by setting disabled to true and enable the BatchOnlyAOSNodeType and InteractiveOnlyAOSNodeType by setting disabled to false.
+
+```xml
+<NodeType name="AOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="false">
+  <VMList>
+    <VM name="aos1" ipAddress="10.179.108.12" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+    <VM name="aos2" ipAddress="10.179.108.13" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+    <VM name="aos3" ipAddress="10.179.108.14" faultDomain="fd:/fd2" updateDomain="ud2" hasSSIS="false" />
+  </VMList>
+</NodeType>
+<NodeType name="BatchOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="true">
+  <VMList>
+    <VM name="batchaos1" ipAddress="10.179.108.15" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+    <VM name="batchaos2" ipAddress="10.179.108.16" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+    <VM name="batchaos3" ipAddress="10.179.108.17" faultDomain="fd:/fd2" updateDomain="ud2" hasSSIS="false" />
+  </VMList>
+</NodeType>
+<NodeType name="InteractiveOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="true">
+  <VMList>
+    <VM name="interactiveaos1" ipAddress="10.179.108.18" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+    <VM name="interactiveaos2" ipAddress="10.179.108.19" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+  </VMList>
+</NodeType>
+```
+
+If you want to change which node type will contain the Service Fabric system services, you can do so by setting the primary field to true. Keep in mind that by default the primary node type is set for the OrchestratorType, so if you are changing it to a different node type make sure you also update the primary field for OrchestratorType. You should only change the primary node type if theres a different node type that has more nodes assigned to it and can help you raise the reliability tier of your cluster.
+
+```xml
+<NodeType name="AOSNodeType" primary="true" namePrefix="AOS" purpose="AOS" disabled="false">
+  <VMList>
+    <VM name="aos1" ipAddress="10.179.108.12" faultDomain="fd:/fd0" updateDomain="ud0" hasSSIS="false" />
+    <VM name="aos2" ipAddress="10.179.108.13" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+    <VM name="aos3" ipAddress="10.179.108.14" faultDomain="fd:/fd2" updateDomain="ud2" hasSSIS="false" />
+    <VM name="aos4" ipAddress="10.179.108.15" faultDomain="fd:/fd0" updateDomain="ud1" hasSSIS="false" />
+    <VM name="aos5" ipAddress="10.179.108.16" faultDomain="fd:/fd1" updateDomain="ud2" hasSSIS="false" />
+  </VMList>
+</NodeType>
+<NodeType name="OrchestratorType" primary="false" namePrefix="Orch" purpose="Orchestrator" disabled="false">
+  <VMList>
+    <VM name="orch1" ipAddress="10.179.108.15" faultDomain="fd:/fd0" updateDomain="ud0" />
+    <VM name="orch2" ipAddress="10.179.108.16" faultDomain="fd:/fd1" updateDomain="ud1" />
+    <VM name="orch3" ipAddress="10.179.108.17" faultDomain="fd:/fd2" updateDomain="ud2" />
+  </VMList>
+</NodeType>
+```
+
+Each node type has a list of machines that belong to that node type. A machine is defined in the following way. It has the name which is the name of the machine in the domain. It has the ipAddress which is the static ip of the machine. It has a fault domain and an upgrade domain.
+
+A fault domain is a set of hardware components that shares a single point of failure. For example a hardware host can be considered a fault domain. But it could also be a set of hardware hosts that are connected to a single switch/router. In that scenario, the switch/router would be your single point of failure and anything connected to that switch/router is a single fault domain. In Standalone Service Fabric clusters they don't play that much of a role since you control the underlying infrastructure. However, in cloud it is an important concept. It is helpful to define it in Service Fabric to know how your VMs are distributed/spread out. Upgrade domains actually plays a role when there is a change to the cluster (if there is a cluster configuration change or a cluster code upgrade). In that case, the change will be applied to one upgrade domain at a time. As such, you don't want to set all of your AOS nodes in the same upgrade domain as then if there is a change in your cluster all of your AOS nodes will go down at the same time.
+
+Finally, it may also have the hasSSIS field which is used to indicate that SSIS is installed on that node. The hasSSIS field is used for 10.0.32 and later base deployments to help pinpoint where the data management framework service will be placed in case that a dedicated node type is not used.
+
+```xml
+<VM name="reportbi1" ipAddress="10.179.108.10" faultDomain="fd:/fd1" updateDomain="ud1" hasSSIS="false" />
+```
+
+The **ServiceFabricSettings** section allows customizing several Service Fabric settings. 
+
+We only define the ones that are explicitly required for deployments. For information on what each setting does refer to the following article: [Customize Service Fabric cluster settings](/azure/service-fabric/service-fabric-cluster-fabric-settings).
+
+```xml
+<ServiceFabricSettings>
+  <Setting name="Setup" disabled="false">
+    <Parameters>
+      <Parameter name="FabricDataRoot">C:\ProgramData\SF</Parameter>
+      <Parameter name="FabricLogRoot">C:\ProgramData\SF\Log</Parameter>
+    </Parameters>
+  </Setting>
+  <Setting name="PlacementAndLoadBalancing" disabled="false">
+    <Parameters>
+      <Parameter name="NodeTaggingEnabled">true</Parameter>
+    </Parameters>
+  </Setting>
+</ServiceFabricSettings>
+```
+
+If you would like to customize your cluster, you can create additional settings in the template so that they get auto populated when the cluster configuration is created/updated. For example, if you want to enable server restarts from Service Fabric you can enable it using the **EnableRestartManagement** parameter.
+
+```xml
+<Setting name="FabricHost" disabled="false">
+  <Parameters>
+    <Parameter name="EnableRestartManagement">true</Parameter>
+  </Parameters>
+</Setting>
 ```
 
 #### SQLCluster
@@ -575,7 +671,7 @@ Contoso corporation has a file server with a single node, but will ensure that t
 
 To be able to correctly identify the cluster they are connected to Contoso coporation has updated the **ClusterName** to reflect that this is their production cluster.
 
-Contoso corporation has observed that they have resource heavy batch jobs that run during normal operation hours. Since they don't want their users to be impacted they have chosen to split batch and interactive sessions into separate nodes. To accomplish this they have added the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types and set the disabled field for the **AOSNodeType** to true.
+Contoso corporation has observed that they have resource heavy batch jobs that run during normal operation hours. Since they don't want their users to be impacted they have chosen to split batch and interactive sessions into separate nodes. To accomplish this they have set the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types disabled field to false and set the disabled field for the **AOSNodeType** to true.
 
 Foreach machine that belongs to a nodetype they have filled in the VM name, the ip address of the VM as well as the fault domain and update domain.
 
