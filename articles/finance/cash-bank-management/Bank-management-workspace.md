@@ -51,8 +51,8 @@ Information about when the data was last updated appears at the top of the chart
 
 > [!NOTE] 
 > Bank account balance and trial balance of a Main Account associated to the bank will not be the same in all scenarios. Trial balance of a Main Account and a Bank account will match when both conditions are satisfied:
-1) The Main Account is only set for one bank account
-2) The posting type of all related Main Account transactions is Bank
+>1. The Main Account is only set for one bank account
+>2. The posting type of all related Main Account transactions is Bank
 
 ### Related information
 
