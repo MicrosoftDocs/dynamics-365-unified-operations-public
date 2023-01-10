@@ -64,11 +64,11 @@ ms.dyn365.ops.version:
 
 According to the output from the script execution you may have to do additional actions:
 
-    - If the script returns an error message similar to: The file ConfigTemplate.xml does not have a schema version available. In this case, your existing configuration file did not have a tracked schema version and has to be migrated manually. You can do this by manually filling out the new version of the template with the details from your existing template.
+- If the script returns an error message similar to: The file ConfigTemplate.xml does not have a schema version available. In this case, your existing configuration file did not have a tracked schema version and has to be migrated manually. You can do this by manually filling out the new version of the template with the details from your existing template.
 
-    - If the script returns an error message similar to: There is no defined upgrade path from 1.4 to 1.5. In this case your existing configuration file is too old and did not have an automated schema migration implemented and has to be migrated manually. You can do this by manually filling out the new version of the template with the details from your existing template.
+- If the script returns an error message similar to: There is no defined upgrade path from 1.4 to 1.5. In this case your existing configuration file is too old and did not have an automated schema migration implemented and has to be migrated manually. You can do this by manually filling out the new version of the template with the details from your existing template.
 
-    - If the script succeeds it will output a text similar to: The schema has been successfully upgraded from version 1.8 to version 1.9. After this text, there will be some additional output that indicates what has been done. If you need to fill in additional information this will be mentioned in the output. For example, when update from schema 1.8 to 1.9 you will see this in the output: A new gmsa account has been added, please fill out the details for it. In this case, a new gmsa account has been added and you need to fill out the details for it as well as create it.
+- If the script succeeds it will output a text similar to: The schema has been successfully upgraded from version 1.8 to version 1.9. After this text, there will be some additional output that indicates what has been done. If you need to fill in additional information this will be mentioned in the output. For example, when update from schema 1.8 to 1.9 you will see this in the output: A new gmsa account has been added, please fill out the details for it. In this case, a new gmsa account has been added and you need to fill out the details for it as well as create it.
 
 > [!NOTE]
 > Only newer versions of the scripts (version 2.14.0 and later) that introduce changes to the schema of the configuration file will include logic that migrates the configuration file to the new schema.

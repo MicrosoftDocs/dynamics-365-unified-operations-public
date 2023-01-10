@@ -398,12 +398,6 @@
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
             href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: Infrastructure Scripts
-          items:
-          - name: Obtain the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
-            href: deployment/obtain-infrascripts-onprem.md
-          - name: Configure the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
-            href: deployment/configure-infrascripts-onprem.md
         - name: Environment operations
           items:
           - name: Apply updates to an on-premises deployment
@@ -442,6 +436,12 @@
             href: deployment/onprem-upgrade-os.md
           - name: Upgrade or replace the SQL Server instance of on-premises environments
             href: deployment/onprem-upgrade-sqlserver.md
+        - name: Infrastructure Scripts
+          items:
+          - name: Obtain the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
+            href: deployment/obtain-infrascripts-onprem.md
+          - name: Configure the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
+            href: deployment/configure-infrascripts-onprem.md
         - name: Local agent
           items:
           - name: AD FS Microsoft 365 compatibility
