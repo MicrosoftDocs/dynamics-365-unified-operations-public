@@ -3,7 +3,7 @@
 
 title: Bank management workspace
 description: This article provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
-author: mbeinary
+author: music727
 ms.date: 01/10/2023
 ms.topic: article
 ms.prod: 
