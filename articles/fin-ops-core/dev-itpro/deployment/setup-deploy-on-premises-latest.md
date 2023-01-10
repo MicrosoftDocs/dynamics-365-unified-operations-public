@@ -370,23 +370,10 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 ### <a name="downloadscripts"></a>Step 6. Download setup scripts from LCS
 
-Microsoft has provided several scripts to help improve the setup experience. Follow these steps to download the setup scripts from LCS.
+Microsoft has provided several scripts to help improve the setup experience. Follow the documentation in [Download the Infrastructure Scripts](./obtain-infrascripts-onprem.md)
 
 > [!IMPORTANT]
 > The scripts must be run from a computer that is in the same domain as the on-premises infrastructure.
-
-1. Sign in to [LCS](https://lcs.dynamics.com/v2).
-2. On the dashboard, select the **Shared asset library** tile.
-3. Select **Model** as the asset type.
-4. Find assets that are labeled **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts version X.X.X**.
-5. Download the latest version available.
-6. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
-7. Create a file share, and copy the zip file into it.
-8. Unzip the files into a folder that is named **infrastructure**.
-
-> [!IMPORTANT]
-> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). This way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
-> Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
 

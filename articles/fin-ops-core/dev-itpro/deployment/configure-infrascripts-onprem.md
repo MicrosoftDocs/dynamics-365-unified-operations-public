@@ -640,7 +640,7 @@ Contoso corporation will leave the default values for their database names (dbNa
 
 #### Fileshares
 
-Contoso corporation has a file server with a single node, but will ensure that they setup a High Availability solution in the near future before they go live. For now, they have created specific volume to host the sfDiagnostics share and a separate volume to host the remaining shares. They have only filled out the BasePath field for each fileshare as the rest of the fields are filled out by the infrastructure scripts.
+Contoso corporation has a file server with a single node, but will ensure that they setup a High Availability solution in the near future before they go live. For now, they have created a specific volume to host the sfDiagnostics share and a separate volume to host the remaining shares. They have only filled out the BasePath field for each fileshare as the rest of the fields are filled out by the infrastructure scripts.
 
 ```xml
 <FileShares>
@@ -728,8 +728,8 @@ To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, 
     </NodeType>
     <NodeType name="SSISNodeType" primary="false" namePrefix="SSIS" purpose="SSIS" disabled="false">
       <VMList>
-        <VM name="LBDEN01SSSIS1" ipAddress="10.0.0.51" faultDomain="fd:/fd2" updateDomain="ud2" />
-        <VM name="LBDEN01SSSIS2" ipAddress="10.0.0.52" faultDomain="fd:/fd1" updateDomain="ud0" />
+        <VM name="LBDEN01SFSSIS1" ipAddress="10.0.0.51" faultDomain="fd:/fd2" updateDomain="ud2" />
+        <VM name="LBDEN01SFSSIS2" ipAddress="10.0.0.52" faultDomain="fd:/fd1" updateDomain="ud0" />
       </VMList>
     </NodeType>
     <ServiceFabricSettings>
