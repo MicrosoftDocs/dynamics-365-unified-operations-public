@@ -40,8 +40,8 @@ The Project migration manager lets you move your Lifecycle Services project from
 
 Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
 
->[!NOTE]
->During the preview, new geographies will be supported over time starting with "EU". For a full list of geographies that will become available, visit [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo). 
+> [!NOTE]
+> During the preview, new geographies will be supported over time starting with "EU". For a full list of geographies that will become available, visit [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo). 
 
 There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations will be described later in this article.
 
@@ -68,6 +68,7 @@ The following table shows the data that can be transferred between instances and
 | Manual | Asset library | You will be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
 | Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager. They will have the same environment IDs but will be in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
 | Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project will be locked but you will still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
+| Manual | Project users | Remaining users must be added manually by project owners. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics will be generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated.  Upgrade analysis data can't be exported. |
 | Not supported | Globalization | Regulatory alerts are not transferrable between projects. |
