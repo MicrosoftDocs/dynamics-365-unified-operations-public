@@ -9,6 +9,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
+audience: Application User
 ms.dyn365.ops.version: 
 ms.custom: 
 ms.assetid: 
