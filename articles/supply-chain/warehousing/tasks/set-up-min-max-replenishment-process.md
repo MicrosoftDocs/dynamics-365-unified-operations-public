@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 ms.topic: how-to
 ms.date: 12/13/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

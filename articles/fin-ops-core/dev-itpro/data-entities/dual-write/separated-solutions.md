@@ -178,6 +178,7 @@ The Dual-write Supply Chain package depends on the following three packages. The
 - Dual-write Application Core package
 - Dual-write Finance package
 - Dual-write Human Resources package
+- Dynamics 365 HR Common Tables
 
 ## Dual-write Finance
 

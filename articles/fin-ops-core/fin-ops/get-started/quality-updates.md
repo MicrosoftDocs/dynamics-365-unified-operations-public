@@ -25,7 +25,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 
 ## What you need to know
 
-- Proactive quality updates are applied on a monthly basis.
+- Proactive quality updates (PQU) are applied on a monthly basis.
 - Exceptions for proactive quality updates are allowed for customers that are regulated by the US Food and Drug Administration (FDA) only.
 - Proactive quality updates will never downgrade the environment or automatically upgrade from one service update version to another. 
 - Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
@@ -35,10 +35,14 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
 - Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
+- ALL sandboxes, except those that have a time bound exception due to regulatory reasons, will be onboarded by January 7th 2023.
 - Production onboarding for Proactive Quality updates will begin from January 21, 2023. 
 - Production onboarding will only start for Lifecycle Services projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
 - For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
+- Every service update has at least one PQU release train ongoing or slated to begin. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all of them when you move to a newer version service update. Please check the schedule to determine when a PQU for a service update is scheduled if you plan to upgrade to a newer version service update. 
 
+> [!Note]
+> Standard performance test (tier4), Premium performance test (tier5) sandboxes and production environments will receive PQUs on weekends. 
 
 ## Focus on quality updates
 
@@ -99,22 +103,10 @@ For information on the dark hours for each region, see [What are the planned mai
 
 | Station | Regions | Completed Schedule | Upcoming Sandbox Schedule|
 |---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022, November 2 to November 5, 2022, November 13 to November 16, 2022 | December 5 to December 8|
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022 | December 5 to December 8|
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | October 16 to October 19, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022 | December 5 to December 8|
-| Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022, November 2 to November 5, 2022, November 15 to November 18, 2022 | December 5 to December 8|
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
-
-### <a name="schedule"></a> Proactive quality update release: 10.0.30
-**App version: 10.0.1362.77**
-**Corresponding latest KB article: 767597**
-
-| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule |
-|---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | December 1 to December 4, 2022 |  December 13 to December 16, 2022 | 
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | December 2 to December 5, 2022 |  December 13 to December 16, 2022 | 
-| Station 3 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central | December 3 to December 6, 2022 |  December 13 to December 16, 2022 | 
-| Station 4 | West Europe, Central US, West US | December 4 to December 7, 2022 |  December 13 to December 16, 2022 | 
+| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022, November 2 to November 5, 2022, November 13 to November 16, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | October 16 to October 19, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
+| Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022, November 2 to November 5, 2022, November 15 to November 18, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 ### <a name="schedule"></a> Proactive quality update Calendar year 2023 schedule
@@ -166,6 +158,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 6, 2024|
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-2 train schedule
+**App version: 10.0.1362.99**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
@@ -174,6 +167,17 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 3 | January 3 to January 6, 2023 | January 28 to January 29, 2023 |
 | Station 4 | January 9 to January 12, 2023 | NA |
 | Station 5 | January 16 to January 19, 2023 | NA |
+| Station 6 | NA | NA |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | January 30 to February 2, 2023 | February 11 to February 12, 2023 |
+| Station 3 | January 31 to February 3, 2023 | February 11 to February 12, 2023 |
+| Station 4 | February 6 to February 9, 2023 | February 18 to February 19, 2023 |
+| Station 5 | February 13 to February 16, 2023 | February 25 to February 26, 2023 |
 | Station 6 | NA | NA |
 
 > [!IMPORTANT] 
