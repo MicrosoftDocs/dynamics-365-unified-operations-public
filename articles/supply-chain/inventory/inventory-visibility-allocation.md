@@ -2,15 +2,14 @@
 title: Inventory Visibility inventory allocation
 description: This article explains how to set up and use the inventory allocation feature, which lets you set aside dedicated inventory to ensure that you can fulfill your most profitable channels or customers.
 author: yufeihuang
-ms.date: 11/04/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: yufeihuang
-ms.search.validFrom: 2022-05-13
-ms.dyn365.ops.version: 10.0.27
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 01/10/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Inventory Visibility inventory allocation
@@ -46,7 +45,7 @@ The following terms and concepts are useful in discussions of inventory allocati
 
 - **Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type.
 - **Allocation group value** – The value of each allocation group. For example, *web* or *store* might be the value of the sales channel allocation group, whereas *VIP* or *normal* might be the value of the customer allocation group.
-- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. A maximum of eight levels of hierarchy is supported. In **Allocation Configuration** page for Inventory Visibility UI on Power Apps, they are labeled `Group0` to `Group7`. For example, you can define *channel* as hierarchy level 1 (`Group0`), *region* as level 2 (`Group1`), and *customer group* as level 3 (`Group2`). During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. A real life example could be, you create an allocation of 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
+- **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. A maximum of eight levels of hierarchy are supported. In Power Apps, on the **Allocation Configuration** page for Inventory Visibility, they are labeled **Group0** to **Group7**. For example, you could define *Channel* as hierarchy level 1 (**Group0**), *Region* as level 2 (**Group1**), and *Customer group* as level 3 (**Group2**). During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you could create an allocation of 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
 - **Available to allocate** – The *virtual common pool* that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
 - **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It's deducted at the same time that the consumed quantity is added.
 - **Consumed** – A physical measure that indicates that quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
@@ -66,12 +65,11 @@ The inventory allocation feature consists of the following components:
 - The predefined, allocation-related data source, physical measures, and calculated measures.
 - Customizable allocation groups that have a maximum of eight levels.
 - A set of allocation application programming interfaces (APIs):
-
-    - allocate
-    - reallocate
-    - unallocate
-    - consume
-    - query
+  - allocate
+  - reallocate
+  - unallocate
+  - consume
+  - query
 
 The process of configuring the allocation feature has three steps:
 
@@ -86,17 +84,15 @@ When you enable the allocation feature and call the configuration update API, In
 The data source is named `@iv`. It includes a set of default physical measures. You can view them from the Inventory Visibility app by going to **Configuration \> Data Source**. You should see **Datasource - @IV**. Expand the `@iv` data source to view the list of initial physical measures:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Select the **Calculated Measures** tab to view the initial calculated measure, which is named `@iv.@available_to_allocate`:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### Add other physical measures to the available-to-allocate calculated measure
 
@@ -111,10 +107,10 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 ### Manage allocation groups
 
-A maximum of eight allocation group names can be set, each corresponds to `Group0` to `Group7` in hierarchy. `Group0` and `Group7` correspond to the highest and lowest level of hierarchy. When creating an allocation, hierarchies have to be specified from the highest to the lowest order. E.g, suppose your configuration has `Country` for `Group0`, `State` for `Group1` and `City` for `Group2`, `Country` and `State` are both required when specifying `City`, however, an allocation can be created with `Country` and `State`, or `Country` only. Follow these steps to view and update allocation groups.
+A maximum of eight allocation group names can be set, corresponding to **Group0** to **Group7** in the hierarchy. **Group0** and **Group7** correspond to the highest and lowest levels of hierarchy, respectively. When creating an allocation, hierarchies must be specified from the highest to the lowest order. For example, suppose your configuration has *Country* for **Group0**, *State* for **Group1**, and *City* for **Group2**. *Country* and *State* are both required when specifying *City*, however, an allocation can be created with *Country* and *State*, or *Country* only. Follow these steps to view and update allocation groups.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In default allocation configuration, there are four levels of hierarchy, from the highest to lowest:`Channel` (Group0), `customerGroup` (Group1),`Region` (Group2), and `OrderType` (Group3).
+1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In the default allocation configuration, there are four levels of hierarchy, from the highest to lowest: *Channel* (**Group0**), *customerGroup* (**Group1**), *Region* (**Group2**), and *OrderType* (**Group3**).
 1. You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
 
     > [!IMPORTANT]
@@ -127,22 +123,22 @@ If you use four group names and set them to \[`channel`, `customerGroup`, `regio
 ### <a name="allocation-tips"></a>Tips for using allocation
 
 - For every product, the allocation function should use in the same *dimension level* according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
-- **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to remove all old data with `unallocate` API before updating the configuration. However, no clean up is needed when only adding new allocation groups to the lowest hierarchy.
+- **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to use the `unallocate` API to remove all old data before updating the configuration. However, you don't need to clean up the data if you are only adding new allocation groups to the lowest hierarchy.
 - Allocation will succeed only if the product has a positive `available_to_allocate` quantity.
 - To allocate products from a high *allocation hierarchy* group to a subgroup, use the `Reallocate` API. For example, you have an allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], and you want to allocate some product from allocation group \[`Online`, `VIP`\] to the sub allocation group \[`Online`, `VIP`, `EU`\], use the `Reallocate` API to move the quantity. If you use the `Allocate` API, it will allocate the quantity from the virtual common pool.
 - To view overall product availability (the common pool), use the [query on-hand](inventory-visibility-api.md#query-on-hand) API to request the inventory amount that is *available to allocate*. You can then make allocation decisions based on this information.
 
 ## <a name="using-allocation-api"></a>Use the allocation APIs
 
-Five allocation APIs are available:
- 
-|   Method    | API | Description |
-|   ---: | :--- |   :---   |
-|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate | Create an allocation |
-|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/unallocate | Revert or remove allocated records | 
-|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/reallocate | Move allocated quantities from an existing allocation to other allocation groups
-|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/consume | Deduct (use) the allocated quantity |
-|   POST    | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/query | Check existing allocation records against the allocation groups and hierarchy |
+The following table lists the allocation APIs that are available.
+
+| Method | API | Description |
+| --- | --- | --- |
+| POST | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate | Create an allocation |
+| POST | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/unallocate | Revert or remove allocated records |
+| POST | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/reallocate | Move allocated quantities from an existing allocation to other allocation groups |
+| POST | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/consume | Deduct (use) the allocated quantity |
+| POST | /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/query | Check existing allocation records against the allocation groups and hierarchy |
 
 ### Allocate
 
@@ -188,10 +184,11 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
     }
 }
 ```
-The quantity must always be more than 0 (zero). 
+
+The quantity must always be more than 0 (zero).
 
 > [!NOTE]
-> More often than not, `siteId` and `locationId` are reqrired since they are not empty for most data sources. If in a rare case where either `siteId` or `locationId` is empty for a data source, allocation from that data source has to omit the empty dimension as well.  
+> More often than not, `siteId` and `locationId` are required because they aren't empty for most data sources. In the rare case where either `siteId` or `locationId` is empty for a data source, allocation from that data source must omit the empty dimension too.
 
 ### Unallocate
 
