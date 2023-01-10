@@ -45,14 +45,14 @@ The card also shows when the bank account was last reconciled. This information 
 
 The **Balance** chart shows either historic balance information for the bank account that is selected in the **Bank accounts** section or a summary of historic balance information for all bank accounts in the legal entity. This information is available for various periods: the current week, the current month, the current year, the last five years, and all periods (the full history of the bank account). 
 
-If you're viewing the **Balance** chart for a single bank account, the historic balances are shown in the bank account currency. If you're viewing the chart for all bank accounts in the legal entity, the historic balances are shown in the accounting currency.
+If you're viewing the **Balance** chart for a single bank account, the historic balances are shown in the bank account currency. If you're viewing the chart for all bank accounts in the legal entity, the historic balances are shown in the accounting currency. 
 
 Information about when the data was last updated appears at the top of the chart. You can update the data as you require.
 
 > [!NOTE] 
 > The bank account balance and trial balance of the main account associated to the bank will not be the same in all scenarios. The trial balance of a main account and a bank account will match when:
 >1. The main account is set for only one bank account.
->2. The posting type of all related main account transactions is **Bank**.
+>2. The posting type of all the related main account transactions is **Bank**.  
 
 ### Related information
 
