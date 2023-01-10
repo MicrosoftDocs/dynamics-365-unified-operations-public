@@ -370,7 +370,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 ### <a name="downloadscripts"></a>Step 6. Download setup scripts from LCS
 
-Microsoft has provided several scripts to help improve the setup experience. Follow the documentation in [Download the Infrastructure Scripts](./obtain-infrascripts-onprem.md)
+Microsoft has provided several scripts to help improve the setup experience. Follow the documentation in [Download the Infrastructure Scripts](./obtain-infrascripts-onprem.md#download-the-infrastructure-scripts)
 
 > [!IMPORTANT]
 > The scripts must be run from a computer that is in the same domain as the on-premises infrastructure.

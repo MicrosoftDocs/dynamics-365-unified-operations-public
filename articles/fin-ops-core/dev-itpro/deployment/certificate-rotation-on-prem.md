@@ -3,7 +3,7 @@
 
 title: Certificate rotation
 description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
-author: PeterRFriis
+author: faix
 ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
 
@@ -43,7 +43,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Preparation steps 
 
-1. Update your infrastructure scripts by following the steps in [Update your Infrastructure Scripts](obtain-infrascripts-onprem.md).
+1. Update your infrastructure scripts by following the steps in [Update your Infrastructure Scripts](obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 
 1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert). Specifically, follow these steps.
 
