@@ -4,7 +4,7 @@
 title: Debug a copy of the production database
 description: This article explains a debugging and diagnostics scenario for finance and operations.
 author: LaneSwenka
-ms.date: 07/22/2022
+ms.date: 01/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -85,6 +85,9 @@ Update these configurations so that they use the values from the environment det
 Save the file. If you're operating in a cloud-hosted environment, run IISRESET. If you're on a Microsoft-managed developer machine and have limited permissions, make sure that Microsoft Visual Studio is closed.
 
 Finally, open a web browser, go to the URL of your DevTest environment, and verify that you're pulling data from the UAT database.
+
+> [!NOTE]
+> This only configures the **database connection**, not the **storage account connection** of the developer environment. This will cause batch jobs that use the storage account, like **Commerce scheduler jobs** (CDX), to upload the resultant file to a storage account that isn't accessible to the UAT environment. This will cause a failure to apply the incremental/full data syncs. Revert these changes before running data sync jobs or configure them to not run in the batch server group where the developer environment was injected to.
 
 ## Debug transactions in the DevTest environment
 
