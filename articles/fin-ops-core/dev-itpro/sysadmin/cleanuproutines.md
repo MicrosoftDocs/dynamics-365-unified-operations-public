@@ -4,7 +4,7 @@
 title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The article provides an overview of cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dvliegen
-ms.date: 02/02/2022
+ms.date: 01/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 
 | Path | Description |
 |------|-------------|
-| Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Clean up email notification logs | <p>This cleanup routine sets up a batch job to cleanup up the email notification logs</p> |
+| Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Clean up email notification logs | <p>This cleanup routine sets up a batch job to clean up up the email notification logs.</p> |
 
 ## Sales and marketing
 
