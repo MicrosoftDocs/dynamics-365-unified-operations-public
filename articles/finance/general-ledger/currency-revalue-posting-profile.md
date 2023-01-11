@@ -43,7 +43,7 @@ currency revaluation of all currencies on accounts that belongs to Travel and Ex
 revaluation of all currencies on all accounts to adjustment account 801600.
 
 
-Posting profile1
+[![Currency revaluation posting profile.](./media/Postingprofile1.png)](./media/Postingprofile1.png)
 
 
 **Table** – The posting profile applies to a specified ledger account. 
@@ -82,7 +82,7 @@ Based on the Lowest level of defaulting setting the system will determine which 
 -	Currency: will give priority to the currency and will post currency revaluation to 801605 account 
 -	Account: will give priority to the account and will post currency revaluation to 801603 account
 
-XXXXXX Lowest level of defaulting2
+[![Posting example.](./media/Lowestlevel2.png)](./media/Lowestlevel2.png)
 
 
 Note: The currency revaluation posting profile will only take place in the case of it has configured records. In the case of you did not configure the currency revaluation posting profile the system will use the defined accounts for currency revaluations in Accounts for currency revaluation fast tab under General ledger| Ledger setup| Ledger. 
