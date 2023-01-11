@@ -18,16 +18,16 @@ This article provides an example scenario that shows how to set up a Warehouse M
 
 The following illustration shows the packing functionality that this scenario adds to the mobile app.
 
-![Warehouse app packing example scenario.](media/wma-packing-demo.png "Warehouse app packing example scenario")
+[<img src="media/wma-packing-demo.png" alt="Warehouse app packing example scenario." title="Warehouse app packing example scenario" width="720" />](media/wma-packing-demo.png)
 
-You can easily create a packing flow by creating mobile device menu items and detours handling. In the following example scenario the below menu items without "(" ")" are explained in full:
+You can easily create a packing flow by creating mobile device menu items and detours handling. The example scenario provided in this article explains the menu items listed without parentheses in the following table.
 
-|**Pack inventory into containers** |**Container creation**  |**Container closing** |(**Print container label**) |(**Container deletion**) |
-|-----------------------------------|------------------------|----------------------|----------------------------|-------------------------|
-|Look up location                   |Look up container type  |Look up container     |(Look up container)         |(Look up container)      |
-|Look up shipment                   |                        |                      |                            |                         |
-|Look up item                       |                        |                      |                            |                         |
-|Look up container                  |                        |                      |                            |                         |
+| Pack inventory into containers | Container creation | Container closing | (Print container label) | (Container deletion) |
+|---|---|---|---|---|
+| Look up location | Look up container type | Look up container | (Look up container) | (Look up container) |
+| Look up shipment | | | | |
+| Look up item | | | | |
+| Look up container | | | | |
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ For each worker that will use the Warehouse Management mobile app to pack contai
 1. On the **Profile** FastTab, set the following values:
 
     - **Container packing policy:** Select *WH62Close*. This policy will move containers to the *Baydoor* location when they are closed.
-    - **Packing profile ID:** Select *WH62*. This profile won't create warehouse work after a container is closed, nor process a sales packing slip posting when closing the last container for a shipment. You can read more about setting up this process [here](packing-containers.md#packing-policy).
+    - **Packing profile ID:** Select *WH62*. This profile won't create warehouse work after a container is closed, nor will it post a sales packing slip when closing the last container for a shipment. For more information about setting up this process, see [Set up container packing policies](packing-containers.md#packing-policy).
 
 1. On the **Default packing station** FastTab, set the following values:
 
@@ -78,7 +78,7 @@ For each worker that will use the Warehouse Management mobile app to pack contai
 > [!NOTE]
 > You can set up the system to automatically print container labels when a new container record is created. For more information, see [Print container labels](print-container-labels.md).
 
-## <a name="Create-MDMI-packing-inventory-into-containers"></a>Create a mobile device menu item for packing inventory into containers
+## <a name="create-mdmi-packing-inventory-into-containers"></a>Create a mobile device menu item for packing inventory into containers
 
 Follow these steps to create a mobile device menu item that workers can use to pack inventory into containers.
 
@@ -86,27 +86,30 @@ Follow these steps to create a mobile device menu item that workers can use to p
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
 
-    - **Menu item name:** Enter *Packing*. This value will be used as the internal name for the menu item.
-    - **Title:** Enter *Packing*. This value will be used as the display name of the menu item in the mobile app.
-    - **Mode:** Select *Indirect*.
-    - **Activity code:** Select *Pack inventory into containers*.
-    - **Packing policy ID** - Leave blank, the default process will be used.
+    - **Menu item name** – Enter *Packing*. This value will be used as the internal name for the menu item.
+    - **Title** – Enter *Packing*. This value will be used as the display name of the menu item in the mobile app.
+    - **Mode** – Select *Indirect*.
+    - **Activity code** – Select *Pack inventory into containers*.
+    - **Packing policy ID** – Leave blank. The default process will be used.
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> By assigning a **Packing policy ID** value you can control the packing process.
-> The **Warehouse management \> Setup \> Packing \> Mobile device container packing policies** contains the following settings: 
->  - **Capture tracking dimensions** - This option determines the behavior of how the tracking dimensions are handled in the *Pack inventory into containers* flow on the warehouse mobile device.
->    - *Skip capturing* (Default) - When selected, the user will not be asked to specify the tracking dimensions during packing. Exception to this is if serial numbers are used and the tracking dimensions group has set to capture serial at packing, in which case the user will always needs to specify the serial number.
->    - *Capture one by one* - When selected, the tracking dimensions will not be defaulted and the user will always need to specify them.
->  - **Starting step** - This option determines what will be the first step in the *Pack inventory into containers* flow on the warehouse mobile device after the user logs in to the packing station.
->    - *Scan shipment ID first* (Default) - When selected, the user will be asked to scan the shipment ID.
->    - *Scan license plate ID first* - When selected, the user will be asked to scan the license plate ID. As the user continues with the flow, the packing will be performed only from the specified license plate.
-> - **Item selection** - This option determines which items are packed in the "Pack inventory into containers" flow on the warehouse mobile device.
->    - *Select item to pack* (Default) When selected the user will be asked to scan an item to pack.
->    - *Pack all remaining* - When selected any remaining items for the shipment or license plate on the packing station will be packed into the container. Capturing tracking dimensions is not supported with this option.
-> - **Close container automatically** - Select this option to automatically close the container after packing all remaining items. The weight from the item master data will be used without any options for the warehouse worker to update the weight before closing the container.
->-  **Create container automaticaly** -Select this option to automatically create a new container when packing all remaining items. The worker's *Packing profile ID* must have a default *Container type* and the *Container ID mode* set to "Auto".
+> You can control the packing process by assigning a **Packing policy ID** value.
+>
+> The **Warehouse management \> Setup \> Packing \> Mobile device container packing policies** contains the following settings:
+>
+> - **Capture tracking dimensions** – This option determines the behavior of how the tracking dimensions are handled in the *Pack inventory into containers* flow on the warehouse mobile device.
+>   - *Skip capturing* (Default) – When selected, the user will not be asked to specify the tracking dimensions during packing. Exception to this is if serial numbers are used and the tracking dimensions group has set to capture serial at packing, in which case the user will always needs to specify the serial number.
+>   - *Capture one by one* – When selected, the tracking dimensions will not be defaulted and the user will always need to specify them.
+> - **Starting step** – This option determines what will be the first step in the *Pack inventory into containers* flow on the warehouse mobile device after the user logs in to the packing station.
+>   - *Scan shipment ID first* (Default) – When selected, the user will be asked to scan the shipment ID.
+>   - *Scan license plate ID first* – When selected, the user will be asked to scan the license plate ID. As the user continues with the flow, the packing will be performed only from the specified license plate.
+> - **Item selection** – This option determines which items are packed in the "Pack inventory into containers" flow on the warehouse mobile device.
+>   - *Select item to pack* (Default) – When selected the user will be asked to scan an item to pack.
+>   - *Pack all remaining* – When selected any remaining items for the shipment or license plate on the packing station will be packed into the container. Capturing tracking dimensions is not supported with this option.
+> - **Close container automatically** – Select this option to automatically close the container after packing all remaining items. The weight from the item master data will be used without any options for the warehouse worker to update the weight before closing the container.
+> - **Create container automaticaly** – Select this option to automatically create a new container when packing all remaining items. The worker's *Packing profile ID* must have a default *Container type* and the *Container ID mode* set to "Auto".
+
 ## Create a mobile device menu item for creating containers
 
 Follow these steps to create a mobile device menu item that workers can use to create containers.
