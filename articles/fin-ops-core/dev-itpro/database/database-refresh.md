@@ -75,6 +75,7 @@ This is also referred to as [Golden configuration promotion](dbmovement-scenario
 * [Maintenance mode](../sysadmin/maintenance-mode.md) settings will be disabled even if it was enabled in source.
 * Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 * Any [change-tracking on entities](../data-entities/entity-change-track.md) will be disabled.
+* [Service endpoints](../business-events/managing-business-event-endpoints.md) for business events and data events are removed.
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
