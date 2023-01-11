@@ -40,8 +40,9 @@ You can use the **New document** button in the **Business document management** 
 In the examples in this article, the active provider is Contoso, and you use it to create a template that is based on a template that is provided by Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
 
 > [!NOTE]
-> In versions of Finance before 10.0.21, Business document management functionality and Microsoft Office-style user interface had to be explicitly enabled. Starting in version 10.0.21, the respective **Business document management** and **Office-like UI experience for Business document management** features are turned on by default. Starting in version 10.0.29, the features are mandatory. This means the features are turned on by default and can't be turned off. Starting in version 10.0.32, these features have been removec. Please disregard the feature enabling mentioned below if you are using Finance version 10.0.32 and later.
-
+> In versions of Finance before 10.0.21, Business document management functionality and the Microsoft Office–style UI had to be explicitly enabled. However, starting in version 10.0.21, the corresponding **Business document management** and **Office-like UI experience for Business document management** features were turned on by default. Then, starting in version 10.0.29, these features became mandatory. In other words, they were turned on by default and couldn't be turned off.
+>
+> Starting in Finance version 10.0.32, both features have been removed. Therefore, if you're using Finance version 10.0.32 and later, disregard the information about feature enablement later in this article.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
