@@ -45,3 +45,62 @@ currency revaluation posting account that will be used during the currency reval
 As an example, the Unrealized gain for General ledger post the currency revaluation of EUR transactions on main account 600120 to adjustment account 801602. To post 
 currency revaluation of all currencies on accounts that belongs to Travel and Expense (TANDEEXP) main category to adjustment account 801601. To post currency 
 revaluation of all currencies on all accounts to adjustment account 801600.
+
+
+Posting profile1
+
+
+All -  represents all main accounts that are subject to currency revaluation. That have Foreign currency revaluation toggle set as Yes.
+Group - represents main accounts that are belongs to selected main account category
+Account – represents a specified ledger account  
+
+Accounts payable
+As an example, the Unrealized gain for Accounts payable post the currency revaluation of EUR transactions on main account 1001 to adjustment account 801602. To post currency revaluation of all currencies on vendors that belongs to Parts vendors (10) vendor group to adjustment account 801601. To post currency revaluation of all currencies on all vendors to adjustment account 801600.
+
+All -  represents all vendors 
+Group - represents vendor group
+Account – represents a specified vendor ID
+
+
+Accounts receivable
+As an example, the Unrealized gain for Accounts receivable post the currency revaluation of EUR transactions on customer account US-001 to adjustment account 801602. To post currency revaluation of all currencies on accounts that belongs to Wholesales customers (10) customer group to adjustment account 801601. To post currency revaluation of all currencies on all customers to adjustment account 801600.
+
+All -  represents all customers 
+Group - represents customer group
+Account – represents a specified customer ID
+
+
+Bank         
+As an example, the Unrealized gain for Bank post the currency revaluation of EUR transactions on bank account USMF EUR to adjustment account 801602. To post currency revaluation of all currencies on accounts that belongs to BankEUR bank group to adjustment account 801601. To post currency revaluation of all currencies on all bank accounts to adjustment account 801600.
+
+All -  represents all banks 
+Group - represents bank group
+Account – represents a specified bank ID
+
+The Lowest level of defaulting option allows the currency revaluation posting profile to determine the lowest level of the posting in the case of overlapped setting. 
+
+
+Assumes there is a setup on the currency revaluation posting profile for unrealized gain under general ledger that have potential overlapped setting. Post currency revaluation adjustment of EUR currency for all accounts to account 801605. Post currency revaluation adjustment of all currencies for account 601400 to account 801603. 
+Based on the Lowest level of defaulting setting the system will determine which account to take priority. 
+-	Currency: will give priority to the currency and will post currency revaluation to 801605 account 
+-	Account: will give priority to the account and will post currency revaluation to 801603 account
+
+XXXXXX Lowest level of defaulting2
+
+
+Note: The currency revaluation posting profile will only take place in the case of it has configured records. In the case of you did not configure the currency revaluation posting profile the system will use the defined accounts for currency revaluations in Accounts for currency revaluation fast tab under General ledger| Ledger setup| Ledger. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
