@@ -33,10 +33,12 @@ The currency revaluation posting profile allows you to post currency revaluation
 receivable and Bank). It provides the ability to post to the lower granular level on each module where you can define a currency revaluation posting 
 account per currency code and the lowest level of ledger account, vendor, customer or bank. The differentiation could be for unrealized gain or loss for all modules. Realized gain or loss is available only for accounts payable and accounts receivable.  
 
-To create a new currency posting profile, go to **General ledger > Currencies > Currency revaluation posting profile**. 
+## Create a currency posting profile
 
-In the **Currency code** field, select **All** currencies or define specific currency by selecting **Table** in the **Currency code** field. 
-In the **Account code** field, you can select **All**, **Group** or **Table** to identify an account or main account depending on the module page selected. The **Main account** is a mandatory field where you select the currency revaluation posting account that will be used during the currency revaluation adjustment. 
+To create a new currency posting profile:
+1. Go to **General ledger > Currencies > Currency revaluation posting profile**. 
+2. In the **Currency code** field, select **All** currencies or define specific currency by selecting **Table** in the **Currency code** field. 
+3. In the **Account code** field, you can select **All**, **Group** or **Table** to identify an account or main account depending on the module page selected. The **Main account** is a mandatory field where you select the currency revaluation posting account that will be used during the currency revaluation adjustment. 
 
 
 As an example, the Unrealized gain for General ledger post the currency revaluation of EUR transactions on main account 600120 to adjustment account 801602. To post 
@@ -51,7 +53,7 @@ revaluation of all currencies on all accounts to adjustment account 801600.
 **Group** – The posting profile applies to the selected main account category. 
 **All** – The posting profile applies to all main accounts that have the **Foreign currency revaluation** option set to **Yes**. 
 
-## Accounts payable
+### Accounts payable
 As an example, the Unrealized gain for Accounts payable post the currency revaluation of EUR transactions on main account 1001 to adjustment account 801602. To post currency revaluation of all currencies on vendors that belongs to Parts vendors (10) vendor group to adjustment account 801601. To post currency revaluation of all currencies on all vendors to adjustment account 801600.
 
 **Table** – The posting profile applies to a single vendor. 
@@ -59,7 +61,7 @@ As an example, the Unrealized gain for Accounts payable post the currency revalu
 **All** – The posting profile applies to all vendors. 
 
 
-## Accounts receivable
+### Accounts receivable
 As an example, the Unrealized gain for Accounts receivable post the currency revaluation of EUR transactions on customer account US-001 to adjustment account 801602. To post currency revaluation of all currencies on accounts that belongs to Wholesales customers (10) customer group to adjustment account 801601. To post currency revaluation of all currencies on all customers to adjustment account 801600.
 
 **Table** – The posting profile applies to a single customer. 
