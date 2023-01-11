@@ -2,7 +2,7 @@
 title: Commerce Scale Unit (self-hosted)
 description: This article describes Commerce Scale Unit (self-hosted) and when to use it.
 author: josaw1
-ms.date: 06/04/2020
+ms.date: 01/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,8 +40,8 @@ In scenarios where a stable internet connection is available and there is low la
 -   With Commerce Scale Unit (self-hosted), users cannot perform any real-time operations such as issuing gift cards, looking up products, or performing credit card transactions, unless there is internet connectivity to HQ or a payment provider. If most of your transactions involve real-time transactions, then you will always need internet connectivity to enable the connection to HQ or payment provider.
 -   Direct database connectivity from POS to the channel database is not supported in the Commerce Scale Unit. The POS devices always use the Commerce Scale Unit for performing operations.
 
-> [!NOTE]
-> It is critical to note that Commerce Scale Unit (self-hosted) does not replace offline. Currently, Store Commerce or Retail Modern POS with an offline database are the only ways to have offline capabilities. 
+> [!IMPORTANT]
+> Commerce Scale Unit (self-hosted) does not replace offline capabilities. Currently, Store Commerce and Retail Modern POS using an offline database are the only ways to have offline capabilities. 
 
 ## Get started with Commerce Scale Unit (self-hosted)
 
