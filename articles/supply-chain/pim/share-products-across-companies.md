@@ -2,15 +2,14 @@
 title: Cross-company product sharing
 description: This topic explains how to share released-product data across companies (legal entities), to reduce the volume of data that must be maintained and simplify the task of maintaining product master data.
 author: t-benebo
-ms.date: 02/21/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2022-02-01
-ms.dyn365.ops.version: 10.0.26
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 01/30/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Cross-company product sharing
@@ -176,7 +175,7 @@ There is no template policy for the vendors table (`vendtable`). Because the ven
 
 ### Item sales tax group and item purchase tax groups
 
-Item sales tax groups and item purchase tax groups are specified at the product level. The item sales tax group value automatically enters a default tax group on each sales order line, and the item purchase tax group value automatically enters a default tax group on each purchase order line. For convenience when default values are entered, the values are set to duplicate record sharing and are added in the SRS products template. Although the names of the tax groups are shared across companies, their details and settings are company-specific. Therefore, because tax groups are specific to each item in the company context, you must set up those details and settings in the company part of the sharing policy.
+Item sales tax groups and item purchase tax groups are specified at the product level. The item sales tax group value automatically enters a default tax group on each sales order line, and the item purchase tax group value automatically enters a default tax group on each purchase order line. For convenience when default values are entered, the values are set to duplicate record sharing and are added to the *Products* template for single record sharing. Although the names of the tax groups are shared across companies, their details and settings are company-specific. Therefore, because tax groups are specific to each item in the company context, you must set up those details and settings in the company part of the sharing policy.
 
 ### Distributed hybrid environment
 
