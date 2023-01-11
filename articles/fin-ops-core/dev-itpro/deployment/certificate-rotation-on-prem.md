@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: faix
-ms.date: 06/07/2022
+ms.date: 01/11/2023
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
