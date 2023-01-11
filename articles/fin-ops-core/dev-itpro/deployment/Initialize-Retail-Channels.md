@@ -2,7 +2,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This article explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 06/03/2022
+ms.date: 01/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -68,7 +68,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | North Europe        | Generally available |  No comments.                         |
 | EMEA            | UK South            | Generally available |    No comments.                       |
 | EMEA            | UK West             | Generally available |    No comments.                       |
-| UAE             | UAE North           | Not available       | US or EU based LCS project must be used. UAE based environments can deploy UAE based CSUs. Per this writing (December 2022), UAE based environments are not deployable in US or EU based LCS projects. Work is in progress to resolve. |
+| UAE             | UAE North           | Not available       | US or EU-based LCS projects must be used. UAE-based environments can deploy UAE-based CSUs. as of December 2022, UAE-based environments are not deployable in US or EU-based LCS projects. Work is in progress to resolve this issue. |
 
 Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case by case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
 
