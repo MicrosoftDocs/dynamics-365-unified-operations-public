@@ -2,7 +2,7 @@
 title: Upgrade and N-1 support for Commerce
 description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/14/2017
+ms.date: 01/12/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.custom: 44351,  ""intro-internal
 [!include [banner](../../includes/banner.md)]
 
 > [!WARNING]
-> Dynamics AX 2012 R3 support is ending.  While the upgrade and migration is still supported, note the dates relevant to this end of support.  More information can be read in the [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md) article.
+> Support for Dynamics AX 2012 R3 is ending. While the upgrade and migration is still supported, make note of the dates relevant to this end of support. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
 
 Upgrade and N-1 support have been enabled in the July 2017 release of Microsoft Dynamics 365 Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud.
 
