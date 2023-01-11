@@ -41,6 +41,7 @@ Although database logging can be valuable from a business perspective, it can be
 - When logging is turned on for a transaction type, each instance of that transaction type causes multiple records to be written to the Microsoft SQL Server transaction log file. Specifically, one record is written for the initial transaction, and one record logs the transaction in the database log table. Therefore, the transaction log file will grow more quickly and might require additional maintenance.
 - Database logging can adversely affect long-running automated processes, such as inventory close, calculations for bills of materials (BOMs), master planning, and long-running data imports.
 - When logging is turned on for a table, all set-based database operations are downgraded to row-based operations. For example, if you're logging inserts for a table, each insert is done as a row-based insert.
+- The **Database Log** report is limited to max 10.000 records.
 
 Here are some practices that Microsoft recommends:
 
