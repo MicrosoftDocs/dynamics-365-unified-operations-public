@@ -88,16 +88,18 @@ Use the following procedure to import each file. Import the ER *data model* conf
 
 ![ER configurations page confirming configuration import.](./media/BDM-Overview-ERSolutions.png)
 
-Alternatively, you can import the officially published ER format configurations from Microsoft Dynamics Lifecycle Service (LCS). For example, to complete this procedure you can import the latest version of the **Free text invoice (Excel)** ER format configuration. The corresponding ER data model and ER model mapping configurations will be imported automatically.
+Alternatively, you can import the officially published ER format configurations from Microsoft Dynamics Lifecycle Services. For example, to complete this procedure you can import the latest version of the **Free text invoice (Excel)** ER format configuration. The corresponding ER data model and ER model mapping configurations will be imported automatically.
 
-![LCS shared asset library content page.](./media/BDM-Overview-SharedAssetLibrary.png)
+![Lifecycle Services shared asset library content page.](./media/BDM-Overview-SharedAssetLibrary.png)
 
 For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
 
 ## Enable Business document management
 
 > [!NOTE]
-> In versions of Finance before 10.0.21, **Business document management** functionality had to be explicitly enabled. Beginning in version 10.0.21, the **Business document management** feature is automatically enabled. Starting in version 10.0.29, the feature became mandatory and is utomatically turned on without the possibility of turning it off. In version 10.0.32, the feature has been eliminated. The system behaviour assumes **Business document management** functionality is enabled out-of-the-box. This section is applicable to Finance versions earlier than 10.0.21.
+> In versions of Finance before 10.0.21, Business document management functionality had to be explicitly enabled. However, starting in version 10.0.21, the **Business document management** feature was automatically enabled. Then, starting in version 10.0.29, the feature became mandatory. In other words, it was automatically turned on and couldn't be turned off. In Finance version 10.0.32, the feature has been eliminated.
+>
+> The system behavior assumes that Business document management functionality is enabled out of the box. This section is applicable to Finance versions earlier than 10.0.21.
 
 To start Business document management, you need to open the **Feature management** workspace and enable the **Business document management** feature.
 
@@ -220,7 +222,7 @@ The following graphic shows what the Business document management workspace prov
 ![Editing business document templates on the Business document management workspace page.](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
-> The **Access permissions per configurations** rules are stored by using the unique identification ID of an ER format configuration. This means that these rules will not be deleted when an ER configuration that refers to them are deleted. When you import deleted configurations back to this instance, these rules will refer to them again. There is no need to set up the rules again after the deleted configurations are imported again.
+> The **Access permissions per configurations** rules are stored by using the unique identification ID of an ER format configuration. This means that these rules will not be deleted when an ER configuration that refers to them is deleted. When you import deleted configurations back to this instance, these rules will refer to them again. There is no need to set up the rules again after the deleted configurations are imported again.
 
 ## Use Business document management to edit templates
 
@@ -235,7 +237,7 @@ Use the following procedure to edit free text invoice templates in the Business 
 2. Open the Business document management workspace.
 
 > [!NOTE]
-> Starting in Finance version 10.0.21, the **Office-like UI experience for Business document management** feature is turned on by default. In Finance version 10.0.29, the feature became mandatory and couldn't be turned off. Starting in Finance version 10.0.32, the feature has been eliminated.
+> Starting in Finance version 10.0.21, the **Office-like UI experience for Business document management** feature was turned on by default. Then, starting in Finance version 10.0.29, the feature became mandatory and couldn't be turned off. Starting in Finance version 10.0.32, the feature has been eliminated.
 
 When the **Office-like UI experience for Business document management** feature is turned off in the **Feature management** workspace, the main grid in the **Business document management** workspace shows the following templates:
 
