@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This article describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-ms.date: 12/03/2021
+ms.date: 01/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,7 +79,7 @@ To initialize the base configuration data, do the following:
 ### Enable table and index compression
 
 > [!NOTE]
-> Beginning in the 10.0.29 version or newer, a feature exists to automate index compression. Learn more by reviewing the [Commerce offline implementation](implementation-considerations-offline.md) article. The following is exclusively for use when this feature is turned off or only used for tables.
+> In Commerce version 10.0.29, a feature was added to automate index compression. The following guidance is exclusively for use when this feature is turned off, or only used for tables. For more information, see [Commerce offline implementation](implementation-considerations-offline.md). 
    
 Before you read this article, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU) in [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations). It's important to enable table/index compression on their on-premises databases, such as the offline databases for Modern POS and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express, and later. If you are still running SQL Server Express 2014, an upgrade to a newer, supported version will be required. Generate a report of the top tables using disk space (**SQL Server Management Studio > Reports > Standard Reports > Disk Usage by Top Tables**). After that, you can enable compression for each table and index at the top of the report. The basic commands are shown below.
 
