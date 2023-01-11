@@ -1,11 +1,3 @@
----
-author: RamaKrishnamoorthy
-
-ms.topic: include
-ms.date: 7/12/2021
-ms.author: ramasri
----
-
 ###  <a name="138"></a>All products (msdyn_globalproducts)
 
 This template synchronizes data between finance and operations apps and Dataverse.
