@@ -191,7 +191,7 @@ The product images that must be used in offline mode can be set up by uploading 
     [![Product image in offline mode.](./media/offline1.png)](./media/offline1.png)
     
 > [!NOTE]
-> Offline image support is only available for product images
+> Offline image support is only available for product images.
 
 ### Set up catalog, category, employee, and customer images to appear in offline mode for MPOS
 
