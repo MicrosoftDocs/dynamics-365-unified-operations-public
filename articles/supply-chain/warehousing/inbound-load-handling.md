@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 
 This article describes the warehouse handling process for inbound loads for purchase orders.
 
-For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+For each inbound load, your system should already include a related purchase order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## Overview: How inbound loads are created, registered, and received
 
