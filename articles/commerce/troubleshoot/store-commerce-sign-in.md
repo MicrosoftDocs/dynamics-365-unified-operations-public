@@ -20,28 +20,24 @@ This article explains how to troubleshoot sign-in issues in the Microsoft Dynami
 
 ## Description
 
-
-
-### Audience validation failed error message
-
-After entering employee credentials on a point of sale (POS) sign-in screen, you might receive an error message similar to the following example:
+After entering employee credentials on a point of sale (POS) sign-in screen, you may see an error message similar to the following example:
 
 `Audience validation failed. Contact your system administrator to properly configure identity providers in Commerce headquarters.`
 
 ## Resolutions
 
-### POS application is configured to use Personal ID and Password sign-in authentication method
+### POS application is configured to use personal ID and password sign-in authentication method
 
-If the POS application is configured to use **Personal ID and Password** sign-in authentication method, follow these steps.
+If the POS application is configured to use the personal ID and password sign-in authentication method, follow these steps.
 
-1. In Commerce headquarters, go to **Commerce shared parameters \> Identity providers**. 
-1. For the **Commerce Identity Provider** identity provider issuer, in the **Relying parties** section, ensure that **Cloud POS** and **Modern POS** records are configured correctly.
+1. In Commerce headquarters, go to **Commerce shared parameters \> Identity Providers**. 
+1. For the **Commerce Identity Provider** identity provider issuer, in the **Relying parties** section, ensure that the **Cloud POS** and **Modern POS** records are configured correctly.
 
-### POS application is configured to use Azure AD sign-in authentication method
+### POS application is configured to use the Azure Active Directory sign-in authentication method
 
-If the POS application is configured to use **Azure AD** sign-in authentication method, follow these steps. 
+If the POS application is configured to use the Azure Active Directory (Azure AD) sign-in authentication method, follow these steps. 
 
-1. In Commerce headquarters, go to **Commerce shared parameters \> Identity providers**. 
-1. For the identity provider issuers of the type **Azure Active Directory**, ensure that the **Relying parties** and **Server resource IDs** are configured correctly. 
+1. In Commerce headquarters, go to **Commerce shared parameters \> Identity Providers**. 
+1. For identity provider issuers of the type **Azure Active Directory**, in the **Relying parties** and **Server resource IDs** sections, ensure that the records are configured correctly. 
 
-For more information about detailed configuration steps, see [Update identity providers settings in Commerce headquarters](../cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
+For detailed configuration steps, see [Update identity providers settings in Commerce headquarters](../cpos-custom-aad.md#update-identity-providers-settings-in-commerce-headquarters).
