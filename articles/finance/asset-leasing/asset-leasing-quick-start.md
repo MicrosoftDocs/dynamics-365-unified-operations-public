@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset leasing get started
-description: This topic describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. 
+description: This article describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. 
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetLeaseLeasingWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: ["4464", "intro-internal"]
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. The topic also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable, and General ledger.
+This article describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. The article also defines the terminology used in the user interface and the documentation. Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance. Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842). Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease. Asset leasing integrates seamlessly with other components of Dynamics 365 Finance, including Fixed assets, Accounts payable, and General ledger.
 
 Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, find and select the feature that's named **Asset leasing**, and then click the **Enable now** button.
 

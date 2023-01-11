@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (May 14, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for May 14, 2020.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for May 14, 2020.
 author: andreabichsel
 ms.date: 05/14/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3244. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
+
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3244. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Platform changes
 
-Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). This release includes bug fixes and changes to saved views.
+Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of finance and operations apps (May 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). This release includes bug fixes and changes to saved views.
  
 ## Ensure Dataverse picklists are consistent with Leave enums (436343)
 

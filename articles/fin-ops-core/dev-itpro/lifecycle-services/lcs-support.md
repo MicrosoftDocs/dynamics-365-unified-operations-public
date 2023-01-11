@@ -1,37 +1,29 @@
 ---
-# required metadata
-
-title: Get support for Finance and Operations apps or Lifecycle Services (LCS)
-description: This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
+title: Get support for finance and operations apps or Lifecycle Services (LCS)
+description: This article explains how to get help with finance and operations apps or Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro, Developer, Application user
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 254844
-ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: anupams
+ms.author: emoos
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 254844
+ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
 ---
 
-# Get support for Finance and Operations apps or Lifecycle Services (LCS)
+# Get support for finance and operations apps or Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
+
+[!INCLUDE [PEAP](../../../includes/peap-2.md)]
+
+This article explains how to get help with finance and operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
 <thead>
@@ -54,7 +46,7 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 <td>In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed. For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Get support within your Finance and Operations app.</td>
+<td>Get support within your finance and operations app.</td>
 <td>Select the <strong>Help</strong> button (<strong>?</strong>) in the upper-right corner of the app, and then select <strong>Support</strong>. Issues are reported on the <strong>Active issues</strong> tab in LCS. There, admins can determine whether they should provide in-house support or submit the issues to Microsoft.</td>
 </tr>
 <tr>
@@ -75,3 +67,4 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

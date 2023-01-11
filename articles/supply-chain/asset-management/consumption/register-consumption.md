@@ -2,7 +2,7 @@
 # required metadata
 
 title: Register consumption
-description: This topic explains how to register consumption in Asset Management.
+description: This article explains how to register consumption in Asset Management.
 author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
@@ -40,7 +40,7 @@ In some cases, you may be able to add or delete forecast lines on a work order. 
 >[!NOTE]
 >It is possible to set up automatic posting of journals on a work order lifecycle state. Refer to [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md) for more information.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order, and click **Journals**.
 
@@ -66,7 +66,7 @@ The screenshot below shows an example of hour and item registrations on a work o
 
 If a work order contains several work order jobs, you can register work hours using the **Split hours** functionality, meaning one hour registration line can be distributed evenly on each work order job.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order and click **Journals**.
 
@@ -95,7 +95,7 @@ When you make consumption registrations, financial dimensions related to the dif
 - *Item registrations:* First, financial dimensions from the journal header are added, if any. Then, financial dimensions from the related work order project are added. Next, financial dimensions from the site are added. Finally, financial dimensions from the item are added.
 
 >[!NOTE]
->For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup with other Finance and Operations apps.
+>For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup with other finance and operations apps.
 
 
 

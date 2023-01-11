@@ -2,10 +2,10 @@
 # required metadata
 
 title: Vendor invoices overview
-description: This topic provides general information about vendor invoices.
+description: This article provides general information about vendor invoices.
 author: abruer
-ms.date: 06/03/2021
-ms.topic: article
+ms.date: 02/25/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["13971", "intro-internal"]
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
+This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
 ## Vendor invoices
 
@@ -54,10 +54,10 @@ The following discussion provides more information about how to use the **Open v
 
 When you open a vendor invoice from a related purchase order, the system creates invoice lines from the purchase order. By default, the system takes the quantities from the product receipt. However, you can use any of the following default behaviors:
 
-- **Receive now quantity** – Use this option for partial shipments. The system sets the default value in the **Quantity** from the quantity specified in the **Receive now** field on the purchase order.
-- **Ordered quantity** – Use this option for complete shipments. The system sets the default value in the **Quantity** from the quantity specified in the **Ordered** field on the purchase order.
+- **Receive now quantity** – Use this option for partial shipments. The default value in the **Quantity** field will be set to the quantity specified in the **Receive now** field on the purchase order.
+- **Ordered quantity** – Use this option for complete shipments. The default value in the **Quantity** field will be set to the quantity specified in the **Ordered** field on the purchase order.
 - **Registered quantity** – Use this option if the item requires registration, as specified on the **Item model groups** page. The default value in the **Quantity** field is the physical update quantity that has been registered.
-- **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The system takes the default value in the **Quantity** field from the total quantity of available product receipts.
+- **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The default value in the **Quantity** field is the total quantity of available product receipts.
 - **Registered quantity and services** – Use this option if quantities have been registered in arrival journals for stocked items or items that aren't stocked. This option also includes services, regardless of whether they are registered.
 
 If your legal entity uses invoice matching, you can view the results of the quantity matching in the **Product receipt quantity match** column. You can also use the **Matching details** button on the **Review** tab of the Action Pane to view the results of the quantity matching.
@@ -68,16 +68,16 @@ You can add a line that wasn't on the purchase order to the vendor invoice. You 
 
 ## Submitting a vendor invoice for review
 
-Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, a **Submit** button displays send the vendor invoice through the review process.
+Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, a **Submit** button sends the vendor invoice through the review process.
 
 ### Preventing invoice from being submitted to workflow 
 
 Following are several ways you can prevent an invoice from being submitted to a workflow.
 
-- **Invoice total and the registered total are not equal.** The person who submitted the invoice will receive an alert that the totals aren't equal. The alert provides an opportunity to correct the balances before resubmitting the invoice to workflow. This feature is available if the **Prohibit submission to workflow when the invoice total and registered invoice total are not equal** parameter on the **Feature management** page is turned on. 
-- **Invoice contains unallocated charges.** The person who submitted the invoice will receive an alert that the invoice has unallocated charges so they can correct the invoice before resubmitting it to workflow. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page is turned on.
-- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive a message indicating that an invoice with a duplicate number was found. The duplicate number can be corrected before resubmitting the invoice to workflow. This alert will be displayed when the **Check the invoice number used** parameter in Accounts payable is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.
-- **Invoice contains a line where the invoice quantity is less than the matched product receipt quantity.** The person who submits the invoice or attempts to post will receive a message that the quantities aren't equal. This message provides an opportunity to correct the values before resubmitting the invoice to workflow. This feature is available if the **Block posting and submission of vendor invoices to workflow** parameter on the **Feature management** page is turned on and the **Block posting and submission to workflow** parameter on the **Accounts payable parameters** page is turned on.
+- **Invoice total and the registered total are not equal.** The user who submitted the invoice will receive an alert that the totals aren't equal. This alert gives the user an opportunity to correct the balances before they resubmit the invoice to the workflow system. This feature is available if the **Prohibit submission to workflow when the invoice total and registered invoice total are not equal** parameter on the **Feature management** page and the **Workflow option when invoice total and registered total do not equal** parameter on the **Accounts payable parameters** page are turned on. 
+- **Invoice contains unallocated charges.** The user who submitted the invoice will receive an alert that the invoice has unallocated charges. In this way, the user can correct the invoice before they resubmit it to the workflow system. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page and the **Workflow option when unallocated charges exist** parameter on the **Accounts payable parameters** page are turned on.
+- **Invoice contains the same invoice number as another posted invoice.** The user who submitted the invoice will receive an alert that an invoice was found that has a duplicate number. The user can correct the duplicate number before they resubmit the invoice to the workflow system. The alert will be shown if the **Check the invoice number used** parameter in Accounts payable is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.
+- **Invoice contains a line where the invoice quantity is less than the matched product receipt quantity.** The user who submits the invoice or tries to post it will receive a message that the quantities aren't equal. This message gives the user an opportunity to correct the values before they resubmit the invoice to the workflow system. This feature is available if the **Block posting and submission of vendor invoices to workflow** parameter on the **Feature management** page and the **Block posting and submission to workflow** parameter on the **Accounts payable parameters** page are turned on.
 
 ## Matching vendor invoices to product receipts
 
@@ -105,7 +105,7 @@ You can specify the number of invoices to include in the batch, and the number o
 
 ## Working with multiple invoices
 
-You can work with multiple invoices at the same time and post all of them at the same time. If you need to create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
+You can work with multiple invoices at the same time and post all of them at the same time. If you need to create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the **Invoice approval journal**. If you're using the **Invoice approval journal**, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
 ## Recovering vendor invoices that are being used
 
@@ -145,7 +145,7 @@ For each transaction, the report includes the following details:
 When you generate the **Vendor open transactions** report, the following default parameters are available. You can use them to filter the data that will be included on the report.
 
 - **Exclude future settlement** – Select this checkbox to exclude transactions that are settled after the date that is entered in the **Open transactions per** field.
-- **Open transactions per** – Enter a date to include transactions that are open as of that date. If you don't enter a date, this field is set to the maximum date. (The maximum date is the latest date that the system will accept, December 31, 2154.) By default, the next time that the report is run, this field will be set the last date that was entered in it.
+- **Open transactions per** – Enter a date to include transactions that are open as of that date. If you don't enter a date, this field is set to the maximum date. (The maximum date is the latest date that the system will accept, December 31, 2154.) By default, the next time that the report is run, this field will be set to the last date that was entered in it.
 
 You can use the filters under the **Record to include** field to further limit the transaction data that is included on the report.
 

@@ -1,6 +1,6 @@
 ---
 title: Work with activity diagrams in Business process modeler libraries
-description: This topic provides information about how you can use activity diagrams in a BPM library.
+description: This article provides information about how you can use activity diagrams in a BPM library.
 author: AngelMarshall 
 ms.date: 06/15/2020
 ms.topic: article
@@ -28,12 +28,13 @@ ms.dyn365.ops.version: 2012
 # Work with activity diagrams in Business process modeler libraries
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 You can associate an activity diagram with a business process. Activity diagrams are used to describe how a business process or task is completed in a proposed software solution.
 
 There are two types of activity diagrams:
 
-- **Task recordings** – Business processes that are associated with task recordings for Finance and Operations, include activity diagrams and process steps that are automatically generated.
+- **Task recordings** – Business processes that are associated with task recordings for finance and operations, include activity diagrams and process steps that are automatically generated.
 - **Microsoft Visio** – You can associate a business process with a Visio diagram by manually uploading a Visio file.
 
 
@@ -59,7 +60,7 @@ In the right pane, click **Browse** to choose a file, and then click **Upload**.
 ## Activity diagrams that are created from task recordings
 
 > [!IMPORTAMT]
-> Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler).
+> Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler).
 
 You can create a task recording in your environment and save it directly to Microsoft Dynamics Lifecycle Services (LCS). In this way, you can associate the task recording with a business process in a BPM library. For more information, see [Connecting the help system](../../fin-ops/get-started/help-connect.md) and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md).
 

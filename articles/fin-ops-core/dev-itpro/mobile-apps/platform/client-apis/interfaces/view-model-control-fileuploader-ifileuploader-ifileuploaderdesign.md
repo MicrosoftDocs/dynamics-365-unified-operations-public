@@ -1,17 +1,18 @@
 ---
 title: FileUploaderDesign type
-description: File uploader design object type. 
-author: robinarh
-ms.date: 08/01/2017
+description: File uploader design object type.
+author: jasongre
+ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ---
 
 # FileUploaderDesign type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 File uploader design object type.
 

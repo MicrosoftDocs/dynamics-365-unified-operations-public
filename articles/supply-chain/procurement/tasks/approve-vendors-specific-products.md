@@ -3,7 +3,7 @@
  
 title: Approve vendors for specific products
 description: This procedure shows you how to approve vendors for specific products. 
-author: Henrikan
+author: GalynaFedorova
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

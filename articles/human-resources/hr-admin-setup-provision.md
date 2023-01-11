@@ -2,9 +2,9 @@
 # required metadata
 
 title: Provision Human Resources
-description: This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
+description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -29,27 +29,32 @@ ms.dyn365.ops.version: Human Resources
 
 # Provision Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+> [!NOTE]
+> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
 
-This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
+This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
 ## Prerequisites
 
 Before you begin provisioning a new production environment, the following prerequisites must be in place:
 
-- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this topic, contact Support.
+- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
 - The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new Human Resources project. 
 
 ## Provision a Human Resources trial environment
 
+>[!NOTE]
+> Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within finance and operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). For more information about Dynamics 365 Finance trials, see the step-by-step [guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+
+
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
 
-Trial environments provide the ability to evaluate human resources functionality for individuals who do not already have access to a Human Resources environment. If you are provisioning a trial environment and the authenticated user already has access to one or more existing Human Resources environments, the user will be redirected to the existing environment or list of environments.
+Trial environments help evaluate human resources functionality for individuals who do not already have access to a Human Resources environment. If you are provisioning a trial environment and the authenticated user already has access to one or more existing Human Resources environments, the user will be redirected to the existing environment or list of environments.
 
-Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
+Trial environments aren't intended to be used as production environments. They are limited to a 30-day trial period. When the trial period expires, the environment and all the data that's in it will be deleted and can't be recovered. The environment can't be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
 
 When creating a Human Resources trial environment, a Power Apps trial environment is also created on the tenant and linked to the Human Resources environment. The Power Apps environment, named "TestDrive", has the same trial period as the Human Resources environment.
 
@@ -58,14 +63,14 @@ When creating a Human Resources trial environment, a Power Apps trial environmen
 
 ## Plan Human Resources environments
 
-Before you create your first Human Resources environment, you should carefully plan the environment needs for your project. A base subscription to Human Resources includes two environments: a production environment and a sandbox environment. Depending on the complexity of your project, you may need to purchase additional sandbox environments to support project activities. 
+Before you create your first Human Resources environment, you should carefully plan the environment needs for your project. A base subscription to Human Resources includes two environments: a production environment and a sandbox environment. Depending on the complexity of your project, additional sandbox environments may need to be purchased to support project activities. 
 
 Considerations for additional environments:
 
-- **Data migration**: You may need to consider an additional environment for data migration activities to allow your sandbox environment to be used for testing purposes throughout the project. Having an additional environment allows data migrations activities to continue while testing and configuration activities occur simultaneously in a different environment.
-- **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Dayforce LinkedIn Talent Hub integrations, or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
-- **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
-- **Multi-phase project**: You may need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
+- **Data migration**: Data migration activities to allow your sandbox environment to be used for testing purposes throughout the project. Having an additional environment allows data migrations activities to continue while testing and configuration activities occur simultaneously in a different environment.
+- **Integration**: Configure and test integrations, which could include native integrations, such as Ceridian Dayforce, or custom integrations.
+- **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on the use of the new system. 
+- **Multi-phase project**: Support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
 
  > [!IMPORTANT]
  > As you consider your environment, we recommend the following:
@@ -102,7 +107,7 @@ After you've created an LCS project, you can provision Human Resources into an e
 2. Indicate whether this environment is a Sandbox or Production instance of Human Resources. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
    
     > [!NOTE]
-    > The Human Resources instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
+    > The Human Resources instance type can't be changed once set. Verify the correct instance type is selected before continuing.</br></br>
     > The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
     
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Trial environment. Demo data is beneficial for long-term demo or training environments, and should never be used for production environments. You must choose this option upon initial deployment. You can't update an existing deployment later.
@@ -113,7 +118,7 @@ After you've created an LCS project, you can provision Human Resources into an e
 
 6. Select **Yes** to agree to the terms and begin deployment.
 
-   Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes a few minutes. If the provisioning process is unsuccessful, you must contact Support.
+   Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is **Deployed**. This process typically takes a few minutes. If the provisioning process is unsuccessful, contact Support.
 
 7. Select **Log on to Human Resources** to use your new environment.
 
@@ -142,10 +147,12 @@ Use the following guidance when determining which Power Apps environment to depl
    
     - **Unsupported geographies** - The environment must be in a supported geography. For more information, see [Supported geographies](hr-admin-setup-provision.md#supported-geographies).
 
-6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. See [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for more information on Dual-write.
+6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. For more information, see [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
-    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. For more information, see [Some important considerations when creating a new environment](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.
+    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. 
+    > -  Human Resources does not support changing the linked Dataverse instance once Human Resources has been deployed into it. </br></br>
+    > For more information, see [Some important considerations when creating a new environment](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.  
 
 7. After you've determined the correct environment to use, you can continue with the provisioning process. 
 
@@ -175,3 +182,4 @@ By default, the global administrator who created the environment has access to i
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

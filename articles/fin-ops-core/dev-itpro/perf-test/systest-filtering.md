@@ -1,24 +1,17 @@
 ---
 title: SysTest filtering using class and method attributes
-description: This topic outlines attributes that can be used with SysTest classes and methods for the purpose of test filtering.
-author: jorisdg
+description: This article outlines attributes that can be used with SysTest classes and methods for the purpose of test filtering.
+author: gianugo
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # SysTest Filtering using class and method attributes

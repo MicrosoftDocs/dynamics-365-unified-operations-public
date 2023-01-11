@@ -2,7 +2,7 @@
 # required metadata
 
 title: Straight line service life depreciation
-description: This topic gives an overview of the Straight line service life method of depreciation.
+description: This article gives an overview of the Straight line service life method of depreciation.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic gives an overview of the Straight line service life method of depreciation.
+This article gives an overview of the Straight line service life method of depreciation.
 
 When you set up a fixed asset depreciation profile and select Straight line service life in the Method field in the Depreciation profiles page, the assets that have this depreciation profile assigned to them are depreciated based on the total service life of the asset. This generally is the same depreciation amount in each depreciation period. 
 
@@ -46,7 +46,7 @@ You can select either Calendar or Fiscal in the Depreciation year field in the D
 
 If you select Calendar, a year of January 1 to December 31 is assumed, even if you have defined the fiscal calendar differently. 
 
-The Calendar option updates the depreciation base, which is typically the net book value minus the salvage value, on January 1 of each year. In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column. 
+The Calendar option updates the depreciation base, which is typically the net book value minus the salvage value, on January 1 of each year. In the examples later in this article, the depreciation base is the numerator in the first expression in the calculations column. 
 
 If you select Calendar, the following options are available in the Period frequency field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:
 - Yearly posts an amount on December 31.

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Safety margins
-description: This topic describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
-author: ChristianRytt
-ms.date: 09/14/2020
+description: This article describes how safety margins work during master planning.
+author: t-benebo
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
+This article describes how safety margins work during master planning.
 
 ## Safety margins overview
 
@@ -64,9 +64,6 @@ Note that a receipt margin isn't applied when on-hand inventory is used as the s
 
 ### Reorder margin
 
-> [!NOTE]
-> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Reorder margin added to item lead time** will be treated as *0* (zero).
-
 The following illustration highlights the reorder margin.
 
 ![Reorder margin.](media/safety-margins-3.png)
@@ -74,9 +71,6 @@ The following illustration highlights the reorder margin.
 The reorder margin is added before the item lead time for all planned orders during master planning. Therefore, it ensures additional time for a supply order to be placed. This margin is typically used as a buffer to ensure time for approval processes or other internal processes that are required during the creation of supply orders. The reorder margin is put between the supply *order date* and *start date*.
 
 ### Issue margin
-
-> [!NOTE]
-> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Issue margin deducted from requirement date** will be treated as *0* (zero).
 
 The following illustration highlights the issue margin.
 
@@ -88,12 +82,9 @@ Notice that when an issue margin is applied, related supply and demand requireme
 
 ## Set up safety margins
 
-### Turn on safety margins in Feature management
+### Turn safety margins on or off
 
-Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** _Master planning_
-- **Feature name:** _Margins for Planning Optimization_
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Margins for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Define safety margins
 
@@ -177,12 +168,5 @@ All three types of safety margins are included when the system determines whethe
 For example, an item has lead time of one day and a receipt margin of three days. A sales order for this item is set as required today. In this case, the delay is calculated as *lead time* + *receipt margin* = four days. Therefore, if today is August 14, the four days of delay produces a delivery on August 18. The following illustration shows this example.
 
 ![Delay calculation example.](media/safety-margins-delays.png)
-
-## Additional resources
-
-[Get started with Planning Optimization](get-started.md)
-
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: NO-00002 Customer payment based on payment ID
-description: This topic explains how to set up and maintain Norwegian payment IDs. 
+description: This article explains how to set up and maintain Norwegian payment IDs. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process 

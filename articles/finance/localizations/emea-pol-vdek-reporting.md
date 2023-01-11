@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: JPK-V7M reporting
-description: This topic explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
-author: liza-golub
-ms.date: 10/26/2021
+description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+author: AdamTrukawka
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: elgolu
-
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # JPK-V7M reporting
@@ -39,7 +30,7 @@ The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing 
 
 ## Initial assumptions for the JPK-V7M report
 
-The implementation of the JPK-V7M report is based on the same example in the topic, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
+The implementation of the JPK-V7M report is based on the same example in the article, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
 For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
 The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7M report.
@@ -57,7 +48,7 @@ The following table shows an example of sales tax reporting codes and their mapp
 | K_18             | The value of output VAT for the supply of goods or services in Poland at a 7-percent or 8-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10403, 10406 |
 | K_19             | The taxable amount of the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10301, 10304 |
 | K_20             | The value of output VAT for the supply of goods or services in Poland at a 22-percent or 23-percent VAT rate, including correction that is based on article 89a, sections 1 and 4 of the VAT Act. | 10303, 10306 |
-| K_21             | The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act. | 10807 |
+| K_21             | The taxable amount of the intra-community supply of goods that is mentioned in article 13, sections 1 and 3 of the VAT Act. | 10801 |
 | K_22             | The taxable amount of the export of goods. | 10901, 10905 |
 | K_23             | The taxable amount of the intra-community acquisition of goods. | 10810, 10811 (Reverse change) |
 | K_24             | The value of output VAT for the intra-community acquisition of goods. | 10812 |

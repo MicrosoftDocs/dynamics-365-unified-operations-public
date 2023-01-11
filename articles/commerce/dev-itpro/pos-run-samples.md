@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Run the point of sale (POS) samples
-description: This topic explains how to run the POS samples.
-author: mugunthanm
+description: This article explains how to run the POS samples.
+author: josaw1
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 # Run the point of sale (POS) samples
 
 [!include [banner](../../includes/banner.md)]
 
-There are several samples in the Retail SDK that demonstrate extensions. This topic explains how to run these samples.
+There are several samples in the Retail SDK that demonstrate extensions. This article explains how to run these samples.
 
 ## Run the SampleExtensions in POS
 1. Open **ModernPos.Sln** or **CloudPos.sln** from the **Retail SDK\\POS** folder.

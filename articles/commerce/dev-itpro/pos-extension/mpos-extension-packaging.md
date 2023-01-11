@@ -1,14 +1,14 @@
 ---
-title: Create a Modern POS extension package 
-description: This topic explains how to create a Modern POS extension package.
-author: mugunthanm
+title: Create a Modern POS extension package
+description: This article explains how to create a Modern POS extension package.
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
@@ -38,10 +38,11 @@ To create the extension installer for a Modern POS extension, follow these steps
     3. Select the package, and then select **Install**.
     4. Select the version that matches your go-live version.
 
-5. Add a reference from your Modern POS project to the **ModernPos.Installer** project that you created earlier:
+5. Add a reference to the **Modern POS** project that you created earlier:
 
-    1. In Solution Explorer, select and hold (or right-click) the Modern POS project, and then select **Add &gt; Reference**.
-    2. In Reference Manager, on the **Projects** tab on the left, select the **ModernPos.Installer** project that you created earlier.
+    1. In Solution Explorer, select and hold (or right-click) the project, and then select **Add &gt; Reference**.
+    2. In Reference Manager, on the **Projects** tab on the left, select the **Modern POS** project that you created earlier.
+    3. After the project is added as reference, edit the csproj file and add <ReferenceOutputAssembly>false</ReferenceOutputAssembly> for the reference added
 
 6. **For offline channel database extension script projects only:** Add a reference from the Modern POS project to the channel database project:
 

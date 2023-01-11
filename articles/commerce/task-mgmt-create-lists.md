@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Create task lists and add tasks
-description: This topic describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-#ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Create task lists and add tasks
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
+This article describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 
 A *task* defines a specific piece of work or an action that someone must complete on or before a specified due date. In Dynamics 365 Commerce, a task can include detailed instructions and information about a contact person. It can also include links to back-office operations, point of sale (POS) operations, or site pages, to help improve productivity and provide the context that the task owner requires to complete the task efficiently.
 
@@ -39,7 +30,7 @@ Both managers and workers can create task lists in Commerce back office, and the
 
 ## Create a task list
 
-To create a task list, follow these steps.
+Before you start the process of creating a task list, make sure you complete the configurations in the [Configure task management](task-mgmt-configure.md) article. To create a task list, follow these steps.
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select **New**, and then enter values in the **Name**, **Description**, and **Owner** fields.

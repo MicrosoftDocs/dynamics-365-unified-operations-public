@@ -1,11 +1,11 @@
 ---
 title: Switch between vendor designs
-description: This topic describes how to switch vendor data integration between Finance and Operations apps and Dataverse.
+description: This article describes how to switch vendor data integration between finance and operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 09/20/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 

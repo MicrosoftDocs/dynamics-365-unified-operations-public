@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure, install, and activate Modern POS (MPOS)
-description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
+description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 09/01/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure, download, and install Modern POS on various platforms. This topic is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
+This article describes how to configure, download, and install Modern POS on various platforms. This article is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
@@ -55,7 +55,7 @@ The self-service process lets you download the appropriate version of the Modern
 
 ## Setup
 
-Before you start the steps that are outlined in this topic, follow these steps.
+Before you start the steps that are outlined in this article, follow these steps.
 
 - Verify that you have credentials to sign in to Headquarters.
 - Verify that you have administrative or root access to install Modern POS on a device.
@@ -71,6 +71,9 @@ Before you start the steps that are outlined in this topic, follow these steps.
 3. On the **Registers** page, select a store register. The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
 4. Select a register by selecting the register number in the **Register number** column. In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
 5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
+
+    > [!NOTE]
+    > When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required.
 
 ### Download the Modern POS installer
 
@@ -108,6 +111,9 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
+> [!NOTE]
+> When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
+
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
 ```Console
@@ -123,7 +129,7 @@ The Modern POS installer first extracts the associated files and then starts the
     - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
     - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
-2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
+2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this article.
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
 
@@ -149,7 +155,7 @@ You can now start the program.
 
 ## Create a worker
 
-For this topic, we have already created workers and assigned them to the Houston address book in the demo data that is provided. Therefore, this topic will use pre-generated data.
+For this article, we have already created workers and assigned them to the Houston address book in the demo data that is provided. Therefore, this article will use pre-generated data.
 
 ### Create a worker
 
@@ -359,7 +365,7 @@ The device should now be activated and ready to use.
 
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)).
+**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
 
 ## Additional resources
 

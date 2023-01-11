@@ -1,16 +1,16 @@
 ---
 title: Get evaluation copies
-description: A public preview is available. 
-author: RobinARH
+description: A public preview is available.
+author: gianugo
 ms.date: 11/02/2020
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: 85243
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 85243
 ---
 
 # Get evaluation copies

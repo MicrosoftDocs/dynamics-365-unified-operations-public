@@ -1,37 +1,29 @@
 ---
-# required metadata
-
 title: Associate a workflow document class with a workflow type
-description: The topic describes how to associate a workflow document class with a workflow type.
-author: RobinARH
+description: The article describes how to associate a workflow document class with a workflow type.
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 202694
-ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ---
 
 # Associate a workflow document class with a workflow type 
 
 [!include [banner](../includes/banner.md)]
 
-To create a workflow, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields that the workflow uses. This topic describes how to bind a workflow document class to a workflow type.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+To create a workflow, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields that the workflow uses. This article describes how to bind a workflow document class to a workflow type.
 
 > [!NOTE]
 > If you used the **Workflow** wizard to create the workflow type, the wizard has already bound the workflow document class to the workflow type.

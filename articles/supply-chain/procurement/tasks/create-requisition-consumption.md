@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Create a requisition for consumption
-description: This topic describes the process of creating a requisition. 
-author: Henrikan
+description: This article describes the process of creating a requisition. 
+author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the process of creating a requisition. It shows you different ways to search for products in your procurement catalog and how to add a product that isn't in your catalog. Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition. You can walk through this procedure in demo data company USMF, or using your own data. The procedure can only be carried out by a user profile that is set up as worker. This task would normally be carried out by an employee. The **Employee** employ security role will allow you to carry out the tasks, or if you're using USMF, you can log in as **Alicia**.
+This article describes the process of creating a requisition. It shows you different ways to search for products in your procurement catalog and how to add a product that isn't in your catalog. Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition. You can walk through this procedure in demo data company USMF, or using your own data. The procedure can only be carried out by a user profile that is set up as worker. This task would normally be carried out by an employee. The **Employee** employ security role will allow you to carry out the tasks, or if you're using USMF, you can log in as **Alicia**.
 
 
 ## Create a new requisition

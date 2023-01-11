@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up lease approval workflows
-description: The topic explains how to set up an approval workflow that will run when a new lease is created.
+description: The article explains how to set up an approval workflow that will run when a new lease is created.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-The topic explains how to set up an approval workflow that will run when a new lease is created. For information about how to use the workflow, see [Use lease approval workflows](use-create-lease-wrkflw.md). 
+The article explains how to set up an approval workflow that will run when a new lease is created. For information about how to use the workflow, see [Use lease approval workflows](use-create-lease-wrkflw.md). 
 
 1. Go to **Asset leasing \> Setup \> Lease workflow**.
 2. On the **Lease workflow** page, select **New**.

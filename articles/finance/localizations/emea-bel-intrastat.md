@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Belgium Intrastat
-description: This topic contains information about the Belgium Intrastat report.
-author: andosip
+description: This article contains information about the Belgium Intrastat report.
+author: AdamTrukawka
 ms.date: 10/28/2021
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 # Belgium Intrastat
@@ -53,7 +51,7 @@ To set up Intrastat, import the latest version of the following Electronic repor
 - Intrastat report
 - Intrastat (BE)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service]((../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### Set up foreign trade parameters
 
@@ -333,7 +331,7 @@ To set up an address format that includes county information, follow these steps
 
 9. Select the transaction line, and then select the **General** tab to view more details.
 
-    ![Sales order details on the General tab of the Intrastat page].(media/intrastat_be_2.png)
+    ![Sales order details on the General tab of the Intrastat page](media/intrastat_be_2.png)
 
 10. On the Action Pane, select **Output** &gt; **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.

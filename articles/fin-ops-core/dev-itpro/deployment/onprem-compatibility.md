@@ -2,16 +2,17 @@
 # required metadata
 
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
-description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
+description: This article explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 10/05/2021
+ms.date: 9/21/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,7 +30,7 @@ ms.dyn365.ops.version: Platform update 44
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 Finance + Operations (on-premises).
+This article explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 Finance + Operations (on-premises).
 
 ## Microsoft Windows Server
 
@@ -75,6 +76,7 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 > - AD FS on Windows Server 2016 only supports authentication through the Azure Active Directory Authentication Library (ADAL).
 > - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
 > (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
+> - After July 1, 2022, any customers still using AD FS on Windows Server 2016 will no longer be able to use the Office add-ins. This is irrespective of the Microsoft Dynamics 365 Finance + Operations (on-premises) version that they are running.
 
 ## Minimum Azure Service Fabric runtime
 
@@ -82,6 +84,8 @@ Your Service Fabric cluster should always be on a supported version according to
 
 | Minimum version            | Required since |
 |----------------------------|----------------|
+| Service Fabric runtime 8.2 | 10.0.30        |
+| Service Fabric runtime 8.0 | 10.0.24        |
 | Service Fabric runtime 7.2 | 10.0.17        |
 | Service Fabric runtime 7.1 | 10.0.14        |
 

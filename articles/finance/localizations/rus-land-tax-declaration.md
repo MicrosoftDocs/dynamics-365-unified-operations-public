@@ -1,26 +1,18 @@
 ---
-# required metadata
-title: Land tax declaration 
-description: This topic provides information about the land tax declaration for Russia.
-author: anasyash
+title: Land tax declaration
+description: This article provides information about the land tax declaration for Russia.
+author: AdamTrukawka
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-01-04
 ms.dyn365.ops.version: 10.0.1
-
+ms.search.form: 
 ---
 
 # Land tax declaration 
@@ -42,7 +34,7 @@ The tax base for the calculation of land tax is the cadastral cost of the land
 asset. The cadastral cost is defined by cadastral authorities and should be
 specified by the user on the fixed asset card.
 
-This topic explains how to perform the following tasks:
+This article explains how to perform the following tasks:
 
 1.  [Set up land tax](#set-up-land-tax)
 
@@ -296,7 +288,7 @@ company divisions.
     >
     > For information about how to associate a fixed asset with a location, see the
     [Specify the location of the land](#specify-the-location-of-the-land)
-    section later in this topic.
+    section later in this article.
 
 
 ### Set up territories for distributed land assets

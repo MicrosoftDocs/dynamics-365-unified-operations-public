@@ -1,26 +1,18 @@
 ---
-# required metadata
 title: Ledger translation (Russia)
-description: This topic provides information about using translation to transfer accounting transactions from one company to another.
-author: anasyash
+description: This article provides information about using translation to transfer accounting transactions from one company to another.
+author: AdamTrukawka
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.1
-
+ms.search.form: 
 ---
 
 # Ledger translation (Russia)

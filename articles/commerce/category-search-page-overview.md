@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Default category landing page and search results page overview
-description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
+description: This article provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.assetid: 
 ---
 
 # Default category landing page and search results page overview
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
+This article provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
 
 ## Default category landing page
 
@@ -37,7 +27,7 @@ The default category landing page is the page that website users typically are t
 
 ![Default category landing page.](./media/SimpleCategoryLandingDressCategory.png)
 
-At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized. Configuration is done as part of the configuration of the channel navigation hierarchy. At the bottom of the page is a footer that includes quick links to various topics that a shopper might be interested in.
+At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized. Configuration is done as part of the configuration of the channel navigation hierarchy. At the bottom of the page is a footer that includes quick links to various articles that a shopper might be interested in.
 
 The following components are essential for a category:
 
@@ -51,6 +41,12 @@ The following components are essential for a category:
     - Product name – \[Z-A\]
     - Ratings – low to high
     - Ratings – high to low
+
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available. For more information, refer to the [Types of product recommendations](product-recommendations.md#types-of-product-recommendations) article.
+
+    - New
+    - Best-selling
+    - Trending
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category.
@@ -83,7 +79,7 @@ The following components are essential for a search results page:
 
 - **Product placement tiles** show the products for the user's search. By default, these tiles are sorted by the cloud-powered search relevancy score for the user search.
 - **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
-- **Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
+- **Standard Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
 
     - Price – low to high
     - Price – high to low
@@ -91,7 +87,16 @@ The following components are essential for a search results page:
     - Product name – \[Z-A\]
     - Ratings – low to high
     - Ratings – high to low
-    - Default
+    - Default 
+    
+    > [!NOTE]
+    > If **Display order** values are defined for the products in the navigation heirarchy, sorting by default on a category page honors the values defined in **Display order**. Otherwise, sorting will be done by the **Product number**.)
+    
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available. For more information, refer to the [Types of product recommendations](product-recommendations.md#types-of-product-recommendations) article.
+
+    - New
+    - Best-selling
+    - Trending
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
@@ -99,6 +104,8 @@ The following components are essential for a search results page:
 >[!NOTE]
 >These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Additionally, to use advanced sorting options such as new, best-selling, and trending, you must enable [Product recommendations](product-recommendations.md) for your environment. Advanced sorting options are available with Commerce SDK version 9.35+ and Commerce version 10.0.20.
 
 ## Additional resources
 

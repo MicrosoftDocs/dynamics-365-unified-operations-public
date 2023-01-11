@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics AX platform update 1 (May 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX platform update 1. This version was released in May 2016 and has a build number of 7.0.4127.16103.
 author: sericks007
@@ -8,23 +6,15 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 91183
-ms.assetid: 259a6844-3675-44bd-a4ea-57a5976628ff
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 91183
+ms.assetid: 259a6844-3675-44bd-a4ea-57a5976628ff
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What's new or changed in Dynamics AX platform update 1 (May 2016)
@@ -243,7 +233,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 
 ## Additional resources
 
-[What's new or changed in Finance and Operations home page](whats-new-changed.md)
+[What's new or changed in finance and operations home page](whats-new-changed.md)
 
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 

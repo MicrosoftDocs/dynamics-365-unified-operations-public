@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Build the Rental Charge Type form
 description: In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 13671
-ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 13671
+ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
 ---
 
 # Build the Rental Charge Type form
@@ -57,7 +46,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
-3.  On the **Finance and Operations** menu, click **Import Project**.
+3.  On the **Finance and operations** menu, click **Import Project**.
 4.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 5.  In the **Select the file to import** window, browse to C:\FMLab, click FMTutorialDataModel.axpp, and then click **Open**.
 6.  In the **Project file location** text box, enter C:\FMLab.

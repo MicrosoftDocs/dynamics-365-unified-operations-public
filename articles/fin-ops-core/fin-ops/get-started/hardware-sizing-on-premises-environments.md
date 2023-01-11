@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Hardware sizing requirements for on-premises environments
-description: This topic lists the hardware sizing requirements for an on-premises environment.
+description: This article lists the hardware sizing requirements for an on-premises environment.
 author: sericks007
 ms.date: 06/02/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 55651
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: chwolf
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-
+ms.custom: 55651
+ms.assetid: 
+ms.service: 
 ---
 
 # Hardware sizing requirements for on-premises environments

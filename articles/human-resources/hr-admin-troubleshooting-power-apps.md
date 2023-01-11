@@ -2,7 +2,7 @@
 # required metadata
 
 title: Can't create an environment in the Power Apps Admin center
-description: This topic explains what to do if the admin can't create an environment in the Microsoft Power Apps Admin center.
+description: This article explains what to do if the admin can't create an environment in the Microsoft Power Apps Admin center.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Can't create an environment in the Power Apps Admin center
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

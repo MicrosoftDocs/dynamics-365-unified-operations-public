@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse settings on journals and lines 
-description: This topic addresses why a reversing entry that was entered on a general journal might not be included on the posted transaction. 
+description: This article addresses why a reversing entry that was entered on a general journal might not be included on the posted transaction. 
 author: kweekley
 ms.date: 04/29/2021
 ms.topic: index-page
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic addresses why a reversing entry that was entered on a general journal might not be included on the posted transaction.  
+This article addresses why a reversing entry that was entered on a general journal might not be included on the posted transaction.  
 
 ## Symptom
 

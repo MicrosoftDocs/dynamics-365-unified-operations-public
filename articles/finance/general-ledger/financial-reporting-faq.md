@@ -2,8 +2,8 @@
 # required metadata
 
 title: Financial reporting FAQ
-description: This topic provides answers to some frequently asked questions about Financial reporting.
-author: jiwo
+description: This article provides answers to some frequently asked questions about Financial reporting.
+author: jinniew
 ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: 
@@ -14,8 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -28,7 +27,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Financial reporting FAQ
 
-This topic provides answers to frequently asked questions about Financial reporting.
+This article provides answers to frequently asked questions about Financial reporting.
 
 ## How do I restrict access to a report by using tree security?
 

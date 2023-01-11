@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up attribute-based pricing for configurable products
-description: This topic explains how to set up attribute-based pricing. 
+description: This article explains how to set up attribute-based pricing. 
 author: t-benebo
 ms.date: 08/20/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up attribute-based pricing. As a prerequisite, you must have a product configuration model that has one or more components and attributes. This example uses the High End Speaker product model in the USMF demo data company. Typically, a product manager uses this procedure.
+This article explains how to set up attribute-based pricing. As a prerequisite, you must have a product configuration model that has one or more components and attributes. This example uses the High End Speaker product model in the USMF demo data company. Typically, a product manager uses this procedure.
 
 
 ## Create a new price model

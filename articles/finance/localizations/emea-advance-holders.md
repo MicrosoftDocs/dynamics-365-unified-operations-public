@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Advance holders overview
-description: This topic provides information about advance holder functionality.
-author: liza-golub
+description: This article provides information about advance holder functionality.
+author: AdamTrukawka
 ms.date: 09/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmWorkerAdvHolderTableListPage_RU
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["262574", "intro-internal"]
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262574,  ""intro-internal
+ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 ---
 
 # Advance holders overview

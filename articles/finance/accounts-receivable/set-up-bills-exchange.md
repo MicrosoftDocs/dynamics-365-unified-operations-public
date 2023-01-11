@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up bills of exchange
-description: This topic describes the steps for setting up bills of exchange.
+description: This article describes the steps for setting up bills of exchange.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: CustBillOfExchangeJour
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 269964
 ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps for setting up bills of exchange.
+This article describes the steps for setting up bills of exchange.
 
 A bill of exchange is a written or electronic order from a customer that specifies that another party, usually a bank, should pay a stated amount to the company. When you use a bill of exchange as payment for a sales order invoice or free text invoice, you credit the customer account. That credit is secured by the bill of exchange until the customer pays the bill of exchange to the bank. Typically, you will settle the invoice with the bill of exchange on the due date. When you receive notification from your bank that the bill of exchange has been honored, you can close the bill of exchange. You can draw a bill of exchange through your bank at either of the following times:
 

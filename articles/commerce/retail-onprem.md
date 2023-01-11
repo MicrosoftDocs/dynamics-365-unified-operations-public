@@ -1,45 +1,33 @@
 ---
-# required metadata
-
 title: Commerce capabilities that are available in on-premises deployments
-description: This topic lists the Commerce capabilities available in on-premises deployments.
-author: aamirallaqaband
-ms.date: 11/01/2018
+description: This article lists the capabilities available in on-premises deployments of Microsoft Dynamics 365 Commerce.
+author: ShalabhjainMSFT
+ms.date: 12/13/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
-ms.author: aamiral
-ms.search.validFrom: July 2017 update 
-ms.dyn365.ops.version: 2017-06-30 
+ms.author: shajain
+ms.search.validFrom: 2017-06-20
+
 ---
 
 # Commerce capabilities that are available in on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-This topic lists Commerce capabilities that are available in on-premises deployments.
+This article lists the capabilities available in on-premises deployments of Microsoft Dynamics 365 Commerce.
 
 For more information about on-premises deployments, see [On-premises deployment home page](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 | Component            | On-premises status |
-|----------------------|--------------------|
+| -------------------- | ------------------ |
 | Cloud Point of Sale  | Available          |
 | Retail Point of Sale | Available          |
 | Modern Point of Sale | Available          |
 | Commerce Scale Unit  | Available          |
 | Channel database     | Available          |
-| Hardware station     | Not available      |
+| Hardware station     | Available          |
 | AX 2012 N-1 support  | Not available      |
 
 ## Head office capability
@@ -77,7 +65,7 @@ The following table indicates which pricing and discount components are availabl
 | Affiliation price groups                              | Available          |
 | Commerce channel price groups                         | Available          |
 | Pricing priorities                                    | Available          |
-| Price simulator                                       | Not available      |
+| Price simulator                                       | Available          |
 
 ### Customer
 
@@ -114,7 +102,7 @@ The following table indicates which inventory management components are availabl
 | Component                      | On-premises status |
 |--------------------------------|--------------------|
 | Packing slip                   | Available          |
-| Fulfilment groups              | Available          |
+| Fulfillment groups              | Available          |
 | Cross docking and buyer's push | Available          |
 | Qty on hand                    | Available          |
 | Stock counts                   | Available          |

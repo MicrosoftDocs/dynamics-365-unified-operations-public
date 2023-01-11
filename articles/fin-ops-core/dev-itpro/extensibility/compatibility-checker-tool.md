@@ -1,25 +1,19 @@
 ---
 title: Compatibility checker tool
-description: This topic provides information about the compatibility checker tool, which finds and reports metadata breaking changes.
+description: This article provides information about the compatibility checker tool, which finds and reports metadata breaking changes.
 author: smithanataraj
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Compatibility checker tool
@@ -34,10 +28,10 @@ The compatibility checker tool is available as one of the dev tools in Platform 
 
 The tool compares metadata of the current version with metadata of a baseline version. It detects and reports metadata changes that Microsoft has identified as breaking and added to the tool.
 
-For a list of breaking changes that the tool detects, see the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool) section later in this topic.
+For a list of breaking changes that the tool detects, see the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool) section later in this article.
 
 > [!NOTE]
-> + The list in this topic doesn't include all the breaking changes that the tool can detect.
+> + The list in this article doesn't include all the breaking changes that the tool can detect.
 > + The tool doesn't detect all breaking changes.
 
 ## What the tool doesn't detect
@@ -114,7 +108,7 @@ The following rules apply:
 Any of the following changes will break table extensions and table references to tables and table fields:
 
 + Deleting or renaming table fields, field groups, indexes, table mappings, or table relations
-+ Modifying these table properties: **Extends**, **SuportInheritance**, **TableType**, **SaveDataPerCompany.Yes**, or **SaveDataPerPartition**
++ Modifying these table properties: **Extends**, **SupportInheritance**, **TableType**, **SaveDataPerCompany.Yes**, or **SaveDataPerPartition**
 + Modifying these table field properties: **ExtendedDataType**, **Scale**, or **String size**
 + Modifying these table index properties: **AllowDuplicates.No** or **IndexType**
 

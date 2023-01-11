@@ -2,9 +2,9 @@
 # required metadata
 
 title: Currency revaluation in a consolidation company
-description: This topic describes how to revalue currency in a consolidation company. 
-author: roschlom
-ms.date: 10/02/2018
+description: This article describes how to revalue currency in a consolidation company. 
+author: aprilolson
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: LedgerExchAdjHist
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -46,18 +46,18 @@ When you consolidate data from one accounting currency to another, you must stil
 
 | Date       | Ledger account               | Currency | Amount |
 |------------|------------------------------|----------|--------|
-| 10/11/2015 | 110110 – Cash                | USD      | 500    |
-| 10/11/2015 | 130100 – Accounts Receivable | USD      | -500   |
+| 10/11/2020 | 110110 – Cash                | USD      | 500    |
+| 10/11/2020 | 130100 – Accounts Receivable | USD      | -500   |
 
 ## Exchange rates
 
 | From currency | To currency | Start date | Exchange rate |
 |---------------|-------------|------------|---------------|
-| EUR           | USD         | 10/1/2015  | 200           |
-| EUR           | USD         | 11/1/2015  | 150           |
-| EUR           | USD         | 12/1/2012  | 100           |
+| EUR           | USD         | 10/1/2020  | 200           |
+| EUR           | USD         | 11/1/2020  | 150           |
+| EUR           | USD         | 12/1/2017  | 100           |
 
-## Perform the consolidation for October 2015
+## Perform the consolidation for October 2020
 ### Balances in the consolidation company
 
 | Ledger account | Currency | Amount | Calculation    |
@@ -65,7 +65,7 @@ When you consolidate data from one accounting currency to another, you must stil
 | 110110         | EUR      | 250    | 500 USD × 50%  |
 | 130100         | EUR      | -250   | -500 USD × 50% |
 
-## Perform currency revaluation for the accounts from October 1, 2015, through November 30, 2015
+## Perform currency revaluation for the accounts from October 1, 2020, through November 30, 2020
 ### Balances in the consolidation company
 
 | Ledger account | Currency | Amount  | Calculation                        |
@@ -77,7 +77,7 @@ When you consolidate data from one accounting currency to another, you must stil
 
 You will see additional transactions for the reporting currency amounts.
 
-## Perform currency revaluation for the accounts from October 1, 2015, through December 31, 2015
+## Perform currency revaluation for the accounts from October 1, 2020, through December 31, 2020
 ### Balances in the consolidation company
 
 | Ledger account | Currency | Amount  | Calculation                                          |

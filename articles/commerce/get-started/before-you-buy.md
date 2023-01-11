@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Before you buy Retail
 description: New to Dynamics 365 Commerce? We've put together some guidance to help you, whether you're still evaluating or ready to make a purchase.
-author: jblucher
+author: josaw1
 ms.date: 09/28/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Retail July 2017 update
 ms.search.industry: retail
-ms.author: jeffbl
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Retail July 2017 update 
 ---
 
 # Before you buy Retail

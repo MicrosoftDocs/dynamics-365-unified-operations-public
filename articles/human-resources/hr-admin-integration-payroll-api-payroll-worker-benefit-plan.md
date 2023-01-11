@@ -2,8 +2,8 @@
 # required metadata
 
 title: Payroll worker benefit plan
-description: This topic provides details and an example query for the Payroll worker benefit plan entity in Dynamics 365 Human Resources.
-author: marcelbf
+description: This article provides details and an example query for the Payroll worker benefit plan entity in Dynamics 365 Human Resources.
+author: twheeloc
 ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
@@ -19,16 +19,19 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: marcelbf
+ms.author: twheeloc
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: Human Resources
 ---
 
 # Payroll worker benefit plan
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Payroll worker benefit plan entity for Dynamics 365 Human Resources.
+This article describes the Payroll worker benefit plan entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_payrollworkerbenefitplanentities.
 

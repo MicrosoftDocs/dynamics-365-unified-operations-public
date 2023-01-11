@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Financial reporting (Russia)
-description: This topic provides information about financial reporting for Russia.
-author: Anasyash
+description: This article provides information about financial reporting for Russia.
+author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Financial reporting (Russia)

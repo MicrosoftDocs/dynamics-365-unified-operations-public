@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Purchase order codes in the public sector
-description: This topic provides information about the codes and special messages that can be used with confirming purchase orders.
-author: ShylaThompson
+description: This article provides information about the codes and special messages that can be used with confirming purchase orders.
+author: velofog
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ConfirmingPOCodes, PurchTableListPage
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: roschlom
-# ms.tgt_pltfrm: 
-ms.custom: 27291
-ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27291
+ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df
+ms.search.industry: Public sector
+ms.search.form: ConfirmingPOCodes, PurchTableListPage
 ---
 
 # Purchase order codes in the public sector

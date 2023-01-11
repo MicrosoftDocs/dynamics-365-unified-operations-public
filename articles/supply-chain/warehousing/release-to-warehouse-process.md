@@ -1,7 +1,7 @@
 ---
 title: Release to warehouse
-description: This topic provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
-author: mirzaab
+description: This article provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
+author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable 
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
+This article provides details about the release to warehouse process. It describes entities that are created when you release an order to the warehouse and options that you can use to initiate the process.
 
 ## Release to warehouse overview
 
-Release to warehouse is the process of making inventory ready for dispatch processing. When you release an order to the warehouse, the system creates load lines and shipments. If automatic wave processing is set up, loads and required work are also created. The configuration of the entities that are involved depends on the system settings. This section of the topic reviews the entities that are created during the release to warehouse process and the system settings that define them.
+Release to warehouse is the process of making inventory ready for dispatch processing. When you release an order to the warehouse, the system creates load lines and shipments. If automatic wave processing is set up, loads and required work are also created. The configuration of the entities that are involved depends on the system settings. This section of the article reviews the entities that are created during the release to warehouse process and the system settings that define them.
 
 A *shipment* is a group of sales order or transfer order lines for the same customer or the same delivery address.
 
@@ -29,7 +29,7 @@ A *load* is a group of sales order or transfer order lines that are grouped toge
 
 Warehouse *work* is any warehouse operation that is performed by a warehouse worker. Typically, warehouse work operations consist of at least two consecutive actions: a warehouse worker picks up on-hand inventory in one location and then puts it away in another location.
 
-When orders are released to the warehouse, the system creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated shipment consolidation during the release to warehouse process. For more information, see [Shipment consolidation policies](about-shipment-consolidation-policies.md).
+When orders are released to the warehouse, the system creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated shipment consolidation during the release to warehouse process. For more information, see [Shipment consolidation policies overview](about-shipment-consolidation-policies.md).
 
 The system uses *waves* to create picking work and loads for shipment. A *wave template* must be available for the type of wave that you want to create and for the warehouse of the order line. Wave templates of the *Shipping* type are used to ship items for sales orders and transfer orders.
 
@@ -62,7 +62,7 @@ In conclusion, when an order is released to the warehouse, the most automated fl
 
 Depending on wave templates, work templates, and location directives settings, some steps in this flow might become manual. However, the overall flow remains the same.
 
-You have several options for how you release an order to the warehouse. You can perform the operation manually, or you can set up a batch job. The remaining sections of this topic review, in detail, the various ways that you can perform a release to warehouse operation.
+You have several options for how you release an order to the warehouse. You can perform the operation manually, or you can set up a batch job. The remaining sections of this article review, in detail, the various ways that you can perform a release to warehouse operation.
 
 ## Manual release to the warehouse from the Sales orders and Transfer orders pages
 
@@ -120,6 +120,7 @@ To set up the batch job that releases sales orders, follow these steps.
     - **Quantity to release** – Select whether the whole quantity or only the physically reserved quantity should be released to the warehouse.
     - **Allow release of partially released orders** – Specify whether remaining quantities for partially released orders should be released to the warehouse.
     - **Keep reservations on release failure** – Specify whether quantities that were automatically reserved for a sales order should remain reserved if the release to warehouse process fails.
+    - **Group releases by customer** – Specify whether the system should process release to warehouse operations separately for each customer or release all sales orders at the same time. When this option is set to *Yes*, the system will collect all the sales order lines for a selected customer, release those orders to the warehouse, and then process the next customer. When this option is set to *No*, the system will release all available sales order lines in a single release to warehouse operation. By enabling this option, you can help improve the performance and resilience of the release to warehouse process. However, you must be careful when you use this option together with wave templates that are configured to process waves at release to warehouse, because this combination might generate many single-customer waves, each of which has work that has been generated for that customer only. If you want to generate work that combines shipments for multiple customers, you should either turn off the *Group releases by customer* option or configure your wave templates to use postponed processing.
     - **Locked order handling** – Select how the system should handle sales orders that are currently locked because they are being edited by other users or processes:
 
         - *Wait for orders to unlock* – The system should wait for the orders to become unlocked before it releases them to the warehouse. In this case, the release to warehouse process might take more time.

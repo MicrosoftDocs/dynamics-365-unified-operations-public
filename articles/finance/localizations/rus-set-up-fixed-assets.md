@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Set up fixed assets (Russia)
-description: This topic explains how to set up fixed assets for Russia.
-author: ShylaThompson
+description: This article explains how to set up fixed assets for Russia.
+author: AdamTrukawka
 ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: 
 ---
 
 # Set up fixed assets (Russia)

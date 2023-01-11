@@ -1,24 +1,14 @@
 ---
-# required metadata
-
 title: Supported fonts
-description: Finance and Operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service. 
+description: Finance and operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service.
 author: RichdiMSFT
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: richdi
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
@@ -28,11 +18,11 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations apps include access to hundreds of standard, business-ready fonts available for documents rendered by the cloud-hosted service. 
+finance and operations apps include access to hundreds of standard, business-ready fonts available for documents rendered by the cloud-hosted service. 
 
 This portfolio will continue to grow as the service expands into new regions and industries. The service doesn't support installation of custom fonts in customer environments.
 
-The following list captures the portfolio of font families available for documents produced using SQL Server Reporting Services (SSRS) services in Finance and Operations apps.
+The following list captures the portfolio of font families available for documents produced using SQL Server Reporting Services (SSRS) services in finance and operations apps.
 
 ## Supported fonts for application version 8.3 with Platform update 32 or later
 
@@ -40,55 +30,55 @@ The following list captures the portfolio of font families available for documen
 |--------------------------|-----------------------------|
 | Agency FB                | Office font                 |
 | Algerian                 | Office font                 |
-| Arial                    | Finance and Operations font |
-| Arial Black              | Finance and Operations font |
-| Arial Narrow             | Finance and Operations font |
+| Arial                    | Finance and operations font |
+| Arial Black              | Finance and operations font |
+| Arial Narrow             | Finance and operations font |
 | Arial Rounded MT Bold    | Office font                 |
 | Baskerville Old Face     | Office font                 |
 | Bauhaus 93               | Office font                 |
-| BC C128 HD Medium        | Finance and Operations font |
-| BC C128 HD Narrow        | Finance and Operations font |
-| BC C128 HD Wide          | Finance and Operations font |
-| BC C128 Medium           | Finance and Operations font |
-| BC C128 Narrow           | Finance and Operations font |
-| BC C128 Wide             | Finance and Operations font |
-| BC C39 2 to 1 HD Medium  | Finance and Operations font |
-| BC C39 2 to 1 HD Narrow  | Finance and Operations font |
-| BC C39 2 to 1 HD Wide    | Finance and Operations font |
-| BC C39 2 to 1 Medium     | Finance and Operations font |
-| BC C39 2 to 1 Narrow     | Finance and Operations font |
-| BC C39 2 to 1 Wide       | Finance and Operations font |
-| BC C39 3 to 1 HD Medium  | Finance and Operations font |
-| BC C39 3 to 1 HD Narrow  | Finance and Operations font |
-| BC C39 3 to 1 HD Wide    | Finance and Operations font |
-| BC C39 3 to 1 Medium     | Finance and Operations font |
-| BC C39 3 to 1 Narrow     | Finance and Operations font |
-| BC C39 3 to 1 Wide       | Finance and Operations font |
-| BC CBar 2 to 1 HD Medium | Finance and Operations font |
-| BC CBar 2 to 1 HD Narrow | Finance and Operations font |
-| BC CBar 2 to 1 HD Wide   | Finance and Operations font |
-| BC CBar 2 to 1 Medium    | Finance and Operations font |
-| BC CBar 2 to 1 Narrow    | Finance and Operations font |
-| BC CBar 2 to 1 Wide      | Finance and Operations font |
-| BC CBar 3 to 1 HD Medium | Finance and Operations font |
-| BC CBar 3 to 1 HD Narrow | Finance and Operations font |
-| BC CBar 3 to 1 HD Wide   | Finance and Operations font |
-| BC CBar 3 to 1 Medium    | Finance and Operations font |
-| BC CBar 3 to 1 Narrow    | Finance and Operations font |
-| BC CBar 3 to 1 Wide      | Finance and Operations font |
-| BC I25 HD Medium         | Finance and Operations font |
-| BC I25 HD Narrow         | Finance and Operations font |
-| BC I25 HD Wide           | Finance and Operations font |
-| BC I25 Medium            | Finance and Operations font |
-| BC I25 Narrow            | Finance and Operations font |
-| BC I25 Wide              | Finance and Operations font |
-| BC Postnet               | Finance and Operations font |
-| BC UPC HD Medium         | Finance and Operations font |
-| BC UPC HD Narrow         | Finance and Operations font |
-| BC UPC HD Wide           | Finance and Operations font |
-| BC UPC Medium            | Finance and Operations font |
-| BC UPC Narrow            | Finance and Operations font |
-| BC UPC Wide              | Finance and Operations font |
+| BC C128 HD Medium        | Finance and operations font |
+| BC C128 HD Narrow        | Finance and operations font |
+| BC C128 HD Wide          | Finance and operations font |
+| BC C128 Medium           | Finance and operations font |
+| BC C128 Narrow           | Finance and operations font |
+| BC C128 Wide             | Finance and operations font |
+| BC C39 2 to 1 HD Medium  | Finance and operations font |
+| BC C39 2 to 1 HD Narrow  | Finance and operations font |
+| BC C39 2 to 1 HD Wide    | Finance and operations font |
+| BC C39 2 to 1 Medium     | Finance and operations font |
+| BC C39 2 to 1 Narrow     | Finance and operations font |
+| BC C39 2 to 1 Wide       | Finance and operations font |
+| BC C39 3 to 1 HD Medium  | Finance and operations font |
+| BC C39 3 to 1 HD Narrow  | Finance and operations font |
+| BC C39 3 to 1 HD Wide    | Finance and operations font |
+| BC C39 3 to 1 Medium     | Finance and operations font |
+| BC C39 3 to 1 Narrow     | Finance and operations font |
+| BC C39 3 to 1 Wide       | Finance and operations font |
+| BC CBar 2 to 1 HD Medium | Finance and operations font |
+| BC CBar 2 to 1 HD Narrow | Finance and operations font |
+| BC CBar 2 to 1 HD Wide   | Finance and operations font |
+| BC CBar 2 to 1 Medium    | Finance and operations font |
+| BC CBar 2 to 1 Narrow    | Finance and operations font |
+| BC CBar 2 to 1 Wide      | Finance and operations font |
+| BC CBar 3 to 1 HD Medium | Finance and operations font |
+| BC CBar 3 to 1 HD Narrow | Finance and operations font |
+| BC CBar 3 to 1 HD Wide   | Finance and operations font |
+| BC CBar 3 to 1 Medium    | Finance and operations font |
+| BC CBar 3 to 1 Narrow    | Finance and operations font |
+| BC CBar 3 to 1 Wide      | Finance and operations font |
+| BC I25 HD Medium         | Finance and operations font |
+| BC I25 HD Narrow         | Finance and operations font |
+| BC I25 HD Wide           | Finance and operations font |
+| BC I25 Medium            | Finance and operations font |
+| BC I25 Narrow            | Finance and operations font |
+| BC I25 Wide              | Finance and operations font |
+| BC Postnet               | Finance and operations font |
+| BC UPC HD Medium         | Finance and operations font |
+| BC UPC HD Narrow         | Finance and operations font |
+| BC UPC HD Wide           | Finance and operations font |
+| BC UPC Medium            | Finance and operations font |
+| BC UPC Narrow            | Finance and operations font |
+| BC UPC Wide              | Finance and operations font |
 | Bell MT                  | Office font                 |
 | Berlin Sans FB           | Office font                 |
 | Berlin Sans FB Demi      | Office font                 |
@@ -106,13 +96,13 @@ The following list captures the portfolio of font families available for documen
 | Broadway                 | Office font                 |
 | Brush Script MT          | Office font                 |
 | Buxton Sketch            | Office font                 |
-| Calibri                  | Finance and Operations font |
-| Calibri Light            | Finance and Operations font |
+| Calibri                  | Finance and operations font |
+| Calibri Light            | Finance and operations font |
 | Californian FB           | Office font                 |
 | Calisto MT               | Office font                 |
-| Cambria                  | Finance and Operations font |
-| Cambria Math             | Finance and Operations font |
-| Candara                  | Finance and Operations font |
+| Cambria                  | Finance and operations font |
+| Cambria Math             | Finance and operations font |
+| Candara                  | Finance and operations font |
 | Castellar                | Office font                 |
 | Centaur                  | Office font                 |
 | Century                  | Office font                 |
@@ -120,19 +110,19 @@ The following list captures the portfolio of font families available for documen
 | Century Schoolbook       | Office font                 |
 | Chiller                  | Office font                 |
 | Colonna MT               | Office font                 |
-| Comic Sans MS            | Finance and Operations font |
-| Consolas                 | Finance and Operations font |
-| Constantia               | Finance and Operations font |
+| Comic Sans MS            | Finance and operations font |
+| Consolas                 | Finance and operations font |
+| Constantia               | Finance and operations font |
 | Cooper Black             | Office font                 |
 | Copperplate Gothic Bold  | Office font                 |
 | Copperplate Gothic Light | Office font                 |
-| Corbel                   | Finance and Operations font |
-| Courier New              | Finance and Operations font |
+| Corbel                   | Finance and operations font |
+| Courier New              | Finance and operations font |
 | Curlz MT                 | Office font                 |
 | DengXian                 | Office font                 |
-| Dotum                    | Finance and Operations font |
-| DotumChe                 | Finance and Operations font |
-| Ebrima                   | Finance and Operations font |
+| Dotum                    | Finance and operations font |
+| DotumChe                 | Finance and operations font |
+| Ebrima                   | Finance and operations font |
 | Edwardian Script ITC     | Office font                 |
 | Elephant                 | Office font                 |
 | Engravers MT             | Office font                 |
@@ -147,14 +137,14 @@ The following list captures the portfolio of font families available for documen
 | Franklin Gothic Demi     | Office font                 |
 | Franklin Gothic Demi Con | Office font                 |
 | Franklin Gothic Heavy    | Office font                 |
-| Franklin Gothic Medium   | Finance and Operations font |
+| Franklin Gothic Medium   | Finance and operations font |
 | Franklin Gothic Medium C | Office font                 |
 | Freestyle Script         | Office font                 |
 | French Script MT         | Office font                 |
-| Gabriola                 | Finance and Operations font |
-| Gadugi                   | Finance and Operations font |
+| Gabriola                 | Finance and operations font |
+| Gadugi                   | Finance and operations font |
 | Garamond                 | Office font                 |
-| Georgia                  | Finance and Operations font |
+| Georgia                  | Finance and operations font |
 | Gigi                     | Office font                 |
 | Gill Sans MT             | Office font                 |
 | Gill Sans MT Condensed   | Office font                 |
@@ -164,91 +154,91 @@ The following list captures the portfolio of font families available for documen
 | Gloucester MT Extra Cond | Office font                 |
 | Goudy Old Style          | Office font                 |
 | Goudy Stout              | Office font                 |
-| Gulim                    | Finance and Operations font |
-| GulimChe                 | Finance and Operations font |
+| Gulim                    | Finance and operations font |
+| GulimChe                 | Finance and operations font |
 | Haettenschweiler         | Office font                 |
 | Harlow Solid Italic      | Office font                 |
 | Harrington               | Office font                 |
 | High Tower Text          | Office font                 |
-| IDAutomationMICR         | Finance and Operations font |
-| Impact                   | Finance and Operations font |
+| IDAutomationMICR         | Finance and operations font |
+| Impact                   | Finance and operations font |
 | Imprint MT Shadow        | Office font                 |
 | Informal Roman           | Office font                 |
-| Javanese Text            | Finance and Operations font |
+| Javanese Text            | Finance and operations font |
 | Jokerman                 | Office font                 |
 | Juice ITC                | Office font                 |
 | Kristen ITC              | Office font                 |
 | Kunstler Script          | Office font                 |
 | Leelawadee               | Office font                 |
-| Leelawadee UI            | Finance and Operations font |
-| Leelawadee UI Semilight  | Finance and Operations font |
+| Leelawadee UI            | Finance and operations font |
+| Leelawadee UI Semilight  | Finance and operations font |
 | Lucida Bright            | Office font                 |
 | Lucida Calligraphy       | Office font                 |
-| Lucida Console           | Finance and Operations font |
+| Lucida Console           | Finance and operations font |
 | Lucida Fax               | Office font                 |
 | Lucida Handwriting       | Office font                 |
 | Lucida Sans              | Office font                 |
 | Lucida Sans Typewriter   | Office font                 |
-| Lucida Sans Unicode      | Finance and Operations font |
+| Lucida Sans Unicode      | Finance and operations font |
 | Magneto                  | Office font                 |
 | Maiandra GD              | Office font                 |
-| Malgun Gothic            | Finance and Operations font |
-| Malgun Gothic Semilight  | Finance and Operations font |
-| Marlett                  | Finance and Operations font |
+| Malgun Gothic            | Finance and operations font |
+| Malgun Gothic Semilight  | Finance and operations font |
+| Marlett                  | Finance and operations font |
 | Matura MT Script Capital | Office font                 |
-| MICR E13B 2.1            | Finance and Operations font |
-| Microsoft Himalaya       | Finance and Operations font |
-| Microsoft JhengHei       | Finance and Operations font |
-| Microsoft JhengHei Light | Finance and Operations font |
-| Microsoft JhengHei UI    | Finance and Operations font |
+| MICR E13B 2.1            | Finance and operations font |
+| Microsoft Himalaya       | Finance and operations font |
+| Microsoft JhengHei       | Finance and operations font |
+| Microsoft JhengHei Light | Finance and operations font |
+| Microsoft JhengHei UI    | Finance and operations font |
 | Microsoft JhengHei UI Li | Office font                 |
 | Microsoft MHei           | Office font                 |
 | Microsoft NeoGothic      | Office font                 |
-| Microsoft New Tai Lue    | Finance and Operations font |
-| Microsoft PhagsPa        | Finance and Operations font |
-| Microsoft Sans Serif     | Finance and Operations font |
-| Microsoft Tai Le         | Finance and Operations font |
+| Microsoft New Tai Lue    | Finance and operations font |
+| Microsoft PhagsPa        | Finance and operations font |
+| Microsoft Sans Serif     | Finance and operations font |
+| Microsoft Tai Le         | Finance and operations font |
 | Microsoft Uighur         | Office font                 |
-| Microsoft YaHei          | Finance and Operations font |
-| Microsoft YaHei Light    | Finance and Operations font |
-| Microsoft YaHei UI       | Finance and Operations font |
-| Microsoft YaHei UI Light | Finance and Operations font |
-| Microsoft Yi Baiti       | Finance and Operations font |
-| MingLiU                  | Finance and Operations font |
-| MingLiU-ExtB             | Finance and Operations font |
-| MingLiU_HKSCS            | Finance and Operations font |
-| MingLiU_HKSCS-ExtB       | Finance and Operations font |
+| Microsoft YaHei          | Finance and operations font |
+| Microsoft YaHei Light    | Finance and operations font |
+| Microsoft YaHei UI       | Finance and operations font |
+| Microsoft YaHei UI Light | Finance and operations font |
+| Microsoft Yi Baiti       | Finance and operations font |
+| MingLiU                  | Finance and operations font |
+| MingLiU-ExtB             | Finance and operations font |
+| MingLiU_HKSCS            | Finance and operations font |
+| MingLiU_HKSCS-ExtB       | Finance and operations font |
 | Mistral                  | Office font                 |
 | Modern No. 20            | Office font                 |
-| Mongolian Baiti          | Finance and Operations font |
+| Mongolian Baiti          | Finance and operations font |
 | Monotype Corsiva         | Office font                 |
-| MS Gothic                | Finance and Operations font |
+| MS Gothic                | Finance and operations font |
 | MS Outlook               | Office font                 |
-| MS PGothic               | Finance and Operations font |
+| MS PGothic               | Finance and operations font |
 | MS Reference Sans Serif  | Office font                 |
 | MS Reference Specialty   | Office font                 |
-| MS UI Gothic             | Finance and Operations font |
+| MS UI Gothic             | Finance and operations font |
 | MT Extra                 | Office font                 |
-| MV Boli                  | Finance and Operations font |
-| Myanmar Text             | Finance and Operations font |
+| MV Boli                  | Finance and operations font |
+| Myanmar Text             | Finance and operations font |
 | Niagara Engraved         | Office font                 |
 | Niagara Solid            | Office font                 |
-| Nirmala UI               | Finance and Operations font |
-| Nirmala UI Semilight     | Finance and Operations font |
-| NSimSun                  | Finance and Operations font |
+| Nirmala UI               | Finance and operations font |
+| Nirmala UI Semilight     | Finance and operations font |
+| NSimSun                  | Finance and operations font |
 | OCR A Extended           | Office font                 |
-| OCRB                     | Finance and Operations font |
+| OCRB                     | Finance and operations font |
 | Old English Text MT      | Office font                 |
 | Onyx                     | Office font                 |
 | Palace Script MT         | Office font                 |
-| Palatino Linotype        | Finance and Operations font |
+| Palatino Linotype        | Finance and operations font |
 | Papyrus                  | Office font                 |
 | Parchment                | Office font                 |
 | Perpetua                 | Office font                 |
 | Perpetua Titling MT      | Office font                 |
 | Playbill                 | Office font                 |
-| PMingLiU                 | Finance and Operations font |
-| PMingLiU-ExtB            | Finance and Operations font |
+| PMingLiU                 | Finance and operations font |
+| PMingLiU-ExtB            | Finance and operations font |
 | Poor Richard             | Office font                 |
 | Pristina                 | Office font                 |
 | Rage Italic              | Office font                 |
@@ -258,59 +248,59 @@ The following list captures the portfolio of font families available for documen
 | Rockwell Extra Bold      | Office font                 |
 | Script MT Bold           | Office font                 |
 | Segoe Marker             | Office font                 |
-| Segoe MDL2 Assets        | Finance and Operations font |
-| Segoe Print              | Finance and Operations font |
-| Segoe Script             | Finance and Operations font |
-| Segoe UI                 | Finance and Operations font |
-| Segoe UI Black           | Finance and Operations font |
-| Segoe UI Emoji           | Finance and Operations font |
-| Segoe UI Historic        | Finance and Operations font |
-| Segoe UI Light           | Finance and Operations font |
-| Segoe UI Semibold        | Finance and Operations font |
-| Segoe UI Semilight       | Finance and Operations font |
-| Segoe UI Symbol          | Finance and Operations font |
+| Segoe MDL2 Assets        | Finance and operations font |
+| Segoe Print              | Finance and operations font |
+| Segoe Script             | Finance and operations font |
+| Segoe UI                 | Finance and operations font |
+| Segoe UI Black           | Finance and operations font |
+| Segoe UI Emoji           | Finance and operations font |
+| Segoe UI Historic        | Finance and operations font |
+| Segoe UI Light           | Finance and operations font |
+| Segoe UI Semibold        | Finance and operations font |
+| Segoe UI Semilight       | Finance and operations font |
+| Segoe UI Symbol          | Finance and operations font |
 | Segoe WP                 | Office font                 |
 | Segoe WP Black           | Office font                 |
 | Segoe WP Light           | Office font                 |
 | Segoe WP Semibold        | Office font                 |
 | Segoe WP SemiLight       | Office font                 |
 | Showcard Gothic          | Office font                 |
-| SimSun                   | Finance and Operations font |
-| SimSun-ExtB              | Finance and Operations font |
-| Sitka Banner             | Finance and Operations font |
-| Sitka Display            | Finance and Operations font |
-| Sitka Heading            | Finance and Operations font |
-| Sitka Small              | Finance and Operations font |
-| Sitka Subheading         | Finance and Operations font |
-| Sitka Text               | Finance and Operations font |
+| SimSun                   | Finance and operations font |
+| SimSun-ExtB              | Finance and operations font |
+| Sitka Banner             | Finance and operations font |
+| Sitka Display            | Finance and operations font |
+| Sitka Heading            | Finance and operations font |
+| Sitka Small              | Finance and operations font |
+| Sitka Subheading         | Finance and operations font |
+| Sitka Text               | Finance and operations font |
 | SketchFlow Print         | Office font                 |
 | Snap ITC                 | Office font                 |
 | Stencil                  | Office font                 |
-| Sylfaen                  | Finance and Operations font |
-| Symbol                   | Finance and Operations font |
-| Tahoma                   | Finance and Operations font |
+| Sylfaen                  | Finance and operations font |
+| Symbol                   | Finance and operations font |
+| Tahoma                   | Finance and operations font |
 | Tempus Sans ITC          | Office font                 |
-| Times New Roman          | Finance and Operations font |
-| Trebuchet MS             | Finance and Operations font |
+| Times New Roman          | Finance and operations font |
+| Trebuchet MS             | Finance and operations font |
 | Tw Cen MT                | Office font                 |
 | Tw Cen MT Condensed      | Office font                 |
 | Tw Cen MT Condensed Extr | Office font                 |
-| Verdana                  | Finance and Operations font |
+| Verdana                  | Finance and operations font |
 | Viner Hand ITC           | Office font                 |
 | Vivaldi                  | Office font                 |
 | Vladimir Script          | Office font                 |
-| Webdings                 | Finance and Operations font |
+| Webdings                 | Finance and operations font |
 | Wide Latin               | Office font                 |
-| Wingdings                | Finance and Operations font |
+| Wingdings                | Finance and operations font |
 | Wingdings 2              | Office font                 |
 | Wingdings 3              | Office font                 |
-| Yu Gothic                | Finance and Operations font |
-| Yu Gothic Light          | Finance and Operations font |
-| Yu Gothic Medium         | Finance and Operations font |
-| Yu Gothic UI             | Finance and Operations font |
-| Yu Gothic UI Light       | Finance and Operations font |
-| Yu Gothic UI Semibold    | Finance and Operations font |
-| Yu Gothic UI Semilight   | Finance and Operations font |
+| Yu Gothic                | Finance and operations font |
+| Yu Gothic Light          | Finance and operations font |
+| Yu Gothic Medium         | Finance and operations font |
+| Yu Gothic UI             | Finance and operations font |
+| Yu Gothic UI Light       | Finance and operations font |
+| Yu Gothic UI Semibold    | Finance and operations font |
+| Yu Gothic UI Semilight   | Finance and operations font |
 
 ## Supported fonts for application version 8.0 with Platform update 23
 
@@ -592,3 +582,4 @@ The following list captures the portfolio of font families available for documen
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

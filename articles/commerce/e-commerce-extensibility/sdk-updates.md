@@ -1,35 +1,23 @@
 ---
-# required metadata
-
 title: SDK and module library kit updates
-description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 10/27/2021
+ms.date: 10/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # SDK and module library updates
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
 Regular updates will be released as part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes will be provided for all changes.
 
@@ -39,10 +27,10 @@ The SDK package.json file that is included in the SDK root directory controls wh
 
 ```json
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.32",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.32",
+    "@msdyn365-commerce-modules/starter-pack": "9.40",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.40",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.32",
+    "@msdyn365-commerce/retail-proxy": "9.40",
 }
 ```
 
@@ -59,7 +47,7 @@ Patch versions don't change dependencies on the Commerce Scale Unit and can be u
 
 ### Module library versions mapped to Commerce Scale Unit versions 
 
-The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **October 22nd, 2021**.
+The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **October 21st, 2022**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -73,6 +61,14 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.20 | 9.30.x |
 | 10.0.21 | 9.31.x |
 | 10.0.22 | 9.32.x |
+| 10.0.23 | 9.33.x |
+| 10.0.24 | 9.34.x |
+| 10.0.25 | 9.35.x |
+| 10.0.26 | 9.36.x |
+| 10.0.27 | 9.37.x |
+| 10.0.28 | 9.38.x |
+| 10.0.29 | 9.39.x |
+| 10.0.30 | 9.40.x |
 
 ## Pull updates
 
@@ -82,13 +78,17 @@ After the latest dependencies are pulled down, you can run **yarn start** to run
 
 When a configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, all dependencies are updated to their local versions during the packaging process. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
 
+### Update SDK with CLI command
+
+We recommend that you keep the online SDK updated to the latest version, regardless of the versions of Commerce Scale Unit and the module library, because the online SDK is backward compatible with all versions. To update to the latest SDK, run the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command to ensure that the yarn.lock file is deleted before you run yarn to pull down the latest version of the online SDK.
+
 ## Determine the latest released versions of the dependency packages
 
 To determine the latest released versions of the dependency packages, follow these feed links:
 
-- [Module library feed](https://dev.azure.com/commerce-partner/Registry/_packaging?_a=package&feed=dynamics365-commerce&view=versions&package=%40msdyn365-commerce-modules%2Fstarter-pack&protocolType=Npm)
-- [SDK feed](https://dev.azure.com/commerce-partner/Registry/_packaging?_a=package&feed=dynamics365-commerce&view=versions&package=%40msdyn365-commerce%2Fbootloader&protocolType=Npm)
-- [Retail Server proxy feed](https://dev.azure.com/commerce-partner/Registry/_packaging?_a=package&feed=dynamics365-commerce&view=versions&package=%40msdyn365-commerce%2Fretail-proxy&protocolType=Npm)
+- [Module library feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce-modules%2Fstarter-pack/9.36.11-preview.0/overview)
+- [SDK feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce%2Fbootloader/1.36.8/overview)
+- [Retail Server proxy feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce%2Fretail-proxy/9.36.2/overview)
 
 ## Determine the versions deployed on an e-Commerce site
 

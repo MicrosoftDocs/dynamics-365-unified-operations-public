@@ -4,7 +4,7 @@
 title: Open in Excel experiences FAQ
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 
@@ -62,6 +65,9 @@ The following image shows the **Open in Microsoft Office** menu on the **Fleet C
 
 ## When will an entity show as an Open in Excel option?
 When an entity has the same root datasource (table) as a form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. This is referred to as a “generated” option.
+
+> [!NOTE]
+> The user must have security access to the underyling entity for that option to appear in the Open in Excel menu. See [Security and data entities](../data-entities/security-data-entities.md) for more details.
 
 ## What fields will be shown in the workbook?
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image shows the Visual Studio view of the AutoReport field group for the FMCustomerEntity.
@@ -332,7 +338,7 @@ To enable relationship lookups in the Excel Data Connector, you must ensure that
 ## How can I enable users to create new header records as well as lines in a workbook?
 To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
 
-To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
+To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 Finance](https://youtu.be/RTicLb-6dbI) video.
 
 To design a workbook with header fields and a lines table that enables header creation:
 1. In the Excel Add-in, click **Design** to open the Designer. Select **Add fields** to add a header data source.
@@ -398,6 +404,14 @@ The easiest way to set up dimension metadata on data entities is to use the data
 If a formula is needed in a table, then add a formula column. When in the field selection page for a table binding, click the **Formula** button above the Selected fields list to add a new formula column. The label and value for the formula are entered in the fields immediately below the Selected fields list. After adding a new formula column, leave the value empty and click **Update**. After the field has been added to the table, use standard Excel capabilities to create a formula, then copy the formula and paste it into the formula column value field. When defining a formula, make sure there is more than one row in the table, otherwise the formula that Excel provides may be for ALL rows instead of THAT row. To specify just the current row, the at sign (@) is needed. For example, sum of four columns for all rows "=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])" versus sum of four columns for the current row "=SUM(Table1\[@\[ColumnA\]:\[ColumnD\]\])".
 
 ## Known issues
+### Error triggered when selecting custom Excel templates
+
+This issue occurs when the user selects an Excel template from an **Open in Excel** button and receives the following error: `Record for Id {guid} not found`
+
+The error occurs when a custom Excel template cannot be found. One scenario that could cause this error is moving the finance and operations database between environments, but not copying the Excel templates.  
+
+To resolve this issue, delete the database entry for the template from the **Document templates** page (**Common > Common > Office integration > Document templates**) and then reload the template. 
+
 ### Refresh doesn’t automatically occur in old templates
 
 The ability to control “refresh on open” was added as a setting. To add this to the default behavior, existing templates and workbooks need to have the **Refresh on open** check box selected in **Options** &gt; **Data Connector** &gt; **Refresh Options**.
@@ -433,3 +447,4 @@ To resolve this, change the binding information in the affected template so that
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

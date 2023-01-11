@@ -1,12 +1,12 @@
 ---
 title: Visual Studio requirements for X++
-description: This topic lists the Visual Studio components that are required to run the Visual Studio extension for X++.
-author: jorisdg
+description: This article lists the Visual Studio components that are required to run the Visual Studio extension for X++.
+author: gianugo
 ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.author: jorisde
+ms.reviewer: josaw
+ms.author: gianura
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the Visual Studio components that are required to run the **Visual Studio** extension for X++.
+This article lists the Visual Studio components that are required to run the **Visual Studio** extension for X++.
 
 > [!NOTE]
 > We do not recommend installing Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Lifecycle Services (LCS). Instead, we strongly recommend that you download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed, and come with other updates outside of Visual Studio to help keep the machines compatible and secure.

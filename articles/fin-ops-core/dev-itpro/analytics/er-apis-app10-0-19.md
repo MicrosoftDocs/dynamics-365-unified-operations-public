@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Electronic reporting framework API changes for Application update 10.0.19
-description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
-author: NickSelin
+description: This article describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
+author: kfend
 ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERFormatDestinationTable, ERParameters
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: nselin
+ms.search.region: Global
+ms.author: filatovm
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-
+ms.search.form: ERFormatDestinationTable, ERParameters
 ---
 
 # Electronic reporting framework API changes for Application update 10.0.19
@@ -32,7 +20,7 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
+This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
 
 ## <a name="er-api-extend-destination"></a>API to extend the list of ER destinations
 
@@ -105,7 +93,7 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
 }
 ```
 
-This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.
+This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated outbound documents.
 
 To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).
 

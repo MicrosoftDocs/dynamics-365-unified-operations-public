@@ -1,40 +1,32 @@
 ---
-# required metadata
-
 title: Set up a B2B e-commerce site
-description: This topic describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Set up a B2B e-commerce site
 
 [!include [banner](../../includes/banner.md)]
 
-Business-to-business (B2B) e-commerce sites provide some key capabilities that optimize the workflow for a B2B user. This topic describes how to set up a B2B e-commerce site in Microsoft Dynamics 365 Commerce. It goes through the modules and site settings that must be configured to enable B2B-specific scenarios.
+Business-to-business (B2B) e-commerce sites provide some key capabilities that optimize the workflow for a B2B user. This article describes how to set up a B2B e-commerce site in Microsoft Dynamics 365 Commerce. It goes through the modules and site settings that must be configured to enable B2B-specific scenarios.
 
 ## Prerequisites
 
-- To setup a B2B e-commerce site, you must enable and configure specific features in Commerce headquarters, as described in this topic.
+- To setup a B2B e-commerce site, you must enable and configure specific features in Commerce headquarters, as described in this article.
 - Core experiences, such as product discovery, product details pages, the cart, and checkout are powered by the same modules that are used for business-to-consumer (B2C) e-commerce sites. Site authors should be familiar with all the modules that Dynamics 365 Commerce supports. For more information, see [Module library overview](../starter-kit-overview.md).
-- This topic assumes that site authors understand the basics of Commerce site builder, templates, fragments, and pages, so that they can enable the B2B features for e-commerce sites.
+- This article assumes that site authors understand the basics of Commerce site builder, templates, fragments, and pages, so that they can enable the B2B features for e-commerce sites.
 
 ## Site-level settings
 
@@ -309,6 +301,30 @@ To add a quick add module to a cart page in Commerce site builder, follow these 
 
 > [!NOTE] 
 > The quick add module is available as of the Commerce version 10.0.17 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## Add a bulk purchase module to a product details page
+
+The bulk purchase module on a product details page (PDP) provides a matrix-based experience that lets a buyer quickly add multiple variants of a product to the cart. When a site user must order multiple variants of the same product, this experience eliminates the need to select the combination of product dimensions, define the quantity, add the variant to the cart, and then repeat the process for other combinations of product dimensions.
+
+To add the bulk purchase module to a PDP in Commerce site builder, follow these steps.
+
+1. Go to **Templates**, and select your site's PDP template.
+1. Select **Edit**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Bulk purchase** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select your site's PDP.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the properties pane for the **Container** module, under **Width**, select **Fill Container**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Bulk purchase** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+
+> [!NOTE] 
+> The bulk purchase module is available as of the Commerce version 10.0.24 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Additional resources
 

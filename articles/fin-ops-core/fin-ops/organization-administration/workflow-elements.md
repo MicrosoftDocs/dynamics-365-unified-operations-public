@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow elements
-description: This topic describes the various elements that make up a workflow.
+description: This article describes the various elements that make up a workflow.
 author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various elements that make up a workflow.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article describes the various elements that make up a workflow.
 
 A workflow consists of elements. The sections that follow describe each type of element.
 

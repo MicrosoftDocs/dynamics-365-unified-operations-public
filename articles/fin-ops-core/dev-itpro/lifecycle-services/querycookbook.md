@@ -1,37 +1,26 @@
 ---
-# required metadata
-
-title: Query cookbook 
-description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
-author: meeramahabala
-ms.date: 10/20/2021
+title: Query cookbook
+description: This article describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues.
+author: sericks007
+ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 267184
-ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
+ms.author: gned
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 267184
+ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 
 # Query cookbook 
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
+This article provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
 ## Current blocking
 
@@ -61,26 +50,6 @@ Provides a list of all queries that are currently in a state of being executed o
 ### Next steps
 - If high CPU time is seen, get the query plan for the query, and also see whether other query plans that have been used for this query are more efficient. Consider addressing the issues with a new index, with a change to the query, or, as a last resort, by adding a plan guide.
 - If high wait time is seen, view the current blocking and current blocking tree to determine why the query is blocked. This is occasionally addressed by disabling lock escalation or page locks if that is the cause of the blocking. More often, it is addressed by segmenting the work that is being performed to ensure that the same record is not processed by two queries at the same time.
-
-## Get index details
-
-### Description
-Provides details about all indexes on a given table. This query is usually used before adding new indexes, to ensure there are no existing indexes that should be altered instead.
-
-### Next steps
-- If you are adding a new index, verify that there is not an existing index that should just be adjusted instead. Each new index adds overhead on all write operations. Therefore, new indexes should be added sparingly.
-- Existing indexes can occasionally cause blocking if they support page locks, and large processes running at the same time are locking pages that contain records for each process. Disabling page locks should also be done sparingly, because it will degrade write operations that would have benefitted from page locks.
-
-## Drop index
-
-### Background
-Usually, extra indexes on a table only add minor incremental costs. But in some situations, such as high-throughput tables, the existence of an extra index can cause large performance degradation. The correct way to remove indexes is to remove them from metadata. But if they need to be removed more aggressively to mitigate an ongoing issue, this action can be used.
-
-### Next steps
-- From the query to list all indexes for a table, determine the index name to drop.
-- Verify that no other workloads will be negatively affected by removing this index. This is a dangerous operation to perform and might cause other workloads to regress.
-- Provide the table and the index name to drop.
-- Apply the same change in other environments, such as DEV and Sandbox, ideally by removing the index in metadata to keep all environments in sync.
 
 ## End SQL process
 
@@ -121,7 +90,7 @@ The following action have been removed from the **Actions** tab of **SQL Insight
 | Name | Removed | Notes |
 |-------------------------|-------------------------|-------------------------|
 | Create index | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index creation is no longer needed as this is handled by a background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
-| Drop index | Yes | No longer applicable. </br><br>**Reason**</br><ul></br><li>Not included in Data Administration and Management Service (DAMS) because of the periodic nature of Finance and Operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will automatically tune as required.</li></br></ul> |
+| Drop index | Yes | No longer applicable. </br><br>**Reason**</br><ul></br><li>Not included in Data Administration and Management Service (DAMS) because of the periodic nature of finance and operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will automatically tune as required.</li></br></ul> |
 | Rebuilt index | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index creation is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
 | Update statistics | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>A platform background process handles index and statistics maintenance.</li></br></ul></br>**Details**</br><ul></br><li>The platform is responsible for index and statistics maintenance.</li></br></ul> |
 | Query hint optimization | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>The platform handles query hint optimization so customers don't have to do manual tuning.</li></br></ul></br>**Details**</br><ul></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
@@ -140,3 +109,4 @@ The following live views have been removed from the **Live views** tab of **SQL 
 | Common metrics (DTU) | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Current DTU has been removed from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
 | Currently executing statements | No | Remains available in LCS. |
 | Blocking statements | No | Remains available in LCS. | -->
+

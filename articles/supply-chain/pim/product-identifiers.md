@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Product identifiers 
-description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
+description: This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: t-benebo
-ms.date: 03/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-# optional metadata
-
-ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
-audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
 ms.author: benebotg
-ms.dyn365.ops.version: 7.3 
-ms.search.validFrom: 2017-12-31
-
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
+ms.topic: how-to
+ms.date: 12/08/2022
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Product identifiers
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
+This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 
 When you work with products on the shop floor or in a warehouse in Microsoft Dynamics ERP or Microsoft Dynamics CRM, you must have a good strategy for identifying those products and product variants.
 
@@ -41,7 +26,7 @@ In Dynamics 365 Supply Chain Management, the primary identifier for a product is
 
 In many cases, the product number isn't originally created in Dynamics 365 Supply Chain Management. Instead, it's associated with a product in a product lifecycle management (PLM) system or a product data management (PDM) system. In this case, you use data entities to import the products and product variants. Supply Chain Management then uses the numbers in all operations.
 
-When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an extra name that represents the classifications of a product.
+When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier should usually have 20 characters or less, but we generally recommend using fewer than 10 characters and including no more than five classifying characters. You can also use search names to enable quick searches. A search name is an extra name that represents the classifications of a product.
 
 When you use Microsoft Dataverse, the product number in Supply Chain Management is also the product number in Microsoft Dataverse. Product variants are synchronized to Dataverse as distinct products.
 
@@ -53,7 +38,7 @@ Additionally, a product variant can't be uniquely identified by an item number. 
 
 Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** &gt; **Setup** &gt; **Search** &gt; **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to **Yes**, the lookup will show not only product masters but product variants. For more information, see [Search for products and product variants during order entry](search-products-product-variants.md).
 
-Additionally, you will be able to search and filter on the product number, the product name and description, and the product dimension IDs of the product variant. When you select a variant, the related item number and all product dimension IDs will be selected. Therefore, you can more easily find and select the correct variant. This setting is highly recommended if you use product variants and the unique product number as the primary identifiers for products. The only exception might be the fashion industry, where the business processes often require that you select the master before you select a variant. You should carefully evaluate this option before you implement the numbering system.
+Additionally, you'll be able to search and filter on the product number, the product name and description, and the product dimension IDs of the product variant. When you select a variant, the related item number and all product dimension IDs will be selected. Therefore, you can more easily find and select the correct variant. This setting is highly recommended if you use product variants and the unique product number as the primary identifiers for products. The only exception might be the fashion industry, where the business processes often require that you select the master before you select a variant. You should carefully evaluate this option before you implement the numbering system.
 
 > [!NOTE]
 > The item number for a product can't be changed once one or more transactions exist for that product.
@@ -62,7 +47,7 @@ Additionally, you will be able to search and filter on the product number, the p
 
 The product name and description are the human-readable identifiers of a product and can be maintained in many languages. By default, the Supply Chain Management client shows all product information in the default company language, not in the user's language. However, translated product names and descriptions are used in all communication with customers and vendors. The translations are based on the language code of the customer and vendor accounts.
 
-For product variants, the product name can be generated through a product nomenclature template. Because there is no requirement that product names be unique, you might find multiple products that have the same name.
+For product variants, the product name can be generated through a product nomenclature template. Because there's no requirement that product names be unique, you might find multiple products that have the same name.
 
 ## Product and item search names
 
@@ -118,7 +103,7 @@ To maintain **GTIN codes**, on the **Released products** page, on the **Manage i
 
 External codes can be defined for many entities. For example, you can define external codes to identify products and released products. These external codes can be used to associate statistical codes or tax codes with released products and released product variants. External codes are defined by legal entity and code type. They must be unique by legal entity, code type, and table reference.
 
-Unfortunately, there is no standard functionality that lets you search for products by external codes.
+Unfortunately, there's no standard functionality that lets you search for products by external codes.
 
 ## Data entities that are used to import and export product identifiers
 
@@ -127,7 +112,7 @@ Unfortunately, there is no standard functionality that lets you search for produ
 | Products V2 | Product number, product search name, product name, product description | Product number, product search name, product name, product description | Depending on the settings of the entity and the number sequence for the product number, the product number can be automatically created at the time of import. |
 | Product variants | Product number, product search name, product name, product description | Product number, product search name, product name, product description | Depending on the product nomenclature template, the product number can be automatically created at the time of import. However, you can import any unique product number, and that product number doesn't have to follow the structure of the product nomenclature templates. |
 | Product translations | Product name, product description | Product name, product description | This entity overwrites any language. When the name or description of a legal entity's primary language is overwritten, the name and description of the product itself is changed. |
-| Released product creation V2 | Item number, product number, item search name| Item number, product number, item search name, product search name, product name | This entity can be a challenge when number sequences are used during the creation of new released products. Both the **Item number** number sequence and the **Product number** number sequence have an influence. However, the **Item number** number sequence is per legal entity, whereas the **Product number** number sequence is global. Therefore, we don't recommend that you use the **Item number** number sequence when you deploy new released products. Obviously, when the entity is used to release an existing product, the product number must be given in the entity. For more information, see the "Product and item number sequences" section in this topic. |
+| Released product creation V2 | Item number, product number, item search name| Item number, product number, item search name, product search name, product name | This entity can be a challenge when number sequences are used during the creation of new released products. Both the **Item number** number sequence and the **Product number** number sequence have an influence. However, the **Item number** number sequence is per legal entity, whereas the **Product number** number sequence is global. Therefore, we don't recommend that you use the **Item number** number sequence when you deploy new released products. Obviously, when the entity is used to release an existing product, the product number must be given in the entity. For more information, see the "Product and item number sequences" section in this article. |
 | Released product variants | Item number, product dimensions, product number | Product number, product search name, product name, product description, product dimensions | Like the **Product variants** entity, this entity can be used to create new products that either follow the product nomenclature template or use their own product numbers for the variant. |
 | External item description for customers | Customer item number, customer item name, customer description, customer account | Customer item number, customer item name, customer description, customer account | A group of customers (for example, a buyer association) can be aggregated into one group by using the **External item description customer groups** entity. |
 | External item description for vendors | Vendor item number, vendor item name, vendor description, vendor account | Vendor item number, vendor item name, vendor description, vendor account | A group of vendors (for example, a sales association or industry organization) can be aggregated into one group by using the **External item description vendor groups** entity. |
@@ -135,7 +120,7 @@ Unfortunately, there is no standard functionality that lets you search for produ
 | External codes for released products | External code | External code, external code classes, item number | External codes are by legal entity. For import, you must refer to a defined code class. Import the code classes by using the **External code classes for released products** entity. |
 | External codes for released product variants | External code | External code, external code classes, item number, product dimensions | External codes are by legal entity. For import, you must refer to a defined code class. Import the code classes by using the **External code classes for released products** entity. This entity refers to product variants by the item number and product dimensions. |
 | External codes for released product variants by product number identifier | External code | External code, external code classes, product number | External codes are by legal entity. For import, you must refer to a defined code class. Import the code classes by using the **External code classes for released products** entity. This entity refers to product variants by the product number of the variant. (From the next major release) |
-| GTIN | Not applicable | Not applicable | Currently, there is no specific entity that is used to import and export GTIN codes. We recommend that you use the **Item Barcode** entity instead. |
+| GTIN | Not applicable | Not applicable | Currently, there's no specific entity that is used to import and export GTIN codes. We recommend that you use the **Item Barcode** entity instead. |
 | Product entity common data service identifier entity | Not applicable | Item number, item search name, product search name, vendor item number, customer item number, external codes, GTIN codes, bar codes | This entity consolidates all identifiers into one data model, so that one interface can be used to easily export all identifiers and their related types. Use the **Product entity identifier code** entity to export the identifier codes and descriptions. Use the **Product entity identifier scope** entity to export additional scope information to an identifier, such as the party, legal entity, quantity, or unit. |
 
 ### Product and item number sequences
@@ -159,14 +144,14 @@ The following table provides an overview of the results of import and manual cre
 
 | Product number number sequence | Item number number sequence | Mapping of the item number | Mapping of the product number | Result of entity import | Result of manual creation | Conclusion |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manual = No | Manual = No | No mapping | No mapping | Product numbers use the **Product number** number sequence. Item numbers use the **Item number** number sequence. | Product numbers use the **Product number** number sequence. Item numbers use the **Item number** number sequence. | With this configuration, product numbers will follow the product number sequence and item numbers will follow the item number sequence. However, this configuration won't work if there is more than one item (row) to be imported. |
-| Manual = No | Manual = Yes | Auto generate | No mapping | Both product numbers and item numbers use the **Item number** number sequence. | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers will follow the product number sequence. This is the recommended approach to import bulk products with the Released product creation V2 data entity.<br><br>You can only use this approach when bulk importing items (several rows) and when you are not creating items through the user interface. If you need both to bulk import and to create products through the user interface, use the procedure in the next row of this table instead. To transition from using a bulk import approach to using the user interface to manually import and create products, you must manually adjust the **Next number** in the item number number sequence to match the **Next number** in the product number number sequence. Then you could switch to the approach in the next row of this table. |
-| Manual = No | Manual = Yes | No mapping | No mapping | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers will use the product number sequence. However, this configuration won't work if there is more than one item (row) to be imported.<br><br>You must use this approach if you need both to import products using the entities (only one row can be imported at a time) and to create products through the user interface. |
+| Manual = No | Manual = No | No mapping | No mapping | Product numbers use the **Product number** number sequence. Item numbers use the **Item number** number sequence. | Product numbers use the **Product number** number sequence. Item numbers use the **Item number** number sequence. | With this configuration, product numbers will follow the product number sequence and item numbers will follow the item number sequence. However, this configuration won't work if there's more than one item (row) to be imported. |
+| Manual = No | Manual = Yes | Auto generate | No mapping | Both product numbers and item numbers use the **Item number** number sequence. | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers will follow the product number sequence. This is the recommended approach to import bulk products with the Released product creation V2 data entity.<br><br>You can only use this approach when bulk importing items (several rows) and when you aren't creating items through the user interface. If you need both to bulk import and to create products through the user interface, use the procedure in the next row of this table instead. To transition from using a bulk import approach to using the user interface to manually, import and create products, you must manually adjust the **Next number** in the item number number sequence to match the **Next number** in the product number number sequence. Then you could switch to the approach in the next row of this table. |
+| Manual = No | Manual = Yes | No mapping | No mapping | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers use the **Product number** number sequence. | Both product numbers and item numbers will use the product number sequence. However, this configuration won't work if there's more than one item (row) to be imported.<br><br>You must use this approach if you need both to import products using the entities (only one row can be imported at a time) and to create products through the user interface. |
 | Manual = Yes | Not applicable | Not applicable | Auto generate | You receive the following error message: "Number sequence can't be detected." | According to the **Item number** number sequence | This setting isn't supported for import. |
 
 ## Product entity identifier (Export all product identifiers)
 
-The product entity identifier model was created to enable version 1.0 of Dataverse to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table, so that they can be exported as one model. Note that this version of Dataverse doesn't use the product identifiers model. Therefore, the **Product entity common data service identifier entity** entity and this process have limited practical use and will likely be subject to change in the future.
+The product entity identifier model was created to enable version 1.0 of Dataverse to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table, so that they can be exported as one model. This version of Dataverse doesn't use the product identifiers model. Therefore, the **Product entity common data service identifier entity** entity and this process have limited practical use and will likely be subject to change in the future.
 
 The product identifier table is a global table that is populated from all reference tables of the Main legal entity through a recurring batch job. You must select a legal entity and a product category hierarchy as the definition of the global product master scope. Generation of the global product identifier table is limited to products that are released to the selected legal entity and products that are members of the product hierarchy that is selected for the **Common data service** role in the product category hierarchy.
 
@@ -186,9 +171,8 @@ Follow these steps to configure the environment.
 
 You can now use the **Product entity common data service identifier entity**, **Product entity identifier code**, and **Product entity identifier scope** data entities to export the identifiers for any target system.
 
-## Related topic
+## Related article
 
 [Search for products and product variants during order entry](search-products-product-variants.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

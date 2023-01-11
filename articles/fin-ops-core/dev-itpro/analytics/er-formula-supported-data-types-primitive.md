@@ -1,22 +1,22 @@
 ---
 title: Supported primitive data types for Electronic reporting formulas
-description: This topic provides information about the primitive data types that are supported in Electronic reporting (ER) formulas.
-author: NickSelin
+description: This article provides information about the primitive data types that are supported in Electronic reporting (ER) formulas.
+author: kfend
 ms.date: 06/02/2021
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # Supported primitive data types for Electronic reporting formulas
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. Here is a list of the primitive data types:
+This article provides information about the primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. Here is a list of the primitive data types:
 
 - [boolean](#boolean)
 - [date](#date)
@@ -96,7 +96,7 @@ Comparison [operators](er-formula-language.md#Operators) are the only type of op
 
 ## <a name="enumeration"></a>Enumeration
 
-The *enumeration* primitive data type is a list of literals. You can use enumerations that are defined in the application [source code](../dev-ref/xpp-data-primitive.md#enum). You can also introduce your own enumerations in the ER [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) and ER [format](general-electronic-reporting.md#FormatComponentOutbound) components.
+The *enumeration* primitive data type is a list of literals. You can use enumerations that are defined in the application [source code](../dev-ref/xpp-data-primitive.md#enum). You can also introduce your own enumerations in the ER data model and ER format components.
 
 An application *enumeration* can be used in expressions of any ER model mapping and ER format.
 

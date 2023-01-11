@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Set up a development environment
-description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/21/2020
+ms.date: 03/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Set up a development environment
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
+This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 
 To set up a development environment for Dynamics 365 Commerce online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online Software Development Kit (SDK). You can install these tools in any order.
 
@@ -45,7 +35,7 @@ Go to the [Visual Studio Code site](https://code.visualstudio.com), and download
 
 Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-Version 12.x is the current supported version. You can find the installer on the [Node.js website](https://nodejs.org).
+Version 16.x is the current supported version for online SDK bootloader package 1.27 and later. If you are using online SDK bootloader package 1.26 or earlier, you will need to install Node 12.x. You can find the installer on the [Node.js website](https://nodejs.org).
 
 If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
@@ -66,7 +56,7 @@ git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 ```
 
 > [!NOTE]
-> The whole SDK and module library won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
+> The whole SDK and module library won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this article.
 
 If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
 

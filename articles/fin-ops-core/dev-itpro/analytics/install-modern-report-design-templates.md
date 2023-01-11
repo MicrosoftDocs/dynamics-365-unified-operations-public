@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Install modern report design templates
-description: This topic explains how to install the modern report design templates in the application suite.
+description: This article explains how to install the modern report design templates in the application suite.
 author: RichdiMSFT
 ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: PrintMgmtSetupUIMain
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 82783
-ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 82783
+ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
+ms.search.form: PrintMgmtSetupUIMain
 ---
 
 # Install modern report design templates
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
+This article explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 
 ## Introduction
 
@@ -68,7 +58,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. Navigate to the **<AOSservicedrive>:\\AOSService\\PackagesLocalDirectory\\bin** folder.
+3. Navigate to the **\<AOSServiceDrive\>:\\AOSService\\PackagesLocalDirectory\\bin** folder.
 4. Run the following command.
 
     ```Console

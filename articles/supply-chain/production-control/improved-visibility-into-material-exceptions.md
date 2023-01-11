@@ -2,7 +2,7 @@
 # required metadata
 
 title: Visibility into material exceptions
-description: This topic describes how you can get better visibility into exceptions for raw materials for production orders and batch orders.
+description: This article describes how you can get better visibility into exceptions for raw materials for production orders and batch orders.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article

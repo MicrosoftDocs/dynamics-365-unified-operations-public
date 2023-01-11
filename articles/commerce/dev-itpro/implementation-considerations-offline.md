@@ -2,12 +2,12 @@
 # required metadata
 
 title: Commerce offline implementation and troubleshooting
-description: This topic provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
+description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
 author: jashanno
-ms.date: 10/01/2021
+ms.date: 09/29/2022
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
@@ -19,13 +19,13 @@ ms.search.validFrom: 2021-08-31
 
 [!include[banner](../includes/banner.md)]
 
-This topic is intended for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce applications. This topic describes features and functionality, implementation tips, and troubleshooting methods related to the usage of offline functionality.
+This article is intended for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce applications. This article describes features and functionality, implementation tips, and troubleshooting methods related to the usage of offline functionality.
 
 ## Overview
 
 Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS (with or without an offline database) and other in-store components. Commerce Data Exchange (CDX) is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
 
-Before reviewing this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. We recommend that you review some of the resources listed at the end of this topic, such as [Device management implementation guidance](../implementation-considerations-devices.md) and [Commerce architecture overview](../commerce-architecture.md).
+Before reviewing this article, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. We recommend that you review some of the resources listed at the end of this article, such as [Device management implementation guidance](../implementation-considerations-devices.md) and [Commerce architecture overview](../commerce-architecture.md).
 
 
 ## Important offline features
@@ -35,7 +35,8 @@ For details regarding features that enhance or alter the data synchronization of
 | Feature name | Description |
 |--------------|-------------|
 | Advanced offline | This feature consists of a series of settings in the offline profile. These settings make additional offline switching scenarios available, give users the ability to switch to offline mode before they sign in to the POS, and allow for enhanced Commerce headquarters availability testing so that you can easily switch to offline mode and return to online status. |
-| Offline status dashboard | A new dashboard, provided in release 10.0.20 and later, shows the latest offline status, error, and details of the database for each device.  This dashboard can be found at **Retail and Commerce > Channel setup > POS setup > Register offline status**. |
+| Offline status dashboard | A new dashboard, provided as of the Commerce version 10.0.20 release, shows the latest offline status, error, and details of the database for each device.  This dashboard can be found at **Retail and Commerce \> Channel setup \> POS setup \> Register offline status**. For this dashboard to function correctly the **Modern POS offline monitoring** feature must be turned on in the **Feature management** workspace, followed by the execution of the **1110** distribution schedule job. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
+| Offline database compression | To reduce offline database sizes, this feature, available in Commerce release 10.0.29 and later, enables automated index compression outside of channel [store hours](store-hours.md). If store hours are not configured or not working properly, the compression will occur at all times. When compression occurs, whether based on store hours or not, Modern POS or Store Commerce will query the offline database for non-compressed and non-clustered indexes that are either greater than 100 MB, or at least 1% of the total database size. If any indexes are found that meet this criteria, compression will start for the largest index in the list, and then go idle for 10 minutes. After this time, compression will start for the next index, and this cycle will repeat until all of the selected indexes are compressed. If no indexes are found, the compression logic will pause for 30 minutes before checking again. For this feature to function correctly, **POS offline database compression** must be turned on in the **Feature management** workspace, then the **1070** distribution schedule job must be run. For more information, see the [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) article. |
 | Performance-based offline switching (POS seamless offline for performance degradation) | This feature, provided in release 10.0.20 and later, enables Modern POS devices to switch to offline mode seamlessly when encountering outbound web request performance degradation.  This feature requires the **Enable advanced offline switching** functionality to be enabled from the **Offline profile** page in Headquarters. The **POS seamless offline for performance degradations** feature must be turned on in the Feature management workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
 
 ### Advanced offline feature
@@ -51,7 +52,7 @@ The advanced offline feature can be configured in the offline profile. The follo
 This section describes various aspects and configurations of offline that should be considered when you begin to plan your POS usage scenarios while functioning offline. The features that are described here are related to data management, offline usage, and data configuration. Before you read the guidance that is provided, we highly recommend that you understand these concepts. To gain additional information, we recommended that you read [Commerce Data Exchange best practices](CDX-Best-Practices.md).
 
 ### SQL Server versions and licenses 
-SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15#Cross-BoxScaleLimits). Also see the [Additional resources](implementation-considerations-offline.md#additional-resources) listed at the bottom of this topic.
+SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15#Cross-BoxScaleLimits). Also see the [Additional resources](implementation-considerations-offline.md#additional-resources) listed at the bottom of this article.
 
 For SQL Server versions, the only recommendation is to use a version that is currently still within the mainstream support date. Support dates can be searched for, by product, in [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
@@ -84,7 +85,7 @@ When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS
     -	Customer account
     -	Gift card
 -	Test **Show journal**.
--	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to checkout.
+-	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to check out.
 -	Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
 -	Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
 
@@ -108,6 +109,7 @@ If the following table does not list an error that you are receiving, create a s
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
+- [Online and offline point of sale (POS) operations](../pos-operations.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)

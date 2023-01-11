@@ -1,34 +1,24 @@
 ---
-# required metadata
-title: Third party miscellaneous charges  
-description: This topic explains how to handle services that are purchased though a separate invoice as miscellaneous charges.
-author: v-nadyuz
+title: Third party miscellaneous charges
+description: This article explains how to handle services that are purchased though a separate invoice as miscellaneous charges.
+author: AdamTrukawka
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Third party miscellaneous charges
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to handle services that are purchased though a separate invoice as miscellaneous charges. The cost of these services can be included in the cost price of the purchased goods or written off as a cost, like the miscellaneous charges that are defined in the invoice for the purchase of goods. Additionally, the debt on these services can be redrawn to third parties, such as customers or vendors. In this case, a facture is created that won't be included in the sales book or purchase book.
+This article explains how to handle services that are purchased though a separate invoice as miscellaneous charges. The cost of these services can be included in the cost price of the purchased goods or written off as a cost, like the miscellaneous charges that are defined in the invoice for the purchase of goods. Additionally, the debt on these services can be redrawn to third parties, such as customers or vendors. In this case, a facture is created that won't be included in the sales book or purchase book.
 
 You must purchase an item of the **Service** type to do the accounting as a miscellaneous charge that you will allocate later. You must also specify item-related parameters for the miscellaneous charges code.
 

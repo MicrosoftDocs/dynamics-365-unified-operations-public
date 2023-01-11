@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: VAT declaration (Netherlands)
-description: This topic provides information about VAT declaration for Netherlands.
-author: anasyash
-ms.date: 09/20/2021
+description: This article provides information about VAT declaration for Netherlands.
+author: AdamTrukawka
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261354
-ms.search.region:
-# ms.search.industry: 
-ms.author: anasyash
+ms.search.region: 
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 261354
+ms.search.form: 
 ---
 
 # VAT declaration for Netherlands
 
 [!include [banner](../includes/banner.md)]
 
-To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this topic.
+To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this article.
 
 In the following table, the **Lookup result** column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then associate that with the row of the VAT declaration. The **Tax base (XML element) / Tax (XML element)** column list the names of the corresponding XML elements in VAT declaration XML (NL) format.
 
@@ -329,7 +320,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p><em>Subtotal</em></p>
 </td>
 <td width="104">
-<p>&nbsp;</p>
+<p>5a - 5b</p>
 </td>
 <td width="104">
 <p>x</p>
@@ -357,7 +348,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p><strong>Net VAT amount that will be paid to the tax authorities or reclaimed</strong></p>
 </td>
 <td width="104">
-<p>5a + 5b + 5d</p>
+<p>5a - 5b + 5d</p>
 </td>
 <td width="104">
 <p>x / ValueAddedTaxOwedToBePaidBack</p>
@@ -409,7 +400,7 @@ To set up report fields, follow these steps:
 <p>Lookup result</p>
 </td>
 <td width="700">
-<p>Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the section, [VAT declaration overview](#vat-declaration) in this topic.</p>
+<p>Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the section, [VAT declaration overview](#vat-declaration) in this article.</p>
 </td>
 </tr>
 <tr>
@@ -453,7 +444,7 @@ To set up XSD schema and namespaces, follow these steps:
     | **Name**           | **Lookup result**                                                                  |
     |--------------------|------------------------------------------------------------------------------------|
     | XSDSchema          | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-ob-aangifte-2021.xsd |
-    | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                      |
+    | SchemaInstanceData | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd                      |
 
 
     For information about how to get these values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](emea-nl-eu-sales-list.md#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
@@ -472,6 +463,12 @@ To set up VAT reporting format, follow these steps:
 
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. If you configure VAT declaration for multiple VAT registrations, on the tab **Sales tax**, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+3. In the **Feature management** workspace, enable the **VAT statement format reports** feature.
+4.	Go to **General ledger** > **Setup** > **General ledger parameters**.
+5.	On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (NL)** ER format. This format will be printed when you run the **Report sales tax for settlement period** report. The format will also be printed when you select **Print** on the **Sales tax payments** page.
+If you configure VAT declaration for multiple VAT registrations, on the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+4.	If you must report the corrections, on the **Special report** section, set **Include corrections** to **Yes**.
+5.	On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
 
 ## Preview VAT declaration in Excel
 

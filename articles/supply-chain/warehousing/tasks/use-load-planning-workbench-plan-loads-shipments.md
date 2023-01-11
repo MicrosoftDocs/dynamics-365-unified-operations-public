@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Plan loads and shipments using the Load planning workbench
-description: This topic shows how to use the load planning workbench to create a load for a sales order. 
+description: This article shows how to use the load planning workbench to create a load for a sales order. 
 author: Mirzaab
 ms.date: 07/08/2019
 ms.topic: business-process 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to use the load planning workbench to create a load for a sales order. As a prerequisite we'll create the sales order first. This procedure is part of the daily work for the transportation coordinator. The demo data company used to create this procedure is USMF.
+This article shows how to use the load planning workbench to create a load for a sales order. As a prerequisite we'll create the sales order first. This procedure is part of the daily work for the transportation coordinator. The demo data company used to create this procedure is USMF.
 
 
 ## Create a sales order
@@ -39,7 +39,7 @@ This topic shows how to use the load planning workbench to create a load for a s
 7. Select item **A0001**. **A0001** is enabled for transportation management.  
 8. In the **Site** field, select the drop-down button to open the lookup, then select an item.
 9. In the **Quantity** field, enter a number.
-10. In the **Warehouse** field, type '24' for this example. This warehouse is enabled for transportation management and advanced warehouse management.  
+10. In the **Warehouse** field, type '24' for this example. This warehouse is enabled for transportation management and warehouse management processes (WMS).  
 11. Select **Save**.
 12. Close the page.
 

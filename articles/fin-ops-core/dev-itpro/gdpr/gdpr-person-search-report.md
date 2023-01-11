@@ -1,42 +1,31 @@
 ---
-# required metadata
-
 title: Person search report
-description: This topic provides information about the Personal data report for Finance and Operations apps.
-author: rschloma
+description: This article provides information about the Personal data report for finance and operations apps.
+author: josaw1
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Person search report
 
 [!include [banner](../includes/banner.md)]
 
-The Person search report is a refinement of the existing Data management framework of Finance and Operations apps. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations applications. 
+The Person search report is a refinement of the existing Data management framework of finance and operations apps. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in finance and operations applications. 
 
 > [!NOTE]
 > You can use the report with Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
 
 You can use the Global address book to create an instance of a person that is described in the data model as a party. 
 
-When you add a contact, customer, user, worker, or other person in Finance and Operations data, you typically start by creating an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as customer, user, or worker, and has a role ID: CustID, UserID, WorkerID, and possibly others.
+When you add a contact, customer, user, worker, or other person in finance and operations data, you typically start by creating an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as customer, user, or worker, and has a role ID: CustID, UserID, WorkerID, and possibly others.
 
 ![Address book structure.](../../fin-ops/organization-administration/media/address-book-structure.png)
 

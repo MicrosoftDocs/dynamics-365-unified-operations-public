@@ -2,8 +2,8 @@
 # required metadata
 
 title: Landed cost parameters setup
-description: This topic describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
-author: sherry-zheng
+description: This article describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
+author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -130,14 +130,11 @@ The settings on this tab establish the default dimensions for each designated pa
 
 The **Number sequences** tab of the **Landed cost parameters** page lists each type of reference number sequence that Landed cost requires, but that isn't shared across legal entities. For each reference in the list, select a number sequence code.
 
-> [!NOTE]
-> In a multi-company configuration, different number sequences must be created for each company (legal entity).
 
 ## Shared number sequences tab
 
 The **Shared number sequences** tab of the **Landed cost parameters** page lists each type of reference number sequence that is shared across legal entities for Landed cost. Currently, there is just one number sequence in the list. This number sequence is used for the voyage ID.
 
-On the **All voyages** page, users can view all voyages across all legal entities. However, to edit and process a voyage, users must be in the legal entity of the selected record.
 
 ## Feature visibility tab
 

@@ -1,14 +1,14 @@
 ---
 title: Integrate with third-party manufacturing execution systems
-description: This topic explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
-author: t-benebo
-ms.date: 10/01/2021
+description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
+author: johanhoffmann
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
 ---
@@ -32,10 +32,15 @@ The following illustration shows a typical collection of business events, proces
 
 ## Turn on the MES integration feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, an administrator must turn it on in your system as described in the following procedure.
 
-- **Module:** *Production control*
-- **Feature name:** *Manufacturing execution systems integration*
+1. Go to **System administration \> Setup \> License configuration**.
+1. Make sure that the **Time and attendance** license key is enabled (shows a check mark). This license key is required because it controls the manufacturing execution system's functionality and data. If it isn't enabled, do the following steps:
+    1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    1. On the **License configuration** page, select the **Time and attendance** check box.
+    1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
+1. Go to the **System administration \> Workspaces \> Feature management**.
+1. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the *Manufacturing execution system integration* feature. (As of Supply Chain Management version 10.0.29, this feature is on by default.)
 
 ## Processes available for MES integration
 
@@ -52,7 +57,9 @@ You can enable any or all of the following processes for integration.
 
 ## Monitor incoming messages
 
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
+To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There you can view, process, and troubleshoot issues.
+
+All messages for a specific production order are processed in the sequence they are received. However, messages for different production orders may not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
 
 ## Call the API
 
@@ -107,13 +114,13 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ReportedGoodQuantity` | Optional | Real|
 | `ReportedErrorCatchWeightQuantity` | Optional | Real |
 | `ReportedGoodCatchWeightQuantity` | Optional | Real |
-| `AcceptError` | Optional |Boolean |
+| `AcceptError` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `ExecutedDateTime` | Optional | DateTime |
 | `ReportAsFinishedDate` | Optional | Date |
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Optional | Boolean |
+| `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes \| No) |
 | `ProductionJournalNameId` | Optional | String |
 | `PickingListProductionJournalNameId` | Optional | String|
 | `RouteCardProductionJournalNameId` | Optional | String |
@@ -121,11 +128,11 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |
 | `BaseValue` | Optional | String |
-| `EndJob` | Optional | Boolean |
-| `EndPickingList` | Optional | Boolean |
-| `EndRouteCard` | Optional | Boolean |
-| `PostNow` | Optional | Boolean |
-| `AutoUpdate` | Optional | Boolean |
+| `EndJob` | Optional | Enum (Yes \| No) |
+| `EndPickingList` | Optional | Enum (Yes \| No) |
+| `EndRouteCard` | Optional | Enum (Yes \| No) |
+| `PostNow` | Optional | Enum (Yes \| No) |
+| `AutoUpdate` | Optional | Enum (Yes \| No) |
 | `ProductColorId` | Optional | String|
 | `ProductConfigurationId` | Optional | String |
 | `ProductSizeId` | Optional | String |
@@ -169,8 +176,9 @@ The following table shows the fields that each line in the `PickingListLines` se
 | `OperationNumber` | Optional | Integer |
 | `LineNumber` | Optional | Real |
 | `PositionNumber` | Optional | String |
-| `IsConsumptionEnded` | Optional | Boolean |
+| `IsConsumptionEnded` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
+| `InventoryLotId` | Optional | String |
 
 ### Time used for operation (route card) message
 
@@ -186,7 +194,7 @@ The following table shows the fields that each line in the `RouteCardLines` sect
 
 | Field name | Status | Type |
 |---|---|---|
-| `OperationNumber` | Mandatory | Mandatory, Integer |
+| `OperationNumber` | Mandatory | Integer |
 | `OperationPriority` | Optional | Enum (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | Optional | String |
 | `OperationsResourceId` | Optional | String |
@@ -204,9 +212,9 @@ The following table shows the fields that each line in the `RouteCardLines` sect
 | `ConsumptionDate` | Optional | Date |
 | `TaskType` | Optional | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
-| `OperationCompleted` | Optional | Boolean |
-| `BOMConsumption` | Optional | Boolean |
-| `ReportAsFinished` | Optional | Boolean |
+| `OperationCompleted` | Optional | Enum (Yes \| No) |
+| `BOMConsumption` | Optional | Enum (Yes \| No) |
+| `ReportAsFinished` | Optional | Enum (Yes \| No) |
 
 ### End production order message
 
@@ -217,9 +225,13 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 | `ProductionOrderNumber` | Mandatory | String |
 | `ExecutedDateTime` | Optional | DateTime |
 | `EndedDate` | Optional | Date |
-| `UseTimeAndAttendanceCost` | Optional | Boolean |
-| `AutoReportAsFinished` | Optional | Boolean |
-| `AutoUpdate` | Optional | Boolean |
+| `UseTimeAndAttendanceCost` | Optional | Enum (Yes \| No) |
+| `AutoReportAsFinished` | Optional | Enum (Yes \| No) |
+| `AutoUpdate` | Optional | Enum (Yes \| No) |
+
+## Other production information
+
+The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this article. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
 
 ## Receive feedback about the state of a message
 
@@ -232,10 +244,11 @@ After the MES has sent a message to Supply Chain Management, it might be relevan
 
 In these cases, you can take advantage of the standard alert feature in Supply Chain Management. For information about how standard alerts work, see the following resources:
 
-- Help topic: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
-- Video: [Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+- Help article: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Video: [Alert rule options in finance and operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 For example, you might set up the following alerts to provide feedback about the state of a message:
 
 - Create a business event ("Send externally") that is used when a message is *Failed*.
 - Send a notification and email to the IT admin or production floor manager.
+

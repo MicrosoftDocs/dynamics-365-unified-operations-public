@@ -1,24 +1,24 @@
 ---
 title: Write best practice rules
-description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. 
+description: This article describes how you can author best practice rules in C#, for both metadata and X++ code.
 author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 48071
-ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 48071
+ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
 ---
 
 # Write best practice rules
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler. You can run them in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
+This article describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler. You can run them in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
 
 You can also use best practice rules to author simple tools that gather information about your application. The framework is built on top of a managed framework called XLNT (shorthand for X++ LaNguage Toolkit). You can use the framework to build custom tools that extract information from, and modify, X++ code. There are two types of best practice rules: rules that deal with metadata and rules that deal with source code.
 
@@ -350,7 +350,7 @@ When your code compiles cleanly, a DLL will be created. In order for the tooling
 - By using the button on the Best Practice configuration dialog. Click the **Install extension** button. You will be asked to point to the assembly file that contains your rule (that is, the DLL generated when you build the rule). Press OK, and the system will copy the DLL where it needs to be (see below).
 - By manually installing the DLL into the C:\\Packages\\bin\\BPExtensions folder.
 
-If you want to debug your rule, you will find it useful to copy the .pdb file to the same directory as the assembly. After the DLL has been deployed to the target directory, Visual Studio needs to be restarted. After that, the rule is available for use. You may have to debug your rule to iron out any remaining kinks. In fact, stepping through your rule and inspecting the ASTs is valuable when you are getting started. To debug a rule, you need to know that the best practice rule is run by the **xppAgent** process; it is therefore not run within the context of VS itself. Make sure you have selected **Run best practice checks** in the Visual Studio Options dialog, in the **Finance and Operations** page. Otherwise, your check will not run.   Set a breakpoint in the **VisitMethod** method, and then do a build of a model that has the new rule switched on as shown above for the Fleet management model. Attach your VS instance to the **xppcAgent** process. When you do a build your breakpoint will be hit, and you can start drilling into your code. You can see all the properties, the list of declarations and statements, and find out all the details about them.
+If you want to debug your rule, you will find it useful to copy the .pdb file to the same directory as the assembly. After the DLL has been deployed to the target directory, Visual Studio needs to be restarted. After that, the rule is available for use. You may have to debug your rule to iron out any remaining kinks. In fact, stepping through your rule and inspecting the ASTs is valuable when you are getting started. To debug a rule, you need to know that the best practice rule is run by the **xppAgent** process; it is therefore not run within the context of VS itself. Make sure you have selected **Run best practice checks** in the Visual Studio Options dialog, in the **finance and operations** page. Otherwise, your check will not run.   Set a breakpoint in the **VisitMethod** method, and then do a build of a model that has the new rule switched on as shown above for the Fleet management model. Attach your VS instance to the **xppcAgent** process. When you do a build your breakpoint will be hit, and you can start drilling into your code. You can see all the properties, the list of declarations and statements, and find out all the details about them.
 
 ### Running rules in XppBp.exe
 

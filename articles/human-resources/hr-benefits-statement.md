@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefit statement
-description: The Benefit statement report explains the benefits that an employee is currrently enrolled in.
+description: The Benefit statement report explains the benefits that an employee is currently enrolled in.
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8

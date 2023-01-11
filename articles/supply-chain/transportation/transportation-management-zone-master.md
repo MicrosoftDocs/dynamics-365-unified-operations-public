@@ -2,8 +2,8 @@
 # required metadata
 
 title: Transportation management zone master
-description: This topic explains how transport management lets you divide geographic locations into zones.
-author: Henrikan
+description: This article explains how transport management lets you divide geographic locations into zones.
+author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: 10.0.14
 

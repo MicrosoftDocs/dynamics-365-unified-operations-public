@@ -2,7 +2,7 @@
 # required metadata
 
 title: Creating work orders
-description: This topic explains how to create work orders in Asset Management.
+description: This article explains how to create work orders in Asset Management.
 author: johanhoffmann
 ms.date: 02/01/2021
 ms.topic: article
@@ -66,11 +66,11 @@ To create work orders that are based on your maintenance schedule, follow these 
 
 ## Group work order lines that are automatically created while a maintenance plan runs
 
-This feature lets you define rules for grouping work order lines under a single work order when the system is set up to generate work orders automatically, based on a maintenance plan. Previously, automatically generated work orders could contain only one line. However, you can now group work orders by, for example, asset, asset type, or functional location. (Manually generated work orders could already be grouped in this way, as described in the previous section of this topic.)
+This feature lets you define rules for grouping work order lines under a single work order when the system is set up to generate work orders automatically, based on a maintenance plan. Previously, automatically generated work orders could contain only one line. However, you can now group work orders by, for example, asset, asset type, or functional location. (Manually generated work orders could already be grouped in this way, as described in the previous section of this article.)
 
 ### Enable grouping for automatically generated work orders
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Asset Management*
 - **Feature name:** *Apply rules for grouping work orders while running a maintenance plan*

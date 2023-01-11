@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Get started with Electronic invoicing for Mexico
-description: This topic provides information that will help you get started with Electronic invoicing for Mexico.
+description: This article provides information that will help you get started with Electronic invoicing for Mexico.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["97423", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: gionoder
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.custom: 97423,  ""intro-internal
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Get started with Electronic invoicing for Mexico
@@ -34,11 +24,19 @@ ms.dyn365.ops.version: AX 10.0.12
 > [!IMPORTANT]
 > Electronic invoicing for Mexico might not currently support all the functions that are available in the Comprobante Fiscal Digital por Internet (CFDI) document, and in the related integration that is built into Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
-This topic provides information that will help you get started with Electronic invoicing for Mexico. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit CFDI invoices through the service, and it explains how to review the processing results and the status of CFDI invoices.
+This article provides information that will help you get started with Electronic invoicing for Mexico. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit CFDI invoices through the service, and it explains how to review the processing results and the status of CFDI invoices.
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+Before you complete the steps in this article, you must complete the steps in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md) and [Get started with Electronic invoicing](e-invoicing-get-started.md).
+
+## Set up the Cadena XSLT
+
+To add the Cadena XSLT schema to the globalization feature for CFDI processing, complete the following steps.
+
+1. Download schema from the [SAT web site](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Compress the schema to a ZIP file.
+3. Save the xslt file to your Azure Storage account set up in your Service environment for the new container.
 
 ## RCS setup
 
@@ -130,6 +128,17 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 
 > [!NOTE]
 > Use the same steps to update the URL for **Call Mexican PAC service** action for the **Cancel** and **Cancelation request** feature setups.
+
+### Set up the path for the Cadena XLST schema
+
+1. On the **Feature version setup** page, on the **Variables** tab, select the variable name, **DigitalSignatureXSLT**.
+2. In the **Values** field enter: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    where: \<RelativePath\> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
+   
+    Example of the variable would be:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## Assign the Draft version to an e-Invoicing environment
 

@@ -1,24 +1,24 @@
 ---
 title: Build operations
-description: This topic reviews the process to build projects and full build of model packages.
-author: RobinARH
+description: This article reviews the process to build projects and full build of model packages.
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 76764
-ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 76764
+ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
 ---
 
 # Build operations
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews the process to build projects and full build of model packages.
+This article reviews the process to build projects and full build of model packages.
 
 The elements of a model must be built so that they can be used by the application. You can build the elements in a project. You can also build all the elements in a model. The following actions are performed during a build operation:
 
@@ -51,7 +51,7 @@ If you want to build all the elements in a project, regardless of whether they h
 
 ## Synchronizing the database at each build
 
-A project property lets you specify that the synchronize operation for the database should be performed every time that you build the project. This can be useful when you’re making changes to the table structure for an application. Each time that you build, you will know that the database is synchronized with the tables as they are defined in the project. For information about how to set project properties, see [Finance and Operations project type in Visual Studio](projects.md). If your application has a large number of tables, and you aren’t yet testing the application, you can set the **Synchronize database on build** property to **false**. This change will reduce the time that is required to build the project. Then, when you begin testing, be sure to set this property back to **true**. If you must manually synchronize the tables in a project, you can right-click the project in Solution Explorer and then click **Synchronize &lt;project name&gt; with database**. To synchronize the entire database, which can be a long process, on the **Dynamics 365** menu, click **Synchronize database**.
+A project property lets you specify that the synchronize operation for the database should be performed every time that you build the project. This can be useful when you’re making changes to the table structure for an application. Each time that you build, you will know that the database is synchronized with the tables as they are defined in the project. For information about how to set project properties, see [finance and operations project type in Visual Studio](projects.md). If your application has a large number of tables, and you aren’t yet testing the application, you can set the **Synchronize database on build** property to **false**. This change will reduce the time that is required to build the project. Then, when you begin testing, be sure to set this property back to **true**. If you must manually synchronize the tables in a project, you can right-click the project in Solution Explorer and then click **Synchronize &lt;project name&gt; with database**. To synchronize the entire database, which can be a long process, on the **Dynamics 365** menu, click **Synchronize database**.
 
 > [!NOTE]
 > If you try to synchronize the database before you have fully compiled assemblies, the Visual Studio database synchronization tool will display a message that synchronization has completed successfully, when in fact, the synchronization was not successful.

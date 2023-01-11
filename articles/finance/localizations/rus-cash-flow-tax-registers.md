@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Cash flow tax registers
-description: This topic provides information about cash flow tax registers.
+description: This article provides information about cash flow tax registers.
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
-author: akroshkina
 ms.technology: 
-manager: anayash
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
+manager: anayash
 ---
 
 # Cash flow tax registers
@@ -92,7 +81,7 @@ Follow these steps to set up expenses for the **Cash payment issue** and **Cash 
 
 Calculate the tax register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#calculate-and-print-tax-registers).
 
-The **Cash payment receipt** tax register shows all cash receipt transactions, based on the settings that you configured earlier in this topic. You can view the total for the whole tax register and also the totals for each **Receive reason** value.
+The **Cash payment receipt** tax register shows all cash receipt transactions, based on the settings that you configured earlier in this article. You can view the total for the whole tax register and also the totals for each **Receive reason** value.
 
 ![Cash_payment_receipt.](media/ruCash_payment_receipt.png)
 
@@ -108,7 +97,7 @@ The tax register lines show the following information:
 
 Calculate the tax register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#calculate-and-print-tax-registers).
 
-The **Cash payment issue** tax register shows all cash issue transactions, based on the settings that you configured earlier in this topic. You can view the total for the whole tax register and also the totals for each expense type.
+The **Cash payment issue** tax register shows all cash issue transactions, based on the settings that you configured earlier in this article. You can view the total for the whole tax register and also the totals for each expense type.
 
 ![Cash_payment_issue.](media/ruCash_payment_issue.png)
 

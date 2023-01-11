@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Set up and manage images for Modern POS (MPOS)
 description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Modern POS (MPOS).
-author: athinesh99
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages, 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 52851
-ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 52851
+ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
+ms.search.industry: Retail
+ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 ---
 
 # Set up and manage images for Modern POS (MPOS)
@@ -165,7 +155,8 @@ For all entities except Products, you can overwrite the image URL for a given en
     [![Catalog images gallery page.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Currently, the gallery doesn't show image previews for media template image URLs. For Catalog, Worker, Customer, and Category entities, if the user explicitly provides a URL through this page, we recommend that you indicate which image is the default image, because Commerce Scale Unit clients show only one image per Catalog, Customer, Worker, and Category. If the user doesn't specify a default image, the system determines the default image and send it to the Commerce service caller (MPOS or Ecommerce).
+> Only publicly and anonymously accessible images will render on POS. POS supports the rendering of images that are externally hosted, with the requirement that the images are returned as inline octet-stream to GET requests without headers. With anonymous access policy, specifically for SharePoint-hosted images that require request headers to contain both host and user-agent headers, a "Forbidden" response will be returned. Therefore, image management using SharePoint as the host is currently not supported out-of-the-box. 
+> The **Catalog images** gallery page doesn't show image previews for media template image URLs. Because Commerce Scale Unit (CSU) clients show only one image per Catalog, Customer, Worker, and Category entity, if you explicitly provide a URL through this page for Catalog, Worker, Customer, and Category entities, we recommend that you indicate which image is the default image. If you don't specify a default image, the system determines the default image and sends it to the Commerce service caller (MPOS or e-commerce).
 
 ### Overwrite the image URL for catalog product images from the Preview page
 

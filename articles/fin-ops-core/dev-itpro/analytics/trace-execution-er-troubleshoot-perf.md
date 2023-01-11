@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Trace the execution of ER formats to troubleshoot performance issues
-description: This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
-author: NickSelin
+description: This article provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
+author: kfend
 ms.date: 06/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERFormatMappingRunJobTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 
 # Trace the execution of ER formats to troubleshoot performance issues
@@ -104,7 +93,7 @@ Assume that you've started to design a new ER solution to generate a new report 
 
 Assume that you've finished designing the first version of the ER solution. You now want to test it in your instance and analyze execution performance.
 
-### <a id='import-configuration'></a>Import an ER configuration from RCS into Finance and Operations
+### <a id='import-configuration'></a>Import an ER configuration from RCS into finance and operations
 
 1. Sign in to your application instance.
 2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md) procedure.
@@ -311,27 +300,27 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
 
 ### Import the modified ER model mapping configuration from RCS into the application
 
-Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration.
+Repeat the steps in the [Import an ER configuration from RCS into finance and operations](#import-configuration) section earlier in this article to import version 1.2 of the **Performance trace mapping** configuration.
 
 ## Run the modified ER solution to trace execution
 
 ### Run the ER format
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 ## Work with the execution trace
 
 ### Export the generated trace from the application
 
-Repeat the steps in the [Export the generated trace from the application](#export-trace) section earlier in this topic to save a new performance trace locally.
+Repeat the steps in the [Export the generated trace from the application](#export-trace) section earlier in this article to save a new performance trace locally.
 
 ### Import the generated trace into RCS
 
-Repeat the steps in the [Import the generated trace into RCS](#import-trace) section earlier in this topic to import the new performance trace into RCS.
+Repeat the steps in the [Import the generated trace into RCS](#import-trace) section earlier in this article to import the new performance trace into RCS.
 
 ### Use the performance trace for analysis in RCS – Model mapping
 
-Repeat the steps in the [Use the performance trace for analysis in RCS – Model mapping](#use-trace) section earlier in this topic to analyze the latest performance trace.
+Repeat the steps in the [Use the performance trace for analysis in RCS – Model mapping](#use-trace) section earlier in this article to analyze the latest performance trace.
 
 Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has been also reduced. Therefore, the performance of the whole ER solution has improved.
 
@@ -361,7 +350,7 @@ If you use one of these versions, you can analyze the details of generated perfo
 
 ### Run the ER format
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution.
 
@@ -369,7 +358,7 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 ## Use external tools to review an execution trace that includes database queries
 
-Because of improvements that have been made to the ER framework, the performance trace that is generated in PerfView format now offers more details about ER format execution. In Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (July 2019), this trace can also include details of executed SQL queries to the application database.
+Because of improvements that have been made to the ER framework, the performance trace that is generated in PerfView format now offers more details about ER format execution. In Microsoft Dynamics 365 Finance version 10.0.4 (July 2019), this trace can also include details of executed SQL queries to the application database.
 
 ### Configure user parameters
 
@@ -385,7 +374,7 @@ Because of improvements that have been made to the ER framework, the performance
 
 ### Run the ER format
 
-Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
+Repeat the steps in the [Run the ER format](#run-format) section earlier in this article to generate a new performance trace.
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. This trace now includes the details of SQL database access during the execution of the ER format.
 
@@ -398,3 +387,4 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

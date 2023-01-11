@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Modify formats to generate documents that have application data
-description: This topic describes how to design reporting configurations to generate an electronic document and update application data.
-author: NickSelin
+description: This article describes how to design reporting configurations to generate an electronic document and update application data.
+author: kfend
 ms.date: 06/19/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Modify formats to generate documents that have application data
 

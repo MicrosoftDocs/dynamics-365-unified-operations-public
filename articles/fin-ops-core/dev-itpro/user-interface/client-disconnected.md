@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Client internet connectivity
-description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
+description: This article covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
 ms.date: 05/05/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 29151
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-
+ms.custom: 29151
+ms.assetid: 
+ms.service: 
 ---
 
 # Client internet connectivity

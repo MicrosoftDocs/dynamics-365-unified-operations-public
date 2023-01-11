@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Benefits Power BI content
-description: This topic describes the Benefits Power BI content.
-author: jcart1106 
+description: This article describes the Benefits Power BI content.
+author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  HcmBenefitWorkspace
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jcart
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.search.form: HcmBenefitWorkspace
 ---
 
 # Benefits Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Benefits** Microsoft Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
+This article describes the **Benefits** Microsoft Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:

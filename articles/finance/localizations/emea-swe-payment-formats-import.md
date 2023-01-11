@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Import payment formats for Sweden
-description: This topic provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
-author: anasyash
+description: This article provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCustPaym, VendPaymMode
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 262684
 ms.search.region: Sweden
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262684
+ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCustPaym, VendPaymMode
 ---
 
 # Import payment formats for Sweden
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
+This article provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
 
 ## BankGirot MAX, BankGirot OCR
 

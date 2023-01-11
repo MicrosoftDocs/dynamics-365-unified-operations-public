@@ -3,7 +3,7 @@
 
 title: Plan freight transportation routes with multiple stops
 description: This article describes the various elements that you use to plan transportation routes in Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 90013
 ms.assetid: 50d6f58c-f1c8-4321-9e83-8445cec57a85
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

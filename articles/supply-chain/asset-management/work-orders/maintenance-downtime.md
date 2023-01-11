@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance downtime for work orders
-description: This topic describes how to create maintenance downtime registrations on the asset that is selected on a work order.
+description: This article describes how to create maintenance downtime registrations on the asset that is selected on a work order.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -57,7 +57,7 @@ After you've created the maintenance downtime reason codes that you want to use,
 
 ## Create maintenance downtime registrations
 
-1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order, and then, on the **Work order** tab, in the **Asset** group, select **Maintenance downtime**.
 

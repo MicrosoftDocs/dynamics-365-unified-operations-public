@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Set up Configuration manager
-description: This topic provides information about how to set up the Configuration manager.
-author: RobinARH
+description: This article provides information about how to set up the Configuration manager.
+author: gianugo
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 62673
-ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
-
+ms.custom: 62673
+ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 ---
 
 # Set up Configuration manager
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 > [!IMPORTANT]
 > This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments.
@@ -91,7 +81,7 @@ Complete the following procedure in the environment that you intend to export a 
 > [!IMPORTANT]
 > If you have already installed the local component of the System diagnostics for your project and environment, you must uninstall it by using **Add/Remove programs**. Only one instance of Microsoft Dynamics AX Application Object Server (AOS) per environment can be used with Configuration management, regardless of the number of instances that are discovered.
 
-1.  Install the local component of the System diagnostics. For details, see [Install and run System diagnostics](./ax-2012/install-run-system-diagnostics-lcs.md). Important: For this beta release, we require that you add the service account for the System diagnostics to the sysadmin role in AX 2012 R3.
+1.  Install the local component of the System diagnostics. For details, see [Install and run System diagnostics](/dynamicsax-2012/appuser-itpro/install-run-system-diagnostics). Important: For this beta release, we require that you add the service account for the System diagnostics to the sysadmin role in AX 2012 R3.
 2.  Click **Start** &gt; **Microsoft Dynamics AX Lifecycle Services Diagnostic Service Discovery**.
 3.  In the **Environment Discovery** window, enter a name for the environment, and the fully-qualified name of the Microsoft SQL Server instance and database. Then click Discover environment.
 4.  After discovery is completed, enter the values in the **Configuration management (Beta)** section, click **Save**, and then click **Upload environment**.

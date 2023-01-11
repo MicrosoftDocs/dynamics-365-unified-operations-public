@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Show counts in fields
-description: This topic explains how to calculate a count that is correct and that appears quickly. 
-author: robinarh
-ms.date: 07/01/2017
+description: This article explains how to calculate a count that is correct and that appears quickly.
+author: jasongre
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: jasongre
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-
+ms.custom: 255544
+ms.assetid: 
 ---
 
 # Show counts in fields
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 Although a **pageLink** control can be used to show counts (totals), it can be slow, because it must load the target page before it counts the number of rows. Additionally, the count that is calculated can be incorrect, because there is a limit on the number of rows that are retrieved.
 

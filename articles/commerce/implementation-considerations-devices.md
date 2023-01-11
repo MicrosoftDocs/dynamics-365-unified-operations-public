@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device management implementation guidance
-description: This topic is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
+description: This article is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 author: jashanno
 ms.date: 07/30/2020
 ms.topic: article
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
+This article is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 
 ## Overview
 
 A *device* is an instrument on which a point of sale (POS) application can be installed, configured, and used to perform operations that are required in order to run or help run the business that owns that instrument. In other words, a device is a piece of technology that runs a POS application to help run a business. This business doesn't have to be exclusively a commerce operation. For example, a hospital has a gift shop, a warehouse manages inventory, and a law firm generates invoices. What is important is that the application that the device runs makes business operations simpler, more efficient, or just better managed and recorded. Regardless of the scenario that they are used in, devices are critical elements. As the number of devices that are used increases, it becomes more valuable to put processes in place to track and manage those devices. Together, these processes are known as *device management*.
 
 
-The POS application that this topic discusses is Modern POS (MPOS) in Microsoft Dynamics 365 Commerce. MPOS lets users complete business operations quickly, efficiently, and simply. It also helps the organization manage the many devices that run MPOS across the business. Although this topic discusses many aspects of an MPOS device, the two critical aspects are the business-oriented *register* and the physical concept of a *device*.
+The POS application that this article discusses is Modern POS (MPOS) in Microsoft Dynamics 365 Commerce. MPOS lets users complete business operations quickly, efficiently, and simply. It also helps the organization manage the many devices that run MPOS across the business. Although this article discusses many aspects of an MPOS device, the two critical aspects are the business-oriented *register* and the physical concept of a *device*.
 
 
 The **Registers** page is the virtual tracking mechanism for the business-oriented details of an instance of the MPOS application. These details include the visual profile that is used, the automatic sign-out time, and the store that the register is a part of. All these details are stored in the virtual register. When the register is correctly set up and configured, it's linked to a virtual device.
@@ -88,13 +88,13 @@ For more information that will help you better understand distributed deployment
 
 ### Servicing devices
 
-Although deployment is an important topic that has many nuances, the ongoing nature of business requires that you consider servicing early, and that you plan for it. In that way, you can maximize efficiency and speed of completion every time that servicing is required. Servicing becomes even more important when you understand that, not only do applications have to be serviced, but the operating system and peripherals might also require updates. As we mentioned earlier, this process can be even more difficult when it's time to replace devices. In general, you should consider all the following factors:
+Although deployment is an important article that has many nuances, the ongoing nature of business requires that you consider servicing early, and that you plan for it. In that way, you can maximize efficiency and speed of completion every time that servicing is required. Servicing becomes even more important when you understand that, not only do applications have to be serviced, but the operating system and peripherals might also require updates. As we mentioned earlier, this process can be even more difficult when it's time to replace devices. In general, you should consider all the following factors:
 
 - **Devices** – The process of servicing a device involves more than just determining whether servicing has been completed. Instead, many aspects of the device must be reviewed and updated, either individually or as part of a group of devices at the same time:
 
     - The information on the **Devices** page, or in the **Channel deployment** workspace, in Dynamics 365 headquarters can help you validate the current status and version of MPOS or other self-service components, such as hardware station or Commerce Scale Unit.
     - It's very useful if you know the version of Microsoft Windows. In scenarios where a systems management solution isn't used, you can use the **winver** command in a Command Prompt window to quickly learn the specific version of Windows that is currently installed. By comparing the version number against the [Windows version list](https://technet.microsoft.com/windows/release-info.aspx), you can easily learn what updates a computer is missing at a service pack level.
-    - Internal and peripheral drivers must be checked for version updates too. You should include and monitor this information in the device and peripheral lists that you created as part of the store templates during the planning phase, as explained earlier in this topic.
+    - Internal and peripheral drivers must be checked for version updates too. You should include and monitor this information in the device and peripheral lists that you created as part of the store templates during the planning phase, as explained earlier in this article.
     - Always track when a computer goes out of service (warranty or service plan). In this way, you can quickly determine when a computer should be replaced instead of being sent out for servicing (warranty or service plan).
 
 - **Peripherals** – The peripherals that are attached to a device or to the network must be monitored. As part of this process, you must also monitor the network devices themselves. (Routers, switches, firewalls, and all other network devices also have firmware that requires occasional updates to maintain security and compatibility, and to comply with servicing terms.) If appropriate planning has occurred, the process of watching for service dates and correctly updating peripherals should become a simplified task within the larger servicing flow for device management.

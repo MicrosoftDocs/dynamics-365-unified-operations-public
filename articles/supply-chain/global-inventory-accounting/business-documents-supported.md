@@ -1,14 +1,14 @@
 ---
 title: Business documents supported by Global Inventory Accounting
-description: This topic lists the business documents that are supported by Global Inventory Accounting. It also provides a detailed example for purchase order documents.
-author: AndersGirke
+description: This article lists the business documents that are supported by Global Inventory Accounting. It also provides a detailed example for purchase order documents.
+author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.20
 # Business documents supported by Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 After the Global Inventory Accounting Add-in is fully set up, it's ready to process inventory-related documents that are entered in Microsoft Dynamics 365 Supply Chain Management.
 
@@ -27,7 +26,7 @@ There are two types of business documents:
 - **Documents that have a journal** – These documents include product receipt, purchase invoice, packing slip, and sales invoice documents.
 - **Documents that don't have a journal** – These documents include counting, movement, and inventory adjustment documents.
 
-Later in this topic, purchase orders will be used as an example to illustrate the process.
+Later in this article, purchase orders will be used as an example to illustrate the process.
 
 The following table lists the documents that the current release supports.
 

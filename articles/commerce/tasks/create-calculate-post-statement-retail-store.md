@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create, calculate, and post statements for a retail store
-description: This topic describes the manual steps for creating, calculating, and posting a statement for a store. 
+description: This article describes the manual steps for creating, calculating, and posting a statement for a store. 
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the manual steps for creating, calculating, and posting a statement for a store. There are also batch jobs that can be configured for the same tasks. The steps for configuring and running the batch jobs can be found in other topics. To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 Commerce. This recording uses the USRT company in demo data.
+This article describes the manual steps for creating, calculating, and posting a statement for a store. There are also batch jobs that can be configured for the same tasks. The steps for configuring and running the batch jobs can be found in other articles. To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 Commerce. This recording uses the USRT company in demo data.
 
 1. Select **Store financials** from the home page.
 2. Select **New statement**.

@@ -1,16 +1,16 @@
 ---
 title: Maintain test cases in Regression suite automation tool (RSAT)
-description: This topic explains how to maintain test cases and attachments in Regression suite automation tool (RSAT).
+description: This article explains how to maintain test cases and attachments in Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Maintain test cases in Regression suite automation tool (RSAT)
@@ -42,7 +42,7 @@ Follow these steps to view information about a test case.
 The **Test Case information** dialog box shows the following information about the test case:
 
 + The name that is assigned to the test case in the test suite appears at the top of the dialog box and can be changed.
-+ The recording name appears under the test case name. This name is taken from the recording XML file that was used when the recording was made in Task Recorder in the Finance and Operations app or by using the point of sale (POS) client.
++ The recording name appears under the test case name. This name is taken from the recording XML file that was used when the recording was made in Task Recorder in the finance and operations app or by using the point of sale (POS) client.
 + The **Attachments** grid shows the list of attachment files that are available with the test case. You can also find this list by using the **Directory** action under the attachments subfolder.
 
 ## Create a test case that has attachments
@@ -96,3 +96,4 @@ A test case that you delete in RSAT is removed from the current test suite, both
 In Azure DevOps, work items represent test cases, and test suites contain links to the test case work items. A test case is reused by linking to it from more than one test suite. When a test case is deleted in RSAT, RSAT determines whether the test case is linked to one test suite or more than one test suite. If the test case is used only by the current test suite, RSAT deletes the Azure DevOps work item that represents the test case. If the test case is used by other test suites, RSAT doesn't delete the work item itself. Instead, it deletes only the link to the work item.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a new environment
-description: This topic explains how to deploy a new environment using the self-service deployment experience.
+description: This article explains how to deploy a new environment using the self-service deployment experience.
 author: rashmansur
 ms.date: 06/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [self-service deployment](infrastructure-stack.md) experience. Refer to the following procedure to deploy these environments.
+This article walks through the process of deploying sandbox (Tier 2 and above) and production environments with the [self-service deployment](infrastructure-stack.md) experience. Refer to the following procedure to deploy these environments.
 
 1. Select **Configure** on the project dashboard page.
 2. Select the **Application** and **Platform** version for the environment that you want to deploy. 

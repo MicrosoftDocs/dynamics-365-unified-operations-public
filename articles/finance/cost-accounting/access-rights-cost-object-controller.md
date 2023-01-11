@@ -2,7 +2,7 @@
 # required metadata
 
 title: Access rights for cost object controllers
-description: This topic provides information about access rights for cost object controllers. 
+description: This article provides information about access rights for cost object controllers. 
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.search.form: CAMCostControlWorkspace, CAMParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -42,7 +42,7 @@ There are four unique roles in Cost accounting.
 | Cost accountant clerk   | Operations   |
 | Cost object controller  | Team members |
 
-This topic explains how to assign the **Cost object controller** role to a manager.
+This article explains how to assign the **Cost object controller** role to a manager.
 
 When the **Cost object controller** role is assigned to a manager, the manager can perform the following tasks:
 
@@ -99,7 +99,7 @@ The settings for the Access list hierarchy are used to control the data that is 
 
 > [!IMPORTANT]
 > - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.
+> - This article shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
 Additional resources
 

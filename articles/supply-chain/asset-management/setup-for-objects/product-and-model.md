@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset manufacturers and models
-description: This topic explains how to set up asset manufacturers and related models in Asset Management.
+description: This article explains how to set up asset manufacturers and related models in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
+ms.search.form: EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to set up asset manufacturers and related models in Asset Management. Models can be related to asset types.
+This article explains how to set up asset manufacturers and related models in Asset Management. Models can be related to asset types.
 
 ## Set up product-model relations
 
@@ -58,7 +58,7 @@ This topic explains how to set up asset manufacturers and related models in Asse
 
 ## Select a manufacturer and model on an object
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets**.
+1. Select **Asset management** \> ***Assets** \> **All assets**.
 2. In the **Asset** column, select the link for the asset. The **Details** page appears.
 3. Select **Edit**.
 4. On the **General** FastTab, select values in the **Manufacturer** and **Model** fields.

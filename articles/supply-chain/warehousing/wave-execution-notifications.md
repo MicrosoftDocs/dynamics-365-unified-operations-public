@@ -2,9 +2,9 @@
 # required metadata
 
 title: Wave execution notifications 
-description: This topic describes wave execution notifications and explains how to set them up.
-author: mirzaab
-ms.date: 04/03/2021
+description: This article describes wave execution notifications and explains how to set them up.
+author: Mirzaab
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -34,14 +34,11 @@ The *Wave execution notifications* feature uses business events and the Action c
 
 The **Show messages** button (bell symbol) on the right side of the navigation bar indicates when an Action center message is available for the current user. The user can select the **Show messages** button to open the Action center and review the messages.
 
-Business events occur when business processes are run. Business processes are made up of tasks. During a business process, the users who participate in it perform business actions to complete those tasks. Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Business events occur when business processes are run. Business processes are made up of tasks. During a business process, the users who participate in it perform business actions to complete those tasks. Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
-## Turn on the Wave execution notifications feature
+## Turn the Wave execution notifications feature on or off
 
-Before you can use the *Wave execution notifications* feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Wave execution notifications*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave execution notifications* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Scenario: Send wave batch execution notifications to the Action center
 
@@ -134,3 +131,4 @@ Depending on the setup of your business events, you will eventually receive a no
 > Open wave details
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

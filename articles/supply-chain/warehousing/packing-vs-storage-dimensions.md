@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set different dimensions for packing and storage
-description: This topic shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
-author: mirzaab
+description: This article shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
+author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
@@ -15,9 +15,9 @@ ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -38,11 +38,11 @@ Some items are packed or stored in such a way that you may need to track physica
 *Storage* dimensions are supported even when the *Packaging product dimensions* feature isn't enabled. You set these up using the **Physical dimension** page in Supply Chain Management. These dimensions are used by all processes where the packing and nested packing dimensions aren't specified.
 
 *Packing* and *nested packing* dimensions are set up using the **Physical product dimensions** page, which is added when you enable the *Packaging product dimensions* feature.
-This topic provides a scenario that illustrates how to use this feature.
+This article provides a scenario that illustrates how to use this feature.
 
 ## Turn on the packaging product dimensions feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Packaging product dimensions*
@@ -55,7 +55,7 @@ Before you can run the example scenario, you must prepare your system as describ
 
 #### Enable demo data
 
-To work through this scenario using the demo records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
+To work through this scenario using the demo records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
 
 #### Add a new physical dimension to a product
 

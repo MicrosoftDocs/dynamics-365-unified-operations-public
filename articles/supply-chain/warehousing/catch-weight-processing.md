@@ -2,7 +2,7 @@
 # required metadata
 
 title: Catch weight product processing with warehouse management
-description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
+description: This article describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 ms.date: 08/13/2020
 ms.topic: article
@@ -89,7 +89,7 @@ If the actual weight is captured at the packing station during the container pac
 > [!NOTE]
 > Because the **Packing** option causes inventory to be updated with the average picked weight, this could trigger a discrepancy that could cause a catch weight profit/loss adjustment and/or a difference between on-hand inventory weight and catch weight tag weight.
 
-For internal warehouse management processes such as counting and adjustment corrections, you can define whether the weight should be captured. If it isn't captured, the nominal weight is used. Other options let you capture weight per catch weight unit and per counting quantity.
+For internal processes, such as counting and adjustment corrections, you can define whether the weight should be captured. If it isn't captured, the nominal weight is used. Other options let you capture weight per catch weight unit and per counting quantity.
 
 You can also define how the weight is captured. In one of the two main flows, catch weight tags are tracked and used to capture the weight. In the other flow, catch weight tags aren't tracked.
 
@@ -145,7 +145,6 @@ Not all workflows support catch weight product processing with warehouse managem
 - Catch weight products that are variant-enabled can't be used together with the functionality for converting variant units of measure.
 - Catch weight products can't be marked as a commerce "product kit."
 - Catch weight products can be used only with a unit sequence group that has catch weight handling units, and that has the catch weight unit as the lowest sequence.
-- For catch weight products, the inventory unit can be converted to the catch weight unit only if the conversion produces a nominal quantity that is more than 1.
 - The setup of bar codes for catch weight products doesn't support a variable weight setup.
 
 ### Order processing
@@ -191,7 +190,7 @@ Not all workflows support catch weight product processing with warehouse managem
 ### Other restrictions and behaviors for catch weight product processing with warehouse management
 
 - During picking processes where the user isn't prompted to identify tracking dimensions, the weight assignment is done based on the average weight. This behavior occurs when, for example, a combination of tracking dimensions is used in the same location and, after a user processes picking, only one tracking dimension value is left in the location.
-- When inventory is reserved for a catch weight product that is configured for warehouse management processes, the reservation is done based on the minimum weight that is defined, even if this quantity is the on-hand last handling quantity. This behavior differs from the behavior for items that aren't configured for warehouse management processes. There is one exception to this restriction. For production picking, when the last handling quantity of a catch weight product that is serial number–controlled is picked, the actual weight is used.
+- When inventory is reserved for a catch weight product that is configured for warehouse management processes (WMS), the reservation is done based on the minimum weight that is defined, even if this quantity is the on-hand last handling quantity. This behavior differs from the behavior for items that aren't configured for WMS. There is one exception to this restriction. For production picking, when the last handling quantity of a catch weight product that is serial number–controlled is picked, the actual weight is used.
 - Processes that use the weight as part of capacity calculations (wave thresholds, work maximum breaks, container maximums, location load capacities, and so on) don't use the actual weight of the inventory. Instead, the processes are based on the physical handling weight that is defined for the product.
 - In general, Commerce functionality isn't supported for catch weight products.
 - For catch weight products, inventory status can't be updated from **Warehouse status change**.

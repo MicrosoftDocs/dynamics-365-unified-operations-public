@@ -1,26 +1,19 @@
 ---
 title: Customize model elements through extension
-description: This topic describes the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
-author: jorisdg
+description: This article describes the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
+author: gianugo
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 11184
-ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 11184
+ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ---
 
 # Customize model elements through extension
@@ -221,7 +214,7 @@ In the event handler code of the **FMRentalCharge\_Extension** class shown in th
 
     [![FMParameters.](./media/code3_customizemodel.png)](./media/code3_customizemodel.png)
 
-    The Finance and Operations apps also support configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator. This tutorial doesn't cover that feature.
+    The finance and operations apps also support configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator. This tutorial doesn't cover that feature.
 
 ## Create additional Fleet Management extensions
 

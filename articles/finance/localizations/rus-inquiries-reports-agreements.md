@@ -1,27 +1,17 @@
 ---
-# required metadata
-title: Inquiries and reports with agreements  
-description: This topic provides information about restoring previously deducted VAT amounts for fixed assets.
-author: v-nadyuz
+title: Inquiries and reports with agreements
+description: This article provides information about restoring previously deducted VAT amounts for fixed assets.
+author: AdamTrukawka
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Inquiries and reports with agreements
@@ -57,7 +47,7 @@ ms.dyn365.ops.version: 8.1
 
     ![Vendor transactions page.](media/15_Vendor_transactions.png)
 
-2. Review the amounts as described in the previous section of this topic, [View sales agreement amounts](#sales-agreement-amounts).
+2. Review the amounts as described in the previous section of this article, [View sales agreement amounts](#sales-agreement-amounts).
 
 ## Viewing orders and invoices that are linked to the agreement
 
@@ -136,7 +126,7 @@ An Act of adjustment contains the following data in the context of the customer 
 
 1. Go to **Accounts receivable** \> **Inquiries and reports** \> **Act of adjustment**.
 2. In the **Counteragent** section, in the **Vendor account** field, select the vendor to generate the Act of adjustment for.
-3. Specify other details as described in the previous section of this topic, [Generate an Act of adjustment for a customer](#generate-act-adjustment-customer), and then select **OK**. After generate the report, you can also view vendor transactions, change the report parameters, and print the report.
+3. Specify other details as described in the previous section of this article, [Generate an Act of adjustment for a customer](#generate-act-adjustment-customer), and then select **OK**. After generate the report, you can also view vendor transactions, change the report parameters, and print the report.
 
 Find more details in the following topics:
 

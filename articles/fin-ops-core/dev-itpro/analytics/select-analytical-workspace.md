@@ -1,27 +1,16 @@
 ---
-# required metadata
-
-title: Select analytical workspaces from Power BI 
-description: This topic explains how to select a report that is hosted in Power BI and use it for an application workspace.
+title: Select analytical workspaces from Power BI  (contains video)
+description: This article explains how to select a report that is hosted in Power BI and use it for an application workspace.
 author: RichdiMSFT
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: richdi
-ms.search.validFrom: 2019-07-08 
+ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
 ---
 
@@ -33,10 +22,10 @@ ms.dyn365.ops.version: Platform update 26
 
 The analytical workspaces that are bundled with the application suite offer users relevant insights into their business data. However, in some cases, it might make sense to replace standard reports with custom reports that are designed specifically for the users in your organization.
 
-The world-class tooling that PowerBI.com provides lets you produce analytical reports that contain mashup views that use data from external sources. In Platform update 26 for Finance and Operations, power users can replace the standard embedded reports with those that are hosted on PowerBI.com.
+The world-class tooling that PowerBI.com provides lets you produce analytical reports that contain mashup views that use data from external sources. In Platform update 26 for finance and operations, power users can replace the standard embedded reports with those that are hosted on PowerBI.com.
 
 > [!IMPORTANT]
-> The functionality that this topic describes isn't a personalization. The customization of analytical workspaces applies to all users in the active legal entity.
+> The functionality that this article describes isn't a personalization. The customization of analytical workspaces applies to all users in the active legal entity.
 
 ### Motivations for embedding PowerBI.com reports
 
@@ -52,7 +41,7 @@ Here are some of the top motivations for selecting reports that are hosted on Po
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3lP5m]
 
-The [How to embed PowerBI.com reports](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to embed PowerBI.com reports](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 To replace the standard reports, you must be a member of the System Report Editors security group. Members of this security group can access the options in application workspaces that let them customize the standard reports. This example shows how to replace the standard analytical report with a customized report that is hosted on PowerBI.com.
 

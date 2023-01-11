@@ -2,8 +2,8 @@
 # required metadata
 
 title: Generate a statistical baseline forecast
-description: This topic provides information about the parameters and filters that are used in the calculation of demand forecasting. 
-author: ChristianRytt
+description: This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
+author: t-benebo
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the parameters and filters that are used in the calculation of demand forecasting. 
+This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 
 When you create a baseline forecast, you must first specify the parameters and filters that are used in the calculation. For example, you can create a baseline forecast that estimates demand based on transaction data from the past year for a specific company, for the coming month, and for a selected group of items. 
 
@@ -74,10 +74,8 @@ If the forecast is not generated for a big set of items, but, for example, for o
 ## Additional resources
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
-
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
-
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
-
+- [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

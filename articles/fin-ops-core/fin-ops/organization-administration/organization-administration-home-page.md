@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you in your organization.
+description: This article points to resources that will help you in your organization.
 author: sericks007
 ms.date: 08/18/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points to content that will help power users and administrators configure the system to work smoothly and effectively for your organization and business.
+This article points to content that will help power users and administrators configure the system to work smoothly and effectively for your organization and business.
 
 Much of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help your organization run more efficiently.
 

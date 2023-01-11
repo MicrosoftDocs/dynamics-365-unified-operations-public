@@ -1,11 +1,11 @@
 ---
 title: Table of Contents form pattern
-description: This article provides information about the Table of Contents form pattern, which is used when two or more related forms are required for setup configuration. 
+description: This article provides information about the Table of Contents form pattern, which is used when two or more related forms are required for setup configuration.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28

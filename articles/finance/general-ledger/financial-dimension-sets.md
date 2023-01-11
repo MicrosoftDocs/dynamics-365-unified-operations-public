@@ -2,9 +2,9 @@
 # required metadata
 
 title: Financial dimension sets
-description: This topic describes financial dimension sets and provides some tips for optimizing their use.
+description: This article describes financial dimension sets and provides some tips for optimizing their use.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 25871
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes financial dimension sets and provides some tips for optimizing their use.
+This article describes financial dimension sets and provides some tips for optimizing their use.
 
 A dimension set is an ordered list of financial dimensions that can be used to summarize General ledger data in a user-defined way. A primary use of dimension sets is to define a trial balance.
 
@@ -65,6 +65,11 @@ Use the **Rebuild balances** button to re-create the balances from scratch. In t
 ## Clear balances
 
 Use the **Clear balances** button to remove the balances and stop any further updates. The dimension set will no longer have an impact on General ledger posting activities.
+
+## Delete a dimension set
+
+Don't **delete and recreate** dimension sets as any form of workaround to solve potential issues with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with issues, contact customer support. 
+
 
 For more information, see [Financial dimensions](financial-dimensions.md).
 

@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -35,7 +35,7 @@ The **Forecast position summary** report shows forecast position costs by accoun
 
 The **Forecast position details** report contains most of the information displayed on the forecast position form. The account distributions assigned to the forecast position via financial dimensions and financial dimension templates are shown, along with the costs associated with each distribution combination for the forecast position. 
 
-To view more information about a Forecast position, select the Position number to open the Forecast position page.
+To view more information about a **Forecast position**, select the **Position number** to open the **Forecast position** page.
 
 ## Filter the data on this report
 

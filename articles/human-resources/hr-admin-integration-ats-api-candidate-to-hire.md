@@ -2,9 +2,9 @@
 # required metadata
 
 title: Candidate to hire
-description: This topic describes the Candidate to hire entity for Dynamics 365 Human Resources.
+description: This article describes the Candidate to hire entity for Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Candidate to hire
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Candidate to hire entity for Dynamics 365 Human Resources.
+This article describes the Candidate to hire entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmcandidatetohireentity
 
@@ -73,6 +76,8 @@ When you create an internal candidate record (a candidate for the position who a
             "_mshr_fk_reasoncode_id_value": "Guid",
             "mshr_militaryserviceenddate": "Guid",
             "mshr_militaryservicestartdate": "Guid"
+            "mshr_militaryserviceenddate": "Date",
+            "mshr_militaryservicestartdate": "Date"
         }
 ```
 

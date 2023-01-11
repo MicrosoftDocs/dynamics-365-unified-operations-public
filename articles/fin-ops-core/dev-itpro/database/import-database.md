@@ -2,9 +2,9 @@
 # required metadata
 
 title: Import a database
-description: This topic explains how to import a database for Finance and Operations apps.
+description: This article explains how to import a database for finance and operations apps.
 author: LaneSwenka
-ms.date: 08/21/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,10 @@ ms.dyn365.ops.version: 8.1.3
 [!include [banner](../includes/banner.md)]
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to import a golden configuration database into a sandbox user acceptance testing (UAT) environment.
+
+## Prerequisites
+
+Database import isn't applicable to LCS projects that are configured for a Dynamics AX 2012 upgrade. Therefore, import will be blocked if the **Legacy system** field at **Project Onboarding** \> **Project overview** is set to **AX2012 Upgrade**.
 
 ## Self-service import database
 
@@ -65,3 +69,4 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

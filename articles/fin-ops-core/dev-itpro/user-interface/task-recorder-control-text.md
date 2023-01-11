@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Control the text that Task Recorder generates for a control
 description: This article describes how Task recorder determines what instruction label to generate for controls.
-author: RobinARH
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 17711
-ms.assetid: 9b75a1e3-cc76-4a2f-ae30-7e5a485b30b1
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 17711
+ms.assetid: 9b75a1e3-cc76-4a2f-ae30-7e5a485b30b1
 ---
 
 # Control the text that Task Recorder generates for a control

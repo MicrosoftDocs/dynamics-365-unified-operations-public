@@ -2,10 +2,10 @@
 # required metadata
 
 title: Russia overview
-description: This topic provides an overview of functionality that is specific to Russia.
+description: This article provides an overview of functionality that is specific to Russia.
 author: kfend
-ms.date: 07/20/2021
-ms.topic: article
+ms.date: 09/12/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about functionality that supports Russian regulations. 
+This article provides information about functionality that supports Russian regulations. 
 
 ## General ledger
 
@@ -40,6 +40,9 @@ This topic provides information about functionality that supports Russian regula
 - [Ledger translation](rus-ledger-translation-procedure.md)
 - [Turnover balance statement reports](rus-turnover-balance-statement-reports.md)
 - [Account activity reports](rus-account-activity-reports.md)
+- [White paper: Dynamics 365 Finance and Dynamics 365 Supply Chain Management-Federal Accounting Standard 27-2021 in Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides)
+- [Enable Electronic reporting destinations to store Russian accounting documents](rus-enable-er-destinations-ru-accounting-documents.md)
+
 
 ## Advance holders
 
@@ -58,6 +61,7 @@ This topic provides information about functionality that supports Russian regula
 - [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
 - [Cash - Local primary forms and unified reports](rus-local-primary-forms-and-unified-reports.md)
+- [Client-Bank interface and reconciliation procedure](rus-client-bank-export.md)
 
 ## VAT
 
@@ -118,7 +122,7 @@ This topic provides information about functionality that supports Russian regula
 - [Transactions through intermediary](rus-transactions-through-intermediary.md)
   - [Purchases on commission](rus-purchases-on-commission.md)
   - [Sales on commission](rus-sales-on-commission.md)
-
+- [Local reports and primary forms in Accounts receivable and Accounts payable](rus-local-reports-primary-forms-ar-ap.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
@@ -129,6 +133,12 @@ This topic provides information about functionality that supports Russian regula
 - [Inventory profile](rus-inventory-profile-overview.md)
   - [Set up an inventory profile](rus-set-up-inventory-profile.md)
   - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
+- Customs clearance  
+  - [Work with customs clearance](rus-work-with-customs-clearance.md)
+
+## Customs
+- [Set up customs clearance](rus-set-up-customs-clearance.md)
+- [Work with customs clearance](rus-work-with-customs-clearance.md)
 
 ## Reporting
 

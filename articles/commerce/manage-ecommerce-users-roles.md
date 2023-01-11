@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Manage e-Commerce users and roles
-description: This topic explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
+description: This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry:
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Manage e-Commerce users and roles
@@ -32,7 +23,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
+This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 
 To help control user access and grant users permission to perform specific tasks, the site authoring environment uses security groups that you create in Microsoft Azure Active Directory (Azure AD). You first assign a new or existing security group from Azure AD to each role in the authoring environment. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
 
@@ -54,7 +45,7 @@ When you provision Dynamics 365 Commerce in the Microsoft Dynamics Lifecycle Ser
 
 ## Administrator role
 
-When you create a new site in Commerce, you're asked to provide a security group for the **Administrator** role. See the table earlier in this topic for an overview of the permissions that this role grants.
+When you create a new site in Commerce, you're asked to provide a security group for the **Administrator** role. See the table earlier in this article for an overview of the permissions that this role grants.
 
 ## Add or update security groups
 

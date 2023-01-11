@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Germany overview
-description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
-author: ShylaThompson
-ms.date: 05/12/2020
-ms.topic: article
+description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
+author: AdamTrukawka
+ms.date: 05/09/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Germany
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Germany overview
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that should be considered for legal entities with a primary address in Germany.
+This article includes information and links to resources that should be considered for legal entities with a primary address in Germany.
 
 ## Audit file
 - [German audit file (GDPdU/GoBD) overview](emea-deu-gdpdu-audit-data-export.md)
@@ -40,12 +29,14 @@ This topic includes information and links to resources that should be considered
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
--   [Intrastat](emea-deu-intrastat.md)
+
+## VAT declaration 
+-   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
+This feature is deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md#elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format). For more information about VAT declaration, see [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
-- [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
-- [VAT declaration for Germany](emea-de-vat-declaration.md)
+- [ELSTER VAT statement for Germany](emea-de-vat-declaration.md)
 
 ## Electronic invoices in Germany
 - [Customer electronic invoices export](emea-deu-e-invoices.md)
@@ -60,10 +51,11 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 
 ## Reports for Germany
+[German journal list report](emea-deu-journal-list-report.md).
 
-| Report                     |  Description  |How to get to the report |
-|----------------------------|--------------------------|----------------------------------------|
-|German journal list report|The **German journal list** report displays a list of transactions, sorted by journal sequence number, that result from running the journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md).|  **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|
+## Intra-community reporting
+-   [EU sales list for Germany](emea-deu-eu-sales-list.md)
+-   [Intrastat](emea-deu-intrastat.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)

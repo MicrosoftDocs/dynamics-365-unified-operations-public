@@ -2,7 +2,7 @@
 # required metadata
 
 title: Foreign currency revaluation for bank accounts
-description: This topic provides information about foreign currency revaluation for bank accounts.
+description: This article provides information about foreign currency revaluation for bank accounts.
 author: panolte
 ms.date: 03/28/2018
 ms.topic: article

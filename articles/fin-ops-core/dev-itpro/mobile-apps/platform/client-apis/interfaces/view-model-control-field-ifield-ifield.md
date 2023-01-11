@@ -1,17 +1,18 @@
 ---
 title: Field type
 description: Field control type.
-author: robinarh
-ms.date: 08/01/2017
+author: jasongre
+ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ---
 
 # Field type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Field control type.
 

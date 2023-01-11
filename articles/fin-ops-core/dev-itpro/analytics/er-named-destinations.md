@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Configure print management record-specific ER destinations
-description: This topic explains how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
-author: NickSelin
+description: This article explains how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
+author: kfend
 ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Configure print management record-specific ER destinations
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Accounts Receivable Clerk role can perform the following tasks:
+This article explains how a user in the System Administrator or Accounts Receivable Clerk role can perform the following tasks:
 
 - Configure named [Electronic reporting (ER)](general-electronic-reporting.md) destinations for an ER solution that generates free text invoices.
 - Assign an ER destination to a single [print management](document-reporting-services.md) record.
@@ -40,7 +30,7 @@ The procedures can be completed in the USMF company. No coding is required.
 
 ## Introduction
 
-You can configure [destinations](electronic-reporting-destinations.md) for each folder in the file output component of an ER [format](general-electronic-reporting.md#FormatComponentOutbound) [configuration](general-electronic-reporting.md#Configuration) that is used to generate an outbound document. When you run an ER format of this type, if you have the appropriate access rights, you can also change the configured destination settings at runtime.
+You can configure [destinations](electronic-reporting-destinations.md) for each folder in the file output component of an ER [format](general-electronic-reporting.md) [configuration](general-electronic-reporting.md#Configuration) that is used to generate an outbound document. When you run an ER format of this type, if you have the appropriate access rights, you can also change the configured destination settings at runtime.
 
 In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an action code can be [set up](er-apis-app10-0-17.md) for an ER format to specify the action that users perform by running that ER format. For example, in the **Accounts receivable** module, in the print management settings, you can select an ER format that generates a specific business document, such as a free text invoice. You can then select **View** to preview the invoice or **Print** to send it to a printer. If an action is passed for the running ER format at runtime, you can [configure different ER destinations for different user actions](er-action-dependent-destinations.md).
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: United Kingdom overview
-description: This topic provides links to documentation resources for the United Kingdom. 
+description: This article provides links to documentation resources for the United Kingdom. 
 author: kfend
 ms.date: 09/07/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: United Kingdom
 # ms.search.industry: 
 ms.author: kfend
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for United Kingdom. 
+This article provides links to documentation resources for United Kingdom. 
 
 - [Construction Industry Scheme](emea-gbr-cis-construction-industry-scheme.md)
 - [Create a credit on the settlement discount](tasks/gb-00009-credit-note-settlement-discount.md)
@@ -51,6 +51,7 @@ This topic provides links to documentation resources for United Kingdom.
   - [Generate a VAT declaration in paper format (VAT 100 report)](emea-gbr-mtd-vat-integration-vat100.md)
 - [Statistics on payment practices report](emea-gbr-statistics-on-payment-practices-report.md)
 - [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
+- [EU sales list for United Kingdom (Northern Ireland)](emea-uk-eu-sales-list.md)
 
 ## Regulatory updates for the United Kingdom
 

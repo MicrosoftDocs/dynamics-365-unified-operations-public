@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure ledgers
-description: This topic provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
+description: This article provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
 author: kweekley
 ms.date: 09/24/2020
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: Ledger
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
+This article provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
 
 ## Selecting the chart of accounts
 
@@ -47,7 +47,7 @@ Each legal entity in Dynamics 365 Finance can be configured to use one or more a
 
 Note that, if you have multiple account structures, you can select only account structures that don't have overlapping combinations of main accounts and financial dimensions. For example, one of your account structures is configured to add a business unit for main accounts between 1000 and 1999. In another account structure, you've added a Department financial dimension for main accounts that begin with 1. In this case, only one of the account structures can be added in the same legal entity.
 
-To configure account structures for your ledger, on the **Ledger** page, on the **Account structures** FastTab, select **Add**, select an account structure in the list, and then select **Select**. It might take a few minutes for the account structures to be added and saved. Note that the account structures that you select must be active. Otherwise, the details of the account structures won't be effective in the legal entities where they are linked.
+To configure account structures for your ledger, on the **Ledger** page, on the **Account structures** FastTab, select **Add**, select an account structure in the list, and then select **Select**. It will take a few minutes for the account structures to be added and saved. When the changed account structure is saved to the ledger, the process to synchronize all the unposted transactions will begin. You must wait until the change is completed for the current ledger in the legal entity where the change is being made before you can make an account structure change for a ledger in another legal entity. Note that the account structures that you select must be active. Otherwise, the details of the account structures won't be effective in the legal entities where they are linked.
 
 To remove an account structure, on the **Ledger** page, on the **Account structures** FastTab, select **Remove**. Note that, if you remove an account structure from your ledger, you don't remove any transactions that were posted by using the configuration of that account structure.
 
@@ -75,7 +75,7 @@ For more information about balancing entries, see [Balanced journals for interun
 
 The **Ledger** page is also used to control and define the currencies that will be used when transactions are posted to the general ledger. You must specify the accounting currency, which is the currency that is used in the **Accounting currency** column in the general ledger on all vouchers. Additionally, in the **Reporting currency** column, you can optionally select a second currency. If you select a reporting currency, all transactions will be recorded in that currency in the **Reporting currency** column in the general ledger on all vouchers.
 
-If transactions are posted in a different currency, the system automatically converts the transaction amount from the transactions currency into the accounting currency and reporting currency on the voucher. On the **Ledger** page, in the **Accounting currency exchange rate type** field, select the type of exchange rate that is configured for the exchange rates that should be used to convert values from the transaction currency to the accounting currency on a voucher. If you selected a reporting currency, you must also set the **Reporting currency exchange rate type** field to indicate the exchange rate that should be used to convert values from the transaction currency to the reporting currency on a voucher.
+If transactions are posted in a different currency, the system automatically converts the transaction amount from the transaction currency into the accounting currency and reporting currency on the voucher. On the **Ledger** page, in the **Accounting currency exchange rate type** field, select the type of exchange rate that is configured for the exchange rates that should be used to convert values from the transaction currency to the accounting currency on a voucher. If you selected a reporting currency, you must also set the **Reporting currency exchange rate type** field to indicate the exchange rate that should be used to convert values from the transaction currency to the reporting currency on a voucher.
 
 If you're using budgeting functionality, you can also set the **Budget exchange rate type** field to indicate the exchange rate that should be used to convert budget transactions from one currency to another.
 

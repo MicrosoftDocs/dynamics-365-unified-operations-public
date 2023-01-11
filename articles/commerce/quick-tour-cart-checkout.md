@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Cart and checkout pages overview
-description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Cart and checkout pages overview
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 
 The cart page of an e-Commerce website shows all items that a customer has added to the cart. The cart page is built by using the cart module. The cart module is a container that hosts all the modules that are required to showcase items in the cart. The cart module can also use other modules to show the order summary and any promotional codes that have been applied to the customer order.
 

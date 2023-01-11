@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Demo data overview
-description: This topic provides an overview of the demo data.
+description: This article provides an overview of the demo data.
 author: sericks007
 ms.date: 09/20/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: ["56551", "intro-internal"]
-ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: pmantha
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 56551,  ""intro-internal
+ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ---
 
 # Demo data overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the demo data that is available.
+This article provides an overview of the demo data that is available.
 
 Demo data is the base data set that is released for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
@@ -94,7 +83,7 @@ The vendor payments analytics can be viewed on the **Vendor payments** workspace
 
 The Purchase performance analytics can be viewed on the **Purchase spend analysis** page from the Procurement and sourcing module. To view the analytics, you need to refresh the Purchase cube aggregate measure on the **Entity Store** page.
 
-The Sales and profitability analytics can be viewed on the **Sales and profitability performance** page from the Sales and marketing module. To view the analytics, you need to refresh the Sales cube aggregate measure on the **Entity Store** page.
+The Sales and profitability analytics can be viewed on the **Sales and profitability performance** page from the Sales and marketing module. To view the analytics, you need to refresh the sales cube aggregate measure on the **Entity Store** page.
 
 The production performance analytics can be viewed on the **Production performance** page from the Production control module. To view the analytics, you need to refresh the Production cube aggregate measure on the **Entity Store** page.
 

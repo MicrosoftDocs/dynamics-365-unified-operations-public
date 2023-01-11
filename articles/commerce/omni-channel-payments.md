@@ -2,10 +2,10 @@
 # required metadata
 
 title: Omni-channel payments overview
-description: This topic provides an overview of omni-channel payments in Dynamics 365 Commerce.
-author: rubendel
-ms.date: 09/17/2020
-ms.topic: article
+description: This article provides an overview of omni-channel payments in Dynamics 365 Commerce.
+author: BrianShook
+ms.date: 11/04/2020
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["141393", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
 
@@ -30,14 +30,15 @@ ms.dyn365.ops.version: AX 8.1.3
 # Omni-channel payments overview
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
+This article provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Token | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. They are sometimes also referred to as *references*. |
+| Token | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. They're sometimes also referred to as *references*. |
 | Card token | A token that a payment processor provides for storage in the POS system. A card token can be used only by the merchant who receives it. Card tokens are sometimes also referred to as *card references*. |
 | Authorization (auth) token | A unique ID that a payment process provides as part of the response that it sends to a POS system after the POS system makes an authorization request. An authorization token can be used later if the processor is called to perform actions such as reversing or voiding the authorization. However, it's most often used to capture funds when an order is fulfilled or a transaction is finalized. Authorization tokens are sometimes also referred to as *authorization references*. |
 | Capture token | A reference that a payment processor provides to a POS system when a payment is finalized or captured. The capture token can then be used to reference the payment capture in subsequent operations, such as refund requests. | 
@@ -46,17 +47,17 @@ This topic provides an overview of omni-channel payments in Dynamics 365 Commerc
 
 ## Overview
 
-In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They are then recalled at the POS to charge the customer's payment card at the time of pickup. 
+In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They're then recalled at the POS to charge the customer's payment card at the time of pickup. 
 
-All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
+All the scenarios that are described in this article can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
 
 ### Prerequisites
 
-Every scenario that is described in this topic requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Every scenario that is described in this article requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### Supported versions
 
-The omni-channel payment capabilities that are described in this topic were released as part of Microsoft Dynamics 365 for Retail version 8.1.3. 
+The omni-channel payment capabilities that are described in this article were released as part of Microsoft Dynamics 365 for Retail version 8.1.3. 
 
 #### "Card present" and "card not present" connectors
 
@@ -69,7 +70,7 @@ The second set of APIs is named **iNamedRequestHandler**. It supports the implem
 The following components and setup steps are required:
 
 - **eCommerce integration:** An integration with Commerce is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
-- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that topic, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
+- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that article, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
 - **Omni-channel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**. In Commerce versions 10.0.12 and later, this setting is in the **Feature Management** workspace. Select the **Omni-channel payments** feature and click **Enable now**. 
 - **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omni-channel payments.
 - **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
@@ -108,7 +109,7 @@ The following sections describe the steps for each scenario and show how to run 
 Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
-- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this settng is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
+- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this setting is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
 - The Adyen payment connector is configured for the Houston POS register.
 - The Retail Modern POS for Windows or Android with built-in hardware station
     -or-
@@ -174,9 +175,9 @@ Follow these steps to run the scenario.
 6. In the search bar, enter **Seattle**, and then select the **Seattle** store for pickup. 
 7. Select **OK** to accept the current date as the date of pickup.
 9. Select **Pay card** to initiate the payment.
-10. Tender the card payment for the amount that is due for the deposit. 
+10. Tender the card payment for the amount that is due for the deposit.
 11. Complete the deposit payment on the payment terminal. 
-12. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. 
+12. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 10 above), the funds are captured immediately against the card and an authorization token won't be available at invoicing because the funds have already been captured and tracked as paid.
 13. Start the POS for the Seattle store.
 14. In the POS, on the welcome page, select the **Orders to pickup** operation to see the orders for in-store pickup. 
 15. Select one or more lines from the order that was created in the reference storefront, and then select **Pick up**.
@@ -203,7 +204,7 @@ Follow these steps to run the scenario.
 8. Select **Pay card** to initiate the payment.
 9. Tender the card payment for the amount that is due for the deposit. 
 10. Complete the deposit payment on the payment terminal. 
-11. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed.
+11. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 9 above), the funds are captured immediately against the card and an authorization token won't be available at invoicing because the funds have already been captured and tracked as paid.
 
 When the order is picked, packed, and invoiced in the back office, the payment details that are provided at the POS will be used to capture the funds for the goods that are being shipped to the customer. 
 
@@ -230,13 +231,13 @@ A customer who comes to the store for order pickup has the option to use a diffe
 
 ### Invalid authorizations
 
-If the card that was used to create an order is no longer valid, when products are selected for pickup, the payment capture request will fail. The POS payment connector will then try to create a new authorization and capture by using the same card details. If the new authorization or capture fails, the cashier will be informed that the payment could not be processed. The cashier must then get a new payment from the customer. 
+If the card that was used to create an order is no longer valid, when products are selected for pickup, the payment capture request will fail. The POS payment connector will then try to create a new authorization and capture by using the same card details. If the new authorization or capture fails, the cashier will be informed that the payment couldn't be processed. The cashier must then get a new payment from the customer. 
 
 ### Multiple available payments
 
 When an order that has multiple tenders and multiple lines is picked up, the cashier first receives the **Use available payment method** prompt. If there are multiple cards, when the cashier selects **Use available payment method**, existing card tender lines will be captured until the balance is met for the goods that are currently being picked up. The cashier won't have the option to select the card that should be used for the goods that are being picked up. 
 
-## Related topics
+## Related articles
 
 - [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)

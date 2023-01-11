@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.
+This article explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.
 
 This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations. Use the DEMF demo data to complete this example.
 

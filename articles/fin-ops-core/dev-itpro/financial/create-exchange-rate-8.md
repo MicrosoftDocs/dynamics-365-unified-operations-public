@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create exchange rate providers in Finance and Operations version 8.0
-description: This topic explains how to set up an exchange rate provider in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
+title: Create exchange rate providers in finance and operations version 8.0
+description: This article explains how to set up an exchange rate provider in Microsoft Dynamics 365 Finance version 8.0 (April 2018).
 author: RyanCCarlson2
 ms.date: 09/25/2018
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: AX 8.0.0
 
 ---
 
-# Create exchange rate providers in Finance and Operations version 8.0
+# Create exchange rate providers in finance and operations version 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps that are required in order to set up an exchange rate provider in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). For the purpose of illustration, the OANDA exchange rate service is used throughout this topic.
+This article describes the steps that are required in order to set up an exchange rate provider in Microsoft Dynamics 365 Finance version 8.0 (April 2018). For the purpose of illustration, the OANDA exchange rate service is used throughout this article.
 
-By following the steps that are described in this topic, you can create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference that class as you read through this topic.
+By following the steps that are described in this article, you can create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference that class as you read through this article.
 
 To request an OANDA test account and receive information about the OANDA exchange rate service, go to <https://developer.oanda.com/exchange-rates-api/>.
 
@@ -483,3 +483,4 @@ Because there are no limits to the methods that exchange rate providers use to g
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

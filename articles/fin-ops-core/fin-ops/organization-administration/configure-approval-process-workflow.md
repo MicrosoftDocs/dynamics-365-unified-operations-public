@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Use the following procedure to configure the properties of the approval process.
 
 To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.

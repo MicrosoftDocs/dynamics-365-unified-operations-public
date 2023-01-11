@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: VAT declaration (Switzerland)
-description: This topic provides information about how to set up and generate a value-added tax declaration for Switzerland.
-author: anasyash
+description: This article provides information about how to set up and generate a value-added tax declaration for Switzerland.
+author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264584
 ms.search.region: Switzerland
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264584
+ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 ---
 
 # VAT declaration (Switzerland)
@@ -32,11 +22,11 @@ ms.dyn365.ops.version: Version 1611
 
 ## Overview
 
-This topic describes how to set up and generate a value-added tax (VAT) declaration for Switzerland in the official XML format (eCH-0217 eMWST standard). It also describes how to preview the VAT declaration in Microsoft Excel.
+This article describes how to set up and generate a value-added tax (VAT) declaration for Switzerland in the official XML format (eCH-0217 eMWST standard). It also describes how to preview the VAT declaration in Microsoft Excel.
 
 To automatically generate the report, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, you must associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
-For Switzerland, you must configure three lookups: **Turnover lookup**, **Report field lookup**, and **Other cash flow lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this topic.
+For Switzerland, you must configure three lookups: **Turnover lookup**, **Report field lookup**, and **Other cash flow lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this article.
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
@@ -69,7 +59,7 @@ The VAT declaration in Switzerland contains the following information.
 | 302  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a standard rate.          | Report field lookup | SuppliesStandardRate                                                                                                                                      |
 | 312  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a reduced rate.           | Report field lookup | SuppliesReducedRate                                                                                                                                       |
 | 342  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate                                                                                                                                  |
-| 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018           | Report field lookup | SuppliesAcquisitionTax UseTaxAcquisitionTax (This result is also reported in full on line 400.) Non-deductible tax amount, if any is reported on line 415 |
+| 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018           | Report field lookup | SuppliesAcquisitionTax</br> UseTaxAcquisitionTax (This result is also reported in full on line 400.)</br> Non-deductible tax amount, if any is reported on line 415 |
 | 301  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a standard rate.       | Report field lookup | SuppliesOldStandardRate                                                                                                                                   |
 | 311  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a reduced rate.        | Report field lookup | SuppliesOldReducedRate                                                                                                                                    |
 | 341  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at an accommodation rate. | Report field lookup | SuppliesAccomodationOldRate                                                                                                                               |
@@ -80,10 +70,10 @@ The VAT declaration in Switzerland contains the following information.
 
 | Line | XML element                 | Description                                                                                                                                                         | Lookup              | Lookup result                                                                                                                                    |
 |------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| 400  | inputTaxMaterialAndServices | Input tax on the cost of materials and supplies of services.                                                                                                        | Report field lookup | InputTaxMaterialAndServices (reported in full) UseTaxAcquisitionTax (reported in full) Non-deductible tax amount, if any is reported on line 415 |
-| 405  | inputTaxInvestments         | Input tax on investments and other operating costs.                                                                                                                 | Report field lookup | InputTaxInvestments (reported in full) Non-deductible tax amount, if any is reported on line 415                                                 |
+| 400  | inputTaxMaterialAndServices | Input tax on the cost of materials and supplies of services.                                                                                                        | Report field lookup | InputTaxMaterialAndServices (reported in full)</br> UseTaxAcquisitionTax (reported in full)</br> Non-deductible tax amount, if any is reported on line 415 |
+| 405  | inputTaxInvestments         | Input tax on investments and other operating costs.                                                                                                                 | Report field lookup | InputTaxInvestments (reported in full)</br> Non-deductible tax amount, if any is reported on line 415                                                 |
 | 410  | subsequentInputTaxDeduction | De-taxation (article 32). You should enclose a detailed list.                                                                                                       | Report field lookup | SubsequentInputTaxDeduction                                                                                                                      |
-| 415  | inputTaxCorrections         | Correction of the input tax deduction, both mixed use (article 30) and own use (article 31).                                                                        | Report field lookup | InputTaxCorrections (reported in full but with the sign inverted)                                                                                |
+| 415  | inputTaxCorrections         | Correction of the input tax deduction, both mixed use (article 30) and own use (article 31).                                                                        | Report field lookup | InputTaxCorrections (reported in full but with the sign inverted)</br>Also non-deductible tax amount of transactions from lines 400, 405 is reported here                                                                                 |
 | 420  | inputTaxReductions          | Reduction of the input tax deduction: the flow of funds that aren't deemed to be in consideration, such as subsidies and tourist charges (article 33, paragraph 2). | Report field lookup | InputTaxReductions (reported in full with the sign inverted)                                                                                     |
 | 479  | Not applicable              | Total lines 400 through 420.                                                                                                                                        | Total               | 400 + 405 + 410 – 415 – 420                                                                                                                      |
 | 500  | Not applicable              | The amount that is payable.                                                                                                                                         | Total               | 399 – 479, if 399-479 is positive                                                                                                                |
@@ -159,7 +149,7 @@ Follow these steps to define which sales tax codes generate which boxes in secti
 
    | Field                  | Description                                                                                                                                                                                                                                                                                                         |
    |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | Lookup result          | Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                         |
+   | Lookup result          | Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.                                                                                         |
    | Tax code               | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box.   |
    | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: <br>- **Purchase**<br>- **PurchaseExempt** (tax-exempt purchase) <br>- **PurchaseReverseCharge** (tax receivable from a purchase reverse charge) <br>- **Sales** <br>- **SalesExempt** (tax-exempt sale) <br>- **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge) <br>- **Use tax** <br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).|
 
@@ -268,14 +258,14 @@ The data package contains electronic message settings that are used to generate 
 
 1. Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
 2. Select **Print report**.
-3. In the **Electronic report parameters** dialog box, set the fields as explained earlier in this topic. Then review the Excel file that is generated for the selected sales tax payment line.
+3. In the **Electronic report parameters** dialog box, set the fields as explained earlier in this article. Then review the Excel file that is generated for the selected sales tax payment line.
 
    > [!NOTE]
    > The report is generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
 
 ## Generate a VAT declaration from electronic messages
 
-When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this topic.
+When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this article.
 
 The following procedure applies to the example electronic message processing that you imported earlier from the LCS Shared asset library.
 
@@ -287,7 +277,7 @@ The following procedure applies to the example electronic message processing tha
    > [!NOTE]
    >  Steps 5 through 7 are optional.
 
-5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 6. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
 7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.

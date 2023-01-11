@@ -1,37 +1,36 @@
 ---
-# required metadata
-title: Manage Finance and Operations updates and your custom code lifecycle
-description: This topic describes how to manage Finance and Operations updates and your custom code lifecycle.
-author: rbadawy
-ms.date: 10/22/2020
+title: Manage finance and operations updates and your custom code lifecycle
+description: This article describes how to manage finance and operations updates and your custom code lifecycle.
+author: josaw1
+ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: robadawy
+ms.author: josaw
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
 ---
 
 
-# Manage Finance and Operations updates and your custom code lifecycle
+# Manage finance and operations updates and your custom code lifecycle
 
-This topic describes application lifecycle use cases for Finance and Operations implementations. It's focused on the following scenarios:
+This article describes application lifecycle use cases for finance and operations implementations. It's focused on the following scenarios:
 
 + Managing your source code development branches
 + Applying the next version of a Microsoft service update
 + Applying a new version of your custom code
 
-This topic applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
+This article applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
 
 The main goal is to show how to complete the following tasks:
 
-+ Stay up to date and manage Microsoft service updates (or quality updates) for Finance and Operations apps (including Dynamics 365 Commerce) in incremental phases, independently of the lifecycle of your own customization. This approach simplifies the update process, and reduces the cost and risk of regressions that are associated with all-in-one upgrade projects.
++ Stay up to date and manage Microsoft service updates (or quality updates) for finance and operations apps (including Dynamics 365 Commerce) in incremental phases, independently of the lifecycle of your own customization. This approach simplifies the update process, and reduces the cost and risk of regressions that are associated with all-in-one upgrade projects.
 + Take advantage of source code branches for version control of your custom code. By using version control, you can isolate the rollout of critical changes and hotfixes from the development of new features and capabilities.
 
-This topic doesn't explain how to use the different tools in Azure DevOps and Microsoft Dynamics Lifecycle Services (LCS). Instead, it's focused on processes and best practices. The [Apply the next version of a Microsoft service update](#apply-next-update) and [Apply a new version of your custom code](#apply-new-custom-code) sections contain both an overview of the phases and the steps of the process.
+This article doesn't explain how to use the different tools in Azure DevOps and Microsoft Dynamics Lifecycle Services (LCS). Instead, it's focused on processes and best practices. The [Apply the next version of a Microsoft service update](#apply-next-update) and [Apply a new version of your custom code](#apply-new-custom-code) sections contain both an overview of the phases and the steps of the process.
 
-This topic includes the following sections:
+This article includes the following sections:
 
 + [Environments](#environments)
 
@@ -46,7 +45,7 @@ This topic includes the following sections:
         + [Runtime compatibility](#runtime-compatibility)
         + [Design-time compatibility](#design-compatibility)
 
-    + [Phase 1: Update the Finance and Operations implementation](#phase-1)
+    + [Phase 1: Update the finance and operations implementation](#phase-1)
 
         + [Track 1: Update your runtime environments](#update-finops-runtime)
 
@@ -93,19 +92,19 @@ This topic includes the following sections:
 
 ## <a id="environments"></a>Environments
 
-This section describes the collection of Finance and Operations environments that the application lifecycle management (ALM) scenarios in this topic rely on. This configuration is typical for organizations that have implementations that rely on custom code (extensions). This custom code includes customizations that are provided by independent software vendors (ISVs).
+This section describes the collection of finance and operations environments that the application lifecycle management (ALM) scenarios in this article rely on. This configuration is typical for organizations that have implementations that rely on custom code (extensions). This custom code includes customizations that are provided by independent software vendors (ISVs).
 
 ### <a id="current-environments"></a>Environments that run your current release
 
 The following environments are the environments in your current release:
 
-+ **Dev 1** – A development environment that runs the same version of Finance and Operations apps as the production environment. The Dev 1 environment uses Azure DevOps for version control of custom code. It's connected to the current release branch of your custom code. For more information, see the [Manage source code branches](#manage-source-code-branches) section.
++ **Dev 1** – A development environment that runs the same version of finance and operations apps as the production environment. The Dev 1 environment uses Azure DevOps for version control of custom code. It's connected to the current release branch of your custom code. For more information, see the [Manage source code branches](#manage-source-code-branches) section.
 
     - There are many options for development environments, both cloud and on-premises. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
     - For build automation, use the new Azure DevOps Hosted Agents functionality. For more information, see [Build automation that uses Microsoft-hosted agents and Azure Pipelines](../dev-tools/hosted-build-automation.md).
 
-+ **Test 1** – A Tier-1 test environment that is used for functional and configuration testing. The Test 1 environment runs the same version of Finance and Operations apps as the production environment. It also runs the latest release version of your custom code extensions.
-+ **UAT** – A pre-production environment that is used for user acceptance testing. The UAT environment is a Tier-2 (Standard Acceptance Test) or higher environment. It runs the same version of Finance and Operations apps as the production environment. It also runs the latest release version of your custom code extensions. This environment is typically connected to a copy of the production database.
++ **Test 1** – A Tier-1 test environment that is used for functional and configuration testing. The Test 1 environment runs the same version of finance and operations apps as the production environment. It also runs the latest release version of your custom code extensions.
++ **UAT** – A pre-production environment that is used for user acceptance testing. The UAT environment is a Tier-2 (Standard Acceptance Test) or higher environment. It runs the same version of finance and operations apps as the production environment. It also runs the latest release version of your custom code extensions. This environment is typically connected to a copy of the production database.
 + **Prod** – Your live production environment that runs on your production database.
 
 :::image type="content" source="media/uguide-environments.png" alt-text="Environments that run your current release.":::
@@ -143,9 +142,9 @@ You might have private branches that individual developers work in while they wo
 
 By using a phased approach, you help maximize the efficiency when service updates are taken. Each phase updates one component of your implementation.
 
-1. **Phase 1** – Update your Finance and Operations environments.
+1. **Phase 1** – Update your finance and operations environments.
 
-    Your current version of Commerce Scale Unit (CSU) and Point of Sale (POS) will work correctly with the new Finance and Operations update. For example, version 10.0.7 of CSU is compatible with version 10.0.11 of Finance and Operations apps.
+    Your current version of Commerce Scale Unit (CSU) and Point of Sale (POS) will work correctly with the new finance and operations update. For example, version 10.0.7 of CSU is compatible with version 10.0.11 of finance and operations apps.
 
 2. **Phase 2** – Update CSU.
 3. **Phase 3** – Update POS.
@@ -154,13 +153,16 @@ When you take a Microsoft update, you don't have to update your custom code to t
 
 ### <a id="compatibility"></a>Backward compatibility of Microsoft updates
 
-It's important that you understand what Microsoft means by *backward compatibility of service updates*, so that you have context for the next sections of this topic. Service and quality updates are *runtime* backward-compatible. However, they aren't always *design-time* (*compile-time*) backward-compatible.
+It's important that you understand what Microsoft means by *backward compatibility of service updates*, so that you have context for the next sections of this article. Service and quality updates are *runtime* backward-compatible. However, they aren't always *design-time* (*compile-time*) backward-compatible.
 
 #### <a id="runtime-compatibility"></a>Runtime compatibility
 
 All Microsoft updates are intended to be runtime backward-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after Microsoft service updates are deployed to those environments. Those updates include service updates and quality updates. Runtime compatibility also means that Microsoft updates are backward-compatible with customizations that were compiled on an earlier platform.
 
 Binary compatibility is backward only. You can compile a customization on an older application version and platform version, and deploy it to an environment that is running a later version. However, you can't deploy code to an environment that is running a version that is earlier than the version that the code was compiled on.
+
+> [!IMPORTANT]
+> Personalizations are covered by runtime compatibility and will continue to work after Microsoft service updates are deployed to these environments. Because of this, re-importing all personalizations after a service update (or at any other time) is unnecessary and highly discouraged.   
 
 #### <a id="design-compatibility"></a>Design-time compatibility
 
@@ -174,9 +176,9 @@ Microsoft aims for design-time compatibility. However, some updates might includ
 
 All these changes might require work on your solution. Design-time breaking changes that are binary-compatible don't require a 12-month deprecation notice. These breaking changes are documented for each service update. For more information, see [What's new and changed in Platform updates](../get-started/whats-new-home-page.md).
 
-### <a id="phase-1"></a>Phase 1: Update the Finance and Operations implementation
+### <a id="phase-1"></a>Phase 1: Update the finance and operations implementation
 
-This section summarizes the process that you use to update your Finance and Operations implementation to the latest service update. An update from version 10.0.7 to version 10.0.11 is used as an example.
+This section summarizes the process that you use to update your finance and operations implementation to the latest service update. An update from version 10.0.7 to version 10.0.11 is used as an example.
 
 This phase is divided into two tracks. These tracks can occur in parallel.
 
@@ -187,13 +189,13 @@ After you complete track 1, you will be live on version 10.0.11, unless you enco
 
 #### <a id="update-finops-runtime"></a>Track 1: Update your runtime environments
 
-By completing track 1, you essentially complete your Finance and Operations update to version 10.0.11, because your production environment will be live on version 10.0.11. You don't have to recompile your custom code as part of this track.
+By completing track 1, you essentially complete your finance and operations update to version 10.0.11, because your production environment will be live on version 10.0.11. You don't have to recompile your custom code as part of this track.
 
 ##### Update Test 1
 
 The Test 1 environment is running version 10.0.7 together with the latest released version of your custom extension. Although an update of Test 1 isn't a prerequisite in this flow, it's recommended, because it adds another level of functional verification and predictability. This update should be completed before the UAT environment is updated. The sooner that you update Test 1 and validate on it, the more predictable your "real" update (that is, the update of the UAT and Prod environments) will be.
 
-1. Apply version 10.0.11 of Finance and Operations apps to Test 1.
+1. Apply version 10.0.11 of finance and operations apps to Test 1.
 2. Sign off on functional scenarios. You can use the [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md) to automate user acceptance testing on test and UAT environments.
 3. If regressions are encountered, see the [Error situations](#error-situations) section.
 
@@ -201,7 +203,7 @@ The Test 1 environment is running version 10.0.7 together with the latest releas
 
 The UAT environment is running version 10.0.7 together with a released version of your custom extension. (The UAT environment is the same as the Prod environment.)
 
-1. Apply version 10.0.11 of Finance and Operations apps to UAT.
+1. Apply version 10.0.11 of finance and operations apps to UAT.
 
     Your UAT environment might be configured so that it's automatically updated by Microsoft. However, you can always pull the update as soon as it's available.
 
@@ -210,7 +212,7 @@ The UAT environment is running version 10.0.7 together with a released version o
 
 ##### Update Prod
 
-1. Apply version 10.0.11 of Finance and Operations apps to Prod.
+1. Apply version 10.0.11 of finance and operations apps to Prod.
 
     Your Prod environment might be configured so that it's automatically updated by Microsoft. However, you can always pull the update as soon as it's available.
 
@@ -218,15 +220,15 @@ The UAT environment is running version 10.0.7 together with a released version o
 
 #### <a id="update-finops-dev"></a>Track 2: Update your development environments
 
-The purpose of track 2 is to update the Dev 1 environment to version 10.0.11. Dev 1 is your **main** development environment that is connected to the current release branch of your custom code. It's running version 10.0.7 of Finance and Operations apps. By completing track 2, you ensure that Dev 1 runs version 10.0.11 together with your latest release, and that it's ready for any future hotfixes that are required for your code.
+The purpose of track 2 is to update the Dev 1 environment to version 10.0.11. Dev 1 is your **main** development environment that is connected to the current release branch of your custom code. It's running version 10.0.7 of finance and operations apps. By completing track 2, you ensure that Dev 1 runs version 10.0.11 together with your latest release, and that it's ready for any future hotfixes that are required for your code.
 
-1. Apply version 10.0.11 of Finance and Operations apps to Dev 1.
+1. Apply version 10.0.11 of finance and operations apps to Dev 1.
 2. Compile your custom code, and do testing.
 3. Make any required changes to your custom code.
 4. Check code changes in to the release branch.
 5. If you have more than one development environment, follow these steps for each environment:
 
-    1. Apply version 10.0.11 of Finance and Operations apps to the development environment.
+    1. Apply version 10.0.11 of finance and operations apps to the development environment.
     2. Sync and compile your latest custom code from the target code branch.
 
 #### Error situations
@@ -264,7 +266,7 @@ This section summarizes the process that you use to update your Commerce Scale U
 
 #### <a id="phase2-prerequisites"></a>Phase 2 prerequisites
 
-Before you update your CSUs, you must update the Commerce headquarters environments (in the Finance and Operations app) to the same release or a later release. For this example, that release is 10.0.11.
+Before you update your CSUs, you must update the Commerce headquarters environments (in the finance and operations app) to the same release or a later release. For this example, that release is 10.0.11.
 
 This phase is divided into two tracks. These tracks can occur in parallel.
 
@@ -298,7 +300,7 @@ The UAT environment is running CSU that corresponds to release 10.0.7, together 
 
 1. Get the latest version of the Retail software development kit (SDK).
 
-    1. Apply the Finance and Operations service update for release 10.0.11 to Dev 1.
+    1. Apply the finance and operations service update for release 10.0.11 to Dev 1.
     2. Get the updated version of the Retail SDK from **%ServiceDrive%\\RetailSDK\\Update\\\<newest directory\>**
 
 2. In your **main** (development) branch, update the Retail artifacts from the new version of the Retail SDK.
@@ -312,7 +314,7 @@ The UAT environment is running CSU that corresponds to release 10.0.7, together 
 
 This section summarizes the process that you use to update your store components, such as Modern POS and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
 
-Unlike updates for Commerce headquarters (in the Finance and Operations app) and CSU, updates for store components are delivered in the same packages. After you update Commerce headquarters and CSU, you have the following options:
+Unlike updates for Commerce headquarters (in the finance and operations app) and CSU, updates for store components are delivered in the same packages. After you update Commerce headquarters and CSU, you have the following options:
 
 - **Option 0 (no operation is required)** – Leave the store components in their previous release if the version is supported and in-policy.
 - **Option 1** – Update the store components runtime (Microsoft code) so that it matches the same release as CSU.
@@ -326,7 +328,7 @@ After you complete this phase, you will be live on release 10.0.11 (Commerce ver
 
 Phase 3 has the following prerequisites:
 
-- The Commerce headquarters components (in the Finance and Operations app) were updated to the same release or a later release before the CSUs were updated. In this example, the version is 10.0.11.
+- The Commerce headquarters components (in the finance and operations app) were updated to the same release or a later release before the CSUs were updated. In this example, the version is 10.0.11.
 - The CSUs were updated to the same release as, or a later release than, the store components. In this example, the release is 10.0.11.
 
 #### Update your Commerce development environment
@@ -426,3 +428,4 @@ When you're ready to release the next version of your custom code, use the follo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

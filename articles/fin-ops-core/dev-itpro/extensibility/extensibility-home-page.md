@@ -1,26 +1,19 @@
 ---
 title: Extensibility home page
-description: This topic provides links to topics about extensibility.
+description: This article provides links to topics about extensibility.
 author: FrankDahl
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-
+ms.custom: "intro-internal"
+ms.assetid: 
 ---
 # Extensibility home page
 
@@ -62,7 +55,7 @@ This section includes fundamentals, principles, and practices for making extensi
 
 ## How do I create extensions?
 
-This section includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific topic.
+This section includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific article.
 
 ### Data types
 + [Add values to enums through extension](add-enum-value.md)

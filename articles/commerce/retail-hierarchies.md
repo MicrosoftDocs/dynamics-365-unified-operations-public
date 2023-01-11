@@ -1,32 +1,21 @@
 ---
-# required metadata
-
 title: Commerce hierarchies
 description: This article describes hierarchies in Dynamics 365 Commerce.
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.search.region: global
+ms.author: josaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
-ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
-ms.search.validFrom: 2016-02-28
-
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 ---
 
 # Commerce hierarchies

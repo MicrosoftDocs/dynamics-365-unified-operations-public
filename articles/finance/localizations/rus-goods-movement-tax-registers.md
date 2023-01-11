@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Goods movement tax registers
-description: This topic provides information about goods movement tax registers.
-author: akroshkina
+description: This article provides information about goods movement tax registers.
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 
-
 ---
 
 # Goods movement tax registers
@@ -31,14 +21,14 @@ ms.dyn365.ops.version:
 
 ## Overview
 
-This topic provides information about the following tax registers:
+This article provides information about the following tax registers:
 
 - Warehoused items
 - Warehoused items (totals)
 - Non warehoused items
 - Goods issued
 
-In this topic, the term "goods" refers to raw materials and supplies, items that are acquired and produced, and services. Tax registers for fixed assets are described in [Fixed assets and intangible assets registers](rus-assets-tax-registers.md).
+In this article, the term "goods" refers to raw materials and supplies, items that are acquired and produced, and services. Tax registers for fixed assets are described in [Fixed assets and intangible assets registers](rus-assets-tax-registers.md).
 
 Operating costs are related to the acquisition of property and to the calculation of the cost when the property is written off for various purposes.
 
@@ -63,7 +53,7 @@ The following tax registers must be created:
 - Non warehoused items
 - Goods issued
 
-To set up the **Warehoused items (totals)**, **Non warehoused items**, and **Goods issued** registers, follow the steps in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
+To set up the **Warehoused items (totals)**, **Non warehoused items**, and **Goods issued** registers, follow the steps in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
 To set up the **Warehoused items** register, follow the steps in the next section.
 

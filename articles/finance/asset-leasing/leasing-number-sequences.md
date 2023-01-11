@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assign number sequences
-description: This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
+description: This article explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
+This article explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 
 1. Go to **Asset leasing \> Setup \> Asset leasing parameters**.
 2. Select the **Number sequences** side tab.

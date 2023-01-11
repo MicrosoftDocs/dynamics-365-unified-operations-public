@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Add support for a content delivery network (CDN)
-description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
+description: This article describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Add support for a content delivery network (CDN)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
+This article describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 
 When you set up an e-commerce environment in Dynamics 365 Commerce, you can configure it to work with your CDN service. 
 
@@ -65,7 +55,7 @@ The CDN setup process consists of these general steps:
 
 ### Add a front-end host
 
-Any CDN service can be used, but for the example in this topic, Azure Front Door Service is used. 
+Any CDN service can be used, but for the example in this article, Azure Front Door Service is used. 
 
 For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](/azure/frontdoor/quickstart-create-front-door).
 
@@ -106,7 +96,7 @@ To set up a routing rule in Azure Front Door Service, follow these steps.
 
 
 > [!WARNING]
-> If the domain that you will use is already active and live, create a support ticket from the **Support** tile in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to get assistance for your next steps. For more information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+> If the domain that you will use is already active and live, create a support ticket from the **Support** tile in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to get assistance for your next steps. For more information, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 If your domain is new and is not a pre-existing live domain, you can add your custom domain to the configuration for Azure Front Door Service. This will enable web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 

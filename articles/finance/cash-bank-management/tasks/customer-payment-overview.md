@@ -4,7 +4,7 @@
 title: Customer payment overview
 description: This procedure walks through the various methods used to enter customer payments. 
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 ms.custom: "intro-internal"
 ms.search.region: Global
@@ -34,7 +34,7 @@ This procedure walks through the various methods used to enter customer payments
 3. Select the payment journal which the customer payments will be saved.
 4. Select or manually enter the journal.
 5. On **Action pane**, click **Enter customer payments**. Enter customer payments is used to record one customer payment at a time. You enter the payment information at the top, and then you can mark the invoices that were paid by the payment, all from the same page.  
-6. Enter the customer from whom you received the payment. If you don't know the customer but do know a transaction that was paid, you can use the Transaction field to enter the payment. Enter or select the invoice in the Transaction field. The customer will automatically default after you select the transaction.
+6. Enter the customer from whom you received the payment. If you don't know the customer but do know a transaction that was paid, you can use the **Transaction** field to enter the payment. Enter or select the invoice in the **Transaction** field. The customer will automatically default after you select the transaction.
 7. In the **Payment reference** field, enter a payment reference. The payment reference could be the customer's check number or a reference from the customer's electronic payment. The payment reference is only required if you mark to include the payment on a deposit slip.  
 8. In the **Deposit slip** field, select whether the payment will be included on a deposit slip. 
 9. In the **Amount** field, enter the amount of the customer payment. The payment amount will not default. It must be manually entered. 
@@ -42,9 +42,9 @@ This procedure walks through the various methods used to enter customer payments
 11. Enter the amount of the payment that should be settled to the marked invoice. This field can be used when the payment is for a partial payment. If you don't enter an amount, the amount to settle will automatically be determined for you.
 12. Click **Save in journal**. Before you save the payment to the journal, make sure that the offset account is defined. Using **Save in journal** will save the payment and move it to the journal. You can then continue entering the next payment.
 13. Close the page.
-14. On **Action pane**, click Lines. When opening Lines, you will see any payments you recorded on the **Enter customer payments** page and saved into the journal. You can also use this page to enter new customer payments, or edit existing customer payment before they are posted.
+14. On **Action pane**, click **Lines**. When opening **Lines**, you will see any payments you recorded on the **Enter customer payments** page and saved into the journal. You can also use this page to enter new customer payments, or edit existing customer payment before they are posted.
 15. Click **New** to create another payment. 
-16. Select the customer from whom you received the payment. If you don't know the customer but know an invoice paid by the payment, use the Invoice field to manually enter or select the invoice. The customer will default after the invoice is selected.  
+16. Select the customer from whom you received the payment. If you don't know the customer but know an invoice paid by the payment, use the **Invoice** field to manually enter or select the invoice. The customer will default after the invoice is selected.  
 17. Click **Settle transactions** to mark invoices that were paid. You are not required to settle the payment to any invoices. If this is a prepayment or if you don't know what invoice was paid, you can enter and post the payment. The payment can be settled to an invoice at a later point.  
 18. Mark the invoices paid by the payment. 
 19. In the **Amount** field, enter the amount of the payment that will be settled to the invoice.

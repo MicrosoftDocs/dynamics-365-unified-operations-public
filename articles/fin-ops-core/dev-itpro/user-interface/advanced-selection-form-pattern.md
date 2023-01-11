@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Advanced selection form pattern
 description: This article provides information about the Advanced Selection form pattern, which lets users filter and select items from a large, wide list.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 29171
-ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29171
+ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
 ---
 
 # Advanced selection form pattern

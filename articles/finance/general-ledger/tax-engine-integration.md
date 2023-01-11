@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax engine integration
-description: This topic provides information about Tax engine integration.
+description: This article provides information about Tax engine integration.
 author: kailiang
 ms.date: 12/15/2017
 ms.topic: article
@@ -206,7 +206,7 @@ This framework lets you easily find a transaction's document and track the trans
 
 #### Transaction integration
 
-Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance integration example – Purchase order invoice](#example-finance-integration--purchase-order-invoice) section later in this topic.
+Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance integration example – Purchase order invoice](#example-finance-integration--purchase-order-invoice) section later in this article.
 
 #### Accounting integration
 

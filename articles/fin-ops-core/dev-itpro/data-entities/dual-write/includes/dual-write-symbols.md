@@ -1,10 +1,3 @@
----
-author: robinarh
-ms.topic: include
-ms.date: 6/28/2021
-ms.author: rhaertle
----
-
 ## Mapping tables
 
 ### Mapping types

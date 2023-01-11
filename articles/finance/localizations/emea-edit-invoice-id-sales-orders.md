@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Edit invoice IDs on sales orders for Eastern Europe
-description: This topic provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
-author: ShylaThompson
+description: This article provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 268014
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 268014
+ms.search.form: CustParameters
 ---
 
 # Edit invoice IDs on sales orders for Eastern Europe
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
+This article provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
 
 For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland, the **Edit invoice ID on Sales orders** option allows you to manually enter packing slip and invoice numbers on the customer’s packing slip and invoices. The following options are available on the **Accounts receivable parameters** page, on the **Invoice** FastTab in the **Updates** tab.
 <table>

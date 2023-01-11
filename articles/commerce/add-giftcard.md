@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Gift card module
-description: This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Gift card module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Gift card modules can be used in checkout modules to accept gift cards, a common form of payment used for e-Commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
 

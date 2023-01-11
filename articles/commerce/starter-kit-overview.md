@@ -1,36 +1,26 @@
 ---
-# required metadata
-
-title: Module library overview 
-description: This topic presents an overview of the Microsoft Dynamics 365 Commerce module library.
-author:  anupamar-ms
+title: Module library overview
+description: This article presents an overview of the Microsoft Dynamics 365 Commerce module library.
+author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Module library overview
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of the Microsoft Dynamics 365 Commerce module library.
+This article presents an overview of the Microsoft Dynamics 365 Commerce module library.
 
 The Dynamics 365 Commerce module library is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface (UI) aspects and functional behavior aspects.
 

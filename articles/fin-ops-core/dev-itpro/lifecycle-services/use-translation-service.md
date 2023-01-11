@@ -2,7 +2,7 @@
 # required metadata
 
 title: Translate user interface files
-description: This topic explains how to use the UI translation service for Microsoft Dynamics 365 products.
+description: This article explains how to use the UI translation service for Microsoft Dynamics 365 products.
 author: abmotgi 
 ms.date: 10/24/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
+This article provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
 
 For more information about the Microsoft Dynamics 365 Translation Service, see [Dynamics 365 Translation Service overview](translation-service-overview.md). For information about how to translate a documentation file, see [Translate documentation files](use-translation-service-ua.md).
 

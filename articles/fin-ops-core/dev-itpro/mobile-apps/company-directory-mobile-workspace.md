@@ -2,16 +2,16 @@
 # required metadata
 
 title: Company directory mobile workspace
-description: This topic provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
+description: This article provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,10 +27,11 @@ ms.dyn365.ops.version: July 2017 update
 # Company directory mobile workspace
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
+This article provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
 
-This mobile workspace can be used with the Finance and Operations mobile app.
+This mobile workspace can be used with the finance and operations mobile app.
 
 ## Overview
 The **Company directory** mobile workspace lets users perform these tasks:
@@ -54,12 +55,12 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tbody>
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
-<ul><li>A Finance and Operations app</li>
+<ul><li>A finance and operations app</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don&#39;t already have a Finance and Operations app deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Human Resources deployed in your organization, the system administrator can access a trial version from the <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources webpage</a>.
+<td>If you don&#39;t already have a finance and operations app deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Human Resources deployed in your organization, the system administrator can access a trial version from the <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources webpage</a>.
 </td>
 </tr>
 <tr class="even">
@@ -71,7 +72,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </table>
 
 ## Download and install the mobile app
-Download and install the Finance and Operations mobile app:
+Download and install the finance and operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -95,3 +96,4 @@ Download and install the Finance and Operations mobile app:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

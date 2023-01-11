@@ -1,32 +1,21 @@
 ---
-# required metadata
-
 title: Set up retail products
 description: This article describes how to set up products in Dynamics 365 Commerce.
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.search.region: global
+ms.author: josaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
-ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
-ms.search.validFrom: 2016-02-28
-
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 ---
 
 # Set up retail products

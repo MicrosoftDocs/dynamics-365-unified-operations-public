@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Point of sale (POS) payment extension
-description: This topic describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
-author: mugunthanm
-ms.date: 09/01/2017
+description: This article describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
+author: josaw1
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 24411
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 24411
 ---
 
 # Point of sale (POS) payment extension
@@ -44,6 +33,11 @@ You can override the following request handlers from the POS side to customize t
 - PaymentTerminalExecuteTaskRequestHandler
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
+- PaymentTerminalCancelOperationRequest
+- PaymentTerminalEnquireGiftCardBalancePeripheralRequest
+- PaymentTerminalAddBalanceToGiftCardPeripheralRequest
+- PaymentTerminalActivateGiftCardPeripheralRequest
+- PaymentTerminalBeginTransactionRequest
 
 The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests, add your own implementation to call the custom payment providers, and then update the response based on the status that is returned by your providers. When you override a request, you are overriding only the core logic. After all your custom logic has run, you send the updated response that you received from Hardware station (payment device/connector) to POS. All the standard workflow is handled by the POS, so that you do not need to worry about how to add, void, or decline the payment line and conclude the transaction based on the response.
 
@@ -238,7 +232,7 @@ export default class PaymentTerminalCapturePaymentRequestHandlerExt extends Paym
 }
 ```
 
-After implementing the request logic, you need to update the manifest.json with the extension information so that POS loads the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests, then you do not need to specify anything in the manifest. The example of the manifest shows two overriden requests.
+After implementing the request logic, you need to update the manifest.json with the extension information so that POS loads the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests, then you do not need to specify anything in the manifest. The example of the manifest shows two overridden requests.
 
 ```typescript
 {

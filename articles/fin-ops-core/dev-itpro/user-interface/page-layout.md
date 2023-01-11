@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Page layout in the web client
-description: This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
+description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page.
 author: jasongre
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28251
-ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28251
+ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
 ---
 
 # Page layout in the web client
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
+This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 
 ## Introduction
 
@@ -47,7 +36,7 @@ Layout is a design process that specifies how the controls on a page appear in t
 
 A grid is a special type of control that has some container behaviors, such as flexible sizing (**SizeToAvailable**). However, a grid has special visualizations and isn't a general-purpose container control.
 
-## Layout: Dynamics AX 2012 vs. Finance and Operations apps
+## Layout: Dynamics AX 2012 vs. Finance and operations apps
 ### Layout in Dynamics AX 2012
 
 In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almost always vertical, and columns are manually set to provide some horizontal spread.
@@ -56,16 +45,16 @@ In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almo
 
 **Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 In Dynamics AX 2012, sizing is achieved via the **Height** and **Width** properties. If **Height** and **Width** are set to **Auto**, the size is as large as the child controls require. If **Height** and **Width** are set to **Column**, the container is as large as it can be within the parent container. By default, **Height** and **Width** are set to **Auto** for every container.
 
-### Layout in Finance and Operations 
+### Layout in finance and operations apps 
 
-In Finance and Operations, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
+In finance and operations apps, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
 
 -   The arrangement method that is specified by the **ArrangeMethod** property.
 -   The columns that are specified by the **Columns** property.
 -   The sizing that is specified by the **HeightMode**, **WidthMode**, **Height**, and **Width** properties.
 
 ## ArrangeMethod property
-The **ArrangeMethod** property specifies a base arrangement method for a container. For this property, Finance and Operations apps have all the options from AX 2012. However, they also have a **HorizontalWrap** option that is intended for tile layouts in panoramas. The following table describes the various options for the **ArrangeMethod** property.
+The **ArrangeMethod** property specifies a base arrangement method for a container. For this property, finance and operations apps have all the options from AX 2012. However, they also have a **HorizontalWrap** option that is intended for tile layouts in panoramas. The following table describes the various options for the **ArrangeMethod** property.
 
 | Option          | Description                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +64,7 @@ The **ArrangeMethod** property specifies a base arrangement method for a contain
 | HorizontalWrap  | Controls are arranged inside columns of fixed width that wrap horizontally. This option is typically used for tile layouts in panorama sections. It's the default value for TabPages where **Tab.Style** is set to **Panorama**. |
 
 ## ColumnsMode property
-For the **ColumnsMode** property, Finance and Operations apps have a **Fill** option to support responsive layouts. When the property is set to this value, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
+For the **ColumnsMode** property, finance and operations apps have a **Fill** option to support responsive layouts. When the property is set to this value, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
 
 | Option | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -83,7 +72,7 @@ For the **ColumnsMode** property, Finance and Operations apps have a **Fill** op
 | Fixed  | Specify the number of columns that the **Columns** property should generate. Controls are evenly distributed among the columns, and their order is maintained. If the controls can't be distributed evenly among the columns, the leftmost columns receive extra controls first. This option is the default value for all controls.                                                          |
 
 ## HeightMode/WidthMode properties
-In Finance and Operations apps, sizing is done via two pairs of size properties: **WidthMode** and **Width**, and **HeightMode** and **Height**. The following table describes the various options for these properties.
+In finance and operations apps, sizing is done via two pairs of size properties: **WidthMode** and **Width**, and **HeightMode** and **Height**. The following table describes the various options for these properties.
 
 | Option          | Description                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

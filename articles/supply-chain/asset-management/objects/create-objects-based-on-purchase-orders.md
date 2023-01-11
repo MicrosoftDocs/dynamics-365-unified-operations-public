@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create assets based on purchase orders
-description: This topic explains how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management.
+description: This article explains how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectItem, EntAssetPendingAssets
+ms.search.form: EntAssetObjectItem, EntAssetPendingAssets
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management. Based on the asset items, you are able to view a list of the purchase order lines that have been created on those items. The purpose of this functionality is to easily create an asset in Asset Management based on a purchase order.
+This article explains how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management. Based on the asset items, you are able to view a list of the purchase order lines that have been created on those items. The purpose of this functionality is to easily create an asset in Asset Management based on a purchase order.
 
 First, you set up the items to be used for creating assets from a purchase order in **Asset items**. After creating a purchase order line, you create the assets in **Pending assets**. It is possible to decide at which stage of the purchase order the asset should be created.
 
@@ -50,7 +50,7 @@ First, you set up the items to be used for creating assets from a purchase order
 
 ## Create assets from pending assets
 
-1. Click **Asset management** > **Common** > **Assets** > **Pending Assets**.
+1. Click **Asset management** > **Assets** > **Pending Assets**.
 2. You will see an updated list of the purchase orders based on the items selected in **Asset items**.
 3. You can filter the status of purchase orders to select at which lifecycle state the asset should be created. For example, you may only want to create assets when a product receipt has been posted on a purchase order.
 4. Select the **Reference number** link on a purchase order line to view detailed information about the item.

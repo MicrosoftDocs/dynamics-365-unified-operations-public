@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Add a copyright notice
-description: This topic describes how to add a copyright notice to your e-Commerce website.
-author: psimolin
+description: This article describes how to add a copyright notice to your e-Commerce website.
+author: josaw1
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Add a copyright notice
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a copyright notice to your e-Commerce website.
+This article describes how to add a copyright notice to your e-Commerce website.
 
 ## Prerequisites
 
@@ -71,8 +60,6 @@ The footer that contains the copyright notice automatically appears at the botto
 [Work with CSS override files](css-override-files.md)
 
 [Add a favicon](add-favicon.md)
-
-[Add a welcome message](add-welcome-message.md)
 
 [Add languages to your site](add-languages-to-site.md)
 

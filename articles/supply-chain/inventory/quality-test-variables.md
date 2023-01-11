@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality management test variables
-description: This topic describes how to create test variables that can be used for qualitative tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how to create test variables that can be used for qualitative tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create test variables that can be used for qualitative tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to create test variables that can be used for qualitative tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
 
 For every qualitative test that is defined on the **Tests** page, you must define a test variable and its possible outcomes (results). (For qualitative tests, the **Type** field on the **Tests** page is set to *Option*.)
 

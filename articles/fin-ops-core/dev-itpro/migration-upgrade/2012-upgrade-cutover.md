@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 - Go live (Cutover)
-description: This topic explains the final cutover process from Dynamics AX 2012 to the Finance and Operations app running an upgraded version of your code and database.
-author: jorisdg
-ms.date: 08/27/2021
+description: This article explains the final cutover process from Dynamics AX 2012 to the finance and operations app running an upgraded version of your code and database.
+author: gianugo
+ms.date: 03/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-# ms.search.form: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
 ---
@@ -31,14 +22,17 @@ ms.dyn365.ops.version: Platform update 12
 
 After you have successfully completed upgrade testing in a Standard or Premier Acceptance Test environment (Sandbox Tier 2 or higher), and you have also completed a successful test cutover, the time has arrived to upgrade your production environment and go live.
 
-*Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before Finance and Operations is turned on. Before you plan your final cutover, you need to successfully complete one successful mock cutover as described in [Cutover testing](./upgrade-cutover-testing.md).
+> [!NOTE]
+> The AX 2012 upgrade process should be run on the sandbox environment, not the production environment.
+
+*Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before finance and operations is turned on. Before you plan your final cutover, you need to successfully complete one successful mock cutover as described in [Cutover testing](./upgrade-cutover-testing.md).
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
 ![Cutover process](./media/cutover-selfservice_01.png)
 
 > [!NOTE]
-> In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Overall process
 
@@ -54,7 +48,7 @@ The high-level steps of the production environment upgrade process are the same 
 7. Trigger the data upgrade using the toolkit and finish the data upgrade.
 8. Use [Self-service database refresh process](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the sandbox environment into your production environment. 
 9. Complete application configuration and complete smoke test.
-10.	Allow users to access the Finance and Operations app again.
+10.	Allow users to access the finance and operations app again.
 
 
 ## Prerequisites 
@@ -73,3 +67,4 @@ Before you can perform an upgrade in the production environment, the following p
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

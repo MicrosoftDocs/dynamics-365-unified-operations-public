@@ -1,24 +1,24 @@
 ---
 title: Language Integrated Query (LINQ) provider for C#
-description: This topic discusses the LINQ provider.
+description: This article discusses the LINQ provider.
 author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 26751
-ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 26751
+ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 ---
 
 # Language Integrated Query (LINQ) provider for C\#
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the LINQ provider.
+This article discusses the LINQ provider.
 
 LINQ (Language Integrated Query) is a set of classes and methods that enable you to access data that is stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
 
@@ -43,7 +43,7 @@ There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in
 - By standard, or fluent, method call syntax.
 - By specialized syntax that the C\# compiler has been enhanced to understand as equivalent to the LINQ method calls. (Such syntax is sometimes called “syntactic sugar”.)
 
-This topic is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
+This article is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
 
 ## LINQ by specialized syntax in C\#
 
@@ -107,7 +107,7 @@ var query = customers
     .Select(primaryAndForeign => primaryAndForeign.P);
 ```
 
-There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by the Finance and Operations applications.
+There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by the finance and operations applications.
 
 ### Limitation of the specialized LINQ syntax
 
@@ -173,3 +173,4 @@ private IEnumerable RichCustomers(bool orderByName)
 LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

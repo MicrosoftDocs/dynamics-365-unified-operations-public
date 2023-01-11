@@ -1,14 +1,14 @@
 ---
 title: Global mobile device parameters
-description: This topic explains how to set up mobile device settings on the Warehouse management parameters page.
-author: HuberIvan
+description: This article explains how to set up mobile device settings on the Warehouse management parameters page.
+author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
 ms.search.form: WHS
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-huberivan
+ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
 ---
@@ -17,13 +17,13 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up global warehouse management parameters that affect how the system interacts with mobile devices.
+This article explains how to set up global warehouse management parameters that affect how the system interacts with mobile devices.
 
 For more information about how to set up warehouse workers, see [Manage warehouse worker](manage-warehouse-workers.md). For more information about license plate handling on mobile devices, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md). For more information about the cycle counting processes, see [Cycle counting](cycle-counting.md) and [Cycle counting example scenarios](cycle-counting-scenarios.md).
 
 ## Open the Warehouse management parameters page
 
-To open the **Warehouse management parameters** page, go to **Warehouse management \> Setup \> Warehouse management parameters**. You can then set the fields that are related to mobile device work, as described in the next section of this topic.
+To open the **Warehouse management parameters** page, go to **Warehouse management \> Setup \> Warehouse management parameters**. You can then set the fields that are related to mobile device work, as described in the next section of this article.
 
 ## Mobile device FastTab on the General tab
 

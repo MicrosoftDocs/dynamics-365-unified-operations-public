@@ -2,9 +2,9 @@
 # required metadata
 
 title: Customer prepayments
-description: This topic explains how to set up and process customer prepayments (also known as customer deposits).
-author: roschlom
-ms.date: 04/30/2021
+description: This article explains how to set up and process customer prepayments (also known as customer deposits).
+author: twheeloc
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,8 +15,8 @@ ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
+
 # ms.tgt_pltfrm: 
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
@@ -38,7 +38,7 @@ The process of setting up and working with customer prepayments consists of the 
 
 1. Create a customer posting profile for prepayments.
 2. Set the **Posting profile with prepayment journal voucher** parameter.
-3. Create a customer payment journal, and select the **Prepayment journal voucher** check box on each line.
+3. Create a customer payment journal, and select the **Prepayment journal voucher** checkbox on each line.
 4. Post the customer payment journal.
 5. After an invoice is generated, settle the prepayment with it by using the **Settle open transactions** page.
 
@@ -88,7 +88,7 @@ You can use the **Customer payments** workspace to easily find and settle paymen
 1. On the **Home** dashboard, select the **Customer payments** tile.
 2. In the **Customer transactions** section, on the **Payments not settled** tab, search for and select the payment to settle.
 3. Select **Settle transactions**.
-4. Select the **Mark** check box for the invoice and the payment that will be settled.
+4. Select the **Mark** checkbox for the invoice and the payment that will be settled.
 5. Select **Post**.
 
-For more information about how to settle open transactions, see [Settlement overview](/cash-bank-management/settlement-overview.md).
+For more information about how to settle open transactions, see [Settlement overview](/dynamics365/finance/cash-bank-management/settlement-overview).

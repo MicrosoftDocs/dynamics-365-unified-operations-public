@@ -4,7 +4,7 @@
 title: Depreciation methods and conventions
 description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 Finance.
 author: moaamer
-ms.date: 04/25/2017
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBook
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
@@ -51,7 +51,7 @@ You can select from the following depreciation conventions.
 -   Half year (next year)
 
 You can select from the following depreciation methods.
--   Straight0-line service life
+-   Straight-line service life
 -   Reducing balance
 -   Manual
 -   Factor

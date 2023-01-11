@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Configure cash denominations for the point of sale (POS)
 description: Cash denominations for notes and coins can be defined in the back office to be used by cashiers, sales associates, and managers at the store from within the POS.
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 16231
-ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 16231
+ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
+ms.search.industry: Retail
+ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 ---
 
 # Configure cash denominations for the point of sale (POS)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Hazardous materials in products, orders, shipments, and loads
-description: This topic explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
+description: This article explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
+This article explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
 
 ## Set hazardous material specifications for products
 
@@ -114,11 +114,11 @@ Here is a key to the formula:
 - *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit that is used for the load line quantity and the unit that is specified for a product in the **Unit** field on the **Material management** FastTab.
 - *&lt;Multiplier&gt;* is the multiplier that is specified for a product in the **Multiplier** field on the **Material management** FastTab.
 
-This score is reported for each load line that contains a product where these values are specified. For more information, see the [Shipments that include hazardous materials](#hazmat-shipments) and [Loads that include hazardous materials](#hazmat-loads) sections later in this topic.
+This score is reported for each load line that contains a product where these values are specified. For more information, see the [Shipments that include hazardous materials](#hazmat-shipments) and [Loads that include hazardous materials](#hazmat-loads) sections later in this article.
 
 #### How the hazardous material weight is calculated
 
-Loads and load lines that contain products where the **Limited quantity** option on the **Material management** FastTab is set to **Yes** will show the total hazardous material weight, as described in the [Shipments that include hazardous materials](#hazmat-shipments) and [Loads that include hazardous materials](#hazmat-loads) sections later in this topic. The hazardous material weight is calculated by using the following formula:
+Loads and load lines that contain products where the **Limited quantity** option on the **Material management** FastTab is set to **Yes** will show the total hazardous material weight, as described in the [Shipments that include hazardous materials](#hazmat-shipments) and [Loads that include hazardous materials](#hazmat-loads) sections later in this article. The hazardous material weight is calculated by using the following formula:
 
 Hazardous material weight = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 

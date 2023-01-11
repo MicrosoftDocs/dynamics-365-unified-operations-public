@@ -15,13 +15,13 @@ ms.search.form: LedgerTrialBalanceListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 12314
 ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -37,8 +37,8 @@ This article describes the default reports for trial balances. It also describes
 
 Three trial balance reports are available in Financial reporting.
 
-| Default report                                 | What it does                                                                                                                                                                                        |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Default report                                 | What it does                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------|
 | Detailed Trial Balance - Default               | Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.                  |
 | Summary Trial Balance – Default                | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.                                        |
 | Summary Trial Balance Year Over Year – Default | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year. |
@@ -59,8 +59,8 @@ The trial balance financial reports use the following building blocks.
 
 The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.
 
-1.  Click **Edit**, and then click **Insert Rows from Dimensions**. The **Insert Rows from Dimensions** command lets you choose the dimensions that you want to have in your row definition. For this row definition, you're going to use **Main Account**.
-2.  Make sure that **Main Account** contains all ampersands (&), and then click **OK**.
+1.  Click **Edit**, and then click **Insert rows from dimensions**. The **Insert rows from dimensions** command lets you choose the dimensions that you want to have in your row definition. For this row definition, you're going to use **Main account**.
+2.  Make sure that **Main account** contains all ampersands (&), and then click **OK**.
 
 The row definition now contains all the main accounts for your default legal entity.
 

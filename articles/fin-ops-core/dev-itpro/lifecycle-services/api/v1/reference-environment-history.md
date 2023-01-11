@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fetch environment history
-description: This topic explains how to fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+description: This article explains how to fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: jorichar
 ms.date: 08/19/2021
 ms.topic: reference
@@ -96,8 +96,8 @@ For each history operation, the following properties are available. If no value 
             "Name": "Finance insights",
             "Type": "InstallAddin",
             "TypeDisplay": "Install addin",
-"StartDateTimeUtc": "2021-06-03T15:10:00.0",
-            "EndDateTimeUtc": "2021-06-03T15:11:00.0",
+            "StartDateTimeUTC": "2021-06-03T15:10:00.0",
+            "EndDateTimeUTC": "2021-06-03T15:11:00.0",
             "Status": "Completed",
             "ActivityId": "0924ecdd-1b80-40cc-8158-172785841c15",
             "EnvironmentId": "9ba7fcc3e3b941e09eccd40abde85429",
@@ -107,8 +107,8 @@ For each history operation, the following properties are available. If no value 
             "Name": "Contoso Package deployment",
             "Type": "ApplicationHotfix",
             "TypeDisplay": "Application deployable package",
-            "StartDateTimeUtc": "2021-06-03T10:10:00.0",
-            "EndDateTimeUtc": "2021-06-03T10:11:00.0",
+            "StartDateTimeUTC": "2021-06-03T10:10:00.0",
+            "EndDateTimeUTC": "2021-06-03T10:11:00.0",
             "Status": "Completed",
             "ActivityId": "34703e5c3d224d1685dbaa7f8677d237",
             "EnvironmentId": "9ba7fcc3e3b941e09eccd40abde85429",

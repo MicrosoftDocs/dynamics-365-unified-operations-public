@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Fiscal archive for France
-description: This topic provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
+description: This article provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 08/10/2021
+ms.date: 11/17/2022
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailGrandTotalJournalTable
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: France
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2021-2-19
+ms.author: josaw
+ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.17
-
+ms.search.industry: Retail
+ms.search.form: RetailGrandTotalJournalTable
+manager: annbe
 ---
 # Fiscal archive for France
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France. The fiscal archive is part of the [cash register functionality for France](./emea-fra-cash-registers.md).
+This article provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France. The fiscal archive is part of the [cash register functionality for France](./emea-fra-cash-registers.md).
 
 A fiscal archive is an XML file that contains sales data for a store and a fiscal period. It includes the totals for the closed period, and detailed data about sales transactions and events.
 
@@ -38,7 +28,7 @@ A fiscal archive can be exported from a closed period grand total journal. (For 
 
 You can verify the integrity of the fiscal archive and its data by using the [Fiscal archive integrity verification tool](#fiscal-archive-integrity-verification-tool).
 
-The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format).
+The XML format of the fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). For information about how to import and apply the ER configurations that are required to export fiscal archives, see [Configure the Z report and archive export formats](./emea-fra-cash-registers.md#configure-the-z-report-and-archive-export-formats).
 
 ## Fiscal archive structure
 
@@ -156,7 +146,7 @@ The **Receipt** node of a fiscal archive contains the following elements.
 | TaxRate                 | The tax rate. |
 | TaxAmount               | The total amount of tax for the tax rate. |
 | SequentialNumber        | The sequential number of the signed sales transaction for the register. |
-| DataToSign              | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-transactions) and used for signing. |
+| DataToSign              | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-and-return-transactions) and used for signing. |
 | DataToSignFormatVersion | The internal version of the format of data that was used for signing. |
 | Signature               | The digital signature of the sales transaction record. |
 | HashAlgorithm           | The hash algorithm that was used to hash the data before signing. |
@@ -222,12 +212,12 @@ To obtain the Fiscal archive integrity verification tool and run it against a fi
 1. Download the tool from the Commerce SDK:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Open the last available release branch (for example, **[release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30)**).
+    1. Open the last available release branch.
     1. Open **src \> FiscalIntegration \> SequentialSignatureFrance \> FiscalArchiveIntegrityVerificationTool**.
     1. Review the license terms for the tool.
     1. Download the contents of the folder to your local machine.
 
-1. Export public key files for all digital certificates that are used for digital signing of records.
+1. Export public key files for all digital certificates that are used for digital signing of transactions and audit events on the Commerce channel side, or period grand total journals and fiscal archives on the Commerce headquarters side.
 1. Put the fiscal archive file, its signature file, and all public key files into one folder.
 1. Run Windows PowerShell.
 1. Run the **verify.ps1** script of the tool, and specify the name of the fiscal archive file. Include the full path of the file.

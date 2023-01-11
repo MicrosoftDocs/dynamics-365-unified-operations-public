@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Design multilingual reports in Electronic reporting
-description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
-author: NickSelin
-ms.date: 09/03/2021
+description: This article explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
+author: kfend
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 ---
 
 # Design multilingual reports in Electronic reporting
@@ -33,9 +23,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Overview
 
-As a business user, you can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure formats for outbound documents that must be generated in accordance with the legal requirements of various countries or regions. When these requirements demand that outbound documents be generated in different languages for different countries or regions, you can configure a single ER [format](general-electronic-reporting.md#FormatComponentOutbound) that contains language-dependent resources. In that way, you can reuse the format to generate outbound documents for various countries or regions. You might also want to use a single ER format to generate an outbound document in different languages for corresponding customers, vendors, subsidiaries, or any other parties.
+As a business user, you can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure formats for outbound documents that must be generated in accordance with the legal requirements of various countries or regions. When these requirements demand that outbound documents be generated in different languages for different countries or regions, you can configure a single ER format that contains language-dependent resources. In that way, you can reuse the format to generate outbound documents for various countries or regions. You might also want to use a single ER format to generate an outbound document in different languages for corresponding customers, vendors, subsidiaries, or any other parties.
 
-You can configure ER data models and model mappings as the data sources of configured ER formats to define the data flow that specifies what application data is put into generated documents. As an ER configuration [provider](general-electronic-reporting.md#Provider), you can [publish](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) configured [data models](general-electronic-reporting.md#data-model-and-model-mapping-components), [model mappings](general-electronic-reporting.md#data-model-and-model-mapping-components), and [formats](general-electronic-reporting.md#FormatComponentOutbound) as components of an ER solution to generate specific outbound documents. You can also allow customers to [upload](general-electronic-reporting-manage-configuration-lifecycle.md) the published ER solution so that it can be used and customized. If you expect that customers might speak other languages, you can configure the ER components so that they contain language-dependent resources. In that way, the content of an editable ER component can be presented in a customer's user-preferred language at design time.
+You can configure ER data models and model mappings as the data sources of configured ER formats to define the data flow that specifies what application data is put into generated documents. As an ER configuration [provider](general-electronic-reporting.md#Provider), you can [publish](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) configured data models, model mappings, and formats as components of an ER solution to generate specific outbound documents. You can also allow customers to [upload](general-electronic-reporting-manage-configuration-lifecycle.md) the published ER solution so that it can be used and customized. If you expect that customers might speak other languages, you can configure the ER components so that they contain language-dependent resources. In that way, the content of an editable ER component can be presented in a customer's user-preferred language at design time.
 
 You can configure language-dependent resources as ER labels. You can then use those labels to configure ER components for the following purposes:
 
@@ -86,7 +76,7 @@ When an ER data model is configured in this way, its content will be presented t
 
 ### Model mapping component
 
-Because the ER model mapping is based on an ER data model, the labels of the data model elements that are referred to are appeared in the user's preferred language in the model mapping designer. The following illustration shows how the meaning of the **PurchaseOrder** field is explained in the editable model mapping by using the label of the **Description** attribute that has been added to the configured data model. Notice that this label is presented in the user's preferred language (DE-AT in this example).
+Because the ER model mapping is based on an ER data model, the labels of the data model elements that are referred to appear in the user's preferred language in the model mapping designer. The following illustration shows how the meaning of the **PurchaseOrder** field is explained in the editable model mapping by using the label of the **Description** attribute that has been added to the configured data model. Notice that this label is presented in the user's preferred language (DE-AT in this example).
 
 ![Layout of the ER model mapping designer for a user having DE-AT set as the preferred language.](./media/er-multilingual-labels-show-mapping.png)
 
@@ -94,7 +84,7 @@ When the **Label** attribute of the **User input parameter** data source is conf
 
 ### Format component
 
-When you configure an ER format, you can add ER labels for it. The **Label** and **Help text** attributes of every configured data source can be linked to an ER label that is added to the ER format. The **Label** and **Description** attributes of every <a id="LinkFormatEnum"></a>format enumeration value can be also linked to an ER label that is accessible from the editable ER format.
+When you configure an ER format, you can add ER labels for it. The **Label** and **Help text** attributes of every configured data source can be linked to an ER label that is added to the ER format. The **Label** and **Description** attributes of every <a id="LinkFormatEnum"></a>format enumeration value can also be linked to an ER label that is accessible from the editable ER format.
 
 > [!NOTE]
 > You can also link these attributes to an ER label of the parent ER data model that reuses the model's labels in every ER format that is configured for this ER data model.
@@ -146,6 +136,9 @@ If you configure an ER format in this way, the report is generated by using the 
 ![Preview of the report that has been generated in the DE-AT user's preferred language.](./media/er-multilingual-labels-report-preview-de.png)
 
 If a referenced label has no translation for the language of the format execution context, the label text in the EN-US language is used instead.
+
+> [!TIP]
+> You can use the **FOLDER** and distinct types of **FILE** components in the editable ER format to specify how an outbound file is generated. To name a generated file, configure the ER [expression](er-formula-language.md) for the **File name** parameter of the component. You can use labels in the configured expression. Because the **File name** parameter is language agnostic by default, the text of all labels that you refer to in this expression are exposed in the default EN-US language at runtime. However, in version 10.0.28 and later, you can enable the **Apply the 'Language preference' parameter to the 'File name' expression** feature. The **File name** expression then takes the **Language preferences** parameter into account when it's computed.
 
 ## Language
 
@@ -203,7 +196,7 @@ Configuration of an ER component is done in the draft version of the ER configur
 
 ![ER Configurations page offering access to the configuration's version in the Draft status.](./media/er-multilingual-labels-configurations.png)
 
-As described earlier in this topic, you can add required ER labels to an editable ER component. In this way, you can specify the text of the ER labels in the EN-US language. You can then export the labels of the ER component by using the built-in ER function. Select the draft version of an ER configuration that contains the editable ER component, and then select **Exchange \> Export labels**.
+As described earlier in this article, you can add required ER labels to an editable ER component. In this way, you can specify the text of the ER labels in the EN-US language. You can then export the labels of the ER component by using the built-in ER function. Select the draft version of an ER configuration that contains the editable ER component, and then select **Exchange \> Export labels**.
 
 ![ER Configurations page allowing to export ER labels from the selected conviguration version.](./media/er-multilingual-labels-export.png)
 
@@ -223,13 +216,18 @@ Labels of an ER component that can be edited are kept, together with other conte
 
 Labels of a base ER component can be referred to in a derived version of the ER component that you create to introduce your modifications.
 
+> [!TIP]
+> When you design a ER solution, you can derive your own ER [data model](er-overview-components.md#data-model-component) component from the one that is provided. In this derived data model, you can introduce your own ER labels and use them in all ER formats that will use the data model as the data source. You can then derive your own ER [format](er-overview-components.md#format-component) component from the one that is provided by selecting your derived ER data model instead of the provided one. In version 10.0.28 and later, you can enable the **Enhanced access to labels of the ascendent ER data model** feature to access labels of an ascendent ER data model in derived ER format components, even when the ER data model that you selected for the derived ER component differs from the one that was used in the base ER component.
+>
+> When the same label name is used in your derived component and its ascendent components, your translation of that label is used as the most relevant one.
+
 ER versioning controls label assignment to any attribute in an ER component. Changes to the label assignment are recorded in the list of changes (delta) of an editable ER component that has been created as a derived version of the provided ER component. These changes will be validated when a derived version is rebased to a new base version.
 
 ## Functions
 
 The built-in [LISTOFFIELDS](er-functions-list-listoffields.md) ER function can access ER labels that have been configured for some items of ER components.
 
-As described earlier in this topic, the **Label** and **Description** attributes of every [model](#LinkModelEnum) or [format](#LinkFormatEnum) ER enumeration's value can be linked to an ER label that is accessible in the appropriate ER component. You can configure an ER expression where you call the **LISTOFFIELDS** function by using the ER enumeration as an argument. This expression returns a list that contains a record for every value of an ER enumeration that has been defined as an argument of this function. Every record contains the value of an ER label that is linked to an ER enumeration value:
+As described earlier in this article, the **Label** and **Description** attributes of every [model](#LinkModelEnum) or [format](#LinkFormatEnum) ER enumeration's value can be linked to an ER label that is accessible in the appropriate ER component. You can configure an ER expression where you call the **LISTOFFIELDS** function by using the ER enumeration as an argument. This expression returns a list that contains a record for every value of an ER enumeration that has been defined as an argument of this function. Every record contains the value of an ER label that is linked to an ER enumeration value:
 
 - The value of an ER label that is linked to the **Label** attributes is stored in the **Label** field of the returned record.
 - The value of an ER label that is linked to the **Description** attributes is stored in the **Description** field of the returned record.
@@ -237,6 +235,19 @@ As described earlier in this topic, the **Label** and **Description** attributes
 ## <a name=performance></a>Performance
 
 When you configure an ER format component to generate a report in your preferred [language](#language), or to import an inbound document where the content is parsed by your preferred language, we recommend that you enable the **Cache the preferred language of the current user for ER runs** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. This feature helps improve performance, especially for ER format components that contain multiple references to labels in ER formulas and bindings and many [validation](general-electronic-reporting-formula-designer.md#TestFormula) rules to generate user messages in your preferred language.
+
+When you change the status of an ER configuration version from **Draft** to **Completed**, if the configuration version contains ER labels, those labels are stored in the application database. The storage schema depends on the state of the **Accelerate the ER labels storage** feature:
+
+- If the feature isn't enabled, all labels are stored in the **LABELXML** field of the **ERSOLUTIONVERSIONTABLE** table as a single XML snippet.
+- If the feature is enabled, a separate record is created for each language in the **ERSOLUTIONVERSIONLABELSTABLE** table. The **CONTENTS** field of this table stores labels per language as a compressed XML snippet.
+
+We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration.
+
+To apply the selected storage schema for keeping labels of all ER configurations in the current Finance instance, complete the following steps.
+
+1. Go to **Organization administration** > **Periodic** > **Apply the selected labels storing schema for all ER configurations**.
+2. Select **OK**.
+
 
 ## Additional resources
 

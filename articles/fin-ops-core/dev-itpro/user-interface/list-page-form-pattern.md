@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: List Page form pattern
-description: This article provides information about the List Page form pattern. A list page presents a set of data, so that you can find and work with a specific record. 
+description: This article provides information about the List Page form pattern. A list page presents a set of data, so that you can find and work with a specific record.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer 
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 14241
-ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 14241
+ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
 ---
 
 # List Page form pattern

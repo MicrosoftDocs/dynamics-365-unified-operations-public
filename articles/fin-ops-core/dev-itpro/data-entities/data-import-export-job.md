@@ -4,8 +4,8 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: peakerbl
-ms.date: 10/21/2021
-ms.topic: article
+ms.date: 08/26/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peakerbl
@@ -30,10 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
 > [!NOTE]
-> This topic assumes that you are familiar with [data entities](data-entities.md).
+> This article assumes that you are familiar with [data entities](data-entities.md).
 
 ## Data import/export process
 Here are the steps to import or export data.
@@ -52,7 +55,7 @@ Here are the steps to import or export data.
 5. Validate that the job ran as expected by reviewing the job history.
 6. Clean up the staging tables.
 
-The remaining sections of this topic provide more details about each step of the process.
+The remaining sections of this article provide more details about each step of the process.
 
 > [!NOTE]
 > In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that are not run in batch.
@@ -69,6 +72,9 @@ You can add specific entities to an import or export job or select a template to
 ### Set the data format for the job
 When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are also other attributes, but these are the key ones to understand. The following table lists the valid combinations.
 
+> [!NOTE]
+> The Excel file format is not currently available in the Data management workspace for Government Community Cloud (GCC).
+
 | File Format            | Row/Column delimiter                       | XML Style                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-NA-                     |
@@ -78,8 +84,24 @@ When you select an entity, you must select the format of the data that will be e
 > [!NOTE]
 > It is important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
 
+> [!NOTE]
+> For XML-based file formats, make sure to only use legal characters. For more details about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
+
+Use Unicode instead of a specific code page to import or export data. This will help provide the most consistent results and eliminate data management jobs to fail because they include Unicode characters. The system-defined source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
+
+| Code page	| Display name                |
+|-----------|-----------------------------|
+| 1200	    | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001	    | Unicode (UTF-32 Big-Endian) |
+| 1201	    | Unicode (Big-Endian)        |
+| 65000	    | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+For more details about Code pages, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers/).
+
 ### Sequence the entities
-Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.
+Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export. 
 
 #### Execution units, levels, and sequences
 The execution unit, level in the execution unit, and sequence of an entity help control the order that the data is exported or imported in.
@@ -211,7 +233,7 @@ moving window thereby, always leaving the history for the specified number of da
 ## Job history clean up and archival 
 The job history clean up and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
 
-One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows Finance and Operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
+One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
 
 The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
 
@@ -237,3 +259,4 @@ To download the archived execution history, go to the data management workspace 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

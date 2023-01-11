@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales of taxable goods to consumers
-description: This topic provides information about the sale of taxable goods to a consumer.
+description: This article provides information about the sale of taxable goods to a consumer.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

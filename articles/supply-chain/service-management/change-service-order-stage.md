@@ -3,7 +3,7 @@
 
 title: Change the service order stage 
 description: You can change the service order stage.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Select the service order, and then click the **Dispatch** tab.
 

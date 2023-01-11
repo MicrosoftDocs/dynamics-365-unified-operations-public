@@ -5,7 +5,7 @@ author: jasongre
 ms.date: 08/25/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
@@ -25,7 +25,7 @@ The HierarchyViewer control lets you represent hierarchical relationships for pe
 ![Diagram showing HierarchyViewer control tree structure.](./media/hierarchyViewer_refresh.png)
 
 > [!NOTE]
-> This visual is available starting with [platform updates for version 10.0.22 of Finance and Operations](../get-started/whats-new-platform-updates-10-0-22.md).
+> This visual is available starting with [platform updates for version 10.0.22 of finance and operations](../get-started/whats-new-platform-updates-10-0-22.md).
 
 The HierarchyViewer control shows four levels of information at any given time. The current node is the current focus of the tree, which is not necessarily the root node. The current node is represented by the largest physical node in the current view and it has a colored bar on the left. Above the current node is a trail of smaller parent nodes from the root node down to the current node. Below the current node is a level of children nodes, and there can be an indefinite number of nodes at this level. By default, three children nodes are shown at a time on each page, but that can changed by adjusting the **Number of children** property. The **Next** and **Previous** link buttons allow the user to page to other nodes at the child level. Finally, there is a level of grandchildren nodes that are showon for each child node. Each child can have an indefinite number of grandchild nodes, and the number of grandchildren shown at one time for each child node is controlled by the **Number of Grandchildren** property. Users can use the **Next** and **Previous** arrow buttons to page up and down through members at the grandchild level. The interactive display of nodes requires no business logic.
 
@@ -98,3 +98,4 @@ protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _co
 You can't change node visuals. The design presents a consistent visual and user interaction. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

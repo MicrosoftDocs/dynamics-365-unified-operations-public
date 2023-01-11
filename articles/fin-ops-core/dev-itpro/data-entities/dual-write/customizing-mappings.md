@@ -1,11 +1,11 @@
 ---
 title: Customize table and column mappings
-description: This topic explains how to customize table and column mappings.
+description: This article explains how to customize table and column mappings.
 author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,18 +16,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 The out-of-box table maps have predefined table and column mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and column mappings.
 
 ## Customize column mappings, add transforms, and enable filtering
 
-1. In your Finance and Operations app, on the **Dual-write** page, on the **Table mappings** tab, select the table map to customize.
+1. In your finance and operations app, on the **Dual-write** page, on the **Table mappings** tab, select the table map to customize.
 
     > [!NOTE]
     > Before you change table mappings, they must be stopped (not running). Otherwise, your changes won't be saved.
 
-2. On the **Table mappings** tab, you can customize a column by selecting a new or custom column from either the Finance and Operations app or Dataverse.
+2. On the **Table mappings** tab, you can customize a column by selecting a new or custom column from either the finance and operations app or Dataverse.
 
     ![Customizing a column.](media/customize-a-field.png)
 
@@ -65,7 +65,7 @@ The out-of-box table maps have predefined table and column mappings that enable 
 
 ### Filter your data
 
-Dual-write lets you filter data by using Open Data Protocol (OData) filter expressions for Dataverse. For the Finance and Operations app, filtering resembles range expressions that are used in the query range.
+Dual-write lets you filter data by using Open Data Protocol (OData) filter expressions for Dataverse. For the finance and operations app, filtering resembles range expressions that are used in the query range.
 
 1. On the table mapping page, select the filter button (funnel symbol).
 
@@ -77,7 +77,7 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     The following table shows some examples of filter expressions.
 
-    | Filter | Dataverse | Finance and Operations apps |
+    | Filter | Dataverse | Finance and operations apps |
     |---|---|---|
     |String field like| startswith(name, 'A')|(name like "A*")|
     |String field not like|not contains(name, 'A')|(!(name like "*A*"))|
@@ -95,7 +95,7 @@ Although Microsoft is continuing to add new tables, you can also add standard or
 
 The following example shows how to add a new table map that is named **Address books**.
 
-1. In the Finance and Operations app, on the **Dual-write** page, select **Add table map**.
+1. In the finance and operations app, on the **Dual-write** page, select **Add table map**.
 
     ![Adding a new table map.](media/add-new-entity-map.png)
 
@@ -112,3 +112,4 @@ The following example shows how to add a new table map that is named **Address b
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

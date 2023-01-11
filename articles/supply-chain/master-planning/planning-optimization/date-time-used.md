@@ -1,13 +1,13 @@
 ---
 title: Date and time parameters used by Planning Optimization
-description: This topic provides information about the date and time parameters that Planning Optimization uses during its operation.
-author: ChristianRytt
+description: This article provides information about the date and time parameters that Planning Optimization uses during its operation.
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about the date and time parameters that Planning Optimization uses during its operation.
+This article provides information about the date and time parameters that Planning Optimization uses during its operation.
 
-Whereas the built-in master planning engine uses transaction dates in all calculations, Planning Optimization works with date and time values that are converted to dates. This difference in behavior can lead to situations where, for example, forecast transactions that are created at midnight on the day when master planning is run aren't included because Planning Optimization considers that they were created before the current date.
+Whereas the deprecated master planning engine uses transaction dates in all calculations, Planning Optimization works with date and time values that are converted to dates. This difference in behavior can lead to situations where, for example, forecast transactions that are created at midnight on the day when master planning is run aren't included because Planning Optimization considers that they were created before the current date.
 
 ## Parameters for issue and demand transactions
 

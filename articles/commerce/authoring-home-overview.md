@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Authoring page overview
-description: This topic provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
-author: brendans
+description: This article provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
+author: bicyclingfool
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application USer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.assetid: 
 ---
 # Authoring page overview
 
   
  [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
 
 Websites can be created to support various business needs. They can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
 

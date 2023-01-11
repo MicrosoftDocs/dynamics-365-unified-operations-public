@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Simple List and Details form pattern
-description: This topic provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
+description: This article provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 16242
-ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16242
+ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
 ---
 
 # Simple List and Details form pattern
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
+This article provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 
 ## Usage
 

@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Fixed assets and intangible assets registers
-description: This topic provides information about fixed assets and intangible assets registers.
-author: anasyash
+description: This article provides information about fixed assets and intangible assets registers.
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Fixed assets and intangible assets registers
@@ -35,7 +25,7 @@ Fixed assets (FA) and intangible assets (IA) are considered depreciable assets. 
 -   The depreciation of fixed assets and intangible assets in tax accounting can be calculated by using only two methods of depreciation: linear and non-linear.
 -   Losses from the sale of a depreciable asset in tax accounting are recognized as deferrals and should be written off evenly, starting in the period after the period of sale and ending by the period that was initially specified as the end of the asset's lifetime.
 
-For the tax accounting of fixed assets and intangible assets, create the following registers as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register):
+For the tax accounting of fixed assets and intangible assets, create the following registers as described in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register):
 
 -   Goods cost calculation
 -   FA – information about object

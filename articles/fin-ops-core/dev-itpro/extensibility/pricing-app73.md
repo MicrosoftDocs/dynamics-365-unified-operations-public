@@ -1,26 +1,19 @@
 ---
-
 title: Price and discount extensibility
-description: This topic describes how to extend pricing functionality.
+description: This article describes how to extend pricing functionality.
 author: smithanataraj
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Price and discount extensibility

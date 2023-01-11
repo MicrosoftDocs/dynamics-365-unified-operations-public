@@ -1,15 +1,15 @@
 ---
 title: Get started with Global Inventory Accounting
-description: This topic describes how to get started with Global Inventory Accounting.
-author: AndersGirke
+description: This article describes how to get started with Global Inventory Accounting.
+author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -17,7 +17,6 @@ ms.dyn365.ops.version: 10.0.20
 # Get started with Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Global Inventory Accounting lets you do multiple inventory accountings in the Global Inventory Accounting ledgers that you've set up. You must associate each Global Inventory Accounting ledger with a *convention*. A convention is a collection of the following types of accounting policies:
 
@@ -33,12 +32,18 @@ Global Inventory Accounting is an add-in. To make its features available, you mu
 
 Global Inventory Accounting doesn't currently support all the cost management features that are built into Supply Chain Management. Therefore, it's important that you evaluate whether the set of features that is currently available will meet your requirements.
 
-## <a name="sign-up"></a>How to get the Global Inventory Accounting public preview
+## <a name="sign-up"></a>How to get the Global Inventory Accounting add-in
 
 > [!IMPORTANT]
 > To use Global Inventory Accounting, you must have an LCS-enabled high-availability environment (not a OneBox environment). Additionally, you must be running Supply Chain Management version 10.0.19 or later.
 
-To sign up for the Global Inventory Accounting public preview, send your LCS environment ID by email to the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com). After you're approved for the program, the team will send you a follow-up email that contains a Global Inventory Accounting beta key and your service endpoints. After you receive the beta key, you can [install the add-in](#install).
+### Supply Chain Management version 10.0.19 to 10.0.26
+
+To install Global Inventory Accounting for Supply Chain Management version 10.0.19 to 10.0.26, start by [installing the add-in](#install). Then send your LCS environment ID and company name by email to the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com). The team will send you a follow-up email that contains your Global Inventory Accounting service endpoints.
+
+### Supply Chain Management version 10.0.27 and later
+
+To install Global Inventory Accounting for Supply Chain Management version 10.0.27 and later, just [install the add-in](#install). For these versions of Supply Chain Management, the Global Inventory Accounting service endpoints will be set up automatically, so you don't need to find them manually. If you do experience any issues while setting up the add-in, please contact the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com).
 
 ## Licensing
 
@@ -58,56 +63,36 @@ Before you can enable add-in functionality, you must integrate with Microsoft Po
 
 For more information, see [Enable after environment deployment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### Set up Dataverse
+## <a name="install"></a>Install or update the add-in and solution
 
-Before you set up Dataverse, add the Global Inventory Accounting service principles to your tenant by following these steps.
+Use the following procedure to install or update the Global Inventory Accounting add-in and solution. The part of the procedure you should follow depends on whether you are installing for the first time or just need to update the solution for an existing installation.
 
-1. Install Azure AD Module for Windows PowerShell v2 as described in [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-1. Run the following PowerShell command.
+- If you have never installed the add-in before, follow the full procedure to install both the add-in and the solution.
+- If you are already using Global Inventory Accounting but need to update the solution in the [Power Platform admin center](https://admin.powerplatform.microsoft.com), then do step 6 only and skip all of the other steps.
 
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+To install or update the add-in and solution:
 
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Next, create application users for Global Inventory Accounting in Dataverse by following these steps.
-
-1. Open the URL of your Dataverse environment.
-1. Go to **Advanced Setting \> System \> Security \> Users**, and create an application user. Use the **View** field to change the page view to *Application users*.
-1. Select **New**.
-1. Set the **Application ID** field to *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Select **Assign Role**, and then select *System Administrator*. If there is a role that is named *Common Data Service User*, select it too.
-1. Repeat the preceding steps, but set the **Application ID** field to *5f58fc56-0202-49a8-ac9e-0946b049718b*.
-
-For more information, see [Create an application user](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-If the default language of your Dataverse installation isn't English, follow these steps.
-
-1. Go to **Advanced Setting \> Administration \> Languages**.
-1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
-
-## <a name="install"></a>Install the add-in
-
-Follow these steps to install the add-in so that you can use Global Inventory Accounting.
-
-1. [Sign up](#sign-up) for the Global Inventory Accounting public preview.
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
-1. Go to **Preview feature management**.
-1. Select the plus sign (**+**).
-1. In the **Code** field, enter your add-in beta key for Global Inventory Accounting. (You should have received your beta key by email when you signed up.)
-1. Select **Unblock**.
 1. Open the LCS environment where you want to add the service.
 1. Go to **Full details**.
-1. Go to **Power Platform Integration**, and select **Setup**.
+1. Go to **Power Platform Integration** and select **Setup**.
 1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
-1. After setup of the Microsoft Power Platform environment is completed, on the **Environment add-ins** FastTab, select **Install a new add-in**.
+1. After the Microsoft Power Platform environment setup is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install or update the Global Inventory Accounting solution by doing the following steps:
+   1. Select the environment where you want to install or update the solution.
+   1. Select **Dynamics 365 apps**.
+   1. Select **Install App**.
+   1. Select **Dynamics 365 Global Inventory Accounting**.
+   1. Select **Next** to install.
+1. After the solution is completely installed, go back to LCS environment. On the **Environment add-ins** FastTab, select **Install a new add-in**.
 1. Select **Global inventory accounting**.
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
 1. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
+
+If the default language of your Dataverse installation isn't English, follow these steps:
+
+1. Go to **Advanced Setting \> Administration \> Languages**.
+1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
 
 ## Set up the integration
 
@@ -116,9 +101,11 @@ Follow these steps to set up the integration between Global Inventory Accounting
 1. Sign in to Supply Chain Management.
 1. Go to **System administration \> Feature Management**.
 1. Select **Check for updates**.
-1. On the **All** tab, search for the feature that is named *Global inventory accounting*.
+1. On the **All** tab, search for the feature that is named *(Preview) Global inventory accounting*.
 1. Select **Enable now**.
 1. Go to **Global inventory accounting \> Setup \> Global inventory accounting parameters \> Integrations parameters**.
-1. In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs from the email that the Global Inventory Accounting team sent when you signed up for the preview.
+1. Depending on which version of Supply Chain Management you're running, do one of the following steps:
+    - **Supply Chain Management version 10.0.19 to 10.0.26**: In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs that were sent to you by email from the Global Inventory Accounting team (see also [How to get the Global Inventory Accounting add-in](#sign-up)).
+    - **Supply Chain Management version 10.0.27 and newer**: You don't need to enter the endpoints, so you can skip this step.
 
 Global Inventory Accounting is now ready to use.

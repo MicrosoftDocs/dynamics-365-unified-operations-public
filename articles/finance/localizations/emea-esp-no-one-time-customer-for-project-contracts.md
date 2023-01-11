@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: One-time customers
-description: This topic provides information about one-time customers.  
-author: ShylaThompson
+description: This article provides information about one-time customers.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264394
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264394
+ms.search.form: CustTable
 ---
 
 # One-time customers
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about one-time customers.  
+This article provides information about one-time customers.  
 
 A one-time customer is a customer who does not have a long-term relationship with your company. For one-time customers, you typically don't need to save information like address, contact, or tax exempt details. To indicate that a customer is a one-time customer, complete the following steps:
 

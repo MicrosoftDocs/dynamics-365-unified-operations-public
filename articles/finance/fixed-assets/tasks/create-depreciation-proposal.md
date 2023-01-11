@@ -1,7 +1,7 @@
 ---
 # required metadata 
 title: Create a depreciation proposal
-description: This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
+description: This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
 author: abruer
 ms.date: 08/01/2019
 ms.topic: business-process 
@@ -12,7 +12,7 @@ ms.technology:
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
+This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
 
 
 ## Create a depreciation proposal
-1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Create depreciation proposal**.
+1. In the navigation pane, go to **Fixed assets > Journal entries > Create depreciation proposal**.
 2. In the **Name of journal** field, select an option from the drop-down menu.
 3. In the **To date** field, enter a date.
 

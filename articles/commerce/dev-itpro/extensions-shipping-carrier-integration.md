@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Extension points for packing slips during order fulfillment
-description: This topic shows how to use customizations to add extension points to packing slips during customer order fulfillment.
-author: mugunthanm
+description: This article shows how to use customizations to add extension points to packing slips during customer order fulfillment.
+author: josaw1
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Extension points for packing slips during order fulfillment

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Development and build VMs that don't allow admin access FAQ
-description: This topic provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
+description: This article provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 ms.date: 10/09/2019
 ms.topic: article
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. 
+This article provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. 
 
 ## How can I install a deployable package?
 Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a deployable package. You can install a deployable package by using the **-devinstall** option. Remember that this option requires manual database synchronization.
 
 For more information about how to install a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
-## Is the Finance and Operations website accessible when Visual Studio isn't running?
-Yes, you can access the Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps to ensure that you can remotely access the Application Object Server (AOS) instance and the website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
+## Is the finance and operations website accessible when Visual Studio isn't running?
+Yes, you can access the finance and operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps to ensure that you can remotely access the Application Object Server (AOS) instance and the website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
 
 ## What about the other services?
 You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, Financial reporting (formerly Management Reporter), and IIS. (For IIS, you must restart the World Wide Web Publishing Service because you can't use iisreset.exe.)
@@ -58,7 +58,7 @@ You must use IIS Express. See the next question for more information.
 ## What are the instructions for using IIS Express?
 When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
-To ensure that debugging functions properly with IIS Express and Finance and Operations Visual Studio projects, we recommend the following Internet Options settings:
+To ensure that debugging functions properly with IIS Express and finance and operations Visual Studio projects, we recommend the following Internet Options settings:
 
 - Go to **Control Panel** > **Internet Options** > **Security** tab > **Internet**, and clear the **Enable Protected Mode** check box.
 - Go to **Control Panel** > **Internet Options** > **Security** tab > **Restricted sites**, and clear the **Enable Protected Mode** check box.
@@ -103,7 +103,7 @@ You can put the system into maintenance mode to change the license configuration
 ### Development environments
 Use LCS to install a license deployable package on any cloud development environment.
 ### Build environments
-LCS does not allow AOT or license deployable packages to be installed on build environments. To work around this, remote into the VM and use the **-devinstall** option to install a license deployable package from the command line as described in the topic, [Install deployable packages from the command line](../deployment/install-deployable-package.md). This command line install works as of platform update 17. If you are running on a platform version that is older than Platform update 17, and you do not have admin access to your build environment, create a support request and ask Microsoft to install your license deployable package.
+LCS does not allow AOT or license deployable packages to be installed on build environments. To work around this, remote into the VM and use the **-devinstall** option to install a license deployable package from the command line as described in the article, [Install deployable packages from the command line](../deployment/install-deployable-package.md). This command line install works as of platform update 17. If you are running on a platform version that is older than Platform update 17, and you do not have admin access to your build environment, create a support request and ask Microsoft to install your license deployable package.
 
 ## Is licensing Visual Studio by entering a product key supported?
 Entering a product key directly in Visual Studio is not supported. Instead, use Visual Studio subscription licensing and sign in to Visual Studio with the email address (user account) associated with the license. You can link a Visual Studio license to a user account by assigning an MSDN license to the user account or by assigning a license to the user account by using https://www.visualstudio.com/subscriptions-administration.

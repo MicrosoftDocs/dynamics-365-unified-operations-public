@@ -1,28 +1,18 @@
 ---
-
-# required metadata
 title: Customer invoices and return sales orders in Eastern European countries
-description: This topic describes how to set up information for customer invoices and return sales orders in Eastern European countries.
-author: epopov
+description: This article describes how to set up information for customer invoices and return sales orders in Eastern European countries.
+author: EvgenyPopovMBS
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: Retail
 ---
 
 # Customer invoices and return sales orders in Eastern European countries
@@ -30,7 +20,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up information for customer invoices and return sales orders in Eastern European countries.
+This article describes how to set up information for customer invoices and return sales orders in Eastern European countries.
 
 You can set up the following information for customer invoices and return sales orders that are generated in Retail point of sale (POS).
 

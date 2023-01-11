@@ -1,6 +1,6 @@
 ---
 title: Over-picking for sales orders and transfer orders
-description: This topic explains how to enable over-picking for sales orders and transfer orders.
+description: This article explains how to enable over-picking for sales orders and transfer orders.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -8,7 +8,7 @@ ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents a scenario that shows how to enable either a specific worker or all workers to over-pick. The over-picking process allows for controlled over-picking during the picking work.
+This article presents a scenario that shows how to enable either a specific worker or all workers to over-pick. The over-picking process allows for controlled over-picking during the picking work.
 
 Warehouse over-picking is a simple concept. The system allows workers to pick more items than are specified for an order. However, it still considers the overdelivery limit that is set at the line level for the transfer order or sales order. If that limit is exceeded, the Warehouse Management app notifies the workers that they are exceeding the overdelivery limit.
 
@@ -36,11 +36,11 @@ The over-pick feature can help workers save time and effort when they pick and s
 > [!IMPORTANT]
 > The over-pick feature applies only to sales order and transfer order picking and processing. Replenishment doesn't support over-picking. When replenishment work is run, the system won't allow users to over-pick.
 
-This scenario in this topic shows how to set up and use the over-pick feature.
+This scenario in this article shows how to set up and use the over-pick feature.
 
 ## Scenario prerequisite: Make demo data available
 
-The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to *USMF* before you begin.
+The scenario in this article references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to *USMF* before you begin.
 
 ## Scenario setup
 

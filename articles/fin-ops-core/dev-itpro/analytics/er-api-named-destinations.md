@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Change code to enable users to configure and use named ER destinations
-description: This topic describes how the Electronic reporting (ER) API can be used to enable users to configure and use named ER destinations.
-author: NickSelin
+description: This article describes how the Electronic reporting (ER) API can be used to enable users to configure and use named ER destinations.
+author: kfend
 ms.date: 08/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERFormatDestinationTable
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: nselin
+ms.search.region: Global
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
+ms.search.form: ERFormatDestinationTable
 ---
 
 # Change code to enable users to configure and use named ER destinations
 
 [!include [banner](../includes/banner.md)]
 
-To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER [format mapping](general-electronic-reporting.md#FormatComponentInbound). When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of the format are always run. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
+To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER format mapping. When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of the format are always run. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
 
 You can also configure [action-dependent ER destinations](er-action-dependent-destinations.md) for the ER format. You can then use the [extended](er-apis-app10-0-17.md#er-api-run-format-with-action-code) API of the ER framework to call an ER format mapping that provides a user action code. The action code runs only the destinations that were configured for the action that was provided.
 

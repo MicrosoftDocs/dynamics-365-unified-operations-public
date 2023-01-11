@@ -2,8 +2,8 @@
 # required metadata
 
 title: Service intervals
-description: This topic provides an overview of how to work with service intervals. The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
-author: kamaybac
+description: This article provides an overview of how to work with service intervals. The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
+author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -92,7 +92,7 @@ Because there is no grouping on the service order (defined by the **By service a
 
 Three service order lines have been created within the time frame that you specified in the **Create service orders** dialog box. You can view the service order lines in the **Service agreements** page (**Action Pane** \> **Deliver** tab \>**View** button).
 
-## Related topics
+## Related articles
 
 [Set up service intervals](set-up-service-intervals.md)  
 

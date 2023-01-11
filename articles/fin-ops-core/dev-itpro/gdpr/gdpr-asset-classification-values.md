@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Asset classifications
-description: Finance and Operations apps provide a default set of classifications for the kinds of data that are stored in each table. 
+description: Finance and operations apps provide a default set of classifications for the kinds of data that are stored in each table.
 author: ToddLefor
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 10031
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 10031
 ---
 
 # Asset classifications
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations apps provide a default set of classifications for the kinds of data that are stored in each table. These classifications are subject to change depending on the need to identify different kinds of data. The actual classification for each field in each table can change at any time, depending on differing needs for identifying data.
+Finance and operations apps provide a default set of classifications for the kinds of data that are stored in each table. These classifications are subject to change depending on the need to identify different kinds of data. The actual classification for each field in each table can change at any time, depending on differing needs for identifying data.
 
 Through customization, you can change the classification of the following data to meet your own classification and tracking needs.
 

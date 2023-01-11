@@ -1,36 +1,25 @@
 ---
 title: Diagnose issues and analyze performance by using Trace parser
-description: This topic explains how you can use the Trace parser to consume traces and analyze performance in your deployment. 
-author: RobinARH
+description: This article explains how you can use the Trace parser to consume traces and analyze performance in your deployment.
+author: josaw1
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 13441
-ms.assetid: eb0fbbaf-07d4-4a02-85e8-0d4f7920a0b9
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Diagnose issues and analyze performance by using Trace parser
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use the Trace parser to consume traces and analyze performance in your deployment. You can use the Trace Parser to find and diagnose various types of errors. You can also use the tool to visualize execution of X++ methods, as well as the execution call tree.
+This article explains how you can use the Trace parser to consume traces and analyze performance in your deployment. You can use the Trace Parser to find and diagnose various types of errors. You can also use the tool to visualize execution of X++ methods, as well as the execution call tree.
 
 > [!NOTE]
-> There are many more features in the Trace parser are similar to Microsoft Dynamics AX 2012. See the [Dynamics Ax Performance Team Blog](/archive/blogs/axperf/) for more information.
+> There are features in the Trace parser that are similar to Microsoft Dynamics AX 2012. See the [Dynamics Ax Performance Team Blog](/archive/blogs/axperf/) for more information.
 
 ## Finding the Trace parser
 Trace parser should be preinstalled with your developer deployment or VHD. The install location is here: **C:\\Program Files (x86)\\Microsoft Dynamics Trace Parser**. If it's not installed, you can run the installer from **C:\\PerfSDK\\PerfTools\\traceparser.msi**.

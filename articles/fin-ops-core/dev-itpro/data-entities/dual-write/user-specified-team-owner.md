@@ -1,11 +1,11 @@
 ---
 title: User-specified team owner
-description: This topic explains how set a user-specified team owner instead of using the default team owner.  
+description: This article explains how set a user-specified team owner instead of using the default team owner.  
 author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-In Finance and Operations apps, global tables are not associated with a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Microsoft Dataverse using dual-write. 
+
+In finance and operations apps, global tables are not associated with a company or legal entity. For these tables, you can specify a team and not use a default team as owner when writing to Microsoft Dataverse using dual-write. 
 
 By default, when you enable dual-write, the root business unit’s default team will become the default owner for all rows integrated through dual-write. This may not be what you want when you want to limit access to these records to just a subset of users. It’s not uncommon for an organization to have multiple departments defined by business units with corresponding teams under them. You don’t want all users of the default team to have access to all the records integrated via dual-write. In these situations, you can specify a different team for each global table as an owner for these records. 
 
@@ -39,3 +39,4 @@ After you run the initial sync, the owner is shown in the integrated records. In
 :::image type="content" source="media/owning-team-2.png" alt-text="Initial sync with default and user specified team.":::
   
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

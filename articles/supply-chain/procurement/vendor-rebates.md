@@ -2,8 +2,8 @@
 # required metadata
 
 title: Vendor rebates
-description: This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
-author: Henrikan
+description: This article provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: no wiki topic
+# ms.custom: no wiki article
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012 
 ---
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012
 
 Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
 
-This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. The overview covers the following tasks:
+This article provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. The overview covers the following tasks:
 
 - Review details of a rebate agreement.
 - Identify orders that qualify for rebates, and generate rebate claims.
@@ -38,7 +38,7 @@ This topic provides an overview of the most common tasks that you might want to 
 
 ## Audience and purpose
 
-The information in this topic is intended for business decision makers in enterprise companies, in positions such as purchase manager, chief financial officer (CFO), and accounting manager, who have the following responsibilities:
+The information in this article is intended for business decision makers in enterprise companies, in positions such as purchase manager, chief financial officer (CFO), and accounting manager, who have the following responsibilities:
 
 - Negotiate vendor price, discount, and rebate agreements.
 - Manage staff that processes rebate claims and collects payments.

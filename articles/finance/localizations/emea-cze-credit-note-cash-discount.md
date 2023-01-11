@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Credit note on cash discount
-description: This topic provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
-author: ShylaThompson
+description: This article provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
+author: mrolecki
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 273063
 ms.search.region: Czech Republic
-# ms.search.industry: 
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 273063
+ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 ---
 
 # Credit note on cash discount
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
+This article provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
 
 Companies in the Czech Republic must issue credit notes for cash discounts that are given to customers. These credit notes must include the following information:
 

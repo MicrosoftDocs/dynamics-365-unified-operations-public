@@ -1,12 +1,12 @@
 ---
 title: X++ string runtime functions
-description: This topic describes the string run-time functions.
-author: RobinARH
+description: This article describes the string run-time functions.
+author: josaw1
 ms.date: 08/15/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the string run-time functions.
+This article describes the string run-time functions.
 
 ## match
 
@@ -782,7 +782,7 @@ If a minus sign precedes the value of the *\_number* parameter, the substring wi
 ```xpp
 subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
 subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
-subStr("abcdef"),2,99) //Returns the string "cdef".
+subStr("abcdef",2,99) //Returns the string "bcdef".
 subStr("abcdef",2,3) //Returns the string "bcd".
 subStr("abcdef",2,-3); //Returns the string "ab".
 ```

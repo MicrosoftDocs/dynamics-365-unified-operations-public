@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recall order operation in POS
-description: This topic explains feature capabilities available for improved order recall pages in POS.
+description: This article explains feature capabilities available for improved order recall pages in POS.
 author: hhainesms
 ms.date: 03/12/2021
 ms.topic: article
@@ -70,5 +70,11 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 ## Add notifications to the recall order operation
 
 In version 10.0.18 and later, you can configure POS notifications and live tile alerts for the **Order Recall** operation if desired. For more information, see [Show order notifications in the point of sale (POS)](notifications-pos.md).  
+
+> [!NOTE]
+> To enable the order lookup feature, ensure that the **Quotations** key is enabled under **License configuration** > **Configuration keys**.
+>
+> ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

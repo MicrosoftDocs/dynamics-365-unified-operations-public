@@ -1,26 +1,18 @@
 ---
 title: Run processes
-description: This topic describes how to run processes for the process automation framework.
+description: This article describes how to run processes for the process automation framework.
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Run processes

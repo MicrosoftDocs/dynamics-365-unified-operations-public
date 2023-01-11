@@ -2,7 +2,7 @@
 # required metadata
 
 title: License codes and configuration keys report
-description: This topic points you to a report that lists the license codes and configuration keys available in Finance and Operations.
+description: This article points you to a report that lists the license codes and configuration keys available in finance and operations.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to a report that lists the license codes and configuration keys available in Finance and Operations.
+This article points you to a report that lists the license codes and configuration keys available in finance and operations.
 
-When you purchase Finance and Operations, all functionality is included. By default, some features and functionality that you do not use may be enabled. The administrator should disable the features that are not needed by disabling license codes and configuration keys.
+When you purchase finance and operations, all functionality is included. By default, some features and functionality that you do not use may be enabled. The administrator should disable the features that are not needed by disabling license codes and configuration keys.
 
 When a license code or configuration key is disabled, the associated module or feature is removed from the user interface. Large sets of functionality, such as modules, are controlled by license codes. Many license codes, in turn, enable configuration keys that allow you to enable and disable functionality at a more detailed level.
 

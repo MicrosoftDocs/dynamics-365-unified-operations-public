@@ -4,7 +4,7 @@
 title: Financial period close workspace
 description: This article provides an overview of the Financial period close workspace and the associated configuration.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerPeriodCloseProjectWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the **Financial period close** workspace and the associated configuration.
+This article provides an overview of the **Financial period close** workspace and the associated configuration.
 
-Financial period close workspace
+## Financial period close workspace
 
 The **Financial period close** workspace lets you track your financial closing processes across companies, areas, and people. Depending on your view of the **Financial period close** workspace, you'll see either of all tasks and statuses for a closing schedule, or just the tasks that are assigned to you. 
 
@@ -106,7 +106,7 @@ Assign the calendar appropriate for the closing schedule, to indicate the workin
 
 You must also define the companies that will be associated with the closing schedule. If template tasks are assigned to multiple companies, separate tasks will be created for each company that is in the closing schedule and assigned to the template task. 
 
-After a closing schedule is completed, select the **Closed** option for it. The task history will still be available from the **All financial period close tasks** list page, but the closing schedule will be removed from the workspace. After a closing schedule has been marked as **Closed**, you won't be able to add tasks to it, edit tasks, or remove tasks from it.
+After a closing schedule is completed, select the **Closed** option. The task history will still be available from the **All financial period close tasks** list page, but the closing schedule will be removed from the workspace. After a closing schedule has been marked as **Closed**, you won't be able to add tasks to it, edit tasks, or remove tasks from it.
 
 
 

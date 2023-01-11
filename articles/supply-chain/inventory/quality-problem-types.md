@@ -2,7 +2,7 @@
 # required metadata
 
 title: Problem types for nonconformances
-description: This topic describes how to create and use problem types for nonconformances.
+description: This article describes how to create and use problem types for nonconformances.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create and use problem types for nonconformances.
+This article describes how to create and use problem types for nonconformances.
 
 You use the **Problem types** page to define a classification of the quality problems that might occur for the various nonconformance types. For each problem type that you create, you must specify the types of nonconformances that the problem type can be used with. You can set up the following nonconformance types:
 

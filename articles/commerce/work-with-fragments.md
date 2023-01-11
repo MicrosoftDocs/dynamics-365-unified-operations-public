@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Work with fragments
-description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
+description: This article describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.search.industry: retail
+ms.search.form: 
 ---
 
 # Work with fragments 
 
 [!include [banner](includes/banner.md)]
 
-This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
+This article describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 
 Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site. For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages. You can think of fragments as miniature webpages that can be inserted into other pages on your site. Fragments have their own lifecycle. In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.
 
@@ -126,6 +117,20 @@ To edit a fragment in Commerce site builder, follow these steps.
 
 You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.
 
+### Rename a fragment
+
+To rename an existing fragment in site builder, follow these steps.
+
+1. In the left navigation pane, select **Fragments**.
+1. Select the fragment name of the fragment that you want to rename.
+1. Select **Edit** to start editing the fragment. Note that you cannot edit a fragment if someone else is already editing the fragment.
+1. In the fragment properties pane, select the pen symbol next to the fragment name.
+1. Edit the fragment name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
+
+You can rename a fragment after it is created by editing it and then selecting the pen symbol next to the fragment name in the property pane.
+
 ## Additional resources
 
 [Templates and layouts overview](templates-layouts-overview.md)
@@ -135,6 +140,8 @@ You can also edit a fragment by selecting it on a page, in a template, or in a p
 [Work with preset layouts](work-with-layouts.md)
 
 [Work with publish groups](publish-groups.md)
+
+[View version history to revert pages and fragments](version-history-revert.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

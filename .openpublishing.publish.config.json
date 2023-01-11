@@ -20,10 +20,10 @@
     }
   ],
   "notification_subscribers": [],
-  "report_severity_level": "Verbose",
   "sync_notification_subscribers": [
     "tfehr@microsoft.com"
   ],
+  "report_severity_level": "Verbose",
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public",
   "git_repository_branch_open_to_public_contributors": "main",
@@ -34,13 +34,13 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],

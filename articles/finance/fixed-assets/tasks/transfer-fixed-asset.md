@@ -3,7 +3,7 @@
  
 title: Transfer a fixed asset
 description: This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set. 
-author: saraschi2
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.  It uses the Accountant role and demo data for the USMF legal entity.
+This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.  
 
 1. In the Navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
 2. In the list, find and select the fixed asset to transfer.

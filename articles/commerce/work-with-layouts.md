@@ -1,37 +1,28 @@
 ---
- # required metadata
-
 title: Work with preset layouts
-description: This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
+description: This article describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Work with preset layouts
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
+This article describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
 
-Before you complete the procedures in this topic, be sure to read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts). For a general overview, see [Templates and layouts overview](templates-layouts-overview.md).
+Before you complete the procedures in this article, be sure to read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts). For a general overview, see [Templates and layouts overview](templates-layouts-overview.md).
 
 ## Create a new preset layout
 
@@ -82,7 +73,7 @@ A typical practice is to set a default theme for all pages that use a preset lay
 To set or change the theme for all child pages that use your preset layout, follow these steps.
 
 1. In the layout editor, in the outline tree on the left, select the page container module. (Typically, this module is the second node and is named **Default page**.)
-1. In the property pane on the right, in the **Theme** field, select a theme.
+1. In the **Theme** field of the properties pane on the right, select a theme.
 
 ## Save, check in, preview, and publish a preset layout
 
@@ -95,12 +86,24 @@ To preview your changes, either open an existing page that uses the preset layou
 
 After you've previewed the changes to your preset layout, follow one of these steps to publish the layout to your live site:
 
-* Go to **Layouts**, select the layout, and then select **Publish**.
-* Select the layout name to open the layout editor, and then select **Publish**.
-* Publish a page that references the unpublished layout. The layout will automatically be published.
+1. Go to **Layouts**, select the layout, and then select **Publish**.
+1. Select the layout name to open the layout editor, and then select **Publish**.
+1. Publish a page that references the unpublished layout. The layout will automatically be published.
 
 > [!WARNING]
 > Preset layouts can be referenced by multiple pages. When you publish a preset layout, be aware that you might affect the layout of multiple pages.
+
+## Rename a preset layout
+
+To rename a preset layout in site builder, follow these steps.
+
+1. In the left navigation pane, select **Layouts**.
+1. Select the layout name of the layout you want to rename.
+1. Select **Edit** to start editing the layout.
+1. In the layout properties pane, select the pen symbol next to the layout name.
+1. Edit the layout name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
 
 ## Additional resources
 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up Electronic messages
-description: This topic provides information about how to set up Electronic messages (EM) functionality.
-author: liza-golub
-ms.date: 07/07/2021
+description: This article provides information about how to set up Electronic messages (EM) functionality.
+author: AdamTrukawka
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Set up Electronic messages
@@ -41,6 +29,7 @@ If you don't import a data entity package, you can manually set up the EM functi
 - [Additional fields](#additional)
 - [Executable class settings](#executable)
 - [Populate records actions](#populate)
+- [Populate records from multiple companies](#multiple-companies-populate)
 - [Web applications](#applications)
 - [Web service settings](#settings)
 - [Message processing actions](#actions)
@@ -72,7 +61,7 @@ The following table describes the fields on the **Message statuses** page.
 |---------------------|-------------|
 | Message status      | Enter a unique name for the message status. Message statuses are used to characterize the state of an electronic message at every moment. The name that you enter is shown on the **Electronic messages** page and in a log that is related to electronic messages. |
 | Description         | Enter a description of the message status. |
-| Response type       | Select the response type for the message status. Some actions in a processing can produce more than one response type. For example, an action of the **Web service** type can produce responses of the **Successfully executed** type or the **Technical error** type, depending on the result of its execution. In this case, define message statuses for both response types. For more information about action types and the types of responses that are related to them, see the [Message processing action types](#action-types) section later in this topic. |
+| Response type       | Select the response type for the message status. Some actions in a processing can produce more than one response type. For example, an action of the **Web service** type can produce responses of the **Successfully executed** type or the **Technical error** type, depending on the result of its execution. In this case, define message statuses for both response types. For more information about action types and the types of responses that are related to them, see the [Message processing action types](#action-types) section later in this article. |
 | Message item status | Sometimes, the status of an electronic message must influence the status of related message items. Select a message item status in this field to associate it with the message status. |
 | Allow delete        | Select this checkbox if users should be able to delete electronic messages that have this status on the **Electronic messages** page. |
 
@@ -146,6 +135,38 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 | Company                | This field is available when the **Cross-company queries for the populate records actions** feature is turned on in the **Feature management** workspace. Use this feature to set up cross-company data sources for the populate records actions. Data can be fetched from multiple companies. |
 | User query             | <p>If you set up a query by selecting **Edit query** above the grid, and you specify the criteria that must be applied to the selected master table that data is filled in from, this checkbox is automatically selected. Otherwise, all the records are filled in from the selected master table source.</p><p>When the **Cross-company queries for the populate records actions** feature is turned on in the **Feature management** workspace, and records must be collected from several companies, add a line for each additional legal entity that must be included in reporting. For each new line, select **Edit query**, and specify a related criterion that is specific to the legal entity that is specified in the **Company** field on the line. When you've finished, the **Datasources setup** grid will contain lines for all the legal entities that must be included in reporting.</p> |
 
+## <a id="multiple-companies-populate"></a>Populate records from multiple companies
+
+If your company must report from multiple legal entities in the same Finance database, set up the [populate records actions](#populate) for all the legal entities from which data must be included in reporting.
+
+To enable this capability in your Finance environment, follow these steps. 
+
+1. Go to **Workspaces** \> **Feature management**.
+2. Find and select the **Cross-company queries for the populate records actions** feature in the list.
+3. Select **Enable now**. 
+
+To set up the [populate records actions](#populate) for multiple companies from which data must be included in reporting, follow these steps.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
+
+    When the **Cross-company queries for the populate records actions** feature is enabled, the **Datasources setup** grid on the **Populate records action** page includes a **Company** field. For existing records that were created during the general setup of the [populate records actions](#populate), this field shows the identifier of the current legal entity.
+
+2. In the **Datasources setup** grid, add a line for each subsidiary legal entity that must be included in reporting, and set the following fields.
+
+    | Field name             | Value |
+    |------------------------|-------|
+    | Name                   | Enter a text value that will help you understand where this record comes from. For example, enter **Data source name - Subsidiary 1**. |
+    | Message item type      | Select the message item type that is required for your EM processing. |
+    | Account type           | Specify the account type that is required for your EM processing. If your EM processing has no specific account types, select **All**. |
+    | Master table name      | Specify the name of the master table that is required for your EM processing. |
+    | Document number field  | Specify the field that contains the document number in records of your EM processing. |
+    | Document date field    | Specify the field that contains the document date in records of your EM processing. |
+    | Document account field | Specify the field that contains the document account in records of your EM processing. |
+    | Company                | Select the ID of the subsidiary legal entity. |
+    | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**. |
+
+3. For each new line, select **Edit query**, and specify related criteria for the legal entity that is specified in the **Company** field on the line.
+
 ## <a id="applications"></a>Web applications
 
 Use web application settings to set up a web application so that it supports Open Authorization (OAuth) 2.0. OAuth is the open standard that lets users grant "secure delegated access" to the application on their behalf, without sharing their access credentials. You can also go through the authorization process by getting an authorization code and access token. You can set up web application settings by going to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
@@ -192,7 +213,7 @@ The following table describes the fields on the **Web service settings** page.
 |--------------------------------|-------------|
 | Web service                    | Enter a name for the web service. |
 | Description                    | Enter a description of the web service. |
-| Internet address               | <p>Enter the internet address of the web service. If a web application is specified for the web service, and if the internet address of the web service should be the same as the internet address that is defined for that web application, select **Copy base URL**. The base URL of the web application is then copied to this field.</p><p>**Warning:** Third-party services or other services that you configure here don't require certification and might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about the level of compliance that its service provides. You're responsible for ensuring that these services meet your security, privacy, and legal standards. You bear the risk of using the services. Microsoft gives no express warranties, guarantees or conditions. We strongly recommend that you use only services that provide secure and authorized connections, such as HTTPS.</p> |
+| Internet address               | <p>Enter the internet address of the web service. If a web application is specified for the web service, and if the internet address of the web service should be the same as the internet address that is defined for that web application, select **Copy base URL**. The base URL of the web application is then copied to this field.</p><p>**Warning:** Third-party services or other services that you configure here don't require certification and might not meet Microsoft privacy standards. You should review each service's privacy documentation and work with each service provider to learn more about the level of compliance that its service provides. You're responsible for ensuring that these services meet your security, privacy, and legal standards. You bear the risk of using the services. Microsoft gives no express warranties, guarantees, or conditions. We strongly recommend that you use only services that provide secure and authorized connections, such as HTTPS.</p> |
 | Certificate                    | Select an Azure Key Vault certificate that has previously been set up. |
 | Web application                | Select a web application that has previously been set up. |
 | The response type – XML        | Set this option to **Yes** if the response type is XML. |
@@ -214,13 +235,14 @@ The following tables describe the fields on the **Message processing actions** p
 
 | Field                                     | Description |
 |-------------------------------------------|-------------|
-| Action type                               | Select the type of action. For information about the available options, see the [Message processing action types](#action-types) section later in this topic. |
+| Action type                               | Select the type of action. For information about the available options, see the [Message processing action types](#action-types) section later in this article. |
 | Format mapping                            | Select the ER format that should be called for the action. This field is available only for actions of the **Electronic reporting export**, **Electronic reporting import**, and **Electronic reporting export message** types. |
 | Format mapping for URL path               | Select the ER format that should be called for the action. This format is used to compose the path of the URL address that will be added to the base internet address that is specified for the selected web server. This field is available only for actions of the **Web service** type. |
 | Message item type                         | Select the type of records that the action should be evaluated for. This field is available for actions of the **Message item execution level**, **Electronic reporting export**, **Electronic reporting import**, and **Web service** types, and other types. If you leave this field blank, all the message item types that are defined for the message processing are evaluated. |
 | Executable class                          | Select an existing executable class setting. This field is available only for actions of the **Message item execution level** and **Message item execution level** types. |
 | Populate records action                   | Select an existing populate records action. This field is available only for actions of the **Populate records** type. |
 | Web service                               | Select an existing web service. This field is available only for actions of the **Web service** type. |
+| File name to send                         | Enter the name of the attachment to an electronic message that must be sent by this action. If multiple attachments have the same original file name, the newest one will be sent. If no attachment is found that has the specified original file name, the request will be sent without content. This field is available only for actions of the **Web service** type. |
 | File name                                 | Specify the name of the file that will be the result of the action. This file can be the response from the web server or the report that is generated. This field is available only for actions of the **Web service** and **Electronic reporting export message** types. |
 | Attach files to source documents          | Select this checkbox to attach generated files to records in a referenced master table for EM items. This field is available only for actions of the **Electronic reporting export** and **Web service** types. |
 | Attach files from output archive to items | Select this checkbox to extract separate XML files from the output archive file and attach them to the corresponding electronic message items. This field is available only for actions of the **Electronic reporting export** type. |

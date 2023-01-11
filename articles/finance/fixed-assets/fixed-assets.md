@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets home page
-description: This topic provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
+description: This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. 
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -15,7 +15,7 @@ ms.search.form: AssetWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["21481", "intro-internal"]
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
+This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
 
 You can set up and enter acquisition information for fixed assets, and then manage the assets by depreciating them and setting a 
 capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. 
@@ -52,7 +52,7 @@ Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to
 
 #### Blogs
 
-You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 finance and operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.
 
@@ -72,3 +72,4 @@ Check out the how-to videos that are now available on the
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

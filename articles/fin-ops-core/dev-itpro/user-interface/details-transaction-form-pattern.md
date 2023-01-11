@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Details Transaction form pattern
-description: This topic provides information about the Details Transaction form pattern. Using this pattern, users can switch between a Header view and a Line view.
+description: This article provides information about the Details Transaction form pattern. Using this pattern, users can switch between a Header view and a Line view.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 16281
-ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16281
+ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
 ---
 
 # Details Transaction form pattern
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between - a Header view and a Line view.
+This article provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between - a Header view and a Line view.
 
 ## Usage
 
@@ -192,7 +181,7 @@ This section will have answers to frequently asked questions that are related to
     - The Header/Lines buttons in the header portion of the page were radio buttons restyled to mimic tabs. For improved accessibility on these pages, the **Removal of header/lines proxy buttons** feature removes these radio buttons and instead surfaces the native tab controls that are under the record title to allow you to switch between header lines. Before enabling this feature, you should evaluate the impact of this feature on test assets and task recordings.
 
         > [!NOTE]
-        > This feature is included in the platform updates for version 10.0.23 of Finance and Operations apps.
+        > This feature is included in the platform updates for version 10.0.23 of finance and operations apps.
 
 ### Open issues
 
@@ -224,3 +213,4 @@ None currently.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

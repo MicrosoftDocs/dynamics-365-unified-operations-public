@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Workforce metrics Power BI content
-description: This topic describes the Workforce metrics Power BI content.
-author: jcart1106 
+description: This article describes the Workforce metrics Power BI content.
+author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmWorkforceWorkspace
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264084
-ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264084
+ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
+ms.search.form: HcmWorkforceWorkspace
 ---
 
 # Workforce metrics Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Workforce metrics** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This article describes the **Workforce metrics** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
@@ -63,7 +53,7 @@ You can filter the charts and tiles on these reports, and pin the charts and til
 Be sure to download the **Workforce metrics** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
 
 > [!NOTE]
-> The .pbix files available in Lifecycle Services apply to Finance and Operations apps only.
+> The .pbix files available in Lifecycle Services apply to finance and operations apps only.
 
 ## Understanding the data model and entities
 The following table shows the entities that the content was based on.

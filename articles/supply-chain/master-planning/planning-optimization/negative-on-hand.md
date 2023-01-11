@@ -2,8 +2,8 @@
 # required metadata
 
 title: Planning with negative on-hand quantities
-description: This topic explains how negative on-hand is handled when you use planning optimization. 
-author: ChristianRytt
+description: This article explains how negative on-hand is handled. 
+author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 (zero) to help avoid over-supply. Here is how this functionality works:
 
-1. The planning optimization feature aggregates on-hand quantities at the lowest level of coverage dimensions. (For example, if *location* isn't a coverage dimension, planning optimization aggregates on-hand quantities at the *warehouse* level.)
+1. Master planning aggregates on-hand quantities at the lowest level of coverage dimensions. (For example, if *location* isn't a coverage dimension, master planning aggregates on-hand quantities at the *warehouse* level.)
 1. If the aggregate on-hand quantity at the lowest level of coverage dimensions is negative, the system assumes that the on-hand quantity is really 0 (zero).
 
 > [!IMPORTANT]
@@ -78,7 +78,7 @@ The result is a planned order of 25 pcs. (= 25 pcs. &minus; 0 pcs.) to refill wa
 
 ## Planning when there is a reservation against negative on-hand inventory
 
-If you adjust inventory while physical reservations exist, you can cause a situation where an order is physically reserved against negative inventory. In this case, because a physical reservation exists, Planning Optimization assumes that it's supported by on-hand inventory, even if the receipt of on-hand inventory isn't yet registered in the system. Therefore, it assumes that replenishment isn't required and doesn't create a planned order to replenish the order's quantity.
+If you adjust inventory while physical reservations exist, you can cause a situation where an order is physically reserved against negative inventory. In this case, because a physical reservation exists, you need to have supply to cover the reserved quantity. Therefore, replenishment is required, so the system will either create a planned order to replenish the quantity that couldn't be covered by the existing on-hand inventory, or cover it with an existing order for the item.
 
 The following example illustrates this scenario.
 
@@ -91,14 +91,6 @@ The system is configured in the following way:
 - A sales order exists for a quantity of *10* pcs. of product *FG*.
 - The sales order quantity is physically reserved against existing on-hand inventory.
 
-You then adjust the quantity of product *FG* so that the on-hand inventory becomes 0 (zero). Because the on-hand product inventory is zero, the sales order quantity is now reserved against negative inventory. However, if you run master planning now, no planned order will be created to supply the sales order, because Planning Optimization will assume that the required on-hand inventory exists to supply the physical reservation.
-
-## Related resources
-
-- [Planning Optimization overview](planning-optimization-overview.md)
-- [Get started with Planning Optimization](get-started.md)
-- [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-- [View plan history and planning logs](plan-history-logs.md)
-- [Cancel a planning job](cancel-planning-job.md)
+You then adjust the quantity of product *FG* so that the on-hand inventory becomes 5. Because the on-hand product inventory is 5, the sales order quantity is now reserved against quantity that is not available on-hand (it would be similar if on-hand were 0, in which case the sales order would be reserved against negative inventory). If you run master planning now, a planned order of quantity 5 for *FG* will be created to supply the sales order, because master planning will always use existing supply or create a new planned order to supply the physical reservation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

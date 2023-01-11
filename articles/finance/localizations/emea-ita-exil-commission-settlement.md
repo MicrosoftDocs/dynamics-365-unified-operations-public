@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Commission settlement on payments
-description: This topic provides information about commission settlement on payments.
-author: ilkond
+description: This article provides information about commission settlement on payments.
+author: mrolecki
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.10
-
+ms.search.form: 
 ---
 
 # Commission settlement on payments

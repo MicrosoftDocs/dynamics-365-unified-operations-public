@@ -3,7 +3,7 @@
 
 title: Responding to vendor questions on Request for quotations
 description: Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
 
@@ -34,7 +34,7 @@ Users can publish answers to vendor questions more than once. Vendors can't no l
 
 ## Turn on the feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
 
 - **Module:** *Procurement and sourcing*
 - **Feature name:** *RFQ questions and answers*
@@ -44,7 +44,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. Open the **Request for quotation** tab.
 1. Set the following options as needed:
-    - **Allow vendor questions**: Enables or disables vendor questions for RFQ cases. You must set this to *Yes* to use the features described in this topic.
+    - **Allow vendor questions**: Enables or disables vendor questions for RFQ cases. You must set this to *Yes* to use the features described in this article.
     - **Default direct response**: When you reply to a question, you can choose to reply to all vendors who received the RFQ or to reply only to the specific vendor who submitted the question. You can make choose this option each time you reply, but this setting controls the default. If you usually reply to all vendors, set this to *No*. If you usually reply to individual vendors, set this to *Yes*.
 
 ## Setting up for vendor questions

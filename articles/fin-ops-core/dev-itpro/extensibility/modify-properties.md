@@ -1,11 +1,11 @@
 ---
 title: Modify table properties through extension
-description: This topic describes how to modify properties on a table by using an extension.
+description: This article describes how to modify properties on a table by using an extension.
 author: ivanv-microsoft
 ms.date: 08/20/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01

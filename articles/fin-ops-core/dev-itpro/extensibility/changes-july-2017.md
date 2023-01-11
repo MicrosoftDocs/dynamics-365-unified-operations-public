@@ -1,6 +1,4 @@
 ---
-
-# required metadata
 title: Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
@@ -8,22 +6,14 @@ ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 268724
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-
+ms.custom: 268724
+ms.assetid: 
 ---
 
 # Extensibility changes in Finance and Operations, Enterprise edition (July 2017)

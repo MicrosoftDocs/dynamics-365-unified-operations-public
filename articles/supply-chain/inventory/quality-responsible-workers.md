@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workers responsible for approving nonconformances
-description: This topic describes how to configure workers that are responsible for approving nonconformances.
+description: This article describes how to configure workers that are responsible for approving nonconformances.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure workers that are responsible for approving nonconformances.
+This article describes how to configure workers that are responsible for approving nonconformances.
 
 Nonconformances must be approved before users can start to enter details such as corrections or operations. Before users can approve or reject nonconformances, their user ID (user record) must be linked to a worker record. You can optionally configure workers that are responsible for quality and then allow one worker to approve work on behalf of another worker.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost control workspace
-description: This topic provides information about the Cost control workspace. This workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions can access reports. 
+description: This article provides information about the Cost control workspace. This workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions can access reports. 
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, C
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -57,8 +57,8 @@ On the **Data filtering** FastTab, you define the data foundation for the report
 |-------------------------------------------------------------------|-------------|
 | Cost accounting ledger                                            | The **Cost accounting ledger** that the report is based on. The value is derived from the **Cost control unit** field. |
 | Cost control unit                                                 | The value that you select determines the cost accounting ledger and cost objects that this report will be based on. |
-| Statistical dimension hierarchy, Cost element dimension hierarchy | A **Cost control** workspace configuration record can report either non-monetary or monetary values, but not in the same layout. Select a value in the **Cost element dimension hierarchy** field to report monetary values. Select a value in the **Statistical dimension hierarchy** field to report non-monetary values. The dimension hierarchy record that you select determines the structure of the reporting and aggregation levels.<blockquote>[!NOTE]<br>To view non-monetary and monetary values side by side, you can export data to Microsoft Excel for the Microsoft Power BI content pack.</blockquote> |
-| Cost object dimension hierarchy                                   | Select the dimension hierarchy of the cost object dimension that suits the purpose of the reporting that you're defining. |
+| Statistical dimension hierarchy, Cost element dimension hierarchy | A **Cost control** workspace configuration record can report either non-monetary or monetary values, but not in the same layout. Select a value in the **Cost element dimension hierarchy** field to report monetary values. Select a value in the **Statistical dimension hierarchy** field to report non-monetary values. The dimension hierarchy record that you select determines the structure of the reporting and aggregation levels.<blockquote>**NOTE:**<br>To view non-monetary and monetary values side by side, you can export data to Microsoft Excel for the Microsoft Power BI content pack.</blockquote> |
+| Cost object dimension hierarchy      | Select the dimension hierarchy of the cost object dimension that suits the purpose of the reporting that you're defining. |
 | Budget original version                                           | Select the budget version ID that acts as the original budget in the context of this report. |
 | Budget revised version                                            | Select the budget version ID that acts as the revised budget in the context of this report. |
 
@@ -68,7 +68,7 @@ The overhead calculation performs several calculation steps on the source data, 
 
 | Field                  | Description |
 |------------------------|-------------|
-| Fiscal calendar period | Select the fiscal calendar period to assign an overhead calculation ID to.<blockquote>[!NOTE]<br>The fiscal periods that are listed in the field come from the fiscal calendar that is associated with the cost accounting ledger.</blockquote> |
+| Fiscal calendar period | Select the fiscal calendar period to assign an overhead calculation ID to.<blockquote>**NOTE:**<br>The fiscal periods that are listed in the field come from the fiscal calendar that is associated with the cost accounting ledger.</blockquote> |
 | Actual version         | Select the appropriate overhead calculation ID. |
 | Budget version         | Select the appropriate overhead calculation ID. |
 | Revised budget version | Select the appropriate overhead calculation ID. |
@@ -81,10 +81,10 @@ The values in the selected columns will be multiplied by the selected values on 
 
 | Field                | Description |
 |----------------------|-------------|
-| Current period       | The balance of the current fiscal period is shown.<blockquote>[!NOTE]<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period.</blockquote> |
-| Previous period      | The balance of the previous fiscal period is shown. The following formula is used:<br>Current fiscal period – 1<blockquote>[!NOTE]<br>By default, the previous period is derived from the session date. In the **Cost control** workspace, a specific fiscal period can be selected as the current period. **Previous period** will then be recalculated accordingly.</blockquote> |
-| Year to date         | The for the year to date is shown. The following formula is used:<br>YearToDate (Current fiscal period)<blockquote>[!NOTE]<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period, and the **Year to date** value will be updated accordingly.</blockquote> |
-| Year to date average | The average for the year to date is shown. The following formula is used:<br>(YearToDate [Current fiscal period]) ÷ (Count [Current fiscal period])<p><strong>Example</strong></p><ul><li>**Statistical dimension member:** Full time employees</li><li>**Current date:** 3-21-2017</li><li>**Period:** Fiscal period 1, Fiscal period 2, Fiscal period 3</li><li>**Magnitude:** 10, 10, 12</li></ul>In this case, **Year to date average** = (10 + 10 + 12) ÷ 3 = 10.67<p>The **Year to date average** value can be calculated for cost element dimension members and statistical dimension members.</p><blockquote>[!NOTE]<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period, and the **Year to date** and **Year to date average** values will be updated accordingly.</blockquote> |
+| Current period       | The balance of the current fiscal period is shown.<blockquote>**NOTE:**<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period.</blockquote> |
+| Previous period      | The balance of the previous fiscal period is shown. The following formula is used:<br>Current fiscal period – 1<blockquote>**NOTE:**<br>By default, the previous period is derived from the session date. In the **Cost control** workspace, a specific fiscal period can be selected as the current period. **Previous period** will then be recalculated accordingly.</blockquote> |
+| Year to date         | The for the year to date is shown. The following formula is used:<br>YearToDate (Current fiscal period)<blockquote>**NOTE:**<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period, and the **Year to date** value will be updated accordingly.</blockquote> |
+| Year to date average | The average for the year to date is shown. The following formula is used:<br>(YearToDate [Current fiscal period]) ÷ (Count [Current fiscal period])<p><strong>Example</strong></p><ul><li>**Statistical dimension member:** Full time employees</li><li>**Current date:** 3-21-2017</li><li>**Period:** Fiscal period 1, Fiscal period 2, Fiscal period 3</li><li>**Magnitude:** 10, 10, 12</li></ul>In this case, **Year to date average** = (10 + 10 + 12) ÷ 3 = 10.67<p>The **Year to date average** value can be calculated for cost element dimension members and statistical dimension members.</p><blockquote>**NOTE:**<br>By default, the current period is determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value then represents the current period, and the **Year to date** and **Year to date average** values will be updated accordingly.</blockquote> |
 
 ### Columns to display for costs
 
@@ -92,11 +92,11 @@ On the **Columns to display for costs** FastTab, the cost accountant decides whi
 
 | Field                 | Description |
 |-----------------------|-------------|
-| Fixed cost            | This column type shows the fixed cost, based on the selected overhead calculation ID.<blockquote>[!NOTE]<br>This column type will show a balance only when an overhead calculation ID is selected for the fiscal period.</blockquote> |
-| Variable cost         | This column type shows the variable cost, based on the selected overhead calculation ID.<blockquote>[!NOTE]<br>This column type will show a balance only when an overhead calculation ID is selected for the fiscal period.</blockquote> |
-| Fixed + variable cost | This column type shows the fixed cost and variable cost, based on the selected overhead calculation ID.<blockquote>[!NOTE]<br>This column type will show a balance only when an overhead calculation ID is selected for the fiscal period.</blockquote> |
-| Total cost            | This column type shows the total cost (unclassified cost, fixed cost, and variable cost).<blockquote>[!NOTE]<br>The column type will show the balance at all times.</blockquote> |
-| Unclassified cost     | This column type shows the unclassified cost.<blockquote>[!NOTE]<br>This column can be used to validate whether all costs have been correctly classified by the overhead calculation, or whether the cost behavior rules must be adjusted.</blockquote> |
+| Fixed cost            | This column type shows the fixed cost, based on the selected overhead calculation ID.<blockquote>**NOTE:**<br>This column type will show a balance only when an overhead calculation ID is selected for the fiscal period.</blockquote> |
+| Variable cost         | This column type shows the variable cost, based on the selected overhead calculation ID.<blockquote>**NOTE:**<br>This column type will show a balance only when an overhead calculation ID is selected for the fiscal period.</blockquote> |
+| Fixed + variable cost | This column type shows the fixed cost and variable cost, based on the selected overhead calculation ID.<blockquote>**NOTE:**<br>This column type will show a balance only when an overhead calculation ID is selected for the fiscal period.</blockquote> |
+| Total cost            | This column type shows the total cost (unclassified cost, fixed cost, and variable cost).<blockquote>**NOTE:**<br>The column type will show the balance at all times.</blockquote> |
+| Unclassified cost     | This column type shows the unclassified cost.<blockquote>**NOTE:**<br>This column can be used to validate whether all costs have been correctly classified by the overhead calculation, or whether the cost behavior rules must be adjusted.</blockquote> |
 
 ### Columns to display for budgeted costs
 
@@ -107,12 +107,12 @@ On the **Columns to display for budgeted costs** FastTab, the cost accountant de
 
 | Field                     | Description |
 |---------------------------|-------------|
-| Budget                    | Budget balances will be shown per the selected columns.<blockquote>[!NOTE]<br>The balances will be based on the budget versions that are selected on the **Data filtering** FastTab.</blockquote> |
+| Budget                    | Budget balances will be shown per the selected columns.<blockquote>**NOTE:**<br>The balances will be based on the budget versions that are selected on the **Data filtering** FastTab.</blockquote> |
 | Budget variance           | Calculate and show the difference between budget and actual. The following formula is used:<br>Budget balance – Actual balance |
 | Budget variance in %      | Calculate and show the difference in percentage between budget and actual. The following formula is used:<br>(Budget balance – Actual balance) ÷ Budget balance |
-| Variance period threshold | Set a threshold for the variance in monetary amount for the current period. If the threshold is exceeded, the line will be highlighted in red in the **Cost control** workspace.<blockquote>[!NOTE]<br>This field applies only to the cost elements that represent expenditures.</blockquote> |
+| Variance period threshold | Set a threshold for the variance in monetary amount for the current period. If the threshold is exceeded, the line will be highlighted in red in the **Cost control** workspace.<blockquote>**NOTE:**<br>This field applies only to the cost elements that represent expenditures.</blockquote> |
 | Variance year threshold   | Set a threshold for the variance in monetary amount for the year. If the threshold is exceeded, the line will be highlighted in red in the **Cost control** workspace. |
-| Variance threshold %      | Set a threshold for the variance in percentage. If the threshold is exceeded, the line will be highlighted in red in the **Cost control** workspace.<blockquote>[!NOTE]<br>The same percentage threshold applies to the current period and year.</blockquote> |
+| Variance threshold %      | Set a threshold for the variance in percentage. If the threshold is exceeded, the line will be highlighted in red in the **Cost control** workspace.<blockquote>**NOTE:**<br>The same percentage threshold applies to the current period and year.</blockquote> |
 
 ## Cost control workspace
 

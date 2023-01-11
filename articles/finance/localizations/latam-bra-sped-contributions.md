@@ -1,28 +1,17 @@
 ---
-# required metadata
-
-title: Set SPED EFD contributions 
-description: This topic explains how to set up parameters and generate the SPED EFD - Contributions statement for Brazil. 
-author: sndray
+title: Set SPED EFD contributions
+description: This article explains how to set up parameters and generate the SPED EFD - Contributions statement for Brazil.
+author: AdamTrukawka
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:  
+ms.technology: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Set SPED EFD contributions

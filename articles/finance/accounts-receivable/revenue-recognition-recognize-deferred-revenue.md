@@ -2,8 +2,8 @@
 # required metadata
 
 title: Recognize deferred revenue 
-description: This topic provides information about how to recognize revenue by using the Revenue recognition feature. 
-author: kweekley
+description: This article provides information about how to recognize revenue by using the Revenue recognition feature. 
+author: bking
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.0.4
 > [!NOTE]
 > The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
 
-This topic describes the process of recognizing revenue in the revenue recognition schedule. After an invoice has been posted for a sales order, a revenue recognition schedule is created for each sales order line that has a revenue schedule. The revenue schedule on a line is used to determine whether the line's revenue should be deferred.
+This article describes the process of recognizing revenue in the revenue recognition schedule. After an invoice has been posted for a sales order, a revenue recognition schedule is created for each sales order line that has a revenue schedule. The revenue schedule on a line is used to determine whether the line's revenue should be deferred.
 
 ## View revenue recognition schedule details
 

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Slider and MessageBox dialogs
-description: There are two dialogs that replace the existing dialog box, the Slider and the MessageBox from Dynamics AX 2012. 
-author: robinarh
+description: There are two dialogs that replace the existing dialog box, the Slider and the MessageBox from Dynamics AX 2012.
+author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 64253
-ms.assetid: ef0924d0-ee42-4b0d-8602-4dfe15454350
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aorth
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 64253
+ms.assetid: ef0924d0-ee42-4b0d-8602-4dfe15454350
 ---
 
 # Slider and MessageBox dialogs

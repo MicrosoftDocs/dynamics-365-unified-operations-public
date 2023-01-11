@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Packing slip date verification on invoices for Italy
-description: For Italy, the invoice date is verified on packing slips and invoice proposals. This topic provides additional information about the verification that occurs. 
-author: ShylaThompson
+description: For Italy, the invoice date is verified on packing slips and invoice proposals. This article provides additional information about the verification that occurs.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPackingSlipJournal
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 263824
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 263824
+ms.search.form: CustPackingSlipJournal
 ---
 
 # Packing slip date verification on invoices for Italy
 
 [!include [banner](../includes/banner.md)]
 
-For Italy, the invoice date is verified on packing slips and invoice proposals. This topic provides additional information about the verification that occurs. 
+For Italy, the invoice date is verified on packing slips and invoice proposals. This article provides additional information about the verification that occurs. 
 
 For legal entities with primary addresses in Italy there is a packing slip date verification step for users who generate sales invoices or project invoices.
 

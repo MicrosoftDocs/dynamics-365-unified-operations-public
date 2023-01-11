@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Drop Dialog form pattern
-description: This topic provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
+description: This article provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer.
 author: jasongre
 ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 16041
-ms.assetid: 94ffa218-de7d-4d13-9a8a-461cad0970b3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16041
+ms.assetid: 94ffa218-de7d-4d13-9a8a-461cad0970b3
 ---
 
 # Drop Dialog form pattern
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
+This article provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 
 ## Usage
 

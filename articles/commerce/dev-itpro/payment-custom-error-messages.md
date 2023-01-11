@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Create custom localized error messages for payment terminal extensions
-description: This topic explains how to create custom error messages for payment terminal extensions.
+description: This article explains how to create custom error messages for payment terminal extensions.
 author: Reza-Assadi
 ms.date: 07/20/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Create custom localized error messages for payment terminal extensions
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to create custom localized error messages for payment terminal extensions. These custom error messages are most often used so that the payment terminal can give the cashier who is using the point of sale (POS) terminal relevant information about why a specific payment was unsuccessful. For example, the external payment terminal or gateway might return unique identifiers (such as reference numbers or transaction identifiers) that are relevant for troubleshooting with the payment provider.
+This article explains how to create custom localized error messages for payment terminal extensions. These custom error messages are most often used so that the payment terminal can give the cashier who is using the point of sale (POS) terminal relevant information about why a specific payment was unsuccessful. For example, the external payment terminal or gateway might return unique identifiers (such as reference numbers or transaction identifiers) that are relevant for troubleshooting with the payment provider.
 
 ## Key terms
 
@@ -39,7 +29,7 @@ This topic explains how to create custom localized error messages for payment te
 | Payment connector | An extension library that is written to integrate the POS with a payment terminal. |
 
 ## Overview
-The remaining sections in this topic describe the following steps for creating custom localized error messages for payment terminal extensions:
+The remaining sections in this article describe the following steps for creating custom localized error messages for payment terminal extensions:
 
 - **[Create custom error messages](#create-custom-error-messages)** – This section explains how to create custom error messages in the payment connector that can be returned and shown in the POS.
 - **[Create localized error messages](#create-localized-error-messages)** – This section explains how to localize the error messages in the payment connector that are returned and shown in the POS.

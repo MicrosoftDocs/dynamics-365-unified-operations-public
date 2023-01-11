@@ -1,49 +1,65 @@
 ---
-# required metadata
-
 title: Electronic reporting (ER) overview
-description: This topic provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
-author: NickSelin
-ms.date: 09/20/2021
-ms.topic: article
+description: This article provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
+author: kfend
+ms.date: 11/02/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["58941", "intro-internal"]
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
 ---
 
 # Electronic reporting (ER) overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
+This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
-ER is a tool that you can use to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements, and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
+ER is a configurable tool that helps you create and maintain regulatory electronic reporting and payments. It's based on the following three concepts:
+
+- Configuration instead of coding:
+
+    - Configuration can be done by a business user and doesn't require a developer.
+    - The data model is defined in business terms.
+    - Visual editors are used to create all components of the ER configuration.
+    - The language that is used for data transformation resembles the language that is used in Microsoft Excel.
+
+- One configuration for multiple Dynamics 365 Finance releases:
+
+    - Manage one domain-specific data model that is defined in business terms.
+    - Isolate application release details in release-dependent data model mappings.
+    - Maintain one format configuration for multiple releases of the current version, based on the data model.
+
+- Easy or automatic upgrade:
+
+    - Versioning of ER configurations is supported.
+    - The Microsoft Dynamics Lifecycle Services (LCS) Assets library can be used as a repository for ER configurations, for version exchange.
+    - Localizations that are based on original ER configurations can be introduced as child versions.
+    - An ER configuration tree is provided as a tool that helps control dependencies for versions.
+    - Differences in localization, or the delta configuration, are recorded to enable automatic upgrade to a new version of the original ER configuration.
+    - It's easy to manually resolve conflicts that are discovered during automatic upgrade of localization versions.
+
+ER lets you define electronic format structures and then describe how the structures should be filled by using data and algorithms. You can use a formula language that resembles the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, an intermediate data model concept is introduced. This concept enables implementation details to be hidden from the format mapping and enables a single data model to be reused for multiple format mappings.
+
+You can use ER to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries and regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
 
 The ER engine is targeted at business users instead of developers. Because you configure formats instead of code, the processes for creating and adjusting formats for electronic documents are faster and easier.
 
-ER currently supports the TEXT, XML, Microsoft Word document, and OPENXML worksheet formats. However, an extension interface provides support for additional formats.
+ER currently supports the TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel, and OPENXML worksheet formats.
 
 ## Capabilities
 
 The ER engine has the following capabilities:
 
-- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Finance and Operations.
+- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for finance and operations.
 - It makes a report's format insulated from the current implementation. In other words, the format is applicable for different versions.
 - It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
@@ -51,7 +67,11 @@ The ER engine has the following capabilities:
 
 ## Key concepts
 
-### Components
+### Main data flow
+
+[![ER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
+### Component
 
 ER supports the following types of components:
 
@@ -62,100 +82,7 @@ ER supports the following types of components:
 
 For more information, see [Electronic reporting components](er-overview-components.md).
 
-#### Data model and model mapping components
-
-A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
-
-- <a name="DataModelComponent"></a>A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- <a name="ModelMappingComponent"></a>A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
-
-A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
-
-A single data model component can contain several hierarchies of domain-specific business entities. It can also contain model mappings that support a report-specific data flow at run time. The hierarchies are differentiated by a single record that has been selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
-
-- Company \> Vendor \> Payment transactions of the AP domain
-- Customer \> Company \> Payment transactions of the AR domain
-
-Note that business entities such as company and payment transactions are designed one time. Different mappings then reuse them.
-
-A model mapping that supports outgoing electronic documents has the following capabilities:
-
-- It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
-- It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
-
-A model mapping that supports incoming electronic documents has the following capabilities:
-
-- It can use different updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using the data from incoming electronic documents. Multiple targets can be used in a single model mapping.
-- It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-
-A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
-
-#### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
-
-A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
-
-- A format that defines the structure and content of the outgoing electronic document that is generated at run time.
-- Data sources, as a set of user input parameters and a domain-specific data model that uses a selected model mapping.
-- A format mapping, as a set of bindings of format data sources that have individual elements of a format that specify, at run time, the data flow and rules for format output generation.
-- A format validation, as a set of configurable rules that control report generation at run time, depending on the running context. For example, there might be a rule that stops output generation of a vendor's payments and throws an exception when specific attributes of the selected vendor are missing, such as the bank account number.
-
-A format component supports the following functions:
-
-- Creation of reporting output as individual files in various formats, such as text, XML, Microsoft Word document, or worksheet.
-- Creation of multiple files separately and encapsulation of those files into zip files.
-
-A format component lets you attach specific files that can be used in the reporting output:
-
-- Excel workbooks that contain a worksheet that can be used as a template for output in the OPENXML worksheet format
-- Word files that contain a document that can be used as a template for output in the Microsoft Word document format
-- Other files that can be incorporated into the format's output as predefined files
-
-The following illustration shows how the data flows for these formats.
-
-[![Data flow for outgoing format components.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
-
-#### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
-
-A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
-
-- A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
-- A format mapping that binds individual format elements to elements of a domain-specific data model. At run time, the elements in the data model specify the data flow and the rules for importing data from an incoming document, and then store the data in a data model.
-- A format validation, as a set of configurable rules that control data import at run time, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor's payments and throws an exception when a specific vendor's attributes are missing, such as the vendor identification code.
-
-The following illustration shows how the data flows for these formats.
-
-[![Data flow for incoming format components.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-To run a single ER format configuration to import data from an incoming electronic document, you must identify the desired mapping of a format configuration, and also the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different type of incoming documents.
-
-#### Component versioning
-
-Versioning is supported for ER components. The following workflow is provided to manage changes in ER components:
-
-1. The version that is originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
-2. The **Draft** version can be converted to a **Completed** version. This version can be used in local reporting processes.
-3. The **Completed** version can be converted to a **Shared** version. This version is published on LCS and can be used in global reporting processes.
-4. The **Shared** version can be converted to a **Discontinued** version. This version can then be deleted.
-
-Versions that have either **Completed** or **Shared** status are available for other data interchange. The following actions can be performed on a component that has these statuses:
-
-- The component can be serialized in XML format and exported as a file in XML format.
-- The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
-
-#### Component date effectivity
-
-ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
-
-#### Component access
-
-Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at run time. When this setting contains ISO country/region codes, a format component is available only from companies that have a primary address that is defined for one of a format component's ISO country/region codes.
-
-Different versions of a data format component can have different settings for ISO country/region codes.
-
-#### <a name="Configuration"></a>Configuration
+### <a name="Configuration"></a>Configuration
 
 An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
@@ -165,13 +92,13 @@ The format configuration that is created contains a format component. The data m
 
 An ER configuration is shared for application companies.
 
-#### <a name="Provider"></a>Provider
+### <a name="Provider"></a>Provider
 
-The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
+The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the finance and operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-#### <a name="Repository"></a>Repository
+### <a name="Repository"></a>Repository
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
@@ -184,9 +111,9 @@ An ER repository stores ER configurations. The following types of ER repositorie
 
 An **LCS shared library** repository provides access to the list of configurations within the Shared asset library in Lifecycle Services (LCS). This type of ER repository can only be registered for the Microsoft provider. From the LCS Shared asset library you can import the latest versions of ER configurations into the current instance.
 
-An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your Finance and Operations apps.
+An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your finance and operations apps.
 
-A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
+A **File system** repository provides access to the list of configurations that are located as XML files in the specific folder of the local file system of the machine where the AOS service is hosted. The required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
 
 Note that this repository type is accessible in the following environments:
 
@@ -203,7 +130,7 @@ A **Global repository** repository provides access to the list of configurations
 
 For more information, see [Import Electronic reporting (ER) configurations from Global repository of Configuration service](./er-download-configurations-global-repo.md).
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using corresponding the ER repository.
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using the corresponding ER repository.
 
 Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
@@ -306,8 +233,10 @@ The list of ER configurations for Finance is constantly updated. Open the [Globa
 
 ## Additional resources
 
+- [Electronic reporting components](er-overview-components.md)
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 - [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

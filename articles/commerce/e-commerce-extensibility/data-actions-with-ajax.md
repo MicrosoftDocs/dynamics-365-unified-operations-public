@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Call server-side data actions with AJAX
-description: This topic describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
+description: This article describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Call server-side data actions with AJAX
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
+This article describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce online software development kit (SDK) supports using AJAX to invoke server-side data actions from the client browser. This feature can be used in scenarios where data actions contain sensitive information, such as an API key or secret that is required to call a third-party service. In these scenarios, for security reasons, you don't want the sensitive information to be revealed through a client-side data action call.
 

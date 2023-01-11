@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Contextual data entry for lookups
-description: This topic explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
+description: This article explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 03/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 13631
-ms.assetid: 5c41c565-5f83-47f9-a75e-ca5bb4b062e7
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 13631
+ms.assetid: 5c41c565-5f83-47f9-a75e-ca5bb4b062e7
 ---
 
 # Contextual data entry for lookups
@@ -95,7 +84,7 @@ Custom lookup implementations can provide advanced or non-typical behaviors, suc
 ```xpp
 public str resolveAmbiguousReference()
 {
-    FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
+    return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
 }
 ```
 

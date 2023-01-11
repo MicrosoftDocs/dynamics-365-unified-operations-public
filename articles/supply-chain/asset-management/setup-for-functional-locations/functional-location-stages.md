@@ -2,7 +2,7 @@
 # required metadata
 
 title: Functional location lifecycle states
-description: This topic describes how to set up functional location states and lifecycle models in Asset Management.
+description: This article describes how to set up functional location states and lifecycle models in Asset Management.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
+ms.search.form: EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic describes how to set up functional location lifecycle states and lifecycle models in Asset Management. Functional location lifecycle states define the states that a functional location can go through, for example, created, active, and ended. You are able to view all functional locations, regardless of their lifecycle state, in the **All functional locations** list page. You can change the state of a functional location by selecting it in the **All functional locations** list page and selecting **Update functional location state**.
+This article describes how to set up functional location lifecycle states and lifecycle models in Asset Management. Functional location lifecycle states define the states that a functional location can go through, for example, created, active, and ended. You are able to view all functional locations, regardless of their lifecycle state, in the **All functional locations** list page. You can change the state of a functional location by selecting it in the **All functional locations** list page and selecting **Update functional location state**.
 
 ## Set up functional location lifecycle states
 
@@ -44,6 +44,7 @@ This topic describes how to set up functional location lifecycle states and life
 5. Select "Yes" on the **Create assets** toggle button if it should be possible to automatically create an asset with the same name as the functional location and install it on the functional location at this state.  
 >[!NOTE]
 >This toggle button relates to the **Asset type** field on the **General** FastTab in the **Functional location types** form (**Asset management** > **Setup** > **Functional locations** > **Functional location types**).
+
 6. Select "Yes" on the **Rename location** toggle button if it should be possible to change the name of the functional location at this state.
 7. Select "Yes" on the **New sub locations** toggle button if it should be possible to add new sub locations to the functional location at this state.
 8. Select "Yes" on the **Install assets** toggle button if it should be possible to install assets on the functional location at this state.

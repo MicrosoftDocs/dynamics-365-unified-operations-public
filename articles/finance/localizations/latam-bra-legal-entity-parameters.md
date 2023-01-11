@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Parameters for legal entities in Brazil
-description: To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
-author: sndray
+description: To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This article explains how to set the parameters to specify this information.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalAddress_BR, BrazilParameters, FiscalEstablishment_BR, FiscalEstablishmentGroup_BR
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 269404
-ms.assetid: af0951b7-078d-49ea-9655-1037dbd0bfe1
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 269404
+ms.assetid: af0951b7-078d-49ea-9655-1037dbd0bfe1
+ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalAddress_BR, BrazilParameters, FiscalEstablishment_BR, FiscalEstablishmentGroup_BR
 ---
 
 # Parameters for legal entities in Brazil
 
 [!include [banner](../includes/banner.md)]
 
-To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
+To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This article explains how to set the parameters to specify this information.
 
 ## Brazilian legal entity overview
 

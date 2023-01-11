@@ -1,35 +1,28 @@
 ---
-# required metadata
-
 title: Automated Entity store refresh
-description: This topic describes how to enable automated Entity store refresh.
+description: This article describes how to enable automated Entity store refresh.
 author: MilindaV2
 ms.date: 01/24/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AutomatedEntityStoreRefresh
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27661
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: AutomatedEntityStoreRefresh
 ---
 
 # Automated Entity store refresh
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## Overview
 

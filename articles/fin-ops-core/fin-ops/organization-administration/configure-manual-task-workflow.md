@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure manual tasks in a workflow
-description: This topic explains how to configure the properties for a manual task.
+description: This article explains how to configure the properties for a manual task.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure the properties for a manual task.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article explains how to configure the properties for a manual task.
 
 To configure a manual task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties for the manual task.
 

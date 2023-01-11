@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Create and confirm a vendor consolidated invoice
-description: This topic explains how to consolidate vendor invoices each month to calculate the due amount. 
-author: ShylaThompson
+description: This article explains how to consolidate vendor invoices each month to calculate the due amount.
+author: kfend
 ms.date: 10/04/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendConsInvoice_JP   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Japan
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: VendConsInvoice_JP
 ---
 # Create and confirm a vendor consolidated invoice
 

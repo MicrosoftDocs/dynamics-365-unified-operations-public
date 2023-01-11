@@ -1,12 +1,12 @@
 ---
 title: X++ inheritance
-description: This topic describes inheritance in X++.
-author: robinarh
+description: This article describes inheritance in X++.
+author: josaw1
 ms.date: 06/18/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes inheritance in X++, including how to create a subclass and override a method.
+This article describes inheritance in X++, including how to create a subclass and override a method.
 
 ## Creating a subclass
 *Subclasses* are classes that extend or inherit from other classes. A class can extend only one other class. Multiple inheritance isn't supported. If you extend a class, the subclass inherits all the methods and variables in the parent class (the *superclass*). Subclasses let you reuse existing code for a more specific purpose. Therefore, they help save you time during design, development, and testing. To customize the behavior of a superclass, override the methods in a subclass. A superclass is often known as a *base class*, and a subclass is often known as a *derived class*.
@@ -66,7 +66,7 @@ public final class Attribute
 ```
 
 ## Overriding a method
-The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method. In the following example, **ColorAttribute** is a subclass of **Attribute** and therefore inherits the **methodAttr** method. However, because **ColorAttribute** defines a method that has the same name and the same number of arguments, the method in the superclass is overridden.
+The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method. 
 
 When you instantiate the subclass, you can assign the reference to either a variable of the superclass type or the subclass type. Regardless of the type of the variable, the overridden method is called. 
 

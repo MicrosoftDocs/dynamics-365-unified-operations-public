@@ -1,11 +1,11 @@
 ---
 title: Pause dual-write for maintenance
-description: This topic explains how to pause a table map.
+description: This article explains how to pause a table map.
 author: nhelgren
-ms.date: 10/13/2021
+ms.date: 06/24/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,14 +16,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 You can pause table maps, either manually or automatically via rules. By pausing table maps, you help ensure business continuity, especially during planned or unplanned maintenance. While the app is being maintained, users can continue to do their work and create records.
 
 When you pause a table map that is in the **Running** state, all records that have been created or updated are queued until you resume the table map. The queued records are stored in secure Microsoft Azure storage. They are then played back when you resume the table map and put it back into the **Running** state.
 
 > [!NOTE]
-> While a table map is in the **Paused** state, there are limits on the number of records that you can queue and the amount of time that you can queue them for. Whichever limit occurs first will apply. The process starts with soft limits and eventually enforces harder limits to help protect you from exceeding the storage limits.
+> While a table map is in the **Paused** state, the following limits apply: 
+> - A pause can be active for a maximum of only one day.
+> - There is a maximum size of 1 GB worth of records that can be queued. 
+>
+> Paused maps must be reactivated in less than one day from the pause start date, or else pending changes can be lost impacting data consistency. 
+> Reaching either one of these limits will result in a block on all additional records until the sync is resumed and the queued records are caught up. Users will have to manually resume the job in order for the catch up to be completed.
+
 
 Records that have been created or updated for a table map that is in the **Paused** state can be viewed on the **Queued records** tab for each table map.
 

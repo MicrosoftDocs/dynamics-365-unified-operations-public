@@ -2,10 +2,10 @@
 # required metadata
 
 title: Financial consolidations and currency translation overview
-description: This topic describes financial consolidations and currency translation in General ledger.
-author: jiwo
+description: This article describes financial consolidations and currency translation in General ledger.
+author: jinniew
 ms.date: 10/07/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -14,13 +14,13 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
+This article takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
-This topic was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
+This article was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
 
 > [!NOTE]
-> The term *legal entity* is used in Finance, and the term *company* is used in Financial reporting. Both these terms are used in this topic. However, for the purposes of this topic, their meanings are the same.
+> The term *legal entity* is used in Finance, and the term *company* is used in Financial reporting. Both these terms are used in this article. However, for the purposes of this article, their meanings are the same.
 
 ## Audience
-This topic is intended for finance and accounting users and application consultants who want to use Finance and Reporting and Financial reporting to consolidate multi-company and multi-currency data.
+This article is intended for finance and accounting users and application consultants who want to use Finance and Reporting and Financial reporting to consolidate multi-company and multi-currency data.
 
 ## Approach
 Finance uses a separate legal entity to process a consolidation. It enables single-instance consolidation but provides an option to bring in data from other sources. The consolidation process must be run every time that changes are made in the source legal entities.
@@ -70,7 +70,7 @@ Here are some of the consolidation scenarios that Consolidate online supports:
 - Consolidations that involve multiple reporting currencies
 
 ## Legal entity setup
-Before you process a consolidation, you must set up the legal entity. You can run consolidation as many times as you require, and all data will be translated from the source company's accounting currency to the currency that is defined for the consolidation company. Therefore, for the following organizational structure, if you must translate all North American companies first to US dollars (USD) and then to euros (EUR), the currency of the parent company, you must have at least two consolidation companies.
+Before you process a consolidation, you must set up the legal entity. You can run consolidation as many times as you require, and all data will be translated from the source company's accounting currency or reporting currency to the currency that is defined for the consolidation company. Therefore, for the following organizational structure, if you must translate all North American companies first to US dollars (USD) and then to euros (EUR), the currency of the parent company, you must have at least two consolidation companies.
 
 ![Organizational structure.](./media/organizational-structure.png "Organizational structure")
 

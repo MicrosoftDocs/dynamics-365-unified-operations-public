@@ -2,10 +2,10 @@
 # required metadata
 
 title: Service endpoints overview
-description: This topic describes the service endpoints that are available.
+description: This article describes the service endpoints that are available.
 author: peakerbl
 ms.date: 06/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
+This article describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
 
 ## List of services
 The following table lists all the service endpoints, and compares the endpoints available for the application, and AX 2012.
 
-| Service endpoint            | AX 2012 | Finance and Operations         |
+| Service endpoint            | AX 2012 | Finance and operations         |
 |-----------------------------|---------|--------------------------------|
 | Document services (AXDs)    | Yes     | No – Replaced by data entities |
 | SOAP-based metadata service | Yes     | No – Replaced by REST metadata |
@@ -46,7 +46,7 @@ The following table lists all the service endpoints, and compares the endpoints 
 | OData Service               | No      | Yes                            |
 | REST Metadata Service       | No      | Yes                            |
 
-This topic describes authentication for services, and the REST Metadata service. The following links provide detailed documentation for:
+This article describes authentication for services, and the REST Metadata service. The following links provide detailed documentation for:
 
 - [Custom service development](custom-services.md)
 - [Open Data Protocol (OData)](odata.md)
@@ -95,7 +95,7 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
 
 ### Register your external application 
 
-1. In Finance and Operations apps, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
+1. In finance and operations apps, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 
@@ -147,3 +147,4 @@ Currently, this endpoint provides metadata for the following elements:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

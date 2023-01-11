@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Upload custom business processes to Business process modeler (BPM)
 description: In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder.
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 18991
-ms.assetid: 74808085-e971-4e7b-8547-d3549273d14a
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 18991
+ms.assetid: 74808085-e971-4e7b-8547-d3549273d14a
 ---
 
 # Upload custom business processes to Business process modeler (BPM)
@@ -33,7 +22,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder. You can then upload the files that you record to Business process modeler.
 
-This topic explains where to find the updated version of Task recorder and how to upload the custom business process files that you record. The updated version of Task recorder is available as a hotfix. You can download the hotfix from the following sites:
+This article explains where to find the updated version of Task recorder and how to upload the custom business process files that you record. The updated version of Task recorder is available as a hotfix. You can download the hotfix from the following sites:
 
 -   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 Feature Pack – Knowledgebase article [2863182](https://go.microsoft.com/fwlink/?LinkId=309910)
 -   Microsoft Dynamics AX 2012 R2 – Knowledgebase article [2863182](https://go.microsoft.com/fwlink/?LinkId=309911)
@@ -51,7 +40,7 @@ You can upload business process artifacts (\*.axbpm files) to the business proce
 
 ## Additional resources
 
-[Business process modeler (BPM) in Lifecycle Services (LCS)](./ax-2012/business-process-modeler-lcs.md)
+[Business process modeler (BPM) in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs)
 
 [Business process libraries in Business process modeler (BPM)](business-process-libraries-business-process-modeler.md)
 

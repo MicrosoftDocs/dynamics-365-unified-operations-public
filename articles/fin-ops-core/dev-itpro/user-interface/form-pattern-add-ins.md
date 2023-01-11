@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Visual Studio add-ins that support form patterns
-description: The tools for Visual Studio include a number of add-ins that support pattern usage. 
+description: The tools for Visual Studio include a number of add-ins that support pattern usage.
 author: jasongre
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28891
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28891
 ---
 
 # Visual Studio add-ins that support form patterns

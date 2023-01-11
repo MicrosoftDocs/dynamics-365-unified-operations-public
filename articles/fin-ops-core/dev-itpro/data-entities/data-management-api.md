@@ -2,9 +2,9 @@
 # required metadata
 
 title: Data management package REST API
-description: This topic describes the Data management framework's package REST API.
+description: This article describes the Data management framework's package REST API.
 author: peakerbl
-ms.date: 08/16/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
+This article describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
 
 Although on-premises support has been added, API names haven't been changed. Therefore, Microsoft can keep a single API set for both cloud deployments and on-premises deployments.
 
@@ -39,13 +39,13 @@ Two APIs support file-based integration scenarios: the Data management framework
 
 | Decision point      | Recurring integrations API | Data management framework's package API |
 |---------------------|--------------------------------------|-----------------------------|
-| Scheduling          | Scheduling in Finance and Operations apps | Scheduling outside Finance and Operations apps |
+| Scheduling          | Scheduling in finance and operations apps | Scheduling outside finance and operations apps |
 | Format              | Files and data packages | Only data packages |
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
 
-If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the Data management framework's package API.
+If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this article discusses the Data management framework's package API.
 
 ## Authorization
 
@@ -243,6 +243,8 @@ HTTP/1.1 200 OK
 
 The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Blob storage that is associated with your implementation. For on-premises deployments, the import will be initiated from the local storage that the file was uploaded previously to.
 
+There is an async version of this API **ImportFromPackageAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.   
+
 > [!NOTE]
 > The **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
 
@@ -273,7 +275,7 @@ HTTP/1.1 200 OK
 
 | Parameter                | Description |
 |--------------------------|-------------|
-| string packageUrl        | The URL of the data package in the Blob storage that is associated with a Finance and Operations app. |
+| string packageUrl        | The URL of the data package in the Blob storage that is associated with a finance and operations app. |
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
@@ -293,9 +295,63 @@ HTTP/1.1 200 OK
 
 The following APIs are used to export files (data packages).
 
+### ExportToPackagePreview 
+
+The **ExportToPackagePreview** API is used to preview an export of a data package with a large number of records. This API is applicable to both cloud deployments and on-premises deployments.
+
+There is an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
+
+- The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
+- If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
+- The number of records returned can limited using the **count** parameter.
+
+```csharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackagePreview
+BODY
+{
+    "definitionGroupId":"<Data project name>",
+    "packageName":"<Name to use for downloaded file.>",
+    "executionId":"<Execution Id if it is a rerun>",
+    "reExecute":<bool>,
+    "legalEntityId":"<Legal entity Id>",
+    "count":"<Legal entity Id>"
+}
+```
+
+Here is an example of a successful response.
+
+```json
+HTTP/1.1 200 OK
+{
+    "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+    "value":{
+        "value":"<executionId>"
+    }
+}
+```
+
+**Input parameters**
+
+| Parameter                | Description |
+|--------------------------|-------------|
+| string definitionGroupId | The name of the data project for export. |
+| string packageName       | The name of the exported data package. |
+| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
+| bool reExecute           | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
+| string legalEntityId     | The legal entity for the data import. |
+| count                    | The number of records to return. No top count condition will be applied if set to zero. |
+	
+**Output parameters**
+
+| Parameter          | Description |
+|--------------------|-------------|
+| string executionId | The execution ID of the data export. This is called as Job ID in the UI. |
+
 ### ExportToPackage
 
 The **ExportToPackage** API is used to initiate an export of a data package. This API is applicable to both cloud deployments and on-premises deployments.
+
+There is an async version of this API **ExportToPackageAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed. 
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
@@ -339,6 +395,7 @@ HTTP/1.1 200 OK
 | Parameter          | Description |
 |--------------------|-------------|
 | string executionId | The execution ID of the data export. This is called as Job ID in the UI. |
+
 
 ### GetExportedPackageUrl
 
@@ -460,3 +517,4 @@ A sample console application that showcases the data import and data export meth
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,24 +1,14 @@
 ---
-# required metadata
-
 title: Update the Document Routing Agent
-description: This topic explains how to update the Document Routing Agent.
+description: This article explains how to update the Document Routing Agent.
 author: RichdiMSFT
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -28,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The solution for managing the print job queue is designed to allow customers to properly scale Dynamics 365 Finance and Operations apps to satisfy high-volume printing requirements. Although public service endpoints used to manage print jobs are backward-compatible, we strongly recommend that customers update **all** existing Document Routing Agent (DRA) clients.
+The solution for managing the print job queue is designed to allow customers to properly scale Dynamics 365 finance and operations apps to satisfy high-volume printing requirements. Although public service endpoints used to manage print jobs are backward-compatible, we strongly recommend that customers update **all** existing Document Routing Agent (DRA) clients.
 
 If you don't update existing installations of the DRA the most current version, you might experience issues such as:
 
@@ -47,7 +37,7 @@ To continue to run the DRA as a Microsoft Windows service, you must have both th
 ![Services snap-in.](media/Services_dialog.png)
 
 ## Uninstall an existing Document Routing Agent
-Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 for Finance and Operations: Document Routing**.
+Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 Finance: Document Routing**.
 
 ![Uninstall or change a program window.](media/Programs_and_Features_dialog.png)
 
@@ -61,5 +51,12 @@ For information about how to install the latest DRA that is available with your 
 > [!NOTE]
 > Be sure to open the DRA client after upgrading to refresh network user credentials.
 
+## Best practices
+When creating a support ticket specific to the Document Routing Agent, consider exporting event logs containing events at the time that the issue occured from the Document Rountin Agent machine. 
+
+The default event log size is only 1 MB, so if the issue is intermittent, such as a performance issue, consider increasing the event log size. Then wait for some time before exporting the event logs.
+
+- \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Operational
+- \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Admin
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Removed or deprecated features in Dynamics 365 Supply Chain Management
-description: This topic describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
+description: This article describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-This topic will be updated as new removed or deprecated features are documented for Dynamics 365 Supply Chain Management.
+This article will be updated as new removed or deprecated features are documented for Dynamics 365 Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -37,8 +37,19 @@ This topic will be updated as new removed or deprecated features are documented 
 This list is intended to help you consider these removals and deprecations for your own planning.
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.29 release
+
+### Stock transfer orders that have tax on the transfer price
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) functionality is being replaced by the [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md) functionality. |
+| **Replaced by another feature?**   | Yes, the [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) functionality is being replaced by the [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md) functionality. |
+| **Product areas affected** | Supply Chain Management - inventory |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Being deprecated. The *Stock transfer orders that have tax on the transfer price* functionality won't receive support with bug fixes and security fixes.</p><p>After April 2023, customers will be asked to use the improved functionality, *Stock transfer orders for India*, by default. After October 2023, the *Stock transfer orders that have tax on the transfer price* functionality will be no longer be available, and customers will be asked to move to the improved *Stock transfer orders for India* functionality.</p><p>For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.19 release
 
@@ -54,11 +65,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
-### Dynamics 365 for Finance and Operations - Warehousing (the warehouse app)
+### <a name="wma"></a>Supply Chain Management- Warehousing (the warehouse app)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective April 2021, *Dynamics  365 for Finance and Operations - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It is now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy. If needed, the two apps can be used side-by-side to help users gradually adjust as they learn to use the new app.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
+| **Reason for deprecation/removal** | Effective April 2021, *Supply Chain Management - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It is now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy. If needed, the two apps can be used side-by-side to help users gradually adjust as they learn to use the new app.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
 | **Replaced by another feature?**   | Yes, replaced by the new Warehouse Management mobile app. |
 | **Product areas affected**         | Supply Chain Management - warehouse app |
 | **Deployment option**              | Cloud and on-premises |
@@ -84,7 +95,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management - Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization is not supported with on-premises deployments. |
-| **Status**                         | Deprecated. By April 1, 2022, manufacturing scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For manufacturing scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Planning Optimization documentation](../master-planning/planning-optimization/planning-optimization-overview.md). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for manufacturing scenarios after April 2022. However, no more feature enhancements will be provided. |
+| **Status**                         | Deprecated. By April 1, 2022, manufacturing scenarios will no longer be supported for the built-in Supply Chain Management master planning engine. As of that date, Microsoft will stop all active development on manufacturing scenarios for the built-in planning engine, will not release any new features, and will only release critical bug fixes. After that date, all companies that require support for manufacturing scenarios must use Planning Optimization for their master planning calculations. Planning Optimization is expected to fully support manufacturing scenarios by October 2022. For more information, see [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Companies with on-premises deployments of Supply Chain Management may continue to use the built-in master planning engine for manufacturing scenarios after April 2022. However, no more feature enhancements will be provided. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.11 release
 
@@ -96,7 +107,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management - Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization is not supported with on-premises deployments. |
-| **Status**                         | Deprecated. By April 1, 2021, distribution scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For distribution scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Planning Optimization documentation](../master-planning/planning-optimization/planning-optimization-overview.md). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for distribution scenarios after April 2021. However, no more feature enhancements will be provided. |
+| **Status**                         | Deprecated. By April 1, 2021, distribution scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For distribution scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for distribution scenarios after April 2021. However, no more feature enhancements will be provided. |
 
 ## Previous announcements about removed or deprecated features
 
@@ -104,3 +115,4 @@ To learn more about features that have been removed or deprecated in previous re
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

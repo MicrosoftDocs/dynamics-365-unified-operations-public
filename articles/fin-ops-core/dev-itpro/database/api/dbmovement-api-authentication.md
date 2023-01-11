@@ -2,9 +2,9 @@
 # required metadata
 
 title: Database movement API - Authentication
-description: This topic provides overview information about how to authenticate with the Database Movement application programming interface (API).
+description: This article provides overview information about how to authenticate with the Database Movement application programming interface (API).
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,60 +29,62 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides overview information about how to authenticate with the Database Movement application programming interface (API).
+This article provides an overview of the Azure Active Directory (Azure AD) setup for calling Lifecycle Services APIs including Database Movement API.  To access resources available via API, you must get a bearer token from Azure AD and send it as a header along with each request.  The steps to obtain this token are below.
 
-## Fundamentals
+The following steps are required to obtain a bearer token with the correct permissions:
 
-To call the Database Movement API, your application must acquire an access token from the Microsoft identity platform. The access token contains information about your application and the permission that it has to call resources in Microsoft Dynamics Lifecycle Services (LCS).
+1. Create an application registration in your Azure AD tenant
+2. Configure API permissions
+3. Configure public client 
+4. Request an access token
 
-### Access token
+## Step 1. Create an application registration
+Navigate to the [Azure AD app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
 
-Access tokens that are issued by the Microsoft identity platform are base64–encoded JavaScript Object Notation (JSON) Web Tokens (JWTs). They contain information (claims) that the Database Movement API and other web APIs that are secured by the Microsoft identity platform use to validate the caller and make sure that the caller has the correct permissions to perform the operation that they are requesting. During calls, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as Transport Layer Security (TLS) and Hypertext Transfer Protocol Secure (HTTPS).
+## Step 2. Configure API permissions
+Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**.  You might see several entries with a name similar to this, so be sure you use the one with the GUID, **913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0**.  
 
-Here is an example of an access token that is issued by the Microsoft identity platform.
+> [!NOTE]
+> These APIs make use of delegated permissions only at this time.  For applications that run with a user context, you request delegated permissions using the **scope** parameter of **user_impersonation**.  These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling the API endpoints.
+>
+> Service Principal authentication, where the application calls the API using its own identity or a managed identity, is not supported.  
 
-```jwt
-EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/oeJX6U8nnL9nJ5pHLVuPWD0aNnTPTJD8Y4oQTp5zLhDIIfaJCaGcQperULVF7K6yX8MhHxIBwek418rKIp11om0SWBXOYSGOM0rNNN59qNiKwLNK+MPUf7ObcRBN5I5vg8jB7IMoz66jrNmT2uiWCyI8MmYDZgAACPoaZ9REyqke+AE1/x1ZX0w7OamUexKF8YGZiw+cDpT/BP1GsONnwI4a8M7HsBtDgZPRd6/Hfqlq3HE2xLuhYX8bAc1MUr0gP9KuH6HDQNlIV4KaRZWxyRo1wmKHOF5G5wTHrtxg8tnXylMc1PKOtaXIU4JJZ1l4x/7FwhPmg9M86PBPWr5zwUj2CVXC7wWlL/6M89Mlh8yXESMO3AIuAmEMKjqauPrgi9hAdI2oqnLZWCRL9gcHBida1y0DTXQhcwMv1ORrk65VFHtVgYAegrxu3NDoJiDyVaPZxDwTYRGjPII3va8GALAMVy5xou2ikzRvJjW7Gm3XoaqJCTCExN4m5i/Dqc81Gr4uT7OaeypYTUjnwCh7aMhsOTDJehefzjXhlkn//2eik+NivKx/BTJBEdT6MR97Wh/ns/VcK7QTmbjwbU2cwLngT7Ylq+uzhx54R9JMaSLhnw+/nIrcVkG77Hi3neShKeZmnl5DC9PuwIbtNvVge3Q+V0ws2zsL3z7ndz4tTMYFdvR/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
+After the required permissions are added to the application, select **Grant admin consent** to complete the setup.  This is necessary when you want to allow users to access your app right away, instead of requiring an interactive consent experience. If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-To call the Database Movement API, you attach the access token as a bearer token to the authorization header in your HTTP request. Here is an example.
+## Step 3. Configure public client
+To begin reading and writing resources on behalf of a user, you will need to enable the **Public Client** setting.  This is the only way that Azure AD will accept username and password properties in the body of your token request.  Note that if you plan to use this feature, it will not work for accounts that have multi-factor authentication enabled.  
+
+To enable, visit the **Manage - Authentication** tab.  Under the **Advanced Settings** section, set the **Public Client** switch to **Yes**. 
+
+## Step 4. Request an access token
+To request a bearer token for username and password, follow these instructions.  
+
+### Username and password flow
+Be sure to read the [public client](dbmovement-api-authentication.md#step-3-configure-public-client) section above.  Then, send a POST request via HTTP to Azure AD with a username and password payload.
 
 ```HTTP
-HTTP/1.1
-Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-Host: lcsapi.lcs.dynamics.com
-GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
+Content-Type: application/x-www-form-urlencoded
+Host: login.microsoftonline.com
+Accept: application/json
+POST https://login.microsoftonline.com/YOUR_TENANT.COM/oauth2/v2.0/token
+BODY:
+client_id={CLIENT_ID_FROM_AZURE_CLIENT_APP}&scope=https://lcsapi.lcs.dynamics.com//.default&username={USER_EMAIL_ADDRESS}&password={PASSWORD}&grant_type=password
+```
+The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
+
+```JSON
+{
+  "token_type": "Bearer",
+  "scope": "https://lcsapi.lcs.dynamics.com//user_impersonation https://lcsapi.lcs.dynamics.com//.default",
+  "expires_in": 4228,
+  "ext_expires_in": 4228,
+  "access_token": "eyJ0eXAiOiJKV1Qi..."
+}
 ```
 
-## Register a new application by using the Azure portal
+Use the **access_token** value in subsequent calls to the Lifecycle Services API or Database Movement API with the **Authorization** HTTP header.
 
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com) by using a work or school account, or a personal Microsoft account.
-2. If your account gives you access to more than one tenant, select your account in the upper-right corner, and set your portal session to the Azure Active Directory (Azure AD) tenant that you want.
-3. In the left pane, select the **Azure Active Directory** service, and then select **App registrations \> New registration**.
-4. When the **Register an application** page appears, enter your application's registration information:
-
-    - **Name** – Enter a meaningful application name that will be shown to users of the app.
-    - **Supported account types** – Select the types of accounts that your app should support.
-
-        | Supported account types | Description |
-        |-------------------------|-------------|
-        | Accounts in this organizational directory only | Select this option if you're building a line-of-business app. This option isn't available unless you're registering the app in a directory.<p>This option is mapped to **Azure AD only single-tenant**.</p><p>This option is the default option unless you're registering the app outside a directory. In that case, the default option is **Azure AD multi-tenant and personal Microsoft accounts**.</p> |
-        | Accounts in any organizational directory | Select this option to target all business and educational customers.<p>This option is mapped to **Azure AD only multi-tenant**.</p><p>If you registered the app as **Azure AD only single-tenant**, you can use the **Authentication** blade to update it to **Azure AD only multi-tenant** and then back to **Azure AD only single-tenant**.</p> |
-        | Accounts in any organizational directory and personal Microsoft accounts | Select this option to target the widest set of customers.<p>This option is mapped to **Azure AD multi-tenant and personal Microsoft accounts**.</p><p>If you registered the app as **Azure AD multi-tenant and personal Microsoft accounts**, you can't change this setting in the user interface (UI). Instead, you must use the application manifest editor to change the supported account types.</p> |
-
-    - **Redirect URI (optional)** – Select the type of app that you're building: **Web** or **Public client (mobile & desktop)**. Then enter the redirect URI (or reply URL) for the app.
-
-        - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that runs on your local machine. Users then use this URL to sign in to a web client app.
-        - For public client apps, provide the URI that Azure AD uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
-
-        To see specific examples for web apps or native apps, see the [quick start guides from Azure AD](/azure/active-directory/develop/#quickstarts).
-
-5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics Lifecycle services**, and add the **user\_impersonation** permission to your app.
-6. Select **Register**.
-
-[![Registering a new app in the Azure portal.](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
-
-Azure AD assigns a unique application ID (client ID) to your app, and you're taken to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding, and for certificates and secrets.
-
+> [!NOTE]
+> The scope parameter might require a different URL format if you are in a local instance of Lifecycle Services or a sovereign cloud.  For example, if you are accessing the EU instance of LCS, you can use `https://lcsapi.eu.lcs.dynamics.com//.default` as your scope parameter.  This would also apply for subsequent calls to the API for the hostname.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

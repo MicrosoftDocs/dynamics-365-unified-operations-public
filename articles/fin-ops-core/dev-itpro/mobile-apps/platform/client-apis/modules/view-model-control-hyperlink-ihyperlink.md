@@ -1,17 +1,18 @@
 ---
 title: Hyperlink module
 description: Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
-author: robinarh
-ms.date: 08/01/2017
+author: jasongre
+ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ---
 
 # Hyperlink module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 

@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
@@ -98,11 +98,11 @@ After an FMLA case is approved, you can change and track the number of hours tha
 3. Click **Add line**, and enter the earning date, the number of hours that have been taken, and any applicable notes.
 
 > [!NOTE]
-> The **Source** column is always set to **Manual**. If you're using Finance and Operations and Payroll, the **Source** column can be updated automatically, based on the earning code that is used on the employee's pay statement. To allow automatic updates from Payroll, you must set the option **To manually enter and maintain the hours worked, uncheck this box** to **No**. The default is to not allow automatic updates from Payroll.
+> The **Source** column is always set to **Manual**. If you're using finance and operations and Payroll, the **Source** column can be updated automatically, based on the earning code that is used on the employee's pay statement. To allow automatic updates from Payroll, you must set the option **To manually enter and maintain the hours worked, uncheck this box** to **No**. The default is to not allow automatic updates from Payroll.
 
 ## Set up Payroll for integration with FMLA (if required)
 
-If you use Finance and Operations and Payroll, you can use earning codes to automatically track the hours that have been worked that count toward FMLA. When earning lines that contain these codes are released during the approved leave period for a worker, the time counts toward FMLA and is added to the **FMLA hours** page for the FMLA case.
+If you use finance and operations and Payroll, you can use earning codes to automatically track the hours that have been worked that count toward FMLA. When earning lines that contain these codes are released during the approved leave period for a worker, the time counts toward FMLA and is added to the **FMLA hours** page for the FMLA case.
 
 > [!TIP]
 > If you use this method to track FMLA hours, you can still change the hours manually after they are created.
@@ -117,7 +117,7 @@ To integrate Payroll with FMLA, follow these steps.
 
 ## Optional: Generate the FMLA hours taken report
 
-You can create a report of all workers who have FMLA cases and the hours that have been applied toward each case. This report is available only in Finance and Operations. To generate the **FMLA leave taken** report, follow these steps.
+You can create a report of all workers who have FMLA cases and the hours that have been applied toward each case. This report is available only in finance and operations. To generate the **FMLA leave taken** report, follow these steps.
 
 1. On the **FMLA leave taken** page, enter the first and last day of the leave period to view.
 2. Click **OK**.

@@ -1,35 +1,28 @@
 ---
-# required metadata
-
-title: Help system
-description: This topic provides an overview of the Help system for Finance and Operations apps.
+title: Help system (contains video)
+description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
-ms.date: 07/20/2021
-ms.topic: article
+ms.date: 08/16/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["16381", "intro-internal"]
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.reviewer: edupont
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16381,  ""intro-internal
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.search.form: SystemParameters
 ---
 
 # Help system
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
@@ -42,23 +35,23 @@ In all these apps, you can access product-specific Help from the **Help** pane.
 
 ![Help pane.](./media/help-pane-ops-help.png)
 
-## Help on docs.microsoft.com
+## Help on Microsoft Learn
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365](/dynamics365/)) is the default source for product documentation for the previously listed apps. This site offers the following features:
+The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn is the default source for product documentation for the previously listed apps. This site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives Microsoft a faster and more flexible way to create, deliver, and update product documentation. Therefore, you have easy access to the latest technical information.
 - **Content that is written by experts** – Content on the site is open to contributions by community members both inside and outside Microsoft.
 
-You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as **site:docs.microsoft.com dynamics 365 "search term"**.
+You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
 ## Get notified about changes through an RSS feed
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
+To subscribe to an RSS feed of all updates made to the content on Microsoft technical documentation across the finance and operations apps, use the following link:
 
 [RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+> The RSS feed returns a list of the 100 topics most recently updated. The list is sorted by date, but it can take up to a week before the most recently updated articles make it to the list.  
 
 Alternatively, you can subscribe to an RSS feed by app:
 
@@ -70,7 +63,7 @@ Alternatively, you can subscribe to an RSS feed by app:
 
 ### Leave us feedback
 
-If you have feedback or questions about a topic, leave us a comment at the bottom of the page.
+If you have feedback or questions about a article, leave us a comment at the bottom of the page.
 
 1. Select **Feedback** to get to the comments at the bottom of the page. Then, select either **Product feedback** or **Sign in to give documentation feedback**.
 
@@ -83,13 +76,13 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a topic. The following video shows how you can contribute to our documentation.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a article. The following video shows how you can contribute to our documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, see the [Docs contributor guide](/contribute), which is published by the team that built the docs.microsoft.com site.
+For more information, see the [Microsoft Docs contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -98,7 +91,7 @@ For more information, see the [Docs contributor guide](/contribute), which is pu
 
 A task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a task guide from the **Help** pane. When you first select a task guide, the **Help** pane will show the step-by-step instructions for the task. Localized task guides are available.
 
-Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 for Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this topic explains how to find the correct task guides for your product.
+Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this article explains how to find the correct task guides for your product.
 
 ![Task guide reading view.](./media/task-guide-ops.png)
 
@@ -121,7 +114,7 @@ To access Help content, select the **Help** button (**?**), and then select **He
 
 ### Accessing Help topics from the Help pane
 
-From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a topic in the **Help** pane, it's opened on a new tab in your browser.
+From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a article in the **Help** pane, it's opened on a new tab in your browser.
 
 > [!IMPORTANT]
 > This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to task guides for the product. Also, you cannot create custom task guides for Human Resources.
@@ -170,15 +163,12 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 
 | Site | Description |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | This site hosts or links to all product documentation for Dynamics 365. |
-| [Microsoft Learn](/learn/) | This site is the free Microsoft eLearning site. |
+| [Microsoft Dynamics 365 documentation](/dynamics365/) | This site hosts or links to all product documentation for Dynamics 365. |
+| [Microsoft Learn training](/training/) | This site is the free Microsoft eLearning site. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | This site provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. It's useful in all phases of an implementation. |
 | [Support blog](https://aka.ms/AXSupportBlog) | This site provides tips and tricks that are posted by the Support team. |
-| [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
+| [Previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

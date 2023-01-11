@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wave allocation
-description: This topic describes how to set up the wave allocation step, including how to enable parallel processing for it.
+description: This article describes how to set up the wave allocation step, including how to enable parallel processing for it.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -11,13 +11,13 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 Wave processing can be time consuming, and most of the processing time is spent in the allocation step and in the work creation step.
 
-It is now possible to run each of these steps in parallel, which can improve the performance of the wave processing, and allow for a larger throughput of waves in the same warehouse. This topic explains how to set up the wave allocation method to run in parallel. For more information about how to set up work creation to run in parallel, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
+It is now possible to run each of these steps in parallel, which can improve the performance of the wave processing, and allow for a larger throughput of waves in the same warehouse. This article explains how to set up the wave allocation method to run in parallel. For more information about how to set up work creation to run in parallel, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
 
 Previously it was only possible to allocate one wave at a warehouse at a time. This constraint has been removed and replaced by a new constraint that only locks the item and dimensions that are above location in the reservation hierarchy. Dimensions above the location always include product dimensions. For example, if an item is configured using *Color*, then variants for *Red*, *Blue*, and *Yellow* could each be processed in parallel.
 
@@ -72,7 +72,7 @@ To set up parallel processing:
 
 ## Enable or disable parallelization across all legal entities
 
-We recommend that you set the `allocateWave` method to run in parallel across all legal entities because this helps to improve the performance of the wave processing. Starting in Supply Chain Management version 10.0.17, the *Wave parallelization for Allocate Wave method* feature is enabled by default for all new and updated installations, and can't be turned off again. After enabling this feature, the following occurs:
+We recommend that you set the `allocateWave` method to run in parallel across all legal entities because this helps to improve the performance of the wave processing. Starting in Supply Chain Management version 10.0.17, the *Wave parallelization for Allocate Wave method* feature is turned on by default for all new and updated installations, and can't be turned off again. After enabling this feature, the following occurs:
 
 - The `allocateWave` method is updated to include a task configuration setting that lets you use the **Wave process methods** page to define the number of tasks that will run simultaneously, equivalent to the number of parallel processes. As a result, the time used on the allocate-wave step (which is typically 30% to 60% of the total processing time) is reduced by a factor roughly equivalent to the number of tasks. It's also possible to select which batch will be assigned to process these tasks. It's important to note that all of your legal entities will be configured to process waves in batch. For the warehouses that are already configured to process waves in batch, and for the warehouses that are already configured to use the `allocateWave` method in parallel, the existing configuration will be kept.
 - By default, all the new legal entities are configured to process waves in batch. All new warehouses with the **Warehouse management processes** option enabled will have the `allocateWave` method configured to run in parallel by default.
@@ -82,7 +82,7 @@ Parallel allocation processing requires wave processing to run in batch. Therefo
 
 If necessary, you can undo each of the settings made by default when the *Wave parallelization for Allocate Wave method* feature is automatically enabled for your instance. To do this:
 
-- Go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
+- Go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
 - Go to **Warehouse management \> Setup \> Waves \> Wave process methods**. Select the `allocateWave` method. On the Action Pane, select **Task configuration** to open a page that lists each warehouse where the method is set to run in parallel. Modify or delete the number of batch tasks and the assigned wave group for each listed warehouse as needed.
 
 ## Troubleshooting

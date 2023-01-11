@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Inventory profile overview
-description: This topic provides information about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
-author: v-nadyuz
+description: This article provides information about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
+author: AdamTrukawka
 ms.date: 05/11/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Inventory profile overview
@@ -152,7 +142,7 @@ For more information, see the [Set up a default inventory profile for BOMs](rus-
 
 When you generate a cash flow forecast for purchase orders or sales orders, the inventory profiles that is specified on the order lines are considered when the posting accounts of inventory movements and customer and vendor transactions are determined. Ledger accounts for customer and vendor transactions are defined from the posting profiles that correspond to the inventory profiles that are specified on the order lines. For order lines where an inventory profile isn't specified, the **Basic** kind of activity and the posting profile that is specified in the order header are used.
 
-For more information, see the [Cash flow forecasts on purchase and sales orders](rus-use-inventory-profile-documents-queries.md#cash-flow-forecasts-on-purchase-and-sales-orders) section later in this topic.
+For more information, see the [Cash flow forecasts on purchase and sales orders](rus-use-inventory-profile-documents-queries.md#cash-flow-forecasts-on-purchase-and-sales-orders) section later in this article.
 
 ## Cash flow forecasts based on planned purchases and sales
 

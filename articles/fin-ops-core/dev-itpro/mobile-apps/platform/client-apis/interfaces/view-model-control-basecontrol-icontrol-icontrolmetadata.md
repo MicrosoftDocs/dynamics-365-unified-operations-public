@@ -1,17 +1,18 @@
 ---
 title: ControlMetadata type
 description: Interface for the metadata of a control. Overriding control metadata can modify a controls&#x27; look and behavior.
-author: robinarh
-ms.date: 08/01/2017
+author: jasongre
+ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ---
 
 # ControlMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Interface for the metadata of a control. Overriding control metadata can modify a controls' look and behavior.
 Properties that can be modified vary by control but every control will have the base properties listed here.

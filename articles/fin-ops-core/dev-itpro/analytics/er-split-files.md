@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Split generated XML files based on file size and content quantity
-description: This topic provides information about how to split generated files based on the file size and content item quantity.
-author: NickSelin
+description: This article provides information about how to split generated files based on the file size and content item quantity.
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: EROperationDesigner, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 
 # Split generated XML files based on file size and content quantity

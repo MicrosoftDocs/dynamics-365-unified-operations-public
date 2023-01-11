@@ -2,10 +2,10 @@
 # required metadata
 
 title: Settlement overview for centralized payments
-description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
-author: abruer
-ms.date: 08/02/2018
-ms.topic: article
+description: This article describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
+author: angelad116
+ms.date: 11/22/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -14,13 +14,13 @@ ms.technology:
 ms.search.form: CustOpenTrans 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["222414", "intro-internal"]
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -86,11 +86,11 @@ Cash discounts that are generated during the cross-company settlement process ar
 
 Overpayment, underpayment, and penny difference tolerances are determined based on the legal entity of the payment for overpayments, and on the legal entity of the invoice for underpayments. The posting account that is used is determined by the setting in the **Cash discount administration** field on the **Accounts receivable parameters** page for customers, and the **Cash discount administration** field on the **Accounts payable parameters** page for vendors.
 
--   If the cash discount administration setting is Specific, or if the setting is Unspecific and the applicable cash discount is posted in a different legal entity from the overpayment, the automatic account for Customer cash discount, Vendor cash discount, or Penny difference in accounting currency is used. You can specify these accounts on the **Accounts for automatic transactions** page.
--   If the cash discount administration setting is Unspecific and the cash discount is posted in the same legal entity as the overpayment (the legal entity of the payment and the legal entity of the invoice are the same), the cash discount account is adjusted. For example, if an invoice for 100.00 with an available cash discount of 3.00 is settled with a payment for 98.00, the cash discount account is adjusted for 1.00. The net discount amount is 2.00.
--   If the cash discount administration setting is Unspecific, the cash discount is posted in the same legal entity as the overpayment, and the overpayment or underpayment is settled with multiple invoices with cash discounts, the cash discount account for the last invoice is adjusted.
+-   If the cash discount administration setting is **Specific**, or if the setting is **Unspecific** and the applicable cash discount is posted in a different legal entity from the overpayment, the automatic account for Customer cash discount, Vendor cash discount, or Penny difference in accounting currency is used. You can specify these accounts on the **Accounts for automatic transactions** page.
+-   If the cash discount administration setting is **Unspecific** and the cash discount is posted in the same legal entity as the overpayment (the legal entity of the payment and the legal entity of the invoice are the same), the cash discount account is adjusted. For example, if an invoice for 100.00 with an available cash discount of 3.00 is settled with a payment for 98.00, the cash discount account is adjusted for 1.00. The net discount amount is 2.00.
+-   If the cash discount administration setting is **Unspecific**, the cash discount is posted in the same legal entity as the overpayment, and the overpayment or underpayment is settled with multiple invoices with cash discounts, the cash discount account for the last invoice is adjusted.
 
-If the cash discount administration selection is Unspecific, unspecific payment settlement rules apply only in the following situations:
+If the cash discount administration selection is **Unspecific**, unspecific payment settlement rules apply only in the following situations:
 -   There is an overpayment.
 -   The overpayment is settled with one or more invoices that has a cash discount.
 -   The cash discount is posted in the same legal entity as the overpayment.

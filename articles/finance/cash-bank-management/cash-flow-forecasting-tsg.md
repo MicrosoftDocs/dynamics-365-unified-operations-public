@@ -2,8 +2,8 @@
 # required metadata
 
 title: Troubleshoot cash flow forecasting setup
-description: This topic provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions (FAQ) about the setup for cash flow, updates to cash flow, and cash flow Power BI.
-author: panolte
+description: This article provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions (FAQ) about the setup for cash flow, updates to cash flow, and cash flow Power BI.
+author: angelad116
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: LedgerCovParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte 
+ms.author: angelading 
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions (FAQ) about the setup for cash flow, updates to cash flow, and cash flow Power BI.
+This article provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions (FAQ) about the setup for cash flow, updates to cash flow, and cash flow Power BI.
 
 ## Why is cash flow shown for only one legal entity?
 

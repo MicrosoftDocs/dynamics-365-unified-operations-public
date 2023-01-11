@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Mobile app home page
-description: This topic describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
-author: ChrisGarty
-ms.date: 01/22/2020
+description: This article describes the finance and operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
+author: sericks007
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2017-02-28
+ms.dyn365.ops.version: Platform update 4
 ms.custom: "intro-internal"
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: cgarty
-ms.dyn365.ops.version: Platform update 4
-ms.search.validFrom: 2017-02-28
-
 ---
 
 # Mobile app home page
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
+This article describes the **Finance and operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
 ## Overview
 
@@ -82,7 +72,7 @@ The following table includes links to resources that can help you implement both
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement the Finance and Operations app in your organization.</td>
+<td>Implement the finance and operations app in your organization.</td>
 <td><ul><li>If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -137,8 +127,8 @@ The following table includes links to resources that can help you implement both
 <td>User</td>
 <td>Download and install the mobile app.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations app for Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations app for iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and operations app for Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and operations app for iOS</a><BR/>
 (Windows Phone unsupported)
 </td>
 </tr>
@@ -157,3 +147,4 @@ The following table includes links to resources that can help you implement both
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

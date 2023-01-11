@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Channels overview
-description: This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.
+description: This article presents an overview of channels in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.assetid: 
 ---
 # Channels overview
 
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of channels in Microsoft Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up each channel.
+This article presents an overview of channels in Microsoft Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up each channel.
 
 ## Types of Channels
 

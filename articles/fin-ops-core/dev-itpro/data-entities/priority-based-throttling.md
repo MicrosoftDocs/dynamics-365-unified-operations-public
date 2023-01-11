@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Priority-based throttling
-description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
-author: hasaid
-ms.date: 05/14/2021
+title: Throttling prioritization
+description: This article provides information about priority-based throttling for OData and custom service-based integrations.
+author: jaredha
+ms.date: 08/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,102 +21,56 @@ ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
 
 ---
 
-# Priority-based throttling
+# Throttling prioritization
 
 [!include [banner](../includes/banner.md)]
 
+This article provides information about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
+
+Resource-based limits for service protection application programming interfaces (APIs) work together with the user-based limits for service protection APIs as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run finance and operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
+
 > [!NOTE]
-> Priority-based throttling is enabled by default starting in Dynamics 365 Finance version 10.0.19. To learn about how you can prepare your environment prior to updating to  version 10.0.19, see [FAQ document](throttling-faq.md). To test this capability, configure the integration priorities on the **Throttling priority mapping** page.
+> Throttling priority mapping does not apply to user-based service protection API limits. The priority mapping is specific to resource-based service protection API limits. See [Service protection API limits](service-protection-api-limits.md) for more information on the API limit types.
 
+For resource-based service protection API limits, you can set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor the priorities that are set for the requests. For OData and custom service-based requests, a "Too many requests" error will be sent if system health and performance are affected.
 
-> [!IMPORTANT]
-> [KB 4615823](https://fix.lcs.dynamics.com/Issue/Details?kb=4615823&bugId=560394&dbType=3&qc=bdc60364311159f2509ed641a0d858a46b5c57effbae2ffe778cd41f2109f7e9) includes two important fixes that directly impact the priority-based throttling experience. 
-> 
-> This fix ensures that 429 HTTP messages are sent when a throttling event occurs in your environment and that the events reflect the correct threshold calculations for your environment. 
->
-> The fix is available as part of the quality update for 10.0.17. We recommend you install this version to ensure that your environment is ready for priority-based throttling.
+## Determine prioritization
 
-Priority-based throttling introduces service protection settings that prevent the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Finance and Operations apps.
+The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/training/modules/integrate-azure-finance-operations/7-connect-external). 
 
+The following are the authentication types supported in Azure Active Directory (AAD). For more information, see [Authentication](services-home-page.md).
+- **User based**: This flow uses a username and password for authentication and authorization. 
+- **AAD application based**: This flow uses an application registered in AAD and an associated secret for authentication. 
 
-You have the ability to set relative priority for the OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor these priorities set for these requests.
+When setting the priority mapping, you will select the authentication type that is used for the integration, either for a specific application (client ID) or a specific user.
+- If the priority mapping is set for an application, then the priority mapping is applied to any API request from the selected AAD application ID.
+- If the priority mapping is set for a user, then the priority mapping is applied to any API request from the selected AAD user ID.
 
-- For OData and custom service requests, an error which states "Too many requests" will be sent when system health and performance are affected. 
-- You can query throttling events on the **Lifecycle Services Monitoring** page.  
+There are three priority levels available: Low, Medium, and High. Each priority level assigns different throttling thresholds for the selected application or user.
+- **Low**: Applications or users with a Low priority mapping have a lower threshold of service resource consumption for which they will be throttled than integrations set with a Medium or High priority.
+- **Medium**: Applications or users with a Medium priority mapping have a higher throttling threshold of service resource consumption than integrations with a Low priority mapping, and lower throttling threshold of resource consumption than integrations with a High priority mapping.
+- **High**: Applications or users with a High priority mapping have a higher throttling threshold of service resource consumption than integrations with either a Low or Medium priority mapping.
 
-The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
-
-Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/learn/modules/integrate-azure-finance-operations/7-connect-external). 
-
-There are two kinds of applications are supported in Microsoft Azure Active Directory (Azure AD):
-
-- User based - This flow uses a username and password for authentication and authorization. 
-- Azure AD app based - A confidential client is an application that can keep a client password confidential. The authorization server assigned this client password to the client application. 
-
-For more information, see [Authentication](services-home-page.md).
+These priority mappings ensure that requests from high-priority applications and users not throttled due to service resource consumption by lower-priority integrations.
  
 ## Configure priorities for integrations 
 
-After you have registered your service in Azure AD and in your Finance and Operations apps, you can set up priorities for integrations.
+After you have registered your service in AAD and in your finance and operations apps, you can set up priorities for integrations.
 
 > [!NOTE]
-> You must be assigned the System administrator or Integration priority manager role to complete the set up. 
+> You must be assigned the **System administrator** or **Integration priority manager** role to complete the set up. 
 
-1. In Finance and Operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**. 
+1. In finance and operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**. 
 2. Select **New**. 
-3. In the **Authentication type** field, select **User** or **Azure AD application** based on your integration scenario.
-4. If **Azure AD application type** is selected, in the **Client ID** field select the application that you registered in the Azure Active Directory application.
-5. If **User type** is selected, in the **User ID** field select an appropriate service account user ID.
+3. In the **Authentication type** field, select **User** or **AAD application** based on your integration scenario.
+4. If **AAD application type** is selected, in the **Client ID** field select the application that you registered in the Azure Active Directory application.
+5. If **User** type is selected, in the **User ID** field select an appropriate service account user ID.
 6. Assign the appropriate priority and then select **Save**.
-
-## Retry operations 
-
-When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation. 
-
-```C#
-    if (!response.IsSuccessStatusCode) 
-            { 
-                if ((int)response.StatusCode == 429) 
-                { 
-                    int seconds = 30; 
-                    //Try to use the Retry-After header value if it is returned. 
-                    if (response.Headers.Contains("Retry-After")) 
-                    { 
-                        seconds = int.Parse(response.Headers.GetValues("Retry-After").FirstOrDefault()); 
-                    } 
-                    Thread.Sleep(TimeSpan.FromSeconds(seconds)); 
-
-
-
-                    // Retry sending the request.
-                } 
-            } 
-```
-
-
-## Monitoring
-
-To have a successful onboarding experience with the throttling capability, you must also be able to monitor your OData and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
-
-You can use a set of predefined queries to get raw logs for an issue. You can then export the logs for a more advanced analysis. The following types of queries are available:
-
-- All throttling events
-- Requests throttled
-
-## Access the Monitoring and diagnostics portal
-
-1. In LCS, open the appropriate project.
-2. In the **Environments** section, select the environment to view, and then select **Full details**.
-3. On the **Environment details** page, select **Environment monitoring** to open the Monitoring and diagnostics portal. 
-4. On the **Environment monitoring** page, select the **Activity** tab to view the **Raw logs** page. 
-5. Select the **Query name**, and then select **All throttling events** for all OData and custom services activities.
-6. Select the **Query name**, and then select **Requests throttled** for all OData and custom services requests that have been throttled.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Office integration overview
-description: This topic reviews Microsoft Office integration concepts and features.
+description: This article reviews Microsoft Office integration concepts and features.
 author: jasongre
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
+This article reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
 
 -   Working in Microsoft Azure
 -   Working with Azure Active Directory (Azure AD)
@@ -46,7 +46,7 @@ Microsoft Excel can change and quickly analyze data. The Excel Data Connector ap
 
 [![Screenshot of Excel Data Connector app.](./media/1_office.png)](./media/1_office.png)
 
-### Dynamics AX 2012 architecture vs. Finance and Operations architecture
+### Dynamics AX 2012 architecture vs. Finance and operations architecture
 
 There are several differences between versions. For both, we built lightweight add-ins that run in Excel and use services to connect to the application.
 
@@ -54,7 +54,7 @@ There are several differences between versions. For both, we built lightweight a
 
 Excel &gt; VSTO (.NET) Add-in &gt; Windows Communication foundation (WCF) &gt; Authentication through Active Directory (AD) &gt; AIF SOAP services on the AOS &gt; AX Services and Tables &gt; AX query engine &gt; Database
 
-#### Finance and Operations
+#### Finance and operations
 
 Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt; Authentication through Azure Active Directory (AAD) &gt; AX OData services on the AOS &gt; AX Entities &gt; AX LINQ provider &gt; AX Database
 

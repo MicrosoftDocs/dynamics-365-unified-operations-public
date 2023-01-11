@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Bad debt reserves in Accounts receivable
-description: This topic provides information about the tax registers for receivables, hopeless debts, and their write-off.
-author: anasyash
+description: This article provides information about the tax registers for receivables, hopeless debts, and their write-off.
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # Bad debt reserves in Accounts receivable
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the tax registers for receivables, hopeless debts, and their write-off.
+This article provides information about the tax registers for receivables, hopeless debts, and their write-off.
 
 Accounts receivable are formed based on outstanding invoices and advances that have been issued. Accounts receivable are considered *bad* if they aren't repaid within the period that was agreed on in the contract. *Hopeless debts* are debts that can be written off. An example is a debt that lasts more than three years.
 

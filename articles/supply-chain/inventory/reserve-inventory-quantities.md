@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reserve inventory quantities
-description: This topic describes the different options that are available for reserving inventory.
+description: This article describes the different options that are available for reserving inventory.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the different options that are available for reserving inventory.
+This article describes the different options that are available for reserving inventory.
 
 You can automatically reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
 
@@ -80,7 +80,7 @@ A sales order that should be automatically reserved and delivered on April 4, 20
 
 There are two options related to reservations on the **Inventory and warehouse management parameters** page:
 -   The **Reserve ordered items** option on the **General** tab lets you to reserve item receipts that are ordered against item issues in Accounts receivable, Project management and accounting, and Production control. If you clear this option, you can only reserve items that have been physically received. If a particular item has been set up to accept negative inventory, this field is not relevant.
--   The **Reserve items automatically** option on the **Transport** tab determines the default setting if items are automatically reserved for transfer orders. The default setting can be overridden on individual transfer orders.
+-   The **Reserve items automatically** option on the **Transfer** tab determines the default setting if items are automatically reserved for transfer orders. The default setting can be overridden on individual transfer orders.
 
 ### Inventory reservation policies on the Production parameters page
 

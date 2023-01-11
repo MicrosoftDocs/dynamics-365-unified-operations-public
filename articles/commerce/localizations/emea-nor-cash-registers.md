@@ -1,33 +1,20 @@
 ---
-# required metadata
-
 title: Cash register functionality for Norway
-description: This topic provides an overview of the cash register functionality that is available for Norway. It also provides guidelines for setting up the functionality.
+description: This article provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 Commerce, and provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 09/28/2020
+ms.date: 01/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Norway
-ms.search.industry: Retail
-ms.author: epopov
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2017-10-31
-ms.dyn365.ops.version: Application update 4
 ---
 # Cash register functionality for Norway
 
-[!include [banner](../includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for Norway in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+This article provides an overview of the cash register functionality that is available for Norway in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option that lets you prevent a copy of a receipt from being printed more than one time.
 - Norway-specific features, such as digital signatures for sales transactions.
@@ -124,6 +111,13 @@ To use the Norway-specific functionality, you must complete these tasks:
 
 You must also specify the following settings for Norway.
 
+### Enable features for Norway
+
+You must enable the following features in the **Feature management** workspace of Commerce headquarters:
+
+- (Norway) Enable additional audit events in POS
+- (Norway) Enable additional information in end-of-day statements in POS
+
 ### Set up the legal entity
 
 Make sure that the name of the legal entity is specified. This name will be printed on X and Z reports.
@@ -152,7 +146,7 @@ Set the **Allow printing receipt copy** permission to an appropriate value:
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements.
 
 | Language ID | Text                   | Text ID |
 |-------------|------------------------|---------|
@@ -166,15 +160,18 @@ On the **Language text** page, add the following records for the labels of the c
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
-| Name                            | Type    | Caption text ID |
-|---------------------------------|---------|-----------------|
-| ReceiptTitle                    | Receipt | 900011          |
-| IsGiftCard                      | Receipt | 900012          |
-| SalesTotalExt                   | Receipt | 900013          |
-| TaxTotalExt                     | Receipt | 900014          |
-| TotalWithTaxExt                 | Receipt | 900015          |
-| AmountPerTaxExt                 | Receipt | 900016          |
-| CashTransactionSequentialNumber | Receipt | 900017          |
+| Name                               | Type    | Caption text ID |
+|------------------------------------|---------|-----------------|
+| ReceiptTitle_NO                    | Receipt | 900011          |
+| IsGiftCard_NO                      | Receipt | 900012          |
+| SalesTotalExt_NO                   | Receipt | 900013          |
+| TaxTotalExt_NO                     | Receipt | 900014          |
+| TotalWithTaxExt_NO                 | Receipt | 900015          |
+| AmountPerTaxExt_NO                 | Receipt | 900016          |
+| CashTransactionSequentialNumber_NO | Receipt | 900017          |
+
+> [!NOTE]
+> It's important that you specify correct custom field names, as listed in the above table. An incorrect custom field name will cause missing data in receipts.
 
 ### Configure receipt formats
 
@@ -205,8 +202,8 @@ For more information about how to work with receipt formats, see [Set up and des
 The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
 
 - **Retail channel data.version.1** – The data model configuration.
-- **DMM Retail channel data.version.1.12** – The data model mapping configuration.
-- **NO SAF T Cash Register.version.1.15** – The format configuration.
+- **DMM Retail channel data.version.1.14** – The data model mapping configuration.
+- **NO SAF T Cash Register.version.1.20** – The format configuration.
 
 After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
 
@@ -218,8 +215,6 @@ You must also map required master data to predefined SAF-T standard codes. For m
 
 ### Configure channel components
 
-To enable Norway-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
-
-
+To enable the Norway-specific functionality, you must configure channel components. For more information, see the [deployment guidelines](emea-nor-fi-deployment.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

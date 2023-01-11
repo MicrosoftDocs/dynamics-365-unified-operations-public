@@ -2,8 +2,8 @@
 # required metadata
 
 title: Quality management for warehouse processes
-description: This topic provides information about the Quality management for warehouse processes feature. This feature extends the capabilities of quality management and lets users integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. 
-author: Henrikan
+description: This article provides information about the Quality management for warehouse processes feature. This feature extends the capabilities of quality management and lets users integrate item sampling controls into the warehouse receiving process by using warehouse management processes (WMS). 
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
@@ -11,15 +11,15 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
+ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
 ---
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. Warehouse work can be automatically generated to move inventory to the quality control location, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
+The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using warehouse management processes (WMS). Warehouse work can be automatically generated to move inventory to the quality control location, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
 
 The _Quality management for warehouse processes_ feature extends the capabilities of the basic quality management feature. It provides the option to create quality orders for the inventory that is sent to the quality control location, although quality orders aren't always required. Therefore, it allows for a lightweight quality control process that is based on warehouse work.
 
 ## Turn on the Quality management for warehouse processes feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Quality management for warehouse processes*
@@ -74,7 +74,7 @@ Before warehouse work can be automatically generated to move inventory to qualit
 1. For each work order type, set up location directives that apply the correct quality control locations that the inventory should be moved to. After quality control is completed, the location directive for the _Quality order_ work order type ensures that a new destination location will be selected so that the inventory can be moved out of the quality control location.
 1. Set up the relevant mobile device menu items to support the movement of received inventory to the quality control location, and the movement of inventory that passes or fails quality control from the quality control location to a new location.
 
-For a step-by-step example that shows how to complete this setup, see the [example scenario](#example-scenario) at the end of this topic.
+For a step-by-step example that shows how to complete this setup, see the [example scenario](#example-scenario) at the end of this article.
 
 ## Enable a warehouse for quality management
 
@@ -82,7 +82,7 @@ Before the _Quality management for warehouse processes_ feature can be applied f
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Select the warehouse to enable for quality management.
-1. On the **Warehouse** FastTab, set the **Enable quality order for warehouse processes** option to _Yes_. (Note that this option can be set to _Yes_ only for warehouses that use warehouse management processes.)
+1. On the **Warehouse** FastTab, set the **Enable quality order for warehouse processes** option to _Yes_. (Note that this option can be set to _Yes_ only for warehouses that use warehouse management processes (WMS).)
 
 When the **Enable quality order for warehouse processes** option is set to _Yes_, the quality association setup controls whether the _Quality management for warehouse processes_ feature is actually applied for the selected warehouse. You can change the setting of the option to _No_ at any time. In that case, the feature will no longer apply for the warehouse, regardless of the quality association setup.
 
@@ -102,7 +102,7 @@ Each [quality association record](enable-quality-management.md) defines the set 
     - **All** – Inactivate the _Quality management for warehouse processes_ feature. Select this value for all reference types except *Purchase* and *Production*.
 
 > [!NOTE]
-> The _Quality management for warehouse processes_ feature takes effect only if the item on the source document line uses advanced warehouse management processes, and if the **Enable quality order for warehouse processes** option is set to _Yes_ for the warehouse on the source document line.
+> The _Quality management for warehouse processes_ feature takes effect only if the item on the source document line uses warehouse management processes (WMS), and if the **Enable quality order for warehouse processes** option is set to _Yes_ for the warehouse on the source document line.
 
 As each item is registered (or reported as finished), the system determines which quality associations apply to it.
 
@@ -193,7 +193,7 @@ The **Reference type** value for the following examples is _Purchase_, and the *
 | Load | Full license plate | Yes _(locked/not editable)_ | <p>Location: Yes</p><p>License Plate: Yes _(locked/not editable)_</p> | Yes | 3 | <p>**Two items:**</p><ul><li>**Order line quantity for item A: 120 EA (4 pallets)**</li><li>**Order line quantity for item B: 90 EA (3 pallets)**</li></ul><p>**One load, two load lines with each order line**</p><ol><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP1<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP2<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP3<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP4<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP5<p>Quality item sampling work for 30 EA</p><p>Quality order 1 for 30 EA</p></li><li>Register receipt in the Warehouse Management mobile app for item B, 30 EA, LP6<p>Purchase order work for 30 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for item A, 30 EA, LP7<p>Purchase order work for 30 EA (put-away)</p></li></ol> |
 | Load | Percent = 10 | Yes _(locked/not editable)_ | <p>Location: No</p><p>License Plate: No</p> | No | Not applicable | <p>**Order line quantity: 100 EA**</p><p>**No loads are created. Order scope is applied.**</p><ol><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP1<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (put-away)</p></li><li>Register receipt in the Warehouse Management mobile app for 50 EA, LP2<p>Quality item sampling work for 5 EA</p><p>Quality order 1 for 5 EA</p><p>Purchase order work for 45 EA (put-away)</p></li></ol> |
 
-When a worker validates one of the quality orders that are shown in the previous table, the system automatically generates quality order work to move inventory from the quality control location to the location that is defined in the location directive for the _Quality order_ work order type. You can set up any location for this purpose, such as a return or storage location, depending on the test result for the quality order. For an example of this setup, see the [example scenario](#example-scenario) at the end of this topic.
+When a worker validates one of the quality orders that are shown in the previous table, the system automatically generates quality order work to move inventory from the quality control location to the location that is defined in the location directive for the _Quality order_ work order type. You can set up any location for this purpose, such as a return or storage location, depending on the test result for the quality order. For an example of this setup, see the [example scenario](#example-scenario) at the end of this article.
 
 You can reopen a quality order that has already been validated, provided that the quality order work that is related to moving the inventory from the quality control location doesn't have a **Work status** value of *Closed* or *In progress*.
 

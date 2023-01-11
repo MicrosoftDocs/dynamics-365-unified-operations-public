@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Split periods in periodic journals
-description: This topic provides information about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
-author: ShylaThompson
+description: This article provides information about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTable
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261354
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
-# ms.search.industry: 
-ms.author: kfend
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261354
+ms.search.form: LedgerJournalTable
 ---
 
 # Split periods in periodic journals

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Section Tiles subpattern
-description: This article provides information about the Section Tiles subpattern. 
+description: This article provides information about the Section Tiles subpattern.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 29311
-ms.assetid: 196e714a-ecfc-42b3-a7f5-84e29fb271bb
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29311
+ms.assetid: 196e714a-ecfc-42b3-a7f5-84e29fb271bb
 ---
 
 # Section Tiles subpattern

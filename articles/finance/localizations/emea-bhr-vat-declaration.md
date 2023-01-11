@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: VAT declaration for Bahrain
-description: This topic explains how to configure and generate the VAT return form for Bahrain.
-author: sndray
+description: This article explains how to configure and generate the VAT return form for Bahrain.
+author: AdamTrukawka
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Bahrain
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2020-06-03
 ms.dyn365.ops.version: 10.0.13
-
+ms.search.form: 
 ---
 
 # VAT declaration for Bahrain (BH-00002)
@@ -31,7 +21,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ## Overview
 
-This topic explains how to set up and generate the VAT return form for legal entities in Bahrain.
+This article explains how to set up and generate the VAT return form for legal entities in Bahrain.
 
 The VAT return form for Bahrain is the official document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount  liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as *VAT return filing*.
 

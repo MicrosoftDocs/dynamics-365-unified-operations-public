@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Build navigation
 description: In this tutorial, you will add navigational elements to a workspace and the navigation pane.
-author: aneesmsft
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 26031
-ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 26031
+ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
 ---
 
 # Build navigation
@@ -50,7 +39,7 @@ If this is the first tutorial that you are working on, review [Access Instances]
 If you have already imported the Fleet management tutorial project, skip to the next section.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
-2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
+2.  In Visual Studio, on the **Finance and operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 4.  In the **Select the file to import** window, browse to **C:\FMLab**, click **FMTutorialDataModel.axpp,** and then click **Open**.
 5.  In the Project file location text box, enter **C:\FMLab.**

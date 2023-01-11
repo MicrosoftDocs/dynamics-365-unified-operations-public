@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Payment times reporting schema
-description: This topic explains how to set up, create, and generate the Payment times reporting schema for Australia.
-author: sndray
+description: This article explains how to set up, create, and generate the Payment times reporting schema for Australia.
+author: AdamTrukawka
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 12641
 ms.search.region: Australia
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 
-ms.dyn365.ops.version:
-
+ms.dyn365.ops.version: 
+ms.custom: 12641
 ---
 
 # Payment times reporting schema
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up, create, and generate the Payment times reporting schema (PTRS) that is required for Australian legal entities.
+This article explains how to set up, create, and generate the Payment times reporting schema (PTRS) that is required for Australian legal entities.
 
 The Australian government established the PTRS to help improve payment times for Australian small businesses. Under the schema, large businesses and government enterprises must report their small business payment terms and times every six months during an income year. In addition, legal entities must include payment information about the goods and services that they procured from small business suppliers under a trade credit arrangement.
 

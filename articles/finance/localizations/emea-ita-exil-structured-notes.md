@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Advanced notes management
-description: This topic explains how to set up and print predefined notes for customers, vendors, and products.
-author: ilkond
+description: This article explains how to set up and print predefined notes for customers, vendors, and products.
+author: mrolecki
 ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: MCROrderNotes
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2019-11-29
 ms.dyn365.ops.version: 10.0.8
-
+ms.search.form: MCROrderNotes
 ---
 
 # Advanced notes management

@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Set up number sequences on an individual basis
-description: This topic explains how to set up number sequences on an individual basis.  
-author: sericks007  
+description: This article explains how to set up number sequences on an individual basis.  
+author: SunilGarg  
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up number sequences on an individual basis. Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. You can set up all required number sequences at the same time by using the **Set up number sequences** wizard, or you can create or modify individual number sequences by using the **Number sequences** page.
+This article explains how to set up number sequences on an individual basis. Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. A master data or transaction record that requires an identifier is referred to as a reference. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. You can set up all required number sequences at the same time by using the **Set up number sequences** wizard, or you can create or modify individual number sequences by using the **Number sequences** page.
 
 1. Go to **Navigation pane > Modules > Organization administration > Number sequences > Number sequences**.
 2. Select **Number sequence**.

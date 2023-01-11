@@ -1,28 +1,19 @@
 ---
-# required metadata
-
-
 title: Manage Bing Maps for your organization
-description: This topic describes how to manage Bing Maps for your application.
-author: aamirallaqaband 
+description: This article describes how to manage Bing Maps for your application.
+author: ShalabhjainMSFT
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailSharedParameters
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: shajain
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Retail July 2017 update
 ms.search.industry: Retail
-ms.author: aamiral
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Retail July 2017 update 
+ms.search.form: RetailSharedParameters
 ---
 
 # Manage Bing Maps for your organization

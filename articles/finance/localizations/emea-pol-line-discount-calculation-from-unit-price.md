@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Line discount calculation from the unit price for Poland
-description: For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount. This topic provides information about the Line discount calculation from unit price method and explains how to set it up.
-author: ShylaThompson
+description: For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount. This article provides information about the Line discount calculation from unit price method and explains how to set it up.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 263424
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 263424
 ---
 
 # Line discount calculation from the unit price for Poland
 
 [!include [banner](../includes/banner.md)]
 
-For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount. This topic provides information about the Line discount calculation from unit price method and explains how to set it up.
+For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount. This article provides information about the Line discount calculation from unit price method and explains how to set it up.
 
 For legal entities in Poland, the line discount doesn't have to be calculated from a line amount. Instead, it can be calculated from the unit price of an invoice line. When the Line discount calculation from unit price method is used, the discounted unit price is rounded before the line amount is calculated. The following table shows how the line discount is calculated by both the standard method and the Line discount calculation from unit price method.
 

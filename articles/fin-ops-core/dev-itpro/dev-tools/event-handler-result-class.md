@@ -1,17 +1,16 @@
 ---
 title: EventHandlerResult classes in request or response scenarios
-description: This topic describes how to use EventHandlerResult classes with delegate methods.
-author: RobinARH
+description: This article describes how to use EventHandlerResult classes with delegate methods.
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-# ms.custom: 
-ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
 ---
 
 # EventHandlerResult classes in request or response scenarios
@@ -20,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Delegate methods and delegate handler methods can be declared to support a request/response scenario, where the delegate calling logic requests the subscribers to provide a response. To support this scenario the **EventHandlerResult** class is most often passed as a parameter, and the delegate handler methods provide their result using one of the result methods on the class. However, the **EventHandlerResult** class can only contain a single result, so if multiple subscribers provide their individual result, the last respondent wins, and the results from the previous subscribers are overwritten.
 
-Before the functionality described in this topic was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.
+Before the functionality described in this article was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.
 
 ## Ensuring, at most, one response
 

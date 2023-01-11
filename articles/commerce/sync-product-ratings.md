@@ -1,40 +1,31 @@
 ---
-# required metadata
-
 title: Sync product ratings in Dynamics 365 Commerce
-description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
-author:  gvrmohanreddy 
+description: This article describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
+author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.technology: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Sync product ratings in Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
+This article describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 
 To consume product ratings in omnichannels, such as at the point of sale (POS) and in call centers, product ratings from the ratings and reviews service must be imported into the Commerce channel database. When product ratings are made available in omnichannels, they can help customers indirectly during their interactions with sales associates.
 
-This topic describes following tasks:
+This article describes following tasks:
 
 1. Configure **Product ratings sync job** as a batch job to synchronize product ratings from the **Ratings and Reviews service**.
 1. Verify that the batch job for product rating synchronization was successful.
@@ -134,6 +125,16 @@ The following illustration shows an example of product ratings in call center ch
 [Manage ratings and reviews](manage-reviews.md)
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,13 @@
 ---
 title: Commerce Scale Unit customer and consumer APIs
-description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients.
-author: mugunthanm
+description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients.
+author: josaw1
 ms.date: 06/02/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 
 - Commerce Scale Unit business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
@@ -223,14 +223,11 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 |-------------------|-----------------------------------------------------------------|-------------------------------------|--------------------------|-------------------------------------------------------------|
 | GetStateProvinces | string countryRegionId, QueryResultSettings queryResultSettings | PageResult\<StateProvinceInfo\> | Employee,  Customer,  Anonymous,  Application               | Get all the states or provinces filtered by country/region. |
 
-## Discount controller
+## Pricing controller
 
 | API                       | Parameter                                                                          | Return value                   | Supported Commerce Roles | Description                                                     |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------|--------------------------|-----------------------------------------------------------------|
-| GetDiscountCodes          | QueryResultSettings queryResultSettings                                            | PageResult\<DiscountCode\> | Employee                 | Gets collection of discount codes.                              |
-| GetDiscountCodesByOfferId | string offerId, QueryResultSettings queryResultSettings                            | PageResult\<DiscountCode\> | Employee                 | Gets collection of discount codes filtered by offer identifier. |
-| GetDiscountCodesByKeyword | string keyword, DateTimeOffset activeDate, QueryResultSettings queryResultSettings | PageResult\<DiscountCode\> | Employee                 | Searches the discount codes.                                    |
-| GetDiscountCode           | string discountCode                                                                | DiscountCode                   | Employee                 | Gets the discount code.                                         |
+| CalculateSalesDocument          | Cart salesDocument                                            | Cart | Employee,  Customer,  Anonymous,  Application                 | Calculates prices and discounts for products at given quantities if they are bought together in an order.                              |
 
 ## Zipcodes controller
 

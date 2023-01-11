@@ -1,11 +1,4 @@
----
-author: robinarh
-ms.topic: include
-ms.date: 6/28/2021
-ms.author: rhaertle
----
-
-Finance and Operations app | Customer engagement app | Description
+Finance and operations app | Customer engagement app | Description
 ---|---|---
 [All products](#138) | msdyn_globalproducts |
 [Asset management asset lifecycle models](#119) | msdyn_assetlifecyclemodels |
@@ -141,3 +134,4 @@ Finance and Operations app | Customer engagement app | Description
 [Withholding tax codes](#210) | msdyn_withholdingtaxcodes |
 [Withholding tax groups](#211) | msdyn_withholdingtaxgroups |
 [Worker](#113) | cdm_workers |
+

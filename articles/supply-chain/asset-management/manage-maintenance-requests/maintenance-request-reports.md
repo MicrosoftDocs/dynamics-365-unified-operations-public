@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance request reports
-description: This topic explains how to create maintenance request reports in Asset Management.
+description: This article explains how to create maintenance request reports in Asset Management.
 author: johanhoffmann
 ms.date: 10/31/2019
 ms.topic: article

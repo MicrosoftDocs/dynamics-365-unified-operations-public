@@ -3,9 +3,9 @@
 
 title: Develop and establish service agreements overview
 description: Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.
-author: kamaybac
+author: sorenva
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -93,7 +93,7 @@ service work. The lines contain the following settings:
 -  Whether a line is stopped. If a line is stopped, you cannot create service orders for that individual line.
 -  Project settings, such as the category and the line property.
 
-## Related topics
+## Related articles
 
 [Create service agreements](create-service-agreements.md)
 

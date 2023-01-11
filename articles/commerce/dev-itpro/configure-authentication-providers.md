@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Configure authentication providers
-description: This topic provides an overview of the process for configuring a new OpenID authentication provider.
-author: kfend
+description: This article provides an overview of the process for configuring a new OpenID authentication provider.
+author: josaw1
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 31241
-ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 31241
+ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
 ---
 
 # Configure authentication providers
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the process for configuring a new OpenID authentication provider.
+This article provides an overview of the process for configuring a new OpenID authentication provider.
 
 The E-Commerce platform uses industry-standard [OpenID Connect](https://openid.net/connect/) as the mechanism for authentication. This article covers the pages that you use to register the OpenID providers that are used in an online store. Commerce Scale Unit uses OpenID Connect as the mechanism to support authenticated customers. OpenID Connect is a universally accepted standard that acts as simple and evolved identity provider on top of OAuth 2.0. Commerce Scale Unit can be integrated with both ready-to-use OpenID providers through the Microsoft Azure Access Control service and other independently available providers. In addition, any custom providers that support OpenID connect can be integrated and registered. The following illustration shows the step-by-step handshake that occurs between the Commerce Scale Unit and the E-Commerce front-end server to pass the authentication token for subsequent calls. 
 

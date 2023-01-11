@@ -1,20 +1,22 @@
 ---
 title: Form design requirements
-description: This topic provides form design requirements for mobile apps.
-author: robinarh
-ms.date: 08/14/2017
+description: This article provides form design requirements for mobile apps.
+author: jasongre
+ms.date: 05/26/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
+ms.custom: intro-internal
 ---
 
 # Form design requirements
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 This section provides valuable guidelines for building forms that work well with the mobile app.
 

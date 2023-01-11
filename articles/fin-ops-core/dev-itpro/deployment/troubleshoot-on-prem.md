@@ -1,42 +1,32 @@
 ---
-# required metadata
-
 title: Troubleshoot on-premises deployments
-description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
-author: PeterRFriis
-ms.date: 09/27/2021
+description: This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
+author: faix
+ms.date: 06/07/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: dynamics-365
+ms.technology: 
 audience: Developer, IT Pro
-# ms.devlang:
 ms.reviewer: sericks
-# ms.tgt_pltfrm:
-ms.custom: 60373
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry:
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-
+ms.custom: 60373
+ms.assetid: 
+ms.service: 
 ---
 # Troubleshoot on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
+This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 
 ## Access Service Fabric Explorer
 
 You can access Service Fabric Explorer in a web browser by using the default address, `https://sf.d365ffo.onprem.contoso.com:19080`.
 
-To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment topic for your environment:
+To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment article for your environment:
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#createdns)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#createdns)
@@ -136,7 +126,7 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 ## A time-out error occurs when a Service Fabric cluster is created
 
-Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment. Note any errors.
+Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment article for your environment. Note any errors.
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
@@ -165,8 +155,10 @@ You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis butto
 The following script removes and unprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent. You must run this script on an orchestrator virtual machine (VM).
 
 ```powershell
-$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry')
+$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
 $applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
+
+Connect-ServiceFabricCluster
 
 Get-ServiceFabricApplication | `
     Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `
@@ -232,7 +224,7 @@ To clean up an existing environment and redeploy, follow these steps.
     - ConfigTemplate.xml
     - ClusterConfig.json
 
-    For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment topic for your environment:
+    For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
@@ -246,7 +238,7 @@ To clean up an existing environment and redeploy, follow these steps.
 
     2. Download the latest local agent configuration, localagent-config.json.
 
-6. Deploy again by following the instructions in the appropriate setup and deployment topic for the environment:
+6. Deploy again by following the instructions in the appropriate setup and deployment article for the environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
@@ -355,7 +347,7 @@ You can also manually add the following values in the **components** section of 
         </Certificate>
         ```
 
-3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
@@ -395,7 +387,7 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
     </ADServiceAccount>
     ```
 
-3. Make sure that the "Set up file storage" section of the appropriate setup and deployment topic for your environment is completed:
+3. Make sure that the "Set up file storage" section of the appropriate setup and deployment article for your environment is completed:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
@@ -514,7 +506,7 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
     + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
 ```
 
-**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that not valid.
+**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that aren't valid.
 
 **Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
 
@@ -584,22 +576,24 @@ Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrappe
 
 You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
 
-To resolve the error, validate the credentials.json file. Verify that the text is correctly decrypted by entering the following command (on AOS1).
+To resolve the error, validate the credentials.json file. Copy your infrastructure folder to an AOS node, or run the script from an AOS node if your infrastructure folder is in a file share.
 
-```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
+1. Verify that the text is correctly decrypted by running the following command (on AOS1).
 
-This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and verify the following information:
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
 
-- The encrypt credentials for the credentials.json file have the correct layout/structure. For more information, see the "Encrypt credentials" section of the appropriate setup and deployment topic for your environment:
+2. Open the **Credentials.json** file, and confirm that the credentials are correct.
+3. Re-encrypt the **Credentials.json** file.
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#encryptcred)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#encryptcred)
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
 
-- A closing quotation mark appears at the end of the line or on the next line.
+4. If any of the credentials had to be updated, you must trigger a servicing operation. If an ongoing servicing operation failed, you can ensure that the credentials are updated by retrying the operation from [LCS](https://lcs.dynamics.com). If the environment is already in a deployed state, in [LCS](https://lcs.dynamics.com), select the **Full Details** link for the environment where you want to update the SQL Server, select **Maintain**, and then select **Update Settings**. Don't change any settings. Select **Prepare**, wait for the preparation to be completed, and then select **Update environment** to start to update your environment.
 
-In Event Viewer, under **Custom Views** \> **Administrative Events**, note any errors in the **Microsoft-Service Fabric** source category.
+This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and note any errors in the **Microsoft-Service Fabric** source category.
 
 ## Properties to create a DataEncryption certificate
 
@@ -623,21 +617,10 @@ If you're missing a certificate and ACL, or if you have the wrong thumbprint ent
 You can also validate the encrypted text by using the following command.
 
 ```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
 ```
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
-
-If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
-
-- If your environment appears to be deployed in LCS, do the following:
-    1. Go to your environment page and select **Maintain**.
-    1. Select **Update settings**.
-    1. Do not change any settings. Select **Prepare**.
-    1. After a few minutes your environment will be prepared and you can select **Deploy**.
-
-- If your environment is in a failed state in LCS, do the following:
-    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 If none of the preceding solutions work, follow these steps.
 
@@ -655,7 +638,7 @@ If none of the preceding solutions work, follow these steps.
     On one of the AOS machines, run the following command to verify that the data encryption certificate is correct.
 
     ```powershell
-    Invoke-ServiceFabricDecryptText '<encrypted string>' -StoreLocation LocalMachine
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
 7. If any of the certificates must be changed, or if the configuration was incorrect, follow these steps:
@@ -663,7 +646,16 @@ If none of the preceding solutions work, follow these steps.
     1. Edit the **ConfigTemplate.xml** file so that it has the correct values.
     2. Run all the setup scripts and the **Test-D365FOConfiguration** script.
 
-8. In LCS, reconfigure the environment.
+8. If the credentials.json file has changed, the action that you should take depends on the status of the environment in LCS:
+
+    - If your environment appears to be deployed in LCS, follow these steps:
+
+        1. Go to your environment page, and select **Maintain**.
+        1. Select **Update settings**.
+        1. Don't change any settings. Select **Prepare**.
+        1. After a few minutes, your environment will be prepared, and you can select **Deploy**.
+
+    - If your environment is in a failed state in LCS, select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 ## Gateway fails to deploy
 
@@ -702,10 +694,10 @@ Category does not exist.
 
 ## Management Reporter
 
-Additional logging can be done by registering providers. Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
+You can do additional logging by registering providers. To register providers, in the LCS Shared asset library, select **Model** as the asset type, and then download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset. Copy the zip file that is downloaded to the **primary** orchestrator machine, unzip it, and then run the following commands. (To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.)
 
 > [!NOTE]
-> If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:
+> If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment article for your environment:
 > 
 > - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
 > - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
@@ -825,7 +817,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 **Steps:**
 
 1. Remove the axdbadmin user from the database, if it already exists.
-2. In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database.
+2. In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database by updating the **userName** attribute.
 
     ```xml
     <Security>
@@ -833,7 +825,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
     </Security>
     ```
 
-3. Run the initialize database script again to add the axdbadmin user.
+3. Run the initialize database script again to add the axdbadmin user as described in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb).
 
 ## Unable to resolve the xPath value
 
@@ -892,6 +884,14 @@ In this case, go to the C:\\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\
 
 You can also use Psping to try to reach the remote server. For information about Psping, see [Psping](/sysinternals/downloads/psping).
 
+### You encounter authentication errors
+
+If you're having issues during authentication with the Workflow editor or the Excel add-ins, use the following script to verify your configuration.
+
+```powershell
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+```
+
 ### Redirect sign-in questions and issues
 
 If you're having issues when you sign-in, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid. Here is an example:
@@ -899,9 +899,9 @@ If you're having issues when you sign-in, in Service Fabric Explorer, verify tha
 - **Provisioning\_AdminPrincipalName**: `AXServiceUser@contoso.com`
 - **Provisioning\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`
 
-If the values aren't valid, you won't be able to proceed, and you must redeploy from LCS.
+If the values aren't valid, you won't be able to proceed, and you must update the admin user information or AD FS information in LCS.
 
-If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service before your changes take effect. If you still have sign-in issues, in the USERINFO table, note the **NETWORKDOMAIN** and **NETWORKALIAS** values. Here is an example:
+If you used Reset-DatabaseUsers.ps1, you must restart the AOS before your changes take effect. If you still have sign-in issues, make a note of the **NETWORKDOMAIN** and **NETWORKALIAS** values in the USERINFO table. Here is an example:
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
@@ -990,7 +990,7 @@ If this error occurs, follow these steps.
 5. Make sure that the **IdTokenIssuer** value matches the **Federation Service Identifier** value from step 3, and also the **Provisioning_AdminIdentityProvider** value on the **fabric:/AXSF Details** tab at **Service Fabric Explorer** \> **Cluster** \> **Applications** \> **AXSFType**.
 3. In Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid.
 
-If the preceding steps don't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.
+If the preceding steps don't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this article.
 
 ## System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
 
@@ -1004,7 +1004,7 @@ In this case, either the certificates haven't been installed, or they haven't gi
 
 ## Keyset doesn't exist
 
-If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment topic for your environment:
+If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment article for your environment:
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupvms)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupvms)
@@ -1057,7 +1057,7 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 ## The client and server can't communicate because they don't have a common algorithm
 
-If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:
+If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment article for your environment:
 
 - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
@@ -1104,7 +1104,7 @@ Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRe
 
 This issue occurs because AOS users aren't in the local administrator group, and User Account Control (UAC) hasn't been disabled correctly. To resolve the issue, follow these steps.
 
-1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:
+1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
@@ -1172,7 +1172,7 @@ Follow these steps to configure the local agent with the updated tenant.
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
     - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
@@ -1193,25 +1193,25 @@ You will receive the following error when you deploy an additional environment:
 
 You can skip or modify the following sections in the deployment instructions.
 
-### Plan and acquire your certificates (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
+### Plan and acquire your certificates (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
 
 - You must use the same on-premises local agent certificate.
 - You can use same star certificates (AOS SSL and Service Fabric).
 - The remaining certificates should probably differ from the certificates for the existing environment.
 
-### Download setup scripts from LCS (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
+### Download setup scripts from LCS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Set up a standalone Service Fabric cluster (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
+### Set up a standalone Service Fabric cluster (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Configure LCS connectivity for the tenant (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
+### Configure LCS connectivity for the tenant (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
 
 - You must complete this task only one time for the tenant.
 
-### Configure AD FS (as documented for [Platform update 42 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
+### Configure AD FS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
 
 - Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
@@ -1350,17 +1350,6 @@ Here are some examples of errors:
         > 
         > **DB sync failed.**
 
-## A "No subscription found in the context" error occurs when you run Add-CertToServicePrincipal
-
-Recent versions of Windows PowerShell might cause a "No subscription found in the context" error. To resolve this issue, install and load an older version of Windows PowerShell, such as version 5.7.0.
-
-```powershell
-# Install version 5.7.0 of Azure PowerShell
-Install-Module -Name AzureRM -RequiredVersion 5.7.0
-
-# Load version 5.7.0 of Azure PowerShell
-Import-Module -Name AzureRM -RequiredVersion 5.7.0
-```
 ## Service Fabric Explorer warnings occur after you restart a machine
 
 **Error:**
@@ -1472,7 +1461,7 @@ The located assembly's manifest definition does not match the assembly reference
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
 
 ## DBSync fails with PEAP APP version 10.0.9 Platform update 33
-**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error can be found. 
 
 Error message from DBSync:
  ```stacktrace
@@ -1509,7 +1498,7 @@ truncate table databaselog
 
 ## DBSync fails to start
 
-**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found.
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error can be found.
 
 ```stacktrace
 Microsoft.Dynamics.AX.InitializationException: Database login failed. Please check SQL credentials and try again.
@@ -1534,7 +1523,7 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 
 ## DBSync fails with PEAP and first release APP version 10.0.14 Platform update 38
 
-**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error is present multiple times.
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error is present multiple times.
 
 ```stacktrace
 10/01/2020 14:49:25: Failed when creating deadlock capture session event System.Data.SqlClient.SqlException (0x80131904): User does not have permission to perform this action.
@@ -1605,7 +1594,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
     ```powershell
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
     
 1. Copy the generated VM folder to the BI node if not using the remoting scripts.
@@ -1626,7 +1615,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```
 
 > [!IMPORTANT]
-> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
 
 #### Manually add these permissions:
 1. Go to your BI node.
@@ -1648,10 +1637,41 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     .\Set-ServiceControlManagerPermissions.ps1
     ```
     
-1. Run the following command in Powershell with Administrator privileges to verify the setup.
+1. Run the following command in PowerShell with Administrator privileges to verify the setup.
 
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
     ```
+
+## Deployment fails on version 10.0.21 and later
+
+**Issue:** The deployment fails with the following error.
+
+```stacktrace
+System.AggregateException: One or more errors occurred. ---> 
+LocalAgentCommon.LocalAgentInvalidOperationException: Unable to convert the topology file [\\DC1\D365FFOAgent\assets\topology.xml\088f79e2-3a60-4c2a-9911-c3aadb15959f\7819ab4b-31a1-4738-8ca2-02231239ddbb\Topology.xml] to a valid [config.json]. --->
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: F. Path
+```
+
+**Reason:** The configuration generation method was changed in version 10.0.21.
+
+**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommend that you upgrade to the latest version available.
+
+## Add-CertToServicePrincipal fails
+
+**Issue:** The execution ends unexpectedly with the following error.
+
+```stacktrace
+Where-Object : Cannot convert null to type "System.DateTime".
+At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
++ ... edentials | Where-Object {[datetime]$_.EndDate -eq $localAgentCertEnd ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   + CategoryInfo          : InvalidArgument: (:) [Where-Object], RuntimeException
+   + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
+```
+
+**Reason:** Version 7.0 of the Azure PowerShell module has introduced breaking changes that are not compatible with the scripts.
+
+**Resolution:** Downgrade the version of the Azure PowerShell module to version 6.6.0.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

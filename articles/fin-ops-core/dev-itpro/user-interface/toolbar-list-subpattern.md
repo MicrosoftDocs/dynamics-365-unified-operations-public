@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Toolbar and List subpattern
 description: This article provides information about the Toolbar and List form subpattern.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 15931
-ms.assetid: a60f829b-e496-453b-9e58-f7cb4d67114f
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 15931
+ms.assetid: a60f829b-e496-453b-9e58-f7cb4d67114f
 ---
 
 # Toolbar and List subpattern

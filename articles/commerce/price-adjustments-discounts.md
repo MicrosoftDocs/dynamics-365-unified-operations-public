@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
-author: scott-tucker
+author: josaw1
 ms.date: 06/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailParameters, RetailPeriodicDiscount
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 15891
-ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 15891
+ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
+ms.search.industry: Retail
+ms.search.form: RetailParameters, RetailPeriodicDiscount
 ---
 
 # Price adjustments and discounts

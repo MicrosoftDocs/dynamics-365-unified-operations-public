@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset leasing conventions
-description: This topic describes conventions for leased assets.
+description: This article describes conventions for leased assets.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,8 +15,8 @@ ms.search.form: AssetLease
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Finance
+ms.reviewer: kfend
+# 
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes conventions for leased assets. Leasing conventions are used to determine the commencement date of a lease book. If the leasing convention is set to **None**, the commencement date is the same as the start date for the lease (that is, the value of the **Lease start date** field). If the leasing convention is set to **Full month**, the commencement date is the first day of the month that the lease's start date falls in.
+This article describes conventions for leased assets. Leasing conventions are used to determine the commencement date of a lease book. If the leasing convention is set to **None**, the commencement date is the same as the start date for the lease (that is, the value of the **Lease start date** field). If the leasing convention is set to **Full month**, the commencement date is the first day of the month that the lease's start date falls in.
 
 The commencement date determines the start date of the period for the liability amortization and asset depreciation schedules. Interest expenses and depreciation expenses are posted on the period end date of the corresponding schedules. The initial recognition and adjustment journal entry are posted on the commencement date.
 

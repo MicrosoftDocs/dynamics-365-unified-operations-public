@@ -1,35 +1,38 @@
 ---
 title: Task recorder resources
-description: This topic describes how to use Task recorder to record business processes.
+description: This article describes how to use Task recorder to record business processes.
 author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
-ms.search.form: SysTaskRecorderPane 
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: SysTaskRecorderPane
 ---
 
 # Task recorder resources
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use Task recorder to record business processes.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article describes how to use Task recorder to record business processes.
 
 ## Overview
 
 ### Task recorder
 
-Task recorder for Finance and Operations apps is a utility that lets users record business processes for several different use cases. Here are some examples: 
+Task recorder for finance and operations apps is a utility that lets users record business processes for several different use cases. Here are some examples: 
 - Step-by-step guided tours of a specific business process in the application itself 
 - Documentation of a business process as a Microsoft Word document that can optionally include screenshots
 - Regression tests for a business process
 - Automatic playback of a business process in the application
 
-Task recorder for Finance and Operations apps boasts high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Task recorder is also integrated with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle Services (LCS), so that users can continue to organize their recordings. However, users can no longer produce business process diagrams from recordings.
+Task recorder for finance and operations apps boasts high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Task recorder is also integrated with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle Services (LCS), so that users can continue to organize their recordings. However, users can no longer produce business process diagrams from recordings.
 
 Task recorder can automatically generate application regression tests from business process recordings and play back previously recorded processes. These features also include test-specific gestures that let users take full advantage of Task recorder.
 
@@ -39,10 +42,10 @@ Task recorder can record user actions in the client with exact fidelity, because
 
 ### Basic configuration
 
-Task recorder is included with every Finance and Operations app, and lets users begin to record business processes immediately after they open the client for the first time.
+Task recorder is included with every finance and operations app, and lets users begin to record business processes immediately after they open the client for the first time.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available at [Finance and Operations application documentation](../../fin-ops/index.md) for both Commerce and Human Resources.
+> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available at [finance and operations application documentation](../../fin-ops/index.md) for both Commerce and Human Resources.
 
 ## Start a new recording
 The following steps show how to use Task recorder to start a new recording.
@@ -375,7 +378,7 @@ By using a **pre-release** Chromium browser extension that works for both the ne
 1.  Download the **FMLabTaskRecorderScreenshot** folder that contains the extension from GitHub, at <https://github.com/Microsoft/FMLab>.
 2.  **On-premises deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace \<hostname\> with the base URL for your environment.
 
-    ```xpp
+    ```json
     ...
     "content_scripts": [
         {
@@ -385,8 +388,8 @@ By using a **pre-release** Chromium browser extension that works for both the ne
         ...
     ```
 
-3.  **21Vianet deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **.com** with **.cn**
-    ```xpp
+3.  **[21Vianet in China](../deployment/china-local-deployment.md) deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **.com** with **.cn**
+    ```json
     ...
     "content_scripts": [
         {
@@ -395,15 +398,35 @@ By using a **pre-release** Chromium browser extension that works for both the ne
         }
         ...
     ```
-4.  Open the latest Microsoft Edge browser or Google Chrome.
-5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
-6.  Select **Developer mode**.
-7.  Click **Load unpacked extension**.
-8.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.
-9.  Make sure that **Enabled** is selected so that extension is turned on.
-10.  Restart the browser.
+4.  **[US Government Community Cloud (GCC)](../deployment/us-gcc-deployment.md) deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **dynamics.com** with **microsoftdynamics.us**
+    ```json
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.microsoftdynamics.us/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+4.  **Multiple deployments:** Add additional string values to the matches clause, separating them with a comma.
+    ```json
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.com/*", "https://*.microsoftdynamics.us/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+6.  Open the latest Microsoft Edge browser or Google Chrome.
+7.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
+8.  Select **Developer mode**.
+9.  Click **Load unpacked extension**.
+10.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.
+11.  Make sure that **Enabled** is selected so that extension is turned on.
+12.  Restart the browser.
 
-Task recorder will now take screenshots of the tab where the client is running. These screenshots are available for one week after the recording has been played. (If you're running a platform version that is earlier than Platform update 16, the screenshots are available for only 15 minutes.) If the screenshots have expired, you can regenerate them by playing the task recording again.
+Task recorder will now take screenshots of the tab where the client is running. If needed, you can regenerate the screenshots by playing the task recording again.
 
 Note that Task recorder **does not** capture screenshots from other tabs or of the user's desktop.
 
@@ -413,7 +436,7 @@ After a business process recording has been completed by using Task recorder, a 
 
 ### Import a recorded test
 
-1.  Open Visual Studio by using the Finance and Operations development tools.
+1.  Open Visual Studio by using the finance and operations development tools.
 2.  Go to **Dynamics 365 &gt; Addins &gt; Import task recording**.
 3.  In the **Import task recording** menu, use the **Browse** button to locate a previously downloaded recording file.
 4.  Optionally, choose to have the generated test code be added to the startup project. This requires that a solution containing a project is set as the startup project. This will place the generated X++ test into the same model as the project.
@@ -459,3 +482,4 @@ After a business process recording has been completed by using Task recorder, a 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Define cost control units
-description: This procedure shows how to define cost control units in the cost accounting ledger. 
-author: ShylaThompson
+description: This procedure shows how to define cost control units in the cost accounting ledger.
+author: kfend
 ms.date: 06/27/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CAMCostControlUnit
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: roschlom
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: CAMCostControlUnit
 ---
 # Define cost control units
 

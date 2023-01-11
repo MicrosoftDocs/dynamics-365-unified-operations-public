@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Customer electronic invoices in Egypt
-description: This topic explains how to configure and submit customer electronic invoices in Egypt.
-author: ikondo
+description: This article explains how to configure and submit customer electronic invoices in Egypt.
+author: mrolecki
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 547940
 ms.search.region: Egypt
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-
+ms.custom: 547940
+ms.search.form: 
 ---
 
 # Customer electronic invoices in Egypt
@@ -35,7 +24,7 @@ ms.dyn365.ops.version: 10.0.17
 According to Egyptian legal requirements, invoices that are issued for customers must be submitted to the Tax authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
 
 1. **Electronic invoicing add-in** configuration. For more information, see [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md).
-2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
+2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
 
@@ -86,7 +75,7 @@ Follow these steps to configure the electronic document property type that is re
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select a legal entity, and then, on the Action Pane, select **Registration IDs**.
 3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-4. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this topic.
+4. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this article.
 6. In the **Registration number** field, enter a valid legal entity registration number. This number can be obtained from the Tax authority.
 
 ### Enter an activity code for a legal entity
@@ -109,7 +98,7 @@ Follow these steps to configure the electronic document property type that is re
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-5. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this topic.
+5. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this article.
 6. In the **Registration number** field, enter a valid customer registration number. This number can be obtained from the Tax authority.
 
 ## Configure sales tax codes

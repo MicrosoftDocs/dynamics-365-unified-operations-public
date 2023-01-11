@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart  
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 
 # Define benefit eligibility rules and policies
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how to create benefit eligibility rules and policies and then assign rules to benefits.  
+This article explains how to create benefit eligibility rules and policies and then assign rules to benefits.  
 
 ## Create benefit eligibility policy rule type
 

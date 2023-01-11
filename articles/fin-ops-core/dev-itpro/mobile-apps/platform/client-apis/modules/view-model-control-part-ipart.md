@@ -1,17 +1,18 @@
 ---
 title: Part module
 description: A part is a container control that contains only a page, allowing for a page to be embedded within a page.
-author: robinarh
-ms.date: 08/01/2017
+author: jasongre
+ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ---
 
 # Part module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 

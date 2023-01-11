@@ -2,8 +2,8 @@
 # required metadata
 
 title: Create service agreements
-description: This topic describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
-author: kamaybac
+description: This article describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
+author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use features in the Service management and the
+This article describes how to use features in the Service management and the
 Project management and accounting modules to create service agreements.
 
 ## Create a service agreement from Service management
@@ -59,10 +59,10 @@ as service-object relations and service-task relations on the new service-agreem
 2. Select **All projects**.
 3. Select the project from the list.
 4. On the **Action Pane**, select **Manage**. In the **New** Action group, select **Service** and select **Service agreement**.
-5. Follow the steps in the section titled **Create a service agreement** as described earlier in this topic to enter the project reference.
+5. Follow the steps in the section titled **Create a service agreement** as described earlier in this article to enter the project reference.
 
 
-## Related topics
+## Related articles
 
 [Develop and establish service agreements overview](service-agreements.md)
 

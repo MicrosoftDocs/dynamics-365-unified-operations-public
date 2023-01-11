@@ -1,17 +1,17 @@
 ---
 title: Version control, metadata search, and navigation
 description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
-author: RobinARH
+author: gianugo
 ms.date: 07/24/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 23401
-ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 23401
+ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ---
 
 # Version control, metadata search, and navigation
@@ -26,7 +26,7 @@ In this section, you'll create a new project in Azure DevOps. This project will 
 
 ### Sign up to Azure DevOps, create an account, and create a new project
 
-Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this topic.
+Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this article.
 
 1. Sign in with your Microsoft account.
 
@@ -44,7 +44,7 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 
 ### Create a Azure DevOps team project
 
-If you already have a Azure DevOps organization, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Azure DevOps organization, go to your account using Internet Explorer. This article uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project.

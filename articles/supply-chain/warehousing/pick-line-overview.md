@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up a mobile device menu item to provide a pick line overview
-description: This topic explains how to define when a list of all work lines will be shown to warehouse workers who are processing warehouse work on a mobile device. This capability can be useful for warehouse workers who often require an overview of the pick lines in a work order so that they can optimize their picking sequence.
-author: MarkusFogelberg
+description: This article explains how to define when a list of all work lines will be shown to warehouse workers who are processing warehouse work on a mobile device. This capability can be useful for warehouse workers who often require an overview of the pick lines in a work order so that they can optimize their picking sequence.
+author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
 ---
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure options that are related to the pick line overview for mobile device menu items that are used to process picking work. The pick line overview lets warehouse workers view and select from a list of all the work lines that are related to their current task. This capability can help workers optimize their picking sequence. The feature provides options that replace the standard **Skip** button that lets workers cycle through the lines one at a time, in a fixed order. (However, the option to use that button is still available.)
+This article explains how to configure options that are related to the pick line overview for mobile device menu items that are used to process picking work. The pick line overview lets warehouse workers view and select from a list of all the work lines that are related to their current task. This capability can help workers optimize their picking sequence. The feature provides options that replace the standard **Skip** button that lets workers cycle through the lines one at a time, in a fixed order. (However, the option to use that button is still available.)
 
 Admins can configure each menu item individually to control how, when, and where the Warehouse Management mobile app presents the pick line overview.
 
 ## Turn on the Work pick line overview feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** _Warehouse management_
 - **Feature name:** _Work pick line overview_

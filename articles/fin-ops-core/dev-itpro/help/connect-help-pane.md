@@ -1,37 +1,24 @@
 ---
-# required metadata
-
 title: Connect a custom Help website to the Help pane
-description: This topic explains how you can extend the in-product Help pane with custom Help content. 
+description: This article explains how you can extend the in-product Help pane with custom Help content.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Connect a custom Help website to the Help pane
 
 [!include [banner](../includes/banner.md)]
 
-If you deliver custom Help content for a Finance and Operations solution, you can extend the **Help** pane so that it consumes that content. You complete this one-time configuration by using the Finance and Operations development environment in Microsoft Visual Studio. After you've finished, users can select among tabs for task guides, Microsoft Help content, and your Help content.
+If you deliver custom Help content for a finance and operations solution, you can extend the **Help** pane so that it consumes that content. You complete this one-time configuration by using the finance and operations development environment in Microsoft Visual Studio. After you've finished, users can select among tabs for task guides, Microsoft Help content, and your Help content.
 
 The process for connecting your [custom Help website](custom-help-overview.md#custom-help-sites) to the in-product **Help** pane involves the following steps:
 
@@ -40,15 +27,15 @@ The process for connecting your [custom Help website](custom-help-overview.md#cu
 3. Customize language fallback.
 
 > [!IMPORTANT]
-> The procedures that follow require the development tools for Finance and Operations apps in Visual Studio. For more information, see [Development tools in Visual Studio](../dev-tools/development-tools-overview.md).
+> The procedures that follow require the development tools for finance and operations apps in Visual Studio. For more information, see [Development tools in Visual Studio](../dev-tools/development-tools-overview.md).
 
 ## <a name="extendhelppane"></a>Extend the Help pane and assign the custom Help indexes to languages
 
-The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the Finance and Operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
+The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
 
 ### Extend the Help pane
 
-1. In the Finance and Operations development environment, open the **AzureSearchCustomHelp.sln** solution.
+1. In the finance and operations development environment, open the **AzureSearchCustomHelp.sln** solution.
 2. On the **Dynamics 365** menu, select **Import project**.
 3. In the **File name** field, specify the path of the **HelppaneOption.axpp** project, and then select **OK** to complete the import process. Update the references so that no references are missing.
 4. In the **HelppaneMacro** file, update the values of the following parameters:
@@ -116,8 +103,6 @@ The following scenario is valid, because **language="de"** has **parentindex="in
 <add language="de-AT" parentlanguage="de-DE" index="indexdeat"/>
 ```
 
-For more information about languages, see [Languages, translations, and adaptations](language-locale.md#languages-translations-and-adaptations).
-
 The following sections provide sample configurations.
 
 ### Help content for one locale
@@ -157,7 +142,7 @@ If the client is set to the **de-AT** locale, but no results are found in the Ge
 [Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
-[Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
+[Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
 
 

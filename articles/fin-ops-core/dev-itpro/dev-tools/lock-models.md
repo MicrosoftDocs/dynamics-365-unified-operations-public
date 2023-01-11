@@ -5,14 +5,13 @@ author: pvillads
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 89593
-ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 89593
+ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
 ---
 
 # Turn off model customization and deprecate functionality
@@ -21,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering. Developers will still be able to extend that model. This article also describes how you can deprecate obsolete functionality.
 
-Typically, you build an application in models that depend on other models. At the very least, your models will depend on the Application Platform model that is provided. Finance and Operations applications run on the Microsoft Azure cloud platform. In other words, it runs off-premises, in data centers that are managed by Microsoft. Because we can’t support changes from a large number of vendors in the fundamental models, your applications can no longer over-layer artifacts in those models. Therefore, to build your applications, you must use extensions instead of over-layering. Even though all the artifacts in the models that you depend on are available for documentation purposes, you can’t compile someone else’s intellectual property and run it in the cloud.
+Typically, you build an application in models that depend on other models. At the very least, your models will depend on the Application Platform model that is provided. Finance and operations applications run on the Microsoft Azure cloud platform. In other words, it runs off-premises, in data centers that are managed by Microsoft. Because we can’t support changes from a large number of vendors in the fundamental models, your applications can no longer over-layer artifacts in those models. Therefore, to build your applications, you must use extensions instead of over-layering. Even though all the artifacts in the models that you depend on are available for documentation purposes, you can’t compile someone else’s intellectual property and run it in the cloud.
 
 ## Locking customizations
 Transitioning a model from over-layering to extensions involves three steps:

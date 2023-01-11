@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Agreements
-description: This topic provides information about sales and purchase agreements for Russian localization.
-author: v-nadyuz
+description: This article provides information about sales and purchase agreements for Russian localization.
+author: mrolecki
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: mrolecki
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Agreements

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset lifecycle states
-description: This topic explains asset lifecycle states and lifecycle models in Asset Management.
+description: This article explains asset lifecycle states and lifecycle models in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
+ms.search.form: EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains asset lifecycle states and lifecycle models in Asset Management. Asset lifecycle states are used to define whether an asset is active or inactive. For example, you can set up asset lifecycle states such as **Created**, **Active**, and **Terminated**.
+This article explains asset lifecycle states and lifecycle models in Asset Management. Asset lifecycle states are used to define whether an asset is active or inactive. For example, you can set up asset lifecycle states such as **Created**, **Active**, and **Terminated**.
 
 > [!NOTE]
 > - Request lifecycle states are linked to asset lifecycle states. Therefore, when a request is changed to a new request lifecycle state, the asset that is attached to the request is changed to a new asset lifecycle state. For example, if the lifecycle state of a request is changed to **Inbound**, the lifecycle state of the attached asset is changed to the lifecycle state that is selected in the **Inbound lifecycle state** field on the **Asset lifecycle state** FastTab of the **Asset lifecycle state models** page. 

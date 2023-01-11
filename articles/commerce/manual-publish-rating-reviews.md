@@ -1,35 +1,25 @@
 ---
-# required metadata
 title: Enable manual publishing of ratings and reviews by a moderator
-description: This topic describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
+description: This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
-# optional metadata
-# ms.search.form: 
-#ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
+manager: annbe
 ---
 
 # Enable manual publishing of ratings and reviews by a moderator
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
+This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 
 Dynamics 365 Commerce's ratings and reviews solution uses Azure Cognitive Services to automatically redact profanity in review titles and content, and to publish ratings and reviews. Therefore, manual intervention isn't required to review and publish ratings and reviews to your e-commerce site.
 
@@ -71,3 +61,17 @@ The following illustration shows an example where three unpublished ratings and 
 ## Additional resources
 
 [Ratings and reviews overview](ratings-reviews-overview.md)
+
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
+[Manage ratings and reviews](manage-reviews.md)
+
+[Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Commerce runtime (CRT) services
-description: This topic describes the Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality.
-author: mugunthanm 
+description: This article describes the Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality.
+author: josaw1
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 # Commerce runtime (CRT) services
 
@@ -34,7 +24,7 @@ Commerce runtime (CRT) is a collection of portable .NET libraries that contain t
 
 A CRT service is a group of requests/responses. Any time that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
 
-This topic shows some important requests/responses that you can customize for your business scenario.
+This article shows some important requests/responses that you can customize for your business scenario.
 
 There are three main layers in CRT:
 

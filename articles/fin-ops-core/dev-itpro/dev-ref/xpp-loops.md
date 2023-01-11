@@ -1,22 +1,22 @@
 ---
 title: X++ loop statements
-description: This topic describes loop statements in X++.
-author: RobinARH
+description: This article describes loop statements in X++.
+author: josaw1
 ms.date: 06/17/2019
 audience: Developer
-ms.devlang: xpp
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.devlang: xpp
 ---
 
 # X++ loop statements
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes loop statements in X++. 
+This article describes loop statements in X++. 
 
 There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
 
@@ -126,7 +126,7 @@ The **break** statement within a loop is used to terminate that loop. Execution 
 
 ### Example of a break statement
 
-This example is uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
+This example uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
 
 ```xpp
 var mainMenu = SysDictMenu::newMainMenu();

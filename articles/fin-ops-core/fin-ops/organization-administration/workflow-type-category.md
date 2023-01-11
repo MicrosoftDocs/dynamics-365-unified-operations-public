@@ -1,40 +1,32 @@
 ---
-# required metadata
-
 title: Create a workflow category
-description: This topic describes how to create a workflow category.
-author: RobinARH
+description: This article describes how to create a workflow category.
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 202694
-ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ---
 # Create a workflow category
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 When you create a workflow type, you must assign it to a workflow category. The workflow category determines whether the workflow type is available in a specific module. If an appropriate workflow category doesn't already exist, you must create it.
 
 For example, a workflow type for a customer invoice should not be available in the **Master planning** module. To make the workflow type available only in the **Customer** module, select the **Customer** module when you create a workflow category.
 
-This topic describes how to create a workflow category.
+This article describes how to create a workflow category.
 
 ## Create a workflow category
 

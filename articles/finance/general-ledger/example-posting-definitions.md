@@ -15,7 +15,7 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 
-Before you read this topic, you should be familiar with posting definitions and transaction posting definitions. For information, see [Posting definitions](posting-definitions.md). The following examples can be set up on the **Posting definitions** page. Each example contains these sections:
+Before you read this article, you should be familiar with posting definitions and transaction posting definitions. For information, see [Posting definitions](posting-definitions.md). The following examples can be set up on the **Posting definitions** page. Each example contains these sections:
 
 -   Posting definition – Match criteria
 -   Posting definition – Generated entries

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Database movement operations home page
-description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
+description: This article provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
 ms.date: 06/04/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1
 
 Database movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging/diagnostics, destructive testing, and general refresh for training purposes.
 
-In this topic, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
+In this article, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
 
 ## Database movement scenarios and quick start guides
 The following table shows the various scenarios that are supported and a link to a quick start guide for each scenario. 
@@ -45,7 +45,8 @@ The following table shows the various scenarios that are supported and a link to
 |DevTest|	Sandbox|	[Import a database](import-database.md)| Not supported | [Golden configuration promotion](dbmovement-scenario-goldenconfig.md) |
 Production|	DevTest|	Not directly supported | Not supported | Recommend [Export a copy of the standard user acceptance testing (UAT) database](dbmovement-scenario-exportuat.md) |
 |Sandbox point-in-time | Sandbox |[Point-in-time restore (PITR)](database-point-in-time-restore.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md) |
-|Production point-in-time| Sandbox| [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md)
+|Production point-in-time| Sandbox| [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md) |
+|Production point-in-time| Production | [Point-in-time restore (PITR)](database-point-in-time-restore.md) | Not supported | Not applicable |
 
 > [!IMPORTANT]
 > Database movement operations are very lengthy operations. The amount of time these operations take varies by data volume, schema complexity, and whether the target of the operation is a flat file, like a .bacpac file in the case of the export operation. In general, these operations can take up to 24 hours to complete, and during the operation there is no way to cancel. In addition, if the target of the operation is an environment like in the production to sandbox scenario, the sandbox environment will go offline at an undetermined time, when the database copy operation has completed, but before the database synchronization steps begin. This will happen with no warning to end users in the environment. As result, it is best to schedule these types of operations during non-business hours.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order types
-description: This topic explains work order types in Asset Management.
+description: This article explains work order types in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article

@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Customer attributes
-description: This topic provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
-author: mugunthanm 
+description: This article provides information about customer attributes and explains how you can use configurations to add new fields to the customer master record.
+author: josaw1
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
+ms.reviewer: josaw
+ms.search.region: global
+ms.author: josaw
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 
 ms.assetid: 
-ms.search.region: global
 ms.search.industry: Retail
-ms.author: mumani
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
 ---
 
 # Customer attributes

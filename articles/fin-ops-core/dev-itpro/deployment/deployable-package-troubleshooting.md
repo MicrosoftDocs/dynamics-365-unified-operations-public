@@ -2,9 +2,9 @@
 # required metadata
 
 title: Troubleshoot package application issues
-description: The topic provides troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
+description: The article provides troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
 author: laneswenka
-ms.date: 07/16/2020
+ms.date: 01/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information that will help you troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply updates to cloud environments](apply-deployable-package-system.md).
+This article provides detailed information that will help you troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 ## General troubleshooting and diagnostics
 If a package isn't successfully applied, you have two options:
@@ -135,7 +135,7 @@ If the step fails again, and the same error occurs, go back to the logs to look 
 - If you notice that there is an issue with the customizations, abort this package, and retry by using the new package.
 - See whether a fix for the issue is available in Issue search.
 - If you see the following step failure, either database synchronization or report deployment might have failed: "GlobalUpdate script for service model: AOSService"
-- Look for the DBSync.err file, and see what the errors are. Inspect the DBSync.log file. For specific failures during the DB Sync step, look in the **Common DB Sync Failures** section.
+- Look for the DBSync.err file, and see what the errors are. Inspect the DBSync.log file. For specific failures during the DB Sync step, look in the [Typical database synchronization issues](deployable-package-troubleshooting.md#typical-database-synchronization-issues) section.
 
 ### Issue: The deployment status is Servicing but the servicing status is Failed
 

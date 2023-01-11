@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Advance invoices for Commerce for Eastern Europe
-description: This topic explains how to set up advance notices for Commerce for Eastern Europe. 
-author: epopov
+description: This article explains how to set up advance notices for Commerce for Eastern Europe.
+author: EvgenyPopovMBS
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia 
-ms.search.industry: Retail
-ms.author: epopov
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.author: josaw
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: Retail
 ---
 
 # Advance invoices for Commerce for Eastern Europe
 
 [!include [banner](../includes/banner.md)]
 
-The information in this topic applies to the Eastern European localization and is specific to the commerce industry.
+The information in this article applies to the Eastern European localization and is specific to the commerce industry.
 
 For Poland, Hungary, and Czech Republic, when a prepayment is received from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes, and it's required to generate and print an advance invoice document that includes the prepayment amount. Additionally, for Poland, advance invoice transactions must be posted in the general ledger.
 

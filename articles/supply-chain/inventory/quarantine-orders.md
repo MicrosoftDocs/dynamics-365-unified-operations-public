@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quarantine orders
-description: This topic describes how to use quarantine orders to block inventory.
+description: This article describes how to use quarantine orders to block inventory.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use quarantine orders to block inventory.
+This article describes how to use quarantine orders to block inventory.
 
 Quarantine orders let you block inventory. For example, you might want to quarantine items for quality control reasons. Inventory that has been quarantined is transferred to a quarantine warehouse.
 
 > [!NOTE]
-> If you're using advanced warehouse management processes (in Warehouse management), quarantine order processing is used only for return sales orders.
+> If you're using warehouse management processes (in the Warehouse management module), quarantine order processing is used only for return sales orders.
 
 ## Quarantine on-hand inventory items
 

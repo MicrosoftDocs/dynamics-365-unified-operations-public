@@ -1,26 +1,19 @@
 ---
 title: Creators in the Acceptance test library
-description: This topic provides information about Acceptance test library creators.
+description: This article provides information about Acceptance test library creators.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Creators in the Acceptance test library

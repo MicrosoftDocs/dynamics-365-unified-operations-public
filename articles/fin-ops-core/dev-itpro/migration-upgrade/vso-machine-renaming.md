@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Rename a local development (VHD) environment
-description: This topic explains how to rename a local environment so that you can access a Microsoft Azure DevOps project and install One Version service updates.
-author: MargoC
+description: This article explains how to rename a local environment so that you can access a Microsoft Azure DevOps project and install One Version service updates.
+author: josaw1
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 25911
-ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: josw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25911
+ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ---
 
 # Rename a local development (VHD) environment
@@ -34,7 +23,7 @@ ms.dyn365.ops.version: AX 7.0.0
 A local development (VHD) environment must be renamed for the following scenarios:
 
 * **Accessing a single Microsoft Azure DevOps project across multiple machines:** Azure DevOps is required for version control. In development topologies, multiple virtual machines (VMs) can't access the same Azure DevOps project if they have the same machine name. Azure DevOps uses the machine name for identification. If you're developing on local VMs that were downloaded from Microsoft Dynamics Lifecycle Services (LCS), you might encounter issues.
-* **Installing One Version service updates:** One Version service updates, such as 8.1.x, must be installed in VHD environments by using a runbook. To help guarantee that the runbook is completed successfully, the VHD environments must be renamed. Additional steps that are described in this topic must also be completed.
+* **Installing One Version service updates:** One Version service updates, such as 8.1.x, must be installed in VHD environments by using a runbook. To help guarantee that the runbook is completed successfully, the VHD environments must be renamed. Additional steps that are described in this article must also be completed.
 
 ## Rename the machine
 Rename and restart the machine before you start development or connect to Azure DevOps. Make sure that the new name is unique among all the machines that are used with the Azure DevOps project.

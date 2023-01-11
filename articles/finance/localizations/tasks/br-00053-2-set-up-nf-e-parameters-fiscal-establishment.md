@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Set up NF-e parameters for a fiscal establishment (Brazil)
-description: Use the following procedure to set up the parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment. 
-author: sndray
+description: Use the following procedure to set up the parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment.
+author: AdamTrukawka
 ms.date: 06/26/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up NF-e parameters for a fiscal establishment (Brazil)
 

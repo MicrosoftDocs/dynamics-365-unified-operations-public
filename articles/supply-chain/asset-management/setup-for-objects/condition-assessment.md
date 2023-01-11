@@ -2,7 +2,7 @@
 # required metadata
 
 title: Condition assessment
-description: This topic explains how to create a condition assessment template and registration on an asset in Asset Management.
+description: This article explains how to create a condition assessment template and registration on an asset in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectCondition, EntAssetConditionTemplate 
+ms.search.form: EntAssetObjectCondition, EntAssetConditionTemplate 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains how to create a condition assessment template and registration on an asset in Asset Management. Condition assessment is performed at regular intervals, and the primary objective is to create and maintain condition data on assets. Seen from a preventive maintenance perspective, it is important to monitor key information such as current condition, and remaining life span. Furthermore, if you carry out condition assessment at regular intervals, you will be able to monitor and compare conditions on the machinery in your factory.
+This article explains how to create a condition assessment template and registration on an asset in Asset Management. Condition assessment is performed at regular intervals, and the primary objective is to create and maintain condition data on assets. Seen from a preventive maintenance perspective, it is important to monitor key information such as current condition, and remaining life span. Furthermore, if you carry out condition assessment at regular intervals, you will be able to monitor and compare conditions on the machinery in your factory.
 
 Condition assessment can be used to measure and monitor many conditions on your equipment. Example: You could measure vibrations on your machinery. After you have registered vibration measurements in Asset Management on various types of equipment, you can search for the latest registered assessment and view vibration measurements.
 
@@ -52,7 +52,7 @@ Condition assessment is created on assets. You set up a condition assessment tem
 
 ## Create condition assessment registration on an asset
 
-1. Select **Asset management** > **Common** > **Assets** > **All Assets**.
+1. Select **Asset management** > **Assets** > **All Assets**.
 2. In the list, select the asset for which you want to create a condition assessment registration.
 3. On the **General** tab, click **Condition assessment**.
 4. Click **New** to make a new registration.
@@ -67,7 +67,7 @@ Condition assessment is created on assets. You set up a condition assessment tem
 After you have made a condition assessment registration on an asset, you can print a condition assessment report.
 
 >[!NOTE]
->You can also register condition assessment on a work order (**Asset management** > **Common** > **Work orders** > **All Work orders** > **Condition assessment** button.)
+>You can also register condition assessment on a work order (**Asset management** > **Work orders** > **All Work orders** > **Condition assessment** button.)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

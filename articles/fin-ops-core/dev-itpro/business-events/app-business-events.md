@@ -2,7 +2,7 @@
 # required metadata
 
 title: Application business events
-description: This topic lists application business events.
+description: This article lists application business events.
 author: Sunil-Garg
 ms.date: 09/23/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists application business events.
+This article lists application business events.
 
 ## Procure to pay
 

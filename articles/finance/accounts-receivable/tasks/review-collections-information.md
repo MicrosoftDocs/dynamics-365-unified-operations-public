@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Review collections information
-description: This topic explains how to review collections information as well as various setup options and collections transactions. 
+description: This article explains how to review collections information as well as various setup options and collections transactions. 
 author: ShivamPandey-msft
 ms.date: 08/01/2019
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
+This article explains how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
 
 ## Create customer pools
 1. In the navigation pane, go to **Modules > Credit and collections > Setup > Customer pools**.

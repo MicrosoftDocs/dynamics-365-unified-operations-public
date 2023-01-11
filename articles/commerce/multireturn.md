@@ -2,7 +2,7 @@
 # required metadata
 
 title: Return items across multiple customer orders and invoices
-description: This topic describes the functionality enabling returns across multiple customer orders and invoices in Dynamics 365  Commerce.
+description: This article describes the functionality enabling returns across multiple customer orders and invoices in Dynamics 365  Commerce.
 author: josaw1
 ms.date: 08/27/2020
 ms.topic: index-page

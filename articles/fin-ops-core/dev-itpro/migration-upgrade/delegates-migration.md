@@ -1,43 +1,32 @@
 ---
-# required metadata
-
 title: Solve dependencies among models by using delegates during code migration
-description: This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
-author: maertenm
+description: This article explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 27001
-ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27001
+ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
 ---
 
 # Solve dependencies among models by using delegates during code migration
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
+This article explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 
 ## Overview
 
-Finance and Operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
+Finance and operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
 
-[![Del1.](./media/del1.jpg)](./media/del1.jpg) 
+[![Learn more about models and packages](./media/del1.jpg)](./media/del1.jpg) 
 
 While the model split provides many benefits, it creates a problem when trying to access elements defined in higher models. Delegates are the recommended method for accessing elements in higher models from a lower model. Delegates are very similar to events in that when a delegate instance is invoked, a handler with compatible signature code is executed. This permits higher layer code, the handler, to be called by lower layer code, the delegate instance.
 
@@ -62,26 +51,26 @@ In order for a delegate to be properly handled, the delegate method declaration,
 
 ![static delegate handler.](media/static-delegate-handler.png)
 
-Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This topic focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
+Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This article focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
 
 ## Example scenarios
 ### Overlaying an existing delegate
 
 In many cases where delegates are needed, the code that was formerly overlayed has already been moved to a delegate handler by Microsoft. In these instances, Microsoft created delegates that can be leveraged and the code can be overlayed in a similar manner in the delegate handler. In this scenario, an Independent Software Vendor (ISV) is migrating code from Dynamics  AX 2012 R3 where they have overlayed the showSalesTax() method in the LogisticsEntityPostalAddressFormHandler class. After migration, the CodeUpgrade project will contain the LogisticsEntityPostalAddressFormHandler with the *Your Solution*, *Microsoft AX 2012,* and *Microsoft AX* sections to resolve for the showSalesTax() method. The commented Your Solution section shows that the showSalesTax() method was overlayed by adding an additional table to approve showing sales tax from. This overlay is shown between the &lt;isv&gt; tags circled in red below. 
 
-[![4.](./media/41.png)](./media/41.png)
+[![The overlay is shown.](./media/41.png)](./media/41.png)
 
 When comparing this overlay with the code from Dynamics AX 2012, this is a simple change. The overlay has added an additional table to the switch statement. 
 
-[![5.](./media/51.png)](./media/51.png) 
+[![The overlay has added an additional table to the switch statement.](./media/51.png)](./media/51.png) 
 
-However, the section for Finance and Operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
+However, the section for finance and operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
 
-[![6.](./media/61.png)](./media/61.png) 
+[![The section for finance and operations does not appear to resemble either of the Dynamics AX 2012 code snippets.](./media/61.png)](./media/61.png) 
 
 Upon deeper inspection, the code is calling a delegate method, showSalesTax\_delegate(). 
 
-[![this.showSalesTax\_delegate(this.getCallerRecord().TableId, result);.](./media/showsalestax_delegate.png)](./media/showsalestax_delegate.png) 
+[![The code is calling a delegate method, showSalesTax\_delegate().](./media/showsalestax_delegate.png)](./media/showsalestax_delegate.png) 
 
 The use of a delegate implies that code has been moved to another location. The showSalesTax\_delegate() has been declared in the Application Foundation and handled in the Application Suite. To view the code that has been moved, find the delegate handler. The **Finding Delegates and Handlers** section contains methods to locate delegates and handlers. After finding the delegate handler method in the Application Suite, we see the code that has been moved from the showSalesTax() method. The same overlayered changes applied in Dynamics AX 2012 can be applied in the delegate handler. 
 
@@ -95,7 +84,7 @@ After adding the new table to the switch statement in the delegate handler, the 
 
 In this scenario, we will modify an existing tax calculation method that resides in the Application Foundation to account for discounts created in the Application Suite. The following class in the Foundation layer calculates the tax based on the gross total. 
 
-![SimpleTax class.](media/simple-tax.png)
+![The following class in the Foundation layer calculates the tax based on the gross total. ](media/simple-tax.png)
 
 In the Application Suite, we have introduced the notion of discounts by adding a ProductDiscount class that contains the current discount. 
 
@@ -127,7 +116,7 @@ Using the SubscribesTo keyword, we tie the applyDiscountDelegateHandler method a
 
 ##### SimpleTax class in the Application Foundation Layer
 
-![SimpleTax class.](media/simple-tax-full-code.png)
+![SimpleTax class in the Application Foundation Layer](media/simple-tax-full-code.png)
 
 ##### ProductDiscount class in the Application Suite layer
 

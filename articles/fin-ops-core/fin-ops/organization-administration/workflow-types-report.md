@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow types report
-description: This topic points you to a report that lists the available workflow types.
+description: This article points you to a report that lists the available workflow types.
 author: ChrisGarty
 ms.date: 02/16/2021
 ms.topic: article
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to a report that lists the available workflow types.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article points you to a report that lists the available workflow types.
 
 To create a workflow, you must first select the *type* of workflow that you want to create. For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions. For more information about creating a workflow, see [Create workflows overview](create-workflow.md).
 

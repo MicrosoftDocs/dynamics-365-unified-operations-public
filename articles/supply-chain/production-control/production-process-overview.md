@@ -1,24 +1,22 @@
 ---
 title: Production process overview
-description: This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
+description: This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: johanhoffmann
-ms.date: 09/13/2019
-ms.topic: article
-ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
-audience: Application User
-ms.reviewer: kamaybac
-ms.custom: ["19832", "intro-internal"]
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.reviewer: kamaybac
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
+ms.topic: overview
+ms.date: 01/09/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Production process overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period.
+This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period.
 
 The production of products, a process that is also known as the production life cycle, follows specific steps that are required to complete the manufacture of an item. The life cycle begins with the creation of the production order, batch order, or kanban. It ends with a finished, manufactured item that is ready for either a customer or another phase of production. Each step in the life cycle requires different kinds of information to complete the process. As each step is completed, the production order, batch order, or kanban shows a change in the production status. Different types of products require different manufacturing processes.
 

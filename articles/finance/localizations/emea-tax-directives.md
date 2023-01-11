@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Tax directives for Europe
 description: You can specify to include an explanation of sales tax codes on sales invoices and project invoices. You can print reference numbers on sales invoices, free text invoices, and project invoices.
-author: epodkolz 
+author: EricWangChen
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Türkiye, United Kingdom
+ms.author: wangchen
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Tax directives for Europe

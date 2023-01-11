@@ -1,6 +1,6 @@
 ---
 title: Complete tasks in Business process modeler (BPM)
-description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM).
+description: This article provides information about additional tasks that you can complete in Business process modeler (BPM).
 author: AngelMarshall 
 ms.date: 06/15/2020
 ms.topic: article

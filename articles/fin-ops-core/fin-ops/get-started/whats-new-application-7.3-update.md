@@ -1,36 +1,26 @@
 ---
-# required metadata
-
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
-author: tonyafehr
+title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
+author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tfehr
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 
+ms.dyn365.ops.version: 7.3
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+# What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
+
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
 To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](whats-new-changed.md) and [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
@@ -48,11 +38,11 @@ Demo data has been delivered in prior releases as a database with a large number
 
 The data packages are similar but not identical to existing demo companies and may change over time. The packages are very small and provide a quick way to download the demo data and modify it before you import it into an environment. We will continue to add additional demo data for more companies and module functionality in the future.
 
-## Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations integration – Phase 1 (private preview)
+## Dynamics 365 for Project Service Automation to Dynamics 365 Finance and Operations integration – Phase 1 (private preview)
 
-The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations is now available in private preview.
+The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 Finance and Operations is now available in private preview.
 
-The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Dataverse. The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](/powerapps/administrator/data-integrator) in the Power Apps documentation.
+The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 Finance and Operations and Dynamics 365 for Project Service Automation instances via the Dataverse. The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](/powerapps/administrator/data-integrator) in the Power Apps documentation.
 
 This solution provides direct synchronization in the following areas:
 
@@ -63,9 +53,9 @@ This solution provides direct synchronization in the following areas:
 
 To nominate your organization to participate in the private preview, fill out the survey at [https://aka.ms/psafinandopsintpreview](https://aka.ms/psafinandopsintpreview).
 
-## Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations
+## Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dynamics 365 Finance and Operations
 
-Enhancements to Prospect to cash integration between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations, Enterprise edition 7.3 enable direct synchronization in the following processes:
+Enhancements to Prospect to cash integration between Dynamics 365 for Sales and Dynamics 365 Finance and Operations, Enterprise edition 7.3 enable direct synchronization in the following processes:
 
 - Maintain accounts in Sales and sync them to Finance and Operations as customers.
 - Maintain contacts in Sales and sync them to Finance and Operations as either customers or contacts for a customer.
@@ -103,7 +93,7 @@ For more information, see [Expense management mobile workspace](/dynamics365/pro
 
 A set of default reports built using a new visualization using Power BI is available for financial reporting. The new financial reporting experience will be embedded within Finance and Operations, giving you a seamless experience of report generation and allowing you to drill into supporting documents. Limited subledger data will be available to provide better ledger to subledger analysis. Default reports, such as a trial balance, balance sheet, and profit and loss, will be shipped out of the box, however, initially no edits will be allowed using Finance and Operations. Edits need to be made using the Power BI desktop. The existing financial reporting using Report Designer is still available and fully supported.
 
-To view additional information about Financial reporting using Power BI, watch the following video: [Reporting for Dynamics 365 for Finance and Operations](https://youtu.be/9m5ys9UmaVg).
+To view additional information about Financial reporting using Power BI, watch the following video: [Reporting for Dynamics 365 Finance and Operations](https://youtu.be/9m5ys9UmaVg).
 
 ## Fixed asset roll forward report
 
@@ -148,7 +138,7 @@ India localization is available with the following features:
 - Withholding tax, including TDS and TCS.
 - Fixed assets, including depreciation as per the Companies act, depreciation as per the Income tax act, and special depreciation.
 - Value-added tax (VAT).
-- Custom duty and India Goods and Services Tax (GST). For more information, see the "Tax Engine (GTE) – India GST only" section in this topic.
+- Custom duty and India Goods and Services Tax (GST). For more information, see the "Tax Engine (GTE) – India GST only" section in this article.
 
 ## Master and reference data entities for warehouse and transportation management
 
@@ -255,7 +245,7 @@ For more information, see [Product lifecycle state](../../../supply-chain/pim/pr
 
 Previously you needed to modify the retail proxy project inline to generate the Retail proxy to support your new CRT/RS extension in POS offline mode or e-Commerce extensions. Now, you can generate proxy without any inline changes as a completely new extension. We also added support for multiple ISV/Partner extension proxies without any code merge between the extension proxies. This will help you with a seamless upgrade for proxy extensions.
 
-For more information, see [Retail Typescript and C# proxies](../../../retail/dev-itpro/typescript-proxy-retail-pos.md).
+For more information, see [Retail Typescript and C# proxies](/dynamics365/commerce/dev-itpro/typescript-proxy-retail-pos).
 
 ## Safety stock replenishment enhancements
 

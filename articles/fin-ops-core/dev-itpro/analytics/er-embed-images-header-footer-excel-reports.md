@@ -1,44 +1,34 @@
 ---
-# required metadata
-
 title: Design an ER format to generate a report in Excel format with embedded images in page headers or footers
-description: This topic explains how to use Electronic reporting (ER) to generate business documents that have images and shapes embedded in page headers or footers.
-author: NickSelin
+description: This article explains how to use Electronic reporting (ER) to generate business documents that have images and shapes embedded in page headers or footers.
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner, ERParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: EROperationDesigner, ERParameters
 ---
 
 # Design an ER format to generate a report in Excel format with embedded images in page headers or footers
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
+This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER)](general-electronic-reporting.md) framework.
 - Import ER [configurations](general-electronic-reporting.md#Configuration) that are [provided](general-electronic-reporting.md#Provider) by Microsoft and used to generate [free text invoices](../../../finance/accounts-receivable/create-free-text-invoice-new.md), based on a [template](er-fillable-excel.md#excel-file-component) in Microsoft Excel format.
 - Create a [custom (derived)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) version of a standard ER format configuration that is provided by Microsoft.
 - Modify the custom ER format configuration so that it generates a free text invoice report that has a company logo image in the footer.
 
-The procedures in this topic can be completed in the **USMF** company. No coding is required. Before you begin, download and save the following file.
+The procedures in this article can be completed in the **USMF** company. No coding is required. Before you begin, download and save the following file.
 
 | Description        | File name |
 |--------------------|-----------|
@@ -158,9 +148,9 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 3. On the **Configurations** page, in the configuration tree in the left pane, expand **Invoice model**.
 4. In addition to the selected **Free text invoice (Excel)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configuration tree:
 
-    - **Invoice model** – This configuration contains the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain.
-    - **Invoice model mapping** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
-    - **Free text invoice (Excel)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
+    - **Invoice model** – This configuration contains the data model ER component that represents the data structure of the invoicing business domain.
+    - **Invoice model mapping** – This configuration contains the model mapping ER component that describes how the data model is filled in with application data at runtime.
+    - **Free text invoice (Excel)** – This configuration contains the format and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
 
 ![Imported ER configurations on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 
@@ -201,7 +191,7 @@ In this case, as the representative of Litware, Inc., you must create (derive) a
 
 ![Creating a configuration for a custom payment format in the Create configuration drop-down dialog box.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Version 240.112.1 of the **Free text invoice (Excel) custom** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
+Version 240.112.1 of the **Free text invoice (Excel) custom** ER format configuration is created. This version has a status of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
 ![New version of the ER format configuration created on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -249,7 +239,7 @@ Configure your custom format so that a company logo image is put in the footer o
 
 ### <a id="MarkFormatRunnable"></a>Mark the custom format as runnable
 
-Because the first version of the custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
+Because the first version of the custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are considered. This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
 
 To use the draft version of an ER format, you must explicitly mark the ER format.
 

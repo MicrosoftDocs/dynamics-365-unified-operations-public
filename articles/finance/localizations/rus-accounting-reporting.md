@@ -1,26 +1,17 @@
 ---
-# required metadata
 title: Accounting reporting in electronic format (Russia)
-description: This topic explains how to set up accounting reporting for Russia.
-author: Anasyash
+description: This article explains how to set up accounting reporting for Russia.
+author: AdamTrukawka
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
-ms.search.validFrom: 2019-4-30
+ms.author: atrukawk
+ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # Accounting reporting in electronic format (Russia)

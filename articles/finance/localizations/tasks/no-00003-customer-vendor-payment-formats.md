@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: NO-00003 Customer and vendor payment formats
-description: This task walks you through setting up and maintaining Norwegian payment IDs. 
-author: epodkolz
+description: This task walks you through setting up and maintaining Norwegian payment IDs.
+author: EricWangChen
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Norway
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: wangchen
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: 
+  - BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup
+  - CustInvoiceJournal
 ---
 # NO-00003 Customer and vendor payment formats
 

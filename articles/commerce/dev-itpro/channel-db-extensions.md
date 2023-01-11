@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Channel database extensions
-description: This topic explains how to extend the channel database.
-author: mugunthanm
+description: This article explains how to extend the channel database.
+author: josaw1
 ms.date: 12/08/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 # Channel database extensions
@@ -32,16 +21,16 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Headquarters (HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
-In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 Finance and Commerce.
+In this article we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 Finance and Commerce.
 
 Before discussing the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions.
 
 We have made some improvements to how extensions are handled during an upgrade. We recommend using one of the following environment configurations:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with application update 5.
+- Microsoft Dynamics 365 Finance, Enterprise edition (July 2017) with application update 5.
 - Microsoft Dynamics 365 Retail 7.2 with application update 5, which will be available soon.
 - Microsoft Dynamics 365 Retail 7.3, which includes application update 5.
-- Microsoft Dynamics 365 for Finance and Operations 7.3, which includes application update 5.
+- Microsoft Dynamics 365 Finance 7.3, which includes application update 5.
 
 ## Ext schema
 

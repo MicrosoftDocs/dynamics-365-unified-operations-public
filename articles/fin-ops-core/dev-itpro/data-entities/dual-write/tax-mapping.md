@@ -1,13 +1,13 @@
 ---
 title: Integrated tax
-description: This topic describes the integration of tax data between Finance and Operations and Dataverse.
-author: robinarh
+description: This article describes the integration of tax data between finance and operations and Dataverse.
+author: josaw
 ms.date: 09/06/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2019-07-15
 ---
 
@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax. It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.
 
@@ -23,7 +23,7 @@ Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) a
 
 Tax data includes a collection of table maps that work together during data interaction, as shown in the following table.
 
-| Finance and Operations apps | Customer engagement apps | Description |
+| Finance and operations apps | Customer engagement apps | Description |
 |-----------------------------|-----------------------------------|-------------|
 [Item sales tax group](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [Sales tax authorities](mapping-reference.md#193) | msdyn_taxauthorities | |
@@ -34,3 +34,4 @@ Tax data includes a collection of table maps that work together during data inte
 [Withholding tax groups](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

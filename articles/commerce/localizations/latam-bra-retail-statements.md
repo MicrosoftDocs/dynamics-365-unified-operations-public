@@ -1,36 +1,26 @@
 ---
-# required metadata
 title: Post Brazilian fiscal documents via retail statements in Commerce headquarters
-description: This topic describes how to post Brazilian fiscal documents via retail statements in Microsoft Dynamics 365 Commerce.
-author: akviklis
-manager: annbe
+description: This article describes how to post Brazilian fiscal documents via retail statements in Microsoft Dynamics 365 Commerce.
+author: EvgenyPopovMBS
 ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
-
-
-# optional metadata
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Brazil
-ms.search.industry: Retail
-ms.author: akviklis
+ms.author: josaw
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.18
-
+ms.search.industry: Retail
+manager: annbe
 ---
 
 # Post Brazilian fiscal documents via retail statements in Commerce headquarters 
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to post Brazilian fiscal documents via retail statements in Microsoft Dynamics 365 Commerce.
+This article describes how to post Brazilian fiscal documents via retail statements in Microsoft Dynamics 365 Commerce.
 
 After you run P-jobs and post a retail statement, NFC-e (Nota Fiscal do Consumidor eletrônica) fiscal documents that were issued through Commerce point of sale (POS) terminals can be viewed on the **View XML message** page in Commerce headquarters.
 

@@ -1,36 +1,27 @@
 ---
-# required metadata
-
-title: Create and configure extended warranties 
-description: This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
-author:  sijoshi
+title: Create and configure extended warranties
+description: This article covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
+author: josaw1
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: 
-ms.author: sijoshi
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Create and configure extended warranties
 
 [!include [banner](includes/banner.md)]
 
-This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
+This article covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -71,7 +62,7 @@ To create a warranty item in Commerce, follow these steps.
 1. Select **New** to create a warranty item.
 1. In the **New product** dialog box, in the **Product type** field, select **Service**.
 1. In the **Product subtype** field, select **Product**.
-1. In the **Product service type** field, select **Service**.
+1. In the **Product service type** field, select **Warranty**.
 1. In the **Product name** field, enter the product name.
 1. In the **Retail category** field, select a value in the drop-down dialog box, and then select **OK**.
 1. In the **Product number**, enter the product number.

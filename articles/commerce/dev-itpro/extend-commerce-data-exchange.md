@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Extend Commerce Data Exchange - Real-time Service
-description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
-author: mugunthanm
-ms.date: 11/30/2020
+description: This article explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
+author: josaw1
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 68673
-ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 68673
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ---
 
 # Extend Commerce Data Exchange - Real-time Service
 
-[!include [banner](../includes/banner.md)]
+[!Include [banner](../includes/banner.md)]
 
-This topic explains how you can extend Commerce Data Exchange (CDX) - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables clients to interact with Commerce functionality in real time. Finance and Operation databases and classes can’t be accessed directly from Retail server. You should access them through the CDX class extension using the Finance and Operations and Commerce Runtime extension.
+This article explains how you can extend Commerce Data Exchange (CDX) - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables clients to interact with Commerce functionality in real time. Finance and Operation databases and classes can’t be accessed directly from Retail server. You should access them through the CDX class extension using the finance and operations and Commerce Runtime extension.
 
 To extend Commerce Data Exchange - Real-time Service, you create a new method in the **RetailTransactionServiceEx** class. This method must meet the following criteria:
 
@@ -48,7 +37,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 
 ## Create and call a new extension method
 1. Start Microsoft Visual Studio.
-2. On the **Dynamics 365** menu, click **Model management > Create model**.
+2. On the **Dynamics 365** menu, select **Model management > Create model**.
 3. In the **Create model** dialog box, enter the following details.
    -   **Model name** - Contoso
    -   **Model publisher** - Contoso
@@ -56,15 +45,15 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
    -   **Version** - 1.0.0.0
    -   **Model display name** - Contoso
 
-4. Click **Next**.
-5. In the dialog box, select **Select existing package**, and then select **Application Suite** in the list.
-6. Click **Next**.
-7. Click **Finish**.
+4. Select **Next**.
+5. In the dialog box, select **Create new package \> Next**, select **Select referenced packages**, and then in the list select the **Application Suite** and **Application Platform** checkboxes.
+6. Select **Next**.
+7. Select **Finish**.
 8. In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
-9. Click **OK**.
+9. Select **OK**.
 10. Right-click the project and select **Add > New item**. In the **Add New Item** window, select **Class** and enter the name of the class as **ContosoRetailTransactionServiceSample**.
 
-    To consume the CDX method in Commerce runtime (CRT) you must add the ExtensionOf attribute to your class, such as ExtensionOf(classStr(RetailTransactionServiceEx). This means that the class is extending from the RetailTransactionServiceEx.
+    To consume the CDX method in Commerce runtime (CRT) you must add the ExtensionOf attribute to your class, such as ExtensionOf(classStr(RetailTransactionServiceEx). This addition means that the class is extending from the RetailTransactionServiceEx.
 
 11. In the code editor, add the following code. 
 
@@ -75,7 +64,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
     }
     ``` 
 
-12. Inside the class, add a new method to do your custom logic. This is the method that you will call from CRT to do the custom logic.
+12. Inside the class, add a new method to do your custom logic. This method is what you will call from CRT to do the custom logic.
 
     ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
@@ -109,7 +98,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
             catch (Exception::Error)
             {
                 ttsAbort;
-                error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
+                errorMessage = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
 
             // Return sanitized error code.
@@ -137,7 +126,7 @@ After you've finished building your new extension methods, the project will be d
     ```
 
 3.  From the results object, you can read the response values from Real-time Service.
-4.  The CRT framework code  will check the success/failure state and provide an error message based on the values returned form the CDX methods. If required, the extension code can catch this and provide additional logic.  
+4.  The CRT framework code will check the success/failure state and provide an error message based on the values returned from the CDX methods. If required, the extension code can catch this and provide more logic.  
 
     > [!NOTE]
     > The **InvokeExtensionMethodRealtimeRequest** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **ContosoRetailTransactionServiceSample** class.
@@ -172,3 +161,4 @@ if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

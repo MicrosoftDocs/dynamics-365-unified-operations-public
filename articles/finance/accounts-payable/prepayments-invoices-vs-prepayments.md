@@ -2,9 +2,9 @@
 # required metadata
 
 title: Prepayment invoices vs. prepayments
-description: This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). 
+description: This article describes and contrasts the two methods that organizations can use for advance payments (prepayments). 
 author: abruer
-ms.date: 10/26/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransVendPaym, PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). One method creates a prepayment invoice that's associated with a purchase order. The other method creates prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
+This article describes and contrasts the two methods that organizations can use for advance payments (prepayments). One method creates a prepayment invoice that's associated with a purchase order. The other method creates prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 
 Organizations might issue prepayments (advance payments) to vendors for goods or services before those goods or services are fulfilled. Two methods can be used to issue prepayments to vendors. To minimize risk, you can track prepayments by defining the prepayment on a purchase order. For this method, you must create a prepayment invoice that is associated with a purchase order. This method is referred to as prepayment invoicing. Organizations that don't want to track prepayments as closely or don't receive a prepayment invoice from their vendor can use prepayment journal vouchers instead of the prepayment invoicing method. You can create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers. For this method, you can't track which prepayments to a vendor are made against which purchase orders. However, you can mark a posted prepayment for settlement against a purchase order.
 
@@ -70,12 +70,13 @@ A prepayment account must be defined on the **Purchase order** tab of the **Inve
 
 The offsetting summary accounts payable account is defined on the **Vendor posting** profile. To define the default posting profile, click **Accounts payable \>Setup \> Accounts payable parameters \>Ledger and sales tax tab \> Posting profile with prepayment vendor invoice**.
 
-The **Prepayment application policy** indicates whether the system will automatically apply settled prepayment invoices to the final invoice that was created manually. Invoices that are created using a data entity won't refer to the **Prepayment application policy**. You will need to manually apply settled prepayment invoices to invoices that were created using a data entity. To define the policy, go to **Accounts payable \>Setup \> Accounts payable parameters \> Ledger and sales tax tab \> Prepayment application policy**. If the **Prepayment application policy** field is set to **Automatic**, the prepayment invoice will be automatically marked for settlement with the final invoice. If the field is set to **Notification**, a visual indication that a prepayment invoice is available for application will display when the final invoice is created.
+The **Prepayment application policy** indicates whether settled prepayment invoices will be automatically applied to the final invoice that was created manually. Invoices that are created using a data entity won't refer to the **Prepayment application policy**. You will need to manually apply settled prepayment invoices to invoices that were created using a data entity. To define the policy, go to **Accounts payable \>Setup \> Accounts payable parameters \> Ledger and sales tax tab \> Prepayment application policy**. If the **Prepayment application policy** field is set to **Automatic**, the prepayment invoice will be automatically marked for settlement with the final invoice. If the field is set to **Notification**, a visual indication that a prepayment invoice is available for application will display when the final invoice is created.
 
 ## Create a purchase order that contains prepayment invoice information
-When a vendor tells you that they require prepayment for goods and services contained on a purchase order, you must define the prepayment value for the associated purchase order. Go to **Accounts payable \> Common \> Purchase orders \> All purchase orders** and find the vendor’s purchase order. On the Action Pane, select the **Purchase** tab, and then select **Prepayment**. Enter information for the prepayment, including a description, the value of the prepayment, whether the prepayment is a fixed amount or a percentage, and a prepayment category ID. 
+When a vendor tells you that they require prepayment for goods and services contained on a purchase order, you must define the prepayment value for the associated purchase order. Go to **Accounts payable \> Common \> Purchase orders \> All purchase orders** and find the vendor’s purchase order. On the Action pane, select the **Purchase** tab, and then select **Prepayment**. Enter information for the prepayment, including a description, the value of the prepayment, whether the prepayment is a fixed amount or a percentage, and a prepayment category ID. 
 
-Note that multiple prepayments definitions on a purchase order are not allowed. If you need to allow multiple prepayments on a purchase order, post the payments using the payment journal instead of a prepayment invoice.
+> [!Note] 
+> Multiple prepayments definitions on a purchase order are not allowed. If you need to allow multiple prepayments on a purchase order, post the payments using the payment journal instead of a prepayment invoice.
 
 The prepayment may be removed from the purchase order unless you have already settled a payment against the posted prepayment invoice or posted the standard invoice. To remove a prepayment information from the purchase order, select **Accounts payable \> Common \> Purchase orders \> All purchase orders** and find the vendor’s purchase order. On the Action Pane, select the **Purchase** tab, and then select **Remove prepayment**.
 
@@ -83,6 +84,8 @@ The prepayment may be removed from the purchase order unless you have already se
 To record the vendor’s prepayment invoice, go to the **Vendor invoice** page by selecting the **Prepayment invoice** option on the **Purchase orders** page (**Accounts payable \> Common \> Purchase orders \> All purchase orders \> Invoice tab \> Prepayment invoice**). Enter information for the prepayment invoice, including the invoice number. You cannot change quantities for a prepayment invoice. If the vendor has invoiced a partial amount of the prepayment value that's defined on the purchase order, you can update the unit price to reflect the partial value.
 
 When the prepayment invoice is posted, the vendor balance and prepayment account will be updated. The **Prepayment application** value on the prepayment definition contained on the purchase order will also be updated. The default financial dimension entries for the posted prepayment voucher will be taken from the header information on the purchase order.
+
+If the **Lock financial dimensions on invoice lines on vendor prepayment invoice** feature on the **Feature management** page is turned on, the dimensions in the prepayment header or lines can't be updated. 
 
 ## Post and settle payments for the prepayment invoice
 Next, the prepayment invoice will be paid from the **Payment journal** page. To access payment journals, click **Accounts payable \> Journals \> Payments \> Payment journal**. After posting the settlement of the payment to the prepayment invoice, the purchase order’s **Prepayment application remaining** value will be updated.

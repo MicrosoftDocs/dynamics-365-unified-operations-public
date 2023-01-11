@@ -1,17 +1,18 @@
 ---
 title: Control module
 description: Controls are what make up the content of a page.
-author: robinarh
-ms.date: 11/10/2017
+author: jasongre
+ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: jasongre
 ---
 
 # Control module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Controls are what make up the content of a page.
 

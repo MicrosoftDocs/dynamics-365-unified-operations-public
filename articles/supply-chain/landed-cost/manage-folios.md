@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage folios
-description: This topic describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
-author: sherry-zheng
+description: This article describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
+author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMFolioTable, ITMFolioTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
+A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio are managed in one container.
 
 To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. This page shows a list of all current folios. You can use the buttons on the Action Pane to create, delete, and work with folios. Select any folio in the list to view its details on the **Folios** page.
 
@@ -53,9 +53,9 @@ The following table describes the buttons that are available on the **Manage** t
 
 | Button | Description |
 |---|---|
-| Post receipts list | Post a receipt list for all purchase order lines in the folio. If multi-company shipments are used, a new receipt list posting dialog box is opened for each company. |
-| Post product receipt | Post a product receipt for all purchase order lines in the folio. If multi-company voyages are used, a new product receipt posting dialog box is opened for each company. |
-| Post invoice | Post an invoice for all purchase order lines in the folio. If multi-company voyages are used, a new invoice posting dialog box is opened for each company. |
+| Post receipts list | Post a receipt list for all purchase order lines in the folio.  |
+| Post product receipt | Post a product receipt for all purchase order lines in the folio. |
+| Post invoice | Post an invoice for all purchase order lines in the folio.  |
 | Ship transfer order | Post a transfer order for all transfer order lines that are related to the current folio in the related shipment. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines that are related to the current folio in the related shipment. |
 | Receive goods in transit | Receive all order lines that are in transit in the folio. |
@@ -70,7 +70,7 @@ The following table describes the buttons that are available on the **General** 
 
 | Button | Description |
 |---|---|
-| Receipts list | Post a receipt list for all purchase order lines in the folio. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company. |
+| Receipts list | Post a receipt list for all purchase order lines in the folio.  |
 | Product receipt | View the product receipt record, if it's used. |
 | Item arrival | View the item arrival journal, if it's used. |
 | Costs inquiry | Open the cost inquiry page to view all the costs of a voyage, including the shipping container, folio, and purchase order. You can adjust the exact view of the page by using the View action. On the cost inquiry page, you can view any of the areas, plus the item and cost type code. By removing these items, you can adjust the page by grouping together costs. This capability can be useful if you're using sizes and colors. You can change the dimensions that are shown on the page. The **Costs** page shows only cost type codes where the **Dr** entry on the **Posting** tab is set to *Item*. |
@@ -137,7 +137,7 @@ To open the **Lines** view, open a folio, and then select the **Lines** tab in t
 
 ### Information on the Folio FastTab
 
-The **Folio** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this topic.
+The **Folio** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this article.
 
 ### Information and buttons on the Lines FastTab
 

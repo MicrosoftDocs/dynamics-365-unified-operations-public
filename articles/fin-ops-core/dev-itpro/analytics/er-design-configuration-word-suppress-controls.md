@@ -1,34 +1,27 @@
---- 
-# required metadata 
- 
+---
 title: Suppress Word content controls in generated reports
-description: This topic explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
-author: NickSelin
+description: This article explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed.
+author: kfend
 ms.date: 02/11/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2020-01-01 
-ms.dyn365.ops.version: Version 10.0.6 
+ms.author: filatovm
+ms.search.validFrom: 2020-01-01
+ms.dyn365.ops.version: Version 10.0.6
+ms.search.form: 
+  - ERWorkspace, ERSolutionTable, EROperationDesigner
+  - LedgerJournalTable, LedgerJournalTransVendPaym
 ---
 
 # Suppress Word content controls in generated reports
 
 [!include [banner](../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component. This ER format must be configured to use the designed template for report generation.
+To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. This ER format must be configured to use the designed template for report generation.
 
 In version 10.0.6 and later of Dynamics 365 Finance, you can configure formulas in your ER format to suppress some Word content controls in generated documents.
 
@@ -46,12 +39,12 @@ To complete these steps, you must first complete the steps in the following task
 When you complete the steps of these task guides, the following items are prepared:
 
 - A **Sample worksheet report** ER format that is configured to generate a document in Word format
-- A [draft](general-electronic-reporting.md#component-versioning) version of the **Sample worksheet report** ER format that is marked as **Runnable**
+- A draft version of the **Sample worksheet report** ER format that is marked as **Runnable**
 - An **Electronic** method of payments that is configured to use the **Sample worksheet report** ER format for vendor payment processing
 
 You must also download and save the following template for the sample report:
 
-- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded2.docx)
+- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a id="tag-control"></a>Review the downloaded Word template
 

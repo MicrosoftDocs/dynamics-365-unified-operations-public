@@ -2,8 +2,8 @@
 # required metadata
 
 title: Bank statement file import troubleshooting
-description: It's important that the bank statement file from the bank matches the layout that Microsoft Dynamics 365 Finance supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
-author: panolte
+description: This article explains how to fix issues are caused by small differences in the bank statement file.
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form: BankStatementFormat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Bank statement file import troubleshooting
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>This functionality will be deprecated September 2022, new users should use electronic reporting.
 
 It's important that the bank statement file from the bank matches the layout that Microsoft Dynamics 365 Finance supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 
@@ -44,7 +47,7 @@ After you try to import a bank statement file, go to the Data management job his
 Compare the bank file layout definition to the Finance import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance file. In the ISO20022 files, any differences should be easy to see.
 
 ## Time zone differences on imported bank statements
-The date-time values in the import file can differ from the date-time values that are shown in Finance and Operations. To prevent this discrepancy, enter a time zone preference on the **Configure data sources** page. For more information about entering a time zone preference, see [Set up the advanced bank reconciliation import process](set-up-advanced-bank-reconciliation-import-process.md).
+The date-time values in the import file can differ from the date-time values that are shown in finance and operations. To prevent this discrepancy, enter a time zone preference on the **Configure data sources** page. For more information about entering a time zone preference, see [Set up the advanced bank reconciliation import process](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## Transformations
 Typically, the change must be made in one of three transformations. Each transformation is written for a specific standard.
@@ -114,3 +117,4 @@ The following table lists examples of the technical layout definitions for advan
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manual update of asset counters
-description: This topic describes manual update of asset counters in Asset Management.
+description: This article describes manual update of asset counters in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -39,7 +39,7 @@ The counter type that is selected for a counter might be set to inherit counter 
 
 On the **All assets** page, you create hours or quantity counter registrations on an asset, based on your readings on the asset.
 
-1. Select **Asset management** > **Common** > **Assets** > **All assets**.
+1. Select **Asset management** > **Assets** > **All assets**.
 
 2. Select the asset, and then, on the Action Pane, on the **Asset** tab, in the **Preventive** group, select **Counters**. The **Asset counters** page shows a list of all previous counter registrations that have been made on the selected asset.
 

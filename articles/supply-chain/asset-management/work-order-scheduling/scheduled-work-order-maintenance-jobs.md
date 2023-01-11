@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scheduled work order maintenance jobs
-description: This topic explains scheduled work order maintenance jobs in Asset Management.
+description: This article explains scheduled work order maintenance jobs in Asset Management.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -37,7 +37,7 @@ The **Scheduled work order maintenance jobs** page shows an overview of the work
 
 ## View scheduled work order maintenance jobs
 
-1. Click **Asset management** > **Common** > **Work orders** > **Scheduled work order maintenance jobs**. You see a list of all work orders set to work order lifecycle state "Scheduled" or "In progress".
+1. Click **Asset management** > **Work orders** > **Scheduled work order maintenance jobs**. You see a list of all work orders set to work order lifecycle state "Scheduled" or "In progress".
 
 2. You can sort the list, for example, by maintenance worker. You can also use the filter to limit the list to display work orders allocated to a specific resource or maintenance worker.
 

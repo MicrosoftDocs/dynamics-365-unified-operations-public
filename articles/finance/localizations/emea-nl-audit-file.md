@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Audit file (XML Auditfile Financieel, XAF)
-description: This topic explains how to set up and generate the Audit file for legal entities in the Netherlands.  
-author: liza-golub
+description: This article explains how to set up and generate the Audit file for legal entities in the Netherlands.
+author: AdamTrukawka
 ms.date: 05/06/2020
 ms.topic: article
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxEvatParameters_NL   
-audience: Application User 
-# ms.devlang:  
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Netherlands
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: TaxEvatParameters_NL
 ---
 # Audit file (XML Auditfile Financieel, XAF)
 
@@ -29,7 +20,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This functionality is available for legal entities whose primary address is in the Netherlands.
 
-This topic explains how to import Electronic reporting (ER) configurations for the Audit file and then generate the Audit file for legal entities in the Netherlands.
+This article explains how to import Electronic reporting (ER) configurations for the Audit file and then generate the Audit file for legal entities in the Netherlands.
 
 ## Import and set up ER configurations
 

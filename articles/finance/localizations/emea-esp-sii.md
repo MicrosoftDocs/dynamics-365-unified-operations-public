@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
-description: This topic describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
-author: liza-golub
-ms.date: 10/13/2021
+description: This article describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
+author: AdamTrukawka
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 
 [!include [banner](../includes/banner.md)]
 
-According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this topic, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
+According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA [SII]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria [AEAT]) and the taxpayer. In this article, this system will be referred to as the SII system. Starting July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
 
 For more information about the SII system of Spain, see the [Immediate Supply of Information on VAT (SII) official website](https://www.agenciatributaria.es/AEAT.internet/en_gb/Inicio/La_Agencia_Tributaria/Campanas/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_/Suministro_Inmediato_de_Informacion_en_el_IVA__SII_.shtml).
 
@@ -49,7 +38,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**
 
-This topic describes how to set up and use Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
+This article describes how to set up and use Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
 
 -   Import Electronic reporting (ER) configurations.
 -   Set up Electronic messaging (EM) functionality.
@@ -130,7 +119,7 @@ The electronic message processing from the previous table works with the followi
 | FacturasСliente                   | **Customer invoices**                                                                                                                                                                                                                                                                                                                                                                                                         | SII              |
 | PagosCliente                      | **Customer payments:** Message items of this type are created for existing customer invoices where the **Special scheme code** value is set to **07**.                                                                                                                                                                                                                                                             | SII              |
 | PagosProveedores                  | **Vendor payments:** Message items of this type are created for existing vendor invoices where the **Special scheme code** value is set to **07**.                                                                                                                                                                                                                                                                  | SII              |
-| OperacionesIntracomunitarias      | **Intra-community operations:** Message items of this type are created for existing vendor invoices that meet specific intra-community criteria. For more information, see the description in the [Algorithm of to define the TipoOperacion (Intra-community operation type) additional field](#algorithm-to-define-the-tipooperacion-intra-community-operation-type-additional-field) section later in this topic. | SII              |
+| OperacionesIntracomunitarias      | **Intra-community operations:** Message items of this type are created for existing vendor invoices that meet specific intra-community criteria. For more information, see the description in the [Algorithm of to define the TipoOperacion (Intra-community operation type) additional field](#algorithm-to-define-the-tipooperacion-intra-community-operation-type-additional-field) section later in this article. | SII              |
 | CobrosEnMetálico                  | **Collections in cash records:** Message items of this type are filled in from preliminary information that is collected about payment transactions that are posted from customers to specific cash accounts.                                                                                                                                                                                                                 | CollectionInCash |
 
 To review the imported electronic message item types, go to **Tax** \> **Setup \> **Electronic messages** \> **Message item types**.
@@ -152,12 +141,12 @@ For more information about how to set up Key Vault, see [Setting up Azure Key Va
 
 | **Web service name** | **Description**                                                                                                                                                                                                                 | **Testing internet address**                               |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| Cust invoice         | This web service is provided by AEAT. It's used to submit information about issued invoices, and it sends back a response that contains information about invoice processing on the SII system side.                            | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactFEV1SOAP`  |
-| Vend invoice         | This web service is provided by AEAT. It's used to submit information about received invoices, and it sends back a response that contains information about invoice processing on the SII system side.                          | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactFRV1SOAP`  |
-| Intra-community      | This web service is provided by AEAT. It's used to submit information about intra-community invoices, and it sends back a response that contains information about invoice processing on the SII system side.                   | `https://www7.aeat.es/wlpl/SSII-FACT/ws/oi/SiiFactOIV1SOAP`  |
-| Cust payment         | This web service is provided by AEAT. It's used to submit information about payments from customers for specific invoice types, and it sends back a response that contains information about processing on the SII system side. | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactCOBV1SOAP` |
-| Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://www7.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
-| CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://www7.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
+| Cust invoice         | This web service is provided by AEAT. It's used to submit information about issued invoices, and it sends back a response that contains information about invoice processing on the SII system side.                            | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactFEV1SOAP`  |
+| Vend invoice         | This web service is provided by AEAT. It's used to submit information about received invoices, and it sends back a response that contains information about invoice processing on the SII system side.                          | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactFRV1SOAP`  |
+| Intra-community      | This web service is provided by AEAT. It's used to submit information about intra-community invoices, and it sends back a response that contains information about invoice processing on the SII system side.                   | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/oi/SiiFactOIV1SOAP`  |
+| Cust payment         | This web service is provided by AEAT. It's used to submit information about payments from customers for specific invoice types, and it sends back a response that contains information about processing on the SII system side. | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fe/SiiFactCOBV1SOAP` |
+| Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
+| CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
 
 Internet addresses are subject to change by AEAT. Therefore, we recommend that you check for actual internet addresses on the [official website of the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html). The official documentation also has information about the actual *production* internet addresses that you should set up.
 
@@ -222,7 +211,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
    | CUSTOMER INVOICE JOURNAL      | This datasource populates data from the **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
    | VENDOR INVOICE JOURNAL        | This datasource populates data from the **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to the SII system of Spain. |
    | PROJECT INVOICE               | This datasource populates data from the **Project invoice** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
-   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this topic. |
+   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this article. |
 
 5.  Select **OK** to initiate the executable class.
 
@@ -571,6 +560,22 @@ To limit access to **SII** and **CollectionInCash** processing, follow these ste
 1.  Go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
 2.  Select **SII** or **CollectionInCash** processing, and then add the security groups that must work with that processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
+## <a name='exempt'></a> Set up exempt code types on issued and received invoice formats
+
+To support the scenario of reporting exempt code types on issued and received invoices, complete the following steps.
+
+1. Go to **Workspace** > **Electronic reporting**.
+2. Go to **Reporting configurations**.
+3. In the left pane, expand the **Invoices Communication Model** node.
+4. Select the format configurations **SII Invoice Issued Format (ES)** with a version higher than 108.54 or **SII Invoice Received Format (ES)** with a version higher than 108.47.
+5. Select **Configurations** > **Application specific parameters** > **Setup**
+6. Select **ExemptionCauseTypeLookUp**
+7. On the **Conditions** tab, select **Add**.
+8. In the **Lookup result** field, select the applicable exemption type.
+9. In the **Tax exempt code** field, enter the tax exempt code for each exemption type.
+10. Select **Save** and close the page.
+11. Select **Change status** > **Complete**.
+
 ## Additional setup in Finance for reporting to the SII system
 
 ### Exclude transactions that have a negative sales tax percentage from SII processing
@@ -616,6 +621,30 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 2.  Select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
 3.  On the Action Pane, select **Parameters**, and then set up the **TipoOperacion** value for the **Intra-community operation ID** additional field.
 
+### Set up sales tax codes to report the exempt code types on issued and received invoices files
+
+In addition to the set up of Exempt code types on Issued and Received Invoice formats, Complete the following steps toadd exempt code types to sales tax codes for issues and received invoice fiels.
+
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
+2. Select a **Sales tax group**.
+3. For each sales tax code that is granted tax exemptions, on the **Setup** tab, select a **Sales tax code**.
+5. In the **Exempt code** column, enter the **Exemption code type**. The code type must be the same code that you entered in the **ExemptionCauseType** lookup in the [Set up Exempt code types on Issued and Received Invoice formats](#exempt) section.
+6. Select **Save**.
+
+This set up drives the fulfilling of the 'CausaExencionType' tag on the issued and received invoices files.
+
+### Set up item sales tax codes to flag the good investments on the received invoices file
+
+To distinguish the acquisition of goods between investments and non-investments from received invoices, complete the following steps.
+
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**.
+2. Select an **Item sales tax group**.
+3. In the **Reporting type** field, select **Investment**.
+4. Select **Save**.
+
+This set up drives the fulfilling of the Bien 'Inversion' tag in the received invoices files.
+
+
 ## <a name="multiple-vat"></a>Reporting to the SII system of Spain for multiple VAT registrations
 
 As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can report the following reports to the SII system of Spain:
@@ -626,9 +655,12 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](global-tax-
 After the **Support multiple VAT registration numbers** feature is enabled, provide the following setup so that you can report to the SII system from a legal entity with a primary address outside of Spain.
 
 1. In the **Feature management** workspace, enable the **Sales tax declaration for multiple VAT registrations** feature.
-2. On the **Tax calculation parameters** page, on the **Multiple VAT registrations** tab, select the **VAT delcarion** check box.
+2. On the **Tax calculation parameters** page, on the **Multiple VAT registrations** tab, select the **VAT declaration** check box.
 3. Define the VAT registration number of the company from the name that you will be reporting to SII system of Spain in the **Company Tax Id** field in the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
 4. Specify the **Transfer order history** data source on **Records to include** FastTab of the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
+
+> [!NOTE]
+> When the **Support multiple VAT registration numbers** and **Sales tax declaration for multiple VAT registrations** features are enabled, the SII system of Spain collects the value in the **NombreRazon** field from the **Name or description** field on the **Manage addresses** page instead of from the name of the legal entity.
 
 ## Use EM functionality to report to the SII system
 
@@ -636,7 +668,7 @@ EM functionality automatically runs actions that are included in the processing 
 
 ### Process for reporting invoices to the SII system
 
-The **ES SII setup.zip** package provides the setup for **SII** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for general **SII** processing. Manual user actions aren't included in this illustration but are explained later in this topic.
+The **ES SII setup.zip** package provides the setup for **SII** processing in the EM functionality that supports interoperation with the SII system. The following illustration shows the schema for general **SII** processing. Manual user actions aren't included in this illustration but are explained later in this article.
 
 ![Schema for general SII processing.](media/emea-esp-sii-process.png)
 

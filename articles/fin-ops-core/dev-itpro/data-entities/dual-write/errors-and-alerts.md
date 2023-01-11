@@ -1,11 +1,11 @@
 ---
 title: Error management and alert notifications
-description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
+description: This article explains error logs and alert notifications that can help you troubleshoot issues.
 author: nhelgren
-ms.date: 03/20/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft has invested lots of time and effort into making dual-write resilient to errors. However, if you encounter an issue while or after you enable table maps for dual-write, you can select specific table maps to get a consolidated view of all the activities and errors for them. This consolidated view includes error logs. The goal is to help you during troubleshooting by providing a single view of the activities for a table map.
 
@@ -28,11 +28,11 @@ The activity log provides a chronological list of events that a specific table m
 
 ## Re-running execution for Initial sync
 
-If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
+If you encounter issues while you copy pre-existing data between finance and operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
 
 ![Initial sync error.](media/Initial-sync-rerun-1.png)
 
-Clicking on the individual project will show you the direction in which the sync failed (Finance and Operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
+Clicking on the individual project will show you the direction in which the sync failed (finance and operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
 
 ![Initial sync retry with errors.](media/Initial-sync-rerun-3.png)
 
@@ -51,7 +51,7 @@ The detailed Error message will help you fix the underlying issue after which yo
 ![Queued records completed.](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
 
 > [!NOTE]
-> Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and they can be deleted from the queue.
+> Errored records will be available in the queue for one day, after which time they will by purged. In some cases, you may no longer need these records and they can be deleted from the queue.
 
 ## Alert notifications
 

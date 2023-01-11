@@ -1,37 +1,24 @@
 ---
-# required metadata
-
 title: General budget reservations
-description: This topic provides information about general budget reservations for Public sector.
-author: TaylorVH
+description: This article provides information about general budget reservations for Public sector.
+author: brpotter
 ms.date: 08/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetReservation_PSN
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: roschlom
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: Public sector
+ms.search.form: BudgetReservation_PSN
 ---
 
 # General budget reservations
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 A *general budget reservation* is a document that is sometimes also referred to as a *commitment*. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. Typically, these reservations are made before any vendors have been selected for the purchase. By using general budget reservations, an organization can explicitly track planned expenditures for management and reporting purposes. Each purchase requisition, purchase order, or vendor invoice that is generated can be associated with at least one general budget reservation.
 

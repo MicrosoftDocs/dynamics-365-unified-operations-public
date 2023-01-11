@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Customer electronic invoices in Saudi Arabia
-description: This topic explains how to configure and submit customer electronic invoices in Saudi Arabia.
-author: ikondo
-ms.date: 10/26/2021
+description: This article explains how to configure and submit customer electronic invoices in Saudi Arabia.
+author: mrolecki
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 574540
 ms.search.region: Saudi Arabia
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.21
-
+ms.custom: 574540
+ms.search.form: 
 ---
 
 # Customer electronic invoices in Saudi Arabia
@@ -34,7 +23,7 @@ ms.dyn365.ops.version: 10.0.21
 According to Saudi Arabian legal requirements, invoices that are issued to customers must be generated in an electronic format. To generate electronic invoices, the following two-part system configuration is required.
 
 - **Electronic invoicing service** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md).
-- **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
+- **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
 
@@ -132,6 +121,17 @@ Similarly, you can define the invoice type for free text invoices.
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Create a new free text invoice, or select an open free text invoice.
 3. On the invoice header, on the **General** FastTab, in the **Invoice** group, in the **Invoice type** field, select the required value.
+
+## Define default invoice types for customers
+
+You can define an invoice type at the customer record level. That invoice type is then used by default for new sales orders and free text invoices.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a customer.
+3. On the **Invoice and delivery** FastTab, in the **Invoice** group, in the **Invoice type** field, select the required value.
+
+> [!NOTE]
+> If no invoice type is defined in a customer record, the **Tax invoice** type is used by default for new sales orders and free text invoices.
 
 ## Configure printable invoice layouts
 

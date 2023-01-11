@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Carrier groups
-description: This topic describes how to set up data for carrier groups.
-author: Henrikan
+description: This article describes how to set up data for carrier groups.
+author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2020-10-30 
 ms.dyn365.ops.version: 10.0.15
 ---

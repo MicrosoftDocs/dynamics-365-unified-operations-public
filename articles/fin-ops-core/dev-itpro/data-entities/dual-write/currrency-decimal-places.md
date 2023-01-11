@@ -1,11 +1,11 @@
 ---
 title: Currency data-type migration for dual-write
-description: This topic describes how to change the number of decimal places that dual-write supports for currency.
-author: RamaKrishnamoorthy 
-ms.date: 04/06/2020
+description: This article describes how to change the number of decimal places that dual-write supports for currency.
+author: RamaKrishnamoorthy
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-04-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 You can increase the number of decimal places that are supported for currency values to a maximum of 10. The default limit is four decimal places. By increasing the number of decimal places, you help prevent data loss when you use dual-write to sync data. The increase in the number of decimal places is an opt-in change. To implement it, you must request assistance from Microsoft.
 
@@ -24,7 +24,7 @@ The process of changing the number of decimal places has two steps:
 1. Request migration from Microsoft.
 2. Change the number of decimal places in Dataverse.
 
-The Finance and Operations app and Dataverse must support the same number of decimal places in currency values. Otherwise, data loss can occur when this information is synced between apps. The migration process reconfigures the way that currency and exchange rate values are stored, but it doesn't change any data. After the migration is completed, the number of decimal places for currency codes and pricing can be increased, and the data that users enter and view can have more decimal precision.
+The finance and operations app and Dataverse must support the same number of decimal places in currency values. Otherwise, data loss can occur when this information is synced between apps. The migration process reconfigures the way that currency and exchange rate values are stored, but it doesn't change any data. After the migration is completed, the number of decimal places for currency codes and pricing can be increased, and the data that users enter and view can have more decimal precision.
 
 Migration is optional. If you might benefit from support for more decimal places, we recommend that you consider migration. Organizations that don't require values that have more than four decimal places don't have to migrate.
 
@@ -32,7 +32,7 @@ Migration is optional. If you might benefit from support for more decimal places
 
 Storage for existing currency columns in Dataverse can't support more than four decimal places. Therefore, during the migration process, currency values are copied to new internal columns in the database. This process occurs continuously until all data has been migrated. Internally, at the end of migration, the new storage types replace the old storage types, but the data values are unchanged. The currency columns can then support up to 10 decimal places. During the migration process, Dataverse can continue to be used without interruption.
 
-At the same time, exchange rates are modified so that they support up to 12 decimal places instead of the current limit of 10. This change is required so that the number of decimal places is the same in both the Finance and Operations app and Dataverse.
+At the same time, exchange rates are modified so that they support up to 12 decimal places instead of the current limit of 10. This change is required so that the number of decimal places is the same in both the finance and operations app and Dataverse.
 
 Migration doesn't change any data. After the currency and exchange rate columns are converted, admins can configure the system to use up to 10 decimal places for currency columns by specifying the number of decimal places for each transaction currency and for pricing.
 
@@ -78,9 +78,21 @@ If you require that the currency precision for a specific currency differ from t
 
 ![Currency settings for a specific locale.](media/specific-currency.png)
 
-### tables: Currency column
+### Tables: Currency column
 
 The number of decimal places that can be configured for specific currency columns is limited to four.
 
+### Default currency decimal precision
+For the expected behavior for the default currency decimal precision under migration and non-migration scenarios, refer to the following table. 
+
+| Created date  | Currency decimal field    | Existing org (Currency field not migrated) | Existing org (Currency field migrated) | New org created post build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Currency field created before build 9.2.21111.00146  |     |  |       |
+|    | Max precision visible in UI   | 4 digits    | 10 digits    | N/A    |
+| | Max precision visible in database and DB query results UI         | 4 digits   | 10 digits   | N/A    |
+| Currency field created after build 9.2.21111.00146 |    |  |     |   |
+|   | Max decimal precision visible in UI     | 4 digits   | 10 digits   | 10 digits     |
+|          | Max decimal precision visible in database and DB query results UI | 10 digits. However, only 4 are significant with all zeros beyond the 4 decimal digits. This enables a simpler and faster migration of the org, if required. | 10 digits      | 10 digits     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

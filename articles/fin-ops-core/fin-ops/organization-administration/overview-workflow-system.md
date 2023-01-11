@@ -2,10 +2,10 @@
 # required metadata
 
 title: Workflow system overview
-description: This topic describes the workflow system.
+description: This article describes the workflow system.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the workflow system.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article describes the workflow system.
 
 ## What is workflow?
 

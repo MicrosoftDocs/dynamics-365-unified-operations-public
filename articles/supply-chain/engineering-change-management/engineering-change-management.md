@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage changes to engineering products
-description: This topic provides information about engineering change management. Engineering change management provides structured processes for managing changes to engineering products, from proposing, requesting, and making changes, to reviewing and approving changes, assessing their impact on existing transactions, and following up on them.
+description: This article provides information about engineering change management. Engineering change management provides structured processes for managing changes to engineering products, from proposing, requesting, and making changes, to reviewing and approving changes, assessing their impact on existing transactions, and following up on them.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -127,7 +127,7 @@ To review affected transactions, block selected transactions, and send related n
     - **View all transactions** – Open the full list of all transactions, not just the open transactions.
 
 > [!IMPORTANT]
-> The **Notify production** button is available only if the *Engineering notifications for production* feature is turned on in your system. For instructions, see [Engineering change management overview](product-engineering-overview.md).
+> The **Notify production** button is available only if the *Engineering notifications for production* feature is turned on for your system. For instructions on how to turn this feature and its prerequisites on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 #### <a name="review-notifications"></a>Review and process change notifications for transactions
 
@@ -140,11 +140,13 @@ You can read and process the change notifications that you receive in the follow
 As you're reviewing production order notifications on the **Engineering notifications** page, you can follow links to related change orders or production orders by selecting column values or using the related commands on the Action Pane. After you've finished evaluating a change, and after you've canceled or modified production orders as required, you can mark a notification as resolved. Select the notification, and then, on the Action Pane, select **Resolve**. The notification is removed from all users' views.
 
 > [!IMPORTANT]
-> The ability to send notifications for production orders requires that the *Engineering notifications for production* feature be turned on in your system. For instructions, see [Engineering change management overview](product-engineering-overview.md).
+> The ability to send notifications for production orders requires that the *Engineering notifications for production* feature be turned on for your system. For instructions on how to turn this feature and its prerequisites on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ### Create a change order from a change request
 
 An engineer who is reviewing an engineering change request can create an engineering change order directly from the **Engineering change requests** page. On the Action Pane, on the **Change request** tab, in the **Engineering change order** group, select **Copy link and products**.
+
+Be sure to select the correct company for the new engineering change order. If the change order will result in the engineering product itself being changed (new version, new product, or new variant), then the change order must be assigned to the engineering company. If only a local change is needed (**Impact** is set to *None*), then the change order can be assigned to a local company and the changes will apply to the current product.
 
 ## Engineering change orders
 
@@ -221,5 +223,15 @@ Most of the fields on engineering change orders are the same as the fields for r
 
 You can use the **Maintain/copy change information** button to copy change information between affected products.
 
+## Use electronic signatures to approve and active BOMs and routes
+
+To use electronic signatures to approve and/or activate bills of material (BOM) and/or route changes, go to **Organization administration \> Setup \> Electronic signature \> Electronic signature requirements**. Then make sure each of the following items has **Signature required** set to *Yes*:
+
+- Activate engineering change order product bill of materials
+- Activate engineering change order product route
+- Approve engineering change order product bill of materials
+- Approve engineering change order product route
+- Approve engineering version BOM and BOM versions
+- Approve engineering version and route version
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

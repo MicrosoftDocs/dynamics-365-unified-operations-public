@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Payment methods
 description: Each payment type that a retailer accepts must be configured when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
-author: rubencdelgado
+author: BrianShook
 ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTenderTypeTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 15831
-ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: yabinl
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 15831
+ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
+ms.search.industry: Retail
+ms.search.form: RetailTenderTypeTable
 ---
 
 # Payment methods

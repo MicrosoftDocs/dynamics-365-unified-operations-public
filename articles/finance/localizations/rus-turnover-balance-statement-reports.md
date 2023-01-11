@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Turnover balance statement reports
-description: This topic provides information about turnover balance sheets for customers, vendors, and advanced holders.
-author: v-nadyuz
+description: This article provides information about turnover balance sheets for customers, vendors, and advanced holders.
+author: AdamTrukawka
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Turnover balance statement reports

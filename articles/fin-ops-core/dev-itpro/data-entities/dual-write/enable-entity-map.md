@@ -1,11 +1,11 @@
 ---
 title: Enable table maps for dual-write
-description: This topic describes how the table maps work for dual-write.
+description: This article describes how the table maps work for dual-write.
 author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 When you enable a table map for dual-write, it begins at the **Not running** status. The table map then goes through an initialization phase, where it does an initial write by copying pre-existing data on tables on both sides. Finally, when the table is completely enabled, the table map sets the status to **Running**.
 
@@ -63,11 +63,11 @@ After you've finished making your selections in the dialog box, and you select *
 
 ## <a id="criteria-for-linking"></a>Criteria for linking tables
 
-To enable table maps for dual-write, you must define an alternative key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app.
+To enable table maps for dual-write, you must define an alternative key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the finance and operations app.
 
-For example, in a Finance and Operations app, **CustomerAccount** is the key for the Account table.
+For example, in a finance and operations app, **CustomerAccount** is the key for the Account table.
 
-![Key for the Account table in a Finance and Operations app.](media/define-alternative-key.png)
+![Key for the Account table in a finance and operations app.](media/define-alternative-key.png)
 
 In Dataverse, **accountnumber** is defined as the key for the Account table.
 

@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Mock the signed-in state during local development
-description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
+description: This article describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
-ms.date: 04/06/2021
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Mock the signed-in state during local development
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
+This article describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 
 Over the course of developing your e-Commerce online site, it may become necessary to develop and test scenarios for signed-in users. Rather than publish these pages and test against live pages, you can instead mock the signed-in state when running in developer mode.
  
@@ -172,6 +163,35 @@ After using the information collected in the Azure setup steps to populate your 
 
 - **defaultUser**: The default user that will be used when the **mockUser** query parameter is set to **true**. The name value should be **default**.
 - **additionalUsers**: An array of user objects that allows you to configure additional users to test with. Each entry in this array should be an object with a name, email address, password, and customer account number. To sign in as one of these users, use the query parameter **mockUser=\<name>**.
+
+### Mock a signed-in B2B user 
+
+If you need to mock a signed-in business-to-business (B2B) user, you can use the **isB2bUser** property for a user credential and set it to **true**, as shown in the following example.
+
+```json
+{
+    "loginDomain": "commerceonboardingb2c.b2clogin.com",
+    "b2cTenant": "commerceonboardingb2c",
+    "nativeApplicationId": "25f6742d-f8b8-44d9-a6a0-f06d2854ac5f",
+    "ropcUserFlowName": "B2C_1_ROPC_Auth",
+    "userImpersonationScopeURL": "https://commerceonboardingb2c.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation",
+    "defaultUser": {
+        "name": "default",
+        "email": "",
+        "password": "",
+        "customerAccountNumber": "",
+        "isB2bUser": true
+    },
+    "additionalUsers":[ 
+        {
+            "name": "test-user-1",
+            "email": "test-user-1@example.com",
+            "password": "password",
+            "customerAccountNumber": ""
+        }
+    ]
+}
+```
 
 ## Mock sign-in status
 

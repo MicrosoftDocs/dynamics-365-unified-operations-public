@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Feature callouts
 description: Trigger feature callouts raise awareness of new capabilities to users.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
-ms.search.validFrom: 2019-5-31
+ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: Platform update 26
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Feature callouts
@@ -35,7 +24,7 @@ ms.dyn365.ops.version: Platform update 26
 ## Introduction
 While documentation is helpful for explaining new features, it’s also important to raise awareness of these new capabilities as users encounter the feature while using the product. As a result, feature callouts are available in Platform update 26. You can use feature callouts to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. 
 
-In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
+In this article, the APIs that are used to construct feature callouts are discussed in detail.   
 
 ![Feature callout for Navigation Pane changes.](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Establish common values for engineering change management
-description: This topic describes how to establish common values that are used for parameters in various parts of engineering change management.
+description: This article describes how to establish common values that are used for parameters in various parts of engineering change management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg

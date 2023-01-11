@@ -2,9 +2,9 @@
 # required metadata
 
 title: Financial dimensions
-description: This topic describes the various types of financial dimensions and how they are set up.
+description: This article describes the various types of financial dimensions and how they are set up.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 25871
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the various types of financial dimensions and how they are set up.
+This article explains the various types of financial dimensions and how they are set up.
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
 
@@ -83,8 +83,12 @@ To help maintain referential integrity of the data, financial dimensions can rar
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
 - Is the financial dimension part of a default financial dimension integration format?
 - Has the financial dimension been set up as a default dimension?
+- Has the financial dimension been unselected from the Financial Reporting setup? 
 
 If any of the criteria are met, you can't delete the financial dimension.
+
+> [!NOTE]
+> Starting in Finance version 10.0.27, financial dimensions will no longer be automatically selected for financial reporting setup as they are created.
 
 ## Default dimension values
 
@@ -120,7 +124,7 @@ Derived dimensions with this setting do not automatically replace the existing d
 
 ### Preventing changes with derived dimensions
  
-When you use **Add segment"** on the **Derived dimensions page** to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
+When you use **Add segment"** on the **Derived dimensions page** to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off, so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want to prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
  
 The setting does not prevent changes if the dimension value is valid but it is not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you will not be able to edit Department 20. However, if you enter Cost center 20 and it is not in the list of derived dimensions for Cost center, then you can edit the Department value. 
  
@@ -136,6 +140,12 @@ You can set up the derived dimensions segments and values by using entities.
 - The Derived dimensions value entity lets you import the values that should be derived for each driving dimension.
 
 When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
+
+## Financial dimension service
+
+The Financial dimension service add-in is available in your Microsoft Dynamics Lifecycle Services environment. It provides improved performance when you use the Data management framework to import a journal that has a large number of lines. To use the service, you must enable it on the **Financial dimension service parameters** page. Currently, the service works only on imported journals that have 500 lines or more. In addition, it can currently process only general journals where the **Ledger** account type is set on the journal lines. Other account types on journal lines, such as **Customer**, **Vendor**, and **Bank**, aren't currently supported. This service won't be invoked when derived dimensions are set up in the system.
+
+The Financial dimension service provides improved performance when journals are imported by using a new service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries. For more information about summary reporting of financial dimension data, see [Financial dimension sets](financial-dimension-sets.md).
 
 For more information, see the following topics:
 

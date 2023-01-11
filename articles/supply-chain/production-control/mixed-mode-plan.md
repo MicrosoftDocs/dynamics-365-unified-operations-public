@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mixed mode planning - Combine discrete, process, and lean sourcing
-description: This topic provides information about mixed mode planning. 
+description: This article provides information about mixed mode planning. 
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about mixed mode planning. In mixed mode planning, you can model your supply chain based on the material flow. Dynamics 365 Supply Chain Management makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders). 
+This article provides information about mixed mode planning. In mixed mode planning, you can model your supply chain based on the material flow. Dynamics 365 Supply Chain Management makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders). 
 
 You can select your overall strategy for supplying a product, regardless of the product structure.  
 
 For example, you can have kanban control in the assembly, where materials are sourced for the assembly area by production orders, kanbans, transfers, batch orders, or any combination that is appropriate for the characteristics of your supply chain, but you can still have full visibility across supplies. This capability leads to optimized supply chain processes and enhanced visibility into your supply chain.  
 
-The granularity of the supply policies that are used in master scheduling depends on the storage dimensions that are enabled as coverage dimensions. To enable master scheduling to control the replenishment and supply of different types of locations (for example, by separating the production floor for different production units, or by separating different types of material and finished goods warehouses), we recommend that you enable Site and Warehouse as coverage dimensions. Alternatively, Warehouse can be omitted as a coverage dimension. In that case, when you use advanced warehouse management, all movements inside a warehouse are controlled by warehouse work, whereas all movements across warehouses can be controlled by withdrawal kanbans.
+The granularity of the supply policies that are used in master scheduling depends on the storage dimensions that are enabled as coverage dimensions. To enable master scheduling to control the replenishment and supply of different types of locations (for example, by separating the production floor for different production units, or by separating different types of material and finished goods warehouses), we recommend that you enable Site and Warehouse as coverage dimensions. Alternatively, Warehouse can be omitted as a coverage dimension. In that case, when you use warehouse management processes (WMS), all movements inside a warehouse are controlled by warehouse work, whereas all movements across warehouses can be controlled by withdrawal kanbans.
 
 ## Supply policies
 Mixed mode planning controls how a product is supplied and, based on the supply, how derived requirements (consumption of items from a bill of materials \[BOM\]) are issued. Based on the order type, the system automatically sources materials to match the requirements.  

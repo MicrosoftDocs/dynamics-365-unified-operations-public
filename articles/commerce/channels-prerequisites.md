@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Channel setup prerequisites
-description: This topic presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
+description: This article presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.custom: 
+ms.assetid: 
 ---
 # Channel setup prerequisites
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
+This article presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
 
 Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following lists of prerequisite tasks are organized by channel type.
 
@@ -40,7 +30,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 - [Initialize seed data](enable-configure-retail-functionality.md)
 
-## Global prerequisities required for all channel types
+## Global prerequisites required for all channel types
 
 - [Define and configure your legal entity structure](channels-legal-entities.md) 
 - [Configure your organizational hierarchy](channels-org-hierarchies.md)

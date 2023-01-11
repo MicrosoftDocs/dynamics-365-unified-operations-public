@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Improved inquiry on debit/credit settlement
-description: This topic explains how you can view information about invoice and payment settlements in a convenient and simple format.
-author: ilkond
+description: This article explains how you can view information about invoice and payment settlements in a convenient and simple format.
+author: mrolecki
 ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.8
-
+ms.search.form: 
 ---
 
 # Improved inquiry on debit/credit settlement
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can view invoice and payment settlement information in a convenient and simple format.
+This article explains how you can view invoice and payment settlement information in a convenient and simple format.
 
 ## Prerequisites
 

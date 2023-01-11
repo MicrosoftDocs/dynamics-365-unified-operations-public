@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Fill Text subpattern
 description: This article provides information about the Fill Text subpattern.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 12414
-ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 12414
+ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
 ---
 
 # Fill Text subpattern

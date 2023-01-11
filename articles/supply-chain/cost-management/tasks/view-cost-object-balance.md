@@ -2,8 +2,8 @@
 # required metadata 
  
 title: View cost object balance
-description: This topic describes how to view the cost object balance 
-author: AndersGirke
+description: This article describes how to view the cost object balance 
+author: JennySong-SH
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

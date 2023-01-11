@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Retail SDK FAQ
-description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
-author: mugunthanm 
+description: This article summarizes answers to questions that are frequently asked by users of the Retail SDK.
+author: josaw1
 ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.9
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Retail SDK FAQ
 
 [!include [banner](../../includes/banner.md)]
 
-This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
+This article summarizes answers to questions that are frequently asked by users of the Retail SDK.
 
 
 ## How do I handle a runtime error thrown when using ISupportedTypesAware in SDK version (10.0.420.10003~10.0.420.10033)?
@@ -144,7 +135,7 @@ In Retail SDK version 10.0.19 and 10.0.20, the MSBuild command fails while check
 - EXEC : An error occurred: Microsoft.VisualStudio.Product.Professional (15.9.28307.1440) vsconfig export fail! [K:\10.0.
 19\RetailSDK\Code\dirs.proj]
 
-To this resolve issue, run msbuild with the parameter **msbuild /p:CheckVSDependencies=False**. If prerequisites are missing, install everything by manually by following the [Retail software development kit (SDK) prerequisites](/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites).
+To this resolve issue, run msbuild with the parameter **msbuild /p:CheckVSDependencies=False**. If prerequisites are missing, install everything by manually by following the [Retail software development kit (SDK) prerequisites](/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites).
 
 In the Azure DevOps pipeline, pass the parameter -p:CheckVSDependencies=False in the MSBuild argument.
 

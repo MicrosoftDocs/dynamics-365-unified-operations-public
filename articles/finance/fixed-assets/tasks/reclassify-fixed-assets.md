@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Reclassify fixed assets
-description: To reclassify a fixed asset, you must transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group. 
-author: saraschi2
+description: This article explains the process of reclassifying assets. To reclassify a fixed asset, you must transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group.
+author: moaamer
 ms.date: 05/14/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: roschlom
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: moaamer
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Reclassify fixed assets
 

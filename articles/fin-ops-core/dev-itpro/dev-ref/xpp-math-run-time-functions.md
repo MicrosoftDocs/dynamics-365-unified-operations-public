@@ -1,12 +1,12 @@
 ---
 title: X++ math runtime functions
-description: This topic describes the math run-time functions.
-author: RobinARH
+description: This article describes the math run-time functions.
+author: josaw1
 ms.date: 06/20/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the math run-time functions.
+This article describes the math run-time functions.
 
 These functions perform mathematical calculations.
 

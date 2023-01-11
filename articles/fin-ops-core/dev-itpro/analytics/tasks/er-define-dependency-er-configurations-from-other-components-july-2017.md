@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Define the dependency of ER configurations on other components
-description: This topic describes how to design an Electronic reporting (ER) configuration and specify its dependency from other software components.
-author: NickSelin
+description: This article describes how to design an Electronic reporting (ER) configuration and specify its dependency from other software components.
+author: kfend
 ms.date: 07/23/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define the dependency of ER configurations on other components
 
@@ -29,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS).
 
-This procedure shows how to design an Electronic reporting (ER) configuration and specify its dependency from other software components, so that you can help guarantee that the configuration is correctly downloaded to a specific version of Finance and Operations. In this example, you will create required ER configurations for the sample company Litware, Inc. 
+This procedure shows how to design an Electronic reporting (ER) configuration and specify its dependency from other software components, so that you can help guarantee that the configuration is correctly downloaded to a specific version of finance and operations. In this example, you will create required ER configurations for the sample company Litware, Inc. 
 
 This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them. The steps can be performed in any company, because ER configurations are shared among companies. 
 
@@ -50,7 +40,7 @@ This procedure is intended for users who have the System administrator or Electr
 7. Select Microsoft Dynamics 365 for Operations (1611).
 8. In the Version field, type '[7.1.1541.3036,8)'.
     * [7.1.1541.3036,8)  
-    * Dependencies that you enter will be evaluated when this configuration is downloaded from any ER repository. This configuration version will be downloaded from the ER repository when version 1 of the 'Sample data model' configuration is either already in place or downloaded in advance. If it's downloaded in advance, it must be completed in Finance and Operations version 7.1.1541.3036 or later, but must not exceed major version 8.   
+    * Dependencies that you enter will be evaluated when this configuration is downloaded from any ER repository. This configuration version will be downloaded from the ER repository when version 1 of the 'Sample data model' configuration is either already in place or downloaded in advance. If it's downloaded in advance, it must be completed in finance and operations version 7.1.1541.3036 or later, but must not exceed major version 8.   
 9. Click Save.
 10. Close the page.
 11. Click Change status.
@@ -63,7 +53,7 @@ This procedure is intended for users who have the System administrator or Electr
 18. Select Microsoft Dynamics AX 7.0 RTW.
 19. In the Version field, type '[7.0.1265.3015,7.1)'.
     * [7.0.1265.3015,7.1)  
-    * Dependencies will be evaluated when the configuration is downloaded from any ER repository. This configuration version will be downloaded from the ER repository when version 1 of the 'Sample data model' configuration is either already in place or downloaded in advance. If it's downloaded in advance, it must be completed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, the version of which must be 7.0.1265.3015 or later, but must not exceed minor version 1.   
+    * Dependencies will be evaluated when the configuration is downloaded from any ER repository. This configuration version will be downloaded from the ER repository when version 1 of the 'Sample data model' configuration is either already in place or downloaded in advance. If it's downloaded in advance, it must be completed in Microsoft Dynamics 365 Finance, Enterprise edition, the version of which must be 7.0.1265.3015 or later, but must not exceed minor version 1.   
 20. Click Save.
 21. Close the page.
 22. Click Change status.
@@ -140,10 +130,11 @@ We will delete created configurations from the system and download them back fro
 25. Go to Organization administration > Electronic reporting > Configurations.
 26. In the tree, expand 'Sample data model'.
     * Note that the model 'Sample mapping' mapping configuration has been downloaded together with the selected data model configuration. The two files are downloaded together because 'Sample mapping' has been defined as implementing the selected data model, and because it's applicable for the application. The 'Sample mapping (alternative)' configuration hasn't been downloaded because the condition for the required application version isn't satisfied.   
-    * If you sign in to Finance and Operations, register the same provider, access the same LCS project, and download the same data model configuration, the 'Sample mapping (alternative)' configuration will download, whereas the 'Sample mapping' configuration will be skipped.  
+    * If you sign in to finance and operations, register the same provider, access the same LCS project, and download the same data model configuration, the 'Sample mapping (alternative)' configuration will download, whereas the 'Sample mapping' configuration will be skipped.  
 
 ## Additional resources
 
 [Manage the Electronic reporting (ER) configuration lifecycle](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

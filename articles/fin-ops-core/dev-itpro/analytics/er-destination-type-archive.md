@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Archive ER destination type
-description: This topic provides information about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
-author: NickSelin
+description: This article provides information about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
+author: kfend
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Archive ER destination type

@@ -1,44 +1,35 @@
 ---
-# required metadata
-
 title: Manage several derived mappings for a single model root
-description: This topic explains how to manage several derived mappings that were configured for a single model root.
-author: NickSelin
+description: This article explains how to manage several derived mappings that were configured for a single model root.
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: ERSolutionTable, ERModelMappingTable
 ---
 
 # Manage several derived mappings for a single model root
 
 [!include [banner](../includes/banner.md)]
 
-An [Electronic reporting (ER)](general-electronic-reporting.md) data [model](general-electronic-reporting.md#data-model-and-model-mapping-components) component is used in every configured ER [format](general-electronic-reporting.md#FormatComponentOutbound) component as the data source to generate outbound documents. To describe a single business domain, configure a data model component that has many root definitions. 
+An [Electronic reporting (ER)](general-electronic-reporting.md) data modelcomponent is used in every configured ER format component as the data source to generate outbound documents. To describe a single business domain, configure a data model component that has many root definitions. 
 
-Every root definition lets you represent data of that domain in the way that is best suited to specific reporting purposes. For every root definition, you can configure an ER [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component as the Microsoft Dynamics 365 Finance–specific implementation of your data model. In this way, you describe how your data model will be filled in at runtime.
+Every root definition lets you represent data of that domain in the way that is best suited to specific reporting purposes. For every root definition, you can configure an ER model mapping component as the Microsoft Dynamics 365 Finance–specific implementation of your data model. In this way, you describe how your data model will be filled in at runtime.
 
 ER model mapping components can reside in ER data model [configurations](general-electronic-reporting.md#Configuration) and ER model mapping configurations. A single ER configuration can contain many mapping components, each of which is configured for a single root definition. Alternatively, a single ER configuration can contain just one mapping component that is configured for a single root definition.
 
 Many configuration providers might offer ER model mapping configurations for the same ER data model. Those model mapping configurations might contain mapping components for different root definitions. You might use a model mapping for one root definition that is offered by one [provider](general-electronic-reporting.md#Provider) and use a model mapping for another root definition that is offered by another provider.
 
-The procedures in this topic explain how to manage multiple ER model mapping configurations of an ER data model when they contain different model mapping components configured for the same root definition. 
+The procedures in this article explain how to manage multiple ER model mapping configurations of an ER data model when they contain different model mapping components configured for the same root definition. 
 
-To complete the procedures in this topic, you must be assigned to the System administrator or Electronic reporting developer role.
+To complete the procedures in this article, you must be assigned to the System administrator or Electronic reporting developer role.
 
 All the following procedures can be done in the USMF company. No coding is required.
 
@@ -110,7 +101,7 @@ This section explains how to [customize](er-quick-start3-customize-report.md#cus
 3. In the **Create configuration** drop-down dialog box, in the **New** field, select **Derive from Name: Invoice model mapping, Microsoft**.
 4. In the **Name** field, enter **Invoice model mapping Litware**.
 5. Select **Create configuration**.
-6. [Mark](er-quick-start2-customize-report.md#MarkFormatRunnable) the [draft](general-electronic-reporting.md#component-versioning) version of the derived mapping as available for use at runtime:
+6. [Mark](er-quick-start2-customize-report.md#MarkFormatRunnable) the [draft](general-electronic-reporting.md) version of the derived mapping as available for use at runtime:
 
     1. On the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
     2. In the **User parameters** dialog box, set the **Run settings** option to **Yes**, and then select **OK**.

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Sales tax applicability and sales tax group determination logic
-description: This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
-author: epodkolz
-ms.date: 09/14/2021
+description: This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
+author: EricWangChen
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region:
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom:
+ms.search.region: 
+ms.author: wangchen
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.21
 ---
 
@@ -30,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
+This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 
 ## Matching logic
 
@@ -57,10 +45,37 @@ For the first line in the table, two input fields are set. Therefore, the line h
 
 When sales tax is calculated for a purchase order that has the EUR currency and item D0001, the Tax calculation service uses the condition that has a higher weight. Therefore, it uses the second line in the table.
 
+## Adjust execution sequence
+
+In the 10.0.28 update, you can adjust the execution sequence of the applicability rules which are equally weighted.
+
 > [!NOTE]
-> On the **Applicability rule** tabs, line numbers aren't visible, and the **Move up** and **Move down** buttons are no longer available. After you save a setup and reopen the page, the lines are ordered according to their weight.
-> 
-> Even though line numbers aren't visible in the UI, they are still available in the table. If two lines have the same weight, the line that has the smaller line number is used.
+> The **Tax calculation service feature setup new UI** feature must be enabled in feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
+
+### Example
+
+The following example shows how the **Adjust execution sequence** button works.
+
+In the Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as follows:
+
+| Business process | Currency | Item code | Tax group | Weight |
+|------------------|----------|-----------|-----------|--------|
+| Purchase         | EUR      | &nbsp;    | TG\_A     | 20     |
+| Purchase         | &nbsp;   | D0001     | TG\_B     | 20     |
+
+Per the matching logic, the rules in the table are equally weighted. If you are purchase item **D0001** with the transaction currency **EUR**, the first rule (Tax group **TG\_A**) is applied.
+
+Complete the following steps to adjust the rule which is applied.
+
+1. Select **Adjust execution sequence**.
+2. Select the second rule, and the select **Move up**. 
+3. Select **Complete**.
+
+Now, the second rule (Tax group **TG\_B**) is moved above the first one, and would be applied first.
+
+> [!NOTE]
+> You can't move a rule above or under another rule which has a different **Weight**.
+
 
 ## Sales tax group and item sale tax group determination logic
 
@@ -73,6 +88,7 @@ If no applicability rule is configured for the tax group or item tax group in th
 > [!NOTE]
 > The sales tax group and item sales tax group must be created and maintained in RCS.
 
+## Override sales tax
 You can update the tax groups that the Tax calculation service determined, without having to reconfigure the Tax feature. For example, you might have to update the tax groups because the rule is incorrectly set up, or some exception to the rule is required. By setting the **Override sales tax** option to **Yes** on the line details page for a document line, you can select the required sales tax group and item sales tax group.
 
 ![Override sales tax option set to Yes on the line details page for a document line](media/Pict1%20Override%20sales%20tax%20parameter.jpg)
@@ -85,6 +101,19 @@ The tax codes are calculated based on the intersection of the tax codes that are
 
 > [!NOTE]
 > If the **Sales tax group** or **Item sales tax group** field is left blank, and the **Override sales tax** option is set to **Yes**, the line won't be sent to the Tax calculation service for processing.
+
+The **Override sales tax** check box is added to the **Customer** and **Vendor** master data on the **Invoice and delivery** FastTab. The check box is also added to the Sales order, Purchase order, Free text invoice header, and to the line level of those documents.
+
+### Update order lines
+
+You can bulk update lines if the **Override sales tax** check box is changed on the header level and is added to the **Update order lines** parameters pages for Sales order, Sales quotation, and Purchase order.
+For example, if the option is set to **Prompt**, when the **Override sales tax** is changed on the header of the document, the dialog box opens and you can select whether the document lines should be updated.
+
+> [!NOTE]
+> Header level and line level charges inherit the **Override sales tax** option from the header or line of the document respectively.
+> 
+> Current limitation:
+> When updating **Override sales tax** checkbox on a header or line level the respective charges do not inherit this checkbox in case the charges were already created.
 
 ### Reverse charge applicability rules 
 

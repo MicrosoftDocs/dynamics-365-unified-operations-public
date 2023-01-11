@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Tax interest and free-hand interest for Poland
-description: This topic walks you through the process of setting up and calculating tax interest for Poland.
-author: ShylaThompson
+description: This article walks you through the process of setting up and calculating tax interest for Poland.
+author: AdamTrukawka
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Tax interest and free-hand interest for Poland

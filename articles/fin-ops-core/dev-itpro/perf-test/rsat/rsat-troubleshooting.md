@@ -1,32 +1,25 @@
 ---
 title: Troubleshoot the Regression suite automation tool
-description: This topic contains information about how to troubleshoot the Regression suite automation tool (RSAT).
+description: This article contains information about how to troubleshoot the Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 21631
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 21631
 ---
 
 # Troubleshoot the Regression suite automation tool
 
 [!include [banner](../../includes/banner.md)]
 
-This topic contains information about how to troubleshoot the Regression suite automation tool (RSAT).
+This article contains information about how to troubleshoot the Regression suite automation tool (RSAT).
 
 ## Playback logs
 
@@ -56,7 +49,7 @@ After test execution files are generated, you can find the log file under **[RSA
 + The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter the following error message when you try to run a test case.
 
 ```Plaintext
-Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.
+Cannot access finance and operations environment. Verify your settings and make sure the environment is available.
 ```
 
 + If you have used a previous version of RSAT on the same computer, close it and uninstall it before installing a new version.
@@ -100,7 +93,7 @@ You may receive the following error when running a test case, or the error detai
 
 ![Enumerate error message box.](media/cannot-enumerate.png)
 
-To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's tenant is **contoso.com**, the admin user must end with **\@constoso.com**.
+To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's tenant is **contoso.com**, the admin user must end with **\@constoso.com**.
 
 ### Unsecured fault exception
 
@@ -113,7 +106,7 @@ If a test case inconsistently fails with the following error, this usually indic
 
 Typically, this error happens when the test environment has not been configured to trust the certificate that RSAT is using for authentication. (The certificate is identified by the thumbprint specified in your RSAT settings.) For example, the thumbprint could be missing in the wif.config file on the AOS virtual machine of the test environment. If you are running against a standard acceptance test environment (Tier 2 or higher), you might not have configured the authentication thumbprint on all of the AOS virtual machines. Make sure you properly add the thumbprint to the **wif.config** file on all of the AOS machines. For more information, see [Configure the test environment to trust the connection](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection).
 
-We have also seen this error when there is a mismatch between the UTC time between the client computer (where RSAT is installed) and the Finance and Operations environment. This is a rare case and only happens if your administrator has incorrectly configured the UTC time. The client computer and Finance and Operations environment can be on different time zones; however, the UTC time on both environments must match because the authentication mechanism relies on this comparison.
+We have also seen this error when there is a mismatch between the UTC time between the client computer (where RSAT is installed) and the finance and operations environment. This is a rare case and only happens if your administrator has incorrectly configured the UTC time. The client computer and finance and operations environment can be on different time zones; however, the UTC time on both environments must match because the authentication mechanism relies on this comparison.
 
 ## Google Chrome Browser
 

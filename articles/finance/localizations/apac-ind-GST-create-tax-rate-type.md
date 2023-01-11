@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define a tax rate type and assign it to relevant master data  
-description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
+description: This article explains how to define the tax rate type and assign it to the relevant master data. 
 author: EricWangChen 
 ms.date: 03/18/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to define the tax rate type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
+This article explains how to define the tax rate type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 
 To make the India localization solution GST available in Dynamics 365 Finance, you must complete the following master data setup:
 

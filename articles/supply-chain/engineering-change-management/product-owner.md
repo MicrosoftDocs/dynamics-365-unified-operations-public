@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product owners
-description: This topic provides information about product owners. A product owner is a group of users who are responsible for specific products. Only members of the group can release those products. The product owner can also be used in the approval workflow.
+description: This article provides information about product owners. A product owner is a group of users who are responsible for specific products. Only members of the group can release those products. The product owner can also be used in the approval workflow.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg

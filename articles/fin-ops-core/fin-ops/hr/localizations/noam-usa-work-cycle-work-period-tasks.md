@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up work cycles and work periods
-description: This topic explains how to set up work cycles and work periods.
-author: andreabichsel
+description: This article explains how to set up work cycles and work periods.
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollWorkCycle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 222654
 ms.assetid: 0411cb4d-f83a-4c0f-b8a3-9ba152b66e0d
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.
+This article explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.
 
 The setup for work cycles and work periods resembles the setup for pay cycles and pay periods. After you create work cycles, you generate work periods and assign the work cycles to positions.
 

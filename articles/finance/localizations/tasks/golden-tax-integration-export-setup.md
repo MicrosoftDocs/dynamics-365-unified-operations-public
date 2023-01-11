@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Golden tax integration export setup
-description: This procedure shows how to configure the export format for golden tax integration. 
-author: ShylaThompson
+description: This procedure shows how to configure the export format for golden tax integration.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 ---
 # Golden tax integration export setup
 

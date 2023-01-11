@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Discontinue configurations in the RCS Global repository
-description: This topic describes how to discontinue configurations in the RCS Global repository.
-author: JaneA07      
+description: This article describes how to discontinue configurations in the RCS Global repository.
+author: gionoder
 ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERWorkspace
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: is was
-
-ms.author: janeaug
+ms.author: gionoder
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERWorkspace
 ---
 # Discontinue configurations in the RCS Global repository
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to discontinue configuration in the RCS Global repository. Previously, it was possible only to delete configurations that were no longer required. However now you can mark a released configuration as **Discontinued** in the RCS Global repository. With this functionality, you can also do the following: 
+This article describes how to discontinue configuration in the RCS Global repository. Previously, it was possible only to delete configurations that were no longer required. However now you can mark a released configuration as **Discontinued** in the RCS Global repository. With this functionality, you can also do the following: 
  
  - Provide up front notifications when a configuration is planned to be discontinued.
  - Include applicable details about the replacement configuration.

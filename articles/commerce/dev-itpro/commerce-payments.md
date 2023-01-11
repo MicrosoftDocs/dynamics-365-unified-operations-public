@@ -1,9 +1,9 @@
 ---
 # required metadata
 title: Omni-channel Commerce order payments
-description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
+description: This article describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
 author: ravimeda
-ms.date: 10/29/2021
+ms.date: 02/04/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -18,18 +18,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
-
-## Key terms
-
-| Term | Description |
-|---|---|
-| Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
-| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion). 
-| Call center order | An order that a call center user creates in Commerce headquarters. |
-| Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
-
-## Overview
+This article describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
 
 Dynamics 365 Commerce consists of three main channels: POS, e-commerce, and call center. In Commerce version 10.0.12 and earlier, the management of payment lines for orders that are created in each channel isn't uniform. For example, when orders are created and edited in the call center, an order completion flow ensures that payments are specified for those orders before fulfillment. However, POS and e-commerce orders don't support call center order completion. To see the lack of uniformity, go to the **Customer service** page in Commerce headquarters, and notice which orders you can access the **Payments** page for by using the **Payments** button.
 
@@ -47,6 +36,15 @@ With this feature enabled, the **Sales order summary** dialog can be used to edi
 
 ![Payments button available for a POS or e-commerce order that was created while the feature was turned on.](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
+## Key terms
+
+| Term | Description |
+|---|---|
+| Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
+| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion). 
+| Call center order | An order that a call center user creates in Commerce headquarters. |
+| Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
+
 ## Prerequisites
 
 To turn on the omni-channel Commerce order payments feature, you must first turn on several other features and complete other configurations. Aside from being requirements for enabling **Omni-channel Commerce order payments**, these features should be turned on as a best practice because they address functional gaps that are related to orders. 
@@ -54,6 +52,10 @@ To turn on the omni-channel Commerce order payments feature, you must first turn
 If any of the prerequisites are missing when you try to turn on the omni-channel Commerce order payments feature, you receive a message that states that you can't continue until the prerequisite features and configurations are in place.
 
 ![Message about prerequisite features and configurations.](../dev-itpro/media/COP_PRE.png)
+
+> [!NOTE]
+> When the **Omni-channel Commerce order payments** feature is enabled, the call center **Enable order completion** button will be hidden in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**.
+
 
 ### Prerequisite features
 
@@ -166,7 +168,7 @@ After the payments are edited, the order submission process corrects any changes
 |---|---|---|
 | Authorized payments | Omni-channel Commerce order card payments can be removed from an order through order completion, but only if they weren't partially captured. | Yes |
 | Prepayments | Prepayments can't be removed through order completion. Prepayments can't be removed from an order after they are applied. Payment vouchers are already associated with them. | No |
-| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, the a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
+| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
 | Fully captured credit card payments and prepayments | Fully captured credit card payments and prepayments can't be removed from the order. | No |
 
 ### Cancel order and sales lines

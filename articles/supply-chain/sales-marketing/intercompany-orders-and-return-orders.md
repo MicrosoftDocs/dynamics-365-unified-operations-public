@@ -1,14 +1,14 @@
 ---
 title: Intercompany orders and return orders
-description: This topic explains intercompany orders and return orders
-author: GalynaFedorova
+description: This article explains intercompany orders and return orders
+author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how intercompany purchase orders, sales orders, return orders, purchase agreements, and sales agreements are created and updated.
+This article describes how intercompany purchase orders, sales orders, return orders, purchase agreements, and sales agreements are created and updated.
 
 ## About intercompany orders
 

@@ -1,14 +1,14 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
-description: This topic lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
-author: MarkusFogelberg
-ms.date: 09/09/2021
+description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+author: Mirzaab
+ms.date: 04/25/2022
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -17,7 +17,226 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.0.40.0
+
+This version introduces the following new features, fixes, and improvements:
+- Increased stability. 
+
+## Version 2.0.39.0
+
+This version introduces the following new features, fixes, and improvements:
+- Increased stability. 
+- The fields of the **Custom** page are no longer sorted automatically based on their priority and sub-priority settings.  
+- The app now uses the priority and sub-priority settings for each field to identify the primary field for a page. The primary field is shown in the step header. 
+- Fixed an issue where the soft keyboard wouldn't hide on Android.
+- Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the *movement* flow. 
+- Fixed an issue where the read-only quantity spinner value wasn't centered correctly. 
+- Fixed an issue where web pages wouldn't open from the **About** page. 
+- The *Auto* color theme now takes its default appearance (light or dark) based on the global theme set in the mobile device's operating system.
+
+## Version 2.0.37.0
+
+This version introduces the following new features, fixes, and improvements:
+- Added a user setting that lets workers choose where the app displays product photos (in both cards and step headers, only in step headers, or not at all). 
+- Improved the details card screen layout by reducing the size of the step banner and quantity input spinner, which leaves more room for other content. 
+- Improved the user interface when running on a Honeywell Thor device. 
+- Improved full-screen mode (only applies to devices with a hardware keyboard). 
+- Improved results when sorting details cards and custom pages by priority or sub-priority (DataPriority or DisplaySubPriority). 
+- Added support for more languages. 
+- Improved stability. 
+- Improved several images and icons. 
+
+## Version 2.0.35.0
+
+This version introduces the following new features, fixes, and improvements:
+- Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards were to be shown.
+
+## Version 2.0.34.0
+
+This version introduces the following new features, fixes, and improvements:
+- Improved stability.
+- Improved performance.
+- Improved the screen layout to allow more space for the details card.
+- Added a search function to the **Work List** page. Workers can now scan or type to search in all the fields and titles on the page.
+- The list of available connections is now sorted alphabetically.
+- Fixed an issue where duplicate cards were shown for items that have multiple inventory statuses at the same location.
+- Fixed an issue where the **Large Selection List** page didn't scroll to show the preselected item.
+- Fixed the search bar colors on the **Large Selection List** page.
+- Fixed an issue where the default button defined in the XML wasn't used as the submit button.
+- Fixed an issue where the buttons in the multi-scan and fast validation flows didn't update when new IDs were scanned.
+- Added support for more languages.
+
+## Version 2.0.32.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+
+## Version 2.0.31.0
+
+This version introduces the following new features, fixes, and improvements:
+
+-	Enhanced performance and stability.
+-	Improved user interface that makes it faster and easier to work with long selection lists. Workers can now search for a list item by name rather than scroll through the full list.
+-	Fixed an issue where pre-entered values didn't get overwritten when scanning by character.
+
+## Version 2.0.30.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+
+## Version 2.0.28.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+- Introduced the ability to continue scanning even while an error dialog is shown on the screen.
+- Added support for ASCII 10 in barcodes.
+- Improved the usability of step instruction dialogs.
+- Fixed an issue where a blank screen could sometimes be shown.
+- Fixed an issue where work lists didn't scroll correctly when running on Microsoft Windows.
+
+## Version 2.0.25.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Increased performance.
+- Increased stability.
+- Improved the **Inquiry** page to support longer texts in subheaders.
+- Introduced the ability to immediately cancel a flow with a single tap or click (when **Cancel** is the only action available under **More actions**).
+- Fixed an issue where focus could sometimes be lost between entry controls on the **Edit connection** page and custom pages.
+- Fixed an issue where buttons could sometimes become irresponsive and remain shown as selected when included in a scrolling view.
+- Fixed an issue where the wrong layout could sometimes be used on the main page.
+
+## Version 2.0.24.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved scanner pages to enable the scan option on **Details** pages.
+- Improved gestures, such as touch/tap screen.
+- Improved performance issues for Android.
+- Fixed placement of multiple headers to allow more cards to display on the **Inquiry** page.
+- Improved scrolling so less distance for scrolling pagination is enabled.
+- Added long press to display additional text on the **Inquiry** page.
+- Fixed missing device ID information for Android.
+- Increased stability.
+- Optimized the login layout.
+- Added swipe-right gesture to close dialog pop-up pages on the number pad, **Details** page, and input pages.
+
+## Version 2.0.22.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Fixed several crashing issues.
+- Fixed an issue where some characters would not be recognized when scanning or typing on the default page.
+- Fixed an issue where typing a backspace on the default page would delete two characters at a time.
+- Fixed an issue where the **Sort by** field on the **Work list** page would display an incorrect value that didn't correspond to the actual sorting order of the cards.
+- Fixed an issue where an incorrect layout would be shown after resizing the app window while running on Microsoft Windows.
+- Fixed an issue where scrolling in a pop-up list could result in some list items remaining hidden or becoming distorted.
+- Redesigned the sign-in page to let it display the username and password fields on the same page when running on larger displays.
+- Improved the way controls react to fast tapping.
+- Added an in-app error log view.
+- Added several accessibility improvements (improved narration, fixed missing placeholders on Android, enabled keyboard input for slider controls, and more).
+
+## Version 2.0.20.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Fixed several crashing issues.
+- Fixed an issue where incorrect values would be shown on cards on the **Work list** page.
+- Improved the scrolling experience and eliminated scrolling jitter on the **Work list** and **Item inquiry** pages in Android.
+- Added an exit button to the sign-in page, which quits the application.
+
+## Version 2.0.19.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved the generic data inquiry flow.
+- Improved the jittering issue on **Work list** and **Item inquiry** pages.
+- Reduced battery consumption.
+- Removed the limit on the number of fields for work cards.
+- Adjusted the height of work cards so that all of them have the same size, regardless of the number of fields in each.
+- Fixed an issue where space characters in bar codes would be trimmed out.
+- Added the **Button style** setting, which lets you swap between slider view and button view on all types of devices.
+- Fixed various issues that could cause the app to crash.
+- Set focus automatically on the first textbox on custom pages.
+- Accessibility improvements related to luminosity, contrast, narration, and missing placeholder texts.
+
+## Version 2.0.17.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Fixed an issue where bar codes would be scanned incorrectly.
+- Fixed the GS1 scanning issue for the camera scanner.
+- Fixed the GS1 scanning issue for the bar code scanner on Zebra devices.
+- Improved the detour inquiry flow, so selecting a card in a detour now returns to the main flow.
+- Added support for a generic data inquiry flow.
+- Added a message to tell users about changes to the network connectivity status.
+- Aligned storage permissions with the storage privacy policy in Android 10.
+- For flows that need it, the quantity spinner now includes a position that lets users submit an empty numeric value.
+- Fixed issues with the quantity spinner orientation.
+- Fixed an issue where the quantity spinner would jump to the wrong value.
+- Fixed an issue where input to the primary page would get lost when being populated from the details page.
+- Fixed an issue where placeholder text would be treated as the initially selected value in selection lists.
+- The "Submit" button on confirmation steps is now automatically enabled if there are preselected values.
+- Fixed the details card to show as many lines as possible for text fields that have multiple lines.
+- Fixed the height of the "Submit" and "More actions" buttons, so now they take up less space on the screen.
+- Added missing selection list titles.
+- Fixed an issue where the back button didn't work.
+- Added several keyboard navigation fixes and improvements, including on the following pages:
+  - User login
+  - Select connection
+  - Edit connection
+- Fixed scrolling when using keyboard navigation.
+- Enhanced accessibility, including the following improvements:
+  - Fixed color visibility and contrast.
+  - Prevented loss of keyboard focus when pop-up pages are closed.
+  - Added error messages to the narration.
+  - Increased the size of placeholder values in the step banner.
+- Fixed the example of the custom legacy page in demo mode.
+
+## Version 2.0.15.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved performance by fixing a memory leak issue.
+- Fixed an issue where some field values didn't update correctly when selected on the detail page.
+
+## Version 2.0.14.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Fixed an issue that disabled the default Submit button.
+
+## Version 2.0.13.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved scrolling between pages with smoother animation.
+- Fixed counter-intuitive responses to swipe motions and occasional screen freezes.
+- Improved dark mode text and background color combinations for better readability.
+- Fixed an issue where some text could become very small when resizing the app window.
+- Fixed an issue that could sometimes crash the app when scanning bar codes.
+- Added the possibility to replace a slider with a button.
+- Fixed an issue that could cause the app to show the error message, "AADSTS7000215: Invalid client secret is provided."
+- Fixed the hint animation showing how to close a page using a swipe-down gesture.
+- Added the possibility to close a page using a flick-down gesture.
+- Fixed an issue where drop-down list titles weren't shown on the **User settings** page.
+- Fixed a localization issue where the app wouldn't recognize a comma (,) as a decimal separator.
+- Improved accessibility.
+- Fixed the navigation on the **New connection** page to provide improved accessibility.
+- Fixed an issue where the soft (onscreen) keyboard wouldn't appear when selecting an input field.
+- Fixed an issue that could crash the app if users quickly resized its window.
+- Fixed an issue where a fast keypress was sometimes interpreted as a long press.
+- Fixed an issue where the app layout could become corrupted because of field customizations made in Supply Chain Management.
+- Fixed an issue where item locations weren't displayed properly.
+- Fixed an issue related to short picking for the product variant workflow.
+- Removed the unnecessary validation of fields containing preset default values.
+- Improved performance.
+- Added a new setting that allows users to choose how fields are filtered and ordered on the card page.
 
 ## Version 2.0.11.0
 
@@ -29,7 +248,7 @@ This version introduces the following new features, fixes, and improvements:
 - Enhanced details cards.
 - Enhanced detours for menu-item steps.
 - Minor user interface improvements.
-- Fixed an issue that could cause the app to crash when scanning barcodes.
+- Fixed an issue that could cause the app to crash when scanning bar codes.
 - Fixed various issues that could cause the system to stop responding.
 
 ## Version 2.0.10.0

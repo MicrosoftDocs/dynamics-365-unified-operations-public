@@ -3,7 +3,7 @@
 
 title: Invoice subscription transactions 
 description: Invoice subscription transactions 
-author: kamaybac
+author: sorenva
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
+1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**.
 
 2.  Select a service subscription and then click **Edit** or click **Subscription** to create a service subscription.
 

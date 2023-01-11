@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost and date control
-description: This topic explains cost and date control in Asset Management.
+description: This article explains cost and date control in Asset Management.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article

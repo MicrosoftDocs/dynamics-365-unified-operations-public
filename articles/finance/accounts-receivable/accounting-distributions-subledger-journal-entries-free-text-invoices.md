@@ -15,7 +15,7 @@ ms.search.form: CustFreeInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
@@ -35,9 +35,9 @@ Accounting distributions are used to define how an amount will be accounted for,
 
 ## Accounting distributions
 
-You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.
+You can use the following buttons on the **Free text invoice** page to view, and possibly change, the accounting distributions for each amount on the free text invoice.
 
--   **Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges. You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.
+-   **Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges. You can also view and change the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
     -   Change free text invoice header amounts, such as charges or currency rounding amounts.
     -   Change free text invoice line amounts.
 -   **View distributions**—View the accounting distributions for all lines on the document. You can't change the accounting distributions from this view.
@@ -67,7 +67,7 @@ When you enter a free text invoice, each amount will be distributed as follows.
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account in the Chart of accounts page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -89,43 +89,43 @@ When you enter a free text invoice, each amount will be distributed as follows.
 <td>The ledger account on the free text invoice line.</td>
 <td><ol>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account in the Chart of accounts page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Free text invoice discount amount</td>
-<td>The Main account for customer discounts field in the Cash discounts page.</td>
+<td>The Main account for Customer discounts field on the Cash discounts page.</td>
 <td><ol>
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account in the Chart of accounts page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Free text invoice sales tax amount</td>
-<td>The Sales tax payable field in the Ledger posting groups page.</td>
+<td>The Sales tax payable field on the Ledger posting groups page.</td>
 <td><ol>
 <li>Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account in the Chart of accounts page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Free text invoice charge line amount</td>
-<td>The Credit account field in the Charges code page.</td>
+<td>The Credit account field on the Charges code page.</td>
 <td><ol>
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account in the Chart of accounts page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
 ## Distributing taxes
-Accounting distributions for taxes cannot be created until taxes are calculated. To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:
+Accounting distributions for taxes cannot be created until taxes are calculated. To calculate sales taxes, you must complete one of the following tasks on the **Free text invoice** page:
 -   View the sales tax.
 -   View the invoice total.
 -   View the cash flow.

@@ -1,39 +1,29 @@
 ---
-# required metadata
-
 title: Use DATA COLLECTION data sources in Electronic reporting formats
-description: This topic explains how to use DATA COLLECTION data sources in Electronic reporting (ER) formats.
-author: NickSelin
+description: This article explains how to use DATA COLLECTION data sources in Electronic reporting (ER) formats.
+author: kfend
 ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-
+ms.custom: 58771
+ms.assetid: 
+ms.search.form: EROperationDesigner
 ---
 
 # Use DATA COLLECTION data sources in Electronic reporting formats
 
 [!include [banner](../includes/banner.md)]
 
-You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure the [format](general-electronic-reporting.md#FormatComponentOutbound) component of an ER solution that is used to generate outbound documents in different formats. The hierarchical structure of the configured format component consists of various types of format elements. These format elements are used to fill generated documents with the required information at runtime. By default, when you run an ER format, the format elements are run in the same order in which they are presented in the format hierarchy: one by one, from top to bottom.
+You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure the format component of an ER solution that is used to generate outbound documents in different formats. The hierarchical structure of the configured format component consists of various types of format elements. These format elements are used to fill generated documents with the required information at runtime. By default, when you run an ER format, the format elements are run in the same order in which they are presented in the format hierarchy: one by one, from top to bottom.
 
-When ER runs a format element that contains a binding, the formula of that binding is run, and the format element adds the value to a generated document. For example, the binding can pass the value of a [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) field to a format element. You can configure a DATA COLLECTION data source to collect values of data model fields at runtime, do value summing, and fill a generated document with the collected values. To use this approach, change the initial binding so that the configured DATA COLLECTION data source is used to pass the value of a data model field to a format element. By passing values through the DATA COLLECTION data source, you can collect required details for further use.
+When ER runs a format element that contains a binding, the formula of that binding is run, and the format element adds the value to a generated document. For example, the binding can pass the value of a data model field to a format element. You can configure a DATA COLLECTION data source to collect values of data model fields at runtime, do value summing, and fill a generated document with the collected values. To use this approach, change the initial binding so that the configured DATA COLLECTION data source is used to pass the value of a data model field to a format element. By passing values through the DATA COLLECTION data source, you can collect required details for further use.
 
 When you configure a DATA COLLECTION data source, specify a value type that will be managed in the data source. The following [data types](er-formula-supported-data-types-primitive.md) are currently supported for collecting values:
 

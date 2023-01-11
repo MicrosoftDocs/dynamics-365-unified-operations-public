@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Delivery options module
-description: This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
+description: This article covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Delivery options module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
+This article covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 
 Delivery options modules let customers select a mode of delivery such as shipping or pickup for their online order. A shipping address is required to determine the mode of delivery. If the shipping address changes, the delivery options must be retrieved again. If an order includes only items that will be picked up in a store, this module is automatically hidden.
 
@@ -60,6 +50,9 @@ The following illustration shows an example of a delivery options module on a ch
 ## Add a delivery options module to a checkout page and set the required properties
 
 A delivery options module can be added only to a checkout module. For more information about how to configure the delivery options module and add it to a checkout page, see [Checkout module](add-checkout-module.md).
+
+> [!NOTE]
+> You might experience inconsistent delivery handling, or you might not see non-prorated header-level charges in your e-commerce channel. For guidance about how to fix these issues, see [Enable consistent delivery mode handling in e-commerce channels](consistent-delivery-mode-handling.md).
 
 ## Additional resources
 

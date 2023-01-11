@@ -1,17 +1,17 @@
 ---
 title: Application stack and server architecture
-description: The application stack is divided into several models - Application Platform, Application Foundation, Test Essentials, and the application suites. 
-author: RobinARH
+description: The application stack is divided into several models - Application Platform, Application Foundation, Test Essentials, and the application suites.
+author: josaw1
 ms.date: 04/30/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31751
-ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: meeram
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 31751
+ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 ---
 
 # Application stack and server architecture
@@ -44,14 +44,14 @@ The left side of the following diagram shows how the application stack has been 
 
 [![Architecture drawing.](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
 
-The Finance and Operations applications use an entry point security model. A form allows read-only access if the menu item used for navigation to that form has only Read Permissions. However, navigation to that same form through another menu item that provides Create Permissions, Delete Permissions, or Update Permissions allows write operations on the form. This behavior simplifies the development experience, because developers can specify the behavior for a form through a given entry point.
+The finance and operations applications use an entry point security model. A form allows read-only access if the menu item used for navigation to that form has only Read Permissions. However, navigation to that same form through another menu item that provides Create Permissions, Delete Permissions, or Update Permissions allows write operations on the form. This behavior simplifies the development experience, because developers can specify the behavior for a form through a given entry point.
 
 ## Cloud architecture
 The cloud architecture includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management. The cloud architecture consists of three main conceptual areas:
 
 -   **Lifecycle Services (LCS)** – LCS is a multi-tenant shared service that enables a wide range of lifecycle-related capabilities. Capabilities that are specific to this release include software development, customer provisioning, service level agreement (SLA) monitoring, and reporting capabilities.
--   **Finance and Operations** – The VM instances are deployed through LCS to your Azure subscription. Various topologies are available: demo, development/test, and high-availability production topologies.
--   **Shared Microsoft services** – A Finance and Operations application uses several Microsoft services to enable a “One Microsoft” solution where customers can manage a single sign-in, subscription management, and billing relationship with Microsoft across Finance and Operations applications, Microsoft 365, and other online services.
+-   **Finance and operations** – The VM instances are deployed through LCS to your Azure subscription. Various topologies are available: demo, development/test, and high-availability production topologies.
+-   **Shared Microsoft services** – A finance and operations application uses several Microsoft services to enable a “One Microsoft” solution where customers can manage a single sign-in, subscription management, and billing relationship with Microsoft across finance and operations applications, Microsoft 365, and other online services.
 
 Many features of the Azure platform are used, such as Microsoft Azure Storage, networking, monitoring, and SQL Azure, to name a few.  Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and LCS will offer a robust cloud service.
 

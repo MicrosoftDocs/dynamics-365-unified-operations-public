@@ -1,14 +1,14 @@
 ---
 title: Customize step titles and instructions for the Warehouse Management mobile app
-description: This topic describes how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
-author: MarkusFogelberg
-ms.date: 08/11/2021
+description: This article describes how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
+author: Mirzaab
+ms.date: 08/09/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -16,19 +16,16 @@ ms.dyn365.ops.version: 10.0.21
 # Customize step titles and instructions for the Warehouse Management mobile app
 
 > [!IMPORTANT]
-> The features that are described in this topic apply only to the new Warehouse Management mobile app. They do not affect the old warehouse app, which is now deprecated.
+> The features that are described in this article apply only to the new Warehouse Management mobile app. They do not affect the old warehouse app, which is now deprecated.
 
-This topic describes how to create and show custom instructions for every step of every task flow that you set up for the Warehouse Management mobile app. When warehouse workers receive well-written instructions, they can immediately start to use new flows without requiring previous training. This feature provides the following benefits:
+This article describes how to create and show custom instructions for every step of every task flow that you set up for the Warehouse Management mobile app. When warehouse workers receive well-written instructions, they can immediately start to use new flows without requiring previous training. This feature provides the following benefits:
 
 - **Ramp up workers faster by letting them follow simple instructions for every task step.** Every step of a flow provides instructions that enable front-line workers to understand the task.
 - **Provide instructions that match your own processes.** Write your own instructions to match your business and warehouse processes. For example, you can make the terminology fit your physical space and local abbreviations.
 
-## Turn on the Warehouse app step instructions feature
+## Turn the Warehouse app step instructions feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse app step instructions*
+Before you can use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Warehouse app step instructions* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Step titles and step instructions in the app
 

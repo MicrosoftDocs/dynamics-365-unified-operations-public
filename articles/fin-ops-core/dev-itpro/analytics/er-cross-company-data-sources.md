@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Cross-company data sources in Electronic reporting (ER)
-description: This topic explains how you can use cross-company data sources in Electronic reporting (ER).
-author: NickSelin
+description: This article explains how you can use cross-company data sources in Electronic reporting (ER).
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, ERFormatMappingLegalEntityFilterTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: ERModelMappingDesigner, ERFormatMappingLegalEntityFilterTable
 ---
 
 # Cross-company data sources in Electronic reporting (ER)

@@ -4,23 +4,16 @@ description: This article describes the new class extension model in X++.
 author: pvillads
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 89563
-ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 89563
+ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
 ---
 
 # Class extension model in X++

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Journal reports
-description: This topic explains how to work with journal reports that are specific to legal entities with a primary address in Belgium. 
-author: anasyash
+description: This article explains how to work with journal reports that are specific to legal entities with a primary address in Belgium.
+author: AdamTrukawka
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable, VendParameters, CustParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 265924
-ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 ms.search.region: Thailand
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 265924
+ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
+ms.search.form: TaxTable, VendParameters, CustParameters
 ---
 
 # Journal reports (Posting journals)

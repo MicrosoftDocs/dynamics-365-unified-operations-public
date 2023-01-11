@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to assets
-description: This topic provides an overview of assets in Asset Management.
+description: This article provides an overview of assets in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
+ms.search.form: EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic provides an overview of assets in Asset Management. An *asset* is any type of equipment, such as a machine or a machine part, that requires maintenance, service, or repair.
+This article provides an overview of assets in Asset Management. An *asset* is any type of equipment, such as a machine or a machine part, that requires maintenance, service, or repair.
 
-An asset is automatically updated with related information. For example, this related information might be about new or updated work orders. You can create assets by using either the **All assets** menu item or the **Pending assets** menu item. This topic explains how to create assets by using the **All assets** menu item. For information about how to create assets by using the **Pending assets** menu item, see [Create assets based on purchase orders](../objects/create-objects-based-on-purchase-orders.md).
+An asset is automatically updated with related information. For example, this related information might be about new or updated work orders. You can create assets by using either the **All assets** menu item or the **Pending assets** menu item. This article explains how to create assets by using the **All assets** menu item. For information about how to create assets by using the **Pending assets** menu item, see [Create assets based on purchase orders](../objects/create-objects-based-on-purchase-orders.md).
 
 ## All assets
 
-Select **Asset management** \> **Common** \> **Assets** \> **All assets**. The **All assets** list page shows all assets and some of the information that is related to them. To view only active assets, select **Active assets**. To view only assets that are installed on the functional locations that you're related to as a maintenance worker, select **My active assets**. (This relation is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+Select **Asset management** \> **Assets** \> **All assets**. The **All assets** list page shows all assets and some of the information that is related to them. To view only active assets, select **Active assets**. To view only assets that are installed on the functional locations that you're related to as a maintenance worker, select **My active assets**. (This relation is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
 
 In the **All assets** grid view, select a link in the **Asset** column to view the details of the selected record. To edit the record, select the **Edit** button. The details view shows detailed information that is related to the asset. A **Related information** pane on the right contains additional asset-related information. Expand the pane to show the related information for the selected asset.
 

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Custom Filter Group subpattern
-description: This topic provides information about the Custom Filter Group subpattern.
+description: This article provides information about the Custom Filter Group subpattern.
 author: jasongre
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28231
-ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28231
+ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
 ---
 
 # Custom Filter Group subpattern

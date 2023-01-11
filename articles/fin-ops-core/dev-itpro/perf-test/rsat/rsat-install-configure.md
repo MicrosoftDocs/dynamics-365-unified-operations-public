@@ -1,32 +1,25 @@
 ---
 title: Regression suite automation tool installation and configuration
-description: This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
+description: This article contains information about how to install and configure the Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 08/19/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 21631
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 21631
 ---
 
 # Regression Suite Automation Tool installation and configuration
 
 [!include [banner](../../includes/banner.md)]
 
-This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
+This article contains information about how to install and configure the Regression suite automation tool (RSAT).
 
 ## Prerequisites
 
@@ -108,7 +101,7 @@ Configure your connection to the test environment.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
     + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
 
-+ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
++ **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
 
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
  If you don't have Remote Desktop Protocol (RDP) access to your environment, follow the steps lower in this article to download the certificate from Lifecycle Services and paste the thumbprint here.
@@ -141,14 +134,14 @@ Select the **Optional** tab to configure optional settings.
 + **Test Action Timeout** – The time-out (in minutes) of individual test steps. When a test step times out, the test case fails.
 + **Pause between steps** – The number of seconds to pause between test steps during automated execution of a test case. The default value is **0** (zero). Set this value to force a pause during test execution, for auditing or investigative purposes. You can also specify a pause for an individual test case by changing the **Pause between steps (Seconds)** parameter on the **General** tab of the Excel parameter file for the test case.
 + **Fail test on first validation error** – By default, if a test case has multiple validation steps, and there is a validation failure, the test case stops running when the first failure occurs. The test case is then marked as failed. If you want test cases to continue to run until all validations are completed, clear this option. The test case can then evaluate all validations.
-+ **Fail test on Infolog error** - Check this option to force test cases to fail when an error is encountered in the Finance and Operations Infolog during test case execution.
++ **Fail test on Infolog error** - Check this option to force test cases to fail when an error is encountered in the finance and operations Infolog during test case execution.
 + **Abort test suite execution on failure** – By default, a test suite run continues even if one of the test cases fails. If you check this setting, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
 + **Enable local file validation rules** - Check this setting to validate whether your test cases are ready for execution. See [Validate readiness of test automation files](rsat-run.md#validate-readiness-of-test-automation-files) for more details.
 + **Enable upload to Azure DevOps** - To prevent accidental upload to Azure DevOps (therefore overriding project-wide recordings and automation files), you can uncheck this setting. This is especially useful when RSAT is deployed on a client machine for execution purposes only, and you want to prevent users from making permanent changes to the test cases.
 + **Cloud provider** – Select the provider of the cloud tenant of your test environment. Supported providers are **Global** (Public cloud) and **China** (Sovereign cloud).
 
     > [!IMPORTANT]
-    > The **Cloud provider** setting is required, and the selected value must be **China** if your Finance and Operations apps were deployed in 21Vianet.
+    > The **Cloud provider** setting is required, and the selected value must be **China** if your finance and operations apps were deployed in 21Vianet.
 
 ### Configure the test environment to trust the connection
 
@@ -249,7 +242,8 @@ To install the certificate, follow these steps:
 
     ![Certificate dialog showing thumbprint listing.](media/certificate-dialog.png)
 
-6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this topic.
+6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this article.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

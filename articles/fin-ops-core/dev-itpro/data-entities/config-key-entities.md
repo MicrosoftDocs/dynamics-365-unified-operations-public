@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration keys and data entities
-description: This topic describes the relationship between configuration keys and data entities.
+description: This article describes the relationship between configuration keys and data entities.
 author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Platform update 13
 # Configuration keys and data entities
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
 

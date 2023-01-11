@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Configure task management
-description: This topic describes how to configure task management features in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure task management features in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
+ms.search.industry: 
 ---
 
 # Configure task management
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure task management features in Microsoft Dynamics 365 Commerce.
+This article describes how to configure task management features in Microsoft Dynamics 365 Commerce.
 
 Before Dynamics 365 Commerce managers and employees can use the task management features in Commerce, task management must be configured. Configuration steps include granting permissions to managers and employees, distributing permissions to point of sale (POS) clients, setting up POS notifications, and configuring the **Tasks** tile on the home page of a POS application.
 
@@ -85,7 +75,11 @@ The following illustration shows the **Task management** operation on the **POS 
 
 ![Task management operation on the POS operations page.](media/HQ-POS-Tasks-Notifications.png)
 
-For more information about how to configure POS notifications, see [Show order notifications in the point of sale (POS)](notifications-pos.md).
+For more information about how to configure POS notifications, refer to the [Show order notifications in the point of sale (POS)](notifications-pos.md) article.
+
+> [!NOTE]
+> When you save your changes, the following warning message will be displayed: **Operation parameter will not be enabled in button grid designer for operation ID equal or less than 4000. If you are creating custom operation and want to pass parameter from the button grid designer, then use operation ID greater than 4000.** Select **Close** to close the dialog.
+
 
 ## Configure the Tasks tile on a POS application home page
 

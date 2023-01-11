@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend tax engine configurations
-description: This topic provides information about extending tax engine configurations.
+description: This article provides information about extending tax engine configurations.
 author: kailiang
 ms.date: 05/24/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This topic walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
+The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This article walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
 
 -   Extend the Tax engine configuration for Union Territory Goods and Services Tax (UTGST).
 -   Use a reference model to apply a tax rate of Basic Customs Duty (BCD) for import order of goods from different countries/regions.
@@ -36,7 +36,7 @@ The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
 
-The following tax terms are mentioned in this topic.
+The following tax terms are mentioned in this article.
 
 |Tax term | Full name|
 |-----|-----------|

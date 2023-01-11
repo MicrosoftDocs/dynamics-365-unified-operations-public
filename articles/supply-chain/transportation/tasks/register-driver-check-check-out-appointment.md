@@ -3,7 +3,7 @@
  
 title: Register driver check-in and check-out for an appointment
 description: This procedure shows how to register a driver check-in and a driver check-out. 
-author: Henrikan
+author: Weijiesa
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

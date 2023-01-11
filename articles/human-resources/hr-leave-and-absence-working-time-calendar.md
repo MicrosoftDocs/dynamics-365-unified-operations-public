@@ -15,7 +15,7 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create a working time calendar
+
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -51,7 +52,7 @@ Set up at least one working time calendar that shows your days and hours of oper
 
 3. Under **Generation options**, select the work days for your organization and enter work times. 
    - To add a holiday or closure, select the **Add** button next to **Holidays and closures**.
-   - To add non-work time, like lunches or breaks, select **Add** under **NON-WORK TIME** and enter the name and time range.
+   - To add non-work time, like lunches or breaks, select **Add** under **Non-work time** and enter the name and time range.
 
 4. Under **Days**, select **Generate** to generate the days in your calendar. Enter the date range for your calendar and then select **Generate days**.
 
@@ -69,7 +70,7 @@ You can add or change holidays and closures separately from a working time calen
 
 You can add or change non-work times separately from a working time calendar.
 
-1. On the **Organization administration** page, select **NON-WORK TIME**.
+1. On the **Organization administration** page, select **Non-work time**.
 
 2. Select **New** and enter a name and time range for the non-work time.
 

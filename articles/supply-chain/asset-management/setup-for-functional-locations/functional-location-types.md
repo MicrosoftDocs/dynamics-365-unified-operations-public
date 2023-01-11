@@ -2,7 +2,7 @@
 # required metadata
 
 title: Functional location types
-description: This topic describes how to create functional location types in Asset Management.
+description: This article describes how to create functional location types in Asset Management.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic describes how to create functional location types in Asset Management. Functional location types are used to manage requirements for functional locations, including how assets are installed on a functional location. You can set up asset types, maintenance plans, functional location attributes, and asset attribute requirements to be used on a functional location that uses the specific functional location type. When you create a functional location, the functional location type is mandatory.
+This article describes how to create functional location types in Asset Management. Functional location types are used to manage requirements for functional locations, including how assets are installed on a functional location. You can set up asset types, maintenance plans, functional location attributes, and asset attribute requirements to be used on a functional location that uses the specific functional location type. When you create a functional location, the functional location type is mandatory.
 
 >[!NOTE] 
 >In order to work with functional locations, you must create a default functional location to be used only for the purpose of creating new assets. For that default functional location, you should create a default functional location type that is really simple and allows multiple assets to be installed on the default functional location. See [Create functional locations](../functional-locations/create-functional-locations.md) for more information on how to set up functional locations.
@@ -62,7 +62,7 @@ Now, the default functional location type to be used only on a default functiona
 7. The **Asset type** field is used if you want to automatically create *one* asset for the functional location with the same ID and name as the functional location you are creating. For example, this may be relevant if you create a static functional location, such as a building or a pipeline. In that case, select the asset type you want to use for the automatically created asset. Remember that if you make a selection in this field, the **Multiple assets** toggle button must be set to "No".
 8. On the **Asset types** FastTab, select the asset types to be related to the functional location type. Select **Add line** and select the asset types. If you add asset types here, only assets using those asset types can be installed on a functional location using this functional location type. If no asset types are selected on the **Asset types** FastTab, all asset types may be installed.
 9. On the **Maintenance plans** FastTab, select the maintenance plans that should automatically be set up on new functional locations using this functional location type. Select **Add line** and select the maintenance plans. If you add maintenance plans here, only those plans can be used on a functional location using this functional location type.
-10. On the **Asset attribute requirements** FastTab, set up the asset attributes that should automatically be set up on new functional locations using this functional location type. Select **Add line** and select the attribute. These attribute requirements function as guidelines. They are not validated against attributes set up on an asset (**Asset management** > **Common** > **Assets** > **All assets** > select asset in the list page > **General** tab > **Attributes** button). The attribute requirements are shown when you install assets on functional locations.
+10. On the **Asset attribute requirements** FastTab, set up the asset attributes that should automatically be set up on new functional locations using this functional location type. Select **Add line** and select the attribute. These attribute requirements function as guidelines. They are not validated against attributes set up on an asset (**Asset management** > **Assets** > **All assets** > select asset in the list page > **General** tab > **Attributes** button). The attribute requirements are shown when you install assets on functional locations.
 11. On the **Permitted types** FastTab, select the functional location types that should be valid for sub functional location types related to a parent functional location type, which uses the selected functional location type.
 12. On the **Attributes** FastTab, select the functional location attributes that should automatically be set up on functional locations using this functional location type. Select **Add line** and select the attribute.
 

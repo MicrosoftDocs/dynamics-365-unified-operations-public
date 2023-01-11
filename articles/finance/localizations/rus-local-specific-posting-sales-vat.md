@@ -1,26 +1,18 @@
 ---
-# required metadata
 title: Local specific posting of sales VAT
-description: This topic explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
-author: anasyash
+description: This article explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
+author: AdamTrukawka
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: 10.0.1
-
+ms.search.form: 
 ---
 
 # Local specific posting of sales VAT 
@@ -76,7 +68,7 @@ A posting group must be specified for each sales tax code. Use the standard meth
     tax payable.
 
 > [!NOTE] 
-> This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this topic for a posting example).
+> This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this article for a posting example).
 
 6. Specify the appropriate accounts in the usual way for the following fields:
 

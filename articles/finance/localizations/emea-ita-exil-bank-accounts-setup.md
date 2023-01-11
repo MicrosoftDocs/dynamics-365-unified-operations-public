@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Bank data usability enhancement
-description: This topic explains how you can help save time and simplify bank data registration for customers and vendors.
-author: ilkond
+description: This article explains how you can help save time and simplify bank data registration for customers and vendors.
+author: mrolecki
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2019-11-29
 ms.dyn365.ops.version: 10.0.7
-
+ms.search.form: 
 ---
 
 # Bank data usability enhancement

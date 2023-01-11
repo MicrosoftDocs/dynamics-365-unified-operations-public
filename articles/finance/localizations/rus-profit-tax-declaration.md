@@ -1,26 +1,18 @@
 ---
-# required metadata
-title: Profit tax declaration 
-description: This topic provides information about the profit tax declaration for Russia.
-author: anasyash
+title: Profit tax declaration
+description: This article provides information about the profit tax declaration for Russia.
+author: AdamTrukawka
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2020-01-29
 ms.dyn365.ops.version: 10.0.9
-
+ms.search.form: 
 ---
 
 # Profit tax declaration

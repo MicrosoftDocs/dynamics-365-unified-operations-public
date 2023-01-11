@@ -1,38 +1,29 @@
 ---
-# required metadata
-
 title: Linked refunds of previously approved and confirmed transactions
-description: This topic describes how to enable and use Linked refunds.
+description: This article describes how to enable and use Linked refunds.
 author: josaw1
-ms.date: 06/30/2021
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: rapraj
+ms.author: anupamar
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Linked refunds of previously approved and confirmed transactions
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Returns are an important operation for retailers. The ability to accept returns for sales and refund payments to customers gives retailers a way to service the needs of customers and to help resolve their issues.
 
-This topic provides information about how to configure and use linked refunds. A linked refund is a refund of a transaction that was previously approved and confirmed. The refund can be either a full refund or a partial refund of the transaction, and it can't exceed the full amount of the original authorization. The functionality for linked refunds is available in Microsoft Dynamics 365 Retail version 10.0.1.
+This article provides information about how to configure and use linked refunds. A linked refund is a refund of a transaction that was previously approved and confirmed. The refund can be either a full refund or a partial refund of the transaction, and it can't exceed the full amount of the original authorization. The functionality for linked refunds is available in Microsoft Dynamics 365 Retail version 10.0.1.
 
 In Microsoft Dynamics 365 Retail version 10.0 and earlier, retailers can process refunds to cards, but cashiers must manually specify these refunds. Cashiers can process refunds to the original mode of payment only if the customer provides that mode of payment. Therefore, by providing new card details, customers can use the return process to move balances from one card to another and therefore do unauthorized card balance transfers.
 
@@ -46,7 +37,7 @@ By using linked refunds, retailers can greatly reduce risk by making sure that r
 
 ### Additional setup
 
-Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
+Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this article can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
 
 ## Turn on the linked refunds functionality
 
@@ -56,18 +47,19 @@ To turn on the linked refunds functionality, go to **Retail and Commerce \> Head
 
 ![Omni-channel payments configuration.](media/LinkedRefundsOmniChannel.jpg)
 
+In Commerce version 10.0.11 and later, you can enable the **Omni-channel payments** feature in headquarters at **System administration \> Workspaces \> Feature management**.
+
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
-When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Modern POS (MPOS)) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-Commerce applications, customers can still manually enter card numbers for payment.
-
-
+When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Modern POS (MPOS)) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-commerce applications, customers can still manually enter card numbers for payment.
 
 ### Supported flows
 
-Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return.
+Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return. Supported flows include the following:
 
 - Linked refunds for cash-and-carry transactions that use credit or debit cards.
 - Linked refunds for customer orders that use credit or debit cards.
+- Linked refunds when the **Unified return processing experience in POS** feature is enabled, but only if a single invoice is being returned at a time. 
  
 ### Unsupported flows
 
@@ -76,6 +68,7 @@ Cashiers can process a refund to the card that was used during the original tran
 - Linked refunds for exchange orders.
 - Multiple return orders in the same transaction.
 - Returns without a receipt or customer account details.
+- Linked refunds when the **Unified return processing experience in POS** feature is enabled, and multiple invoices are being grouped at once for the return
 
 ## Enable refunds over multiple captures
 
@@ -106,7 +99,7 @@ When the cashier selects a credit card authorization, the payment refund is proc
 
 After the full amount is successfully refunded, the cashier can complete the transaction, and a receipt can be printed as configured.
 
-## Related topics
+## Related articles
 
 - [Payments FAQ](payments-retail.md)
 - [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Task Double form pattern
 description: This article provides information about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer 
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 14651
-ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 14651
+ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
 ---
 
 # Task Double form pattern

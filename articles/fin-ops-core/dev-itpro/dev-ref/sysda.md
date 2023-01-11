@@ -1,12 +1,12 @@
 ---
 title: Access data by using the SysDa classes
-description: This topic explains how to create extensible queries and data access statements by using the SysDa application programming interface (API). 
-author: RobinARH
+description: This article explains how to create extensible queries and data access statements by using the SysDa application programming interface (API).
+author: josaw1
 ms.date: 08/20/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: josaw
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create extensible queries by using the SysDa application programming interface (API).
+This article explains how to create extensible queries by using the SysDa application programming interface (API).
 
 The extensible SysDa API provides almost all the data access possibilities that are available in X++. In fact, the APIs are wrappers around the code that the X++ compiler would generate. Therefore, use of the SysDa classes carries no overhead, unlike use of the **QueryRun** object, for example. Additionally, the check that the X++ compiler does on data access statements is your responsibility. For example, you create a **where** clause that compares a globally unique identifier (GUID) to an integer. The X++ compiler would diagnose this clause as an error.
 

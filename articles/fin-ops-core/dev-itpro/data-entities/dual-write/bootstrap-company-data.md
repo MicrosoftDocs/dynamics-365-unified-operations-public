@@ -1,13 +1,13 @@
 ---
 title: Initialize company data
-description: This topic explains how to initialize data with company information before you enable a dual-write connection.
-author: RamaKrishnamoorthy 
+description: This article explains how to initialize data with company information before you enable a dual-write connection.
+author: RamaKrishnamoorthy
 ms.date: 12/01/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: ramasri
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -18,19 +18,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-If you have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 
-This topic includes sample scenarios that explain how to use [Azure Data Factory](/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
+If you have an existing Microsoft Dataverse instance or finance and operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or finance and operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
+
+This article includes sample scenarios that explain how to use [Azure Data Factory](/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this article and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
 
 ## High-level scenario
 
-Consider the **Customers** table in a Finance and Operations app, and the **Account** table in Dataverse.
+Consider the **Customers** table in a finance and operations app, and the **Account** table in Dataverse.
 
-- Use initial write to copy reference and dependent tables, such as **Company**, **Customer groups**, and **Terms of payment**, from the Finance and Operations app to Dataverse.
-- Use the Data management framework to export data from the Finance and Operations app in comma-separated values (CSV) format. For example, set up an export project in Data management to export customers from each company by using the **DataAreaId** field in the Finance and Operations app. This process is a one-time manual process.
-- Use Azure Blob Storage to store the CSV files for lookup and transformation. Upload the CSV file for your Finance and Operations customers into Azure Blob Storage.
+- Use initial write to copy reference and dependent tables, such as **Company**, **Customer groups**, and **Terms of payment**, from the finance and operations app to Dataverse.
+- Use the Data management framework to export data from the finance and operations app in comma-separated values (CSV) format. For example, set up an export project in Data management to export customers from each company by using the **DataAreaId** field in the finance and operations app. This process is a one-time manual process.
+- Use Azure Blob Storage to store the CSV files for lookup and transformation. Upload the CSV file for your finance and operations customers into Azure Blob Storage.
 - Use Azure Data Factory to initialize data in Dataverse.
 
 The following illustration shows the workflow.
@@ -39,20 +39,20 @@ The following illustration shows the workflow.
 
 This scenario is based on the following assumptions:
 
-- The source data is in the Finance and Operations app.
-- If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow. Use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data stored in Dataverse.
-- All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**). 
+- The source data is in the finance and operations app.
+- If an account exists in Dataverse, but it doesn't exist in the finance and operations app, it won't be initialized as part of this flow. Use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data stored in Dataverse.
+- All account records in the customer engagement apps have a natural key (account number) that matches the finance and operations natural key (**CustomerAccount**). 
 - Rows have a one-to-one (1:1) mapping across the apps.
 
 > [!NOTE]
-> In both Finance and Operations apps and Dataverse, When a customer record is created, Party record gets created implicitly. 
+> In both finance and operations apps and Dataverse, When a customer record is created, Party record gets created implicitly. 
 
 ## Prerequisites
 
 - **Azure subscription** – You have **contributor access** to an existing Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/free/) before you begin.
 - **Azure storage account** – You have an Azure storage account. If you don't have a storage account, follow the steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.
 - **Azure data factory** – Create an Azure Data Factory resource by following the steps in [Create a data factory](/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
-- **Finance and Operations app** – Use the Data management framework to export the data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customers are exported by using the **CustCustomerV3Entity** table.
+- **Finance and operations app** – Use the Data management framework to export the data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customers are exported by using the **CustCustomerV3Entity** table.
 - **Dynamics 365 Dataverse** – Use the credentials for the Dataverse admin user to initialize the data.
 - **Dual-write** – Dual-write solutions are installed, and reference data is copied by using initial write.
 
@@ -94,9 +94,9 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 
 ## Run the process
 
-1. In the Finance and Operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
+1. In the finance and operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
 
-    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations customer file.":::
+    :::image type="content" source="media/boot-customer-file.png" alt-text="finance and operations customer file.":::
 
 2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 
@@ -104,3 +104,4 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

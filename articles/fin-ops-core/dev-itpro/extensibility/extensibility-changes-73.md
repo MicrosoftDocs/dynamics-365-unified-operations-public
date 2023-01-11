@@ -1,34 +1,26 @@
 ---
 title: Extensibility changes in Finance and Operations, Enterprise edition 7.3
-description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
+description: This article lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 author: FrankDahl
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 268724
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
-
+ms.custom: 268724
+ms.assetid: 
 ---
 
 # Extensibility changes in Finance and Operations, Enterprise edition 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This article lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 

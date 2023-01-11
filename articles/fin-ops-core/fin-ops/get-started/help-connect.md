@@ -1,45 +1,38 @@
 ---
-# required metadata
-
-title: Configure the Help experience for Finance and Operations apps
-description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
-author: margoc
+title: Configure the Help experience for finance and operations apps
+description: This article provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
+author: edupont04
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 16141
-ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
+ms.reviewer: edupont
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: margoc
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16141
+ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
+ms.search.form: SystemParameters
 ---
 
-# Configure the Help experience for Finance and Operations apps
+# Configure the Help experience for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
-In this topic, you will find an overview of the components of the Help system for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The topic also explains how to connect these components and provides a summary of the process for creating custom Help.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+In this article, you will find an overview of the components of the Help system for finance and operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The article also explains how to connect these components and provides a summary of the process for creating custom Help.
 
 ## Help architecture
 
-Finance and Operations apps include conceptual overviews and other topics that are published to the [Microsoft Dynamics 365 documentation](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
+Finance and operations apps include conceptual overviews and other topics that are published to the [Microsoft Dynamics 365 documentation](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
 [![Help architecture.](./media/help-architecture.png)](./media/help-architecture.png)
 
-The in-product Help system pulls articles from docs.microsoft.com and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
+The in-product Help system pulls articles from Microsoft Learn and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Adding task guides
 
@@ -65,7 +58,7 @@ To configure task guides for a solution, follow these steps on the **System para
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.
 3. Set the display order of the BPM libraries. The display order defines the order in which task recordings from the libraries will appear in the **Help** pane.
 
-After you complete these steps, you can open the **Help** pane and select the **Task guides** tab. You'll now see the task guides that apply to the page that you're currently on in Finance and Operations apps. If no task guides are found, you can enter keywords to refine your search.
+After you complete these steps, you can open the **Help** pane and select the **Task guides** tab. You'll now see the task guides that apply to the page that you're currently on in finance and operations apps. If no task guides are found, you can enter keywords to refine your search.
 
 ### Showing translated task guides
 
@@ -89,7 +82,7 @@ If you're a partner, and you promote a library to a corporate library and includ
 
 ### Connect a custom Help site
 
-Finance and Operations apps are rarely used in their out-of-box form. Instead, the solution is customized and extended to fit the organization's needs. You can also customize and extend the Help experience. For example, you can add custom Help to the in-product **Help** pane.
+Finance and operations apps are rarely used in their out-of-box form. Instead, the solution is customized and extended to fit the organization's needs. You can also customize and extend the Help experience. For example, you can add custom Help to the in-product **Help** pane.
 
 Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. For information about how you can set up a custom Help solution that is connected to the **Help** pane, see [Custom Help overview](../../dev-itpro/help/custom-help-overview.md).
 

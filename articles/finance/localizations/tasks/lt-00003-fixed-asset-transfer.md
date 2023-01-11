@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: LT-00003 Generate a fixed asset transfer between warehouses document
-description: Move a fixed asset from one department to another and verify the transfer with a packing slip. 
-author: anasyash
+description: Move a fixed asset from one department to another and verify the transfer with a packing slip.
+author: AdamTrukawka
 ms.date: 09/15/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VehicleModelTable_W, LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, AssetWarehouseTransfer, HcmWorkerLookUp, SysQueryForm, LtAssetPackingSlip, TransportationDocument, LogisticsPostalAddressLookup   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Lithuania
-# ms.search.industry: 
-ms.author: anasyash
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: VehicleModelTable_W, LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, AssetWarehouseTransfer, HcmWorkerLookUp, SysQueryForm, LtAssetPackingSlip, TransportationDocument, LogisticsPostalAddressLookup
 ---
 
 # LT-00003 Generate a fixed asset transfer between warehouses document

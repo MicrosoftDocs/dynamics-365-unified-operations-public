@@ -3,7 +3,7 @@
 
 title: Credit card setup, authorization, and capture
 description: This article provides an overview of credit card authorization in Microsoft Dynamics 365 Finance. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
-author: ShivamPandey-msft
+author: ShivamPandeymsft
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: CreditCardProcessors, CustTable, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba

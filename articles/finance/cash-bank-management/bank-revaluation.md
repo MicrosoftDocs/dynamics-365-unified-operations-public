@@ -2,9 +2,9 @@
 # required metadata
 
 title: Bank foreign currency revaluation 
-description: This topic provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
-author: mikefalkner
-ms.date: 05/16/2019
+description: This article provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
+author: angelad116
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: BankCurrencyRevalHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides an overview of the process of bank foreign currency revaluation. It explains how to set up and run the process, and provides information about the calculation for the process. It also explains how to reverse revaluation transactions, if reversal is required.
+This article provides an overview of the process of bank foreign currency revaluation. It explains how to set up and run the process, and provides information about the calculation for the process. It also explains how to reverse revaluation transactions, if reversal is required.
 
 As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
 
@@ -46,17 +46,8 @@ Before you run the revaluation process, the following setup is required.
 - On the **Ledger** page, specify the exchange rate type. If an exchange rate type isn't defined on the main account, this exchange rate type is used during foreign currency revaluation.
 - On the **Ledger** page, specify the realized gain, realized loss, unrealized gain, and unrealized loss accounts for currency revaluation. Realized gain and realized loss accounts are used when Accounts receivable and Accounts payable transactions are settled. Unrealized gain and unrealized loss accounts are used to revalue open transactions and general ledger main accounts.
 - On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company. If no accounts are defined, the accounts from the **Ledger** page are used.
+- On the **Cash and bank management parameters** page, on the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 
-## Enable foreign currency revaluation
-
-You must turn on the bank foreign currency revaluation feature before you can process foreign currency revaluations.
-
-1. Go to **Cash and bank management \> Setup \> Cash and bank management parameters**.
-2. On the **General** tab, under **Foreign currency revaluation**, set the **Enable bank revaluation** option to **Yes** to turn on the feature for the current legal entity. 
-3. On the **Number sequences** tab, add a number sequence for foreign currency revaluation.
-4. Refresh the browser to see **Foreign currency revaluation** in the **Periodic tasks** section of the area page.
-
-You must turn on the feature for every legal entity that will use foreign currency revaluation. If you are assigned to the System Administrator role or Feature Manager role, you can eliminate this step by enabling the feature named **Enable bank revaluation without a parameter** in the **Feature management** workspace.
 
 > [!NOTE]
 > If your legal entity uses a Russian, Polish, or Hungarian country/region code, you can already do bank foreign currency revaluation. You won't be able to use the foreign currency revaluation that is used by other countries or regions.

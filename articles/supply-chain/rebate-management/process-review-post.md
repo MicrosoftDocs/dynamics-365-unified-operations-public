@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process, review, and post rebates
-description: This topic describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
+description: This article describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form: TAMRebateDeal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
+This article describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
 
 ## Change the status of a deal
 
@@ -50,7 +50,7 @@ Go to **Rebates management \> Periodic tasks \> Calculate FIFO purchase price**.
 
 You can create the sales orders or purchase orders that have source transactions either before or after you create an applicable Rebate management deal.
 
-You can set up each deal line so that it automatically creates a rebate provision by posting the delivery or invoice for a sales order or purchase order. Set the **Transaction type** field for the deal line to *Delivery* or *Invoice*, and set the **Process at posting** option to *Yes*. If the **Transaction type** field is set to *Order*, processing at posting is disabled. For source transactions that were created after a deal was activated, you can still process the provision as described in the [Process Rebate management deals](#process-deals) section later in this topic.
+You can set up each deal line so that it automatically creates a rebate provision by posting the delivery or invoice for a sales order or purchase order. Set the **Transaction type** field for the deal line to *Delivery* or *Invoice*, and set the **Process at posting** option to *Yes*. If the **Transaction type** field is set to *Order*, processing at posting is disabled. For source transactions that were created after a deal was activated, you can still process the provision as described in the [Process Rebate management deals](#process-deals) section later in this article.
 
 ### Enable price details
 

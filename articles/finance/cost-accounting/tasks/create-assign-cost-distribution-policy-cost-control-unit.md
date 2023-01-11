@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Create and assign a cost distribution policy to a cost control unit
-description: Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center. 
-author: ShylaThompson
+description: Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center.
+author: kfend
 ms.date: 06/27/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CAMCostDistributionRule
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: roschlom
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: CAMCostDistributionRule
 ---
 # Create and assign a cost distribution policy to a cost control unit
 

@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Nested Simple List and Details subpattern
-description: This topic provides information about the Nested Simple List and Details (NSL+D) subpattern, used to display information about a secondary or child entity.
+description: This article provides information about the Nested Simple List and Details (NSL+D) subpattern, used to display information about a secondary or child entity.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 14741
-ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 14741
+ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
 ---
 
 # Nested Simple List and Details subpattern
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
+This article provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
 
 ## Usage
 

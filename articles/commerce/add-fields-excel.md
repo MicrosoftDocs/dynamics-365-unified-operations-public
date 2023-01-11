@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Add fields to an Excel workbook to edit retail transactions
-description: This topic describes how to add fields to a Microsoft Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
+description: This article describes how to add fields to a Microsoft Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.industry: Retail
 ---
 # Add fields to an Excel workbook to edit retail transactions
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to add fields to a Microsoft Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
+This article describes how to add fields to a Microsoft Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Work split
-description: This topic provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
-author: mirzaab
+description: This article provides information about work split functionality. This functionality lets you split large work orders into several smaller work orders that you can then assign to multiple warehouse workers. In this way, the same work can be picked simultaneously by several warehouse workers.
+author: Mirzaab
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
@@ -37,7 +37,7 @@ Work split functionality lets you split large work IDs (that is, work orders tha
 
 Before you can use the work split functionality, you must turn on the feature and its prerequisite feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on as required.
 
-First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. In the **Feature management** workspace, this feature is listed in the following way:
+First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Organization-wide work blocking*

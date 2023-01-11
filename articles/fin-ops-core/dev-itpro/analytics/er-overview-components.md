@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Electronic reporting components
-description: This topic describes the Electronic reporting (ER) components.
-author: nselin
+description: This article describes the Electronic reporting (ER) components.
+author: kfend
 ms.date: 09/28/2021
-ms.topic: 
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-# ms.search.industry: 
-ms.author: nselin 
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
 ---
 
 # Electronic reporting components
@@ -96,15 +86,29 @@ A format component lets you attach specific files that can be used in the report
 
 The following illustration shows how the data flows for these formats.
 
-[![Data flow for incoming format components.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Data flow for outgoing format components](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
-To run a single ER format configuration to import data from an incoming electronic document, identify the desired mapping of a format configuration and the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different types of incoming documents.
+To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
+
+#### Format components for incoming electronic documents
+A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
+
+- A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
+- A format mapping that binds individual format elements to elements of a domain-specific data model. At run time, the elements in the data model specify the data flow and the rules for importing data from an incoming document, and then store the data in a data model.
+- A format validation, as a set of configurable rules that control data import at run time, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor's payments and throws an exception when a specific vendor's attributes are missing, such as the vendor identification code.
+
+The following illustration shows how the data flows for these formats.
+
+[![Data flow for incoming format components](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+
+To run a single ER format configuration to import data from an incoming electronic document, you must identify the desired mapping of a format configuration, and also the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different type of incoming documents.
+
 
 ## Component versioning
 
 Versioning is supported for ER components. The following workflow is provided to manage changes in ER components:
 
-1. The version that is originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
+1. The version that was originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
 2. The **Draft** version can be converted to a **Completed** version. This version can be used in local reporting processes.
 3. The **Completed** version can be converted to a **Shared** version. This version is published in Microsoft Dynamics Lifecycle Services (LCS) and can be used in global reporting processes.
 4. The **Shared** version can be converted to a **Discontinued** version. This version can be deleted.
@@ -114,15 +118,37 @@ Versions that have either **Completed** or **Shared** status are available for o
 - The component can be serialized in XML format and exported as a file in XML format.
 - The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
 
+For more information, see [Import a new data model configuration](er-quick-start1-new-solution.md#ImportDataModel) and [Export completed version of a derived format](er-calculated-field-type.md#export-completed-version-of-a-derived-format).
+
+### Draft versions at runtime
+
+In your personal user parameters for the ER framework, you can enable the option that lets you specify whether the draft version of an ER configuration must be used at runtime. For information about how to make the **Run Draft** option available for your ER configurations, see [Mark a custom format as runnable](er-quick-start2-customize-report.md#MarkFormatRunnable).
+
+> [!NOTE]
+> The ER user parameters are company-specific and user-specific.
+
+### Draft format versions at runtime
+
+By default, when you run an ER solution, the draft versions of its format components are ignored. Instead, only the relevant version that has a status other than **Draft** is used. Sometimes, you might want to force ER to use the draft version of your ER format configuration at runtime. For example, after you introduce necessary changes in your draft version, you can use that draft version to do the test run. In this way, you can validate the correctness of your changes. To start to use the draft format version, you must [set](er-quick-start2-customize-report.md#MarkFormatRunnable) the **Run Draft** option of the relevant ER configuration to **Yes**.
+
+### Draft model mapping versions at runtime
+
+By default, when you run an ER solution, the draft versions of its model mapping components are always used. Sometimes, you might want to force ER to ignore the draft version of your ER model mapping configuration at runtime. In **version 10.0.29 and later**, you can enable the **Always take into consideration the "Run draft" option for ER model mappings** feature to control the model mapping version that is used at runtime. When this feature is enabled, the following behavior occurs:
+
+- When the **Run Draft** option is set to **No** for a model mapping configuration, the highest non-draft version of that configuration is used at runtime. An exception is thrown if the configuration isn't available in the current Finance instance.
+- When the **Run Draft** option is set to **Yes** for a model mapping configuration, the draft version of that configuration is used at runtime.
+
 ## Component date effectivity
 
-ER component versions are date-effective. You can set the "effective from" date for an ER component to specify the date when the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a specific date, the latest version is used for reporting processes.
+ER format component versions are date-effective. You can set the "effective from" date for an ER format component to specify the date when the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a specific date, the latest version is used for reporting processes.
 
 ## Component access
 
-Access to ER format components depends on the setting for the International Organization for Standardization (ISO) country/region code. If this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at runtime. If the setting contains ISO country/region codes, a format component is available only from companies that have a primary address defined for one of a format component's ISO country/region codes.
+Access to ER format and model mapping components at runtime depends on the setting for the International Organization for Standardization (ISO) country/region code. If this setting is blank for a selected version of a format or model mapping configuration, a format or model mapping component can be accessed from any company at runtime. If the setting contains ISO country/region codes, a format or model mapping component is available only from companies that have a primary address defined for one of a format component's ISO country/region codes.
 
-Different versions of a data format component can have different settings for ISO country/region codes.
+Different versions of a format or a model mapping component can have different settings for ISO country/region codes.
+
+For more information, see [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

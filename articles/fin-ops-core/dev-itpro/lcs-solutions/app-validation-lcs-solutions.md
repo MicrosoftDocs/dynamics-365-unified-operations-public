@@ -1,36 +1,24 @@
 ---
-# required metadata
-
-title: Validate applications for Finance and Operations apps
-description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
-author: kfend
+title: Validate applications for finance and operations apps
+description: This article provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
+author: sericks007
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
-
 ---
 
-# Validate applications for Finance and Operations apps
+# Validate applications for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Finance and Operations apps environment.
+This article provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a finance and operations apps environment.
 
 Microsoft requires specific reviews in order to validate the following requirements:
 
@@ -60,7 +48,7 @@ The following table describes the steps that must be completed before the valida
 | 1     | 1    | Validate code.                          | Run all customer model files by using the CAR tool, and then generate the report.                                                                   | Successfully create a CAR without any localization, accessibility, performance, or security issues.                                                                                                                                                                                                                                     |
 | 1     | 2    | Verify user experience (UX) guidelines. | Follow UX guidelines to implement the workspace correctly.                                                                                          | Reference best practice information in the Migrate and Create methodology section of LCS.                                                                                                                                                                                                                                               |
 | 2     | 3    | Validate the solution package in LCS.   | Create a solution package in LCS that includes all the required artifacts.                                                                                                            | A solution package that has all the required artifacts has been published in LCS, and a globally unique identifier (GUID) has been created for the solution.                                                                                                                                                                                                                        |
-| 2     | 4    | Deploy an environment.                  | Deploy a standard environment that has partner code, based on the package contents (code, binaries, and configuration).      | Successfully deploy at least one Finance and Operations environment without any errors. The environment configuration (including components and the configuration) is the same as the partner's reference environment. A user can successfully sign in to this environment without any errors. |
+| 2     | 4    | Deploy an environment.                  | Deploy a standard environment that has partner code, based on the package contents (code, binaries, and configuration).      | Successfully deploy at least one finance and operations environment without any errors. The environment configuration (including components and the configuration) is the same as the partner's reference environment. A user can successfully sign in to this environment without any errors. |
 | 2     | 5    | Configure and deploy data.              | Deploy partner-supplied data in the environment without any errors.                                                                                 | Demonstrate that partner-supplied master and reference data was successfully pushed into the environment without any errors.               |
 | 2     | 6    | Do a sanity check.                      | After data has been loaded into the environment, users should be able to complete business transactions (as defined in the scope of the solution).  | Users can sign in to the data-loaded environment without any errors. Business transactions can be completed, as defined in the package scope, without any errors.                                                                                                                                                                                |
 

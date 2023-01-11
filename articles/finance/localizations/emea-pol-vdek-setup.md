@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Prepare for JPK-V7M reporting
-description: This topic provides information about how to set up a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
-author: liza-golub
+description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+author: AdamTrukawka
 ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: elgolu
-
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # Prepare for JPK-V7M reporting
@@ -89,7 +80,7 @@ The format includes the following lookup fields for setup.
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result. 
 
-    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, continue with this topic.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, continue with this article.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**, and then save the configuration.
 
@@ -389,12 +380,15 @@ The JPK-V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executa
 1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
 2. Select the **Wygenerowanie JPK_V7M** executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
 
-In the dialog box for the executable class, the **Retail-specific sales marking** group of parameters is used for retail-specific scenarios. For more information about how to report **RO** and **FP** document types for retail operations, see 
-[Report RO and FP document types for retail operations](emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations).
+In the dialog box for the executable class, the **Retail-specific sales marking** group of parameters is used for retail-specific scenarios. For more information about how to report **RO** and **FP** document types for retail operations, see [Report RO and FP document types for retail operations](emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations). A **Retail-specific sales marking** group of parameters is available only in legal entities that have a primary address in Poland.
 
-The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions in the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
+The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions on the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes). The **Consider VAT report date codes** parameter is available only in legal entities that have a primary address in Poland.
+
+The dialog box for the executable class includes the **Settlement period** parameter. Use this parameter with the [**Multiple VAT registration numbers**](emea-multiple-vat-registration-numbers.md) feature to collect VAT transactions in specific sales tax settlement periods. The **Settlement period** parameter is available as of Finance version 10.0.29.
 
 KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces the **Schema version** parameter. Use this parameter to specify that the additional field contains the version of the schema of JPK-V7M that must be reported. Select **Wersja schematu** as the value for this field.
+
+The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7M in the accounting currency. The **Report in accounting currency** parameter is available as of Finance version 10.0.29.
 
 ## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 

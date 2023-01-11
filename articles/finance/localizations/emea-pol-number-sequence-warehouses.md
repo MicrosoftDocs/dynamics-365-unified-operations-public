@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Set up number sequences by warehouse
-description: This topic walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
-author: ShylaThompson
+description: This article walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
+author: AdamTrukawka
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Set up number sequences by warehouse
 
 [!include[banner](../includes/banner.md)]
 
-This topic walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
+This article walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
 
 ## Set up a number sequence for purchase product receipts by warehouse
 

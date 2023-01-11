@@ -1,86 +1,107 @@
 ---
-title: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
-description: This topic explains how to set up and configure the Store Commerce app.
-author: mugunthanm
-ms.date: 08/23/2021
+title: Store Commerce app
+description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
+author: josaw1
+ms.date: 10/25/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-20-2020
-ms.dyn365.ops.version: AX 10.0.19
+ms.author: josaw
+ms.search.validFrom: 2022-03-01
+ms.dyn365.ops.version: AX 10.0.25
 ---
 
-# Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+# Store Commerce app
 
 [!include [banner](../includes/banner.md)]
 
+This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
 
+The Dynamics 365 Commerce Store Commerce app is the next-generation offering for physical stores. It unifies Modern point of sale (MPOS) and Cloud point of sale (CPOS) into a single application, providing deployment choices to retailers, helping improve performance, and offering superior application lifecycle management (ALM) while retaining all the functionality of MPOS and CPOS, including extensibility.
 
-This topic applies to Microsoft Dynamics 365 Commerce version 10.0.20 and later.
+The Store Commerce app provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-The Store Commerce application is the next generation offering for physical stores that unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, improves performance, and offers superior application life cycle management, while retaining all of the functionalities of MPOS and CPOS, including extensibility.
+The Store Commerce app is a [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) shell application for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render the CPOS application. Although CPOS can run only in a web browser, Store Commerce can run as a native Windows application like [MPOS](retail-modern-pos-architecture.md) does, providing the benefits of both MPOS and CPOS.
 
-The Store Commerce app in Dynamics 365 Commerce provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
-
-Store Commerce provides the benefits of both MPOS and CPOS.
-
-> [!NOTE]
-> Store Commerce is released as a preview app. It uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control, which is also in preview. Therefore, do **not** use Store Commerce in production until it's generally available.
-
-Store Commerce is a shell app for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render the Cloud Point of Sale (CPOS) app. Although CPOS can run only in a web browser, Store Commerce can run as a native Windows app such as [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md).
-
-Store Commerce supports local hardware station, and can be directly integrated with a payment terminal, printer, and cash drawer. You don't have to set up a shared hardware station to use hardware devices.
+Store Commerce supports local hardware station and offline usage, and can be directly integrated with a payment terminal, printer, and cash drawer. It can use hardware devices without requiring that a shared hardware station be set up.
 
 To render the user interface (UI), Store Commerce uses the Chromium engine instead of the Universal Windows Platform (UWP) app rendering framework. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. The main difference between MPOS and Store Commerce is that Store Commerce uses the Chromium engine to render the app.
 
+The Store Commerce app is also available for the Android and iOS platforms. For more information, see [Store Commerce for mobile](store-commerce-mobile.md). 
+
 ## Benefits of Store Commerce
 
-+ Simplified Application lifecycle management (ALM) using Microsoft Store.
-+ Extension or ISV code developed for MPOS or CPOS can be reused in Store Commerce.
-+ Store Commerce provides the benefits of both MPOS and CPOS.
-+ Better performance.
-+ Easier POS and extension upgrades.
-+ Support for dedicated hardware station (HWS).
-+ Support for offline, in the future.
+- Application lifecycle management is simplified.
+- Extension or independent software vendor (ISV) code that is developed for MPOS or CPOS by using the Commerce software development kit (SDK) can be reused in Store Commerce with minimal changes.
+- The industry-standard developer experience uses Microsoft Visual Studio Code and GitHub.
+- Store Commerce provides the benefits of both MPOS and CPOS.
+- Performance is significantly improved.
+- POS and extension upgrades are simplified through the Commerce sealed installer framework.
+- Dedicated hardware station is supported.
+- Offline deployment is supported.
+
+To review the capabilities of the Store Commerce app, see [Store Commerce app capabilities](../store-commerce-capabilities.md).
 
 ## Application lifecycle management
 
-Store Commerce is an app that runs on Windows devices. It will be available from [Windows Apps - Microsoft Store](https://aka.ms/StoreCommerceApp) so that it's easier to find, download, and deploy. Therefore, the overall lifecycle of deployment and servicing will be simplified.
+The Store Commerce app runs on Windows devices and can be downloaded from the [Shared asset library in Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with "Store Commerce." Be sure to select the version for the Commerce release that you're using (for example, 10.0.25 or 10.0.26).
 
-Store Commerce is both forward compatible and backward compatible. It can easily be updated, either by setting up the Windows policy or by using any update and deployment tool that Microsoft Store apps support, such as Intune. It can be updated independently of the Cloud Scale Unit (CSU) and extensions.
+### Store Commerce deployment options
 
-For MPOS, more manual management is required to get the app and package it with extensions. However, because Store Commerce is deployed through Microsoft Store, application lifecycle management (ALM) is greatly simplified.
+Store Commerce supports two types of deployment topologies:
 
-Store Commerce is a shell that renders CPOS. Therefore, to get the updated CPOS functionality, you should also update CPOS. CPOS can be updated from the CSU. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
+- **In-app** – All the components, such as Modern Point of Sale (MPOS), are deployed locally. Offline mode and local Hardware Station (HWS) are supported.
+- **Hybrid** – Store Commerce renders the Cloud POS that is deployed in Commerce Scale Unit (CSU) and supports local Hardware Station. However, offline isn't supported.
 
-![Store Commerce.](media/StoreCommerce.PNG)
+There are no separate installers for the hybrid and in-app topologies. The deployment options are determined by the parameters that are passed during installation.
 
+![Store Commerce deployment options.](../media/SC-Deployment.png)
+
+### In-app deployment
+
+For the in-app deployment option, the application content is locally deployed in Store Commerce, just as for MPOS. Store Commerce then renders the application content from its local deployment. It doesn't connect to CPOS that is hosted in CSU to get the application content.
+
+To update the application content, run the latest version of the Store Commerce installer. The application content won't be updated if you update the CSU. Therefore, you can manage the updates at individual registers.
+
+In-app deployment supports offline mode. During installation, pass the **--installoffline** parameter to deploy the offline database. In offline mode, the application won't be able to connect to CSU or Commerce headquarters, and will use the locally deployed CRT.
+
+> [!NOTE]
+> During the installation of Store Commerce, users can pass parameters to select either the hybrid option or the in-app option. The default option is in-app deployment.
+
+### Hybrid deployment
+
+Store Commerce is a shell that renders CPOS and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In hybrid mode, Store Commerce app content is rendered from CPOS that is hosted in CSU. When the Store Commerce app is opened, it will prompt for the CPOS URL.
+
+![Active Store Commerce dialog box prompting for the Cloud POS URL.](../media/SC-Hybrid.png)
+
+To update Store Commerce, just update the CSU. Store Commerce will then automatically receive the update. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell must still be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
 ## Store Commerce and MPOS parity
 
-Store Commerce will have full functional parity with MPOS in the future. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Headless Commerce). For more information about the different POS apps and topology, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md)
+Store Commerce has full functional parity with MPOS. For more information about the different POS applications and topologies, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md).
+
+## Hardware parity between MPOS and Store Commerce
+
+The Store Commerce app does not support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started.md). If you are currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you will need to install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, refer to the [Commerce peripherals](../retail-peripherals-overview.md) article.
+
+To migrate from MPOS to Store Commerce, refer the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) article.
 
 ## Store Commerce and CPOS parity
 
-Store Commerce renders CPOS and have full functional parity with CPOS, Store Commerce  in addition supports dedicated hardware station and supports offline in the future.
+Store Commerce has full functional parity with CPOS. In addition, Store Commerce supports dedicated hardware station and offline deployment.
 
-## Choosing between Store Commerce and MPOS/CPOS
+## Store Commerce and MPOS/CPOS
 
-If you are currently  using MPOS or CPOS, you should be able to move to Store Commerce. The Store Commerce application is currently in preview, which means that you can try this app in your test or UAT environment.
+The Store Commerce apps for Windows and mobile platforms are the next generation of POS applications for Dynamics 365 Commerce. Microsoft will deprecate MPOS and the [Retail hybrid apps](hybridapp.md) in October 2023, and recommends that you use Store Commerce or CPOS for all new deployments. Existing customers should plan to migrate MPOS to Store Commerce. 
 
-Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline, but it will in the future. 
-
-Because Store Commerce uses the Chromium engine to render the UI, it provides better rendering performance than MPOS. Additionally, because Store Commerce is deployed through Microsoft Store, ALM is greatly simplified. By contrast, MPOS is self-serviced by using Microsoft Dynamics Lifecycle Service (LCS) and Commerce headquarters.
-
-If you don't require offline support in your store, you should choose Store Commerce instead of MPOS because of the added benefits, such as improved performance and easier lifecycle management.
+### Comparison between Store Commerce and MPOS
 
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Store Commerce (Preview)</th>
+<th>Store Commerce</th>
 <th>MPOS</th>
 </tr>
 </thead>
@@ -92,22 +113,22 @@ If you don't require offline support in your store, you should choose Store Comm
 </tr>
 <tr>
 <th scope="row">ALM</th>
-<td>Store Commerce is deployed through Microsoft Store, and CPOS is deployed through CSU.</td>
+<td>Store Commerce is self-serviced by using LCS and Commerce headquarters. It's packaged and installed by using the Store Commerce installer, and CPOS is deployed through CSU.</td>
 <td>MPOS is self-serviced by using LCS and Commerce headquarters. It's packaged and installed by using the MPOS installer.</td>
 </tr>
 <tr>
 <th scope="row">Extensions</th>
-<td>Extensions are deployed to CPOS.</td>
+<td>Extensions are deployed to CPOS or installed by using the extension installer.</td>
 <td>Extensions are packaged with MPOS, or an independent extension package is used.</td>
 </tr>
 <tr>
 <th scope="row">Support for offline mode</th>
-<td>No (but it will be added in the future)</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <th scope="row">Support for local hardware station</th>
-<td>Yes</td>
+<td>Yes, but does not support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, refer the [Commerce peripherals](../retail-peripherals-overview.md) article.</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -120,61 +141,83 @@ If you don't require offline support in your store, you should choose Store Comm
 
 ## Setup and installation
 
-### Prerequisite
+### Prerequisites
 
-+ Windows 10 version 17763.0 or higher or Windows Server 2019.
-+ Microsoft Edge, because the app uses the Microsoft Edge WebView2 control.
-+ Dynamics 365 Commerce (Back office and CPOS).
+- Windows 10 version 17763.0 or later, Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
+- [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
+- SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
+- Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
+- The .NET Framework version 4.7.2 or later. See [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)
 
 ### Device setup in Commerce headquarters
 
 For Store Commerce, a new application type that is named **Store Commerce** has been added on the **Devices** page (**Retail and Commerce \> Channel setup \> POS setup \> Devices**). Select this application type when you create a device for Store Commerce.
 
-If you are not able to see the Store Commerce application type in the drop down menu, try running the **Initialize** from the Retail and Commerce > Headquarters setup > Parameters> Commerce parameters > General  > **Initializer** and refresh the page.
+If the **Store Commerce** application type doesn't appear on the drop-down menu, try to run the **Initialize** function from the **General** tab of the **Commerce parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**). Then refresh the page.
 
 You must create a [register](../tasks/create-associate-registers.md) and a [device](../tasks/create-associate-device.md) for Store Commerce. Then, before you activate the app, run the register job from the distribution schedule in Commerce headquarters. During device creation, set the **Application type** field to **Store Commerce**.
 
-Store Commerce is available in Microsoft Store. To download and install the app, follow these steps.
+### Device installation
 
-1. Open [Windows Apps - Microsoft Store](https://aka.ms/StoreCommerceApp), and search for **Store Commerce**.
-2. Select **Get** to install the app.
-3. On the Windows **Start** menu, search for **Store Commerce**, and open the app.
+Store Commerce can be downloaded from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. After the file has been downloaded, follow these steps to install the app.
 
-After the app is opened, follow these steps to configure and activate it.
+1. Go to the folder where you downloaded Store Commerce, and open PowerShell in administrator mode.
+1. In PowerShell, find the Store Commerce installer, and pass the **install** parameter to install the app. To install offline components, pass the **--installoffline** parameter. (For example, enter `Store_Commerce Installer_exe_name install --installoffline`.) If you want to enable debugging mode during installation, pass the **--enablewebviewdevtools** parameter. 
 
-1. On the app's start page, enter the CPOS URL. You can find this URL on the environment details page in LCS or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
-2. Select **Save**.
-3. Activate Store Commerce be following the steps in [POS activation guide](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
-4. Sign in by using an employee account.
+### Store Commerce installation parameters
 
-You can now complete your commerce operations.
+You can also use the **help** command in PowerShell to find information about all the parameters. In PowerShell, find the Store Commerce installer, and then enter `Store_Commerce Installer_exe_name help install`.
 
-### Troubleshooting setup issues
+| Parameter | Description |
+|---|---|
+| installoffline | Deploy the offline database. |
+| sqlservername | Specify the name of the SQL Server instance that Store Commerce uses in offline mode. If you don't specify this parameter, the installer will use a default instance. |
+| skipsqlfulltextcheck | Skip validation of the SQL Full-Text Search that is required for offline deployment. |
+| trustsqlservercertificate | Trust the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
+| enablewebviewdevtools | Enable developer tools for Store Commerce. If you don't specify this parameter, developer tools will be enabled only if Windows Developer Mode is enabled. |
+| retailserverurl | Specify the default Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
+| useremoteappcontent | Use the remote application content to download the Store Commerce app content from CPOS that is hosted in CSU. By default, the local application content that is deployed with Store Commerce is used. |
+| skipversioncheck | Skip the validation during downgrade. |
+| skipurlcheck | Skip the validation of URLs that are passed to the installer. |
+| logdirectorypath | Specify the path of the log's directory. |
+| config | Specify the path of the configuration file that will be used as part of the installation. |
+| verbosity | Deploy the offline database. |
+| help | Show parameter information.|
+| version | Show information about the app version. |
 
-#### Reset the app
+### Activate Store Commerce
 
-If the CPOS URL that you entered isn't valid and you want to change it, or if the app is in an error state during activation, you can restart the process by resetting the app.
+To activate Store Commerce after installation, follow these steps.
 
-1. On the Windows **Start** menu, select and hold (or right-click) the app, and then select **More \> App settings**.
-2. Scroll down the app settings page until you find the **Reset** button.
-3. Select **Reset**, and then, when you're prompted, confirm that you want to reset the app.
+1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application.
+1. On the application's start page, if you select **Remote app content** as the deployment option, enter the CPOS URL, and then select **Save**. You can find the CPOS URL on the environment details page in LCS or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
+1. Activate Store Commerce by following the steps in the [POS activation guide](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
+1. After activation is completed, sign in to the application by using an employee account.
 
-## Customizing the app
+### Troubleshoot setup issues
 
-You can customize Store Commerce by using the POS extension support that the Retail software development kit (SDK) provides. You can modify and create the POS user experience, enhance or modify out-of-box functionality, add validations, and add custom features. For more information, see [Point of Sale (POS) extension overview](pos-extension/pos-extension-overview.md).
+For troubleshooting information, see [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md).
 
-Extensions that are developed by using the Retail SDK will work for CPOS, MPOS, and Store Commerce. However, the way that the extension is packaged and deployed by MPOS and CPOS differs.
+## Customize the app
 
-Because Store Commerce renders CPOS, you must follow the CPOS packaging and deployment options to deploy Store Commerce extensions.
+Store Commerce can be customized by using the Commerce SDK. You can modify and create the POS user experience, enhance or modify out-of-box functionality, add validations, and add custom features. For more information, see [Point of Sale (POS) extension overview](pos-extension/pos-extension-overview.md), or review the samples on [GitHub](https://github.com/microsoft/Dynamics365Commerce.InStore).
 
 ### Hardware station extension
 
-Store Commerce can be extended so that it's integrated with hardware devices. You can use the [sample extension code](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28/src/PosSample) that has been added in GitHub to generate Store Commerce hardware station extension (HWS) packages. For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
+Store Commerce can be extended so that it's integrated with hardware devices. You can use the [sample extension code](https://github.com/microsoft/Dynamics365Commerce.InStore) that has been added in GitHub to generate Store Commerce hardware station extension packages. For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
 
 ## Known issues with the Microsoft Edge WebView2 control
 
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
-+ Tabbing inside the app by pressing the Tab key may not work. Instead, click or select items.
-+ Using the mouse for drop-down selection might not work. Instead, use the keyboard to make a selection.
+
+## Additional Resources
+[Store Commerce app capabilities](../store-commerce-capabilities.md)
+
+[Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
+
+[Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
+
+[Store Commerce Extensions Overview](pos-extension/pos-extension-overview.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

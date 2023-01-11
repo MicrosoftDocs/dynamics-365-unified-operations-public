@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Select a site theme
-description: This topic describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
+description: This article describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+ms.assetid: 
 ---
 
 # Select a site theme
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
+This article describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 
 A site's layout and style (for example, fonts, sizes, and colors) are defined by the theme that you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](e-commerce-extensibility/theming.md). For more information about how to create and deploy themes, see [Create a new theme](e-commerce-extensibility/create-theme.md).
 
@@ -54,8 +45,6 @@ To select the theme that is applied to your site, follow these steps.
 [Work with CSS override files](css-override-files.md)
 
 [Add a favicon](add-favicon.md)
-
-[Add a welcome message](add-welcome-message.md)
 
 [Add a copyright notice](add-copyright-notice.md)
 

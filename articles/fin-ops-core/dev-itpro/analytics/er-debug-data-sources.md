@@ -1,29 +1,20 @@
 ---
-# required metadata
 title: Debug data sources of an executed ER format to analyze data flow and transformation
-description: This topic explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
-author: NickSelin
+description: This article explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
+author: kfend
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERSolutionTable, EROperationDesigner
 ---
 
 # Debug data sources of an executed ER format to analyze data flow and transformation
@@ -32,13 +23,13 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include[banner](../includes/preview-banner.md)]
 
-When you [configure](tasks/er-format-configuration-2016-11.md) an Electronic reporting (ER) solution to generate outbound documents, you define the methods that are used to get data out of the application and enter it in the output that is generated. To make the life cycle support of the ER solution more efficient, your solution should consist of an ER [data model](general-electronic-reporting.md#DataModelComponent) and its [mapping](general-electronic-reporting.md#ModelMappingComponent) components, and also an ER [format](general-electronic-reporting.md#FormatComponentOutbound) and its mapping components, so that the model mapping is application-specific, whereas other components remain application-agnostic. Therefore, several ER components might [affect](general-electronic-reporting.md#FormatComponentOutbound) the process of entering data in the generated output.
+When you [configure](tasks/er-format-configuration-2016-11.md) an Electronic reporting (ER) solution to generate outbound documents, you define the methods that are used to get data out of the application and enter it in the output that is generated. To make the life cycle support of the ER solution more efficient, your solution should consist of an ER data model and its mapping components, and also an ER format and its mapping components, so that the model mapping is application-specific, whereas other components remain application-agnostic. Therefore, several ER components might affect the process of entering data in the generated output.
 
 Sometimes, the data of the generated output looks different than the same data in the application database. In these cases, you will want to determine which ER component is responsible for the data transformation. The ER data source debugger feature significantly reduces the time and cost that are involved in this investigation. You can interrupt the execution of an ER format and open the data source debugger interface. There, you can browse the available data sources and select an individual data source for execution. This manual execution simulates the execution of the data source during the real run of an ER format. The result is presented on a page where you can analyze the data that is received.
 
 To turn on the data source debugging feature, set the **Enable data debugging at format run** option to **Yes** in the ER user parameters. You can then start data source debugging while you run an ER format to generate outbound documents. You can also use the **Start debugging** option to initiate data source debugging for an ER format that is configured in the [ER Operation designer](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-This topic provides guidelines for initiating data source debugging for executed ER formats. It explains how the information can help you understand the data flow and data transformations. The examples in this topic use the business process for vendor payments processing.
+This article provides guidelines for initiating data source debugging for executed ER formats. It explains how the information can help you understand the data flow and data transformations. The examples in this article use the business process for vendor payments processing.
 
 ## Limitations
 
@@ -53,7 +44,7 @@ The following settings of ER formats aren't currently accessible for data source
 
 ## Prerequisites
 
-- To complete the examples in this topic, you must have the access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
+- To complete the examples in this article, you must have the access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -61,12 +52,12 @@ The following settings of ER formats aren't currently accessible for data source
 
 - The company must be set to **DEMF**.
 
-- Follow the steps in [Appendix 1](#appendix1) of this topic to download the components of the Microsoft ER solution that are required to process vendor payments.
-- Follow the steps in [Appendix 2](#appendix2) of this topic to prepare Accounts payable for vendor payment processing by using the ER solution that you will download.
+- Follow the steps in [Appendix 1](#appendix1) of this article to download the components of the Microsoft ER solution that are required to process vendor payments.
+- Follow the steps in [Appendix 2](#appendix2) of this article to prepare Accounts payable for vendor payment processing by using the ER solution that you will download.
 
 ## Process a vendor payment to get a payment file
 
-1. Follow the steps in [Appendix 3](#appendix3) of this topic to process vendor payments.
+1. Follow the steps in [Appendix 3](#appendix3) of this article to process vendor payments.
 
     ![Vendor payment processing in progress.](./media/er-data-debugger-process-payment.png)
 
@@ -93,7 +84,7 @@ The following settings of ER formats aren't currently accessible for data source
 
 ## Process a vendor payment for debugging
 
-1. Follow the steps in [Appendix 3](#appendix3) of this topic to process vendor payments.
+1. Follow the steps in [Appendix 3](#appendix3) of this article to process vendor payments.
 2. In the message box, select **Yes** to confirm that you want to interrupt vendor payment processing and instead start data source debugging on the **Debug Datasources** page.
 
     ![Confirmation message box.](./media/er-data-debugger-start-debugging.png)
@@ -194,9 +185,9 @@ If you want to use an ER solution to generate an electronic payment file for a v
 
 In addition to the selected ER format, the following [configurations](general-electronic-reporting.md#Configuration) must be automatically imported into your Microsoft Dynamics 365 Finance instance as part of the **ISO20022 Credit transfer** ER solution:
 
-- **Payment model** [ER data model configuration](general-electronic-reporting.md#DataModelComponent)
-- **ISO20022 Credit transfer** [ER format configuration](general-electronic-reporting.md#FormatComponentOutbound)
-- **Payment model mapping 1611** [ER model mapping configuration](general-electronic-reporting.md#ModelMappingComponent)
+- **Payment model** ER data model configuration
+- **ISO20022 Credit transfer** ER format configuration
+- **Payment model mapping 1611** ER model mapping configuration
 - **Payment model mapping to destination ISO20022** ER model mapping configuration
 
 You can find these configurations on the **Configurations** page of the ER framework (**Organization administration** \> **Electronic reporting** \> **Configurations**).

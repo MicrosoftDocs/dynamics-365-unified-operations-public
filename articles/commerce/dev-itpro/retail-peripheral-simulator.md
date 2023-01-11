@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Peripheral simulator for Commerce
-description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
-author: rubencdelgado
+description: This article describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
+author: BrianShook
 ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 266544
-ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-
+ms.custom: 266544
+ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.search.industry: Retail
+ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 ---
 
 # Peripheral simulator for Commerce
@@ -318,7 +309,7 @@ Each device class has unique testing capabilities. In addition to device-specifi
 
 When you're testing a device for compatibility, set up the device, and then click the green arrow to begin the self-test. For each device, a different set of tests is performed to determine the device's compatibility with the POS (in **Runtime** mode) or the standalone hardware station (in **Win32** mode). For some devices, the test requires user interaction. For example, the self-test for a bar code scanner requires that a bar code be scanned. Therefore, the self-test will instruct the user to scan a bar code.
 
-Results from each self-test and each manual operation are shown in the **Log** section of the device test page. You can clear the **Log** section, or you can export the results and save them to a file. For information about how the exported log results can be used for official compatibility testing, see the "Instructions for device manufacturers" section later in this topic.
+Results from each self-test and each manual operation are shown in the **Log** section of the device test page. You can clear the **Log** section, or you can export the results and save them to a file. For information about how the exported log results can be used for official compatibility testing, see the "Instructions for device manufacturers" section later in this article.
 
 To stop a self-test, click the red square. For example, you might have to stop a self-test if the device becomes non-responsive. The red square can be used only when a self-test is in progress.
 

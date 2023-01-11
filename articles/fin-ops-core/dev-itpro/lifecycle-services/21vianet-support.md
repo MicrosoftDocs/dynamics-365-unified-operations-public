@@ -1,46 +1,33 @@
 ---
-# required metadata
-
-title: Support for Finance and Operations operated by 21Vianet in China
-description: Finance and Operations apps provides many self-service support options and support through 21Vianet. 
-author: ShylaThompson
+title: Support for finance and operations operated by 21Vianet in China
+description: Finance and operations apps provides many self-service support options and support through 21Vianet.
+author: kfend
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro, Developer, Application user
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: kfend
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 
-
 ---
 
-# Support for Finance and Operations operated by 21Vianet in China
+# Support for finance and operations operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations apps provides many self-service support options and support through 21Vianet.
+Finance and operations apps provides many self-service support options and support through 21Vianet.
 
 ## Self-help resources
 
 
-- [Finance and Operations application documentation](../../fin-ops/index.md)
+- [Finance and operations application documentation](../../fin-ops/index.md)
 - [Help resources for Supply Chain Management](../../../supply-chain/index.md)
-- [Finance and Operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
+- [Finance and operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
-- [Microsoft Learn](/learn/)
+- [Microsoft Learn training](/training/)
 
 ## Assisted support
 
@@ -89,7 +76,7 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 
 ## Additional resources
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Finance and Operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
+- [Finance and operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
 - [Model-driven apps in Dynamics 365 - operated by 21Vianet in China](/dynamics365/customer-engagement/admin/datacenter/21vianet-support)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)

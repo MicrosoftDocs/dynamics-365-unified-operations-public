@@ -1,6 +1,6 @@
 ---
 title: Manage deductions using the deduction workbench
-description: This topic describes how to use the deduction workbench to process customer payments that include deductions.
+description: This article describes how to use the deduction workbench to process customer payments that include deductions.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the deduction workbench to process customer payments that include deductions.
+This article describes how to use the deduction workbench to process customer payments that include deductions.
 
 A customer who is owed a rebate can decide not to wait for a rebate payout. Instead, the customer can send a payment that includes a deduction for the amount of the rebate. To handle this type of transaction, you can use the deduction workbench to match deductions to open credit transactions, split deductions, deny deductions, and write off deductions.
 
 > [!NOTE]
-> The deduction workbench has been part of the sales and marketing functionality in Microsoft Dynamics 365 Supply Chain Management for a long time. However, it has now been enhanced so that it also works with the newer **Rebate management** module. This topic describes how to use both older features and Rebate management features of the deduction workbench. However, if you haven't [turned on the **Rebate management** module for your system](rebate-management-enable.md), some of the functionality that is described here won't be available to you.
+> The deduction workbench has been part of the sales and marketing functionality in Microsoft Dynamics 365 Supply Chain Management for a long time. However, it has now been enhanced so that it also works with the newer **Rebate management** module. This article describes how to use both older features and Rebate management features of the deduction workbench. However, if you haven't [turned on the **Rebate management** module for your system](rebate-management-enable.md), some of the functionality that is described here won't be available to you.
 
 ## Prerequisites
 
@@ -154,11 +154,11 @@ The create a new deduction on the deduction workbench, follow these steps.
         - *Quantity based* – A negative sales order or return order will be created.
 
     - **Claim date** – Select the date of the claim. The default value is the current date.
-    - **Claim reason** – Select the reason code that applies to the current deduction. The claim basis that you selected affects the options that apply. For more information about how to create and configure the claim reasons that are available for selection here, see the [Create deduction reasons](#deduction-reasons) section earlier in this topic.
+    - **Claim reason** – Select the reason code that applies to the current deduction. The claim basis that you selected affects the options that apply. For more information about how to create and configure the claim reasons that are available for selection here, see the [Create deduction reasons](#deduction-reasons) section earlier in this article.
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Set this option to specify whether the claim journal should be created when the claim or deduction is created:
 
-        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this topic.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
+        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
         - *No* – No claim journal is created at this time. It will be created when the claim is approved. An invoice can still be attached to the new claim, even though a claim journal isn't created. However, settlement can't be done without the claim journal.
 
 1. Select **OK**.
@@ -192,11 +192,11 @@ The process of creating a deduction from a customer settlement resembles the pro
         - *Quantity based* – A negative sales order or return order will be created.
 
     - **Claim date** – Select the date of the claim. The default value is the current date.
-    - **Claim reason** – Select the reason code that applies to the current deduction. The claim basis that you selected affects the options that apply. For more information about how to create and configure the claim reasons that are available for selection here, see the [Create deduction reasons](#deduction-reasons) section earlier in this topic.
+    - **Claim reason** – Select the reason code that applies to the current deduction. The claim basis that you selected affects the options that apply. For more information about how to create and configure the claim reasons that are available for selection here, see the [Create deduction reasons](#deduction-reasons) section earlier in this article.
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Set this option to specify whether the claim journal should be created when the claim or deduction is created:
 
-        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this topic.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
+        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
         - *No* – No claim journal is created at this time. It will be created when the claim is approved. An invoice can still be attached to the new claim, even though a claim journal isn't created. However, settlement can't be done without the claim journal.
 
 1. Select **OK**.
@@ -230,11 +230,11 @@ The process of creating a deduction from a customer page resembles the process o
         - *Quantity based* – A negative sales order or return order will be created.
 
     - **Claim date** – Select the date of the claim. The default value is the current date.
-    - **Claim reason** – Select the reason code that applies to the current deduction. The claim basis that you selected affects the options that apply. For more information about how to create and configure the claim reasons that are available for selection here, see the [Create deduction reasons](#deduction-reasons) section earlier in this topic.
+    - **Claim reason** – Select the reason code that applies to the current deduction. The claim basis that you selected affects the options that apply. For more information about how to create and configure the claim reasons that are available for selection here, see the [Create deduction reasons](#deduction-reasons) section earlier in this article.
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Set this option to specify whether the claim journal should be created when the claim or deduction is created:
 
-        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this topic.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
+        - *Yes* – The system will create and post a general journal by using the claim journal that is set up on the **Accounts receivable parameters** page. (For more information, see the [Configure accounts receivable and deductions](#accounts-receivable-deductions) section earlier in this article.) When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if an invoice was attached) will be reversed.
         - *No* – No claim journal is created at this time. It will be created when the claim is approved. An invoice can still be attached to the new claim, even though a claim journal isn't created. However, settlement can't be done without the claim journal.
 
 1. Select **OK**.
@@ -275,7 +275,7 @@ To match a deduction to a credit, follow these steps.
 1. On the Action Pane, select **Maintain \> Match**. The system matches the deduction to the credit. If a balance remains in the deduction, it's shown in the **Remaining amount** field on the **Deductions** tab.
 
     > [!NOTE]
-    > For deductions that were created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, the **Maintain \> Match** command is available only if the **Claim status** field is set to *Accepted*. This command can be used to manually match the price-based or quantity-based transaction to the associated credit in the **Open transactions** section. This credit is created either when the deduction is approved (by using the **Maintain \> Approve deduction** command), or when it's attached to an existing credit as described in the [Credits created outside the approve deduction process](#credits-outside-approval) section later in this topic. The *Settle approved deductions* periodic task (**Sales marketing \> Periodic tasks \> Settle approved deductions**) can also be used to automatically match deductions and credits that have matching **Deduction ID** values and amounts.
+    > For deductions that were created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, the **Maintain \> Match** command is available only if the **Claim status** field is set to *Accepted*. This command can be used to manually match the price-based or quantity-based transaction to the associated credit in the **Open transactions** section. This credit is created either when the deduction is approved (by using the **Maintain \> Approve deduction** command), or when it's attached to an existing credit as described in the [Credits created outside the approve deduction process](#credits-outside-approval) section later in this article. The *Settle approved deductions* periodic task (**Sales marketing \> Periodic tasks \> Settle approved deductions**) can also be used to automatically match deductions and credits that have matching **Deduction ID** values and amounts.
 
 ### Split a deduction
 

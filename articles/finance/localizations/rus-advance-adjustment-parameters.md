@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Revaluate foreign currency for advance holders (Russia)
-description: This topic provides information about foreign currency revaluation for advance holders in Russia.
-author: ilkond
+description: This article provides information about foreign currency revaluation for advance holders in Russia.
+author: mrolecki
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.search.region: Russia
+ms.author: mrolecki
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.custom: 
 ms.assetid: 
-ms.search.region: Russia
-# ms.search.industry: 
-ms.author: ilyako
-ms.dyn365.ops.version: 8.1
-ms.search.validFrom: 2018-10-31
-
+ms.search.form: 
 ---
 
 # Revaluate foreign currency for advance holders (Russia)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about foreign currency revaluation for advance holders in Russia.
+This article provides information about foreign currency revaluation for advance holders in Russia.
 
 When you settle advance payments and advance reports that include transactions that were completed in foreign currencies, adjustment transactions are created as a continuation of the advance report, based on the setup on the **Advance adjustment parameters** page.
 

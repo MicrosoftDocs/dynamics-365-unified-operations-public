@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Tax on natural resources report
-description: This topic explains how to set up and generate the Tax on natural resources (NR Tax) report.
-author: ShylaThompson
+description: This article explains how to set up and generate the Tax on natural resources (NR Tax) report.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LvNRTaxItemGroupLookup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 270454
 ms.search.region: Latvia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 270454
+ms.search.form: LvNRTaxItemGroupLookup
 ---
 
 # Tax on natural resources report
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and generate the Tax on natural resources (NR Tax) report.
+This article explains how to set up and generate the Tax on natural resources (NR Tax) report.
 
 Latvian companies must periodically submit a **Tax on natural resources** (**NR tax**) report. This functionality applies only to legal entities in Latvia. Tax must also be calculated on imported or self-produced goods that are used internally. Finally, tax on natural resources must be calculated for packaging materials that are used to package goods that are sold within the reporting period.
 

@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Use record template to create a new record
-description: This procedure shows how to use a previously defined record template to create a new record. 
-author: margoc
+description: This procedure shows how to use a previously defined record template to create a new record.
+author: peakerbl
 ms.date: 08/12/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetTable, SysRecordTemplateSelect   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: margoc
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: peakerbl
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: AssetTable, SysRecordTemplateSelect
 ---
 # Use record template to create a new record
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Product lifecycle states and transactions
-description: This topic explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
+description: This article explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -41,7 +41,7 @@ To work with product lifecycle states, go to **Engineering change management \> 
 - To delete an existing lifecycle state, select it in the list pane, and then select **Delete** on the Action Pane.
 
 > [!NOTE]
-> Engineering products use the same product lifecycle states as standard (non-engineering) products. You can also open the **Product lifecycle state** page that is described in this topic by going to **Product information management \> Setup \> Product lifecycle state**. For more information about product lifecycle states, for both engineering products and standard products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
+> Engineering products use the same product lifecycle states as standard (non-engineering) products. You can also open the **Product lifecycle state** page that is described in this article by going to **Product information management \> Setup \> Product lifecycle state**. For more information about product lifecycle states, for both engineering products and standard products, see [Product lifecycle state overview](../pim/product-lifecycle.md).
 
 ### Header
 
@@ -97,5 +97,13 @@ For example, suppose you only want to sell one variant (red) of a given product 
 - Assign the product a lifecycle state that allows the process. For example, assign the t-shirt product a lifecycle state of *Sellable*, which allows the *Sales order* business process.
 - Assign the sellable variant a lifecycle state that allows the process. For example, also assign the red variant a lifecycle state of *Sellable*.
 - All other variants be assigned another lifecycle state where the process is blocked. For example, assign the white variant (and all other variants) a lifecycle state of *Not sellable*, which blocks the *Sales order* business process.
+
+## Default product lifecycle states
+
+The default lifecycle state for an engineering version is specified by its engineering category. The state will be defaulted when you create a new engineering version, including the first version of a new product.
+
+When you create a new product or engineering product, you can also set the default lifecycle state by specifying it on the template released product of the release policy assigned to the product.
+
+In this case, it's possible for the product to have a different lifecycle state than the version when you create a new engineering product.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

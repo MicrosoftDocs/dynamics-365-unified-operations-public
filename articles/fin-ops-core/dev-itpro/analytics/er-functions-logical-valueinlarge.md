@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: VALUEINLARGE ER function
-description: This topic provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
-author: NickSelin
+description: This article provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
+author: kfend
 ms.date: 08/17/2020
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # VALUEINLARGE ER function
 
 [!include [banner](../includes/banner.md)]
 
-The `VALUEINLARGE` function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. The function returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. To understand the difference with the `VALUEIN` function, see the [Usage note](#usage_note) section later in this topic.
+The `VALUEINLARGE` function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. The function returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. To understand the difference with the `VALUEIN` function, see the [Usage note](#usage_note) section later in this article.
 
 ## Syntax
 

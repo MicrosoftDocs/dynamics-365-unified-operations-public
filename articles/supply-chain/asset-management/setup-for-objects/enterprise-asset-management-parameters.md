@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
+ms.search.form: EntAssetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up. This topic explains how to set them up. Select **Asset management** > **Setup** > **Asset management parameters** to open the page.
+In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up. This article explains how to set them up. Select **Asset management** > **Setup** > **Asset management parameters** to open the page.
 
 > [!NOTE]
 > If you'd like to set up a system that includes demo data for testing Asset Management features, see [Deploy a demo environment](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for instructions.
@@ -42,7 +42,7 @@ The **Assets** tab provides the following settings:
 
 - **Default functional location** is the standard functional location, which is automatically selected on assets when you create new assets.  
 - In the **Standard calendar** field, select a calendar to be used for calculating asset KPIs if no resource is selected on an asset.  
-- In the **View** field, select the standard view that is shown when you open **Asset view** (**Asset management** > **Common** > **Assets** > **Asset view**).
+- In the **View** field, select the standard view that is shown when you open **Asset view** (**Asset management** > **Assets** > **Asset view**).
 - **Default request type** is the standard maintenance request type, which is automatically selected when you create a new request.  
 - Forecasts on job types are stored on the project selected in the **Forecast project** field. For each job type, a new activity is automatically created on the forecast project. Forecasts on the job type are then saved on the forecast project.  
 - In the **Model** field, select the forecast model used on job type and work order forecasts.
@@ -54,7 +54,7 @@ The **Work orders** tab provides the following settings:
 - **Default work order type** defines standard settings when creating a work order.  
 - **Preventive work order type** defines the work order type used when creating work orders from maintenance plans. If this field is left blank, the work order type in the **Default work order type** field is used.  
 - In the **Related work order mask** field, you define the maximum number of work orders that can be related to a work order. For example, ## allows you to have up to 99 work orders related. If you define a mask as described here, related work orders will be numbered [work order ID of the work order to which a work order is related] -01, -02, -03, and so on. If you do not define a mask in this field, a related work order will get the next sequential work order ID.  
-- Select **Yes** for **Copy faults** if you want to automatically copy faults registered on work orders to related maintenance requests. 
+- Select **Yes** for **Copy faults** if you want to automatically copy faults registered on maintenance requests to related work orders. 
 - In the **Level** field, you define the functional location level that is automatically inserted on a work order if all related work order jobs refer to the same functional location. If the work order jobs do not all relate to the same functional location on the defined level, the **Functional location** field is left blank on the work order. For example, if you insert the number "1" in this field, that is the top level in a functional location structure. If you insert the number "0" in this field, you have not defined a specific functional location level, only that all work order jobs on a work order must be related to the same functional location for that functional location to be added to the work order.  
 - Journals used when posting consumption on a work order can be selected on the **General** FastTab in the **Hour**, **Item**, and **Expense** fields.  
 - In the **Product language source** field, select which language to use for product names in Asset management reports. You can select the language set up on the company account, or the language set up for the user currently logged in.  

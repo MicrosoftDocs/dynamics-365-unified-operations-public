@@ -2,23 +2,23 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
-author: Sunil-Garg
-ms.date: 04/22/2021
-ms.topic: article
+description: This article provides information about business events, which allow external systems to receive notifications from finance and operations apps.
+author: jaredha
+ms.date: 07/15/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.custom: "intro-internal"
+
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
+Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events.
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
@@ -63,95 +63,31 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
-## Business events parameters and processing
-The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
-> [!IMPORTANT]
-> There may be reliability issues with dedicated batch threads. Microsoft is working to resolve this issue and as a result, we recommend that you schedule the manual batch job to process business events, as explained below. We will update this topic when this issue is resolved.
+## Business events parameters
 
-The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The batch job can be enabled and scheduled from the **Business events parameters** page. 
+### General
 
-In the event of an error while sending business events to its end point, the system retries to send the business events three times with an interval of one second per retry. This is the default setting that can be changed on the **Business events parameters** page.
+The **General** tab of the **Business events parameters** page provides general settings that are applied to business events.
 
-The number of endpoints that can subscribe to the same business event in a legal entity is limited to ten by default. This can be changed on the **Business events parameters** page.
+- **Retry count** – The number of times that the system will try again to send business events to an endpoint if an error occurs. The default value is **3**.
+- **Wait time between retries** – The interval, in milliseconds, between attempts to send a business event to its endpoint. The default value is **1000** milliseconds.
+- **Endpoints allowed per event** – The maximum number of endpoints that can subscribe to the same business event in a legal entity. The default value is **10**.
+- **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events will be cached in memory before they are read and cached again from the configured key vault. The default value is **5** minutes.
 
-The out-of-the-box default settings for the above described parameters can be restored on the **Business events parameters** page.
+### Performance
 
-## Managing endpoints
+The business events framework has two primary settings that can affect performance: **Processing threads** and **Bundle size**. The application allocates dedicated batch threads to process business events in near-real time. Because threads are a shared resource for all batch processing, you must take care when you decide to change the thread allocation for business events.
 
-Endpoints let you manage the destinations for sending business events to. The following types of endpoints are currently supported. Endpoints can be created for these messaging and event brokers out of the box.
+- **Processing threads** – The number of threads to use to process business events.
 
-- Azure Service Bus Queue
-- Azure Service Bus Topic
-- Azure Event Grid
-- Azure Event Hub
-- HTTPS
-- Microsoft Power Automate
+    - With dedicated processing for business events, the thread count is the number per Batch Application Object Server (AOS) instance.
+    - The maximum value is **4**.
 
-Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
+- **Bundle size** – The number of events to group together at a time for processing by a thread.
 
-The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the endpoint must be in the customer's Azure subscription.
-
-The application doesn't provision the endpoints. It just sends events to the endpoints that are provided. Customer might incur additional costs if they use these endpoints in their Azure subscription.
-
-![Business events endpoint.](../media/businesseventsendpoint.png)
-
-### Create an Azure Service Bus Queue endpoint
-
-To create a new endpoint, select **New**. Then, in the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.
-
-![To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.](../media/businesseventsnewendpoint1.png)
-
-Select **Next**, and specify the name of the endpoint and the Service Bus queue. In addition, you must set up Azure Key Vault to provide the secret to the Azure messaging resource. You must also set up the Azure Active Directory (Azure AD) application ID and application secret.
-
-![Specify the name of the endpoint and the Service Bus queue.](../media/businesseventsnewendpoint2.png)
-
-In the **Queue Name** field, enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.  
-
-![Enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.](../media/BusinessEventsSBQueueName.PNG)
-
-In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
-
-![Enter the application ID that is created in Azure AD in the Azure portal.](../media/businesseventsaad1.png)
-
-In the **Azure application secret** field, enter the secret value for the application.
-
-![Enter the secret value for the application.](../media/businesseventsaad2.png)
-
-In the **Key vault DNS name** field, enter the name from your Key Vault setup.
-
-![Enter the name from your Key Vault setup.](../media/businesseventskeyvault1.png)
-
-In the **Key vault secret name** field, enter the secret name for the endpoint resource that must be created in Key Vault.
-
-![Enter the secret name for the endpoint resource that must be created in Key Vault.](../media/businesseventskeyvault2.png)
-
-The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
-
-![Business events Azure Key Vault key value.](../media/BusinessEventsKVSValue.PNG)
-
-> [!IMPORTANT]
-> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
-
-### Create an Azure Service Bus Topic endpoint
-
-To create an endpoint to a Service Bus topic, select **New**, and then, in the **Endpoint type** field, select **Azure Service Bus Topic**. The **Topic name** field must be set to the name of the Service Bus topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint.
-
-### Create an Azure Event Grid endpoint
-
-To create an endpoint, you need to create and configure an **Azure Event Grid Topic** in Azure Portal, and then create an endpoint to the Event Grid Topic in the **Business Events Workspace**. Go to the **Endpoints** tab, select **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. This is the **Topic Endpoint** value in the **Overview** section of your Event Grid Topic.
-
-> [!IMPORTANT]
-> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
-
-![Business events Event Grid Endpoint value.](../media/BusinessEventsEGTopicsEndpoint.PNG)
-
-Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Credential can be found under the Event Grid you created in the **Access Keys** section under Settings. 
-
-![Business events Event Grid credentials value.](../media/BusinessEventsEGKeyValue.PNG)
-
-After you've created the endpoints that you require, the next step is to activate the business events.
-
+    - By increasing the number, you produce fewer bundles and reduce the ability to distribute the events to parallel threads.
+    - By decreasing the number, you produce more bundles and increase the ability to distribute the events to parallel threads. However, if you make the number too small, you will cause unnecessary parallelization on small bundles.
 
 ## Activating business events
 
@@ -161,7 +97,7 @@ Business events in the business event catalog aren't active by default. From the
 
 Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events will be activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
 
-Endpoints must be assigned to the business events that are activated.
+Endpoints must be assigned to the business events that are activated. See [Manage business event endpoints](managing-business-event-endpoints.md) for additional information on setting up and managing endpoints.
 
 When business events occur as business processes are run, the system will do outbound processing only for business events that have been activated.
 
@@ -206,7 +142,7 @@ The integration requirements and integration solution design for implementations
 Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
-Azure Service Bus and Azure Event Grid supports subscribing to topics by
+Azure Service Bus and Azure Event Grid support subscribing to topics by
 specifying criteria on the incoming message. For more information, see [Topic filters and actions](/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](/azure/event-grid/event-filtering).
 
 A business event that is sent to an Azure Service Bus or Azure Event Grid
@@ -215,7 +151,7 @@ this information to subscribe to more specific topics as required.
 
 -   **Category** – This is the business event category as displayed in the
     business event catalog. This is useful as a filter criterion when a common
-    topic is used for receiving business events from multiple categories and
+    article is used for receiving business events from multiple categories and
     subscribers want to only receive business events for the category that they are
     interested in.
 
@@ -226,7 +162,7 @@ this information to subscribe to more specific topics as required.
     ensure the expected business event is what is being received and processed.
 
 -   **Legal entity** – This is the legal entity in which the business event
-    happened. This is a useful information to base the consuming logic on if
+    happened. This is useful information to base the consuming logic on if
     the processing and distribution of business events on the consumption side
     must be driven by a legal entity.
 
@@ -281,7 +217,7 @@ To ensure backward compatibility, the following behavior must be understood.
 
 -   Role-based security must be explicitly enabled in the business events catalog via the **Security** menu.
 
--   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with administration role will not notice any change in behavior. However, any non-admin users will either only see business events to which their roles were assigned to in the business events catalog security configuration or they will not see any business events because their roles were not assigned to any business events.
+-   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with an administration role will not notice any change in behavior. However, any non-admin users either will see only business events that their roles were assigned to in the business events catalog security configuration or won't see any business events because their roles were not assigned to any business events.
 
 
 > [!NOTE]
@@ -289,3 +225,4 @@ To ensure backward compatibility, the following behavior must be understood.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

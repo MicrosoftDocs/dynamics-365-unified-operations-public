@@ -1,40 +1,29 @@
 ---
-# required metadata
-
 title: Support parameterized calls of ER data sources of the Calculated field type
-description: This topic provides information about how to use the Calculated field type for ER data sources.
-author: NickSelin
-ms.date: 08/06/2020
+description: This article provides information about how to use the Calculated field type for ER data sources.
+author: kfend
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Support parameterized calls of ER data sources of the Calculated field type
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can design an Electronic reporting (ER) data source by using the **Calculated field** type. This data source may contain an ER expression that, when executed, can be controlled by the values of the parameter arguments that are configured in a binding that calls this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces the maintenance costs and the cost of use by other consumers.
+This article explains how you can design an Electronic reporting (ER) data source by using the **Calculated field** type. This data source may contain an ER expression that, when executed, can be controlled by the values of the parameter arguments that are configured in a binding that calls this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces the maintenance costs and the cost of use by other consumers.
 
 ## Prerequisites
-To complete the examples in this topic, you must have the following access:
+To complete the examples in this article, you must have the following access:
 
 - Access to one of these roles:
 
@@ -42,7 +31,7 @@ To complete the examples in this topic, you must have the following access:
     - Electronic reporting functional consultant
     - System administrator
 
-- Access to Regulatory Configuration Services (RCS) that have been provisioned for the same tenant as Finance and Operations for one of the following roles:
+- Access to Regulatory Configuration Services (RCS) that have been provisioned for the same tenant as finance and operations for one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -52,10 +41,10 @@ You must also download and locally store the following files.
 
 | **Content**                           | **File name**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Sample ER data model configuration    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Sample ER metadata configuration      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Sample ER model mapping configuration | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Sample ER format configuration        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Sample ER data model configuration    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Sample ER metadata configuration      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Sample ER model mapping configuration | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Sample ER format configuration        | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## Sign in to your RCS instance
 In this example, you will create a configuration for the sample company, Litware, Inc. First, in RCS, you must complete the steps in the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure:
@@ -90,7 +79,7 @@ In this example, you will create a configuration for the sample company, Litware
             - Sum of tax values.
             - Minimum value of applied tax rate.
 
-    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance and Operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
+    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in finance and operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
 
     ![Model mapping designer page showing Tax and Gr data sources.](media/er-calculated-field-type-01.png)
 
@@ -312,7 +301,7 @@ When a parameterized calculated field returns a record, you need to support bind
 You can run the initial and improved ER formats to make sure that configured parameterized calculated fields work properly.
 
 ### Import ER configurations
-You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
+You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the article, [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this article to your environment. Otherwise, follow these steps:
 
 1. Select the **DEMF** company and on the default dashboard, select **Electronic reporting**.
 2. Select **Reporting configurations**.
@@ -349,3 +338,4 @@ You can import reviewed configurations from RCS by using the ER repository of th
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

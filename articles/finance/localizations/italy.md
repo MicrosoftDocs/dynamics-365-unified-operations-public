@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: Italy overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Italy.
 author: kfend
-ms.date: 08/25/2020
-ms.topic: article
+ms.date: 12/01/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Italy overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Italy. 
+This article provides links to documentation resources for Italy. 
 
 - [Sales tax books](emea-ita-fiscal-books.md)
 - [VAT statements details](emea-ita-vat-statements-details.md)
@@ -37,8 +26,10 @@ This topic provides links to documentation resources for Italy.
 - [Yearly tax communication](emea-ita-yearly-tax-communication.md)
 - [VAT management and reporting by tax point date (Date of VAT register)](emea-ita-vat-management.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
-- [Italian Intrastat](emea-ita-intrastat.md)
-- [Post arrivals and dispatches for Intrastat](emea-ita-post-arrivals-and-dispatches-for-intrastat.md)
+- Intrastat
+  - [Italian Intrastat](emea-ita-intrastat.md)
+  - [Post arrivals and dispatches for Intrastat](emea-ita-post-arrivals-and-dispatches-for-intrastat.md)
+  - [Intrastat (IT) file format](/dynamics/s-e/365business/dynamices365finance_itintrastatfile)
 - [Manual depreciation of fixed assets](emea-ita-depreciation-of-fixed-assets.md)
 - [Packing slip date verification on invoices](emea-ita-packing-slip-date-verification-on-invoice.md)
 - [Post and print a packing slip with transportation delivery details](emea-ita-packing-slip.md)
@@ -62,6 +53,7 @@ This topic provides links to documentation resources for Italy.
 - [Unique certification](emea-ita-exil-unique-certification.md)
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
+- [Vendor electronic invoices](emea-ita-vend-e-invoices.md)
 - [Unified posting date control](emea-ita-post-date-control.md)
 
 

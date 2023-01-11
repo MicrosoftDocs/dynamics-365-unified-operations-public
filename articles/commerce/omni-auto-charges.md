@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Omni-channel advanced auto charges
-description: This topic describes capabilities for managing other order charges for Commerce channel orders using advanced auto charges features.
-author: hhaines
-ms.date: 03/30/2020
+description: This article describes capabilities for managing other order charges for Commerce channel orders using advanced auto charges features.
+author: hhainesms
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0
-
+ms.dyn365.ops.version: 10
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 # Omni-channel advanced auto charges
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information on configuration and deployment of the advanced auto charges features that are available in Dynamics 365 for Retail version 10.0.
+This article provides information on configuration and deployment of the advanced auto charges features that are available in Dynamics 365 for Retail version 10.0.
 
 When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
@@ -191,6 +182,9 @@ If reason codes have been captured for overwritten charges, a new report is also
 ### Refunding charges on a POS return transaction
 
 If the **Use advanced auto-charges** parameter is set to **Yes**, the existing Commerce parameter for **Refund shipping charges** is no longer applicable. To indicate which charges should be systematically refunded to a customer when using advanced auto charges, ensure the related charges code has been configured as **Refundable** on the **Charges code** setup page. Make sure that the settings have been synchronized to your Commerce channel databases through distribution schedule processing.
+
+> [!TIP]
+> For guidance that will help you ensure that line-level refundable charges are calculated based on the quantity that is returned, see [Refundable charges are not calculated based on the quantity returned](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### Refunding charges on a return order transaction
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Person certificate
-description: This topic describes the Person certificate entity for Dynamics 365 Human Resources.
+description: This article describes the Person certificate entity for Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Person certificate
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Person certificate entity for Dynamics 365 Human Resources.
+This article describes the Person certificate entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpersoncertificateentity
 
@@ -56,15 +59,18 @@ This entity describes the professional certificates of a candidate.
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Person Certificate Entity ID**<br>mshr_hcmpersoncertificateentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the person certificate entity record. |
-| **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The party (person) ID of the candidate. |
-| **Person ID Value**<br>_mshr_fk_person_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_dirpersonentityid of mshr_dirpersonentity | The system-generated identifier of the party (person) entity record. |
 | **Certificate Type ID**<br>mshr_certificatetypeid<br>*String* | Read/write<br>Required | 	The identifier of the certificate type defined in Human Resources. |
-| **Certificate Type ID Value**<br>_mshr_fk_certificatetype_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmcertificatetypeentityid of mshr_hcmcertificatetypeentity | System-generated unique identifier of the certificate type in the associated entity. |
 | **Start Date**<br>mshr_startdate<br>*Datetime* | Read/write<br>Required | The date at which the certificate was issued. |
 | **End Date**<br>mshr_enddate<br>*Datetime* | Read/write<br>Optional | The date at which the certificate will expire. |
 | **Notes**<br>mshr_notes<br>*String* | Read/write<br>Optional | Notes for use by hiring managers and recruiters. |
+| **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The party (person) ID of the candidate. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | 	Field to be used as an identifier of the entity record. Combination of party number, certificate type ID, and start date. |
+| **Certificate Type ID Value**<br>_mshr_fk_certificatetype_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmcertificatetypeentityid of mshr_hcmcertificatetypeentity | System-generated unique identifier of the certificate type in the associated entity. |
+| **Person ID Value**<br>_mshr_fk_person_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_dirpersonentityid of mshr_dirpersonentity | The system-generated identifier of the party (person) entity record. |
+| **Person Certificate Entity ID**<br>mshr_hcmpersoncertificateentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the person certificate entity record. |
+
+
+
 
 ## See also
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Dataverse virtual tables
-description: This topic shows how to configure, generate, update existing virtual tables, and analyze generated and available tables for Dynamics 365 Human Resources. 
+description: This article shows how to configure, generate, update existing virtual tables, and analyze generated and available tables for Dynamics 365 Human Resources. 
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: CDSIntegrationAdministration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -28,9 +28,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Dataverse virtual tables
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. The data for virtual tables isn't stored in Dataverse, but in the application database.
 
@@ -123,10 +126,10 @@ The next step is to configure the virtual table data source in the Power Apps en
 
 4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the application page.
 
-5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and Operations Virtual Data Source Configurations**.
+5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and operations Virtual Data Source Configurations**.
 
    > [!NOTE]
-   > The installation of the virtual table app from the previous setup step can take a few minutes. If **Finance and Operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.
+   > The installation of the virtual table app from the previous setup step can take a few minutes. If **Finance and operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.
 
 6. Select **Results**.
 
@@ -220,3 +223,4 @@ The slideout pane displays the most recent execution results for the process. Yo
 [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

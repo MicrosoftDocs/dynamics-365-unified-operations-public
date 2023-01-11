@@ -1,30 +1,24 @@
 ---
 title: Set up and install Regression suite automation tool tutorial
-description: This topic is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
-author: robinarh
+description: This article is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
+author: frankdahl
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form:
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 21761, NotInToc
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-
+ms.custom: 21761, NotInToc
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Set up and install Regression suite automation tool tutorial
 
-This topic is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT.
+This article is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -112,7 +106,7 @@ In this tutorial, you will use the LCS Business Process Modeler (BPM) to create 
 
 ## Configure the LCS project
 
-You need a Lifecycle Services (LCS) project for your master test library. The LCS Business Process Modeler (BPM) is used as the master library for your test cases. BPM is used to manage and distribute test libraries across LCS projects. For example, a Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this topic.  
+You need a Lifecycle Services (LCS) project for your master test library. The LCS Business Process Modeler (BPM) is used as the master library for your test cases. BPM is used to manage and distribute test libraries across LCS projects. For example, a Microsoft partner or independent software vendor (ISV) building test libraries will release test cases in the form of BPM libraries. In BPM, test cases are organized by business process. BPM doesn't define the execution order or frequency of your test pass. These details are managed in Azure DevOps, as described later in this article.  
 
 For your LCS project, you can use an existing customer implementation or partner project.
 

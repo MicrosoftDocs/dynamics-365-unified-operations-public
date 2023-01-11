@@ -1,24 +1,24 @@
 ---
-title: Finance and Operations project type in Visual Studio
-description: The Finance and Operations project type is part of the development tools. 
-author: RobinARH
+title: Finance and operations project type in Visual Studio
+description: The finance and operations project type is part of the development tools.
+author: gianugo
 ms.date: 09/12/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31781
-ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 31781
+ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 ---
 
-# Finance and Operations project type in Visual Studio
+# Finance and operations project type in Visual Studio
 
 [!include [banner](../includes/banner.md)]
 
-The Finance and Operations project type is part of the development tools. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
+The finance and operations project type is part of the development tools. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
 
 ## Create a new project
 
@@ -27,7 +27,7 @@ To create a new, empty project, follow these steps.
 1. On the **File** menu, point to **New**, and then click **Project**.
 2. In the list of template types, expand the **Installed** node.
 3. Expand the **Templates** node.
-4. Select the **Finance and Operations** category.
+4. Select the **finance and operations** category.
 5. Select the **Operations Project** template.
 6. Enter the name and location for the new project.
 7. Specify whether you want to create a new solution or add the project to the current solution.

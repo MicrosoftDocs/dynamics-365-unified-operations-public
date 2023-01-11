@@ -5,7 +5,7 @@ title: Dimension-based product configuration overview
 description: Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 author: t-benebo
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -76,7 +76,7 @@ The natural sequence for building a product model for a dimension-based product 
 
 The dimension-based configuration technology is best used for products with limited variability and the combination of the standard product dimensions size, color, style, and configuration is unsuitable for identifying a specific product variant. An example could be bicycle with frame height, wheel size, brake types, and different gears.
 
-### Next step 
+### <a name="sequence"></a>Next step
 
 The following eight task guides are listed in the order in which you should complete them. 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse app events
-description: This topic describes the warehouse app event processing used to process warehouse app event messages as part of a batch job.
+description: This article describes the warehouse app event processing used to process warehouse app event messages as part of a batch job.
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
@@ -33,12 +33,9 @@ ms.dyn365.ops.version: 10.0.15
 
 Batch jobs running in Supply Chain Management can use data from a queue for processing events issued by the Warehouse Management mobile app to react as needed to the signaled events. This feature add relevant events to the queue in response to certain types of actions taken by workers using the app. An example is when using the *Create and process transfer orders from the warehouse app* feature, the transfer order header and lines get created and updated in the back end when the system is running the **Process warehouse app events** batch job.
 
-## Enable the Process warehouse app events feature
+## Turn the Process warehouse app events feature on or off
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. The Process warehouse app events feature is listed as:
-
-- **Module** - Warehouse management
-- **Feature name** - Process warehouse app events
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory. Therefore, it's turned on by default and can't be turned off again. If you're running a version that is older than 10.0.29, admins can turn this functionality on or off by searching for the *Process warehouse app events* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up a batch job to process warehouse app events
 

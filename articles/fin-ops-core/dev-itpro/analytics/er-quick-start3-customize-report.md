@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Customize Electronic reporting configurations to generate an electronic document
-description: This topic explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
-author: NickSelin
+description: This article explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["220314", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314,  ""intro-internal
+ms.assetid: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 ---
 
 # Customize Electronic reporting configurations to generate an electronic document
@@ -35,9 +25,9 @@ The [Electronic reporting (ER) framework](general-electronic-reporting.md) lets 
 
 ## Overview
 
-For the example in this topic, you must specify a federal tax identification code as a new custom attribute of every customer that you electronically invoice. Therefore, you must customize the structure of the invoice that is currently used, by adding a new item that must be filled with the tax code in every e-invoice that is generated.
+For the example in this article, you must specify a federal tax identification code as a new custom attribute of every customer that you electronically invoice. Therefore, you must customize the structure of the invoice that is currently used, by adding a new item that must be filled with the tax code in every e-invoice that is generated.
 
-The procedures in this topic explain how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can perform the following tasks in your Finance instance:
+The procedures in this article explain how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can perform the following tasks in your Finance instance:
 
 - [Configure the minimal set of ER parameters that is required to start to use the ER framework](#ConfigureER).
 - [Import the initial versions of the standard ER configurations that are provided to generate e-invoices](#ImportERConfigurations1).
@@ -64,7 +54,7 @@ As a user in the Electronic Reporting Functional Consultant or Electronic Report
 ### Configure ER parameters
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
+2. On the **Localization blueprint** page, in the **Related links** section, select **Electronic reporting parameters**.
 3. On the **Electronic reporting parameters** page, on the **General** tab, set the **Enable design mode** option to **Yes**.
 4. On the **Attachments** tab, in the **Configurations** field, select **File**.
 5. In the **Job archive**, **Temporary**, **Baseline**, and **Others** fields, select the **File** type.
@@ -81,13 +71,13 @@ Every ER configuration that is added is marked as owned by an ER configuration p
 #### Review the list of ER configuration providers
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Related links** section, select **Configuration providers**.
+2. On the **Localization blueprint** page, in the **Related links** section, select **Configuration providers**.
 3. On the **Configuration provider table** page, each provider record has a unique name and URL. Review the contents of this page. If a record for **Litware, Inc.** (`https://www.litware.com`) already exists, skip the next procedure, [Add a new ER configuration provider](#AddProvider).
 
 #### <a id="AddProvider"></a>Add a new ER configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Related links** section, select **Configuration providers**.
+2. On the **Localization blueprint** page, in the **Related links** section, select **Configuration providers**.
 3. On the **Configuration providers** page, select **New**.
 4. In the **Name** field, enter **Litware, Inc.**
 5. In the **Internet address** field, enter `https://www.litware.com`.
@@ -96,7 +86,7 @@ Every ER configuration that is added is marked as owned by an ER configuration p
 #### Activate an ER configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, select the **Litware, Inc.** tile, and then select **Set active**.
+2. On the **Localization blueprint** page, in the **Configuration providers** section, select the **Litware, Inc.** tile, and then select **Set active**.
 
 For more information about ER configuration providers, see [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -105,7 +95,7 @@ For more information about ER configuration providers, see [Create configuration
 To add the standard ER configurations to your current Finance instance, you must import them from the ER [repository](general-electronic-reporting.md#Repository) that was configured for that instance.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, select the **Microsoft** tile, and then select **Repositories** to view the list of repositories for the Microsoft provider.
+2. On the **Localization blueprint** page, in the **Configuration providers** section, select the **Microsoft** tile, and then select **Repositories** to view the list of repositories for the Microsoft provider.
 3. On the **Configuration repositories** page, select the repository of the **Global** type, and then select **Open**. If you're prompted for authorization to connect to Regulatory Configuration Service, follow the authorization instructions.
 4. On the **Configuration repository** page, in the configuration tree in the left pane, select the **Peppol Sales Invoice** format configuration.
 5. On the **Versions** FastTab, select version **11.2.2**.
@@ -119,11 +109,11 @@ To add the standard ER configurations to your current Finance instance, you must
 ### Review the imported ER configurations
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configurations** section, select the **Reporting configurations** tile.
+2. On the **Localization blueprint** page, in the **Configurations** section, select the **Reporting configurations** tile.
 3. On the **Configurations** page, expand the **Configuration components** FastTab.
 4. In the configuration tree in the left pane, expand **Invoice model**, and then expand **UBL Sales invoice**.
 
-Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) configuration and its [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) configurations were imported.
+Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations were imported.
 
 ![Configurations page.](./media/er-quick-start3-imported-solution1a.png)
 
@@ -136,7 +126,7 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model** ER data model configuration (initially named **Customer invoice model**):
 
-    - Version 11 contains version 10 of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11 contains version 10 of the data model ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
     - Version 50 contains version 31 of the data model ER component. This ER configuration has been imported as an ancestor of the August 7, 2019, version of the **Invoice model mapping** ER model mapping configuration.
 
     ![Invoice model ER data model configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b1.png)
@@ -146,7 +136,7 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model mapping** ER model mapping configuration (initially named **Customer invoice model mapping**):
 
-    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER components that describe how the data model is filled in with application data at runtime.
+    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two model mapping ER components that describe how the data model is filled in with application data at runtime.
 
     ![Invoice model mapping ER model mapping configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b2.png)
 
@@ -155,7 +145,7 @@ Then verify that the following configurations are available in the configuration
 
 - **UBL Sales invoice** ER format configuration:
 
-    - Version 11.2 contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11.2 contains the format and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
 
 - **Peppol Sales Invoice** ER format configuration:
 
@@ -313,7 +303,7 @@ As a user in the Electronic Reporting Functional Consultant role, you can design
 5. In the **Name** field, enter **Invoice model (Litware)**.
 6. Select **Create configuration** to add the new ER configuration.
 
-You can now use the ER data model designer to edit version 50.1 of the **Invoice model (Litware)** ER configuration in **Draft** [status](general-electronic-reporting.md#component-versioning).
+You can now use the ER data model designer to edit version 50.1 of the **Invoice model (Litware)** ER configuration in **Draft** status.
 
 ![Version 50.1 of the ER configuration on the Configurations page.](./media/er-quick-start3-added-custom-model.png)
 
@@ -340,7 +330,7 @@ You must modify your custom data model by adding a new field to provide the valu
 
 #### Complete a custom data model configuration
 
-You must [complete](general-electronic-reporting.md#component-versioning) your work with version 50.1 of your custom ER data model configuration to make it available so that other custom ER configurations can be added.
+You must complete your work with version 50.1 of your custom ER data model configuration to make it available so that other custom ER configurations can be added.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configuration tree in the left pane, expand **Invoice model**, and select **Invoice model (Litware)**.
@@ -397,7 +387,7 @@ You must modify your custom model mapping and specify how the custom **FederalTa
 
 #### Complete a custom model mapping configuration
 
-You must [complete](general-electronic-reporting.md#component-versioning) your work with version 50.19.1 of your custom ER model mapping configuration to make it available for use.
+You must complete your work with version 50.19.1 of your custom ER model mapping configuration to make it available for use.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configuration tree in the left pane, expand **Customer invoice model** \> **Customer invoice model mapping**, and select **Invoice model mapping (Litware)**.
@@ -431,7 +421,7 @@ As a user in the Electronic Reporting Functional Consultant role, you can design
 
 ![Adding a custom format configuration on the Configurations page.](./media/er-quick-start3-adding-custom-format.png)
 
-You can now use the ER Operations designer to edit version 11.2.2.1 of the **Peppol Sales Invoice (Litware)** ER configuration in **Draft** [status](general-electronic-reporting.md#component-versioning).
+You can now use the ER Operations designer to edit version 11.2.2.1 of the **Peppol Sales Invoice (Litware)** ER configuration in **Draft** status.
 
 ![Version 11.2.2.1 of the ER configuration on the Configurations page.](./media/er-quick-start3-added-custom-format.png)
 
@@ -466,7 +456,7 @@ You must modify your custom format by adding a new format element to fill in the
 
 #### Complete a custom format configuration
 
-You must [complete](general-electronic-reporting.md#component-versioning) your work with version 11.2.2.1 of your custom ER format configuration to make it available for use.
+You must completeyour work with version 11.2.2.1 of your custom ER format configuration to make it available for use.
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configuration tree in the left pane, expand **Customer invoice model** \> **UBL Sales invoice** \> **Peppol Sales Invoice**, and select **Peppol Sales Invoice (Litware)**.
@@ -653,7 +643,7 @@ The status of version 32.6.7.2 is changed from **Draft** to **Completed**, and t
 3. On the Action Pane, in the **Document** group, select **Send** \> **Original**.
 
     > [!NOTE] 
-    > Because you now have two versions of the **Peppol Sales Invoice (Litware)** ER format configuration, and neither version has an [effective date](general-electronic-reporting.md#component-date-effectivity) value, the latest version is used to generate an e-invoice.
+    > Because you now have two versions of the **Peppol Sales Invoice (Litware)** ER format configuration, and neither version has an effective date value, the latest version is used to generate an e-invoice.
 
 4. Close the **Free text invoice** page.
 

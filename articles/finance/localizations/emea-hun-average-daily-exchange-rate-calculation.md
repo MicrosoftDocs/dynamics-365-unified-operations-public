@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Calculate average and daily exchange rates
-description: This topic explains how to calculate the average currency exchange rate for outgoing bank and cash transactions.
-author: anasyash
-ms.date: 01/04/2021
+description: This article explains how to calculate the average currency exchange rate for outgoing bank and cash transactions.
+author: AdamTrukawka
+ms.date: 03/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264684
 ms.search.region: Hungary
-# ms.search.industry: 
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-
+ms.custom: 264684
+ms.search.form: AssetParameters
 ---
 
 # Calculate average and daily exchange rates
@@ -36,7 +27,7 @@ According to the requirements for accounting foreign currencies under "Act C of 
 
 In legal entities that have Hungarian country context, the function for calculating the average exchange rate for outgoing petty cash and bank transactions is available. When journal lines have outgoing petty cash or bank transactions, the calculation algorithm of the average exchange rate uses the summarized amounts of the accounting currency and the foreign currency before the specified transaction date.
 
-This topic explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions. It also explains how to use the function for calculating the daily exchange rate for incoming and outgoing bank and petty cash transactions.
+This article explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions. It also explains how to use the function for calculating the daily exchange rate for incoming and outgoing bank and petty cash transactions.
 
 ## Daily exchange rate
 
@@ -144,6 +135,10 @@ The value **92.0000** for second line was calculated as (100 * 0.91 + 200 * 0.92
 The value **92.0000** for third line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93 - 150 * 0.92)/(100 + 200 + 100 - 150). Three earlier incoming transactions and one earlier outgoing transaction were considered in the formula.
 
 The Average exchange rate calculation method is available for the outgoing bank transaction. It considers posted bank transactions and not-posted bank transactions in the current general journal that were created before considered outgoing bank transaction, for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions as a result of dividing total amount of all earlier transactions in the foreign currency by total amount of all earlier transactions in the accounting currency. The resulting exchange rate is then assigned to outgoing transaction. The average exchange rate is calculated by dimension values for dimensions that are active in the account structure that the cash or bank ledger account belongs to.
+
+   > [NOTE!] 
+   > To calculate the average exchange rates for cash and bank accounts based on the main account code only and not considering financial dimensions, enable the feature, **(Hungary) Calculate the average exchange rate based on the main account code only** in the **Feature management** workspace.
+ 
 
 The Daily exchange rate and Average exchange rate methods are also available for the petty cash transactions that you enter in the slip journal (**Cash and bank management** \> **Cash transactions** \> **Slip journal**). The same algorithm that is used for the bank transactions is used to calculate the average rate.
 

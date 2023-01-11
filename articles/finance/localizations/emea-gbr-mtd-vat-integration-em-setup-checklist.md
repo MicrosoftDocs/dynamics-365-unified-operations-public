@@ -1,38 +1,26 @@
 ---
-# required metadata
-
 title: Checklist for Electronic messages setup for MTD VAT
-description: This topic provides information that will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
-author: liza-golub
+description: This article provides information that will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
+author: AdamTrukawka
 ms.date: 08/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 07/31/2021
+ms.author: atrukawk
+ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.22
-
 ---
 
 # Checklist for Electronic messages setup for MTD VAT
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how the Electronic messages functionality should be set up so that it supports both the **UK MTD VAT TEST** processing for testing purposes and the **UK MTD VAT returns** processing for real-life interoperation with the production web application of Her Majesty's Revenue and Customs (HMRC). Use this information to determine whether the Electronic messages functionality is correctly set up.
+This article provides information about how the Electronic messages functionality should be set up so that it supports both the **UK MTD VAT TEST** processing for testing purposes and the **UK MTD VAT returns** processing for real-life interoperation with the production web application of Her Majesty's Revenue and Customs (HMRC). Use this information to determine whether the Electronic messages functionality is correctly set up.
 
-Although this topic includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that provides a predefined setup of the functionality and that includes all the data that is required to set up the processing for interoperation with Making Tax Digital for value-added tax (MTD VAT).
+Although this article includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that provides a predefined setup of the functionality and that includes all the data that is required to set up the processing for interoperation with Making Tax Digital for value-added tax (MTD VAT).
 
 ## Electronic message processing
 
@@ -52,14 +40,14 @@ Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processin
 
 | Name                 | Description |
 |----------------------|-------------|
-| Dynamics 365 for Finance and Operations | The HMRC web application for Microsoft Dynamics 365 Finance. This web application must be used for VAT return submission. |
+| Dynamics 365 Finance | The HMRC web application for Microsoft Dynamics 365 Finance. This web application must be used for VAT return submission. |
 | Sandbox HMRC         | The HMRC sandbox for Finance. This web application must be used for testing of the interation with sandbox of HMRC. |
 
 The following table shows the parameters of the web applications.
 
 | Parameter                             | Value |
 |---------------------------------------|-------|
-| Base URL | <ul><li>**For Dynamics 365 for Finance and Operations:** `https://api.service.hmrc.gov.uk`</li><li>**For Sandbox HMRC:** `https://test-api.service.hmrc.gov.uk`</li></ul> |
+| Base URL | <ul><li>**For Dynamics 365 Finance:** `https://api.service.hmrc.gov.uk`</li><li>**For Sandbox HMRC:** `https://test-api.service.hmrc.gov.uk`</li></ul> |
 | Authorization URL path                | /oauth/authorize |
 | Token URL path                        | /oauth/token |
 | Redirect URL                          | urn:ietf:wg:oauth:2.0:oob |
@@ -77,8 +65,8 @@ Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processin
 
 | Name              | Description | Web application |
 |-------------------|-------------|-----------------|
-| HMRC GET          | The HMRC web service for GET user requests. | Dynamics 365 for Finance and Operations |
-| HMRC POST         | The HMRC web service for POST user requests. | Dynamics 365 for Finance and Operations |
+| HMRC GET          | The HMRC web service for GET user requests. | Dynamics 365 Finance |
+| HMRC POST         | The HMRC web service for POST user requests. | Dynamics 365 Finance |
 | HMRC sandbox GET  | The sandbox that is used to test the HMRC web service for GET user requests. | Sandbox HMRC |
 | HMRC sandbox POST | The sandbox that is used to test the HMRC web service for POST user requests. | Sandbox HMRC |
 
@@ -243,3 +231,4 @@ The **UK MTD VAT returns** processing uses the following electronic processing a
 | Request VAT payments                | Yes | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

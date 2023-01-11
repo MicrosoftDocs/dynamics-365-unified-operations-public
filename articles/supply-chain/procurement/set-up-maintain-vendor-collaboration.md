@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
-author: Henrikan
+description: This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -33,10 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
-This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
-
-> [!NOTE]
-> The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
+This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
 ## Set up vendor collaboration security roles
 
@@ -82,7 +79,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 ## Set up security roles that are used when prospective vendors are onboarded
 
-To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
+To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this article.
 
 For information about how to onboard prospective vendors, see [Onboard vendors](vendor-onboarding.md).
 
@@ -123,7 +120,7 @@ To set up this branching, create a new workflow of the **User Request Workflow (
 2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. B2B users can be automatically exported to Azure AD. Use the predefined **Provision Azure AD B2B user**. For more information, see [Export B2B users to Azure AD](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
 3. Assign an approval task to the person who uploads to Azure. If an account isn't successfully created, this person rejects the task and ends the workflow. This approval task can be skipped if you've included the step that automatically exports new user accounts to Azure via the B2B application programming interface (API).
 4. Add an automated task that provisions a new user. Use the predefined **Automated provision user** task for this step.
-5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Supply Chain Management. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portalURL%** tag. When the welcome email is generated, this tag which will be replaced by the URL of the Supply Chain Management tenant.
+5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Supply Chain Management. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portalURL%** tag. When the welcome email is generated, this tag will be replaced by the URL of the Supply Chain Management tenant.
 
     > [!NOTE]
     > This workflow can be used in multiple scenarios that involve user onboarding. For example, it can be used when prospective vendors or contact persons require a vendor collaboration account. Therefore, you should phrase the email as a general statement that can be used for multiple purposes.
@@ -143,13 +140,7 @@ Create a workflow of the **Inactivate user request workflow platform** type, and
 
 ## Enable vendor collaboration for a specific vendor
 
-Before you create a user account for someone who will use vendor collaboration, you must set up the vendor so that it can use vendor collaboration. On the **Vendors** page, on the **General** tab, set the **Collaboration activation** field. The following options are available:
-
-- **Active (PO is auto-confirmed)** – Purchase orders are automatically confirmed if the vendor accepts them without requesting changes.
-- **Active (PO is not auto-confirmed)** – Your organization must manually confirm purchase orders after the vendor has accepted them.
-
-> [!NOTE]
-> Procurement professionals in your company can also complete this task.
+Before you create a user account for someone who will use vendor collaboration, you must set up the vendor so that it can use vendor collaboration. For details about how to do this, see [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 ## Troubleshoot the provisioning of new vendor collaboration users
 

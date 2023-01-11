@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up lease books
-description: This topic describes the information that is maintained in lease books. Lease books contain the accounting policies that determine how a lease is accounted for in the system.
+description: This article describes the information that is maintained in lease books. Lease books contain the accounting policies that determine how a lease is accounted for in the system.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetLeaseBookMaster
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464

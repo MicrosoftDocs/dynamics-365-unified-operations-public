@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Enable order lookup for guest checkouts
-description: This topic describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
-author: stuharg
-ms.date: 09/01/2021
+description: This article describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
+author: bicyclingfool
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Enable order lookup for guest checkouts
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
+This article describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
 
 The order lookup for guest checkouts feature lets customers who make purchases as guest users look up their orders. The order lookup capability is useful when customers want to perform actions such as checking the fulfillment status of products on an order, verifying the address that an order was shipped to, reordering a product, or confirming the store that an order will be picked up from.
 
@@ -63,11 +53,26 @@ The **Order search** FastTab on the **Customer orders** page in Commerce headqua
 > [!NOTE]
 > These options determine when personal data such as the customer's address and the last four digits of the customer's credit card number is shown to anonymous guest users. To help protect the privacy of registered customers, we recommend that you select the **Guest orders only** option. However, the most secure option is **Never**.
 
-After you change the value of the **Include personal data in guest order lookup** field, you must run job 1070 (**Channel configuration**) in Commerce headquarters by going to to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+After you change the value of the **Include personal data in guest order lookup** field, you must run job 1070 (**Channel configuration**) in Commerce headquarters by going to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 
 ## Configure the order lookup module
 
 The order lookup module in the Commerce module library is used to render the form that guest users use to look up orders. The order lookup module can be included in the body slot of any page that doesn't require customer sign-in. For information about how to configure the module, see [Order lookup module](order-lookup-module.md).
+
+## Configure the order details page
+
+Before guest users can view their order details, the order details page on your e-commerce site must be configured so that it doesn't require sign-in. To turn off the sign-in requirement for your order details page, open the page in Commerce site builder, select the **Default page (required)** slot in the tree view, and clear the **Requires sign in?** checkbox at the bottom of the properties pane on the right.
+
+## Add a link to order details in transactional emails
+
+In order-related emails, you can provide a link or button that takes customers to the order details page for their order. To add this link or button, create an HTML hyperlink that points to the order details page on your e-commerce site, and pass the order confirmation ID and customer's email address as URL parameters, as shown in the following example.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> To enable the order lookup feature, ensure that the **Quotations** key is enabled under **License configuration** > **Configuration keys**.
+>
+>![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
 
 ## Additional resources
 

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Unique certification
-description: This topic provides information about the Unique certification for companies in Italy.
-author: ilkond
-ms.date: 06/30/2020
+description: This article provides information about the Unique certification for companies in Italy.
+author: mrolecki
+ms.date: 03/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.9
-
+ms.search.form: 
 ---
 
 # Unique certification
@@ -60,14 +50,6 @@ The **Set up unique certification values** page allows you to configure the valu
 - **record B**: Exceptional events
 - **record D**: Exceptional events, special categories, and unified counties
 - **record H**: Reason and code
-
-The format of the telematics model of unique certification has been updated according to the new specifications in the regulatory update of Unique Certification, valid from March 7, 2018:
-
-- **record A**: CUR18 supply code
-- **record B**: New values for exceptional events
-- **record D**: New values for exceptional events and special categories and the introduction of unified counties fields
-- **record H**: New values for reason and code fields
-- **record Z**: Count of L records to 0
 
 Values that are specified on **Setup Unique Certification values** page, and marked with **Yes** in the **Active** column, will be available in the related lookup fields on the **Unique certification** page. Use this page for future regulatory upgrades of the unique certification to add or delete values.
 

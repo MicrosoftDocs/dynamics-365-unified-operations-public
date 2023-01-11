@@ -3,7 +3,7 @@
 
 title: Perform invoice updates for returns  
 description: This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -40,7 +40,7 @@ When you set up the invoice update for batch processing, the sales order of type
 
 ## Post an invoice for a return order
 
-1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
+1.  Click **Accounts receivable** \>  **Orders** \> **All sales orders**.
 
 2.  Select a sales order for which **Returned order** is displayed in the **Order type** field.
 

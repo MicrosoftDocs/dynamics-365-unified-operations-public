@@ -1,11 +1,11 @@
 ---
 title: Integrated sites and warehouses
-description: This topic describes the integration of site and warehouse data between Finance and Operations and Dataverse.
+description: This article describes the integration of site and warehouse data between finance and operations and Dataverse.
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
@@ -15,9 +15,9 @@ ms.search.validFrom: 2019-08-15
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic describes the integration of site and warehouse data between Finance and Operations and Dataverse. Operational sites and warehouses are common concepts in a Supply Chain Management application. They are used to model the supply chain of your company.
+
+This article describes the integration of site and warehouse data between finance and operations and Dataverse. Operational sites and warehouses are common concepts in a Supply Chain Management application. They are used to model the supply chain of your company.
 
 ## Templates
 
@@ -29,3 +29,4 @@ Finance and operations apps | Customer engagement apps     | Description
 [Warehouses](mapping-reference.md#204) | msdyn_warehouses | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -1,32 +1,22 @@
 ---
-# required metadata
-
 title: Refund payment processing in call centers
-description: This topic explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
+description: This article explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: v-chgriffin
 ms.search.region: global
-# ms.search.industry:
 ms.author: hhaines
-ms.search.validFrom:
+ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
 
 # Refund payment processing in call centers
 
-This topic explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
+This article explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
 
 A user who creates a return order for a customer as a call center user in Microsoft Dynamics 365 Commerce headquarters uses the **Return order** page to create the initial return materials authorization (RMA). The RMA defines the products that the customer wants to return or exchange, and it creates a linked return sales order that has an order type of **Returned order**. This linked returned order is used to track the posting of the returned inventory and any credit notes or payment refunds that are posted.
 
@@ -38,11 +28,14 @@ Call center logic determines the payment method for the refund payment line, bas
 
 The call center uses the payment method of the original order to determine the payment method that should be applied to a return order. Here is how this process works for the following original payment methods:
 
-- **Normal** (cash) or **Check** – When a return order that is created references an original order that was paid for by using the normal (cash) or check payment type, the call center application references configurations on the **Call center refund methods** page. This page enables organizations to define, by order currency, how refunds are issued to customers for orders that were originally paid for by using the normal or check payment type. The **Call center refund methods** page also enables organizations to select whether a system-generated refund check is sent to the customer, or whether a customer account credit is created against the internal customer account balance. In these scenarios, call center logic references the currency of the return order and then uses the **Retail payment method** value for that currency to create a refund payment line on the return sales order. Later, an accounts receivable (AR) customer payment journal that uses the mapped AR payment method is linked to the currency.
+- **Normal** (cash) or **Check** – When a return order that is created references an original order that was paid for by using the normal (cash) or check payment type, the call center application references configurations on the **Call center refund methods** page. This page enables organizations to define, by order currency, how refunds are issued to customers for orders that were originally paid for by using the normal or check payment type. The **Call center refund methods** page also enables organizations to select if a system-generated refund check should be sent to the customer. In these scenarios, call center logic references the currency of the return order and then uses the **Retail payment method** value for that currency to create a refund payment line on the return sales order. Later, an accounts receivable (AR) customer payment journal that uses the mapped AR payment method is linked to the currency.
 
     The following illustration shows the configuration for a scenario where a customer returns products from a sales order that is linked to the USD currency, and that was originally paid for by using the normal or check payment type. In this scenario, a refund will be issued to the customer through a system-generated refund check. The **REF-CHK** AR payment method has been configured as a refund check payment type.
 
     ![Configuration of call center refund methods for normal and check original payments.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Customer account is not a supported refund method for cash or check payments.
 
 - **Credit card** – When a return order that is created references an original order that was paid for by using a credit card, call center logic for refund payments applies the same original credit card to the return order.
 - **Loyalty card** – When a return order that is created references an original order that was paid for by using a customer loyalty card, call center logic for refund payments applies the refund to the same loyalty card.
@@ -94,7 +87,7 @@ A setting of **Yes** for the **Apply credit** option is applicable only when the
 
 ## Payment overrides for call center returns
 
-Although call center logic systematically determines the refund payment method in the manner that is described earlier in this topic, users might sometimes want to override those payments. For example, a user might edit or remove existing refund payment lines, and apply new payment lines. System-calculated refund payments can be changed only by users who have the correct override permissions. These permissions can be configured on the **Override permissions** page in Retail and Commerce. To do a refund payment override, the user must be linked to a security role where the **Allow alternate payment** option is set to **Yes** on the **Override permissions** page.
+Although call center logic systematically determines the refund payment method in the manner that is described earlier in this article, users might sometimes want to override those payments. For example, a user might edit or remove existing refund payment lines, and apply new payment lines. System-calculated refund payments can be changed only by users who have the correct override permissions. These permissions can be configured on the **Override permissions** page in Retail and Commerce. To do a refund payment override, the user must be linked to a security role where the **Allow alternate payment** option is set to **Yes** on the **Override permissions** page.
 
 ![Allow alternate payment option on the Override permissions page.](media/overridepermissions.png)
 

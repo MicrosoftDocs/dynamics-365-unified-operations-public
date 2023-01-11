@@ -1,37 +1,26 @@
 ---
-# required metadata
-
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
-author: tonyafehr
+title: What's new or changed in Dynamics 365 Finance platform update 25 (April 2019)
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019).
+author: sericks007
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-
+ms.custom: 
+ms.assetid: 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
+# What's new or changed in Dynamics 365 Finance platform update 25 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
+This article describes features that are either new or changed in Dynamics 365 Finance platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
 
 ## Extensibility enhancements
 The [second wave of platform extensibility enhancements](/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2) included in Platform update 25 is documented in the April 2019 Release notes. There are fourteen enhancements detailed, with one of the highlights being that Chain of Command on an InternalUseOnlyAttribute method is now allowed with just a warning.
@@ -45,16 +34,16 @@ Entity store is an Operational data warehouse that contains simplified transacti
 To enable this feature, see [Entity store in your own Business Data Lake](/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake).
 
 ## Trickle feed support for entity store in Azure Data Lake (public preview)
-When entity store is staged in Azure Data Lake, you have the option to enable trickle feed updates. If the trickle feed option is enabled, transactional data gets updated in your own Azure Data Lake as soon as they are committed in Dynamics 365 for Finance and Operations. Use this option to enable real-time reporting with transactional data using PowerBI.com and other tools.
+When entity store is staged in Azure Data Lake, you have the option to enable trickle feed updates. If the trickle feed option is enabled, transactional data gets updated in your own Azure Data Lake as soon as they are committed in Dynamics 365 Finance. Use this option to enable real-time reporting with transactional data using PowerBI.com and other tools.
 
 ## Edit analytical workspace
 You can now empower users to author the reports they need without relying on a developer. Using the latest Platform update, you can make non-disruptive enhancements to embedded application solutions. Power users are able to modify ready-made analytical workspaces without leaving the client or using developer tools. Users who have specific security privileges can add or modify report visuals and add new pages to existing reports. These changes are applicable to all users viewing the report.
 
 ## System printer management
-Use built-in system administration tools to manage network printers across legal entities with ease. You can modify device properties and delete network printers by using a single view. These tools will drastically simplify the task of configuring network printer devices available within Dynamics 365 for Finance and Operations applications.
+Use built-in system administration tools to manage network printers across legal entities with ease. You can modify device properties and delete network printers by using a single view. These tools will drastically simplify the task of configuring network printer devices available within Dynamics 365 Finance applications.
 
 ## Client alert email support
-Stay on top of your business data with integrated change tracking tools. With the latest Platform update, you can create alert rules that automatically dispatch email notifications to pre-defined groups of internal and external contacts when triggered by an event. With Finance and Operations, you can define custom alert rules to monitor filtered views of their data. For more information, see [Client Alerts notifications by email](alert-email-notifications.md).
+Stay on top of your business data with integrated change tracking tools. With the latest Platform update, you can create alert rules that automatically dispatch email notifications to pre-defined groups of internal and external contacts when triggered by an event. With finance and operations, you can define custom alert rules to monitor filtered views of their data. For more information, see [Client Alerts notifications by email](alert-email-notifications.md).
 
 ## Client alert sub-table field tracking
 The latest Platform update release includes the ability to create alert rules that monitor updates made to fields sourced from child tables. Previously, options were limited to fields sourced from the root data source. Now you can able define alert rules for all fields visible to the user including those from child tables.
@@ -88,14 +77,15 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

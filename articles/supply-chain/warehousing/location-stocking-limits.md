@@ -2,7 +2,7 @@
 # required metadata
 
 title: Location stocking limits
-description: This topic describes the functionality for location stocking limits.
+description: This article describes the functionality for location stocking limits.
 author: perlynne
 ms.date: 11/11/2020
 ms.topic: article
@@ -52,6 +52,8 @@ In the **Products** section of the page, you can define the following field valu
 
 > [!NOTE]
 > You don't have to define a **Unit** value for each location stocking limit record. The location capacity calculations will be based on the inventory unit quantities. If no unit conversion is defined for a value that is used, the location stocking limit record will be skipped, as if another **Item number** value is defined for it.
+
+For more information about how to set up stocking limits based on container types, see [Manage inbound putaway based on container types](inbound-putaway-by-container-type.md).
 
 ## Example – Purchase order receiving
 

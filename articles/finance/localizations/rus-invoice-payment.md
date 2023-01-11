@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Invoices for payment (Russia)
-description: This topic explains how to post and print invoices for payment in Microsoft Dynamics 365 Finance in Russia.
-author: ShylaThompson
+description: This article explains how to post and print invoices for payment in Microsoft Dynamics 365 Finance in Russia.
+author: AdamTrukawka
 ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Invoices for payment (Russia)
@@ -94,7 +83,7 @@ Use the **Posting invoice for payment** page to post an invoice for payment.
 8. Click the **Officials** tab to validate and update default values, if needed.
 
     > [!NOTE]
-    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment. For more information, see [Set up officials](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md).
+    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment. For more information, see [Set up officials](rus-officials.md).
 
 9. Click the **Other** tab. In the **Comments** field, enter a comment for the invoice for payment.
 

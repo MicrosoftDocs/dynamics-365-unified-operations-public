@@ -2,9 +2,9 @@
 # required metadata
 
 title: Access to private addresses by security role
-description: This topic explains how to resolve when a customer can't access private addresses.
+description: This article explains how to resolve when a customer can't access private addresses.
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 09/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Access to private addresses by security role
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

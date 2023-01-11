@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Account management pages overview
-description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Account management pages overview
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
+This article provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 
 Account management pages let customers view information that is related to their account and orders. Account management pages include the account management landing page, and pages for the user's profile, addresses, order history, order details, loyalty points, and wish list.
 

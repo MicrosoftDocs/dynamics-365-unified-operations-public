@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot issues during initial synchronization
-description: This topic provides troubleshooting information that can help you fix issues that might occur during initial synchronization.
-author: RamaKrishnamoorthy 
-ms.date: 03/16/2020
+description: This article provides troubleshooting information that can help you fix issues that might occur during initial synchronization.
+author: RamaKrishnamoorthy
+ms.date: 06/24/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
@@ -15,14 +15,14 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during initial synchronization.
+
+This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during initial synchronization.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
-## Check for initial synchronization errors in a Finance and Operations app
+## Check for initial synchronization errors in a finance and operations app
 
 After you enable the mapping templates, the status of the maps should be **Running**. If the status is **Not running**, errors occurred during initial synchronization. To view the errors, select the **Initial sync details** tab on the **Dual-write** page.
 
@@ -58,7 +58,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 If this error occurs consistently, and you can't complete the initial synchronization, follow these steps to fix the issue.
 
-1. Sign in to the virtual machine (VM) for the Finance and Operations app.
+1. Sign in to the virtual machine (VM) for the finance and operations app.
 2. Open Microsoft Management Console.
 3. In the **Services** pane, make sure that the Microsoft Dynamics 365 Data import export framework service is running. Restart it if it has been stopped, because the initial synchronization requires it.
 
@@ -70,7 +70,7 @@ You might receive the following error message during initial synchronization:
 
 To fix the issue, follow these steps.
 
-1. Sign in to the Finance and Operations app.
+1. Sign in to the finance and operations app.
 2. On the **Azure Active Directory applications** page, delete the **DtAppID** client, and then add it again.
 
 ![DtAppID client in the list of Azure AD applications.](media/aad_applications.png)
@@ -97,9 +97,9 @@ Here are some examples:
 
 If any rows in the vendor table have values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns, follow these steps to complete the initial synchronization.
 
-1. In the Finance and Operations app, delete the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns from the mapping, and then save the mapping.
+1. In the finance and operations app, delete the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns from the mapping, and then save the mapping.
 
-    1. On the dual-write mapping page for **Vendors V2 (msdyn\_vendors)**, on the **Table mappings** tab, in the left filter, select **Finance and Operations apps.Vendors V2**. In the right filter, select **Sales.Vendor**.
+    1. On the dual-write mapping page for **Vendors V2 (msdyn\_vendors)**, on the **Table mappings** tab, in the left filter, select **finance and operations apps.Vendors V2**. In the right filter, select **Sales.Vendor**.
     2. Search for **primarycontactperson** to find the **PrimaryContactPersonId** source column.
     3. Select **Actions**, and then select **Delete**.
 
@@ -144,9 +144,9 @@ Here are some examples:
 
 If any rows in the customer table have values in the **ContactPersonID** and **InvoiceAccount** columns, follow these steps to complete the initial synchronization. You can use this approach for any out-of-box tables, such **Accounts** and **Contacts**.
 
-1. In the Finance and Operations app, delete the **ContactPersonID** and **InvoiceAccount** columns from the **Customers V3 (accounts)** mapping, and then save the mapping.
+1. In the finance and operations app, delete the **ContactPersonID** and **InvoiceAccount** columns from the **Customers V3 (accounts)** mapping, and then save the mapping.
 
-    1. On the dual-write mapping page for **Customers V3 (accounts)**, on the **Table mappings** tab, in the left filter, select **Finance and Operations app.Customers V3**. In the right filter, select **Dataverse.Account**.
+    1. On the dual-write mapping page for **Customers V3 (accounts)**, on the **Table mappings** tab, in the left filter, select **finance and operations app.Customers V3**. In the right filter, select **Dataverse.Account**.
     2. Search for **contactperson** to find the **ContactPersonID** source column.
     3. Select **Actions**, and then select **Delete**.
 
@@ -177,16 +177,16 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
     > There are two maps that have the same name. Be sure to select the map that has the following description on the **Details** tab: **Dual-write template for sync between FO.CDS Vendor Contacts V2 to CDS.Contacts. Requires new package \[Dynamics365SupplyChainExtended\].**
 
 5. Add the **InvoiceAccount** and **ContactPersonId** columns back to the **Customers V3 (Accounts)** mapping, and then save the mapping. Both the **InvoiceAccount** column and the **ContactPersonId** column are now part of live synchronization mode again. In the next step, you will do the initial synchronization for these columns.
-6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** will be synced from the Finance and Operations app to Dataverse.
-7. To sync the data for **InvoiceAccount** and **ContactPersonId** from Dataverse to the Finance and Operations app, you must use a data integration project.
+6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** will be synced from the finance and operations app to Dataverse.
+7. To sync the data for **InvoiceAccount** and **ContactPersonId** from Dataverse to the finance and operations app, you must use a data integration project.
 
-    1. In Power Apps, create a data integration project between the **Sales.Account** and **Finance and Operations apps.Customers V3** tables. The data direction must be from Dataverse to the Finance and Operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator).
+    1. In Power Apps, create a data integration project between the **Sales.Account** and **finance and operations apps.Customers V3** tables. The data direction must be from Dataverse to the finance and operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator).
 
         The following illustration shows a project that updates **CustomerAccount** and **ContactPersonId**.
 
         ![Data integration project to update CustomerAccount and ContactPersonId.](media/cust_selfref6.png)
 
-    2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria will be updated in the Finance and Operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria will be updated in the finance and operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [NOTE]
         > If the filter button isn't present, create a support ticket to ask the data integration team to enable the filter capability on your tenant.
@@ -197,7 +197,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
     The initial synchronization of the rows is now completed.
 
-8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** table.
+8. In the finance and operations app, turn change tracking back on for the **Customers V3** table.
 
 ## Initial sync failures on maps with more than 10 lookup fields
 
@@ -223,12 +223,21 @@ You might receive the following error message when you try to run the initial sy
 
 *Party number could not found in Dataverse.*
 
-There is a range set on **DirPartyCDSEntity** in Finance and Operations apps that filters parties of type **Person** and **Organization**. As a result, an initial sync of the **CDS Parties – msdyn_parties** mapping will not sync parties of other types, including **Legal Entity** and **Operating Unit**. When the initial sync runs for **CDS Party postal addresses (msdyn_partypostaladdresses)** or **Party Contacts V3 (msdyn_partyelectronicaddresses)** you might receive the error.
+There is a range set on **DirPartyCDSEntity** in finance and operations apps that filters parties of type **Person** and **Organization**. As a result, an initial sync of the **CDS Parties – msdyn_parties** mapping will not sync parties of other types, including **Legal Entity** and **Operating Unit**. When the initial sync runs for **CDS Party postal addresses (msdyn_partypostaladdresses)** or **Party Contacts V3 (msdyn_partyelectronicaddresses)** you might receive the error.
 
-We are working on a fix to remove the party type range on the Finance and Operations entity so that parties of all types can synchronize to Dataverse successfully.
+We are working on a fix to remove the party type range on the finance and operations entity so that parties of all types can synchronize to Dataverse successfully.
 
 ## Are there any performance issues while running initial sync for Customers or Contacts data?
 
 If you have run the initial sync for **Customer** data and have the **Customer** maps running and then you are run the initial sync for **Contacts** data, there might be performance issues during inserts and updates to the **LogisticsPostalAddress** and **LogisticsElectronicAddress** tables for **Contact** addresses. The same global postal address and electronic address tables are tracked for **CustCustomerV3Entity** and **VendVendorV2Entity** and dual-write tries to build more queries to write data to other side. If you have already run the initial sync for **Customer**, then stop the corresponding map while running initial sync for **Contacts** data. Do the same thing for the **Vendor** data. When the initial sync is finished, you can run all the maps by skipping the initial sync.
 
+## Float data type that has a zero value can't be synchronized
+
+Initial synchronization might fail for records that have a zero value for a price field, such as **Fixed payment amount** or **Amount** in the transaction currency. In this case, you will receive an error message that resembles the following example:
+
+*An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '000000' to the expected type'Edm.Decimal',...*
+
+The issue is with the **Language locale** value under **Source data formats** in the **Data management** module. Change the value of the **Language locale** field to **en-us**, and then try again.
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

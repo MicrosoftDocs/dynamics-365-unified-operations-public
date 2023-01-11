@@ -1,16 +1,16 @@
 ---
 title: Configure non-administrator users to use the Regression suite automation tool (RSAT)
-description: This topic explains how to grant privileged resources to users in RSAT version 2.2 and later.
+description: This article explains how to grant privileged resources to users in RSAT version 2.2 and later.
 author: FrankDahl
 ms.date: 03/09/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-09
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Configure non-administrator users to use RSAT
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/preview-banner.md)]
 
-The Regression suite automation tool (RSAT) uses privileged resources on the machine that it is running on. A user must be an administrator on the machine to run RSAT tests. This topic explains how to grant these privileged resources to users if you are using **RSAT version 2.2 or later**. The non-administrator user can run RSAT tests without being an administrator on the machine.
+The Regression suite automation tool (RSAT) uses privileged resources on the machine that it is running on. A user must be an administrator on the machine to run RSAT tests. This article explains how to grant these privileged resources to users if you are using **RSAT version 2.2 or later**. The non-administrator user can run RSAT tests without being an administrator on the machine.
 
 These instructions will not allow a non-administrator user to install RSAT. The instructions only enable using RSAT after it has been installed. This situation includes first-time use of RSAT where the Selenium framework is installed, or with new browser driver installation after updating browser versions. Those installation steps still require running RSAT with administrator privileges.
 

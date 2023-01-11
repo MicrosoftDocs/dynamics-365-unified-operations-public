@@ -2,16 +2,16 @@
 # required metadata
 
 title: Invoice approvals mobile workspace
-description: This topic provides information about the Invoice approvals mobile workspace.
+description: This article provides information about the Invoice approvals mobile workspace.
 author: abruer 
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,10 +27,11 @@ ms.dyn365.ops.version: July 2017 update
 # Invoice approvals mobile workspace
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Invoice approvals** mobile workspace. This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process. 
+This article provides information about the **Invoice approvals** mobile workspace. This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process. 
 
-This mobile workspace is intended to be used with the Finance and Operations mobile app.
+This mobile workspace is intended to be used with the finance and operations mobile app.
 
 ## Overview
 
@@ -65,7 +66,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 
 ## Download and install the mobile app
 
-Download and install the Finance and Operations mobile app:
+Download and install the finance and operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -92,3 +93,4 @@ Download and install the Finance and Operations mobile app:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

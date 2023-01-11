@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Telemetry logger
-description: This topic covers the telemetry logger in Dynamics 365 Commerce.
+description: This article covers the telemetry logger in Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Telemetry logger
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers the telemetry logger in Dynamics 365 Commerce.
+This article covers the telemetry logger in Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce online software development kit (SDK) includes a custom telemetry logger that you can use to log to multiple resources at various levels but also maintain a unified context on both the server and the client.
 

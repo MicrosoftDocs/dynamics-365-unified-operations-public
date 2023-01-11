@@ -1,39 +1,28 @@
 ---
-# required metadata
-
-title: Messaging system for Finance and Operations apps
-description: This topic describes the rich, powerful messaging system in Finance and Operations apps.
+title: Messaging system for finance and operations apps
+description: This article describes the rich, powerful messaging system in finance and operations apps.
 author: jasongre
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 50401
-ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 50401
+ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
 ---
 
-# Messaging system for Finance and Operations apps
+# Messaging system for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the rich, powerful messaging system in Finance and Operations apps.
+This article describes the rich, powerful messaging system in finance and operations apps.
 
-A new messaging system was created for Finance and Operations apps to improve this experience. Compared to earlier versions, the messaging system for Finance and Operations apps includes the following features:
+A new messaging system was created for finance and operations apps to improve this experience. Compared to earlier versions, the messaging system for finance and operations apps includes the following features:
 
 + Improved association of a message with its context (form versus global).
 + Improved level of interruption (none, subtle, and interrupting).
@@ -41,7 +30,7 @@ A new messaging system was created for Finance and Operations apps to improve th
 + The control that is used to display messages is deterministic and based on form context.
 
 ## Where can messages be surfaced to users? 
-Messages in Finance and Operations apps are generally shown in one of these places: message bars, the Action center, or message boxes.  
+Messages in finance and operations apps are generally shown in one of these places: message bars, the Action center, or message boxes.  
 
 ### Message bars – Messages for synchronous tasks on the current page
 Message bars are available on primary pages, and in drop dialogs and slider dialogs. Message bars are used primarily for data validation. They can also be used to communicate messages about the state of a page or data, such as messages that are used for date effectivity. Message bars can express **info**, **warning**, and **error** statuses. Message bars should not be used for messages that require the user's immediate attention. A message bar appears when a message is first received and must be used to communicate messages only about the current page. Messages that are sent to message bars are associated with the current page. Therefore, when the user navigates away from a page that includes message bars, those messages won't appear on the new page. However, if the user navigates back to the original page, the page's messages will once again appear. Include the following information in messages:
@@ -97,7 +86,7 @@ An error message should include the following two components:
 Messages of the **error** type block the user’s interaction by overlaying the current page with a modal “light box” that contains the message.
 
 ## Should I show the user a notification, a warning, or an error?
-In earlier versions of Finance and Operations apps, the **info**, **warning** (**checkFailed**), and **error** statuses weren't always used consistently across scenarios. A message might be reported as a warning in one scenario but as an error in another scenario. When you're deciding which status to express, use these definitions:
+In earlier versions of finance and operations apps, the **info**, **warning** (**checkFailed**), and **error** statuses weren't always used consistently across scenarios. A message might be reported as a warning in one scenario but as an error in another scenario. When you're deciding which status to express, use these definitions:
 
 -   **Notification** – A notification informs the user about events that might or might not be related to the current user activity. A notification can be caused by a user action or a system event, or it can provide information from the program that might be useful. Typically, a notification doesn't require immediate user action. You notify the user by using the **info()** application programming interface (API).
 -   **Warning** – A warning alerts the user about a condition that might cause an issue in the future. Specifically, a warning is used for data that is in an incorrect state. Although any attempt to use this invalid data might produce an error, the fact that the current state of the data is incorrect isn't an error condition, and *the user should only be warned about the incorrect state of the data*. You express data validation issues by using the **warning()** or **checkFailed()** API.
@@ -144,7 +133,7 @@ Close()
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
 ## When are validation messages cleaned up? 
-With the messaging system in use for Finance and Operations apps, the validation message (called using the same APIs) appears in a message bar on the page itself in a passive manner. The invalid value remains but is flagged as invalid. The user can continue to enter data and can correct the validation issue at any point before the data is saved.
+With the messaging system in use for finance and operations apps, the validation message (called using the same APIs) appears in a message bar on the page itself in a passive manner. The invalid value remains but is flagged as invalid. The user can continue to enter data and can correct the validation issue at any point before the data is saved.
 
 When a validation issue has been corrected so that the corresponding message in the message bar is no longer valid, the messaging system removes the message. The timing of message removal depends on the level where the validation logic is defined.
 

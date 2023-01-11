@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Add a new site page
-description: This topic describes how to add a new site page in Microsoft Dynamics 365 Commerce.
-author: psimolin
-ms.date: 04/14/2020
+description: This article describes how to add a new site page in Microsoft Dynamics 365 Commerce.
+author: josaw1
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Add a new site page
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a new site page in Microsoft Dynamics 365 Commerce.
+This article describes how to add a new site page in Microsoft Dynamics 365 Commerce.
 
 After you've created templates and fragments for your site, the next step is to start to create pages that use them. To get started, you must select a template or layout, a page name, and a page URL.
 
@@ -38,11 +28,11 @@ After you've created templates and fragments for your site, the next step is to 
 
 You can use either a template or a layout for your new page. For more information, see [Templates and layouts overview](templates-layouts-overview.md).
 
-## Page name
+## Specify the page name
 
-The page name must be unique to your page. It should be descriptive, so that you can easily find it and other people know what the page is intended for. Choose the page name carefully, because it can't be changed later.
+The page name must be unique to your site and should be descriptive so you can find it easily and other people know what the page is intended for. You can rename your page later by editing it and then selecting the pen symbol next to the page name in the property pane.
 
-## Page URL
+## Specify the page URL
 
 You can have the option to enter a URL for your new page. When you create a page, you can enter a string that will be used to form a complete URL. This string is known as a relative URL or a URL slug. A complete URL is then generated based on the URL slug, and the new page is assigned to it. You can change the URL slug later, before you publish the page. For more information, see [Create a page URL](create-page-URL.md).
 

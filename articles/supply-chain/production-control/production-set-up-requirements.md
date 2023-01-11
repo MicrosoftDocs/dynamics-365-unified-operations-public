@@ -43,7 +43,7 @@ Information in other modules must be set up before you can work with Production 
 -   Define item groups.
 -   Set up ledger accounts for item groups.
 -   Set up the inventory item table in Inventory management.
--   Create bills of materials (BOMs) and BOM versions in Inventory management.
+-   Create bills of materials (BOMs) and BOM versions in Product information management.
 
 ## Required calendar and resource setup
 Before you use Production control, open Organization administration, and create and define the calendar and operations resources in the following order:

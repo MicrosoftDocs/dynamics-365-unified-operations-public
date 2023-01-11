@@ -2,9 +2,9 @@
 # required metadata
 
 title: Self-service upgrade to the latest version
-description: This topic describes the process for moving to the latest update of Finance and Operations.
+description: This article describes the process for moving to the latest update of finance and operations.
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,13 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This topic applies to the following starting versions:
+> The process that is described here is now deprecated for data upgrade between older versions of finance and operations apps and the latest version. For more information about Dynamic AX 2012 upgrades, see [Upgrade from AX 2012 to finance and operations](upgrade-overview-2012.md).
+>
+> This article applies to the following starting versions:
 >
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)
-> - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as version 7.2)
-> - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+> - Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017) (also known as version 7.2)
+> - Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3
 
 In this tutorial, you will learn how to perform these tasks:
 
@@ -116,7 +118,7 @@ A dialog box appears, where you can select the latest combination of an applicat
 <img src="media/UpgradeAutomation/02_Prepare.png" width="500px" alt="Prepare upgrade environment dialog box" />
 
 > [!IMPORTANT]
-> If you receive an error that states that preparation failed, see the [Known issues](#known-issues) section later in this topic.
+> If you receive an error that states that preparation failed, see the [Known issues](#known-issues) section later in this article.
 
 ### Preparation
 
@@ -236,3 +238,4 @@ This TTSCOMMIT error is intermittent and can be resolved by using the **Resume**
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

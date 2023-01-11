@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Key invoice data into the AP system using invoice pool
-description: This topic describes how to use the invoice register to create invoices. 
+description: This article describes how to use the invoice register to create invoices. 
 author: abruer
 ms.date: 07/31/2019
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to use the invoice register to create invoices. Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.
+This article describes how to use the invoice register to create invoices. Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.
 
 
 ## Create a purchase order
@@ -62,7 +62,7 @@ This topic describes how to use the invoice register to create invoices. Then us
 6. Select **Change view**.
 7. Select **Grid view**.
 8. Select **Post**.
-9. Close the form.
+9. Close the page.
 10. In the navigation pane, go to **Modules > Accounts payable > Vendors > Vendors**.
 11. Select the vendor that was on the purchase order. For example, select vendor **1001**.
 12. On the action pane, select **Vendor**.

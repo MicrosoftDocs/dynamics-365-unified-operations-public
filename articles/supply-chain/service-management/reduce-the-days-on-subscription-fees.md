@@ -3,7 +3,7 @@
 
 title: Reduce the days on subscription fees  
 description: To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -36,7 +36,7 @@ To reduce the number of days of an existing subscription fee, you can create a n
 
 ## Reduce the days on a subscription fee
 
-1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**. Select the service subscription, and on the Action Pane, click **Subscription fees**
+1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**. Select the service subscription, and on the Action Pane, click **Subscription fees**
 
 2.  In the **Subscription type** field, select **Reduction days**.
 

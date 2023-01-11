@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintain vendor bank account information
-description: Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
+description: Vendors can use the Vendor collaboration functionality to maintain their bank account information. This article explains how to add and maintain bank information for vendors that you do business with.
 author: v-kiarnd
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,8 +15,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
+Vendors can use the Vendor collaboration functionality to maintain their bank account information. This article explains how to add and maintain bank information for vendors that you do business with.
 
 After you give access to vendors, they can add information for new bank accounts. You can then review that information and complete the pre-note process, so that the new accounts will be used for payments to those vendors.
 
@@ -46,7 +46,7 @@ You can maintain your vendor account in the **Vendor information** workspace. Th
 - Expiration date
 - Comments (optional)
 
-If the legal entity is outside the United States, the dialog box also includes fields for the SWIFT code and the International Bank Account Number (IBAN).
+SWIFT and the International Bank Account Number (IBAN) codes are required for all non-US based companies. You can update the SWIFT and IBAN requirements parameter on the **Accounts payable parameters** page after the feature is enabled.
 
 If there are any documents that are related to the specific certification, you can attach them by selecting **Document**.
 

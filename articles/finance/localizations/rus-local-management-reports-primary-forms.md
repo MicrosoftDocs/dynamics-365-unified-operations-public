@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Advance holders reports
-description: This topic describes the Advance holder reports that are available for Russia. 
-author: ShylaThompson
+description: This article describes the Advance holder reports that are available for Russia.
+author: AdamTrukawka
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.search.region: Russia
+ms.author: atrukawk
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.custom: 
 ms.assetid: 
-ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
-ms.dyn365.ops.version: 8.1
-ms.search.validFrom: 2018-10-31
-
+ms.search.form: 
 ---
 
 # Advance holders reports

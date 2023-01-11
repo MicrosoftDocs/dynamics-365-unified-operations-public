@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Update how amounts are displayed on reports and documents
-description: This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
-author: anasyash
-ms.date: 08/13/2019
+description: This article provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
+author: AdamTrukawka
+ms.date: 01/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: Currency
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264254
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264254
+ms.search.form: Currency
 ---
 
 # Update how amounts are displayed on reports and documents
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
+This article provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 
 For legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia, you can set up full names and short names for currency units and subunits. These names can be used to transform how amounts are represented on documents and reports. For example, the amount **LTL 100.20** can be displayed as **100 Litas 20 Centas**.
 
@@ -51,7 +42,7 @@ To set up full and short names for currency units and subunits for a language, c
    |    <strong>Shortcut name of units (Short name field group)</strong>    |                                                                                         Enter the ISO code to identify the currency. For example, enter LTL to identify Litas.                                                                                         |
    |   <strong>Shortcut name for parts (Short name field group)</strong>    |                                                                                               Enter the denomination of the currency subunit. For example, enter Centas.                                                                                               |
    |       <strong>Conjunction 'and' between units and parts</strong>       |                                     Select to print the conjunction “and” between the currency units and unit parts. For example, on invoices or reports, the amount for LTL 100.20 will be displayed as 100 Litas and 20 Centas.                                      |
-   |       <strong>Gender</strong>       |  Select **Masculine**, **Feminine**, or **Neuter**. This parameter can influence the text of the amount declension that is shown in text of the local language on Cash order. For example, when you set up **Gender** for EUR currency as **Neuter**, the amount 1,01 EUR is written in Czech language on a Cash order as *Edno euro 01 cent*.  |
+   |       <strong>Gender</strong>       |  Select **Masculine**, **Feminine**, or **Neuter**. This parameter can influence the text of the amount declension that is shown in text of the local language on Cash order. For example, when you set up **Gender** for EUR currency as **Neuter**, the amount 1,01 EUR is written in Czech language on a Cash order as *Jedno euro 01 cent*.  |
 
 5. Select **Save**.
 

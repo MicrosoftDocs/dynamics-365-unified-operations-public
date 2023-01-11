@@ -3,7 +3,7 @@
 
 title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
-author: AndersGirke
+author: JennySong-SH
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -58,7 +58,7 @@ features are in development.
 
 #### White paper
 
-[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
+[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the articles, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
 
 #### Blogs
 

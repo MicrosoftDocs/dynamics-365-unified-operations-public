@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Numbering documents and vouchers chronologically
-description: This topic explains how to set up and use chronological numbers for applicable documents and related vouchers.  
+description: This article explains how to set up and use chronological numbers for applicable documents and related vouchers.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  NumberSequenceGroup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 401195
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-
+ms.custom: 401195
+ms.search.form: NumberSequenceGroup
 ---
 
 # Numbering documents and vouchers chronologically
@@ -33,7 +22,7 @@ ms.dyn365.ops.version: 10.0.17
 
 
 In some countries, there is a legal requirement to number documents and related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
-This topic explains how to configure and use chronological numbers for applicable documents and related vouchers.
+This article explains how to configure and use chronological numbers for applicable documents and related vouchers.
 
 ## Prerequisites
 

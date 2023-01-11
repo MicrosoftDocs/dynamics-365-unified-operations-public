@@ -1,32 +1,25 @@
 ---
-# required metadata
-
 title: User interface elements
-description: This topic describes the user interface (UI) elements in the app.
-author: tlefor
+description: This article describes the user interface (UI) elements in the app.
+author: jasongre
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
-ms.search.validFrom:  
+ms.author: jasongre
+ms.search.validFrom: 
 ms.dyn365.ops.version: 7.3
 ---
 
 # User interface elements
 
-This topic describes the user interface (UI) elements used in the app. Before users can navigate the interface, it's important to know the names and functions of the elements that make up the interface.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article describes the user interface (UI) elements used in the app. Before users can navigate the interface, it's important to know the names and functions of the elements that make up the interface.
 
 ## Overview
 

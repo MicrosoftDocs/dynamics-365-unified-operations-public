@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Power BI ER destination type
-description: This topic provides information about how to configure the Power BI ER destination type for outbound documents.
-author: NickSelin
+description: This article provides information about how to configure the Power BI ER destination type for outbound documents.
+author: kfend
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Power BI destination

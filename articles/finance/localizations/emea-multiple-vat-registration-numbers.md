@@ -1,38 +1,24 @@
 ---
-# required metadata
-
-title: Multiple VAT registration numbers (Preview)
-description: This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers.
-author: epodkolz
-ms.date: 09/07/2021
+title: Multiple VAT registration numbers
+description: This article provides information about the functionality for multiple value-added tax (VAT) registration numbers.
+author: EricWangChen
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region:
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom:
+ms.search.region: 
+ms.author: wangchen
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Multiple VAT registration numbers (Preview)
+# Multiple VAT registration numbers
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
-This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers. This functionality lets users set up the tax registration numbers of a legal entity and its customers and vendors in different European Union (EU) member states, and then post and settle taxes according to registration in the appropriate member state.
+This article provides information about the functionality for multiple value-added tax (VAT) registration numbers. This functionality lets users set up the tax registration numbers of a legal entity and its customers and vendors in different European Union (EU) member states, and then post and settle taxes according to registration in the appropriate member state.
 
 Here are the main steps to configure and use this functionality:
 
@@ -46,16 +32,8 @@ The sales tax settlement procedure uses the country/region code of the registrat
 
 ## Enable the feature
 
-First, enable the following flighting:
-
-- TaxIntegrationFlight
-- TaxMultipleVATIDFlighting (The flighting is only required prior to the 10.0.21 update. In 10.0.21, it has been removed.)
-- TaxMultipleVATIDFeature
-
-Then follow these steps to enable the feature.
-
 1. In the **Feature management** workspace, turn on the **Support multiple VAT registration numbers** feature.
-2. Go to **Tax** \> **Setup** \> **Tax service parameters**, and turn on the **Enable tax service** option.
+2. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**, and turn on the **Enable tax calculation service** option.
 
 ## Set up a VAT ID for a legal entity, customers, and vendors
 
@@ -110,7 +88,7 @@ The code for the number sequence group is then entered by default on the sales o
 > [!NOTE]
 > The lookup for the **Tax registration number** field on the **Tax registration** FastTab contains only the registration numbers of the legal entity that have a VAT ID registration category. The list of registration IDs is available for the corresponding country or region of the tax authority.
 >
-> Date effectivity isn't supported for assigned registration numbers. If the the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlemet period.
+> Date effectivity isn't supported for assigned registration numbers. If the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlement period.
 
 ### Set up the sales tax settlement period
 
@@ -120,13 +98,15 @@ On the **Sales tax settlement periods** page, create sales tax settlement period
 
 ### Set up customer and vendor tax registration numbers in the Tax feature setup
 
-1. In Regulatory Configuration Service (RCS), go to **Globalization Features** \> **Tax**. 
-2. On the **Customer Tax Registration Number Applicability** tab, verify that the registration IDs for customers are defined. 
-3. On the **Vendor Tax Registration Number Applicability** tab, verify that the registration IDs for vendors are defined.
+1. In Regulatory Configuration Service (RCS), open the tax calculation feature setup. 
+2. On the **Customer Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for customers are defined. 
+3. On the **Vendor Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for vendors are defined.
 
-    ![Customer and vendor registration IDs on the Tax feature setup page.](./media/Tax-Service-MultVATID-Tax-feature-setup-09-2.png)
+   ![Customer and vendor registration IDs on the Tax feature setup page.](./media/tax-service-multvatid-tax-feature-setup-09-2NewUI.png)
 
     > [!NOTE]
+    > This step is optional unless the customer or vendor has multiple tax registration numbers, and you want the Tax Calculation service to determine the ID. As the default value for the customer/vendor tax registration number, the Tax Calculation service will use the value that is entered in the **Tax exempt number** field on the header of sales and purchase documents. It will replace that default value with the value that you defined in customer/vendor tax registration number applicability rules.
+    >
     > During sales tax calculation and document posting, the tax service returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the **Tax exempt number** field on the sales order or purchase order. If the corresponding value isn't set up on the **Registration ID** FastTab on the **Manage addresses** page for the customer or vendor, the registration ID is left blank, and you receive the following message: "Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup."
 
 ## Sales order and purchase order processing

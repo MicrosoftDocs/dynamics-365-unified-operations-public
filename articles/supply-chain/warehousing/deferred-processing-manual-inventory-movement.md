@@ -1,14 +1,14 @@
 ---
 title: Deferred processing of manual inventory movement
-description: This topic describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: Mirzaab
+ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
 
 Deferred processing lets warehouse workers continue to do other work while a put operation is processed in the background. Deferred processing is useful when the server can have occasional or unplanned increases in processing time, and the increased processing time might affect worker productivity. The *Inventory movement* work type has now been added to the set of work types that this feature supports.
 
@@ -27,10 +27,10 @@ Background processing is achieved by using the [Process warehouse app events fea
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). You must turn them on in this order:
 
-1. Organization-wide work blocking
-1. Process warehouse app events
-1. Deferred put operations
-1. Deferred processing of manual inventory movement operation
+1. *Organization-wide work blocking*<br>(As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off.)
+1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Deferred put operations*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Deferred processing of manual inventory movement operation*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
 
 ## Configure the work processing policies
 

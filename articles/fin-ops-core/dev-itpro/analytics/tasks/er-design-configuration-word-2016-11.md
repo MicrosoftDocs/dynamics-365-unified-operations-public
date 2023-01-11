@@ -1,33 +1,24 @@
---- 
-# required metadata 
- 
+---
 title: Reuse ER configurations with Excel templates to generate reports in Word format
-description: This topic describes how report formats that were designed to generate reports as Excel workbooks can be configured to generate reports as Word documents.
-author: NickSelin
+description: This article describes how report formats that were designed to generate reports as Excel workbooks can be configured to generate reports as Word documents.
+author: kfend
 ms.date: 04/23/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, LedgerJournalTable, LedgerJournalTransVendPaym
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, LedgerJournalTable, LedgerJournalTransVendPaym
 ---
 # Reuse ER configurations with Excel templates to generate reports in Word format
 
 [!include [banner](../../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Alternatively, you can reuse an ER format that was originally designed to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
+To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) format. Alternatively, you can reuse an ER format that was originally designed to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
 
 The following procedures show how a user in either the System administrator role or the Electronic reporting developer role can configure an ER format to generate reports as Word files by reusing an ER format that was designed to generate reports as Excel files.
 

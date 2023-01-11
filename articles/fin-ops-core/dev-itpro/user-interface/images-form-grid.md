@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Images on a page or in a grid
-description: This topic describes the steps for displaying images on a page or in a grid.
-author: RobinARH
+description: This article describes the steps for displaying images on a page or in a grid.
+author: jasongre
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 55871
-ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 55871
+ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
 ---
 
 # Images on a page or in a grid
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
+This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
 
 > [!NOTE]
 > For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
@@ -86,17 +75,17 @@ Sometimes, you don't have an image for a particular record in a grid, but you do
 
 ```xpp
 public display container customerImage()
-{     
-    ImageReference imgRef;
-    container imgContainer = this.Image;
-    if(imgContainer == connull())
+{
+    container imageContainer = this.Image;
+    if (imageContainer == connull())
     {
         // there is no image… the container is null
         // show a generic person outline image
-        imgRef = ImageReference::constructForSymbol("Person");
-        imgContainer = imgRef.pack();
+        ImageReference imageReference = 
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Person);
+        imageContainer = imageReference.pack();
     }
-    return imgContainer;
+    return imageContainer;
 }
 ```
 
@@ -114,10 +103,10 @@ public display container customerImage()
 ```xpp
 public display container imageDataMethod()
 {
-    ImageReference imgClass =  
-            ImageReference::constructForAotResource(
-              "ResourceMicrosoft Dynamics AX");
-    return imgClass.pack();
+    ImageReference imageReference =
+        ImageReference::constructForAotResource(
+            'ResourceMicrosoft Dynamics AX');
+    return imageReference.pack();
 }
 ```
 
@@ -134,21 +123,22 @@ The following example shows an image that uses a URL that is contained in a stri
 ```xpp
 public display container imageDataMethod()
 {
-ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
-return imgClass.pack();
+    ImageReference imageReference = 
+        ImageReference::constructForUrl(this.ImageURL);
+    return imageReference.pack();
 }
 ```
 
 This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.
 
 ```xpp
-ImageReference imgClass;
-CLIControls_ImageTable imgTable;
+CLIControls_ImageTable imageTable;
 ttsbegin;
-imgClass = ImageReference::constructForUrl(
-    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");    
-imgTable.ImageField = imgClass.pack();
-imgTable.insert();
+ImageReference imageReference = 
+    ImageReference::constructForUrl(
+        'http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg');
+imageTable.ImageField = imageReference.pack();
+imageTable.insert();
 ttscommit;
 ```
 
@@ -187,7 +177,9 @@ public void init()
     int imgCnt;
         
     // create an imagelist instance
-    Imagelist imageList = new ImageList(ImageList::smallIconWidth(), Imagelist::smallIconHeight());
+    Imagelist imageList = new ImageList(
+        ImageList::smallIconWidth(), 
+        Imagelist::smallIconHeight());
         
     super();
         
@@ -436,8 +428,9 @@ In this example, a display method is used to translate a string that contains a 
 ```xpp
 public display container imageDataMethod()
 {
-    ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
-    return imgClass.pack();
+    ImageReference imageReference = 
+        ImageReference::constructForUrl(this.ImageURL);
+    return imageReference.pack();
 }
 ```
 
@@ -449,41 +442,44 @@ There might be times when you have no image for a particular record in a grid, b
 ```xpp
 public display container customerImage()
 {
-    ImageReference imgRef;
-    container imgContainer = this.Image;
-    if(imgContainer == connull())  // there is no image… the container is null
+    container imageContainer = this.Image;
+    if (imageContainer == connull())  // there is no image… the container is null
     {
-        imgRef = ImageReference::constructForSymbol("Person");  // show a generic person outline image
-        imgContainer = imgRef.pack();
+        ImageReference imageReference =
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Person);  // show a generic person outline image
+        imageContainer = imageReference.pack();
     }
-    return imgContainer;
+    return imageContainer;
 }
+
 public display container statusImageDataMethod()
 {
     ImageReference statusImage;
     if (this.Status == NoYes::Yes)
     {
-        statusImage = ImageReference::constructForSymbol("Accept");
+        statusImage = 
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Accept);
     }
     else
     {
-        statusImage = ImageReference::constructForSymbol("Cancel");
+        statusImage = 
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Cancel);
     }
     return statusImage.pack();
 }
 ```
 
 ## Taking an image URL and storing the image in table
-You can have a container field for the image column on your table. You can then use code that resembles the following example to store the **ImageReference** pack.
+You can have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.
 
 ```xpp
-ImageReference imgClass;
-CLIControls_ImageTable imgTable;
+CLIControls_ImageTable imageTable;
 ttsbegin;
-imgClass = ImageReference::constructForUrl(
-    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");
-imgTable.ImageField = imgClass.pack();
-imgTable.insert();
+ImageReference imageReference = 
+    ImageReference::constructForUrl(
+        'http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg');
+imageTable.ImageField = imageReference.pack();
+imageTable.insert();
 ttscommit;
 ```
 

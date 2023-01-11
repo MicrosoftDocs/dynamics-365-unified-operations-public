@@ -4,7 +4,7 @@
 title: Send email receipts from Modern POS (MPOS)
 description: In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).  
 author: jashanno
-ms.date: 03/01/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -94,7 +94,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     - In the **Subject** field, enter a title for the email receipts.
     - Select the **Has body** check box.
     - Select **Edit** to upload your template HTML. At a minimum, your template instance must contain the following code: 
- 
+
     ``` xml
     <pre>
     %message%
@@ -109,6 +109,10 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     - **1070** – Channel configuration
     - **1090** – Registers
     - **1110** – Global configuration
+
+## Insert bar codes or QR codes in emailed receipts
+
+You can insert QR codes or bar codes that represent order IDs into transactional and receipt emails. For more information, see [Add a QR code or bar code to a receipt email](add-qr-code-barcode-email.md#add-a-qr-code-or-bar-code-to-a-receipt-email). 
 
 ## MPOS transactions
 

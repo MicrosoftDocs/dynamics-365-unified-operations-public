@@ -1,27 +1,19 @@
---- 
-# required metadata 
- 
+---
 title: Category pricing rules to create trade agreements
-description: This procedure demonstrates how to create sales price trade agreements using a category pricing rule. 
-author: scott-tucker
+description: This procedure demonstrates how to create sales price trade agreements using a category pricing rule.
+author: josaw1
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ms.search.industry: Retail
-ms.author: scotttuc
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 ---
 # Category pricing rules to create trade agreements
 

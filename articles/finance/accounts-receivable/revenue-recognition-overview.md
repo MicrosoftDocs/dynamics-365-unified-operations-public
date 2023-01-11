@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Revenue recognition overview 
-description: This topic provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
-author: kweekley
-ms.date: 11/11/2019
-ms.topic: index-page
+title: Revenue recognition overview  (contains video)
+description: This article provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
+author: bking
+ms.date: 03/15/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form:  Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 
@@ -29,12 +29,12 @@ ms.dyn365.ops.version: 8.0.4
 
 [!include [banner](../includes/banner.md)]
 
+>[!NOTE]
+>This functionality will be deprecated October 2023, new users should use subscription billing.
+
 Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
 
-> [!NOTE]
-> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
-
-> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
+Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
 
 In general, the revenue recognition process can be used to perform these tasks:
 
@@ -43,7 +43,7 @@ In general, the revenue recognition process can be used to perform these tasks:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 The Revenue recognition feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule.
 
@@ -61,3 +61,4 @@ If a contractual change causes a new sales order line to be added either to the 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

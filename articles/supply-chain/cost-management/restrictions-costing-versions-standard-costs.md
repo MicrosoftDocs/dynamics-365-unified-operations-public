@@ -2,8 +2,8 @@
 # required metadata
 
 title: Restrictions on costing versions for standard costs
-description: This topic describes the restrictions that apply to a costing version for standard costs. 
-author: AndersGirke
+description: This article describes the restrictions that apply to a costing version for standard costs. 
+author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing 
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the restrictions that apply to a costing version for standard costs. 
+This article describes the restrictions that apply to a costing version for standard costs. 
 
 The following restrictions help guarantee adherence to standard costing principles:
 
@@ -42,9 +42,9 @@ The following restrictions help guarantee adherence to standard costing principl
 
 -  BOM calculations must be performed in a single-level explosion mode.
 
-The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs. However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this topic don't apply to planned costs.
+The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs. However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this article don't apply to planned costs.
 
-## Related topics
+## Related articles
 
 [Costing versions overview](costing-versions.md)
 

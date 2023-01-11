@@ -3,7 +3,7 @@
 
 title: Manage standard cost updates
 description: Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach. 
-author: AndersGirke
+author: JennySong-SH
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 69992
 ms.assetid: 468de7af-c7b5-4345-bd5a-ba3aa5a900cc
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
 ---
