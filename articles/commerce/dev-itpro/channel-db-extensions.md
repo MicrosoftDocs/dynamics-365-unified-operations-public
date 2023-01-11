@@ -2,7 +2,7 @@
 title: Channel database extensions
 description: This article explains how to extend the channel database.
 author: josaw1
-ms.date: 12/08/2020
+ms.date: 01/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ We have made some improvements to how extensions are handled during an upgrade. 
 - Microsoft Dynamics 365 Retail 7.3, which includes application update 5.
 - Microsoft Dynamics 365 Finance 7.3, which includes application update 5.
 
-Additional reference material can be reviewed in the [Pre-extended columns in the channel database](extended-columns.md) article.
+For more information, see [Pre-extended columns in the channel database](extended-columns.md).
 
 ## Ext schema
 
