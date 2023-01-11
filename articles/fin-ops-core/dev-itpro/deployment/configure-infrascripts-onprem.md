@@ -30,11 +30,11 @@ ms.dyn365.ops.version:
 
 # Configure the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
 
-This article explains which information is present in the different configuration files and which information needs to be provided. At the end there is also a scenario where a practical example is given in which a company needs to fill out the information for their production environment.
+This article explains which information is present in the different configuration files and which information needs to be provided. A practical example is given in which Contoso Corporation needs to fill out the information for their production environment.
 
 ## Configuration files available in the infrastructure scripts
 
-The infrastructure setup scripts use the following configuration files to drive the setup:
+The infrastructure setup scripts use the following configuration files to drive the setup. Each file is described in detail in the following sections:
 
 - infrastructure\\ConfigTemplate.xml
 - infrastructure\\D365FO-OP\\NodeTopologyDefinition.xml
@@ -45,26 +45,26 @@ The infrastructure setup scripts use the following configuration files to drive 
 
 You must fill out this file to be able to use the infrastructure scripts. The ConfigTemplate.xml configuration file describes the following details:
 
-- The service accounts that are required for the application to work
-- The certificates that are required to help secure communications
-- The database configuration
-- The Service Fabric cluster configuration
-- The file shares that are required for the application to work
-- The SQL cluster information 
+- The service accounts that are required for the application to work.
+- The certificates that are required to help secure communications.
+- The database configuration.
+- The Service Fabric cluster configuration.
+- The file shares that are required for the application to work.
+- The SQL cluster information. 
 
-    > [!IMPORTANT]
-    > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
+> [!IMPORTANT]
+> When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
 
 ### NodeTopologyDefinition.xml
 
 For each Service Fabric node type, the NodeTopologyDefinition.xml configuration file describes the following details:
 
-- The mapping between each node type and the application, domain and service accounts, and certificates
-- Whether User Account Control (UAC) is enabled
-- The prerequisites for Windows features and system software
-- Whether strong name validation should be enabled
-- The list of firewall ports that should be opened
-- Which permissions an account requires for a machine
+- The mapping between each node type and the application, domain and service accounts, and certificates.
+- Whether User Account Control (UAC) is enabled.
+- The prerequisites for Windows features and system software.
+- Whether strong name validation should be enabled.
+- The list of firewall ports that should be opened.
+- Which permissions an account requires for a machine.
 - Whether the .NET Framework should be configured to use the operating system's default Transport Layer Security (TLS) protocol.
 - Whether insecure TLS and SSL protocols should be disabled.
 - Whether insecure TLS ciphers should be disabled.
@@ -76,39 +76,37 @@ For each Service Fabric node type, the NodeTopologyDefinition.xml configuration 
 
 For each database, the DatabaseTopologyDefinition.xml configuration file describes the following details:
 
-- The database settings
-- The mappings between users and roles
+- The database settings.
+- The mappings between users and roles.
 
 > [!NOTE]
 > You do not need to modify this file.
 
 ### FileShareTopologyDefinition.xml
 
-For each fileshare, the FileShareTopologyDefinition.xml configuration file describes the following details:
+For each file share, the FileShareTopologyDefinition.xml configuration file describes the following details:
 
-- The fileshare settings
-- The fileshare share permissions
-- The fileshare NTFS permissions
-- Additional folder level permissions
+- The file share settings.
+- The file share share permissions.
+- The file share NTFS permissions.
+- Additional folder level permissions.
 
 > [!NOTE]
 > You do not need to modify this file.
 
-## Filling out your ConfigTemplate.xml
+## Filling out your ConfigTemplate.xml file
 
-### Section explanations
+This section describes in detail what each of the different configurations sections in the ConfigTemplate.xml file.
 
-In this section we will explain in detail what the different configurations for each part of the configuration file do.
+### ADServiceAccounts
 
-#### ADServiceAccounts
-
-Despite being called DomainName, we actually you need you to specify the NETBIOS name of your domain so that we can correctly build the AD objects like **lab\svc-LocalAgent$**.
+Despite being called DomainName, you need to specify the NETBIOS name of your domain so that we can correctly build the AD objects like **lab\svc-LocalAgent$**.
 
 ```xml
 <DomainName>LAB</DomainName>
 ```
 
-In this section we currently support two types of ADServiceAccounts, group Managed Service Account (gMSA) and domain users. However, for all newer base deployments only gMSA accounts are used.
+This section supports two types of ADServiceAccounts, group Managed Service Account (gMSA) and domain users. However, for all newer base deployments, only gMSA accounts are used.
 
 ```xml
 <ADServiceAccount type="gMSA" name="svc-LocalAgent$" refName="gmsaLocalAgent" disabled="false">
@@ -117,7 +115,7 @@ In this section we currently support two types of ADServiceAccounts, group Manag
 <ADServiceAccount type="DomainUser" name="AXServiceUser" refName="axserviceuser" disabled="true" />
 ```
 
-For an ADServiceAccount, you should only be updating the **name** and **DNSHostName** (only for gMSA accounts). If you do not want to use Management Reporter and will not be deploying it, then you can set **disabled** to false for those accounts. This will ensure that configuration related to those accounts are not generated.
+For an ADServiceAccount, you should only update the **name** and **DNSHostName** (only for gMSA accounts). If you do not want to use **Management Reporter** and will not be deploying it, then you can set **disabled** to false for those accounts. This ensures that configurations related to those accounts aren't generated.
 
 ```xml
 <ADServiceAccount type="gMSA" name="svc-LA-sb$" refName="gmsaLocalAgent" disabled="false">
@@ -132,9 +130,9 @@ If your deployment is still on an old base deployment version (prior to Applicat
   <ADServiceAccount type="DomainUser" name="AXServiceUser" refName="axserviceuser" disabled="false" />
 ```
 
-#### Certificates
+### Certificates
 
-Certificates can be generated through Active Directory Certificate Services (ADCS) or can be self-signed. To set how you want to generate the certificate set **generateSelfSignedCert** or **generateADCSCert** appropriately. We strongly recommend that you use ADCS certificates over self-signed certificates. Do not fill in the **Thumbprint** of the certificate if you are using the scripts to generate the certificate as they will get auto populated.
+Certificates can be generated through Active Directory Certificate Services (ADCS) or can be self-signed. To set how you want to generate the certificate, set **generateSelfSignedCert** or **generateADCSCert** appropriately. We strongly recommend that you use ADCS certificates over self-signed certificates. Don't fill in the **Thumbprint** of the certificate if you are using the scripts to generate the certificate because they will get auto populated.
 
 ```xml
  <Certificate type="OnpremLocalAgent" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
@@ -145,7 +143,7 @@ Certificates can be generated through Active Directory Certificate Services (ADC
 </Certificate>
 ```
 
-If you have generated a certificate elsewhere and already have the certificate provisioned in your machines, you can set **exportable** to false, and then the Export-Certificates.ps1 script will not attempt to export it. However you should still be defining the thumbprint so that the correct ACL can be generated and applied.
+If you have generated a certificate elsewhere and already have the certificate provisioned in your machines, you can set **exportable** to false, and then the Export-Certificates.ps1 script won't attempt to export it. However, you should still define the thumbprint so the correct ACL can be generated and applied.
 
 ```xml
  <Certificate type="" exportable="false" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
@@ -156,7 +154,7 @@ If you have generated a certificate elsewhere and already have the certificate p
 </Certificate>
 ```
 
-When specifying the ProtectTo field for a certificate, it is common to set the user that is carrying out the deployment. However, this is a bad idea as if that user leaves the company you will lose access to those exported certificates. Instead, set the ProtectTo to  an active directory group that IT administrators for your D365 deployment belong to. You can specify multiple groups, users, or a combination of both.
+When specifying the ProtectTo field for a certificate, it is common to set the user that is carrying out the deployment. However, this isn't recommended. If that user leaves your company, you will lose access to those exported certificates. Instead, set the ProtectTo to an Active Directory group that the IT administrators for your Microsoft Dynamics 365 deployment belong to. You can specify multiple groups, users, or a combination of both.
 
 ```xml
  <Certificate type="" exportable="false" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
@@ -167,7 +165,7 @@ When specifying the ProtectTo field for a certificate, it is common to set the u
 </Certificate>
 ```
 
-The certificate of type **ServiceFabric** is your wildcard certificate that protects your cluster and is presented by other services hosted in the cluster. The **Name** field is mapped to the Friendly Name of a certificate. The **FileName** field is used when exporting the certificate to give the exported certificate a file name. The **DNSName** field is mapped to the Subject Alternative Names of a certificate. The **Subject** field is mapped to the Subject Name (also known as Common Name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage** or **CertificateType** fields as these fields are hardcoded where necessary to generate the certificate correctly. If you update them there is no guarantee that the certificate will work, or that the scripts themselves would support the option specified.
+The certificate of type **ServiceFabric** is your wildcard certificate that protects your cluster and is presented by other services hosted in the cluster. The **Name** field is mapped to the Friendly Name of a certificate. The **FileName** field is used when exporting the certificate to give the exported certificate a file name. The **DNSName** field is mapped to the Subject Alternative Names of a certificate. The **Subject** field is mapped to the Subject Name (also known as Common Name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage** or **CertificateType** fields because these fields are hardcoded where necessary to generate the certificate correctly. If you update them, there isn't a guarantee that the certificate will work, or that the scripts themselves would support the option specified.
 
 ```xml
 <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
@@ -183,7 +181,7 @@ The certificate of type **ServiceFabric** is your wildcard certificate that prot
 </Certificate>
 ```
 
-The certificate of type **SQLCluster** will be automatically generated by the scripts that generate the certificates. The scripts will use the information from the SQLCluster section later in the configuration file to automatically calculate the values. In such a scenario, simply set the **ProtectTo** field to the appropriate users or groups.
+The certificate of type **SQLCluster** are automatically generated by the scripts that generate the certificates. The scripts will use the information from the SQLCluster section later in the configuration file to automatically calculate the values. In such a scenario, set the **ProtectTo** field to the appropriate users or groups.
 
 ```xml
 <Certificate type="SQLCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false" manualProperties="false">
@@ -196,7 +194,7 @@ The certificate of type **SQLCluster** will be automatically generated by the sc
 </Certificate>
 ```
 
-In the cases where the logic that automatically calculates the configuration for the **SQLCluster** certificate does not correctly reflect your setup you can override the automated calculation and set it to manually specify it yourself. Simply set **manualProperties** to true and fill out the certificate information. For this certificate, ensure that the certificate SAN contains the name of each SQL server as well as the always on availability group listener (if you have one).
+In the cases where the logic that automatically calculates the configuration for the **SQLCluster** certificate doesn't correctly reflect your setup, you can override the automated calculation and set it to manually specify it yourself. Set **manualProperties** to true and fill out the certificate information. For this certificate, ensure that the certificate SAN contains the name of each SQL server and the always on availability group listener (if you have one).
 
 ```xml
 <Certificate type="SQLCluster" exportable="true" generateSelfSignedCert="false" generateADCSCert="true" disabled="false" manualProperties="true">
@@ -222,9 +220,9 @@ The certificate of type **RSAT** is a special certificate as it can only be self
 </Certificate>
 ```
 
-#### DbServer
+### DbServer
 
-When updating the username of a Sql user, you should only update the **userName** field.
+When updating the username of a SqlUser, you should only update the **userName** field.
 
 ```xml
     <Security>
@@ -232,7 +230,7 @@ When updating the username of a Sql user, you should only update the **userName*
     </Security>
 ```
 
-By default only the axdbadmin user is generated by the scripts. If you want to generate the other users because you want to make use of additional features, set **generateUser** to true so that the scripts know to generate and populate the user.
+By default, only the axdbadmin user is generated by the scripts. If you want to generate the other users because you want to make use of additional features, set **generateUser** to true so that the scripts know to generate and populate the user.
 
 ```xml
 <Security>
@@ -240,9 +238,9 @@ By default only the axdbadmin user is generated by the scripts. If you want to g
 </Security>
 ```
 
-#### Databases
+### Databases
 
-When updating a database entry you can update the name of the database by updating **dbName** field.
+When updating a database entry, you can update the name of the database by updating **dbName** field.
 
 ```xml
 <Database refName="axdw" dbName="DataWarehouse"></Database>
@@ -261,9 +259,9 @@ Currently only, a single database needs to be restored from a backup when creati
 </Database>
 ```
 
-#### FileShares
+### FileShares
 
-The fileshares have default share names, if you need to update the name of the share you can update the **name** field. This is important if the same file server will host the shares for multiple environments. 
+The FileShares have default share names. If you need to update the name of the share, you can update the **name** field. This is important if the same file server will host the shares for multiple environments. 
 
 ```xml
 <FileShare refName="agent" name="D365Agent" disabled="false">
@@ -273,7 +271,7 @@ The fileshares have default share names, if you need to update the name of the s
 </FileShare>
 ```
 
-By default, file shares will be created in the C:\Shares directory, however if you want to override that location you can do so by specifying the full path to the folder that you would like the shares to be created in. If you are using the scripts to create the file shares, then do not fill out the LocalPath. Only fill out the LocalPath with the full path to the file share folder if the share was created without the scripts.
+By default, file shares are created in the C:\Shares directory, however if you want to override that location you can do so by specifying the full path to the folder that you want the shares to be created in. If you are using the scripts to create the file shares, then do not fill out the LocalPath. Only fill out the LocalPath with the full path to the file share folder if the share was created without the scripts.
 
 ```xml
 <FileShare refName="agent" name="agent" disabled="false">
@@ -283,7 +281,7 @@ By default, file shares will be created in the C:\Shares directory, however if y
 </FileShare>
 ```
 
-In case that you don't want one of the scripts to create/configure the fileshare for you, you can set **disabled** to true and that fileshare will be ignored. 
+In case that you don't want one of the scripts to create/configure the files hare for you, you can set **disabled** to true and that file share will be ignored. 
 
 ```xml
 <FileShare refName="agent" name="agent" disabled="true">
@@ -293,15 +291,15 @@ In case that you don't want one of the scripts to create/configure the fileshare
 </FileShare>
 ```
 
-#### ServiceFabricCluster
+### ServiceFabricCluster
 
-The ClusterName is only used locally to define the name of the Service Fabric cluster. This can be customized as you wish.
+ClusterName is only used locally to define the name of the Service Fabric cluster. This can be customized as you wish.
 
 ```xml
 <ClusterName>Dynamics365Operations</ClusterName>
 ```
 
-The Service Fabric Cluster requires multiple NodeTypes to be defined. A NodeType definition will look like this. Do not modify the name, namePrefix or purpose fields as they are pre-configured for the NodeType already. You should only modify the disabled or primary fields in certain situations.
+The Service Fabric Cluster requires multiple NodeTypes to be defined. Below is an example of a NodeType definition. Do not modify the name, namePrefix or purpose fields as they are pre-configured for the NodeType already. You should only modify the disabled or primary fields in certain situations.
 
 If you are not going to be using the specified node type you can set the disabled field to true. For example, if you want to have separate BatchOnly or InteractiveOnly nodes you would disable the AOSNodeType by setting disabled to true and enable the BatchOnlyAOSNodeType and InteractiveOnlyAOSNodeType by setting disabled to false.
 
@@ -328,7 +326,7 @@ If you are not going to be using the specified node type you can set the disable
 </NodeType>
 ```
 
-If you want to change which node type will contain the Service Fabric system services, you can do so by setting the primary field to true. Keep in mind that by default the primary node type is set for the OrchestratorType, so if you are changing it to a different node type make sure you also update the primary field for OrchestratorType. You should only change the primary node type if theres a different node type that has more nodes assigned to it and can help you raise the reliability tier of your cluster.
+If you want to change which node type will contain the Service Fabric system services, you can set the primary field to true. Keep in mind that by default the primary node type is set for the OrchestratorType. If you change it to a different node type, make sure you also update the primary field for OrchestratorType. You should only change the primary node type if there's a different node type that has more nodes assigned to it and can help you raise the reliability tier of your cluster.
 
 ```xml
 <NodeType name="AOSNodeType" primary="true" namePrefix="AOS" purpose="AOS" disabled="false">
@@ -351,7 +349,7 @@ If you want to change which node type will contain the Service Fabric system ser
 
 Each node type has a list of machines that belong to that node type. A machine is defined in the following way. It has the name which is the name of the machine in the domain. It has the ipAddress which is the static ip of the machine. It has a fault domain and an upgrade domain.
 
-A fault domain is a set of hardware components that shares a single point of failure. For example a hardware host can be considered a fault domain. But it could also be a set of hardware hosts that are connected to a single switch/router. In that scenario, the switch/router would be your single point of failure and anything connected to that switch/router is a single fault domain. In Standalone Service Fabric clusters they don't play that much of a role since you control the underlying infrastructure. However, in cloud it is an important concept. It is helpful to define it in Service Fabric to know how your VMs are distributed/spread out. Upgrade domains actually plays a role when there is a change to the cluster (if there is a cluster configuration change or a cluster code upgrade). In that case, the change will be applied to one upgrade domain at a time. As such, you don't want to set all of your AOS nodes in the same upgrade domain as then if there is a change in your cluster all of your AOS nodes will go down at the same time.
+A fault domain is a set of hardware components that shares a single point of failure. For example, a hardware host can be considered a fault domain. But it could also be a set of hardware hosts that are connected to a single switch or router. In that scenario, the switch or router would be your single point of failure, and anything connected to that switch/router is a single fault domain. In Standalone Service Fabric clusters they don't play that much of a role because you control the underlying infrastructure. However, in the cloud it is an important concept. It is helpful to define it in Service Fabric to know how your VMs are distributed or spread out. Upgrade domains actually plays a role when there is a change to the cluster (if there is a cluster configuration change or a cluster code upgrade). In that case, the change will be applied to one upgrade domain at a time. As such, you don't want to set all of your AOS nodes in the same upgrade domain as then if there is a change in your cluster all of your AOS nodes will go down at the same time.
 
 Finally, it may also have the hasSSIS field which is used to indicate that SSIS is installed on that node. The hasSSIS field is used for 10.0.32 and later base deployments to help pinpoint where the data management framework service will be placed in case that a dedicated node type is not used.
 
@@ -361,7 +359,7 @@ Finally, it may also have the hasSSIS field which is used to indicate that SSIS 
 
 The **ServiceFabricSettings** section allows customizing several Service Fabric settings. 
 
-We only define the ones that are explicitly required for deployments. For information on what each setting does refer to the following article: [Customize Service Fabric cluster settings](/azure/service-fabric/service-fabric-cluster-fabric-settings).
+We only define the ones that are explicitly required for deployments. For information on what each setting does, see [Customize Service Fabric cluster settings](/azure/service-fabric/service-fabric-cluster-fabric-settings).
 
 ```xml
 <ServiceFabricSettings>
@@ -389,9 +387,9 @@ If you would like to customize your cluster, you can create additional settings 
 </Setting>
 ```
 
-#### SQLCluster
+### SQLCluster
 
-The **ListenerName** field is only necessary if you have a SQL cluster. If have a single SQL VM because you are deploying a sandbox environment make sure that you leave it blank.
+The **ListenerName** field is only necessary if you have a SQL cluster. If have a single SQL VM because you are deploying a sandbox environment, make sure that you leave the **ListenerName** field blank.
 
 ```xml
 <ListenerName></ListenerName>
@@ -406,7 +404,7 @@ The **SQLVMList** should contain the name of all the SQL machines that belong to
 </SQLVMList>
 ```
 
-Alternatively, if you only have one SQL machine then just have that single machine.
+Alternatively, if you only have one SQL machine then only list that machine.
 
 ```xml
 <SQLVMList>
@@ -414,17 +412,17 @@ Alternatively, if you only have one SQL machine then just have that single machi
 </SQLVMList>
 ```
 
-### Filling out a ConfigTemplate.xml for Contoso Corporation
+## Example ConfigTemplate.xml file for Contoso Corporation
 
 Contoso Corporation will fill out the ConfigTemplate.xml based on the following information:
 
 - The Active Directory domain is Contoso.com and the NETBIOS name is Contoso.
 - Contoso Corporation is deploying their production environment.
-- The service fabric DNS endpoint will be sf.contoso.com
-- The AOS DNS endpoint will be ax.contoso.com
-- The SSRS machines are joined to a Windows Server Failover Cluster. The name of the cluster is: LBDEN01SFBI
-- The SQL Always-On availability group is: LBDEN01SQLA
-- The D365 Administrators group in the domain is called: contoso\D365Admins
+- The service fabric DNS endpoint will be sf.contoso.com.
+- The AOS DNS endpoint will be ax.contoso.com.
+- The SSRS machines are joined to a Windows Server Failover Cluster. The name of the cluster is: LBDEN01SFBI.
+- The SQL Always-On availability group is: LBDEN01SQLA.
+- The Dynamics 365 Administrators group in the domain is called: contoso\D365Admins.
 
 | Machine purpose           | Service Fabric node type   | Machine name    | IP address |
 |---------------------------|----------------------------|-----------------|------------|
@@ -451,13 +449,13 @@ Contoso Corporation will fill out the ConfigTemplate.xml based on the following 
 | SSIS node 1               | SSISNodeType               | LBDEN01SFSSIS1  | 10.0.0.51  |
 | SSIS node 2               | SSISNodeType               | LBDEN01SFSSIS2  | 10.0.0.52  |
 
-#### ADServiceAccounts
+### ADServiceAccounts
 
-For DomainName the NETBIOS name of the domain has been used: Contoso.
+For DomainName the NETBIOS name of the domain is: Contoso.
 
-Contoso wants to use differentiated gMSA accounts per environment. As they are preparing the configuration for their production environment, they have added the **-Prod** suffix to all of the accounts. Foreach of the ADServiceAccounts that are of type gMSA Contoso has updated the name of the account and also the DNSHostName. 
+Contoso wants to use differentiated gMSA accounts per environment. As they are preparing the configuration for their production environment, they have added the **-Prod** suffix to all of the accounts. For each of the ADServiceAccounts that are of type gMSA, Contoso has updated the name of the account and the DNSHostName. 
 
-As Contoso is deploying a base package of 10.0.29, the axserviceuser account is left as disabled since it will not be used.
+Contoso is deploying a base package of 10.0.29. The axserviceuser account remains disabled because it will not be used.
 
 ```xml
 <ADServiceAccounts>
@@ -487,21 +485,21 @@ As Contoso is deploying a base package of 10.0.29, the axserviceuser account is 
 </ADServiceAccounts>
 ```
 
-#### Certificates
+### Certificates
 
-Contoso corporation has acquired a certificate from a public certificate authority for their ServiceFabric certificate. Since Contoso does not need the scripts to generate the certificate, they set **generateADCSCert** to false. Additionally, they fill in the thumbprint of the certificate so that it can be exported later on.
+Contoso Corporation has acquired a certificate for their ServiceFabric certificate from a public certificate authority. Because Contoso does not need the scripts to generate the certificate, they set **generateADCSCert** to false. Additionally, they fill in the thumbprint of the certificate so that it can be exported later.
 
-Contoso corporation has an Active Directory Certificate Services (ADCS) server and has decided to use it to generate all of the other certificates.
+Contoso Corporation has an Active Directory Certificate Services (ADCS) server and has decided to use it to generate all of the other certificates.
 
-As Contoso corporation does not want to lose access to the certificate private keys if their IT administrator leaves, they have set the **ProtectTo** field to an Active Directory group that all of their IT administrators are a part of. This is a best practice instead of specifying a single user.
+Because Contoso Corporation does not want to lose access to the certificate private keys if their IT administrator leaves, they have set the **ProtectTo** field to an Active Directory group that all of their IT administrators are a part of. This is a best practice instead of specifying an individual user.
 
-As they did previously with the gMSA accounts, Contoso corporation has chosen to add the **-prod** suffix to all of their other certificates (except the SQLCluster, OnpremLocalAgent and RSAT certificates) to be able to distinguish them better.
+Like they did previously with the gMSA accounts, Contoso Corporation has chosen to add the **-prod** suffix to all of their other certificates (except the SQLCluster, OnpremLocalAgent and RSAT certificates) to be able to distinguish them better.
 
 According to the setup guide, the infrastructure scripts will autogenerate the information for the SQLCluster certificate as long as the SQLCluster configuration is specified further down in the configuration template. So they have left everything blank except for the **ProtectTo** field.
 
-As this is not their first environment, Contoso corporation has already registered the OnpremLocalAgent certificate against their Azure AD tenant and don't have to regenerate a new one. They instead specify the thumbprint of the existing certificate and set **generateADCSCert** to false.
+Because this is not their first environment, Contoso corporation has already registered the OnpremLocalAgent certificate against their Azure AD tenant and doesn't have to regenerate a new one. They instead specify the thumbprint of the existing certificate and set **generateADCSCert** to false.
 
-Eventhough Contoso corporation wants to use the Regression suite automation tool (RSAT), they have left the **disabled** filed of the RSAT certificate as false. They have done this because they are specifying the configuration for their production environment and RSAT should only be used with sandbox environments.
+Eventhough Contoso Corporation wants to use the Regression suite automation tool (RSAT), they have left the **disabled** field of the RSAT certificate set to false. They have done this because they are specifying the configuration for their production environment and RSAT should only be used with sandbox environments.
 
 ```xml
 <Certificates>
@@ -598,11 +596,11 @@ Eventhough Contoso corporation wants to use the Regression suite automation tool
 </Certificates>
 ```
 
-#### DBServer
+### DBServer
 
-Contoso corporation will dedicate the SQL Server cluster they have created to be used exclusively by their production instance of Dynamics 365 for Finance + Operations (on-premises). As such, they have opted to leave the default values for the **userName** field.
+Contoso Corporation will dedicate the SQL Server cluster they have created to be used exclusively by their production instance of Dynamics 365 for Finance + Operations (on-premises). As such, they have opted to leave the default values for the **userName** field.
 
-Additionally, Contoso wants to make use of the Entity Store feature so they set **generateUser** to true for the axdwadmin and axdwruntimeuser accounts. 
+Additionally, Contoso wants to make use of the Entity Store feature so they set **generateUser** to **true** for the **axdwadmin** and **axdwruntimeuser** accounts. 
 
 ```xml
 <DbServer>
@@ -618,9 +616,9 @@ Additionally, Contoso wants to make use of the Entity Store feature so they set 
 </DbServer>
 ```
 
-#### Databases
+### Databases
 
-Contoso corporation will leave the default values for their database names (dbName). As they have not downloaded the empty or demo databases from LCS, they have not yet filled out the **BackupFile** field, but will ensure they fill it out later.
+Contoso Corporation will leave the default values for their database names (dbName). They have not downloaded the empty or demo databases from Lifecycle Services, and they have not yet filled out the **BackupFile** field but will ensure they fill it out later.
 
 ```xml
 <Databases>
@@ -638,9 +636,9 @@ Contoso corporation will leave the default values for their database names (dbNa
 </Databases>
 ```
 
-#### Fileshares
+### FileShares
 
-Contoso corporation has a file server with a single node, but will ensure that they setup a High Availability solution in the near future before they go live. For now, they have created a specific volume to host the sfDiagnostics share and a separate volume to host the remaining shares. They have only filled out the BasePath field for each fileshare as the rest of the fields are filled out by the infrastructure scripts.
+Contoso Corporation has a file server with a single node, but will ensure that they setup a High Availability solution in the near future before they go live. For now, they have created a specific volume to host the sfDiagnostics share and a separate volume to host the remaining shares. They have only filled out the BasePath field for each file share as the rest of the fields are filled out by the infrastructure scripts.
 
 ```xml
 <FileShares>
@@ -667,21 +665,21 @@ Contoso corporation has a file server with a single node, but will ensure that t
 </FileShares>
 ```
 
-#### ServiceFabricCluster
+### ServiceFabricCluster
 
-To be able to correctly identify the cluster they are connected to Contoso coporation has updated the **ClusterName** to reflect that this is their production cluster.
+To correctly identify the cluster they are connected to, Contoso Corporation has updated the **ClusterName** to reflect that this is their production cluster.
 
-Contoso corporation has observed that they have resource heavy batch jobs that run during normal operation hours. Since they don't want their users to be impacted they have chosen to split batch and interactive sessions into separate nodes. To accomplish this they have set the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types disabled field to false and set the disabled field for the **AOSNodeType** to true.
+Contoso Corporation has observed that they have resource heavy batch jobs that run during normal operation hours. Because they don't want this to impact their users, they have chosen to split batch and interactive sessions into separate nodes. To accomplish this, they have set the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types **disabled** field to **false** and set the disabled field for the **AOSNodeType** to true.
 
-Foreach machine that belongs to a nodetype they have filled in the VM name, the ip address of the VM as well as the fault domain and update domain.
+For each machine that belongs to a nodetype they have filled in the VM name, the ipAddress of the VM as well as the fault domain and update domain.
 
-Contoso corporation has a fault tolerant setup, however they don't have enough fault tolerance to provide 3 fault domains. As such, they have chosen to randomly assign the fault tolerance values so they are spread out across the minimum requirement of 3 fault domains.
+Contoso Corporation has a fault tolerant setup; however, they don't have enough fault tolerance to provide 3 fault domains. They have chosen to randomly assign the fault tolerance values so they are spread out across the minimum requirement of 3 fault domains.
 
-Eventhough Contoso does not expect to need to update their cluster often, they know they must follow the best practices for update domain definition. They have ensured that each of the nodes for each node type are placed in different update domains. This ensures that if there is a cluster update/upgrade only one node of each nodetype will be taken down simultaneously.
+Even though Contoso does not expect to need to update their cluster often, they know they must follow the best practices to update domain definitions. They have ensured that each of the nodes for each node type are placed in different update domains. This ensures that if there is a cluster update/upgrade only one node of each nodetype will be taken down simultaneously.
 
-Contoso has noticed that since Application version 10.0.32 a new service has been introduced for the Data Management Framework. This removes the need to have SSIS installed and licensed on all AOS nodes. They are also aware that they could disable the **SSISNodeType** node type, and use the **ReportServerType** node type to host the DMF service instead. They could do this by setting the **hasSSIS** to true on each **ReportServerType**. However, they have very resource intensive DMF operations so they would not want to disrupt their report generation. As such, they have opted for having dedicated nodes for this service. 
+Contoso has noticed that since Application version 10.0.32 a new service has been introduced for the Data Management Framework. This removes the need to have SSIS installed and licensed on all AOS nodes. They are also aware that they could disable the **SSISNodeType** node type, and use the **ReportServerType** node type to host the DMF service instead. They could do this by setting the **hasSSIS** to **true** on each **ReportServerType**. However, they have very resource intensive DMF operations, so they wouldn't want to disrupt their report generation. As such, they have opted for having dedicated nodes for this service. 
 
-To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, Contoso corporation has updated the paths so they are in the root directory.
+To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, Contoso has updated the paths so they are in the root directory.
 
 ```xml
   <ServiceFabricCluster>
@@ -748,9 +746,9 @@ To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, 
   </ServiceFabricCluster>
 ```
 
-#### SQLCluster
+### SQLCluster
 
-Contoso corporation has created a SQL Always on cluster with availability groups that consists of 2 VMs. They have added each SQLVM under the SQLVMList. Additionally, since they have availability groups, they have specified the listername of their availability group.
+Contoso Corporation has created a SQL Always on cluster with availability groups that consists of 2 VMs. They have added each SQLVM under the SQLVMList. Additionally, because they have availability groups, they have specified the listername of their availability group.
 
 ```xml
 <SQLCluster>
