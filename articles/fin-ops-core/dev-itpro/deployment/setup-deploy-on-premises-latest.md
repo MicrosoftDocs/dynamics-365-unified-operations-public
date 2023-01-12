@@ -811,7 +811,7 @@ You can verify that everything has been configured correctly by running the foll
     1. Create an empty database that's named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
     1. Grant **db\_owner** permissions on the database to the local agent gMSA (**svc-LocalAgent$**).
 
-#### Configure the Finance + Operations (on-premises) database
+#### Configure the Finance + Operations database
 
 1. Run the following commands.
 
