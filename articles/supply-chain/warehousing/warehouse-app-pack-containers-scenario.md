@@ -94,21 +94,7 @@ Follow these steps to create a mobile device menu item that workers can use to p
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> You can control the packing process by assigning a **Packing policy ID** value.
->
-> The **Warehouse management \> Setup \> Packing \> Mobile device container packing policies** contains the following settings:
->
-> - **Capture tracking dimensions** – This option determines the behavior of how the tracking dimensions are handled in the *Pack inventory into containers* flow on the warehouse mobile device.
->   - *Skip capturing* (Default) – When selected, the user will not be asked to specify the tracking dimensions during packing. Exception to this is if serial numbers are used and the tracking dimensions group has set to capture serial at packing, in which case the user will always needs to specify the serial number.
->   - *Capture one by one* – When selected, the tracking dimensions will not be defaulted and the user will always need to specify them.
-> - **Starting step** – This option determines what will be the first step in the *Pack inventory into containers* flow on the warehouse mobile device after the user logs in to the packing station.
->   - *Scan shipment ID first* (Default) – When selected, the user will be asked to scan the shipment ID.
->   - *Scan license plate ID first* – When selected, the user will be asked to scan the license plate ID. As the user continues with the flow, the packing will be performed only from the specified license plate.
-> - **Item selection** – This option determines which items are packed in the "Pack inventory into containers" flow on the warehouse mobile device.
->   - *Select item to pack* (Default) – When selected the user will be asked to scan an item to pack.
->   - *Pack all remaining* – When selected any remaining items for the shipment or license plate on the packing station will be packed into the container. Capturing tracking dimensions is not supported with this option.
-> - **Close container automatically** – Select this option to automatically close the container after packing all remaining items. The weight from the item master data will be used without any options for the warehouse worker to update the weight before closing the container.
-> - **Create container automaticaly** – Select this option to automatically create a new container when packing all remaining items. The worker's *Packing profile ID* must have a default *Container type* and the *Container ID mode* set to "Auto".
+> You can control several other aspects of the packing process by creating a packing policy and assigning it to your menu device menu item using the **Packing policy ID** field. For details, see [Mobile device container packing policies](warehouse-app-pack-containers-policies.md).
 
 ## Create a mobile device menu item for creating containers
 
