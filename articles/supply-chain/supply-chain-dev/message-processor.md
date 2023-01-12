@@ -31,7 +31,7 @@ You might make use of this framework, for example, to develop and manage custom 
 
 To use the message processor, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.29 or later.
 - At least one of the following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
   - *Manufacturing execution system integration*
   - *(Preview) Make finished goods physically available before posting to journals*
