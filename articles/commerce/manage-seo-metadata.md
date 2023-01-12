@@ -46,7 +46,7 @@ Dynamics 365 Commerce supports either automatic generation of site maps or manua
 
 The automated solution in option 1 works for many scenarios, but there are cases where manually managing a site map is preffered to enable more granular control over which pages are included or excluded.  This can be achieved by hosting your own manually generated site map file in **site builder**'s media library as a document binary, and then pointing your site's Robots.txt file to the site map's URL.  Follow the instructions below if you wish to manually manage your site map and host them in **site builder**'s media library:
 
-1. In **site builder**, navigate to your site’s **Media Library** and select the **Upload media items** option from the action bar’s **Upload** dropdown button.
+1. In **site builder**, navigate to your site’s **Media library** and select the **Upload media items** option from the action bar’s **Upload** dropdown button.
 ![Upload into media library](./media/manual-sitemap-1.png)
 
 2. Select your custom sitemap XML from your computer’s file browser window.  In the subsequent upload dialog make sure that the **Publish media items after upload** option is selected and click **Upload now**. 
