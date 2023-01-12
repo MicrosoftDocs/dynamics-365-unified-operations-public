@@ -40,7 +40,12 @@ Dynamics 365 Commerce supports either automatic generation of site maps or manua
 4. Click the **Save and publish** button in the command bar.
 
 > [!NOTE]
-> Once automated site maps are enabled, it will take some time for the initial site map to be written.  This can be monitored in the **[Your site] > Site settings > General > Site map additional data** where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (example: new page or URL published), will trigger an update to the site map file. Once the sitemap is generated, the URL(s)s to the file(s) can be found by navigating to **[Your site] > Site settings > General > Site map URLs**
+> Once automated site maps are enabled, it will take some time (depending on the size of your site) for the initial automated site map creation job to complete.  This can be monitored in the **[Your site] > Site settings > General > Site map additional data** where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (example: new page or URL published), will automatically update to the site map file. After the sitemap is generated, the URL(s) to the site map file(s) can be found by navigating to **[Your site] > Site settings > General > Site map URLs**
+
+### Option 2: Manually manage site maps
+
+While the automated solution works for many scenarios, there are times when manually managing a site map is preffered in order to have granular control over which pages are included or excluded.  This can be achieved by following the instructions below:
+
 
 
 ## Page metadata
