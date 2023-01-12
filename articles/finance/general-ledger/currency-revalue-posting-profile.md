@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.0
 # Currency revaluation posting profiles
 
 The currency revaluation posting profile allows you to post currency revaluation adjustment to different accounts per module (General ledger, Accounts payable, Accounts 
-receivable and Bank). It provides the ability to post to a more granular level for each module where you can define a currency revaluation posting account per currency code and the lowest level of ledger account, vendor, customer or bank. The differentiation could be for unrealized gain or loss for all modules. Realized gain or loss is available only for accounts payable and accounts receivable.  
+receivable and Bank). It provides the ability to post to a more granular level for each module where you can define a currency revaluation posting account per currency code and the lowest level of ledger account, vendor, customer or bank. The differentiation could be for unrealized gain or loss for all modules. The realized gain or loss is only available for accounts payable and accounts receivable.  
 
 ## Create a currency posting profile
 
