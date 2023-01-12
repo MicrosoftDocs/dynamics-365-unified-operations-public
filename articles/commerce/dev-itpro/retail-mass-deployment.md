@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Application update 3
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Once Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (seen in point of sale as version 9.27). This is due to the migration to .NET Core.
+> After Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (shown in point of sale as version 9.27). The migration to .NET Core is the reason for this requirement.
 
 This article is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This article will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available. 
 
