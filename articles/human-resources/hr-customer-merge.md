@@ -153,12 +153,12 @@ Follow these steps to copy Human Resources custom field metadata that's created 
 
 ## Personalizations
 
-By personalizing the user interface in finance and operations apps, you can empower employees of an organization to work more efficiently. To learn more about personalization, see [Personalize finance and operations apps(./fin-ops/get-started/personalize-user-experience.md).
+By personalizing the user interface in finance and operations apps, you can empower employees of an organization to work more efficiently. To learn more about personalization, see [Personalize finance and operations apps](/fin-ops/get-started/personalize-user-experience).
 
 To move the personalizations:
 
-o	From Source environment, export personalization from the page that has been modified.
-o	Copy the personalization file (from step 1) to the target environment.
-o	In the target environment, import the file from step 2.
+1. From Source environment, export personalization from the page that has been modified.
+2. Copy the personalization file (from step 1) to the target environment.
+3. In the target environment, import the file from step 2.
 
 Optional: Move data from the application tables if the data should migrate (HcmWorker, Customer, etc…).
