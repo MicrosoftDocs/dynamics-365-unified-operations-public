@@ -45,6 +45,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -Device | The device ID, as shown on the **Devices** page in Headquarters. |
 | -EnvironmentId | The environment ID. |
 | -HardwareStationAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
+| --InPlaceUpgradeFromModernPOS | Used to upgrade from Modern POS to Store Commerce. Unless other parameters are used, the default assumption is to capture the Modern POS device token and then uninstall Modern POS. |
 | Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and does not have a leading dash character. |
 | -InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required. |
 | -Port | The port that should be associated with and used by the Retail Server virtual directory. If no port is set, the default port, 443, will be used. |
@@ -56,12 +57,14 @@ The following table shows the delimiters that can be used in the command line ex
 | -RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value will be used during device activation. |
 | -SkipAadCredentialsCheck| A switch that indicates whether Azure AD credential prerequisite checks should be skipped. The default value is **false**. |
 | -SkipCertCheck | A switch that indicates whether certificate prerequisite checks should be skipped. The default value is **false**. |
+| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations performed prior to performing the device token capture from Modern POS. This flag should not be used in Production, only during test. |
 | -SkipIisCheck | A switch that indicates whether Internet Information Services (IIS) prerequisite checks should be skipped. The default value is **false**. |
 | -SkipNetFrameworkCheck | A switch that indicates whether .NET Framework prerequisite checks should be skipped. The default value is **false**. |
 | -SkipScaleUnitHealthcheck | A switch that indicates whether the health check on installed components should be skipped. The default value is **false**. |
 | -SkipSChannelCheck | A switch that indicates whether secure channel prerequisite checks should be skipped. The default value is **false**. |
 | -SkipSqlFullTextCheck | A switch that indicates whether validation of the SQL Server prerequisite that requires Full Text Search should be skipped. The default value is **false**. |
 | -SkipSqlServerCheck | A switch that indicates whether SQL Server prerequisite checks should be skipped. The default value is **false**. |
+| --SkipUninstallModernPOSAfterUpgrade | A switch to skip the uninstallation of Modern POS after performing the upgrade to Store Commerce and the device token capture from Modern POS. |
 | -SqlServerName | The SQL Server name. If the name isn't specified, the installer will try to find the default instance. |
 | -SslcertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the certificate location that should be used to encrypt HTTP traffic to the scale unit. For example, `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-SslCertThumbprint** parameter. |
 | -SslCertThumbprint | The thumbprint of the certificate that should be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-SslCertFullPath** parameter. |
@@ -71,6 +74,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -TransactionServiceAzureAuthority | The Transaction Service Azure AD authority. |
 | -TransactionServiceAzureResource | The Transaction Service Azure AD resource. |
 | -TrustSqlServerCertificate | A switch that indicates whether the Server certificate should be trusted while a connection to SQL Server is being established. To help avoid security risks, production deployments should never supply a value of **true** here. The default value is **false**. |
+| --UseCommonApplicationData | A switch to alter the location of the device token. Instead of being in the user context, the token will be stored in a shared location so that all Windows users can access the same token, allowing for use of Store Commerce regardless of the active user. Users must still be in the **RetailChannelUsers** group. |
 | -Verbosity | The level of logging that is requested during installation. Typically, this value should not be used. |
 | -WindowsPhoneAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
 
@@ -138,8 +142,15 @@ CommerceModernPOS.exe install -Register "Houston-3" -Device "Houston-3" -RetailS
 The following command specifies the parameters that should be used to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used.
 
 ```Console
-CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml"
+CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml" 
 ```
+
+The following command specifies the parameters that should be used to upgrade from Modern POS to Store Commerce (with an offline database in use). This will capture the device token used by Modern POS (this removes the need for a manual device activation process) and then uninstall Modern POS. The SQL Server is specified together with the configuration file that should be used.
+
+```Console
+CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" --InPlaceUpgradeFromModernPOS
+```
+
 
 You can mix and match these concepts to achieve the installation results that you want.
 
