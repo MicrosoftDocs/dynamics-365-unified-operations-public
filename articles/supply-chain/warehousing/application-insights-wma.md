@@ -23,12 +23,12 @@ Dynamics 365 Supply Chain Management emits telemetry data for various Warehouse 
 Before you can collect and analyze Warehouse Management telemetry data, the following prerequisites must be in place for your system:
 
 - **Supply Chain Management version** – Telemetry with Application Insights requires Supply Chain Management version 10.0.29 or higher. Additional telemetry features require later versions of Supply Chain Management. See the various tables in this article for details on which features require which versions of Supply Chain Management.
-- **Warehouse Management mobile app version** – Telemetry with Application Insights requires Warehouse Management mobile app version XXXX or higher. <!-- KFM: Get version number -->
+- **Warehouse Management mobile app version** – Telemetry with Application Insights requires Warehouse Management mobile app version 2.0.28 or higher. Additional telemetry features require later versions of the app. See the various tables in this article for details on which features require which versions of Supply Chain Management and the Warehouse Management mobile app.
 - **Application Insights** – You must have an Application Insights resource in Azure, and you must configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
 
 ## Available telemetry for Supply Chain Management tenants
 
-In Application Insights, telemetry from Supply Chain Management tenants is logged as custom events. The following table lists the events that are currently available.
+In Application Insights, telemetry from Supply Chain Management tenants is logged as custom events. The following table lists the events that are currently available and also shows the minimum version of Supply Chain Management required to generate each of them.
 
 | Event ID | Area | Name | Supply Chain Management version |
 |---|---|---|---|
@@ -59,7 +59,7 @@ In Application Insights, telemetry from Supply Chain Management tenants is logge
 | WHS000026 | Replenishment | Warehouse.ImmediateReplenishment | 10.0.32 |
 | WHS000027 | Release to warehouse | Warehouse.WarehouseRelease.CreateShipments | 10.0.32 |
 
-The following table lists the telemetry data that is logged as custom dimensions (not all of this data is logged for all events).
+The following table lists the telemetry data that is logged as custom dimensions (not all of this data is logged for all events) and also shows the minimum version of Supply Chain Management required to log each of them.
 
 | Name | Description | Supply Chain Management version |
 |---|---|---|
@@ -115,30 +115,30 @@ The following table lists the telemetry data that is logged as custom dimensions
 
 ## Available telemetry for the Warehouse Management mobile app
 
-In Application Insights, telemetry from the Warehouse Management mobile app is logged as custom events on each server call. The following table lists the events that are currently available.
+In Application Insights, telemetry from the Warehouse Management mobile app is logged as custom events on each server call. The following table lists the events that are currently available and also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app required to generate each of them.
 
-| Event ID | Area | Name | Supply Chain Management version |
+| Event ID | Area | Name | Supply Chain Management version | Mobile app version |
+|---|---|---|---|---|
+| WHS000006 | Mobile application frontend | Warehouse.MobileApp.ClientRoundTrip | 10.0.29 | 2.0.28 |
+
+The following table lists the telemetry data that is logged as custom dimensions on each event and also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app required to generate each of them.
+
+| Name | Description | Supply Chain Management version | Mobile app version |
 |---|---|---|---|
-| WHS000006 | Mobile application frontend | Warehouse.MobileApp.ClientRoundTrip | 10.0.29 |
-
-The following table lists the telemetry data that is logged as custom dimensions on each event.
-
-| Name | Description | Supply Chain Management version |
-|---|---|---|
-| `activityId` | GUID of the server request activity ID. | 10.0.29 |
-| `activityGraph` | A constant that provides information about the place of the call in the activity hierarchy. Will always log the value "Warehouse.MobileApp.Interaction". | 10.0.29 |
-| `backendProcessingTime` | Information about the processing time of the request on the server. | 10.0.29 |
-| `batteryLevel` | Information about the device's battery level. | 10.0.29 |
-| `batterySession` | Information about the battery session of the device. If the device is charging, the telemetry logs it as such. Otherwise, a globally unique identifier (GUID) is logged that represents an on-battery session. Every time that the device charges, the GUID for the on-battery session is changed. | 10.0.29 |
-| `batteryState` | Information about the charging status of the device. For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). | 10.0.29 |
-| `deviceId` | GUID of the device that performs the call. | 10.0.29 |
-| `eventid` | A constant that identifies the telemetry that is emitted by the Warehouse Management mobile app. This information helps you distinguish mobile app data from other warehousing telemetry events that are emitted from Supply Chain Management. | 10.0.29 |
-| `isEnergySaverTurnedOn` | Information about the energy saver status of the device. | 10.0.29 |
-| `powerSource` | Information about the power source of the device. For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). | 10.0.29 |
-| `renderingDurationInMilliseconds` | Information about the time that the Warehouse Management mobile app takes to render page controls after it calls the server. | 10.0.29 |
-| `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. | 10.0.29 |
-| `serverAadTenantId` | The Azure Active Directory (Azure AD) tenant ID of the connected Supply Chain Management environment. | 10.0.29 |
-| `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.29 |
+| `activityId` | GUID of the server request activity ID. | 10.0.29 | 2.0.35 |
+| `activityGraph` | A constant that provides information about the place of the call in the activity hierarchy. Will always log the value "Warehouse.MobileApp.Interaction". | 10.0.29 | 2.0.35 |
+| `backendProcessingTime` | Information about the processing time of the request on the server. | 10.0.29 | 2.0.28 |
+| `batteryLevel` | Information about the device's battery level. | 10.0.29 | 2.0.28 |
+| `batterySession` | Information about the battery session of the device. If the device is charging, the telemetry logs it as such. Otherwise, a globally unique identifier (GUID) is logged that represents an on-battery session. Every time that the device charges, the GUID for the on-battery session is changed. | 10.0.29 | 2.0.28 |
+| `batteryState` | Information about the charging status of the device. For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). | 10.0.29 | 2.0.28 |
+| `deviceId` | GUID of the device that performs the call. | 10.0.29 | 2.0.28 |
+| `eventid` | A constant that identifies the telemetry that is emitted by the Warehouse Management mobile app. This information helps you distinguish mobile app data from other warehousing telemetry events that are emitted from Supply Chain Management. | 10.0.29 | 2.0.33 |
+| `isEnergySaverTurnedOn` | Information about the energy saver status of the device. | 10.0.29 | 2.0.28 |
+| `powerSource` | Information about the power source of the device. For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). | 10.0.29 | 2.0.28 |
+| `renderingDurationInMilliseconds` | Information about the time that the Warehouse Management mobile app takes to render page controls after it calls the server. | 10.0.29 | 2.0.28 |
+| `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. | 10.0.29 | 2.0.28 |
+| `serverAadTenantId` | The Azure Active Directory (Azure AD) tenant ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
+| `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
 
 ## View telemetry data in Application Insights
 
