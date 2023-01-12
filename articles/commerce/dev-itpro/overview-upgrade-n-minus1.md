@@ -20,7 +20,7 @@ ms.custom: 44351,  ""intro-internal
 [!include [banner](../../includes/banner.md)]
 
 > [!WARNING]
-> Support for Dynamics AX 2012 R3 is ending. While the upgrade and migration is still supported, make note of the dates relevant to this end of support. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
+> Support for Microsoft Dynamics AX 2012 R3 is ending. Although upgrade and migration are still supported, make a note of the dates that are relevant to this end of support. For more information, see [End of mainstream support for Microsoft Dynamics AX 2012 R3](../../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md).
 
 Upgrade and N-1 support have been enabled in the July 2017 release of Microsoft Dynamics 365 Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud.
 
@@ -34,7 +34,7 @@ The following features let customers upgrade in a seamless manner:
 
 The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 Retail](../../fin-ops-core/dev-itpro/migration-upgrade/upgrade-overview-2012.md).
 
-Planned downtime is required. Upgrade analysis is done first. The upgrade analysis runs against the Microsoft Dynamics AX 2012 database and is based on the Microsoft Dynamics Lifecycle Services (LCS) Diagnostic service. This step identifies tasks that can help make upgrade faster and less expensive. It also identifies the required SQL configuration, data headquarters cleanup, and deprecated features.
+Planned downtime is required. Upgrade analysis is done first. The upgrade analysis runs against the Microsoft Dynamics AX 2012 database and is based on the Microsoft Dynamics Lifecycle Services Diagnostic service. This step identifies tasks that can help make upgrade faster and less expensive. It also identifies the required SQL configuration, data headquarters cleanup, and deprecated features.
   
 The actual data upgrade process then occurs. The AX 2012 database is moved to Microsoft Azure SQL Database, and then the data upgrade package is run as usual, through the runbook process. Upgrade validation is then done. A validation tool is run against the upgraded environment before it's used. This tool does an automated smoke test to verify that the service is running and accessible, row counts match, financials and inventory reconcile, and so on.
 
