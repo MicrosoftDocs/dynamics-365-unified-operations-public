@@ -19,7 +19,7 @@ ms.custom: bap-template
 The message processor is a framework for processing messages representing events. It has the following properties:
 
 - Processes messages in the correct order (dependent messages are processed in sequence)
-- Scalable (independent messages can processed in parallel)
+- Scalable (independent messages can be processed in parallel)
 - Uses system resources needed
 - Avoids exhaustion of system resources if a spike in messages occurs.
 - Reliable
@@ -46,19 +46,19 @@ You can view the messages that have been processed by the message processor by g
 
 ### Message processor messages grid columns and filters
 
-You can use the fields at the top of the **Message processor messages** page to help find any particular messages you are looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
+You can use the fields at the top of the **Message processor messages** page to help find any particular messages you're looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
 
 - **Message type** – Specifies the type of message.
 - **Message queue** – Specifies the name of the queue in which the message is to be processed. The following queues are provided:
   - *Manufacturing Execution 3rd Party* – This queue holds messages created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is similar to the **Message processor messages** page, but focuses on that feature only. See also [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
   - *Production* – This queue holds messages created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is similar to the **Message processor messages** page, but focuses on that feature only. See also [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
-  - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they will also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
-- **Message state** – Specifies the state of the message. The following states exists:
+  - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
+- **Message state** – Specifies the state of the message. The following states exist:
   - *Queued* – The message is ready to be processed by the message processor.
   - *Processed* – The message was successfully processed by the message processor.
   - *Canceled* – The message was canceled by a user.
   - *Failed* – The message failed to be processed.
-- **Message content** – This filter does a full-text search of message content. (Message content is not shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. For example, this means if you search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
+- **Message content** – This filter does a full-text search of message content. (Message content isn't shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. For example, this means if you search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
 
 ### View the message log, message content, and details
 
@@ -68,10 +68,10 @@ The **Message content** depends on the **Message type** and will therefore have 
 
 The toolbar on the **Log** tab includes the following buttons:
 
-- **Log** – Select this button to show the processing results. This is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
+- **Log** – Select this button to show the processing results. This function is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
 - **Bundle** – Multiple message processing operations can run as part of the same batch process. Select this button to view this detailed data. For example, you can see whether dependencies exist that require the system to process certain messages in a specific sequence.
 
-### Manually process,cancel, or requeue a message
+### Manually process, cancel, or requeue a message
 
 If needed, you can manually process or cancel a message, depending on its current state. To do so, select the message in the grid and then select **Process** or **Cancel** on the Action Pane.
 
@@ -101,7 +101,7 @@ You can configure the number of processor tasks that should be dedicated to each
 
 In addition to filtering on the **Message state** value *Failed* (or, possibly, *Canceled*) to inquire for failed messages, you can set up [Business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you to failed processing results. To do so, activate the business event named *Message processor message processed*  on the **Business events catalog** page (**System administration \> Setup \> Business events \> Business events catalog**).
 
-As part of the activation process, you will be guided to specify whether the event is specific to one or all legal entities and provide an **Endpoint name**, which must be defined first.
+As part of the activation process, you'll be guided to specify whether the event is specific to one or all legal entities and provide an **Endpoint name**, which must be defined first.
 
 >[!NOTE]
 > If **When a Business Event occurs** is set to *Microsoft Power Automate* (rather than *HTTPS*, for example), the **Endpoint name** will automatically be created in Supply Chain Management based on the *Microsoft Power Automate* setup.
@@ -237,7 +237,7 @@ In this example, using **When a Business Event occurs** with *Microsoft Power Au
 
 The message processor has one scheduler. The class `SysMessageKeyDateTimeSequenceProcessorScheduler` schedules messages with dependencies based on a key, date, and time to be processed in the correct order. Messages to be processed are stored in the tables `SysMessageProcessorTaskBundle` and `SysMessageProcessorTaskBundleMessage`. Dependent messages must be in the same bundle.
 
-The `SysMessageKeyDateTimeSequenceProcessorScheduler` is used by the [third-party manufacturing execution system (MES) integration](../production-control/mes-integration.md) feature to secure messages related to a production order, and are processed in the order they are received or created. The dependencies are defined by a key (production order number) and the time.
+The `SysMessageKeyDateTimeSequenceProcessorScheduler` is used by the [third-party manufacturing execution system (MES) integration](../production-control/mes-integration.md) feature to secure messages related to a production order, and are processed in the order they're received or created. The dependencies are defined by a key (production order number) and the time.
 
 For example, suppose the system receives or creates the following messages:
 
@@ -262,11 +262,11 @@ Because a bottleneck can occur when picking up records to process for multiple t
 - Bundle 2 - Production order 2 – Start message
 - Bundle 2 - Production order 2 – Report as finished message
 
-For scalability, you can configure the number of tasks that should process the bundles when you are developing a new queue (see also [Implement a new queue](#custom-queue)). If the configuration uses two message processor tasks, then the two bundles can be processed in parallel.
+For scalability, you can configure the number of tasks that should process the bundles when you're developing a new queue (see also [Implement a new queue](#custom-queue)). If the configuration uses two message processor tasks, then the two bundles can be processed in parallel.
 
 ## Implementation examples
 
-This section provides two examples of how to make use the message processor, including how to implement a new queue and message type..
+This section provides examples of how to develop new message queues and message types for use with the message processor.
 
 ### <a name="custom-queue"></a>Implement a new queue
 
