@@ -49,9 +49,33 @@ The automated solution in option 1 works for many scenarios, but there are cases
 1. In **site builder**, navigate to your site’s **Media Library** and select the **Upload media items** option from the action bar’s **Upload** dropdown button.
 ![Upload into media library](./media/manual-sitemap-1.png)
 
+2. Select your custom sitemap XML from your computer’s file browser window.  In the subsequent upload dialog make sure that the **Publish media items after upload** option is selected and click **Upload now**. 
+![Upload into media library](./media/manual-sitemap-2.png)
 
+3. After the sitemap is uploaded and published select it in the media library, ensure that the property panel control is visible in site builder by clicking the info (**“i”**) icon next to the **search** input control.  Right click + copy the **Public URL** property for the sitemap file. 
+![Upload into media library](./media/manual-sitemap-3.png) 
 
+4. Open your site's Robots.txt file in any text editor and paste the Commerce CMS hosted sitemap URL into the **sitemap** key:value pair, and save.  It should look similar to the following example:
 
+```txt
+User-agent: *
+Disallow: /EditService.asmx/
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /SyndicationService.asmx/
+Disallow: /EditConfig.aspx
+Disallow: /Login.aspx
+
+Sitemap: [Paste your site map URL here]
+```
+
+5. Follow directions in the [Manage robots.txt files](manage-robots-txt-files.md) article to upload the new Robots.txt file that now points to your manually created site map.  
+
+>[!Note]
+> For further go-live information on robots.txt files read [Add or update a robots.txt file](go-live/add-robots-txt.md).
+
+> [!TIP]
+> Whenever you need to update your site map file in the future, go back to **site builder**'s media library and find your original site map file.  Select it and click the **Replace binary** button in the command bar.  Select your updated site map file from your computer to upload.  Using this method will keep the URL for your site map file static, with no need to update your robots.txt file.
 
 ## Page metadata
 
