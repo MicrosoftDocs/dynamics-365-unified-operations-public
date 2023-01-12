@@ -30,7 +30,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-
+| Self-service installers (Sealed)  | Store Commerce token capture and automated uninstallation of Modern POS. | Using new installer parameters, the Store Commerce installer can capture the device token in use by Modern POS and then uninstall Modern POS. This allows the use of Store Commerce without requiring Azure Active Directory credentials during device activation. | On by default |
+| Self-service installers (Sealed)  | .NET 6 is now a prerequisite. | .NET 6 is now a required installation for all sealed installers. Store Commerce has gained a variety of performance improvements through the uptake of this. | On by default |
 
 
 ## Additional resources
