@@ -22,9 +22,9 @@ Dynamics 365 Supply Chain Management emits telemetry data for various Warehouse 
 
 Before you can collect and analyze Warehouse Management telemetry data, the following prerequisites must be in place for your system:
 
-- **Application Insights** – You must have an Application Insights resource in Azure, and you must configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
 - **Supply Chain Management version** – Telemetry with Application Insights requires Supply Chain Management version 10.0.29 or higher. Additional telemetry features require later versions of Supply Chain Management. See the various tables in this article for details on which features require which versions of Supply Chain Management.
 - **Warehouse Management mobile app version** – Telemetry with Application Insights requires Warehouse Management mobile app version XXXX or higher. <!-- KFM: Get version number -->
+- **Application Insights** – You must have an Application Insights resource in Azure, and you must configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
 
 ## Available telemetry for Supply Chain Management tenants
 
