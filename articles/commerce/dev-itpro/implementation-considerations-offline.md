@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-08-31
 
 [!include[banner](../includes/banner.md)]
 
-This article is intended for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce applications. This article describes features, functionality, and implementation tips related to the usage of offline functionality.
+This article is intended for people who implement offline functionality that's related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce application. This article describes features, functionality, and implementation tips that are related to the use of offline functionality.
 
 Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS (with or without an offline database) and other in-store components. Commerce Data Exchange (CDX) is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
 
@@ -76,6 +76,7 @@ When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS
 - Test discounts.
 - Test unit of measure changes.
 - Test payment functionality. All the following payment types should work and be available while you're offline:
+
     - Cash
     - Currency
     - Check
@@ -83,6 +84,7 @@ When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS
     - Card
     - Customer account
     - Gift card
+
 - Test **Show journal**.
 - Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to check out.
 - Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
@@ -90,7 +92,7 @@ When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS
 
 ## Troubleshooting
 
-For more information regarding troubleshooting, see [Commerce offline implementation troubleshooting](implementation-offline-troubleshooting.md).
+For more information about troubleshooting, see [Commerce offline implementation troubleshooting](implementation-offline-troubleshooting.md).
 
 ## Additional resources
 
