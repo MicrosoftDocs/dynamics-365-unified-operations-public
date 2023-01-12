@@ -27,7 +27,7 @@ If you're using a Tier-2 sandbox or production environment that has application 
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has version 8.1.2.x or later.
-2. You can self-deploy up to 2 Commerce Scale Units per environment. If you require more than 2 Commerce Scale Units per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of Commerce Scale Units, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 Commerce Scale Units per environment, you do not need to create a support request. 
+2. You can self-deploy up to 2 Commerce Scale Units per environment. If you require more than 2 Commerce Scale Units per environment, in Microsoft Dynamics Lifecycle Services, create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of Commerce Scale Units, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 Commerce Scale Units per environment, you do not need to create a support request. 
 3. You must have Project Owner permissions in Lifecycle Services before you can initialize Commerce Scale Unit.
 4. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
@@ -57,20 +57,20 @@ Commerce Scale Unit is available for deployment in the following regions.
 | AMERICAS        | Canada East         | Limited capacity    |   No comments.                        |
 | AMERICAS        | West Central US     | Limited capacity    |   No comments.                        |
 | APAC            | Australia East      | Generally available |   No comments.                        |
-| APAC            | Southeast Asia      | Capacity restricted | No deployments allowed.               |
+| APAC            | Southeast Asia      | Capacity restricted | No deployments are allowed.               |
 | APAC            | Japan East          | Generally available |  No comments.                         |
 | APAC            | Japan West          | Generally available |   No comments.                        |
 | APAC            | Australia Southeast | Generally available |   No comments.                        |
 | APAC            | East Asia           | Limited capacity    |   No comments.                        |
-| APAC            | India South         | Capacity restricted | No deployments allowed.               |
-| APAC            | India Central       | Limited capacity    | Requires approval process.            |
+| APAC            | India South         | Capacity restricted | No deployments are allowed.               |
+| APAC            | India Central       | Limited capacity    | An approval process is required.            |
 | EMEA            | West Europe         | Generally available |  No comments.                         |
 | EMEA            | North Europe        | Generally available |  No comments.                         |
 | EMEA            | UK South            | Generally available |    No comments.                       |
 | EMEA            | UK West             | Generally available |    No comments.                       |
-| UAE             | UAE North           | Not available       | US or EU-based LCS projects must be used. UAE-based environments can deploy UAE-based CSUs. as of December 2022, UAE-based environments are not deployable in US or EU-based LCS projects. Work is in progress to resolve this issue. |
+| UAE             | UAE North           | Not available       | US-based or EU-based Lifecycle Services projects must be used. UAE-based environments can deploy UAE-based CSUs. As of December 2022, UAE-based environments can't be deployed in US-based or EU-based Lifecycle Services projects. Work is in progress to fix this issue. |
 
-Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case by case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
+Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
 
 ![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
@@ -79,7 +79,7 @@ Deployment capacity in limited capacity regions is extremely constrained. Reques
 Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It is not recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
 
 1. Make sure the headquarters environment is available and not in [Maintenance mode](../sysadmin/maintenance-mode.md).
-2. In LCS, on the environment details page, select **Environment features \> Commerce**.
+2. In Lifecycle Services, on the environment details page, select **Environment features \> Commerce**.
 3. On the Commerce setup deployment page, select **Initialize**.
 4. Select the version of the Commerce Scale Unit to initialize.
 5. Select a region to initialize Commerce Scale Unit in.
@@ -106,15 +106,15 @@ Before you begin, make sure you are familiar with [Steps to complete after a dat
 
 The scale unit channel database records (in the Channel Database form) cannot be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
 
-After database refresh, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in LCS. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if the registration is detected as missing.
+After database refresh, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in Lifecycle Services. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if the registration is detected as missing.
 
-You can issue a re-deployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in LCS by the following steps:
+You can issue a re-deployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in Lifecycle Services by the following steps:
 
-1. In LCS, on the environment details page, select **Environment features \> Retail**.
+1. In Lifecycle Services, on the environment details page, select **Environment features \> Retail**.
 2. On the setup deployment page, select the scale unit you would like to redeploy.
 3. On the scale unit's operation menu, select **Update**.
 4. On the slider, on the drop-down for **Select version**, pick the option **Specify a version**.
-5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown besides the **Current version** label.
+5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown beside the **Current version** label.
 6. Click on **Update** button.
 
 You do not need to select **Update extensions**, even if you have applied extensions previously, since the last extension package applied to the scale unit is automatically picked when updating a scale unit.
@@ -148,6 +148,7 @@ The migration process is transparent to the channels. After the scale unit initi
 4. A Commerce Data Exchange (CDX) full data sync will be performed to bring the channel data to the new scale unit.
 
 **Planning and testing for Commerce Scale Unit initialization**
+
 As a general rule, when initializing Commerce Scale Unit, you must plan for a five-hour downtime window for store operations as well as any e-commerce channel operations that use Retail Server or Cloud Point of Sale.
 
 1. Perform a database refresh from your production environment to a sandbox UAT environment. 
