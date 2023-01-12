@@ -71,7 +71,6 @@ To delete a locale and all the contents in that locale, follow these steps.
 
 1. In site builder, go to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Channels**.
-1. Under **Channel**, select the channel title from under which you want to delete a locale.
-1. From the side pane under **Locale-domain mappings**, select the ellipsis (**...**) next to the locale you want to delete.
-1. Select **Delete**.
-1. In the confirmation dialog box, ensure that the information is correct, then select **Delete locale**.
+1. Under **Channel**, select the name of the channel from which you want to delete a locale.
+1. On the channel properties pane on the right, under **Locale-domain mappings**, select the vertical ellipsis (**...**) next to the locale you want to delete, and then select **Delete**.
+1. In the confirmation dialog box, ensure that the information is correct, and then select **Delete locale**.
