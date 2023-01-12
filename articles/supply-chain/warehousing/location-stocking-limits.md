@@ -53,6 +53,8 @@ In the **Products** section of the page, you can define the following field valu
 > [!NOTE]
 > You don't have to define a **Unit** value for each location stocking limit record. The location capacity calculations will be based on the inventory unit quantities. If no unit conversion is defined for a value that is used, the location stocking limit record will be skipped, as if another **Item number** value is defined for it.
 
+For more information about how to set up stocking limits based on container types, see [Manage inbound putaway based on container types](inbound-putaway-by-container-type.md).
+
 ## Example – Purchase order receiving
 
 This example is based on a clean *USMF* demo data set, where the following values are set on the **Product variants** tab of the **Location stocking limits** page.

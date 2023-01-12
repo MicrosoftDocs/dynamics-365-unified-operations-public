@@ -92,7 +92,7 @@ You can set the **Number or orders in firming bundle** parameter in the **Perfor
 
 ### Time fences
 
-Time fences specify how far in the future the calculations and other requirements must be calculated by master planning. The larger the time fence is, the longer it will take master planning to run. Therefore, set the time fences according to your business requirements. For more information about time fences, see [Set up master planning](master-planning-setup.md).
+Time fences specify how far in the future the calculations and other requirements must be calculated by master planning. The larger the time fence is, the longer it will take master planning to run. Therefore, set the time fences according to your business requirements. For more information about time fences, see [Master plans overview](master-plans.md).
 
 ### Actions
 

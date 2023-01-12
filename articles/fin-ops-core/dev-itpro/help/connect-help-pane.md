@@ -2,7 +2,7 @@
 title: Connect a custom Help website to the Help pane
 description: This article explains how you can extend the in-product Help pane with custom Help content.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -102,8 +102,6 @@ The following scenario is valid, because **language="de"** has **parentindex="in
 <add language="de-DE" parentlanguage="de" index=""/>
 <add language="de-AT" parentlanguage="de-DE" index="indexdeat"/>
 ```
-
-For more information about languages, see [Languages, translations, and adaptations](language-locale.md#languages-translations-and-adaptations).
 
 The following sections provide sample configurations.
 

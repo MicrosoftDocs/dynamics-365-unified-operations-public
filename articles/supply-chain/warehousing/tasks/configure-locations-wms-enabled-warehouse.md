@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup   
 ms.topic: how-to
 ms.date: 12/01/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
