@@ -34,20 +34,30 @@ You can enable Customer Managed Keys (CMK) policy enforcement for Finance and Op
 
 Once enabled the CMK policy will be  will be enabled for environment specific resources (SQL DBs and Storage Account). See table below for details and exceptions across services.
 
-## How to enable CMK for Finance and Operations environments:
+To enable Customer Lockbox for your finance and operations apps environment, follow these steps:
 
-1. Login to your LCS project and select the environment details page for the environment where you wish to enable CMK.
-1. If you have not setup Power Platform Integration then first please setup that using the instructions: [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md). Please note, if you setup integration with existing power platform environment, it should not have CMK enabled on it before integration. (Support for this scenario will be enabled in future).
-1. Once you have Power Platform integration setup, in the Power Platform Environment Information on the LCS environment details page, you will see Environment Name. This is the name of your Dataverse Organization. (Please note that name of your Finance and Operations environment might be different than your power platform integration environment, you will need the later for enabling CMK).
-1. Go to Power platform admin portal and lookup your Power platform integration environment name.
+1. [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 
-> [!IMPORTANT]
->
-> Follow the instructions from Private Preview July 2022 document to enable CMK on your power platform environment.
+    > [!NOTE]
+    >
+    > If you setup integration with existing power platform environment, it should not have CMK enabled on it before integration. (Support for this scenario will be enabled in future).
 
-### CMK support in Finance and Operation Environment Add-Ins
+1. Once Power Platform integration is enabled, you will see environment name in the Power Platform Environment Information on the LCS environment details page. This is also the name of your Dataverse Organization.
 
-A number of Add-Ins may be available in LCS for each Finance and Operations environment once the Power Platform integration has been enabled. Add-Ins that have some limitations for CMK are mentioned in the following table (if an Add-In is not in this list, then it supports the CMK policies).
+    > [!NOTE]
+    >
+    > - Please note the environment name for the next steps to enable Customer managed Keys.
+    > - The name of your Finance and Operations environment might be different.
+
+1. [Enable Customer Managed Keys in the Power Platform and create an enterprise policy](/power-platform/admin/customer-managed-key). [**Review link**](
+<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441>)
+
+1. [Add your environment with above name to the enterprise policy.](/power-platform/admin/customer-managed-key#add-an-environment-to-the-enterprise-policy-to-encrypt-data). [**Review link**](
+<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441#add-an-environment-to-the-enterprise-policy-to-encrypt-data>)
+
+### Customer Managed Keys support for add-ins
+
+Microsoft Dynamics Lifecycle Services might provide several add-ins for finance and operations apps environments that are integrated with Microsoft Power Platform. Some add-ins provide only partial support, or no support, for Customer managed Keys. The following table describes the limitations that apply to different add-ins.
 
 |Add In  |Status  |
 |--------|--------|
@@ -55,7 +65,7 @@ A number of Add-Ins may be available in LCS for each Finance and Operations envi
 |Electronic Invoicing|Electronic Invoicing uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
 |||
 
-### CMK support across Finance and Operations Offers / Applications
+### Customer Managed Keys support across finance and operations apps
 
 Not all applications among Finance and Operations support CMK policies in the preview to the full extent yet. Find more details for individual applications below:
 
