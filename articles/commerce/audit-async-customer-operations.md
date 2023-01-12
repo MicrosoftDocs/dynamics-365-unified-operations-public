@@ -9,7 +9,7 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2022-09-28
 
 ---
