@@ -34,12 +34,27 @@ Microsoft Dynamics 365 Finance + Operations (on-premises) offers a variety of li
 > [!IMPORTANT]
 > On-premises environments are not supported on any public cloud infrastructure, including Azure. However, they are supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
+## Purchase a Dynamics 365 cloud subscription license
 
-## Purchase client access licenses
+It is possible thanks to Dual Use Rights mentioned in the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544) to use a Dynamics 365 cloud subscription license to deploy Finance + Operations (on-premises).
+
+For information on purchasing a subscription see [Buy and manage a subscription](./before-you-buy.md#step-three-buy-and-manage-a-subscription). Once you have acquired the subscription follow these steps to create your on-premises implementation project.
+
+### Get started with Lifecycle Services (LCS)
+
+Once you have purchased a subscription, this will be assigned to your Microsoft Online Services ID. The Microsoft Online Services ID is required to provision and register Dynamics 365 applications. The Microsoft Online Services ID is used to provision an LCS project that contains the necessary artifacts for on-premises environments. LCS is the service where on-premises environments will be provisioned, Business Process Model created/uploaded, hotfixes are made available, support cases are entered and managed, subscriptions are validated, etc.
+
+If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. When logging into [LCS](https://lcs.dynamics.com) choose to sign in with this account if you want to use this same Azure Active Directory (AAD) tenant for the on-premises environment.
+
+After you have logged into LCS, a cloud project will be automatically provisioned for you. However, you will need an on-premises project. You will need to raise a support case so an on-premises project is generated for you. The LCS project will allow you to deploy an on-premises environment. For more details on getting started with your LCS project, see [Set up on-premises projects in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md).
+
+## Purchase a Dynamics 365 Finance + Operations (on-premises) license
+
+### Purchase client access licenses
 
 To run on-premises environments, you must obtain the proper number of client access licenses (CALs) for your organization per the licensing guide. The CAL purchased for an individual user determines the functionality that the user has the rights to use. User CALs can be purchased from the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-## Purchase server licenses
+### Purchase server licenses
 
 A server license is required for every server running Finance + Operations (on-premises). After purchasing your server licenses, work with your partner to download a license file from the [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/). Keep this license file handy, as the details it contains will be used when setting up your Lifecycle Services (LCS) project.
 
@@ -57,7 +72,7 @@ Partners can download a customer's Finance + Operations (on-premises) license fi
 > [!NOTE]
 > If you cannot see registration keys in PartnerSource Business Center, you will need to ensure that your PartnerSource Business Center Profile has **Can See Registration Keys** set to **Yes**.
 
-## Get started with Lifecycle Services (LCS)
+### Get started with Lifecycle Services (LCS)
 
 To purchase Finance + Operations (on-premises) you must have a Microsoft Online Services ID. The Microsoft Online Services ID is used to provision an LCS project that contains the necessary artifacts for on-premises environments. LCS is the service where on-premises environments will be provisioned, Business Process Model created/uploaded, hotfixes are made available, support cases are entered and managed, license key serial number activation submitted, etc.
 
