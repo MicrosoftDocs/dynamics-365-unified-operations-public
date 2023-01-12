@@ -157,8 +157,8 @@ By personalizing the user interface in finance and operations apps, you can empo
 
 To move the personalizations:
 
-o	From Source environment, export personalization on the e.g form that has been modified.
-o	Copy the personalization file (from step 15) to Target environment
-o	In Target environment import the file from step 116.
+o	From Source environment, export personalization from the page that has been modified.
+o	Copy the personalization file (from step 1) to the target environment.
+o	In the target environment, import the file from step 2.
 
-Optional: Move data from the application tables if they want the data to come over (HcmWorker, Customer, etc…).
+Optional: Move data from the application tables if the data should migrate (HcmWorker, Customer, etc…).
