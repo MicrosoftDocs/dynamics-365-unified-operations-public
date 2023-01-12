@@ -21,12 +21,12 @@ ms.search.validFrom: 2021-04-30
 > [!WARNING]
 > Once Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (seen in point of sale as version 9.27). This is due to the migration to .NET Core.
 
-This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
+This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services. Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
 
 This article explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
 
 > [!NOTE]
-> The new self-service, sealed installers will not be made available in headquarters and are only downloadable through LCS.
+> The new self-service, sealed installers will not be made available in Commerce headquarters and are only downloadable through Lifecycle Services.
 
 ## Delimiters for mass deployment
 
@@ -38,9 +38,9 @@ The following table shows the delimiters that can be used in the command line ex
 | --AadTokenIssuerPrefix | The prefix for the Microsoft Azure Active Directory (Azure AD) token issuer. |
 | --AsyncClientAadClientId | The Azure AD client ID that Async Client should use during communications with headquarters. |
 | --AsyncClientAppInsightsInstrumentationKey | The Async Client AppInsights instrumentation key. |
-| --AsyncClientCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Async Client Identity certificate location that should be used to authenticate with Azure AD for communications with headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-AsyncClientCertThumbprint** parameter. |
-| --AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate that should be used to authenticate with Azure AD for communications with headquarters. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-AsyncClientCertFullPath** parameter. |
-| --CSUURL | To be used with Hardware station, this is the Commerce Scale Unit (CSU) URL to be used during pairing. |
+| --AsyncClientCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Async Client Identity certificate location that should be used to authenticate with Azure AD for communications with headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **--AsyncClientCertThumbprint** parameter. |
+| --AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate that should be used to authenticate with Azure AD for communications with headquarters. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **--AsyncClientCertFullPath** parameter. |
+| --CSUURL | The Commerce Scale Unit (CSU) URL that should be used during pairing with hardware station. |
 | --ClientAppInsightsInstrumentationKey | The Client AppInsights instrumentation key. |
 | --CloudPosAppInsightsInstrumentationKey | The Cloud POS AppInsights instrumentation key. |
 | --Config | The configuration file that should be used during installation. An example of a file name is **Contoso.CommerceScaleUnit.xml**. |
@@ -48,14 +48,14 @@ The following table shows the delimiters that can be used in the command line ex
 | --Device | The device ID, as shown on the **Devices** page in headquarters. |
 | --EnvironmentId | The environment ID. |
 | --HardwareStationAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
-| Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and does not have leading dash characters. |
-| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required. |
+| Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and doesn't have leading dash characters. |
+| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **--SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. If Azure AD authentication is used, POS offline won't work, because online connectivity is always required. |
 | --Port | The port that should be associated with and used by the Retail Server virtual directory. If no port is set, the default port, 443, will be used. |
 | --Register | The register ID, as shown on the **Registers** page in headquarters. |
 | --RetailServerAadClientId | The Azure AD client ID that Retail Server should use during communications with headquarters. |
 | --RetailServerAadResourceId | The Retail Server Azure AD app resource ID that should be used during device activation. This parameter isn't required for on-premises deployments. |
-| --RetailServerCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Retail Server Identity certificate that should be used to authenticate with Azure AD for communications with headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-RetailServerCertThumbprint** parameter. |
-| --RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate that should be used to authenticate with Azure AD for communications with headquarters. This thumbprint will be used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Don't use this parameter together with the **-RetailServerCertFullPath** parameter. |
+| --RetailServerCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Retail Server Identity certificate that should be used to authenticate with Azure AD for communications with headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **--RetailServerCertThumbprint** parameter. |
+| --RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate that should be used to authenticate with Azure AD for communications with headquarters. This thumbprint will be used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Don't use this parameter together with the **--RetailServerCertFullPath** parameter. |
 | --RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value will be used during device activation. |
 | --SkipAadCredentialsCheck| A switch that indicates whether Azure AD credential prerequisite checks should be skipped. The default value is **false**. |
 | --SkipCertCheck | A switch that indicates whether certificate prerequisite checks should be skipped. The default value is **false**. |
@@ -66,8 +66,8 @@ The following table shows the delimiters that can be used in the command line ex
 | --SkipSqlFullTextCheck | A switch that indicates whether validation of the SQL Server prerequisite that requires Full Text Search should be skipped. The default value is **false**. |
 | --SkipSqlServerCheck | A switch that indicates whether SQL Server prerequisite checks should be skipped. The default value is **false**. |
 | --SqlServerName | The SQL Server name. If the name isn't specified, the installer will try to find the default instance. |
-| --SslcertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the certificate location that should be used to encrypt HTTP traffic to the scale unit. For example, `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-SslCertThumbprint** parameter. |
-| --SslCertThumbprint | The thumbprint of the certificate that should be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-SslCertFullPath** parameter. |
+| --SslcertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the certificate location that should be used to encrypt HTTP traffic to the scale unit. For example, `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **--SslCertThumbprint** parameter. |
+| --SslCertThumbprint | The thumbprint of the certificate that should be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **--SslCertFullPath** parameter. |
 | --StoreSystemAosUrl | The headquarters (AOS) URL. |
 | --StoreSystemChannelDatabaseId | The channel database ID (name). |
 | --TenantId | The Azure AD tenant ID. |
@@ -110,7 +110,7 @@ Migration from the old self-service framework component installers to the new fr
 
 ### Before you begin
 
-It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. Also, an additional requirement beyond that of legacy Modern POS is that the SQL instance used must have both **Windows authentication** and **SQL Server authentication** modes. This can be managed and changed in SQL Server Management Studio, in the **Properties** window under the **Security** subheading.
+It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. As an additional requirement, the SQL instance that's used must have both **Windows authentication** and **SQL Server authentication** modes. You can manage and change this configuration under the **Security** subheading in the **Properties** window in SQL Server Management Studio.
 
 > [!NOTE]
 > On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it is possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
@@ -138,7 +138,7 @@ The following command specifies all the parameters that should be used during de
 CommerceModernPOS.exe install --Register "Houston-3" --Device "Houston-3" --RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
 ```
 
-The following command specifies the parameters that should be used to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used. Unless a trusted SQL certificate is in use, the `--TrustSqlServerCertificate` parameter is required. It's not recommended to use skips when installing in production.
+The following command specifies the parameters that should be used to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required. We don't recommend that you skip checks when you install in production.
 
 ```Console
 CommerceModernPOS.exe install --InstallOffline --SQLServerName "SQLExpress" --Config "StoreCommerce.Houston-3.xml" --SkipVersioncheck --SkipURLCheck --SkipSQLFullTextCheck
@@ -176,7 +176,7 @@ HardwareStation.exe install --Port 443 --CSUURL "https://MyDynamics365CommerceUR
 The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation. 
 
 > [!NOTE]
-> Skipping checks is not recommended without thorough testing ahead of time, or in development situations. It is not recommended to use skips when installing in production.
+> We don't recommend that you skip checks unless you do thorough testing ahead of time, or except in development situations. We don't recommend that you skip checks when you install in production.
 
 ```Console
 HardwareStation.exe install --SkipFirewallUpdate --SkipOPOSCheck --SkipVersionCheck --SkipURLCheck --Config "HardwareStation.Houston.xml"
@@ -204,7 +204,7 @@ This section shows examples of commands that are used to install CSU (self-hoste
 
 The following command silently installs (or updates) CSU (self-hosted). It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present. Unless a trusted SQL certificate is in use, the `--TrustSqlServerCertificate` parameter is required.
+Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
 CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --Config "Contoso.StoreSystemSetup.xml"
@@ -213,7 +213,7 @@ CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateTh
 > [!NOTE]
 > A configuration file is still required for CSU (self-hosted).
 
-The following command is a more thorough command that runs the executable file installer with some alternative parameters. Unless a trusted SQL certificate is in use, the `--TrustSqlServerCertificate` parameter is required.
+The following command is a more thorough command that runs the executable file installer with some alternative parameters. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
 CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --Verbosity 0 --Config "Contoso.StoreSystemSetup.xml"
@@ -222,8 +222,8 @@ CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMach
 The following command specifies parameters required to skip the prerequisite checks during a standard installation. 
 
 > [!NOTE]
-> - Skipping checks is not recommended without thorough testing ahead of time, or in development situations. It is not recommended to use skips when installing in production.
-> - Unless a trusted SQL certificate is in use, the `--TrustSqlServerCertificate` parameter is required.
+> - We don't recommend that you skip checks unless you do thorough testing ahead of time, or except in development situations. We don't recommend that you skip checks when you install in production.
+> - Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
 CommerceScaleUnit.exe install --skipscaleunithealthcheck --skipcertcheck --skipaadcredentialscheck --skipschannelcheck --skipiischeck --skipnetcorebundlecheck --skipsqlservercheck --skipnetframeworkcheck --skipversioncheck --skipurlcheck --Config "Contoso.StoreSystemSetup.xml" --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com"
