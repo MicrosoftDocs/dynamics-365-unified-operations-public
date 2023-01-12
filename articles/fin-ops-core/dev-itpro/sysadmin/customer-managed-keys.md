@@ -1,16 +1,16 @@
 ---
-title: Use Customer Managed Keys to manage secure access to customer data
-description: This article explains how to set up Customer managed KeysLockbox and how access requests are initiated, tracked, and stored for later reviews and audits.
+title: Use Customer Managed keys to control encryption keys for data at rest
+description: This article explains how to set up Customer Managed Keys for Finance and Operations environments to to control encryption keys for data at rest.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 12/02/2022
+ms.date: 02/01/2023
 ms.custom: bap-template
 ---
 
-# Manage your encryption keys for data at rest
+# Use Customer Managed keys to control encryption keys for data at rest
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -19,7 +19,7 @@ Microsoft services adhere data privacy and compliance requirements when securing
 
 By default, data is encrypted with Microsoft managed keys. For additional control over encryption keys, you can manage your own keys. Customer Managed Keys (CMK) must be stored in Azure Key vault.
 
-This article explains how to set up Customer Managed Keys for Finance and Operations environments.
+This article explains how to set up Customer Managed Keys for Finance and Operations environments to to control encryption keys for data at rest.
 
 > [!IMPORTANT]
 >
@@ -28,7 +28,7 @@ This article explains how to set up Customer Managed Keys for Finance and Operat
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that Microsoft customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Summary
+## Enable Customer Managed Keys
 
 You can enable Customer Managed Keys (CMK) policy enforcement for Finance and Operations environments where Power Platform Integration is enabled ([Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md)). Finance & Operations environments without Power Platform integration will continue to use the Microsoft Managed key to encrypt its data.
 
@@ -55,23 +55,23 @@ To enable Customer Lockbox for your finance and operations apps environment, fol
 1. [Add your environment with above name to the enterprise policy.](/power-platform/admin/customer-managed-key#add-an-environment-to-the-enterprise-policy-to-encrypt-data). [**Review link**](
 <https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441#add-an-environment-to-the-enterprise-policy-to-encrypt-data>)
 
-### Customer Managed Keys support for add-ins
+## Customer Managed Keys support for add-ins
 
 Microsoft Dynamics Lifecycle Services might provide several add-ins for finance and operations apps environments that are integrated with Microsoft Power Platform. Some add-ins provide only partial support, or no support, for Customer managed Keys. The following table describes the limitations that apply to different add-ins.
 
 |Add In  |Status  |
 |--------|--------|
-|Tax Calculation|Tax Calculation uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
-|Electronic Invoicing|Electronic Invoicing uses [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) which doesn’t support CMK policy enforcement as of now, support for this will be enabled in late 2023.|
-|||
+|Tax Calculation|Deployments of the Tax Calculation add-in that use stand-alone [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) don't support Customer Managed Keys for encryption of related resources. Support for Customer Managed Keys will be enabled in late 2023 when RCS functionality is added to the finance and operations platform.|
+|Electronic Invoicing|Deployments of the Electronic Invoicing add-in that use use stand-alone [RCS](../../../finance/localizations/rcs-overview.md) don't support Customer Managed Keys for encryption of related resources. Support for Customer Managed Keys will be enabled in late 2023 when RCS functionality is added to the finance and operations platform.|
+|All other add-ins|All other add-ins support Customer Managed Key policies|
 
-### Customer Managed Keys support across finance and operations apps
+## Customer Managed Keys support across finance and operations apps
 
-Not all applications among Finance and Operations support CMK policies in the preview to the full extent yet. Find more details for individual applications below:
+Not all applications among Finance and Operations support Customer Managed Key policies in the preview. The following table describes the Customer Lockbox support status of each app.
 
-|Offer|Application Status|
+|App  |Status  |
 |-----|------------------|
-|Dynamics 365 Supply Chain Management|Finance and Operations environment provisioned under Dynamics 365 Supply Chain Management offering supports CMK policy enforcement for all environment specific resources.|
-|Dynamics 365 Human Resources|Dynamics 365 Human Resources provisioned via Finance and Operations environment will support CMK policy enforcement for all environment specific resources.<br/><br/>Dynamics 365 Human Resources Standalone offering is not CMK compliant; these customers will have to use migration tooling to migrate their environments to Finance and Operations environment and then they can use the CMK policy enforcement.|
-|Dynamics 365 Finance|Finance and Operations environment provisioned under Dynamics 365 Finance offering supports CMK policy enforcement for all environment specific resources.<br/><br/>If you use [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) to compliment your Dynamics 365 Finance environment then please note that data managed under RCS environment, currently doesn’t support CMK policy enforcement. CMK support for RCS will be enabled in late 2023.|
+|Dynamics 365 Supply Chain Management|Finance and operations environments that are provisioned under Dynamics 365 Supply Chain Management support Customer Managed Keys for encryption of all environment-specific resources at rest.|
+|Dynamics 365 Human Resources|Dynamics 365 Human Resources that's provisioned via a finance and operations environment supports Customer Managed Keys for all environment-specific resources.<br/><br/>The Human Resources stand-alone app doesn't support Customer Managed Keys. To enable us of Customer Managed Keys, you must first use migration tooling to migrate your stand-alone Human Resources environment to a finance and operations environment.|
+|Dynamics 365 Finance|Finance and Operations environment provisioned under Dynamics 365 Finance support use of Customer Managed Keys for all environment specific resources.<br/><br/>Note: If you use [RCS](../../../finance/localizations/rcs-overview.md) to compliment your Dynamics 365 Finance environment, that data that's managed under RCS environment doesn’t currently support use of Customer Managed Keys. Support for Customer Managed Keys will be enabled in late 2023 when RCS functionality is added to the finance and operations platform.|
 | Microsoft Dynamics 365 Lifecycle Services (LCS) | Any data you store in LCS (such as file assets, methodologies, task recorder data, and any other project metadata) will not be encrypted using Customer Managed Keys.<br/><br/>Customer Managed Key support for LCS metadata is expected to be announced sometime in the future.|
