@@ -2,7 +2,7 @@
 title: Manage SEO metadata
 description: This article describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/21/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,34 +28,35 @@ SEO metadata for a site can be managed by using site maps and page metadata.
 
 A site map is a machine-readable list, in XML format, of the pages on your website. It's intended to be consumed by search engines, so that they can provide better search results from your site. Site maps can be manually ingested by search engines or published in a robots.txt file.
 
-Dynamics 365 Commerce supports either automatic generation of site maps or manual curation. When the automated site map feature is enabled, site maps are automatically updated when pages are published and unpublished.
+Dynamics 365 Commerce supports both the automatic generation and manual curation of site maps. When the automated site map feature is enabled, site maps are automatically updated when pages are published and unpublished.
 
 ### Option 1: Enable automated site map generation
 
-1. Sign in to the **site builder** authoring toolset.
+To enable automated site map generation in Commerce site builder, follow these steps.
+
 1. Under **Sites**, select the name of your site (example: Adventure Works).
-1. In the navigation pane on the left, expand the **Site settings** control at the bottom.
-2. Select the **General** tab.
-3. Set the **Site maps enabled** control to **On**.
-4. Click the **Save and publish** button in the command bar.
+1. In the left navigation pane on the left, select **Site settings \> General**.
+1. Set the **Site maps enabled** option to **On**.
+1. Select **Save and publish**.
 
 > [!NOTE]
-> Once automated site maps are enabled, it will take some time (depending on the size of your site) for the initial automated site map creation job to complete.  This can be monitored in the **[Your site] > Site settings > General > Site map additional data** where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (example: new page or URL published), will automatically update to the site map file. After the sitemap is generated, the URL(s) to the site map file(s) can be found by navigating to **[Your site] > Site settings > General > Site map URLs**
+> Once automated site maps are enabled, it takes some time (depending on the size of your site) for the initial automated site map creation job to complete. This progress can be monitored in **Site settings > General > Site map additional data**, where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (for example, a new page or URL published) will automatically update the site map file. After the sitemap is generated, the URL(s) to the site map file(s) can be found at **Site settings > General > Site map URLs**
 
 ### Option 2: Manually manage site maps
 
-The automated solution in Option 1 above works for many scenarios, but there are cases where manually managing a site map is preffered to enable more granular control over which pages are included or excluded.  This can be achieved by hosting your own manually generated site map file in **site builder**'s media library as a document binary, and then pointing your site's Robots.txt file to the site map's URL.  To manage your site map manually, first make sure that the automated sitemap generation feature described in Option 1 above is disabled; then follow the instructions below to manually manage your site map and host it in **site builder**'s media library:
+The automated solution in Option 1 above works for many scenarios, but there are cases where manually managing a site map is preferred to enable more granular control over which pages are included or excluded. This can be achieved by hosting your own manually generated site map file in the site builder Media library as a document binary, and then pointing your site's Robots.txt file to the site map's URL. To manage your site map manually, first ensure that the automated sitemap generation feature described in Option 1 above is disabled, and then manually manage your site map and host it in the site builder Media library.
 
-1. In **site builder**, navigate to your site’s **Media library** and select the **Upload media items** option from the action bar’s **Upload** dropdown button.
-![Upload into media library](./media/manual-sitemap-1.png)
+To manually manage your site map and host it in the site builder Media library, follow these steps.
 
-2. Select your custom sitemap XML from your computer’s file browser window.  In the subsequent upload dialog make sure that the **Publish media items after upload** option is selected and click **Upload now**. 
-![Upload into media library](./media/manual-sitemap-2.png)
-
-3. After the sitemap is uploaded and published select it in the media library, ensure that the property panel control is visible in site builder by clicking the info (**“i”**) icon next to the **search** input control.  Right click + copy the **Public URL** property for the sitemap file. 
-![Upload into media library](./media/manual-sitemap-3.png) 
-
-4. Open your site's Robots.txt file in any text editor and paste the Commerce CMS hosted sitemap URL into the **sitemap** key:value pair, and save.  It should look similar to the following example:
+1. In the left navigation pane, select **Media library**. 
+1. Select **Upload \> Upload media items**.
+<!--    ![Upload into media library](./media/manual-sitemap-1.png)-->
+1. In the File Explorer window, browse to your custom sitemap XML file, select it, and then select **Open**.  
+1. In **Upload file** flyout menu, select the **Publish media items after upload** checkbox, and then select **Upload now**.
+<!--    ![Upload into media library](./media/manual-sitemap-2.png)-->
+1. After the sitemap is uploaded and published select it in the media library, ensure that the property panel control is visible in site builder by clicking the info (**“i”**) icon next to the **search** input control.  Right click + copy the **Public URL** property for the sitemap file. 
+    ![Upload into media library](./media/manual-sitemap-3.png) 
+1. Open your site's Robots.txt file in any text editor and paste the Commerce CMS hosted sitemap URL into the **sitemap** key:value pair, and save.  It should look similar to the following example:
 
 ```txt
 User-agent: *
