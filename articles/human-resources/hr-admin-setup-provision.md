@@ -141,7 +141,7 @@ Use the following guidance when determining which Power Apps environment to depl
 
 5. The following Power Apps environments can't be used for Human Resources. They're filtered from the selection list within LCS:
  
-    - **Default Power Apps environments** - While each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources. All tenant users can access the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations.
+    - **Default Power Apps environments** - While each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources. All tenant users can access the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations. 
    
     - **Trial environments** - These environments are created with an expiration date. Upon expiration, your environment and any Human Resources instances contained within it will be removed automatically.
    
