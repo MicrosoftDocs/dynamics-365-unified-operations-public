@@ -15,8 +15,6 @@ ms.custom: bap-template
 # Print container labels
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 Container labels provide information about a container and the related shipment data. A typical scenario that might involve this type of label is one where a worker is [creating and packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). The worker can print a container label that includes a bar code of the container ID and apply it to the physical container.
 

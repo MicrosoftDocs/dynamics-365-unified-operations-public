@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Demand-driven planning
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 The article describes how to generate planned orders for items that are set up as decoupling points.
 
