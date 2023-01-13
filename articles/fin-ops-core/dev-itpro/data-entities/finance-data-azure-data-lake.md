@@ -4,7 +4,7 @@
 title: Export to Data Lake in finance and operations apps
 description: This article explains how to choose data in a finance and operations apps environment so that the data is available in a data lake.
 author: MilindaV2
-ms.date: 10/5/2022
+ms.date: 01/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ You can select the tables and entities that should be staged in data lake.
 
     ![Selecting tables.](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
-4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of data. When the initial copy is completed, the system changes the status to **Running**. After initial copy, as data changes in Finance and Operations, the data gets updated in the lake. You can see most recent data change from Finance and Operations in the **Last processed change** column. If there are no data changes in the system after initial copy, this field will remain blank.
+4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of the data. When the initial copy is completed, the system changes the status to **Running**. After the initial copy, as data changes in finance and operations apps, the data gets updated in the lake. You can see the most recent data change in the **Last processed change** column. If there are no data changes in the system after initial copy, this field will remain blank.
 
     In the event of an error, the system shows the status as **Deactivated**.
 
@@ -89,7 +89,7 @@ The Export to Data Lake page in a finance and operations environment shows the t
 ### Export to Data Lake feature is not available in your region and/or your environment at this time
 This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature may not be available in all Azure regions where finance and operations apps are available, or this feature may not be available for your environment. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch with upcoming improvements and availability in your region.
+This feature may not be available in all Azure regions where finance and operations apps are available, or for your environment. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch with upcoming improvements and availability in your region.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
 Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
@@ -104,25 +104,25 @@ Ask your administrator to re-install the Export to Data Lake add-in. If this iss
 If you see this error for a prolonged period of time, contact Support.  
 
 ### Some fields (ex. long strings, Memo fields) are missing in the data lake
-The system does not export fields of type Memo, nVarchar(max), VarBinary, or Blob types into the data lake. If you choose a table with fields of these types, the system will ignore these fields and export others. We are working on enabling these special fields in the future. If you would like to stay in touch with the product team and learn about upcmoing features, you can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
+The system does not export fields of type Memo, nVarchar(max), VarBinary, or Blob into the data lake. If you choose a table with fields of these types, the system will ignore these fields and export others. Microsoft is working on enabling these special fields in the future. If you would like to stay in touch with the product team and learn about upcoming features, you can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
 
 ### How to locate data in the lake
-Data exported using this feature is stored in a folder structure in the storage account you [configured via Life cycle services](configure-export-data-lake.md). Exact location of data within the folder structure depends on table metadata properties as described [here](azure-data-lake-enhanced-metadata.md). In the event these metadata properties change, the location of data within the folder structure may change. You can detect such changes and find the new path using the "Initialize Business event" as explained [here](azure-data-lake-generates-biz-events.md). While consuing data files in the lake is possible, you can access data using T-SQL by configuring Azure Synapse Analytics serverless SQL pools using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). 
+Data exported using this feature is stored in a folder structure in the storage account you [configured via Life cycle services](configure-export-data-lake.md). Exact location of data within the folder structure depends on table metadata properties as described [here](azure-data-lake-enhanced-metadata.md). In the event these metadata properties change, the location of data within the folder structure may change. You can detect such changes and find the new path using the "Initialize Business event" as explained [here](azure-data-lake-generates-biz-events.md). While consuming data files in the lake is possible, you can access data using T-SQL by configuring Azure Synapse Analytics serverless SQL pools using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). 
 
 ### No data has been exported, I can't find the data file 
-If the table you have chosen has no data, the system will shor that the table is in "Running" state. However, the system will not create a CSV file in the lake (you may see other system files in the folder). When data is added in Finance and Operations, the CSV file will be created with the data. 
+If the table you have chosen has no data, the system will show that the table is in **Running** state. However, the system will not create a CSV file in the lake (you may see other system files in the folder). When data is added in Finance and Operations, the CSV file will be created with the data. 
 
 ### Some tables have been "Initialized" without user action
-When you add a table, on completion of the Initial copy, the table will remain in "Running" state and the system will update data changes in the lake. On rare occasions (ex. there was a database restore or an issue in the underlying environment), the system may re-initialize data in the lake to recover from issues. If you are copying change data into a downstream system, you may need to react to re-initialize events. You can use Business events to monitor such conditions as explained [here](azure-data-lake-generates-biz-events.md) 
+When you add a table, on completion of the initial copy, the table will remain in **Running** state and will update data changes in the lake. On rare occasions (for example, if there was a database restore or an issue in the underlying environment), the system may re-initialize data in the lake to recover from issues. If you are copying change data into a downstream system, you may need to react to re-initialize events. You can use **Business events** to monitor such conditions as explained in [Business events generated by the Export to Azure Data Lake service](azure-data-lake-generates-biz-events.md) 
 
 ### When I read data files using Synapse serverless, I notice an intermittent error "Unexpected end-of-input within record at..."
-In case of tables whose records are frequently updated or deleted in Finance and Operations, you may notice a read/ write contention on CSV files with the above error. This happens when Synapse serverless SQL service queries the same CSV file as it is being updated. In many instances, re-trying the query may resolve this issue. 
+When tables records are frequently updated or deleted in finance and operations a[[s, you may notice a read/ write contention on CSV files with the above error. This happens when Synapse serverless SQL service queries the same CSV file as it is being updated. In many instances, re-trying the query may resolve this issue. 
 
-### How can I enable "near real time" or "Enhanced metadata" feature
-In order to enable new features, you need to re-install the add-in using the process mentioned in [Configure export to Azure Data Lake](configure-export-data-lake.md). When you uninstall the add-in, existing data in the lake will remain. When you re-install the add-in, you need to add the tables using the "Export to Data lake" form. System will re-initialize the tables however the folder path will not change and your downstream consumption may not be impacted.  
+### How can I enable **near real time** or the **Enhanced metadata** feature
+In order to enable new features, you need to re-install the add-in using the process mentioned in [Configure export to Azure Data Lake](configure-export-data-lake.md). When you uninstall the add-in, existing data in the lake will remain. When you re-install the add-in, you need to add the tables using the **Export to Data lake** form. System will re-initialize the tables however the folder path will not change, and your downstream consumption may not be impacted.  
 
-### How can I rotate/ renew application secrets in the Key vault provided for Export to Data lake add-in
-We advise you to renew/ extend application secrets in periodically. You can create a new client secret and replace the secrets in the key vault. 
+### How can I rotate or renew application secrets in the Key vault provided for the **Export to data lake** add-in
+We advise you to renew or extend application secrets periodically. You can create a new client secret and replace with the secrets in the key vault. 
 
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
