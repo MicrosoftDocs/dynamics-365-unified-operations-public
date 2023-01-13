@@ -43,11 +43,14 @@ If a table is created in only one system, set up the number sequence in the sour
 
 ## How to disable field validation in F&O data entity for dual-write initial sync
 Navigate to F&O Data Management, Data entities, select to update a data entity, and for the autonumber field un-tick the Call validate Field method and click Save.
-![NumberSequence-1](media\numseq-1.png)
+
+![NumberSequence-1](media/numseq-1.png)
+
 
 ## F&O number sequence settings
 When working with autonumbering in finance and operations apps, it is important to understand the number sequence settings: 
-![NumberSequence-2](media\numseq-2.png)
+
+![NumberSequence-2](media/numseq-2.png)
 
 - Manual, it should be No if we want the system to generate values. 
 - Smallest defines the lowest numeric value allowed for the sequence.
@@ -57,14 +60,16 @@ When working with autonumbering in finance and operations apps, it is important 
 - Continous helps to avoid gaps in that it allows to re-use value in case records are deleted. You should carefully analyze performance impact if there is a requirement to enable this feature.
 
 Also in the number sequence, we can have different segments that can be used to compose the full value such as constants or company name:
-![NumberSequence-3](media\numseq-3.png)
+
+![NumberSequence-3](media/numseq-3.png)
 
 
 ## Dataverse autonumbering 
 Autonumber columns are Dataverse columns that automatically generate alphanumeric strings whenever they are created. Makers can customize the format of these columns 
 to their liking, and then rely on the system to generate matching values that automatically fill them in at runtime. For example, sales order number set up as 
 autonumber type in Dataverse:
-![NumberSequence-4](media\numseq-4.png)
+
+![NumberSequence-4](media/numseq-4.png)
 
 ## Prevent counter increments in F&O during initial sync 
 During initial sync, if you wish to not increase the F&O counter when Dataverse records get created with initial sync, set in the respective F&O numbering sequence 
