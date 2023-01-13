@@ -32,11 +32,19 @@ This article describes the periodic tasks that are available in Recurring contra
 
 ## Generate invoice
 
-Use the **Generate invoice** page to create mass monthly recurring invoices from the information that you set up on the **All billing schedules** and **View billing detail** pages. When an invoice is created, the item description for the sales order processing line is updated with the item description and the billing start and end dates for the schedule line that is invoiced.
+Use the **Generate invoice** page to create mass monthly recurring invoices from the information that you set up on the **All billing schedules** and **View billing detail** pages. When an invoice is created, the item description for the sales order processing line is updated with the item description and the billing start and end dates for the schedule line that is invoiced. 
 
 ## Generate invoice batch processing
 
-Use the **Generate invoice batch processing** page to create recurring invoices through a recurring batch process. The parameters that are available are the same as the parameters on the **Generate invoice** page, but they can be saved in a batch process that can be run multiple times.
+Use the **Generate invoice batch processing** page to create recurring invoices through a recurring batch process. The Date range filter lets you select the billing schedules by Start date or End date. To use a start date or end date other than today's date select **Yes** for **Add the number of days or months**. Then choose Months or Days for **Select by days or months**. Enter the number of days or months. For days, 0 is today; for months, 0 means the first day to the last day of the current month. 
+
+For example; the current month is January, if you want to include billing schedule lines that have a start date through March 1, set the number of months to 2. If today is January 15 and you want to include billing schedule lines from January 1 - December 31 of the previous year use Days and set the number of days to -350 (365-15). When using Months remember that the current month is always included. 
+
+The batch processing flag is set to Yes and cannot be changed to No. 
+
+## Generate quotation
+
+Use the **Generate quotation** page to create a Sales quotation report for multiple billing schedules at the same time. Each billing schedule will print a Sales quotation report. 
 
 ## Price update
 
