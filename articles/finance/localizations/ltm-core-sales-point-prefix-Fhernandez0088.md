@@ -29,6 +29,9 @@ Warehouses can be added to the sales point prefix configuration so they should b
 4. In the **Warehouse** section add the desired warehouses.
 > [!NOTE]
 > The warehouses added here will be the ones that the user can use when posting a packing slip with the sales point created.
+
+## Add the fiscal codification provided by the fiscal authorities
+
 You can use **Tax application** option to add this codification.
 
 1.	Go to **Navigation pane > Organization administration > Setup > LATAM > Sales point Prefix**.
