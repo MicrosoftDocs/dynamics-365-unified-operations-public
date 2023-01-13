@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 01/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -37,27 +37,6 @@ In Application Insights, telemetry from Supply Chain Management tenants is logge
 | WHS000003 | Mobile application backend | Warehouse.MobileApp.NextPageRequest | 10.0.31 |
 | WHS000004 | Mobile application backend | Warehouse.MobileApp.ImageRequest | 10.0.31 |
 | WHS000005 | Work creation | Warehouse.WorkCreation.Log | 10.0.31 |
-| WHS000007 | Wave processing | Warehouse.WaveProcessing.ShippingCreateWork | 10.0.32 |
-| WHS000008 | Wave processing | Warehouse.WaveProcessing.CreateLoads | 10.0.32 |
-| WHS000009 | Wave processing | Warehouse.WaveProcessing.ProcessWaveMethods | 10.0.32 |
-| WHS000010 | Wave processing | Warehouse.WaveProcessing.ValidateWave | 10.0.32 |
-| WHS000011 | Wave processing | Warehouse.WaveProcessing.AllocateWave | 10.0.32 |
-| WHS000012 | Wave processing | Warehouse.WaveProcessing.Containerization | 10.0.32 |
-| WHS000013 | Load posting | Warehouse.LoadPosting | 10.0.32 |
-| WHS000014 | Wave processing | Warehouse.WaveDemandReplenishment | 10.0.32 |
-| WHS000015 | Wave processing | Warehouse.WaveProcessing.KanbanCreateWork | 10.0.32 |
-| WHS000016 | Wave processing | Warehouse.WaveProcessing.KanbanPickQuantity | 10.0.32 |
-| WHS000017 | Wave processing | Warehouse.WaveProcessing.ProductionCreateWork | 10.0.32 |
-| WHS000018 | Wave processing | Warehouse.WaveProcessing.ProductionPickQuantity | 10.0.32 |
-| WHS000019 | Wave processing | Warehouse.WaveProcessing.Sorting | 10.0.32 |
-| WHS000020 | Wave processing | Warehouse.WaveProcessing.WaveLabelPrinting | 10.0.32 |
-| WHS000021 | Wave processing | Warehouse.CreateLoadFromShipment | 10.0.32 |
-| WHS000022 | Work creation | Warehouse.ProcessTemporaryWorkLine | 10.0.32 |
-| WHS000023 | Work creation | Warehouse.CreateRemainingWorkLines | 10.0.32 |
-| WHS000024 | Wave processing | Warehouse.AllocateLoadLine | 10.0.32 |
-| WHS000025 | Replenishment | Warehouse.RunDemandReplenishment | 10.0.32 |
-| WHS000026 | Replenishment | Warehouse.ImmediateReplenishment | 10.0.32 |
-| WHS000027 | Release to warehouse | Warehouse.WarehouseRelease.CreateShipments | 10.0.32 |
 
 The following table lists the telemetry data that's logged as custom dimensions. (Not all this data is logged for all events.) The table also shows the minimum version of Supply Chain Management that's required to log each dimension.
 
@@ -66,7 +45,6 @@ The following table lists the telemetry data that's logged as custom dimensions.
 | `aadTenantId` | The Azure Active Directory (Azure AD) tenant ID of the connected Supply Chain Management environment. | 10.0.31 |
 | `activityId` | The activity ID of the session that the event was logged during. | 10.0.31 |
 | `activityGraph` | A chart that represents the level of the telemetry event, based on the business process that was done. | 10.0.31 |
-| `allocatedLoadLines` | The number of load lines that were allocated during wave processing. | 10.0.32 |
 | `elapsedMilliseconds` | The amount of time (in milliseconds) that the event took from start to stop. | 10.0.31 |
 | `environmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.31 |
 | `eventId` | A constant that uniquely identifies the event. | 10.0.31 |
@@ -75,13 +53,8 @@ The following table lists the telemetry data that's logged as custom dimensions.
 | `foundLocationId` | The location ID of the location where the inventory was found during the allocation process. | 10.0.31 |
 | `foundQuantity` | The quantity that was found at a location during the allocation process. The value is expressed in the unit that's specified by the `foundUnitOfMeasure` dimension. | 10.0.31 |
 | `foundUnitOfMeasure` | The unit of measure of the `foundQuantity` dimension. | 10.0.31 |
-| `immediateReplenishmentQuantity` | The requested quantity that was used during immediate replenishment. The value is expressed in the unit that's specified by the `immediateReplenishmentUnitOfMeasure` dimension. | 10.0.32 |
-| `immediateReplenishmentTemplateId` | The ID of the replenishment template that was used for the immediate replenishment. | 10.0.32 |
-| `immediateReplenishmentUnitOfMeasure` | The unit of measure of the `immediateReplenishmentQuantity` dimension. | 10.0.32 |
 | `itemId` | The item ID that was processed. | 10.0.31 |
 | `itemRecordId` | The item record ID that was processed. | 10.0.31 |
-| `loadConsolidated` | A value that indicates whether a load was consolidated when it was created from a shipment during wave processing. | 10.0.32 |
-| `loadPostMethodName` | The name of the load posting method that was processed. | 10.0.32 |
 | `loadId` | The load ID that was processed. | 10.0.31 |
 | `locationsEvaluated` | The number of locations that were evaluated by the location directives. | 10.0.31 |
 | `mobileDeviceId` | The globally unique identifier (GUID) of the device from which the Warehouse Management mobile app performed a call to the Supply Chain Management environment. | 10.0.31 |
@@ -89,28 +62,17 @@ The following table lists the telemetry data that's logged as custom dimensions.
 | `mobileDeviceRequestImageDetails` | A value that identifies an image that was requested by the Warehouse Management mobile app. | 10.0.31 |
 | `mobileDeviceRequestImageIsThumbnail` | A value that indicates whether an image that was requested by the Warehouse mobile app was a thumbnail. | 10.0.31 |
 | `orderNumber` | The source document order number (such as a sales order number or purchase order number). | 10.0.31 |
-| `releaseToWarehouseId` | The release to warehouse ID that was used to process a wave. | 10.0.32 |
-| `replenishmentTemplateId` | The replenishment template ID that was used during replenishment. | 10.0.32 |
 | `requestedInventoryQuantity` | The quantity (in inventory units) that was requested when a location was being found during processing of a location directive. | 10.0.31 |
 | `shipmentId` | The shipment ID that was processed. | 10.0.31 |
-| `shipmentsCreated` | The number of shipments that were created during processing. | 10.0.32 |
-| `validateWaveSuccess` | The result of the wave validation. The value can be "true" or "false". | 10.0.32 |
-| `warehouseId` | The warehouse ID of the warehouse where the processing was done. | 10.0.32 |
 | `waveId` | The wave ID that was processed. | 10.0.31 |
-| `waveMethodsProcessed` | The number of wave processing methods that had been processed so far. | 10.0.32 |
-| `waveStepCode` | The wave step code from the wave processing method (for example, replenishment). | 10.0.32 |
 | `waveProcessingId` | The wave processing ID. | 10.0.31 |
-| `workCompleted` | The result of the work creation. This dimension is currently used to indicate that kanban work was fully created. The value can be "true" or "false". | 10.0.32 |
 | `workCreationLogFailed` | A value that indicates whether work creation failed. The value can be "true" or "false". | 10.0.31 |
 | `workCreationLogMessage` | The message that was logged during a process (such as work creation or wave allocation). | 10.0.31 |
 | `workCreationLogTransactionTime` | A timestamp that indicates when the work creation log was created. | 10.0.31 |
 | `workCreationNumber` | The work creation number that was used for the work creation process. | 10.0.31 |
 | `WorkExecuteMode` | The work processing mode for the Warehouse Management mobile device app flow. | 10.0.31 |
 | `WorkExecuteStep` | The work processing step for the Warehouse Management mobile device app flow. | 10.0.31 |
-| `WorkId` | The work ID that was processed. | 10.0.32 |
 | `workOrderType` | The work order type that was processed. | 10.0.31 |
-| `worksCreated` | The number of work records that were created during the work creation process. | 10.0.32 |
-| `workTemplateCode` | The work template code that was used in the work creation process. | 10.0.32 |
 | `workType` | The work type of the work line that was used during the work creation process (for example, "pick" or "put"). | 10.0.31 |
 
 ## Available telemetry for the Warehouse Management mobile app
