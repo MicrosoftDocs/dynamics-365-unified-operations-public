@@ -150,3 +150,15 @@ Follow these steps to copy Human Resources custom field metadata that's created 
     2. On the **Solutions** page, select **Import**.
     3. Select **Browse**, and select the managed solution that you exported in step 3.
     4. Select **Next**, select **Import**, and wait until the managed solution is applied to the destination Dataverse environment.
+
+## Personalizations
+
+By personalizing the user interface in finance and operations apps, employees of an organization can work more efficiently. To learn more about personalization, see [Personalize finance and operations apps](/fin-ops/get-started/personalize-user-experience).
+
+To move the personalizations:
+
+1. From Source environment, export personalization from the page that has been modified.
+2. Copy the personalization file (from step 1) to the target environment.
+3. In the target environment, import the file from step 2.
+
+Optional: Move data from the application tables if the data should migrate (HcmWorker, Customer, etc…).
