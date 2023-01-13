@@ -1,48 +1,106 @@
 ---
-title: Monitor mobile device usage and performance
-description: The Warehouse Management mobile app emits telemetry data, which lets you monitor and analyze the activities and general health of your devices. You can use the information to diagnose issues and analyze operations that affect performance.
+title: Monitor Warehouse Management usage and performance
+description: The Supply Chain Management tenant and the Warehouse Management mobile app emit telemetry data, which lets you monitor and analyze the activities and general health of your system. You can use the information to diagnose issues and analyze operations that affect performance.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 01/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Monitor mobile device usage and performance
+# Monitor Warehouse Management usage and performance
 
 [!include [banner](../includes/banner.md)]
 
-The Warehouse Management mobile app emits telemetry data, which lets you monitor and analyze the activity and general health of your mobile devices. You can use the information to diagnose issues and analyze operations that affect performance. Telemetry data is collected and processed by using [Application Insights](/azure/azure-monitor/app/app-insights-overview), a Microsoft Azure service that is optimized for this purpose.
+Microsoft Dynamics 365 Supply Chain Management emits telemetry data for various Warehouse Management activities and operations, including both the Supply Chain Management tenant and the Warehouse Management mobile app. Telemetry data helps provide insight into the activities and general health of your tenants and devices, so that you can diagnose problems and analyze operations that affect performance. Telemetry data is collected and processed by using [Application Insights](/azure/azure-monitor/app/app-insights-overview), an Azure service that's optimized for this purpose.
 
 ## Prerequisites
 
-Before you can collect and analyze telemetry data for your mobile devices, the following prerequisites must be in place for your system:
+Before you can collect and analyze Warehouse Management telemetry data, the following prerequisites must be in place for your system:
 
-- **Supply Chain Management version** – You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.29 or later.
+- **Supply Chain Management version** – Telemetry with Application Insights requires Supply Chain Management version 10.0.29 or later. Additional telemetry features require later versions of Supply Chain Management. See the tables later in this article for details about which features require which versions of Supply Chain Management.
+- **Warehouse Management mobile app version** – Telemetry with Application Insights requires Warehouse Management mobile app version 2.0.28 or later. Additional telemetry features require later versions of the app. See the tables later in this article for details about which features require which versions of Supply Chain Management and the Warehouse Management mobile app.
 - **Application Insights** – You must have an Application Insights resource in Azure, and you must configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
 
-## Available telemetry
+## Available telemetry for Supply Chain Management tenants
 
-In Application Insights, telemetry from the Warehouse Management mobile app is logged as custom events. The following table lists the data that is currently logged as custom dimensions on each event.
+In Application Insights, telemetry from Supply Chain Management tenants is logged as custom events. The following table lists the events that are currently available. It also shows the minimum version of Supply Chain Management that's required to generate each event.
 
-| Name | Description |
-|---|---|
-| `backendProcessingTime` | Information about the processing time of the request on the server. |
-| `batteryLevel` | Information about the device's battery level. |
-| `batterySession` | Information about the battery session of the device. If the device is charging, the telemetry logs it as such. Otherwise, a globally unique identifier (GUID) is logged that represents an on-battery session. Every time that the device charges, the GUID for the on-battery session is changed. |
-| `batteryState` | Information about the charging status of the device. For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). |
-| `deviceId` | The GUID of the device that performs the call. |
-| `eventid` | A constant that identifies the telemetry that is emitted by the Warehouse Management mobile app. This information helps you distinguish mobile app data from other warehousing telemetry events that are emitted from Supply Chain Management. |
-| `isEnergySaverTurnedOn` | Information about the energy saver status of the device. |
-| `powerSource` | Information about the power source of the device. For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). |
-| `renderingDurationInMilliseconds` | Information about the time that the  Warehouse Management mobile app takes to render page controls after it calls the server. |
-| `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. |
-| `serverAadTenantId` | The Azure Active Directory (Azure AD) tenant ID of the connected Supply Chain Management environment. |
-| `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. |
+| Event ID | Area | Name | Supply Chain Management version |
+|---|---|---|---|
+| WHS000001 | Location directives | Warehouse.LocationDirective.FindLocation | 10.0.31 |
+| WHS000002 | Wave processing | Warehouse.WaveProcessing.PostWave | 10.0.31 |
+| WHS000003 | Mobile application backend | Warehouse.MobileApp.NextPageRequest | 10.0.31 |
+| WHS000004 | Mobile application backend | Warehouse.MobileApp.ImageRequest | 10.0.31 |
+| WHS000005 | Work creation | Warehouse.WorkCreation.Log | 10.0.31 |
+
+The following table lists the telemetry data that's logged as custom dimensions. (Not all this data is logged for all events.) The table also shows the minimum version of Supply Chain Management that's required to log each dimension.
+
+| Name | Description | Supply Chain Management version |
+|---|---|---|
+| `aadTenantId` | The Azure Active Directory (Azure AD) tenant ID of the connected Supply Chain Management environment. | 10.0.31 |
+| `activityId` | The activity ID of the session that the event was logged during. | 10.0.31 |
+| `activityGraph` | A chart that represents the level of the telemetry event, based on the business process that was done. | 10.0.31 |
+| `elapsedMilliseconds` | The amount of time (in milliseconds) that the event took from start to stop. | 10.0.31 |
+| `environmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.31 |
+| `eventId` | A constant that uniquely identifies the event. | 10.0.31 |
+| `eventStatus` | The status of the event. The value can be "start" or "stop". | 10.0.31 |
+| `foundInventoryQuantity` | The quantity (in inventory units) that was found at a location during the allocation process. | 10.0.31 |
+| `foundLocationId` | The location ID of the location where the inventory was found during the allocation process. | 10.0.31 |
+| `foundQuantity` | The quantity that was found at a location during the allocation process. The value is expressed in the unit that's specified by the `foundUnitOfMeasure` dimension. | 10.0.31 |
+| `foundUnitOfMeasure` | The unit of measure of the `foundQuantity` dimension. | 10.0.31 |
+| `itemId` | The item ID that was processed. | 10.0.31 |
+| `itemRecordId` | The item record ID that was processed. | 10.0.31 |
+| `loadId` | The load ID that was processed. | 10.0.31 |
+| `locationsEvaluated` | The number of locations that were evaluated by the location directives. | 10.0.31 |
+| `mobileDeviceId` | The globally unique identifier (GUID) of the device from which the Warehouse Management mobile app performed a call to the Supply Chain Management environment. | 10.0.31 |
+| `mobileDeviceRequestActivityId` | The GUID of the server request activity that was performed by the Warehouse Management mobile app. | 10.0.31 |
+| `mobileDeviceRequestImageDetails` | A value that identifies an image that was requested by the Warehouse Management mobile app. | 10.0.31 |
+| `mobileDeviceRequestImageIsThumbnail` | A value that indicates whether an image that was requested by the Warehouse mobile app was a thumbnail. | 10.0.31 |
+| `orderNumber` | The source document order number (such as a sales order number or purchase order number). | 10.0.31 |
+| `requestedInventoryQuantity` | The quantity (in inventory units) that was requested when a location was being found during processing of a location directive. | 10.0.31 |
+| `shipmentId` | The shipment ID that was processed. | 10.0.31 |
+| `waveId` | The wave ID that was processed. | 10.0.31 |
+| `waveProcessingId` | The wave processing ID. | 10.0.31 |
+| `workCreationLogFailed` | A value that indicates whether work creation failed. The value can be "true" or "false". | 10.0.31 |
+| `workCreationLogMessage` | The message that was logged during a process (such as work creation or wave allocation). | 10.0.31 |
+| `workCreationLogTransactionTime` | A timestamp that indicates when the work creation log was created. | 10.0.31 |
+| `workCreationNumber` | The work creation number that was used for the work creation process. | 10.0.31 |
+| `WorkExecuteMode` | The work processing mode for the Warehouse Management mobile device app flow. | 10.0.31 |
+| `WorkExecuteStep` | The work processing step for the Warehouse Management mobile device app flow. | 10.0.31 |
+| `workOrderType` | The work order type that was processed. | 10.0.31 |
+| `workType` | The work type of the work line that was used during the work creation process (for example, "pick" or "put"). | 10.0.31 |
+
+## Available telemetry for the Warehouse Management mobile app
+
+In Application Insights, telemetry from the Warehouse Management mobile app is logged as custom events on each server call. The following table lists the events that are currently available. It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app required to generate each event.
+
+| Event ID | Area | Name | Supply Chain Management version | Mobile app version |
+|---|---|---|---|---|
+| WHS000006 | Mobile application frontend | Warehouse.MobileApp.ClientRoundTrip | 10.0.29 | 2.0.28 |
+
+The following table lists the telemetry data that's logged as custom dimensions on each event. It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app that are required to generate each dimension.
+
+| Name | Description | Supply Chain Management version | Mobile app version |
+|---|---|---|---|
+| `activityId` | The GUID of the server request activity ID. | 10.0.29 | 2.0.35 |
+| `activityGraph` | A constant that provides information about the place of the call in the activity hierarchy. The value "Warehouse.MobileApp.Interaction" will always be logged. | 10.0.29 | 2.0.35 |
+| `backendProcessingTime` | Information about the processing time of the request on the server. | 10.0.29 | 2.0.28 |
+| `batteryLevel` | Information about the device's battery level. | 10.0.29 | 2.0.28 |
+| `batterySession` | Information about the battery session of the device. If the device is charging, the telemetry logs it as such. Otherwise, it logs a GUID that represents an on-battery session. Every time that the device charges, the GUID for the on-battery session is changed. | 10.0.29 | 2.0.28 |
+| `batteryState` | Information about the charging status of the device. For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). | 10.0.29 | 2.0.28 |
+| `deviceId` | The GUID of the device that performs the call. | 10.0.29 | 2.0.28 |
+| `eventid` | A constant that identifies the telemetry that's emitted by the Warehouse Management mobile app. This information helps you distinguish mobile app data from other warehousing telemetry events that are emitted from Supply Chain Management. | 10.0.29 | 2.0.33 |
+| `isEnergySaverTurnedOn` | Information about the energy saver status of the device. | 10.0.29 | 2.0.28 |
+| `powerSource` | Information about the power source of the device. For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). | 10.0.29 | 2.0.28 |
+| `renderingDurationInMilliseconds` | Information about the time that the Warehouse Management mobile app takes to render page controls after it calls the server. | 10.0.29 | 2.0.28 |
+| `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. | 10.0.29 | 2.0.28 |
+| `serverAadTenantId` | The Azure AD tenant ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
+| `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
 
 ## View telemetry data in Application Insights
 
