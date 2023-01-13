@@ -39,8 +39,8 @@ The Export to Data Lake service generates several business events.
 - **Error** – This event indicates that the Export to Data Lake service has paused updates to data in the data lake.
 - **Lake switch** – This event indicates that the system administrator has changed the location of the data lake.
 
-    > [!NOTE]
-    > This event isn't yet implemented.
+> [!NOTE]
+> This event isn't yet implemented.
 
 ## Enable business events
 
