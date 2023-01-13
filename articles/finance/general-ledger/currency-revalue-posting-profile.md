@@ -2,7 +2,7 @@
 # required metadata
 
 title: Currency revaluation posting profiles
-description: This article describes the Currency revaluation posting profiles.
+description: This article provides information about currency revaluation posting profiles.
 author: moaamer
 ms.date: 01/10/2023
 ms.topic: article
@@ -29,81 +29,75 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # Currency revaluation posting profiles
 
-The currency revaluation posting profile allows you to post currency revaluation adjustment to different accounts per module (General ledger, Accounts payable, Accounts 
-receivable and Bank). It provides the ability to post to a more granular level for each module where you can define a currency revaluation posting account per currency code and the lowest level of ledger account, vendor, customer or bank. The differentiation could be for unrealized gain or loss for all modules. The realized gain or loss is only available for accounts payable and accounts receivable.  
+A currency revaluation posting profile lets you post a currency revaluation adjustment to different accounts per module (**General ledger**, **Accounts payable**, **Accounts receivable**, and **Bank**). For each module, you can post to a more granular level, where you can define a currency revaluation posting account per currency code and the lowest level of ledger account, vendor, customer, or bank. The differentiation can be for unrealized gain or loss for all modules. The realized gain or loss is available only for Accounts payable and Accounts receivable.
 
-## Create a currency posting profile
+> [!NOTE]
+> If no currency revaluation posting profile is configured, the accounts that are selected on the **Accounts for currency revaluation** FastTab of the **Ledger** page are used.
 
-To create a new currency posting profile:
-1. Go to **General ledger > Currencies > Currency revaluation posting profile**. 
-2. In the **Currency code** field, select **All** currencies or define specific currency by selecting **Table** in the **Currency code** field. 
-3. In the **Account code** field, you can select **All**, **Group** or **Table** to identify an account or main account depending on the module page selected. The **Main account** is a mandatory field where you select the currency revaluation posting account that will be used during the currency revaluation adjustment. 
+## Create a currency revaluation posting profile
 
+To create a currency revaluation posting profile, follow these steps.
 
-For example, the Unrealized gain for General ledger post the currency revaluation of EUR transactions on main account 600120 to adjustment account 801602. To post 
-currency revaluation of all currencies on accounts that belongs to Travel and Expense (TANDEEXP) main category to adjustment account 801601. To post currency 
-revaluation of all currencies on all accounts to adjustment account 801600.
+1. Go to **General ledger \> Currencies \> Currency revaluation posting profile**.
+2. In the **Currency code** field, select **All** for all currencies or **Table** for a specific currency.
+3. In the **Account code** field, you can select **All**, **Group**, or **Table** to specify an account or main account, depending on the module-specific tab that's selected.
 
+    The **Main account** field is a mandatory field where you select the currency revaluation posting account that will be used during the currency revaluation adjustment.
 
-[![Currency revaluation posting profile.](./media/Postingprofile1.png)](./media/Postingprofile1.png)
+### General ledger
 
+For General ledger, the values in the **Account code** field have the following meaning:
 
-**Table** – The posting profile applies to a specified ledger account. 
-**Group** – The posting profile applies to the selected main account category. 
-**All** – The posting profile applies to all main accounts that have the **Foreign currency revaluation** option set to **Yes**. 
+- **Table** – The posting profile applies to a specified ledger account.
+- **Group** – The posting profile applies to the selected main account category.
+- **All** – The posting profile applies to all main accounts where the **Foreign currency revaluation** option is set to **Yes**.
+
+In the example that's shown in the following illustration, the unrealized gain for General ledger posts the currency revaluation of transactions in euros (EUR) on main account 600120 to adjustment account 801602. (On the first line in the illustration, the **Account code** field is set to **Table**, and the main account is selected.) The unrealized gain posts the currency revaluation of all currencies on accounts that belong to the **Travel and Expense** (**TANDEEXP**) main account category to adjustment account 801601. (On the second line, the **Account code** field is set to **Group**, and the main account category is selected.) The unrealized gain posts the currency revaluation of all currencies on all accounts to adjustment account 801600. (On the third line, the **Account code** field is set to **All**.)
+
+[![General ledger example on the Currency revaluation posting profile page.](./media/Postingprofile1.png)](./media/Postingprofile1.png)
 
 ### Accounts payable
-For example, the Unrealized gain for Accounts payable post the currency revaluation of EUR transactions on main account 1001 to adjustment account 801602. To post currency revaluation of all currencies on vendors that belongs to Parts vendors (10) vendor group to adjustment account 801601. To post currency revaluation of all currencies on all vendors to adjustment account 801600.
 
-**Table** – The posting profile applies to a single vendor. 
-**Group** – The posting profile applies to a vendor group. 
-**All** – The posting profile applies to all vendors. 
+For Accounts payable, the values in the **Account code** field have the following meaning:
 
+- **Table** – The posting profile applies to a single vendor.
+- **Group** – The posting profile applies to a vendor group.
+- **All** – The posting profile applies to all vendors.
+
+For example, the unrealized gain for Accounts payable posts the currency revaluation of EUR transactions on main account 1001 to adjustment account 801602 (**Account code** = **Table**). It posts the currency revaluation of all currencies on vendors that belong to the **Parts vendors** (**10**) vendor group to adjustment account 801601 (**Account code** = **Group**). It posts the currency revaluation of all currencies on all vendors to adjustment account 801600 (**Account code** = **All**).
 
 ### Accounts receivable
-For example, the Unrealized gain for Accounts receivable post the currency revaluation of EUR transactions on customer account US-001 to adjustment account 801602. To post currency revaluation of all currencies on accounts that belongs to Wholesales customers (10) customer group to adjustment account 801601. To post currency revaluation of all currencies on all customers to adjustment account 801600.
 
-**Table** – The posting profile applies to a single customer. 
-**Group** – The posting profile applies to a customer group. 
-**All** – The posting profile applies to all customers. 
+For Accounts receivable, the values in the **Account code** field have the following meaning:
 
+- **Table** – The posting profile applies to a single customer.
+- **Group** – The posting profile applies to a customer group.
+- **All** – The posting profile applies to all customers.
 
-## Bank         
-For example, the Unrealized gain for Bank post the currency revaluation of EUR transactions on bank account USMF EUR to adjustment account 801602. To post currency revaluation of all currencies on accounts that belongs to BankEUR bank group to adjustment account 801601. To post currency revaluation of all currencies on all bank accounts to adjustment account 801600.
+For example, the unrealized gain for Accounts receivable posts the currency revaluation of EUR transactions on customer account US-001 to adjustment account 801602 (**Account code** = **Table**). It posts the currency revaluation of all currencies on accounts that belong to the **Wholesales customers** (**10**) customer group to adjustment account 801601 (**Account code** = **Group**). It posts the currency revaluation of all currencies on all customers to adjustment account 801600 (**Account code** = **All**).
 
+### Bank
 
-**Table** – The posting profile applies to a single Bank ID. 
-**Group** – The posting profile applies to a bank group. 
-**All** – The posting profile applies to all banks. 
+For Bank, the values in the **Account code** field have the following meaning:
 
-The **Lowest level of defaulting** option will determine the level of posting. 
+- **Table** – The posting profile applies to a single bank ID.
+- **Group** – The posting profile applies to a bank group.
+- **All** – The posting profile applies to all banks.
 
+For example, the unrealized gain for Bank posts the currency revaluation of EUR transactions on bank account USMF EUR to adjustment account 801602 (**Account code** = **Table**). It posts the currency revaluation of all currencies on accounts that belong to the **BankEUR** bank group to adjustment account 801601 (**Account code** = **Group**). It posts the currency revaluation of all currencies on all bank accounts to adjustment account 801600 (**Account code** = **All**).
 
-For example, on the **Currency revaluation posting profile** for an unrealized gain under general ledger that have potential overlapped setting. 
- - Post currency revaluation adjustment of EUR currency for all accounts to account 801605. 
- - Post currency revaluation adjustment of all currencies for account 601400 to account 801603. 
+### Lowest level of defaulting
 
-Based on the **Lowest level of defaulting** option will determine which account to take priority: 
--	**Currency**: Priority is given to the currency and will post currency revaluation to 801605 account. 
--	**Account**: Priority is given to the account and will post currency revaluation to 801603 account.
+The **Lowest level of defaulting** field defines the level of posting.
+
+For example, on the **Currency revaluation posting profile** page, the unrealized gain for General ledger has settings that might overlap.
+
+- Post the currency revaluation adjustment of the EUR currency for all accounts to account 801605.
+- Post the currency revaluation adjustment of all currencies for account 601400 to account 801603.
+
+The setting of the **Lowest level of defaulting** field determines which account has priority:
+
+- **Currency** – Priority is given to the currency. In this example, the currency revaluation adjustment will be posted to account 801605.
+- **Account** – Priority is given to the account. In this example, the currency revaluation adjustment will be posted to account 801603.
 
 [![Posting example.](./media/Lowestlevel2.png)](./media/Lowestlevel2.png)
-
-
->[!Note] 
->If the **Currency revaluation posting profile** is not configured, the accounts that are selected on the **Ledger** page, **Accounts for currency revaluation** FastTab will be used. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
