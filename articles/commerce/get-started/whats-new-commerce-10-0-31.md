@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Commerce 10.0.31 (February 2023)
+title: What's new and changed in Dynamics 365 Commerce 10.0.31 (February 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.31. 
 author: josaw1
 ms.date: 01/10/2023
@@ -13,10 +13,9 @@ ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
 ---
 
-# Preview of Dynamics 365 Commerce 10.0.31 (February 2023)
+# What's new and changed in Dynamics 365 Commerce 10.0.31 (February 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.31. This version has a build number of 10.0.1406 and is available on the following schedule:
 
