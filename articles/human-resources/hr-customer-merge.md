@@ -153,7 +153,7 @@ Follow these steps to copy Human Resources custom field metadata that's created 
 
 ## Personalizations
 
-By personalizing the user interface in finance and operations apps, you can empower employees of an organization to work more efficiently. To learn more about personalization, see [Personalize finance and operations apps](/fin-ops/get-started/personalize-user-experience).
+By personalizing the user interface in finance and operations apps, employees of an organization can work more efficiently. To learn more about personalization, see [Personalize finance and operations apps](/fin-ops/get-started/personalize-user-experience).
 
 To move the personalizations:
 
