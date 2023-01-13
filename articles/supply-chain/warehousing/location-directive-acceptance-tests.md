@@ -16,8 +16,6 @@ ms.custom: bap-template
 # Test location directives with acceptance tests
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 Acceptance tests let you define a set of *given-when-then* tests to verify that location directives behave as expected. In this type of test, *given* a set of conditions, *when* something happens, *then* some specified result should occur. This terminology is known from quality assurance in engineering and can be traced back to the [scientific method](https://en.wikipedia.org/wiki/Scientific_method).
 
