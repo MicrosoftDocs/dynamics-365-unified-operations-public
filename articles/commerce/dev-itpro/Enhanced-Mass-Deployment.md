@@ -4,7 +4,7 @@
 title: Mass deployment of sealed Commerce self-service components
 description: This article explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 08/31/2022
+ms.date: 01/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -23,8 +23,8 @@ This article applies to the sealed framework, component installers that are rele
 This article explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
 
 > [!NOTE]
-> The new self-service, sealed installers will not be made available in Headquarters and are only downloadable through LCS.
-> Beginning in the 10.0.32 release, .NET 6 will be required as a prerequisite for the sealed self-service components.
+> - Self-service, sealed installers won't be made available in Commerce headquarters and are only downloadable through LCS.
+> - Starting with the Commerce version 10.0.32 release, .NET 6 is required as a prerequisite for the sealed self-service components.
 
 ## Delimiters for mass deployment
 
@@ -57,7 +57,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value will be used during device activation. |
 | -SkipAadCredentialsCheck| A switch that indicates whether Azure AD credential prerequisite checks should be skipped. The default value is **false**. |
 | -SkipCertCheck | A switch that indicates whether certificate prerequisite checks should be skipped. The default value is **false**. |
-| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations performed prior to performing the device token capture from Modern POS. This flag should not be used in Production, only during test. |
+| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations performed prior to performing the device token capture from Modern POS. This flag should only be used in test environments, and shouldn't be used in production. |
 | -SkipIisCheck | A switch that indicates whether Internet Information Services (IIS) prerequisite checks should be skipped. The default value is **false**. |
 | -SkipNetFrameworkCheck | A switch that indicates whether .NET Framework prerequisite checks should be skipped. The default value is **false**. |
 | -SkipScaleUnitHealthcheck | A switch that indicates whether the health check on installed components should be skipped. The default value is **false**. |
@@ -74,7 +74,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -TransactionServiceAzureAuthority | The Transaction Service Azure AD authority. |
 | -TransactionServiceAzureResource | The Transaction Service Azure AD resource. |
 | -TrustSqlServerCertificate | A switch that indicates whether the Server certificate should be trusted while a connection to SQL Server is being established. To help avoid security risks, production deployments should never supply a value of **true** here. The default value is **false**. |
-| --UseCommonApplicationData | A switch to alter the location of the device token. Instead of being in the user context, the token will be stored in a shared location so that all Windows users can access the same token, allowing for use of Store Commerce regardless of the active user. Users must still be in the **RetailChannelUsers** group. |
+| --UseCommonApplicationData | A switch to alter the location of the device token. Instead of being in the user context, the token is stored in a shared location so that all Windows users can access the same token, allowing for the use of Store Commerce regardless of the active user. Users must still be in the **RetailChannelUsers** group. |
 | -Verbosity | The level of logging that is requested during installation. Typically, this value should not be used. |
 | -WindowsPhoneAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
 
@@ -145,12 +145,11 @@ The following command specifies the parameters that should be used to install an
 CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml" 
 ```
 
-The following command specifies the parameters that should be used to upgrade from Modern POS to Store Commerce (with an offline database in use). This will capture the device token used by Modern POS (this removes the need for a manual device activation process) and then uninstall Modern POS. The SQL Server is specified together with the configuration file that should be used.
+The following command specifies the parameters that should be used to upgrade from Modern POS to Store Commerce (with an offline database in use). These parameters capture the device token used by Modern POS (removing the need for a manual device activation process), and then uninstall Modern POS. The SQL Server is specified together with the configuration file that should be used.
 
 ```Console
 CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" --InPlaceUpgradeFromModernPOS
 ```
-
 
 You can mix and match these concepts to achieve the installation results that you want.
 
