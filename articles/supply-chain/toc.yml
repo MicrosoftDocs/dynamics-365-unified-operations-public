@@ -3740,7 +3740,7 @@
         - name: Enable warehousing telemetry with Application Insights
           href: warehousing/application-insights-warehousing.md
         - name: Monitor Warehouse Management usage and performance
-          href: warehousing/application-insights-wma.md
+          href: warehousing/application-insights-monitor-usage-performance.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
