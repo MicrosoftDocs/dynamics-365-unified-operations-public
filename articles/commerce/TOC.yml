@@ -402,8 +402,10 @@
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Commerce offline implementation and troubleshooting
+          - name: Commerce offline implementation considerations
             href: dev-itpro/implementation-considerations-offline.md
+          - name: Commerce offline implementation troubleshooting
+            href: dev-itpro/implementation-offline-troubleshooting.md
           - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
