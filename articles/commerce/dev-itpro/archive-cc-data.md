@@ -20,7 +20,6 @@ ms.search.industry: Retail
 # Archive credit card transaction data
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens. This job is available as of the Commerce version 10.0.17 release.
 

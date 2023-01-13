@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Visual and collaborative execution
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 This article describes how to monitor your Demand Driven Material Requirements Planning (DDMRP) decoupling points, buffer zones, planned orders, and history.
 

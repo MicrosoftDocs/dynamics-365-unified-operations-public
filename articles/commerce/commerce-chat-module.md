@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-07-20
 # Commerce Chat with Omnichannel for Customer Service module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the *Commerce Chat with Omnichannel for Customer Service* module in Microsoft Dynamics 365 Commerce.
 

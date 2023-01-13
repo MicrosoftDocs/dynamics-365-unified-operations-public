@@ -154,9 +154,6 @@ To use this functionality, turn on the following feature in [Feature management]
 
 ### Enable use of a numpad on the sign-in page
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
-
 This feature lets admins add a numpad control to the sign-in page for the production floor execution interface. Workers can then sign in by using the numpad to enter their badge ID or personal number.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
