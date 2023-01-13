@@ -13,11 +13,10 @@ ms.search.validFrom: 2023-01-12
 
 # How to configure number Sequence and autonumber columns while using dual-write?
 
-Number sequences for finance and operations apps and customer engagement apps aren't connected. In a scenario that involves a multi-mastered table, you must either plan
-for separate number sequence formats or create a range for each app. Here are some examples:
+[Number sequences](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview) of finance and operations applications and [autonumber columns](https://learn.microsoft.com/en-us/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications are not connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats or create a range for each application. Here are some examples:
 
-- In the finance and operations app, use F0001, F0002, F0003. In the customer engagement app, use C0001, C0002, C0003. 
-- In the finance and operations app, use US0001 to US4999. In the customer engagement app, use US5000 to US9999. 
+- In the finance and operations application, use F0001, F0002, F0003. In the customer engagement application, use C0001, C0002, C0003. 
+- In the finance and operations application, use US0001 to US4999. In the customer engagement application, use US5000 to US9999. 
 
 
 If there is a need to perform live sync and for the examples above to work, in F&O data management, within the data entity mappings make sure that the data field 
