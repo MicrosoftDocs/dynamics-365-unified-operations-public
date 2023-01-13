@@ -147,7 +147,7 @@ Use the following guidance when determining which Power Apps environment to depl
    
     - **Unsupported geographies** - The environment must be in a supported geography. For more information, see [Supported geographies](hr-admin-setup-provision.md#supported-geographies).
     
-    - **Environments without a database** – The environment must have a Microsoft Dataverse database attached. An environment with a database can be created or a database can be attached to an existing environment without a database. For more information, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
+    - **Environments without a database** – The environment must have a Microsoft Dataverse database attached. An environment with a database can be created or a database can be attached to an existing environment without a database. For more information, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database) and [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 
 6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. For more information, see [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
