@@ -56,7 +56,7 @@ To manually manage your site map and host it in the site builder Media library, 
 <!--    ![Upload into media library](./media/manual-sitemap-2.png)-->
 1. In the Media library, next to the **Search** box, select the the information (**i**) symbol to display the property pane on the right. 
 1. Select the site map file, and in the properties pane under **Public URL**, copy the the site map file URL. 
-![Upload into media library](./media/manual-sitemap-3.png) 
+<!--![Upload into media library](./media/manual-sitemap-3.png)--> 
 1. Download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
 1. Using a text editor, paste the copied site map URL into the **Sitemap** key:value pair, as shown in the following example.
 
