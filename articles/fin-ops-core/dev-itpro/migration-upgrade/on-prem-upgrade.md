@@ -123,7 +123,7 @@ An overview of each path is given below:
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
      
-    d.  The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-database).
+    d.  The database will need to be configured. Follow the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
 
     e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
@@ -208,7 +208,7 @@ An overview of each path is given below:
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
-    d.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-database).
+    d.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
 
     e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
 
