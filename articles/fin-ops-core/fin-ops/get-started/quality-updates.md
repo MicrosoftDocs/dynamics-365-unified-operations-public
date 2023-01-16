@@ -170,6 +170,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
+**App version: 10.0.1362.124**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
