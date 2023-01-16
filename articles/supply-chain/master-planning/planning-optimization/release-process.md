@@ -28,6 +28,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p></p><p>[BOMs with constant scrap or variable scrap defined](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/scrap-calculations)</p><p>Demand with specific BOM or route requirements defined</p> | No feature management required | January 10-15, 2023 |
 | <p>[Batch disposition codes](../../inventory/batch-disposition-codes.md)</p><p>Include on-hand inventory and inventory transaction parameters on master plans</p><p>General performance, quality, and stability improvements</p> | No feature management required | October 10-14, 2022 |
 | <p>[Resource scheduling with finite capacity](finite-capacity.md)</p><p>General performance, quality, and stability improvements</p> | No feature management required | September 19-23, 2022 |
 | General performance, quality, and stability improvements | No feature management required | August 29 - September 3, 2022 |
