@@ -115,6 +115,12 @@ You can use the **Recover vendor invoices** page to recover or release vendor in
 
 You can access the **Recover vendor invoices** page only if the **Recover vendor invoices in use** security duty and privilege are assigned to you. Additionally, the **Allow vendor invoice recovery** parameter on the **Accounts payable parameters** page must be turned on.
 
+## Default financial dimension in vendor invoice lines
+For vendor invoices which are associated with purchase order, the default financial dimension will be derived from corresponding purchase order lines. 
+
+For vendor invoices which are not associated with any purchase order, the default financial dimension will merge the dimension from dimension link, invoice header, item.  If the same dimension defined on dimension link, invoice header and item， the dimension on the invoice line will follow the priority sequence: 
+dimension link > invoice header > Item
+
 ## Resetting the workflow status for vendor invoices from Unrecoverable to Draft
 
 A workflow instance that has stopped because of an unrecoverable error will have a workflow status of **Unrecoverable**. When the status of a vendor invoice workflow is **Unrecoverable**, you can reset it to **Draft** by selecting **Recall**. You can then edit the vendor invoice. This feature is available if the **Resetting the workflow status for vendor invoices from Unrecoverable to Draft** parameter on the **Feature management** page is turned on.
