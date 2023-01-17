@@ -40,9 +40,12 @@ To enable automated site map generation in Commerce site builder, follow these s
 > [!NOTE]
 > Once automated site maps are enabled, it takes some time (depending on the size of your site) for the initial automated site map creation job to complete. This progress can be monitored in site builder at **Site settings > General > Site map additional data**, where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (for example, a new page or URL published) will automatically update the site map file. After the site map is generated, the URL(s) to the site map file(s) can be found at **Site settings \> General \> Site map URLs**
 
-### Option 2: Manually manage site maps
+### Option 2: Manually manage your site map
 
-The automated site map solution works for most scenarios, but there are cases where manually managing a site map is preferred to enable more granular control over which pages are included or excluded. You can manually manage your site map by hosting your manually generated site map file in the site builder Media library as a document binary, and then updating your site's robots.txt file to point to the site map's URL. First ensure the automated site map generation feature described above is disabled, and then manually manage your site map and host it in the site builder Media library.
+The automated site map solution works for most scenarios, but there are cases where manually managing a site map is preferable to give you more control over which pages you include or exclude. You can manually manage your site map by hosting your custom site map in the site builder Media library as a document binary, and then updating your site's robots.txt file to point to the site map's URL. 
+
+> [!NOTE]
+> Before you manually manage your site map, ensure that the automated site map generation feature is disabled.
 
 To manually manage your site map and host it in the site builder Media library, follow these steps.
 
