@@ -37,3 +37,34 @@ available on the following schedule:
 - **Preview of release:** January 2022
 - **General availability of release (self-update):** February 2023
 - **General availability of release (auto-update):** March 2023
+
+## Features included in this release
+
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this 
+article was initially published.
+
+| Feature name | Overview | Release status |
+|----|----|----|
+
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing 
+feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
+
+| Feature name | More information |
+|--------------|------------------|
+
+
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Human Resources 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXXX).
+
+
+
