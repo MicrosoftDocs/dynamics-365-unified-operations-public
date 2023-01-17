@@ -42,7 +42,7 @@ To enable automated site map generation in Commerce site builder, follow these s
 
 ### Option 2: Manually manage your site map
 
-The automated site map solution works for most scenarios, but there are cases where manually managing a site map is preferable to give you more control over which pages you include or exclude. You can manually manage your site map by hosting your custom site map in the site builder Media library as a document binary, and then updating your site's robots.txt file to point to the site map's URL. 
+The automated site map solution works for most scenarios, but there are cases where manually managing a site map is preferable to give you more control over which pages you include or exclude. You can manually manage your site map by hosting the custom site map in the site builder Media library as a document binary, and then updating your site's robots.txt file to point to the site map's URL. 
 
 > [!NOTE]
 > Before you manually manage your site map, ensure that the automated site map generation feature is disabled.
@@ -56,7 +56,7 @@ To manually manage your site map and host it in the site builder Media library, 
 1. In the Media library, next to the **Search** box, select the information (**i**) symbol to display the property pane on the right. 
 1. Select the site map file, and in the properties pane under **Public URL**, copy the site map file URL. 
 1. Download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
-1. Using a text editor, paste the site map file URL you copied above into the **Sitemap** key:value pair, as shown in the following example.
+1. Using a text editor, paste the site map file URL you copied above into the **Sitemap** key-value pair, as shown in the following example.
 
 
     ```txt
@@ -78,7 +78,7 @@ To manually manage your site map and host it in the site builder Media library, 
 > 1. Update the site map file on your local machine.
 > 1. Go to the site builder Media library and select your original site map file. 
 > 1. On the command bar, select **Replace binary**. 
-> 1. In the File Explorer window, browse to and select the updated site map file on your local machine. Using this method keeps your site map file's URL static, and so avoids having to update the robots.txt file.
+> 1. In the File Explorer window, browse to and select the updated site map file on your local machine. Using this method keeps your site map file's URL static, avoiding the need to update the robots.txt file.
 
 ## Page metadata
 
