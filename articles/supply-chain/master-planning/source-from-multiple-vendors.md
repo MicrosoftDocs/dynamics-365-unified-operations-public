@@ -133,20 +133,21 @@ To view and compare target and actual vendor allocations, follow these steps.
 
 This feature is useful if, for example, you want to determine whether your Purchasing department is firming orders as master planning suggests or making changes. (If purchasers are following master planning's suggestions, the actual allocation will be close to the current allocation. However, if they're making changes, actual allocations might be quite different than the current allocation.)
 
-### Example 
+### Example of target vs. actual vendor allocations
 
-Given that there is a product with a multisource policy associated, the table viewed on this form could be as follows:
+The following table shows an example of how a product that has a multisource policy associated with it could be set up on the **Multisource policy assignments** page.
 
 | Vendor account | Total quantity | Current allocation (%) | Target allocation (%) | Allocation deviation (%) |
 | --- | --- | --- | --- | --- |
 | 1001 | 350 | 63.64 | 70 | -9.09 |
 | 1002 | 200 | 36.36 | 30 | 21.21 |
 
-where
-- Total quantity: represents the vendor's total sourced quantity
-- Current allocation (%) = (Vendor's total sourced quantity &divide Total accumulated quantity) x 100 % . It indicates how much of all the sourced quantity is purchased from this vendor as a percentage of the total.  
-- Target allocation (%) is the defined target allocation as defined for the multisource policy for the vendor
-- Allocation deviation (%) = ((Current allocation - Taget allocation) &divide Target allocation) x 100 %
+Where:
+
+- **Total quantity** – Represents the vendor's total sourced quantity.
+- **Current allocation (%)** – Is equal to (Vendor's total sourced quantity &divide; Total accumulated quantity) &times; 100%. This value indicates how much of all the sourced quantity has been purchased from this vendor as a percentage of the total.  
+- **Target allocation (%)** – Is the target allocation as defined for the multisource policy for the vendor.
+- **Allocation deviation (%)** – Is equal to ((Current allocation &minus; Target allocation) &divide; Target allocation) &times; 100%.
 
 ## How master planning suggests a vendor for each planned order
 
@@ -194,7 +195,7 @@ Here's an explanation of the table:
     - **Qty B** = Accumulated quantity for vendor B
     - **A%** = (*Qty A* &divide; *Total accumulated quantity*) &times; 100%
     - **B%** = (*Qty B* &divide; *Total accumulated quantity*) &times; 100%
-    - **Deviation** = ( \| *A%* – *Vendor A target* \| + \| *B%* – *Vendor B target* \| ) &divide; 2
+    - **Deviation** = ( \| *A%* &minus; *Vendor A target* \| &plus; \| *B%* – *Vendor B target* \| ) &divide; 2
 
 - The "Total accumulate quantity" column shows the total quantity that is ordered after each new purchase order.
 - All planned orders in the table occur during the same period, as defined by the relevant policy and policy assignment.
@@ -276,6 +277,6 @@ For vendor A, the target allocation is 80 percent. For vendor B, it's 20 percent
 </tbody>
 </table>
 
-\* 100 accumulated + 100 current demand
+\* 100 accumulated &plus; 100 current demand
 
-\*\* (|100 % - 80 %| + |20 % – 0 %|) &divide 2 = 20 %
+\*\* ( \| 100% &minus; 80% \| &plus; \| 20% &minus; 0% \| ) &divide; 2 = 20%
