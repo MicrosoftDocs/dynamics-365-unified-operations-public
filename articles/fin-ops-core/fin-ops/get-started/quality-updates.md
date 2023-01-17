@@ -7,7 +7,7 @@ author: rashmansur
 ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2022-08-19
