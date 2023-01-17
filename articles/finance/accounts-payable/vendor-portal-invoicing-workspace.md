@@ -57,9 +57,19 @@ In the **Tabular lists** section, the status of the invoicing is broken down in 
 You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page. You can use this list page to view the payment status of the invoices. The payment statuses include **Unposted**, **Unpaid**, **Partially paid**, and **Fully paid**.
 Creating a new invoice from a purchase order
 
-You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace. The confirmation dialog will ask you to provide the purchase order number, invoice number, invoice date and invoice description. Among them, invoice number must be provided by the vendor.
--   If the purchase order is provided by the vendor, the invoice is associated with purchase order. By default, all of the lines from the vendor's purchase order will appear on the new invoice. The quantity and cost information can be edited prior to submitting the vendor invoice to workflow. You can attach files, notes, images, and URLs to an invoice before submitting it.
--   If the purchase order is not provided, the invoice will be considered as a Non-PO invoices. Vendors are able to create Non-PO invoices based on the items with granted procurement categories. 
+You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace. 
+The confirmation dialog will ask for: 
+ - the purchase order number 
+ - invoice number 
+ - invoice date 
+ - invoice description
+
+>[!NOTE] 
+>The invoice number must be provided by the vendor.
+
+
+-   If the purchase order number is provided by the vendor, the invoice is associated with purchase order. By default, all of the lines from the vendor's purchase order will appear on the new invoice. The quantity and cost information can be edited prior to submitting the vendor invoice to workflow. You can attach files, notes, images, and URLs to an invoice before submitting it.
+-   If the purchase order number is not provided, the invoice will be considered as a non-PO invoices. Vendors are able to create non-PO invoices based on the items with granted procurement categories. 
 
 
 For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
