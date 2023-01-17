@@ -61,12 +61,134 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ## Feature state changes in this release
 
-The following table lists features that became mandatory or on by default in version 10.0.29. All these features will automatically be turned on for your system as soon as you update to version 10.0.29. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists features that became mandatory or on by default in version 10.0.32. All these features will automatically be turned on for your system as soon as you update to version 10.0.32. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Features that are now listed as enabled by default are targeted to become mandatory with 2023 release wave 2.
 
-The table also lists features that were previously in public preview but have changed to become generally available in version 10.0.29. This change indicates that the features are now recommended for use in production environments. These features are turned off by default unless otherwise noted. Therefore, you must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable them if you want to use them.
+The table also lists features that were previously in public preview but have changed to become generally available in version 10.0.32. This change indicates that the features are now recommended for use in production environments. These features are turned off by default unless otherwise noted. Therefore, you must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable them if you want to use them. Features that are now listed as generally available are targeted to become enabled by default with 2023 release wave 2 and then to become mandatory with 2024 release wave 1.
 
 | Module | Feature name | New feature state |
 | --- | --- | --- |
+| Asset management | [Apply rules for grouping work orders while running a maintenance plan](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | On by default <!-- KFM: UI says mandatory --> |
+| Asset management | [Counter-based maintenance enhancements](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | On by default |
+| Asset management | [Offset accounts for expenses in work order journals](whats-new-scm-10-0-23.md) | On by default |
+| Asset management | [Work order billing](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | On by default <!-- KFM: UI says mandatory --> |
+| Cost management | [Inventory aging report storage](../cost-management/inventory-aging-report-storage.md) | On by default |
+| Cost management | [Post on-hand adjustments using configurable reason codes connected to offset accounts](../warehousing/reason-codes-for-counting-journals.md) | On by default |
+| Cost management | Enable error execution log for cost accounting overhead calculation | Generally available <!-- KFM: zero documentation --> |
+| Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | On by default |
+| Production control | [Enable to enter batch and serial numbers while reporting as finished from the Job Card Device](../production-control/report-finished-job-device.md) | Mandatory |
+| Production control | Improved production catch weight quantity picking | Mandatory <!-- KFM: zero documentation --> |
+| Production control | [Manufacturing execution system integration](../production-control/mes-integration.md) | Mandatory |
+| Production control | ["My day" view for the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
+| Production control | [On-demand material availability check for production orders](whats-new-scm-10-0-24.md) | Mandatory |
+| Production control | [Report on co- and by-products from the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
+| Production control | [Report on planning items in the production floor execution interface](whats-new-scm-10-0-27.md) | Mandatory |
+| Production control | [Validate expiration of raw materials against planned consumption date](whats-new-scm-10-0-23.md) | Mandatory |
+| Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md)  | On by default |
+| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | On by default |
+| Production control | [My jobs tab on the production floor execution interface](../production-control/production-floor-execution-use.md) | On by default |
+| Production control | [Production teams in the production floor execution interface](../production-control/production-floor-execution-use.md) | On by default |
+| Production control | [Register material consumption on the production floor execution interface (non-WMS)](../production-control/production-floor-execution-use.md) | On by default |
+| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | On by default |
+| Master planning | Batchable firming and consolidation for planned bulk and pack batch orders | Mandatory |
+| Master planning | Include items with on-hand when pre-processing filters are enabled | Mandatory |
+| Master planning | Planned orders simplified | Mandatory |
+| Master planning | Azure Machine Learning Service for demand forecasting | On by default |
+| Master planning | Make-to-order supply automation | On by default |
+| Master planning | Priority driven MRP support for Planning Optimization | On by default |
+| Master planning | Group transactions in Planning Optimization | On by default |
+| Master planning | CTP for Planning Optimization | Generally available |
+| Master planning | Source products and materials from multiple vendors using Planning Optimization | Generally available |
+| Master planning | Consider inventory lead time when creating a planned transfer order | Generally available |
+| Procurement and sourcing | Add lines to PO invoices associated with a purchase agreement | Mandatory |
+| Procurement and sourcing | Allow vendors to apply for procurement categories through vendor collaboration | Mandatory |
+| Procurement and sourcing | Bid submission success message | Mandatory |
+| Procurement and sourcing | Clean up purchase-order update history | Mandatory |
+| Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Mandatory |
+| Procurement and sourcing | Purchasing cXML enhancements | Mandatory |
+| Procurement and sourcing | RFQ questions and answers | Mandatory |
+| Procurement and sourcing | RFQ reference link added to PO | Mandatory |
+| Procurement and sourcing | Check unit precision for not-stocked items | On by default |
+| Procurement and sourcing | Default broker contract tax information on vendor invoice lines | On by default |
+| Procurement and sourcing | Enable vendor collaboration certification management | On by default |
+| Procurement and sourcing | Maintain vendor bank information using vendor collaboration workspace | On by default |
+| Procurement and sourcing | Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices | On by default |
+| Procurement and sourcing | Purchase agreement matching policy | On by default |
+| Procurement and sourcing | Purchase order delivery date | On by default |
+| Procurement and sourcing | Purchasing card processing | On by default |
+| Procurement and sourcing | Put vendor on hold for purchase orders | On by default |
+| Procurement and sourcing | Sealed bidding for RFQs | On by default |
+| Procurement and sourcing | Synchronize tracking dimensions on intercompany sales and purchase order lines: | On by default |
+| Procurement and sourcing | Limit the number of purchase order lines per batch task | Generally available |
+| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | Generally available |
+| Product information management | Country of origin management feature | Mandatory |
+| Product information management | Enable change management on existing products | Mandatory |
+| Product information management | Engineering notifications for production | Mandatory |
+| Product information management | Improved attribute inheritance for Engineering Change Management | Mandatory |
+| Product information management | Product readiness checks | Mandatory |
+| Product information management | Variant generation for engineering products | Mandatory |
+| Product information management | Clean up product attribute values | On by default |
+| Product information management | Engineering Change Management | On by default |
+| Product information management | Manage changes to formulas and their ingredients | On by default |
+| Product information management | Populate product attribute values | On by default |
+| Rebate management | Rebate Management | On by default |
+| Rebate management | Cancel posted rebate provision with a posting date | Generally available |
+| Rebate management | Credit note calculation enhancement in Rebate management | Generally available |
+| Rebate management | Enable auto negative tier in Rebate management | Generally available |
+| Rebate management | Write-off before rebate claim | Generally available |
+| Sales and marketing | Limit the number of sales order lines per batch task | Mandatory |
+| Sales and marketing | Update Requested receipt date with Confirmed date for intercompany orders | Mandatory |
+| Sales and marketing | Calculate sales totals using multiple threads | On by default |
+| Sales and marketing | Update prices and discounts entered manually for intercompany | On by default |
+| Transportation management | Goods in Transit Receiving and Put away | Mandatory |
+| Warehouse management | Cross-docking templates with location directives | Mandatory |
+| Warehouse management | Deferred put - container | Mandatory |
+| Warehouse management | Disable expected receipts from quality orders that sample blocked inventory | Mandatory |
+| Warehouse management | License plate receiving history | Mandatory |
+| Warehouse management | Manual shipment consolidation | Mandatory |
+| Warehouse management | Maximum execution time for the warehouse management on-hand entries cleanup job | Mandatory |
+| Warehouse management | Validate templates selected for replenishment jobs | Mandatory |
+| Warehouse management | Use faster API for containers closing/reopening on packing station | Mandatory |
+| Warehouse management | Allow editing of physical dimension for a released product and its handling unit | On by default |
+| Warehouse management | Auto update shipment | On by default |
+| Warehouse management | Change the error to a warning when releasing a load where sufficient quantity isn't available | On by default |
+| Warehouse management | Enhanced parser for GS1 barcodes | On by default |
+| Warehouse management | Evaluate work header breaks before work header maximums during work creation | On by default |
+| Warehouse management | Include Confirmed ship and Confirmed receipt dates into date filters on Load planning workbench | On by default |
+| Warehouse management | Item consolidation location utilization | On by default |
+| Warehouse management | License plate receiving enhancements | On by default |
+| Warehouse management | License plate validation on source document lines | On by default |
+| Warehouse management | Line reservation enhancements for the batch number reserv | On by default |ation form feature | On by default |
+| Warehouse management | Location directive inventory picking aging
+| Warehouse management | Manual transfer line picking service for admin or similar trusted users | On by default |
+| Warehouse management | New load planning workbench pages: Enables two new load planning workbench pages | On by default |
+| Warehouse management | Organization wide wave step code | On by default |
+| Warehouse management | Organization-wide "Schedule work creation" wave method | On by default |
+| Warehouse management | Organization-wide system directed work sequencing | On by default |
+| Warehouse management | Outbound sorting | On by default |
+| Warehouse management | Over receipt of load quantities | On by default |
+| Warehouse management | Packaging product dimensions | On by default |
+| Warehouse management | Packing work for packing stations | On by default |
+| Warehouse management | Parent license plates cannot be target license plates | On by default |
+| Warehouse management | Pick line grouping | On by default |
+| Warehouse management | Purchase order quantity left to load calculation using registered quantities | On by default |
+| Warehouse management | Quality Management For Warehouse Processes. | On by default |
+| Warehouse management | Replenishment over location capacity | On by default |
+| Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default |
+| Warehouse management | Scale unit support for warehouse app work lists | On by default |
+| Warehouse management | Scan GS1 barcodes | On by default |
+| Warehouse management | Schedule work creation | On by default |
+| Warehouse management | System directed cluster picking | On by default |
+| Warehouse management | System directed work sequencing | On by default |
+| Warehouse management | Warehouse management app data inquiry flow | On by default |
+| Warehouse management | Warehouse management application - blank GTD | On by default |
+| Warehouse management | Warehouse release rule | On by default |
+| Warehouse management | Wave Load building feature | On by default |
+| Warehouse management | Wave step code | On by default |
+| Warehouse management | Work policy enhancements for inbound work | On by default |
+| Warehouse management | Work split | On by default |
+| Warehouse management | Options for updating the mode of delivery for sales order lines when creating loads | Generally available |
+| Warehouse management | Options for validating ingredient batch expiration dates | Generally available |
+| Warehouse management | Reverse match feature | Generally available |
 
 ## New and updated documentation resources
 
