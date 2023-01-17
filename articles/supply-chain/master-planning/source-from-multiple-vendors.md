@@ -146,7 +146,7 @@ Where:
 
 - **Total quantity** – Represents the vendor's total sourced quantity.
 - **Current allocation (%)** – Is equal to (Vendor's total sourced quantity &divide; Total accumulated quantity) &times; 100%. This value indicates how much of all the sourced quantity has been purchased from this vendor as a percentage of the total.  
-- **Target allocation (%)** – Is the target allocation as defined for the multisource policy for the vendor.
+- **Target allocation (%)** – Is the target allocation as defined by the multisource policy for the vendor.
 - **Allocation deviation (%)** – Is equal to ((Current allocation &minus; Target allocation) &divide; Target allocation) &times; 100%.
 
 ## How master planning suggests a vendor for each planned order
