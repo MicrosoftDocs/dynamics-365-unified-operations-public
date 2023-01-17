@@ -54,10 +54,10 @@ The main accounts that you've previously defined as ledger settlement accounts f
 
 ### Date 
 
-Select this option if the dates of the ledger debit and credit transactions should be considered during the automatic ledger settlements process. When this option is set to **Yes**, enter the **Allowed date difference**. This field is available starting in Microsoft Dynamics 365 Finance version 10.0.32.0.
+Select this option if the dates of the ledger debit and credit transactions should be considered during the automatic ledger settlements process. When this option is set to **Yes**, enter the **Allowed date difference**. This field is available starting in Microsoft Dynamics 365 Finance version 10.0.32.
 
 ## Allowed date difference
-Enter the number of days variance for the debit and credit transactions dates. The variance is calculated as the number of days between the debit and credit transaction dates, searching before and after the selected transaction date. A value of 0 specifies that the transaction dates of the debit and credit transactions must match. This field is available only if the **Date** field is selected.
+Enter the number of days variance for the debit and credit transactions dates. The variance is calculated as the number of days between the debit and credit transaction dates, searching before and after the selected transaction date. A value of 0 specifies that the transaction dates of the debit and credit transactions must match. This field is available when the **Date** field is selected.
 
 ### Main account and posting layer
 
