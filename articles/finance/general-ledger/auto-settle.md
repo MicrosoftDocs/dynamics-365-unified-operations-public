@@ -52,6 +52,13 @@ The next page in the wizard is the **Ledger settlements match criteria** pag
 
 The main accounts that you've previously defined as ledger settlement accounts for the legal entity are shown. (You define main accounts as ledger settlement accounts at **General ledger \> Ledger setup \> General ledger parameters \> Ledger settlements**.)
 
+### Date 
+
+Select this option if the dates of the ledger debit and credit transactions should be considered during the automatic ledger settlements process. When this option is set to **Yes**, enter the **Allowed date difference**. This field is available starting in Microsoft Dynamics 365 Finance version 10.0.32.0.
+
+## Allowed date difference
+Enter the number of days variance for the debit and credit transactions dates. The variance is calculated as the number of days between the debit and credit transaction dates, searching before and after the selected transaction date. A value of 0 specifies that the transaction dates of the debit and credit transactions must match. This field is available only if the **Date** field is selected.
+
 ### Main account and posting layer
 
 The **Main account** and **Posting layer** values are required match criteria. The **Main account** and **Posting layer** values of the ledger debit transaction and credit transaction must be equal to be matched during the automatic ledger settlement process.
@@ -100,6 +107,8 @@ If **Debit** is selected, the automated ledger settlement process starts on the 
 ## Processing a ledger settlement automation
 
 When the automation is run, the system selects ledger transactions for the main accounts that are defined for the process automation series. It orders the transactions by date, by using a date range from the start of the fiscal year to the date when the process automation is run. It matches based on the specified match criteria. The absolute values of the accounting currency amounts of the debit and the credit must match to be settled.
+
+The Automate ledger settlements feature will run the automation for transactions that are dated from the first day of the fiscal year to the current date when the occurrence runs. For fiscal years that end on December 31, you might have to adjust the execution date of your occurrence to ensure that it's run in December. For example, automation is set up to run on the first day of every month. This automation will be run on December 1, 2022, and is scheduled to run on January 1, 2023. We recommend that you change the occurrence for January 1, 2023, so that it runs instead on December 31, 2022. This change will ensure that the transactions that are dated December 2 through 31 will be considered for automatic settlement.
 
 While a main account is being processed by an occurrence of a ledger settlement automation, you can't display it in the **Ledger settlements** page. You must wait until the automation process is completed. We recommend that you schedule the process automation to run outside working hours, to help prevent conflicts.
 
