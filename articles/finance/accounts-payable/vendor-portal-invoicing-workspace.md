@@ -4,7 +4,7 @@
 title: Vendor collaboration invoicing workspace
 description: This article explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 author: abruer
-ms.date: 02/15/2022
+ms.date: 01/15/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,16 +41,16 @@ The **Vendor collaboration invoicing** workspace can be used to view vendor invo
 ### Summary tiles
 
 The **Summary** tiles give an overview of the invoices for the selected vendor. You can view invoices by their state.
--   Draft invoices have not been submitted to workflow.
--   Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in the application.
--   Approved, not paid invoices are those that have been posted, but they have not yet been fully paid.
+-   Draft invoices haven't been submitted to workflow.
+-   Submitted, not approved invoices are those invoices that the vendor has submitted, but they haven't been posted in the application.
+-   Approved, not paid invoices are those that have been posted, but they haven't yet been fully paid.
 -   Paid invoices are those that have been fully paid in the application.
 
 Clicking on a tile will open a filtered view of the **Invoices list** page.
 
 ### Tabular lists
 
-In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: **Draft** and **Submitted**, **Mot approved** lists. While in the **Draft** state, an invoice can be submitted to workflow or deleted. The last tabular list is an option to find invoices. You can filter as you search, to allow for faster searches.
+In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: **Draft** and **Submitted**, **Not approved** lists. While in the **Draft** state, an invoice can be submitted to workflow or deleted. The last tabular list is an option to find invoices. You can filter as you search, to allow for faster searches.
 
 ### All vendor invoices list page
 
@@ -69,7 +69,7 @@ The confirmation dialog will ask for:
 
 
 -   If the purchase order number is provided by the vendor, the invoice is associated with purchase order. By default, all of the lines from the vendor's purchase order will appear on the new invoice. The quantity and cost information can be edited prior to submitting the vendor invoice to workflow. You can attach files, notes, images, and URLs to an invoice before submitting it.
--   If the purchase order number is not provided, the invoice will be considered as a non-PO invoices. Vendors are able to create non-PO invoices based on the items with granted procurement categories. 
+-   If the purchase order number isn't provided, the invoice will be considered as a non-PO invoices. Vendors are able to create non-PO invoices based on the items with granted procurement categories. 
 
 
 For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
