@@ -50,8 +50,8 @@ To manually manage your site map and host it in the site builder Media library, 
 1. Select **Upload \> Upload media items**.
 1. In the File Explorer window, browse to your custom sitemap XML file, select it, and then select **Open**.  
 1. In **Upload file** flyout menu, select the **Publish media items after upload** checkbox, and then select **Upload now**.
-1. In the Media library, next to the **Search** box, select the the information (**i**) symbol to display the property pane on the right. 
-1. Select the site map file, and in the properties pane under **Public URL**, copy the the site map file URL. 
+1. In the Media library, next to the **Search** box, select the information (**i**) symbol to display the property pane on the right. 
+1. Select the site map file, and in the properties pane under **Public URL**, copy the site map file URL. 
 1. Download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
 1. Using a text editor, paste the site map file URL you copied above into the **Sitemap** key:value pair, as shown in the following example.
 
