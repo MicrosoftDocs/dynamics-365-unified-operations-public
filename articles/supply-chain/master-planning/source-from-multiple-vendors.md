@@ -133,6 +133,21 @@ To view and compare target and actual vendor allocations, follow these steps.
 
 This feature is useful if, for example, you want to determine whether your Purchasing department is firming orders as master planning suggests or making changes. (If purchasers are following master planning's suggestions, the actual allocation will be close to the current allocation. However, if they're making changes, actual allocations might be quite different than the current allocation.)
 
+### Example 
+
+Given that there is a product with a multisource policy associated, the table viewed on this form could be as follows:
+
+| Vendor account | Total quantity | Current allocation (%) | Target allocation (%) | Allocation deviation (%) |
+| --- | --- | --- | --- | --- |
+| 1001 | 350 | 63.64 | 70 | -9.09 |
+| 1002 | 200 | 36.36 | 30 | 21.21 |
+
+where
+- Total quantity: represents the vendor's total sourced quantity
+- Current allocation (%) = (Vendor's total sourced quantity &divide Total accumulated quantity) x 100 % . It indicates how much of all the sourced quantity is purchased from this vendor as a percentage of the total.  
+- Target allocation (%) is the defined target allocation as defined for the multisource policy for the vendor
+- Allocation deviation (%) = ((Current allocation - Taget allocation) &divide Target allocation) x 100 %
+
 ## How master planning suggests a vendor for each planned order
 
 Each time that master planning suggests a vendor for a planned purchase order, it selects the vendor that will bring the total vendor allocations for the current period closest to the target allocation, as defined by the relevant multisource policy assignment and minimum vendor quantities.
@@ -239,7 +254,7 @@ For vendor A, the target allocation is 80 percent. For vendor B, it's 20 percent
 <td>100</td>
 <td>50%</td>
 <td>50%</td>
-<td>25%</td>
+<td>30%</td>
 <td>200</td>
 </tr>
 <tr>
@@ -261,6 +276,6 @@ For vendor A, the target allocation is 80 percent. For vendor B, it's 20 percent
 </tbody>
 </table>
 
-\* 100 accumulated + current demand
+\* 100 accumulated + 100 current demand
 
-\*\* Average of (100 – 80), (20 – 0) = average (20, 20) = 20
+\*\* (|100 % - 80 %| + |20 % – 0 %|) &divide 2 = 20 %
