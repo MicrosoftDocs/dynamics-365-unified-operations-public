@@ -4,7 +4,7 @@
 title: Customer orders in point of sale (POS)
 description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 11/29/2022
+ms.date: 01/30/2023
 ms.topic: overview
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User, Developer, IT Pro
@@ -20,6 +20,7 @@ ms.search.validFrom: 2016-02-28
 # Customer orders in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 
