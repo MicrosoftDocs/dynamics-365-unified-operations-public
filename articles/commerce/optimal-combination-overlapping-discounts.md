@@ -1,6 +1,6 @@
 ---
 title: Determine the optimal combination of overlapping discounts
-description: This articles describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
+description: This article describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 01/30/2023
 ms.topic: article
@@ -19,15 +19,15 @@ ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This articles describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
+This article describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
 
 When discounts overlap, you must determine the combination of overlapping discounts that will produce the lowest transaction total or the highest total discount. When the discount amount varies according to the price of the products that are purchased, such as in the common "Buy 1, get 1 X percent off" (BOGO) retail discount, this process becomes an issue of combinatorial optimization.
 
-This article applies to Microsoft Dynamics AX 2012 R3 with KB 3105973 (released November 2, 2015) or later, and to Dynamics 365 Commerce. To determine the combination overlapping discounts to apply in a timely manner, we have introduced a method for applying overlapping discounts. We call this new method **marginal value ranking**. In the marginal value ranking method, a value is calculated for each overlapping discount by using the discount's value on the shared products. The overlapped discounts are then applied from the highest relative value to the lowest relative value. For details about the new method, see the "Marginal value" section, later in this article. Marginal value ranking isn't used when the discount amounts for a product aren't affected by another product in the transaction. For example, this method isn't used for two simple discounts, or for a simple discount and a single product quantity discount.
+This article applies to Microsoft Dynamics AX 2012 R3 with KB 3105973 (released November 2, 2015) or later, and to Dynamics 365 Commerce. To determine the combination overlapping discounts to apply in a timely manner, we've introduced a method for applying overlapping discounts. We call this new method **marginal value ranking**. In the marginal value ranking method, a value is calculated for each overlapping discount by using the discount's value on the shared products. The overlapped discounts are then applied from the highest relative value to the lowest relative value. For details about the new method, see the "Marginal value" section, later in this article. Marginal value ranking isn't used when the discount amounts for a product aren't affected by another product in the transaction. For example, this method isn't used for two simple discounts, or for a simple discount and a single product quantity discount.
 
 ## Discount examples
 
-You can create an unlimited number of discounts on a common set of products. However, because there is no limit, performance issues can occur when you try to calculate the discounts that should be used on the various products. The following examples illustrate this issue in more detail. In example 1, we start with two products and two overlapping discounts. Then, in example 2, we show how the issue evolves as more products are added.
+You can create an unlimited number of discounts on a common set of products. However, because there's no limit, performance issues can occur when you try to calculate the discounts that should be used on the various products. The following examples illustrate this issue in more detail. In example 1, we start with two products and two overlapping discounts. Then, in example 2, we show how the issue evolves as more products are added.
 
 ### Example 1: Two products and two discounts
 
@@ -35,7 +35,7 @@ In this example, two products are required in order to qualify for each discount
 
 ![Example of two Best price discounts.](./media/overlapping-discount-combo-01.jpg)
 
-For any two products, the better of these two discounts depends on the prices of the two products. When the price of both products is equal or almost equal, discount 1 is better. When the price of one product is significantly less than the price of the other product, discount 2 is better. Here is the mathematical rule for evaluating these two discounts against each other.
+For any two products, the better of these two discounts depends on the prices of the two products. When the price of both products is equal or almost equal, discount 1 is better. When the price of one product is significantly less than the price of the other product, discount 2 is better. Here's the mathematical rule for evaluating these two discounts against each other.
 
 ![Rule for evaluating the discounts.](./media/overlapping-discount-combo-02.jpg)
 
@@ -44,10 +44,10 @@ For any two products, the better of these two discounts depends on the prices of
 
 ### Example 2: Four products and two discounts
 
-Next, we will use four products and the same two discounts. All four products qualify for both discounts. There are twelve possible combinations. In the end, two discounts will be applied to the transaction in one of three combinations: two applications of discount 1, two applications of discount 2, or one application of discount 1 and one application of discount 2. To illustrate the possible combinations, we will look at two different sets of four products that have different prices:
+Next, we'll use four products and the same two discounts. All four products qualify for both discounts. There are twelve possible combinations. In the end, two discounts will be applied to the transaction in one of three combinations: two applications of discount 1, two applications of discount 2, or one application of discount 1 and one application of discount 2. To illustrate the possible combinations, we'll look at two different sets of four products that have different prices:
 
 - All four products have the same price, $15.00. In this case, the best discount combination is two applications of discount 1. Two products will be full price, and two will be 50 percent off. The discounted total for the transaction is $45 (15 + 15 + 7.50 + 7.50), which is $15 (25 percent) off the undiscounted total of $60. Discount 2 is only $12 (20 percent).
-- Two products are $20 each, one product is $15, and one product is $5. In this case, the best discount combination is one application of discount 2 and one application of discount 1. The following tables illustrates the discounts.
+- Two products are $20 each, one product is $15, and one product is $5. In this case, the best discount combination is one application of discount 2 and one application of discount 1. The following tables illustrate the discounts.
 
 To read the tables, use one product from a row and one product from a column. For example, in the table for discount 1, when you combine the two $20 products, you get $10 off. In the table for discount 2, when you combine the $15 product and the $5 product, you get $4 off.
 
@@ -62,7 +62,7 @@ First, we find the largest discount that is available from any two products by u
 
 ## Total possible combinations
 
-This section continues the example from the previous section. We will add more products and another discount, and see how many combinations must be calculated and compared. The following table shows the number of possible discount combinations as the product quantity increases. The table shows what happens both when there are two overlapping discounts, as in the previous example, and when there are three overlapping discounts. The number of possible discount combinations that must be evaluated soon exceeds what even a fast computer can calculate and compare quickly enough to be acceptable for retail transactions.
+This section continues the example from the previous section. We'll add more products and another discount, and see how many combinations must be calculated and compared. The following table shows the number of possible discount combinations as the product quantity increases. The table shows what happens both when there are two overlapping discounts, as in the previous example, and when there are three overlapping discounts. The number of possible discount combinations that must be evaluated soon exceeds what even a fast computer can calculate and compare quickly enough to be acceptable for retail transactions.
 
 ![Number of possible discount combinations as the product quantity increases.](./media/overlapping-discount-combo-05.jpg)
 
