@@ -55,13 +55,13 @@ You can select the tables and entities that should be staged in data lake.
 
     ![Selecting tables.](./media/Export-Table-to-Data-lake-Tables-Running-state.png)
 
-4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of the data. When the initial copy is completed, the system changes the status to **Running**. After the initial copy, as data changes in finance and operations apps, the data gets updated in the lake. You can see the most recent data change in the **Last processed change** column. If there are no data changes in the system after initial copy, this field will remain blank.
+4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of the data. When the initial copy is completed, the system changes the status to **Running**. As data changes in finance and operations apps after the initial copy, the data is updated in the data lake. You can see the most recent data change in the **Last processed change** column. If there are no data changes in the system after the initial copy, this field will remain blank.
 
     In the event of an error, the system shows the status as **Deactivated**.
 
     You can consume data in the data lake when the status is **Running**. If you consume data in the data lake while the status is **Initializing** or **Deactivated** status, you might not see all the data. 
 
-    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you are selecting the underlying tables that comprise the entity. 
+    If you aren't familiar with the specific tables that you require, you can select tables by using entities. Entities are a higher-level abstraction of data and might include multiple tables. By selecting entities, you're selecting the underlying tables that make up the entity. 
 
     > [!NOTE]
     > When you open the **Choose using Entities** tab for the first time, you might notice that the list of entities on the page is empty. The system might require some time to fill in the list of entities. You can force a refresh of the list by selecting **Manage \> Rebuild data feed catalog** on the Action Pane. 
@@ -80,49 +80,49 @@ When you select data, the Export to Azure Data Lake service makes an initial cop
 
 After the initial copy is made, the system continuously updates the data as changes occur in finance and operations apps. When records are inserted, updated, or deleted, data records in the data lake are inserted, updated, or deleted accordingly.
 
-If you use the "near-real-time change" feature, data in the data lake is updated within minutes of a change in the finance and operations environment. Otherwise, data in the data lake is updated within a few hours of a change in the finance and operations environment. 
+If you use the **Near real-time data changes** feature, data in the data lake is updated within minutes of a change in the finance and operations environment. Otherwise, data in the data lake is updated within a few hours of a change in the finance and operations environment. 
 
 The Export to Data Lake page in a finance and operations environment shows the time stamp of the last update of the data in the data lake. The system also adds data fields that help you identify the time when the data in the data lake was updated. Your downstream processes can use the time stamps to detect and process data as it changes in the data lake.
 
 ## Troubleshooting common issues and errors
 
-### Export to Data Lake feature is not available in your region and/or your environment at this time
+### Export to Data Lake feature is not available in your region and/or your environment at this time.
 This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature may not be available in all Azure regions where finance and operations apps are available, or for your environment. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch with upcoming improvements and availability in your region.
+This feature might not be available in all Azure regions where finance and operations apps are available, or for your environment. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch with upcoming improvements and availability in your region.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
 Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake add-in is not installed. 
-Ask your administrator to install this add-in using Dynamics Lifecycle Services (LCS). Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
+Ask your administrator to install this add-in using Dynamics Lifecycle Services. Before you can use this feature, you need to configure the export to the data lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
-### Export to Data Lake feature failed to install in Dynamics Life Cycle Services (LCS). 
-Ask your administrator to re-install the Export to Data Lake add-in. If this issue persists, contact Support. When you configure the Export to Data Lake feature, the system may report an error. Or, there may be an error when you access the data lake after configuration due to a change in your environments. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
+### Export to Data Lake feature failed to install in Lifecycle Services. 
+Ask your administrator to reinstall the Export to Data Lake add-in. If this issue persists, contact Support. When you configure the Export to Data Lake feature, the system may report an error. Or, there may be an error when you access the data lake after configuration due to a change in your environments. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
 
 ### Export to Data Lake feature is temporarily unavailable. Please check back later.
-If you see this error for a prolonged period of time, contact Support.  
+If you see this error for a prolonged period of time, contact Support.
 
-### Some fields (ex. long strings, Memo fields) are missing in the data lake
-The system does not export fields of type Memo, nVarchar(max), VarBinary, or Blob into the data lake. If you choose a table with fields of these types, the system will ignore these fields and export others. Microsoft is working on enabling these special fields in the future. If you would like to stay in touch with the product team and learn about upcoming features, you can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
+### Some fields (for example, long strings or Memo fields) are missing in the data lake.
+The system doesn't export fields of the **Memo**, **nVarchar(max)**, **VarBinary**, or **Blob** type into the data lake. If you choose a table that has fields of these types, the system will ignore those fields and export others. Microsoft is working to enable these special fields in the future. If you want to stay in touch with the product team and learn about upcoming features, you can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
 
-### How to locate data in the lake
-Data exported using this feature is stored in a folder structure in the storage account you [configured via Life cycle services](configure-export-data-lake.md). Exact location of data within the folder structure depends on table metadata properties as described [here](azure-data-lake-enhanced-metadata.md). In the event these metadata properties change, the location of data within the folder structure may change. You can detect such changes and find the new path using the "Initialize Business event" as explained [here](azure-data-lake-generates-biz-events.md). While consuming data files in the lake is possible, you can access data using T-SQL by configuring Azure Synapse Analytics serverless SQL pools using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). 
+### How do I find data in the data lake?
+Data that's exported by using this feature is stored in a folder structure in the storage account that you [configured via Lifecycle Services](configure-export-data-lake.md). The exact location of data in the folder structure depends on table metadata properties, as described in [Data and metadata stored in Azure Data Lake](azure-data-lake-enhanced-metadata.md). If these metadata properties change, the location of data in the folder structure might also change. You can detect these changes and find the new path by using the Initialize Business event, as explained in [Business events generated by the Export to Azure Data Lake service](azure-data-lake-generates-biz-events.md). Although consumption of data files in the data lake is possible, you can access data by using T-SQL. To use this approach, configure Azure Synapse Analytics serverless SQL pools by using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). 
 
-### No data has been exported, I can't find the data file 
-If the table you have chosen has no data, the system will show that the table is in **Running** state. However, the system will not create a CSV file in the lake (you may see other system files in the folder). When data is added in Finance and Operations, the CSV file will be created with the data. 
+### No data has been exported, and I can't find the data file.
+If the table that you've chosen has no data, the system will show that the table is in a **Running** state. However, the system won't create a comma-separated values (CSV) file in the data lake (but you might see other system files in the folder). When data is added in finance and operations apps, the CSV file will be created with the data. 
 
-### Some tables have been "Initialized" without user action
-When you add a table, on completion of the initial copy, the table will remain in **Running** state and will update data changes in the lake. On rare occasions (for example, if there was a database restore or an issue in the underlying environment), the system may re-initialize data in the lake to recover from issues. If you are copying change data into a downstream system, you may need to react to re-initialize events. You can use **Business events** to monitor such conditions as explained in [Business events generated by the Export to Azure Data Lake service](azure-data-lake-generates-biz-events.md) 
+### Some tables have been "initialized" without user action.
+After you add a table, and the initial copy is completed, the table will remain in a **Running** state and update data changes in the data lake. On rare occasions (for example, if there was a database restore or an issue in the underlying environment), the system might reinitialize data in the data lake to recover from issues. If you're copying change data into a downstream system, you might have to react to reinitialize events. You can use **business events** to monitor these conditions, as explained in [Business events generated by the Export to Azure Data Lake service](azure-data-lake-generates-biz-events.md).
 
-### When I read data files using Synapse serverless, I notice an intermittent error "Unexpected end-of-input within record at..."
-When tables records are frequently updated or deleted in finance and operations a[[s, you may notice a read/ write contention on CSV files with the above error. This happens when Synapse serverless SQL service queries the same CSV file as it is being updated. In many instances, re-trying the query may resolve this issue. 
+### When I read data files by using Synapse serverless, I notice an intermittent error: "Unexpected end-of-input within record at...."
+When tables records are frequently updated or deleted in finance and operations apps, you might notice a read/write contention on CSV files, and this error might occur. This issue occurs when the Synapse serverless SQL service queries a CSV file as it's being updated. In many cases, you might be able to fix this issue by retrying the query. 
 
-### How can I enable **near real time** or the **Enhanced metadata** feature
-In order to enable new features, you need to re-install the add-in using the process mentioned in [Configure export to Azure Data Lake](configure-export-data-lake.md). When you uninstall the add-in, existing data in the lake will remain. When you re-install the add-in, you need to add the tables using the **Export to Data lake** form. System will re-initialize the tables however the folder path will not change, and your downstream consumption may not be impacted.  
+### How can I enable the Near real-time data changes feature or the Enhanced metadata feature?
+To enable new features, you must reinstall the add-in by using the process that's mentioned in [Configure export to Azure Data Lake](configure-export-data-lake.md). When you uninstall the add-in, existing data in the data lake will remain. When you reinstall the add-in, you must add the tables by using the **Export to Data lake** page. The system will reinitialize the tables, but the folder path won't change. Your downstream consumption might not be affected.
 
-### How can I rotate or renew application secrets in the Key vault provided for the **Export to data lake** add-in
-We advise you to renew or extend application secrets periodically. You can create a new client secret and replace with the secrets in the key vault. 
+### How can I rotate or renew application secrets in the key vault that's provided for the Export to data lake add-in?
+We recommend that you periodically renew or extend application secrets. You can create a new client secret and replace the secrets in the key vault.
 
 ### Status codes with extended errors
 When an error occurs in a table that you added to Export to Data Lake, you may see an error code in the status column. The following error codes provide the cause of the error and how to correct the issue.
@@ -142,23 +142,23 @@ When an error occurs in a table that you added to Export to Data Lake, you may s
 | 420        | Failed to access the key vault or the key vault secrets. | Service can't access the key vault or the secrets in the key vault.  Verify that your Azure subscription has not expired. <br> <br> Verify that you have created the service principal by following the steps in [Configure export to Azure Data Lake - Create service principal](configure-export-data-lake.md#createServicePrincipal). <br> <br> Verify that the Key vault contains all the required secrets by following the steps in [Configure export to Azure Data Lake - Add secrets](configure-export-data-lake.md#addsecrets). <br><br> Verify that you have provided the correct key vault URI in the configuration steps in [Configure export to Azure Data Lake - Install add-in](configure-export-data-lake.md#installaddin). | 
 | 425        | Failed to locate the Azure Tenant ID for the environment. | Verify that you have provided the correct Azure tenant ID by following the steps in [Configure export to Azure Data Lake - Install add-in](configure-export-data-lake.md#installaddin).  | 
 | 430        | Failed to access the environment. | Ensure that the environment is available and not in a deleted or inactive state.  |
-| 435        | Files in the lake are corrupted or invalid. | The system has detected corrupted files or an invalid folder structure in your data lake. The system manages files and folders in the lake provided in the configuration. You should not modify files or the folder structure in the data lake yourself. Verify that your users or a process has not modified files or folders in the lake. You can reactivate the tables to see if the issue is resolved. If this does not address the issue, uninstall and re-install the Export to Data Lake add-in.  |
+| 435        | Files in the lake are corrupted or invalid. | The system has detected corrupted files or an invalid folder structure in your data lake. The system manages files and folders in the lake provided in the configuration. You should not modify files or the folder structure in the data lake yourself. Verify that your users or a process has not modified files or folders in the lake. You can reactivate the tables to see if the issue is resolved. If this does not address the issue, uninstall and reinstall the Export to Data Lake add-in.  |
 | 439        | System can't find enhanced metadata for the table you have chosen | You need to update the version of Finance and Operations to 10.0.28 (PU52) and manually refresh metadata using the **Manage > Republish metadata** option. You will need to wait a few minutes after this option to verify whether the issues are resolved.      |
 | 440        | System can't find enhanced metadata in your environment | You will receive this error if you have chosen the "Enhanced metadata" feature. In this case, the system can't find enhanced metadata. To resolve the issue, ensure that you have installed finance and operations version 10.0.28 (PU52) or later. If you are on the correct version, you can also manually refresh metadata using the **Manage > Republish metadata** option. You will need to wait a few minutes after this option to verify whether the issues are resolved.  |
 
 
 #### Error status codes 5xx indicate a system error encountered while exporting data
-Due to the error, the system has paused data export – data that exists in the lake won't be updated until the error is resolved. Try to deactivate and activate the table to see if this resolves the issue. Note that deactivating and activating the table may cause the system to re-initialize the data in the lake by taking a full copy. If the issue persists, contact Microsoft support with the table name and the error code.
+Due to the error, the system has paused data export – data that exists in the lake won't be updated until the error is resolved. Try to deactivate and activate the table to see if this resolves the issue. Note that deactivating and activating the table may cause the system to reinitialize the data in the lake by taking a full copy. If the issue persists, contact Microsoft support with the table name and the error code.
 
 #### Error status codes 8xx indicates an issue with finance and operations apps database 
-The Export to Microsoft Azure Data Lake feature uses Change data capture feature in finance and operations apps database. Error 8xx indicates an issue with Change data capture feature in the finance and operations apps database. This may be the result of a database maintenance operation or another issue impacting database operations. Service management team actively working on resolving this issue and no customer action is required. If the issue persists, you may contact Microsoft support for an update. 
+The Export to Microsoft Azure Data Lake feature uses Change data capture feature in finance and operations apps database. Error 8xx indicates an issue with Change data capture feature in the finance and operations apps database. This may be the result of a database maintenance operation or another issue impacting database operations. The Service management team is actively working on resolving this issue and no customer action is required. If the issue persists, you may contact Microsoft support for an update. 
 
 #### Error status codes 9xx indicate an issue with Finance and Operations environment
-Error codes 9xx indicate a system configuration issue with Finance and Operations environment. Service management team actively working on resolving this issue and no customer action is required. If the issue persists, you may contact Microsoft support for an update.
+Error codes 9xx indicate a system configuration issue with Finance and Operations environment. The Service management team is actively working on resolving this issue and no customer action is required. If the issue persists, you may contact Microsoft support for an update.
                                                                                                                                                                     |
 
 > [!NOTE]
-> Deactivating and activating the table may cause the system to re-initialize the data in the lake by creating a full copy. If this is a large table, the initialize process may take some time. In the future, the system may automatically update data in the lake to reflect the table structure changes. 
+> Deactivating and activating the table may cause the system to reinitialize the data in the lake by creating a full copy. If this is a large table, the initialize process may take some time. In the future, the system may automatically update data in the lake to reflect the table structure changes. 
 
 
 
