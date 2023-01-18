@@ -2,7 +2,7 @@
 title: Parameters not used by Planning Optimization
 description: This article lists the parameters that Planning Optimization doesn't currently consider during its operation.
 author: t-benebo
-ms.date: 18/01/2023
+ms.date: 01/18/2023
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
