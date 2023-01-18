@@ -4,7 +4,7 @@
 title: Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China 
 description: This article provides information about Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China.
 author: kfend
-ms.date: 07/14/2022
+ms.date: 01/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 finance and operations apps operated by 21Vianet supports
 ## Compliance
 Customers in China have the option to choose 21Vianet's sovereign cloud deployment offering, but they may also deploy to the public cloud offering managed by Microsoft. The public cloud offering by Microsoft is globally connected over public Internet and has data centers outside mainland China. Choosing the public cloud managed by Microsoft has the advantage that if the customer purchases Microsoft Azure, Dynamics 365 and Microsoft 365, these products and services can coexist on the same Azure Active Directory tenant.
 
-The final deployment option is up to the customer's assessment of how it should operate in mainland China to meet regulatory requirements. For those customers who are wondering how to be compliant, it is advisable to engage their internal compliance team to review regulatory requirements by industry they belong to and the mode of operation in mainland China to determine if they need to deploy a separate instance through 21Vianet or can stay with a global cloud deployment option.
+The final deployment option is up to the customer's assessment of how it should operate to meet regulatory requirements in mainland China. For those customers who are wondering how to be compliant, it is advisable to engage their internal compliance team to review regulatory requirements by the industry they belong to and the mode of operation in mainland China to determine if they need to deploy a separate instance through 21Vianet or can stay with a global cloud deployment option.
 
 ## Licensing
 For Microsoft Dynamics 365 online services operated by 21Vianet, licenses cannot be acquired from Microsoft directly, since the services are not managed and delivered by Microsoft.
