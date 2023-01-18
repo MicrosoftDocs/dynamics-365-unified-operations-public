@@ -41,7 +41,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | This feature gives you the option to send a RFQ amendment and RFQ cancellation emails using either SSRS report or email distributor framework. This feature adds new settings to both the "Amendment" and "Cancelation" group of fields of the "Request for quotation" tab in the Procurement and sourcing parameters. When this feature is enabled, the new "Send email using" options become available and can be used for determining the preferred way of sending emails. SSRS report is the default value. Selecting the SSRS report option means that an email is sent as part of generating the report using the SSRS report. This option should be used if only a few email recipients should receive the email or if the report should be delivered as an attachment to the email. Selecting the Email distributor option means that an email is sent using the email distributor framework. With the email distributor option, the email can be monitored in the Batch email sending status. This option should be used when emails are sent to many recipients. When using the email distributor option, the report cannot be sent as an attachment. Without this feature, the system always sends email using the rendering of the SSRS report. |
 | Procurement and sourcing | Purchase order workflow submission and approval performance enhancement | <!-- KFM: in FM, this feature is both on by default and showing a preview banner (Missing "(Preview)"?). What is going on? Is this even new? Ask Smitha --> This feature improves the performance of the purchase order workflow submission dialog and approval dialog which is most noticeable on purchase orders with larger number of lines. When this feature is enabled, purchase order totals and accounting distributions are calculated and validated by a workflow execution. Validation errors surface in the workflow history. Please note that this feature is not supported with budget control enabled. |
 | Master planning | Forecast demand plan import service. <!-- KFM: Missing "(Preview)". Period in feature name. --> | Allows multiple threads for importing forecast demand plan lines. |
 | Production control | Production batch balancing enhanced onhand grid capability |  Provides an enhanced on-hand grid capability for the batch balancing process. <!-- KFM: More detail would be nice. Doc needed? On-hand what, inventory? --> |
@@ -89,57 +88,57 @@ The table also lists features that were previously in public preview but have ch
 | Production control | [Production teams in the production floor execution interface](../production-control/production-floor-execution-use.md) | On by default |
 | Production control | [Register material consumption on the production floor execution interface (non-WMS)](../production-control/production-floor-execution-use.md) | On by default |
 | Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | On by default |
-| Master planning | Batchable firming and consolidation for planned bulk and pack batch orders | Mandatory |
-| Master planning | Include items with on-hand when pre-processing filters are enabled | Mandatory |
-| Master planning | Planned orders simplified | Mandatory |
-| Master planning | Azure Machine Learning Service for demand forecasting | On by default |
-| Master planning | Make-to-order supply automation | On by default |
-| Master planning | Priority driven MRP support for Planning Optimization | On by default |
-| Master planning | Group transactions in Planning Optimization | On by default |
-| Master planning | CTP for Planning Optimization | Generally available |
-| Master planning | Source products and materials from multiple vendors using Planning Optimization | Generally available |
-| Master planning | Consider inventory lead time when creating a planned transfer order | Generally available |
-| Procurement and sourcing | Add lines to PO invoices associated with a purchase agreement | Mandatory |
-| Procurement and sourcing | Allow vendors to apply for procurement categories through vendor collaboration | Mandatory |
-| Procurement and sourcing | Bid submission success message | Mandatory |
-| Procurement and sourcing | Clean up purchase-order update history | Mandatory |
-| Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Mandatory |
-| Procurement and sourcing | Purchasing cXML enhancements | Mandatory |
-| Procurement and sourcing | RFQ questions and answers | Mandatory |
-| Procurement and sourcing | RFQ reference link added to PO | Mandatory |
-| Procurement and sourcing | Check unit precision for not-stocked items | On by default |
-| Procurement and sourcing | Default broker contract tax information on vendor invoice lines | On by default |
-| Procurement and sourcing | Enable vendor collaboration certification management | On by default |
-| Procurement and sourcing | Maintain vendor bank information using vendor collaboration workspace | On by default |
-| Procurement and sourcing | Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices | On by default |
-| Procurement and sourcing | Purchase agreement matching policy | On by default |
-| Procurement and sourcing | Purchase order delivery date | On by default |
-| Procurement and sourcing | Purchasing card processing | On by default |
-| Procurement and sourcing | Put vendor on hold for purchase orders | On by default |
-| Procurement and sourcing | Sealed bidding for RFQs | On by default |
-| Procurement and sourcing | Synchronize tracking dimensions on intercompany sales and purchase order lines: | On by default |
-| Procurement and sourcing | Limit the number of purchase order lines per batch task | Generally available |
-| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | Generally available |
-| Product information management | Country of origin management feature | Mandatory |
-| Product information management | Enable change management on existing products | Mandatory |
-| Product information management | Engineering notifications for production | Mandatory |
-| Product information management | Improved attribute inheritance for Engineering Change Management | Mandatory |
-| Product information management | Product readiness checks | Mandatory |
-| Product information management | Variant generation for engineering products | Mandatory |
-| Product information management | Clean up product attribute values | On by default |
-| Product information management | Engineering Change Management | On by default |
-| Product information management | Manage changes to formulas and their ingredients | On by default |
-| Product information management | Populate product attribute values | On by default |
-| Rebate management | Rebate Management | On by default |
-| Rebate management | Cancel posted rebate provision with a posting date | Generally available |
-| Rebate management | Credit note calculation enhancement in Rebate management | Generally available |
-| Rebate management | Enable auto negative tier in Rebate management | Generally available |
-| Rebate management | Write-off before rebate claim | Generally available |
-| Sales and marketing | Limit the number of sales order lines per batch task | Mandatory |
-| Sales and marketing | Update Requested receipt date with Confirmed date for intercompany orders | Mandatory |
-| Sales and marketing | Calculate sales totals using multiple threads | On by default |
-| Sales and marketing | Update prices and discounts entered manually for intercompany | On by default |
-| Transportation management | Goods in Transit Receiving and Put away | Mandatory |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Mandatory |
+| Master planning | [Include items with on-hand when pre-processing filters are enabled](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled) | Mandatory |
+| Master planning | [Planned orders simplified](../master-planning/planning-optimization/planned-orders-simplified.md) | Mandatory |
+| Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | On by default |
+| Master planning | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | On by default |
+| Master planning | [Priority driven MRP support for Planning Optimization](../master-planning/planning-optimization/priority-based-planning.md) | On by default |
+| Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | On by default |
+| Master planning | [CTP for Planning Optimization](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Generally available |
+| Master planning | [Source products and materials from multiple vendors using Planning Optimization](../master-planning/source-from-multiple-vendors.md) | Generally available |
+| Master planning | [Consider inventory lead time when creating a planned transfer order](whats-new-scm-10-0-27.md) | Generally available |
+| Accounts payable | Add lines to PO invoices associated with a purchase agreement | Mandatory <!-- KFM: Finance feature (not Procurement)? Zero documentation --> |
+| Procurement and sourcing | [Allow vendors to apply for procurement categories through vendor collaboration](../procurement/category-requests-from-vendors.md) | Mandatory |
+| Procurement and sourcing | Bid submission success message | Mandatory <!-- KFM: zero documentation --> |
+| Procurement and sourcing | [Clean up purchase-order update history](whats-new-scm-10-0-23.md)  | Mandatory |
+| Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Mandatory <!-- KFM: zero documentation --> |
+| Procurement and sourcing | [Purchasing cXML enhancements](../procurement/purchasing-cxml-enhancements.md) | Mandatory |
+| Procurement and sourcing | [RFQ questions and answers](../procurement/rfq-question.md) | Mandatory |
+| Procurement and sourcing | RFQ reference link added to PO | Mandatory  <!-- KFM: UI says on by default (no change since 10.0.21). Zero documentation --> |
+| Procurement and sourcing | Check unit precision for not-stocked items | On by default <!-- KFM: zero documentation --> |
+| Procurement and sourcing | [Default broker contract tax information on vendor invoice lines](whats-new-scm-10-0-27.md) | On by default |
+| Accounts payable | [Enable vendor collaboration certification management](../../finance/public-sector/manage-vendor-certification.md) | On by default <!-- KFM: Finance feature (not Procurement)? --> |
+| Accounts payable | [Maintain vendor bank information using vendor collaboration workspace](../../finance/accounts-payable/maintain-vendor-bank-info.md) | On by default <!-- KFM: UI says mandatory. Finance feature (not Procurement)? --> |
+| Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | On by default |
+| Procurement and sourcing | Purchase agreement matching policy | On by default <!-- KFM: UI says GA (no change?). Zero documentation. --> |
+| Procurement and sourcing | Purchase order delivery date | On by default <!-- KFM: UI says GA (no change?). Zero documentation. --> |
+| Accounts payable | Purchasing card processing | On by default <!-- KFM: Finance feature (not Procurement)? Zero documentation --> |
+| Procurement and sourcing | [Put vendor on hold for purchase orders](whats-new-scm-10-0-29.md) | On by default <!-- KFM: UI says mandatory. -->  |
+| Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | On by default |
+| Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | On by default |
+| Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | Generally available <!-- KFM: UI says on by default. --> |
+| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | Generally available <!-- KFM: Zero documentation. --> |
+| Product information management | [Country of origin management feature](../pim/country-of-origin.md) | Mandatory |
+| Engineering change management | [Enable change management on existing products](../engineering-change-management/change-management-existing-products.md) | Mandatory <!-- KFM: Not listed in FM UI. --> |
+| Engineering change management | [Engineering notifications for production](../engineering-change-management/engineering-change-management.md) | Mandatory <!-- KFM: Not listed in FM UI. --> |
+| Engineering change management | [Improved attribute inheritance for Engineering Change Management](../engineering-change-management/engineering-attributes-and-search.md) | Mandatory <!-- KFM: Not listed in FM UI. --> |
+| Engineering change management | [Product readiness checks](../engineering-change-management/product-readiness.md) | Mandatory <!-- KFM: Not listed in FM UI. --> |
+| Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | Mandatory <!-- KFM: Not listed in FM UI. --> |
+| Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | On by default |
+| Engineering change management | [Engineering Change Management](../engineering-change-management/product-engineering-overview.md) | On by default <!-- KFM: Was already on by default (10.0.25)? --> |
+| Engineering change management | [Manage changes to formulas and their ingredients](../engineering-change-management/manage-formula-changes.md) | On by default <!-- KFM: Was already on by default (10.0.25)? --> |
+| Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | On by default |
+| Shared AP and AR | [Rebate Management](../rebate-management/rebate-management-overview.md) | On by default <!-- KFM: Strange module name (actually Rebate management?) -->  |
+| Shared AP and AR | Cancel posted rebate provision with a posting date | Generally available <!-- KFM: Zero documentation. Strange module name (actually Rebate management?) --> |
+| Shared AP and AR | Credit note calculation enhancement in Rebate management | Generally available <!-- KFM: Zero documentation. Strange module name (actually Rebate management?) --> |
+| Shared AP and AR | Enable auto negative tier in Rebate management | Generally available <!-- KFM: Zero documentation. Strange module name (actually Rebate management?) --> |
+| Shared AP and AR | Write-off before rebate claim | Generally available <!-- KFM: Zero documentation. Strange module name (actually Rebate management?) --> |
+| Sales and marketing | Limit the number of sales order lines per batch task | Mandatory <!-- KFM: Zero documentation. --> |
+| Sales and marketing | [Update Requested receipt date with Confirmed date for intercompany orders](whats-new-scm-10-0-19.md) | Mandatory <!-- KFM: Never announced as on by default. --> |
+| Sales and marketing | [Calculate sales totals using multiple threads](whats-new-scm-10-0-29.md) | On by default <!-- KFM: Actually a Commerce feature? (Mentioned in [Improve the performance of Commerce order search](../../commerce/improve-order-search.md)) --> |
+| Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md)  | On by default |
+| Transportation management | Goods in Transit Receiving and Put away | Mandatory <!-- KFM: UI says on by default. Zero documentation. --> |
 | Warehouse management | Cross-docking templates with location directives | Mandatory |
 | Warehouse management | Deferred put - container | Mandatory |
 | Warehouse management | Disable expected receipts from quality orders that sample blocked inventory | Mandatory |
