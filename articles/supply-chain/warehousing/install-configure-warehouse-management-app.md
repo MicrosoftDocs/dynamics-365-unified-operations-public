@@ -252,6 +252,7 @@ Follow these steps to import connection settings from a file or a QR code.
     ![Connection settings loaded.](media/app-configure-select-connection.png "Connection settings loaded")
 
 1. **Select the certificate**
+
     If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
     ![Select certificate prompt on an Android device.](media/app-configure-select-certificate.png "Select certificate prompt on an Android device")
