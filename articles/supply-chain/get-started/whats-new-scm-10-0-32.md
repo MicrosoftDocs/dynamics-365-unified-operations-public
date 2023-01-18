@@ -55,7 +55,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Transportation management | (Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages | Allocate costs on a more granular basis by breaking down costs from each voyage according to the cost type code. As a result, the invoice journal can include lines where each line represents a specific cost type code. <!-- KFM: FM description has many errors. Consider replacing with this one. Really coming in 10.0.31? Documentation needed? -->  |
 | Transportation management | (Preview) Enable shipping container creation and update in batch mode | Use batch processing to perform container operations on large numbers of purchase order lines included within a voyage. Batch processing allows you to apply many operations at once without experiencing long delays or timeouts on the front end. Users can add purchase order lines to new or existing shipping containers and then choose to apply the changes in batch mode, which allows the system to process the updates in the background. However, background processing won't activate when the transfer quantity is less than the total quantity of the related purchase order line. <!-- KFM: Really coming in 10.0.31? Documentation needed? --> |
 | Transportation management | (Preview)Assign shipments to related route segments | Enables the system to apportion shipment freight costs more accurately, including for loads with multiple shipments delivered to various segment destinations along a single route. It assigns each shipment to the most suitable route segment based on the destination addresses of the shipment and segment. The feature then calculates each shipment's freight cost as a proportion of the load's total freight cost, based on the shipment's relative weight, volume, quantity and distance traveled. This feature only applies to shipments managed using the Transportation management (TMS) module. <!-- KFM: Really coming in 10.0.31? Documentation needed? -- |
-| Warehouse management | Reverse match feature | <!-- KFM: Description is missing in FM. --> |
 | Warehouse management | Warehouse-specific inventory transactions | Helps optimize the performance of warehouse management processes, especially when processing a large number of SKUs. It also prepares the Supply Chain Management database to support future improvements. The feature adds a new database table that stores inventory transactions specifically for warehouse management processes, which then use this table to drive on-hand inventory changes rather than using the common inventory transaction table (InventTrans). As a result, this feature significantly reduces the load on the InventTrans table, thereby also improving the performance of many other system processes. <!-- KFM: "(Preview)" is missing in feature name. -->
 
 ## Feature state changes in this release
@@ -139,55 +138,55 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Calculate sales totals using multiple threads](whats-new-scm-10-0-29.md) | On by default <!-- KFM: Actually a Commerce feature? (Mentioned in [Improve the performance of Commerce order search](../../commerce/improve-order-search.md)) --> |
 | Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md)  | On by default |
 | Transportation management | Goods in Transit Receiving and Put away | Mandatory <!-- KFM: UI says on by default. Zero documentation. --> |
-| Warehouse management | Cross-docking templates with location directives | Mandatory |
-| Warehouse management | Deferred put - container | Mandatory |
-| Warehouse management | Disable expected receipts from quality orders that sample blocked inventory | Mandatory |
-| Warehouse management | License plate receiving history | Mandatory |
-| Warehouse management | Manual shipment consolidation | Mandatory |
-| Warehouse management | Maximum execution time for the warehouse management on-hand entries cleanup job | Mandatory |
-| Warehouse management | Validate templates selected for replenishment jobs | Mandatory |
-| Warehouse management | Use faster API for containers closing/reopening on packing station | Mandatory |
-| Warehouse management | Allow editing of physical dimension for a released product and its handling unit | On by default |
-| Warehouse management | Auto update shipment | On by default |
-| Warehouse management | Change the error to a warning when releasing a load where sufficient quantity isn't available | On by default |
-| Warehouse management | Enhanced parser for GS1 barcodes | On by default |
-| Warehouse management | Evaluate work header breaks before work header maximums during work creation | On by default |
-| Warehouse management | Include Confirmed ship and Confirmed receipt dates into date filters on Load planning workbench | On by default |
-| Warehouse management | Item consolidation location utilization | On by default |
-| Warehouse management | License plate receiving enhancements | On by default |
-| Warehouse management | License plate validation on source document lines | On by default |
-| Warehouse management | Line reservation enhancements for the batch number reserv | On by default |ation form feature | On by default |
-| Warehouse management | Location directive inventory picking aging
-| Warehouse management | Manual transfer line picking service for admin or similar trusted users | On by default |
-| Warehouse management | New load planning workbench pages: Enables two new load planning workbench pages | On by default |
-| Warehouse management | Organization wide wave step code | On by default |
-| Warehouse management | Organization-wide "Schedule work creation" wave method | On by default |
-| Warehouse management | Organization-wide system directed work sequencing | On by default |
-| Warehouse management | Outbound sorting | On by default |
-| Warehouse management | Over receipt of load quantities | On by default |
-| Warehouse management | Packaging product dimensions | On by default |
-| Warehouse management | Packing work for packing stations | On by default |
-| Warehouse management | Parent license plates cannot be target license plates | On by default |
-| Warehouse management | Pick line grouping | On by default |
-| Warehouse management | Purchase order quantity left to load calculation using registered quantities | On by default |
-| Warehouse management | Quality Management For Warehouse Processes. | On by default |
-| Warehouse management | Replenishment over location capacity | On by default |
-| Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default |
-| Warehouse management | Scale unit support for warehouse app work lists | On by default |
-| Warehouse management | Scan GS1 barcodes | On by default |
-| Warehouse management | Schedule work creation | On by default |
-| Warehouse management | System directed cluster picking | On by default |
-| Warehouse management | System directed work sequencing | On by default |
-| Warehouse management | Warehouse management app data inquiry flow | On by default |
-| Warehouse management | Warehouse management application - blank GTD | On by default |
-| Warehouse management | Warehouse release rule | On by default |
-| Warehouse management | Wave Load building feature | On by default |
-| Warehouse management | Wave step code | On by default |
-| Warehouse management | Work policy enhancements for inbound work | On by default |
-| Warehouse management | Work split | On by default |
-| Warehouse management | Options for updating the mode of delivery for sales order lines when creating loads | Generally available |
-| Warehouse management | Options for validating ingredient batch expiration dates | Generally available |
-| Warehouse management | Reverse match feature | Generally available |
+| Warehouse management | [Cross docking templates with location directives](../warehousing/planned-cross-docking.md) | Mandatory |
+| Warehouse management | Deferred put - container | Mandatory <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | Mandatory |
+| Warehouse management | License plate receiving history | Mandatory <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Manual shipment consolidation](../warehousing/consolidate-shipments-manual-workbench.md) | Mandatory |
+| Warehouse management | [Maximum execution time for the warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md)  | Mandatory |
+| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | Mandatory |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | Allow editing of physical dimension for a released product and its handling unit. | On by default <!-- KFM: UI says mandatory. Zero documentation. --> |
+| Warehouse management | Auto update shipment | On by default <!-- KFM: UI says mandatory. Zero documentation. --> |
+| Warehouse management | Change the error to a warning when releasing a load where sufficient quantity isn't available | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Enhanced parser for GS1 barcodes](../warehousing/gs1-barcodes.md) | On by default |
+| Warehouse management | Evaluate work header breaks before work header maximums during work creation | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | Include Confirmed ship and Confirmed receipt dates into date filters on Load planning workbench | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Item consolidation location utilization](../warehousing/item-consolidation-location-utilization.md) | On by default <!-- KFM: UI says mandatory. Zero documentation. (Was on by default in 10.0.29) --> |
+| Warehouse management | [License plate receiving enhancements](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | On by default |
+| Warehouse management | License plate validation on source document lines | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | Line reservation enhancements for the batch number reservation form feature | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Location directive inventory picking aging](../warehousing/location-directive-inventory-picking-aging.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Organization wide wave step code](../warehousing/advanced-load-building-during-wave.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Organization-wide "Schedule work creation" wave method](../warehousing/configure-wave-schedule-work-creation.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Organization-wide system directed work sequencing](../warehousing/system-directed-work-sequencing.md) | On by default  <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Outbound sorting](../warehousing/outbound-sorting.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Over receipt of load quantities](../warehousing/inbound-load-handling.md) | On by default |
+| Warehouse management | [Packaging product dimensions](../warehousing/packing-vs-storage-dimensions.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Packing work for packing stations](../warehousing/packing-work.md) | On by default |
+| Warehouse management | Parent license plates cannot be target license plates | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Pick line grouping](../warehousing/pick-line-grouping.md) | On by default |
+| Warehouse management | Purchase order quantity left to load calculation using registered quantities | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | [Quality Management For Warehouse Processes](../inventory/quality-management-for-warehouses-processes.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Replenishment over location capacity](../warehousing/replenishment-over-location-capacity.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default <!-- KFM: Zero documentation. --> |
+| Warehouse management | Scale unit support for warehouse app work lists | On by default <!-- KFM:  UI says mandatory. Zero documentation. Cloud & Edge feature (remove)? --> |
+| Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [Schedule work creation](../warehousing/configure-wave-schedule-work-creation.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | [System directed cluster picking](../warehousing/system-directed-cluster-pick.md) | On by default <!-- KFM: UI says mandatory.  --> |
+| Warehouse management | System directed work sequencing | On by default <!-- KFM: UI says mandatory. Zero documentation.  --> |
+| Warehouse management | [Warehouse management app data inquiry flow](../warehousing/warehouse-app-data-inquiry.md) | On by default <!-- KFM: UI says mandatory. --> |
+| Warehouse management | [Warehouse management application - blank GTD](whats-new-scm-10-0-26.md) | On by default <!-- KFM: UI says mandatory. --> |
+| Warehouse management | [Warehouse release rule](../warehousing/release-to-warehouse-rule.md) | On by default <!-- KFM: UI says mandatory. --> |
+| Warehouse management | [Wave Load building feature](../warehousing/advanced-load-building-during-wave.md) | On by default <!-- KFM: UI says mandatory. --> |
+| Warehouse management | [Wave step code](../warehousing/wave-step-codes.md) | On by default <!-- KFM: UI says mandatory. --> |
+| Warehouse management | [Work policy enhancements for inbound work](../warehousing/warehouse-work-policies.md) | On by default |
+| Warehouse management | [Work split](../warehousing/work-split.md) | On by default <!-- KFM: UI says mandatory. --> |
+| Transportation management | Options for updating the mode of delivery for sales order lines when creating loads | Generally available <!-- KFM: Zero documentation. Listed under Transportation management module (was Warehouse Management) -->|
+| Production control | Options for validating ingredient batch expiration dates | Generally available <!-- KFM: Zero documentation. Listed under Production control (was Warehouse Management) --> |
+| Warehouse management | Reverse match feature | Generally available <!-- KFM: Zero documentation. Feature Management description shows only feature name. --> |
 
 ## New and updated documentation resources
 
