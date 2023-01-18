@@ -2,9 +2,9 @@
 title: Determine the optimal combination of overlapping discounts
 description: This articles describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/11/2022
+ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw
@@ -17,6 +17,7 @@ ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 # Determine the optimal combination of overlapping discounts
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This articles describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
 
