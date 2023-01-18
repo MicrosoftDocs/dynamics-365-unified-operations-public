@@ -86,10 +86,10 @@ Planning Optimization doesn't use the following parameters or options on the **I
   - **Approved requisition time fence (days)** – Pending *Requisition* support.
   - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
   - **Minimum periods** – Pending *Minimum inventory level* support.
-  - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
-  - **Default priority** – Pending *Formula versions with Co/By products* support.   - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
-  - **Current priority** – Pending *Formula versions with Co/By products* support.  - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
-  - **Date changed** – Pending *Formula versions with Co/By products* support.   - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
+  - **Planning formula** – Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Default priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Current priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Date changed** – Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
 
 ## Master plans page
@@ -116,7 +116,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Time fences in days** FastTab:
 
-  - **Freeze** – *Freeze time fence* support isn't supported yet in Planning Optimization.
+  - **Freeze** – *Freeze time fence* isn't yet supported in Planning Optimization.
   - **Explosion** – Pending *Scheduling* support.
   - **Forecast plan** – Pending additional *Forecast* support.
   - **Continuity plan** – Pending *Continuity scheduling* support.
@@ -126,10 +126,10 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **Calculated delays** FastTab:
 
   - **Ensure that the planned orders are not created prior to the master planning run date** – Pending *Calculated delays* support.
-  - **Add the calculated delay to the requirement date** (in the **Planned purchase orders** section) – From 18th January 2023 the Planning Optimization service release supports this field.
-  - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – From 18th January 2023 the Planning Optimization service release supports this field.
-  - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – From 18th January 2023 the Planning Optimization service release supports this field.
-  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – From 18th January 2023 the Planning Optimization service release supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned purchase orders** section) – Starting January 18, 2023, Planning Optimization supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – Starting January 18, 2023, Planning Optimization supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – Starting January 18, 2023, Planning Optimization supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Starting January 18, 2023, Planning Optimization supports this field.
 
 - **Action message** FastTab:
 
@@ -137,10 +137,10 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Sequencing** FastTab:
 
-  - **Sequence planned orders after master planning** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
-  - **Bucket type** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
-  - **Period type** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
-  - **Number of buckets in the campaign cycle** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
+  - **Sequence planned orders after master planning** – Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Bucket type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Period type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Number of buckets in the campaign cycle** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Released product details page
 
@@ -148,7 +148,7 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 
 - **Engineer** FastTab:
 
-  - **Production type** – Planning Optimization doesn't support the *Planning item* option, pending *Planning items* support. From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
+  - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Default order settings page
 
