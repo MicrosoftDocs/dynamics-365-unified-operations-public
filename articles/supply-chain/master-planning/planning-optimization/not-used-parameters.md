@@ -2,7 +2,7 @@
 title: Parameters not used by Planning Optimization
 description: This article lists the parameters that Planning Optimization doesn't currently consider during its operation.
 author: t-benebo
-ms.date: 09/02/2021
+ms.date: 18/01/2023
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
@@ -83,22 +83,14 @@ Planning Optimization doesn't use the following parameters or options on the **I
   - **Planned order type** – Planning Optimization doesn't support the *Kanban* option, pending *Kanban* support.
   - **Freeze time fence (days)** – *Freeze time fence* support isn't planned in Planning Optimization.
   - **BOM explosion time fence (days)** – Pending *Scheduling* support.
-  - **Capacity scheduling time fence (days)** – Pending *Scheduling* support.
   - **Approved requisition time fence (days)** – Pending *Requisition* support.
   - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
   - **Minimum periods** – Pending *Minimum inventory level* support.
-  - **Planning formula** – Pending *Formula versions with Co/By products* support.
-  - **Default priority** – Pending *Formula versions with Co/By products* support.
-  - **Current priority** – Pending *Formula versions with Co/By products* support.
-  - **Date changed** – Pending *Formula versions with Co/By products* support.
+  - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
+  - **Default priority** – Pending *Formula versions with Co/By products* support.   - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
+  - **Current priority** – Pending *Formula versions with Co/By products* support.  - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
+  - **Date changed** – Pending *Formula versions with Co/By products* support.   - **Planning formula** – Pending *Formula versions with Co/By products* support. From 10.0.33 release, this will be supported. Please enable feature *Process Manufacturing support for Planning Optimization* on feature management. 
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
-
-- **Lead time** tab:
-
-  - **Purchase time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
-  - **Production time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
-  - **Transfer time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
-  - **Working days** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
 
 ## Master plans page
 
@@ -117,18 +109,16 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Backward scheduling capacity time fence** – Pending *Scheduling* support.
   - **Finite capacity** – Pending *Scheduling* support.
   - **Finite capacity time fence** – Pending *Scheduling* support.
-  - **Finite capacity for bottleneck resources** – Pending *Scheduling* support.
-  - **Capacity time fence for bottleneck resources** – Pending *Scheduling* support.
+  - **Capacity time fence for bottleneck resources** – This field will no longer be supported on Planning Optimization, as we detected that customers were not using it. 
   - **Planned orders** – Planning Optimization uses fixed number sequences.
   - **Session** – Planning Optimization uses fixed number sequences.
   - **Continuity plan** – Planning Optimization uses fixed number sequences.
 
 - **Time fences in days** FastTab:
 
-  - **Freeze** – *Freeze time fence* support isn't planned in Planning Optimization.
+  - **Freeze** – *Freeze time fence* support isn't supported yet in Planning Optimization.
   - **Explosion** – Pending *Scheduling* support.
   - **Forecast plan** – Pending additional *Forecast* support.
-  - **Capacity** – Pending *Scheduling* support.
   - **Continuity plan** – Pending *Continuity scheduling* support.
   - **Calculated delays** – Pending additional *Calculated delays* support.
   - **Sequencing** – Pending *Production* support.
@@ -136,10 +126,10 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **Calculated delays** FastTab:
 
   - **Ensure that the planned orders are not created prior to the master planning run date** – Pending *Calculated delays* support.
-  - **Add the calculated delay to the requirement date** (in the **Planned purchase orders** section) – Pending *Calculated delays* support.
-  - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – Pending *Calculated delays* support.
-  - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – Pending *Calculated delays* support.
-  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Pending *Calculated delays* support.
+  - **Add the calculated delay to the requirement date** (in the **Planned purchase orders** section) – From 18th January 2023 the Planning Optimization service release supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – From 18th January 2023 the Planning Optimization service release supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – From 18th January 2023 the Planning Optimization service release supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – From 18th January 2023 the Planning Optimization service release supports this field.
 
 - **Action message** FastTab:
 
@@ -147,10 +137,10 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Sequencing** FastTab:
 
-  - **Sequence planned orders after master planning** – Pending *Sequencing* support.
-  - **Bucket type** – Pending *Sequencing* support.
-  - **Period type** – Pending *Sequencing* support.
-  - **Number of buckets in the campaign cycle** – Pending *Sequencing* support.
+  - **Sequence planned orders after master planning** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
+  - **Bucket type** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
+  - **Period type** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
+  - **Number of buckets in the campaign cycle** – From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
 
 ## Released product details page
 
@@ -158,16 +148,11 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 
 - **Engineer** FastTab:
 
-  - **Production type** – Planning Optimization doesn't support the *Planning item* option, pending *Planning items* support.
+  - **Production type** – Planning Optimization doesn't support the *Planning item* option, pending *Planning items* support. From release 10.0.33 it is supported. Feature Process Manufacturing for Planning Optimization must be enabled. 
 
 ## Default order settings page
 
 Planning Optimization doesn't use the following parameter option on the **Default order settings** page:
-
-- **Purchase order** FastTab:
-
-  - **Purchase lead time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
-  - **Working days** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
 
 - **Inventory** FastTab:
 
@@ -175,11 +160,5 @@ Planning Optimization doesn't use the following parameter option on the **Defaul
   - **Inventory lead time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
   - **Working days** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
 
-## Batch disposition master page
 
-Planning Optimization doesn't use the following parameter on the **Batch disposition master** page:
-
-- **Setup** FastTab:
-
-  - **Nettable** – Pending *Batch disposition codes* support.
  
