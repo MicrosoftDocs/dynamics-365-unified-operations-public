@@ -41,6 +41,7 @@ The Warehouse Management mobile app is available for both Windows and Google And
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
+- iOS 8.0 or later
 
 ## Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
@@ -60,6 +61,8 @@ The easiest way to install the app on single device is to install it from an app
 
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
 
+- **iOS:** LINK TBA
+
 ### Download the app from Microsoft App Center
 
 As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides installable packages that you can sideload. In addition to the current version, the App Center also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
@@ -68,7 +71,9 @@ As an alternative to installing from an app store, you can instead download the 
     For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](/appcenter/distribution/installation).
 
 - **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)  
-    If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
+    A few extra steps might be required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
+
+- **iOS:** The iOS version of the app is only available through App Store.
 
 For information about how install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
 
@@ -216,13 +221,14 @@ As has been mentioned, the default file name is *connections.json*. The default 
 
 - **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
 - **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
+- **iOS:** File sharing is not yet supported
 
 Usually, the paths are automatically created after the first run of the app. However, you can manually create them if you must transfer the connection settings file to the device before installation.
 
 > [!NOTE]
 > If the app is uninstalled, the default path and its contents are removed.
 
-### Import the connection settings
+### <a name="config"></a>Import the connection settings
 
 Follow these steps to import connection settings from a file or a QR code.
 
@@ -245,9 +251,18 @@ Follow these steps to import connection settings from a file or a QR code.
 
     ![Connection settings loaded.](media/app-configure-select-connection.png "Connection settings loaded")
 
-1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
+1. **Select the certificate**
+    If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
     ![Select certificate prompt on an Android device.](media/app-configure-select-certificate.png "Select certificate prompt on an Android device")
+    
+    If you're using an iOS device and are using a certificate for authentication, tap on **Edit connection settings** and then click on **Select certificate**.
+    
+    ![Connection setup menu on iOS.](media/app-configure-connection-setup-ios.png "Connection setup menu on iOS")
+    
+    On the page that opens, click on **Select certificate** to open the file browser and select your certificate file. A **Certificate is selected** confirmation will be shown on the app. Type the certificate passwork and click on **Import certificate**. Finally, **Save** the connection settings.
+    
+    ![Select certificate menu on iOS.](media/app-configure-ios-select-certificate-flyout.png "Select certificate menu on iOS")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
@@ -293,6 +308,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
+   If you're using an iOS device and and are using a certificate for authentication, please refer to step 5 in the [Import the connection settings](#config) section.
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
 ## Remove access for a device
