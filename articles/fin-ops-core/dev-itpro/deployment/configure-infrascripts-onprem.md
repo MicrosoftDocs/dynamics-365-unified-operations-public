@@ -506,7 +506,7 @@ According to the setup guide, the infrastructure scripts will automatically gene
 
 Because this isn't its first environment, Contoso has already registered the **OnpremLocalAgent** certificate against its Azure Active Directory (Azure AD) tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
 
-Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they've left the **disabled** attribute of the **RSAT** certificate set to **false**.
+Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they've left the **disabled** attribute of the **RSAT** certificate set to **true**.
 
 ```xml
 <Certificates>
@@ -743,7 +743,7 @@ To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, 
                 <Parameter name="FabricDataRoot">C:\SF</Parameter>
                 <Parameter name="FabricLogRoot">C:\SF\Log</Parameter>
             </Parameters>
-        </Setting>
+        <Setting>
             <Parameters>
                 <Parameter name="NodeTaggingEnabled">true</Parameter>
             </Parameters>
