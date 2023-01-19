@@ -79,7 +79,9 @@ One important option is named **Automatically create depreciation adjustment amo
 
 The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system will verify that the same asset book hasn’t been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
 
-The **Post disposal transactions in detail** Lets you determine the disposal scrap/sale to consider detailed disposal posting of acquisition to **Acquisition this year** and **acquisition prior years** if you set this option to Yes, in this case the disposal sale/scrap posting process validates the posting profile to ensure that you have configured the posting profile with all posting types. In the case of you set this option to No, the disposal scrap/sale posting process validates the posting profile to have the “Acquisition value” defined in the posting profile.  
+The **Post disposal transactions in detail** determines which disposal scrap/sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
+ - If this option is set to **Yes**, the disposal sale/scrap posting process will validate the posting profile that the posting profile has all posting types. 
+ - If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile that **Acquisition value** is defined in the posting profile.  
 
 [!NOTE]
 >You can’t define the both options of posting types Acquisition value and Acquisition this year or Acquisition prior year in the disposal sale/scrap at the same time to ensure accurate disposal posting.
