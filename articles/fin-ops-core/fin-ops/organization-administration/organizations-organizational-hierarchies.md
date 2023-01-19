@@ -74,6 +74,10 @@ Each hierarchy is assigned a purpose. The purpose of a hierarchy determines the 
 
 Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and cannot be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
 
+## Using Organizational Hierarchies in Financial Reporting
+
+Organizational Hierarchies can be selected as a **Tree type** option in Financial Reporting. Financial reporting will select the current effective hierarch as noted by hierarchy. For more information, see [Reporting tree definitions in Financial Reports](/dev-itpro/analytics/financial-reporting-tree-definitions.md).
+
 ## Additional resources
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
 - [Create an organization hierarchy](tasks/create-organization-hierarchy.md)
