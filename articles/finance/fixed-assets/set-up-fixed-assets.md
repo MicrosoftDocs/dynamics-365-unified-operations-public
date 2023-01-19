@@ -67,7 +67,7 @@ You can also define special depreciation allowances, or bonus depreciation, for 
 
 ## Journal names
 
-On the **Journal names** page, you must create the journal names that should be used with the Fixed assets journal. You must set the **Journal type** field to **Post fixed assets**. Set the **Voucher series** field so that the journal names are used for the Fixed assets journal. Fixed assets journals should not use the **One voucher number only** setting, because a unique voucher number is required for several automated processes, such as transfers and splits.
+On the **Journal names** page, you must create the journal names that should be used with the Fixed assets journal. You must set the **Journal type** field to **Post fixed assets**. Set the **Voucher series** field so that the journal names are used for the Fixed assets journal. Fixed assets journals shouldn't use the **One voucher number only** setting, because a unique voucher number is required for several automated processes, such as transfers and splits.
 
 ## Fixed asset parameters
 
@@ -88,7 +88,7 @@ The **Post disposal transactions in detail** determines which disposal scrap/sal
 
 On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when the invoice is posted. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition won't be posted. Posting must be done as a separate step, from the Fixed assets journal. The **Create asset during product receipt or invoice posting** option lets you create a new asset "on the fly" during posting. Therefore, the asset doesn't have to be set up as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
 
-You can configure reason codes so that they are required for changes to a fixed asset or for specific fixed asset transactions.
+You can configure reason codes so that they're required for changes to a fixed asset or for specific fixed asset transactions.
 
 Finally, on the **Number sequences** tab, you define number sequences for fixed assets. The **Fixed asset** number sequence can be overridden by the **Fixed asset group** number sequence if it has been specified.
 
