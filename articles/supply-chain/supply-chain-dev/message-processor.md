@@ -39,7 +39,7 @@ To use the message processor, your system must meet the following requirements:
     - *Manufacturing execution system integration*
     - *(Preview) Make finished goods physically available before posting to journals*
 
-## Message processor messages page
+## <a name="message-processor-page"></a>Message processor messages page
 
 Use the **Message processor messages** page to view the list of incoming messages, view the message log, manually process messages, and troubleshoot issues.
 
@@ -367,7 +367,7 @@ Follow these steps to create a new message type.
 
 1. Set a feature class on the enum value.
 
-    ![Setting a feature class on the enum value.](media/message-processor-implement-message-type-class.png "Setting a feature class on the enum value")
+    ![Set a feature class on the enum value.](media/message-processor-implement-message-type-class.png "Set a feature class on the enum value")
 
 1. Create a class that extends `SysMessageTypeMetadata`, as shown in the following example.
 
