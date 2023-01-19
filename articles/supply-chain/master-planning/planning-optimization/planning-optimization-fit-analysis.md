@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 01/30/2023
 audience: Application User
 ms.custom: bap-template
 ---
@@ -15,30 +15,26 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
+Planning Optimization fit analysis helps you to identify where the result might differ between the deprecated master planning engine and Planning Optimization. The system runs this analysis based on your current setup and data.
+
 You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization is not equal to the deprecated master planning engine functionality. We recommend that you work with your partner and read the documentation to prepare for the migration.
-
-Planning Optimization fit analysis helps you to identify where the result might differ between the deprecated master planning engine and Planning Optimization. This analysis is done based on your current setup and data.
-
-To see the Planning Optimization fit analysis result, go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**, and then select **Run analysis**. If the analysis finds any inconsistencies, they are listed on the same page. (The analysis can take a few minutes to run.)
 
 > [!NOTE]
 >
 > - Some inconsistencies can't be identified by the Planning Optimization fit analysis. For more information, see [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md).
 > - If inconsistencies are found, you can still use Planning Optimization. The results of the fit analysis just show places where the planning service won't honor your current setup. In other words, they show places where some processes might be ignored or might not be supported.
 
-## Analysis results: Example 1
+## Run Planning Optimization fit analysis
 
-- **Feature:** Production
-- **Issue:** Items with a bill of materials (BOM) level greater than zero: 56
-- **Explanation:** The fit analysis found 56 items that have a BOM setup for production. Because the current version of Planning Optimization doesn't support production, Planning Optimization will generate planned purchase orders instead of planned production orders. It will also show a warning that lists the affected items.
+To run the Planning Optimization fit analysis and view the results, follow these steps:
 
-## Analysis results: Example 2
+1. Select a company (legal entity) from the company picking in the navigation bar.
+1. Go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**.
+1. On the Action pane, select **Run analysis**.
+1. The system runs the analysis and then displays the results. For each result shown, consult the table later in this article to see whether that feature is currently supported for Planning Optimization and, if not, when support is expected to become available. If no issues exist for your selected company, then the result list will be empty and you'll get the message "No issues found".
+1. Repeat this procedure for each company in your organization.
 
-- **Feature:** Actions
-- **Issue:** Coverage groups with actions calculation enabled: 6
-- **Explanation:** The fit analysis found six coverage groups where action calculation is turned on. Because the current version of Planning Optimization doesn't support actions, no actions will be generated during master planning.
-
-## Overview of possible results from the fit analysis
+## Possible results from the fit analysis
 
 The following table shows the various results that can be shown after a fit analysis. Number signs (*\#*) will be replaced with a number that indicates the number of records that have the listed issue.
 
