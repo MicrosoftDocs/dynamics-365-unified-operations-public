@@ -58,7 +58,7 @@ The fixed asset transaction types are listed on the **Fixed assets posting profi
 [![Disposing of an asset as scap, Fig. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 The disposal posting profile has two ways to account for the acquisition values during the disposal process:
- - The lumpsum of all acquisitions that has a **Acquisition value** posting type
+ - The lump sum of all acquisitions that has a **Acquisition value** posting type
  - Differentiate between acquisitions this or prior years that have the **Acquisitions this** and **Acquisition prior years** posting types
 
 -	**Acquisition value** combines all acquisition transactions in all times in one transaction line and disposal transaction post it to the corresponding account to acquisition value in the posting profile. This could be used if you don't want to break down the acquisitions of this year and prior years. In this case, set the **Post disposal transactions in detail** option on the **Fixed assets parameters** page to **No**.  
