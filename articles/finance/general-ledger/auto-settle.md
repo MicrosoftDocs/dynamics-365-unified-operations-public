@@ -2,7 +2,7 @@
 title: Automate ledger settlements
 description: This article provides information about the Automate ledger settlements process.
 author: abruer
-ms.date: 9/21/2022
+ms.date: 1/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -108,7 +108,7 @@ If **Debit** is selected, the automated ledger settlement process starts on the 
 
 When the automation is run, the system selects ledger transactions for the main accounts that are defined for the process automation series. It orders the transactions by date, by using a date range from the start of the fiscal year to the date when the process automation is run. It matches based on the specified match criteria. The absolute values of the accounting currency amounts of the debit and the credit must match to be settled.
 
-The Automate ledger settlements feature will run the automation for transactions that are dated from the first day of the fiscal year to the current date when the occurrence runs. For fiscal years that end on December 31, you might have to adjust the execution date of your occurrence to ensure that it's run in December. For example, automation is set up to run on the first day of every month. This automation will be run on December 1, 2022, and is scheduled to run on January 1, 2023. We recommend that you change the occurrence for January 1, 2023, so that it runs instead on December 31, 2022. This change will ensure that the transactions that are dated December 2 through 31 will be considered for automatic settlement.
+The Automate ledger settlements feature will run the automation for transactions that are dated from the first day of the fiscal year to the current date when the occurrence runs. For fiscal years that end on December 31, you might have to adjust the execution date of your occurrence to ensure that it's run in December. For example, automation is set to run on the first day of every month. This automation will be run on December 1, 2022, and is scheduled to run on January 1, 2023. It is recommeded to change the January 1, 2023 occurrence to December 31, 2022. This change will ensure that the transactions that are dated December 2 through 31 will be considered for automatic settlement.
 
 While a main account is being processed by an occurrence of a ledger settlement automation, you can't display it in the **Ledger settlements** page. You must wait until the automation process is completed. We recommend that you schedule the process automation to run outside working hours, to help prevent conflicts.
 
