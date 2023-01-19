@@ -29,9 +29,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Product information management | Share product information across legal entity boundaries <!-- KFM: List this now, or wait until real public preview? --> | <!-- KFM: Add link to new topic --> | Feature management:<br>*(Preview) Cross-company data sharing for products* |
+| Product information management | Share product information across legal entity boundaries <!-- KFM: List this now, or wait until real public preview? Not on release plan? --> | <!-- KFM: Add link to new topic --> | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | Pack shipments with speed and resilience | <!-- KFM: Add links to new and updated topics --> |  |
-| Warehouse management | Run the Warehouse Management mobile app on iOS devices | <!-- KFM: Any info available? --> | <!-- KFM: Any FM needed? --> |
+| Warehouse management | Run the Warehouse Management mobile app on iOS devices | [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) | Enabled by default |
 
 ## Feature enhancements included in this release
 
@@ -188,12 +188,16 @@ The table also lists features that were previously in public preview but have ch
 | Production control | Options for validating ingredient batch expiration dates | Generally available <!-- KFM: Zero documentation. Listed under Production control (was Warehouse Management) --> |
 | Warehouse management | Reverse match feature | Generally available <!-- KFM: Zero documentation. Feature Management description shows only feature name. --> |
 
+<!-- KFM: update if relevant
+
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
 
 | Feature area | New or updated articles |
 |---|---|
+
+-->
 
 ## Additional resources
 
