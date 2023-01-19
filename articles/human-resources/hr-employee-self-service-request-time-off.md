@@ -84,10 +84,10 @@ When updating an existing time off request, you can add an attachment. You can a
 
    ![Cancel leave request.](media/hr-leave-and-absence-cancel.png)
    
-5.	Attachments cannot be mandated for cancellation of a time off leave request. 
+5.	Attachments can't be mandated for cancellation of a time off leave request. 
 
 >[!Note] 
->In case attachment is mandated for updating a time off leave request and if Update time off option is being used to cancel a leave, by updating the Amount to 0, then an attachment must be uploaded. If this must be avoided, use the Cancel time off option as explained above.
+>If an attachment is mandated for updating a time off leave request and **Update time off** is selected to cancel a leave, when the **Amount** is 0, an attachment must be uploaded. If attachments are not required, use the **Cancel time off** option.
 
 
 ## See also
