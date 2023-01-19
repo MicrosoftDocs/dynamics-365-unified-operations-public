@@ -71,7 +71,7 @@ If you haven't customized the master planning engine for this deployment, then y
 
 If you do have customizations, you must move them to the existing extensibility point. For more information, see [Planning Optimization extensibility](planning-optimization/extensibility.md).
 
-### Deployments requiring features not yet supported be Planning Optimization
+### Deployments requiring features not yet supported by Planning Optimization
 
 If the system detects that you're using features that aren't supported by Planning Optimization, it will show the following message the next time you run master planning manually:
 
