@@ -115,7 +115,7 @@ You can inquire about failed messages by filtering on the *Failed* (or possibly 
 
 ## Power Automate example
 
-In this example, **When a Business Event occurs** is set to *Microsoft Power Automate* to send email notifications that containing InfoLog messages and hyperlinks that open the **Message processor messages** page for a specific failed message. As you require, you can add extra logic to send the notifications in parallel via different channels and control the recipients based on the event data.
+In this example, **When a Business Event occurs** is set to *Microsoft Power Automate* to send email notifications that containing Action center (formerly Infolog) messages and hyperlinks that open the **Message processor messages** page for a specific failed message. As you require, you can add extra logic to send the notifications in parallel via different channels and control the recipients based on the event data.
 
 1. In [Power Automate](https://preview.flow.microsoft.com), create an automated cloud flow for the **When a Business Event occurs - Fin & Ops App (Dynamics 365)** flow trigger, followed by the **Parse JSON** and **Send an email** steps.
 
