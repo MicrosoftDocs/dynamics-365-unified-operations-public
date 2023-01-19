@@ -54,13 +54,14 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+| General Ledger | Accounting source explorer advanced filtering |A new Accounting source explorer advanced filtering feature is available in Feature management. This feature replaces the Update button to provide a more robust advanced query experience that resembles what is available on the Voucher transactions page. The advanced filter will let you filter on similar fields to what you find on the Voucher transactions query page, such as Ledger account, Business unit, Cost center, and Department. |
 
 
 ## Additional resources
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md).
+Dynamics 365 Finance 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
 
 ### Bug fixes
 
