@@ -83,7 +83,7 @@ In this example, the fixed asset was acquired and was depreciated for 15 months,
 [![Fixed asset depreciation example.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
-To create a disposal journal, go to **Fixed assets \> Journal entries \> Fixed assets journal**, and then, on the Action Pane, select **Lines**. Select **Disposal – scrap**, and then select a fixed asset ID. To fully dispose of the asset, don't enter a value in either the **Debit** field or the **Credit** field.
+To create a disposal journal, go to **Fixed assets \> Journal entries \> Fixed assets journal**, on the Action Pane, select **Lines**. Select **Disposal – scrap**, and select a fixed asset ID. To fully dispose of the asset, don't enter a value in either the **Debit** field or the **Credit** field.
 
 [![Fixed assets journal.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
