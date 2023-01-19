@@ -31,7 +31,7 @@ You should reset the data mart only when a small amount of processing is occurri
 
 ### Reset the Financial reporting data mart from Report designer
 
-To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
+To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w).
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
