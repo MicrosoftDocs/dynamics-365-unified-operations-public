@@ -45,6 +45,13 @@ article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
+|Inclusion of weekends and holidays|This feature helps organizations with the flexibility to include weekends and holidays as part of employee leave requests for certain leave types.|Preview|
+|Hide leave balances	|This feature helps organizations with the flexibility of hiding leave balances for certain leave types.|	Preview|
+|Absence Manager to manage leave of absence requests|	This feature helps absence managers approve, deny or delegate leave of absence requests| 	Preview|
+
+
+
+
 
 
 ## Feature enhancements included in this release
@@ -54,6 +61,7 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information |
 |--------------|------------------|
+|Configure required attachment for leave requests| This feature helps organizations decide when an attachment is needed while creating a leave request. For example, if an attachment is needed while creating, updating, or cancelling a leave request based on the leave request type. |
 
 
 ## Additional resources
