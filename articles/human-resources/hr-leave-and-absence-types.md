@@ -85,7 +85,30 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 2. Select a **Leave and absence type** in the list. In the **General** section, use the **Attachment required** field to specify whether an attachment must be uploaded when an employee submits a new leave request for the selected leave type. 
 
-Employees will be required to upload an attachment when they submit a new leave request that has a leave type where the **Attachment required** field is enabled. To view the attachment that was uploaded as part of a leave request, leave request approvers can use the **Attachments** option for the work items that are assigned to them. If a leave request is accessed by using the Human Resources app in Microsoft Teams, the **View details** option for the leave request can be used to view its details and any attachments.
+3. If the **Attachment required** is selected based on the **Request type**, three additional fields will appear to provide flexibility in attachment requirements:
+ - **On creating a leave request** - Requires users to upload an attachment when creating a leave request.
+ - **On updating leave request** - Requires users to upload an attachment when updating a leave request.
+ - **On cancelling leave request** - Requires users to upload an attachment when cancelling a leave request.
+
+>[!Note] 
+>The fields mentioned above are available after Dynamics 365 Human Resources release 10.0.32.
+
+4. If the **Request type** is **Time off**, the **Attachment required** field will have two options: 
+ - **On creating leave request** 
+ - **On updating leave request**
+
+>[!NOTE]
+>For time off requests, attachments can't be required for cancellation. For more information on cancelling time off requests, see Cancel time off requests.
+
+5. If the **Request type** is **Leave of absence**, there will be three options: 
+ - **On creating leave request**
+ - **On updating leave request**
+ - **On cancelling leave request** 
+
+6. If attachments are required when updating a time off leave request, and the **Update time off** option selected: If the **Amount** is 0, then an attachment must be uploaded. If an attachment is not required in this case, use **Cancel time off**.
+
+
+Employees will be required to upload an attachment when they submit a new leave request that has a leave type where the **Attachment required** field is enabled and based on the field values above. To view the attachment that was uploaded as part of a leave request, leave request approvers can use the **Attachments** option for the work items that are assigned to them. If a leave request is accessed by using the Human Resources app in Microsoft Teams, the **View details** option for the leave request can be used to view its details and any attachments.
 
 ## Configure leave units (hours/days) per leave type
 
