@@ -4,7 +4,7 @@
 title: Request time off
 description: Request time off in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 01/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -78,11 +78,17 @@ When updating an existing time off request, you can add an attachment. You can a
 
 2. On the **Time off** page, select one or more time off requests to cancel.
 
-3. Select the **Cancel** button.
+3. Select the **Cancel time off** button.
 
 4. In the **Cancellation details** pane, enter a comment and then select **Submit**.
 
    ![Cancel leave request.](media/hr-leave-and-absence-cancel.png)
+   
+5.	Attachments cannot be mandated for cancellation of a time off leave request. 
+
+>[!Note] 
+>In case attachment is mandated for updating a time off leave request and if Update time off option is being used to cancel a leave, by updating the Amount to 0, then an attachment must be uploaded. If this must be avoided, use the Cancel time off option as explained above.
+
 
 ## See also
 
