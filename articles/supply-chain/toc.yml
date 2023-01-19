@@ -3747,6 +3747,8 @@
         href: transportation/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
+      - name: Create and process custom message queues and message types
+        href: supply-chain-dev/message-processor.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
