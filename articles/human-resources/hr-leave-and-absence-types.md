@@ -4,7 +4,7 @@
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 11/21/2022
+ms.date: 01/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
