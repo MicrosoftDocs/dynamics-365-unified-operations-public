@@ -1,20 +1,15 @@
 ---
 title: Choose between Store Commerce app and Store Commerce for web
-description: This article explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
+description: This article explains the key differences between Store Commerce and Store Commerce for web, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author: josaw1
-ms.date: 04/21/2022
+ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2017-10-12
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+
 ---
 
 # Choose between Store Commerce app and Store Commerce for web
