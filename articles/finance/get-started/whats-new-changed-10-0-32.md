@@ -63,9 +63,47 @@ The following table lists the feature enhancements that are included in this rel
 |Subscription billing|	Renew automatically for revenue split billing schedule lines|	Billing schedules where lines are marked for revenue split can now be marked for automatic renewal.|
 |Subscription billing|	OData entity for termination of billing schedule|	An OData entity has been added allowing termination of billing schedules.|
 |Subscription billing|	Mass termination removal	|This feature allows users to remove termination using the Mass termination process.|
+|Globalization|	Global withholding tax|	**Withholding tax group** and **Item withholding tax group** fields are integrated to the lines on the Free text invoice. Withholding tax will be calculated and posted at the time of settling Free text invoices.|
+|Tax calculation	|Tax Calculation service	|The **Sales tax on sales tax** field is enabled in the tax codes setup in the tax calculation service. The user can specify the base tax code in this field for the **Tax on Tax** tax codes.|
+|Tax calculation|	Tax Calculation data model|	The following fields are extended for the latest tax Calculation data model:
+- Is Prepayment Journal Voucher
+- Direct Delivery
+- Intercompany Direct Delivery 
+These header fields are enabled in the **List code applicability** table.|
 
+## Features turned on by default in this release
+The following table lists the features that are turned on by default in 10.0.32. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This is to ensure that customers are using current functionality, so that as enhancements are added they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
 
-
+| Feature name | Enable date | Feature state | Module |
+|--------------|-------------|---------------|--------|
+|Disable Russian address format validation|	1/12/2023	|On by default	|Tax|
+|Enable uniform tax amount and GST transaction id for both shipment and receipt transaction of a stock transfer order.|	1/12/2023|	On by default|	Tax|
+|Performance improvements for VAT register transactions page|	1/12/2023|	On by default|	Tax|
+|(Brazil) Dual base calculation for ICMS-DIFAL for IPI cases|	1/12/2023|	On by default|	Tax|
+|Calculate GST based on invoice account|	1/12/2023|	On by default|	Tax|
+|Packing slip date as the delivery date for sales tax calculation (sales tax rate determination)	|1/12/2023|	On by default	|Tax|
+|Ignore use tax adjustment on the purchase order approval invoice	|1/12/2023	|Released|	Tax|
+|(India) Charge allocation on Bill of Entry (BOE) page for Import orders|	1/12/2023|	On by default	|Tax|
+|Zero-amount sales tax difference entries for Czech Republic (CZ)|	1/12/2023	|Mandatory|	Tax|
+|(India) Enable the default assessable value of BOE calculated proportionally|	1/12/2023|	On by default|	Tax|
+|Tax settlement rounding based on the customized currency decimal places|	1/12/2023|	On by default	|Tax|
+|Extend sales tax payment report data volume over 2GB	|1/12/2023|	On by default|	Tax|
+|Activate setoff hierarchy profile in batch|	1/12/2023	|On by default	|Tax|
+|(India) Enable posted withholding transaction form for TDS/TCS	|1/12/2023|	On by default|Tax|
+|(India) Enable **TDS/TCS withholding tax group** defaulting from the master page without differentiating the nature of the transaction|	1/12/2023	|Mandatory	|Tax|
+|(India) Enable **TDS/TCS withholding tax group** defaulting from the master page without differentiating the nature of the transaction|	1/12/2023|	Mandatory	|Tax|
+|Date of VAT register in Overdue VAT journals|	1/12/2023	|Mandatory	|Tax|
+|(India) Enable withholding setup for currency validation to prevent **Withholding payment** from failure due to currency variation.	|1/12/2023|	Mandatory|	Tax|
+|Enable overriding TCS/TDS group on purchase invoice|	1/12/2023|	Mandatory|	Tax|
+|Non deductible % field in Posted sales tax	|1/12/2023|	Mandatory|	Tax|
+|Withholding tax payment against vendor account|	1/12/2023|	On by default	|Tax|
+|Global withholding tax	|1/12/2023|	On by default|	Tax|
+|Enable rounding rules for withholding tax	|1/12/2023	|Mandatory|	Tax|
+|(India) GTE calculation validation|	1/12/2023|	Mandatory|	Tax|
+|Tax matrix definition condition setup|	1/12/2023	|Mandatory|	Tax|
+|Enable creating tax component with pre-defined rules	|1/12/2023	|Mandatory	|Tax|
+|Tax setup validation	|1/12/2023|	On by default	|Tax|
+|(GTE) Pick the lookup value with the most precisely matched condition|	1/12/2023|	On by default	|Tax|
 
 
 
