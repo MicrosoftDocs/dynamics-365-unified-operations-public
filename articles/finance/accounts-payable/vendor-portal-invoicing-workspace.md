@@ -41,12 +41,13 @@ The **Vendor collaboration invoicing** workspace can be used to view vendor invo
 ### Summary tiles
 
 The **Summary** tiles give an overview of the invoices for the selected vendor. You can view invoices by their state.
--   Draft invoices haven't been submitted to workflow.
--   Submitted, not approved invoices are those invoices that the vendor has submitted, but they haven't been posted in the application.
--   Approved, not paid invoices are those that have been posted, but they haven't yet been fully paid.
--   Paid invoices are those that have been fully paid in the application.
 
-Clicking on a tile will open a filtered view of the **Invoices list** page.
+- Draft invoices haven't been submitted to workflow.
+- Submitted, not approved invoices are those invoices that the vendor has submitted, but they haven't been posted in the application.
+- Approved, not paid invoices are those that have been posted, but they haven't yet been fully paid.
+- Paid invoices are those that have been fully paid in the application.
+
+Selecting a tile will open a filtered view of the **Invoices list** page.
 
 ### Tabular lists
 
@@ -55,27 +56,26 @@ In the **Tabular lists** section, the status of the invoicing is broken down in 
 ### All vendor invoices list page
 
 You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page. You can use this list page to view the payment status of the invoices. The payment statuses include **Unposted**, **Unpaid**, **Partially paid**, and **Fully paid**.
-Creating a new invoice from a purchase order
 
-You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace. 
-The confirmation dialog will ask for: 
- - the purchase order number 
- - invoice number 
- - invoice date 
- - invoice description
+#### Creating a new invoice from a purchase order
 
->[!NOTE] 
->The invoice number must be provided by the vendor.
+You can create a new vendor invoice by selecting **New** in the **Vendor collaboration invoicing** workspace.
 
+The confirmation dialog box will prompt you for the following information:
 
--   If the purchase order number is provided by the vendor, the invoice is associated with purchase order. By default, all of the lines from the vendor's purchase order will appear on the new invoice. The quantity and cost information can be edited prior to submitting the vendor invoice to workflow. You can attach files, notes, images, and URLs to an invoice before submitting it.
--   If the purchase order number isn't provided, the invoice will be considered as a non-PO invoices. Vendors are able to create non-PO invoices based on the items with granted procurement categories. 
+- Purchase order (PO) number
+- Invoice number
 
+    > [!NOTE]
+    > The invoice number must be provided by the vendor.
 
-For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
+- Invoice date
+- Invoice description
 
+If the vendor provides the PO number, the invoice will be associated with the PO. By default, all the lines from the vendor's PO will appear on the new invoice. You can edit the quantity and cost information before you submit the vendor invoice to the workflow system. In addition, you can attach files, notes, images, and URLs to an invoice before you submit it.
 
+If the vendor doesn't provide the PO number, the invoice will be considered a non-PO invoice. Vendors can create non-PO invoices based on the items that have procurement categories that have been granted.
 
-
+For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
