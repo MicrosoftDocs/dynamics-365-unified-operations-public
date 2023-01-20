@@ -47,6 +47,8 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
 |Global address book|Advanced address maintenance|This feature allows users to delete historical and inactive addresses. |Feature management|
+|Globalization| ([ER](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)) Run the Document Routing Agent as a service | The Document Routing Agent (DRA) lets you select the mode of execution. The process can run either as a desktop application or as a Windows service. Before version 10.0.32, Electronic Reporting supported only the DRA running as a desktop application. As of version 10.0.32, the DRA running as a Windows service is also supported. For more information, see [Run the Document Routing Agent as a service](../../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md#run-the-document-routing-agent-as-a-service). |Feature management|
+
 
 ## Feature enhancements included in this release
 
@@ -58,6 +60,16 @@ The following table lists the feature enhancements that are included in this rel
 |General ledger |	Ability to automatically settle ledger accounts based on date tolerance criteria	|The Automate ledger settlements feature has been enhanced to allow you to define date tolerance matching criteria. The date criteria are used if the dates of the ledger settlement debit and credit transactions should be considered duing the automatic ledger settlements process. You can choose to enter the number of days variance for the debit and credit transactions dates. The variance is calculated as the number of days between the debit and credit transaction dates, searching before and after the selected transaction date. The additional criteria can improve the automated settlement match success rate. |
 |General ledger |	Ability to view the Payment reference information for Ledger settlement accounts|	The Payment reference information can now be viewed on the **Ledger settlements** page. This information can assist the accounting staff to find matching debits and credits.|
 |General ledger|	Review cross-year settlements|A new inquiry allows you to identify, unsettle, and resettle ledger transactions that are settled across fiscal years. To view the information, go to the **Ledger settlements** page. **General ledger > Periodic tasks > Ledger settlements > Review cross-year settlements**. This feature has been backported to 10.0.29 and is available in Finance release 10.0.29 or later.|
+
+## Features removed from Feature management
+The following table lists the features that have been removed from Feature management in 10.0.32.
+
+| Feature name | Enable date | Feature state | Module |
+|--------------|-------------|---------------|--------|
+| Business document management | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
+| Office-like UI experience for Business document management | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
+| Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
+| Document Routing Agent as Electronic Reporting destination for outbound documents | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
 
 
 ## Additional resources
