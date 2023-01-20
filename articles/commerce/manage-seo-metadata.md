@@ -38,25 +38,25 @@ To enable automated site map generation in Commerce site builder, follow these s
 1. Select **Save and publish**.
 
 > [!NOTE]
-> Once automated site maps are enabled, it takes some time (depending on the size of your site) for the initial automated site map creation job to complete. This progress can be monitored in site builder at **Site settings > General > Site map additional data**, where the site map generation state, status, last execution datetime, and content update datetime is displayed. Any new content publish action (for example, a new page or URL published) will automatically update the site map file. After the site map is generated, the URL(s) to the site map file(s) can be found at **Site settings \> General \> Site map URLs**
+> After automated site maps are enabled, the initial automated site map creation job takes some time to be completed, depending on the size of your site. You can monitor the job's progress in site builder at **Site settings \> General \> Site map additional data**. The site map generation state, status, last execution date/time, and content update date/time are shown. Any new content publish action (for example, if a new page or URL is published) automatically updates the site map file. After the site map is generated, you can find the URLs to the site map files at **Site settings \> General \> Site map URLs**.
 
 ### Option 2: Manually manage your site map
 
-The automated site map solution works for most scenarios, but there are cases where manually managing a site map is preferable to give you more control over which pages you include or exclude. You can manually manage your site map by hosting the custom site map in the site builder Media library as a document binary, and then updating your site's robots.txt file to point to the site map's URL. 
+The automated site map solution works for most scenarios. However, in some cases, manual management of a site map is preferable, because it gives you more control over which pages you include or exclude. You can manually manage your site map by hosting the custom site map as a document binary in the site builder Media library and then updating your site's robots.txt file so that it points to the site map's URL.
 
 > [!NOTE]
 > Before you manually manage your site map, ensure that the automated site map generation feature is disabled.
 
 To manually manage your site map and host it in the site builder Media library, follow these steps.
 
-1. In the left navigation pane, select **Media library**. 
+1. In the left navigation pane, select **Media library**.
 1. Select **Upload \> Upload media items**.
-1. In the File Explorer window, browse to your custom sitemap XML file, select it, and then select **Open**.  
-1. In **Upload file** flyout menu, select the **Publish media items after upload** checkbox, and then select **Upload now**.
-1. In the Media library, next to the **Search** box, select the information (**i**) symbol to display the property pane on the right. 
-1. Select the site map file, and in the properties pane under **Public URL**, copy the site map file URL. 
+1. In the File Explorer window, browse to your custom sitemap XML file, select it, and then select **Open**.
+1. In the **Upload file** dialog box, select the **Publish media items after upload** checkbox, and then select **Upload now**.
+1. In the Media library, next to the **Search** field, select the information (**i**) symbol to open the property pane on the right.
+1. Select the site map file, and then, in the properties pane, under **Public URL**, copy the URL of the site map file. 
 1. Download your site's [robots.txt file](go-live/add-robots-txt.md). For instructions, see [Download a robots.txt file](manage-robots-txt-files.md#download-a-robotstxt-file). 
-1. Using a text editor, paste the site map file URL you copied above into the **Sitemap** key-value pair, as shown in the following example.
+1. Open the robots.txt file in a text editor, and paste the site map file URL that you copied into the **Sitemap** key-value pair, as shown in the following example.
 
 
     ```txt
@@ -67,18 +67,19 @@ To manually manage your site map and host it in the site builder Media library, 
     Disallow: /SyndicationService.asmx/
     Disallow: /EditConfig.aspx
     Disallow: /Login.aspx
-
+    
     Sitemap: <Your site map URL>
     ```
 
-1. Save the robots.txt file, and then [upload it](manage-robots-txt-files.md#upload-a-robotstxt-file) to your site. For go-live information regarding robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
+1. Save the robots.txt file, and then [upload it](manage-robots-txt-files.md#upload-a-robotstxt-file) to your site. For go-live information about robots.txt files, see [Add or update a robots.txt file](go-live/add-robots-txt.md).
 
 > [!TIP]
-> To avoid having to update the robots.txt file the next time you manually update your site map file, follow these steps.
+> Follow these steps to keep the URL of your site map file static. In this way, you can avoid having to update the robots.txt file the next time that you manually update your site map file.
+>
 > 1. Update the site map file on your local machine.
-> 1. Go to the site builder Media library and select your original site map file. 
+> 1. Go to the site builder Media library, and select your original site map file. 
 > 1. On the command bar, select **Replace binary**. 
-> 1. In the File Explorer window, browse to and select the updated site map file on your local machine. Using this method keeps your site map file's URL static, avoiding the need to update the robots.txt file.
+> 1. In the File Explorer window, browse to and select the updated site map file on your local machine.
 
 ## Page metadata
 
