@@ -4,7 +4,7 @@
 title: Sort Commerce Data Exchange packages by primary index
 description: This article provides an overview of the Dynamics 365 Commerce feature to sort Commerce Data Exchange (CDX) packages by a primary index per package.
 author: jashanno
-ms.date: 08/24/2021
+ms.date: 01/30/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-08-24
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Dynamics 365 Commerce feature to sort Commerce Data Exchange (CDX) packages by a primary index per package. The **Sort CDX packages by primary index** feature optimizes the data preprocessing performance of data transformation. It is important to note that this feature does not alter any data application logic for a Commerce Scale Unit (CSU) or a Store Commerce app offline database, nor does it improve performance for either of those components.
+This article provides an overview of the Dynamics 365 Commerce feature to sort Commerce Data Exchange (CDX) packages by a primary index per package. The **Sort CDX packages by primary index** feature optimizes the data preprocessing performance of data transformation. It is important to note that this feature does not alter any data application logic for a Commerce Scale Unit (CSU) or a Store Commerce offline database, nor does it improve performance for either of those components.
 
 ## Prerequisites
 
