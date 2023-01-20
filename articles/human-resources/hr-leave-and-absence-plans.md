@@ -109,7 +109,7 @@ The new entities are:
 
 4. Define the accrual schedule in the **Accrual schedule** tab. The accrual schedule determines:
 
-   - How an employee accrues time off
+   - How an employee accrues time off  
    - What amounts the employee will accrue
    - What amounts will carry forward
 
