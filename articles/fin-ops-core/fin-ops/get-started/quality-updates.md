@@ -42,7 +42,8 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Every service update has at least one PQU release train ongoing or slated to begin. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all of them when you move to a newer version service update. Please check the schedule to determine when a PQU for a service update is scheduled if you plan to upgrade to a newer version service update. 
 
 > [!Note]
-> Standard performance test (tier4), Premium performance test (tier5) sandboxes and production environments will receive PQUs on weekends. 
+> Production environments will receive PQUs on weekends.
+> Standard performance test (tier4) and Premium performance test (tier5) sandboxes will receive PQUs on weekends along with production environments of their region. 
 
 ## Focus on quality updates
 
