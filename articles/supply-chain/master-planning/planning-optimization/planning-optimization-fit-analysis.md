@@ -15,9 +15,9 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization fit analysis helps you to identify where the result might differ between the deprecated master planning engine and Planning Optimization. The system runs this analysis based on your current setup and data.
+Planning Optimization fit analysis helps you identify where the result might differ between the deprecated master planning engine and Planning Optimization. The system runs this analysis based on your current setup and data.
 
-You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization is not equal to the deprecated master planning engine functionality. We recommend that you work with your partner and read the documentation to prepare for the migration.
+You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization isn't equal to the deprecated master planning engine functionality. We recommend that you work with your partner and read the documentation to prepare for the migration.
 
 > [!NOTE]
 >
@@ -26,12 +26,12 @@ You should analyze the result from the Planning Optimization fit analysis as par
 
 ## Run Planning Optimization fit analysis
 
-To run the Planning Optimization fit analysis and view the results, follow these steps:
+To run the Planning Optimization fit analysis and view the results, follow these steps.
 
-1. Select a company (legal entity) from the company picking in the navigation bar.
+1. Select a company (legal entity) from the company picker in the navigation bar.
 1. Go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**.
-1. On the Action pane, select **Run analysis**.
-1. The system runs the analysis and then displays the results. For each result shown, consult the table later in this article to see whether that feature is currently supported for Planning Optimization and, if not, when support is expected to become available. If no issues exist for your selected company, then the result list will be empty and you'll get the message "No issues found".
+1. On the Action Pane, select **Run analysis**.
+1. The system runs the analysis and then shows the results. For each result that's shown, consult the table later in this article to see whether that feature is currently supported for Planning Optimization and, if it isn't yet supported, when support is expected to become available. If no issues exist for your selected company, the result list will be blank, and you'll receive a "No issues found" message.
 1. Repeat this procedure for each company in your organization.
 
 ## Possible results from the fit analysis
