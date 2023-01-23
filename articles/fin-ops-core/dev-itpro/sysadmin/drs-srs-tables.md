@@ -226,7 +226,7 @@ This article describes the tables supported for duplicate record data sharing. D
 |-----------------------|-------------------------------|-------------------------------|
 | CategoryTable         | Category table                ||
 | ProjLineProperty      | Line property                 ||
-|ProjCategory|Project category|Dynamics 365 Finance 10.0.32 <br/>DRS is not enabled for Categories for control types(ProjControlCategory) in Dynamics 365 Finance 10.0.32, records must be manually created for Categories for control types(ProjControlCategory) in the legal entities where data is duplicated for Project categories. |
+|ProjCategory|Project category|Dynamics 365 Finance 10.0.32 <br/>DRS is not enabled for Categories for control types (ProjControlCategory) in Dynamics 365 Finance 10.0.32, records must be manually created for Categories for control types (ProjControlCategory) in the legal entities where data is duplicated for Project categories. |
 |ProjCategoryGroup|Category group|Dynamics 365 Finance 10.0.32 <br/>|
 |ProjPeriodLine|Project period lines|Dynamics 365 Finance 10.0.32 <br/>|
 |ProjPeriodTable|Project periods|Dynamics 365 Finance 10.0.32 <br/>|
