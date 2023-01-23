@@ -143,6 +143,10 @@ Billing schedules that use the multiple element allocation (MEA) functionality d
 
 For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedule.md).
 
+## Mass termination table clean up
+
+Use this process to clear the mass termination tables after using the mass termination entity. 
+
 ## Mass archive process
 
 Use the **Mass archive** page to archive multiple billing schedules. Only terminated billing schedules can be archived.
