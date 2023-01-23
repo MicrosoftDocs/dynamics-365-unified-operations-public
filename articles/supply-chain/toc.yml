@@ -3659,7 +3659,7 @@
             href: warehousing/process-guide-framework.md
           - name: Assign step icons and titles
             href: warehousing/step-icons-titles.md
-      - name: Warehouse setup
+      - name: Warehouse configuration
         items:
         - name: Warehouse configuration overview
           href: warehousing/warehouse-configuration.md
@@ -3730,6 +3730,7 @@
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
       - name: Warehousing administration
+        items:
         - name: Message processor messages for warehouse management processes
           href: warehousing/warehouse-message-processor-messages.md
         - name: Warehousing telemetry 
