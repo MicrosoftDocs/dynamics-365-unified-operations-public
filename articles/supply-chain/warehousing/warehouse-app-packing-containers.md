@@ -31,28 +31,28 @@ To take advantage of all the supported packing processes in the Warehouse Manage
 - **Pack inventory into containers** – This menu item is used for the main process of packing items into containers.
 - **Container creation** – This menu item is used to create containers that shipment items will be packed into.
 - **Container closing** – This menu item is used to close the shipment containers.
-- **Container deletion** - This menu item is used to delete a container
-- **Print container label** - This menu item is used to manually print a container label
+- **Container deletion** - This menu item is used to delete a container.
+- **Print container label** - This menu item is used to manually print a container label.
 
-We recommend that you use the [detour]( warehouse-app-detours.md) functionality. This functionality makes Warehouse Management mobile app operations easier by embedding the *Container creation* and *Container closing* processes into the **Pack inventory into containers** menu item, especially when using the manual container creation and closing operations. We also recommend that you add several lookup options to the Warehouse Management mobile app by using [data inquiries](warehouse-app-data-inquiry.md) in combination with the [detour]( warehouse-app-detours.md) functionality. This approach is especially effective in situations where bar codes are unreadable or missing.
+We recommend that you use the [detour]( warehouse-app-detours.md) functionality. This functionality makes Warehouse Management mobile app operations easier by embedding the *Container creation* and *Container closing* processes into the **Pack inventory into containers** menu item, especially when using manual container creation and closing operations. We also recommend that you add several lookup options to the Warehouse Management mobile app by using [data inquiries](warehouse-app-data-inquiry.md) in combination with the [detour]( warehouse-app-detours.md) functionality. This approach is especially effective in situations where bar codes are unreadable or missing.
 
 ### Pack inventory into containers
 
-The *Pack inventory into containers* process is controlled by the [**Mobile device container packing policies**](warehouse-app-pack-containers-scenario.md) which gets associated on the mobile device menu items. Either the warehouse workers must identify and confirm the needed information manually during the packing process or the system will automatically find and apply the needed data based on best approach.
+The *Pack inventory into containers* process is controlled by the [mobile device container packing policies](warehouse-app-pack-containers-scenario.md) associated with the relevant mobile device menu items. You can set up the system either to require wormers to manually specify and confirm the required information during the packing process, or allow the system to automatically find and apply the required data.
 
-The process will as a minimum need the following information:
+The process requires the following information (at minimum):
 
-- **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value.
-- **Shipment ID** or **License plate ID** – This value is used to validate which inventory items should be packed and the process depends on the defined mobile device menu item **Packing policy ID**.
+- **Packing location** – Identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value.
+- **Shipment ID** or **License plate ID** – Used to validate which inventory items should be packed. The process depends on the mobile device menu item's **[Packing policy ID](warehouse-app-pack-containers-policies.md)** setting.
 
 > [!NOTE]
-> A default container packing policy must be assigned to each relevant worker on the **Worker** page **Warehouse management \> Setup \> Worker**.
+> A default container packing policy must be assigned to each relevant worker on the **Worker** page (**Warehouse management \> Setup \> Worker**).
 
 ### Create containers
 
 To create containers by using the Warehouse Management mobile app, workers must have the following information:
 
-- **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value. When the "Create container" is called via a detour having a location you can pass the value.
+- **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value. When the *Create container* function is called from a detour that has a location, you can pass the value.
 - **Shipment ID** – This value is used to validate which inventory items should be packed into the container. (You can assign a default value by setting up a [detour](warehouse-app-detours.md).)
 - **Container type ID** – This value is used to identify the maximum physical volume and maximum weight capacity of the container.
 - **Container ID** – This value is a unique number that identifies the shipping container.
@@ -74,18 +74,18 @@ The following table shows which processes are and aren't supported when the cont
 | Logic | Supported in the mobile app | Notes |
 |---|---|---|
 | Items enabled for **Catch weight** | No | |
-| Identification of license plate/shipment | Yes | Using a mobile device menu item without a **Packing policy ID** value, or with one using the default set up of having the **Starting step** defined with *Scan shipment ID first* will allow packing physical inventory on-hand from multiple license plates by automatically selecting the "from" license plate, but by selecting *Scan license plate ID first*, only physical inventory on-hand related to the selected license plate can get packed.  |
-| Identification of tracking dimensions | Yes | Using a mobile device menu item without a **Packing policy ID** value, or with one using the default set up of having the **Capture tracking dimensions** defined with *Skip capturing*, the user will not be asked to specify the tracking dimensions during packing. Exception to this is if serial numbers are used and the tracking dimensions group has set to capture serial at packing, in which case the user will always needs to specify the serial number. Using *Capture one by one* will not default the tracking dimensions and the user will always need to specify them.|
+| Identification of license plate/shipment | Yes | When you use a mobile device menu item without a **Packing policy ID** value (or use a packing policy that has **Starting step** set to *Scan shipment ID first*) the system will let workers pack physical inventory on-hand from multiple license plates by automatically selecting the "from" license plate. But if you use a packing policy with **Starting step** set to *Scan license plate ID first*, only physical inventory on-hand related to the selected license plate can be packed.  |
+| Identification of tracking dimensions | Yes | When you use a mobile device menu item without a **Packing policy ID** value (or use a packing policy that has **Capture tracking dimensions** set to *Skip capturing*) workers won't be asked to specify the tracking dimensions while packing. However, if serial numbers are used and the tracking dimensions group is set to capture serial at packing, then workers will always needs to specify the serial number. If you use a packing policy with **Capture tracking dimensions** set to *Capture one by one*, the system won't default the tracking dimensions, so workers will always need to specify them.|
 | Identification of product variant dimensions | Yes | |
-| Identification via GS1 bar code scanning | (Yes) | Only the [generic GS1 setup](gs1-barcodes.md#generic-gs1-setup) for each field. When for example scanning a barcode containing item barcode and quantity, as part of the "Scan item number" field, only the item number will be used from the barcode, the quantity to pack will not get evaluated. |
+| Identification via GS1 bar code scanning | (Yes) | Only the [generic GS1 setup](gs1-barcodes.md#generic-gs1-setup) will be used for each field. When, for example, a worker scans a barcode containing both item and quantity as part of the **Scan item number** field, only the item number will be used from the barcode, the quantity to pack won't get evaluated. |
 | Identification item via bar code setup | (Yes) | However, quantity and unit (piece-by-piece) scanning isn't supported. |
 | New container | Yes | Containers can be created either automatically by using the *Autocreate container at container close* process or manually by using the **Container creation** mobile device menu item. The menu item also captures the container type and enters a default number sequence if the **Container ID mode** field is set to *Auto*. |
-| Print container label | Yes | Labels can be printed either automatically during *Container creation* process or manually by using the **Print container label** mobile device menu item or via the web client **Containers** page. For more information about how to set up label printing, see [Print container labels](print-container-labels.md). |
+| Print container label | Yes | Labels can be printed either automatically during the *Container creation* process or manually by using either the **Print container label** mobile device menu or the **Containers** page on the web client. For more information about how to set up label printing, see [Print container labels](print-container-labels.md). |
 | Close container | Yes | Containers can be closed by using the **Container closing** mobile device menu item, which also captures the weight. |
 | Release container | No | The release of containers depends on the container closing policy. It isn't available as a mobile device menu option. Workers can't trigger or confirm a release by using the mobile app. |
 | Reopen container | No | |
 | Delete container lines | No |  |
-| Delete container | Yes | Containers can be deleted by using the **Container deletion** mobile device menu item. The container must be in *Open* state, but can have packed container lines which as well will be deleted.  |
+| Delete container | Yes | Containers can be deleted by using the **Container deletion** mobile device menu item. The container must be in the *Open* state, but can have packed container lines, which will also be deleted.  |
 | Change container packing policy | No | The default policy that is assigned to each worker on the **Worker** page (**Warehouse management \> Setup \> Worker**) is always used. |
 | Release shipment | No | |
 | Work details | (Yes) | You can make this information visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
@@ -106,7 +106,7 @@ The following table shows which processes are and aren't supported when the cont
 | Print shipping label | (No) | Only automatic printing (as part of the *Container closing* process) can be set up. |
 | Pack (all shipment items) | No | Each item number must be identified and packed individually. |
 | Pack items (based on defined quantity) | (Yes) | However, items can be packed only *after* the item number has been identified by updating the quantity as part of the *Pack inventory into containers* process. |
-| Container group license plate ID with delayed work creation | No | No group license plate ID can be specified. Note that it will not be supported to close a container with a *Container group license plate ID* assigned. |
+| Container group license plate ID with delayed work creation | No | No group license plate ID can be specified. It isn't possible to close a container with a *Container group license plate ID* assigned. |
 | Container type creation | No | |
 
 ## Next steps

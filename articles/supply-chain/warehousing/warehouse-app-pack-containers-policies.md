@@ -48,7 +48,9 @@ Follow these steps to set up your mobile device container packing policies
       - *Select item to pack* – The worker will be asked to scan an item to pack.
       - *Pack all remaining* – The worker will pack items for the specified shipment or license plate into the container. You can't use this option when capturing tracking dimensions.
     - **Close container automatically** – This setting is only available when **Item selection** is set to *Pack all remaining*. Set this option to *Yes* to automatically close the container after packing all the items. The worker won't be able to update the weight before closing the container, so the weight from the item master data will be used.
-    - **Create container automatically** – This setting is only available when **Item selection** is set to *Pack all remaining*. Set this option to *Yes* to automatically create a new container when at the start of the packing process. The worker's **Packing profile ID** <!-- KFM: Warehouse M > setup > worker--> must be set and the selected profile must have a default **Container type** and the **Container ID mode** must be set to *Auto* <!-- KFM: on the packing profile-->.
+    - **Create container automatically** – This setting is only available when **Item selection** is set to *Pack all remaining*. Set this option to *Yes* to automatically create a new container at the start of the packing process. For this functionality to work, the following conditions must be in place:
+        - On the **Warehouse Management \> Setup \> Worker** page, each relevant worker must have a worker record that has a **Packing profile ID** set.
+        - The selected **Packing profile ID** record for each relevant worker must have a **Container type** assigned and the **Container ID mode** must be set to *Auto*.
 1. Select **Save** on the Action Pane.
 
 ## Assign a container packing policy to a mobile device menu item

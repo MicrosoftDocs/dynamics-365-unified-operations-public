@@ -22,7 +22,7 @@ The following illustration shows the packing functionality that this scenario ad
 
 [<img src="media/wma-packing-demo.png" alt="Warehouse app packing example scenario." title="Warehouse app packing example scenario" width="720" />](media/wma-packing-demo.png)
 
-You can easily create a packing flow by creating mobile device menu items and detours handling. The example scenario provided in this article explains the menu items listed without parentheses in the following table.
+You can establish a packing flow by creating mobile device menu items and detours handling. The example scenario provided in this article explains the menu items listed without parentheses in the following table.
 
 | Pack inventory into containers | Container creation | Container closing | (Print container label) | (Container deletion) |
 |---|---|---|---|---|

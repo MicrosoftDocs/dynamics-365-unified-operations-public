@@ -103,7 +103,6 @@ To format a label by using header, row, and footer elements, open the **Label la
 
 The following example shows a label that includes all these elements. It prints data about items that are packed in a container, so you will need to use a **Label layout data source ID** using a query which joins to the container lines (container details). The data can be split on multiple pages, which ensures that all data will be printed in cases where you have many container lines. In this example, the first page will print a container ID barcode and 6 container lines. The following pages prints 10 lines per page. Each line contains information about the *Item*, *Quantity*, and *Unit*. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.  
 
-<!--Q:When viewed in a browser the end user sees the "plaintext" - so can't we write "ZPL text" or something instead? -->
 ``` ZPL
 {{LabelStart
 ^FX ... ZPL commands to start the label ...

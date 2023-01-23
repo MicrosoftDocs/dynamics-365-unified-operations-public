@@ -131,9 +131,6 @@ Follow these steps to set up a container packing policy.
 
 1. On the **Overview** tab, set the following fields. These fields let you specify what actions should be taken when the container is closed, whether to operate with or without work creation, and when the container should be released from the packing station.
 
-    - **Warehouse** – Select the warehouse where the packing policy applies.
-    - **Default location for final shipment** – Specify the preferred location for the container after it's closed. This field is available only when the **Container release policy** field is set to *Make available at final shipping location*.
-    - **Default location for sorting** – This field is used with the [outbound sorting](outbound-sorting.md) capability.
     - **Weight unit** – Select the default unit of measure to use when a container is closed and manifested. Typically, this unit of measure will be the unit of measure that is used by a scale at the packing station. This field applies to policies with or without work creation.
     - **Container closing policy** – Select one of the following options to define what should occur when the container is closed:
 
@@ -153,6 +150,17 @@ Follow these steps to set up a container packing policy.
 
     - **Work template** – Select the work template that should be applied when work is created for the container. This field is available only when the **Container release policy** field is set to *Create work to move container from packing station* and related to a work order type that is named *Packed container picking*. For more information, see [Work templates and location directives](control-warehouse-location-directives.md).
 
+1. On the **Warehouse selection** FastTab, set the following fields:
+
+    - **Warehouse selection**  – Choose one of the following values:
+        - *All* – Use this policy for all warehouses where a more specific policy hasn't been assigned.
+        - *Warehouse group* – Use this policy for all warehouses in the warehouse group selected in the **Warehouse group** field.
+        - *Warehouse* – Use this policy only for the specific warehouse selected in the **Warehouse** field.
+    - **Warehouse** – If **Warehouse selection** is set to *Warehouse*, then select the warehouse where the packing policy applies.
+    - **Warehouse group** – If **Warehouse selection** is set to *Warehouse group*, then select the warehouse group where the packing policy applies.
+    - **Default location for final shipment** – Specify the preferred location for the container after it's closed. This field is available only when the **Container release policy** field is set to *Make available at final shipping location* and **Warehouse selection** is set to *Warehouse*.
+    - **Default location for sorting** – This field is used with the [outbound sorting](outbound-sorting.md) capability. This field is available only when **Warehouse selection** is set to *Warehouse*.
+
     In the remaining steps, you will configure settings that are related to *manifesting*. Manifesting is the process of specifying the weight of a container, container group, or shipment, together with the tracking ID that is received from a transportation provider. Dynamics 365 Supply Chain Management doesn't integrate with external transportation provider systems. Instead, warehouse workers must print labels that are received from the transportation provider and then scan a tracking number when they complete the manifest procedure.
 
     Because manifest requirements vary from customer to customer, and even from shipment to shipment, packing policies allow for significant flexibility in the workflow. You can set up manifests for containers, container groups, and shipments in any combination.
@@ -169,8 +177,6 @@ Follow these steps to set up a container packing policy.
         - *Transportation management* – Manifesting will be done through Transportation management (TMS) rate engines. Because this option requires custom development to implement a specific engine for the transportation provider, it won't work out of the box in the current version.
 
     - **Print container contents** – Set this option to *Yes* to automatically print the container contents report when a container is registered as closed. The report can also be printed on demand.
-    - **Print packing slip asynchronously** - This setting is available when **Print container contents** is set to *Yes*. Set **Print packing slip asynchronously** to *Yes* to process sales packing slips asynchronously using the message processor. When you use this option, the system will queue sales packing slip postings to the message processors using messages of type *Run packing slip for container* to the *Warehouse* queue. This setting requires that you also define a value for **Packing slip posting parameters ID**. For more information about how to set up and use the message processor and schedule the batch job required to process the messages, see [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md).
-    - **Packing slip posting parameters ID** - This setting applies when **Print packing slip asynchronously** is set to *Yes*. You must define the parameter settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Packing \> Packing slip posting parameters**) and choose the ID for the settings you want to use here. The parameter settings will be used when closing the last container for a shipment. Warehouse workers won't be prompted to confirm the values. If you are using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this will be the only process supported for posting packing slips automatically.
 
 1. On the **Container group manifest** FastTab, in the **Manifest requirements for container group** field, select one of the following options:
 
@@ -191,6 +197,8 @@ Follow these steps to set up a container packing policy.
         Shipment manifesting should be enabled if you're required to complete a manifest for the whole shipment that is packed at the packing station. It's typically used when one consolidated manifest is required even though the shipment consists of multiple containers or container groups.
 
     - **Print packing slip** – Set this option to *Yes* to automatically print the packing slip as part of the shipment manifest. The packing slip can also be printed on demand.
+    - **Print packing slip asynchronously** – This setting is available when **Print packing slip** is set to *Yes*. Set **Print packing slip asynchronously** to *Yes* to process sales packing slips asynchronously using the message processor. When you use this option, the system will queue sales packing slip postings to the message processors using messages of type *Run packing slip for container* to the *Warehouse* queue. This setting requires that you also define a value for **Packing slip posting parameters ID**. For more information about how to set up and use the message processor and schedule the batch job required to process the messages, see [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md).
+    - **Packing slip posting parameters ID** – This setting applies when **Print packing slip asynchronously** is set to *Yes*. You must define at least one set of parameter settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Packing \> Packing slip posting parameters**) and choose the ID for the set of settings you want to use here. The parameter settings will be used when closing the last container for a shipment. Warehouse workers won't be prompted to confirm the values. If you are using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this will be the only process supported for posting packing slips automatically.
 
 ### Set up container types
 
