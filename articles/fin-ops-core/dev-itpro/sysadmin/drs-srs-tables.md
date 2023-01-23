@@ -2,7 +2,7 @@
 title: Tables supported for duplicate record data sharing
 description: This article describes the tables supported for duplicate record data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
-ms.date: 02/15/2022
+ms.date: 01/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
