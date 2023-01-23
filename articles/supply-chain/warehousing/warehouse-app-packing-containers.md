@@ -111,6 +111,7 @@ The following table shows which processes are and aren't supported when the cont
 
 ## Next steps
 
+- Learn how to set up mobile device container packing policies, which let you control the packing process supported by the Warehouse Management mobile app. See [Mobile device container packing policies](warehouse-app-pack-containers-policies.md).
 - Work through an example that shows how to set up and use this feature. See [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
 - Learn how to set up container labels and print them from the mobile app. See [Print container labels](print-container-labels.md).
 
