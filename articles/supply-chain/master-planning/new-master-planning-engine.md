@@ -33,33 +33,32 @@ Planning Optimization is the standard master planning engine for all new cloud d
 
 ## Existing deployments
 
-Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you must request an exception to continue using the deprecated master planning engine.
+Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you must request an exception to continue to use the deprecated master planning engine.
 
 ## Migration recommendations
 
 There are several differences between the deprecated master planning engine and Planning Optimization.
 
-For distribution companies, the two planning engines provide very similar feature sets. Based on our experience helping other customers to migrate, we recommend that distribution companies enable and test Planning Optimization in a test environment and, when testing is successful, enable it on production environment.
+For distribution companies, the two planning engines provide very similar feature sets. Based on our experience helping other customers migrate, we recommend that distribution companies enable and test Planning Optimization in a test environment, and then, when testing is successful, enable it in a production environment.
 
-Manufacturing companies may be affected by some of the minor architectural differences that exist between Planning Optimization and the deprecated planning engine. Based on our experience helping other customers to migrate, we recommend that you set up a test environment and proceed as follows:
+Manufacturing companies might be affected by some of the minor architectural differences that exist between Planning Optimization and the deprecated planning engine. Based on our experience helping other customers migrate, we recommend that you set up a test environment and proceed in the following way:
 
-1. Create two testing plans, one for Planning Optimization and another for the deprecated planning engine, and use the same settings for both.
-1. With the deprecated planning engine enabled, run the plan you created for that engine.
-1. Now enable Planning Optimization and run the Planning Optimization plan.
-1. For each plan, export the planned orders to an excel file.
-1. For the existing plan, sum the planned order quantities for each of several regular time periods (for example, every month).
-1. For the Planning Optimization plan, sum the planned order quantities for each of several regular time periods (for example, every month).
-1. Compare the quantities for each plan to make sure the result is the same (or very similar). Some variation can be expected for orders that occur at the start or end of a time period
+1. Create two testing plans, one for Planning Optimization and the other for the deprecated planning engine. Use the same settings for both plans.
+1. While the deprecated planning engine is enabled, run the plan that you created for it.
+1. Enable Planning Optimization, and run the plan that you created for it.
+1. For each plan, export the planned orders to an Excel file.
+1. For each plan, sum the planned order quantities for each of several regular periods (for example, every month).
+1. Compare the quantities for each plan to make sure that the result is the same (or very similar). Some variation can be expected for orders that occur at the start or end of a period
 1. If your test is successful, continue testing on the test environment.
-1. If all of your tests are successful, then enable Planning Optimization on your production system.
+1. If all of your tests are successful, enable Planning Optimization in your production system.
 
-## Exception process for version 10.0.32 and newer
+## Exception process for version 10.0.32 and later
 
-Starting with Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the right instructions based on your situation. The following subsections describe the possible cases and provide details about each of them.
+As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation. The following subsections provide details about the possible cases.
 
-### Deployments where Planning Optimization is supported for all required features
+### Deployments where Planning Optimization supports all required features
 
-If the system detects that all of the relevant features that you're using are supported by Planning Optimization, but you're still running the deprecated planning engine, it will ask you to migrate. The next time you run master planning manually, the system will show the following message:
+If the system detects that all the relevant features that you're using are supported by Planning Optimization, but you're still running the deprecated planning engine, it will ask you to migrate. The next time that you manually run master planning, the system will show the following message:
 
 > You are supported to use the non-deprecated and faster master planning (Planning Optimization). For more information, see [Get started with master planning](planning-optimization/get-started.md#install-enable-po)
 >
@@ -67,43 +66,43 @@ If the system detects that all of the relevant features that you're using are su
 >
 > Do you have customizations on the master planning engine?
 
-If you haven't customized the master planning engine for this deployment, then you must migrate to Planning Optimization. If you need some more time to test and migrate, then select the time you'll require and the system will automatically apply an exception for the selected time.
+If you haven't customized the master planning engine for this deployment, you must migrate to Planning Optimization. If you require some more time to test and migrate, select the time that you'll require. The system will automatically apply an exception for the selected time.
 
 If you do have customizations, you must move them to the existing extensibility point. For more information, see [Planning Optimization extensibility](planning-optimization/extensibility.md).
 
 ### Deployments requiring features not yet supported by Planning Optimization
 
-If the system detects that you're using features that aren't supported by Planning Optimization, it will show the following message the next time you run master planning manually:
+If the system detects that you're using features that aren't supported by Planning Optimization, it will show the following message the next time that you manually run master planning:
 
 > You are not supported yet to use the non-deprecated master planning (Planning Optimization). We expect to be supporting you in the coming future. When you are supported, you will be asked to move to Planning Optimization. If you have customizations on the master planning engine, you can already start evaluating them and preparing to move them to the Planning Optimization extensibility point https://go.microsoft.com/fwlink/?linkid=2220303
 
-This message lets you know that you should start planning to move to Planning Optimization once it supports the features you're using. Therefore, you should evaluate any customizations you have made to the deprecated planning engine, plan to move them to the existing extensibility point (see [Planning Optimization extensibility](planning-optimization/extensibility.md), and take other actions to prepare for the migration (for example, by contacting your Microsoft partner or consultant).
+This message informs you that you should start planning to move to Planning Optimization as soon as it supports the features that you're using. Therefore, you should evaluate any customizations that you've made to the deprecated planning engine, plan to move them to the existing extensibility point (see [Planning Optimization extensibility](planning-optimization/extensibility.md)), and take other actions to prepare for the migration (for example, by contacting your Microsoft partner or consultant).
 
-See [Planning Optimization fit analysis](planning-optimization/planning-optimization-fit-analysis.md) for details about which features are already supported and estimates of when each feature will become available for Planning Optimization.
+For information about which features are already supported and estimates about when each feature will become available for Planning Optimization, see [Planning Optimization fit analysis](planning-optimization/planning-optimization-fit-analysis.md).
 
-If you've already received an exception, then that exception will remain in place until the features you need are supported by Planning Optimization.
+If you've already received an exception, it will remain in place until Planning Optimization supports the features that you require.
 
 ### <a name="unsupported-environments"></a>Environments that don't support Planning Optimization
 
-Regardless of which features you're using, to use Planning Optimization, you must be running Supply Chain Management version 10.0.7 or later on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment). If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
+Regardless of the features that you're using, to use Planning Optimization, you must be running Supply Chain Management version 10.0.7 or later in a tier 2 or higher high-availability environment that's Microsoft Dynamics Lifecycle Services–enabled. The environment must **not** be a OneBox environment. If you try to install the add-in in a OneBox environment, the installation won't be completed, and you'll have to cancel it.
 
-If your environment doesn't support Planning Optimization, you'll see the following message:
+If your environment doesn't support Planning Optimization, you'll receive the following message:
 
 > You can only run deprecated master planning in this environment. If you would like to get an environment that supports non-deprecated planning (Planning Optimization) please follow the instructions: [Get started with master planning](planning-optimization/get-started.md)
 
-If you are a Microsoft partner or independent software vendor (ISVs), then you can obtain a non-production environment at a reduced price that supports Planning Optimization and includes Microsoft business applications and demo data. These environments are only available to Partners and ISVs, and will enable you to learn how Planning Optimization works, test your solutions while using it, and deliver end-to-end customer demos. These environments can only be used on partner tenants, never on customer tenants. To request a license go to the [partner sandbox request page](https://experience.dynamics.com/requestlicense/).
+If you're a Microsoft partner or independent software vendor (ISV), you can obtain, at a reduced price, a non-production environment that supports Planning Optimization, and that includes Microsoft business applications and demo data. These environments are available only to partners and ISVs, and they can be used only on partner tenants, never on customer tenants. You can use the environment that you obtain to learn how Planning Optimization works, test your solutions while you're using it, and deliver end-to-end customer demos. To request a license, go to the [partner sandbox request page](https://experience.dynamics.com/requestlicense/).
 
 ## Exception process for version 10.0.31 and earlier
 
-For Supply Chain Management version 10.0.31 and earlier, owners of existing environments who run the deprecated master planning engine without generating planned production orders will receive an email that provides details about the exception process. The system may also show an error message that includes guidance about migration and instructions for requesting an exception. If you receive such a message and/or email, we recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
+For Supply Chain Management version 10.0.31 and earlier, owners of existing environments who run the deprecated master planning engine without generating planned production orders will receive an email that provides details about the exception process. The system might also show an error message that includes guidance about migration and instructions for requesting an exception. If you receive such a message and/or email, we recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
 
 If your implementation depends on functionality that Planning Optimization doesn't currently support, you can request an exception that will allow you to continue to use the deprecated master planning engine. (For a list of available features, see [Planning Optimization fit analysis](planning-optimization/planning-optimization-fit-analysis.md).) For environments that currently use master planning processes that are being made obsolete, Microsoft will send an email to the environment admin. This email will provide information about the actions that are required to migrate or to request an exception.
 
-Currently, exceptions for Planning Optimization migration are only relevant if your master planning process doesn't include production (that is, planned production orders that are generated by master planning), and you require the deprecated master planning engine beyond Supply Chain Management version 10.0.15.
+Currently, exceptions for Planning Optimization migration are relevant only if your master planning process doesn't include production (that is, planned production orders that are generated by master planning), and if you require the deprecated master planning engine beyond Supply Chain Management version 10.0.15.
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
-The following flowchart summarizes the information provided in this article so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962). The product group is responsible for evaluating and approving each exception request, so please submit your request directly to the product group using the link provided and don't create a support ticket for it. If your request is rejected, please don't create a support ticket because Microsoft Support isn't able to reevaluate or grant exceptions.
+The following flowchart summarizes the information in this article, so that you can quickly determine whether you should request an exception. If you have to request an exception, fill out and submit the [Planning Optimization migration and exception questionnaire](https://go.microsoft.com/fwlink/?linkid=2144962). The product group is responsible for evaluating and approving each exception request. Therefore, you should submit your request directly to the product group, by using the link that's provided. Don't create a support ticket for the request. If your request is rejected, don't create a support ticket, because Microsoft Support can't reevaluate requests or grant exceptions.
 
 ![Exception flowchart.](media/exception-diagram.png "Exception flowchart")
 
