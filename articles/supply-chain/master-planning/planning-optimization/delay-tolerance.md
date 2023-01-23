@@ -13,6 +13,7 @@ ms.dyn365.ops.version: 10.0.21
 ---
 
 # Delay tolerance (negative days)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +43,7 @@ The system links the delay tolerance calculation to the *earliest replenishment 
 This formula ensures that master planning doesn't create new supply orders when enough supply exists during the product lead time.
 
 > [!NOTE]
-> The delay tolerance calculation in Planning Optimization always uses the dynamic negative days calculation from built-in master planning. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior.
+> The delay tolerance calculation in Planning Optimization always uses the dynamic negative days calculation from the deprecated master planning engine. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior.
 
 If the existing supply implies a demand delay that is less than or equal to the calculated delay tolerance, Planning Optimization pegs existing supply with the demand. In some cases, it's better to delay the demand than to end up with oversupply.
 

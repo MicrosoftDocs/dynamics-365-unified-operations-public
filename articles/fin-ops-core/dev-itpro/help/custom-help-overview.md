@@ -2,7 +2,7 @@
 title: Custom Help overview
 description: This article explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/03/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,11 @@ Custom Help content typically originates from one of three sources:
 
 - Microsoft documentation repositories (repos)
 
+    Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It is not intended to be customized directly but to be supplemented by articles on your local website. However, depending on your solution, you might need a copy of Microsoft's content.
+
     You can use the [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool from the Custom Help Toolkit to clone content from any of the finance and operations repositories and generate corresponding HTML files. Those files can then be updated with content that is specific to your solution.
+    
+    [!INCLUDE [custom-help-toolkit-deprecation](../includes/custom-help-toolkit-deprecation.md)]
 
 - Existing customized Dynamics AX content
 
@@ -77,7 +81,7 @@ Before the product can connect to your Help content, you must customize the in-p
 
 - Your content must be available on a website.
 
-    You can deploy your content to an existing website, or you can set up a dedicated website to host your content. The website can be private or public, but we recommend that users **not** be required to sign in to access your content.
+    You can deploy your content to an existing website, or you can set up a dedicated website to host your content. The website can be private or public, but we recommend that you **do not** require users to sign in to access your content.
 
 - Your content must be indexed by a search service.
 

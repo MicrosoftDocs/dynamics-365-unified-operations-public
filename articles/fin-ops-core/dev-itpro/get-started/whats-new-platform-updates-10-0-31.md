@@ -35,6 +35,7 @@ The following table lists the features that are included in this release.
 | System administration | Master company data sharing (Preview) | See [Cross-company data sharing overview](../sysadmin/srs-overview.md). | Feature management |
 | System administration | New SecurityRole metadata property | <p>A new **SecurityRole** metadata property, **Can Be Deleted From UI**, has been added to help protect system roles from being deleted by using finance and operations apps. The default value is **Yes**. If the value is set to **No**, a delete action will cause the following error message to be shown: "'NN' is a system role that can not be removed."</p>[![Can Be Deleted From UI property.](../media/CanBeDeletedFromUI.jpg)](../media/CanBeDeletedFromUI.jpg) | Default |
 | System administration | New Table metadata property | <p>A new **Table** metadata property, **DisableDatabaseLog**, lets you prevent tables from being added to the database log. The default value is **No**. If the value is set to **Yes**, the table can't be added when the database log is set up.</p>[![DisableDatabaseLog property.](../media/DisableDatabaseLogging.jpg)](../media/DisableDatabaseLogging.jpg) | Default | 
+|Additional languages available | Four additional languages are available | Four new languages are available for user selection in the preferred language list: Korean, Portuguese (Portugal), Vietnamese, and Chinese (Traditional). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
 
 ### Bug fixes
 

@@ -2,7 +2,7 @@
 title: Set up and manage images for Modern POS (MPOS)
 description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Modern POS (MPOS).
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 01/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,8 +38,7 @@ In the following procedures, images are set up for the Catalog entity as an exam
 
 ### Set up the media base URL for a channel
 
-1. Open the Commerce HQ portal.
-2. Click **Retail and Commerce** &gt; **Channel setup** &gt; **Channel profiles**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Channel profiles**.
 
     [![Navigation.](./media/channel-profile1.png)](./media/channel-profile1.png)
 
@@ -49,8 +48,8 @@ In the following procedures, images are set up for the Catalog entity as an exam
 
 ### Define the media template for an entity
 
-1. Click **Retail and Commerce** &gt; **Catalog management** &gt; **Catalog images**.
-2. On the **Catalog images** page, on the Action Pane, click **Define media template**. In the **Define media template** dialog box, in the **Entity** field, **Catalog** should be selected by default.
+1. Select **Retail and Commerce \> Catalog management \> Catalog images**.
+2. On the **Catalog images** page, on the Action Pane, select **Define media template**. In the **Define media template** dialog box, in the **Entity** field, **Catalog** should be selected by default.
 3. On the **Media path** FastTab, enter the remaining path of the image location. The media path supports **LanguageID** as a variable. For example, for the demo data, you can create a **Catalogs** folder for all catalog images under the media base URL for your media server (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). You can then have a folder for each language, such as en-US or fr-FR, and copy the appropriate images under each folder. If you don't have different images for the various languages, you can omit the **LanguageID** variable from your folder structure and point directly to the Catalogs folder that contains the catalog images.
 
     > [!NOTE]
@@ -58,16 +57,16 @@ In the following procedures, images are set up for the Catalog entity as an exam
 
 4. For images, the file name format is hard-coded to the catalog name and can't be changed. Therefore, rename your images so that they have appropriate catalog names, to help guarantee that MPOS handles them correctly.
 5. In the **File Extension** field, select the expected file name extension, depending on the type of images that you have. For example, for the demo data, the catalog images are set to the .jpg extension. (The image files are also renamed so that they have catalog names.)
-6. Click **OK**.
-7. To validate that the media template for images has been saved correctly, on the **Catalog images** page, click **Define media template** again. To validate the template without closing the **Define media template** dialog box, you can use the **Generate Image URLs for Excel** FastTab. Check the appearance of the image URL, and verify that the URL complies with the template standard that was mentioned earlier. The **Define media template** dialog box has now set the image path implicitly for all catalog images that use this common URL path. This URL path applies to all catalog images unless they are overwritten. The first part of the image path is taken from the media base URL that you defined in the channel profile. The remaining part of the path is taken from the path that you defined in the media template. The two parts are concatenated to provide the full URL of the image location. For example, a catalog in the demo data is named Fabrikam Base Catalog. Therefore, the image name must be Fabrikam Base Catalog.jpg so that it uses the catalog name and the .jpg file name extension that is configured in the template. In this case, after concatenation, the URL will be `https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg`.
+6. Select **OK**.
+7. To validate that the media template for images has been saved correctly, on the **Catalog images** page, select **Define media template** again. To validate the template without closing the **Define media template** dialog box, you can use the **Generate Image URLs for Excel** FastTab. Check the appearance of the image URL, and verify that the URL complies with the template standard that was mentioned earlier. The **Define media template** dialog box has now set the image path implicitly for all catalog images that use this common URL path. This URL path applies to all catalog images unless they are overwritten. The first part of the image path is taken from the media base URL that you defined in the channel profile. The remaining part of the path is taken from the path that you defined in the media template. The two parts are concatenated to provide the full URL of the image location. For example, a catalog in the demo data is named Fabrikam Base Catalog. Therefore, the image name must be Fabrikam Base Catalog.jpg so that it uses the catalog name and the .jpg file name extension that is configured in the template. In this case, after concatenation, the URL will be `https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg`.
 8. Run the synchronization jobs to push the new template to the channel database, so that MPOS can use the template to access the images.
-9. To update the media template for catalog images on the channel side, be sure to run **Catalog Job 1150** from **Retail and Commerce IT** &gt; **Distribution schedule**.
+9. To update the media template for catalog images on the channel side, be sure to run **Catalog Job 1150** from **Retail and Commerce IT \> Distribution schedule**.
 
     [![Define media template dialog box.](./media/catalog1.png)](./media/catalog1.png)
 
 ## Previewing an image from the entity level
 
-1. From the page for the entity item in HQ, you can preview the image that uses the image URL that is derived from the media template. For this example, go to the appropriate catalog, and then, on the Action Pane, click **Media** &gt; **Images**. Use the drop-down list to select different stores that might have different channel profiles.
+1. From the page for the entity item in headquarters, you can preview the image that uses the image URL that is derived from the media template. For this example, go to the appropriate catalog, and then, on the Action Pane, select **Media \> Images**. Use the drop-down list to select different stores that might have different channel profiles.
 2. To edit or remove the implicit media template, you must return to the **Define media template** dialog box for the **Catalog images** page.
 3. You can use the **Add** and **Remove** buttons to manually change the path that is based on the implicit template and used for a specific image. For more information, see the [Overwriting the media template for entity items](#overwriting-the-media-template-for-entity-items) section later in this article.
 4. After you've finished previewing an image and making any changes that you require, start the MPOS instance for the appropriate store, and see whether the catalog images are shown.
@@ -79,13 +78,13 @@ In the following procedures, images are set up for the Catalog entity as an exam
 
 ## Synchronization jobs to send a media template to the channel side
 
-For all the five supported entities (Worker, Customer, Catalog, Category, and Products), whenever you update the **Define media template** dialog to set up an image, make sure that you run the Catalog job (1150) from **Retail and Commerce IT** &gt; **Distribution schedule**. This job will enable the updated media template to be synced to the channel and used by MPOS. Run the Catalog job (1150) after you make any of the following changes:
+For all the five supported entities (Worker, Customer, Catalog, Category, and Products), whenever you update the **Define media template** dialog to set up an image, make sure that you run the Catalog job (1150) from **Retail and Commerce IT \> Distribution schedule**. This job will enable the updated media template to be synced to the channel and used by MPOS. Run the Catalog job (1150) after you make any of the following changes:
 
-- You update the Catalog image media template from **Catalog images** &gt; **Define media template**.
-- You update the Employee image media template from **Employee images** &gt; **Define media template**.
-- You update the Customer image media template from **Customer image** &gt; **Define media template**.
-- You update the Product image media template from **Product images** &gt; **Define media template**.
-- You update the Category image media template from **Category images** &gt; **Define media template**. You must also publish the channel.
+- You update the Catalog image media template from **Catalog images \> Define media template**.
+- You update the Employee image media template from **Employee images \> Define media template**.
+- You update the Customer image media template from **Customer image \> Define media template**.
+- You update the Product image media template from **Product images \> Define media template**.
+- You update the Category image media template from **Category images \> Define media template**. You must also publish the channel.
 
 ## Overwriting the media template for entity items
 
@@ -93,13 +92,13 @@ As you learned in the previous section, the media template for a given entity su
 
 ### Overwrite by using Edit in Excel
 
-1. Click **Retail and Commerce** &gt; **Catalog management** &gt; **Catalog images**.
-2. On the **Catalog images** page, click **Define media template**. In the **Define media template** dialog box, in the **Entity** field, **Catalog** should be selected.
+1. Select **Retail and Commerce \> Catalog management \> Catalog images**.
+2. On the **Catalog images** page, select **Define media template**. In the **Define media template** dialog box, in the **Entity** field, **Catalog** should be selected.
 3. On the **Media path** FastTab, notice the image location.
-4. On the **Generate Image URLs for Excel** FastTab, click **Generate**.
+4. On the **Generate Image URLs for Excel** FastTab, select **Generate**.
 
     > [!IMPORTANT]
-    > Whenever the media template is changed, you must click **Generate** before you can use the Edit in Excel functionality.
+    > Whenever the media template is changed, you must select **Generate** before you can use the Edit in Excel functionality.
 
     You now see a preview of the image URLs that were generated based on the last saved media template.
 
@@ -108,13 +107,13 @@ As you learned in the previous section, the media template for a given entity su
     > [!NOTE]
     > The URLs that are generated for Excel use the path and conventions of the media template that is defined. These conventions include the conventions for file names. The expectation is that you've set up the physical images outside Commerce, and the images can be retrieved from the URLs that are derived from the media template that you defined earlier. You can overwrite these derived URLs by using the Edit in Excel functionality.
 
-5. Click **Edit in Excel**.
-6. After the Microsoft Excel worksheet is opened, click **Enable edit** when you're prompted.
-7. When you're prompted, click **Trust this add-in** in the right pane, and wait for the add-in to complete the installation.
+5. Select **Edit in Excel**.
+6. After the Microsoft Excel worksheet is opened, select **Enable edit** when you're prompted.
+7. When you're prompted, select **Trust this add-in** in the right pane, and wait for the add-in to complete the installation.
 
     [![Trust this add-in.](./media/excel4.jpg)](./media/excel4.jpg)
 
-8. If you're prompted to sign in, enter the credentials that you used to sign in to HQ.
+8. If you're prompted to sign in, enter the credentials that you used to sign in to headquarters.
 
     [![Sign-in prompt.](./media/excel5.png)](./media/excel5.png)
 
@@ -127,8 +126,8 @@ As you learned in the previous section, the media template for a given entity su
     > [!NOTE]
     > When you overwrite image URLs for Products entities by using the Edit in Excel functionality or the entity item page, MPOS always shows all the media template image URLs together with the overwritten image URLs.
 
-12. After you've finished making your changes, click **Publish in Excel** to create a new explicit association entry.
-13. Return to HQ, and click **OK**.
+12. After you've finished making your changes, select **Publish in Excel** to create a new explicit association entry.
+13. Return to headquarters, and select **OK**.
 14. Run the appropriate synchronization jobs for the entity, and check the preview on the entity page or in MPOS.
 
 #### Creating new records
@@ -143,10 +142,10 @@ Only the overwritten image URL records can be deleted. After an image is deleted
 
 For all entities except Products, you can overwrite the image URL for a given entity item at the entity item level from the **Preview** page. For Products, you can use the "Catalog Products" entity page. This example shows how to overwrite a catalog image.
 
-1. Click **Catalogs** &gt; **Media** &gt; **Images**, and select the catalog image to update.
-2. Click **Add**, and enter the image URL to overwrite the media template URL.
+1. Select **Catalogs \> Media \> Images**, and select the catalog image to update.
+2. Select **Add**, and enter the image URL to overwrite the media template URL.
 3. If you want this image to be shown in MPOS for the catalog, you can set it as the default image.
-4. Click **OK**. The image URL is updated for this catalog image, and a preview is shown.
+4. Select **OK**. The image URL is updated for this catalog image, and a preview is shown.
 
     [![URL updated in the New image dialog box.](./media/preview3.png)](./media/preview3.png)
 
@@ -155,49 +154,53 @@ For all entities except Products, you can overwrite the image URL for a given en
     [![Catalog images gallery page.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Currently, the gallery doesn't show image previews for media template image URLs. For Catalog, Worker, Customer, and Category entities, if the user explicitly provides a URL through this page, we recommend that you indicate which image is the default image, because Commerce Scale Unit clients show only one image per Catalog, Customer, Worker, and Category. If the user doesn't specify a default image, the system determines the default image and send it to the Commerce service caller (MPOS or Ecommerce).
+> Only publicly and anonymously accessible images will render on POS. POS supports the rendering of images that are externally hosted, with the requirement that the images are returned as inline octet-stream to GET requests without headers. With anonymous access policy, specifically for SharePoint-hosted images that require request headers to contain both host and user-agent headers, a "Forbidden" response will be returned. Therefore, image management using SharePoint as the host is currently not supported out-of-the-box. 
+> The **Catalog images** gallery page doesn't show image previews for media template image URLs. Because Commerce Scale Unit (CSU) clients show only one image per Catalog, Customer, Worker, and Category entity, if you explicitly provide a URL through this page for Catalog, Worker, Customer, and Category entities, we recommend that you indicate which image is the default image. If you don't specify a default image, the system determines the default image and sends it to the Commerce service caller (MPOS or e-commerce).
 
 ### Overwrite the image URL for catalog product images from the Preview page
 
 To overwrite image URLs for catalog product images, you must use the **Preview** page. You can't use the Edit in Excel functionality.
 
 1. To overwrite product images at a catalog level, select a catalog, and then select the product to overwrite the image for.
-2. Click **Attributes**.
-3. On the next page, select **Image**, and then click **Edit**. The **Preview** page opens as a slider dialog box.
-4. Click **Add**, and overwrite the image URL with a new URL.
-5. Click **OK**. You now see the preview of the new image and can set it as the default image.
+2. Select **Attributes**.
+3. On the next page, select **Image**, and then select **Edit**. The **Preview** page opens as a slider dialog box.
+4. Select **Add**, and overwrite the image URL with a new URL.
+5. Select **OK**. You now see the preview of the new image and can set it as the default image.
 
     [![Image preview in the New image dialog box.](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > After category image association, you must publish the channel and run the Channel job to help guarantee that the changes are published to the channel database.
 
-## Setting up images to appear in Offline mode for MPOS
+## Setting up images to appear in offline mode for MPOS
 
-MPOS can run in Online mode (when MPOS connected to Commerce Scale Unit) or Offline mode (when there is no Commerce Scale Unit or network connectivity, and transactions are stored in a local offline database). When MPOS runs in Offline mode, it can't get images from the external image server to display from Commerce Scale Unit, because connectivity has been lost. However, you can still set up images so that they are shown when MPOS runs in Offline mode.
+MPOS can run in online mode (when MPOS connected to Commerce Scale Unit) or offline mode (when there is no Commerce Scale Unit or network connectivity, and transactions are stored in a local offline database). When MPOS runs in offline mode, it can't get images from the external image server to display from Commerce Scale Unit, because connectivity has been lost. However, you can still set up images so that they are shown when MPOS runs in offline mode.
 
-### Set up product images to appear in Offline mode for MPOS
+### Set up product images to appear in offline mode for MPOS
 
-The product images that must be used in Offline mode can be set up by uploading the required physical image into the base product image.
+The product images that must be used in offline mode can be set up by uploading the required physical image into the base product image.
 
-1. Click **Product information management** &gt; **Products** &gt; **Products**.
+1. Select **Product information management \> Products \> Products**.
 2. Select the product to set the offline image for.
-3. Click **Edit**, and then click the arrow in the right corner to show the right pane.
-4. On the **Product image** FastTab, click **Change image**, and upload the physical image to use for the selected product in Offline mode.
+3. Select **Edit**, and then select the arrow in the right corner to show the right pane.
+4. On the **Product image** FastTab, select **Change image**, and upload the physical image to use for the selected product in offline mode.
 5. Save and close the page.
-6. While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.
-7. Put MPOS into Offline mode. You should see the image that you uploaded for the specific product in HQ.
+6. While MPOS is in online mode, in headquarters run the Products (1040) job to make sure that the data is sent at least one time to the offline database.
+7. Put MPOS into offline mode. You should see the image that you uploaded for the specific product in headquarters.
 
-    [![Product image in Offline mode.](./media/offline1.png)](./media/offline1.png)
+    [![Product image in offline mode.](./media/offline1.png)](./media/offline1.png)
+    
+> [!NOTE]
+> Offline image support is only available for product images.
 
-### Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS
+### Set up catalog, category, employee, and customer images to appear in offline mode for MPOS
 
-The catalog, category, employee, and customer images that must be used in Offline mode can be set up by adding the required image's destination link to the gallery and setting the image as the default image for the selected entity.
+The catalog, category, employee, and customer images that must be used in offline mode can be set up by adding the required image's destination link to the gallery and setting the image as the default image for the selected entity.
 
-1. Go to the catalog, and then, on the Action Pane, click **Media** &gt; **Images**.
+1. Go to the catalog, and then, on the Action Pane, select **Media \> Images**.
 2. Follow the steps in the [Overwrite from the entity-level Preview page](#overwrite-from-the-entity-level-preview-page) section to add the external image URL.
 3. Mark this image as the default image for the catalog by selecting the check box against the Image listed in the grid.
-4. Run the Catalog job. This image will now be used as the Offline image for that catalog in MPOS.
+4. Run the Catalog job. This image will now be used as the offline image for that catalog in MPOS.
 5. Follow a similar process for other entities, such as Category, Employee, and Customer.
 
     [![Offline image.](./media/offline2.png)](./media/offline2.png)

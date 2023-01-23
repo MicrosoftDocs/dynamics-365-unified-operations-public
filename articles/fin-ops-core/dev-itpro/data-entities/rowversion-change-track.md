@@ -31,7 +31,7 @@ A new change tracking option has been added to finance and operations apps. This
 
 Before you create or update data entities so that you can use them with row version change tracking, verify that all tables that are used as data sources for those entities allow for row version change tracking.
 
-For information about how to create a new entity, see [Build and consume data entities](/dev-itpro/data-entities/build-consuming-data-entities.md).
+For information about how to create a new entity, see [Build and consume data entities](build-consuming-data-entities.md).
 
 ## Enable row version change tracking for tables
 
@@ -46,6 +46,7 @@ The **SysRowVersionNumber** column performs version stamping of table rows. SQL 
 > INSERT INTO table2
 > SELECT * FROM table1
 > ```
+> The **SysRowVersionNumber** column is controlled by the **Sql row version** configuration key in the License configuration form, **System administration > Setup > Licensing > License configuration**. In the unlikely event that custom SQL update statements are trying to create or update the column, it will be required to disable the configuration key until the issue is resolved. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md).
 
 ## Enable row version change tracking for data entities
 
@@ -77,6 +78,6 @@ A system batch job that is named **Delete tracking history clean-up** cleans up 
 
 ## Retrieve row version entity changes
 
-This change tracking feature is fully compatible with Dataverse change tracking; however, there are some differences. For example, changes for finance and operations apps are returned if the last token is within the default value of 10 days, not the value of 90 days that is used for Dataverse tables. For more information, see [Use change tracking to synchronize data with external systems](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md). 
+This change tracking feature is fully compatible with Dataverse change tracking; however, there are some differences. For example, changes for finance and operations apps are returned if the last token is within the default value of 10 days, not the value of 90 days that is used for Dataverse tables. For more information, see [Use change tracking to synchronize data with external systems](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

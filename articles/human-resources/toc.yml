@@ -4,6 +4,20 @@
     items:
     - name: Dynamics 365 Human Resources home page
       href: index.md  
+    - name: Human Resources infrastructure merge
+      items:
+      - name: Human Resources infrastructure merge overview
+        href: hr-infrastructure-merge.md
+      - name: Human Resources infrastructure customer migration
+        href: hr-cust-migration.md  
+      - name: Human Resources infrastructure merge FAQ
+        href: hr-infrastructure-merge-faq.md
+      - name: Human Resources customer migration FAQ
+        href: customer-migration.md 
+      - name: Human Resources infrastructure merge known issues
+        href: hr-migration-issues.md
+      - name: Human Resources customer merge 
+        href: hr-customer-merge.md        
     - name: What's new or changed
       items:
       - name: What's new or changed in finance and operations apps
@@ -16,10 +30,10 @@
           href: ./get-started/whats-new-changed-10-0-30.md
         - name: Human Resources 10.0.29 (merged infrastructure)
           href: ./get-started/whats-new-changed-10-0-29.md
-        - name: Human Resources 10.0.28 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10.0.28.md
         - name: What's new in Dynamics 365 Human Resources (stand-alone)
           items: 
+          - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
+            href: hr-whats-new-2022-12-12.md         
           - name: What's new in Dynamics 365 Human Resources (stand-alone) archives 2021
             href: hr-admin-whats-new.md    
           - name: November 29, 2021
@@ -98,14 +112,14 @@
           href: hr-admin-integration-common-data-service-virtual-entities.md
         - name: Human Resources virtual tables FAQ
           href: hr-admin-virtual-entity-faq.md
+        - name: Configure integration with Dataverse  
+          href: hr-dataverse-integration.md
         - name: Configure integration with Finance
           href: hr-admin-integration-finance.md
         - name: Configure integration with Dayforce
           href: hr-admin-integration-dayforce.md
         - name: Create a recurring data export app
           href: hr-admin-integration-recurring-data-export.md
-        - name: Integrate with LinkedIn Talent Hub
-          href: hr-admin-integration-linkedin.md
         - name: Integrate with Office
           items:
           - name: Office integration tutorial
@@ -242,10 +256,6 @@
           href: hr-admin-go-live-prepare.md
         - name: Go-live FAQ
           href: hr-admin-go-live-faq.md
-        - name: Human Resources infrastructure merge FAQ
-          href: hr-infrastructure-merge-faq.md
-        - name: Human Resources customer migration FAQ
-          href: customer-migration.md        
         - name: Documentation resources
           items:
           - name: Help system
@@ -298,6 +308,8 @@
           href: hr-setup-parameters.md
         - name: Configure Human resources shared parameters
           href: hr-setup-shared-parameters.md
+        - name: Restrict access to workers by legal entity
+          href: hr-advanced-security.md
         - name: Set up Human resource workflows
           href: hr-workflow-manage-employee-information.md
         - name: Understand Date and Time fields
@@ -520,7 +532,7 @@
             href: ../human-resources/hr-personnel-set-up-positions.md
           - name: Hire candidates through recruitment
             href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-          - name: Hire an existing employees through recruitment
+          - name: Hire an existing employee through recruitment
             href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
           - name: Identify and deploy candidate selection tools
             href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
@@ -533,7 +545,11 @@
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
     - name: Task management
-      href: hr-task-mgmt.md
+      items:
+      - name: Overview
+        href: hr-task-mgmt.md
+      - name: Task management upgrade
+        href: hr-task-update.md
     - name: Leave and absence
       items:
       - name: Overview
@@ -556,6 +572,8 @@
         href: hr-leave-and-absence-suspend-leave.md
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
+      - name: Create an open-ended leave of absence  
+        href: hr-create-open-leave-absence.md
       - name: Manage employee leave
         href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
@@ -824,6 +842,10 @@
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
+    - name: Develop and customize
+      items:
+      - name: Gender base enum
+        href: enum-exten.md 
     - name: Set up data integration
       items:
       - name: Choose a data integration technology
@@ -832,6 +854,8 @@
         href: hr-admin-integration-common-data-service.md
       - name: Configure Dataverse virtual tables
         href: hr-admin-integration-common-data-service-virtual-entities.md
+      - name: Security for virtual table integrations  
+        href: hr-security-config.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Create links from Human resources to another environment

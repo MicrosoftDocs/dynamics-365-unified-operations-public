@@ -2,7 +2,7 @@
 title: Checkout module
 description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -99,6 +99,9 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
+
+> [NOTE]
+> When using single payment authorization as described in [Enhanced payments in storefront checkout](./dev-itpro/enhanced-sca.md), in the **Checkout information** section of the checkout page, confirm that the checkout section container is positioned last. This ensures that all required information is gathered by the checkout page prior to the final payment checkout and order completion actions. 
 
 ## Additional resources
 

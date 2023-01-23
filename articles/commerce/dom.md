@@ -2,28 +2,16 @@
 # required metadata
 
 title: Distributed order management (DOM)
-description: This article describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
+description: This article describes the distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/08/2022
+ms.date: 11/16/2022
 ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
 
 ---
 # Distributed order management (DOM)
@@ -39,6 +27,11 @@ DOM uses mixed integer programming (MIP) and predictive analysis models to perfo
 The following illustration shows the lifecycle of a sales order in a DOM system.
 
 ![Sales order lifecycle in the context of DOM.](./media/flow.png "Sales order lifecycle in the context of DOM")
+
+The following video provides an overview of DOM capabilities in Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
 
 ## Set up DOM
 
@@ -72,7 +65,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         > [!NOTE]
         > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
         >
-        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). Some rules like the **Partial orders** rule and the **Maximum number of locations** rule require Production Solver.
+        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). The **Partial orders** rule requires Production Solver.
 
 6. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 7. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.

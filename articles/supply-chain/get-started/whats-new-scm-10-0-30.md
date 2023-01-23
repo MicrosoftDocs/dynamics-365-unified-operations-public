@@ -2,7 +2,7 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.30. 
 author: kamaybac
-ms.date: 09/08/2022
+ms.date: 11/07/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -29,6 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Inventory and logistics | [Track soft reserved quantities within allocations](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/track-soft-reserved-quantities-within-allocations) | [Inventory Visibility inventory allocation](../inventory/inventory-visibility-allocation.md) |  Enabled by [service configuration](../inventory/inventory-visibility-configuration.md) |
 | Manufacturing | [Monitor equipment with Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence home page](../sensor-data-intelligence/sdi-home-page.md) | Feature management:<br>*(Preview) Sensor Data Intelligence* |
 | Warehouse management | [Multilevel detours for the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management:<br>*Multi-level detours for the Warehouse Management mobile app* |
 

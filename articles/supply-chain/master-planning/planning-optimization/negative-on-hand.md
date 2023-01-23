@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planning with negative on-hand quantities
-description: This article explains how negative on-hand is handled when you use planning optimization. 
+description: This article explains how negative on-hand is handled. 
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 (zero) to help avoid over-supply. Here is how this functionality works:
 
-1. The planning optimization feature aggregates on-hand quantities at the lowest level of coverage dimensions. (For example, if *location* isn't a coverage dimension, planning optimization aggregates on-hand quantities at the *warehouse* level.)
+1. Master planning aggregates on-hand quantities at the lowest level of coverage dimensions. (For example, if *location* isn't a coverage dimension, master planning aggregates on-hand quantities at the *warehouse* level.)
 1. If the aggregate on-hand quantity at the lowest level of coverage dimensions is negative, the system assumes that the on-hand quantity is really 0 (zero).
 
 > [!IMPORTANT]
@@ -91,14 +91,6 @@ The system is configured in the following way:
 - A sales order exists for a quantity of *10* pcs. of product *FG*.
 - The sales order quantity is physically reserved against existing on-hand inventory.
 
-You then adjust the quantity of product *FG* so that the on-hand inventory becomes 5. Because the on-hand product inventory is 5, the sales order quantity is now reserved against quantity that is not available on-hand (it would be similar if on-hand were 0, in which case the sales order would be reserved against negative inventory). If you run master planning now, a planned order of quantity 5 for *FG* will be created to supply the sales order, because Planning Optimization will always use existing supply or create a new planned order to supply the physical reservation.
-
-## Related resources
-
-- [Planning Optimization overview](planning-optimization-overview.md)
-- [Get started with Planning Optimization](get-started.md)
-- [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-- [View plan history and planning logs](plan-history-logs.md)
-- [Cancel a planning job](cancel-planning-job.md)
+You then adjust the quantity of product *FG* so that the on-hand inventory becomes 5. Because the on-hand product inventory is 5, the sales order quantity is now reserved against quantity that is not available on-hand (it would be similar if on-hand were 0, in which case the sales order would be reserved against negative inventory). If you run master planning now, a planned order of quantity 5 for *FG* will be created to supply the sales order, because master planning will always use existing supply or create a new planned order to supply the physical reservation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

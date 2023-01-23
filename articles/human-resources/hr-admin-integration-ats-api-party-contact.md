@@ -4,7 +4,7 @@
 title: Party contact
 description: This article describes the Party contact entity for Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 01/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,7 +74,7 @@ This entity describes the candidate’s contact information, including phone, em
 | **Country Region Code**<br>mshr_countryregioncode<br>*String* | Read/write<br>Optional | The country or region of the address. |
 | **Locator**<br>mshr_locator<br>*String* | Read/write<br>Optional | The contact details. For example, if the type is **Email address**, then this field contains the candidate’s email address. |
 | **Locator Extension**<br>mshr_locatorextension<br>*String* | Read/write<br>Optional | The locator extension. For example, if the type is **Phone**, then this property would contain the phone number extension. |
-| **Is Mobile**<br>mshr_ismobile<br>*mshr_noyes option set* | Read/write<br>Required | Specifies whether the phone is a mobile number. |
+| **Is Mobile**<br>mshr_ismobilephone<br>*mshr_noyes option set* | Read/write<br>Required | Specifies whether the phone is a mobile number. |
 | **Is Instant Message**<br>mshr_isinstantmessage<br>*mshr_noyes option set* | Read/write<br>Required | Specifies whether the phone is enabled for instant messaging. |
 | **Is Primary**<br>mshr_isprimary<br>*mshr_noyes option set* | Read/write<br>Required | Determines the primary contact of the contact type. There must be only one primary record per contact type. |
 | **Is Private**<br>mshr_isprivate<br>*mshr_noyes option set* | Read/write<br>Required | Identifies whether this address is a private address for the person. |

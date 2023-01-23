@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
 ms.custom: 
@@ -28,6 +28,8 @@ You may want your e-commerce channel to support options like delivery or pickup 
 ## Destination-based taxes for online orders
 
 In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details, such as country or region, state, county, and city in a hierarchical form.
+
+Configuration for **Retail destination based tax** can be found in the **Tax module > Indirect taxes > Sales tax > Sales Tax Groups** section.
 
 ### Orders delivered to customer address
 

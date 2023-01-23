@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: t-benebo
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: ["75083", "intro-internal"]
-ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
+ms.topic: overview
+ms.date: 01/06/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Product configuration overview
@@ -35,7 +20,7 @@ The need to configure products to meet special requirements is becoming the rule
 
 A manufacturer that supports configure-to-order scenarios has an opportunity to tend more carefully to customer needs. Additionally, by stocking semi-finished goods in the form of generic components instead of finished products, the manufacturer can reduce the capital that is tied to inventory.  
 
-A successful move from a manufacture-to-stock setup to a configure-to-order setup requires careful analysis of the product structures, identification of product families, and componentization. To reduce the number of parts and minimize the number of goods that are in process, it's very important that you understand the product interfaces, and that you design for reusability.  
+A successful move from a manufacture-to-stock setup to a configure-to-order setup requires careful analysis of the product structures, identification of product families, and componentization. To reduce the number of parts and minimize the number of goods that are in process, it's important that you understand the product interfaces, and that you design for reusability.  
 
 There are several product configuration modeling principles, such as rule-based, dimension-based, and constraint-based modeling. Studies show that the constraint-based methodology can reduce the number of code lines in models by about 50 percent compared to other modeling principles. Therefore, this methodology can reduce the total cost of ownership (TCO). By moving from a rule-based model that is based on X++ code to a constraint-based model, you no longer require a developer license in order to maintain product models.
 
@@ -116,7 +101,7 @@ Testing a model is similar to running an actual configuration session. The user 
 
 ### The configuration page
 
-To navigate between components, click **Next**, or click a component in the product configuration model tree to set focus on it.
+To navigate between components, select **Next**, or select a component in the product configuration model tree to set focus on it.
 
 ## Finalizing a model for configuration
 

@@ -4,7 +4,7 @@
 title: Create service orders automatically   
 description: You can create service orders for one service agreement or for several service agreements.
 author: sorenva
-ms.date: 05/01/2018
+ms.date: 01/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,10 +26,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Create service orders automatically    
+# Create service orders automatically
 
 [!include [banner](../includes/banner.md)]
-
 
 You can create service orders for one service agreement or for several service agreements. When they are created, you can view your service orders in the **Service orders** form.
 
@@ -39,39 +38,24 @@ When you create service orders manually or automatically from the service agreem
 
 ## Create service orders automatically for a service agreement
 
-1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
-
-2.  Select a service agreement.
-
-3.  Click the **Deliver** tab, and then click **Planned service orders**.
-
-4.  Specify dates in the **From date** and **To date** fields to define the service period.
-
-5.  Select the **Show Infolog** check box to display a list of the service orders that are created.
-
-6.  Select transaction types in the **Include transaction types** field group. The transaction types represent the lines that are created in the service agreement, and each transaction type that you select generates several service orders, depending on the service interval that is specified on the service agreement line.
-
-7.  To create any service orders that are missing from continuous series of service orders, select the **Continuous** check box.
-
-8.  Click **OK**.
+1. Go to **Service management** \> **Service agreements** \> **Service agreements**.
+1. Select a service agreement.
+1. On the Action Pane, select the **Deliver** tab, and then select **Planned service orders**.
+1. Specify dates in the **From date** and **To date** fields to define the service period.
+1. Set **Show Infolog** to *Yes* to generate an Action center message that displays a list of the service orders that are created.
+1. Select transaction types in the **Include transaction types** field group. The transaction types represent the lines that are created in the service agreement, and each transaction type that you select generates several service orders, depending on the service interval that is specified on the service agreement line.
+1. To create any service orders that are missing from continuous series of service orders, set **Continuous** to *Yes*.
+1. Select **OK**.
 
 ## Create service orders automatically for several service agreements
 
-1.  Click **Service management** \> **Periodic** \> **Service orders** \> **Create service orders**.
+1. Go to **Service management** \> **Periodic** \> **Service orders** \> **Create service orders**.
+1. Select **Select** to make selections to add or remove criteria to use to create service orders.
+1. Select **OK**.
 
-2.  Click **Select** to make selections to add or remove criteria to use to create service orders.
+## Additional resources
 
-3.  Click **OK**.
-
-## See also
-
-[Service orders](service-orders.md)
-
-[Automatically create service orders](auto-create-service-orders.md)
-
-  
-
-
-
+- [Service orders](service-orders.md)
+- [Automatically create service orders](auto-create-service-orders.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

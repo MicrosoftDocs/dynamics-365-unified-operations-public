@@ -37,7 +37,7 @@ New add-ins are made available on a regular basis. This section describes the ad
 
 ### Planning Optimization
 
-The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on the SQL database during master planning runs. Quick planning runs can be done even during office hours. Therefore, planners can immediately react to demand or parameter changes. To learn more, see [Planning Optimization overview](../../../supply-chain/master-planning/planning-optimization/planning-optimization-overview.md).
+The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on the SQL database during master planning runs. Quick planning runs can be done even during office hours. Therefore, planners can immediately react to demand or parameter changes. To learn more, see [Master planning system architecture](../../../supply-chain/master-planning/master-planning-architecture.md)
 
 ### Inventory Visibility
 

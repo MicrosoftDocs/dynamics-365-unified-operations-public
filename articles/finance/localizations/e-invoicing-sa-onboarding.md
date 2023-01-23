@@ -67,7 +67,7 @@ The onboarding process consists of two steps:
     basicConstraints = CA:FALSE
     keyUsage = digitalSignature, nonRepudiation, keyEncipherment
     [req_ext]
-    certificateTemplateName = ASN1:PRINTABLESTRING:TSTZATCACodeSigning
+    certificateTemplateName = ASN1:PRINTABLESTRING:ZATCA-Code-Signing
     subjectAltName = dirName:alt_names
     [alt_names]
     SN=1-TST|2-TST|3-ed22f1d8-e6a2-1118-9b58-d9a8f11e445f
@@ -100,7 +100,7 @@ The onboarding process consists of two steps:
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
 8. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
-9. Configure the related feature setup in the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
+9. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
 
@@ -108,7 +108,7 @@ After you obtain Compliance CSID using the PowerShell script, ZATCA requires you
 
 Ensure that all types of sample invoices that were configured in the Certificate Signing Request (CSR) configuration file are successfully submitted to ZATCA. Use the standard process for issuing electronic invoices. For more details, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country-specific Configuration section](e-invoicing-sa-get-started.md#country-specific-configuration-for-the-saudi-arabian-electronic-invoice-sa-electronic-invoicing-feature) steps using the Compliance CSID you obtained.
+Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country-specific Configuration section](e-invoicing-sa-get-started.md) steps using the Compliance CSID you obtained.
 
 After the compliance checks are successfully complete, use the PowerShell script to obtain Production CSID (refer on-boarding script).
 

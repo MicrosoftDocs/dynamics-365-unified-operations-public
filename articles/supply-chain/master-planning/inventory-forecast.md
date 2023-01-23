@@ -390,7 +390,7 @@ To set up a master plan so that it includes an inventory forecast, follow these 
     - **Forecast time period** – If you set the **Forecast plan** option to *Yes*, specify the number of days (from today's date) that the demand forecast should be applied.
 
     > [!IMPORTANT]
-    > The **Forecast plan** option isn't yet supported with Planning Optimization.
+    > The **Forecast plan** option isn't supported with Planning Optimization.
 
 ### Run a master plan that includes an inventory forecast
 

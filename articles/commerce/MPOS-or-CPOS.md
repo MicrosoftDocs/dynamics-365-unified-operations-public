@@ -66,7 +66,7 @@ In addition to a platform and form factor, retailers must also choose a deployme
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce for Windows | Cloud or RSSU       | Yes               | Yes               |
 | Store Commerce for Android | Cloud or RSSU       | No                | Yes               |
-| Store Commerce for iOS     | Cloud or RSSU       | No                | No                |
+| Store Commerce for iOS     | Cloud or RSSU       | No                | Yes               |
 | Cloud POS                  | Cloud or RSSU       | No                | No                |
 
 #### Commerce Scale Unit
@@ -85,7 +85,7 @@ Retailers must also consider how the POS will access devices and peripherals suc
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce for Windows | Yes            | Yes                 | Yes                |
 | Store Commerce for Android | No             | Yes                 | Yes                |
-| Store Commerce for iOS     | No             | No                  | Yes                |
+| Store Commerce for iOS     | No             | Yes                 | Yes                |
 | Cloud POS                  | No             | No                  | Yes                |
 
 For more information about hardware stations, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).

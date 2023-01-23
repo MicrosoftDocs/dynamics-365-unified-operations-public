@@ -4,7 +4,7 @@
 title: Candidate to hire
 description: This article describes the Candidate to hire entity for Dynamics 365 Human Resources.
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -76,6 +76,8 @@ When you create an internal candidate record (a candidate for the position who a
             "_mshr_fk_reasoncode_id_value": "Guid",
             "mshr_militaryserviceenddate": "Guid",
             "mshr_militaryservicestartdate": "Guid"
+            "mshr_militaryserviceenddate": "Date",
+            "mshr_militaryservicestartdate": "Date"
         }
 ```
 

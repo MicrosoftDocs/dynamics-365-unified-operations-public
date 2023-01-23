@@ -4,7 +4,7 @@
 title: Billing classifications and billing codes in the public sector
 description: This article explains how organizations in the public sector can use billing classifications and billing codes to help manage free text invoices. 
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.date: 11/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

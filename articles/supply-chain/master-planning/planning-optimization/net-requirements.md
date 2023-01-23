@@ -1,6 +1,6 @@
 ---
-title: Net requirements and pegging information with Planning Optimization
-description: This article provides information about calculated net requirements and pegging information in Planning Optimization.
+title: Net requirements and pegging information
+description: This article provides information about calculated net requirements and pegging information.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -13,13 +13,13 @@ ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Net requirements and pegging information with Planning Optimization
+# Net requirements and pegging information
 
 [!include [banner](../../includes/banner.md)]
 
-When you run master planning in Planning Optimization, it's important that you understand its output, how existing supply covers the demand, and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that master planning produces.
+When you run master planning, it's important that you understand its output, how existing supply covers the demand, and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that master planning produces.
 
-The **Net requirements** page shows the net requirements that Planning Optimization calculated for the product. It also shows the coverage settings that were applied during the master planning run, a breakdown of the requirements totals by transaction type, and pegging information.
+The **Net requirements** page shows the net requirements that master planning calculated for the product. It also shows the coverage settings that were applied during the master planning run, a breakdown of the requirements totals by transaction type, and pegging information.
 
 ## Open the Net requirements page
 
@@ -59,8 +59,8 @@ The lower section of the page provides the following tabs:
 The following commands are available on the Action Pane:
 
 - **Update \> Master planning** – Run master planning directly from the **Net requirements** page.
-- **Update \> Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't yet support this operation.
-- **Update \> Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't yet support this operation.
+- **Update \> Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
+- **Update \> Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't support this operation.
 
 ## Example scenario
 
@@ -128,8 +128,6 @@ Next, you will open the **Net requirements** page for product *1000* to review h
     ![Pegging information for the sales order](media/pegging-planned-purchase-order.png "Pegging information for the sales order")
 
 > [!NOTE]
-> Because Planning Optimization doesn't yet support some features, the *Safety stock* and *Expired batch* requirement types aren't included on the **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
->
-> If you're using the built-in master planning engine, batch-controlled products are supported. For batch-controlled products, expired on-hand inventory is shown on the **Net requirements** page, but it isn't pegged with demand requirements. Expired on-hand lines of this type are shown as *Expired batch* requirement lines on the **Net requirements** page.
+> The *Safety stock* requirement isn't included on the **Net requirements** page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

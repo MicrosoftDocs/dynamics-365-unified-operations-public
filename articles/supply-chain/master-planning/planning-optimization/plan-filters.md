@@ -6,7 +6,9 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace, ReqPlanSched
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 01/03/2023
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
@@ -14,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization lets you set up filters to limit the set of items that are included in a planning run, so that not all items are planned. 
+Master planning lets you set up filters to limit the set of items that are included in a planning run, so that not all items are planned. 
 
 You can use two types of filters to limit the set of items that is planned:
 
@@ -69,6 +71,15 @@ Follow these steps to set up the runtime filter and BOM levels for a master plan
 
 1. On the **Run in the background** FastTab, set recurrence and other batch options in the usual way. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Microsoft Dynamics 365 Supply Chain Management.
 
+> [!NOTE]
+> The following limitations apply when you use a runtime filter with BOM levels:
+>
+> - If you run auto-firming or another post-processing job using [the current extensibility point](/dynamics365/supply-chain/master-planning/planning-optimization/extensibility), then the system will only apply the auto-firming and other actions to the items specified directly on the filter (not to the subcomponents).
+> - Delays from subcomponents are not propagated to their respective parent items.
+> - The requirement date of a subcomponent may fall on a date closed by the calendar of the subcomponent. To update the date to an open date on the subcomponent calendar, you must make a full or filtered run that includes the subcomponent directly on the filter.
+>
+> If any of these issues are critical for you, then add the relevant subcomponents to the filter manually.
+
 ## Combine plan filters and runtime filters
 
 If you apply both a plan filter and a runtime filter during a master planning run, only the intersection of the two filters will be included in the run.
@@ -81,13 +92,5 @@ To see how the plan and runtime filters are combined, consider this example. You
 - **Run 4: The runtime filter includes all items (blank filter)** – Items A, B, and C are included, and the previous planning output for items A and B is overwritten.
 
 The system will also include all the relevant BOM components and subcomponents for the manufactured products that are found by the combined filters, as specified by the BOM level settings that you entered in the **Planning Optimization** run dialog box when you set up the job.
-
-## Related resources
-
-- [Planning Optimization overview](planning-optimization-overview.md)
-- [Get started with Planning Optimization](get-started.md)
-- [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-- [View plan history and planning logs](plan-history-logs.md)
-- [Cancel a planning job](cancel-planning-job.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

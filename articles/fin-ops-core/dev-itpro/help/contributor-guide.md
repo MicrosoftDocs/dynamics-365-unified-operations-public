@@ -2,7 +2,7 @@
 title: Extend, customize, and collaborate on the Help (contains video)
 description: This article provides tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/21/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -12,7 +12,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
 
-# Extend, customize, and collaborate on the Help
+# Extend and collaborate on the Help
 
 The source files for the Microsoft Help for finance and operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This article explains how to work with the GitHub repos and Markdown files.
 
@@ -27,16 +27,13 @@ You can also contribute and make edits to the existing documentation. To get sta
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
 > [!NOTE]
-> Microsoft currently accepts pull requests only to the Dynamics-365-Unified-Operations-public repo, not to the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.
+> Microsoft currently accepts pull requests only to the Dynamics-365-Unified-Operations-public repo.
 
 ## Extend and customize Microsoft source content from GitHub repos
 
-Microsoft uses separate repos in GitHub for the source content and for each language that Microsoft translates content into. The [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo contains the source content in English (United States). If you want to access the content in other languages, the names follow the pattern **Dynamics-365-Operations.\<language\>-\<country\>**. For example, the version for German (Germany) is named [Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de).
+Microsoft provides a repo in GitHub for the source content. The [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo contains the source content in English (United States).
 
-When Microsoft publishes an update to the content, the *main* branch in the corresponding GitHub repo is updated. The source repo is updated weekly. However, the related language-specific repos are updated less often. The frequency depends on when new translations are made available. If you fork one of the Microsoft repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less often, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you change files that Microsoft has also changed. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs authoring guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.
-
-> [!IMPORTANT]
-> In April 2021, the default branch in the public source repo has been renamed from *live* to *main*. If you have any scripts that rely on the *live* branch, please update them to rely on *main* instead. The default branches in the language-specific repos will be renamed later.
+When Microsoft publishes an update to the content, the *main* branch in the repo is updated. The source repo is updated weekly. If you fork the Microsoft repo, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less often, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you change files that Microsoft has also changed. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs authoring guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.
 
 > [!TIP]
 > If you just want to get the Microsoft content as it is, you don't have to be familiar with GitHub. For more information, see the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section of this article. However, if you want to extend or customize the Microsoft content, we recommend that you join Microsoft on GitHub.
@@ -53,7 +50,7 @@ To join Microsoft in the world of GitHub and Markdown, you must be familiar with
 
 2. Fork the appropriate repo.
 
-    To extend and customize Microsoft content for a custom Help solution, you must create a fork of the repo. If you want to customize Microsoft content in Markdown format, we recommend that you manually fork the relevant repo and use your favorite Markdown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
+    If you want to supplement Microsoft's content, then you do not need a fork of our repo. If you will customize Microsoft content using the MarkDown format, we recommend that you manually fork the relevant repo and use your favorite MarkDown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
 
     > [!TIP]
     > You aren't required to make your GitHub repos public. When you fork a public repo, in the settings for the new repo, you can specify whether the repo is public, private, or available only to specific GitHub accounts.
@@ -71,17 +68,26 @@ Microsoft makes frequent changes to the content, and those changes show up in th
 
 When you decide that it's time to get the latest version of the content from Microsoft, you can use the Git command line or GitHub Desktop. The Help for GitHub provides [an example that shows how this process works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, you use the **Merge into current branch** command to pull changes from the origin into your fork.
 
-If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. Although Microsoft has a GitHub repo for each supported language, the configuration files are available only in the English (United States) version of the base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public. You can use the HtmlFromRepoGenerator tool from the [Custom Help Toolkit](custom-help-toolkit.md) to get the files.
-
-Because the Microsoft repos are public, you don't have to have a valid GitHub account to get the content. However, we recommend that, at a minimum, your organization have a system account that has access to GitHub.
-
-For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
+Because the Microsoft repos are public, you don't have to have a valid GitHub account to get the content. However, we recommend that, at a minimum, your organization have a system account that has access to GitHub. For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
 
 ## Get the content without a GitHub account
 
 If you don't want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub even if you don't have a GitHub account. For example, you can just clone the relevant GitHub repo. A GitHub account isn't required to clone a repo. Because the Microsoft repos are public, anyone can always access them.
 
 ## Translate the content
+
+If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples.
+
+* Create the content in multiple languages without using Microsoft's content.
+* Create the content in one language, without using Microsoft's content, and then translate it. For example, by using the [Dynamics 365 Translation Service (DTS)](#dynamics-365-translation-service).
+* Pull Microsoft's English (United States) language content from our MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, customize the Markdown files, translate them, and then use a third-party tool or DocFX to build the HTML files.
+
+    > [!NOTE]
+    > DTS isn't an option for translating the content in this scenario because it doesn't support Markdown files.
+
+* Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool to pull Microsoft's English (United States) content, build the HTML files, customize them, and then translate them. You can use DTS to translate HTML files. 
+
+### Dynamics 365 Translation Service
 
 You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your own or the Microsoft-provided content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](../lifecycle-services/use-translation-service-ua.md).
 

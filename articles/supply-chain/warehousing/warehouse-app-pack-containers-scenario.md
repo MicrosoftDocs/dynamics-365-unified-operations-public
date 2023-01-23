@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
 ms.topic: how-to
 ms.date: 10/14/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

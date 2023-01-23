@@ -2,7 +2,7 @@
 title: Cash register functionality for Norway
 description: This article provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 Commerce, and provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/23/2022
+ms.date: 01/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -160,15 +160,15 @@ On the **Language text** page, add the following records for the labels of the c
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
-| Name                            | Type    | Caption text ID |
-|---------------------------------|---------|-----------------|
-| ReceiptTitle                    | Receipt | 900011          |
-| IsGiftCard                      | Receipt | 900012          |
-| SalesTotalExt                   | Receipt | 900013          |
-| TaxTotalExt                     | Receipt | 900014          |
-| TotalWithTaxExt                 | Receipt | 900015          |
-| AmountPerTaxExt                 | Receipt | 900016          |
-| CashTransactionSequentialNumber | Receipt | 900017          |
+| Name                               | Type    | Caption text ID |
+|------------------------------------|---------|-----------------|
+| ReceiptTitle_NO                    | Receipt | 900011          |
+| IsGiftCard_NO                      | Receipt | 900012          |
+| SalesTotalExt_NO                   | Receipt | 900013          |
+| TaxTotalExt_NO                     | Receipt | 900014          |
+| TotalWithTaxExt_NO                 | Receipt | 900015          |
+| AmountPerTaxExt_NO                 | Receipt | 900016          |
+| CashTransactionSequentialNumber_NO | Receipt | 900017          |
 
 > [!NOTE]
 > It's important that you specify correct custom field names, as listed in the above table. An incorrect custom field name will cause missing data in receipts.

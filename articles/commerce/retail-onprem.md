@@ -1,25 +1,22 @@
 ---
 title: Commerce capabilities that are available in on-premises deployments
-description: This article lists the Commerce capabilities available in on-premises deployments.
+description: This article lists the capabilities available in on-premises deployments of Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 01/31/2022
+ms.date: 12/13/2022
 ms.topic: article
-ms.prod: dynamics-365
-ms.technology: 
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
-ms.search.validFrom: July 2017 update
-ms.dyn365.ops.version: 6/30/2017
-ms.service: 
+ms.search.validFrom: 2017-06-20
+
 ---
 
 # Commerce capabilities that are available in on-premises deployments
 
 [!include [banner](includes/banner.md)]
 
-This article lists Commerce capabilities that are available in on-premises deployments.
+This article lists the capabilities available in on-premises deployments of Microsoft Dynamics 365 Commerce.
 
 For more information about on-premises deployments, see [On-premises deployment home page](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
@@ -68,7 +65,7 @@ The following table indicates which pricing and discount components are availabl
 | Affiliation price groups                              | Available          |
 | Commerce channel price groups                         | Available          |
 | Pricing priorities                                    | Available          |
-| Price simulator                                       | Not available      |
+| Price simulator                                       | Available          |
 
 ### Customer
 
