@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 Mobile device container packing policies let you control the packing process supported by the Warehouse Management mobile app.
 
-For more information about how packing containers with the Warehouse Management mobile app works see, [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). For an example of how to set up and use this functionality, see [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
+For more information about how packing containers with the Warehouse Management mobile app works, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). For an example of how to set up and use this functionality, see [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
 
 ## Prerequisites
 

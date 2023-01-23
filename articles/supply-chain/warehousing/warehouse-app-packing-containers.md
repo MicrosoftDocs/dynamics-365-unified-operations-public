@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
 ms.topic: conceptual
-ms.date: 10/14/2022
+ms.date: 01/30/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Traditionally, warehouse workers have performed packing activities at a specific packing station that is configured in Microsoft Dynamics 365 Supply Chain Management, and they have used a process that is optimized for shipments of small to medium-sized parcels. To help improve efficiency in larger packing areas, and to better support the packing and shipment of larger items, the Dynamics 365 Warehouse Management mobile app provides a mobile packing experience that gives workers the freedom to move around while they perform their packing activities.
+Traditionally, warehouse workers have performed packing activities at a specific packing station that is configured in Microsoft Dynamics 365 Supply Chain Management, and they've used a process that is optimized for shipments of small to medium-sized parcels. To help improve efficiency in larger packing areas, and to better support the packing and shipment of larger items, the Dynamics 365 Warehouse Management mobile app provides a mobile packing experience that gives workers the freedom to move around while they perform their packing activities.
 
 This article describes how to use the shipment container packing process in the Warehouse Management mobile app. This process can be used in combination with the process on the **Pack** page in the Supply Chain Management web client. For more information about the warehouse management packing process, see [Pack containers for shipment](packing-containers.md).
 
@@ -38,7 +38,7 @@ We recommend that you use the [detour]( warehouse-app-detours.md) functionality.
 
 ### Pack inventory into containers
 
-The *Pack inventory into containers* process is controlled by the [mobile device container packing policies](warehouse-app-pack-containers-scenario.md) associated with the relevant mobile device menu items. You can set up the system either to require wormers to manually specify and confirm the required information during the packing process, or allow the system to automatically find and apply the required data.
+The *Pack inventory into containers* process is controlled by the [mobile device container packing policies](warehouse-app-pack-containers-scenario.md) associated with the relevant mobile device menu items. You can set up the system either to require workers to manually specify and confirm the required information during the packing process, or allow the system to automatically find and apply the required data.
 
 The process requires the following information (at minimum):
 
@@ -69,13 +69,13 @@ Workers can trigger the *Container closing* process directly, by using a Warehou
 
 ## Supported and unsupported processes
 
-The following table shows which processes are and aren't supported when the container packing process in the Warehouse Management mobile app is used instead of the **Pack** page in the Supply Chain management web client. Some rows use parentheses in the *Supported in the mobile app* column; these indicate either a partial-yes or partial-no status, which is clarified in the *Notes* column.
+The following table shows which processes are and aren't supported when the container packing process in the Warehouse Management mobile app is used instead of the **Pack** page in the Supply Chain management web client. Some rows use parentheses in the *Supported in the mobile app* column; these parentheses indicate either a partial-yes or partial-no status, which is clarified in the *Notes* column.
 
 | Logic | Supported in the mobile app | Notes |
 |---|---|---|
 | Items enabled for **Catch weight** | No | |
-| Identification of license plate/shipment | Yes | When you use a mobile device menu item without a **Packing policy ID** value (or use a packing policy that has **Starting step** set to *Scan shipment ID first*) the system will let workers pack physical inventory on-hand from multiple license plates by automatically selecting the "from" license plate. But if you use a packing policy with **Starting step** set to *Scan license plate ID first*, only physical inventory on-hand related to the selected license plate can be packed.  |
-| Identification of tracking dimensions | Yes | When you use a mobile device menu item without a **Packing policy ID** value (or use a packing policy that has **Capture tracking dimensions** set to *Skip capturing*) workers won't be asked to specify the tracking dimensions while packing. However, if serial numbers are used and the tracking dimensions group is set to capture serial at packing, then workers will always needs to specify the serial number. If you use a packing policy with **Capture tracking dimensions** set to *Capture one by one*, the system won't default the tracking dimensions, so workers will always need to specify them.|
+| Identification of license plate/shipment | Yes | When you use a mobile device menu item without a **Packing policy ID** value (or use a packing policy that has **Starting step** set to *Scan shipment ID first*), the system will let workers pack physical inventory on-hand from multiple license plates by automatically selecting the "from" license plate. But if you use a packing policy with **Starting step** set to *Scan license plate ID first*, only physical inventory on-hand related to the selected license plate can be packed.  |
+| Identification of tracking dimensions | Yes | When you use a mobile device menu item without a **Packing policy ID** value (or use a packing policy that has **Capture tracking dimensions** set to *Skip capturing*), workers won't be asked to specify the tracking dimensions while packing. However, if serial numbers are used and the tracking dimensions group is set to capture serial at packing, then workers will always need to specify the serial number. If you use a packing policy with **Capture tracking dimensions** set to *Capture one by one*, the system won't default the tracking dimensions, so workers will always need to specify them.|
 | Identification of product variant dimensions | Yes | |
 | Identification via GS1 bar code scanning | (Yes) | Only the [generic GS1 setup](gs1-barcodes.md#generic-gs1-setup) will be used for each field. When, for example, a worker scans a barcode containing both item and quantity as part of the **Scan item number** field, only the item number will be used from the barcode, the quantity to pack won't get evaluated. |
 | Identification item via bar code setup | (Yes) | However, quantity and unit (piece-by-piece) scanning isn't supported. |

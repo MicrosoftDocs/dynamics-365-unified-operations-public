@@ -1,6 +1,6 @@
 ---
 title: Message processor messages for warehouse management processes
-description: This topic provides information about the Message processor messages feature for warehouse management.
+description: This article provides information about the Message processor messages feature for warehouse management.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac

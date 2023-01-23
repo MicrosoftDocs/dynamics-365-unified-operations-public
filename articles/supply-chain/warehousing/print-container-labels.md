@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSource, SysCorpNetPrinterList, WHSDocumentRouting, WHSPackProfile, WHSContainerTable, WHSRFMenuItem
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 01/30/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -22,7 +22,7 @@ As for [license plate labels](document-routing-layout-for-license-plates.md), th
 
 ## Turn on the container label printing functionality
 
-Container label functionality is provided by default in Supply Chain Management version 10.0.32. In version 10.0.31, it is part of the *Pack containers using the Warehouse Management mobile app* feature (see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)). Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.
+Container label functionality is provided by default in Supply Chain Management version 10.0.32. In version 10.0.31, the *Pack containers using the Warehouse Management mobile app* feature must be enabled in order to use the container label printing functionality(see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)). Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the *Pack containers using the Warehouse Management mobile app* feature and turn it on or off.
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 
@@ -36,7 +36,7 @@ You can also use this scenario as guidance for using the feature on a production
 
 ### Create a container label layout
 
-The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer. Typically, you will copy this code from a label designer program.
+The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer. Typically, you'll copy this code from a label designer program.
 
 As the system generates a label, it can replace field and method names that are used in the label layout with actual values. You can easily find text that will be replaced by looking for dollar signs (`$`) in the code.
 
@@ -101,7 +101,7 @@ If you must create more advanced label layouts, you can benefit from using some 
 
 To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{LabelStart ...}}`, `{{HeaderFirst ... }}`, `{{Header ... }}`, `{{Row ... }}`, `{{FooterFirst ... }}`, `{{Footer ... }}`, and `{{LabelEnd ...}}` elements in your code.
 
-The following example shows a label that includes all these elements. It prints data about items that are packed in a container, so you will need to use a **Label layout data source ID** using a query which joins to the container lines (container details). The data can be split on multiple pages, which ensures that all data will be printed in cases where you have many container lines. In this example, the first page will print a container ID barcode and 6 container lines. The following pages prints 10 lines per page. Each line contains information about the *Item*, *Quantity*, and *Unit*. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.  
+The following example shows a label that includes all these elements. It prints data about items that are packed in a container, so you'll need to use a **Label layout data source ID** that uses a query that joins to the container lines (container details). The data can be split on multiple pages, which ensures that all data will be printed in cases where you have many container lines. In this example, the first page will print a container ID barcode and six container lines. The following example prints ten lines per page. Each line contains information about the *Item*, *Quantity*, and *Unit*. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.  
 
 ``` ZPL
 {{LabelStart
@@ -194,7 +194,7 @@ To set the formats of date, time, and number values that are shown in a label la
 
 ### Set up container label routing
 
-To specify the container label layouts that are used and where they are printed, you must define a **Container label routing** record, as described in the following procedure.
+To specify the container label layouts that are used and where they're printed, you must define a **Container label routing** record, as described in the following procedure.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
 1. On the Action Pane, select **New** to create a routing record.
@@ -252,7 +252,7 @@ To enable workers to print container labels manually, you must create a new mobi
 
 ### Add the new mobile device menu item to the menu
 
-Now that you've created the mobile device menu item, you can add it to the mobile device menu. In this example, you will add it to the existing **Outbound** mobile device menu.
+Now that you've created the mobile device menu item, you can add it to the mobile device menu. In this example, you'll add it to the existing **Outbound** mobile device menu.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. On the Action Pane, select **Edit**.
