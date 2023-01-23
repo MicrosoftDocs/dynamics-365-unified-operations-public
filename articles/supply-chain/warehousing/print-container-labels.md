@@ -22,10 +22,7 @@ As for [license plate labels](document-routing-layout-for-license-plates.md), th
 
 ## Turn on the container label printing functionality
 
-Container label functionality is available by default in 10.0.32. In 10.0.31 it is part of the *Pack containers using the Warehouse Management mobile app* feature. (For more information, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) To use this functionality, the feature must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Pack containers using the Warehouse Management mobile app*
+Container label functionality is provided by default in Supply Chain Management version 10.0.32. In version 10.0.31, it is part of the *Pack containers using the Warehouse Management mobile app* feature (see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)). Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 
@@ -58,7 +55,7 @@ Follow these steps to create a container label layout.
 
 1. Copy the following example of a ZPL container label.
 
-    ``` plaintext
+    ``` ZPL
     CT~~CD,~CC^~CT~
     ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
     ^XA
@@ -104,10 +101,10 @@ If you must create more advanced label layouts, you can benefit from using some 
 
 To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{LabelStart ...}}`, `{{HeaderFirst ... }}`, `{{Header ... }}`, `{{Row ... }}`, `{{FooterFirst ... }}`, `{{Footer ... }}`, and `{{LabelEnd ...}}` elements in your code.
 
-The following example shows a label that includes all these elements. It prints data about items that are packed in a container, so you will need to use a **Label layout data source ID** using a query which joins to the container lines (Container Details). The data can get split on multiple pages, ensuring getting all data printed in case of having many container lines. In this example the first page will print a container ID barcode and 6 container lines. The following pages prints 10 lines per page. Each line containing information about the *Item*, *Quantity*, and *Unit*. This setup gets controlled by the *RowsPerLabelFirst=6* and *RowsPerLabel=10* attributes.  
+The following example shows a label that includes all these elements. It prints data about items that are packed in a container, so you will need to use a **Label layout data source ID** using a query which joins to the container lines (container details). The data can be split on multiple pages, which ensures that all data will be printed in cases where you have many container lines. In this example, the first page will print a container ID barcode and 6 container lines. The following pages prints 10 lines per page. Each line contains information about the *Item*, *Quantity*, and *Unit*. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.  
 
 <!--Q:When viewed in a browser the end user sees the "plaintext" - so can't we write "ZPL text" or something instead? -->
-``` plaintext
+``` ZPL
 {{LabelStart
 ^FX ... ZPL commands to start the label ...
 
@@ -269,11 +266,16 @@ Now that you've created the mobile device menu item, you can add it to the mobil
 
 For an example that shows how to print bar codes automatically as part of a container creation process, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). Follow the instructions there, and confirm that the scenario that is described in this article is also supported by using a **Packing profile** with the **Print container label at container creation** enabled.
 
-To manually print a container label you can use the web client **Warehouse management \> Packing and containerization \> Containers** followed by **Print \> Container label** and/or use the Warehouse Management mobile app **Print container label** mobile device menu item. Here are a few suggestions for ways that you can customize and fine-tune this scenario to help reduce the number of steps that workers must perform when they print container labels.
+To manually print a container label, so one of the following actions:
 
-- You can [query data by using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md) to look up a container ID instead of prompting the worker to enter it manually.
+- In the web client, go to **Warehouse management \> Packing and containerization \> Containers** and select **Print \> Container label** from the Action Pane
+- Use the Warehouse Management mobile app **Print container label** mobile device menu item.
+
+Here are a few suggestions for ways that you can customize and fine-tune this scenario to help reduce the number of steps that workers must perform when they print container labels:
+
+- Set up the mobile device menu item to [query data by using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md), which will enable it to look up a container ID instead of prompting the worker to enter it manually.
 - When a worker selects the **Print container label** mobile device menu item on the **Outbound** menu, the app automatically submits the current **User ID** and **Warehouse** values. If workers want to specify a **Location** value, they can do so in the app.
-- If you want the **Location** value to be assigned automatically when a worker selects **Print container label** from the **Pack inventory into containers** menu item, you can set up a [detour]( warehouse-app-detours.md).
+- If you want the **Location** value to be assigned automatically when a worker selects **Print container label** from the **Pack inventory into containers** menu item, then set up a [detour]( warehouse-app-detours.md).
 
 ## Additional resources
 
