@@ -80,6 +80,15 @@ The following features are also supported only for call centers:
 
 No. Catalog source codes are supported only for call center channels.
 
+### With B2B catalogs feature being enabled, order templates only show items from the currently selected catalog? 
+
+Currently, Order templates are not catalog-aware, thus when accessing the Order templates with B2B catalog feature being turned on, it would only show the partial lines from the order template that are also part of the currently selected catalog. It is on the backlog, to make catalogs and Order templates work correctly, we recommend to please check release notes for future updates. 
+
+### With B2B catalogs feature being enabled, 'Buy it again' option is not available for the order lines in the Order history? 
+
+As same customer can buy products from both B2B and B2C channels and Order history would show the customer order history from all channels. And considering, catalog support is only available for B2B channels and catalog information is mandatory to purchase in a B2B channel, and order lines from B2C channels shall not have any catalog information. Thus, for initial phase it was decided to drop the 'Buy it again' from Order history view. It is on the backlog, to bring back the 'Buy it again' from Order history in a B2B channel, we recommend to monitor release notes for future updates. 
+
+
 ## Additional resources
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
