@@ -2,7 +2,7 @@
 # required metadata
 
 title: Posting detailed payments for vendor and customers
-description: This article describes posting detailed vendor and customer payments and summarize amounts in bank accounts.
+description: This article describes posting detailed vendor and customer payments and summarizes amounts in bank accounts.
 author: kweekley
 ms.date: 01/12/2023
 ms.topic: article
@@ -48,7 +48,7 @@ On the **Journal names** page, two new options are available under the **Bank** 
 
 [![Journal names](./media/bank-field1.png)](./media/bank-field1.png)
  
-The option **Summarize amounts in bank account** defaults to **No**. If the option is set to **No**, payments within a journal batch group will update the bank account in either detail or summary, depending on whether the payments are entered in a single voucher number or not. Posting to the bank account works the same as if the feature were turned off. With this feature, we no longer recommend entering multiple payments within a single voucher number. 
+The option **Summarize amounts in bank account** defaults to **No**. If the option is set to **No**, payments within a journal batch group will update the bank account in either detail or summary, depending on whether the payments are entered in a single voucher number or not. Posting to the bank account works the same as if the feature were turned off. With this feature, it is no longer recommended entering multiple payments within a single voucher number. 
 
 The option **Summarize amounts in bank account** can only be changed to **Yes** if the **New voucher** setting on the journal name is defined as **In connection with balance**. By having this setting defined as **In connection with balance**, it promotes (but doesn’t guarantee) a single voucher per vendor or customer payment. When using the new feature, summarization will not happen if the voucher contains more than one vendor or customer. 
 
@@ -56,7 +56,7 @@ The option **Summarize amounts in bank account** can only be changed to **Yes** 
 >If New voucher isn't defined as **In connection with balance**, the **Summarize amounts in bank account** can't be enabled. An error message “The Summarize amounts in bank account setting must be No when New voucher is set to Manual or One voucher number only.” If the option **Summarize amounts in bank account** is **Yes**, an error message will be given if New voucher is changed to a value different from **In connection with balance**. The error is “The New voucher setting must be In connection with balance when Summarize amounts in bank account is set to Yes.”
 
 
-When changing the first option to **Yes**, the **Summarization criteria** option becomes available. The second option allows your organization to define which criteria is used to summarize payments to the bank account. 
+When changing the first option to **Yes**, the **Summarization criteria** option becomes available. The second option allows your organization to define which criteria are used to summarize payments to the bank account. 
 
 The following options are available:
  - **Do not summarize** - Payments will not be summarized, even if **Summarize amounts in bank account** = **Yes**.
@@ -87,7 +87,7 @@ These conderations impacts how payments should be entered within the journal:
 ### Posting payments in a journal
 During posting, the group of payment lines considered for summarization as defined in the previous section. Once the group of payments is determined, the summarization will occur based on the settings on the journal batch header. 
  - Bank transaction summarization will not happen when **Summarize amounts in bank account** is **No** or the **Summarization** criteria is **Do not summarize** on the journal batch header.
-      - If a Journal name was defined to post the payments in summary to the bank account but the settings were changed on the journal batch header to not summarize, summarization will not happen.
+      - If a Journal name was defined to post the payments in summary to the bank account but the settings were changed on the journal batch header to not summarize, the transactions will not be summarized. 
  - Bank transaction summarization will happen when **Summarize amounts in bank account** is **Yes** and the **Summarization** criteria is set to **Default criteria**, **Default criteria with document number**, or **Default criteria with payment reference**. Refer to the summarization criteria in the Journal name setup section.
 
 
