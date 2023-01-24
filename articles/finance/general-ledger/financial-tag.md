@@ -70,6 +70,9 @@ Once a single tag is activated, the Financial tags will be available for entry o
 ### Journals and Lines
 When entering journals, tag values can be defined on the journal batch header. The tags on the journal batch header will be used as default values for the lines within the journal. As with other defaults on the journal, the tag values default to new lines added to the journal and not existing lines if the values are added to the header after lines exist. 
 
+
+picture 1
+
 ### Default values
 Tag values entered on journal will default as follows:
  - Single-line voucher
@@ -82,6 +85,8 @@ Tag values entered on journal will default as follows:
     - Tag values form the journal batch header default to the Account of each line added to the voucher. 
     - The tag values from the Account on the first line will not default to the Account of the next line of the voucher, and so on. 
 
+
+tag-line2
  
 Tag values will never default from master data. For example, there are no capabilities to define default tag values on customers or vendors. Tags values will also not default automatically with values from the transaction itself. For example, assume a tag was created to track Customer name. If a transaction contains a customer, the customer’s name will not default to the tag value. The value must be manually entered or imported. 
 
@@ -92,6 +97,9 @@ When tag values are entered on transactions, no validation occurs during transac
 After posting the transaction, the financial tags are available on the lines of the general ledger account entry. Tags will display on the **Voucher transactions** and **Transactions for <main account>** pages. The financial tags are displayed in separate columns, making it easier to sort and filter. 
 For reporting, the tags are not part of the dimension sets, which means it’s not possible to get a summarized balance of transactions for a specific tag value. For example, when looking at the trial balance, you can't get balances per tag value. But when you drill down on the balances from the trial balance, the tag values are shown on the detailed transactions. The detailed transactions can be exported to Excel, including the tag values in separate columns, and they can be summarized there if balances are necessary.  
  
+deactivated-tag3 
+ 
+ 
 If a tag is deactivated, the tag values remain on the posted transactions. Deactivated tags don't display by default on inquiry pages but the columns can be added by choosing **Show inactive financial tags**. 
 
 ### Correcting tag values after posting
@@ -101,5 +109,7 @@ While tags are available for reporting, they're not part of the ledger account a
 2. After the feature is enabled, go to **Voucher transactions**. 
 3. Use the query to find the transactions that you want to edit. 
 4. Select the lines within **Voucher transactions**. Select **Edit internal voucher data**. You can only edit lines which are selected. 
+ 
+ internal-vouceher4
 
 The page displays the lines selected from Voucher transactions, including the current financial tags and new financial tags. The current values default into the new values, to prevent the user from having to manually enter everything again, and instead only change what is incorrect. The **Bulk update selected records** button can be used to do mass updates. This is helpful to assign tag values to large groups of posted transactions that were incorrect or that didn’t have any tag values defined, such as those posted before the feature was enabled.
