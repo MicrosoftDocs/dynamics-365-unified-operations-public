@@ -32,7 +32,7 @@ The feature **Ability to post detailed vendor and customer payments, but summari
 For example, your bank pays three vendors 100 EUR each on behalf of your organization. When the bank completes the transactions, the bank statement may show the three payments in detail or may show a summarized withdrawal of 300 EUR. If your bank summarizes the payments into a single withdrawal, this feature can be used to mimic that functionality, making the bank reconciliation process more streamlined.  
 
 >[!IMPORTANT]
->This feature eliminates the need to record multiple vendor or customer payments within a single voucher number. See the One voucher documentation to determine whether the General ledger parameter can be defined to not allow multiple subledger transactions within a single voucher.
+>This feature eliminates the need to record multiple vendor or customer payments within a single voucher number. See [One voucher](one-voucher.md) to determine if the parameters can be defined to not allow multiple subledger transactions within a single voucher.
 
 
 ## Setup
