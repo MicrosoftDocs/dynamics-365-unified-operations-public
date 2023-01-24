@@ -103,7 +103,7 @@ Five transactions will be posted to the bank account, some maintaining the origi
 ### After posting payments in a journal
 After posting is complete, the summarized (or detailed payments) can be found on the Transactions of the bank account: Cash and bank management - Bank accounts - Bank accounts.
 
-[![Bank transactions](./bank-transactions3.png)](./bank-transactions3.png)
+[![Bank transactions](./media/bank-transactions3.png)](./media/bank-transactions3.png)
  
 For any summarized payments, the voucher number will display with an asterisk. Each payment is still posted in detail to the General ledger.
 
