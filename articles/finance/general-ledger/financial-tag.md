@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.16
 
 # Financial tags
 
-After transactions are posted, it’s common for organizations to require visibility into subledger data for analyzing the accounting entries generated from those transactions. Today, organizations use fields such as document number, description, or financial dimensions to track subledger data within general ledger because it’s difficult to navigate the data model to the subledger data. The type of subledger data often tracked includes things such as sales order numbers or purchase order numbers, the vendor or customer name, a payment reference, an invoice number, or a reference number from external transactions imported into Dynamics 365 Finance. In addition to analytics, the subledger data is also used for processes such as ledger settlement.  
+After transactions are posted, it’s common for organizations to require visibility into subledger data for analyzing the accounting entries generated from those transactions. Today, organizations use fields such as document number, description, or financial dimensions to track subledger data within general ledger because it’s difficult to navigate the data model to the subledger data. The type of subledger data often tracked includes sales order numbers or purchase order numbers, the vendor or customer name, a payment reference, an invoice number, or a reference number from external transactions imported into Dynamics 365 Finance. In addition to analytics, the subledger data is also used for processes such as ledger settlement.  
 
 
 The Financial tags (tags) feature eliminates the need to use document numbers, descriptions or financial dimensions by allowing an organization to create and enter up to 20 user-defined fields on transactions, which are then stored on the accounting entries created for the transaction. Tag values are not stored in any subledger tables, such as customer or vendor transactions.
@@ -36,7 +36,7 @@ Tags were introduced on Dynamics 365 Finance release 10.0.32. This release suppo
  - General journal
  - Global general journal
 
-With each new release, tags will be implemented into additional journals, documents, and processes. The What’s new documentation will include the new transactions that support tags for each release. 
+With each new release, tags will be implemented into additional journals, documents, and processes.
 
 ## Setup
 You must enable the **Financial tags** feature in the **Feature management** workspace to use the functionality. The feature can be disabled at any time. If the feature is enabled, and tags were entered on transactions, all tag values entered on those transactions are maintained in the database if the feature is disabled. The tag values would no longer be visible on any transactions or inquiries within Dynamics 365 Finance. 
