@@ -4,7 +4,7 @@
 title: Periodic tasks in Recurring contract billing
 description: This article describes the periodic tasks that are available in Recurring contract billing.
 author: JodiChristiansen
-ms.date: 04/29/2022
+ms.date: 01/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,11 +36,11 @@ Use the **Generate invoice** page to create mass monthly recurring invoices from
 
 ## Generate invoice batch processing
 
-Use the **Generate invoice batch processing** page to create recurring invoices through a recurring batch process. The Date range filter lets you select the billing schedules by Start date or End date. To use a start date or end date other than today's date select **Yes** for **Add the number of days or months**. Then choose Months or Days for **Select by days or months**. Enter the number of days or months. For days, 0 is today; for months, 0 means the first day to the last day of the current month. 
+Use the **Generate invoice batch processing** page to create recurring invoices through a recurring batch process. The **Date range** filter lets you select the billing schedules by **Start date** or **End date**. To use a start date or end date other than today's date select **Yes** for **Add the number of days or months**. Then choose **Months** or **Days** for **Select by days or months**. Enter the number of days or months. For days, 0 is today; for months, 0 means the first day to the last day of the current month. 
 
-For example; the current month is January, if you want to include billing schedule lines that have a start date through March 1, set the number of months to 2. If today is January 15 and you want to include billing schedule lines from January 1 - December 31 of the previous year use Days and set the number of days to -350 (365-15). When using Months remember that the current month is always included. 
+For example; the current month is January, if you want to include billing schedule lines that have a start date through March 1, set the number of months to 2. If today is January 15 and you want to include billing schedule lines from January 1 - December 31 of the previous year use Days and set the number of days to -350 (365-15). When using **Months**, the current month is always included. 
 
-The batch processing flag is set to Yes and cannot be changed to No. 
+The batch processing flag is set to **Yes** and can't be changed to **No**. 
 
 ## Generate quotation
 
