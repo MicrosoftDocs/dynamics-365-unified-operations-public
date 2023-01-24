@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Posting detailed payments for vendor and customers
 description: This article describes posting detailed vendor and customer payments and summarize amounts in bank accounts.
 author: kweekley
 ms.date: 01/12/2023
@@ -46,7 +46,7 @@ The ability to summarize payments to the bank subledger is supported on the foll
 
 On the **Journal names** page, two new options are available under the **Bank** field group: 
 
-bank field1
+[![Journal names](./media/bank-field1.png)](./media/bank-field1.png)
  
 The option **Summarize amounts in bank account** defaults to **No**. If the option is set to **No**, payments within a journal batch group will update the bank account in either detail or summary, depending on whether the payments are entered in a single voucher number or not. Posting to the bank account works the same as if the feature were turned off. With this feature, we no longer recommend entering multiple payments within a single voucher number. 
 
@@ -96,14 +96,14 @@ Assume the following vendor payments were entered in a journal. The journal batc
 
 The payments are summarized or not summarized as follows during the posting:
 
-summarized-payments2.png
+[![Summary posting](./media/summarized-payments2.png)](./media/summarized-payments2.png)
  
 Five transactions will be posted to the bank account, some maintaining the original payment detail and other payments summarized based on the summarization rules.
 
 ### After posting payments in a journal
 After posting is complete, the summarized (or detailed payments) can be found on the Transactions of the bank account: Cash and bank management - Bank accounts - Bank accounts.
 
-bank-transactions3.png
+[![Bank transactions](./bank-transactions3.png)](./bank-transactions3.png)
  
 For any summarized payments, the voucher number will display with an asterisk. Each payment is still posted in detail to the General ledger.
 
@@ -113,11 +113,11 @@ All summarized bank account transactions will have a unique summarization ID. If
 
 Users can view the payment details of a summarized bank account transaction by choosing the **View summarization details** button on the **Payment summarization details** page.
 
-payment-summary4.png
+[![Payment summarization details](./media/payment-summary4.png)](./media/payment-summary4.png)
 
  
 While viewing the summarization details, you can view the general ledger voucher of each payment, return to the bank account summarized transaction or view the settlement information for the selected payment.
 
 The bank account summarized transactions will also be displayed on the bank statement, making bank reconciliation easier, whether using the manual Account reconciliation or Advanced bank reconciliation. Both reconciliation processes show the bank summarization ID. If Advanced bank reconciliation is enabled for the bank account, a bank document with **Summarized transaction** type will be generated for the bank account. Users could match and reconcile them in the same way for other types of bank documents.
  
- bank-reconcile5.png
+[![Reconcile bank transactions](./media/bank-reconcile5.png)](./media/bank-reconcile5.png)
