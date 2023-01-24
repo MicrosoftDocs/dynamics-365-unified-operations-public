@@ -46,7 +46,7 @@ The entry of tags on transactions is a similar experience to entering a ledger a
 ## Create financial tags
 
 Before creating your tags:
- - Evaluate whether the data should be tracked as a financial dimension or a financial tag. Financial tags are an alternative to creating financial dimensions, especially when tracking values that have little or no reusability, such as sales order numbers or purchase order numbers. See [Differences between financial tags and financial dimensions](xxxx.as;asdlf.md), for more information about the differences between financial tags and financial dimensions. 
+ - Evaluate whether the data should be tracked as a financial dimension or a financial tag. Financial tags are an alternative to creating financial dimensions, especially when tracking values that have little or no reusability, such as sales order numbers or purchase order numbers. See [Differences between financial tags and financial dimensions](financial-tag-financial-dimension.md), for more information about the differences between financial tags and financial dimensions. 
  - Once a financial tag has been created, it can’t be deleted, it can only be deactivated. Deletion is not permitted to ensure that the tag values are still available for reporting on posted general ledger entries. Activation and deactivation of a financial tag can be done easily and at any time. 
  - The label of each financial tag can be changed at any time, even after transactions are posted. 
  - If no transactions have been posted for the specific tag, changing the label will have no impact. This is useful when you need to repurpose a tag for tracking other data.
@@ -93,7 +93,7 @@ Tag values will never default from master data. For example, there are no capabi
 When tag values are entered on transactions, no validation occurs during transaction entry or during posting. Even if a tag is defined with a type of List or Custom list, the tag values are not validated to ensure that the value exists within the list. For example, a tag is created with a List type and the Purchase order number is selected as the source of the list. The dropdown will present the list of purchase order numbers but the user can enter a purchase order number that doesn’t exist within the list. 
 
 ### Posting transactions with tag values
-After posting the transaction, the financial tags are available on the lines of the general ledger account entry. Tags will display on the **Voucher transactions** and **Transactions for <main account>** pages. The financial tags are displayed in separate columns, making it easier to sort and filter. 
+After posting the transaction, the financial tags are available on the lines of the general ledger account entry. Tags will display on the **Voucher transactions** and **Transactions for main account** pages. The financial tags are displayed in separate columns, making it easier to sort and filter. 
 For reporting, the tags are not part of the dimension sets, which means it’s not possible to get a summarized balance of transactions for a specific tag value. For example, when looking at the trial balance, you can't get balances per tag value. But when you drill down on the balances from the trial balance, the tag values are shown on the detailed transactions. The detailed transactions can be exported to Excel, including the tag values in separate columns, and they can be summarized there if balances are necessary.  
  
 [![Deactivated tags](./media/deactivated-tag3.png)](./media/deactivated-tag3.png)
@@ -109,6 +109,6 @@ While tags are available for reporting, they're not part of the ledger account a
 3. Use the query to find the transactions that you want to edit. 
 4. Select the lines within **Voucher transactions**. Select **Edit internal voucher data**. You can only edit lines which are selected. 
  
-[![Voucher transaction line](./media/internal-vouceher4.png)](./media/internal-vouceher4.png)
+[![Voucher transaction line](./media/internal-voucher4.png)](./media/internal-voucher4.png)
 
 The page displays the lines selected from Voucher transactions, including the current financial tags and new financial tags. The current values default into the new values, to prevent the user from having to manually enter everything again, and instead only change what is incorrect. The **Bulk update selected records** button can be used to do mass updates. This is helpful to assign tag values to large groups of posted transactions that were incorrect or that didn’t have any tag values defined, such as those posted before the feature was enabled.
