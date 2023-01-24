@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 07/15/2022
+ms.date: 01/23/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -80,13 +80,13 @@ The following features are also supported only for call centers:
 
 No. Catalog source codes are supported only for call center channels.
 
-### With B2B catalogs feature being enabled, order templates only show items from the currently selected catalog? 
+### When the B2B catalogs feature is enabled, do order templates only show items from the currently selected catalog? 
 
-Currently, Order templates are not catalog-aware, thus when accessing the Order templates with B2B catalog feature being turned on, it would only show the partial lines from the order template that are also part of the currently selected catalog. It is on the backlog, to make catalogs and Order templates work correctly, we recommend to please check release notes for future updates. 
+Currently, order templates are not catalog-aware. This means that when you access order templates and the **B2B catalog** feature is enabled, only partial lines from the order template that are also part of the currently selected catalog, are shown. To check for progress on catalogs and order templates working correctly together, we recommend you check the release notes for future updates. 
 
-### With B2B catalogs feature being enabled, 'Buy it again' option is not available for the order lines in the Order history? 
+### When the B2B catalogs feature is enabled, is the option, Buy it again available for the order lines in the order history? 
 
-As same customer can buy products from both B2B and B2C channels and Order history would show the customer order history from all channels. And considering, catalog support is only available for B2B channels and catalog information is mandatory to purchase in a B2B channel, and order lines from B2C channels shall not have any catalog information. Thus, for initial phase it was decided to drop the 'Buy it again' from Order history view. It is on the backlog, to bring back the 'Buy it again' from Order history in a B2B channel, we recommend to monitor release notes for future updates. 
+Because the same customer can buy products from both the B2B and B2C channels, the order history shows the customer's order history from all channels. Catalog support is only available for B2B channels and catalog information is mandatory to purchase in a B2B channel. Order lines from B2C channels shouldn't have any catalog information. For this initial phase, **Buy it again** was removed from the order history view. To see whether **Buy it again** becomes available in the order history in a B2B channel, we recommend you check the release notes for future updates. 
 
 
 ## Additional resources
