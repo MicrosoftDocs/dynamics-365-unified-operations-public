@@ -50,15 +50,15 @@ Follow these steps to create a container label layout.
 1. On the Action Pane, select **New** to create a label.
 1. Set the following values for the new label:
 
-    - **Label layout ID:** Enter *Container*.
-    - **Description:** Enter *Container ID barcode*.
-    - **Label layout data source ID:** Leave this field blank. (Only container data will be used.)
-    - **Enable label template support:** Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
-    - **Date, time, and number format:** Leave this field blank. (This field is used to set the formats of date, time, and number values that are shown in a label layout, as described later in this article.)
+    - **Label layout ID** – Enter *Container*.
+    - **Description** – Enter *Container ID barcode*.
+    - **Label layout data source ID** – Leave this field blank. (Only container data will be used.)
+    - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
+    - **Date, time, and number format** – Leave this field blank. (This field is used to set the formats of date, time, and number values that are shown in a label layout, as described later in this article.)
 
 1. Copy the following example of a ZPL container label.
 
-    ``` plaintext
+    ``` ZPL
     CT~~CD,~CC^~CT~
     ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
     ^XA
@@ -86,13 +86,12 @@ Follow these steps to create a container label layout.
 >
 > In the label layout that is shown in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) bar code will be printed. If you want to include additional related information (such as the delivery name that is related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it.
 >
-> 1. Go to **Warehouse \> Setup \> Document routing \> Label layout data source**.
-> 1. Create a label layout data source that includes a join to the `Shipment` table.
+> 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
 > 1. On the Action Pane, select **New**.
 > 1. In the new record, set the **Label layout data source ID**, **Description**, and **Label layout type** fields.
 > 1. On the Action Pane, select **Save**.
 > 1. On the Action Pane, select **Edit query**.
-> 1. A standard query editor dialog box appears. On the **Joins** tab, add a join to the required tables.
+> 1. A standard query editor dialog box appears. On the **Joins** tab, add a join to the required tables.  (For example, you might make a join to the `Shipment` table if you want your label to show the delivery name that is related to a shipment.)
 > 1. Go back to the **Label layout** page, and then, in the **Label layout data source ID** field, select the new record for a new or existing layout.
 > 1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number (*\_\#*) as a suffix.
 >
@@ -104,7 +103,7 @@ If you must create more advanced label layouts, you can benefit from using some 
 
 To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
 
-``` plaintext
+``` ZPL
 {{Header
 ^FX ... ZPL commands that will be printed on every label ...
 CT~~CD,~CC^~CT~
