@@ -30,7 +30,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates will never downgrade the environment or automatically upgrade from one service update version to another. 
 - Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
 - Notifications that are related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/).
-- Five days before a proactive quality update is applied to an environment, customers are notified that the update will occur.
+- Customers are notified at least five days before a proactive quality update is applied to an environment.
 - Customers can't cancel or postpone proactive quality updates.
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
@@ -42,7 +42,8 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Every service update has at least one PQU release train ongoing or slated to begin. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all of them when you move to a newer version service update. Please check the schedule to determine when a PQU for a service update is scheduled if you plan to upgrade to a newer version service update. 
 
 > [!Note]
-> Standard performance test (tier4), Premium performance test (tier5) sandboxes and production environments will receive PQUs on weekends. 
+> Production environments will receive PQUs on weekends.
+> Standard performance test (tier4) and Premium performance test (tier5) sandboxes will receive PQUs on weekends along with production environments of their region. 
 
 ## Focus on quality updates
 

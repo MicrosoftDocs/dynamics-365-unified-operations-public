@@ -87,7 +87,7 @@ If the **Enterprise ID (COID)** registration category already exists and has bee
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-3. In the **Overview** section, create a line for the selected sales tax code.
+3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
 4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification.
 
 ## Configure unit codes
