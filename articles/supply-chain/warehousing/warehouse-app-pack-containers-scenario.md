@@ -22,7 +22,7 @@ The following illustration shows the packing functionality that this scenario ad
 
 [<img src="media/wma-packing-demo.png" alt="Warehouse app packing example scenario." title="Warehouse app packing example scenario" width="720" />](media/wma-packing-demo.png)
 
-You can establish a packing flow by creating mobile device menu items and detours handling. The example scenario provided in this article explains the menu items listed without parentheses in the following table.
+You can establish a packing flow by creating mobile device menu items and detour handling. The example scenario that's provided in this article explains the menu items that aren't enclosed in parentheses in the following table.
 
 | Pack inventory into containers | Container creation | Container closing | (Print container label) | (Container deletion) |
 |---|---|---|---|---|
@@ -67,7 +67,7 @@ For each worker that will use the Warehouse Management mobile app to pack contai
 1. On the **Profile** FastTab, set the following values:
 
     - **Container packing policy:** Select *WH62Close*. This policy will move containers to the *Baydoor* location when they're closed.
-    - **Packing profile ID:** Select *WH62*. This profile won't create warehouse work after a container is closed, nor will it post a sales packing slip when closing the last container for a shipment. For more information about setting up this process, see [Set up container packing policies](packing-containers.md#packing-policy).
+    - **Packing profile ID:** Select *WH62*. This profile won't create warehouse work after a container is closed. It also won't post a sales packing slip when the last container for a shipment is closed. For more information about how to set up this process, see [Set up container packing policies](packing-containers.md#packing-policy).
 
 1. On the **Default packing station** FastTab, set the following values:
 
@@ -92,11 +92,12 @@ Follow these steps to create a mobile device menu item that workers can use to p
     - **Title** – Enter *Packing*. This value will be used as the display name of the menu item in the mobile app.
     - **Mode** – Select *Indirect*.
     - **Activity code** – Select *Pack inventory into containers*.
-    - **Packing policy ID** – Leave blank. The default process will be used.
+    - **Packing policy ID** – Leave this field blank. The default process will be used.
+
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> You can control several other aspects of the packing process by creating a packing policy and assigning it to your menu device menu item using the **Packing policy ID** field. For details, see [Mobile device container packing policies](warehouse-app-pack-containers-policies.md).
+> You can control several other aspects of the packing process by creating a packing policy and using the **Packing policy ID** field to assign it to your menu device menu item. For more information, see [Mobile device container packing policies](warehouse-app-pack-containers-policies.md).
 
 ## Create a mobile device menu item for creating containers
 
