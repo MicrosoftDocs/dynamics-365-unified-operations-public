@@ -2,7 +2,7 @@
 title: Configure action-dependent ER destinations
 description: This article explains how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an ER format ca
 
 ## Make action-dependent ER destinations available
 
-To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for [specific](#reports-list-wave1) reports at runtime, enable the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**.
+To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for reports at runtime, enable the **Route output of PM reports based on ER destinations that are user action specific (wave 1)** feature.
 
 ## Configure action-dependent ER destinations
 
@@ -84,6 +84,51 @@ The following illustration shows an example of the **Electronic reporting format
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
 
+If several ER formats are applicable as report templates for the selected document, all ER destinations for all applicable ER report templates are shown in the dialog box and available for manual adjustment at runtime.
+
+If no [SQL Server Reporting Services (SSRS)](SSRS-report.md) report templates are applicable to the selected document, the standard selection of Print management destinations is dynamically hidden.
+
+As of Finance version **10.0.31**, you can manually change the assigned ER destinations at runtime for the following business documents:
+
+- Customer account statement
+- Interest note
+- Collection letter note
+- Customer Payment advice
+- Vendor Payment advice
+
+To activate the capability to change ER destinations at runtime, enable the **Allow ER destinations adjustment at runtime** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+
+> [!IMPORTANT]
+> For the **Customer Payment advice** and **Vendor Payment advice** reports, the capability to manually change ER destinations is available only if the **ForcePrintJobSettings** flight is enabled.
+
+[![Adjusting ER destinations at runtime.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> When the **Use print management destination** option is set to **Yes**, the system uses the default ER destinations that are configured for specific ER reports. All manual changes that are made in the dialog box are ignored. Set the **Use print management destination** option to **No** to process documents to the ER destinations that are defined in the dialog box immediately before you run the reports.
+
+The following business documents don't assume explicit user selection of an action when they're run:
+
+- Customer account statement
+- Interest note
+- Collection letter note
+- Customer Payment advice
+- Vendor Payment advice
+
+The following logic is used to determine which action is used while the preceding reports are processed:
+
+- If the **ForcePrintJobSettings** flight is enabled:
+
+    - If the **Use print management destination** option is set to **Yes**, the **Print** action is used.
+    - If the **Use print management destination** option is set to **No**, the **View** action is used.
+
+- If the **ForcePrintJobSettings** flight isn't enabled:
+
+    - If the **Use print management destination** option is set to **Yes**, the **Print** action is used for the **Customer Payment advice** and **Vendor Payment advice** reports.
+    - If the **Use print management destination** option is set to **No**, the default SSRS report template is always used for the **Customer Payment advice** and **Vendor Payment advice** reports, regardless of any ER settings that are configured.
+    - The **Print** action is always used for the **Customer account statement**, **Interest note**, and **Collection letter note** reports.
+
+For the preceding logic, the **Print** or **View** actions can be used to configure action-dependent ER report destinations. At runtime, only ER destinations that are configured for a specific action are filtered in the dialog box.
+
 ## Verify the provided user action
 
 You can verify what user action, if any, is provided for the running ER format when you perform a specific user action. This verification is important when you must configure action-dependent ER destinations, but you aren't sure which user action code, if any, is provided. For example, when you start to post a free text invoice and set the **Print invoice** option to **Yes** in the **Post free text invoice** dialog box, you can set the **Use print management destination** option to **Yes** or **No**.
@@ -99,20 +144,6 @@ Follow these steps to verify the user action code that is provided.
 7. Review the log entries that must contain the record that presents the provided user action code, if any action has been provided for the ER format run.
 
     ![Electronic reporting run logs page that contains information about the user action code that has been provided for the filtered run of an ER format.](./media/er-destination-action-dependent-03.png)
-
-## <a name="reports-list-wave1">List of business documents (wave 1)</a>
-
-The following list of business documents are controlled by the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**:
-
-- Customer invoice (Free text invoice)
-- Customer invoice (Sales invoice)
-- Purchase order
-- Purchase order purchase inquiry
-- Sales order confirmation
-- Collections letter note
-- Interest note
-- Vendor payment advice
-- Request for quotation
 
 ## Additional resources
 

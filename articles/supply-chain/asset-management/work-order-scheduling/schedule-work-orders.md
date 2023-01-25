@@ -48,13 +48,13 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 4. In the **Schedule work orders** dialog, you can add selections regarding expected start date and service level, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".
 
     [!NOTE]
-    If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
+    If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Action center, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
 
-5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and maintenance workers will be shown in the Infolog.
+5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and maintenance workers will be shown in the Action center.
 
 6. Click **OK** to start the scheduling process.
 
-7. When scheduling is completed, an Infolog shows the number of work orders scheduled, and also more detailed information if the **Verbose** toggle button was set to "Yes".
+7. When scheduling is completed, an Action center message shows the number of work orders scheduled, and also more detailed information if the **Verbose** toggle button was set to "Yes".
 
 >[!NOTE]
 >Work orders are scheduled in one cycle per work order, not per work order job. You can also open the **Schedule work orders** dialog directly in **Asset management** > **Periodic** > **Work orders** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** dialog > the **Run in the background** FastTab.

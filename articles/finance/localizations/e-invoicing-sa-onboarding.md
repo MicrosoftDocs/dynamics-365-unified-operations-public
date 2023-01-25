@@ -100,7 +100,7 @@ The onboarding process consists of two steps:
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
 8. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
-9. Configure the related feature setup in the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
+9. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
 

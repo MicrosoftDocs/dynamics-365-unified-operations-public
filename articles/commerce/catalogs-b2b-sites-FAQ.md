@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 07/15/2022
+ms.date: 01/23/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -79,6 +79,14 @@ The following features are also supported only for call centers:
 ### Can we use catalog source codes for B2B orders through the e-commerce portal?
 
 No. Catalog source codes are supported only for call center channels.
+
+### When the B2B catalogs feature is enabled, do order templates show only items from the currently selected catalog? 
+
+Currently, order templates aren't catalog-aware. Therefore, when you access order templates, if the **B2B catalog** feature is enabled, only partial lines from the order template that are also part of the currently selected catalog are shown. To check for progress on the ability of catalogs and order templates to work together correctly, we recommend that you check the release notes for future updates. 
+
+### When the B2B catalogs feature is enabled, is the Buy it again option available for the order lines in the order history? 
+
+Because the same customer can buy products from both B2B and B2C channels, the order history shows the customer's order history from all channels. Catalog support is available only for B2B channels, and catalog information is required to purchase in a B2B channel. Order lines from B2C channels shouldn't have any catalog information. For this initial phase, the **Buy it again** option was removed from the order history view. To learn whether the **Buy it again** option becomes available in the order history in a B2B channel, we recommend that you check the release notes for future updates. 
 
 ## Additional resources
 

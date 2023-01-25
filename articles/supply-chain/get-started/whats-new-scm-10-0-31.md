@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.31. 
 author: kamaybac
 ms.author: kamaybac
@@ -7,15 +7,16 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
 ms.date: 11/07/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.31. This version has a build number of 10.0.1406 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.31. This version has a build number of 10.0.1406 and is available on the following schedule:
 
 - **Preview of release:** October 2022
 - **General availability of release (self-update):** January 2023
@@ -33,10 +34,10 @@ The following table lists the features that are included in this release. We mig
 | Planning | [Use finite material scheduling in Planning Optimization](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/use-finite-material-scheduling-planning-optimization) | [Finite capacity planning and scheduling](../master-planning/planning-optimization/finite-capacity.md) | Feature management:<br>*Finite material scheduling for Planning Optimization* |
 | Procurement | [Assess supply risks to prevent supply chain disruptions](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/assess-supply-risks-prevent-supply-chain-disruptions) | [Supply risk assessment overview](../procurement/supply-risk-assessment-overview.md) | Feature management:<br>*Assess supply risks to prevent supply chain disruptions* |
 | Procurement | [Source products and materials from multiple vendors](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/source-products-materials-multiple-vendors) | [Source products and materials from multiple vendors](../master-planning/source-from-multiple-vendors.md) | Feature management:<br>*Source products and materials from multiple vendors using Planning Optimization* |
-| Product information management | [Display product info in user's language](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/display-product-info-users-language) | [Show translated product names and descriptions in the UI](../pim/show-translated-product-info.md) | Feature management:<br>*(Preview) Display product info in user’s language* |
+| Product information management | [Display product info in user's language](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/display-product-info-users-language) | [Show translated product names and descriptions in the UI](../pim/show-translated-product-info.md) | Feature management:<br>*Display product info in user’s language* |
 | Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/auto-submit-detour-steps-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management<br>*Auto-submit detour steps for the Warehouse Management mobile app* |
 | Warehouse management | [Guided warehouse implementation experience](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/guided-warehouse-implementation-experience) | [Get started with setting up the Warehouse management module](../warehousing/get-started-with-setting-up-module.md)<br><br>[Test location directives with acceptance tests](../warehousing/location-directive-acceptance-tests.md) | Enabled by default |
-| Warehouse management | [Optimize warehousing setup with Application Insights](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/optimize-warehousing-setup-application-insights) | [Enable warehousing telemetry with Application Insights](../warehousing/application-insights-warehousing.md)<br><br>[Monitor mobile device usage and performance](../warehousing/application-insights-wma.md) | Feature management<br>*Operational insights* |
+| Warehouse management | [Optimize warehousing setup with Application Insights](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/optimize-warehousing-setup-application-insights) | [Enable warehousing telemetry with Application Insights](../warehousing/application-insights-warehousing.md)<br><br>[Monitor Warehouse Management usage and performance](../warehousing/application-insights-wma.md) | Feature management<br>*Operational insights* |
 | Warehouse management | [Pack shipments with the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/pack-shipments-warehouse-management-mobile-app) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md) | Feature management<br>*Pack containers using the Warehouse Management mobile app* |
 | Additional languages available | Four additional languages are available | Four new languages are available for user selection in the preferred language list: Korean, Portuguese (Portugal), Vietnamese, and Chinese (Traditional). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
 

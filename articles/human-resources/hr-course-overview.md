@@ -4,7 +4,7 @@
 title: Courses overview
 description: This article explains how Human Resources administrators and managers can use the courses features to maintain information about courses that are available to workers.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 01/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,6 +37,10 @@ In our learning module, Human Resources professionals, administrators, training 
 
 > [!NOTE]
 > To use virtual courses, you must enable the **Course enhancements** feature in Feature management.
+
+
+> [!IMPORTANT]
+> The virtual courses functionaliy noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
 
 ## Set up virtual courses
 

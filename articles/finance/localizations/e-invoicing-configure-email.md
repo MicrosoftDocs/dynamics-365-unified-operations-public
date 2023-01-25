@@ -2,7 +2,7 @@
 title: Configure an email channel
 description: This article explains how to configure an email channel to receive electronic invoices.
 author: gionoder
-ms.date: 02/09/2022
+ms.date: 12/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,9 +21,9 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, you should configure an email account channel.
+If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, configure an email account channel.
 
-1. In Regulatory Configuration Service (RCS), select the Electronic invoicing feature that you created. Make sure that you select the version that has a status of **Draft**.
+1. In Regulatory Configuration Service (RCS), select the Electronic invoicing feature that you created. Select the version that has a status of **Draft**.
 2. On the **Setups** tab, select **Add**.
 3. In the **Create feature setup** drop-down dialog box, in the **New** field group, select the **Custom setup** option.
 4. In the **Setup type** field group, select the **Data channel** option.
@@ -35,7 +35,7 @@ If the Electronic invoicing feature that you created imports electronic vendor i
     | Field                | Description |
     |----------------------|-------------|
     | Data channel         | Enter a unique name to identify the data channel. The name can have a maximum of 10 characters. It will be referenced in applicability rules and in connected applications during the communication process. |
-    | Server address       | Enter the server address of the email account provider. For example, the server address for the `https://outlook.live.com` provider is imap-mail.outlook.com. |
+    | Server address       | Enter the server address of the email account provider for Internet Message Access Protocol (IMAP). For example, the server address for the `https://outlook.live.com` provider is imap-mail.outlook.com. |
     | Server port          | Enter the number of the port that the email account provider uses. For example, the server port for the `https://outlook.live.com` provider is 993. |
     | User name secret     | Enter the name of the Microsoft Azure Key Vault secret that contains the ID of the email user account. This secret must be created in Key Vault and set up in your service environment. |
     | User password secret | Enter the name of the Key Vault secret that contains the password of the email user account. |

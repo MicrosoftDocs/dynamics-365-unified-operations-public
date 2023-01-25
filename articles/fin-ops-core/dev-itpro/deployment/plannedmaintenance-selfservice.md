@@ -48,15 +48,6 @@ A planned maintenance window is typically during the dark hours during Saturday 
 |United Kingdom	|10:00 PM to 4:00 AM UTC|
 |United States	|4:00 AM to 10:00 AM UTC |
 
-## What is the schedule for operating system maintenance?
-
-| Month and year | Americas (5:00 AM–8:00 AM UTC) | EMEA (2:00 AM–5:00 AM UTC) | APAC (6:00 PM–9:00 PM UTC) |
-|----------|--------------------------|----------------------|----------------------|
-| August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
-| September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
-| October 2022 | October 23, 2022 | October 22, 2022 | October 22, 2022 |
-| November 2022 | November 20, 2022 | November 19, 2022 | November 19, 2022 |
-
 ## What is the schedule for proactive quality updates?
 
 Please see [proactive quality updates](../../fin-ops/get-started/quality-updates.md) for information on the upcoming proactive quality update schedule.
@@ -88,7 +79,8 @@ Individual batch servers will not be available for up to 30 minutes. The followi
   - Check printing 
   - Statement posting
 
-For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to learn more about batch retry.
+
+For more information, see [Retry the batch job task, regardless of the error type](../sysadmin/retryable-batch.md#retry-the-batch-job-task-regardless-of-the-error-type) to learn more about batch retry.
 
 ### Priority-based scheduling
 - If priority-based scheduling is enabled, users will experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs will be served by the available AOS instances. Therefore, there will eventually be no complete downtime during the servicing window.

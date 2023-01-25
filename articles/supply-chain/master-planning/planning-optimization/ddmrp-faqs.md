@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: faq
 ms.date: 11/24/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

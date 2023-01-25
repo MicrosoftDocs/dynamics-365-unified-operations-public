@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-06-20
 # Set up Apple Pay with Adyen in Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
@@ -100,13 +99,6 @@ To configure a Commerce online store for Apple Pay, follow these steps.
 
 1. After the merchant information has been entered, run the **1070** channel configuration distribution schedule job.
 
-## Configure Commerce POS for Apple Pay
-
-The POS configuration uses the configuration of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. In Commerce headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Ensure that you add **ApplePay** to the list of tender types in the **Supported Tender Types** field. Use semicolons (;) to separate tender types in the list.
-
-The processor mapping for the Adyen connector will capture the wallet card types that are used by Apple Pay at the POS terminal.
 
 ### Configure content security policies in site builder
 
@@ -136,6 +128,14 @@ Settings for the **Apple Pay** module are built into the module and connect with
 The **Apple Pay** payment button is shown only on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). If a user isn't using one of these devices, the **Apple Pay** payment button is hidden from view.
 
 When a user selects the **Apple Pay** payment button, an **Apple Pay** dialog box appears. There, the user can authenticate against their Apple Pay device or browser. The **Apple Pay** dialog box shows a summary of the order amount and the payment method that the user has configured against their Apple Wallet. The user can review these details and then select **Pay** to complete the payment. After the payment is completed, the user is directed to the **Order Complete** site page that shows a detailed order summary for the completed transaction.
+
+## Configure Commerce POS for Apple Pay
+
+The POS configuration uses the configuration of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. In Commerce headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in [Set up a Dynamics 365 POS hardware profile](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Ensure that you add **ApplePay** to the list of tender types in the **Supported Tender Types** field. Use semicolons (;) to separate tender types in the list.
+
+The processor mapping for the Adyen connector will capture the wallet card types that are used by Apple Pay at the POS terminal.
 
 ## Additional resources
 
