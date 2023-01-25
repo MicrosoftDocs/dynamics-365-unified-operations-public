@@ -182,7 +182,6 @@ You will notice the secret created in the list of secrets.
 
 ## <a name="authorize"></a>Authorize the application to read secrets in the key vault
 
-this part is not in the right order
 1. In **Azure portal**, open the key vault that you created earlier.
 2. In **Settings**, select **Access configuration**.
 3. Then **go to access policies** and **create** to create a new policy.
@@ -200,25 +199,6 @@ this part is not in the right order
     | Microsoft Dynamics ERP Microservices | Get, List          |
     
     
-
-1. In **Azure portal**, open the key vault that you created earlier.
-2. In the **Add access policy** dialog box, select **Add**.
-3. On the left navigation pane, select **Access policies > Add Access Policy** to create a new policy. 
-4. In the **Add access policy** dialog box, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
-
-    > [!NOTE]
-    > If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principal](#createServicePrincipal) section in this document.
-
-5. In the **Secret permissions** fields, select **Get** and **List**.
-6. In the **Access policy** dialog, select **Add**.
-
-    You should see application with access to your key vault as shown below.
-
-    | Application                          | Secret permissions |
-    |--------------------------------------|--------------------|
-    | Microsoft Dynamics ERP Microservices | Get, List          |
-
-7. Select **Save**.
 
 ## <a name="powerplatformintegration"></a>Power Platform integration
 
