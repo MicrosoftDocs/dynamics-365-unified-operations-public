@@ -63,6 +63,60 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 |--------------|------------------|
 |Configure required attachment for leave requests| This feature helps organizations decide when an attachment is needed while creating a leave request. For example, if an attachment is needed while creating, updating, or cancelling a leave request based on the leave request type. |
 
+## Features turned on by default in this release
+
+The following table lists the features that are turned on by default or are now mandatory in 10.0.32. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This is to ensure that customers are using current functionality, so that as enhancements are added they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential. 
+
+| Feature name | Enable date | Feature state | Module |
+|--------------|-------------|---------------|--------|
+|Managers can view performance-related information for extended reports|	4/29/2021	|Mandatory|	Manager self service|
+|Filter active positions|	1/6/2020|	Mandatory	|Personnel management|
+|Future-dated worker transfer with cross-company compensation|	8/31/2019| 	Mandatory|	Personnel management|
+|Parent party relationship updated|	03/31/2022|	On by default	|Personnel management|
+|Workers all without employment|	3/31/2022|On by default	|Personnel management|
+|Worker header control|	12/23/2022|	Moved from Preview to Generally available	|Personnel management|
+|Human resources user experience enhancements| 	3/31/2022|	Mandatory	|Personnel management|
+|Workflow experience enhancements|	3/31/2022|	On by default|	Personnel management|
+|Years of service calculation|	3/31/2022|	On by default	|Personnel management|
+|Custom links in Manager self service|	3/31/2022|	On by default|	Manager Self service|
+|Payroll integration	|3/31/2022|	On by default	|Payroll integration|
+|Task management|	3/31/2022|	Mandatory	|Task management|
+|Print performance reviews|	3/31/2022	|Mandatory	|Performance management|
+|Enable translation for the Country/Region component of the Russian address format|	2|/20/2021|	On by default|	Global address book|
+|Restrict case lookup based on legal entity|	3/30/2021	|Mandatory|	Case management|
+|(Preview) Absence manager to manage leave of absence requests|	12/23/2022|	Preview|	Leave and absence|
+|(Preview) Hide leave balances	|12/23/2022|	Preview|	Leave and absence|
+|(Preview) Inclusion of weekends and holidays for leave and absence|	12/23/2022|	Preview	|Leave and absence|
+|(Preview) Open ended leave	|12/23/2022|	Preview|	Leave and absence|
+|Absence manager to manage leave|	3/31/2022|	On by default	|Leave and absence|
+|Configure required attachment for leave requests|	3/31/2022	|On by default	|Leave and absence|
+|Cross company leave view|	3/31/2022|	On by default|	Leave and absence|
+|Leave accrual auditing	|3/31/2022|	On by default	|Leave and absence|
+|Leave accrual deletion|	3/31/2022	|On by default|	Leave and absence|
+|Leave accrual for a single company on a single plan	|3/31/2022|	On by default	Leave and absence|
+|Leave accrual holiday corrections	|3/31/2022|	On by default|	Leave and absence|
+|Leave accrual rounding	|3/31/2022|	On by default|	Leave and absence|
+|Leave accrual transaction auditing	|3/31/2022|	On by default	|Leave and absence|
+|Leave and absence calendar|	3/31/2022|	On by default|	Leave and absence|
+|Leave and absence calendar enhancements	|3/31/2022|	On by default|	Leave and absence|
+|Leave balance view enhancements|	3/31/2022|	On by default	|Leave and absence|
+|Leave request workflow experience enhancements|3/31/2022|	On by default	|Leave and absence|
+|Update time off enhancements (Leave)	|3/31/2022	|On by default|	Leave and absence|
+|Use an employee’s FTE for accruals (Leave)	|3/31/2022|	On by default|	Leave and absence|
+|Cross company compensation view	|3/31/2022	|On by default|	Compensation management|
+|Benefits management- Allow ‘close’ and ‘reopen’ Life Event|	10/16/2022|	Moved from Preview to Generally available|	Benefits management|
+|Benefits management email notification	|10/16/2022	|Moved from Preview to Generally available	|Benefits management|
+|Benefits management enrollment periods|	10/16/2022	|Moved from Preview to Generally available|	Benefits management|
+|Employee benefit statement	|3/31/2022|	Moved from Preview to Generally available|	Benefits management|
+
+
+
+
+
+
+
+
+
 
 ## Additional resources
 
