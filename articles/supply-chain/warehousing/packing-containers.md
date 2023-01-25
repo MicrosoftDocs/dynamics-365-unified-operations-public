@@ -157,7 +157,7 @@ Follow these steps to set up a container packing policy.
         - *Warehouse group* – Use this policy for all warehouses in the warehouse group selected in the **Warehouse group** field.
         - *Warehouse* – Use this policy only for the specific warehouse selected in the **Warehouse** field.
     - **Warehouse** – If **Warehouse selection** is set to *Warehouse*, then select the warehouse where the packing policy applies.
-    - **Warehouse group** – If **Warehouse selection** is set to *Warehouse group*, then select the warehouse group where the packing policy applies.
+    - **Warehouse group** – If **Warehouse selection** is set to *Warehouse group*, then select the warehouse group where the packing policy applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
     - **Default location for final shipment** – Specify the preferred location for the container after it's closed. This field is available only when the **Container release policy** field is set to *Make available at final shipping location* and **Warehouse selection** is set to *Warehouse*.
     - **Default location for sorting** – This field is used with the [outbound sorting](outbound-sorting.md) capability. This field is available only when **Warehouse selection** is set to *Warehouse*.
 
