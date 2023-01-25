@@ -88,11 +88,6 @@ To configure a Commerce online store to use Google Pay, follow these steps.
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
 
-## Configure Commerce POS for Google Pay
-
-The POS configuration uses the setting of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. For information about how to configure the electronic funds transfer (EFT) service for the Dynamics 365 Payment Connector for Adyen in Commerce headquarters, see [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal.
 
 ### Use the payment express module with Google Pay
 
@@ -221,6 +216,12 @@ The order in which the delivery methods are displayed in the payment express mod
 The checkout module also uses the delivery options module when modes of delivery are rendered during checkout. For more information, see [Delivery options module](../delivery-options-module.md).
 
 Modes of delivery are displayed as they're added to the **Modes of delivery** list in the online store.
+
+## Configure Commerce POS for Google Pay
+
+The POS configuration uses the setting of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. For information about how to configure the electronic funds transfer (EFT) service for the Dynamics 365 Payment Connector for Adyen in Commerce headquarters, see [Set up a Dynamics 365 POS hardware profile](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal.
 
 ## Additional resources
 

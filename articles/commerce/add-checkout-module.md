@@ -19,7 +19,6 @@ ms.assetid:
 # Checkout module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to add a checkout module to a page and set the required properties.
 

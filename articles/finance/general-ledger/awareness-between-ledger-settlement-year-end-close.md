@@ -54,7 +54,7 @@ To support the new enhancements, changes were made to ledger settlement and year
 
 Because of the changes in functionality and the data model, it's important that you consider the following points before you enable the feature:
 
-- Because only settled transactions are brought forward into the opening balance, you must unsettle transactions from the current fiscal year that are settled iwth transactions in the previous fiscal year. The transactions must be resettled against transactions within the current fiscal year. This can be done through an adjusting entry in the current fiscal year. The adjustment reverses the summarized opening balances and offsets with the detailed transaction necessary to settle the ledger entries in the current year. 
+- Because only settled transactions are brought forward into the opening balance, you must unsettle transactions from the current fiscal year that are settled with transactions in the previous fiscal year. The transactions must be resettled against transactions within the current fiscal year. This can be done through an adjusting entry in the current fiscal year. The adjustment reverses the summarized opening balances and offsets with the detailed transaction necessary to settle the ledger entries in the current year. 
 
   > [!IMPORTANT]
   > If this isn't done, you will receive an **out-of-balance** error when you run the year-end close for the current fiscal year. If it's not possible to unsettle and resettle the ledger transactions with the same fiscal year, don't enable this feature until after the year-end close is complete. Enable the feature immediately after year-end close is complete and before any new ledger transactions are settled in the next fiscal year. 
