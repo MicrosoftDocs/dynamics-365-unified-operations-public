@@ -69,7 +69,7 @@ For each worker that will use the Warehouse Management mobile app to pack contai
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> You can set up the system to automatically print container labels when a new container record is created. For more information, see [Print container labels](print-container-labels.md).
+> You can set up the system to automatically print container labels when a new container record is created. For more information, see [Container label layouts and printing](print-container-labels.md).
 
 ## Create a mobile device menu item for packing inventory into containers
 

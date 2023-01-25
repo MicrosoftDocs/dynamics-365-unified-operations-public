@@ -24,7 +24,7 @@ ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Document routing label layout
+# Document routing label layouts
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +32,7 @@ This article describes how to create layouts for license plate, container, and w
 
 Document routing label layouts define the way that labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
-The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](tasks/license-plate-label-printing.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
+The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](print-license-plate-labels-using-label-layouts.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
 
 You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 
@@ -143,7 +143,7 @@ $DisplayListOfItemsNumbers()[1]$
 For more information about how to set up and print labels, see the following articles:
 
 - [License plate label printing](tasks/license-plate-label-printing.md)
-- [Print container labels](print-container-labels.md)
+- [Container label layouts and printing](print-container-labels.md)
 - [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

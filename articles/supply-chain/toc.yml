@@ -3449,8 +3449,6 @@
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
-          - name: Enable license plate label printing
-            href: warehousing/tasks/license-plate-label-printing.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
           - name: Piece picking confirmation
@@ -3459,8 +3457,6 @@
             href: warehousing/pack-materials-packing-material-fees.md
           - name: Pack containers for shipment
             href: warehousing/packing-containers.md
-          - name: Print container labels
-            href: warehousing/print-container-labels.md
           - name: Packing work for packing outbound containers and processing shipments
             href: warehousing/packing-work.md
           - name: Packing containers with the Warehouse Management mobile app
@@ -3723,8 +3719,16 @@
             href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
           - name: System grouping on an open work list
             href: warehousing/system-group-on-open-work-list.md
-          - name: Document routing label layouts
-            href: warehousing/document-routing-layout-for-license-plates.md
+          - name: Container and license plate labels
+            items:
+            - name: Container label layouts and printing
+              href: warehousing/print-container-labels.md
+            - name: License plate label layouts and printing
+              href: warehousing/print-license-plate-labels-using-label-layouts.md
+            - name: Document routing label layouts
+              href: warehousing/document-routing-layout-for-license-plates.md
+            - name: Enable license plate label printing
+              href: warehousing/tasks/license-plate-label-printing.md
           - name: GS1 bar codes and QR codes
             href: warehousing/gs1-barcodes.md
           - name: Set up warehouse for transfer orders

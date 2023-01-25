@@ -1,5 +1,5 @@
 ---
-title: Print license plate labels using label layouts
+title: License plate label layouts and printing
 description: This article describes how to set up and print license plate labels using label layouts.
 author: GalynaFedorova
 ms.author: gfedorova
@@ -10,13 +10,13 @@ ms.date: 01/17/2022
 ms.custom: bap-template
 ---
 
-# Print license plate labels using label layouts
+# License plate label layouts and printing
 
 [!include [banner](../includes/banner.md)]
 
 Labels layouts are used to control what information is printed on a label and how it's laid out. There are two ways to define a license plate label layout:
 
-- **Document routing label layout** – Provide basic layout capabilities. For details, see [Enable license plate label printing](tasks/license-plate-label-printing.md) and [Document routing layout for license plate](document-routing-layout-for-license-plates.md).
+- **Document routing label layout** – Provide basic layout capabilities. For details, see [Document routing label layouts](document-routing-layout-for-license-plates.md) and [Enable license plate label printing](tasks/license-plate-label-printing.md).
 - **Label layouts** – Let you build more advanced layouts. Your layouts can have repeating structures and include header, body, and footer elements. You can print information from the related tables and define custom date, time, and number formats.
 
 This article describes how to create and use label layouts for license plate labels.
@@ -108,7 +108,7 @@ In the label layout shown in the preceding example, only the license plate ID (`
 
 ### Enable label template support
 
-If you want to create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layout](document-routing-layout-for-license-plates.md).
+If you want to create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
 To format a label by using header, row, and footer elements, follow these steps:
 

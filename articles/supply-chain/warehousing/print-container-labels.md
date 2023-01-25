@@ -1,5 +1,5 @@
 ---
-title: Print container labels
+title: Container label layouts and printing
 description: This article describes how to set up and print container labels.
 author: perlynne
 ms.author: perlynne
@@ -10,7 +10,7 @@ ms.date: 10/14/2022
 ms.custom: bap-template
 ---
 
-# Print container labels
+# Container label layouts and printing
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -99,7 +99,7 @@ Follow these steps to create a container label layout.
 
 #### Enable label template support
 
-If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layout](document-routing-layout-for-license-plates.md).
+If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
 To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
 

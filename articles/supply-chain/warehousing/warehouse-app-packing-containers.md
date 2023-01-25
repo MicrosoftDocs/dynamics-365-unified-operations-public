@@ -78,7 +78,7 @@ The following table shows which processes are and aren't supported when the cont
 | Identification via GS1 bar code scanning | No | |
 | Identification item via bar code setup | (Yes) | However, quantity and unit (piece-by-piece) scanning isn't supported. |
 | New container | Yes | <p>Containers can be created either automatically by using the *Autocreate container at container close* process or manually by using the **Container creation** mobile device menu item. The menu item also captures the container type and enters a default number sequence if the **Container ID mode** field is set to *Auto*. |
-| Print container label | Yes | Labels can be printed either automatically during *Container creation* process or manually by using the **Print container label** mobile device menu item. For more information about how to set up label printing, see [Print container labels](print-container-labels.md). |
+| Print container label | Yes | Labels can be printed either automatically during *Container creation* process or manually by using the **Print container label** mobile device menu item. For more information about how to set up label printing, see [Container label layouts and printing](print-container-labels.md). |
 | Close container | Yes | Containers can be closed by using the **Container closing** mobile device menu item, which also captures the weight. |
 | Release container | No | The release of containers depends on the container closing policy. It isn't available as a mobile device menu option. Workers can't trigger or confirm a release by using the mobile app. |
 | Reopen container | No | |
@@ -108,6 +108,6 @@ The following table shows which processes are and aren't supported when the cont
 ## Next steps
 
 - Work through an example that shows how to set up and use this feature. See [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
-- Learn how to set up container labels and print them from the mobile app. See [Print container labels](print-container-labels.md).
+- Learn how to set up container labels and print them from the mobile app. See [Container label layouts and printing](print-container-labels.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
