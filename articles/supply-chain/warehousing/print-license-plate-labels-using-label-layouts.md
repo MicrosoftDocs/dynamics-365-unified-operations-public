@@ -35,7 +35,7 @@ To set up warehouse parameters for license plate label printing, follow these st
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. Open the **General** tab.
-1. On the **License plates** FastTab, set **Use label layouts for license plate labels** to *Yes* to use label layouts for your license plates (as described in this topic). Set this to *No* to use [document routing label layouts](document-routing-layout-for-license-plates.md) instead.
+1. On the **License plates** FastTab, set **Use label layouts for license plate labels** to *Yes* to use label layouts for your license plates (as described in this article). Set this to *No* to use [document routing label layouts](document-routing-layout-for-license-plates.md) instead.
 
 ## <a name="lp-label-layout"></a>Create a license plate label layout
 
@@ -108,7 +108,7 @@ In the label layout shown in the preceding example, only the license plate ID (`
 
 ### Enable label template support
 
-If you want to create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
+If you want to create more advanced label layouts, you can benefit from using some of the widely available label generation tools described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
 To format a label by using header, row, and footer elements, follow these steps:
 
@@ -184,10 +184,10 @@ To specify the license plate label layouts that are used and where they're print
 1. On the **Overview** FastTab, use the following fields to define the criteria that are used to select the label routing:
 
     - **Warehouse** – Specify the warehouse where the routing should be used.
-    - **Mobile device user ID** – Specify the user ID that the routing should be used for. To use the routing for any worker, leave this fields blank.
-    - **Account number** – Specify the vendor account that the routing should be used for. To use the routing for any vendor, leave this fields blank.
-    - **Carrier** – Specify the carrier that the routing should be used for. To use the routing for any carrier, leave this fields blank.
-    - **Work template** – Specify the work template that the routing should be used for. To use the routing for any work templates, leave this fields blank.
+    - **Mobile device user ID** – Specify the user ID that the routing should be used for. To use the routing for any worker, leave this field blank.
+    - **Account number** – Specify the vendor account that the routing should be used for. To use the routing for any vendor, leave this field blank.
+    - **Carrier** – Specify the carrier that the routing should be used for. To use the routing for any carrier, leave this field blank.
+    - **Work template** – Specify the work template that the routing should be used for. To use the routing for any work templates, leave this field blank.
     - **From zone ID** and **To zone ID** - Specify the zone range from that the routing should be used for. To use the routing for any zone, leave these fields blank.
     - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, and then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
 

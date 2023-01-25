@@ -39,7 +39,7 @@ You can also use this scenario as guidance for using the feature on a production
 
 ### Create a container label layout
 
-The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer. Typically, you will copy this code from a label designer program.
+The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer. Typically, you'll copy this code from a label designer program.
 
 As the system generates a label, it can replace field and method names that are used in the label layout with actual values. You can easily find text that will be replaced by looking for dollar signs (`$`) in the code.
 
@@ -54,7 +54,7 @@ Follow these steps to create a container label layout.
 
     - **Label layout ID** – Enter *Container*.
     - **Description** – Enter *Container ID barcode*.
-    - **Label layout data source ID** – Leave this field blank if you'll only container data. If you need to include data from other tables, then select a label layout data source with the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
+    - **Label layout data source ID** – Leave this field blank if you'll only use container data. If you need to include data from other tables, then select a label layout data source with the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
     - **Date, time, and number format** – Select the language to use when formatting date, time, and number values that are shown in a label layout.
 
@@ -107,7 +107,7 @@ In the label layout shown in the preceding example, only the container ID (`$WHS
 
 #### Enable label template support
 
-If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
+If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
 To format a label by using header, row, and footer elements, follow these steps:
 
@@ -175,7 +175,7 @@ To format a label by using header, row, and footer elements, follow these steps:
 
 ### Set up container label routing
 
-To specify the container label layouts that are used and where they are printed, you must define a **Container label routing** record, as described in the following procedure.
+To specify the container label layouts that are used and where they're printed, you must define a **Container label routing** record, as described in the following procedure.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
 1. On the Action Pane, select **New** to create a routing record.
@@ -233,7 +233,7 @@ To enable workers to print container labels manually, you must create a new mobi
 
 ### Add the new mobile device menu item to the menu
 
-Now that you've created the mobile device menu item, you can add it to the mobile device menu. In this example, you will add it to the existing **Outbound** mobile device menu.
+Now that you've created the mobile device menu item, you can add it to the mobile device menu. In this example, you'll add it to the existing **Outbound** mobile device menu.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. On the Action Pane, select **Edit**.
