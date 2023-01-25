@@ -93,7 +93,7 @@ The following table lists the features that are turned on by default or are now 
 |Cross company leave view|	3/31/2022|	On by default|	Leave and absence|
 |Leave accrual auditing	|3/31/2022|	On by default	|Leave and absence|
 |Leave accrual deletion|	3/31/2022	|On by default|	Leave and absence|
-|Leave accrual for a single company on a single plan	|3/31/2022|	On by default	Leave and absence|
+|Leave accrual for a single company on a single plan	|3/31/2022|	On by default	|Leave and absence|
 |Leave accrual holiday corrections	|3/31/2022|	On by default|	Leave and absence|
 |Leave accrual rounding	|3/31/2022|	On by default|	Leave and absence|
 |Leave accrual transaction auditing	|3/31/2022|	On by default	|Leave and absence|
