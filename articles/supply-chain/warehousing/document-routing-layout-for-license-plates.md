@@ -36,7 +36,7 @@ The information in this article applies to all document routing label layouts, i
 
 You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 
-```dos
+``` ZPL
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
 ^XA
 ^MMT
@@ -62,7 +62,7 @@ If your system doesn't already include the features described in this article, g
 
 You can customize the formatting of numerical field values that are printed by using codes that have the following format.
 
-```dos
+``` ZPL
 $FieldName:FormatString$
 ```
 
@@ -82,7 +82,7 @@ For a complete list of the available number format strings, see [Custom numeric 
 
 You can remove the first characters of a string by using the following field and format code.
 
-```dos
+``` ZPL
 $FieldName:#..$
 ```
 
@@ -92,7 +92,7 @@ Here, `#` specifies the number of characters to skip. For example, to print a Se
 
 The following example shows how you can control the format that is used to print dates.
 
-```dos
+``` ZPL
 $PrintedDate:dd-MM-yyyy$
 ```
 
@@ -104,7 +104,7 @@ For a complete list of the available date/time formats, see [Custom date and tim
 
 If a data field contains multiple lines (that is, lines that are separated by line breaks), you can print an individual line by using the following format.
 
-```dos
+``` ZPL
 $FieldName[#]$
 ```
 
@@ -128,21 +128,21 @@ You can print this address, one line at a time, by using the following codes.
 
 You can print from a display method by using the following format.
 
-```dos
+``` ZPL
 $DisplayMethod()$
 ```
 
 You can combine this format with other types that were described earlier in this article. For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method. In this case, you can use the following code.
 
-```dos
+``` ZPL
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## More information about how to print labels
+## Additional resources
 
 For more information about how to set up and print labels, see the following articles:
 
-- [License plate label printing](tasks/license-plate-label-printing.md)
+- [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
 - [Container label layouts and printing](print-container-labels.md)
 - [Wave label printing](configure-wave-label-printing.md)
 

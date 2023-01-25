@@ -43,6 +43,8 @@ The label layout controls what information is printed on the label and how it's 
 
 As the system generates a label, it can replace field and method names that are used in the label layout with actual values. You can easily find text that will be replaced by looking for dollar signs (`$`) in the code.
 
+#### Create a basic label layout
+
 Follow these steps to create a container label layout.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
@@ -52,11 +54,11 @@ Follow these steps to create a container label layout.
 
     - **Label layout ID** – Enter *Container*.
     - **Description** – Enter *Container ID barcode*.
-    - **Label layout data source ID** – Leave this field blank. (Only container data will be used.)
+    - **Label layout data source ID** – Leave this field blank if you'll only container data. If you need to include data from other tables, then select a label layout data source with the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
-    - **Date, time, and number format** – Leave this field blank. (This field is used to set the formats of date, time, and number values that are shown in a label layout, as described later in this article.)
+    - **Date, time, and number format** – Select the language to use when formatting date, time, and number values that are shown in a label layout.
 
-1. Copy the following example of a ZPL container label.
+1. On the **Printer text Layout** FastTab, copy and paste the following example of a ZPL license plate label (or enter your own code).
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -73,92 +75,103 @@ Follow these steps to create a container label layout.
     ^PQ1,0,1,Y^XZ
     ```
 
-1. On the **Printer text Layout** FastTab, paste the copied text into the large field.
-1. Close the page.
+    > [!NOTE]
+    > While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps:
+    >
+    > 1. In the **Tables** list, select the table.
+    > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
+    > 1. Select **Insert at end of text** to add the field or method to the end of the code.
+    > 1. As you require, move the new field or method to the place in the code where you want to use it.
 
-> [!NOTE]
-> While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps.
-> 
-> 1. In the **Tables** list, select the table.
-> 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
-> 1. Select **Insert at end of text** to add the field or method to the end of the code.
-> 1. As you require, move the new field or method to the place in the code where you want to use it.
->
-> In the label layout that is shown in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) bar code will be printed. If you want to include additional related information (such as the delivery name that is related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it.
->
-> 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
-> 1. On the Action Pane, select **New**.
-> 1. In the new record, set the **Label layout data source ID**, **Description**, and **Label layout type** fields.
-> 1. On the Action Pane, select **Save**.
-> 1. On the Action Pane, select **Edit query**.
-> 1. A standard query editor dialog box appears. On the **Joins** tab, add a join to the required tables.  (For example, you might make a join to the `Shipment` table if you want your label to show the delivery name that is related to a shipment.)
-> 1. Go back to the **Label layout** page, and then, in the **Label layout data source ID** field, select the new record for a new or existing layout.
-> 1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number (*\_\#*) as a suffix.
->
+1. Select **Save** on the Action Pane.
+
+#### Set up and use a label layout data source
+
+In the label layout shown in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) was used, and this value is available directly in the container table. If you want to include related information (such as the delivery name that is related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout:
+
+1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
+1. On the Action Pane, select **New**.
+1. Set the following values for the new label layout data source:
+    - **Label layout data source ID** – Enter a name for the data source.
+    - **Description** – Enter a short description for the data source.
+    - **Label layout type** – Select *Container label*.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Edit query**.
+1. A standard query editor dialog box appears. On the **Joins** tab, add joins to the required tables. (For example, you might make a join to the shipment table if you want your label to show the delivery name that is related to a shipment.)
+1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. Create or select a label layout, and then, in the **Label layout data source ID** field, select the record that you just created.
+1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number (*\_\#*) as a suffix.
+
+> [!CAUTION]
 > On the **Label layout data source** page, be careful about removing a table from the query for an existing record. You might remove field and/or method names that are already used in existing label layouts.
 
 #### Enable label template support
 
 If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
-To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
+To format a label by using header, row, and footer elements, follow these steps:
 
-``` ZPL
-{{Header
-^FX ... ZPL commands that will be printed on every label ...
-CT~~CD,~CC^~CT~
-^XA
-~TA000
-~JSN
-^LT0
-^MNW
-^MTT
-^PON
-^PMN
-^LH0,0
-^JMA
-^PR6,6
-~SD15
-^JUS
-^LRN
-^CI27
-^PA0,1,1,0
-^XZ
-^XA
-^MMT
-^PW1276
-^LL900
-^LS0
-^FT80,150^A0N,58,58^FH\^CI28^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
-^FT80,250^A0N,33,33^FH\^CI28^FDItem^FS^CI27
-^FT579,250^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
-^FT720,250^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
-}}
-^FX ... This section goes on the first label only...
-^FT85,51^A0N,17,18^FH\^CI28^FDFIRST CONTAINER LABEL^FS^CI27
-{{Row Table=WHSContainerLine_1 RowsPerLabel=10 StartY=300 IncY=50
-^FX... ZPL commands to format the row using *$position.YPos$* to position the location of the text fields ...
-^FT80,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
-^FT579,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
-^FT720,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
-}}
-^FX ... This part goes on the last label only ... 
-^FT100,750^A0N,17,18^FH\^CI28^FDLast container label^FS^CI27
-{{Footer
-^FX ... ZPL commands that close every label ...
-^FT600,750^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
-^XZ
-}}
-```
+1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. At the top of the list pane, set the **Label layout type** field to *Container Label*.
+1. Do one of the following steps:
+    - To create a new layout, select **New** on the Action Pane.
+    - To edit an existing layout, select the layout on the list pane and then select **Edit** on the Action Pane.
+1. Select a **Label layout data source ID**. (A data source is required in order to enable label template support, but you could select a very simple one with no joins defined if you only need container table data.)
+1. Set **Enable label template support** to *Yes*.
+1. Use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
+
+    ``` ZPL
+    {{Header
+    ^FX ... ZPL commands that will be printed on every label ...
+    CT~~CD,~CC^~CT~
+    ^XA
+    ~TA000
+    ~JSN
+    ^LT0
+    ^MNW
+    ^MTT
+    ^PON
+    ^PMN
+    ^LH0,0
+    ^JMA
+    ^PR6,6
+    ~SD15
+    ^JUS
+    ^LRN
+    ^CI27
+    ^PA0,1,1,0
+    ^XZ
+    ^XA
+    ^MMT
+    ^PW1276
+    ^LL900
+    ^LS0
+    ^FT80,150^A0N,58,58^FH\^CI28^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
+    ^FT80,250^A0N,33,33^FH\^CI28^FDItem^FS^CI27
+    ^FT579,250^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
+    ^FT720,250^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
+    }}
+    ^FX ... This section goes on the first label only...
+    ^FT85,51^A0N,17,18^FH\^CI28^FDFIRST CONTAINER LABEL^FS^CI27
+    {{Row Table=WHSContainerLine_1 RowsPerLabel=10 StartY=300 IncY=50
+    ^FX... ZPL commands to format the row using *$position.YPos$* to position the location of the text fields ...
+    ^FT80,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
+    ^FT579,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
+    ^FT720,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
+    }}
+    ^FX ... This part goes on the last label only ... 
+    ^FT100,750^A0N,17,18^FH\^CI28^FDLast container label^FS^CI27
+    {{Footer
+    ^FX ... ZPL commands that close every label ...
+    ^FT600,750^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
+    ^XZ
+    }}
+    ```
 
 > [!NOTE]
 > Because of the `RowsPerLabel=10` attribute, this setup will loop over container lines and split out a label for each set of 10 container lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
 >
 > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: @per Let's add a `\^PQn` section in the sample code so we can see where it goes. -->
-
-#### Specify date, time, and number formats
-
-To set the formats of date, time, and number values that are shown in a label layout, open the **Label layout** page, select or create a layout, and set the **Date, time, and number format** field to the language that uses the formats that you want.
 
 ### Set up container label routing
 

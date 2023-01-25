@@ -16,10 +16,10 @@ ms.custom: bap-template
 
 Labels layouts are used to control what information is printed on a label and how it's laid out. There are two ways to define a license plate label layout:
 
-- **Document routing label layout** – Provide basic layout capabilities. For details, see [Document routing label layouts](document-routing-layout-for-license-plates.md) and [Enable license plate label printing](tasks/license-plate-label-printing.md).
+- **Document routing label layouts** – Provide basic layout capabilities.
 - **Label layouts** – Let you build more advanced layouts. Your layouts can have repeating structures and include header, body, and footer elements. You can print information from the related tables and define custom date, time, and number formats.
 
-This article describes how to create and use label layouts for license plate labels.
+This article describes how to create and use *label layouts* for license plate labels. For details about *document routing label layouts*, see [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
 ## Enable license plate label layout
 
@@ -34,8 +34,8 @@ To enable license plate label layout, you must set up each of the following (as 
 To set up warehouse parameters for license plate label printing, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-1. On the **License plates** FastTab, make the following setting:
-    - **Use label layouts for license plate labels** – Choose whether the system should use label layouts instead of document routing label layouts.  Set this option to *Yes* to use label layout feature for license plate labels.
+1. Open the **General** tab.
+1. On the **License plates** FastTab, set **Use label layouts for license plate labels** to *Yes* to use label layouts for your license plates (as described in this topic). Set this to *No* to use [document routing label layouts](document-routing-layout-for-license-plates.md) instead.
 
 ## <a name="lp-label-layout"></a>Create a license plate label layout
 
@@ -79,7 +79,7 @@ Follow these steps to create a license plate label layout.
     > [!NOTE]
     > While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps:
     >
-    > 1. In the **Tables** list (if shown), select the table. (The **Tables** list is only shown when a **Label layout data source ID** is selected.)
+    > 1. If the **Tables** list is shown, select the table. (The **Tables** list is only shown when a **Label layout data source ID** is selected.)
     > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
     > 1. Select **Insert at end of text** to add the field or method to the end of the code.
     > 1. As you require, move the new field or method to the place in the code where you want to use it.
@@ -88,7 +88,7 @@ Follow these steps to create a license plate label layout.
 
 ### Set up and use a label layout data source
 
-In the label layout shown in the preceding example, only the license plate ID (`$LicensePlateId$`) bar code will be printed. If you want to include related information (such as order number that is related to a license plate), and the required layout label data source doesn't already exist, follow these steps to create it:
+In the label layout shown in the preceding example, only the license plate ID (`$LicensePlateId$`) was used, and this value is available directly in the license plate table. If you want to include related information (such as order number that is related to a license plate), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout:
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
 1. On the Action Pane, select **New**.
@@ -184,11 +184,11 @@ To specify the license plate label layouts that are used and where they're print
 1. On the **Overview** FastTab, use the following fields to define the criteria that are used to select the label routing:
 
     - **Warehouse** – Specify the warehouse where the routing should be used.
-    - **Mobile device user ID** – Specify the user ID that the routing should be used for. To use the routing for any worker, leave this blank.
-    - **Account number** – Specify the vendor account that the routing should be used for. To use the routing for any vendor, leave this blank.
-    - **Carrier** – Specify the carrier that the routing should be used for. To use the routing for any carrier, leave this blank.
-    - **Work template** – Specify the work template that the routing should be used for. To use the routing for any work templates, leave this blank.
-    - **From zone, To zone** - Specify the zone range from that the routing should be used for. To use the routing for any zone, leave this blank
+    - **Mobile device user ID** – Specify the user ID that the routing should be used for. To use the routing for any worker, leave this fields blank.
+    - **Account number** – Specify the vendor account that the routing should be used for. To use the routing for any vendor, leave this fields blank.
+    - **Carrier** – Specify the carrier that the routing should be used for. To use the routing for any carrier, leave this fields blank.
+    - **Work template** – Specify the work template that the routing should be used for. To use the routing for any work templates, leave this fields blank.
+    - **From zone ID** and **To zone ID** - Specify the zone range from that the routing should be used for. To use the routing for any zone, leave these fields blank.
     - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, and then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
 
 1. On the **Document routing printers** FastTab, assign the printer and label layout that should be used when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
