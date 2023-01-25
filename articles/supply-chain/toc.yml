@@ -3697,6 +3697,16 @@
               href: warehousing/wave-containerization.md
             - name: Container packing strategies
               href: warehousing/container-packing-strategy-overview.md
+          - name: Container and license plate labels
+            items:
+            - name: Container label layouts and printing
+              href: warehousing/print-container-labels.md
+            - name: License plate label layouts and printing
+              href: warehousing/print-license-plate-labels-using-label-layouts.md
+            - name: Document routing label layouts
+              href: warehousing/document-routing-layout-for-license-plates.md
+            - name: Enable license plate label printing
+              href: warehousing/tasks/license-plate-label-printing.md
           - name: Auto-update shipments
             href: warehousing/auto-update-shipment.md
           - name: Create a location profile
@@ -3719,16 +3729,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
           - name: System grouping on an open work list
             href: warehousing/system-group-on-open-work-list.md
-          - name: Container and license plate labels
-            items:
-            - name: Container label layouts and printing
-              href: warehousing/print-container-labels.md
-            - name: License plate label layouts and printing
-              href: warehousing/print-license-plate-labels-using-label-layouts.md
-            - name: Document routing label layouts
-              href: warehousing/document-routing-layout-for-license-plates.md
-            - name: Enable license plate label printing
-              href: warehousing/tasks/license-plate-label-printing.md
           - name: GS1 bar codes and QR codes
             href: warehousing/gs1-barcodes.md
           - name: Set up warehouse for transfer orders
