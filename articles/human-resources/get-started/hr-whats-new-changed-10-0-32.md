@@ -78,7 +78,7 @@ The following table lists the features that are turned on by default or are now 
 |Human resources user experience enhancements| 	3/31/2022|	Mandatory	|Personnel management|
 |Workflow experience enhancements|	3/31/2022|	On by default|	Personnel management|
 |Years of service calculation|	3/31/2022|	On by default	|Personnel management|
-|Custom links in Manager self service|	3/31/2022|	On by default|	Manager Self service|
+|Custom links in Manager self service|	3/31/2022|	On by default|	Manager self service|
 |Payroll integration	|3/31/2022|	On by default	|Payroll integration|
 |Task management|	3/31/2022|	Mandatory	|Task management|
 |Print performance reviews|	3/31/2022	|Mandatory	|Performance management|
