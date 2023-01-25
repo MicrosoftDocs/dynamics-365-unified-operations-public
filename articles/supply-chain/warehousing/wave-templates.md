@@ -72,7 +72,15 @@ To set up a wave template, follow these steps:
     > [!NOTE]
     > If more than one template is created for a warehouse, the number in the **Wave template sequence** field indicates the position of the template in the sequence in which the templates are applied when the template’s criteria is met. You can select **Move up** or **Move down** to rearrange the sequence of templates.
 
-1. In the **Site** and **Warehouse** fields, select the site and warehouse that the wave template will create waves and picking work for.
+1. Use the **Warehouse selection** FastTab to specify the warehouse and site where the wave template will apply. Make the following settings:
+
+    - **Warehouse selection**  – Choose one of the following values:
+      - *All* – Use this wave template for all warehouses where a more specific wave template hasn't been assigned.
+      - *Warehouse group* – Use this wave template for all warehouses in the warehouse group selected in the **Warehouse group** field.
+      - *Warehouse* – Use this wave template only for the specific warehouse selected in the **Warehouse** field.
+    - **Site** and **Warehouse** – If **Warehouse selection** is set to *Warehouse*, then select the site and warehouse where the wave template applies. If you select the warehouse first, the site will be filled in automatically. If you set the site first, the warehouse list will be filtered to only show warehouses at that site.
+    - **Warehouse group** – If **Warehouse selection** is set to *Warehouse group*, then select the warehouse group where the wave template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
+
 1. If you want to automate wave processing, make the following settings as needed:
 
     - **Automate wave creation** - Set this to *Yes* to automatically create a wave when a sales order, production order, or kanban is released to the warehouse.
