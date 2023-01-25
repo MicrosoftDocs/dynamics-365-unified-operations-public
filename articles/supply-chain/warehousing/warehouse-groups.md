@@ -39,9 +39,9 @@ To create and manage your warehouse groups, follow these steps:
     - **Name** – Enter a short description of the group.
 1. On the **Warehouses** FastTab, establish the list of warehouses that should be members of the current group.
     - To add a warehouse to the group, select **Add** from the FastTab toolbar to add a new row to the grid. Then select a warehouse in the **Warehouse** column for the new row (only WMS-enabled warehouses are listed). The other column values will update automatically based on the warehouse you choose.
-    - To remove a warehouse, select it in the grid and then select **Remove** from the FastTab toolbar.
-    - To replace a warehouse, find the warehouse you want to remove in the grid and then edit the value in the **Warehouse** column to replace it with the warehouse you want to add instead.
+    - To remove a warehouse, select it in the grid, and then select **Remove** from the FastTab toolbar.
+    - To replace a warehouse, find the warehouse you want to remove in the grid, and then edit the value in the **Warehouse** column to replace it with the warehouse you want to add instead.
 
 ## Use warehouse groups
 
-When you are setting up some types of warehousing features (such as [location directives](create-location-directive.md), [wave templates](wave-templates.md), or [container packing policies](packing-containers.md)), you'll be able to choose whether to apply the feature to to a single warehouses, a group of warehouses, or all warehouses. Usually you'll see two fields, one where you choose the warehouse scope (*Warehouse*, *Group*, or *All*), and another where you specify a selection based on that scope (a single warehouse ID, a warehouse group ID, or all warehouses).
+When you're setting up some types of warehousing features (such as [location directives](create-location-directive.md), [wave templates](wave-templates.md), or [container packing policies](packing-containers.md)), you'll be able to choose whether to apply the feature to a single warehouse, a group of warehouses, or all warehouses. Usually you'll see two fields, one where you choose the warehouse scope (*Warehouse*, *Group*, or *All*), and another where you specify a selection based on that scope (a single warehouse ID, a warehouse group ID, or all warehouses).
