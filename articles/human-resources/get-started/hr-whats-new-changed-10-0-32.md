@@ -82,7 +82,7 @@ The following table lists the features that are turned on by default or are now 
 |Payroll integration	|3/31/2022|	On by default	|Payroll integration|
 |Task management|	3/31/2022|	Mandatory	|Task management|
 |Print performance reviews|	3/31/2022	|Mandatory	|Performance management|
-|Enable translation for the Country/Region component of the Russian address format|	2|/20/2021|	On by default|	Global address book|
+|Enable translation for the Country/Region component of the Russian address format|	2/20/2021|	On by default|	Global address book|
 |Restrict case lookup based on legal entity|	3/30/2021	|Mandatory|	Case management|
 |(Preview) Absence manager to manage leave of absence requests|	12/23/2022|	Preview|	Leave and absence|
 |(Preview) Hide leave balances	|12/23/2022|	Preview|	Leave and absence|
