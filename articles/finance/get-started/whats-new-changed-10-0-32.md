@@ -104,8 +104,46 @@ The following table lists the features that are turned on by default in 10.0.32.
 |Enable creating tax component with pre-defined rules	|1/12/2023	|Mandatory	|Tax|
 |Tax setup validation	|1/12/2023|	On by default	|Tax|
 |(GTE) Pick the lookup value with the most precisely matched condition|	1/12/2023|	On by default	|Tax|
-
-
+|(Russia) Apply fixed dimensions to reversal inventory adjustment transactions|	1/12/2023|	On by default	|Accounts Payable|
+|(India) Disable matching invoice quantity with Bill of entry quantity|	1/12/2023|	On by default	|Accounts Payable|
+|Enable manual input sales tax amounts for reversing prepayment sales tax amounts|	1/12/2023|	On by default	|Accounts Payable|
+|Enable credit invoicing for vendor invoices|	1/12/2023|	On by default	|Accounts Payable|
+|Enable date of vendor VAT register on vendor invoices|	1/12/2023|	On by default	|Accounts Payable|
+|(Italy) Intent letters - invoicing of usual exporters|1/12/2023|On by default	|Accounts Receivable|
+|Chronological numbering	|1/12/2023|	On by default	|Accounts Receivable|
+|Credit invoicing layout for sales and project invoice reports	|1/12/2023|	Mandatory	|Accounts Receivable|
+|References to original invoices in debit notes|1/12/2023|	On by default	|Accounts Receivable|
+|(Indonesia) Enable generation of tax invoice numbers for invoices|1/12/2023|	On by default	|Accounts Receivable|
+|(GBL) Allow to calculate interest per day as yearly percent divided by 365	|1/12/2023|	Mandatory	|Accounts Receivable|
+|(Brazil) Product Name Translation Fix	|1/12/2023|	On by default	|Accounts Receivable|
+|Invoice issue deadline availability	|1/12/2023|	Mandatory	|Accounts Receivable|
+|Update collection status when payment manually settled	|1/12/2023|	On by default	|Accounts Receivable|
+|(Italy) Sales invoice lines sorting per packing slip|1/12/2023|	On by default	|Accounts Receivable|
+|(Brazil) Fixing the calculation of discount amount when the payment date changes|1/12/2023|	On by default	|Accounts Receivable|
+|(Italy) Separate accounts for credit notes|1/12/2023|	On by default	|Accounts Receivable|
+|(Poland) Simplified check (performance improvement) for create of customer invoice	|1/12/2023|	Mandatory	|Accounts Receivable|
+|(Poland) Simplified date control (performance improvement) for create of customer invoice	|1/12/2023|	Mandatory	|Accounts Receivable|
+|Identification information for Bank accounts located in Japan	|1/12/2023|	Mandatory	|Cash and Bank Management|
+|(Eastern Europe) Allow to settle Customer/Vendor transactions if there are several voucher transactions with type Customer balance/ Vendor balance|1/12/2023|	Enabled by default	|Cash and Bank Management|
+|(Brazil) Mandatory bank transaction description|1/12/2023|	Enabled by default	|Cash  and Bank Management|
+|(Poland) Mandatory split payment automation	|1/12/2023|	Enabled by default	|Cash and Bank Management|
+|Maturity date validation of posting payment journal with postdated check|1/12/2023|	Enabled by default	|Cash and Bank Management|
+|(Brazil) Fix for improving performance of CNAB customer electronic payment	|1/12/2023|	Mandatory	|Cash and Bank Management|
+|Undo settlement by selected data in both accounts - payable and receivable|1/12/2023|	Mandatory	|Cash and Bank Management|
+|ISO20022 payment functionalities for all countries	|1/12/2023|	Mandatory	|Cash and Bank Management|
+|(Norway) Payment proposal dimension control improvement|1/12/2023|Enabled by default	|Cash and Bank Management|
+|ISO20022 include processed payments count to payment EndToEndId |1/12/2023|	Enabled by default	|Cash and Bank Management|
+|(Belgium) CODA bank statement processing performance improvement	|1/12/2023|	Enabled by default	|Cash and Bank Management|
+|(Russia) Enable default location setup for production formula/BOM and automatic FTG reservation/consumption in production	|1/12/2023|	On by default	|Supply Chain|
+|(Russia) Post storno financial inventory transactions according to the correction flag in the financial voucher for sales orders	|1/12/2023|	On by default	|Supply Chain|
+|(Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning	|1/12/2023|	On by default	|Supply Chain|
+|(India) For transfer price rules, ignore location when "From warehouse code" is set to "All"	|1/12/2023|	On by default	|Supply Chain|
+|(China) Exclude physical receipt and issue costs from monthly average cost|1/12/2023|	Mandatory |Supply Chain|
+|(Russia) Run Inventory balance turnover report calculation in batch|1/12/2023|Mandatory	|Supply Chain|
+|(Russia) Prevent discrepancies when issuing GTDs for purchase orders that include WMS-enabled items|1/12/2023|Enabled by default |Supply Chain|
+|(Russia) Use translations to local language in country or region-specific primary forms in Inventory management|1/12/2023|Enabled by default|Supply Chain|
+|(Poland) Allow to link several SAD invoices to one Purchase order lines in one SAD|1/12/2023|Enabled by default|Supply Chain|
+|(United Arab Emirates) Disable overriding project invoice print management from settings|1/12/2023|Enabled by default|Project Management|
 
 ## Features removed from Feature management
 The following table lists the features that have been removed from Feature management in 10.0.32.
