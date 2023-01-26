@@ -103,6 +103,13 @@ Select **Unmark for selected users** to unmark ledger settled transactions for a
 ## Unmark all transactions
 Select **Unmark all transactions** to unmark all ledger settled transactions for all users and all legal entities. This action is available for the Administrator role.
 
+## Review cross-year settlements
+As of Microsoft Dynamics 365 Finance release 10.0.29, you can identify vouchers that were ledger settled across fiscal years. The **Review cross-year settlements** page allows you to view and unsettle ledger transactions. On the **Ledger settlements** page, select **Review cross-year settlement**. The inquiry page will show all transactions from other fiscal years that are settled against transactions that were posted in the fiscal year that you specified in the **Fiscal year** drop list field.
+
+It is important to export the data to Excel, prior to unsettling records. Upon selecting the **Unsettle marked records** action, two warning messages are shown to ensure that the transaction details are exported to Excel before the transactions are unsettled. If you accidentally unsettle ledger transactions before you send the details to Excel, there's no way to reverse the unsettlement.
+
+For more information about the how to use the **Review cross-year settlements** form to assist in year-end close processes, see [Awareness between ledger settlement feature before year-end close using the inquiry page](ledger-settlement-yec-inquiry-before.md) and [Awareness between ledger settlement feature after year-end close using the inquiry page](ledger-settlement-yec-inquiry-after.md).
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
