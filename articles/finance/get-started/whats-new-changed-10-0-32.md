@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.31. This version has a build number of 10.0.XXXX and is available on
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.32. This version has a build number of 10.0.XXXX and is available on
 the following schedule:
 
 - **Preview of release:** January 2023
@@ -144,6 +144,19 @@ The following table lists the features that are turned on by default in 10.0.32.
 |(Russia) Use translations to local language in country or region-specific primary forms in Inventory management|1/12/2023|Enabled by default|Supply Chain|
 |(Poland) Allow to link several SAD invoices to one Purchase order lines in one SAD|1/12/2023|Enabled by default|Supply Chain|
 |(United Arab Emirates) Disable overriding project invoice print management from settings|1/12/2023|Enabled by default|Project Management|
+|(Italy) General ledger simulations|	On by default|	General ledger|
+|Journal reversal no longer requires consecutive number sequence|	On by default|	General ledger|
+|Transaction text for ledger reversing entries|	On by default|	General ledger|
+|Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report|	On by default|	General ledger|
+|Allow edits to internal data on general ledger vouchers|	On by default	|General ledger|
+|Add a date filter when viewing unsettled ledger transactions|	On by default|	General ledger|
+|Mexico localization: Enable allocation terms in Subledger|	Mandatory|	General ledger|
+|Polish localization: Enable allocation terms in Subledger|	Mandatory|	General ledger|
+|Czech Republic / Hungary: Enable allocation terms in Subledger	|Mandatory	|General ledger|
+
+
+
+
 
 ## Features removed from Feature management
 The following table lists the features that have been removed from Feature management in 10.0.32.
@@ -154,6 +167,15 @@ The following table lists the features that have been removed from Feature manag
 | Office-like UI experience for Business document management | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
 | Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
 | Document Routing Agent as Electronic Reporting destination for outbound documents | 9/1/2021 | The related functionality is enabled out-of-the-box. | Electronic reporting |
+|Ledger periodic journal legal entity for intercompany tax posting	|The related functionality is enabled out-of-the-box.	General ledger|
+|Improve performance of general ledger reports	|The related functionality is enabled out-of-the-box.	|General ledger|
+|Require date range on Posted transactions by journal report	|The related functionality is enabled out-of-the-box.	|General ledger|
+|Advanced ledger settlement: Settlement and reverse settlement changes	|The related functionality is enabled out-of-the-box.	|General ledger|
+|Ledger settlement by user	|The related functionality is enabled out-of-the-box.	|General ledger|
+|Reverse GL foreign currency revaluation through batch processing|	The related functionality is enabled out-of-the-box.	|General ledger|
+|Generate trial balance with pending type transactions	|The related functionality is enabled out-of-the-box.|	General ledger|
+|Generate the trial balance with transactional detail report	|The related functionality is enabled out-of-the-box.|	General ledger|
+|General ledger year-end enhancements|	The related functionality is enabled out-of-the-box.|	General ledger|
 
 
 ## Additional resources
