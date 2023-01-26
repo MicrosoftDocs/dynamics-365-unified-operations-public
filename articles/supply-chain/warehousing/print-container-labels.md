@@ -54,11 +54,11 @@ Follow these steps to create a container label layout.
 
     - **Label layout ID** – Enter *Container*.
     - **Description** – Enter *Container ID barcode*.
-    - **Label layout data source ID** – Leave this field blank if you'll only use container data. If you need to include data from other tables, then select a label layout data source with the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
+    - **Label layout data source ID** – Leave this field blank if you'll use only container data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
-    - **Date, time, and number format** – Select the language to use when formatting date, time, and number values that are shown in a label layout.
+    - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in a label layout are formatted.
 
-1. On the **Printer text Layout** FastTab, copy and paste the following example of a ZPL license plate label (or enter your own code).
+1. On the **Printer text Layout** FastTab, paste the following example of a ZPL license plate label (or enter your own code).
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -83,41 +83,45 @@ Follow these steps to create a container label layout.
     > 1. Select **Insert at end of text** to add the field or method to the end of the code.
     > 1. As you require, move the new field or method to the place in the code where you want to use it.
 
-1. Select **Save** on the Action Pane.
+1. On the Action Pane, select **Save**.
 
 #### Set up and use a label layout data source
 
-In the label layout shown in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) was used, and this value is available directly in the container table. If you want to include related information (such as the delivery name that is related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout:
+In the label layout in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) is used, and this value is available directly in the container table. If you want to include related information (such as the delivery name that's related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
 1. On the Action Pane, select **New**.
 1. Set the following values for the new label layout data source:
+
     - **Label layout data source ID** – Enter a name for the data source.
-    - **Description** – Enter a short description for the data source.
+    - **Description** – Enter a short description of the data source.
     - **Label layout type** – Select *Container label*.
+
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Edit query**.
-1. A standard query editor dialog box appears. On the **Joins** tab, add joins to the required tables. (For example, you might make a join to the shipment table if you want your label to show the delivery name that is related to a shipment.)
+1. A standard query editor dialog box appears. On the **Joins** tab, add joins to the required tables. (For example, you might make a join to the shipment table if you want your label to show the delivery name that's related to a shipment.)
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. Create or select a label layout, and then, in the **Label layout data source ID** field, select the record that you just created.
-1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number (*\_\#*) as a suffix.
+1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number as a suffix (*\_\#*).
 
 > [!CAUTION]
 > On the **Label layout data source** page, be careful about removing a table from the query for an existing record. You might remove field and/or method names that are already used in existing label layouts.
 
 #### Enable label template support
 
-If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
+If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
 
-To format a label by using header, row, and footer elements, follow these steps:
+Follow these steps to format a label by using header, row, and footer elements.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *Container Label*.
-1. Do one of the following steps:
+1. Follow one of these steps:
+
     - To create a new layout, select **New** on the Action Pane.
-    - To edit an existing layout, select the layout on the list pane and then select **Edit** on the Action Pane.
-1. Select a **Label layout data source ID**. (A data source is required in order to enable label template support, but you could select a very simple one with no joins defined if you only need container table data.)
-1. Set **Enable label template support** to *Yes*.
+    - To edit an existing layout, select the layout in the list pane, and then select **Edit** on the Action Pane.
+
+1. In the **Label layout data source ID** field, select a data source. (A data source is required to enable label template support. However, if you need only container table data, you can select a very simple data source where no joins are defined.)
+1. Set the **Enable label template support** option to *Yes*.
 1. Use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
 
     ``` ZPL
@@ -168,10 +172,10 @@ To format a label by using header, row, and footer elements, follow these steps:
     }}
     ```
 
-> [!NOTE]
-> Because of the `RowsPerLabel=10` attribute, this setup will loop over container lines and split out a label for each set of 10 container lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
->
-> This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: @per Let's add a `\^PQn` section in the sample code so we can see where it goes. -->
+    > [!NOTE]
+    > Because of the `RowsPerLabel=10` attribute, this setup will loop over container lines and split out a label for each set of 10 container lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
+    >
+    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: @per Let's add a `\^PQn` section in the sample code so we can see where it goes. -->
 
 ### Set up container label routing
 
