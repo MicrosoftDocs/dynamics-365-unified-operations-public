@@ -73,19 +73,19 @@ these templates if needed.
 | Template name | Entities included | Module |
 |-------------------------|-------------|------------|
 |Case management|<ul><li>Service level agreement</li><li>
-</li><li>Case category security by role</li><li>
-</li><li>Injury and illness body parts</li><li>
-</li><li>Injury and illness cost types</li><li>
-</li><li>Injury and illness types</li><li>
-</li><li>Injury and illness outcome types</li><li>
-</li><li>Injury and illness severity levels</li><li>
-</li><li>Injury and illness treatment types</li><li>
-</li><li>Case hierarchy</li><li>
-</li><li>Case categories</li><li>
-</li><li>Injury or illness incidents</li><li>
-</li><li>Lead priorities</li><li>
-</li><li>Case detail</li><li>
-</li><li>FMLA hours</li><li>
+</li><li>Case category security by role
+</li><li>Injury and illness body parts
+</li><li>Injury and illness cost types
+</li><li>Injury and illness types
+</li><li>Injury and illness outcome types
+</li><li>Injury and illness severity levels
+</li><li>Injury and illness treatment types
+</li><li>Case hierarchy
+</li><li>Case categories
+</li><li>Injury or illness incidents
+</li><li>Lead priorities
+</li><li>Case detail
+</li><li>FMLA hours
 </li><li>Injury or illness costs</li><li>
 </li><li>Injury or illness filings</li><li>
 </li><li>Injury or illness treatments</li></ul>  |  Service management, Sales and Marketing, System administration       |
