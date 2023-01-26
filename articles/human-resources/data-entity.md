@@ -32,11 +32,12 @@ that have been added by module. We will add more detailed documentation about en
 
 ## Data entities 
 
-Multiple DMF (Data Management Framework) entities have been added for Human Resources for the 10.0.32 release. Below is a summarized list of entities that have been 
-added by module. 
+Multiple DMF (Data Management Framework) entities have been added for Human Resources for the 10.0.32 release. 
 
 >[!Note]
 >You may need to refresh the entity list in your environment to see the new entities. This can be done on the **Refresh entity list**. Go to **Data management workspace> Framework parameters > Entity settings > Refresh entity list**.
+
+Below is a summarized list of entities that have been added by module. 
 
 | Module        |New entity coverage   | Notes |
 |----------------|-------------------------------------|-----------------------------------|
@@ -45,9 +46,8 @@ added by module.
 account, Injury and incidents, Identification,| All entities include ‘Attachment’ in the Target Entity name|
 |Attachment entities| Job, Employment terms, Certificate types, Position, Dir party, electronic address, benefit plan employee, cade detail, fixed comp, Variable comp, 
 Courses, Leave request, Discussions, Goals, Performance Journal, Certificates | All entities include ‘Attachment’ in the Target Entity name|
-|Task management| Business Process Business process library task group Business process library task grouping Business process generic process Business process generic 
-template| Missing Entities |
-|Leave and Absence| Leave Bank transaction audit, leave of absence request and Leave type Security role |Newly added entities include, 
+|Task management| Business process, Business process library task group, Business process library task grouping, Business process generic process, Business process generic template| Missing entities |
+|Leave and absence| Leave Bank transaction audit, leave of absence request and Leave type Security role |Newly added entities include, 
 LeaveBankTransactionAuditTrailEntity LeaveTypeSecurityRoleEntity LeaveOfAbsenceRequestEntity|
 |Case management| FMLA cases, association and certification| Newly added entities include, HcmFMLACaseAssociationEntity HcmFMLACaseCertificationEntity
 HcmFMLAEligibilityDatePriorityEntity|
@@ -55,9 +55,7 @@ HcmFMLAEligibilityDatePriorityEntity|
 |Benefits administration| ACA 1094 submission| &nbsp;|
 |Compensation| Fixed plan range utilization, performance per Org unit, process lines and actions, recommend event fixed, composite and point in timelines, recommend
 event table, compensation structure V2 (dual write), survey companies, document attachments, fixed compensation change history| New entities: 
-HRMCompFixedPlanUtilMatrixEntity HRMCompOrgPerfEntity HRMCompProcessLineEntity HRMCompProcessLineActionEntity HRMCompEventLineCompositeEntity HRMCompEventLineFixedEntity 
-HRMCompEventLinePointInTimeEntity HRMCompEventLineEntity HcmCompensationStructureDualWriteV2Entity HcmSurveyCompanyEntity HRMCompFixedEmplAttachmentsEntity 
-HRMCompVarAwardEmplAttachmentsEntity HcmWorkerActionCompFixedEmplChangeHistoryEntity|
+HRMCompFixedPlanUtilMatrixEntity HRMCompOrgPerfEntity HRMCompProcessLineEntity HRMCompProcessLineActionEntity HRMCompEventLineCompositeEntity HRMCompEventLineFixedEntity HRMCompEventLinePointInTimeEntity HRMCompEventLineEntity HcmCompensationStructureDualWriteV2Entity HcmSurveyCompanyEntity HRMCompFixedEmplAttachmentsEntity HRMCompVarAwardEmplAttachmentsEntity HcmWorkerActionCompFixedEmplChangeHistoryEntity|
 |Foundation| User defined links User defined link base URI|&nbsp; |
 |Employee development| Course attendees, Discussions, Goals, Skill mapping, Measurements, Performance journals| &nbsp;|
 
