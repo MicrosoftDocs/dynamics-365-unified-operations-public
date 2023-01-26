@@ -48,7 +48,10 @@ article was initially published.
 |Inclusion of weekends and holidays|This feature helps organizations with the flexibility to include weekends and holidays as part of employee leave requests for certain leave types.|Preview|
 |Hide leave balances	|This feature helps organizations with the flexibility of hiding leave balances for certain leave types.|	Preview|
 |Absence Manager to manage leave of absence requests|	This feature helps absence managers approve, deny or delegate leave of absence requests| 	Preview|
-
+|Benefit bulk update page redesign	|This feature simplifies Benefit administrators’ experience by adding various data pivots, optimizing the data organization on the page, adding ability to take quick bulk validations and actions.|	Preview|
+|Benefits compare selections	|This feature provides ability to make quick validations by capturing the changes in the benefit plans selections, coverage options, coverage amounts or dependents and beneficiary information is changed since the previous period. |	Preview|
+|Allow proration for benefit plan contributions	|The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods up to defined maximum annual contribution. |	Preview|
+|Allow proration for benefit plan contributions|	The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods up to defined maximum annual contribution. |	Preview, the feature can’t be turned off once it is turned on|
 
 
 
