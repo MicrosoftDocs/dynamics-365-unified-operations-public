@@ -42,7 +42,7 @@ Framework parameters > Entity settings > Refresh entity list**.
 | Module | New entity coverage | Notes |
 |-------------------------|-------------|------------|
 
-| Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position|    |
+| Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position|  &nbsp;  |
 |Attachment entities for a Worker| Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank
 account, Injury and incidents, Identification,| All entities include ‘Attachment’ in the Target Entity name|
 |Attachment entities| Job, Employment terms, Certificate types, Position, Dir party, electronic address, benefit plan employee, cade detail, fixed comp, Variable comp, 
@@ -53,15 +53,15 @@ template| Missing Entities |
 LeaveBankTransactionAuditTrailEntity LeaveTypeSecurityRoleEntity LeaveOfAbsenceRequestEntity|
 |Case management| FMLA cases, association and certification| Newly added entities include, HcmFMLACaseAssociationEntity HcmFMLACaseCertificationEntity
 HcmFMLAEligibilityDatePriorityEntity|
-|Legacy benefits | Benefits eligibility, process results, eligibility status, workers, email templates, benefits expiration, ACA 1094C submission||
-|Benefits administration| ACA 1094 submission| |
+|Legacy benefits | Benefits eligibility, process results, eligibility status, workers, email templates, benefits expiration, ACA 1094C submission|&nbsp;|
+|Benefits administration| ACA 1094 submission| &nbsp;|
 |Compensation| Fixed plan range utilization, performance per Org unit, process lines and actions, recommend event fixed, composite and point in timelines, recommend
 event table, compensation structure V2 (dual write), survey companies, document attachments, fixed compensation change history| New entities: 
 HRMCompFixedPlanUtilMatrixEntity HRMCompOrgPerfEntity HRMCompProcessLineEntity HRMCompProcessLineActionEntity HRMCompEventLineCompositeEntity HRMCompEventLineFixedEntity 
 HRMCompEventLinePointInTimeEntity HRMCompEventLineEntity HcmCompensationStructureDualWriteV2Entity HcmSurveyCompanyEntity HRMCompFixedEmplAttachmentsEntity 
 HRMCompVarAwardEmplAttachmentsEntity HcmWorkerActionCompFixedEmplChangeHistoryEntity|
-|Foundation| User defined links User defined link base URI| |
-|Employee development| Course attendees, Discussions, Goals, Skill mapping, Measurements, Performance journals| |
+|Foundation| User defined links User defined link base URI|&nbsp; |
+|Employee development| Course attendees, Discussions, Goals, Skill mapping, Measurements, Performance journals| &nbsp;|
 
 ## Data entity templates
 Data templates are a predefined list of entities for each module that can be used in a data project. Multiple default templates have been added to Human Resources 
@@ -73,6 +73,7 @@ these templates if needed.
 
 | Template name | Entities included | Module |
 |-------------------------|-------------|------------|
+
 |Case management|<ul><li>Service level agreement</li><li>
 </li><li>Case category security by role</li><li>
 </li><li>Injury and illness body parts</li><li>
