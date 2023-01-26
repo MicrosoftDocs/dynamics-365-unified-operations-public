@@ -31,7 +31,6 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Product information management | Share product information across legal entity boundaries <!-- KFM: Link to new release plan when available --> | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | Pack shipments with speed and resilience <!-- KFM: Link to new release plan when available --> | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Print container labels](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
-| Warehouse management | Run the Warehouse Management mobile app on iOS devices <!-- KFM: Link to new release plan when available --> | [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) | Enabled by default |
 
 ## Feature enhancements included in this release
 
