@@ -38,9 +38,8 @@ added by module.
 >[!Note]
 >You may need to refresh the entity list in your environment to see the new entities. This can be done on the **Refresh entity list**. Go to **Data management workspace> Framework parameters > Entity settings > Refresh entity list**.
 
-
-| Module               | New entity coverage   |   Notes |
-|------------------------|-----------------------|----------------|
+| Module        |New entity coverage   | Notes |
+|----------------|-------------------------------------|-----------------------------------|
 | Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position|  &nbsp;  |
 |Attachment entities for a Worker| Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank
 account, Injury and incidents, Identification,| All entities include ‘Attachment’ in the Target Entity name|
@@ -67,7 +66,7 @@ Data templates are a predefined list of entities for each module that can be use
 in the 10.0.32 release. To access the templates, navigate to the Data management workspaceàTemplatesàLoad default templates. After loading the template, you can modify
 these templates if needed.
 
->[Note]
+>[!Note]
 >You may need to refresh the entity list in your environment prior to loading the templates. This can be done on the **Refresh entity list**. Go to **Data management workspace>Framework parameters > Entity settings > Refresh entity list**.
 
 | Template name | Entities included | Module |
