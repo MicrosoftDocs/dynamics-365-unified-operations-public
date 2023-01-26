@@ -1,8 +1,8 @@
 ---
-title: Set up and use the extended logon capability
-description: This article describes how to set up and use the extended logon capability of the Microsoft Dynamics 365 Commerce point of sale (POS) application.
+title: Set up extended sign-in functionality for Store Commerce app and Store Commerce for web
+description: This article describes how to set up and use the extended sign-on functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web point of sale (POS) applications.
 author: boycezhu
-ms.date: 03/18/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
