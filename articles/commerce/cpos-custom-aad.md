@@ -59,7 +59,7 @@ To create and configure a custom app for Store Commerce for web in Azure AD, fol
 1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog box.
 1. Set the following fields:
 
-    - **Name** – Enter a name for the app. For example, enter **Store Commerce for web**.
+    - **Name** – Enter a name for the app. For example, enter **Custom Store Commerce for web**.
     - **Support account types** – Select the default option, **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
     - **Redirect URI** – Select **Single-page application (SPA)** in the drop-down list, and then enter your Cloud POS URL.
     - **Service Tree ID** – This field is optional. Leave it blank.
