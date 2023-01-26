@@ -212,14 +212,16 @@ The fields on the **Location directives** FastTab are specific to the work order
 
 ## Warehouse selection FastTab
 
-Use the **Warehouse selection** FastTab to specify the warehouse and site where the location directive will apply. Make the following settings:
+Use the **Warehouse selection** FastTab to specify the warehouse and site where the location directive will apply.
 
-- **Warehouse selection**  – Choose one of the following values:
-  - *All* – Use this location directive for all warehouses where a more specific location directive hasn't been assigned.
-  - *Warehouse group* – Use this location directive for all warehouses in the warehouse group selected in the **Warehouse group** field.
-  - *Warehouse* – Use this location directive only for the specific warehouse selected in the **Warehouse** field.
-- **Site** and **Warehouse** – If **Warehouse selection** is set to *Warehouse*, then select the site and warehouse where the location directive applies. If you select the warehouse first, the site will be filled in automatically. If you set the site first, the warehouse list will be filtered to only show warehouses at that site.
-- **Warehouse group** – If **Warehouse selection** is set to *Warehouse group*, then select the warehouse group where the location directive applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
+- **Warehouse selection**  – Select one of the following values:
+
+    - *All* – Use the location directive for all warehouses where a more specific location directive hasn't been assigned.
+    - *Warehouse group* – Use the location directive for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
+    - *Warehouse* – Use the location directive only for the specific warehouse that's selected in the **Warehouse** field.
+
+- **Site** and **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the site and warehouse where the location directive applies. If you select the warehouse first, the site will be filled in automatically. If you select the site first, the warehouse list will be filtered so that it shows only warehouses at that site.
+- **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the location directive applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
 
 ## Lines FastTab
 
