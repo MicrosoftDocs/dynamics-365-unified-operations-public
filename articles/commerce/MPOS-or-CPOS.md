@@ -47,7 +47,7 @@ Although the Store Commerce app and Store Commerce for web are largely the same,
 Store Commerce is a desktop application that is installed and serviced on a device.
 
 - **Windows** – The Store Commerce app for Windows contains all the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
-- **iOS/Android** – On these platforms, the application acts as a host for the Store Commerce for web application code. In other words, the application code comes from the Commerce Scale Unit (CSU) that is hosted on Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
+- **iOS/Android** – On these platforms, the application acts as a host for the Store Commerce for web application code. In other words, the application code comes from the Commerce Scale Unit (CSU). For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
 
 #### Store Commerce for web
 
