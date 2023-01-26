@@ -74,6 +74,6 @@ To insert a QR code or bar code into a receipt email that can be sent after a pu
 
 ## Additional resources
 
-[Send email receipts from Modern POS (MPOS)](email-receipts.md)
+[Send email receipts from Store Commerce](email-receipts.md)
 
 [Create email templates for transactional events](email-templates-transactions.md)
