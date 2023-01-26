@@ -1,8 +1,8 @@
 ---
-title: Security best practices for Cloud POS in shared environments
+title: Security best practices for Store Commerce for web in shared environments
 description: This article provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: josaw1
-ms.date: 06/17/2020
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ ms.custom: 257674
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
 ---
 
-# Security best practices for Cloud POS in shared environments
+# Security best practices for Store Commerce for web in shared environments
 
 [!include [banner](../includes/banner.md)]
 
