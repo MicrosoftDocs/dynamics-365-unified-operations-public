@@ -41,7 +41,6 @@ Framework parameters > Entity settings > Refresh entity list**.
 
 | Module | New entity coverage | Notes |
 |-------------------------|-------------|------------|
-
 | Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position|  &nbsp;  |
 |Attachment entities for a Worker| Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank
 account, Injury and incidents, Identification,| All entities include ‘Attachment’ in the Target Entity name|
@@ -73,7 +72,6 @@ these templates if needed.
 
 | Template name | Entities included | Module |
 |-------------------------|-------------|------------|
-
 |Case management|<ul><li>Service level agreement</li><li>
 </li><li>Case category security by role</li><li>
 </li><li>Injury and illness body parts</li><li>
@@ -237,7 +235,7 @@ these templates if needed.
 </li><li>Labor union agreement</li><li>
 </li><li>Position union agreement</li><li>
 </li><li>Budget cost elements</li><li>
-</li><li>Forecast position budget purpose account details</li></ul>| |
+</li><li>Forecast position budget purpose account details</li></ul>| &nbsp;|
 |Leave and absence (Multiple leave types per plan - Off)|<ul><li>Leave and absence parameters</li><li>
 </li><li>Leave and absence type</li><li>
 </li><li>Leave and absence type reason code</li><li>
@@ -269,8 +267,7 @@ these templates if needed.
 </li><li>Affordable Care Act 1094-C submission ale group member</li><li>
 </li><li>Affordable Care Act 1094-C submission month detail</li><li>
 </li><li>Affordable Care coverage groups</li><li>
-</li><li>Affordable Care coverage group version</li></ul>| |
-
+</li><li>Affordable Care coverage group version</li></ul>| &nbsp;|
 |Payroll|<ul><li>Benefit accrual plan</li><li>
 </li><li>Earning code group</li><li>
 </li><li>Payroll tax group</li><li>
@@ -325,7 +322,6 @@ these templates if needed.
 </li><li>Premium code active interval</li><li>
 </li><li>Accrual basis earnings</li><li>
 </li><li>Earning code accounting rule</li></ul>| Payroll|
-
 |Task management|<ul><li>Business calendar</li><li>
 </li><li>Business calendar days</li><li>
 </li><li>Group assignment</li><li>
@@ -338,10 +334,7 @@ these templates if needed.
 </li><li>Business process template task</li><li>
 </li><li>Business process task</li><li>
 </li><li>Business process task assignment</li><li>
-</li><li>Onboarding worker checklist header</li></ul>|Payroll|
-
-
-  
+</li><li>Onboarding worker checklist header</li></ul>|Payroll|  
 |010 – System setup|<ul><li>Address and contact information purpose</li><li>
 </li><li>Address books</li><li>
 </li><li>Address format</li><li>
@@ -384,7 +377,6 @@ these templates if needed.
 </li><li>Contact information and role relationships</li><li>
 </li><li>User defined link base URI</li><li>
 </li><li>User defined links</li></ul>|Global address book|
-
 |System and shared|<ul><li>Address and contact information purpose</li><li>
 </li><li>Address books</li><li>
 </li><li>Address format</li><li>
@@ -465,8 +457,6 @@ these templates if needed.
 </li><li>Party relationships</li><li>
 </li><li>Party contacts</li><li>
 </li><li>Party postal address V2</li></ul>| Global address book, Workflow and System administration|
-
-
 |Benefits management|<ul><li>
 Employment category</li><li>
 </li><li>Employment type</li><li>
