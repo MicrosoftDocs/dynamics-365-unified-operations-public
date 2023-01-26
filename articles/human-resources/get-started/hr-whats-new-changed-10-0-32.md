@@ -51,7 +51,7 @@ article was initially published.
 | Benefit bulk update page redesign | This feature simplifies the benefit administrator's experience by adding various data pivots, optimizing the data organization on the page, and adding the capability to perform quick bulk validations and actions. | Preview |
 | Benefits compare selections | This feature provides the capability to perform quick validations by capturing the changes in the benefit plans selections, coverage options, coverage amounts, or dependents, and beneficiary information that has changed since the previous period. | Preview |
 | Allow proration for benefit plan contributions | The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods, up to defined maximum annual contribution. | Preview |
-| Allow proration for benefit plan contributions | The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods up to defined maximum annual contribution. | Preview, and the feature can't be turned off after it's turned on |
+| Allow proration for benefit plan contributions | The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods, up to defined maximum annual contribution. | Preview, and the feature can't be turned off after it's turned on |
 
 ## Feature enhancements included in this release
 
