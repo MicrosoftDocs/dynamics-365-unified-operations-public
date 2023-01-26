@@ -53,10 +53,6 @@ article was initially published.
 |Allow proration for benefit plan contributions	|The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods up to defined maximum annual contribution. |	Preview|
 |Allow proration for benefit plan contributions|	The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods up to defined maximum annual contribution. |	Preview, the feature can’t be turned off once it is turned on|
 
-
-
-
-
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing 
@@ -114,8 +110,8 @@ The following table lists the features that are turned on by default or are now 
 
 
 
-
-
+## Entities and entity templates added in this release
+Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. See [Human Resources data entities and templates](data-entity.md)
 
 
 
