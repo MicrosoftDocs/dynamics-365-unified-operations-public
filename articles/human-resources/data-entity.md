@@ -41,7 +41,8 @@ Framework parameters > Entity settings > Refresh entity list**.
 
 | Module | New entity coverage | Notes |
 |-------------------------|-------------|------------|
-| Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position| |
+
+| Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position|    |
 |Attachment entities for a Worker| Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank
 account, Injury and incidents, Identification,| All entities include ‘Attachment’ in the Target Entity name|
 |Attachment entities| Job, Employment terms, Certificate types, Position, Dir party, electronic address, benefit plan employee, cade detail, fixed comp, Variable comp, 
@@ -68,8 +69,7 @@ in the 10.0.32 release. To access the templates, navigate to the Data management
 these templates if needed.
 
 >[Note]
->You may need to refresh the entity list in your environment prior to loading the templates. This can be done on the **Refresh entity list**. Go to **Data management workspace>
-Framework parameters > Entity settings > Refresh entity list**.
+>You may need to refresh the entity list in your environment prior to loading the templates. This can be done on the **Refresh entity list**. Go to **Data management workspace>Framework parameters > Entity settings > Refresh entity list**.
 
 | Template name | Entities included | Module |
 |-------------------------|-------------|------------|
