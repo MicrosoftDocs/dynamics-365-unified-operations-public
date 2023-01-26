@@ -36,11 +36,10 @@ Multiple DMF (Data Management Framework) entities have been added for Human Reso
 added by module. 
 
 >[!Note]
->You may need to refresh the entity list in your environment to see the new entities. This can be done on the **Refresh entity list**. Go to **Data management workspace>
-Framework parameters > Entity settings > Refresh entity list**.
+>You may need to refresh the entity list in your environment to see the new entities. This can be done on the **Refresh entity list**. Go to **Data management workspace> Framework parameters > Entity settings > Refresh entity list**.
 
 | Module | New entity coverage | Notes |
-|-------------------------|-------------|------------|
+|--------|-------------|------------|
 | Personnel management| I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position|  &nbsp;  |
 |Attachment entities for a Worker| Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank
 account, Injury and incidents, Identification,| All entities include ‘Attachment’ in the Target Entity name|
@@ -72,23 +71,9 @@ these templates if needed.
 
 | Template name | Entities included | Module |
 |-------------------------|-------------|------------|
-|Case management|<ul><li>Service level agreement
-</li><li>Case category security by role
-</li><li>Injury and illness body parts
-</li><li>Injury and illness cost types
-</li><li>Injury and illness types
-</li><li>Injury and illness outcome types
-</li><li>Injury and illness severity levels
-</li><li>Injury and illness treatment types
-</li><li>Case hierarchy
-</li><li>Case categories
-</li><li>Injury or illness incidents
-</li><li>Lead priorities
-</li><li>Case detail
-</li><li>FMLA hours
-</li><li>Injury or illness costs
-</li><li>Injury or illness filings
-</li><li>Injury or illness treatments</li></ul>  |  Service management, Sales and Marketing, System administration       |
+|Case management|<ul><li>Service level agreement</li><li>Case category security by role</li><li>Injury and illness body parts</li><li>Injury and illness cost types
+</li><li>Injury and illness types</li><li>Injury and illness outcome types</li><li>Injury and illness severity levels</li><li>Injury and illness treatment types
+</li><li>Case hierarchy</li><li>Case categories</li><li>Injury or illness incidents</li><li>Lead priorities</li><li>Case detail</li><li>FMLA hours</li><li>Injury or illness costs</li><li>Injury or illness filings</li><li>Injury or illness treatments</li></ul>  |  Service management, Sales and Marketing, System administration   |
 |Compensation management|<ul><li>Compensation fixed action table
 </li><li>Compensation survey companies
 </li><li>Reference point setups
