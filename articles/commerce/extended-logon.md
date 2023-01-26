@@ -18,7 +18,7 @@ ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile
 ---
 
-# Set up and use the extended logon capability
+# Set up extended sign-in functionality for Store Commerce app and Store Commerce for web
 
 [!include [banner](includes/banner.md)]
 
