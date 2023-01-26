@@ -170,7 +170,7 @@ To use the dedicated hardware station, follow these steps.
 1. Sign out of Modern POS. Then sign back in, and open a shift. The peripherals that are configured in the hardware profile will now be usable. 
 
 > [!NOTE]
-> Only a single Hardware station record of type Dedicated is needed.  No hardware profile or EFT value should be set on this record, instead these values will be set on the POS Register form. 
+> You only need a single hardware station with record type **Dedicated**. Do not set a hardware profile or EFT value on the record; the values will be set on the **POS Register** form. 
 
 ### Shared
 
