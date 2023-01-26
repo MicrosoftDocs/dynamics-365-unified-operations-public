@@ -1,6 +1,6 @@
 ---
 title: Choose between Store Commerce app and Store Commerce for web
-description: This article explains the key differences between Store Commerce and Store Commerce for web, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
+description: This article explains the key differences between the Store Commerce app and Store Commerce for web, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author: josaw1
 ms.date: 01/30/2023
 ms.topic: article
@@ -28,8 +28,8 @@ Commerce supports the following POS options:
 
 - Store Commerce for Microsoft Windows
 - Store Commerce for iOS and Android
-- Cloud POS (CPOS), which supports the Microsoft Edge and Google Chrome browsers
-- Modern POS (MPOS) for Microsoft Windows (MPOS will be deprecated in October 2023.) 
+- Store Commerce for web, which supports the Microsoft Edge and Google Chrome browsers
+- Store Commerce app for Microsoft Windows (MPOS will be deprecated in October 2023.) 
 
 In all cases, the POS (Store Commerce app and Store Commerce for web) shares the same core application code. This point is important for the following reasons:
 
@@ -46,12 +46,12 @@ Although the Store Commerce app and Store Commerce for web are largely the same,
 
 Store Commerce is a desktop application that is installed and serviced on a device.
 
-- **Windows** – The Store Commerce for Windows application contains all the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
-- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server that is hosted on Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
+- **Windows** – The Store Commerce app for Windows contains all the application code, Commerce Runtime (CRT), and Hardware Station (HWS).
+- **iOS/Android** – On these platforms, the application acts as a host for the Store Commerce for web application code. In other words, the application code comes from the Commerce Scale Unit (CSU) that is hosted on Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](dev-itpro/retail-store-system-begin.md).
 
-#### CPOS
+#### Store Commerce for web
 
-Because CPOS runs in a browser, the application isn't installed on the device. Instead, the browser accesses the application code from the Commerce Scale Unit (CSU). Therefore, CPOS can't directly access POS hardware or work in an offline state.
+Because Store Commerce for web runs in a browser, the application isn't installed on the device. Instead, the browser accesses the application code from the Commerce Scale Unit (CSU). Therefore, Store Commerce for web can't directly access POS hardware or work in an offline state.
 
 ### Store deployment considerations
 
