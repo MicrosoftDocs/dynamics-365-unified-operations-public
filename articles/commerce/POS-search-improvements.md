@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product search and customer search in the point of sale (POS)
-description: This article provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
+description: This article provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 [!include [banner](includes/banner.md)]
 
-Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) provide easy-to-use search functionality for products and customers. Because the search bar is always present at the top of the MPOS and CPOS windows, employees can quickly search for products and customers.
+Store Commerce app and Store Commerce for web provide easy-to-use search functionality for products and customers. Because the search bar is always present at the top of the Store Commerce app and Store Commerce for web windows, employees can quickly search for products and customers.
 
 Employees can search for products in the assortments and catalogs that are associated with the current store. They can also search in the assortments and catalogs that are associated with any other store in the company. Therefore, cashiers can sell and return products outside the store assortment. Similarly, employees can search for customers who are associated with the current store or any other store in the company. Additionally, employees can search for customers who are associated with a different company in the parent organization.
 
