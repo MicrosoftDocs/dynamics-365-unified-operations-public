@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Send email receipts from Modern POS (MPOS)
+title: Send email receipts from Store Commerce
 description: In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).  
 author: jashanno
-ms.date: 11/30/2021
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Send email receipts from Modern POS (MPOS)
+# Send email receipts from Store Commerce
 
 [!include [banner](includes/banner.md)]
 
