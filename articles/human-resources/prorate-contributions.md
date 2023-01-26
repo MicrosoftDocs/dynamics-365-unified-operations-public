@@ -36,7 +36,7 @@ To enable proration:
 1. The **Benefit period** must have a specified **Start** and **End date**.
 2. If, in the **Period configuration**, the previous period is specified, there must be no gap or overlap between the **Benefit periods**.
 3. The **Prorate contribution** option in the **Benefit plans configuration** is selected.
-4. The pay periods must be defined for the payment frequency specified in the employee profile. The pay periods are defined under **Pay cyle dates** tab in **Payment
+4. The pay periods must be defined for the payment frequency specified in the employee profile. The pay periods are defined under **Pay cycle dates** tab in **Payment
 frequency** configuration under **Setup**.
 
 The maximum annual contribution amount is prorated in the available pay periods for the employee. The maximum amount allowed per pay period is the maximum annual amount, minus the amount contributed thus far, divided by the remaining pay periods.
