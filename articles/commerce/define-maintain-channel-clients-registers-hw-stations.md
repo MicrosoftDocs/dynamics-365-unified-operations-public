@@ -43,13 +43,13 @@ Several components are used to define the relationships among a store, the point
 
 ### POS registers
 
-Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+Navigation: In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 
 The POS register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who logs on to that register.
 
 ### Devices
 
-Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.
+Navigation: Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
 
 A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
 
@@ -61,7 +61,7 @@ Devices can be of the following types:
 - Store Commerce for web
 
 > [!NOTE]
-> Following the deprecation of the Retail Hybrid apps for iOS and Android, the "Retail Modern POS - iOS" and "Retail Modern POS - Android" application types will be renamed to "Store Commerce for iOS" and "Store Commerce for Android", respectively.
+> Following the deprecation of the Retail hybrid apps for iOS and Android, the "Retail Modern POS - iOS" and "Retail Modern POS - Android" application types will be renamed to "Store Commerce for iOS" and "Store Commerce for Android", respectively.
 
 #### Store Commerce app
 
@@ -69,7 +69,7 @@ Store Commerce app is a POS client application that is installed on Windows 10 o
 
 #### Store Commerce for web
 
-Store Commerce for web is a browser-based POS. Because it runs in the browser, Store Commerce for web doesn't require Windows 8.1 or a later PC-based operating system. If the **Store Commerce for web** application type is mapped to a specific device in headquarters, that device can be used through the browser with no need to download or install a package. Store Commerce for web requires a hardware station to use hardware beyond keyboard wedge based bar code scanning.
+Store Commerce for web is a browser-based POS. Because it runs in the browser, Store Commerce for web doesn't require Windows 10 or a later PC-based operating system. If the **Store Commerce for web** application type is mapped to a specific device in headquarters, that device can be used through the browser with no need to download or install a package. Store Commerce for web requires a hardware station to use hardware beyond keyboard wedge based bar code scanning.
 
 ### Hardware profile
 
@@ -81,7 +81,7 @@ A hardware profile identifies the hardware that is connected to a POS register t
 
 Navigation: Go to **Retail and Commerce \> Channels \> Stores \> All stores**, select a store, and then select the **Hardware stations** FastTab.
 
-A hardware station is an instance of business logic that drives POS peripherals. A hardware station is automatically installed together with Store Commerce app. Alternatively, the hardware station can be installed as a stand-alone component, and then accessed by Store Commerce app or Store Commerce for web through a web service. The hardware station must be defined at the channel level.
+A hardware station is an instance of business logic that drives POS peripherals. A hardware station is automatically installed together with the Store Commerce app. Alternatively, the hardware station can be installed as a stand-alone component, and then accessed by the Store Commerce app or Store Commerce for web through a web service. The hardware station must be defined at the channel level.
 
 ## Scenarios
 
@@ -97,7 +97,7 @@ Next, set up a dedicated hardware station on the channel. Go to **Retail and Com
 
 Then, on the **Hardware stations** FastTab, select **Add** to add a hardware station. Select **Dedicated** as the hardware station type, and then enter a description. The **Hardware profile** field can be left blank, because the hardware profile that is used in this scenario comes from the POS register itself. Then sync the changes to the channel by using the **Channel configuration** distribution schedule. You can find the distribution schedules at **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. 
 
-Finally, in Store Commerce app, use the **Select hardware station** operation to select the hardware station that matches the value that you previously entered for the description, and set the hardware station to **Active**. 
+Finally, in the Store Commerce app, use the **Select hardware station** operation to select the hardware station that matches the value that you previously entered for the description, and set the hardware station to **Active**. 
 
 > [!NOTE]
 > - Some hardware profile changes, such as changes to cash drawers, require that a new shift be opened after the changes have been synced to the channel.
@@ -107,13 +107,13 @@ Finally, in Store Commerce app, use the **Select hardware station** operation to
 
 [![Shared peripherals.](./media/shared-300x254.png)](./media/shared.png)
 
-In this scenario, a standalone hardware station is shared among Store Commerce app and Store Commerce for web clients. This scenario requires that you create a shared hardware station and specify the download package, port, and hardware profile that the hardware station uses. You define a new hardware station by selecting **the Hardware stations** FastTab in the specific channel (**Retail and Commerce \> Channels \> Stores \> All stores**) and adding a new hardware station of the **Shared** type. 
+In this scenario, a standalone hardware station is shared by the Store Commerce app and Store Commerce for web clients. This scenario requires that you create a shared hardware station and specify the download package, port, and hardware profile that the hardware station uses. You define a new hardware station by selecting **the Hardware stations** FastTab in the specific channel (**Retail and Commerce \> Channels \> Stores \> All stores**) and adding a new hardware station of the **Shared** type. 
 
 Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station.) For a standalone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
 
 Next, from the machine that will host the hardware station, go to the channel in Headquarters, and select the hardware station. Then select **Download** to download the hardware station installer, and install the hardware station. For more information about how to install hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md). 
 
-Next, from Store Commerce app and Store Commerce for web, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. 
+Next, from the Store Commerce app and Store Commerce for web, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. 
 
 After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the shared hardware station instead of the register itself. If no hardware profile is directly assigned to a hardware station for some reason, the hardware profile that is assigned to the register will be used.
 
