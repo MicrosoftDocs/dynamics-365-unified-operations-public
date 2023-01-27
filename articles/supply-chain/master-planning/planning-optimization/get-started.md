@@ -41,8 +41,8 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 
 - Your system must be set up for Power Platform integration. For more information, see [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
-- You must sign into Power Platform using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
-    1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+- You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
+    1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. Open the environment where want to install the add-in.
     1. Go to **Settings \> Users** and select your user account from the list to see its details.
     1. From your user details page, select the **Client Access License (CAL) information** link.
