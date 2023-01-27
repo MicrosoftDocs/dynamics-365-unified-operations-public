@@ -4,7 +4,7 @@
 title: Organize report components in report designer
 description: This article explains how to organize existing reports, building blocks, and objects in report designer.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,16 +33,16 @@ ms.dyn365.ops.version: Version 1611
 
 After you've designed building blocks and generated reports, it's helpful to organize these objects so that they are easier for users to locate. This article explains how to organize existing reports, building blocks, and objects in report designer.
 
-You can rename folders, reports, building blocks, and other objects in report designer to help organize your files. Depending on the type of object that you rename, you might have to update associations with that object.
+You can rename folders, reports, building blocks, and other objects in Report designer to help organize your files. Depending on the type of object that you rename, you might have to update associations with that object.
 
-## Rename a folder or building block in Report Designer
-In Report Designer, you can rename folders, report definitions, row definitions, column definitions, and reporting tree definitions.
+## Rename a folder or building block in Report designer
+In Report designer, you can rename folders, report definitions, row definitions, column definitions, and reporting tree definitions.
 
-### Rename a folder or building block in Report Designer
+### Rename a folder or building block in Report designer
 
-1. In Report Designer, use the navigation pane to locate the folder or object to rename.
+1. In Report designer, use the navigation pane to locate the folder or object to rename.
 2. Right-click the folder or object, and then click **Rename**. The **Name** field in the navigation pane becomes available.
-3. Type a new name, and then press Enter.
+3. Type a new name, and then press **Enter**.
 4. If the building block is a row definition, column definition, or reporting tree definition, you must update other building blocks that are associated with it. Right-click the building block that you renamed in step 3, select **Associations**, and then select an item in the list to update it.
 5. Repeat step 4 until all associated items are updated.
 
@@ -51,18 +51,18 @@ You can group report definitions to generate multiple reports at the same time. 
 
 ### Create a report group
 
-1. In Report Designer, in the navigation pane, click **Report Groups**.
-2. On the **File** menu, click **New** &gt; **Report Group Definition** to open a new report group in the viewer window. Alternatively, click the **Report Group** button ![Report Group.](media/report-group.gif "Report Group") on the toolbar.
-3. Click the **Report Group** tab. To override the information on the individual report definitions for the generation of this report, select the **Override company, detail, and date settings from individual report definitions** check box. The company name, detail level, provisional setting, and date information are entered automatically, but you can make updates.
-4. To generate multiple reports that show the reporting currencies, select the **Include all reporting currencies** check box. You can then access multiple views by clicking the **Currency** button in the Web Viewer when you view the report.
+1. In Report designer, in the navigation pane, click **Report groups**.
+2. On the **File** menu, click **New** &gt; **Report group definition** to open a new report group in the viewer window. Alternatively, click the **Report group** button ![Report group.](media/report-group.gif "Report group") on the toolbar.
+3. Click the **Report group** tab. To override the information on the individual report definitions for the generation of this report, select the **Override company, detail, and date settings from individual report definitions** checkbox. The company name, detail level, provisional setting, and date information are entered automatically, but you can make updates.
+4. To generate multiple reports that show the reporting currencies, select the **Include all reporting currencies** checkbox. You can then access multiple views by clicking the **Currency** button in the Web Viewer when you view the report.
 5. In the **Reports in group** field, click **Add** to select the reports to include in the report group. To select multiple reports in the **Add** dialog box, hold down the Ctrl key while you select reports. When you've finished selecting reports, click **OK**.
 6. Click **File** &gt; **Save** to save the new report group.
 
 ### Modify a report group
 
-1. In Report Designer, in the navigation pane, click **Report Groups**.
+1. In Report designer, in the navigation pane, click **Report groups**.
 2. Double-click the report group to modify.
-3. On the **Report Group** tab, make the changes that you want.
+3. On the **Report group** tab, make the changes that you want.
 4. On the **File** menu, click **Save** to save the modified report group, Alternatively, click the **Save** button ![Save.](media/save.gif "Save") on the toolbar.
 
 > [NOTE]
@@ -70,18 +70,18 @@ You can group report definitions to generate multiple reports at the same time. 
 
 ### Generate a report group report
 
-1. In Report Designer, in the navigation pane, click **Report Groups**.
+1. In Report designer, in the navigation pane, click **Report groups**.
 2. Open the report group to generate.
-3. Click the **Generate Report** button ![Generate Report.](media/generate-report.gif "Generate Report") to generate reports.
+3. Click the **Generate report** button ![Generate report.](media/generate-report.gif "Generate report") to generate reports.
 
 ### Delete a report group
 
-1. In Report Designer, in the navigation pane, click **Report Groups**.
+1. In Report designer, in the navigation pane, click **Report groups**.
 2. Right-click the report group to delete, and then select **Delete**.
 3. When a confirmation message appears, click **Yes**.
 
-## Report Group tab controls
-The following table describes the controls on the **Report Group** tab.
+## Report group tab controls
+The following table describes the controls on the **Report group** tab.
 
 <table>
 <thead>
@@ -93,7 +93,7 @@ The following table describes the controls on the **Report Group** tab.
 <tbody>
 <tr>
 <td>Override company, detail, and date settings from individual report definitions</td>
-<td>Select this check box to override individual report definitions of the reports in this report group for the generation of these reports only.</td>
+<td>Select this checkbox to override individual report definitions of the reports in this report group for the generation of these reports only.</td>
 </tr>
 <tr>
 <td>Company name</td>
@@ -119,7 +119,7 @@ The following table describes the controls on the **Report Group** tab.
 </tr>
 <tr>
 <td>Include all reporting currencies</td>
-<td>Any additional reporting currencies that are configured in your Microsoft Dynamics ERP system are listed here. Select this check box to generate additional reports in the currencies that are indicated. To view these reports in the Web Viewer, click the <strong>Currency</strong> button, and then select a currency.</td>
+<td>Any additional reporting currencies that are configured in your Microsoft Dynamics 365 Finance system are listed here. Select this checkbox to generate additional reports in the currencies that are indicated. To view these reports in the Web Viewer, click the <strong>Currency</strong> button, and then select a currency.</td>
 </tr>
 <tr>
 <td>Date information not saved with report definition</td>

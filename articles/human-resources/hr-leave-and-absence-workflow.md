@@ -50,7 +50,7 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 4. When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.
 
-5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json.)
+5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json).
 
 ## Leave and absence request workflow data elements
 

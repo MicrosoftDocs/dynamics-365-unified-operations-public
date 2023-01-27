@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
-description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management.
+title: Dynamics 365 finance and operations apps in local geographies
+description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 finance and operations apps.
 author: Shailesh4all
 ms.date: 08/29/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2022-04-28
 
 ## Data residency
 
-Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management are generally available to support data residency in specific geographies. These deployment options serve customers in regulated industries and commercial organizations that do business with entities in specific geographies that require local data residency.
+Microsoft Dynamics 365 finance and operations apps are generally available to support data residency in specific geographies. These deployment options serve customers in regulated industries and commercial organizations that do business with entities in specific geographies that require local data residency.
 
 All required services and related data are deployed in the corresponding data centers of the geography. These services and data include Microsoft Dynamics Lifecycle Services (LCS), telemetry, databases, and environments. Customer data doesn't leave the geographic boundary.
 

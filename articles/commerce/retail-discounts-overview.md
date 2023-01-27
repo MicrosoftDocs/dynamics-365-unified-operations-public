@@ -17,7 +17,6 @@ ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 # Retail discounts
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article provides an overview of the discount functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this article doesn't cover the various discount types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate articles created for each of these discount types.
 

@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: conceptual
 ms.date: 11/11/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

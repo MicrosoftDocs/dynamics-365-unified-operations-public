@@ -18,8 +18,6 @@
           href: get-started/whats-new-platform-updates-10-0-31.md
         - name: Platform updates for version 10.0.30 (November 2022)
           href: get-started/whats-new-platform-updates-10-0-30.md
-        - name: Platform updates for version 10.0.29 (October 2022)
-          href: get-started/whats-new-platform-updates-10-0-29.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1047,7 +1045,9 @@
       - name: Expired subscriptions and data deletion
         href: lifecycle-services/expired-subscription-data-deletion.md
       - name: Microsoft Dynamics 365 Translation Service
-        items:
+        items: 
+        - name: What's new in Dynamics Translation Service
+          href: lifecycle-services/dts-announcements.md
         - name: Dynamics 365 Translation Service overview
           href: lifecycle-services/translation-service-overview.md
         - name: Translate user interface files
@@ -1102,8 +1102,6 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
-            - name: Enable a five-minute session time-out window for dual-write sessions
-              href: data-entities/dual-write/5-minute-mode.md
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
@@ -1132,8 +1130,8 @@
               href: data-entities/dual-write/app-lifecycle-management.md
             - name: User-specified team owner
               href: data-entities/dual-write/user-specified-team-owner.md
-            - name: Unlink and relink dual-write environments
-              href: data-entities/dual-write/relink-environments.md
+            - name: Reset dual-write connection
+              href: data-entities/dual-write/reset.md
         - name: Mapping concepts between apps
           items:
             - name: Integrated customer master
@@ -1600,6 +1598,8 @@
         href: lifecycle-services/cloud-powered-support-lcs.md
       - name: Production support and monitoring
         href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
+      - name: Use Customer Lockbox to manage secure access to customer data
+        href: sysadmin/customer-lockbox.md
     - name: System administration
       items:
       - name: System administration home page
@@ -1652,6 +1652,8 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Active Directory security groups
+          href: sysadmin/active-directory-security-group.md
         - name: Import or export customized security configuration using Data management
           href: sysadmin/import-export-customized-security.md
         - name: Security diagnostics for task recordings

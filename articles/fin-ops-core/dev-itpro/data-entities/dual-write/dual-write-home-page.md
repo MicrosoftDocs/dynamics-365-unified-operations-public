@@ -41,6 +41,7 @@ These topics describe dual-write integration.
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable table map for dual-write](enable-entity-map.md)
   + [Separated Dual-write Application Orchestration package](separated-solutions.md)
+  + [Setup security roles and permissions](security-roles.md)
 
 ## Managing dual-write after setup
 
@@ -52,7 +53,7 @@ These topics describe dual-write integration.
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 + [User-specified team owner](user-specified-team-owner.md)
-+ [Unlink and relink dual-write environments](relink-environments.md)
++ [Reset dual-write environments](reset.md)
 
 ## Mapping concepts between apps
 

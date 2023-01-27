@@ -148,6 +148,7 @@ To create and configure a B2B account management landing page in site builder, f
 1. In the **Container 4** slot, add an **Account customer balance tile** module. In the module properties pane, under **Heading**, enter **Account credit**. 
 1. In the **Main** slot, add another **Container** module (**Container 5**). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
 1. In the **Container 5** module, add an **Account order templates tile** module. In the module properties pane, under **Heading**, enter **Order Templates**. 
+1. In the **Container 5** module, add an **Account invoice tile** module. In the module properties pane, under **Heading**, enter **Invoices**. 
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 

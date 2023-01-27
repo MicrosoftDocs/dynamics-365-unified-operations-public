@@ -2,7 +2,7 @@
 title: Prepare content for use with the Help pane
 description: This article describes how you can prepare content so that it can be used with the Help pane.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,17 +24,18 @@ Microsoft creates Help in multiple languages for the locales that are supported 
 
 ## Creating custom Help content that is derived from existing Microsoft content
 
+[!INCLUDE [custom-help-toolkit-deprecation](../includes/custom-help-toolkit-deprecation.md)]
+
 You can use Microsoft Help content as a baseline for content that describes your solution. The [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool can retrieve the content from Markdown files in Microsoft repositories (repos) and convert it to HTML files.
+
+> [!NOTE]
+> You can only use the HtmlFromRepoGenerator tool to retrieve content of the Markdown files for the English language.  
 
 For more information about how to use existing Microsoft content as a baseline for content that describes your solution, see [Extend and collaborate on the Help](contributor-guide.md).
 
-## Migrating content from existing AX 2012 Help content
-
-If you have existing content from AX 2012, you can reuse it for Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment. The [Custom Help Toolkit](custom-help-toolkit.md) includes a Windows PowerShell script, **run_ax2012.ps1**, that transforms AX 2012 HTML files so that they can be used in the custom Help environment.
-
 ## Creating new Help content
 
-You use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) to connect your content to the **Help** pane. The **Help** pane will generate a query that is run against the search service's index. Context-sensitive Help and full-text search in the **AzureSearchCustomHelp** solution require that each article contain specific metadata.
+You use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) to connect your content to the **Help** pane. The **Help** pane will generate a query that is run against the search service's index. Context-sensitive Help and full-text search in the **AzureSearchCustomHelp** solution require that each article contains specific metadata.
 
 ### <a name="metadata"></a>Metadata requirements for custom Help topics
 
@@ -57,6 +58,11 @@ The following table describes the values that can be specified for the **ms.sear
 | Retail | This value applies to solutions that are based on Commerce. |
 | Human Resources | This value applies to solutions that are based on Dynamics 365 Human Resources. |
 | Talent | This value applies to solutions based on Dynamics 365 Talent. (Note that the Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard apps are being retired. For more information, see [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-nboard-apps).) |
+
+
+## Migrating content from existing AX 2012 Help content
+
+If you have existing content from AX 2012, you can reuse it for Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment. The [Custom Help Toolkit](custom-help-toolkit.md) includes a Windows PowerShell script, **run_ax2012.ps1**, that transforms AX 2012 HTML files so that they can be used in the custom Help environment.
 
 ### Non-required metadata
 

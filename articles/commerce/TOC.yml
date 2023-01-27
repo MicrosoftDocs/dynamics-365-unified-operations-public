@@ -16,10 +16,6 @@
           href: get-started/whats-new-commerce-10-0-31.md
         - name: Commerce 10.0.30 (November 2022)
           href: get-started/whats-new-commerce-10-0-30.md
-        - name: Commerce 10.0.29 (October 2022)
-          href: get-started/whats-new-commerce-10-0-29.md
-        - name: Commerce 10.0.28 (July 2022)
-          href: get-started/whats-new-commerce-10-0-28.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -402,8 +398,10 @@
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Commerce offline implementation and troubleshooting
+          - name: Commerce offline implementation considerations
             href: dev-itpro/implementation-considerations-offline.md
+          - name: Commerce offline implementation troubleshooting
+            href: dev-itpro/implementation-offline-troubleshooting.md
           - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
@@ -416,7 +414,7 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management improvements
+          - name: Cash management overview
             href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
@@ -590,6 +588,8 @@
               href: dev-itpro/adyen-connector-faq.md
             - name: Configure Google Pay with Adyen
               href: dev-itpro/google-pay-adyen.md
+            - name: Set up Apple Pay with Adyen
+              href: dev-itpro/apple-pay-adyen.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -602,6 +602,8 @@
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
+          - name: Prepayments in Dynamics 365 Commerce
+            href: dev-itpro/prepayments-commerce.md
           - name: Duplicate payments prevention 
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
@@ -854,6 +856,8 @@
           href: process-order-pickup-POS.md
         - name: Enable order lookup for guest checkouts
           href: order-lookup-guest.md
+        - name: Improve the performance of Commerce order search
+          href: improve-order-search.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -1021,7 +1025,23 @@
         - name: Upload URL redirects in bulk
           href: upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
-          href: set-up-B2C-tenant.md
+          items:
+          - name: Set up a B2C tenant
+            href: set-up-B2C-tenant.md
+          - name: Create or link to an existing Azure AD B2C tenant
+            href: create-link-aad-b2c-tenant.md
+          - name: Create a B2C application
+            href: create-b2c-app.md
+          - name: Create user flow policies
+            href: create-user-flow-policies.md
+          - name: Add social identity providers
+            href: add-social-identity-providers.md
+          - name: Update Commerce headquarters with Azure AD B2C information
+            href: update-hq-aad-b2c-info.md
+          - name: Configure your B2C tenant in site builder
+            href: config-b2c-tenant-site-builder.md
+          - name: Additional B2C information
+            href: additional-b2c-info.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
         - name: Enable automatic linking of identity records to customer accounts
@@ -1416,6 +1436,8 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Set up Operational Insights
+        href: dev-itpro/operational-insights.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -1580,6 +1602,8 @@
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
           href: localizations/emea-sau-qr-code.md
+        - name: Generate and submit simplified electronic invoices for Saudi Arabia
+          href: localizations/emea-sau-simplified-e-invoices.md
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -2998,7 +3022,7 @@
           href: troubleshoot/payment-type-credit-card-error.md
         - name: Taxes on online orders are incorrectly calculated
           href: troubleshoot/tax-miscalculated-online-order.md
-        - name: Order synchronization error related to default payment service
+        - name: Asynchronous order synchronization issues
           href: troubleshoot/synchronization-error.md
       - name: Payments processing
         items:
@@ -3048,6 +3072,12 @@
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
           href: troubleshoot/set-up-dev-environment-debugging.md
+      - name: Store financials
+        items:
+        - name: Issues with the data reconciliation of a Z report
+          href: troubleshoot/z-report-issues.md
+        - name: Statement posting errors due to unavailable inventory or update conflicts
+          href: troubleshoot/inventory-errors-posting.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance

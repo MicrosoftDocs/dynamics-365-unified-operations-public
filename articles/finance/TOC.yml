@@ -4,7 +4,7 @@
     items:
     - name: Dynamics 365 Finance home page
       href: index.md
-    - name: What's new or changed
+    - name: What's new or changed 
       items: 
       - name: What's new or changed in finance and operations apps
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
@@ -430,7 +430,7 @@
           href: accounts-receivable/rev-rec-bundles.md
         - name: Revenue recognition reallocation
           href: accounts-receivable/rev-rec-reallocation.md
-        - name: Revenue recognition reallocation - scenario 1
+        - name: Revenue recognition reallocation scenario 1
           href: accounts-receivable/rev-rec-reallocation-scenario-1.md
         - name: Revenue recognition reallocation scenario 2
           href: accounts-receivable/rev-rec-reallocation-scenario-2.md
@@ -1167,7 +1167,9 @@
         - name: General ledger statement by main account
           href: general-ledger/general-ledger-statement-by-main-account.md
         - name: Standard Audit File for Tax (SAF-T) electronic report
-          href: general-ledger/standard-audit-file.md      
+          href: general-ledger/standard-audit-file.md
+        - name: Ledger settlement inquiry
+          href: general-ledger/ledger-settlement-inquiry.md          
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1187,7 +1189,21 @@
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
         - name: Awareness between ledger settlement and year-end close
-          href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+          items:          
+          - name: Awareness between ledger settlement and year-end close
+            href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+          - name: Prepare for Awareness between ledger settlement before year-end close  
+            href: general-ledger/ledger-settle-yec.md  
+          - name: Prepare for Awareness between ledger settlement after year-end close   
+            href: general-ledger/ledger-settle-yec-after.md
+          - name: Awareness between ledger settlement feature and reporting currency is out of balance  
+            href: general-ledger/reporting-currency-yec.md
+          - name: Awareness between ledger settlement feature before year-end close using the inquiry window  
+            href: general-ledger/ledger-settlement-yec-inquiry-before.md
+          - name: Awareness between ledger settlement feature after year-end close using the inquiry window   
+            href: general-ledger/ledger-settlement-yec-inquiry-after.md
+        - name: Automate ledger settlements  
+          href: general-ledger/auto-settle.md
         - name: Foreign currency revaluation for General ledger
           href: general-ledger/foreign-currency-revaluation-general-ledger.md
         - name: General ledger account balances
@@ -1574,6 +1590,8 @@
                 href: localizations/e-invoicing-process-incoming-electronic-documents.md
               - name: Configure an email channel
                 href: localizations/e-invoicing-configure-email.md?context=/dynamics365/context/finance
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: localizations/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
               - name: Configure a SharePoint channel
                 href: localizations/e-invoicing-configure-sharepoint-channel.md
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
@@ -1604,7 +1622,9 @@
               href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Poland
               href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-            - name: Get started with Electronic invoicing for Saudi Arabia
+            - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
+              href: localizations/e-invoicing-sa-get-started-phase-one.md
+            - name: Get started with Electronic invoicing for Saudi Arabia - Phase two
               href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Electronic invoicing onboarding in Saudi Arabia
               href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance

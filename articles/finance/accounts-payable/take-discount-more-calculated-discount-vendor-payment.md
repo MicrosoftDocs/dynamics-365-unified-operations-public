@@ -37,13 +37,13 @@ Vendor 3051 gives Fabrikam a cash discount of 4 percent if an invoice is paid in
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Selected | Normal            | Inv-10040 | 3051    | 6/29/2015 | 7/29/2015 | 10040   | 1,000.00                       | USD      | 940.00           |
+| Selected | Normal            | Inv-10040 | 3051    | 6/29/2020 | 7/29/2020 | 10040   | 1,000.00                       | USD      | 940.00           |
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
 | Field                        | Value     |
 |------------------------------|-----------|
-| Cash discount date           | 7/12/2015 |
+| Cash discount date           | 7/12/2020 |
 | Cash discount amount         | 60.00     |
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |

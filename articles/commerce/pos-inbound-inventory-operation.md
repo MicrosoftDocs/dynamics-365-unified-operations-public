@@ -8,7 +8,7 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: hhaines
-ms.search.validFrom: 
+ms.search.validFrom: 2017-06-20
 
 ---
 
