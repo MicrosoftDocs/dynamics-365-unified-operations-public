@@ -34,7 +34,8 @@ part of the project. For example, you may have a project with a customer where t
 support contract. A billing schedule can be used to set up the recurring charge and billed using the project invoice proposal. This helps streamline billing to the
 customers as project transactions and recurring billing charges can be included on the project invoice proposal.
 
-Note: Billing schedules with projects are only available with Project Operations – Stocked/Production based deployments. 
+ > [!NOTE]
+    > Billing schedules with projects are only available with Project Operations – Stocked/Production based deployments. 
 
 ## Enable Billing schedules with projects
 In Feature management the **Billing schedules with projects** feature needs to be enabled. It is in the Subscription billing module. Once enabled refresh the browser.
@@ -64,14 +65,13 @@ sales order is invoiced through a project invoice proposal, not a standard sales
 Posting invoice or Create invoice proposal** option is selected, then the invoice proposal is created and will be opened for review. If **Post invoice automatically**
 is used the sales order is created, the project invoice proposal is created including the sales order, then posted automatically.
 
-Note: If generate invoice doesn’t show any billing schedule lines check the following:
-1.	If unbilled revenue is marked for the billing schedule line the Create journal entry process needs to be completed
-2.	On the billing schedule header, select the Address tab, customer needs a Bill-to address
-3.	The billing schedule or billing schedule line cannot have the On hold status
-4.	The project stage must be set to one that can be invoiced
+ > [!NOTE]
+ > If generate invoice doesn’t show any billing schedule lines check the following:
+ > -   If unbilled revenue is marked for the billing schedule line the Create journal entry process needs to be completed
+ > -   On the billing schedule header, select the Address tab, customer needs a Bill-to address
+ > -   The billing schedule or billing schedule line cannot have the On hold status
+ > -   The project stage must be set to one that can be invoiced in Project management and accounting parameters
 
 ## Viewing a billing schedule from a project or project contract
 From the **All projects** page, select a project. Select Manage from the action pane, then under Related information choose Subscription billing > Billing schedules. This opens the **All billing schedules** page to any billing schedules created for that project. From the **Project contracts** page, select Maintain from the action pane, then under Related information choose Subscription billing > Billing schedules. This opens the **All billing schedules** page for any billing schedules created for the project contract. 
-
-
 
