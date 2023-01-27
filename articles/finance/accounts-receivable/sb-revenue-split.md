@@ -104,6 +104,9 @@ To create a billing schedule that has an item that is set up for revenue split, 
 >
 > If the **Automatically create revenue split** option is set to **No**, the behavior is as explained earlier.
 
+> [!Note]
+> A feature was added in 10.0.32 which allows a Billing schedule line with revenue split to set **Renew automatically** to Yes. 
+
 ## Additional revenue split information
 
 When you add an item that is part of a revenue split, note the following information: 
