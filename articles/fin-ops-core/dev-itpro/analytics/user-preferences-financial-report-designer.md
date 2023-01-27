@@ -25,7 +25,7 @@ This article explains how to set user preferences to customize your user interac
 
 ## Set user preferences
 
-1. In Report Designer, on the **Tools** menu, click **Options**.
+1. In Report designer, on the **Tools** menu, click **Options**.
 2. In the **Options** dialog box, select your preferences.
 3. Click **OK**.
 
@@ -48,7 +48,7 @@ This article explains how to set user preferences to customize your user interac
 </ul></td>
 </tr>
 <tr>
-<td>Display confirmation before exiting Report Designer</td>
+<td>Display confirmation before exiting Report designer</td>
 <td>Select whether to receive a warning message when you exit the application. This message helps guarantee that you don't exit the program unintentionally.</td>
 </tr>
 <tr>

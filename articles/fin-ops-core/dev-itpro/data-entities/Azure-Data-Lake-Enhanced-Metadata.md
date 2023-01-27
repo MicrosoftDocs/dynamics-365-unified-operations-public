@@ -110,7 +110,7 @@ New software updates can cause metadata in finance and operations apps to change
 If the structure of a table or entity is changed, and especially if a field is removed from the table or entity, consuming applications might have to be updated. The Export to Data Lake feature is designed to minimize the downstream impact but also reflect metadata changes in the data lake. This section explains how metadata changes are reflected in the data lake.
 
 > [!NOTE]
-> finance and operations apps include governance processes and developer tools that help developers learn about such changes and their impact. However, users who consume data in the date lake by creating and running a Power BI report, for example, might not be aware of changes in finance and operations apps.
+> Finance and operations apps include governance processes and developer tools that help developers learn about such changes and their impact. However, users who consume data in the date lake by creating and running a Power BI report, for example, might not be aware of changes in finance and operations apps.
 
 When a new field is added to a table, metadata files in the data lake are updated to reflect the change. All the records in the CSV files that include the newly added data will contain the new field. If a CSV file isn't modified, or no new rows are added, the file won't contain the new field. This behavior helps minimize the data writes to the data lake. Most data pipeline tools, and especially those tools that understand the CDM standard, support a feature that can adapt to changes. This feature is known as *schema drift*.
 

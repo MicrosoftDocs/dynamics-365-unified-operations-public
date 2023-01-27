@@ -2,15 +2,14 @@
 title: Less than truckload (LTL) classes
 description: This article explains what less than truckload (LTL) classes are and describes how to set them up in Microsoft Dynamics 365 Supply Chain Management.
 author: Weijiesa
-ms.date: 04/05/2021
-ms.topic: article
-ms.search.form: WHSLTLClass
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: weijiesa
-ms.search.validFrom: 2021-04-05
-ms.dyn365.ops.version: 10.0.8
+ms.reviewer: kamaybac
+ms.search.form: WHSLTLClass
+ms.topic: how-to
+ms.date: 01/05/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Less than truckload (LTL) classes
@@ -49,7 +48,7 @@ To create an LTL class, follow these steps.
 
 The following example shows how to set up two different LTL classes that you can use with different types of products.
 
-1. Go to **Warehouse management \> Setup \> Inventory \> LTL classes**.
+1. Go to **Warehouse management \> Setup \> Inventory \> LTL classes** or **Transportation management \> Setup \> Transportation standards \> LTL classes**.
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 

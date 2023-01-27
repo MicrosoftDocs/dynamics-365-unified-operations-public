@@ -82,7 +82,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 1. In Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
 2. Create a sales tax authority.
-3. In the **Authority identification** field, enter the code of the tax authority.
+3. In the **Authority identification** field, enter the code of the tax authority. This value is reported in the **c_ufo** field in the **VetaP** section of the report.
 4. On the Action Pane, select **Save**.
 
 ### Set up foreign trade parameters
@@ -141,6 +141,7 @@ For general information about which types of transactions are included in the EU
     | File name        | Enter the name of the .xml file.                                                    |
     | Generate report  | Set this option to **Yes** to generate an .xlsx file for your EU sales list report. |
     | Report file name | Enter the name of the .xlsx file.                                                   |
+    | Tax authority code to file the report | Enter the Tax authority code that's reported in the **c_pracufo** field, in the **VetaP** section of the report. |
 
 5. Select **OK**, and review the generated reports.
 
@@ -246,7 +247,8 @@ For information about how to create a general setup, create postings, and transf
     | Mesic          | 08    | The reporting period. **Note:** If the reporting period is **Quarter**, this field is named **ctvrt** instead of **mesic**.    |
     | shvies_forma   | R       | If the **Correction** option is set to **No**, this field is set to **R**. If the **Correction** option is set to **Yes**, this field is set to **N**.  |
     | d_poddp        | 24.09.2021   | The date when the report was created.  |
-    | c_ufo          | 23     | The tax authority ID.   |
+    | c_ufo          | 451    | The code related to the tax authority ID.   |
+    | c_pracufo      | 2012   | The tax authority ID.   |
     | dic            | 203/118/12345      | The company's tax registration number.    |
     | typ_ds         | P        | If the **Taxpayer type** field is set to **Individual**, this field is set to **F**. If the **Taxpayer type** field is set to **Corporation**, this field is set to **P**. |
     | stat           | Czech Republic     | The name of the company's country/region.     |
@@ -311,7 +313,8 @@ For information about how to create a general setup, create postings, and transf
     | dokument       | SHV                                         |
     | shvies_forma   | N                                           |
     | d_poddp        | 24.09.2021                                  |
-    | c_ufo          | 23                                          |
+    | c_ufo          | 451                                         |
+    | c_pracufo      | 2012                                          |
     | dic            | 203/118/12345                               |
     | typ_ds         | P                                           |
     | stat           | Czech Republic                              |

@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.31 (February 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.31 preview release.
 author: kfend
-ms.date: 10/18/2022
+ms.date: 11/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,6 +47,9 @@ The following table lists the features that are included in this release. We mig
 |--------------|---------|------------------|------------|
 | Tax Calculation | Update tax exempt number from customer address | This feature automatically updates the **Tax exempt number** field on the sales order and free text invoice header, based on the customer address that is selected. You can enable this feature by using the **Update tax exempt number from customer address** parameter on the **Tax Calculation parameters** page when the Tax Calculation service is enabled. | Parameter |
 | General ledger | Automate ledger settlements process | The automation of ledger settlement uses the Process automation framework to define matching rules and the schedule that they will be run on. You can define matching criteria such as the posting type and financial dimensions. | Feature management |
+| Additional languages available | Four additional languages are available | Four new languages are available for user selection in the preferred language list: Korean, Portuguese (Portugal), Vietnamese, and Chinese (Traditional). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
+|General ledger|	Optimize year-end close|	This feature accelerates the year-end close run by executing the year-end close processing on microservice, illustrates year-end close results, and manages financial dimensions transfer of balance sheet accounts.|	Feature management |
+|General ledger|	Financial Dimension Service |	This feature improves performance when you use the Data management framework to import a journal that has a large number of lines. It uses a new micro-service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries.|	LCS & Parameter |
 
 ## Feature enhancements included in this release
 
@@ -60,6 +63,7 @@ The following table lists the feature enhancements that are included in this rel
 | Subscription billing | Renew automatically for Milestone billing schedule lines | Billing schedules where lines have an item type of **Milestone** can now be marked for automatic renewal. |
 | General ledger | Ledger settlement inquiry | A new ledger settlement inquiry lets you view settled, unsettled, or settled and unsettled ledger transactions for a date range and individual main account. The inquiry resembles the trial balance inquiry and requires a date range within a single fiscal year. The inquiry will show the age of unsettled transactions or the settlement ID of settled transactions. |
 | General ledger | Account structure activation performance enhancement | This feature allows you to update multiple transaction groups faster by running them simultaneously during account structure changes. You can track your activation status by selecting **View activation status** for detailed results. |
+| General ledger | Accounting source explorer advanced filtering | This feature allows you to use advanced filtering on the accounting source explorer page. The filtering options are similar to the filtering available on the existing **Voucher inquiry** page. |
 | General ledger | Enhanced performance for source document accounting framework | This feature provides performance improvements to batch postings of source documents so they run more efficiently. This feature initially only affects free text invoice batch posting with more source documents to be supported in future releases. When this feature is enabled, batch posting is split into smaller units of work which prevents system degradation and lessens the chance of issues due to database disconnections. |
 | Tax Calculation | Wildcard support in the tax group and item tax group configuration to the Tax Calculation service | The asterisk (\*) wildcard character is now supported by the tax group and item tax group configuration table in Tax Calculation service. Users can enter **\*** to represent all tax codes and **SP\*** to represent tax codes that start with "SP." |
 | Tax Calculation | Extended tax calculation data model | <p>The following fields are extended for the Tax Calculation data model:</p><ul><li>Vendor group</li><li>Vendor invoice group</li><li>Customer group</li><li>Customer invoice group</li><li>Order type</li><li>Item group</li></ul> | 
