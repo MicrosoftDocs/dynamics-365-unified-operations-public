@@ -2,7 +2,7 @@
 title: Checkout module
 description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 11/17/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
