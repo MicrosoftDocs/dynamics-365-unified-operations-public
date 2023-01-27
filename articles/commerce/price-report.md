@@ -23,7 +23,7 @@ This article provides an overview of the price report feature that can be used t
 
 In order to provide competitive prices to their customers, retailers often change prices of products. Store managers want the ability to easily access recent or upcoming price changes so that they can plan for the required resources to update the price labels displayed on the store shelves. With release 10.0 of Retail, a store manager can open the **Price** report by navigating to **All stores \> Store \> Price report** and viewing the updated prices for the products associated to the store. 
 
-To enable the price report, the **Enable price report for store** parameter must be turned on. This parameter is located in Commerce headquaters at **Commerce parameters \> Discounts \> Miscellaneous**. Opening the **Price report** page displays a dialog box with various configurations. The available configurations are listed below.
+To enable the price report, the **Enable price report for store** parameter must be turned on. This parameter is located in Commerce headquarters at **Commerce parameters \> Discounts \> Miscellaneous**. Opening the **Price report** page displays a dialog box with various configurations. The available configurations are listed below.
 
 > [!NOTE]
 > The **Enable price report for store** parameter is deprecated in the 10.0.31 release and will be removed in October 2023. The price report is always accessible in the form as a standard function.
