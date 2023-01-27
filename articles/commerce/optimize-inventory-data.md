@@ -11,7 +11,7 @@ ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 
 ---
-# Optimize your inventory data
+# Optimize inventory data
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
