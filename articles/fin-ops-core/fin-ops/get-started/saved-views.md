@@ -219,10 +219,6 @@ Although some management capabilities are surfaced on every page, as indicated i
 
 Users who have access to the **Personalization** page can also import personal or organization views by using the **Import views** button on the Action Pane. For organization views, you can select **Publish immediately** to make the views available to users without an additional explicit publish.
 
-## Known issues
-
-For a list of known issues with saved views, please see [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md).
-
 ## Frequently asked questions
 
 ### What pages support views? 
