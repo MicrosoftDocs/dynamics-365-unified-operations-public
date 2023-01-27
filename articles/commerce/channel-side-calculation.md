@@ -11,7 +11,7 @@ ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 
 ---
-# Use channel-side inventory calculation
+# Configure channel-side inventory calculation
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
