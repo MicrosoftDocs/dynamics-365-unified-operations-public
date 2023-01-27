@@ -126,9 +126,9 @@ The top 3 items have the amounts: $900, $800, and $700. For the amount of $700, 
 ## Item group: separating invoices
 To be able to create separate invoices for renewal schedules based on item groups, the following setup is needed:
 
--   As part of the standard Microsoft Dynamics 365 for Finance and Operations setup, items must be assigned to item groups.
--   On the Advanced Recurring Contract Billing Parameters page, Unique schedule type is set to Customer.
--   When creating invoices on the Sales Order or the Invoice Creator pages, set Split by item group to Yes.
+-   As part of the standard  setup, items must be assigned to item groups.
+-   On the **Recurring contract billing parameters page**, **Unique schedule type** is set to Customer.
+-   When creating invoices on the Sales Order or the Generate invoice pages, set **Split by item group** to **Yes**.
 
 For billing schedules with multiple item groups, separate sales orders are created for each item group. 
 
