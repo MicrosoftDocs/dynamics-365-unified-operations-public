@@ -89,6 +89,15 @@ To remove an item from a billing schedule, follow these steps.
 2. On the **Billing schedule lines** FastTab, select the line to delete, and then select **Remove**.
 3. Select **Save**.
 
+## Generate a quotation from a billing schedule
+
+To generate a quotation document from a billing schedule, follow these steps.
+
+1. On the **Billing schedule** page select the number of the billing schedule to edit.
+2. On the **Billing schedule header** Action pane, select **Generate quotation**.
+3. Fill in options on the **Sales quotation** form such as From date and To date.
+4. Click Create.
+
 The rest of this article describes the actions and details that are available for lines on the **Billing schedule lines** FastTab.
 
 ## Billing schedule line actions
