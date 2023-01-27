@@ -3004,7 +3004,7 @@
           href: troubleshoot/store-commerce-performance.md
         - name: Extension issues
           href: troubleshoot/store-commerce-extensions.md
-        - name: Store Commerce sign-in issues
+        - name: Sign-in issues
           href: troubleshoot/store-commerce-sign-in.md
       - name: Order processing
         items:
