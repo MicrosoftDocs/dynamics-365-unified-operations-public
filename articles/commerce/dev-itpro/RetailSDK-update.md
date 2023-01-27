@@ -2,7 +2,7 @@
 title: Upgrade the Retail channel extension to the latest Retail SDK
 description: This article explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK.
 author: josaw1
-ms.date: 11/21/2018
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,7 +39,7 @@ The Retail SDK updates consist mainly of the following components:
 -   Package: Deployment package.
 -   Payment externals: Payment packaging folders.
 -   Payment: Payment sample code.
--   POS: Modern and Cloud POS App code and samples.
+-   POS: Store Commerce code and samples.
 -   References: All binary reference and commerce analyzer proxy tool.
 -   Sample extensions: Extension sample projects.
 
