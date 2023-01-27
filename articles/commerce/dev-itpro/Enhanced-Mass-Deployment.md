@@ -57,7 +57,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value will be used during device activation. |
 | -SkipAadCredentialsCheck| A switch that indicates whether Azure AD credential prerequisite checks should be skipped. The default value is **false**. |
 | -SkipCertCheck | A switch that indicates whether certificate prerequisite checks should be skipped. The default value is **false**. |
-| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations performed prior to performing the device token capture from Modern POS. This flag should only be used in test environments, and shouldn't be used in production. |
+| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations that are run prior to performing the device token capture from Modern POS. This flag should only be used in test environments, and shouldn't be used in production. |
 | -SkipIisCheck | A switch that indicates whether Internet Information Services (IIS) prerequisite checks should be skipped. The default value is **false**. |
 | -SkipNetFrameworkCheck | A switch that indicates whether .NET Framework prerequisite checks should be skipped. The default value is **false**. |
 | -SkipScaleUnitHealthcheck | A switch that indicates whether the health check on installed components should be skipped. The default value is **false**. |
