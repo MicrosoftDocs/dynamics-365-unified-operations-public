@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: This article provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/17/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -15,6 +15,7 @@ ms.search.validFrom: 2017-10-02
 # Support for external gift cards
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to set up external gift cards in Retail Modern point of sale (MPOS), the call center, and the storefront.
 
