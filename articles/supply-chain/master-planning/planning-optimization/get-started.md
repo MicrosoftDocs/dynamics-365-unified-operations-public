@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 01/27/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -40,6 +40,8 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 - You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
 
 - Your system must be set up for Power Platform integration. For more information, see [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+
+- Your user should be a Power platform admin account and should have an access mode of **Read-Write**. If you see failure on installation of Planning Optimization Add-in regarding missing user permissions, please check your user has a license assigned from [Microsoft 365 admin center](https://admin.microsoft.com) and make sure setting access mode to **Read-write** under Client Access License (CAL) at [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information about license and access mode for Power Platform, see [Create a Power Platform admin account](https://learn.microsoft.com/en-us/power-platform/admin/global-service-administrators-can-administer-without-license#create-a-power-platform-admin-account).
 
 ### Enable the Planning Optimization license
 
