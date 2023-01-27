@@ -4,7 +4,7 @@
 title: Inventory-aware product listing
 description: This article describes how organizations can configure product listing pages on their Microsoft Dynamics 365 Commerce e-commerce websites so that they are inventory aware.
 author: boycez
-ms.date: 11/14/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
