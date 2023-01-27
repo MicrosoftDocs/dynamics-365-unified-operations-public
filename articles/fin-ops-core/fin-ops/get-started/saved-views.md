@@ -225,17 +225,6 @@ For a list of known issues with saved views, please see [Build forms that fully 
 
 ## Frequently asked questions
 
-### How do I enable saved views in my environment?
-
-> [!NOTE]
-> The **Saved views** feature requires the Personalization system in the finance and operations apps to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
-
-You can turn the **Saved views** feature on and off through Feature management in any environment. After it's turned on, saved views will be enabled in all subsequent user sessions.
-
-### What happens to existing personalizations when views are enabled? 
-
-When views are enabled, any existing personalizations for a user and form are saved into a new view called **My view** that is automatically set as the default view. This is meant to ensure that there is a consistent user experience before and after views are enabled, except for the view selector control appearing on forms.
-
 ### What pages support views? 
 
 Views are available on most but not all pages. Specifically, views are currently available on all full-screen pages except dashboards. View support for workspaces is available through the **Saved views support for workspaces** feature. Most non-full-screen pages, which include drop-down dialog boxes, lookups, and enhanced previews, don't currently support views. View support for dialog boxes is available through the **Saved views support for dialogs** feature.
