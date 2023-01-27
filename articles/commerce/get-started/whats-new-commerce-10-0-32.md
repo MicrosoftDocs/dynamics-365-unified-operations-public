@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Commerce 10.0.32 (March 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.32. 
 author: josaw1
-ms.date: 01/06/2023
+ms.date: 01/30/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -30,9 +30,11 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+|Payments|  Include shipping address in Adyen authorizations for additional fraud protection. | The Dynamics 365 Payment Connector for Adyen adds support for sending the user's "Shipping Address" and "Shopper Email" with transactions where shipping to the customer is involved. These fields can be utilized by Adyen's Fraud Protection rules to assist in identifying fraudulent purchase attempts. These fields will be included for online channels, Call Center, or Point-of-Sale when a customer is choosing the ship to an address. Fields exist in the checkout process are newly included at the time of transactional interaction with the Adyen Payment Gateway. |  On by default |
+| Point of sale  | New network and connectivity health checks | New tests in the POS health check operation provide key information when troubleshooting network or performance-related issues on a point of sale terminal. Also, the health check operation can now be accessed directly from the **POS Settings** page. | On by default |
 | Self-service installers (Sealed)  | Store Commerce token capture and automated uninstallation of Modern POS. | Using new installer parameters, the Store Commerce installer can capture the device token in use by Modern POS and then uninstall Modern POS. This allows the use of Store Commerce without requiring Azure Active Directory credentials during device activation. | On by default |
 | Self-service installers (Sealed)  | .NET 6 is now a prerequisite. | .NET 6 is now a required installation for all sealed installers. Store Commerce has gained a variety of performance improvements through the uptake of this. | On by default |
-| Point of sale  | New network and connectivity health checks | New tests in the POS health check operation provide key information when troubleshooting network or performance-related issues on a point of sale terminal. Also, the health check operation can now be accessed directly from the POS Settings page. | On by default |
+
 
 ## Additional resources
 
