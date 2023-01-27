@@ -8,14 +8,13 @@ ms.search.form:
 ms.topic: how-to 
 ms.date: 10/27/2022 
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Power BI reports for risks analysis and performance ranking
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 Microsoft Dynamics 365 Supply Chain Management provides an integrated risk and performance report, and also two reports that are embedded into the **Supply risk assessment** workspace (supplier performance analysis and risk assessment analysis). All three reports use Power BI and are based on the same metrics as the workspace. Each report offers rich filtering and data slicing options to help you identify the most pressing supplier performance issues and potential risks for planned supply.
 

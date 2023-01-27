@@ -19,7 +19,10 @@ ms.search.validFrom: 2021-04-30
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
+> [!WARNING]
+> Once Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (seen in point of sale as version 9.27). This is due to the migration to .NET Core.
+
+This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services. Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
 
 This article explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
 
@@ -84,7 +87,7 @@ The following table shows the delimiters that can be used in the command line ex
 The new framework for self-service installers has various features and improvements. The new framework currently generates installers only for Modern POS, hardware station, and CSU (self-hosted). It is important to understand the basic command line usage of the sealed installers, which should look similar to that used in the following example. 
  
 ```Console
-<Component Installer Name>.exe install -<Parameter Name> "<Parameter Information>"
+<Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>"
 ```
 
 The installer requires the parameter **install** (or **uninstall** to remove the installation) and any parameters specific to that installation. **Parameter Name** should include any parameters that are needed such as register, CSU URL, or certificate information. **Parameter Information** should include any additional information about the parameters.
@@ -112,7 +115,7 @@ Migration from the old self-service framework component installers to the new fr
 
 ### Before you begin
 
-It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article.
+It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. As an additional requirement, the SQL instance that's used must have both **Windows authentication** and **SQL Server authentication** modes. You can manage and change this configuration under the **Security** subheading in the **Properties** window in SQL Server Management Studio.
 
 > [!NOTE]
 > On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it is possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
@@ -128,7 +131,7 @@ The following command silently installs (or updates) Modern POS. It has the stan
 The following basic command showcases the available options if an installation is requested. It is highly recommended that this command is used when first testing or using the installer.
 
 ```Console
-CommerceModernPOS.exe -help install
+CommerceModernPOS.exe help install
 ```
 
 > [!NOTE]
@@ -137,10 +140,10 @@ CommerceModernPOS.exe -help install
 The following command specifies all the parameters that should be used during device activation after the Modern POS application is installed. This example uses the **Houston-3** register, which is a commonly used value in Dynamics 365 Commerce demo data.
 
 ```Console
-CommerceModernPOS.exe install -Register "Houston-3" -Device "Houston-3" -RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
+CommerceModernPOS.exe install --Register "Houston-3" --Device "Houston-3" --RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
 ```
 
-The following command specifies the parameters that should be used to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used.
+The following command specifies the parameters that should be used to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required. We don't recommend that you skip checks when you install in production.
 
 ```Console
 CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml" 
@@ -161,7 +164,7 @@ You can mix and match these concepts to achieve the installation results that yo
 It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this article. There is no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it is highly recommended that you run the following command:
 
 ```Console
-CommerceHardwareStation.exe -help install
+CommerceHardwareStation.exe help install
 ```
 
 ### Examples of silent deployment
@@ -175,7 +178,7 @@ The following command silently installs (or updates) hardware station. It has th
 The following basic command runs the executable file installer.
 
 ```Console
-HardwareStation.exe install -Port 443 -StoreSystemAOSURL "https://MyDynamics365CommerceURL.dynamics.com/" -StoreSystemChannelDatabaseID "Houston" -SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers"
+HardwareStation.exe install --Port 443 --CSUURL "https://MyDynamics365CommerceURL.dynamics.com/" --StoreSystemChannelDatabaseID "Houston" --CertThumbprint "MySSLCertificateThumbprintOftenHasNumbers"
 ```
 
 > [!NOTE]
@@ -184,10 +187,10 @@ HardwareStation.exe install -Port 443 -StoreSystemAOSURL "https://MyDynamics365C
 The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation. 
 
 > [!NOTE]
-> Skipping checks is not recommended without thorough testing ahead of time, or in development situations.
+> We don't recommend that you skip checks unless you do thorough testing ahead of time, or except in development situations. We don't recommend that you skip checks when you install in production.
 
 ```Console
-HardwareStation.exe install -SkipFirewallUpdate -SkipOPOSCheck -SkipVersionCheck -SkipURLCheck -Config "HardwareStation.Houston.xml"
+HardwareStation.exe install --SkipFirewallUpdate --SkipOPOSCheck --SkipVersionCheck --SkipURLCheck --Config "HardwareStation.Houston.xml"
 ```
 
 As is customary, it is common to mix and match these concepts to achieve the installation results that you want.
@@ -197,7 +200,7 @@ As is customary, it is common to mix and match these concepts to achieve the ins
 When testing this installer for the first time, it is highly recommended to that you run the following command:
 
 ```Console
-CommerceStoreScaleUnitSetup.exe -help install
+CommerceStoreScaleUnitSetup.exe help install
 ```
 
 ### Before you begin
@@ -212,29 +215,29 @@ This section shows examples of commands that are used to install CSU (self-hoste
 
 The following command silently installs (or updates) CSU (self-hosted). It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present.
+Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
-CommerceScaleUnit.exe install -port 446 -SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" -RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" -AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" -RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" -CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" -RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate -Config "Contoso.StoreSystemSetup.xml"
+CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --Config "Contoso.StoreSystemSetup.xml"
 ```
 
 > [!NOTE]
 > A configuration file is still required for CSU (self-hosted).
 
-The following command is a more thorough command that runs the executable file installer with some alternative parameters.
+The following command is a more thorough command that runs the executable file installer with some alternative parameters. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
-CommerceScaleUnit.exe install -Port 446 -SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" -AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" -RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" -CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" -RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate -Verbosity 0 -Config "Contoso.StoreSystemSetup.xml"
+CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --Verbosity 0 --Config "Contoso.StoreSystemSetup.xml"
 ```
 
 The following command specifies parameters required to skip the prerequisite checks during a standard installation. 
 
 > [!NOTE]
-> Skipping checks is not recommended without thorough testing ahead of time, or in development situations.
-
+> - We don't recommend that you skip checks unless you do thorough testing ahead of time, or except in development situations. We don't recommend that you skip checks when you install in production.
+> - Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
 
 ```Console
-CommerceScaleUnit.exe installer -skipscaleunithealthcheck -skipcertcheck -skipaadcredentialscheck -skipschannelcheck -skipiischeck -skipnetcorebundlecheck -skipsqlservercheck -skipnetframeworkcheck -skipversioncheck -skipurlcheck -Config "Contoso.StoreSystemSetup.xml" -SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" -RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" -AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" -RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" -CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" -RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" -TrustSqlServerCertificate
+CommerceScaleUnit.exe install --skipscaleunithealthcheck --skipcertcheck --skipaadcredentialscheck --skipschannelcheck --skipiischeck --skipnetcorebundlecheck --skipsqlservercheck --skipnetframeworkcheck --skipversioncheck --skipurlcheck --Config "Contoso.StoreSystemSetup.xml" --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com"
 ```
 
 You can mix and match these concepts to achieve the installation results that you want.

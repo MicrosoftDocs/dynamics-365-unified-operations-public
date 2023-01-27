@@ -70,7 +70,7 @@ You assign roles to users on the **Users** page (**System administration \> User
 
 You can use the **Role to user assignment** report or the **Assign users to role** page to view all users who are assigned a specific role.
 
-![Assign users to role page.](media/Assign-roles-to-user.png)
+![Assign users to role page.](media/Assign-users-to-roles.png)
 
 ## Enabled users
 

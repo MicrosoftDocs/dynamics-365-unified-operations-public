@@ -8,14 +8,13 @@ ms.search.form:
 ms.topic: how-to 
 ms.date: 10/27/2022 
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Configure Supply risk assessment
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 This article describes how to enable and set up Supply risk assessment.
 

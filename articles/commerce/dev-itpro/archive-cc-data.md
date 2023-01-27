@@ -2,7 +2,7 @@
 title: Archive credit card transaction data
 description: This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
 author: BrianShook
-ms.date: 12/15/2022
+ms.date: 01/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,6 @@ ms.search.industry: Retail
 # Archive credit card transaction data
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card payment tokens. This job is available as of the Commerce version 10.0.17 release.
 
@@ -59,7 +58,7 @@ The **Parameters** section of the **Archive credit card transaction data** flyou
   - **Minimum transaction age in days** - Setting this parameter is required. Enter the age, in days, of credit card authorizations that will be subject to archiving. The value you enter should be the time period that customers can have refunds linked to their original credit card authorization. For example, if you set the field to 365 days, a return for a transaction that is 366 days old might still be eligible for refund, depending on the merchant's policies. However, because the data that is required to do a linked refund won't be available in Dynamics after it's archived, any refund that is processed will have to be a standalone refund.
   - **Delete data without archiving** - When this parameter is set to **Yes**, Commerce will delete (not archive) the payment tokens and signature capture data for all transactional records that meet the criteria of minimum transaction age in days.
   - **Corresponding transaction date** - This parameter is a reference field that displays the date in the past that currently corresponds to the value of the **Minimum transaction age in days** parameter. Records older than the date shown will be affected by the job.
-  - **Use compression** - When this parameter is set to **Yes**, Commerce compresses tokens to save on storage space. For more information, see [Further storage management with token compression](#further-storage-management-with-token-compression) below.
+  - **Use compression** - When this parameter is set to **Yes**, Commerce compresses tokens to save on storage space. For more information, see [Further storage management with token compression](#further-storage-management-with-token-compression) below. This parameter is available in Commerce versions 10.0.31 and higher.
 
 ### Run in the background section
 
@@ -104,7 +103,7 @@ To enable the **Compress payment tokens** feature in headquarters, follow these 
 1. Under **All**, search for the **Compress payment tokens** feature.
 1. Select the feature, and then select **Enable now** in the properties pane.
 
-Once the **Compress payment tokens** feature is enabled, the **Use compression** property in the **Archive credit card transaction data** parameters section can be set to **Yes**.
+Once the **Compress payment tokens** feature is enabled, the **Use compression** parameter in the **Archive credit card transaction data** parameters section can be set to **Yes**. (The **Use compression** parameter is available in Commerce versions 10.0.31 and higher).
 
 ## Additional resources
 

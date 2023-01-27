@@ -85,6 +85,16 @@
       "recommendations": "true"
     },
     "fileMetadata": {
+      "audience": {
+        "supply-chain/**/**.md": [
+          "Application User"
+        ]
+      },
+      "ms.search.region": {
+        "supply-chain/**/**.md": [
+          "Global"
+        ]
+      },
       "search.app": {
         "finance/**/*.md": [
           "FinanceAndOperations"

@@ -4,7 +4,7 @@
 title: Dispose of a fixed asset as scrap
 description: The article describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
 author: moaamer
-ms.date: 08/14/2019
+ms.date: 01/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -46,10 +46,26 @@ The article describes the process of eliminating transactions for a fixed asset 
 > [!NOTE]
 > We recommend that you work closely with your company's chief financial officer (CFO) or controller to identify the correct accounts that should be used for each transaction type, and also to verify that the disposal process and the transactions that it generates update those accounts correctly.
 
-Before you dispose of a fixed asset as scrap, you must create ledger accounts that are associated with the asset's acquisition value, depreciation for the current year, depreciation for previous years, and the asset's NBV. The fixed asset transaction types are listed on the **Fixed assets posting profile** page. Go to **Fixed assets \> Setup \> Fixed asset posting profiles**, and then, on the **Disposal** FastTab, select **Scrap** in the field above the grid. The following illustration shows the list of fixed asset transaction types on the **Fixed asset posting profiles** page.
+Before you dispose of a fixed asset as scrap, you must create ledger accounts that are associated with:
+ - the asset's acquisition value 
+ - depreciation for the current year 
+ - depreciation for previous years 
+ - the asset's NBV 
+
+The fixed asset transaction types are listed on the **Fixed assets posting profile** page. Go to **Fixed assets \> Setup \> Fixed asset posting profiles**, and then, on the **Disposal** FastTab, select **Scrap** in the field above the grid. The following illustration shows the list of fixed asset transaction types on the **Fixed asset posting profiles** page.
 
 
 [![Disposing of an asset as scap, Fig. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+
+The disposal posting profile has two ways to account for the acquisition values during the disposal process:
+ - The lump sum of all acquisitions that has a **Acquisition value** posting type
+ - Differentiate between acquisitions this or prior years that have the **Acquisitions this** and **Acquisition prior years** posting types
+
+-	**Acquisition value** combines all acquisition transactions in all times in one transaction line and disposal transaction post it to the corresponding account to acquisition value in the posting profile. This could be used if you don't want to break down the acquisitions of this year and prior years. In this case, set the **Post disposal transactions in detail** option on the **Fixed assets parameters** page to **No**.  
+-	**Acquisition this year** and **Acquisition prior years** break down the acquisition values when there are different acquisitions posted to the disposed asset this year or prior years. Set the **Post disposal transactions in detail** option on the **Fixed assets parameters** page to **Yes**, to validate against detailed posting types in the posting profile.
+
+> [!NOTE]
+>You can’t define the both options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting. 
 
 For the following example, a fixed asset was acquired on January 1, 2018, and it will be scrapped on March 31, 2019.
 
@@ -67,7 +83,7 @@ In this example, the fixed asset was acquired and was depreciated for 15 months,
 [![Fixed asset depreciation example.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
-To create a disposal journal, go to **Fixed assets \> Journal entries \> Fixed assets journal**, and then, on the Action Pane, select **Lines**. Select **Disposal – scrap**, and then select a fixed asset ID. To fully dispose of the asset, don't enter a value in either the **Debit** field or the **Credit** field.
+To create a disposal journal, go to **Fixed assets \> Journal entries \> Fixed assets journal**, on the Action Pane, select **Lines**. Select **Disposal – scrap**, and select a fixed asset ID. To fully dispose of the asset, don't enter a value in either the **Debit** field or the **Credit** field.
 
 [![Fixed assets journal.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 

@@ -4,10 +4,11 @@ description: This article describes assets and work orders in Asset Management.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 ms.topic: conceptual
 ms.date: 12/08/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

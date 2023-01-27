@@ -8,14 +8,13 @@ ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSM
 ms.topic: how-to
 ms.date: 10/14/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Example scenario – Pack containers with the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 This article provides an example scenario that shows how to set up a Warehouse Management mobile app packing flow, and how to use the flow in the Warehouse Management mobile app to process a simple outbound sales order by packing a container and closing it. The scenario takes advantage of the [detour](warehouse-app-detours.md) and [data inquiry](warehouse-app-data-inquiry.md) capabilities of the mobile app. For more information about the feature that enables this functionality, see [Pack containers using the Warehouse Management mobile app](warehouse-app-packing-containers.md).
 

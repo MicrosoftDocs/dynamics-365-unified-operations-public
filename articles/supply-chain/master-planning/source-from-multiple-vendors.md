@@ -8,14 +8,13 @@ ms.search.form: MpsMultiSourcePolicy, MpsMultiSourcePolicyAssignment
 ms.topic: how-to
 ms.date: 12/02/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Source products and materials from multiple vendors
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../../commerce/includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 Diversification of the supply network helps businesses be agile and respond to changes. One of the most common ways to diversify is to divide the supply of a specific product among different vendors by assigning a supply percentage to each of them. For example, if one of your products has both a main vendor and a secondary vendor, the usual split might be 80/20 or 70/30. Alternatively, you might divide equally among three different vendors in a 33/33/34 split.
 
@@ -134,6 +133,22 @@ To view and compare target and actual vendor allocations, follow these steps.
 
 This feature is useful if, for example, you want to determine whether your Purchasing department is firming orders as master planning suggests or making changes. (If purchasers are following master planning's suggestions, the actual allocation will be close to the current allocation. However, if they're making changes, actual allocations might be quite different than the current allocation.)
 
+### Example of target vs. actual vendor allocations
+
+The following table shows an example of how a product that has a multisource policy associated with it could be set up on the **Multisource policy assignments** page.
+
+| Vendor account | Total quantity | Current allocation (%) | Target allocation (%) | Allocation deviation (%) |
+| --- | --- | --- | --- | --- |
+| 1001 | 350 | 63.64 | 70 | -9.09 |
+| 1002 | 200 | 36.36 | 30 | 21.21 |
+
+Where:
+
+- **Total quantity** – Represents the vendor's total sourced quantity.
+- **Current allocation (%)** – Is equal to (Vendor's total sourced quantity &divide; Total accumulated quantity) &times; 100%. This value indicates how much of all the sourced quantity has been purchased from this vendor as a percentage of the total.  
+- **Target allocation (%)** – Is the target allocation as defined by the multisource policy for the vendor.
+- **Allocation deviation (%)** – Is equal to ((Current allocation &minus; Target allocation) &divide; Target allocation) &times; 100%.
+
 ## How master planning suggests a vendor for each planned order
 
 Each time that master planning suggests a vendor for a planned purchase order, it selects the vendor that will bring the total vendor allocations for the current period closest to the target allocation, as defined by the relevant multisource policy assignment and minimum vendor quantities.
@@ -180,7 +195,7 @@ Here's an explanation of the table:
     - **Qty B** = Accumulated quantity for vendor B
     - **A%** = (*Qty A* &divide; *Total accumulated quantity*) &times; 100%
     - **B%** = (*Qty B* &divide; *Total accumulated quantity*) &times; 100%
-    - **Deviation** = ( \| *A%* – *Vendor A target* \| + \| *B%* – *Vendor B target* \| ) &divide; 2
+    - **Deviation** = ( \| *A%* &minus; *Vendor A target* \| &plus; \| *B%* – *Vendor B target* \| ) &divide; 2
 
 - The "Total accumulate quantity" column shows the total quantity that is ordered after each new purchase order.
 - All planned orders in the table occur during the same period, as defined by the relevant policy and policy assignment.
@@ -240,7 +255,7 @@ For vendor A, the target allocation is 80 percent. For vendor B, it's 20 percent
 <td>100</td>
 <td>50%</td>
 <td>50%</td>
-<td>25%</td>
+<td>30%</td>
 <td>200</td>
 </tr>
 <tr>
@@ -262,6 +277,6 @@ For vendor A, the target allocation is 80 percent. For vendor B, it's 20 percent
 </tbody>
 </table>
 
-\* 100 accumulated + current demand
+\* 100 accumulated &plus; 100 current demand
 
-\*\* Average of (100 – 80), (20 – 0) = average (20, 20) = 20
+\*\* ( \| 100% &minus; 80% \| &plus; \| 20% &minus; 0% \| ) &divide; 2 = 20%

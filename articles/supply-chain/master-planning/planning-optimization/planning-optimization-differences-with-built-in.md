@@ -2,7 +2,7 @@
 title: Differences between Planning Optimization and the deprecated master planning engine
 description: This article lists features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 01/09/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -37,6 +37,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Extended data types (EDTs) | Planning Optimization doesn't support changes to the precision of EDTs. This means this process isn't officially supported and isn't guaranteed to work. |
 | Safety stock fulfillment | Planning Optimization always uses a **Fulfill minimum** of  *Today's date + procurement time*. This prepares the system to use a simplified planning setup in the future, and provides an actionable result. If the procurement time isn't included for safety stock, planned orders that are created for low on-hand inventory will always be delayed because of the lead time. This behavior can cause significant noise and unwanted planned orders. The best practice is to change the setting to use *Today's date + procurement time*. Update master data to avoid warnings. |
 | Copy static to dynamic plan | Planning Optimization doesn't copy static plans to dynamic plans, regardless of the setting on the **Master planning parameters** page. In general, this operation is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. |
+| Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days see [Delay tolerance (negative days)](delay-tolerance.md) |
 
 ## Additional resources
 

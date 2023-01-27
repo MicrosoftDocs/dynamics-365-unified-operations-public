@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Inventory positioning
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 Strategic inventory positioning involves identifying decoupling points in your supply chain, where you can build up inventory on hand. This approach is mainly used to help compress lead times and absorb shocks to your supply chain. It lets you mitigate the "bullwhip effect," because demand variability isn't passed all the way down the supply chain. (The *bullwhip effect* refers to how small fluctuations in demand at the retail level can cause progressively larger fluctuations in demand at the wholesale, distributor, manufacturer, and raw material supplier levels.)
 
