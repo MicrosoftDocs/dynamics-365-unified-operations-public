@@ -2,7 +2,7 @@
 title: Sign the MPOS .appx file with a code signing certificate
 description: This article explains how to sign MPOS with a code signing certificate.
 author: josaw1
-ms.date: 11/17/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -16,6 +16,7 @@ ms.custom: 28021
 # Sign the MPOS .appx file with a code signing certificate
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
 
