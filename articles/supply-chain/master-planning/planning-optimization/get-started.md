@@ -41,7 +41,14 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 
 - Your system must be set up for Power Platform integration. For more information, see [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
-- Your user should be a Power platform admin account and should have an access mode of **Read-Write**. If you see failure on installation of Planning Optimization Add-in regarding missing user permissions, please check your user has a license assigned from [Microsoft 365 admin center](https://admin.microsoft.com) and make sure setting access mode to **Read-write** under Client Access License (CAL) at [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information about license and access mode for Power Platform, see [Create a Power Platform admin account](https://learn.microsoft.com/en-us/power-platform/admin/global-service-administrators-can-administer-without-license#create-a-power-platform-admin-account).
+- You must sign into Power Platform using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
+    1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+    1. Open the environment where want to install the add-in.
+    1. Go to **Settings \> Users** and select your user account from the list to see its details.
+    1. From your user details page, select the **Client Access License (CAL) information** link.
+    1. On the **Client Access License (CAL) information** page, make sure that **Access Mode** is set to *Read-Write*.
+  
+    For more information about licenses and access modes for the Power Platform, see [Create a Power Platform admin account](/power-platform/admin/global-service-administrators-can-administer-without-license#create-a-power-platform-admin-account).
 
 ### Enable the Planning Optimization license
 
