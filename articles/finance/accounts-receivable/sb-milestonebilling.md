@@ -112,7 +112,7 @@ To edit milestone allocation on a billing schedule line, follow these steps.
 4. Select **Process**. The milestone template lines are automatically added to the billing schedule lines.
 
 > [!Note]
-> A feature was added in 10.0.31 which allows a Billing schedule line with Item type of Milestone to set **Renew automatically** to Yes. 
+> A feature was added in Dynamics 365 Finance version 10.0.31 that allows a **Billing schedule** line with **Item type** of **Milestone** to set **Renew automatically** to **Yes**. 
 
 ## Milestone allocation fields
 
