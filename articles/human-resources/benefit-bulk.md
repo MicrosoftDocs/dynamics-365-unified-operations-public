@@ -49,6 +49,7 @@ The ‘Filter by’ options:
 
 |Filter option|  More information|
 |--------------|------------------|
+
 |Period|The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit plans.|
 |Legal entity|	The plans in the grid filtered by the Legal entity selected in this field.|
 |Plan validity|	The plans in the grid are filtered by the active, expired, future status selected in the grid. You can multiselect the validity.|
