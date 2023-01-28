@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 08/29/2022
+ms.date: 01/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
@@ -114,7 +114,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next record (outside a grid)      | Ctrl+Down arrow   |
 | Move to the first record (outside a grid)     | Ctrl+Home         |
 | Move to the last record (outside a grid)      | Ctrl+End          |
-| Close the page (select the Back button)<br><br>**Note:** If there is a popup window (tooltip, date picker, dropdown, etc.) open, the first use of Esc will dismiss the popup.       | Esc               |
+| Close the page (select the Back button)<br><br>**Note:** If there is a popup window (tooltip, date picker, dropdown) open, the first use of Esc will dismiss the popup.       | Esc               |
 | Close the page with explicit save             | Shift+Esc         |
 | Close the page discarding any unsaved changes | Alt+Shift+Q       |
 
