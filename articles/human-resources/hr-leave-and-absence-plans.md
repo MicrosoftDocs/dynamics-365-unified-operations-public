@@ -149,7 +149,7 @@ If the feature **Use full time equivalency** is enabled, Human Resources uses th
 The FTE calculation would take place based on the value at the time of the accrual and if the FTE value is updated between the current accrual and the next accrual, there will be no change in the leave accrual value. The change in the FTE value will be considered for the next leave accrual.
 
 >[!NOTE]
->You can only use this feature if the **Configure multiple leave types for a single leave and absence plan** feature is enabled.  
+>This feature is available when the **Configure multiple leave types for a single leave and absence plan** feature is enabled.  
 
 For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5.  
 
