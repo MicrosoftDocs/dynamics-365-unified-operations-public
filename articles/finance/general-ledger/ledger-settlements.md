@@ -4,7 +4,7 @@
 title: Ledger settlements
 description: This article explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: kweekley
-ms.date: 11/21/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  LedgerTransSettlement
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom:
 # ms.assetid:
@@ -104,7 +104,7 @@ Select **Unmark for selected users** to unmark ledger settled transactions for a
 Select **Unmark all transactions** to unmark all ledger settled transactions for all users and all legal entities. This action is available for the Administrator role.
 
 ## Review cross-year settlements
-Beginning in Microsoft Dynamics 365 Finance release 10.0.29, you can identify vouchers that were ledger settled across fiscal years. The **Review cross-year settlements** page allows you to view and unsettle ledger transactions. On the **Ledger settlements** page, select **Review cross-year settlement**. The inquiry page will show all transactions from other fiscal years that are settled against transactions that were posted in the fiscal year that you specified in the **Fiscal year** drop list field.
+Beginning in Microsoft Dynamics 365 Finance release 10.0.29, you can identify vouchers that were ledger settled across fiscal years. The **Review cross-year settlements** page allows you to view and unsettle ledger transactions. On the **Ledger settlements** page, select **Review cross-year settlement**. The **Inquiry** page will show all transactions from other fiscal years that are settled against transactions that were posted in the fiscal year that are specified in the **Fiscal year** drop list field.
 
 It is important to export the data to Excel, prior to unsettling records. Upon selecting the **Unsettle marked records** action, two warning messages are shown to ensure that the transaction details are exported to Excel before the transactions are unsettled. If you accidentally unsettle ledger transactions before you send the details to Excel, there's no way to reverse the unsettlement.
 
