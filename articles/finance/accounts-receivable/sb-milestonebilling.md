@@ -4,7 +4,7 @@
 title: Milestone templates
 description: This article explains how to set up the milestone billing functionality in Subscription billing. 
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 01/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
