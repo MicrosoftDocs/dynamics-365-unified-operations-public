@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.30
 This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.32. This version has a build number of 10.0.XXXX and is 
 available on the following schedule:
 
-- **Preview of release:** January 2022
+- **Preview of release:** January 2023
 - **General availability of release (self-update):** February 2023
 - **General availability of release (auto-update):** March 2023
 
@@ -51,7 +51,7 @@ article was initially published.
 | Benefit bulk update page redesign | This feature simplifies the benefit administrator's experience by adding various data pivots, optimizing the data organization on the page, and adding the capability to perform quick bulk validations and actions. | Preview |
 | Benefits compare selections | This feature provides the capability to perform quick validations by capturing the changes in the benefit plans selections, coverage options, coverage amounts, or dependents, and beneficiary information that has changed since the previous period. | Preview |
 | Allow proration for benefit plan contributions | The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods, up to defined maximum annual contribution. | Preview |
-| Allow proration for benefit plan contributions | The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods, up to defined maximum annual contribution. | Preview, and the feature can't be turned off after it's turned on |
+
 
 ## Feature enhancements included in this release
 
@@ -110,7 +110,7 @@ The following table lists the features that are turned on by default or are now 
 
 ## Entities and entity templates added in this release
 
-Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. See [Human Resources data entities and templates](data-entity.md).
+Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. See [Human Resources data entities and templates](data-entity.md) for more information.
 
 ## Additional resources
 
