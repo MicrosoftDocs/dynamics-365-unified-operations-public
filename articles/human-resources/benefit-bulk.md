@@ -48,17 +48,12 @@ worker benefit plan page for editing a specific worker plan detail.
 The ‘Filter by’ options:
 
 |Filter option|  More information|
-|--------------|------------------|
-
-|Period|The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit plans.|
+|-----------------------------------|--------------------------|
+|Period | The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit plans.|
 |Legal entity|	The plans in the grid filtered by the Legal entity selected in this field.|
 |Plan validity|	The plans in the grid are filtered by the active, expired, future status selected in the grid. You can multiselect the validity.|
 |Status|	You can filter the benefit plan records based on the status. You can multiselect the status.
-•	**Selected**: Displays the plans that have **selected** status.
-•	**Waived**: Displays the plans that have **waived** status.
-•	**Checked out**: Displays the plans that are checked out. 
-•	**Confirmed**: Displays the plans that are confirmed. 
-•	**Not selected/waived**: Displays the plans that are not ‘selected’ or waived.|
+<ul><li>**Selected**: Displays the plans that have **selected** status.</li><li>**Waived**: Displays the plans that have **waived** status.</li><li>**Checked out**: Displays the plans that are checked out. </li><li>**Confirmed**: Displays the plans that are confirmed. </li><li>**Not selected/waived**: Displays the plans that are not ‘selected’ or waived.</li></ul>    |
 |Apply|	Click to apply the filter.|
 |Reset|	Click to reset the filter options.|
 |Advance filter|	Click to access more filter options.|
