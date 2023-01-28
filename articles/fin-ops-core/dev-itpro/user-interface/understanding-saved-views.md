@@ -2,12 +2,12 @@
 title: Build forms that fully utilize saved views
 description: This article explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
-ms.date: 02/08/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
@@ -104,7 +104,7 @@ When enabled, the default view query will be attempted to be merged with the men
 #### Manually handling query merge failures
 As part of the default view rollout during form load, the query associated with the default view goes through a merge process with the default form query (or the default menu item query if the **EnableSavedViewQueryPriority** method has been invoked). If this merge fails, this indicates an incompatibility from the system perspective between the view query and the form (or menu item) query. This can happen, for example, if the view adds a filter on a field that already has a hidden or locked filter applied.
 
-As the form, however, may have additional context that allows this incompatibility to be resolved and the view query to be correctly as expected by the user, a new extension point has been added in version 10.0.32 to give developers a fallback method for making these adjustments when needed. Specifically, if the standard query merging fails, developers can replace the implementation of the **OnFailureQueryPersonalizationApply** method to make the needed modifications to the target query. The `_sourceQuery` parameter provides the view query, and the `_targetQuery` represents the query that will be executed when the view with a query personalization is loaded. 
+The form may have additional context that allows this incompatibility to be resolved and the view query to be correctly as expected by the user, a new extension point has been added in version 10.0.32 to give developers a fallback method for making these adjustments when needed. Specifically, if the standard query merging fails, developers can replace the implementation of the **OnFailureQueryPersonalizationApply** method to make the needed modifications to the target query. The `_sourceQuery` parameter provides the view query, and the `_targetQuery` represents the query that will be executed when the view with a query personalization is loaded. 
 
     [Replaceable]
     public boolean OnFailureQueryPersonalizationApply(Query _sourceQuery, Query _targetQuery)
