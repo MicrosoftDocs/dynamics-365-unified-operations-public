@@ -53,7 +53,7 @@ In versions before 10.0.29, the total is the only supported calculated value. Ho
 
 A single column can show only one type of calculated value. However, each column in the grid can be configured to show a different type of calculated value. 
 
-In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be displayed in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later where the calculated value for the column is updated to show the calculated value based on the values in the selected row.   
+In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be displayed in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later, where the calculated value for the column is updated to show the calculated value based on the values in the selected row.   
 
 ### Showing the grid footer
 There is a footer area at the bottom of every tabular grid in finance and operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
