@@ -46,6 +46,7 @@ Administrators can identify which plan records have changed as compared to the p
 worker benefit plan page for editing a specific worker plan detail.
 
 The ‘Filter by’ options:
+
 |Filter option|  More information|
 |--------------|------------------|
 |Period|The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit plans.|
