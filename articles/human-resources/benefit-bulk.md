@@ -4,7 +4,7 @@
 title: The Benefit bulk update page 
 description: This article describes features of the Benefit bulk update page. 
 author: twheeloc
-ms.date: 01/23/2023
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ The Benefit bulk update page helps the benefit administrators to view, validate 
 Once the employees select their benefit plans using Employee self service, the Benefits administrator validates the selections and takes the needed action such as 
 confirmation, cancelation, send E-mail to request evidence or remove the selection. Administrators can also make selections and corrections on behalf of the employees. 
 
-benefit bulk update 1
+![Benefit bulk update.](./media/benefit-bulk-update1.png)
 
 To help the administrators validate the bulk selections and take quick actions, various filters and grouping are available on the page. The quick filters and groupings
 based on period, plans, plan types, program, bundles, plan validity and status help select the desired records and then take bulk actions on selected records. 
@@ -46,9 +46,9 @@ Administrators can identify which plan records have changed as compared to the p
 worker benefit plan page for editing a specific worker plan detail.
 
 The ‘Filter by’ options:
-
-|Period|The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit 
-plans.|
+|Filter option|  More information|
+|--------------|------------------|
+|Period|The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit plans.|
 |Legal entity|	The plans in the grid filtered by the Legal entity selected in this field.|
 |Plan validity|	The plans in the grid are filtered by the active, expired, future status selected in the grid. You can multiselect the validity.|
 |Status|	You can filter the benefit plan records based on the status. You can multiselect the status.
@@ -73,8 +73,7 @@ To edit the information, click **Edit**. When the **Edit** button is clicked, th
 (as permitted by your configurations). 
 
 >[!NOTE]
->In the **Worker benefit plan**, the employee and employer amounts are not editable when these amounts are calculated by a rate. If you want the administrators to be able 
-to edit these fields, select the option **Allow administrators to modify calculated rates** on the **Benefits management** page. 
+>In the **Worker benefit plan**, the employee and employer amounts are not editable when these amounts are calculated by a rate. If you want the administrators to be able to edit these fields, select the option **Allow administrators to modify calculated rates** on the **Benefits management** page. 
 
 ### Benefits compare plans (Preview feature)
 The Benefit administrators often need to validate the employees’ benefits selections. Administrators validate the changes in the plan selections, coverage options and 
@@ -85,23 +84,19 @@ period).
 The **Compare plan** button is available on **Worker benefit plan** page and the **Benefit bulk update** page. In the **Bulk update** page, Administrators can 
 select (or multiselect) the record(s) and click **Compare plan** and open the **Worker benefit plans** page. 
 
-worker-benefit2
+![Work benefit plan](./media/worker-benefit2.png)
 
 The left grid, the **As of period** is defaulted as the current period. However, you can change the period and date. If you select a date that falls in a different 
 period than current, the period value changes to match with the date selection. The plans in the grid underneath are the ‘as on date (and period)’ either defaulted or 
 chosen. Period is the benefit period pertaining to the date selected. You select a date within the current or past period. The date on the left grid must always be
 greater than the date on the right grid. 
 
-The **Compared against** grid or the right grid pertains to the previous period and the benefits data is not editable in this grid. In the **Period** drop down, last day of 
-the previous period defaulted. However, you have the option to choose the date. The date selected in the right grid must be less than the date selected in the left 
-grid. 
+The **Compared against** grid or the right grid pertains to the previous period and the benefits data is not editable in this grid. In the **Period** drop down, last day of the previous period defaulted. However, you have the option to choose the date. The date selected in the right grid must be less than the date selected in the left grid. 
 
-You can choose different date ranges within a benefit period to compare the benefit plan records (as pictured above). This can be useful while validating
-the pre and after Life-event benefit plan selections. 
+You can choose different date ranges within a benefit period to compare the benefit plan records (as pictured above). This can be useful while validating the pre and after Life-event benefit plan selections. 
 
-The records that have changed as compared to the previous period (or date range) have the change icon in the **Changed** column. The change icon is triggered in the left 
-grid if there is any change in the Plan type, Plan option, Coverage option, Coverage amount, Contribution amount, Dependent and/or Beneficiary information as compared 
-against the previous period (the right grid). If the employee does NOT select a plan that was selected in the previous period, the change icon is triggered. 
+The records that have changed as compared to the previous period (or date range) have the change icon in the **Changed** column. The change icon is triggered in the left grid if there is any change in the Plan type, Plan option, Coverage option, Coverage amount, Contribution amount, Dependent and/or Beneficiary information as compared against the previous period (the right grid). If the employee does NOT select a plan that was selected in the previous period, the change icon is triggered. 
+
 The **Change** icon alert is displayed in the **Bulk update** page and the **Worker benefit plan** page opened through the **Edit** button on the **Bulk update** page.
 It is also available on the **Worker benefit plan** page when the **Compare plan** toggle is selected. 
 
