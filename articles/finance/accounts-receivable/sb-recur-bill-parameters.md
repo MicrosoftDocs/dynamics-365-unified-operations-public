@@ -110,8 +110,7 @@ Use the **Sequence number** tab on the **Recurring contract billing parameters**
 
 Use the **Billing schedule group** page to create a billing schedule group for Recurring contract billing. (**Recurring contract billing > Setup > Billing schedule group**). When a new billing schedule is created, and a billing schedule group is applied to it, the values that are defined on the **Billing schedule group** page are entered as default values for the billing schedule. You can change any of the default values for the specific billing schedule that you create. You can set up multiple billing schedule groups and then assign one of them as the default billing schedule group on the **Recurring contract billing parameters** page.
 
-To create a billing schedule group for Recurring contract billing, follow these steps.
-
+To create a billing schedule group for Recurring contract billing, follow these steps:
 1. On the **Billing schedule group** page, select **New** to create a billing schedule group.
 2. In the **Billing schedule group** field, enter a unique identifier.
 3. In the **Description** field, enter a description.
@@ -134,6 +133,7 @@ To create a billing schedule group for Recurring contract billing, follow these 
 8. Set the **Invoice separately** option to **Yes** to create a combination of consolidated invoices and separate invoices for the same customer. For example, a customer has five billing schedules. Three of them will be consolidated on a single invoice, but each of the other two requires a separate invoice. Set the option to **No** to create only one consolidated invoice for the customer.
 9. Set the **Renew automatically** option to **Yes** to automatically renew the recurring billing schedule for the next billing period when the invoice is created. Set it to **No** to manually renew the billing schedule. In the **Lines to add per renewal** field, specify how many lines to add for each renewal.
 10. Set the **Escalation** option to **Yes** to apply *escalations* (price increases) to the billing schedules associated with this billing schedule group.
+
 
 ## Item group setup
 
