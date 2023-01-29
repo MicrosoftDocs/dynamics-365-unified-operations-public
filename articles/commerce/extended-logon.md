@@ -55,7 +55,18 @@ After extended logon is configured, and a bar code or magnetic stripe is assigne
 
 ## Extend extended logon
 
-The out-of-box implementation of the extended logon capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. It was originally intended as a sample that developers could customize to meet the requirements of a specific implementation. (For example, it could be customized to support more characters or use different security verification rules.) For detailed information about how to build extensions for extended logon, see [Extending the extended logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+The 1st consideration of extending the extended logon is to enhance security as the physical staff card or bar code could be lost and easy to be duplicated. The 2nd consideration is to provide flexibility to the customer, for example, customers are able to determine proper length of credential and credential Id per business requirement. In [Extended Logon Sample](https://TBD), a more secure end-to-end extension solution with 2nd factor of authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended logon in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
+
+### POS extensions
+For POS extensions, the key is to collect PIN number from an input dialog right after the user swipes card or scans barcode, and then pass on the PIN number to the corresponding requests. An input dialog **PinInputDialog** and 4 pre-triggers **PreEnrollUserCredentialsTrigger**, **PreLogOnTrigger**, **PreUnlockTerminalTrigger** and **PreElevateUserTrigger** are introduced.
+
+### Commerce Runtime extensions
+There are several important service requests that require customizations.
+**OverrideUserCredentialServiceRequest** is used in both user credential enroll and logon token validation scenario, which is used to generate a new credential based on old one and extra parameters dictionary, where PIN number is contained. Please note that PIN number and the original credential will not be persisted in the data store. Instead, the hashed value of the new credential will be persisted.
+
+**GetUserAuthenticationCredentialIdServiceRequest** and **GetUserEnrollmentDetailsServiceRequest** have some overlapping logic on calculating the credential id based on user credential and extra parameters dictionary. Furthermore, minimum credential length validation can be also performed here. The out-of-box implementation of the extended logon capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. This behavior can be easily changed in these two service requests.
+
+For detailed information about how to build extensions for extended logon, see [Extended Logon Sample](https://TBD).
 
 The logon service can also be extended to support additional extended logon devices, such as palm scanners. For more information, see the [POS extensibility documentation](dev-itpro/pos-extension/pos-extension-overview.md).
 
