@@ -47,7 +47,7 @@ article was initially published.
 |----|----|----|
 | Inclusion of weekends and holidays | This feature gives organizations the flexibility to include weekends and holidays as part of employee leave requests for specific leave types. | Preview |
 | Hide leave balances | This feature gives organizations the flexibility to hide leave balances for specific leave types. | Preview |
-| Absence Manager to manage leave of absence requests | This feature helps absence managers approve, deny, or delegate leave of absence requests. | Preview |
+| Absence Manager manages leave of absence requests | This feature helps absence managers approve, deny, or delegate leave of absence requests. | Preview |
 | Benefit bulk update page redesign | This feature simplifies the benefit administrator's experience by adding various data pivots, optimizing the data organization on the page, and adding the capability to perform quick bulk validations and actions. | Preview |
 | Benefits compare selections | This feature provides the capability to perform quick validations by capturing the changes in the benefit plans selections, coverage options, coverage amounts, or dependents, and beneficiary information that has changed since the previous period. | Preview |
 | Allow proration for benefit plan contributions | The feature provides a configuration option to enable proration of employee contribution amounts (for Savings and FSA benefits) for the available pay periods, up to defined maximum annual contribution. | Preview |
@@ -83,11 +83,11 @@ The following table lists the features that are turned on by default or are now 
 | Print performance reviews | March 31, 2022 | Mandatory | Performance management |
 | Enable translation for the Country/Region component of the Russian address format | February 20, 2021 | On by default | Global address book |
 | Restrict case lookup based on legal entity | March 30, 2021 | Mandatory | Case management |
-| (Preview) Absence manager to manage leave of absence requests | December 23, 2022 | Preview | Leave and absence |
+| (Preview) Absence manager manages leave of absence requests | December 23, 2022 | Preview | Leave and absence |
 | (Preview) Hide leave balances | December 23, 2022 | Preview | Leave and absence |
 | (Preview) Inclusion of weekends and holidays for leave and absence | December 23, 2022 | Preview | Leave and absence |
 | (Preview) Open ended leave | December 23, 2022 | Preview | Leave and absence |
-| Absence manager to manage leave | March 31, 2022 | On by default | Leave and absence |
+| Absence manager manages leave | March 31, 2022 | On by default | Leave and absence |
 | Configure required attachment for leave requests | March 31, 2022 | On by default | Leave and absence |
 | Cross company leave view | March 31, 2022 | On by default | Leave and absence |
 | Leave accrual auditing | March 31, 2022| On by default | Leave and absence |
