@@ -2,7 +2,7 @@
 title: Address setup for Latin America
 description: This article provides information about how to use the LATAM extension from your address setup.
 author: cpicon85 
-ms.date: 11/29/2022 
+ms.date: 01/30/2023
 ms.topic: article
 ms.reviewer: kfend
 ms.author: v-cpicon 
@@ -24,13 +24,13 @@ The following prerequisites must be in place before you can add information to t
 
 Follow these steps to associate a tax ID with a country or region on the **Address setup** page.
 
-1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
+1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 2. On the **Country/region** tab, find and select the desired country or region.
-3. Select **LATAM** > **LATAM**.
-4. If the selected country or region is foreign, make sure that the **Foreign country/region** field is set to **Yes**.
+3. Select **LATAM** \> **LATAM**.
+4. If the selected country or region is foreign, make sure that the **Foreign country/region** checkbox is selected.
 
     > [!IMPORTANT]
-    > By default, the **Foreign country/region** option is selected. Make sure that it's cleared for the base country.
+    > By default, the **Foreign country/region** checkbox is selected. Make sure that it's cleared for the base country.
 
 5. In the **Allowed country/region document types** section, select **New**.
 6. In the list, select a tax identification ID.
@@ -45,7 +45,7 @@ Follow these steps to add the codification that's provided by the fiscal authori
 5. In the **Tax application code** field, enter a value.
 6. Save your changes, and close the page.
 
-The following procedure applies only to Argentina. You might have to add a country tax ID that's provided by the fiscal authorities.
+The following procedure applies only to organizations with a primary address in Argentina. You might have to add a country tax ID that's provided by the fiscal authorities.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 2. On the **Country/region** tab, select **LATAM** \> **Country per Taxpayer Type identification**.
@@ -63,12 +63,10 @@ Follow these steps to associate a tax identification ID with a state or province
 2. On the **State/province** tab, select **LATAM** \> **LATAM**.
 3. Select **New**.
 4. In the **State document type** field, select a document type.
-
-    > [!NOTE]
-    > Only documents that are configured as **State Document type** in the **Fiscal register** feature can be selected.
-
 5. Save your changes, and close the page.
 
+> [!NOTE]
+> Only documents that are configured as **State Document type** in the **Fiscal register** feature can be selected.
 
 Follow these steps to add the codification that's provided by the fiscal authorities.
 
@@ -88,8 +86,6 @@ In some situations, it might be necessary to indicate whether the city where a c
 3. Select **New**.
 4. Select the **Free trade zone** checkbox.
 5. Save your changes, and close the page.
-
-By default, brings the full fields Country/Region, Description, State, Description, County and Description.
 
 Follow these steps to add the codification that's provided by the fiscal authorities.
 
