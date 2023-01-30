@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Subscription billing and creating invoices
+title: Generate invoices from billing schedules
 description: This article describes how to create invoices from billing schedules in Subscription billing.
 author: JodiChristiansen
 ms.date: 01/27/2023
