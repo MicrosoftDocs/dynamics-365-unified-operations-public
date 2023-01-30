@@ -40,18 +40,18 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Commerce 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). 
+Microsoft Dynamics 365 Commerce 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md). 
   
 
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
 
-### Dynamics 365 and industry clouds: 2022 release wave 2 plan
+### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2022 release wave 2 plan](/dynamics365-release-plan/2022wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365-release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Commerce features
 
