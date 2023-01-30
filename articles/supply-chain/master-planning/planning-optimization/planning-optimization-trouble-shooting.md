@@ -46,7 +46,7 @@ To install the add-in, you must sign in to your Microsoft Power Platform environ
 
 > Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
 
-**Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started#prerequisites).
+**Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started.md#prerequisites).
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
