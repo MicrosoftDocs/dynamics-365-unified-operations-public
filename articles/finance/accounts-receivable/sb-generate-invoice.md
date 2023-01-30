@@ -55,14 +55,14 @@ Select **No** to print the parent and child items when using revenue split. All 
 
 In the **Records to include** fastTab the **Billing schedule** defaults the selected **Billing schedule** when invoicing only one **Billing schedule**. Use the **Filter** button to change the **Billing schedule** range or **Project** range. 
 
-Select **View billing schedules** to review the Billing schedule lines available to bill to a customer. To remove any lines that you don't want to invoice at this time select one more lines and **Remove selected**. Any remaining lines will then be billed when selecting **Generate all**. Use the **Batch** button to add the lines to a batch job to be processed later.  
+Select **View billing schedules** to review the Billing schedule lines available to bill to a customer. To remove any lines that you don't want to invoice at this time select one or more lines and **Remove selected**. Any remaining lines will then be billed when selecting **Generate all**. Use the **Batch** button to add the lines to a batch job to be processed later.  
 
 ## Consolidation
 Use the options in the **Consolidation** fastTab to combine multiple billing schedule lines when creating the sales order.
 
  - Set **Consolidate all periods** to **Yes** to combine multiple billing periods for the same line item into one line on the sales order. For example, a billing schedule line item has a billing frequency set to monthly from January to December. The quantity is 1 and billing amount is 100.00. If the first three periods (January to March) are selected the sales order is created with one line, quantity of 3, net amount of 300.00. If set to **No** then the sales order will have three lines, one for each billing period, quantity of 1 and net amount of 100.00. 
  - Set **Consolidate by customer** to **Yes** to combine billing schedules lines if the Customer ID, document ID, customer reference, project ID (if using), and currency ID are the same. Terms of payment, payment method or payment schedule.
- - Set **Consolidate by item** to **Yes** to combine billing schedles lines if the items and project are the same. If any items belong to item groups that have a **Number of top lines** greater than zero on the **Item Group Setup** page, this option is automatically set to **No**. 
+ - Set **Consolidate by item** to **Yes** to combine billing schedule lines if the items and project are the same. If any items belong to item groups that have a **Number of top lines** greater than zero on the **Item Group Setup** page, this option is automatically set to **No**. 
  - Set **Split by item group** to **Yes** to use the Top billing feature. See **Top billing items** below. 
 
 Select **Preview invoice** to see a preview of all sales order lines to be created. Keep in mind that all item group splitting and all consolidations have occurred. Also, the top billing feature has been applied to the top items. The sales number available in the preview is a temporary number for preview and contains the prefix **Preview**. The actual sales order number is generated at the time the sales order is created. 
@@ -73,7 +73,7 @@ The order for the lines that appear in the list are based on whether the top bil
 3. Ascending order by the original billing schedule number.
 4. Ascending order by the line number.
 
-When the top billing feature is not used, the lines appear in ths order:
+When the top billing feature isn't used, the lines appear in this order:
 1. Ascending order according to the end date, where the earliest date is at the top and the furthest future date is at the bottom. 
 2. Ascending order by the original billing schedule number.
 3. Ascending order by the line number.
