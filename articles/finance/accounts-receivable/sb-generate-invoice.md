@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Subscription billing generate invoice
+title: Subscription billing and creating invoices
 description: This article describes how to create invoices from billing schedules in Subscription billing.
 author: JodiChristiansen
 ms.date: 01/27/2023
@@ -55,7 +55,7 @@ Select **No** to print the parent and child items when using revenue split. All 
 
 In the **Records to include** fastTab the **Billing schedule** defaults the selected **Billing schedule** when invoicing only one **Billing schedule**. Use the **Filter** button to change the **Billing schedule** range or **Project** range. 
 
-Select **View billing schedules** to review the Billing schedule lines available to bill to a customer. To remove any lines that you do not want to invoice at this time select one more lines and **Remove selected**. Any remaining lines will then be billed when selecting **Generate all**. Use the **Batch** button to add the lines to a batch job to be processed later.  
+Select **View billing schedules** to review the Billing schedule lines available to bill to a customer. To remove any lines that you don't want to invoice at this time select one more lines and **Remove selected**. Any remaining lines will then be billed when selecting **Generate all**. Use the **Batch** button to add the lines to a batch job to be processed later.  
 
 ## Consolidation
 Use the options in the **Consolidation** fastTab to combine multiple billing schedule lines when creating the sales order.
@@ -65,7 +65,7 @@ Use the options in the **Consolidation** fastTab to combine multiple billing sch
  - Set **Consolidate by item** to **Yes** to combine billing schedles lines if the items and project are the same. If any items belong to item groups that have a **Number of top lines** greater than zero on the **Item Group Setup** page, this option is automatically set to **No**. 
  - Set **Split by item group** to **Yes** to use the Top billing feature. See **Top billing items** below. 
 
-Select **Preview invoice** to see a preview of all sales order lines to be created. Keep in mind that all item group splitting and all consolidations have occurred. Also, the top billing feature has been applied to the top items. The sales number available in the preview is a temporary number for the purpose of the preview and contains the prefix **Preview**. The actual sales order number is generated at the time the sales order is created. 
+Select **Preview invoice** to see a preview of all sales order lines to be created. Keep in mind that all item group splitting and all consolidations have occurred. Also, the top billing feature has been applied to the top items. The sales number available in the preview is a temporary number for preview and contains the prefix **Preview**. The actual sales order number is generated at the time the sales order is created. 
 
 The order for the lines that appear in the list are based on whether the top billing feature is used. When the top billing feature is used, the lines appear in this order: 
 1. Descending order according to the net amount, where the largest net amount is at the top.
@@ -107,7 +107,7 @@ The process for determining the top items for invoices created from the **Genera
 
 The amounts for these lines remain unchanged.
 
-If multiple lines have the same amount, the items that are used for the invoice are randomly selected. For example, the top billing for an item group is 3. The net amount for the top 3 items are:
+If multiple lines have the same amount, the items that are used for the invoice are randomly selected. For example, the top billing for an item group is three. The net amount for the top three items are:
 
 -   Item A = $900 
 -   Item B = $800 
@@ -115,7 +115,7 @@ If multiple lines have the same amount, the items that are used for the invoice 
 -   Item D = $700 
 -   Item E = $700
 
-The top 3 items have the amounts: $900, $800, and $700. For the amount of $700, one of item C, D or E is selected at random to be included in the top 3.
+The top three items have the amounts: $900, $800, and $700. For the amount of $700, one of item C, D or E is selected at random to be included in the top three.
 
 4.	The remaining items below the top billing are not billed and the unit price and net amount are changed to zero (0).
 
