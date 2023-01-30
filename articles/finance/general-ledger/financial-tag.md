@@ -27,88 +27,101 @@ ms.dyn365.ops.version: 10.0.16
 
 # Financial tags
 
-After transactions are posted, it’s common for organizations to require visibility into subledger data for analyzing the accounting entries generated from those transactions. Today, organizations use fields such as document number, description, or financial dimensions to track subledger data within general ledger because it’s difficult to navigate the data model to the subledger data. The type of subledger data often tracked includes sales order numbers or purchase order numbers, the vendor or customer name, a payment reference, an invoice number, or a reference number from external transactions imported into Dynamics 365 Finance. In addition to analytics, the subledger data is also used for processes such as ledger settlement.  
+After transactions are posted, it's common for organizations to require visibility into subledger data, so that the accounting entries that are generated from those transactions can be analyzed. Today, organizations use fields such as the document number, description, or financial dimensions to track subledger data in the general ledger, because it's difficult to navigate the data model to the subledger data. The types of subledger data that are often tracked include sales order or purchase order numbers, vendor or customer names, payment references, invoice numbers, or reference numbers from external transactions that are imported into Microsoft Dynamics 365 Finance. In addition to being used for analytics, the subledger data is used for processes such as ledger settlement.
 
+The **Financial tags** (tags) feature eliminates the need to use document numbers, descriptions, or financial dimensions by letting an organization create and enter up to 20 user-defined fields on transactions. Those fields are then stored on the accounting entries that are created for the transactions. Tag values aren't stored in any subledger tables, the Customer transactions or Vendor transactions table.
 
-The Financial tags (tags) feature eliminates the need to use document numbers, descriptions or financial dimensions by allowing an organization to create and enter up to 20 user-defined fields on transactions, which are then stored on the accounting entries created for the transaction. Tag values are not stored in any subledger tables, such as customer or vendor transactions.
+Tags were introduced in the 10.0.32 release of Dynamics 365 Finance. This release supports the capability to define up to 20 user-defined tags and to enter tag values on the following journals (and corresponding Open Data Protocol \[OData\] and Data management entities):
 
-Tags were introduced on Dynamics 365 Finance release 10.0.32. This release supports the definition of up to 20 user-defined tags, and the ability to enter tag values on the following journals (and corresponding OData and Data management entities):
- - General journal
- - Global general journal
+- General journal
+- Global general journal
 
-With each new release, tags will be implemented into additional journals, documents, and processes.
+In each new release, tags will be implemented in additional journals, documents, and processes.
 
 ## Setup
-You must enable the **Financial tags** feature in the **Feature management** workspace to use the functionality. The feature can be disabled at any time. If the feature is enabled, and tags were entered on transactions, all tag values entered on those transactions are maintained in the database if the feature is disabled. The tag values would no longer be visible on any transactions or inquiries within Dynamics 365 Finance. 
 
-The entry of tags on transactions is a similar experience to entering a ledger account with the financial dimensions. Tags don’t use the same control as the ledger account, but they still require a delimiter in between the tag values. Before defining any financial tags, define the tag delimiter on the **General ledger parameters** page. Select **Financial tags** and define the delimiter. The delimiter must not be used within any tag values entered on transactions. The delimiter can't be changed after it’s defined. 
+To use the functionality, you must enable the **Financial tags** feature in the **Feature management** workspace. The feature can be disabled at any time. If the feature is enabled but later disabled, any values that were entered for financial tags on transactions will be maintained in the database. However, they'll no longer be visible on any transactions or in inquiries in Dynamics 365 Finance.
 
-## Create financial tags
+The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but they still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that are entered on transactions. The delimiter can't be changed after it's defined.
 
-Before creating your tags:
- - Evaluate whether the data should be tracked as a financial dimension or a financial tag. Financial tags are an alternative to creating financial dimensions, especially when tracking values that have little or no reusability, such as sales order numbers or purchase order numbers. See [Differences between financial tags and financial dimensions](financial-tag-financial-dimension.md), for more information about the differences between financial tags and financial dimensions. 
- - Once a financial tag has been created, it can’t be deleted, it can only be deactivated. Deletion is not permitted to ensure that the tag values are still available for reporting on posted general ledger entries. Activation and deactivation of a financial tag can be done easily and at any time. 
- - The label of each financial tag can be changed at any time, even after transactions are posted. 
- - If no transactions have been posted for the specific tag, changing the label will have no impact. This is useful when you need to repurpose a tag for tracking other data.
- - If transactions have been posted for the specific tag, the tag values don't change. If the tag was originally labeled “Purchase order number” but is later changed to “Sales order number”, the posted accounting entries prior to the label change will still contain the purchase order numbers entered and posted to general ledger. 
+After the feature is enabled, each legal entity can define up to 20 financial tags. Tags are legal entity–specific. You can use the **Financial tag configuration** and **Financial tags custom list value** entities to import the tags for each legal entity. Therefore, you can quickly and easily define the same initial setup in multiple legal entities.
 
-After the feature is enabled, each legal entity can define up to 20 tags. Tags are legal entity specific. The Financial tag configuration and Financial tags custom list value entities can be used to quickly import the Tags for each legal entity, making it easier to quickly define the same initial setup.
+## Creating financial tags
 
+Before you create financial tags, note the following points:
 
-### Create financial tags on the financial tags page
-1.	Go to **General ledger > Chart of accounts > Financial tags > Financial tags**.
-2.	Select **New** to create a new financial tag. 
-3.	Enter a label for the financial tag. The tag label must start with a character or underscore and it can only contain characters, numbers and underscores. Special characters, including blanks, aren't permitted. 
-4.	Select a **Value type** of **Text**, **List**, or **Custom list**. 
-5.	If the **Value type** is **List**, select the value source from **Use values from**. The column contains a list of entities from which the tag values can be selected during transaction entry. 
-6.	If the **Value type** is set to **Custom list**, select **Tag values** to create the custom list of tag values available for selecting during transaction entry. 
-7.	Activate the tag using **Activate**. 
+- Evaluate whether the data should be tracked as a financial dimension or a financial tag. Financial tags are an alternative to financial dimensions, especially when you're tracking values that have little or no reusability, such as sales order numbers or purchase order numbers. For more information about the differences between financial tags and financial dimensions, see [Differences between financial tags and financial dimensions](financial-tag-financial-dimension.md).
+- After a financial tag is created, it can be deactivated but not deleted. This restriction helps ensure that the tag values remain available for reporting on posted general ledger entries. Financial tags can easily be activated and deactivated at any time.
+- The label of each financial tag can be changed at any time, even after transactions are posted.
+- If no transactions have been posted for a specific financial tag, a change to the tag's label will have no impact. This behavior is useful when you must repurpose a tag so that you can track other data.
+- If transactions have been posted for a specific financial tag, the tag values don't change. If the tag's label was originally "Purchase order number," but it's later changed to "Sales order number," the accounting entries that were posted before the label change will still contain the purchase order numbers that were entered and posted to the general ledger.
 
-### Entering financial tag values on transactions
-Once a single tag is activated, the Financial tags will be available for entry on each transaction that supports the feature. 
+### Create a financial tag
 
-### Journals and Lines
-When entering journals, tag values can be defined on the journal batch header. The tags on the journal batch header will be used as default values for the lines within the journal. As with other defaults on the journal, the tag values default to new lines added to the journal and not existing lines if the values are added to the header after lines exist. 
+Follow these steps to create a financial tag.
 
+1. Go to **General ledger \> Chart of accounts \> Financial tags \> Financial tags**.
+2. Select **New** to create a financial tag.
+3. Enter a label for the tag. The label must start with a letter or underscore, and it can contain only letters, numbers, and underscores. No special characters, including spaces, are permitted.
+4. In the **Value type** field, select **Text**, **List**, or **Custom list**.
+5. If you selected **List** in the **Value type** field, select the value source in the **Use values from** field. The field contains a list of entities that the tag values can be selected from during transaction entry.
+6. If you selected **Custom list** in the **Value type** field, select **Tag values** to create the custom list of tag values that will be available for selection during transaction entry.
+7. Select **Activate** to activate the tag.
 
-[![Financial tags.png](./media/Financial-tag1.png)](./media/Financial-tag1.png)
+## Entering financial tag values on transactions
+
+After one financial tag is activated, tags will be available for entry on each transaction that supports the feature.
+
+### Journals and lines
+
+When you enter journals, you can define tag values on the journal batch header. Those values will then be used as default values for the lines in the journal. As for other default values in the journal, they'll automatically be entered on new lines that are added to the journal. However, they won't be entered on lines that already exist when you define the values on the header.
+
+[![Financial tags entered on the journal batch header.](./media/Financial-tag1.png)](./media/Financial-tag1.png)
 
 ### Default values
-Tag values entered on journal will default as follows:
- - Single-line voucher
-     - Tag values from journal batch header default to Account
-     - Tag values from Account default to Offset account
-     - If tag values are added to the Account after the Offset account already exists, the tag values will not default to the Offset account
-     - If tag values exist on both the Account and Offset account, changes to the tag values will not update the other. For example, if the tag values are changed on the Account, the tag values on the Offset account will not be updated. This is to prevent loss of data if the user manually overrides the default values.
-     - When adding a new line, if a new voucher number (which is a new transaction) is assigned, the defaulting starts over. Tag values will never default from lines within one voucher to lines within a different voucher.
- - Multi-line voucher
-    - Tag values form the journal batch header default to the Account of each line added to the voucher. 
-    - The tag values from the Account on the first line will not default to the Account of the next line of the voucher, and so on. 
 
-[![Tag values](./media/Tag-line2.png)](./media/Tag-line2.png)
- 
-Tag values will never default from master data. For example, there are no capabilities to define default tag values on customers or vendors. Tags values will also not default automatically with values from the transaction itself. For example, assume a tag was created to track Customer name. If a transaction contains a customer, the customer’s name will not default to the tag value. The value must be manually entered or imported. 
+Tag values that you enter in a journal are entered as default values in the following way:
+
+- Single-line voucher:
+
+    - Tag values that you add to the journal batch header are entered as default values on the account.
+    - Tag values that you add to the account are entered as default values on the offset account.
+    - If the offset account already exists when you add tag values to the account, those tag values aren't entered as default values on the offset account.
+    - If tag values exist on both the account and the offset account, changes to the tag values in one place don't cause the values in the other place to be updated. For example, if you change the tag values on the account, the tag values on the offset account aren't updated. This behavior helps prevent loss of data if a user manually overrides the default values.
+    - When you add a new line, if you assign a new voucher number (which represents a new transaction), the defaulting behavior starts over. Tag values from the lines of one voucher are never entered as default values on the lines of a different voucher.
+
+- Multiline voucher:
+
+    - Tag values that you add to the journal batch header are entered as default values on the account of each line that's added to the voucher.
+    - The tag values that you add to the account on the first line aren't entered as default values on the account of the next line of the voucher, and so on.
+
+[![Financial tag values on journal lines.](./media/Tag-line2.png)](./media/Tag-line2.png)
+
+Tag values from master data are never used as default values. For example, there's no capability to define default tag values on customers or vendors. In addition, tag values from the transaction itself aren't automatically entered as default values. For example, a tag was created to track the customer name. If a transaction contains a customer, the tag value won't be entered as the customer name by default. The value must be manually entered or imported.
 
 ### Validation
-When tag values are entered on transactions, no validation occurs during transaction entry or during posting. Even if a tag is defined with a type of List or Custom list, the tag values are not validated to ensure that the value exists within the list. For example, a tag is created with a List type and the Purchase order number is selected as the source of the list. The dropdown will present the list of purchase order numbers but the user can enter a purchase order number that doesn’t exist within the list. 
 
-### Posting transactions with tag values
-After posting the transaction, the financial tags are available on the lines of the general ledger account entry. Tags will display on the **Voucher transactions** and **Transactions for main account** pages. The financial tags are displayed in separate columns, making it easier to sort and filter. 
-For reporting, the tags are not part of the dimension sets, which means it’s not possible to get a summarized balance of transactions for a specific tag value. For example, when looking at the trial balance, you can't get balances per tag value. But when you drill down on the balances from the trial balance, the tag values are shown on the detailed transactions. The detailed transactions can be exported to Excel, including the tag values in separate columns, and they can be summarized there if balances are necessary.  
- 
-[![Deactivated tags](./media/deactivated-tag3.png)](./media/deactivated-tag3.png)
- 
- 
-If a tag is deactivated, the tag values remain on the posted transactions. Deactivated tags don't display by default on inquiry pages but the columns can be added by choosing **Show inactive financial tags**. 
+When tag values are entered on transactions, no validation occurs during either transaction entry or posting. Even if a tag of the **List** or **Custom list** value type is defined, the tag values aren't validated to ensure that they exist in the list. For example, a tag of the **List** value type is created, and the purchase order number is selected as the source of the list. Although a list of purchase order numbers will be presented, the user can enter a purchase order number that doesn't exist in the list.
 
-### Correcting tag values after posting
-While tags are available for reporting, they're not part of the ledger account and have no impact on financial statements. Because they are used for internal analysis only, edits to the tag values are permitted after transactions are posted.
-  
-1. In **Feature management**, enable **Allow edits to internal data on general ledger vouchers**. This feature allows certain roles to modify the **Description** of posted accounting entries. When the tags feature is enabled, this feature is enhanced to permit edits to the tag values.
-2. After the feature is enabled, go to **Voucher transactions**. 
-3. Use the query to find the transactions that you want to edit. 
-4. Select the lines within **Voucher transactions**. Select **Edit internal voucher data**. You can only edit lines which are selected. 
- 
-[![Voucher transaction line](./media/internal-voucher4.png)](./media/internal-voucher4.png)
+## Posting transactions that have tag values
 
-The page displays the lines selected from Voucher transactions, including the current financial tags and new financial tags. The current values default into the new values, to prevent the user from having to manually enter everything again, and instead only change what is incorrect. The **Bulk update selected records** button can be used to do mass updates. This is helpful to assign tag values to large groups of posted transactions that were incorrect or that didn’t have any tag values defined, such as those posted before the feature was enabled.
+After a transaction is posted, the financial tags are available on the lines of the general ledger account entry. They're shown on the **Voucher transactions** and **Transactions for main account** pages. The financial tags are shown in separate columns, so that they're easier to sort and filter. 
+
+For reporting, the tags aren't part of the dimension sets. Therefore, you can't get a summarized balance of transactions for a specific tag value. For example, when you're looking at the trial balance, you can't get balances per tag value. However, when you drill down into the balances from the trial balance, the tag values will be shown on the detailed transactions. The detailed transactions, including the tag values in separate columns, can be exported to Excel, where they can be summarized if balances are required.
+
+If a tag is deactivated, the tag values remain on the posted transactions. By default, deactivated tags aren't shown on inquiry pages. However, you can add the columns by selecting **Show inactive financial tags**.
+
+[![Showing deactivated tags.](./media/deactivated-tag3.png)](./media/deactivated-tag3.png)
+
+### Correct tag values after posting
+
+Although financial tags are available for reporting, they aren't part of the ledger account and have no impact on financial statements. Because tags are used only for internal analysis, edits to the tag values are permitted after transactions are posted.
+
+1. In the **Feature management** workspace, enable the feature that's named **Allow edits to internal data on general ledger vouchers**. This feature enables some roles to modify the **Description** field of posted accounting entries. If the **Financial tags** feature is also enabled, this feature is enhanced to enable edits to the tag values.
+2. After the feature is enabled, go to **Voucher transactions**.
+3. Use the query to find the transactions that you want to edit.
+4. Select the lines in **Voucher transactions**, and then select **Edit internal voucher data**. You can edit only lines that are selected.
+ 
+[![Editing tag values on voucher transaction lines.](./media/internal-voucher4.png)](./media/internal-voucher4.png)
+
+The page shows the lines that you selected in **Voucher transactions**, including the current financial tags and new financial tags. The current tag values are entered as default values for the new tags. Therefore, you don't have to manually enter everything again but can instead change only what's incorrect. You can use the **Bulk update selected records** button to do mass updates. Mass updates are useful if you want to assign tag values to large groups of posted transactions that were incorrect or that no tag values were defined for (for example, because they were posted before the feature was enabled).
