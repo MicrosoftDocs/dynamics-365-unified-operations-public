@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Troubleshoot Planning Optimization 
+# Troubleshoot Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
 
@@ -38,14 +38,15 @@ Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availabi
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
-## Installation of the Planning Optimization add-in fails due to user issues
+## Installation of the Planning Optimization add-in fails due to user account issues
 
-Planning Optimization requires Power platform integration setup successfully. During installation, the user account should have administrator privileges and an access mode of *Read-Write*. You might see below error messages if installation of Planning Optimization add-in got failed:
+To install the add-in, you must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
 
-- _Current user does not have enough permission or missing licenses on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center._
-- _Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center._
+> Your Microsoft Power Platform user account lacks the permissions and/or licenses required to install Planning optimization. Try going to the Power Platform admin center and changing the access mode for your user account to "Read-write".
 
-**Fix**: Go to [Prerequisites of Planning Optimization](/supply-chain/master-planning/planning-optimization/get-started#prerequisites) and follow up the required steps for Power platform integration for user account.
+> To install Planning Optimization, you must have a Microsoft Power Platform user account with administrator privileges and an access mode of *Read-Write*. Please create the required account or ask your system administrator for assistance.
+
+**Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started#prerequisites).
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
