@@ -15,61 +15,56 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Microsoft services adhere to data privacy and compliance requirements when securing customer data by encrypting data at rest. This practice secures the data from being exposed if a copy of the database is stolen. With data encryption at rest, any stolen database data is protected from being restored to a different server without the encryption key.
+Microsoft services adhere to data privacy and compliance requirements when they secure customer data by encrypting data at rest. This practice secures the data from being exposed if a copy of the database is stolen. When data encryption at rest is used, any stolen database data is protected from being restored to a different server without the encryption key.
 
-By default, data is encrypted using *Microsoft managed keys*, but if you'd like more control over your encryption keys, you can instead manage your own keys using *customer-managed keys* (CMKs), which must be stored in Azure Key Vault.
+By default, data is encrypted by using *Microsoft-managed keys*. However, if you want more control over your encryption keys, you can manage your own keys by using *customer-managed keys* (CMKs) instead. CMKs must be stored in Microsoft Azure Key Vault.
 
-This article explains how to set up customer-managed keys to control encryption keys for data at rest in finance and operations environments.
+This article explains how to set up CMKs to control encryption keys for data at rest in finance and operations environments.
 
 > [!IMPORTANT]
->
-> - The customer-managed keys feature is provided through Microsoft Power Platform. It applies to environments running one or more finance and operations apps that are integrated with Power Platform, including all environment specific resources (including SQL databases and Azure storage accounts). (See also: [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).)
-> - The preview version of customer-managed keys is available at no cost. When customer-managed keys become generally available, there will be a cost associated with environments where they are enabled.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that Microsoft customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> - The CMK feature is provided through Microsoft Power Platform. It applies to environments that run one or more finance and operations apps that are integrated with Microsoft Power Platform. It also applies to all environment-specific resources, including SQL databases and Azure storage accounts. (For more information, see [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).)
+> - The preview version of CMKs is available at no cost. When CMKs become generally available, a cost will be associated with environments where they're enabled.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that Microsoft customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not yet be available in your region.
 
-## Enable customer-managed keys
+## Enable CMKs
 
-You can enable customer-managed keys (CMK) policy enforcement for finance and operations environments where Power Platform Integration is enabled ([Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md)). Finance and operations environments without Power Platform integration will continue to use the Microsoft managed key to encrypt their data.
+You can enable enforcement of the CMK policy for finance and operations environments where [Microsoft Power Platform integration is enabled](../../dev-itpro/power-platform/enable-power-platform-integration.md)). Finance and operations environments without Microsoft Power Platform integration will continue to use Microsoft-managed keys to encrypt their data.
 
-Once enabled, the CMK policy will also apply to environment-specific resources (including SQL databases and Azure storage accounts). See the table later in this article for details and exceptions across services.
+After the CMK policy is enabled, it also applies to environment-specific resources, including SQL databases and Azure storage accounts. For details and exceptions across services, see the [CMK support across finance and operations apps](#cmk-support-across-finance-and-operations-apps) section later in this article.
 
 To enable customer-managed keys for your finance and operations apps environment, follow these steps:
 
 1. [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 
     > [!NOTE]
-    >
-    > If you setup integration with an existing Power Platform environment, it should not have CMK enabled on it before integration. (Support for this scenario will be enabled in future).
+    > If you set up integration with an existing Power Platform environment, CMKs shouldn't be enabled in that environment before integration. (Support for that scenario will be enabled in future.)
 
-1. Once Power Platform integration is enabled, you'll see environment name in the Power Platform Environment Information on the LCS environment details page. This is also the name of your Dataverse Organization.
+1. After Microsoft Power Platform integration is enabled, the environment name will be shown in the Power Platform environment information on the environment details page in Microsoft Dynamics Lifecycle Services. This name is also the name of your Dataverse organization. Make a note of the environment name, because you'll need it for the next steps.
 
     > [!NOTE]
-    >
-    > - Please note the environment name for the next steps to enable customer-managed keys.
-    > - The name of your finance and operations environment might be different.
+    > The name of your finance and operations environment might differ.
 
-1. [Enable customer-managed keys in Power Platform and create an enterprise policy](/power-platform/admin/customer-managed-key). <!-- confirm this is available before publish: [**Review link**](<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441>) -->
+1. [Enable CMKs in Microsoft Power Platform, and create an enterprise policy](/power-platform/admin/customer-managed-key). <!-- confirm this is available before publish: [**Review link**](<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441>) -->
+1. [Add the environment that has the previously noted name to the enterprise policy](/power-platform/admin/customer-managed-key#add-an-environment-to-the-enterprise-policy-to-encrypt-data). <!-- confirm this is available before publish: [**Review link**](<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441#add-an-environment-to-the-enterprise-policy-to-encrypt-data>) -->
 
-1. [Add your environment with above name to the enterprise policy](/power-platform/admin/customer-managed-key#add-an-environment-to-the-enterprise-policy-to-encrypt-data). <!-- confirm this is available before publish: [**Review link**](<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441#add-an-environment-to-the-enterprise-policy-to-encrypt-data>) -->
+## CMK support for add-ins
 
-## Customer-managed keys support for add-ins
+Lifecycle Services might provide several add-ins for finance and operations environments that are integrated with Microsoft Power Platform. However, some add-ins provide only partial support, or no support, for CMKs. The following table describes the limitations that apply to various add-ins.
 
-Microsoft Dynamics Lifecycle Services (LCS) might provide several add-ins for finance and operations apps environments that are integrated with Microsoft Power Platform. However, some add-ins provide only partial support, or no support, for customer-managed keys. The following table describes the limitations that apply to various add-ins.
-
-| Add In |Status |
+| Add In | Status |
 | --- | --- |
-|Tax Calculation | Deployments of the Tax Calculation add-in that use the stand-alone [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) don't support customer-managed keys for encryption of related resources. Support for customer-managed keys is expected in late 2023 when RCS functionality is added to the finance and operations platform. |
-|Electronic Invoicing | Deployments of the Electronic Invoicing add-in that use stand-alone [RCS](../../../finance/localizations/rcs-overview.md) don't support customer-managed keys for encryption of related resources. Support for customer-managed keys is expected in late 2023 when RCS functionality is added to the finance and operations platform. |
-|All other add-ins | All other add-ins support customer-managed key policies. |
+| Tax Calculation | Deployments of the Tax Calculation add-in that use the stand-alone [Regulatory Configuration Service (RCS)](../../../finance/localizations/rcs-overview.md) don't support CMKs for the encryption of related resources. Support for CMKs is expected in late 2023, when RCS functionality is added to the finance and operations platform. |
+| Electronic Invoicing | Deployments of the Electronic Invoicing add-in that use stand-alone [RCS](../../../finance/localizations/rcs-overview.md) don't support CMKs for the encryption of related resources. Support for CMKs is expected in late 2023, when RCS functionality is added to the finance and operations platform. |
+| All other add-ins | All other add-ins support CMK policies. |
 
-## Customer-managed keys support across finance and operations apps
+## CMK support across finance and operations apps
 
-Not all finance and operations apps support customer-managed key policies in the preview. The following table describes the customer-managed key support status of each app.
+Not all finance and operations apps support CMK policies in the preview. The following table describes the CMK support status of each app.
 
 | App | Status |
 | --- | --- |
-| Dynamics 365 Supply Chain Management | Finance and operations environments that are provisioned under Dynamics 365 Supply Chain Management support customer-managed keys for encryption of all environment-specific resources at rest. |
-| Dynamics 365 Human Resources | Dynamics 365 Human Resources installations that are provisioned via a finance and operations environment support customer-managed keys for all environment-specific resources.<br/><br/>The Human Resources stand-alone app doesn't support customer-managed keys. To enable use of customer-managed keys, you must first use migration tooling to migrate your stand-alone Human Resources environment to a finance and operations environment. |
-| Dynamics 365 Finance | Finance and operations environments that are provisioned under Dynamics 365 Finance support customer-managed keys for all environment-specific resources.<br/><br/>**Note:** If you use [RCS](../../../finance/localizations/rcs-overview.md) to compliment your Dynamics 365 Finance environment, data that's managed under RCS environment doesn't currently support customer-managed keys. Support for customer-managed keys is expected in late 2023 when RCS functionality becomes available for finance and operations apps. |
-| Microsoft Dynamics 365 Lifecycle Services (LCS) | Any data you store in LCS (such as file assets, methodologies, task recorder data, and any other project metadata) won't be encrypted using customer-managed keys.<br/><br/>Customer-managed key support for LCS metadata is expected sometime in the future. |
+| Dynamics 365 Supply Chain Management | Finance and operations environments that are provisioned under Dynamics 365 Supply Chain Management support CMKs for the encryption of all environment-specific resources at rest. |
+| Dynamics 365 Human Resources | <p>Dynamics 365 Human Resources installations that are provisioned via a finance and operations environment support CMKs for all environment-specific resources.</p><p>The Human Resources stand-alone app doesn't support CMKs. To enable the use of CMKs, you must first use migration tooling to migrate your stand-alone Human Resources environment to a finance and operations environment.</p> |
+| Dynamics 365 Finance | <p>Finance and operations environments that are provisioned under Dynamics 365 Finance support CMKs for all environment-specific resources.</p><p>**Note:** If you use [RCS](../../../finance/localizations/rcs-overview.md) to complement your Dynamics 365 Finance environment, data that's managed under RCS environments doesn't currently support CMKs. Support for CMKs is expected in late 2023, when RCS functionality becomes available for finance and operations apps.</p> |
+| Microsoft Dynamics Lifecycle Services | <p>Data that you store in Lifecycle Services (such as file assets, methodologies, task recorder data, and any other project metadata) won't be encrypted by using CMKs.</p><p>CMK support for Lifecycle Services metadata is expected sometime in the future.</p> |
