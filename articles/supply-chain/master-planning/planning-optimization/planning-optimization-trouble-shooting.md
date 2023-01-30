@@ -42,9 +42,9 @@ Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availabi
 
 To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
 
-> Your Microsoft Power Platform user account lacks the permissions and/or licenses required to install Planning optimization. Try going to the Power Platform admin center and changing the access mode for your user account to "Read-write".
+> Current user does not have enough permission or missing licenses on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
 
-> To install Planning Optimization, you must have a Microsoft Power Platform user account with administrator privileges and an access mode of *Read-Write*. Please create the required account or ask your system administrator for assistance.
+> Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
 
 **Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started#prerequisites).
 
