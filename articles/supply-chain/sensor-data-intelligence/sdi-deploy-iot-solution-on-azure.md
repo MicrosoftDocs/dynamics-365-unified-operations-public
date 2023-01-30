@@ -23,6 +23,17 @@ Sensor Data Intelligence uses data from sensors that are connected to Microsoft 
 
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
+## Prerequisites
+
+1. In order to deploy and administer Azure components for Sensor Data Intelligence, you must have one of the following Azure security roles:
+
+- Owner
+- Co-administrator
+- Service administrator
+- Account administrator
+
+2. Only organizational Azure accounts can be used to deploy Sensor Data Intelligence; personal accounts such as Outlook or Gmail cannot be used.
+
 ## Video instructions
 
 The following video shows how to [turn on the Sensor Data Intelligence feature](sdi-enable-feature.md) and deploy the required Azure resources. The other section in this article provides the same instructions in a text-based format.
