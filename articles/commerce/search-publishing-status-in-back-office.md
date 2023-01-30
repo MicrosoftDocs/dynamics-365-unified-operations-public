@@ -31,6 +31,7 @@ The product search publishing sessions get queued upon conclusion of the CDX job
 
 Along with the publishing status and product count, it also gives you visibility into the timeframe as when was it published successfully and typically how long it has been waiting to be published as well as duration of time required to publish for a particular channel. 
 
+![Search publishing status in HQ](./media/Search_Publishing_Status_HQ.png)
 
 ## FAQs -
 
