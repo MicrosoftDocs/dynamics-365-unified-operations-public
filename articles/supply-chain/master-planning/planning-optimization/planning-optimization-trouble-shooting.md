@@ -40,7 +40,7 @@ Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availabi
 
 ## Installation of the Planning Optimization add-in fails due to user account issues
 
-To install the add-in, you must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
+To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
 
 > Your Microsoft Power Platform user account lacks the permissions and/or licenses required to install Planning optimization. Try going to the Power Platform admin center and changing the access mode for your user account to "Read-write".
 
