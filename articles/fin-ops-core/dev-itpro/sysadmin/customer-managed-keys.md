@@ -34,7 +34,7 @@ You can enable customer-managed keys (CMK) policy enforcement for finance and op
 
 Once enabled, the CMK policy will also apply to environment-specific resources (including SQL databases and Azure storage accounts). See the table later in this article for details and exceptions across services.
 
-To enable [Customer Lockbox](customer-lockbox.md) for your finance and operations apps environment, follow these steps:
+To enable customer-managed keys for your finance and operations apps environment, follow these steps:
 
 1. [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 
