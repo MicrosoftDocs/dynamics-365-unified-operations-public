@@ -30,17 +30,16 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-|Payments|  Include shipping address in Adyen authorizations for additional fraud protection. | The Dynamics 365 Payment Connector for Adyen adds support for sending the user's "Shipping Address" and "Shopper Email" with transactions where shipping to the customer is involved. These fields can be utilized by Adyen's Fraud Protection rules to assist in identifying fraudulent purchase attempts. These fields will be included for online channels, Call Center, or Point-of-Sale when a customer is choosing the ship to an address. Fields exist in the checkout process are newly included at the time of transactional interaction with the Adyen Payment Gateway. |  On by default |
-| Point of sale  | New network and connectivity health checks | New tests in the POS health check operation provide key information when troubleshooting network or performance-related issues on a point of sale terminal. Also, the health check operation can now be accessed directly from the **POS Settings** page. | On by default |
-| Self-service installers (Sealed)  | Store Commerce token capture and automated uninstallation of Modern POS. | Using new installer parameters, the Store Commerce installer can capture the device token in use by Modern POS and then uninstall Modern POS. This allows the use of Store Commerce without requiring Azure Active Directory credentials during device activation. | On by default |
-| Self-service installers (Sealed)  | .NET 6 is now a prerequisite. | .NET 6 is now a required installation for all sealed installers. Store Commerce has gained a variety of performance improvements through the uptake of this. | On by default |
-
+| Payments | Include shipping address in Adyen authorizations for additional fraud protection. | The Dynamics 365 Payment Connector for Adyen adds support for sending the user's values for the **Shipping Address** and **Shopper Email** fields with transactions where shipping to the customer is involved. These fields can be used by Adyen's Fraud Protection rules to help identify fraudulent purchase attempts. These fields will be included for online channels, Call Center, or Point of Sale (POS) when a customer is selecting the ship-to address. Fields that exist in the checkout process are newly included at the time of transactional interaction with the Adyen Payment Gateway. |  On by default |
+| Point of sale  | New network and connectivity health checks | New tests in the POS health check operation provide key information during troubleshooting of network or performance-related issues on a POS terminal. In addition, the health check operation can now be accessed directly from the **POS Settings** page. | On by default |
+| Self-service installers (Sealed)  | Store Commerce token capture and automated uninstallation of Modern POS. | By using new installer parameters, the Store Commerce installer can capture the device token that's used by Modern POS and then uninstall Modern POS. Therefore, Store Commerce can be used without requiring Azure Active Directory (Azure AD) credentials during device activation. | On by default |
+| Self-service installers (Sealed)  | .NET 6 is now a prerequisite. | .NET 6 is now a required installation for all sealed installers. Store Commerce has gained various performance improvements through the uptake of requirement. | On by default |
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Commerce 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md). 
+Microsoft Dynamics 365 Commerce version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md). 
   
 
 ### Bug fixes
