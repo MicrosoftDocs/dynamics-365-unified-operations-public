@@ -462,6 +462,8 @@
             href: accounts-receivable/sb-support-renewals.md
           - name: Unbilled revenue
             href: accounts-receivable/sb-unbilled-revenue.md
+          - name: Billing schedules with projects  
+            href: accounts-receivable/sb-bill-sched-project.md
           - name: Consumer price index schedules
             href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
