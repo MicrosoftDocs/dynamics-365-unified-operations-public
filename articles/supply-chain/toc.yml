@@ -3465,6 +3465,8 @@
             href: warehousing/packing-work.md
           - name: Packing containers with the Warehouse Management mobile app
             href: warehousing/warehouse-app-packing-containers.md
+          - name: Mobile device container packing policies
+            href: warehousing/warehouse-app-pack-containers-policies.md
           - name: Example scenario – Pack containers with the Warehouse Management mobile app
             href: warehousing/warehouse-app-pack-containers-scenario.md
           - name: Set up short picking item reallocation
@@ -3657,88 +3659,88 @@
             href: warehousing/process-guide-framework.md
           - name: Assign step icons and titles
             href: warehousing/step-icons-titles.md
-      - name: Warehouse setup
+      - name: Warehouse configuration
         items:
-        - name: Warehouse configuration
+        - name: Warehouse configuration overview
+          href: warehousing/warehouse-configuration.md
+        - name: Set up a warehouse by using a warehouse configuration template
+          href: inventory/warehouse-template.md
+        - name: Control work by using work templates and location directives
+          href: warehousing/control-warehouse-location-directives.md
+        - name: Work with location directives
+          href: warehousing/create-location-directive.md
+        - name: Test location directives with acceptance tests
+          href: warehousing/location-directive-acceptance-tests.md
+        - name: Configure product filters for warehouse transactions
+          href: warehousing/filters-and-filter-codes.md
+        - name: Location stocking limits
+          href: warehousing/location-stocking-limits.md
+        - name: Wave generation and processing
           items:
-          - name: Warehouse configuration overview
-            href: warehousing/warehouse-configuration.md
-          - name: Set up a warehouse by using a warehouse configuration template
-            href: inventory/warehouse-template.md
-          - name: Control work by using work templates and location directives
-            href: warehousing/control-warehouse-location-directives.md
-          - name: Work with location directives
-            href: warehousing/create-location-directive.md
-          - name: Test location directives with acceptance tests
-            href: warehousing/location-directive-acceptance-tests.md
-          - name: Configure product filters for warehouse transactions
-            href: warehousing/filters-and-filter-codes.md
-          - name: Location stocking limits
-            href: warehousing/location-stocking-limits.md
-          - name: Wave generation and processing
-            items:
-            - name: Configure wave processing example
-              href: warehousing/tasks/configure-wave-processing.md
-            - name: Warehouse parameters for wave processing
-              href: warehousing/wave-warehouse-parameters.md
-            - name: Wave templates
-              href: warehousing/wave-templates.md
-            - name: Wave step codes
-              href: warehousing/wave-step-codes.md
-            - name: Wave template grouping
-              href: warehousing/wave-template-grouping.md
-            - name: Wave allocation
-              href: warehousing/wave-allocation-method.md
-            - name: Schedule work creation during wave
-              href: warehousing/configure-wave-schedule-work-creation.md
-            - name: Wave execution notifications
-              href: warehousing/wave-execution-notifications.md
-            - name: Wave label printing
-              href: warehousing/configure-wave-label-printing.md
-            - name: Schedule wave label printing during wave
-              href: warehousing/configure-task-based-wave-label-printing.md
-            - name: Containerization
-              href: warehousing/wave-containerization.md
-            - name: Container packing strategies
-              href: warehousing/container-packing-strategy-overview.md
-          - name: Auto-update shipments
-            href: warehousing/auto-update-shipment.md
-          - name: Create a location profile
-            href: warehousing/tasks/create-location-profile.md
-          - name: Configure locations in a WMS-enabled warehouse
-            href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-          - name: Warehouse location status
-            href: warehousing/warehouse-location-status.md
-          - name: Additional location zones
-            href: warehousing/additional-location-zones.md
-          - name: Schedule load utilization
-            href: warehousing/schedule-load-utilization.md
-          - name: Schedule workload capacity
-            href: warehousing/schedule-workload-capacity.md
-          - name: Set up dispositions codes
-            href: warehousing/tasks/set-up-dispositions-codes.md
-          - name: Unit of measure and stocking policies
-            href: warehousing/unit-measure-stocking-policies.md
-          - name: Warehouse Power BI content
-            href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-          - name: System grouping on an open work list
-            href: warehousing/system-group-on-open-work-list.md
-          - name: Document routing label layouts
-            href: warehousing/document-routing-layout-for-license-plates.md
-          - name: GS1 bar codes and QR codes
-            href: warehousing/gs1-barcodes.md
-          - name: Set up warehouse for transfer orders
-            href: warehousing/transfer-orders-warehouse.md
-        - name: Upgrade and migration
-          items:
-          - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
-            href: warehousing/upgrade-migration-warehouse-management-processes.md
-      - name: Warehousing telemetry 
+          - name: Configure wave processing example
+            href: warehousing/tasks/configure-wave-processing.md
+          - name: Warehouse parameters for wave processing
+            href: warehousing/wave-warehouse-parameters.md
+          - name: Wave templates
+            href: warehousing/wave-templates.md
+          - name: Wave step codes
+            href: warehousing/wave-step-codes.md
+          - name: Wave template grouping
+            href: warehousing/wave-template-grouping.md
+          - name: Wave allocation
+            href: warehousing/wave-allocation-method.md
+          - name: Schedule work creation during wave
+            href: warehousing/configure-wave-schedule-work-creation.md
+          - name: Wave execution notifications
+            href: warehousing/wave-execution-notifications.md
+          - name: Wave label printing
+            href: warehousing/configure-wave-label-printing.md
+          - name: Schedule wave label printing during wave
+            href: warehousing/configure-task-based-wave-label-printing.md
+          - name: Containerization
+            href: warehousing/wave-containerization.md
+          - name: Container packing strategies
+            href: warehousing/container-packing-strategy-overview.md
+        - name: Auto-update shipments
+          href: warehousing/auto-update-shipment.md
+        - name: Create a location profile
+          href: warehousing/tasks/create-location-profile.md
+        - name: Configure locations in a WMS-enabled warehouse
+          href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+        - name: Warehouse location status
+          href: warehousing/warehouse-location-status.md
+        - name: Additional location zones
+          href: warehousing/additional-location-zones.md
+        - name: Schedule load utilization
+          href: warehousing/schedule-load-utilization.md
+        - name: Schedule workload capacity
+          href: warehousing/schedule-workload-capacity.md
+        - name: Set up dispositions codes
+          href: warehousing/tasks/set-up-dispositions-codes.md
+        - name: Unit of measure and stocking policies
+          href: warehousing/unit-measure-stocking-policies.md
+        - name: Warehouse Power BI content
+          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+        - name: System grouping on an open work list
+          href: warehousing/system-group-on-open-work-list.md
+        - name: Document routing label layouts
+          href: warehousing/document-routing-layout-for-license-plates.md
+        - name: GS1 bar codes and QR codes
+          href: warehousing/gs1-barcodes.md
+        - name: Set up warehouse for transfer orders
+          href: warehousing/transfer-orders-warehouse.md
+      - name: Warehousing administration
         items:
-        - name: Enable warehousing telemetry with Application Insights
-          href: warehousing/application-insights-warehousing.md
-        - name: Monitor Warehouse Management usage and performance
-          href: warehousing/application-insights-wma.md
+        - name: Message processor messages for warehouse management processes
+          href: warehousing/warehouse-message-processor-messages.md
+        - name: Warehousing telemetry 
+          items:
+          - name: Enable warehousing telemetry with Application Insights
+            href: warehousing/application-insights-warehousing.md
+          - name: Monitor Warehouse Management usage and performance
+            href: warehousing/application-insights-wma.md
+        - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
+          href: warehousing/upgrade-migration-warehouse-management-processes.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
