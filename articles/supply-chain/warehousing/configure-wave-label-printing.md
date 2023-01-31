@@ -36,7 +36,7 @@ Wave label printing offers the following enhancements:
 - Reprint labels from both mobile devices and the rich client.
 - Void labels (for example, in short pick scenarios), and reprint them.
 - Clean up the wave label history.
-- Improvements to document routing layouts are shared between document routing layouts and wave label layouts. (For more information, see [Document routing layout for license plates](../warehousing/document-routing-layout-for-license-plates.md).)
+- Improvements to document routing layouts are shared between document routing layouts and wave label layouts. (For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).)
 
 These enhancements make it more efficient to label cartons before palletization. They especially benefit companies that ship to large retailers that automatically confirm order receipts by scanning each carton separately.
 

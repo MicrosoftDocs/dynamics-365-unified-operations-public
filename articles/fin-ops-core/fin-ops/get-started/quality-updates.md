@@ -7,7 +7,7 @@ author: rashmansur
 ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2022-08-19
@@ -30,7 +30,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Proactive quality updates will never downgrade the environment or automatically upgrade from one service update version to another. 
 - Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
 - Notifications that are related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/).
-- Five days before a proactive quality update is applied to an environment, customers are notified that the update will occur.
+- Customers are notified at least five days before a proactive quality update is applied to an environment.
 - Customers can't cancel or postpone proactive quality updates.
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
@@ -42,7 +42,8 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Every service update has at least one PQU release train ongoing or slated to begin. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all of them when you move to a newer version service update. Please check the schedule to determine when a PQU for a service update is scheduled if you plan to upgrade to a newer version service update. 
 
 > [!Note]
-> Standard performance test (tier4), Premium performance test (tier5) sandboxes and production environments will receive PQUs on weekends. 
+> Production environments will receive PQUs on weekends.
+> Standard performance test (tier4) and Premium performance test (tier5) sandboxes will receive PQUs on weekends along with production environments of their region. 
 
 ## Focus on quality updates
 
@@ -96,18 +97,6 @@ Over the first few months of 2023, beginning Jan 15th - we will begin onboarding
 
 ## What is the schedule for sandbox proactive quality updates?
 For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-
-### <a name="schedule"></a> Proactive quality update release: 10.0.29
-**App version: 10.0.1326.70**  
-**Corresponding latest KB article: 750332**
-
-| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule|
-|---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022, November 2 to November 5, 2022, November 13 to November 16, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | October 16 to October 19, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
-| Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022, November 2 to November 5, 2022, November 15 to November 18, 2022, December 5 to December 8, 2022 | January 2 to January 5, 2023 |
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 ### <a name="schedule"></a> Proactive quality update Calendar year 2023 schedule
 
@@ -170,6 +159,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
+**App version: 10.0.1362.124**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
