@@ -340,6 +340,8 @@
           href: accounts-payable/tasks/define-vendor-payment-terms.md
         - name: Create vendor payments by using a payment proposal
           href: accounts-payable/create-vendor-payments-payment-proposal.md
+        - name: Post detailed vendor and customer payments but summarize bank amounts  
+          href: general-ledger/summary-payment.md
         - name: Reverse a vendor payment
           href: accounts-payable/reverse-vendor-payment.md
         - name: Electronic reporting sample vendor checks
@@ -496,6 +498,8 @@
           href: accounts-receivable/set-up-and-process-bridged-payments.md
         - name: Centralized payments for Accounts receivable
           href: accounts-receivable/centralized-payments-accounts-receivable.md
+        - name: Post detailed vendor and customer payments but summarize bank amounts  
+          href: general-ledger/summary-payment.md          
         - name: Deposit customer payments
           href: accounts-receivable/tasks/deposit-customer-payments.md
         - name: Set up and process bridged payments
