@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Commerce 10.0.32 (March 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.32. 
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 01/31/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.32
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.32. This version has a build number of xxx and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.32. This version has a build number of 10.0.1515 and is available on the following schedule:
 
 - **Preview of release:** January 2023
 - **General availability of release (self-update):** February 2023
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Commerce version 10.0.32 includes platform updates. To le
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
+For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=787268).
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
