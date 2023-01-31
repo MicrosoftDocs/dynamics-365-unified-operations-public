@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.32. This version has a build number of 10.0.1406 <!-- KFM: Get new build number -->and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.32. This version has a build number of 10.0.1515 and is available on the following schedule:
 
 - **Preview of release:** January 2023
 - **General availability of release (self-update):** March 2023
@@ -30,7 +30,9 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
-| Warehouse management | Pack shipments with speed and resilience | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Print container labels](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
+| Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
+| Warehouse management | [Pack shipments with speed and resilience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/pack-shipments-speed-resilience) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
+| Warehouse management | Warehouse groups | [Warehouse groups](../warehousing/warehouse-groups.md) | Enabled by default |
 
 ## Feature enhancements included in this release
 
@@ -176,12 +178,13 @@ We have recently added or significantly updated the following help articles. The
 
 | Feature area | New or updated articles |
 |---|---|
-| Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
+| Master planning | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) |
+| Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
 | Supply Chain Management development | [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
-| Warehousing telemetry | [Monitor Warehouse Management usage and performance](warehousing/application-insights-monitor-usage-performance.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
+| Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)
 
 ## Additional resources
 
@@ -189,15 +192,17 @@ We have recently added or significantly updated the following help articles. The
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of Finance and Operations apps (March 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md) <!-- KFM: Confirm link -->.
 
+<!-- KFM: Get new KB link
+
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525) <!-- KFM: Get new KB link -->.
+For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).  -->
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/) <!-- KFM: Confirm link -->. We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

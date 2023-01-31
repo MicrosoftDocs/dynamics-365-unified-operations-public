@@ -31,7 +31,7 @@ This procedure demonstrates how to confirm sales orders. You'll be shown how to 
 
 
 ## Confirm a single sales order
-1. Go to **Navigation pane > Modules > Sales and marketing > Sales orders > All sales orders**.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 2. In the list, find and select the order that you want to confirm.
 3. Click the link on the sales order number to open the selected order.
 4. On the **Action Pane**, click **Sell**.
