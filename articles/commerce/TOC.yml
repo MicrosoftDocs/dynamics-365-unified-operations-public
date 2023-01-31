@@ -18,10 +18,6 @@
           href: get-started/whats-new-commerce-10-0-31.md
         - name: Commerce 10.0.30 (November 2022)
           href: get-started/whats-new-commerce-10-0-30.md
-        - name: Commerce 10.0.29 (October 2022)
-          href: get-started/whats-new-commerce-10-0-29.md
-        - name: Commerce 10.0.28 (July 2022)
-          href: get-started/whats-new-commerce-10-0-28.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -404,8 +400,10 @@
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Commerce offline implementation and troubleshooting
+          - name: Commerce offline implementation considerations
             href: dev-itpro/implementation-considerations-offline.md
+          - name: Commerce offline implementation troubleshooting
+            href: dev-itpro/implementation-offline-troubleshooting.md
           - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
@@ -418,7 +416,7 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management improvements
+          - name: Cash management overview
             href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md

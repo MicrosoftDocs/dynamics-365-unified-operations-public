@@ -214,7 +214,7 @@ You are then able to review the final status of each load line in the wave and c
 
 The way the system displays your wave processing status messages depends on how you have set the **Create wave processing history log** option on the **Warehouse management parameters** page.
 
-- When **Create wave processing history log** is set to *No*, the load line status messages are shown in the **Infolog**.
+- When **Create wave processing history log** is set to *No*, the load line status messages are shown in the Action center.
 - When **Create wave processing history log** is set to *Yes*, the load line status messages are shown on the **Wave processing history log** page. To view the log, go to **Warehouse management \> Outbound waves \> Wave processing history log**.
 
 ## Additional resources

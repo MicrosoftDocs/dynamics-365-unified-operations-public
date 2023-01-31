@@ -15,8 +15,6 @@ ms.custom: bap-template
 # Supply risk assessment overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 Supply risk assessment for Microsoft Dynamics 365 Supply Chain Management lets you identify supply risks, so that you can act to help prevent supply chain disruptions.
 

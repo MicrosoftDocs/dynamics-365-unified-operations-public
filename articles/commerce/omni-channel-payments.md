@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 8.1.3
 # Omni-channel payments overview
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 

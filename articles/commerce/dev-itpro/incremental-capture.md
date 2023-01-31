@@ -20,7 +20,6 @@ ms.search.industry: Retail
 # Incremental capture for order invoicing
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This article also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
 

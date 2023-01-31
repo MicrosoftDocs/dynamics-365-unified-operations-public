@@ -5,7 +5,6 @@ author: GalynaFedorova
 ms.author: gfedorova 
 ms.reviewer: kmaybac
 ms.search.form: WHSWarehouseInitiationWizard, WHSManagementInitiationWizard, WHSImplementationWorkspace, WHSImplementationTaskListPage
-ms.service: dynamics-365
 ms.topic: how-to
 ms.date: 11/09/2022
 audience: Application User
@@ -16,7 +15,6 @@ ms.custom: bap-template
 # Get started with setting up the Warehouse management module
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This article explains how to work with the built-in wizards and checklists that will help you quickly and efficiently set up and configure the **Warehouse management** module.
 

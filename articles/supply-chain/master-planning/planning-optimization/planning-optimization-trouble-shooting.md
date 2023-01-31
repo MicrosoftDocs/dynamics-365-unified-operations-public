@@ -4,7 +4,7 @@
 title: Troubleshoot Planning Optimization
 description: This article describes how to fix issues that you might encounter while working with Planning Optimization.
 author: t-benebo
-ms.date: 05/07/2020
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Troubleshoot Planning Optimization 
+# Troubleshoot Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
 
@@ -37,6 +37,16 @@ This article describes how to fix common issues that you might encounter while w
 Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
+
+## Installation of the Planning Optimization add-in fails due to user account issues
+
+To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
+
+> Current user does not have enough permission or missing licenses on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
+
+> Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
+
+**Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started.md#prerequisites).
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 

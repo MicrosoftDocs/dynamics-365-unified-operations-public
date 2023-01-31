@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure shows you how to create a bank account for a vendor. You can use this procedure in demo data company USMF.
 
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Vendors > All vendors**.
+1. Go to **Procurement and sourcing > Vendors > All vendors**.
 2. Select the vendor that you want to create a bank account for, and then click the link on the **Vendor account ID** field.
 3. On the **Action Pane**, click **Vendor**.
 4. Click **Bank accounts**.

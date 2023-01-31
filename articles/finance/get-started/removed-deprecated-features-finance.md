@@ -3,8 +3,8 @@
 
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
-author: kfend
-ms.date: 10/11/2022
+author: twheeloc
+ms.date: 01/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,11 +15,11 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-02 
 ms.dyn365.ops.version: Platform update 33
 
@@ -63,7 +63,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance will no longer receive support with bug fixes. Customers will be asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). In October 2023, the Revenue recognition feature will no longer be available. Customers will be asked to move to the improved Subscription billing functionality. For the bundle feature as part of revenue recognition, there is no replacement functionality planned at this time.|
+| **Status** | Deprecated: After April 2023, the Revenue recognition functionality in Dynamics 365 Finance will no longer receive support with bug fixes. Customers will be asked to use the improved functionality, [Subscription billing](../../finance/accounts-receivable/subscription-billing-summary.md). In October 2023, the Revenue recognition feature will no longer be available. Customers will be asked to move to the improved Subscription billing functionality. The bundle feature, which is part of revenue recognition, is planned to be replaced and released as a separate feature available in preview Summer 2023.|
 
 ## Features removed or deprecated in the Finance 10.0.29 release
 

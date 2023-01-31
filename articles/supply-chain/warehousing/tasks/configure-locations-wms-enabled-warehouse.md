@@ -23,7 +23,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Create a new warehouse
 
-1. Go to **Navigation pane \> Modules \> Inventory management \> Setup \> Inventory breakdown \> Warehouses**.
+1. Go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**.
 2. Select **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.
@@ -34,7 +34,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define a location format
 
-1. Go to **Navigation pane \> Modules \> Warehouse management \> Setup \> Warehouse >Location formats**. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these components could be *aisle*, *rack*, *shelf*, and *bin*.
+1. Go to **Warehouse management \> Setup \> Warehouse >Location formats**. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these components could be *aisle*, *rack*, *shelf*, and *bin*.
 2. Select **New**.
 3. In the **Location format** field, type a value.
 4. In the **Name** field, type a value.
@@ -57,7 +57,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define location types
 
-1. Go to **Navigation pane \> Modules \> Warehouse management \> setup \> Warehouse \> Location types**. Location types can be used as filtering options to control the different warehouse management processes. As a minimum, you must create staging and final shipping location types in order to define the outbound warehouse management process.
+1. Go to **Warehouse management \> setup \> Warehouse \> Location types**. Location types can be used as filtering options to control the different warehouse management processes. As a minimum, you must create staging and final shipping location types in order to define the outbound warehouse management process.
 2. Select **New**.
 3. In the **Location** type field, type a value.
 4. In the **Description** field, type a value.
@@ -65,7 +65,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define location profile
 
-1. Go to **Navigation pane \> modules \> Warehouse management \> Setup \> Warehouse \> Location profiles**. The definition of location profiles is very important. Grouped locations capacity can be controlled here, as can the policies related to what inventory gets stored and how it's stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable WMS.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**. The definition of location profiles is very important. Grouped locations capacity can be controlled here, as can the policies related to what inventory gets stored and how it's stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable WMS.
 2. Select **New**.
 3. In the **Location profile ID** field, type a value.
 4. In the **Name** field, type a value.
@@ -83,7 +83,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Enable warehouse management parameters
 
-1. Go to **Navigation pane \> Modules \> Warehouse management \> Setup \> Warehouse management parameters**. To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type.  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to "Picked".
+1. Go to **Warehouse management \> Setup \> Warehouse management parameters**. To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type.  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to "Picked".
 2. Expand the **Location profiles** section.
 3. In the **User location** field, select the drop-down button to open the lookup.
 4. In the list, select the link in the selected row.
@@ -96,7 +96,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define warehouse zone groups
 
-1. Go to **Navigation pane \> Modules \> Warehouse management \> Setup \> Warehouse \> Warehouse zone groups**. Warehouse zones can be used as filters for options to control the different warehouse management processes. You need to create a zone group before you can define a zone.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouse zone groups**. Warehouse zones can be used as filters for options to control the different warehouse management processes. You need to create a zone group before you can define a zone.
 2. Select **New**.
 3. In the **Zone group ID** field, type a value.
 4. In the **Zone group name** field, type a value.
@@ -104,7 +104,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Define Warehouse zones
 
-1. Go to **Navigation pane \> Modules \> Warehouse management \> Setup \> Warehouse \> Zones**.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Zones**.
 2. Select **New**.
 3. In the **Zone ID** field, type a value.
 4. In the **Zone name** field, type a value.
@@ -115,7 +115,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 
 ## Create locations using the Location setup wizard
 
-1. Go to **Navigation pane \> Modules \> Warehouse management \> Setup \> Warehouse \> Location setup wizard**.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location setup wizard**.
 2. In the **Warehouse** field, select the drop-down button to open the lookup.
 3. In the list, find and select the desired record.
 4. In the list, select the link in the selected row.

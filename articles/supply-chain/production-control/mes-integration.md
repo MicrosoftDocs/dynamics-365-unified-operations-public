@@ -57,9 +57,11 @@ You can enable any or all of the following processes for integration.
 
 ## Monitor incoming messages
 
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There you can view, process, and troubleshoot issues.
+To monitor the incoming MES messages to the system, go to **Production control \> Setup \> Manufacturing execution \> Manufacturing execution systems integration**.
 
 All messages for a specific production order are processed in the sequence they are received. However, messages for different production orders may not be processed in the received sequence because batch jobs are processed in parallel. In case of failure, the batch job will attempt to process each message three times before setting it to *Failed* status.
+
+The **Manufacturing execution systems integration** page works in the same way as the **Message processor messages** page and represents very similar functionality. (It even shows MES messages in addition to other types of messages.) For information about how to use either page to review messages, find and fix failed messages, and more, see [Message processor messages page](../supply-chain-dev/message-processor.md#message-processor-page)
 
 ## Call the API
 

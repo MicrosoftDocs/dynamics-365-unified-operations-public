@@ -4,26 +4,16 @@
 title: POS user interface visual configurations
 description: This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
-ms.date: 09/22/2020
+ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTillLayout
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 ---
 
 # POS user interface visual configurations
@@ -98,7 +88,7 @@ At startup, the POS application automatically selects the closest layout size th
 - **Layout type** – The POS application can show its UI in various modes to provide the best user experience on a given device.
 
     - **Modern POS – Full** – Full layouts are typically best for larger displays, such as desktop monitors and tablets. You can select the UI elements to include, specify the size and placement of those elements, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
-    - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels.
+    - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels. Certain operations that need higher screen resolutions such as reports and inventory management aren't supported in the compact layout. 
 
 - **Width/Height** – These values represent the effective screen size, in pixels, that is expected for the layout. Remember that some operating systems use scaling for high-resolution displays.
 

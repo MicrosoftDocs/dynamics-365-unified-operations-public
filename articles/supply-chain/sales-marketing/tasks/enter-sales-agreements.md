@@ -31,7 +31,7 @@ This article explains how to create a sales agreement that commits one of your c
 
 
 ## Set up sales agreement header
-1. In the navigation pane, go to **Modules > Sales and marketing > Sales agreements > Sales agreements**.
+1. Go to **Sales and marketing > Sales agreements > Sales agreements**.
 2. Select **New**.
 3. In the **Customer account** field, select the desired record from the drop-down menu.
 4. In the **Sales agreement classification** field, select the desired record from the drop-down menu.
