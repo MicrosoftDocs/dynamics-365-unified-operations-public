@@ -2,7 +2,7 @@
 title: Address setup for Latin America
 description: This article provides information about how to use the LATAM extension from your address setup.
 author: cpicon85 
-ms.date: 01/30/2023
+ms.date: 01/31/2023
 ms.topic: article
 ms.reviewer: kfend
 ms.author: v-cpicon 
@@ -10,6 +10,9 @@ ms.custom: bap-template
 --- 
 
 # Address setup for Latin America
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Each Latin American country has a tax identification ID to identify its taxpayers. This article explains how to associate the tax identification ID with each country or region, state or province, and county by using the LATAM extension from the **Address setup** page.
 
