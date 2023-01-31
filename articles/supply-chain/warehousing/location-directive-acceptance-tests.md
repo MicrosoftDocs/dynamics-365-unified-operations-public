@@ -39,7 +39,7 @@ Follow these steps to set up an acceptance test.
 1. On the **Location directive acceptance tests** page, follow one of these steps:
 
     - To create a new test, select **New** on the Action Pane.
-    - To edit an existing text, select it in the list pane, and then select **Edit** on the Action Pane.
+    - To edit an existing test, select it in the list pane, and then select **Edit** on the Action Pane.
     - To copy an existing test, select the source test in the list pane, and then select **Copy** on the Action Pane. This step can be useful when you must create a new acceptance test that is a variation of an existing test.
 
 1. On the header of the new or selected test, set the following fields:
@@ -98,7 +98,7 @@ After you set up your tests, you can run them, either one by one or all at once.
 1. After the tests have been run, the list pane is updated to indicate the most recent result of each test. To inspect the results of a test, select the test in the list pane, and then select the **Results** FastTab. The grid shows the result of each run of the test. For each result, the following information is provided:
 
     - **Result** – The result of the test: *Passed*, *Failed* or *Skipped*.
-    - **Resulting location** – The location that was found by the test. If no location was found, thid field is blank.
+    - **Resulting location** – The location that was found by the test. If no location was found, this field is blank.
     - **Duration (ms)** – The duration of the test in milliseconds (ms). This field also indicates how quickly the system will be able to process your directives during daily operation. For efficient warehouse operations, you should design your location directives so that they can be processed as quickly as possible. One typical cause of a slow response is the use of location directive queries where the defined ranges or sort orders don't match an index on the table. (The system will warn you if you try to save a query that is configured in this way.)
     - **Locations evaluated** – The number of locations that were evaluated during the test. For efficient warehouse operations, you should try to have as few locations as possible evaluated. One way to minimize the number of evaluated locations is to have many location directives, the first of which are the most specific and the last of which are the most general. You can also segment your warehouse by keeping certain types of items in dedicated zones. This approach can help you avoid scanning the whole warehouse every time.
     - **Created date and time** – The date and time when the test was run.
