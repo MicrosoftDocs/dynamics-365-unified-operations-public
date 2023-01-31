@@ -30,6 +30,9 @@ Use the steps in this article to configure SQL Server Reporting Services (SSRS) 
 
 4. Click the **Service Account** tab and verify that the settings match the following graphic.
 
+    >[!IMPORTANT]
+    > SQL Server Reporting Services 2019 no longer allows choosing the **Local System** account. Instead you need to use **NETWORK SERVICE** account.
+    
     [![Service account tab.](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
 
 5. Click the **Web Service URL** tab and verify that the settings match the following graphic.

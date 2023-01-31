@@ -535,7 +535,7 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
         <Provider>Microsoft Enhanced Cryptographic Provider v1.0</Provider>
         <CertificateType>DocumentEncryptionCert</CertificateType>
         <KeyUsage>DataEncipherment</KeyUsage>
-        <EnhancedKeyUsage>DocumentEncryption</EnhancedKeyUsage>
+        <EnhancedKeyUsage>Document Encryption</EnhancedKeyUsage>
         <Thumbprint></Thumbprint>
         <ProtectTo>contoso\D365Admins</ProtectTo>
     </Certificate>
