@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: Reza-Assadi
-ms.date: 10/20/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -11,11 +11,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.11
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-ms.search.form: RetailITWorkspace
+
 ---
 
 # Dynamics 365 Commerce component versioning requirements
@@ -38,7 +34,9 @@ To ensure compatibility between all Commerce components that are serviced and de
 
     For example, if Commerce headquarters and finance and operations apps are on version 10.0.30, Commerce Scale Unit must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
 
-- **Commerce Scale Unit must be on the same version as, or an later version than, Modern Point of Sale (MPOS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+
+- **Commerce Scale Unit must be on the same version as, or a later version than, the Store Commerce app and/or Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+
 
     For example, if Commerce Scale Unit is on version 10.0.30, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
 

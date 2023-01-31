@@ -1,15 +1,15 @@
 ---
 title: Store Commerce app
-description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
+description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: josaw1
-ms.date: 10/25/2022
+ms.date: 01/30/2022
 ms.topic: article
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-01
-ms.dyn365.ops.version: AX 10.0.25
+
 ---
 
 # Store Commerce app
@@ -143,7 +143,7 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 
 ### Prerequisites
 
-- Windows 10 version 17763.0 or later, Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
+- Windows 10 version 17763.0 or later (Pro, Enterprise, and Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
@@ -170,26 +170,29 @@ You can also use the **help** command in PowerShell to find information about al
 
 | Parameter | Description |
 |---|---|
-| installoffline | Deploy the offline database. |
-| sqlservername | Specify the name of the SQL Server instance that Store Commerce uses in offline mode. If you don't specify this parameter, the installer will use a default instance. |
-| skipsqlfulltextcheck | Skip validation of the SQL Full-Text Search that is required for offline deployment. |
-| trustsqlservercertificate | Trust the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
-| enablewebviewdevtools | Enable developer tools for Store Commerce. If you don't specify this parameter, developer tools will be enabled only if Windows Developer Mode is enabled. |
-| retailserverurl | Specify the default Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
-| useremoteappcontent | Use the remote application content to download the Store Commerce app content from CPOS that is hosted in CSU. By default, the local application content that is deployed with Store Commerce is used. |
-| skipversioncheck | Skip the validation during downgrade. |
-| skipurlcheck | Skip the validation of URLs that are passed to the installer. |
-| logdirectorypath | Specify the path of the log's directory. |
-| config | Specify the path of the configuration file that will be used as part of the installation. |
-| verbosity | Deploy the offline database. |
-| help | Show parameter information.|
-| version | Show information about the app version. |
+| installoffline | Deploys the offline database. |
+| sqlservername | Specifies the name of the SQL Server instance that Store Commerce uses in offline mode. If you don't specify this parameter, the installer will use a default instance. |
+| skipsqlfulltextcheck | Skips validation of the SQL Full-Text Search that is required for offline deployment. |
+| trustsqlservercertificate | Trusts the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
+| enablewebviewdevtools | Enables developer tools for Store Commerce. If you don't specify this parameter, developer tools will be enabled only if Windows Developer Mode is enabled. |
+| retailserverurl | Specifies the default Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
+| useremoteappcontent | Uses the remote application content to download the Store Commerce app content from CPOS that is hosted in CSU. By default, the local application content that is deployed with Store Commerce is used. |
+| disableaadauthentication | Disables the Azure Active Directory (Azure AD) authentication that is used by default during device authentication and use Retail authentication (Operation ID and PIN) to activate the device. This parameter is used for on-premises deployments that use Active Directory Federation Services (ADFS) authentication. |
+| skipversioncheck | Skips the validation during downgrade. |
+| skipurlcheck | Skips the validation of URLs that are passed to the installer. |
+| logdirectorypath | Specifies the path of the log's directory. |
+| config | Specifies the path of the configuration file that will be used as part of the installation. |
+| verbosity | Deploys the offline database. |
+| help | Shows parameter information.|
+| version | Shows information about the app version. |
 
 ### Activate Store Commerce
 
 To activate Store Commerce after installation, follow these steps.
 
-1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application.
+1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application. 
+    > NOTE
+    > The Store Commerce app shouldn't be run with elevated privileges, and shouldn't be run from an account with elevated privileges.
 1. On the application's start page, if you select **Remote app content** as the deployment option, enter the CPOS URL, and then select **Save**. You can find the CPOS URL on the environment details page in LCS or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
 1. Activate Store Commerce by following the steps in the [POS activation guide](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
