@@ -33,6 +33,7 @@ The following table lists the features that are included in this release. We mig
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
 | Warehouse management | [Pack shipments with speed and resilience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/pack-shipments-speed-resilience) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
 | Warehouse management | Warehouse groups | [Warehouse groups](../warehousing/warehouse-groups.md) | Enabled by default |
+| Warehouse management | Warehouse-specific inventory transactions | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Feature management:<br>*(Preview) Warehouse-specific inventory transactions* |
 
 ## Feature enhancements included in this release
 
