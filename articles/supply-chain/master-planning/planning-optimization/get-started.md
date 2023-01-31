@@ -29,7 +29,7 @@ Planning Optimization is currently available in the following Azure geographies:
 
 If you can run master planning by using your current license, you don't have to buy an additional license to start to use Planning Optimization.
 
-## Install and enable Planning Optimization
+## <a name="install-enable-po"></a>Install and enable Planning Optimization
 
 To use Planning Optimization, you must make sure your system has all of the prerequisites in place and then enable its license key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
 
