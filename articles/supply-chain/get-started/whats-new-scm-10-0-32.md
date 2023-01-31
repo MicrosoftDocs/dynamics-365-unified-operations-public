@@ -30,7 +30,9 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
+| Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
 | Warehouse management | [Pack shipments with speed and resilience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/pack-shipments-speed-resilience) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
+| Warehouse management | Warehouse groups | [Warehouse groups](../warehousing/warehouse-groups.md) | Enabled by default |
 
 ## Feature enhancements included in this release
 
@@ -176,12 +178,13 @@ We have recently added or significantly updated the following help articles. The
 
 | Feature area | New or updated articles |
 |---|---|
-| Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
+| Master planning | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) |
+| Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
 | Supply Chain Management development | [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
-| Warehousing telemetry | [Monitor Warehouse Management usage and performance](warehousing/application-insights-monitor-usage-performance.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
+| Warehouse management | [Monitor Warehouse Management usage and performance](warehousing/application-insights-monitor-usage-performance.md) |
 
 ## Additional resources
 
