@@ -2,7 +2,7 @@
 title: Tax ID types for Latin America 
 description: This article provides information about the tax ID type configuration for Latin America. 
 author: Fhernandez0088
-ms.date: 11/08/2022
+ms.date: 01/31/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -10,6 +10,9 @@ ms.custom: bap-template
 ---
 
 # Tax ID types for Latin America
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Use this configuration to enter valid tax ID types in each country and identify the entities that the company operates with. These entities can include customers, vendors, contacts, banks, and employees.
 
