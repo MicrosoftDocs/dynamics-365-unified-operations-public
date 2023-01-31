@@ -2,7 +2,7 @@
 title: Taxpayer types for Latin America 
 description: This article provides information about the taxpayer type configuration for Latin America. 
 author: Fhernandez0088
-ms.date: 11/07/2022
+ms.date: 01/31/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -10,6 +10,9 @@ ms.custom: bap-template
 ---
 
 # Taxpayer types for Latin America 
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 You can set up the types of tax-responsible entities that the company operates with. These entities can include customers, vendors, employees, and even the company itself.
  
