@@ -31,7 +31,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 
 ## Create and post a new trade agreement journal
 
-1. Go to **Navigation pane > Modules > Sales and marketing > Prices and discounts > Trade agreement journals**.
+1. Go to **Sales and marketing > Prices and discounts > Trade agreement journals**.
 2. Click **New**.
 3. In the **Name** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
@@ -62,7 +62,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 
 ## View trade agreements for a product
 
-1. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
+1. Go to **Product information management > Products > Released products**.
 2. In the list, find and select the product whose price you have just updated.
 3. On the **Action Pane**, click **Sell**.
 4. Click **View trade agreements**.

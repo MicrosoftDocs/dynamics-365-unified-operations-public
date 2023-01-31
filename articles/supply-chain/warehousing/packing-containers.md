@@ -240,7 +240,7 @@ Follow these steps to set up a packing profile.
     - **Container ID mode** – Select whether a container ID should automatically be generated when a container is created, or whether it must be manually created.
     - **Container type** – Select the container type that is used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.
-    - **Print container label at container creation** – Select this checkbox to automatically print a container label when a new container is created. For more information about how to set up your container label layouts, see [Print container labels](print-container-labels.md).
+    - **Print container label at container creation** – Select this checkbox to automatically print a container label when a new container is created. For more information about how to set up your container label layouts, see [Container label layouts and printing](print-container-labels.md).
 
 ### Set up warehouse workers
 

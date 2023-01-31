@@ -31,7 +31,7 @@ This article explains how to record receipt of goods directly on a purchase orde
 
 
 ## Prepare a new purchase order for receipt of goods
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Purchase orders > All purchase orders**.
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 2. Select **New**.
 3. In the **Vendor account** field, enter `US-101`.
 4. Select **OK**.
