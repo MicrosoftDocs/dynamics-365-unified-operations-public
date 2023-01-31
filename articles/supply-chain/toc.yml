@@ -3665,8 +3665,6 @@
             href: warehousing/warehouse-configuration.md
           - name: Set up a warehouse by using a warehouse configuration template
             href: inventory/warehouse-template.md
-          - name: Warehouse groups
-            href: warehousing/warehouse-groups.md
           - name: Control work by using work templates and location directives
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
