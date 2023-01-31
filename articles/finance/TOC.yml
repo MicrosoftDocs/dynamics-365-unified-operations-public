@@ -3239,7 +3239,7 @@
           - name: Tax ID types for Latin America
             href: localizations/ltm-core-tax-id-type.md
           - name: Document class letter for Latin America
-            href: localizations/lotm-core-document-class-letter.md
+            href: localizations/ltm-core-document-class-letter.md
           - name: Customer sets for Latin America
             href: localizations/ltm-core-customers-set.md
           - name: Vendor set configuration
