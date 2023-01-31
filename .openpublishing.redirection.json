@@ -19826,6 +19826,11 @@
       "source_path": "articles/supply-chain/pim/tasks/create-new-product.md",
       "redirect_url": "/dynamics365/supply-chain/pim/product-information",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/application-insights-wma.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance",
+      "redirect_document_id": "false"
     }
   ]
 }
