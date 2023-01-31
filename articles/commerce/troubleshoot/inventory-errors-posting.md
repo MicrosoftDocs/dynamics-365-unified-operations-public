@@ -9,7 +9,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
-ms.search.form: Retail_Statement
+ms.search.form: RetailStatements_Posting
 
 ---
 
