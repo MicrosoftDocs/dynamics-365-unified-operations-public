@@ -14,7 +14,7 @@ ms.search.form: RetailStatements_Posting
 ---
 
 # Statement posting errors due to unavailable inventory or update conflicts
-Error code: SYS103633
+Error code: CannotPickWithEnoughInventory
 
 [!include [banner](../../includes/banner.md)]
 
