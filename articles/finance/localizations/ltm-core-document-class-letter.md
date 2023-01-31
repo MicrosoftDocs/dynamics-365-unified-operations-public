@@ -16,8 +16,7 @@ ms.custom: bap-template
 
 You can create the letter codes that are part of the fiscal documents configuration which is used in transactions with third parties.
 
-> [!NOTE]
-> Document classes without a letter configuration are supported. If a document class doesn't have a letter configuration, the **Prefix** field must be left blank.
+Document classes without a letter configuration are supported. If a document class doesn't have a letter configuration, the **Prefix** field must be left blank.
 
 ## Prerequisites
 
