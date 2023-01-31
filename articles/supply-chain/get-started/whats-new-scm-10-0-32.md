@@ -192,11 +192,9 @@ We have recently added or significantly updated the following help articles. The
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of Finance and Operations apps (March 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md) <!-- KFM: Confirm link -->.
 
-<!-- KFM: Get new KB link
-
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).  -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=787268).
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
