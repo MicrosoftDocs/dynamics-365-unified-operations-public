@@ -4,26 +4,13 @@
 title: Demo data screen layouts in Modern POS (MPOS) and Cloud POS
 description: This article provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 10/05/2017
+ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTillLayout
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
-ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
@@ -92,7 +79,7 @@ The following illustration shows an example of the Welcome screen for a Fabrikam
 A screen layout can have configurations for both full devices and compact devices. Therefore, a user can be assigned to a single screen layout that will work across various sizes and form factors in the store.
 
 - **Modern POS - Full** – Typically, full layouts are best used for larger displays, such as desktop computer monitors or tablets. Users can select the UI elements that the layout includes, specify the size and placement of those elements, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
-- **Modern POS - Compact** – Typically, compact layouts are best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt pane and the totals pane.
+- **Modern POS - Compact** – Typically, compact layouts are best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt pane and the totals pane. Certain operations that need higher screen resolutions such as reports and inventory management aren't supported in the compact layout. 
 
 ### Screen resolutions that are provided
 
