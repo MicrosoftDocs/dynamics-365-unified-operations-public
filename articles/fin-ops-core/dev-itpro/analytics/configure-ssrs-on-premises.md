@@ -1,15 +1,15 @@
 ---
 title: Configure SQL Server Reporting Services for on-premises deployments
 description: This article provides information about configuring SQL Server Reporting Services (SSRS) for an on-premises deployment.
-author: PeterRFriis
-ms.date: 06/23/2017
+author: faix
+ms.date: 01/31/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.custom: 55651
@@ -32,7 +32,7 @@ Use the steps in this article to configure SQL Server Reporting Services (SSRS) 
 
     >[!IMPORTANT]
     > SQL Server Reporting Services 2019 no longer allows choosing the **Local System** account. Instead you need to use **NETWORK SERVICE** account.
-    
+
     [![Service account tab.](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
 
 5. Click the **Web Service URL** tab and verify that the settings match the following graphic.
@@ -90,5 +90,9 @@ Use the steps in this article to configure SQL Server Reporting Services (SSRS) 
 
     [![close reporting services configuration manager.](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
 
+14. For SQL Server 2019 only, you need to manually grant **NETWORK SERVICE** the permissions to read the private keys of these certificates.
+    - DataEncryption
+    - DataSigning
+    - ReportingService
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
