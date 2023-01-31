@@ -2,7 +2,7 @@
 title: Document class letter for Latin America
 description: This article provides information about the document class letter configuration for Latin America.
 author: Fhernandez0088
-ms.date: 11/16/2022
+ms.date: 01/31/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -11,7 +11,11 @@ ms.custom: bap-template
 
 # Document class letter for Latin America
 
-You
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+You can create the letter codes that are part of the fiscal documents configuration which is used in transactions with third parties.
+
 > [!NOTE]
 > Document classes without a letter configuration are supported. If a document class doesn't have a letter configuration, the **Prefix** field must be left blank.
 
