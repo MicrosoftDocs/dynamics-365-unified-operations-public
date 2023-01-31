@@ -56,6 +56,7 @@ You can use the fields at the top of the **Message processor messages** page to 
 
     - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
     - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
+    - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
     - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
 
 - **Message state** – The state of the message. The following states exist:
@@ -84,7 +85,7 @@ Depending on the current state of a message, you can manually process or cancel 
 
 If you want to requeue a message that was previously canceled, select it in the grid, and then select **queue** on the Action Pane. The system will process the message as usual.
 
-## Schedule message processing by using the message processor batch job
+## <a name="processor-batch-job"></a>Schedule message processing by using the message processor batch job
 
 To process a message queue, you must set up a batch job to run it. Usually you'll set up a fixed, regular schedule for processing each queue. However, you can also run any queue on demand. To create and schedule the required batch jobs, follow these steps.
 
@@ -106,7 +107,7 @@ You can configure the number of processor tasks that should be dedicated to each
 1. For the new or selected row, set the **Number of processor tasks** field to the number of processor tasks that should be dedicated to the specified queue. The maximum value is *8*. The minimum value depends on the minimum number of batch threads that are configured for your system (typically *2*).
 1. On the Action Pane, select **Save**.
 
-## Set up business events to deliver alerts for failed processing results
+## <a name="business-events"></a>Set up business events to deliver alerts for failed processing results
 
 You can inquire about failed messages by filtering on the *Failed* (or possibly *Canceled*) value for the **Message state** field, as described earlier in this article. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. To complete this setup, activate the *Message processor message processed* business event on the **Business events catalog** page (**System administration \> Setup \> Business events \> Business events catalog**). As part of the activation process, you'll be directed to specify whether the event is specific to one legal entity or all legal entities. You'll also be directed to provide an endpoint name, which must be defined in advance.
 
