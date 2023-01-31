@@ -1440,6 +1440,8 @@
         href: set-up-clarity.md
       - name: Set up Operational Insights
         href: dev-itpro/operational-insights.md
+      - name: Comparison of ETW and EventLog logger functionality
+        href: dev-itpro/compare-etw-eventlog.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -3018,6 +3020,8 @@
           href: troubleshoot/store-commerce-performance.md
         - name: Extension issues
           href: troubleshoot/store-commerce-extensions.md
+        - name: Sign-in issues
+          href: troubleshoot/store-commerce-sign-in.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
