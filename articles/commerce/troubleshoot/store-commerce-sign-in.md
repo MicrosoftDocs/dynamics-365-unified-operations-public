@@ -2,7 +2,7 @@
 title: Troubleshoot Store Commerce sign-in issues
 description: This article explains how to troubleshoot sign-in issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 01/31/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
