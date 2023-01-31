@@ -51,7 +51,7 @@ This issue might just be a matter of timing. Follow these steps to start the bat
 3. Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
 
 >[!NOTE]
->The data that appears on the **Analytics** tab is not real time and depends on the **Deploy measurement** batch job that runs according to the schedule. 
+>The data that appears on the **Analytics** tab isn't real time and depends on the **Deploy measurement** batch job that runs according to the schedule. 
 
 
 ![Batch jobs.](media/batch-jobs.png)
