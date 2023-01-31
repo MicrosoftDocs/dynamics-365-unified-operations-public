@@ -25,14 +25,14 @@ Sensor Data Intelligence uses data from sensors that are connected to Microsoft 
 
 ## Prerequisites
 
-1. In order to deploy and administer Azure components for Sensor Data Intelligence, you must have one of the following Azure security roles:
+To deploy and administer Azure components for Sensor Data Intelligence, you must meet the following requirements:
 
-- Owner
-- Co-administrator
-- Service administrator
-- Account administrator
-
-2. Only organizational Azure accounts can be used to deploy Sensor Data Intelligence; personal accounts such as Outlook or Gmail cannot be used.
+1. You must sign in using an Azure organizational account that is tied to your Supply Chain Management environment. You can't use a personal Azure account (such as one registered to an Outlook or Gmail address).
+1. Your Azure account must have one of the following security roles:
+    - Owner
+    - Co-administrator
+    - Service administrator
+    - Account administrator
 
 ## Video instructions
 
