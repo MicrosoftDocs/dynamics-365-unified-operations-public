@@ -1000,6 +1000,12 @@
             href: general-ledger/tasks/create-main-account.md
           - name: Allocation terms
             href: general-ledger/main-account-allocation-terms.md
+        - name: Financial tags
+          items: 
+          - name: Financial tags
+            href: general-ledger/financial-tag.md
+          - name: Differences between financial tags and financial dimensions
+            href: general-ledger/financial-tag-financial-dimension.md
         - name: Financial dimensions 
           items:
           - name: Financial dimensions
