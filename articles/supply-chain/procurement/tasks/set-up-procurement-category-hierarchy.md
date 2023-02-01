@@ -33,7 +33,7 @@ This procedure shows you how to create new nodes in a procurement category hiera
 ## Add a new procurement category
 1. Go to **Procurement and sourcing > Procurement categories**.
 2. On the Action Pane, select **Edit category hierarchy**. The current procurement category hierarchy is displayed in the left side of the page. You  are about to modify the hierarchy.  
-3. On the Action Pane, select **New category node**. The system selects the top node by default. If you are running this procedure as a task guide, you can click the Unlock button and select another parent node to insert your new node into. Once that is done, lock the task guide again and then click New category node.  
+3. On the Action Pane, select **New category node**. The system selects the top node by default. If you're running this procedure as a task guide, you can click the Unlock button and select another parent node to insert your new node into. Once that is done, lock the task guide again and then click New category node.  
 4. In the **Name** field, type a value.
 5. In the **Description** field, type a value.
 6. In the **Friendly name** field, type a value. The friendly name is optional. It will be displayed in category lookups together with the category name.  

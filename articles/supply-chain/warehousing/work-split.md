@@ -35,20 +35,13 @@ Work split functionality lets you split large work IDs (that is, work orders tha
 
 ## Turn on the work split functionality
 
-Before you can use the work split functionality, you must turn on the feature and its prerequisite feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on as required.
+Before you can use the work split functionality, you must turn on the feature and its prerequisite feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on as required. Turn on the following features in the following order:
 
-First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Organization-wide work blocking*
+1. *Organization-wide work blocking* (As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off.)
+1. *Work split* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 > [!NOTE]
-> When this feature is activated, a data upgrade is automatically applied after the feature is turned on across all legal entities.
-
-Next, turn on the *Work split* feature, which is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Work split*
+> The first time you turn on the *Organization-wide work blocking* feature, a data upgrade is automatically applied across all legal entities.
 
 ## Enhancements to the Work details and All work pages
 

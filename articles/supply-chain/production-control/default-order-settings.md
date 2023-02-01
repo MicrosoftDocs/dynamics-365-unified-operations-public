@@ -194,7 +194,7 @@ Strict validation applies to **Standard order quantity** values specified on the
 
 ### Turn the strict validation option on or off
 
-To use strict validation, the *Strict validation on default order quantities* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then you can turn this functionality on or off by going to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and searching for the *Strict validation on default order quantities* feature.
+To use strict validation, the *Strict validation on default order quantities* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then you can turn this functionality on or off by going to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and searching for the *Strict validation on default order quantities* feature.
 
 ### Set the validation option
 
