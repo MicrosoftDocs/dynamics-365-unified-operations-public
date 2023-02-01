@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Prorate employee contributions amount 
-description: This article describes how to prorate the employee contributions amount.  
+title: Prorate employee contribution amounts
+description: This article describes how to prorate employee contribution amounts.
 author: twheeloc
 ms.date: 01/23/2023
 ms.topic: article
@@ -27,16 +27,15 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
-# Prorate employee contributions
+# Prorate employee contribution amounts
 
-The employee contribution amounts for Savings and FSA Benefit plans can be prorated based on the number of pay periods available in the benefit period.
+The employee contribution amounts for Savings and FSA benefit plans can be prorated based on the number of pay periods in the benefit period.
 
-To enable proration:
+To enable proration, follow these steps.
 
-1. The **Benefit period** must have a specified **Start** and **End date**.
-2. If, in the **Period configuration**, the previous period is specified, there must be no gap or overlap between the **Benefit periods**.
-3. The **Prorate contribution** option in the **Benefit plans configuration** is selected.
-4. The pay periods must be defined for the payment frequency specified in the employee profile. The pay periods are defined under **Pay cycle dates** tab in **Payment
-frequency** configuration under **Setup**.
+1. Make sure that a start date and end date are specified for the benefit period.
+2. In the period configuration, if the previous period is specified, make sure that there's no gap or overlap between the benefit periods.
+3. In the benefit plans configuration, make sure that the **Prorate contribution** option is selected.
+4. Make sure that pay periods are defined for the payment frequency that's specified in the employee profile. Pay periods are defined on the **Pay cycle dates** tab in the **Payment frequency** configuration under **Setup**.
 
-The maximum annual contribution amount is prorated in the available pay periods for the employee. The maximum amount allowed per pay period is the maximum annual amount, minus the amount contributed thus far, divided by the remaining pay periods.
+The maximum annual contribution amount is prorated in the available pay periods for the employee. The maximum amount that's allowed per pay period is the maximum annual amount, minus the amount that has been contributed so far, divided by the remaining pay periods.
