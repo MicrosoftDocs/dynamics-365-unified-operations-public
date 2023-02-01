@@ -54,7 +54,7 @@ The style of a form determines the level of support for views.
 
         The "Saved views support for workspaces" feature enables saved views to be defined and shared for both modeled workspaces and user-created workspaces.
 
-    - Dialogs        
+    - Dialogs
     - Details portions of Master Details and Transaction Details forms
 
 - Views aren't currently supported on these form types:
@@ -66,12 +66,12 @@ The style of a form determines the level of support for views.
 While most forms will work well with saved views, there are some areas that may require changes to form logic so that views work as expected on these forms without causing confusion. Here are some key items to keep in mind during development of new forms.
 
 ### Custom filters
-Custom filters are controls that are modeled on forms and that cause modifications to the query. Users will have a suboptimal user experience if the integration between views and these custom filters are not implemented, including the views not being marked as having unsaved changes after a custom filter is used and the custom filter value not always aligning to the current view or query.
+Custom filters are controls that are modeled on forms and that cause modifications to the query. Users will have a suboptimal user experience if the integration between views and these custom filters isn't implemented. For example, the views might not be marked as having unsaved changes after a custom filter is used, or the custom filter value might not always be aligned to the current view or query.
 
 Form owners can provide better experiences with custom filters by taking advantage of the following two methods. These methods were introduced specifically to improve custom filter support with saved views.
 
-  - **public void queryFiltersChanged():** This new method is called when the query is rerun by the system after changes to the query (for example, when a view loads or a system filtering mechanism is used). Therefore, the custom filter control has an opportunity to interrogate the mostly recently run query to find any relevant filter and update its value so that it appropriately reflects that query.
-  - **element.formCustomFilterChanged():** This new API is called by the custom filter control when it has changed the query on the user's behalf. When it's called, the system marks the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's **modified()** method if changes to the control immediately cause the query to be refreshed, or to call this API for a custom filter on a button click if the adjustment of one or more custom filters requires a button for the changes to take effect.
+- **public void queryFiltersChanged():** This new method is called when the query is rerun by the system after changes to the query (for example, when a view loads or a system filtering mechanism is used). Therefore, the custom filter control has an opportunity to interrogate the mostly recently run query to find any relevant filter and update its value so that it appropriately reflects that query.
+- **element.formCustomFilterChanged():** This new API is called by the custom filter control when it has changed the query on the user's behalf. When it's called, the system marks the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's **modified()** method if changes to the control immediately cause the query to be refreshed, or to call this API for a custom filter on a button click if the adjustment of one or more custom filters requires a button for the changes to take effect.
 
 ### Relative filter values
 Forms might have to use relative filter conditions to retrieve the appropriate information when the page is loaded. For example, they often have to use filter conditions to restrict data for the current user, current date, and current legal entity. If a form hard-codes a filter to a specific value, any view that is saved with that filter might have issues showing the intended data or being shared with other users. For example, a form hard-codes a "current date" filter to a specific date, that query is saved to a view, and the view is shared with another user. In this case, the view might provide unexpected results, because it will still try to retrieve data from the hard-coded date in the past instead of the current date. Or a filter condition was intended to represent the current user but was hard-coded to a specific user. In this case, when the view is shared with another user, an error might occur when that user tries to load or import the view. 
@@ -93,24 +93,25 @@ For more relative date queries, see [Advanced date queries that use SysQueryRang
 
 ### Improved developer control over the handling of default queries with views
 
-
 #### Giving the default view priority over a menu item query
-If a user navigates to a page using a menu item with an associated query, the system by default will execute the menu item query in place of the default view's query. When this happens, the user is notified by an information message that includes an action to force load the default view's query. Starting version 10.0.32, a new extension point has been added to allow form developers to override this default system behavior for individual forms. 
+By default, if a user navigates to a page by using a menu item that has an associated query, the system will run the menu item's query instead of the default view's query. In this case, the user is notified by an informational message that includes an action to force load the default view's query.
 
-In particular, developers can call the **EnableSavedViewQueryPriority** method from the **FormRunPersonalizationSettings** class pre-super() of init() during the form lifecycle to allow the default view query to have priority over the menu item query. 
+In version 10.0.32, a new extension point has been added to enable form developers to override this default system behavior for individual forms. Specifically, developers can call the **EnableSavedViewQueryPriority** method from the **FormRunPersonalizationSettings** class before **super()** of **init()** during the form lifecycle to give the default view's query priority over the menu item's query. 
 
-When enabled, the default view query will be attempted to be merged with the menu item query during the run() portion of the lifecycle. 
+When this behavior is enabled, the system will try to merge the default view's query with the menu item's query during the **run()** portion of the lifecycle. 
 
 #### Manually handling query merge failures
-As part of the default view rollout during form load, the query associated with the default view goes through a merge process with the default form query (or the default menu item query if the **EnableSavedViewQueryPriority** method has been invoked). If this merge fails, this indicates an incompatibility from the system perspective between the view query and the form (or menu item) query. This can happen, for example, if the view adds a filter on a field that already has a hidden or locked filter applied.
+As part of the default view rollout during form load, the query that's associated with the default view goes through a merge process with the default form's query (or the default menu item's query if the **EnableSavedViewQueryPriority** method has been invoked). A failure to merge the queries indicates an incompatibility, from the system perspective, between the view's query and the form's (or menu item's) query. This incompatibility can occur if, for example, the view adds a filter on a field that a hidden or locked filter is already applied to.
 
-The form may have additional context that allows this incompatibility to be resolved and the view query to be correctly as expected by the user, a new extension point has been added in version 10.0.32 to give developers a fallback method for making these adjustments when needed. Specifically, if the standard query merging fails, developers can replace the implementation of the **OnFailureQueryPersonalizationApply** method to make the needed modifications to the target query. The `_sourceQuery` parameter provides the view query, and the `_targetQuery` represents the query that will be executed when the view with a query personalization is loaded. 
+The form might have additional context that enables this incompatibility to be resolved, so that the view's query can be correctly merged as the user expects. In version 10.0.32, a new extension point has been added to give developers a fallback method for making these adjustments when they're required. Specifically, if the standard query merging fails, developers can replace the implementation of the **OnFailureQueryPersonalizationApply** method to make the required modifications to the target query. The `_sourceQuery` parameter provides the view's query, and the `_targetQuery` represents the query that will be run when the view that has a query personalization is loaded. 
 
-    [Replaceable]
-    public boolean OnFailureQueryPersonalizationApply(Query _sourceQuery, Query _targetQuery)
-    {
-        return false;
-    }
+```
+[Replaceable]
+public boolean OnFailureQueryPersonalizationApply(Query _sourceQuery, Query _targetQuery)
+{
+    return false;
+}
+```
 
 ### Opting forms out of views
 Although this approach isn't generally recommended, as of version 10.0.25, developers can opt an individual form out of saved views support as required. In this case, no view selector will be available on the form, and there will be no publish capabilities.
