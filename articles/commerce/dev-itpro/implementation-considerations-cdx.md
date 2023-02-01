@@ -4,7 +4,7 @@
 title: Commerce Data Exchange implementation guidance
 description: This article provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
-ms.date: 08/26/2021
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod:
 ms.technology:
