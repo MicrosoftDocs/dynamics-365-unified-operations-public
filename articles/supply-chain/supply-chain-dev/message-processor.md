@@ -35,8 +35,7 @@ To use the message processor, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Supply Chain Management 10.0.29 or later.
 - At least one of the following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-    - *Manufacturing execution system integration*
+    - *Manufacturing execution system integration* (As of Supply Chain Management version 10.0.29, this feature is on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
     - *(Preview) Make finished goods physically available before posting to journals*
 
 ## <a name="message-processor-page"></a>Message processor messages page

@@ -92,7 +92,7 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | On by default |
 | Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | On by default |
 | Procurement and sourcing | [Purchasing cXML enhancements](../procurement/purchasing-cxml-enhancements.md) | Mandatory |
-| Procurement and sourcing | [Put vendor on hold for purchase orders](whats-new-scm-10-0-29.md) | Mandatory |
+| Procurement and sourcing | [Put vendor on hold for purchase orders](../procurement/set-up-vendor-accounts.md) | Mandatory |
 | Procurement and sourcing | Request for quotation amendment and cancellation email framework options | Generally available |
 | Procurement and sourcing | [RFQ questions and answers](../procurement/rfq-question.md) | Mandatory |
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | On by default |
@@ -154,7 +154,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | Parent license plates cannot be target license plates | On by default |
 | Warehouse management | [Pick line grouping](../warehousing/pick-line-grouping.md) | On by default |
 | Warehouse management | Purchase order quantity left to load calculation using registered quantities | On by default |
-| Warehouse management | [Quality Management For Warehouse Processes](../inventory/quality-management-for-warehouses-processes.md) | Mandatory|
+| Warehouse management | [Quality Management For Warehouse Processes](../inventory/quality-management-for-warehouses-processes.md) | Mandatory |
 | Warehouse management | [Replenishment over location capacity](../warehousing/replenishment-over-location-capacity.md) | Mandatory |
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default |
 | Warehouse management | Scale unit support for warehouse app work lists | Mandatory |
