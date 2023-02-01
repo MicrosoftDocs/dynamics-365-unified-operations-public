@@ -1,6 +1,6 @@
 ---
 title: Cash out gift card balance for a retail customer
-description: This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Store Commerce app.
+description: This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
@@ -22,7 +22,7 @@ ms.devlang:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Store Commerce app. 
+This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app. 
 
 The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request. 
 
