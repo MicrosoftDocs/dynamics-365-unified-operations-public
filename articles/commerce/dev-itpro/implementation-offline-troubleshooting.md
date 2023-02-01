@@ -4,7 +4,7 @@
 title: Commerce offline implementation troubleshooting
 description: This article provides an overview of troubleshooting for offline implementations of Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 01/12/2023
+ms.date: 02/01/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -29,7 +29,7 @@ For more information about Commerce offline functionality, see [Additional resou
 
 ## Troubleshooting
 
-If the following table doesn't list an error that you're receiving, create a support request so that Microsoft Support can help you fix the issue. This section will be updated with additional errors over time. Therefore, you should review this article before you implement or update Modern POS or Store Commerce registers that use offline databases.
+If the following table doesn't list an error that you're receiving, create a support request so that Microsoft Support can help you fix the issue. This section will be updated with additional errors over time. Therefore, you should review this article before you implement or update Store Commerce app registers that use offline databases.
 
 Note that all troubleshooting errors begin with **Microsoft\_Dynamics\_**. However, in the following table, this prepended string is omitted from the error codes to shorten them.
 
@@ -62,7 +62,7 @@ Note that all troubleshooting errors begin with **Microsoft\_Dynamics\_**. Howev
 
 [Device management implementation guidance](../implementation-considerations-devices.md)
 
-[Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)
 
 [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
