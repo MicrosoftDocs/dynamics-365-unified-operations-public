@@ -2,7 +2,7 @@
 title: Linked refunds of previously approved and confirmed transactions
 description: This article describes how to enable and use Linked refunds.
 author: josaw1
-ms.date: 11/04/2021
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
