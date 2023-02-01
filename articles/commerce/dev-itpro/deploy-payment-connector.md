@@ -71,7 +71,7 @@ After you've uploaded your deployable packages to the LCS asset library, you can
 
 #### Download and run installers on client computers
 
-The self-service package contains the installers for both Hardware Station and the Store Commerce app. After your deployable packages have been applied to your environment, you can download the updated Hardware Station and Store Commerce app installers. For information about how to download Hardware Station and the Store Commerce app and install them on client computers, see [Configure, install, and activate Store Commerce app](../retail-modern-pos-device-activation.md).
+The self-service package contains the installers for both Hardware Station and the Store Commerce app. After your deployable packages have been applied to your environment, you can download the updated Hardware Station and Store Commerce app installers. For information about how to download Hardware Station and the Store Commerce app and install them on client computers, see [Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md).
 
 ## Manual deployment
 
