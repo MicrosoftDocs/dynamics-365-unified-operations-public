@@ -204,7 +204,7 @@ This article explains how to add a new custom column to a POS transaction page u
 
 ## Validate the customization
 
-1. Sign in to MPOS using **000160** as the operator ID and **123** as the password.
+1. Sign in to the Store Commerce app using **000160** as the operator ID and **123** as the password.
 2. Click the **Current transaction** button on the **Welcome** screen.
 3. Add item **(0005)** to the transaction.
 4. The custom column should display the line number.
