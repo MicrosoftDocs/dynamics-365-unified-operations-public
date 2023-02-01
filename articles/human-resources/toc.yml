@@ -620,6 +620,8 @@
         href: hr-benefits-management-overview.md
       - name: Benefits management workspace
         href: hr-benefits-management-workspace.md
+      - name: Benefit bulk update  
+        href: benefit-bulk.md
       - name: Configure Benefits management
         items: 
         - name: Configure Benefits management parameters per company
@@ -668,6 +670,8 @@
             href: hr-benefits-plans-setup.md
           - name: Create worker benefit plans
             href: hr-benefits-plans-worker.md
+          - name: Prorate the employee contribution amount  
+            href: prorate-contributions.md
           - name: Set up future life events
             href: hr-benefits-plans-future-life-events.md
           - name: Set up flex credit programs

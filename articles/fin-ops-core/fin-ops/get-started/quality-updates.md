@@ -29,7 +29,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Exceptions for proactive quality updates are allowed for customers that are regulated by the US Food and Drug Administration (FDA) only.
 - Proactive quality updates will never downgrade the environment or automatically upgrade from one service update version to another. 
 - Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
-- Notifications that are related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/).
+- Notifications that are related to proactive quality updates are posted in the [Message center - Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/#/MessageCenter) and search for Finance.
 - Customers are notified at least five days before a proactive quality update is applied to an environment.
 - Customers can't cancel or postpone proactive quality updates.
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
