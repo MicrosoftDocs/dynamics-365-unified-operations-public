@@ -4,7 +4,7 @@
 title: Support for network peripherals
 description: This article provides an overview of network peripherals that are supported in the store.
 author: BrianShook
-ms.date: 05/26/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
