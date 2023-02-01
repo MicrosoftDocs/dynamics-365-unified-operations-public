@@ -2,7 +2,7 @@
 title: Commerce runtime (CRT) services
 description: This article describes the Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality.
 author: josaw1
-ms.date: 06/04/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
