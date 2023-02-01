@@ -205,11 +205,11 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
     1. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal (for example, `MX925-123456789`). The values in this field are case-sensitive.
 1. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
 
-#### Update the Modern POS or IIS Hardware Station configuration
+#### Update the Store Commerce app or IIS Hardware Station configuration
 
-If you're packaging your own version of Modern POS by using the Retail SDK, you must follow these steps only one time in the SDK code before the installer is packaged. Otherwise, you must follow these steps after the standard Modern POS or IIS Hardware Station is installed.
+If you're packaging your own version of the Store Commerce app by using the Commerce SDK, you must follow these steps only one time in the SDK code before the installer is packaged. Otherwise, you must follow these steps after the standard Store Commerce app or IIS Hardware Station is installed.
 
-1. Open the **dllhost.exe.config** file (for Modern POS) or the **web.config** file (for IIS Hardware Station).
+1. Open the **dllhost.exe.config** file (for Store Commerce app) or the **web.config** file (for IIS Hardware Station).
 1. Update the **PreloadedComposition** section as shown here, to switch from the legacy payment device adapter to the standard payment device adapter.
 
     ``` xml
