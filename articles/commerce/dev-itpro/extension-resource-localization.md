@@ -2,7 +2,7 @@
 title: Localize Commerce extension resources and label files
 description: This article explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
 author: josaw1
-ms.date: 11/16/2022
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
