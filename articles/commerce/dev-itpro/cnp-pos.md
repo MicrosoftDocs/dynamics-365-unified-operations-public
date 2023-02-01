@@ -49,7 +49,7 @@ When this feature is turned on, Store Commerce for web can make credit card proc
 
 ## Overview
 
-When this feature is turned off, Cloud POS and Modern POS for iOS can't process "card not present" credit card requests by themselves, because they don't have a built-in hardware station. When the feature is turned on, the Commerce Scale Unit can be used to facilitate the requests for those clients.
+When this feature is turned off, Store Commerce for web can't process "card not present" credit card requests by itself because it doesn't have a built-in hardware station. When the feature is turned on, the Commerce Scale Unit can be used to facilitate the requests for Store Commerce for web.
 
 Although this feature can also be used for the Store Commerce app for Windows and Store Commerce app for Android, in addition to Store Commerce for web and Store Commerce app for iOS, it isn't supported for offline mode. Therefore, the feature should not be used in scenarios where a Windows client uses offline mode.
 
