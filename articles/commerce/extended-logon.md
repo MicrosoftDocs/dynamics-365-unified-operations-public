@@ -1,5 +1,5 @@
 ---
-title: Set up extended sign-in functionality for Store Commerce app and Store Commerce for web
+title: Set up extended sign-in functionality for Store Commerce
 description: This article describes how to set up and use the extended sign-on functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 author: boycezhu
 ms.date: 01/30/2023
@@ -18,13 +18,13 @@ ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile
 ---
 
-# Set up extended sign-in functionality for Store Commerce app and Store Commerce for web
+# Set up extended sign-in functionality for Store Commerce
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up and use the extended sign-on functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
+This article describes how to set up and use the extended sign-in functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 
-The Store Commerce app and Store Commerce for web provide an extended sign-on capability that lets retail store workers sign in to the POS application by scanning a bar code or swiping a card by using a magnetic stripe reader (MSR).
+The Store Commerce app and Store Commerce for web provide an extended sign-in capability that lets retail store workers sign in to the POS application by scanning a bar code or swiping a card by using a magnetic stripe reader (MSR).
 
 ## Set up extended sign-in
 
