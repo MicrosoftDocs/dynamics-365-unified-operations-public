@@ -155,7 +155,7 @@ The notification detail entity has the following properties. Some of these prope
 
 ## Validate the customization
 
-1. Open the extended Cloud POS or Modern POS application.
+1. Open the extended Store Commerce application.
 
     The POS triggers the notification service, based on your notification scheduler configuration.
 
