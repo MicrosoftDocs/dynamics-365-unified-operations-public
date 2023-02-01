@@ -123,7 +123,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Quality Update train | Release cut | Train duration | Status
 |---|---|---|---|
 | 10.0.30 Release-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
-| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 25 2023 | In-Progress |
+| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 26 2023 | In-Progress |
 | 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | Not Started |
 | 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Not Started |
 | 10.0.31 Release-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Not Started |
