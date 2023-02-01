@@ -23,4 +23,6 @@ This article describes a new capability of B2B account managers to sign in to th
 > [!NOTE]
 > This article applies to Dynamics 365 Commerce version 10.0.33 and later releases.
 
-Text continues here
+## Overview
+
+B2B account managers can sign in to the B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The account manager can then view the same products, prices, promotions, and discount experience as the buyer and can add items to a cart and place orders on behalf of the buyer. 
