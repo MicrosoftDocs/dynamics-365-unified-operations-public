@@ -207,7 +207,7 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 
 ### Turn the Counter-based maintenance enhancements feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Counter-based maintenance enhancements* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Counter-based maintenance enhancements* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Create and initialize counters when an asset is created
 
