@@ -2,7 +2,7 @@
 title: Development in cloud-hosted environments without admin access
 description: This article demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
 author: josaw1
-ms.date: 07/28/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
