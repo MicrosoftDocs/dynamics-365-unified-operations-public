@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Human Resources data entities and templates added in Human Resources 10.0.32
+title: Human Resources data entities and templates added in 10.0.32
 description: This article provides information about the data entities and templates that were added in the 10.0.32 release of Microsoft Dynamics 365 Human Resources.
 author: jcart
 ms.date: 01/26/2023
@@ -24,7 +24,7 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Human Resources data entities and templates added in Human Resources 10.0.32
+# Human Resources data entities and templates 
 
 This article provides information about the data entities and templates that were added in the 10.0.32 release of Microsoft Dynamics 365 Human Resources.
 
