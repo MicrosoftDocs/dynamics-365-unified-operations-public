@@ -4,7 +4,7 @@
 title: Process credit cards without a hardware station
 description: This article describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
 author: BrianShook
-ms.date: 09/03/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
