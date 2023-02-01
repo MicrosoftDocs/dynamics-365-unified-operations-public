@@ -87,7 +87,7 @@ When you perform updates, it's crucial that you thoroughly test the Store Commer
 
 - Test **Show journal**.
 - Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to check out.
-- Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
+- Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use the Store Commerce app in offline mode to perform new cash and carry transactions.
 - Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
 
 ## Troubleshooting
