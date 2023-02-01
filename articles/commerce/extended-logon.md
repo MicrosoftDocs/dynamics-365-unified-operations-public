@@ -55,12 +55,12 @@ After extended logon is configured, and a bar code or magnetic stripe is assigne
 
 ## Extend extended logon
 
-The 1st consideration of extending the extended logon is to enhance security as the physical staff card or bar code could be lost and easy to be duplicated. The 2nd consideration is to provide flexibility to the customer, for example, customers are able to determine proper length of credential and credential Id per business requirement. In [Extended Logon Sample](https://TBD), a more secure end-to-end extension solution with 2nd factor of authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended logon in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
+The first consideration of extending the extended logon is to enhance security as the physical staff card or barcode could be lost and easily duplicated. The second consideration is to provide flexibility to the customer, for example, use custom length of credential or credential Id per business requirement. In [Extended Logon Sample](https://TBD), a more secure end-to-end extension solution with 2nd factor authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended logon in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
 
 ### POS extensions
 For POS extensions, the key is to collect PIN number from an input dialog right after the user swipes card or scans barcode, and then pass on the PIN number to the corresponding requests. An input dialog **PinInputDialog** and 4 pre-triggers **PreEnrollUserCredentialsTrigger**, **PreLogOnTrigger**, **PreUnlockTerminalTrigger** and **PreElevateUserTrigger** are introduced.
 
-### Commerce Runtime extensions
+### Commerce runtime extensions
 There are several important service requests that require customizations.
 **OverrideUserCredentialServiceRequest** is used in both user credential enroll and logon token validation scenario, which is used to generate a new credential based on old one and extra parameters dictionary, where PIN number is contained. Please note that PIN number and the original credential will not be persisted in the data store. Instead, the hashed value of the new credential will be persisted.
 
