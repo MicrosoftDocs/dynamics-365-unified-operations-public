@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: The Benefit bulk update page 
-description: This article describes features of the Benefit bulk update page. 
+title: Benefit bulk update page 
+description: This article describes features of the Benefit bulk update page.
 author: twheeloc
 ms.date: 01/30/2023
 ms.topic: article
@@ -27,79 +27,55 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
-# Benefit bulk updates
+# Benefit bulk update page
 
-The Benefit bulk update page helps the benefit administrators to view, validate and take quick bulk actions on employees’ benefit plan selections.  
+The **Benefit bulk update** page helps benefits administrators view, validate, and quickly take bulk action on employees' benefit plan selections.
 
-Once the employees select their benefit plans using Employee self service, the Benefits administrator validates the selections and takes the needed action such as 
-confirmation, cancelation, send E-mail to request evidence or remove the selection. Administrators can also make selections and corrections on behalf of the employees. 
+After employees select their benefit plans by using Employee self service, the benefits administrator validates the selection and takes the required action. For example, they might confirm, cancel, or remove the selection, or send email to request evidence. In addition, they can access related information about enrollment, life events, dependents, beneficiaries, and the cost of employees' benefit selections. They can also make selections and corrections on behalf of employees. Finally, they can identify which plan records have changed since the previous period and select those plans for further validation.
 
-![Benefit bulk update.](./media/benefit-bulk-update1.png)
+![Benefit bulk update page.](./media/benefit-bulk-update1.png)
 
-To help the administrators validate the bulk selections and take quick actions, various filters and grouping are available on the page. The quick filters and groupings
-based on period, plans, plan types, program, bundles, plan validity and status help select the desired records and then take bulk actions on selected records. 
+The **Benefit bulk update** page provides quick filters and grouping that are based on period, plan, plan type, program, bundle, plan validity, and status. These quick filters and groupings help administrators select the desired records for bulk action, validate the selection, and then take bulk action on the selected records. 
 
-The administrators can access the related information regarding enrollment, life events, dependents, beneficiaries, and cost of the employees’ benefit selections.
-Email notifications can be sent out to workers from the bulk update page.
+The following table describes the options that are available on the **Filter by** drop-down menu. The administrator can use these options to filter the benefit plan records that are shown in the grid.
 
-Administrators can identify which plan records have changed as compared to the previous period and select those plans for further validation. The page invokes the
-worker benefit plan page for editing a specific worker plan detail.
+| Filter option | Description |
+|---------------|-------------|
+| Period | Filter the benefit plans by period. You can select a past period, the current period, or a future period. By default, the grid shows the plans for the current period. |
+| Legal entity | Filter the benefit plans by legal entity. |
+| Plan validity | Filter the benefit plans by validity. Plans can be active, expired, or future. You can select multiple values for this option. |
+| Status | <p>Filter the benefit plans by status. You can select multiple values for this option. The following values are available:</p><ul><li>**Selected** – Show plans that have **Selected** status.</li><li>**Waived** – Show plans that have **Waived** status.</li><li>**Checked out** – Show plans that are checked out.</li><li>**Confirmed** – Show plans that are confirmed.</li><li>**Not selected/waived** – Show plans that don't have **Selected** or **Waived** status.</li></ul> |
+| Apply | Apply the selected filter options. |
+| Reset | Reset the filter options. |
+| Advance filter | Access more filter options. |
 
-The ‘Filter by’ options:
+The administrator can use the **Group by** drop-down menu to group the benefit plan records by worker, legal entity, plan, plan type, bundle, program, or period. 
 
-|Filter option|  More information|
-|-----------------------------------|--------------------------|
-|Period | The benefit plans on the page can be filtered using the **Period filter**. You can select a past, current (by default) or future period to view the related benefit plans.|
-|Legal entity|	The plans in the grid filtered by the Legal entity selected in this field.|
-|Plan validity|	The plans in the grid are filtered by the active, expired, future status selected in the grid. You can multiselect the validity.|
-|Status|	You can filter the benefit plan records based on the status. You can multiselect the status.<ul><li>**Selected**: Displays the plans that have **selected** status.</li><li>**Waived**: Displays the plans that have **waived** status.</li><li>**Checked out**: Displays the plans that are checked out. </li><li>**Confirmed**: Displays the plans that are confirmed. </li><li>**Not selected/waived**: Displays the plans that are not ‘selected’ or waived.</li></ul> |
-|Apply|	Click to apply the filter.|
-|Reset|	Click to reset the filter options.|
-|Advance filter|	Click to access more filter options.|
+After the desired quick filters and groupings are applied, the administrator can select one or more records, and take the required action. They can also send email notifications to the employees that benefit plan records were selected for.
 
+To access related information about a selected plan, the administrator can select **Related information** on the right side of the page to expand the **Related information** pane. The pane shows the worker details, general information, and information about enrollment, life events, dependents, beneficiaries, and the cost of the employee's benefit selections.
 
-The **Group by** option can be used to group the benefit records based on Worker, Legal Entity, Plan, Plan type, Bundle, Program and Period. 
-After applying the desired filters and groupings, you can multiselect the records and take the needed actions. You can send email notifications to the employees for 
-whom the benefit plan records are selected.  
+To edit specific details of an employee's benefit plan, the administrator can select **Edit** to open the **Worker benefit plans** dialog box. The information in this dialog box can be edited as permitted by the configurations.
 
-To access the **related information** regarding the selected plans, click the toggle on the right to open **Related information**. For the highlighted plan, you 
-can view the worker details, General information, cost, enrollment, life event. dependent and beneficiary information. 
+> [!NOTE]
+> In the **Worker benefit plans** dialog box, the employee and employer amounts can be edited if they're calculated by a rate. If you want administrators to be able to edit these fields, select the **Allow administrators to modify calculated rates** option on the **Benefits management** page.
 
-To edit the information, click **Edit**. When the **Edit** button is clicked, the **Worker benefit plan** opens as a slider. You can edit the information in this slider
-(as permitted by your configurations). 
+## Benefits compare plans (Preview feature)
 
->[!NOTE]
->In the **Worker benefit plan**, the employee and employer amounts are not editable when these amounts are calculated by a rate. If you want the administrators to be able to edit these fields, select the option **Allow administrators to modify calculated rates** on the **Benefits management** page. 
+Benefits administrators often have to validate employees' benefits selections. For example, they validate changes in plan selections, coverage options, and employee or employer costs against the previous year's selection, or pre-life-event selections.
 
-### Benefits compare plans (Preview feature)
-The Benefit administrators often need to validate the employees’ benefits selections. Administrators validate the changes in the plan selections, coverage options and 
-employee or employer costs against previous year’s selection or pre-life evet selections. The **Compare plan** option provides an ability to compare the benefit plan 
-selections, coverage options, employee costs, dependents, and beneficiaries against previous benefit period or against any point of time (less than current date and 
-period). 
+Administrators can use the **Compare plan** button in the **Worker benefit plans** dialog box and on the **Benefit bulk update** page to compare the benefit plan selections, coverage options, employee costs, dependents, and beneficiaries against the previous benefit period, or any point of time before the current date and period. On the **Benefit bulk update** page, administrators can select one or more records, and then select **Compare plan** to open the **Worker benefit plans** dialog box to do the comparison.
 
-The **Compare plan** button is available on **Worker benefit plan** page and the **Benefit bulk update** page. In the **Bulk update** page, Administrators can 
-select (or multiselect) the record(s) and click **Compare plan** and open the **Worker benefit plans** page. 
+![Work benefit plans dialog box.](./media/worker-benefit2.png)
 
-![Work benefit plan](./media/worker-benefit2.png)
+The **Worker benefit plans** dialog box has two grids that can be used to compare benefit plans for different periods (and dates). The data in the left grid can be edited, but the data in the right grid is read-only.
 
-The left grid, the **As of period** is defaulted as the current period. However, you can change the period and date. If you select a date that falls in a different 
-period than current, the period value changes to match with the date selection. The plans in the grid underneath are the ‘as on date (and period)’ either defaulted or 
-chosen. Period is the benefit period pertaining to the date selected. You select a date within the current or past period. The date on the left grid must always be
-greater than the date on the right grid. 
+By default, the **As of period** field above the left grid is set to the current benefit period, and the **As of period** field above the right grid is set to the previous benefit period (and the last date of that period is selected). You can change the period and date for both grids. If you select a date that's outside the current period, the period value changes to match the date selection. The date that's selected for the left grid must always be later than the date that's selected for the right grid.
 
-The **Compared against** grid or the right grid pertains to the previous period and the benefits data is not editable in this grid. In the **Period** drop down, last day of the previous period defaulted. However, you have the option to choose the date. The date selected in the right grid must be less than the date selected in the left grid. 
+The benefit data in each grid is updated based on the period and date that you select. By selecting different date ranges in a benefit period, you can compare the benefit plan records (as shown in the preceding illustration). This capability can be useful for validating pre-life-event and post-life-event benefit plan selections.
 
-You can choose different date ranges within a benefit period to compare the benefit plan records (as pictured above). This can be useful while validating the pre and after Life-event benefit plan selections. 
+If the plan type, plan option, coverage option, coverage amount, contribution amount, or dependent or beneficiary information for any record has changed since the previous period (or date range), a change symbol appears in the **Changed** column of the left grid. This symbol also appears if the employee doesn't select a plan that was selected in the previous period.
 
-The records that have changed as compared to the previous period (or date range) have the change icon in the **Changed** column. The change icon is triggered in the left grid if there is any change in the Plan type, Plan option, Coverage option, Coverage amount, Contribution amount, Dependent and/or Beneficiary information as compared against the previous period (the right grid). If the employee does NOT select a plan that was selected in the previous period, the change icon is triggered. 
+The change symbol alert is shown on the **Benefit bulk update** page, and in the **Worker benefit plans** dialog box that's opened by selecting **Edit** on the **Benefit bulk update** page. It's also shown in the **Worker benefit plans** dialog box when the **Compare plan** button is selected.
 
-The **Change** icon alert is displayed in the **Bulk update** page and the **Worker benefit plan** page opened through the **Edit** button on the **Bulk update** page.
-It is also available on the **Worker benefit plan** page when the **Compare plan** toggle is selected. 
-
-Benefit administrators can select records(s) from the **Bulk update** page and click **Compare plan**, the selected plans are displayed as a step-by-step list. At one 
-time, one employee records are displayed and compared. Once the admin has validated the benefit plans and taken the needed action on one employee’s records, admin can 
-select the next arrow button, validate, and take action on the next employee’s records in the selection. Administrators can select **Done** to exit the compare plan 
-window. The changes are autosaved. 
-
-
-
+Administrators can select one or more records on the **Benefit bulk update** page and then select **Compare plan** to view the selected plans as a step-by-step list. The records for one employee at a time are shown and compared. After the administrator has validated the benefit plans and taken the required action on that employee's records, they can select the **Next** (right arrow) button to validate and take action on the records for the next employee in the selection. To close the plan comparison page, administrators can select **Done**. All changes are automatically saved.
