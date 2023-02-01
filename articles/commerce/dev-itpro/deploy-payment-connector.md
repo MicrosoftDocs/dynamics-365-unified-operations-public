@@ -2,7 +2,7 @@
 title: Deploy payment connectors
 description: This article describes how to deploy a payment connector package to the appropriate components.
 author: ShalabhjainMSFT
-ms.date: 05/07/2018
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
