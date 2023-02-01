@@ -53,7 +53,7 @@ In versions before 10.0.29, the total is the only supported calculated value. Ho
 
 A single column can show only one type of calculated value. However, each column in the grid can be configured to show a different type of calculated value. 
 
-In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be displayed in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later, where the calculated value for the column is updated to show the calculated value based on the values in the selected row.   
+In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be shown in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later, where the calculated value for the column is updated based on the values in the selected row.   
 
 ### Showing the grid footer
 There is a footer area at the bottom of every tabular grid in finance and operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
@@ -116,7 +116,7 @@ Users have always been able to export data from grids in finance and operations 
 - If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
 
 ### Copying from a grid in the product
-Starting in version 10.0.32, grids in finance and operations now support range selection, similar to Excel. With this capability, users can use the keyboard to select a range of cells (multiple rows and columns), which can be copied and pasted as needed.  
+As of version 10.0.32, grids in finance and operations apps support range selection capability that resembles the capability in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns). That range can then be copied and pasted as required.  
 
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
