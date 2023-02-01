@@ -2,7 +2,7 @@
 title: Create an end-to-end payment integration for a payment terminal
 description: This article describes how to create an end-to-end payment integration for a payment terminal.
 author: Reza-Assadi
-ms.date: 07/09/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
