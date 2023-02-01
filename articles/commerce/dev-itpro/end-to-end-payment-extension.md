@@ -1,6 +1,6 @@
 ---
 title: Create an end-to-end payment integration for a payment terminal
-description: This article describes how to create an end-to-end payment integration in Microsoft Dynamics 365 Store Commerce for a payment terminal that can directly communicate with the payment gateway.
+description: This article describes how to create an end-to-end payment integration in Microsoft Dynamics 365 Commerce Store Commerce for a payment terminal that can directly communicate with the payment gateway.
 author: Reza-Assadi
 ms.date: 02/01/2023
 ms.topic: article
@@ -20,7 +20,7 @@ ms.search.industry: Retail
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create an end-to-end payment integration in Microsoft Dynamics 365 Store Commerce for a payment terminal that can directly communicate with the payment gateway.
+This article describes how to create an end-to-end payment integration in Microsoft Dynamics 365 Commerce Store Commerce for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key terms
 
