@@ -1,6 +1,6 @@
 ---
 title: Support for external gift cards
-description: This article provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
+description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Store Commerce app, the call center, and the storefront.
 author: BrianShook
 ms.date: 02/01/2023
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-10-02
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This article explains how to set up external gift cards in Retail Modern point of sale (MPOS), the call center, and the storefront.
+This article explains how to set up external gift cards in the Microsoft Dynamics 365 Store Commerce app, the call center, and the storefront.
 
 Microsoft Dynamics 365 Commerce supports both *internal* and *external* gift cards. Internal gift cards are managed entirely in Dynamics 365 Commerce, whereas external gift cards are administered by a third party. If a retailer's operations are run entirely in Microsoft Dynamics, internal gift cards are sometimes the best solution. For complex enterprises that span multiple countries or regions, and multiple point of sale (POS) systems, it's often best to use a third party to manage gift card balances and enable gift cards to be used across those systems.
 
@@ -132,9 +132,9 @@ In the following example, if the first four digits of a card number are **6036**
     > - If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
     > - Existing buttons on the version F2S1m button grid (or version F*n*S1M for layout) can be similarly configured for internal gift cards. The existing issue gift card (sometimes depicted with the card and plus symbol button in the existing layout) requires that the button properties have the **Action** property set (for example, to **Issue gift card**) and the **Payment type** property set (for example, to **Gift card** for internal gift cards). Similarly, for the preconfigured **Add to gift card** and **Check gift card balance** buttons, the gift card **Payment type** properties should be set if the buttons are intended to handle internal gift cards.
 
-## Configure and test Modern POS
+## Configure and test Store Commerce
 
-1. Start the Modern POS (MPOS) application.
+1. Start the Store Commerce application.
 2. Sign in by using the standard credentials.
 3. When you're prompted, select **Perform a non-drawer operation**.
 4. On the main screen, select **Select hardware station**.
@@ -283,7 +283,7 @@ The following procedure shows how to set up an external gift card by using produ
 21. Select **OK**.
 
     > [!NOTE]
-    > Gift cards aren't currently supported for MPOS customer order creation or for in-store pickup.
+    > Gift cards aren't currently supported for Store Commerce customer order creation or for in-store pickup.
     > Gift cards being issued as part of e-commerce orders may only use **Email** modes of delivery. Those gift cards cannot have physical modes of delivery mapped to them. 
 
 22. Search for **Released products by category** to open the **Released product details** page.
