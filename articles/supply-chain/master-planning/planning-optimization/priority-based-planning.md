@@ -25,7 +25,7 @@ To get a quick overview of this feature, see the following video: [Planning opti
 
 ## Turn on priority-based planning for your system
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Priority driven MRP support for Planning Optimization* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Priority driven MRP support for Planning Optimization* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Where and how planning priorities are assigned
 
