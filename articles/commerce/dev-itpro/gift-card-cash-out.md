@@ -2,7 +2,7 @@
 title: Cash out gift card balance for a retail customer
 description: This article provides information about the cash out gift card functionality that is available in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/08/2019
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
