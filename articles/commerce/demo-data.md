@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Demo data screen layouts in Store Commerce app and Store Commerce for web
-description: This article provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 Commerce.
+title: Demo data screen layouts in Store Commerce
+description: This article provides information about the screen layouts that are included with the demo data set for the Store Commerce point of sale (POS) experiences in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 01/30/2023
 ms.topic: article
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
-# Demo data screen layouts in Store Commerce app and Store Commerce for web
+# Demo data screen layouts in Store Commerce
 
 [!include [banner](includes/banner.md)]
 
-This article provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 Commerce.
+This article provides information about the screen layouts that are included with the demo data set for the Store Commerce point of sale (POS) experiences in Microsoft Dynamics 365 Commerce.
 
 The sample screen layouts that are included with Commerce demo data provide content that is optimized for various retail segments, store worker roles, and devices. A single layout can contain several layout sizes and combinations of button grids, to help ensure coverage as store workers move between devices and stations. This article highlights the differences between these layouts, the operations that they provide, and the overall experiences that they deliver.
 
