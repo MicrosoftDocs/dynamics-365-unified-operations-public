@@ -1,6 +1,6 @@
 ---
 title: Support for external gift cards
-description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Store Commerce app, the call center, and the storefront.
+description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
 ms.date: 02/01/2023
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-10-02
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This article explains how to set up external gift cards in the Microsoft Dynamics 365 Store Commerce app, the call center, and the storefront.
+This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 
 Microsoft Dynamics 365 Commerce supports both *internal* and *external* gift cards. Internal gift cards are managed entirely in Dynamics 365 Commerce, whereas external gift cards are administered by a third party. If a retailer's operations are run entirely in Microsoft Dynamics, internal gift cards are sometimes the best solution. For complex enterprises that span multiple countries or regions, and multiple point of sale (POS) systems, it's often best to use a third party to manage gift card balances and enable gift cards to be used across those systems.
 
