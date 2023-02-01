@@ -22,7 +22,7 @@ Warehouse groups let you establish groups of warehouses that you can associate w
 
 ## Prerequisites
 
-This feature requires Supply Chain Management 10.0.32 or later.
+This feature requires Supply Chain Management version 10.0.32 or later.
 
 ## Create and manage warehouse groups
 

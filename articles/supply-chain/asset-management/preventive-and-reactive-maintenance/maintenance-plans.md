@@ -205,12 +205,9 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 - A new type of maintenance plan interval that is named *Repeated on aggregated value (Counter only)*. This type triggers maintenance each time that an aggregated counter reaches a multiple of a specific value. For example, maintenance can be triggered every 10,000 hours. For more information, see the [Interval types overview](#interval-types) section earlier in this article.
 - Another new type of maintenance plan interval that is named *Once on aggregated value (Counter only)*. This type triggers maintenance when an aggregated counter reaches a specific value, such as 8,000 hours. For more information, see the [Interval types overview](#interval-types) section.
 
-### Turn on the Counter-based maintenance enhancements feature
+### Turn the Counter-based maintenance enhancements feature on or off
 
-Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Asset Management*
-- **Feature name:** *Counter-based maintenance enhancements*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Counter-based maintenance enhancements* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Create and initialize counters when an asset is created
 

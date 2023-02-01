@@ -192,10 +192,7 @@ Supply Chain Management calculates demand forecasts by using the Azure Machine L
 
 ### Enable the Azure Machine Learning Service in Feature management
 
-Before you can use the Azure Machine Learning Service for demand forecasting, you must turn on a feature in Supply Chain Management to enable the integration. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *Azure Machine Learning Service for demand forecasting*
+To use the Azure Machine Learning Service for demand forecasting, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Azure Machine Learning Service for demand forecasting* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="ml-workspace"></a>Set up machine learning in Azure
 

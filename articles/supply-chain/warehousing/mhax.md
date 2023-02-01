@@ -46,7 +46,7 @@ Here is an explanation of the interactions that are shown in the previous illust
 
 Before you can use the MHAX feature, you must turn on both its feature and its configuration key.
 
-1. If you are running Supply Chain Management version 10.0.28 or earlier, do the following steps:
+1. If you're running Supply Chain Management version 10.0.28 or earlier, do the following steps:
     1. Go to **System administration \> Workspaces \> Feature management**.
     1. In the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, turn on the feature that is named *Material handling equipment interface*. (As of Supply Chain Management 10.0.29, this feature is mandatory and can't be turned off.)
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).

@@ -22,7 +22,7 @@ For more information about how packing containers work with the Warehouse Manage
 
 To use this feature, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.32 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.32 or later.
 - The feature that's named *Pack containers using the Warehouse Management mobile app* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up mobile device container packing policies
