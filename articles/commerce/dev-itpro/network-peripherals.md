@@ -92,7 +92,7 @@ To set up the Store Commerce app for Windows, Android, or iOS, follow these step
 
 1. In Dynamics 365 Commerce, search for **Registers**.
 2. Select a register by selecting the register number, and then select **Edit**.
-3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or "Retail Modern POS - iOS" application type.
+3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or the "Retail Modern POS - iOS" application type.
 4. Select **Save**.
 5. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
 6. On the **Printer** FastTab, enter the IP address of the printer. Leave the field for the port number blank.
