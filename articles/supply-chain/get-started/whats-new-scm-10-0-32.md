@@ -71,7 +71,6 @@ The table also lists features that were previously in public preview but have ch
 | Engineering change management | [Improved attribute inheritance for Engineering Change Management](../engineering-change-management/engineering-attributes-and-search.md) | Mandatory |
 | Engineering change management | [Product readiness checks](../engineering-change-management/product-readiness.md) | Mandatory |
 | Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | Mandatory |
-| Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | On by default |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | On by default |
 | Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Mandatory |
@@ -97,6 +96,7 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | [RFQ questions and answers](../procurement/rfq-question.md) | Mandatory |
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | On by default |
 | Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | On by default |
+| Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | On by default |
 | Product information management | [Country of origin management feature](../pim/country-of-origin.md) | Mandatory |
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | On by default |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md)  | On by default |
@@ -123,7 +123,7 @@ The table also lists features that were previously in public preview but have ch
 | Shared AP and AR | Enable auto negative tier in Rebate management | Generally available |
 | Shared AP and AR | [Rebate Management](../rebate-management/rebate-management-overview.md) | On by default |
 | Shared AP and AR | Write-off before rebate claim | Generally available |
-| Transportation management | Goods in Transit Receiving and Put away | Mandatory |
+| Transportation management | Goods in Transit Receiving and Put away | On by default |
 | Transportation management | Options for updating the mode of delivery for sales order lines when creating loads | Generally available |
 | Warehouse management | Allow editing of physical dimension for a released product and its handling unit. | Mandatory |
 | Warehouse management | Auto update shipment | Mandatory |
