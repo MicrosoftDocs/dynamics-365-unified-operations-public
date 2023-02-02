@@ -2,7 +2,7 @@
 title: Add custom controls to Modern POS (MPOS) transaction pages
 description: This article explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: josaw1
-ms.date: 11/22/2017
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
