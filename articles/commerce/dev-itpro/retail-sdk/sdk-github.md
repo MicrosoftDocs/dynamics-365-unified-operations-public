@@ -2,7 +2,7 @@
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
 description: This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
 author: josaw1
-ms.date: 05/03/2022
+ms.date: 02/02/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
