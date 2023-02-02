@@ -42,7 +42,7 @@ This premise is confirmed by the results: lower incident counts across our produ
 - Every service update has at least one PQU release train ongoing or slated to begin. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all of them when you move to a newer version service update. Please check the schedule to determine when a PQU for a service update is scheduled if you plan to upgrade to a newer version service update. 
 
 > [!IMPORTANT]
-> Production environments will receive PQUs on weekends. If there is any Service Update scheduled in next 7 days of the PQU scheduled date then PQU gets skipped. For example, as per the PQU calendar, if Live PQU is scheduled on January 28, 2023 and if Service update is scheduled on February 4, 2023 then PQU gets skipped on January 28, 2023. 
+> Production environments receive PQUs on weekends during dark hours. If a Service Update is scheduled within seven days of a PQU, then the scheduled PQU gets skipped. For example, if a PQU is scheduled on January 28, 2023 for a production environment, and a Service update is scheduled on February 4, 2023 for the same env, PQU on January 28, 2023 will be skipped. 
 
 > [!Note]
 > Standard performance test (tier4) and Premium performance test (tier5) sandboxes will receive PQUs on weekends along with production environments of their region. 
