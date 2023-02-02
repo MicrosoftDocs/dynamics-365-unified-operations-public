@@ -104,6 +104,8 @@
         items:
         - name: Choose a data integration technology
           href: hr-admin-integration-choose-technology.md
+        - name: Data entities and templates  
+          href: data-entity.md
         - name: Throttling FAQ
           href: hr-admin-integration-throttling-faq.md
         - name: Configure Dataverse integration

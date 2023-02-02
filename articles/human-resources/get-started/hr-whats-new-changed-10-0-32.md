@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.32. This version has a build number of 10.0.XXXX and is 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.32. This version has a build number of 10.0.1515 and is 
 available on the following schedule:
 
 - **Preview of release:** January 2023
@@ -116,8 +116,8 @@ Multiple Data management framework (DMF) entities and data entity templates for 
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Human Resources version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md).
+Dynamics 365 Human Resources version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXXX).
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=787268).
