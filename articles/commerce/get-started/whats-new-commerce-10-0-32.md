@@ -39,7 +39,7 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md). 
+Microsoft Dynamics 365 Commerce version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of finance and operations apps (January 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md). 
   
 
 ### Bug fixes
