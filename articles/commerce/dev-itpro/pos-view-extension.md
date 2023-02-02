@@ -419,7 +419,7 @@ Sample code for custom filter extensions is available in the Retail SDK (...\Ret
 
 Follow these steps to validate the customization.
 
-1. Sign in to Modern POS by using **000160** as the operator ID and **123** as the password.
+1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
 2. Search for customer **2001** by using the search bar on the top.
 
     You should see the custom columns that you added.
