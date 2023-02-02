@@ -2,7 +2,7 @@
 title: Update code and environments for Commerce projects
 description: This article describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 07/09/2018
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
