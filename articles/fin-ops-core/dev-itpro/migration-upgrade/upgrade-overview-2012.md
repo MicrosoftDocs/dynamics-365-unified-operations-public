@@ -137,6 +137,17 @@ From this point onward, code changes in AX 2012 should be frozen. Only emergency
 ### Develop new code
 Complete the tasks from the fit gap analysis that was performed during the “Deploy a demo environment” step of the Analyze phase. These tasks will probably be a mixture of functional tasks that define the configuration and development tasks for customizations that are related to new features that are being taken up.
 
+### Data Compression
+For larger databases we recommend that you look at compressing the largest tables. Tables in D365 are typically compressed with PAGE or ROW compression. Compressing beforehand can help with the upgrade process and reduces the need for the table to be compressed as part of an automated backend process once upgraded. Review the following for further details: [Compress tables in Microsoft Dynamics AX 2012 environments](compress-tables-ax-2012.md)
+
+### Data Cleanup
+Over time, the Dynamics AX 2012 database can grow to a large size. Before the upgrade, you can reduce the size of the database by purging or archiving data. In this way, you can help reduce the time that is required to complete the data upgrade. Review the following for further details: [Clean up source data for upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations](clean-up-source-data-upgrade.md)
+
+### Document Attachments
+In Dynamics AX 2012, attachments are stored in several locations, such as a file share, a database, or a local SharePoint server. In Dynamics 365 Finance + Operations, attachments are mostly stored in a private Azure Blob Storage location that is assigned to the environment. Alternatively, they are linked to a SharePoint online site that is under the customer's tenant.
+
+Attachments will be available in Dynamics 365 after an upgrade from Dynamics AX 2012 only if they are migrated to the Dynamics AX 2012 database before the upgrade is done. The pre-upgrade step to move these into the database requires testing and planning, as it can take time to migrate based on the volume of the attachments. A post-upgrade step then migrates them to the Blob Storage location. Review the following for further details: [Migrate document attachments from Dynamics AX 2012](migrate-doc-attachments-ax-2012.md)
+
 ### Data upgrade (development environment)
 After your code upgrade tasks are completed, you can upgrade your database for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
@@ -158,6 +169,9 @@ For details, see [Upgrade from AX 2012 - Data upgrade in development environment
 
 ### Data upgrade (sandbox environments)
 When data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment. For more information about sandbox deployment, see [Self-service deployment overview](../deployment/infrastructure-stack.md). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+
+> [!IMPORTANT]
+> Ensure that you have completed a successful upgrade in the development environment with the same application version and customizations, before you attempt to run the upgrade in sandbox. 
 
 > [!IMPORTANT]
 > It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
