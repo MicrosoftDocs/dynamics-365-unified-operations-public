@@ -1,6 +1,6 @@
 ---
 title: Add custom controls to Store Commerce transaction pages
-description: This article explains how to add new custom controls to a Microsoft Dynamics 365 Commerce Store Commerce transaction page using the screen layout designer.
+description: This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
@@ -19,7 +19,7 @@ ms.custom: 24411
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to add new custom controls to a Microsoft Dynamics 365 Commerce Store Commerce transaction page using the screen layout designer.
+This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 
 You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This article explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
