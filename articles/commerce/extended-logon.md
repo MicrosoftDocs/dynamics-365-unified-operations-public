@@ -24,7 +24,14 @@ ms.search.form: RetailFunctionalityProfile
 
 This article describes how to set up and use the extended logon capability of the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 
-Cloud POS (CPOS) and Modern POS (MPOS) provide an extended logon capability that lets retail store workers sign in to the POS application by scanning a bar code or swiping a card by using a magnetic stripe reader (MSR).
+Cloud POS (CPOS), Modern POS (MPOS) and Store commerce app provide an extended logon capability that lets retail store workers sign in to the POS application by scanning a bar code or swiping a card by using a magnetic stripe reader (MSR).
+
+## Credential and Credential Id
+
+Credential and credential Id are two important concepts in extended logon. A user credential is a string which is recorded in the physical staff card, which is scanned out when swiping the card in logon. For security reason, we recommend the credential should be in minimal 256 bits and output as base64 string, which is minimal 44 characters.
+A credential Id is an internal concept, and it is generated according to user credential and grant type. The credential Id must be unique to identify the staff id. The maximum allowed length of credential id is 256.
+
+Before use the extended logon, customer **must** have their own extensions as out-of-box implementation is not intentionally shipped for direct usage. See below [Extend extended logon](#extend-extended-logon) section for details. The out-of-box implementation showcases the usage but does not put much emphasis on security. In details, the credentials must have at least six characters and the first five characters is considered as a unique *credential ID*, which should be customized in commerce runtime extensions. The remaining characters are used for security verification. For example, you have two cards, one of which has the credentials 12345DGYDEYTDW, and one of which has the credentials 12345EWUTBDAJH. Because these two cards have the same credential ID, 12345, they can't both be successfully assigned to workers.
 
 ## Set up extended logon
 
@@ -39,7 +46,7 @@ To set up extended logon for POS registers in a retail store, follow these steps
     - **Staff card logon** – Set this option to **Yes** if you want your workers to sign in to POS by swiping a card.
     - **Staff card logon requires password** – Set this option to **Yes** if you want your workers to enter a password when they sign in to POS by swiping a card.
 
-The bar code or card is associated with credentials that can be assigned to a worker. The credentials must have at least six characters. The string that contains the first five characters must be unique and is considered a *credential ID* that is used to look up a worker. The remaining characters are used for security verification. For example, you have two cards, one of which has the credentials 12345DGYDEYTDW, and one of which has the credentials 12345EWUTBDAJH. Because these two cards have the same credential ID, 12345, they can't both be successfully assigned to workers.
+The barcode or card is associated with credentials that can be assigned to a worker.
 
 ## Assign extended logon
 
@@ -55,7 +62,7 @@ After extended logon is configured, and a bar code or magnetic stripe is assigne
 
 ## Extend extended logon
 
-The first consideration of extending the extended logon is to enhance security as the physical staff card or barcode could be lost and easily duplicated. The second consideration is to provide flexibility to the customer, for example, use custom length of credential or credential Id per business requirement. In [Extended Logon Sample](https://TBD), a more secure end-to-end extension solution with 2nd factor authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended logon in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
+The first consideration of extending the extended logon is to enhance security as the physical staff card or barcode could be lost and easily duplicated. The second consideration is to provide flexibility to the customer, for example, use custom length of credential or credential Id per business requirement. In [Extended Logon Sample](https://aka.ms/d365commerce.extendedlogon), a more secure end-to-end extension solution with 2nd factor authentication by PIN number is provided, including both POS and commerce runtime extensions. The sample covers extended logon in its whole lifecycle, including enrolling user credential, staff card logon or barcode logon, unlocking terminal and elevating user scenarios. The key extension points are described as below, and they need to work together to make the whole scenario complete.
 
 ### POS extensions
 For POS extensions, the key is to collect PIN number from an input dialog right after the user swipes card or scans barcode, and then pass on the PIN number to the corresponding requests. An input dialog **PinInputDialog** and 4 pre-triggers **PreEnrollUserCredentialsTrigger**, **PreLogOnTrigger**, **PreUnlockTerminalTrigger** and **PreElevateUserTrigger** are introduced.
@@ -66,7 +73,7 @@ There are several important service requests that require customizations.
 
 **GetUserAuthenticationCredentialIdServiceRequest** and **GetUserEnrollmentDetailsServiceRequest** have some overlapping logic on calculating the credential id based on user credential and extra parameters dictionary. Furthermore, minimum credential length validation can be also performed here. The out-of-box implementation of the extended logon capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. This behavior can be easily changed in these two service requests.
 
-For detailed information about how to build extensions for extended logon, see [Extended Logon Sample](https://TBD).
+For detailed information about how to build extensions for extended logon, see [Extended Logon Sample](https://aka.ms/d365commerce.extendedlogon).
 
 The logon service can also be extended to support additional extended logon devices, such as palm scanners. For more information, see the [POS extensibility documentation](dev-itpro/pos-extension/pos-extension-overview.md).
 
