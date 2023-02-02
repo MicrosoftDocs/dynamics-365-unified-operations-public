@@ -599,7 +599,7 @@ You will add a custom control column in the POS Dual display view to show the ca
 
 ## Validate the customization
 
-1. Sign in to Store Commerce by using **000160** as the operator ID and **123** as the password.
+1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
 2. On the welcome screen, select the **Current transaction** button.
 3. Add any item to the transaction. For example, add item number **0005**.
 4. Add any customer to transaction. For example, add **Karen Berg**.
