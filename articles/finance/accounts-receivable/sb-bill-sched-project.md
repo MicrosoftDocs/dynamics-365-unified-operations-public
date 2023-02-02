@@ -48,7 +48,7 @@ In the **Feature management** workspace, you must enable the **Billing schedules
 
 To create a billing schedule directly from a time-and-material project, follow these steps.
 
-1. Select a project.
+1. On the **All projects** page, select a project.
 2. On the Action Pane, on the **Manage** tab, select **New**, and then select **Subscription billing \> Billing schedule**. The **Create billing schedule** page is opened and includes the standard options for creating a billing schedule.
 3. Select the **Billing schedule** group. By default, the customer account, customer name, project, and funding source are entered from the project. If there's more than one funding source (customer or grant) on the project contract, select the funding source for the billing schedule. This funding source will be set as the invoice account.
 4. Optional: Set the **End user account** and **End user name** fields.
