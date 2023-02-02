@@ -35,7 +35,7 @@ A production environment can be used for UAT (for example, as a "dry run" for go
 
 The UAT should be done after you deploy officially built deployable packages. It should not be done on packages that are manually built in Microsoft Visual Studio. The reason is that there is no way to prove what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a specific build.
 
-If you use Modern POS/Cloud POS, make sure that you use the correct user roles. You should test by signing in as both a manager and a cashier who has lower privileges.
+If you use the Store Commerce app or Store Commerce for web, make sure that you use the correct user roles. You should test by signing in as both a manager and a cashier who has lower privileges.
 
 ## Performance
 ### Channel performance
