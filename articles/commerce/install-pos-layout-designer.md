@@ -2,7 +2,7 @@
 title: Install the POS layout designer
 description: You can use the one-click designer to design different Modern POS (MPOS) and Cloud POS layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
