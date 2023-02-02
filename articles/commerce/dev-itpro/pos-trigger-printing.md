@@ -2,7 +2,7 @@
 title: Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Modern POS operations.
 author: josaw1
-ms.date: 07/13/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
