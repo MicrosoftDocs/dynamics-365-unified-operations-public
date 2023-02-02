@@ -176,10 +176,10 @@ For information on the dark hours for each region, see [What are the planned mai
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | NA | NA |
-| Station 2 | February 20 to February 22, 2023 | March 4 to March 5, 2023 |
-| Station 3 | February 21 to February 23, 2023 | March 4 to March 5, 2023 |
-| Station 4 | February 27 to March 1, 2023 | March 11 to March 12, 2023 |
-| Station 5 | March 6 to March 8, 2023 | March 18 to March 19, 2023 |
+| Station 2 | February 20 to February 23, 2023 | March 4 to March 5, 2023 |
+| Station 3 | February 21 to February 24, 2023 | March 4 to March 5, 2023 |
+| Station 4 | February 27 to March 2, 2023 | March 11 to March 12, 2023 |
+| Station 5 | March 6 to March 9, 2023 | March 18 to March 19, 2023 |
 | Station 6 | NA | NA |
 
 > [!IMPORTANT] 
