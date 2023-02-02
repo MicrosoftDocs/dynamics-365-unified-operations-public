@@ -2,7 +2,7 @@
 title: Select an in-store topology
 description: This article provides information about the various Dynamics 365 Commerce in-store topologies.
 author: Reza-Assadi
-ms.date: 06/02/2020
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
