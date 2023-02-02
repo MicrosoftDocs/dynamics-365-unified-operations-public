@@ -390,10 +390,10 @@
           items: 
           - name: Set up on-premises projects in LCS
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-          - name: Set up and deploy on-premises environments (Platform update 41 and later)
+          - name: Set up and deploy on-premises environments (Application 10.0.32 and later)
+            href: deployment/setup-deploy-on-premises-latest.md
+          - name: Set up and deploy on-premises environments (Platform update 41 through 55)
             href: deployment/setup-deploy-on-premises-pu41.md
-          - name: Set up and deploy on-premises environments (Platform updates 12 through 40)
-            href: deployment/setup-deploy-on-premises-pu12.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
@@ -436,6 +436,12 @@
             href: deployment/onprem-upgrade-os.md
           - name: Upgrade or replace the SQL Server instance of on-premises environments
             href: deployment/onprem-upgrade-sqlserver.md
+        - name: Infrastructure Scripts
+          items:
+          - name: Obtain the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
+            href: deployment/obtain-infrascripts-onprem.md
+          - name: Configure the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
+            href: deployment/configure-infrascripts-onprem.md
         - name: Local agent
           items:
           - name: AD FS Microsoft 365 compatibility
