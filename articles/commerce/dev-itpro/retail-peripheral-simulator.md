@@ -2,7 +2,7 @@
 title: Peripheral simulator for Commerce
 description: This article describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/22/2018
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
