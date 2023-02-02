@@ -1,5 +1,5 @@
 ---
-title: Add custom controls to Modern POS (MPOS) transaction pages
+title: Add custom controls to Store Commerce transaction pages
 description: This article explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: josaw1
 ms.date: 02/01/2023
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 24411
 ---
 
-# Add custom controls to Modern POS (MPOS) transaction pages
+# Add custom controls to Store Commerce transaction pages
 
 [!include [banner](../../includes/banner.md)]
 
@@ -391,7 +391,7 @@ You can add more information to a transaction page by using custom controls. You
 
 ## Validate the customization
 
-1. Sign in to Modern POS by using **000160** as the operator ID and **123** as the password.
+1. Sign in to Store Commerce by using **000160** as the operator ID and **123** as the password.
 2. On the **Welcome** screen, select the **Current transaction** button.
 3. Add any item to the transaction, and then select the line item that you added.
 
