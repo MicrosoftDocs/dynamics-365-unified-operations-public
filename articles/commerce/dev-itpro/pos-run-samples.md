@@ -2,7 +2,7 @@
 title: Run the point of sale (POS) samples
 description: This article explains how to run the POS samples.
 author: josaw1
-ms.date: 11/27/2017
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
