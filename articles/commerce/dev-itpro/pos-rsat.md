@@ -26,7 +26,7 @@ This article explains how to use the new test recorder tool in Store Commerce fo
 This article applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder can be used only in Store Commerce for web with Google Chrome or the Microsoft Edge web browser.
+> The test recorder can only be used in Store Commerce for web with Google Chrome or the Microsoft Edge web browser.
 
 ## Test recorder
 
