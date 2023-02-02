@@ -4,7 +4,7 @@
 title: Hybrid customer orders
 description: A hybrid customer order is a single order, which contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
