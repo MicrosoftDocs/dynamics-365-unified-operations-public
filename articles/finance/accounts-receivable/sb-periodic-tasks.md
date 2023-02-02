@@ -4,7 +4,7 @@
 title: Periodic tasks in Recurring contract billing
 description: This article describes the periodic tasks that are available in Recurring contract billing.
 author: JodiChristiansen
-ms.date: 04/29/2022
+ms.date: 01/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,11 +32,19 @@ This article describes the periodic tasks that are available in Recurring contra
 
 ## Generate invoice
 
-Use the **Generate invoice** page to create mass monthly recurring invoices from the information that you set up on the **All billing schedules** and **View billing detail** pages. When an invoice is created, the item description for the sales order processing line is updated with the item description and the billing start and end dates for the schedule line that is invoiced.
+Use the **Generate invoice** page to create mass monthly recurring invoices from the information that you set up on the **All billing schedules** and **View billing detail** pages. When an invoice is created, the item description for the sales order processing line is updated with the item description and the billing start and end dates for the schedule line that's invoiced. 
 
 ## Generate invoice batch processing
 
-Use the **Generate invoice batch processing** page to create recurring invoices through a recurring batch process. The parameters that are available are the same as the parameters on the **Generate invoice** page, but they can be saved in a batch process that can be run multiple times.
+Use the **Generate invoice batch processing** page to create recurring invoices through a recurring batch process. The **Date range** filter lets you select the billing schedules by start date or end date. To use a start date or end date other than today's date, set the **Add the number of days or months** option to **Yes**. Then, in the **Select by days or months** field, select **Days** or **Months**, and enter the number of days or months. For days, a value of **0** represents today. For months, **0** represents the first day through the last day of the current month.
+
+For example, the current month is January, and you want to include billing schedule lines that have a start date through March 1. In this case, select **Months**, and then set the number of months to **2**. (For months, the current month is always included.) If today is January 15, and you want to include billing schedule lines from January 1 through December 31 of the previous year, select **Days**, and then set the number of days to **-350** (= 365 – 15).
+
+The batch processing flag is set to **Yes** and can't be changed to **No**.
+
+## Generate quotation
+
+Use the **Generate quotation** page to create a **Sales quotation** report for multiple billing schedules at the same time. Each billing schedule will print a **Sales quotation** report.
 
 ## Price update
 
@@ -134,6 +142,10 @@ Billing schedules that use the multiple element allocation (MEA) functionality d
 > Billing schedule lines that are currently included in a **Generate invoice** batch aren't available for this process.
 
 For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedule.md).
+
+## Mass termination table clean up
+
+Use the **Mass termination table clean up** process to clear the mass termination tables after you use the mass termination entity.
 
 ## Mass archive process
 
