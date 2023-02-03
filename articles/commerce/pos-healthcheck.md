@@ -4,7 +4,7 @@
 title: Health check for POS peripherals and services
 description: This article provides an overview of the health check operation in the point of sale (POS).
 author: BrianShook
-ms.date: 03/06/2020
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
