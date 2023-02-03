@@ -112,7 +112,7 @@ To configure a certificate profile in Commerce headquarters, follow these steps.
     - **Thumbprint** – This field is required and is available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
 
         > [!IMPORTANT]
-        > You must ensure that the user who runs the application that has to use the local certificate (for example, Modern POS in the offline mode) has at least read-only access to the private key of the certificate.
+        > You must ensure that the user who runs the application that has to use the local certificate (for example, Store Commerce app in the offline mode) has at least read-only access to the private key of the certificate.
 
     - **Comments** – This field is optional and lets users enter notes.
 
