@@ -40,7 +40,7 @@ invoice images.
 The most common reason for this error is that you don’t have an AI Builder license, which could be solved by requesting a trial version. 
 Go to make.powerapps.com > AI Builder/Explorer to get a trial AI builder license. 
 
-### What if the invoices received are in an unsupported format for example, word doc or excel doc? 
+### What if the invoices received are in an unsupported format, for example, word doc or excel doc? 
 Word documents aren't supported yet. Power automate can convert a Word document into PDF before calling invoice capture API. 
  
 
@@ -68,7 +68,7 @@ If the item is a stock item on the invoice line, the purchase order has to be li
 an error will show during the transfer of the invoice: 
 **Write validation failed for table row of type 'VendorInvoiceLineEntity'. Infolog: Warning: The item's inventory model policy must be not stocked.; Warning: The item's inventory model policy must be not stocked...**. 
 
-The use of an invoice journal for Non-PO invoices is common. It will be avilable in a future release.  
+The use of an invoice journal for Non-PO invoices is common. It will be available in a future release.  
 
 ### Does Invoice capture have the ability to learn from changes made to the invoice if the invoice wasn't processed correctly or changed by the AP Clerk? 
 Yes, continuous learning capability is available in the latest public preview version. Invoice capture will learn from the correction of the previous invoice. Next time, when a similar invoice is captured, it will apply what it has learned to derive the entities. Some tasks are still on-going to increase continuous learning capabilities to reduce the AP clerk's review effort and increase the touchless rate. 
