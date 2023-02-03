@@ -2,7 +2,7 @@
 title: User-defined certificate profiles for retail stores
 description: This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/21/2022
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
