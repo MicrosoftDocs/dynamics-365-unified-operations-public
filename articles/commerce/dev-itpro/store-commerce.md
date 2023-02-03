@@ -71,7 +71,7 @@ In-app deployment supports offline mode. During installation, pass the **--insta
 
 ### Hybrid deployment
 
-Store Commerce is a shell that renders Store Commerce for web and connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In hybrid mode, Store Commerce app content is rendered from Store Commerce for web that is hosted in CSU. When the Store Commerce app is opened, it will prompt for the Store Commerce for web URL.
+Store Commerce is a shell that connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In hybrid mode, Store Commerce renders the Cloud POS UI that is hosted in the CSU. When the Store Commerce app is opened, it will prompt for the Cloud POS URL.
 
 ![Active Store Commerce dialog box prompting for the Cloud POS URL.](../media/SC-Hybrid.png)
 
