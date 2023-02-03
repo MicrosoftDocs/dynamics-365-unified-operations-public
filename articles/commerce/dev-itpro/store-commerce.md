@@ -91,7 +91,7 @@ For guidance on migrating from MPOS to Store Commerce, see [Migrate Modern POS t
 
 Store Commerce has full functional parity with Store Commerce for web. In addition, Store Commerce supports dedicated hardware station and offline deployment.
 
-## Store Commerce and MPOS/CPOS
+## MPOS and Hybrid app roadmap
 
 The Store Commerce apps for Windows and mobile platforms are the next generation of POS applications for Dynamics 365 Commerce. Microsoft will deprecate MPOS and the [Retail hybrid apps](hybridapp.md) in October 2023, and recommends that you use Store Commerce or Store Commerce for web for all new deployments. Existing customers should plan to migrate MPOS to Store Commerce. 
 
