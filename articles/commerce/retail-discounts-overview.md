@@ -2,7 +2,7 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 01/30/2023
+ms.date: 02/03/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
