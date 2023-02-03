@@ -4,7 +4,7 @@
 title: POS user interface visual configurations
 description: This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
-ms.date: 01/30/2023
+ms.date: 02/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
