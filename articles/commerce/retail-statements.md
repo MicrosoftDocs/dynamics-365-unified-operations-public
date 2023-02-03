@@ -4,7 +4,7 @@
 title: Retail statements
 description: This article describes how statements are created and posted.
 author: ashishmsft
-ms.date: 04/04/2017
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
