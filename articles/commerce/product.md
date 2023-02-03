@@ -37,7 +37,7 @@ For more information about product recommendations features, read the [product r
 
 ## Scenarios
 
-Product recommendations are enabled for the following POS scenarios. They are available in Cloud POS or Modern POS (MPOS).
+Product recommendations are enabled for the following POS scenarios. They are available in the Store Commerce app or Store Commerce for web.
 
 1. On the **Product details** page:
 
