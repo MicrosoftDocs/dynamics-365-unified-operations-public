@@ -8,7 +8,7 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
-ms.search.validFrom: 2022-01-31
+ms.search.validFrom: 2022-01-30
 ms.search.form: RetailStatements_Posting
 
 ---
