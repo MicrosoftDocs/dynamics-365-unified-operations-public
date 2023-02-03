@@ -2,7 +2,7 @@
 title: Loyalty overview
 description: This article describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: josaw1
-ms.date: 11/16/2022
+ms.date: 02/03/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
