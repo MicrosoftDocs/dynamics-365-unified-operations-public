@@ -2,7 +2,7 @@
 title: Shift and cash drawer management
 description: This article explains how to set up and use shifts in Commerce point of sale (POS).
 author: josaw1
-ms.date: 05/10/2018
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
