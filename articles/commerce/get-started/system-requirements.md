@@ -100,7 +100,7 @@ This section lists the supported operating systems for each Commerce self-servic
 > [!WARNING]
 > The Windows 7 operating system isn't supported for anything except security-related fixes. Therefore, although Commerce components might work on Windows 7, there will be no bug fixes that are specifically related to supporting this operating system.
 
-#### Store Commerce app
+#### Store Commerce
 
 - Windows 11, Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
 
