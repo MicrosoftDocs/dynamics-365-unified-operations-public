@@ -4,7 +4,7 @@
 title: Add product recommendations on POS
 description: This article describes using product recommendations on a point of sale (POS) device.
 author: bebeale
-ms.date: 09/08/2022
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
