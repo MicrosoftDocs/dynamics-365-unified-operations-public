@@ -2,7 +2,7 @@
 title: Task recorder and Help for Retail Modern POS (MPOS) and Cloud POS
 description: This article describes how to use Task recorder in Retail Modern POS and Cloud POS.
 author: josaw1
-ms.date: 06/19/2017
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
