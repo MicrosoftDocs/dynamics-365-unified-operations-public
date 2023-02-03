@@ -4,7 +4,7 @@
 title: Invoice capture FAQ
 description: This article answers frequently asked questions about Invoice capture.
 author: sunfzam
-ms.date: 01/05/2023
+ms.date: 02/05/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version:
 This article answers frequently asked questions about the Invoice capture solution. The Invoice capture solution automatically creates vendor invoices from digital 
 invoice images.
 
-### How can I know the reason behind when I get the state “OCR Process failed” in Received files? What will be the next action item? 
+### Why do I get the message “OCR Process failed” in Received files? What will be the next action item? 
 The most common reason for this error is that you don’t have an AI Builder license, which could be solved by requesting a trial version. 
 Go to make.powerapps.com > AI Builder/Explorer to get a trial AI builder license. 
 
