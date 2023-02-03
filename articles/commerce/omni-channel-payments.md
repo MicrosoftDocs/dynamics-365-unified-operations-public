@@ -4,7 +4,7 @@
 title: Omni-channel payments overview
 description: This article provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/04/2020
+ms.date: 02/03/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
