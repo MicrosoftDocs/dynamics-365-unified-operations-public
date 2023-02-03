@@ -1,6 +1,6 @@
 ---
 title: Point of sale (POS) application and user language settings
-description: This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
+description: This article describes how to change language settings in the Store Commerce app and Store Commerce for web.
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
@@ -22,10 +22,9 @@ ms.search.form: HcmWorker, RetailStoreTable
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
+This article describes how to change language settings in the Store Commerce app and Store Commerce for web.
 
-## Overview
-Modern POS (MPOS) and Cloud POS support environments where language settings and translations can vary between the store and user settings. For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.
+The Store Commerce app and Store Commerce for web support environments where language settings and translations can vary between the store and user settings. For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.
 
 ## Data language
 
