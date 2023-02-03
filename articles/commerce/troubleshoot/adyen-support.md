@@ -2,7 +2,7 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen issues
 description: This article provides troubleshooting guidance that can help you get support when you have issues with the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/03/2023
 ms.topic: Troubleshooting
 ms.prod: 
 ms.technology: 
