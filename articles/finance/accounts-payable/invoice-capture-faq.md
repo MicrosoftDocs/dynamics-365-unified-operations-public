@@ -52,11 +52,11 @@ The following settings are available:
  - **Always needs manual review** - Always requires manual review. 
 
 
-### How many invoices could normally be processed each day using Invoice capture? 
+### How many invoices can be processed using Invoice capture? 
 The number is limited by the performance throttling of Power Platform. Currently, 50+ invoices can be processed at the same time and the average invoice processing 
 time would be 15~30 seconds. 
 
-### How can the default AI builder model be extended to recognize the invoices with more complex format to increase the confidence score and the touchless rate?	 
+### How can the default AI builder model be extended to recognize invoices with more complex format to increase the confidence score and the touchless rate?	 
 Yes, a custom model can be built on the top of the prebuild model. This will contain the most of the capability of the prebuilt model. The customer will need to
 provide additional training on the invoice of the exceptional layouts. 
 
@@ -70,7 +70,7 @@ an error will show during the transfer of the invoice:
 
 The use of an invoice journal for Non-PO invoices is common. It will be available in a future release.  
 
-### Does Invoice capture have the ability to learn from changes made to the invoice if the invoice wasn't processed correctly or changed by the AP Clerk? 
+### Does Invoice capture learn from changes made to the invoice if the invoice wasn't processed correctly or changed by the AP Clerk? 
 Yes, continuous learning capability is available in the latest public preview version. Invoice capture will learn from the correction of the previous invoice. Next time, when a similar invoice is captured, it will apply what it has learned to derive the entities. Some tasks are still on-going to increase continuous learning capabilities to reduce the AP clerk's review effort and increase the touchless rate. 
 
  
@@ -80,16 +80,16 @@ The field **Total tax** sums all of the tax amounts on the invoices and transfer
 
  
 ### Is it possible to extend the item mapping rule to map between an external item number to an internal item number?  
-Yes, it is on our roadmap and will be released in a future release. 
+Not in the current release. It is on our roadmap and will be released in a future release. 
 
 ### Is there a model localization to capture invoices structure for different countries?  
-No, our current function is a generic framework. The application can be extended to meet country specific requirements. 
+The application can be extended to meet country specific requirements. 
  
 
 ### Does Invoice capture support uploading multiple invoices at once? 
-The current version supports uploading one document at a time. It's under development to support uploading multiple invoices at once.  
+The current version supports uploading one document at a time. Uploading multiple invoices will be available in a future release.   
 
-### What languages of the invoices are supported? Are there any plans to introduce more on the roadmap? 
+### What languages of the invoices are supported? 
 The following languages are currently supported: 
  - Dutch (Netherlands) 
  - English (United States) 
