@@ -28,7 +28,7 @@ This article describes a new capability of B2B account managers to sign in to th
 Retailer representatives (typically, account managers) can sign in to the B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The account manager can then view the same products, prices, promotions, and discount experience as the buyer and can add items to a cart and place orders on behalf of the buyer. 
 
 ## Prerequisites
-To enable this feature, Azure Active Directory B2B application needs to be created and configured. In addition, a B2B sign-in page in Site Builder needs to be configured. Finally, Dynamics 365 environment should be configured accordingly. 
+To enable this feature, [Azure Active Directory B2B application](obo-create-aad-application.md) needs to be created and configured. In addition, a B2B sign-in page in Site Builder needs to be configured. Finally, Dynamics 365 environment should be configured accordingly. 
   
 ## Experience
   
@@ -42,7 +42,7 @@ Once these selections are made, the account manager is now representing the buye
 > [!NOTE]
 > The following experiences differ in On-Behalf-of experience.
 > 1.	The only form of payment that is provided is On Account payment method.  
-> 2.	An account manager has access to view the buyer’s invoices but is not able to pay invoices. 
-> 3.	An account manager can create a new Order Template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
-> 4.	Catalog feature is not supported in the first release of On Behalf Of feature, and must be turned off to use this functionality. 
+> 1.	An account manager has access to view the buyer’s invoices but is not able to pay invoices. 
+> 1.	An account manager can create a new Order Template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
+> 1.	Catalog feature is not supported in the first release of On Behalf Of feature, and must be turned off to use this functionality. 
 
