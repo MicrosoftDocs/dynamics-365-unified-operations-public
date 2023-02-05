@@ -25,4 +25,23 @@ This article describes a new capability of B2B account managers to sign in to th
 
 ## Overview
 
-B2B account managers can sign in to the B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The account manager can then view the same products, prices, promotions, and discount experience as the buyer and can add items to a cart and place orders on behalf of the buyer. 
+Retailer representatives (typically, account managers) can sign in to the B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The account manager can then view the same products, prices, promotions, and discount experience as the buyer and can add items to a cart and place orders on behalf of the buyer. 
+
+## Prerequisites
+To enable this feature, Azure Active Directory B2B application needs to be created and configured. In addition, a B2B sign-in page in Site Builder needs to be configured. Finally, Dynamics 365 environment should be configured accordingly. 
+  
+## Experience
+  
+Account manager should sign-in into B2B e-Commerce site by clicking Sign-in, and then clicking a button “Employee Sign-in”:
+
+
+On the next screen, the account Manager should select the business buyer organization they intend to work on behalf of, and then a buyer, they intend to work on behalf of.
+Once these selections are made, the account manager is now representing the buyer they have selected and has full access to their account information, pricing, catalog information and discounts. The account manager can now put the items in the cart and create an order, utilizing full e-Commerce experience. The completed orders will be easily distinguishable  from the regular orders since they will be prefixed with the account manager name. The account manager can create a template for the buyer to use later. It is recommended to create a distinctive name for the template that includes the account manager name and a purpose of the template. 
+
+> [!NOTE]
+> The following experiences differ in On-Behalf-of experience.
+> 1.	The only form of payment that is provided is On Account payment method.  
+> 2.	An account manager has access to view the buyer’s invoices but is not able to pay invoices. 
+> 3.	An account manager can create a new Order Template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
+> 4.	Catalog feature is not supported in the first release of On Behalf Of feature, and must be turned off to use this functionality. 
+
