@@ -47,3 +47,29 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 1.	Choose **All services** in the top-left corner of the Azure portal, and then search for and select **Azure AD B2C**.
 1.	Select Identity providers, and then select **New OpenID Connect provider**.
 1.	Enter a Name. Name must be **Account Manager B2B Sign-in**.
+1. For **Metadata URL**, enter the URL of the Azure B2B OpenID Connect Configuration document, for example, https://login.microsoftonline.com/TENANTID/v2.0/.well-known/openid-configuration The URL must be HTTPS. 
+1.	For **Client ID**, enter the application ID that you previously recorded.
+1.	For **Client secret**, enter the client secret that you previously recorded.
+1.	For **Scope*, enter the openid profile Azure B2B Application ID URI (for example, https://APPLICATIONIDURI) (This should Application ID URI of Azure B2B AAD application).
+1.	For **Response Mode**, select form_post
+1.	For **Response Type*, select “code”
+1.	Under Identity provider claims mapping, select the following claims:
+    1. **User ID:** sub
+    1. **Display name:** name
+    1. **Given name:** given_name
+    1. **Surname:** family_name
+    1. **Email:** email
+1.	Select **Save**.
+
+## Add the Azure identity provider to a user flow:
+1.	In your Azure AD B2C tenant, select **User flows**.
+1.	Click the user flow that you want to add the identity provider.
+1.	Under the **Custom identity providers**, select the identity provider you added. For example, “Account Manager B2B Sign in”.
+1.	Select **Save**.
+
+## Enable B2B account sign-in button in site builder:
+1.	Create the custom sign-in page as per the instructions specified in https://learn.microsoft.com/en-us/dynamics365/commerce/custom-pages-user-logins.
+2.	Check **Render B2B Account Sign-in button** in sign-in module to enable Azure B2B sign-in button.
+3.	Click **Save** and publish the page.
+
+
