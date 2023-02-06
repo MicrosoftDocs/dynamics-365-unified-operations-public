@@ -49,9 +49,9 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 1. For **Metadata URL**, enter the URL of the Azure B2B OpenID Connect Configuration document, for example, https://login.microsoftonline.com/TENANTID/v2.0/.well-known/openid-configuration The URL must be HTTPS. 
 1.	For **Client ID**, enter the application ID that you previously recorded.
 1.	For **Client secret**, enter the client secret that you previously recorded.
-1.	For **Scope*, enter the openid profile Azure B2B Application ID URI (for example, https://APPLICATIONIDURI) (This should Application ID URI of Azure B2B AAD application).
+1.	For **Scope**, enter the openid profile Azure B2B Application ID URI (for example, https://APPLICATIONIDURI) (This should Application ID URI of Azure B2B AAD application).
 1.	For **Response Mode**, select form_post
-1.	For **Response Type*, select “code”
+1.	For **Response Type**, select “code”
 1.	Under Identity provider claims mapping, select the following claims:
     1. **User ID:** sub
     1. **Display name:** name
@@ -62,7 +62,7 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 
 ## Add the Azure identity provider to a user flow:
 1.	In your Azure AD B2C tenant, select **User flows**.
-1.	Click the user flow that you want to add the identity provider.
+1.	Click the user flow for which you want to add the identity provider.
 1.	Under the **Custom identity providers**, select the identity provider you added. For example, “Account Manager B2B Sign in”.
 1.	Select **Save**.
 
@@ -74,4 +74,6 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 ## Additional resources
 
 [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)
+
 [Set up custom pages for user sign-ins](custom-pages-user-logins.md)
+
