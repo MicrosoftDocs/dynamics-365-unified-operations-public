@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
-## Enable Financial reporting
-To use the financial reporting service for your organization, a Lifecycle Services (LCS) administrator must enable this service in the LCS portal for your organization. If Financial reporting hasn't been provisioned for your environment, contact your LCS administrator to enable the service. 
 
 ## Accessing Financial reporting
 
