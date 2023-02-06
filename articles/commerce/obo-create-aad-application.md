@@ -11,8 +11,7 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2023-02-27
-ms.search.form:
-ms.dyn365.ops.version:
+ms.dyn365.ops.version: 10.0.33
 ---
 
 # Create and configure an Azure Active Directory application for account manager sign-in
@@ -72,4 +71,7 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 2.	Check **Render B2B Account Sign-in button** in sign-in module to enable Azure B2B sign-in button.
 3.	Click **Save** and publish the page.
 
+## Additional resources
 
+[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)
+[Set up custom pages for user sign-ins](custom-pages-user-logins.md)
