@@ -165,6 +165,8 @@ Here is an explanation of the parts of this file name:
 
 - **SAF-T Financial** states the SAF-T type of file.
 - **999999999** represents the organization number that belongs to the owner of the data.
+        -If the Organization number is missing or the output XML file does not containt <RegistrationNumber>NA</RegistrationNumber>
+        -Navigate to Org administration > Organizations > Legal entities- Select your legal entity > Bank account information and assign the Org number to Routing code field
 - **20160401235911** represents the date and time when the file was created. (A 24-hour clock is used for the time.)
 - **1\_12** represents file 1 out of 12 total files in the export (that is, in the same selection).
 
