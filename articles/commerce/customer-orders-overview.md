@@ -174,14 +174,24 @@ After an order is created, the items will be picked up by the customer from a st
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created in POS in either synchronous mode or asynchronous mode. If you notice performance issues or user delays when you create customer orders in POS, consider turning on asynchronous order creation.
+Customer orders can be created in POS in either synchronous mode or asynchronous mode. We recommend using the asynchronous order creation mode as it is much more performant than the synchronous order creation and thus results in a better user experience.
 
 ### Enable customer orders to be created in asynchronous mode
 
-1. In Commerce headquarters, on the **Functionality profiles** page, select the functionality profile that corresponds to the store that you want to configure.
-2. On the **General** FastTab, set the **Create customer order in async mode** option to **Yes**.
+To enable the asynchronous order mode, navigate to the Functionality profiles page in the Commerce headquarters and select the functionality profile that corresponds to the store where you want to enable the asynchronous order creation. There are two sub modes within the asynchronous customer order creation mode which can be selected using one of the below configurations under the “General” fast tab.
+1. **Create customer order in async mode**
+2. **Create customer order with async fall back**
 
-When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they're pulled and created as retail transactions in Commerce headquarters from the Commerce Pull (P) jobs. The corresponding sales orders for the retail transactions are created when **Synchronize orders** is run either manually or through a batch process.
+> [!NOTE]
+> The async fall back option is available after 10.0.33 monthly release
+
+The option **“Create customer order in async mode”** always creates the order in batch. With this mode, the POS will complete the transaction using the confirmation number for the order instantaneously, but the order will be created in headquarters after a few minutes i.e., after the relevant jobs have been run. The jobs required to create the order are P-0001 (Channel transactions) and “Synchronize orders” job. This confirmation number can be used for recalling the order for fulfillment and editing scenarios.
+
+The option **“Create customer order with async fall back”** first tries to create the order using the Retail Transaction Service (RTS) and only if it fails, the order is created using the same batch process as described above. Thus, most of the time, the order will be created as fast as the synchronous order creation. However, like the previous mode, the POS will complete the transaction using the confirmation number for the order instantaneously i.e., without waiting for the RTS call to complete. 
+
+> [!Note]
+> The asynchronous orders cannot be edited or cancelled unless the orders are created in Commerce HQ. Given the “Create customer order with async fall back” first tries to create the order using the RTS call, so most of the time, the order should be available to edit and cancel within a few seconds. Moreover, the capability to cancel the asynchronous order, even before it gets synchronized in HQ will be available in future releases.
+
 
 ## Additional resources
 
