@@ -161,7 +161,7 @@ ER provides a model mapping designer that lets users map data models that they h
 
 ### Storing a designed model component as a model configuration
 
-ER can store a designed data model, together with associated data mappings, as a model configuration of the current instance. The following illustration shows an example of this type of data model configuration (the payment model configuration).
+ER can store a designed data model, together with associated data mappings, as a model configuration of the current instance. 
 
 To become familiar with the details of this scenario, play the **ER Map data model to selected data sources** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
@@ -179,7 +179,7 @@ To become familiar with the details of this scenario, play the **ER Create a con
 
 ### Building a configuration to generate electronic documents in a Word document format
 
-The ER format designer can be used to build an electronic document in a Word document format. The following illustration shows an example of this type of format. Note that this format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
+The ER format designer can be used to build an electronic document in a Word document format. This format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
 
 To become familiar with the details of this scenario, play the ER Design a configuration for generating reports in Microsoft WORD format task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). As part of the task guide step for importing a template, use the following Word files as templates for the ER format:
 
