@@ -155,11 +155,13 @@ The following tables list the application areas. Cloud and on-premises support i
 
 To see a list of capabilities that are available in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../commerce/retail-onprem.md).
 
-## Dynamics 365 Human Resources 
+## Dynamics 365 Human Resources (stand-alone)
 
 | **Area**         | **Feature**         | **Cloud** | **On-premises** |
 |------------------|---------------------|-----------|-----------------|
 | All Human Resources areas | All Human Resources features | Yes       | No              |
+
+
 
 ## Development and administration features
 
