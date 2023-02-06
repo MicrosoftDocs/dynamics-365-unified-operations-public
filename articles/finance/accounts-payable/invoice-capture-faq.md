@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice capture FAQ
-description: This article answers frequently asked questions about Invoice capture.
+description: This article answers frequently asked questions about the Invoice capture solution.
 author: sunfzam
 ms.date: 02/05/2023
 ms.topic: overview
@@ -33,73 +33,74 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article answers frequently asked questions about the Invoice capture solution. The Invoice capture solution automatically creates vendor invoices from digital 
-invoice images.
+This article answers frequently asked questions about the Invoice capture solution. The Invoice capture solution automatically creates vendor invoices from digital invoice images.
 
-### Why do I get the message “OCR Process failed” in Received files? 
-The most common reason for this error is that you don’t have an AI Builder license. This can solved by requesting a trial version. 
-To request a traial AI builder license, go to **make.powerapps.com > AI Builder/Explorer**. 
+### Why do I receive an "OCR Process failed" error message in Received files?
 
-### What if the invoices received are in an unsupported format, for example, a word document? 
-Word documents aren't supported yet. Power automate can convert a word document into PDF before calling invoice capture API. 
- 
+The most common reason for this error is that you don't have an AI Builder license. You can fix the issue by requesting a trial version. To request a trial AI Builder license, go to the [Microsoft Power Apps maker portal](https://make.powerapps.com/), and select **AI Builder/Explorer**.
 
-### When does the invoice review process and approve require manual intervention in Invoice capture? 
-It depends on the **Manual review required** setting in the configuration group.  
-The following settings are available:
- - **Errors or warnings** - If there aren't any warnings or errors, doesn’t require any manual intervention. 
- - **Errors only** - If there are no errors, doesn’t require any manual interventions.  
- - **Always needs manual review** - Always requires manual review. 
+### What if invoices that are received are in an unsupported format (for example, they're Word documents)?
 
+Word documents aren't yet supported. However, Power Automate can convert a Word document into a PDF file before it calls the invoice capture API.
 
-### How many invoices can be processed using Invoice capture? 
-The number is limited by the performance throttling of Power Platform. Currently, 50+ invoices can be processed at the same time and the average invoice processing 
-time would be 15~30 seconds. 
+### When do the invoice review process and approval require manual intervention in Invoice capture?
 
-### How can the default AI builder model be extended to recognize invoices with more complex format to increase the confidence score and the touchless rate?	 
-Yes, a custom model can be built on the top of the prebuild model. This will contain the most of the capability of the prebuilt model. The customer will need to
-provide additional training on the invoice of the exceptional layouts. 
+It depends on the **Manual review required** setting in the configuration group. The following values are available:
 
-### Does Invoice capture support PO invoices and Non-PO invoices? Does it support an invoice journal for the Non-PO invoices? 
-When the invoice isn't associated with a purchase order, it is treated as a Non-PO invoice. Only service items or procurement categories are allowed on the invoice 
-lines. When the invoice is associated with a purchase order(s), it is treated as a PO invoice. Both stock items and non-stock items are allowed on the invoice lines.   
+- **Errors or warnings** – Manual intervention is required only if there are warnings or errors.
+- **Errors only** – Manual intervention is required only if there are errors.
+- **Always needs manual review** – Manual review is always required.
 
-If the item is a stock item on the invoice line, the purchase order has to be linked with the invoice line by the purchase order and line numbers. If not linked, 
-an error will show during the transfer of the invoice: 
-**Write validation failed for table row of type 'VendorInvoiceLineEntity'. Infolog: Warning: The item's inventory model policy must be not stocked.; Warning: The item's inventory model policy must be not stocked...**. 
+### How many invoices can be processed by using Invoice capture?
 
-The use of an invoice journal for Non-PO invoices will be available in a future release.  
+The number is limited by the performance throttling of Microsoft Power Platform. Currently, 50+ invoices can be processed at the same time, and the average invoice processing time is about 15 to 30 seconds.
 
-### Does Invoice capture learn from changes made to the invoice if the invoice wasn't processed correctly or changed by the AP Clerk? 
-Yes, continuous learning capability is available in the latest public preview version. Invoice capture will learn from the correction of the previous invoice. Next time, when a similar invoice is captured, it will apply what it has learned to derive the entities. Some tasks are still on-going to increase continuous learning capabilities to reduce the AP clerk's review effort and increase the touchless rate. 
+### How can I extend the default AI Builder model so that it recognizes invoices that have a more complex format, to help increase the confidence score and the touchless rate?
 
- 
+A custom model can be built on the top of the prebuilt model. This custom model will contain most of the capability of the prebuilt model. The customer will have to provide additional training about the invoices that have exceptional layouts.
 
-### What happens to the tax on the invoice in Invoice capture? 
-The field **Total tax** sums all of the tax amounts on the invoices and transferred to Dynamics Finance 365. The amount will ensure the correctness of the invoice by comparing the sales tax on the associated purchase order when the invoice validation is enabled. 
+### Does Invoice capture support PO invoices and Non-PO invoices? Does it support an invoice journal for Non-PO invoices?
 
- 
-### Is it possible to extend the item mapping rule to map between an external item number to an internal item number?  
-Not in the current release. It is on our roadmap and will be released in a future release. 
+If an invoice isn't associated with a purchase order (PO), it's treated as a Non-PO invoice. Only service items or procurement categories are allowed on the invoice lines.
 
-### Is there a model localization to capture invoices structure for different countries?  
-The application can be extended to meet country specific requirements. 
- 
+If an invoice is associated with one or more POs, it's treated as a PO invoice. Both stock items and non-stock items are allowed on the invoice lines.
 
-### Does Invoice capture support uploading multiple invoices at once? 
-The current version supports uploading one document at a time. Uploading multiple invoices will be available in a future release.   
+If the item on the invoice line is a stock item, the PO must be linked with the invoice line by the PO and line numbers. Otherwise, the following error message will be shown during the transfer of the invoice:
 
-### What languages of the invoices are supported? 
-The following languages are currently supported: 
- - Dutch (Netherlands) 
- - English (United States) 
- - French (France) 
- - German (Germany) 
- - Italian (Italy) 
- - Portuguese (Portugal) 
- - Spanish (Spain) 
+> Write validation failed for table row of type 'VendorInvoiceLineEntity'. Infolog: Warning: The item's inventory model policy must be not stocked.; Warning: The item's inventory model policy must be not stocked...
 
-More languages will be supported in a future release. Contact us if you want to share data with Microsoft to speed up the readiness of the model for your language.  
+Support for using an invoice journal for Non-PO invoices will be available in a future release.
 
+### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
+Yes, continuous learning capabilities are available in the latest public preview version. Invoice capture will learn from the correction of a previous invoice. Then, the next time that a similar invoice is captured, Invoice capture will apply what it has learned to derive the entities. Some work is still in progress to increase continuous learning capabilities so that the Accounts payable (AP) clerk's review effort is reduced and the touchless rate is increased.
 
+### What happens to the tax on an invoice in Invoice capture?
+
+The **Total tax** field sums all the tax amounts on the invoices and transfers the total amount to Dynamics 365 Finance. When invoice validation is enabled, the amount will be compared to the sales tax on the associated PO to ensure the correctness of the invoice.
+
+### Can I extend the item mapping rule to map between an external item number and an internal item number?
+
+Not in the current release. This capability is on our roadmap and will be available in a future release.
+
+### Is there a model localization to capture invoice structures for different countries and regions?
+
+The application can be extended to meet country/region-specific requirements.
+
+### Does Invoice capture support uploading multiple invoices at the same time?
+
+The current version supports uploading one document at a time. The capability to upload multiple invoices at the same time will be available in a future release.
+
+### What languages of invoices are supported?
+
+The following languages are currently supported:
+
+- Dutch (Netherlands)
+- English (United States)
+- French (France)
+- German (Germany)
+- Italian (Italy)
+- Portuguese (Portugal)
+- Spanish (Spain)
+
+More languages will be supported in a future release. If you want to share data with Microsoft to help make the model for your language ready more quickly, contact us.
