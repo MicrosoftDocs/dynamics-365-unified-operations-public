@@ -3743,6 +3743,8 @@
         items:
         - name: Message processor messages for warehouse management processes
           href: warehousing/warehouse-message-processor-messages.md
+        - name: Warehouse-specific inventory transactions
+          href: warehousing/warehouse-transactions.md
         - name: Warehousing telemetry
           items:
           - name: Enable warehousing telemetry with Application Insights
