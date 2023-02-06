@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
+ms.search.form: EntAssetCriticality, EntAssetObjectCriticality
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -4,33 +4,23 @@
 title: Customer orders in point of sale (POS)
 description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 08/02/2021
+ms.date: 01/30/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: RetailFunctionalityProfile 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: ["260594", "intro-internal"]
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Release 10.0.14
-
 
 ---
 
 # Customer orders in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 
@@ -82,6 +72,8 @@ Before you try to create customer orders in POS, you must configure the appropri
 - **Carryout mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines will be picked up or shipped, and other lines will be carried out by the customer immediately.
 - **Cancellation charge percentage** – If a charge should be applied when a customer order is canceled, specify the amount of that charge.
 - **Cancellation charge code** – Specify the Accounts receivable charge code that should be used when a cancellation charge is applied to canceled customer orders through POS. The charge code defines the financial posting logic for the cancellation charge.
+     > [!NOTE]
+     > When advanced auto charges features aren't enabled, it is recommended that you create a dedicated charge code for cancellation charges instead of reusing the shipping charge code, since the latter may result in unexpected behavior when the system selects the sales tax group for the charge. It is also recommended that you choose a cancellation charge code name and description that makes it clear to cashiers that the cancellation charge code is only to be used for cancellations.
 - **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users will be prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an Accounts receivable charge code that will be applied to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
 - **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omni-channel advanced auto charges](./omni-auto-charges.md).
 
@@ -122,11 +114,11 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
-3. Select **Pick up selected** or **Pick up all** to initiate the order pick up configuration.
+3. Select **Pick up selected** or **Pick up all** to initiate the order pickup configuration.
 4. Select the store location where the customer will pick up the selected products.
 5. Select a date when the item will be picked up.
 6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-7. If the full order total wasn't paid, select whether the customer will provide payment later (at pick up), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
+7. If the full order total wasn't paid, select whether the customer will provide payment later (at pickup), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
 
 ### Edit an existing customer order
 

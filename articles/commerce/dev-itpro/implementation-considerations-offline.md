@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Commerce offline implementation and troubleshooting
-description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
+title: Commerce offline implementation considerations
+description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations.
 author: jashanno
-ms.date: 09/29/2022
+ms.date: 01/12/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -15,13 +15,11 @@ ms.search.validFrom: 2021-08-31
 
 ---
 
-# Commerce offline implementation and troubleshooting
+# Commerce offline implementation considerations
 
 [!include[banner](../includes/banner.md)]
 
-This article is intended for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce applications. This article describes features and functionality, implementation tips, and troubleshooting methods related to the usage of offline functionality.
-
-## Overview
+This article is intended for people who implement offline functionality that's related to the Microsoft Dynamics 365 Commerce Modern POS or Store Commerce application. This article describes features, functionality, and implementation tips that are related to the use of offline functionality.
 
 Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS (with or without an offline database) and other in-store components. Commerce Data Exchange (CDX) is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
 
@@ -66,54 +64,57 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 | Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
 ### Offline testing
+
 When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS) and offline functionality. Here is a non-exhaustive list of functions that you should test while you're offline, to verify correct functionality:
 
--	Test cashier and manager sign-in.
--	Test shift opening and closing.
--	Test product browsing by using categories.
--	Test product search by using the search bar.
--	Test a cash and carry transaction.
--	Test blind returns.
--	Test discounts.
--	Test unit of measure changes.
--	Test payment functionality. All the following payment types should work and be available while you're offline:
-    -	Cash
+- Test cashier and manager sign-in.
+- Test shift opening and closing.
+- Test product browsing by using categories.
+- Test product search by using the search bar.
+- Test a cash and carry transaction.
+- Test blind returns.
+- Test discounts.
+- Test unit of measure changes.
+- Test payment functionality. All the following payment types should work and be available while you're offline:
+
+    - Cash
     - Currency
     - Check
-    -	Loyalty
-    -	Card
-    -	Customer account
-    -	Gift card
--	Test **Show journal**.
--	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to check out.
--	Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
--	Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
+    - Loyalty
+    - Card
+    - Customer account
+    - Gift card
 
+- Test **Show journal**.
+- Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to check out.
+- Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
+- Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
 
 ## Troubleshooting
 
-If the following table does not list an error that you are receiving, create a support request, so that Microsoft Support can help you fix the issue. This section will be updated over time with additional errors so it is valuable to review this document prior to implementing or updating Modern POS registers that utilize offline databases.
-
-| Error | Description |
-|---------------|--------------------------------------------------------------------------------|
-| Microsoft_Dynamics_Commerce_Runtime_AuthenticationMethodDisabled Microsoft_Dynamics_Commerce_Runtime_ChannelConfigurationNotFound Microsoft_Dynamics_Commerce_Runtime_ChannelNotPublished Microsoft_Dynamics_Commerce_Runtime_InvalidChannelConfiguration |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Microsoft_Dynamics_Commerce_Runtime_CredentialsNotConfigured Microsoft_Dynamics_Commerce_Runtime_CredentialsNotFound Microsoft_Dynamics_Commerce_Runtime_InvalidAuthenticationCredentials Microsoft_Dynamics_Commerce_Runtime_LocalLogonFailed Microsoft_Dynamics_Commerce_Runtime_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either not available or not configured correctly. To resolve this issue, run the Staff scheduler job (by default, this is the 1060 scheduler job). Please contact your system administrator. |
-| Microsoft_Dynamics_Commerce_Runtime_CriticalStorageError  | To check the status offline db permissions, size, disk space (could use offline dashboard) |
-| Microsoft_Dynamics_Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | This error occurs when the same user attempts to perform a manager override. A different user must be used. |
-| Microsoft_Dynamics_Commerce_Runtime_RealtimeServiceNotSupported Microsoft_Dynamics_Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been set up successfully. Please contact your system administrator. |
-| Microsoft_Dynamics_Commerce_Runtime_TerminalNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Microsoft_Dynamics_Internal_Server_Error | This error covers several possible scenarios, so we recommend that you contact support and get assistance directly. |
+For more information about troubleshooting, see [Commerce offline implementation troubleshooting](implementation-offline-troubleshooting.md).
 
 ## Additional resources
 
-- [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
-- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
-- [Commerce Data Exchange best practices](CDX-Best-Practices.md)
-- [Online and offline point of sale (POS) operations](../pos-operations.md)
-- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
-- [Select an in-store topology](retail-in-store-topology.md)
-- [Device management implementation guidance](../implementation-considerations-devices.md)
-- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
-- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+[Commerce offline implementation troubleshooting](implementation-offline-troubleshooting.md)
+
+[Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
+
+[Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
+
+[Commerce Data Exchange best practices](CDX-Best-Practices.md)
+
+[Online and offline point of sale (POS) operations](../pos-operations.md)
+
+[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+
+[Select an in-store topology](retail-in-store-topology.md)
+
+[Device management implementation guidance](../implementation-considerations-devices.md)
+
+[Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+
+[Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

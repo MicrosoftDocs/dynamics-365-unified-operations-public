@@ -2,7 +2,7 @@
 title: Copy content to another locale
 description: This article describes how to copy existing content to another locale within a site in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
-ms.date: 07/06/2022
+ms.date: 01/12/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -64,3 +64,13 @@ To monitor the status of a locale copy operation, follow these steps.
 1. In site builder, go to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Jobs**.
 1. Under **Current jobs**, select the job to monitor. Job details are shown in the dialog box that appears on the right.
+
+## Delete a locale
+
+To delete a locale and all the contents in that locale, follow these steps.
+
+1. In site builder, go to your site.
+1. In the left navigation pane, select **Site settings**, and then select **Channels**.
+1. Under **Channel**, select the name of the channel from which you want to delete a locale.
+1. On the channel properties pane on the right, under **Locale-domain mappings**, select the vertical ellipsis next to the locale you want to delete, and then select **Delete**.
+1. In the confirmation dialog box, ensure that the information is correct, and then select **Delete locale**.

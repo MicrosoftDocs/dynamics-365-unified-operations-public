@@ -32,12 +32,9 @@ When your agency has sent a request for quotation (RFQ), vendors sometimes have 
 
 Users can publish answers to vendor questions more than once. Vendors can't no longer post questions after a vendor is selected and the RFQ is awarded, or after the cutoff date for questions is reached.
 
-## Turn on the feature
+## Turn this feature on or off
 
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
-
-- **Module:** *Procurement and sourcing*
-- **Feature name:** *RFQ questions and answers*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.21, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *RFQ questions and answers* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Allow questions and answers to be used in RFQs
 

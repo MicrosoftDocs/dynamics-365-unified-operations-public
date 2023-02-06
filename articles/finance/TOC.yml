@@ -4,7 +4,7 @@
     items:
     - name: Dynamics 365 Finance home page
       href: index.md
-    - name: What's new or changed
+    - name: What's new or changed 
       items: 
       - name: What's new or changed in finance and operations apps
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.32 (March) 
+          href: get-started/whats-new-changed-10-0-32.md
         - name: Finance 10.0.31 (February)
           href: get-started/whats-new-changed-10-0-31.md
         - name: Finance 10.0.30 (November)
@@ -338,6 +340,8 @@
           href: accounts-payable/tasks/define-vendor-payment-terms.md
         - name: Create vendor payments by using a payment proposal
           href: accounts-payable/create-vendor-payments-payment-proposal.md
+        - name: Post detailed vendor and customer payments but summarize bank amounts  
+          href: general-ledger/summary-payment.md
         - name: Reverse a vendor payment
           href: accounts-payable/reverse-vendor-payment.md
         - name: Electronic reporting sample vendor checks
@@ -450,6 +454,8 @@
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
+          - name: Generate invoices from billing schdeules  
+            href: accounts-receivable/sb-generate-invoice.md
           - name: Customer split with a billing schedule
             href: accounts-receivable/sb-customer-split.md
           - name: Billing schedule features
@@ -462,6 +468,8 @@
             href: accounts-receivable/sb-support-renewals.md
           - name: Unbilled revenue
             href: accounts-receivable/sb-unbilled-revenue.md
+          - name: Billing schedules with projects  
+            href: accounts-receivable/sb-bill-sched-project.md
           - name: Consumer price index schedules
             href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
@@ -494,6 +502,8 @@
           href: accounts-receivable/set-up-and-process-bridged-payments.md
         - name: Centralized payments for Accounts receivable
           href: accounts-receivable/centralized-payments-accounts-receivable.md
+        - name: Post detailed vendor and customer payments but summarize bank amounts  
+          href: general-ledger/summary-payment.md          
         - name: Deposit customer payments
           href: accounts-receivable/tasks/deposit-customer-payments.md
         - name: Set up and process bridged payments
@@ -998,6 +1008,12 @@
             href: general-ledger/tasks/create-main-account.md
           - name: Allocation terms
             href: general-ledger/main-account-allocation-terms.md
+        - name: Financial tags
+          items: 
+          - name: Financial tags
+            href: general-ledger/financial-tag.md
+          - name: Differences between financial tags and financial dimensions
+            href: general-ledger/financial-tag-financial-dimension.md
         - name: Financial dimensions 
           items:
           - name: Financial dimensions
@@ -1068,6 +1084,8 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Dual currency
             href: general-ledger/dual-currency.md
+          - name: Currency revaluation posting profile  
+            href: general-ledger/currency-revalue-posting-profile.md  
         - name: Posting profiles
           items:
           - name: Posting profiles overview
@@ -1167,7 +1185,9 @@
         - name: General ledger statement by main account
           href: general-ledger/general-ledger-statement-by-main-account.md
         - name: Standard Audit File for Tax (SAF-T) electronic report
-          href: general-ledger/standard-audit-file.md      
+          href: general-ledger/standard-audit-file.md
+        - name: Ledger settlement inquiry
+          href: general-ledger/ledger-settlement-inquiry.md          
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1187,7 +1207,19 @@
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
         - name: Awareness between ledger settlement and year-end close
-          href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+          items:          
+          - name: Awareness between ledger settlement and year-end close
+            href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+          - name: Prepare for Awareness between ledger settlement before year-end close  
+            href: general-ledger/ledger-settle-yec.md  
+          - name: Prepare for Awareness between ledger settlement after year-end close   
+            href: general-ledger/ledger-settle-yec-after.md
+          - name: Awareness between ledger settlement feature and reporting currency is out of balance  
+            href: general-ledger/reporting-currency-yec.md
+          - name: Awareness between ledger settlement feature before year-end close using the inquiry window  
+            href: general-ledger/ledger-settlement-yec-inquiry-before.md
+          - name: Awareness between ledger settlement feature after year-end close using the inquiry window   
+            href: general-ledger/ledger-settlement-yec-inquiry-after.md
         - name: Automate ledger settlements  
           href: general-ledger/auto-settle.md
         - name: Foreign currency revaluation for General ledger
@@ -1576,6 +1608,8 @@
                 href: localizations/e-invoicing-process-incoming-electronic-documents.md
               - name: Configure an email channel
                 href: localizations/e-invoicing-configure-email.md?context=/dynamics365/context/finance
+              - name: Configure an email channel for Office 365 Exchange Online
+                href: localizations/e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
               - name: Configure a SharePoint channel
                 href: localizations/e-invoicing-configure-sharepoint-channel.md
           - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
@@ -3202,6 +3236,22 @@
           items: 
           - name: Kuwait overview
             href: localizations/kuwait.md
+        - name: Latin America
+          items: 
+          - name: Taxpayer types for Latin America
+            href: localizations/ltm-core-taxpayer-type.md
+          - name: Tax ID types for Latin America
+            href: localizations/ltm-core-tax-id-type.md
+          - name: Document class letter for Latin America
+            href: localizations/ltm-core-document-class-letter.md
+          - name: Customer sets for Latin America
+            href: localizations/ltm-core-customers-set.md
+          - name: Vendor set configuration
+            href: localizations/ltm-core-vendors-set.md
+          - name: Address setup for Latin America
+            href: localizations/ltm-core-address-setup.md
+          - name: Sales point prefixes for Latin America
+            href: localizations/ltm-core-sales-point-prefixes.md
         - name: Latvia
           items:
           - name: Latvia overview

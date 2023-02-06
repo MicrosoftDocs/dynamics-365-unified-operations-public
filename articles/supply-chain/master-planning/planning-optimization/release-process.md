@@ -2,7 +2,7 @@
 title: Planning Optimization release process and release history
 description: This article provides information about the release process and release history for Planning Optimization.
 author: t-benebo
-ms.date: 10/14/2022
+ms.date: 01/31/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -28,9 +28,10 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
-| <p>[Batch disposition codes](../../inventory/batch-disposition-codes.md)</p><p>Include on-hand inventory and inventory transaction parameters on master plans</p><p>General performance, quality, and stability improvements</p> | No feature management required | October 10-14, 2022 |
+| <p>[Bills of material with constant scrap or variable scrap defined](../scrap-calculations.md)</p><p>Demand with specific BOM or route requirements defined</p><p>Calculated delays: Add the calculated delay to the requirement date settings on master plans</p> | No feature management required | January 10-15, 2023 |
+| <p>[Batch disposition codes](../../inventory/batch-disposition-codes.md)</p><p>Include on-hand inventory and inventory transaction parameters on master plans</p><p>Released production orders that are not started, where scheduled start date is earlier than today</p><p>General performance, quality, and stability improvements</p> | No feature management required | October 10-14, 2022 |
 | <p>[Resource scheduling with finite capacity](finite-capacity.md)</p><p>General performance, quality, and stability improvements</p> | No feature management required | September 19-23, 2022 |
-| General performance, quality, and stability improvements | No feature management required | August 29 - September 3, 2022 |
+| <p>[Master planning for products with limited shelf life](shelf-life.md)</p><p>General performance, quality, and stability improvements</p> | No feature management required | August 29 - September 3, 2022 |
 | <p>[Centralized calendar maintenance](../supply-chain-calendars-master-planning.md)</p><p>[Suggestions to optimize existing supply](../action-messages.md)</p><p>[Support for subcontracting](../../production-control/manage-subcontract-work-production.md)</p><p>General performance, quality, and stability improvements</p> | No feature management required | March 7-11, 2022 |
 | Planning priority support for production orders | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
 | General performance, quality, and stability improvements | No feature management required | November 12-18, 2021 |
