@@ -5,7 +5,7 @@ author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 02/06/2023
 audience: Application User
 ms.search.region: Global
