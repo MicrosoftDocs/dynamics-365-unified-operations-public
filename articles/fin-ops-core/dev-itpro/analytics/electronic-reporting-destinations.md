@@ -157,6 +157,9 @@ To make the PDF conversion option available in the current Finance instance, ope
 
 [![Turning on the PDF conversion of outbound documents feature in Feature management.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
+> [!NOTE]
+> In versions of Finance before 10.0.21, conversion to PDF had to be explicitly enabled. However, starting in version 10.0.21, the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature was automatically enabled. Then, starting in version 10.0.29, the feature became mandatory. In Finance version 10.0.32, the feature has been eliminated. In other words, conversion to PDF is enabled out of the box.
+
 ### Applicability
 
 In versions of Finance **before version 10.0.18**, the PDF conversion option can be turned on only for **Excel\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
