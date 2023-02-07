@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Power Platform Integration
+title: Enable Power Platform Integration
 description: This article explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for finance and operations apps and Dataverse.
 author: laswenka
 ms.date: 02/07/2023
@@ -23,7 +23,7 @@ ms.author: laswenka
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
 ---
-# Power Platform Integration
+# Enable Power Platform Integration
 
 [!include[banner](../includes/banner.md)]
 
