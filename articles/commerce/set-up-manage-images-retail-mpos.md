@@ -68,7 +68,7 @@ In the following procedures, images are set up for the Catalog entity as an exam
 
 1. From the page for the entity item in headquarters, you can preview the image that uses the image URL that is derived from the media template. For this example, go to the appropriate catalog, and then, on the Action Pane, select **Media \> Images**. Use the drop-down list to select different stores that might have different channel profiles.
 2. To edit or remove the implicit media template, you must return to the **Define media template** dialog box for the **Catalog images** page.
-3. You can use the **Add** and **Remove** buttons to manually change the path that is based on the implicit template and used for a specific image. For more information, see the [Overwriting the media template for entity items](#overwriting-the-media-template-for-entity-items) section later in this article.
+3. You can use the **Add** and **Remove** buttons to manually change the path that is based on the implicit template and used for a specific image. For more information, see the [Overwrite the media template for entity items](#overwrite-the-media-template-for-entity-items) section later in this article.
 4. After you've finished previewing an image and making any changes that you require, start the Store Commerce instance for the appropriate store, and see whether the catalog images are shown.
 
     [![Images dialog box.](./media/catalog4.png)](./media/catalog4.png)
