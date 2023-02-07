@@ -295,7 +295,7 @@ To enable manual execution of a deferred fiscal registration, you should add a n
 
 To view connection parameters and other information in POS, follow these steps.
 
-1. Open Modern POS (MPOS) or Cloud POS (CPOS).
+1. Open the Store Commerce app or Store Commerce for web.
 1. Select **Settings**. If fiscal integration is enabled, the **Fiscal Integration** section on the right will show the following information:
 
     - The status of fiscal registration
