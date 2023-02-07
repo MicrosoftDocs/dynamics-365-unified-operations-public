@@ -32,10 +32,10 @@ As part of One Dynamics, One Platform effort, a growing number of customers are 
 Power Platform Integration is a feature enabled in Lifecycle Services (LCS) that allows an administrator to link their Finance and Operations environments with new or existing Power Platform based environments. 
 Once Power Platform Integration is established, this enables your organization to:
 
-*Create low-code apps and flows by using the Power Platform environment linked to Finance and Operations.
-*Integrate finance and operations apps data with the Dataverse platform by using virtual tables, business events, and dual-write features.
-*Install and connect other Dynamics 365 applications with your finance and operations apps.
-*Install add-ins and connect them with your finance and operations apps.
+* Create low-code apps and flows by using the Power Platform environment linked to Finance and Operations.
+* Integrate finance and operations apps data with the Dataverse platform by using virtual tables, business events, and dual-write features.
+* Install and connect other Dynamics 365 applications with your finance and operations apps.
+* Install add-ins and connect them with your finance and operations apps.
 
 To learn more about Power Platform Integration, you may also watch our TechTalk on the [Microsoft Dynamics 365 Community](https://www.youtube.com/watch?v=HmJIuHhx3Hg) YouTube channel.
 
