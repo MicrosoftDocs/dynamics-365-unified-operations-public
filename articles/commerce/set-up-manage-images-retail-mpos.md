@@ -24,7 +24,7 @@ ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 
 This article explains the steps that are involved in setting up and managing images for the various entities that appear in Store Commerce.
 
-## Setting up the media base URL and defining media templates to configure the format for image URLs
+## Set up the media base URL and defining media templates to configure the format for image URLs
 
 The images that appear in Store Commerce must be hosted externally, outside of Commerce. Typically, they are hosted in a content management system, content delivery network (CDN), or media server. Store Commerce then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL. To fetch these externally hosted images, Store Commerce requires the correct URL format for the images. You can configure the required URL format for the images by setting up the **Media base URL** value in the channel profile and using the **Define media template** functionality for each entity. You can also overwrite the standard URL format for a subset of entities by using the **Edit in Excel** functionality.
 
@@ -64,7 +64,7 @@ In the following procedures, images are set up for the Catalog entity as an exam
 
     [![Define media template dialog box.](./media/catalog1.png)](./media/catalog1.png)
 
-## Previewing an image from the entity level
+## Preview an image from the entity level
 
 1. From the page for the entity item in headquarters, you can preview the image that uses the image URL that is derived from the media template. For this example, go to the appropriate catalog, and then, on the Action Pane, select **Media \> Images**. Use the drop-down list to select different stores that might have different channel profiles.
 2. To edit or remove the implicit media template, you must return to the **Define media template** dialog box for the **Catalog images** page.
@@ -86,7 +86,7 @@ For all the five supported entities (Worker, Customer, Catalog, Category, and Pr
 - You update the Product image media template from **Product images \> Define media template**.
 - You update the Category image media template from **Category images \> Define media template**. You must also publish the channel.
 
-## Overwriting the media template for entity items
+## Overwrite the media template for entity items
 
 As you learned in the previous section, the media template for a given entity supports only one common path. This path is based on the media base URL that is configured and the media path that is defined. However, in many cases, a retailer wants to be able to use images from different sources for a subset of items in an entity. For example, a store uses the self-hosted media server for one set of catalog images but uses CDN URLs for another set. To overwrite image URLs that are based on a media template for entity images at the entity level, you can use the Edit in Excel and Manual edit functionality from the **Preview** page.
 
@@ -130,11 +130,11 @@ As you learned in the previous section, the media template for a given entity su
 13. Return to headquarters, and select **OK**.
 14. Run the appropriate synchronization jobs for the entity, and check the preview on the entity page or in Store Commerce.
 
-#### Creating new records
+#### Create new records
 
 You can create new records in Excel. However, make sure that you provide the correct information. For example, to create a new entry for a catalog, make sure that the catalog ID and catalog name are correct, and also provide a unique file name. The unique file name is very important, because the uniqueness of records in Excel is validated during publishing. First copy the details from the catalog that you want to create a new record for, and copy the record. You just have to update the file name and URL, because the rest of the information will be same. To create new records for Product entity items, you use the same basic procedure. From the Excel worksheet, copy an existing record for the product that you to create a new record for, and then replace the image URL and filename. Make sure that the file name is unique.
 
-#### Deleting an existing record
+#### Delete an existing record
 
 Only the overwritten image URL records can be deleted. After an image is deleted and synchronization is completed, the image will no longer appear on the **Preview** page or in Store Commerce. Image URL records that are derived from the media template can't be deleted, because these records are always derived from the media template every time.
 
@@ -172,7 +172,7 @@ To overwrite image URLs for catalog product images, you must use the **Preview**
 > [!NOTE]
 > After category image association, you must publish the channel and run the Channel job to help guarantee that the changes are published to the channel database.
 
-## Setting up images to appear in offline mode for Store Commerce
+## Set up images to appear in offline mode for Store Commerce
 
 Store Commerce can run in online mode (when Store Commerce is connected to Commerce Scale Unit) or offline mode (when there is no Commerce Scale Unit or network connectivity, and transactions are stored in a local offline database). When Store Commerce runs in offline mode, it can't get images from the external image server to display from Commerce Scale Unit, because connectivity has been lost. However, you can still set up images so that they are shown when Store Commerce runs in offline mode.
 
@@ -193,14 +193,14 @@ The product images that must be used in offline mode can be set up by uploading 
 > [!NOTE]
 > Offline image support is only available for product images.
 
-### Set up catalog, category, employee, and customer images to appear in offline mode for MPOS
+### Set up catalog, category, employee, and customer images to appear in offline mode for Store Commerce
 
 The catalog, category, employee, and customer images that must be used in offline mode can be set up by adding the required image's destination link to the gallery and setting the image as the default image for the selected entity.
 
 1. Go to the catalog, and then, on the Action Pane, select **Media \> Images**.
 2. Follow the steps in the [Overwrite from the entity-level Preview page](#overwrite-from-the-entity-level-preview-page) section to add the external image URL.
 3. Mark this image as the default image for the catalog by selecting the check box against the Image listed in the grid.
-4. Run the Catalog job. This image will now be used as the offline image for that catalog in MPOS.
+4. Run the Catalog job. This image will now be used as the offline image for that catalog in Store Commerce.
 5. Follow a similar process for other entities, such as Category, Employee, and Customer.
 
     [![Offline image.](./media/offline2.png)](./media/offline2.png)
