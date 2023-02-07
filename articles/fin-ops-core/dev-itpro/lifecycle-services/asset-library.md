@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics Lifecycle Services (LCS). Two types of Asset library are available in LCS: the Shared asset library and the project-level Asset library.
 
+    > [!NOTE]
+    > Asset library is not supported for Prospect projects or organizations.  In these situations the Asset library menu option will not be visible. 
+
 - **Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in LCS. This library can be accessed by any user who signs in to LCS. To access the Shared asset library, sign in to LCS, and then click the **Shared asset library** tile.
 
     [![Shared asset library tile.](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)

@@ -64,6 +64,11 @@ When you've completed all the required tasks in a phase, you can click **Complet
 
 [![8.](./media/8.jpg)](./media/7.jpg)
 
+### Reopen a completed milestone
+If you need to make any changes to your completed milestone tasks or dates, you may click the "Reopen phase" button on a prior milestone.  You can then make edits and complete it again.
+
+[![Reopen a prior phase.](./media/lcs-reopenphase.png)](./media/lcs-reopenphase.png)
+
 ### Methodology description and history
 
 Descriptions can help you understand what is expected of you for a specific methodology task or phase. You can expand the methodology description to learn more about each task, and then collapse the description when you've finished. The task and phase history can tell you when a task or phase was completed or reopened. If you're a project manager, this information can help you stay on top of the high-level tasks that are required for your implementations. [![Expanded task history and methodology description.](./media/2.jpg)](./media/2.jpg)
