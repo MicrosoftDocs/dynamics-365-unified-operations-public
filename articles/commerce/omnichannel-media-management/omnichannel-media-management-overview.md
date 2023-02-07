@@ -19,8 +19,3 @@ ms.search.form:
 #Omnichannel media managment overview
 
 
-[!include [banner](includes/banner.md)]
-Lorem ipsum.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
