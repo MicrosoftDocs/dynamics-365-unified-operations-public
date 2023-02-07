@@ -50,7 +50,7 @@ To create and configure a custom Retail Server app in Azure AD, follow these ste
 ## Set up a custom app for Store Commerce for web in Azure AD
 
 > [!IMPORTANT]
-> If you're upgrading an existing custom Store Commerce for web Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom Store Commerce for web Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+> If you're upgrading an existing custom Store Commerce for web Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom Store Commerce for web Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-store-commerce-for-web-azure-ad-app-created-before-commerce-version-10021).
 
 To create and configure a custom app for Store Commerce for web in Azure AD, follow these steps.
 
@@ -92,7 +92,7 @@ To upgrade an existing custom Store Commerce for web Azure AD app created before
 
 Open the Store Commerce for web config.json file, and make the following updates in it.
 
-1. Replace the **AADClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-cpos-app-in-azure-ad) section.
+1. Replace the **AADClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
 1. Replace the **AADRetailServerResourceId** key value with the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad) section.
 
 Store Commerce for web will use both parameters when it sends requests to Azure AD to acquire a security token.
@@ -106,7 +106,7 @@ Next, you must update identity providers settings in Commerce headquarters.
 1. In the **Relying parties** section, select **Add** to add a row.
 1. Set the following fields:
 
-    - **ClientId** – Enter the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-cpos-app-in-azure-ad) section.
+    - **ClientId** – Enter the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
     - **Type** – Select **Public**.
     - **UserType** – Select **Worker**.
 
