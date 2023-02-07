@@ -28,7 +28,7 @@ This article describes a new capability of B2B account managers to sign in to th
 Retailer representatives (typically, account managers) can sign in to the B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The account manager can then view the same products, prices, promotions, and discount experience as the buyer and can add items to a cart and place orders on behalf of the buyer. 
 
 ## Prerequisites
-To enable this feature, [Azure Active Directory B2B application](obo-create-aad-application.md) needs to be created and configured. In addition, a B2B sign-in page in Site Builder needs to be configured. Finally, Dynamics 365 environment should be configured accordingly. 
+To enable this feature, Azure Active Directory B2B application needs to be [created](obo-create-aad-application.md). In addition, a B2B sign-in page in **site builder** needs to be configured. Finally, Dynamics 365 environment should be configured accordingly. 
   
 ## Experience
   
