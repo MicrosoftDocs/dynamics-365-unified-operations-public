@@ -89,7 +89,7 @@ The following list describes the prerequisites for setting up the Microsoft Powe
     - Dynamics 365 Service Admin
     - Power Platform Admin
 
--The user performing the setup in Lifecycle Services  must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan** license, the **AX Enterprise** license, or an application-specific license such as **Dynamics 365 Finance** to the finance and operations apps environment administrator account.
+-The user performing the setup in Lifecycle Services must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan** license, the **AX Enterprise** license, or an application-specific license such as **Dynamics 365 Finance**.
 
 ## <a name="enable-during-deploy"></a>Enable integration during environment deployment
 
@@ -152,7 +152,7 @@ If you connect an existing Power Platform environment, the following validations
 
 1. The **Enable D365 apps** option must be enabled when Dataverse is deployed in the Power Platform environment. This type of Dataverse deployment is the only type that supports Dynamics 365 apps, including connections to finance and operations apps.
 2. The Power Platform environment must be in the same geography as finance and operations apps. For example, in LCS, you might see an Azure Region such as **West US 2**. In Microsoft Power Platform, the environment should be deployed in **United States**. This requirement is in place for performance and data residency reasons.
-3. The user in LCS who is doing the Power Platform integration setup must be an administrator of the environment in Dataverse, and must have an applicable Finance, Supply Chain Management, or Commerce license assigned.
+3. The user in LCS who is doing the Power Platform integration setup must be an administrator of the environment in Dataverse, and must have an applicable Finance, Supply Chain Management, or Commerce license assigned.  Note that if the System Administrator role was just assigned, it can take up to an hour for the cache to refresh and before you can perform the setup via LCS.
 
 ### Environments that already use dual-write, virtual tables, business events, or add-ins before Power Platform integration is enabled
 
