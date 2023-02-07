@@ -61,7 +61,7 @@ For shared shifts to be used in a store, the cash drawer must be configured as a
 
 ## Shift and drawer operations
 
-Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Modern POS and Cloud POS.
+Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Store Commerce.
 
 ### Open shift
 
