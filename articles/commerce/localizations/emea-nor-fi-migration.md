@@ -32,7 +32,7 @@ To complete the migration process, follow these steps.
 
 1. Update the Commerce headquarters components.
 1. In Commerce headquarters, [configure the fiscal integration functionality for Norway](#configure-fiscal-integration).
-1. Ensure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
+1. Ensure that all offline transactions are uploaded from offline-enabled Store Commerce app devices to the channel database.
 1. Close shifts, and sign out of all POS devices.
 1. Update the Commerce Scale Unit components.
 1. Update the POS components.
