@@ -161,7 +161,8 @@ To see a list of capabilities that are available in on-premises deployments, see
 |------------------|---------------------|-----------|-----------------|
 | All Human Resources areas | All Human Resources features | Yes       | No              |
 
-
+>[!NOTE]
+>For the comparison of cloud vs. on-premise of a migrated Human resources environment, see [Comparison of cloud and on-premises features](./
 
 ## Development and administration features
 
