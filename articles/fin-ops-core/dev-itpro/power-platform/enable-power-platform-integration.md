@@ -39,7 +39,7 @@ Once Power Platform Integration is established, this enables your organization t
 
 To learn more about Power Platform Integration, you may also watch our TechTalk on the [Microsoft Dynamics 365 Community](https://www.youtube.com/watch?v=HmJIuHhx3Hg) YouTube channel.
 
-> [!VIDEO https://www.youtube.com/watch?v=HmJIuHhx3Hg]
+> [!VIDEO https://www.youtube.com/embed/HmJIuHhx3Hg]
 
 ## Initial Power Platform environment
 
