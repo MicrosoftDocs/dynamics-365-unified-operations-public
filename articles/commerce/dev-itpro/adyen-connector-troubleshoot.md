@@ -75,7 +75,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <td>This issue can occur when the POS is redeployed but the dllhost.config file hasn't been updated.</td>
 </tr>
 <td><strong>Fix</strong></td>
-<td>Follow the instructions in <a href="adyen-connector-setup.md#update-the-modern-pos-or-iis-hardware-station-configuration">Update the Store Commerce app or IIS Hardware Station configuration</a>. Then end the dllhost.exe task on the <strong>Details</strong> tab in Task Manager, and reopen Store Commerce app. If you're using an IIS Hardware Station, reset IIS.</td>
+<td>Follow the instructions in <a href="adyen-connector-setup.md#update-the-store-commerce-app-or-iis-hardware-station-configuration">Update the Store Commerce app or IIS Hardware Station configuration</a>. Then end the dllhost.exe task on the <strong>Details</strong> tab in Task Manager, and reopen Store Commerce app. If you're using an IIS Hardware Station, reset IIS.</td>
 </tr>
 </tbody>
 </table>
