@@ -1,6 +1,6 @@
 ---
 title: Task recorder and help for Store Commerce
-description: This article describes how to use task recorder in Microsoft Dynamics 365 Commerce Store Commerce.
+description: This article describes how to use the task recorder in Microsoft Dynamics 365 Commerce Store Commerce.
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.form: RetailTerminalTable, SystemParameters
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to use task recorder in Microsoft Dynamics 365 Commerce Store Commerce.
+This article describes how to use the task recorder in Microsoft Dynamics 365 Commerce Store Commerce.
 
 Task recorder in Store Commerce is a new solution that was built with a focus on high responsiveness. It provides a flexible application programming interface (API) for extensibility and seamless integration with consumers of business process recordings. Additionally, task recorder integration with the Business process modeler (BPM) tool on Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) has been brought forward. Therefore, users can continue to produce rich business process diagrams from recordings to analyze and design their applications.
 
