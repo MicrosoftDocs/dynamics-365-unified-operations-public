@@ -12,14 +12,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.32 (March 2023)
+          href: get-started/whats-new-commerce-10-0-32.md
         - name: Commerce 10.0.31 (February 2023)
           href: get-started/whats-new-commerce-10-0-31.md
         - name: Commerce 10.0.30 (November 2022)
           href: get-started/whats-new-commerce-10-0-30.md
-        - name: Commerce 10.0.29 (October 2022)
-          href: get-started/whats-new-commerce-10-0-29.md
-        - name: Commerce 10.0.28 (July 2022)
-          href: get-started/whats-new-commerce-10-0-28.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -402,8 +400,10 @@
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Commerce offline implementation and troubleshooting
+          - name: Commerce offline implementation considerations
             href: dev-itpro/implementation-considerations-offline.md
+          - name: Commerce offline implementation troubleshooting
+            href: dev-itpro/implementation-offline-troubleshooting.md
           - name: Choose between Store Commerce and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
@@ -416,7 +416,7 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management improvements
+          - name: Cash management overview
             href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
@@ -790,31 +790,41 @@
           href: service-to-service-auth.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
-      - name: Manage your inventory  
+      - name: Manage your inventory
         items:
-        - name: Inventory   
+        - name: Inventory availability
           items:
-          - name: Store inventory management  
-            href: work-with-store-inventory.md
+          - name: Calculate inventory availability for retail channels
+            href: calculated-inventory-retail-channels.md
+          - name: Configure channel-side inventory calculation
+            href: channel-side-calculation.md
           - name: Configure inventory buffers and inventory levels
             href: inventory-buffers-levels.md
-          - name: Work with serialized items in POS
-            href: pos-serialized-items.md
-          - name: Push products from distribution center to store using buyer's push 
-            href: tasks/push-products-distribution-center-store-buyers-push.md
-          - name: Set up rules and parameters for cross-docking and buyer's push  
-            href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+          - name: Inventory availability APIs for e-commerce
+            href: inventory-availability-apis.md
+          - name: POS inventory lookup with channel-side calculation
+            href: inventory-lookup-channel-side-calc.md
+          - name: Optimize inventory data
+            href: optimize-inventory-data.md
+          - name: Channel-side calculation FAQ
+            href: channel-side-calculation-faq.md
+          - name: Inventory-aware product listing
+            href: inventory-aware-product-listing.md
+        - name: Store inventory
+          items:
+          - name: Store inventory management
+            href: work-with-store-inventory.md
+          - name: Commerce asynchronous document framework
+            href: async-document-framework.md
           - name: Inbound inventory operation in POS
             href: pos-inbound-inventory-operation.md
           - name: Outbound inventory operation in POS
             href: pos-outbound-inventory-operation.md
-          - name: Calculate inventory availability for retail channels
-            href: calculated-inventory-retail-channels.md
           - name: Inventory lookup operation in POS
             href: pos-inventory-lookup-operation.md
-          - name: Inventory-aware product listing
-            href: inventory-aware-product-listing.md
-        - name: Purchase orders   
+          - name: Work with serialized items in POS
+            href: pos-serialized-items.md
+        - name: Warehouse inventory
           items:
           - name: Purchase order overview
             href: ../supply-chain/procurement/purchase-order-overview.md?context=/dynamics365/context/commerce
@@ -828,6 +838,10 @@
             href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
           - name: Create product packages for purchase orders
             href: tasks/create-product-packages-purchase-orders.md
+          - name: Push products from distribution center to store using buyer's push
+            href: tasks/push-products-distribution-center-store-buyers-push.md
+          - name: Set up rules and parameters for cross-docking and buyer's push
+            href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
     - name: Manage your orders
       items:
       - name: Customer orders
@@ -844,6 +858,8 @@
           href: process-order-pickup-POS.md
         - name: Enable order lookup for guest checkouts
           href: order-lookup-guest.md
+        - name: Improve the performance of Commerce order search
+          href: improve-order-search.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -1424,6 +1440,8 @@
         href: set-up-clarity.md
       - name: Set up Operational Insights
         href: dev-itpro/operational-insights.md
+      - name: Comparison of ETW and EventLog logger functionality
+        href: dev-itpro/compare-etw-eventlog.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -3002,6 +3020,8 @@
           href: troubleshoot/store-commerce-performance.md
         - name: Extension issues
           href: troubleshoot/store-commerce-extensions.md
+        - name: Sign-in issues
+          href: troubleshoot/store-commerce-sign-in.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
@@ -3062,6 +3082,8 @@
         items:
         - name: Issues with the data reconciliation of a Z report
           href: troubleshoot/z-report-issues.md
+        - name: Statement posting errors due to unavailable inventory or update conflicts
+          href: troubleshoot/inventory-errors-posting.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance

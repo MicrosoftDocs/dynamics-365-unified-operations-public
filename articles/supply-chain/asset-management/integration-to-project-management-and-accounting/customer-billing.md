@@ -42,12 +42,9 @@ In addition, the feature provides the following functionality:
 - The project contract from a customer's parent project is automatically copied to the relevant work order project.
 - Asset management can now use the *fee* project transaction type on both work order forecasts and work order journals.
 
-## Turn on the customer billing feature
+## Turn the work order billing feature on or off
 
-Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Project management and accounting*
-- **Feature name:** *Work order billing*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Work order billing* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Example scenario
 

@@ -7,6 +7,8 @@ ms.reviewer: kamaybac
 ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 ms.topic: how-to
 ms.date: 12/13/2022
+audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
@@ -27,7 +29,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 ## Create a fixed picking location
 
-1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse > Fixed locations**. This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.
+1. Go to **Warehouse management > Setup > Warehouse > Fixed locations**. This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.
 2. Select **New**.
 3. In the **Item number** field, enter or select a value. If you're using USMF, you can select item A0001.  
 4. In the **Site** field, enter or select a value. If you're using USMF, you can select site 2.  

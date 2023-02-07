@@ -36,8 +36,8 @@ The feature enables more replenishment work to be created than will fit in a loc
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
-1. Organization-wide work blocking (As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
-1. Replenishment over location capacity
+1. *Organization-wide work blocking* (As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off again.)
+1. *Replenishment over location capacity* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off again.)
 
 ## Set up the feature for the example scenario
 
@@ -104,7 +104,7 @@ Enable the replenish over capacity functionality on the location profile.
 ### Wave step code
 
 > [!NOTE]
-> To set up a wave step code as described here, you might first have to use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature that is named *Organization wide wave step code*.
+> To set up a wave step code as described here, you might first have to use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature that is named *Organization wide wave step code*. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.
 
 1. Go to **Warehouse Management \> Setup \> Waves \> Wave step codes**.
 1. Select **New**, and set the following values:

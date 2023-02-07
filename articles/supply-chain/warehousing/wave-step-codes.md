@@ -45,12 +45,9 @@ For this demo, demo data must be installed, and you must use the **USMF** demo d
 
 ### Enable wave step codes
 
-Follow these steps to turn on the wave step codes feature.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Organization wide wave step code* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-1. Go to **Feature Management**.
-2. Select to enable the feature called **Organization-wide Wave Step Code**.
-
-All existing wave step free texts in all legal entities are upgraded to the new structure. After this upgrade is completed for all legal entities, then the feature is enabled. If the feature cannot be enabled for one or more legal entities, then the feature is not enabled for any legal entities.
+When you first enable this feature, all existing wave step free texts in all legal entities are upgraded to the new structure. After this upgrade is completed for all legal entities, then the feature is enabled. If the feature cannot be enabled for one or more legal entities, then the feature is not enabled for any legal entities.
 
 During the enablement, validations are done during the data upgrade. If the upgrade fails, you receive an error message. An upgrade might fail because of the following conflicts:
 
@@ -60,7 +57,7 @@ During the enablement, validations are done during the data upgrade. If the upgr
 
 After you've resolved any conflicts that are identified during the validations, you can retry to enable the feature.
 
-When the feature has been enabled, the **Wave step codes** page (**Warehouse management \> Setup \> Waves \> Wave step codes**) becomes available. This page lists the wave step codes that were upgraded when the Organization-wide Wave Step Code feature was enabled.
+When the feature has been enabled, the **Wave step codes** page (**Warehouse management \> Setup \> Waves \> Wave step codes**) becomes available. This page lists the wave step codes that were upgraded when the *Organization wide wave step code* feature was enabled.
 
 ### Create new wave step codes
 

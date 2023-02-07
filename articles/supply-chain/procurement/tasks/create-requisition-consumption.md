@@ -31,7 +31,7 @@ This article describes the process of creating a requisition. It shows you diffe
 
 
 ## Create a new requisition
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me**.
+1. Go to **Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me**.
 2. Select **New**.
 3. In the **Name** field, give the requisition a name.
 4. In the **Requested date** field, enter a date. By default, the requested date and accounting date are copied to the purchase requisition lines. They can be changed at the line level. The requested date is the requested delivery date.  

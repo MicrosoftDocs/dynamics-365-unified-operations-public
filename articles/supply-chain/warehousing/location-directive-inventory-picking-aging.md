@@ -34,12 +34,12 @@ You can use FIFO and LIFO strategies to ship both batch-tracked items and non-ba
 
 When inventory is first received or created in the warehouse, the system updates the relevant license plate so that the current date is shown as the aging date. This date is then used by the location directive strategies to identify the oldest or newest inventory in the warehouse. If inventory is moved to a location that isn't tracked by license plate, the location itself is updated with aging information, and this information will then be used by the strategies.
 
-## Turn on the feature
+## Turn on the required features
 
-To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
+To make this functionality available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
 
 1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
-1. *Location directive inventory picking aging*
+1. *Location directive inventory picking aging* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 ## Feature requirements
 

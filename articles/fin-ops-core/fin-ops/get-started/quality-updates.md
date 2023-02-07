@@ -7,7 +7,7 @@ author: rashmansur
 ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2022-08-19
@@ -25,20 +25,27 @@ This premise is confirmed by the results: lower incident counts across our produ
 
 ## What you need to know
 
-- Proactive quality updates are applied on a monthly basis.
+- Proactive quality updates (PQU) are applied on a monthly basis.
 - Exceptions for proactive quality updates are allowed for customers that are regulated by the US Food and Drug Administration (FDA) only.
 - Proactive quality updates will never downgrade the environment or automatically upgrade from one service update version to another. 
 - Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
-- Notifications that are related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/).
-- Five days before a proactive quality update is applied to an environment, customers are notified that the update will occur.
+- Notifications that are related to proactive quality updates are posted in the [Message center - Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/#/MessageCenter) and search for Finance.
+- Customers are notified at least five days before a proactive quality update is applied to an environment.
 - Customers can't cancel or postpone proactive quality updates.
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 - Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
 - Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
+- ALL sandboxes, except those that have a time bound exception due to regulatory reasons, will be onboarded by January 7th 2023.
 - Production onboarding for Proactive Quality updates will begin from January 21, 2023. 
 - Production onboarding will only start for Lifecycle Services projects that have sandbox(es) onboarded and so far receiving proactive quality updates at a regular cadence for all supported service update versions. This is only applicable to customer environments who have not been provided any exceptions due to regulatory or other legal reasons.
 - For a full schedule of proactive quality updates for sandbox and production environments over the course of 2023, see below.
+- Every service update has at least one PQU release train ongoing or slated to begin. Once your environments are onboarded to the PQU process, you may receive a pre-scheduled proactive quality update on all of them when you move to a newer version service update. Please check the schedule to determine when a PQU for a service update is scheduled if you plan to upgrade to a newer version service update. 
 
+> [!IMPORTANT]
+> Production environments receive PQUs on weekends during dark hours. If a Service Update is scheduled within seven days of a PQU, then the scheduled PQU gets skipped. For example, if a PQU is scheduled on January 28, 2023 for a production environment, and a Service update is scheduled on February 4, 2023 for the same env, PQU on January 28, 2023 will be skipped. 
+
+> [!Note]
+> Standard performance test (tier4) and Premium performance test (tier5) sandboxes will receive PQUs on weekends along with production environments of their region. 
 
 ## Focus on quality updates
 
@@ -93,30 +100,6 @@ Over the first few months of 2023, beginning Jan 15th - we will begin onboarding
 ## What is the schedule for sandbox proactive quality updates?
 For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
-### <a name="schedule"></a> Proactive quality update release: 10.0.29
-**App version: 10.0.1326.70**  
-**Corresponding latest KB article: 750332**
-
-| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule|
-|---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022, November 2 to November 5, 2022, November 13 to November 16, 2022 | December 5 to December 8|
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022 | December 5 to December 8|
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | October 16 to October 19, 2022, November 2 to November 5, 2022 , November 13 to November 16, 2022 | December 5 to December 8|
-| Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022, November 2 to November 5, 2022, November 15 to November 18, 2022 | December 5 to December 8|
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
-
-### <a name="schedule"></a> Proactive quality update release: 10.0.30
-**App version: 10.0.1362.77**
-**Corresponding latest KB article: 767597**
-
-| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule |
-|---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | December 1 to December 4, 2022 |  December 13 to December 16, 2022 | 
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | December 2 to December 5, 2022 |  December 13 to December 16, 2022 | 
-| Station 3 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central | December 3 to December 6, 2022 |  December 13 to December 16, 2022 | 
-| Station 4 | West Europe, Central US, West US | December 4 to December 7, 2022 |  December 13 to December 16, 2022 | 
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
-
 ### <a name="schedule"></a> Proactive quality update Calendar year 2023 schedule
 
 #### <a name="Stations-Regions"></a> Stations to Region Mapping
@@ -137,35 +120,36 @@ For information on the dark hours for each region, see [What are the planned mai
 > [!Note]
 > Only the onboarded productions environments will receive the update for 10.0.30 Release-2 train, onboarded environments will receive explicit communication.
 
-| Quality Update train | Release cut | Train duration |
-|---|---|---|
-| 10.0.30 Release-2 | December 16th 2022 | January 2 to January 29 2023 |
-| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 25 2023 |
-| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 8, 2023 |
-| 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 18, 2023|
-| 10.0.31 Release-2 | March 3, 2023 | March 13, 2023 to April 15, 2023|
-| 10.0.31 Release-3 | April 14, 2023 | April 24, 2023 to May 27, 2023|
-| 10.0.32 Release-1 | March 31, 2023 | April 10, 2023 to May 13, 2023|
-| 10.0.32 Release-2 | April 28, 2023 | May 8, 2023 to June 10, 2023|
-| 10.0.32 Release-3 | May 26, 2023 | June 5, 2023 to July 8, 2023|
-| 10.0.33 Release-1 | April 28, 2023 | May 8, 2023 to June 10, 2023|
-| 10.0.33 Release-2 | May 26, 2023 | June 5, 2023 to July 8, 2023|
-| 10.0.33 Release-3 | July 14, 2023 | July 24, 2023 to August 26, 2023|
-| 10.0.34 Release-1 | June 23, 2023 | July 3, 2023 to August 5, 2023|
-| 10.0.34 Release-2 | July 21, 2023 | July 31, 2023 to September 2, 2023|
-| 10.0.34 Release-3 | September 1, 2023 | September 11, 2023 to October 14, 2023|
-| 10.0.35 Release-1 | July 28, 2023 | August 7, 2023 to September 9, 2023|
-| 10.0.35 Release-2 | August 25, 2023 | September 4, 2023 to October 7, 2023|
-| 10.0.35 Release-3 | October 20, 2023 | October 30, 2023 to December 16, 2023|
-| 10.0.36 Release-1 | September 29, 2023 | October 9, 2023 to November 11, 2023|
-| 10.0.36 Release-2 | October 27, 2023 | November 6, 2023 to December 16, 2023|
-| 10.0.36 Release-3 | January 12, 2024 | January 22, 2023 to February 24, 2024|
-| 10.0.37 Release-1 | November 3, 2023 | November 13, 2023 to January 6, 2024|
-| 10.0.37 Release-2 | December 30, 2023 | Janurary 8, 2024 to February 10, 2024|
-| 10.0.37 Release-3 | January 27, 2024 | February 5, 2024 to March 9, 2024|
-| 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 6, 2024|
+| Quality Update train | Release cut | Train duration | Status
+|---|---|---|---|
+| 10.0.30 Release-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
+| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 26 2023 | In-Progress |
+| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | Not Started |
+| 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Not Started |
+| 10.0.31 Release-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Not Started |
+| 10.0.31 Release-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
+| 10.0.32 Release-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| Not Started |
+| 10.0.32 Release-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
+| 10.0.32 Release-3 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
+| 10.0.33 Release-1 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
+| 10.0.33 Release-2 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
+| 10.0.33 Release-3 | July 14, 2023 | July 24, 2023 to August 27, 2023| Not Started |
+| 10.0.34 Release-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Not Started |
+| 10.0.34 Release-2 | July 21, 2023 | July 31, 2023 to September 3, 2023| Not Started |
+| 10.0.34 Release-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| Not Started |
+| 10.0.35 Release-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| Not Started |
+| 10.0.35 Release-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Not Started |
+| 10.0.35 Release-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Not Started |
+| 10.0.36 Release-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Not Started |
+| 10.0.36 Release-2 | October 27, 2023 | November 6, 2023 to December 17, 2023| Not Started |
+| 10.0.36 Release-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Not Started |
+| 10.0.37 Release-1 | November 3, 2023 | November 13, 2023 to January 7, 2024| Not Started |
+| 10.0.37 Release-2 | December 30, 2023 | Janurary 8, 2024 to February 11, 2024| Not Started |
+| 10.0.37 Release-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
+| 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-2 train schedule
+**App version: 10.0.1362.99**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
@@ -176,8 +160,30 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | January 16 to January 19, 2023 | NA |
 | Station 6 | NA | NA |
 
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
+**App version: 10.0.1362.124**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | January 30 to February 2, 2023 | February 11 to February 12, 2023 |
+| Station 3 | January 31 to February 3, 2023 | February 11 to February 12, 2023 |
+| Station 4 | February 6 to February 9, 2023 | February 18 to February 19, 2023 |
+| Station 5 | February 13 to February 16, 2023 | February 25 to February 26, 2023 |
+| Station 6 | NA | NA |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-1 train schedule
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | February 20 to February 23, 2023 | March 4 to March 5, 2023 |
+| Station 3 | February 21 to February 24, 2023 | March 4 to March 5, 2023 |
+| Station 4 | February 27 to March 2, 2023 | March 11 to March 12, 2023 |
+| Station 5 | March 6 to March 9, 2023 | March 18 to March 19, 2023 |
+| Station 6 | NA | NA |
+
 > [!IMPORTANT] 
-> Five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+> At least five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 

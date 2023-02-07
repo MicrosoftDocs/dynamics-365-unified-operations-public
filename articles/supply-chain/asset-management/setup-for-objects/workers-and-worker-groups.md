@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
+ms.search.form: EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

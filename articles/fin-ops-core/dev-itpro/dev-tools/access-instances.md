@@ -303,7 +303,13 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
 > [!Note]
 > Since these URLs are being added manually, the clean-up of these URLs will also have to be done manually when the environment is deleted.
 
-1. Retrieve the following values from the web.config file.
+1. If not already on your machine you will need to install the Microsoft.Graph Powershell module.
+
+    ```powershell
+    Install-Module Microsoft.Graph
+    ```
+
+2. Retrieve the following values from the web.config file.
 
     ```powershell
     $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
@@ -313,21 +319,25 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     $AADRealm = <Value of Aad.Realm from web.config without spn: prefix. >
     ```
 
-2. Run the following commands **via the tenant admin account for the Azure AD tenant in the web.config file**.
+3. Run the following commands **via the tenant admin account for the Azure AD tenant in the web.config file**.
 
     ```powershell
-    # Using tenant admin account under this tenant login to via AzureAD PowerShell cmdlet.
-    Connect-AzureAD
+    # Using tenant admin account under this tenant login via Microsoft Graph PowerShell cmdlet.
+    Connect-MgGraph -TenantId $AADTenant -Scopes "Application.ReadWrite.All"
 
     # Get Service Principal details
-    $SP = Get-AzureADServicePrincipal -Filter "AppId eq '$AADRealm'"
-
-    #Add Reply URLs
-    $SP.ReplyUrls.Add("$EnvironmentUrl")
-    $SP.ReplyUrls.Add("$EnvironmentUrl/oauth")
+    $SP = Get-MgServicePrincipal -Filter "AppId eq '$AADRealm'"
+    
+    # Add Reply URLs
+    [System.Collections.ArrayList]$ReplyUrls = $SP.ReplyUrls
+    $ReplyUrls.Add("$EnvironmentUrl")
+    $ReplyUrls.Add("$EnvironmentUrl/oauth")
 
     #Set/Update Reply URL
-    Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
+    Update-MgServicePrincipal -ServicePrincipalId $SP.Id -ReplyUrls $ReplyUrls
+    
+    # Log out
+    Disconnect-MgGraph
     ```
 
 ### I've fixed my environment, but it's still in a failed state. How do I resolve this issue?
