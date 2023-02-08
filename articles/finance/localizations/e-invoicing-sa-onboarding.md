@@ -138,7 +138,7 @@ To obtain a PCSID, you must correctly configure the solution for electronic invo
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
 3. The PCSID is received as a certificate file in PFX format. Save this PCSID certificate and secret file in the Azure key vault.
-4. Configure the related feature setup in the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. Include the PCSID certificate and secret into key-vault parameters in RCS.
+4. Configure the related feature setup in the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. Include the PCSID certificate and secret in the key-vault parameters in RCS.
 
 After you complete all the configurations steps, the system is ready to be used in production mode.
 
