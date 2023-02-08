@@ -62,8 +62,8 @@ Note that all troubleshooting errors begin with **Microsoft\_Dynamics\_**. Howev
 
 [Device management implementation guidance](../implementation-considerations-devices.md)
 
-[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)
-
 [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
+<!--[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
