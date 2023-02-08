@@ -4,7 +4,7 @@
 title: Record a vendor invoice in the invoice journal
 description: This task guide will show how to record vendor invoices that are not associated with purchase orders. 
 author: abruer
-ms.date: 07/11/2019
+ms.date: 02/08/2023
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -49,10 +49,11 @@ This task guide will show how to record vendor invoices that are not associated 
 12. Click **Post**.
 13. Close the page.
 
-# Validation and Simulation posting in vendor invoice journal
-You can find **Validation** and **Simulate posting** on the **Validate** menu for vendor invoice journals. 
-**Validate** The system tests the journal for specific error conditions. The validation result returns only the successful or error messages. 
-**Simulate posting** The system performs all of the same processes that are run during posting, without actually posting the journal. Unlike validation, it displays the details of voucher transaction, rather than just displaying the message only when there is no error message. 
+## Validation and simulation posting in vendor invoice journal
+
+On the Vendor invoice journal, the **Validation** and **Simulate posting** options are available on the **Validate** menu. 
+ - **Validate** -  The journal is tested for specific error conditions. The validation will return only successful or error messages. 
+ - **Simulate posting** - All of the same processes that are run during posting are excuted without posting the journal. The details of voucher transactions will be diplayed. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
