@@ -20,6 +20,8 @@ ms.search.form:
 
 [Overview paragraph will go here]
 
+## "Hello world" media managment tutorial
+
 ## How it works
 [Describe new managment UX interfaces (HQ, Omnichannel content library)
 [Diagram of dataflows between UX -> CMS -> HQ -> CSU -> Frontend/POS]
@@ -27,17 +29,19 @@ ms.search.form:
 ## Enabling omnichannel media managment features
 [Tactical steps and best practices to enable this feature accross dev/uat/prod environments]
 
-## "Hello world" media managment tutorial
-
-## Core omnichannel media managment topics
-
+## Omnichannel media managment core topics
 ### Media assignment fallback hierarchies
+#### Channel and locale media assignments
+#### Product dimension media assignments
+#### Product variant media assignments
 ### "Additional media" assignments
 ### Product-level swatch assignments
+
 
 ## Bulk import and export of merchandising media
 
 ## Using publish groups with merchandising media
+### Publishing and unpublishing media assignments
 
 ## Migrating an existing environment [separate article?]
 
