@@ -219,12 +219,18 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 
 ## Additional resources
 
-- [Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
-- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
-- [Select an in-store topology](../dev-itpro/retail-in-store-topology.md)
-- [Device management implementation guidance](../implementation-considerations-devices.md)
-- [Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)
-- [Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
-- [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md)
+[Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
+
+[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+
+[Select an in-store topology](../dev-itpro/retail-in-store-topology.md)
+
+[Device management implementation guidance](../implementation-considerations-devices.md)
+
+[Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
+
+[Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md)
+
+<!--[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
