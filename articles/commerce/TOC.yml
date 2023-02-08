@@ -276,7 +276,7 @@
           href: set-up-activation-accounts-validate-devices-hq.md
         - name: POS device activation
           href: dev-itpro/retail-device-activation.md
-        - name: Help secure Cloud POS in shared environments
+        - name: Security best practices for Store Commerce for web in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
@@ -404,7 +404,7 @@
             href: dev-itpro/implementation-considerations-offline.md
           - name: Commerce offline implementation troubleshooting
             href: dev-itpro/implementation-offline-troubleshooting.md
-          - name: Choose between Store Commerce and Cloud POS
+          - name: Choose between Store Commerce app and Store Commerce for web
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
@@ -430,9 +430,9 @@
             href: charge-send.md
           - name: Hide non-carrier delivery modes from POS shipment dialog
             href: hide-non-carrier-modes.md
-          - name: Task recorder and Help for MPOS and Cloud POS
+          - name: Task recorder and help for Store Commerce
             href: task-recorder-retail-pos.md
-          - name: Configure CPOS to use a custom Azure AD app
+          - name: Configure Store Commerce for web to use a custom Azure AD app
             href: cpos-custom-aad.md
           - name: Hardware peripherals
             items:
@@ -450,7 +450,7 @@
               href: Compatible-peripherals.md
           - name: Screen layouts
             items:
-            - name: Demo data screen layouts in MPOS/CPOS
+            - name: Demo data screen layouts in Store Commerce
               href: demo-data.md
             - name: POS user interface visual configurations
               href: pos-screen-layouts.md
@@ -460,7 +460,7 @@
               href: Notifications-POS.md
             - name: POS application and user language settings
               href: pos-application-user-language-settings.md
-            - name: Set up and manage images for MPOS
+            - name: Set up and manage images for Store Commerce
               href: set-up-manage-images-retail-mpos.md
             - name: Client images in POS
               href: pos-image.md
@@ -476,7 +476,7 @@
                 href: dev-itpro/data-sharing-gift-cards.md
           - name: RSAT
             items:
-            - name: Test recorder and Regression suite automation tool for Cloud POS
+            - name: Test recorder and Regression suite automation tool for Store Commerce for web
               href: dev-itpro/pos-rsat.md
           - name: Sales associates
             items:
@@ -486,7 +486,7 @@
             items:
             - name: Configure, install, and activate MPOS
               href: retail-modern-pos-device-activation.md
-            - name: Set up extended logon functionality for MPOS and Cloud POS
+            - name: Set up extended sign-in functionality for Store Commerce
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
               href: set-up-activation-accounts-validate-devices-hq.md
@@ -502,7 +502,7 @@
           items:
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
-          - name: Send email receipts from Modern POS (MPOS)
+          - name: Send email receipts from Store Commerce
             href: email-receipts.md 
           - name: Reset receipt numbers
             href: reset_receipt_number_sequence.md
@@ -2728,7 +2728,7 @@
             href: dev-itpro/extend-pos-notification.md
           - name: Override POS request handlers
             href: dev-itpro/pos-handler.md
-          - name: POS triggers
+          - name: Store Commerce app triggers and printing
             href: dev-itpro/pos-trigger-printing.md
           - name: POS Cart view
             items:
@@ -2738,7 +2738,7 @@
               href: dev-itpro/custom-field-pos-totals.md
             - name: Add custom columns to a POS transaction grid
               href: dev-itpro/pos-custom-transaction-column.md
-            - name: Add custom controls to POS Cart View
+            - name: Add custom controls to Store Commerce transaction pages
               href: dev-itpro/pos-custom-transaction.md
           - name: Add custom controls to POS views
             href: dev-itpro/pos-custom-control.md
