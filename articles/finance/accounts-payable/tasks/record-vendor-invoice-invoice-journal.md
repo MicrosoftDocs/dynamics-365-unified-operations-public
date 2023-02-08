@@ -34,7 +34,7 @@ This task guide will show how to record vendor invoices that are not associated 
 3. Click **New**.
 4. In the **Name** field, enter the journal name or click the drop down button to open the lookup.
 5. In the **Description** field, type a value.
-6. On the **Action pane**, click **Lines**. In the **Date** field, enter the posting date that will update General Ledger.  
+6. On the **Action pane**, click **Lines**. In the **Date** field, enter the posting date that will update General ledger.  
 7. In the **Account** field, specify the **Vendor account**.
 8. In the **Invoice** field, enter the invoice number.
 9. In the **Description** field, type a value.
@@ -45,7 +45,7 @@ This task guide will show how to record vendor invoices that are not associated 
     * The **Due date** will be calculated based on the Terms of payment.  
     * The **Cash discount** will default from the Vendor account.
 12. If you have enabled Vendor invoice journal workflow, click **Workflow > Submit**.
-    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is On hold or Closed for ledger posting.
+    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is **On hold** or **Closed** for ledger posting.
 12. Click **Post**.
 13. Close the page.
 
