@@ -35,7 +35,7 @@ Microsoft relies on the information that you provide. You must provide the most 
 To access Project onboarding, sign in to Lifecycle Services, and then, on the main menu, select **Project onboarding**.
 
 > [!NOTE]
-> Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services for finance and operations apps customers](lcs-works-lcs.md#lifecycleoservices-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
+> Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services for finance and operations apps customers](lcs-works-lcs.md#lifecycle-services-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
 
 > [!NOTE]
 > Before completing the project onboarding it is important to consider any data residency requirements and make sure the implementation project is created in the correct Lifecycle Services geography. For more information about deployment options across different geographies, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](../deployment/deployment-options-geo.md).
