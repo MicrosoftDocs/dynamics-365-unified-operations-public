@@ -53,7 +53,7 @@ This task guide will show how to record vendor invoices that are not associated 
 
 On the Vendor invoice journal, the **Validation** and **Simulate posting** options are available on the **Validate** menu. 
  - **Validate** -  The journal is tested for specific error conditions. The validation will return only successful or error messages. 
- - **Simulate posting** - All of the same processes that are run during posting are excuted without posting the journal. The details of voucher transactions will be diplayed. 
+ - **Simulate posting** - The posting process is run without posting the journal and the details of voucher transactions will be diplayed. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
