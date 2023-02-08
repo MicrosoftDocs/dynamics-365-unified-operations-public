@@ -9,10 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
+ms.search.form: RetailStatements_Posting, RetailStatements_CustomerOrderCreation
 
 ---
 
 # Issues with the data reconciliation of a Z report
+Error code: SYS103633
 
 [!include [banner](../../includes/banner.md)]
 
