@@ -33,19 +33,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics 365 Lifecycle Services. Two types of Asset library are available in Lifecycle Services: the Shared asset library and the project-level Asset library.
 
-    > [!NOTE]
-    > Asset library is not supported for Prospect projects or organizations.  In these situations, the Asset library menu option will not be visible. 
+> [!NOTE]
+> Asset library is not supported for Prospect projects or organizations.  In these situations, the Asset library menu option will not be visible. 
 
 - **Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in Lifecycle Services. This library can be accessed by any user who signs in to Lifecycle Services. To access the Shared asset library, sign in to Lifecycle Services, and then click the **Shared asset library** tile.
 
-    [![Shared asset library tile.](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
+[![Shared asset library tile.](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
 
 - **Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in Lifecycle Services. This library can be accessed by all users within a project. To access the project-level Asset library, sign in to Lifecycle Services, and open a project. Then, on the hamburger menu, click **Asset library**.
 
-    [![Opening the project-level Asset library.](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+[![Opening the project-level Asset library.](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
     
-    > [!NOTE]
-    > Uploading versions for the same asset in the project asset library is not supported. 
+> [!NOTE]
+> Uploading versions for the same asset in the project asset library is not supported. 
 
 ## Asset library support
 The Asset library supports multiple types of assets. Here are some asset types that are frequently used:
