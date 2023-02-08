@@ -3,7 +3,8 @@
 
 title: Enable Power Platform Integration
 description: This article explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics 365 Lifecycle Services for finance and operations apps and Microsoft Dataverse.
-author: laswenka
+ms.author: laswenka
+author: laneswenka
 ms.date: 02/07/2023
 ms.topic: article
 ms.prod:
@@ -27,7 +28,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
-As part of the One Dynamics, One Platform effort, a growing number of customers are getting value out of integrating their finance and operations apps with Microsoft Dataverse and the Microsoft Power Platform ecosystem.  From building low-code applications, to fully integrating front-office and back-office processes and applications, the integration of these two systems has become a common requirement for many customers.
+As part of the One Dynamics, One Platform effort, a growing number of customers get value out of integrating their finance and operations apps with Microsoft Dataverse and the Microsoft Power Platform ecosystem. From building low-code applications, to fully integrating front-office and back-office processes and applications, the integration of these two systems has become a common requirement for many customers.
 
 Power Platform Integration is a feature enabled in Microsoft Dynamics 365 Lifecycle Services that allows an administrator to link their finance and operations environments with new or existing Power Platform based environments. 
 Once Power Platform Integration is established, this enables your organization to:
@@ -144,7 +145,7 @@ To retrieve the Power Platform environment ID, you may do so by visiting that en
 
 During the integration process, Microsoft will apply the packages for the **Dynamics 365 standard** provisioning template. If you require packages from the other templates, you must manually install. For more information, see the [Provisioning templates](#provisioning-templates) section of this article.
 
-Customers who are already live with Power Platform environments or other Dynamics 365 apps, and who want to add finance and operations apps to that ecosystem, will find it most useful to bring their existing Dataverse instance. For the integration, you use the same setup process that is described earlier for a new Dataverse database in the initial environment. After you complete the integration setup, the only way to reverse the action is to delete the environment in Lifecycle Services. Relinking or linking to another environment is not supported.
+Customers who are already live with Power Platform environments or other Dynamics 365 apps, and who want to add finance and operations apps to that ecosystem, will find it most useful to bring their existing Dataverse instance. For the integration, you use the same setup process that is described earlier for a new Dataverse database in the initial environment. After you complete the integration setup, the only way to reverse the action is to delete the environment in Lifecycle Services. Relinking or linking to another environment isn't supported.
 
 #### Validations for bringing your existing Power Platform environment
 
@@ -164,7 +165,7 @@ You can verify that the Microsoft Power Platform integration was automatically e
 
 Setup can fail at various stages of the deployment of the Dataverse-based environment.
 
-Any time that the setup fails, an error message is shown. The following illustration shows an example of the error message for a dual-write setup failure.
+Anytime that the setup fails, an error message is shown. The following illustration shows an example of the error message for a dual-write setup failure.
 
 ![Error message for a dual-write setup failure.](media/Error.png)
 
@@ -172,14 +173,14 @@ Based on the error message, you might have to address licensing or capacity issu
 
 ## Enable the integration for cloud-hosted development environments
 
-Due to the architecture differences between cloud-hosted development environments and the Sandbox or Production environments, setting up Power Platform Integration is not possible after the developer environment is created.  This means that the only way to set up Power Platform Integration is during the deployment of your cloud-hosted environment.  This also means that it is only possible to connect a new cloud-hosted environment with a new Power Platform environment, you cannot connect an existing environment of any kind via Lifecycle Services.
+Due to the architecture differences between cloud-hosted development environments and the Sandbox or Production environments, setting up Power Platform Integration isn't possible after the developer environment is created.  This means the only way to set up Power Platform Integration is during the deployment of your cloud-hosted environment.  This also means it's only possible to connect a new cloud-hosted environment with a new Power Platform environment, you can't connect an existing environment of any kind via Lifecycle Services.
 
 
 ## Verifying Power Platform integration status at runtime
 
 The ```RetrieveFinanceAndOperationsIntegrationDetails``` API is available in Dataverse to validate the status of the Power Platform integration for the Power Platform environment. If the Power Platform environment is linked to a finance and operations apps environment through the Power Platform integration, the API will return the AAD tenant and environment details of the finance and operations apps environment.
 
-The API can be used in troubleshooting to verify that the Power Platform integration is enabled for an environment. It is also recommended that the API be used in coding plug-ins, client forms, or other applications that must be aware of the finance and operations apps environment linked to the Power Platform environment.
+The API can be used in troubleshooting to verify that the Power Platform integration is enabled for an environment. It's also recommended that the API be used in coding plug-ins, client forms, or other applications that must be aware of the finance and operations apps environment linked to the Power Platform environment.
 
 **Request**
 ```http
@@ -203,11 +204,11 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 | Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure AD tenant on which both the finance and operations apps environment and Power Platform environment are located. |
 | Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the finance and operations apps environment linked to the Power Platform environment through the Power Platform integration. |
 
-If the environment is not linked to a finance and operations apps environment through the Power Platform integration, the following error is returned in the API response:
+If the environment isn't linked to a finance and operations apps environment through the Power Platform integration, the following error is returned in the API response:
 
 | Error code | Message |
 | --- | --- |
-| 0x80048d0b | Dataverse instance is not integrated with finance and operations. |
+| 0x80048d0b | Dataverse instance isn't integrated with finance and operations. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
