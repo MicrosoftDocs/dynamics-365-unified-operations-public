@@ -129,7 +129,10 @@ Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05F
 > [!NOTE]
 > These example values have been filled out according to the values used in the **ConfigTemplate.xml** file from the [High availability with Windows failover clusters](#high-availability-with-windows-failover-clusters) section.
 
-#### Configure-SSRSHA.ps1 script (10.0.32 and later)
+#### Configure-SSRSHA.ps1 script
+
+> [!NOTE]
+> This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
 
 ```powershell
 param (
@@ -186,83 +189,19 @@ foreach ($component in $configJson.components)
         $component.parameters.enableSecurity.value = "True"
         $component.parameters.ssrsSslCertificateThumbprint.value = $TLSCertificateThumbprint
         $component.parameters.ssrsServerFqdn.value = $Listener
-        $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
-        $component.parameters.infrastructure.principalUserAccountName.value = $ServiceAccount
+        if($component.parameters.infrastructure)
+        {
+            $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+            $component.parameters.infrastructure.principalUserAccountName.value = $ServiceAccount
+        }
+        else
+        {
+            $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
+            $component.parameters.principalUserAccountName.value = $ServiceAccount
+        }
+
         $component.parameters.reportingServers.value = $MachinesList
         $component.parameters.ssrsHttpsPort.value = $ssrsServicePort
-    }
-
-    $updatedComponents += $component
-}
-
-$configJson.components = $updatedComponents
-
-$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
-
-Write-Host "Successfully updated the configuration for SSRS HA."
-```
-
-#### Configure-SSRSHA.ps1 script (10.0.31 and older)
-
-```powershell
-param (
-    [Parameter(Mandatory=$true)]
-    [string]
-    $AgentShare,
-
-    [Parameter(Mandatory=$true)]
-    [string]
-    $Listener,
-
-    [Parameter(Mandatory=$true)]
-    [string]
-    $MachinesList,
-
-    [Parameter(Mandatory=$true)]
-    [string]
-    $TLSCertificateThumbprint,
-
-    [Parameter(Mandatory=$true)]
-    [string]
-    $ServiceAccount,
-
-    [string]
-    $SsrsServicePort = "443"
-)
-
-$ErrorActionPreference = "Stop"
-
-$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\ |
-    Select-Object -First 1 -Expand FullName
-
-if(!(Test-Path $basePath))
-{
-    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
-}
-
-$configJsonPath = "$basePath\config.json"
-
-$configJson = Get-Content $configJsonPath | ConvertFrom-Json
-
-$updatedComponents = @()
-foreach ($component in $configJson.components)
-{
-    if($component.name -eq "AOS")
-    {
-        $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value = $Listener
-        $component.parameters.biReporting.reportingServers.value = $MachinesList
-        $component.parameters.biReporting.ssrsUseHttps.value = "True"
-        $component.parameters.biReporting.ssrsHttpsPort.value = $SsrsServicePort
-    }
-    elseif($component.name -eq "ReportingServices")
-    {
-        $component.parameters.enableSecurity.value = "True"
-        $component.parameters.ssrsSslCertificateThumbprint.value = $TLSCertificateThumbprint
-        $component.parameters.ssrsServerFqdn.value = $Listener
-        $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
-        $component.parameters.principalUserAccountName.value = $ServiceAccount
-        $component.parameters.reportingServers.value = $MachinesList
-        $component.parameters.ssrsHttpsPort.value = $SsrsServicePort
     }
 
     $updatedComponents += $component

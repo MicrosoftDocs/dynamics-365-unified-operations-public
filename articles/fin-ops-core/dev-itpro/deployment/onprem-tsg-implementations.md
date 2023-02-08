@@ -306,9 +306,10 @@ finally
 
 The following script is used to change the account the AOS runs under from an Active Directory (AD) user to a group Managed Service Account (gMSA).
 
->[!NOTE]
+> [!NOTE]
 > This script can only be used starting with version 10.0.17.
 > You will need to reinstall the printers on each AOS node as they are not available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
+> This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
 
 ```powershell
 param (
@@ -344,8 +345,8 @@ foreach ($component in $configJson.components)
         $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
     }
-	
-	if($component.name -eq "Bootstrap" -and $null -ne $component.parameters.infrastructure)
+
+    if($component.name -eq "Bootstrap" -and $component.parameters.infrastructure)
     {
         $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
@@ -408,15 +409,15 @@ foreach ($component in $configJson.components)
     {
         $component.parameters.services.dmfServiceFabricService.value = "True"
         $component.parameters.services.dmfFileShare.value = $DMFShare
-		
-		$gatewayComponent = $configJson.components | Where-Object { $_.name -eq "Gateway" }
-		$dmfUrl = "https://$($component.parameters.infrastructure.hostName.value):$($gatewayComponent.parameters.internalServiceEndpointPort.value)/DixfApplication/DixfService/DMFService/DMFServiceHelper.svc"
-		
+
+        $gatewayComponent = $configJson.components | Where-Object { $_.name -eq "Gateway" }
+        $dmfUrl = "https://$($component.parameters.infrastructure.hostName.value):$($gatewayComponent.parameters.internalServiceEndpointPort.value)/DixfApplication/DixfService/DMFService/DMFServiceHelper.svc"
+
         $component.parameters.services.dmfServiceUrl.value = $dmfUrl
     }
     elseif($component.name -eq "Dixf")
     {
-		$component.isEnabled = "True"
+        $component.isEnabled = "True"
         $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.infrastructure.principalUserAccountName.value = $GmsaAccount
     }
