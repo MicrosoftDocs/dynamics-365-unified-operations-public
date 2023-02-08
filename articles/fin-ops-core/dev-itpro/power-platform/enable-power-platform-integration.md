@@ -20,7 +20,6 @@ ms.reviewer: sericks
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry:
-ms.author: laswenka
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
 ---
