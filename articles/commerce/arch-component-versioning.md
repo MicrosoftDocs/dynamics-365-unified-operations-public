@@ -97,9 +97,9 @@ For more information about how to service individual components that are describ
 
 - [Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
 - [Apply updates and extensions to Retail Cloud Scale Unit](../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)
-- [Configure, install, and activate the Store Commerce app](retail-modern-pos-device-activation.md)
 - [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)
 - [Package configurations and deploy them to an online channel](./e-commerce-extensibility/package-deploy.md)
+<!-- [Configure, install, and activate the Store Commerce app](retail-modern-pos-device-activation.md)-->
 
 ### Extensibility and packing
 
