@@ -25,14 +25,14 @@ All required services and related data are deployed in the corresponding data ce
 
 The following table lists the local geographies and endpoints that Commerce, Finance, and Supply Chain Management support.
 
-| Geography | LCS endpoint | LCS API endpoint |
-|-----------|--------------|------------------|
-| France | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) | https://lcsapi.fr.lcs.dynamics.com |
-| United Arab Emirates | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) | https://lcsapi.uae.lcs.dynamics.com |
-| South Africa | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) | https://lcsapi.sa.lcs.dynamics.com |
-| Switzerland | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) | https://lcsapi.ch.lcs.dynamics.com |
-| Europe | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) | https://lcsapi.eu.lcs.dynamics.com |
-| Norway | [https://no.lcs.dynamics.com/](https://no.lcs.dynamics.com/) | https://lcsapi.no.lcs.dynamics.com |
+| Geography | LCS endpoint | LCS API endpoint | Environment Endpoint |
+|-----------|--------------|------------------| ---------------------|
+| France | [https://**fr**.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) | https://lcsapi.fr.lcs.dynamics.com | https://"EnvironmentName".operations.fr.dynamics.com/ |
+| South Africa | [https://**sa**.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) | https://lcsapi.sa.lcs.dynamics.com | https://"EnvironmentName".operations.**sa**.dynamics.com/ |
+| Switzerland | [https://**ch**.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) | https://lcsapi.ch.lcs.dynamics.com | https://"EnvironmentName".operations.**ch**.dynamics.com/ |
+| Europe | [https://**eu**.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) | https://lcsapi.eu.lcs.dynamics.com | https://"EnvironmentName".operations.**eu**.dynamics.com/ |
+| Norway | [https://**no**.lcs.dynamics.com/](https://no.lcs.dynamics.com/) | https://lcsapi.no.lcs.dynamics.com | https://"EnvironmentName".operations.**no**.dynamics.com/
+| United Arab Emirates | [https://**uae**.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) | https://lcsapi.uae.lcs.dynamics.com | https://"EnvironmentName".operations.**uae**.dynamics.com/
 
 ## Feature availability in local geographies
 
