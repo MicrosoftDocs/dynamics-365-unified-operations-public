@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Application 10.0.32 and later)
 description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
 author: faix
-ms.date: 01/12/2023
+ms.date: 02/08/2023
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 56
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 later. Application version 10.0.17 includes platform update 56.
+This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 later. Application version 10.0.32 includes platform update 56.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. There, you can post any questions or feedback that you have about the on-premises deployment.
 
