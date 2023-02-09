@@ -19,7 +19,7 @@ This article describes the special security roles and permissions that are requi
 
 ## Assign security roles to Microsoft Dataverse users
 
-All Microsoft Dataverse users should be added to the **dual-write runtime configuration** security role.
+All Microsoft Dataverse users should be added to the **dual-write runtime user** and **dual-write app user** security roles.
 
 ## Assign security role to the default owning team
 
@@ -27,7 +27,7 @@ In Dataverse, each business unit has a default owning team that uses the same na
 
 To find the root business unit and default teams, follow these steps.
 
-1. In a web browser, sign in to the Dataverse or Customer Engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[businessunitid\]** with your environment's name.
+1. In a web browser, sign in to the Dataverse or Customer Engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[environment\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL.
 
     `https://[environment].dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null`
@@ -80,7 +80,7 @@ When dual-write is invoked to propagate data changes from finance and operations
 
 If the exception occurs, follow these steps to assign the correct permissions to the team so that dual-write can work as expected.
 
-1. In a web browser, sign in to the Dataverse environment (for example, `https://[environment].dynamics.com`). Replace **\[businessunitid\]** with your environment's name.
+1. In a web browser, sign in to the Dataverse environment (for example, `https://[environment].dynamics.com`). Replace **\[environment\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL. Replace **\[ID\]** with the ID that's shown in the error message.
 
     `https://[environment].crm.dynamics.com/api/data/v9.0/teams?$select=name&$filter=teamid eq [ID]`
