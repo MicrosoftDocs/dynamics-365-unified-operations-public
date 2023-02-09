@@ -2,7 +2,7 @@
 title: Block transactions by using triggers
 description: This article shows how you can use a trigger to block an invoice or credit transaction.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,7 +80,7 @@ This article shows how you can block an invoice or credit transaction.
     }
     ```
 
-8.  Commerce Scale Unit uses the GetCustomersServiceRequest object to get the customer details from Commerce Runtime (CRT) and uses the GetCustomersServiceRequest object to add the customer to the transaction. Before adding the customer to the transaction you need to check whether the customer is blocked. To do this, implement a post trigger for this request and check whether the customer is blocked. If the customer is blocked, then throw the exception to MPOS.
+8.  Commerce Scale Unit uses the GetCustomersServiceRequest object to get the customer details from Commerce Runtime (CRT) and uses the GetCustomersServiceRequest object to add the customer to the transaction. Before adding the customer to the transaction you need to check whether the customer is blocked. To do this, implement a post trigger for this request and check whether the customer is blocked. If the customer is blocked, then throw the exception to the Store Commerce app.
 9.  In the SupportedRequestTypes method tell the CRT that you are going to add the trigger for GetCustomersServiceRequest. The following code example shows how to add GetCustomersServiceRequest as a supported type.
 
     ```typescript

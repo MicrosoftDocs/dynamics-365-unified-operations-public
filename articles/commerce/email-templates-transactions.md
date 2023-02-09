@@ -2,7 +2,7 @@
 title: Create email templates for transactional events
 description: This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 12/10/2021
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ Dynamics 365 Commerce supports the following notification types.
 The *order created* notification type is triggered when a new sales order is created in Commerce headquarters.
 
 > [!NOTE]
-> The order created notification type isn't triggered for cash-and-carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Modern POS (MPOS)](email-receipts.md).
+> The order created notification type isn't triggered for cash-and-carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Store Commerce](email-receipts.md).
 
 ### Order confirmed
 
@@ -342,7 +342,7 @@ For more information about how to configure emails in Dynamics 365 Commerce, see
 
 [Set up email receipts](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
-[Send email receipts from Modern POS ](email-receipts.md)
+[Send email receipts from Store Commerce](email-receipts.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
