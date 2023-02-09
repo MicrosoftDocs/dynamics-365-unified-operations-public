@@ -115,4 +115,4 @@ For more information about Dataverse security roles and privileges, see [Configu
 | Maker who needs to update table maps	| System customizer or System administrator role in Dataverse and System Administrator role in F&O |
 | Owning team for global records	| ‘Dual-write runtime user’ + ‘Dual-write app user’ +  one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope e.g. products etc.|
 
-*For GAB and party model solution, you need to create a custom role to include privileges to entitles like Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. Get the full list of entities from [Party-GAB page](party-gab.md)
+*For GAB and party model solution, you need to create a custom role to include privileges to entitles like Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. Get the full list of entities from [Party-GAB page](party-gab.md)|
