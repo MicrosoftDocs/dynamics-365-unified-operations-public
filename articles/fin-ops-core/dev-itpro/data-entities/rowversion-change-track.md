@@ -2,7 +2,7 @@
 title: Allow Row version change tracking for tables and data entities
 description: This article explains how to enable row version change tracking for data entities and tables for finance and operations apps.
 author: peakerbl
-ms.date: 09/28/2022
+ms.date: 02/08/2023
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.31
 
 A new change tracking option has been added to finance and operations apps. This option enables Microsoft Dataverse to be used for incremental synchronization of data. Change tracking is a prerequisite for several features, such as Data archival, Synapse integration, Mobile offline, and Relevance search. The eventual goal is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
 
-From 10.0.32 it is required to enable the **Sql row version change tracking**, configuration key under **System administration>Setup>License configuration**.
+Beginning in Microsoft Dynamics Finance 10.0.32, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page.
 
 Before you create or update data entities so that you can use them with row version change tracking, verify that all tables that are used as data sources for those entities allow for row version change tracking.
 
