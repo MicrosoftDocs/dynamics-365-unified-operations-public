@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This article provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 11/04/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ No. Adyen payment terminals are injected with the Adyen software. Therefore, exi
 
 ### Do I need a static IP address for the Adyen payment terminal?
 
-Yes. Modern POS requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
+Yes. The Store Commerce app requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
 
 ### Can I use my merchant bank?
 

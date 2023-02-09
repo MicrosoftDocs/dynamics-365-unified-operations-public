@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Send email receipts from Modern POS (MPOS)
-description: In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).  
+title: Send email receipts from Store Commerce
+description: This article describes how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).  
 author: jashanno
 ms.date: 01/30/2023
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Send email receipts from Modern POS (MPOS)
+# Send email receipts from Store Commerce
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).
+This article describes how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).
 
 ## Prerequisite
 
@@ -102,7 +102,7 @@ To enable emailing for individual receipt types within your receipt profile and 
 
     You can also add HTML to show a header, footer, logo, or any other static content that you want to include in the receipt email. For more information about how to create HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts). 
 
-1. Depending on the settings that you configured, you must run the appropriate distribution schedule jobs to synchronize the changes to MPOS.
+1. Depending on the settings that you configured, you must run the appropriate distribution schedule jobs to synchronize the changes to Store Commerce.
 
     - **1010** – Customer
     - **1070** – Channel configuration
@@ -113,9 +113,9 @@ To enable emailing for individual receipt types within your receipt profile and 
 
 You can insert QR codes or bar codes that represent order IDs into transactional and receipt emails. For more information, see [Add a QR code or bar code to a receipt email](add-qr-code-barcode-email.md#add-a-qr-code-or-bar-code-to-a-receipt-email). 
 
-## MPOS transactions
+## Store Commerce transactions
 
-After the changes are synchronized to the store, MPOS prompts the user for an email address for each transaction (if this feature is enabled). If an email address is already on file for the customer, that address appears in the email address prompt. If a customer hasn't been named, or if an email address hasn't been entered for a named customer, enter an email address, and then select **Send**. When the transaction is finalized, the real-time service will send the customer an email that has the receipt in the body of the message, as you configured earlier.
+After the changes are synchronized to the store, Store Commerce prompts the user for an email address for each transaction (if this feature is enabled). If an email address is already on file for the customer, that address appears in the email address prompt. If a customer hasn't been named, or if an email address hasn't been entered for a named customer, enter an email address, and then select **Send**. When the transaction is finalized, the real-time service will send the customer an email that has the receipt in the body of the message, as you configured earlier.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

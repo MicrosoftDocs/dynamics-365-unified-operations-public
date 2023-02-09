@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 01/30/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -67,11 +67,11 @@ Dynamics 365 is a collection of applications that together provide comprehensive
 
 POS simplifies the experience for the retailers by providing Omnichannel solutions in emerging channels. These channels perform a variety of commerce business operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-#### Modern POS
+#### Store Commerce app
 
-Modern POS is a cross-platform (Windows, iOS, and Android), multi–form factor (desktop, tablet, and phone) solution for all in-store first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. Alternatively, it can be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
+The Store Commerce app is a cross-platform (Windows, iOS, and Android), multi–form factor (desktop, tablet, and phone) solution for all in-store first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. Alternatively, it can be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
 
-In addition to standard "cash and carry" transaction processing, Modern POS includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](./dev-itpro/retail-modern-pos-architecture.md) and [Choose between Modern POS (MPOS) and Cloud POS](./mpos-or-cpos.md).
+In addition to standard "cash and carry" transaction processing, Store Commerce includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](./dev-itpro/retail-modern-pos-architecture.md) and [Choose between Store Commerce app and Store Commerce for web](./mpos-or-cpos.md).
 
 #### E-commerce storefront
 
