@@ -2,7 +2,7 @@
 title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: This article explains the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 11/25/2022
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -152,7 +152,7 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 
 To digitally sign and submit simplified e-invoices, you must obtain so-called Cryptographic Stamp Identifiers (CSIDs) from ZATCA. CSIDs are in the form of digital certificates. For more information about how to obtain CSIDs, see [Electronic invoicing onboarding in Saudi Arabia](../../finance/localizations/e-invoicing-sa-onboarding.md). You must obtain a CSID for each POS register that you will use, because sequential numbering and digital signing of simplified e-invoices are done per POS register.
 
-The digital certificates that will be used to digitally sign simplified e-invoices are stored in Key Vault. For the offline mode of Modern POS, signing can also be done by using a digital certificate that's stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+The digital certificates that will be used to digitally sign simplified e-invoices are stored in Key Vault. For the offline mode of the Store Commerce app, signing can also be done by using a digital certificate that's stored in the local storage of the machine that the Store Commerce app is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles). You must configure a separate certificate profile for each CSID that you obtain from ZATCA.
 
