@@ -4,7 +4,7 @@
 title: Process credit cards without a hardware station
 description: This article describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
 author: BrianShook
-ms.date: 09/03/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This article describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
 
-When this feature is turned on, clients such as Cloud POS and Modern POS for iOS can make credit card processing calls through Commerce Scale Unit. They don't have to depend on a standalone hardware station that is deployed on the local network. Therefore, any POS client can support curbside pickup, and fewer setup steps are required.
+When this feature is turned on, Store Commerce for web can make credit card processing calls through Commerce Scale Unit because it doesn't require a standalone hardware station that is deployed on the local network. Any POS client can support curbside pickup, and fewer setup steps are required.
 
 > [!NOTE]
 > This feature should not be turned on for registers that support offline mode. The feature routes all "card not present" payment requests through the Commerce Scale Unit, but the Commerce Scale Unit isn't available when the register goes offline.
@@ -45,13 +45,13 @@ When this feature is turned on, clients such as Cloud POS and Modern POS for iOS
 | BOPIS | This abbreviation is short for "buy online, pick up in store." |
 | Curbside pickup | This scenario resembles BOPIS. However, instead of picking up items in the store, customers don't usually enter the store and often don't even leave their vehicle. |
 | Card not present | This term is sometimes abbreviated CNP. It describes scenarios where the credit card or other form of electronic payment isn't physically present. In BOPIS and curbside pickup scenarios, customers make a payment online or over the phone, and the payment is then captured from the POS at the time of pickup. |
-| Hardware station | This term describes the business logic that drives interactions between the POS and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Modern POS for Windows and Modern POS for Android clients. The Cloud POS and Modern POS for iOS clients require a standalone deployed hardware station to interact with physical devices. |
+| Hardware station | This term describes the business logic that drives interactions between the POS and payment terminals or retail peripherals such as receipt printers. The hardware station is built into the Store Commerce app for Windows, Android and iOS. Store Commerce for web requires a standalone deployed hardware station to interact with physical devices. |
 
 ## Overview
 
-When this feature is turned off, Cloud POS and Modern POS for iOS can't process "card not present" credit card requests by themselves, because they don't have a built-in hardware station. When the feature is turned on, the Commerce Scale Unit can be used to facilitate the requests for those clients.
+When this feature is turned off, Store Commerce for web can't process "card not present" credit card requests by itself because it doesn't have a built-in hardware station. When the feature is turned on, the Commerce Scale Unit can be used to facilitate the requests for Store Commerce for web.
 
-Although this feature can also be used for Modern POS for Windows and Modern POS for Android, in addition to Cloud POS and Modern POS for iOS, it isn't supported for offline mode. Therefore, the feature should not be used in scenarios where a Windows client uses offline mode.
+Although this feature can also be used for the Store Commerce app for Windows and Store Commerce app for Android, in addition to Store Commerce for web and Store Commerce app for iOS, it isn't supported for offline mode. Therefore, the feature should not be used in scenarios where a Windows client uses offline mode.
 
 ## Supported scenarios
 

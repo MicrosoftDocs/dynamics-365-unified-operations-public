@@ -2,7 +2,7 @@
 title: Commerce Scale Unit (self-hosted)
 description: This article describes Microsoft Dynamics 365 Commerce Scale Unit (self-hosted) and when to use it.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 02/02/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -28,7 +28,7 @@ Before you begin setting up Commerce Scale Unit (self-hosted), take a moment det
 In scenarios where a stable internet connection is available and there is low latency to the cloud environment, then it is recommended to consider operating the store as Cloud only, without setting up a Commerce Scale Unit. Consider the following before you begin:
 
 -   Carefully choose the store topology configuration for each store to either operate with a self-hosted or cloud-hosted Commerce Scale Unit topology. Reconfiguring a live store from a self-hosted to cloud-hosted Commerce Scale Unit or vice versa may cause a service disruption.
--   Commerce Scale Unit will support both Cloud point of sale (CPOS) and Modern POS (MPOS) within the store.
+-   Commerce Scale Unit will support both the Store Commerce app and Store Commerce for web within the store.
 -   Commerce Scale Unit (self-hosted) can be set up in a one-box deployment topology on a single computer (recommended) or in a multi-box topology on different computers.
 -   If you choose the one-box option, most of the settings are pre-configured. For a multi-box topology, you will have to manually configure connections between components.
 -   With Commerce Scale Unit (self-hosted), users can perform cross-terminal scenarios across multiple POS devices, like suspend/recall transactions and shift operations, even with temporary network disruption to HQ.
@@ -36,7 +36,7 @@ In scenarios where a stable internet connection is available and there is low la
 -   Direct database connectivity from POS to the channel database is not supported in the Commerce Scale Unit. The POS devices always use the Commerce Scale Unit for performing operations.
 
 > [!IMPORTANT]
-> Commerce Scale Unit (self-hosted) does not replace offline. Currently, using the POS apps for Windows (Retail Modern POS and Store Commerce App) with an offline database is the only way to have offline capabilities. 
+> Commerce Scale Unit (self-hosted) does not replace offline. Currently, using the Store Commerce app with an offline database is the only way to have offline capabilities. 
 
 ## Get started with Commerce Scale Unit (self-hosted)
 

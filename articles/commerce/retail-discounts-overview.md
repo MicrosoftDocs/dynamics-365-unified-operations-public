@@ -2,7 +2,7 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 01/30/2023
+ms.date: 02/03/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -51,7 +51,7 @@ This field is labeled **Discount** and holds a unique ID for each discount. It's
 
 ### Discount name
 
-This field is a short free text field that is used to describe the discount. The string value in this field is shown in the MPOS and CPOS cart line and printed on Modern Point of Sale (MPOS) and Cloud POS (CPOS) customer receipts. Therefore, your cashiers and end customers will see this description. It's the primary means for MPOS/CPOS users and customers to know which discount was applied.
+This field is a short free text field that is used to describe the discount. The string value in this field is shown in the Store Commerce app and Store Commerce for web cart line and printed on the Store Commerce app and Store Commerce for web customer receipts. Therefore, your cashiers and end customers will see this description. It's the primary means for Store Commerce app and Store Commerce for web users and customers to know which discount was applied.
 
 ### Discount type
 
@@ -72,7 +72,7 @@ The status of a discount can be either **Enabled** or **Disabled**. When you fir
 
 ### Currency
 
-The currency of a discount defines the currency of all amount and price fields on the discount. Different discount types have different field options. The currency also acts as a filter during discount calculation. In Commerce, all sales order and MPOS/CPOS transactions have a currency, and the pricing engine will consider only discounts that have the same currency.
+The currency of a discount defines the currency of all amount and price fields on the discount. Different discount types have different field options. The currency also acts as a filter during discount calculation. In Commerce, all sales order and Store Commerce app/Store Commerce for web transactions have a currency, and the pricing engine will consider only discounts that have the same currency.
 
 ### Discount concurrency mode
 
@@ -103,7 +103,7 @@ Commerce lets you post discount amounts for a transaction to a separate general 
 
 Starting with version 7.2 of the app, the call center coupons are now merged with discounts. For a discount, when **Coupon code required** is set to **Yes**, the **Status** field and the standard date fields, **Effective date** and **Expiration date**, aren't available. These properties are controlled by equivalent properties that are on the **Coupons** page.
 
-When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon code or bar code is provided by MPOS/CPOS. The values of the coupon codes and bar codes are defined and configured in a separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When Coupon code required is set to **No**, a coupon code isn't required, and the discount will always be applied through its price groups.
+When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon code or bar code is provided by the Store Commerce app or Store Commerce for web. The values of the coupon codes and bar codes are defined and configured in a separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When Coupon code required is set to **No**, a coupon code isn't required, and the discount will always be applied through its price groups.
 
 ### Override priority and Pricing priority
 
@@ -118,11 +118,11 @@ In Commerce version 10.0.16 and later, a configuration called **Match all associ
 
 ### Description
 
-This field is a free-form text field. It isn't used in the MPOS/CPOS system or in transactions.
+This field is a free-form text field. It isn't used in the Store Commerce app/Store Commerce for web systems or in transactions.
 
 ### Disclaimer
 
-This is a free-form text field. It isn't used in the MPOS/CPOS system or in transactions.
+This is a free-form text field. It isn't used in the Store Commerce app/Store Commerce for web systems or in transactions.
 
 ### Line type
 
