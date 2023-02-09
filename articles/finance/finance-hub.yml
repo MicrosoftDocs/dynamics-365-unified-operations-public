@@ -1,0 +1,269 @@
+### YamlMime:Hub
+
+title: Microsoft Dynamics 365 Finance # < 60 chars
+summary: Dynamics 365 Finance is an enterprise business solution that can help you monitor global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Finance# Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: You can use Dynamics 365 Finance to manage invoices and payments, get payment authorizations, verify payment status, correct invoice or payment details, and regularly report on accounts.
+  ms.topic: hub-page # Required
+  author: buck1ey #Required; your GitHub user alias, with correct capitalization.
+  ms.author: buckg #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/10/2023 #Required; mm/dd/yyyy format.
+  hide_bc: true
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Get started
+      itemType: get-started
+      url: /dynamics365/fin-ops-core/fin-ops/get-started/service-description
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: /dynamics365/finance/get-started/whats-new-home-page
+    # Card
+    - title: Training
+      itemType: training
+      url: /training/modules/get-started-financial-management-dyn365-finance
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+
+additionalContent:
+  sections:
+  - title: Implement Finance
+    items:
+    - title: Guidance
+      links: 
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Security and compliance
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Adoption framework
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Implementation guide
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Best practices
+    - title: Try/Buy/Deploy
+      links: 
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Try Dynamics 365 Finance
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Buy Dynamics 365 Finance
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Install Dynamics 365 Finance
+    - title: Set up 
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: General setup
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Finance setup
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Reporting setup 
+  - title: Administer and Develop Finance
+    items:
+    - title: Manage
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Manage environments
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Manage users
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Manage roles
+    - title: "Develop: Platform"
+      links: 
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Develop your environment
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Customize your experience
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Use Dual-write
+    - title: Develop for Finance 
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Patterns in Finance
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Data entities
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Azure data lake
+    - title: Developer reference
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: API references
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Mapping references
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+        text: Access to finance and tax reference data
+  - title: Use Finance
+    items:
+    - title: Accounts payable
+      links:
+      - url: dynamics365/finance/accounts-payable/accounts-payable
+        text: Overview
+      - url: dynamics365/finance/accounts-payable/accounts-payable-overview
+        text: Configure Accounts payable
+      - url: dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
+        text: Invoice matching 
+    - title: Accounts receivable
+      links:
+      - url: dynamics365/finance/accounts-receivable/accounts-receivable
+        text: Overview
+      - url: dynamics365/finance/accounts-receivable/revenue-recognition-overview
+        text: Revenue recognition
+      - url: dynamics365/finance/accounts-receivable/subscription-billing-summary
+        text: Subscription billing
+      - url: dynamics365/finance/cash-bank-management/tasks/customer-payment-overview
+        text: Customer payments
+      - url: dynamics365/finance/accounts-receivable/cm-credit-and-collections-overview
+        text: Credit and collections
+    - title: Budgeting
+      links:
+      - url: dynamics365/finance/budgeting/basic-budgeting-overview-configuration
+        text: Overview
+      - url: dynamics365/finance/budgeting/budget-planning-overview-configuration
+        text: Budget planning
+      - url: dynamics365/finance/budgeting/budget-control-overview-configuration
+        text: Budget control
+      - url: /dynamics365/finance/budgeting/position-forecasting
+        text: Postition forecasting
+    - title: Cash and bank management
+      links:
+      - url: dynamics365/finance/cash-bank-management/cash-bank-management
+        text: Overview
+      - url: dynamics365/finance/cash-bank-management/cash-flow-forecasting
+        text: Cash flow forecasting
+      - url: dynamics365/finance/cash-bank-management/advanced-bank-reconciliation-overview
+        text: Advanced bank reconciliation
+    - title: Cost accounting
+      links:
+      - url: dynamics365/finance/cost-accounting/cost-accounting-home-page
+        text: Overview
+      - url: dynamics365/finance/cost-accounting/tasks/map-cost-element-dimension
+        text: Map a cost element dimension
+      - url: dynamics365/finance/cost-accounting/overhead-calculation
+        text: Overhead calculation
+    - title: Electronic messaging
+      links:
+      - url: dynamics365/finance/general-ledger/electronic-messaging
+        text: Overview
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Work with electronic messages
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Electronic messaging reporting
+    - title: Fixed assets
+      links:
+      - url: dynamics365/finance/fixed-assets/fixed-assets
+        text: Overview
+      - url: dynamics365/finance/fixed-assets/set-up-fixed-assets
+        text: Set up fixed assets
+      - url: dynamics365/finance/fixed-assets/fixed-asset-depreciation-conventions
+        text: Depreciation conventions
+    - title: Asset leasing
+      links:
+      - url: dynamics365/finance/asset-leasing/asset-leasing-quick-start
+        text: Overview
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Manage Asset leases
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Lease workflows
+    - title: General ledger
+      links:
+      - url: dynamics365/finance/general-ledger/plan-chart-of-accounts
+        text: Plan your chart of accounts
+      - url: dynamics365/finance/general-ledger/main-account-types
+        text: Main account types
+      - url: dynamics365/finance/general-ledger/financial-dimensions
+        text: Financial dimensions
+    - title: Reporting
+      links:
+      - url: dynamics365/finance/general-ledger/financial-reporting-getting-started
+        text: Financial reporting
+      - url: dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page
+        text: Reporting and Power BI integrations
+      - url: dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting
+        text: Electronic reporting
+    - title: Finance insights
+      links:
+      - url: dynamics365/finance/finance-insights/finance-insights-home-page
+        text: Overview
+      - url: dynamics365/finance/finance-insights/budget-proposals
+        text: Budget proposals
+      - url: dynamics365/finance/finance-insights/payment-insights-overview
+        text: Customer payment predictions
+    - title: Public sector
+      links:
+      - url: dynamics365/finance/public-sector/public-sector-functionality
+        text: Overview
+      - url: dynamics365/finance/public-sector/plan-public-sector-functionality
+        text: Plan for public sector functionality
+      - url: dynamics365/finance/public-sector/security-roles-public-sector
+        text: Security roles in the public sector
+    - title: Globalization studio
+      links:
+      - url: dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region
+        text: Globalization resources
+      - url: dynamics365/finance/localizations/globalization-services-overview
+        text: Globalization services
+      - url: dynamics365/finance/localizations/rcs-overview
+        text: Regulatory configuration service
+      - url: dynamics365/finance/localizations/e-invoicing-service-overview
+        text: Electronic invoicing
+      - url: dynamics365/finance/localizations/global-tax-calcuation-service-overview
+        text: Tax calculation Service
+    - title: Mobile apps
+      links:
+      - url: dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page
+        text: Overview
+      - url: dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released
+        text: Available mobile workspaces
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Publish mobile workspaces
+    - title: Microsoft Office integration
+      links:
+      - url: dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
+        text: Overview
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Configure and send email
+      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+        text: Customize the Open in Microsoft Office menu 
+    - title: Organization administration
+      links:
+      - url: dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+        text: Overview
+      - url: dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+        text: Organizational hierarchies
+      - url: dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+        text: Workflow system
+    - title: US Payroll
+      links:
+      - url: dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-payroll
+        text: Overview
+      - url: dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings
+        text: Generate earnings for workers
+      - url: dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-existing-earnings
+        text: Process existing earnings
+  - title: Related products
+    items:
+        # Card
+        
+        - title: Dynamics 365 Commerce
+          summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
+          url: /dynamics365/commerce/
+        - title: Dynamics 365 Project Operations
+          summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
+          url: /dynamics365/project-operations/
+        - title: Dynamics 365 Supply Chain Management
+          summary: Supply Chain Management allows you to provide the right services and products to your customers, manage relationships, drive targeted campaigns, and provide a great customer experience.
+          url: /dynamics365/supply-chain/
+        - title: Industry solutions
+          summary: Use industry-specific solutions that are built using Dynamics 365 and Microsoft Power Platform.
+          url: /dynamics365/industry/
+        - title: Microsoft Power Platform
+          summary: Build, automate workflows, analyze data, rapidly design, configure, and publish modern websites, and build intelligent bots with no-code interface using Power Platform products.
+          url: /power-platform/index
