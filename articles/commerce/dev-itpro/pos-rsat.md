@@ -1,6 +1,6 @@
 ---
-title: Test recorder and Regression suite automation tool for Store Commerce for web
-description: This article explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
+title: Test recorder and Regression Suite Automation Tool for Store Commerce for web
+description: This article explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression Suite Automation Tool (RSAT).
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
@@ -16,12 +16,12 @@ ms.custom: 28021
 ms.assetid: 
 ---
 
-# Test recorder and Regression suite automation tool for Store Commerce for web
+# Test recorder and Regression Suite Automation Tool for Store Commerce for web
 
 [!include [banner](../includes/banner.md)]
 
 
-This article explains how to use the new test recorder tool in Store Commerce for web to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
+This article explains how to use the new test recorder tool in Store Commerce for web to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression Suite Automation Tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
 This article applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
@@ -37,7 +37,7 @@ The test recorder can record user actions in the client, and it provides exact f
 > [!IMPORTANT]
 > The test recorder captures all the data that is entered during a recording session except POS user passwords. Don't record any personally identifiable information (PII), secrets, sensitive data, or user-specific data. All data that is entered during a recording session is stored in the Recording.xml file, and other users can see it in LCS and Azure DevOps, in the variables.xlsx and Recording.xml files, and during playback.
 
-## Regression suite automation tool
+## Regression Suite Automation Tool (RSAT)
 
 RSAT lets functional power users run test cases in POS. It then updates the test execution results in Azure DevOps for reporting and investigation purposes.
 
@@ -55,11 +55,11 @@ RSAT provides options for investigating test failures. It also decouples the tes
 
 To turn on the test recording functionality in POS, follow these steps in Headquarters.
 
-1. Go to **Retail and Commerce** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
+1. Go to **Retail and Commerce \> Channel Setup \> POS Setup \> Registers**.
 2. Select the register where the test recording functionality should be turned on.
 3. On the **Register** tab, on the **General** FastTab, set the **Enable task and test recorder** option to **Yes**.
 4. Select **Save**.
-5. Go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+5. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 6. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Controlling the test recorder
@@ -222,7 +222,7 @@ To upload to Azure DevOps directly:
 Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Double-click the MSI file to run it. After you install RSAT, you must install drivers for Selenium and the web browser. 
 
 > [!NOTE]
-> Before you run the test, you must set up Azure DevOps, and you must complete the required general settings and other required settings in RSAT. For detailed steps, see [Regression suite automation tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md).
+> Before you run the test, you must set up Azure DevOps, and you must complete the required general settings and other required settings in RSAT. For detailed steps, see [Regression Suite Automation Tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md).
 
 The following procedure describes the configuration that is required to run the POS test cases.
 
@@ -270,7 +270,7 @@ The following procedure describes the configuration that is required to run the 
 This section explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 
 > [!NOTE]
-> For detailed information about how to set up Azure DevOps and test cases, see [Regression suite automation tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md). You must complete that setup before you start to run tests. Before test execution/playback, turn off the Show app tour and Show app introduction after sign-in. Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
+> For detailed information about how to set up Azure DevOps and test cases, see [Regression Suite Automation Tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md). You must complete that setup before you start to run tests. Before test execution/playback, turn off the Show app tour and Show app introduction after sign-in. Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
 
 ### Load test cases and create parameter files
 
