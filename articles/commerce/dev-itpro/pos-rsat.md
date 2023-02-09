@@ -1,8 +1,8 @@
 ---
-title: Test recorder and Regression suite automation tool for Cloud POS
-description: This article explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
+title: Test recorder and Regression Suite Automation Tool for Store Commerce for web
+description: This article explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression Suite Automation Tool (RSAT).
 author: josaw1
-ms.date: 04/21/2022
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,17 +16,17 @@ ms.custom: 28021
 ms.assetid: 
 ---
 
-# Test recorder and Regression suite automation tool for Cloud POS
+# Test recorder and Regression Suite Automation Tool for Store Commerce for web
 
 [!include [banner](../includes/banner.md)]
 
 
-This article explains how to use the new test recorder tool in Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
+This article explains how to use the new test recorder tool in Store Commerce for web to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression Suite Automation Tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
 This article applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder can be used only in Cloud POS with Google Chrome or Microsoft Edge web browser.
+> The test recorder can only be used in Store Commerce for web with Google Chrome or the Microsoft Edge web browser.
 
 ## Test recorder
 
@@ -37,7 +37,7 @@ The test recorder can record user actions in the client, and it provides exact f
 > [!IMPORTANT]
 > The test recorder captures all the data that is entered during a recording session except POS user passwords. Don't record any personally identifiable information (PII), secrets, sensitive data, or user-specific data. All data that is entered during a recording session is stored in the Recording.xml file, and other users can see it in LCS and Azure DevOps, in the variables.xlsx and Recording.xml files, and during playback.
 
-## Regression suite automation tool
+## Regression Suite Automation Tool (RSAT)
 
 RSAT lets functional power users run test cases in POS. It then updates the test execution results in Azure DevOps for reporting and investigation purposes.
 
@@ -55,18 +55,18 @@ RSAT provides options for investigating test failures. It also decouples the tes
 
 To turn on the test recording functionality in POS, follow these steps in Headquarters.
 
-1. Go to **Retail and Commerce** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
+1. Go to **Retail and Commerce \> Channel Setup \> POS Setup \> Registers**.
 2. Select the register where the test recording functionality should be turned on.
 3. On the **Register** tab, on the **General** FastTab, set the **Enable task and test recorder** option to **Yes**.
 4. Select **Save**.
-5. Go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+5. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 6. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Controlling the test recorder
 
 ### Open the test recorder
 
-To open the test recorder, sign in to Cloud POS, and then, on the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
+To open the test recorder, sign in to Store Commerce for web, and then, on the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
 [![Task and Test recorders.](./media/CreateTest.png)](./media/CreateTest.png)
 
@@ -159,13 +159,13 @@ To resume the recording session after you've paused it, select **Recording**.
 ### Create a recording
 
 > [!IMPORTANT]
-> Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign-in. To do this, go to the **CPOS Settings > Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
+> Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign-in. To do this, go to the **Settings \> Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
 
 Follow these steps to create a new recording by using the test recorder:
 
-1. Launch Cloud POS.
+1. Launch Store Commerce for web.
 
-2. Select the hamburger icon on the left pane and select **Settings**. Don't sign in to Cloud POS. The sign-in step must be recorded as part of the test recording flow, so you need to launch the recorder before sign-in.)
+2. Select the hamburger icon on the left pane and select **Settings**. Don't sign in to Store Commerce for web. The sign-in step must be recorded as part of the test recording flow, so you need to launch the recorder before sign-in.)
 
 3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
@@ -181,7 +181,7 @@ Follow these steps to create a new recording by using the test recorder:
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
     
 > [!NOTE]
-> All test recording must begin from the Cloud POS sign-in page. If the recording is started from the home page, any transaction or  other page playback will fail and you will need to start the recording again from the sign-in page. 
+> All test recording must begin from the Store Commerce for web sign-in page. If the recording is started from the home page, any transaction or  other page playback will fail and you will need to start the recording again from the sign-in page. 
 
 
 6. Perform the needed actions in the POS user interface.
@@ -222,7 +222,7 @@ To upload to Azure DevOps directly:
 Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Double-click the MSI file to run it. After you install RSAT, you must install drivers for Selenium and the web browser. 
 
 > [!NOTE]
-> Before you run the test, you must set up Azure DevOps, and you must complete the required general settings and other required settings in RSAT. For detailed steps, see [Regression suite automation tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md).
+> Before you run the test, you must set up Azure DevOps, and you must complete the required general settings and other required settings in RSAT. For detailed steps, see [Regression Suite Automation Tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md).
 
 The following procedure describes the configuration that is required to run the POS test cases.
 
@@ -237,7 +237,7 @@ The following procedure describes the configuration that is required to run the 
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
         > [!NOTE]
-        > The Cloud POS and Commerce Scale Unit URL can be obtained from finance and operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+        > The Store Commerce for web and Commerce Scale Unit URL can be obtained from finance and operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
@@ -270,7 +270,7 @@ The following procedure describes the configuration that is required to run the 
 This section explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 
 > [!NOTE]
-> For detailed information about how to set up Azure DevOps and test cases, see [Regression suite automation tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md). You must complete that setup before you start to run tests. Before test execution/playback, turn off the Show app tour and Show app introduction after sign-in. Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
+> For detailed information about how to set up Azure DevOps and test cases, see [Regression Suite Automation Tool installation and configuration](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md). You must complete that setup before you start to run tests. Before test execution/playback, turn off the Show app tour and Show app introduction after sign-in. Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
 
 ### Load test cases and create parameter files
 
@@ -291,7 +291,7 @@ When you select **New**, test automation files are generated in your working dir
 
 ![Test parameter file in the Parameters File column.](./media/RSATParameter.png)
 
-For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Cloud POS uses Selenium WebDriver directly to do the playback, no additional script file must be generated.
+For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Store Commerce for web uses Selenium WebDriver directly to do the playback, no additional script file must be generated.
 
 ![Unavailable Generate Test Execution files only option.](./media/RSATNewOption.png)
 
@@ -361,7 +361,7 @@ You must manually delete these files and secure them as you require. All these f
 
 ### Creating test cases by using the test recorder
 
-+ Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign-in. To do this, go to the **CPOS Settings > Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
++ Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign-in. To do this, go to the **Settings > Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
 + Disable Chrome extension - If possible, disable the Chrome extension in the Chrome browser that is used to record and play back. The Chrome extension may change the DOM element xpath, which can result in test case failure because the element is not found during the execution of steps (xpath is different from the recording).
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation of a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
