@@ -4,7 +4,7 @@
 title: Cloud deployment overview
 description: This article describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 06/01/2022
+ms.date: 02/08/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform Update 8
 [!include [banner](../includes/banner.md)]
  
 Working with Microsoft to deploy finance and operations apps in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
-We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementation project. 
+We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Microsoft Dynamics 365 Lifecycle Services to help you manage your implementation project. 
 
 ## Customer lifecycle, subscriptions, and environment types
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
@@ -67,7 +67,7 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 *For more information about Self-service environment types, see [Self-service deployment overview](infrastructure-stack.md).*
 
 > [!IMPORTANT]
-> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020. For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscription directly from Lifecycle Services (LCS).
+> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020. For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscription directly from Lifecycle Services.
 
 ### Environment lifecycle operations
 Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
@@ -86,7 +86,7 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 
 
 ## Security and compliance
-finance and operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
+Finance and operations apps are PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
 All finance and operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
 
@@ -105,7 +105,7 @@ All finance and operations front-end virtual machines in Microsoft Azure are con
 > [!WARNING]
 > Microsoft will be removing the use of Remote Desktop by customers and partners.  Each environment will first have administrator access removed, but still allow non-administrator access to the virtual machines. After this, all access will be removed. For each step of this phased removal, an email notification will be sent to the Notification list setup for each environment. All Remote Desktop access will be removed by November 2020.
 
-Customers are required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization's IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semicolon (;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment's virtual network. For more information, see [Security rules](/azure/virtual-network/security-overview#security-rules).
+Customers are required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization's IP address space. This can be done by a Lifecycle Services user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semicolon (;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment's virtual network. For more information, see [Security rules](/azure/virtual-network/security-overview#security-rules).
 
 > [!IMPORTANT]
 > Customers need to ensure that RDP endpoints are secured through explicit IP safe list rules as mentioned above. The IP safe list rules must adhere to the following conditions.
@@ -130,7 +130,7 @@ Windows Remoting (WinRM) is disabled on all environments. Although you can enabl
 > Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
-The guaranteed uptime for finance and operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn't always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../lifecycle-services/lcs-support.md).
+The guaranteed uptime for finance and operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn't always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for finance and operations apps or Lifecycle Services](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Azure availability sets are used to prevent single-point-of-failure events. For more information about Azure availability sets, see [Use availability zones to protect from datacenter level failures](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures).
@@ -148,7 +148,7 @@ Production environments are configured with Azure disaster recovery support that
 Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the finance and operations service has started. 
 
 ## Service availability in Azure regions
-finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
+Finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services. Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it. For more information, see the following articles:
@@ -175,7 +175,7 @@ If there are other customer workloads that are not part of the Dynamics 365 or P
 
 ## Frequently asked questions
 
-### Why does the status display 'Maintenance' on my environment in LCS?
+### Why does the status display 'Maintenance' on my environment in Lifecycle Services?
 To provide the best experience and performance, Microsoft performs maintenance operations on your environment. During some of these maintenance operations, your environment status may display one of the following statuses:
 
 - Preparing for maintenance
@@ -235,8 +235,19 @@ This will not affect any environments that have their data stored in the depreca
 ### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
 This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
+### What does it mean when some deployment regions options are marked as **Data resident region**
+If you select a region which is not **Data resident** you will see a warning calling out the selected region for environment deployment is not the same as where Lifecycle Services is storing the project data. 
 
+For example, when using the global Lifecycle Services endpoint, the project data is stored in the United States.  The available regions that show Data Resident include:
+* brazilsouth
+* uscentral
+* useast
+* uswest
 
+> [Note]
+> Brazil south is only included in this list due to business and disaster recovery scenarios.  Environments deployed to Brazil South may fail over to US Central in the event of a disaster.  Environments deployed in US regions will only failover to other US regions in the event of a disaster.
+
+For information about migrating Lifecycle Services project data to a different geography, see [Project migration manager](../lifecycle-services/project-migration-manager.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
