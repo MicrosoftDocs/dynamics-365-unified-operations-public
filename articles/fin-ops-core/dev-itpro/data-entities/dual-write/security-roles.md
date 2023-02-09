@@ -107,12 +107,12 @@ If the exception occurs, follow these steps to assign the correct permissions to
 For more information about Dataverse security roles and privileges, see [Configure user security to resources in an environment](/power-platform/admin/database-security).
 
 
-## User/Team 
+## Security roles for users and teams
 |User/Team | Security roles to assign |
 |-----------|---------------------------|
-|Owning team set as default on cdm_company record |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse OOB (e.g. Salesperson or Sales Manager etc.) or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders|
-|Business user doing live sync |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse OOB (e.g. Salesperson or Sales Manager etc.) or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders |
+|Owning team set as default on cdm_company record |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders|
+|Business user doing live sync |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders |
 | Maker who needs to update table maps	| System customizer or System administrator role in Dataverse and System Administrator role in F&O |
-| Owning team for global records	| ‘Dual-write runtime user’ + ‘Dual-write app user’ +  one or more Dataverse OOB (e.g., Salesperson or Sales Manager etc.) or custom security roles to allow access to entities in scope e.g. products etc.|
-*For GAB and party model solution, you need to create a custom role to include privileges to the next entities: 
-Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. check the table maps for the complete list of entities Party and global address book - Finance & Operations | Dynamics 365 | Microsoft Learn
+| Owning team for global records	| ‘Dual-write runtime user’ + ‘Dual-write app user’ +  one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope e.g. products etc.|
+
+*For GAB and party model solution, you need to create a custom role to include privileges to entitles like Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. Get the full list of entities from [Party-GAB page](party-gab.md)
