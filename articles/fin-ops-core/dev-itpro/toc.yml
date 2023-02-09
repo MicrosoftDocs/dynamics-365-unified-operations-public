@@ -1094,10 +1094,6 @@
               href: data-entities/dual-write/dual-write-system-req.md
             - name: Guidance for how to set up dual-write
               href: data-entities/dual-write/connection-setup.md
-            - name: Considerations for initial synchronization
-              href: data-entities/dual-write/initial-sync-guidance.md
-            - name: Limits for live synchronization
-              href: data-entities/dual-write/sync-limits.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
             - name: Enable dual-write for existing finance and operations apps
@@ -1112,12 +1108,8 @@
                   href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
-            - name: Currency data-type migration for dual-write
-              href: data-entities/dual-write/currrency-decimal-places.md
-            - name: Set up the mapping for the sales order status fields
-              href: data-entities/dual-write/sales-status-map.md
-            - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
-              href: data-entities/dual-write/filtering-intercompany-orders.md
+            - name: Setup security roles and permissions
+              href: data-entities/dual-write/security-roles.md
             - name: Uninstall dual-write application orchestration solutions
               href: data-entities/dual-write/uninstall-solutions.md
         - name: Managing dual-write
@@ -1180,6 +1172,10 @@
               href: data-entities/dual-write/pricing-engine.md
             - name: Prospect to cash in dual-write
               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+            - name: Set up the mapping for the sales order status fields
+              href: data-entities/dual-write/sales-status-map.md
+            - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
+              href: data-entities/dual-write/filtering-intercompany-orders.md
             - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
               href: data-entities/dual-write/commerce-pricing.md
             - name: In-house assets for servicing
@@ -1202,10 +1198,16 @@
               href: data-entities/dual-write/mapping-reference.md
         - name: Support for dual-write
           items:
+            - name: Considerations for initial synchronization
+              href: data-entities/dual-write/initial-sync-guidance.md
+            - name: Limits for live synchronization
+              href: data-entities/dual-write/sync-limits.md
             - name: Support for Field Service and Project Service Automation solutions
               href: data-entities/dual-write/field-service-project-service-automation.md
             - name: Migrate Prospect to cash data from Data Integrator to dual-write
               href: data-entities/dual-write/migrate-prospect-to-cash.md
+            - name: Currency data-type migration for dual-write
+              href: data-entities/dual-write/currrency-decimal-places.md
             - name: Troubleshooting
               items:
               - name: General troubleshooting
