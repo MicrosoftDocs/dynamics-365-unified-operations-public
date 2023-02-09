@@ -26,12 +26,15 @@ This article describes how to set up and use the extended logon capability of th
 
 Cloud POS (CPOS), Modern POS (MPOS) and Store commerce app provide an extended logon capability that lets retail store workers sign in to the POS application by scanning a bar code or swiping a card by using a magnetic stripe reader (MSR).
 
+Before use the extended logon, customer **must** have their own extensions as out-of-box implementation is not intentionally shipped for direct usage. See below [Extend extended logon](#extend-extended-logon) section for details.
+
 ## Credential and Credential Id
 
-Credential and credential Id are two important concepts in extended logon. A user credential is a string which is recorded in the physical staff card, which is scanned out when swiping the card in logon. For security reason, we recommend the credential should be in minimal 256 bits and output as base64 string, which is minimal 44 characters.
-A credential Id is an internal concept, and it is generated according to user credential and grant type. The credential Id must be unique to identify the staff id. The maximum allowed length of credential id is 256.
+Credential and credential Id are two important concepts in extended logon. A user credential is a secret string recorded in the physical staff card or barcode, which is scanned out during logon. For security reason, we recommend the credential should be at least 256 bits to meet industry standard, which is 44 characters encoded as Base64 string.
 
-Before use the extended logon, customer **must** have their own extensions as out-of-box implementation is not intentionally shipped for direct usage. See below [Extend extended logon](#extend-extended-logon) section for details. The out-of-box implementation showcases the usage but does not put much emphasis on security. In details, the credentials must have at least six characters and the first five characters is considered as a unique *credential ID*, which should be customized in commerce runtime extensions. The remaining characters are used for security verification. For example, you have two cards, one of which has the credentials 12345DGYDEYTDW, and one of which has the credentials 12345EWUTBDAJH. Because these two cards have the same credential ID, 12345, they can't both be successfully assigned to workers.
+A *credential Id* is an internal concept, and it is generated according to user credential and grant type. The credential Id must be unique to identify the staff. The maximum allowed length of credential Id is 256 due to data store restriction.
+
+Here is an example to show the uniqueness requirement of credential Id. You have two cards, one of which has the credentials 12345ABCDE, and one of which has the credentials 12345FGHIJ. The out-of-box implementation takes first 5 characters as the credential Id. As a result, these two cards have the same credential Id, 12345, they can't both be successfully assigned to workers.
 
 ## Set up extended logon
 
@@ -69,9 +72,9 @@ For POS extensions, the key is to collect PIN number from an input dialog right 
 
 ### Commerce runtime extensions
 There are several important service requests that require customizations.
-**OverrideUserCredentialServiceRequest** is used in both user credential enroll and logon token validation scenario, which is used to generate a new credential based on old one and extra parameters dictionary, where PIN number is contained. Please note that PIN number and the original credential will not be persisted in the data store. Instead, the hashed value of the new credential will be persisted.
+- **OverrideUserCredentialServiceRequest** is used in both user credential enroll and logon token validation scenario, which is used to generate a new credential based on old one and extra parameters dictionary, where PIN number lies in. Please note that PIN number and the original credential will not be persisted in the data store. Instead, the hashed value of the new credential will be persisted.
 
-**GetUserAuthenticationCredentialIdServiceRequest** and **GetUserEnrollmentDetailsServiceRequest** have some overlapping logic on calculating the credential id based on user credential and extra parameters dictionary. Furthermore, minimum credential length validation can be also performed here. The out-of-box implementation of the extended logon capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. This behavior can be easily changed in these two service requests.
+- **GetUserAuthenticationCredentialIdServiceRequest** is used to calculate the credential id based on user credential and extra parameters dictionary. Furthermore, minimum credential length check is also performed here. The out-of-box implementation of the extended logon capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) be unique. This behavior must be changed in the service handler, according to the security consideration as well as business requirement.
 
 For detailed information about how to build extensions for extended logon, see [Extended Logon Sample](https://aka.ms/d365commerce.extendedlogon).
 
