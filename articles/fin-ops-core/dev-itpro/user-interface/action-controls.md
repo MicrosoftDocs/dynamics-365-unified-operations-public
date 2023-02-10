@@ -54,7 +54,7 @@ The **Button display** property controls what information (including the button 
 -   Buttons inside Action Pane tabs on Standard Action Panes must be set to **Text only** or **Auto** (which is interpreted as **Text only** in this case).
 -   **Image only** buttons should be used only for on-canvas buttons that are inline with a field.
 
-For more details about how to use the **Button display** property in various form locations, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. The following table shows the values for the **Button display** property.
+For more details about how to use the **Button display** property in various form locations, see the "Button image guidelines" section of [General form guidelines](general-form-guidelines.md). The following table shows the values for the **Button display** property.
 
 | Button Display value  | Description                                                                                                                  |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -67,9 +67,9 @@ Note that the other values of **Button display** from Microsoft Dynamics AX 2012
 
 ### Button images
 
-In previous versions, images or icons were often shown on buttons to help users recognize those buttons. In the current version, the number of images that are used for this purpose has been drastically reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. 
+In previous versions, images or icons were often shown on buttons to help users recognize those buttons. In the current version, the number of images that are used for this purpose has been drastically reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons, see the "Button image guidelines" section of [General form guidelines](general-form-guidelines.md). 
 
-Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, with the shift to the web, this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that require images will use this format (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format. For a list of the full set of symbols that are supported, see [Dynamics Symbol font](symbol-font.md) article. The following table shows the recommended and preferred method for assigning images to buttons.
+Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, with the shift to the web, this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that require images will use this format (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format. For a list of the full set of symbols that are supported, see [Dynamics Symbol font](symbol-font.md). The following table shows the recommended and preferred method for assigning images to buttons.
 
 | Property       | Value                             |
 |----------------|-----------------------------------|
@@ -94,7 +94,7 @@ The following illustration shows the flyout that appears to show additional comm
 
 ### System-defined buttons
 
-Several system-defined buttons are added automatically to pages. The following table shows the list of system-defined buttons that are added to the Action Pane. For more information about how these buttons behave and how to manage them, see the [System-defined buttons](system-defined-buttons.md) article.
+Several system-defined buttons are added automatically to pages. The following table shows the list of system-defined buttons that are added to the Action Pane. For more information about how these buttons behave and how to manage them, see [System-defined buttons](system-defined-buttons.md).
 
 | Button                | Name                     | Comments                                                               |
 |----------------------|--------------------------|------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ The programming model for modifying context menus differs from the model used in
 ## Keyboard shortcuts
 Keyboard shortcuts are another mechanism for triggering some actions. Many actions that had shortcuts in Dynamics AX 2012 continue to have shortcuts in Operations. However, because of browser restrictions, the key combination that is used to trigger a particular action might differ. 
 
-The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Keyboard shortcuts](../../fin-ops/get-started/shortcut-keys.md) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
+The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see [Keyboard shortcuts](../../fin-ops/get-started/shortcut-keys.md). In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
 
 | Key combination     | Action              | Comments                                             |
 |---------------------|---------------------|------------------------------------------------------------------------------|
