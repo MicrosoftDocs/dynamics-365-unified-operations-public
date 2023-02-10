@@ -41,30 +41,38 @@ If a table is created in only one system, set up the number sequence in the sour
 
 
 ## How to disable field validation in F&O data entity for dual-write initial sync
-Navigate to F&O Data Management, Data entities, select to update a data entity, and for the autonumber field un-tick the Call validate Field method and click Save.
+Navigate to F&O Data Management, Data entities, select to update a data entity, and for the autonumber field un-tick the Call validate Field method and click Save. [Learn more](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/optimize-data-migration)
 
 ![NumberSequence-1](media/numseq-1.png)
 
 
 ## F&O number sequence settings
-When working with autonumbering in finance and operations apps, it is important to understand the number sequence settings: 
+When working with autonumbering in finance and operations apps, it is important to understand the [number sequence settings](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview): 
 
 ![NumberSequence-2](media/numseq-2.png)
 
-- Manual, it should be No if we want the system to generate values. 
-- Smallest defines the lowest numeric value allowed for the sequence.
-- Largest defines the highest numeric value allowed for the sequence.
-- Next indicates the next numeric value in the number sequence to be used.
-- To a higher number and To a lower number flags allow users to enter a value higher or respectively lower than the Next value. 
-- Continous helps to avoid gaps in that it allows to re-use value in case records are deleted. You should carefully analyze performance impact if there is a requirement to enable this feature.
+- **Manual**, it should be No if we want the system to generate values. 
+- **Smallest** defines the lowest numeric value allowed for the sequence.
+- **Largest** defines the highest numeric value allowed for the sequence.
+- **Next** indicates the next numeric value in the number sequence to be used.
+- **To a higher number** and **To a lower number** flags allow users to enter a value higher or respectively lower than the Next value. 
+- **Continuous** helps to avoid gaps in that it allows to re-use value in case records are deleted. You should carefully analyze performance impact if there is a requirement to enable this feature.
 
 Also in the number sequence, we can have different segments that can be used to compose the full value such as constants or company name:
 
 ![NumberSequence-3](media/numseq-3.png)
 
+Once the data validation is enabled and we have confirmed the format of the column (say Sales Order Number) on dataverse and Number Sequence matches, the user might still encounter the following error messages. 
+
+|Error Message|Cause|
+|-----|----|
+|Field  XXX (say: 'Sales order') does not allow editing. Invalid specification of Sales order Number sequence Sale_293 does not allow change to a higher number. Validations failed | The number sequence setup doesn’t allow editing. This happens when the following settings are set to **No** - Manual, To a Lower Number (under allow user change), To a Higher Number (under allow user change). In order to fix this issue, enable one of these settings, and the issue will resolve. |
+|Incoming XXX (say: Sales order no) < Lowest number allowed is 1000000. Validations failed | The incoming values (numeric part) need to be within the F&O number sequence number allocation range. (Should be less than the largest value) |
+|Incoming XXX (say: Sales order no) > highest number allowed is NNN (say: 1000000.) Validations failed | The incoming values (numeric part) need to be within the F&O number sequence number allocation range. (Should be greater than smallest value) . |
+
 
 ## Dataverse autonumbering 
-Autonumber columns are Dataverse columns that automatically generate alphanumeric strings whenever they are created. Makers can customize the format of these columns 
+[Autonumber columns](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/autonumber-fields) are Dataverse columns that automatically generate alphanumeric strings whenever they are created. Makers can customize the format of these columns 
 to their liking, and then rely on the system to generate matching values that automatically fill them in at runtime. For example, sales order number set up as 
 autonumber type in Dataverse:
 
