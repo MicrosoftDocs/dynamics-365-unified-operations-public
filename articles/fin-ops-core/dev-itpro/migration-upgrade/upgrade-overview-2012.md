@@ -100,7 +100,7 @@ Demo environments are default environments that contain demonstration data (not 
 
 The output of this step represents the workstream in the upgrade project plan for your functional users or business users.
 
-For more information, see [Upgrade from AX 2012 - Deploy a demo environment for analysis](analysis-sandbox.md)
+For more information, see [Upgrade from AX 2012 - Deploy a demo environment for analysis](analysis-sandbox.md).
 
 ### Create a project plan
 A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing (mock cutover), the functional test pass iterations, and details about the various resource assignments for those tasks.
