@@ -218,10 +218,16 @@ When you select the **Worksheet specific** option, every worksheet of a generate
 
 If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is always taken from the Word document.
 
-### Use built-in PDF conversion option in formats
+### Use PDF conversion component in formats
 
-As of Finance **version 10.0.33**, there is the possibility to implement PDF conversion directly in a format configuration.
-To do...
+As of Finance **version 10.0.33**, there is the possibility to use PDF conversion directly in format configurations.
+A new format component **Converter PDF** has been added.
+Can contain only one Excel file sub-component...
+
+[![Converter PDF component.](./media/zzz)](./media/zzz)
+
+> [!NOTE]
+> Add root for existing...
 
 ## Output unfolding
 
