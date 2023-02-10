@@ -13,7 +13,7 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 ---
 
 
-# Reset functionality
+# Reset dual-write connections
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
