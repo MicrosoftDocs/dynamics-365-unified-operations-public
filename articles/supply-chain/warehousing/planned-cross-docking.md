@@ -82,7 +82,7 @@ Planned cross-docking is implemented as a load posting method. After you turn on
         - *Warehouse group* – Use the cross docking template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
         - *Warehouse* – Use the cross docking template only for the specific warehouse that's selected in the **Warehouse** field.
 
-    - **Warehouse** - If the **Warehouse selection** field is set to *Warehouse*, select the warehouse and the location where the cross docking template applies. 
+    - **Warehouse** - If the **Warehouse selection** field is set to *Warehouse*, select the warehouse where the cross docking template applies. 
     - **Warehouse group** - If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the cross docking template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
 
     For this scenario, set the following values:
