@@ -35,6 +35,21 @@ To view and process goods through the shipping container page, go to **Landed co
 
 The upper part of the shipping container details page shows shipping container and costing information. The **Lines** section shows the folios, items, and purchase orders or transfer orders that are attached to the container.
 
+## Create shipping container 
+Shipping container is created inside the voyage. In the **Add staging list to shipping container** form, user could choose create shipping container in foreground or backgound mode after click buttom **Add to new shipping container** button.  
+
+Create shipping container in background mode can provide better system performance if your shipping container contains large number of shipping lines.
+
+![image](https://user-images.githubusercontent.com/102585421/218046365-b951d9c2-6abe-4d14-90a9-73564b0ada7d.png)
+
+> [!NOTE]
+> The background processing won't activate when the transfer quantity is less than the total quantity of the related purchase order line.
+
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.33, it's turned off by default. Admins can use the feature management settings to check the status of the feature and turn it on as needed. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Transportation management*
+- **Feature name:** *Enable shipping container creation and update in batch mode*
+
 ## Action Pane
 
 The Action Pane on the **All shipping containers** and **Shipping containers** pages provides buttons that let you work with a selected shipping container. Each button performs a single action. The Action Pane also includes tabs, each of which, in turn, provides a set of related buttons. Except where noted, all buttons and tabs that are described in the following subsections are available both in the list view (that is, on the **All shipping containers** page) and in the detailed view (that is, on the **Shipping containers** page).
