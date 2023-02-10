@@ -2,7 +2,7 @@
 title: Code signing a Modern POS (MSIX) extension package
 description: This article explains how to code sign a Modern POS (MSIX) extension package.
 author: josaw1
-ms.date: 10/21/2021
+ms.date: 02/10/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
