@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
