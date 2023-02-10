@@ -1110,6 +1110,8 @@
               href: data-entities/dual-write/separated-solutions.md
             - name: Setup security roles and permissions
               href: data-entities/dual-write/security-roles.md
+            - name: User-specified team owner
+              href: data-entities/dual-write/user-specified-team-owner.md
             - name: Uninstall dual-write application orchestration solutions
               href: data-entities/dual-write/uninstall-solutions.md
         - name: Managing dual-write after setup
@@ -1128,8 +1130,6 @@
               href: data-entities/dual-write/errors-and-alerts.md
             - name: Application lifecycle management
               href: data-entities/dual-write/app-lifecycle-management.md
-            - name: User-specified team owner
-              href: data-entities/dual-write/user-specified-team-owner.md
             - name: Reset dual-write connections
               href: data-entities/dual-write/reset.md
         - name: Mapping concepts between apps
