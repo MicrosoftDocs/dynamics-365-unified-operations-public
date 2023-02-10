@@ -54,7 +54,7 @@ These topics describe dual-write integration.
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 + [User-specified team owner](user-specified-team-owner.md)
-+ [Reset dual-write environments](reset.md)
++ [Reset dual-write connections](reset.md)
 
 ## Mapping concepts between apps
 
