@@ -67,7 +67,7 @@ To work with exporters, go to **Landed cost \> Shipping information setup \> Exp
 
 ## Commodity codes
 
-You use commodity codes to help with customs identification and the calculation of duty rates for goods on a voyage. You can select commodity codes on the **Released products** page.
+You use commodity codes to help with customs identification and the calculation of duty rates for goods. You can select commodity codes on the **Released products** page.
 
 To work with commodity codes, go to **Landed cost \> Shipping information setup \> Commodity codes**. There, you can view, open, create, and delete records for commodity codes. The following table describes the fields that are available for each record.
 
