@@ -102,7 +102,7 @@ The following table describes the settings that are available on the **Delivery*
 | Field | Description |
 |---|---|
 | Created date and time | The date and time when the container was created. |
-| Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. You can also manually enter it here. |
+| Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. |
 | Ship date | This date can be printed on the purchase order document. It usually informs the factory/vendor about the date that the goods should be delivered to the port by. This field is for informational purposes only. It isn't used to estimate the expected delivery date of the goods in the shipping container. This field can be set to that it's automatically updated when the tracking control page is updated. |
 | In to store date | The earliest date when the goods from the purchase orders that are linked to the voyage will be available for sale.|
 | Estimated delivery date | Usually, the date when the goods are due to arrive in the warehouse. This field is for informational purposes only. It isn't used to calculate master planning on the purchase order lines in the shipping container. The expected delivery date on the purchase order lines is updated through tracking control. This field can be set up so that it's updated when the tracking control page is updated. |
@@ -134,8 +134,8 @@ The following table describes the settings that are available on the **Other** F
 | Original voyage | If the shipping container was moved to a new voyage, the original voyage. |
 | Used | Use this to record whether a rental shipping container has been used. It is for informational purposes only. |
 | Expected loading date | The date when the shipping container is expected to be loaded with goods. |
-| Our serial number | Enter the serial number that your company uses internally for the shipping container. |
-| Shipping company serial number | Enter the serial number that the shipping company or agent provided for the shipping container. |
+| Our seal number | Enter the seal number that your company uses internally for the shipping container. |
+| Shipping company seal number | Enter the seal number that the shipping company or agent provided for the shipping container. |
 | Examination certificate applied date | The date when an examination was requested for the shipping container. |
 | Examination certificate received date | The date when the examination certificate was received. |
 | Examination certificate expiry date | The date when the examination certificate will expire. |
