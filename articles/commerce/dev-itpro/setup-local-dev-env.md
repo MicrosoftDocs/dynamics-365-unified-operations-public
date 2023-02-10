@@ -2,7 +2,7 @@
 title: Set up a local development environment
 description: This article explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development.
 author: josaw1
-ms.date: 09/16/2021
+ms.date: 02/10/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
