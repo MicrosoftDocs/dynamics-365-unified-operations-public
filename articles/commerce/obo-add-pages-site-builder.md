@@ -42,7 +42,7 @@ Please refer to the steps below for more details about each step. In addition, f
      1. Click “Save and Publish” button.
 
 ## Step 2: Create a Business Partner selection page.
-Follow the same steps as for the business partner organization page using the same Business partner module. FOr the property of the container specify a different heading, for example "“Select a Business Partner".
+Follow the same steps as for the business partner organization page using the same Business partner module. Forr the property of the container specify a different heading, for example "“Select a Business Partner".
 
 ## Step 3: Modify B2B sign-in page.
 The B2B sign-in page needs to be edited to include **Employee Sign-in** button. We recommend changing a header of this page to **Business partner sign-in** to make a clear separation between a business partner sign-in and an account manager sign-in.
