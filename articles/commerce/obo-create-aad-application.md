@@ -66,11 +66,6 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 1.	Under the **Custom identity providers**, select the identity provider you added. For example, “Account Manager B2B Sign-in”.
 1.	Select **Save**.
 
-## Enable B2B account sign-in button in site builder:
-1.	Create the custom sign-in page as per these [instructions](custom-pages-user-logins.md).
-2.	Check **Render B2B Account Sign-in button** in sign-in module to enable Azure B2B sign-in button.
-3.	Click **Save** and publish the page.
-
 ## Additional resources
 
 [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)
