@@ -47,8 +47,10 @@ Please refer to the steps below for more details about each step. In addition, f
 Follow the same steps as for the business partner organization page using the same Business partner module. Forr the property of the container specify a different heading, for example "“Select a Business Partner".
 
 ## Step 3: Modify B2B sign-in page.
-The B2B sign-in page needs to be edited to include **Employee Sign-in** button. Check **Render B2B Account Sign-in button**. We recommend changing a header of this page to **Business partner sign-in** to make a clear separation between a business partner sign-in and an account manager sign-in.
- 1. Click **Save** and publish the page.
+Follow these steps to include **Employee Sign-in** button. 
+ 1. Edit the **B2B sign-in page**. 
+ 2. Check **Render B2B Account Sign-in button** in the **Sign in 1** container in the main slot
+ 3. Click **Save** and publish the page.
 
 :::image type="content" source="./media/obo-site-builder-sign-in-button.png" alt-text=include a Render B2B Account Sign-in button":::
 
