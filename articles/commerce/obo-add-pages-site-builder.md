@@ -41,13 +41,16 @@ Please refer to the steps below for more details about each step. In addition, f
      1. Set “Business partner selection” to be the page you just created.
      1. Click “Save and Publish” button.
 
-:::image type="content" source="./media/obo-site-builder-page.png" alt-text="Site Builder - new page, business partner module":::
+:::image type="content" source="./media/obo-site-builder-page.png" alt-text="Add a business partner module when creating a new page for business partner organization Selection":::
 
 ## Step 2: Create a Business Partner selection page.
 Follow the same steps as for the business partner organization page using the same Business partner module. Forr the property of the container specify a different heading, for example "“Select a Business Partner".
 
 ## Step 3: Modify B2B sign-in page.
-The B2B sign-in page needs to be edited to include **Employee Sign-in** button. We recommend changing a header of this page to **Business partner sign-in** to make a clear separation between a business partner sign-in and an account manager sign-in.
+The B2B sign-in page needs to be edited to include **Employee Sign-in** button. Check **Render B2B Account Sign-in button**. We recommend changing a header of this page to **Business partner sign-in** to make a clear separation between a business partner sign-in and an account manager sign-in.
+ 1. Click **Save** and publish the page.
+
+:::image type="content" source="./media/obo-site-builder-sign-in-button.png" alt-text=include a Render B2B Account Sign-in button":::
 
 ## Step 4: (Optional) Modify word “For” in the header. 
 For **on behalf of** scenario, a header should contain the names of the account manager and the buyer that is being represented. By default, the word **For** is being used, for example, “Alexander For Cameron Hartnett”. However, if needed, a word **For** can be [modified](e-commerce-extensibility/change-module-library-strings.md) as needed using header.definition.json file. 
