@@ -63,7 +63,7 @@ To enable sign-in for account manager with an employee’s AAD account in Azure 
 ## Add the Azure identity provider to a user flow:
 1.	In your Azure AD B2C tenant, select **User flows**.
 1.	Click the user flow for which you want to add the identity provider.
-1.	Under the **Custom identity providers**, select the identity provider you added. For example, “Account Manager B2B Sign in”.
+1.	Under the **Custom identity providers**, select the identity provider you added. For example, “Account Manager B2B Sign-in”.
 1.	Select **Save**.
 
 ## Enable B2B account sign-in button in site builder:
