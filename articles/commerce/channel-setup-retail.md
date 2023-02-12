@@ -198,6 +198,16 @@ To enable the use of new transaction IDs, follow these steps:
 > [!NOTE]
 > After the new transaction ID format feature is enabled, you will not be able to disable this feature. If it must be disabled, please contact Commerce Support.
 
+### Setup store location for store selector
+The store location information including Latitude and Longitude is used in store selector scenarios in both POS and E-Commerce sites.
+To setup the store location, the follow these steps:
+
+1. In Commerce headquarters, go to **Organization administrator \> Organizations \> Operating units**.
+1. In the left list view, filter the operating unit by name or Operating unit number of the channel, and view its details.
+1. In the **Addresses** tab, click **More options** button, and select **Advanced** option, and you will be directed to the **Manage addresses** page.
+1. In the **General** tab, fill in information in **Latitude** and **Longitude** fields.
+1. On the Action Pane, select **Save**
+
 ## Additional resources
 
 [Channels overview](channels-overview.md)
