@@ -2163,6 +2163,8 @@
       items:
       - name: Pricing management overview
         href: pricing-management/pricing-management-overview.md
+      - name: Turn on the Pricing management module for your system
+        href: pricing-management/pricing-management-enable.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page

@@ -18,7 +18,7 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.33 GA -->
 
-This article provides an overview of the Pricing management module in Dynamics 365 Supply Chain Management.
+This article provides an overview of the Pricing management module in Dynamics 365 Supply Chain Management. <!-- KFM: Refer to as a module? Or should this be under Sales and Marketing in the TOC? -->
 
 Increasingly, traditional business to business (B2B) companies are thinking of converting to omnichannel sales and selling directly to customers to gain more control over pricing and margins. The omnichannel transformation leads to massive changes to pricing models and rules. Pricing management aids B2B business in the transition to omnichannel pricing by enabling attribute-based pricing rules that use attributes and data from customers, products, and order segments.
 
