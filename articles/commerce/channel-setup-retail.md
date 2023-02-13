@@ -2,7 +2,7 @@
 title: Set up a retail  channel
 description: This article describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/18/2022
+ms.date: 02/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -198,14 +198,15 @@ To enable the use of new transaction IDs, follow these steps:
 > [!NOTE]
 > After the new transaction ID format feature is enabled, you will not be able to disable this feature. If it must be disabled, please contact Commerce Support.
 
-### Setup store location for store selector
-The store location information including Latitude and Longitude is used in store selector scenarios in both POS and E-Commerce sites.
-To setup the store location, the follow these steps:
+### Set up store location for store selector
+Store location data, including latitude and longitude, is used in store selector scenarios in both POS and e-commerce sites.
+
+To set up the store location, complete the following steps.
 
 1. In Commerce headquarters, go to **Organization administrator \> Organizations \> Operating units**.
-1. In the left list view, filter the operating unit by name or Operating unit number of the channel, and view its details.
-1. In the **Addresses** tab, click **More options** button, and select **Advanced** option, and you will be directed to the **Manage addresses** page.
-1. In the **General** tab, fill in information in **Latitude** and **Longitude** fields.
+1. In the left list view, filter the operating unit by name or the operating unit number of the channel.
+1. On the **Addresses** tab, select **More options**, then select the **Advanced** option. You will be directed to the **Manage addresses** page.
+1. On the **General** tab, enter the applicable values in the **Latitude** and **Longitude** fields.
 1. On the Action Pane, select **Save**
 
 ## Additional resources
