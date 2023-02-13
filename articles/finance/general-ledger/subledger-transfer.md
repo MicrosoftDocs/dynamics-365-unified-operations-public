@@ -46,7 +46,9 @@ The functionality for asynchronous transfer of subledger batches helps improve t
 
 Asynchronous transfer of subledger batches requires that the batch server be set up, online, and working because batch tasks are created for immediate execution on the batch server. When the  **Subledger transfer to General Ledger performance optimization** feature is enabled, the **Process automation** system batch job named **Process automation polling system job** must be also be enabled. For more information, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
-The efficiency change at the batch level uses a single recurring batch job for all legal entities in the system. At runtime, a new batch job is created to process the required records that haven't yet been transferred. More settings can be controlled from the **Process automation** page in system administration. On that page, you can modify the background process, change the frequency, and define a sleep period.
+The efficiency change at the batch level uses a single recurring batch job for all legal entities in the system. At runtime, a new batch job is created to process the required records that haven't yet been transferred. More settings can be controlled from the **Process automation** page in system administration. On that page, you can modify the background process, change the frequency, and define a sleep period. 
+
+*NOTE: Make sure to review any scheduled batch jobs of **"Batch transfer for subledger journals"** that could conflict with this new process automation job. If you only use Asynchronous transfer for all document types, you will no longer need this batch job running.*
 
 For more information about process automation setup, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
