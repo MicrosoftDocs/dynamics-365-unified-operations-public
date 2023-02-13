@@ -103,16 +103,17 @@ The following diagram illustrates the rule graphically.
 
 #### Override the sales tax direction
 
-In the General journal lines, you can override the sales tax direction when the voucher contains **Ledger** as either account or offset account.
+On the General journal lines, you can override the sales tax direction when the voucher contains **Ledger** as either account or offset account.
 
-Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and select the **Legal entity overrides** FastTab. 
-Add a legal entity for which the **Sales tax direction** should be overridden and click **Sales tax** button. Select the **Sales tax direction**:
+1. Go to **General ledger** > **Chart of accounts** > **Accounts** > **Main accounts**, and select the **Legal entity overrides** FastTab. 
+2. Add a legal entity for which the **Sales tax direction** should be overridden, and select **Sales tax**. 
+3. Select the sales tax direction:
 
- - _Purchase_ – for _Sales tax receivable_ tax direction
+ - **Purchase** – for **Sales tax receivable** tax direction
 or 
- - _Sales_ – for *Sales tax payable* tax direction.
+ - **Sales** – for **Sales tax payable** tax direction
 
-If in the general journal line the **Account type** is other than **Ledger** (e.g. Customer, Vendor), then to override the sales tax direction for the offset ledger account, on the **General** tab set the **Sales tax direction** to **Yes**.
+If the **Account type** isn't **Ledger** (for example Customer or Vendor) on the general journal line, on teh **General** tab, set the **Sales tax direction** to **Yes** to override the sales tax direction for the offset ledger account.
 
 
 ## Determine the sales tax amount
