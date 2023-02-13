@@ -2159,6 +2159,10 @@
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
+    - name: Pricing management
+      items:
+      - name: Pricing management overview
+        href: pricing-management/pricing-management-overview.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page
