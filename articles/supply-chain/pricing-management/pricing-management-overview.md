@@ -57,7 +57,7 @@ The following illustration shows many of the components that affect Pricing mana
 
 The following illustration shows the architecture of the Pricing management module.
 
-[<img src="media/XXXX.png" alt="Pricing management module architecture." title="Pricing management module architecture" width="720" />](media/pricing-management-architecture.png)
+[<img src="media/pricing-management-architecture.png" alt="Pricing management module architecture." title="Pricing management module architecture" width="720" />](media/pricing-management-architecture.png)
 
 > [!NOTE]
 > You can create and maintain the pricing rules in Dynamics 365 Supply Chain Management.
