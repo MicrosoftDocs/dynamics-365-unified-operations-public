@@ -110,7 +110,6 @@ You can override the sales tax direction on general journal lines when the vouch
 3. Select the sales tax direction:
 
  - **Purchase** – for **Sales tax receivable** tax direction
-or 
  - **Sales** – for **Sales tax payable** tax direction
 
 If, on the genral journal line, the **Account type** isn't **Ledger**, on the **General** tab, set the **Sales tax direction** to **Yes** to override the sales tax direction for the offset ledger account.
