@@ -149,6 +149,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-2 train schedule
+
 **App version: 10.0.1362.99**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
@@ -161,6 +162,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
+
 **App version: 10.0.1362.124**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
@@ -173,7 +175,9 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-1 train schedule
+
 **App version: 10.0.1406.103**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | NA | NA |
