@@ -49,9 +49,9 @@ Pricing management applies the following key elements to determine pricing:
 - **Price structure** – Let you construe the sequence of your price component codes. You can choose to use one price structure for each company or use different price structures for each order attribute within a company. Within the price structure, price determination logic ensures that the base price can be found. To ensure that the base price can be established, the price determination logic is embedded into the price structure. The base price is the price before making any price adjustments (base price &plus; price adjustment = selling price).
 - **Concurrency mode** – Controls how the final price should be calculated in situations where multiple pricing rules are associated with the same price component code.
 
-The following illustration shows many of the components that affect Pricing management price calculations.
+The following illustration shows many of the elements that affect Pricing management price calculations.
 
-[<img src="media/pricing-management-components.png" alt="Components that affect Pricing management price calculations." title="Components that affect Pricing management price calculations" width="720" />](media/pricing-management-components.png)
+[<img src="media/pricing-management-elements.png" alt="Elements that affect Pricing management price calculations." title="Elements that affect Pricing management price calculations" width="720" />](media/pricing-management-elements.png)
 
 ## Architecture overview
 
