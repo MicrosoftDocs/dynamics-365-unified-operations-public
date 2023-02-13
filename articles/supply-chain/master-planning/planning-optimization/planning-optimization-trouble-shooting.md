@@ -78,7 +78,6 @@ This is related to a pending feature that is planned as part of the support for 
 
 - [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-- [Expected differences between master planning and planning optimization](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in)
-
+- [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
