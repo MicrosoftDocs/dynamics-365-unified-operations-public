@@ -221,12 +221,12 @@ If an ER configuration in Word format is converted to PDF format, the page orien
 ### Use PDF conversion component in formats
 
 As of Finance **version 10.0.33**, there is the possibility to use PDF conversion directly in format configurations.
-A new format component **PDF ConverterF** has been added.
+A new format component **PDF Converter** has been added.
 
 [![PDF Converter component in formats](./media/ERformatPDFconverter.jpg)](./media/ERformatPDFconverter.jpg)
 
 > [!NOTE]
-> Add root for existing... Can contain only one Excel file sub-component...
+> **PDF Converter** component is available only for the format configurations of **PDF** format type or when format type was not explicitly defined and left empty. Can contain only one Excel file sub-component...
 
 ## Output unfolding
 
