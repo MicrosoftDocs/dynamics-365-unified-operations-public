@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.33
 
 This article describes how to create pages in **site builder** to allow account managers to sign in to the B2B e-commerce website and perform operations on behalf of B2B buyers.
 
-## Overview:
+## Overview
 The following modifications need to be done in **site builder** to enable On Behalf Of user experience. 
 1.	Create a new page for selecting a business partner organization.
 1.	Create a new page for selecting a business partner.
@@ -46,10 +46,10 @@ Please refer to the steps below for more details about each step. In addition, f
 ## Step 2: Create a Business Partner selection page.
 Follow the same steps as for the business partner organization page using the same Business partner module. Forr the property of the container specify a different heading, for example "“Select a Business Partner".
 
-## Step 3: Modify B2B sign-in page.
+## Step 3: Modify B2B sign-in page to include "Employee Sign-in" button.
 Follow these steps to include **Employee Sign-in** button. 
  1. Edit the **B2B sign-in page**. 
- 2. Check **Render B2B Account Sign-in button** in the **Sign in 1** container in the main slot
+ 2. Check **Render B2B Account Sign-in button** in the **Sign in 1** container in the main slot.
  3. Click **Save** and publish the page.
 
 :::image type="content" source="./media/obo-site-builder-sign-in-button.png" alt-text=include a Render B2B Account Sign-in button":::
