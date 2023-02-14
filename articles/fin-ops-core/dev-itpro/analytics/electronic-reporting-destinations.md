@@ -226,7 +226,7 @@ A new format component **PDF Converter** has been added.
 [![PDF Converter component in formats](./media/ERformatPDFconverter.jpg)](./media/ERformatPDFconverter.jpg)
 
 > [!NOTE]
-> **PDF Converter** component is available only for the format configurations of **PDF** format type or when format type was not explicitly defined and left empty. Can contain only one Excel file sub-component...
+> **PDF Converter** component can be added only in the format configurations of **PDF** format type or when format type was not explicitly defined and left empty. **PDF Converter** component can contain only one **Excel\\File** sub-component.
 
 ## Output unfolding
 
