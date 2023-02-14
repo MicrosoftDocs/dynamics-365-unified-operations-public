@@ -254,6 +254,8 @@
           href: accounts-payable/invoice-capture-dashboard.md
         - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
+        - name: Invoice capture FAQ  
+          href: accounts-payable/invoice-capture-faq.md
       - name: Vendor invoice automation    
         items: 
         - name: Automated vendor invoicing processes overview
