@@ -32,7 +32,24 @@ Before you install the Inventory Visibility, you must complete the following tas
 - Make sure that the prerequisites for setting up add-ins have been completed. For information about these prerequisites, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Inventory Visibility doesn't require dual-write linking.
 
 > [!NOTE]
-> The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP), and Brazil (SBR, SCUS).
+> The countries and regions that are currently supported include:
+> | Geography   | Region(ShortName) |
+> |  ----  | ----  |
+> | Canada | CCA, ECA |
+> | United States | WUS, EUS |
+> | the United Kingdom | SUK, WUK |
+> | Europe | NEU, WEU |
+> | Australia | EAU, SEAU |
+> | Japan | EJP, WJP |
+> | Brazil | SBR |
+> | United Arab Emirates | NAE |
+> | France | CFR, SFR |
+> | Norway | ENO, WNO |
+> | China | CNN2, CNE2 |
+> | Switzerland | NCH, WCH |
+> | SouthAfrica | NZA, WZA |
+> | AsiaSouth| EAS, SEAS |
+> | India | CIN, SIN |
 
 If you have any questions about these prerequisites, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
@@ -143,7 +160,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
     1. Dynamics 365 Inventory Visibility – Plugins
     1. Dynamics 365 Inventory Visibility – Application
     1. Dynamics 365 Inventory Visibility – Controls
-    1. Dynamics 365 Inventory Visibility – Base 
+    1. Dynamics 365 Inventory Visibility – Base
 
     After you delete these solutions, the data that is stored in tables will also be deleted.
 
