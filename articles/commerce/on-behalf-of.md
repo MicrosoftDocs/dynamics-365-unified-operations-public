@@ -14,7 +14,7 @@ ms.author: mashneer
 ms.search.validFrom: 2023-02-28
 ---
 
-# Enable On Behalf Of capabilities for B2B e-commerce sites
+# Enable on behalf of capabilities for B2B e-commerce sites
 
 [!include [banner](includes/banner.md)]
 
@@ -32,7 +32,7 @@ To enable this feature, Azure Active Directory B2B application needs to be [crea
   
 ## Experience
   
-Account manager should sign-in into B2B e-Commerce site by clicking Sign-in, and then clicking a button “Employee Sign-in”:
+Account manager should sign-in into B2B e-Commerce site by clicking **Sign-in**, and then clicking a button **Employee sign-in**:
 
 :::image type="content" source="./media/obo-sign-in-experience.png" alt-text="Sign-in screen for business partner user has a button for Empoyee Sign-in":::
 
@@ -40,9 +40,9 @@ On the next screen, the account manager should select the business buyer organiz
 Once these selections are made, the account manager is now representing the buyer they have selected and has full access to their account information, pricing, catalog information and discounts. The account manager can now put the items in the cart and create an order, utilizing full e-Commerce experience. The completed orders will be easily distinguishable  from the regular orders since they will be prefixed with the account manager name. The account manager can create a template for the buyer to use later. It is recommended to create a distinctive name for the template that includes the account manager name and a purpose of the template. 
 
 > [!NOTE]
-> The following experiences differ in On-Behalf-of experience.
+> The following experiences differ in on behalf of experience.
 > 1.	The only form of payment that is provided is **On Account** payment method.  
 > 1.	An account manager has access to view the buyer’s invoices but is not able to pay invoices. 
-> 1.	An account manager can create a new Order Template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
-> 1.	[Catalog](catalogs-b2b-sites.md) feature is not supported in the first release of on behalf Of feature, and must be turned off to use this functionality. 
+> 1.	An account manager can create a new **order template** for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
+> 1.	[Catalog](catalogs-b2b-sites.md) feature is not supported in the first release of on behalf of feature, and must be turned off to use this functionality. 
 
