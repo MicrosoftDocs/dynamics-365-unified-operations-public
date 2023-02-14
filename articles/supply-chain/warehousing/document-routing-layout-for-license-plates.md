@@ -32,7 +32,7 @@ This article describes how to create layouts for license plate, container, and w
 
 Document routing label layouts define the way that labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
-The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](print-license-plate-labels-using-label-layouts.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
+The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](print-license-plate-labels-using-label-layouts.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md). <!-- KFM: and custom labels? [Custom label layouts and printing](custom-label-layouts-and-printing.md) -->
 
 You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 

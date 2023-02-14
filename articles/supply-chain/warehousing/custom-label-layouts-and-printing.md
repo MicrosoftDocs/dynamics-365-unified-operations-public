@@ -14,46 +14,52 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This feature introduces a new Custom label layout type that allows you to build layouts for any data sources. New Print button will be displayed automatically when layout exists for corresponding source. Users can print labels for any data including but not limited to Product labels, Location labels, Customer labels. 
+This article describes how to create and use *custom labels*, which let users print labels for any type of data that you set up for them, including (but not limited to) product labels, location labels, customer labels, and more, depending on your business requirements. When you have one or more custom label layouts defined, the system will automatically show a **Print** button on the relevant pages.
 
-This article describes how to create and use *Custom labels* for locations, but it can be used for any other data source depends on the business requirements. 
+<!-- KFM: What are the prerequisites? (Version number, feature management, none, other?) -->
 
-## Set up warehouse management parameters
+## Set your system to display print buttons for custom labels
 
-Follow these steps to set up warehouse parameters for custom label printing.
+Follow these steps to set your system to automatically show a **Print** button on pages dealing with data for which a custom label is available.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-1. On the **Reports** tab, on the **Custom labels** FastTab, set the **Display custom label print buttons** option to *On all forms*.
+1. Open the **Reports** tab.
+1. On the **Custom labels** FastTab, set the **Display custom label print buttons** option to *On all forms*.
 
-## Set up and use a custom label layout data source
+## Set up the data source for a custom label
 
-Follow these steps to define the data source that will be used for the label and then select it in your label layout.
+Follow these steps to define the data source to use for a custom label and then select it in your label layout.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
-1. On the Action Pane, select **New**.
-1. Set the following fields for the new label layout data source:
-
+1. Do one of the following steps:
+    - To create a new record, select **New** on the Action Pane to add a new row to the grid.
+    - To edit an existing record, select **Edit** on the Action Pane and then select the row for the label you want to edit.
+    - To remove a record, select it in the grid and then select **Delete** on the Action Pane.
+1. Make the following settings for your new or selected label:
     - **Label layout data source ID** – Enter a name for the data source (for example, *Locations*).
     - **Description** – Enter a short description of the data source (for example, *Locations*).
     - **Label layout type** – Select *Custom label*.
-    - **Custom label root table** – Select the table that will be used as main data source (for example, *WMSLocation* to print labels for locations, *InventTable* - for products, *CustTable* - for customers). 
+    - **Custom label root table** – Select the table that will be used as the main data source for the label (for example, *WMSLocation* to print labels for locations, *InventTable* for products, or *CustTable* for customers).
+1. On the Action Pane, select **Save**. <!-- KFM: Should we also mention setting up joins here? Other similar topics do this. -->
 
-## Create a custom label layout
+## Create and manage custom label layouts
 
-Follow these steps to create a label layout for the locations.
+Follow these steps to create a custom label layout that uses data from a label layout data source that you have set up.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *Custom Label*.
-1. On the Action Pane, select **New** to create a label.
-1. Set the following fields for the new label:
-
+1. Do one of the following steps:
+    - To create a new record, select **New** on the Action Pane.
+    - To edit an existing record, select **Edit** on the Action Pane and then select the record you want to edit on the list pane.
+    - To remove a record, select it on the list pane and then select **Delete** on the Action Pane.
+1. In the header of your new or selected record, make the following settings:
     - **Label layout ID** – Enter a name for the layout (for example, *Locations*).
     - **Description** – Enter a short description of the layout (for example, *Locations*).
-    - **Label layout data source ID** – Select the data source for the custom label (for example, *Locations*). 
-    - **Enable label template support** – Leave this option set to *No* for now. 
+    - **Label layout data source ID** – Select the data source for the custom label (for example, *Locations*).
+    - **Enable label template support** – Set to *No* if you're creating a simple label layout. Set to *Yes* to create more advanced layouts that include `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements; for more information about how to use these elements, see [Enable label template support](print-license-plate-labels-using-label-layouts.md#label-template).
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
 
-1. On the **Printer text Layout** FastTab, paste the following example of a ZPL location label (or enter your own code).
+1. On the **Printer text Layout** FastTab, enter your label content code. Here's an example of code for printing a location label, which you could copy and paste for testing:
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -73,7 +79,7 @@ Follow these steps to create a label layout for the locations.
 
 1. On the Action Pane, select **Save**.
 
-## Print custom label
+## Print a custom label
 
 Follow these steps to print the label from the data source defined on the layout.
 
@@ -84,6 +90,6 @@ Follow these steps to print the label from the data source defined on the layout
 
     - **Label layout ID** – Select a name for the layout (for example, *Locations*).
     - **Printer name** – Select the printer that will be used for label printing .
-1. Seelct **OK**.
+1. Select **OK**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
