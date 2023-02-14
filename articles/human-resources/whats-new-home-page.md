@@ -11,12 +11,13 @@ ms.topic: whats-new
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
 ms.reviewer: kfend
+ms.author: edupont
+# The following are FnO specific properties and not needed anywhere else. Also, if this docset does not specify other required metadata in the docfx.json, then make sure it's added here. 
+audience: Developer, IT Pro
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: edupont
 ms.search.validFrom: 2023-02-14
 ms.dyn365.ops.version: 10.0.32
 
@@ -25,7 +26,7 @@ ms.dyn365.ops.version: 10.0.32
 
 [!include [banner](../includes/banner.md)]
 
-This article provides access to information about the most recent releases for Dynamics 365 Human Resources (shared infrastructure). Get an overview of what's coming in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
+This article provides access to information about the most recent releases for Dynamics 365 Human Resources (shared infrastructure). Get an overview of what's coming in the [Dynamics 365 release plans](/dynamics365/release-plans/).  <!-- standard phrasing, apart from app name -->
 
 ## Releases of Dynamics 365 Human Resources
 
@@ -39,6 +40,6 @@ To see what's new or changed in recent releases for Dynamics 365 Human Resources
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice)-->
 <!--If this app has an article with instruction for admins to apply an update, then link to that immediately after the table, for example: Learn more about how to get an update at [Process for moving to the latest update](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md).-->
 
-For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  
+For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  <!--required section-->
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
