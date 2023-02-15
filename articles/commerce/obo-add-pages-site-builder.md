@@ -53,7 +53,7 @@ Follow these steps to include **Employee sign-in** button.
  3. Optional: change a lable **Employee sign-in** as needed. 
  4. Click **Save** and publish the page.
 
-:::image type="content" source="./media/obo-site-builder-sign-in-button.png" alt-text=include a Render B2B Account Sign-in button":::
+:::image type="content" source="media/obo-site-builder-sign-in-button.png" alt-text="include a Render B2B Account Sign-in button":::
 
 ## Step 4: (Optional) Modify word “For” in the header. 
 For **on behalf of** scenario, a header should contain the names of the account manager and the buyer that is being represented. By default, the word **For** is being used, for example, “Alexander For Cameron Hartnett”. However, if needed, a word **For** can be [modified](e-commerce-extensibility/change-module-library-strings.md) as needed using header.definition.json file. 
