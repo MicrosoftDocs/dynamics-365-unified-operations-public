@@ -38,7 +38,6 @@ For more information, see Filter the data on a report.
 
 | Field | Description |
 |---------|-----------------------| 
-
 |Start date	|Enter a date in the first period interval or aging period to include on the report.|
 |Balance as of|	Enter the date to view the vendor balances for.|
 |Criteria	| <p>Select the type of date to base the report on.</p><ul><li>**Transaction date** – The posting date of the transactions. For example, an invoice date that is the basis for the calculation of the due date.</li><li>**Due date** – The due date of the transactions, based on the terms of payment.</li><li>**Document date** – A user-defined document date that is the basis for the calculation of the due date.</li></ul><p>|
