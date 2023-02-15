@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create layouts for license plate, container, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
+This article describes how to create layouts for license plate, container, custom, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
 
 Document routing label layouts define the way that labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
@@ -54,7 +54,7 @@ As part of the label printing process, the text `$LicensePlateId$` in this examp
 
 To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
 
-## Turn on this feature for your system
+## Turn this feature on or off
 
 If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
@@ -144,6 +144,7 @@ For more information about how to set up and print labels, see the following art
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
 - [Container label layouts and printing](print-container-labels.md)
+- [Custom label layouts and printing](custom-label-layouts-and-printing.md)
 - [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

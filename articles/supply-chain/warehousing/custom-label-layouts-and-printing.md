@@ -58,7 +58,7 @@ Follow these steps to create a custom label layout that uses data from a label l
     - **Label layout ID** – Enter a name for the layout (for example, *Locations*).
     - **Description** – Enter a short description of the layout (for example, *Locations*).
     - **Label layout data source ID** – Select the data source for the custom label (for example, *Locations*).
-    - **Enable label template support** – Set to *No* if you're creating a simple label layout. Set to *Yes* to create more advanced layouts that include `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements; for more information about how to use these elements, see [Enable label template support](print-license-plate-labels-using-label-layouts.md#label-template).
+    - **Enable label template support** – Set to *No* if you're creating a simple label layout. Set to *Yes* to create more advanced layouts that include `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements; for more information about how to use these elements, see [Enable label template support](print-license-plate-labels-using-label-layouts.md#label-template). <!-- KFM: Confirm. -->
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
 
 1. On the **Printer text Layout** FastTab, enter your label content code. Here's an example of code for printing a location label, which you could copy and paste for testing:
@@ -98,6 +98,6 @@ Follow these steps to print a custom label.
 
 ## Additional resources
 
-- [Document routing label layouts](document-routing-layout-for-license-plates.md)
+- [Document routing label layouts](document-routing-layout-for-license-plates.md) <!-- KFM: I assume this applies? -->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
