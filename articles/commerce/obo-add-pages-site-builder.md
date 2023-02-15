@@ -50,7 +50,8 @@ Follow the same steps as for the business partner organization page using the sa
 Follow these steps to include **Employee sign-in** button. 
  1. Edit the **B2B sign-in page**. 
  2. Check **Render B2B Account Sign-in button** in the **Sign in 1** container in the main slot.
- 3. Click **Save** and publish the page.
+ 3. Optional: change a lable **Employee sign-in** as desired. 
+ 4. Click **Save** and publish the page.
 
 :::image type="content" source="./media/obo-site-builder-sign-in-button.png" alt-text=include a Render B2B Account Sign-in button":::
 
