@@ -28,14 +28,14 @@ ms.dyn365.ops.version: 10.0.32
 
 <!-- Introduction is standard phrasing, apart from app name and concrete links -->
 
-Wondering about upcoming and recently released capabilities in Dynamics 365 Human Resources? [Check out the latest version of the release plan](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, which you can use for planning.  
+Wondering about upcoming and recently released capabilities in Dynamics 365 Human Resources? [Check out the release planner site](https://experience.dynamics.com/releaseplans/?app=Human+Resources). We've captured all the details, end to end, top to bottom, which you can use for planning.  
 
 The release plans provide an overview of new and upcoming functionality. Here in the documentation, we provide articles that can help you learn about new and existing features in Dynamics 365 Human Resources.
 
 The following list provides information about the latest versions of Human Resources.
 
-[2022 release wave 2](/dynamics365-release-plan/2022wave2/human-resources/dynamics365-human-resources/planned-features)
-[2022 release wave 1](/dynamics365-release-plan/2022wave1/human-resources/dynamics365-human-resources/planned-features)
+- [2022 release wave 2](/dynamics365-release-plan/2022wave2/human-resources/dynamics365-human-resources/planned-features)  
+- [2022 release wave 1](/dynamics365-release-plan/2022wave1/human-resources/dynamics365-human-resources/planned-features)  
 
 Keep track of changes on the [Dynamics 365 Human Resources release planner](https://experience.dynamics.com/releaseplans/?app=Human+Resources) site, or download the release plan as a single PDF.  
 
