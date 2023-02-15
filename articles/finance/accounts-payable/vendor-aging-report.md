@@ -35,8 +35,8 @@ The Vendor aging report displays the balances that are due to vendors, sorted by
 When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
 For more information, see Filter the data on a report.
 
-| Field              | Description  |
-|--------------------|----------------|
+| Field | Description |
+|---|---| 
 |**Start date**	|Enter a date in the first period interval or aging period to include on the report.|
 |**Balance as of**|	Enter the date to view the vendor balances for.|
 |**Criteria**	| <p>Select the type of date to base the report on.</p><ul><li>
