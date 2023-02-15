@@ -14,11 +14,13 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.33 GA ? -->
+<!-- KFM: Preview until 10.0.33 GA -->
 
 This article describes how to create and use *custom labels*, which let users print labels for any type of data that you set up for them, including (but not limited to) product labels, location labels, customer labels, and more, depending on your business requirements. When you have one or more custom label layouts defined, the system will automatically show a **Print** button on the relevant pages.
 
-<!-- KFM: What are the prerequisites? (Version number, feature management, none, other?) -->
+## Prerequisites
+
+To use custom label layouts, you must be running Supply Chain Management 10.0.33 or newer. No feature management is necessary to enable the feature.
 
 ## Set your system to display print buttons for custom labels
 
@@ -42,7 +44,11 @@ Follow these steps to define the data source to use for a custom label and then 
     - **Description** – Enter a short description of the data source (for example, *Locations*).
     - **Label layout type** – Select *Custom label*.
     - **Custom label root table** – Select the table that will be used as the main data source for the label (for example, *WMSLocation* to print labels for locations, *InventTable* for products, or *CustTable* for customers).
-1. On the Action Pane, select **Save**. <!-- KFM: Should we also mention setting up joins here? Other similar topics do this. -->
+1. If you'd like your custom label to include information from related tables, then set up the required joins. To set up a join, follow these steps:
+    1. On  the Action Pane, select **Edit query**.
+    1. A standard query editor dialog box appears. Open the **Joins** tab and add the required joins to the required tables.
+    1. Select **OK** to apply your settings and close the dialog.
+1. On the Action Pane, select **Save**.
 
 ## Create and manage custom label layouts
 
@@ -58,7 +64,7 @@ Follow these steps to create a custom label layout that uses data from a label l
     - **Label layout ID** – Enter a name for the layout (for example, *Locations*).
     - **Description** – Enter a short description of the layout (for example, *Locations*).
     - **Label layout data source ID** – Select the data source for the custom label (for example, *Locations*).
-    - **Enable label template support** – Set to *No* if you're creating a simple label layout. Set to *Yes* to create more advanced layouts that include `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements; for more information about how to use these elements, see [Enable label template support](print-license-plate-labels-using-label-layouts.md#label-template). <!-- KFM: Confirm. -->
+    - **Enable label template support** – Set to *No* if you're creating a simple label layout. Set to *Yes* to create more advanced layouts that include `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements; for more information about how to use these elements, see [Enable label template support](print-license-plate-labels-using-label-layouts.md#label-template).
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
 
 1. On the **Printer text Layout** FastTab, enter your label content code. Here's an example of code for printing a location label, which you could copy and paste for testing:
@@ -89,7 +95,7 @@ Follow these steps to print a custom label.
     - To print a location label (which uses the *WMSLocation* table), go to **Warehouse management \> Setup \> Warehouse \> Locations**.
     - To print a product label (which uses the *InventTable* table), go to **Product information management \> Products \> Released products**.
     - To print a customer label (which uses the *CustTable* table), go to **Sales and marketing \> Customers \> All customers**.
-1. Select the record you want to print a label for. <!-- KFM: I assume this is needed? Can I select multiple records? -->
+1. Select one or more records you want to print a label for.
 1. On the Action pane, open the **Options** tab. Then, in the **Custom labels** group, select the print option for the type of label you are printing (for example, **Print locations**).
 1. The **Print custom labels** dialog opens. Make the following settings:
     - **Label layout ID** – Select the layout you want to use (for example, *Locations*).
@@ -98,6 +104,6 @@ Follow these steps to print a custom label.
 
 ## Additional resources
 
-- [Document routing label layouts](document-routing-layout-for-license-plates.md) <!-- KFM: I assume this applies? -->
+- [Document routing label layouts](document-routing-layout-for-license-plates.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
