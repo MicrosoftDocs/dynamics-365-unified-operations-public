@@ -33,23 +33,36 @@ Before you install the Inventory Visibility, you must complete the following tas
 
 The following table lists the countries/regions where Inventory Visibility is currently supported.
 
-| Geography   | Region (short name) |
-|  ----  | ----  |
-| Canada | CCA, ECA |
-| United States | WUS, EUS |
-| the United Kingdom | SUK, WUK |
-| Europe | NEU, WEU |
-| Australia | EAU, SEAU |
-| Japan | EJP, WJP |
-| Brazil | SBR |
-| United Arab Emirates | NAE |
-| France | CFR, SFR |
-| Norway | ENO, WNO |
-| China | CNN2, CNE2 |
-| Switzerland | NCH, WCH |
-| SouthAfrica | NZA, WZA |
-| AsiaSouth| EAS, SEAS |
-| India | CIN, SIN |
+| Azure region | Region short name |
+|---|---|
+| Asia East | eas |
+| Asia Southeast | seas |
+| Australia East | eau |
+| Australia Southeast | seau |
+| Brazil South | sbr |
+| Canada Central | cca |
+| Canada East | eca |
+| China East 2 | cne2 |
+| China North 2 | cnn2 |
+| Europe North | neu |
+| Europe West | weu |
+| France Central | cfr |
+| France South | sfr |
+| India Central | cin |
+| India South | sin |
+| Japan East | ejp |
+| Japan West | wjp |
+| Norway East | eno |
+| Norway West | wno |
+| South Africa West | wza |
+| South Africa North | nza |
+| Switzerland North | nch |
+| Switzerland West | wch |
+| UAE North | nae |
+| UK South | suk |
+| UK West | wuk |
+| US East | eus |
+| US West | wus |
 
 If you have any questions about these prerequisites, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
