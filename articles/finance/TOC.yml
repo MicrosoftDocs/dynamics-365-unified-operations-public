@@ -396,6 +396,8 @@
         href: accounts-receivable/sepa-direct-debit-mandate.md
       - name: Credit card setup, authorization, and capture
         href: accounts-receivable/credit-card-authorizations.md
+      - name: Process incomplete credit card payments  
+        href: accounts-receivable/credit-card-refactor.md
       - name: Create a free text invoice
         href: accounts-receivable/create-free-text-invoice-new.md
       - name: Accounting distributions and subledger journal entries for free text invoices
