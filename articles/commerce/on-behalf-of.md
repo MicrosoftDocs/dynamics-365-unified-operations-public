@@ -29,7 +29,7 @@ Retailer representatives (typically, account managers) can sign in to the B2B e-
 
 ## Prerequisites
 To enable this feature, Azure Active Directory B2B application needs to be [created](obo-create-aad-application.md). In addition, a B2B sign-in page in **site builder** needs to be [configured](obo-add-pages-site-builder.md). Finally, Dynamics 365 environment should be [configured](obo-configure-hq.md) accordingly. 
-  
+
 ## Experience
   
 Account manager should sign-in into B2B e-Commerce site by clicking **Sign-in**, and then clicking a button **Employee sign-in**:
