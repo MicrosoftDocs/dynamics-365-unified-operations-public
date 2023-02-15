@@ -106,12 +106,7 @@ In the label layout in the preceding example, only the container ID (`$WHSContai
 
 #### Enable label template support
 
-Label templates let you design labels with more advanced layouts, which can include header, row, and footer elements.
-
-> [!TIP]
-> If you need to create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md). <!-- KFM: That topic doesn't describe any tools, but does describe how to code labels. Nor does it seem to be specific for label templates. I think this link should either be removed, or moved to another part of this document and described differently. -->
-
-Follow these steps to format a label by using label template features.
+Label templates let you design labels with more advanced layouts, which can include header, row, and footer elements. Follow these steps to format a label that includes label template elements.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *Container Label*.
@@ -298,5 +293,7 @@ Here are a few suggestions for ways that you can customize and fine-tune this sc
 ## Additional resources
 
 - [Pack containers for shipment](packing-containers.md)
+- [Document routing label layouts](document-routing-layout-for-license-plates.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
