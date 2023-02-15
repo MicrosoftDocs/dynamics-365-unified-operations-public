@@ -37,20 +37,21 @@ For more information, see Filter the data on a report.
 
 | Field              | Description  |
 |--------------------|----------------|
+
 |**Start date**	|Enter a date in the first period interval or aging period to include on the report.|
 |**Balance as of**|	Enter the date to view the vendor balances for.|
-|**Criteria**	|Select the type of date to base the report on.
-**Transaction date** – The posting date of the transactions. For example, an invoice date that is the basis for the calculation of the due date.
-**Due date** – The due date of the transactions, based on the terms of payment.
-**Document date** – A user-defined document date that is the basis for the calculation of the due date.|
+|**Criteria**	|<ul><li>Select the type of date to base the report on.</li><li>
+**Transaction date** – The posting date of the transactions. For example, an invoice date that is the basis for the calculation of the due date.</li><li>
+**Due date** – The due date of the transactions, based on the terms of payment.</li><li>
+**Document date** – A user-defined document date that is the basis for the calculation of the due date.</li></ul>|
 |**Aging period definition**	|Select an aging period definition. The **Interval** field isn't used if an aging period definition is selected.|
 Aging period definitions that have more than six aging periods (columns) can't be used on the printed report.
->[!Note]
->You can set up aging periods in the **Aging period definitions** page.|
+<ul><li>>[!Note]
+>You can set up aging periods in the **Aging period definitions** page.</li></ul>|
 |**Print aging period description**|	Select **Yes** to include aging period descriptions at the top of each aging period column on the report. Select **No** to print the report without column headers.|
 |**Interval**|Define the period to use by entering the number of the day or month units in each period. For example, enter 15 and select **Day** in the **Day/Mth** field to show aging information at intervals of 15 days on the report. To show aging information by month, enter 1 in this field and select **Month** in the **Day/Mth** field.
->[!Note]
->The information that you enter in this field is used only if an aging period definition is not selected.|
+<ul><li>>[!Note]
+>The information that you enter in this field is used only if an aging period definition isn't selected.</li></ul>|
 
 |**Day/Mth**|	Select the unit, either **Day** or **Month**, that is used to define the period in the **Interval** field.|
 |**Printing direction**|	Select how to calculate balances and print the aging report for past or future periods, relative to the date that is selected in the **Balance as on** field. Select **Backward** to display information for past periods. Select **Forward** to display information for future periods.|
