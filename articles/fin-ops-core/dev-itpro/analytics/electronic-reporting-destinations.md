@@ -158,7 +158,7 @@ To make the PDF conversion option available in the current Finance instance, ope
 [![Turning on the PDF conversion of outbound documents feature in Feature management.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 > [!NOTE]
-> In versions of Finance before 10.0.21, conversion to PDF had to be explicitly enabled. However, starting in version 10.0.21, the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature was automatically enabled. Then, starting in version 10.0.29, the feature became mandatory. In Finance version 10.0.32, the feature has been eliminated. In other words, conversion to PDF is enabled out of the box.
+> In versions of Finance before 10.0.21, conversion to PDF had to be explicitly enabled. However, starting in version 10.0.21, the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature was automatically enabled. Starting in version 10.0.29, the feature became mandatory. In Finance version 10.0.32, the feature has been eliminated and conversion to PDF is enabled out-of-the-box.
 
 ### Applicability
 
@@ -220,13 +220,13 @@ If an ER configuration in Word format is converted to PDF format, the page orien
 
 ### Use PDF conversion component in formats
 
-As of Finance **version 10.0.33**, there is the possibility to use PDF conversion directly in format configurations. In this case you do not need to use the [**Convert to PDF**](#ConvertToPDF) check box in Electronic Reporting destinations.
-A new format component **PDF Converter** has been added. 
+In Finance version **10.0.33**, you can use PDF conversion directly in format configurations. In this case, you don't need to use the [**Convert to PDF**](#ConvertToPDF) check box in Electronic Reporting destinations.
+A new format component, **PDF Converter** has been added. 
 
 [![PDF Converter component in formats](./media/ERformatPDFconverter.jpg)](./media/ERformatPDFconverter.jpg)
 
 > [!NOTE]
-> **PDF Converter** component can be added only in the format configurations of **PDF** format type or when format type was not explicitly defined and left empty. **PDF Converter** component can contain only one **Excel\\File** sub-component.
+> The **PDF Converter** component can be added only in the format configurations of a **PDF** format type or when the format type isn't explicitly defined and is left empty. The **PDF Converter** component can contain only one **Excel\\File** sub-component.
 
 ## Output unfolding
 
