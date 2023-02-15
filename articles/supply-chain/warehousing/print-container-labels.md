@@ -55,7 +55,7 @@ Follow these steps to create a container label layout.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in a label layout are formatted.
 
-1. On the **Printer text Layout** FastTab, enter your label code. Here's an example of code you could copy and paste for testing:
+1. On the **Printer text Layout** FastTab, enter your label code. Here's an example of code that you can copy and paste for testing.
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -106,7 +106,7 @@ In the label layout in the preceding example, only the container ID (`$WHSContai
 
 #### Enable label template support
 
-Label templates let you design labels with more advanced layouts, which can include header, row, and footer elements. Follow these steps to format a label that includes label template elements.
+Label templates let you design labels that have more advanced layouts, which can include header, row, and footer elements. Follow these steps to format a label that includes label template elements.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *Container Label*.
