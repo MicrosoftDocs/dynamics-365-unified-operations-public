@@ -49,7 +49,7 @@ Asynchronous transfer of subledger batches requires that the batch server is set
 The efficiency change at the batch level uses a single recurring batch job for all legal entities in the system. At runtime, a new batch job is created to process the required records that haven't yet been transferred. More settings can be controlled from the **Process automation** page in system administration. On that page, you can modify the background process, change the frequency, and define a sleep period. 
 
 >[!NOTE]
->Review any scheduled batch jobs of **"Batch transfer for subledger journals"** that could conflict with this new process automation job. If you only use Asynchronous transfer for all document types, you'll no longer need this batch job running.  The use of scheduled batch for transfer to GL should only be required in special cases  when you wish to control a specific document type to transfer to the GL at a specific times. 
+>Review any scheduled batch jobs of **"Batch transfer for subledger journals"** that could conflict with this new process automation job. If you only use Asynchronous transfer for all document types, you'll no longer need this batch job running. The use of scheduled batch for transfer to General Ledger should only be required in special cases when you wish to control a specific document type that is transfered to the General Ledger at a specific times. 
 
 For more information about process automation setup, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
