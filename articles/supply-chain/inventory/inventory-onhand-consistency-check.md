@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.21
 
 FnO provides On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconsutruct InventSum table by analyzing InvetTrans table. By doing this, IV batch job will resync changes on the InventTrans table to Inventory service.
 While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 1. running On-hand Consistency Check on all items will usually take long time. 2. It will take longer time than the standard use case when Inventory Visibility batch is not enabled. 3. On-hand Consistency Check will involve API calls to Inventory Visbility to sync InventSum data if you have batch job enabled and you might experience check failure if the external calls encounter errors.  
-so it is recommended to disable the Inventory Visibility Integration batch job.
+As stated above, tt is recommended to disable the Inventory Visibility Integration batch job.
 
 ## There are two different cases, please will take different actions:
 
