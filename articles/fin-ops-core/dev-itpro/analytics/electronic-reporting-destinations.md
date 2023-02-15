@@ -189,7 +189,7 @@ Here are the advantages of local PDF conversion when the **Utilize application r
 - The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
 - Internet connectivity isn't required in on-premises deployments.
 
-### Use the PDF conversion option
+### <a name="ConvertToPDF"></a>Use the PDF conversion option
 
 To turn on PDF conversion for a file destination, select the **Convert to PDF** check box.
 
@@ -220,8 +220,8 @@ If an ER configuration in Word format is converted to PDF format, the page orien
 
 ### Use PDF conversion component in formats
 
-As of Finance **version 10.0.33**, there is the possibility to use PDF conversion directly in format configurations.
-A new format component **PDF Converter** has been added.
+As of Finance **version 10.0.33**, there is the possibility to use PDF conversion directly in format configurations. In this case you do not need to use the [**Convert to PDF**](#ConvertToPDF) check box in Electronic Reporting destinations.
+A new format component **PDF Converter** has been added. 
 
 [![PDF Converter component in formats](./media/ERformatPDFconverter.jpg)](./media/ERformatPDFconverter.jpg)
 
