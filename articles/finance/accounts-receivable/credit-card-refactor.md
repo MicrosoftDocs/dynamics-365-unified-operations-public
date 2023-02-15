@@ -27,55 +27,57 @@ ms.dyn365.ops.version:
 
 ---
 
-#  Credit card payment refactoring
+# Credit card payment refactoring
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article provides information about credit card payment refactoring.
 
-Cards payment is a typical payment scenario in retail industry. In Dynamics 365 Finance, although it looks like a single step, it is composed of several steps: 
-1. Create customer invoice for the Sales Order 
-2. Issue cards payment (such as debit card, credit card, gift card) 
-3. Post payment in general ledger 
+Card payment is a typical payment scenario in the retail industry. In Microsoft Dynamics 365 Finance, the scenario looks like a single step. However, it's really composed of several steps:
 
-In releases prior to Dynamics 365 Finance 10.0.32, all of the steps are done within one transaction. Cards payment are external transactions and when an error occurs, the transaction can't be rolled back and result in inconsistent payments. 
+1. Create a customer invoice for the sales order.
+2. Issue a card payment (such as debit card, credit card, or gift card).
+3. Post the payment in the general ledger.
 
- 
+In releases before Dynamics 365 Finance version 10.0.32, all these steps are done in one transaction. Card payments are external transactions that can't be rolled back in the event of errors. Therefore, any error that occurs can cause inconsistent payments.
 
-Beginning in version 10.0.32, the cards payment process is split into several stages: 
- - Create and post the customer invoice 
- - Credit card capture/refund 
- - Post the payment journal  
- - Remaining payment amount authorization  
- 
-The status of each stage is logged and monitored per invoice and sales order. In case of an error in any steps after the customer invoice is posted, users can check the failure reason and recover the payment process from the point it fails. 
+As of version 10.0.32, the card payment process is split into several stages:
 
-## Prerequisites  
+1. Create and post the customer invoice.
+2. Capture or refund the credit card.
+3. Post the payment journal.
+4. Authorize the remaining payment amount.
 
-1. In **Feature management** workspace, turn on feature **Improve cards payment processing flow in customer payment**.  
-2. Go to **Accounts receivable > Setup > Accounts receivable parameters**. 
-3. On the **Credit card** tab, on the **Setup** FastTtab, set the **Cards payment status monitoring** to **Yes**.  
+The status of each stage is logged and monitored per invoice and sales order. If an error occurs in any step after the customer invoice is posted, users can review the failure reason and recover the payment process from the point where it failed.
 
-## View incomplete cards payments  
+## Prerequisites
 
-1. Go to **Accounts receivable > Invoices > Open customer invoices**, select **Incomplete cards payment** on the **Invoice** tab.
-2. If the selected invoice is not related to the cards payment, the item can't be clicked. 
-3. If the selected invoice is related to the cards payment, the menu item can be clicked and will go to the **Incomplete cards payment** page.
-4. If no invoice is selected, the menu item can be clicked and the **Incomplete cards payment page** will open. All incomplete cards payments will be listed.  
+1. In **Feature management** workspace, turn on feature that's named **Improve cards payment processing flow in customer payment**.
+2. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+3. On the **Credit card** tab, on the **Setup** FastTab, set the **Cards payment status monitoring** option to **Yes**.
 
-  
+## View incomplete card payments
 
-## Resume incomplete cards payment
-1. Go to **Incomplete cards payment**, select or highlight a line, click **Resume**. 
-2. The cards payment process will restart from the last failed stage.  
+1. Go to **Accounts receivable \> Invoices \> Open customer invoices**.
+2. On the **Invoice** tab, select **Incomplete cards payment** to open the **Incomplete cards payment** page.
 
-## Terminate the incomplete cards payment 
-1. Go to **Incomplete cards payment**, select or highlight a line, click **Terminate**. 
-2. The cards payment process will be manually terminated. 
+    The **Incomplete cards payment** button is available only if the selected invoice is related to the card payment, or if no invoice was selected. If the selected invoice isn't related to the card payment, the button can't be selected.
 
+    If no invoice was selected, the **Incomplete cards payment** page shows all incomplete cards payments.
 
-The user will need to manually follow these steps:   
-1. Go to **Incomplete cards payment**, select or highlight a line, click **View history**. 
-2. Side bar viewer will pop up and lists all of the processed payment stages. 
-3. Click **Payment stage** and corresponding execution log will display.  
+## Resume an incomplete card payment
+
+- On the **Incomplete cards payment** page, select a line, and then select **Resume**. The card payment process is restarted from the last failed stage.
+
+## Terminate an incomplete card payment
+
+- On the **Incomplete cards payment** page, select a line, and then select **Terminate**. The card payment process is terminated.
+
+You must then follow these steps.
+
+1. On the **Incomplete cards payment** page, select a line, and then select **View history**.
+
+    The viewer that appears lists all the processed payment stages.
+
+2. Select **Payment stage** to show the corresponding execution log.
