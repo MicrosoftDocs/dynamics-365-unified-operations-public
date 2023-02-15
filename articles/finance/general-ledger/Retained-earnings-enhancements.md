@@ -54,4 +54,4 @@ If the enhancement is turned on, the retained earnings in the reporting currency
 | Summed exchange rate in the reporting currency on 12/31/XXXX when the enhancement is turned on (d). | EUR      | 110.00 | 167.50 | 257.50 | 288.75 |
 
 
-### Setup for Retained Earnings[https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-reporting-currency-capability#setup-for-retained-earnings]
+For more information, see [Setup for Retained earnings](/general-ledger/financial-reporting-currency-capability.md#setup-for-retained-earnings).
