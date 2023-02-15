@@ -21,7 +21,7 @@ FnO provides On-hand Consistency Check tool, which allows you to check/fix On-ha
 While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 1. running On-hand Consistency Check on all items will usually take long time. 2. It will take longer time than the standard use case when Inventory Visibility batch is not enabled. 3. On-hand Consistency Check will involve API calls to Inventory Visbility to sync InventSum data if you have batch job enabled and you might experience check failure if the external calls encounter errors.  
 so it is recommended to disable the Inventory Visibility Integration batch job.
 
-## There are two different cases, will take different actions:
+## There are two different cases, please will take different actions:
 
 ### Case 1: You want to initiate On-hand Consistency Check on all items when IV batch job is enabled
 
