@@ -36,7 +36,7 @@ To setup identity provider to be used by **Retail server**  follow these steps: 
     1. **Name:** blank
 
 ## Create and Configure Sales Groups: 
-Create a [sales group](tasks/workers.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For on behalf of functionality to work it is sufficient for a sale representative to be present in a sales group, a commission percentage can be equal to zero. 
+Create a [sales group](tasks/worker.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For on behalf of functionality to work it is sufficient for a sale representative to be present in a sales group, a commission percentage can be equal to zero. 
 
 ## Associate Sales Group with B2B buyer organization:
 Under **Sales and Marketing** -> **Customers** -> **all customers** locate  a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group id in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you will be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.  
@@ -49,4 +49,4 @@ Under **Sales and Marketing** -> **Customers** -> **all customers** locate  a cu
 
 [Configure a worker](tasks/worker.md)
 
-[Enter worker information](./human-resources/hr-personnel-enter-worker-information.md)
+[Enter worker information](../human-resources/hr-personnel-enter-worker-information.md)
