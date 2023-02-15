@@ -1,12 +1,12 @@
 ---
 title: Custom label layouts and printing
-description: This article describes how to set up and print custom labels using label layouts.
+description: This article describes how to set up and print custom labels.
 author: GalynaFedorova
 ms.author: gfedorova
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ms.topic: how-to
-ms.date: 02/12/2023
+ms.date: 03/03/2023
 ms.custom: bap-template
 ---
 
@@ -16,7 +16,7 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.33 GA -->
 
-This article describes how to create and use *custom labels*, which let users print labels for any type of data that you set up for them, including (but not limited to) product labels, location labels, customer labels, and more, depending on your business requirements. When you have one or more custom label layouts defined, the system will automatically show a **Print** button on the relevant pages.
+This article describes how to create and use *custom labels*, which let users print labels for any type of data that you set up for them, including (but not limited to) product labels, location labels, customer labels, and more. When one or more custom label layouts are defined, the system will automatically show a **Print** button on the relevant pages.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ Follow these steps to print a custom label.
     - To print a product label (which uses the *InventTable* table), go to **Product information management \> Products \> Released products**.
     - To print a customer label (which uses the *CustTable* table), go to **Sales and marketing \> Customers \> All customers**.
 1. Select one or more records you want to print a label for.
-1. On the Action pane, open the **Options** tab. Then, in the **Custom labels** group, select the print option for the type of label you are printing (for example, **Print locations**).
+1. On the Action pane, open the **Options** tab. Then, in the **Custom labels** group, select the print option for the type of label you're printing (for example, **Print locations**).
 1. The **Print custom labels** dialog opens. Make the following settings:
     - **Label layout ID** – Select the layout you want to use (for example, *Locations*).
     - **Printer name** – Select the printer that you want to print from.
