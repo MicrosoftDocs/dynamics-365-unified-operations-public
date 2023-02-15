@@ -44,13 +44,13 @@ Please refer to the steps below for more details about each step. In addition, f
 :::image type="content" source="./media/obo-site-builder-page.png" alt-text="Add a business partner module when creating a new page for business partner organization Selection":::
 
 ## Step 2: Create a Business Partner selection page.
-Follow the same steps as for the business partner organization page using the same Business partner module. Forr the property of the container specify a different heading, for example "“Select a Business Partner".
+Follow the same steps as for the business partner organization page using the same Business partner module. For the property of the container specify a different heading, for example "“Select a Business Partner".
 
 ## Step 3: Modify B2B sign-in page to include "Employee sign-in" button.
 Follow these steps to include **Employee sign-in** button. 
  1. Edit the **B2B sign-in page**. 
  2. Check **Render B2B Account Sign-in button** in the **Sign in 1** container in the main slot.
- 3. Optional: change a lable **Employee sign-in** as needed. 
+ 3. Optional: Change the button label text from **Employee sign-in** as needed. 
  4. Click **Save** and publish the page.
 
 :::image type="content" source="media/obo-sign-in-experience.png" alt-text="include a Render B2B Account Sign-in button":::
