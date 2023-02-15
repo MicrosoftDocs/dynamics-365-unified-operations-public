@@ -37,8 +37,8 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 the following schedule:
 
 - **Preview of release:** January 2023
-- **General availability of release (self-update):** February 2023
-- **General availability of release (auto-update):** March 2023
+- **General availability of release (self-update):** March 2023
+- **General availability of release (auto-update):** April 2023
 
 ## Features included in this release
 
