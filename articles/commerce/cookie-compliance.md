@@ -1,6 +1,6 @@
 ---
 title: Cookie compliance
-description: This article describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
+description: This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/03/2023
 ms.topic: article
@@ -20,7 +20,7 @@ ms.assetid:
 
 [!include [banner](includes/banner.md)]
 
-This article describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
+This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 
 Privacy is an important factor when tracking technologies that affect e-Commerce customers. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
 
@@ -32,10 +32,10 @@ The following table shows the current reference list of cookies placed by Dynami
 | ------------------------------------------- | ------------------------------------------------------------ |  ------- |
 | .AspNet.Cookies                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
 | \_msdyn365___cart_                           | Store cart ID used to obtain list of products added to cart instance. | Session |
-| \_msdyn365___checkout_cart_                           | Store checkout cart ID used to obtain list of products added to checkout cart instance. | Session |
-| \_msdyn365___ucc_                            | Cookie compliance consent tracking.                          | 1 year |
+| \_msdyn365___checkout_cart_                           | Store checkout cart ID used to obtain list of products added to the checkout cart instance. | Session |
+| \_msdyn365___ucc_                            | Cookie compliance consent tracking.                          | One year |
 | ai_session                                  | Detects how many sessions of user activity have included certain pages and features of the app. | 30 minutes |
-| ai_user                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. | 1 year |
+| ai_user                                     | Detects how many people used the app and its features. Users are counted using anonymous IDs. | One year |
 | b2cru                                       | Stores redirect URL dynamically.                              | Session |
 | JSESSIONID                                  | Used by payment connector Adyen to store user session.       | Session |
 | OpenIdConnect.nonce.&#42;                       | Authentication                                               | 11 minutes |
@@ -46,14 +46,14 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. | Session |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        | Session |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. | Session |
-| \_msdyn365___muid_                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | 1 year |
-| \_msdyn365___exp_                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | 1 hour |
-| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | 1 hour |
-| \_msdyn365___tuid_                           | Used only if experimentation activated for an environment; generates a GUID to serve as a user identifier. Value will change if a user's sign-in status changes.      | 1 year |
-| \_msdyn365___aud_0                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
-| \_msdyn365___aud_1                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
-| \_msdyn365___aud_2                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
-| d365gi                                       | This cookie stores geographical location data when a third-party geolocation service is used.      | 1 day |
+| \_msdyn365___muid_                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | One year |
+| \_msdyn365___exp_                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | One hour |
+| d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | One hour |
+| \_msdyn365___tuid_                           | Used only if experimentation activated for an environment; generates a GUID to serve as a user identifier. Value will change if a user's sign-in status changes.      | One year |
+| \_msdyn365___aud_0                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
+| \_msdyn365___aud_1                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
+| \_msdyn365___aud_2                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
+| d365gi                                       | This cookie stores geographical location data when a third-party geolocation service is used.      | One day |
 | \_msdyn365___can_                            | This cookie stores customer account number when on behalf of business-to-business (B2B) functionality is being used.      | Session |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
