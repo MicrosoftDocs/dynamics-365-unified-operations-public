@@ -1,35 +1,37 @@
 ---
 # required metadata
 
-title: Create pages in site builder for on behalf of
-description: This article describes how to create pages in site builder for on behalf of functionality.
+title: Create pages for on behalf of functionality in site builder
+description: This article describes how to create pages in for on behalf of functionality in Microsoft Dynamics 365 Commerce site builder.
 author:  mariash529
-ms.date: 02/27/2023
+ms.date: 03/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Create pages in site builder for on behalf of
+# Create pages for on behalf of functionality in site builder
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to create pages in **site builder** to allow account managers to sign in to the B2B e-commerce website and perform operations on behalf of B2B buyers.
+This article describes how to create pages in for on behalf of functionality in Microsoft Dynamics 365 Commerce site builder. These pages allow account managers to sign in to a business-to-business (B2B) e-commerce website and perform operations on behalf of B2B buyers.
 
 To enable on behalf of functionality in site builder, follow these steps. 
 
-1.	Create a new page for selecting a business partner organization.
-1.	Create a new page for selecting a business partner.
-1.	Modify B2B sign-in page to include a button for the account manager sign-in. 
-1.	Optional: Modify word “For” for the header. 
+1. Create a new page for selecting a business partner organization.
+1. Create a new page for selecting a business partner.
+1. Modify B2B sign-in page to include a button for the account manager sign-in. 
+1. Optional: Modify word "For" for the header. 
 
 Refer to the steps below for more details about each step. In addition, for the newly created sites, T-1 staging environment will contain the sample pages. 
 
-## Step 1: Create a business partner organization selection page.
+## Step 1: Create a business partner organization selection page
+
+To create a business partner organization selection page, follow these steps. 
 
 1. Follow the [instructions](add-new-page.md) to create a new page in site builder.
 1. Edit the page:
@@ -44,13 +46,14 @@ Refer to the steps below for more details about each step. In addition, for the 
 
 :::image type="content" source="./media/obo-site-builder-page.png" alt-text="Add a business partner module when creating a new page for business partner organization Selection":::
 
-## Step 2: Create a Business Partner selection page.
+## Step 2: Create a business partner selection page
 
-Follow the same steps as for the business partner organization page using the same Business partner module. For the property of the container, specify a different heading (for example, "Select a Business Partner").
+To create a business partner selection page, follow the same steps as for the business partner organization page using the same Business partner module. For the property of the container, specify a different heading (for example, "Select a Business Partner").
 
-## Step 3: Modify B2B sign-in page to include "Employee sign-in" button.
+## Step 3: Modify B2B sign-in page to include "Employee sign-in" button
 
-Follow these steps to include **Employee sign-in** button. 
+To modify a B2B sign-in page to include an employee sign-in button, follow these steps. 
+
  1. Edit the **B2B sign-in page**. 
  2. Check **Render B2B Account Sign-in button** in the **Sign in 1** container in the main slot.
  3. Optional: Change the button label text from **Employee sign-in** as needed. 
