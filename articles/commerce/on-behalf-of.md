@@ -20,8 +20,6 @@ ms.search.validFrom: 2023-02-28
 
 This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 
-This article describes a new capability of B2B account managers to sign in to the B2B e-commerce website and perform operations on behalf of B2B buyers.
-
 > [!NOTE]
 > On behalf of (OBO) functionality is available in Dynamics 365 Commerce version 10.0.33 and later.
 
@@ -32,7 +30,7 @@ On behalf of (OBO) functionality allows retailer representatives such account ma
 To enable the on behalf of feature, you must fulfill the following prerequisites.
 
 - You must create an Azure Active Directory (Azure AD) B2B application. For instructions, see [Create and configure an Azure Active Directory application for account manager sign-in](obo-create-aad-application.md)
--You must create and configure a B2B sign-in page in Commerce site builder. For instructions, see [Create pages in site builder for on behalf of functionality](obo-add-pages-site-builder.md). 
+- You must create and configure a B2B sign-in page in Commerce site builder. For instructions, see [Create pages in site builder for on behalf of functionality](obo-add-pages-site-builder.md). 
 - You must set up and configure on behalf of functionality for your environment in Commerce headquarters. For more information, see [Set up on behalf of functionality in Commerce headquarters](obo-configure-hq.md). 
 
 ## Sign in to a B2B site using on behalf of functionality
