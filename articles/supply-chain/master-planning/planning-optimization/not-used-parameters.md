@@ -99,10 +99,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
 - **General** FastTab:
 
   - **Override on hand** – Pending *Consumption of on-hand inventory* support.
-  - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
-  - **Include sales quotations** – Pending *Sales quotations* support.
-  - **Include request for quotations** – Pending *Request for quotations* support.
-  - **Use shelf life dates** – Pending *Shelf life* support.
   - **Include continuity plan** – Pending *Continuity scheduling* support.
   - **Scheduling method** – Pending *Scheduling* support.
   - **Finite property** – Pending *Scheduling* support.
@@ -150,15 +146,10 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 
   - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Default order settings page
 
-Planning Optimization doesn't use the following parameter option on the **Default order settings** page:
 
-- **Inventory** FastTab:
 
-  - **Delivery date control** – Planning Optimization doesn't support the *CTP* option, pending *CTP* support.
-  - **Inventory lead time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
-  - **Working days** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
+  
 
 
  
