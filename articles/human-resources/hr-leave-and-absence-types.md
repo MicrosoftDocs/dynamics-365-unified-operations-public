@@ -4,7 +4,7 @@
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/21/2023
+ms.date: 02/16/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -128,7 +128,48 @@ Employees will be required to upload an attachment when they submit a new leave 
 
 3. Optional: If you selected **Hours** in the **Unit** field, you can use the **Enable half day definition** field to specify whether employees can select the first half day or the second half day off if they are requesting a half-day leave.
 
-Employees who submit a new leave request can select different leave types to construct their leave request. However, all leave types that are selected as part of a single leave request should have the same leave unit. Employees can view the leave unit for each leave type in the **Request time off** form.
+Employees who submit a new leave request can select different leave types to construct their leave request. However, all leave types that are selected as part of a single leave request should have the same leave unit. Employees can view the leave unit for each leave type in the **Request time off** page.
+
+### Configure Hide leave balance
+
+>[!NOTE]
+>This feature is available in the preview of the 10.0.32 release. To use the **Hide leave balance** feature, the **Hide leave balances** feature must be enabled in Feature management. For more information about how to turn on features, see Manage features.
+
+Organizations might want to hide the leave balance from workers for certain leave types. Leave balances are shown by default and after enabling this option, the leave balances can be hidden. Other details like leave grant and accrual details are also hidden for a particular leave type.
+
+To enable Hide leave balance:
+1. Go to **Leave and absence**, on the **Links** tab, **Setup > Leave and absence types**.
+2. Select a leave and absence type in the list. In the **General** section, select **Hide leave balance**.
+
+Once this feature is enabled, the employees of the organization won't be able to see the leave balance for that particular leave type. They would see a dash/hyphen. However, HR admins, managers and absence managers will be able to see the leave balance of their employees. 
+
+>[!Important] 
+>When **Hide leave balance** is enabled, the value of the fields **BalanceAvailable** and **TotalThisYear** in the entity 'EssLeaveBalanceEntity' will be set to 0 for integrations and will be represented as ' - ' in the UI.
+
+### Inclusion of Weekends and Holidays
+Organizations can include or exclude weekends and holidays as part of a leave type. This will help organizations to differentiate if calendar days or working days have to be considered for a particular leave type. 
+
+>[!Note]
+>This feature is available in Microsoft Dynamics Human Resources version 10.0.32 release. To use the **Include weekends and holidays** feature, the **Configure leave units per leave type** and **Inclusion of weekends and holidays for leave and absence** features must be enabled in Feature management. 
+>For more information about how to turn on features, see Manage features. 
+
+
+Organizations might want to include weekends and holidays for certain leave types. The leave types have closed days excluded, which means the weekends and holidays are not included as part of the leave request amount calculation.
+
+To enable **Inclusion of weekends and holidays**:
+1. Go to **Leave and absence**, on the **Links** tab, **Setup > Leave and absence types**.
+2. Select a leave and absence type in the list. In the **General** section, select **Include weekends and holidays**.
+
+>[!Note]
+>If the leave type **Unit** is **Hours**, after the **Include weekends and holidays** feature is enabled, an additional field: **Standard closed day in hours** will be available to define the total number of hours that make a closed day. **Standard closed day** in hours should be more than 0 and should not exceed 24 hours.  
+
+Once this feature is enabled, when employees of an organization request for that particular leave type, all the closed days are also included for the amount calculation and the total amount of leave requested would be the total number of calendar days and not the actual working days. 
+
+For example: A worker of an organization is requesting a certain leave type between January 2, 2023 and January 10, 2023, the total leave requested would be nine calendar days. The same request when **Include weekends and holidays** is disabled, the total leave requested would be seven working days.
+
+>[!Note]
+>If the feature is enabled and leave requests are created that includes closed days, to cancel this request, the feature must be enabled. The closed days can't be cancelled if the feature is disabled. 
+
 
 ## See also
 
