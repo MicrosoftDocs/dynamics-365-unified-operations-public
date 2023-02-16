@@ -4,7 +4,7 @@
 title: Set up and configure on behalf of functionality
 description: This article describes how to set up and configure on behalf of functionality in Microsoft Dynamics 365 Commerce headquarters.
 author:  mariash529
-ms.date: 02/03/2023
+ms.date: 03/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
