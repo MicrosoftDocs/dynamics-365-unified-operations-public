@@ -24,13 +24,16 @@ This article describes how to set up and configure on behalf of functionality in
 
 To add identity providers in Commerce Shared parameters, follow these steps.
 
-To setup identity provider to be used by **Retail server**  follow these steps: Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters**. In **Identity Providers tab**, add an identity provider you [created](obo-create-aad-application.md) for AAD B2C application:
+To set up an identity provider in Commerce headquarters to be used by Retail server, follow these steps.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters**. 
+1. In **Identity Providers tab**, add an identity provider you [created](obo-create-aad-application.md) for the Azure Active Directory (Azure AD) business-to-consumer (B2C) application:
 1.	In Identity providers section add the following entry:
     1. **Issuer:** https://sts.windows.net/TENANTID
     1. **Issuer Type:** “Azure Active Directory”.
     1. **Issuer Name:** any name
-1. In Relying Party section add the following entry:
-    1. **ClientID:**  Client Id of AAD B2C application
+1. In the **Relying Party** section, add the following entry:
+    1. **ClientID:**  Client ID of Azure AD B2C application
     1. **Type:** Confidential
     1. **User Type:** Worker
 1.	In Server Resource IDS section add the following entry:
@@ -39,13 +42,13 @@ To setup identity provider to be used by **Retail server**  follow these steps: 
 
 ## Create and configure a sales group
 
-Create a [sales group](tasks/worker.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For on behalf of functionality to work it is sufficient for a sale representative to be present in a sales group, a commission percentage can be equal to zero. 
+Create a [sales group](tasks/worker.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For on behalf of functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
 
 ## Associate a sales group with a B2B buyer organization
 
 To associate a sales group with a B2B buyer organization, follow these steps.
 
-Under **Sales and Marketing \> Customers \> All customers** locate a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group id in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you will be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.  
+Under **Sales and Marketing \> Customers \> All customers** locate a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.  
 
 :::image type="content" source="./media/obo-customer-hierarchy.png" alt-text="Example of Contoso B2B customer hierarchy that has a sales group 998 listed":::
 
