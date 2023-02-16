@@ -26,9 +26,9 @@ ms.assetid:
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
-## DTS will end Dynamics AX 2012 Support by 3/31/2023
+## DTS will stop supporting Dynamics AX 2012 by March 31, 2023
 
-Mainstream and Extended support for Dynamics AX 2012 has ended. Dynamics 365 Translation Service (DTS) will be ending support for Dynamics AX 2012 R3 by March 31, 2023. 
+Mainstream and extended support for Dynamics AX 2012 has ended. DTS will end support for Dynamics AX 2012 R3 by March 31, 2023. 
 
 ## Visual Studio Code extension
 
