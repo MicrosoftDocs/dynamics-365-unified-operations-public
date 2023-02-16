@@ -31,8 +31,38 @@ Before you install the Inventory Visibility, you must complete the following tas
 - Obtain a Lifecycle Services implementation project where at least one environment is deployed.
 - Make sure that the prerequisites for setting up add-ins have been completed. For information about these prerequisites, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Inventory Visibility doesn't require dual-write linking.
 
-> [!NOTE]
-> The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP), and Brazil (SBR, SCUS).
+The following table lists the countries/regions where Inventory Visibility is currently supported.
+
+| Azure region | Region short name |
+|---|---|
+| Asia East | eas |
+| Asia Southeast | seas |
+| Australia East | eau |
+| Australia Southeast | seau |
+| Brazil South | sbr |
+| Canada Central | cca |
+| Canada East | eca |
+| China East 2 | cne2 |
+| China North 2 | cnn2 |
+| Europe North | neu |
+| Europe West | weu |
+| France Central | cfr |
+| France South | sfr |
+| India Central | cin |
+| India South | sin |
+| Japan East | ejp |
+| Japan West | wjp |
+| Norway East | eno |
+| Norway West | wno |
+| South Africa West | wza |
+| South Africa North | nza |
+| Switzerland North | nch |
+| Switzerland West | wch |
+| UAE North | nae |
+| UK South | suk |
+| UK West | wuk |
+| US East | eus |
+| US West | wus |
 
 If you have any questions about these prerequisites, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
@@ -143,7 +173,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
     1. Dynamics 365 Inventory Visibility – Plugins
     1. Dynamics 365 Inventory Visibility – Application
     1. Dynamics 365 Inventory Visibility – Controls
-    1. Dynamics 365 Inventory Visibility – Base 
+    1. Dynamics 365 Inventory Visibility – Base
 
     After you delete these solutions, the data that is stored in tables will also be deleted.
 
