@@ -32,22 +32,22 @@ Set up the vendor bank approval workflow feature by following these steps.
 
 1. Go to **Accounts payable \> Setup \> Accounts payable parameters**.
 1. On the **General** tab, expand the **Vendor bank account approval** FastTab and make the following settings.
-    - **Bank account approval (create)** – Set this option to *Yes* to require approval for all new bank account records (both when using web client and when importing through the data entity). Set this option to *No* to allow users to create or import new bank account records without requiring approval.
+    - **Bank account approval (create)** – Set this option to *Yes* to require approval for all new bank account records (both when using the web client and when importing through the data entity). Set this option to *No* to allow users to create or import new bank account records without requiring approval.
     - **Bank account approval (update)** – Set this option to *Yes* to require approval when a user updates existing bank account records using the web client (approval will only be required for fields where **IsEnabled** is selected in the grid on this FastTab). Set this option to *No* to allow users to update all fields on existing bank account records without requiring approval.
-    - **Data entity behavior (update)** – Select the behavior to use when updating a vendor bank account record by importing through the data entity. This setting doesn't affect changes you make using the web client. Choose one of the following options:
+    - **Data entity behavior (update)** – Select the behavior to use when updating an existing record by importing through the data entity. This setting doesn't affect updates you make using the web client. Choose one of the following options:
         - *Allow changes without approval* – The data entity will update values for all fields without processing the changes through the workflow.
-        - *Reject changes* – The data entity will never update values for workflow-enabled fields. The import will fail if it includes updates for workflow-enabled fields.
-        - *Create change proposals* – The data entity will update values for non-protected fields, and will add new values for workflow-enabled fields as proposed changes. The data entity starts the workflow automatically as needed.
-1. In the list of vendor bank account fields, select the **IsEnabled** checkbox for each field that should require approval (based on the **Bank account approval (create)**, **Bank account approval (update)**, and **Data entity behavior** settings).
+        - *Reject changes* – The data entity will never update values for protected fields. The import will fail if it includes updates for protected fields.
+        - *Create change proposals* – The data entity will update values for non-protected fields, and will add new values for protected fields as proposed changes. The data entity then starts the workflow automatically as needed.
+1. In the list of vendor bank account fields, select the **IsEnabled** checkbox for each field that should require approval.
 1. On the Action Pane, select **Save**.
 1. Go to **Accounts payable \> Setup \> Accounts payable workflows**.
 1. On the Action Pane, select **New**.
 1. The **Create workflow** dialog opens. Select **Workflow approval for proposed vendor change**.
-1. The workflow editor app launches on your machine. Use it to design your workflow as needed. For details about how to design your workflow, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+1. The workflow editor app launches on your machine. Use it to design your workflow as needed. For learn more about how to use the editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
 
 ## Add a new vendor bank account and submit it for approval
 
-To use the web client to add a new vendor bank account and submit it to the workflow for approval, follow these steps.
+To use the web client to add a new vendor bank account and submit it for approval, follow these steps.
 
 1. Go to **Accounts payable \> Vendors \> All vendors**.
 1. Select the vendor you want to set up a bank account for.
@@ -59,7 +59,7 @@ To use the web client to add a new vendor bank account and submit it to the work
 
 ## Update an existing vendor bank account record and submit it for approval
 
-To use the web client to edit an existing vendor bank account and submit it to the workflow for approval, follow these steps.
+To use the web client to edit an existing vendor bank account and submit it for approval, follow these steps.
 
 1. Go to **Accounts payable \> Vendors \> All vendors**.
 1. Select the vendor you want to update bank information for.
