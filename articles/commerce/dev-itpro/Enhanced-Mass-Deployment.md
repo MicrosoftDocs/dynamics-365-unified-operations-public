@@ -4,7 +4,7 @@
 title: Mass deployment of sealed Commerce self-service components
 description: This article explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 01/30/2022
+ms.date: 02/17/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -50,8 +50,8 @@ The following table shows the delimiters that can be used in the command line ex
 | --EnvironmentId | The environment ID. |
 | --HardwareStationAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
 | --InPlaceUpgradeFromModernPOS | Used to upgrade from Modern POS to Store Commerce. Unless other parameters are used, the default assumption is to capture the Modern POS device token and then uninstall Modern POS. |
-| Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and does not have a leading dash character. |
-| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required. |
+| Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and doesn't have a leading dash character. |
+| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Azure Active Directory (Azure AD) authentication, POS offline won't function, as online connectivity is always required. |
 | --Port | The port that should be associated with and used by the Retail Server virtual directory. If no port is set, the default port, 443, will be used. |
 | --Register | The register ID, as shown on the **Registers** page in Headquarters. |
 | --RetailServerAadClientId | The Azure AD client ID that Retail Server should use during communications with Headquarters. |
@@ -79,18 +79,18 @@ The following table shows the delimiters that can be used in the command line ex
 | --TransactionServiceAzureResource | The Transaction Service Azure AD resource. |
 | --TrustSqlServerCertificate | A switch that indicates whether the Server certificate should be trusted while a connection to SQL Server is being established. To help avoid security risks, production deployments should never supply a value of **true** here. The default value is **false**. |
 | --UseCommonApplicationData | A switch to alter the location of the device token. Instead of being in the user context, the token is stored in a shared location so that all Windows users can access the same token, allowing for the use of Store Commerce regardless of the active user. Users must still be in the **RetailChannelUsers** group. |
-| --Verbosity | The level of logging that is requested during installation. Typically, this value should not be used. |
+| --Verbosity | The level of logging that is requested during installation. Typically, this value shouldn't be used. |
 | --WindowsPhoneAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
 
 ## General overview
 
-The new framework for self-service installers has various features and improvements. The new framework currently generates installers only for Modern POS, hardware station, and CSU (self-hosted). It is important to understand the basic command line usage of the sealed installers, which should look similar to that used in the following example. 
+The new framework for self-service installers has various features and improvements. The new framework currently generates installers only for Modern POS, hardware station, and CSU (self-hosted). It's important to understand the basic command line usage of the sealed installers, which should look similar to that used in the following example. 
  
 ```Console
 <Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>"
 ```
 
-The installer does not automatically perform prerequisite installations that would require system changes. As such, it is important to follow installer instructions regarding missing or incorrect prerequisites.  For example, it is important to disable TLS 1.0 and TLS 1.1 keys in the registry.  Here's the keys involved:
+The installer doesn't automatically perform prerequisite installations that would require system changes. As such, it's important to follow installer instructions regarding missing or incorrect prerequisites. For example, it's important to disable the following TLS 1.0 and TLS 1.1 keys in the registry:
  - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client\Enabled = 0
  - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server\Enabled = 0
  - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client\Enabled = 0
@@ -98,7 +98,7 @@ The installer does not automatically perform prerequisite installations that wou
  - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
  - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
 
-If a configuration file will be used, it should be an **XML** file that uses keys titled with the parameter names above and values according to the parameter, where required. Use the following Store Commerce focused configuration file as an example to create the configuration file you need:
+If you use a configuration file, it should be an XML file that uses keys titled with the parameter names above and values according to the parameter, where required. Use the following Store Commerce-focused configuration file as an example to create the configuration file you need:
 ```Console
 <?xml version="1.0" encoding="UTF-8"?>
  <configuration>
@@ -118,22 +118,22 @@ The installer requires the parameter **install** (or **uninstall** to remove the
 
 The sealed framework has been created to allow for the following alterations:
 - **Sealed** – The new installer framework completely separates Microsoft-distributed base component installers from the extensibility-based customizations. The customizations will be installed afterward but will then be untethered in regard to updates (so that updates will be allowed only for the Microsoft base component, only for the customizations, or for both).
-- **GUI-less** – There is no longer a user interface (UI). Instead, there is an entirely command line–driven executable for each component installer. This change is one of several key changes or features that are used to focus the new installer framework for use with mass deployment.
+- **GUI-less** – There's no longer a user interface (UI). Instead, there is a command line–driven executable for each component installer. This change is one of several key changes or features that are used to focus the new installer framework for use with mass deployment.
 - **Deeper logging** – Enhanced installer logs allow for better validation of installation completion or failure, the steps that were performed, and any warnings or errors that were generated.
 - **Clean-up** – In the new framework, the component installers work harder to maintain the cleanliness of installation directories, by clearing the full contents of the component folder before they install the newer components. This clean-up ensures that there are no leftover files that could cause issues and prevent successful installation.
 
 Three components haven't been migrated to the new framework: the Virtual Peripheral Simulator, Async Server Connector Service (used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (used for Dynamics AX 2012 R3 support).
 
 > [!NOTE]
-> Installers are stored locally and retained.  It is important, over time, to manage or delete the retained installers to not waste disk space. It is recommended to keep the current installer for the base component(s) and any extension installers for the latest version(s) for purposes of recovery from extreme situations.
+> Installers are stored locally and retained.  It's important, over time, to manage or delete the retained installers to not waste disk space. It's recommended to keep the current installer for the base component(s) and any extension installers for the latest version(s) for purposes of recovery from extreme situations.
 
 ## Migration
 
 Migration from the old self-service framework component installers to the new framework component installers requires uninstallation of the old components.
 
 - **Modern POS** – The new installer framework caused the application to receive a new application signature ID. Therefore, full uninstallation of old components is required before the new framework Modern POS component is installed. Because of the requirement for full uninstallation, device activation will be required again. (This device reactivation is a one-time requirement, provided that uninstallation doesn't occur again.)
-- **Hardware station** – As an IIS website, the new installer framework requires that the base folder structure be reworked. Therefore, full uninstallation of old components is required before the new framework hardware station component is installed.
-- **Commerce Scale Unit (CSU, self-hosted)** – As a series of IIS websites, the new installer framework requires that the base folder structure be reworked.  Therefore, full uninstallation of old components is required before the new framework CSU (self-hosted) component is installed.
+- **Hardware station** – As an IIS website, the new installer framework requires that the base folder structure is reworked. Therefore, full uninstallation of old components is required before the new framework hardware station component is installed.
+- **Commerce Scale Unit (CSU, self-hosted)** – As a series of IIS websites, the new installer framework requires that the base folder structure is reworked.  Therefore, full uninstallation of old components is required before the new framework CSU (self-hosted) component is installed.
 
 ## Modern POS
 
@@ -148,7 +148,7 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727\SchUseSt
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
 
 > [!NOTE]
-> On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it is possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
+> On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it's possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It's important to understand that a loopback can be a security risk, so it's not recommended that you use a loopback unless absolutely necessary.
 
 ### Examples of silent deployment
 
@@ -158,7 +158,7 @@ This section shows examples of commands that are used to install Modern POS.
 
 The following command silently installs (or updates) Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-The following basic command showcases the available options if an installation is requested. It is highly recommended that this command is used when first testing or using the installer.
+The following basic command showcases the available options if an installation is requested. It's highly recommended that this command is used when first testing or using the installer.
 
 ```Console
 CommerceModernPOS.exe help install
@@ -191,7 +191,7 @@ You can mix and match these concepts to achieve the installation results that yo
 
 ### Before you begin
 
-It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this article. There is no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it is highly recommended that you run the following command:
+It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this article. There's no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it's recommended that you run the following command:
 
 ```Console
 CommerceHardwareStation.exe help install
@@ -223,11 +223,11 @@ The following command specifies all the parameters that are required to skip the
 HardwareStation.exe install --SkipFirewallUpdate --SkipOPOSCheck --SkipVersionCheck --SkipURLCheck --Config "HardwareStation.Houston.xml"
 ```
 
-As is customary, it is common to mix and match these concepts to achieve the installation results that you want.
+As is customary, it's common to mix and match these concepts to achieve the installation results that you want.
 
 ## Commerce Scale Unit (self-hosted)
 
-When testing this installer for the first time, it is highly recommended to that you run the following command:
+When testing this installer for the first time, it's recommended to that you run the following command:
 
 ```Console
 CommerceStoreScaleUnitSetup.exe help install
