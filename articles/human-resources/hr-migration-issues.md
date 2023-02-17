@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Human Resources
 ## Shared Dataverse environments
 
 The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse environment. 
-If you have a Dataverse environment that is shared with both of the following: 
+If you have a Dataverse environment that's shared with both of the following: 
 - A finance and operations app
 - A current Human Resources environment
 
@@ -55,10 +55,10 @@ The existing Human Resources app in Teams is being shifted to a Microsoft Power 
 
 ## Dual-write integration
 
-Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, you may be impacted by some of the issues that were found. For more information about Dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
+Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, you may be impacted by some of the issues. For more information about Dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
 
 ## Custom financial dimensions
-In finance and operations, Main account is a reserved financial dimension. If you use a custom financial dimension called Main account in the standalone Human Resources app, the dimension should be renamed before migrating your human resources environment.  Alternatively, if this dimension is not used in human resources, then it should be removed prior to the migration. 
+In finance and operations, Main account is a reserved financial dimension. If there's a custom financial dimension called Main account in standalone Human Resources, rename the dimension before migrating your human resources environment. If this dimension is not used, it should be removed prior to the migration. 
 
 
 
