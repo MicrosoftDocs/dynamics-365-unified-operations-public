@@ -26,6 +26,8 @@ Store Commerce for web is a web application that runs in the context of a web br
 
 ## Hardening instructions for a Store Commerce for web computer
 
+Note that removing Reply URLs or Service Principals will break Cloud POS (Or Store Commerce in the browser) operations related to AAD.
+
 Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Store Commerce for web. The settings should be enabled or set by a high-privileged account for the operating system. Store Commerce for web should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
 
 - **Required** - Disable script execution in the browser's address bar.
