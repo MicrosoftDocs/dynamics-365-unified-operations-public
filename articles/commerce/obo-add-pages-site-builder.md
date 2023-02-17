@@ -25,7 +25,7 @@ To enable OBO functionality in site builder, you must perform the following thre
 
 - [Create a new page for selecting a business partner organization](#create-a-business-partner-organization-selection-page)
 - [Create a new page for selecting a business partner](#create-a-business-partner-selection-page)
-- [Modify B2B sign-in page to include a button for the account manager sign-in](#modify-b2b-sign-in-page-to-include-employee-sign-in-button) 
+- [Modify B2B sign-in page to include a button for the account manager sign-in](#modify-b2b-sign-in-page-to-include-an-employee-sign-in-button) 
 
 You may also want to perform the following optional action.
 
