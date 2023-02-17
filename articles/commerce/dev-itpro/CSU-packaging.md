@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). Note that removing Reply URLs or Service Principals will break Cloud POS (Or Store Commerce in the browser) operations related to AAD.
+This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). Note that removing Reply URLs or Service Principals will break operations related to AAD in Store Commerce in the browser.
 
 A CSU extension package contains the extension code for the following components:
 
