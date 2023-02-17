@@ -23,7 +23,7 @@ When you enable the vendor bank account workflow, you can specify which fields r
 
 Before you can use this feature, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.32 or later.
+- Your finance and operations apps must be version 10.0.32 or later.
 - The feature that's named *Vendor bank account change proposal workflow* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up the vendor bank account workflow
