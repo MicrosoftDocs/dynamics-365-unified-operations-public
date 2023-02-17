@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 ## Shared Dataverse environments
 
-The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse environment. If you have a Dataverse environment that is shared with both the following items, you must either duplicate the Dataverse environment or split it:
+The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse environment. If you have a Dataverse environment that is shared with both of the following, you must either duplicate the Dataverse environment or split it:
 
 - A finance and operations app
 - A current Human Resources environment
@@ -43,12 +43,12 @@ The Dual Write framework doesn't support linking two finance and operations app 
 
 The following environment types are required before you can do the migration:
 
-- If you don't have any sandbox standalone environments, you must create one to validate the migration.
-- If you have multiple production standalone environments, one of them can be migrated. Contact Microsoft Support to mark the other environments as sandboxes.
+- A sandbox standalone environment to validate the migration.
+- If you have multiple production standalone environments, one of them can be migrated. Contact Microsoft support to mark the other environments as sandboxes.
 
 ## Teams integration
 
-The existing Human Resources app in Teams is currently being shifted to a Microsoft Power Platform solution. For more information, see [Human Resources app in Teams](hr-admin-teams-leave-app.md).
+The existing Human Resources app in Teams is being shifted to a Microsoft Power Platform solution. For more information, see [Human Resources app in Teams](hr-admin-teams-leave-app.md).
 
 ## Dual-write integration
 
