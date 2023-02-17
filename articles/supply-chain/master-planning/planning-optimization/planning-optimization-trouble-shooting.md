@@ -68,12 +68,12 @@ If the Planning Optimization job frequently times out, then consider the followi
         - **Action message**
         - **Calculated delays**
         - **Approved requisitions time fence (days)**
-- Only use finite capacity when necessary. If you don't need it, set **Finite capacity** to *No* for each relevant plan on the **Master plans** page.
+- Only use finite capacity when necessary. For plans that don't need it, set **Finite capacity** to *No* on the **Master plans** page.
 - Reduce the scheduling time by following the instructions given in [Improve scheduling engine performance](../scheduling-engine-performance.md).
-- Use the product lifecycle state to indicate which products or variants don't need to be fulfilled by master planning. Select a lifecycle state that has **Excluded from master planning** set to *Yes*.
-- If a plan should only run for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
+- Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*.
+- For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
 - Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
-- Review your item coverage settings. If all of your items have the same settings for all the warehouses at the same site, then instead create a single record for the site.
+- Review your item coverage settings. For items that use multiple item coverage lines to apply the same settings for all warehouses at the same site, replace those lines with a single line for the site (with the **Warehouse** column blank). That setting will then apply to all warehouses at that site.
 
 ## No planned orders are created
 
