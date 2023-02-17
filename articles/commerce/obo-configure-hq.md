@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and configure "on behalf of" functionality
-description: This article describes how to set up and configure "on behalf of" functionality in Microsoft Dynamics 365 Commerce headquarters.
+title: Set up and configure on behalf of (OBO) functionality
+description: This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 author:  mariash529
 ms.date: 03/03/2023
 ms.topic: article
@@ -14,11 +14,11 @@ ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Set up and configure "on behalf of" functionality
+# Set up and configure on behalf of (OBO) functionality
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to set up and configure "on behalf of" functionality in Microsoft Dynamics 365 Commerce headquarters.
+This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 
 ## Add identity providers in Commerce Shared parameters
 
@@ -42,7 +42,7 @@ To set up an identity provider in Commerce headquarters to be used by Retail ser
 
 ## Create and configure a sales group
 
-Create a [sales group](tasks/worker.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For on behalf of functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
+Create a [sales group](tasks/worker.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For OBO functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
 
 ## Associate a sales group with a B2B buyer organization
 
@@ -50,7 +50,7 @@ To associate a sales group with a B2B buyer organization, follow these steps.
 
 Under **Sales and Marketing \> Customers \> All customers** locate a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.  
 
-:::image type="content" source="./media/obo-customer-hierarchy.png" alt-text="Example of Contoso B2B customer hierarchy that has a sales group 998 listed":::
+![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)
 
 ## Additional resources
 
