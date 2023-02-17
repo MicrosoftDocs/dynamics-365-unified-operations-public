@@ -2,7 +2,7 @@
 title: Security best practices for Store Commerce for web in shared environments
 description: This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,6 +25,9 @@ Store Commerce for web is a web application that runs in the context of a browse
 Store Commerce for web is a web application that runs in the context of a web browser. Therefore, it's vulnerable to attack when a user can run any script in the context of the web application. One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection. Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control. Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth. The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.
 
 ## Hardening instructions for a Store Commerce for web computer
+
+>[!NOTE]
+>Removing Reply URLs or Service Principals will break operations related to AAD in Store Commerce in the browser.
 
 Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Store Commerce for web. The settings should be enabled or set by a high-privileged account for the operating system. Store Commerce for web should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
 
