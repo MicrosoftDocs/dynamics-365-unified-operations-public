@@ -90,6 +90,14 @@ The new framework for self-service installers has various features and improveme
 <Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>"
 ```
 
+The installer does not automatically perform prerequisite installations that would require system changes. As such, it is important to follow installer instructions regarding missing or incorrect prerequisites.  For example, it is important to disable TLS 1.0 and TLS 1.1 keys in the registry.  Here's the keys involved:
+ - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client\Enabled = 0
+ - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server\Enabled = 0
+ - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client\Enabled = 0
+ - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server\Enabled = 0
+ - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
+ - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
+
 The installer requires the parameter **install** (or **uninstall** to remove the installation) and any parameters specific to that installation. **Parameter Name** should include any parameters that are needed such as register, CSU URL, or certificate information. **Parameter Information** should include any additional information about the parameters.
 
 The sealed framework has been created to allow for the following alterations:
@@ -116,6 +124,12 @@ Migration from the old self-service framework component installers to the new fr
 ### Before you begin
 
 It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. As an additional requirement, the SQL instance that's used must have both **Windows authentication** and **SQL Server authentication** modes. You can manage and change this configuration under the **Security** subheading in the **Properties** window in SQL Server Management Studio.
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client\Enabled = 0
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server\Enabled = 0
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client\Enabled = 0
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server\Enabled = 0
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
 
 > [!NOTE]
 > On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it is possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
