@@ -33,7 +33,8 @@ The **Vendor aging** report shows the balances that are due to vendors. Balances
 
 ## How to filter the data on this report
 
-When you generate the **Vendor aging** report, the following default fields are shown. You can use them to filter the data that will appear on the report. For more information, see Filter the data on a report.
+When you generate the **Vendor aging** report, the following default fields are shown. You can use them to filter the data that will appear on the report. 
+
 
 | Field | Description |
 |-------|-------------| 
