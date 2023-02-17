@@ -16,7 +16,8 @@ ms.dyn365.ops.version: 10.0.33
 
 # Create and modify B2B pages for on behalf of (OBO) functionality
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](includes/banner.md)]
+[!include[banner](includes/preview-banner.md)]
 
 This article describes how to create pages for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce site builder. These pages allow account managers to sign in to a business-to-business (B2B) e-commerce website and perform operations on behalf of B2B buyers.
 
@@ -62,7 +63,7 @@ To configure a route for the business partner page, follow these steps.
 
 To create a business partner selection page, follow the same steps as for the business partner organization page, using the same **business-partner** module. For the property of the container, specify a different heading (for example, "Select a Business Partner").
 
-## Modify B2B sign-in page to include "Employee sign-in" button
+## Modify B2B sign-in page to include an "Employee sign-in" button
 
 To modify a B2B sign-in page to include an employee sign-in button, follow these steps. 
 
@@ -80,4 +81,8 @@ To modify a B2B sign-in page to include an employee sign-in button, follow these
 
 For the OBO scenario, a header should contain the names of the account manager and the buyer that is being represented. By default, the word "For" is used (for example, "Alexander For Cameron Hartnett"). This word can be modified or removed in the header.definition.json file. For more information, see [Change module library static strings](e-commerce-extensibility/change-module-library-strings.md).
 
+## Additional resources
 
+[Create and configure an Azure AD application for account manager sign-in](obo-create-aad-application.md)
+
+[Set up on behalf of (OBO) functionality](obo-configure-hq.md)
