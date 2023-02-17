@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and configure an Azure AD application for account manager sign-in
-description: This article describes how to create and configure an Azure Active Directory application for account manager sign-in for on behalf of functionality in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create and configure an Azure Active Directory application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author:  mariash529
 ms.date: 03/03/2023
 ms.topic: article
@@ -17,8 +17,9 @@ ms.dyn365.ops.version: 10.0.33
 # Create and configure an Azure AD application for account manager sign-in
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
-This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of functionality in Microsoft Dynamics 365 Commerce.
+This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of functionality (OBO) in Microsoft Dynamics 365 Commerce.
 
 ## Create an Azure AD application for account manager sign-in  
 
