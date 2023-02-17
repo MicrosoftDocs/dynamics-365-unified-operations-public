@@ -113,6 +113,11 @@ The Address service supports the following requests/responses for various extens
 | CalculateQuantityFromPriceServiceRequest | This request calculates the price and quantity, based on the barcode that is scanned or entered. |
 
 ### CartService
+Take note that it is possible to generate extensions that could cause parallel execution in an additional thread. An example would be:
+```Console
+cartService.Execute(createRequest(calculateSalesTransactionServiceRequest, CalculationModes.Totals));
+```
+The above example could generate high CPU usage in a system due to concurrent access to both the insert and **FindEntry** functions of the dictionary due to parallel execution.
 
 | Request                                                     | Purpose                                                                                                    |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
