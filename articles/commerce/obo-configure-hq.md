@@ -42,7 +42,7 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 
 ## Create and configure a sales group
 
-Next, you must create and configure a sales group in headquarters. For information on creating sales groups, see [Create a commission sales group for the worker](tasks/worker#create-a-commission-sales-group-for-the-worker).
+Next, you must create and configure a sales group in headquarters. For information on creating sales groups, see [Create a commission sales group for the worker](tasks/worker.md#create-a-commission-sales-group-for-the-worker).
 
 Create a sales group of one or more account managers. Assign commissions percentages (if your organization assigns commissions). For OBO functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
 
