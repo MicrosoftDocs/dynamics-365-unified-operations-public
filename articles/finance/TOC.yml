@@ -271,7 +271,13 @@
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
         - name: Vendor invoice entry workspace
-          href: accounts-payable/vendor-invoices-workspace.md         
+          href: accounts-payable/vendor-invoices-workspace.md  
+      - name: Accounts payable reports   
+        items:
+        - name: Vendor aging report
+          href: accounts-payable/vendor-aging-report.md
+        - name: Vendor aging data storage
+          href: accounts-payable/vendor-aging-data-store.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
