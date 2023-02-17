@@ -244,7 +244,7 @@ For example, when using the global Lifecycle Services endpoint, the project data
 * useast
 * uswest
 
-> [Note]
+> [!Note]
 > Brazil south is only included in this list due to business and disaster recovery scenarios.  Environments deployed to Brazil South may fail over to US Central in the event of a disaster.  Environments deployed in US regions will only failover to other US regions in the event of a disaster.
 
 For information about migrating Lifecycle Services project data to a different geography, see [Project migration manager](../lifecycle-services/project-migration-manager.md).
