@@ -39,7 +39,7 @@ The vast majority of work done by an administrator in Lifecycle Services is done
 
 If you require multiple projects, you can create more following this documentation.  The number of projects you can create is a factor of 20, so if you require two projects then you would need 40 licenses as an example.
 
-## What happens when my license subscriptions expire?
+## What happens when my license subscriptions expire
 Customers adjust the number of licenses they have on a regular basis.  As mentioend previously, a minimum of 20 base licenses is required to create a project.  If the number of paid base licenses falls below 20 then a number of automated actions will be performed.
 
 ### Banners and notifications
@@ -56,7 +56,7 @@ After 3 days of disabling Sandboxes, the Production environment will be disabled
 ### Project deletion
 After 15 days of disabling Production, the project will be deleted.  This will remove all users, project data such as uploaded software assets, Azure connectors for deployment of cloud-hosted developer environments, and all of the Sandbox and Production environments associated.
 
-## What if I start renewing my licenses, but that is a longer process due to Enterprise Agreements?
+## I have begun renewing my licenses, but that is a longer process due to Enterprise Agreements
 If you can show proof of intent to renew your licenses, Microsoft can prevent the automated actions listed above from taking place and will re-enable the environments.  To share that you have started the renewal process with your license vendor, please create a support ticket to Microsoft Support with those details.
 
 ## Clean up your Azure subscription
