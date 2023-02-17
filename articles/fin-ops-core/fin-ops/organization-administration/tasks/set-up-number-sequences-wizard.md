@@ -5,7 +5,7 @@ title: Set up number sequences using a wizard
 description: This article explains how to set up all required number sequences at the same time by using a wizard. 
 author: SunilGarg
 ms.date: 07/18/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Set up fixed asset groups
 description: This article explains how to create a new fixed asset group. 
 author: moaamer
 ms.date: 08/02/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

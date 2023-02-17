@@ -5,7 +5,7 @@ title: Process and trace source data
 description: All data processing is run by jobs. 
 author: kfend
 ms.date: 06/27/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

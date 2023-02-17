@@ -5,7 +5,7 @@ title: Create a collection letter sequence
 description: Use this procedure to create a collection letter sequence. 
 author: JodiChristiansen
 ms.date: 12/07/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

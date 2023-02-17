@@ -5,7 +5,7 @@ title: Classify a product using category hierarchies
 description: This article describes how to classify a product using category hierarchies. 
 author: t-benebo
 ms.date: 08/02/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

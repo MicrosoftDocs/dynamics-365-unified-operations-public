@@ -3,7 +3,7 @@ title: Original invoice reference (Eastern Europe)
 description: This task walks you through creating corrective lines in a credit note for a sales order.
 author: AdamTrukawka
 ms.date: 02/09/2016
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

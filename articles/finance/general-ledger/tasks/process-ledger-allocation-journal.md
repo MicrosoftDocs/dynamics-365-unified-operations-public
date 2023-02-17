@@ -5,7 +5,7 @@ title: Process ledger allocation journal
 description: This article explains how to process an allocation request in Dynamics 365 Finance. 
 author: aprilolson
 ms.date: 11/15/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Fulfill sales agreements
 description: This procedure shows you how to fulfill a sales agreement by associating sales orders with it. 
 author: Henrikan
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

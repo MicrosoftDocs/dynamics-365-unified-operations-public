@@ -5,7 +5,7 @@ title: Manage benefit expiration dates
 description: This procedure shows how benefits can expire or be extended, and manage the enrollment dates of workers. 
 author: twheeloc
 ms.date: 08/23/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

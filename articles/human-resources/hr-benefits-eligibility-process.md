@@ -5,7 +5,7 @@ title: Benefit eligibility process
 description: This procedure shows how the benefit eligibility process works. 
 author: twheeloc
 ms.date: 11/03/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

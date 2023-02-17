@@ -5,7 +5,7 @@ title: Create and process nonconformances
 description: This article describes how to perform nonconformance management based on an existing quality order.
 author: yufeihuang
 ms.date: 03/23/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod:  
 ms.technology:  
 

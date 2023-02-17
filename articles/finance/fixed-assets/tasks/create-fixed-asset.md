@@ -5,7 +5,7 @@ title: Create a fixed asset
 description: This article explains how to create a new fixed asset record from the Fixed asset list page.
 author: moaamer
 ms.date: 07/01/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

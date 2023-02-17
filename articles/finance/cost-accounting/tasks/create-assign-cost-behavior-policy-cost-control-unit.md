@@ -5,7 +5,7 @@ title: Create and assign a cost behavior policy to a cost control unit
 description: Cost behavior is the classification of costs as either fixed or variable. 
 author: twheeloc
 ms.date: 06/27/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

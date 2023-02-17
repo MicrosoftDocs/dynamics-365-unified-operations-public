@@ -5,7 +5,7 @@ title: End a production order
 description: This procedure shows how to end a production order.
 author: johanhoffmann
 ms.date: 11/11/2016
-ms.topic: business-process
+ms.topic: how-to
 ms.prod:  
 ms.technology:  
 

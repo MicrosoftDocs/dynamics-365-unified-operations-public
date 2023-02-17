@@ -5,7 +5,7 @@ title: Add an existing activity to a production flow version
 description: When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

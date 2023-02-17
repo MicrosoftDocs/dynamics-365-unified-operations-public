@@ -3,7 +3,7 @@ title: Receive vendor fiscal documents (fixed assets - ICMS long term recoverabl
 description: This article explains how to post a fiscal document received from the acquisition of fixed assets and then recover the ICMS taxes.
 author: AdamTrukawka
 ms.date: 06/24/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -5,7 +5,7 @@ title: Enroll an employee in a fixed compensation plan
 description: The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay. 
 author: twheeloc
 ms.date: 08/25/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

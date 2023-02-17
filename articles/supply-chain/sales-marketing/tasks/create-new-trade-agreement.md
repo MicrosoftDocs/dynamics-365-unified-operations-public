@@ -5,7 +5,7 @@ title: Create a new trade agreement
 description: This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. 
 author: Henrikan
 ms.date: 06/25/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

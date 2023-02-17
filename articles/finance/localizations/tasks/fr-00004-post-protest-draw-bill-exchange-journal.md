@@ -5,7 +5,7 @@ title: FR-00004 Post protest draw bill of exchange journal
 description: This procedure walks you through the steps of protesting bill of exchange. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

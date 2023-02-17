@@ -5,7 +5,7 @@ title: Set up sales commission rules
 description: This procedure shows you how to set up and enable sales commission calculation and tracking. 
 author: Henrikan
 ms.date: 06/21/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Process interest
 description: This procedure shows how to create, print, and post interest notes. 
 author: ShivamPandey-msft
 ms.date: 08/08/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

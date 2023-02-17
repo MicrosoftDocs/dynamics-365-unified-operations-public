@@ -3,7 +3,7 @@ title: Issue customer fiscal documents (services) (Brazil)
 description: You can issue a service fiscal document for a customer who bought services from the fiscal establishment.
 author: AdamTrukawka
 ms.date: 06/24/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

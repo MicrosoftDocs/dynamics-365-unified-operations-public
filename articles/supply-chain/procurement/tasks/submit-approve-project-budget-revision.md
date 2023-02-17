@@ -5,7 +5,7 @@ title: Submit and approve project budget revision
 description: This procedure provides information about revising a project budget. 
 author: GalynaFedorova
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Compare active, estimated, and realized costs on a production order
 description: This procedure shows how to view reasons for high production variance for a production order. 
 author: JennySong-SH
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

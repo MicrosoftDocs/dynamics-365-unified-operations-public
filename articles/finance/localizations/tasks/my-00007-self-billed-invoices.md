@@ -5,7 +5,7 @@ title: MY-00007 Self-billed invoices
 description: This procedure walks you through the Creation and printing of Vendor self-billed invoice. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

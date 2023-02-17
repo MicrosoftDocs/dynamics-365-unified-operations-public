@@ -5,7 +5,7 @@ title: Manage a data source for the cost accounting ledger
 description: Use this procedure to manage the general ledger data source for a cost accounting ledger. 
 author: kfend
 ms.date: 06/27/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

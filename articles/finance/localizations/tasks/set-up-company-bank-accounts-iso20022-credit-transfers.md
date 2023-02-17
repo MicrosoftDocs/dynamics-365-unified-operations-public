@@ -5,7 +5,7 @@ title: Set up company bank accounts for ISO20022 credit transfers
 description: This procedure shows how to set up company-specific bank account information that is required for payment file generation. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
