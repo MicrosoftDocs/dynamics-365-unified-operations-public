@@ -100,7 +100,7 @@ If a site user selects any social media links within a site, the cookies in the 
 | .pinterest.com              | `csrftoken`                | Cookie contains pages when user selects the Pinterest button.      | Pinterest                                                             |
 | .pinterest.com              | `sessionFunnelEventLogged` | Cookie contains pages when user selects the Pinterest button.      | Pinterest                                                             |
 | .pinterest.com              | Local storage            |                                                              |  Pinterest                                                            |
-| .pinterest.com              | Service Workers          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Service workers          |                                                              |  Pinterest                                                            |
 
 
 ## Site user cookie consent on an e-commerce site 
