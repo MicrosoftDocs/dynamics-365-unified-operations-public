@@ -312,7 +312,7 @@ The UAT environment is running CSU that corresponds to release 10.0.7, together 
 
 ### <a id="phase-3"></a>Phase 3: Update POS to version 10.0.11
 
-This section summarizes the process that you use to update your store components, such as Modern POS and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
+This section summarizes the process that you use to update your store components, such as Modern POS (Store Commerce in the newer versions) and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
 
 Unlike updates for Commerce headquarters (in the finance and operations app) and CSU, updates for store components are delivered in the same packages. After you update Commerce headquarters and CSU, you have the following options:
 
