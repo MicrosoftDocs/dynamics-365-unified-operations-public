@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources infrastructure merge known issues
 description: This article lists issues that can occur during the Microsoft Dynamics 365 Human Resources infrastructure merge.
 author: twheeloc
-ms.date: 10/27/2022
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,4 +53,10 @@ The existing Human Resources app in Teams is currently being shifted to a Micros
 ## Dual-write integration
 
 Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, you may be impacted by some of the issues that were found. For more information about Dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
+
+## Custom financial dimensions
+In finance and operations, Main account is a reserved financial dimension. If you use a custom financial dimension called Main account in the standalone Human Resources app, the dimension should be renamed before migrating your human resources environment.  Alternatively, if this dimension is not used in human resources, then it should be removed prior to the migration. 
+
+
+
 
