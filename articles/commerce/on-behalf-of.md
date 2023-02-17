@@ -17,7 +17,7 @@ ms.search.validFrom: 2023-02-28
 # Enable on behalf of (OBO) functionality
 
 [!include [banner](includes/banner.md)]
-[!include[banner](includes/preview-banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 
@@ -61,3 +61,10 @@ You can also create a template for the buyer to use later. It is recommended tha
 > - Account managers can create a new order template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
 > - Currently, the [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature isn't supported with the OBO feature, and must be turned off to use the OBO functionality. 
 
+## Additional resources
+
+[Create and configure an Azure AD application for account manager sign-in](obo-create-aad-application.md)
+
+[Create and modify pages for on behalf of (OBO) functionality](obo-add-pages-site-builder.md)
+
+[Set up on behalf of (OBO) functionality](obo-configure-hq.md)
