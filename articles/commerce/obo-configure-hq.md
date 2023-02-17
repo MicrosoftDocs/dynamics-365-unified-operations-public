@@ -16,7 +16,8 @@ ms.dyn365.ops.version: 10.0.33
 
 # Set up and configure on behalf of (OBO) functionality
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](includes/banner.md)]
+[!include[banner](includes/preview-banner.md)]
 
 This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 
@@ -53,6 +54,10 @@ Under **Sales and Marketing \> Customers \> All customers** locate a customer of
 ![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)
 
 ## Additional resources
+
+[Create and configure an Azure AD application for account manager sign-in](obo-create-aad-application.md)
+
+[Create and modify pages for on behalf of (OBO) functionality](obo-add-pages-site-builder.md)
 
 [Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
 
