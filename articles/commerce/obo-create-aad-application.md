@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and configure an Azure Active Directory application for account manager sign-in
+title: Create and configure an Azure AD application for account manager sign-in
 description: This article describes how to create and configure an Azure Active Directory application for account manager sign-in for on behalf of functionality in Microsoft Dynamics 365 Commerce.
 author:  mariash529
 ms.date: 03/03/2023
@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Create and configure an Azure Active Directory application for account manager sign-in
+# Create and configure an Azure AD application for account manager sign-in
 
 [!include[banner](../includes/banner.md)]
 
