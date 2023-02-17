@@ -21,35 +21,45 @@ ms.dyn365.ops.version: 10.0.33
 
 This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 
-## Add identity providers in Commerce Shared parameters
+## Add identity providers to Commerce shared parameters
 
-To add identity providers in Commerce Shared parameters, follow these steps.
+First, you must add the identity provider or providers you [created](obo-create-aad-application.md) for the Azure Active Directory (Azure AD) business-to-consumer (B2C) application to **Commerce shared parameters** in Commerce headquarters.
 
-To set up an identity provider in Commerce headquarters to be used by Retail server, follow these steps.
+To add identity providers to Commerce shared parameters in headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters**. 
-1. In **Identity Providers tab**, add an identity provider you [created](obo-create-aad-application.md) for the Azure Active Directory (Azure AD) business-to-consumer (B2C) application:
-1.	In Identity providers section add the following entry:
-    1. **Issuer:** https://sts.windows.net/TENANTID
-    1. **Issuer Type:** “Azure Active Directory”.
-    1. **Issuer Name:** any name
-1. In the **Relying Party** section, add the following entry:
-    1. **ClientID:**  Client ID of Azure AD B2C application
-    1. **Type:** Confidential
-    1. **User Type:** Worker
-1.	In Server Resource IDS section add the following entry:
-    1. **Server Resource Id:** https://APPLICATIONIDUR
-    1. **Name:** blank
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters \> **Identity Providers**. 
+1. Under **IDENTITY PROVIDERS**, select **+Add**, and then enter or select the following values:
+    1. **Issuer**: `https://sts.windows.net/<TENANTID>`.
+    1. **Type**: "Azure Active Directory".
+    1. **Name**: A name describing the identity provider.
+1. Under **RELYING PARTIES**, select **+Add**, and then enter or select the following values:
+    1. **ClientID**:  The client ID of Azure AD B2C application.
+    1. **Type:** "Confidential".
+    1. **User Type:** "Worker".
+1. Under **SERVER RESOURCE IDS**, select **+Add**, and then enter or select the following values:
+    1. **Server Resource Id**: `https://APPLICATIONIDUR`./
+    1. **Name**: Leave blank.
 
 ## Create and configure a sales group
 
-Create a [sales group](tasks/worker.md) of one or more account managers. Assign commissions percentage if your organization assigns commissions. For OBO functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
+Next, you must create and configure a sales group in headquarters. For information on creating sales groups, see [Create a commission sales group for the worker](tasks/worker#create-a-commission-sales-group-for-the-worker).
+
+Create a sales group of one or more account managers. Assign commissions percentages (if your organization assigns commissions). For OBO functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
 
 ## Associate a sales group with a B2B buyer organization
 
-To associate a sales group with a B2B buyer organization, follow these steps.
+Under **Sales and Marketing \> Customers \> All customers** locate a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.
 
-Under **Sales and Marketing \> Customers \> All customers** locate a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.  
+
+<!--To associate a sales group with a B2B buyer organization in headquarters, follow these steps.
+
+Go to **Sales and Marketing \> Customers \> All customers**.
+Locate a customer of type organization that needs to be managed by the sales group you set up in the previous section. 
+Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. 
+
+Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. 
+
+Any member of the sales group is able to work on behalf of any user in this customer hierarchy.  -->
 
 ![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)
 
