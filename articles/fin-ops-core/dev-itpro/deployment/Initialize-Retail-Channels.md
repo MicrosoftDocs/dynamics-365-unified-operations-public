@@ -93,7 +93,6 @@ To configure your channels to use the Commerce Scale Unit database, follow these
 1. In Commerce headquarters, go to **Retail and commerce \> Headquarters setup \> Commerce Scheduler \> Channel database**.
 1. In the left pane, select a channel database.
 1. On the **Retail channel** FastTab, select **Add**, and then select your retail channel in the drop-down list.
-1. Select **Add**, and then select your online channel in the drop-down list. 
 
 When you've finished, go to **Retail and Commerce \> Retail and commerce IT \> Distribution schedule**, and run job 9999.
 
