@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and configure on behalf of functionality
-description: This article describes how to set up and configure on behalf of functionality in Microsoft Dynamics 365 Commerce headquarters.
+title: Set up and configure "on behalf of" functionality
+description: This article describes how to set up and configure "on behalf of" functionality in Microsoft Dynamics 365 Commerce headquarters.
 author:  mariash529
 ms.date: 03/03/2023
 ms.topic: article
@@ -14,11 +14,11 @@ ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Set up and configure on behalf of functionality
+# Set up and configure "on behalf of" functionality
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to set up and configure on behalf of functionality in Microsoft Dynamics 365 Commerce headquarters.
+This article describes how to set up and configure "on behalf of" functionality in Microsoft Dynamics 365 Commerce headquarters.
 
 ## Add identity providers in Commerce Shared parameters
 
