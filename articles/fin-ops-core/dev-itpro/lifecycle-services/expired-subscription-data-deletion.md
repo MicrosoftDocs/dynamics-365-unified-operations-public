@@ -9,7 +9,7 @@ ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: LaneSwenka
+ms.author: laswenka
 ms.search.validFrom: 2021-08-16
 ---
 
