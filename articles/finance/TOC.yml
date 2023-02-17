@@ -292,6 +292,8 @@
         href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
         href: accounts-payable/vendor-workflow.md
+      - name: Vendor bank account workflow
+        href: accounts-payable/vendor-bank-account-workflow.md
       - name: Resolve discrepancies during invoice totals matching
         items:
         - name: Resolve discrepancies during invoice totals matching overview
