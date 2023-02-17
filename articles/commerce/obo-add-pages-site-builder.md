@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and modify B2B pages for "on behalf of" functionality
-description: This article describes how to create pages for "on behalf of" functionality in Microsoft Dynamics 365 Commerce site builder.
+title: Create and modify B2B pages for on behalf of (OBO) functionality
+description: This article describes how to create pages for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce site builder.
 author:  mariash529
 ms.date: 03/03/2023
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Create and modify B2B pages for "on behalf of" functionality
+# Create and modify B2B pages for on behalf of (OBO) functionality
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to create pages for "on behalf of" functionality in Microsoft Dynamics 365 Commerce site builder. These pages allow account managers to sign in to a business-to-business (B2B) e-commerce website and perform operations on behalf of B2B buyers.
+This article describes how to create pages for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce site builder. These pages allow account managers to sign in to a business-to-business (B2B) e-commerce website and perform operations on behalf of B2B buyers.
 
-To enable on behalf of functionality in site builder, you must perform the following three actions. The fourth action is optional. 
+To enable OBO functionality in site builder, you must perform the following three actions.
 
-- [Create a new page for selecting a business partner organization.](#create-a-business-partner-organization-selection-page)
-- [Create a new page for selecting a business partner.](#create-a-business-partner-selection-page)
-- [Modify B2B sign-in page to include a button for the account manager sign-in.](#modify-b2b-sign-in-page-to-include-employee-sign-in-button) 
-- [Optional: Modify word "For" in the header.](#modify-the-word-for-in-the-header-optional)
+- [Create a new page for selecting a business partner organization](#create-a-business-partner-organization-selection-page)
+- [Create a new page for selecting a business partner](#create-a-business-partner-selection-page)
+- [Modify B2B sign-in page to include a button for the account manager sign-in](#modify-b2b-sign-in-page-to-include-employee-sign-in-button) 
+
+You may also want to perform the following optional action.
+
+- [Modify the word "For" in the header](#modify-the-word-for-in-the-header-optional)
 
 The following sections provide details for performing each action.
 
@@ -75,6 +78,6 @@ To modify a B2B sign-in page to include an employee sign-in button, follow these
 
 ## Modify the word "For" in the header (optional)
 
-For the on behalf of scenario, a header should contain the names of the account manager and the buyer that is being represented. By default, the word "For" is used, for example, "Alexander For Cameron Hartnett". This word can be modified or removed in the header.definition.json file. For more information, see [Change module library static strings](e-commerce-extensibility/change-module-library-strings.md).
+For the OBO scenario, a header should contain the names of the account manager and the buyer that is being represented. By default, the word "For" is used (for example, "Alexander For Cameron Hartnett"). This word can be modified or removed in the header.definition.json file. For more information, see [Change module library static strings](e-commerce-extensibility/change-module-library-strings.md).
 
 
