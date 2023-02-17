@@ -109,7 +109,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 ## Adding extensions
 
-1. If you're creating an extended table and want to sync the data back to headquarters, then the table must have the same primary key and clustered index as the headquarters table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to headquarters, then the **REPLICATIONCOUNTERFROMORIGIN** identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) is required in the extension table. The **REPLICATIONCOUNTERFROMORIGIN** field can't be the sole unique field).
+1. If you're creating an extended table and want to sync the data back to headquarters, then the table must have the same primary key and clustered index as the headquarters table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to headquarters, then the **REPLICATIONCOUNTERFROMORIGIN** identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,`) is required in the extension table. The **REPLICATIONCOUNTERFROMORIGIN** field can't be the sole unique field.
 
 2. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
 
@@ -188,7 +188,7 @@ In this scenario we'll explain how to create a new table and add it to the chann
     GO
 
 > [!NOTE]
-> If the new extension table data needs to be pulled into Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the `REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL`. The **REPLICATIONCOUNTERFROMORIGIN** field can't be the only unique field and is required if the table data is per company. This is also required for a CDX pull job. **REPLICATIONCOUNTERFROMORIGIN** isn't required if the data is pushed from Retail headquarters to the channel database, and is only needed if the data is pulled from channel database to Retail headquarters.
+> If the new extension table data needs to be pulled into Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL`). The **REPLICATIONCOUNTERFROMORIGIN** field can't be the only unique field and is required if the table data is per company. This is also required for a CDX pull job. **REPLICATIONCOUNTERFROMORIGIN** isn't required if the data is pushed from Retail headquarters to the channel database, and is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
