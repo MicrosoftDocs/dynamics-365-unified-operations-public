@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Credit card payment refactoring
-description: This article provides information about credit card payment refactoring.
+title: Process incomplete credit card payments
+description: This article provides information about processing incomplete credit card payments.
 author: sunfzam
 ms.date: 02/14/2023
 ms.topic: overview
@@ -27,12 +27,12 @@ ms.dyn365.ops.version:
 
 ---
 
-# Credit card payment refactoring
+# Process incomplete credit card payments
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article provides information about credit card payment refactoring.
+This article provides information about processing incomplete credit card payments.
 
 Card payment is a typical payment scenario in the retail industry. In Microsoft Dynamics 365 Finance, the scenario looks like a single step. However, it's really composed of several steps:
 
