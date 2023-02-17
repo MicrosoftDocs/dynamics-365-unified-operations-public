@@ -21,11 +21,11 @@ This article will cover a brief overview of Dynamics 365 Finance and Operations 
 
 ## Dynamics 365 license subscriptions
 Dynamics 365 applications are licensed by subscription in two broad categories:
-* **Assigned licenses**, which include:
-* * User licenses, which grant access for a named user, regardless of the device used. For products that offer licenses for both enterprise and professional levels of functionality (such as Finance or Customer Service), user licenses may be referred to as Enterprise or Base licenses as well as Attach licenses.
-* * Device licenses, which grant access via certain devices, using either assigned or shared logins.
-* **Unassigned licenses** that provide access to a feature or service at the tenant level, regardless of the user or device involved.
-* * Options include additional capacity for storage or files, add-on Sandboxes based on tiers for performance or other user acceptance testing needs.
+**Assigned licenses**, which include:
+* User licenses, which grant access for a named user, regardless of the device used. For products that offer licenses for both enterprise and professional levels of functionality (such as Finance or Customer Service), user licenses may be referred to as Enterprise or Base licenses as well as Attach licenses.
+* Device licenses, which grant access via certain devices, using either assigned or shared logins.
+**Unassigned licenses** that provide access to a feature or service at the tenant level, regardless of the user or device involved.
+* Options include additional capacity for storage or files, add-on Sandboxes based on tiers for performance or other user acceptance testing needs.
 
 An organization may have both assigned and unassigned licenses. Licenses grant users non-perpetual rights (with no buy-out rights) to the use of one or more specific Dynamics 365 products in the cloud (not on-premises). If your subscription payments are up to date and you adhere to the Product Terms, you will have access to the current licensed Dynamics 365 product.
 
