@@ -274,6 +274,8 @@
           href: accounts-payable/vendor-invoices-workspace.md  
       - name: Accounts payable reports   
         items:
+        - name: Vendor aging report
+          href: accounts-payable/vendor-aging-report.md
         - name: Vendor aging data storage
           href: accounts-payable/vendor-aging-data-store.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
