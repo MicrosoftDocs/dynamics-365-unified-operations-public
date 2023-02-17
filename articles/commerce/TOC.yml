@@ -1422,15 +1422,15 @@
           href: catalogs-b2b-sites-dev.md
         - name: Commerce catalogs for B2B FAQ
           href: catalogs-b2b-sites-FAQ.md
-      - name: On behalf of functionality for B2B sites
+      - name: On behalf of (OBO) functionality for B2B sites
         items:
-        - name: Enable on behalf of functionality
+        - name: Enable on behalf of (OBO) functionality
           href: on-behalf-of.md
         - name: Create and configure an Azure AD application for account manager sign-in
           href: obo-create-aad-application.md
-        - name: Create and modify B2B pages for on behalf of functionality
+        - name: Create and modify B2B pages for on behalf of functionality (OBO)
           href: obo-add-pages-site-builder.md
-        - name: Set up and configure on behalf of functionality
+        - name: Set up and configure on behalf of functionality (OBO)
           href: obo-configure-hq.md
     - name: Monitoring and analysis
       items:
