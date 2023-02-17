@@ -16,8 +16,8 @@ ms.dyn365.ops.version: 10.0.33
 
 # Create and configure an Azure AD application for account manager sign-in
 
-[!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
+[!include[banner](includes/banner.md)]
+[!include[banner](includes/preview-banner.md)]
 
 This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of functionality (OBO) in Microsoft Dynamics 365 Commerce.
 
@@ -74,6 +74,8 @@ To add the Azure identity provider to a user flow, follow these steps.
 1. Select **Save**.
 
 ## Additional resources
+
+[Create and modify pages for on behalf of (OBO) functionality](obo-add-pages-site-builder.md)
 
 [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md)
 
