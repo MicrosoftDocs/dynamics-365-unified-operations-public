@@ -34,18 +34,17 @@ ms.dyn365.ops.version: Human Resources
 
 ## Shared Dataverse environments
 
-The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse environment. 
-If both of the following items share a Dataverse environment, duplicate or split the environment:
+The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse environment. If both of the following items share a Dataverse environment, duplicate or split the environment:
+
 - A finance and operations app
 - A current Human Resources environment
-
 
 ## Environment type requirements
 
 Required environment types before migration:
 
 - A sandbox standalone environment to validate the migration.
-- If you have multiple production standalone environments, one of the environments can be migrated. Contact Microsoft support to mark the other environments as sandboxes.
+- If you have multiple production standalone environments, one of the environments can be migrated. Contact Microsoft Support to mark the other environments as sandboxes.
 
 ## Teams integration
 
@@ -53,11 +52,8 @@ The existing Human Resources app in Teams is shifting to a Microsoft Power Platf
 
 ## Dual-write integration
 
-Dual-write is an out-of-box infrastructure that provides near real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, some issues might affect you. For more information about Dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
+Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps and finance and operations apps. If your organization uses dual-write for integrations, some issues might affect you. For more information about Dataverse tables and issues, see [Dataverse tables](hr-developer-entities.md).
 
 ## Custom financial dimensions
-In finance and operations, Main account is a reserved financial dimension. If there's a custom financial dimension called Main account in standalone Human Resources, rename the dimension before migrating your human resources environment. If this dimension isn't used, remove it prior to the migration. 
 
-
-
-
+In finance and operations apps, Main account is a reserved financial dimension. If there's a custom financial dimension named Main account in standalone Human Resources, rename it before you migrate your Human Resources environment. If this dimension isn't used, remove it before the migration.
