@@ -454,7 +454,7 @@
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
-          - name: Generate invoices from billing schdeules  
+          - name: Generate invoices from billing schedules  
             href: accounts-receivable/sb-generate-invoice.md
           - name: Customer split with a billing schedule
             href: accounts-receivable/sb-customer-split.md
