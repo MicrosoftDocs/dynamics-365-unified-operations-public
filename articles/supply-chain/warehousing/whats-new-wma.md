@@ -21,23 +21,25 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ## Version 2.0.41.0  
 
-### New features introduced in version 2.0.41.0 
+### New features introduced in version 2.0.41.0
 
 This version of the Warehouse Management mobile app introduces the following new features:  
-- The app is now available for devices running on x86 Android platforms. 
-- The app now supports managed configuration, including Microsoft Intune and other mobile device management (MDM) solutions. 
-- Although the app isn't available in app stores in China, customers can now download the app from Microsoft App Center and use it together with Dynamics 365 Supply Chain Management environments operated by 21Vianet in China. 
+
+- The app is now available for devices running on x86 Android platforms.
+- The app now supports managed configuration with Microsoft Intune and other mobile device management (MDM) solutions.
+- Although the app isn't available in app stores in China, customers can now download the app from Microsoft App Center and use it together with Dynamics 365 Supply Chain Management environments operated by 21Vianet in China.
 
 ### New fixes and improvements in version 2.0.41.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
-- Increased stability. 
-- The **Edit connection** page now includes a Cancel button. 
-- Fixed an issue on the **Alphanumeric input** page. Bar codes are now trimmed correctly when entered on this page. 
-- Fixed a layout issue on the **Inquiry** page. Inquiry cards now use the correct layout after the device's orientation changes. 
-- Fixed a sorting issue on the **Work list** page. Work cards are now sorted in the correct direction (ascending or descending) when using the default sorting option. 
-- Fixed a display issue on the **Edit scanned IDs** dialog pop-up page. The page now displays correctly. 
-- Fixed a layout issue on the **Login** page. The page now shows its fields correctly after the device's orientation changes. 
+
+- Increased stability.
+- The **Edit connection** page now includes a **Cancel** button.
+- Fixed an issue on the **Alphanumeric input** page. Bar codes are now trimmed correctly when entered on this page.
+- Fixed a layout issue on the **Inquiry** page. Inquiry cards now use the correct layout after the device's orientation changes.
+- Fixed a sorting issue on the **Work list** page. Work cards are now sorted in the correct direction (ascending or descending) when using the default sorting option.
+- Fixed a display issue on the **Edit scanned IDs** dialog pop-up page. The page now displays correctly.
+- Fixed a layout issue on the **Login** page. The page now shows its fields correctly after the device's orientation changes.
 
 ## Version 2.0.40.0
 
