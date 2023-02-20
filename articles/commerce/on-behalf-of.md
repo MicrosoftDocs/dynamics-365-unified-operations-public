@@ -60,6 +60,7 @@ You can also create a template for the buyer to use later. It is recommended tha
 > - Account managers have access to view a buyer's invoices, but aren't able to pay invoices. 
 > - Account managers can create a new order template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
 > - Currently, the [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature isn't supported with the OBO feature, and must be turned off to use the OBO functionality. 
+> - Any custom extensions that affect **customer hierarchies** or **sales groups** might need to be modified to support on behalf of functionality. In addition, any extentions that retrieve values directly from the **user context** on e-Commerce site might need to be modified. 
 
 ## Additional resources
 
