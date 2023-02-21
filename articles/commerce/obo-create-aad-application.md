@@ -34,7 +34,7 @@ To create an Azure AD application for account manager sign-in, follow these step
 1. Under **Redirect URI**, select **Web**, and then in the URL text box, enter `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-tenant-name>` is the name of your tenant. If you use a custom domain, enter `https://<your-domain-name>/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-domain-name>` is your custom domain. Use lowercase letters when entering your tenant’s name even if the tenant is defined with uppercase letters in Azure AD B2C (for example, `https://fabrikam-online.b2clogin.com/fabrikam-online.onmicrosoft.com/oauth2/authresp`).
 1. Under **Permissions**, select **Grant admin consent to openid and offline access permissions**.
 1. Select **Register**.
-1. After registration is completed, you'll be redirected to the Azure AD B2C app registrations page for the application you created (for example **Account Manager Employer Auth**).
+1. After you've completed registration, you'll be redirected to the Azure AD B2C app registrations page for the application you created (for example **Account Manager Employer Auth**).
 1. In the **Essentials** section, copy and save the **Application (Client) ID** GUID value. 
 1. In the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
@@ -49,14 +49,14 @@ To create an Azure AD application for account manager sign-in, follow these step
 
 To configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site, follow these steps.
 
-1. Go to the directory that contains your Azure AD B2C tenant. To do this, on the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Azure AD B2C tenant.
+1. Go to the directory that contains your Azure AD B2C tenant. On the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Azure AD B2C tenant.
 1. In the top-left corner of the Azure portal, select **All services** , and then search for and select **Azure AD B2C**.
 1. Select **Identity providers**, and then select **New OpenID Connect provider**.
-1. For **Name**, enter "Account Manager B2B Sign-in"".
+1. For **Name**, enter "Account Manager B2B Sign-in".
 1. For **Metadata URL**, enter the URL of the Azure B2B OpenID Connect Configuration document, for example, `https://login.microsoftonline.com/<TENANTID>/v2.0/.well-known/openid-configuration`, where `<TENANTID>` is your tenant ID. The URL must use HTTPS. 
 1. For **Client ID**, enter the application ID that you copied previously.
 1. For **Client secret**, enter the client secret that you copied previously.
-1. For **Scope**, enter the OpenID profile Azure B2B Application ID URI (for example, `https://APPLICATIONIDURI`). This should be the application ID URI of the Azure B2B Azure AD application.
+1. For **Scope**, enter the OpenID profile Azure B2B Application ID URI (for example, `https://APPLICATIONIDURI`). This URI should match the application ID URI of the Azure B2B Azure AD application.
 1. For **Response Mode**, select **form_post**.
 1. For **Response Type**, select **code**.
 1. Under **Identity provider claims mapping**, select the following claims:
