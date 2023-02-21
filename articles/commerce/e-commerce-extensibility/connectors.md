@@ -24,7 +24,7 @@ This article describes connectors and explains how to configure and enable them 
 
 Connectors let you connect your Dynamics 365 Commerce site to external third-party services to perform tasks such as capturing analytics, logging, and experimenting. Some third-party service providers require a paid license for their service before it can be used. For more information, contact your service provider.
 
-As of Commerce version 10.0.13, the only supported type of connector is the experimentation connector. As of Commerce version 10.0.17, support for the geoLookup connector has been added. As of Commerce version 10.0.21, the segmentation provider connector is supported. In future versions, you will be able configure and enable other types of connectors.
+As of Commerce version 10.0.13, the only supported type of connector is the experimentation connector. As of Commerce version 10.0.17, support for the geoLookup connector has been added. As of Commerce version 10.0.21, the segmentation provider connector is supported. In future versions, you'll be able configure and enable other types of connectors.
 
 ## Configure and enable connectors
 
@@ -453,7 +453,7 @@ The connector definition file is used to register and provide configuration meta
 |Element|Details|
 |--|--|
 |Id| Unique ID in the scope of current segmentation provider. |
-|Name| Segment name which that be shown in the user interface. |
+|Name| Segment name that is shown in the user interface. |
 |Type| integer, string, enum, bool |
 |enum| Only applies to enum type, array of enum values. |
 |enumName| Only applies to enum type, array of enum names that will show in the user interface. |
