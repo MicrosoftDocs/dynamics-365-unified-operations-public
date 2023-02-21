@@ -48,8 +48,6 @@ To create a business partner organization selection page in Commerce site builde
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-![Business partner module in site builder](media/obo-site-builder-page.png)
-
 ### Configure a route for the page
 
 To configure a route for the business partner page, follow these steps.
@@ -74,8 +72,6 @@ To modify a B2B sign-in page to include an employee sign-in button, follow these
 1. In the **Heading** dialog box, enter "Employee sign-in", and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
-
-![Employee sign-in button](media/obo-sign-in-experience.png)
 
 ## Modify the word "For" in the header (optional)
 
