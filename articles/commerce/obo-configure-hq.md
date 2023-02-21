@@ -59,8 +59,6 @@ Any member of the sales group will now be able to work on behalf of any user in 
 
 In the customer hierarchy that corresponds to this customer organization (**Retail and Commerce \> Customers \> Customer hierarchies**), you'll now be able to see the sales group as a read-only value in the **Sales Groups** section. 
 
-<!--![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)-->
-
 ## Additional resources
 
 [Create and configure an Azure AD application for account manager sign-in](obo-create-aad-application.md)
