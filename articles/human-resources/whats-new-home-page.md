@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Human Resources
 description: This article points to topics that describe the new and changed features in each release of Dynamics 365 Human Resources
 author: edupont04
-ms.date: 02/15/2023
+ms.date: 02/21/2023
 ms.topic: whats-new
 
 # optional metadata
@@ -15,7 +15,9 @@ ms.reviewer: kfend
 ms.author: edupont
 # The following are FnO specific properties and not needed anywhere else. Also, if this docset does not specify other required metadata in the docfx.json, then make sure it's added here. 
 audience: Developer, IT Pro
-ms.custom: "intro-internal"
+ms.custom: 
+- intro-internal
+- bap-template
 ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2023-02-14
