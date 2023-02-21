@@ -1,7 +1,7 @@
 ---
 title: VAT setup details for VAT declarations in the United Kingdom
 description: This article provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
-author: AdamTrukawka
+author: liza-golub
 ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
@@ -80,7 +80,7 @@ When the **Company tax registration in customer invoices** feature is enabled, t
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
 2. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md).
-3. In the **Report layout** field, select **English report layout**.
+3. In the **Report layout** field, select **Default**.
 
 ## Sales tax settlement periods
 
