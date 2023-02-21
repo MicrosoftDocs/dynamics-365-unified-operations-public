@@ -2,7 +2,7 @@
 title: Dual-write home page
 description: This article provides links to information about dual-write.
 author: sericks007
-ms.date: 11/24/2021
+ms.date: 02/21/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
