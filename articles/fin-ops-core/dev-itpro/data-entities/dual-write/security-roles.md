@@ -2,7 +2,7 @@
 title: Set up dual-write security roles and permissions
 description: This article describes the special security roles and permissions that are required for dual-write to work as expected.
 author: ramasri
-ms.date: 1/3/2023
+ms.date: 02/21/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: johnmichalak
@@ -112,7 +112,7 @@ For more information about Dataverse security roles and privileges, see [Configu
 |-----------|---------------------------|
 |Owning team set as default on cdm_company record |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders|
 |Business user doing live sync |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders |
-| Maker who needs to update table maps	| System customizer or System administrator role in Dataverse and System Administrator role in F&O |
-| Owning team for global records	| ‘Dual-write runtime user’ + ‘Dual-write app user’ +  one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope e.g. products etc.|
+| Maker who needs to update table maps	| System customizer or System administrator role in Dataverse and System Administrator role in finance and operations apps |
+| Owning team for global records	| ‘Dual-write runtime user’ + ‘Dual-write app user’ +  one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope, for example, products etc.|
 
-*For GAB and party model solution, you need to create a custom role to include privileges to entitles like Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. Get the full list of entities from [Party-GAB page](party-gab.md)|
+*For global address book and party model solution, you need to create a custom role to include privileges to entitles like Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. Get the full list of entities from [Party-GAB page](party-gab.md)|
