@@ -13,7 +13,7 @@ ms.search.validFrom: 2023-01-12
 
 # How to configure number Sequence and autonumber columns while using dual-write?
 
-The [Number sequences](../../fin-ops/organization-administration/number-sequence-overview) in finance and operations apps and the [autonumber columns](https://learn.microsoft.com/en-us/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
+The [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
 
 - In the finance and operations application, use F0001, F0002, F0003. In the customer engagement application, use C0001, C0002, C0003. 
 - In the finance and operations application, use US0001 to US4999. In the customer engagement application, use US5000 to US9999. 
@@ -26,7 +26,7 @@ During the initial sync, if the field data validation for the autonumber field i
 - The customer and engagement app numeric sequence value should be in the interval defined by the Smallest and Largest values in the finance and operation apps number sequences settings.
 - The constants used must be identical.
 
-The number sequence settings used by data entities such as customers, orders, or quotes in finance and operations apps can be found in **Accounts Receivable parameters** and **Number Sequences**. For more information, see [Number sequences](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+The number sequence settings used by data entities such as customers, orders, or quotes in finance and operations apps can be found in **Accounts Receivable parameters** and **Number Sequences**. For more information, see [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview)
 
 If during dual-write initial sync, you observe an error message similar to **‘Field ABC does not allow editing. Number CE-20000001 does not match format ######. Validations failed.’** or **‘Field ABC does not allow editing. Highest number allowed is 4999. Validations failed.’**, you need to review the customer and engagement app autonumber sequences and finance and operations app autonumber number settings and update accordingly. Another alternative is to skip the validation by disabling field validation at data entity level in finance and operations data management.
 
@@ -41,14 +41,14 @@ To disable filed validation in finance and operations data entity for dual-write
 1. Select to update a data entity, and for the autonumber field uncheck the **Call validate Field** method.
 1. Select **Save**. 
 
-For more information, see [Optimize data migration for finance and operations apps](../sysadmin/optimize-data-migration).
+For more information, see [Optimize data migration for finance and operations apps](../../sysadmin/optimize-data-migration).
 
 ![Screenshot of the Map staging to target screen with the Call validate Field method highlighted for the SALESORDERNUMBER field](media/numseq-1.png)
 
 
 ## Finance and operations number sequence settings
 
-When working with autonumbering in finance and operations apps, it's important to understand the [number sequence settings](../fin-ops/organization-administration/number-sequence-overview): 
+When working with autonumbering in finance and operations apps, it's important to understand the [number sequence settings](../../../fin-ops/organization-administration/number-sequence-overview): 
 
 ![Screenshot of the General setup box for number allocation](media/numseq-2.png)
 
@@ -83,7 +83,7 @@ During initial sync, if you don't want to increase the finance and operations co
 
 ## Largest value reached in a finance and operations number sequence settings
 
-When the largest value is reached, an error message displays similar to **'Number sequence [number] has been exceeded. Number selection is canceled’**. Resolve this error by increasing the largest value and/or the alphanumeric segment format length. For more information, see [Number sequences](../fin-ops/organization-administration/number-sequence-overview).
+When the largest value is reached, an error message displays similar to **'Number sequence [number] has been exceeded. Number selection is canceled’**. Resolve this error by increasing the largest value and/or the alphanumeric segment format length. For more information, see [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview).
  
 
 
