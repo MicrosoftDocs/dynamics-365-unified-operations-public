@@ -1,5 +1,5 @@
 ---
-title: Reset functionality
+title: Reset dual-write connections
 description: This article describes the reset button functionality of dual-write.
 author: ramasri
 ms.date: 12/20/2022
