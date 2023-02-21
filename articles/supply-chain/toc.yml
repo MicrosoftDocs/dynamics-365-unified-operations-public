@@ -1761,6 +1761,8 @@
         items:
         - name: Planning Optimization release process and release history
           href: master-planning/planning-optimization/release-process.md
+        - name: Improve scheduling engine performance
+          href: master-planning/scheduling-engine-performance.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
         - name: Resolve the "Not enough capacity could be found" scheduling engine error
@@ -1945,8 +1947,6 @@
             href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
           - name: Improve master planning performance
             href: master-planning/master-planning-performance.md
-          - name: Improve scheduling engine performance
-            href: master-planning/scheduling-engine-performance.md
           - name: Set up master plans for the deprecated planning engine
             href: master-planning/deprecated-master-plans.md
           - name: Create an intercompany plan
