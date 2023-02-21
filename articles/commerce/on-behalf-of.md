@@ -43,12 +43,12 @@ To sign in to a B2B site using OBO functionality, follow these steps.
 1. On the B2B site, select **Sign-in**.
 1. Select **Employee sign-in**
 
-    :::image type="content" source="media/obo-sign-in-experience.png" alt-text="Sign-in screen for business partner user has a button for Employee Sign-in":::
+    ![Sign-in screen for business partner user has a button for Employee Sign-in](media/obo-sign-in-experience.png)
 
 1. On the next screen, select the business buyer organization you want to work on behalf of.
 1. Select a buyer whom you want to work on behalf of.
 
-    :::image type="content" source="media/obo-select-business-partners.png" alt-text="Account Manager selects a business partner organization":::
+    ![Account Manager selects a business partner organization](media/obo-select-business-partners.png)
 
 Once these selections are made, you (as the account manager) are now representing the buyer you selected, and have full access to their account information, pricing, catalog information, and discounts. You can now add items to the cart and create an order. Completed orders are easily distinguishable from regular orders because they are prefixed with the account manager name. 
 
@@ -60,7 +60,7 @@ You can also create a template for the buyer to use later. It is recommended tha
 > - Account managers have access to view a buyer's invoices, but aren't able to pay invoices. 
 > - Account managers can create a new order template for the buyer. The order template will not have an additional identifier that the template has been created by the  account manager. 
 > - Currently, the [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature isn't supported with the OBO feature, and must be turned off to use the OBO functionality. 
-> - Any custom extensions that affect **customer hierarchies** or **sales groups** might need to be modified to support on behalf of functionality. In addition, any extentions that retrieve values directly from the **user context** on e-Commerce site might need to be modified. 
+> - Any custom extensions that affect customer hierarchies or sales groups might need to be modified to support OBO functionality. Any extensions that retrieve values directly from the user context on e-commerce site might also need to be modified. 
 
 ## Additional resources
 
