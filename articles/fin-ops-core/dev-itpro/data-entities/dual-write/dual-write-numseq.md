@@ -13,7 +13,7 @@ ms.search.validFrom: 2023-01-12
 
 # How to configure number Sequence and autonumber columns while using dual-write?
 
-The [Number sequences](../fin-ops/organization-administration/number-sequence-overview) in finance and operations apps and the [autonumber columns](https://learn.microsoft.com/en-us/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications are not connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
+The [Number sequences](../../fin-ops/organization-administration/number-sequence-overview) in finance and operations apps and the [autonumber columns](https://learn.microsoft.com/en-us/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
 
 - In the finance and operations application, use F0001, F0002, F0003. In the customer engagement application, use C0001, C0002, C0003. 
 - In the finance and operations application, use US0001 to US4999. In the customer engagement application, use US5000 to US9999. 
@@ -46,7 +46,7 @@ For more information, see [Optimize data migration for finance and operations ap
 ![Screenshot of the Map staging to target screen with the Call validate Field method highlighted for the SALESORDERNUMBER field](media/numseq-1.png)
 
 
-## Finance and operatsions number sequence settings
+## Finance and operations number sequence settings
 
 When working with autonumbering in finance and operations apps, it's important to understand the [number sequence settings](../fin-ops/organization-administration/number-sequence-overview): 
 
@@ -57,7 +57,7 @@ When working with autonumbering in finance and operations apps, it's important t
 - **Largest** defines the highest numeric value allowed for the sequence.
 - **Next** indicates the next numeric value to use in the number sequence.
 - **To a higher number** and **To a lower number** flags allow users to enter a value higher or lower than the **Next** value. 
-- **Continuous** avoids gaps and enables re-using values in case records are deleted. You should carefully analyze performance impact if there's a requirement to enable this feature.
+- **Continuous** avoids gaps and enables reusing values in case records are deleted. You should carefully analyze performance impact if there's a requirement to enable this feature.
 
 Also in the number sequence, you can have different segments that can be used to compose the full value, such as constants or company name:
 
