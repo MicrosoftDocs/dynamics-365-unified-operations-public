@@ -66,7 +66,7 @@ By default, the following segments are available and can be included in audience
 
 Commerce lets you expand the list of available segments by connecting to third-party segmentation providers. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
-If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, if a user requests a page that includes targeting and that page references an audience that checks a third-party segment provider, the default version of the page is shown. For this reason, geolocation provider information is not resolved on the initial page request by default, but during a subsequent callback. To override this behavior and resolve geolocation provider information on the initial page request, file a [support ticket] (https://support.microsoft.com).
+If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, if a user requests a page that includes targeting and that page references an audience that checks a third-party segment provider, the default version of the page is shown. For this reason, geolocation provider information isn't resolved on the initial page request by default, but during a subsequent callback. To override this behavior and resolve geolocation provider information on the initial page request, file a [support ticket] (https://support.microsoft.com).
 
 > [!NOTE]
 > The user must consent to allow cookies. The user's browser then requests all segments from relevant providers, and the results are put in a cookie that is returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
@@ -109,14 +109,14 @@ To rename an existing audience in Commerce site builder, follow these steps.
 
 A target is the user experience that is shown to members of one or more selected audiences. It can include variations of one or more modules on a page or in a fragment. 
 
-You can define a schedule for your targets to specify how long they should remain active. Note that this action is separate from the action of scheduling a publish group that determines when a collection of content will be published. You can also preview your targets to see what they will look like to members of selected audiences. Additionally, you can prioritize your targets to specify which target should be shown in the event of a conflict.
+You can define a schedule for your targets to specify how long they should remain active. Note that this action is separate from the action of scheduling a publish group that determines when a collection of content will be published. You can also preview your targets to see what they'll look like to members of selected audiences. Additionally, you can prioritize your targets to specify which target should be shown in the event of a conflict.
 
 ### Create a target
 
 To create a target shell for page modules in Commerce site builder, follow these steps.
 
 1. In the left navigation pane, select **Pages**. Then select the hyperlink for the page that has the modules that you want to target.
-1. Select **Edit** to check the page out for editing.
+1. Select **Edit** to check out the page for editing.
 1. On the **Target** menu, select **New target** to create a new target shell. You can create multiple targets on a page as you require.
 1. Enter a name and description for your target, and then select **Next**.
 1. Select **Add** to include the audiences that will see the targeted content, or to exclude audiences. Then select **Next**.
