@@ -27,7 +27,7 @@ In Dataverse, each business unit has a default owning team that uses the same na
 
 To find the root business unit and default teams, follow these steps.
 
-1. In a web browser, sign in to the Dataverse or Customer Engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[environment\]** with your environment's name.
+1. In a web browser, sign in to the Dataverse or customer engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[environment\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL.
 
     `https://[environment].dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null`
@@ -106,13 +106,14 @@ If the exception occurs, follow these steps to assign the correct permissions to
 
 For more information about Dataverse security roles and privileges, see [Configure user security to resources in an environment](/power-platform/admin/database-security).
 
-
 ## Security roles for users and teams
-|User/Team | Security roles to assign |
-|-----------|---------------------------|
-|Owning team set as default on cdm_company record |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders|
-|Business user doing live sync |	‘Dual-write runtime user’ + ‘Dual-write app user’ + one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope for dual-write e.g. accounts, contacts, orders |
-| Maker who needs to update table maps	| System customizer or System administrator role in Dataverse and System Administrator role in finance and operations apps |
-| Owning team for global records	| ‘Dual-write runtime user’ + ‘Dual-write app user’ +  one or more Dataverse build-in security roles like Salesperson or Sales Manager etc. or custom security roles to allow access to entities in scope, for example, products etc.|
 
-*For global address book and party model solution, you need to create a custom role to include privileges to entitles like Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, Location, etc. Get the full list of entities from [Party-GAB page](party-gab.md)|
+| User or team | Security roles to assign |
+|--------------|--------------------------|
+| The owning team that's set as the default owning team on the cdm\_company record | **Dual-write runtime user**, **Dual-write app user**, and one or more built-in Dataverse security roles (such as **Salesperson** or **Sales Manager**) or custom Dataverse security roles to allow access to entities that are in scope for dual-write (for example, accounts, contacts, and orders) |
+| A business user who's doing live synchronization | **Dual-write runtime user**, **Dual-write app user**, and one or more built-in Dataverse security roles (such as **Salesperson** or **Sales Manager**) or custom Dataverse security roles to allow access to entities that are in scope for dual-write (for example, accounts, contacts, and orders) |
+| A maker who must update table maps | The **System customizer** or **System administrator** role in Dataverse, and the **System Administrator** role in finance and operations apps |
+| The owning team for global records | **Dual-write runtime user**, **Dual-write app user**, and one or more built-in Dataverse security roles (such as **Salesperson** or **Sales Manager**) or custom Dataverse security roles to allow access to entities that are in scope (for example, products) |
+
+> [!NOTE]
+> For the global address book and party model solution, you must create a custom role to include privileges to entities such as Party, Contact for Party, Electronic Address, Postal Address, Party Postal Address, Postal Address Role, and Location. For the full list of entities, see [Party and global address book](party-gab.md).
