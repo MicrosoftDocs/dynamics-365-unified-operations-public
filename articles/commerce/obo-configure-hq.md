@@ -46,20 +46,18 @@ Next, you must create and configure a sales group in headquarters. For informati
 
 Create a sales group of one or more account managers. Assign commissions percentages (if your organization assigns commissions). For OBO functionality to work, it's sufficient for a sale representative to be present in a sales group. A commission percentage can be equal to zero. 
 
-## Associate a sales group with a B2B buyer organization
+### Associate a sales group with a B2B buyer organization
 
-Under **Sales and Marketing \> Customers \> All customers** locate a customer of type organization that needs to be managed by the sales group you set up in the previous step. Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. Any member of the Sales group is able to work on behalf of any user in this customer hierarchy.
+To associate a sales group with a B2B buyer organization in headquarters, follow these steps.
 
+1. Go to **Sales and Marketing \> Customers \> All customers**.
+1. Locate a customer of type **Organization** that needs to be managed by the sales group you created (for example, "Contoso B2B"). 
+1. On the **Sales order defaults** FastTab, under **Sales group**, enter the sales group ID of the sales group you created. 
+1. On the action pane, select **Save**.
 
-<!--To associate a sales group with a B2B buyer organization in headquarters, follow these steps.
+Any member of the sales group will now be able to work on behalf of any user in this customer organization.
 
-Go to **Sales and Marketing \> Customers \> All customers**.
-Locate a customer of type organization that needs to be managed by the sales group you set up in the previous section. 
-Specify this sales group ID in the field **Sales group** under **Sales order defaults** tab. 
-
-Note, in the customer hierarchy that corresponds to this customer organization you'll be able to observe the sales group appear as a read-only field in the section **Sales Groups**. 
-
-Any member of the sales group is able to work on behalf of any user in this customer hierarchy.  -->
+In the customer hierarchy that corresponds to this customer organization (**Retail and Commerce \> Customers \> Customer hierarchies**), you'll now be able to see the sales group as a read-only value in the **Sales Groups** section. 
 
 ![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)
 
