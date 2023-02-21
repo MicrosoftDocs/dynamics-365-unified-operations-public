@@ -182,7 +182,7 @@ To enable customer orders to be created in asynchronous mode, follow these steps
 
 To enable the asynchronous order mode, navigate to the Functionality profiles page in the Commerce headquarters and select the functionality profile that corresponds to the store where you want to enable the asynchronous order creation. There are two sub modes within the asynchronous customer order creation mode which can be selected using one of the below configurations under the “General” fast tab.
 
-1. In Commerce headquarters, go to the Functionality profiles page at **Retail and Commerce \> Channel setup \> Online store setup**. 
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**. 
 1. Select the functionality profile that corresponds to the store where you want to enable asynchronous order creation.
 1. On the **General** FastTab, select one of the following configuration options:
     - **Create customer order in async mode**
