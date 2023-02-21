@@ -51,15 +51,15 @@ Create a sales group of one or more account managers. Assign commissions percent
 To associate a sales group with a B2B buyer organization in headquarters, follow these steps.
 
 1. Go to **Sales and Marketing \> Customers \> All customers**.
-1. Locate a customer of type **Organization** that needs to be managed by the sales group you created (for example, "Contoso B2B"). 
+1. Find the customer of type **Organization** that needs to be managed by the sales group you created (for example, "Contoso B2B"), and then select its name or account number. 
 1. On the **Sales order defaults** FastTab, under **Sales group**, enter the sales group ID of the sales group you created. 
 1. On the action pane, select **Save**.
 
-Any member of the sales group will now be able to work on behalf of any user in this customer organization.
+Any member of the sales group will now be able to work on behalf of any user in this customer B2B buyer organization.
 
 In the customer hierarchy that corresponds to this customer organization (**Retail and Commerce \> Customers \> Customer hierarchies**), you'll now be able to see the sales group as a read-only value in the **Sales Groups** section. 
 
-![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)
+<!--![Example of Contoso B2B customer hierarchy that has a sales group 998 listed](media/obo-customer-hierarchy.png)-->
 
 ## Additional resources
 
