@@ -424,26 +424,26 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. On the file share machine, run the following command.
 
     ```powershell
-    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
+    .\Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
 1. If you want to change the default share names and base paths, update the **FileShares** section in the **ConfigTemplate.xml** file.
 1. Run the following script to create the file shares.
 
     ```powershell
-    New-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\New-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 1. Run the following script to apply the required configuration and permissions to each file share.
 
     ```powershell
-    Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 1. Run the following script to confirm that the required permissions and configuration have been applied to each file share.
 
     ```powershell
-    Test-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 ### <a name="setupsql"></a>Step 10. Set up SQL Server
