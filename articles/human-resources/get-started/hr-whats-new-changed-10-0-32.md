@@ -110,7 +110,7 @@ The following table lists the features that are turned on by default or are now 
 
 ## Entities and entity templates added in this release
 
-Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. For more information, see [Human Resources data entities and templates](/data-entity).
+Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. For more information, see [Human Resources data entities and templates](../../human-resources/data-entity.md).
 
 ## Additional resources
 
