@@ -4,7 +4,7 @@
 title: Periodic tasks in Recurring contract billing
 description: This article describes the periodic tasks that are available in Recurring contract billing.
 author: JodiChristiansen
-ms.date: 01/29/2023
+ms.date: 02/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -132,7 +132,7 @@ If the **Remove hold** process is completed, and the **Remove date** field is se
 
 ## Mass termination processing
 
-Use the **Mass termination** page to terminate billing schedule lines that are currently shown by specifying a termination date.
+Use the **Mass termination** page to terminate billing schedule lines that are currently shown by specifying a termination date and reason code. 
 
 If you're using revenue and expense deferrals, billing schedules where the **Termination date** field is set to **Adjust schedule** on the **All billing schedules** page are eligible for a refund.
 
@@ -140,6 +140,8 @@ Billing schedules that use the multiple element allocation (MEA) functionality d
 
 > [!NOTE]
 > Billing schedule lines that are currently included in a **Generate invoice** batch aren't available for this process.
+
+On the **Mass termination process** page, in **Process options**, select **Remove termination** to remove the termination from multiple billing schedules or billing schedule lines that have been terminated. Use the filter for the **Billing schedule** to select which billing schedules to remove the termination from. If a billing schedule line was terminated with a credit that has been invoiced, it can't be removed and those lines will not appear in the preview.
 
 For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedule.md).
 
