@@ -1,6 +1,6 @@
 ---
-title: How to configure number Sequence and autonumber columns while using dual-write
-description: This article describes how to configure the Number sequences in F&O and Autonumber columns in Microsoft Dataverse for business identifiers involved in dual-write. 
+title: Configure number sequences and autonumber columns when using dual-write
+description: This article explains how to configure number sequences in finance and operations apps and autonumber columns in Microsoft Dataverse for business identifiers that are involved in dual-write. 
 author: ramasri
 ms.date: 02/21/2023
 ms.topic: article
@@ -11,81 +11,84 @@ ms.author: ramasri
 ms.search.validFrom: 2023-01-12
 ---
 
-# How to configure number Sequence and autonumber columns while using dual-write
+# Configure number sequences and autonumber columns when using dual-write
 
-By default, the [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
+By default, the [number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) in customer engagement apps aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats or create a range for each application. Here are some examples:
 
-- In the finance and operations application, use F0001, F0002, F0003. In the customer engagement application, use C0001, C0002, C0003. 
-- In the finance and operations application, use US0001 to US4999. In the customer engagement application, use US5000 to US9999. 
+- In the finance and operations app, use F0001, F0002, and F0003. In the customer engagement app, use C0001, C0002, and C0003.
+- In the finance and operations app, use US0001 through US4999. In the customer engagement app, use US5000 through US9999.
 
-When you need to perform a live sync, and for the examples above to work in finance and operations data management, within the data entity mappings make sure that the data field validation for the autonumber field isn't checked.  If there's a business reason to run the validation, we recommend that you review the number sequence settings of the data entities in scope in the finance and operations application. These rules are validated only when running the initial sync, live sync isn't affected. 
+For the preceding examples to work in finance and operations data management when you do a live synchronization, you must ensure that data field validation is disabled for the autonumber field in the data entity mappings. If there's a business reason to run the validation, we recommend that you review the number sequence settings of the data entities that are in scope in the finance and operations app. These rules are validated only when the initial synchronization is run. Live synchronization isn't affected.
 
-During the initial sync, if the field data validation for the autonumber field is enabled, you need to verify the following items for both the customer engagement app and the finance and operation apps:
+During the initial synchronization, if field data validation is enabled for the autonumber field, you must verify the following items for both the customer engagement app and the finance and operation app:
 
-- The autonumber sequences length match.
-- The customer and engagement app numeric sequence value should be in the interval defined by the Smallest and Largest values in the finance and operation apps number sequences settings.
-- The constants used must be identical.
+- The length of autonumber sequences must match.
+- The numeric sequence value in the customer engagement app must be in the interval that's defined by the **Smallest** and **Largest** values in the number sequence settings in the finance and operation app.
+- The constants that are used must be identical.
 
-The number sequence settings used by data entities such as customers, orders, or quotes in finance and operations apps can be found in **Accounts Receivable parameters** and **Number Sequences**. For more information, see [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md)
+The number sequence settings that are used by data entities such as customers, orders, or quotes in finance and operations apps can be found on the **Accounts receivable parameters** and **Number sequences** pages. For more information, see [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md).
 
-If during dual-write initial sync, you observe an error message similar to **‘Field ABC does not allow editing. Number CE-20000001 does not match format ######. Validations failed.’** or **‘Field ABC does not allow editing. Highest number allowed is 4999. Validations failed.’**, you need to review the customer and engagement app autonumber sequences and finance and operations app autonumber number settings and update accordingly. Another alternative is to skip the validation by disabling field validation at data entity level in finance and operations data management.
+During the dual-write initial synchronization, you might receive an error message that resembles one of the following examples:
+
+> Field ABC does not allow editing. Number CE-20000001 does not match format \#\#\#\#\#\#. Validations failed.
+
+> Field ABC does not allow editing. Highest number allowed is 4999. Validations failed.
+
+In this case, you must review the autonumber sequences in the customer engagement app and the number sequence settings in the finance and operations app, and update them as appropriate. Alternatively, you can skip the validation by disabling field validation at the data entity level in finance and operations data management.
 
 If a table is created in only one system, set up the number sequence in the source app only. For more information, see [Autonumber columns](/powerapps/maker/data-platform/autonumber-fields).
 
+## Disable field validation in the finance and operations data entity for the dual-write initial synchronization
 
-## How to disable field validation in finance and operations data entity for dual-write initial sync
+To disable field validation in the finance and operations data entity for the dual-write initial synchronization, follow these steps.
 
-To disable filed validation in finance and operations data entity for dual-write initial sync, follow these steps.
-
-1. Navigate to finance and operations Data Management > Data entities.
-1. Select to update a data entity, and for the autonumber field uncheck the **Call validate Field** method.
-1. Select **Save**. 
+1. In the finance and operations app, go to **Data Management** \> **Data entities**.
+1. Select to update a data entity, and then, for the autonumber field, clear the **Call validate Field method** checkbox.
+1. Select **Save**.
 
 For more information, see [Optimize data migration for finance and operations apps](../../sysadmin/optimize-data-migration.md).
 
-![Screenshot of the Map staging to target screen with the Call validate Field method highlighted for the SALESORDERNUMBER field](media/numseq-1.png)
-
+![Map staging to target page, where the Call validate Field method checkbox for the SALESORDERNUMBER autonumber field is cleared.](media/numseq-1.png)
 
 ## Finance and operations number sequence settings
 
-When working with autonumbering in finance and operations apps, it's important to understand the [number sequence settings](../../../fin-ops/organization-administration/number-sequence-overview.md): 
+When you work with autonumbering in finance and operations apps, it's important that you understand the [number sequence settings](../../../fin-ops/organization-administration/number-sequence-overview.md).
 
-![Screenshot of the General setup box for number allocation](media/numseq-2.png)
+- **Manual** – You should set this option to **No** if you want the system to generate values.
+- **Smallest** – This field defines the smallest numeric value that's allowed for the number sequence.
+- **Largest** – This field defines the largest numeric value that's allowed for the number sequence.
+- **Next** – This field indicates the next numeric value that should be used in the number sequence.
+- **To a higher number** and **To a lower number** – These options let users enter a value that's larger or smaller than the **Next** value.
+- **Continuous** – This option helps prevent gaps and enables values to be reused when records are deleted. If there's a requirement to enable this option, you should carefully analyze the performance impact.
 
-- **Manual**, it should be set to **No** if you want the system to generate values. 
-- **Smallest** defines the lowest numeric value allowed for the sequence.
-- **Largest** defines the highest numeric value allowed for the sequence.
-- **Next** indicates the next numeric value to use in the number sequence.
-- **To a higher number** and **To a lower number** flags allow users to enter a value higher or lower than the **Next** value. 
-- **Continuous** avoids gaps and enables reusing values in case records are deleted. You should carefully analyze performance impact if there's a requirement to enable this feature.
+![Example of the General section for number allocation.](media/numseq-2.png)
 
-Also in the number sequence, you can have different segments that can be used to compose the full value, such as constants or company name:
+In the number sequence, you can have different segments that make up the full value. These segments can include constants or the company name.
 
-![Screenshot of the Segments dialog box that shows a Constant value of CE with 6 numbers and a format of CE######](media/numseq-3.png)
+![Segments section that shows a Constant value of CE and six numbers in the format of CE######.](media/numseq-3.png)
 
-Once you enable data validation and confirm the format of the column (for example, the Sales Order Number) on Dataverse matches the number sequence, the user may still encounter the following error messages. 
+Even after you enable data validation and confirm that the format of the column (for example, the sales order number) in Dataverse matches the number sequence, users might still receive the following error messages.
 
-|Error Message|Cause|
-|-----|----|
-|Field [Field name] does not allow editing. Invalid specification of Sales order Number sequence Sale_293 does not allow change to a higher number. Validations failed | The number sequence setup doesn’t allow editing. This error occurs when the settings for **Manual**, **To a Lower Number** (under allow user change), or **To a Higher Number** (under allow user change) are set to **No**. To fix this issue, enable one of these settings, and the issue will resolve. |
-|Incoming [Field name] < Lowest number allowed is 1000000. Validations failed | The incoming values (numeric part) need to be within the finance and operations number sequence number allocation range. (The number should be less than the largest value.) |
-|Incoming [Field name] > highest number allowed is NNN (say: 1000000.) Validations failed | The incoming values (numeric part) need to be within the F&O number sequence number allocation range. (Should be greater than smallest value) . |
+| Error message | Cause |
+|---|---|
+| Field \[field name\] does not allow editing. Invalid specification of Sales order Number sequence Sale_293 does not allow change to a higher number. Validations failed. | The number sequence setup doesn't allow for edits. This error occurs when the **Manual**, **To a lower number**, or **To a higher number** option is set to **No**. To fix the issue, set one of these options to **Yes**. |
+| Incoming \[field name\] \< Lowest number allowed is 1000000. Validations failed. | The incoming values (numeric part) must be within the number allocation range for the finance and operations number sequence. (The number should be less than the largest value.) |
+| Incoming \[field name\] \> highest number allowed is \[number\]. Validations failed. | The incoming values (numeric part) must be within the number allocation range for the finance and operations number sequence. (The number should be more than the smallest value.) |
 
+## Dataverse autonumbering
 
-## Dataverse autonumbering 
-[Autonumber columns](/power-apps/maker/data-platform/autonumber-fields) are Dataverse columns that automatically generate alphanumeric strings whenever they're created. Makers can customize the format of these columns to their liking, and then rely on the system to generate matching values that automatically fill them in at runtime. For example, sales order number set up as autonumber type in Dataverse:
+[Autonumber columns](/power-apps/maker/data-platform/autonumber-fields) are Dataverse columns that automatically generate alphanumeric strings whenever they're created. Makers can customize the format of these columns as they prefer, and then rely on the system to generate matching values and automatically fill them in at runtime. For example, in the following illustration, the **Sales Order Number** column has been set up as an autonumber column in Dataverse.
 
-![Screenshot of the Edit column dialog box](media/numseq-4.png)
+![Edit column dialog box where the Sales Order Number column is defined as an autonumber column.](media/numseq-4.png)
 
-## Prevent counter increments in finance and operations apps during initial sync 
+## Prevent counter increments in finance and operations apps during the initial synchronization
 
-During initial sync, if you don't want to increase the finance and operations counter when Dataverse records get created with initial sync, for the respective finance and operations numbering sequence, set the value of **Continuous** to **Yes**. 
+If you don't want the finance and operations counter to increase when Dataverse records are created during the initial synchronization, set the **Continuous** option to **Yes** for the appropriate finance and operations number sequence.
 
-## Largest value reached in a finance and operations number sequence settings
+## Largest value in finance and operations number sequence settings is reached
 
-When the largest value is reached, an error message displays similar to **'Number sequence [number] has been exceeded. Number selection is canceled’**. Resolve this error by increasing the largest value and/or the alphanumeric segment format length. For more information, see [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md).
- 
+If the **Largest** value that's defined in the number sequence settings is reached, the user receives the following error message:
 
+> Number sequence \[number\] has been exceeded. Number selection is canceled.
 
-
-
+To fix this issue, increase the **Largest** value and/or the length of the alphanumeric segment format. For more information, see [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md).
