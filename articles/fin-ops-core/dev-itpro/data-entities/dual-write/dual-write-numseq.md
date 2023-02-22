@@ -1,5 +1,5 @@
 ---
-title: How to configure number Sequence and autonumber columns while using dual-write?
+title: How to configure number Sequence and autonumber columns while using dual-write
 description: This article describes how to configure the Number sequences in F&O and Autonumber columns in Microsoft Dataverse for business identifiers involved in dual-write. 
 author: ramasri
 ms.date: 02/21/2023
@@ -11,7 +11,7 @@ ms.author: ramasri
 ms.search.validFrom: 2023-01-12
 ---
 
-# How to configure number Sequence and autonumber columns while using dual-write?
+# How to configure number Sequence and autonumber columns while using dual-write
 
 By default, the [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
 
