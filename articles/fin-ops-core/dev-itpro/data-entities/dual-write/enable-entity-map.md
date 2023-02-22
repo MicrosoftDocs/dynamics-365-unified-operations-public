@@ -18,11 +18,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-When you enable a table map for dual-write, it begins at the **Not running** status. The table map then goes through an initialization phase, where it does an initial write by copying pre-existing data on tables on both sides. When the table is completely enabled, it changes the status of the table map to **Running**. **Running**.
+When you enable a table map for dual-write, it begins at the **Not running** status. The table map then goes through an initialization phase, where it does an initial write by copying pre-existing data on tables on both sides. When the table is completely enabled, it changes the status of the table map to **Running**.
 
 ![Enabling table maps.](media/enabling-entity-map.png)
 
-While the status is **Running**, you can pause a table. All changes are then queued until you resume. When you resume, the table enters "catch-up mode," and it plays back all the queued changes.
+While the status is **Running**, you can pause a table. All changes are then queued until you resume. When you resume, the table enters "catch-up mode" and plays back all the queued changes.
 
 The following illustration shows an example of a table that is paused.
 
@@ -36,7 +36,7 @@ The following illustration shows an example of a table that is paused.
 | Paused | The table is in a paused state, and all new requests are queued. | Run |
 | Resuming | The table is catching up on rows that were queued while the table was paused. | None |
 
-During the initialization phase, any pre-existing data that you've is copied as part of the initial write phase.
+During the initialization phase, any pre-existing data that you have is copied as part of the initial write phase.
 
 ![Copying pre-existing data.](media/initial-write-phase.png)
 
@@ -55,20 +55,20 @@ When you select a table map (for example, **Customers V3—Contacts**) and selec
 
 ![Listing all the dependent tables.](media/related-entity-maps.png)
 
-During data sync, if records with same key(s) are found on both sides with competing attribute values, then merge conflict situation araises. In order to handle it, you need to choose **Master for initial sync** for each entity map in the list, which will be considered as the master data to resolve conflicts. By default, Dataverse is used. 
+During data synchronization, if records that have the same keys are found on both sides, and the keys have competing attribute values, a merge conflict occurs. In this case, you must select a **Master for initial sync** value for every entity map in the list to specify the master data that should be used to resolve conflicts. By default, Dataverse is used. 
 
 > [!NOTE]
-> Master for initial sync value is used only to resolve conflicts. It does not control the direction in which that data should move. 
+> The **Master for initial sync** value is used only to resolve conflicts. It doesn't control the direction that data should move in. 
 
-If you don't want to copy pre-existing data, skip the initial synchronization by clearing the **Initial Sync** check box. Alternatively, remove one or more of the related tables by canceling the selection of them. You can also drag the table maps to change the order that they'll be synced in.
+If you don't want to copy pre-existing data, skip the initial synchronization by clearing the **Initial Sync** checkbox. Alternatively, remove one or more of the related tables by canceling the selection of them. You can also drag the table maps to change the order that they'll be synced in.
 
-After you've finished making your selections in the dialog box, and you select **Run**, the table map and all its related tables go through the initial write phase. You're redirected to the table map list page. If any errors occur, you can view the details on the **Initial sync details** tab. This tab shows details about all the errors that occur while copying pre-existing data. After you fix the underlying errors, you can rerun the execution and monitor the outcome. Alternatively, if you no longer want to sync the pre-existing data, or if you experience recurring issues because of underlying data, you can skip the initial write phase. Instead, you can turn on live writes by selecting **Skip initial sync**.
+After you've finished making your selections in the dialog box, and you select **Run**, the table map and all its related tables go through the initial write phase. You're redirected to the table map list page. If any errors occur, you can view the details on the **Initial sync details** tab. This tab shows details about all the errors that occur while pre-existing data is copied. After you fix the underlying errors, you can rerun the execution and monitor the outcome. Alternatively, if you no longer want to sync the pre-existing data, or if you experience recurring issues because of underlying data, you can skip the initial write phase. Instead, you can turn on live writes by selecting **Skip initial sync**.
 
 ![Skipping initial writes.](media/skip-initial-writes.png)
 
 ## <a id="criteria-for-linking"></a>Criteria for linking tables
 
-To enable table maps for dual-write, you must define an alternative key in Dataverse. The key defined in the finance and operations app must match the value of the alternative key in Dataverse.
+To enable table maps for dual-write, you must define an alternative key in Dataverse. The key that's defined in the finance and operations app must match the value of the alternative key in Dataverse.
 
 For example, in a finance and operations app, **CustomerAccount** is the key for the Account table.
 
