@@ -47,7 +47,7 @@ Before you can install the Invoice capture solution, you must complete the follo
 2. Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
 >[!NOTE]
->Install capture is supported on Dynamics 365 finance and operations version 10.0.29 and later.
+>Invoice capture is supported on Dynamics 365 finance and operations version 10.0.29 and later.
 
 ## Install and set up the solution
 
