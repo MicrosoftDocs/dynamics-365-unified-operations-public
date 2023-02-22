@@ -141,7 +141,7 @@ Billing schedules that use the multiple element allocation (MEA) functionality d
 > [!NOTE]
 > Billing schedule lines that are currently included in a **Generate invoice** batch aren't available for this process.
 
-In Process options, select **Remove termination** to remove the termination from multiple billing schedules or billing schedule lines that have been terminated. Use the filter for Billing schedule to select which billing schedules should have the termination removed. If a billing schedule line was terminated with a credit that has been invoiced, it can't be removed so those lines will not appear in the preview.
+In the **Process options**, select **Remove termination** to remove the termination from multiple billing schedules or billing schedule lines that have been terminated. Use the filter for the **Billing schedule** to select which billing schedules to remove the termination from. If a billing schedule line was terminated with a credit that has been invoiced, it can't be removed and those lines will not appear in the preview.
 
 For information about each field and the process, see [Terminate billing schedules](terminate-billing-schedule.md).
 
