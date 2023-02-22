@@ -13,7 +13,7 @@ ms.search.validFrom: 2023-01-12
 
 # How to configure number Sequence and autonumber columns while using dual-write?
 
-The [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
+By default, the [Number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) of customer engagement applications aren't connected. In a scenario that involves a multi-mastered table, you must either plan for separate number sequence formats, or create a range for each application. Here are some examples:
 
 - In the finance and operations application, use F0001, F0002, F0003. In the customer engagement application, use C0001, C0002, C0003. 
 - In the finance and operations application, use US0001 to US4999. In the customer engagement application, use US5000 to US9999. 
@@ -67,9 +67,9 @@ Once you enable data validation and confirm the format of the column (for exampl
 
 |Error Message|Cause|
 |-----|----|
-|Field  XXX (for example, Sales order) does not allow editing. Invalid specification of Sales order Number sequence Sale_293 does not allow change to a higher number. Validations failed | The number sequence setup doesn’t allow editing. This error occurs when the settings for **Manual**, **To a Lower Number** (under allow user change), or **To a Higher Number** (under allow user change) are set to **No**. To fix this issue, enable one of these settings, and the issue will resolve. |
-|Incoming XXX (for example, Sales order no) < Lowest number allowed is 1000000. Validations failed | The incoming values (numeric part) need to be within the finance and operations number sequence number allocation range. (The number should be less than the largest value.) |
-|Incoming XXX (for example, Sales order no) > highest number allowed is NNN (say: 1000000.) Validations failed | The incoming values (numeric part) need to be within the F&O number sequence number allocation range. (Should be greater than smallest value) . |
+|Field [Field name] does not allow editing. Invalid specification of Sales order Number sequence Sale_293 does not allow change to a higher number. Validations failed | The number sequence setup doesn’t allow editing. This error occurs when the settings for **Manual**, **To a Lower Number** (under allow user change), or **To a Higher Number** (under allow user change) are set to **No**. To fix this issue, enable one of these settings, and the issue will resolve. |
+|Incoming [Field name] < Lowest number allowed is 1000000. Validations failed | The incoming values (numeric part) need to be within the finance and operations number sequence number allocation range. (The number should be less than the largest value.) |
+|Incoming [Field name] > highest number allowed is NNN (say: 1000000.) Validations failed | The incoming values (numeric part) need to be within the F&O number sequence number allocation range. (Should be greater than smallest value) . |
 
 
 ## Dataverse autonumbering 
