@@ -1134,6 +1134,8 @@
               href: data-entities/dual-write/user-specified-team-owner.md
             - name: Reset dual-write connection
               href: data-entities/dual-write/reset.md
+            - name: How to configure number Sequence and autonumber columns while using dual-write
+              href: data-entities/dual-write/dual-write-numseq.md
         - name: Mapping concepts between apps
           items:
             - name: Integrated customer master
