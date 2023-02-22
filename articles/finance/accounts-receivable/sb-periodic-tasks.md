@@ -4,7 +4,7 @@
 title: Periodic tasks in Recurring contract billing
 description: This article describes the periodic tasks that are available in Recurring contract billing.
 author: JodiChristiansen
-ms.date: 01/29/2023
+ms.date: 02/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
