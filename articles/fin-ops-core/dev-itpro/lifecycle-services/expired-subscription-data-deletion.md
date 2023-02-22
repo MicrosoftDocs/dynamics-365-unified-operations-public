@@ -46,7 +46,7 @@ If you require multiple projects, you can create more by using the information i
 
 ## What happens when my license subscriptions expire?
 
-Customers adjust the number of licenses that they have on a regular basis. As was mentioned previously, a minimum of 20 base licenses is required to create a project. If the number of paid base licenses falls below 20, several automated actions are performed, as described in this section.
+Customers adjust the number of licenses that they have on a regular basis. As was mentioned previously, a minimum of 20 base licenses is required to create a project. If the number of paid base licenses falls below 20, several automated actions are performed for implementation projects, as described in this section.  
 
 ### Banners are shown and notifications are sent
 
@@ -56,19 +56,27 @@ Second, email communications and/or message center posts will be sent to your te
 
 ### Sandboxes are disabled
 
-The next action is to disable sandbox environments. Because these environments are used for testing, training, and debugging purposes, they will be targeted first for deallocation. This approach helps protect against non-compliance but doesn't affect customer production environments that host mission-critical workloads.
+The next action is to disable sandbox environments.  This will be performed 4 business days after communications are sent from the previous step. Because these environments are used for testing, training, and debugging purposes, they will be targeted first for deallocation. This approach helps protect against non-compliance but doesn't affect customer production environments that host mission-critical workloads.
+
+Disabled environments are not yet deleted.  These can be recovered if your licenses are renewed or if you provide proof of intent following the steps outlined in section *Manual renewal process* below.
 
 ### Production is disabled
 
-Three days after sandboxes are disabled, the production environment will be disabled. This action will begin a downtime for mission-critical workloads for the customer, because there will be an inactive or insufficient number of paid license subscriptions to operate the applications.
+Three business days after sandboxes are disabled, the production environment will be disabled. This action will begin a downtime for mission-critical workloads for the customer, because there will be an inactive or insufficient number of paid license subscriptions to operate the applications.
 
-### The project is deleted
+Disabled environments are not yet deleted.  These can be recovered if your licenses are renewed or if you provide proof of intent following the steps outlined in section *Manual renewal process* below.
 
-Fifteen days after the production environment is disabled, the project will be deleted. This action will remove all users, project data such as uploaded software assets, Azure connectors for deployment of cloud-hosted developer environments, and all associated sandbox and production environments.
+### Sandboxes are deleted
 
-## I've started to renew my licenses, but the process is longer because of enterprise agreements
+Three business days after Production is disabled, the sandbox environments will be deleted.  This is a non-recoverable action.  
 
-If you can show proof of your intent to renew your licenses, Microsoft can prevent the automated actions that were described earlier from occurring and will re-enable the environments. To communicate that you've started the renewal process with your license vendor, create a support ticket that includes those details, and submit it to Microsoft Support.
+### The project and Production environment are deleted
+
+Two business days after the sandboxes are deleted, the project will be deleted along with the Production environment. This is a non-recoverable action.  This action will remove all users, project data such as uploaded software assets, Azure connectors for deployment of cloud-hosted developer environments, and all associated sandbox and production environments.
+
+## Manual renewal process for long purchasing processes
+
+Sometimes purchasing licenses or renewing them can be a lengthy process for some customer organizations.  If you can show proof of your intent to renew your licenses, Microsoft can prevent the automated actions that were described earlier from occurring and will re-enable the environments. To communicate that you've started the renewal process with your license vendor, create a support ticket that includes those details, and submit it to Microsoft Support.
 
 ## Clean up your Azure subscription
 
