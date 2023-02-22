@@ -180,10 +180,8 @@ Customer orders can be created in POS in either synchronous mode or asynchronous
 
 To enable customer orders to be created in asynchronous mode, follow these steps.
 
-To enable the asynchronous order mode, navigate to the Functionality profiles page in the Commerce headquarters and select the functionality profile that corresponds to the store where you want to enable the asynchronous order creation. There are two sub modes within the asynchronous customer order creation mode which can be selected using one of the below configurations under the “General” fast tab.
-
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**. 
-1. Select the functionality profile that corresponds to the store where you want to enable asynchronous order creation.
+1. Select the functionality profile that corresponds to the store for which you want to enable asynchronous order creation.
 1. On the **General** FastTab, select one of the following configuration options:
     - **Create customer order in async mode**
     - **Create customer order with async fall back**
@@ -191,12 +189,12 @@ To enable the asynchronous order mode, navigate to the Functionality profiles pa
 > [!NOTE]
 > The **Create customer order with async fall back** option is available in Commerce version 10.0.33 and later.
 
-The **Create customer order in async mode** option always creates the order in a batch process. The POS immediately completes the transaction using the confirmation number for the order, but the order will be created in headquarters after a few minutes (after the relevant jobs have been run). The jobs required to create the order are **P-0001 (Channel transactions)** job and the **Synchronize orders** job. The confirmation number can be used for recalling the order for fulfillment and editing scenarios.
+The **Create customer order in async mode** option always creates the order in a batch process. The POS immediately completes the transaction using the confirmation number for the order, but the order will be created in headquarters after a few minutes (after the relevant jobs have been run). The jobs required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. The confirmation number can be used for recalling the order for fulfillment and editing scenarios.
 
-The **Create customer order with async fall back** option first tries to create the order using the Retail Transaction Service (RTS). If it fails, onlyn then will the order be created using the same batch process as described above. Most of the time, the order will be created as fast as the synchronous order creation. However, like for the **Create customer order in async mode** mode, the POS immediately completes the transaction using the confirmation number for the order, without waiting for the RTS call to complete. 
+The **Create customer order with async fall back** option first tries to create the order using the Retail Transaction Service (RTS). If it fails, only then will the order be created using the same batch process as described above. Most of the time, the order will be created as fast as the synchronous order creation. However, like for the **Create customer order in async mode** mode, the POS immediately completes the transaction using the confirmation number for the order, without waiting for the RTS call to complete. 
 
 > [!NOTE]
-> Asynchronous orders can't be edited or cancelled unless the orders are created in headquarters. Since the **Create customer order with async fall back** option first tries to create the order using the RTS call, most of the time the order should be available to edit and cancel within a few seconds. The capability to cancel asynchronous orders before they are synchronized in headquarters will be available in future releases.
+> Asynchronous orders can't be edited or cancelled unless the orders are created in headquarters. Since the **Create customer order with async fall back** option first tries to create the order using the RTS call, most of the time the order should be available to edit and cancel within a few seconds. The capability to cancel asynchronous orders before they are synchronized in headquarters are currently planned to be available in future releases.
 
 ## Additional resources
 
