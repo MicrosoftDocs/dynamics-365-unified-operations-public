@@ -2165,6 +2165,14 @@
         href: pricing-management/pricing-management-overview.md
       - name: Turn on the Pricing management module for your system
         href: pricing-management/pricing-management-enable.md
+      - name: Base price
+        items:
+        - name: Vendor list prices
+          href: pricing-management/vendor-list-price.md
+
+        - name: Base price versions
+          href: pricing-management/base-price-versions.md
+
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page
