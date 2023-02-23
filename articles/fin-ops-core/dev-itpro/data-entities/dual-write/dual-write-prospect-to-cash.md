@@ -123,6 +123,17 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 
 For information about price lists, see [Unified product experience](product-mapping.md).
 
+**Henrikan ** ## Changes available from version 10.0.34 onwards 
+
+In version 10.0.34 
+
+
+**Henrikan ** ## New dual write solution for Supply Chain 
+
+To support the changes generally from version 10.0.34 and onwards, a new dual write solution is available. 
+
+
+
 ## Limitations
 
 - Return orders are not supported.
