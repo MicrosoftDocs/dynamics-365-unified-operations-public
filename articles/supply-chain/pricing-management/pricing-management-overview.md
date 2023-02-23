@@ -25,7 +25,7 @@ Increasingly, traditional business to business (B2B) companies are thinking of c
 The main challenges include:
 
 - **Pricing silos** – A lack of transparency across channels and missing centralized pricing management.
-- **Pricing relevancy** – Need to consider all pricing factors when establishing B2B and B2C pricing rules.
+- **Pricing relevancy** – Need to consider all pricing factors when establishing B2B and business-to-consumer (B2C) pricing rules.
 - **Pricing complexity** – Difficulties in converting to B2B and B2C pricing logic without validation.
 - **Real-time execution** – Omnichannel customer experience requires a real-time pricing calculation response.
 
