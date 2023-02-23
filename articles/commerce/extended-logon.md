@@ -24,7 +24,7 @@ ms.search.form: RetailFunctionalityProfile
 
 This article describes how to set up and use the extended sign-in functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 
-The Store Commerce app and Store Commerce for web provide an extended sign-in capability that lets retail store workers sign in to the POS application by scanning a bar code or swiping a card by using a magnetic stripe reader (MSR).
+The Store Commerce app and Store Commerce for web provide an extended sign-in capability that lets retail store workers sign in to the POS application by scanning a barcode or swiping a card by using a magnetic stripe reader (MSR).
 
 Before implementing the extended sign-in capability, you must create your own custom extension because the out-of-the-box implementation is a developer sample not intended for use in production. For more information, see [Extend extended logon](#extend-extended-sign-in) below.
 
@@ -45,8 +45,8 @@ To set up extended sign-in for POS registers in a retail store, follow these ste
 2. In the left navigation pane, select the functionality profile that is associated with the retail store.
 3. On the **Functions** FastTab, under **Additional logon authentication options**, set the following options to **Yes** or **No** as appropriate:
 
-    - **Staff bar code logon** – Set this option to **Yes** if you want your workers to sign in to POS by scanning a bar code. 
-    - **Staff bar code logon requires password** – Set this option to **Yes** if you want your workers to enter a password when they sign in to POS by scanning a bar code.
+    - **Staff barcode logon** – Set this option to **Yes** if you want your workers to sign in to POS by scanning a barcode. 
+    - **Staff barcode logon requires password** – Set this option to **Yes** if you want your workers to enter a password when they sign in to POS by scanning a barcode.
     - **Staff card logon** – Set this option to **Yes** if you want your workers to sign in to POS by swiping a card.
     - **Staff card logon requires password** – Set this option to **Yes** if you want your workers to enter a password when they sign in to POS by swiping a card.
 
@@ -62,7 +62,7 @@ To delete the extended sign-in that is assigned to a worker, search for the work
 
 ## Use extended sign-in
 
-After extended sign-in is configured, and a bar code or magnetic stripe is assigned to a worker, the worker just has to swipe or scan their card while the POS sign-in page is shown. If a password is also required before sign-in can continue, the worker is prompted to enter their password.
+After extended sign-in is configured, and a barcode or magnetic stripe is assigned to a worker, the worker just has to swipe or scan their card while the POS sign-in page is shown. If a password is also required before sign-in can continue, the worker is prompted to enter their password.
 
 ## Extend extended sign-in
 
@@ -72,16 +72,16 @@ In the [extended sign-in sample](https://cloudblogs.microsoft.com/dynamics365/no
 
 ### POS extensions
 
-For POS extensions, the key is to collect the PIN number from an input dialog immediately after the user swipes the card or scans the barcode, and then pass the PIN number on to the corresponding requests. An input dialog (**PinInputDialog**) and four pretriggers (**PreEnrollUserCredentialsTrigger**, **PreLogOnTrigger**, **PreUnlockTerminalTrigger**, and **PreElevateUserTrigger**) are introduced.
+For POS extensions, the key point is to collect the PIN number from an input dialog immediately after the user swipes the card or scans the barcode, and then pass the PIN number on to the corresponding requests. This operation can be done using an input dialog (**PinInputDialog**) and four pretriggers (**PreEnrollUserCredentialsTrigger**, **PreLogOnTrigger**, **PreUnlockTerminalTrigger**, and **PreElevateUserTrigger**).
 
 ### Commerce runtime extensions
 
-There are some important service requests that require customizations.
-- **OverrideUserCredentialServiceRequest** is used in both user credential enrollment and sign-in token validation scenarios that are used to generate a new credential based on an old credential and an extra parameters dictionary containing the PIN number. The PIN number and the original credential aren't persisted in the data store, but instead the hashed value of the new credential is persisted.
-- **GetUserAuthenticationCredentialIdServiceRequest** is used to calculate the credential ID based on the user credential and an extra parameters dictionary. A minimum credential length check is also performed. The out-of-the-box implementation of the extended sign-n capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) are unique. This behavior must be changed in the service handler, due to security considerations and business requirements.
+There are some important CRT service requests that require customizations.
+- **OverrideUserCredentialServiceRequest** is used in credential enrollment and sign-in token validation to generate a new credential based on an old credential and an extra parameters dictionary containing the PIN number. The PIN number and the original credential aren't persisted in the data store, but the hashed value of the new credential is persisted instead.
+- **GetUserAuthenticationCredentialIdServiceRequest** calculates the credential ID based on the user credential and an extra parameters dictionary, and also performs a minimum credential length check. The out-of-the-box implementation of the extended sign-n capability requires that credentials have a minimum length of six characters, and that the first five characters (the credential ID) are unique. This behavior must be changed in the service handler, due to security considerations and business requirements.
 
 For detailed information about how to build extensions for extended sign-in, see [Extending the extended sign-in functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
-The sign-in service can also be extended to support additional extended sign-in devices, such as palm scanners. For more information, see the [POS extensibility documentation](dev-itpro/pos-extension/pos-extension-overview.md).
+You can also extend the sign-in service to support additional extended sign-in devices, such as palm scanners. For more information, see the [POS extensibility documentation](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
