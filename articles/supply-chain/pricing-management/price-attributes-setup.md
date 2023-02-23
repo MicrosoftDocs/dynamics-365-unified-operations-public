@@ -51,7 +51,7 @@ To use attributes when designing price rules for Pricing management, you must ma
 
 For attributes to have an effect, you must assign them to the relevant products using one of the following methods:
 
-- Assign product attributes to products using the [procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy). <!-- KFM: Is it right that we want to assign these to *procurement* categories? -->
+- Assign product attributes to products using the [Set up a procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md) <!-- KFM: Is it right that we want to assign these to *procurement* categories? -->
 - Group attributes into price attribute groups and [assign attribute groups to Commerce categories](../../commerce/attribute-attributegroups-lifecycle.md). Products assigned to categories that are associated to attribute groups inherit the attributes that are included in those attribute groups.
 
 For more information about attribute management and association, see [Manage attributes and attribute groups](../../commerce/attribute-attributegroups-lifecycle.md).
