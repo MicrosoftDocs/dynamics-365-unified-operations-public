@@ -125,7 +125,11 @@ For information about price lists, see [Unified product experience](product-mapp
 
 **Henrikan ** ## Changes available from version 10.0.34 onwards 
 
-In version 10.0.34 
+In version 10.0.34 changes are introduced to support Sales Quotation lifecycle management, improve the sales order status integration and pricing for sales quotation and sales orders when integrated. 
+
+## Sales Quotation lifecycle management
+Prerequisite: 
+
 
 
 **Henrikan ** ## New dual write solution for Supply Chain 
