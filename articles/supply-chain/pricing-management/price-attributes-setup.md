@@ -80,7 +80,7 @@ You can create Pricing management pricing rules that consider attribute values a
 
 Follow these steps to set up your customer price attributes:
 
-1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**. Set up all the customer price attributes you will need. Make sure that each of these attributes has **Can be used as price attribute** set to *Yes* (see also [Mark attributes as price attributes](#price-attributes)). Assign a **Default value** if needed.
+1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**. Set up all the customer price attributes you will need. Make sure that each of these attributes has **Can be used as price attribute** set to *Yes* (see also [Set up product price attributes](#price-attributes)). Assign a **Default value** if needed.
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**. Create your customer price attributes group. Give it an appropriate name (such as *Customer price attributes*) and add each relevant attribute to the **Attributes** FastTab.
 1. Go to **Pricing management \> Setup \> Pricing management parameters** and open the **Price attribute** tab. Set **Customer attribute group** to the attribute group that you created to hold your customer price attributes.
 
@@ -102,7 +102,7 @@ You can create Pricing management pricing rules that consider attribute values a
 
 Follow these steps to set up your sales order price attributes:
 
-1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**. Set up all the sales order price attributes you will need. Make sure that each of these attributes has **Can be used as price attribute** set to *Yes* (see also [Mark attributes as price attributes](#price-attributes)). Assign a **Default value** if needed.
+1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**. Set up all the sales order price attributes you will need. Make sure that each of these attributes has **Can be used as price attribute** set to *Yes* (see also [Set up product price attributes](#price-attributes)). Assign a **Default value** if needed.
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**. Create your sales order price attributes group. Give it an appropriate name (such as *Order price attributes*) and add each relevant attribute to the **Attributes** FastTab.
 1. Go to **Pricing management \> Setup \> Pricing management parameters** and open the **Price attribute** tab. Set **Sales order attribute group** to the attribute group that you created to hold your sales order price attributes.
 
