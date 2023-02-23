@@ -76,11 +76,11 @@ The Dual-write Application Core package has no dependency on other packages.
 
 The Dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. It contains the following three solutions.
 
-| Unique name                | Display name                             |
-|----------------------------|------------------------------------------|
-| HCMCommon                  | HCM Common                               |
-| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps |
-| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |
+| Unique name                | Display name                             | Solution/Package  |
+|----------------------------|------------------------------------------|-------------------|
+| HCMCommon                  | HCM Common                               |Dynamics 365 HR Common tables |
+| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps | Dual-write Human resources solution |
+| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |Dual-write Human resources solution|
 
 The following maps are available in this package.
 
@@ -100,7 +100,7 @@ The following maps are available in this package.
 
 **Dependency information**
 
-The Dual-write Human Resources package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Human Resources package.
+The Dual-write Human Resources package depends on the [Dual-write Application Core](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwappcore?tab=Overview&exp=ubp8) and [Dynamics 365 HR Common Tables](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.hcmcommon?exp=ubp8) packages. Therefore, you should install these two solution packages before you install the Dual-write Human Resources package.
 
 ## Dual-write Supply Chain
 
