@@ -40,7 +40,7 @@ Microsoft provides a cost-effective way for a single Dynamics 365 user to obtain
 
 ### Licenses required to create an implementation project
 
-Admins use an implementation project to do most of their work in Lifecycle Services. Inside these types of projects, an admin can deploy a sandbox environment and a production environment, and can also deploy additional add-on sandboxes (a type of unassigned license) that they've purchased. A minimum of 20 base licenses for Finance, Supply Chain Management, Commerce, Project Operations, or Human Resources is required to create an implementation project.
+Admins use an implementation project to do most of their work in Lifecycle Services. Inside these types of projects, an admin can deploy a sandbox environment and a production environment, and can also deploy additional add-on sandboxes (a type of unassigned license) they've purchased. A minimum of 20 base licenses for Finance, Supply Chain Management, Commerce, Project Operations, or Human Resources is required to create an implementation project.
 
 If you require multiple projects, you can create more by using the information in this documentation. The number of projects that you can create is a factor of 20. Therefore, if you require two projects, for example, you need 40 licenses.
 
@@ -56,15 +56,15 @@ Second, email communications and/or message center posts will be sent to your te
 
 ### Sandboxes are disabled
 
-The next action is to disable sandbox environments.  This will be performed 4 business days after communications are sent from the previous step. Because these environments are used for testing, training, and debugging purposes, they will be targeted first for deallocation. This approach helps protect against non-compliance but doesn't affect customer production environments that host mission-critical workloads.
+The next action is to disable sandbox environments.  This will be performed 4 business days after communications are sent from the previous step. Because these environments are used for testing, training, and debugging purposes, they'll be targeted first for deallocation. This approach helps protect against non-compliance but doesn't affect customer production environments that host mission-critical workloads.
 
-Disabled environments are not yet deleted.  These can be recovered if your licenses are renewed or if you provide proof of intent following the steps outlined in section *Manual renewal process* below.
+Disabled environments aren't yet deleted.  These can be recovered if your licenses are renewed or if you provide proof of intent following the steps outlined in section *Manual renewal process* below.
 
 ### Production is disabled
 
 Three business days after sandboxes are disabled, the production environment will be disabled. This action will begin a downtime for mission-critical workloads for the customer, because there will be an inactive or insufficient number of paid license subscriptions to operate the applications.
 
-Disabled environments are not yet deleted.  These can be recovered if your licenses are renewed or if you provide proof of intent following the steps outlined in section *Manual renewal process* below.
+Disabled environments aren't yet deleted.  These can be recovered if your licenses are renewed or if you provide proof of intent following the steps outlined in section *Manual renewal process* below.
 
 ### Sandboxes are deleted
 
