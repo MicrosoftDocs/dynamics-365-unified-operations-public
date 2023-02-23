@@ -56,7 +56,7 @@ Follow these steps to access the Human Resources–to–Finance template.
 7. When you've finished setting up a link to your Dataverse environment, select **Apply Solution**. The solution is applied, and the mappings are installed into the integrator app.
 
 >[!NOTE]
->There are three solution packages needed for Dual-write Human Resources. For more information, see [Separated Dual-write Application Orchestration package](../../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
+>There are three solution packages needed for Dual-write Human Resources. For more information, see [Separated Dual-write Application Orchestration package](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
 
 ## Template mappings
 
