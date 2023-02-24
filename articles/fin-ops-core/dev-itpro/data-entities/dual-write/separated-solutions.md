@@ -82,21 +82,7 @@ The Dual-write Human Resources package contains the solutions and maps that are 
 | msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps | Dual-write Human resources solution |
 | msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |Dual-write Human resources solution|
 
-The following maps are available in this package.
-
-| Finance and operations apps | Customer engagement apps         |
-|-----------------------------|----------------------------------|
-| Ethnic origins              | cdm_ethnicorigins                |
-| Compensation job function   | cdm_jobfunctions                 |
-| Positions V2                | cdm_jobpositions                 |
-| Jobs                        | cdm_jobs                         |
-| Compensation job type       | cdm_jobtypes                     |
-| Language codes              | cdm_languages                    |
-| Position type               | cdm_positiontypes                |
-| Position worker assignments | cdm_positionworkerassignmentmaps |
-| Veteran status              | cdm_veteranstatuses              |
-| Worker                      | cdm_workers                      |
-| Employment per company      | cdm_employments                  |
+For more information on the mappings that are available in the solutions, see [Integration with Dataverse tables](../human-resources/hr-dataverse-integration.md#template-mappings).
 
 **Dependency information**
 
