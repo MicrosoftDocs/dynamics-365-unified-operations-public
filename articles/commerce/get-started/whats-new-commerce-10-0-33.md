@@ -30,6 +30,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Orders |  Create asynchronous customer orders in real time, and fallback to batch process if real time fails.  |  When this feature is enabled in the point of sale (POS) functionality profile, POS will attempt to create a customer order in real time using the Real-time service (RTS). However, the POS screen won't be blocked for the response of the service call. The customer order will be completed with a confirmation number, and if the real time order creation fails, the order will be created in batch after a few minutes. | IT Pro opt-in   |
+| Orders  |  Enable on behalf of ordering   |  This new functionality allows B2B account managers to sign into the B2B e-commerce website on behalf of the B2B buyers they work with. The account manager can see all the same information that the buyer sees and can take actions such as adding items to the cart and placing orders. The feature requires configuration in Azure Active Directory and sitebuilder. | IT Pro opt-in |
+
 
 ## Additional resources
 
