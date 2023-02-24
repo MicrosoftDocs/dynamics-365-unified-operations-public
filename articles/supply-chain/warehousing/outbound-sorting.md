@@ -136,15 +136,15 @@ For this scenario, you will create an outbound sorting template to build pallets
     - **Description:** *Auto Work Creation*
     - **Outbound sorting template type:** *Container*
 
-1. Use the **Warehouse selection** fast tab to specify the warehouse and location where the outbound sorting template will apply.
+1. Use the **Warehouse selection** FastTab to specify the warehouse and location where the outbound sorting template will apply.
 
-    - **Warehouse selection** - You can specify one of the following values:
+    - **Warehouse selection** – Select one of the following values:
 
-        - *All* - Use the outbound sorting template for all warehouses.
+        - *All* – Use the outbound sorting template for all warehouses.
         - *Warehouse group* – Use the outbound sorting template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
         - *Warehouse* – Use the outbound sorting template only for the specific warehouse that's selected in the **Warehouse** field.
 
-    - **Warehouse** and **Location** - If the **Warehouse selection** field is set to *Warehouse*, select the warehouse and the location where the outbound sorting template applies. 
+    - **Warehouse** and **Location** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse and the location where the outbound sorting template applies.
     - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the outbound sorting template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
 
    For this scenario, set the following values:
