@@ -4,7 +4,7 @@
 title: Cloud deployment overview
 description: This article describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 06/01/2022
+ms.date: 02/08/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
  
-Working with Microsoft to deploy finance and operations apps in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
-We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementation project. 
+Working with Microsoft to deploy finance and operations apps in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
+We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). If you choose to use the Essentials FastTrack program instead, you'll be using the Implementation Project Methodology in Microsoft Dynamics 365 Lifecycle Services to help you manage your implementation project. 
 
 ## Customer lifecycle, subscriptions, and environment types
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
@@ -67,10 +67,10 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 *For more information about Self-service environment types, see [Self-service deployment overview](infrastructure-stack.md).*
 
 > [!IMPORTANT]
-> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020. For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscription directly from Lifecycle Services (LCS).
+> Tier 1 sandbox environments are no longer Microsoft-managed starting in November 2020. For demo, build, and develop purposes the Tier 1 environments can be deployed on a customer's Azure subscription directly from Lifecycle Services.
 
 ### Environment lifecycle operations
-Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations are located under or next to the **Maintain** button on each environment details page.
+Users with the Environment Administrator or Project Owner roles in Lifecycle Services can perform various lifecycle operations on their environments.  These operations often involve downtime on the environment until the task is finished.  Each of these operations is located under or next to the **Maintain** button on each environment details page.
 
 | Lifecycle operation | Description | Learn more
 |---------------------|-------------|------------|
@@ -86,7 +86,7 @@ Users with the Environment Administrator or Project Owner roles in Lifecycle Ser
 
 
 ## Security and compliance
-finance and operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
+Finance and operations apps are PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
 All finance and operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
 
@@ -94,9 +94,9 @@ All finance and operations front-end virtual machines in Microsoft Azure are con
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
 > - By default, automatic Windows update is enabled for all Tier 1 - 5 sandboxes and should NOT be disabled. This ensures that any time that Microsoft pushes security or critical infrastructure updates to your environment, your environment receives the latest set of updates and is updated each month with the operating system fixes that Microsoft releases.  
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to reset the admin password, and will do so.  
-> - Adding new user accounts to any Microsoft-managed VM is NOT permitted. Microsoft reserves the right to do this, and will remove the newly added user accounts without providing notice.
+> - Adding new user accounts to any Microsoft-managed VM ISN'T permitted. Microsoft reserves the right to do this, and will remove the newly added user accounts without providing notice.
 >
-> finance and operations is not covered by a FedRAMP ATO at this time. If finance and operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States. Finance and operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
+> finance and operations isn't covered by a FedRAMP ATO at this time. If finance and operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States. Finance and operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
 ## Remote Desktop
 
@@ -105,7 +105,7 @@ All finance and operations front-end virtual machines in Microsoft Azure are con
 > [!WARNING]
 > Microsoft will be removing the use of Remote Desktop by customers and partners.  Each environment will first have administrator access removed, but still allow non-administrator access to the virtual machines. After this, all access will be removed. For each step of this phased removal, an email notification will be sent to the Notification list setup for each environment. All Remote Desktop access will be removed by November 2020.
 
-Customers are required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization's IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semicolon (;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment's virtual network. For more information, see [Security rules](/azure/virtual-network/security-overview#security-rules).
+Customers are required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (safe list) from your organization's IP address space. This can be done by a Lifecycle Services user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semicolon (;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment's virtual network. For more information, see [Security rules](/azure/virtual-network/security-overview#security-rules).
 
 > [!IMPORTANT]
 > Customers need to ensure that RDP endpoints are secured through explicit IP safe list rules as mentioned above. The IP safe list rules must adhere to the following conditions.
@@ -121,23 +121,23 @@ Customers are required to complete additional setup to connect to virtual machin
 > Microsoft reserves the right to and will remove any IP Address safe list rules that violate the above guidelines, immediately without providing notice.
  
 ### Customer-managed/Tier-1 environments 
-By default, Remote Desktop is enabled for all environments that are not managed by Microsoft. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
+By default, Remote Desktop is enabled for all environments that aren't managed by Microsoft. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
 
 ## Windows Remoting (WinRM)
-Windows Remoting (WinRM) is disabled on all environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommend that you do not do this.
+Windows Remoting (WinRM) is disabled on all environments. Although you can enable WinRM on environments that belong to your subscriptions through Azure Portal, we strongly recommend that you don't do this.
 
 > [!WARNING]
 > Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
-The guaranteed uptime for finance and operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn't always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../lifecycle-services/lcs-support.md).
+The guaranteed uptime for finance and operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn't always take eight hours, we'll always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for finance and operations apps or Lifecycle Services](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Azure availability sets are used to prevent single-point-of-failure events. For more information about Azure availability sets, see [Use availability zones to protect from datacenter level failures](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures).
 High availability for databases is supported through Azure SQL. For more information, see [Overview of business continuity with Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview).
 
 #### Database backup retention
-Databases for Microsoft-managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes. These backups can be restored by using Lifecycle Services point-in-time restore capability up to 14 days in the past. For production type environments, backups can be restored up to 28 days in the past. For Tier 1 or customer-managed environments, database backups are not automatic and need to be taken manually as often as required.
+Databases for Microsoft-managed or Self-service Tiers 2-5 environments have automated backups taken by Azure SQL every few minutes. These backups can be restored by using Lifecycle Services point-in-time restore capability up to 14 days in the past. For production type environments, backups can be restored up to 28 days in the past. For Tier 1 or customer-managed environments, database backups aren't automatic and need to be taken manually as often as required.
 
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
@@ -148,7 +148,7 @@ Production environments are configured with Azure disaster recovery support that
 Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the finance and operations service has started. 
 
 ## Service availability in Azure regions
-finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
+Finance and operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services. Azure is generally available in datacenters and geographical locations around the world. With finance and operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we'll not replicate or move customer data outside the geographical location. For more details, see [Service description for finance and operations apps](../../fin-ops/get-started/service-description.md).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it. For more information, see the following articles:
@@ -158,7 +158,7 @@ finance and operations apps can be deployed into a subset of Microsoft Azure dat
 > - [Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China](china-local-deployment.md)
 
 ### Upcoming changes to region availability
-Dynamics 365 solutions consist of a collection of multiple services. Looking across Dynamics 365 applications, the Power Platform and the Azure services that they both depend on, the required matrix of services is quite large and growing. We have locked on a strategy of selecting a subset of data center regions across the globe to simplify ensuring that we have availability of the full portfolio of required services. Our plan is to optimize to have minimal latency between the component services of a solution and as a result, we are focused on having the full portfolio of services available in each of the designated data centers.
+Dynamics 365 solutions consist of a collection of multiple services. Looking across Dynamics 365 applications, the Power Platform and the Azure services that they both depend on, the required matrix of services is quite large and growing. We've locked on a strategy of selecting a subset of data center regions across the globe to simplify ensuring that we've availability of the full portfolio of required services. Our plan is to optimize to have minimal latency between the component services of a solution and as a result, we're focused on having the full portfolio of services available in each of the designated data centers.
 
 Additionally, the finance and operations architecture is being enhanced to build on self-service for greater elasticity, stronger reliability, and more seamless maintenance. Customers gain material efficiency by having deeper self-service deployments in fewer data centers. This transition also benefits from selecting a subset of Azure regions. To that effect, the regional availability of finance and operations apps will now be <strong>limited to East US, West US, and Central US in North America </strong> for all new projects. For a list of the latest supported regions, see the following articles:
 
@@ -171,18 +171,18 @@ Support for East US2, West US2, West Central US, North Central US, and South Cen
 > [!Note]
 > Microsoft will work with customers to move them to an appropriate data center beginning October 19, 2020. This will happen in a phased approach. Select customers will receive advance notification before we migrate them to a supported region.
 
-If there are other customer workloads that are not part of the Dynamics 365 or Power Platform family that also require proximity to the Dynamics 365 and Power Platform services, Microsoft will work with customers to coordinate a plan for the overall migration. For more information, see [Cloud deployment overview: Frequently asked questions](cloud-deployment-overview.md#frequently-asked-questions).
+If there are other customer workloads that are't part of the Dynamics 365 or Power Platform family that also require proximity to the Dynamics 365 and Power Platform services, Microsoft will work with customers to coordinate a plan for the overall migration. For more information, see [Cloud deployment overview: Frequently asked questions](cloud-deployment-overview.md#frequently-asked-questions).
 
 ## Frequently asked questions
 
-### Why does the status display 'Maintenance' on my environment in LCS?
+### Why does the status display 'Maintenance' on my environment in Lifecycle Services?
 To provide the best experience and performance, Microsoft performs maintenance operations on your environment. During some of these maintenance operations, your environment status may display one of the following statuses:
 
 - Preparing for maintenance
 - Prepared for maintenance
 - Maintenance in progress
 
-While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to finance and operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
+While your environment is in this state and until the status returns to 'Deployed', you'll not be able to perform any lifecycle operations, such as package applications. There will be no impact to finance and operations apps. Users can continue with normal operations without any service interruption. You'll receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my sandbox environment?
 To connect to the SQL database in your sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
@@ -197,13 +197,13 @@ A demo environment includes only Microsoft demo data. You can use a demo environ
 To move customizations from a development to a sandbox or production environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
 
 ### Can I bring my own domain name?
-You can bring your own domain name if it is running Azure Active Directory (Azure AD), and the administrator of your Azure AD instance has enabled the finance and operations apps within their Azure AD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, Azure AD is set up for you.
+You can bring your own domain name if it's running Azure Active Directory (Azure AD), and the administrator of your Azure AD instance has enabled the finance and operations apps within their Azure AD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, Azure AD is set up for you.
 
 ### Can I add guest Azure AD accounts as users?
-You can add guest Azure AD accounts if you have correctly configured them within Azure AD and enabled the finance and operations apps within your Azure AD. 
+You can add guest Azure AD accounts if you've correctly configured them within Azure AD and enabled the finance and operations apps within your Azure AD. 
 
 ### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 sandbox environments?
-The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
+The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines is secure directly and no longer need the intermediary Private AOS machines. Therefore, we're in the process of rolling out removing the Private AOS machines. As we're removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change won't impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft-managed sandbox environments?
 Microsoft-managed Tier 1 through Tier 5 sandbox environments require Remote Desktop management endpoints to be restricted to specific IP Address sets (safe list). Microsoft regularly validates that the environments are sufficiently restricted. Microsoft reserves the right to immediately remove any IP Address safe list rules that violate the above guidelines without notice. You may not be able to Remote Desktop into your environment for one of these reasons: 
@@ -212,7 +212,7 @@ Microsoft-managed Tier 1 through Tier 5 sandbox environments require Remote Desk
 - Your IP has changed from the IP address listed in the safe list. 
 - Microsoft deleted the rule containing your IP address from the safe list because it violated a guideline.
 
-To regain access to the environment, you will need to add the IP address of the computer from which you are connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this article.
+To regain access to the environment, you'll need to add the IP address of the computer from which you're connecting to. To do this, complete the steps [Remote Desktop](#remote-desktop) section earlier in this article.
 
 ### When will the availability of reduced regions go into effect for new onboarding?
 Beginning August 1, 2020, new projects for finance and operations will be onboarded to the following regions:
@@ -230,13 +230,24 @@ Beginning August 1, 2020, new projects for finance and operations will be onboar
 -	North Central US
 -	South Central US
 
-This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.
+This won't affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.
 
 ### I'm unable to redeploy an environment after deleting it, the environment slot is missing. 
 This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](../../fin-ops/get-started/subscription-overview.md#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
+### What does it mean when some deployment regions options are marked as **Data resident region**
+If you select a region which isn't **Data resident** you'll see a warning calling out the selected region for environment deployment isn't the same as where Lifecycle Services is storing the project data. 
 
+For example, when using the global Lifecycle Services endpoint, the project data is stored in the United States.  The available regions that show Data Resident include:
+* brazilsouth
+* uscentral
+* useast
+* uswest
 
+> [!Note]
+> Brazil south is only included in this list due to business and disaster recovery scenarios.  Environments deployed to Brazil South may fail over to US Central in the event of a disaster.  Environments deployed in US regions will only failover to other US regions in the event of a disaster.
+
+For information about migrating Lifecycle Services project data to a different geography, see [Project migration manager](../lifecycle-services/project-migration-manager.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

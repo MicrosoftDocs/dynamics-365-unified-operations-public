@@ -4,7 +4,7 @@
 title: POS user interface visual configurations
 description: This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
-ms.date: 01/30/2023
+ms.date: 02/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -168,9 +168,6 @@ The button grid designer lets you configure button grids that can be used on the
 - **New design** – Click to automatically set up a button grid layout by specifying the number of buttons per row and column.
 - **Button properties** – You can configure button properties by right-clicking the button and using the shortcut menu.
 
-    > [!IMPORTANT]
-    > Some button grid settings apply only to Enterprise POS, not to Modern POS or Cloud POS.
-
     ![Button grid button properties.](../commerce/media/Button-grid-button-properties.png)
 
     - **Action** – In the list of applicable POS operations, select the operation that is invoked when the button is clicked in the POS.
@@ -189,7 +186,7 @@ The button grid designer lets you configure button grids that can be used on the
     - **Custom theme** – By default, POS buttons use the accent color from the visual profile. When you select the **Use custom theme** check box, you can specify additional colors.
 
         > [!NOTE]
-        > Modern POS and Cloud POS use only the **Back color** and **Font color** values.
+        > The Store Commerce app and Store Commerce for web only use the **Back color** and **Font color** values.
 
     - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**.
 

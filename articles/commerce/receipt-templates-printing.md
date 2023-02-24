@@ -4,7 +4,7 @@
 title: Set up and design receipt formats
 description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: BrianShook
-ms.date: 09/16/2021
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Dynamics 365  Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 
 > [!IMPORTANT]
-> You must set up form layouts and receipt profiles to print receipts and other documents from Retail Modern POS and Cloud POS. You can include multiple form layouts in a receipt profile. You can then assign the receipt profile to a printer by modifying a hardware profile.
+> You must set up form layouts and receipt profiles to print receipts and other documents from the Store Commerce app and Store Commerce for web. You can include multiple form layouts in a receipt profile. You can then assign the receipt profile to a printer by modifying a hardware profile.
 
 ## Set up a receipt format
 

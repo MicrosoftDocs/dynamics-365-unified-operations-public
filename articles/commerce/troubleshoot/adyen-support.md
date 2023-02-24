@@ -2,7 +2,7 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen issues
 description: This article provides troubleshooting guidance that can help you get support when you have issues with the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/03/2023
 ms.topic: Troubleshooting
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ This article provides troubleshooting guidance that can help you get support whe
 
 You have issues with the Dynamics 365 Payment Connector for Adyen in the following areas, and you require support from the Adyen team:
 
-- Configuration of Point of sale (POS), Modern point of sale (MPOS), call center, or Dynamics 365 Commerce
+- Configuration of point of sale (POS), call center, or Dynamics 365 Commerce
 - The Adyen payment service provider (PSP) reference number (for example, if you have questions about refusals, including manual key entry \[MKE\] refusals)
 - Anything that isn't working in test or live merchant environments
 

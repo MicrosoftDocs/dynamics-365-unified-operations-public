@@ -29,8 +29,11 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
+| Planning | New exception process for migrating to Planning Optimization | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) | Enabled by default |
+| Procurement and sourcing | [Improve security for vendor bank account information updates](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-security-vendor-bank-account-information-updates) |  [Vendor bank account workflow](../../finance/accounts-payable/vendor-bank-account-workflow.md) | Feature management:<br>*Vendor bank account change proposal workflow* |
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
+| Warehouse management | [Optimize performance of internal movements in warehouse](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-performance-internal-movements-warehouse) | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Feature management:<br>*(Preview) Warehouse-specific inventory transactions* |
 | Warehouse management | [Pack shipments with speed and resilience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/pack-shipments-speed-resilience) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
 | Warehouse management | Warehouse groups | [Warehouse groups](../warehousing/warehouse-groups.md) | Enabled by default |
 
@@ -71,7 +74,6 @@ The table also lists features that were previously in public preview but have ch
 | Engineering change management | [Improved attribute inheritance for Engineering Change Management](../engineering-change-management/engineering-attributes-and-search.md) | Mandatory |
 | Engineering change management | [Product readiness checks](../engineering-change-management/product-readiness.md) | Mandatory |
 | Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | Mandatory |
-| Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | On by default |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | On by default |
 | Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Mandatory |
@@ -97,6 +99,7 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | [RFQ questions and answers](../procurement/rfq-question.md) | Mandatory |
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | On by default |
 | Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | On by default |
+| Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | On by default |
 | Product information management | [Country of origin management feature](../pim/country-of-origin.md) | Mandatory |
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | On by default |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md)  | On by default |
@@ -123,7 +126,7 @@ The table also lists features that were previously in public preview but have ch
 | Shared AP and AR | Enable auto negative tier in Rebate management | Generally available |
 | Shared AP and AR | [Rebate Management](../rebate-management/rebate-management-overview.md) | On by default |
 | Shared AP and AR | Write-off before rebate claim | Generally available |
-| Transportation management | Goods in Transit Receiving and Put away | Mandatory |
+| Transportation management | Goods in Transit Receiving and Put away | On by default |
 | Transportation management | Options for updating the mode of delivery for sales order lines when creating loads | Generally available |
 | Warehouse management | Allow editing of physical dimension for a released product and its handling unit. | Mandatory |
 | Warehouse management | Auto update shipment | Mandatory |
@@ -179,7 +182,6 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
-| Master planning | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) |
 | Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
 | Supply Chain Management development | [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
@@ -190,7 +192,7 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of Finance and Operations apps (March 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md) <!-- KFM: Confirm link -->.
+Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.32 of Finance and Operations apps (March 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-32.md).
 
 ### Bug fixes
 

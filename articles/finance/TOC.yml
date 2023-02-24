@@ -254,6 +254,8 @@
           href: accounts-payable/invoice-capture-dashboard.md
         - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
+        - name: Invoice capture FAQ  
+          href: accounts-payable/invoice-capture-faq.md
       - name: Vendor invoice automation    
         items: 
         - name: Automated vendor invoicing processes overview
@@ -269,7 +271,13 @@
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
         - name: Vendor invoice entry workspace
-          href: accounts-payable/vendor-invoices-workspace.md         
+          href: accounts-payable/vendor-invoices-workspace.md  
+      - name: Accounts payable reports   
+        items:
+        - name: Vendor aging report
+          href: accounts-payable/vendor-aging-report.md
+        - name: Vendor aging data storage
+          href: accounts-payable/vendor-aging-data-store.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
@@ -290,6 +298,8 @@
         href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
         href: accounts-payable/vendor-workflow.md
+      - name: Vendor bank account workflow
+        href: accounts-payable/vendor-bank-account-workflow.md
       - name: Resolve discrepancies during invoice totals matching
         items:
         - name: Resolve discrepancies during invoice totals matching overview
@@ -396,6 +406,8 @@
         href: accounts-receivable/sepa-direct-debit-mandate.md
       - name: Credit card setup, authorization, and capture
         href: accounts-receivable/credit-card-authorizations.md
+      - name: Process incomplete credit card payments  
+        href: accounts-receivable/credit-card-refactor.md
       - name: Create a free text invoice
         href: accounts-receivable/create-free-text-invoice-new.md
       - name: Accounting distributions and subledger journal entries for free text invoices
@@ -454,6 +466,8 @@
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
+          - name: Generate invoices from billing schedules  
+            href: accounts-receivable/sb-generate-invoice.md
           - name: Customer split with a billing schedule
             href: accounts-receivable/sb-customer-split.md
           - name: Billing schedule features
@@ -466,6 +480,8 @@
             href: accounts-receivable/sb-support-renewals.md
           - name: Unbilled revenue
             href: accounts-receivable/sb-unbilled-revenue.md
+          - name: Billing schedules with projects  
+            href: accounts-receivable/sb-bill-sched-project.md
           - name: Consumer price index schedules
             href: accounts-receivable/cpischedules.md
           - name: Terminate billing schedules
