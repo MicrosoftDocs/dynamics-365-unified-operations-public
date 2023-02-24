@@ -4,7 +4,7 @@
 title: Configure integration with dataverse tables
 description: This article describes the integration between Microsoft Dynamics 365 Human Resources and Dataverse.
 author: anschmidt  
-ms.date: 12/06/2022
+ms.date: 02/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,6 +54,9 @@ Follow these steps to access the Human Resources–to–Finance template.
 5. Select **Dual Write**. 
 6. Follow the process for linking your environment for at least one company in your organization. 
 7. When you've finished setting up a link to your Dataverse environment, select **Apply Solution**. The solution is applied, and the mappings are installed into the integrator app.
+
+>[!NOTE]
+>There are three solution packages needed for Dual-write Human Resources. For more information, see [Separated Dual-write Application Orchestration package](../fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions.md#dual-write-human-resources).
 
 ## Template mappings
 
