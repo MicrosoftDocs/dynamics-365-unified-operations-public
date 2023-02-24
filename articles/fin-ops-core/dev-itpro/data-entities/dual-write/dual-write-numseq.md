@@ -18,7 +18,7 @@ By default, the [number sequences](../../../fin-ops/organization-administration/
 - In the finance and operations app, use F0001, F0002, and F0003. In the customer engagement app, use C0001, C0002, and C0003.
 - In the finance and operations app, use US0001 through US4999. In the customer engagement app, use US5000 through US9999.
 
-For the preceding examples to work in finance and operations data management when you do a live synchronization, you must ensure that data field validation is disabled for the autonumber field in the data entity mappings. If there's a business reason to run the validation, we recommend that you review the number sequence settings of the data entities that are in scope in the finance and operations app. These rules are validated only when the initial synchronization is run. Live synchronization isn't affected.
+For the preceding examples to work in finance and operations data management when you do a live synchronization, you must ensure that field data validation is disabled for the autonumber field in the data entity mappings. If there's a business reason to run the validation, we recommend that you review the number sequence settings of the data entities that are in scope in the finance and operations app. These rules are validated only when the initial synchronization is run. Live synchronization isn't affected.
 
 During the initial synchronization, if field data validation is enabled for the autonumber field, you must verify the following items for both the customer engagement app and the finance and operation app:
 
@@ -71,8 +71,8 @@ Even after you enable data validation and confirm that the format of the column 
 
 | Error message | Cause |
 |---|---|
-| Field \[field name\] does not allow editing. Invalid specification of Sales order Number sequence Sale_293 does not allow change to a higher number. Validations failed. | The number sequence setup doesn't allow for edits. This error occurs when the **Manual**, **To a lower number**, or **To a higher number** option is set to **No**. To fix the issue, set one of these options to **Yes**. |
-| Incoming \[field name\] \< Lowest number allowed is 1000000. Validations failed. | The incoming values (numeric part) must be within the number allocation range for the finance and operations number sequence. (The number should be less than the largest value.) |
+| Field \[field name\] does not allow editing. Invalid specification of \[field name\] does not allow change to a higher number. Validations failed. | The number sequence setup doesn't allow for edits. This error occurs when the **Manual**, **To a lower number**, or **To a higher number** option is set to **No**. To fix the issue, set one of these options to **Yes**. |
+| Incoming \[field name\] \< Lowest number allowed is \[number\]. Validations failed. | The incoming values (numeric part) must be within the number allocation range for the finance and operations number sequence. (The number should be less than the largest value.) |
 | Incoming \[field name\] \> highest number allowed is \[number\]. Validations failed. | The incoming values (numeric part) must be within the number allocation range for the finance and operations number sequence. (The number should be more than the smallest value.) |
 
 ## Dataverse autonumbering
