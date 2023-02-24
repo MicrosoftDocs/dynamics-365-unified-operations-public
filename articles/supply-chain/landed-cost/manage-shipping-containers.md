@@ -35,20 +35,47 @@ To view and process goods through the shipping container page, go to **Landed co
 
 The upper part of the shipping container details page shows shipping container and costing information. The **Lines** section shows the folios, items, and purchase orders or transfer orders that are attached to the container.
 
-## Create shipping container 
-Shipping container is created inside the voyage. In the **Add staging list to shipping container** form, user could choose create shipping container in foreground or backgound mode after click buttom **Add to new shipping container** button.  
+## Create shipping containers
 
-Create shipping container in background mode can provide better system performance if your shipping container contains large number of shipping lines.
+You create shipping containers from the record for the voyage where you will use them.
 
-![image](https://user-images.githubusercontent.com/102585421/218046365-b951d9c2-6abe-4d14-90a9-73564b0ada7d.png)
+### Turn the shipping container batch mode feature on or off
 
-> [!NOTE]
-> The background processing won't activate when the transfer quantity is less than the total quantity of the related purchase order line.
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.33, it's turned off by default. Admins can use the feature management settings to check the status of the feature and turn it on as needed. In the **Feature management** workspace, the feature is listed in the following way:
+If you'd like to be able to use batch mode when creating and updating shipping containers for Landed cost, then you must enable this feature for your system. Creating and updating shipping containers in background mode can provide better system performance when working with shipping containers that contain a large number of shipping lines.
+
+Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Transportation management*
-- **Feature name:** *Enable shipping container creation and update in batch mode*
+- **Feature name:** *(Preview) Enable shipping container creation and update in batch mode*
+
+### Create a shipping container
+
+Follow these steps to create a shipping container for a voyage.
+
+1. Go to **Landed cost \> Voyages \> All voyages**.
+1. Do one of the following steps:
+    - Select **New** from the Action Pane to create a new voyage. Fill out the **Create voyage** dialog as needed and then select **OK** to open the **Voyage editor**.
+    - Open an existing voyage and then select **Voyage editor** from the Action Pane.
+1. Use the **Filters** at the top of the Voyage editor page to find the inbound order that you will create the shipping container for.
+1. On the **Inbound orders** FastTab, select the inbound order that you will create the shipping container for.
+1. On the **Lines to select** FastTab, mark the check box for each purchase order line that you will include in the new container.
+1. Repeat the previous three steps until you have found and selected all of the order lines that you want to include in your new container.
+1. From the **Lines to select** FastTab toolbar, select **Add to staging list**.
+1. From the **Lines to select** FastTab toolbar, select **View staging list**.
+1. The **Add staging list or shipping container** page opens. The purchase order lines that you selected are listed on the **Lines in staging list** FastTab. All of the purchase order lines listed here will be added to the shipping container you are about to create. You can remove any lines that don't belong by selecting a target line and then selecting **Remove line** from the FastTab toolbar.
+1. From the **Lines in staging list** FastTab toolbar, select **Add to new shipping container**.
+1. The **Create shipping container** dialog opens. On the **General** tab, fill out the dialog as needed to define your new shipping container.
+
+    [<img src="media/create-shipping-container.png" alt="The Create shipping container dialog." title="The Create shipping container dialog" width="720" />](media/create-shipping-container.png)
+
+1. If you'd like to create the shipping container in batch mode (which can improve performance if your container includes a large number of lines) then open the **Run in the background** tab and set **Batch processing** to *Yes*. (This tab is only available if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system, as described in the previous section.)
+
+    > [!NOTE]
+    > The background processing won't activate if the transfer quantity is less than the total quantity of the related purchase order line.
+
+1. Select **OK** to create the container and add your selected purchase order lines to it.
 
 ## Action Pane
 
