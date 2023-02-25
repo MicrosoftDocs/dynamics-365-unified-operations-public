@@ -372,7 +372,7 @@
           items:
           - name: Info codes and info code groups   
             href: info-codes-retail.md      
-          - name: Create a retail functionality profile    
+          - name: Create a commerce functionality profile    
             href: retail-functionality-profile.md   
           - name: Create a new address book     
             href: new-address-book.md
