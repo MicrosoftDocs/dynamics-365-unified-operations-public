@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 01/30/2023
+ms.date: 03/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Inventory and logistics | [Assign shipments to related route segments](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/assign-shipments-related-route-segments) | This feature enables the system to apportion shipment freight costs more accurately, including for loads with multiple shipments delivered to various segment destinations along a single route. It assigns each shipment to the most suitable route segment based on the destination addresses of the shipment and segment. The feature then calculates each shipment's freight cost as a proportion of the load's total freight cost, based on the shipment's relative weight, volume, quantity and distance traveled. This feature only applies to shipments managed using the Transportation management (TMS) module. | Feature management:<br>*(Preview)Assign shipments to related route segments* <!-- KFM: Is this the right FM feature for this RP feature? The FM feature description is more clear than that on the RP, we should consider replacing the RP text. We first announced this feature as an "enhancement" for 10.0.30, so where does this belong? --> |
 | Inventory and logistics | [Create and update containers in batch processing mode](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/create-update-containers-batch-processing-mode) | [Manage shipping containers](../landed-cost/manage-shipping-containers.md) | Feature management:<br>*(Preview) Enable shipping container creation and update in batch mode* |
-| Inventory and logistics | [Split cost type codes for multiple voyages in the vendor invoice journal](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/split-cost-type-codes-multiple-voyages-vendor-invoice-journal) | *Coming soon* | Feature management:<br>*(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* <!-- KFM: Is this the right FM feature for this RP feature? Note that the FM description contains an incomplete sentence and other grammar errors, and is very hard to understand. Is any documentation expected here? --> |
+| Inventory and logistics | [Split cost type codes for multiple voyages in the vendor invoice journal](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/split-cost-type-codes-multiple-voyages-vendor-invoice-journal) | This feature for the Landed cost module enables business to better allocate transportation costs associated with multiple voyages. With this feature, when a user is creating a vendor invoice journal for multiple voyages, each cost type code will have its own journal line that includes the voyage name in its description. This allows for easier reconciliation. Previously, the system merged costs from all voyages that have the same cost type code into the same line in the vendor invoice journal. But now, vendor invoice journals will be split based on the cost type code. | Feature management:<br>*(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* <!-- KFM: Is this the right FM feature for this RP feature? Note that the FM description contains an incomplete sentence and other grammar errors, and is very hard to understand. Is any documentation expected here? --> |
 | Inventory and logistics | Inventory Visibility integration with soft reservation on sales order lines | [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md) | Feature management:<br>*Inventory Visibility integration with soft reservation on sales order lines* |
 | Inventory and logistics | [Manage attribute-based omnichannel sales pricing](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/manage-attribute-based-omnichannel-sales-pricing) | *Coming soon* | Feature management:<br>*(Preview) Pricing management*<!-- KFM: Release plan says April, yet feature is visible now. What's the deal? --> |
 | Manufacturing and asset management | [Empower maintenance workers with new mobile experience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-maintenance-workers-new-mobile-experience) | *Coming soon* | Enabled by default. Mobile app download required.<!-- KFM: Hide for now? --> |
@@ -39,7 +39,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -74,7 +74,7 @@ Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dyna
 The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and may be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
