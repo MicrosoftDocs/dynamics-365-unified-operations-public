@@ -137,14 +137,11 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 
 ## Export the database from SQL Server
 
-Open a **Command Prompt** window, and run the following commands.
-
-> [!IMPORTANT]
-> The 140 folder reflects the current version. You must use the version that is available in your sandbox environment. Therefore, you might have to install the [latest version of Microsoft SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) in your development environment.
+Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
-SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
+SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\<filename>.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /SourceTrustServerCertificate:True
 ```
 
 Here is an explanation of the parameters:
