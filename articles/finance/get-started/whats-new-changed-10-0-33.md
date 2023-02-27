@@ -56,7 +56,13 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-| Globalization | Global withholding tax | The **Withholding tax** button is added to the header menu of **Purchase order** and **Vendor invoice**. Temporary withholding tax transactions can be calculated and displayed in these transactions. |
+| Globalization | Global withholding tax | The **Withholding tax** button is added to the **Purchase order** and **Vendor invoice** pages. Temporary withholding tax transactions can be calculated and displayed in these transactions. |
+|General ledger | Ability to view the **Original document** and **Original document date** for Ledger settlements |You can view the **Original document** and **Original document date** on the **Ledger settlement** page. This information will be updated for opening balances for the ledger settlement main accounts that are defined to keep detail during the year-end close process. | 
+|General ledger |Financial tags integration with the Ledger settlements automated process |When the Financial tags feature has been enabled in the Feature management workspace, you can select Financial tags as match criteria for the Ledger settlements automated process.|
+
+
+
+
 
 ## Features turned on by default in this release
 
