@@ -139,9 +139,15 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
 Once you've installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
 
-1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following features:
-    - *Inventory Visibility Integration* – Required.
-    - *Inventory Visibility integration with reservation offset* – Recommended but optional. Requires version 10.0.22 or later. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following feature:
+    - *Inventory Visibility Integration*.
+
+1. We recommend that you also enable one of the following optional features (but *do not enable both*). For more information about these features, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+    - *Inventory Visibility integration with reservation offset* – Requires version 10.0.22 or later.
+    - *Inventory Visibility integration with soft reservation on sales order lines* – Requires version 10.0.33 or later. If you haven't used Inventory Visibility before, then we recommend using this feature rather than the previous one.
+
+    > [!IMPORTANT]
+    > These two features are incompatible with each other, so only enable one of them. We recommend *Inventory Visibility integration with soft reservation on sales order lines* for all new installations that are running Supply Chain Management version 10.0.33 or later. If you are already using the *Inventory Visibility integration with reservation offset* feature, then you can continue to do so if you don't need to make direct soft reservation from Supply Chian Management sales orders, but you can also change to the newer feature if you prefer, provided you meet the system requirements.
 
 1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
