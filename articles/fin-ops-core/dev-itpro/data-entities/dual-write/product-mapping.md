@@ -136,6 +136,12 @@ The units of measure and its respective conversion are available in the Datavers
 
 The unit of measure concept is integrated between finance and operations apps and other Dynamics 365 apps. For each unit class in a finance and operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group.
 
+Note the following difference of behavior on units of meassure between Dynamics 365 finance and operations apps and Dynamics Sales:
+- In Dynamics 365 finance and operations apps, there are unit of measure conversions inter-class and intra-class. It is possible to make changes of the sales unit between different classes (inter-class) as long as an existing converstion exists for the product. 
+- In Dynamics Sales it is only possible to change the unit to another unit in the same group. 
+- With the standard integration provided, where a unit group is created in Dynamics Sales for each unit class in Dynamics finance and operations app, then it will not be possible to change the sales unit of the product in Dynamics Sales to another unit in a different group, as that is a restriction on Dynamics Sales. This menaning that it is not possible to do an inter-class conversion in finance and operations and sync it to Sales. 
+- If the scenario to do a inter-class unit conversion in finance and operations apps to be synced to Sales is needed, then the default implementation muyst be changed so that all the units from finance and operations are synced to a single unit group in dynamics Sales, representing the finance and operations unit class. This can be avhieved by customizing the dual write mapping template for units and map the msdyn_externalunitclassname to a fixed value instead of UNITCLASS. 
+
 Finance and operations apps | Customer engagement apps |
 ---|---
 [Product specific unit conversions](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
