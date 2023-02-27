@@ -1,7 +1,7 @@
 ---
 title: General ledger in the public sector overview
 description: This article describes the General ledger functionality that's available for organizations in the public sector.
-author: v-kiarnd
+author: TaylorVH
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: v-kiarnd
+ms.author: TaylorVH
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 27211,  ""intro-internal

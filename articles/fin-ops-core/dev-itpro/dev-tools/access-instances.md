@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This article describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 07/08/2022
+ms.date: 09/15/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -34,7 +34,7 @@ This article describes how to access development instances, configure local deve
 | Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM. |
 
 
-## Deploying cloud development environments
+## Deploy cloud development environments
 
 To deploy a cloud development environment in your Lifecycle Services (LCS) project:
 
@@ -57,20 +57,7 @@ When a cloud environment is provisioned through LCS:
 + The user who requests the cloud environment is provisioned as the administrator in that environment.
 + User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in LCS.
 
-> [!NOTE]
-> Each cloud environment provisioned through LCS will create a resource group in your Azure subscription containing the following resources:
-> 
-> + 1 Virtual machine
-> + 5 Disks
-> + 1 Load balancer
-> + 1 Regular network interface
-> + 1 Network security group
-> + 1 Virtual network
-> + 1 Public IP address
-> + 1 Storage account
-> + 1 or more additional storage accounts prefixed with “dyn” for storage of product binaries
-
-### Accessing an instance through a URL
+### Access an instance through a URL
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. These additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
 
@@ -80,7 +67,7 @@ The system can be accessed by end users. The administrator can add users to this
 4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be `https://dynamicsAx7aosContoso.cloud.dynamics.com`.
 
-### Accessing the cloud instance through Remote Desktop
+### Access the cloud instance through Remote Desktop
 
 Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this article).
 
@@ -94,7 +81,7 @@ For any environments deployed **on or after Platform update 12**, there are dist
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
-### Deleting cloud-hosted developer environments
+### Delete cloud-hosted developer environments
 
 When you're done with the developer environment, or in some cases where troubleshooting an infrastructure issue is too time consuming, you can always delete the environment from LCS and create a new one later.  To delete a cloud-hosted environment from LCS, use the following steps:
 
@@ -119,7 +106,8 @@ If LCS wasn't able to successfully complete the delete operation, the operation 
 You can easily identify the environment’s resource group in the Azure subscription, as it will have the same name as the environment in LCS.
 
 ## VM that is running locally
-A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of finance and operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
+
+A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a preconfigured one-box development environment of finance and operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
 1. Go to the LCS main page and select **Shared asset library** or go to [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 2. Select the asset type **Downloadable VHD**.
@@ -127,7 +115,7 @@ A virtual hard disk (VHD) is made available for download from LCS, so that you c
 4. Download all files (parts) associated with the desired VHD to a local folder.
 5. After the download is complete, run the executable file that you downloaded, accept the software license agreement, and choose a file path to extract the VHD to. These steps create a local VHD file that you can use to run a local virtual machine.
 
-### Commerce configuration
+### Configure the VHD for Commerce
 
 Follow the steps in this section if you're also configuring for Commerce.
 
@@ -167,7 +155,7 @@ For POS customizations, you must also follow these steps on the guest VM.
 1. Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424).
 2. Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
 
-### Provisioning the administrator user
+### Provision the administrator user
 
 For developer access, you must be an administrator on the instance. For environments that are provisioned through LCS, we encourage you to deploy with the correct user. For more information, see [Frequently asked questions](access-instances.md#frequently-asked-questions). To provision your own credentials as an administrator on a local VM, run the Admin user provisioning tool. On the local VM, a link is provided on the desktop.
 
@@ -200,6 +188,7 @@ The URL of the Cloud POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.
 - Cashier store: **Houston**
 
 ## Location of packages, source code, and other AOS configurations
+
 On a VM, you can find most of the application configuration by opening the web.config file of AOSWebApplication.
 
 1. Start IIS.
@@ -212,6 +201,7 @@ On a VM, you can find most of the application configuration by opening the web.c
     - **Aos.AppRoot** – This key points to the root folder of the Application Object Server (AOS) web application.
 
 ### Commerce configuration
+
 The software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize applications, see the following topics:
 - [Retail software development kit (SDK) architecture](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
 - [Point of sale (POS) device activation](../../../commerce/dev-itpro/retail-device-activation.md)
@@ -265,7 +255,7 @@ Once cleared, use the forms in headquarters to set up your payment gateway merch
  - [Set up Dynamics 365 Payment Connector for Adyen](../../../commerce/dev-itpro/adyen-connector-setup.md)
  - [Dynamics 365 Payment Connector for PayPal](../../../commerce/paypal.md)
 
-## Redeploying or restarting the runtime on the VM
+## Redeploy or restart the runtime on the VM
  
 To restart the local runtime and redeploy all the packages, follow these steps.
 
@@ -313,7 +303,13 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
 > [!Note]
 > Since these URLs are being added manually, the clean-up of these URLs will also have to be done manually when the environment is deleted.
 
-1. Retrieve the following values from the web.config file.
+1. If not already on your machine you will need to install the Microsoft.Graph Powershell module.
+
+    ```powershell
+    Install-Module Microsoft.Graph
+    ```
+
+2. Retrieve the following values from the web.config file.
 
     ```powershell
     $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
@@ -323,21 +319,25 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     $AADRealm = <Value of Aad.Realm from web.config without spn: prefix. >
     ```
 
-2. Run the following commands **via the tenant admin account for the Azure AD tenant in the web.config file**.
+3. Run the following commands **via the tenant admin account for the Azure AD tenant in the web.config file**.
 
     ```powershell
-    # Using tenant admin account under this tenant login to via AzureAD PowerShell cmdlet.
-    Connect-AzureAD
+    # Using tenant admin account under this tenant login via Microsoft Graph PowerShell cmdlet.
+    Connect-MgGraph -TenantId $AADTenant -Scopes "Application.ReadWrite.All"
 
     # Get Service Principal details
-    $SP = Get-AzureADServicePrincipal -Filter "AppId eq '$AADRealm'"
-
-    #Add Reply URLs
-    $SP.ReplyUrls.Add("$EnvironmentUrl")
-    $SP.ReplyUrls.Add("$EnvironmentUrl/oauth")
+    $SP = Get-MgServicePrincipal -Filter "AppId eq '$AADRealm'"
+    
+    # Add Reply URLs
+    [System.Collections.ArrayList]$ReplyUrls = $SP.ReplyUrls
+    $ReplyUrls.Add("$EnvironmentUrl")
+    $ReplyUrls.Add("$EnvironmentUrl/oauth")
 
     #Set/Update Reply URL
-    Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
+    Update-MgServicePrincipal -ServicePrincipalId $SP.Id -ReplyUrls $ReplyUrls
+    
+    # Log out
+    Disconnect-MgGraph
     ```
 
 ### I've fixed my environment, but it's still in a failed state. How do I resolve this issue?

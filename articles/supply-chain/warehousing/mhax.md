@@ -4,7 +4,7 @@
 title: Material handling equipment interface (MHAX)
 description: This article describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,12 +46,13 @@ Here is an explanation of the interactions that are shown in the previous illust
 
 Before you can use the MHAX feature, you must turn on both its feature and its configuration key.
 
-1. Go to **System administration \> Workspaces \> Feature management**.
-2. In the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, turn on the feature that is named *Material handling equipment interface*.
-3. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Go to **System administration \> Setup \> License configuration**.
-5. Expand **Trade \> Warehouse and Transportation management**, and then select the **Material handling equipment interface** check box.
-6. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. If you're running Supply Chain Management version 10.0.28 or earlier, do the following steps:
+    1. Go to **System administration \> Workspaces \> Feature management**.
+    1. In the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, turn on the feature that is named *Material handling equipment interface*. (As of Supply Chain Management 10.0.29, this feature is mandatory and can't be turned off.)
+1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Go to **System administration \> Setup \> License configuration**.
+1. Expand **Trade \> Warehouse and Transportation management**, and then select the **Material handling equipment interface** check box.
+1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## Set MHAX parameters
 

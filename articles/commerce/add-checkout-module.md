@@ -2,18 +2,14 @@
 title: Checkout module
 description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
+
 ---
 
 # Checkout module
@@ -76,6 +72,9 @@ A checkout module shows an order summary and provides the functionality for plac
     The following image shows an example of terms and conditions on a checkout page.
 
     ![Example of terms and conditions on a checkout page.](./media/ecommerce-checkout-terms.PNG)
+    
+> [!NOTE]
+> If you're planning to accept multiple payment methods for online orders in your online channel (for example, loyalty points and credit card payments), the **Omni-channel Commerce order payments** feature (in headquarters at **System administration \> Workspace \> Feature management**), and the call center **Enable order completion** setting (on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**) must both be enabled. If the **Omni-channel Commerce order payments** feature is enabled, the **Enable order completion** setting is enabled by default and hidden.
 
 ## Commerce Scale Unit interaction
 
@@ -99,6 +98,9 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
+
+> [NOTE]
+> When using single payment authorization as described in [Enhanced payments in storefront checkout](./dev-itpro/enhanced-sca.md), in the **Checkout information** section of the checkout page, confirm that the checkout section container is positioned last. This ensures that all required information is gathered by the checkout page prior to the final payment checkout and order completion actions. 
 
 ## Additional resources
 

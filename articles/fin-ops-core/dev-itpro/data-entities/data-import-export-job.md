@@ -4,7 +4,7 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -72,6 +72,9 @@ You can add specific entities to an import or export job or select a template to
 ### Set the data format for the job
 When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are also other attributes, but these are the key ones to understand. The following table lists the valid combinations.
 
+> [!NOTE]
+> The Excel file format is not currently available in the Data management workspace for Government Community Cloud (GCC).
+
 | File Format            | Row/Column delimiter                       | XML Style                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-NA-                     |
@@ -83,6 +86,19 @@ When you select an entity, you must select the format of the data that will be e
 
 > [!NOTE]
 > For XML-based file formats, make sure to only use legal characters. For more details about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
+
+Use Unicode instead of a specific code page to import or export data. This will help provide the most consistent results and eliminate data management jobs to fail because they include Unicode characters. The system-defined source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
+
+| Code page	| Display name                |
+|-----------|-----------------------------|
+| 1200	    | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001	    | Unicode (UTF-32 Big-Endian) |
+| 1201	    | Unicode (Big-Endian)        |
+| 65000	    | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+For more details about Code pages, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers/).
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export. 

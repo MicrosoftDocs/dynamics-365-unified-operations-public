@@ -4,14 +4,14 @@
 title: Work with location directives
 description: This article describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form:  WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
+ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -50,6 +50,17 @@ Before you can create a location directive, you must follow these steps to make 
 1. Create locations, location types, location profiles, and location formats. For more information, see [Configure locations in a WMS-enabled warehouse](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Create sites, zones, and zone groups. For more information, see [Warehouse set up](../../commerce/channels-setup-warehouse.md) and [Configure locations in a WMS-enabled warehouse](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="scopes-feature"></a>Turn the Location directive scopes feature on or off
+
+The *Location directive scopes* feature gives you more freedom when you design location directives and helps reduce redundant configurations. It adds a **Scopes** option, which replaces the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values). For more information about these settings, see [Location directives FastTab](#location-directives-tab).
+
+When it's enabled, the **Scope** option supersedes the **Multiple SKU** option and is 100-percent compatible with existing configurations.
+
+To use this feature, you must turn it on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *Location directive scopes*
+
 ## Work order types for location directives
 
 Many of the fields that can be set for location directives are common to all work order types. However, other fields are specific to particular work order types.
@@ -71,7 +82,7 @@ The following table lists the fields that are common to all work order types.
 | Location directives | Site |
 | Location directives | Warehouse |
 | Location directives | Directive code |
-| Location directives | Multiple SKU |
+| Location directives | Scope *or* Multiple SKU |
 | Lines | Sequence number |
 | Lines | From quantity |
 | Lines | To quantity |
@@ -120,7 +131,9 @@ The Action Pane on the **Location directives** page contains buttons that you ca
 
 - **Move up** – Move the selected location directive up in the sequence. For example, you can move it from sequence number 4 to sequence number 3.
 - **Move down** – Move the selected location directive down in the sequence. For example, you can move it from sequence number 4 to sequence number 5.
+- **Copy** – Open a dialog box where you can create an exact copy of the current location directive.
 - **Edit query** – Open a dialog box where you can define the conditions that the selected location directive should be processed under. For example, you might want it to apply only to a specific warehouse.
+- **Acceptance tests** – Open a page where you can set up automated tests to determine how your location directives will behave under different starting conditions. In this way, you can quickly validate your directives as you create and maintain them. For more information, see [Test location directives with acceptance tests](location-directive-acceptance-tests.md).
 
 ## Location directives header
 
@@ -129,7 +142,7 @@ The location directive header includes the following fields for the sequence num
 - **Sequence number** – This field indicates the sequence that the system tries to apply each location directive in for the selected work order type. Low numbers are applied first. You can change the sequence by using the **Move Up** and **Move Down** buttons on the Action Pane.
 - **Name** – Enter a descriptive name for the location directive. This name should help identify the general purpose of the directive. For example, enter *Sales order picking in warehouse 24*.
 
-## Location directives FastTab
+## <a name="location-directives-tab"></a>Location directives FastTab
 
 The fields on the **Location directives** FastTab are specific to the work order type that is selected in the **Work order type** field in the list pane.
 
@@ -141,14 +154,34 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!IMPORTANT]
     > The other values in the **Work type** field aren't relevant for location directives. They appear only because the field isn't filtered to match the selected work order type.
 
-- **Site** – This field is mandatory, because the location directive must be able to determine the site and warehouse that it's valid for.
-- **Warehouse** – This field is mandatory, because the location directive must be able to determine the site and warehouse that it's valid for.
 - **Directive code** – Select the directive code to associate with a work template or replenishment template. On the **Directive code** page, you can create new codes that can be used to connect work templates or replenishment templates to location directives. Directive codes can also be used to establish a link between any work template line and a location directive (such as the bay door or stage location).
 
     > [!TIP]
     > If a directive code is set, the system won't search location directives by sequence number when work must be generated. Instead, it will search by directive code. In this way, you can be more specific about the location directive that is used for a particular step in a work template, such as the step for staging the materials.
 
-- **Multiple SKU** – Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
+- **Scope** – Use this option to specify the scenarios that the location directive will be applied to. This option replaces the **Multiple SKU** option and is available only if the *Location directive scopes* feature is turned on in your system. (For more information, see [Turn the Location directive scopes feature on or off](#scopes-feature).)
+
+    | Scope setting | Single order with one item | Multiple orders with the same item | Single order with multiple items | Multiple orders with multiple items |
+    |---|---|---|---|---|
+    | Single item | Yes | Yes | No | No |
+    | Multiple items | No | No | Yes | Yes |
+    | Single item or order | Yes | Yes | Yes | No |
+    | All | Yes | Yes | Yes | Yes |
+
+    The following table describes when the scopes are available, and whether they allow for the **Edit query** function.
+
+    | Scope | Supported work type | Supported work order types | Allow for Edit query |
+    |---|---|---|---|
+    | Single item | All | All | Yes |
+    | Multiple items | All | All | No |
+    | Single item or order | Puts | Co-product and by-product put away, finished goods put away, kanban put away, purchase orders, quality orders, replenishment, return orders, sales orders, transfer issue, and transfer receipt | Yes |
+    | All | Puts | All | No |
+
+    > [!NOTE]
+    > - To do puts for both multiple items and single items, you must ensure that location directives exist that cover both scenarios. For example, you might set up one or more *Single item or order* location directives to cover scenarios that require fine-tuning (such as through edits to the query), and then one or more *All* location directives to cover the remaining scenarios.
+    > - Although *Single item* and *Multiple items* scopes can be used for puts, this approach typically leads to redundant configurations. Consider using *Single item or order* and *All* scopes instead, because this approach will produce a cleaner setup.
+
+- **Multiple SKU** – Use this option to specify the scenario that the location directive will be applied to. This setting is replaced by the **Scope** setting if the *Location directive scopes* feature is turned on in your system. (For more information, see [Turn the Location directive scopes feature on or off](#scopes-feature).) Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
 
     > [!IMPORTANT]
     > To be able to do both multi-item puts and single-SKU puts, you must specify two lines that have same structure and setup, but you must set the **Multiple SKU** option to *Yes* for one line and *No* for the other. Therefore, for put operations, you must have two identical location directives, even if you don't have to distinguish single SKUs and multiple SKUs on a work ID. Often, if you don't set up both these location directives, unexpected business process locations will come from the applied Location directive. You must use a similar setup for location directives that have a **Work type** of *pick* if you need to process orders that include multiple SKUs.
@@ -176,6 +209,19 @@ The fields on the **Location directives** FastTab are specific to the work order
 
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+
+## Warehouse selection FastTab
+
+Use the **Warehouse selection** FastTab to specify the warehouse and site where the location directive will apply.
+
+- **Warehouse selection**  – Select one of the following values:
+
+    - *All* – Use the location directive for all warehouses where a more specific location directive hasn't been assigned.
+    - *Warehouse group* – Use the location directive for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
+    - *Warehouse* – Use the location directive only for the specific warehouse that's selected in the **Warehouse** field.
+
+- **Site** and **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the site and warehouse where the location directive applies. If you select the warehouse first, the site will be filled in automatically. If you select the site first, the warehouse list will be filtered so that it shows only warehouses at that site.
+- **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the location directive applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
 
 ## Lines FastTab
 
@@ -258,6 +304,5 @@ After you create location directives, you can associate each directive code with
 
 - Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Help article: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

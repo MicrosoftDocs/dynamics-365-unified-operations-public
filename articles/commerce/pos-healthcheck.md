@@ -4,7 +4,7 @@
 title: Health check for POS peripherals and services
 description: This article provides an overview of the health check operation in the point of sale (POS).
 author: BrianShook
-ms.date: 03/06/2020
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -84,7 +84,7 @@ Custom health checks can also be created to test devices that aren't supported o
 
 ## Related articles
 
-[Modern POS (MPOS) triggers and printing](dev-itpro/pos-trigger-printing.md)
+[Store Commerce app triggers and printing](dev-itpro/pos-trigger-printing.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

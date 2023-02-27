@@ -319,7 +319,7 @@ When you've finished, you should see that four shipments were created:
 
 ## Additional resources
 
-- [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+- [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
 
 

@@ -79,7 +79,7 @@ ER configurations that are designed in the development environment can be [uploa
 
 ## Data persistence consideration
 
-You can individually [import](tasks/er-import-configuration-lifecycle-services.md) different [versions](general-electronic-reporting.md#component-versioning) of an ER [configuration](general-electronic-reporting.md#Configuration) to your Finance instance. When a new version of an ER configuration is imported, the system controls the content of the draft version of this configuration:
+You can individually [import](tasks/er-import-configuration-lifecycle-services.md) different versions of an ER [configuration](general-electronic-reporting.md#Configuration) to your Finance instance. When a new version of an ER configuration is imported, the system controls the content of the draft version of this configuration:
 
 - When the imported version is lower than the highest version of this configuration in the current Finance instance, the content of the draft version of this configuration remains unchanged.
 - When the imported version is higher than any other version of this configuration in the current Finance instance, the content of the imported version is copied to the draft version of this configuration to let you continue editing the last completed version.
@@ -107,7 +107,7 @@ ER configurations can be configured as [dependent](er-download-configurations-gl
 
 ![Derived ER format configuration on the Configurations page.](./media/ger-configuration-lifecycle-img1.png)
 
-When you've finish designing the format, you can change the status of your initial [version](general-electronic-reporting.md#component-versioning) of the ER format configuration from **Draft** to **Completed**. You can then share the completed version of the ER format configuration by [publishing](../../../finance/localizations/rcs-global-repo-upload.md) it to the Global repository. Next, you can access the Global repository from any RCS or Finance cloud instance. You can then import any ER configuration version that is applicable to the application from the Global repository into that application.
+When you've finish designing the format, you can change the status of your initial version of the ER format configuration from **Draft** to **Completed**. You can then share the completed version of the ER format configuration by [publishing](../../../finance/localizations/rcs-global-repo-upload.md) it to the Global repository. Next, you can access the Global repository from any RCS or Finance cloud instance. You can then import any ER configuration version that is applicable to the application from the Global repository into that application.
 
 ![Published ER format configuration on the Configuration repository page.](./media/ger-configuration-lifecycle-img2.png)
 

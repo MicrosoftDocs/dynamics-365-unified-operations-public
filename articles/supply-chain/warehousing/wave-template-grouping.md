@@ -34,7 +34,7 @@ Wave template grouping enables the system to use [wave template](tasks/configure
 
 ## Turn on the Wave template grouping feature
 
-Before you can use the *Wave template grouping* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use the *Wave template grouping* feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Wave template grouping*

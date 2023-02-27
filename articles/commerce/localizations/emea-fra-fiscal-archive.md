@@ -2,7 +2,7 @@
 title: Fiscal archive for France
 description: This article provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-ms.date: 05/17/2022
+ms.date: 11/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -212,12 +212,12 @@ To obtain the Fiscal archive integrity verification tool and run it against a fi
 1. Download the tool from the Commerce SDK:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Open the last available release branch (for example, **[release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30)**).
+    1. Open the last available release branch.
     1. Open **src \> FiscalIntegration \> SequentialSignatureFrance \> FiscalArchiveIntegrityVerificationTool**.
     1. Review the license terms for the tool.
     1. Download the contents of the folder to your local machine.
 
-1. Export public key files for all digital certificates that are used for digital signing of records.
+1. Export public key files for all digital certificates that are used for digital signing of transactions and audit events on the Commerce channel side, or period grand total journals and fiscal archives on the Commerce headquarters side.
 1. Put the fiscal archive file, its signature file, and all public key files into one folder.
 1. Run Windows PowerShell.
 1. Run the **verify.ps1** script of the tool, and specify the name of the fiscal archive file. Include the full path of the file.

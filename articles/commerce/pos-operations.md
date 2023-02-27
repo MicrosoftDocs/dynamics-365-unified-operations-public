@@ -2,7 +2,7 @@
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,9 +25,9 @@ Most actions that users take in the point of sale (POS) are considered operation
 
 Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
-Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
+Some operations aren't currently available in the Store Commerce app or Store Commerce for web. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
-The table below provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
+The table below provides details about the operations that are available in the Store Commerce app and Store Commerce for web. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
 
 The following columns specify where the operations can be invoked:
 
@@ -37,6 +37,7 @@ The following columns specify where the operations can be invoked:
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
+> For additional details regarding offline features and configuration, refer to the [Commerce offline implementation and troubleshooting](dev-itpro/implementation-considerations-offline.md) article.
 
 | ID   | Operation                                         | Description                                                                                                                                                                                                    | User operations    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
@@ -96,7 +97,7 @@ The following columns specify where the operations can be invoked:
 | 212  | Fleet card info                                   | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 213  | Pay credit memo                                   | Accept a credit memo (voucher) that the store issued.                                                                                                                                                          | Yes            | Yes                | No             | No                | No              |
 | 214  | Pay gift card                                     | Accept a gift card that the store issued.                                                                                                                                                                      | Yes            | Yes                | No             | No                | No              |
-| 215  | Cash out gift card                                | This operation isn't supported.                                                                                                                                                                                | Yes            | Yes                | No             | No                | No              |
+| 215  | Cash out gift card                                | Credit transaction with full amount of gift card remaining balance if within the configured cash out limit.                                                                                                                                                                              | Yes            | Yes                | No             | No                | No              |
 | 216  | Pay card exact                                    | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 217  | Pay check exact                                   | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 218  | Pay customer account exact                        | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |

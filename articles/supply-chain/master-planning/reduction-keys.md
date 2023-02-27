@@ -94,9 +94,7 @@ If you set the **Method used to reduce forecast requirements** field to *Transac
 
 The qualified demand is defined by the **Reduce forecast by** field on the **Coverage groups** page. If you set the **Reduce forecast by** field to *Orders*, only sales order transactions are considered qualified demand. If you set it to *All transactions*, any non-intercompany issue inventory transactions are considered qualified demand. If intercompany sales orders should also be considered qualified demand, set the **Include intercompany orders** option to *Yes*.
 
-Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there is unconsumed forecast).
-
-If no unconsumed forecast remains in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
+Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will not reduce previous or future periods. 
 
 The value of the **Percent** field on the reduction key lines isn't used when the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key*. Only the dates are used to define the reduction key period.
 
@@ -137,7 +135,7 @@ When this option is used, the following behavior occurs:
 - Reduction keys aren't required or used. 
 - If the forecast is completely reduced, the forecast requirements for the current forecast become 0 (zero).
 - If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.
-- Time fences are included in the forecast reduction calculation.
+- The demand forecast reduction time fence isn't included in the forecast reduction calculation. Instead, the coverage group time fence is used for forecast reduction.
 - Positive days are included in the forecast reduction calculation.
 - If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
@@ -238,7 +236,7 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 ## Additional resources
 
-[Master plans overview](master-plans.md)
+- [Master plans overview](master-plans.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

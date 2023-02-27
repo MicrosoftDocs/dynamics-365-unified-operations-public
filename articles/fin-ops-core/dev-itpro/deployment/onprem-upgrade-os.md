@@ -4,7 +4,7 @@
 title: Upgrade Windows Server in Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This article explains how to upgrade the Windows Server version that your Microsoft Dynamics 365 Finance + Operations (on-premises) environments are using.
 author: faix
-ms.date: 06/07/2022
+ms.date: 9/21/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -80,6 +80,13 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
     Your new farm/instance is now ready to be used by Finance + Operations (on-premises).
 
 1. If your new farm/instance endpoint differs from the old farm/instance endpoint, be sure to update the endpoint in Microsoft Dynamics Lifecycle Services (LCS) by selecting the **Update Settings** option and setting the **ADFS OpenID metadata endpoint** field to the new value.
+
+1. If your new farm/instance identifier differs from the old farm/instance identifier, you must update the user info table so that it reflects the new configuration. As of version 2.17.0 of the infrastructure scripts, you can run the following command from one of your AOS nodes to automatically update and regenerate the configuration of each user.
+
+    ```powershell
+    Import-Module ".\D365FO-OP" -Force
+    .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
+    ```
 
 ### Post-upgrade actions
 

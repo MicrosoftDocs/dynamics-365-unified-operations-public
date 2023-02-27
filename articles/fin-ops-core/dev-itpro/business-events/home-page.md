@@ -73,17 +73,16 @@ The **General** tab of the **Business events parameters** page provides general 
 - **Retry count** – The number of times that the system will try again to send business events to an endpoint if an error occurs. The default value is **3**.
 - **Wait time between retries** – The interval, in milliseconds, between attempts to send a business event to its endpoint. The default value is **1000** milliseconds.
 - **Endpoints allowed per event** – The maximum number of endpoints that can subscribe to the same business event in a legal entity. The default value is **10**.
-- **Use business events batch job** – The business events batch processing job is available when a workaround is required to mitigate issues with dedicated processing. If you enable this option, select the **Business events batch job** action to select settings for the batch job processor. For more information about the settings for dedicated processing, see the description of the **Performance** tab in the next section.
 - **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events will be cached in memory before they are read and cached again from the configured key vault. The default value is **5** minutes.
 
 ### Performance
 
 The business events framework has two primary settings that can affect performance: **Processing threads** and **Bundle size**. The application allocates dedicated batch threads to process business events in near-real time. Because threads are a shared resource for all batch processing, you must take care when you decide to change the thread allocation for business events.
 
-- **Processing threads** – The number of threads to use to process business events. The maximum value is **4**.
+- **Processing threads** – The number of threads to use to process business events.
 
-    - If you're using dedicated processing for business events, the thread count is the number per Batch Application Object Server (AOS) instance.
-    - If you're using a batch job, the thread count is the total number of additional batch tasks that will be used to process events.
+    - With dedicated processing for business events, the thread count is the number per Batch Application Object Server (AOS) instance.
+    - The maximum value is **4**.
 
 - **Bundle size** – The number of events to group together at a time for processing by a thread.
 

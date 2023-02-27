@@ -2,7 +2,7 @@
 title: Configure a Dynamics 365 Commerce sandbox environment
 description: This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
 author: josaw1
-ms.date: 06/14/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,9 +56,9 @@ To associate a worker with your identity, follow these steps in Commerce headqua
 1. Select **OK**.
 1. Select **Save**.
 
-### Activate Cloud POS
+### Activate Store Commerce for web
 
-To activate Cloud POS, follow these steps in LCS.
+To activate Store Commerce for web, follow these steps in LCS.
 
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select your environment in the list.
@@ -69,7 +69,7 @@ To activate Cloud POS, follow these steps in LCS.
 1. Under **Store name**, select **San Francisco**, and then select **Next**.
 1. Under **Register and device**, select **SANFRAN-1**.
 1. Select **Activate**. You're signed out and taken to the POS sign-in page.
-1. You can now sign in to the Cloud POS experience by using operator ID **000713** and password **123**.
+1. You can now sign in to Store Commerce for web by using operator ID **000713** and password **123**.
 
 ## Set up your e-commerce sites
 

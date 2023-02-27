@@ -4,14 +4,14 @@
 title: USMCA certification of origin
 description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
 author: Weijiesa
-ms.date: 10/23/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -38,12 +38,9 @@ The document is only accessible when the country on the primary address for the 
 
 Depending on the document print selection, the document can be pre-filled with data from your system. It is possible to change or add data to the printed document by exporting the printed document to an editable format, such as Microsoft Word. After export, you can apply any required changes before a declaration is made.
 
-## Turn on the USMCA feature
+## Turn the USMCA feature on or off
 
-Before you can use the USMCA feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Transportation management*
-- **Feature name:** *USMCA certification of origin document*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *USMCA certification of origin document* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Document content
 
@@ -65,7 +62,7 @@ For more information about each of these elements and how their values are found
 To print a USMCA certification of origin document for a shipment, do the following:
 
 1. Do one of the following:
-    - Go to **Transportation management> Shipments > All shipments** and select the shipment you want to print the document for.
+    - Go to **Transportation management \> Planning \> Shipments \> All shipments** and select the shipment you want to print the document for.
     - Open the **Shipment details** page for the shipment you want to print the document for (there are several ways to get here, including from the **All shipments** page).
 1. On the Action Pane, open the **Shipments** tab and, from the **Print** group, select **USMCA certificate of origin**.
 1. The **Certificate or origin** dialog box opens. Make the settings described in the following subsections and then select **OK** to generate the document.

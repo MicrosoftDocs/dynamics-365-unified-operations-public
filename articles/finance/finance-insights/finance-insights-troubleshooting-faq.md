@@ -91,10 +91,14 @@ The following steps should have been completed.
 - Verify that a Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
 - Verify that the following Azure AD app is registered in Azure AD: 
 
-  | Application                  | App ID           |
-  | ---------------------------- | ---------------- |
-  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+    | Application                  | App ID           |
+    | ---------------------------- | ---------------- |
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+    To verify the application is registered in Azure AD, check the **All Applications** list. For more details, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    If the application isn't registered in Azure AD, contact support.
+
 ## Symptom: Error, “We didn’t’ find any data for the selected filter range. Please select a different filter range and try again.” 
 
 ### Resolution

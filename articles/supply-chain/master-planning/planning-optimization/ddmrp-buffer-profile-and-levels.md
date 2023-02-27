@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Buffer profile and levels
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 After you've identified your decoupling points (key items that you will strategically keep in stock), you must decide how much stock (buffer) you will keep at each of them. This task is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
@@ -72,6 +71,14 @@ In the previous illustration, if today is the morning of June 11, the ADU for th
 
 - **ADU (past)** = (29 + 11 + 23) ÷ 3 = 21
 
+The following transactions are taken into account for the average daily usage (past) calculation:
+
+- Transactions that diminish the quantity of the item (in the `inventtrans` table where quantity is less than zero)
+- Transactions with a status of *On order*, *Reserved ordered*, *Reserved physical*, *Picked*, *Deducted*, or *Sold*
+- Transactions dated within the chosen backwards period (the average daily usage past period)
+- Transactions other than warehouse work, quarantine, sales quotations, or statements (`WHSWork`, `WHSQuarantine`, `SalesQuotation`, or `Statement`)
+- Transactions other than transfer journals that are within the same coverage dimension
+
 ### Average daily usage (forward)
 
 For a new product, you might not have any past usage data. Therefore, you might instead use the projected ADU going forward (for example, based on forecasted demand). The following illustration shows how this approach works when the calculation looks three days into the future (including today).
@@ -81,6 +88,11 @@ For a new product, you might not have any past usage data. Therefore, you might 
 In the previous illustration, if today is the morning of June 11, the ADU for the next three days (June 11, 12, and 13) is 21.66.
 
 - **ADU (forward)** = (18 + 18 + 29) ÷ 3 = 21.66
+
+The following transactions are taken into account for the average daily usage (forward) calculation:
+
+- Forecast transactions for the item where the forecast is selected on the master plan
+- Transactions dated within the chosen forward period (the average daily usage forward period)
 
 ### Average daily usage (blended)
 

@@ -4,7 +4,7 @@
 title: Peripherals
 description: This article explains the concepts that are related to Commerce peripherals. 
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -55,7 +55,7 @@ POS peripherals are devices that are explicitly supported for POS functions. The
 
 ### Hardware station
 
-Navigation: Go to **Retail and Commerce \> Channels \> Stores \> All stores**. Select a store, and then select the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS programs for Windows and Android. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it is accessed via network.
+Navigation: Go to **Retail and Commerce \> Channels \> Stores \> All stores**. Select a store, and then select the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS programs for Windows and Android. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it's accessed via network.
 
 ### Hardware profile
 
@@ -119,12 +119,12 @@ To help guarantee that the largest range of devices can be used with Commerce, t
 
 ### Windows
 
-Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster than printing through Windows. Therefore, it's a good idea to use OPOS, especially in environments where 40-column receipts are printed and transaction times must be fast. For most devices, you will use OPOS controls. However, some OPOS receipt printers also support Windows drivers. By using a Windows driver, you can access the latest fonts and network one printer for multiple registers. However, there are drawbacks to using Windows drivers. Here are some examples of these drawbacks:
+Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster than printing through Windows. Therefore, it's a good idea to use OPOS, especially in environments where 40-column receipts are printed and transaction times must be fast. For most devices, you'll use OPOS controls. However, some OPOS receipt printers also support Windows drivers. By using a Windows driver, you can access the latest fonts and network one printer for multiple registers. However, there are drawbacks to using Windows drivers. Here are some examples of these drawbacks:
 
 -   When Windows drivers are used, images are rendered before printing occurs. Therefore, printing tends to be slower than it is on printers that use OPOS controls.
 -   Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the receipt printer might not work as you expect.
 -   OPOS also supports a more extensive set of variables that are specific to receipt printers, such as paper cutting or slip printing.
--   Windows printers are not supported through the IIS hardware station. 
+-   Windows printers aren't supported through the IIS hardware station. 
 
 If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Commerce.
 
@@ -138,9 +138,12 @@ Modern POS supports UWP MSRs and scanners. Therefore, when Modern POS is ready f
 
 Additional classes of POS peripherals are being added to Windows, such as classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
+> [!NOTE] 
+> Certain USB devices may become unresponsive or unreliable when managed by a Windows 10 power management feature called [USB Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend). If a USB peripheral becomes unresponsive, it may be necessary to disable the selective suspend feature for that device. For more information, see [Enabling Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
+
 ### Keyboard wedge
 
-Keyboard wedge devices send data to the computer as if that data were typed on a keyboard. Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped. In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field. For example, a bar code might be scanned into a field that is intended for input of credit card data. In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe. Therefore, the data is handled correctly. However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is "known" about the device that the data originates from. For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.
+Keyboard wedge devices send data to the computer as if that data were typed on a keyboard. Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped. In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field. For example, a bar code might be scanned into a field that is intended for input of credit card data. In many cases, there's logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe. Therefore, the data is handled correctly. However, when devices are set up as OPOS instead of keyboard wedge devices, there's more control over how the data from those devices can be consumed, because more is "known" about the device that the data originates from. For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.
 
 > [!NOTE]
 > When keyboard wedge scanners are used in the POS, they must be programmed to send a carriage return, or **Enter** event, after the last scanned character. If this configuration isn't done, keyboard wedge scanners won't function properly. Consult documentation provided by your device manufacturer for details on how to append the carriage return event.  
@@ -166,13 +169,16 @@ To use the dedicated hardware station, follow these steps.
 1. Open Modern POS in non-drawer mode, and use the **Manage hardware stations** operation to turn on the hardware station capabilities. The dedicated hardware station will be active by default. 
 1. Sign out of Modern POS. Then sign back in, and open a shift. The peripherals that are configured in the hardware profile will now be usable. 
 
+> [!NOTE]
+> You only need a single hardware station with record type **Dedicated**. Do not set a hardware profile or EFT value on the record; the values will be set on the **POS Register** form. 
+
 ### Shared
 
 Also sometimes referred to as the "IIS" hardware station, "IIS" implying that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When the shared hardware station is used, the peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 
 
 The shared hardware station can be used to allow multiple point of sale clients to share peripherals or can be used to manage a committed set of peripherals for a single point of sale. 
 
-When a hardware station is used to support sharing of peripherals between multiple POS clients, only cash drawers, receipt printers, and payment terminals should be used. You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time. Here is how conflicts are managed for supported devices:
+When a hardware station is used to support sharing of peripherals between multiple POS clients, only cash drawers, receipt printers, and payment terminals should be used. You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time. Here's how conflicts are managed for supported devices:
 
 -   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. Issues can occur if a cash drawer is called while the drawer is already open. A cash drawer that is used in a shared hardware station configuration should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
 -   **Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device. Some devices have internal memory or pooling that can prevent this issue. If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.
@@ -593,7 +599,7 @@ By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or e
         -   SSL 3.0Client:Enabled=0
         -   SSL 2.0Server:Enabled=0
         -   SSL 2.0Client:Enabled=0
--   No additional network ports should be open, unless they are required for known, specified reasons.
+-   No additional network ports should be open, unless they're required for known, specified reasons.
 -   Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
 -   Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.
 

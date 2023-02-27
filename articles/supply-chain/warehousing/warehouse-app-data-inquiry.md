@@ -2,7 +2,7 @@
 title: Query data using Warehouse Management mobile app detours
 description: This article describes how to configure data inquiry mobile device menu items and use them as part of detours.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -30,19 +30,19 @@ For example, in the purchase order receiving flow, a purchase order number is re
 Before you can use the functionality that is described in this article, you must complete the following procedure to turn on the required features.
 
 1. Go to **System administration \> Workspaces \> Feature management**. (For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Turn on the feature that is listed in the following way:
+1. If you're running Supply Chain Management version 10.0.28 or earlier, turn on the feature that is listed in the following way:
 
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse app step instructions*
 
-    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
+    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. As of Supply Chain Management version 10.0.29, it's mandatory and can't be turned off. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
 
 1. Turn on the feature that is listed in the following way:
 
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse management app detours*
 
-    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
+    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. As of Supply Chain Management version 10.0.29, it's turned on by default. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
 
 1. If the *Warehouse management app detours* feature wasn't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Turn on the feature that is listed in the following way:
@@ -50,7 +50,7 @@ Before you can use the functionality that is described in this article, you must
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse management app data inquiry flow*
 
-    This feature is the one that is described in this article.
+    This feature is the one that is described in this article. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.
 
 ## Example scenarios
 
@@ -263,6 +263,6 @@ Follow these steps to test your new mobile app setup.
     ![Purchase receiving using PO lookup by vendor, example 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Purchase receiving using PO lookup by vendor, example 2")
 
 > [!TIP]
-> Instead of running the receiving flow by doing a lookup from the **Purchase receive** menu item, you can start from an inquiry flow (**Main \> Inquire \> Look up POs by vendor**) and invoke a detour to run the desired flow by selecting one of the cards in the list. To use this approach, you can define a detour on the **Mobile device steps** page for the step that has a **Step ID** value of *GenericDataInquiryList*. Because this flow is a detour flow, you can't invoke more detours from it. Therefore, when you get to the item number entry screen, for example, the lookup won't be available on it, because the system currently supports only one level of detours.
+> Instead of running the receiving flow by doing a lookup from the **Purchase receive** menu item, you can start from an inquiry flow (**Main \> Inquire \> Look up POs by vendor**) and invoke a detour to run the desired flow by selecting one of the cards in the list. To use this approach, you can define a detour on the **Mobile device steps** page for the step that has a **Step ID** value of *GenericDataInquiryList*. Provided the [*Multi-level detours for the Warehouse Management mobile app*](warehouse-app-detours.md) feature is turned on for your system, you can also add an additional detour if needed (this feature adds support for up to two levels of detours and can be customized to support additional levels).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

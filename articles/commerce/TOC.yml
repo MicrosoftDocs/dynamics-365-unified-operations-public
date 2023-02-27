@@ -12,12 +12,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
-        - name: Commerce 10.0.29 (October 2022)
-          href: get-started/whats-new-commerce-10-0-29.md
-        - name: Commerce 10.0.28 (July 2022)
-          href: get-started/whats-new-commerce-10-0-28.md
-        - name: Commerce 10.0.27 (July 2022)
-          href: get-started/whats-new-commerce-10-0-27.md
+        - name: Commerce 10.0.32 (March 2023)
+          href: get-started/whats-new-commerce-10-0-32.md
+        - name: Commerce 10.0.31 (February 2023)
+          href: get-started/whats-new-commerce-10-0-31.md
+        - name: Commerce 10.0.30 (November 2022)
+          href: get-started/whats-new-commerce-10-0-30.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -62,6 +62,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -252,8 +254,6 @@
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
           href: https://www.microsoft.com/download/details.aspx?id=103896
-        - name: Commerce offline implementation and troubleshooting
-          href: dev-itpro/implementation-considerations-offline.md
         - name: Publish an online store catalog
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
@@ -276,7 +276,7 @@
           href: set-up-activation-accounts-validate-devices-hq.md
         - name: POS device activation
           href: dev-itpro/retail-device-activation.md
-        - name: Help secure Cloud POS in shared environments
+        - name: Security best practices for Store Commerce for web in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
@@ -372,7 +372,7 @@
           items:
           - name: Info codes and info code groups   
             href: info-codes-retail.md      
-          - name: Create a retail functionality profile    
+          - name: Create a commerce functionality profile    
             href: retail-functionality-profile.md   
           - name: Create a new address book     
             href: new-address-book.md
@@ -392,11 +392,19 @@
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
+          - name: Store Commerce app capabilities
+            href: store-commerce-capabilities.md
+          - name: Store Commerce app for mobile platforms
+            href: dev-itpro/store-commerce-mobile.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
-          - name: Choose between Store Commerce and Cloud POS
+          - name: Commerce offline implementation considerations
+            href: dev-itpro/implementation-considerations-offline.md
+          - name: Commerce offline implementation troubleshooting
+            href: dev-itpro/implementation-offline-troubleshooting.md
+          - name: Choose between Store Commerce app and Store Commerce for web
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
@@ -408,7 +416,7 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management improvements
+          - name: Cash management overview
             href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
@@ -422,9 +430,9 @@
             href: charge-send.md
           - name: Hide non-carrier delivery modes from POS shipment dialog
             href: hide-non-carrier-modes.md
-          - name: Task recorder and Help for MPOS and Cloud POS
+          - name: Task recorder and help for Store Commerce
             href: task-recorder-retail-pos.md
-          - name: Configure CPOS to use a custom Azure AD app
+          - name: Configure Store Commerce for web to use a custom Azure AD app
             href: cpos-custom-aad.md
           - name: Hardware peripherals
             items:
@@ -442,7 +450,7 @@
               href: Compatible-peripherals.md
           - name: Screen layouts
             items:
-            - name: Demo data screen layouts in MPOS/CPOS
+            - name: Demo data screen layouts in Store Commerce
               href: demo-data.md
             - name: POS user interface visual configurations
               href: pos-screen-layouts.md
@@ -452,7 +460,7 @@
               href: Notifications-POS.md
             - name: POS application and user language settings
               href: pos-application-user-language-settings.md
-            - name: Set up and manage images for MPOS
+            - name: Set up and manage images for Store Commerce
               href: set-up-manage-images-retail-mpos.md
             - name: Client images in POS
               href: pos-image.md
@@ -464,9 +472,11 @@
               items:
               - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
+              - name: Cross-company data sharing for gift cards
+                href: dev-itpro/data-sharing-gift-cards.md
           - name: RSAT
             items:
-            - name: Test recorder and Regression suite automation tool for Cloud POS
+            - name: Test recorder and Regression suite automation tool for Store Commerce for web
               href: dev-itpro/pos-rsat.md
           - name: Sales associates
             items:
@@ -476,7 +486,7 @@
             items:
             - name: Configure, install, and activate MPOS
               href: retail-modern-pos-device-activation.md
-            - name: Set up extended logon functionality for MPOS and Cloud POS
+            - name: Set up extended sign-in functionality for Store Commerce
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
               href: set-up-activation-accounts-validate-devices-hq.md
@@ -492,7 +502,7 @@
           items:
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
-          - name: Send email receipts from Modern POS (MPOS)
+          - name: Send email receipts from Store Commerce
             href: email-receipts.md 
           - name: Reset receipt numbers
             href: reset_receipt_number_sequence.md
@@ -562,6 +572,8 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+          - name: Limit payment token usage
+            href: dev-itpro/limit-token-usage.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
           - name: Configure credit card processing
@@ -578,6 +590,8 @@
               href: dev-itpro/adyen-connector-faq.md
             - name: Configure Google Pay with Adyen
               href: dev-itpro/google-pay-adyen.md
+            - name: Set up Apple Pay with Adyen
+              href: dev-itpro/apple-pay-adyen.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -590,6 +604,8 @@
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
+          - name: Prepayments in Dynamics 365 Commerce
+            href: dev-itpro/prepayments-commerce.md
           - name: Duplicate payments prevention 
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
@@ -698,18 +714,16 @@
           href: optimal-combination-overlapping-discounts.md
         - name: Define channel-specific discounts 
           href: define-channel-specific-discounts.md
-        - name: Options for preventing discounts for retail products 
-          href: prevent-discounts.md
         - name: Tender-based discounts 
           href: tender_based_discounts.md
-        - name: Shipping discount overview 
-          href: retail-shipping-discount.md
+        - name: Shipping discount 
+          href: shipping-discount.md
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
-        - name: Set up coupons  
-          href: retail-coupons.md
-        - name: Show discounts in POS
-          href: discounts-pos.md
+        - name: Coupons  
+          href: coupons.md
+        - name: Pricing settings
+          href: price-settings.md
         - name: Price reports 
           href: price-report.md
         - name: Create channel-specific trade agreements 
@@ -730,6 +744,8 @@
           href: enable-ADLS-environment.md 
         - name: Enable product recommendations
           href: enable-product-recommendations.md
+        - name: Set up an alternate dataflow
+          href: set-up-alternate-data-flow.md
         - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
@@ -774,29 +790,41 @@
           href: service-to-service-auth.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
-      - name: Manage your inventory  
+      - name: Manage your inventory
         items:
-        - name: Inventory   
+        - name: Inventory availability
           items:
-          - name: Store inventory management  
-            href: work-with-store-inventory.md
+          - name: Calculate inventory availability for retail channels
+            href: calculated-inventory-retail-channels.md
+          - name: Configure channel-side inventory calculation
+            href: channel-side-calculation.md
           - name: Configure inventory buffers and inventory levels
             href: inventory-buffers-levels.md
-          - name: Work with serialized items in POS
-            href: pos-serialized-items.md
-          - name: Push products from distribution center to store using buyer's push 
-            href: tasks/push-products-distribution-center-store-buyers-push.md
-          - name: Set up rules and parameters for cross-docking and buyer's push  
-            href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+          - name: Inventory availability APIs for e-commerce
+            href: inventory-availability-apis.md
+          - name: POS inventory lookup with channel-side calculation
+            href: inventory-lookup-channel-side-calc.md
+          - name: Optimize inventory data
+            href: optimize-inventory-data.md
+          - name: Channel-side calculation FAQ
+            href: channel-side-calculation-faq.md
+          - name: Inventory-aware product listing
+            href: inventory-aware-product-listing.md
+        - name: Store inventory
+          items:
+          - name: Store inventory management
+            href: work-with-store-inventory.md
+          - name: Commerce asynchronous document framework
+            href: async-document-framework.md
           - name: Inbound inventory operation in POS
             href: pos-inbound-inventory-operation.md
           - name: Outbound inventory operation in POS
             href: pos-outbound-inventory-operation.md
-          - name: Calculate inventory availability for retail channels
-            href: calculated-inventory-retail-channels.md
           - name: Inventory lookup operation in POS
             href: pos-inventory-lookup-operation.md
-        - name: Purchase orders   
+          - name: Work with serialized items in POS
+            href: pos-serialized-items.md
+        - name: Warehouse inventory
           items:
           - name: Purchase order overview
             href: ../supply-chain/procurement/purchase-order-overview.md?context=/dynamics365/context/commerce
@@ -810,6 +838,10 @@
             href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
           - name: Create product packages for purchase orders
             href: tasks/create-product-packages-purchase-orders.md
+          - name: Push products from distribution center to store using buyer's push
+            href: tasks/push-products-distribution-center-store-buyers-push.md
+          - name: Set up rules and parameters for cross-docking and buyer's push
+            href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
     - name: Manage your orders
       items:
       - name: Customer orders
@@ -826,6 +858,8 @@
           href: process-order-pickup-POS.md
         - name: Enable order lookup for guest checkouts
           href: order-lookup-guest.md
+        - name: Improve the performance of Commerce order search
+          href: improve-order-search.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -880,6 +914,8 @@
         href: async-customer-mode.md
       - name: Convert asynchronous customers to synchronous customers
         href: convert-async-to-sync.md
+      - name: Audit synchronization of customer operations
+        href: audit-async-customer-operations.md
       - name: Asynchronous customer creation mode FAQ
         href: async-customer-mode-faq.md
       - name: Clienteling
@@ -991,7 +1027,23 @@
         - name: Upload URL redirects in bulk
           href: upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
-          href: set-up-B2C-tenant.md
+          items:
+          - name: Set up a B2C tenant
+            href: set-up-B2C-tenant.md
+          - name: Create or link to an existing Azure AD B2C tenant
+            href: create-link-aad-b2c-tenant.md
+          - name: Create a B2C application
+            href: create-b2c-app.md
+          - name: Create user flow policies
+            href: create-user-flow-policies.md
+          - name: Add social identity providers
+            href: add-social-identity-providers.md
+          - name: Update Commerce headquarters with Azure AD B2C information
+            href: update-hq-aad-b2c-info.md
+          - name: Configure your B2C tenant in site builder
+            href: config-b2c-tenant-site-builder.md
+          - name: Additional B2C information
+            href: additional-b2c-info.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
         - name: Enable automatic linking of identity records to customer accounts
@@ -1226,6 +1278,8 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
+          - name: Checkout module error reference codes
+            href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
           - name: Shipping address module
@@ -1286,6 +1340,16 @@
           items:
           - name: Cookie consent module
             href: cookie-consent-module.md
+        - name: Chat modules
+          items:
+          - name: Commerce chat features overview
+            href: commerce-chat-overview.md
+          - name: Commerce Chat with Omnichannel for Customer Service module
+            href: commerce-chat-module.md
+          - name: Commerce Chat with Power Virtual Agents module
+            href: chat-module-pva.md
+          - name: Commerce chat module proactive chat parameters
+            href: chat-proactive-chat-parameters.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1374,8 +1438,14 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
-    - name: Globalization
+      - name: Set up Operational Insights
+        href: dev-itpro/operational-insights.md
+      - name: Comparison of ETW and EventLog logger functionality
+        href: dev-itpro/compare-etw-eventlog.md
+    - name: Globalization Studio
       items:
+      - name: Globalization Studio overview
+        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/commerce
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
@@ -1418,8 +1488,6 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
-        - name: Deployment guidelines for cash registers for Austria
-          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -1476,7 +1544,7 @@
           href: localizations/emea-fra-fi-deployment.md
         - name: Fiscal archive and data integrity verification
           href: localizations/emea-fra-fiscal-archive.md
-        - name: Migrating from legacy functionality for France
+        - name: Migrate from legacy functionality for France
           href: localizations/emea-fra-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
@@ -1516,6 +1584,8 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-fi-deployment.md
+        - name: Migrate from legacy functionality for Norway
+          href: localizations/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
@@ -1536,6 +1606,8 @@
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
           href: localizations/emea-sau-qr-code.md
+        - name: Generate and submit simplified electronic invoices for Saudi Arabia
+          href: localizations/emea-sau-simplified-e-invoices.md
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -1778,6 +1850,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
             - name: Split
@@ -2307,7 +2381,7 @@
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Expense management
-          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/commerce/toc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Invoice approvals
@@ -2315,11 +2389,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/commerce/toc.json
         - name: Project time entry
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/commerce/toc.json
         - name: Project timesheet
-          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/commerce/toc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Sales orders
@@ -2654,7 +2728,7 @@
             href: dev-itpro/extend-pos-notification.md
           - name: Override POS request handlers
             href: dev-itpro/pos-handler.md
-          - name: POS triggers
+          - name: Store Commerce app triggers and printing
             href: dev-itpro/pos-trigger-printing.md
           - name: POS Cart view
             items:
@@ -2664,7 +2738,7 @@
               href: dev-itpro/custom-field-pos-totals.md
             - name: Add custom columns to a POS transaction grid
               href: dev-itpro/pos-custom-transaction-column.md
-            - name: Add custom controls to POS Cart View
+            - name: Add custom controls to Store Commerce transaction pages
               href: dev-itpro/pos-custom-transaction.md
           - name: Add custom controls to POS views
             href: dev-itpro/pos-custom-control.md
@@ -2946,13 +3020,15 @@
           href: troubleshoot/store-commerce-performance.md
         - name: Extension issues
           href: troubleshoot/store-commerce-extensions.md
+        - name: Sign-in issues
+          href: troubleshoot/store-commerce-sign-in.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
           href: troubleshoot/payment-type-credit-card-error.md
         - name: Taxes on online orders are incorrectly calculated
           href: troubleshoot/tax-miscalculated-online-order.md
-        - name: Order synchronization error related to default payment service
+        - name: Asynchronous order synchronization issues
           href: troubleshoot/synchronization-error.md
       - name: Payments processing
         items:
@@ -3002,10 +3078,15 @@
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
           href: troubleshoot/set-up-dev-environment-debugging.md
+      - name: Store financials
+        items:
+        - name: Issues with the data reconciliation of a Z report
+          href: troubleshoot/z-report-issues.md
+        - name: Statement posting errors due to unavailable inventory or update conflicts
+          href: troubleshoot/inventory-errors-posting.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
     href: ../finance/index.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../supply-chain/index.md
-

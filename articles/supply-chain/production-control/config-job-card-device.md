@@ -50,7 +50,7 @@ To make this feature available, enable the following features in [feature manage
 
 ### Allow locking of touch screen
 
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Feature for locking job card device and job card terminal so that they can be sanitized* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Feature for locking job card device and job card terminal so that they can be sanitized* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Manage your device configurations
 
@@ -77,7 +77,7 @@ The **General** FastTab lets you configure each of the various options available
 - **Resource group** - Select a resource group to be applied as a default filter criterion for the list of jobs shown to each worker. Only jobs that are scheduled on resources grouped under the selected resource group will initially be displayed by the device. If **Allow workers to set personal filters** is enabled, workers will be able to edit this value, otherwise this filter will always apply when this device configuration is active.
 - **Resource** - Select a resource to be applied as a default filter criterion for the list of jobs shown to each worker. Only jobs that are scheduled on the selected resource will initially be displayed by the device. If **Allow workers to set personal filters** is enabled, workers will be able to edit this value, otherwise this filter will always apply when this device configuration is active.
 - **Generate license plate** - Set this option to **Yes** to generate a new license plate each time a worker uses the job card device to report as finished. The license plate number is generated from a number sequence set up on the **Warehouse management parameters** page. When set to **No**, workers must specify an existing license plate when reporting as finished.
-- **Print label** - Set this option to **Yes** to print a license plate label when a worker uses the job card device to report as finished. The configuration of the label is set up in document routing, as described in [Document routing layout for license plate labels](../warehousing/document-routing-layout-for-license-plates.md).
+- **Print label** - Set this option to **Yes** to print a license plate label when a worker uses the job card device to report as finished. The configuration of the label is set up in document routing, as described in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

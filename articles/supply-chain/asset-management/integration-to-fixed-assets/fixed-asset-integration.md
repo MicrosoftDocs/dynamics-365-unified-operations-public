@@ -114,8 +114,8 @@ In some cases, you might have to disassociate a maintenance asset from its fixed
 To remove an existing association between a maintenance asset and a fixed asset, follow these steps.
 
 1. Go to **Asset management \> Assets \> All assets** (or **Active assets**).
-1. Find and open the fixed asset.
-1. On the **Fixed asset** FastTab, clear the value from the **Functional location** field.
+1. Find and open the maintenance asset.
+1. On the **Fixed asset** FastTab, clear the value from the **Fixed asset number** field.
 1. On the Action Pane, select **Save**.
 
 

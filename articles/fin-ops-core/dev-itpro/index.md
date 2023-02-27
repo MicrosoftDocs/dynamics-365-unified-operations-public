@@ -66,7 +66,6 @@ Data from finance and operations can easily be integrated with Microsoft and non
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration overview](office-integration/office-integration.md).
 
 ## eLearning courses
-For online courses and training, check out [Dynamics 365 finance and operations on Microsoft Learn](/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper).
-
+For online courses and training, check out [Dynamics 365 finance and operations](/training/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

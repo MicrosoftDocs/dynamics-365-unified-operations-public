@@ -2,7 +2,7 @@
 title: SDK and module library kit updates
 description: This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 04/13/2022
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -11,9 +11,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
+
 ---
 # SDK and module library updates
 
@@ -29,10 +27,10 @@ The SDK package.json file that is included in the SDK root directory controls wh
 
 ```json
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.37",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.37",
+    "@msdyn365-commerce-modules/starter-pack": "9.41",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.41",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.37",
+    "@msdyn365-commerce/retail-proxy": "9.41",
 }
 ```
 
@@ -49,7 +47,7 @@ Patch versions don't change dependencies on the Commerce Scale Unit and can be u
 
 ### Module library versions mapped to Commerce Scale Unit versions 
 
-The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **July 18th, 2022**.
+The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **January 13, 2023**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -68,6 +66,10 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.25 | 9.35.x |
 | 10.0.26 | 9.36.x |
 | 10.0.27 | 9.37.x |
+| 10.0.28 | 9.38.x |
+| 10.0.29 | 9.39.x |
+| 10.0.30 | 9.40.x |
+| 10.0.31 | 9.41.x |
 
 ## Pull updates
 

@@ -88,7 +88,7 @@ For more information about how to import ER configurations, see [Download Electr
 
 When you generate electronic invoices, the sales tax code rates are analyzed and transformed into [UNCL5305-compliant categories](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/). The following logic is used:
 
-- For all non-zero tax rates, the **S** category is used.
+- For all non-zero tax rates, the **S** category is used as a default value. You can use **External codes** by going to **Tax** > **Sales tax code** to enter an explicit **Value** that represents the external code that should be used as the tax compliant category.
 - For all zero tax rates, either the **E** category or the **Z** category is used, depending on the reporting code that is configured for tax-free sales.
 
 ### Customer requisition

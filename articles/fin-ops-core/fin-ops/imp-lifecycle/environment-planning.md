@@ -3,8 +3,8 @@
 
 title: Environment planning
 description: This article provides an overview of various aspects that you must consider while you plan for your project's environment.
-author: laneswenka
-ms.date: 02/01/2021
+author: skaue-ms
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laswenka
+ms.author: toskaue
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and operations
 
@@ -49,7 +49,7 @@ You can use the following environment types for your project:
 
 - **Standard** – This environment is included in the standard offer and is managed by Microsoft in a Microsoft subscription. Standard environments include the production environment and a Tier-2 Standard Acceptance Test environment.
 - **Add-on** – The add-on environments are in a Microsoft-managed subscription that the customer has purchased in addition to the standard offer. For example, an add-on environment might be an additional Tier-4 environment for performance testing.
-- **Cloud-hosted** – Cloud-hosted environments are additional environments that are managed by the customer or partner in a customer or partner Microsoft Azure subscription. A cloud-hosted environment can include a Tier-1 demo environment.
+- **Cloud-hosted** – Cloud-hosted environments are additional environments that are managed by the customer or partner in a customer or partner Microsoft Azure subscription. A cloud-hosted environment can include a Tier-1 demo environment, or it can be used for Development and Build. See [Deploy and use a continuous build and test automation environment](../../dev-itpro/perf-test/continuous-build-test-automation.md).
 - **Environment image (VHD)** – These additional Tier-1 environments are hosted on-premises by using a virtual hard disk (VHD) that can be downloaded from [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2).
 
 > [!IMPORTANT]
@@ -145,11 +145,14 @@ The following table compares the deployment options.
 
 ### Selecting the correct Tier-2 or higher environment
 
-It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. The guidance that is provided in the following illustration is a *baseline*. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
+It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. 
 
 ![Environment tiers.](./media/environment-planning-3-environment-tiers.png)
 
-After a subscription estimate is activated, you can view transaction lines per hour in LCS, as shown in the following illustration.
+> [!IMPORTANT]
+> The provided values are for reference only. You must work with your implementation partner to adjust this guidance based on your specific business scenarios and factors such as type of users, complexity, and volumes.
+
+The [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) could be leveraged to get an indication of the transaction lines per hour in LCS for a volume check, as shown in the following illustration.
 
 ![Subscription estimate.](./media/environment-planning-4-subscription-estimate.png)
 

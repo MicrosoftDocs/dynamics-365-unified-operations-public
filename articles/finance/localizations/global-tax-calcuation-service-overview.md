@@ -2,7 +2,7 @@
 title: Tax Calculation overview
 description: This article explains the overall scope and features of the Tax Calculation capability.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -69,18 +69,11 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Tax Configuration - Europe 30.12.82     |
-| 10.0.19         | Tax Calculation Configuration 36.38.193 |
-| 10.0.20         | Tax Calculation Configuration 40.43.208 |
-| 10.0.21         | Tax Calculation Configuration 40.48.215 |
-| 10.0.22         | Tax Calculation Configuration 40.48.215 |
-| 10.0.23         | Tax Calculation Configuration 40.50.221 |
-| 10.0.24         | Tax Calculation Configuration 40.50.225 |
-| 10.0.25         | Tax Calculation Configuration 40.50.225 |
-| 10.0.26         | Tax Calculation Configuration 40.54.234 |
-| 10.0.27         | Tax Calculation Configuration 40.54.234 |
-| 10.0.28         | Tax Calculation Configuration 40.54.234 |
+| 10.0.31         | Tax Calculation Configuration 40.56.240 |
+| 10.0.30         | Tax Calculation Configuration 40.55.239 |
 | 10.0.29         | Tax Calculation Configuration 40.55.236 |
+| 10.0.28         | Tax Calculation Configuration 40.54.234 |
+| 10.0.27         | Tax Calculation Configuration 40.54.234 |
 
 
 ## Data flow
@@ -99,120 +92,27 @@ Here is an outline of the data flow process for Tax Calculation.
 
 Tax Calculation can be enabled by transactions. 
 
-The following transactions are supported in version 10.0.21: 
+The following table lists the transactions supported in the corresponding version.
 
-- Sales
-
-    - Sales quotation
-    - Sales order
-    - Confirmation
-    - Picking list
-    - Packing slip
-    - Sales invoice
-    - Credit note
-    - Return order
-    - Header miscellaneous charge
-    - Line miscellaneous charge
-
-- Purchase
-
-    - Purchase order
-    - Confirmation
-    - Receipts list
-    - Product receipt
-    - Purchase invoice
-    - Header miscellaneous charge
-    - Line miscellaneous charge
-    - Credit note
-    - Return order
-    - Purchase requisition
-    - Purchase requisition line miscellaneous charge
-    - Request for quotation
-    - Request for quotation header miscellaneous charge
-    - Request for quotation line miscellaneous charge
-
-- Inventory
-
-    - Transfer order – ship
-    - Transfer order – receive
-
-The following transactions are supported in version 10.0.23: 
-
-- Free text invoice
-
-The following transactions are supported in version 10.0.26: 
-
-- General journals
-- Vendor invoice journal
-
-The following transactions are supported in version 10.0.28: 
-
-- Vendor payment journal
-- Customer payment journal
-
-The following transactions are supported in version 10.0.29: 
-
-
-- Periodic journals
+| Version | Transactions |
+|---------|--------------|
+| 10.0.29 | Periodic journals |
+| 10.0.28 | Vendor payment journal<br> Customer payment journal | 
+| 10.0.26 | General journals<br> Vendor invoice journal |
+| 10.0.23 | Free text invoice |
+| 10.0.21| Sales<br><ul><li>Sales quotation</li><li>Sales order</li><li>Confirmation</li><li>Picking list</li><li>Packing slip</li><li>Sales invoice</li><li>Credit note</li><li>Return order</li><li>Header miscellaneous charge</li><li>Line miscellaneous charge</li></ul>Purchase<br><ul><li>Purchase order</li><li>Confirmation</li><li>Receipts list</li><li>Product receipt</li><li>Purchase invoice</li><li>Header miscellaneous charge</li><li>Line miscellaneous charge</li><li>Credit note</li><li>Return order</li><li>Purchase requisition</li><li>Purchase requisition line miscellaneous charge</li><li>Request for quotation</li><li>Request for quotation header miscellaneous charge</li><li>Request for quotation line miscellaneous charge</li></ul>Inventory<ul><li>Transfer order – ship</li><li>Transfer order – receive</li></ul>|
 
 ## Supported countries/regions
 
-Tax Calculation can be run with the supported localization features in following countries/regions for a legal entity's primary address: 
+Tax Calculation can be run with supported localization features. The following table lists the countries/regions for a legal entity's primary address.
 
-Supported in version 10.0.21:
-
-- Austria
-- Belgium
-- Denmark
-- Estonia
-- Finland
-- France
-- Germany
-- Hungary
-- Iceland
-- Ireland
-- Italy
-- Latvia
-- Lithuania
-- Netherlands
-- Norway
-- Poland
-- Sweden
-- Switzerland
-- United Kingdom
-- United States
-
-Supported in version 10.0.22:
-
-- Australia
-- Bahrain
-- Canada
-- Egypt
-- Hong Kong SAR
-- Kuwait
-- New Zealand
-- Oman
-- Qatar
-- Saudi Arabic
-- South Africa
-- United Arab Emirates
-
-Supported in version 10.0.23:
-
-- Thailand
-- Japan
-- Malaysia
-- Singapore
-
-Supported in version 10.0.24:
-
-- Mexico
-
-Supported in version 10.0.26:
-
-- China
-- Czech Republic
-- Spain
+| Version | Country/region |
+|---------|----------------|
+| 10.0.26 | - China <br>- Czech Republic<br>- Spain |
+| 10.0.24 | Mexico |
+| 10.0.23 | - Thailand <br>- Japan <br>- Malaysia <br>- Singapore |
+| 10.0.22 | - Australia<br>- Bahrain <br>- Canada<br>- Egypt <br>- Hong Kong SAR <br>- Kuwait <br>- New Zealand <br>- Oman <br>- Qatar <br>- Saudi Arabic <br>- South Africa <br>- United Arab Emirates |
+| 10.0.21 | - Austria <br>- Belgium <br>- Denmark <br>- Estonia <br>- Finland <br>- France <br>- Germany <br>- Hungary <br>- Iceland <br>- Ireland <br>- Italy <br>- Latvia <br>- Lithuania <br>- Netherlands <br>- Norway <br>- Poland <br>- Sweden <br>- Switzerland <br>- United Kingdom <br>- United States |
 
 For any country/region not localized by Microsoft, Tax Calculation can also be enabled and run with other global features.
 

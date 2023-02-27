@@ -37,11 +37,11 @@ When you've finished, follow these steps.
 
 1. Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the collection letter sequence as shown in the following table that is assigned to the customer posting profile.
 
-|     Collection   letter code    	|     Description                       	|     Currency    	|     Main   account    	|     Fee   in currency    	|     Minimum   over    	|     Days   Block    	|
-|---------------------------------	|---------------------------------------	|-----------------	|-----------------------	|--------------------------	|-----------------------	|---------------------	|
-|     Collection   letter 1       	|     Second   notification with fee    	|     USD         	|                       	|     0.00                 	|     0.00              	|     2               	|
-|     Collection   letter 2       	|     Second   notification with fee    	|     USC         	|     403150            	|     20.00                	|     10.00             	|     3               	|
-|     Collection                  	|     Final   notification with fee     	|     USD         	|     403150            	|     50.00                	|     100.00            	|     15              	|
+|   Collection letter code    	|     Description    	|     Currency    	|     Main   account    	|     Fee in currency    	|   Minimum   over 	|   Days   Block    	|
+|-----------------------------	|--------------------	|-----------------	|-----------------------	|--------------------	|-----------------------	|------------------	|
+|  Collection letter 1       	|     First notification |     USD      	|                 	|     0.00             	|     0.00              	|     2               	|
+|  Collection letter 2       	|     Second notification with fee    	|     USD      |     403150     	|     20.00        	|     10.00    	|     3               	|
+|  Collection               	|     Final notification with fee     	|     USD         	|     403150  	|     50.00     	|     100.00            	|     15         	|
 
 The following illustration shows the information that's in the table as it would appear on the **Collection letters** page. 
 

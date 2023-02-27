@@ -1,133 +1,136 @@
+---
+# required metadata
+
+title: Dynamics 365 Payment Connector for Adyen overview
+description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
+author: rassadi
+ms.date: 02/01/2023
+ms.topic: overview
+audience: Application User, Developer, IT Pro
+ms.reviewer: josaw
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: rassadi
+ms.search.validFrom: 2019-01-01
 
 ---
+
 # Dynamics 365 Payment Connector for Adyen overview
-title: Dynamics 365 Payment Connector for Adyen overview
 
-description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 [!include [banner](../includes/banner.md)]
-author: Reza-Assadi
 
-ms.date: 05/06/2022
 This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen and includes a comprehensive list of supported features and functionality. Related articles cover Adyen sign up, configuration of the connector, frequently asked questions, and troubleshooting guidance for some common issues.
-ms.topic: overview
 
-ms.prod: 
 ## Key terms
-ms.technology: 
 
-audience: IT Pro
 | Term | Description |
-ms.reviewer: josaw
 |---|---|
-ms.search.region: Global
 | Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Commerce (and associated components) and a payment service. The connector that is described in this article was implemented by using the standard payments software development kit (SDK). |
-ms.author: rassadi
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
-ms.search.validFrom: 2019-01-01
-| Card not present | Refers to payment transactions where a physical card is not present, such as e-Commerce or Call Center scenarios. In these scenarios, the payment-related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
-ms.dyn365.ops.version: AX 7.0.1
+| Card not present | Refers to payment transactions where a physical card isn't present, such as e-Commerce or Call Center scenarios. In these scenarios, the payment-related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
-ms.custom: 141393
 ## Supported features, functionality, versions, and terminals
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 
-ms.search.industry: Retail
 The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard payments SDK. Therefore, it doesn't have special capabilities that aren't also available to other payment connectors.
 
----
 ### Supported versions
 
+#### Microsoft Dynamics 365 supported versions
+The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 Finance version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
+
+#### Supported Adyen firmware versions
+
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
+
+---
+
+# [10.0.26](#tab/10-0-26)
+### Dynamics 365 Retail POS version 10.0.26
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p13 |
+
+# [10.0.27](#tab/10-0-27)
+### Dynamics 365 Retail POS version 10.0.27
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p13 |
+
+# [10.0.28](#tab/10-0-28)
+### Dynamics 365 Retail POS version 10.0.28
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p22 |
+
+# [10.0.29](#tab/10-0-29)
+### Dynamics 365 Retail POS version 10.0.29
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_71p16 | adyen_v1_78p6 |
+
+# [10.0.30](#tab/10-0-30)
+### Dynamics 365 Retail POS version 10.0.30
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_71p16 | adyen_v1_78p6 |
+
+# [10.0.31](#tab/10-0-31)
+### Dynamics 365 Retail POS version 10.0.31
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_78p6 | adyen_v1_84p1 |
+
+---
 
 > [!NOTE]
-#### Microsoft Dynamics 365 supported versions
-> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
-The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 Finance version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
->
+> - Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
+> - For Adyen firmware versions 59p7 through 62p9, the **gift card cash out** operation requests PIN entry twice in scenarios where the gift card is manually entered. This issue is not reproduced when the gift card is swiped. Adyen is investigating. 
 
-> Migrating from a Adyen firmware version earlier than version 53 to version 53 requires POS KB **4577957** for monthly updates of Commerce, versions 10.0.11 through 10.0.14. If one of those versions is in use and doesn't include the hotfix, post-upgrade of the payment terminal will only allow payments via NFC. Applying the hotfix to the POS resolves this issue. If the POS version is older than version 10.0.11, file a support request noting that a fix for KB **4577957** is required for an out of service MPOS.
-#### Supported Adyen Firmware versions
-> 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
-> For Adyen firmware versions 59p7 through 62p9, the **gift card cash out** operation requests PIN entry twice in scenarios where the gift card is manually entered. This issue is not reproduced when the gift card is swiped. Adyen is investigating. 
-
-
----
 ### Supported payment terminals
-
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
-# [10.0.23](#tab/10-0-23)
 
-### Dynamics 365 Retail POS version 10.0.23
+The following video describes the capabilities of the Adyen Castles SE1 Android payment terminal.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
+
 ### Supported payment instruments
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 
-| --- | --- |
 #### Supported debit and credit cards
-| adyen_v1_69p5 | adyen_v1_71p16 |
-
 
 | Brand | Variant | Card present | e-Commerce | Call Center |
-# [10.0.24](#tab/10-0-24)
 |---|---|:-:|:-:|:-:|
-### Dynamics 365 Retail POS version 10.0.24
 | MasterCard | Credit | ✔ | ✔ | ✔ |
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | MasterCard | Debit | ✔ | ✔ | ✔ |
-| --- | --- |
 | MasterCard | Alpha Bank Bonus | ✔ | ✔ | ✔ |
-| adyen_v1_69p5 | adyen_v1_71p16 |
 | MasterCard | Apple Pay | ✔ |  |  |
-
 | MasterCard | Samsung Pay | ✔ |  |  |
-# [10.0.25](#tab/10-0-25)
 | MasterCard | Maestro | ✔ | ✔ | ✔ |
-### Dynamics 365 Retail POS version 10.0.25
 | MasterCard | Maestro Samsung Pay | ✔ |  |  |
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | MasterCard | Maestro UK | ✔ | ✔ | ✔ |
-| --- | --- |
 | VISA | Credit | ✔ | ✔ | ✔ |
-| adyen_v1_71p16 | adyen_v1_73p6 |
 | VISA | Debit | ✔ | ✔ | ✔ |
-
 | VISA | Alpha Bank Bonus | ✔ | ✔ | ✔ |
-# [10.0.26](#tab/10-0-26)
 | VISA | Android Pay | ✔ |  |  |
-### Dynamics 365 Retail POS version 10.0.26
 | VISA | Apple Pay | ✔ |  |  |
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | VISA | Samsung Pay | ✔ |  |  |
-| --- | --- |
 | VISA | VISA Checkout | ✔ | ✔ | ✔ |
-| adyen_v1_73p6 | adyen_v1_75p13 |
 | VISA | VISA Dankort | ✔ | ✔ | ✔ |
-
 | VISA | VISA Hipotecario | ✔ | ✔ | ✔ |
-# [10.0.27](#tab/10-0-27)
 | VISA | VISA Aravia Card | ✔ | ✔ | ✔ |
-### Dynamics 365 Retail POS version 10.0.27
 | AMEX | Credit | ✔ | ✔ | ✔ |
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | AMEX | Debit | ✔ | ✔ | ✔ |
-| --- | --- |
 | AMEX | Android Pay | ✔ |  |  |
-| adyen_v1_73p6 | adyen_v1_75p13 |
 | AMEX | Apple Pay | ✔ |  |  |
-
 | AMEX | Samsung Pay | ✔ |  |  |
-# [10.0.28](#tab/10-0-28)
 | AMEX | AMEX Commercial | ✔ | ✔ | ✔ |
-### Dynamics 365 Retail POS version 10.0.28
 | AMEX | AMEX Consumer | ✔ | ✔ | ✔ |
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | AMEX | AMEX Corporate | ✔ | ✔ | ✔ |
-| --- | --- |
 | AMEX | AMEX Small Business | ✔ | ✔ | ✔ |
-| adyen_v1_73p6 | adyen_v1_75p22 |
 | Discover | Standard | ✔ | ✔ | ✔ |
-
 | Discover | Android Pay | ✔ |  |  |
----
 | Discover | Apple Pay | ✔ |  |  |
 | Discover | Samsung Pay | ✔ |  |  |
 | Diners | Standard | ✔ | ✔ | ✔ |
@@ -272,7 +275,7 @@ The following countries are supported by Adyen for card not present transactions
 | Taiwan |
 | Tanzania |
 | Thailand |
-| Turkey |
+| Türkiye |
 | United Arab Emirates (UAE) |
 | United Kingdom |
 | United States of America including Puerto Rico  |
@@ -293,7 +296,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
-| [Wallet Payments](./wallets.md) |  | ✔<br>(Starting with 10.0.20) |
+| [Wallet Payments](../wallets.md) |  | ✔<br>(Starting with 10.0.20) |
 | [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
 
 ## Next steps
@@ -311,4 +314,3 @@ For information on signing up for and configuring the Dynamics 365 Payment Conne
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
-

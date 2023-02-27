@@ -4,7 +4,7 @@
 title: Consolidate shipments by using the shipment consolidation workbench
 description: This article presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -40,14 +40,11 @@ The scenario in this article references values and records that are included in 
 
 The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there. Be sure to do those exercises before you continue with this scenario.
 
-## Turn on the manual shipment consolidation feature
+## Turn the manual shipment consolidation feature on or off
 
-Before you can use the *Manual shipment consolidation* feature, you must turn it on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+To use manual shipment consolidation, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Manual shipment consolidation* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Manual shipment consolidation*
-
-You must also turn on the *Consolidate shipment* feature before you can create policies. For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
+You must also turn on the *Consolidate shipment* feature before you can create policies (as of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off). For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 
 ## Create the sales orders for this scenario
 
@@ -268,7 +265,7 @@ Four shipments should have been created:
 
 ## Additional resources
 
-- [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+- [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
 
 

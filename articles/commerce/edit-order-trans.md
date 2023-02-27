@@ -2,7 +2,7 @@
 title: Edit and audit online order and asynchronous customer order transactions
 description: This article describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 10/21/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ Between Commerce versions 10.0.5 and 10.0.6, support was added for editing cash 
 To edit and audit order transactions in Commerce headquarters, follow these steps.
 
 1. Install the [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
-1. On the **Retail parameters** page, on the **Customer orders** tab, on the **Order** FastTab, specify a hold code for **Hold code for order synchronization errors**.
+1. On the **Commerce parameters** page, on the **Customer orders** tab, on the **Order** FastTab, specify a hold code for **Hold code for order synchronization errors**.
 1. Open the **Store financials** workspace. The **Online order synchronization errors** and **Customer order synchronization errors** tiles provide a prefiltered view of the retail transaction page. Each shows the transaction records that have failed synchronization for the corresponding order type.
 1. Open either the **Online order synchronization errors** page or the **Customer order synchronization errors** page. Select a record to view the synchronization error details. The **Synchronization status** FastTab provides the following error details:
 
@@ -61,7 +61,15 @@ To edit and audit order transactions in Commerce headquarters, follow these step
 
 1. In the Excel file, in the **Pending order status** field, enter **Editing**, and then publish the change. In this way, you prevent the **Synchronize order** job that is running in batch mode from skipping this record during processing.
 1. In the Excel file, modify the appropriate fields, and then upload the data back into Commerce headquarters by using the publishing functionality of the Dynamics Excel Add-in. After the data is published, the changes will be reflected in the system. During publication, no validation is done for changes that users make.
-1. You can view a complete audit trail of the changes by selecting **View audit trail** in the **Retail transaction** header for the header-level changes, and in the relevant section and record on the appropriate transaction page. For example, all changes that are related to sales lines will be shown on the **Sales transactions** page, and all changes that are related to payments will be shown on the **Payment transactions** page. The following audit details are maintained for the changes:
+    > [!NOTE]
+    > If you can't find the field that that you need to edit, follow the steps below to add the missing field in the worksheet.
+    >   1. Select **Design** in Data Connector.
+    >   1. Select the pencil icon next to the table in which you want to add a field.
+    >   1. Select the field in the **Available fields** section and then select **Add**.
+    >   1. Add as many fields as you need and then select **Update**.
+    >   1. When the update is complete, you may need to select **Refresh** to update the values.
+
+3. You can view a complete audit trail of the changes by selecting **View audit trail** in the **Retail transaction** header for the header-level changes, and in the relevant section and record on the appropriate transaction page. For example, all changes that are related to sales lines will be shown on the **Sales transactions** page, and all changes that are related to payments will be shown on the **Payment transactions** page. The following audit details are maintained for the changes:
 
     - Modified date and time
     - Field

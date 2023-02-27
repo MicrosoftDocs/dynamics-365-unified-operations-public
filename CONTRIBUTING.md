@@ -7,7 +7,7 @@ In this topic you'll find the basic process for adding or updating content for:
 - Dynamics 365 Commerce
 - Dynamics 365 Talent
 
-This documentation is published [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index).
+This documentation is published [here](https://learn.microsoft.com/dynamics365/unified-operations/fin-and-ops/index).
 
 ## Table of contents 
 
@@ -60,7 +60,7 @@ If you only need to make textual updates to an existing topic, you can use GitHu
 
 5. Click the **Create pull request** button to submit your changes.
  
-Minor corrections or clarifications that you submit are covered by the [docs.microsoft.com Terms of Use](https://docs.microsoft.com/legal/termsofuse).
+Minor corrections or clarifications that you submit are covered by the [learn.microsoft.com Terms of Use](https://learn.microsoft.com/legal/termsofuse).
 
 ### Larger submissions
 For the following sorts of work, we strongly recommend that you install and learn to use Git and GitHub tools:
@@ -89,7 +89,7 @@ If you're making substantial changes to an existing topic, adding or changing im
 
 5. If needed, make any necessary updates to your branch. Your pull request will be merged into the master branch after it has been reviewed and your changes are approved.
 
-On a certain cadence, we push all commits from the master branch into the live branch, after which you'll be able to see your contribution live at https://docs.microsoft.com/en-us/dynamics365/.
+On a certain cadence, we push all commits from the master branch into the live branch, after which you'll be able to see your contribution live at [Microsoft Dynamics 365 documentation](https://learn.microsoft.com/dynamics365)/.
 
 ## Contributing to samples
 If you have sample code, include the code as inline code blocks in your topic. There are currently no sample code repositories available for public contributions.

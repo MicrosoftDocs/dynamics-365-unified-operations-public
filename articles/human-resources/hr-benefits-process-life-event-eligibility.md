@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Human Resources
 # Process life event eligibility
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how to process for life event eligibility.

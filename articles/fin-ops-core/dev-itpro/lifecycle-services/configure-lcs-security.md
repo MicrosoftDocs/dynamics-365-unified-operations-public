@@ -71,7 +71,7 @@ Only an administrator can manage users. Follow these steps.
 
 1.  Sign in to [LCS](https://lcs.dynamics.com/).
 2.  Select the project to add the user to.
-3.  Select the **Project users** tile, and then, on the **Project users** page, select the plus sign (**+**).
+3.  Select **Project users** on the hamburger menu or the **Project users** tile, and then, on the **Project users** page, select the plus sign (**+**).
 4.  Enter the user’s email address, select the correct security role, and then select **Invite**.
 
 > [!NOTE]
@@ -126,8 +126,7 @@ You can invite users from inside or outside your organization to join your proje
 After you've configured security for one project, you can import the users to another project.
 
 ## Configure implementation roles 
-If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](/learn/modules/get-started-implementation-project/01-2-roles).
+If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](/training/modules/get-started-implementation-project/01-2-roles).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

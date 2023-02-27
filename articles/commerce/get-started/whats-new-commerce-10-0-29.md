@@ -1,8 +1,8 @@
 ---
-title: Preview of Dynamics 365 Commerce 10.0.29 (October 2022)
+title: WHat's new and changed in Dynamics 365 Commerce 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.29. 
 author: josaw1
-ms.date: 08/02/2022
+ms.date: 09/29/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -13,12 +13,12 @@ ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Preview of Dynamics 365 Commerce 10.0.29 (October 2022)
+# What's new or changed in Dynamics 365 Commerce 10.0.29 (October 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
+
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
 
 - **Preview of release:** August 2022
 - **General availability of release (self-update):** September 2022
@@ -34,6 +34,8 @@ The following table lists the features that are included in this release. We mig
 | Customer Service | [Enable Customer Service with Dynamics 365 Omnichannel for Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | A first-class customer support experience is key to providing a personalized and delightful commerce experience for consumers. Multiple commerce touchpoints currently exist, such as physical stores, online channels, and social channels. Consumers expect a personalized support experience in all these touchpoints. This feature helps you increase cart conversions to sales, increase personalized engagement with consumers, and enhance customer service by integrating with Dynamics 365 Omnichannel for Customer Service. | Enabled by admin/makers |
 | E-commerce | Support for product comparison in e-commerce | Enable shoppers to compare products across a wide range of categories so that they can make the correct purchase decision for themselves. This feature is available for both business-to-consumer (B2C) and B2B sites. | Site builder | 
 | Gift cards | Support for retail gift card tables for cross-company data sharing | Dynamics headquarters supports the ability to enable cross-company data sharing for specific tables in the Dynamics architecture. In this feature, Dynamics 365 Commerce adds support for cross-company data sharing for the retail gift card tables. Therefore, a gift card in one company can now have its data duplicated to another company in the environment. Changes that are made to the originating company gift card table will be shared to the duplicated company gift card table. | Developers |
+| Globalization | [Enable Commerce localization features for new Commerce SDK](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | The new feature provides the possibility to enable Commerce localization features from Commerce headquarters by using the feature management framework or parameters. Fiscal integration samples are now included in the new Commerce SDK and support independent packaging. This feature also enables the adoption of the Store Commerce app by global Commerce customers.<p><p>This release includes Commerce localization features and fiscal integration samples for [Austria](../localizations/emea-aut-fi-sample.md), [the Czech Republic](../localizations/emea-cze-fi-sample.md), [France](../localizations/emea-fra-cash-registers.md), [Germany](../localizations/emea-deu-fi-sample.md), [Italy](../localizations/emea-ita-fpi-sample.md), [Norway](../localizations/emea-nor-cash-registers.md), and [Poland](../localizations/emea-pol-fpi-sample.md). | Enabled by admin/makers |
+| Offline | [POS offline database compression](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | This new feature reduces offline database sizes by enabling automated index compression outside of channel [store hours](../dev-itpro/store-hours.md). | Feature management<p>*POS offline database compression* |
 | Performance | Remove RTS dependency for "edit customer" scenarios | High availability and high performance are default expectations for point of sale (POS) and e-commerce channels. To help meet these expectations, Dynamics 365 Commerce channels no longer have to rely on real-time communication with Commerce headquarters when customer information is edited. The ability to edit customer information asynchronously for asynchronous and non-asynchronous customers can help reduce real-time calls to Commerce headquarters. | Enabled by admin/makers |
 
 ## Feature state changes in this release

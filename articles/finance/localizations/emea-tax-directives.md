@@ -8,7 +8,7 @@ ms.prod:
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Türkiye, United Kingdom
 ms.author: wangchen
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update

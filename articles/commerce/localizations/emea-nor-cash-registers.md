@@ -2,7 +2,7 @@
 title: Cash register functionality for Norway
 description: This article provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 Commerce, and provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 01/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -111,6 +111,13 @@ To use the Norway-specific functionality, you must complete these tasks:
 
 You must also specify the following settings for Norway.
 
+### Enable features for Norway
+
+You must enable the following features in the **Feature management** workspace of Commerce headquarters:
+
+- (Norway) Enable additional audit events in POS
+- (Norway) Enable additional information in end-of-day statements in POS
+
 ### Set up the legal entity
 
 Make sure that the name of the legal entity is specified. This name will be printed on X and Z reports.
@@ -139,7 +146,7 @@ Set the **Allow printing receipt copy** permission to an appropriate value:
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements.
 
 | Language ID | Text                   | Text ID |
 |-------------|------------------------|---------|
@@ -153,15 +160,15 @@ On the **Language text** page, add the following records for the labels of the c
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
-| Name                            | Type    | Caption text ID |
-|---------------------------------|---------|-----------------|
-| ReceiptTitle                    | Receipt | 900011          |
-| IsGiftCard                      | Receipt | 900012          |
-| SalesTotalExt                   | Receipt | 900013          |
-| TaxTotalExt                     | Receipt | 900014          |
-| TotalWithTaxExt                 | Receipt | 900015          |
-| AmountPerTaxExt                 | Receipt | 900016          |
-| CashTransactionSequentialNumber | Receipt | 900017          |
+| Name                               | Type    | Caption text ID |
+|------------------------------------|---------|-----------------|
+| ReceiptTitle_NO                    | Receipt | 900011          |
+| IsGiftCard_NO                      | Receipt | 900012          |
+| SalesTotalExt_NO                   | Receipt | 900013          |
+| TaxTotalExt_NO                     | Receipt | 900014          |
+| TotalWithTaxExt_NO                 | Receipt | 900015          |
+| AmountPerTaxExt_NO                 | Receipt | 900016          |
+| CashTransactionSequentialNumber_NO | Receipt | 900017          |
 
 > [!NOTE]
 > It's important that you specify correct custom field names, as listed in the above table. An incorrect custom field name will cause missing data in receipts.

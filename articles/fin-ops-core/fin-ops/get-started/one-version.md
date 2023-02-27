@@ -246,7 +246,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I determine what is changed in a service update?
 
-The "What's new or changed" documentation is the primary source for the details of each service update. The [release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include Help topics on docs.microsoft.com as needed. 
+The "What's new or changed" documentation is the primary source for the details of each service update. The [release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include Help topics on Microsoft Learn as needed.
 
 ### If I'm not doing active development/recompilation of my code, how will I learn whether there is a deprecated feature that will affect me? 
 
@@ -312,4 +312,3 @@ Microsoft provides several mechanisms for progressively rolling out and enabling
 - **Modern POS and Commerce Scale Unit** – Because Modern POS and Commerce Scale Unit are self-hosted by the retailer, topologies that include either of these components enable updates to be rolled out at a separate (and slower) cadence and in a more granular fashion than cloud-only topologies.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

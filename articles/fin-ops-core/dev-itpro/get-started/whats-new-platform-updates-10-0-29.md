@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.29 of finance and operations apps (October 2022)
 description: This article lists the features that are included in the platform updates for version 10.0.29 of finance and operations apps.
 author: sericks007
-ms.date: 08/01/2022
+ms.date: 08/24/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -35,6 +35,9 @@ The following table lists the features that are included in this release.
 | Web client | <p>**Extended grid aggregation capabilities**</p><p>This feature extends the current "totals" feature in the grid by letting users select one of four aggregation functions for each numeric column. Grid columns can now be configured to show the minimum value, maximum value, or average value in addition to a total. If grouping has been done in the grid, the selected aggregation function for the column will also be shown for each group.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md) | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Web client | <p>**Saved views performance enhancement**</p><p>This feature helps improve performance when the default view is loaded at page load, by minimizing the number of times that the query is run. To achieve this result, the feature changes when specific parts of the default view are applied, so that all query-related changes are in place when the form initially runs its query.</p> | [Build forms that fully utilize saved views](../user-interface/understanding-saved-views.md) | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Web client | <p>**Evaluating math expressions in numeric cells outside the grid**</p><p>To help improve user productivity, numeric cells in the new grid have long enabled users to enter mathematical expressions directly in them. (For example, if a user enters **=15\*4** and then selects **Enter**, the expression is evaluated, and a value of **60** is entered in the cell.) As of this release, this support for mathematical expressions has been extended to numeric controls outside the grid.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#evaluating-math-expressions) | Default |
+
+> [!Important]
+> A new **Allow row version change tracking** metadata property has been added for tables. The default value of this property is set to **No**.  Do not set the value to **Yes**, as this property is reserved for future use.
 
 ## Features that are mandatory or turned on by default with this release
 

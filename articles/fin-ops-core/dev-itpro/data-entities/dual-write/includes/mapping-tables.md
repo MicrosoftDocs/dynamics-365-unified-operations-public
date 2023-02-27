@@ -1,11 +1,3 @@
----
-author: RamaKrishnamoorthy
-
-ms.topic: include
-ms.date: 7/12/2021
-ms.author: ramasri
----
-
 ###  <a name="138"></a>All products (msdyn_globalproducts)
 
 This template synchronizes data between finance and operations apps and Dataverse.
@@ -410,7 +402,7 @@ SALESORDERNUMBER | = | msdyn_salesordernumber |
 ORDERINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
 CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
 DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
 DELIVERYADDRESSSTREET | = | shipto_line1 |
@@ -483,7 +475,7 @@ Finance and operations field | Map type | Customer engagement column | Default v
 ---|---|---|---
 CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
 DELIVERYADDRESSSTATEID | = | shipto_stateorprovince |
 DELIVERYADDRESSSTREET | = | shipto_line1 |
@@ -551,7 +543,7 @@ REQUESTINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(
 CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
 CUSTOMERSREFERENCE | = | msdyn_customersreference |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
 DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
 DELIVERYADDRESSSTREET | = | shipto_line1 |
@@ -625,7 +617,7 @@ SALESQUOTATIONNUMBER | = | quoteid.msdyn_quotenumber |
 LINECREATIONSEQUENCENUMBER | = | sequencenumber |
 CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
 DELIVERYADDRESSCITY | = | shipto_city |
-DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `türkiye`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
 DELIVERYADDRESSCOUNTYID | = | msdyn_deliveryaddresscountyid |
 DELIVERYADDRESSDESCRIPTION | = | msdyn_deliveryaddressdescription |
 DELIVERYADDRESSDISTRICTNAME | = | msdyn_deliveryaddressdistrictname |

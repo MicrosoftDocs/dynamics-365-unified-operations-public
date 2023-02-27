@@ -2,7 +2,7 @@
 title: Vendor electronic invoices
 description: This article explains how to configure and submit vendor electronic invoices in Italy.
 author: mrolecki
-ms.date: 12/01/2021
+ms.date: 09/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,6 +40,17 @@ Follow these steps to set up the electronic invoice configuration in Accounts pa
    > Configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
    >
    > The parent model configuration, **Invoice model**, and the related model mapping configuration, **Vendor invoice model mapping (IT)**, will automatically be imported or updated.
+   > 
+   > 1. After importing the configurations, set up aplication-specific parameters in the **Electronic reporting** workspace, for the Vendor invoice (IT) format. On the Action Pane, select **Configuration** > **Application specific parameters** > **Setup**. You must set up at least two lines for **Blank** and **Not blank** values.
+   >  
+   >     ![Application-specific parameters](media/emea-ita-vendor-einvoice-asp.png)
+   > 
+   >     These default settings are required for all scenarios, even if **Reverse charge** isn't applicable.
+   >
+   > 2. In the **Conditions** section, in the **Name** column, add the other required Reverse charge item groups and associate them with the related values in the **Lookup result** column. For more details about how to set up Reverese charge item groups, see [Customer electronic invoices](emea-ita-e-invoices.md).
+
+
+
 
 ## Enable electronic invoice generation
 
@@ -80,6 +91,7 @@ If no invoice type is associated with the sales tax code, the following types of
 - **TD16** – For vendors that are located in Italy, if an invoice contains a sales tax code where either **Use tax** or **Reverse charge** is activated.
 - **TD17** – For vendors that are located in the European Union (EU), if an invoice is issued for the provision of **services**.
 - **TD18** – For vendors that are located in the EU, if an invoice is issued for the sale of **products**.
+- **TD28** – For vendors that are located in the San-Marino and the sales tax amount is greater then zero (available from version 273.47 of the **Vendor Invoice (IT)** format).
 
 If a required invoice type isn't entered, you can manually adjust the invoice type in the vendor invoice journal.
 

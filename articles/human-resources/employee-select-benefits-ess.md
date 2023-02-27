@@ -28,9 +28,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Employees select plans by using Employee self service (optional)
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 When a new employee is hired, or a life event occurs, the employee can use **Employee self service** to select or update their benefits during open enrollment.

@@ -1,50 +1,42 @@
-# Cash register functionality for Sweden
 ---
-
 title: Cash register functionality for Sweden
-[!include [banner](../includes/banner.md)]
-description: This article provides an overview of the cash register functionality that is available for Sweden.
-
+description: This article provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
-This article provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
-ms.date: 12/02/2019
-
+ms.date: 02/03/2023
 ms.topic: article
-- Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one receipt
 ms.prod: 
-- Sweden-specific features, such as additional counters in daily POS reports
 ms.technology: 
-- A sample for integration of POS with Sweden-specific fiscal devices that are known as control units.
 audience: Application User
-
 ms.reviewer: josaw
-## Overview of cash register functionality for Sweden
 ms.search.region: Sweden
-
-ms.author: josaw
-### Common POS features
-ms.search.validFrom: 2017-06-30
-
-ms.dyn365.ops.version: July 2017 update
-To learn about common POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
 ms.search.industry: retail
+ms.author: josaw
 
-ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
+---
+# Cash register functionality for Sweden
+
+[!include [banner](../includes/banner.md)]
+
+This article provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+
+- Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one receipt
+- Sweden-specific features, such as additional counters in daily POS reports
+- A sample for integration of POS with Sweden-specific fiscal devices that are known as control units.
+
+## Overview of cash register functionality for Sweden
+
+### Common POS features
+
+To learn about common POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
+
 Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:
 
----
-- **Prohibit sales and returns from being combined on one receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, Cloud POS and Modern POS won't let users create a transaction that contains both positive and negative lines.
-
+- **Prohibit sales and returns from being combined on one receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, the Store Commerce app and Store Commerce for web won't let users create a transaction that contains both positive and negative lines.
 - **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
-    
 - **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Headquarters. You can view the audit events on the **Audit events** page.
-
 - **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time.
 
-
-
 ### Sweden-specific POS features
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 The following Sweden-specific POS features are enabled when the **ISO code** parameter in the POS functionality profile is set to **SE**:
 
@@ -152,4 +144,5 @@ You must specify the following general settings for Sweden.
 
   For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
----
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

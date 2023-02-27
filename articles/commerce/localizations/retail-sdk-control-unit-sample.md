@@ -1,64 +1,51 @@
-# Sample for POS integration with control units for Sweden (legacy)
 ---
 
 title: Sample for POS integration with control units for Sweden (legacy)
-[!include [banner](../includes/banner.md)]
-description: This article is the building and installation guide for the sample for control unit integration for Sweden.
-
+description: This article is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
-> [!NOTE]
 ms.date: 12/20/2019
-> This sample fiscal integration functionality doesn't take advantage of the [fiscal integration framework](fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [control unit integration sample for Sweden](emea-swe-fi-sample.md) instead.
 ms.topic: article
-
 ms.prod: 
-This sample shows how to create Dynamics 365 Commerce extensions to integrate Retail Modern POS or Cloud POS with a fiscal register. Specifically, this sample includes the code for integrating Retail POS with control units for Sweden. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. For the integration package that includes the API and documentation, contact the manufacturer of the device.
 ms.technology: 
-
 audience: Developer
-This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 ms.reviewer: josaw
-
 ms.search.region: Sweden
-This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
-ms.author: josaw
-
-ms.search.validFrom: 2018-02-28
-> [!NOTE]
-ms.dyn365.ops.version: 7.3.2
-> Some steps in the procedures in this article differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2018-2-28
+
+---
+# Sample for POS integration with control units for Sweden (legacy)
+
+[!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> This sample fiscal integration functionality doesn't take advantage of the [fiscal integration framework](fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [control unit integration sample for Sweden](emea-swe-fi-sample.md) instead.
+
+This sample shows how to create Dynamics 365 Commerce extensions to integrate Retail Modern POS or Cloud POS with a fiscal register. Specifically, this sample includes the code for integrating Retail POS with control units for Sweden. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. For the integration package that includes the API and documentation, contact the manufacturer of the device.
+
+This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+
+This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+
+> [!NOTE]
+> Some steps in the procedures in this article differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 >
 > In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this article applies to multiple previous versions of the app, *Retail Server* is used throughout the article.
----
 
 
-
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 ## Overview of integration with control units
 
-
-   - Add the following line to include the Hardware station extension in deployable packages:
 The sample includes the following capabilities:
-        ``` xml
 
-        <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll"/>
 - Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.
-        ```
 - The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Store transactions** page.
-
 - Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt format, so that you can print the fiscal data for the transaction on a receipt.
-4. Run **msbuild** for the whole Retail SDK to create deployable packages.
 - The fiscal data for a transaction is printed on the **Electronic journal (Sweden)** channel report.
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 - If a failure occurs during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, a new transaction can't be started, and the current shift can't be closed. The operator will be asked to try to register the unregistered transaction again in the control unit. If the second attempt fails, the operator can skip the registration, provided that the operator has a special permission. If the operator skips the registration of a transaction in the control unit, information about this event is saved in the transaction instead of the fiscal data.
 
-
-
 > [!NOTE]
-
 > Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available at a later date.
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 ## Setting up integration with control units
 
@@ -312,3 +299,17 @@ Follow these steps to create and apply deployable packages that contain Commerce
         ```
 
         ---
+
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+
+   - Add the following line to include the Hardware station extension in deployable packages:
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll"/>
+        ```
+
+4. Run **msbuild** for the whole Retail SDK to create deployable packages.
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Visual and collaborative execution
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 This article describes how to monitor your Demand Driven Material Requirements Planning (DDMRP) decoupling points, buffer zones, planned orders, and history.
 
@@ -28,7 +27,7 @@ In Microsoft Dynamics 365 Supply Chain Management, you can visually track how bu
 1. Select a released item that is set up as a decoupling point. (For more information, see [Inventory positioning](ddmrp-inventory-positioning.md).)
 1. On the Action Pane, on the **Plan** tab, select **Item coverage**.
 1. On the **Item coverage** page, select an item coverage record that creates a decoupling point. (This record will show the name of a coverage group that is set up to create decoupling points.)
-1. Select the **On-hand** tab. This tab includes a chart that shows how on-hand quantities changed over time, together with the value of the on-hand level that was recorded for a specific period every time that planning optimization is run. The tab also includes a table that shows which of the following categories each recorded on-hand level falls into:
+1. Select the **On-hand** tab. This tab includes a chart that shows how on-hand quantities changed over time, together with the value of the on-hand level that was recorded for a specific period every time that master planning is run. The tab also includes a table that shows which of the following categories each recorded on-hand level falls into:
 
     - **Critically low** – Less than half the minimum for the period.
     - **Low** – Between half the minimum and the minimum.

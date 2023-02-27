@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-You can export financial data using the formats specified by the Standard Import Export Group (SIE), which is an organization in Sweden that develops standard formats. Before you export data, you must set up a three-digit Standardiserad Räkenskaps Utdrag (SRU) code for each general ledger account. 
+You can export financial data using the formats specified by the Standard Import Export Group (SIE), which is an organization in Sweden that develops standard formats. Before you export data, you must set up a Standardiserad Räkenskaps Utdrag (SRU) code for each general ledger account. 
 
 1. Go to **General ledger** > **Periodic tasks** > **SIE export**. 
 2. On the **Export to SIE file** page, enter the reporting date, budget model, and format mapping (SIE export format (SE). 

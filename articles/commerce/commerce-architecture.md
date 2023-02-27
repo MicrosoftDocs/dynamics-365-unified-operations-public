@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 01/30/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ This article provides an overview of all components in the Microsoft Dynamics 36
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-<a href="/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerce Component Overview.](./media/commerce-component-overview.jpg)</a>
+![Dynamics 365 Commerce Component Overview](./media/Commerce_Architecture_Component_Overview.png)
 
 ## Architecture benefits
 
@@ -43,11 +43,17 @@ The platform that is shared among the various Dynamics 365 business applications
 
 ### Unified data
 
-Dynamics 365 Commerce provides a unified data solution through out-of-box integrations with [Dataverse](https://powerplatform.microsoft.com/dataverse/) and [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction). Integrations and data sharing across Dynamics 365 business applications such as Dynamics 365 Sales and Dynamics 365 Marketing are supported through Dataverse. Transactional data in Data Lake Storage is used to power various analytics and insight scenarios in the Dynamics 365 Commerce solution. However, it can also be used by any third-party software integration.
+Dynamics 365 Commerce provides a unified data solution through out-of-the-box integrations with [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) and [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction). Integrations and data sharing across Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Marketing are supported through Microsoft Dataverse. Transactional data in Azure Data Lake Storage is used to power analytics and insight scenarios using various integrations.
 
 ### Powered by AI and analytics
 
 Because of the accessible, persistent, up-to-date, and unified organizational data that is available in Data Lake Storage, the whole organization has a "single source of truth" that analytics, artificial intelligence (AI), and machine learning (ML) can be applied on top of. In this way, the organization can derive insights and get key performance indicators (KPIs) that can be used optimize and automate business processes across all channels.
+
+#### Business and transactional analytical reports in POS and Commerce headquarters
+
+The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take avantage of insights across all channels.
+
+The highcharts-based reports on POS are real-time, enabling store associates to analyze their channel's transactional and other POS activities at the conclusion of a transaction. This contrasts with the out-of-the-box reports in Commerce headquarters, which enable retailers to view analytical reports for transactional activity across all channels, once the data is synced. Commerce headquarters reports are specifically designed for channel managers who focus on sales performance to predict trends and uncover insights, allowing them to drill down in reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more.
 
 ## Component overview
 
@@ -61,11 +67,11 @@ Dynamics 365 is a collection of applications that together provide comprehensive
 
 POS simplifies the experience for the retailers by providing Omnichannel solutions in emerging channels. These channels perform a variety of commerce business operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-#### Modern POS
+#### Store Commerce app
 
-Modern POS is a cross-platform (Windows, iOS, and Android), multi–form factor (desktop, tablet, and phone) solution for all in-store first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. Alternatively, it can be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
+The Store Commerce app is a cross-platform (Windows, iOS, and Android), multi–form factor (desktop, tablet, and phone) solution for all in-store first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. Alternatively, it can be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
 
-In addition to standard "cash and carry" transaction processing, Modern POS includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](./dev-itpro/retail-modern-pos-architecture.md) and [Choose between Modern POS (MPOS) and Cloud POS](./mpos-or-cpos.md).
+In addition to standard "cash and carry" transaction processing, Store Commerce includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](./dev-itpro/retail-modern-pos-architecture.md) and [Choose between Store Commerce app and Store Commerce for web](./mpos-or-cpos.md).
 
 #### E-commerce storefront
 
@@ -133,11 +139,11 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Customer Insights
 
-[Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Dynamics 365 Customer Insights integration with Dynamics 365 Commerce](./clienteling-overview.md#integration-with-dynamics-365-customer-insights).
+[Dynamics 365 Customer Insights](/ai/customer-insights/overview) helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Dynamics 365 Customer Insights integration with Dynamics 365 Commerce](./clienteling-overview.md#integration-with-dynamics-365-customer-insights).
 
-#### Bing for Commerce
+#### Azure cognitive search
 
-[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce) is integrated into Dynamics 365 Commerce to provide consistent product discovery and search experiences across all commerce channels that use the Commerce Scale Unit. In Commerce headquarters, retailers can configure boosting and sinking business rules for product discovery and search experiences. (For example, these rules can be used to boost product discovery for discounted products or remove items that are out of stock.) In this way, retailers can turn shopper frustration and site abandonment into active carts and converted sales. By taking advantage of an out-of-box capability that this integration provides, retailers can let customers use images to search for and discover similar products from a catalog without having to describe them.
+[Azure Cognitive Search](/azure/search/search-what-is-azure-search) is integrated into Commerce to provide consistent product discovery and search experiences across all of the Commerce channels that use the Commerce Scale Unit (CSU). With integrated Azure Cognitive Search, customers can quickly find products by browsing categories, searching, and filtering. Improved product discoverability capabilities help retailers increase customer retention and conversion rates. Azure Cognitive Search also provides the scalability and performance required for e-commerce traffic. For more information, see the [Cloud powered search overview](./cloud-powered-search-overview.md) article.
 
 #### Product recommendations
 
@@ -145,11 +151,6 @@ Dynamics 365 Commerce can be used to show product recommendations on the e-comme
 
 Product recommendations let customers easily and quickly find products that they might want to purchase, and cross-selling and upselling can be used to help customers find additional products that they didn't originally intend to buy. When recommendations are used to assist with product discovery, they can help create more conversion opportunities, increase sales revenue, and enhance customer satisfaction and retention. For more information, see [Product recommendations overview](./product-recommendations.md).
 
-#### Commerce analytics
-
-Dynamics 365 Commerce's prepackaged, business-managed commerce analytics solution provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding Power BI reports in Commerce headquarters and POS systems. The commerce analytics solution provides a comprehensive set of out-of-box business and transactional reports, dashboards, and KPIs that take advantage of insights across all channels.
-
-The solution standardizes data from various sources (such as transactional, behavioral, observational, or external data sources) into a unified data model that is hosted in Azure Data Lake Storage. Therefore, organizations can obtain a truly complete view of their business performance across channels. For example, they can analyze the performance of discount promotions, monitor web visits and activity, compare in-store visits and purchases with online purchases, track loyalty redemptions, or do customer recency, frequency, monetary (RFM) analysis.
 
 #### Ratings and reviews
 
@@ -171,7 +172,7 @@ Dataverse is the unified data store that integrates the data from all your busin
 
 [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction)
 
-[Dataverse](https://powerplatform.microsoft.com/dataverse/)
+[Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/)
 
 [Modern POS (MPOS) architecture](./dev-itpro/retail-modern-pos-architecture.md)
 
@@ -187,7 +188,6 @@ Dataverse is the unified data store that integrates the data from all your busin
 
 [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
 
-[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce)
-
+[Azure Cognitive Search](/azure/search/search-what-is-azure-search)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

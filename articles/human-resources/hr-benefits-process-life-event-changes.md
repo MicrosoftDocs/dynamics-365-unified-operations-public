@@ -29,9 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life event changes
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:

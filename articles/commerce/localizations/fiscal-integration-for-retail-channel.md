@@ -2,7 +2,7 @@
 title: Fiscal integration overview for Commerce channels
 description: This article provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -89,16 +89,20 @@ This configuration is used when a physical fiscal device or fiscal service is pr
 
 The fiscal integration framework provides the following options to handle failures during fiscal registration:
 
-- **Retry** – Operators can use this option when the failure can be resolved quickly, and the fiscal registration can be rerun. For example, this option can be used when the fiscal device isn't connected, the fiscal printer is out of paper, or there is a paper jam in the fiscal printer.
-- **Cancel** – This option lets operators postpone the fiscal registration of the current transaction or event if it fails. After the registration is postponed, the operator can continue to work on the POS and can complete any operation that the fiscal registration isn't required for. When any event that requires the fiscal registration occurs in the POS (for example, a new transaction is opened), the error handling dialog box automatically appears to notify the operator that the previous transaction wasn't correctly registered and to provide the error handling options.
-- **Skip** – Operators can use this option when the fiscal registration can be omitted under specific conditions and regular operations can be continued on the POS. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal.
-- **Mark as registered** – Operators can use this option when the transaction was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database.
-- **Postpone** – Operators can use this option when the transaction wasn't registered because the registration service was unavailable. 
+- **Retry** – The operator can use this option when the failure can be resolved quickly, and the fiscal registration can be rerun. For example, this option can be used when the fiscal device isn't connected, the fiscal printer is out of paper, or there is a paper jam in the fiscal printer.
+- **Cancel** – This option lets the operator defer the fiscal registration of the current transaction or event if it fails. After the registration is deferred, the operator can continue to work on the POS and can complete any operation that the fiscal registration isn't required for. When any event that requires the fiscal registration occurs in the POS (for example, a new transaction is opened), the error handling dialog box automatically appears to notify the operator that the previous transaction wasn't correctly registered and to provide the error handling options.
+- **Skip** – The operator can use this option when it's not possible to complete the fiscal registration of the current transaction or event, for example if the fiscal printer is out of order, **and** the fiscal registration can be omitted under specific conditions. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal. After skipping the fiscal registration, regular operations can be continued on the POS. 
+- **Mark as registered** – The operator can use this option when the current transaction or event has actually been registered in the fiscal device, for example a fiscal receipt has been printed, but a failure occurs when the fiscal response is being saved to the channel database. After marking the current transaction or event as registered, regular operations can be continued on the POS.
+- **Postpone** – The operator can use this option when the transaction hasn't been registered because the registration device or service is unavailable **and** one of the following apply:
+    - There is a backup fiscal registration option and it's possible to continue the fiscal registration process for the current transaction. For example, a local [fiscal device](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) can be a backup option for an online fiscal registration service when the service is unavailable.
+    - The fiscal registration can be completed later by means other than the fiscal integration framework. For example, postponed transactions can later be fiscally registered in a batch by a [separate functionality](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    After postponing the current transaction or event, regular operations can be continued on the POS.
 
-> [!NOTE]
-> The **Skip**, **Mark as registered**, and **Postpone** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
+> [!WARNING]
+> The **Skip**, **Mark as registered**, and **Postpone** options should be considered emergency options and used only in exceptional cases. Discuss these error handling options with your legal or tax advisor and apply good judgment before enabling them. The options must be activated in the fiscal registration process before they are used. To make sure operators don't use them on a regular basis, corresponding permissions must be granted to operators.
 
-The **Skip**, **Mark as registered**, and **Postpone** options enable info codes to capture some specific information about a failure, such as the reason for the failure, or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+A [fiscal transaction](#storing-fiscal-response-in-fiscal-transaction) is created when the **Skip**, **Mark as registered**, or **Postpone** options are selected, but the fiscal transaction doesn't contain a fiscal response. This allows you to capture the event of fiscal registration failure. These options also enable info codes to capture some specific information about a failure, such as the reason for the failure, or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### Optional fiscal registration
 
@@ -106,11 +110,7 @@ Fiscal registration might be mandatory for some operations but optional for othe
 
 ### Manually rerun fiscal registration
 
-If the fiscal registration of a transaction or event has been postponed after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### Postpone option
-
-The **Postpone** option lets you continue the fiscal registration process if the current step fails. It can be used when there is a fiscal registration backup option.
+If the fiscal registration of a transaction or event has been deferred after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### Fiscal registration health check
 
@@ -132,7 +132,7 @@ If the health check fails, the POS shows the health check dialog box. This dialo
 
 ## Storing fiscal response in fiscal transaction
 
-When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip** or **Mark as registered** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
+When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip**, **Mark as registered**, or **Postpone** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
 
 Fiscal transactions are transferred to Headquarters by the *P-job*, together with transactions. On the **Fiscal transactions** FastTab of the **Store transactions** page, you can view the fiscal transactions that are linked to transactions.
 
@@ -166,19 +166,17 @@ The following fiscal integration samples are currently available in the Commerce
 - [Control unit integration sample for Sweden](./emea-swe-fi-sample.md)
 - [Fiscal registration service integration sample for Germany](./emea-deu-fi-sample.md)
 - [Fiscal printer integration sample for Russia](./rus-fpi-sample.md)
+- [Digital signature sample for Norway](./emea-nor-cash-registers.md)
 
 The following fiscal integration functionality is also implemented by using the fiscal integration framework, but it's available out of the box and isn't included in the Commerce SDK:
 
 - [Fiscal registration for Brazil](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digital signature for France](./emea-fra-cash-registers.md)
 
-The following fiscal integration functionality is also available in the Commerce SDK, but it doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
-
-- [Digital signature for Norway](./emea-nor-cash-registers.md)
-
 The following legacy fiscal integration functionality that is available in the Commerce SDK doesn't use the fiscal integration framework and will be deprecated in later updates:
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
 - [Digital signature for France (legacy)](./emea-fra-deployment.md)
+- [Digital signature for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

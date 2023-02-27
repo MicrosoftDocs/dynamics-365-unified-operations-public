@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This article provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 03/10/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ No. Adyen payment terminals are injected with the Adyen software. Therefore, exi
 
 ### Do I need a static IP address for the Adyen payment terminal?
 
-Yes. Modern POS requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
+Yes. The Store Commerce app requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
 
 ### Can I use my merchant bank?
 
@@ -51,11 +51,11 @@ The following tables show common payment events in Dynamics 365 Commerce and the
 
 | Commerce event | Adyen payment status code |
 |---|---|
-| Initial transaction in progress | **AuthorisedPending** |
-| Successful transaction | **Authorised** |
+| Initial transaction in progress | **AuthorizedPending** |
+| Successful transaction | **Authorized** |
 | Successful transaction in progress | **SentForSettle** |
 | Successful transaction completed | **Settled** |
-| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Void | **Canceled** (if authorized state only) or **Refunded** (if funds have been captured) |
 | Cancel | Canceled items aren't expected to appear in the Adyen portal. |
 | Linked refund | **SentForRefund** or **Refunded** |
 | Unlinked refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. |
@@ -66,9 +66,9 @@ The following tables show common payment events in Dynamics 365 Commerce and the
 
 | Commerce event | Adyen payment status code |
 |---|---|
-| Successful Transaction | **Authorised** |
+| Successful Transaction | **Authorized** |
 | Authorisation | **Settled** |
-| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Void | **Canceled** (if authorized state only) or **Refunded** (if funds have been captured) |
 | Cancel | Canceled items aren't expected to appear in the Adyen portal. |
 | Linked Refund | **SentForRefund** or **Refunded** (*Call center only*) |
 | Unlinked Refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. (*Call center only*) |
@@ -82,6 +82,10 @@ For a complete list of Adyen payment status codes, see [Payments lifecycle](http
 ### Can I cancel a refund action?
 
 Adyen supports two types of refunds: referenced and unreferenced. Referenced refunds can't be canceled. For unreferenced refunds, a cancellation attempt is made, but successful cancellation depends on the payment issuer and the potential delay that is configured for the processing by Adyen. If an error occurs when you force a local refund cancellation in POS, POS allows for a credit. However, if the cancellation of the unlinked refund isn't accepted on the payment gateway, discrepancies might occur between Dynamics 365 reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
+
+### Is 3D Secure (3DS) authentication supported in Commerce call center iFrame payment windows?
+
+No, the payment window used in the Commerce call center payment forms (configured via the connector on the **Payment Services** page in headquarters) doesn't support 3DS authentication flows. Customer authentications requiring passwords or Strong Customer Authentication (SCA) are only supported in the online channel where customers are directly entering their sensitive and protective data.
 
 ## Next steps
 

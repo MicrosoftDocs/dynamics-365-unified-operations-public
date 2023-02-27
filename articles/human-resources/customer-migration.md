@@ -46,7 +46,7 @@ Customers who are using other apps on the finance and operations infrastructure 
 The transition for each company will depend on that company's current configuration and readiness to move to the finance and operations infrastructure. We recommend that customers work with their Microsoft partner to determine the best path forward.
 
 - Organizations that use the **Human Resources** module in Dynamics 365 Finance will be able to enable new capabilities from Dynamics 365 Human Resources as part of the regular One Version update process. New features are planned to become generally available starting in January 2022.
-- Organizations that use Dynamics 365 Human Resources will have access to tooling that they can use to complete the infrastructure merge. Microsoft will work with customers on the transition, to help prevent any interruption in service. Customers will have 12 to 18 months to make the transition, starting from the time when the migration tooling becomes available.
+- Organizations that use Dynamics 365 Human Resources will have access to tooling that they can use to complete the infrastructure merge. Microsoft will work with customers on the transition, to help prevent any interruption in service. Customers will have 12 months to make the transition, starting from the time when the migration tooling becomes available.
 - Organizations that use both Dynamics 365 Human Resources and the **Human Resources** module can move their stand-alone Human Resources infrastructure onto the finance and operations infrastructure. Another option is to use the merge tooling to bring the environments into a single environment. There is no requirement or timeframe for merging the two environments.
 
 For up-to-date information, regularly check the [Release plans](/dynamics365/release-plans/).
@@ -173,4 +173,18 @@ Microsoft is still defining what tools and resources will be available from Fast
 
 ## Licensing impact
 
-For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge FAQ](hr-infrastructure-merge-faq.md#licensing-impact).
+For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge](hr-infrastructure-merge.md#licensing).
+
+## Who needs to migrate? 
+All customers on the standalone Human Resources infrastructure must migrate.  
+
+## How long does it take to migrate using automated tooling? 
+The migration using the automated tooling may take approximately three to four hours. However, the preparation, testing and validation time required for your organization are dependent on your business processes, integrations, and complexity.  
+
+## What is the deadline for migrating?  
+All customers are required to migrate their standalone environment(s) by December 31, 2023.   
+
+## What happens to customers that don't migrate before the deadline? 
+The infrastructure for the standalone application is scheduled to be turned off by December 31, 2023. As a result, environments that aren't migrated will no longer be available.  
+
+

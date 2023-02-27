@@ -38,8 +38,8 @@ This article explains how to use the same instance of Active Directory Federatio
 ## Existing deployments
 
 1. Download the new local agent version from Microsoft Dynamics Lifecycle Services (LCS). It should be version 2.2.0 or later.
-2. Download the new version of the local agent configuration file, because it has additional configuration that is required for this functionality.
-3. Modify the new local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
+2. Update your agent configuration in LCS by setting the deployment option to **Enable AD FS Microsoft 365 Compatibility**.
+3. Download the new version of the local agent configuration file.
 4. Run the following command to uninstall the old local agent version from your cluster.
 
     ```powershell
@@ -69,14 +69,15 @@ This article explains how to use the same instance of Active Directory Federatio
 12. Execute the Reset-Sid.ps1 script.
     
     ```powershell
+    Import-Module ".\D365FO-OP" -Force
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
 
 ## New deployments
 
-1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
+1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-latest.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
 2. Modify the local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
-3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it so that Platform update 28 is deployed on top.
+3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-latest.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it so that Platform update 28 is deployed on top.
 
 ## <a name="partialsupport"></a> Partial support
 

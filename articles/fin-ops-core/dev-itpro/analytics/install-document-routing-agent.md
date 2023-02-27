@@ -2,7 +2,7 @@
 title: Install the Document Routing Agent to enable network printing
 description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-ms.date: 06/20/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ This article describes how to install and configure the Document Routing Agent. 
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - When installing the Document Routing Agent, make sure you are logged in as the Admin user.
 - The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
-- The Document Routing Agent requires .NET 4.62 or later and Adobe Acrobat Reader 32-bit or 64-bit on the client.
+- The Document Routing Agent requires .NET 4.7.2 or later and Adobe Acrobat Reader 32-bit or 64-bit on the client.
 - Configure Adobe client print settings to prevent document scaling.
 
 Network printers that are registered for applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
@@ -110,6 +110,11 @@ The network printers can now be used in the application.
 There is a cleanup batch job for document routing history that is enabled by default and runs daily. This batch job purges document routing history older than 7 days. This history is intended to be used by the customer for troubleshooting or traceability if there are issues with printing. Depending on how you intend to access this historical data, you should be able to reduce the retention period from the default value of 7 days, which is considered an upper limit. Having fewer records in this table will ensure that printing has optimal performance. You can configure this at `https://[host_adress]/?mi=DocumentRoutingHistoryCleanupConfig`. Configure the value for **JobHistoryHours** (number of hours to retain history). 
 
 As part of the Document Routing Agent polling, a query is executed against this table. This query should execute quickly, but if there are a lot of records in this table, a large print job can be very slow. Ensure that this batch job is running daily, and configure this to reduce how much print history you retain. 
+
+## Excluding printers with stuck print jobs
+The **Enable excluded printers** setting has been added to handle problematic printers and drivers. When this setting is enabled, if a print job has been sent to the printer spool and hasn't returned with a **Pending** status, the Document Rourting Agent will add the printer to an excluded list after the time specified in the **Abort a stuck print job at** field. (The default time is five mintues). The **Reset this printer every x minutes** field, which has a default value of 30 minutes, adds the printer back after the specified time and attempts sending print jobs. 
+
+The administrator can also see any excluded printers in the **Network printers** section in the **Spooler status** column. Any excluded printer can be reset by selecting the **Reset** icon in the **Reset** column. In addition, a test page can be sent to the printer using the **Print test page** button. 
 
 ## Frequently asked questions
 ### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?

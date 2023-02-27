@@ -4,7 +4,7 @@
 title: Enable Microsoft Dataverse virtual entities
 description: This article explains how to enable finance and operations apps virtual entities in Microsoft Dataverse.
 author: jaredha
-ms.date: 05/12/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -57,6 +57,14 @@ The virtual entity is generated and will appear on all the appropriate menus. Fo
 ## Refresh virtual entity metadata
 
 You can force a refresh of a virtual entity's metadata when you expect that the entity metadata in finance and operations apps has changed. To force a refresh, select the **Refresh** checkbox, and then save your change. The latest entity definition from finance and operations apps is synchronized to Dataverse, and the virtual entity is updated.
+
+## Disable virtual entities
+
+Virtual entities for finance and operations apps are in a managed solution and can't be deleted directly from the maker portal. To disable a virtual entity and remove the virtual entity metadata from the Dataverse environment, follow these steps.
+
+1. Find and open the entity by following steps 1 through 8 in the [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities) section of this article.
+1. Clear the **Visible** checkbox.
+1. Save your change.
 
 ## Reference virtual entities
 

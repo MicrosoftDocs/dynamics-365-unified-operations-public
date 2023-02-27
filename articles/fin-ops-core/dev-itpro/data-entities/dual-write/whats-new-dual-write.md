@@ -18,13 +18,58 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## January 2023 release 
+
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and will complete in January.
+
+## November 2022 release 
+
+The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
+
+## October 2022 release 
+
+The October release of [Dual-write core solution 1.0.37.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug | Before this release, dual-write platform core plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
+
+The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | An OnLoad error occurred when the **Contact for Party** page was used to create a new record in **Contact for Customer or Vendor**. | General availability |
+| Bug fix | During some lead qualification scenarios, the postal address and electronic address weren't being synced from the contact entity to the party entity. Global address book plug-ins weren't being invoked in these scenarios. | General availability |
+| Error handling | Provide an actionable error message if a company ID isn't included on the **Account** page. | General availability |
+| Bug fix | The street information on the **Address** page wasn't shown correctly in the **Street** field on the **Postal address** page if **Street 2** information wasn't present. | General availability |
+| Bug fix | County information for the customer address wasn't synced between finance and operations apps and customer engagement apps. Global address book plug-ins have been corrected to address this issue. | General availability |
+
+## August 2022 release
+
+The August release of Dual-write Global Address Book solution 3.5.1.22 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Contacts that were created from the marketing portal and during the lead qualification scenario didn't having a valid party ID. | General availability |
+| Bug fix | Fixed the following error that occurred when a contact was created from CRM portals: "The 'contact' entity must be in the default (null) or unchanged state." | General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABExtended | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABPartyAnchor | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.22 | 3.5.1.55 |
+
 ## July 2022 release 
 
 The July release of [Dual-write core solution 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
 
 | Feature | Description | Status |
 |---|---|---|
-| Feature | [Enable a five-minute session time-out window for dual-write sessions](5-minute-mode.md) | General availability |
+| Feature | Enable a five-minute session time-out window for power platform integrated dual-write environments | General availability |
 
 The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
 

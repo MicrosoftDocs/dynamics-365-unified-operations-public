@@ -61,4 +61,4 @@ Select a feature area to learn more about it.
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Commerce on Microsoft Learn](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).
+For online courses and training, check out [Dynamics 365 Commerce](/training/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

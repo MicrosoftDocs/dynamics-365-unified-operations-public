@@ -4,7 +4,7 @@
 title: Create recommendations with demo data
 description: This article provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,7 @@ The data is structured along the following columns.
 
 | Column name         | Mandatory          | Description                                                                                                                                 | Possible values                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| RecoList            | :heavy_check_mark: | The specific product recommendation list type that the demo data point is to generate.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
+| RecoList            | :heavy_check_mark: | The specific product recommendation list type that the demo data point is to generate.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li><li>RecoPicks</li><li>RecoSimilarVisual</li><li>RecoSimilarTextual</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | The specific operating unit number where product recommendations are expected to be   surfaced.                                        |                                                                              |
 | Category            |                    |    The category the specific list should be returned for. If no category is specified, the list is for top of navigation hierarchy only.    |                                                                              |
 | SeedItemId          |                    |    For lists that require seed (RecoPeopleAlsoBuy and RecoCart), the product those lists should show additional products for.            |                                                                              |

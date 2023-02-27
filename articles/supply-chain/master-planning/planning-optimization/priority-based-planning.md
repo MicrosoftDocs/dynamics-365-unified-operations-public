@@ -17,26 +17,23 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management. The feature adds support for demand-driven planning, which is one step of [Demand Driven Material Requirements Planning (DDMRP)](ddmrp-overview.md). Priority-based planning enables Planning Optimization to generate planned orders that are driven by planning priorities instead of requirement dates.
+This article describes the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management. The feature adds support for demand-driven planning, which is one step of [Demand Driven Material Requirements Planning (DDMRP)](ddmrp-overview.md). Priority-based planning enables the system to generate planned orders that are driven by planning priorities instead of requirement dates.
 
 Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders where order lines are grouped by priority. It can then process all high-priority orders first.
 
 To get a quick overview of this feature, see the following video: [Planning optimization support for priority-based planning in Dynamics 365 Supply Chain Management](https://youtu.be/GmMHzFETTQc).
 
-## Turn on priority-based planning in your system
+## Turn on priority-based planning for your system
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *Priority driven MRP support for Planning Optimization*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Priority driven MRP support for Planning Optimization* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Where and how planning priorities are assigned
 
-*Planning priority* information about supply and demand is the backbone of priority-based planning. Planning priority defines the importance of a demand or supply line. Planning Optimization uses it when the **Coverage code** field is set to *Priority*.
+*Planning priority* information about supply and demand is the backbone of priority-based planning. Planning priority defines the importance of a demand or supply line. Master planning uses it when the **Coverage code** field is set to *Priority*.
 
 The planning priority is usually a number between 0 (zero) and 100, where 0 represents the highest importance. It's shown and set in the **Planning priority** field. You can find this field on the following pages: **Demand forecast lines**, **Sales order details**, **Purchase order details**, **Transfer order details**, and **Planned order details**.
 
-When the **Coverage code** field for the relevant item or coverage group is set to *Priority*, Planning Optimization balances supply with demand by using a demand-driven approach as it calculates the planning priority and, for each released product, considers the values that are set for the **Minimum**, **Reorder point**, and **Maximum** fields on the **Item coverage** page.
+When the **Coverage code** field for the relevant item or coverage group is set to *Priority*, master planning balances supply with demand by using a demand-driven approach as it calculates the planning priority and, for each released product, considers the values that are set for the **Minimum**, **Reorder point**, and **Maximum** fields on the **Item coverage** page.
 
 > [!NOTE]
 > The *Priority* value is available for the **Coverage code** field only when Planning Optimization is enabled.

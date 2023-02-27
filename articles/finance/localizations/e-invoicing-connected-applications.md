@@ -29,7 +29,7 @@ Availability of the Finance or Supply Chain Management parameters in RCS is usef
 ## Create a connected application
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
+2. In the **Globalization feature** workspace, in the **Related links** section, select **Environment setup**.
 3. On the **Environment setup** page, on the Action Pane, select **Connected applications**.
 4. Select **New** to create a connected application.
 5. In the **Name** field, enter the name of the application to connect.

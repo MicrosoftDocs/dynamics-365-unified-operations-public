@@ -2,7 +2,7 @@
 title: Deferred processing of manual inventory movement
 description: This article describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -27,10 +27,10 @@ Background processing is achieved by using the [Process warehouse app events fea
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). You must turn them on in this order:
 
-1. *Organization-wide work blocking*<br>(As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
-1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory. Therefore, it's turned on by default and can't be turned off again.)
-1. *Deferred put operations*
-1. *Deferred processing of manual inventory movement operation*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory, so it is turned on by default and can't be turned off again.)
+1. *Organization-wide work blocking*<br>(As of Supply Chain Management version 10.0.21, this feature is mandatory and can't be turned off.)
+1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Deferred put operations*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Deferred processing of manual inventory movement operation*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
 
 ## Configure the work processing policies
 

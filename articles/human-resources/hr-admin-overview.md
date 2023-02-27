@@ -53,10 +53,10 @@ This article provides a list of the help topics and other resources to set up, m
   - [Configure integration with Dayforce](hr-admin-integration-dayforce.md)
   - [Create a recurring data export app](hr-admin-integration-recurring-data-export.md)
   - Integrate with Office
-    - [Office integration tutorial](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Update entity data in Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Create Open in Excel experiences](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Troubleshoot Office integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office integration tutorial](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Update entity data in Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Create Open in Excel experiences](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Troubleshoot Office integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Manage features](hr-admin-manage-features.md)
 
@@ -107,7 +107,8 @@ This article provides a list of the help topics and other resources to set up, m
 ## Additional resources
 
 ### eLearning courses
-For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+For online courses and training, check out [Dynamics 365 Human Resources learning paths](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### Videos
 

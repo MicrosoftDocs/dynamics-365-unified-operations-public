@@ -101,8 +101,4 @@ The Cash flow forecast capability can help you more accurately estimate your cas
 
 For information about accelerating the creation of a budget, see [Budget proposals](budget-proposals.md). 
 
-## Feedback and support
-
-If you're interested in providing feedback, or if you need support, send email to [Finance insights](mailto:fiap@microsoft.com).
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

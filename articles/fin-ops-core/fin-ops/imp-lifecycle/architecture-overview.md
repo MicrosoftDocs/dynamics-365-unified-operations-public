@@ -3,7 +3,7 @@
 
 title: Finance and operations application architecture
 description: This article provides an overview of the architecture of finance and operations applications.
-author: ClaudiaBetz-Haubold
+author: abunduc-ms
 ms.date: 04/24/2020
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["56551", "intro-internal"]
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: abunduc
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This article explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 05/05/2022
+ms.date: 10/06/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -28,14 +28,18 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 ## Prerequisites
 
 1. Download the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset Library, select **Model** as the asset type, and then select the model file.
-2. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a Microsoft-managed environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
+2. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
+
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+
 
 > [!NOTE]
 > Keep the following points in mind:
 > 
 > - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
 > - Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS.
-> - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environemnt can be deployed and used after the data upgrade is completed.
+> - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
 5. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
@@ -56,12 +60,13 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
     If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
-5. Enable and start the SQL Server Agent on the source database server.
+6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
+7. Enable and start the SQL Server Agent on the source database server.
 
     > [!NOTE]
     > A user should have the **DB\_Owner** privilege in the source database, and should have access to the master database and the source database.
 
-6. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
+8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
@@ -94,7 +99,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     > [!IMPORTANT]
     > The tables and functions that are specified in these XML files won't be replicated in the target database, and the same format should be followed.
     
-7. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
+9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
@@ -143,6 +148,8 @@ After the validation is successful, the application presents a set of menu optio
     - Replication snapshot path (for example, **D:\\SQLServer\\Snapshot**)
 
     > [!IMPORTANT]
+    > You must use SQL Server authentication. You can't use a domain sign-in.
+    > 
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your AX 2012 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be in the local disk of the machine. Avoid using shared paths.
     > 
     > We recommend that you have a static IP address for the virtual machine (VM) or machine (for the allowlist in step 1). In this way, you help prevent connection issues with the target database.
@@ -189,7 +196,7 @@ After the validation is successful, the application presents a set of menu optio
     >
     > If there are no functions to replicate, the publication won't be created.
     > 
-    > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
 7. **Cutover: Set up publication for non-primary key tables**
 

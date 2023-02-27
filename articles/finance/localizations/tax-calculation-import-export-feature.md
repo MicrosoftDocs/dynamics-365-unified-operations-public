@@ -4,7 +4,7 @@
 title: Import and export tax calculations
 description: This article provides information about the import and export functionality of the tax calculation service.
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -101,3 +101,21 @@ The Excel worksheet that you downloaded contains the structure of the **Set up t
 2. In RCS, on the **Tax calculation** feature page, on the **Tax group applicability** tab, select **Add** to insert an empty record at the bottom of the **Set up tax group applicability** grid.
 3. Select **Ctrl+V** to paste the copied rows into the grid.
 4. Select **Save**.
+
+## Import feature demo data
+
+Follow these steps to import feature demo data.
+
+1. Sign in to [RCS](https://marketing.configure.global.dynamics.com/).
+2. In the **Globalization features** workspace, select **Features**, and then select the **Tax calculation** tile.
+3. Select **Import**, and then, on the **Import feature from Global repository** page, select **Synchronize**. 
+4. In the table, select the **tax-calculation-feature-demo-data** feature, and then select **Import**.
+5. Select **View** to review the tax codes, groups, and applicability rules that are defined in the imported feature.
+6. In Finance, switch to the **DEMF** legal entity, and then go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
+7. On the **General** tab, select **Enable Tax Calculation Service**.
+8. In the **Feature setup name** field, select **tax-calculation-feature-demo-data**.
+9. Select a **Settlement period** and a **Ledger posting group** for the new demo tax codes, and then select **Confirm**.
+10. Select **Save**.
+
+> [!NOTE]
+> The **tax-calculation-feature-demo-data** demo feature is based on feature version **40.54.234** and designed for the **DEMF** demo legal entity. Make sure that Finance and RCS are upgraded to version 10.0.26 or later.

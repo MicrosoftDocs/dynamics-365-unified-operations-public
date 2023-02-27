@@ -2,7 +2,7 @@
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
 description: This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
 author: josaw1
-ms.date: 05/03/2022
+ms.date: 02/02/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -216,7 +216,7 @@ You can download and use the samples and templates from [microsoft/Dynamics365Co
 |  POS (./src/ScaleUnitSample/POS) | POS.csproj (./src/ScaleUnitSample/POS/POS.csproj) | Contains samples on how to create Point Of Sale (POS) extensions. |
 | E-CommerceProxyGenerator (./src/ScaleUnitSample/E-CommerceProxyGenerator) | E-CommerceProxyGenerator.csproj (./src/ScaleUnitSample/E-CommerceProxyGenerator/E-CommerceProxyGenerator.csproj) | Contains a sample on how to generate extension proxies for E-Commerce application. |
 
-Samples for in-store components like Modern POS, Cloud POS, Hardware station and Cloud scale unit – Self hosted are published in the [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository.
+Samples for in-store components like the Store Commerce app, Store Commerce for web, Hardware station and Cloud scale unit – Self hosted are published in the [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository.
 
 The **readme.md** files in the **Commerce Runtime**, **ChannelDatabase** and **ScaleUnit** folders contain more details on how to run the samples.
 

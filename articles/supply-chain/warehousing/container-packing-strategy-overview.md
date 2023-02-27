@@ -2,7 +2,7 @@
 title: Container packing strategies
 description: This article describes the differences between container packing strategies and provides examples.
 author: GalynaFedorova
-ms.date: 06/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
@@ -72,7 +72,7 @@ This scenario shows how you can decrease the number of containers that are evalu
 
 #### Turn on the Consolidate shipments feature in your system
 
-This scenario uses the *Consolidate shipments* feature. If that feature isn't already available in your system, you must turn it on by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+This scenario uses the *Consolidate shipments* feature. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Consolidate shipments* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 #### Make demo data available
 

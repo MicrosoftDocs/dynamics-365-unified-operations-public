@@ -37,7 +37,7 @@ The *Warehouse slotting allocation enhancements* feature adds an option for the 
 
 ## Turn on the warehouse slotting features
 
-Before you can use these features, they must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. Turn on the following features as required:
+Before you can use these features, they must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. Turn on the following features as required:
 
 - Warehouse slotting feature
 - Warehouse slotting for transfer orders

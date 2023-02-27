@@ -2,19 +2,23 @@
 title: Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
 description: This article provides guidelines for deploying the fiscal integration sample for the Czech Republic from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
+
 ---
 # Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
 
 [!include [banner](../includes/banner.md)]
 
-This article provides guidelines for deploying the fiscal registration service integration sample for the Czech Republic from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for the Czech Republic](emea-cze-fi-sample.md). 
+> [!IMPORTANT]
+> You must follow the guidelines in this article only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, the fiscal registration service integration sample for the Czech Republic is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](./emea-cze-fi-sample.md#configure-channel-components).
+
+This article provides guidelines for deploying the fiscal registration service integration sample for the Czech Republic from the Dynamics 365 Commerce Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for the Czech Republic](emea-cze-fi-sample.md). 
 
 The fiscal integration sample for the Czech Republic is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT) and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
 

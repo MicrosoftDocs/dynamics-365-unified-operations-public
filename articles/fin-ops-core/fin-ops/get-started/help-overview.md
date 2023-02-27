@@ -35,18 +35,18 @@ In all these apps, you can access product-specific Help from the **Help** pane.
 
 ![Help pane.](./media/help-pane-ops-help.png)
 
-## Help on docs.microsoft.com
+## Help on Microsoft Learn
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365](/dynamics365/)) is the default source for product documentation for the previously listed apps. This site offers the following features:
+The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn is the default source for product documentation for the previously listed apps. This site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives Microsoft a faster and more flexible way to create, deliver, and update product documentation. Therefore, you have easy access to the latest technical information.
 - **Content that is written by experts** – Content on the site is open to contributions by community members both inside and outside Microsoft.
 
-You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as **site:docs.microsoft.com dynamics 365 "search term"**.
+You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
 ## Get notified about changes through an RSS feed
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the finance and operations apps, use the following link:
+To subscribe to an RSS feed of all updates made to the content on Microsoft technical documentation across the finance and operations apps, use the following link:
 
 [RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -82,7 +82,7 @@ You can contribute and make edits to the documentation. To get started, select t
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, see the [Docs contributor guide](/contribute), which is published by the team that built the docs.microsoft.com site.
+For more information, see the [Microsoft Docs contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -163,16 +163,12 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 
 | Site | Description |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | This site hosts or links to all product documentation for Dynamics 365. |
-| [Microsoft Learn](/learn/) | This site is the free Microsoft eLearning site. |
+| [Microsoft Dynamics 365 documentation](/dynamics365/) | This site hosts or links to all product documentation for Dynamics 365. |
+| [Microsoft Learn training](/training/) | This site is the free Microsoft eLearning site. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | This site provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. It's useful in all phases of an implementation. |
 | [Support blog](https://aka.ms/AXSupportBlog) | This site provides tips and tricks that are posted by the Support team. |
-| [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
+| [Previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
 
-
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intercompany planning
-description: This article describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes intercompany planning and explains how to configure intercompany planning in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 For some organizations, logistics operations depend on other legal entities (companies) in the organization. These operations are handled by using intercompany sales and purchases, because each legal entity has a separate chart of accounts.
 
-This article describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
+This article describes intercompany planning and explains how to configure intercompany planning in Microsoft Dynamics 365 Supply Chain Management.
 
 This article uses the following important intercompany terms:
 
@@ -48,8 +48,8 @@ If you run master planning from a master plan that includes planned downstream d
 
 To use intercompany planning, you must prepare your system in the following way:
 
-1. The relevant products must be released in all the relevant companies. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) on Microsoft Learn.
-1. Downstream demand must be covered by purchases from a vendor that has an intercompany relation to the upstream company and relevant default inventory dimensions (site and warehouse) on the customer. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) on Microsoft Learn.
+1. The relevant products must be released in all the relevant companies. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
+1. Downstream demand must be covered by purchases from a vendor that has an intercompany relation to the upstream company and relevant default inventory dimensions (site and warehouse) on the customer. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management](/training/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/).
 1. The master plan in the upstream company must include planned downstream demand, and the relevant company and master plan must be specified in the downstream plans.
 
 ## Include planned downstream demand
@@ -88,6 +88,5 @@ For this example, a planned purchase order is created in the USMF company to cov
 The following illustration shows how this example might appear on the **Multilevel pegging** page for the planned production order.
 
 ![Intercompany example that involves three companies.](media/IntercompanyPlanning2.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

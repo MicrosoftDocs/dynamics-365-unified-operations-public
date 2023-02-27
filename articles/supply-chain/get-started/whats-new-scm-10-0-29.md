@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.29. 
 author: kamaybac
 ms.date: 08/12/2022
@@ -13,12 +13,11 @@ ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
 
 - **Preview of release:** August 2022
 - **General availability of release (self-update):** September 2022
@@ -30,8 +29,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Allocate and reserve WMS items in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Coming soon | Enabled by default |
-| Inventory and logistics | [Preload streamlined on-hand inventory lists](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Coming soon | Enabled by default |
+| Inventory and logistics | [Allocate and reserve WMS items in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [Inventory Visibility support for WMS items](../inventory/inventory-visibility-whs-support.md) | Enabled by default |
+| Inventory and logistics | [Preload streamlined on-hand inventory lists](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Use the Inventory Visibility app](../inventory/inventory-visibility-power-platform.md) | Enabled by service configuration |
 | Make-to-order supply automation | [Make-to-order supply automation](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Feature management:<br>*Make-to-order supply automation* |
 | Planning | [View and apply detailed insights for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
 | Production control | [Make finished goods physically available before posting to journals](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md) | Feature management:<br>*(Preview) Make finished goods physically available before posting to journals* |
@@ -70,10 +69,7 @@ The table also lists features that were previously in public preview but have ch
 
 | Module | Feature name | New feature state |
 | --- | --- | --- |
-| Asset management | [Apply rules for grouping work orders while running a maintenance plan](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Mandatory |
 | Asset management | [Asset management functionality for the production floor execution interface](../production-control/production-floor-execution-configure.md) | Mandatory |
-| Asset management | [Counter-based maintenance enhancements](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | On by default |
-| Asset management | [Work order billing](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Mandatory |
 | Cost management | [Change the label of Cancellation in Closing and adjustment to Reverse](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Mandatory |
 | Cost management | Clean up BOM calculation details cross costing versions | Mandatory |
 | Cost management | [Compare item prices storage](../cost-management/compare-item-price.md) | Mandatory |
@@ -98,7 +94,7 @@ The table also lists features that were previously in public preview but have ch
 | Inventory and warehouse management | Using unit of measure and unit quantity in inventory journals | Mandatory |
 | Inventory and warehouse management | Unlock inventory journal | Mandatory |
 | Manufacturing | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md) | Generally available |
-| Manufacturing | Enable display of inventory dimensions in the materials list for production route operations | On by default |
+| Manufacturing | Enable display of inventory dimensions in the materials list for production route operations | Mandatory |
 | Manufacturing | [Enable to enter batch and serial numbers while reporting as finished from the Job Card Device](../production-control/report-finished-job-device.md) | On by default |
 | Manufacturing | Improved production catch weight quantity picking | On by default |
 | Manufacturing | [Job search for the production floor execution interface](../production-control/production-floor-execution-configure.md) | Mandatory |
@@ -123,20 +119,19 @@ The table also lists features that were previously in public preview but have ch
 | Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | Mandatory |
 | Master planning | [Planned production orders for Planning Optimization](../master-planning/planning-optimization/production-planning.md) | Mandatory |
 | Master planning | [Purchase trade agreements for Planning Optimization](../master-planning/planning-optimization/purchase-trade-agreement.md) | Mandatory |
-| Master planning | Resource planning with maintenance | Mandatory |
 | Master planning | [Saved views for planned orders](saved-views-scm.md) | Mandatory |
 | Procurement and sourcing | Charges from and to amounts on purchase orders | Mandatory |
 | Procurement and sourcing | Disable purchase requisition distribution Reset button | On by default |
 | Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | On by default |
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | On by default |
 | Procurement and sourcing | [Merge financial dimensions from the vendor with active dimension link financial dimension on the purchase order](whats-new-scm-10-0-25.md) | Mandatory |
+| Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Generally available |
 | Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | On by default |
 | Procurement and sourcing | [Purchase agreement responsible party](../procurement/purchase-agreements.md) | Mandatory |
 | Procurement and sourcing | [Saved views for purchase orders](saved-views-scm.md) | Mandatory |
 | Product information management | Bill of materials report pre-processing to avoid timeout | Mandatory |
 | Product information management | Default financial dimensions separately when using item templates | Mandatory |
 | Product information management | Enable product dimension groups for item templates | Mandatory |
-| Product information management | [Improved attribute inheritance for Engineering Change Management](../engineering-change-management/engineering-attributes-and-search.md) | Mandatory |
 | Product information management | Item - barcode entity improvements | Mandatory |
 | Product information management | Regenerate product variant names based on nomenclature | Mandatory |
 | Product information management | [Saved views for released products](saved-views-scm.md) | Mandatory |
@@ -157,27 +152,30 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Single click sales order confirmation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Mandatory |
 | Transportation management | Allow unmatching of freight bills from freight invoice lines without a posted vendor invoice journal | On by default |
 | Transportation management | [Enable creation of a vendor invoice journal when discarding a freight bill](whats-new-scm-10-0-20.md) | On by default |
-| Transportation management | [Small Parcel Shipping](../warehousing/small-parcel-shipping.md) | On by default |
+| Transportation management | [Small Parcel Shipping](../warehousing/small-parcel-shipping.md) | Mandatory |
 | Transportation management | [USMCA certification of origin document](../transportation/usmca-certification-of-origin.md) | On by default |
 | Warehouse management | [Additional location zone](../warehousing/additional-location-zones.md) | Mandatory |
 | Warehouse management | [Cancel work](../warehousing/cancel-warehouse-work.md) | Mandatory |
-| Warehouse management | [Consolidate shipment](../warehousing/configure-shipment-consolidation-policies.md) | On by default |
+| Warehouse management | [Consolidate shipment](../warehousing/configure-shipment-consolidation-policies.md) | Mandatory |
 | Warehouse management | [Create and process transfer orders from the warehouse app](../warehousing/create-transfer-order-from-warehouse-app.md) | Mandatory |
-| Warehouse management | Cross-docking templates with location directives | On by default |
-| Warehouse management | [Decouple putaway work from ASNs](whats-new-scm-10-0-21.md) | On by default |
-| Warehouse management | [Deferred put operations](../warehousing/deferred-processing-manual-inventory-movement.md) | On by default |
+| Warehouse management | Cross docking templates with location directives | On by default |
+| Warehouse management | [Decouple putaway work from ASNs](whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | [Deferred put operations](../warehousing/deferred-processing-manual-inventory-movement.md) | Mandatory |
 | Warehouse management | Deferred put - container | On by default |
 | Warehouse management | Deferred put processing – enable for audit template feature with trigger event set to Prior | Mandatory |
 | Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | On by default |
 | Warehouse management | Enable fast validation for warehouse mobile devices | Mandatory |
-| Warehouse management | [Flexible warehouse-level dimension reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | On by default |
-| Warehouse management | [Flexible order-committed license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | On by default |
-| Warehouse management | [Outbound workload visualization](../warehousing/outbound-workload-visualization.md) | Mandatory |
+| Warehouse management | [Enhanced parser for GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
+| Warehouse management | [Flexible order-committed license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Mandatory |
+| Warehouse management | [Flexible warehouse-level dimension reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Mandatory |
 | Warehouse management | [Item consolidation location utilization](../warehousing/item-consolidation-location-utilization.md) | On by default |
 | Warehouse management | License plate receiving history | On by default |
 | Warehouse management | [Manual shipment consolidation](../warehousing/consolidate-shipments-manual-workbench.md) | On by default |
+| Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Generally available |
 | Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Mandatory |
-| Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | On by default |
+| Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Generally available |
+| Warehouse management | [Outbound workload visualization](../warehousing/outbound-workload-visualization.md) | Mandatory |
+| Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | Mandatory |
 | Warehouse management | [Process warehouse app events](../warehousing/warehouse-app-events.md) | Mandatory |
 | Warehouse management | Query enhancement for the co-product and by-product put away work template | Mandatory |
 | Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](whats-new-scm-10-0-19.md) | Mandatory |
@@ -186,13 +184,14 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Saved view for wave processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved views for load processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved views for shipment processing](saved-views-scm.md) | Mandatory |
-| Warehouse management | Shipment wave label details | On by default |
+| Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
+| Warehouse management | Shipment wave label details | Mandatory |
 | Warehouse management | [Slot mixed units](whats-new-scm-10-0-21.md) | Mandatory |
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | On by default |
 | Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | On by default |
-| Warehouse management | [Warehouse app promoted fields](../warehousing/warehouse-app-promoted-fields.md) | On by default |
-| Warehouse management | [Warehouse app step instructions](../warehousing/mobile-app-titles-instructions.md) | On by default |
-| Warehouse management | [Warehouse location status](../warehousing/warehouse-location-status.md) | On by default |
+| Warehouse management | [Warehouse app promoted fields](../warehousing/warehouse-app-promoted-fields.md) | Mandatory |
+| Warehouse management | [Warehouse app step instructions](../warehousing/mobile-app-titles-instructions.md) | Mandatory |
+| Warehouse management | [Warehouse location status](../warehousing/warehouse-location-status.md) | Mandatory |
 | Warehouse management | [Warehouse management app detours](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | [Wave batch job details](../warehousing/wave-processing.md) | Mandatory |
 | Warehouse management | [Wave execution notifications](../warehousing/wave-execution-notifications.md) | Mandatory |
@@ -201,13 +200,13 @@ The table also lists features that were previously in public preview but have ch
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.29 includes platform updates. To learn more, see [Platform updates for version 10.0.29 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.29 includes platform updates. To learn more, see [Platform updates for version 10.0.29 of Finance and Operations apps (October 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md).
 
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559).
 
-### Dynamics 365 and industry clouds: 2022 release wave 1 plan
+### Dynamics 365 and industry clouds: 2022 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 

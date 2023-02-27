@@ -2,7 +2,7 @@
 title: Migrate from legacy Commerce functionality for France
 description: This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
-ms.date: 08/10/2021
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,17 +33,19 @@ To help prevent scenarios where an event or transaction is signed twice (by both
 To complete the migration process, follow these steps.
 
 1. Update the Commerce headquarters components.
-1. Update the Commerce Scale Unit components, and enable the extensions of the current solution.
-1. Update the POS components, and enable the extensions of the current solution.
-1. In Commerce headquarters, configure the fiscal integration functionality for France.
+1. In Commerce headquarters, [configure the fiscal integration functionality for France](#configure-fiscal-integration).
 1. Make sure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
 1. Close shifts, and sign out of all POS devices.
-1. Adjust receipt formats so that they use updated custom fields.
-1. Enable the fiscal integration functionality.
-1. Restart the POS.
+1. Update the Commerce Scale Unit components, and then enable the extensions of the current solution.
+1. Update the POS components, and then enable the extensions of the current solution.
 
-> [!NOTE]
-> Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section of this article or the [Migration in a production environment](#migration-in-a-production-environment) section.
+    > [!NOTE]
+    > - You must enable the Commerce runtime (CRT) and POS extensions only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you must [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+    > - Depending on the type of environment, you can find more technical details about the migration process in either [Migration in a development environment](#migration-in-a-development-environment) or [Migration in a production environment](#migration-in-a-production-environment).
+
+1. [Adjust receipt formats](#adjust-receipt-formats) so that they use updated custom fields.
+1. [Enable the fiscal integration functionality](#enable-fiscal-integration).
+1. Restart the POS.
 
 ## Configure fiscal integration
 
@@ -74,6 +76,9 @@ When you're ready to enable the fiscal integration functionality in Commerce hea
 
 ## Migration in a development environment
 
+> [!NOTE]
+> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you must [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+
 ### Update the Commerce runtime (development)
 
 To update the Commerce runtime (CRT), follow these steps.
@@ -98,6 +103,7 @@ To update the Commerce runtime (CRT), follow these steps.
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
     ```
 
 ### Update Modern POS (development)
@@ -113,6 +119,9 @@ To update Modern POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
@@ -129,6 +138,9 @@ To update Cloud POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
@@ -223,6 +235,9 @@ To disable the earlier Cloud POS extension, follow these steps.
 
 ## Migration in a production environment
 
+> [!NOTE]
+> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you must [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+
 ### Update CRT (production)
 
 To update CRT, follow these steps.
@@ -239,6 +254,7 @@ To update CRT, follow these steps.
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
     ```
 
 ### Update Modern POS (production)
@@ -254,6 +270,9 @@ To update Modern POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
@@ -270,6 +289,9 @@ To update Cloud POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 

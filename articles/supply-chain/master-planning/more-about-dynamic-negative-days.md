@@ -13,6 +13,8 @@ ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
+<!-- KFM: Split this up. non-dynamic for deprecated MP, and "dynamic" for new standard PO. -->
+
 # Negative days and dynamic negative days
 
 [!include [banner](../includes/banner.md)]

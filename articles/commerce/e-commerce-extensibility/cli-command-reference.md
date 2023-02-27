@@ -2,7 +2,7 @@
 title: CLI command reference
 description: This article covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/11/2022
+ms.date: 11/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -18,7 +18,6 @@ ms.assetid:
 # CLI command reference
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
@@ -263,6 +262,16 @@ The packageVersions.json file includes information about Dynamics 365 Commerce p
 ```bash
 yarn msdyn365 packages
 ```
+
+## preview
+
+**Usage**
+
+```bash
+yarn msdyn365 pack --preview
+```
+
+This command creates a package with the latest SDK preview version, and is available with SDK version 1.41.10-preview.0 and later.
 
 ## update-versions
 

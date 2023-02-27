@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 
-Ledger allocation rules are used to automatically calculate and generate allocation journals and account entries for the allocation of ledger balances or fixed amounts. Allocation methods can be variable or fixed. The following allocation methods can be used for ledger allocation rules:
+Ledger allocation rules are used to automatically calculate and generate allocation journals and account entries for the allocation of ledger balances or fixed amounts. Allocation methods can be variable or fixed. The allocation is based on the transaction currency value. For example, foreign currency gain/loss accounting entries are posted to adjust the accounting and reporting currency amounts. These entries are not subject to allocation rules because their transaction currency value is 0.00. The following allocation methods can be used for ledger allocation rules:
 
 -   **Basis** – This variable method is used when the allocation depends on the actual ledger balance, based on filter criteria. For example, advertising expenses can be allocated based on each department's sales in proportion to the total departmental sales.
 -   **Fixed percentage** and **Fixed weight** – For these methods, the allocation percentage or weight is defined directly for the rule. For example, advertising expenses can be allocated so that Department A receives 70 percent of the advertising expense and Department B receives 30 percent.

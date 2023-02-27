@@ -39,6 +39,7 @@ This article provides links to documentation resources for Hungary.
 - [Tax reimbursement documents](emea-hun-tax-reimbursement-docs.md)
 - [Year-end close](emea-cze-hun-year-end.md)
 - [Online invoicing system](emea-hun-online-invoicing.md)
+- [VAT declaration (Hungary)](emea-hun-vat-declaration-hungary.md)
 - [Sales tax reports for Hungary](emea-hun-sales-tax-reports.md)
 - [Intrastat report](emea-hun-intrastat.md)
 - [Deferred sales tax calculations](emea-hun-deferred-vat.md)

@@ -2,7 +2,7 @@
 title: Manage finance and operations updates and your custom code lifecycle
 description: This article describes how to manage finance and operations updates and your custom code lifecycle.
 author: josaw1
-ms.date: 11/08/2021
+ms.date: 02/17/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -128,13 +128,13 @@ The **main** branch (development branch) contains the latest functioning version
 
 When you work on new features, create a new feature branch out of the **main** branch. Then, when the feature work is completed, integrate the feature branch back into the **main** branch.
 
-The release branches contain the code base of your official releases. In the preceding illustration, the assumption is that you have only one release branch, **release/2020-April**. **2020-April** isn't a build. It's a source code branch. Because you will probably create hotfixes for your release, you will make changes and produce builds out of this release branch.
+The release branches contain the code base of your official releases. In the preceding illustration, the assumption is that you have only one release branch, **release/2020-April**. **2020-April** isn't a build. It's a source code branch. Because you'll probably create hotfixes for your release, you'll make changes and produce builds out of this release branch.
 
 - Don't use release branches to develop new features. Use them only for critical fixes or changes that are required in your live environment.
 - After you've made a change in a release branch, integrate the branch back into the **main** branch. In this way, you ensure that your next release also contains the fix.
 - Among the example environments that were described earlier, the Dev 1 environment will be connected to the **release/2020-April** branch.
 
-When you're ready to release a new version of your custom code, create a new release branch that is based on the **main** branch. For this example, you will create a new release branch that is based on **main** and named **2020-July**.
+When you're ready to release a new version of your custom code, create a new release branch that is based on the **main** branch. For this example, you'll create a new release branch that is based on **main** and named **2020-July**.
 
 You might have private branches that individual developers work in while they work on a specific work item that is based on a specific branch of your code. Private branches are merged back into their parent branch when the work is completed. For more information, see [Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
 
@@ -153,7 +153,7 @@ When you take a Microsoft update, you don't have to update your custom code to t
 
 ### <a id="compatibility"></a>Backward compatibility of Microsoft updates
 
-It's important that you understand what Microsoft means by *backward compatibility of service updates*, so that you have context for the next sections of this article. Service and quality updates are *runtime* backward-compatible. However, they aren't always *design-time* (*compile-time*) backward-compatible.
+It's important that you understand what Microsoft means by *backward compatibility of service updates*, so that you've context for the next sections of this article. Service and quality updates are *runtime* backward-compatible. However, they aren't always *design-time* (*compile-time*) backward-compatible.
 
 #### <a id="runtime-compatibility"></a>Runtime compatibility
 
@@ -185,7 +185,7 @@ This phase is divided into two tracks. These tracks can occur in parallel.
 - **Track 1** – Update your runtime environments.
 - **Track 2** – Update your development environments.
 
-After you complete track 1, you will be live on version 10.0.11, unless you encounter one of the error situations that are described in the [Error situations](#error-situations) section.
+After you complete track 1, you'll be live on version 10.0.11, unless you encounter one of the error situations that are described in the [Error situations](#error-situations) section.
 
 #### <a id="update-finops-runtime"></a>Track 1: Update your runtime environments
 
@@ -273,7 +273,7 @@ This phase is divided into two tracks. These tracks can occur in parallel.
 - **Track 1** – Update your CSU runtime environments.
 - **Track 2** – Update your development environments.
 
-After you complete track 1, you will be live on release 10.0.11 (Commerce version 9.21), unless you encounter one of the [error situations](#error-situations) that were described for phase 1.
+After you complete track 1, you'll be live on release 10.0.11 (Commerce version 9.21), unless you encounter one of the [error situations](#error-situations) that were described for phase 1.
 
 #### <a id="update-csu"></a>Track 1: Update your CSU runtime environments
 
@@ -312,7 +312,7 @@ The UAT environment is running CSU that corresponds to release 10.0.7, together 
 
 ### <a id="phase-3"></a>Phase 3: Update POS to version 10.0.11
 
-This section summarizes the process that you use to update your store components, such as Modern POS and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
+This section summarizes the process that you use to update your store components, such as Modern POS (Store Commerce in the newer versions) and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
 
 Unlike updates for Commerce headquarters (in the finance and operations app) and CSU, updates for store components are delivered in the same packages. After you update Commerce headquarters and CSU, you have the following options:
 
@@ -322,7 +322,7 @@ Unlike updates for Commerce headquarters (in the finance and operations app) and
 
 In the rest of this section, the assumption is that you want or have to update the store components (option 1 or option 2).
 
-After you complete this phase, you will be live on release 10.0.11 (Commerce version 9.21) for store components, unless you encounter one of the [error situations](#error-situations) that are described for phase 1.
+After you complete this phase, you'll be live on release 10.0.11 (Commerce version 9.21) for store components, unless you encounter one of the [error situations](#error-situations) that are described for phase 1.
 
 #### <a id="phase3-prerequisites"></a>Phase 3 prerequisites
 

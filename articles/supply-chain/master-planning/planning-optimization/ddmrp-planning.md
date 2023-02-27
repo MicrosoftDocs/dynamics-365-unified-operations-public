@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Demand-driven planning
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 The article describes how to generate planned orders for items that are set up as decoupling points.
 
@@ -49,4 +48,4 @@ If you run master planning now, it will generate a planned order if the net flow
 This example produces a planned purchase order for a quantity of 130, which equals the maximum level minus the net flow. The planned order is assigned a priority of 53.07, based on its percentage of the maximum quantity. Because these values were found on June 20, the system creates a planned order that is dated June 20 plus the decoupled lead time for the item (five business days in this example). Therefore, because five business days are one week from today, the planned order is dated June 27.
 
 > [!NOTE]
-> Planning Optimization calculates only decoupled items by using DDMRP. All other items are calculated by using standard material requirements planning (MRP).
+> Master planning calculates only decoupled items by using DDMRP. All other items are calculated by using standard material requirements planning (MRP).

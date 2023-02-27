@@ -103,7 +103,8 @@ Complete the steps in the following two sections to set up different types of ve
 2. Select **Customer invoice context model**, and then select **Create configuration** > **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 3. On the **Draft** version, select **Designer** and in the **Data model** tree, select **Map model to datasource**.
 4. In the **Definitions** tree, select **DataChannel** and then select **Designer**.
-5. In the **Data sources** tree, expand the **$Context\_Channel** container. In the **Value** field, select **Edit** and enter the data channel name. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS. 
+5. In the **Data sources** tree, expand the **$Context\_Channel** container. 
+6. In the **Value** field, select **Edit** > **Edit formula**, and enter the data channel name. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS. 
 7. Select **Save** and close the page.
 8. Close the page.
 9. Select the derived configuration you just created from the **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** > **Completed**.

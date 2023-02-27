@@ -157,7 +157,7 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Location license plate positioning](../warehousing/location-license-plate-positioning.md) | Mandatory |
 | Warehouse management | [Location product dimension mixing](../warehousing/location-product-dimension-mixing.md) | Mandatory |
 | Warehouse management | Make mobile device inventory movement inventory status field editable | Mandatory |
-| Warehouse management | Manual sales line picking service for admin or similar trusted users | Mandatory |
+| Warehouse management | [Manual sales line picking service for admin or similar trusted users](../warehousing/manual-order-line-picking-exception-handling.md) | Mandatory |
 | Warehouse management | [Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
 | Warehouse management | Prompt to resolve ambiguous 'Loc / LP' names | Mandatory |
 | Warehouse management | [Quality check](../warehousing/quality-check.md) | Mandatory |

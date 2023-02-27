@@ -4,7 +4,7 @@
 title: Update process
 description: Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates for application and platform changes.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 _**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
 > [!NOTE]
-> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
+> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > The update and hotfix process on the finance and operations app infrastructure differs from the Human Resources stand-alone update and hotfix process. For more information about the update process, see [Process for moving to the latest update of finance and operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). For more information about hotfixes, see [Download updates from Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
@@ -47,7 +47,7 @@ Updates are released on a regular cadence to all environments. Human Resources i
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
-- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they are released. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Service updates**: Service updates include applicable platform updates when they are released. In addition to exception-based updates, regular service updates occur following the General Availability (GA) of Dynamics 365 Finance platform updates. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Dataverse. These updates are released to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
 
@@ -61,15 +61,6 @@ When needed, Human Resources provides the following types of fixes:
 - **Emergency fix**: Proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a biweekly service update release
 
 Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they're then deployed to production.
-
-## Release cadence exceptions in 2021
-
-To account for holidays, the release schedule for November and December 2021 is as follows:
-
-- November release: November 1 - November 14
-- December release: November 29 - December 12
- 
-The two-week release cadence will resume as usual on January 10, 2022.
 
 ## Communications
 

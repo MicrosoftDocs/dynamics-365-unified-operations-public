@@ -35,7 +35,7 @@ The following links (also included in the methodology) describe key concepts and
 
 ## Learning path
 
-- [Upgrade Dynamics AX 2012 to finance and operations apps](/learn/paths/upgrade-ax-2012-finance-operations/)
+- [Upgrade Dynamics AX 2012 to finance and operations apps](/training/paths/upgrade-ax-2012-finance-operations/)
 
 ## Additional concepts
 

@@ -3,7 +3,7 @@
 
 title: Go-live for implementation projects FAQ
 description: This article lists frequently asked questions about how to go live with an implementation project.
-author: OlgaPetrovaFT
+author: alejandra-cabrales
 ms.date: 06/22/2022
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: olpetrov
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 

@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.29
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/preview-banner.md)]
-
 This article explains how to enable the global setup of the withholding tax currency exchange rate type and date type. You can now select a dedicated exchange rate type and exchange rate calculation date type for the withholding tax currency. These selections determine the foreign currency exchange rate that is used to calculate the withholding tax amount, in the withholding tax currency, in the payment transactions.
 
 This functionality is available in Microsoft Dynamics 365 Finance version 10.0.29 and later.

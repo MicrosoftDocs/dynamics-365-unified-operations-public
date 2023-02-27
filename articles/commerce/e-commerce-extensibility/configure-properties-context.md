@@ -2,7 +2,7 @@
 title: Configure module properties to be shown based on context
 description: This article describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
-ms.date: 09/14/2021
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -290,6 +290,7 @@ The following tables list possible scenarios and expected outcomes when schema d
 | A schema dependency on the same property is used both in the module definition file and in the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. | 
 | The same property is defined both in the module definition file and in the schema dependency of the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
 | The same property is defined both in the module definition file and in the schema dependency of the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. |
+| The same property is defined both in the module definition file and in the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
 
 ## Additional resources
 

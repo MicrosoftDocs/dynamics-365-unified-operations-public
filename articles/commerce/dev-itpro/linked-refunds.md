@@ -2,7 +2,7 @@
 title: Linked refunds of previously approved and confirmed transactions
 description: This article describes how to enable and use Linked refunds.
 author: josaw1
-ms.date: 06/30/2021
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,6 +19,7 @@ ms.search.industry: Retail
 # Linked refunds of previously approved and confirmed transactions
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Returns are an important operation for retailers. The ability to accept returns for sales and refund payments to customers gives retailers a way to service the needs of customers and to help resolve their issues.
 
@@ -46,18 +47,19 @@ To turn on the linked refunds functionality, go to **Retail and Commerce \> Head
 
 ![Omni-channel payments configuration.](media/LinkedRefundsOmniChannel.jpg)
 
+In Commerce version 10.0.11 and later, you can enable the **Omni-channel payments** feature in headquarters at **System administration \> Workspaces \> Feature management**.
+
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
-When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Modern POS (MPOS)) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-Commerce applications, customers can still manually enter card numbers for payment.
-
-
+When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or the Store Commerce app) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, Store Commerce app, and e-commerce applications, customers can still manually enter card numbers for payment.
 
 ### Supported flows
 
-Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return.
+Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return. Supported flows include the following:
 
 - Linked refunds for cash-and-carry transactions that use credit or debit cards.
 - Linked refunds for customer orders that use credit or debit cards.
+- Linked refunds when the **Unified return processing experience in POS** feature is enabled, but only if a single invoice is being returned at a time. 
  
 ### Unsupported flows
 
@@ -66,6 +68,7 @@ Cashiers can process a refund to the card that was used during the original tran
 - Linked refunds for exchange orders.
 - Multiple return orders in the same transaction.
 - Returns without a receipt or customer account details.
+- Linked refunds when the **Unified return processing experience in POS** feature is enabled, and multiple invoices are being grouped at once for the return
 
 ## Enable refunds over multiple captures
 

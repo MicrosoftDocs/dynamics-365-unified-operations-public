@@ -49,7 +49,7 @@ Here are some key things to note about metadata.
 
 ### Don't use these metadata
 
-If you think you need to use any of these, talk to your Content Strategist first. For valid values, see [Taxonomies for Docs](https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=main). 
+If you think you need to use any of these, talk to your Content Strategist first. For valid values, see [Taxonomies for Docs](https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main).
 
 - **ms.search.scope** - Set at the folder level, see [docfx.json](articles/docfx.json). We are using these values:
     + Legacy values. Don't remove these from topics. They need to stay until all customers are on the new system.
@@ -284,5 +284,3 @@ It's important to use the following alert styles so they render with the proper 
 
 And they'll render like this:
 ![Alert styles.](../images/alerts.png)
-
-

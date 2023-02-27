@@ -1,7 +1,7 @@
 ---
 title: Plan for public sector functionality
 description: This article suggests the first steps to setting up Public sector functionality.
-author: v-kiarnd
+author: TaylorVH
 ms.date: 02/18/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: v-kiarnd
+ms.author: TaylorVH
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 19851

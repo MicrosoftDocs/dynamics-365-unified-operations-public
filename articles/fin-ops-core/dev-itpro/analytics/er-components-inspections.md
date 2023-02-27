@@ -2,7 +2,7 @@
 title: Inspect the configured ER component to prevent runtime issues
 description: This article explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -238,6 +238,15 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>
 <p>The list expression of ORDERBY function is not queryable.</p>
 <p><b>Runtime error:</b> Sorting is not supported. Validate the configuration to get more details about this.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Obsolete application artifact</a></td>
+<td>Data integrity</td>
+<td>Warning</td>
+<td>
+<p>The element &lt;path&gt; is marked as obsolete.<br>or<br>The element &lt;path&gt; is marked as obsolete with message &lt;message text&gt;.</p>
+<p><b>Runtime error sample:</b> Class '&lt;path&gt;' not found.</p>
 </td>
 </tr>
 </tbody>
@@ -937,6 +946,36 @@ Instead of adding a nested field of the **Calculated field** type to the **Vendo
 #### Option 2
 
 Change the expression of the **FilteredVendors** data source from `ORDERBY("Query", Vendor, Vendor.AccountNum)` to `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. We don't recommend that you change the expression for a table that has a large volume of data (transactional table), because all records will be fetched, and ordering of the required records will be done in memory. Therefore, this approach can cause poor performance.
+
+## <a id="i19"></a>Obsolete application artifact
+
+When you design an ER model mapping component or an ER format component, you can configure an ER expression to call an application artifact in ER, such as a database table, a method of a class, etc. In Finance version 10.0.30 and later, you can force ER to warn you that the referred application artifact is marked in source code as obsolete. This warning can be useful because usually, obsolete artifacts are eventually removed from source code. Being informed about an artifact’s status can stop you using the obsolete artifact in the editable ER component before its removal from the source code, helping to prevent errors of calling non-existing application artifacts from an ER component at runtime.
+
+Enable the **Validate obsolete elements of Electronic Reporting data sources** feature in the **Feature management** workspace to start evaluating the obsolete attribute of application artifacts during the inspection of an editable ER component. The obsolete attribute is currently evaluated for the following types of application artifacts:
+
+- Database table
+    - Field of a table
+    - Method of a table
+- Application class
+    - Method of a class
+
+> [!NOTE]
+> A warning occurs during the inspection of the editable ER component for a data source that refers to an obsolete artifact only when this data source is used in at least one binding of this ER component.
+
+> [!TIP]
+> When the [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) class is used to notify the compiler to issue warning messages instead of errors, the inspection warning presents the specified in source code warning at design time in the **Details** FastTab on the **Model mapping designer** or **Format designer** page.
+
+The following illustration shows the validation warning that occurs when the obsolete `DEL_Email` field of the `CompanyInfo` application table is bound to a data model field by using the configured `company` data source.
+
+![Review the validation warnings in the Details FastTab on the Model mapping designer page.](./media/er-components-inspections-19a.png)
+
+### Automatic resolution
+
+No option to automatically fix this issue is available.
+
+### Manual resolution
+
+Modify the configured model mapping or format by removing all bindings to a data source that refers to an obsolete application artifact.
 
 ## Additional resources
 

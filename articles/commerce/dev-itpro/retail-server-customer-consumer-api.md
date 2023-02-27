@@ -223,14 +223,11 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 |-------------------|-----------------------------------------------------------------|-------------------------------------|--------------------------|-------------------------------------------------------------|
 | GetStateProvinces | string countryRegionId, QueryResultSettings queryResultSettings | PageResult\<StateProvinceInfo\> | Employee,  Customer,  Anonymous,  Application               | Get all the states or provinces filtered by country/region. |
 
-## Discount controller
+## Pricing controller
 
 | API                       | Parameter                                                                          | Return value                   | Supported Commerce Roles | Description                                                     |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------|--------------------------|-----------------------------------------------------------------|
-| GetDiscountCodes          | QueryResultSettings queryResultSettings                                            | PageResult\<DiscountCode\> | Employee                 | Gets collection of discount codes.                              |
-| GetDiscountCodesByOfferId | string offerId, QueryResultSettings queryResultSettings                            | PageResult\<DiscountCode\> | Employee                 | Gets collection of discount codes filtered by offer identifier. |
-| GetDiscountCodesByKeyword | string keyword, DateTimeOffset activeDate, QueryResultSettings queryResultSettings | PageResult\<DiscountCode\> | Employee                 | Searches the discount codes.                                    |
-| GetDiscountCode           | string discountCode                                                                | DiscountCode                   | Employee                 | Gets the discount code.                                         |
+| CalculateSalesDocument          | Cart salesDocument                                            | Cart | Employee,  Customer,  Anonymous,  Application                 | Calculates prices and discounts for products at given quantities if they are bought together in an order.                              |
 
 ## Zipcodes controller
 

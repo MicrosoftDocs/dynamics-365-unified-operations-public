@@ -111,6 +111,8 @@ Follow these steps to define which sales tax codes in your Finance generate whic
 
     This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
+6. If you must report the corrections, on the **Special report** section, set **Include corrections** to **Yes**.
+
 If you're configuring the VAT declaration for Finland in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md),
 follow these steps.
 

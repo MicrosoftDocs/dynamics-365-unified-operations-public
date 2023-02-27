@@ -41,8 +41,6 @@ Companies in Germany and some other countries/regions are legally required to ex
 -   Customer transactions
 -   Vendor master data
 -   Vendor transactions
--   Item master data
--   Item transactions
 -   Fixed assets master data
 -   Fixed assets transactions
 

@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.25
 # Run custom X++ scripts with zero downtime
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistencies without causing any disruptive downtime.
 
@@ -108,7 +107,7 @@ The following list describes some best practices for successfully writing, imple
 - **Do** use existing business logic, such as `update()` methods, but **do not** bypass business logic by using `doUpdate()`, `doInsert()`, and `doDelete()` methods. This approach will help ensure that dependent data is handled correctly. It will also significantly reduce the risk of further data inconsistencies.
 - **Do** assert the company context. This approach will expose common mistakes as a script runs. For example, it will reveal whether the script is being run in the wrong company.
 - **Do** assert that the number of affected records matches your expectations. This approach will reveal whether data unexpectedly shifted in the system while the script was being prepared.
-- **Do** use unique class names for each script (for example, by including a reference to a work item in the name). This approach will prevent name clash issues when you upload the script. If a new iteration of a script is required, be sure to give it a new name.
+- **Do** use unique model names for each script (for example, by including a reference to a work item in the name). This approach will prevent name clash issues when you upload the script. If a new iteration of a script is required, be sure to create a new model.
 - **Do** test each script in a non-production environment first. Test for the intended impact and for unintentional side-effects on related data. Ensure that all business processes that might be affected can be successfully and fully completed afterwards.
 
 ## Upload and run a deployable package

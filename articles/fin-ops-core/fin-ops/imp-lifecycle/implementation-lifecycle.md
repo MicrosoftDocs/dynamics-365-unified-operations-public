@@ -3,7 +3,7 @@
 
 title: Implementation lifecycle management home page
 description: These topics describe the programs, tools, and processes available that are related to the implementation lifecycle of your finance and operations project.
-author: ClaudiaBetz-Haubold
+author: alejandra-cabrales
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---

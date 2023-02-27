@@ -1,182 +1,108 @@
-# Deployment guidelines for the control unit integration sample for Sweden (legacy)
 ---
+# required metadata
 
 title: Deployment guidelines for the control unit integration sample for Sweden (legacy)
-[!include [banner](../includes/banner.md)]
 description: This article provides guidelines for deploying the control unit integration sample for Sweden from the Retail SDK
-
 author: EvgenyPopovMBS
-This article provides guidelines for deploying the control unit integration sample for Sweden from the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). 
 ms.date: 12/20/2021
-
 ms.topic: article
-The fiscal integration sample for Sweden is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and point of sale (POS). To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
 audience: Application User, Developer, IT Pro
-
 ms.reviewer: v-chgriffin
-## Development environment
 ms.search.region: Global
-
 ms.author: josaw
+ms.search.validFrom: 2019-3-1
+
+---
+# Deployment guidelines for the control unit integration sample for Sweden (legacy)
+
+[!include [banner](../includes/banner.md)]
+
+This article provides guidelines for deploying the control unit integration sample for Sweden from the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). 
+
+The fiscal integration sample for Sweden is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and point of sale (POS). To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
+
+## Development environment
+
 Follow these steps to set up a development environment so that you can test and extend the sample.
-ms.search.validFrom: 2019-03-01
 
 ### Enable CRT extensions
----
-
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the **CommerceRuntimeSamples.sln** solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
-2. Enable the current sample Hardware station extension by adding the following line to the **composition** section in the **HardwareStation.Extension.config** configuration file.
-
 
 #### DocumentProvider.CleanCashSample component
-    ``` xml
 
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
 1. Find the **Runtime.Extensions.DocumentProvider.CleanCashSample** project, and build it.
-    ```
 2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
-
 3. Copy the assembly file to the CRT extensions folder:
-3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
-
 
     - **Commerce Scale Unit:** Copy the file to the **\\bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
-    - Remove the following line to exclude the earlier Hardware station extension from deployable packages.
     - **Local CRT on Modern POS:** Copy the file to the **\\ext** folder under the local CRT client broker location.
 
-
-        ``` xml
 4. Find the extension configuration file for CRT:
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
 
-        ```
     - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
-
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-    - Add the following lines to include the current sample Hardware station extension in deployable packages.
-
 
 5. Register the CRT change in the extension configuration file.
-        ``` xml
 
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
     ``` xml
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
-        ```
     ```
 
-
-#### Update Modern POS
 #### Extension configuration file
 
-
-1. Open the **CloudPOS.sln** solution at **RetailSdk\\POS**.
 1. Find the extension configuration file for CRT:
-2. Disable the earlier POS extension:
-
 
     - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
-    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
-
 
 2. Register the CRT change in the extension configuration file.
-        ``` json
 
-        {
     ``` xml
-            "baseUrl": "FiscalRegisterSample"
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
-        }
     ```
-        ```
-
 
 ### Enable Hardware station extensions
-3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
-
 
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
-    ``` json
 
-    {
 #### CleanCash component
-        "extensionPackages": [
 
-            {
 1. Find the **HardwareStation.Extension.CleanCashSample** project, and build it.
-                "baseUrl": "Microsoft/AuditEvent.SE"
 2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** and **Interop.CleanCash\_1\_1.dll** assembly files.
-            }
 3. Copy the assembly files to the Hardware station extensions folder:
-        ]
 
-    }
     - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
-    ```
     - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
 
-
-#### Update Cloud POS
 4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
 
-
-1. Open the **ModernPOS.sln** solution under **RetailSdk\\POS**.
     - **Shared hardware station:** The file is under the IIS Hardware station site location.
-2. Disable the earlier POS extension:
     - **Dedicated hardware station on Modern POS:** The file is under the Modern POS client broker location.
 
-
-    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
 5. Add the following line to the **composition** section of the configuration file.
-    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
-
 
     ``` xml
-        ``` json
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-        {
     ```
-            "baseUrl": "FiscalRegisterSample"
 
-        }
 ### Enable Modern POS extension components
-        ```
-
 
 1. Open the **ModernPOS.sln** solution under **RetailSdk\\POS**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Visual Studio by using the **Run** command.
-3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
-
 
     > [!NOTE]
-    ``` json
     > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
-    {
 
-        "extensionPackages": [
 2. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
-            {
 
-                "baseUrl": "Microsoft/AuditEvent.SE"
     ``` json
-            }
     {
-        ]
         "extensionPackages": [
-    }
             {
-    ```
                 "baseUrl": "Microsoft/AuditEvent.SE"
-
             }
-#### Create deployable packages
         ]
-
     }
-Run **msbuild** for the whole Retail SDK to create deployable packages. Apply the packages via LCS or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
     ```
 
     > [!NOTE]
@@ -509,3 +435,80 @@ The migration process should consist of the following steps.
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
     ---
+
+2. Enable the current sample Hardware station extension by adding the following line to the **composition** section in the **HardwareStation.Extension.config** configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+    ```
+
+3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
+
+    - Remove the following line to exclude the earlier Hardware station extension from deployable packages.
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
+        ```
+
+    - Add the following lines to include the current sample Hardware station extension in deployable packages.
+
+        ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
+        ```
+
+#### Update Modern POS
+
+1. Open the **CloudPOS.sln** solution at **RetailSdk\\POS**.
+2. Disable the earlier POS extension:
+
+    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
+    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
+        ``` json
+        {
+            "baseUrl": "FiscalRegisterSample"
+        }
+        ```
+
+3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.SE"
+            }
+        ]
+    }
+    ```
+
+#### Update Cloud POS
+
+1. Open the **ModernPOS.sln** solution under **RetailSdk\\POS**.
+2. Disable the earlier POS extension:
+
+    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
+    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
+        ``` json
+        {
+            "baseUrl": "FiscalRegisterSample"
+        }
+        ```
+
+3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.SE"
+            }
+        ]
+    }
+    ```
+
+#### Create deployable packages
+
+Run **msbuild** for the whole Retail SDK to create deployable packages. Apply the packages via LCS or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

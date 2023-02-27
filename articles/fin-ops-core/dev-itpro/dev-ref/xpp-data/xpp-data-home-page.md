@@ -2,7 +2,7 @@
 title: X++ data selection and manipulation overview
 description: This article provides links to topics about X++ data selection and manipulation.
 author: josaw1
-ms.date: 06/16/2020
+ms.date: 09/28/2022
 ms.topic: overview
 audience: Developer
 ms.reviewer: josaw
@@ -52,5 +52,14 @@ You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. T
 The **executeQueryWithParameters** API can help [mitigate a SQL injection attack](../query-with-parameters.md).
 
 For information about using joins, see [Common misconception about Exists and Notexists joins](https://community.dynamics.com/365/financeandoperations/b/peter-s-x-developer-blog/posts/common-misconception-about-exists-and-notexists-joins).
+
+## SQL statement timeout
+
+All of the SQL statements listed above have a timeout set per statement, depending on the session type that issues them.  
+
+- **Interactive** session - 30 minutes.
+- **Non-interactive (batch, services, OData)** - 3 hours. 
+
+When a statement times out due to blocking or a larger than anticipated data volume or query plan issue, an exception of type **Exception::Timeout** will be thrown with the message *A time-out occurred in the database while the query was executing.* X++ allows a handle timeout exception and retry based on this exception. You can override the default timeout by calling [queryTimeout API](/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

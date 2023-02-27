@@ -2,7 +2,7 @@
 title: Show custom notifications in the POS
 description: This article explains how to add custom notifications in the point of sale (POS).
 author: josaw1
-ms.date: 09/17/2019
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -155,7 +155,7 @@ The notification detail entity has the following properties. Some of these prope
 
 ## Validate the customization
 
-1. Open the extended Cloud POS or Modern POS application.
+1. Open the extended Store Commerce application.
 
     The POS triggers the notification service, based on your notification scheduler configuration.
 
