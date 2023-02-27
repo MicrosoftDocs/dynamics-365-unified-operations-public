@@ -56,6 +56,7 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+| Globalization | Global withholding tax | The **Withholding tax** button is added to the header menu of **Purchase order** and **Vendor invoice**. Temporary withholding tax transactions can be calculated and displayed in these transactions. |
 
 ## Features turned on by default in this release
 
