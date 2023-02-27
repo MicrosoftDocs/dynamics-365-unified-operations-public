@@ -1,7 +1,7 @@
 ---
 title: Generate a VAT declaration in paper format (VAT 100 report)
 description: This article explains how to generate a VAT declaration in paper format (VAT 100 report) for the United Kingdom (UK).
-author: AdamTrukawka
+author: liza-golub
 ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
@@ -42,7 +42,8 @@ Before you start to generate the **VAT 100** report, make sure that the followin
     For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 2. The **ReportFieldLookup** application-specific parameters is set up for the **VAT Declaration Excel (UK)** format in ER. For more information, see [Set up application-specific parameters for the VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#declaration).
-3. To define the **VAT Declaration Excel (UK)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, enter the format information.
+3. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
+4. To define the **VAT Declaration Excel (UK)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, enter the format information.
 
 ## Generate a VAT 100 report
 
@@ -57,6 +58,8 @@ Follow these steps to generate a paper format of the **VAT 100** report.
     - **Latest corrections** – Include data of the corrections that aren't settled in the reporting period.
     - **Total list** – Include data of the first sales tax payment record and additional sales tax payment records for corrections in the reporting period.
 
-4. Select **OK** to generate the **VAT 100** report.
+4. Select **OK**.
+5. On the **Run in the background** FastTab, specify the parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+6. Select **OK** to generate the **VAT 100** report.
 
 Alternatively, you can generate the VAT statement for specific sales tax payment records by going to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments** and selecting **Print report** on the Action Pane.
