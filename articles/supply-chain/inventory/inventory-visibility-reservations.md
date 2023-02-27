@@ -19,6 +19,8 @@ ms.dyn365.ops.version: 10.0.21
 
 This article describes a typical use case for soft reservations and explains how to set them up in Inventory Visibility. It includes information about how to create soft reservations, offset them upon physical consumption, and adjust or unreserve specified inventory quantities.
 
+From version 10.0.33 onwards, you can also make soft reservation from Dynamics 365 Supply Chain Management sales orders which will post soft reservation requests to Inventory Visibility and validate AvailbleForReservation qtys in IV. It is advised that **all new Inventory Visibility soft reservation customers adopt this new version**. For more details, see [Further settings if Inventory Visibility integration with soft reservation on sales order lines is enabled](#further-settings-if-inventory-visibility-integration-with-reservation-offset-is-enabled)
+
 ## Sample use case for soft reservation
 
 Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. This functionality is useful for organizations where the following conditions exist:
@@ -50,8 +52,26 @@ To turn on the reservation feature, follow these steps.
 1. Sign in to Power Apps and open **Inventory Visibility**.
 1. Open the **Configuration** page.
 1. On the **Feature Management** tab, turn on the *OnHandReservation* feature.
-1. Sign in to your Supply Chain Management environment.
-1. Go to the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace and enable the *Inventory Visibility integration with reservation offset* feature (requires version 10.0.22 or later).
+1. Sign in to your Dynamics 365 Supply Chain Management environment.
+1. Go to the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace and enable **either the** 
+    - *Inventory Visibility integration with reservation offset* feature (requires version 10.0.22 or later).
+    - or a newer feature *Inventory Visibility integration with soft reservation on sales order lines* feature (requires 10.0.33 or later)
+
+> [!NOTE]
+> The two features are **not compatiable**, please only enable one. For new users implementing soft reservation feature with system version 10.0.33 and above, please turn on *Inventory Visibility integration with soft reservation on sales order lines* directly.
+> Existing soft reservation users who are currently on *Inventory Visibility integration with reservation offset* feature, if you don't have requirement to make direct soft reservation from Dynamics 365 SCM sales orders, you can stay with current version and if you do have such requirement you may consider migrating to the new feature. 
+
+### Further settings if *Inventory Visibility integration with soft reservation on sales order lines* is enabled
+
+1. Stay in your Dynamics 365 Supply Chain Management environment
+1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**, open the **Enable soft reservation** tab, select the soft reservation block level that is applicable to sales order lines.
+    - *Block* means you can not process the sales order to hard reservation (reserve physical) or further if there is no successful soft reservation to IV for this line.
+    - *Warning* will display a warning message is no soft reservation record if found but still allow you to proceed.
+    - *Ignore* will not do any soft reservation check and allows you to proceed
+1. There is no need to enable and set up offset modifier as offset for soft reservation is always enabled and will be triggered when the sales line if proceeded to hard reservation status or further if hard reservation step is skipped.
+
+### Further settings if *Inventory Visibility integration with reservation offset* is enabled
+
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**, open the **Reservation offset** tab and make the following settings:
 
     - **Enable reservation offset** – Set to *Yes* to enable this functionality.
@@ -59,6 +79,8 @@ To turn on the reservation feature, follow these steps.
 
         - *On order* – Orders that have an *On order* status will send an offset request when they're created. The offset quantity will be the quantity of the created order (line).
         - *Reserve* – Orders that have a *Reserve* status will send an offset request when they're either order reserved or physically reserved. When you offset at the *Reserve* status, the order will send an offset request at any new inventory status that's closest to reserved picked (for example, pick, packing-slip posted, or invoiced). This behavior occurs even if you skip the reservation in Supply Chain Management and continue to another inventory status (for example, if you skip from release to warehouse to pick and pack). The request will be triggered only once. If it's been triggered at pick, it won't duplicate the offset when a packing slip is posted. The offset quantity will be the same as the quantity of the inventory transaction status when the offset was triggered (in other words, *Reserved ordered*/*Reserve Physical*, or a later status, on the corresponding order line).
+
+## Common settings in Inventory Visibility app
 
 1. Sign back in to the Inventory Visibility app, go to the **Configuration** page, and then, on the **Soft Reservation** tab, review the default soft reservation hierarchy. Add new dimensions to the hierarchy as required.
 1. In the **Set Soft Reservation Mapping** section, view the default settings. By default, the soft-reserved inventory quantities will be recorded against the `softreservephysical` physical measure of the data source `iv`. The *Available for reservation* calculated measure is mapped to `availabletoreserve`. If you want to update the `availabletoreserve` calculated measure, go to the **Configuration** page, and then, on the **Calculated Measure** tab, expand and modify the calculated measure.
@@ -134,7 +156,38 @@ Authorization: "Bearer {access_token}"
 
 A successful soft reservation request returns a *soft reservation ID* for each reservation record. The soft reservation ID isn't a unique identifier for an individual soft reservation record, but a combination of the product ID and dimension values that are associated with the soft reservation request. You can record the soft reservation ID on the order line when you sync the successfully reserved orders to Supply Chain Management or another ERP system for offset.
 
-### <a name="offset-scm"></a>Offset soft reservations in Supply Chain Management
+## <a name="reserve-scm"></a>Using soft reservation and offset in Dynamics 365 Supply Chain Management
+
+You are able to trigger soft reservation from Dynamics 365 Supply Chain Management sales order and make offset back to Inventory Visibility when the order lines are hard reserved (in the status of reserve physical, reserve ordered, picked, etc).
+
+### Guide on *Inventory Visibility integration with soft reservation on sales order lines*
+
+With this feature you can post soft reservation and also offset soft reservation from sales order lines in Dynamics 365 SCM. The offset capabilities in this feature supports both sales lines that are created **internally** and **externally**.
+
+1. Sign in into Supply Chain Management
+1. Go to **Sales and marketing \> Sales Orders \> All Sales Orders**.
+1. On the Action Pane, select **New**, proceed to create a new order and new sales lines. Make sure to populate product ID,site, warehouse and quantity. Specify other inventory dimension values if applicable.
+1. You have two options to make soft reservation from sales orders
+    - Create soft reservations on the sales order level to include all the lines in the order. To do this select **Inventory Visibility Integration \> Soft Reservation**. Choose **Reserve entire order directly** to make instant soft reservation API call to Inventory Visibility service, or **Reserve entire order by batch** to put the sales lines' reservation requests in a batch queue which is associated with a sync batch job between Dynamics 365 to Inventory Visibiloity approximately once per minute.
+    - Create soft reservation on specific line. To do this, select the specific line, go to **Inventory \> Inventory Visibility Integration \> Soft reserve**. On the new pop up **Inventory service reservation details** screen, choose either reserve direct or by batch. On the details screen you will see a list of columns with quantity changes recorded
+        - **Unreserved** - this column records the quantity that has not been soft reserved
+        - **Soft reserve success** - this is the quantity that have been successfully soft reserved
+        - **Batch reserve in progress** - this is the quantity that have been added to soft reservation batch queue
+        - **Direct reserve in progress** - this is the quantity that have triggered instant soft reservation API call to inventory visibility
+        - **Failed - not enough stock** - this is the quantity that has been soft reserved failed due to unavailable stock
+        - **Failed - other reason** - this is the quantity that has been soft reserved due to all other reasons including failed API processing/internet issue, etc.
+        - **Offset quantity** - this is the total offset quantity on the line that includes both offset success and in progress quantities.
+        - **Pending to offset quantity** - this is the quantity on the line that has skipped soft reservation and directly proceeded to hard reservation/further physical inventory consumptions
+1. You can also revert a successful soft reservation by selecting **Resert reservation directly** or **Revert reservation by batch** from the same menu on Sales order or sales line level
+1. Go back to the sales order lines. On the **Line details \> General \> Inventory Visibility Integration** you can view and edit the soft reservation block level of sales line if needed. If your company wide's default setting is block or warning, we strongly advise you not to ignore the soft reservation validation to avoid risk of oversell unless permitted in your business.
+1. On the same place you can also see the Soft reservation status on the line
+1. Once a soft reservation is success, soft reservation id will be automatically returned and recorded per sales line.
+1. As by default the soft reservation offset trigger point is hooked at hard reservation (reserve physical/reserve ordered) or beyond status. Sales lines that have a valid soft reservation id populated and is at the right trigger status will automatically be added to offset batch queue
+1. You can check failed to offset record in Dynamics 365 SCM **Inventory Management\>Periodic tasks\>Inventory Visibility integration**. Failed offset might be caused by incorrect soft reservation id, or internet issue, broken system connection, etc.
+
+### Guide on *Inventory Visibility integration with reservation offset*
+
+You cannot trigger directly soft reservation within Dynamcis 365 SCM with this feature, this feature supports to offset sales order lines that are orginally created **externally only** of Dynamics 365 SCM and also soft reserved to IV outside of Dynamics 365. When these externally soft reserved sales lines are replicated into Dynamics 365 SCM, offsets might required from Dynamics 365 SCM to Inventory Visibility.
 
 You can offset a soft-reserved quantity after the quantity on an order is physically deducted in Supply Chain Management or another ERP system. Inventory Visibility offers out-of-box soft reservation offset integration with Supply Chain Management.
 
@@ -142,8 +195,8 @@ Follow these steps to offset a soft reservation.
 
 1. Sign in to Supply Chain Management.
 1. Go to **Sales and marketing \> Sales Orders \> All Sales Orders**.
-1. On the Action Pane, select **New**.
-1. Re-create the external sales order, and add a sales line that uses the exact same product ID, organization, site, warehouse, and dimensions values.
+1. On the Action Pane, select **New**. Proceed to create a new order and new sales line.
+1. Recreate the external sales order, and add a sales line that uses the exact same product ID, organization, site, warehouse, and dimensions values.
 1. On the **Sales order lines** FastTab, select the sales line that you just entered, and then, on the toolbar, select **Inventory \> Reservation ID**.
 1. Follow one of these steps:
 
@@ -153,6 +206,7 @@ Follow these steps to offset a soft reservation.
 1. Select **OK**.
 1. While the same sales line is still selected, physically reserve the ordered quantity by selecting **Inventory \> Reservation** on the toolbar of the **Sales order lines** FastTab.
 1. If you've previously set the **Reservation offset modifier** field to *Reserved*, the offset will be triggered when the order line has a status of *Reserve physical* or *Reserve ordered*. A batch job runs once a minute to sync offset requests from Supply Chain Management to Inventory Visibility.
+1. You can check failed to offset record in **Inventory Management\>Periodic tasks\>Inventory Visibility integration**. Failed offset might be caused by incorrect soft reservation id, or internet issue, broken system connection, etc.
 
 > [!NOTE]
 > For transaction statuses that include a specified reserve offset modifier, the transaction update will offset the corresponding reservation record when all the following conditions are met:
