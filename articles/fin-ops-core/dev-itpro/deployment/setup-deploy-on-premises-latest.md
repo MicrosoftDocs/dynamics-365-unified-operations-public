@@ -424,7 +424,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. On the file share machine, run the following command.
 
     ```powershell
-    .\Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
+    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
 1. If you want to change the default share names and base paths, update the **FileShares** section in the **ConfigTemplate.xml** file.
