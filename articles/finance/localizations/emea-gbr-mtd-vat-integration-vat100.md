@@ -59,7 +59,7 @@ Follow these steps to generate a paper format of the **VAT 100** report.
     - **Total list** – Include data of the first sales tax payment record and additional sales tax payment records for corrections in the reporting period.
 
 4. Select **OK**.
-5. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+5. On the **Run in the background** FastTab, specify the parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 6. Select **OK** to generate the **VAT 100** report.
 
 Alternatively, you can generate the VAT statement for specific sales tax payment records by going to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments** and selecting **Print report** on the Action Pane.
