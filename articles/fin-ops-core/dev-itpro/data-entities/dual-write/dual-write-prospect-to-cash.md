@@ -37,6 +37,9 @@ In Sales, go to **Settings \> Administration \> System settings \> Sales**, and 
 - The **Use system pricing calculation** system option is set to **Yes**.
 - The **Discount calculation method** column is set to **Line item**.
 
+** Note that from version 10.0.34 changes are introduced to support an alternate approach to pricing for sales quotation and sales orders where finance and operations becomes the price master an no price related calculations are performed in Dynamics 365 Sales when integrated. These changes are in effect once feature XXX is enabled in Finance and Operations and new maps are running. The feature changes the prerequisite settings in Sales and part of the user interaction to ensure that Finance and Operations are in control. that For more information see.....
+
+
 ### Sites and warehouses
 
 In Supply Chain Management, the **Site** and **warehouse** columns are required for quotation lines and order lines. If you set the site and warehouse in the default order settings, those columns will automatically be set when you add a product to a quotation line or an order line. 
@@ -64,6 +67,8 @@ If you are also using the Field Service solution, make sure to re-enable the **Q
 5. Select the **Quote Line** menu item.
 6. Go to the **Data Services** section and select the **Allow quick create** checkbox.
 
+** Note that from version 10.0.34 changes are introduced to support Sales Quotation lifecycle management. Sales Quotation lifecycle management requires selective features to be enabled in Finance and Operations and that new maps are running. For more information see.....
+
 ## Sales orders
 
 Sales orders can be created in either Sales or Supply Chain Management. If you create a sales order in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a sales order in Supply Chain Management, it's synced to Sales in real time. Note the following points:
@@ -85,6 +90,9 @@ If you sync from Supply Chain Management to Sales, you get the following result:
 
 + **Supply Chain Management:** Quantity = 3, line discount amount = $3.33, sales charge = –$0.01
 + **Sales:** Quantity = 3, per-line discount = (3 × $3.33) + $0.01 = $10.00
+
+
+** Note that from version 10.0.34 changes are introduced to improve the sales order status integration and pricing for sales quotation and sales orders when integrated. Both requrie selective features to be enabled in Finance and Operations and that new maps are running. For more information see.....
 
 ## Dual-write solution for Sales
 
