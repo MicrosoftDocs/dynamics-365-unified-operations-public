@@ -27,17 +27,14 @@ These articles explain how to determine, diagnose, and fix issues that you might
 
 Additionally the following troubleshooting articles are integrated into the finance product documentation These articles documents how to troubleshoot a specific topic or subject within the finance area.
 
+Accounts Payable
+
+- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md##Exception-processing)
+
 Budgeting
 
 - [Position budgeting troubleshooting](budgeting/position-budgeting-set-up-issues.md)
 
-Finance Insights
-
-- [Troubleshoot Finance insights setup issues](finance-insights/finance-insights-troubleshooting-faq.md)
-
-Accounts Payable
-
-- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md##Exception-processing)
 
 Cash and bank management
 
@@ -55,6 +52,10 @@ General Ledger
 - [How do I set up balancing financial dimensions?](general-ledger/set-up-balance-dimensions.md)
 - [Open financial journal templates in Office](general-ledger/open-fincl-jrnls-in-office.md)
 - [Default financial dimensions on financial journals](general-ledger/dimension-default-values.md)
+
+Finance Insights
+
+- [Troubleshoot Finance insights setup issues](finance-insights/finance-insights-troubleshooting-faq.md)
 
 Financial Reporting
 
