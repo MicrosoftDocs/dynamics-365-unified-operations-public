@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: sericks007
-ms.date: 08/09/2022
+ms.date: 02/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -52,13 +52,13 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Feedback and bugs | Yes | Yes | No |
 | My subscription | Yes | Yes | No |
 | Office 365 | Yes | Yes | Yes: Azure Active Directory or Microsoft admin portal. |
-| Impact analyis | No | Yes | No |
+| Impact analysis | No | Yes | No |
 | Total economic impact estimator | No | Yes | No |
 | Service requests | No | Yes | Yes: [Self-service deployments](../deployment/infrastructure-stack.md) |
 | SharePoint integration | Yes | Yes | No |
 | Configuration and data manager | No | Yes | No |
 | Process data packages | No | Yes | Yes: [Data Import Export Framework (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
-| Envrionment upgrade | No | Yes | Yes: [One Version](../lifecycle-services/oneversion-overview.md) service updates are available. |
+| Environment upgrade | No | Yes | Yes: [One Version](../lifecycle-services/oneversion-overview.md) service updates are available. |
 | Infrastructure estimator | Yes | No | No |
 | License sizing | Yes | No | No |
 | Usage profiler | Yes | No | No |
@@ -77,7 +77,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We're removing the following list of cipher suites to comply with our current security protocols.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Replaced by another feature?**   | Beginning January, 2023, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, it may impact your third party integrations which are not adhering to our standard cipher suites. |
+| **Replaced by another feature?**   | Beginning January, 2023, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, it may impact your third party integrations, that aren't adhering to our standard cipher suites. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | Cloud deployments |
 | **Status**                         | Deprecated. Customers must upgrade their servers before January, 2023. For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
@@ -102,7 +102,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Horizontally-scrolling pages align to out-dated layout patterns which has known usability and accessibility issues.  |
+| **Reason for deprecation/removal** | Horizontally-scrolling pages align to out-dated layout patterns that have known usability and accessibility issues.  |
 | **Replaced by another feature?**   | No, but other tab styles are still available. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
@@ -115,7 +115,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are removing support for XML URL resolution since this has been identified as a potential security vulnerability. This means that external resources associated with XML files will no longer be resolved.  |
+| **Reason for deprecation/removal** | We're removing support for XML URL resolution since this has been identified as a potential security vulnerability. This means that external resources associated with XML files will no longer be resolved.  |
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -131,7 +131,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
+| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 
@@ -140,7 +140,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
-| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Removed |
@@ -149,8 +149,8 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
-| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Reason for deprecation/removal** | We're deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Removed |
@@ -174,7 +174,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | There is no control to execute this event. |
+| **Reason for deprecation/removal** | There's no control to execute this event. |
 | **Replaced by another feature?**   | Yes, move existing methods subscribed to by the **OnDBSynchronize** event to a SysSetup extended class. |
 | **Product areas affected**         | Database synchronization |
 | **Deployment option**              | All |
@@ -210,7 +210,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
-| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Deprecated: Planned removal date is October 2021. |
@@ -219,8 +219,8 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
-| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Reason for deprecation/removal** | We're deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Deprecated: Planned removal date is October 2021. |
@@ -231,7 +231,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating the Globalization portal in LCS as this feature has been superseded by other LCS-based services. |
+| **Reason for deprecation/removal** | We're deprecating the Globalization portal in LCS as this feature has been superseded by other LCS-based services. |
 | **Replaced by another feature?**   | Yes, this feature is replaced by LCS [Issue search](../lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
 | **Product areas affected**         | Globalization portal in LCS|
 | **Deployment option**              | Cloud deployment |
@@ -353,7 +353,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become on by default with the October 2021 release and is currently targeted to be mandatory in April 2022. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
+| **Status**                         | The new grid control is mandatory with the October 2022 release (version 10.0.29). The **forceLegacyGrid()** API is currently still being honored if the old grid is still needed; however, this API is targeted to be deprecated by the October 2023 release. When the deprecation of this API is announced, it will be available for at least 12 months before no longer being available. |
 
 ### Personalization without saved views 
 
