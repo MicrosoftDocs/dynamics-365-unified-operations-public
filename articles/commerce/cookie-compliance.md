@@ -19,6 +19,7 @@ ms.assetid:
 # Cookie compliance
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 
