@@ -11,26 +11,24 @@ ms.custom: bap-template
 
 # Entrance code to tax integration 
 
-his section introduces the code to enter the real **Tax Integration** world.
+This article introduces the first step of integrating a new transaction to tax integration. Before going into the real tax integration world, it needs some code to inject the new logic and bypass the legacy tax engine. This article introduces how to realize the entrance code.
 
-## Locate the code point to bypass legacy tax engine
+## Locate a code point
 
-To integrate a new transaction, the first step is to find the code point to inject the new logic and bypass the original core tax logic.
+First, we need to locate a code point for the entrance code. This code point should meet below conditions:
 
-This code point should meet below conditions:
-
-1. Before tax is calculated by the original tax engine so as to bypass it. And it should only bypass tax calculation but no other extra process.
+1. It should be before tax is calculated by the legacy tax engine so as to bypass it. And it should only bypass tax calculation but no other extra process.
 2. The code should be in a context where it contains the basic transaction information to initialize a `TaxIntegrationDocumentObject` object. The object can be initialized in 2 ways:
-   - The transaction header table record buffer it self.
+   - The transaction header table record itself.
    - Table Id and record ID to distinguish the header table record of the transaction.
 
-Usually, if the transaction to be integrated is already supported by the legacy tax engine, it should have a specific derived classes of `TaxCalculation` class. Like `TaxSales` for sales order and `TaxPurch` for purchase order. This is a ideal code point. Currently, the integrated transactions like purchase order and sales order are all done in this way. Please refer to `TaxPurch.calculateTax()` and `TaxSales.calc()`.
+Usually, if the transaction to be integrated is already supported by the legacy tax engine, it should have a specific derived class of `TaxCalculation` class, like `TaxSales` for sales orders and `TaxPurch` for purchase orders. This is an ideal code point. Currently, transactions like purchase orders and sales orders are all done in this way. Please refer to `TaxPurch.calculateTax()` and `TaxSales.calc()`.
 
-If the transaction is not supported by legacy tax, then extra effort should be taken to create the subclass of `Tax`. We will not discuss it here.
+If the transaction is not supported by legacy tax, then some extra effort should be taken to create the subclass of `Tax`. This article does not cover this scenario.
 
 ## Implement the entrance of tax integration
 
-Take the entrance code of the *Sales order* as an example:
+Take the entrance code of the *Sales order* as an example,
 `TaxSales.xpp`:
 
 ```X++
@@ -48,15 +46,18 @@ Take the entrance code of the *Sales order* as an example:
     }
 ```
 
-- `Tax::isTaxIntegrationEnabledForBusinessProcess()` is used to determine whether to use **Tax Integration** for current transaction. Then the original logic can be bypassed. This switch can be controlled by a drop-down list at:
-  - **Tax** > **Setup** > **Tax configuration** > **Tax calculation** > **General** > **Feature setup** > **Business process**
+- `Tax::isTaxIntegrationEnabledForBusinessProcess()` is used to determine whether to use **Tax Integration** for a transaction. This line is a switch so we can enable or disable a transaction for tax integration from the front end.
+  -  This switch can be controlled by a drop-down list at **Tax** > **Setup** > **Tax configuration** > **Tax calculation** > **General** > **Feature setup** > **Business process**
   ![BusinessProcessDropDown.jpg](./media/Business-process-drop-down.jpg)
-- TaxIntegrationBusinessProcess is an Enum type, currently has 5 values: Sales, Purchase, Inventory(used for *Transfer order*), Free text invoice and Journal. Choose the business process according to the transaction to be integrated.
+
+- TaxIntegrationBusinessProcess is an Enum type. It currently has 5 values: Sales, Purchase, Inventory(used for *Transfer order*), Free text invoice, and Journal.
+  - Add a new business process enum value for your new transaction if it is not covered by the 5 above.
+
 - All logic is wrapped in `this.calcUsingTaxIntegration()`.
 
 ### The calcUsingTaxIntegration method
 
-This is the code to call `TaxIntegrationFacade::calculate(document)`. Take the *Purchase order* as an example.
+This is the code that prepares a `TaxIntegrationDocumentObejct` and calls `TaxIntegrationFacade::calculate(document)`. Take the *Purchase order* as an example.
 
 ```X++
     private TaxAmount calcUsingTaxIntegration()
@@ -86,29 +87,28 @@ This is the code to call `TaxIntegrationFacade::calculate(document)`. Take the *
 
 The steps are:
 
-- Constructs a `TaxIntegrationDocumentObject` object. Like mentioned before, there are 2 ways to contruct the document object. The first one is recommended as it can avoid update conflict when update fields to transaction table in data persistence activity. In above example, it it using the first method.
-  - The transaction header table record buffer it self. Call method `TaxIntegrationDocumentObject::constructWithRecord(Common _record)`
-  - Table Id and record ID to distinguish the header table record of the transaction. Call method `TaxIntegrationDocumentObject::construct(RefTableId _tableId, RefRecId _recId)`
-- Sets basic information to `TaxIntegrationDocumentObject` by the setter methods of it. This part is done by `this.setFieldsForTaxIntegrationDocumentObject(document)` method in above example code.
-- Call `TaxIntegrationFacade::calculate(document)` to trigger the real tax integration flow. This interface is the only entrance to the **Tax Integration** world. The supported transaction can easily be found by the references of `TaxIntegrationFacade::calculate(document)`.
-- Gets the `amountIncludingTax` map for compatibility to existed tax adjustment function.
-- Call `this.finalizeCalculationForTaxIntegration()` method to handle the `TaxUncommitted` stuff. This step is only necessary when transaction is using `TaxUncommitted`.
-- Returns the tax amount.
+- Construct a `TaxIntegrationDocumentObject` object. There are 2 ways to construct the document object.
+  - The first one is `TaxIntegrationDocumentObject::constructWithRecord(Common _record)`. It received a transaction header table record as its parameter. This one is **recommended** as it can avoid conflict when updating fields to the transaction table in data persistence activity.
+  - The second one is `TaxIntegrationDocumentObject::construct(RefTableId _tableId, RefRecId _recId)`. It receives a table ID and a record ID as its parameters to distinguish a header table record of the transaction. But the header table record will be re-selected from the database, so potential conflict may happen.
+- Set basic information to `TaxIntegrationDocumentObject` by its setter methods. This part is done by `this.setFieldsForTaxIntegrationDocumentObject(document)` method in the above example.
+- Call `TaxIntegrationFacade::calculate(document)` to trigger the real tax integration flow.
+- Get the `amountIncludingTax` map for compatibility to existed tax adjustment function.
+- Call `this.finalizeCalculationForTaxIntegration()` method to handle the `TaxUncommitted` stuff. This step is only necessary when the transaction is using `TaxUncommitted`.
+- Return the tax amount.
 
-### Set fields for document object
+### Set fields for the document object
 
-The `this.setFieldsForTaxIntegrationDocumentObject()` method is to initialized basic data for a taxable document, which will be used in following activities.
+The `this.setFieldsForTaxIntegrationDocumentObject()` method is to initialize basic data fields for a taxable document, which will be used in the later activities.
 
-Actually, some of the data can also be retrieved and set in data retrieval activity. But they are set here because of following reasons:
+Most of the data fields are recommended to be retrieved in the data retrieval activity. But some of them are set here because of the following reasons:
 
-1. The data is fundamental and is used before data retrieval activity. For example the `headingTableId` and `headingRecId`.
-2. The data can only be accessed in this context, like the legacy tax object `_document.setLegacyTax(this);`
-3. It is convenient to set some particular data here, since it can leverage local method and methods in subclass of TradeCalcTax so as to avoid duplicate codes in data retrieval class. For example, the document date, invoice date and delivery date.
-Please set them according to the new transaction before the facade is called. Usually, data can be retrieved by an object of **TradeCalcTax** in the context of the entrance point. Ex: `SalesFormLetter` for Sales order is an object of `SalesCalcTax_Sales`, `purchCalcTax` for Purchase order, and `custInvoiceCalcTax` for Free text invoice.
+1. The field is fundamental and is used before data retrieval activity. For example the `headingTableId` and `headingRecId`.
+2. The field can only be accessed in this context like the tax object is set by `_document.setLegacyTax(this);`
+3. It is convenient to set some particular fields here since it can leverage local methods and methods in the subclass of `TradeCalcTax` so as to avoid duplicate code with the data retrieval class. For example, the document date, invoice date, and delivery date.
 
-If the data in only need copy from database to document object and no specific logic needed, it is recommended to set them in data retrival activity.
+Please set them according to the new transaction before the facade is called. Usually, data can be retrieved by an object of **TradeCalcTax** in the context of the entrance point. Ex: `SalesFormLetter` for sales orders is an object of `SalesCalcTax_Sales`, `purchCalcTax` for purchase orders, and `custInvoiceCalcTax` for free text invoices.
 
-Below is example from `TaxPurch.xpp`:
+Below is an example from `TaxPurch.xpp`:
 
 ```X++
     protected void setFieldsForTaxIntegrationDocumentObject(TaxIntegrationDocumentObject _document)
