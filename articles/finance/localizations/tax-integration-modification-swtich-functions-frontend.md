@@ -1,6 +1,6 @@
 ---
-title: Modification on switch functions and frontend
-description: This article explains the modifications on switch functions and frontend to integrate a new transaction.
+title: Modification on switch functions and front end
+description: This article explains the modifications on switch functions and front end to integrate a new transaction.
 author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
@@ -9,23 +9,24 @@ ms.date: 11/14/2022
 ms.custom: bap-template
 ---
 
-# Modification on switch functions and frontend
+# Modification on switch functions and front end
 
 [!include [banner](../includes/banner.md)]
 
-## Using switch functions to enable a new transaction
+Till now, most logic to integrate a new transaction is done. Still, some work is needed on a switch function and frontend stuff to enable the code created.
 
-Most logic to integrate a new transaction is done, still need to handle some switch functions and frontend stuff to enable the logic created above.
+## Switch functions to enable the new transaction
 
-- In `Tax.xpp`: add the header and line table of new transactions according to the business process. Make method return true for them.
+There is a switch function to control if tax integration should be applied to a specific transaction, header table, and line table. Developers should extend it to enable the new transaction.
 
+- In `Tax.xpp`: add the header and line table of new transactions according to the business process. Extend the method to return true for the header and line tables of the new transaction.
   ```X++
-      /// <summary>
+    /// <summary>
     /// Checks whether Tax Integration is enabled.
     /// </summary>
     /// <param name = "_refTableId">The table id.</param>
     /// <returns>Whether Tax Integration is enabled.</returns>
-    internal static boolean isTaxIntegrationEnabledForTable(RefTableId _refTableId)
+    public static boolean isTaxIntegrationEnabledForTable(RefTableId _refTableId)
     {
         if (TaxIntegrationFlight::instance().isEnabled()
             && TaxIntegrationTaxServiceParameters::find().IsEnable)
@@ -61,9 +62,11 @@ Most logic to integrate a new transaction is done, still need to handle some swi
     }
   ```
 
-## Modification on F&O frontend
+## Modification on F&O front end
 
-- Refuse to edit the tax group and item tax group on the transaction form. Take sales quotation as an example, in the `init()` method of the form:
+Uptake the front-end modification to adapt to tax integration business logic.
+
+- In the transaction form, make "Override sales tax" control visible. And do not allow editing tax group and item tax group. Take sales quotation as an example, in the `init()` method of the `SalesQuotationTable` form:
 
   ```X++
         if (Tax::isTaxIntegrationEnabledForBusinessProcess(TaxIntegrationBusinessProcess::Sales))
@@ -77,7 +80,7 @@ Most logic to integrate a new transaction is done, still need to handle some swi
 
   ![TaxGroup.png](./media/tax-group.png)
 
-- Find all button that can trigger tax calculation and reread the data source after calculate. Becasue during calculation of tax integration, several fields are updated (ex. tax group), the data source of the form also need update to reflect the changes. Take free text invoice as an example, below are codes from `CustFreeInvoice.xpp`:
+- Find all buttons that can trigger tax calculation and reread the data source after tax calculation. Because during the calculation of tax integration, several fields are updated (ex. tax group), the data source of the form also needs a refresh to reflect the changes. Take free text invoices as an example, below code is from `CustFreeInvoice.xpp`:
 
   ```X++
     private void refreshDataSourceForTaxIntegration()
@@ -121,7 +124,5 @@ make a method for the form, then call this method once tax calculation is trigge
   ![TaxOnLine.png](./media/tax-on-line.png)
 
 If there are other buttons that will trigger tax calculation, call the refresh in the clicked() method of those buttons too.
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
