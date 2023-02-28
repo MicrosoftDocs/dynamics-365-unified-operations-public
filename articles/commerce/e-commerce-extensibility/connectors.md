@@ -19,6 +19,7 @@ ms.assetid:
 # Configure and enable connectors
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 
