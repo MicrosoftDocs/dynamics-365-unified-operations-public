@@ -29,7 +29,7 @@ Additionally the following troubleshooting articles are integrated into the fina
 
 Accounts Payable
 
-- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md##Exception-processing)
+- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#Exception-processing)
 
 Budgeting
 
@@ -38,13 +38,13 @@ Budgeting
 Cash and bank management
 
 - [Troubleshoot cash flow forecasting setup](cash-bank-management/cash-flow-forecasting-tsg.md)
-- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md##Resolve-issues-with-transactions-that-can't-be-settled)
+- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#Resolve-issues-with-transactions-that-can't-be-settled)
 
 General Ledger
 
 - [Journal posting failure because of imbalance](general-ledger/posting-fail-imbalance.md)
 - [Why can't I reverse this transaction?](general-ledger/cant-reverse-transctns.md)
-- [Change the accounting or reporting currency](add-change-acctg-rprtg-crrncy.md)
+- [Change the accounting or reporting currency](general-ledger/add-change-acctg-rprtg-crrncy.md)
 - [Change or reassign a ledger calendar](general-ledger/change-mdfy-clndr-to-ledger.md)
 - [Reverse settings on journals and lines](general-ledger/rvrs-settgs-on-jrnls-lines.md)
 - [Year-end close missing opening balances](general-ledger/yec-mssng-open-blnces.md)
