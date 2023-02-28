@@ -21,7 +21,22 @@ Organizations that have many companies (legal entities) and a large product port
 
 ## Get the cross-company product sharing public preview
 
-To sign up for the public preview for this feature, email the environment ID of your environment in Microsoft Dynamics Lifecycle Services (LCS) to the [Cross-Company Product Sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that is responsible for the feature will send you a follow-up email to get in contact, evaluate whether your business is a match for the functionality, and finally evaluate whether you can join the preview.
+To sign up for the public preview for this feature, email the environment ID in Microsoft Dynamics Lifecycle Services (LCS) to the [Cross-Company Product Sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that is responsible for the feature will send you a follow-up email to get in contact, evaluate whether your business is a match for the functionality, and finally evaluate whether you can join the preview.
+
+## Get started with cross-company data sharing
+
+Information on cross-company data sharing can be found on [Cross company data sharing](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharinghttps://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing)
+
+Review the defition of single and duplicate record sharing:
+- **Duplicate record sharing** – Each company has its own copy of the shared record. Every time that product information is edited in any company, the update is immediately replicated to every other company's copy of the record.
+- **Single record sharing** – Just one shared record exists in the database, and all relevant companies can view and edit that record.
+
+For specifically sharing product information across companies, it is applied in the following way:
+- Released products table (**Inventtable**) is setup as **single record sharing**, meaning that just one shared record exists for each product in the database, and all relevant companies can view and edit that record.
+- For related tables (most of them policies for handing the product such as barcode setup, cost group etc) you must decide if you would like them to be **single record sharing** (only one record/table across companies) or **duplicate record sharing** (e.g. barcode setup will be different across every company). This allows you to have different policies for the product on the different companies. 
+
+ > [!IMPORTANT]
+> If a field is included in a table that is part of a single record sharing policy, the field and its table will also be shared as a single record, unless duplicate record sharing is specified by a policy that was previously enabled. Therefore, duplicate record sharing policies must be enabled before single record sharing policies. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products.
 
 ## Prepare your system to enable cross-company data sharing for products
 
@@ -35,21 +50,44 @@ Before you enable cross-company data sharing for products, work through the foll
 
 ## Set up the products and product-related information sharing policies
 
-To share products and product-related information, you must create and set up your sharing policies on the **Configure cross-company data sharing** page. Each sharing policy establishes a set of tables and fields that are shared. To get started quickly, you can edit the sharing policy templates that are provided and then use them to set up your own default sharing policies. For more information about how to use a template, see [Configure financial cross-company data sharing](../../fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md).
+To share products and product-related information, you must create and set up your sharing policies on the **Configure cross-company data sharing** page. Each sharing policy establishes a set of tables and fields that are shared. 
 
-You can use either of the following sharing policies to share product information:
+1. First, setup your duplicate record sharing policies. We recommend you setup duplicate record sharing for tables handling policies and related information: 
+- Click **New**
+- Enter a **Name** for your policy. For example, set to "Product policies - duplicate sharing"
+- Leave the parameter **Master company data sharing policy **set to **No** (this parameter does not take effect for **duplicate record sharing** policies)
+- Select the companies that will be sharing the selected tables under **Child companies**
+- Use **+Add** to find the tables that you would like to be shared with duplicate record sharing. Note there is only a set of tables that have been enabled for record sharing. If you would like to share any other table that you cannot select from the +Add, you must create a request at Microsoft support for considering implementing sharing in your desired table. 
+- For each table added, set **Save data per company** to Yes and then click **Add table**. 
+- Continue for all the desired tables. 
+- Save the policy
+- Create as many duplicate record sharing policies as needed. 
 
-- **Duplicate record sharing** – Each company has its own copy of the shared product record. Every time that product information is edited in any company, the update is immediately replicated to every other company's copy of the product record.
-- **Single record sharing** – Just one shared record exists for each product in the database, and all relevant companies can view and edit that record.
+2. Review your duplicate record sharing policies. Review to make sure you did not forget any table that you want to reference. 
 
-When you share product information, we recommend that you use a single record sharing policy, because it uses database resources more efficiently, especially for companies that have large product portfolios. However, for related data and policies that indicate how a product is managed in different companies, we recommend that you use a duplicate record sharing policy. In this way, you can manage products differently in each company where they are used (for example, for production-related policies such as production pools).
+ 3. Create your single record sharing policy for products:
 
-> [!IMPORTANT]
+The Released product table (Inventtable) must be setup for single record sharing:
+- Click **New**
+- Enter a **Name** for your policy. For example, set to "Products - single record sharing"
+- Set the parameter **Master company data sharing policy** set to **Yes** (this parameter is needed for **single record sharing** policies)
+- Select the **Master company**. This will be the company that will be used as the master, regarding ...(WHAT EXACTLY? CHECK WITH LARS-BO)
+- Select the companies that will be sharing the selected tables under **Child companies**
+- Use **+Add** and select Inventtable
+- Review all the fields on Inventtable, specially the ones that are referencing another table to make sure that either you have included them as part of a duplicate record sharing policy previously or you are acknowledging that they will be single record shared, and that table will also be single record shared.
+
+ > [!IMPORTANT]
 > If a field is included in a table that is part of a single record sharing policy, the field and its table will also be shared as a single record, unless duplicate record sharing is specified by a policy that was previously enabled. Therefore, duplicate record sharing policies must be enabled before single record sharing policies. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products.
 
-### Templates for duplicate record sharing of product information
 
-The following product-related templates are available for duplicate record sharing:
+BEATRIZ COMMENT: WE HAVE AN ISSUE WITH THE TEMPLATE ON LCS AND IT DID NOT GET PUBLISHED - CAN WE COMMENT THIS WHOLE SECTION UNTIL IT IS PUBLISHED CORRECTLY? COULD TAKE SOME TIME - I AM WRITING BEFORE THE STEPS FOR DOING IT MANUALLY
+------------------
+To get started quickly, you can edit the sharing policy templates that are provided and then use them to set up your own default sharing policies. For more information about how to use a template, see [Configure financial cross-company data sharing](../../fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md).
+------------------
+
+## Tables for duplicate record sharing of product information
+
+The following product-related tables are available for duplicate record sharing (they can also be single record sharing):
 
 - Barcode setup
 - Batch attribute
@@ -81,17 +119,9 @@ The following product-related templates are available for duplicate record shari
 - Tax rate type
 - Warehouse item setup
 
-### Templates for single record sharing of product information
+## Tables for single record sharing of products
 
-The following product-related template is available for single record sharing:
-
-- Products
-
-## Shared product-related tables and fields
-
-Many tables and fields are related to products. Most of them are included in the template policies that are provided.
-
-To enable fields and tables to be shared, you must specify sharing metadata for each table. If a table isn't included in the template, you can add it to a cross-company sharing policy and share it only if sharing metadata has previously been set by Microsoft. If you want to share a table that isn't currently set up for sharing, submit a request to Microsoft Support.
+- Released products (Inventtable) is the only table that is allowed to only be single record shared.
 
 ## <a name="limitations"></a>Limitations and notes that apply to shared products
 
@@ -100,6 +130,7 @@ This section provides notes and summarizes the limitations that apply when you s
 ### Item templates
 
 You can't apply item templates to child companies, because the `SysRecordTemplateTable` table isn't shared. Therefore, the **Apply template** command is unavailable in child companies.
+
 
 ### Currencies and base prices
 
