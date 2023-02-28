@@ -484,9 +484,9 @@ Either single or double quotation marks can be used to delimit strings in X++. T
 
 | X++ | C#         | Comments   |
 |---------|-----|--------------------------------------|
-| `myString1 = "He said \"yes\".";` <br>Result: <br>`He said "yes".`  | (Same as for X++.)  | The escape character enables you to embed string delimiters inside strings.   |
-| `myString2 = 'He said "yes".';` <br>Result: <br>`He said "yes".`  | C# syntax does not allow for single quotation marks to delimit strings.    | For strings that may be seen by the user, it is considered a best practice to use the escape character instead of the single quotation marks as shown in the example.   |
-| `myString3 = "He said 'yes'.";` <br>Result: <br>`He said 'yes'.` | (Same as for X++.) | In X++, the single quotation marks are not treated as delimiters unless the string starts with a single quotation mark delimiter. In C# the single quotation mark has no special meaning for strings, and it cannot be used to delimit strings. In C# the single quotation mark is the required delimiter for literals of type `System.Char`. X++ has no character data type. |
+| `myString1 = "They said \"yes\".";` <br>Result: <br>`They said "yes".`  | (Same as for X++.)  | The escape character enables you to embed string delimiters inside strings.   |
+| `myString2 = 'They said "yes".';` <br>Result: <br>`They said "yes".`  | C# syntax does not allow for single quotation marks to delimit strings.    | For strings that may be seen by the user, it is considered a best practice to use the escape character instead of the single quotation marks as shown in the example.   |
+| `myString3 = "They said 'yes'.";` <br>Result: <br>`They said 'yes'.` | (Same as for X++.) | In X++, the single quotation marks are not treated as delimiters unless the string starts with a single quotation mark delimiter. In C# the single quotation mark has no special meaning for strings, and it cannot be used to delimit strings. In C# the single quotation mark is the required delimiter for literals of type `System.Char`. X++ has no character data type. |
 | `str myString4 = 'C';` <br>Here the single quotation is a string delimiter. | `char myChar4 = 'C';` <br>Here the single quotation mark is a `System.Char` delimiter, not a `System.String` delimiter. | X++ has no data type that corresponds to `System.Char` in the .NET Framework. An X++ string that is limited to a length of one is still a string, not a character data type. |
 
 ### Example 4: Single Escape Character
