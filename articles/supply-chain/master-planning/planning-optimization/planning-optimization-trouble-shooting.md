@@ -60,6 +60,16 @@ If the Planning Optimization job frequently times out, then consider the followi
         - **Forecast plan time fence**
         - **Action time fence**
         - **Calculated delays time fence**
+    1. On the **Master plans** page, set to No if not applicable for the master plan - do not leave set to Yes if it is not needed for your business processes:
+          - **Use shelf life dates**
+          - **Finite capacity**
+          - **Include on-hand inventory**
+          - **Include inventory transactions**
+          - **Include requests for quotations**
+          - **Include sales quotations**
+          - **Include supply forecast**
+          - **Include demand forecast**
+          - **Include requisitions**
     1. On the **Master plans** page, check whether the time fences have been overwritten and consider whether the values could be smaller while still fulfilling your business needs for the various time fences. Check the following settings for each plan:
         - **Coverage**
         - **Explosion**
@@ -70,10 +80,30 @@ If the Planning Optimization job frequently times out, then consider the followi
         - **Approved requisitions time fence (days)**
 - Only use finite capacity when necessary. For plans that don't need it, set **Finite capacity** to *No* on the **Master plans** page.
 - Reduce the scheduling time by following the instructions given in [Improve scheduling engine performance](../scheduling-engine-performance.md).
-- Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*.
+- Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*. It is possible to easily identify products that have not been transacted on for a period of time - may be obsolete and you may not need to plan them again - by using the form **Change lifecycle state for obsolete products**.
 - For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
 - Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
 - Review your item coverage settings. For items that use multiple item coverage lines to apply the same settings for all warehouses at the same site, replace those lines with a single line for the site (with the **Warehouse** column blank). That setting will then apply to all warehouses at that site.
+
+## Data export timeout
+
+The following message will appear if the data export times out for Planning Optimization:
+
+_Master planning job timed out when exporting the data to perform the calculation. This can be a termporary issue - try running the job again later. If you see this message often then please review your steup to limit the amount of data used for planning, as indicated in (this page)_
+
+Please follow the recommendations:
+1. **Coverage time fence**: reduce to the less possible according to your business needs. It is the value that will have the most impact on the data export timeout
+2. Review other time fences: on the **Master plans** page, check whether the time fences have been overwritten and consider whether the values could be smaller while still fulfilling your business needs for the various time fences. Check the following settings for each plan:
+        - **Coverage**
+        - **Explosion**
+        - **Forecast plan**
+        - **Capacity**
+        - **Action message**
+        - **Calculated delays**
+        - **Approved requisitions time fence (days)**
+3. Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*. is possible to easily identify products that have not been transacted on for a period of time - may be obsolete and you may not need to plan them again - by using the form **Change lifecycle state for obsolete products**.
+4. Use a plan filter to select the items that should be planned for a certain plan, if not all items are needed, as indicated on [Use plan filters](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/plan-filters#apply-a-plan-filter)
+
 
 ## No planned orders are created
 
