@@ -142,25 +142,16 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following feature:
     - *Inventory Visibility Integration*.
 
-1. We recommend that you also enable one of the following optional features (but *do not enable both*). For more information about these features, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
-    - *Inventory Visibility integration with reservation offset* – Requires version 10.0.22 or later.
-    - *Inventory Visibility integration with soft reservation on sales order lines* – Requires version 10.0.33 or later. If you haven't used Inventory Visibility before, then we recommend using this feature rather than the previous one.
-
-    > [!IMPORTANT]
-    > These two features are incompatible with each other, so only enable one of them. We recommend *Inventory Visibility integration with soft reservation on sales order lines* for all new installations that are running Supply Chain Management version 10.0.33 or later. If you are already using the *Inventory Visibility integration with reservation offset* feature, then you can continue to do so if you don't need to make direct soft reservation from Supply Chian Management sales orders, but you can also change to the newer feature if you prefer, provided you meet the system requirements.
-
 1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
     - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
     - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you have received advice from Microsoft Support or are otherwise certain that you need to change it.
 
-1. If you enabled the optional *Inventory Visibility integration with reservation offset* feature, open the **Reservation offset** tab and make the following settings:
-    - **Enable reservation offset** – Set to *Yes* to enable this functionality.
-    - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made on Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following options:
-        - *On order* – For the *On transaction* status, an order will send an offset request when it's created. The offset quantity will be the quantity of the created order.
-        - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs. The offset quantity will be the quantity where the inventory transaction status changed from *On order* to *Reserved ordered* (or later status) on the corresponding order line.
-
 1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+
+1. Several optional features are available to enhance the functionality of Inventory Visibility. Decide whether you'd like to use one or more of these and, if so, set them up now (you can also set them up later). The following optional features are available:
+    - **Soft reservations and offsets** – Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. For details about how to enable and set up this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+    - **Support for warehouse management processes (WMS) items** – Lets you use WMS items with Inventory Visibility. For details about how to enable and set up this feature, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
