@@ -31,35 +31,15 @@ ms.dyn365.ops.version: 10.0.17
 
 Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 
-To view and process goods through the shipping container page, go to **Landed cost \> Shipping containers \> All shipping containers**. The **All shipping containers** page shows a list of all available shipping containers. You can use the buttons on the Action Pane to create, delete, and work with shipping containers. Select any shipping container in the list to view its details on the **Shipping containers** page.
+## Create shipping containers for voyages
 
-The upper part of the shipping container details page shows shipping container and costing information. The **Lines** section shows the folios, items, and purchase orders or transfer orders that are attached to the container.
+You create a shipping container by opening or creating the voyage where you will use it and then assigning the purchase order lines that it will contain. Follow these steps to create a shipping container for a voyage.
 
-## Create shipping containers
-
-You create shipping containers from the record for the voyage where you will use them.
-
-### Turn the shipping container batch mode feature on or off
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
-If you'd like to be able to use batch mode when creating and updating shipping containers for Landed cost, then you must enable this feature for your system. Creating and updating shipping containers in background mode can provide better system performance when working with shipping containers that contain a large number of shipping lines.
-
-Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Transportation management*
-- **Feature name:** *(Preview) Enable shipping container creation and update in batch mode*
-
-### Create a shipping container
-
-Follow these steps to create a shipping container for a voyage.
-
-1. Go to **Landed cost \> Voyages \> All voyages**.
 1. Do one of the following steps:
-    - Select **New** from the Action Pane to create a new voyage. Fill out the **Create voyage** dialog as needed and then select **OK** to open the **Voyage editor**.
-    - Open an existing voyage and then select **Voyage editor** from the Action Pane.
-1. Use the **Filters** at the top of the Voyage editor page to find the inbound order that you will create the shipping container for.
-1. On the **Inbound orders** FastTab, select the inbound order that you will create the shipping container for.
+    - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** from the Action Pane and then fill out the **Create voyage** dialog as needed and select **OK**. To edit an existing voyage, select it and then select **Voyage editor** from the Action Pane. In either case, the **Voyage editor** page now opens showing your new or selected voyage.
+    - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order you want to create a voyage and container for and then, on the Action Pane, open the **Purchase** tab and, from the **Landed cost** group, select **Create new voyage**. Fill out the **Create voyage** dialog as needed and select **OK** to open the **Voyage editor** page.
+1. Use the **Filters** at the top of the **Voyage editor** page to find the inbound order that you will create the shipping container for. If you created the voyage from the **All purchase orders** page, then the purchase order you selected there will already be selected in the filter here, but you are still free to adjust the filters any way you want to.
+1. The **Inbound orders** FastTab shows all of the qualifying purchase orders that match your filter settings. Select an inbound order that you want to include in the new shipping container.
 1. On the **Lines to select** FastTab, mark the check box for each purchase order line that you will include in the new container.
 1. Repeat the previous three steps until you have found and selected all of the order lines that you want to include in your new container.
 1. From the **Lines to select** FastTab toolbar, select **Add to staging list**.
@@ -70,14 +50,23 @@ Follow these steps to create a shipping container for a voyage.
 
     [<img src="media/create-shipping-container.png" alt="The Create shipping container dialog." title="The Create shipping container dialog" width="720" />](media/create-shipping-container.png)
 
-1. If you'd like to create the shipping container in batch mode (which can improve performance if your container includes a large number of lines) then open the **Run in the background** tab and set **Batch processing** to *Yes*. (This tab is only available if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system, as described in the previous section.)
+1. If you'd like to create the shipping container in batch mode (which can improve performance if your container includes a large number of lines) then open the **Run in the background** tab and set **Batch processing** to *Yes*. (This tab is only available if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system. For details about how to turn this feature on or off, see [Turn on the Landed cost module for your system](landed-cost-enable.md))
 
     > [!NOTE]
     > The background processing won't activate if the transfer quantity is less than the total quantity of the related purchase order line.
 
 1. Select **OK** to create the container and add your selected purchase order lines to it.
 
-## Action Pane
+> [!NOTE]
+> If a container already exists for your selected voyage, then you can add new purchase order lines to it by selecting **Add to new existing shipping container** on the **Add staging list or shipping container** page.
+
+## View shipping container lists and details
+
+To view and process goods through the shipping container page, go to **Landed cost \> Shipping containers \> All shipping containers**. The **All shipping containers** page shows a list of all available shipping containers. You can use the buttons on the Action Pane to delete and manage shipping containers. Select any shipping container in the list to view its details on the **Shipping containers** page.
+
+The upper part of the shipping container details page shows shipping container and costing information. The **Lines** section shows the folios, items, and purchase orders or transfer orders that are attached to the container.
+
+## Shipping containers Action Pane
 
 The Action Pane on the **All shipping containers** and **Shipping containers** pages provides buttons that let you work with a selected shipping container. Each button performs a single action. The Action Pane also includes tabs, each of which, in turn, provides a set of related buttons. Except where noted, all buttons and tabs that are described in the following subsections are available both in the list view (that is, on the **All shipping containers** page) and in the detailed view (that is, on the **Shipping containers** page).
 
@@ -110,7 +99,7 @@ The following table describes the buttons that are available on the **General** 
 | Tracking | View or update shipment tracking. |
 | Goods in transit orders | You can open the **Goods in transit** page directly from the container. That page shows the goods-in-transit records for the selected shipping container only. |
 
-## Header view
+## Shipping container Header view
 
 To open the **Header** view, open a shipping container, and then select the **Header** tab in the upper right of the shipping container heading.
 
@@ -183,7 +172,7 @@ The following table describes the settings that are available on the **Other** F
 | Examination certificate expiry date | The date when the examination certificate will expire. |
 | Examination certificate number | The certificate number of the certificate that was issued after an examination was done. |
 
-## Lines view
+## Shipping container Lines view
 
 To open the **Lines** view, open a shipping container, and then select the **Lines** tab in the upper right of the shipping container heading.
 
