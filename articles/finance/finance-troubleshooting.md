@@ -23,11 +23,11 @@ For a collection of troubleshooting articles grouped by topic, please see the fo
 
 - [Microsoft Dynamics 365 Finance troubleshooting](/troubleshoot/dynamics-365/finance/welcome-finance)
 
-These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
+These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
 
-Additionally the following troubleshooting articles are integrated into the finance product documentation These articles documents how to troubleshoot a specific topic or subject within the finance area.
+Additionally, the following troubleshooting articles are integrated into the finance product documentation. These articles documents how to troubleshoot a specific topic or subject within the finance area.
 
-Accounts Payable
+Accounts payable
 
 - [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#Exception-processing)
 
@@ -40,7 +40,7 @@ Cash and bank management
 - [Troubleshoot cash flow forecasting setup](cash-bank-management/cash-flow-forecasting-tsg.md)
 - [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#Resolve-issues-with-transactions-that-can't-be-settled)
 
-General Ledger
+General ledger
 
 - [Journal posting failure because of imbalance](general-ledger/posting-fail-imbalance.md)
 - [Why can't I reverse this transaction?](general-ledger/cant-reverse-transctns.md)
@@ -52,11 +52,11 @@ General Ledger
 - [Open financial journal templates in Office](general-ledger/open-fincl-jrnls-in-office.md)
 - [Default financial dimensions on financial journals](general-ledger/dimension-default-values.md)
 
-Finance Insights
+Finance insights
 
 - [Troubleshoot Finance insights setup issues](finance-insights/finance-insights-troubleshooting-faq.md)
 
-Financial Reporting
+Financial reporting
 
 - [Troubleshooting issues opening Report Designer](general-ledger/financial-reporting-getting-started.md#troubleshooting-issues-opening-report-designer)
 - [Troubleshoot report designer issues with Event viewer](general-ledger/financial-reporting-getting-started.md#troubleshoot-report-designer-issues-with-event-viewer)
@@ -65,7 +65,7 @@ Financial Reporting
 
 ## Frequently asked questions
 
-Collections of frequently asked questions (FAQs) are integrated into the Finance documentation. Each of these articles includes multiple FAQs for a specific feature topic or area.
+Collections of frequently asked questions (FAQs) are integrated into the finance documentation. Each of these articles include multiple FAQs for a specific feature topic or area.
 
 The following FAQ articles discuss issues specific to Finance:
 
@@ -75,7 +75,7 @@ The following FAQ articles discuss issues specific to Finance:
 - [Financial Reporting Data mart resets FAQ](../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?context=/dynamics365/context/finance)
 - [Financial reporting FAQ](general-ledger/financial-reporting-faq.md)
 
-The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including Finance:
+The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including finance:
 
 - [Address books FAQ](../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json)
 - [Client FAQ](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/supply-chain/toc.json)
