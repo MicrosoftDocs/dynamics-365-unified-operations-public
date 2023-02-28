@@ -93,7 +93,11 @@ Only terminated workers can be deleted from Human Resources. Follow these steps 
 
 + Delete any associated checklists.
 
-    To delete the checklists, select the **Checklists** option on the **Worker** page.
+    To delete the checklists, select the **Checklists** option on the **Worker** page.+ Delete the Party in the Address book
+    
++ Delete the Party in the Address book
+
+     If the Global Address Book Parameters option **Delete parties with no roles** is enabled and the party is NOT associated to another role (ex: vendor, customer, contact) the associated party record will be deleted automatically when the worker is deleted.  If this option is not enabled, the user will need to manually delete the party in the address book. 
 
 Compensation isn't assigned to contractors. Therefore, those steps can be skipped in the preceding process.
 
