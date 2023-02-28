@@ -13,36 +13,35 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-The flow of **Tax Integration** is showed as below chart:
+**Tax integration** is a framework designed to replace the legacy tax calculation engine by calling tax calculation service.
+This article introduces the basic flow of **tax integration**.
 
 ![IntegrationFlow.png](./media/tax-integration-flow.png)
 
-## Core tax and tax integration
-
-The left part in the chart is the original tax calculation engine, which is called **Core Tax**. It is by passed by the new **Tax Integration** framework which calls the new calculation engine **Tax Calculation Service**.
+The left part of the chart is the legacy tax calculation engine. It is bypassed by **Tax Integration** to call the new calculation engine **Tax Calculation Service**.
 
 All the modules in the big square make up the **Tax Integration**.
 
-## Entrance code to tax integration
+## Entrance to tax integration
 
-`TaxIntegrationFacade` holds the real tax integration flow. However, we need an entrance to enter the tax integration flow.
-This entrance code constructs `TaxIntegrationDocumentObject` and prepares some basic information which is used in the following integration flow.
+`TaxIntegrationFacade` class contains most of the code and functions of tax integration. However, some code is needed to enter the tax integration flow before `TaxIntegrationFacade`, which is the entrance to tax integration.
+This entrance code constructs a `TaxIntegrationDocumentObject`, which is passed to `TaxIntegrationFacade`. It also prepares some basic information, which is used in the following integration actions.
 
 ## TaxIntegrationFacade
 
-`TaxIntegrationFacade` controls the whole tax integration flow. It calls a bunch of classes with names like `TaxIntegration***ActivityOnDocument`. A `TaxIntegrationDocument` object is passed from activity to activity. And these activities carry out their action on the object in order.
+`TaxIntegrationFacade` class realizes and controls the real flow of tax integration. It calls a bunch of classes with names like `TaxIntegration***ActivityOnDocument`. A `TaxIntegrationDocument` object is passed from activity to activity. And these activities carry out their actions on the object in turn.
 
-The activities showed in the chart are all document level activities with suffix **OnDocument**. Actually, there is also line level activities that work on `TaxIntegrationLineObject`.
+The activities shown in the chart are all document-level activities with the suffix **OnDocument**. There are also line-level activities that work on `TaxIntegrationLineObject`, which suffix is *OnLine*.
 
-Simple introduction to these activites:
+Here is a simple introduction to these activities:
 
-- Setting retrieval activity(TaxIntegrationSettingRetrievalActivityOnDocument): Retrieves the settings that will impact tax calculation and save them in the `TaxIntegrationDocumentObject`.
-- Data retrieval activity(TaxIntegrationDataRetrievalActivityOnDocument): Prepares the metadata needed by tax calculation, copy them to a `TaxIntegrationDocumentObject`.
-- Calculation activity(TaxIntegrationCalculationActivityOnDocument): Transforms `TaxIntegrationDocumentObejct` to a request, sends the request to tax calculation service and receives the response from it.
-- Error handling activity(TaxIntegrationErrorHandlingActivityOnDocument): Handles the error message returned from tax calculation service.
+- Setting retrieval activity(TaxIntegrationSettingRetrievalActivityOnDocument): Retrieves the settings that will impact tax calculation. Then, it saves all the settings into the `TaxIntegrationDocumentObject`.
+- Data retrieval activity(TaxIntegrationDataRetrievalActivityOnDocument): Prepares the metadata needed by tax calculation. Then it copies them to the `TaxIntegrationDocumentObject`.
+- Calculation activity(TaxIntegrationCalculationActivityOnDocument): Transforms the `TaxIntegrationDocumentObejct` to a request Then, sends the request to the tax calculation service and parses the response from it.
+- Error handling activity(TaxIntegrationErrorHandlingActivityOnDocument): Handles the error message returned from the tax calculation service.
 - Tax ID activity(TaxIntegrationTaxIdActivityOnDocument): Processes logic regarding **Multiple VAT ID** feature.
 - List code activity(TaxIntegrationListCodeActivityOnDocument): Processes logic regarding **List Code** feature.
 - Currency exchange activity(TaxIntegrationCurrencyExchangeActivityOnDocument): Processed logic regarding **Currency Exchange rate/Rounding/Penny difference adjustment** feature.
-- Data persistence activity(TaxIntegrationDataPersistenceActivityOnDocument): Persists the tax calculation result and other information (VAT ID, list code and etc.) that need to be saved to the database.
+- Data persistence activity(TaxIntegrationDataPersistenceActivityOnDocument): Persists the tax calculation result and other information (VAT ID, list code, etc.) that need to be saved to the database.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
