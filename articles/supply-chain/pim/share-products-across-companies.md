@@ -25,7 +25,7 @@ To sign up for the public preview for this feature, email the environment ID in 
 
 ## Get started with cross-company data sharing
 
-Information on cross-company data sharing can be found on [Cross company data sharing](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharinghttps://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing)
+Information on cross-company data sharing can be found on [Cross company data sharing](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/srs-overview)
 
 Review the defition of single and duplicate record sharing:
 - **Duplicate record sharing** – Each company has its own copy of the shared record. Every time that product information is edited in any company, the update is immediately replicated to every other company's copy of the record.
@@ -47,6 +47,21 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Enable policies in the correct order.** Duplicate shared policies must be enabled before single record sharing policies.
 - **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
 - **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this topic, and prepare your system as required.
+
+## Set up your system for product sharing
+
+1. Once you have contacted Microsoft, if accepted for the preview, Microsoft will enable a flight for you
+2. Only perform the following steps if your enviornment is 10.0.31, you can skip if it is 10.0.32 or later 
+2.1 Go to the form sysflighting and enable the following flights:
+- DbSyncEnableSingleRecordSharing
+- EnableSysSharing
+2.2 Do a database synchronization
+3. Go to **feature management** form and enable the following features:
+- (Preview) Master company data sharing
+- (Preview) Cross-company data sharing for products
+
+Now your system should be setup for starting to create sharing policies.
+ 
 
 ## Set up the products and product-related information sharing policies
 
@@ -80,10 +95,11 @@ The Released product table (Inventtable) must be setup for single record sharing
 > If a field is included in a table that is part of a single record sharing policy, the field and its table will also be shared as a single record, unless duplicate record sharing is specified by a policy that was previously enabled. Therefore, duplicate record sharing policies must be enabled before single record sharing policies. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products.
 
 
-BEATRIZ COMMENT: WE HAVE AN ISSUE WITH THE TEMPLATE ON LCS AND IT DID NOT GET PUBLISHED - CAN WE COMMENT THIS WHOLE SECTION UNTIL IT IS PUBLISHED CORRECTLY? COULD TAKE SOME TIME - I AM WRITING BEFORE THE STEPS FOR DOING IT MANUALLY
+<!-- We have an issue with the templates, until we solve it we can comment this:
 ------------------
 To get started quickly, you can edit the sharing policy templates that are provided and then use them to set up your own default sharing policies. For more information about how to use a template, see [Configure financial cross-company data sharing](../../fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 ------------------
+-->
 
 ## Tables for duplicate record sharing of product information
 
@@ -242,7 +258,8 @@ The tables that are related to engineering versions aren't shared, because they 
 
 ### Sites and warehouses
 
-Sites and warehouses aren't shared. The `InventLocation` and `InventSite` tables aren't shared. We expect that you will keep sites and warehouses at the company level.
+Sites and warehouses can be shared. Make sure to include its tables `InventLocation` (for warehouses) and `InventSite` (for sites) are included in a sharing policy
+If note shared, you will keep sites and warehouses at the company level and they must be created in every company.
 
 ## Existing products
 
