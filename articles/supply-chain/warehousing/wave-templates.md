@@ -72,7 +72,17 @@ To set up a wave template, follow these steps:
     > [!NOTE]
     > If more than one template is created for a warehouse, the number in the **Wave template sequence** field indicates the position of the template in the sequence in which the templates are applied when the template’s criteria is met. You can select **Move up** or **Move down** to rearrange the sequence of templates.
 
-1. In the **Site** and **Warehouse** fields, select the site and warehouse that the wave template will create waves and picking work for.
+1. On the **Warehouse selection** FastTab, set the following fields to specify the warehouse and site where the wave template will apply:
+
+    - **Warehouse selection**  – Select one of the following values:
+
+        - *All* – Use the wave template for all warehouses where a more specific wave template hasn't been assigned.
+        - *Warehouse group* – Use the wave template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
+        - *Warehouse* – Use the wave template only for the specific warehouse that's selected in the **Warehouse** field.
+
+    - **Site** and **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the site and warehouse where the wave template applies. If you select the warehouse first, the site will be filled in automatically. If you select the site first, the warehouse list will be filtered so that it shows only warehouses at that site.
+    - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the wave template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
+
 1. If you want to automate wave processing, make the following settings as needed:
 
     - **Automate wave creation** - Set this to *Yes* to automatically create a wave when a sales order, production order, or kanban is released to the warehouse.
@@ -92,7 +102,7 @@ To set up a wave template, follow these steps:
 
 1. Set **Wave notification policy** to the policy you want to use for generating notifications related to waves that use this template. For an example of a wave notification policy, see [Wave execution notifications](wave-execution-notifications.md).
 
-1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You cannot remove the predefined wave methods, however, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
+1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You cannot remove the predefined wave methods. However, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
 
     - Select a method on the **Remaining methods** pane, and then select the **Left** arrow to add it to the **Selected methods** pane.
     - To change the sequence, select a method, and then select **Up** or **Down** arrows.

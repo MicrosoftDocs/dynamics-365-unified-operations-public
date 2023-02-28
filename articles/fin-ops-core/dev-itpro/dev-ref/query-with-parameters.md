@@ -2,7 +2,7 @@
 title: Mitigate a SQL injection attack
 description: This article explains how to mitigate SQL injection attacks in X++.
 author: pvillads
-ms.date: 12/01/2020
+ms.date: 02/21/2023
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -39,10 +39,14 @@ public str GetFirstName(str name)
 
     // Get the first record:
     results.next();
-    statement.close();
-
+   
     // Harvest the results.
     return results.getString(1);
+   
+   // Close statement
+    statement.close();
+    
+    return result;
 }
 ```
 
@@ -91,9 +95,11 @@ public str GetFirstName(str name)
 
     // Capture the results:
     results.next();
-    statement.close();
+  
+    // Close statement
+      statement.close();
 
-    return results.getString(1);
+    return results;
 }
 ```
 

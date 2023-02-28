@@ -26,6 +26,10 @@ ms.assetid:
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
+## DTS will stop supporting Dynamics AX 2012 by March 31, 2023
+
+Mainstream and extended support for Dynamics AX 2012 has ended. DTS will end support for Dynamics AX 2012 R3 by March 31, 2023. 
+
 ## Visual Studio Code extension
 
 The Visual Studio Code extension was created for Dynamics 365 Business Central users who develop extensions in AL by using the AL language extension. The Visual Studio Code extension provides a DTS integration into the AL environment for Business Central developers.

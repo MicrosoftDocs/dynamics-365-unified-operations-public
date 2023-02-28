@@ -47,15 +47,10 @@ When system-directed cluster picking is enabled, warehouse workers are presented
 
 ## Enable the System-directed cluster picking feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use system-directed cluster picking, two features must be turned on for your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature statuses and enable them if necessary. Enable the following features, in the following order:
 
-- **Module** - Warehouse management
-- **Feature name** - System directed cluster picking
-
-This feature also requires enabling a dependent feature. The dependent feature is:
-
-- **Module** - Warehouse management
-- **Feature name** - Organization-wide system directed work sequencing
+1. *Organization-wide system directed work sequencing* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
+1. *System directed cluster picking* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 ## Set up system-directed cluster picking
 
@@ -73,9 +68,9 @@ Cluster profiles control how the system creates each cluster. If different clust
     - **Activate positions** - Select **Yes**. This option determines whether the position names are automatically generated based on the position name setup. If this option is set to **No**, the license plate ID for the position is used.
     - **Number of positions** - Select **2**. This field determines the maximum number of positions that the cluster can have (that is, the maximum number of boxes, totes, and so on).
     - **Position name** - Select **Numeric** so that positions are named by using continuous numbers. If you select **Alphabetical**, the positions are named in alphabetical order.
-    - **Break cluster at** - Select **Put**. This field determines when the cluster is broken. 
+    - **Break cluster at** - Select **Put**. This field determines when the cluster is broken.
     - **Sort verification type** - Select **Position scan**. This field determines whether the put-to-position step is verified.
-        
+
 6. On the **Cluster sorting** FastTab, you define sorting criteria by creating a new line and enter the following information:
 
     - **Sequence number** - Select **1**. This field determines the sequence that the system sorts by. A value is entered automatically, but you can change it if needed.

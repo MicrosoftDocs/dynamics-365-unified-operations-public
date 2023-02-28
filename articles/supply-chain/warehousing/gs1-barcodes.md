@@ -101,16 +101,11 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 > [!WARNING]
 > The default GS1 policies have been tested to work without unexpected behavior. However, customization of GS1 policies that are linked to menu items can cause unexpected behavior, because the flow might not expect some data to be available at a particular time.
 
-## Turn on the GS1 feature
+## Turn on GS1 features for your system
 
-Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+To use GS1 barcodes, the *Scan GS1 barcodes* feature must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Scan GS1 barcodes* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Scan GS1 barcodes*
-
-### Turn on the Enhanced parser for GS1 barcodes feature
-
-If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature. This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
+If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature (as of Supply Chain Management version 10.0.32, this feature is on by default). This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
 
 - It follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid according to the specification.
 - It doesn't require that you to set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.

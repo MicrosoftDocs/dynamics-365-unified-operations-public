@@ -2,7 +2,7 @@
 title: Testing and performance issues
 description: This article describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 07/09/2018
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ A production environment can be used for UAT (for example, as a "dry run" for go
 
 The UAT should be done after you deploy officially built deployable packages. It should not be done on packages that are manually built in Microsoft Visual Studio. The reason is that there is no way to prove what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a specific build.
 
-If you use Modern POS/Cloud POS, make sure that you use the correct user roles. You should test by signing in as both a manager and a cashier who has lower privileges.
+If you use the Store Commerce app or Store Commerce for web, make sure that you use the correct user roles. You should test by signing in as both a manager and a cashier who has lower privileges.
 
 ## Performance
 ### Channel performance

@@ -4,7 +4,7 @@
 title: Omni-channel payments overview
 description: This article provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/04/2020
+ms.date: 02/03/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 8.1.3
 # Omni-channel payments overview
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 
@@ -76,9 +75,9 @@ The following components and setup steps are required:
 - **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
 - **Payment connector availability:** When an order is recalled, the payment tender lines that are recalled together with the order include the name of the payment connector that was used to create the authorizations that are associated with that order. When the order is fulfilled, the Payments SDK tries to use the same connector that was used to create the original authorization. Therefore, a payment connector that has the same merchant properties must be available for capture. 
 - **Card types:** For omni-channel scenarios to work properly, each channel must have the same setup for tender types that can be used for omni-channel. This setup includes payment method IDs and card type IDs. For example, if the **Cards** tender type has an ID of **2** in the online store setup, it should have the same ID in the retail store setup. The same requirement applies to card type IDs. If card number **12** is set to **VISA** in the online store, the same ID should be set up for the retail store. 
-- The Retail Modern POS for Windows or Android with built-in hardware station
+- The Store Commerce app for Windows, Android, or iOS with built-in Hardware Station.
     -or-
-- Modern POS for iOS or Cloud POS with connected shared hardware station. 
+- Store Commerce for web with connected shared Hardware Station. 
 
 ### Basic principle supporting omni-channel payments
 
@@ -111,9 +110,9 @@ Before you start, make sure that the following prerequisites are in place:
 - You have a reference storefront where the Adyen connector is configured.
 - The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this setting is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
 - The Adyen payment connector is configured for the Houston POS register.
-- The Retail Modern POS for Windows or Android with built-in hardware station
+- The Store Commerce app for Windows, Android, or iOS with built-in Hardware Station.
     -or-
-- Modern POS for iOS or Cloud POS with connected shared hardware station. 
+- Store Commerce for web with connected shared Hardware Station.
 
 Follow these steps to run the scenario.
 

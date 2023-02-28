@@ -1,8 +1,8 @@
 ---
-title: Add custom controls to Modern POS (MPOS) transaction pages
-description: This article explains how to add a new custom control on a transaction page by using the screen layout designer.
+title: Add custom controls to Store Commerce transaction pages
+description: This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 author: josaw1
-ms.date: 11/22/2017
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,9 +15,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 24411
 ---
 
-# Add custom controls to Modern POS (MPOS) transaction pages
+# Add custom controls to Store Commerce transaction pages
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 
 You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This article explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
@@ -391,7 +393,7 @@ You can add more information to a transaction page by using custom controls. You
 
 ## Validate the customization
 
-1. Sign in to Modern POS by using **000160** as the operator ID and **123** as the password.
+1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
 2. On the **Welcome** screen, select the **Current transaction** button.
 3. Add any item to the transaction, and then select the line item that you added.
 

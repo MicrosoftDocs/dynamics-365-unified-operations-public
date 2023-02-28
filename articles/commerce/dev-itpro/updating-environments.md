@@ -2,7 +2,7 @@
 title: Update code and environments for Commerce projects
 description: This article describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 07/09/2018
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -171,7 +171,7 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
     - After deployment, does LCS show the expected deployment history together with the correct package names?
     - After deployment, do the LCS environment page and Commerce show the correct and expected version numbers?
-    - Can Modern Point of Sale (MPOS) offline mode be used during downtime of Commerce? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
+    - Can Store Commerce app offline mode be used during downtime of Commerce? Package deployments will cause downtime. If Store Commerce app offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update the Store Commerce app.)
     - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
     - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
     - The "Initialize Commerce scheduler" job should be run.

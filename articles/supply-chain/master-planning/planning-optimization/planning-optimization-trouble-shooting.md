@@ -4,7 +4,7 @@
 title: Troubleshoot Planning Optimization
 description: This article describes how to fix issues that you might encounter while working with Planning Optimization.
 author: t-benebo
-ms.date: 05/07/2020
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Troubleshoot Planning Optimization 
+# Troubleshoot Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
 
@@ -38,9 +38,54 @@ Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availabi
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
+## Installation of the Planning Optimization add-in fails due to user account issues
+
+To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
+
+> Current user does not have enough permission or missing licenses on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
+
+> Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
+
+**Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started.md#prerequisites).
+
+## Planning Optimization job times out
+
+If the Planning Optimization job frequently times out, then consider the following options:
+
+- Adjust the time fences to make them as small as possible while still fulfilling your business needs.
+    1. Check the following settings for each of the coverage groups on the **Coverage groups** page:
+        - **Coverage time fence (days)**
+        - **BOM explosion time fence (days)**
+        - **Capacity scheduling time fence (days)**
+        - **Forecast plan time fence**
+        - **Action time fence**
+        - **Calculated delays time fence**
+    1. On the **Master plans** page, check whether the time fences have been overwritten and consider whether the values could be smaller while still fulfilling your business needs for the various time fences. Check the following settings for each plan:
+        - **Coverage**
+        - **Explosion**
+        - **Forecast plan**
+        - **Capacity**
+        - **Action message**
+        - **Calculated delays**
+        - **Approved requisitions time fence (days)**
+- Only use finite capacity when necessary. For plans that don't need it, set **Finite capacity** to *No* on the **Master plans** page.
+- Reduce the scheduling time by following the instructions given in [Improve scheduling engine performance](../scheduling-engine-performance.md).
+- Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*.
+- For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
+- Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
+- Review your item coverage settings. For items that use multiple item coverage lines to apply the same settings for all warehouses at the same site, replace those lines with a single line for the site (with the **Warehouse** column blank). That setting will then apply to all warehouses at that site.
+
+## No planned orders are created
+
+If master planning ran by didn't create any orders, check the following settings:
+
+- Make sure the items you're expecting to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
+- If you're running a filtered plan, make sure there aren't any typos in your filter values (see also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter)).
+- Make sure that there's demand for the items you're expecting master planning to create supply for.
+
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
-When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine will fail if they are triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
+When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine will fail if they're triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
 **Fix**: Cancel all master planning batch jobs that were created for the deprecated master planning engine.
 
@@ -58,7 +103,7 @@ The **Connection status** must be **Connected** before you can set **Use Plannin
 
 ## Error message is shown during CTP
 
-If you try to run capable to promise (CTP) from a sales order when Planning Optimization is enabled, you will receive the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
+If you try to run capable to promise (CTP) from a sales order when Planning Optimization is enabled, you'll receive the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
 
 This is related to a pending feature that is planned as part of the support for production orders.
 
@@ -68,6 +113,6 @@ This is related to a pending feature that is planned as part of the support for 
 
 - [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
+- [Differences between Planning Optimization and the deprecated master planning engine](planning-optimization-differences-with-built-in.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

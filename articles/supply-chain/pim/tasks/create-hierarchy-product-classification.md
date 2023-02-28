@@ -31,7 +31,7 @@ This procedure shows how to create a new category hierarchy and assign a commodi
 
 
 ## Create the new category hierarchy
-1. Go to **Navigation pane > Modules > Product information management > Setup > Categories and attributes > Category hierarchies**.
+1. Go to **Product information management > Setup > Categories and attributes > Category hierarchies**.
 2. Click **New**.
 3. In the **Name** field, type a value.
 4. In the **Description** field, type a value.

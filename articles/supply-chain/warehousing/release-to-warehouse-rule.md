@@ -34,10 +34,7 @@ The *Release to warehouse rule* feature provides flexibility during release to t
 
 ### Turn on the feature
 
-Before you can use the *Warehouse release rule* feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse release rule*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Warehouse release rule* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Initialize the feature
 
@@ -62,8 +59,8 @@ After the feature is turned on and initialized, all your warehouses will have an
 1. On the **Warehouse** FastTab, in the **Reservations** section, the **Requirement for inventory reservation** field controls whether partial release of orders is allowed. Select one of the following values:
 
     - **Not applicable** – When the feature is first turned on and initialized, this value is automatically assigned to all warehouses that aren't enabled for warehouse management. It can't be changed. This value isn't available for warehouses that are enabled for warehouse management.
-    - **Allow partial reservation** – Orders can be released when any quantity is reserved. The system will evaluate whether the unreserved quantity should be marked for advanced cross-docking and will mark that quantity as required. If no marking exists, the system will create work only for the reserved quantity. When the feature is first turned on and initialized, this value is automatically assigned to all warehouses that are enabled for warehouse management. This value isn't available for warehouses that aren't enabled for warehouse management.
-    - **Require full reservation** – Orders can be released only if the whole quantity is reserved. They can't be released if the total quantity isn't either physically reserved or planned for cross-docking. This value isn't available for warehouses that aren't enabled for warehouse management.
+    - **Allow partial reservation** – Order lines can be released when any quantity is reserved. The system will evaluate whether the unreserved quantity should be marked for advanced cross-docking and will mark that quantity as required. If no marking exists, the system will create work only for the reserved quantity. When the feature is first turned on and initialized, this value is automatically assigned to all warehouses that are enabled for warehouse management. This value isn't available for warehouses that aren't enabled for warehouse management.
+    - **Require full reservation** – Order lines can be released only if the whole quantity is reserved. They can't be released if the total quantity isn't either physically reserved or planned for cross-docking. This value isn't available for warehouses that aren't enabled for warehouse management.
 
 1. Select **Save**.
 

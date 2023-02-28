@@ -2,7 +2,7 @@
 title: Localize Commerce extension resources and label files
 description: This article explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
 author: josaw1
-ms.date: 11/16/2022
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,11 +46,11 @@ You can override the default strings in the POS by using the language text entri
 4. On the Action Pane, select **Save**.
 5. Go to **Retail and Commerce &gt; Retail and Commerce IT &gt; Distribution schedule**.
 6. Select the **Registers** (**1090**) job, and then select **Run now**.
-7. After the data is pushed, you'll need to wait up to one hour for the localized string cache to refresh. When the refresh of the string cache is complete, sign out and sign back in to Cloud POS, Modern POS or Store Commerce to display the changed labels. You can also force a cache refresh by restarting Retail Server. 
+7. After the data is pushed, you'll need to wait up to one hour for the localized string cache to refresh. When the refresh of the string cache is complete, sign out and sign back in to Store Commerce to display the changed labels. You can also force a cache refresh by restarting Retail Server. 
 
 ### Get the text ID for POS strings
 
-To get the text ID for a POS string, open the Modern POS/Cloud POS application. Press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console. Run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to turn on the developer mode.
+To get the text ID for a POS string, open Store Commerce for web. Press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console. Run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to turn on the developer mode.
 
 After enabling the developer mode in the JavaScript console, navigate to the **Settings** page in POS, under the **Developer mode**, set **Developer Mode** to **Yes**. Set **Show Strings IDs** to **Yes**. Sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages.
 

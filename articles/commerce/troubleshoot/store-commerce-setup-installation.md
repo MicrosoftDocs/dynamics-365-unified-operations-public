@@ -2,7 +2,7 @@
 title: Troubleshoot Store Commerce setup and installation issues
 description: This article explains how to troubleshoot setup and installation issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 06/01/2022
+ms.date: 02/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -19,29 +19,17 @@ This article explains how to troubleshoot setup and installation issues in the M
 
 ## I can't activate the app, and I receive a connectivity error message
 
-After you enter the valid Cloud Point of Sale (CPOS) URL, you might receive a connectivity error message that resembles the following example:
+After you enter the valid Cloud POS URL, you might receive a connectivity error message that resembles the following example:
 
-> A connectivity error has occurred, and your device can't connect to the CPOS. The CPOS URL typed may have some issues.
+> A connectivity error has occurred, and your device can't connect to Cloud POS. The Cloud POS URL typed may have some issues.
 
-In this case, review the URL for typographical errors, or determine whether CPOS can't be reached because it's offline.
+In this case, review the URL for typographical errors, or determine whether Cloud POS can't be reached because it's offline.
 
-Additionally, verify that the Cloud Scale Unit (CSU) version is 10.0.25 (9.35.\*.\*) or later. CPOS version 10.0.25 or later is required to use the Store Commerce app.
-
-## I can't install the app because Modern POS is already installed
-
-During installation, you might receive an error message such as the following example:
-
-> A version (9.\*.\*.\*) of this product (Modern POS) has been previously installed through the legacy installer.
-
-To fix the error, you must uninstall the Modern Point of Sale (MPOS) app for all the users on the machine and then try again. You can confirm whether MPOS has been removed for all the users by running the following PowerShell command.
-
-```PowerShell
-Get-AppxPackage | Where-Object {$_.PackageFullName -like "Microsoft.Dynamics.*.Pos"} | Remove-AppxPackage -Allusers
-```
+Additionally, verify that the Cloud Scale Unit (CSU) version is 10.0.25 (9.35.\*.\*) or later. CSU version 10.0.25 or later is required to use the Store Commerce app.
 
 ## I can't activate the app because of an invalid URL or an error state
 
-If the CPOS URL that you entered isn't valid and you want to change it, or if the Store Commerce app is in an error state during activation, you can restart the process by resetting the app. The Store Commerce app will save only a valid CPOS URL.
+If the Cloud POS URL that you entered isn't valid and you want to change it, or if the Store Commerce app is in an error state during activation, you can restart the process by resetting the app. The Store Commerce app will save only a valid Cloud POS URL.
 
 To reset the Store Commerce app, follow these steps.
 
