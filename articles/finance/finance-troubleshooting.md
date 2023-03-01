@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.author: Livbjerg
 ms.search.validFrom: 2023-02-28
 ms.dyn365.ops.version: 10.0.28
+ms.custom: bap-template
 ---
 
 # Finance Troubleshooting and FAQs
@@ -25,7 +26,7 @@ For a collection of troubleshooting articles grouped by topic, please see the fo
 
 These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
 
-Additionally, the following troubleshooting articles are integrated into the finance product documentation. These articles documents how to troubleshoot a specific topic or subject within the finance area.
+Additionally, the following troubleshooting articles are integrated into the finance product documentation. These articles document how to troubleshoot a specific topic or subject within the finance area.
 
 Accounts payable
 
