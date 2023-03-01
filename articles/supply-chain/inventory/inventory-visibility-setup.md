@@ -115,7 +115,7 @@ After you register an application and add a client secret to Azure AD, follow th
 >     1. Select **Install App**.
 >     1. Select **Inventory Visibility**
 >
-> 1. After the installation is completed, go to back to the Lifecycle Services page and try again to reinstall the **Inventory Visibility** add-in.
+> 1. After the installation is completed, go back to the Lifecycle Services page and try again to reinstall the **Inventory Visibility** add-in.
 
 ## <a name="setup-dynamics-scm"></a>Set up Inventory Visibility in Supply Chain Management
 
@@ -139,19 +139,17 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
 Once you've installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
 
-1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following feature:
-    - *Inventory Visibility Integration*.
-
+1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
 1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
     - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
     - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you have received advice from Microsoft Support or are otherwise certain that you need to change it.
 
 1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use one or both of these features. If you do, set them up. (You can also set them up later.)
 
-1. Several optional features are available to enhance the functionality of Inventory Visibility. Decide whether you'd like to use one or more of these and, if so, set them up now (you can also set them up later). The following optional features are available:
-    - **Soft reservations and offsets** – Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. For details about how to enable and set up this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
-    - **Support for warehouse management processes (WMS) items** – Lets you use WMS items with Inventory Visibility. For details about how to enable and set up this feature, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
+    - **Soft reservations and offsets** – Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. For information about how to enable and set up this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+    - **Support for warehouse management processes (WMS) items** – This feature lets you use WMS items with Inventory Visibility. For information about how to enable and set up this feature, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
