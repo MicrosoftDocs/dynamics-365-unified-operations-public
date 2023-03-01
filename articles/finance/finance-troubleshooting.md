@@ -39,7 +39,7 @@ Budgeting
 Cash and bank management
 
 - [Troubleshoot cash flow forecasting setup](cash-bank-management/cash-flow-forecasting-tsg.md)
-- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-can't-be-settled)
+- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-cant-be-settled)
 
 General ledger
 
