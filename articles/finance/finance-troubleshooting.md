@@ -6,9 +6,9 @@ ms.date: 02/24/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
-ms.reviewer: EPegors
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: Livbjerg
+ms.author: jlivbjerg
 ms.search.validFrom: 2023-02-28
 ms.dyn365.ops.version: 10.0.28
 ms.custom: bap-template
@@ -30,7 +30,7 @@ Additionally, the following troubleshooting articles are integrated into the fin
 
 Accounts payable
 
-- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#Exception-processing)
+- [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#exception-processing)
 
 Budgeting
 
@@ -39,7 +39,7 @@ Budgeting
 Cash and bank management
 
 - [Troubleshoot cash flow forecasting setup](cash-bank-management/cash-flow-forecasting-tsg.md)
-- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#Resolve-issues-with-transactions-that-can't-be-settled)
+- [Resolve issues with transactions that can't be settled](cash-bank-management/settlement-overview.md#resolve-issues-with-transactions-that-can't-be-settled)
 
 General ledger
 
