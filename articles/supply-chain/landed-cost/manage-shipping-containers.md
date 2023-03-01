@@ -33,32 +33,36 @@ Shipping containers are used to group together goods that are physically grouped
 
 ## Create shipping containers for voyages
 
-You create a shipping container by opening or creating the voyage where you will use it and then assigning the purchase order lines that it will contain. Follow these steps to create a shipping container for a voyage.
+You create a shipping container by opening or creating the voyage where you will use it, and then assigning the purchase order lines that the shipping container will include. Follow these steps to create a shipping container for a voyage.
 
-1. Do one of the following steps:
-    - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** from the Action Pane and then fill out the **Create voyage** dialog as needed and select **OK**. To edit an existing voyage, select it and then select **Voyage editor** from the Action Pane. In either case, the **Voyage editor** page now opens showing your new or selected voyage.
-    - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order you want to create a voyage and container for and then, on the Action Pane, open the **Purchase** tab and, from the **Landed cost** group, select **Create new voyage**. Fill out the **Create voyage** dialog as needed and select **OK** to open the **Voyage editor** page.
-1. Use the **Filters** at the top of the **Voyage editor** page to find the inbound order that you will create the shipping container for. If you created the voyage from the **All purchase orders** page, then the purchase order you selected there will already be selected in the filter here, but you are still free to adjust the filters any way you want to.
-1. The **Inbound orders** FastTab shows all of the qualifying purchase orders that match your filter settings. Select an inbound order that you want to include in the new shipping container.
-1. On the **Lines to select** FastTab, mark the check box for each purchase order line that you will include in the new container.
-1. Repeat the previous three steps until you have found and selected all of the order lines that you want to include in your new container.
-1. From the **Lines to select** FastTab toolbar, select **Add to staging list**.
-1. From the **Lines to select** FastTab toolbar, select **View staging list**.
-1. The **Add staging list or shipping container** page opens. The purchase order lines that you selected are listed on the **Lines in staging list** FastTab. All of the purchase order lines listed here will be added to the shipping container you are about to create. You can remove any lines that don't belong by selecting a target line and then selecting **Remove line** from the FastTab toolbar.
-1. From the **Lines in staging list** FastTab toolbar, select **Add to new shipping container**.
-1. The **Create shipping container** dialog opens. On the **General** tab, fill out the dialog as needed to define your new shipping container.
+1. Follow one of these steps:
 
-    [<img src="media/create-shipping-container.png" alt="The Create shipping container dialog." title="The Create shipping container dialog" width="720" />](media/create-shipping-container.png)
+    - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page is opened and shows the new or selected voyage.
+    - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
 
-1. If you'd like to create the shipping container in batch mode (which can improve performance if your container includes a large number of lines) then open the **Run in the background** tab and set **Batch processing** to *Yes*. (This tab is only available if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system. For details about how to turn this feature on or off, see [Turn on the Landed cost module for your system](landed-cost-enable.md))
+1. Use the filters at the top of the **Voyage editor** page to find the inbound order that you want to create the shipping container for. If you created the voyage from the **All purchase orders** page, the purchase order that you selected there will already be selected in the filter here. However, you can adjust the filters as you want.
+1. The **Inbound orders** FastTab shows all the qualifying purchase orders that match your filter settings. Select an inbound order to include in the new shipping container.
+1. On the **Lines to select** FastTab, select the checkbox for each purchase order line that you want to include in the new shipping container.
+1. Repeat steps 2 through 4 until you've found and selected all the order lines that you want to include in the new shipping container.
+1. On the **Lines to select** FastTab, on the toolbar, select **Add to staging list**.
+1. On the toolbar, select **View staging list**.
+1. The **Add staging list or shipping container** page is opened. The purchase order lines that you selected are listed on the **Lines in staging list** FastTab. All the purchase order lines in this list will be added to the shipping container that you create. You can remove any line by selecting it and then selecting **Remove line** on the toolbar of the FastTab.
+1. On the **Lines in staging list** FastTab, on the toolbar, select **Add to new shipping container**.
+1. In the **Create shipping container** dialog box, on the **General** tab, define the new shipping container.
+
+    [<img src="media/create-shipping-container.png" alt="Create shipping container dialog box." title="Create shipping container dialog box" width="720" />](media/create-shipping-container.png)
+
+1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance.
 
     > [!NOTE]
-    > The background processing won't activate if the transfer quantity is less than the total quantity of the related purchase order line.
+    > The **Run in the background** tab is available only if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module for your system](landed-cost-enable.md).)
+    >
+    > Background processing won't be activated if the transfer quantity is less than the total quantity of the related purchase order line.
 
-1. Select **OK** to create the container and add your selected purchase order lines to it.
+1. Select **OK** to create the shipping container and add the selected purchase order lines to it.
 
 > [!NOTE]
-> If a container already exists for your selected voyage, then you can add new purchase order lines to it by selecting **Add to new existing shipping container** on the **Add staging list or shipping container** page.
+> If a container already exists for your selected voyage, you can add new purchase order lines to it by selecting **Add to new existing shipping container** on the **Add staging list or shipping container** page.
 
 ## View shipping container lists and details
 
