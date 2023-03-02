@@ -36,6 +36,8 @@ To change the environment administrator, you must be a project owner in the LCS 
 
 > [!IMPORTANT]
 > Changes to the environment administrator account cause downtime in the target finance and operations apps environment. Therefore, use this capability in the appropriate way and only after you schedule the downtime in your organization.
+> The new Admin account must be a direct member of the same tenant to which the environment belong.
+> If you intend to change domain for the environment, you also need to obtain new ISV license file(s) referencing the new domain.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
