@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intercompany journals: Dimension values on multi-line vs single line journal
-description: This article answers some commonly asked questions regarding intercompany journals
+description: This article answers some commonly asked questions regarding intercompany journals.
 author: kweekley
 ms.date: 03/02/2023
 ms.topic: article
@@ -11,26 +11,26 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LedgerJournalTable
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 62213
-ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2022-08-01
+ms.dyn365.ops.version: 10.0.29
 
 ---
 
-
 # Intercompany journals: Dimension values on multi-line vs single line journal
 
-[!include [banner](../includes/banner.md)]
+[!include[banner](../includes/banner.md)]
+
 
 This article answers some commonly asked questions regarding intercompany journals.
 
