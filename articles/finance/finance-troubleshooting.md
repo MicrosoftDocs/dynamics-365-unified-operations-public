@@ -24,9 +24,9 @@ For a collection of troubleshooting articles grouped by topic, please see the fo
 
 - [Microsoft Dynamics 365 Finance troubleshooting](/troubleshoot/dynamics-365/finance/welcome-finance)
 
-These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
+These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 Finance. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
 
-Additionally, the following troubleshooting articles are integrated into the finance product documentation. These articles document how to troubleshoot a specific topic or subject within the finance area.
+Additionally, the following troubleshooting articles are integrated into the Finance product documentation. These articles document how to troubleshoot a specific topic or subject within the Finance area.
 
 Accounts payable
 
