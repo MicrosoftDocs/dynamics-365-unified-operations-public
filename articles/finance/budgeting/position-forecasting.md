@@ -68,9 +68,9 @@ If the cost element is based on a percentage, you must specify the budget cost e
 
 **Example** 
 
-Jodi’s organization is providing a training allowance of 5 percent of an employee’s base pay. Jodi wants to create a budget cost element for this cost. She creates a new budget cost element and assigns the **Benefit** budget cost type.
+Jodi’s organization is providing a training allowance of 5 percent of an employee’s base pay. Jodi wants to create a budget cost element for this cost. Jodi creates a new budget cost element and assigns the **Benefit** budget cost type.
 
-Jodi doesn't want managers to change the amount of the benefit. Therefore, she selects **Do not allow cost changes** in the **Forecast position override** field. The organization wants this cost to be assigned evenly to each month. Therefore, Jodi selects **Quarterly** in the **Allocation method** field. 
+Jodi doesn't want managers to change the amount of the benefit. Therefore, Jodi selects **Do not allow cost changes** in the **Forecast position override** field. The organization wants this cost to be assigned evenly to each month. Therefore, Jodi selects **Quarterly** in the **Allocation method** field. 
 
 Next, Jodi adds a cost calculation line, sets the dates and a main account, and enters **5.00** as the percentage. The organization has a cap of $5,000 per year for this benefit. Therefore, Jodi enters that amount as the annual limit. 
 
