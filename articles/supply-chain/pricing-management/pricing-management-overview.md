@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.33 GA -->
+<!-- KFM: Preview until further notice -->
 
 This article provides an overview of the Pricing management module in Dynamics 365 Supply Chain Management. <!-- KFM: Refer to as a module? Or should this be under Sales and Marketing in the TOC? -->
 

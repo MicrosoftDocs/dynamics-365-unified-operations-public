@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.33 GA -->
+<!-- KFM: Preview until further notice -->
 
 Pricing management provides a set of pre-populated price attributes from fields in the related table that are associated to **Product**, **Customer**, **Order table** and **Order line**. <!-- KFM: This sentence isn't clear; please clarify. Also, what are these bolded terms? Tables? Fields? How do we find and use these "pre-populated" (predefined?) attributes? -->
 

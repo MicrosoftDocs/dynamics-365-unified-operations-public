@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.33 GA -->
+<!-- KFM: Preview until further notice -->
 
 Vendor list prices are typically used for products that are procured from vendors and sold to customers.
 

@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.33 GA -->
+<!-- KFM: Preview until further notice -->
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:
 
@@ -71,7 +71,7 @@ Pricing management offers three price attribute sources as a foundation for sett
 <tr>
 <td rowspan="2">Customer</td>
 <td>Customer master</td>
-<td>Provide out-of-box fields from customer masters.<br><br>Can be extended to add more fields.</td>
+<td>Provide out-of-box fields from customer masters. Can be extended to add more fields.</td>
 </tr>
 <tr>
 <td>Attributes of the customer attribute group that are defined as the customer attribute group in parameters</td>
