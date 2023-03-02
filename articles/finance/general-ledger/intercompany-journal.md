@@ -31,14 +31,14 @@ ms.dyn365.ops.version: 10.0.29
 [!include[banner](../includes/banner.md)]
 
 
-This article answers some commonly asked questions regarding intercompany journals.
+This article answers some commonly asked questions regarding intercompany journals and dimension values.
 
-### Question
+### Example
 Intercompany transactions can be entered as a single line or multiple lines on various financial journals, such as the general journal, vendor invoice journal and the 
 vendor/customer payment journals. When the intercompany transaction is entered on a single line, the financial dimension values default correctly onto the **Due to** and **Due from** ledger accounts but when the intercompany transaction is entered on multiple lines, the financial dimension values do not default correctly. Why does this work differently?
 
-### Answer
-When an intercompany transaction is entered, knowing the pairs of debit and credit for each company that are ‘related’ is essential. When entering the intercompany 
+### Example answer
+When an intercompany transaction is entered, knowing which pairs of debit and credit for each company that are ‘related’ is essential. When entering the intercompany 
 transaction on a single line, it’s easy to determine the debit or credit pair because it’s clearly identified using the **Account** and **Offset account**. 
 
 If an intercompany transaction is entered on multiple lines, we lose the ability to identify which debit or credit from the originating company should be matched to the 
@@ -58,13 +58,13 @@ voucher).
 ### Scenario one
 USMF is the originating company. The voucher contains two destination companies, DEMF and USSI. The following lines are entered into the general journal and posted. 
 
-|Company	|Ledger account |	Debit |	Credit	|Offset company	|Offset account|
-|----------|--------------|-------|---------|---------------|--------------|
-|USMF	|600150  -001-DEMF|		|200	|	      |        |
-|USMF	|600150-002-USSI	|	   |100		|     |         | 
-|USMF	|600150-003-USSI	|	    |100		|   |          |
-|DEMF	|600120-004-USMF	|200	|	       |	         |
-|USSI	|600120-005-USMF	|200		|      	|          |
+|Company	|Ledger account |	Debit |	Credit	|
+|----------|--------------|-------|---------|
+|USMF	|600150  -001-DEMF|		|200	|	
+|USMF	|600150-002-USSI	|	   |100		|  
+|USMF	|600150-003-USSI	|	    |100		| 
+|DEMF	|600120-004-USMF	|200	|	       |	
+|USSI	|600120-005-USMF	|200		|      	|   
     
 
 **Destination companies**
@@ -139,12 +139,12 @@ how to default amounts and financial dimension values. Options one, two, and thr
 ### Scenario two
 USMF is the originating company. The voucher contains two destination companies, DEMF and USSI. The following lines are entered into the general journal and posted. 
 
-|Company	|Ledger account |	Debit |	Credit	|Offset company	|Offset account|
-|----------|--------------|-------|---------|---------------|--------------|
-|USMF	|600150-001|		|300|   |    |		
-|USMF|	600150-002|		|100|		|    |
-|DEMF|	600120-004|	200	|		  |     |
-|USSI|	600120-005|	200|			|     |
+|Company	|Ledger account |	Debit |	Credit	|
+|----------|--------------|-------|---------|
+|USMF	|600150-001|		|300|   		
+|USMF|	600150-002|		|100|		
+|DEMF|	600120-004|	200	|		  |   
+|USSI|	600120-005|	200|			| 
 
 **Destination companies**
 As described in senario one, a balancing due to or due from is created for each destination company line The dimensions are always taken from the destination companies’ lines as follows:
