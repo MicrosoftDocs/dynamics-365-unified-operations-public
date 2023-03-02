@@ -150,13 +150,13 @@ USMF is the originating company. The voucher contains two destination companies,
 **Destination companies**
 As described in senario one, a balancing due to or due from is created for each destination company line The dimensions are always taken from the destination companies’ lines as follows:
 
-DEMF
+ |DEMF |     |        |
 |-------|------|-------|
 |Ledger account|	Debit|	Credit|
 |600120-004|	200|    |	
 |Due to-004|	|	200  |
 
-USSI
+ |USSI |       |        |
 |-------|------|-------|
 |Ledger account|	Debit|	Credit|
 |600120-005|	200|     |	
@@ -168,6 +168,7 @@ As described in scenario two, two **Due from** entries must be posted to the ori
 originating company’s lines. Which financial dimension values default? 
 
 Option 1:
+
 |USMF|   |     |
 |-------|------|-------|
 |Ledger account|	Debit|	Credit|
@@ -177,6 +178,7 @@ Option 1:
 |Due from - 002	|200	|   |
 
 Option 2:
+
 |USMF|    |       |
 |-------|------|-------|
 |Ledger account|	Debit|	Credit|
@@ -186,6 +188,7 @@ Option 2:
 |Due from -001|	200|    |	
  
 Option 3:
+
 |USMF|     |      |
 |-------|------|-------|
 |Ledger account|	Debit|	Credit|
@@ -196,6 +199,7 @@ Option 3:
 
 
 Option 4 (what posts today):
+
 |USMF|   |     |
 |-------|------|-------|
 |Ledger account|	Debit|	Credit|
