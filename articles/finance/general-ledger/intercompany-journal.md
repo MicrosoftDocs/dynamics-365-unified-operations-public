@@ -156,12 +156,14 @@ USMF is the originating company. The voucher contains two destination companies,
 As described in senario one, a balancing due to or due from is created for each destination company line The dimensions are always taken from the destination companies’ lines as follows:
 
 **DEMF** 
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600120-004|	200|    |	
 |Due to-004|	|	200  |
 
 **USSI** 
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600120-005|	200|     |	
@@ -175,6 +177,7 @@ originating company’s lines. Which financial dimension values default?
 Option 1:
 
 **USMF** 
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001|	|	300|
@@ -185,6 +188,7 @@ Option 1:
 Option 2:
 
 **USMF** 
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001|	|	300|
@@ -195,6 +199,7 @@ Option 2:
 Option 3:
 
 **USMF**   
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001|		|300|
@@ -206,6 +211,7 @@ Option 3:
 Option 4 (what posts today):
 
 **USMF** 
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001|		|300|
