@@ -72,9 +72,10 @@ During posting, the financial dimension values for the destination company’s d
 each destination company line because there is only one originating company. Because of this, the dimensions are always taken from the destination companies’ lines as 
 follows:
 
-|DEMF|  
-|---------|--------|--------|
+**DEMF** 
+
 |Ledger account	|Debit	|Credit|
+|---------|--------|--------|
 |600120-004-USMF|	200	|        |
 |Due to-004-USMF|		|200|
 
