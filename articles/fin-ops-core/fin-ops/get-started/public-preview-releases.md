@@ -4,11 +4,11 @@
 title: Service update availability
 description: This article provides information about the different release options.
 author: hmahl
-ms.date: 08/12/2022
+ms.date: 03/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
+ms.custom: bap-template
 # optional metadata
 
 # ms.search.form: 
