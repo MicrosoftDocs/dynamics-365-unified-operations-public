@@ -98,7 +98,7 @@ Option 1:
 |600150-002-USSI	|	|100|
 |600150-003-USSI	|	|100|
 |Due from-001-DEMF|	200	|   |
-|Due from -002-USSI	200	|    |
+|Due from -002-USSI	|200	|    |
 
 Option 2:
 
