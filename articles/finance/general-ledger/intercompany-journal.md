@@ -73,15 +73,14 @@ each destination company line because there is only one originating company. Bec
 follows:
 
 **DEMF** 
-
 |Ledger account	|Debit	|Credit|
 |---------|--------|--------|
 |600120-004-USMF|	200	|        |
 |Due to-004-USMF|		|200|
 
-|USSI|  
-|-------|------|-------|
+**USSI**  
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600120-005-USMF|	200	|     |
 |Due to-005-USMF|   |		200|
 
@@ -92,9 +91,9 @@ must be posted to the originating company. With three entries posted in USMF, bu
 
 Option 1:
 
-|USMF|   |    |
-|-------|------|-------|
+**USMF**
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001-DEMF|		|200|
 |600150-002-USSI	|	|100|
 |600150-003-USSI	|	|100|
@@ -103,9 +102,9 @@ Option 1:
 
 Option 2:
 
-|USMF|    |    |
-|-------|------|-------|
+**USMF**
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001-DEMF|		|200   |
 |600150-002-USSI|		|100   | 
 |600150-003-USSI|		|100   | 
@@ -114,9 +113,9 @@ Option 2:
  
 Option 3:
 
-|USMF|    |    |
-|-------|------|-------|
+**USMF**
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001-DEMF	|	|200|
 |600150-002-USSI	| |100|
 |600150-003-USSI	|	|100|
@@ -125,9 +124,9 @@ Option 3:
 
 Option 4 (what posts today):
 
-|USMF|     |     |
-|-------|------|-------|
+**USMF** 
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001-DEMF|		|200|
 |600150-002-USSI	|	   |100|
 |600150-003-USSI|		|100|
@@ -150,15 +149,15 @@ USMF is the originating company. The voucher contains two destination companies,
 **Destination companies**
 As described in senario one, a balancing due to or due from is created for each destination company line The dimensions are always taken from the destination companies’ lines as follows:
 
- |DEMF |     |        |
-|-------|------|-------|
+**DEMF** 
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600120-004|	200|    |	
 |Due to-004|	|	200  |
 
- |USSI |       |        |
-|-------|------|-------|
+**USSI** 
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600120-005|	200|     |	
 |Due to-005|		|200|
 
@@ -169,9 +168,9 @@ originating company’s lines. Which financial dimension values default?
 
 Option 1:
 
-|USMF|   |     |
-|-------|------|-------|
+**USMF** 
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001|	|	300|
 |600150-002	|	|100|
 |Due from - 001|	200|   |	
@@ -179,9 +178,9 @@ Option 1:
 
 Option 2:
 
-|USMF|    |       |
-|-------|------|-------|
+**USMF** 
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001|	|	300|
 |600150-002|		|100|
 |Due from-001	|200|    |	
@@ -189,9 +188,9 @@ Option 2:
  
 Option 3:
 
-|USMF|     |      |
-|-------|------|-------|
+**USMF**   
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001|		|300|
 |600150-002|		|100|
 |Due from-002|	200|    |	
@@ -200,9 +199,9 @@ Option 3:
 
 Option 4 (what posts today):
 
-|USMF|   |     |
-|-------|------|-------|
+**USMF** 
 |Ledger account|	Debit|	Credit|
+|-------|------|-------|
 |600150-001|		|300|
 |600150-002	|	|100|
 |Due from -|	200	|   |
