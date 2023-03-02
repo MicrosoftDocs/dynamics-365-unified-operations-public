@@ -73,12 +73,14 @@ each destination company line because there is only one originating company. Bec
 follows:
 
 **DEMF** 
+
 |Ledger account	|Debit	|Credit|
 |---------|--------|--------|
 |600120-004-USMF|	200	|        |
 |Due to-004-USMF|		|200|
 
 **USSI**  
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600120-005-USMF|	200	|     |
@@ -92,6 +94,7 @@ must be posted to the originating company. With three entries posted in USMF, bu
 Option 1:
 
 **USMF**
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001-DEMF|		|200|
@@ -103,6 +106,7 @@ Option 1:
 Option 2:
 
 **USMF**
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001-DEMF|		|200   |
@@ -114,6 +118,7 @@ Option 2:
 Option 3:
 
 **USMF**
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001-DEMF	|	|200|
@@ -125,6 +130,7 @@ Option 3:
 Option 4 (what posts today):
 
 **USMF** 
+
 |Ledger account|	Debit|	Credit|
 |-------|------|-------|
 |600150-001-DEMF|		|200|
