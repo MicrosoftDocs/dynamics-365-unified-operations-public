@@ -202,7 +202,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/finance 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/finance    
-    - name: Finance Troubleshooting and FAQs
+    - name: Finance troubleshooting and FAQs
       href: finance-troubleshooting.md
     - name: Accounts payable
       items:
