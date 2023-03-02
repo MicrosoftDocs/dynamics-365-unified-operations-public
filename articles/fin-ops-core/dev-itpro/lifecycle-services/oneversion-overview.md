@@ -4,11 +4,11 @@
 title: One Version service updates overview
 description: This article gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: angelmarshall
-ms.date: 05/21/2019
+ms.date: 03/02/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
+ms.custom: bap-template
 # optional metadata
 
 # ms.search.form: 
