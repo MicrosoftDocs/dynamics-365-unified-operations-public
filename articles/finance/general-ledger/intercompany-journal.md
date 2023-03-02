@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Intercompany journals: Dimension values on multi-line vs single line journal
+title: Intercompany journals and dimension values on multi-line vs single line journal
 description: This article answers some commonly asked questions regarding intercompany journals.
 author: kweekley
 ms.date: 03/02/2023
