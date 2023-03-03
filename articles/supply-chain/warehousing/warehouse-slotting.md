@@ -131,8 +131,22 @@ Next, you must set up the template header, slotting specifications, and location
         - **Reserved** – Only the sales order line quantities that are reserved (physical and ordered) should be considered demand.
         - **Released** – The released quantity should be considered demand.
 
-    - **Warehouse:** _61_
     - **Allow wave demand to use unreserved quantities:** _Yes_
+
+1. Use the **Warehouse selection** fast tab to specify the warehouse where the slotting template will apply.
+
+    - **Warehouse selection** – Select one of the following values:
+
+        - *All* – Use the slotting template for all warehouses.
+        - *Warehouse group* – Use the slotting template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
+        - *Warehouse* – Use the slotting template only for the specific warehouse that's selected in the **Warehouse** field.
+
+    - **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse where the slotting template applies. 
+    - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the slotting template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
+
+    For this scenario, set the following values:
+    - **Warehouse selection:** *Warehouse*
+    - **Warehouse:** *61*
 
 You can also specify a query to narrow the scope of the demand that is evaluated.
 
