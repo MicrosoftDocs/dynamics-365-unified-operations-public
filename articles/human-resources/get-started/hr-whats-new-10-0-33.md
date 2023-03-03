@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Human Resources 10.0.33 (April 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.33 preview release.
 author: twheeloc
-ms.date: 01/17/2023
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,8 @@ article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-
+|Emergency contact visibility to managers| This feature allows managers to easily access direct and extended reports’ emergency contact information. |  Preview|
+|Human Resources business events | Business events help bring awareness to needed actions in response to a critical business data trigger and manage responses more efficiently. The following business events have been added to the business events catalog under the Human Resources category:<ul><li>Personnel actions (position change)</li><li>Hire actions</li><li>Task assignment</li><li>Leave request assigned</li><li>Leave request complete</li><li>Leave of absence return</li><li>Time off cancelled</li><li>Course assignment</li><li>Course completion</li><li>Goal assignment</li></ul>| Preview|
 
 ## Feature enhancements included in this release
 
@@ -54,7 +55,8 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information | 
 |--------------|------------------|
-|Entity templates|	The following entity templates have been added: Personnel actions, Personnel management setup, Worker data migration. For more information, see [Data entities and templates](/human-resources/data-entity.md#data-entity-templates).
+|Entity templates|	The following entity templates have been added: Personnel actions, Personnel management setup, Worker data migration. For more information, see [Data entities and templates](/human-resources/data-entity.md#data-entity-templates).|
+|Course enhancements |This feature simplifies the process to create, manage, and track courses within the Learning module. The course layout has been redesigned and reorganized to enable easy course creation and mass assignment of participants. Support for virtual courses has been added. Other functionality has been added to support additional scenarios for courses. Employees get an improved view of their courses in **Employee self service**. Managers get an overview of courses assigned to their employes in **Manager self service**.|  
 
 
 ## Features turned on by default in this release
