@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.33 (April 2023)
+          href: get-started/whats-new-scm-10-0-33.md
         - name: Supply Chain Management 10.0.32 (March 2023)
           href: get-started/whats-new-scm-10-0-32.md
         - name: Supply Chain Management 10.0.31 (February 2023)
@@ -3709,6 +3711,8 @@
             href: warehousing/print-container-labels.md
           - name: License plate label layouts and printing
             href: warehousing/print-license-plate-labels-using-label-layouts.md
+          - name: Custom label layouts and printing
+            href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: Enable license plate label printing
