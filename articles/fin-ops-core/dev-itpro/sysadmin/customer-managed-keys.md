@@ -22,10 +22,12 @@ By default, data is encrypted by using *Microsoft-managed keys*. However, if you
 This article explains how to set up CMKs to control encryption keys for data at rest in finance and operations environments.
 
 > [!IMPORTANT]
+>
 > - The CMK feature is provided through Microsoft Power Platform. It applies to environments that run one or more finance and operations apps that are integrated with Microsoft Power Platform. It also applies to all environment-specific resources, including SQL databases and Azure storage accounts. (For more information, see [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).)
 > - The preview version of CMKs is available at no cost. When CMKs become generally available, a cost will be associated with environments where they're enabled.
 > - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that Microsoft customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not yet be available in your region.
+> - CMK policy enforcement doesn't include cloud-hosted environments because these environments are deployed in customer-managed subscriptions. For more information on best practices for securing cloud-hosted environment, see [Secure one-box development environments](../../dev-itpro/dev-tools/secure-developer-vm.md).
 
 ## Enable CMKs
 
@@ -45,8 +47,8 @@ To enable customer-managed keys for your finance and operations apps environment
     > [!NOTE]
     > The name of your finance and operations environment might differ.
 
-1. [Enable CMKs in Microsoft Power Platform, and create an enterprise policy](/power-platform/admin/customer-managed-key). <!-- confirm this is available before publish: [**Review link**](<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441>) -->
-1. [Add the environment that has the previously noted name to the enterprise policy](/power-platform/admin/customer-managed-key#add-an-environment-to-the-enterprise-policy-to-encrypt-data). <!-- confirm this is available before publish: [**Review link**](<https://review.learn.microsoft.com/en-us/power-platform/admin/customer-managed-key?branch=matp-3069441#add-an-environment-to-the-enterprise-policy-to-encrypt-data>) -->
+1. [Enable CMKs in Microsoft Power Platform, and create an enterprise policy](/power-platform/admin/customer-managed-key).
+1. [Add the environment that has the previously noted name to the enterprise policy](/power-platform/admin/customer-managed-key#add-an-environment-to-the-enterprise-policy-to-encrypt-data).
 
 ## CMK support for add-ins
 
