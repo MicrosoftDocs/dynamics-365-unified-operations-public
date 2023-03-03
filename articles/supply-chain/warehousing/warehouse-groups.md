@@ -17,6 +17,7 @@ ms.custom: bap-template
 Warehouse groups let you establish groups of warehouses that you can associate with various other records in Microsoft Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
+>
 > - Each warehouse can be assigned to any number of warehouse groups.
 > - Only warehouses that are enabled for advanced warehouse processes (WMS) can be assigned to warehouse groups.
 
@@ -48,4 +49,4 @@ To create and manage your warehouse groups, follow these steps.
 
 ## Use warehouse groups
 
-When you're setting up some types of warehousing features (such as [location directives](create-location-directive.md), [wave templates](wave-templates.md), or [container packing policies](packing-containers.md)), you can specify whether the feature applies to a single warehouse, a group of warehouses, or all warehouses. Usually, you'll see two fields: one where you select the warehouse scope (*Warehouse*, *Group*, or *All*) and one where you make a selection, based on that scope (a single warehouse ID, a warehouse group ID, or all warehouses).
+When you're setting up some types of warehousing features (such as [location directives](create-location-directive.md), [wave templates](wave-templates.md), [outbound sorting templates](outbound-sorting.md), [cross docking templates](planned-cross-docking.md), [slotting templates](warehouse-slotting.md) or [container packing policies](packing-containers.md)), you can specify whether the feature applies to a single warehouse, a group of warehouses, or all warehouses. Usually, you'll see two fields: one where you select the warehouse scope (*Warehouse*, *Group*, or *All*) and one where you make a selection, based on that scope (a single warehouse ID, a warehouse group ID, or all warehouses).
