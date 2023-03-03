@@ -35,7 +35,7 @@ Single and duplicate record sharing work as follows.
 When you share product information across companies, it works as follows.
 
 - The released products table (`Inventtable`) must use *single record sharing*.
-- For related tables (which typically hold policies for handing a product, such as the bar code setup, cost group, and so on) you must decide if you would like to use *single record sharing* or *duplicate record sharing*. <!-- KFM: When I read this topic, it makes me think that I should just use single record sharing for all tables that I want to share. We should maybe give some reasons to choose one over the other in various circumstances. I suppose there's a performance impact or something? -->
+- For related tables (which typically hold policies for handing a product, such as the bar code setup, cost group, and so on) you must decide if you would like to use *single record sharing* or *duplicate record sharing*. <!-- KFM: It would be nice to provide some basis for making this decision.  When I read this topic, it makes me think that I should just use single record sharing for all tables that I want to share. We should maybe give some reasons to choose one over the other in various circumstances. I suppose there's a performance impact or something? -->
 
 > [!IMPORTANT]
 > If a field is included in a table that is part of a single record sharing policy, the field and its table will also be shared as a single record unless duplicate record sharing is specified by a policy that was previously enabled. Therefore, duplicate record sharing policies must be enabled before single record sharing policies. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products.
@@ -69,7 +69,7 @@ To set up your system to share products across companies, follow these steps.
 To share products and product-related information, you must create and set up your sharing policies on the **Configure cross-company data sharing** page. Each sharing policy establishes a set of tables and fields that are shared.
 
 > [!IMPORTANT]
-> If a field <!-- KFM: Do we mean a field that references another table? --> is included in a table that is part of a single record sharing policy, then that field and its table will also be shared as a single record unless there already exists an enabled duplicate record sharing policy <!-- KFM: For the related table? -->. Therefore, all of the *duplicate record sharing* policies that you require must be enabled before you start to set up your *single record sharing policies*. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products (which must use single record sharing).
+> If a field <!-- KFM: Do we mean a field that references another table? --> is included in a table that is part of a single record sharing policy, then that field and its table will also be shared as a single record unless there already exists an enabled duplicate record sharing policy <!-- KFM: For the related table? -->. Therefore, all of the *duplicate record sharing* policies that you require must be enabled before you start to set up your *single record sharing policies*. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products (which must use single record sharing). <!-- KFM: Similar issues come up later in this topic (where I also added a bunch of comments). Let's discuss this so we can figure out how to make it all a bit more clear. -->
 
 ### Set up duplicate record sharing policies
 
@@ -83,8 +83,8 @@ We recommend that you set up duplicate record sharing for tables that handle pol
 1. In the **Companies which share the records in these tables** section, add each company that will share the tables that you will add for this policy.
 1. In the **Tables and fields to share** section, select **Add** from the toolbar.
 1. In the drop-down dialog box, select a **Table name**. Note that not all tables are enabled for record sharing (see also [Product information tables that can be shared](#tables)). If you would like to share a table that isn't included in this drop-down list, please contact Microsoft Support. <!--KFM: I think this is what we mean. The drop-down list has a very large number of tables (all of which I suppose can be shared?). I have assumed that, of these, the only tables that are relevant for product info are those listed in the later section. -->
-1. In the drop-down dialog box, set **Save data per company** to *Yes* and then select **Add table**. <!-- KFM: **Save data per company** appears to be read-only. Do we really need to mention it here? If so, maybe we should explain what it means. -->
-1. <!-- KFM: What do all the check boxes mean? Why are only some of them checked already? What about the nested check boxes? What do the parentheses mean? Mention foreign keys? What all can I do here? --> Continue working until you have added all of the tables you want to share with this policy.
+1. In the drop-down dialog box, set **Save data per company** to *Yes* and then select **Add table**. <!-- KFM: **Save data per company** appears to be read-only for all the fields that I tried. Do we really need to mention it here? If so, maybe we should explain what it means. -->
+1. <!-- KFM: What do all the check boxes mean? Why are only some of them checked already? What about the nested check boxes? What do the parentheses mean? Mention "foreign keys"? What all can I do here? --> Continue working until you have added all of the tables you want to share with this policy.
 1. On the Action Pane, select **Save**.
 
 ### Set up single record sharing policies
@@ -95,14 +95,14 @@ The *Released product* table (`Inventtable`) must be set up for single record sh
 1. On the Action Pane, select **New**.
 1. Enter a **Name** for your policy (for example, *Products - single record sharing*).
 1. Set **Master company data sharing policy** to *Yes*. This setting is required for *single record sharing* policies.
-1. Set **Master company** to the company that will be used as the master. <!-- KFM: @beatriz comment here: " regarding ... (WHAT EXACTLY? CHECK WITH LARS-BO) " -->
+1. Set **Master company** to the company that will be used as the master. <!-- KFM: What does this do, and how do I decide this? Ask Lars-Bo?  -->
 1. On the Action Pane, select **Save**.
 1. In the **Child companies** section, add each company that will share the tables that you will add for this policy.
 1. In the **Tables and fields to share** section, select **Add** from the toolbar.
 1. In the drop-down dialog box, select a **Table name** (for example, *Inventtable*) and then select **Add table**.
-1. Expand the newly added table and review the status of each of its fields. <!-- KFM: Are we talking about setting the check boxes here? What does the check mean? -->. Take special note of the status of fields that reference another table <!-- KFM: How do we identify these? -->; make sure that you have either included them <!-- KFM: what is "them", the fields or the related tables? --> as part of a duplicate record sharing policy or you are acknowledging that they will be single record shared, and that table will also be single record shared <!-- KFM: I can't tell what we are asking the user to do here. Let's discuss this step. -->.
+1. Expand the newly added table and review the status of each of its fields. <!-- KFM: Are we talking about the check boxes here? What does the check mean? -->. Take special note of the status of fields that reference another table <!-- KFM: How do we identify these? -->; make sure that you have either included them <!-- KFM: what is "them", the fields or the related tables? --> as part of a duplicate record sharing policy or you are acknowledging that they will be single record shared, and that table will also be single record shared <!-- KFM: I can't tell what we are asking the user to do here. Let's discuss this step. -->.
 
-<!-- We have an issue with the templates, so hide this until we solve it.
+<!-- We have an issue with the templates, so hide this until we solve it:
 
 To get started quickly, you can edit the sharing policy templates that are provided and then use them to set up your own default sharing policies. For more information about how to use a template, see [Configure financial cross-company data sharing](../../fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
@@ -110,11 +110,11 @@ To get started quickly, you can edit the sharing policy templates that are provi
 
 ## <a name="tables"></a>Product information tables that can be shared
 
-To share products across companies, the following table must be shared using *single record sharing*: <!-- KFM: Please confirm this reformulation of your text (I wasn't sure...)  -->
+To share products across companies, the following table *must* be shared using *single record sharing*: <!-- KFM: Please confirm this reformulation of your text (I wasn't sure...)  -->
 
 - Released products (`Inventtable`)
 
-The following product-related tables can be shared using either *duplicate record sharing* or *single record sharing*: <!-- KFM: would be nice (and possibly essential) to list the internal table names for each of these, like we do above for released products. I was nearly unable to find any of these tables using the names we list here -->
+The following product-related tables can be shared using either *duplicate record sharing* or *single record sharing*: <!-- KFM: would be nice (and possibly essential) to list the internal table names for each of these, like we do above for released products (I couldn't find most of these tables using the names we list here). It would be nice to provide some basis for deciding which type of sharing to use for each table, either here or earlier in the topic (a commented elsewhere). -->
 
 - Barcode setup
 - Batch attribute
