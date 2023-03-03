@@ -1649,6 +1649,8 @@
           href: sysadmin/security-architecture.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
+        - name: Use customer-managed keys to control encryption keys for data at rest
+          href: sysadmin/customer-managed-keys.md
         - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
