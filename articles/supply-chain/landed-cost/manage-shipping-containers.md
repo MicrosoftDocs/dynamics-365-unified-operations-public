@@ -4,7 +4,7 @@
 title: Manage shipping containers
 description: This article describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 author: Weijiesa
-ms.date: 12/14/2020
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
