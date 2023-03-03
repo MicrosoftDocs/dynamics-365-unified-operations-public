@@ -2,7 +2,7 @@
 title: Configure Inventory Visibility
 description: This article describes how to configure Inventory Visibility.
 author: yufeihuang
-ms.date: 11/04/2022
+ms.date: 03/03/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
