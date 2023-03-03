@@ -27,6 +27,7 @@ This article explains how to set up Customer Lockbox, and how access requests ar
 > - The preview version of Customer Lockbox is available at no cost. When Customer Lockbox becomes generally available, a cost will be associated with environments where it's enabled.
 > - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that Microsoft customers can get early access and provide feedback.
 > - This feature is gradually being rolled out across regions and might not yet be available in your region.
+> - Customer Lockbox policy enforcement doesn't include cloud-hosted environments because these environments are deployed in customer-managed subscriptions. For more information on best practices for securing cloud-hosted environment, see [Secure one-box development environments](../../dev-itpro/dev-tools/secure-developer-vm.md).
 
 ## Enable Customer Lockbox
 
