@@ -70,7 +70,7 @@ Commerce lets you expand the list of available segments by connecting to third-p
 If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, requests for targeted pages with external provider lookups are not resolved on the initial page request. The default version of the page is shown on the first request and the targeted version only on subsequent requests. To override this default behavior for external geolocation providers, file a support ticket with [Microsoft Support](https://support.microsoft.com/). 
 
 > [!NOTE]
-> To avoid unpredictable site performance, test the performance of the external geolocation provider thoroughly and ensure that there are no significant delays on page load times before contacting Microsoft.
+> To avoid unpredictable site performance, thoroughly test the performance of the external geolocation provider and ensure that there are no significant page load time delays before contacting Microsoft.
 
 To view targeted pages that reference external segments, a user must consent to allow cookies. The user's browser then requests all segments from relevant providers, and the results are put into a cookie that is returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
