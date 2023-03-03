@@ -4,7 +4,7 @@
 title: Shipping information setup
 description: This article describes how to set up shipping information for the Landed cost module.
 author: Weijiesa
-ms.date: 12/04/2020
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
