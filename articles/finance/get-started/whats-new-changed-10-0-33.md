@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.33. This version has a build number of 10.0.XXXX and is available 
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.33. This version has a build number of 10.0.1549 and is available 
 on the following schedule:
 
 - **Preview of release:** March 2023
@@ -89,13 +89,13 @@ The following table lists the features that have been removed from Feature manag
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of finance and operations apps]
+Dynamics 365 Finance version 10.0.33 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of finance and operations apps]
 (../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md).
 
 ### Bug fixes
 
 For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article]
-(https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXXX).
+(https://fix.lcs.dynamics.com/Issue/Details?bugId=795940).
 
 ### Regulatory updates
 
