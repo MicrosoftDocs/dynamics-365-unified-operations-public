@@ -28,5 +28,3 @@ Before you can use the Pricing management module, it must be turned on for your 
 
 - **Module:** *Sales and marketing*
 - **Feature name:** *(Preview) Pricing management*
-
-<!-- KFM: Is this still in preview for 10.0.33? -->
