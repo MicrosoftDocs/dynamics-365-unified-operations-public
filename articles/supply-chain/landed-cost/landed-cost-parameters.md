@@ -4,7 +4,7 @@
 title: Landed cost parameters setup
 description: This article describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
 author: Weijiesa
-ms.date: 12/07/2020
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,7 @@ The following table describes the fields that are available on the **General** F
 | Use shipping rate | A shipping rate is set for a defined period and is used to estimated costs of goods that use multiple currencies. Set this option to *Yes* to use a shipping rate. |
 | Exchange rate type | The default collection of exchange rates that is used for multi-currency calculations for a voyage and voyage costs. |
 | Update purchase order quantity | Select what occurs if a user changes the quantity on a purchase order line:<ul><li>**Accept** – The voyage quantity is automatically adjusted.</li><li>**Warning** – If the line is attached to a voyage, a warning is shown, but the voyage quantity is updated.</li><li>**Error** – If the line is attached to a voyage, an error message is shown, and the purchase order can't be updated. Therefore, the order line must first be removed from the voyage.</li></ul> |
-| Automatically update number of cartons | When this option is set to *Yes*, all cartons are added together and shown at the voyage and container levels. When it's set to *No*, the number of cartons is initially set to 0 (zero) and can be manually edited as required. |
+
 
 ### Costing FastTab
 
