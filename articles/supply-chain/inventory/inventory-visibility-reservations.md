@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This article describes a typical use case for soft reservations and explains how to set them up in Inventory Visibility. It includes information about how to create soft reservations, offset them upon physical consumption, and adjust or unreserve specified inventory quantities.
 
-In Microsoft Dynamics 365 Supply Chain Management version 10.0.33 or later, you can make soft reservations from sales orders. Soft reservation requests will then be posted to Inventory Visibility, and the available-for-reservation quantity will be validated in Inventory Visibility. We recommend this new soft reservation functionality for all new Inventory Visibility installations. For more information, see [Further settings if Inventory Visibility integration with soft reservation on sales order lines is enabled](#further-settings-if-inventory-visibility-integration-with-reservation-offset-is-enabled).
+In Microsoft Dynamics 365 Supply Chain Management version 10.0.33 or later, you can make soft reservations from sales orders. Soft reservation requests will then be posted to Inventory Visibility, and the available-for-reservation quantity will be validated in Inventory Visibility. We recommend this new soft reservation functionality for all new Inventory Visibility installations. For more information, see [Configure additional settings if the Inventory Visibility integration with soft reservation on sales order lines feature is enabled](#configure-additional-settings-if-inventory-visibility-integration-with-reservation-offset-is-enabled).
 
 ## Sample use case for soft reservation
 
