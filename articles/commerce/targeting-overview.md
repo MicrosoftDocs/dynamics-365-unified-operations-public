@@ -67,7 +67,7 @@ By default, the following segments are available and can be included in audience
 
 Commerce lets you expand the list of available segments by connecting to third-party segmentation providers. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
-If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, requests for targeted pages with external provider lookups are not resolved on the initial page request. The default version of the page is shown on the first request and the targeted version only on subsequent requests. To override this default behavior for external geolocation providers, file a support ticket with [Microsoft Support](https://support.microsoft.com/). 
+If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, requests for targeted pages with external provider lookups aren't resolved on the initial page request. The default version of the page is shown on the first request and the targeted version only on subsequent requests. To override this default behavior for external geolocation providers, file a support ticket with [Microsoft Support](https://support.microsoft.com/). 
 
 > [!NOTE]
 > To avoid unpredictable site performance, thoroughly test the performance of the external geolocation provider and ensure that there are no significant page load time delays before contacting Microsoft.
