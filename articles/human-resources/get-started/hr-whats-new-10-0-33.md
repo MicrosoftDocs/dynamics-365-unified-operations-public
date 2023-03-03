@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.33. This version has a build number of 10.0.XXXX and is 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.33. This version has a build number of 10.0.1549 and is 
 available on the following schedule:
 
 - **Preview of release:** March 2023
@@ -54,11 +54,12 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information | 
 |--------------|------------------|
+|Entity templates|	The following entity templates have been added: Personnel actions, Personnel management setup, Worker data migration. For more information, see [Data entities and templates](/human-resources/data-entity.md#data-entity-templates).
 
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default or are now mandatory in version 10.0.32. Most features that have been turned on automatically can
+The following table lists the features that are turned on by default or are now mandatory in version 10.0.33. Most features that have been turned on automatically can
 be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have
 been turned on automatically might be removed from Feature management and will become mandatory. This change is made to ensure that customers are using current 
 functionality. In this way, as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, 
