@@ -3,8 +3,8 @@
 
 title: What's new or changed in Dynamics 365 Finance 
 description: This article points to topics that describe the new and changed features in each release of Dynamics 365 Finance
-author: kfend
-ms.date: 08/01/2022
+author: twheeloc
+ms.date: 03/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
 
