@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Human Resources 10.0.33 (April 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.33 preview release.
 author: twheeloc
-ms.date: 03/03/2023
+ms.date: 03/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,15 +59,18 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 |Course enhancements |This feature simplifies the process to create, manage, and track courses within the Learning module. The course layout has been redesigned and reorganized to enable easy course creation and mass assignment of participants. Support for virtual courses has been added. Other functionality has been added to support additional scenarios for courses. Employees get an improved view of their courses in **Employee self service**. Managers get an overview of courses assigned to their employes in **Manager self service**.|  
 
 
-## Features turned on by default in this release
+## Entities and entity templates added in this release
 
-The following table lists the features that are turned on by default or are now mandatory in version 10.0.33. Most features that have been turned on automatically can
-be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have
-been turned on automatically might be removed from Feature management and will become mandatory. This change is made to ensure that customers are using current 
-functionality. In this way, as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, 
-unless they are determined to be essential.
+Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. For more information, see [Human Resources data entities and templates](../../human-resources/data-entity.md).
 
-| Feature name | Enable date | Feature state | Module |
-|--------------|-------------|---------------|--------|
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Human Resources version 10.0.32 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=795940).
 
 
