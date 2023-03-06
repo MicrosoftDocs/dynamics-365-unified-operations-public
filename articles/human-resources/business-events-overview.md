@@ -47,7 +47,7 @@ integration and notification scenarios.
 Business events can be consumed using Microsoft Power Automate and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use 
 business events.  
 
-For more information on business events Business events overview - Finance & Operations | Dynamics 365 | Microsoft Learn.  
+For more information on business events, see [Business events overview](./fin-ops-core/dev-itpro/business-events/home-page.md).   
 
 ## Human resources business event catalog 
 
