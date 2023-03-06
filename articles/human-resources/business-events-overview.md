@@ -44,7 +44,7 @@ integration and notification scenarios.
 Business events can be consumed using Microsoft Power Automate and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use 
 business events.  
 
-For more information on business events, see [Business events overview](./fin-ops-core/dev-itpro/business-events/home-page.md).   
+For more information on business events, see [Business events overview](../fin-ops-core/dev-itpro/business-events/home-page.md).   
 
 ## Human resources business event catalog 
 
@@ -64,7 +64,7 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business 
 event. The next step is to manage the endpoints.   
 
-For more information about business events such as activation, performance, and errors, see [Business events overview](./fin-ops-core/dev-itpro/business-events/home-page.md#activating-business-events) and [Business events consumption models](.//fin-ops-core/dev-itpro/business-events/home-page.md#business-event-consumption-models).
+For more information about business events such as activation, performance, and errors, see [Business events overview](../fin-ops-core/dev-itpro/business-events/home-page.md#activating-business-events) and [Business events consumption models](../fin-ops-core/dev-itpro/business-events/home-page.md#business-event-consumption-models).
 
 ### Business events consumption models 
 
