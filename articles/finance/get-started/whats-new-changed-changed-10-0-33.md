@@ -40,14 +40,6 @@ on the following schedule:
 - **General availability of release (self-update):** April 2023
 - **General availability of release (auto-update):** May 2023
 
-## Features included in this release
-
-The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this 
-article was initially published.
-
-| Feature area | Feature | More information | Enabled by |
-|--------------|---------|------------------|------------|
-
 
 ## Feature enhancements included in this release
 
@@ -59,30 +51,6 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 | Globalization | Global withholding tax | The **Withholding tax** button is added to the **Purchase order** and **Vendor invoice** pages. Temporary withholding tax transactions can be calculated and displayed in these transactions. |
 |General ledger | Ability to view the **Original document** and **Original document date** for Ledger settlements |You can view the **Original document** and **Original document date** on the **Ledger settlement** page. This information will be updated for opening balances for the ledger settlement main accounts that are defined to keep detail during the year-end close process. | 
 |General ledger |Financial tags integration with the Ledger settlements automated process |When the Financial tags feature has been enabled in the Feature management workspace, you can select Financial tags as match criteria for the Ledger settlements automated process.|
-
-
-
-
-
-## Features turned on by default in this release
-
-The following table lists the features that are turned on by default in version 10.0.33. Most features that have been turned on atomically can be turned off in 
-[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on 
-automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as 
-enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to 
-be essential.
-
-| Feature name | Enable date | Feature state | Module |
-|--------------|-------------|---------------|--------|
-
-
-
-## Features removed from Feature management
-
-The following table lists the features that have been removed from Feature management in version 10.0.33.
-
-| Feature name | Enable date | Feature state | Module |
-|--------------|-------------|---------------|--------|
 
 
 ## Additional resources
