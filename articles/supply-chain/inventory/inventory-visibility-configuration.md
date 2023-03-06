@@ -171,6 +171,7 @@ Inventory Visibility provides a list of default physical measures that are mappe
 | `Registered` | Registered |
 | `ReservOrdered` | Ordered reserved |
 | `ReservPhysical` | Physical reserved |
+| `OrderedSum` | Ordered in total |
 
 If your data source is Supply Chain Management, you don't have to re-create the default physical measures. However, for external data sources, you can create new physical measures by following these steps.
 
