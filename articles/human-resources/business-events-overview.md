@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Human Resources
 # Human resources business events overview
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform 
 business actions in response to the business events. 
 
