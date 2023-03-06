@@ -311,6 +311,19 @@ If a device is lost or compromised, you must remove access to Supply Chain Manag
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
 
+## List of external URLs required by the app
+
+For the app to function correctly, the list specifies the external website URLs that need to be accessible from the internal network.
+
+1. *.microsoft.com
+1. *.microsoftonline.com
+1. login.windows.net
+1. *.appcenter.ms
+1. *.ces.microsoftcloud.com
+1. *.onyx.azure.net
+1. play.google.com
+1. itunes.apple.com
+
 ## Additional resources
 
 - [Mobile device user settings](mobile-device-user-settings.md)
