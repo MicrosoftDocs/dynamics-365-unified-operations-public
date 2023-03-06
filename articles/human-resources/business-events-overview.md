@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Business events overview
+# Human resources business events overview
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
@@ -35,8 +35,7 @@ ms.dyn365.ops.version: Human Resources
 Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform 
 business actions in response to the business events. 
 
-Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make 
-up the business process. 
+Business events occur when a business process is run. During a business process, users perform business actions to complete the tasks that make up the business process. 
 
 A business action that a user performs can be either a workflow action or a non-workflow action. Approval of a purchase requisition is an example of a workflow action,
 whereas confirmation of a purchase order is an example of a non-workflow action. Both types of actions can generate business events that external systems can use in 
@@ -55,17 +54,14 @@ The business events catalog can be found by going to **System administration > S
 available in the instance that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business 
 event ID, and name. 
 
-The category of a business event identifies its source. Business events that originate from the workflow system are assigned to the **Workflow category**. For business 
-events that originate from other modules, the module name is used as the category name. 
+The category of a business event identifies its source. Business events that originate from workflow are assigned to the **Workflow category**. For business events that originate from other modules, the module name is used as the category name. 
 
-The business event catalog is built during database synchronization at the time of deployment. Therefore, users should see the complete list of business events in the 
-catalog. However, if an explicit update of the catalog is required, select **Manage > Rebuild business events catalog**.  
+The business event catalog is built during database synchronization at the time of deployment. Users should see the complete list of business events in the catalog. If an explicit update of the catalog is needed, go to **Manage > Rebuild business events catalog**.  
  
-
 For each business event, the business event catalog shows a description. This description can help you better understand the business event and its context in the 
 business process. The catalog also shows the list of data fields that will be sent out in the event. 
 
-In scenarios where external integration systems require the schema of the payload for a business event during development, you can select **Download schema** to download the JavaScript Object Notation (JSON) schema. 
+In scenarios where external integration systems require the schema of the payload for a business event during development, select **Download schema** to download the JavaScript Object Notation (JSON) schema. 
 
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business 
 event. The next step is to manage the endpoints.   
