@@ -28,6 +28,20 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Commerce 10.0.33 release
+
+### Accessiblity Insights integration within site builder
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Similar results can be achieved with less latency by installing the Accessiblity Insights browser plugin from https://accessibilityinsights.io/. Low feature usage, maintenance costs, and the availability of a more efficient browser plugin were the reasons for deprecation. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Site builder |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plugin. |
+
+### Commerce parameters setting - Enable price report for retail store
+
 ## Features removed or deprecated in the Commerce 10.0.29 release
 
 ### Commerce parameters setting - Allow price adjustments to increase product price
