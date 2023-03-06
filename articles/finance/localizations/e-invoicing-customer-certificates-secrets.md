@@ -37,10 +37,10 @@ To create and set up certificates and secrets, follow these steps.
 8. In the **Type** field, select **Certificate** if you're referencing the certificate that is stored in the key vault. Select **Secret** if you're referencing the secret that is stored in the key vault.
 9. Select **Save**.
 
-> [!NOTE]
-> In some scenarios, you must use public certificates that have the .cer file name extension. However, Key Vault doesn't support importing and storing certificates of this type as Key Vault certificates. In these scenarios, you should save the .cer file as a Base-64-encoded X.509 (.CER) string. Then, in a Key Vault secret, store the string that appears between the **BEGIN CERTIFICATE** line and the **END CERTIFICATE** line in the file. In the service environment, you should still create a reference to the Key Vault record and set the **Type** field to **Certificate**.
+    > [!NOTE]
+    > In some scenarios, you must use public certificates that have the .cer file name extension. However, Key Vault doesn't support importing and storing certificates of this type as Key Vault certificates. In these scenarios, you should save the .cer file as a Base-64-encoded X.509 (.CER) string. Then, in a Key Vault secret, store the string that appears between the **BEGIN CERTIFICATE** line and the **END CERTIFICATE** line in the file. In the service environment, you should still create a reference to the Key Vault record and set the **Type** field to **Certificate**.
 
-10. As an alternative to the note above, use the next PowerShell script to generate Base64 string of the .cer certificate file:
+10. As an alternative to the approach that's described in the preceding note, use the following PowerShell script to generate a Base-64 string of the .cer certificate file.
 
     ```powershell
     $FilePath = ''
