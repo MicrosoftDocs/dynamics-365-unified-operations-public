@@ -2,7 +2,7 @@
 title: Run the point of sale (POS) samples
 description: This article explains how to run the POS samples.
 author: josaw1
-ms.date: 11/27/2017
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -93,11 +93,11 @@ There are several samples in the Retail SDK that demonstrate extensions. This ar
     ```
     > [!Note] 
     > Other extension package folders, even though not included in the Visual Studio project, should be kept in the exclude list if they are not meant to be included.
-6. Set **Solution platform** to **x86** and **Deploy option** to **Local Machine** or **Simulator** if you are using Modern POS for validation.
-7. Click **Save all** and press the **F5** key to validate the extensions.
+6. Set **Solution platform** to **x86** and **Deploy option** to **Local Machine**, or **Simulator** if you are using the Store Commerce app for validation.
+7. Select **Save all**, and then select the **F5** key to validate the extensions.
 
     > [!Note] 
-    > For cloud POS, use a clean solution in Visual Studio, and then rebuild the solution.
+    > For -Store Commerce for web, use a clean solution in Visual Studio, and then rebuild the solution.
 8. Go to the product search screen or use the top search bar to search for a product. You should see custom columns in the grid and new app bar buttons.
 
 

@@ -61,34 +61,7 @@ The microservice of Inventory Visibility is deployed on Microsoft Azure Service 
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
-The region short name can be found in the Lifecycle Services environment. The following table lists the regions that are currently available.
-
-| Azure region        | Region short name |
-| ------------------- | ----------------- |
-| Australia east      | eau               |
-| Australia southeast | seau              |
-| Canada central      | cca               |
-| Canada east         | eca               |
-| North Europe        | neu               |
-| West Europe         | weu               |
-| East US             | eus               |
-| West US             | wus               |
-| South UK            | suk               |
-| West UK             | wuk               |
-| East Japan          | ejp               |
-| West Japan          | wjp               |
-| Central India       | cin               |
-| South India         | sin               |
-| Switzerland North   | nch               |
-| Switzerland West    | wch               |
-| France South        | sfr               |
-| East Asia           | eas               |
-| South East Asia     | seas              |
-| Uae North           | nae               |
-| Norway East         | eno               |
-| Norway West         | wno               |
-| South Africa West   | wza               |
-| South Africa North  | nza               |
+The region short name can be found in the Lifecycle Services environment. For a list of regions (and region short names) that are currently supported, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 The island number is where your Lifecycle Services environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
 

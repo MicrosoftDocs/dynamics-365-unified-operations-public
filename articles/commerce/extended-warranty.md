@@ -2,12 +2,12 @@
 title: Create and configure extended warranties
 description: This article covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/08/2020
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
@@ -31,7 +31,7 @@ Extended warranties can be sold to customers in a retail channel during the init
 
 ### Warranty item setup
 
-Dynamics 365 Commerce provides functionality that lets you create a warranty item and set attributes for it. These attributes include the association between a product and a warranty item, the price of the warranty, and the duration of the warranty. After a warranty item is configured and released to the organizational unit, a retailer can sell warranties through Modern Point of Sale (MPOS), online stores, and other retail channels.
+Dynamics 365 Commerce provides functionality that lets you create a warranty item and set attributes for it. These attributes include the association between a product and a warranty item, the price of the warranty, and the duration of the warranty. After a warranty item is configured and released to the organizational unit, a retailer can sell warranties through the Store Commerce point-of-sale, online stores, and other retail channels.
 
 ### Warranty item sales
 
@@ -62,7 +62,7 @@ To create a warranty item in Commerce, follow these steps.
 1. Select **New** to create a warranty item.
 1. In the **New product** dialog box, in the **Product type** field, select **Service**.
 1. In the **Product subtype** field, select **Product**.
-1. In the **Product service type** field, select **Service**.
+1. In the **Product service type** field, select **Warranty**.
 1. In the **Product name** field, enter the product name.
 1. In the **Retail category** field, select a value in the drop-down dialog box, and then select **OK**.
 1. In the **Product number**, enter the product number.

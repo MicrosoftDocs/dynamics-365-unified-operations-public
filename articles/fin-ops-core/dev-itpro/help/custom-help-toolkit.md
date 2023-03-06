@@ -2,7 +2,7 @@
 title: Custom Help Toolkit
 description: This article describes the components of the Custom Help Toolkit for finance and operations apps.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/21/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -19,6 +19,8 @@ ms.dyn365.ops.version: Operations
 Microsoft has published a GitHub repository (repo) that includes scripts and tools that can help you prepare context-sensitive Help for customized finance and operations solutions. This context-sensitive Help can be accessed from the in-product **Help** pane.
 
 ## Tools in the toolkit
+
+[!INCLUDE [custom-help-toolkit-deprecation](../includes/custom-help-toolkit-deprecation.md)]
 
 The Custom Help Toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help](https://github.com/microsoft/dynamics365f-o-custom-help/). The repo contains the following tools and the source code for those tools:
 

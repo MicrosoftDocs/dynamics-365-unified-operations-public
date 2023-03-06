@@ -4,7 +4,7 @@
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: stuharg 
-ms.date: 11/30/2022
+ms.date: 02/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,7 +17,6 @@ ms.search.validFrom: 2018-10-29
 # Store Commerce app for mobile platforms
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce apps for Android and iOS.
 
@@ -26,11 +25,11 @@ The Dynamics 365 Commerce mobile apps for Android and iOS make the process of de
 The Store Commerce mobile apps retain full functional parity with current Retail hybrid apps. In addition, Store Commerce for iOS includes support for a dedicated hardware station, so that iOS devices can communicate with networked payment terminals, receipt printers, and cash drawers without requiring the deployment of a shared hardware station. 
 
 > [!IMPORTANT]
-> The Store Commerce apps for Windows, Android and iOS are the next generation POS applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the Android and iOS Retail POS hybrid apps in late 2023, and recommends that you use Store Commerce or Cloud POS (CPOS) for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid apps to Store Commerce. For more information, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
+> The Store Commerce apps for Windows, Android, and iOS are the next generation POS applications for Dynamics 365 Commerce. The Store Commerce apps offer numerous improvements over their predecessors while retaining full functional and feature parity. Microsoft will deprecate MPOS and the Retail Hybrid apps for Android and iOS in late 2023, and recommends that you use the Store Commerce apps for Windows, Android, and iOS and Store Commerce for web for all new POS deployments. Existing customers should plan to migrate from MPOS and the Retail hybrid apps to Store Commerce. For more information, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## App architecture
 
-The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when it's deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render CPOS directly from the Commerce Scale Unit (CSU), and connect to Headless Commerce and Commerce headquarters via the CSU. The shell application model enables Store Commerce apps to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
+The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when it's deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Store Commerce for web directly from the Commerce Scale Unit (CSU), and connect to Headless Commerce and Commerce headquarters via the CSU. The shell application model enables Store Commerce apps to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
 
 To update a Store Commerce mobile app, just update the CSU. All new POS functionality and features will automatically be picked up by the app. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
@@ -52,7 +51,7 @@ You can install Store Commerce mobile apps directly from the Google Play store o
 - [Store Commerce app for Android](https://aka.ms/storecommerceandroid)
 - [Store Commerce app for iOS](https://aka.ms/storecommerceios)
 
-The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
+The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). 
 
 ## Device and register setup
 
@@ -83,7 +82,7 @@ After devices and registers have been configured, in Commerce headquarters, go t
 To activate a device on a Store Commerce mobile app, follow these steps.
 
 1. Open the app on the mobile device.
-1. Enter the CPOS URL, which you can find on the environment details page in Lifecycle Services, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
+1. Enter the CPOS URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
 1. Sign in by using the credentials of a worker who has permission to manage devices.
 1. Select the store that is associated with the register that you created or reused in Commerce headquarters.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
@@ -107,6 +106,6 @@ The following table compares the capabilities of the Store Commerce app across W
 
 [Store Commerce app](store-commerce.md)
 
-[Choose between Store Commerce and Cloud POS](../mpos-or-cpos.md)
+[Choose between Store Commerce app and Store Commerce for web](../mpos-or-cpos.md)
 
 [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md)

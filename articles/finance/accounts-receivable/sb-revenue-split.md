@@ -4,7 +4,7 @@
 title: Revenue split templates in Subscription billing
 description: This article explains how to set up revenue split templates for items that are sold as bundles.
 author: JodiChristiansen
-ms.date: 04/21/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -103,6 +103,9 @@ To create a billing schedule that has an item that is set up for revenue split, 
 > - The child items are automatically entered on the sales order or billing schedule line.
 >
 > If the **Automatically create revenue split** option is set to **No**, the behavior is as explained earlier.
+
+> [!Note]
+> A feature was added in Dynamics 365 Finance version 10.0.32 that allows a **Billing schedule line with revenue split** to set **Renew automatically** to **Yes**. 
 
 ## Additional revenue split information
 

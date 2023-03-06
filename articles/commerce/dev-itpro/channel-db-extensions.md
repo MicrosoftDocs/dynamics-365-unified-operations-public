@@ -2,7 +2,7 @@
 title: Channel database extensions
 description: This article explains how to extend the channel database.
 author: josaw1
-ms.date: 12/08/2020
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.custom: 83892
 
 [!include [banner](../../includes/banner.md)]
 
-The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Headquarters (HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
+The channel database (channel DB) holds transactional and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. The master data is pushed down from headquarters to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
 In this article we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 Finance and Commerce.
 
@@ -32,12 +32,14 @@ We have made some improvements to how extensions are handled during an upgrade. 
 - Microsoft Dynamics 365 Retail 7.3, which includes application update 5.
 - Microsoft Dynamics 365 Finance 7.3, which includes application update 5.
 
+For more information, see [Pre-extended columns in the channel database](extended-columns.md).
+
 ## Ext schema
 
-In Finance and Commerce there is a now schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions will not have permission to read the CRT, AX, and DBO schema definition during deployment, do not include any queries in the extension script to read the CRT, AX, and DBO schema definition.
+In Finance and Commerce there's a now schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Commerce, you can't change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that you don’t have permission to modify the CRT, AX, and DBO schemas. Extensions won't have permission to read the CRT, AX, and DBO schema definition during deployment, do not include any queries in the extension script to read the CRT, AX, and DBO schema definition.
 
 > [!NOTE]
-> If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Changes will not be automatically pushed to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
+> If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Changes won't be automatically pushed to the channel DB, and extensions won't have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
 
 ## Best practices for channel DB extensions
 
@@ -46,7 +48,7 @@ In Finance and Commerce there is a now schema called the **ext schema** to suppo
 
 ### Don't do this
 
-The following is an example of what you should not do. Instead, you should use the CRT data service to get the primary key value and then use the primary key to insert into your extension table.
+The following is an example of what you shouldn't do. Instead, you should use the CRT data service to get the primary key value and then use the primary key to insert into your extension table.
 
 ```sql
 MERGE INTO [ax].RETAILCUSTPREFERENCE   --DONT access ax schema object
@@ -88,8 +90,8 @@ END;
 - Don't create any new extension tables, views, or procs in crt, ax, or dbo schema. All extension artifacts must be done in ext schema.
 - Don't use any of the crt, ax or dbo schema data types in ext schema. Create custom types in ext schema and use it.
 - Don’t modify any views, procedures, functions, or any of the database artifacts.
-- Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service does not expose the data that you need. In these cases, it is still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
-- Don't access any dbo.objects from extension scripts because dbo schema objects will not be available in Commerce scale unit deployments.
+- Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service doesn't expose the data that you need. In these cases, it's still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+- Don't access any dbo.objects from extension scripts because dbo schema objects won't be available in Commerce scale unit deployments.
 
 ```sql
 CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
@@ -107,7 +109,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 ## Adding extensions
 
-1. If you are creating an extended table and want to sync the data back to HQ, then the table must have the same primary key and clustered index as the HQ table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to HQ, then the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) is required in the extension table.
+1. If you're creating an extended table and want to sync the data back to headquarters, then the table must have the same primary key and clustered index as the headquarters table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to headquarters, then the **REPLICATIONCOUNTERFROMORIGIN** identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,`) is required in the extension table. The **REPLICATIONCOUNTERFROMORIGIN** field can't be the sole unique field.
 
 2. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
 
@@ -134,7 +136,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
     ```
 
-4. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from HQ.
+4. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from headquarters.
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
@@ -145,19 +147,19 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 ## Attributes
 
-We extended the attribute framework in HQ to support attributes for Customers, Customer orders, cash and carry transactions and call center orders.
+We extended the attribute framework in headquarters to support attributes for Customers, Customer orders, cash and carry transactions and call center orders.
 
 ### Customer attributes
 
-With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in commerce parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - **Customer** panel.
+With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or headquarters. After configuring the customer attribute group in commerce parameters, POS and headquarters will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - **Customer** panel.
 
 ### Order attributes
 
-The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.) Previously, you had to create new tables in HQ and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration.
+The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in headquarters or in CRT. All this can be done through configurations, without any database changes. (You can customize the attribute values for core business logic, but this isn't required for basic CRUD operations.) Previously, you had to create new tables in headquarters and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration.
 
 ## Adding a new table
 
-In this scenario we will explain how to create a new table and add it to the channel DB. All extension code has access to the **ext schema**.
+In this scenario we'll explain how to create a new table and add it to the channel DB. All extension code has access to the **ext schema**.
 
 - Create a new table in the channel database in the **ext schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
 
@@ -186,11 +188,11 @@ In this scenario we will explain how to create a new table and add it to the cha
     GO
 
 > [!NOTE]
-> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the `REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL` (required if the table data is per company). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
+> If the new extension table data needs to be pulled into Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column (`[REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL` and `[DATAAREAID] [nvarchar](4) NOT NULL`). The **REPLICATIONCOUNTERFROMORIGIN** field can't be the only unique field and is required if the table data is per company. This is also required for a CDX pull job. **REPLICATIONCOUNTERFROMORIGIN** isn't required if the data is pushed from Retail headquarters to the channel database, and is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
-If you are extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
+If you're extending existing table, then you must either use attributes if supported for that entity or create and extended table (new table) with same primary key as the parent table. The following script extends a table.
 
 ```sql
 CREATE TABLE [ext].[RETAILTRANSACTIONTABLE](
@@ -219,7 +221,7 @@ All new stored procedures, views or functions must be created in the **ext schem
 
 ## Deployment checks
 
-The deployment process determines if there are any modification to the database artifacts. If you have attempted to modify the CRT, AX, or DBO schema objects, or access them for any scenario directly in SQL, then deployment will fail.
+The deployment process determines if there are any modification to the database artifacts. If you've attempted to modify the CRT, AX, or DBO schema objects, or access them for any scenario directly in SQL, then deployment will fail.
 
 ## Deployment timeout
 
@@ -227,60 +229,59 @@ SQL server will time outs if the deployment script runs for more than 30 minutes
 
 ## Extension scripts and deployment
 
-Channel Database extensions are provided by authoring one or more T-SQL script files and including them in a [deployable package](./retail-sdk/retail-sdk-packaging.md). This process is described in the [Retail SDK](./retail-sdk/retail-sdk-overview.md) documentation.
+Channel database extensions are provided by authoring one or more T-SQL script files and including them in a [deployable package](./retail-sdk/retail-sdk-packaging.md). This process is described in the [Retail SDK](./retail-sdk/retail-sdk-overview.md) documentation.
 
 Extension script files must be written using [T-SQL](/sql/t-sql/language-reference) and compatible with [Azure SQL Database](/azure/sql-database/sql-database-features).
-The script files must end with the *.sql* file extension, any other files will be ignored or may induce a packaging or deployment failure. If you intend to deploy your Channel Database extensions as part of Commerce Scale Unit or Modern POS offline,
-the scripts must also be compatible with the version of SQL Express and/or SQL Server that will be used for those components.
+
+The script files must end with the *.sql* file extension, any other files will be ignored or may induce a packaging or deployment failure. If you intend to deploy your channel database extensions as part of Commerce Scale Unit or Store Commerce app offline, the scripts must also be compatible with the version of SQL Express and/or SQL Server that will be used for those components.
 
 During deployment and installation, the extension scripts are executed in alphabetical order based on the script file name.
-Each script is run to completion and then a metadata record is added to the Channel Database's CRT.RETAILUPGRADEHISTORY table to track the completion of that extension script.
-The script will not be executed again for the same Channel Database in subsequent deployments if that metadata record is present.
-If a script fails during execution and does not complete successfully, its metadata will not be stored and the script will be rerun on subsequent deployments.
+Each script is run to completion and then a metadata record is added to the channel database's CRT.RETAILUPGRADEHISTORY table to track the completion of that extension script.
+
+The script won't be executed again for the same channel database in subsequent deployments if that metadata record is present.
+If a script fails during execution and doesn't complete successfully, its metadata won't be stored and the script will be rerun on subsequent deployments.
 
 If the deployment or installation is combined with an update of the product, the extension scripts are run after the product update.
 
-To author a successful Channel Database extension, you must adhere to the following guidelines.
+To author a successful channel database extension, you must adhere to the following guidelines.
 
 ### Use a naming convention that ensures stable order when sorted alphabetically
 
 Because extension scripts are executed in alphabetical order based on the file name, you should establish a naming convention that ensures that the correct execution order is used when sorted.
 
-One example would be naming files with the following pattern: `<ISO 8601 date>_<descriptio>.sql`, where `<ISO 8601 date>` is a ISO 8601 formatted date and `<description>` is descriptive text to identify the purpose of the script.
-For instance, *"20180501_CustomerDetails.sql"* and *"20181102_CustomerDetailsIndex.sql"*.
-The former would represent an extension script authored on May 1, 2018 that is related to "Customer Details" feature and the latter an extension script associated to indexes related to the previous feature authored on November 2, 2018.
+One example would be naming files with the following pattern: `<ISO 8601 date>_<descriptio>.sql`, where `<ISO 8601 date>` is an ISO 8601 formatted date, and `<description>` is descriptive text to identify the purpose of the script. Using *"20180501_CustomerDetails.sql"* and *"20181102_CustomerDetailsIndex.sql"* as  examples, the former represents an extension script authored on May 1, 2018 that is related to the "Customer Details" feature, and the latter represents an extension script associated to indexes related to the previous feature authored on November 2, 2018.
 
 Another simpler alternative is to use an incremental numeric prefix, such as "0001_CustomerDetails.sql" and "0002_CustomerDetailsIndex.sql".
 
 If one script depends on another having executed successfully, you must name then in a way that ensures that the file name in alphabetical order matches the required execution order.
 
-### Do not alter extension scripts that have been published
+### Don't alter extension scripts that have been published
 
-If you have released a deployable package or installer extension that contains Channel Database extension scripts, do not alter those scripts. Extension scripts are run only once per Channel Database instance.
-If you alter published scripts and those scripts may have already been run against a Channel Database, the modifications to an already executed script will not be applied to the database.
+If you've released a deployable package or installer extension that contains channel database extension scripts, don't alter those scripts. Extension scripts are run only once per channel database instance.
+If you alter published scripts and those scripts may have already been run against a channel database, the modifications to an already executed script won't be applied to the database.
 
 Instead, provide the modifications in a new script file. Consider the naming convention noted above to ensure that it runs after its dependencies.
 
-### Do not remove old extension scripts that have been published
+### Don't remove old extension scripts that have been published
 
 Your deployable package or installer extension must represent a cumulative update for your database extensions. There should be no dependencies on previous versions of an extension package or installer. A customer should be able to apply your extension package or installer without depending on a previous version of your package or extension.
 
-If your extension scripts have been published as part of a deployable package or installer extension, do not remove them from subsequent updates in your package or installer. To account for disaster recovery, upgrade and scale out scenarios, extension packages may be
-used to bring a new instance of the Channel Database to the same version of the last deployed extension package.
+If your extension scripts have been published as part of a deployable package or installer extension, don't remove them from subsequent updates in your package or installer. To account for disaster recovery, upgrade and scale out scenarios, extension packages may be
+used to bring a new instance of the channel database to the same version of the last deployed extension package.
 
 ### Extension scripts must be idempotent and reentrant
 
-Although extension scripts are run only once per Channel Database, scripts may fail due to authoring errors or transient SQL errors, like time outs or transaction deadlocks. The extension scripts must be idempotent and reentrant to account for those failure scenarios.
-If the extension script fails due to any error, it may be rerun. Rerunning the script should not adversely affect the database.
+Although extension scripts are run only once per channel database, scripts may fail due to authoring errors or transient SQL errors, like time outs or transaction deadlocks. The extension scripts must be idempotent and reentrant to account for those failure scenarios.
+If the extension script fails due to any error, it may be rerun. Rerunning the script shouldn't adversely affect the database.
 
-### Do not assume that the Channel Database data is perennial
+### Don't assume that the channel database data is perennial
 
-The Channel Database is a transactional database that provides storage support for operations performed by Commerce Scale Unit. All data that is stored in the Channel Database that must be kept for long periods of time must be uploaded to the headquarters
+The channel database is a transactional database that provides storage support for operations performed by Commerce Scale Unit. All data that is stored in the channel database that must be kept for long periods of time must be uploaded to the headquarters
 through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to the headquarters can be accessed by the [Commerce Data Exchange Real-time Service](./extend-commerce-data-exchange.md).
 
 ### Do write backward compatible channel database extensions
 
-The Channel Database is expected to be backward compatible. This means that updating only the Channel Database without updating Commerce Scale Unit or POS must not prevent existing Commerce Scale Unit or POS operations from functioning correctly. During deployment flows, the different components of your Commerce Scale Unit and Modern POS are updated in the inverse other of dependency. This means that the Channel Database is the first component to be updated, and Commerce Scale Unit or POS are updated next. If Commerce Scale Unit or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the Channel Database is not rolled back to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successful deployment is performed.
+The channel database is expected to be backward compatible. This means that updating only the channel database without updating Commerce Scale Unit or POS must not prevent existing Commerce Scale Unit or POS operations from functioning correctly. During deployment flows, the different components of your Commerce Scale Unit and Store Commerce app are updated in the inverse other of dependency. This means that the channel database is the first component to be updated, and Commerce Scale Unit or POS are updated next. If Commerce Scale Unit or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the channel database isn't rolled back to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successful deployment is performed.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

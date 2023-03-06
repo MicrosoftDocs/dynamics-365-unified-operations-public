@@ -2,7 +2,7 @@
 title: Peripheral simulator for Commerce
 description: This article describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/22/2018
+ms.date: 02/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -139,7 +139,7 @@ Several operations at the POS can cause the cash drawer to open. Most operations
 The peripheral simulator provides robust support for virtual MSR operations by working in either OPOS mode or keyboard wedge mode. OPOS mode requires that the MSR be configured in the hardware profile to work as an OPOS device. Keyboard wedge mode just sends keyboard wedge data events to Microsoft Windows. Besides differences in setup, OPOS and keyboard wedge modes differ in the following ways:
 
 - The POS client enables OPOS MSR devices for specific scenarios, such as scenarios that allow for magnetic stripe data for loyalty or gift card entry.
-- In keyboard wedge mode, the peripheral simulator sends keyboard wedge data to the field that is active when the data is sent. This behavior resembles the behavior that occurs if the data is entered by using a keyboard. To use the MSR as a keyboard wedge, the user must switch to Modern POS (MPOS) to make sure that data is received in the correct field. Therefore, you can configure a delay, so that the user has time to make sure that the data will be sent to the correct field.
+- In keyboard wedge mode, the peripheral simulator sends keyboard wedge data to the field that is active when the data is sent. This behavior resembles the behavior that occurs if the data is entered by using a keyboard. To use the MSR as a keyboard wedge, the user must switch to the Store Commerce app to make sure that data is received in the correct field. Therefore, you can configure a delay, so that the user has time to make sure that the data will be sent to the correct field.
 
 #### Testing gift and payment card swipes
 
@@ -211,7 +211,7 @@ You can edit the peripheral simulator's configuration file to more appropriately
 
 Activities for the peripheral simulator are logged in the peripheral simulator. You can find the log at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The peripheral simulator also reports issues to the Windows event log, which you can access at **Application and Services Logs** &gt; **Microsoft** &gt; **DynamicsAX**.
 
-If changes that you made to the hardware profile or other areas aren't evident when you use MPOS or the peripheral simulator, check the distribution scheduler jobs that you used to synchronize the data to the channel database. If the changes were synchronized but still aren't evident at the POS, restart the POS client.
+If changes that you made to the hardware profile or other areas aren't evident when you use the Store Commerce app or the peripheral simulator, check the distribution scheduler jobs that you used to synchronize the data to the channel database. If the changes were synchronized but still aren't evident at the POS, restart the POS client.
 
 Changes to configured cash drawers aren't effective until a new shift is created. Therefore, if you make changes to cash drawers, make sure that you always close the existing shift to test the new cash drawer setup.
 
@@ -221,7 +221,7 @@ At install time, it's possible that certain assemblies related to the virtual pe
 
 ## POS simulator
 
-The POS simulator lets device manufacturers, independent software vendors (ISVs), and retailers test peripheral devices without having to deploy the POS. By using the same business logic for peripherals as MPOS and the standalone hardware station, the POS simulator can determine device driver compatibility with the POS as a standalone utility. Therefore, device selection can occur independently of POS setup and deployment.
+The POS simulator lets device manufacturers, independent software vendors (ISVs), and retailers test peripheral devices without having to deploy the POS. By using the same business logic for peripherals as the Store Commerce app and the standalone hardware station, the POS simulator can determine device driver compatibility with the POS as a standalone utility. Therefore, device selection can occur independently of POS setup and deployment.
 
 The POS simulator is also provided as a standalone utility that is independent of Commerce. As a standalone utility, the POS simulator is primarily used to test peripheral device compatibility. Only devices that are tested by using the POS simulator are acceptable for new deployments of the POS. Testing should be driven by the device manufacturers themselves. Parts of the POS simulator overview are intended to explain how the POS simulator is used for compatibility testing. Manufacturers that are interested in testing their devices for compatibility with the POS or standalone hardware station should send an email to drpc@microsoft.com to request information about the program.
 
@@ -245,7 +245,7 @@ The POS simulator supports the following devices:
     > [!NOTE]
     > A payment terminal requires that a payment connector be present. For more information, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
-Below the list of supported devices, there is a **Settings** tab. You can use the **Settings** tab to specify how the POS simulator should communicate with the devices that are being tested. If **Runtime** is selected, the method that the POS simulator uses to communicate with the device resembles the method that MPOS that has a built-in hardware station communicates. If **Win32** is selected, the POS simulator communicates directly with the device. This communication method resembles the method that a standalone hardware station communicates.
+Below the list of supported devices, there is a **Settings** tab. You can use the **Settings** tab to specify how the POS simulator should communicate with the devices that are being tested. If **Runtime** is selected, the method that the POS simulator uses to communicate with the device resembles the method that the Store Commerce app with a built-in hardware station communicates. If **Win32** is selected, the POS simulator communicates directly with the device. This communication method resembles the method that a standalone hardware station communicates.
 
 On the **Settings** tab, you can also provide details about the user who is performing the tests. These details are important for manufacturers that perform compatibility testing.
 

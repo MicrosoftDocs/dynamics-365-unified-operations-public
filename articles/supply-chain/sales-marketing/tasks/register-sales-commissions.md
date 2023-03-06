@@ -33,7 +33,7 @@ Take note of the customer and item numbers that you have chosen for the commissi
 
 
 ## Invoice a sales order that qualifies a salesperson for a commission
-1. In the navigation pane, go to **Modules > Sales and marketing > Sales orders > All sales orders**.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 2. Select **New**.
 3. In the **Customer account** field, select the desired record from the drop-down menu.
 4. Select **OK**.

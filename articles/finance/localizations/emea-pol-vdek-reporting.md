@@ -1,7 +1,7 @@
 ---
 title: JPK-V7M reporting
 description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
@@ -52,7 +52,7 @@ The following table shows an example of sales tax reporting codes and their mapp
 | K_22             | The taxable amount of the export of goods. | 10901, 10905 |
 | K_23             | The taxable amount of the intra-community acquisition of goods. | 10810, 10811 (Reverse change) |
 | K_24             | The value of output VAT for the intra-community acquisition of goods. | 10812 |
-| K_25             | The taxable amount of the import of goods that must be settled under article 33a of the VAT Act, as confirmed by the customs declaration or import declaration that is referred to in article 33b of the VAT Act. | 111010 |
+| K_25             | The taxable amount of the import of goods that must be settled under article 33a of the VAT Act, as confirmed by the customs declaration or import declaration that is referred to in article 33b of the VAT Act. | 11010 |
 | K_26             | The value of output VAT for the import of goods that must be settled under article 33a of the VAT Act, as confirmed by the customs declaration or import declaration that is referred to in article 33b of the VAT Act. | 11012 |
 | K_27             | The taxable amount that arises from the import of services that are subject to article 28b of the VAT Act. Services that are purchased from the VAT taxpayers are excluded. | 11110, 11117 (Reverse change) |
 | K_28             | The value of output VAT that arises from the import of services that are subject to article 28b of the VAT Act. Services that are purchased from the VAT taxpayers are excluded. | 11112 |

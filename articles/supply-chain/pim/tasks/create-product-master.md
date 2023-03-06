@@ -31,7 +31,7 @@ Create a product master for the predefined variants. The demo data company used 
 
 
 ## Create a new product master
-1. Go to **Navigation pane > Modules > Product information management > Products > Product masters**.
+1. Go to **Product information management > Products > Product masters**.
 2. Click **New**.
 3. In the **Product number** field, type a value. The number must be unique. A number sequence can be set for the **Product number** field. In this case, the user doesn't have to enter a value.
 4. In the **Product name** field, type a value. Enter a descriptive product name. The value defaults to the search name, but this can be changed by the user.

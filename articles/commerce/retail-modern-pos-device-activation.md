@@ -4,26 +4,15 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 08/31/2022
+ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTable
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -31,14 +20,15 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to configure, download, and install Modern POS on various platforms. This article is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
+> [!WARNING]
+> After Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (shown in point of sale as version 9.27). The migration to .NET Core is the reason for this requirement.
+
+This article describes how to configure, download, and install Modern point of sale (MPOS) on various platforms. This article is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
->
-> Starting in release 10.0.11, altering customized files that are stored in the ClientBroker folder could cause issues when installing a newer release. These issues might include the inability to go offline or a newer installer failing to complete successfully. A workaround is to remove the files in the ClientBroker folder in the Modern POS directory before performing the installation using the newer installer.
-> 
-> Starting in 10.0.15 release, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder prior to running the newer Modern POS installer. For automation, this can easily be scripted as a pre-step for the installer. All files in this folder must be deleted. When this error occurs, the newer installer will update the current installation correctly.
+> - Starting in Commerce version 10.0.11, altering customized files that are stored in the ClientBroker folder could cause issues when installing a newer release. These issues might include the inability to go offline or a newer installer failing to complete successfully. A workaround is to remove the files in the ClientBroker folder in the Modern POS directory before performing the installation using the newer installer.
+> - Starting in Commerce version 10.0.15, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder prior to running the newer Modern POS installer. For automation, this can easily be scripted as a pre-step for the installer. All files in this folder must be deleted. When this error occurs, the newer installer will update the current installation correctly.
 
 ## Technology
 
@@ -120,6 +110,9 @@ If you are installing Modern POS for use with an on-premises environment, you mu
 ModernPosSetupOffline.exe -UseAdfsAuthentication
 ```
 
+> [!NOTE]
+> The **UseAdfsAuthentication** parameter is only available for non-sealed MPOS. Customers that need to use Active Directory Federation Services (ADFS) authentication for an on-premises deployment using the sealed extensibility model should instead use the [Store Commerce app](dev-itpro/store-commerce.md).
+
 ### Run the Modern POS installer on a Windows computer
 
 The Modern POS installer first extracts the associated files and then starts the installation.
@@ -192,7 +185,7 @@ You must complete this procedure before you activate Modern POS for a new worker
 5. On the Action Pane, select **Commerce**, and then select **Associate existing identity**.
 6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Azure AD account has been created, select that account instead.)
 7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in Headquarters is your administrator Azure AD account.
-8. On the Action Pane, select **Save**, and then refresh the page. The **External identity** section should be now updated with the new information.
+8. On the Action Pane, select **Save**, and then refresh the page. The **External identity** section should now be updated with the new information.
 
     Note that the **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
 
@@ -315,7 +308,7 @@ The device should now be activated and ready to use.
         8. Open **Certmgr.msc** and go to **Trusted Root Certificate Authorities**. Use the **Import** action to import the previously generated **rootCA.pem** root CA file.
         9. In the same window, go to **Personal** and use the **Import** action to import the previously generated **server.pfx**.
         10. Next, open the **IIS Manager**, select the **RetailHardwareStationWebSite** and select **Edit Bindings** from the right-most menu.
-        11. In the new window, select the HTTPS site binding, and the select **Edit**. In the final screen, select the newly installed certificate and select **OK**.
+        11. In the new window, select the HTTPS site binding, and then select **Edit**. In the final screen, select the newly installed certificate and select **OK**.
         12. Verify the certificate is correctly being used. In a web browser, go to `https://<hostname>/HardwareStation/ping`.
         13. Install the certificate on the iOS device:
 
@@ -323,7 +316,7 @@ The device should now be activated and ready to use.
             - Using OneDrive or another file hosting location, upload the **rootCA.crt** and **server.crt** so that they can be downloaded onto the iOS device.
 
         14. On the iOS device, go to **Settings &gt; General &gt; Profiles** and select the downloaded profile for the **rootCA.crt**. Select **Install**.
-        15. Validate that the profile status updates to **Verified**.Repeat the same process for the **server.crt** file.
+        15. Validate that the profile status updates to **Verified**. Repeat the same process for the **server.crt** file.
         16. Go to **Settings &gt; General &gt; About &gt; Certificate Trust Settings** and enable the installed root certificate.
         17. On the iOS device, use the hardware station ping URL specified previously to verify that the certificate is trusted.
         18. Open the POS application in **Non-drawer mode** and pair to the hardware station as typically performed.
@@ -339,7 +332,7 @@ The device should now be activated and ready to use.
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
 - When using Modern POS on an Android device, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
-    
+  
     **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later, and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android device.
 
 - Device activation isn't completed. It fails during one of the steps.
@@ -350,7 +343,7 @@ The device should now be activated and ready to use.
     - On the client computer where you're activating the device, access the Commerce Scale Unit URL health check, and make sure that the health check is passed. Use the following format for the URL: `https://MyCompanyNameret.axcloud.dynamics.com/commerce/healthcheck?testname=ping`
     - The worker must be mapped to an Azure AD account (under **External identity**).
     - The Azure AD account that is mapped must belong to the same tenant.
-    - To map the worker to the Azure AD account, sign in to Headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).
+    - To map the worker to the Azure AD account, sign in to Headquarters by using the Admin account for Microsoft Dynamics Lifecycle Services.
     - Make sure that the worker is set up as a Commerce user in the Manager role. (This item is checked by validation.)
     - Make sure that the channel is published. (This item is checked by validation.)
     - Make sure that the channel database has the synced data from Headquarters, and that download jobs are running.
@@ -365,7 +358,7 @@ The device should now be activated and ready to use.
 
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
+**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enable this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
 
 ## Additional resources
 

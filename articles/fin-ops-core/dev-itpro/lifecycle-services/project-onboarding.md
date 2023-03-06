@@ -1,6 +1,6 @@
 ---
 title: Project onboarding
-description: This article provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
+description: This article provides information about the Project onboarding wizard in Microsoft Dynamics 365 Lifecycle Services.
 author: vetrivicky
 ms.date: 06/20/2022
 ms.topic: article
@@ -28,17 +28,17 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 
-Project onboarding is a self-paced, wizard-driven onboarding experience that guides project users in Microsoft Dynamics Lifecycle Services (LCS) through the process of setting up the key configuration components for a new implementation project for Dynamic 365 Finance, Dynamics 365 Supply Chain Management, or Dynamic 365 Retail. This wizard can also be accessed during and after the implementation, and can be used to update the information as required.
+Project onboarding is a self-paced, wizard-driven onboarding experience that guides project users in Microsoft Dynamics 365 Lifecycle Services through the process of setting up the key configuration components for a new implementation project for Dynamic 365 Finance, Dynamics 365 Supply Chain Management, or Dynamic 365 Retail. This wizard can also be accessed during and after the implementation, and can be used to update the information as required.
 
 Microsoft relies on the information that you provide. You must provide the most current and accurate data as you complete Project onboarding. After you complete Project onboarding, you can deploy environments and continue with the project implementation.
 
-To access Project onboarding, sign in to LCS, and then, on the main menu, select **Project onboarding**.
+To access Project onboarding, sign in to Lifecycle Services, and then, on the main menu, select **Project onboarding**.
 
 > [!NOTE]
-> Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services (LCS) for finance and operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
+> Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services for finance and operations apps customers](lcs-works-lcs.md#lifecycle-services-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
 
 > [!NOTE]
-> Before completing the project onboarding it is important to consider any data residency requirements and make sure the implementation project is created in the correct Lifecycle Services (LCS) geography. For more information about deployment options across different geographies, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](../deployment/deployment-options-geo.md).
+> Before completing the project onboarding it is important to consider any data residency requirements and make sure the implementation project is created in the correct Lifecycle Services geography. For more information about deployment options across different geographies, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](../deployment/deployment-options-geo.md).
 
 
 For more information about the onboarding process, see [Onboard an implementation project](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace), and watch the [finance and operations: Onboarding to Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk.
@@ -71,7 +71,7 @@ The **Welcome** page provides general guidance and information that you will nee
 
 - Verify that all project team members are invited and configured.
 - Set the **Primary contact for FastTrack** option to **Yes** for at least two users who have an active email address in the user list. If this option isn't set to **Yes** for any team member, FastTrack will reach out to all team members for implementation guidance during your implementation. If necessary, you should nominate at least one customer and one partner team member to be contacted by FastTrack.
-- Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the LCS project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer among the project team members who have a monitored email address.
+- Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the Lifecycle Services project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer among the project team members who have a monitored email address.
 
 For more information, see [Configuring project security](configure-lcs-security.md#configuring-project-security) and [Roles in a Dynamics 365 implementation](/training/modules/get-started-implementation-project/01-2-roles).
 
@@ -80,17 +80,17 @@ For more information, see [Configuring project security](configure-lcs-security.
 - Define all mandatory milestone steps. Milestones are associated with the methodology of the project. If the milestone dates haven't yet been decided, use tentative dates.
 - Update the milestone dates as plans change. Microsoft uses the milestone dates to provide appropriate guidance for each milestone. To edit milestone dates, select the pencil symbol.
 
-## Associate LCS with Azure DevOps
+## Associate Lifecycle Services with Azure DevOps
 
-- Connect LCS and Azure DevOps to maintain the application lifecycle.
+- Connect Lifecycle Services and Azure DevOps to maintain the application lifecycle.
 - Enter the root URL of your Azure DevOps account and the personal access token that you obtained from Azure DevOps. The Azure DevOps account should belong to the customer.
 
 > [!NOTE]
-> LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com` is an example.
+> Lifecycle Services requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com` is an example.
 
 ## Configure Azure DevOps
 
-- Map work items between LCS and Business process modeler (BPM).
+- Map work items between Lifecycle Services and Business process modeler (BPM).
 - Acknowledge the setup.
 - If you choose to use a custom process template, follow these best practices:
 

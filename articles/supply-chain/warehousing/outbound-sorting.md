@@ -33,10 +33,7 @@ This functionality lets you build pallets from containers that are packed throug
 
 ## Turn on the Outbound sorting feature
 
-Before you can use the feature, it must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Outbound sorting*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Outbound sorting* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Setup
 
@@ -138,6 +135,20 @@ For this scenario, you will create an outbound sorting template to build pallets
     - **Outbound sorting template ID:** *AutoWork*
     - **Description:** *Auto Work Creation*
     - **Outbound sorting template type:** *Container*
+
+1. Use the **Warehouse selection** FastTab to specify the warehouse and location where the outbound sorting template will apply.
+
+    - **Warehouse selection** – Select one of the following values:
+
+        - *All* – Use the outbound sorting template for all warehouses.
+        - *Warehouse group* – Use the outbound sorting template for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
+        - *Warehouse* – Use the outbound sorting template only for the specific warehouse that's selected in the **Warehouse** field.
+
+    - **Warehouse** and **Location** – If the **Warehouse selection** field is set to *Warehouse*, select the warehouse and the location where the outbound sorting template applies.
+    - **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the outbound sorting template applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
+
+   For this scenario, set the following values:
+    - **Warehouse selection:** *Warehouse*
     - **Warehouse:** *62*
     - **Location:** *SORT*
 
