@@ -2,7 +2,7 @@
 title: Customer certificates and secrets
 description: This article explains how to set up customer certificates and secrets in Electronic invoicing.
 author: gionoder
-ms.date: 02/07/2022
+ms.date: 03/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,7 +40,7 @@ To create and set up certificates and secrets, follow these steps.
 > [!NOTE]
 > In some scenarios, you must use public certificates that have the .cer file name extension. However, Key Vault doesn't support importing and storing certificates of this type as Key Vault certificates. In these scenarios, you should save the .cer file as a Base-64-encoded X.509 (.CER) string. Then, in a Key Vault secret, store the string that appears between the **BEGIN CERTIFICATE** line and the **END CERTIFICATE** line in the file. In the service environment, you should still create a reference to the Key Vault record and set the **Type** field to **Certificate**.
 
-10. As an alternative to the note above, you can use the next PowerShell script to generate Base64 string of the .cer certificate file:
+10. As an alternative to the note above, use the next PowerShell script to generate Base64 string of the .cer certificate file:
 
     ```powershell
     $FilePath = ''
