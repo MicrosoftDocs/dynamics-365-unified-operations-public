@@ -4,7 +4,7 @@
 title: Employee and Manager self service overview
 description: This article provides an overview of the Employee and Manager self service workspace.
 author: twheeloc
-ms.date: 09/12/2022
+ms.date: 03/06/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -80,6 +80,13 @@ The **My career information** section of **Employee self service** displays tile
 The **Time Off Balances** tile displays the balances for any enrolled plans. This tile forecasts your balance based on your accrual method. You can enter and submit time off requests, which will then go through an approval workflow process. For more information about Leave and absence, see [Leave and absence overview](hr-leave-and-absence-overview.md).
 
 The **Tasks** tile displays tasks that are assigned to you and lets you view and manage them.
+
+The **Next registered course** tile displays the next course you're registered for. You can view and register for any open courses. All courses that show a status of open and are marked for employees to self-register will allow the employees to easily self-register when the employee drills into **View open courses**.  
+
+>[!Note] 
+>If the feature, **Course enhancements**, is enabled the employee view changes to show Courses card which includes courses overdue, courses due soon (due within 10 days), and courses assigned. Employee can drill into assigned, open, and completed courses by clicking **View courses** on the **Employee self service** in the **Courses** tile. For Virtual courses only, employees are allowed to mark status to complete.  
+
+Depending on your organization's settings, your course registration might go through an approval process.  
 
 The **Next Registered Course** displays the next course you're registered for. You can view and register for any open courses. All courses that are open for sign-up have a status of **Started**, and allow employees to self-register appear. Depending on your organization's settings, your course registration might go through an approval process.
 
