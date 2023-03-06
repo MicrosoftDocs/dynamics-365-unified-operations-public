@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article provides use cases for business events.
+This article provides use cases for business events in Human resources.
 
 The following are potential uses cases for business events. These use cases aren't an exhaustive list of the potential use cases. Some of these use cases may not have been implemented yet either by Microsoft or other organizations. These use cases are meant to provide ideas and help with understanding business events. 
 
