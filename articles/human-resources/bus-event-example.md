@@ -37,38 +37,29 @@ ms.dyn365.ops.version: Human Resources
 2. Select an existing environment where you have the permissions needed to create a Power Automate resource. The default environment is open to all companies.  
 3. Create a new solution. Inside a Solution create a new Automated flow.  
 
-Graphical user interface, application
+![View new automated flow.](./media/solution1.png)
 
 4. Search and select the **Dynamics 365 Finance** connector. Select the **When a Business event occurs** trigger.  
-
-Graphical user interface, application
-
 5. Select your environment instance: 
  - Category = Human Resources
  - Business event = Business Event Name. (Example: Assigned task)  
  - Legal entity  
 
 6. Select **+New step** to add a new action. Search for the Parse JSON data operation. This step is needed to parse the message with the schema of the data 
-contract. Select the content field of Parse Json action, then the Body output from the earlier step should appear as an option. Now, Select body.  
+contract. Select the content field of Parse Json action, then the Body output from the earlier step should appear as an option, select **Body**.  
 
-Graphical user interface, application
+![Select JSON.](./media/Select-option2.png)
 
 7. Go to the FnO instance.
  - Go to **System Administration > Business events > Business events catalog**.
  - Select a business event. 
  - Click **Download schema**, this will download a text file. Open the text file and copy the content.  
 
-Graphical user interface, text, application, email
+![Download schema.](./media/Downschema3.png)
 
 8. Go back to Power Automate (Step 7) and select **Generate from sample** to generate schema.   
 9. Paste the text file content (copied from step 8) and select **Done**. 
-
-Graphical user interface, text, application, email
-
 10. Add a new action and use the ‘Get a record’ connector to fetch more details using the relevant entity record. This will open a window to supply instance, Entity name and Object id.  
-
-Graphical user interface, application
-
 11. Provide the information below:
  - **Instance**: Select environment instance.  
  - **Entity name**: Select the entity name that has the field you want to add.  
@@ -77,39 +68,24 @@ For example: the format of AssignedWorkerPersonnelNumber is **String** so we hav
 
 substring(body('Read_business_event')?['BusinessProcessTaskId'], 1, sub(length(body('Read_business_event')?['BusinessProcessTaskId']),2)),   
 
-Graphical user interface, text, application, email
+![Get a record](./media/get-record4.png)
 
-Graphical user interface, text, application
-
-
-
+![Send an email](./media/Send-email5.png)
 
 12. Use the Outlook (or Teams) connector to send notifications. Select **Add dynamic content** to supply dynamic content to the notification.   
-
-Graphical user interface, text, application
-
-For Example: To add Email Id – we have selected AssignedWorkerEmail.  
-
 13. Add the information below:  
  - **To**: Add Email ID. you can use specific field which gives value of email id. For example: In case of Assigned tasks, use Assigned worker email.  
  - **Subject**: You can provide any text along with specific information from entity. For example: In case of Assigned tasks, use **Task name**.
  - **Body**: You can enter the content you want to send as a notification along with dynamic content. The content can be formatted. For example, in the case of Assigned tasks, we wanted to send a notification to the worker to whom the task was assigned, including all task details and the due date. As a result, we have supplied the assigned worker's name, description, instructions, and due date information in Body area.  
 
-Graphical user interface, application, Teams
+![Send an email](./media/Send-notification6.png)
 
  - Alternatively, to receive responses back from the notification sent **Send email with options** connector can be used. Using this will pause the flow until it receives a response back, which can then be accessed via the **SelectedOption** field, available on the dynamic content dialog, to add further logic to your flow. Additionally, this connector allows formatting emails with HTML (Hyper Text Markup Language) tags.   
 
-Graphical user interface, text, application, email
-
-Graphical user interface, text, application
-
 14. Once the flow is ready, click **Save**.  
-
-Graphical user interface, application
-
 15. Go to **System Administration > Setup > Business events**. Select **Endpoints** and verify that a new endpoint has been created with a GUID.  
 
-Graphical user interface, text, application, email
+
 
 16. On the same form, verify that the event is activated in the **Active business events** tab. 
 17. When an event occurs, it will trigger the flow and a notification should be sent based on the configuration above. 
