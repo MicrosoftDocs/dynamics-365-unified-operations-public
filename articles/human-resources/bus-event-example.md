@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 #  Business events example
 
+This article provide an example of a business event. 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
@@ -46,7 +47,7 @@ ms.dyn365.ops.version: Human Resources
  - Legal entity  
 
 6. Select **+New step** to add a new action. Search for the Parse JSON data operation. This step is needed to parse the message with the schema of the data 
-contract. Select the content field of Parse Json action, then the Body output from the earlier step should appear as an option, select **Body**.  
+contract. Select the content field of **Parse Json** action, and select **Body**.  
 
 ![Select JSON.](./media/Select-option2.png)
 
@@ -63,8 +64,8 @@ contract. Select the content field of Parse Json action, then the Body o
 11. Provide the information below:
  - **Instance**: Select environment instance.  
  - **Entity name**: Select the entity name that has the field you want to add.  
- - **Object id**: Object id refers to the key values for the record as strings and separated by a comma. For Example: for **Assigned task business event** - the Personnel number of worker (AssignedWorkerPersonnelNumber) and Id of the assigned task(BusinessProcessTaskId) is needed. Values are given in the form of strings and the task id format is GUID. To obtain the exact Task ID, the substring expression is used. Similarly, depending on the format of field, the value must be converted to **String**. This conversion is not required if the format of the field is already a **String**. 
-For example: the format of AssignedWorkerPersonnelNumber is **String** so we have directly used the field.  
+ - **Object id**: Object id refers to the key values for the record as strings and separated by a comma. For example: in the **Assigned task business event** - the Personnel number of worker (AssignedWorkerPersonnelNumber) and Id of the assigned task(BusinessProcessTaskId) is needed. Values are given in the form of strings and the task id format is GUID. To obtain the exact Task ID, the substring expression is used. Similarly, depending on the format of field, the value must be converted to **String**. This conversion isn't required if the format of the field is already a **String**. 
+For example: the format of AssignedWorkerPersonnelNumber is **String** so the field is used.  
 
 substring(body('Read_business_event')?['BusinessProcessTaskId'], 1, sub(length(body('Read_business_event')?['BusinessProcessTaskId']),2)),   
 
@@ -74,9 +75,9 @@ substring(body('Read_business_event')?['BusinessProcessTaskId'], 1, sub(leng
 
 12. Use the Outlook (or Teams) connector to send notifications. Select **Add dynamic content** to supply dynamic content to the notification.   
 13. Add the information below:  
- - **To**: Add Email ID. you can use specific field which gives value of email id. For example: In case of Assigned tasks, use Assigned worker email.  
- - **Subject**: You can provide any text along with specific information from entity. For example: In case of Assigned tasks, use **Task name**.
- - **Body**: You can enter the content you want to send as a notification along with dynamic content. The content can be formatted. For example, in the case of Assigned tasks, we wanted to send a notification to the worker to whom the task was assigned, including all task details and the due date. As a result, we have supplied the assigned worker's name, description, instructions, and due date information in Body area.  
+ - **To**: Add Email ID. you can use specific field, which gives value of email id. For example, in **Assigned tasks**, use **Assigned worker email**.  
+ - **Subject**: You can provide any text along with specific information from entity. For example, in **Assigned tasks**, use **Task name**.
+ - **Body**: You can enter the content you want to send as a notification along with dynamic content. The content can be formatted. For example, in the **Assigned tasks**, we wanted to send a notification to the worker to whom the task was assigned, including all task details and the due date. As a result, the assigned worker's name, description, instructions, and due date information has been provided in the body area.  
 
 ![Send an email](./media/Send-notification6.png)
 
@@ -90,4 +91,4 @@ substring(body('Read_business_event')?['BusinessProcessTaskId'], 1, sub(leng
 16. On the same form, verify that the event is activated in the **Active business events** tab. 
 17. When an event occurs, it will trigger the flow and a notification should be sent based on the configuration above. 
 
-For example: In the Assigned task example mentioned with above steps, if any new task is assigned to a worker, then this would trigger the flow which will send the notifications to the assigned worker.  
+For example: In the Assigned task example mentioned with above steps, if any new task is assigned to a worker, then this would trigger the flow, which will send the notifications to the assigned worker.  
