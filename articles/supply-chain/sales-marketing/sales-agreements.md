@@ -5,7 +5,7 @@ author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage, SalesAgreementInvoiceJournal, SalesAgreementInvoicePart
-ms.topic: how-to
+ms.topic: overview
 ms.date: 03/06/2023
 audience: Application User
 ms.search.region: Global
