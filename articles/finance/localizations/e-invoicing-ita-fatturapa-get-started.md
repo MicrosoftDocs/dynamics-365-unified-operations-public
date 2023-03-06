@@ -53,7 +53,7 @@ This section complements the [Country-specific configuration of application setu
 
     - CAentrate.cer (or CAEntratetest.cer in case of TEST environment).
     - CAActalisOV.cer (in case of PROD environment).
-    - Client identiry certificate (it is usually generated while a user performs registration of the SDICoop service channel and has next name: SDI-12345678901, where 12345678901 is a company VAT number).
+    - Client identity certificate (usually it is generated while user performs registration of the SDICoop service channel and has the following name: SDI-12345678901, where 12345678901 is a company VAT number).
     - Certificate for digital signature (needed for PA flow).
 	
 5. Select **Chain of certificates** button.
@@ -61,7 +61,7 @@ This section complements the [Country-specific configuration of application setu
 
     - CAentrate.cer (or CAEntratetest.cer in case of TEST environment).
     - CAActalisOV.cer (in case of PROD environment).
-    - Client identiry certificate.
+    - Client identity certificate.
 	
 7. Save changes and close the form.
 
@@ -102,9 +102,9 @@ These steps need to be done for all Electronic reporting format configurations u
     IF(Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.IsFilingForSameLegalEntity,
       Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.CompanyInformation.FiscalCode,
       Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.TaxExemptNumber)
-	& "_"
-	& RIGHT(FORMAT("0000%1", ProgressivoInvioUIP), 5)
-	& ".xml"
+    & "_"
+    & RIGHT(FORMAT("0000%1", ProgressivoInvioUIP), 5)
+    & ".xml"
     ```
 	
 3. Save changes and close formula degisner.
@@ -189,10 +189,10 @@ Steps from this section needs to be done only for Microsoft Dynamics 365 Finance
 13. Specify next formula:
 
     ```
-	IF(CustInvoiceJour.'creditNote()', "Customer credit note", "Customer invoice")
+    IF(CustInvoiceJour.'creditNote()', "Customer credit note", "Customer invoice")
     & IF('$Context_ISOCode'.Value = "IT",
        IF(LEN(CustInvoiceJour.'>Relations'.InvoiceAccount.AuthorityOffice_IT) = 7, " PA", ""),
-	   "")
+       "")
 	```
 	
 13. Save changes and close the designer form, then select **OK**.
@@ -202,11 +202,12 @@ Steps from this section needs to be done only for Microsoft Dynamics 365 Finance
 17. Specify next formula:
 
     ```
-	IF(ProjInvoiceJour.'isCreditNote_CZ()', "Project credit note", "Project invoice")
+    IF(ProjInvoiceJour.'isCreditNote_CZ()', "Project credit note", "Project invoice")
     & IF('$Context_ISOCode'.Value = "IT",
       IF(LEN(ProjInvoiceJour.'>Relations'.CustTable.AuthorityOffice_IT) = 7, " PA", ""),
       "")
-	```
+    ```
+	
 18. Save changes and close the designer form, then select **OK**.
 19. Save and close Model mapping designer.
 20. On the **Reporting configurations** form, select the **Draft** version of the configuration.
@@ -424,7 +425,7 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Selecting Service Certificates in IIS Manager.](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png)
 
 5. Open the menu, and select **Import**.
-6. In the **Import Certificate** dialog box, in the **Certificate file (.pfx)** field, specify the path of the .pfx file for the proxy server certificate (it is usually generated while a user performs registration of the SDICoop service channel and has the next name: sdiproxy.com.pfx, where sdiproxy.com is a DNS assigned to the proxy VM).
+6. In the **Import Certificate** dialog box, in the **Certificate file (.pfx)** field, specify the path of the .pfx file for the proxy server certificate (usually it is generated while user performs registration of the SDICoop service channel and has the following name: sdiproxy.com.pfx, where sdiproxy.com is a DNS assigned to the proxy VM).
 
     ![Specifying the proxy service certificate file.](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
 
