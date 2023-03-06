@@ -396,7 +396,7 @@ Follow these steps on the machine where the proxy service is hosted.
 ### Set up the SDI Proxy service in IIS
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), go to the Shared asset library, and select **Data package** as the asset type.
-2. Find **Electronic Invoicing Service Sdi Proxy**, and download it to the VM.
+2. Find **Electronic Invoicing Service Sdi Proxy v1.1**, and download it to the VM.
 3. Configure the service.
 
     1. Unzip the **Electronic Invoicing Service Sdi Proxy** archive folder that you downloaded.
