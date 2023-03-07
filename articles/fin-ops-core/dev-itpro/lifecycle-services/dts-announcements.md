@@ -28,7 +28,7 @@ This article provides information about the new or changed features in Microsoft
 
 ## Incident: DTS API failures impacting extension users
 
-We are investigating an issue where our extension users are experiencing intermittent API failures. This is an active incident which may impacting the usability of the DTS extensions for a subset of users. Please reach out to dtssup@microsoft.com if you require more immediate support. 
+We are investigating an issue causing intermittent API failures across DTS endpoints. This is an active incident which is impacting the usability of the DTS extensions. Please contact dtssup@microsoft.com if you require immediate support. 
 
 ## DTS will stop supporting Dynamics AX 2012 by March 31, 2023
 
