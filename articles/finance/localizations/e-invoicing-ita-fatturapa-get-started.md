@@ -76,7 +76,7 @@ This section complements the [Country-specific configuration of application setu
 
 ### Align Electronic reporting configurations
 
-The following procedures must be completed for all Electronic reporting (ER) format configurations that are used in the **Sales invoice (IT)** and **Project invoice (IT)** features.
+The following procedures must be completed for all Electronic reporting (ER) format configurations that are used in the feature: **Sales invoice (IT)** and **Project invoice (IT)**.
 
 #### Set up payment method substitution
 
@@ -102,7 +102,7 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 2. In the formula designer, paste the following formula for the file name. This formula contains a link to the parameter that you previously added. If the name of the parameter is different, align the formula accordingly.
 
-    ```
+    ```vb
     IF(Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.IsFilingForSameLegalEntity,
       Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.CompanyInformation.CountryISOCode,
       Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.CountryRegionId)&
@@ -200,7 +200,7 @@ This procedure must be completed only for Finance versions that are earlier than
 10. In the **Data sources** tree, select **$Context\_DocumentType\\Value**, select **Edit**, and then select **Edit formula**.
 11. Specify the following formula.
 
-    ```
+    ```vb
     IF(CustInvoiceJour.'creditNote()', "Customer credit note", "Customer invoice")
     & IF('$Context_ISOCode'.Value = "IT",
        IF(LEN(CustInvoiceJour.'>Relations'.InvoiceAccount.AuthorityOffice_IT) = 7, " PA", ""),
@@ -213,7 +213,7 @@ This procedure must be completed only for Finance versions that are earlier than
 15. In the **Data sources** tree, select **$Context\_DocumentType\\Value**, select **Edit**, and then select **Edit formula**.
 16. Specify the following formula.
 
-    ```
+    ```vb
     IF(ProjInvoiceJour.'isCreditNote_CZ()', "Project credit note", "Project invoice")
     & IF('$Context_ISOCode'.Value = "IT",
       IF(LEN(ProjInvoiceJour.'>Relations'.CustTable.AuthorityOffice_IT) = 7, " PA", ""),
