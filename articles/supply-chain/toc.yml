@@ -2169,12 +2169,14 @@
         items:
         - name: Price attributes overview
           href: pricing-management/price-attributes-overview.md
-        - name: Set up price attributes for products, customers, and orders
+        - name: Price attributes for products, customers, and orders
           href: pricing-management/price-attributes-setup.md
         - name: Price attribute groups
           href: pricing-management/price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: pricing-management/customer-product-attribute-groups.md
+        - name: Price component codes
+          href: pricing-management/price-component-codes.md
       - name: Base price
         items:
         - name: Vendor list prices

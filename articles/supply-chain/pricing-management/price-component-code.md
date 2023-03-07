@@ -1,6 +1,6 @@
 ---
-title: Determine price with price component code and rank
-description: This article describes how to create a pricing structure (price tree) for pricing at the macro level with Pricing management.
+title: Price component codes
+description: This article describes how to create a pricing structure for pricing at the macro level with Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Determine price with price component code and rank
+# Price component codes
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -23,7 +23,7 @@ The purpose of making pricing decisions is to increase profitability. Good decis
 - **Price component setup** – Provides a single, uniform pricing structure for each company.
 - **Pricing trees** – Enables multiple pricing structures based on order attribute values for each company.
 
-You must choose to use *either* the price component setup (a single pricing tree) *or* multiple pricing trees. You will make this decision based on the complexity of your pricing structure.
+You must choose to use *either* the price component setup (a single pricing tree) *or* multiple pricing trees. <!-- KFM: Add link to topic about pricing trees --> You will make this decision based on the complexity of your pricing structure.
 
 <!--KFM: We should introduce the following table. What are we describing here? -->
 
@@ -67,8 +67,16 @@ Use the following procedure to set up your price component codes.
     - **Description:** Enter more details related to the price component code you are creating.
 
 1. Expand the **General** FastTab and enter the following details.
-    - **Price component** –  You can only edit this for new records (becomes read-only on save).<!-- KFM: Description needed. It may also be necessary to describe each of the options here. -->
-    - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explain what this means-->.  You can only edit this for new records (becomes read-only on save). Choose one of the following values:
+    - **Price component** –  You can only edit this for new records (becomes read-only on save).<!-- KFM: Description needed. What does this setting do?  --> Choose one of the following values:
+        - *Base price-inventory price* – <!-- KFM: Briefly describe the purpose of each of these values. Point out the ones that we can only have on of (as mentioned above)  -->
+        - *Base price-purchase price* – 
+        - *Base price-sales price* – 
+        - *Sales trade agreement* – 
+        - *Margin component* – 
+        - *Discounts* – 
+        - *Auto charges* – 
+        - *Rebate management* – 
+    - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explain what this means in general. -->.  You can only edit this for new records (becomes read-only on save). Choose one of the following values:
         - *Separate* – Allows you to assign a rank to each individual header and line attribute group. The system will automatically generate each possible combination of header and line attribute groups and will assign a combined rank to each combination based on your individual rankings.
         - *Combined* – Allows you to define each relevant combination of header and line attributes and to assign a combination rank to each of them.
     - **Use all in header group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
@@ -125,9 +133,9 @@ For example, suppose you have a price component code with **Price component** se
 | Target customer group | Header | 2 |
 | Target market segment | Header | 1 |
 | Product group | Line | 2 |
-| Product category | Lin | 1 |
+| Product category | Line | 1 |
 
-Based on these settings, the system will automatically generate attribute group combinations and combination ranks shown in the following table.
+Based on these settings, the system will automatically generate the attribute group combinations and combination ranks shown in the following table.
 
 | Combination | Combination rank |
 |---|---|
@@ -143,5 +151,4 @@ The system includes two sales trade agreements that could apply to the same sale
 | RD001 | Price attribute combination rank | **Customer group** = *20*</br>**Product group** = *Standard* | $20 | 2002 |
 | RD002 | Price attribute combination rank | **Target market group** = *Online*</br>**Product category** = *Electronic* | $30 | 1001 |
 
-The pricing engine therefore chooses the 
-Price engine will take the rule RD001 and apply $20 as the price.
+The pricing engine therefore chooses rule RD001 because that rule has the highest combination rank. Therefore, the price is $20.
