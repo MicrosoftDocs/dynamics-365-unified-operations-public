@@ -38,14 +38,14 @@ You must choose to use *either* the price component setup (a single pricing tree
 <!-- KFM: Maybe the above table should also have a row for *price attributes*. -->
 
 > [!NOTE]
-> The following price components can only have one price component code:
+> You can have at most one price component code record for each of the following price components:
 >
 > - Base price-inventory price
 > - Base price-purchase price
 > - Base price-sales price
-> - Sales trade agreement.
+> - Sales trade agreement
 >
-> The remaining price components can have multiple price component codes.
+> You can have any number price component code records for each of the remaining price components.
 
 Within one price component code, you can define multiple price rule records with different price attribute group combinations.
 
@@ -63,66 +63,85 @@ Use the following procedure to set up your price component codes.
     - To delete an existing price component code, select it on the list pane and then select **Delete** on the Action Pane.
 
 1. Make the following settings in the header of your new or selected price component code:
-    - **Price component code:** Enter a name for the code.
+    - **Price component code:** Enter a name for the code. You can only edit this for new records (becomes read-only on save).
     - **Description:** Enter more details related to the price component code you are creating.
 
 1. Expand the **General** FastTab and enter the following details.
-    - **Price component** – <!-- KFM: Description needed. It may also be necessary to describe each of the options here. -->
-    - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explaing what this means-->. Choose one of the following values
-        - *Separate* – Allows you to assign separate ranks to Header and Line attribute group. The system will automatically determine the overall rank of the Header + Line attribute combination.
-        - *Combined* – Allows you to assign an overall rank of the Header+ Line attribute combination.
-    - **Use all in header group** is Yes, when you have the combination where Header attributes have 'all' value.
-    - **Use all in line group** is Yes, when you have the combination where Line attributes have "all" value.
-    - Assign Price component code to the **Price component code group.**
+    - **Price component** –  You can only edit this for new records (becomes read-only on save).<!-- KFM: Description needed. It may also be necessary to describe each of the options here. -->
+    - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explain what this means-->.  You can only edit this for new records (becomes read-only on save). Choose one of the following values:
+        - *Separate* – Allows you to assign a rank to each individual header and line attribute group. The system will automatically generate each possible combination of header and line attribute groups and will assign a combined rank to each combination based on your individual rankings.
+        - *Combined* – Allows you to define each relevant combination of header and line attributes and to assign a combination rank to each of them.
+    - **Use all in header group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
+    - **Use all in line group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
+    - **Default discount concurrency mode** – <!-- KFM: Description needed. -->
+    - **Price component code group** – Select a price component code group. You set up and maintain your component code groups on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**). <!-- KFM: More info is needed. What is this, and how will it affect my price component code? We should link to the price component group topic, if we have one. -->
 
-    Price component code group is maintained on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**).
+1. If **Maintenance mode** is *Separate*, then expand the **Header price attribute group** FastTab and add each [header attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
 
-    If the maintenance mode is *Combined*, you can enter header and line attributes and assign them a combined priority as shown in the image below.
+1. If **Maintenance mode** is *Separate*, then expand the **Line price attribute group** FastTab and add each [line attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
 
-    ![Graphical user interface  application  Word Description automatically generated](media/image2.png)
+1. If **Maintenance mode** is *Combined*, then follow these guidelines to set up the **Price attribute group combination** FastTab:
+    - Use the toolbar buttons to add and remove price attribute groups as needed.
+    - For each attribute group, make the following settings:
+        - **Name** – Enter a descriptive name for the line.
+        - **Header type** – <!-- KFM: Description needed. -->
+        - **Header price attribute group** – <!-- KFM: Description needed. -->
+        - **Line type** – <!-- KFM: Description needed. -->
+        - **Line price attribute group** – <!-- KFM: Description needed. -->
+        - **Combination rank** – <!-- KFM: Description needed. -->
 
-1. Expand the **Price attribute group combination** FastTab. This tab is enabled only if the maintenance mode selected is *Separate*.
-    - System will create all the possible combinations of header attributes, line attributes and all and assign them a priority.
-    - In price attribute group combination system automatically assigns combination priority based on header and line priority.
-    - In **Price attribute group combination** menu option has **Trade agreement journals** hyperlink when the Price component is the 'Sales trade agreement' . For the selected line or price attribute group combination you can create Trade agreements, the selected combination will then flow to price attribute group combination field in trade agreement.
+1. If **Maintenance mode** is *Separate*, then follow these guidelines to set up the **Price attribute group combination** FastTab:
+    - The system automatically creates a row for each possible combinations of header attributes (as listed on the **Header price attribute group** FastTab, plus *All* if **Use all in header group** is enabled) and line attributes (as listed on the **Line price attribute group** FastTab, plus *All* if **Use all in line group** is enabled).
+    - The system automatically assigns each row a **Combination rank** based on the individual header and line attribute group **Rank** settings. <!-- KFM: "Priority" is the same as "Rank"? -->
+    - Use the toolbar buttons to add and remove price attribute groups as needed. <!-- KFM: Maybe we don't want to do this in this case, since these are auto-generated? -->
+    - For each attribute group, make the following settings:
+        - **Name** – For autogenerated rows, the name is generated to indicate the header and line attribute that were combined to create that row.
+        - **Header type** – <!-- KFM: Description needed. -->
+        - **Header price attribute group** – <!-- KFM: Description needed. -->
+        - **Header rank** – <!-- KFM: Description needed. -->
+        - **Line type** – <!-- KFM: Description needed. -->
+        - **Line price attribute group** – <!-- KFM: Description needed. -->
+        - **Line rank** – <!-- KFM: Description needed. -->
+        - **Combination rank** – <!-- KFM: Description needed. -->
+    - For price component codes where **Price component** is *Sales trade agreement*, the **Price attribute group combination** FastTab toolbar includes a **Trade agreement journals** button. For the selected line or price attribute group combination you can create Trade agreements, the selected combination will then flow to price attribute group combination field in trade agreement. <!-- KFM: I don't understand this. More info is needed here. -->
+
+1. On the Action Pane, select **Save**.
 
 ## Price attribute combination rank
 
-Most of the time, when defining a pricing rule, the rule that applies to a particular customer account and product number takes priority over the rule that applies to a certain customer group and particular product groupings.
+Rankings let the system decide which pricing rule to use when an order qualifies for more than one rule. As a rule, specific pricing rules (which apply to a specific customer account and product number) take priority over more general rules (which apply to a group of customers or and/or a group of products). However, when two equally general rules apply, it can be difficult to decide which one should take priority (for example, a rule that targets a certain customer group vs. a rule that targets a certain region). Therefore, Pricing management lets you specify a rank for each attribute group and each attribute group combination.
 
-However, it may be difficult to say that a pricing rule that targets a region necessarily has priority over customer group when it comes to the various price attribute combinations that includes a variety of pricing factors. Therefore, pricing management gives you the option to specify the price attribute's priority, and records can be kept for any combination of price attributes.
+The price engine considers the **Combination rank** when both of the following are true:
 
-The price engine pricing determination is driven by the combination rank, when:
+- There are multiple pricing rules that apply for the same order line within the same price component code, and
+- All of the qualifying rules have their **Concurrency mode** set to *Price attribute combination rank*. <!-- KFM: Where is this setting? -->
 
-- There are multiple applicable rules for the same price order line when within the same price component code, and
-- These rules' concurrency modes are set as "**Price attribute combination rank**".
+In this situation, the rule that matches the row with highest **Combination rank** will apply. <!-- KFM: Please confirm this reformulation. -->
 
-The rule with the highest combination rank will then be chosen by the price engine to be applied.
+For example, suppose you have a price component code with **Price component** set to *Trade agreement* and **Maintenance mode** set to *Separate*. The price component code uses the attribute group settings specified in the following table.
 
-Example: For the Trade agreement price component code with Separate mode:
+| Price attribute group | Group scope | Rank |
+|---|---|---|
+| Target customer group | Header | 2 |
+| Target market segment | Header | 1 |
+| Product group | Line | 2 |
+| Product category | Lin | 1 |
 
-| Header price attribute group | Rank |
+Based on these settings, the system will automatically generate attribute group combinations and combination ranks shown in the following table.
+
+| Combination | Combination rank |
 |---|---|
-| Target customer group | 2 |
-| Target market segment | 1 |
-| Line price attribute group | Rank |
-| Product group | 2 |
-| Product category | 1 |
+| Target customer group-Product group | 2002 (highest rank) |
+| Target customer group-Product category | 2001 |
+| Target market segment-Product group | 1002 |
+| Target market segment-Product category | 1001 |
 
-The combination rank will be automatically assigned based on the above configuration.
+The system includes two sales trade agreements that could apply to the same sales order line, as shown in the following table.
 
-| Combination | Combination Rank |
-|---|---|
-| Target customer group+ Product group | 2002 (highest rank) |
-| Target customer group+ Product category | 2001 |
-| Target market segment + Product group | 1002 |
-| Target market segment + Product category | 1001 |
-
-When there are 2 sale trade agreement records apply to the same sales order line
-
-| Rule No. | Concurrency mode | Criteria with price attributes | Price | Combination Rank |
+| Rule no. | Concurrency mode | Criteria with price attributes | Price | Combination Rank |
 |---|---|---|---|---|
-| RD001 | Price attribute combination rank | Customer group=20， Product group= Standard | $20 | 2002 |
-| RD002 | Price attribute combination rank | Target market group= online,</br>Product category= Electronic | $30 | 1001 |
+| RD001 | Price attribute combination rank | **Customer group** = *20*</br>**Product group** = *Standard* | $20 | 2002 |
+| RD002 | Price attribute combination rank | **Target market group** = *Online*</br>**Product category** = *Electronic* | $30 | 1001 |
 
+The pricing engine therefore chooses the 
 Price engine will take the rule RD001 and apply $20 as the price.
