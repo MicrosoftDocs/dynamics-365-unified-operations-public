@@ -37,10 +37,25 @@ The Warehouse Management mobile app is only for your internal business use. You 
 
 ## System requirements
 
+### Operating system requirements
+
 The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
+
+### External URLs required by the app
+
+For the Warehouse Management mobile app to function correctly, your internal network must allow allow it to access the following external URLs:
+
+- *.microsoft.com
+- *.microsoftonline.com
+- login.windows.net
+- *.appcenter.ms
+- *.ces.microsoftcloud.com
+- *.onyx.azure.net
+- play.google.com
+- itunes.apple.com
 
 ## Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
@@ -310,19 +325,6 @@ If a device is lost or compromised, you must remove access to Supply Chain Manag
 1. Make sure that the client ID of the application matches the client ID that you made a note of in step 2.
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
-
-## List of external URLs required by the app
-
-For the app to function correctly, the list specifies the external website URLs that need to be accessible from the internal network.
-
-1. *.microsoft.com
-1. *.microsoftonline.com
-1. login.windows.net
-1. *.appcenter.ms
-1. *.ces.microsoftcloud.com
-1. *.onyx.azure.net
-1. play.google.com
-1. itunes.apple.com
 
 ## Additional resources
 
