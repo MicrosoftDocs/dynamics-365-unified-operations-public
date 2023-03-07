@@ -35,7 +35,7 @@ This article explains how to download and install the Warehouse Management mobil
 
 The Warehouse Management mobile app is only for your internal business use. You may not republish or distribute the Warehouse Management mobile app externally in any app store or similar distribution service.
 
-## System requirements
+## Requirements
 
 ### Operating system requirements
 
