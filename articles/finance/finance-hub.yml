@@ -76,9 +76,9 @@ additionalContent:
         text: Manage roles
     - title: "Develop: Platform"
       links: 
-      - url: ../dynamics365/fin-ops-core/dev-itpro/
+      - url: /dynamics365/fin-ops-core/dev-itpro/
         text: Develop your environment
-      - url: ../dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page?context=/dynamics365/context/finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page?context=/dynamics365/context/finance
         text: Customize your experience
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
         text: Use Dual-write
