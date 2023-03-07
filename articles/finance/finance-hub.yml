@@ -72,13 +72,13 @@ additionalContent:
         text: Manage environments
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Manage users
-      - url: dynamics365/organization-administration/plan-case-management
+      - url: /dynamics365/organization-administration/plan-case-management
         text: Manage roles
     - title: "Develop: Platform"
       links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/
+      - url: ../dynamics365/fin-ops-core/dev-itpro/
         text: Develop your environment
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
+      - url: ../dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
         text: Customize your experience
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page
         text: Use Dual-write
