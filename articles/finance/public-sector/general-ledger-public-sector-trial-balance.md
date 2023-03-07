@@ -1,15 +1,15 @@
 ---
 title: Trial balance with transactional detail report
 description: This article describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
-author: TaylorVH
-ms.date: 10/24/2019
+author: abruer
+ms.date: 03/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: TaylorVH
+ms.author: abruer
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
 ms.search.industry: public sector
@@ -38,7 +38,7 @@ You can now run the updated report, and the results will be available in Microso
 
 ## Feature management
 
-To view summary data from the general journal account entry, enable the **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report** feature.
+To view summary data from the general journal account entry, enable the **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report** feature in Feature management.
 
 ## Report options
 
