@@ -72,7 +72,7 @@ additionalContent:
         text: Manage environments
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Manage users
-      - url: dynamics365//organization-administration/plan-case-management
+      - url: dynamics365/organization-administration/plan-case-management
         text: Manage roles
     - title: "Develop: Platform"
       links: 
