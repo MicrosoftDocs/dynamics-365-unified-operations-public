@@ -64,7 +64,7 @@ additionalContent:
         text: Finance setup
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
         text: Reporting setup 
-  - title: Administer and Develop Finance
+  - title: Administer and develop Finance
     items:
     - title: Manage
       links:
@@ -92,9 +92,9 @@ additionalContent:
         text: Azure data lake
     - title: Developer reference
       links:
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api
         text: API references
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customizing-mappings
         text: Mapping references
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type
         text: Access to finance and tax reference data
@@ -152,7 +152,7 @@ additionalContent:
         text: Overview
       - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Work with electronic messages
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-example
         text: Electronic messaging reporting
     - title: Fixed assets
       links:
@@ -166,9 +166,9 @@ additionalContent:
       links:
       - url: /dynamics365/finance/asset-leasing/asset-leasing-quick-start
         text: Overview
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/asset-leasing/add-lease
         text: Manage Asset leases
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/asset-leasing/set-up-lease-wrkflw
         text: Lease workflows
     - title: General ledger
       links:
