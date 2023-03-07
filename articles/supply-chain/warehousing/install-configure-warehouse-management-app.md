@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Install and connect the Warehouse Management mobile app
 description: This article explains how to install the Warehouse Management mobile app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 author: Mirzaab
-ms.date: 02/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
-# ROBOTS: 
-audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 267694
-ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
-ms.search.region: global
-ms.search.industry: Manufacturing
 ms.author: mirzaab
-ms.search.validFrom: 2021-02-28
-ms.dyn365.ops.version: 10.0.17
-
+ms.reviewer: kamaybac
+ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.topic: how-to
+ms.date: 03/07/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Install and connect the Warehouse Management mobile app
@@ -35,7 +20,7 @@ This article explains how to download and install the Warehouse Management mobil
 
 The Warehouse Management mobile app is only for your internal business use. You may not republish or distribute the Warehouse Management mobile app externally in any app store or similar distribution service.
 
-## Requirements
+## Prerequisites
 
 ### Operating system requirements
 
@@ -57,7 +42,7 @@ For the Warehouse Management mobile app to function correctly, your internal net
 - play.google.com
 - itunes.apple.com
 
-## Turn Warehouse Management mobile app features on or off in Supply Chain Management
+### Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
 To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
