@@ -102,79 +102,79 @@ additionalContent:
     items:
     - title: Accounts payable
       links:
-      - url: dynamics365/finance/accounts-payable/accounts-payable
+      - url: /dynamics365/finance/accounts-payable/accounts-payable
         text: Overview
-      - url: dynamics365/finance/accounts-payable/accounts-payable-overview
+      - url: /dynamics365/finance/accounts-payable/accounts-payable-overview
         text: Configure Accounts payable
-      - url: dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
+      - url: /dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
         text: Invoice matching 
     - title: Accounts receivable
       links:
-      - url: dynamics365/finance/accounts-receivable/accounts-receivable
+      - url: /dynamics365/finance/accounts-receivable/accounts-receivable
         text: Overview
-      - url: dynamics365/finance/accounts-receivable/revenue-recognition-overview
+      - url: /dynamics365/finance/accounts-receivable/revenue-recognition-overview
         text: Revenue recognition
-      - url: dynamics365/finance/accounts-receivable/subscription-billing-summary
+      - url: /dynamics365/finance/accounts-receivable/subscription-billing-summary
         text: Subscription billing
-      - url: dynamics365/finance/cash-bank-management/tasks/customer-payment-overview
+      - url: /dynamics365/finance/cash-bank-management/tasks/customer-payment-overview
         text: Customer payments
-      - url: dynamics365/finance/accounts-receivable/cm-credit-and-collections-overview
+      - url: /dynamics365/finance/accounts-receivable/cm-credit-and-collections-overview
         text: Credit and collections
     - title: Budgeting
       links:
-      - url: dynamics365/finance/budgeting/basic-budgeting-overview-configuration
+      - url: /dynamics365/finance/budgeting/basic-budgeting-overview-configuration
         text: Overview
-      - url: dynamics365/finance/budgeting/budget-planning-overview-configuration
+      - url: /dynamics365/finance/budgeting/budget-planning-overview-configuration
         text: Budget planning
-      - url: dynamics365/finance/budgeting/budget-control-overview-configuration
+      - url: /dynamics365/finance/budgeting/budget-control-overview-configuration
         text: Budget control
       - url: /dynamics365/finance/budgeting/position-forecasting
         text: Postition forecasting
     - title: Cash and bank management
       links:
-      - url: dynamics365/finance/cash-bank-management/cash-bank-management
+      - url: /dynamics365/finance/cash-bank-management/cash-bank-management
         text: Overview
-      - url: dynamics365/finance/cash-bank-management/cash-flow-forecasting
+      - url: /dynamics365/finance/cash-bank-management/cash-flow-forecasting
         text: Cash flow forecasting
-      - url: dynamics365/finance/cash-bank-management/advanced-bank-reconciliation-overview
+      - url: /dynamics365/finance/cash-bank-management/advanced-bank-reconciliation-overview
         text: Advanced bank reconciliation
     - title: Cost accounting
       links:
-      - url: dynamics365/finance/cost-accounting/cost-accounting-home-page
+      - url: /dynamics365/finance/cost-accounting/cost-accounting-home-page
         text: Overview
-      - url: dynamics365/finance/cost-accounting/tasks/map-cost-element-dimension
+      - url: /dynamics365/finance/cost-accounting/tasks/map-cost-element-dimension
         text: Map a cost element dimension
-      - url: dynamics365/finance/cost-accounting/overhead-calculation
+      - url: /dynamics365/finance/cost-accounting/overhead-calculation
         text: Overhead calculation
     - title: Electronic messaging
       links:
-      - url: dynamics365/finance/general-ledger/electronic-messaging
+      - url: /dynamics365/finance/general-ledger/electronic-messaging
         text: Overview
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Work with electronic messages
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Electronic messaging reporting
     - title: Fixed assets
       links:
-      - url: dynamics365/finance/fixed-assets/fixed-assets
+      - url: /dynamics365/finance/fixed-assets/fixed-assets
         text: Overview
-      - url: dynamics365/finance/fixed-assets/set-up-fixed-assets
+      - url: /dynamics365/finance/fixed-assets/set-up-fixed-assets
         text: Set up fixed assets
-      - url: dynamics365/finance/fixed-assets/fixed-asset-depreciation-conventions
+      - url: /dynamics365/finance/fixed-assets/fixed-asset-depreciation-conventions
         text: Depreciation conventions
     - title: Asset leasing
       links:
-      - url: dynamics365/finance/asset-leasing/asset-leasing-quick-start
+      - url: /dynamics365/finance/asset-leasing/asset-leasing-quick-start
         text: Overview
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Manage Asset leases
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Lease workflows
     - title: General ledger
       links:
-      - url: dynamics365/finance/general-ledger/plan-chart-of-accounts
+      - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
         text: Plan your chart of accounts
-      - url: dynamics365/finance/general-ledger/main-account-types
+      - url: /dynamics365/finance/general-ledger/main-account-types
         text: Main account types
       - url: dynamics365/finance/general-ledger/financial-dimensions
         text: Financial dimensions
