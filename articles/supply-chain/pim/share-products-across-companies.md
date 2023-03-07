@@ -1,6 +1,6 @@
 ---
 title: Cross-company product sharing
-description: This topic explains how to share released-product data across companies (legal entities), to reduce the volume of data that must be maintained and simplify the task of maintaining product master data.
+description: This article explains how to share released-product data across companies (legal entities), to reduce the volume of data that must be maintained and simplify the task of maintaining product master data.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -25,8 +25,6 @@ To sign up for the public preview for this feature, email the environment ID in 
 
 ## Get started with cross-company data sharing
 
-For more information about cross-company data sharing, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).
-
 Single and duplicate record sharing work as follows.
 
 - **Duplicate record sharing** – Each company has its own copy of each shared record. Each time the shared record is edited in any company, the edit is immediately replicated to every other company's copy of the record.
@@ -35,10 +33,9 @@ Single and duplicate record sharing work as follows.
 When you share product information across companies, it works as follows.
 
 - The released products table (`Inventtable`) must use *single record sharing*.
-- For related tables (which typically hold policies for handing a product, such as the bar code setup, cost group, and so on) you must decide if you would like to use *single record sharing* or *duplicate record sharing*. <!-- KFM: It would be nice to provide some basis for making this decision.  When I read this topic, it makes me think that I should just use single record sharing for all tables that I want to share. We should maybe give some reasons to choose one over the other in various circumstances. I suppose there's a performance impact or something? -->
+- For related tables (which typically hold policies for handing a product, such as the bar code setup, cost group, and so on) you must decide if you would like to use *single record sharing* or *duplicate record sharing*. In most cases, you'll probably choose to use duplicate record sharing for related tables because single record sharing imposes several restrictions that duplicate record sharing doesn't (for details, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md)).
 
-> [!IMPORTANT]
-> If a field is included in a table that is part of a single record sharing policy, the field and its table will also be shared as a single record unless duplicate record sharing is specified by a policy that was previously enabled. Therefore, duplicate record sharing policies must be enabled before single record sharing policies. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products.
+Before you continue reading this article, we recommend that you read [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) to learn more how data sharing works in Supply Chain Management.
 
 ## Prepare your system to enable cross-company data sharing for products
 
@@ -48,18 +45,22 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Align number sequences.** Number sequences must be aligned across all companies in the data sharing policy.
 - **Enable policies in the correct order.** Duplicate shared policies must be enabled before single record sharing policies.
 - **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
-- **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this topic, and prepare your system as required.
+- **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this article, and prepare your system as required.
 
 ## Set up your system for product sharing
 
 To set up your system to share products across companies, follow these steps.
 
-1. Once you have contacted Microsoft, if accepted for the preview, Microsoft will enable a flight for you
-1. If you are running Supply Chain Management 10.0.31, then do the following steps (you can skip them if you are running 10.0.32 or later). <!-- KFM: This step seems too vague (though it might just be me). How do we get to the **sysflighting** page? Is that really a page name? How do we do we enable the flights once we get there? Why didn't this already happen in step 1? How do I "do a database synchronization"? -->
-    1. Go to the the **sysflighting** page and enable the following flights: 
+1. Once you have contacted Microsoft, if accepted for the preview, Microsoft will enable a flight for you.
+1. If you're running Supply Chain Management 10.0.31, then do the following steps (you can skip them if you're running 10.0.32 or later).
+
+    1. Enable the following flights:
         - `DbSyncEnableSingleRecordSharing`
         - `EnableSysSharing`
     1. Do a database synchronization.
+
+    If you don't know how to complete these steps, please contact Microsoft Support.
+
 1. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and enable the following features:
     - *(Preview) Master company data sharing*
     - *(Preview) Cross-company data sharing for products*
@@ -69,22 +70,23 @@ To set up your system to share products across companies, follow these steps.
 To share products and product-related information, you must create and set up your sharing policies on the **Configure cross-company data sharing** page. Each sharing policy establishes a set of tables and fields that are shared.
 
 > [!IMPORTANT]
-> If a field <!-- KFM: Do we mean a field that references another table? --> is included in a table that is part of a single record sharing policy, then that field and its table will also be shared as a single record unless there already exists an enabled duplicate record sharing policy <!-- KFM: For the related table? -->. Therefore, all of the *duplicate record sharing* policies that you require must be enabled before you start to set up your *single record sharing policies*. For example, if you use duplicate record sharing for production pools, you must enable the production pool policy before you enable the products (which must use single record sharing). <!-- KFM: Similar issues come up later in this topic (where I also added a bunch of comments). Let's discuss this so we can figure out how to make it all a bit more clear. -->
+> If a field in a table being enabled for single record sharing holds a foreign key for a related table, then that related table will also be shared using single record sharing unless there already exists an enabled duplicate record sharing policy for that related table. Therefore, all of the duplicate record sharing policies that you require must be enabled before you start to set up your single record sharing policies. For example, if you plan to use duplicate record sharing for production pools, then you must enable the production pool policy before you enable the products (which must use single record sharing).
 
 ### Set up duplicate record sharing policies
 
-We recommend that you set up duplicate record sharing for tables that handle policies and related information. <!-- KFM: Why do we recommend this?  --> Proceed as follows to create a duplicate record sharing policy. You can create as many duplicate record sharing policies as you want.
+We recommend that you set up duplicate record sharing for tables that handle policies and related information. Proceed as follows to create a duplicate record sharing policy. You can create as many duplicate record sharing policies as you want.
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
 1. Enter a **Name** for your policy (for example, *Product policies - duplicate sharing*).
 1. Leave **Master company data sharing policy** set to *No* (this parameter doesn't apply for *duplicate record sharing* policies).
 1. On the Action Pane, select **Save**.
-1. In the **Companies which share the records in these tables** section, add each company that will share the tables that you will add for this policy.
+1. In the **Companies which share the records in these tables** section, add each company that will share the tables that you'll add for this policy.
 1. In the **Tables and fields to share** section, select **Add** from the toolbar.
-1. In the drop-down dialog box, select a **Table name**. Note that not all tables are enabled for record sharing (see also [Product information tables that can be shared](#tables)). If you would like to share a table that isn't included in this drop-down list, please contact Microsoft Support. <!--KFM: I think this is what we mean. The drop-down list has a very large number of tables (all of which I suppose can be shared?). I have assumed that, of these, the only tables that are relevant for product info are those listed in the later section. -->
-1. In the drop-down dialog box, set **Save data per company** to *Yes* and then select **Add table**. <!-- KFM: **Save data per company** appears to be read-only for all the fields that I tried. Do we really need to mention it here? If so, maybe we should explain what it means. -->
-1. <!-- KFM: What do all the check boxes mean? Why are only some of them checked already? What about the nested check boxes? What do the parentheses mean? Mention "foreign keys"? What all can I do here? --> Continue working until you have added all of the tables you want to share with this policy.
+1. In the drop-down dialog box, select a **Table name**. See also [Product information tables that can be shared](#tables) for more information about which tables you might choose. (Note that not all tables are enabled for record sharing; if you would like to share a table that isn't included in this drop-down list, please send a request to Microsoft Support and we'll consider adding sharing support for your requested table in the future.)
+1. Select **Add table**.
+1. Your table is added. You can choose which fields (and related tables, if any) should be shared by marking and clearing the various check boxes.
+1. Continue working until you've added all of the tables you want to share with this policy.
 1. On the Action Pane, select **Save**.
 
 ### Set up single record sharing policies
@@ -95,14 +97,14 @@ The *Released product* table (`Inventtable`) must be set up for single record sh
 1. On the Action Pane, select **New**.
 1. Enter a **Name** for your policy (for example, *Products - single record sharing*).
 1. Set **Master company data sharing policy** to *Yes*. This setting is required for *single record sharing* policies.
-1. Set **Master company** to the company that will be used as the master. <!-- KFM: What does this do, and how do I decide this? Ask Lars-Bo?  -->
+1. Set **Master company** to the company that will be used as the master. This is the company that the single record is assigned to.
 1. On the Action Pane, select **Save**.
-1. In the **Child companies** section, add each company that will share the tables that you will add for this policy.
+1. In the **Child companies** section, add each company that will share the tables that you'll add for this policy.
 1. In the **Tables and fields to share** section, select **Add** from the toolbar.
 1. In the drop-down dialog box, select a **Table name** (for example, *Inventtable*) and then select **Add table**.
-1. Expand the newly added table and review the status of each of its fields. <!-- KFM: Are we talking about the check boxes here? What does the check mean? -->. Take special note of the status of fields that reference another table <!-- KFM: How do we identify these? -->; make sure that you have either included them <!-- KFM: what is "them", the fields or the related tables? --> as part of a duplicate record sharing policy or you are acknowledging that they will be single record shared, and that table will also be single record shared <!-- KFM: I can't tell what we are asking the user to do here. Let's discuss this step. -->.
+1. Expand the newly added table and review the status of each of its fields (enabled fields show a check mark). Take special note of the status of fields that reference another table (these are labeled with the text "foreign key"). Make sure that you have either included the related table as part of a duplicate record sharing policy or be aware that the related tables will now also be shared using single record sharing.
 
-<!-- We have an issue with the templates, so hide this until we solve it:
+<!-- KFM: We have an issue with the templates, so hide this until we solve it:
 
 To get started quickly, you can edit the sharing policy templates that are provided and then use them to set up your own default sharing policies. For more information about how to use a template, see [Configure financial cross-company data sharing](../../fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
@@ -110,11 +112,11 @@ To get started quickly, you can edit the sharing policy templates that are provi
 
 ## <a name="tables"></a>Product information tables that can be shared
 
-To share products across companies, the following table *must* be shared using *single record sharing*: <!-- KFM: Please confirm this reformulation of your text (I wasn't sure...)  -->
+To share products across companies, the following table *must* be shared using *single record sharing*:
 
 - Released products (`Inventtable`)
 
-The following product-related tables can be shared using either *duplicate record sharing* or *single record sharing*: <!-- KFM: would be nice (and possibly essential) to list the internal table names for each of these, like we do above for released products (I couldn't find most of these tables using the names we list here). It would be nice to provide some basis for deciding which type of sharing to use for each table, either here or earlier in the topic (a commented elsewhere). -->
+The following product-related tables can be shared using either *duplicate record sharing* or *single record sharing*:
 
 - Barcode setup
 - Batch attribute
@@ -208,7 +210,7 @@ Constraint-based configuration products don't have any limitations. The product 
 
 ### Number sequences
 
-Number sequences can be used for product numbers and other purposes. Number sequences must be shared if they are used with single record sharing of products.
+Number sequences can be used for product numbers and other purposes. Number sequences must be shared if they're used with single record sharing of products.
 
 ### Dual-write
 
@@ -216,7 +218,7 @@ Dual-write isn't currently supported when you use cross-company data sharing for
 
 ### Dynamics 365 Commerce
 
-Dynamics 365 Commerce isn't supported when you use cross-company data sharing for products.
+Dynamics 365 Commerce isn't supported when you use cross-company data sharing for products. This means that you can't use Commerce and cross-company data sharing on the same system. This is because shared products won't be synced to the point of sale (POS) system.
 
 ### Financial dimensions
 
@@ -224,7 +226,7 @@ Fields that reference financial dimensions (for example, the Ledger or Default d
 
 ### Vendors
 
-There is no template policy for the vendors table (`vendtable`). Because the vendors table is marked as a single record shared table, you can create a policy for single record sharing and add the table.
+There's no template policy for the vendors table (`vendtable`). Because the vendors table is marked as a single record shared table, you can create a policy for single record sharing and add the table.
 
 ### Item sales tax group and item purchase tax groups
 
@@ -243,13 +245,13 @@ The following engineering change management concepts will be affected if you use
 - **Definition of engineering companies** – Engineering change management lets you set up one or more engineering companies. These engineering companies might be organizations that represent one or more existing companies where your engineering department is located. Alternatively, you might set up a dedicated company that doesn't represent an actual engineering department, but that you use to manage master data and control the release of products for your organization. For more information about engineering companies, see [Engineering companies and data ownership rules](../engineering-change-management/engineering-org-data-ownership-rules.md).
 - **Release product structure** – From the engineering company, you can use a controlled process to release a product to other companies. For more information about the release product structure, see [Release product structures](../engineering-change-management/release-product-structure.md).
 
-The tables that are related to engineering versions aren't shared, because they are meant to be contained in engineering and to be shared only with a controlled release. Therefore, if you use engineering change management, you might choose one of the following setups:
+The tables that are related to engineering versions aren't shared, because they're meant to be contained in engineering and to be shared only with a controlled release. Therefore, if you use engineering change management, you might choose one of the following setups:
 
 - **Your engineering company is part of the single record sharing policy** – In this case, most of the engineering-related functionality isn't applicable, especially the controlled release. As soon as the product is created as a released product in the engineering company, it's shared (that is, made available) to the rest of your companies. Therefore, the engineering company loses its engineering character, because it's longer a space where the engineering team can work on products, and only those products that continue forward are used in the system.
 
     Because the engineering versions aren't shared, the version information is available only in the engineering company. Therefore, this setup has the following implications:
 
-    - Engineering versions exist only in the engineering company, unless they are shared by using the release product structure.
+    - Engineering versions exist only in the engineering company, unless they're shared by using the release product structure.
     - The lifecycle state at the version level works only in those companies where the version information has been shared. Therefore, you can't control the processes that a version of a product is being used in unless the version is shared with its released product structure.
     - Release control is lost, because the product is shared across all companies.
     - The BOM and route are kept locally. You must manage the BOMs and BOM versions (and also the routes and route versions) at the company level. Therefore, you can still use the release product structure to share the BOM and route.
@@ -258,9 +260,9 @@ The tables that are related to engineering versions aren't shared, because they 
 
 - **Your engineering company isn't part of the single record sharing policy for products** – You can set up your engineering company so that it isn't part of the shared product policy. You can then make a sharing policy that includes all the companies where product introduction is done at the same time. In this case, you can release a product to one company to make it available in all the companies.
 
-    Note that if you require version management, you must still release the version information with the release product structure. Therefore, your organization must have an engineering company where products are designed and managed. Then, when a product is ready, you do a controlled release to the rest of the companies. (This type of controlled release is the main goal of the engineering change management functionality.) In this case, you create the product in the engineering company and then release it to all the companies that are part of the sharing policy. Note that the released product will be released to all the companies at the same time, because they are sharing the same product record.
+    If you require version management, you must still release the version information with the release product structure. Therefore, your organization must have an engineering company where products are designed and managed. Then, when a product is ready, you do a controlled release to the rest of the companies. (This type of controlled release is the main goal of the engineering change management functionality.) In this case, you create the product in the engineering company and then release it to all the companies that are part of the sharing policy. The released product will be released to all the companies at the same time, because they're sharing the same product record.
 
-    Be aware that version-related tables (such as engineering versions) aren't shared. Therefore, you must not rely on version management outside the engineering organization. Alternatively, if you require version management in all companies, you must release version-related information with the release product structure.
+    Version-related tables (such as engineering versions) aren't shared. Therefore, you must not rely on version management outside the engineering organization. Alternatively, if you require version management in all companies, you must release version-related information with the release product structure.
 
 ### Sites and warehouses
 
@@ -269,6 +271,9 @@ Sites and warehouses can be shared. To do so, include the tables `InventLocation
 ## Existing products
 
 When you enable single record sharing for products, it's important that you create and enable the single record sharing policies, and then start to import or create your product portfolio.
+
+> [!IMPORTANT]
+> Any company that already has product records can never be made into a child company for single record sharing. This means that, in most cases, you will only be able to set up product sharing when setting up a new system.
 
 If you already have existing products in the system before you enable the single record sharing policies, they won't be shared.
 
