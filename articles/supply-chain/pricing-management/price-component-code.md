@@ -5,7 +5,7 @@ author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: overview
+ms.topic: how-to
 ms.date: 03/03/2023
 audience: Application User
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.custom: bap-template
 
 The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the various elements that go into finding the price. By providing a list of pricing building blocks, Pricing management enables you to create a pricing structure (price tree) for pricing at the macro level. The price component code is the basic unit of this price scheme. The following two methods are available for building the price structure:
 
-- **Price component setup** – Provides a single, uniform pricing structure for each company.
+- **Price component code setup** – Provides a single, uniform pricing structure for each company.
 - **Pricing trees** – Enables multiple pricing structures based on order attribute values for each company.
 
-You must choose to use *either* the price component setup (a single pricing tree) *or* multiple pricing trees. <!-- KFM: Add link to topic about pricing trees --> You will make this decision based on the complexity of your pricing structure.
+You must choose to use *either* the price component code setup (a single pricing tree) *or* multiple pricing trees. You will make this decision based on the complexity of your pricing structure.
 
 <!--KFM: We should introduce the following table. What are we describing here? -->
 
