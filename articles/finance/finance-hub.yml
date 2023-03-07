@@ -44,19 +44,17 @@ additionalContent:
       links: 
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Security and compliance
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
-        text: Adoption framework
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Best practices
     - title: Try/Buy/Deploy
       links: 
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Try Dynamics 365 Finance
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Buy Dynamics 365 Finance
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Install Dynamics 365 Finance
     - title: Set up 
       links:
