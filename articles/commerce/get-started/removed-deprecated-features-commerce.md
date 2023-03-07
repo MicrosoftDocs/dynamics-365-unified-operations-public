@@ -2,7 +2,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/23/2022
+ms.date: 03/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Platform update 33
 # Removed or deprecated features in Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 
@@ -34,11 +35,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Similar results can be achieved with less latency by installing the Accessiblity Insights browser plugin from https://accessibilityinsights.io/. Low feature usage, maintenance costs, and the availability of a more efficient browser plugin were the reasons for deprecation. |
+| **Reason for deprecation/removal** | Similar results can be achieved with less latency by installing the Accessiblity Insights browser plug-in from https://accessibilityinsights.io/. The reasons for deprecation are low feature usage, maintenance costs, and the availability of a more efficient browser plug-in. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Site builder |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plugin. |
+| **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plug-in. |
 
 ### Commerce parameters setting - Enable price report for retail store
 
