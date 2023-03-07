@@ -46,7 +46,7 @@ additionalContent:
         text: Security and compliance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/fin-ops//imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Best practices
     - title: Try/Buy/Deploy
       links: 
@@ -58,37 +58,37 @@ additionalContent:
         text: Install Dynamics 365 Finance
     - title: Set up 
       links:
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/finance
         text: General setup
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Finance setup
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
         text: Reporting setup 
   - title: Administer and Develop Finance
     items:
     - title: Manage
       links:
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Manage environments
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Manage users
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: dynamics365//organization-administration/plan-case-management
         text: Manage roles
     - title: "Develop: Platform"
       links: 
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/
         text: Develop your environment
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
         text: Customize your experience
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page
         text: Use Dual-write
     - title: Develop for Finance 
       links:
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Patterns in Finance
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities
         text: Data entities
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
         text: Azure data lake
     - title: Developer reference
       links:
@@ -96,7 +96,7 @@ additionalContent:
         text: API references
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
         text: Mapping references
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type
         text: Access to finance and tax reference data
   - title: Use Finance
     items:
