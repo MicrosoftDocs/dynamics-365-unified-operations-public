@@ -176,75 +176,75 @@ additionalContent:
         text: Plan your chart of accounts
       - url: /dynamics365/finance/general-ledger/main-account-types
         text: Main account types
-      - url: dynamics365/finance/general-ledger/financial-dimensions
+      - url: /dynamics365/finance/general-ledger/financial-dimensions
         text: Financial dimensions
     - title: Reporting
       links:
-      - url: dynamics365/finance/general-ledger/financial-reporting-getting-started
+      - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
         text: Financial reporting
-      - url: dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page
         text: Reporting and Power BI integrations
-      - url: dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting
         text: Electronic reporting
     - title: Finance insights
       links:
-      - url: dynamics365/finance/finance-insights/finance-insights-home-page
+      - url: /dynamics365/finance/finance-insights/finance-insights-home-page
         text: Overview
-      - url: dynamics365/finance/finance-insights/budget-proposals
+      - url: /dynamics365/finance/finance-insights/budget-proposals
         text: Budget proposals
-      - url: dynamics365/finance/finance-insights/payment-insights-overview
+      - url: /dynamics365/finance/finance-insights/payment-insights-overview
         text: Customer payment predictions
     - title: Public sector
       links:
-      - url: dynamics365/finance/public-sector/public-sector-functionality
+      - url: /dynamics365/finance/public-sector/public-sector-functionality
         text: Overview
-      - url: dynamics365/finance/public-sector/plan-public-sector-functionality
+      - url: /dynamics365/finance/public-sector/plan-public-sector-functionality
         text: Plan for public sector functionality
-      - url: dynamics365/finance/public-sector/security-roles-public-sector
+      - url: /dynamics365/finance/public-sector/security-roles-public-sector
         text: Security roles in the public sector
     - title: Globalization studio
       links:
-      - url: dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region
+      - url: /dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region
         text: Globalization resources
-      - url: dynamics365/finance/localizations/globalization-services-overview
+      - url: /dynamics365/finance/localizations/globalization-services-overview
         text: Globalization services
-      - url: dynamics365/finance/localizations/rcs-overview
+      - url: /dynamics365/finance/localizations/rcs-overview
         text: Regulatory configuration service
-      - url: dynamics365/finance/localizations/e-invoicing-service-overview
+      - url: /dynamics365/finance/localizations/e-invoicing-service-overview
         text: Electronic invoicing
-      - url: dynamics365/finance/localizations/global-tax-calcuation-service-overview
+      - url: /dynamics365/finance/localizations/global-tax-calcuation-service-overview
         text: Tax calculation Service
     - title: Mobile apps
       links:
-      - url: dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page
         text: Overview
-      - url: dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released
         text: Available mobile workspaces
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Publish mobile workspaces
     - title: Microsoft Office integration
       links:
-      - url: dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
         text: Overview
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Configure and send email
-      - url: dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
         text: Customize the Open in Microsoft Office menu 
     - title: Organization administration
       links:
-      - url: dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
         text: Overview
-      - url: dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
         text: Organizational hierarchies
-      - url: dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
         text: Workflow system
     - title: US Payroll
       links:
-      - url: dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-payroll
+      - url: /dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-payroll
         text: Overview
-      - url: dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings
+      - url: /dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings
         text: Generate earnings for workers
-      - url: dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-existing-earnings
+      - url: /dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-existing-earnings
         text: Process existing earnings
   - title: Related products
     items:
