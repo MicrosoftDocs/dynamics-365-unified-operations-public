@@ -29,14 +29,23 @@ You must choose to use *either* the price component setup (a single pricing tree
 
 | Name | Description |
 |---|---|
-| **Price component** | *Price components* are the main price elements of the pricing structure, which include:<ul><li>Price:<ul><li>Base price</li><li>Sales trade agreement price</li><li>Margin component</li></ul></li><li>Discounts</li><li>Rebate management</li><li>Auto charges</li></ul> |
-| **Price component code** | *Price component codes* are defined and structured based on the function and business usage of your pricing elements.<ul><li>Price component codes can be built following the price sequence.</li><li>Price component codes can establish defaults for posting and the discount concurrency mode.</li><li>Each pricing and discount record is assigned to a specific component code.</li></ul> |
-| **Price component group** | Price component codes can be grouped into a Price component group. |
-| **Price attribute group** | Price attribute group contains a list of price attributes. One price component code can have 1 Header price attribute group + 1 Line price attribute group combination. With that you can define the price rule using attributes to the Pricing component codes. |
-| **Combination rank** | Price attribute group combination rank determines when in the same price component code, if there are multiple applicable rules, if the concurrency mode is based on the "**Price attribute combination rank**", the rule with highest rank will apply. |
+| **Price components** | *Price components* are the main price elements of the pricing structure, which include:<ul><li>Price:<ul><li>Base price</li><li>Sales trade agreement price</li><li>Margin component</li></ul></li><li>Discounts</li><li>Rebate management</li><li>Auto charges</li></ul> |
+| **Price component codes** | *Price component codes* are defined and structured based on the function and business usage of your pricing elements.<!--KFM: Are the "pricing elements" the same as the "price components" we mention earlier? --><ul><li>Price component codes can be built following the price sequence.</li><li>Price component codes can establish defaults for posting and the discount concurrency mode.</li><li>Each pricing and discount record is assigned to a specific price component code.</li></ul> |
+| **Price component groups** | Price component codes can be grouped into *price component groups*. |
+| **Price attribute groups** | Each *price attribute group* contains several price attributes. One price component code can have one *header price attribute group* and one *line price attribute group*. Use these to define pricing rules based on attribute values defined in *pricing component codes*. |
+| **Combination rank** | The *combination rank* for a price attribute group let you define what to do when multiple rules apply from the same price component code for a given order. If the concurrency mode is based on the *price attribute combination rank*, then the rule with highest rank will apply. |
+
+<!-- KFM: Maybe the above table should also have a row for *price attributes*. -->
 
 > [!NOTE]
-> The following *price components* can only have one *price component code*: base price-inventory price, base price-purchase price, base price-sales price and sales trade agreement. The remaining price components can have multiple price component codes.
+> The following price components can only have one price component code:
+>
+> - Base price-inventory price
+> - Base price-purchase price
+> - Base price-sales price
+> - Sales trade agreement.
+>
+> The remaining price components can have multiple price component codes.
 
 Within one price component code, you can define multiple price rule records with different price attribute group combinations.
 
@@ -44,19 +53,24 @@ Within one price component code, you can define multiple price rule records with
 
 Use the following procedure to set up your price component codes.
 
-1. Go to **Pricing management \> Setup \> Price component codes \> Price component code**.
+1. Go to **Pricing management \> Setup \> Price component codes \> Price component codes**.
 
-    ![Graphical user interface  application Description automatically generated](media/image1.png)
+    [<img src="media/price-component-codes.png" alt="The Price component codes page." title="The Price component codes page" width="720" />](media/price-component-codes.png)
 
-1. Select **New** on the action pane to create a new price component code.
-1. Make the following settings in the header of the code:
-    - **Price component code:** Enter name of the code.
-    - **Description:** Etner more details relate to the price component code you are creating.
+1. Do one of the following steps:
+    - To create a new price component code, select **New** on the Action Pane.
+    - To edit an existing price component code, select it on the list pane and then select **Edit** on the Action Pane.
+    - To delete an existing price component code, select it on the list pane and then select **Delete** on the Action Pane.
 
-1. Expand the **General** tab and enter the following details.
-    - **Maintenance mode:** Select the maintenance mode from the dropdown:
-        - **Separate mode** allows you to assign separate ranks to Header and Line attribute group. The system will automatically determine the overall rank of the Header + Line attribute combination.
-        - **Combined mode** allows you to assign an overall rank of the Header+ Line attribute combination.
+1. Make the following settings in the header of your new or selected price component code:
+    - **Price component code:** Enter a name for the code.
+    - **Description:** Enter more details related to the price component code you are creating.
+
+1. Expand the **General** FastTab and enter the following details.
+    - **Price component** – <!-- KFM: Description needed. It may also be necessary to describe each of the options here. -->
+    - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explaing what this means-->. Choose one of the following values
+        - *Separate* – Allows you to assign separate ranks to Header and Line attribute group. The system will automatically determine the overall rank of the Header + Line attribute combination.
+        - *Combined* – Allows you to assign an overall rank of the Header+ Line attribute combination.
     - **Use all in header group** is Yes, when you have the combination where Header attributes have 'all' value.
     - **Use all in line group** is Yes, when you have the combination where Line attributes have "all" value.
     - Assign Price component code to the **Price component code group.**
