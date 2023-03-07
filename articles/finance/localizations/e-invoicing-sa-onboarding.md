@@ -40,7 +40,7 @@ The onboarding process consists of two steps:
 ### Obtain a CCSID
 
 1. In the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/), go to the Onboarding and Management Portal by selecting the relevant tile.
-2. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**. Also, please note that the OTP code is valid only up to one hour of its generation so ensure that it is used within that time frame.
+2. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**. The OTP code is only valid for one hour after it's generated. Make sure that it's used within that time frame.
 3. Select the number of one-time password (OTP) codes to generate. The number depends on the number of e-invoicing generation units (devices) that will be used.
 4. Save the generated OTP codes so that you can use them in later steps.
 5. Prepare a configuration file for the certificate signing request. This configuration file should be in the form of a plain text file that contains the following data.
@@ -93,13 +93,13 @@ The onboarding process consists of two steps:
     | businessCategory  | The industry or sector that the device or solution will generate invoices for. | Free text |
 
     > [!NOTE]
-    > Please note that the values for CN and certificateTemplateName in the config file are different when you are trying to use the simulation portal. 
+    > The values for **CN** and **certificateTemplateName** in the config file are different when you use the simulation portal. 
     >
-    > **In simulation portal:**
-    > - CN = PREZATCA-Code-Signing
-    > - certificateTemplateName = ASN1:PRINTABLESTRING:PREZATCA-Code-Signing
+    > In the simulation portal:
+    > - **CN** - PREZATCA-Code-Signing
+    > - **certificateTemplateName** - ASN1:PRINTABLESTRING:PREZATCA-Code-Signing
     > 
-    > **For any other case use the values as instructed above.**
+    > For any other case, use the values as instructed above.
 
 8. Run the [onboarding script](#script) that is provided later in this article. Specify the OTP and configuration file as input parameters. Here is an example:
 
