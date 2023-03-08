@@ -89,10 +89,9 @@ The following table describes the parameters that are used in this command.
 
 ## Turn maintenance mode on and off in Finance + Operations (on-premises) environments
 
-Ensure you have at least version 2.18.2 of the infrastructure scripts. For more information on obtaining the scripts see [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment
-](../deployment/obtain-infrascripts-onprem.md)
+Ensure you have at least version 2.18.2 of the infrastructure scripts. For more information on obtaining the scripts see [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem.md).
 
-1. To enable maintenance mode run the following script from any node in your Service Fabric cluster.
+1. To enable maintenance mode, run the following script from any node in your Service Fabric cluster.
 ```powershell
 .\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Enable
 ```
