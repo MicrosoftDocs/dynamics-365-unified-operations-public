@@ -86,6 +86,26 @@ The following table describes the parameters that are used in this command.
 | --sqlpwd                    | Use this parameter to specify the SQL Server password.                                                            |
 | --isinmaintenancemode       | Use this parameter to turn configuration mode on or off. Use **true** to turn it on and **false** to turn it off. |
 
+
+## Turn maintenance mode on and off in Finance + Operations (on-premises) environments
+
+Ensure you have at least version 2.18.2 of the infrastructure scripts. For more information on obtaining the scripts see [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment
+](../deployment/obtain-infrascripts-onprem.md)
+
+1. To enable maintenance mode run the following script from any node in your Service Fabric cluster.
+```powershell
+.\Set-MaintenanceMode.ps1 -ConfigurationFilePAth .\ConfigTemplate.xml -Enable
+```
+> [!IMPORTANT]
+> The script will restart all of your Application Object Server (AOS) instances.
+
+1. After your AOS instances are running again, the system will be in maintenance mode.
+1. When you've completed your maintenance mode activities, run the following script from any node in your Service Fabric cluster.
+```powershell
+.\Set-MaintenanceMode.ps1 -ConfigurationFilePAth .\ConfigTemplate.xml -Disable
+```
+
+
 ## Enable (or disable) configuration keys
 
 After the instance of Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screenshot. 
