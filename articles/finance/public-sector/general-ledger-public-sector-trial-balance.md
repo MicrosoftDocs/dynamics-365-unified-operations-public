@@ -1,15 +1,15 @@
 ---
 title: Trial balance with transactional detail report
 description: This article describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
-author: TaylorVH
-ms.date: 10/24/2019
+author: abruer
+ms.date: 03/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: TaylorVH
+ms.author: abruer
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
 ms.search.industry: public sector
@@ -38,7 +38,7 @@ You can now run the updated report, and the results will be available in Microso
 
 ## Feature management
 
-The **Trial balance with transactional detail** report is automatically enabled when the **Generate the trial balance with transactional detail** report feature is enabled in **Feature management**. To include unposted transactions on the report, enable the **Generate trial balance with pending type transactions** feature. To view summary data from the general journal account entry, enable the **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report** feature.
+To view summary data from the general journal account entry, enable the **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report** feature in Feature management.
 
 ## Report options
 
@@ -69,6 +69,8 @@ If you include pending transactions on the report, you must select the type of u
 - Vendor invoice register journals
 
 Unposted intercompany transactions that are entered in the general journal (daily journal) or vendor invoice journals aren't shown on the report. The appropriate "due to" and "due from" entries can't be generated before posting. If those account entries aren't generated, the report will show an unbalanced accounting entry, because the report includes the account entries only for the active legal entity.
+
+Unposted entries for the Free text invoice, Vendor invoice, Project invoice, Purchase order and Purchase requisition display the accounting distributions for the document, not the full accounting entry. The full accounting entry is called a subledger journal and can be viewed from the transaction entry page. Because the accounting distributions, not the subledger journal, are displayed, the report will show an unbalanced accounting entry. 
 
 The **Primary financial dimension set** option defines how transactions are grouped together for combinations of main accounts and financial dimensions. For example, if you select a dimension set that includes the **Main account** and **Department** dimensions, the report will show the opening balance, detailed transactions, and the ending balance for each combination of a main account value and a department value. Regardless of the financial dimension set that is selected, the full ledger account is shown in the **Ledger dimension** account column.
 
@@ -108,9 +110,9 @@ The information that is shown in the **Document** and **Description** columns va
 | Transaction type | Document | Description |
 |------------------|----------|-------------|
 | General journal – Ledger accounts only | Journal batch number | Ledger account or Offset ledger account |
-| General journal – Vendor/Ledger account | **Pay number**: XXX **Pay date**: xx/xx/xxxx | Main account name |
-| Free text invoice or Free text credit memo | **Posting type**: Customer balance or **Posting type**: Customer revenue | Journal number: XXXXXX Line description |
-| Vendor invoice | **Posting type:** Vendor balance or **Pay number**: XXX **Pay date**: xx/xx/xxxx | Vendor name |
-| Vendor payment journal or Customer payment journal | **Pay number**: XXX **Pay date**: xx/xx/xxxx | Vendor name or Customer name |
+| General journal – Vendor/Ledger account | Journal batch number | Vendor name |
+| Free text invoice or Free text credit memo | Free text invoice number | Customer name: XXXXXX Line description |
+| Vendor invoice | Invoice number and invoice date | Vendor name |
+| Vendor payment journal or Customer payment journal | Journal batch number | Vendor name or Customer name |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
