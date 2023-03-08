@@ -94,7 +94,7 @@ Ensure you have at least version 2.18.2 of the infrastructure scripts. For more 
 
 1. To enable maintenance mode run the following script from any node in your Service Fabric cluster.
 ```powershell
-.\Set-MaintenanceMode.ps1 -ConfigurationFilePAth .\ConfigTemplate.xml -Enable
+.\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Enable
 ```
 > [!IMPORTANT]
 > The script will restart all of your Application Object Server (AOS) instances.
@@ -102,7 +102,7 @@ Ensure you have at least version 2.18.2 of the infrastructure scripts. For more 
 1. After your AOS instances are running again, the system will be in maintenance mode.
 1. When you've completed your maintenance mode activities, run the following script from any node in your Service Fabric cluster.
 ```powershell
-.\Set-MaintenanceMode.ps1 -ConfigurationFilePAth .\ConfigTemplate.xml -Disable
+.\Set-MaintenanceMode.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Disable
 ```
 
 
