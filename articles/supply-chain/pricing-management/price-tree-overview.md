@@ -1,5 +1,5 @@
 ﻿---
-title: Price trees overview
+title: Price structure overview
 description: This article provides an overview of how price structures work in Pricing management
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,64 +12,73 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price trees overview
+# Price structure overview
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-You can check the detailed price breakdown including the price component when a sales order is placed. The breakdown corresponds to the price structure that you have configured. The price details that are shown give an audit record of how the price was determined and serve as a starting point for future price investigation.
+You can check the detailed price breakdown including the price component when a sales order is placed. The breakdown corresponds to the price structure that you have configured. The price details that are shown give an audit record of how the price was determined and serve as a starting point for future price investigation. <!-- KFM: This seems like an intro to a different topic. We should instead tell what price trees are and what they are for.  -->
 
 The following two methods are available for building the price structure:
 
 - **Price component code setup** – Provides a single, uniform pricing structure for each company.
-- **Pricing trees** – Enables multiple pricing structures based on order attribute values for each company.
+- **Price trees** – Enables multiple pricing structures based on order attribute values for each company.
 
-![Chart  treemap chart Description automatically generated](media/image1.png)
+<!-- KFM: We should introduce the following image. What are) we showing here?  -->
 
-## Price component types
+[<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png)
 
-There are some principles about the price structure:
+## Price components
 
-| Price component (type) | Price position | Details |
+The following table summarizes the principle components of the price structure used by Pricing management.
+
+| Price component | Price position | Details |
 |---|---|---|
-| Base price | Unit Price | The base price, which is SKU-level, represents the common price for general use.</br>You can choose *one* of the base price types:<ul></br><li>Base price- inventory price</li><li>Base price- purchase price</li><li>Base price- Sales price</li></ul>The base price source from Item base price form, either manually enter or through calculation.</br></br>If you setup the Bae price in the price structure (Price component code setup\Price tress), and there is no record found in the Item base price form.</br></br>Then, the system will check whether the item is a standard cost item and source the base price from the activate item standard cost. |
-| Sales trade agreement price | Unit Price | The Sales trade agreement price shall prevail over the Base Price as it represents the special price arrangement with a particular group of consumers for a certain set of products.</br></br>You can set up *one* price component code for Sales trade agreement price.</br></br>Within the price component code, you can define multiple price rule records, and the concurrency model (parameter level configuration) are:<ul><li>**Find next:** Find the all the applicable records and apply with the cheapest price.</li><li>**Price attribute combination rank:** Find the record that have the highest price attribute combination rank, and apply the price</li></ul> |
-| Margin component price adjustment | Unit Price | The Margin component price adjustment represents a list of price adjustment up and down based on top of the Base price or Sales trade agreement price.</br></br>Unit price= Base price\Sales trade agreement price+\ Margin component price adjustment.</br></br>Each price component (type) allows *multiple* price component codes. Within the price component code, you can define multiple price rule records, and the concurrency models are:<ul><li>**Price attribute combination rank:** Find the records that have the highest price attribute combination rank and apply the price.</li></ul>The system will find the applicable rule records in each price component code, and then *compound* the result into price adjustments. |
-| Discounts | On-invoice discounts | Depending on the business usage, you can group various discount rule records into different discount types of price component codes.</br></br>This differs from the discount type, the later one is calculation method relevant.</br></br>Each price component (type) allows *multiple* price component codes. Within the price component code, you can define multiple price rule records, and the concurrency models are:<ul><li>Best price</li><li>Compounded</li><li>Exclusive</li><li>Always apply</li><li>Price attribute combination rank</li></ul> |
-| **Rebate** | **Off-invoice discounts** | Depending on the business usage, you can group various rebate rule records into different rebate types of price component codes.</br></br>Each price component (type) allows *multiple* price component codes. Within the price component code, you can define multiple price rule records, and the concurrency models are:<ul><li>**Price attribute combination rank:** Find the records that have the highest price attribute combination rank and apply the price.</li></ul> |
+| Base price | Unit Price | <p>The *base price* (which is at the SKU level) represents the common price for general use. You can choose *one* of the base price types:</p><ul><li>Base price - inventory price</li><li>Base price - purchase price</li><li>Base price - sales price</li></ul><p>The base price comes from **Item base price** page <!-- KFM: Where is this page?--> and can be calculated or entered manually.</p><p>If you set up the base price using the price structure (price component code setup or price tress), and no matching record exists on the **Item base price** page, then the system will check whether the item is a standard cost item and source the base price from the activate item standard cost.</p> |
+| Sales trade agreement price | Unit Price | <p>The *sales trade agreement price* takes precedence over the base price because it represents a special price arrangement with a particular group of consumers for a certain set of products.</p><p>You can only have *one* price component code that use this price component. Within that price component code, you can define multiple pricing rule records <!-- KFM: What do we mean by "pricing rule records"? I don't see those here.-->. The concurrency models (parameter level configuration<!--KFM: Are you referencing a setting on the **Pricing management parameters** page? I couldn't find a relevant setting there. -->) are:<ul><li>**Find next** – Find the all the applicable records and apply the one with the cheapest price.</li><li>**Price attribute combination rank** – Find the record that has the highest price attribute combination rank and apply that price</li></ul> |
+| Margin component price adjustment | Unit Price | <p>The *margin component price adjustment* is a set of price adjustments applied to the base price or sales trade agreement price. The system applies the following calculation:</p><p>Unit price = (\[Base price\] or \[Sales trade agreement price\]) &plusmn; \[Margin component price adjustment\].</p><p>You can have *multiple* price component codes that use this price component. Within the price component code, you can define multiple pricing rule records<!-- KFM: What do we mean by "pricing rule records"? I don't see those here.-->. The concurrency models are <!--KFM: Is there just one, or did we forget the others? -->:<ul><li>**Price attribute combination rank** – Find the record that has the highest price attribute combination rank and apply that price.</li></ul><p>The system will find the applicable rule records in each price component code, and then *compound* the result into price adjustments.<!--KFM: Is this actually another concurrency model? --></p> |
+| Discounts | On-invoice discounts | <p>Depending on your business needs, you can group various discount rule records into various discount types of price component codes. This differs from the discount type, the later one is calculation method relevant.<!--KFM: I'm not sure what this paragraph is referring to. --></p><p>You can have *multiple* price component codes that use this price component. Within the price component code, you can define multiple pricing rule records <!-- KFM: What do we mean by "pricing rule records"? I don't see those here.-->. The concurrency models are <!--KFM: Maybe we should describe each of the following, like we do in the sections above. -->:<ul><li>Best price</li><li>Compounded</li><li>Exclusive</li><li>Always apply</li><li>Price attribute combination rank</li></ul> |
+| Rebate | Off-invoice discounts | <p>Depending on your business needs, you can group various rebate rule records into various rebate types of price component codes<!--KFM: I'm not sure what this paragraph is referring to. -->.</p><p>You can have *multiple* price component codes that use this price component. Within the price component code, you can define multiple pricing rule records <!-- KFM: What do we mean by "pricing rule records"? I don't see those here.-->. The concurrency models are<!--KFM: Is there just one, or did we forget the others? -->:<ul><li>**Price attribute combination rank:** Find the records that have the highest price attribute combination rank and apply the price.</li></ul> |
+
+<!--KFM: Why aren't we including the following note as part of the table? This appears to be a "price component", but it's otherwise missing from the table. -->
 
 > [!NOTE]
-> The auto charge for sales is another distinction between the Price component code setup (single price tree) and Price trees (multiple price trees).
+> The auto charge for sales is another distinction between the price component code setup (single price tree) and price trees (multiple price trees).
 >
-> - **Price component code setup:** You can add the Price component code for auto charge in the price tree structure configuration.
-> - **Price trees**: Auto-charges are not included in the Price tree structure. It will operate according to standard Dynamics 365 Supply Chain Management Auto charge logic, which means that when a rule record is applicable, the auto charge will apply to the sales order.
+> - **Price component code setup:** You can add the price component code for auto charge in the price tree structure configuration.
+> - **Price trees**: Auto charges are not included in the price tree structure. The system will apply the standard Supply Chain Management auto-charge logic, which means that when a rule record is applicable, the auto charge will apply to the sales order.
 
 ## Choose a single tree or multiple trees
 
-Price management by default allows you to set up one single structure per company, which is the Price component code setup.
+Depending on your business needs, you can choose to use just one price tree for a company, or establish multiple price trees to use in different situations within a single company.
 
 ## Single tree configuration
 
-To configure price component code setup, go to **Pricing management \> Setup \> Price component code \> Price component code setup.**
+To use a single price tree for a company:
 
-![Graphical user interface  application  table Description automatically generated with medium confidence](media/image2.png)
+1. Select a company from the company picker.
+1. Go to **Pricing management \> Setup \> Pricing management parameters**
+1. Open the **Price attribute** tab and set **Enable multiple price trees** to *No*.
+
+For companies where you use a single price tree, go to **Pricing management \> Setup \> Price component code \> Price component code setup** to set up your pricing structure.
+
+[<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png)
+
+For details about how to work with the **Price component code setup** page, see [Use a single price structure within a company](price-tree-single.md).
 
 ## Multiple trees configuration
 
-Based on your pricing structure, if you want to switch to the multiple trees structure per company, you need to enable the multiple price tree in the parameters.
+To enable multiple price trees for a company:
 
-To enable the multiple price trees:
-
+1. Select a company from the company picker.
 1. Go to **Pricing management \> Setup \> Pricing management parameters**
-1. Go to the Price attribute tab and set 'Enable multiple price trees' as Yes.
-1. And then select the Price tree attributes. The Price tree attributes are **one** of the order attributes that you have configured.
+1. Open the **Price attribute** tab and set **Enable multiple price trees** to *Yes*.
+1. Set **Price tree attribute** to the order attribute that you will use identify which price tree to use.
 
 ![Graphical user interface  application Description automatically generated](media/image3.png)
 
-As was previously indicated, you must give the value of the pricing tree attribute a value when entering a sales order. The value serves as the system's trigger for choosing which price tree to use to determine the price along the price tree.
-
-To configure price component code setup, go to **Pricing management \> Setup \> Price component code \> Price trees**
+To set up your price trees, go to **Pricing management \> Setup \> Price component code \> Price trees**
 
 You can build multiple price tree structure here, for example:
 

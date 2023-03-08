@@ -40,9 +40,9 @@ You must choose to use *either* the price component code setup (a single pricing
 > [!NOTE]
 > You can have at most one price component code record for each of the following price components:
 >
-> - Base price-inventory price
-> - Base price-purchase price
-> - Base price-sales price
+> - Base price - inventory price
+> - Base price - purchase price
+> - Base price - sales price
 > - Sales trade agreement
 >
 > You can have any number price component code records for each of the remaining price components.
@@ -68,9 +68,9 @@ Use the following procedure to set up your price component codes.
 
 1. Expand the **General** FastTab and enter the following details.
     - **Price component** –  You can only edit this for new records (becomes read-only on save).<!-- KFM: Description needed. What does this setting do?  --> Choose one of the following values:
-        - *Base price-inventory price* – <!-- KFM: Briefly describe the purpose of each of these values. Point out the ones that we can only have on of (as mentioned above)  -->
-        - *Base price-purchase price* – 
-        - *Base price-sales price* – 
+        - *Base price - inventory price* – <!-- KFM: Briefly describe the purpose of each of these values. Point out the ones that we can only have on of (as mentioned above)  -->
+        - *Base price - purchase price* – 
+        - *Base price - sales price* – 
         - *Sales trade agreement* – 
         - *Margin component* – 
         - *Discounts* – 
@@ -81,7 +81,15 @@ Use the following procedure to set up your price component codes.
         - *Combined* – Allows you to define each relevant combination of header and line attributes and to assign a combination rank to each of them.
     - **Use all in header group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
     - **Use all in line group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
-    - **Default discount concurrency mode** – <!-- KFM: Description needed. -->
+    - **Default auto charge concurrency mode** – <!-- KFM: Description needed. Also for each value -->
+        - *Always apply* – 
+        - *Price attribute combination rank* – 
+    - **Default discount concurrency mode** – <!-- KFM: Description needed. Also for each value -->
+        - *Exclusive* – 
+        - *Best price* – 
+        - *Compounded* – 
+        - *Always apply* – 
+        - *Price attribute combination rank* – 
     - **Price component code group** – Select a price component code group. You set up and maintain your component code groups on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**). <!-- KFM: More info is needed. What is this, and how will it affect my price component code? We should link to the price component group topic, if we have one. -->
 
 1. If **Maintenance mode** is *Separate*, then expand the **Header price attribute group** FastTab and add each [header attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
