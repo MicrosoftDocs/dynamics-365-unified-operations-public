@@ -21,7 +21,7 @@ ms.search.validFrom: 2021-06-30
 This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this article in the following order:
 
 1. **[Prerequisites](data-upgrade-self-service.md#prerequisites)**
-2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the AX2012DataUpgradeToolKit.exe application to complete the upgrade process.
+2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the DataMigrationTool.exe application to complete the upgrade process.
 3. **[Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application)** – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
 4. **[Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)**  – This section will help you reset the process parameters and restart any of the processes.
 
