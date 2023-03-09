@@ -57,11 +57,8 @@ In summary, the business event catalog helps identify the business events that a
 
 For more information about business events such as activation, performance, and errors, see [Business events overview](../fin-ops-core/dev-itpro/business-events/home-page.md#activating-business-events) and [Business event consumption models](../fin-ops-core/dev-itpro/business-events/home-page.md#business-event-consumption-models).
 
-### Human resources business event consumption models
+### Human resources business events 
 
-The following business events consumption models are available:
-
-- Human Resources business events
 - Personnel actions (position change)
 - Hire actions
 - Task assignment
