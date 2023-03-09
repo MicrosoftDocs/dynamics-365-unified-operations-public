@@ -2,7 +2,7 @@
 # required metadata
 
 title: Move LCS implementation projects from on-premises to the cloud
-description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
+description: This article explains how to move your Microsoft Dynamics 365 finance and operations (on-premises) environments to the cloud.
 author: ttreen
 ms.date: 03/09/2023
 ms.topic: article
@@ -310,7 +310,7 @@ After the validation is successful, the application presents a set of menu optio
 
     This step triggers the rollback of data upgrade. This rolls back the data to the point before the transformation is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
     
-    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this article.
+    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](#reporting-section-of-the-application) later in this article.
     
     If rollback is successful, the **'rbs'** option is shown as **D365 upgrade topology(LCS) status: Replicated**.
 
@@ -349,7 +349,7 @@ You can use the following options to review the reports of the replication valid
 
 1. If needed, reimport all other users, and assign the appropriate security roles. Users now need to be assigned to Azure AD accounts.
 2. Direct printing in a cloud environment is done using the Document routing agent (DRA). Set up sandbox DRAs as described in [Install the Document routing agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
-3. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For more information, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section later in this article.
+3. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For more information, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section in this article.
 4. Run a complete regression test cycle. This cycle should include testing of integrations.
 5. Resolve any issues that are discovered during testing. For each issue, document and keep track of the correcting adjustments that you make in the sandbox, and repeat them in the on-premises source. If any change must not be made in the on-premises environment, because it's incompatible with the correct functioning of that environment, we recommend that you create a DMF data package for it instead of manually applying it for each iteration of the migration process.
 6. Repeat steps two through ten until all tests have been passed, and no further changes are being made to code or the configuration.
@@ -442,7 +442,7 @@ Document handling attachments for finance and operations (on-premises) environme
 
 ## Troubleshooting
 
-For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](troubleshoot-self-service-env.md).
+For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](./troubleshoot-self-service-env.md).
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
