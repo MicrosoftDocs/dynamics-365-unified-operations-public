@@ -24,7 +24,6 @@ ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 
 ---
-
 # Removed or deprecated platform features
 
 [!include [banner](../includes/banner.md)]
@@ -37,6 +36,19 @@ This article describes features that have been removed, or that are planned for 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Feature deprecation effective July 2023
+
+### Non-AAD external user login 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating access for external users that are not present in the tenant used for your finance and operations environment. This has been identified as a security issue by Microsoft, see [Security alert: common or tenanted passthrough tokens alert](https://review.learn.microsoft.com/en-us/identity/microsoft-identity-platform/first-party-alert/passthrough?branch=main/) for more details.  |
+| **Replaced by another feature?**   | Yes, finance and operations already supports B2B collaboration that provides a secure way to provide access for your external guest users. See [B2B collaboration overview](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b/) for more details. If desired, you can take proactive actions by inviting and onboarding these external users from the Azure AD portal. No changes are required using the finance and operations apps. We will share customer communications to impacted customer and share instructions for how this can be resolved based on version 10.0.35 or later for finance and operations apps.     |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. End of support date is targeted for October 2023. |
+
 
 ## Feature deprecation effective August 2022
 
