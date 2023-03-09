@@ -81,12 +81,12 @@ The **Time Off Balances** tile displays the balances for any enrolled plans. Thi
 
 The **Tasks** tile displays tasks that are assigned to you and lets you view and manage them.
 
-The **Next registered course** tile displays the next course you're registered for. You can view and register for any open courses. All courses that show a status of open and are marked for employees to self-register will allow the employees to easily self-register when the employee drills into **View open courses**.  
+The **Next registered course** tile displays the next course that you're registered for. You can view and register for any open courses. If a course has a status of **Open** and is marked for employee self-registration, employees can easily self-register for it when they drill into **View open courses**.
 
->[!Note] 
->If the feature, **Course enhancements**, is enabled the employee view changes to show Courses card which includes courses overdue, courses due soon (due within 10 days), and courses assigned. Employee can drill into assigned, open, and completed courses by clicking **View courses** on the **Employee self service** in the **Courses** tile. For Virtual courses only, employees are allowed to mark status to complete.  
+> [!NOTE] 
+> If the **Course enhancements** feature is enabled, an employee's view shows a **Courses** card that includes courses that are overdue, courses that are due soon (within 10 days), and courses that are assigned. Employee can drill into assigned, open, and completed courses by selecting **View courses** on the **Courses** tile in **Employee self service**. For virtual courses only, employees can change the status to **Complete**.
 
-Depending on your organization's settings, your course registration might go through an approval process.  
+Depending on your organization's settings, your course registration might go through an approval process.
 
 The **Next Registered Course** displays the next course you're registered for. You can view and register for any open courses. All courses that are open for sign-up have a status of **Started**, and allow employees to self-register appear. Depending on your organization's settings, your course registration might go through an approval process.
 
