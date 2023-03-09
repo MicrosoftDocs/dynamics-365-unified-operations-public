@@ -44,7 +44,8 @@ This article provides an example of a business event.
 
 5. Search for and select the **Dynamics 365 Finance** connector.
 6. Select the **When a Business event occurs** trigger.
-7. Select your environment instance:
+
+7. Go to your environment instance:
 
     - Category = **Human Resources**
     - Business event = The name of the business event (for example, **Assigned task**)
@@ -52,11 +53,11 @@ This article provides an example of a business event.
 
 8. Select **New step** to add a new action.
 9. Search for the **Parse JSON data** operation. This step is required to parse the message that has the schema of the data contract.
-10. Select the **Content** field of the **Parse JSON** action, and then select the **body** dynamic content.
+10. Select the **Content** field of the **Parse JSON** action, and then select the **body** output from the earlier step that should appear as an option. Select body in the new window.
 
     ![Configuring Parse JSON.](./media/Select-option2.png)
 
-11. In the finance and operations app instance, follow these steps:
+11. Go to your Finance instance, follow these steps:
 
     1. Go to **System Administration \> Business events \> Business events catalog**.
     2. Select a business event.
