@@ -1,8 +1,8 @@
 ---
-title: Manage payment authorizations in Commerce
-description: This article provides an overview of Payment Authorizations and authorization resubmittal jobs for prepayment transactions in Microsoft Dynamics 365 Commerce.
+title: Manage payment authorizations in Dynamics 365 Commerce
+description: This article provides an overview of payment authorizations and authorization resubmittal jobs for prepayment transactions in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/08/2023
+ms.date: 03/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,23 +17,27 @@ ms.search.industry: Retail
 # Manage payment authorizations in Dynamics 365 Commerce
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
-This article provides an overview of managing the payment authorizations in Microsoft Dynamics 365 Commerce. The article will review common authorization parameters, authorization lifespans, and the authorization resubmit job.
+This article provides an overview of payment authorizations and authorization resubmittal jobs for prepayment transactions in Microsoft Dynamics 365 Commerce. The article reviews common authorization parameters, authorization lifespans, and the authorization resubmit job.
 
 ## Authorization common expiry timelines
 
-Authorizations from payment method issuers may vary in their average expirations dependent upon the payment method utilized. While each may vary, there is no guaranteed timeline that each method will adhere to (individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization). Dependent upon the specific payment methods utilized in your environment and with your payment gateway, the Commerce parameters described for your solution can be adjusted to best capture the range needed to help manage those authorizations while orders are in process of being fulfilled.
+Authorizations from payment method issuers may vary in their average expiration dates, depending on the payment method used. While each authorization expiration date may vary, there is no guaranteed timeline that each payment method will follow. Individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization. Depending on the specific payment methods used in your environment and with your payment gateway, you can adjust the Commerce parameters that apply to your solution to best capture the date ranges needed to help manage authorizations while orders are being fulfilled.
 
-For the out-of-box connectors currently supported by Commerce, a commonly advised range of expiry (provided here as a suggestion, not an exact timeframe to what you may experience or use to configure for your environment based on the range of methods utilized) is:
+For the out-of-the-box connectors currently supported by Commerce, commonly advised ranges of authorization expiration are:
 
-- PayPal authorizations: up to 29 Days [can expire earlier in some cases]
-- Credit Card authorizations (via Adyen): typically 14 days [dependent on each issuer]
+- PayPal authorizations: Up to 29 Days (but can expire earlier in some cases)
+- Credit card authorizations (via Adyen): Typically 14 days (dependent on each issuer)
   
-## Managing Authorizations using Dynamics 365 Commerce parameters
+> [!NOTE]
+> The advised expiration ranges provided above are suggestions and not exact timeframes of what you may experience or use to configure for your environment based on the range of methods used.
+  
+## Manage authorizations using Commerce parameters
 
 ### Authorization Expiration Re-Authorization (Accounts Receivable: Number of Days Before Expired)
 
-Found in Headquarters under **Accounts receivable > Setup > Accounts receivable parameters:** **Number of days before expired**
+Found in headquarters under **Accounts receivable \> Setup \> Accounts receivable parameters:** **Number of days before expired**
 
 This field controls all of the environment's Dynamics Payment Connector’s behavior to preemptively void and re-authorize an authorization against the gateway to secure a renewed authorization prior to expiring. For Adyen, the void + re-authorization pattern works to renew the authorization for a new cycle. Adyen’s use of recurring token for the transaction scope can procure an authorized token for the upcoming calls while referencing the same transactional scope as the original customer-approved and validated authorization. If setting the **Number of days before expired** at too long a time period, past the typical timeframe that the payment method authorization tokens expire, there is a risk that the system may initially see the capture token accepted with a transactional response, but if the capture is then later rejected in the gateway, the system will not be aware of the status change. 
 
@@ -46,7 +50,7 @@ With PayPal, the tokens can remain authorized up to 29 days. However, the **Numb
 
 The Authorization Resubmit job is a batch job that can be set at a specific recurring cadence to re-authorize payment authorization tokens which meet the Accounts Receivable **Number of days before expired**.
 
-Retail and Commerce > Retail and Commerce IT > Payments > Authorization resubmit (or search by “Authorization resubmit” in Headquarters).
+Retail and Commerce > Retail and Commerce IT > Payments > Authorization resubmit (or search by “Authorization resubmit” in headquarters).
 
 The batch job action pane for **Authorization resubmit** will display.
 
@@ -82,6 +86,6 @@ For more information about Commerce support for PayPal's Order Intent, see [Orde
 
 ### Adyen Connector Configuration: Authorization stale period (days)
 
-When configuring the **Dynamics 365 Payment Connector for Adyen** in Headquarters for online, Call Center, or Hardware Stations; the configuration attribute **Authorization stale period (days)** sets the number of days the connector should protectively consider the authorization token as expired. Dynamics will proactively set a decline status on a capture if the authorization token is older than the days set in this attribute. The payment record will note an error “Capture failed: Capture failed due to stale authorization.(22062)”. When errored, the capture call is errored in the system prior to calling the payment gateway (Adyen). This setting exists to prevent unnecessary capture requests for authorizations likely to fail, saving in potential unnecessary transactional attempt charges. 
+When configuring the **Dynamics 365 Payment Connector for Adyen** in headquarters for online, Call Center, or Hardware Stations; the configuration attribute **Authorization stale period (days)** sets the number of days the connector should protectively consider the authorization token as expired. Dynamics will proactively set a decline status on a capture if the authorization token is older than the days set in this attribute. The payment record will note an error “Capture failed: Capture failed due to stale authorization.(22062)”. When errored, the capture call is errored in the system prior to calling the payment gateway (Adyen). This setting exists to prevent unnecessary capture requests for authorizations likely to fail, saving in potential unnecessary transactional attempt charges. 
 
 The **Authorization stale period (days)** setting in the Adyen connector configuration should be set at a longer timeframe than the set AR **Number of days before expired** setting. As the Authorization stale period (days) is performing the Dynamics protective action to consider the authorization expired.
