@@ -41,8 +41,6 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plug-in. |
 
-### Commerce parameters setting - Enable price report for retail store
-
 ## Features removed or deprecated in the Commerce 10.0.29 release
 
 ### Commerce parameters setting - Allow price adjustments to increase product price
