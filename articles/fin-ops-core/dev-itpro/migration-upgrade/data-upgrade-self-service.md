@@ -193,6 +193,8 @@ After the validation is successful, the application presents a set of menu optio
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
+    
+    You will also be prompted with the following **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
@@ -214,7 +216,7 @@ After the validation is successful, the application presents a set of menu optio
 
 7. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. 
+    This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
     
     > [!NOTE]
     > If there are no locked tables, then publication will not be created.
