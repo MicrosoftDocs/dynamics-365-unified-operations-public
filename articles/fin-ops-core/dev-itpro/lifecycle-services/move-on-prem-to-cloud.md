@@ -74,7 +74,7 @@ You should consider developing your updated interfaces in such a way that they c
     SELECT @installed;
     ```
 
-    If the replication components aren't installed, follow the steps in [Install SQL Server replication](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-replication.md) to install them.
+    If the replication components aren't installed, follow the steps in [Install SQL Server replication](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
 1. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
 1. Enable and start the SQL Server Agent on the source database server.
@@ -118,7 +118,7 @@ You should consider developing your updated interfaces in such a way that they c
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables won't be replicated to the target database.
+    > The tables added to the ignore list should only be tables that do not exist in the D365 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables won't be replicated to the target database.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -145,7 +145,7 @@ You should consider developing your updated interfaces in such a way that they c
     > [!IMPORTANT]
     > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours.
     
-9. **[Optional]** To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
+3. **[Optional]** To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start process, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
@@ -205,7 +205,7 @@ After the validation is successful, the application presents a set of menu optio
     > [!IMPORTANT]
     > You must use SQL Server authentication. You can't use a domain sign-in.
     > 
-    > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your AX 2012 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be in the local disk of the machine. Avoid using shared paths.
+    > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your D365 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be on the local disk of the machine (avoid using shared paths).
     > 
     > We recommend that you have a static IP address for the virtual machine (VM) or machine (for the allowlist in step 1). In this way, you help prevent connection issues with the target database.
 
@@ -305,9 +305,9 @@ After the validation is successful, the application presents a set of menu optio
     
     At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this article.
     
-    If rollback is successful, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Replicated**.
+    If rollback is successful, the **'rbs'** option is shown as **D365 upgrade topology(LCS) status: Replicated**.
 
-    If rollback fails, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**.
+    If rollback fails, the **'rbs'** option is shown as **D365 upgrade topology(LCS) status: Failed**.
 
 ## Reporting section of the application
 
