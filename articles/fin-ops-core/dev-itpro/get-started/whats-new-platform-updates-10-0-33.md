@@ -26,7 +26,16 @@ This article lists the features that are included in the platform updates for ve
 
 ## Features included in this release
 
-This section will contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+The following table lists the features that are included in this release.
+
+| Module or feature area | Feature name | More information | Enabled by |
+|---|---|---|---|
+| Data integration | **User-based service protection API limits** <\br? With this release, user-based service protection API limits are now mandatory in finance and operations environments. The option to disable the limits is no longer available. | [Service protection API limits](../data-entities/service-protection-api-limits.md) | Mandatory |
+
+
+
+
+
 
 
 
