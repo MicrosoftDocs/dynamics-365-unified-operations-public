@@ -78,7 +78,7 @@ You should consider developing your updated interfaces in such a way that they c
     SELECT @installed;
     ```
 
-    If the replication components aren't installed, follow the steps in [Install SQL Server replication](../sql/database-engine/install-windows/install-sql-server-replication) to install them.
+    If the replication components aren't installed, follow the steps in [Install SQL Server replication](../../sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
 6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
 7. Enable and start the SQL Server Agent on the source database server.
@@ -356,7 +356,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Repeat the migration to production
 
-Follow all previous steps to migrate data, but follow this document: [Golden configuration promotion - Copy the sandbox database to production](./database/dbmovement-scenario-goldenconfig#copy-the-sandbox-database-to-production) 
+Follow all previous steps to migrate data, but follow this document: [Golden configuration promotion - Copy the sandbox database to production](../../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production) 
 
 ## Migrate document handling attachments to your sandbox
 
@@ -442,7 +442,7 @@ Document handling attachments for finance and operations (on-premises) environme
 
 ## Troubleshooting
 
-For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](./troubleshoot-self-service-env.md).
+For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](./troubleshoot-self-service-env).
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
