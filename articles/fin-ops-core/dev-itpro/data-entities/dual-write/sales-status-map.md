@@ -79,6 +79,37 @@ The following table shows the mapping of **Processing Status** between Sales and
 | Invoiced            | Invoiced        | Invoiced                          |
 | Cancelled           | Cancelled       | Cancelled                         |
 
+**Note**, with dual write solution for supply chain changes are made to the **status**. The changes depend on whether map for the CDS Sales order headers entity or the map for the Dynamics 365 Sales order headers entity is running. 
+When the map for the CDS Sales order headers entity is running, then this is the resulting status map:
+
+| Processing Status   | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
+|---------------------|-----------------------------------|--------------------------------------------|-----------------|
+| Active              | Open Order                        | None                                       | Active          |
+| Confirmed           | Open Order                        | Confirmation                               | Active          |
+| Picked              | Open Order                        | Picking List                               | Active          |
+| Partially Delivered | Open Order                        | Packing Slip                               | Active          |
+| Partially Invoiced  | Open Order                        | Invoice                                    | Active          |
+| Delivered           | Delivered                         | Packing Slip                               | Fulfilled       |
+| Invoiced            | Invoiced                          | Invoice                                    | Invoiced        |
+| Cancelled           | Cancelled                         | Not applicable                             | Canceled        |
+
+When the map for the  Dynamics 365 Sales order headers entity is running, And additional processing status is introduced with the below resulting status map:
+
+| Processing Status   | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
+|---------------------|-----------------------------------|--------------------------------------------|-----------------|
+| Active              | Open Order                        | None                                       | Active          |
+| Confirmed           | Open Order                        | Confirmation                               | Active          |
+| Picked              | Open Order                        | Picking List                               | Active          |
+| Partially Delivered | Open Order                        | Packing Slip                               | Active          |
+| Partially Invoiced  | Open Order                        | Invoice                                    | Active          |
+| Delivered           | Delivered                         | Packing Slip                               | Fulfilled       |
+| Delivered and       |
+| Partially Invoiced  | Delivered                         | Invoice                                    | Fulfilled       |
+| Invoiced            | Invoiced                          | Invoice                                    | Invoiced        |
+| Cancelled           | Cancelled                         | Not applicable                             | Canceled        |
+
+
+
 ## Setup
 
 To set up the mapping for the sales order status columns, you must enable the **IsSOPIntegrationEnabled** and **isIntegrationUser** attributes.
