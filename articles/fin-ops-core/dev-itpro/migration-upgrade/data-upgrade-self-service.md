@@ -60,9 +60,9 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 7. Enable and start the SQL Server Agent on the source database server.
 
     > [!NOTE]
-    > A user should have the **DB\_Owner** privilege in the source database, and should have access to the master database and the source database.
+    > A user should have the **DB\_Owner** privilege in the source database and should have access to the master database and the source database.
 
-8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can using the SpecialTables.xml file. 
+8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
@@ -112,8 +112,8 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snaspshot start process, allows you to run smaller initial snaspshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
-    - **snapshotPostPublication** - This option will add in a 5 minute delay bewteen automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, therefore if you chose that option you do not need to set this. 
+    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start process, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
+    - **snapshotPostPublication** - This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, therefore if you choose that option, you do not need to set this. 
 
 
 > [!NOTE]
@@ -121,15 +121,16 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
 ## Data upgrade process
 
-### Run the AX2012DataMigration.exe application
+### Run the DataMigrationTool.exe application
 
 Before you begin the replication process, note that the LCS environment will be in a **Deployed** state when it's created.
 
-1. Run the **AX2012DataMigration.exe** application.
+1. Run the **DataMigrationTool.exe** application.
 
     A console window will open where you can provide the cloud environment type.  
         - Public : **\[ lcs.dynamics.com \]** 
-        - GCC : **\[ gov.lcs.microsoftdynamics.us \]**    
+        - GCC : **\[ gov.lcs.microsoftdynamics.us \]**
+        - UAE : **\[ uae.lcs.dynamics.com \]**     
     After you enter the cloud environment, you will receive a prompt to sign in.
 
 2. Provide the credentials that are used to sign in to LCS.
@@ -145,7 +146,7 @@ Before you begin the replication process, note that the LCS environment will be 
 
 After the validation is successful, the application presents a set of menu options that correspond to the steps in the data upgrade process. To complete the data replication and upgrade, you should perform the steps in the following order.
 
-1. **Data upgrade preparation: Environment setup activity**
+1. **Environment preparation: Environment setup activity**
 
     This step prompts you for the following information:
 
@@ -174,31 +175,31 @@ After the validation is successful, the application presents a set of menu optio
     - It authorizes the source IP address.
     - It validates the target databases.
 
-2. **Data upgrade preparation: Prepare the target environment for the data upgrade**
+2. **Environment preparation: Prepare the target environment for the data upgrade**
 
     This step changes the state of the LCS environment from **Deployed** to **Ready for replication**.
 
-3. **Replication: Clean-up target database**
+3. **Replication: Cleanup Target Database**
 
     This step performs the following actions:
 
     1. Change the state of the LCS environment from **Ready for replication** to **Replication in progress**.
     2. Delete all AX product tables, views, stored procedures, and user-defined functions in the target database.
 
-4. **Replication: Set up distributor**
+4. **Replication: Setup Distributor**
 
     This step creates a distribution database under the **System Databases** folder on the source server. This distribution database is used for replication.
 
-5. **Replication: Set up publication for primary key tables**
+5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If  any **ignore-table** entries are specified, the specified tables are exempted from replication.
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
-6. **Replication: Set up publication for other objects (functions)**
+6. **Replication: Setup Publication for Other Objects (functions)**
 
     This step creates a publication for other objects (functions) and replicates them in the target database. If you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
@@ -211,7 +212,7 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-7. **Cutover: Set up publication for non-primary key tables**
+7. **Cutover: Setup Publication for Non PK Tables**
 
     This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. 
     
@@ -223,7 +224,7 @@ After the validation is successful, the application presents a set of menu optio
     If AX Service acquires a schema lock during creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during creation of the cutover publication.
 
     > [IMPORTANT]
-    > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
    
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
@@ -286,7 +287,7 @@ You can use the following options to review the reports of the replication valid
 
     This option compares the number of tables and records in the source server database and the target server database, and then shows the report. You should use this option only after step 7 is completed.
     
-    If there are mismatched tables, this step lets you create a publication for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
+    If there are mismatched tables, this step lets you create a publication for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app and use the **'dv'** option.
 
     You can find the report data at **output/PostValidationInfo.csv**.
 
