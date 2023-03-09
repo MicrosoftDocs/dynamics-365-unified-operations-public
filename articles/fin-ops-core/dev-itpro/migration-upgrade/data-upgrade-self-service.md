@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This article explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: ttreen  
-ms.date: 10/06/2022
+ms.date: 03/09/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -39,7 +39,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > Keep the following points in mind:
 > 
 > - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
-> - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics365** from LCS.
+> - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics 365** from LCS.
 > - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
@@ -83,7 +83,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables will not be replicated to the target database.
+    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables won't be replicated to the target database.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -108,7 +108,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
    ```
    
     > [!IMPORTANT]
-    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours. 
+    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours. 
     
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
@@ -195,7 +195,7 @@ After the validation is successful, the application presents a set of menu optio
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
     
-    You will also be prompted with the following **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
+    You will be prompted with: **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
@@ -217,7 +217,7 @@ After the validation is successful, the application presents a set of menu optio
 
 7. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
+    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
     
     > [!NOTE]
     > If there are no locked tables, then publication will not be created.
