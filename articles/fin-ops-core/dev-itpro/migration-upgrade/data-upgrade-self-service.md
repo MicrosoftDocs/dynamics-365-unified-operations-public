@@ -39,7 +39,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > Keep the following points in mind:
 > 
 > - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
-> - Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS.
+> - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics365** from LCS.
 > - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
@@ -62,10 +62,11 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     > [!NOTE]
     > A user should have the **DB\_Owner** privilege in the source database, and should have access to the master database and the source database.
 
-8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
+8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can using the SpecialTables.xml file. 
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
+    - **Path of the SpecialTables.xml file:** Data\\SpecialTables.xml
 
     The following examples show how to specify tables and functions in the XML files.
 
@@ -81,7 +82,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade.
+    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables will not be replicated to the target database.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -93,7 +94,20 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!IMPORTANT]
-    > The tables and functions that are specified in these XML files won't be replicated in the target database, and the same format should be followed.
+    > The functions that are specified in the XML file won't be replicated in the target database.
+
+
+   ```
+   <?xml version="1.0" encoding="utf-8"?>
+   <SpecialTables>
+     <Name>
+       <Table></Table>
+     </Name>
+   </SpecialTables>
+   ```
+   
+    > [!IMPORTANT]
+    > Tables specified in the SpecialTables file, will be added to a dedicated publisher .
     
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
