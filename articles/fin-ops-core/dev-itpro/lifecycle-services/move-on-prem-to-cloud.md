@@ -78,7 +78,7 @@ You should consider developing your updated interfaces in such a way that they c
     SELECT @installed;
     ```
 
-    If the replication components aren't installed, follow the steps in [Install SQL Server replication](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-replication) to install them.
+    If the replication components aren't installed, follow the steps in [Install SQL Server replication](../sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
 6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
 7. Enable and start the SQL Server Agent on the source database server.
@@ -280,7 +280,7 @@ After the validation is successful, the application presents a set of menu optio
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
     > 
-    > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
+    > To learn more about the **'dv'** option, see the [Reporting section of the application](/data-upgrade-self-service.md#reporting-section-of-the-application) later in this article.
  
 8. **Cutover: Remove replication setup**
 
@@ -356,7 +356,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Repeat the migration to production
 
-Follow all previous steps to migrate data, but follow this document: [Golden configuration promotion - Copy the sandbox database to production](../../fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#copy-the-sandbox-database-to-production) 
+Follow all previous steps to migrate data, but follow this document: [Golden configuration promotion - Copy the sandbox database to production](./database/dbmovement-scenario-goldenconfig#copy-the-sandbox-database-to-production) 
 
 ## Migrate document handling attachments to your sandbox
 
