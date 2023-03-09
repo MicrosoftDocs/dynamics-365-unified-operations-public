@@ -1,5 +1,5 @@
 ---
-title: Managing Payment Authorizations in Dynamics 365 Commerce
+title: Manage payment authorizations in Commerce
 description: This article provides an overview of Payment Authorizations and authorization resubmittal jobs for prepayment transactions in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/08/2023
@@ -14,13 +14,13 @@ ms.search.validFrom: 2021-06-28
 ms.dyn365.ops.version: 10.0.31
 ms.search.industry: Retail
 ---
-# Managing Payment Authorizations in Dynamics 365 Commerce
+# Manage payment authorizations in Dynamics 365 Commerce
 
 [!include[banner](../includes/banner.md)]
 
 This article provides an overview of managing the payment authorizations in Microsoft Dynamics 365 Commerce. The article will review common authorization parameters, authorization lifespans, and the authorization resubmit job.
 
-## Authorization Common Expiry Timelines
+## Authorization common expiry timelines
 
 Authorizations from payment method issuers may vary in their average expirations dependent upon the payment method utilized. While each may vary, there is no guaranteed timeline that each method will adhere to (individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization). Dependent upon the specific payment methods utilized in your environment and with your payment gateway, the Commerce parameters described for your solution can be adjusted to best capture the range needed to help manage those authorizations while orders are in process of being fulfilled.
 
@@ -29,7 +29,6 @@ For the out-of-box connectors currently supported by Commerce, a commonly advise
 - PayPal authorizations: up to 29 Days [can expire earlier in some cases]
 - Credit Card authorizations (via Adyen): typically 14 days [dependent on each issuer]
   
-
 ## Managing Authorizations using Dynamics 365 Commerce parameters
 
 ### Authorization Expiration Re-Authorization (Accounts Receivable: Number of Days Before Expired)
@@ -75,11 +74,11 @@ Under the **Run in the background** section of the form:
 
 Available in Commerce as of 10.0.30, Commerce supports the PayPal use of the Order context to save and reference the ‘PayPal Order’ in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
 
-·    **Authorize**: This configuration value is the default value. If the field is left blank, Authorize will become the default value. Configuring the OrderIntent field with the Authorize value correlates to the PayPal processing instruction value of NO_INSTRUCTION. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
+**Authorize**: This configuration value is the default value. If the field is left blank, Authorize will become the default value. Configuring the OrderIntent field with the Authorize value correlates to the PayPal processing instruction value of NO_INSTRUCTION. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
 
-·    **Save**: Configuring the OrderIntent field with the Save value correlates to the PayPal processing instruction value of ORDER_SAVED_EXPLICITLY. When this value is used, order references will be saved in the PayPal service.
+**Save**: Configuring the OrderIntent field with the Save value correlates to the PayPal processing instruction value of ORDER_SAVED_EXPLICITLY. When this value is used, order references will be saved in the PayPal service.
 
-Learn more about Commerce's support for PayPal's Order Intent here: https://learn.microsoft.com/en-us/dynamics365/commerce/paypal#order-intent
+For more information about Commerce support for PayPal's Order Intent, see [Order Intent](../paypal.md#order-intent).
 
 ### Adyen Connector Configuration: Authorization stale period (days)
 
