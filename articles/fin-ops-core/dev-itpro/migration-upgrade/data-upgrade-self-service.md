@@ -47,6 +47,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
     ```sql
     -- If @installed is 0, replication must be added to the SQL Server installation.
+    
     USE master;
     GO
     DECLARE @installed int;
