@@ -449,6 +449,5 @@ After step 3 of the data upgrade process is completed, you should find the publi
 - To view the data replication to the target, on the **All Subscription** tab, double-tap (or double-click) the subscription from the grid item.
 
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
