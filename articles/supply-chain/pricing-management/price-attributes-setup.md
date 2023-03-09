@@ -4,9 +4,9 @@ description: This article explains how to set up the configurable price attribut
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ms.topic: how-to
-ms.date: 03/03/2023
+ms.date: 03/24/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template

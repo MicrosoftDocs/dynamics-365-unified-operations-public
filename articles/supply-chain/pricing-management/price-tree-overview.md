@@ -4,9 +4,9 @@ description: This article provides an overview of how price structures work in P
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ms.topic: overview
-ms.date: 03/03/2023
+ms.date: 03/24/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -22,8 +22,8 @@ You can check the detailed price breakdown including the price component when a 
 
 The following two methods are available for building the price structure:
 
-- **Price component code setup** – Provides a single, uniform pricing structure for each company.
-- **Price trees** – Enables multiple pricing structures based on order attribute values for each company.
+- **Price component code setup** – Provides a single, uniform price structure for each company.
+- **Price trees** – Enables multiple price structures based on order attribute values for each company.
 
 <!-- KFM: We should introduce the following image. What are) we showing here?  -->
 
@@ -49,61 +49,7 @@ The following table summarizes the principle components of the price structure u
 > - **Price component code setup:** You can add the price component code for auto charge in the price tree structure configuration.
 > - **Price trees**: Auto charges are not included in the price tree structure. The system will apply the standard Supply Chain Management auto-charge logic, which means that when a rule record is applicable, the auto charge will apply to the sales order.
 
-## Choose a single tree or multiple trees
+## Next steps
 
-Depending on your business needs, you can choose to use just one price tree for a company, or establish multiple price trees to use in different situations within a single company.
-
-## Single tree configuration
-
-To use a single price tree for a company:
-
-1. Select a company from the company picker.
-1. Go to **Pricing management \> Setup \> Pricing management parameters**
-1. Open the **Price attribute** tab and set **Enable multiple price trees** to *No*.
-
-For companies where you use a single price tree, go to **Pricing management \> Setup \> Price component code \> Price component code setup** to set up your pricing structure.
-
-[<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png)
-
-For details about how to work with the **Price component code setup** page, see [Use a single price structure within a company](price-tree-single.md).
-
-## Multiple trees configuration
-
-To enable multiple price trees for a company:
-
-1. Select a company from the company picker.
-1. Go to **Pricing management \> Setup \> Pricing management parameters**
-1. Open the **Price attribute** tab and set **Enable multiple price trees** to *Yes*.
-1. Set **Price tree attribute** to the order attribute that you will use identify which price tree to use.
-
-![Graphical user interface  application Description automatically generated](media/image3.png)
-
-To set up your price trees, go to **Pricing management \> Setup \> Price component code \> Price trees**
-
-You can build multiple price tree structure here, for example:
-
-- Price tree 1- Standard
-
-![Graphical user interface  application Description automatically generated](media/image4.png)
-
-Click **Price tree attributes** in the panel, you can see this price tree is associated with:
-
-| **Order attribute** | **Value** |
-|---------------------|-----------|
-| Order pool          | Standard  |
-
-![Graphical user interface  text  application Description automatically generated](media/image5.png)
-
-- Price tree 2- Campaign sell
-
-![Graphical user interface  application Description automatically generated](media/image6.png)
-
-Click **Price tree attributes** in the panel, you can see this price tree is associated with:
-
-| **Order attribute** | **Value** |
-|---------------------|-----------|
-| Order pool          | Campaign  |
-
-![Graphical user interface  application Description automatically generated](media/image7.png)
-
-More details will be covered in the following section on how to configure price component code setup and multiple price trees.
+- [Set up company to use a multiple price structures](price-tree-multiple.md)
+- [Set up company to use a single price structure](price-tree-single.md)

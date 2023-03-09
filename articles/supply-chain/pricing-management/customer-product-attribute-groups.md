@@ -4,9 +4,9 @@ description: This article explains how to configure customer and product price a
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form:
-ms.topic: conceptual
-ms.date: 03/03/2023
+ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
+ms.topic: how-to
+ms.date: 03/24/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -134,7 +134,7 @@ To use a customer or product price attribute groups in a price attribute group, 
 
 *Customer* price attribute groups can only be used in price attribute groups with a **Sales order matching scope** of *Header*, while *product* price attribute groups can only be used with attribute groups wih a **Sales order matching scope** of *Line*.
 
-You can use the **Price attribute source** filter on the **Add price attribute dialog** to find the value quickly, as summarized in the following table.
+You can use the **Price attribute source** filter on the **Add price attribute** dialog to find the value quickly, as summarized in the following table.
 
 | Price attribute group scope | Attribute name | Source | Table |
 |---|---|---|---|

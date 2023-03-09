@@ -2177,6 +2177,14 @@
           href: pricing-management/customer-product-attribute-groups.md
         - name: Price component codes
           href: pricing-management/price-component-codes.md
+      - name: Price structures
+        items:
+        - name: Price structure overview
+          href: pricing-management/price-tree-overview.md
+        - name: Set up company to use a multiple price structures
+          href: pricing-management/price-tree-multiple.md
+        - name: Set up company to use a single price structure
+          href: pricing-management/price-tree-single.md
       - name: Base price
         items:
         - name: Vendor list prices

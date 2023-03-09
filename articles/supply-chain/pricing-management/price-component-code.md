@@ -1,12 +1,12 @@
 ---
 title: Price component codes
-description: This article describes how to create a pricing structure for pricing at the macro level with Pricing management.
+description: This article describes how to create a price structure for pricing at the macro level with Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: GUPPriceComponentCode
 ms.topic: how-to
-ms.date: 03/03/2023
+ms.date: 03/24/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -18,18 +18,18 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the various elements that go into finding the price. By providing a list of pricing building blocks, Pricing management enables you to create a pricing structure (price tree) for pricing at the macro level. The price component code is the basic unit of this price scheme. The following two methods are available for building the price structure:
+The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the various elements that go into finding the price. By providing a list of pricing building blocks, Pricing management enables you to create a price structure (price tree) for pricing at the macro level. The price component code is the basic unit of this price scheme. The following two methods are available for building the price structure:
 
-- **Price component code setup** – Provides a single, uniform pricing structure for each company.
-- **Pricing trees** – Enables multiple pricing structures based on order attribute values for each company.
+- **Price component code setup** – Provides a single, uniform price structure for each company.
+- **Price trees** – Enables multiple price structures based on order attribute values for each company.
 
-You must choose to use *either* the price component code setup (a single pricing tree) *or* multiple pricing trees. You will make this decision based on the complexity of your pricing structure.
+You must choose to use *either* the price component code setup (a single price tree) *or* multiple price trees. You will make this decision based on the complexity of your price structure.
 
 <!--KFM: We should introduce the following table. What are we describing here? -->
 
 | Name | Description |
 |---|---|
-| **Price components** | *Price components* are the main price elements of the pricing structure, which include:<ul><li>Price:<ul><li>Base price</li><li>Sales trade agreement price</li><li>Margin component</li></ul></li><li>Discounts</li><li>Rebate management</li><li>Auto charges</li></ul> |
+| **Price components** | *Price components* are the main price elements of the price structure, which include:<ul><li>Price:<ul><li>Base price</li><li>Sales trade agreement price</li><li>Margin component</li></ul></li><li>Discounts</li><li>Rebate management</li><li>Auto charges</li></ul> |
 | **Price component codes** | *Price component codes* are defined and structured based on the function and business usage of your pricing elements.<!--KFM: Are the "pricing elements" the same as the "price components" we mention earlier? --><ul><li>Price component codes can be built following the price sequence.</li><li>Price component codes can establish defaults for posting and the discount concurrency mode.</li><li>Each pricing and discount record is assigned to a specific price component code.</li></ul> |
 | **Price component groups** | Price component codes can be grouped into *price component groups*. |
 | **Price attribute groups** | Each *price attribute group* contains several price attributes. One price component code can have one *header price attribute group* and one *line price attribute group*. Use these to define pricing rules based on attribute values defined in *pricing component codes*. |

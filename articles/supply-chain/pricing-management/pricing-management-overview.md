@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/03/2023
+ms.date: 03/24/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -34,7 +34,7 @@ Dynamics 365 Supply Chain Management leverages the [Commerce Scale Unit (CSU) Co
 - Offer, manage, and calculate pricing and provide transparent pricing across channels, which is essential for aligning pricing strategies across multiple channels.
 - Quickly determine prices while considering a variety of commercial aspects, such as general base prices, sales trade agreements, long-term discount agreements, short-term promotion discounts, and retrospective rebate calculations for each sales order.
 - Create pricing data models based on price attributes. Price attributes can be based on categorized product pricing differentiators, customer groups, and order types.
-- Manage complex pricing structures with price-component breakdowns and define margin component price adjustments on top of item base prices. When you create an order, the pricing details can provide a list of price component breakdowns for future in-depth analysis.
+- Manage complex price structures with price-component breakdowns and define margin component price adjustments on top of item base prices. When you create an order, the pricing details can provide a list of price component breakdowns for future in-depth analysis.
 - Easily manage sophisticated pricing rules when converting from B2B pricing to B2B and B2C pricing that considers discount concurrency, bundle sales, mandatory sales items, and bonus free item pricing rules.
 - Simulate prices and show detailed price calculations.
 - Leverage enhanced discount budget controls to avoid margin leakage from fund consumption.
@@ -45,7 +45,7 @@ Dynamics 365 Supply Chain Management leverages the [Commerce Scale Unit (CSU) Co
 Pricing management applies the following key elements to determine pricing:
 
 - **Price attributes** – Provide a flexible way for you to define your pricing factors. They leverage information about customers, products, sales order header, and sales order lines. Price attributes work with the customer and product attribute framework, making them highly configurable. Extension points are available for you to extend the price attributes.
-- **Price component codes** – Group the price attributes together. Price component codes represent the building blocks of your pricing structure. When you create a price and discount rule record, you'll also assign that record to a price component code.
+- **Price component codes** – Group the price attributes together. Price component codes represent the building blocks of your price structure. When you create a price and discount rule record, you'll also assign that record to a price component code.
 - **Price structure** – Let you construe the sequence of your price component codes. You can choose to use one price structure for each company or use different price structures for each order attribute within a company. Within the price structure, price determination logic ensures that the base price can be found. To ensure that the base price can be established, the price determination logic is embedded into the price structure. The base price is the price before making any price adjustments (base price &plus; price adjustment = selling price).
 - **Concurrency mode** – Controls how the final price should be calculated in situations where multiple pricing rules are associated with the same price component code.
 
