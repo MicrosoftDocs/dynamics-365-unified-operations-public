@@ -78,7 +78,7 @@ You should consider developing your updated interfaces in such a way that they c
     SELECT @installed;
     ```
 
-    If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver16) to install them.
+    If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
 6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
 7. Enable and start the SQL Server Agent on the source database server.
