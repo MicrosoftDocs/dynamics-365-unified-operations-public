@@ -107,12 +107,15 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
    ```
    
     > [!IMPORTANT]
-    > Tables specified in the SpecialTables file, will be added to a dedicated publisher .
+    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours. 
     
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
+    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snaspshot start process, allows you to run smaller initial snaspshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
+    - **snapshotPostPublication** - This option will add in a 5 minute delay bewteen automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, therefore if you chose that option you do not need to set this. 
+
+
 > [!NOTE]
 > Do not set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
 
