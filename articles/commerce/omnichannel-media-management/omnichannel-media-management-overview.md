@@ -26,6 +26,15 @@ ms.search.form:
 [Describe new managment UX interfaces (HQ, Omnichannel content library)
 [Diagram of dataflows between UX -> CMS -> HQ -> CSU -> Frontend/POS]
 
+Mermaid example [to be deleted]
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 ## Enabling omnichannel media managment features
 [Tactical steps and best practices to enable this feature accross dev/uat/prod environments]
 
