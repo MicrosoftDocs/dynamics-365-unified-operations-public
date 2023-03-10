@@ -2,7 +2,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/07/2023
+ms.date: 03/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
