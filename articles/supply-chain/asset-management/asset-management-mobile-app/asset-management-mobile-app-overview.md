@@ -28,6 +28,8 @@ The Asset Management mobile app provides the following capabilities for workers 
 
 To use the app, you must have a fully implemented setup of Asset Management on your Dynamics 365 Supply Chain Management environment.
 
+[<img src="media/mobile-app-in-phone.png" alt="The Asset Management mobile app." title="The Asset Management mobile app" width="250" />](media/mobile-app-in-phone.png#lightbox)
+
 > [!NOTE]
 > The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
 

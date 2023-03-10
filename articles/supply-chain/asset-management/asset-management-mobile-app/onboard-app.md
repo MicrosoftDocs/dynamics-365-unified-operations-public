@@ -40,7 +40,7 @@ For the mobile app to work, Power Apps must be able to communicate with your Sup
 
 ## Install the mobile application in Dataverse
 
-<!-- KFM: What are we really doing here? Are we adding support for the app (tables, misc. resources) in Dataverse, or are we just making it possible to download the app to mobile devices from here? -->
+You must install the Asset Management mobile app into your Dataverse environment to make it possible for users to access it when they sign in using the Power Apps mobile app. This process also sets up the required user roles and other dependencies in Dataverse.
 
 Follow these steps to install the Asset Management mobile app in Dataverse:
 

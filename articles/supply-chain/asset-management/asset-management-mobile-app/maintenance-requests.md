@@ -40,9 +40,22 @@ The procedure for creating maintenance requests varies slightly based on which s
 - If you have both the *Maintenance requester* and*Maintenance worker* roles, then the app opens to show a list of jobs assigned to you. To start creating a maintenance request, select **Request** at the top of the page to open a dialog that shows the **Search** and **Scan** buttons.
 - If you have the *System administrator* role, the app will behave as though you have both the *Maintenance requester* and *Maintenance worker* roles.
 
-| Start page for users that have both the *Maintenance requester* role and the *Maintenance worker* role (or the *System administrator* role) | Start page for users that have the *Maintenance requester* role but not the *Maintenance worker* role. |
-|---|---|
-| [<img src="media/start-page-admins.png" alt="Start page with both Maintenance requester and Maintenance worker roles (or system administrator role)." title="Start page with both Maintenance requester and Maintenance worker roles (or system administrator role)" width="200" />](media/start-page-admins.png#lightbox) | [<img src="media/start-page-requester-only.png" alt="Start page with both Maintenance requester role but not Maintenance work role." title="Start page with both Maintenance requester role but not Maintenance work role" width="200" />](media/start-page-requester-only.png#lightbox) |
+:::row:::
+   :::column span="":::
+      [<img src="media/start-page-admins.png" alt="Start page with both Maintenance requester and Maintenance worker roles (or system administrator role)." title="Start page with both Maintenance requester and Maintenance worker roles (or system administrator role)" width="360" />](media/start-page-admins.png#lightbox)
+   :::column-end:::
+   :::column span="":::
+      [<img src="media/start-page-requester-only.png" alt="Start page with both Maintenance requester role but not Maintenance work role." title="Start page with both Maintenance requester role but not Maintenance work role" width="360" />](media/start-page-requester-only.png#lightbox)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Start page for users that have both the *Maintenance requester* role and the *Maintenance worker* role (or the *System administrator* role)
+   :::column-end:::
+   :::column span="":::
+      Start page for users that have the *Maintenance requester* role but not the *Maintenance worker* role.
+   :::column-end:::
+:::row-end:::
 
 ### Search
 
