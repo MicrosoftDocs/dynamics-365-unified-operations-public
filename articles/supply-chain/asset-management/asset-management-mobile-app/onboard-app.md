@@ -68,6 +68,8 @@ Each Supply Chain Management user that should be able to operate the Asset Manag
 - *Maintenance requester* – Allows a Supply Chain Management user account to use the app to create maintenance requests.
 - *Maintenance worker* – Allows a Supply Chain Management user account to use the app to manage maintenance work orders.
 
+Users with the *System administrator* role can both create maintenance requests and manage work orders using the app.
+
 Follow these steps to add the required security roles to a Supply Chain Management user and check that user's **Person** setting:
 
 1. Sign in to your Supply Chain Management environment with an administrator account.
