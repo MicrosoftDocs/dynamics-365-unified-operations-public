@@ -85,7 +85,7 @@ Follow these steps to add the required security roles to a Supply Chain Manageme
 For more information about how to set up roles and security in Supply Chain Management, see
 [Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
-### Set up a maintenance worker each user
+### Set up a maintenance worker for each user
 
 Follow these steps to confirm or create a maintenance worker for a selected user account.
 
