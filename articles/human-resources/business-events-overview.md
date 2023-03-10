@@ -43,11 +43,13 @@ For more information about business events, see [Business events overview](../fi
 
 ## Human resources business event catalog
 
-You can find the business event catalog by going to **System administration \> Set up \> Business events**. The business event catalog lists the business events that are available in the instance that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
+You can find the business event catalog by going to **System administration \> Set up \> Business events** and filter the category column to Human Resources. The business event catalog lists the business events that are available in the instance that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
 The category of a business event identifies its source. Business events that originate from a workflow are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name.
 
 The business event catalog is built during database synchronization at the time of deployment. Users should see the complete list of business events in the catalog. If an explicit update of the catalog is required, go to **Manage \> Rebuild business events catalog**.
+
+![Filter to Human Resources](./Media/overview-filter.png)
 
 For each business event, the business event catalog shows a description. This description can help you better understand the business event and its context in the business process. The catalog also shows the list of data fields that will be sent out in the event. 
 
