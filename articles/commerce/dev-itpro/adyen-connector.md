@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 02/01/2023
+ms.date: 03/09/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -46,12 +46,6 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 ---
 
-# [10.0.26](#tab/10-0-26)
-### Dynamics 365 Retail POS version 10.0.26
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_73p6 | adyen_v1_75p13 |
-
 # [10.0.27](#tab/10-0-27)
 ### Dynamics 365 Retail POS version 10.0.27
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -81,6 +75,12 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_78p6 | adyen_v1_84p1 |
+
+# [10.0.32](#tab/10-0-32)
+### Dynamics 365 Retail POS version 10.0.32
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_84p1 | adyen_v1_86p3 |
 
 ---
 
