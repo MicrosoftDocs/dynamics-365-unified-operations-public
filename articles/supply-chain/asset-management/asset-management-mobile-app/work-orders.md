@@ -1,6 +1,6 @@
 ﻿---
 title: Manage work orders using the Asset Management mobile app
-description: This topic describes how maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders.
+description: This article describes how maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -47,9 +47,9 @@ The jobs and work orders list includes the following elements. The numbers corre
 1. **Jobs** – Select this tab to see the jobs list. It only shows maintenance jobs that are both assigned to you and belong to a maintenance work order that is *Active*.
 1. **Work orders** – Select this tab to see the work orders list. It only shows active work orders that have jobs assigned to you.
 1. **User icon** – Select this icon to get information about the app, such as terms and conditions and the current version of the app.
-1. **Legal entity** – Shows the legal entity (company) that you are currently working in. The lists only show jobs and work orders associated with this legal entity. If your Supply Chain Management user account is set up as an Asset Management worker in more than one legal entity, then you can select this label to switch between legal entities.
+1. **Legal entity** – Shows the legal entity (company) that you're currently working in. The lists only show jobs and work orders associated with this legal entity. If your Supply Chain Management user account is set up as an Asset Management worker in more than one legal entity, then you can select this label to switch between legal entities.
 1. **Request** – If your Supply Chain Management user account is assigned the *Maintenance requester* security role, then you can use this button to create a maintenance request. For more information about this functionality, see [Maintenance requests](../manage-maintenance-requests/maintenance-request-overview.md)
-1. **Search** – When you select this button, a search field appears where you can enter text to search for ID of the work order, asset, or functional location you are looking for.
+1. **Search** – When you select this button, a search field appears where you can enter text to search for ID of the work order, asset, or functional location you're looking for.
 1. **Filter** – Select this button to filter the jobs or work orders in the list based on the following criteria:
     - *Today* – Only show jobs that are scheduled for today.
     - *This week* – Only show jobs that are scheduled to start during the current week.
@@ -84,7 +84,7 @@ The job details page has the following user interface elements. The numbers corr
 
 ### The maintenance checklist
 
-A maintenance checklist is a set of tasks that the maintenance worker needs to complete to close the maintenance job. For more information about how to define a checklist for a job, including how to use item types and how to create groups, see [Maintenance checklists](../work-orders/maintenance-checklists.md). For more information about how to set up default checklists that can be assigned to various maintenance jobs or asset types see [Maintenance job types, categories, variants, trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+A maintenance checklist is a set of tasks that the maintenance worker needs to complete to close the maintenance job. For more information about how to define a checklist for a job, including how to use item types and how to create groups, see [Maintenance checklists](../work-orders/maintenance-checklists.md). For more information about how to set up default checklists that can be assigned to various maintenance jobs or asset types, see [Maintenance job types, categories, variants, trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 To see the maintenance checklist, select the **Checklist** tab at the top of the page. The following illustration highlights the various elements shown on the **Checklist** tab.
 

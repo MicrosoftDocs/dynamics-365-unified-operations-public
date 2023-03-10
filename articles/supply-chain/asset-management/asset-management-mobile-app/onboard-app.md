@@ -1,6 +1,6 @@
 ﻿---
 title: Onboard the Asset Management mobile app
-description: This topic describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Asset Management mobile app and how to install the app on your mobile devices.
+description: This article describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Asset Management mobile app and how to install the app on your mobile devices.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -18,7 +18,7 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice. Note that app install procedure may change after GA -->
 
-This topic describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Asset Management mobile app and how to install the app on your mobile devices.
+This article describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Asset Management mobile app and how to install the app on your mobile devices.
 
 ## Prerequisites
 
@@ -74,8 +74,8 @@ Follow these steps to add the required security roles to a Supply Chain Manageme
 1. Go to **System administration \> Users \> Users**.
 1. Use the filter to find a user that should be able to use the app.
 1. Open the details page for the selected user by selecting the hyperlink for the **User ID**.
-1. Check the **Person** field to see which person is assigned to the current user account. If a person is assigned, write down their name. If no person is assigned, then you will assign one in the next section.
-1. On the **User's roles** FastTab toolbar select **Assign roles** to open the **Assign roles to user** dialog.
+1. Check the **Person** field to see which person is assigned to the current user account. If a person is assigned, write down their name. If no person is assigned, then you'll assign one in the next section.
+1. On the **User's roles** FastTab toolbar, select **Assign roles** to open the **Assign roles to user** dialog.
 1. In the **Role name** column, find and select both the *Maintenance requester* and *Maintenance worker* roles.
 1. Select **OK** to apply your settings and close the dialog.
 
@@ -93,7 +93,7 @@ Follow these steps to confirm or create a maintenance worker for a selected user
 1. Do one of the following steps, depending on whether the user account you set up in the previous section had a **Person** assigned.
 
     - If a person was assigned, then check whether that same person is listed here as a maintenance worker. If not, set up a maintenance worker for that person now. If you need to set up a worker, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) for instructions.
-    - If no person was assigned, then either choose a maintenance worker from this list or add the person you want to use as a maintenance worker as described in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md). Then, go back to **System administration \> Users \> Users**, open the user account you are setting up, and assign the maintenance worker you chose or created here as the **Person** for that account.
+    - If no person was assigned, then either choose a maintenance worker from this list or add the person you want to use as a maintenance worker as described in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md). Then, go back to **System administration \> Users \> Users**, open the user account you're setting up, and assign the maintenance worker you chose or created here as the **Person** for that account.
 
 > [!CAUTION]
 > The **Person** setting for user accounts is permanent, so you won't be able to edit it after saving. Make sure you choose the right one when setting up the user account.
@@ -109,7 +109,7 @@ Follow these steps to download and use the Asset Management mobile app on a mobi
 
 ## Clear the Power Apps cache on a mobile device after updating the backend setup
 
-If the backend setup is modified in Supply Chain Management after installing the Power Apps mobile app on a mobile device (for example by changing the legal entity setup), then you may need to clear the cache in Power Apps. This will allow Power Apps to reload the settings, which otherwise might not take effect until the cache is cleared.
+If the backend setup is modified in Supply Chain Management after installing the Power Apps mobile app on a mobile device (for example by changing the legal entity setup), then you may need to clear the cache in Power Apps to update the local setup data. This operation will allow Power Apps to reload the settings that otherwise might not take effect until the cache is cleared.
 
 To clear the Power Apps cache on a mobile device:
 

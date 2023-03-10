@@ -1,6 +1,6 @@
 ﻿---
 title: File maintenance requests using the Asset Management mobile app
-description: This topic describes how to use the Asset Management mobile app to file maintenance requests.
+description: This article describes how to use the Asset Management mobile app to file maintenance requests.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -62,7 +62,7 @@ When you scan the tag, the system will automatically search for matching assets 
 
 ## Document the maintenance request
 
-When you have identified the target asset or functional location, you are directed to a page where you can add details about the maintenance request.
+When you've identified the target asset or functional location, you're directed to a page where you can add details about the maintenance request.
 
 [<img src="media/maintenance-request-details.png" alt="Maintenance request details." title="Maintenance request details" width="200" />](media/maintenance-request-details.png)
 
@@ -77,10 +77,10 @@ Enter the following information as needed:
 
 ## Add photos
 
-You can use the camera on your mobile device to take photos that document the incident you are filing. The photos will be attached to your maintenance request. If the maintenance request is later converted into a maintenance work order, then the system will copy these photos to the work order.
+You can use the camera on your mobile device to take photos that document the incident you're filing. The photos will be attached to your maintenance request. If the maintenance request is later converted into a maintenance work order, then the system will copy these photos to the work order.
 
 To add photos, select **Add photos** at the bottom of the documentation page.
 
 ## Submit the maintenance request
 
-When you're done filling out the documentation page, select **Submit** to create the maintenance request. You will get a confirmation message when the maintenance request is created in the system.
+When you're done filling out the documentation page, select **Submit** to create the maintenance request. You'll get a confirmation message when the maintenance request is created in the system.
