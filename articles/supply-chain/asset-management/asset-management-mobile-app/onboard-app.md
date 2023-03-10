@@ -1,6 +1,6 @@
 ﻿---
 title: Onboard the Asset Management mobile app
-description: This topic describes how administrators can prepare your Supply Chain Management environment to support the Asset Management mobile app and how to install the app on your mobile devices.
+description: This topic describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Asset Management mobile app and how to install the app on your mobile devices.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -18,11 +18,11 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice. Note that app install procedure may change after GA -->
 
-This topic describes how administrators can prepare your Supply Chain Management environment to support the Asset Management mobile app and how to install the app on your mobile devices.
+This topic describes how administrators can prepare your Supply Chain Management and Dataverse environments to support the Asset Management mobile app and how to install the app on your mobile devices.
 
 ## Prerequisites
 
-Before you can start to onboard the Asset Management mobile app, you must meet the requirements outlined in this section. 
+Before you can start to onboard the Asset Management mobile app, you must meet the requirements outlined in this section.
 
 ### System requirements
 
@@ -44,7 +44,7 @@ For the mobile app to work, Power Apps must be able to communicate with your Sup
 
 Follow these steps to install the Asset Management mobile app:
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Add the *Dynamics 365 Asset Management Mobile Application* to your Dataverse environment by following the instructions given in [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app).
 
 ## Grant access to the mobile application in Dataverse
@@ -81,6 +81,9 @@ Follow these steps to add the required security roles to a Supply Chain Manageme
 
 > [!NOTE]
 > User role organization assignments are not supported. If any of the security roles set for a selected user have been assigned one or more organizations that are different than the user's [default company](../../../fin-ops-core/fin-ops/get-started/personalize-user-experience.md#system-wide-options-for-the-current-user), the app installation will fail.
+
+For more information about how to set up roles and security in Supply Chain Management, see
+[Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ### Set up a maintenance worker each user
 
