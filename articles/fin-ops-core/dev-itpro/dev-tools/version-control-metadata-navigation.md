@@ -40,6 +40,9 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
     When the account is created, you're directed to your account main page where you're prompted to create your first project.
 3. Create a demo **Fleet Management** project.
 
+    > [!NOTE]
+    > This tutorial assumes the use of TFVC version control. For guidance on configuring Git for X++ development, see [X++ in Git](git-intro.md).
+
     ![Create your first project.](./media/firstproject_usingdevotools.png)
 
 ### Create a Azure DevOps team project
