@@ -40,7 +40,7 @@ When you launch the Asset Maintenance mobile app and sign in as a user with the 
 
 The following illustration highlights the various user interface elements for working with maintenance work orders.
 
-[<img src="media/manage-work-orders-ui.png" alt="User interface elements for working with maintenance work orders." title="User interface elements for working with maintenance work orders" width="720" />](media/manage-work-orders-ui.png)
+[<img src="media/manage-work-orders-ui.png" alt="User interface elements for working with maintenance work orders." title="User interface elements for working with maintenance work orders" width="720" />](media/manage-work-orders-ui.png#lightbox)
 
 The jobs and work orders list includes the following elements. The numbers correspond to the numbers in the previous illustration.
 
@@ -65,7 +65,7 @@ In the job lists, each job is presented as a *card*, which shows summary informa
 
 To see the job information, select the **Jobs** tab at the top of the page. The following illustration highlights the various elements shown on the **Jobs** tab.
 
-[<img src="media/manage-job-details-ui.png" alt="User interface elements on the job details page." title="User interface elements on the job details page" width="720" />](media/manage-job-details-ui.png)
+[<img src="media/manage-job-details-ui.png" alt="User interface elements on the job details page." title="User interface elements on the job details page" width="720" />](media/manage-job-details-ui.png#lightbox)
 
 The job details page has the following user interface elements. The numbers correspond to the numbers in the previous illustration.
 
@@ -88,7 +88,7 @@ A maintenance checklist is a set of tasks that the maintenance worker needs to c
 
 To see the maintenance checklist, select the **Checklist** tab at the top of the page. The following illustration highlights the various elements shown on the **Checklist** tab.
 
-[<img src="media/manage-work-orders-checklist-ui.png" alt="User interface elements on the Checklist tab." title="User interface elements on the Checklist tab" width="720" />](media/manage-work-orders-checklist-ui.png)
+[<img src="media/manage-work-orders-checklist-ui.png" alt="User interface elements on the Checklist tab." title="User interface elements on the Checklist tab" width="720" />](media/manage-work-orders-checklist-ui.png#lightbox)
 
 The checklist has the following elements. The numbers correspond to the numbers in the previous illustration.
 
@@ -103,7 +103,7 @@ The checklist has the following elements. The numbers correspond to the numbers 
 
 The work order details page shows more information about a selected work order. To open it, select a card from the work order list. The following illustration highlights the various elements shown on the work order detail page.
 
-[<img src="media/manage-work-order-details-ui.png" alt="User interface elements on the work order detail page." title="User interface elements on the work order detail page" width="720" />](media/manage-work-order-details-ui.png)
+[<img src="media/manage-work-order-details-ui.png" alt="User interface elements on the work order detail page." title="User interface elements on the work order detail page" width="720" />](media/manage-work-order-details-ui.png#lightbox)
 
 The work order detail page has the following elements. The numbers correspond to the numbers in the previous illustration.
 
