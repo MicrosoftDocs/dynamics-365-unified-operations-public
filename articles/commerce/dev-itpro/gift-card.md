@@ -219,7 +219,12 @@ In the back office, on the **Payment services** page, configure the payment serv
 6. On the **General** FastTab, set the following fields:
 
     - In the **Operation name** field, select **Pay gift card**.
-    - In the **Connector name** field, select **TestConnector**.
+    - In the **Connector name** field, select **TestConnector**.  
+  
+  
+  >[!NOTE] 
+ >If the Connector name field is disabled. Save the record then click on **Electronic payment Setup** in the action menu. Enter a new card type mapping and save. The connector field should now be selectable. 
+
 
 9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 10. Select **Save**.
