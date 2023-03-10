@@ -24,9 +24,10 @@ Below are the known limitations and workarounds required to configure a Git repo
 
 - The [Dynamics 365 Finance and Operations build tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) are offered exclusively as an Azure DevOps extension, so for full CI/CD support, consider using Azure DevOps for your Git repo.
 - Git cannot directly map to the PackagesLocalDirectory folder on a development environment without additional configuration steps. These steps are documented in the [Microsoft Developer Blog](https://devblogs.microsoft.com/cse/2022/06/14/xpp-and-git/).
+- Dynamics Lifecycle Services (LCS) checks for a TFVC repository during the deployment of build environments, so if your team uses build environments, you will need to initialize a TFVC repository [and connect to it from LCS](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/continuous-build-test-automation#azure-devops-credential-setup-and-linking-to-lcs-project), even if you're not actively using it for code management.
+- [Branching strategies in TFVC](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/branching-strategies-with-tfvc) often differ from [branching strategies in Git](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies-overview). Common Git-based branching strategies include [Trunk-based](https://learn.microsoft.com/en-us/devops/develop/how-microsoft-develops-devops) management and [GitFlow or GitHub Flow](https://learn.microsoft.com/en-us/devops/develop/how-microsoft-develops-devops).
 
 ## Resources
 
 - [Migrating from TFVC to Git](https://learn.microsoft.com/en-us/devops/develop/git/migrate-from-tfvc-to-git)
 - [Feature comparison between Git and TFVC](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops)
-- General repository branching guidance
