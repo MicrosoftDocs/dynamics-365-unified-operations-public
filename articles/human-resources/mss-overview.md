@@ -41,14 +41,14 @@ This article provides an overview of the **Manager self service** workspace.
 
 ## Configure Employee self service
 
-To configure **Employee self service**, go to **Human resources \> Employee self service**. You can configure the following options to enable managers to make changes or add leave requests on behalf of their direct reports:
+To configure **Employee self service**, go to **Human resources \> Employee self service**. You can configure the following options to enable managers to make changes on behalf of their direct reports:
 
 - Certificates
 - Courses
 - Loan items
 - Project experience
 - Skills
-- Leave and absence requests
+- Add leave and absence requests
 
 ## Configure Manager self service
 
