@@ -23,7 +23,7 @@ ms.dyn365.ops.version: 10.0.31
 Below are the known limitations and workarounds required to configure a Git repo for X++ and set up dev environments for X++ development with Git:
 
 - The [Dynamics 365 Finance and Operations build tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) are offered exclusively as an Azure DevOps extension, so for full CI/CD support, consider using Azure DevOps for your Git repo.
-- Git cannot directly map to the PackagesLocalDirectory folder on a development environment without additional configuration steps, which are documented in the [Microsoft Developer Blog](https://devblogs.microsoft.com/cse/2022/06/14/xpp-and-git/).
+- Git cannot directly map to the PackagesLocalDirectory folder on a development environment without additional configuration steps. These steps are documented in the [Microsoft Developer Blog](https://devblogs.microsoft.com/cse/2022/06/14/xpp-and-git/).
 
 ## Resources
 
