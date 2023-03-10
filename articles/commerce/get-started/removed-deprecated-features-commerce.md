@@ -31,11 +31,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Commerce 10.0.33 release
 
-### Accessiblity Insights integration within site builder
+### Accessibility Insights integration within site builder
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Similar results can be achieved with less latency by installing the Accessiblity Insights browser plug-in from https://accessibilityinsights.io/. The reasons for deprecation are low feature usage, maintenance costs, and the availability of a more efficient browser plug-in. |
+| **Reason for deprecation/removal** | Similar results can be achieved with less latency by installing the Accessibility Insights browser plug-in from https://accessibilityinsights.io/. The reasons for deprecation are low feature usage, maintenance costs, and the availability of a more efficient browser plug-in. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Site builder |
 | **Deployment option**              | All |
