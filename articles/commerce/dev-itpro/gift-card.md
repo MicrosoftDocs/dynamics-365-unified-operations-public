@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 02/01/2023
+ms.date: 03/10/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -217,14 +217,11 @@ In the back office, on the **Payment services** page, configure the payment serv
 4. Select **New**.
 5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields will then be set automatically.
 6. On the **General** FastTab, set the following fields:
-
     - In the **Operation name** field, select **Pay gift card**.
     - In the **Connector name** field, select **TestConnector**.  
-  
-  
-  >[!NOTE] 
- >If the Connector name field is disabled. Save the record then click on **Electronic payment Setup** in the action menu. Enter a new card type mapping and save. The connector field should now be selectable. 
 
+    > [!NOTE] 
+    > If the **Connector name** field is disabled, save the record, and then on the Action Pane, select **Electronic payment setup**. Select **+New** to add a payment type, configure the payment type, and then select **Save**. The connector field should now be selectable. 
 
 9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 10. Select **Save**.
