@@ -104,6 +104,7 @@ You should consider developing your updated interfaces in such a way that they c
 7. Open a support request to have Dynamics Support Engineering copy the document handling attachments from the sandbox storage account to the production storage account and update the references in the production database's DocuValue and DocuDeletedValue tables. After the request has been completed, validate that the attachments are available for a sample of document handling records. 
 > [!NOTE]
 > The Support request for copying the document attachments must be submitted 72 hours in advance for scheduling. Requests made without advance notice cannot be honored.
+
 8. Set up DRAs for production. If you're reusing any of the DRAs that were previously installed as part of your trial migration, remember to update their configuration so that they connect to the production URL instead of the sandbox URL.
 9. Reconcile your cloud and on-premises production environments, as detailed in your cut-over plan.
 10. Obtain sign-off for the go-live.
