@@ -28,7 +28,7 @@ For more information about maintenance work orders in Supply Chain Management, s
 
 ## User requirements
 
-Before you can use the Asset Management mobile app to view and process work orders, you must meet the following requirements:
+To view and process work orders by using the Asset Management mobile app, you must meet the following requirements:
 
 - Your user account in Supply Chain Management must be assigned the *Maintenance worker* security role. For more information, see [Onboard the Asset Management mobile app](onboard-app.md).
 - Your user account in Supply Chain Management must be associated with a human resources *Worker* record that's also set up as an Asset Management worker. For more information, see [Onboard the Asset Management mobile app](onboard-app.md).
