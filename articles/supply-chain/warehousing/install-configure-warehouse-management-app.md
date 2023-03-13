@@ -31,7 +31,7 @@ The Warehouse Management mobile app is available for both Windows and Google And
 
 ### External URLs required by the app
 
-For the Warehouse Management mobile app to function correctly, your internal network must allow allow it to access the following external URLs:
+For the Warehouse Management mobile app to function correctly, your internal network must allow it to access the following external URLs:
 
 - *.microsoft.com
 - *.microsoftonline.com
@@ -50,11 +50,11 @@ To use the Warehouse Management mobile app, the *User settings, icons, and step 
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
 
-For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add manage your deployments of the Warehouse Management mobile app, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
+For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to manage your deployments of the Warehouse Management mobile app, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
 
 ### Install the app from an app store
 
-The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
+The easiest way to install the app on a single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
