@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Move LCS implementation projects from on-premises to the cloud
+title: Move Lifecycle Services implementation projects from on-premises to the cloud
 description: This article explains how to move your Microsoft Dynamics 365 finance and operations (on-premises) environments to the cloud.
 author: ttreen
 ms.date: 03/09/2023
@@ -24,48 +24,49 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
 ---
 
-# Move LCS implementation projects from on-premises to the cloud
+# Move Lifecycle Services implementation projects from on-premises to the cloud
 
 [!include [banner](../includes/banner.md)]
 
 This article explains how to move your Microsoft Dynamics 365 finance and operations (on-premises) environments that are hosted on your own infrastructure to the Azure cloud.
 
 ## Background
-Previous migrations to the cloud would use SQLPackage to create and restore a bacpac file to move the on-premises database into the cloud. That is no longer supported, and the approach now is to use the Data Migration Toolkit 1.0.8 (or higher). 
+
+Previous migrations to the cloud used SQLPackage to create and restore a .bacpac file to move the on-premises database into the cloud. That approach is no longer supported. The current approach uses the Data Migration Toolkit version 1.0.8 (or later). 
 
 ## Cloud subscription licenses
 
 If you don't already have cloud subscription licenses, work with your cloud service provider or volume license reseller to get and activate the required subscriptions on your Azure Active Directory (Azure AD) tenant. All subscriptions for users and add-on environments must be activated.
 
-## Configure LCS cloud implementation project
+## Configure Lifecycle Services cloud implementation project
 
-If no finance and operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services (LCS) cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have an LCS cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
+If no finance and operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
 
-After your LCS cloud implementation project has been created, you must fully configure it. As part of this configuration, you must add the following plus more:
- - users 
- - an Azure DevOps association 
- - subscription estimates 
- - fill in the Asset library 
- - Business process modeler (BPM)
+After your Lifecycle Services cloud implementation project has been created, you must fully configure it. As part of this configuration, you must complete the following steps (and others):
+
+- Add users.
+- Add an Azure DevOps association.
+- Add subscription estimates.
+- Fill in the Asset library.
+- Add Business process modeler (BPM).
 
 ## Complete development and testing of updated integrations
 
 You will have to make some changes to the integration design patterns that you used for interfaces with your finance and operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
 
-You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach will simplify the management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
+You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach will simplify management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
 
 ## Prerequisites
 
-1. Deploy a Tier-2 Sandbox (UAT) Self-Service environment.
+1. Deploy a Tier-2 sandbox (UAT) self-service environment.
 2. Apply the same code package that is applied in your on-premises production environment (or, as appropriate, in the current build from the cloud integration development branch that was discussed in the previous section). This code package should be a single, complete deployable package that includes any independent software vendor (ISV) solutions and licenses.
 
     > [!NOTE]
-    > 
-    > - The LBD migration process is for finance and operations self-service sandbox (UAT) environments only. It can never be run against a production environment. A gold copy refresh is performed to move the migrated data into production. 
-    > - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics 365** from LCS.
-    > - Do not deploy or use the linked Power Platform environment for the migration. The Power Platform environment can be deployed and used after the data upgrade is completed.
+    > - The local business data (LBD) migration process is for finance and operations sandbox (UAT) self-service environments only. It can never be run against a production environment. A gold copy refresh is done to move the migrated data into production. 
+    > - Make sure that you download the latest version of the Data Migration Toolkit for Dynamics 365 from Lifecycle Services.
+    > - Don't deploy or use the linked Power Platform environment for the migration. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
-3. Download the **Data Migration Toolkit for Dynamics365 Version 1.0.8 (or higher)** from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset library, select **Model** as the asset type, and then select the model file.
+3. Download the Data Migration Toolkit for Dynamics 365 version 1.0.8 (or later) from Lifecycle Services. In the Shared asset library, select **Model** as the asset type, and then select the model file.
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
 5. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
 
@@ -84,25 +85,30 @@ You should consider developing your updated interfaces in such a way that they c
 7. Enable and start the SQL Server Agent on the source database server.
 
     > [!NOTE]
-    > A user should have the **DB\_Owner** privilege in the source database and should have access to the master database and the source database.
+    > A user should have the **DB\_Owner** privilege in the source database, and should have access to the master database and the source database.
 
-## Migration Toolkit Setup
+## Data Migration Toolkit setup
 
-1. Extract the **Data Migration Toolkit for Dynamics365 Version 1.0.x** you downloaded from LCS into a folder of your choosing. 
+1. Extract the zip file for the Data Migration Toolkit for Dynamics 365 version 1.0.x that you downloaded from Lifecycle Services into a folder of your choice. 
 
     > [!NOTE]
-    > Right click on the download, and uncheck the unblock check box, to ensure the zip file extracts correctly. 
+    > To ensure that the zip file is correctly extracted, select and hold (or right-click) the download, and then clear the **Unblock** checkbox. 
 
-2. In the folder where the zip was extracted, open the **DataMigrationTool.exe.config** file.
-   - In the file locate the following line:
-   ```XML
-   <add key="isD365OnPrem" value="false" />
-   ```
-   - change the value from **false** to **true**, as in the example below:
-   ```XML
-   <add key="isD365OnPrem" value="true" />
-   ```
-3. **[Optional]** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
+2. In the folder where you extracted the zip file, open the **DataMigrationTool.exe.config** file, and follow these steps:
+
+    1. Find the following line:
+
+        ```xml
+        <add key="isD365OnPrem" value="false" />
+        ```
+
+    2. Change the value from **false** to **true**, as in the example below:
+
+        ```xml
+        <add key="isD365OnPrem" value="true" />
+        ```
+
+3. Optional: If you don't want some of the source database tables to be replicated in the target database, you can specify them in the **IgnoreTables.xml** file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the **IgnoreFunctions.xml** file. Additionally, if you want to put specific tables in publications outside the main publications, you can use the **SpecialTables.xml** file.
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
@@ -122,7 +128,7 @@ You should consider developing your updated interfaces in such a way that they c
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list should only be tables that don't exist in the D365 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables won't be replicated to the target database.
+    > The tables that you add to the ignore list shouldn't exist in the Dynamics 365 Application Object Tree (AOT). If tables that exist in the AOT are included, an error will occur during the data upgrade. These tables won't be replicated to the target database.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -134,58 +140,55 @@ You should consider developing your updated interfaces in such a way that they c
     ```
 
     > [!IMPORTANT]
-    > The functions that are specified in the XML file won't be replicated in the target database.
+    > The functions that are specified in the IgnoreFunctions.xml file won't be replicated to the target database.
 
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <SpecialTables>
+        <Name>
+            <Table></Table>
+        </Name>
+    </SpecialTables>
+    ```
 
-   ```
-   <?xml version="1.0" encoding="utf-8"?>
-   <SpecialTables>
-     <Name>
-       <Table></Table>
-     </Name>
-   </SpecialTables>
-   ```
-   
     > [!IMPORTANT]
-    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours.
-    
-4. **[Optional]** To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
+    > Tables that are specified in the SpecialTables.xml file will be added to a dedicated publisher. The number of special table publishers is based on the **NumberOfPublishers** parameter. For more information, see the next step. Special table handling can be useful for very large tables that you might have to manually start the replication on during downtime hours.
+
+4. Optional: To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start process, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
-    - **snapshotPostPublication** - This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
+    - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value. However, there might be situations where you want to increase the number of publishers, so that you can distribute fewer tables to each publisher. When it's used in conjunction with the manual snapshot start process, an increase in the number of publishers lets you run smaller initial snapshots. This approach can be useful if you have limited maintenance windows and must split the startup of the replication over several.
+    - **snapshotPostPublication** – This option will add a five-minute delay between starts of the automatic snapshot processes. This delay can help with loads on the source server. The toolkit also allows for manual snapshot starts. If you use that approach, you don't have to set this parameter. 
 
-   > [!NOTE]
-   > Don't set up or configure replication during peak times when the system resources/memory usage/IO operations are high. 
-   >
-   > When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). 
-   >
-   > Additionally, it's recommended for a go-live cutover that you start the replication the prior weekend. 
+    > [!NOTE]
+    > Don't set up or configure replication during peak times when system resource usage, memory usage, and IOLCS operations are high. 
+    >
+    > When resources are being used to the maximum extent (that is, more than 90 percent is already consumed), the replication might be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (that is, during off-peak time). 
+    >
+    > For a go-live cutover, we recommend that you start the replication the previous weekend. 
 
-## Migration Process
+## Migration process
 
 ### Run the DataMigrationTool.exe application
 
- > [!IMPORTANT]
- > Before you begin the migration process, ensure that the environment is in a **Deployed** state.
+> [!IMPORTANT]
+> Before you begin the migration process, ensure that the environment is in a **Deployed** state.
 
 1. Run the **DataMigrationTool.exe** application.
 
-    A console window will open where you can provide the cloud environment type.  
-   - Public : **lcs.dynamics.com**
-   - GCC : **gov.lcs.microsoftdynamics.us**   
-   - UAE : **\[ uae.lcs.dynamics.com \]**    
+    A console window will appear, where you can provide the cloud environment type.
 
-   > [!NOTE]
-    After you enter the cloud environment, you will receive a prompt to sign in.
+    - **Public:** lcs.dynamics.com
+    - **GCC:** gov.lcs.microsoftdynamics.us 
+    - **UAE:** \[ uae.lcs.dynamics.com \] 
 
-1. Provide the credentials that are used to sign in to LCS.
+1. After you enter the cloud environment, you're prompted to sign in. Provide the credentials that are used to sign in to Lifecycle Services.
 1. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
 
-    To validate the given values, you will need to sign in using the credentials that are used to sign in to LCS.
+    To validate the given values, you must sign in by using the credentials that are used to sign in to Lifecycle Services.
 
     > [!NOTE]
-    > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in LCS. You can also find the **Environment-Id** value on the **Environment details** page.
+    > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in Lifecycle Services. You can also find the **Environment-Id** value on the **Environment details** page.
 
 ### Complete the data replication and migration
 
@@ -209,27 +212,27 @@ After the validation is successful, the application presents a set of menu optio
     > [!IMPORTANT]
     > You must use SQL Server authentication. You can't use a domain sign-in.
     > 
-    > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your D365 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be on the local disk of the machine (avoid using shared paths).
+    > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you've used compression in your Dynamics 365 database, more space will be required, because the snapshot is uncompressed. The paths should be on the local disk of the machine. (Avoid using shared paths.)
     > 
     > We recommend that you have a static IP address for the virtual machine (VM) or machine (for the allowlist in step 1). In this way, you help prevent connection issues with the target database.
 
     This step performs the following actions:
 
     - It validates the connection to the source database.
-    - It validates the version of the D365 LBD database.
+    - It validates the version of the Dynamics 365 LBD database.
     - It authorizes the source IP address.
     - It validates the target databases.
 
 2. **Environment preparation: Prepare the target environment for the data upgrade**
 
-    This step changes the state of the LCS environment from **Deployed** to **Ready for replication**.
+    This step changes the state of the Lifecycle Services environment from **Deployed** to **Ready for replication**.
 
 3. **Replication: Cleanup Target Database**
 
     This step performs the following actions:
 
-    1. Change the state of the LCS environment from **Ready for replication** to **Replication in progress**.
-    2. Delete all AX product tables, views, stored procedures, and user-defined functions in the target database.
+    1. It changes the state of the Lifecycle Services environment from **Ready for replication** to **Replication in progress**.
+    2. It deletes all Dynamics AX product tables, views, stored procedures, and user-defined functions in the target database.
 
 4. **Replication: Setup Distributor**
 
@@ -237,15 +240,14 @@ After the validation is successful, the application presents a set of menu optio
 
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. If any **special-table** entries were added, they will be added to additional special tables publications. 
     
-    You will be prompted with: **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
-
+    You will receive the following prompt: "Do you want the snapshot to start automatically? Continue by giving Y (Yes) for Automatic, else N (No) for manual (If No you have to manually start the snapshots from replication monitor)." If you select **Yes**, the snapshot replication will be started automatically. If you select **No**, you will have to open SQL Server Management Studio (SSMS), open the replication monitor, and manually start each snapshot. The advantage of manually starting snapshots is that you can control the load on the source SQL Server instance. This approach can be useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it lets you split up when you start the snapshot process. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application] section later in this article.
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
 
 6. **Replication: Setup Publication for Other Objects (functions)**
 
@@ -253,34 +255,35 @@ After the validation is successful, the application presents a set of menu optio
 
     **Created publisher:** AX\_PUB\_OtherObjects
 
+    > [!IMPORTANT]
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
+
     > [!NOTE]
     > The replication will take some time to be completed. You can view the replication status by providing the **'rs'** option.
     >
     > If there are no functions to replicate, the publication won't be created.
-    > 
-    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
 7. **Cutover: Set up publication for non-primary key tables**
 
-     This step creates two publications: 
-      - one used to replicate non-primary key tables 
-      - one used to replicate locked tables 
-    Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
+    This step creates two publications: 
+
+    - One publication is used to replicate non-primary key tables.
+    - One publication is used to replicate locked tables.
+
+    As in step 5, you will be prompted to specify whether you want the snapshot to be started automatically or manually. 
     
     > [!NOTE]
-    > If there are no locked tables, then publication will not be created.
+    > If there are no locked tables, the publication won't be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
-    If the AX service acquires a schema lock during creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during creation of the cutover publication.
+    If the AX service acquires a schema lock during the creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during the creation of the cutover publication.
 
     > [IMPORTANT]
     > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
-   
+
     > [!NOTE]
-    > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
-    > 
-    > To learn more about the **'dv'** option, see the [Reporting section of the application](/data-upgrade-self-service.md#reporting-section-of-the-application) later in this article.
+    > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in the **Data/IgnoreTables.xml** field. Then rerun the app, and use the **'dv'** option. To learn more about the **'dv'** option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
  
 8. **Cutover: Remove replication setup**
 
@@ -298,20 +301,20 @@ After the validation is successful, the application presents a set of menu optio
 
 9. **Post-replication: Update environment state to Replicated**
 
-    This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
+    This step changes the state of the Lifecycle Services environment from **Replication in progress** to **Replication completed**.
 
 10. **Data Synchronise: Trigger Transformation**
 
-    This step triggers a servicing step within LCS that will update the database for the cloud. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
+    This step triggers a servicing step in Lifecycle Services that will update the database for the cloud. When the action is successful, the state of the Lifecycle Services environment changes from **Replication completed** to **Data upgrade in progress**.
 
-    If data migration is successful the environment will be set to a **deployed** status in LCS. 
+    If data migration is successful, the environment will be set to a **Deployed** status in Lifecycle Services. 
 
 11. **Data Synchronise: Trigger Rollback**
 
-    This step triggers the rollback of data upgrade. This rolls back the data to the point before the transformation is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
-    
-    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](#reporting-section-of-the-application) later in this article.
-    
+    This step triggers a rollback of the data upgrade. This action rolls back the data to the point before the transformation was triggered and sets the Lifecycle Services environment state to **Replicated**. These actions will change the environment from **Failed** to the **Replicated** state.
+
+    At this point, you have only triggered the rollback. To view the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](#reporting-section-of-the-application) section later in this article.
+
     If rollback is successful, the **'rbs'** option is shown as **D365 upgrade topology(LCS) status: Replicated**.
 
     If rollback fails, the **'rbs'** option is shown as **D365 upgrade topology(LCS) status: Failed**.
@@ -320,50 +323,50 @@ After the validation is successful, the application presents a set of menu optio
 
 You can use the following options to review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
 
-- **dv) Report:** Validate the replication.
+- **dv) Report** – Validate the replication.
 
-    This option compares the number of tables and records in the source server database and the target server database, and then shows the report. You should use this option only after step seven is completed.
+    This option compares the number of tables and records in the source server database and the target server database, and then shows the report. You should use this option only after step 7 is completed.
     
-    If there are mismatched tables, this step lets you create a publication for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
+    If there are mismatched tables, this step lets you create a publication for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in the **Data/IgnoreTables.xml** file. Then rerun the app, and use the **'dv'** option.
 
     You can find the report data at **output/PostValidationInfo.csv**.
 
-- **rs) Report:** Get the replication status.
+- **rs) Report** – Get the replication status.
 
-    This option shows the report of the replication process for the publications that were created. You should use this option only after step five is started (during the replication process for any publication).
-   
-- **rbs) Report:** Get the rollback status.
+    This option shows the report of the replication process for the publications that were created. You should use this option only after step 5 is started (during the replication process for any publication).
 
-    This option shows the report of the rollback process. You should use this option only after step 11 has started.
+- **rbs) Report** – Get the rollback status.
+
+    This option shows the report of the rollback process. You should use this option only after step 11 is started.
 
 ## Tooling section of the application
 
-- **Reset-rep:** Reset the replication setup by removing all the replication configurations. Publications and the distribution database are deleted. The status of all **Replication** and **Cutover** menu options is reset from **Completed** mode to **Reset** mode to help you redo the replication from the beginning.
-- **Reset-all:** Reset all the menu options, and remove the replication configurations. The status of all the options is changed to **Reset**.
-- **Clear:** Clear the environment setup activity. All information is cleared from the cache, such as the **project-Id** value, **Environment-Id** value, and source database details.
-- **Help:** Show the data upgrade migration options with the updated status.
-- **Exit:** Close the application.
-- **Set-failed:** If you want to delete the environment and if the environment is in the **PreparingForReplication**, **ReadyForReplication**, or **Replicating & Replicated)** state, use this option to set the environment state to **Failed**, and then the environment can be deleted from LCS.
+- **Reset-rep** – Reset the replication setup by removing all the replication configurations. Publications and the distribution database are deleted. The status of all **Replication** and **Cutover** menu options is reset from **Completed** mode to **Reset** mode to help you redo the replication from the beginning.
+- **Reset-all** – Reset all the menu options, and remove the replication configurations. The status of all the options is changed to **Reset**.
+- **Clear** – Clear the environment setup activity. All information is cleared from the cache, such as the **project-Id** value, the **Environment-Id** value, and source database details.
+- **Help** – Show the data upgrade migration options with the updated status.
+- **Exit** – Close the application.
+- **Set-failed** – If you want to delete the environment, and if the environment is in the **PreparingForReplication**, **ReadyForReplication**, or **Replicating & Replicated)** state, use this option to set the environment state to **Failed**. The environment can then be deleted from Lifecycle Services.
 
-## Post Migration Tasks
+## Post-migration tasks
 
-1. If needed, reimport all other users, and assign the appropriate security roles. Users now need to be assigned to Azure AD accounts.
-2. Direct printing in a cloud environment is done using the Document routing agent (DRA). Set up sandbox DRAs as described in [Install the Document routing agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
+1. If necessary, reimport all other users, and assign the appropriate security roles. Users must now be assigned to Azure AD accounts.
+2. Direct printing in a cloud environment is done by using the Document routing agent (DRA). Set up sandbox DRAs as described in [Install the Document routing agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
 3. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For more information, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section in this article.
 4. Run a complete regression test cycle. This cycle should include testing of integrations.
-5. Resolve any issues that are discovered during testing. For each issue, document and keep track of the correcting adjustments that you make in the sandbox, and repeat them in the on-premises source. If any change must not be made in the on-premises environment, because it's incompatible with the correct functioning of that environment, we recommend that you create a DMF data package for it instead of manually applying it for each iteration of the migration process.
-6. Repeat steps two through ten until all tests have been passed, and no further changes are being made to code or the configuration.
+5. Fix any issues that are discovered during testing. For each issue, document and keep track of the correcting adjustments that you make in the sandbox, and repeat those adjustments in the on-premises source. If any change must **not** be made in the on-premises environment, because it's incompatible with the correct functioning of that environment, we recommend that you create a DMF data package for it instead of manually applying it for each iteration of the migration process.
+6. Repeat steps 2 through 10 until all tests have been passed, and no further changes are being made to code or the configuration.
 
 ## Repeat the migration to production
 
-Follow all previous steps to migrate data, but follow this document: [Golden configuration promotion - Copy the sandbox database to production](/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production) 
+Follow all previous steps to migrate data, but follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
 ## Migrate document handling attachments to your sandbox
 
 Document handling attachments for finance and operations (on-premises) environments are stored in a file share. However, the cloud version doesn't support this file share. You can use the following procedure to copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request that Dynamics Support Engineering copy the attachments from your sandbox to production.
 
-1. <!--HERE-->Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox instances of Application Object Server (AOS). For example, you can upload a zip file of the attachments and unpack it on the target. If you don't have remote desktop access (for example, for a self-service environment), you can use a different virtual machine (VM) instead. For reasonable conversion performance, this VM should be in the same Azure datacenter as the target sandbox. If you aren't using the AOS instance, you must add the VM to an allow list for access to the sandbox's SQL database instance.
-2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your finance and operations transactional database, by using the environment details in LCS.
+1. Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox instances of Application Object Server (AOS). For example, you can upload a zip file of the attachments and unpack it on the target. If you don't have remote desktop access (for example, for a self-service environment), you can use a different virtual machine (VM) instead. For reasonable conversion performance, this VM should be in the same Azure datacenter as the target sandbox. If you aren't using the AOS instance, you must add the VM to an allow list for access to the sandbox's SQL database instance.
+2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your finance and operations transactional database, by using the environment details in Lifecycle Services.
 3. Run the following Windows PowerShell script on the sandbox AOS instance or other VM to upload the document handling files to the storage account and create the required metadata for each file.
 
     ```powershell
@@ -439,22 +442,19 @@ Document handling attachments for finance and operations (on-premises) environme
 
 5. Test a sample of the document handling attachments to make sure that they can now be accessed in the sandbox environment.
 
-
 ## Troubleshooting
 
 For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 finance and operations self-service environments](/migration-upgrade/troubleshoot-self-service-env).
 
-## Learn about the replication configuration and status via SQL Server Management Studio
+## Learn about the replication configuration and status via SSMS
 
 In SSMS, if Object explorer includes a **Replication** folder, the replication feature is installed on the server and available.
 
-After step three of the data upgrade process is completed, you should find the publisher configured under the **Replication** folder. To learn the replication status, select and hold (or right-click) the **Replication** folder, and then select **Launch replication monitor**.
+After step 3 of the data upgrade process is completed, you should find the publisher configured under the **Replication** folder. To learn the replication status, select and hold (or right-click) the **Replication** folder, and then select **Launch replication monitor**.
 
 - In the replication monitor, you can view all the publishers that have been created for replication.
 - On the **Snapshot** tab, you can view the status of the snapshot.
 - To view the detail log/transaction, double-tap (or double-click) a grid item.
 - To view the data replication to the target, on the **All subscription** tab, double-tap (or double-click) the subscription from the grid item.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
