@@ -255,7 +255,7 @@ The following table shows the input parameters for the *GetAvailablePromotions* 
 
 | Name        | Sub-name | Type | Required/Optional | Description |
 |-------------|----------|------|-------------------|-------------|
-| DiscountsSearchCriteria | | DiscountsSearchCriteria | Required | |
+| searchCriteria | | DiscountsSearchCriteria | Required | |
 | | ChannelId | long | Required | |
 | | Keyword | string | Optional | |
 | | IsDiscountCodeRequired | bool | Optional | Indicating whether the coupon code required or not. If null is passed, all the discounts will be retrieved regardless of coupon code requirements. |
