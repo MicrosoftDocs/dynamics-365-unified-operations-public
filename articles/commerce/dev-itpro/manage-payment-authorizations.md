@@ -37,46 +37,44 @@ For the out-of-the-box connectors currently supported by Commerce, the commonly 
 
 ### Authorization expiration reauthorization (Accounts Receivable: Number of Days Before Expired)
 
-Found in headquarters under **Accounts receivable \> Setup \> Accounts receivable parameters:** **Number of days before expired**
+The **Number of days before expired** parameter (found in Commerce headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**) controls the behavior of your environment's payment connector by preemptively voiding and reauthorizing authorizations against the gateway to secure a renewed authorization prior to expiring. 
 
-This field controls all of the environment's Dynamics Payment Connector’s behavior to preemptively void and reauthorize an authorization against the gateway to secure a renewed authorization prior to expiring. For Adyen, the void and reauthorization pattern works to renew the authorization for a new cycle. Adyen's use of recurring token for the transaction scope can procure an authorized token for the upcoming calls while referencing the same transactional scope as the original customer-approved and validated authorization. If setting the **Number of days before expired** at too long a time period, past the typical timeframe that the payment method authorization tokens expire, there is a risk that the system may initially see the capture token accepted with a transactional response, but if the capture is then later rejected in the gateway, the system will not be aware of the status change. 
+For Adyen, the void and reauthorization pattern works to renew the authorization for a new cycle. Adyen's use of recurring tokens for the transaction scope can procure an authorized token for upcoming calls while referencing the same transactional scope as the original customer-approved and validated authorization. If you set the **Number of days before expired** parameter for a time range longer than the typical token expiration timeframe, there is a risk that the system may initially see the capture token accepted with a transactional response, but if the capture is later rejected in the gateway, the system won't be aware of the status change. 
 
->[!NOTE]
-> The capture 'response' is the status that the gateway received the network call. The capture 'result' is the actual resulting status of capture action in the gateway. The capture result takes time to be determined and confirmed by the issuer, which makes capture results asynchronous to the Commerce system. Knowing the capture result and documenting that in the system will require the future 'Asynchronous Payments' feature in Commerce to update the Commerce transaction with the capture result. Currently, the transaction's authorization is checked prior to the capture call, and the capture is considered successful (as it is rare for a capture to fail with a successful authorization, but may occur). Capture results can be compared during the reconciliation process.
+> [!NOTE]
+> The capture response is the status that the gateway received the network call. The capture result is the actual resulting status of capture action in the gateway. The capture result takes time to be determined and confirmed by the issuer, which makes capture results asynchronous to the Commerce system. Knowing the capture result and documenting it in the system will require the future Commerce asynchronous payments feature to update the transaction with the capture result. Currently, the transaction's authorization is checked prior to the capture call, and the capture is considered successful. It is rare for a capture to fail with a successful authorization, but it may occur. Capture results can be compared during the reconciliation process.
 
-With PayPal, the tokens can remain authorized up to 29 days. However, the **Number of days before expired** will void PayPal's token without the ability to renew unless the Order Intent setting is set (available in 10.0.30). For PayPal, tokens are single use, and this setting's action will void the token without the ability to recover a new order authorization. PayPal voided tokens will require re-obtaining a payment from the customer for PayPal orders.  With Order Intent (set to “save” in the connector configuration, see section PayPal Order Intent in this document), **Number of days before expired** will extend the Order expiration duration for PayPal tokens. Without PayPal Order Intent, the **Number of days before expired** setting should consider a balanced number of days that works best for both Adyen and PayPal Connectors if using both, and where invoicing will occur within the regular timeframe the token is valid. A recommended setting for **Number of days before expired** is 14 days. 
+With PayPal, the tokens can remain authorized up to 29 days. However, the **Number of days before expired** parameter will void PayPal's token without the ability to renew it unless the **Order Intent** setting (available starting in Commerce version 10.0.30) is configured. For PayPal, tokens are single use, and the **Order Intent** setting's action will void the token without the ability to recover a new order authorization. Voided PayPal tokens require reobtaining a payment from the customer for PayPal orders.  With the **Order Intent** set to **Save** in the connector configuration, the **Number of days before expired** parameter extends the order expiration duration for PayPal tokens. Without **Order Intent** set to **Save**, the **Number of days before expired** parameter should be set to a balanced number of days that works best for both the Adyen and PayPal Connectors (if using both), and where invoicing will occur within the regular timeframe the token is valid. The recommended setting for **Number of days before expired** is 14 days. 
+
+For more information on the PayPal order intent setting, see [PayPal order intent](#paypal-order-intent).
 
 ## Authorization resubmit job
 
-The Authorization Resubmit job is a batch job that can be set at a specific recurring cadence to re-authorize payment authorization tokens which meet the Accounts Receivable **Number of days before expired**.
+The **Authorization Resubmit** job (located in headquarters at **Retail and Commerce \> Retail and Commerce IT \> Payments \> Authorization resubmit**) is a batch job that can be set at a specific recurring cadence to reauthorize payment authorization tokens that meet the **Number of days before expired** parameter value.
 
-**Retail and Commerce \> Retail and Commerce IT \> Payments \> Authorization resubmit** (or search by “Authorization resubmit” in headquarters).
+The **Authorization resubmit** flyout form includes the following parameters:
 
-The batch job action pane for **Authorization resubmit** will display.
-
-The Authorization resubmit form includes the following parameters:
-
-- **Days out** reviews the set shipping date for a Sales Order and triggers the reauthorization based on shipping date set. **Days out** works in addition to the **Number of days before expired** AR parameter.
-- **Check inventory availability** is a legacy field for this batch job that is no longer supported.  
-- **Release and authorize future orders** acts against orders set with a future order date to remove their 'do not process' hold and authorize the amount as the days approach for the order shipping date set.
-- **Retry declined credit cards** retries a card authorization on a previously declined card. This parameter may not be a desired action per your business requirements.
-- **Resubmit stale credit cards** resubmits a card for authorization after the system has determined an expired authorization. This parameter may not be a desired action per your business requirements.
-- **Void expired authorizations** voids the authorization if the system determines it meets the expired settings.
+- **Days out**: Reviews the set shipping date for a sales order and triggers reauthorization based on shipping date set. The **Days out** parameter works in addition to the **Number of days before expired** parameter.
+- **Check inventory availability**: A legacy field for the batch job that is no longer supported.  
+- **Release and authorize future orders**: Acts against orders set with a future order date to remove their "do not process" holds and authorize the amount as the days approach for the order shipping date that is set.
+- **Retry declined credit cards**: Retries a card authorization on a previously declined card. This parameter may not be a desired action per your business requirements.
+- **Resubmit stale credit cards**: Resubmits a card for authorization after the system has determined an expired authorization. This parameter may not be a desired action per your business requirements.
+- **Void expired authorizations**: Voids the authorization if the system determines it meets the expired settings.
 
 Under the **Run in the background** section of the form:
 
-- **Batch processing** - This parameter is set to **Yes** by default and can't be turned off.
-- **Recurrence** - The parameters on the **Recurrence \> Define recurrence** tab allow you to set recurrence timing configurations to run the job.
-- **Alerts** - The parameters on the **Alerts \> Batch job alerts** tab allow you to configure alerts for different events related to the batch job.
-- **Task description** - This parameter specifies the batch job display label.
-- **Batch group** - This parameter can be used to specify batch groups to distribute the workload to different servers.
-- **Private** - When this parameter is set to **Yes**, Commerce restricts other users from processing your batch job. Only the user who configured the form will be able to run the job.
-- **Critical Job** - Setting this parameter to **Yes** prioritizes processing capacity for the job.
+- **Batch processing**: This parameter is set to **Yes** by default and can't be turned off.
+- **Recurrence**: The parameters on the **Recurrence \> Define recurrence** tab allow you to set recurrence timing configurations to run the job.
+- **Alerts**: The parameters on the **Alerts \> Batch job alerts** tab allow you to configure alerts for different events related to the batch job.
+- **Task description**: This parameter specifies the batch job display label.
+- **Batch group**: This parameter can be used to specify batch groups to distribute the workload to different servers.
+- **Private**: When this parameter is set to **Yes**, Commerce restricts other users from processing your batch job. Only the user who configured the form will be able to run the job.
+- **Critical Job**: Setting this parameter to **Yes** prioritizes processing capacity for the job.
 - **Monitoring category** - A monitoring category can be assigned to make it easier to identify different types of jobs during monitoring.
 
 ### PayPal order intent
 
-Available in Commerce as of 10.0.30, Commerce supports the PayPal use of the order context to save and reference the ‘PayPal Order’ in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
+Available starting in Commerce version 10.0.30, Commerce supports the PayPal use of the order context to save and reference the ‘PayPal Order’ in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
 
 **Authorize**: This configuration value is the default value. If the field is left blank, Authorize will become the default value. Configuring the OrderIntent field with the Authorize value correlates to the PayPal processing instruction value of NO_INSTRUCTION. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
 
