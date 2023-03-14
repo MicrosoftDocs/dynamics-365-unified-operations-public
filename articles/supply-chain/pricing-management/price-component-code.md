@@ -55,7 +55,7 @@ Use the following procedure to set up your price component codes.
 
 1. Go to **Pricing management \> Setup \> Price component codes \> Price component codes**.
 
-    [<img src="media/price-component-codes.png" alt="The Price component codes page." title="The Price component codes page" width="720" />](media/price-component-codes.png)
+    [<img src="media/price-component-codes.png" alt="The Price component codes page." title="The Price component codes page" width="720" />](media/price-component-codes.png#lightbox)
 
 1. Do one of the following steps:
     - To create a new price component code, select **New** on the Action Pane.

@@ -51,13 +51,13 @@ Pricing management applies the following key elements to determine pricing:
 
 The following illustration shows many of the elements that affect Pricing management price calculations.
 
-[<img src="media/pricing-management-elements.png" alt="Elements that affect Pricing management price calculations." title="Elements that affect Pricing management price calculations" width="720" />](media/pricing-management-elements.png)
+[<img src="media/pricing-management-elements.png" alt="Elements that affect Pricing management price calculations." title="Elements that affect Pricing management price calculations" width="720" />](media/pricing-management-elements.png#lightbox)
 
 ## Architecture overview
 
 The following illustration shows the architecture of the Pricing management module.
 
-[<img src="media/pricing-management-architecture.png" alt="Pricing management module architecture." title="Pricing management module architecture" width="720" />](media/pricing-management-architecture.png)
+[<img src="media/pricing-management-architecture.png" alt="Pricing management module architecture." title="Pricing management module architecture" width="720" />](media/pricing-management-architecture.png#lightbox)
 
 > [!NOTE]
 > You can create and maintain the pricing rules in Dynamics 365 Supply Chain Management.

@@ -27,7 +27,7 @@ The following two methods are available for building the price structure:
 
 <!-- KFM: We should introduce the following image. What are) we showing here?  -->
 
-[<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png)
+[<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
 
 ## Price components
 

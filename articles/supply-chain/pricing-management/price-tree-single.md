@@ -40,7 +40,7 @@ To set up the price structure for a company that uses a single structure, you wi
 
 1. Go to **Pricing management \> Setup \> Price component codes \> Price component code setup**. This page shows your current price structure (if any), and allows you to add or remove price component codes in the structure. The components are grouped according to the **Price component** set for each listed price component code.
 
-    [<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png)
+    [<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
 
 1. Set up your price structure by adding and removing lines to establish a price sequence and make other settings for each price component code that you want to include. These settings work in exactly the same as they do on the **Price component code list** FastTab of the **Price trees** page (though there is no **Mandatory** column here). For details about how to make these settings, and examples of how they work, see [Use multiple price structures within a company](price-tree-multiple.md).
 

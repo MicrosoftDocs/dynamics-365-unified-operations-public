@@ -34,7 +34,7 @@ You define these pricing rules using combinations of price attributes to define 
 
 <!-- KFM: Introduce the following image. What are we showing here? -->
 
-[<img src="media/price-attributes.png" alt="Price attributes." title="Price attributes" width="500" />](media/price-attributes.png)
+[<img src="media/price-attributes.png" alt="Price attributes." title="Price attributes" width="500" />](media/price-attributes.png#lightbox)
 
 ## Pricing attributes sources
 

@@ -111,7 +111,7 @@ To add, edit, or delete a price attribute group, follow these steps.
     - **Remove** – Remove a selected attribute from the list.
     - **Move up** and **Move down** – Move a selected attribute up or down in rank. <!-- KFM: Does the rank actually matter here?    See the next section for more information about how to use this setting. -->
 
-    [<img src="media/add-customer-price-attribute.png" alt="The Add price attribute dialog." title="The Add price attribute dialog" width="720" />](media/add-customer-price-attribute.png)
+    [<img src="media/add-customer-price-attribute.png" alt="The Add price attribute dialog." title="The Add price attribute dialog" width="720" />](media/add-customer-price-attribute.png#lightbox)
 
 1. For each row on the **Attributes** FastTab, enter or select one or more values in the **Value** column. All customers or products that match the attribute values established here will become a member of the current group. The following rules apply.
     - All rows are combined using a logical AND operator, which means that only those companies or products that have matching values for *all* rows will be included in the group.
@@ -143,4 +143,4 @@ You can use the **Price attribute source** filter on the **Add price attribute**
 
 For more information about how to set up price attribute groups, see [Construct price attribute groups](price-attribute-groups.md).
 
-[<img src="media/add-ProductPriceAttributeGroup.png" alt="Add a customer groups to a price attribute group." title="Add a customer groups to a price attribute group" width="720" />](media/add-ProductPriceAttributeGroup.png)
+[<img src="media/add-ProductPriceAttributeGroup.png" alt="Add a customer groups to a price attribute group." title="Add a customer groups to a price attribute group" width="720" />](media/add-ProductPriceAttributeGroup.png#lightbox)

@@ -1,6 +1,6 @@
 ---
-title: Vendor list prices
-description: Vendor list prices are typically used for products that are procured from vendors and sold to customers.
+title: Vendor list price and price adjustments overview
+description: Vendor list prices come from a vendor price catalogue and can be used as the foundation to calculate the sales price of an item.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -12,15 +12,17 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Vendor list prices
+# Vendor list price and price adjustments overview
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Vendor list prices are typically used for products that are procured from vendors and sold to customers.
+In some cases, Pricing management can derive a product's sales price from the vendor's list price or procurement price, such as when trading items in the retail and distribution industry where products are procured from vendors and sold to customers.
 
-Vendor list price functionality has three core elements:
+Vendor list prices come from a vendor price catalogue and can be used as the foundation to calculate the sales price of an item.
+
+The vendor list price features have three core elements:
 
 - **Vendor list price** – Provides the capability to record the general vendor price catalog with a valid date period. The vendor list price is on the *Item + inventory dimensions* level.
 - **Vendor price term codes** – Establish a list of price adjustment codes, which you can use when defining vendor price term agreements. For calculations with **Compound** set to *Yes*, pricing calculations will apply price term codes together with the pricing sequence.

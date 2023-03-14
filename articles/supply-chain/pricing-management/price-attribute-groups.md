@@ -101,7 +101,7 @@ To add, edit, or delete a price attribute group, follow these steps.
     - **Remove** – Remove a selected attribute from the list.
     - **Move up** and **Move down** – Move a selected attribute up or down in rank. See the next section for more information about how to use this setting.
 
-    [<img src="media/add-price-attribute.png" alt="The Add price attribute dialog." title="The Add price attribute dialog" width="720" />](media/add-price-attribute.png)
+    [<img src="media/add-price-attribute.png" alt="The Add price attribute dialog." title="The Add price attribute dialog" width="720" />](media/add-price-attribute.png#lightbox)
 
     > [!NOTE]
     > You can establish groups of products or customers and then add attribute here that will let you specify those groups by name in your pricing rules. For details about how to create and use these groups, see [Customer and product price attribute groups](customer-product-attribute-groups.md).
@@ -124,4 +124,4 @@ And suppose the following two pricing rules use this price attribute group:
 
 Assuming no other pricing rules apply, then the price will be $100 because that's the price associated with a specific loyalty program, which is the higher ranking attribute.
 
-[<img src="media/price-attribute-rank.png" alt="Price attribute ranks." title="Price attribute ranks" width="720" />](media/price-attribute-rank.png)
+[<img src="media/price-attribute-rank.png" alt="Price attribute ranks." title="Price attribute ranks" width="720" />](media/price-attribute-rank.png#lightbox)

@@ -1,6 +1,6 @@
 ﻿---
 title: Price component posting
-description: This article provides an overview of how price structures work in Pricing management
+description: This article describes how to set up different sales order posting ledgers for each of several different price component codes.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -36,7 +36,7 @@ Follow these steps to prepare your system to support price component posting.
 1. Go to **Pricing management \> Setup \> Pricing management parameters**.
 1. Open the **Posting** tab.
 
-    [<img src="media/parameters-posting.png" alt="The Posting tab of the Pricing management parameters page." title="The Posting tab of the Pricing management parameters page" width="720" />](media/parameters-posting.png)
+    [<img src="media/parameters-posting.png" alt="The Posting tab of the Pricing management parameters page." title="The Posting tab of the Pricing management parameters page" width="720" />](media/parameters-posting.png#lightbox)
 
 1. Make the following settings on the **Sales base price** FastTab:
     - **Post sales base price** – Set to *Yes* to make it possible to post *base prices* and *sales agreement prices* to a specific ledger. When you post a sales invoice, the system will post using the ledger account specified by the posting profile assigned for each price component code line.
@@ -64,7 +64,7 @@ Follow these steps to set up your price component posting profiles.
 
 1. Go to **Pricing management \> Setup \> Posting \> Pricing component posting**.
 
-    [<img src="media/pricing-component-posting.png" alt="The Pricing component posting page." title="The Pricing component posting page" width="720" />](media/pricing-component-posting.png)
+    [<img src="media/pricing-component-posting.png" alt="The Pricing component posting page." title="The Pricing component posting page" width="720" />](media/pricing-component-posting.png#lightbox)
 
 1. Do one of the following steps:
     - To create a new profile, select **New** on the Action Pane.
@@ -103,7 +103,7 @@ Follow these steps to set up your pricing structures to use a specific posting p
 
 1. Identify the price component code line that you want to assign posting for and select its **Post to price component code** check box. Then set **Posting profile** to the profile you want to use for that line.
 
-    [<img src="media/price-component-posting-profile.png" alt="Assign a posting profile to a price component." title="Assign a posting profile to a price component" width="720" />](media/price-component-posting-profile.png)
+    [<img src="media/price-component-posting-profile.png" alt="Assign a posting profile to a price component." title="Assign a posting profile to a price component" width="720" />](media/price-component-posting-profile.png#lightbox)
 
 1. Continue working until you have assigned posting profiles for each relevant line.
 1. On the Action Pane, select **Save**.
