@@ -36,6 +36,13 @@ To configure the ER format component of the configuration, select **Designer** o
 
 ![Configurations page.](./media/er-excel-format-add-format.png)
 
+In Finance **version 10.0.34**, you can view and change the **Format type** of the selected format configuration version in Designer.
+
+![Format type in Designer.](./media/ERFormatTypeR.jpg)
+
+> [!NOTE]
+> The system allows only.
+
 ## Excel file component
 
 ### Manual entry
