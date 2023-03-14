@@ -41,7 +41,7 @@ In Finance **version 10.0.34**, you can view and change the **Format type** of t
 ![Format type in Designer.](./media/ERFormatTypeR.jpg)
 
 > [!NOTE]
-> The system allows only.
+> The system suggests selection of allowed format types only based on the current content of the format configuration.
 
 ## Excel file component
 
