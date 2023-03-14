@@ -25,7 +25,7 @@ The following two methods are available for building the price structure:
 - **Price component code setup** – Provides a single, uniform price structure for each company.
 - **Price trees** – Enables multiple price structures based on order attribute values for each company.
 
-<!-- KFM: We should introduce the following image. What are) we showing here?  -->
+<!-- KFM: We should introduce the following image. What are we showing here?  -->
 
 [<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
 
