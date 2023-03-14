@@ -204,11 +204,15 @@ The whole cart object is returned as the response body. To check prices and disc
 
 ## GetAvailablePromotions 
 
-Given a cart that has several cart lines, the *GetAvailablePromotions* API returns all applicable discounts for the cart lines. 
+There are 2 similar APIs: Carts/GetAvailablePromotions which accept a list of cart line identifiers as parameter, and GetAvailablePromotions which accept a DiscountsSearchCriteria object as parameter.
 
-The main use case for the *GetAvailablePromotions* API is the cart page, where retailers want to showcase applied discounts or available coupons for the current cart.
+### Carts/GetAvailablePromotions
 
-The following table shows the input parameters for the *GetAvailablePromotions* API.
+Given a cart that has several cart lines, the *Carts/GetAvailablePromotions* API returns all applicable discounts for the cart lines. 
+
+The main use case for the *Carts/GetAvailablePromotions* API is the cart page, where retailers want to showcase applied discounts or available coupons for the current cart.
+
+The following table shows the input parameters for the *Carts/GetAvailablePromotions* API.
 
 | Name        | Type | Required/Optional | Description |
 |-------------|------|-------------------|-------------|
@@ -240,6 +244,259 @@ The following table shows the input parameters for the *GetAvailablePromotions* 
     ]
 }
 ```
+
+### GetAvailablePromotions
+
+The *GetAvailablePromotions* API returns all applicable discounts for the given channel.
+
+The main use case for the *GetAvailablePromotions* API is the all discounts page, where retailers want to view all discounts for the current channel.
+
+The following table shows the input parameters for the *GetAvailablePromotions* API.
+
+| Name        | Sub-name | Type | Required/Optional | Description |
+|-------------|----------|------|-------------------|-------------|
+| DiscountsSearchCriteria | | DiscountsSearchCriteria | Required | |
+| | ChannelId | long | Required | |
+| | Keyword | string | Optional | |
+| | IsDiscountCodeRequired | bool | Optional | Indicating whether the coupon code required or not. If null is passed, all the discounts will be retrieved regardless of coupon code requirements. |
+| | StartDate | DateTimeOffset | Optional | The starting date (inclusive) |
+| | EndDate | DateTimeOffset | Optional | The ending date (inclusive) |
+
+
+<details>
+    <summary>Sample request</summary>
+https://usnconeboxax1ret.cloud.onebox.dynamics.com/commerce/GetAvailablePromotions?$top=80&api-version=7.3
+
+```json
+{
+    "searchCriteria": {
+        "ChannelId": 5637144592
+    }
+}
+```
+
+</details>
+
+<details>
+    <summary>Sample response body</summary>
+
+```json
+{
+    "@odata.context": "https://usnconeboxax1ret.cloud.onebox.dynamics.com/Commerce/$metadata#Collection(Microsoft.Dynamics.Commerce.Runtime.DataModel.Promotion)",
+    "value": [
+        {
+            "OfferId": "ST100024",
+            "OfferName": "Weekly ad",
+            "PeriodicDiscountTypeValue": 2,
+            "IsDiscountCodeRequired": true,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100019",
+            "OfferName": "Take 20 off anything",
+            "PeriodicDiscountTypeValue": 2,
+            "IsDiscountCodeRequired": true,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100015",
+            "OfferName": "Watches",
+            "PeriodicDiscountTypeValue": 2,
+            "IsDiscountCodeRequired": false,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100012",
+            "OfferName": "Loyalty 5% off over $100",
+            "PeriodicDiscountTypeValue": 4,
+            "IsDiscountCodeRequired": false,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "All loyalty members get 5% with transaction total above $10 unless some exclusive or best price discounts are already applied on the transaction",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100011",
+            "OfferName": "Loyalty 50% off sunglasses",
+            "PeriodicDiscountTypeValue": 1,
+            "IsDiscountCodeRequired": false,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "Gold tier Loyalty customers get 50% on Sunglasses when purchased with a Top, Scarf or Men's Casual shirts",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100009",
+            "OfferName": "Student discount",
+            "PeriodicDiscountTypeValue": 2,
+            "IsDiscountCodeRequired": false,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "Students get 10% off for on Jeans and Backpacks",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100004",
+            "OfferName": "Soccer sale",
+            "PeriodicDiscountTypeValue": 3,
+            "IsDiscountCodeRequired": false,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "Providing you great discounts ranging from 10% to 20% on all branded Soccer balls.  We carry a full line of soccer balls.  Buy one for yourself or gift it to someone.  We promise you that you won't be disappointed.  If you don't see something that you are looking for please call us.  This offer is only valid at our Retail Malls.",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        },
+        {
+            "OfferId": "ST100003",
+            "OfferName": "BMX helmet sale",
+            "PeriodicDiscountTypeValue": 0,
+            "IsDiscountCodeRequired": false,
+            "ValidationPeriodId": "",
+            "AdditionalRestrictions": "",
+            "Description": "Get 20% off on all branded youth BMX helmets when you buy two or more.  Choose from our great selection of BMX bike helmets from top brands, including ProTec, Giro, Bell and SixSixOne BMX helmets.  This offer is only available at our Retail Mall stores",
+            "ValidFromDate": "1900-01-01T00:00:00Z",
+            "ValidToDate": "2154-12-31T00:00:00Z",
+            "CouponCodes": [],
+            "ExtensionProperties": [
+                {
+                    "Key": "DATAAREAID",
+                    "Value": {
+                        "StringValue": "usrt"
+                    }
+                },
+                {
+                    "Key": "DATEVALIDATIONTYPE",
+                    "Value": {
+                        "IntegerValue": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+</details>
 
 ## AddCoupons
 
