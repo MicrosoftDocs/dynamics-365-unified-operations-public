@@ -19,34 +19,34 @@ ms.search.industry: Retail
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This article provides an overview of payment authorizations and authorization resubmittal jobs for prepayment transactions in Microsoft Dynamics 365 Commerce. The article reviews common authorization parameters, authorization lifespans, and the authorization resubmit job.
+This article provides an overview of payment authorizations and authorization resubmittal jobs for prepayment transactions in Microsoft Dynamics 365 Commerce. The article covers common authorization parameters, authorization lifespans, and the authorization resubmit job.
 
-## Authorization common expiry timelines
+## Authorization expiration ranges
 
-Authorizations from payment method issuers may vary in their average expiration dates, depending on the payment method used. While each authorization expiration date may vary, there is no guaranteed timeline that each payment method will follow. Individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization. Depending on the specific payment methods used in your environment and with your payment gateway, you can adjust the Commerce parameters that apply to your solution to best capture the date ranges needed to help manage authorizations while orders are being fulfilled.
+Authorizations from payment method issuers may vary in their average expiration dates, depending on the payment method used. Each authorization expiration date may vary, and there is no guaranteed timeline that each payment method follows. Individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization. Depending on the specific payment methods used in your environment and with your payment gateway, you can adjust the Commerce parameters that apply to your solution to best capture the date ranges needed to help manage authorizations while orders are being fulfilled.
 
-For the out-of-the-box connectors currently supported by Commerce, commonly advised ranges of authorization expiration are:
+For the out-of-the-box connectors currently supported by Commerce, the commonly advised ranges of authorization expiration are:
 
-- PayPal authorizations: Up to 29 Days (but can expire earlier in some cases)
-- Credit card authorizations (via Adyen): Typically 14 days (dependent on each issuer)
+- PayPal authorizations: Up to 29 days (but can expire earlier in some cases).
+- Credit card authorizations (via Adyen): Typically 14 days (dependent on each issuer).
   
 > [!NOTE]
 > The advised expiration ranges provided above are suggestions and not exact timeframes of what you may experience or use to configure for your environment based on the range of methods used.
   
 ## Manage authorizations using Commerce parameters
 
-### Authorization Expiration Re-Authorization (Accounts Receivable: Number of Days Before Expired)
+### Authorization expiration reauthorization (Accounts Receivable: Number of Days Before Expired)
 
 Found in headquarters under **Accounts receivable \> Setup \> Accounts receivable parameters:** **Number of days before expired**
 
-This field controls all of the environment's Dynamics Payment Connector’s behavior to preemptively void and re-authorize an authorization against the gateway to secure a renewed authorization prior to expiring. For Adyen, the void + re-authorization pattern works to renew the authorization for a new cycle. Adyen’s use of recurring token for the transaction scope can procure an authorized token for the upcoming calls while referencing the same transactional scope as the original customer-approved and validated authorization. If setting the **Number of days before expired** at too long a time period, past the typical timeframe that the payment method authorization tokens expire, there is a risk that the system may initially see the capture token accepted with a transactional response, but if the capture is then later rejected in the gateway, the system will not be aware of the status change. 
+This field controls all of the environment's Dynamics Payment Connector’s behavior to preemptively void and reauthorize an authorization against the gateway to secure a renewed authorization prior to expiring. For Adyen, the void and reauthorization pattern works to renew the authorization for a new cycle. Adyen's use of recurring token for the transaction scope can procure an authorized token for the upcoming calls while referencing the same transactional scope as the original customer-approved and validated authorization. If setting the **Number of days before expired** at too long a time period, past the typical timeframe that the payment method authorization tokens expire, there is a risk that the system may initially see the capture token accepted with a transactional response, but if the capture is then later rejected in the gateway, the system will not be aware of the status change. 
 
 >[!NOTE]
 > The capture 'response' is the status that the gateway received the network call. The capture 'result' is the actual resulting status of capture action in the gateway. The capture result takes time to be determined and confirmed by the issuer, which makes capture results asynchronous to the Commerce system. Knowing the capture result and documenting that in the system will require the future 'Asynchronous Payments' feature in Commerce to update the Commerce transaction with the capture result. Currently, the transaction's authorization is checked prior to the capture call, and the capture is considered successful (as it is rare for a capture to fail with a successful authorization, but may occur). Capture results can be compared during the reconciliation process.
 
-With PayPal, the tokens can remain authorized up to 29 days. However, the **Number of days before expired** will void PayPal’s token without the ability to renew unless the Order Intent setting is set (available in 10.0.30). For PayPal, tokens are single use, and this setting’s action will void the token without the ability to recover a new order authorization. PayPal voided tokens will require re-obtaining a payment from the customer for PayPal orders.  With Order Intent (set to “save” in the connector configuration, see section PayPal Order Intent in this document), **Number of days before expired** will extend the Order expiration duration for PayPal tokens. Without PayPal Order Intent, the **Number of days before expired** setting should consider a balanced number of days that works best for both Adyen and PayPal Connectors if using both, and where invoicing will occur within the regular timeframe the token is valid. A recommended setting for **Number of days before expired** is 14 days. 
+With PayPal, the tokens can remain authorized up to 29 days. However, the **Number of days before expired** will void PayPal's token without the ability to renew unless the Order Intent setting is set (available in 10.0.30). For PayPal, tokens are single use, and this setting's action will void the token without the ability to recover a new order authorization. PayPal voided tokens will require re-obtaining a payment from the customer for PayPal orders.  With Order Intent (set to “save” in the connector configuration, see section PayPal Order Intent in this document), **Number of days before expired** will extend the Order expiration duration for PayPal tokens. Without PayPal Order Intent, the **Number of days before expired** setting should consider a balanced number of days that works best for both Adyen and PayPal Connectors if using both, and where invoicing will occur within the regular timeframe the token is valid. A recommended setting for **Number of days before expired** is 14 days. 
 
-## Authorization Resubmit Job
+## Authorization resubmit job
 
 The Authorization Resubmit job is a batch job that can be set at a specific recurring cadence to re-authorize payment authorization tokens which meet the Accounts Receivable **Number of days before expired**.
 
