@@ -2,7 +2,7 @@
 title: Set up POS hybrid app on Android and iOS
 description: This article shows how to set up the POS hybrid app on Android and iOS.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 03/14/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
