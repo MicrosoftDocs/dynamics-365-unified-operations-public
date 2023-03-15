@@ -16,9 +16,20 @@ ms.custom: bap-template
 
 The Asset Management mobile app is currently in public preview and therefore has a couple of known limitations that we expect to correct in the final release.
 
-### Too much vertical whitespace on the job details page on iOS devices
+### Stuck on Loading Screen or at the end of Onboarding Screen
 
 On iOS devices, the first time you open job details from the jobs list page, some of the fields will show too much vertical white space. This issue only occurs the first time you open the details page. To mitigate the issue, return to the jobs list and then reopen the details. This limitation only applies to iOS devices.
+After installing or updating the preview application package or solution, users of the mobile application can get stuck in the Loading Screen or at the end of the Onboarding Screen.
+
+To mitigate, "Edit" the Canvas application in Power Apps maker portal and re-publish immediately without making any changes. See [this](https://learn.microsoft.com/power-apps/maker/canvas-apps/save-publish-app) on how to re-publish a Canvas application.
+
+This issue is being actively worked on.
+
+### Too much vertical whitespace
+
+Sometimes after opening the job- or work order details from the list page, some of the fields will show too much vertical white space. This issue only occurs the first time you open the details page. To mitigate the issue, return to the jobs list and then reopen the details.
+
+[<img src="media/asset-management-known-issue-vertical-space.png" alt="Showing a visual issue where there is too much vertical whitespace between content" width="250" />](media/asset-management-known-issue-vertical-space.png#lightbox)
 
 ### Limited file-type support for attachments
 
@@ -27,10 +38,11 @@ The current release provides only limited support for file attachments on the jo
 Supported attachment types:
 
 - URL (link)
-- PNG (image)
-
+- PNG/JPEG/JPG/BMP/GIF (image)
+- PDF (document)
+- 
 Unsupported attachment types:
 
-- Simple note
+- Note
 - All other file types
 
