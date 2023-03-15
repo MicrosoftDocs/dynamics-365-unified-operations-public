@@ -32,8 +32,6 @@ For the out-of-the-box connectors currently supported by Commerce, the commonly 
   
 > [!NOTE]
 > The advised expiration ranges provided above are suggestions and not exact timeframes of what you may experience or use to configure for your environment based on the range of methods used.
-  
-## Manage authorizations using Commerce parameters
 
 ## Authorization expiration reauthorization parameters
 
@@ -72,7 +70,7 @@ Under the **Run in the background** section of the form:
 - **Critical Job**: Setting this parameter to **Yes** prioritizes processing capacity for the job.
 - **Monitoring category**: You can assign a monitoring category to make it easier to identify different types of jobs during monitoring.
 
-## PayPal order intent
+## PayPal order intent parameter
 
 Available starting in Commerce version 10.0.30, Commerce supports the PayPal use of the order context to save and reference the PayPal order in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
 
