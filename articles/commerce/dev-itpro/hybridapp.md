@@ -79,7 +79,7 @@ For more detailed information about how to install Xamarin on iOS, see [Xamarin.
 
 ### Build the iOS Retail hybrid app
 
-1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview#download-the-retail-sdk), open **SampleExtensions\\HybridApp\\iOS\\solution**. After you've connected to the Mac and built the application in Visual Studio, select the iOS device type, and deploy the app on the selected device.
+1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\\HybridApp\\iOS\\solution**. After you've connected to the Mac and built the application in Visual Studio, select the iOS device type, and deploy the app on the selected device.
       
     ![POS iOS app Visual Studio setting for deployment](./media/iOSSetting.png)
    
