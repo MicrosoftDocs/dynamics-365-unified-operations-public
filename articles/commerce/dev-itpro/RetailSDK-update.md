@@ -19,7 +19,7 @@ ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 # Upgrade the Retail channel extension to the latest Retail SDK
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/retailsdk-deprecation-banner.md)]
+[!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 
 This article provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this article doesn’t provide detailed instructions of every step in the process. This article is applicable for Dynamics 365 Commerce and Dynamics 365 Finance.
 
