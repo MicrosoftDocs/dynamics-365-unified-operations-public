@@ -19,6 +19,14 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.42.0
+
+This version introduces the following new features, fixes, and improvements: 
+
+- The user settings and input-helper dialogs now include a back button in the toolbar.
+- You can now use a pull-down gesture to close the user settings and photo dialogs.
+- Fixed an issue that could occur when confirming a quantity using a unit of measure that is named similarly to the next unit of measure in its sequence group. Previously, this could result in the app assuming the wrong unit of measure, but now it correctly identifies each unit in the sequence.
+
 ## Version 2.0.41.0  
 
 ### New features introduced in version 2.0.41.0
