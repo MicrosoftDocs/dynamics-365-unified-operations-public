@@ -15,8 +15,8 @@ ms.custom: 28021
 
 # Sign the MPOS .appx file with a code signing certificate
 
-[!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 
 To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
 
