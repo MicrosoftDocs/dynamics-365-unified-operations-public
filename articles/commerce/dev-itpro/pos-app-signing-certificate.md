@@ -15,6 +15,7 @@ ms.custom: 28021
 
 # Sign the MPOS .appx file with a code signing certificate
 
+[!include [banner](../includes/retailsdk-deprecation-banner.md)]
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
