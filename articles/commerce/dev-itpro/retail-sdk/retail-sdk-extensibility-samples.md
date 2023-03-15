@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Retail software development kit (SDK) extensibility samples
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/retailsdk-deprecation-banner.md)]
 
 The Retail software development kit (SDK) includes extensibility samples. These samples are a good way to learn about different ways to customize Microsoft Dynamics 365 Commerce.
 
