@@ -35,7 +35,7 @@ For the out-of-the-box connectors currently supported by Commerce, the commonly 
   
 ## Manage authorizations using Commerce parameters
 
-### Authorization expiration reauthorization (Accounts Receivable: Number of Days Before Expired)
+## Authorization expiration reauthorization parameters
 
 The **Number of days before expired** parameter (found in Commerce headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**) controls the behavior of your environment's payment connector by preemptively voiding and reauthorizing authorizations against the gateway to secure a renewed authorization prior to expiring. 
 
@@ -48,15 +48,15 @@ With PayPal, the tokens can remain authorized up to 29 days. However, the **Numb
 
 For more information on the PayPal order intent setting, see [PayPal order intent](#paypal-order-intent).
 
-## Authorization resubmit job
+## Authorization resubmit job parameters
 
 The **Authorization Resubmit** job (located in headquarters at **Retail and Commerce \> Retail and Commerce IT \> Payments \> Authorization resubmit**) is a batch job that can be set at a specific recurring cadence to reauthorize payment authorization tokens that meet the **Number of days before expired** parameter value.
 
 The **Authorization resubmit** flyout form includes the following parameters:
 
 - **Days out**: Reviews the set shipping date for a sales order and triggers reauthorization based on shipping date set. The **Days out** parameter works in addition to the **Number of days before expired** parameter.
-- **Check inventory availability**: A legacy field for the batch job that is no longer supported.  
-- **Release and authorize future orders**: Acts against orders set with a future order date to remove their "do not process" holds and authorize the amount as the days approach for the order shipping date that is set.
+- **Check inventory availability**: A legacy batch job parameter that is no longer supported.  
+- **Release and authorize future orders**: Acts against orders set with a future order date to remove their "do not process" holds and authorize the amount as the configured order shipping date approaches.
 - **Retry declined credit cards**: Retries a card authorization on a previously declined card. This parameter may not be a desired action per your business requirements.
 - **Resubmit stale credit cards**: Resubmits a card for authorization after the system has determined an expired authorization. This parameter may not be a desired action per your business requirements.
 - **Void expired authorizations**: Voids the authorization if the system determines it meets the expired settings.
@@ -66,24 +66,24 @@ Under the **Run in the background** section of the form:
 - **Batch processing**: This parameter is set to **Yes** by default and can't be turned off.
 - **Recurrence**: The parameters on the **Recurrence \> Define recurrence** tab allow you to set recurrence timing configurations to run the job.
 - **Alerts**: The parameters on the **Alerts \> Batch job alerts** tab allow you to configure alerts for different events related to the batch job.
-- **Task description**: This parameter specifies the batch job display label.
-- **Batch group**: This parameter can be used to specify batch groups to distribute the workload to different servers.
+- **Task description**: Specifies the batch job display label.
+- **Batch group**: Used to specify batch groups to distribute the workload to different servers.
 - **Private**: When this parameter is set to **Yes**, Commerce restricts other users from processing your batch job. Only the user who configured the form will be able to run the job.
 - **Critical Job**: Setting this parameter to **Yes** prioritizes processing capacity for the job.
-- **Monitoring category** - A monitoring category can be assigned to make it easier to identify different types of jobs during monitoring.
+- **Monitoring category**: You can assign a monitoring category to make it easier to identify different types of jobs during monitoring.
 
-### PayPal order intent
+## PayPal order intent
 
-Available starting in Commerce version 10.0.30, Commerce supports the PayPal use of the order context to save and reference the ‘PayPal Order’ in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
+Available starting in Commerce version 10.0.30, Commerce supports the PayPal use of the order context to save and reference the PayPal order in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
 
-**Authorize**: This configuration value is the default value. If the field is left blank, Authorize will become the default value. Configuring the OrderIntent field with the Authorize value correlates to the PayPal processing instruction value of NO_INSTRUCTION. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
+**Authorize**: This configuration value is the default value. If the field is left blank, **Authorize** will become the default value. Configuring the **OrderIntent** field with the **Authorize** value correlates to the PayPal processing instruction value of **NO_INSTRUCTION**. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
 
-**Save**: Configuring the OrderIntent field with the Save value correlates to the PayPal processing instruction value of ORDER_SAVED_EXPLICITLY. When this value is used, order references will be saved in the PayPal service.
+**Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal processing instruction value of **ORDER_SAVED_EXPLICITLY**. When this value is used, order references will be saved in the PayPal service.
 
-For more information about Commerce support for PayPal's Order Intent, see [Order Intent](../paypal.md#order-intent).
+For more information about Commerce support for PayPal order intent, see [Order Intent](../paypal.md#order-intent).
 
 ### Adyen connector configuration: Authorization stale period (days)
 
-When configuring the **Dynamics 365 Payment Connector for Adyen** in headquarters for online, Call Center, or Hardware Stations; the configuration attribute **Authorization stale period (days)** sets the number of days the connector should protectively consider the authorization token as expired. Dynamics will proactively set a decline status on a capture if the authorization token is older than the days set in this attribute. The payment record will note an error “Capture failed: Capture failed due to stale authorization.(22062)”. When errored, the capture call is errored in the system prior to calling the payment gateway (Adyen). This setting exists to prevent unnecessary capture requests for authorizations likely to fail, saving in potential unnecessary transactional attempt charges. 
+When configuring the Dynamics 365 Payment Connector for Adyen in headquarters for online, call center, or Hardware Station, the **Authorization stale period (days)** parameter specifies the number of days the connector should consider the authorization token as expired. Dynamics proactively sets a decline status on a capture if the authorization token is older than the days specified for this attribute, and generates the error `Capture failed: Capture failed due to stale authorization.(22062)`. When declined, the capture call generates the error in the system prior to calling the payment gateway (Adyen). This setting exists to prevent unnecessary capture requests for authorizations likely to fail, avoiding unnecessary transactional attempt charges. 
 
-The **Authorization stale period (days)** setting in the Adyen connector configuration should be set at a longer timeframe than the set AR **Number of days before expired** setting. As the Authorization stale period (days) is performing the Dynamics protective action to consider the authorization expired.
+The **Authorization stale period (days)** setting in the Adyen connector configuration should be set to a longer timeframe than the accounts receivable **Number of days before expired** setting, because the **Authorization stale period (days)** performs the Dynamics protective action to consider the authorization expired.
