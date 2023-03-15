@@ -18,6 +18,7 @@ ms.custom: 17771,  ""intro-internal
 # Retail software development kit (SDK)
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/retailsdk-deprecation-banner.md)]
 
 This article provides an overview of the Retail software development kit (SDK). Microsoft Dynamics 365 Commerce provides a rich SDK that developers can use to customize and add new features to the product. The multi-tier architecture of the Dynamics 365 Commerce provides simplified options for customizing and extending the client, business logic, and data layers independently of each other. The Retail SDK includes libraries, NuGet packages, a point of sale (POS) application, code samples, templates, and tools. You can use it to create extensions apps, add features, and change existing functionality of Commerce.
 
