@@ -18,9 +18,17 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## March 2023 release 
+
+The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and will complete by end of this month.
+
+## February 2023 release 
+
+The February release of [Dual-write core solution 1.0.40.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
+
 ## January 2023 release 
 
-The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and will complete in January.
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
 
 ## November 2022 release 
 
