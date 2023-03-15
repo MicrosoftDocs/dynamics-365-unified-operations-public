@@ -4,7 +4,7 @@ description: This article describes how base price versions work in Pricing mana
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 ms.topic: overview
 ms.date: 03/24/2023
 audience: Application User
@@ -18,13 +18,9 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* per company for a specific period.
+This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the SKU level. Pricing management allows you to build selling prices using *cost-plus pricing*. When you use cost-plus pricing, you start by building a pricing structure that starts with the base price.
 
-The base price is a common price at the SKU level. Pricing management allows you to build selling prices using *cost-plus pricing*.
-
-When you use cost-plus pricing, you start by building a pricing structure that starts with the base price.
-
-The following tables shows an example of pricing structure (such as a [price tree](price-tree-multiple.md)) that could be used to build a final selling prices based on a base price.
+The following tables shows an example of pricing structure (such as a [price tree](price-tree-multiple.md)) that could be used to build final selling prices based on base prices.
 
 | Pricing sequence | Price component code | Price component type | Descriptions | Price details in the sales order |
 |---|---|---|---|---|
@@ -44,14 +40,12 @@ The cost-plus pricing model works by determining the product cost and then addin
 
 Pricing management derives base prices from one of the following two sources:
 
-- The primary source is the price listed for each product on the **Item base price** page (available by going to **Pricing management \> Pre-sales pricing \> Base price versions** and selecting selecting **Price \> Base** price from on the Action Pane). <!-- KFM: I think this is what we mean here. Please confirm. Much more documentation is needed for these pages. -->
+- The primary source is the price listed for each product on the **Item base price** page, which yo can open by going to **Pricing management \> Pre-sales pricing \> Base price versions** and selecting selecting **Price \> Base** price from on the Action Pane. <!-- KFM: I think this is what we mean here. Please confirm. More documentation is needed for these pages. -->
 - If an item doesn't have an active Item base price, the system will check to see if it has an active cost price in a [costing version](../cost-management/costing-versions.md). A costing version can support a standard cost inventory model for items where the costing version contains a set of standard cost records about the items and their manufacturing processes.
 
 The following tables illustrates the rules for determining the base price.
 
-<!-- KFM: The information in the following table is extremely vague and difficult to understand. I tried to edit it, but revision is needed. Please review it carefully. -->
-
-| Products | Industries | How base prices are found |
+| Product type | Industries | How base prices are found |
 |---|---|---|
 | Traded items that you procure and then sell | Retail, distribution | <ul><li>Pricing management calculates item base prices based on prices found on the **Base price versions** page.</li><li>Item base prices are calculated as: *Vendor list price &plusmn; Vendor price term agreement*<li>If several calculated prices apply to the same item, the price engine always selects the *lowest* price as the item base price.</li><li>You can activate a calculated item base price and the price engine will use that as the base price.</li></ul> |
 | Manufactured items (with BOM) that use the standard cost model | Manufacturing | <ul><li>Supply Chain Management can calculate and activate item cost prices based on [costing versions](../cost-management/costing-versions.md).</li><li>There is no need to maintain item base prices on the **Base price versions** page.</li><li>The price engine will use the active item cost price as the base price.</li><li>Item sell prices are calculated as: *Active calculated item cost (base price) &plusmn; margin component price adjustments*</li></ul> |
