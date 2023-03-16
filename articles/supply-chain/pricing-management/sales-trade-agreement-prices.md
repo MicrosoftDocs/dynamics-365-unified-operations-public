@@ -23,7 +23,7 @@ ms.custom: bap-template
 Pricing management leverages the standard Supply Chain Management *Trade agreement price - sales price* side and enhanced with the price attributes. <!-- KFM: This sentence is unclear. Please revise. -->
 
 > [!NOTE]
-> Pricing management respects [Supply Chain Management sales agreements](../sales-marketing/sales-agreements.md), which are different from the *sales trade agreement prices* described in this article <!-- KFM: I think this is what we mean here. Please confirm. -->. For order lines where a sales agreement applies, Pricing management will use that price. If no sales agreement applies, then Pricing management will check whether an applicable *sales trade agreement price* exists. The discounts included in sales trade agreements (line discounts, multiple discounts, and total discounts) fall outside the purview of Pricing management. Pricing management provides a new approach to defining discount rules. <!-- KFM: I don't understand the point we are making here. Please revise. -->
+> Pricing management respects [Supply Chain Management sales agreements](../sales-marketing/sales-agreements.md), which are different from the *sales trade agreement prices* described in this article <!-- KFM: I think this is what we mean here. Please confirm. -->. For order lines where a *sales agreement* applies, Pricing management will use that price. If no sales agreement applies, then Pricing management will check whether an applicable *sales trade agreement price* exists. The discounts included in sales trade agreements (line discounts, multiple discounts, and total discounts) fall outside the purview of Pricing management<!-- KFM: I don't understand the point we are making here. Please revise. -->. Pricing management provides a new approach to defining discount rules.
 
 ## Configure sales trade agreement price control
 
@@ -31,32 +31,31 @@ Several configuration settings affect the way sales trade agreements work in Pri
 
 1. Go to the **Pricing management \> Setup \> Pricing management parameters**
 1. Open the **Price and discounts** tab.
-1. In the **Trade agreements** section, there are 2 options:
-    - **Enable default find next** – by enabling this, price engine will check all the applicable trade agreement price and apply the **cheapest** price. If you don't enable this, the pricing determination rule will be 'Price attribute combination rank'. Price engine will apply the highest rank. In case there are multiple price records found with the same rank, price engine will apply the cheapest price.
-    - **Apply existing trade agreement (Yes/No)** – If you have the posted sales trade agreement price rule records in the **Sales and Marketing \> Prices and discounts \> Trade agreement journal** with the Default relation as the **Price (sales).** By enabling this, price engine will check those appliable records as well. The logic will be:
-        - First apply the sales trade agreement price that meets the criteria.
-        - If no applicable record is identified, price engine will check whether there are rules of the Trade agreement journal in the Sales and Marketing module.
-
-1. Enable the sales trade agreement journal name with price attribute. Go to **Pricing management \> Setup \> Trade agreement journal names**. Tick 'Enable price attribute' to allow you to create sales trade agreement journals with the price attributes.
-1. Ensure that the Trade agreement price component code is created in the **Pricing management \> Setup \> Price component code.** For sales trade agreement, you are allowed to create only one price component code.
-
-1. Ensure that the Trade agreement price component code is in the price structure in **Price component code setup\\Price trees**.
-
-## Configure price calculation date type
-
-Go to the **Price management \> Setup \> Pricing management parameters \> General** tab to setup the Date type.
-
-Pricing management allows you to use different date type as the criteria to match the price rule record. It has following options:
-
-- Today
-- Requested ship date
-- Requested receipt date
-- Created date
+1. Expand the **Trade agreements** FastTab.
+1. Set **Enable default find next** to one of the following values:
+    - *Yes* – The price engine will check all applicable trade agreement prices and apply the *cheapest* price.
+    - *No* – The price engine will use the *price attribute combination rank* to determine the price by applying the following rules: <!-- KFM: It isn't clear where the various ranks in this table come from or what "records" we are referring to. -->
+        - Apply the record with the highest *price attribute combination rank*.
+        - If two or more records have an equal and highest *price attribute combination rank*, the price engine will check the *header price attribute* and apply the highest ranked record price group.
+        - If two or more records have an equal and highest *header price attribute*, the price engine will check the *line price attribute* and apply the highest ranked record in the price attribute group.
+        - In case there are multiple price records found with the same rank, Price engine will apply the cheapest price.
+1. Set **Apply existing trade agreement** to one of the following values:
+    - *Yes* – The price engine will consider posted sales trade agreement price rule records that have a **Default relation** of *Price (sales)* (available at **Sales and Marketing \> Prices and discounts \> Trade agreement journals**). The price engine will apply the following rules:
+        - First apply the sales trade agreement price that meets the criteria. <!-- KFM: What criteria do we mean here? -->
+        - If no sales trade agreement price applies, then use the qualifying rules posted to the **Trade agreement journals**.
+    - *No* – <!-- KFM: Description needed -->
+1. Open the **General** tab.
+1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching price rule records <!-- KFM: Matching to what? Sales orders? -->.
+1. Go to **Pricing management \> Setup \> Trade agreement prices \> Trade agreement journal names**. Select the **Enable price attribute** check box <!-- Which row to we mean? The Word file has a screenshot showing row that I don't see here ("TAM Price | Sales trade agreement pri...") --> to allow you to create sales trade agreement journals with the price attributes.
+1. Go to **Pricing management \> Setup \> Price component code**. Make sure that the trade agreement price component code has been created here (you are allowed to create only one price component code). <!-- KFM: What do we do if it isn't here (it isn't for me)? What does this setting mean? -->
+1. Make sure your pricing structure(s) include a price component code with a **Price component** of *Sales trade agreement*. For more information about how to set up price structures, see [Price structure overview](price-tree-overview.md). <!-- KFM: Does this step really fit here? Seems like a different kind of configuration. -->
 
 ## Create a new sales trade agreement journal
 
-1. Go to **Pricing management \> Sales trade agreement price \> Trade agreement journals.**
-1. Select **New**.
+Follow these steps to create a new sales trade agreement journal:
+
+1. Go to **Pricing management \> During-sales pricing \> Sales trade agreement price \> Trade agreement journals**.
+1. On the Action Pane, select **New**.
 1. In the **Name** field, select the drop-down button to open the lookup. Pricing management only allows you to create the journal with Default relation as **Price (sales)**. Selected the journal names with 'Enable price attributes' as Yes.
 1. On **Action Pane**, select **Lines**.
 1. Select **New** to create a new line.
