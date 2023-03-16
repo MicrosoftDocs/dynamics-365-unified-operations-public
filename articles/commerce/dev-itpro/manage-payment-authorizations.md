@@ -70,18 +70,17 @@ Under the **Run in the background** section of the form:
 - **Critical Job**: Setting this parameter to **Yes** prioritizes processing capacity for the job.
 - **Monitoring category**: You can assign a monitoring category to make it easier to identify different types of jobs during monitoring.
 
-## PayPal order intent parameter
+## PayPal connector order intent parameter
 
-Available starting in Commerce version 10.0.30, Commerce supports the PayPal use of the order context to save and reference the PayPal order in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
+Beginning in Commerce version 10.0.30, the PayPal payment connector configuration in headquarters includes the **OrderIntent** field, which allows the configuration of the PayPal payment connector to operate with a saved order with the PayPal service for the online channel. For more information about Commerce support for PayPal order intent, see [Order Intent](../paypal.md#order-intent).
+<!--Available starting in Commerce version 10.0.30, Commerce supports the PayPal use of the order context to save and reference the PayPal order in the PayPal gateway. Referencing the order, PayPal allows for extending the authorization period of the token if it has not already expired. 
 
 **Authorize**: This configuration value is the default value. If the field is left blank, **Authorize** will become the default value. Configuring the **OrderIntent** field with the **Authorize** value correlates to the PayPal processing instruction value of **NO_INSTRUCTION**. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
 
-**Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal processing instruction value of **ORDER_SAVED_EXPLICITLY**. When this value is used, order references will be saved in the PayPal service.
+**Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal processing instruction value of **ORDER_SAVED_EXPLICITLY**. When this value is used, order references will be saved in the PayPal service.-->
 
-For more information about Commerce support for PayPal order intent, see [Order Intent](../paypal.md#order-intent).
+## Adyen connector authorization stale period parameter
 
-### Adyen connector configuration: Authorization stale period (days)
+When configuring the Dynamics 365 Payment Connector for Adyen in headquarters for online, call center, or Hardware Station, the **Authorization stale period (days)** parameter specifies the number of days after which the connector will view the authorization token as expired. Dynamics proactively sets a decline status on a capture if the authorization token is older than the days specified for this attribute, and generates the error `Capture failed: Capture failed due to stale authorization.(22062)`. When declined, the capture call generates the error in the system prior to calling the payment gateway (Adyen). This parameter prevents unnecessary capture requests for authorizations that are likely to fail, avoiding unnecessary transactional attempt charges. 
 
-When configuring the Dynamics 365 Payment Connector for Adyen in headquarters for online, call center, or Hardware Station, the **Authorization stale period (days)** parameter specifies the number of days the connector should consider the authorization token as expired. Dynamics proactively sets a decline status on a capture if the authorization token is older than the days specified for this attribute, and generates the error `Capture failed: Capture failed due to stale authorization.(22062)`. When declined, the capture call generates the error in the system prior to calling the payment gateway (Adyen). This setting exists to prevent unnecessary capture requests for authorizations likely to fail, avoiding unnecessary transactional attempt charges. 
-
-The **Authorization stale period (days)** setting in the Adyen connector configuration should be set to a longer timeframe than the accounts receivable **Number of days before expired** setting, because the **Authorization stale period (days)** performs the Dynamics protective action to consider the authorization expired.
+The **Authorization stale period (days)** parameter in the Adyen connector configuration should be set to a longer timeframe than the accounts receivable **Number of days before expired** parameter value, because the **Authorization stale period (days)** parameter triggers the protective action to consider the authorization expired.
