@@ -45,7 +45,19 @@ As an example of this scenario, a customer who has Finance and Operations apps e
 ## Step 1: Click setup from the Power Platform Integration tab
 In Lifecycle Services, visit your sandbox or Production environment and locate the "Power Platform Integration" tab.  You should see that the **Setup** button is available which means that you can configure your connection to Microsoft Dataverse. 
 
-<img src="media/Scenario1_Step1.png" width="300px" alt="Setup button for enablign Power Platform Integration" />
+<img src="media/Scenario1_Step1.png" width="600px" alt="Setup button for enablign Power Platform Integration" />
+
+## Step 2: Configure Microsoft Dataverse using a template
+In the slider window, do not select to use an existing Power Platform Environment.  If you already have Microsoft Dataverse deployed with other Dynamics 365 applications and wish to connect to it, see [Connect Finance and Operations apps with an existing Microsoft Dataverse instance](blah).
+
+Select an available template which will create Microsoft Dataverse with several applications pre-installed based on your requirements:
+
+<img src="media/Scenario1_Step2.png" width="600px" alt="Setup button for enablign Power Platform Integration" />
+
+The available templates today include:
+* Dynamics 365 standard - this enables Add-ins, Virtual entities, Business events, and Dual-write platform components but does not contain any Dual-write application maps.  This is the most common template.
+* Dynamics 365 standard with Dual-write - this enables everything from the standard template as well as installs application maps for Dual-write.
+* Project operations - this is a special template for customers with the Dynamics 365 Project Operations license. This pre-installs solutions required for it to run as well on top of the Dynamics 365 standard with Dual-write template.
 
 ## Anti-patterns
 
