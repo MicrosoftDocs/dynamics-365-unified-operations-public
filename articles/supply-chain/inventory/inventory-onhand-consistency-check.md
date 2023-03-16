@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.21
 
 # Actions need to take before running Inventory On-hand Consistency Check when IV batch job is enabled
 
- 
+
 [!include [banner](../includes/banner.md)]
 
 Supply Chain Management provides an On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconstruct On-hand list by analyzing Transactions table. 
