@@ -52,9 +52,6 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 1. Go to **Apps \> Android**.
 1. On the **Android apps** page, on the toolbar, select **Add**.
 1. In the **Select app type** dialog box, in the **App type** field, select *Managed Google Play app*. Then select **Select**.
-
-    [<img src="media/intune-add-google-app.png" alt="Adding an Android app to Intune." title="Adding an Android app to Intune" width="720" />](media/intune-add-google-app.png#lightbox)
-
 1. On the **Managed Google Play** page, if you're setting up Google Play for the first time, you're prompted to sign in to Google Play. Sign in by using your Google account.
 1. In the **Search** field, enter *Warehouse Management*. Then select **Search**.
 1. When you've found the Warehouse Management app, select **Approve**.
@@ -62,9 +59,6 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 1. Select **Sync**.
 1. You're returned to the **Android apps** page. On the toolbar, select **Refresh** to refresh the list of applications. Then, in the list, select *Warehouse Management*.
 1. On the **Warehouse Management** page, on the **Properties** tab, select the **Edit** link next to the **Assignments** heading.
-
-    [<img src="media/intune-app-properties.png" alt="Setting Andoid app properties in Intune." title="Setting Android app properties in Intune" width="720" />](media/intune-app-properties.png#lightbox)
-
 1. On the **Edit application** page, on the **Assignments** tab, add the user groups and/or devices that the Warehouse Management app should be available and/or required for. For information about how to use the settings, see [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy).
 1. When you've finished, select **Review + save**.
 1. On the **Review + save** tab, review your settings. If they look correct, select **Save** to save them.
@@ -93,9 +87,6 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 1. Go to **Devices \> iOS/iPadOS**.
 1. On the **iOS/iPad enrollment** tab, select the **Apple MDM Push certificate** tile.
 1. In the **Configure MDM Push Certificate** dialog box, follow the on-screen instructions to create and upload the required Apple MDM push certificate. For more information about this step, see [Get an Apple MDM push certificate](/mem/intune/enrollment/apple-mdm-push-certificate-get).
-
-    [<img src="media/intune-mdm-push-cert.png" alt="Adding an Apple MDM Push certificate to Intune." title="Adding an Apple MDM Push certificate to Intune" width="720" />](media/intune-mdm-push-cert.png#lightbox)
-
 1. Go to **Apps \> iOS/iPadOS**.
 1. On the toolbar, select **Add**.
 1. In the **Select app type** dialog box, in the **App type** field, select *iOS store app*. Then select **Select**.
@@ -127,16 +118,11 @@ Follow these steps to set up Intune to support managed configuration for Android
 1. Sign in to the Microsoft Endpoint Manager admin center.
 1. Go to **Apps \> App configuration policies**.
 1. On the **App configuration policies** page, on the toolbar, select **Add \> Managed devices**.
-
-    [<img src="media/intune-add-managed-device.png" alt="Adding an app configuration policy." title="Adding an app configuration policy" width="720" />](media/intune-add-managed-device.png#lightbox)
-
 1. On the **Create app configuration policy** page, on the **Basics** tab, set the following fields:
-
     - **Name** – Enter a name for the policy.
     - **Platform** – Select *Android Enterprise*.
     - **Profile type** – Select the device profile types that the app configuration profile applies to.
     - **Targeted app** – Select the **Select app** link. In the **Associated app** dialog box, select the Warehouse Management app in the list, and then select **OK** to apply the setting and close the dialog box.
-
 1. Select **Next** to continue.
 1. On the **Settings** tab, in the **Permissions** section, select **Add**.
 1. In the **Add permissions** dialog box, select the checkboxes for **Camera**, **External storage (read)**, and **External storage (write)**. Then select **OK** to close the dialog box and add those permissions to the **Settings** tab.
@@ -146,9 +132,6 @@ Follow these steps to set up Intune to support managed configuration for Android
 1. In the dialog box, select the checkbox for **ConnectionsJson**. Then select **OK** to close the dialog box.
 1. A new row is added to the grid in the **Configuration Settings** section of the **Settings** tab. The **Configuration key** field is set to *ConnectionsJason*. In the **Value type** field, select *String*. Then, in the **Configuration value** field, paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
 1. Select **Next** to continue.
-
-    [<img src="media/intune-app-config-policy-settings.png" alt="Configuring app configuration policy settings on the Settings tab." title="Configuring app configuration policy settings on the Settings tab" width="720" />](media/intune-app-config-policy-settings.png#lightbox)
-
 1. On the **Assignments** tab, add the user groups and/or devices that the configuration policy should apply to. For information about how to use the settings, see [Add app configuration policies for managed Android Enterprise devices](/mem/intune/apps/app-configuration-policies-use-android).
 1. When you've finished, select **Next** to continue.
 1. On the **Review + save** tab, review your settings. If they look correct, select **Create** to save them.
@@ -161,28 +144,18 @@ Follow these steps to set up Intune to support managed configuration for Windows
 1. Go to **Devices \> Windows**.
 1. On the **Windows devices** page, on the **Configuration profiles** tab, on the toolbar, select **Create profile**.
 1. In the **Create a profile** dialog box, set the following fields:
-
     - **Platform** – Select *Windows 10 and later*.
     - **Profile type** – Select *Templates*.
     - **Template name** – Select *Custom*.
-
 1. Select **Create** to apply your settings and close the dialog box.
-
-    [<img src="media/intune-windows-config-profile.png" alt="Adding a configuration profile for Windows devices." title="Adding a configuration profile for Windows devices" width="720" />](media/intune-windows-config-profile.png#lightbox)
-
 1. On the **Custom** page, on the **Basics** tab, enter a name for the configuration profile, and then select **Next** to continue.
 1. On the **Configuration settings** tab, select **Add**.
 1. In the **Add Row** dialog box, set the following fields:
-
     - **Name** – Enter a name for the new row.
     - **Description** – Enter a short description for the new row.
-    - **OMA-URI** – Enter the following value:
-
-        *./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson*
-
+    - **OMA-URI** – Enter the following value:<br/>*./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.WarehouseManagement\_8wekyb3d8bbwe/AppSettingPolicy/ConnectionsJson*
     - **Data type** – Select *String*.
     - **Configuration value** – Paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
-
 1. Select **Save** to apply your settings and close the dialog box.
 1. Select **Next** to continue.
 1. On the **Assignments** tab, add the user groups and/or devices that the configuration profile should apply to.
@@ -199,20 +172,16 @@ Follow these steps to set up Intune to support managed configuration for iOS dev
 1. Go to **Apps \> App Configuration policies**.
 1. On the **App configuration policies** page, on the toolbar, select **Add \> Managed devices**.
 1. On the **Create app configuration policy** page, on the **Basics** tab, set the following fields:
-
     - **Name** – Enter a name for the app configuration profile.
     - **Platform** – Select *iOS/iPadOS*.
     - **Profile type** – Select the device profile types that the profile applies to.
     - **Targeted app** – Select the **Select app** link. In the **Associated app** dialog box, select the Warehouse Management app in the list, and then select **OK** to apply the setting and close the dialog box.
-
 1. Select **Next** to continue.
 1. On the **Settings** tab, in the **Configuration settings format** field, select *Use configuration designer*.
 1. In the grid at the bottom of the page, set the following fields for the first row:
-
     - **Configuration key** – Enter *ConnectionsJson*.
     - **Value type** – Select *String*.
     - **Configuration value** – Paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
-
 1. Select **Next** to continue.
 1. On the **Assignments** tab, add the user groups and/or devices that the configuration policy should apply to. For information about how to use the settings, see [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios).
 1. When you've finished, select **Next** to continue.
@@ -243,17 +212,12 @@ Follow these steps to create an app registration for PFXImport PowerShell in Azu
 1. In the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:
-
     - **Name** – Enter a name.
     - **Supported account types** – Specify who can use the new application.
     - **Redirect URI** – Leave this field blank for now.
-
 1. Select **Register**.
 1. The new app registration is opened. On the **Certificates & secrets** tab, on the **Client secrets** tab, select **New client secret**.
 1. In the **Add a client secret** dialog box, select an expiration date that meets your needs, and then select **Add**.
-
-    [<img src="media/intune-add-client-secret.png" alt="Adding a client secret." title="Adding a client secret" width="720" />](media/intune-add-client-secret.png#lightbox)
-
 1. The **Certificates & secrets** tab now shows details about the new client secret. These details will be shown only once and will be hidden when the is page reloaded. Therefore, you must copy them now. Copy the **Value** value, and paste it into a text file. You'll need this value later, when you [set up your Certificate Connector machine](#set-up-a-dedicated-machine-for-the-certificate-connector).
 1. On the **Authentication** tab, select **Add a platform**.
 1. In the **Configure platforms** dialog box, select the **Mobile and desktop applications** tile.
@@ -267,7 +231,7 @@ The PFXImport project consists of PowerShell cmdlets that will help you import P
 Follow these steps to download and build the PFXImport project.
 
 1. Go to the [PFXImport PowerShell Project on GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell), and download the project.
-1. Open Visual Studio 2022, and open the *PFXImportPS.sln* file that you downloaded from GitHub. Switch to *Release* mode, and build the project. For more information, see [Configure and use imported PKCS certificates with Intune](/mem/intune/protect/certificates-imported-pfx-configure).
+1. Open Visual Studio 2022, and open the *PFXImportPS.sln* file that you downloaded from GitHub. Switch to *Release* mode, and build (or rebuild) the project. For more information, see [Configure and use imported PKCS certificates with Intune](/mem/intune/protect/certificates-imported-pfx-configure).
 
     [<img src="media/intune-vs-rebuild.png" alt="Changing to Release mode and building the project in Visual Studio." title="Changing to Release mode and building the project in Visual Studio" width="720" />](media/intune-vs-rebuild.png#lightbox)
 
@@ -293,9 +257,6 @@ Follow these steps to set up your dedicated Certificate Connector machine.
 1. Go to **Tenant administration \> Connectors and tokens**.
 1. On the **Certificate connectors** tab, on the toolbar, select **Add**.
 1. In the **Install the certificate connector** dialog box, select the certificate connector link to download the *IntuneCertificateConnector.exe* file. This file is an installer for the Certificate Connector.
-
-    [<img src="media/intune-certificate-connectors.png" alt="Installing the Certificate Connector." title="Installing the Certificate Connector" width="720" />](media/intune-certificate-connectors.png#lightbox)
-
 1. Transfer the *IntuneCertificateConnector.exe* file to the designated Certificate Connector machine. Then run the file, and follow the on-screen instructions. During the installation process, be sure to select the **PKCS imported certificates** checkbox.
 1. Sign in to your Azure AD account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. For more information, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
 
@@ -333,7 +294,11 @@ Follow these steps to import your PFX certificate on the Certificate Connector m
 
 For more information, go to the [PFXImport PowerShell Project on GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
-To troubleshoot this setup, use the Windows Event Viewer to review the CertificateConnectors logs.
+To troubleshoot this setup, follow these steps to use the Windows Event Viewer to review the CertificateConnectors logs.
+
+1. Open the Windows **Start** menu, enter *Event Viewer* in the search form, and select the **Event Viewer** app in the result list.
+1. Select the following item in the Event Viewer navigation panel: **Applications and Services Logs \> Microsoft \> Intune \> CertificateConnectors \> Operational**.
+1. Review the events shown. Select an event to see more information about it.
 
 [<img src="media/intune-event-viewer-log.png" alt="Reviewing the CertificateConnectors log in Event Viewer." title="Reviewing the CertificateConnectors log in Event Viewer" width="720" />](media/intune-event-viewer-log.png#lightbox)
 
@@ -350,19 +315,15 @@ Follow these steps to create a configuration profile for each mobile platform th
 1. In the navigation, select **Devices**, and then select the platform to set up (**Windows**, **iOS/iPadOS**, or **Android**).
 1. On the **Configuration profiles** tab, on the toolbar, select **Create profile**.
 1. In the **Create a profile** dialog box, the required settings depend on the platform that you selected.
-
     - **Windows** – Set the **Platform** field to *Windows 10 and later*, set the **Profile type** field to *Templates*, and then select the template that's named *PKCS imported certificate*.
     - **iOS/iPadOS** – Set the **Profile type** field to *Templates*, and then select the template that's named *PKCS imported certificate*.
     - **Android** – Set the **Platform** field to *Android Enterprise*, and set the **Profile type** field to *PKCS imported certificate*.
-
 1. Select **Create** to create the profile and close the dialog box.
 1. On the **PKCS import certificate** page, on the **Basics** tab, enter a name and description for the certificate.
 1. Select **Next** to continue.
 1. On the **Configuration settings** tab, set the following fields:
-
     - **Intended purpose** – Select *S/MIME Encryption*.
     - **Key storage provider (KSP)** – If you're creating a profile for the Windows platform, select *Enroll to Software KSP*. This setting isn't available for other platforms.
-
 1. Select **Next** to continue.
 1. On the **Assignments** tab, select the user groups and/or devices that the current profile should apply to.
 1. When you've finished, select **Next** to continue.
@@ -379,8 +340,8 @@ After your certificate system is fully configured, and you've created the requir
 
 Another way to verify that your certificates are being correctly distributed is to inspect the end devices. You can check the certificates by following one of these steps, depending on the type of device:
 
-- **For Windows devices:** On the Start menu, enter *Manage user certificates* to open the certificate manager, where you can confirm whether the expected certificate has arrived.
 - **For Android devices:** You can install an app such as *My certificates* to view installed certificates. To access certificates that are distributed from Intune, the *My certificates* app itself must also be installed by Intune and must use the same work profile.
+- **For Windows devices:** Open the Windows **Start** menu, enter *Manage user certificates* in the search form and select **Manage user certificates** in the result list to open the certificate manager. In the certificate manager, expand **Certificates - Current User \> Personal \> Certificates** in the navigation pane to view your certificates and confirm whether the expected certificate has arrived.
 
 [<img src="media/intune-console-certificates.png" alt="Managing user certificates in Windows." title="Managing user certificates in Windows" width="720" />](media/intune-console-certificates.png#lightbox)
 
