@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 >[!NOTE]
->This functionality will be deprecated October 2023, new users should use subscription billing.
+>This functionality will be removed October 2023, see [Removed or deprecated features in Dynamics 365 Finance](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance#revenue-recognition). New users should use subscription billing.
 
 Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
 
