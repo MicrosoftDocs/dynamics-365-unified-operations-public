@@ -15,25 +15,26 @@ ms.dyn365.ops.version: 10.0.21
 
 # Actions need to take before running Inventory On-hand Consistency Check when IV batch job is enabled
 
+ 
 [!include [banner](../includes/banner.md)]
 
-FnO provides On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconsutruct InventSum table by analyzing InvetTrans table. By doing this, IV batch job will resync changes on the InventTrans table to Inventory service.
-While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 1. running On-hand Consistency Check on all items will usually take long time. 2. It will take longer time than the standard use case when Inventory Visibility batch is not enabled. 3. On-hand Consistency Check will involve API calls to Inventory Visbility to sync InventSum data if you have batch job enabled and you might experience check failure if the external calls encounter errors.  
-As stated above, tt is recommended to disable the Inventory Visibility Integration batch job.
+Supply Chain Management provides an On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconstruct On-hand list by analyzing Transactions table. 
+While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 
+1. running an On-hand Consistency Check on all items (with Inventory Visibility batch enabled) will usually take long time than the standard use case when the Inventory Visibility batch is not enabled. 
+2. On-hand Consistency Check will involve API calls to sync On-hand list to Inventory Visibility service if you have batch job enabled. You might experience failure on consistency check if the external calls have unexpected errors.  
+As stated above, it is recommended to disable the Inventory Visibility Integration batch job when you want to run On-hand Consistency Check on **all items**.
 
-## There are two different cases, please will take different actions:
+## There are two different cases, please take different actions:
 
-### Case 1: You want to initiate On-hand Consistency Check on all items when IV batch job is enabled
-
-As it is mentioned above, enabling Inventory Integration batch job will cause consistency check fail unexpectedly. So before you run consistency check, please do the following:
-
-1. Disable Inventory Visibility Integration batch job: go to **Inventory Management** > **Periodic Tasks** > **Inventory Visibility Integration** and disable batch job.
+### Case 1: You want to initiate On-hand Consistency Check on all items.
+0. Before you run an On-hand consistency check, please check if your Inventory visibility batch job is enabled. If it is enabled, please follow the below steps to disable batch job, otherwise, you can start consistency check directly. 
+1. Disable Inventory Visibility Integration batch job: go to **Inventory Management** > **Periodic Tasks** > **Inventory Visibility integration** and disable batch job.
 2. Run consistency check.
-3. Re-enable IV batch job by clicking *Enabling **IV integration batch job with check the Resync button**. This action will clean up some legacy FnO data in Inventory Visibility and start initial push to resync InventSum table to IV service. 
- 
-* Please be aware: Inventory Visibility service will return empty on-hand query result. Service will return the correct result after the re-enabled bath job is completed.
+3. Re-enable Inventory Visibility batch job: 
+1. go to **Inventory Management** > **Setup** and check * Resync before initial push* toggle. 
+2. Re-enable batch job and start the initial push. 
+- This Resync action will clean up legacy fno data in Inventory Visibility service and start initial push to resync On-hand list table to Inventory Visibility Service.
+* Please be aware: Inventory Visibility Service will return the correct result after the re-enabled bath job is completed.
 
 ### Case 2: You want to initiate On-hand Consistency Check on several items.
-
-You don't have to do any extra steps as described in Case 1. You can perform On-hand Consistency Check on the desired items. 
-
+You don't have to take any extra steps as described in Case 1. You can directly perform an On-hand Consistency Check on the desired items.
