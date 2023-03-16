@@ -1,6 +1,6 @@
 ---
 title: Manage payment authorizations
-description: This article provides an overview of payment authorization ranges and parameters in Microsoft Dynamics 365 Commerce, covering authorization expiration ranges and common authorization parameters.
+description: This article provides an overview of payment authorization expiration ranges and common payment authorization parameters in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/16/2023
 ms.topic: article
@@ -19,11 +19,11 @@ ms.search.industry: Retail
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This article provides an overview of payment authorization ranges and parameters in Microsoft Dynamics 365 Commerce, covering authorization expiration ranges and common authorization parameters.
+This article provides an overview of payment authorization expiration ranges and common payment authorization parameters in Microsoft Dynamics 365 Commerce.
 
 ## Authorization expiration ranges
 
-Authorizations from payment method issuers may vary in their average expiration dates, depending on the payment method used. Each authorization expiration date may vary, and there's no guaranteed timeline that each payment method follows. Individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization. Depending on the specific payment methods used in your environment and with your payment gateway, you can adjust the Commerce parameters that apply to your solution to best capture the date ranges needed to help manage authorizations while orders are being fulfilled.
+Authorizations from payment method issuers may vary in their average expiration dates, depending on the payment method used. Each authorization expiration date may vary, and there's no guaranteed timeline that each payment method follows. Individual authorization requests may expire if the issuer has reason to end the active authorization initially provided at the origination of the authorization. Depending on the specific payment methods that are used in your environment and with your payment gateway, you can adjust Commerce configuration parameters that apply to your solution to optimally capture the date ranges needed to manage authorizations while orders are being fulfilled.
 
 For the out-of-the-box connectors currently supported by Commerce, the commonly advised ranges of authorization expiration are:
 
