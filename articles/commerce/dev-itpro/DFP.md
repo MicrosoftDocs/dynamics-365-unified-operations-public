@@ -19,7 +19,6 @@ ms.search.validFrom: 2019-01-01
 # Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
 
