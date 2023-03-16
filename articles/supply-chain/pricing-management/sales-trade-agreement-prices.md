@@ -23,11 +23,11 @@ ms.custom: bap-template
 Pricing management leverages the standard Supply Chain Management *Trade agreement price - sales price* side and enhanced with the price attributes. <!-- KFM: This sentence is unclear. Please revise. -->
 
 > [!NOTE]
-> Pricing management respects [Supply Chain Management sales agreements](../sales-marketing/sales-agreements.md), which are different from the *sales trade agreement prices* described in this article. For order lines where a sales agreement applies, Pricing management will use that price. If no sales agreement applies, then Pricing management will check whether an applicable *sales trade agreement price* exists. The discounts included in sales trade agreements (line discounts, multiple discounts, and total discounts) fall outside the purview of Pricing management. Pricing management provides a new approach to defining discount rules. <!-- KFM: I don't understand the point we are making here. Please revise. -->
+> Pricing management respects [Supply Chain Management sales agreements](../sales-marketing/sales-agreements.md), which are different from the *sales trade agreement prices* described in this article <!-- KFM: I think this is what we mean here. Please confirm. -->. For order lines where a sales agreement applies, Pricing management will use that price. If no sales agreement applies, then Pricing management will check whether an applicable *sales trade agreement price* exists. The discounts included in sales trade agreements (line discounts, multiple discounts, and total discounts) fall outside the purview of Pricing management. Pricing management provides a new approach to defining discount rules. <!-- KFM: I don't understand the point we are making here. Please revise. -->
 
 ## Configure sales trade agreement price control
 
-Several general configuration settings affect the way sales trade agreements work in Pricing management. Follow these steps to set up your system before you start creating any sales trade agreement price rules.
+Several configuration settings affect the way sales trade agreements work in Pricing management. Follow these steps to set up your system before you start creating any sales trade agreement price rules.
 
 1. Go to the **Pricing management \> Setup \> Pricing management parameters**
 1. Open the **Price and discounts** tab.
