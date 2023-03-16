@@ -56,7 +56,7 @@ Each relevant user must be assigned a role that lets them work with the Datavers
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
-## Configure users and work orders in Supply Chain Management
+## <a name="roles-workers"></a>Configure users and workers in Supply Chain Management
 
 Each user who will use the Asset Management mobile app must be set up as described in this section.
 

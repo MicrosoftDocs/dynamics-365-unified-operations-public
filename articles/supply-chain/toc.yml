@@ -607,12 +607,16 @@
         items: 
         - name: Asset Management mobile app overview
           href: asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md
+        - name: Known issues affecting the preview release of the Asset Management mobile app
+          href: asset-management/asset-management-mobile-app/asset-management-app-known-issues.md
         - name: Onboard the Asset Management mobile app
           href: asset-management/asset-management-mobile-app/onboard-app.md
         - name: Manage work orders using the Asset Management mobile app
           href: asset-management/asset-management-mobile-app/work-orders.md
         - name: File maintenance requests using the Asset Management mobile app
           href: asset-management/asset-management-mobile-app/maintenance-requests.md
+        - name: Asset Management mobile app FAQs
+          href: asset-management/asset-management-mobile-app/asset-management-app-faq.md
       - name: Asset management from the now-deprecated mobile app
         items: 
         - name: Set up the Asset management mobile workspace
