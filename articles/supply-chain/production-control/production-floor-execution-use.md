@@ -251,10 +251,10 @@ Indirect activities are activities that aren't directly related to a production 
 
 For example, Shannon, a floor worker at Contoso, wants to attend a company meeting, and meetings are considered an indirect activity. One of the following two scenarios applies:
 
-- **Shannon is working on one or more active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms her selection. A message that appears informs her that she has jobs that are in progress. From the message, Shannon can choose to complete or stop the jobs that she is working on before she goes to the meeting.
-- **Shannon doesn't have any active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and she confirms her selection. She is now registered as being at the meeting.
+- **Shannon is working on one or more active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms the selection. A message that appears informs Shannon about jobs that are in progress. From the message, Shannon can choose to complete or stop the jobs before going to the meeting.
+- **Shannon doesn't have any active jobs.** Shannon selects **Activity**, identifies the activity (meeting), and confirms the selection. Shannon is now registered as being at the meeting.
 
-In both scenarios, after Shannon confirms her selection, she goes to either the sign-in page or a page that will wait for her to confirm that she has returned from her indirect activity. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
+In both scenarios, after confirming the selection, Shannon goes to either the sign-in page or a page that will wait for the confirmation that Shannon has returned from the indirect activity. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
 ## Registering breaks
 
