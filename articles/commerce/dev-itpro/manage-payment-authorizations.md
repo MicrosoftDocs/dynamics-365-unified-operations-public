@@ -44,7 +44,7 @@ For Adyen, the void and reauthorization pattern works to renew the authorization
 
 With PayPal, the tokens can remain authorized up to 29 days. However, the **Number of days before expired** parameter will void PayPal's token without the ability to renew it unless the **Order Intent** setting (available starting in Commerce version 10.0.30) is configured. For PayPal, tokens are single use, and the **Order Intent** setting's action will void the token without the ability to recover a new order authorization. Voided PayPal tokens require reobtaining a payment from the customer for PayPal orders.  With the **Order Intent** set to **Save** in the connector configuration, the **Number of days before expired** parameter extends the order expiration duration for PayPal tokens. Without **Order Intent** set to **Save**, the **Number of days before expired** parameter should be set to a balanced number of days that works best for both the Adyen and PayPal Connectors (if using both), and where invoicing will occur within the regular timeframe the token is valid. The recommended setting for **Number of days before expired** is 14 days. 
 
-For more information on the PayPal order intent setting, see [PayPal order intent](#paypal-order-intent).
+For more information on the PayPal order intent setting, see [PayPal order intent](#paypal-order-intent-parameter).
 
 ## Authorization resubmit job parameters
 
