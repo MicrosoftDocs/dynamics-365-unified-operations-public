@@ -24,7 +24,7 @@ The Asset Management mobile app runs within the Power Apps mobile app. All platf
 
 If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management.  For more information, see the [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
 
-## What versions of Supply Chain Management support the Asset Management mobile app?
+## What versions of Supply Chain Management support the app?
 
 The Asset Management mobile app requires Supply Chain Management version 10.0.32 or newer.
 
@@ -32,7 +32,7 @@ The Asset Management mobile app requires Supply Chain Management version 10.0.32
 
 No, it isn't currently possible to customize or extend the app.
 
-## Does the Asset Management mobile app support offline mode?
+## Does the app support offline mode?
 
 No, the Asset Management mobile app doesn't currently support offline mode.
 

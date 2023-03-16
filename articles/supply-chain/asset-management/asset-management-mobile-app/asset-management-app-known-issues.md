@@ -24,9 +24,11 @@ To work around this issue, open the canvas application for editing in Power Apps
 
 We expect to solve this issue in an upcoming release.
 
-## Too much vertical whitespace
+## Too much vertical whitespace on details pages
 
-Sometimes, the first time you job or work-order details from a list page, some of the fields will show too much vertical white space. To mitigate the issue, return to the list page and then reopen the details.
+Occasionally, the first time you open job or work-order details from a list page, some of the fields will show too much vertical white space. To mitigate this issue, return to the list page and then reopen the details.
+
+The following screenshot shows an example of this issue.
 
 [<img src="media/asset-management-known-issue-vertical-space.png" alt="Too much vertical whitespace on the work-order details page" title="Too much vertical whitespace on the work-order details page" width="200" />](media/asset-management-known-issue-vertical-space.png#lightbox)
 
