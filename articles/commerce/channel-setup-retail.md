@@ -2,7 +2,7 @@
 title: Set up a retail  channel
 description: This article describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 03/15/2023
+ms.date: 03/16/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
