@@ -18,7 +18,6 @@ The Asset Management mobile app is currently in public preview and therefore has
 
 ### Stuck on Loading Screen or at the end of Onboarding Screen
 
-On iOS devices, the first time you open job details from the jobs list page, some of the fields will show too much vertical white space. This issue only occurs the first time you open the details page. To mitigate the issue, return to the jobs list and then reopen the details. This limitation only applies to iOS devices.
 After installing or updating the preview application package or solution, users of the mobile application can get stuck in the Loading Screen or at the end of the Onboarding Screen.
 
 To mitigate, "Edit" the Canvas application in Power Apps maker portal and re-publish immediately without making any changes. See [this](https://learn.microsoft.com/power-apps/maker/canvas-apps/save-publish-app) on how to re-publish a Canvas application.
