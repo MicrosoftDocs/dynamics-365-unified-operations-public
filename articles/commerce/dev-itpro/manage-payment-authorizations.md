@@ -79,3 +79,9 @@ Beginning in Commerce version 10.0.30, the PayPal payment connector configuratio
 When configuring the Dynamics 365 Payment Connector for Adyen in headquarters for online, call center, or Hardware Station, the **Authorization stale period (days)** parameter specifies the number of days after which the connector will view the authorization token as expired. Dynamics proactively sets a decline status on a capture if the authorization token is older than the days specified for this attribute, and generates the error `Capture failed: Capture failed due to stale authorization.(22062)`. When declined, the capture call generates the error in the system prior to calling the payment gateway (Adyen). This parameter prevents unnecessary capture requests for authorizations that are likely to fail, avoiding unnecessary transactional attempt charges. 
 
 The **Authorization stale period (days)** parameter in the Adyen connector configuration should be set to a longer timeframe than the accounts receivable **Number of days before expired** parameter value, because the **Authorization stale period (days)** parameter triggers the protective action to consider the authorization expired.
+
+## Additional resources
+
+[Dynamics 365 Payment Connector for PayPal](../paypal.md)
+
+[Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md)
