@@ -22,7 +22,7 @@ Supply Chain Management provides an On-hand Consistency Check tool, which allows
 
 While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 
 1. running an On-hand Consistency Check on all items (with Inventory Visibility batch enabled) will usually take long time than the standard use case when the Inventory Visibility batch is not enabled. 
-2. If you have Inventory Visibility batch job enable, On-hand Consistency Check will involve API calls to sync On-hand list to Inventory Visibility service. You might experience failure on consistency check if the external calls have unexpected errors.  
+2. If you have Inventory Visibility batch job enabled, On-hand Consistency Check will involve API calls to sync On-hand list to Inventory Visibility service. You might experience failure on consistency check if the external calls have unexpected errors.  
 
 As stated above, it is recommended to disable the Inventory Visibility Integration batch job when you want to run On-hand Consistency Check on **all items**.
 
