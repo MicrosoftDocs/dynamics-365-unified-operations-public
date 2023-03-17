@@ -47,7 +47,7 @@ With this change, security hides this menu item if you don't have access to the 
 
 The worker task maintenance form lists all tasks for an employee across onboarding, offboarding, transitions, and business processes. You can delete, reassign, or update the status of tasks.
 
-Example: Benjamin Martin is a benefits administrator. During employee onboarding, tasks are created for Benjamin to review the new employee’s benefit selection. Benjamin has past tasks that he's completed, and future tasks that he needs to complete. Benjamin decides to leave the company, so his tasks need to be either re-assigned or removed. The task maintenance form (in the action pane of the **Worker** form) allows all of Benjamin’s tasks to be re-assigned to another worker or removed.  
+Example: Benjamin Martin is a benefits administrator. During employee onboarding, tasks are created for Benjamin to review the new employee’s benefit selection. Benjamin has completed the past tasks, and future tasks that need to be completed. Benjamin decides to leave the company, so Benjamin's tasks need to be either re-assigned or removed. The task maintenance form (in the action pane of the **Worker** form) allows all of Benjamin’s tasks to be re-assigned to another worker or removed.  
 
 ## Dataverse solution is now available with the following changes:
 

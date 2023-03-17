@@ -10,16 +10,14 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
       - name: What's new or changed in Finance
         items:
-        - name: What's new or changed in Finance home page
+        - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.33 (April)  
+          href: get-started/whats-new-changed-changed-10-0-33.md
         - name: Finance 10.0.32 (March) 
           href: get-started/whats-new-changed-10-0-32.md
         - name: Finance 10.0.31 (February)
           href: get-started/whats-new-changed-10-0-31.md
-        - name: Finance 10.0.30 (November)
-          href: get-started/whats-new-changed-10-0-30.md
-        - name: Finance 10.0.29 (October)
-          href: get-started/whats-new-changed-10-0-29.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -202,6 +200,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/finance 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/finance    
+    - name: Finance troubleshooting and FAQs
+      href: finance-troubleshooting.md
     - name: Accounts payable
       items:
       - name: Accounts payable home page
@@ -3250,6 +3250,8 @@
             href: localizations/kuwait.md
         - name: Latin America
           items: 
+          - name: Latin America overview
+            href: localizations/latam-overview.md
           - name: Taxpayer types for Latin America
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America

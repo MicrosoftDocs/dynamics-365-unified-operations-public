@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.33 (April 2023)
+          href: get-started/whats-new-platform-updates-10-0-33.md
         - name: Platform updates for version 10.0.32 (March 2023)
           href: get-started/whats-new-platform-updates-10-0-32.md
         - name: Platform updates for version 10.0.31 (February 2023)
           href: get-started/whats-new-platform-updates-10-0-31.md
-        - name: Platform updates for version 10.0.30 (November 2022)
-          href: get-started/whats-new-platform-updates-10-0-30.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1649,6 +1649,8 @@
           href: sysadmin/security-architecture.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
+        - name: Use customer-managed keys to control encryption keys for data at rest
+          href: sysadmin/customer-managed-keys.md
         - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports

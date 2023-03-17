@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 08/02/2022
+ms.date: 03/17/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,9 +18,25 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## March 2023 release 
+
+The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid march.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug | Require additional exception handling to PostCommit plugin | GA |
+
+## February 2023 release 
+
+The February release of [Dual-write core solution 1.0.40.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. 
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug | Handle Azure resource throttling during live-sync. | GA |
+
 ## January 2023 release 
 
-The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and will complete in January.
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
 
 ## November 2022 release 
 

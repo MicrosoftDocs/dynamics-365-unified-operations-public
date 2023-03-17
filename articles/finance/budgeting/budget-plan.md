@@ -43,11 +43,11 @@ The objective of this lab is to provide a guided view of Microsoft Dynamics 365 
 For this tutorial, you’ll need to access the Microsoft Dynamics 365 Finance environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with administrator credentials. When signing in, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the application using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” check box. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
 
 ## **Scenario overview**
-Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
+Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, Julia needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
 
 1.  Julia uses previous year actuals amounts as a starting point to create the budget.
-2.  Based on the previous year actuals, she creates estimates for 12 months in the upcoming year
-3.  Julia reviews the budget with CFO. Once done she makes necessary adjustments for the budget plan and finalizes budget preparation.
+2.  Based on the previous year actuals, Julia creates estimates for 12 months in the upcoming year
+3.  Julia reviews the budget with CFO. Once done Julia makes necessary adjustments for the budget plan and finalizes budget preparation.
 
 Budget planning configuration schema for the scenario looks as follows:
 
@@ -143,7 +143,7 @@ Budget plan columns are either Monetary or quantity based columns that can be us
 [![Refresh.](./media/screenshot23.png)](./media/screenshot23.png)
 
 ### Task 5: Create budget plan document layouts and templates
-Layout defines how budget plan document lines grid is going to look like when user opens budget plan document. It is also possible to switch the layout for budget plan document to see the same data in different angles. Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab) 
+Layout defines how budget plan document lines grid is going to look like when user opens budget plan document. It is also possible to switch the layout for budget plan document to see the same data in different angles. Now, with columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table used to create budget data (see section Scenario overview in this lab) 
 
 5.1. In the Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration, open the Layouts page. Create a new layout for Monthly budget entry:
 

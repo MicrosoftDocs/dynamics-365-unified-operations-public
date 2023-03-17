@@ -123,9 +123,9 @@ For information on the dark hours for each region, see [What are the planned mai
 | Quality Update train | Release cut | Train duration | Status
 |---|---|---|---|
 | 10.0.30 Release-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
-| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 26 2023 | In-Progress |
-| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | Not Started |
-| 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Not Started |
+| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 26 2023 | Completed |
+| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | In-Progress |
+| 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| In-Progress |
 | 10.0.31 Release-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Not Started |
 | 10.0.31 Release-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
 | 10.0.32 Release-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| Not Started |
@@ -148,30 +148,17 @@ For information on the dark hours for each region, see [What are the planned mai
 | 10.0.37 Release-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
 | 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-2 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-4 train schedule
 
-**App version: 10.0.1362.99**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | NA | NA |
-| Station 2 | January 2 to January 5, 2023 | January 21 to January 22, 2023 |
-| Station 3 | January 3 to January 6, 2023 | January 28 to January 29, 2023 |
-| Station 4 | January 9 to January 12, 2023 | NA |
-| Station 5 | January 16 to January 19, 2023 | NA |
-| Station 6 | NA | NA |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.30 Release-3 train schedule
-
-**App version: 10.0.1362.124**
+**App version: 10.0.1362.150**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | NA | NA |
-| Station 2 | January 30 to February 2, 2023 | February 11 to February 12, 2023 |
-| Station 3 | January 31 to February 3, 2023 | February 11 to February 12, 2023 |
-| Station 4 | February 6 to February 9, 2023 | February 18 to February 19, 2023 |
-| Station 5 | February 13 to February 16, 2023 | February 25 to February 26, 2023 |
+| Station 2 | March 13 to March 16, 2023 | March 25 to March 26, 2023 |
+| Station 3 | March 14 to March 17, 2023 | March 25 to March 26, 2023 |
+| Station 4 | March 20 to March 23, 2023 | April 1 to April 2, 2023 |
+| Station 5 | March 27 to March 30, 2023 | April 8 to April 9, 2023 |
 | Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-1 train schedule
@@ -185,6 +172,19 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 3 | February 21 to February 24, 2023 | March 4 to March 5, 2023 |
 | Station 4 | February 27 to March 2, 2023 | March 11 to March 12, 2023 |
 | Station 5 | March 6 to March 9, 2023 | March 18 to March 19, 2023 |
+| Station 6 | NA | NA |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-2 train schedule
+
+**App version: 10.0.1406.139**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | NA | NA |
+| Station 2 | March 20 to March 23, 2023 | April 1 to April 2, 2023 |
+| Station 3 | March 21 to March 24, 2023 | April 1 to April 2, 2023 |
+| Station 4 | March 27 to April 2, 2023 | April 8 to April 9, 2023 |
+| Station 5 | April 3 to April 6, 2023 | April 8 to April 9, 2023 |
 | Station 6 | NA | NA |
 
 > [!IMPORTANT] 

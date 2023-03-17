@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.33 (April 2023)
+          href: get-started/whats-new-commerce-10-0-33.md
         - name: Commerce 10.0.32 (March 2023)
           href: get-started/whats-new-commerce-10-0-32.md
         - name: Commerce 10.0.31 (February 2023)
@@ -1421,7 +1423,17 @@
         - name: Extensibility impact of Commerce catalogs for B2B customizations
           href: catalogs-b2b-sites-dev.md
         - name: Commerce catalogs for B2B FAQ
-          href: catalogs-b2b-sites-FAQ.md         
+          href: catalogs-b2b-sites-FAQ.md
+      - name: On behalf of (OBO) functionality for B2B sites
+        items:
+        - name: Enable on behalf of (OBO) functionality
+          href: on-behalf-of.md
+        - name: Create and configure an Azure AD application for account manager sign-in
+          href: obo-create-aad-application.md
+        - name: Create and modify B2B pages for on behalf of functionality (OBO)
+          href: obo-add-pages-site-builder.md
+        - name: Set up and configure on behalf of functionality (OBO)
+          href: obo-configure-hq.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
