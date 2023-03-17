@@ -2,7 +2,7 @@
 title: Manage payment authorizations
 description: This article provides an overview of payment authorization expiration ranges and common payment authorization parameters in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/16/2023
+ms.date: 03/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ Here are the commonly suggested authorization expiration ranges for the out-of-b
 - **Credit card authorizations (via Adyen):** Typically 14 days (but the range depends on the individual issuer)
 
 > [!NOTE]
-> The preceding expiration ranges are only suggestions. They aren't exact time frames of what you might experience or use to configure for your environment, based on the range of methods that are used.
+> The preceding expiration ranges are only suggestions. The exact time frames that you experience or configure for your environment depend on the range of methods that are used.
 
 ## Authorization expiration reauthorization parameters
 
@@ -72,7 +72,7 @@ The **Run in the background** section of the dialog box includes the following e
 
 ## PayPal connector order intent parameter
 
-As of Commerce version 10.0.30, the PayPal payment connector configuration in headquarters includes the **OrderIntent** field. This field enables the PayPal payment connector to be configured to operate with a saved order with the PayPal service for the online channel. For more information about Commerce support for PayPal order intent, see [Order Intent](../paypal.md#order-intent).
+As of Commerce version 10.0.30, the PayPal payment connector configuration in headquarters includes the **OrderIntent** field. This field enables the PayPal payment connector to be configured to operate with a saved PayPal order for the online channel. For more information about Commerce support for PayPal order intent, see [Order Intent](../paypal.md#order-intent).
 
 ## Adyen connector authorization stale period parameter
 
