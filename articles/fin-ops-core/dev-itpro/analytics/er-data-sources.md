@@ -191,50 +191,50 @@ The following illustration shows the data source properties of the ***Model enum
 
 ### <a name="model-enumeration-user-input-parameter"></a>Model enumeration user input parameter
 
-The **Model enumeration user input parameter** data source represents the enumeration of the base data model. Usually, this data source is required when you want the value of the referred enumeration specified in the related data entry field in the dialog box at runtime, before the ER format is executed.
+The **Model enumeration user input parameter** data source represents the enumeration of the base data model. This data source is usually required when you want the value of the referred enumeration that's specified in the related data entry field in the dialog box at runtime, before the ER format is executed.
 
 The mandatory **Model enumeration** property of **Model enumeration user input parameter** data source points to a data model enumeration of the selected ER data model component to specify what values of the referred ER data model enumeration are returned by this data source.
 
 The **Allow multiple selection** property identifies whether you can specify a single value or multiple values of the referred enumeration.
 
-The **Read only** property allows you to configure an ER expression to specify whether the appropriate data entry field in the dialog box at runtime is editable.
+Use the **Read only** property to configure an ER expression and specify whether the appropriate data entry field in the dialog box at runtime is editable.
 
-The **Default value** property allows you to configure an ER expression to specify the default value for the appropriate data entry field in the dialog box at runtime.
+Use the **Default value** property to configure an ER expression that specifies the default value for the appropriate data entry field in the dialog box at runtime.
 
 The **Always reset to default value** property identifies whether the value that is returned by the **Default value** ER expression should always be used as the default value, regardless of the previously used value.
 
 Use the **Edit visibility** function to configure an ER expression that will specify at runtime whether the appropriate data entry field should be shown in the dialog box at runtime:
 
--   When this expression is configured and return *[False](er-formula-supported-data-types-primitive.md#boolean)* at runtime, the appropriate data entry field in the dialog box will be hidden.
--   Otherwise, the appropriate data entry field will be visible in the dialog box at runtime.
+-   When this expression is configured and returns *[False](er-formula-supported-data-types-primitive.md#boolean)* at runtime, the appropriate data entry field in the dialog box is hidden.
+-   Otherwise, the appropriate data entry field is visible in the dialog box at runtime.
 
-To learn more, review the [Use USER INPUT PARAMETER data sources to specify parameters for a report](er-user-input-parameter-data-sources.md) article.
+To learn more, review the article, [Use USER INPUT PARAMETER data sources to specify parameters for a report](er-user-input-parameter-data-sources.md).
 
 ### <a name="model-enumeration-lookup"></a>Model enumeration lookup
 
-You can use the **Model enumeration lookup** data source to configure an ER data source of the *Lookup* type to return values of an ER data model enumeration. 
+You can use the **Model enumeration lookup** data source to configure a *Lookup* type ER data source that returns the values of an ER data model enumeration. 
 
 > [!NOTE]
 > The **Model enumeration lookup** data source can be only configured for an ER format component.
 
-Configure a data source of the ***Model enumeration lookup*** type for data filtering in an ER format so that it's based on a set of abstract rules. You can then specify real rules beyond the ER components designers by using the user interface that is automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. Eventually, the specified rules will be accessed by the ER format's **Lookup** data source when this ER format is executed.
+Configure a ***Model enumeration lookup*** type data source for data filtering in an ER format so that it's based on a set of abstract rules. Then, specify real rules beyond the ER components designers by using the user interface that is automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. When this ER format is executed, the specified rules will be accessed by the ER format's **Lookup** data source.
 
 The mandatory **Model enumeration** property of the **Model enumeration lookup** data source points to a data model enumeration of the base ER data model component to specify what values of the referred ER data model enumeration are returned by this data source.
 
-The **Cross-company** property identifies whether you plan to use the configured data source to evaluate at runtime data of multiple companies.
+The **Cross-company** property identifies if you plan to use the configured data source to evaluate the data of multiple companies at runtime.
 
 The **Extended** property reveals additional methods to access values of the configured data source.
 
-To learn more, review the [Configure Lookup data sources to use ER application-specific parameters](er-lookup-data-sources.md) article.
+To learn more, review the article, [Configure Lookup data sources to use ER application-specific parameters](er-lookup-data-sources.md).
 
 ## <a name="format-enumeration-group"></a>Format enumeration group
 
-You can configure data sources of different types that represent the editable format component and return values of an enumeration of this format. This section provides a summary of properties that are common for all types of ER data sources that belongs to the **Format enumeration** group.
+You can configure different data source types that represent the editable format component and return values of an enumeration of this format. This section provides a summary of properties that are common for all types of ER data sources that belong to the **Format enumeration** group.
 
 > [!NOTE]
 > Data sources of the **Format enumeration** group can be only configured for an ER format component.
 
-The mandatory **Enumeration** property refers to an ER format enumeration the value of which the configured data source returns.
+The mandatory **Enumeration** property refers to an ER format enumeration whose value is returned by the configured data source.
 
 ### <a name="format-enumeration"></a>Format enumeration
 
@@ -242,13 +242,13 @@ The **Enumeration** data source represents the enumeration of the editable forma
 
 ![The configured format enumeration on the Format enumerations page.](./media/er-data-sources-ds-configure-format-enum.gif)
 
--   Select **Add** of the **Format enumeration** tab to add a new format enumeration.
--   Select **Add** of the **Format enumeration values** tab to add a new value of the selected format enumeration.
+-   On the **Format enumeration** tab, select **Add** to add a new format enumeration.
+-   On the **Format enumeration values** tab, select **Add** to add a new value of the selected format enumeration.
 
 > [!TIP]
 > The **Label** and **Help** properties of format enumerations and format enumeration values are translatable.
 
-Usually, this data source is required when you configure an ER expression to compare a particular format enumeration value with a value of the relevant enumeration that another data source returns.
+This data source is usually required when you configure an ER expression to compare a particular format enumeration value with a value of the relevant enumeration that another data source returns.
 
 The following illustration shows properties of a data source of the ***Format enumeration*** type on the **Data source properties** dialog.
 
@@ -256,7 +256,7 @@ The following illustration shows properties of a data source of the ***Format en
 
 ### <a name="format-enumeration-user-input-parameter"></a>Format enumeration user input parameter
 
-The **Format enumeration user input parameter** data source represents the enumeration of the editable format. Usually, this data source is required when you want user to specify a value of the referred enumeration in the related data entry field in the dialog box at runtime, before execution of an ER format begins.
+The **Format enumeration user input parameter** data source represents the enumeration of the editable format. Usually, this data source is required when you want to specify a value of the referred enumeration in the related data entry field in the dialog box at runtime, before execution of an ER format begins.
 
 The mandatory **Format enumeration** property of **Format enumeration user input parameter** data source points to an enumeration of the editable format to specify what values of the referred format enumeration are returned by this data source.
 
@@ -273,9 +273,9 @@ The following illustration shows an ER expression that is configured to enable a
 
 ### <a name="format-enumeration-lookup"></a>Format enumeration lookup
 
-You can use the **Format enumeration lookup** data source to configure an ER data source of the ***Lookup*** type to return values of an ER format enumeration. 
+You can use the **Format enumeration lookup** data source to configure an ER data source of the ***Lookup*** type to return the values of an ER format enumeration. 
 
-Configure a data source of the ***Format enumeration lookup*** type for data filtering in an ER format so that it's based on a set of abstract rules. You can then specify real rules beyond the ER components designers by using the user interface that is automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. Eventually, the specified rules will be accessed by the ER format's **Lookup** data source when this ER format is executed.
+Configure a ***Format enumeration lookup*** type data source to filter data in an ER format so that it's based on a set of abstract rules. Then, specify real rules beyond the ER components designers by using the user interface that is automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. Eventually, the specified rules are accessed by the ER format's **Lookup** data source when this ER format is executed.
 
 The mandatory **Format enumeration** property of the **Format enumeration lookup** data source points to a format enumeration of the editable format to specify what values of the referred format enumeration are returned by this data source.
 
@@ -285,43 +285,43 @@ The **Cross-company** and **Extended** properties are set as described above for
 
 ### <a name="export-format"></a>Export format
 
-You can use the **Export format** data source to run another ER format in scope of the editable format execution. So, the results of execution of the nested ER format can be used as a data source for execution of the editable ER format.
+You can use the **Export format** data source to run another ER format in scope of the editable format execution. So, the execution results of the nested ER format can be used as a data source for the execution of the editable ER format.
 
 Use the mandatory **Format** property to specify an ER format that must be executed in scope of the editable format execution.
 
 ### <a name="import-format"></a>Import format
 
-You can use the **Import format** data source to parse an inbound business document. So, the results of an inbound document parsing can be used in the format mapping to fill a data model.
+You can use the **Import format** data source to parse an inbound business document. The results of the inbound document parsing can then be used in the format mapping to fill a data model.
 
 Use the mandatory **Format** property to specify an ER format that must be used for inbound document parsing.
 
-The following illustration shows the ER format that is configured to parse an inbound document in XML format.
+The following illustration shows the ER format that's configured to parse an inbound document in XML format.
 
 ![The format structure on the Format designer page.](./media/er-data-sources-ds-import-format-structure.png)
 
-The following illustration shows the model mapping that contains a data source of the ***Import format*** type using to expose data of the parsed inbound document and use this data to fill a data model.
+The following illustration shows the model mapping that contains a ***Import format*** type data source to expose data of the parsed inbound document and then use the data to fill a data model.
 
 ![The data source of the Import format type on the Model mapping designer page.](./media/er-data-sources-ds-import-format-mapping.gif)
 
-To learn more, review the [Parse incoming documents](er-parse-incoming-documents.md) article.
+To learn more, review the article, [Parse incoming documents](er-parse-incoming-documents.md).
 
 ## <a name="dynamics-365-finance-group"></a>Dynamics 365 Finance group
 
 ### <a name="class"></a>Class
 
-You can use the **[Class](er-formula-supported-data-types-composite.md#class)** data source to call from your ER solution a static method of a public class. Values of arguments for calling classes can be dynamically defined at runtime. To invoke a class, configure a data source of the ***Calculated field*** type with an expression that refers the desired class of application source code. To learn more, complete the steps of the procedure in the [Design ER expressions to call application class methods](./tasks/design-expressions-app-class-er.md) article.
+You can use the **[Class](er-formula-supported-data-types-composite.md#class)** data source to call a static method of a public class from your ER solution. Argument values for calling classes can be dynamically defined at runtime. To invoke a class, configure a ***Calculated field*** type data source with an expression that refers the desired class of application source code. To learn more, complete the procedures in the [Design ER expressions to call application class methods](./tasks/design-expressions-app-class-er.md) article.
 
-You can add a data source of the ***Class*** type in the editable **Model mapping** component. Should you identify the editable model mapping as the preferrable one for execution, set the **Integration point** option of this data source of the ***Class*** type to **Yes**. To learn more about this option, review the [API to run a format mapping for the generation of outbound documents](er-apis-app10-0-11.md#api-to-run-a-format-mapping-for-the-generation-of-outbound-documents) section.
+You can add a ***Class*** type data source in the editable **Model mapping** component. If you identify the editable model mapping as the preferrable one for execution, set the **Integration point** option of this ***Class*** type data source to **Yes**. To learn more about this option, review the section, [API to run a format mapping for the generation of outbound documents](er-apis-app10-0-11.md#api-to-run-a-format-mapping-for-the-generation-of-outbound-documents).
 
 ### <a name="object"></a>Object
 
-You can use the **[Object](er-formula-supported-data-types-composite.md#object)** data source to call from your ER solution a public method of a class instance. Values of arguments for calling classes can be dynamically defined at runtime. To invoke a class, configure a data source of the ***Calculated field*** type with an expression that refers the desired class of application source code.
+You can use the **[Object](er-formula-supported-data-types-composite.md#object)** data source to call a public method of a class instance from your ER solution. Argument values for calling classes can be dynamically defined at runtime. To invoke a class, configure a ***Calculated field*** type data source with an expression that refers the desired class of application source code.
 
-You can add a data source of the ***Object*** type in the editable **Model mapping** component. Should you identify the editable model mapping as the preferrable one for execution at runtime, set the **Integration point** option of this data source of the ***Object*** type to **Yes**.
+You can add an ***Object*** type data source in the editable **Model mapping** component. If you identify the editable model mapping as the preferrable one for execution at runtime, set the **Integration point** option of this ***Object*** type data source to **Yes**.
 
 ### <a name="enumeration"></a>Enumeration
 
-The **Enumeration** data source represents the application enumeration. The following illustration shows a format enumeration that has been configured for the editable format component. Usually, this data source is required when you configure an ER expression to compare a particular application enumeration value with a value of the relevant enumeration that another data source returns.
+The **Enumeration** data source represents the application enumeration. The following illustration shows a format enumeration that's been configured for the editable format component. This data source is usually required when you configure an ER expression to compare a particular application enumeration value with a value of the relevant enumeration that another data source returns.
 
 Use the mandatory **Enumeration** property to specify an application enumeration.
 
