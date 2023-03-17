@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 03/17/2023
 audience: IT Pro
 ms.search.region: Global
 ms.custom: bap-template
@@ -61,4 +61,3 @@ Not all finance and operations apps fully support Customer Lockbox in the curren
 | Dynamics 365 Finance | <p>Finance and operations environments that are provisioned under Dynamics 365 Finance support Customer Lockbox for all environment-specific resources.</p><p>**Note:** If you use [RCS](../../../finance/localizations/rcs-overview.md) to complement your Finance environment, data that's managed under RCS environments doesn't currently support Customer Lockbox. Support for Customer Lockbox is expected in late 2023, when RCS functionality is added to the finance and operations platform.</p> |
 | Dynamics 365 Commerce | <p>Dynamics 365 Commerce environments support Customer Lockbox for all environment-specific resources except the content management system in e-commerce. Customer Lockbox support for the content management system in e-commerce is expected to be enabled in the future.</p>|
 | Microsoft Dynamics Lifecycle Services | <p>Data that you store in Lifecycle Services (such as file assets, methodologies, task recorder data, and any other project metadata) isn't part of the Customer Lockbox policy enforcement.</p><p>Customer Lockbox support for Lifecycle Services metadata is expected sometime in the future.</p> |
-
