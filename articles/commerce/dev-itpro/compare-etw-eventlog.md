@@ -110,7 +110,7 @@ Event Viewer enables a subset of XPath queries to be used for filtering. You can
 
 To search for specific events by using the ETW logger, you can query by event name via XPath, as shown in the following example illustration and XML code block.
 
-![ETW filtering by event name.](\media\ETWFilterByEventName.png)
+![ETW filtering by event name.](media\ETWFilterByEventName.png)
 
 ````xml
 <QueryList>
