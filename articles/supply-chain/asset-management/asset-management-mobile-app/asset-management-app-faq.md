@@ -18,7 +18,7 @@ This article provides answers to several frequently asked questions (FAQs) about
 
 ## What platforms and mobile devices are supported?
 
-The Asset Management mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app are supported for the Asset Management mobile app. For details, see [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
+The Asset Management mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app can also run the Asset Management mobile app. For details, see [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
 
 ## Why don't I see anything when I sign in to the app?
 
@@ -38,4 +38,4 @@ No, the Asset Management mobile app doesn't currently support offline mode.
 
 ## Is there multi-language support?
 
-No, the Asset Management mobile app is only available in English at this time. We expect to add multi-language support in an upcoming release.
+No, the Asset Management mobile app is only available in English at this time. We plan to add multi-language support in an upcoming release.

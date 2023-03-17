@@ -18,11 +18,9 @@ The Asset Management mobile app is currently in public preview and therefore has
 
 ## Stuck on the loading or onboarding screen
 
-After you install or update the preview application package or solution, you might get stuck at the loading screen or at the end of the onboarding screen. <!-- KFM: Where are we working here? Where do we get stuck? -->
+After you install or update the preview application package or solution, you might get stuck at the loading screen or at the end of the onboarding screen. <!-- KFM: Where are we working here? Where do we get stuck?  E.g., are we installing on a mobile device, installing in Dataverse, or somewhere else?  -->
 
-To work around this issue, open the canvas application for editing in Power Apps maker portal <!-- KFM: Is this the right name? It doesn't appear in the linked topic. Maybe we mean Power Apps Studio? --> and then republish it immediately without making any changes. For more information about how to republish a canvas application, see [Save and publish canvas apps](/power-apps/maker/canvas-apps/save-publish-app) on how to re-publish a Canvas application.
-
-We expect to solve this issue in an upcoming release.
+To work around this issue, open the canvas application for editing in Power Apps maker portal <!-- KFM: Is this the right name? It doesn't appear in the linked topic. Maybe we mean *Power Apps Studio*? --> and then republish it immediately without making any changes. For more information about how to republish a canvas application, see [Save and publish canvas apps](/power-apps/maker/canvas-apps/save-publish-app).
 
 ## Too much vertical whitespace on details pages
 
@@ -34,7 +32,7 @@ The following screenshot shows an example of this issue.
 
 ## Limited file-type support for attachments
 
-The current release provides only limited support for file attachments on the job details page. We plan to add support for more file types in the final release.
+The current release provides only limited support for viewing file attachments on the job details page. We plan to add support for more file types in the final release.
 
 Supported attachment types:
 
