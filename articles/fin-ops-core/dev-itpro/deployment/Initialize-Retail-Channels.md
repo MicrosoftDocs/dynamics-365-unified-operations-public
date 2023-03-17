@@ -2,7 +2,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This article explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 01/12/2023
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ If you're using a Tier-2 sandbox or production environment that has application 
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has version 8.1.2.x or later.
-2. You can self-deploy up to 2 Commerce Scale Units per environment. If you require more than 2 Commerce Scale Units per environment, in Microsoft Dynamics Lifecycle Services, create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of Commerce Scale Units, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 Commerce Scale Units per environment, you do not need to create a support request. 
+2. You can self-deploy up to two Commerce Scale Units per environment. If you require more than two Commerce Scale Units per environment, in Microsoft Dynamics Lifecycle Services, create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of Commerce Scale Units, and desired datacenter regions. The request will be completed within five business days. If you don't require more than two Commerce Scale Units per environment, you don't need to create a support request. 
 3. You must have Project Owner permissions in Lifecycle Services before you can initialize Commerce Scale Unit.
 4. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
@@ -70,13 +70,13 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | UK West             | Generally available |    No comments.                       |
 | UAE             | UAE North           | Not available       | US-based or EU-based Lifecycle Services projects must be used. UAE-based environments can deploy UAE-based CSUs. As of December 2022, UAE-based environments can't be deployed in US-based or EU-based Lifecycle Services projects. Work is in progress to fix this issue. |
 
-Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently do not allow for Commerce Scale Unit deployment at this time. 
+Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently don't allow for Commerce Scale Unit deployment at this time. 
 
 ![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
 ## Initialize Commerce Scale Unit as part of a new environment deployment
 
-Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It is not recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
+Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It isn't recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
 
 1. Make sure the headquarters environment is available and not in [Maintenance mode](../sysadmin/maintenance-mode.md).
 2. In Lifecycle Services, on the environment details page, select **Environment features \> Commerce**.
@@ -93,7 +93,6 @@ To configure your channels to use the Commerce Scale Unit database, follow these
 1. In Commerce headquarters, go to **Retail and commerce \> Headquarters setup \> Commerce Scheduler \> Channel database**.
 1. In the left pane, select a channel database.
 1. On the **Retail channel** FastTab, select **Add**, and then select your retail channel in the drop-down list.
-1. Select **Add**, and then select your online channel in the drop-down list. 
 
 When you've finished, go to **Retail and Commerce \> Retail and commerce IT \> Distribution schedule**, and run job 9999.
 
@@ -102,13 +101,13 @@ When you've finished, go to **Retail and Commerce \> Retail and commerce IT \> D
 
 ### Database refresh and Commerce Scale Units
 
-Before you begin, make sure you are familiar with [Steps to complete after a database refresh for environments that use Commerce functionality](../database/database-refresh.md).
+Before you begin, make sure you're familiar with [Steps to complete after a database refresh for environments that use Commerce functionality](../database/database-refresh.md).
 
-The scale unit channel database records (in the Channel Database form) cannot be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
+The scale unit channel database records (in the Channel Database form) can't be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
 
-After database refresh, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in Lifecycle Services. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if the registration is detected as missing.
+After database refresh, you can regenerate the scale unit's channel database record by issuing a redeployment of your scale unit in Lifecycle Services. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if the registration is detected as missing.
 
-You can issue a re-deployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in Lifecycle Services by the following steps:
+You can issue a redeployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in Lifecycle Services by the following steps:
 
 1. In Lifecycle Services, on the environment details page, select **Environment features \> Retail**.
 2. On the setup deployment page, select the scale unit you would like to redeploy.
@@ -117,7 +116,7 @@ You can issue a re-deployment of the scale unit, without changing any components
 5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown beside the **Current version** label.
 6. Click on **Update** button.
 
-You do not need to select **Update extensions**, even if you have applied extensions previously, since the last extension package applied to the scale unit is automatically picked when updating a scale unit.
+You don't need to select **Update extensions**, even if you have applied extensions previously, since the last extension package applied to the scale unit is automatically picked when updating a scale unit.
 
 If you have multiple scale units, you need to perform the operation above for each scale unit. You may perform these operations in parallel, if desired.
 
@@ -127,9 +126,9 @@ After you've initialized Commerce Scale Unit, you can self-deploy a second Scale
 
 For each additional Commerce Scale Unit that you deploy, we recommend that you create a separate channel database group by following these steps.
 
-1. In Commerce head office, go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database group**.
+1. In Commerce head office, go to **Retail and Commerce \> Retail Headquarters \> Retail Scheduler setup \> Channel database group**.
 2. Create a new channel database group.
-3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database**, and select the channel database that corresponds to the newly created Commerce Scale Unit.
+3. Go to the **Retail and Commerce \> Retail Headquarters \> Retail Scheduler setup \> Channel database**, and select the channel database that corresponds to the newly created Commerce Scale Unit.
 4. Select **Edit** and select the new channel database group.
 5. Select **Save**.
 6. Select **Run Full data sync** for the selected channel database.
@@ -158,22 +157,22 @@ As a general rule, when initializing Commerce Scale Unit, you must plan for a fi
 You must perform the following additional steps before initializing Commerce Scale Unit.
 
 - **Close all POS shifts** - After migration, POS users will be unable to close any shifts that were active during the migration process.
-- **Validate that all P-jobs have been successfully completed** - It is recommended that P-jobs to synchronize pending transactions have completed before CSU is initialized.
-- **Sign out of all POS device** - POS operations are not supported during migration.
-- **Recall and void all suspended transactions at POS** - Suspended transactions are not preserved as part of the initialization.
+- **Validate that all P-jobs have been successfully completed** - It's recommended that P-jobs to synchronize pending transactions have completed before CSU is initialized.
+- **Sign out of all POS device** - POS operations aren't supported during migration.
+- **Recall and void all suspended transactions at POS** - Suspended transactions aren't preserved as part of the initialization.
 
 > [!IMPORTANT]
-> As part of Commerce Scale Unit initialization, prior suspended transactions will be lost and cannot be recalled. 
+> As part of Commerce Scale Unit initialization, prior suspended transactions will be lost and can't be recalled. 
 
-Here is what occurs during the initialization period:
+Here's what occurs during the initialization period:
 
 - Cloud-hosted Commerce channels won't work, unless you turn on POS offline capability.
 - POS devices with offline capability turned on will have reduced functionality.
 - Any e-Commerce clients that depend on Retail Server will be disrupted.
 - Channels that are hosted on Commerce Scale Units (self-hosted) won't be affected.
-- Head office functionality is not affected.
+- Head office functionality isn't affected.
 
-Here is what occurs after initialization is completed:
+Here's what occurs after initialization is completed:
 
 - The device activation state of all activated POS devices is preserved, which means that the devices won't have to be reactivated.
 - Stand-alone hardware station instances will continue to work.

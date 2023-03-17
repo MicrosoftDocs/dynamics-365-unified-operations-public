@@ -12,6 +12,10 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.33 (April 2023)
+          href: get-started/whats-new-scm-10-0-33.md
+        - name: Supply Chain Management 10.0.32 (March 2023)
+          href: get-started/whats-new-scm-10-0-32.md
         - name: Supply Chain Management 10.0.31 (February 2023)
           href: get-started/whats-new-scm-10-0-31.md
         - name: Supply Chain Management 10.0.30 (November 2022)
@@ -599,7 +603,19 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
-      - name: Asset management from the mobile app
+      - name: The Asset management mobile app
+        items: 
+        - name: Asset Management mobile app overview
+          href: asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md
+        - name: Onboard the Asset Management mobile app
+          href: asset-management/asset-management-mobile-app/onboard-app.md
+        - name: Manage work orders using the Asset Management mobile app
+          href: asset-management/asset-management-mobile-app/work-orders.md
+        - name: File maintenance requests using the Asset Management mobile app
+          href: asset-management/asset-management-mobile-app/maintenance-requests.md
+        - name: Asset Management mobile app FAQs and known issues
+          href: asset-management/asset-management-mobile-app/asset-management-app-faq.md
+      - name: Asset management from the now-deprecated mobile app
         items: 
         - name: Set up the Asset management mobile workspace
           href: asset-management/set-up-asset-management-mobile.md
@@ -1759,6 +1775,8 @@
         items:
         - name: Planning Optimization release process and release history
           href: master-planning/planning-optimization/release-process.md
+        - name: Improve scheduling engine performance
+          href: master-planning/scheduling-engine-performance.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
         - name: Resolve the "Not enough capacity could be found" scheduling engine error
@@ -1943,8 +1961,6 @@
             href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
           - name: Improve master planning performance
             href: master-planning/master-planning-performance.md
-          - name: Improve scheduling engine performance
-            href: master-planning/scheduling-engine-performance.md
           - name: Set up master plans for the deprecated planning engine
             href: master-planning/deprecated-master-plans.md
           - name: Create an intercompany plan
@@ -1959,7 +1975,7 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
-    - name: Mobile app
+    - name: Mobile app (Deprecated)
       items:
       - name: Mobile app home page
         href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
@@ -2353,6 +2369,8 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
+        - name: Cross-company product sharing
+          href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
         - name: Product lifecycle state
@@ -3449,8 +3467,6 @@
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
-          - name: Enable license plate label printing
-            href: warehousing/tasks/license-plate-label-printing.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
           - name: Piece picking confirmation
@@ -3459,12 +3475,12 @@
             href: warehousing/pack-materials-packing-material-fees.md
           - name: Pack containers for shipment
             href: warehousing/packing-containers.md
-          - name: Print container labels
-            href: warehousing/print-container-labels.md
           - name: Packing work for packing outbound containers and processing shipments
             href: warehousing/packing-work.md
           - name: Packing containers with the Warehouse Management mobile app
             href: warehousing/warehouse-app-packing-containers.md
+          - name: Mobile device container packing policies
+            href: warehousing/warehouse-app-pack-containers-policies.md
           - name: Example scenario – Pack containers with the Warehouse Management mobile app
             href: warehousing/warehouse-app-pack-containers-scenario.md
           - name: Set up short picking item reallocation
@@ -3609,6 +3625,8 @@
             href: warehousing/whats-new-wma.md
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
+          - name: Mass deploy the Warehouse Management mobile app
+            href: warehousing/warehouse-app-intune.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
@@ -3657,88 +3675,102 @@
             href: warehousing/process-guide-framework.md
           - name: Assign step icons and titles
             href: warehousing/step-icons-titles.md
-      - name: Warehouse setup
+      - name: Warehouse configuration
         items:
-        - name: Warehouse configuration
+        - name: Warehouse configuration overview
+          href: warehousing/warehouse-configuration.md
+        - name: Set up a warehouse by using a warehouse configuration template
+          href: inventory/warehouse-template.md
+        - name: Warehouse groups
+          href: warehousing/warehouse-groups.md
+        - name: Control work by using work templates and location directives
+          href: warehousing/control-warehouse-location-directives.md
+        - name: Work with location directives
+          href: warehousing/create-location-directive.md
+        - name: Test location directives with acceptance tests
+          href: warehousing/location-directive-acceptance-tests.md
+        - name: Configure product filters for warehouse transactions
+          href: warehousing/filters-and-filter-codes.md
+        - name: Location stocking limits
+          href: warehousing/location-stocking-limits.md
+        - name: Wave generation and processing
           items:
-          - name: Warehouse configuration overview
-            href: warehousing/warehouse-configuration.md
-          - name: Set up a warehouse by using a warehouse configuration template
-            href: inventory/warehouse-template.md
-          - name: Control work by using work templates and location directives
-            href: warehousing/control-warehouse-location-directives.md
-          - name: Work with location directives
-            href: warehousing/create-location-directive.md
-          - name: Test location directives with acceptance tests
-            href: warehousing/location-directive-acceptance-tests.md
-          - name: Configure product filters for warehouse transactions
-            href: warehousing/filters-and-filter-codes.md
-          - name: Location stocking limits
-            href: warehousing/location-stocking-limits.md
-          - name: Wave generation and processing
-            items:
-            - name: Configure wave processing example
-              href: warehousing/tasks/configure-wave-processing.md
-            - name: Warehouse parameters for wave processing
-              href: warehousing/wave-warehouse-parameters.md
-            - name: Wave templates
-              href: warehousing/wave-templates.md
-            - name: Wave step codes
-              href: warehousing/wave-step-codes.md
-            - name: Wave template grouping
-              href: warehousing/wave-template-grouping.md
-            - name: Wave allocation
-              href: warehousing/wave-allocation-method.md
-            - name: Schedule work creation during wave
-              href: warehousing/configure-wave-schedule-work-creation.md
-            - name: Wave execution notifications
-              href: warehousing/wave-execution-notifications.md
-            - name: Wave label printing
-              href: warehousing/configure-wave-label-printing.md
-            - name: Schedule wave label printing during wave
-              href: warehousing/configure-task-based-wave-label-printing.md
-            - name: Containerization
-              href: warehousing/wave-containerization.md
-            - name: Container packing strategies
-              href: warehousing/container-packing-strategy-overview.md
-          - name: Auto-update shipments
-            href: warehousing/auto-update-shipment.md
-          - name: Create a location profile
-            href: warehousing/tasks/create-location-profile.md
-          - name: Configure locations in a WMS-enabled warehouse
-            href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-          - name: Warehouse location status
-            href: warehousing/warehouse-location-status.md
-          - name: Additional location zones
-            href: warehousing/additional-location-zones.md
-          - name: Schedule load utilization
-            href: warehousing/schedule-load-utilization.md
-          - name: Schedule workload capacity
-            href: warehousing/schedule-workload-capacity.md
-          - name: Set up dispositions codes
-            href: warehousing/tasks/set-up-dispositions-codes.md
-          - name: Unit of measure and stocking policies
-            href: warehousing/unit-measure-stocking-policies.md
-          - name: Warehouse Power BI content
-            href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-          - name: System grouping on an open work list
-            href: warehousing/system-group-on-open-work-list.md
+          - name: Configure wave processing example
+            href: warehousing/tasks/configure-wave-processing.md
+          - name: Warehouse parameters for wave processing
+            href: warehousing/wave-warehouse-parameters.md
+          - name: Wave templates
+            href: warehousing/wave-templates.md
+          - name: Wave step codes
+            href: warehousing/wave-step-codes.md
+          - name: Wave template grouping
+            href: warehousing/wave-template-grouping.md
+          - name: Wave allocation
+            href: warehousing/wave-allocation-method.md
+          - name: Schedule work creation during wave
+            href: warehousing/configure-wave-schedule-work-creation.md
+          - name: Wave execution notifications
+            href: warehousing/wave-execution-notifications.md
+          - name: Wave label printing
+            href: warehousing/configure-wave-label-printing.md
+          - name: Schedule wave label printing during wave
+            href: warehousing/configure-task-based-wave-label-printing.md
+          - name: Containerization
+            href: warehousing/wave-containerization.md
+          - name: Container packing strategies
+            href: warehousing/container-packing-strategy-overview.md
+        - name: Container and license plate labels
+          items:
+          - name: Container label layouts and printing
+            href: warehousing/print-container-labels.md
+          - name: License plate label layouts and printing
+            href: warehousing/print-license-plate-labels-using-label-layouts.md
+          - name: Custom label layouts and printing
+            href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
-          - name: GS1 bar codes and QR codes
-            href: warehousing/gs1-barcodes.md
-          - name: Set up warehouse for transfer orders
-            href: warehousing/transfer-orders-warehouse.md
-        - name: Upgrade and migration
-          items:
-          - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
-            href: warehousing/upgrade-migration-warehouse-management-processes.md
-      - name: Warehousing telemetry 
+          - name: Enable license plate label printing
+            href: warehousing/tasks/license-plate-label-printing.md
+        - name: Auto-update shipments
+          href: warehousing/auto-update-shipment.md
+        - name: Create a location profile
+          href: warehousing/tasks/create-location-profile.md
+        - name: Configure locations in a WMS-enabled warehouse
+          href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+        - name: Warehouse location status
+          href: warehousing/warehouse-location-status.md
+        - name: Additional location zones
+          href: warehousing/additional-location-zones.md
+        - name: Schedule load utilization
+          href: warehousing/schedule-load-utilization.md
+        - name: Schedule workload capacity
+          href: warehousing/schedule-workload-capacity.md
+        - name: Set up dispositions codes
+          href: warehousing/tasks/set-up-dispositions-codes.md
+        - name: Unit of measure and stocking policies
+          href: warehousing/unit-measure-stocking-policies.md
+        - name: Warehouse Power BI content
+          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+        - name: System grouping on an open work list
+          href: warehousing/system-group-on-open-work-list.md
+        - name: GS1 bar codes and QR codes
+          href: warehousing/gs1-barcodes.md
+        - name: Set up warehouse for transfer orders
+          href: warehousing/transfer-orders-warehouse.md
+      - name: Warehousing administration
         items:
-        - name: Enable warehousing telemetry with Application Insights
-          href: warehousing/application-insights-warehousing.md
-        - name: Monitor Warehouse Management usage and performance
-          href: warehousing/application-insights-wma.md
+        - name: Message processor messages for warehouse management processes
+          href: warehousing/warehouse-message-processor-messages.md
+        - name: Warehouse-specific inventory transactions
+          href: warehousing/warehouse-transactions.md
+        - name: Warehousing telemetry
+          items:
+          - name: Enable warehousing telemetry with Application Insights
+            href: warehousing/application-insights-warehousing.md
+          - name: Monitor Warehouse Management usage and performance
+            href: warehousing/application-insights-monitor-usage-performance.md
+        - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
+          href: warehousing/upgrade-migration-warehouse-management-processes.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
@@ -3747,6 +3779,8 @@
         href: transportation/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
+      - name: Create and process custom message queues and message types
+        href: supply-chain-dev/message-processor.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

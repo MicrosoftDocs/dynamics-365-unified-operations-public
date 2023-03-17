@@ -4,27 +4,16 @@
 title: Customer orders in point of sale (POS)
 description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 08/02/2021
+ms.date: 03/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: RetailFunctionalityProfile 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: ["260594", "intro-internal"]
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Release 10.0.14
-
 
 ---
 
@@ -82,6 +71,8 @@ Before you try to create customer orders in POS, you must configure the appropri
 - **Carryout mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines will be picked up or shipped, and other lines will be carried out by the customer immediately.
 - **Cancellation charge percentage** – If a charge should be applied when a customer order is canceled, specify the amount of that charge.
 - **Cancellation charge code** – Specify the Accounts receivable charge code that should be used when a cancellation charge is applied to canceled customer orders through POS. The charge code defines the financial posting logic for the cancellation charge.
+     > [!NOTE]
+     > When advanced auto charges features aren't enabled, it is recommended that you create a dedicated charge code for cancellation charges instead of reusing the shipping charge code, since the latter may result in unexpected behavior when the system selects the sales tax group for the charge. It is also recommended that you choose a cancellation charge code name and description that makes it clear to cashiers that the cancellation charge code is only to be used for cancellations.
 - **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users will be prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an Accounts receivable charge code that will be applied to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
 - **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omni-channel advanced auto charges](./omni-auto-charges.md).
 
@@ -122,11 +113,11 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
-3. Select **Pick up selected** or **Pick up all** to initiate the order pick up configuration.
+3. Select **Pick up selected** or **Pick up all** to initiate the order pickup configuration.
 4. Select the store location where the customer will pick up the selected products.
 5. Select a date when the item will be picked up.
 6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-7. If the full order total wasn't paid, select whether the customer will provide payment later (at pick up), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
+7. If the full order total wasn't paid, select whether the customer will provide payment later (at pickup), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
 
 ### Edit an existing customer order
 
@@ -182,14 +173,28 @@ After an order is created, the items will be picked up by the customer from a st
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created in POS in either synchronous mode or asynchronous mode. If you notice performance issues or user delays when you create customer orders in POS, consider turning on asynchronous order creation.
+Customer orders can be created in POS in either synchronous mode or asynchronous mode. Microsoft recommends that you use the asynchronous order creation mode, because it's much more performant than synchronous order creation mode and provides a better user experience.
 
 ### Enable customer orders to be created in asynchronous mode
 
-1. In Commerce headquarters, on the **Functionality profiles** page, select the functionality profile that corresponds to the store that you want to configure.
-2. On the **General** FastTab, set the **Create customer order in async mode** option to **Yes**.
+To enable customer orders to be created in asynchronous mode, follow these steps.
 
-When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they're pulled and created as retail transactions in Commerce headquarters from the Commerce Pull (P) jobs. The corresponding sales orders for the retail transactions are created when **Synchronize orders** is run either manually or through a batch process.
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**. 
+1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
+1. On the **General** FastTab, select one of the following configuration options:
+
+    - **Create customer order in async mode**
+    - **Create customer order with async fall back**
+
+> [!NOTE]
+> The **Create customer order with async fall back** option is available in Commerce version 10.0.33 and later.
+
+The **Create customer order in async mode** option always creates the order in a batch process. POS immediately completes the transaction by using the confirmation number for the order, but the order will be created in headquarters after a few minutes (after the relevant jobs have been run). The jobs that are required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. The confirmation number can be used to recall the order for fulfillment and editing scenarios.
+
+The **Create customer order with async fall back** option first tries to create the order by using the Retail Transaction Service (RTS). If (and only if) that attempt fails, the order will be created by using the same batch process that was just described. Most of the time, the order is created as quickly as it would be created through synchronous order creation. However, as for the **Create customer order in async mode** option, POS immediately completes the transaction by using the confirmation number for the order. It doesn't wait for the RTS call to be completed. 
+
+> [!NOTE]
+> Asynchronous orders can't be edited or canceled unless the orders are created in headquarters. Because the **Create customer order with async fall back** option first tries to create the order by using an RTS call, the order should usually be available for editing and cancellation within a few seconds. The capability to cancel asynchronous orders before they're synced in headquarters is currently planned for future releases.
 
 ## Additional resources
 

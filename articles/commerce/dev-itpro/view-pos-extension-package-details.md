@@ -2,7 +2,7 @@
 title: View POS extension package information
 description: This article provides information about the Extension packages section of the Settings view in the point of sale (POS).
 author: josaw1
-ms.date: 04/25/2019
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ This section describes what each package status means.
 [![Extension packages section in the POS Settings view.](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 > [!NOTE]
-> Cloud POS will not display the extension version in the Customization.settings file under the **About** section on the **POS settings** page, it will only show the Microsoft app package version. Extension package versions can only be viewed from the **Extension details** section.
+> Store Commerce for web will not display the extension version in the Customization.settings file under the **About** section on the **Settings** page, it will only show the Microsoft app package version. Extension package versions can only be viewed from the **Extension details** section.
 
 ## Extension package details
 

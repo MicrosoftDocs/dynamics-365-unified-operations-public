@@ -2,9 +2,9 @@
 # required metadata
 
 title: Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China 
-description: This article provides information about Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China.
+description: This article provides information about Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce that are operated by 21Vianet in China.
 author: kfend
-ms.date: 07/14/2022
+ms.date: 01/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,67 +31,27 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+Microsoft Dynamics 365 online services that are operated by 21Vianet are designed to comply with regulatory requirements in China. They are a physically separated instance of cloud services that's operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This operator is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., which is located in mainland China. This deployment option meets the demands of customers who prefer to use online services that are provided by a local company that stores their data inside China. These services are subject to Chinese laws.
 
+## Data residency
 
-Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
+Finance and operations apps that are operated by 21Vianet support data residency in mainland China. This deployment option serves customers in regulated industries and commercial organizations that do business with entities in mainland China that require local data residency. All required services and related data are deployed in the corresponding data centers of the geography. These services and data include Microsoft Dynamics Lifecycle Services, telemetry, databases, and environments. Customer data doesn't leave the geographic boundary.
 
-Microsoft strives to maintain functional parity between our commercially available service and finance and operations apps operated by 21Vianet in China. However, there are notable exceptions to this, which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
+## Compliance
 
-## Provisioning
+Customers in China can choose 21Vianet's sovereign cloud deployment offering, but they can also deploy to the public cloud offering that's managed by Microsoft. The Microsoft-managed public cloud offering is globally connected over the public internet and has data centers outside mainland China. One advantage of choosing this public cloud offering is that if the customer purchases Azure, Dynamics 365, and Microsoft 365, these products and services can coexist on the same Azure Active Directory (Azure AD) tenant.
 
-Customers in China have two options from which to select how they want to access Finance and Supply Chain Management apps.
+The final choice of a deployment option depends on the customer's assessment of how it should operate to meet regulatory requirements in mainland China. Customers who are wondering how to be compliant should ask their internal compliance team to review the regulatory requirements for the industry that they belong to and the mode of operation in mainland China. In this way, they can determine whether they must deploy a separate instance through 21Vianet or whether they can use a global cloud deployment option.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Supply Chain Management services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+## Licensing
 
-- Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Microsoft 365 and/or Dynamics 365 can co-exist on the tenant.
+Licenses for Dynamics 365 online services that are operated by 21Vianet can't be acquired directly from Microsoft, because Microsoft doesn't manage and deliver the services.
 
-For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](/power-platform/admin/create-environment).
+## Feature availability
 
-## Features not available
+Microsoft strives to maintain functional parity between our commercially available service and finance and operations apps that are operated by 21Vianet in mainland China. However, there are notable exceptions to functional parity. These exceptions are affected by the availability of dependent services or partner solutions, market priorities, or compliance regulations.
 
-Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](/dynamics365/release-plans/).
-
--   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](/azure/china/china-get-started-developer-guide).
-
--   [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
-
--   Certain **mobile apps** (e.g., [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
-
--   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
-
--  **SharePoint integration** isn't available, because the authentication mechanism that finance and operations apps use with SharePoint isn't supported in this configuration.
-
--  The **Exchange mail provider** isn't available; customers should use SMTP for their email needs instead.  
-
--   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
-
-    -   **APQC Business process modeler (BPM) Library** will be unavailable. However, base Business process modeler (BPM) functionality will be available for custom models in April 2019. Search functionality in the BPM will be unavailable in China.
-
-    -   **[Electronic reporting (ER) overview](../analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json) assets** will not be available automatically, but can be manually uploaded from the LCS global asset library.
-
-    -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
-
-    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Support for Dynamics 365 finance and operations apps operated by 21Vianet in China](../lifecycle-services/21vianet-support.md).
-    
-    -   [Extensibility requests](../extensibility/extensibility-requests.md) will be unavailable.
-    
-    -   Hotfix requests will be unavailable.
-
-    -   [Dynamics 365 Translation Service overview](../lifecycle-services/translation-service-overview.md) will not be available.
-
-    -   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
-
-    -   [Integrate data into Microsoft Dataverse](/power-platform/admin/data-integrator) will be unavailable.
-    
-  > [!NOTE]
-  > The Lifecycle Services URL for implementations operated by 21Vianet in China is lcs.dynamics.cn.
-
--   The following features will not be available due to certain **current Azure Active Directory limitations** in China:
-
-    -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to business-to-business (B2B) being unavailable in Azure Active Directory in China. For more information, see [What is guest user access in Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b).
-
--   [Conditional access](/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 1 SKU. 
--   The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China.
+Some features won't be available for Dynamics 365 online services that are operated by 21Vianet in China. For detailed information about feature availability, see the "China (21-V)" column in [Microsoft Business Application Feature Availability - APAC](https://aka.ms/bapfunctionalparityapac).
 
 ## Additional resources
 
@@ -107,6 +67,4 @@ Due to certain technical dependencies, the following features listed will not be
 - [Azure China 21Vianet](/azure/china/china-welcome)
 - [Business applications availability in China – operated by 21Vianet in China](/power-platform/admin/business-applications-availability-china)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

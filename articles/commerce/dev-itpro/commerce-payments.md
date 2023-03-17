@@ -1,20 +1,19 @@
 ---
 # required metadata
-title: Omni-channel Commerce order payments
+title: Omnichannel Commerce order payments
 description: This article describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
 author: ravimeda
-ms.date: 02/04/2022
+ms.date: 01/30/2023
 ms.topic: article
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: raeda
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
+
 ---
 
-# Omni-channel Commerce order payments
+# Omnichannel Commerce order payments
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,6 +68,9 @@ The following features are required for omni-channel Commerce order payments to 
 | Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
 
+> [!NOTE]
+> If you're planning to accept multiple payment methods for online orders in your online channel (for example, loyalty points and credit card payments), the **Omni-channel Commerce order payments** feature (in headquarters at **System administration \> Workspace \> Feature management**), and the call center **Enable order completion** setting (on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**) must both be enabled. If the **Omni-channel Commerce order payments** feature is enabled, the **Enable order completion** setting is enabled by default and hidden.
+
 ### Configure prerequisites
 
 #### Map payment methods to operations
@@ -91,9 +93,6 @@ Users who will edit Commerce payments in Commerce headquarters must be set up as
 
 The order completion function must be turned on for call centers. Order completion enforces business logic that makes sure that orders can be paid during fulfillment. For more information about order completion, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion).
 
-#### Remove the Pay later option from the POS
-
-When customer orders are created at the POS, the store associate can either collect a card payment for fulfillment or select **Pay later** to skip collection of card details. When the omni-channel Commerce order payments feature is turned on, the **Pay later** option should be removed from the POS. To remove it, search for **Functionality profiles** to open the **Functionality profiles** page. Select the relevant functionality provide and click **Edit**. On the **General** FastTab for the functionality profile, change the value of the **Require payment for fulfillment** field to **Card required**. This change must be synced to the channel database before it takes effect at the POS.
 
 ## Turn on the omni-channel Commerce order payments feature
 

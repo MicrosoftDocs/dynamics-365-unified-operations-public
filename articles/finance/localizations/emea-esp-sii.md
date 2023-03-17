@@ -637,10 +637,9 @@ This set up drives the fulfilling of the 'CausaExencionType' tag on the issued a
 
 To distinguish the acquisition of goods between investments and non-investments from received invoices, complete the following steps.
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**.
-2. Select an **Item sales tax group**.
-3. In the **Reporting type** field, select **Investment**.
-4. Select **Save**.
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes** and select a sales tax code.
+2. In **Report Setup**, **SII REPORT**, set **Classify as investment** to **Yes** to indicate that the selected sales tax code be reported as an investment.
+3. Select **Save**.
 
 This set up drives the fulfilling of the Bien 'Inversion' tag in the received invoices files.
 

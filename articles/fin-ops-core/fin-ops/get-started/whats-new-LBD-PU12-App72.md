@@ -28,7 +28,7 @@ For more resources about on-premises deployments, see [On-premises deployment ho
 
 ## Setup and deployment
 
-Improvements have been made to the setup and deployment process. These improvements significantly reduce the time that is required for deployment. Increased automation and multiple prerequisite validations have also been added to improve reliability. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
+Improvements have been made to the setup and deployment process. These improvements significantly reduce the time that is required for deployment. Increased automation and multiple prerequisite validations have also been added to improve reliability. For more information, see [Set up and deploy on-premises environments](../../dev-itpro/deployment/setup-deploy-on-premises-latest.md).
 
 ## Servicing
 

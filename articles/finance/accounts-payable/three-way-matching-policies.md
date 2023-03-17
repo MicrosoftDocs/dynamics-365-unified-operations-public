@@ -62,7 +62,7 @@ The invoice matching policies in this example help people in the following roles
 ### Scenario
 
 1.  Sammy, a worker in the receiving department at Fabrikam, receives the total quantity of machines that are shipped from Contoso. Sammy enters a quantity of 5 on a product receipt. Because the purchase order has been fully received, the status of the purchase order changes to Received.
-2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso. She verifies the following information:
+2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso, and verifies the following information:
     -   For items that require three-way matching, the quantity on the invoice line matches the quantity that was received. The received quantity is indicated on the product receipt that is matched to the invoice.
     -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics 365 Finance. This includes the following types of price matching:
         -   Net unit price matching – The net unit price on the invoice line matches the net unit price on the purchase order line, within the tolerance percentage. In this example, the net unit price tolerance is +8%.
@@ -86,13 +86,13 @@ The invoice line includes the following information.
 Because this line passes the invoice matching process, the invoice can be posted.
 
 ## Example: Three-way matching for item and vendor combinations
-Summary: Ken is the controller at the corporate headquarters of a legal entity named Fabrikam. Ken decides that all invoices that are based on purchase orders should be matched with purchase order lines (two-way matching). Cassie is the bookkeeper at the Malaysia division of Fabrikam. She specifies that selected items that are ordered from certain vendors in Malaysia should be matched with both the purchase order lines and product receipt lines (three-way matching). She can also override the matching policy to a higher level of matching for specific purchase orders. 
+Summary: Ken is the controller at the corporate headquarters of a legal entity named Fabrikam. Ken decides that all invoices that are based on purchase orders should be matched with purchase order lines (two-way matching). Cassie is the bookkeeper at the Malaysia division of Fabrikam. Cassie specifies that selected items that are ordered from certain vendors in Malaysia should be matched with both the purchase order lines and product receipt lines (three-way matching). Cassie can also override the matching policy to a higher level of matching for specific purchase orders. 
 
 The volume and amounts are small, and there have been problems with delivery from some vendors in Malaysia. For these reasons, Cassie sets the level of control for certain item and vendor combinations that are procured in Malaysia to three-way matching. 
 
 The invoice matching policies in this example help people in the following roles meet these goals:
 -   Ken is the controller for the Fabrikam enterprise. Ken can help the people in the organization to identify and correct problems with ordering, receiving, and paying for items (goods and services) from vendors.
--   Cassie is the bookkeeper for the Malaysia division of Fabrikam. She can enforce corporate policy and make sure that invoices are paid only after they are matched with purchase order lines and product receipts that represent the receipt of goods and services. She can also increase the level of control to three-way matching for specific items to control operational costs.
+-   Cassie is the bookkeeper for the Malaysia division of Fabrikam. Cassie can enforce corporate policy and make sure that invoices are paid only after they are matched with purchase order lines and product receipts that represent the receipt of goods and services. Cassie can also increase the level of control to three-way matching for specific items to control operational costs.
 
 ### Prerequisites
 
@@ -100,7 +100,7 @@ The invoice matching policies in this example help people in the following roles
 -   Ken sets the **Match price totals** field for the legal entity to **Percentage**, and enters **10%** as the **Tolerance percentage**.
 -   Ken sets the unit price tolerance for all items to 2%.
 -   Cassie sets the **Matching policy** at the item and vendor combination level for item PH2500 – Computer and vendor Contoso to **Three-way matching**.
--   Alicia, a purchase order clerk at the Malaysia division of Fabrikam, issues purchase orders to Contoso to supply three items, as shown in the following table. When she creates the purchase order, she overrides the **Matching policy** for the wireless mouse to be three-way matching instead of two-way matching.
+-   Alicia, a purchase order clerk at the Malaysia division of Fabrikam, issues purchase orders to Contoso to supply three items, as shown in the following table. When Alicia creates the purchase order, the **Matching policy** is overridden for the wireless mouse to be three-way matching instead of two-way matching.
 
     | Item number           | Quantity | Unit price | Net amount | Matching policy (default entry) | Matching policy (on the purchase order line) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -111,7 +111,7 @@ The invoice matching policies in this example help people in the following roles
 ### Scenario
 
 1.  The items arrive. Sammy, a worker in the receiving department of the Malaysia division of Fabrikam, is interrupted and does not post the product receipt immediately.
-2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso. She verifies the following information:
+2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso, and verifies the following information:
     -   For items that require three-way matching, the quantity on the invoice line matches the quantity that was received. The received quantity is indicated on the product receipt that is matched to the invoice.
     -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in the application. This includes the following types of price matching:
         -   Net unit price matching – The net unit price on the invoice line matches the net unit price on the purchase order line, within the tolerance percentage. In this example, the net unit price tolerance is +2%.

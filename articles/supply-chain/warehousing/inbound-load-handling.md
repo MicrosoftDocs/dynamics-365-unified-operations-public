@@ -216,7 +216,8 @@ The following table summarizes the effects of the **Allow multiple product recei
 After the **Load status** field is set to _Received_, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this article.)
 
 - The version of Supply Chain Management is older than version 10.0.11.
-- The _Over receipt of load quantities_ feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to _Allow_.
+- The _Over receipt of load quantities_ feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to _Allow_. (As of Supply Chain Management version 10.0.32, the _Over receipt of load quantities_ feature is on by default.)
+
 
 To product receipt–post additional registered load quantities against a load that has a status of _Received_, the user must run the posting action from the associated purchase order.
 
@@ -390,8 +391,8 @@ If the purchasing team doesn't expect the vendor to deliver the remaining order 
 
 - Register the quantity against the same load. In this case, the **Load status** field will be reset to _Shipped_, and the **Work created quantity** value will be updated to _10_. This choice is available only in the following situations:
 
-    - The _Over receipt of load quantities_ feature isn't available or isn't enabled.
-    - The _Over receipt of load quantities_ feature is available and enabled, and the **Load line quantity over receipt** field is set to _Allow_.
+    - The _Over receipt of load quantities_ feature isn't available or isn't enabled. (As of Supply Chain Management version 10.0.32, the _Over receipt of load quantities_ feature is on by default.)
+    - The _Over receipt of load quantities_ feature is available and enabled, and the **Load line quantity over receipt** field is set to _Allow_. (As of Supply Chain Management version 10.0.32, the _Over receipt of load quantities_ feature is on by default.)
 
 - Add the quantity to a new or existing load, and process it in the usual way.
 - Register and/or receive the quantity in a way that doesn't involve load handling.

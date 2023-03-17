@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 01/27/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -29,7 +29,7 @@ Planning Optimization is currently available in the following Azure geographies:
 
 If you can run master planning by using your current license, you don't have to buy an additional license to start to use Planning Optimization.
 
-## Install and enable Planning Optimization
+## <a name="install-enable-po"></a>Install and enable Planning Optimization
 
 To use Planning Optimization, you must make sure your system has all of the prerequisites in place and then enable its license key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
 
@@ -40,6 +40,15 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 - You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
 
 - Your system must be set up for Power Platform integration. For more information, see [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+
+- You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
+    1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    1. Open the environment where want to install the add-in.
+    1. Go to **Settings \> Users** and select your user account from the list to see its details.
+    1. From your user details page, select the **Client Access License (CAL) information** link.
+    1. On the **Client Access License (CAL) information** page, make sure that **Access Mode** is set to *Read-Write*.
+  
+    For more information about licenses and access modes for the Power Platform, see [Create a Power Platform admin account](/power-platform/admin/global-service-administrators-can-administer-without-license#create-a-power-platform-admin-account).
 
 ### Enable the Planning Optimization license
 

@@ -4,7 +4,7 @@
 title: Commerce offline implementation troubleshooting
 description: This article provides an overview of troubleshooting for offline implementations of Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 01/12/2023
+ms.date: 03/03/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -18,6 +18,7 @@ ms.search.validFrom: 2022-12-29
 # Commerce offline implementation troubleshooting
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This article provides an overview of troubleshooting for offline implementations of Microsoft Dynamics 365 Commerce. It focuses on troubleshooting details that are related to the use of offline functionality. The article is intended for customers who implement offline functionality that's related to the Dynamics 365 Commerce Modern POS or Store Commerce application.
 
@@ -29,14 +30,14 @@ For more information about Commerce offline functionality, see [Additional resou
 
 ## Troubleshooting
 
-If the following table doesn't list an error that you're receiving, create a support request so that Microsoft Support can help you fix the issue. This section will be updated with additional errors over time. Therefore, you should review this article before you implement or update Modern POS or Store Commerce registers that use offline databases.
+If the following table doesn't list an error that you're receiving, create a support request so that Microsoft Support can help you fix the issue. This section will be updated with additional errors over time. Therefore, you should review this article before you implement or update Store Commerce app registers that use offline databases.
 
 Note that all troubleshooting errors begin with **Microsoft\_Dynamics\_**. However, in the following table, this prepended string is omitted from the error codes to shorten them.
 
 | Error | Description |
 |-------|-------------|
 | Commerce\_Runtime_AuthenticationFailed<br>Commerce_Runtime_AuthorizationFailed | A sign-in-related issue has occurred. This issue might occur because data isn't found or correctly configured in the offline database. |
-| Commerce\_Runtime\_AuthenticationMethodDisabled<br>Commerce\_Runtime\_ChannelConfigurationNotFound<br>Commerce\_Runtime\_ChannelNotPublished<br>Commerce\_Runtime\_ChannelRecordNotFound<br>Commerce\_Runtime\_EmployeePermissionContextNotFound<br>Commerce\_Runtime\_InvalidChannel<br>Commerce\_Runtime\_InvalidChannelConfiguration<br>Commerce\_Runtime\_StaffIdContextMissing | Unable to switch to offline mode. The channel information is either unavailable or incorrectly configured. To fix this issue, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job). Also, contact your system administrator. |
+| Commerce\_Runtime\_AuthenticationMethodDisabled<br>Commerce\_Runtime\_ChannelConfigurationNotFound<br>Commerce\_Runtime\_ChannelNotPublished<br>Commerce\_Runtime\_ChannelRecordNotFound<br>Commerce\_Runtime\_EmployeePermissionContextNotFound<br>Commerce\_Runtime\_InvalidChannel<br>Commerce\_Runtime\_InvalidChannelConfiguration<br>Commerce\_Runtime\_StaffIdContextMissing<br>Commerce\_Runtime\_LocalDeviceAuthenticationFailed | Unable to switch to offline mode. The channel information is either unavailable or incorrectly configured. To fix this issue, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job). Also, contact your system administrator. |
 | Commerce\_Runtime\_CredentialsNotConfigured<br>Commerce\_Runtime\_CredentialsNotFound<br>Commerce\_Runtime\_InvalidAuthenticationCredentials<br>Commerce\_Runtime\_LocalLogonFailed<br>Commerce\_Runtime\_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either unavailable or incorrectly configured. To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
 | Commerce\_Runtime\_CriticalStorageError | To check the status of offline database permissions, size, and disk space, you can use the offline dashboard. |
 | Commerce\_Runtime\_ElevatedUserSameAsLoggedOnUser | This error occurs when the same user tries to perform a manager override. A different user must be used. |
@@ -62,8 +63,8 @@ Note that all troubleshooting errors begin with **Microsoft\_Dynamics\_**. Howev
 
 [Device management implementation guidance](../implementation-considerations-devices.md)
 
-[Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
-
 [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
+<!--[Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md)-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

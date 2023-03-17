@@ -65,7 +65,7 @@ The job card device supports three scenarios for reporting on batch items. These
 To enable your job card devices to accept a batch number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
 
 - *Improved user experience for the Report progress dialog in the Job Card Device*
-- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is on by default.)
+- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ### Configure products that require batch number reporting
 
@@ -238,7 +238,7 @@ To control whether workers should reuse an existing license plate or generate a 
 ![Configure job card for devices page.](media/config-job-card-raf.png "Configure job card for devices page")
 
 > [!NOTE]
-> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Enable license plate label printing](../warehousing/tasks/license-plate-label-printing.md).
+> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

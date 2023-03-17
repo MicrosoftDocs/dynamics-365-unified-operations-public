@@ -2,7 +2,7 @@
 title: Install the Inventory Visibility Add-in
 description: This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
-ms.date: 11/04/2022
+ms.date: 03/03/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -31,8 +31,38 @@ Before you install the Inventory Visibility, you must complete the following tas
 - Obtain a Lifecycle Services implementation project where at least one environment is deployed.
 - Make sure that the prerequisites for setting up add-ins have been completed. For information about these prerequisites, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Inventory Visibility doesn't require dual-write linking.
 
-> [!NOTE]
-> The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP), and Brazil (SBR, SCUS).
+The following table lists the countries/regions where Inventory Visibility is currently supported.
+
+| Azure region | Region short name |
+|---|---|
+| Asia East | eas |
+| Asia Southeast | seas |
+| Australia East | eau |
+| Australia Southeast | seau |
+| Brazil South | sbr |
+| Canada Central | cca |
+| Canada East | eca |
+| China East 2 | cne2 |
+| China North 2 | cnn2 |
+| Europe North | neu |
+| Europe West | weu |
+| France Central | cfr |
+| France South | sfr |
+| India Central | cin |
+| India South | sin |
+| Japan East | ejp |
+| Japan West | wjp |
+| Norway East | eno |
+| Norway West | wno |
+| South Africa West | wza |
+| South Africa North | nza |
+| Switzerland North | nch |
+| Switzerland West | wch |
+| UAE North | nae |
+| UK South | suk |
+| UK West | wuk |
+| US East | eus |
+| US West | wus |
 
 If you have any questions about these prerequisites, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
@@ -85,7 +115,7 @@ After you register an application and add a client secret to Azure AD, follow th
 >     1. Select **Install App**.
 >     1. Select **Inventory Visibility**
 >
-> 1. After the installation is completed, go to back to the Lifecycle Services page and try again to reinstall the **Inventory Visibility** add-in.
+> 1. After the installation is completed, go back to the Lifecycle Services page and try again to reinstall the **Inventory Visibility** add-in.
 
 ## <a name="setup-dynamics-scm"></a>Set up Inventory Visibility in Supply Chain Management
 
@@ -109,22 +139,17 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
 Once you've installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
 
-1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following features:
-    - *Inventory Visibility Integration* – Required.
-    - *Inventory Visibility integration with reservation offset* – Recommended but optional. Requires version 10.0.22 or later. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
-
+1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
 1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
     - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
     - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you have received advice from Microsoft Support or are otherwise certain that you need to change it.
 
-1. If you enabled the optional *Inventory Visibility integration with reservation offset* feature, open the **Reservation offset** tab and make the following settings:
-    - **Enable reservation offset** – Set to *Yes* to enable this functionality.
-    - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made on Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following options:
-        - *On order* – For the *On transaction* status, an order will send an offset request when it's created. The offset quantity will be the quantity of the created order.
-        - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs. The offset quantity will be the quantity where the inventory transaction status changed from *On order* to *Reserved ordered* (or later status) on the corresponding order line.
-
 1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use one or both of these features. If you do, set them up. (You can also set them up later.)
+
+    - **Soft reservations and offsets** – Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. For information about how to enable and set up this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+    - **Support for warehouse management processes (WMS) items** – This feature lets you use WMS items with Inventory Visibility. For information about how to enable and set up this feature, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
@@ -143,7 +168,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
     1. Dynamics 365 Inventory Visibility – Plugins
     1. Dynamics 365 Inventory Visibility – Application
     1. Dynamics 365 Inventory Visibility – Controls
-    1. Dynamics 365 Inventory Visibility – Base 
+    1. Dynamics 365 Inventory Visibility – Base
 
     After you delete these solutions, the data that is stored in tables will also be deleted.
 

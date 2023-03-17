@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Lifecycle Services (LCS) for finance and operations apps customers
-description: This article describes Lifecycle Services (LCS) for finance and operations apps customers.
+title: Lifecycle Services for finance and operations apps customers
+description: This article describes Microsoft Dynamics 365 Lifecycle Services for finance and operations apps customers.
 author: angelmarshall
-ms.date: 10/23/2017
+ms.date: 02/08/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -27,16 +27,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Lifecycle Services (LCS) for finance and operations apps customers
+# Lifecycle Services for finance and operations apps customers
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This article is intended for customers who have signed up for the current versions of finance and operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
+This article is intended for customers who have signed up for the current versions of finance and operations apps. Partners who are working with customers to help them move through the lifecycle of their Microsoft Dynamics 365 Lifecycle Services project will also find this information useful. 
 
-## LCS workspace for the current versions of the finance and operations apps
+## Lifecycle Services workspace for the current versions of the finance and operations apps
 
 When you sign up for the current versions of finance and operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
 
@@ -60,9 +60,14 @@ When you've finished entering milestones, the **Publish plan and milestone** tas
 
 [![Set up milestones dialog box.](./media/5.jpg)](./media/5.jpg) 
 
-When you've completed all the required tasks in a phase, you can click **Complete phase** to mark the phase as completed. After you mark a phase as completed, next steps become available in Microsoft Dynamics Lifecycle Services (LCS). 
+When you've completed all the required tasks in a phase, you can click **Complete phase** to mark the phase as completed. After you mark a phase as completed, next steps become available in Lifecycle Services. 
 
 [![8.](./media/8.jpg)](./media/7.jpg)
+
+### Reopen a completed milestone
+If you need to make any changes to your completed milestone tasks or dates, select the **Reopen phase** button on a prior milestone. You can then make edits and complete it again.
+
+[![Screenshot of the Phase history and the Reopen phase button.](./media/lcs-reopenphase.png)](./media/lcs-reopenphase.png)
 
 ### Methodology description and history
 

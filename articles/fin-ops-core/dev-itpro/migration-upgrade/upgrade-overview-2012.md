@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
@@ -36,7 +36,7 @@ Finance and operations apps provide an upgrade path that customers who currently
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
 
 > [!IMPORTANT]
-> Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) cannot currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren’t sure whether your system can be upgraded, run the Upgrade analyzer tool. 
+> Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) can't currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren’t sure whether your system can be upgraded, run the Upgrade analyzer tool. 
 
 > Start your cloud migration journey with a no-charge, no-obligation migration assessment though the [Dynamics 365 Migration Program](https://dynamics.microsoft.com/migration-program/).
 
@@ -93,14 +93,14 @@ The output of this step represents the workstream in the upgrade project plan fo
 For more information, see [Upgrade from AX 2012 - Estimate effort by using the Code upgrade service](analyze-code-upgrade.md).
 
 ### Deploy a demo environment
-Demo environments are default environments that contain demonstration data (not your own data) and standard code (no customizations). We recommend that you deploy a demo environment to evaluate new features, and to perform a basic fit gap analysis of standard processes that are used in AX 2012 but that might have changed in finance and operations. You can either deploy these demo environments in Azure or downloaded them as a virtual machine (VM) that you run on your own hardware. If you deploy them in Azure, you must provide your Azure subscription, because you’re still using a public preview project and haven't yet purchased a subscription.
+Demo environments are default environments that contain demonstration data (not your own data) and standard code (no customizations). We recommend you deploy a demo environment to evaluate new features, and to perform a basic fit gap analysis of standard processes that are used in AX 2012 but that might have changed in finance and operations. You can either deploy these demo environments in Azure or downloaded them as a virtual machine (VM) you run on your own hardware. If you deploy them in Azure, you must provide your Azure subscription, because you’re still using a public preview project and haven't yet purchased a subscription.
 
 > [!IMPORTANT]
-> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> It is recommended that before you run the upgrade, that you apply the latest **Quality update** for the Dynamics 365 version you are using.
 
 The output of this step represents the workstream in the upgrade project plan for your functional users or business users.
 
-For more information, see [Upgrade from AX 2012 - Deploy a demo environment for analysis](analysis-sandbox.md)
+For more information, see [Upgrade from AX 2012 - Deploy a demo environment for analysis](analysis-sandbox.md).
 
 ### Create a project plan
 A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing (mock cutover), the functional test pass iterations, and details about the various resource assignments for those tasks.
@@ -137,11 +137,22 @@ From this point onward, code changes in AX 2012 should be frozen. Only emergency
 ### Develop new code
 Complete the tasks from the fit gap analysis that was performed during the “Deploy a demo environment” step of the Analyze phase. These tasks will probably be a mixture of functional tasks that define the configuration and development tasks for customizations that are related to new features that are being taken up.
 
+### Data Compression
+For larger databases, we recommend compressing the largest tables. Tables in Dynamics 365 Finance are typically compressed with PAGE or ROW compression. Compressing beforehand can help with the upgrade process and reduces the need for the table to be compressed as part of an automated backend process once upgraded. For more information, see [Compress tables in Microsoft Dynamics AX 2012 environments](compress-tables-ax-2012.md).
+
+### Data Cleanup
+Over time, the Dynamics AX 2012 database can grow to a large size. Before the upgrade, you can reduce the size of the database by purging or archiving data. This will help reduce the time that is required to complete the data upgrade. For more information, see [Clean up source data for upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations](clean-up-source-data-upgrade.md).
+
+### Document Attachments
+In Dynamics AX 2012, attachments are stored in several locations, such as a file share, a database, or a local SharePoint server. In Dynamics 365 finance and operations, attachments are mostly stored in a private Azure Blob Storage location that is assigned to the environment. Alternatively, they are linked to a SharePoint online site that is under the customer's tenant.
+
+Attachments will be available in Dynamics 365 finance and operations after an upgrade from Dynamics AX 2012 only if they are migrated to the Dynamics AX 2012 database before the upgrade is done. The pre-upgrade step to move these into the database requires testing and planning, as it can take time to migrate based on the volume of the attachments. A post-upgrade step then migrates them to the Blob Storage location. For more information, see [Migrate document attachments from Dynamics AX 2012](migrate-doc-attachments-ax-2012.md).
+
 ### Data upgrade (development environment)
 After your code upgrade tasks are completed, you can upgrade your database for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
 > [!IMPORTANT]
-> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 finance and operations version you are using.
 
 The following illustration shows the process. Just back up the AX 2012 database, upload it to Azure, restore it to the finance and operations environment, and then run the data upgrade.
 
@@ -160,7 +171,10 @@ For details, see [Upgrade from AX 2012 - Data upgrade in development environment
 When data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment. For more information about sandbox deployment, see [Self-service deployment overview](../deployment/infrastructure-stack.md). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
 > [!IMPORTANT]
-> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> Ensure that you have completed a successful upgrade in the development environment with the same application version and customizations, before you attempt to run the upgrade in sandbox. 
+
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 finance and operations version you are using.
 
 The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that the **AX 2012 Database Upgrade Toolkit for Dynamics 365** is used instead of a traditional SQL backup. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) as well as to run the data upgrade. In this case, your source is AX 2012 database and target is the finance and operations sandbox environment.
 
@@ -196,7 +210,7 @@ Depending on code quality, issue remediation and retesting might require several
 For details, see [Upgrade from AX 2012 - Functional test passes](upgrade-functional-validation.md).
 
 ### Pre-go-live checklist
-The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (that is, under \<module\>\Setup). This restriction on configuration changes is merely procedural. The Microsoft Dynamics AX system administrators just agree to put changes of this type on hold at this point.
+The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (under \<module\>\Setup). This restriction on configuration changes is merely procedural. The Microsoft Dynamics AX system administrators just agree to put changes of this type on hold at this point.
 
 We recommend that you also freeze code changes in the finance and operations code base. No further changes should be allowed unless they have been evaluated and have been shown not to block go-live.  
 
