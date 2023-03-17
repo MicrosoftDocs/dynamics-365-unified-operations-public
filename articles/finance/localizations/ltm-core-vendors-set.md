@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Vendor sets for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can define which document classes are allowed in transactions with vendors. You can also define the predetermined document classes for transactions with specific vendors.
 
