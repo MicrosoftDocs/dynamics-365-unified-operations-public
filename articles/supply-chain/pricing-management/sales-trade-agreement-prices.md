@@ -4,7 +4,7 @@ description:
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ms.topic: overview
 ms.date: 03/24/2023
 audience: Application User
@@ -20,7 +20,7 @@ ms.custom: bap-template
 
 *Sales trade agreement prices* are negotiated prices for specific products that apply for specific customers. For sales where a sales trade agreement applies, this price will take priority over the item base price.
 
-Pricing management leverages the standard Supply Chain Management *Trade agreement price - sales price* side and enhanced with the price attributes. <!-- KFM: This sentence is unclear. Please revise. -->
+Pricing management leverages the standard Supply Chain Management *Trade agreement price - sales price* side and enhanced with the price attributes. <!-- KFM: This sentence is unclear. What do we mean by "side"? Please revise. -->
 
 > [!NOTE]
 > Pricing management respects [Supply Chain Management sales agreements](../sales-marketing/sales-agreements.md), which are different from the *sales trade agreement prices* described in this article <!-- KFM: I think this is what we mean here. Please confirm. -->. For order lines where a *sales agreement* applies, Pricing management will use that price. If no sales agreement applies, then Pricing management will check whether an applicable *sales trade agreement price* exists. The discounts included in sales trade agreements (line discounts, multiple discounts, and total discounts) fall outside the purview of Pricing management<!-- KFM: I don't understand the point we are making here. Please revise. -->. Pricing management provides a new approach to defining discount rules.
@@ -45,97 +45,123 @@ Several configuration settings affect the way sales trade agreements work in Pri
         - If no sales trade agreement price applies, then use the qualifying rules posted to the **Trade agreement journals**.
     - *No* – <!-- KFM: Description needed -->
 1. Open the **General** tab.
-1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching price rule records <!-- KFM: Matching to what? Sales orders? -->.
-1. Go to **Pricing management \> Setup \> Trade agreement prices \> Trade agreement journal names**. Select the **Enable price attribute** check box <!-- Which row to we mean? The Word file has a screenshot showing row that I don't see here ("TAM Price | Sales trade agreement pri...") --> to allow you to create sales trade agreement journals with the price attributes.
-1. Go to **Pricing management \> Setup \> Price component code**. Make sure that the trade agreement price component code has been created here (you are allowed to create only one price component code). <!-- KFM: What do we do if it isn't here (it isn't for me)? What does this setting mean? -->
-1. Make sure your pricing structure(s) include a price component code with a **Price component** of *Sales trade agreement*. For more information about how to set up price structures, see [Price structure overview](price-tree-overview.md). <!-- KFM: Does this step really fit here? Seems like a different kind of configuration. -->
+1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching price rule records <!-- KFM: Matching to what? Sales orders? Which rules? -->.
+1. Go to **Pricing management \> Setup \> Trade agreement prices \> Trade agreement journal names**. Select the **Enable price attribute** check box <!-- Which row do we mean? Are we supposed to be creating a new name here? Why do I want to select this checkbox, and what if I don't? Maybe this should be in another section. --> to allow you to create sales trade agreement journals with the price attributes.
+
+## Set up your price component codes and pricing structures
+
+To use sales trade agreements, you must have the following configurations available in your system:
+
+- You must have exactly one price component code where **Price component** is set to *Sales trade agreement*. This will allow you to include sales trade agreements as part of your price structures. For more information, see [Price component codes](price-component-code.md).
+- Each price structure where you want to consider sales trade agreement prices must include the *Sales trade agreement* price component code just mentioned. For more information, see [Price structure overview](price-tree-overview.md).
 
 ## Create a new sales trade agreement journal
+
+<!-- KFM: Intro should tell us what a sales trade agreement journal is, what it is for, why we are doing this, and when we should do this. Are we actually creating the sales trade agreement rule here? -->
 
 Follow these steps to create a new sales trade agreement journal:
 
 1. Go to **Pricing management \> During-sales pricing \> Sales trade agreement price \> Trade agreement journals**.
 1. On the Action Pane, select **New**.
-1. In the **Name** field, select the drop-down button to open the lookup. Pricing management only allows you to create the journal with Default relation as **Price (sales)**. Selected the journal names with 'Enable price attributes' as Yes.
-1. On **Action Pane**, select **Lines**.
-1. Select **New** to create a new line.
-1. The **Edit price attribute** slider displays for you to enter the attribute value as rule condition.
-1. In the **Price attribute group combination** field, select from the price attribute combinations that you have associated with the Price component code of the Sales trade agreement price.
-1. In the **Header price attribute group**, select the value condition of the price attributes. If you set 'Enable multiple selections' as Yes, you are allowed to select multiple values for the price attributes.
-1. Select **Preview matching results** under the Heade price attribute group section, it will display a preview of the current applicable customers. You can select customers and select **Exclude.** The rule will not apply to the excluded customers.
-1. In the **Line price attribute group**, select the value condition of the price attributes. If you set 'Enable multiple selections' as Yes, you are allowed to select multiple values for the price attributes.
-1. Select **Preview matching results** under the Line price attribute group section, it will display a preview of the current applicable products. You can select customers and select **Exclude.** The rule will not apply to the excluded products.
-1. Select **OK** and the line condition will be populated.
-1. In the line, you can further define the **inventory dimensions** (Product\\Storage\\Tracking) to complement the rule condition for the item line.
-1. In the **From** field, enter a minimum quantity.
-    - If the customer has to order a minimum quantity before they can qualify for the new price, then you need to specify that quantity here.
-    - Enter a value in the **To** field to specify the maximum quantity above which the agreement's price will not be valid. If you offer prices based on multiple quantity breaks, then specify each quantity bracket as a pair of minimum and maximum quantity in the **From** and **To** fields respectively.
+1. In the **Name** field, select a trade agreement journal name. The name you choose must be configured on the **Trade agreement journal names** page with  **Enable price attributes** set to *Yes* and Relation set to *Price (sales)*.
+1. With your new row still selected, select **Lines** on the Action Pane.
+1. The **Journal lines, trade agreement** page opens On the Action Pane, select **New** to create a new line. <!-- KFM: We should explain what these lines mean and why we are adding them. -->
+1. The **Edit price attribute** dialog opens, where you can enter the attribute value as rule condition. <!-- KFM: The second part of this sentence isn't clear. Please revise. --> 
+1. Expand the **General** FastTab and make the following settings:
+    - **Price attribute group combination** – Select one of the price attribute combinations that is associated with your *Sales trade agreement price* [price component code](price-component-code.md). <!-- KFM: What affect will this have? Can we give some advice? Other settings in the dialog disappear depending on what we select here.  -->
+    - **Header price attribute group** – <!-- KFM: Description needed -->
+    - **Line price attribute group** – <!-- KFM: Description needed -->
+1. If your selected **Price attribute group combination** considers header values (rather than applying to *all* customers), then the **Header price attribute group** FastTab is available. In this case, for each row on the **Header price attribute group** FastTab, enter or select one or more values in the **Condition** column to establish the rules for selecting customers. <!-- KFM: What are we doing here? Finding orders for specific customers? --> The following rules apply.
+    - All rows are combined using a logical AND operator, which means that only those customers that have matching values for *all* rows will be included.
+    - If you want to create one or more rows that include multiple values, set **Enable multiple selections** to *Yes*. This will allow you to add a comma-separated list of values in the **Values** column for each row. The values are combined using an OR operator, which means that the row will find customers that match *any* of the values in the list.
+    - You can specify values to exclude by adding an "!" before the value. For example, to find all customer accounts other than *DE-001*, you could set the attribute with **Attribute** *Customer account* to have **Condition** *!DE-001*. You can add the exclusion prefix to the values of any row automatically by selecting it and then selecting the **Exclude values in selected lines** button.
+1. To preview the results of your settings on the **Header price attribute group** FastTab, select the **Preview matching results** button. A dialog opens, showing a preview of customers that match the conditions you've set up so far.
+    - If the list includes any customers that you'd like to exclude, select the target rows and select **Exclude** from the toolbar.
+    - The **Line type** column indicates which customers you have chosen to exclude using the toolbar button.
+    - To re-include an excluded customer, select it and then select **Include** from the toolbar.
+1. If your selected **Price attribute group combination** considers line values (rather than applying to *all* products), then the **Line price attribute group** FastTab is available. In this case, use this FastTab to establish rules for selecting products. The settings and preview options here work the same way as they do for the **Header price attribute group** FastTab.
+1. Select **OK** to add the new line to the **Overview** FastTab grid on the **Journal lines, trade agreement** page.
+1. Make the following settings for each line in the **Overview** FastTab grid, as needed:
+    - **From** – Enter a minimum quantity for the line. This value establishes a minimum quantity that a customer must order before they can qualify for the agreement price.
+    - **To** – Enter a maximum quantity for the line. This value establishes the maximum quantity above which the agreement price no longer applies. 
+    - **Amount in currency** – Enter the price that applies for the line.
+    - **Currency** – Select the currency you used to specify the price in the **Amount in currency** field.
+    - **Unit** – Select the unit for which the price you specified applies.
+    - **Allow unit conversion** – Select this check box to allow the price you specified for the selected **Unit** to be converted proportionately for sales lines that specify other units based on the available unit conversion factors. This feature allows you to maintain a single record that can apply to sales made in different units.
+    - **Allow price adjustment** – Select this check box if your sales trade agreement price is not your final unit price (additional margin component price adjustments will be permitted). See the table after this procedure for an example of how this setting could affect the final unit price.
+    - **Flat tier amount** – <!-- KFM: Description needed. -->
+    - *Inventory dimensions* – Use columns showing inventory dimensions (such as **Color**, **Warehouse**, **Serial number**, and so on.) to further refine the conditions for a line. To choose which dimensions to show in the grid, select **Inventory \> Dimensions** from the toolbar.
 
-    For the Sales trade agreement price, the tiered quantity range is per sales order line. This differs from the Discounts where quantity discount tiers are per sales order line.
+    > [!TIP]
+    > If you offer prices based on multiple quantity breaks, then specify each quantity bracket as a row with the relevant **From** and **To** values. For the sales trade agreement price, the tiered quantity range is per sales order line. This differs from discounts, where quantity discount tiers are per sales order line <!-- KFM: How is this different? -->.
 
-1. In the **Amount in currency field**, enter a price.
-1. In the **Currency** field, enter a currency.
-1. In the **Unit** field, enter the price unit.
-1. Tick **Allow unit conversion** if you want to use the price conversion when the unit in the sales order line is different from the unit of this sales trade agreement price line.This feature allows you to maintain one record which can apply converted price based on the unit conversion (Sales trade agreement price line unit &lt;&gt; Sales order line unit).
-1. Tick **Allow price adjustment** in the line, if your sales trade agreement price is not your final unit price, margin component price adjustments need to be added on top of the price.
+1. For each line you added to the **Overview** FastTab, select the line and make the following settings on the **Details** tab:
+    - **From date** – Enter the first date on which the selected line will be valid. <!-- KFM: Can we leave blank to include all dates? -->
+    - **To date** – Enter the last date on which the selected line will be valid. <!-- KFM: Can we leave blank to include all dates? -->
+    - **Price charges** – <!-- KFM: Description needed. -->
+    - **Price unit** – <!-- KFM: Description needed. -->
+    - **Lead time** – <!-- KFM: Description needed. -->
+    - **Working days** – <!-- KFM: Description needed. -->
+    - **Disregard lead time** – <!-- KFM: Description needed. -->
 
-    Example:
+<!-- KFM: What is the **Error log** FastTab for? -->
+1. Continue adding lines as needed. Use the following buttons on the toolbar to modify or copy existing lines:
+    - **Select** – Lets you copy existing lines from posted journals to the current journal. See [Create a new journal based on posted journal lines](#select-command) for details about how to use this function.
+    - **Edit price attributes** – Opens the **Edit price attributes** dialog for the selected line, so you can edit its settings as described previously in the procedure.
+    - **Copy and revise** – Creates a copy of the selected line and provides a dialog where you can pre-edit settings for the newly created line.
+    - **Copy line** – Creates a copy of the selected line.
+    - **Clear journal** – Deletes all the lines in the journal.
+    - **Select all agreements to be deleted** – <!-- KFM: Description needed. -->
+    - **Restore trade agreements** – <!-- KFM: Description needed. -->
 
-    Price tree are configured as:
+    To delete a single existing line, select it and select **Delete** from the Action Pane.
 
-    | Price component code | Price component | Price sequence | Value |
-    |---|---|---|---|
-    | TAM01 | Sales trade agreement price | 10 | $200 |
-    | MAC01 | Price adjustment 01 | 20 | $10 |
-    | MAC02 | Price adjustment 02 | 30 | $20 |
-    | Allow price adjustment | Yes | Unit price | $230 |
-    | | No | | $200 |
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Validate \> Validate all lines** (or validate just the selected lines by selecting **Validate \> Validate selected lines**). <!-- KFM: Why are we doing this? What affect will this have? Indicated by the **Trade agreement validation** column? -->
+1. The **Price/discount Journal posting** dialog opens. Select **OK** to run the validation. <!-- KFM: Are any of these other settings relevant? -->
+1. On the Action Pane, select **Post**. <!-- KFM: What does this do? WHy are we doing this now? -->
+1. The **Price/discount Journal posting** dialog opens. Select **OK** to post. <!-- KFM: Are any of these other settings relevant? -->
 
-1. Under the **Details** section, in the **From date** field, enter a date from which this agreement will be valid. In the **To date** field, enter the date to which this agreement will expire.
-1. Select **Save**.
-1. Select **Validate**.
-1. Select **Validate selected lines**.
-1. Select **OK**.
-1. Select **Post**.
-1. Select **OK**.
+The following tables shows an example of a pricing structure that would be affected by the **Allow price adjustment** setting for a sales trade agreement.
 
-## Extract posted journal to a new journal
+| Price component code | Price component | Price sequence | Value |
+|---|---|---|---|
+| TAM01 | Sales trade agreement price | 10 | $200 |
+| MAC01 | Price adjustment 01 | 20 | $10 |
+| MAC02 | Price adjustment 02 | 30 | $20 |
 
-In case there are minor change of the price rule compared to the previously posted journal. You can copy the old posted sales trade agreement journal with certain criteria and into a new sales trade agreement journal, adjust and post the journal.
+The final price would be affected as follows:
 
-Go to new journal line, select **Select**, and you will get a query form you can set different conditions to extract the data from old journals.
+- If **Allow price adjustment** is *Yes*, the final unit price would be $230
+- If **Allow price adjustment** is *No*, the final unit price would be $200
 
-Pricing management offers the capability to filter the old trade agreement line based on the attributes.
+## <a name=select-command></a>Create a new journal based on posted journal lines
 
-The '**Match value only**' controls how the system filter the records.
+If you need to create a new journal that includes lines that are similar to a previously posted journal lines, then you can start by adding copies of the posted journal lines to your new journa;.
 
-Assuming, the rule has the price attribute as Customer group= A and customer US-001 belongs to customer group A.
+1. Go to **Pricing management \> During-sales pricing \> Sales trade agreement price \> Trade agreement journals**.
+1. Select **New** on the Action Pane.
+1. On the Action Pane, select **Lines**.
+1. On the **Overview** FastTab toolbar, select **Select**.
+1. The **Select** dialog opens. Use these settings to build a query that will find the matching lines from posted journals that you would like to copy to your new journal.
+1. Set **Match value only** to control how the system filters the records. For example, suppose you are looking for a journal line that matches price attribute **Customer group** = *A* and you have customer *US-001* that to customer group A. Then the **Match value only** settings work as follows:
+    - *Yes* – When you select customer account US-001, system won't match the line because there is no record that specifies the customer account, even though the rule applies to US-001.
+    - *No* – When you select customer account US-001, system will match the line because the rule applies to US-001.
+1. Once your query is set up, select **Select** to copy the matching posted trade agreement lines to a new journal.
+1. Edit the copied lines as needed.
+1. Validate and post the journal.
 
-- **Match value only**= Yes, when you select customer account= US-001, system will not match the line, as there is no record specify the customer account, though the rule applies to US-001.
-- **Match value only**= No, when you select customer account= US-001, system will match the line, as the rule applies to US-001.
+## View posted sales trade agreement prices for products and customers
 
-Once these details are set, select **Select** to extract old trade agreement lines to a new journal as per the predefined conditions. Once lines are extracted, those can be updated with necessary details and new journal will be validated & posted. 
+Follow these steps to view posted sales trade agreement prices that apply for a selected product or customer.
 
-## View posted sales trade agreement price from product and customer
-
-Pricing management allows you to view the posted sales trade agreement price in the customer and released product master form.
-
-- Customer
-
-In the **Price \> Price setup \> Trade agreements**
-
-Enter the selection criteria and set **Match value only** to No.
-
-Select **Posted** to Yes to filter for the posted trade agreement price.
-
-The price setup price report will display the related Sales trade agreement price that are relevant to this customer.
-
-- Release product
-
-In the **Price \> Price setup \> Trade agreements**
-
-Enter the selection criteria and set **Match value only** to No.
-
-Select **Posted** to Yes to filter for the posted trade agreement price.
-
-The price setup price report will display the related Sales trade agreement price that are relevant to this product.
+1. Do one of the following steps:
+    - To find trade agreement prices for products, go to **Product information management \> Products \> Released products**.
+    - To find trade agreement prices for customers, go to **Sales and marketing \> Customers \> All customers**.
+1. Select the product or customer you want to inspect.
+1. On the Action Pane, open the **Price** tab and select **Trade agreements**.
+1. The **Trade agreements** dialog opens. Criteria for finding lines for your selected product or customer are already included.
+1. Set **Posted** to *Yes* to find only posted lines.
+1. Set **Match value only** to *No*.
+1. Select **OK**.
+1. The found trade agreement lines are now shown.
