@@ -38,6 +38,8 @@ The following articles explain how to create a POS extension by using the indepe
 
 This article applies to version 10.0.18 and later of the Retail SDK.
 
+[!include [banner](../includes/retailsdk-deprecation-banner.md)]
+
 ## Supported apps
 
 The different POS apps have the same code base. However, the extensions are packaged, deployed, and rendered differently, depending on the platform and the app type. Customizations that you develop will work across app types without requiring that the code is duplicated or rewritten for different apps. Although some extension components might be app-specific, most of the extension code can work across apps.
@@ -47,10 +49,10 @@ The following table shows that apps that you can create POS extensions for.
 | App | Description |
 |---|---|
 | Point of Sale (POS) | POS lets first-line workers, such as cashiers, sales and inventory associates, stock clerks, and store managers, perform various commerce operations. The Microsoft Dynamics 365 Commerce solution provides different device types, so that these operations can be performed across platforms and form factors. |
-| Modern Point of Sale (MPOS) | MPOS is a Universal Windows Platform (UWP) app that runs on a Windows device. The MPOS client can communicate with peripheral devices, such as cash drawers, credit card readers, and printers, by using Hardware Station. |
-| Cloud Point of Sale (CPOS) | CPOS is a hosted version of POS that runs in a browser. The CPOS app is deployed in the cloud. |
-| Store Commerce | The Store Commerce app in Dynamics 365 Commerce is a Windows app from Microsoft Store that runs on a Windows device. The Chromium engine is used to render the app. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. When Store Commerce has full functional parity with MPOS, it will replace MPOS. Currently, Store Commerce doesn't support running offline (when there is no connectivity to Retail Server). |
-| iOS hybrid app | The iOS hybrid app is a shell app (wrapper) that runs on an iOS device. The shell hosts CPOS. |
-| Android hybrid app | The Android hybrid app is a shell app that runs on an Android device. The shell hosts CPOS. |
+| Modern Point of Sale (MPOS) | MPOS is a Universal Windows Platform (UWP) app that runs on a Windows device. The MPOS client can communicate with peripheral devices, such as cash drawers, credit card readers, and printers, by using Hardware Station. Modern POS is a legacy app and is replaced by the Store Commerce app. Updates and support for Modern POS will end in October 2023. See [Migrate Modern POS to Store Commerce](migrate-mpos-store-commerce.md) for more information. |
+| Store Commerce for web | Store Commerce for web is a hosted version of POS that runs in a browser. The Store Commerce for web app is deployed in the cloud. |
+| Store Commerce | The Store Commerce app in Dynamics 365 Commerce is a Windows app from Microsoft Store that runs on a Windows device. The Chromium engine is used to render the app. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. Store Commerce has full functional parity with MPOS, and replaces MPOS as the default POS app for Dynamics 365 Commerce. Learn more about [Store Commerce app](../store-commerce.md). |
+| Store Commerce for iOS | Store Commerce for iOS is a shell app that runs on an iOS device. The shell hosts Store Commerce for web network connectivity to peripheral devices. |
+| Store Commerce for Android | Store Commerce for Android is a shell app that runs on an Android device. The shell hosts Store Commerce for web while supporting network connectivity to peripheral devices. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
