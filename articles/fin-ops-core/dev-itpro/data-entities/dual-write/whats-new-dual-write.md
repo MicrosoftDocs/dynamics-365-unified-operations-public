@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 08/02/2022
+ms.date: 03/17/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -21,6 +21,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 ## March 2023 release 
 
 The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid march.
+
 | Feature | Description | Status |
 |---|---|---|
 | Bug | Require additional exception handling to PostCommit plugin | GA |
@@ -28,6 +29,7 @@ The March release of [Dual-write core solution 1.0.41.0](https://appsource.micro
 ## February 2023 release 
 
 The February release of [Dual-write core solution 1.0.40.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. 
+
 | Feature | Description | Status |
 |---|---|---|
 | Bug | Handle Azure resource throttling during live-sync. | GA |
