@@ -38,7 +38,7 @@ When you create the Dataverse environment where you want to install the app, be 
 
 For the mobile app to work, Power Apps must be able to communicate with your Supply Chain Management environment through virtual entities. To enable virtual entities in your Dataverse environment, follow the instructions in [Getting the virtual entity solution](/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#get-virtual-entity-solution).
 
-## Install the mobile app in Dataverse
+## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
 You must install the Asset Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
 
