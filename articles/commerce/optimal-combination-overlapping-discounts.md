@@ -17,7 +17,6 @@ ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 # Determine the optimal combination of overlapping discounts
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to determine the optimal combination of overlapping discounts in Microsoft Dynamics 365 Commerce.
 
