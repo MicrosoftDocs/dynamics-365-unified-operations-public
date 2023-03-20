@@ -359,7 +359,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Repeat the migration to production
 
-Follow all previous steps to migrate data, and then follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](/database/dbmovement-scenario-goldenconfig#copy-the-sandbox-database-to-production).
+Follow all previous steps to migrate data, and then follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
 1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the LCS methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
 2. Apply the final version of the software deployable package to production.
