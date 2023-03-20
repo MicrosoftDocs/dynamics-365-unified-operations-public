@@ -4,7 +4,7 @@
 title: Commerce pricing APIs
 description: This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 author: boycez
-ms.date: 08/10/2022
+ms.date: 03/20/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -204,7 +204,9 @@ The whole cart object is returned as the response body. To check prices and disc
 
 ## GetAvailablePromotions 
 
-There are 2 similar APIs: Carts/GetAvailablePromotions which accepts a list of cart line identifiers as parameter, and GetAvailablePromotions which accepts a DiscountsSearchCriteria object as parameter.
+There are two similar *GetAvailablePromotions* APIs: 
+- **Carts/GetAvailablePromotions** accepts a list of cart line identifiers as parameter.
+- **GetAvailablePromotions** accepts a **DiscountsSearchCriteria** object as parameter.
 
 ### Carts/GetAvailablePromotions
 
@@ -212,7 +214,7 @@ Given a cart that has several cart lines, the *Carts/GetAvailablePromotions* API
 
 The main use case for the *Carts/GetAvailablePromotions* API is the cart page, where retailers want to showcase applied discounts or available coupons for the current cart.
 
-The following table shows the input parameters for the *Carts/GetAvailablePromotions* API.
+The following table lists the input parameters for the *Carts/GetAvailablePromotions* API.
 
 | Name        | Type | Required/Optional | Description |
 |-------------|------|-------------------|-------------|
@@ -249,23 +251,23 @@ The following table shows the input parameters for the *Carts/GetAvailablePromot
 
 The *GetAvailablePromotions* API returns all applicable discounts for the given channel.
 
-The main use case for the *GetAvailablePromotions* API is the all discounts page, where retailers want to view all discounts for the current channel.
+The main use case for the *GetAvailablePromotions* API is the "All discounts" page, where retailers want to show all discounts for the current channel.
 
-The following table shows the input parameters for the *GetAvailablePromotions* API.
+The following table lists the input parameters for the *GetAvailablePromotions* API.
 
 | Name        | Sub-name | Type | Required/Optional | Description |
 |-------------|----------|------|-------------------|-------------|
 | searchCriteria | | DiscountsSearchCriteria | Required | |
 | | ChannelId | long | Required | |
 | | Keyword | string | Optional | |
-| | IsDiscountCodeRequired | bool | Optional | Indicating whether the coupon code required or not. If null is passed, all the discounts will be retrieved regardless of coupon code requirements. |
-| | StartDate | DateTimeOffset | Optional | The starting date (inclusive) |
-| | EndDate | DateTimeOffset | Optional | The ending date (inclusive) |
+| | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, all discounts will be retrieved, regardless of coupon code requirements. |
+| | StartDate | DateTimeOffset | Optional | The starting date (inclusive). |
+| | EndDate | DateTimeOffset | Optional | The ending date (inclusive). |
 
 
 <details>
     <summary>Sample request</summary>
-https://usnconeboxax1ret.cloud.onebox.dynamics.com/commerce/GetAvailablePromotions?$top=80&api-version=7.3
+`https://usnconeboxax1ret.cloud.onebox.dynamics.com/commerce/GetAvailablePromotions?$top=80&api-version=7.3`
 
 ```json
 {
