@@ -4,7 +4,7 @@
 title: Leave balance
 description: This article provides details and an example query for the leave balance entity in Dynamics 365 Human Resources.
 author: marcelbf
-ms.date: 06/25/2021
+ms.date: 03/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ This article describes the leave balance entity for Dynamics 365 Human Resources
 
 This entity provides the leave balance per leave type for a given employee.
 
-Physical name: mshr_essleavebalanceentities.
+Physical name: mshr_essleavebalanceentity.
 
 ## Properties
 

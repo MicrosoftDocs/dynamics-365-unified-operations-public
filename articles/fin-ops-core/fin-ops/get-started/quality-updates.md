@@ -124,7 +124,7 @@ For information on the dark hours for each region, see [What are the planned mai
 |---|---|---|---|
 | 10.0.30 Release-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
 | 10.0.30 Release-3 | January 13th 2023 | January 30 to February 26 2023 | Completed |
-| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | Not Started |
+| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | In-Progress |
 | 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| In-Progress |
 | 10.0.31 Release-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Not Started |
 | 10.0.31 Release-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
@@ -183,7 +183,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 1 | NA | NA |
 | Station 2 | March 20 to March 23, 2023 | April 1 to April 2, 2023 |
 | Station 3 | March 21 to March 24, 2023 | April 1 to April 2, 2023 |
-| Station 4 | March 27 to March 2, 2023 | April 8 to April 9, 2023 |
+| Station 4 | March 27 to April 2, 2023 | April 8 to April 9, 2023 |
 | Station 5 | April 3 to April 6, 2023 | April 8 to April 9, 2023 |
 | Station 6 | NA | NA |
 

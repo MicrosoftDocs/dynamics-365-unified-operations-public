@@ -4,7 +4,7 @@
 title: Set up benefits
 description: This article describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
 author: twheeloc
-ms.date: 10/01/2018
+ms.date: 02/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -215,7 +215,7 @@ For retirement benefits, the method that is used to determine the employee contr
 Your organization offers two retirement plans:
 
 - **Plan 1** – Your organization matches the worker's contributions to the plan at a rate of 50 percent up to the first 3 percent, and then at a rate of 100 percent up to 6 percent.
-- **Plan 2** – Your organization contributes 1 percent of the worker's pay to the 401(k) plan when the worker's contributions are between 1 percent and 3 percent of his or her pay. It contributes 2 percent when the worker's contributions are between 3 percent and 6 percent. Finally, it contributes 3 percent when the worker's contributions are 6 percent or more.
+- **Plan 2** – Your organization contributes 1 percent of the worker's pay to the 401(k) plan when the worker's contributions are between 1 percent and 3 percent of their pay. It contributes 2 percent when the worker's contributions are between 3 percent and 6 percent. Finally, it contributes 3 percent when the worker's contributions are 6 percent or more.
 
 For this example, the rate table looks like this.
 
@@ -230,8 +230,8 @@ For this example, the rate table looks like this.
 
 Two tier types are available on the **Contribution calculation rates** page.
 
-- **Single line** – If you select this tier type, only one line from the rate table is used to calculate the amount of the employer's contribution. For example, if the worker's deduction rate is 10 percent of his or her $1,000.00 earnings, the employer's contribution for plan 1 is 0.00. For plan 2, the employer's contribution is 30.00 for the same worker.
-- **Cascading tier** – If you select this tier type, multiple lines from the rate table are used to calculate the amount of the employer's contribution. Only lines that have a deduction rate that is less than or equal to the actual worker deduction rate are used to calculate the employer contribution amount. For example, if the worker's deduction rate is 10 percent of his or her $1,000.00 earnings, the employer's contribution for plan 1 is 45.00. For plan 2, the employer's contribution is 60.00 for the same worker.
+- **Single line** – If you select this tier type, only one line from the rate table is used to calculate the amount of the employer's contribution. For example, if the worker's deduction rate is 10 percent of their $1,000.00 earnings, the employer's contribution for plan 1 is 0.00. For plan 2, the employer's contribution is 30.00 for the same worker.
+- **Cascading tier** – If you select this tier type, multiple lines from the rate table are used to calculate the amount of the employer's contribution. Only lines that have a deduction rate that is less than or equal to the actual worker deduction rate are used to calculate the employer contribution amount. For example, if the worker's deduction rate is 10 percent of their $1,000.00 earnings, the employer's contribution for plan 1 is 45.00. For plan 2, the employer's contribution is 60.00 for the same worker.
 
 The following table shows the formula that is used to calculate the amount of the employer's contribution amount for plans 1 and 2 for each tier type.
 

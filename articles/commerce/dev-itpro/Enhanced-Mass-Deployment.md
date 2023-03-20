@@ -17,7 +17,6 @@ ms.search.validFrom: 2021-04-30
 # Mass deployment of sealed Commerce self-service components
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Once Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (seen in point of sale as version 9.27). This is due to the migration to .NET Core.
