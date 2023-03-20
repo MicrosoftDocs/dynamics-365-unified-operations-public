@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 # Human Resources app in Teams
 
 >[!Important]
->The functionality noted in this article is currently available for customer on the stand-alone Dynamics 365 Human Resources. A new experience will be available as part of a future release for Human Resources on the Finance infrastructure.
+>The functionality noted in this article is currently available for customer on the stand-alone Dynamics 365 Human Resources. A new experience will be available as part of a future release on the Finance infrastructure.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
