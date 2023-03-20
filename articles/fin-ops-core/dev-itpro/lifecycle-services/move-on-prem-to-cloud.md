@@ -359,7 +359,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Repeat the migration to production
 
-Follow all previous steps to migrate data, but follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
+Follow all previous steps to migrate data, and then follow the instructions in [Golden configuration promotion - Copy the sandbox database to production](/database/dbmovement-scenario-goldenconfig#copy-the-sandbox-database-to-production).
 
 ## Migrate document handling attachments to your sandbox
 
@@ -444,7 +444,7 @@ Document handling attachments for Finance + Operations (on-premises) environment
 
 ## Troubleshooting
 
-For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 finance and operations self-service environments](/migration-upgrade/troubleshoot-self-service-env).
+For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 finance and operations self-service environments](../migration-upgrade/troubleshoot-self-service-env.md).
 
 ## Learn about the replication configuration and status via SSMS
 
