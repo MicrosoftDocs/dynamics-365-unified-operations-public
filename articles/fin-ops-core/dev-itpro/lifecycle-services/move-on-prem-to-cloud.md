@@ -2,9 +2,9 @@
 # required metadata
 
 title: Move Lifecycle Services implementation projects from on-premises to the cloud
-description: This article explains how to move your Microsoft Dynamics 365 finance and operations (on-premises) environments to the cloud.
+description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: ttreen
-ms.date: 03/09/2023
+ms.date: 03/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to move your Microsoft Dynamics 365 finance and operations (on-premises) environments that are hosted on your own infrastructure to the Azure cloud.
+This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments that are hosted on your own infrastructure to the Azure cloud.
 
 ## Background
 
@@ -52,7 +52,7 @@ After your Lifecycle Services cloud implementation project has been created, you
 
 ## Complete development and testing of updated integrations
 
-You will have to make some changes to the integration design patterns that you used for interfaces with your finance and operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
+You will have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
 
 You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach will simplify management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
 
@@ -157,11 +157,11 @@ You should consider developing your updated interfaces in such a way that they c
 4. Optional: To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value. However, there might be situations where you want to increase the number of publishers, so that you can distribute fewer tables to each publisher. When it's used in conjunction with the manual snapshot start process, an increase in the number of publishers lets you run smaller initial snapshots. This approach can be useful if you have limited maintenance windows and must split the startup of the replication over several.
+    - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value. However, there might be situations where you want to increase the number of publishers, so that you can distribute fewer tables to each publisher. When it's used in conjunction with the manual snapshot start process, an increase in the number of publishers lets you run smaller initial snapshots. This approach can be useful if you have limited maintenance windows and must split the startup of the replication over several publishers.
     - **snapshotPostPublication** – This option will add a five-minute delay between starts of the automatic snapshot processes. This delay can help with loads on the source server. The toolkit also allows for manual snapshot starts. If you use that approach, you don't have to set this parameter. 
 
     > [!NOTE]
-    > Don't set up or configure replication during peak times when system resource usage, memory usage, and IOLCS operations are high. 
+    > Don't set up or configure replication during peak times when system resource usage, memory usage, and disk IO operations are high. 
     >
     > When resources are being used to the maximum extent (that is, more than 90 percent is already consumed), the replication might be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (that is, during off-peak time). 
     >
@@ -303,13 +303,13 @@ After the validation is successful, the application presents a set of menu optio
 
     This step changes the state of the Lifecycle Services environment from **Replication in progress** to **Replication completed**.
 
-10. **Data Synchronise: Trigger Transformation**
+10. **Data synchronize: Trigger transformation**
 
     This step triggers a servicing step in Lifecycle Services that will update the database for the cloud. When the action is successful, the state of the Lifecycle Services environment changes from **Replication completed** to **Data upgrade in progress**.
 
     If data migration is successful, the environment will be set to a **Deployed** status in Lifecycle Services. 
 
-11. **Data Synchronise: Trigger Rollback**
+11. **Data synchronize: Trigger rollback**
 
     This step triggers a rollback of the data upgrade. This action rolls back the data to the point before the transformation was triggered and sets the Lifecycle Services environment state to **Replicated**. These actions will change the environment from **Failed** to the **Replicated** state.
 
@@ -363,7 +363,7 @@ Follow all previous steps to migrate data, but follow the instructions in [Golde
 
 ## Migrate document handling attachments to your sandbox
 
-Document handling attachments for finance and operations (on-premises) environments are stored in a file share. However, the cloud version doesn't support this file share. You can use the following procedure to copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request that Dynamics Support Engineering copy the attachments from your sandbox to production.
+Document handling attachments for Finance + Operations (on-premises) environments are stored in a file share. However, the cloud version doesn't support this file share. You can use the following procedure to copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request that Dynamics Support Engineering copy the attachments from your sandbox to production.
 
 1. Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox instances of Application Object Server (AOS). For example, you can upload a zip file of the attachments and unpack it on the target. If you don't have remote desktop access (for example, for a self-service environment), you can use a different virtual machine (VM) instead. For reasonable conversion performance, this VM should be in the same Azure datacenter as the target sandbox. If you aren't using the AOS instance, you must add the VM to an allow list for access to the sandbox's SQL database instance.
 2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your finance and operations transactional database, by using the environment details in Lifecycle Services.
