@@ -10,6 +10,9 @@ ms.custom: bap-template
 ---
 
 # Sales point relation for sales documents and remission
+
+[!include [banner](../includes/banner.md)]
+
 You can select the packing slip documents to use with a sales document by linking sales points when you a invoice a product sale. Then, the sales points will be assigned to the invoice in the transaction.
 
 ## Prerequisites
@@ -22,3 +25,5 @@ Before you can link sales points, you must create at least one sale point. Addit
 4. In the **Remission sales point** field, select a sales point.
 5. Select **Save**.
  
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
