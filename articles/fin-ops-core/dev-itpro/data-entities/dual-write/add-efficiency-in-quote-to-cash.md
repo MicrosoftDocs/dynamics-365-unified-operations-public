@@ -12,27 +12,31 @@ ms.search.validFrom: 2023-05-01
 ---
 
 # Add efficiency in Quote to Cash with Dynamics 365 Sales
+
 [!include [banner](../../includes/banner.md)]
 
-In Dynamics Supply Chain Management, several enhancements are available from version 10.0.34 in quote to cash integration in dual write between Dynamics 365 Sales and Dynamics 365 Supply Chain Management. The changes are introduced to allow companies to have a seamless quotation process flow across Sales and Supply Chain Management allowing for fewer touchpoints and higher efficiency and transparency. The changes are enabled in a combination of more features in feature management in Supply Chain Management and an updated dual write supply chain solution to support the integration with Sales. These changes are developed for and to be used within the context of quote to cash integration in dual write between Dynamics 365 Sales and Dynamics 365 Supply Chain Management only. 
-
+In Dynamics Supply Chain Management, several enhancements are available from version 10.0.34 in quote to cash integration in dual write between Dynamics 365 Sales and Dynamics 365 Supply Chain Management. The changes are introduced to allow companies to have a seamless quotation process flow across Sales and Supply Chain Management allowing for fewer touchpoints and higher efficiency and transparency. The changes are enabled in a combination of more features in feature management in Supply Chain Management and an updated dual write supply chain solution to support the integration with Sales. These changes are developed for and to be used within the context of quote to cash integration in dual write between Dynamics 365 Sales and Dynamics 365 Supply Chain Management only.
 
 ## Integrate Sales Quotation lifecycle with Dynamics 365 Sales
 
 A concept of quotation creation origin and ownership is added to the sales quotation in Dynamics 365 Supply Chain Management. This concept is agnostic to any feature enablement and is visible from the user interface of the sales quotation details page header section from version 10.0.32. 
-A new group, Quotation Creation, is added to the Sales quotation header fast tab in the Sales quotation details page in Dynamics 365 SCM. The Quotation Creation group contains two field: Origin and Ownership. 
+A new group, Quotation Creation, is added to the Sales quotation header fast tab in the Sales quotation details page in Dynamics 365 SCM. The Quotation Creation group contains two field: Origin and Ownership.
 
 [Missing images]
 
-When the feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is disabled, all sales quotations have Supply Chain Management as Origin and Based on origin as Ownership. 
+When the feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is disabled, all sales quotations have Supply Chain Management as Origin and Based on origin as Ownership.
+
 Once the Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is enabled, the updated Dual-Write supply chain solution applied, and new table maps for entities Dynamics 365 Sales feature management states, Dynamics 365 Sales quotation header, Dynamics 365 Sales quotation lines are running, then origin becomes contextual: When the  quotation is created in Supply Chain Management, then Origin will be Supply Chain Management, while Origin will be set to Dynamics 365 Sales, when the quotation is created in Dynamics 365 Sales. 
-In Dynamics 365 Sales the two new fields are added to the Integration section in the Quote page. 
+In Dynamics 365 Sales the two new fields are added to the Integration section in the Quote page.
+
 To make ownership explicit to a user working with quotations in Dynamics 365 Sales, an info message is added to the message area in the Quote page when ownership is not Dynamics 365 Sales:
 
 [Missing images]
 
-When this message is not provided, then ownership is with Dynamics 365 Sales. 
-This message will inform the user, that there are limits as to what actions in Dynamics 365 Sales are available for the specific sales quotation. 
+When this message is not provided, then ownership is with Dynamics 365 Sales.
+
+This message will inform the user, that there are limits as to what actions in Dynamics 365 Sales are available for the specific sales quotation.
+
 When the quotation is active and ownership is with Supply Chain Management, the combined messages for the quotation will appear like the below:
 
 [Missing images]
@@ -41,32 +45,41 @@ The following presents two use cases illustrating the differences in the sales q
 
 ### Use case: Sales Quotation is created from Dynamics 365 Sales and activated 
 
-A sales quotation header is created in Dynamics 365 Sales. Origin is Dynamics 365 Sales, ownership based on origin. Sales Quotation header is synched through dual write using the Dynamics 365 Sales quotation header (quotes) entity. When inserted into Supply chain management from the Dynamics 365 Sales quotation header (quotes) entity, origin is set to Dynamics 365 Sales. The value is not synched from Dataverse but directly set based on the entity used. This is by intent as this Dynamics 365 Sales quotation header entity is only to be applied within a Dynamics 365 Sales integration context; any inserts from this entity should only originate from Dynamics 365 Sales. The sales quotation status in Dynamics 365 SCM is created. 
-When the sales quotation state and status in Dynamics 365 Sales and SCM respectively is Draft and Created, lines can be added, deleted, and modified from both systems. However as ownership is with Dynamics 365 Sales, the quotation cannot be deleted nor can it be processed through its lifecycle from Dynamics 365 SCM. 
-In Dynamics 365 Sales, products are added to the quotation and quotation lines are synchronized to Dynamics 365 SCM. Then the sales quotation is activated from Dynamics 365. This triggers a quotation send event in Dynamics 365 SCM. When feature Process Dynamics 365 Sales integration related events is not enabled, then the send event is processed immediately and in full in Supply Chain Management. First, the quotation journal is created and the status of the sales quotation is updated to Sent. Updating the sales quotation in Dynamics 365 Sales to state Active happens upon successfully updating the sales quotation in Dynamics 365 SCM to Sent. 
-When feature Process Dynamics 365 Sales integration related events is enabled and running, then part of the send event to update the status can processed immediately while the creation of the quotation journal is processed in batch. First, the quotation status is updated to Sent. Then the sales quotation in Dynamics 365 Sales is updated to state Active and a request to create the quotation journal is sent to a message queue in Dynamics 365 SCM. When the request is picked up by the message queue processor, the sales quotation journal is created. This is futher explained in the section on Process Dynamics 365 Sales integration related events. 
+A sales quotation header is created in Dynamics 365 Sales. Origin is Dynamics 365 Sales, ownership based on origin. Sales Quotation header is synched through dual write using the Dynamics 365 Sales quotation header (quotes) entity. When inserted into Supply chain management from the Dynamics 365 Sales quotation header (quotes) entity, origin is set to Dynamics 365 Sales. The value is not synched from Dataverse but directly set based on the entity used. This is by intent as this Dynamics 365 Sales quotation header entity is only to be applied within a Dynamics 365 Sales integration context; any inserts from this entity should only originate from Dynamics 365 Sales. The sales quotation status in Dynamics 365 SCM is created.
+
+When the sales quotation state and status in Dynamics 365 Sales and SCM respectively is Draft and Created, lines can be added, deleted, and modified from both systems. However as ownership is with Dynamics 365 Sales, the quotation cannot be deleted nor can it be processed through its lifecycle from Dynamics 365 SCM.
+
+In Dynamics 365 Sales, products are added to the quotation and quotation lines are synchronized to Dynamics 365 SCM. Then the sales quotation is activated from Dynamics 365. This triggers a quotation send event in Dynamics 365 SCM. When feature Process Dynamics 365 Sales integration related events is not enabled, then the send event is processed immediately and in full in Supply Chain Management. First, the quotation journal is created and the status of the sales quotation is updated to Sent. Updating the sales quotation in Dynamics 365 Sales to state Active happens upon successfully updating the sales quotation in Dynamics 365 SCM to Sent.
+
+When feature Process Dynamics 365 Sales integration related events is enabled and running, then part of the send event to update the status can processed immediately while the creation of the quotation journal is processed in batch. First, the quotation status is updated to Sent. Then the sales quotation in Dynamics 365 Sales is updated to state Active and a request to create the quotation journal is sent to a message queue in Dynamics 365 SCM. When the request is picked up by the message queue processor, the sales quotation journal is created. This is futher explained in the section on Process Dynamics 365 Sales integration related events.
+
 When the sales quotation in Dynamics 365 SCM is in status Sent and ownership is with Dynamics 365 Sales, sales quotation data becomes read only in Dynamics 365 SCM. Activating a sales quotation  through Dynamics 365 Sales automatically  makes the quotation in Dynamics 365 Sales read only. As ownership is with Dynamics 365 Sales, this is respected in Dynamics 365 SCM. Quotation data becomes read only from the Dynamics 365 SCM user interface. 
-Further processing of the sales quotation through its lifecycle is mastered through Dynamics 365 Sales with relevant events triggering appropriate updates to the linked Dynamics 365 SCM quotation. 
+Further processing of the sales quotation through its lifecycle is mastered through Dynamics 365 Sales with relevant events triggering appropriate updates to the linked Dynamics 365 SCM quotation.
 
 ### Use case: Sales Quotation is created from Dynamics 365 SCM and send
 
-A sales quotation header is created in Dynamics 365 SCM. Origin is Supply chain management, ownership based on origin. Sales quotation header is synched through dual write using the Dynamics 365 Sales quotation header (quotes) entity. When inserted into Dataverse from the Dynamics 365 Sales quotation header (quotes) entity, the origin is synched and therefore set to Supply Chain Management. The synchronization of the Origin value is one directional: From Dynamics 365 SCM to Dataverse only. Once in Dataverse, the sales quotation can be accessed in Dynamics 365 Sales with the status In progress and state Draft. 
+A sales quotation header is created in Dynamics 365 SCM. Origin is Supply chain management, ownership based on origin. Sales quotation header is synched through dual write using the Dynamics 365 Sales quotation header (quotes) entity. When inserted into Dataverse from the Dynamics 365 Sales quotation header (quotes) entity, the origin is synched and therefore set to Supply Chain Management. The synchronization of the Origin value is one directional: From Dynamics 365 SCM to Dataverse only. Once in Dataverse, the sales quotation can be accessed in Dynamics 365 Sales with the status In progress and state Draft.
+
 When the sales quotation state and status in Dynamics 365 Sales and SCM respectively is Draft and Created, lines can be added, deleted, and modified from both apps. However, as ownership is with Supply chain management, the quotation cannot be deleted nor can it be processed through its lifecycle from Dynamics 365 Sales. When opening the sales quotation in the Dynamics 365 Sales Quote page, the following information is visible:
 
 [Missing images]
 
-In Dynamics 365 SCM, products can be added to the quotation and quotation lines are synchronized to Dynamics 365 Sales. Then the sales quotation is send from Dynamics 365 SCM using the generate send quotation functionality. When the status is updated to Sent, this status change is synched to Dynamics 365 Sales and triggers an update of the quotation to Active. 
-When the sales quotation in Dynamics 365 Sales is in state Active, default Dynamics 365 Sales logic ensures that the quotation data becomes read only in the Dynamics 365 Sales user interface. When origin is Supply Chain Management and ownership is Based on origin, the lifecycle actions available from Dynamics 365 Sales are hidden. It is not possible to Create order, Close, Revise, or Delete such a sales quotation from Dynamics 365 Sales. 
+In Dynamics 365 SCM, products can be added to the quotation and quotation lines are synchronized to Dynamics 365 Sales. Then the sales quotation is send from Dynamics 365 SCM using the generate send quotation functionality. When the status is updated to Sent, this status change is synched to Dynamics 365 Sales and triggers an update of the quotation to Active.
+
+When the sales quotation in Dynamics 365 Sales is in state Active, default Dynamics 365 Sales logic ensures that the quotation data becomes read only in the Dynamics 365 Sales user interface. When origin is Supply Chain Management and ownership is Based on origin, the lifecycle actions available from Dynamics 365 Sales are hidden. It is not possible to Create order, Close, Revise, or Delete such a sales quotation from Dynamics 365 Sales.
+
 When opening the sales quotation in the Dynamics 365 Sales Quote page, the following information is provided:
 
 [Missing images]
 
-Further processing of the sales quotation through its lifecycle is mastered through Dynamics 365 SCM with relevant events triggering appropriate updates to the linked Dynamics 365 Sales quotation. 
-The following presents additional use cases illustrating the sales quotation lifecycle when ownership is with Dynamics 365 Sales. 
+Further processing of the sales quotation through its lifecycle is mastered through Dynamics 365 SCM with relevant events triggering appropriate updates to the linked Dynamics 365 Sales quotation.
 
-### Additional use cases - ownership is with Dynamics 365 Sales: 
+The following presents additional use cases illustrating the sales quotation lifecycle when ownership is with Dynamics 365 Sales.
 
-This section provides additional use cases when Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is enabled below are additional and ownership is with Dynamics 365 Sales. 
+### Additional use cases - ownership is with Dynamics 365 Sales
+
+This section provides additional use cases when Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is enabled below are additional and ownership is with Dynamics 365 Sales.
+
 Ownership Dynamics 365 Sales scenarios
 Below is explained the impact and flow when the Sales Quotation is created in Dynamics 365 Sales, origin is Dynamics 365 Sales. As ownership is based on origin, ownership is with Dynamics 365 Sales.
 Step 1 - Creation: The Sales quotation is created in Dynamics 365 Sales. The status is In progress and the state Draft. In Dynamics 365 Sales there are no changes compared to what the user can do with the sales quotation compared to when Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is disabled.
