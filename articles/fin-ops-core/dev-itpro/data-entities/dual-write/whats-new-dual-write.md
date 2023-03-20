@@ -25,6 +25,22 @@ The March release of [Dual-write core solution 1.0.41.0](https://appsource.micro
 | Feature | Description | Status |
 |---|---|---|
 | Bug | Require additional exception handling to PostCommit plugin | GA |
+|Bug fix|	When updating the postal address page, the street field was not concatenating correctly when the street 2 field wasn't present. This issue is fixed.|General availability|
+|Bug fix|	Fixed the GAB plugin for creation of account. The **Search name** field in Dataverse will not be overwritten at CREATE if the search name is different than the name.|	General availability|
+|Bug fix	|Prevent the deactivation of primary postal address and customer addresses in Customer engagement to match functionality with finance and operations and avoid data corruption.|	General availability|
+|Bug fix|	When creating an account with the same party and filling a different electronic address on the **Details** tab, duplicate electronic addresses were created. This issue is fixed.|	General availability|
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+|Party|	Yes|	3.5.1.55	|3.5.1.76|
+|Dynamics365GABExtended	|Yes|	3.5.1.55	|3.5.1.76|
+|Dynamics365GABDualWriteEntityMaps|	Yes|	3.5.1.55|	3.5.1.76|
+|Dynamics365GABPartyAnchor	|Yes	|3.5.1.55	|3.5.1.76|
+|Dynamics365GABPartyCommon	|Yes|	3.5.1.55	|3.5.1.76|
+
+
 
 ## February 2023 release 
 
