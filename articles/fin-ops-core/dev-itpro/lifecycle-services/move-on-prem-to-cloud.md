@@ -364,8 +364,8 @@ Follow all previous steps to migrate data, and then follow the instructions in [
 1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the LCS methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
 2. Apply the final version of the software deployable package to production.
 3. Stop making data changes to the on-premises production environment.
-4. Repeat steps 3 through 6 in the [Do a trial migration and resolve issues](#Prerequisites) section to copy the final/up-to-date on-premises production database to the cloud sandbox.
-5. Repeat step 8 in the [Do a trial migration and resolve issues](#Prerequisites) section to copy the final/up-to-date document handling attachments to the cloud sandbox.
+4. Repeat steps 3 through 6 in the [Do a trial migration and resolve issues](#prerequisites) section to copy the final/up-to-date on-premises production database to the cloud sandbox.
+5. Repeat step 8 in the [Do a trial migration and resolve issues](#prerequisites) section to copy the final/up-to-date document handling attachments to the cloud sandbox.
 6. Request a database refresh from sandbox to production. (The process is the same as the process that is used to promote a golden configuration database to production.)
 7. Open a support request to have Dynamics Support Engineering copy the document handling attachments from the sandbox storage account to the production storage account and update the references in the production database's DocuValue and DocuDeletedValue tables. After the request has been completed, validate that the attachments are available for a sample of document handling records. 
 > [!NOTE]
