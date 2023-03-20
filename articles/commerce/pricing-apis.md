@@ -36,7 +36,7 @@ The *GetActivePrices* API was introduced in the Commerce version 10.0.4 release.
 
 The *GetActivePrices* API supports the **Employee**, **Customer**, **Anonymous**, and **Application** Commerce roles.
 
-The main use case for the *GetActivePrices* API is the product details page (PDP), where retailers want to showcase the best price for a product, including any effective discounts.
+The main use case for the *GetActivePrices* API is the product details page (PDP), where retailers show the best price for a product, including any effective discounts.
 
 The following table shows the input parameters for the *GetActivePrices* API.
 
@@ -212,7 +212,7 @@ There are two similar *GetAvailablePromotions* APIs:
 
 Given a cart that has several cart lines, the *Carts/GetAvailablePromotions* API returns all applicable discounts for the cart lines. 
 
-The main use case for the *Carts/GetAvailablePromotions* API is the cart page, where retailers want to showcase applied discounts or available coupons for the current cart.
+The main use case for the *Carts/GetAvailablePromotions* API is the cart page, where retailers show applied discounts or available coupons for the current cart.
 
 The following table lists the input parameters for the *Carts/GetAvailablePromotions* API.
 
@@ -251,7 +251,7 @@ The following table lists the input parameters for the *Carts/GetAvailablePromot
 
 The *GetAvailablePromotions* API returns all applicable discounts for the given channel.
 
-The main use case for the *GetAvailablePromotions* API is the "All discounts" page, where retailers want to show all discounts for the current channel.
+The main use case for the *GetAvailablePromotions* API is the "All discounts" page, where retailers show all discounts for the current channel.
 
 The following table lists the input parameters for the *GetAvailablePromotions* API.
 
@@ -260,14 +260,14 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 | searchCriteria | | DiscountsSearchCriteria | Required | |
 | | ChannelId | long | Required | |
 | | Keyword | string | Optional | |
-| | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, all discounts will be retrieved, regardless of coupon code requirements. |
+| | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, all discounts are retrieved, regardless of coupon code requirements. |
 | | StartDate | DateTimeOffset | Optional | The starting date (inclusive). |
 | | EndDate | DateTimeOffset | Optional | The ending date (inclusive). |
 
 
 <details>
     <summary>Sample request</summary>
-`https://usnconeboxax1ret.cloud.onebox.dynamics.com/commerce/GetAvailablePromotions?$top=80&api-version=7.3`
+<!--`https://usnconeboxax1ret.cloud.onebox.dynamics.com/commerce/GetAvailablePromotions?$top=80&api-version=7.3`-->
 
 ```json
 {
