@@ -4,7 +4,7 @@
 title: Courses overview
 description: This article explains how Human Resources administrators and managers can use the courses features to maintain information about courses that are available to workers.
 author: twheeloc
-ms.date: 01/04/2023
+ms.date: 03/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,33 +29,33 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Courses overview
 
-Microsoft Dynamics 365 Human Resources provides a solution for your organization's learning needs. This solution offers two learning course paths: *virtual* and *instructor-led*.
+Microsoft Dynamics 365 Human Resources provides a solution for your organization's learning needs. This solution offers two learning course paths: *virtual* and *In-person*.
 
-*Virtual learning* is a learning experience that is enhanced through online resources. In *instructor-led training*, an instructor facilitates a training session for a group of workers or learners.
+*Virtual learning* is a learning experience that is enhanced through online resources. *In-person* or *instructor-led training*, an instructor facilitates a training session for a group of workers or learners.
 
 In our learning module, Human Resources professionals, administrators, training managers, and managers can create and assign both learning course paths to workers.
 
 > [!NOTE]
 > To use virtual courses, you must enable the **Course enhancements** feature in Feature management.
 
-
-> [!IMPORTANT]
-> The virtual courses functionaliy noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
-
 ## Set up virtual courses
 
-To configure virtual courses, you must enable the **Course enhancements** feature in Feature management. Go to **Courses \> New**, and set the **Virtual** option to **Yes**. After the feature is enabled, a course link is required. The **Course status** field will be set to **Open**. The **Allow employee to self-register** option will be set to **Yes** but can be set to **No**.
+To configure virtual courses, you must enable the **Course enhancements** feature in Feature management. Go to **Courses \> New**, and set the **Virtual** option to **Yes**. After the feature is enabled, a course link is required. The **Course status** field will be set to **Open**. The **Allow employee to self-register** option will be set to **Yes** but can be set to **No**. The **Cost** section will allow a cost to be associated to the course or the participant, the default cost is none. 
 
 After the **Course enhancements** feature is enabled in Feature management, the following changes occur:
 
-- A due date must be defined for course assignment.
+- On the **Participants** page, a due date must be defined for course assignment.
 - A course link is required.
-- **Employee self service** will show an employee overview in **Courses**. User can view courses that are overdue, due soon, and assigned.
+- **Employee self service** will display an employee overview in **Courses**. User can view courses that are overdue, due soon, and assigned.
 - Workers can complete virtual courses and self-attest to them.
 
-## Set up instructor-led courses
+## Set up in-person courses
 
-Instructor-led courses don't have to be configured before they are used.
+Go to **Courses > New** and complete the page with Virtual selected, fill in course title, and the URL link to which the participants will navigate to. All virtual courses require a URL link. Course status will automatically set to Open. The allow employee to self-register defaults to Yes, which can be updated to No. The cost section will allow a cost to be associated to the course or the participant, the default cost is none. 
+
+The following information is optional information that you can specify for courses. If you know that you will be entering this information for courses, you should set up this information before you create course records. 
+
+In-person courses don't have to be configured before they are used.
 
 The following information is optional and can be specified for courses. If this information will be entered for courses, it should be set up before the course records are created:
 
