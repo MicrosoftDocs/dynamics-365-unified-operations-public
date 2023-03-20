@@ -2180,11 +2180,11 @@
       - name: Price structures
         items:
         - name: Price structure overview
-          href: pricing-management/price-tree-overview.md
+          href: pricing-management/price-structure-overview.md
         - name: Set up company to use a multiple price structures
-          href: pricing-management/price-tree-multiple.md
+          href: pricing-management/price-structure-multiple.md
         - name: Set up company to use a single price structure
-          href: pricing-management/price-tree-single.md
+          href: pricing-management/price-structure-single.md
       - name: Base price
         items:
         - name: Vendor list prices

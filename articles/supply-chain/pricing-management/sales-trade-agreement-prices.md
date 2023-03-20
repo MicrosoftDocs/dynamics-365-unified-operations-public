@@ -53,7 +53,7 @@ Several configuration settings affect the way sales trade agreements work in Pri
 To use sales trade agreements, you must have the following configurations available in your system:
 
 - You must have exactly one price component code where **Price component** is set to *Sales trade agreement*. This will allow you to include sales trade agreements as part of your price structures. For more information, see [Price component codes](price-component-code.md).
-- Each price structure where you want to consider sales trade agreement prices must include the *Sales trade agreement* price component code just mentioned. For more information, see [Price structure overview](price-tree-overview.md).
+- Each price structure where you want to consider sales trade agreement prices must include the *Sales trade agreement* price component code just mentioned. For more information, see [Price structure overview](price-structure-overview.md).
 
 ## Create a new sales trade agreement journal
 

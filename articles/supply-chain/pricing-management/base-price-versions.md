@@ -20,7 +20,7 @@ ms.custom: bap-template
 
 This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the SKU level. Pricing management allows you to build selling prices using *cost-plus pricing*. When you use cost-plus pricing, you start by building a pricing structure that starts with the base price.
 
-The following tables shows an example of pricing structure (such as a [price tree](price-tree-multiple.md)) that could be used to build final selling prices based on base prices.
+The following tables shows an example of pricing structure (such as a [price tree](price-structure-multiple.md)) that could be used to build final selling prices based on base prices.
 
 | Pricing sequence | Price component code | Price component type | Descriptions | Price details in the sales order |
 |---|---|---|---|---|
@@ -65,7 +65,7 @@ The following table shows how sales trade agreements relate to selling prices.
 > [!NOTE]
 > To use sales trade agreement prices, your pricing structure must include a price component code whose **Price component** is *Sales trade agreement*.
 
-The following tables shows an example of pricing structure (such as a [price tree](price-tree-multiple.md)) that includes a sales trade agreement.
+The following tables shows an example of pricing structure (such as a [price tree](price-structure-multiple.md)) that includes a sales trade agreement.
 
 | Pricing sequence | Price component code | Price component type | Descriptions | Price details in the sales order |
 |---|---|---|---|---|

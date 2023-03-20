@@ -51,5 +51,5 @@ The following table summarizes the principle components of the price structure u
 
 ## Next steps
 
-- [Set up company to use a multiple price structures](price-tree-multiple.md)
-- [Set up company to use a single price structure](price-tree-single.md)
+- [Set up company to use a multiple price structures](price-structure-multiple.md)
+- [Set up company to use a single price structure](price-structure-single.md)

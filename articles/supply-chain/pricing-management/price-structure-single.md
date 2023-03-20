@@ -24,7 +24,7 @@ In this case, companies and price structures have a 1:1 relationship, and this s
 
 The purpose of a price structure is to establish the order in which the system calculates each type of price adjustment and establish other options, such as concurrency and compounding rules, for each price component code.
 
-The price component code setup is the single-structure equivalent of the price trees used for multiple price structures, and provides nearly all the same settings. See also [Set up company to use a multiple price structures](price-tree-multiple.md).
+The price component code setup is the single-structure equivalent of the price trees used for multiple price structures, and provides nearly all the same settings. See also [Set up company to use a multiple price structures](price-structure-multiple.md).
 
 ## Configure a company to use a single price structure
 
@@ -42,6 +42,6 @@ To set up the price structure for a company that uses a single structure, you wi
 
     [<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
 
-1. Set up your price structure by adding and removing lines to establish a price sequence and make other settings for each price component code that you want to include. These settings work in exactly the same as they do on the **Price component code list** FastTab of the **Price trees** page (though there is no **Mandatory** column here). For details about how to make these settings, and examples of how they work, see [Use multiple price structures within a company](price-tree-multiple.md).
+1. Set up your price structure by adding and removing lines to establish a price sequence and make other settings for each price component code that you want to include. These settings work in exactly the same as they do on the **Price component code list** FastTab of the **Price trees** page (though there is no **Mandatory** column here). For details about how to make these settings, and examples of how they work, see [Use multiple price structures within a company](price-structure-multiple.md).
 
 1. Continue working until you have set up all lines as required. Then select **Save** on the Action Pane.

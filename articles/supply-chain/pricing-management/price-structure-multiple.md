@@ -24,7 +24,7 @@ In this case, companies and price structures have 1:N relationship, and these mu
 
 The purpose of a price structure is to establish the order in which the system calculates each type of price adjustment and establish other options, such as concurrency and compounding rules, for each price component code.
 
-Price trees are the multiple-structure equivalent of the price component code setup for single price structures, and provide nearly all the same settings. See also [Set up company to use a single price structure](price-tree-single.md).
+Price trees are the multiple-structure equivalent of the price component code setup for single price structures, and provide nearly all the same settings. See also [Set up company to use a single price structure](price-structure-single.md).
 
 ## Configure a company to use multiple price structures
 
@@ -70,10 +70,10 @@ To set up multiple price structures, you will use the **Price trees** page, as d
 
         This setting only affects discount calculations when the **Best price and compound concurrency control model** is set to *Best price and compound within priority, best price and compound across priority* on the **Pricing management parameters** page. See [System settings for discount concurrency control](#parameters) for details.
 
-    - **Mandatory**– This setting isn't available on the **Price component code setup** page, it's only on the **Price trees** page (see also [Use multiple price structures within a company](price-tree-multiple.md)). For price trees where **Enable mandatory check** is set to *Yes*, use this check box to mark each price component code that is mandatory in the sales order, in case of not applicable, it will post an error. <!--KFM: This isn't clear. What do we mean by price component code to be mandatory in an order? What happens if it isn't there? Does the error mentioned here only occur when setting up the price tree? -->
+    - **Mandatory**– This setting isn't available on the **Price component code setup** page, it's only on the **Price trees** page (see also [Use multiple price structures within a company](price-structure-multiple.md)). For price trees where **Enable mandatory check** is set to *Yes*, use this check box to mark each price component code that is mandatory in the sales order, in case of not applicable, it will post an error. <!--KFM: This isn't clear. What do we mean by price component code to be mandatory in an order? What happens if it isn't there? Does the error mentioned here only occur when setting up the price tree? -->
 
     > [!NOTE]
-    > When you use multiple price structures (price tress), your price structures can't include price component codes with a **Price component** of *Auto charge*. Instead, the system will apply the standard Supply Chain Management auto-charge logic, which means that when an auto-charge rule record is applicable, the auto charge will apply to the sales order. You can include auto charge components in the price structure for [companies configured to use a single price structure](price-tree-single.md).
+    > When you use multiple price structures (price tress), your price structures can't include price component codes with a **Price component** of *Auto charge*. Instead, the system will apply the standard Supply Chain Management auto-charge logic, which means that when an auto-charge rule record is applicable, the auto charge will apply to the sales order. You can include auto charge components in the price structure for [companies configured to use a single price structure](price-structure-single.md).
 
 1. Continue working until you have set up all the lines you need in your price structure.
 
