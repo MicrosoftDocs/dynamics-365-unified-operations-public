@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up training courses
+title: Create a course
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 03/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
-# Set up training courses
+# Create a course
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
