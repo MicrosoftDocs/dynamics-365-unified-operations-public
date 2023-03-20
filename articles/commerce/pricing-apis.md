@@ -267,7 +267,6 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 
 <details>
     <summary>Sample request</summary>
-<!--`https://usnconeboxax1ret.cloud.onebox.dynamics.com/commerce/GetAvailablePromotions?$top=80&api-version=7.3`-->
 
 ```json
 {
