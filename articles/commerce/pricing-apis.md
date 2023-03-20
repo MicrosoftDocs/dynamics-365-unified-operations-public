@@ -204,7 +204,7 @@ The whole cart object is returned as the response body. To check prices and disc
 
 ## GetAvailablePromotions 
 
-There are 2 similar APIs: Carts/GetAvailablePromotions which accept a list of cart line identifiers as parameter, and GetAvailablePromotions which accept a DiscountsSearchCriteria object as parameter.
+There are 2 similar APIs: Carts/GetAvailablePromotions which accepts a list of cart line identifiers as parameter, and GetAvailablePromotions which accepts a DiscountsSearchCriteria object as parameter.
 
 ### Carts/GetAvailablePromotions
 
