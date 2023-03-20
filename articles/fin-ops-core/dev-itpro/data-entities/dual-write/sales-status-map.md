@@ -79,7 +79,7 @@ The following table shows the mapping of **Processing Status** between Sales and
 | Invoiced            | Invoiced        | Invoiced                          |
 | Cancelled           | Cancelled       | Cancelled                         |
 
-**Note**, with dual write solution for supply chain changes are made to the **status**. The changes depend on whether map for the CDS Sales order headers entity or the map for the Dynamics 365 Sales order headers entity is running. 
+**Note**, with the dual write solution for supply chain version XXXX and Supply ChainMmanagement 10.0.34, changes are made to the **status map**. The changes depend on whether map for the CDS Sales order headers entity or the map for the Dynamics 365 Sales order headers entity is running. 
 When the map for the CDS Sales order headers entity is running, then this is the resulting status map:
 
 | Processing Status   | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
@@ -93,7 +93,7 @@ When the map for the CDS Sales order headers entity is running, then this is the
 | Invoiced            | Invoiced                          | Invoice                                    | Invoiced        |
 | Cancelled           | Cancelled                         | Not applicable                             | Canceled        |
 
-When the map for the  Dynamics 365 Sales order headers entity is running, And additional processing status is introduced with the below resulting status map:
+When the map for the  Dynamics 365 Sales order headers entity is running, and additional processing status is introduced with the below resulting status map:
 
 | Processing Status   | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
 |---------------------|-----------------------------------|--------------------------------------------|-----------------|
