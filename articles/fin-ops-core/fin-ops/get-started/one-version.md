@@ -157,6 +157,8 @@ After you apply a service update for a supported version, this functionality wil
 > - Version N-3 is three versions older than N, such as 10.0.22
 > - Version N-4 is four versions older than N, such as 10.0.21 (In this example, customers on version 10.0.21 **can't** pause updates.)
 
+If you encounter an issue on a version that has reached its end of service (N-4), the support team is not able to take your case. You must update to the latest update and then report the issue if it persists.
+
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
 All additional sandbox environments will be updated during the same update window as your production environment, and they will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions that are supported in the N-3 lifecycle policy. 
