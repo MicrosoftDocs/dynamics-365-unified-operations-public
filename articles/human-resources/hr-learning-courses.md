@@ -36,20 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 
-##  Set up prerequisites
+## Course templates
 
-The following information is required and must be set up before you create courses.
--   **Course types**
+You can use course templates to categorize courses according to the structure or content. You can create course templates on the **Course templates** page. These templates can be used to prefill information when creating a new course.   
 
-The following information is optional information that you can specify for courses. If you know that you will be entering this information for courses, you should set up this information before you create course records.
--   **Classroom groups**
--   **Course groups**
--   **Course locations**
--   **Classrooms**
--   **Instructors**
-
-## Course types
-You can use course types to categorize courses according to the structure or content of the course. You can create course types on the **Course types** page. You must select a course type when you create a course record.
+The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page. 
 
 ## Course setup type
 The following table lists the three setup types for courses. Setup types determine the structure of the course.
@@ -57,7 +48,7 @@ The following table lists the three setup types for courses. Setup types determi
 <table>
 <thead>
 <tr class="header">
-<th>Setup type</th>
+<th>Setup </th>
 <th>Description</th>
 </tr>
 </thead>
@@ -81,19 +72,9 @@ The following table lists the three setup types for courses. Setup types determi
 </tbody>
 </table>
 
-## Course tasks
-For each course, you can complete the following tasks.
-- Register participants
-- Specify a registration deadline
-- Define the minimum and maximum number of participants
-- Assign a course location and classroom
-- Recommend hotels to course participants
-- Create a course description, which you can then advertise on **Employee self service**
 
-  >**Note**
-  >You can delete a course only if no one has registered for it. 
-
-## Course statuses
+## Course status
+The **Course status** is located at the top of the page. 
 The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.
 
 <table>
@@ -105,10 +86,10 @@ The following table lists the possible course statuses and the actions that you 
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Created</strong></td>
+<td><strong>Draft</strong></td>
 <td><ul>
-<li>Enter and modify course information.</li>
-<li>Change the course status to <strong>Open</strong> so that workers can register for the course.</li>
+<li>Create and modify course information.</li>
+<li>Change the course status to <strong>Open</strong> so that workers can register for the course. (In-person only)</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -132,12 +113,6 @@ The following table lists the possible course statuses and the actions that you 
 </tbody>
 </table>
 
-## Course participants
-Course participants are workers who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.
-
-## Workflow
-
-Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval. You can assign a workflow to a course on the **General** FastTab on the **Courses** page.
 
 
 
