@@ -358,6 +358,14 @@
             href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
           - name: Manage location owners
             href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources business events    
+          items: 
+          - name: Human Resources business event overview
+            href: business-events-overview.md
+          - name: Human Resources business event example
+            href: bus-event-example.md
+          - name: Use cases for Human Resouces business events
+            href: bus-event-use-case.md             
         - name: Workflow system
           items:
           - name: Workflow system overview
