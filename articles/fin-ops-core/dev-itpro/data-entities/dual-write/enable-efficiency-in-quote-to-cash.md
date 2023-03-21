@@ -69,7 +69,7 @@ The following are examples of not supported configurations. The list is not exha
 If you run with an unsupported configuration, you risk of not being able to create and process any sales quotations from Dynamics 365 Sales or Dynamics 365 SCM. To enable the creation and processing of sales quotations, you must correct the configuration. 
 Following is a high level flowchart illustration illustration of various uptake permutations and the outcomes. Please note that the flowchart illustration is high level  and as such not exhaustive. It should be used as an overview only.  
 
-[Missing image] 
+![How-to-visio-flow](../dual-write/media/add_effciency_17.png)
 
 ## Troubleshooting
 If the sales quotation lifecycle flow does not yield the expected results for newly created sales quotation and the feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales is enabled, do the following: 
