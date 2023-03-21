@@ -71,4 +71,4 @@ To set up a release pipeline for the Cloud Scale Unit extension package for the 
 
 ## Set up a release pipeline for Retail self-service packages
 
-To set up a release pipeline for Retail self-service packages for the fiscal integration sample, follow the steps in [Set up a release pipeline for Retail self-service packages](../../commerce/dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-retail-self-service-packages).
+To set up a release pipeline for Retail self-service packages for the fiscal integration sample, follow the steps in [Set up a release pipeline for Commerce self-service packages](../../commerce/dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-commerce-self-service-packages).
