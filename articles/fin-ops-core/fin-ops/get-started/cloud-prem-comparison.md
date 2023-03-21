@@ -35,7 +35,7 @@ This article shows a comparison of features available in cloud vs. on-premises f
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
 - [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
-- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources-(stand-alone))
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Information about the [development and administration features](cloud-prem-comparison.md#development-and-administration-features) is included, as well.
 
