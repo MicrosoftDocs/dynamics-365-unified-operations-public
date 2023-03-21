@@ -22,7 +22,8 @@ In Dynamics Supply Chain Management, several enhancements are available from ver
 A concept of quotation creation origin and ownership is added to the sales quotation in Dynamics 365 Supply Chain Management. This concept is agnostic to any feature enablement and is visible from the user interface of the sales quotation details page header section from version 10.0.32. 
 A new group, Quotation Creation, is added to the Sales quotation header fast tab in the Sales quotation details page in Dynamics 365 SCM. The Quotation Creation group contains two field: Origin and Ownership.
 
-[Missing images]
+![SCM-Origin-ownership](../dual-write/media/add_effciency_1.png)
+![SCM-Origin-ownership](../dual-write/media/add_effciency_2.png)
 
 When the feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is disabled, all sales quotations have Supply Chain Management as Origin and Based on origin as Ownership.
 
@@ -31,7 +32,7 @@ In Dynamics 365 Sales the two new fields are added to the Integration section in
 
 To make ownership explicit to a user working with quotations in Dynamics 365 Sales, an info message is added to the message area in the Quote page when ownership is not Dynamics 365 Sales:
 
-[Missing images]
+![Sales-Origin-ownership](../dual-write/media/add_effciency_3.png)
 
 When this message is not provided, then ownership is with Dynamics 365 Sales.
 
@@ -39,7 +40,7 @@ This message will inform the user, that there are limits as to what actions in D
 
 When the quotation is active and ownership is with Supply Chain Management, the combined messages for the quotation will appear like the below:
 
-[Missing images]
+![Sales-Origin-ownership](../dual-write/media/add_effciency_4.png)
 
 The following presents two use cases illustrating the differences in the sales quotation process flow resulting from ownership. 
 
@@ -62,7 +63,7 @@ A sales quotation header is created in Dynamics 365 SCM. Origin is Supply chain 
 
 When the sales quotation state and status in Dynamics 365 Sales and SCM respectively is Draft and Created, lines can be added, deleted, and modified from both apps. However, as ownership is with Supply chain management, the quotation cannot be deleted nor can it be processed through its lifecycle from Dynamics 365 Sales. When opening the sales quotation in the Dynamics 365 Sales Quote page, the following information is visible:
 
-[Missing images]
+![Sales-Origin-ownership](../dual-write/media/add_effciency_5.png)
 
 In Dynamics 365 SCM, products can be added to the quotation and quotation lines are synchronized to Dynamics 365 Sales. Then the sales quotation is send from Dynamics 365 SCM using the generate send quotation functionality. When the status is updated to Sent, this status change is synched to Dynamics 365 Sales and triggers an update of the quotation to Active.
 
@@ -70,7 +71,7 @@ When the sales quotation in Dynamics 365 Sales is in state Active, default Dynam
 
 When opening the sales quotation in the Dynamics 365 Sales Quote page, the following information is provided:
 
-[Missing images]
+![Sales-Origin-ownership](../dual-write/media/add_effciency_6.png)
 
 Further processing of the sales quotation through its lifecycle is mastered through Dynamics 365 SCM with relevant events triggering appropriate updates to the linked Dynamics 365 Sales quotation.
 
@@ -80,81 +81,41 @@ The following presents additional use cases illustrating the sales quotation lif
 
 This section provides additional use cases when Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is enabled below are additional and ownership is with Dynamics 365 Sales.
 
-Ownership Dynamics 365 Sales scenarios
+**Ownership Dynamics 365 Sales scenarios**
 Below is explained the impact and flow when the Sales Quotation is created in Dynamics 365 Sales, origin is Dynamics 365 Sales. As ownership is based on origin, ownership is with Dynamics 365 Sales.
-Step 1 - Creation: The Sales quotation is created in Dynamics 365 Sales. The status is In progress and the state Draft. In Dynamics 365 Sales there are no changes compared to what the user can do with the sales quotation compared to when Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is disabled.
+**Step 1 - Creation** - The Sales quotation is created in Dynamics 365 Sales. The status is In progress and the state Draft. In Dynamics 365 Sales there are no changes compared to what the user can do with the sales quotation compared to when Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature is disabled.
 The quotation is synchronized to Supply chain management. The status is Created. As ownership is with Dynamics 365 Sales, the quotation cannot be send, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation can be edited in Supply chain management.
-Internal note: Tried to rotate the tables but did not work out☹
-Create Quotation	Sales (ownership)	SCM
-Status	Draft	Created
-Status reason	In Progress	N/A
-Lifecycle restrictions	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled	Cannot Generate Send, Lost, Cancel, Confirm, Delete
-Data restrictions	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
 
-Dynamics 365 Sales Quotation: Create quotation
-Result	Status 	Status reason	Lifecycle restrictions	Data restrictions
-Quotation created	Draft 	In Progress	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
-Supply Chain Management Sales Quotation: Quotation synchronization
-Result	Status	Lifecycle restrictions	Data restrictions
-Quotation created	Created	Cannot Generate Send, Lost, Cancel, Confirm, Delete	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
-Schematic representation of step 1 
-Step 2 - Activation: The Sales quotation is activated in Dynamics 365 Sales. The status is In progress and the state Active. There are no changes compared to what the user can do with the sales quotation compared to a non-integrated scenario. 
+![Schematic representation of step 1](../dual-write/media/add_effciency_7.png)
+![Schematic representation of step 1](../dual-write/media/add_effciency_8.png)
+
+**Step 2 - Activation** - The Sales quotation is activated in Dynamics 365 Sales. The status is In progress and the state Active. There are no changes compared to what the user can do with the sales quotation compared to a non-integrated scenario. 
 The quotation update is synchronized to Supply chain management. The status is Sent. As ownership is with Dynamics 365 Sales, the quotation cannot be send, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation is read only in Supply chain management.
 Note that activating a quotation in Dynamics 365 Sales makes it read only in the user interface. 
-Activate Quotation	Sales (ownership)	SCM
-Status	Active	Sent
-Status reason	In Progress	N/A
-Lifecycle restrictions	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled	Cannot Generate Send, Lost, Cancel, Confirm, Delete
-Data restrictions	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled	Read only
 
-Dynamics 365 Sales Quotation: Activate
-Result	Status 	Status reason	Lifecycle restrictions	Data restrictions
-Quotation activated	Active	In Progress	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
-Supply Chain Management Sales Quotation: Quotation synchronization
-Result	Status	Lifecycle restrictions	Data restrictions
-Quotation journal created	Sent	Cannot Generate Send, Lost, Cancel, Confirm, Delete	Read Only
-Schematic representation of step 2 
- Step 3 - Revision: The Sales quotation is revised in Dynamics 365 Sales. The status is Closed and the state Revised. 
+![Schematic representation of step 2](../dual-write/media/add_effciency_9.png)
+![Schematic representation of step 2](../dual-write/media/add_effciency_10.png)
+
+**Step 3 - Revision** - The Sales quotation is revised in Dynamics 365 Sales. The status is Closed and the state Revised. 
 The quotation update is synchronized to Supply chain management. The status is Revised. As ownership is with Dynamics 65 Sales, the quotation cannot be sent, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation is read only in Supply chain management.
 A new sales quotation is automatically created in Dynamics 365 Sales. The status is In progress and the state Draft. 
 The quotation is synchronized to Supply chain management. The status is Created. As ownership is with Dynamics 365 Sales, the quotation cannot be sent, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation can be edited in Supply chain management.
-Dynamics 365 Sales Quotation: Revise
-Result	Status 	Status reason	Lifecycle restrictions	Data restrictions
-Quotation Revised	Closed	Revised	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
-Quotation Created	Draft 	In Progress	
-Supply Chain Management Sales Quotation: Quotation synchronization
-Result	Status	Lifecycle restrictions	Data restrictions
-Quotation Revised	Revised	Cannot Generate Send, Lost, Cancel, Confirm, Delete	Read Only
-Quotation Created	Created	Cannot Generate Send, Lost, Cancel, Confirm, Delete	No
-Schematic representation of step 3
-Step 4 - Closing:
+
+![Schematic representation of step 3](../dual-write/media/add_effciency_11.png)
+
+**Step 4 - Closing**
 When closing an activated  sales quotation in Dynamics 365 Sales, different can be applied. Below is a variation for each of the standard reasons. 
 1st variation: The Sales quotation is Closed in Dynamics 365 Sales. Reason is revised. The status is Closed and the state Revised. The quotation update is synchronized to Supply chain management. The status is Revised. As ownership is with Dynamics 365 Sales, the quotation cannot be sent, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation is read only in Supply chain management.
 2nd variation: The Sales quotation is Closed in Dynamics 65 Sales. Reason is Lost. The status is Closed and the state Lost. The quotation update is synchronized to Supply chain management. The status is Lost. As ownership is with Dynamics 65 Sales, the quotation cannot be sent, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation is read only in Supply chain management.
 3rd variation: The Sales quotation is Closed in Dynamics 65 Sales. Reason is Cancelled. The status is Closed and the state Cancelled. The quotation update is synchronized to Supply chain management. The status is Cancelled. As ownership is with Dynamics 65 Sales, the quotation cannot be sent, lost, cancelled, confirmed, or deleted from Supply chain management. Data on the sales quotation is read only in Supply chain management.
 Note that no reason code is synchronized through integration for the Lost and Cancel events in Supply chain management.
-Dynamics 365 Sales Quotation: Close
-Result	Status 	Status reason	Lifecycle restrictions	Data restrictions
-Quotation Closed	Closed	Revised	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
-Quotation Closed	Closed	Lost	
-Quotation Closed	Closed	Cancelled	
-Supply Chain Management Sales Quotation: Quotation synchronization
-Result	Status	Lifecycle restrictions	Data restrictions
-Quotation Revised	Revised	Cannot Generate Send, Lost, Cancel, Confirm, Delete	Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled
-Quotation Lost	Lost	Cannot Generate Send, Lost, Cancel, Confirm, Delete	
-Quotation Cancelled	Canceled	Cannot Generate Send, Lost, Cancel, Confirm, Delete	
-Schematic representation of step 4 
-Step 4 variation – Create order: 
+
+![Schematic representation of step 4](../dual-write/media/add_effciency_12.png)
+
+**Step 4 variation – Create order** 
 When create order action is performed for an activated sales quotation in Dynamics 365 Sales, the following events are triggered in Supply chain management: Update the sales quotation status to confirmed and generate quotation confirmation journal. The sales order created in Dynamics 365 Sales is synchronized and available in Dynamics 365 SCM, related to the sales quotation, enabling navigation from Dynamics 365 SCM quotation to the Dynamics 365 SCM Sales order. 
-Dynamics 365 Sales Quotation: Create order
-Result	Status 	Status reason	Lifecycle restrictions	Data restrictions
-Quotation Won	Won	Won	Similar to not integrated	Similar to not integrated
-Sales order created	Active	New	Similar to not integrated	Similar to not integrated
-Supply Chain Management Sales Quotation: Quotation synchronization
-Result	Status	Lifecycle restrictions	Data restrictions
-Quotation confirmation journal created	Won	Cannot Generate Send, Lost, Cancel, Confirm, Delete	Read Only
-Sales order Created	Open		
-Schematic representation of step 4 variation
+
+![Schematic representation of step 4](../dual-write/media/add_effciency_13.png)
 
 ## Change ownership for a sales quotation
  
@@ -214,14 +175,14 @@ When the feature is enabled, then the Send quotation and Confirm events are proc
 The messages can be processed using multithreading by defining the number of messages in a task and by defining the number of processor tasks. 
 When the feature is enabled, a new tab page Dynamics 365 Sales integration is available from Accounts receivables>Setup> Accounts receivables parameters form.
 
-[Missing images]
+![Schematic representation of step 4](../dual-write/media/add_effciency_14.png)
 
 In tab page Dynamics 365 Sales integration, you setup the number of messages per task. Messages per task represent the maximum number of messages to be processed in a single task. A task is similar to a bundle. The messages per tasks is defaulted to “0” (zero) in the user interface. Number of tasks “0” is interpreted as not being set, and a number of “30” is used implicitly as maximum. Any number higher than “0” (zero) is considered.
 It is recommended not to set the (maximum) number of messages too low, such as to the value “1”. It is recommended to set the maximum number of messages in a task to a value which results in a 1-2 minute execution time.
 Setting the number of messages per task goes hand in hand with setting the number of processor tasks. 
 Navigate to System administration>Message processor>Message queue setup form. 
 
-[Missing images]
+![Message queue setup form](../dual-write/media/add_effciency_15.png)
 
 In this form you can specify a number of processor tasks for a specific queue, such as the queue Dynamics 365 Sales integration. If there is no record for the message queue, then the number “5” is used as maximum.
 Number of processor tasks value represents the maximum number of processor tasks for the specific queue. 
@@ -231,7 +192,7 @@ If set, the recommendation is to set the value higher than “1”, while not ex
 
 When events are processed leveraging the message queue framework, it is possible to monitor the process from the System Administration>Message Queue>Message process messages form. This form provides insight into queued, failed, and processed messages. The form supports error handling, manual processing, cancelling , and re-queuing of messages. 
 
-[Missing images]
+![Message process messages form](../dual-write/media/add_effciency_16.png)
 
 For more information on the Message processor, see https://learn.microsoft.com/en-us/dynamics365/supply-chain/supply-chain-dev/message-processor
 
