@@ -20,7 +20,7 @@ First, we need to locate a code point for the entrance code. This code point sho
 1. It should be before tax is calculated by the legacy tax engine so as to bypass it. And it should only bypass tax calculation but no other extra process.
 2. The code should be in a context where it contains the basic transaction information to initialize a `TaxIntegrationDocumentObject` object. The object can be initialized in 2 ways:
    - The transaction header table record itself.
-   - Table Id and record ID to distinguish the header table record of the transaction.
+   - Table ID and record ID to distinguish the header table record of the transaction.
 
 Usually, if the transaction to be integrated is already supported by the legacy tax engine, it should have a specific derived class of `TaxCalculation` class, like `TaxSales` for sales orders and `TaxPurch` for purchase orders. This is an ideal code point. Currently, transactions like purchase orders and sales orders are all done in this way. Please refer to `TaxPurch.calculateTax()` and `TaxSales.calc()`.
 
