@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.21
 
 Supply Chain Management provides an On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconstruct On-hand list by analyzing Transactions table. 
 While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 
-1. running an On-hand Consistency Check on all items (with Inventory Visibility batch enabled) will usually take long time than the standard use case when the Inventory Visibility batch is not enabled. 
+1. Running an On-hand Consistency Check on all items (with Inventory Visibility Integration batch job enabled) will usually take long time than the standard use case when the Inventory Visibility Integration batch job is not enabled. 
 2. On-hand Consistency Check will involve API calls to sync the changes in the `InventSum` and `WHSInventReserve` tables to Inventory Visibility service if you have batch job enabled. You might experience failure on consistency check if the external calls have unexpected errors.  
 As stated above, it is recommended to disable the Inventory Visibility Integration batch job when you want to run On-hand Consistency Check on **all items**.
 
@@ -30,8 +30,8 @@ As stated above, it is recommended to disable the Inventory Visibility Integrati
 1. Disable Inventory Visibility Integration batch job: go to **Inventory Management** > **Periodic Tasks** > **Inventory Visibility integration** and disable the job.
 2. Run consistency check.
 3. Re-enable the Inventory Visibility Integration batch job. 
-1. Go to **Inventory Management** > **Setup** and check *Resync before initial push* toggle. 
-2. Re-enable the Inventory Visibility Integration batch job and start the initial push. 
+  1. Go to **Inventory Management** > **Setup** and check *Resync before initial push* toggle. 
+  2. Re-enable the Inventory Visibility Integration batch job to start the initial push. 
 - The Initial push with `Resync` action will clean up legacy fno data in Inventory Visibility service and resync the `InventSum` and `WHSInventReserve` tables to Inventory Visibility Service.
 * Please be aware: Inventory Visibility Service will return the correct result after the re-enabled bath job is completed.
 
