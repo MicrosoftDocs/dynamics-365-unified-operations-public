@@ -212,8 +212,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
         - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
           href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/commerce    
-        - name: Move environments between data centers
-          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/commerce      
+        - name: Geo-to-geo migrations
+          href: ../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md?context=/dynamics365/context/commerce      
         - name: Move licenses between agreement types
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce 
         - name: Move LCS implementation projects to different Azure AD tenants
