@@ -34,57 +34,40 @@ participants that you can register for a course is defined on the **General** Fa
 
 There are two ways to manage participants: 
 
-Navigate to the course form and click Participants tab. This option works well for mass assignment or more than one participant at a time. 
-
-Add participants 
-
-Utilize the Filter by or Group by functionality to easily find participants.  
-
-Assign participants  
-
-Once participants have been identified click assign participants. 
+1. Go to **Course** and click the **Participants** tab. This option works well for mass assignment or more than one participant at a time. 
+   a. Add participants 
+       - Utilize the **Filter by** or **Group by** functionality to easily find participants.  
+   b. Assign participants  
+      - Once participants have been identified, click **Assign participants**. 
 
  
 
-Allowed actions within Participants tab:  
-
-Add participants 
-
-Remove participants 
-
-Confirm participants (in-person courses only) 
-
-Add/change due date (virtual courses only) 
-
-Change status (virtual courses only) 
+Allowed actions within **Participants** tab:  
+ - Add participants 
+ - Remove participants 
+ - Confirm participants (in-person courses only) 
+ - Add/change due date (virtual courses only) 
+ - Change status (virtual courses only) 
 
  
 
-Navigate to course participants 
-
- 
-
- 
-
- 
+2. Go to **Course participants** 
 
 Graphical user interface, text, application
 
 Description automatically generated 
 
-Select course participants, click new to add participant 
+ - Select course participants, click **New** to add participant 
+ - This process is one by one, use option one for mass assignment.  
 
-This process is one by one, use option one for mass assignment.  
-
-Manager self service: Manage Learning for direct reports and extended reports   
+## Manager self service: 
+Managers can use **Manage learning** for direct reports and extended reports.   
 
 Graphical user interface, application, Teams
 
 Description automatically generated 
 
-In order to view the learning tab on MSS, navigate to Human resources parameters and select Direct reports only or Extended reports (includes Direct reports). This 
-feature will allow managers visibility to learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking 
-the assign courses button. With access to this information, the manager can track direct reports courses (extended reports, if chosen) and progress to ensure that 
+To view **Learning** tab in **Manager self service**, go to **Human resources parameters**, select **Direct reports only** or **Extended reports** (includes Direct reports). This feature allows managers visibility to learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. With access to this information, the manager can track direct reports courses (extended reports, if chosen) and progress to ensure that 
 workers stay on track and complete assigned courses in a timely manner.  
 
 For more information on assign courses go to (Manage participants link). 
