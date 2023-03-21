@@ -1,6 +1,6 @@
 ---
 title: Set up a build pipeline for the independent-packaging SDK
-description: This article explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
+description: This article explains how to set up a build pipeline for the Commerce software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
 author: josaw1
 ms.date: 05/17/2021
 ms.topic: article
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: AX 10.0.19
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
+This article explains how to set up a build pipeline for the Commerce software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
 
-This article applies to version 10.0.19 and later of the Retail SDK. The steps that are described in this article won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this article is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
+This article applies to version 10.0.19 and later of the Commerce SDK. The steps that are described in this article won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this article is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
 
 ## Set up a build pipeline in Azure DevOps to generate a Cloud Scale Unit extension package
 
@@ -75,9 +75,9 @@ Follow these steps to set up the release pipeline to upload the CloudScaleUnitEx
 
 To automate the release pipeline, configure continuous build. For more information, see the [Release pipelines](/azure/devops/pipelines/release) documentation.
 
-## Set up a build pipeline in Azure DevOps to generate Retail self-service packages
+## Set up a build pipeline in Azure DevOps to generate Commerce self-service packages
 
-Follow these steps to generate the Retail Modern POS, Hardware Station, and Cloud Scale Unit (self-hosted) installers.
+Follow these steps to generate the Store POS, Hardware Station, and Cloud Scale Unit (self-hosted) installers.
 
 1. Sign in to your Azure DevOps organization.
 2. Select **Pipeline**, and then select **New pipeline**.
@@ -90,7 +90,7 @@ Follow these steps to generate the Retail Modern POS, Hardware Station, and Clou
 
 6. Select **Continue**.
 
-    The YAML file has steps to sign the Modern POS and Hardware Station installers by using a certificate. The script will look for a certificate file in Azure Key Vault and use that certificate file for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, certificate name, and timestamp server details (for signing the certificate by using a timestamp). For more information, see [Set and retrieve a certificate from Azure Key Vault using the Azure portal](/azure/key-vault/certificates/quick-create-portal).
+    The YAML file has steps to sign the Store POS and Hardware Station installers by using a certificate. The script will look for a certificate file in Azure Key Vault and use that certificate file for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, certificate name, and timestamp server details (for signing the certificate by using a timestamp). For more information, see [Set and retrieve a certificate from Azure Key Vault using the Azure portal](/azure/key-vault/certificates/quick-create-portal).
 
     To view the details of the key vault and the timestamp server in the pipeline, create the following variables on the **Variables** tab in your build pipeline, and provide values for them. To help secure the variables, you can select **Secret** as the variable type.
 
@@ -114,7 +114,7 @@ Follow these steps to generate the Retail Modern POS, Hardware Station, and Clou
 7. Save your changes, and add the build to the queue.
 8. When the build is completed, you can download the **HardwareStation.Installer.exe** and **ModernPos.Installer.exe** packages from **Published Artifacts**.
 
-## Set up a release pipeline for Retail self-service packages
+## Set up a release pipeline for Commerce self-service packages
 
 As a best practice, you should set up separate build and release pipeline. If you create a separate release pipeline, you can use the **Upload Asset** task in LCS to upload the HardwareStation.Installer.exe and ModernPos.Installer.exe packages to the Asset library. If you want to upload to LCS instead of to a separate release pipeline, you can add the task as part of your build pipeline.
 

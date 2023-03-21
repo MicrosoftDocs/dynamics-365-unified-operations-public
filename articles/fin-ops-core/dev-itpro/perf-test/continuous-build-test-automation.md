@@ -44,7 +44,7 @@ For information about how to write custom test code or generate automated test c
 
 ### Choose a plan
 
-The first step is to [choose an Azure DevOps plan](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services) for your organization.
+The first step is to [choose an Azure DevOps plan](https://azure.microsoft.com/pricing/details/devops/azure-devops-services) for your organization.
 
 ### Set up Azure DevOps
 
