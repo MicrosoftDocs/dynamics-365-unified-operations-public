@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-**Tax integration** is a framework designed to replace the legacy tax calculation engine by calling tax calculation service.
+**Tax integration** is a framework designed to replace the legacy tax calculation engine by calling [Tax Calculation Service](./global-tax-calcuation-service-overview).
 This article introduces the basic flow of **tax integration**.
 
 ![IntegrationFlow.png](./media/tax-integration-flow.png)
@@ -35,13 +35,13 @@ The activities shown in the chart are all document-level activities with the suf
 
 Here is a simple introduction to these activities:
 
-- Setting retrieval activity(TaxIntegrationSettingRetrievalActivityOnDocument): Retrieves the settings that will impact tax calculation. Then, it saves all the settings into the `TaxIntegrationDocumentObject`.
-- Data retrieval activity(TaxIntegrationDataRetrievalActivityOnDocument): Prepares the metadata needed by tax calculation. Then it copies them to the `TaxIntegrationDocumentObject`.
-- Calculation activity(TaxIntegrationCalculationActivityOnDocument): Transforms the `TaxIntegrationDocumentObejct` to a request Then, sends the request to the tax calculation service and parses the response from it.
-- Error handling activity(TaxIntegrationErrorHandlingActivityOnDocument): Handles the error message returned from the tax calculation service.
-- Tax ID activity(TaxIntegrationTaxIdActivityOnDocument): Processes logic regarding **Multiple VAT ID** feature.
-- List code activity(TaxIntegrationListCodeActivityOnDocument): Processes logic regarding **List Code** feature.
-- Currency exchange activity(TaxIntegrationCurrencyExchangeActivityOnDocument): Processed logic regarding **Currency Exchange rate/Rounding/Penny difference adjustment** feature.
-- Data persistence activity(TaxIntegrationDataPersistenceActivityOnDocument): Persists the tax calculation result and other information (VAT ID, list code, etc.) that need to be saved to the database.
+- TaxIntegrationSettingRetrievalActivityOnDocument: Retrieves the settings that will impact tax calculation. Then, it saves all the settings into the `TaxIntegrationDocumentObject`.
+- TaxIntegrationDataRetrievalActivityOnDocument: Prepares the metadata needed by tax calculation. Then it copies them to the `TaxIntegrationDocumentObject`.
+- TaxIntegrationCalculationActivityOnDocument: Transforms the `TaxIntegrationDocumentObejct` to a request Then, sends the request to the tax calculation service and parses the response from it.
+- TaxIntegrationErrorHandlingActivityOnDocument: Handles the error message returned from the tax calculation service.
+- TaxIntegrationTaxIdActivityOnDocument: Processes logic regarding **Multiple VAT ID** feature.
+- TaxIntegrationListCodeActivityOnDocument: Processes logic regarding **List Code** feature.
+- TaxIntegrationCurrencyExchangeActivityOnDocument: Processes logic regarding **Currency Exchange rate/Rounding/Penny difference adjustment** feature.
+- TaxIntegrationDataPersistenceActivityOnDocument: Persists the tax calculation result and other information (VAT ID, list code, etc.) that need to be saved to the database.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
