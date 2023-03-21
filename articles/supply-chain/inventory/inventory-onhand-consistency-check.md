@@ -30,8 +30,8 @@ As stated above, it is recommended to disable the Inventory Visibility Integrati
 1. Disable Inventory Visibility Integration batch job: go to **Inventory Management** > **Periodic Tasks** > **Inventory Visibility integration** and disable the job.
 2. Run consistency check.
 3. Re-enable the Inventory Visibility Integration batch job. 
-  1. Go to **Inventory Management** > **Setup** and check *Resync before initial push* toggle. 
-  2. Re-enable the Inventory Visibility Integration batch job to start the initial push. 
+      1. Go to **Inventory Management** > **Setup** and check *Resync before initial push* toggle. 
+      2. Re-enable the Inventory Visibility Integration batch job to start the initial push. 
 - The Initial push with `Resync` action will clean up legacy fno data in Inventory Visibility service and resync the `InventSum` and `WHSInventReserve` tables to Inventory Visibility Service.
 * Please be aware: Inventory Visibility Service will return the correct result after the re-enabled bath job is completed.
 
