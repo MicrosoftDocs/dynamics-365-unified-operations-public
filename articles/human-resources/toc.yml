@@ -365,7 +365,7 @@
           - name: Human Resources business event example
             href: bus-event-example.md
           - name: Use cases for Human Resouces business events
-            href: bus-event-use-case-md             
+            href: bus-event-use-case.md             
         - name: Workflow system
           items:
           - name: Workflow system overview
