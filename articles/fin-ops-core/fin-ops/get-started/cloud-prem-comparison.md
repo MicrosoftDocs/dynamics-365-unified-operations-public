@@ -164,7 +164,7 @@ This table applies to the Human Resources stand-alone version.
 | All Human Resources areas | All Human Resources features | Yes       | No              |
 
 >[!NOTE]
->For the comparison of cloud vs. on-premise of a migrated Human resources environment on the merged infrastructure, see [Comparison of cloud and on-premises features](#comparsion). 
+>For the comparison of cloud vs. on-premise of a migrated Human resources environment on the merged infrastructure, see [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance). 
 
 ## Development and administration features
 
