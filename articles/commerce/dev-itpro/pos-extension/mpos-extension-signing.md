@@ -15,6 +15,7 @@ ms.dyn365.ops.version: AX 10.0.18
 # Code signing a Modern POS (MSIX) extension package
 
 [!include [banner](../../../includes/banner.md)]
+[!include [banner](../includes/mpos-hybrid-apps-deprecation-banner.md)]
 
 This article explains how to code sign a Modern POS (MSIX) extension package. This article applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
