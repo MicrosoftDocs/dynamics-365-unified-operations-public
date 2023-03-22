@@ -38,7 +38,7 @@ When you create the Dataverse environment where you want to install the app, be 
 
 For the mobile app to work, Power Apps must be able to communicate with your Supply Chain Management environment through virtual entities. To enable virtual entities in your Dataverse environment, follow the instructions in [Getting the virtual entity solution](/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#get-virtual-entity-solution).
 
-If dual-write and virtual entities support is already configured on the Dataverse environment for a previous purpose, make sure to update the virtual entity solutions in Power Platform admin center. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
+If dual-write and virtual entities were already set up on your Dataverse environment for a previous purpose, be sure to update the virtual entity solutions in the Power Platform admin center. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
