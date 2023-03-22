@@ -24,7 +24,7 @@ There are the new features and functionalities that are now supported in the tax
 
 ## Override sales tax
 
-In tax integration, you cannot edit the tax group and item tax group on a line item because taxes are determined by the tax calculation service. The **Override sales tax group** functionality allows you to change the tax group or item tax group specified on a line item to calculate sales tax. This calculation overrides the tax groups determined by the tax calculation service.
+In tax integration, you cannot edit the tax group and item tax group on a line (and charge) because taxes are determined by the tax calculation service. The **Override sales tax group** functionality allows you to change the tax group or item tax group specified on a line (and charge) to calculate sales tax. This calculation overrides the tax groups determined by the tax calculation service.
 
 A new checkbox is added beside the tax group and item tax group. When **Override sales tax** is set to **Yes**, the user can select a specific tax group and item tax group for tax calculation.
 
@@ -33,24 +33,36 @@ A new checkbox is added beside the tax group and item tax group. When **Override
 Complete the following steps to enable this functionality.
 
 1. Add the **Override sales tax** field to the transaction line table schema.
-    - Also add it to the *Sales tax* field group if it exists.
-    - Map it the **SalesPurchJournalLine** map. This map is used widely in tax integration. If not mapped, additional code may be needed to realize the expected function.
-    
+
      ![OverrideSalesTaxTableSchema.jpg](./media/override-sales-tax-table-schema.jpg)
-     
-2. Add `allowEdit` control to the transaction form to control the editability of the tax group and item tax group. Usually, 3 places to add:
+    - Also add it to the *Sales tax* field group if it exists.
+    - Set its default visibility to false on related transaction form datasource.
+    - Map it the **SalesPurchJournalLine** map. This map is used widely in tax integration. If not mapped, additional code may be needed to realize the expected function.
 
-    ```X++
-            if (isTaxIntegrationEnabledForPurchase)
+2. Set its visibility and editability on the transaction form.
+   - Set its default visibility to false on the transaction form datasource.
+   - Set its visibility to true, only if tax integration is enabled for this transaction:
+        ```X++
+            if (isTaxIntegrationEnabledForPurchase) // Condition should be modified according to the business process
             {
-                PurchLine_ds.object(fieldNum(PurchLine, TaxGroup)).allowEdit(purchLine.OverrideSalesTax == NoYes::Yes);
-                PurchLine_ds.object(fieldNum(PurchLine, TaxItemGroup)).allowEdit(purchLine.OverrideSalesTax == NoYes::Yes);
+                PurchTable_ds.object(fieldNum(PurchTable, OverrideSalesTax)).visible(true);
+                PurchLine_ds.object(fieldNum(PurchLine, OverrideSalesTax)).visible(true);
             }
-    ```
+        ```
 
-   - the `init()` method of the form
-   - the `active` method of line
-   - the modified() method of the "Override sales tax" field.
+   - Add `allowEdit` control to the transaction form to control the editability of the tax group and item tax group. Usually, 3 places to add:
+
+        ```X++
+                if (isTaxIntegrationEnabledForPurchase) // Condition should be modified according to the business process
+                {
+                    PurchLine_ds.object(fieldNum(PurchLine, TaxGroup)).allowEdit(purchLine.OverrideSalesTax == NoYes::Yes);
+                    PurchLine_ds.object(fieldNum(PurchLine, TaxItemGroup)).allowEdit(purchLine.OverrideSalesTax == NoYes::Yes);
+                }
+        ```
+
+     - the `init()` method of the form
+     - the `active` method of line
+     - the modified() method of the "Override sales tax" field.
 
 3. Set the value of override sales tax in data retrieval activity.
    
@@ -200,7 +212,7 @@ If your transaction table is not mapped to this `SalesPurchJournalTable`. Just w
 
 ### Data persistence
 
-Call the `TaxIntegrationListCodeUtility::saveListCodeFromDocumentToTable()` method in the `saveDocument` method of the newly created data Persistence class:
+Call the `TaxIntegrationListCodeUtility::saveListCodeFromDocumentToTable()` method in the `saveDocument` method of the newly created data persistence class:
 
 ```X++
     /// <summary>
