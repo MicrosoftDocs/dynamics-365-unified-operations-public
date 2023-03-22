@@ -68,6 +68,12 @@ You can select to **View** or **Delete** the report.
 
 To generate a report using **Report designer**, open the report definition and then select the **Generate** button on the toolbar. The **Report queue status** page will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
 
+### What to expect once report generation request is submitted?
+ - Once customer submitted a report generation request, the report should appear in the Report Queue Status form under Report Queue list.
+ - If multiple report generation requests are submitted at the same time, only up to 3 reports can be processed concurrently at the same time on an FR Process Service instance and up to 5 reports can be processed concurrently in an environment.
+ - The report generation queue is a FIFO queue.
+ - Report generation can be cancelled before it enters final state by selecting the report and click "Remove" button. Once the report is cancelled successfully, the report will end in Canceled state.
+ 
 ## Report groups
 
 Report groups are an efficient way to generate several reports at the same time. For example, suppose you know that at month-end your users generate eight reports every month. Create a Report group and rather than selecting **Generate** for each of the eight reports in the group, you can select **Generate** for the report group and the eight reports will be generated in one step. When the reports in the selected report group have been generated, you can go to **Financial reports** (**General ledger > Inquires and reports > Financial reports**) to view the individual reports. Complete the following steps to set up a report group.
