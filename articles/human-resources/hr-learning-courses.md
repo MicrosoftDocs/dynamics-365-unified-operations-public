@@ -38,9 +38,9 @@ Human resources administrators and managers can use the courses features to main
 
 ## Course templates
 
-You can use course templates to categorize courses according to the structure or content. You can create course templates on the **Course templates** page. These templates can be used to prefill information when creating a new course.   
+You can use course templates to categorize courses according to their structure or content. They can be used to prefill information when a new course is created. You can create course templates on the **Course templates** page.
 
-The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page. 
+The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab of the **Courses** page. 
 
 ## Course setup type
 The following table lists the three setup types for courses. Setup types determine the structure of the course.
@@ -48,7 +48,7 @@ The following table lists the three setup types for courses. Setup types determi
 <table>
 <thead>
 <tr class="header">
-<th>Setup </th>
+<th>Setup</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -74,8 +74,7 @@ The following table lists the three setup types for courses. Setup types determi
 
 
 ## Course status
-The **Course status** is located at the top of the page. 
-The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.
+The **Course status** field is located at the top of the page. The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.
 
 <table>
 <thead>
