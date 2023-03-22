@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 The settings on the **Manager self service** tab affect what managers can view on the **Manager self service** workspace. 
 
-Go to **Human Resouces parameters**, select the **Manager self service** tab, and configure the following options: 
+Go to **Human Resources parameters**, select the **Manager self service** tab, and configure the following options: 
  - **View emergency contacts** 
  - **Learning**  
  - **View expiring records** 
