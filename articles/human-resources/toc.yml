@@ -310,8 +310,6 @@
         items:
         - name: Configure Human resources parameters
           href: hr-setup-parameters.md
-        - name: Configure Manage self service  
-          href: configure-mss.md
         - name: Configure Human resources shared parameters
           href: hr-setup-shared-parameters.md
         - name: Restrict access to workers by legal entity
