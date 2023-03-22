@@ -66,5 +66,5 @@ Managers can use **Manage learning** for direct reports and extended reports.
 
 To view **Learning** tab in **Manager self service**, go to **Human resources parameters**, select **Direct reports only** or **Extended reports** (includes Direct reports). 
 
-This feature allows managers visibility to learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. This information can help managers track direct reports courses (extended reports, if chosen) and progress to ensure that workers stay on track and complete assigned courses in a timely manner.  
+This feature provides managers visibility into learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. This information can help managers track direct reports courses (extended reports, if chosen) and progress to ensure that workers stay on track and complete assigned courses in a timely manner.  
 
