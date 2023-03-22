@@ -40,7 +40,7 @@ There are two ways to manage participants:
    b. Assign participants  
       - Once participants have been identified, click **Assign participants**. 
 
- 
+ [![Assign participants.](./media/Assign-part1.png)](./media/Assign-part1.png)
 
 Allowed actions within **Participants** tab:  
  - Add participants 
@@ -50,12 +50,9 @@ Allowed actions within **Participants** tab:
  - Change status (virtual courses only) 
 
  
-
 2. Go to **Course participants** 
 
-Graphical user interface, text, application
-
-Description automatically generated 
+ [![Course participants.](./media/Course-part2.png)](./media/Course-part2.png) 
 
  - Select course participants, click **New** to add participant 
  - This process is one by one, use option one for mass assignment.  
@@ -63,9 +60,7 @@ Description automatically generated
 ## Manager self service: 
 Managers can use **Manage learning** for direct reports and extended reports.   
 
-Graphical user interface, application, Teams
-
-Description automatically generated 
+ [![Manager self service.](./media/Manager-self3.png)](./media/Manager-self3.png) 
 
 To view **Learning** tab in **Manager self service**, go to **Human resources parameters**, select **Direct reports only** or **Extended reports** (includes Direct reports). This feature allows managers visibility to learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. With access to this information, the manager can track direct reports courses (extended reports, if chosen) and progress to ensure that 
 workers stay on track and complete assigned courses in a timely manner.  
