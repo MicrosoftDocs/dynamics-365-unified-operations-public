@@ -43,7 +43,7 @@ Go to **Human Resouces parameters**, select the **Manager self service** tab, 
  - **Exiting workers range**
  - **Useful URL links for managers** 
 
-For more information about how to set up **Manager self service**, see [Employee and Manager self service overview.](hr-employee-manager-self-service-overview). 
+For more information about how to set up **Manager self service**, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md). 
 
 [![Manager self service](./media/MSS.png)](./media/MSS.png)]
 
