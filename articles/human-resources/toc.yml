@@ -744,8 +744,10 @@
       items:
       - name: Course overview
         href: hr-course-overview.md
-      - name: Set up training courses
+      - name: Create training courses
         href: hr-learning-courses.md
+      - name: Manage course participants  
+        href: hr-manage-part.md
       - name: Questionnaires overview
         href: hr-learning-questionnaires.md
       - name: Design questionnaires
