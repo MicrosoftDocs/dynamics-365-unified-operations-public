@@ -33,7 +33,7 @@ You must choose to use *either* the price component code setup (a single price t
 | **Price component codes** | *Price component codes* are defined and structured based on the function and business usage of your pricing elements.<!--KFM: Are the "pricing elements" the same as the "price components" we mention earlier? --><ul><li>Price component codes can be built following the price sequence.</li><li>Price component codes can establish defaults for posting and the discount concurrency mode.</li><li>Each pricing and discount record is assigned to a specific price component code.</li></ul> |
 | **Price component groups** | Price component codes can be grouped into *price component groups*. |
 | **Price attribute groups** | Each *price attribute group* contains several price attributes. One price component code can have one *header price attribute group* and one *line price attribute group*. Use these to define pricing rules based on attribute values defined in *pricing component codes*. |
-| **Combination rank** | The *combination rank* for a price attribute group let you define what to do when multiple rules apply from the same price component code for a given order. If the concurrency mode is based on the *price attribute combination rank*, then the rule with highest rank will apply. |
+| **Combination rank** | The *combination rank* for a price attribute group lets you define what to do when multiple rules apply from the same price component code for a given order. If the concurrency mode is based on the *price attribute combination rank*, then the rule with highest rank will apply. |
 
 <!-- KFM: Maybe the above table should also have a row for *price attributes*. -->
 

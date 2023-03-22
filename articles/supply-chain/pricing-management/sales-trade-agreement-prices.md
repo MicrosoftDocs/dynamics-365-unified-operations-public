@@ -45,7 +45,7 @@ Several configuration settings affect the way sales trade agreements work in Pri
         - If no sales trade agreement price applies, then use the qualifying rules posted to the **Trade agreement journals**.
     - *No* – <!-- KFM: Description needed -->
 1. Open the **General** tab.
-1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching price rule records <!-- KFM: Matching to what? Sales orders? Which rules? -->.
+1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching price rule records <!-- KFM: Matching to what? Sales orders? Which rules? This appears to also affect the pricing rule validation period. How does it affect sales trade agreements? -->.
 1. Go to **Pricing management \> Setup \> Trade agreement prices \> Trade agreement journal names**. Select the **Enable price attribute** check box <!-- Which row do we mean? Are we supposed to be creating a new name here? Why do I want to select this checkbox, and what if I don't? Maybe this should be in another section. --> to allow you to create sales trade agreement journals with the price attributes.
 
 ## Set up your price component codes and pricing structures
@@ -66,7 +66,7 @@ Follow these steps to create a new sales trade agreement journal:
 1. In the **Name** field, select a trade agreement journal name. The name you choose must be configured on the **Trade agreement journal names** page with  **Enable price attributes** set to *Yes* and Relation set to *Price (sales)*.
 1. With your new row still selected, select **Lines** on the Action Pane.
 1. The **Journal lines, trade agreement** page opens On the Action Pane, select **New** to create a new line. <!-- KFM: We should explain what these lines mean and why we are adding them. -->
-1. The **Edit price attribute** dialog opens, where you can enter the attribute value as rule condition. <!-- KFM: The second part of this sentence isn't clear. Please revise. --> 
+1. The **Edit price attributes** dialog opens, where you can enter the attribute value as rule condition. <!-- KFM: The second part of this sentence isn't clear. Please revise. --> 
 1. Expand the **General** FastTab and make the following settings:
     - **Price attribute group combination** – Select one of the price attribute combinations that is associated with your *Sales trade agreement price* [price component code](price-component-code.md). <!-- KFM: What affect will this have? Can we give some advice? Other settings in the dialog disappear depending on what we select here.  -->
     - **Header price attribute group** – <!-- KFM: Description needed -->
