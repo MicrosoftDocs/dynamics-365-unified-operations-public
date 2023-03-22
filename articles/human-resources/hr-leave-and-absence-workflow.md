@@ -4,7 +4,7 @@
 title: Create a leave request workflow
 description: Create a Leave and absence request workflow to manage leave requests consistently in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 03/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -84,6 +84,27 @@ These examples show how you can create different types of workflow conditions by
 - Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees. For more information about automatic actions, see [Configure approval processes in a workflow](../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md).
 
 - Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.
+
+### Leave request and workflow status
+
+When a leave request is created, two statuses are assigned to the leave request: 
+ - a workflow status that associated to the workflow as part of the leave request that was submitted 
+ - a leave request status  
+
+
+The leave request statuses of a leave request are:
+**Draft** – A leave request that is created but not submitted.
+**Submitted** – A leave request that is submitted for review.
+**Denied** – When a leave request is denied by a manager or an absence manager.
+**Approved** – When a leave request is approved by a manager or an absence manager. 
+**Failed** - This is a leave request status when validation of a leave request fails. It could be due to an insufficient balance at the time of approval.
+
+
+The workflow statuses of the leave requests are:
+ - **In review** – This is the workflow status after a leave request is submitted. When a leave request is **In review**, workflow has been triggered for the next steps.
+ - **Cancelled** – This is the workflow status when a user decides to cancel the workflow.
+ - **Completed** – This is the workflow status when no further action is required. 
+
 
 ## See also
 
