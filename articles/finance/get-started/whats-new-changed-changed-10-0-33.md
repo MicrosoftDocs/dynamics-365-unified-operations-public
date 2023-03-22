@@ -39,6 +39,14 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 - **General availability of release (self-update):** April 2023
 - **General availability of release (auto-update):** May 2023
 
+## Features included in this release
+
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
+
+| Feature area | Feature | More information | Enabled by |
+|--------------|---------|------------------|------------|
+| Additional languages available | Four additional languages are available |11 new languages are available for user selection in the preferred language list:: Spanish (Chile), Spanish (Colombia), Spanish (Costa Rica), Spanish (Nicaragua), Spanish (Panama), Spanish (Paraguay), Spanish (Uruguay), Spanish (Argentina), English (Pakistan), English (Philippines), English (Malta). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
+
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-finance).
