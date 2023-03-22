@@ -35,8 +35,10 @@ participants that you can register for a course is defined on the **General** Fa
 There are two ways to manage participants: 
 
 1. Go to **Course** and click the **Participants** tab. This option works well for mass assignment or more than one participant at a time. 
+
    a. Add participants 
        - Utilize the **Filter by** or **Group by** functionality to easily find participants.  
+
    b. Assign participants  
       - Once participants have been identified, click **Assign participants**. 
 
@@ -62,7 +64,7 @@ Managers can use **Manage learning** for direct reports and extended reports.
 
  [![Manager self service.](./media/Manager-self3.png)](./media/Manager-self3.png) 
 
-To view **Learning** tab in **Manager self service**, go to **Human resources parameters**, select **Direct reports only** or **Extended reports** (includes Direct reports). This feature allows managers visibility to learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. With access to this information, the manager can track direct reports courses (extended reports, if chosen) and progress to ensure that 
-workers stay on track and complete assigned courses in a timely manner.  
+To view **Learning** tab in **Manager self service**, go to **Human resources parameters**, select **Direct reports only** or **Extended reports** (includes Direct reports). 
 
-For more information on assign courses go to (Manage participants link). 
+This feature allows managers visibility to learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. This information can help managers track direct reports courses (extended reports, if chosen) and progress to ensure that workers stay on track and complete assigned courses in a timely manner.  
+
