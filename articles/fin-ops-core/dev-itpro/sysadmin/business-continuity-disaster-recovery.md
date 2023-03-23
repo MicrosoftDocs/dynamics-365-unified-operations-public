@@ -35,8 +35,7 @@ Finance and operations apps adhere to the Microsoft Business Continuity and Disa
 
 If the outage is caused by issues with underlying services, because of factors such as faulty hardware or network outage, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it's routed to the secondary region instances.
 
-In the event of an unanticipated region-wide outage, such as a natural disaster that affects the whole Azure region, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it is routed to the secondary region instances. In these cases, customers might experience up to 15 minutes of data loss, also known as Recovery Point Objective (
-), depending on the nature and timing of the outage. The recovery time objective (RTO) could vary from four to ten hours.
+In the event of an unanticipated region-wide outage, such as a natural disaster that affects the whole Azure region, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it is routed to the secondary region instances. In these cases, customers might experience up to 15 minutes of data loss, also known as Recovery Point Objective (RPO), depending on the nature and timing of the outage. The recovery time objective (RTO) could vary from four to ten hours.
 
 If a failover occurs, the applicable service will work in limited mode. Update maintenance can't be triggered in failover mode.
 
