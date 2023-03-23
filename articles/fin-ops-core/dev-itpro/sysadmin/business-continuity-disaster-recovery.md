@@ -23,7 +23,7 @@ Customers who have purchased the appropriate licenses can deploy a production in
 
 For production environments, replicas of the different storage services (Azure SQL Database and file storage) are established in the secondary region at the time of deployment. These replicas are known as *geo-secondaries*.
 
-The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency, or lag, between the primary data sources and their corresponding geo-secondary replicas. Typically, this lag is less than a few minutes. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
+The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency, or lag, between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
 ![Geo-secondaries](media/geo-secondary-replicas.png)
 
@@ -33,11 +33,9 @@ As the preceding illustration shows, compute infrastructure, like data storage s
 
 Finance and operations apps adhere to the Microsoft Business Continuity and Disaster Recovery (BCDR) standard. This standard requires that a BCDR plan be reviewed, updated, and tested at least once a year for every online service. The Microsoft Cloud Business Continuity and Disaster Recovery Plan Validation Report is available to customers in [Service Trust Portal](https://servicetrust.microsoft.com/).
 
-If the outage is caused by issues with underlying services, because of factors such as faulty hardware or network outage, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it's routed to the secondary region instances. In these cases, the recovery point objective (RPO) is small: up to a few seconds or a couple of minutes.
+If the outage is caused by issues with underlying services, because of factors such as faulty hardware or network outage, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it's routed to the secondary region instances. 
 
-In the event of an unanticipated region-wide outage, such as a natural disaster that affects the whole Azure region, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it's routed to the secondary region instances. In these cases, customers might experience up to 15 minutes of data loss, depending on the nature and timing of the outage. RPO is small: up to a few seconds or a couple of minutes.
-
-The recovery time objective (RTO) varies, depending on the nature of the impact. It can be from four to ten hours.
+In the event of an unanticipated region-wide outage, such as a natural disaster that affects the whole Azure region, and if Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic so that it's routed to the secondary region instances. In these cases, customers might experience up to 15 minutes of data loss also known as Recovery Point Objective (RPO), depending on the nature and timing of the outage. The recovery time objective (RTO) could vary from four to ten hours.
 
 If a failover occurs, the applicable service will work in limited mode. Update maintenance can't be triggered in failover mode.
 
