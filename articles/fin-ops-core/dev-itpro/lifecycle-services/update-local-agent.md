@@ -60,7 +60,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ## What's new in local agent 3.1.0
 - Local agent 3.2.0 uptakes a new Service Fabric Explorer SDK and runtime.
-- This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We will look at bringing back checkpoints once the Azure Storage libraries support it again.
+- This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We'll look at bringing back checkpoints once the Azure Storage libraries support it again.
 - Artifact management logic has been improved, and re-downloading existing artifacts should no longer take place.
 - Filehash validation has been added to ensure artifacts in the artifact store match exactly what is in the Lifecycle Services artifact store.
 - The MSAL libraries are now used to authenticate with Microsoft Azure Active Directory (Azure AD)r.
@@ -192,7 +192,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ## Local agent expiration dates
 
-After the date when a local agent becomes expired, it can no longer communicate with Lifecycle Services. Therefore, you will have to update your local agent to a supported version. Going forward, we plan to support only a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point, the oldest version that doesn't have an expiration date will receive an expiration date. The expiration date will be set a few months into the future, so that customers have time to upgrade to a newer version.
+After the date when a local agent becomes expired, it can no longer communicate with Lifecycle Services. Therefore, you'll have to update your local agent to a supported version. Going forward, we plan to support only a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point, the oldest version that doesn't have an expiration date will receive an expiration date. The expiration date will be set a few months into the future, so that customers have time to upgrade to a newer version.
 
 > [!NOTE]
 > A released local agent version will be supported for at least six months.
