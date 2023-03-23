@@ -4,7 +4,7 @@
 title: Set up main account categories
 description: This article explains how to set up main account categories in Dynamics 365 Finance. 
 author: aprilolson
-ms.date: 08/08/2019
+ms.date: 03/23/2023
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
