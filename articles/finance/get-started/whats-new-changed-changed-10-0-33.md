@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.33 (April 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.33 preview release.
 author: twheeloc
-ms.date: 02/23/2023
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,14 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 - **Preview of release:** March 2023
 - **General availability of release (self-update):** April 2023
 - **General availability of release (auto-update):** May 2023
+
+## Features included in this release
+
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
+
+| Feature area | Feature | More information | Enabled by |
+|--------------|---------|------------------|------------|
+| Additional languages available | Eleven additional languages are available |Eleven new languages are available for user selection in the preferred language list: Spanish (Chile), Spanish (Colombia), Spanish (Costa Rica), Spanish (Nicaragua), Spanish (Panama), Spanish (Paraguay), Spanish (Uruguay), Spanish (Argentina), English (Pakistan), English (Philippines), English (Malta). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
 
 ## Feature enhancements included in this release
 
