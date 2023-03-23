@@ -30,6 +30,9 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 
+> [!NOTE]
+> The Azure DevOps pipeline must be run by a user that has **Environment manager** [role](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#configuring-project-security) in the corresponding LCS project.
+
 ## Dynamics 365 for Finance + Operations (on-premises) package deployment
 
 Starting with version 0.2.1239020 of the **Dynamics 365 finance and operations tools** extension, it is possible to deploy packages to local business data environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You will then be able to select **Software deployable package for on-premises environments** under the **Type of asset** field.
