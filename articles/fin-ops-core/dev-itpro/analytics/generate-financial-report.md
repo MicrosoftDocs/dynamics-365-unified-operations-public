@@ -69,10 +69,10 @@ You can select to **View** or **Delete** the report.
 To generate a report using **Report designer**, open the report definition and then select the **Generate** button on the toolbar. The **Report queue status** page will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
 
 ### What to expect once report generation request is submitted?
- - Once customer submitted a report generation request, the report should appear in the Report Queue Status form under Report Queue list.
- - If multiple report generation requests are submitted at the same time, only up to 3 reports can be processed concurrently at the same time on an FR Process Service instance and up to 5 reports can be processed concurrently in an environment.
+ - Once customer submitted a report generation request, the report should appear in the **Report queue status** page under **Report queue list**.
+ - If multiple report generation requests are submitted at the same time, up to three reports can be processed concurrently at the same time on an Financial report process service instance and up to five reports can be processed concurrently in an environment.
  - The report generation queue is a FIFO queue.
- - Report generation can be cancelled before it enters final state by selecting the report and click "Remove" button. Once the report is cancelled successfully, the report will end in Canceled state.
+ - Report generation can be cancelled before it enters final state by selecting the report and click **Remove**. Once the report is cancelled successfully, the report will be **Canceled**.
  
 ## Report groups
 
