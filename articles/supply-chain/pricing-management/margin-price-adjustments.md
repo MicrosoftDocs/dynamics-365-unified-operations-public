@@ -1,6 +1,6 @@
 ﻿---
-title: Margin component price adjustments
-description: This article describes how to set up and use margin component price adjustments.
+title: Margin price adjustments
+description: This article describes how to set up and use margin price adjustments.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Margin component price adjustments
+# Margin price adjustments
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to set up and use margin component price adjustments.
+This article describes how to set up and use margin price adjustments.
 
-Pricing management enables you to use *margin component price adjustments* to item prices up or down from the base price. You can set this up by including one or price component codes of type *Margin component price adjustment* in your price structures. Across price component codes, price adjustment are compounded and add up to the total price adjustment. <!-- KFM: Do we *always* compound these? -->
+Pricing management enables you to use *margin price adjustments* to move item prices up or down from the base price. You can set this up by including one or price component codes of type *Margin component price adjustment* in your price structures. Across price component codes, price adjustment are compounded and add up to the total price adjustment. <!-- KFM: Do we *always* compound these? -->
 
-In the scenarios that when you build your selling price based on the inventory standard cost or purchased price, it represents the layers of the margin components that add up to those base price. <!-- KFM: This isn't clear. Please revise. -->
+In scenarios where you build your selling price based on the inventory standard cost or purchased price, it represents the layers of the margin components that add up to those base price. <!-- KFM: This isn't clear. Please revise. -->
 
-Price modifications can be made using margin component price adjustments. The price changes are common and may be seasonal or per specific events. You can easily adjust your price without changing your base price. <!-- KFM: What new point are we making here? -->
+Margin component price adjustments can be associated with many different types of agreements, promotions, and events. They make it easy for you to adjust price without changing the base price.
 
 ## Prerequisites
 

@@ -2176,7 +2176,9 @@
         - name: Customer and product price attribute groups
           href: pricing-management/customer-product-attribute-groups.md
         - name: Price component codes
-          href: pricing-management/price-component-codes.md
+          href: pricing-management/price-component-code.md
+        - name: Price component code posting
+          href: pricing-management/price-component-posting.md
       - name: Price structures
         items:
         - name: Price structure overview
@@ -2185,12 +2187,22 @@
           href: pricing-management/price-structure-multiple.md
         - name: Set up company to use a single price structure
           href: pricing-management/price-structure-single.md
-      - name: Base price
+      - name: Base prices and sales trade agreements
         items:
-        - name: Vendor list prices
+        - name: Vendor list price and price adjustments overview
           href: pricing-management/vendor-list-price.md
+        - name: Price determination rules
+          href: pricing-management/price-determination-rules.md
         - name: Base price versions
           href: pricing-management/base-price-versions.md
+        - name: Sales trade agreement prices
+          href: pricing-management/sales-trade-agreement-prices.md
+      - name: Discounts and margin adjustments
+        items:
+        - name: Margin price adjustments
+          href: pricing-management/margin-price-adjustments.md
+        - name: Configure pricing rules
+          href: pricing-management/price-rules.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page
