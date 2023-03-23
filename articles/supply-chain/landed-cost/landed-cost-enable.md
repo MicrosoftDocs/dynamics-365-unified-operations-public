@@ -40,3 +40,14 @@ Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/f
 - **Feature name:** *(Preview) Enable shipping container creation and update in batch mode*
 
 The *(Preview) Enable shipping container creation and update in batch mode* feature requires Supply Chain Management version 10.0.33 or later.
+
+## Turn split cost type codes for multiple voyages in the vendor invoice journale feature on or off
+
+This feature for the Landed cost module enables business to better allocate transportation costs associated with multiple voyages. With this feature, when a user is creating a vendor invoice journal for multiple voyages, each cost type code will have its own journal line that includes the voyage name in its description. This allows for easier reconciliation. 
+
+Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Transportation management*
+- **Feature name:** *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages*
+
+The *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* feature requires Supply Chain Management version 10.0.33 or later.
