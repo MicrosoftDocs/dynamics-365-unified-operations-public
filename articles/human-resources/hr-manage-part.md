@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage participants in training courses
-description: Human resources administrators and managers can use the courses features to maintain information about course participants.
+description: This article explains how Human resources administrators and managers can use the course features to maintain information about course participants.
 author: twheeloc
 ms.date: 03/20/2023
 ms.topic: article
@@ -29,42 +29,39 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Manage participants in training courses
 
-Course participants are workers who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of 
-participants that can register for a course is defined on the **General** FastTab on the **Courses** page.
+Course participants are workers who participate in a training course or event. You can register participants only for open courses. The minimum number and maximum number of participants that can register for a course are defined on the **General** FastTab of the **Courses** page.
 
-There are two ways to manage participants: 
+There are two ways to manage participants:
 
-1. Go to **Course** and click the **Participants** tab. This option works well for mass assignment or more than one participant at a time. 
+- **Option 1:** This option works well for mass assignment of more than one participant at a time.
 
-   a. Add participants 
-       - Utilize the **Filter by** or **Group by** functionality to easily find participants.  
+    1. Go to **Course**, and then, on the **Participants** tab, add participants. You can use the **Filter by** or **Group by** functionality to easily find participants.
+    1. After you've identified the participants, select **Assign participants**.
 
-   b. Assign participants  
-      - Once participants have been identified, click **Assign participants**. 
+    [![Participants tab.](./media/Assign-part1.png)](./media/Assign-part1.png)
 
- [![Assign participants.](./media/Assign-part1.png)](./media/Assign-part1.png)
+    On the **Participants** tab, you can perform the following tasks:
 
-Allowed actions within **Participants** tab:  
- - Add participants 
- - Remove participants 
- - Confirm participants (in-person courses only) 
- - Add/change due date (virtual courses only) 
- - Change status (virtual courses only) 
+    - Add participants.
+    - Remove participants.
+    - Confirm participants (in-person courses only).
+    - Add or change the due date (virtual courses only).
+    - Change the status (virtual courses only).
 
- 
-2. Go to **Course participants** 
+- **Option 2:** This option is used to assign one participant at a time. (For mass assignment, use option 1.) 
 
- [![Course participants.](./media/Course-part2.png)](./media/Course-part2.png) 
+    1. On the Action Pane, on the **Course** tab, in the **Related information** group, select **Course participants**.
+    2. Select a course participant, select **New** to add a participant.
 
- - Select course participants, click **New** to add participant 
- - This process is one by one, use option one for mass assignment.  
+    [![Course participants button on the Action Pane.](./media/Course-part2.png)](./media/Course-part2.png)
 
-## Manager self service: 
-Managers can use **Manage learning** for direct reports and extended reports.   
+## Manager self service
 
- [![Manager self service.](./media/Manager-self3.png)](./media/Manager-self3.png) 
+Managers can use **Manage learning** for direct reports and extended reports.
 
-To view **Learning** tab in **Manager self service**, go to **Human resources parameters**, select **Direct reports only** or **Extended reports** (includes Direct reports). 
+[![Manager self service.](./media/Manager-self3.png)](./media/Manager-self3.png)
 
-This feature provides managers visibility into learning, this includes all assigned courses, overdue courses, and due soon courses. Manager can assign courses by clicking **Assign courses**. This information can help managers track direct reports courses (extended reports, if chosen) and progress to ensure that workers stay on track and complete assigned courses in a timely manner.  
+To view the **Learning** tab in **Manager self service**, open the **Human resources parameters** page, and select **Direct reports only** or **Extended reports**. (If you select **Extended reports**, direct reports are included.)
+
+This feature gives managers visibility into learning, including all courses that are assigned, overdue, and due soon. Manager can assign courses by selecting **Assign courses**. This information can help managers track courses for direct reports (or extended reports), and progress through them, to ensure that workers stay on track and complete assigned courses in a timely manner.
 
