@@ -76,4 +76,13 @@ You can plan and process an outbound load to ship specific items from a companyâ
 
 Supply Chain Management provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
 
+## Turn Assign shipments to related route segments feature on or off
+
+This feature brings correct freight cost apportionment for multi-segment scheduled routes with inbound and outbound logistic process. With the correct freight cost apportionment, you can evaluate the true profitability of sales orders by apportioning freight cost at the item line level. This feature provides a fair and trusted foundation for the billing of freight cost and also reflects the cost of inbound freight in the material valuation of stock.
+
+Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Transportation management*
+- **Feature name:** *Assign shipments to related route segments*
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
