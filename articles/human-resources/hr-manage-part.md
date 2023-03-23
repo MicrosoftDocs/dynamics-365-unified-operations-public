@@ -35,8 +35,8 @@ There are two ways to manage participants:
 
 - **Option 1:** This option works well for mass assignment of more than one participant at a time.
 
-    1. Go to **Course**, and then, on the **Participants** tab, add participants. You can use the **Filter by** or **Group by** functionality to easily find participants.
-    1. After you've identified the participants, select **Assign participants**.
+    1. On the **Course details** page, on the **Participants** tab, find and select participants. You can use the **Filter by** or **Group by** functionality to easily find participants.
+    1. After you've selected the participants, select **Assign participants**.
 
     [![Participants tab.](./media/Assign-part1.png)](./media/Assign-part1.png)
 
@@ -51,17 +51,17 @@ There are two ways to manage participants:
 - **Option 2:** This option is used to assign one participant at a time. (For mass assignment, use option 1.) 
 
     1. On the Action Pane, on the **Course** tab, in the **Related information** group, select **Course participants**.
-    2. Select a course participant, select **New** to add a participant.
+    2. Select a course participant, and then select **New** to add a participant.
 
     [![Course participants button on the Action Pane.](./media/Course-part2.png)](./media/Course-part2.png)
 
 ## Manager self service
 
-Managers can use **Manage learning** for direct reports and extended reports.
+Managers can use the **Learning** tab to manage learning for direct reports and extended reports.
 
 [![Manager self service.](./media/Manager-self3.png)](./media/Manager-self3.png)
 
-To view the **Learning** tab in **Manager self service**, open the **Human resources parameters** page, and select **Direct reports only** or **Extended reports**. (If you select **Extended reports**, direct reports are included.)
+To view the **Learning** tab in **Manager self service**, open the **Human resources parameters** page, and then, on the **Learning** tab, in the **View direct reports** assigned course, select **Direct reports only** or **Extended reports**. (If you select **Extended reports**, direct reports are included.)
 
 This feature gives managers visibility into learning, including all courses that are assigned, overdue, and due soon. Manager can assign courses by selecting **Assign courses**. This information can help managers track courses for direct reports (or extended reports), and progress through them, to ensure that workers stay on track and complete assigned courses in a timely manner.
 
