@@ -20,7 +20,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2023-02-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # View journal entries or transactions
