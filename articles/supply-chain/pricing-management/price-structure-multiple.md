@@ -39,7 +39,7 @@ To use multiple price structures for a company:
 
 To set up multiple price structures, you will use the **Price trees** page, as described in the following procedure.
 
-1. Go to **Pricing management \> Setup \> Price component codes \> Price trees**. This page shows your current price structures (if any), and allows you to add, remove, and configure your price trees. 
+1. Go to **Pricing management \> Setup \> Price component codes \> Price trees**. This page shows your current price structures (if any), and allows you to add, remove, and configure your price trees.
 
     [<img src="media/price-trees-setup.png" alt="The Price trees page." title="The Price trees page" width="720" />](media/price-trees-setup.png#lightbox)
 

@@ -2201,8 +2201,12 @@
         items:
         - name: Margin price adjustments
           href: pricing-management/margin-price-adjustments.md
+        - name: Discounts
+          href: pricing-management/discounts.md
         - name: Configure pricing rules
           href: pricing-management/price-rules.md
+        - name: Resolving concurrent pricing rules
+          href: pricing-management/concurrent-pricing-rules.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page
