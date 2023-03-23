@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This article explains how to update the local agent.
 author: faix
-ms.date: 09/02/2022
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -59,12 +59,12 @@ This article explains how to update the local agent. The latest version of the l
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
 
 ## What's new in local agent 3.1.0
-- Local agent 3.2.0 uptakes a new Service Fabric SDK and runtime.
-- This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there is now automated retry functionality that can be customized. We will look at bringing back checkpoints once the Azure Storage libraries support it again.
-- Artifact management logic has been improved and re-downloading existing artifacts should no longer taken place.
-- Filehash validation has been added to ensure that artifacts in the artifact store match exactly what is in the LCS artifact store.
-- The MSAL libraries are now used to authenticate with AAD.
-- Detection of the local agent being deprecated with clear messaging in SF explorer.
+- Local agent 3.2.0 uptakes a new Service Fabric Explorer SDK and runtime.
+- This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We will look at bringing back checkpoints once the Azure Storage libraries support it again.
+- Artifact management logic has been improved, and re-downloading existing artifacts should no longer take place.
+- Filehash validation has been added to ensure artifacts in the artifact store match exactly what is in the Lifecycle Services artifact store.
+- The MSAL libraries are now used to authenticate with Microsoft Azure Active Directory (Azure AD)r.
+- Detection of the local agent being deprecated with clear messaging in Service Fabric Explorer.
 
 > [!IMPORTANT]
 > This release is only compatible with 8.2+ Service Fabric clusters.
