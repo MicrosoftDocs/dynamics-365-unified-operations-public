@@ -38,8 +38,9 @@ This article explains how to update the local agent. The latest version of the l
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.2.0               | This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation | March 2023 | Not applicable |
 | 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |June 2022 | Not applicable |
-| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. | November 2021 | Not applicable |
+| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. | November 2021 | June 30, 2023 |
 | 2.7.2               | This version includes a fix for deploying older application versions. | October 2021 | June 30, 2023 |
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. | October 2021 | June 30, 2023 |
 | 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. | August 2021 | June 30, 2023 |
@@ -56,6 +57,18 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.1.0
+- Local agent 3.2.0 uptakes a new Service Fabric SDK and runtime.
+- This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there is now automated retry functionality that can be customized. We will look at bringing back checkpoints once the Azure Storage libraries support it again.
+- Artifact management logic has been improved and re-downloading existing artifacts should no longer taken place.
+- Filehash validation has been added to ensure that artifacts in the artifact store match exactly what is in the LCS artifact store.
+- The MSAL libraries are now used to authenticate with AAD.
+- Detection of the local agent being deprecated with clear messaging in SF explorer.
+
+> [!IMPORTANT]
+> This release is only compatible with 8.2+ Service Fabric clusters.
+> This release requires that a new local agent configuration file be downloaded from Lifecycle Services.
 
 ## What's new in local agent 3.1.0
 
