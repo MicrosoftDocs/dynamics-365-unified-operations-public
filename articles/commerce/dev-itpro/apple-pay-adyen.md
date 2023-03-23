@@ -4,7 +4,7 @@
 title: Set up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/15/2022
+ms.date: 03/23/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -124,7 +124,8 @@ To set up Apple Pay as a checkout payment option on your site's (non-express) ch
 Settings for the **Apple Pay** module are built into the module and connect with the configured Dynamics 365 Payment Connector for Apple Pay connector that's set up for the online channel in Commerce headquarters.
 
 #### Apple Pay payment module style
-The Dynamics 365 Commerce module library includes the Apple Pay module in the sample packaging. This includes references to the Apple Pay module in the default Themes included with the Commerce sample sites. If maintaining your own theme set and using Apple Pay, include a **checkout-apple-pay.scss** style with your theme to ensure the theme applies to the Apple Pay module.
+
+The Commerce module library includes the Apple Pay module in the sample packaging, and there are references to the Apple Pay module in the default themes included with the Commerce sample sites. If you use Apple Pay and maintain your own theme set, to ensure your theme applies to the Apple Pay module you must include a **checkout-apple-pay.scss** style for your theme.
 
 ### Apple Pay payment behavior
 
