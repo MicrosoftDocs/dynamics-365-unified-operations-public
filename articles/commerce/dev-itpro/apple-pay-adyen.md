@@ -123,6 +123,9 @@ To set up Apple Pay as a checkout payment option on your site's (non-express) ch
 
 Settings for the **Apple Pay** module are built into the module and connect with the configured Dynamics 365 Payment Connector for Apple Pay connector that's set up for the online channel in Commerce headquarters.
 
+#### Apple Pay payment module style
+The Dynamics 365 Commerce module library includes the Apple Pay module in the sample packaging. This includes references to the Apple Pay module in the default Themes included with the Commerce sample sites. If maintaining your own theme set and using Apple Pay, include a **checkout-apple-pay.scss** style with your theme to ensure the theme applies to the Apple Pay module.
+
 ### Apple Pay payment behavior
 
 The **Apple Pay** payment button is shown only on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). If a user isn't using one of these devices, the **Apple Pay** payment button is hidden from view.
