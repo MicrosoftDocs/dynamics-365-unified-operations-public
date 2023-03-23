@@ -58,7 +58,7 @@ This article explains how to update the local agent. The latest version of the l
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
 
-## What's new in local agent 3.1.0
+## What's new in local agent 3.2.0
 - Local agent 3.2.0 uptakes a new Service Fabric Explorer SDK and runtime.
 - This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We'll look at bringing back checkpoints once the Azure Storage libraries support it again.
 - Artifact management logic has been improved, and re-downloading existing artifacts should no longer take place.
