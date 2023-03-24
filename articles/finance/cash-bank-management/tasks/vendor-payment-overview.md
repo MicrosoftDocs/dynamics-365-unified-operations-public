@@ -4,7 +4,7 @@
 title: Vendor payment overview
 description: This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering an one-off payment. 
 author: kweekley
-ms.date: 03/24/2024
+ms.date: 03/24/2023
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
