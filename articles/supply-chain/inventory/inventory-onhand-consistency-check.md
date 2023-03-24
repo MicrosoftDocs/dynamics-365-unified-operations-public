@@ -1,6 +1,6 @@
 ---
 title: Actions need to take before running Inventory On-hand Consistency Check when Inventory Visibility Integration batch job is enabled
-description: This article provides some warning when you want to run consistency check. 
+description: This article provides prerequisite steps you need to take before running the On-hand Consistency Check.
 author: yuhuiyou
 ms.date: 08/02/2021
 ms.topic: article
