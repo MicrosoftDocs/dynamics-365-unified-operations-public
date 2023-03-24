@@ -41,7 +41,7 @@ This article explains how to configure all types of pricing rules, including mar
     - **Discount type** – If you're working with a discount rule, then the type of discount is shown here (read-only). This field isn't shown for margin price components.
     - **Publish status** – Initially set to *Draft*. Once you complete the record, you can activate the rule. <!--KFM: How do we activate it? What other values/effects might this have? It seems like this never changes. -->
 
-1. Continue setting up your price rule as described in the remaining sections of this article. Many settings are shared by all types of price rules, but some are specific to margin component price adjustment, all discounts, or specific types of discounts.
+1. Continue setting up your pricing rule as described in the remaining sections of this article. Many settings are shared by all types of pricing rules, but some are specific to margin component price adjustment, all discounts, or specific types of discounts.
 
 <!-- KFM: Add a step for enabling the rule when done? -->
 
@@ -51,18 +51,18 @@ The **General** FastTab provides basic settings for your pricing rule. Make the 
 
 ### General settings that apply to both margin price adjustments and discounts
 
-Make the following settings on the **General** settings tab for all all types of price rules.
+Make the following settings on the **General** settings tab for all all types of pricing rules.
 
 - **Status** – Set to *Enabled* or *Disabled*. Only *Enabled* records are available for making calculations. New records are set to *Disabled* and can only be enabled after you have finished making all the required settings. All settings are read-only for enabled rules, so you must disable a rule before you can edit it. <!-- KFM: What is the effect of this setting? For coupons, this is always disabled, what does that mean? -->
 - **Currency** – Select the currency for which this rule applies. <!--KFM: Does this mean that this record will only apply to orders or order lines that use this currency? -->
-- **Price component** – This read-only field shows which type of price rule this is (*Discounts* or *Margin component*).
+- **Price component** – This read-only field shows which type of pricing rule this is (*Discounts* or *Margin component*).
 - **Price component code** – Select the [price component code](price-component-code.md) that this rule applies to. Only existing price component codes of the applicable type are listed.
 - **Header price attribute group type** – <!-- KFM: Description needed -->
 - **Price attribute group** – <!-- KFM: Description needed -->
 
 ### General settings that apply to margin price adjustments only
 
-Make the following settings on the **General** settings tab if you are setting up a price rule for a margin component price adjustment.
+Make the following settings on the **General** settings tab if you are setting up a pricing rule for a margin component price adjustment.
 
 - **Concurrency model** – This read-only field tells you how the system will handle situations where more than one margin component price adjust applies (concurrence). Its value, *Price component code rank*, means that the system will choose a price adjustment based on the price attribute combination rank. <!--KFM: This doesn't seem quite right. Is it actually about finding the *order* in which adjustments are applied? -->
 - **Quantity tiers** – Set to *Yes* to enable the Quantity tiers FastTab, which lets you establish price adjustments that vary based on the sales order line quantity.
@@ -72,7 +72,7 @@ Make the following settings on the **General** settings tab if you are setting u
 
 ### General settings that apply to discounts only
 
-Make the following settings on the **General** settings tab if you are setting up a price rule for a discount. Not all types of discounts include all of these settings.
+Make the following settings on the **General** settings tab if you are setting up a pricing rule for a discount. Not all types of discounts include all of these settings.
 
 - **Discount account** – If you'd like to post the discount amount for this discount record to a separate general ledger account, then specify that account here. This setting overrides the similar setting available for price structures (**Price component code setup** or **Price tree**). For more information, see [Price component posting](price-component-posting.md).
 - **Discount concurrency mode** – Choose how the system should handle situations where more than one discount applies for the same price component code within a price structure (concurrence). Choose one of the following values:
@@ -93,16 +93,16 @@ Make the following settings on the **General** settings tab if you are setting u
 
 ## Make settings on the Details FastTab
 
-The **Details** FastTab lets you enter more information about your price rule, and also provides extra information about it. You can enter and/or inspect the following details here.
+The **Details** FastTab lets you enter more information about your pricing rule, and also provides extra information about it. You can enter and/or inspect the following details here.
 
-- **Description** – Enter a description of the price rule. <!-- KFM: Where is this used, just here? -->
-- **Disclaimer** – Enter a disclaimer for the price rule. <!-- KFM: Where is this used, just here? -->
+- **Description** – Enter a description of the pricing rule. <!-- KFM: Where is this used, just here? -->
+- **Disclaimer** – Enter a disclaimer for the pricing rule. <!-- KFM: Where is this used, just here? -->
 - **Text for fiscal receipt** – Enter a text to be displayed on the related fiscal receipt. <!-- KFM: What is this? Can we give a link or little more info? -->
-- **Header price attribute details** – This read-only field summarizes the header price attribute values for this price rule (available by selecting **Header price attribute group** on the Action Pane). For more information, see [Set up header price attribute values](#header-attributes).
+- **Header price attribute details** – This read-only field summarizes the header price attribute values for this pricing rule (available by selecting **Header price attribute group** on the Action Pane). For more information, see [Set up header price attribute values](#header-attributes).
 
 ## Make settings on the Price/discount FastTab
 
-The **Price/discount** FastTab is only provided simple, threshold, and mix-and-match discounts. The settings here combine with those on the **Lines** FastTab to establish the discount values for various combinations of customers and items.
+The **Price/discount** FastTab is only provided for simple, threshold, and mix-and-match discounts. The settings here combine with those on the **Lines** FastTab to establish the discount values for various combinations of customers and items.
 
 ### Price/discount settings for simple discounts
 
@@ -117,16 +117,19 @@ If you're setting up a mix-and-match discount, make the following settings on th
 
 - **Percentage off** – Enter the default discount percentage to new lines added to the **Lines** FastTab. You can change the percentage, or change the percentage off to an amount off, for each line as you add it to **Lines** Fast Tab, as described later in this article.
 - **Quantity limit** – Enter the maximum order quantity for which this discount applies. This limit applies to all lines on the **Lines** FastTab. You can't edit this separately for each line. This value is repeated for each line on the **Lines** FastTab, but you can only edit the value here. All existing lines will update if you change this value.
-- **Calculation type** – Select which type of calculation the current price rule will apply. The selection you make here will affect which other fields of this FastTab will be active. Select one of the following options:
+- **Calculation type** – Select which type of calculation the current pricing rule will apply. The selection you make here will affect which other fields of this FastTab will be active. Select one of the following options:
     - *Deal price* – Specify a specific final price rather than a calculated discount. After selecting this option, enter the price in the **Deal price** field.
     - *Percentage off* – Calculate the discount as a percentage of the item price. After selecting this option, enter the percentage in the **Percentage off** field. For example, suppose the usual price of item A is 40.00, the usual price of item B is 60.00, and a mix-and-match discount of 30 percent applies to these items. Then, if a customer buys item A and item B together, the cost is 70.00 instead of 100.00.
     - *Amount off* – Define the discount as a fixed value. After selecting this option, enter the discount in the **Amount off** field.
     - *Least expensive* – <!-- KFM: A general description of what this setting means is needed here. --> After selecting this option, enter the discount price in the **Deal price**, **Percentage off**, or **Amount off** field (depending on which method you want to use to calculate the price). Then, in the **Number of least expensive lines** field, enter the number of least-expensive items that you want to apply the discount to. Finally, set **Multiple occurrences mode** to one of the following values:
         - *Favor customer* – <!-- KFM: Description needed. -->
         - *Favor retailer* – <!-- KFM: Description needed. -->
-    - *Line spec* – <!-- KFM: Description needed. -->
+    - *Line spec* – Use the discount specified for each line on the **Lines** FastTab.
 - **Count non-discountable products** – Set to *Yes* to count non-discountable items towards the quantity. <!-- KFM: What quantity and for what purpose? What if we set to No? -->
 - **Generate bundle ID** – <!-- KFM: Description needed. -->
+
+> [!NOTE]
+> For mix-and-match, least-expensive discounts, the number of least-expensive products must be more than one and less than the number of products. <!-- KFM: This isn't clear, please revise. Is this referring to the **Number of products needed** setting? -->
 
 ### Price/discount settings for threshold discounts
 
@@ -177,7 +180,7 @@ The table on this FastTab establishes a set of quantity tiers and the discount t
 
 <!-- KFM: Introduce this section with a general description of what this setting means. -->
 
-<!-- KFM: Introduce the following table. What is this? -->
+<!-- KFM: Introduce the following table. What is this, how does it affect this example? -->
 
 | Attribute group | Attributes | Value | Include |
 |---|---|---|---|
@@ -224,10 +227,10 @@ The following information is shown here:
 
 ## Make settings on the Validation period FastTab
 
-Use the settings on the **Validation period** FastTab to control when the price rule will apply.  The following conditions apply:
+Use the settings on the **Validation period** FastTab to control when the pricing rule will apply.  The following conditions apply:
 
 - The date range is defined at the header level. <!-- KFM: Please clarify. -->
-- The date used when validating a price rule is based on the **Date type** setting on the **General** tab of the  **Pricing management parameters** page,. You can set the **Date type** to *Today*, *Requested ship date*, *Requested receipt date*, or *Created date*. <!-- KFM: Is this for margin adjustments only, or also for discounts? We should give a link. Currently, this is explained in [Sales trade agreement prices](sales-trade-agreement-prices.md), but should maybe be moved. -->
+- The date used when validating a pricing rule is based on the **Date type** setting on the **General** tab of the  **Pricing management parameters** page,. You can set the **Date type** to *Today*, *Requested ship date*, *Requested receipt date*, or *Created date*. <!-- KFM: Is this for margin adjustments only, or also for discounts? We should give a link. Currently, this is explained in [Sales trade agreement prices](sales-trade-agreement-prices.md), but should maybe be moved. -->
 
 You can choose to set up the validation period using either standard or advanced settings.
 
@@ -237,8 +240,8 @@ To set up the validation period using the standard validation rules, follow thes
 
 1. Set **Date validation type** to *Standard* to enable the fields needed for setting up standard date validation.
 1. Make the following settings:
-    - **Effective date** – Select the first date on which the price rule should apply.
-    - **Expiration date** – Select the last date on which the price rule should apply.
+    - **Effective date** – Select the first date on which the pricing rule should apply.
+    - **Expiration date** – Select the last date on which the pricing rule should apply.
 
 ### Set up advanced date validation rules
 
@@ -254,7 +257,7 @@ To set up the validation period using the advanced validation rules, follow thes
 
 ## <a name="items-lines"></a>Make settings on the Lines and Line details FastTabs
 
-Use the **Lines** FastTab to control which discounts and margin price adjustments will apply for which items. All the lines in a price rule apply to the same collection of customers, which you can configure using the [**Header price attribute group**](#header-attributes) settings.
+Use the **Lines** FastTab to control which discounts and margin price adjustments will apply for which items. All the lines in a pricing rule apply to the same collection of customers, which you can configure using the [**Header price attribute group**](#header-attributes) settings.
 
 ### <a name="add-line"></a>Add a line and configure the set of items that it will apply for
 
@@ -262,8 +265,8 @@ Each line assigns calculation rules that apply for a specified collection of ite
 
 1. From the **Lines** FastTab toolbar, select **New**.
 1. The **Edit price attributes** dialog opens. This dialog lets you set up the logic for finding the items the current line will apply for.
-1. Expand the **Header price attribute group** FastTab to see the logic set up for selecting the customers for whom the current price rule applies. These settings apply for all lines in the current price rule and are read-only here (you can change them using the [**Header price attribute group**](#header-attributes) settings, which are available from the Action Pane).
-1. From the **Price attribute group combination** drop-down list, select the combination of price attributes that you will use to define the items for the current line. These combinations are the ones defined for the [price component code](price-component-code.md) selected for the current price rule, but only the right side (the [line price attribute group](price-attribute-groups.md) name) of the combination name is relevant because the header attributes are common for all lines for the pricing rule (as mentioned in the previous step). Choose the combination where the right-side of the name matches the way you want to define the collection of items that the line applies for.
+1. Expand the **Header price attribute group** FastTab to see the logic set up for selecting the customers for whom the current pricing rule applies. These settings apply for all lines in the current pricing rule and are read-only here (you can change them using the [**Header price attribute group**](#header-attributes) settings, which are available from the Action Pane).
+1. From the **Price attribute group combination** drop-down list, select the combination of price attributes that you will use to define the items for the current line. These combinations are the ones defined for the [price component code](price-component-code.md) selected for the current pricing rule, but only the right side (the [line price attribute group](price-attribute-groups.md) name) of the combination name is relevant because the header attributes are common for all lines for the pricing rule (as mentioned in the previous step). Choose the combination where the right-side of the name matches the way you want to define the collection of items that the line applies for.
 1. If your selected **Price attribute group combination** considers item (line) attribute values (rather than applying to *all* items), then the **Line price attribute group** FastTab is available. In this case, for each row on the **Line price attribute group** FastTab, enter or select one or more values in the **Value** column to establish the rules for selecting items. The collection of attributes shown here come from the **Price attribute group combination** you selected. The following rules apply:
     - All rows are combined using a logical AND operator, which means that only those items that have matching values for *all* rows will be included.
     - If you want to create one or more rows that include multiple values, set **Enable multiple selections** to *Yes*. This will allow you to add a comma-separated list of values in the **Value** column for each row. These values are combined using an OR operator, which means that the row will find items that match *any* of the values in the list.
@@ -280,7 +283,7 @@ If you ever need to return to the **Edit price attributes** dialog to change the
 
 ### Set line values to establish calculation rules and further refine the item selection
 
-The settings for each line on the **Lines** FastTab vary based on which kind of price rule you are working with. The following settings and information may be available here:
+The settings for each line on the **Lines** FastTab vary based on which kind of pricing rule you are working with. The following settings and information may be available here:
 
 - **Line group type** – Shows whether the line applies to a specific *Group* of items or to *All* items.
 - **Line price attribute group** – If the **Line group type** is *Group*, then this column shows the name of the selected [line price attribute group](price-attribute-groups.md).
@@ -292,7 +295,7 @@ The settings for each line on the **Lines** FastTab vary based on which kind of 
 - **Required line amount** – For free-item discounts using a **Criteria type** of *Amount*, enter the minimum amount that must be ordered to quality for the discount.
 - **Name** – <!-- KFM: Description needed -->
 - **Unit** – <!-- KFM: Description needed -->
-- **Allow unit conversion** – Select this check box to convert the selling unit to the unit used for the price rule when needed.
+- **Allow unit conversion** – Select this check box to convert the selling unit to the unit used for the pricing rule when needed.
 - **Line type** – <!-- KFM: Description needed --> Select one of the following values:
     - *Include* – <!-- KFM: Description needed -->
     - *Exclude* – <!-- KFM: Description needed -->
@@ -304,8 +307,8 @@ The settings for each line on the **Lines** FastTab vary based on which kind of 
 - **Amount** or **Amount off** – If you are using an amount-based **Calculation type**, then enter the amount here.
 - **Unit price** – If you are using the *Unit price* **Calculation type**, enter the new unit price here.
 - **Quantity limit** – Shows the maximum order quantity for which this discount applies. This limit applies to all lines on the **Lines** FastTab. You can't edit this separately for each line, but you can edit it for all lines at once using the **Quantity limit** field on the **Price/discount** FastTab.
-- **Number of products needed** – The number of items that the customer needs to buy in this line group before the discount applies.
-- **Line group** – <!-- KFM: Description needed -->
+- **Number of products needed** – The number of items that the customer needs to buy in this line group before the discount applies. This is read-only for mix-and-match discounts, which take this value from the group selected in the **Line group** column.
+- **Line group** – If you are setting up a mix-and-match discount, then select the line group that applies to the line here. Before you can make a selection here, you must first set up your line groups, add them to the current pricing rule, and configure them with a color and item threshold, as described in [Mix and match discounts](discounts.md#mix-match). The line will then be highlighted using the color chosen for the selected line group (if any), and the **Number of products needed** will update to match the selected line group configuration.
 - *Other dimensions* – Columns showing item, storage, and tracking dimensions may also be included in the grid (such as **Color**, **Warehouse**, **Serial number**, and so on). To choose which dimensions are shown, select **Display dimensions** from the toolbar. Enter values in these columns to restrict the line to only apply to items that match your specified dimension values.
 
 ### Make settings on the Lines details FastTab
@@ -314,16 +317,16 @@ If you'd like to add more information about a line on the **Lines** FastTab, the
 
 ## <a name="header-attributes"></a>Set up header price attribute values
 
-Use header price attributes to control which customers the current pricing rule applies to. These limits apply to all lines and items the rule applies for (see also [Make settings on the Lines and Line details FastTabs](#items-lines)). Follow these step to set the header price attributes for the current price rule:
+Use header price attributes to control which customers the current pricing rule applies to. These limits apply to all lines and items the rule applies for (see also [Make settings on the Lines and Line details FastTabs](#items-lines)). Follow these step to set the header price attributes for the current pricing rule:
 
 1. Before you can set header price attributes, you must already have assigned a **Price component code** on the General FastTab.
 1. From the Action Pane, select **Header price attribute** group.
-1. The **Edit price attributes** dialog opens. This dialog lets you set up the logic for finding the customers the current price rule will apply for.
+1. The **Edit price attributes** dialog opens. This dialog lets you set up the logic for finding the customers the current pricing rule will apply for.
 1. Expand the **Header price attribute group** FastTab. Review and set the following settings:
     - **Scope of price attributes** – This read-only field tells you which type of attributes your settings here will apply to. It will always show *Header*. <!-- KFM: Please confirm -->
     - **Group type** – Choose the type of customer selection you want to set up. The options here will depend on which price attribute combinations are available for your selected [price component code](price-component-code.md). The following options may appear here:
-        - *Group* – The dialog will provide you with a group of header attributes for which you can assign values to limit the set of customers to whom this price rule will apply.
-        - *All* – This price rule will apply for all customers. If you choose this option, then no further steps are needed, so you can skip the rest of this procedure and just select **OK** to apply your settings.
+        - *Group* – The dialog will provide you with a group of header attributes for which you can assign values to limit the set of customers to whom this pricing rule will apply.
+        - *All* – This pricing rule will apply for all customers. If you choose this option, then no further steps are needed, so you can skip the rest of this procedure and just select **OK** to apply your settings.
     - **Price attribute group** – If **Group type** is *All*, then select a price attribute group here. The available options will depend on the attribute groups enabled for your selected [price component code](price-component-code.md). The choice you make here will affect the set of attributes you'll be able to work with on this dialog.
 1. If you selected a **Price attribute group**, then the attributes from your selected group are now shown on the **Header price attribute group** FastTab. For each row, enter or select one or more values in the **Value** column to establish the rules for selecting customers. The following rules apply:
     - All rows are combined using a logical AND operator, which means that only those customers that have matching values for *all* rows will be included.
@@ -337,21 +340,7 @@ Use header price attributes to control which customers the current pricing rule 
 
 ## Set up Mix and match line groups
 
-<!--KFM: We should introduce the purpose of these settings. --> These settings are only available when you are working with a mix-and-match discount.
-
-Follow these steps to set up your mix and match line groups.
-
-1. On the action pane, select **Mix and match line groups**.
-1. The **Mix and match line groups** page opens. Use the buttons on the Action Pane to add and remove rows in the grid as needed.
-1. For each row, make the following settings:
-    - **Line group** – Select the line group that you want to add for the current price rule. If you need a line group that isn't listed, then you can create it by going to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line group setup**. <!--KFM: Add link to M&M topic. -->
-    - **Number of products needed** – Enter the quantity of the product that a customer must purchase to qualify the discount. The initial value comes from the line group configuration on the **Mix and match line group setup** page, but you can override for the current price rule if you want.
-    - **Line color** – Select a color for the line group.  <!--KFM: Why would I do this? Where is this used? -->
-
-    For mix-and-match, least-expensive discounts, the number of least-expensive products must be more than one and less than the number of products. <!-- KFM: This isn't clear, please revise. Is this referring to the **Number of products needed** setting? -->
-
-> [!NOTE]
-> You can view and make these settings for any or all of your mix-and-match discounts at once by going to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line groups**
+If you are working with a mix-and-match discount pricing rule, then select **Mix and match line groups** to choose which mix-and-match line groups can be assigned on **Lines** FastTab, and set the number of products needed from each group to quality for the discount. For details about how to set up your mix-and-match line groups, see [Mix and match discounts](discounts.md#mix-match).
 
 ## Set up a discount exclusion list
 

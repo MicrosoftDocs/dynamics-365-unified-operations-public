@@ -27,7 +27,7 @@ Pricing management leverages the standard Supply Chain Management *Trade agreeme
 
 ## Configure sales trade agreement price control
 
-Several configuration settings affect the way sales trade agreements work in Pricing management. Follow these steps to set up your system before you start creating any sales trade agreement price rules.
+Several configuration settings affect the way sales trade agreements work in Pricing management. Follow these steps to set up your system before you start creating any sales trade agreement pricing rules.
 
 1. Go to the **Pricing management \> Setup \> Pricing management parameters**
 1. Open the **Price and discounts** tab.
@@ -40,12 +40,12 @@ Several configuration settings affect the way sales trade agreements work in Pri
         - If two or more records have an equal and highest *header price attribute*, the price engine will check the *line price attribute* and apply the highest ranked record in the price attribute group.
         - In case there are multiple price records found with the same rank, Price engine will apply the cheapest price.
 1. Set **Apply existing trade agreement** to one of the following values:
-    - *Yes* – The price engine will consider posted sales trade agreement price rule records that have a **Default relation** of *Price (sales)* (available at **Sales and Marketing \> Prices and discounts \> Trade agreement journals**). The price engine will apply the following rules:
+    - *Yes* – The price engine will consider posted sales trade agreement pricing rule records that have a **Default relation** of *Price (sales)* (available at **Sales and Marketing \> Prices and discounts \> Trade agreement journals**). The price engine will apply the following rules:
         - First apply the sales trade agreement price that meets the criteria. <!-- KFM: What criteria do we mean here? -->
         - If no sales trade agreement price applies, then use the qualifying rules posted to the **Trade agreement journals**.
     - *No* – <!-- KFM: Description needed -->
 1. Open the **General** tab.
-1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching price rule records <!-- KFM: Matching to what? Sales orders? Which rules? This appears to also affect the pricing rule validation period. How does it affect sales trade agreements? -->.
+1. Set **Date type** to the type of date (*Today*, *Requested ship date*, *Requested receipt date*, or *Created date*) you will use when setting up criteria for matching pricing rule records <!-- KFM: Matching to what? Sales orders? Which rules? This appears to also affect the pricing rule validation period. How does it affect sales trade agreements? -->.
 1. Go to **Pricing management \> Setup \> Trade agreement prices \> Trade agreement journal names**. Select the **Enable price attribute** check box <!-- Which row do we mean? Are we supposed to be creating a new name here? Why do I want to select this checkbox, and what if I don't? Maybe this should be in another section. --> to allow you to create sales trade agreement journals with the price attributes.
 
 ## Set up your price component codes and pricing structures
@@ -53,7 +53,7 @@ Several configuration settings affect the way sales trade agreements work in Pri
 To use sales trade agreements, you must have the following configurations available in your system:
 
 - You must have exactly one price component code where **Price component** is set to *Sales trade agreement*. This will allow you to include sales trade agreements as part of your price structures. For more information, see [Price component codes](price-component-code.md).
-- Each price structure where you want to consider sales trade agreement prices must include the *Sales trade agreement* price component code just mentioned. For more information, see [Price structure overview](price-structure-overview.md).
+- Each price structure where you want to consider sales trade agreement prices must include the *Sales trade agreement* price component code just mentioned. For more information, see [Arrange price component codes into a price structure](price-structure-details.md).
 
 ## Create a new sales trade agreement journal
 

@@ -2187,6 +2187,10 @@
           href: pricing-management/price-structure-multiple.md
         - name: Set up company to use a single price structure
           href: pricing-management/price-structure-single.md
+        - name: Arrange price component codes into a price structure
+          href: pricing-management/price-structure-details.md
+        - name: Resolving concurrent price codes within a price structure
+          href: pricing-management/price-structure-concurrence.md
       - name: Base prices and sales trade agreements
         items:
         - name: Vendor list price and price adjustments overview

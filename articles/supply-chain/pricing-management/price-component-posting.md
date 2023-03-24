@@ -27,7 +27,7 @@ Pricing management lets you set up a different sales order posting ledger for ea
 
 This capability enables the system to keep ledger accounts that distinguish between the many layers of your pricing composition at the price component level.
 
-For more information about how to set up your pricing structures, including how to assign posting profiles for each relevant price component code in a structure, see [Set up company to use a multiple price structures](price-structure-multiple.md).
+For more information about how to set up your pricing structures, including how to assign posting profiles for each relevant price component code in a structure, see [Arrange price component codes into a price structure](price-structure-details.md).
 
 ## Set up price component posting
 

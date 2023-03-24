@@ -47,7 +47,7 @@ You must choose to use *either* the price component code setup (a single price t
 >
 > You can have any number price component code records for each of the remaining price components.
 
-Within one price component code, you can define multiple price rule records with different price attribute group combinations.
+Within one price component code, you can define multiple pricing rule records with different price attribute group combinations.
 
 ## Set up price component codes
 

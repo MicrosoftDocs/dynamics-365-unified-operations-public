@@ -23,7 +23,7 @@ One of the key functions of a price manager is to work together with the product
 - Identify and classify product, customer, and order modes (such as region, pack size, brand, age, and so on) to reflect each product's differentiating features, customer segments, and price sensitivity. <!-- KFM: Please confirm that my edit is still correct. -->
 - Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture. <!-- KFM: are the "attributes" mentioned here the same as the "modes" mentioned above?-->
 
-The Pricing management module provides *price attributes*, which enable price managers and sales promotion managers to mark and group price differentiators established for *products*, *customers* and *sales order information* and set up the price rules. Pricing rules include:
+The Pricing management module provides *price attributes*, which enable price managers and sales promotion managers to mark and group price differentiators established for *products*, *customers* and *sales order information* and set up the pricing rules. Pricing rules include:
 
 - Sales trade agreement prices
 - Margin component price adjustments

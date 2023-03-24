@@ -38,7 +38,7 @@ When you create new attributes and assign them to a category, products in that c
 
 ### <a name="price-attributes"></a>Set up product price attributes
 
-To use attributes when designing price rules for Pricing management, you must mark them as *price attributes*, as described in the following procedure.
+To use attributes when designing pricing rules for Pricing management, you must mark them as *price attributes*, as described in the following procedure.
 
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**.
 1. Either select an attribute in the list pane or create a new one.

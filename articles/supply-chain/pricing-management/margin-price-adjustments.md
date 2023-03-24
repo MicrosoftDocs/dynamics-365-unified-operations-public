@@ -26,76 +26,19 @@ In scenarios where you build your selling price based on the inventory standard 
 
 Margin component price adjustments can be associated with many different types of agreements, promotions, and events. They make it easy for you to adjust price without changing the base price.
 
-## Prerequisites
+## Set up margin price adjustments
 
-Before you can start setting up the rules for your margin component price adjustments, the following configurations must be in place:
+To use margin component price adjustments you must make the following configurations:
 
-- On the **Price component code setup** page, set up each of the price component codes that you will need for each of your margin component price adjustments. For instructions, see [Price component codes](price-component-code.md).
+- Create one or more [price component codes](price-component-code.md) to set up various types of margin price adjustments that you can include in your price structures.
+- Create one or more [price structures](price-structure-overview.md) to establish how your margin price adjustments combine with other price elements (such as base price and discounts) to find the final unit price.
+- Set up one or more [pricing rules](price-rules.md) to configure the margin price adjustments you need, which customers and items they apply to, and how they are calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
 
-- Include the price component codes in your price structures as needed. Use the **Price component code** setup page to create a single price structure for a company. Use the **Price trees page** to set up multiple price structures. For details, see [Price structure overview](price-structure-overview.md) and its related topics.
+For details about how to create pricing rules for each margin price adjustment (and discount), see [Configure pricing rules](price-rules.md).
 
 For example, the following screenshot shows a price structure that contains two sequential margin component price adjustments (*General price adjustments* and *Seasonal price adjustments*).
 
 [<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
-
-## Set up your margin component price adjustment rules
-
-<!--KFM: Intro needed. Describe what we are about to do and why. I think we are setting up the pricing rules here. -->
-
-1. Go to **Pricing management \> During-sales pricing \> Price adjustments \> Margin component price adjustments**.
-1. Do one of the following steps:
-    - To add a new record, select **New \> Margin component price adjustment** on the Action Pane.
-    - To create a copy of an existing record, select it on the list pane and then select **Copy** on the Action Pane.
-    - To edit an existing record, select it on the list pane and then select **Edit** on the Action Pane.
-    - To delete a record, select it on the list pane and then select **Delete** on the Action Pane.
-1. Make the following settings in the header of your new or selected rule record.
-
-    - **Margin component adjustment** – enter a unique identifier for this rule record.
-    - **Name** – enter the name of the rule record.
-    - **Status** – by default as disabled. Once you complete the entry, you can activate the rule record.
-    - **Currency** – enter the price adjustment currency for the rule record.
-    - **Concurrency model** – for margin component price adjustment, the concurrency model within the same price component code is 'Price component code rank', which means that the Price engine determine the applicable price adjustment based on the price attribute combination rank.
-    - **Quantity tier** – When enabled, you are allowed to enter the tiered price based on the sales order line quantity.
-
-    > [!NOTE]
-    > Margin component price adjustment quantity tier is different from Quantity discounts. Quantity discounts tiers are based on the item quantity per order. Margin component price adjustment tiers are based on the item quantity per line.
-
-1. Choose the **Price component code** from the drop-down list. All of the price components codes for the 'Margin component price adjustment' type that you created are available as options.
-1. Select Price component code from the drop-down list. The options include all the price component codes of the 'Margin component price adjustment' type that you created.
-1. In the Details tab, enter the **Description** of the margin component price adjustments.
-1. In the Validation period, set up the rule valid period.
-
-    - You need to be aware of 2 things:
-        - For Margin component price adjustments and Discounts, the date range is defined in the header level.
-        - The date period will be impacted by the **Date type** in the **Pricing management \> Setup \> Pricing management parameters**.
-    - You can define the period in 2 ways:
-        - **Standard period** – You can set up the **Effective date** and **Expiration date** for the rule.
-        - **Advanced period** – You can define the discount period number for the rule.
-1. You need to define the Header price attribute group value to complete the setting of the header level rule. Click **Header price attribute group** and the Edit price attribute slider display for you to define the value criteria.
-1. In the Edit price attributes slider, you can select:
-
-    - **Group type** – You select whether you want to define the header price attributes. If you select 'All', you don't specify value for specific header price, and it applies to all customers and orders.
-    - **Price attribute group** – Once you select 'Group' in the Group type, you now can select which Header price attribute group you want to use. Once you select the price attribute group, the attributes of the group display in Rank order. You can choose the value for the attributes. If you set **Enable multiple selections** as Yes, you are allowed to multi-select the values.
-    - **Exclude values in selected lines** – can be used when you have the criteria that is 'Not equal to'. For example, you choose the 'Customer group = 30', but when you tick Exclude values in select lines, the condition turns to 'Customer group= !30', meaning the Customer group is not 30.
-    - **Preview matching results (Customers)** – Gives a preview of current applicable customers that meet the criteria.
-    - **Exclude** – in case there are customers that meet the criteria, but you want to rule them out, you can exclude the customers.
-
-1. You can now edit the rule line in the Line fast tab. Click **+Add** to add a new record. The Edit price attribute display for you to define the line attributes.
-
-    - **Price attribute group combination** – select the combination which includes the Line price attribute group. The price attribute of the Line price attribute group will display for you to select the value. You can choose the value for the attributes. If you set **Enable multiple selections** as Yes, you are allowed to multi-select the values.
-    - **Exclude values in selected lines** – can be used when you have the criteria that is 'Not equal to'.
-    - **Preview matching results (Products)** – Gives a preview of current applicable products that meet the criteria.
-    - **Exclude** – in case there are products that meet the criteria, but you want to rule them out, you can exclude the products.
-    - Click **OK** to close the slider. Use the **Edit line price attribute** to adjust the value of the line price attributes.
-
-1. Enter the **Site, Warehouse** if applicable for the rule criteria for matching the sales order line.
-1. Enter the **Unit** as the rule criteria for matching the sales order line.
-1. **Allow unit conversion** – enable the conversion of the selling unit to match the rule.
-1. Specify the **calculation method** and **calculation value** (percent\\amount). Margin component price adjustment allows you to set up the price up (positive) and price down (negative) in percentage or amount.
-1. Provide more information in the **Description** in the Line details fast tab.
-1. Use the Edit line price attribute to adjust the value of the line price attributes.
-1. Click **Save** to save the rule.
-1. You can activate the rule once you change the status from **Disable** to **Enabled**.
 
 ## Margin component price adjustment determine rule
 
