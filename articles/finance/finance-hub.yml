@@ -190,8 +190,8 @@ additionalContent:
       links:
       - url: /dynamics365/finance/finance-insights/finance-insights-home-page
         text: Overview
-      - url: /dynamics365/finance/finance-insights/budget-proposals
-        text: Budget proposals
+      - url: /dynamics365/finance/finance-insights/configure-for-fin-insites
+        text: Configure Finance insights 
       - url: /dynamics365/finance/finance-insights/payment-insights-overview
         text: Customer payment predictions
     - title: Public sector
@@ -220,15 +220,15 @@ additionalContent:
         text: Overview
       - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released
         text: Available mobile workspaces
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace
         text: Publish mobile workspaces
     - title: Microsoft Office integration
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
         text: Overview
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
         text: Configure and send email
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
         text: Customize the Open in Microsoft Office menu 
     - title: Organization administration
       links:
