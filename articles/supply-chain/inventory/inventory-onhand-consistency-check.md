@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-Supply Chain Management provides an On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconstruct `InventSum` and `WHSInventReserve` tables by analyzing the inventory transactions table (`InventTrans`) table. 
+Dynamics 365 Supply Chain Management provides an On-hand Consistency Check tool, which allows you to check/fix On-hand data on all items or specific items. On-hand consistency check will reconstruct `InventSum` and `WHSInventReserve` tables by analyzing the inventory transactions table (`InventTrans`) table. 
 While you're trying to perform On-hand Consistency Check on **all items**, please be aware that: 
 1. Running an On-hand Consistency Check on all items (with Inventory Visibility Integration batch job enabled) will usually take long time than the standard use case when the Inventory Visibility Integration batch job is not enabled. 
 2. Since On-hand Consistency Check will involve API calls to sync the changes in the `InventSum` and `WHSInventReserve` tables to Inventory Visibility service if you have Inventory Visibility Integration batch job enabled, yuou might experience failure on consistency check if the external calls have unexpected errors.  
