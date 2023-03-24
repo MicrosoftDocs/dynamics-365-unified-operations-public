@@ -4,7 +4,7 @@
 title: Configure Human resources parameters
 description: This article explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2023-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -128,15 +128,19 @@ For more information about how to set up **Employee self service**, see [Employe
 
 The settings on the **Manager self service** tab affect what managers see in **Manager self service**. On this tab, you can configure the following options:
 
-- The range for expiring records
-- Information that managers can view in expiring records
-- Whether managers can view open positions for extended reports
-- Views of exiting workers
-- Useful links for managers
+- Select which emergency contacts are shown
+- Learning
+- View expiring records
+- Expiring records range
+- Select information managers can view in expiring records
+- View open positions
+- View of exiting workers
+- Exiting workers range
+- Useful URL links for managers
 
 For more information about how to set up **Manager self service**, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
-![Manager self service tab.](./media/hr-setup-parameters-manager-self-service.png)
+![Manager self service tab.](./media/MSS.png)
 
 ## Benefits management
 
