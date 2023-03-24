@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -20,8 +20,8 @@ ms.custom: bap-template
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:
 
-- Identify and classify product, customer, and order modes (such as region, pack size, brand, age, and so on) to reflect each product's differentiating features, customer segments, and price sensitivity. <!-- KFM: Please confirm that my edit is still correct. -->
-- Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture. <!-- KFM: are the "attributes" mentioned here the same as the "modes" mentioned above?-->
+- Identify and classify products, customers, and order modes (such as by region, pack size, brand, age, and so on) to reflect each product's differentiating features, customer segments, and price sensitivity.
+- Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture.
 
 The Pricing management module provides *price attributes*, which enable price managers and sales promotion managers to mark and group price differentiators established for *products*, *customers* and *sales order information* and set up the pricing rules. Pricing rules include:
 
@@ -36,15 +36,15 @@ You define these pricing rules using combinations of price attributes to define 
 
 [<img src="media/price-attributes.png" alt="Price attributes." title="Price attributes" width="500" />](media/price-attributes.png#lightbox)
 
-## Pricing attributes sources
+## Price attributes sources
 
-Supply Chain Management is able to maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed and can't be extended or altered to accommodate additional pricing criteria. Examples of possible product-based pricing variables include: product types, brands, flavors, pack types, and pack sizes.
+Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed and can't be extended or altered to accommodate additional pricing criteria. Examples of possible product-based pricing variables include: product types, brands, flavors, pack types, and pack sizes.
 
 Customer groups don't always provide enough control when it comes to setting up customer-based pricing. Therefore, customer-based pricing variables can also include customer area, payment method, payment terms, and loyalty program membership.
 
 Other sales order details (such as the ordering channel, ordering site, ordering campaign, and mode of delivery) can also include pricing conditions.
 
-Pricing management offers three price attribute sources as a foundation for setting up pricing rules and conditions, and it provides out-of-box pricing attributes for each source. You can build price attribute groups (header or line) and combine them to create pricing attribute combinations.
+Pricing management offers three price attribute sources as a foundation for setting up pricing rules and conditions, and it provides out-of-box price attributes for each source. You can build price attribute groups (header or line) and combine them to create price attribute combinations.
 
 <!-- KFM: Introduce the following table. What are we showing here? -->
 

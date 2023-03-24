@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: conceptual
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -25,7 +25,7 @@ Concurrency rules let you establish what happens when multiple discounts and pri
 
 This article explains how to manage *within-price-component-code concurrency*. For details about how to manage *across-price-component-code concurrency*, see [Resolving concurrent price codes within a price structure](price-structure-concurrence.md).
 
-## Types of within-price-component-code concurrency mode
+## Types of within-price-component-code concurrency modes
 
 The following types of within-price-component-code concurrency mode are available (depending on price component code type):
 
@@ -47,7 +47,7 @@ There are three places in the system where you can view and/or set within-price-
 
 The following flow chart shows how pricing rules, price structure, and concurrency models work together to resolve within-price-component-code concurrency. <!-- KFM: We need to provide this information also in text.  -->
 
-[<img src="media/concurrency-flowchart.png" alt="Flowchart for determining within-price-component-code concurrency." title="Flowchart for determining within-price-component-code concurrency" width="720" />](media/concurrency-flowchart.png#lightbox)
+[<img src="media/concurrency-flowchart.png" alt="Flowchart for determining within-price-component-code concurrency." title="Flowchart for determining within-price-component-code concurrency" width="600" />](media/concurrency-flowchart.png#lightbox)
 
 ## Example
 

@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -18,7 +18,7 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article provides an overview of the Pricing management module in Dynamics 365 Supply Chain Management. <!-- KFM: Refer to as a module? Or should this be under Sales and Marketing in the TOC? -->
+This article provides an overview of the Pricing management module for Dynamics 365 Supply Chain Management.
 
 Increasingly, traditional business to business (B2B) companies are thinking of converting to omnichannel sales and selling directly to customers to gain more control over pricing and margins. The omnichannel transformation leads to massive changes to pricing models and rules. Pricing management aids B2B business in the transition to omnichannel pricing by enabling attribute-based pricing rules that use attributes and data from customers, products, and order segments.
 
@@ -40,14 +40,14 @@ Dynamics 365 Supply Chain Management leverages the [Commerce Scale Unit (CSU) Co
 - Leverage enhanced discount budget controls to avoid margin leakage from fund consumption.
 - Leverage the [CSU-based pricing API](../../commerce/pricing-apis.md) for Dynamics 365 Commerce to allow pricing calculations to be retrieved by a native Commerce point of sale system and/or consumed by external applications to support various pricing scenarios.
 
-## Main feature components
+## Pricing components
 
 Pricing management applies the following key elements to determine pricing:
 
 - **Price attributes** – Provide a flexible way for you to define your pricing factors. They leverage information about customers, products, sales order header, and sales order lines. Price attributes work with the customer and product attribute framework, making them highly configurable. Extension points are available for you to extend the price attributes.
 - **Price component codes** – Group the price attributes together. Price component codes represent the building blocks of your price structure. When you create a price and discount rule record, you'll also assign that record to a price component code.
-- **Price structure** – Let you construe the sequence of your price component codes. You can choose to use one price structure for each company or use different price structures for each order attribute within a company. Within the price structure, price determination logic ensures that the base price can be found. To ensure that the base price can be established, the price determination logic is embedded into the price structure. The base price is the price before making any price adjustments (base price &plus; price adjustment = selling price).
-- **Concurrency mode** – Controls how the final price should be calculated in situations where multiple pricing rules are associated with the same price component code.
+- **Price structures** – Let you construe the sequence of your price component codes. You can choose to use one price structure for each company or use different price structures for each order attribute within a company. Within the price structure, price determination logic ensures that the base price can be found. To ensure that the base price can be established, the price determination logic is embedded into the price structure. The base price is the price before making any price adjustments (base price &plus; price adjustment = selling price).
+- **Concurrency modes** – Controls how the final price should be calculated in situations where multiple pricing rules are associated with the same price component code.
 
 The following illustration shows many of the elements that affect Pricing management price calculations.
 
@@ -67,3 +67,11 @@ The following illustration shows the architecture of the Pricing management modu
 > For orders that are created in Dynamics 365 Supply Chain Management, through integration, or through [dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md) (such as orders from Dynamics 365 customer engagement apps or Dynamics 365 Intelligent Order Management), the pricing engine can provide calculated pricing and pricing details for each sales order.
 >
 > For orders that are created in a native Dynamics 365 Commerce point of sale or a third-party system, calculated prices can be retrieved via the [CSU-based pricing API](../../commerce/pricing-apis.md).
+
+## Next steps
+
+- [Price attributes overview](price-attributes-overview.md)
+- [Price structure overview](price-structure-overview.md)
+- [Vendor list price and price adjustments overview](vendor-list-price.md)
+- [Sales trade agreement prices](sales-trade-agreement-prices.md)
+- [Configure pricing rules](price-rules.md)

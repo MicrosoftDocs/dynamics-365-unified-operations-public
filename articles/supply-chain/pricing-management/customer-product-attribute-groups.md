@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ms.topic: how-to
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -22,7 +22,7 @@ ms.custom: bap-template
 
 ## Usage examples
 
-The following two usage examples show how you can simplify your [price attribute groups](price-attribute-groups.md) and pricing rules by establishing a customer price attribute group. The more often you need to use a given customer price attribute group in your various price attribute groups and pricing rules, the more useful the customer or product price attribute group will be. 
+The following two usage examples show how you can simplify your [price attribute groups](price-attribute-groups.md) and pricing rules by establishing a customer price attribute group. The more often you need to use a given customer price attribute group in your various price attribute groups and pricing rules, the more useful the customer or product price attribute group will be.
 
 Product price attribute groups work similarly to customer price attribute groups, but establish groups of products instead of customers.
 
@@ -118,7 +118,11 @@ To add, edit, or delete a price attribute group, follow these steps.
     - If you want to create one or more rows that include multiple values, set **Enable multiple selections** to *Yes*. This will allow you to add a comma-separated list of values in the **Values** column for each row. The values are combined using an OR operator, which means that the row will find products or customers that have *any* of the values in the list.
     - You can specify values to exclude by adding an "!" before the value. For example, to find all companies located outside of the USA, you could set the attribute with **Name** *Country/region* to have **Value** *!USA*. You can add the exclusion prefix to the values of any row automatically by selecting it and then selecting **Exclude values in selected lines** from the FastTab toolbar.
 
-1. As you are setting up your attributes and values on the **Attributes** FastTab, the **Preview matching results** FastTab updates to show the resulting group members. This can help you verify that your settings are giving you the result you expect. <!-- KFM: What does the **Exclude/Include** Toolbar button do here? -->
+1. As you are setting up your attributes and values on the **Attributes** FastTab, the **Preview matching results** FastTab updates to show the resulting group members. This can help you verify that your settings are giving you the result you expect.
+    - If the list includes any rows that you'd like to exclude, select the target rows and select **Exclude** from the toolbar.
+    - The **Line type** column indicates which rows you have chosen to exclude using the toolbar button.
+    - To re-include an excluded row, select it and then select **Include** from the toolbar.
+    - If you are working with a product group, then to view, exclude, and/or re-include specific item variants, select **All variants** from the toolbar. While viewing the variants, you can select **Product master** from the toolbar to go back to the standard item list.
 
 1. When you're done adding and arranging attributes, select **Validation** on the Action Pane to trigger a validation check. If the check passes, then the system will set **Validated** to *Yes*, which means the price attribute group is now activated and can be used in pricing rules.
 
@@ -130,7 +134,7 @@ To add, edit, or delete a price attribute group, follow these steps.
 
 ## Use customer and product price attribute groups in price attribute groups
 
-To use a customer or product price attribute groups in a price attribute group, add the customer or product attribute group as an attribute. You add these attribute just as you add other types of attributes. 
+To use a customer or product price attribute groups in a price attribute group, add the customer or product attribute group as an attribute. You add these attribute just as you add other types of attributes.
 
 *Customer* price attribute groups can only be used in price attribute groups with a **Sales order matching scope** of *Header*, while *product* price attribute groups can only be used with attribute groups wih a **Sales order matching scope** of *Line*.
 

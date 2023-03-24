@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ms.topic: how-to
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -18,7 +18,9 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Pricing management provides a set of pre-populated price attributes from fields in the related table that are associated to **Product**, **Customer**, **Order table** and **Order line**. <!-- KFM: This sentence isn't clear; please clarify. Also, what are these bolded terms? Tables? Fields? How do we find and use these "pre-populated" (predefined?) attributes? -->
+<!-- KFM: I had trouble understanding this topic and completing the tasks listed here. I think it should be reviewed by an SME -->
+
+Pricing management provides a set of pre-populated price attributes from fields in related tables associated with **Product**, **Customer**, **Order table** and **Order line**. <!-- KFM: This sentence isn't clear; please clarify. Also, what are these bolded terms? Tables? Fields? How do we find and use these "pre-populated" (predefined?) attributes? -->
 
 Pricing management also offers the option to create custom price attributes and connect them to orders, customers, and items. You can use those price attributes when creating pricing rules and conditions, and the pricing engine will use those associations to identify the appropriate sales order <!-- KFM: Do you mean sales price?--> when an order is placed.
 
@@ -34,24 +36,24 @@ To maintain your attribute types, go to **Product information management \> Setu
 
 You can create Pricing management pricing rules that consider attribute values assigned to each item in an order. *Attributes* describe products and their characteristics. Examples of attributes include: brand, flavor, memory size, and commodity group. They provide a way to describe products and their characteristics through user-defined fields.
 
-When you create new attributes and assign them to a category, products in that category inherit those attributes and their default values. Attributes can be associated both to a released product and to a product master. Default attribute values can be overridden at the individual product level. Only one value for each attribute can be assigned to each products. Attributes apply to each product rather than each item of inventory. Attributes serve as a broad classification of a product, rather than being connected to inventory dimension.
+When you create new attributes and assign them to a category, products in that category inherit those attributes and their default values. Attributes can be associated both to a released product and to a product master. Default attribute values can be overridden at the individual product level. Only one value for each attribute can be assigned to each product. Attributes apply to each product rather than each item of inventory. Attributes serve as a broad classification of a product, rather than being connected to inventory dimension.
 
 ### <a name="price-attributes"></a>Set up product price attributes
 
-To use attributes when designing pricing rules for Pricing management, you must mark them as *price attributes*, as described in the following procedure.
+To use attributes when designing Pricing management pricing rules, you must mark them as *price attributes*, as described in the following procedure.
 
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**.
 1. Either select an attribute in the list pane or create a new one.
 1. Set **Attribute type** to the type you identified or selected in the previous section.
 1. Set the **Can be used as price attribute** to *Yes*.
 1. Assign a **Default value** if needed.
-1. Make other settings as needed.
+1. Select **Save** on the Action Pane.
 
 ### Assign product price attributes to products
 
 For attributes to have an effect, you must assign them to the relevant products using one of the following methods:
 
-- Assign product attributes to products using the [Set up a procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md) <!-- KFM: Is it right that we want to assign these to *procurement* categories? -->
+- Assign product attributes to products using the [procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md) <!-- KFM: Is it right that we want to assign these to *procurement* categories? Also, it seems like we are assigning a category here, not an attribute. -->
 - Group attributes into price attribute groups and [assign attribute groups to Commerce categories](../../commerce/attribute-attributegroups-lifecycle.md). Products assigned to categories that are associated to attribute groups inherit the attributes that are included in those attribute groups.
 
 For more information about attribute management and association, see [Manage attributes and attribute groups](../../commerce/attribute-attributegroups-lifecycle.md).

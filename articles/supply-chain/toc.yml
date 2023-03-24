@@ -2183,10 +2183,10 @@
         items:
         - name: Price structure overview
           href: pricing-management/price-structure-overview.md
-        - name: Set up company to use a multiple price structures
-          href: pricing-management/price-structure-multiple.md
         - name: Set up company to use a single price structure
           href: pricing-management/price-structure-single.md
+        - name: Set up company to use a multiple price structures
+          href: pricing-management/price-structure-multiple.md
         - name: Arrange price component codes into a price structure
           href: pricing-management/price-structure-details.md
         - name: Resolving concurrent price codes within a price structure

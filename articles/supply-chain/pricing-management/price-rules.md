@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
 ms.topic: how-to
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -274,7 +274,7 @@ Each line assigns calculation rules that apply for a specified collection of ite
 1. The **Preview matching results (Products)** FastTab shows a preview of items that match the conditions you've set up so far.
     - If the list includes any items that you'd like to exclude, select the target rows and select **Exclude** from the toolbar.
     - The **Line type** column indicates which items you have chosen to exclude using the toolbar button.
-    - To re-include an excluded customer, select it and then select **Include** from the toolbar.
+    - To re-include an excluded item, select it and then select **Include** from the toolbar.
     - To view, exclude, and/or re-include specific item variants, select **All variants** from the toolbar. While viewing the variants, you can select **Product master** from the toolbar to go back to the standard item list.
 1. Select **OK** to add the new line to the **Lines** FastTab grid.
 1. Set up the calculation rules for the new line using the columns in the grid, as described in the next section.

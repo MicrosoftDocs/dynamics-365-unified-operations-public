@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ms.topic: how-to
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template

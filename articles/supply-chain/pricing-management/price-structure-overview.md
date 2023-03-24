@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ms.topic: overview
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -53,4 +53,4 @@ The following table summarizes the principle components of the price structure u
 
 - [Set up company to use a multiple price structures](price-structure-multiple.md)
 - [Set up company to use a single price structure](price-structure-single.md)
-- 
+- [Arrange price component codes into a price structure](price-structure-details.md)

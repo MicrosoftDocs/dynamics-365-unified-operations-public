@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPPriceComponentCode
 ms.topic: how-to
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -30,12 +30,10 @@ You must choose to use *either* the price component code setup (a single price t
 | Name | Description |
 |---|---|
 | **Price components** | *Price components* are the main price elements of the price structure, which include:<ul><li>Price:<ul><li>Base price</li><li>Sales trade agreement price</li><li>Margin component</li></ul></li><li>Discounts</li><li>Rebate management</li><li>Auto charges</li></ul> |
-| **Price component codes** | *Price component codes* are defined and structured based on the function and business usage of your pricing elements.<!--KFM: Are the "pricing elements" the same as the "price components" we mention earlier? --><ul><li>Price component codes can be built following the price sequence.</li><li>Price component codes can establish defaults for posting and the discount concurrency mode.</li><li>Each pricing and discount record is assigned to a specific price component code.</li></ul> |
+| **Price component codes** | *Price component codes* are defined and structured based on the function and business usage of your pricing elements.<ul><li>Price component codes can be built following the price sequence.</li><li>Price component codes can establish defaults for posting and the discount concurrency mode.</li><li>Each pricing and discount record is assigned to a specific price component code.</li></ul> |
 | **Price component groups** | Price component codes can be grouped into *price component groups*. |
 | **Price attribute groups** | Each *price attribute group* contains several price attributes. One price component code can have one *header price attribute group* and one *line price attribute group*. Use these to define pricing rules based on attribute values defined in *pricing component codes*. |
 | **Combination rank** | The *combination rank* for a price attribute group lets you define what to do when multiple rules apply from the same price component code for a given order. If the concurrency mode is based on the *price attribute combination rank*, then the rule with highest rank will apply. |
-
-<!-- KFM: Maybe the above table should also have a row for *price attributes*. -->
 
 > [!NOTE]
 > You can have at most one price component code record for each of the following price components:
@@ -69,32 +67,32 @@ Use the following procedure to set up your price component codes.
 1. Expand the **General** FastTab and enter the following details.
     - **Price component** –  You can only edit this for new records (becomes read-only on save).<!-- KFM: Description needed. What does this setting do?  --> Choose one of the following values:
         - *Base price - inventory price* – <!-- KFM: Briefly describe the purpose of each of these values. Point out the ones that we can only have on of (as mentioned above)  -->
-        - *Base price - purchase price* – 
-        - *Base price - sales price* – 
-        - *Sales trade agreement* – 
-        - *Margin component* – 
-        - *Discounts* – 
-        - *Auto charges* – 
-        - *Rebate management* – 
+        - *Base price - purchase price* –
+        - *Base price - sales price* –
+        - *Sales trade agreement* –
+        - *Margin component* –
+        - *Discounts* –
+        - *Auto charges* –
+        - *Rebate management* –
     - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explain what this means in general. -->.  You can only edit this for new records (becomes read-only on save). Choose one of the following values:
         - *Separate* – Allows you to assign a rank to each individual header and line attribute group. The system will automatically generate each possible combination of header and line attribute groups and will assign a combined rank to each combination based on your individual rankings.
         - *Combined* – Allows you to define each relevant combination of header and line attributes and to assign a combination rank to each of them.
     - **Use all in header group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
     - **Use all in line group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
     - **Default auto charge concurrency mode** – <!-- KFM: Description needed. Also for each value -->
-        - *Always apply* – 
-        - *Price attribute combination rank* – 
+        - *Always apply* –
+        - *Price attribute combination rank* –
     - **Default discount concurrency mode** – <!-- KFM: Description needed. Also for each value -->
-        - *Exclusive* – 
-        - *Best price* – 
-        - *Compounded* – 
-        - *Always apply* – 
-        - *Price attribute combination rank* – 
+        - *Exclusive* –
+        - *Best price* –
+        - *Compounded* –
+        - *Always apply* –
+        - *Price attribute combination rank* –
     - **Price component code group** – Select a price component code group. You set up and maintain your component code groups on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**). <!-- KFM: More info is needed. What is this, and how will it affect my price component code? We should link to the price component group topic, if we have one. -->
 
 1. If **Maintenance mode** is *Separate*, then expand the **Header price attribute group** FastTab and add each [header attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
 
-1. If **Maintenance mode** is *Separate*, then expand the **Line price attribute group** FastTab and add each [line attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
+1. If **Maintenance mode** is *Separate*, then expand the **Line price attribute group** FastTab and add each [line attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange line price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
 
 1. If **Maintenance mode** is *Combined*, then follow these guidelines to set up the **Price attribute group combination** FastTab:
     - Use the toolbar buttons to add and remove price attribute groups as needed.

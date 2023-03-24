@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ms.topic: overview
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -66,7 +66,7 @@ Follow these steps to create a new sales trade agreement journal:
 1. In the **Name** field, select a trade agreement journal name. The name you choose must be configured on the **Trade agreement journal names** page with  **Enable price attributes** set to *Yes* and Relation set to *Price (sales)*.
 1. With your new row still selected, select **Lines** on the Action Pane.
 1. The **Journal lines, trade agreement** page opens On the Action Pane, select **New** to create a new line. <!-- KFM: We should explain what these lines mean and why we are adding them. -->
-1. The **Edit price attributes** dialog opens, where you can enter the attribute value as rule condition. <!-- KFM: The second part of this sentence isn't clear. Please revise. --> 
+1. The **Edit price attributes** dialog opens, where you can enter the attribute value as rule condition. <!-- KFM: The second part of this sentence isn't clear. Please revise. -->
 1. Expand the **General** FastTab and make the following settings:
     - **Price attribute group combination** – Select one of the price attribute combinations that is associated with your *Sales trade agreement price* [price component code](price-component-code.md). <!-- KFM: What affect will this have? Can we give some advice? Other settings in the dialog disappear depending on what we select here.  -->
     - **Header price attribute group** – <!-- KFM: Description needed -->
@@ -83,7 +83,7 @@ Follow these steps to create a new sales trade agreement journal:
 1. Select **OK** to add the new line to the **Overview** FastTab grid on the **Journal lines, trade agreement** page.
 1. Make the following settings for each line in the **Overview** FastTab grid, as needed:
     - **From** – Enter a minimum quantity for the line. This value establishes a minimum quantity that a customer must order before they can qualify for the agreement price.
-    - **To** – Enter a maximum quantity for the line. This value establishes the maximum quantity above which the agreement price no longer applies. 
+    - **To** – Enter a maximum quantity for the line. This value establishes the maximum quantity above which the agreement price no longer applies.
     - **Amount in currency** – Enter the price that applies for the line.
     - **Currency** – Select the currency you used to specify the price in the **Amount in currency** field.
     - **Unit** – Select the unit for which the price you specified applies.

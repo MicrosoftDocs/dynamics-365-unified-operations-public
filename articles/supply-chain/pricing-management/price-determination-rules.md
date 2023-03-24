@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/24/2023
+ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -69,41 +69,6 @@ Assuming there are two posted records for sales trade agreement price line with 
 Because the price attribute combination is the same, the price attribute combination rank are the same. <!-- KFM: What does this mean?  --> Price engine will apply the RID0002 price.
 
 <!-- KFM: We should introduce the following table. What does it mean? -->
-
-| IDs | Price attribute combination | Header price attribute criteria | Line price attribute criteria | Price | Applicable |
-|---|---|---|---|---|---|
-| RID0001 | Target customer segments + Product segments | Price group= 01 | Interior Upholstery= Package B | $1500 | No |
-| RID0002 | Target customer segments + Product segments | Customer account= US-003 | Interior Upholstery= Package B | $1550 | Yes |
-
-## Determining the sales trade agreement price
-
-<!-- KFM: As far as I can tell, this is an exact copy of the previous section. Is that right? (I didn't edit this version.) -->
-
-Sales trade agreement price can have 2 concurrency model by configuring the Enable default find next in the **Pricing management \> Setup \> Pricing management parameters \> Prices and discounts** tab:
-
-![](media/image2.png)
-
-- **Enable default find next= Yes**, Price engine will check all the applicable trade agreement price and apply the **cheapest** price.
-- **Enable default find next= No,** Price engine will determine the price by 'Price attribute combination rank'.
-  - Price engine will apply the **highest rank** record.
-  - When the 'Price attribute combination rank' is with the same level rank, Price engine will check the 'Header price attribute', apply the highest rank record price group.
-  - In case the same, it will then check the 'Line price attribute' and then apply the highest rank record in the price attribute group.
-  - In case there are multiple price records found with the same rank, Price engine will apply the cheapest price.
-
-Below illustrates an example:
-
-Configure the price component code with below price attribute combination for sales trade agreement price:
-
-| Price attribute combination | Price attribute combination | Header price attribute | Rank | Line price attribute | Rank |
-|---|---|---|---|---|---|
-| Target customer segments+ Vehicle product | 2003 | Customer account | 4 | Interior Upholstery | 4 |
-| | | Customer group | 3 | Exterior color | 3 |
-| | | Price group | 2 | Fuel type | 2 |
-| | | Sales group | 1 | Drive type | 1 |
-
-Assuming there are 2 posted records for sales trade agreement price line with the same date range.
-
-As the price attribute combination is the same, the Price attribute combination rank are the same. Price engine will apply the RID0002 price.
 
 | IDs | Price attribute combination | Header price attribute criteria | Line price attribute criteria | Price | Applicable |
 |---|---|---|---|---|---|
