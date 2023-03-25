@@ -4,7 +4,7 @@
 title: Vendor workflow
 description: Modify vendor information and use workflow to approve it.
 author: sunfzam
-ms.date: 11/21/2020
+ms.date: 03/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ Before you can use the workflow feature, you must enable it.
 
 1. Go to **Accounts payable \> Setup \> Accounts payable parameters**.
 2. On the **General** tab, on the **Vendor approval** FastTab, set the **Enable vendor approvals** option to **Yes**.
-3. In the **Data entity behavior** field, select the behavior that should be used when data is imported:
+3. In the **Data entity behavior** field, select what action should be used when data is imported:
 
     - **Allow changes without approval** – The data entity can update the vendor record without processing it through the workflow.
     - **Reject changes** – Changes can't be made to the vendor record. The import will fail for the fields that are enabled for the workflow.
