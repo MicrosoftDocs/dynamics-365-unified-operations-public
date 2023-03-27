@@ -58,7 +58,7 @@ Manufacturing companies might be affected by some of the minor architectural dif
 
 ## Exception process for version 10.0.32 and later
 
-As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation and for each legal entity. The following subsections provide details about the possible cases.
+As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation and for each company (legal entity). The following subsections provide details about the possible cases.
 
 ### Deployments where Planning Optimization supports all required features
 
