@@ -37,7 +37,7 @@ Any X++ repo branching strategy should support, at a minimum:
 Below are some branch policy best practices we recommend regardless of which branching strategy you choose:
 
 - The live/production code branch should be locked to prevent direct editing; changes should only be made via merge from other branches.
-- Before functional testing begins, developers will create pull requests to move their code into the corresponding branch. It is recommended to define branch policies to [require a minimum number of reviewers](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#require-a-minimum-number-of-reviewers) before pull requests can be completed.
+- Before functional testing begins, developers will move their code into the corresponding branch. It is recommended to define policies to protect branches from incomplete work. Using Git allows for a [minimum number of reviewers](/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser&preserve-view=true#require-a-minimum-number-of-reviewers) before pull requests can be completed. TFVC has mechanisms to ensure [check-ins are gated](/azure/devops/repos/tfvc/set-enforce-quality-gates?view=azure-devops&preserve-view=true).
 
 ## Branching strategies
 
