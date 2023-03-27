@@ -72,14 +72,14 @@ Error 2:
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] is not created for item number [XXXXX].**
 	
 Mitigation:
-This issue occurs because the batch number is setup as required for an item and it is not provided. To fix the issue, follow the steps mentioned above and on the step 7 and update the batch number for this item. 
+This issue occurs because the batch number is setup as required for an item and it is not provided. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the Lines tab of excel and update the **Batch number** for this item. 
 **Note:** Batch number field is not available by default in Excel and can be added as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel).
 
 ## Issues during customer order invoicing 
 After the customer orders are created, the statement posting next step is to attempt invoicing the customer orders. If the statement posting fails during invoicing the customer orders, then follow the below steps to resolve the issue.
 
 1. Navigate to failed statement and press the **Aggregated transactions** button under the **Execution details** group.
-2. Identify and select the aggregations failing to be invoiced, and click on **Delete customer order**.  This is a **required step** to ensure that the edit transactions information is used to generate new customer orders.
+2. Identify and select the aggregations failing to be invoiced, and click on **Delete customer order**.  This is a **required step** as it automatically deletes the aggregation data as well and ensures that the edit transactions information is used to generate new customer orders.
 3. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
 4. Download the file
 5. Once the file is downloaded, enable editing on the file and sign in
