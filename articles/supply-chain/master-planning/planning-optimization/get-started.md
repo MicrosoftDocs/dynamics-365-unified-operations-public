@@ -100,8 +100,8 @@ To configure your system to use the Planning Optimization Add-in for master plan
 
 1. If the **Connection stats** is *Connected*, then you're ready to enable Planning Optimization. Use the **Use Planning Optimization** option to choose which planning engine is used for master planning. Select one of the following options:
 
-    - *Yes* – Planning Optimization is used for master planning for all companies (unless overridden for one or more specific companies)
-    - *No* – The deprecated master planning engine is used for master planning.
+    - *Yes* – Planning Optimization is used for master planning for all companies (unless overridden for one or more specific companies).
+    - *No* – The deprecated master planning engine is used for master planning for all companies.
 
 > [!NOTE]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.
