@@ -56,6 +56,7 @@ The following table shows the current reference list of cookies placed by Dynami
 | `_msdyn365___aud_2`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
 | `d365gi`                                       | This cookie stores geographical location data when a third-party geolocation service is used.      | One day |
 | `_msdyn365___can_`                            | This cookie stores customer account number when on behalf of (OBO) business-to-business (B2B) functionality is being used.      | Session |
+| `_msdyn365___catalogid_`                            | This cookie is being for maintaining customer catalog id selection.      | Session |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
