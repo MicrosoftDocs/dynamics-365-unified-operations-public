@@ -39,71 +39,16 @@ Below are some branch policy best practices we recommend regardless of which bra
 - The live/production code branch should be locked to prevent direct editing; changes should only be made via merge from other branches.
 - Before functional testing begins, all code changes should be reviewed by at least one reviewer.
 
-## Recommended Branching Options
+## Branching Examples
 
-### Option 1: Sequential Branches
+### Sequential Branches
 
 Sequential branching is a branching approach where the branches mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment.
 
 When a developer believes their work item is ready for functional testing, they merge or "promote" all changes associated with their work to the Testing branch. The Testing branch contains all code awaiting functional validation. When the changes associated with a work item pass functional validation, they are promoted to the Production branch. The Production branch contains the code running on (or soon to be deployed to) the live environment.
 
-Unlike a [feature](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true#use-feature-branches-for-your-work) or [release](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. Below is an example of this branch structure along with the merge path between branches.
+Unlike a [feature](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true#use-feature-branches-for-your-work) or [release](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true#use-feature-branches-for-your-work) branching strategy, sequential branches are long-lived and active for the life of the systems they support. 
 
-```mermaid
-graph LR
-    A(Dev) --> B(Test)
-    B(Test) --> C(Prod)
-```
-
-*Figure 1. Sequential branch structure and merge path.*
-
-#### Pros
-
-Compared to other branching strategies, sequential branching is relatively easy to understand as it mirrors the functional stages of the development cycle. Once configured, it does not requires another branching due to the static sequential branches. This approach can be a benefit when your team is large or inexperienced with feature branching. The simplified branching structure also usually makes it easier for code administrators to isolate bugs.
-
-#### Cons
-
-If your X++ development naturally breaks into feature or release partitions, sequential branching is not the best fit. This is often the case for ISV solutions but less commonly the case for customer specific customizations. For sequential branching to work optimally, two Tier 2 sandbox environments are preferred: a functional testing environment for code validation, and a production mirror environment deployment testing and production troubleshooting. Tier 2 environments are relatively expensive, so budget-sensitive projects may not prefer this approach. Lastly, because the branch names so closely reflect the environments they support, the relationship between the branches and the environments can be confusing.
-
-![Image mapping Dev, Test, and Prod repo branches to Dev, Test, Production Mirror, and Production environments](media/D365FnORepoBranchesToEnvironment.drawio.png)
-
-*Figure 2. Environment branch relationship and code flow. Note that the build VM is not a user-facing environment and is only shown here for completeness.*
-
-### Option 2: Feature Branches
+### Feature Branches
 
 [Feature branching](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true#use-feature-branches-for-your-work) is a branching approach where new development and bug fixes are isolated to short-lived one-off branches based on the production code branch. The branch is created when feature development begins, and it is merged when functional testing is completed. Any number of feature branches may exist at the same time in a project.
-
-```mermaid
-    gitGraph
-      commit
-      commit
-      branch develop
-      checkout develop
-      commit
-      commit
-      branch feature1
-      commit
-      commit
-      commit
-      checkout develop
-      branch feature2
-      commit
-      commit
-      checkout develop
-      merge feature2
-      checkout develop
-      merge feature1
-      checkout main
-      merge develop
-      commit
-```
-
-*Figure 3: Feature branch example.*
-
-#### Pros
-
-Feature branches work well for X++ when development work items are relatively small and move quickly, as is often the case after major development has completed on an implementation project. They are the best approach for encapsulating the changes associated with a single work item, as feature branches are almost always isolated to the development of one enhancement or bug fix.
-
-#### Cons
-
-Using feature branches can lead to difficult merge conflicts if your team has several developers committing frequent changes to the same code area. Feature branches are normally totally independent and each branch owner is individually responsible for keeping their branch in sync with other changes. This reduces the risk of code in an individual feature branch "drifting" from changes in other feature branches or the main branch. This "drift" can also increase the overall time required to resolve merge issues. Consider the discipline of your dev team as you investigate this option.
