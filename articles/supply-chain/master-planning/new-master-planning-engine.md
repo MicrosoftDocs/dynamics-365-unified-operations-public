@@ -31,9 +31,15 @@ For more information about the deprecated master planning engine, see the announ
 
 Planning Optimization is the standard master planning engine for all new cloud deployments. It must be used for all new deployments that don't generate planned production orders during master planning. If you're setting up a new deployment that requires functionality that isn't currently supported by Planning Optimization, you can request an exception that will allow you to use the deprecated master planning engine instead.
 
+From release 10.0.32, if you are rolling out new companies (legal entities) in your existing Dynamics implementation, you must use Planning Optimization for the new companies. You can keep your existing companies using classic master planning until you are ready to migrate them, and use Planning Optimization for the new ones. This is since the 10.0.32 it is possible to exclude some companies from running Planning Optimization, under the **Planning Optimization parameters**, **Company information** tab, setting the **Exlude company from running Planning Optimization** to Yes. 
+
+
 ## Existing deployments
 
 Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you must request an exception to continue to use the deprecated master planning engine.
+
+From 10.0.32 it is possible to have some companies running the deprecated classic master planning while others running Planning Optimization. When Planning Optimization is enabled (under **Planning Optimization parameters** page, **General** tab, **Use Planning Optimization **set to Yes), then you can exclude specific companies from running Planning Optimization (from the same **Planning Optimization parameters** page, under the Company information**** tab, set the **Exlude company from running Planning Optimization** to Yes if that company is not ready yet to move to Planning Optimization. 
+Note that from this release, the exceptions will be per company. 
 
 ## Migration recommendations
 
@@ -54,7 +60,7 @@ Manufacturing companies might be affected by some of the minor architectural dif
 
 ## Exception process for version 10.0.32 and later
 
-As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation. The following subsections provide details about the possible cases.
+As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation and for each legal entity. The following subsections provide details about the possible cases.
 
 ### Deployments where Planning Optimization supports all required features
 
