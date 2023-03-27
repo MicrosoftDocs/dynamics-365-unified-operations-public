@@ -1,26 +1,24 @@
 ﻿---
-title: Determining sales trade agreement prices
-description: This article describes the price determination rules for calculating the base price and the sales trade agreement price.
+title: Sales order base price determination rules
+description: This article describes the price determination rules for calculating an item base price.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: This is a very poorly explained topic. I can't really tell what it's about. Revision is needed. It contains many sentences that I can't understand and therefore can't edit. What kind of topic is this (overview, how-to, concept)? Is this topic actually just an older version of the next topic? -->
-
-# Determining sales trade agreement prices
+# Sales order base price price determination rules
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes the price determination rules for calculating the base price and the sales trade agreement price. <!-- KFM: We already have a topic talking about base price. Can we refer to that and instead concentrate on the sales agreement price here? -->
+This article describes the price determination rules for calculating the sales order base price.
 
 <!-- KFM: Introduce the following table. What does it show?  -->
 
@@ -34,11 +32,13 @@ This article describes the price determination rules for calculating the base pr
 | Margin component price adjustments | You can set up layers of margin components to adjust the base price up (positive) or down (negative). Margin component price adjustments have a calculation sequence and can be compounded to get the total adjustment price. | Margin component |
 | Sales agreement | The Pricing management module respects [sales agreement rules](../sales-marketing/sales-agreements.md), but the sales agreement feature is not otherwise integrated with the Pricing management module. |  |
 
+## Base price determination flowchart
+
 The following flowchart illustrates the sales order base price determination rules.
 
 [<img src="media/base-price-determination-chart.png" alt="Sales order base price determination rule diagram." title="Sales order base price determination rule diagram" width="720" />](media/base-price-determination-chart.png#lightbox)
 
-## Determining the sales trade agreement price
+## Concurrency model for sales trade agreement prices
 
 <!--KFM: This section, the ranking rules, and the examples are unclear so I can't edit them. It's not clear where these various "ranks" come from. Please revise and add more details. -->
 
@@ -74,3 +74,8 @@ Because the price attribute combination is the same, the price attribute combina
 |---|---|---|---|---|---|
 | RID0001 | Target customer segments + Product segments | Price group= 01 | Interior Upholstery= Package B | $1500 | No |
 | RID0002 | Target customer segments + Product segments | Customer account= US-003 | Interior Upholstery= Package B | $1550 | Yes |
+
+## Next steps
+
+- [Base price versions](base-price-versions.md)
+- [Sales trade agreement prices](sales-trade-agreement-prices.md)

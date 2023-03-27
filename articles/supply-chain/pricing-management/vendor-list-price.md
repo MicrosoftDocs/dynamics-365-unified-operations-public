@@ -12,6 +12,8 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
+<!-- KFM: Is this topic in the right place? What are we talking about here, base prices, sales prices, or something else? -->
+
 # Vendor list price and price adjustments overview
 
 [!include [banner](../includes/banner.md)]
@@ -30,4 +32,10 @@ The vendor list price features have three core elements:
 
 Pricing management lets you define the selling price as the item base price &plusmn; margin component price adjustments.
 
-For the items sold, the system can find the item base price based on the vendor list price. The item base price is calculated as the vendor list price plus the price term agreement. In the calculation, the system will evaluate each vendor's item base price for each site. Because the item base price has just one unique active value per site, if multiple calculated prices exist, the system will only use the lowest calculated price.
+For the items to be sold, the system can find the item base price based on the vendor list price. The item base price is calculated as the vendor list price plus the price term agreement. In the calculation, the system will evaluate each vendor's item base price for each site. Because the item base price has just one unique active value per site, if multiple calculated prices exist, the system will only use the lowest calculated price.
+
+## Next steps
+
+- [Base price determination rules](base-price-determination-rules.md)
+- [Base price versions](base-price-versions.md)
+- [Sales trade agreement prices](sales-trade-agreement-prices.md)

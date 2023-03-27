@@ -2165,7 +2165,7 @@
         href: pricing-management/pricing-management-overview.md
       - name: Turn on the Pricing management module for your system
         href: pricing-management/pricing-management-enable.md
-      - name: Price attributes and price component codes
+      - name: Price attributes
         items:
         - name: Price attributes overview
           href: pricing-management/price-attributes-overview.md
@@ -2175,6 +2175,8 @@
           href: pricing-management/price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: pricing-management/customer-product-attribute-groups.md
+      - name: Price component codes
+        items:
         - name: Price component codes
           href: pricing-management/price-component-code.md
         - name: Price component code posting
@@ -2195,8 +2197,8 @@
         items:
         - name: Vendor list price and price adjustments overview
           href: pricing-management/vendor-list-price.md
-        - name: Price determination rules
-          href: pricing-management/price-determination-rules.md
+        - name: Sales order base price determination rules
+          href: pricing-management/base-price-determination-rules.md
         - name: Base price versions
           href: pricing-management/base-price-versions.md
         - name: Sales trade agreement prices

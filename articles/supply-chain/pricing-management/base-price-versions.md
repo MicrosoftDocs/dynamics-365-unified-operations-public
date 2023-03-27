@@ -1,18 +1,18 @@
 ---
-title: Base price versions overview
+title: Base price versions
 description: This article describes how base price versions work in Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 04/03/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Base price versions overview
+# Base price versions
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -86,3 +86,7 @@ So, for example, using this price structure, the price engine might find that it
 Therefore, the selling price for the sales order line is: *8 &plus; 3 &plus; 2 &minus; 1 = 12*.
 
 <!--KFM: I think the point of this example is that we ignore BAS01 because we have an applicable sales trade agreement. If this is right, we should point this out explicitly. -->
+
+## Next steps
+
+- [Sales trade agreement prices](sales-trade-agreement-prices.md)
