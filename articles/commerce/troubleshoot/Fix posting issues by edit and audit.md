@@ -68,7 +68,6 @@ Mitigation:
 This issue occurs because the Site and warehouse are setup to be required fields for the transactions and some of the transactions are missing values or incorrect values for these fields. This usually happens for the transactions imported from external systems as this validation might have missed, or it could happen if the value specified for these fields is not valid. To fix the issue, follow the steps mentioned above and on the step 7 and update the correct values for Site and Warehouse fields in the **Transactions** and **SalesTransactions** tabs of the excel, if these tabs are present.
 **Note:** Site and Warehouse fields are not available by default in Excel and can be added as explained here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel).
 
-
 Error 2:
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] is not created for item number [XXXXX].**
 	
