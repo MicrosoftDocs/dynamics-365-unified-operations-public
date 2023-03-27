@@ -13,11 +13,11 @@ ms.dyn365.ops.version: 10.0.30
 ---
 # Branching
 
-Branching configurations for X++ repositories can vary depending on the development team preference and the finance and operations apps lifecycle. If the implementation already has a preferred branching structure and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you can use it to manage new development. Alternatively, you can evaluate the branching structure options in this article.
+Branching configurations for X++ repositories vary depending on the development team preference and the finance and operations apps lifecycle. If the implementation already has a preferred branching structure and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you could use it to manage new development. Alternatively, you can evaluate the branching structure options in this article.
 
 ## Considerations
 
-You will find that a few elements of the X++ development cycle differ from general application development. Keep the following items in mind as you consider how to structure your branches:
+You'll find that a few elements of the X++ development cycle differ from general application development. Keep the following items in mind as you consider how to structure your branches:
 
 - ERP systems are business-critical environments. When designing your code management infrastructure, you should prioritize design elements that minimize both the risk of major production issues and the disaster recovery timeline.
 - Because of the complexity and interdependency of the standard system code, it's generally a good idea to perform automated and manual testing of **all critical business processes** after each code update. This testing can take days to complete, so plan for a branch to contain this in-test code for long spans of time while it is being validated.
@@ -27,7 +27,7 @@ You will find that a few elements of the X++ development cycle differ from gener
 
 Any X++ repo branching strategy should support, at a minimum:
 
-- The isolation of un-tested development code or code in development. Developers should be protected from teammates accidentally breaking any active development branch. If there is only one DEV branch shared, each developer would need to ensure they do not commit code that breaks teammates. Additional configuration of the version control capabilities should be leveraged. Otherwise, isolating untested code from in-development code is an ideal way to provide this protection. 
+- The isolation of un-tested development code or code in development. Developers should be protected from teammates accidentally breaking any active development branch. If there's only one DEV branch shared, each developer would need to ensure they don't commit code that breaks teammates. Additional configuration of the version control capabilities should be leveraged. Otherwise, isolating untested code from in-development code is an ideal way to provide this protection. 
 - The isolation of in-development code from test-eligible code. A code change may pass unit testing or manual developer testing but the associated task may still not be ready for functional testing. Any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
 - The isolation if in-test code from production code. This is the fundamental purpose of all version control: avoiding code releases to production environments until code changes have been fully validated.
 - Relatively long (weeks) functional testing cycles. See the [Considerations](#considerations) section for more details on why finance and operations apps customizations take longer to validate.
@@ -45,7 +45,7 @@ Below are some branch policy best practices we recommend regardless of which bra
 
 A commonly used branching for teams using TFVC is combining a Trunk-based approach with Developer isolation and Release isolation. This approach also attempts to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment.
 
-When a developer believes their work item is ready for functional testing, they merge or "promote" all changes associated with their work from a dedicated development branch to a dedicated testing branch. The testing branch contains all code awaiting functional validation. When the changes associated with a work item pass functional validation, they are promoted to the dedicated branch holding production ready code. The Production branch contains the code running on (or soon to be deployed to) the live environment.
+When a developer believes their work item is ready for functional testing, they merge or "promote" all changes associated with their work from a dedicated development branch to a dedicated testing branch. The testing branch contains all code awaiting functional validation. After the changes associated with a work item pass functional validation, they are promoted to the dedicated branch holding production ready code. The Production branch contains the code running on (or soon to be deployed to) the live environment.
 
 ### Branching in Git
 
