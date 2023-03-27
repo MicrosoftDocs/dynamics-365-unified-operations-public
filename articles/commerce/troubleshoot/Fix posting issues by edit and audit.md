@@ -25,9 +25,11 @@ Sometimes the statement posting fails because the data in one or more transactio
 1. The fiscal period mapping to the current transaction has been closed and hence the transactions cannot be posted
 2. The transactions are created without a required field e.g. warehouse, batch number etc.
 
-The data correction is done by editing the necessary transactions and the steps required to edit the transactions vary based on the stage of statement posting where that issue occurs. This guide firstly lists down the generic steps required to edit a transaction depending on the various stage of statement posting, followed by the common errors that occur during that stage and specific steps required to fix the issue.
+The data correction is done by editing the necessary transactions and the steps required to edit the transactions vary based on the stage of statement posting where that issue occurs. Refer the below image to view the various steps involved in the statement posting. This guide firstly lists down the generic steps required to edit a transaction depending on the various stage of statement posting, followed by the common errors that occur during that stage and specific steps required to fix the issue.
+![View the statement posting steps](./media/Statement_posting_steps.png)
 
-Note: The link [Edit cash and carry transactions](https://learn.microsoft.com/en-us/dynamics365/commerce/edit-cash-trans) provides the basic details on the structure of the excel file that gets downloaded while editing the transactions.
+> [Note]
+> The link [Edit cash and carry transactions](https://learn.microsoft.com/en-us/dynamics365/commerce/edit-cash-trans) provides the basic details on the structure of the excel file that gets downloaded while editing the transactions.
 
 ## Issues during statement calculation 
 This is a prerequisite step of the statement posting process. The most common error during this stage is the transaction validation failure as the system shows a warning that some of the transactions could not be included in the statement because they failed validation.
@@ -35,13 +37,13 @@ This is a prerequisite step of the statement posting process. The most common er
 ### Transaction validation failed 
 If the Trickle feed feature has been enabled, then is required that the transactions are validated before they can be included in a statement. This is usually done via running the "Validate store transactions" batch job. Some transactions might fail during validation. Follow the below steps to resolve the issue.
 
-1. Navigate to **Store financials** workspace and open the **Cash and carry validation failures" view. Refer the below image
-2. Select the transaction and click on **Validation errors** to identify the error. Refer the below image
-3. Click on office icon on top right and select **Edit selected transactions**. Refer the below image
+1. Navigate to **Store financials** workspace and open the **Cash and carry validation failures** view. Refer the below image ![Transaction validation errors](./media/Transaction_validation_errors.png)
+2. Select the transaction and click on **Validation errors** to identify the error. Refer the below image ![View validation errors](./media/View_validation_errors.png)
+3. Click on office icon on top right and select **Edit selected transaction**. Refer the below image ![Edit transaction](./media/Edit_transaction.png)
 4. Download the file
 5. Once the file is downloaded, enable editing on the file and sign in
 6. Identify the correct entity and field that needs to be modified. If the field you are looking for is missing, then please get it in excel as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
-7. Change the value of fields and hit **Publish** on the excel
+7. Change the value of fields and hit **Publish** on the excel. Refer the below image ![Publish changes](./media/Publish.png)
 8. Run **Validate Store Transactions** again. This ensures that system tries to validate the edited transaction.
 9. If the transaction gets validated, then you can choose to continue posting the statement without the newly validated transaction as it will be included in the next statement posting or you can use the **Clear statement** button under the **Functions** group of the current statement to free the transactions that were marked with the current statement and create a new statement.
 	
@@ -49,14 +51,14 @@ If the Trickle feed feature has been enabled, then is required that the transact
 One of the steps of statement posting is to create the customer orders by grouping one or more transactions. So, if the statement posting fails before the customer orders are created, then follow the below steps to resolve the issue.
 
 1. Navigate to failed statement
-2. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
+2. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. Refer the below image ![Edit the selected transactions](./media/Edit_selected_transactions.png)
 3. Download the file
 4. Once the file is downloaded, enable editing on the file and sign in
-5. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction.
+5. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction. Refer the below image ![Change the validation status](./media/Change_validation_status.png)
 6. Identify the correct entity and field that needs to be modified. If the field you are looking for is missing, then please get it in excel  as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
 7. Change the value of fields and hit **Publish** on the excel
-8. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image.
-9. Press the **Aggregated transactions** button under the **Execution details" group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image.
+8. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image ![Revalidate transactions](./media/Revalidate_transactions.png)
+9. Press the **Aggregated transactions** button under the **Execution details" group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image ![Aggregated transactions](./media/Aggregated_transactions.png)
 10. Post the statement
 
 Some of the common issues that occur during order creation are as following:
@@ -72,7 +74,7 @@ Error 2:
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] is not created for item number [XXXXX].**
 	
 Mitigation:
-This issue occurs because the batch number is setup as required for an item and it is not provided. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the Lines tab of excel and update the **Batch number** for this item. 
+This issue occurs because the batch number is setup as required for an item and it is not provided. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the **Lines** tab or **Sales transaction** tab of excel and update the **Batch number** for this item. 
 **Note:** Batch number field is not available by default in Excel and can be added as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel).
 
 ## Issues during customer order invoicing 
