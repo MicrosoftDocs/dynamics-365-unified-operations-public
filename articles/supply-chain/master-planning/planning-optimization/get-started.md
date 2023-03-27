@@ -79,12 +79,13 @@ The main purpose of installing the Planning Optimization add-in is to connect th
 
 ## Turn on Planning Optimization for your environment
 
-After you've installed the Planning Optimization Add-in for your environment, you must turn it on to start using it.
+After you've installed the Planning Optimization Add-in for your environment, you must enable it in Supply Chain Management before you can start using it.
 
 ### Enable Planning Optimization for your environment
 
 To configure your system to use the Planning Optimization Add-in for master planning, follow these steps:
 
+1. Sign in to Supply Chain Management.
 1. Go to **Master planning** \> **Setup** \> **Planning Optimization parameters**.
 1. Open the **General** tab.
 1. Check the **Connection status**. It will show one of the values listed in the following table.
@@ -107,9 +108,9 @@ To configure your system to use the Planning Optimization Add-in for master plan
 
 ### <a name="exclude-po"></a>Continue to use deprecated master planning for some companies
 
-Starting with Supply Chain Management version 10.0.32, it's possible to have some companies running the [deprecated master planning engine](../deprecated-master-planning-overview.md) while others are running Planning Optimization, but you must obtain a special exception from Microsoft to do so (see also [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
+Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](../deprecated-master-planning-overview.md) until they are ready to be migrated, but you must obtain a special exception from Microsoft to do so (see also [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
 
-Follow these steps set a company to use the deprecated master planning engine on an environment that is otherwise enabled to use Planning Optimization:
+Follow these steps to set a company to use the deprecated master planning engine on an environment that is otherwise enabled to use Planning Optimization:
 
 1. Use the company picker to choose the company (legal entity) that you want to set up.
 1. Go to **Master planning \> Setup \> Planning Optimization parameters**.
