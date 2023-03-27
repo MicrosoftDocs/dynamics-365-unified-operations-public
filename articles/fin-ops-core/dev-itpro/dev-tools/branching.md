@@ -51,7 +51,7 @@ When a developer believes their work item is ready for functional testing, they 
 
 Git works very well with both a [Trunk-based approach](/devops/develop/how-microsoft-develops-devops) and [GitFlow approach](/devops/develop/how-microsoft-develops-devops#differences-from-github-flow). One of the strong recommendations using Git branching is to keep branches short-lived and sync often to reduce the risk of merge conflicts.
 
-When a developer starts a new work, a new branch can be created to hold the changes. The developer would make sure to keep the branch in sync with its originated branch and do pull requests often to validate their changes through the build and test validation. At the completion of the development, the changes can be easily merged back with a [squash and merge operation](azure/devops/repos/git/merging-with-squash?view=azure-devops&preserve-view=true). 
+When a developer starts a new work, a new branch can be created to hold the changes. The developer would make sure to keep the branch in sync with its originated branch and do pull requests often to validate their changes through the build and test validation. At the completion of the development, the changes can be easily merged back with a [squash and merge operation](/azure/devops/repos/git/merging-with-squash?view=azure-devops&preserve-view=true). 
 
 ## Resources
 
