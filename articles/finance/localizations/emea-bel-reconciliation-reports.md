@@ -129,6 +129,6 @@ To print the **Purchase sales tax transactions** report, click **Tax** &gt; **In
 ![Purchase sales tax transactions generated report.](media/8_Purchase_sales_tax_transactions.png)
 
 > [!NOTE]
-> We recommend that you enable the **(Belgium) Report corrections in purchase sales tax transactions report** feature in the **Feature management** workspace. When this feature is enabled, purchases posted as corrections in settled sales tax periods are reflected in **Purchase sales tax transactions report** in the same period as they are reflected in [INTERVAT tax declaration](emea-bel-intervat-tax-declaration.md), specifically in the report for the current open period.
+> We recommend you enable the **(Belgium) Report corrections in purchase sales tax transactions report** feature in the **Feature management** workspace. With this feature enabled, the purchases posted as corrections in settled sales tax periods are reflected in the **Purchase sales tax transactions report** in the same period as the [INTERVAT tax declaration](emea-bel-intervat-tax-declaration.md), specifically in the report for the current open period.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
