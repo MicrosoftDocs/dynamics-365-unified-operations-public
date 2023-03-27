@@ -31,15 +31,13 @@ For more information about the deprecated master planning engine, see the announ
 
 Planning Optimization is the standard master planning engine for all new cloud deployments. It must be used for all new deployments that don't generate planned production orders during master planning. If you're setting up a new deployment that requires functionality that isn't currently supported by Planning Optimization, you can request an exception that will allow you to use the deprecated master planning engine instead.
 
-From release 10.0.32, if you are rolling out new companies (legal entities) in your existing Dynamics implementation, you must use Planning Optimization for the new companies. You can keep your existing companies using classic master planning until you are ready to migrate them, and use Planning Optimization for the new ones. This is since the 10.0.32 it is possible to exclude some companies from running Planning Optimization, under the **Planning Optimization parameters**, **Company information** tab, setting the **Exlude company from running Planning Optimization** to Yes. 
-
+Starting with Supply Chain Management version 10.0.32, if you are rolling out new companies (legal entities) for an existing implementation, you must use Planning Optimization for the new companies. However, you can continue to use the deprecated master planning engine for one or more existing companies (until you are ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to continue to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](new-master-planning-engine.md#exclude-po).
 
 ## Existing deployments
 
 Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you must request an exception to continue to use the deprecated master planning engine.
 
-From 10.0.32 it is possible to have some companies running the deprecated classic master planning while others running Planning Optimization. When Planning Optimization is enabled (under **Planning Optimization parameters** page, **General** tab, **Use Planning Optimization **set to Yes), then you can exclude specific companies from running Planning Optimization (from the same **Planning Optimization parameters** page, under the Company information**** tab, set the **Exlude company from running Planning Optimization** to Yes if that company is not ready yet to move to Planning Optimization. 
-Note that from this release, the exceptions will be per company. 
+Starting in Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the deprecated master planning engine until they are ready to be migrated. Therefore, Microsoft will now grant exceptions on a per-company basis. The exception only applies to existing companies&mdash;starting with version 10.0.32, all new companies that you add to your existing environment must use Planning Optimization. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](new-master-planning-engine.md#exclude-po).
 
 ## Migration recommendations
 
@@ -80,7 +78,7 @@ If you do have customizations, you must move them to the existing extensibility 
 
 If the system detects that you're using features that aren't supported by Planning Optimization, it will show the following message the next time that you manually run master planning:
 
-> You are not supported yet to use the non-deprecated master planning (Planning Optimization). We expect to be supporting you in the coming future. When you are supported, you will be asked to move to Planning Optimization. If you have customizations on the master planning engine, you can already start evaluating them and preparing to move them to the Planning Optimization extensibility point https://go.microsoft.com/fwlink/?linkid=2220303
+> You are not supported yet to use the non-deprecated master planning (Planning Optimization). We expect to be supporting you in the coming future. When you are supported, you will be asked to move to Planning Optimization. If you have customizations on the master planning engine, you can already start evaluating them and preparing to move them to the Planning Optimization extensibility point https://go.microsoft.com/fwlink/?linkid=2220303.
 
 This message informs you that you should start planning to move to Planning Optimization as soon as it supports the features that you're using. Therefore, you should evaluate any customizations that you've made to the deprecated planning engine, plan to move them to the existing extensibility point (see [Planning Optimization extensibility](planning-optimization/extensibility.md)), and take other actions to prepare for the migration (for example, by contacting your Microsoft partner or consultant).
 
