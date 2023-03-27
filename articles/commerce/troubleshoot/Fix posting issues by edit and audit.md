@@ -35,37 +35,34 @@ This is a prerequisite step of the statement posting process. The most common er
 ### Transaction validation failed 
 If the Trickle feed feature has been enabled, then is required that the transactions are validated before they can be included in a statement. This is usually done via running the "Validate store transactions" batch job. Some transactions might fail during validation. Follow the below steps to resolve the issue.
 
-	1. Navigate to **Store financials** workspace and open the **Cash and carry validation failures" view. Refer the below image
-	2. Select the transaction and click on **Validation errors** to identify the error. Refer the below image
-	3. Click on office icon on top right and select **Edit selected transactions**. Refer the below image
-	4. Download the file
-	5. Once the file is downloaded, enable editing on the file and sign in
-	6. Identify the correct entity and field that needs to be modified
-		a. If the field you are looking for is missing, then please get it in excel as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
-
-	7. Change the value of fields and hit **Publish** on the excel
-	8. Run **Validate Store Transactions** again. This ensures that system tries to validate the edited transaction.
-	9. If the transaction gets validated, then you can choose to continue posting the statement without the newly validated transaction as it will be included in the next statement posting or you can use the **Clear statement** button under the **Functions** group of the current statement to free the transactions that were marked with the current statement and create a new statement.
+1. Navigate to **Store financials** workspace and open the **Cash and carry validation failures" view. Refer the below image
+2. Select the transaction and click on **Validation errors** to identify the error. Refer the below image
+3. Click on office icon on top right and select **Edit selected transactions**. Refer the below image
+4. Download the file
+5. Once the file is downloaded, enable editing on the file and sign in
+6. Identify the correct entity and field that needs to be modified. If the field you are looking for is missing, then please get it in excel as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
+7. Change the value of fields and hit **Publish** on the excel
+8. Run **Validate Store Transactions** again. This ensures that system tries to validate the edited transaction.
+9. If the transaction gets validated, then you can choose to continue posting the statement without the newly validated transaction as it will be included in the next statement posting or you can use the **Clear statement** button under the **Functions** group of the current statement to free the transactions that were marked with the current statement and create a new statement.
 	
 ## Issues during order creation 
 One of the steps of statement posting is to create the customer orders by grouping one or more transactions. So, if the statement posting fails before the customer orders are created, then follow the below steps to resolve the issue.
 
-	1. Navigate to failed statement
-	2. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
-	3. Download the file
-	4. Once the file is downloaded, enable editing on the file and sign in
-	5. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction.
-	6. Identify the correct entity and field that needs to be modified
-		a. If the field you are looking for is missing, then please get it in excel  as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
-	7. Change the value of fields and hit **Publish** on the excel
-	8. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image.
-	9. Press the **Aggregated transactions** button under the **Execution details" group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image.
-	10. Post the statement
+1. Navigate to failed statement
+2. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
+3. Download the file
+4. Once the file is downloaded, enable editing on the file and sign in
+5. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction.
+6. Identify the correct entity and field that needs to be modified. If the field you are looking for is missing, then please get it in excel  as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
+7. Change the value of fields and hit **Publish** on the excel
+8. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image.
+9. Press the **Aggregated transactions** button under the **Execution details" group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image.
+10. Post the statement
 
 Some of the common issues that occur during order creation are as following:
 
 Error 1:
-While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Inventory dimension Site is mandatory and must consequently be specified.
+**While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Inventory dimension Site is mandatory and must consequently be specified.**
 	
 Mitigation:
 This issue occurs because the Site and warehouse are setup to be required fields for the transactions and some of the transactions are missing values or incorrect values for these fields. This usually happens for the transactions imported from external systems as this validation might have missed, or it could happen if the value specified for these fields is not valid. To fix the issue, follow the steps mentioned above and on the step 7 and update the correct values for Site and Warehouse fields in the **Transactions** and **SalesTransactions** tabs of the excel, if these tabs are present.
@@ -73,7 +70,7 @@ This issue occurs because the Site and warehouse are setup to be required fields
 
 
 Error 2:
-While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] is not created for item number [XXXXX].
+**While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] is not created for item number [XXXXX].**
 	
 Mitigation:
 This issue occurs because the batch number is setup as required for an item and it is not provided. To fix the issue, follow the steps mentioned above and on the step 7 and update the batch number for this item. 
@@ -82,47 +79,46 @@ This issue occurs because the batch number is setup as required for an item and 
 ## Issues during customer order invoicing 
 After the customer orders are created, the statement posting next step is to attempt invoicing the customer orders. If the statement posting fails during invoicing the customer orders, then follow the below steps to resolve the issue.
 
-	1. Navigate to failed statement and press the **Aggregated transactions** button under the **Execution details" group.
-	2. Identify and select the aggregations failing to be invoiced, and click on **Delete customer order**.  This is a **required step** to ensure that the edit transactions information is used to generate new customer orders.
-	3. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
-	4. Download the file
-	5. Once the file is downloaded, enable editing on the file and sign in
-	6. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction.
-	7. Identify the correct entity and field that needs to be modified
-		a. If the field you are looking for is missing, then please get it in excel as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
-	8. Change the value of fields and hit **Publish** on the excel
-	9. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image.
-	10. Post the statement
+1. Navigate to failed statement and press the **Aggregated transactions** button under the **Execution details** group.
+2. Identify and select the aggregations failing to be invoiced, and click on **Delete customer order**.  This is a **required step** to ensure that the edit transactions information is used to generate new customer orders.
+3. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
+4. Download the file
+5. Once the file is downloaded, enable editing on the file and sign in
+6. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction.
+7. Identify the correct entity and field that needs to be modified. If the field you are looking for is missing, then please get it in excel as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel)
+8. Change the value of fields and hit **Publish** on the excel
+9. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image.
+10. Post the statement
 
 Some of the common issues that occur during order creation are as following:
 
 Error 1: 
-While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Voucher []XXXXX Period for [XXXXX] does not exist. Posting Posting Sales order: XXXX Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.
+**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Voucher []XXXXX Period for [XXXXX] does not exist. Posting Posting Sales order: XXXX Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 
 Mitigation:
 This issue occurs because the transaction date belongs to a fiscal period which is not open anymore. This usually happens when transactions have not been posted for a long time. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the **Statement aggregations** tab of the excel and update the **Business date** field to a value that corresponds to an open fiscal period
 
 Error 2: 
-While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Item: [XXXXX]Inventory dimension Location must be specified.
+**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Item: [XXXXX]Inventory dimension Location must be specified.**
 	
 Mitigation:
 This issue occurs because the Site and warehouse are setup to be required fields for the transactions and some of the transactions are missing values or incorrect values for these fields. To fix the issue, follow the steps mentioned above and on the step 7, update the correct values for Site and Warehouse fields in the **Transactions** and **SalesTransactions** tabs of the excel, if these tabs are present.
 **Note:** Site and Warehouse fields are not available by default in Excel and can be added as described here [Add more fields to excel](https://learn.microsoft.com/en-us/dynamics365/commerce/add-fields-excel).
 
 Error 3: 
-While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] -> You must select a value in the [Field name] field in combination with the following dimensions values that are valid.
+**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] -> You must select a value in the [Field name] field in combination with the following dimensions values that are valid.**
 	
 Mitigation:
 This issue occurs because a required field for statement posting is missing a value. To fix the issue, follow the steps mentioned above and on the step 7, update the correct values for fields mentioned in the error message
 
 Error 4: 
-While processing aggregation state Sales order is invoiced for this aggregation. Transaction state Customer order invoiced, the invoice could not be found for the manually invoiced sales order for this aggregation [XXXXX].
+**While processing aggregation state Sales order is invoiced for this aggregation. Transaction state Customer order invoiced, the invoice could not be found for the manually invoiced sales order for this aggregation [XXXXX].**
 	
 Mitigation:
 To fix this issue, follow the steps mentioned above and on the step 7, navigate to the **Statement aggregations** tab of the excel. Now check if **Business date** for the aggregation is not the same as the invoice date of manually invoiced sales order for this aggregation, then update the **Business date** to the invoice date of the order.
 
 Error 5: 
-While processing the state Payments posted, generic exception encountered in retail statement [XXXXX] in the controller : Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Period for 1/1/2000 does not exist. Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.
+**While processing the state Payments posted, generic exception encountered in retail statement [XXXXX] in the controller : Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Period for 1/1/2000 does not exist. Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 	
 Mitigation:
 This issue is similar to the error 1 mentioned above. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the **Transactions**, **Sales Transactions** and **Payment Transactions** tab and fix the **Business date** that corresponds to an open fiscal period.
