@@ -17,34 +17,25 @@ ms.dyn365.ops.version: AX 10.0.30
 Developers building Commerce runtime extensions can use the health check feature to run tests built into the framework and validate if their extensions meet current requirements.
 
 The health check feature can be accessed using a URL with the following format.
-
 ```
 https://[CommerceScaleUnitURL]/healthcheck?testname=extensions
 ```
 Replace *CommerceScaleUnitURL* with the URL for your Commerce Scale Unit instance.
 
-## Types of tests
+## Assembly tests
+Assembly tests validate assembiles in an extension to ensure they meet current requirements. The top-level assemblies of an extension are validated first. All dependent assembiles are validated next in a recursive manner until the entire dependency tree is traversed. And finally, all unused assemblies in the extension folders are also validated. Assembly tests do not validate *System* and *Microsoft.Dynamics* assemblies.
 
-There are various types of tests that the extensions health check runs.
-
-### Assembly tests
-
-Assembly tests validate assembiles in an extension to ensure their target framework is supported. The top-level assemblies of an extension are validated first. Next,  all dependent assembiles are validated in a recursive manner until the entire dependency tree is traversed. Finally, all unused assemblies in the extension folders are also validated.
-
-The tests do not validate *System* and *Microsoft.Dynamics* assemblies.
-
-To preserve security, the tests do not display assembly file names in the results. Developers can change this if needed with the *HealthCheck.Extensions.ShowAssemblyFiles* app setting.
-
+To preserve security be default, the tests do not display assembly names in the results. Developers can override this if needed by using the following app setting.
 ```xml
 <appSettings>
   <add key="HealthCheck.Extensions.ShowAssemblyFiles" value="true" />
 </appSettings>
 ```
 
-#### Results
+### Target framework tests
+Target framework tests are a type of assembly test that validate the target framework of the assembiles to ensure it is supported.
 
-The format of the results output by these tests is summarized in the table below.
-
+The results output by the target framework tests is summarized in the table below.
 | Column | Value |
 |-----------|----------|
 | Test Name | Target framework (extensions) - This test validates the top-level extension assemblies<br/>Target framework (dependencies) - This test validates assembiles that the extension depends on, both direct and indirect.<br/>Target framework (others) - This test validates all unused assemblies located in extension folders. |
