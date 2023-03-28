@@ -108,6 +108,6 @@ The results output by the entity binding test is summarized in the table below. 
 | Test Status | Failed. |
 | Test Severity | Normal |
 
-If you are a developer building Commerce runtime extensions, you must use the health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
+If you are a developer building Commerce runtime extensions, you must use the runtime extensions health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
