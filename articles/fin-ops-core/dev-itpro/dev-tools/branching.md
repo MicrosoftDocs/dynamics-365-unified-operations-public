@@ -43,18 +43,13 @@ Below are some branch policy best practices we recommend regardless of which bra
 
 ### Branching in TFVC
 
-A commonly used branching for teams using TFVC is combining a Trunk-based approach with Developer isolation and Release isolation. This approach also attempts to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment.
+A commonly used branching for teams using TFVC is combining a Trunk-based approach with Developer isolation and Release isolation. This approach also attempts to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment. Read more about [Branching strategies in TFVC](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true).
 
 When a developer believes their work item is ready for functional testing, they merge or "promote" all changes associated with their work from a dedicated development branch to a dedicated testing branch. The testing branch contains all code awaiting functional validation. After the changes associated with a work item pass functional validation, they are promoted to the dedicated branch holding production ready code. The Production branch contains the code running on (or soon to be deployed to) the live environment.
 
 ### Branching in Git
 
-Git works very well with both a [Trunk-based approach](/devops/develop/how-microsoft-develops-devops) and [GitFlow approach](/devops/develop/how-microsoft-develops-devops#differences-from-github-flow). One of the strong recommendations using Git branching is to keep branches short-lived and sync often to reduce the risk of merge conflicts.
+Git works very well with both a [Trunk-based approach](/devops/develop/how-microsoft-develops-devops) and [GitFlow approach](/devops/develop/how-microsoft-develops-devops#differences-from-github-flow). One of the strong recommendations using Git branching is to keep branches short-lived and sync often to reduce the risk of merge conflicts. Read more about [Branching strategies in Git](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true).
 
 When a developer starts a new work, a new branch can be created to hold the changes. The developer would make sure to keep the branch in sync with its originated branch and do pull requests often to validate their changes through the build and test validation. At the completion of the development, the changes can be easily merged back with a [squash and merge operation](/azure/devops/repos/git/merging-with-squash?view=azure-devops&preserve-view=true). 
-
-## Resources
-
-- [Branching strategies in TFVC](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true)
-- [Branching strategies in Git](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true)
 
