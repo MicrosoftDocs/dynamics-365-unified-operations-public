@@ -27,7 +27,7 @@ Runtime extension health check includes the following tests in two main categori
     1. Target framework tests
     2. Unsupported dependencies test
 2. Extension export tests
-    1. Extension types test
+    1. Extension types tests
     2. Route prefix test
     3. Entity binding test
 
@@ -74,7 +74,7 @@ The results output by the unsupported dependencies test is summarized in the tab
 ## Extension export tests
 Extension export tests validate types exported by extension assemblies.
 
-### Extension types test
+### Extension types tests
 Extension types tests validate exported types to ensure they are not implementing obsolete contracts.
 
 The results output by the extension types tests are summarized in the table below. Results always include tests for the four different types of contracts.
