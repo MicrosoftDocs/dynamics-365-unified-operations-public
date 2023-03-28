@@ -4,7 +4,7 @@
 title: Set up lease journal names
 description: This article explains how to define lease journal names. Lease journal names specify the journals that entries that originate in Asset leasing are posted to.
 author: moaamer
-ms.date: 12/03/2021
+ms.date: 03/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.14
 
 Lease journal names specify the journals that Asset leasing transactions are posted to. Only journal names that are assigned to the **Asset leasing** journal type appear in the **Initial Recognition** and **Monthly Journal Name** fields on the **Asset leasing parameters** page. Only **vendor invoice recording** journal type can be assigned to the **Invoice journal name** field.
 
-The system locks certain financial fields from being edited to prevent any variances between the transactions and the schedules. Some fields that are locked include: **Account**, **Amounts**, **Financial dimensions**, **Currency**, and **Transaction type**. Additionally, you won't be able to add or delete journal entry lines in any Asset leasing journal entries, as this might cause variances between the schedules and the transactions.
+Certain financial fields are locked from being edited to prevent any variances between the transactions and the schedules. Some fields that are locked include: **Account**, **Amounts**, **Financial dimensions**, **Currency**, and **Transaction type**. Additionally, you won't be able to add or delete journal entry lines in any **Asset leasing journal entries**, as this might cause variances between the schedules and the transactions.
 
 
 To configure lease journal names, complete the following steps.
