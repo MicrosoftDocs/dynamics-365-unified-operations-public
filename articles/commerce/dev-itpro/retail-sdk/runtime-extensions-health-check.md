@@ -83,4 +83,15 @@ The results output by the route prefix test is summarized in the table below. Re
 | Test Status | Failed. |
 | Test Severity | Normal |
 
+### Entity binding test
+If extensions are bound to one of the Commerce entities it may cause the Retail Server to work incorrectly. Entity binding test validates if an extension is bound to a Commerce entity via the 'BindEntity' attribute. 
+| Column | Value |
+|-----------|:-----------|
+| Test Name | Controllers (Invalid entity binding) |
+| Data | Count - The number of controllers incorrectly bound to a Commerce entity.<br/> **CONFIRM** Assembly names - If 'HealthCheck.Extensions.ShowAssemblyFiles' is enabled a comma-separated list of assembly names will be displayed.|
+| Result Text | - |
+| Test Status | Failed. |
+| Test Severity | Normal |
+
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
