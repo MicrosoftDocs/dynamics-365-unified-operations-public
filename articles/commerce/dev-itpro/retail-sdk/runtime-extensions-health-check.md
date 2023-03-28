@@ -72,4 +72,15 @@ The results output by the extension types test is summarized in the table below.
 | Test Status | Succeeded - If no types are implementing any of the obsolete contracts. Additionally, the test for `IController` always succeeds.<br/>Failed - If one or more types are implementing any of the obsolete contracts.|
 | Test Severity | Normal |
 
+### Route prefix test
+If extensions use one of the reserved route prefixes it may cause the Retail Server to work incorrectly. Route prefix test validates if an extension is using one of the reserved route prefixes via the 'RoutePrefix' attribute. 
+The results output by the route prefix test is summarized in the table below. Results are only displayed if the test fails.
+| Column | Value |
+|-----------|:-----------|
+| Test Name | Controllers (Invalid route prefix) |
+| Data | Count - The number of controllers with an incorrect route prefix.<br/> **CONFIRM** Assembly names - If 'HealthCheck.Extensions.ShowAssemblyFiles' is enabled a comma-separated list of assembly names will be displayed.|
+| Result Text | - |
+| Test Status | Failed. |
+| Test Severity | Normal |
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
