@@ -31,7 +31,7 @@ The following types of within-price-component-code concurrency mode are availabl
 
 - **Exclusive** – The pricing rule can't be combined with other rules associated with the same price component code. If more than one of these rules is as exclusive, the price engine will apply the rule with the highest discount.
 - **Best price** – Pricing rules of this concurrency mode will compete for the highest discount (lowest price).
-- **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page. <!-- KFM: Add a link for this, and maybe move that info to this topic. -->
+- **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page, as described in [System settings for discount concurrency control](price-structure-concurrence.md#parameters).
 - **Always apply** – The pricing rule always applies. This calculation is always applied last within a price component code.
 - **Price attribute combination rank** – Pricing rules using this concurrency mode don't compete for price but instead compete based on which one has the highest *price attribute combination rank*. If multiple rules have the same highest rank within the same price component code, then those rules will be combined.
 
@@ -40,8 +40,8 @@ The following types of within-price-component-code concurrency mode are availabl
 There are three places in the system where you can view and/or set within-price-component-code concurrency modes:
 
 - **Price component code level** – Each relevant price component code holds a default within-price-component-code concurrency setting. The available modes vary by price component code type. This setting can be overwritten in any or all pricing rules if needed. See also [Price component codes](price-component-code.md).
-- **Price structure level** – Each price component code included in a price structure shows its default concurrency mode, but you're not able to edit it here. See also [Set up company to use a multiple price structures](price-structure-multiple.md).
-- **Pricing rule level** – The concurrency mode assigned to a pricing rule will override the default mode assigned by its associated price component code. See also [Configure pricing rules](price-rules.md).
+- **Price structure level** – Each price component code included in a price structure shows its default concurrency mode, but you're not able to edit it here. See also [Arrange price component codes into a price structure](price-structure-details.md).
+- **Pricing rule level** – The concurrency mode assigned to a pricing rule will override the default mode assigned by its associated price component code. See also [Pricing rules for discounts and margin price adjustments](price-rules.md).
 
 ## Discount determination flow
 
@@ -75,3 +75,7 @@ Here's an example of how concurrency determination works:
     | Always apply | 30 | DIS01 | DIS01-02 | Percentage | 5 | 62.38 | 1185.27 |
     | Always apply | 40 | DIS02 | DIS02-02 | Amount | 8 | 94.82 | 1090.45 |
     | Always apply | 50 | DIS 03 | DIS03-02 | Amount | 10 | 10.00 | 1080.45 |
+
+## Resolving concurrency for sales trade agreements
+
+The other sections of this article describe how within-price-component-code concurrency works for discounts and margin price components (which are similar). Sales trade agreements work differently and are set up using trade agreement journals where the pricing rules are established by the related journal lines. Concurrency rules for sales trade agreements are established on the **Pricing management parameters** page. For details about the options available and how to use them, see [Sales trade agreement prices](sales-trade-agreement-prices.md).

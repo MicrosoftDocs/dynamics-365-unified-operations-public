@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 This article explains how to configure a company to use a single price structure (price tree) and how to set up that structure. In this scenario, the pricing engine matches each sales order with the price component codes based on the pricing sequence that is defined in the single tree.
@@ -45,3 +46,10 @@ To set up the price structure for a company that uses a single structure, you wi
 1. Set up your price structure by adding and removing lines to establish a price sequence and make other settings for each price component code that you want to include. These settings work in exactly the same as they do on the **Price component code list** FastTab of the **Price trees** page. For details about how to make these settings, and examples of how they work, see [Arrange price component codes into a price structure](price-structure-details.md).
 
 1. Continue working until you have set up all lines as required. Then select **Save** on the Action Pane.
+
+## Auto charges in single and multiple price structures
+
+Price component codes of type *Auto charges* are handled differently based on whether you ane using a single price structure (price component code setup) or multiple price structures (price trees).
+
+- *If you are using a single price structure*, then you can add the price component code for auto charges in the price component code setup.
+- *If you are using multiple price structures*, then you can't add auto charges in the price tree structures. The system will instead apply the standard Supply Chain Management auto-charge logic to decide which auto charges will apply to the sales order.

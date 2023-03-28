@@ -22,7 +22,7 @@ This article introduces the various types of discounts that you can set up using
 
 - Create one or more [price component codes](price-component-code.md) to set up various types of discounts that you can include in your price structures.
 - Create one or more [price structures](price-structure-overview.md) to establish how your discounts combine with other price elements (such as base price and margin price adjustments) to find the final unit price.
-- Set up one or more [pricing rules](price-rules.md) to configure each discount you need, which customers and items they apply to, and how they are calculated. For each rule, you'll start by choosing the type of discount, associate with a specific price component code, and then define the discount using a combination of settings that are common for all discounts and settings that are specific to your selected discount type.
+- Set up one or more [discount pricing rules](price-rules.md) to configure each discount you need, which customers and items they apply to, and how they are calculated. For each rule, you'll start by choosing the type of discount, associate with a specific price component code, and then define the discount using a combination of settings that are common for all discounts and settings that are specific to your selected discount type.
 
 For details about how to create pricing rules for each type of discount (and margin price adjustments), see [Configure pricing rules](price-rules.md).
 
@@ -170,4 +170,4 @@ However, if the customer orders ten EV009, then they would still have ordered 10
 
 - Create [price component codes](price-component-code.md).
 - Create [price structures](price-structure-overview.md).
-- Configure [pricing rules](price-rules.md) for each discount.
+- Configure [discount ricing rules](price-rules.md) for each discount.

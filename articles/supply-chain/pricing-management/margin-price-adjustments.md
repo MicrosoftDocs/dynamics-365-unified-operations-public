@@ -32,9 +32,9 @@ To use margin component price adjustments you must make the following configurat
 
 - Create one or more [price component codes](price-component-code.md) to set up various types of margin price adjustments that you can include in your price structures.
 - Create one or more [price structures](price-structure-overview.md) to establish how your margin price adjustments combine with other price elements (such as base price and discounts) to find the final unit price.
-- Set up one or more [pricing rules](price-rules.md) to configure the margin price adjustments you need, which customers and items they apply to, and how they are calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
+- Set up one or more [margin price adjustment pricing rules](price-rules.md) to configure the margin price adjustments you need, which customers and items they apply to, and how they are calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
 
-For details about how to create pricing rules for each margin price adjustment (and discount), see [Configure pricing rules](price-rules.md).
+For details about how to create pricing rules for each margin price adjustment (and discount), see [Pricing rules for discounts and margin price adjustments](price-rules.md).
 
 For example, the following screenshot shows a price structure that contains two sequential margin component price adjustments (*General price adjustments* and *Seasonal price adjustments*).
 
@@ -65,8 +65,8 @@ In the Price component code setup\\Price trees, you can build multiple price com
 | Base Price | Base Price- Inventory Cost | 10 |   |   |   | 1000.00 |
 | MC01 | Ullage | 20 | Percent | 5 | No | 50.00 |
 | MC02 | Freight | 30 | Percent | -2 | Yes | -21.00 |
-| MC03 | Group Margin adjustment | 40 | Amount | 10 | No | 10.00 |
-| MC04 | Contract Margin adjustment | 50 | Percent | 5 | Yes | 51.95 |
+| MC03 | Group Margin price adjustment | 40 | Amount | 10 | No | 10.00 |
+| MC04 | Contract Margin price adjustment | 50 | Percent | 5 | Yes | 51.95 |
 | MC05 | Pickup fee | 60 | Amount | 2 | Yes | 2.00 |
 | MC06 | Other cost to sell | 70 | Percent | 5 | Yes | 54.64 |
 | Unit price | 1147.59 |  |  |  |  |  |

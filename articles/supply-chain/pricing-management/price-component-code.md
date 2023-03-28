@@ -4,7 +4,7 @@ description: This article describes how to create a price structure for pricing 
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form: GUPPriceComponentCode
+ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 ms.topic: how-to
 ms.date: 04/03/2023
 audience: Application User
@@ -65,30 +65,15 @@ Use the following procedure to set up your price component codes.
     - **Description:** Enter more details related to the price component code you are creating.
 
 1. Expand the **General** FastTab and enter the following details.
-    - **Price component** –  You can only edit this for new records (becomes read-only on save).<!-- KFM: Description needed. What does this setting do?  --> Choose one of the following values:
-        - *Base price - inventory price* – <!-- KFM: Briefly describe the purpose of each of these values. Point out the ones that we can only have on of (as mentioned above)  -->
-        - *Base price - purchase price* –
-        - *Base price - sales price* –
-        - *Sales trade agreement* –
-        - *Margin component* –
-        - *Discounts* –
-        - *Auto charges* –
-        - *Rebate management* –
-    - **Maintenance mode** – Select the maintenance mode <!-- KFM: Would be nice to explain what this means in general. -->.  You can only edit this for new records (becomes read-only on save). Choose one of the following values:
+    - **Price component** – Chose which type of price component you are creating. You can only edit this for new records (becomes read-only on save). For more information about price component types, see [Price structure overview](price-structure-overview.md).
+    - **Maintenance mode** –Choose how you will create or generate the various price attribute group combinations the current price component code will support when you create pricing rules for it.  You can only edit this for new records (becomes read-only on save). Choose one of the following values:
         - *Separate* – Allows you to assign a rank to each individual header and line attribute group. The system will automatically generate each possible combination of header and line attribute groups and will assign a combined rank to each combination based on your individual rankings.
-        - *Combined* – Allows you to define each relevant combination of header and line attributes and to assign a combination rank to each of them.
-    - **Use all in header group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
-    - **Use all in line group** – Set to *Yes* if you have the combination where header attributes have a value of *All*. <!-- KFM: I don't understand this, please rephrase. What does "No" mean? -->
-    - **Default auto charge concurrency mode** – <!-- KFM: Description needed. Also for each value -->
-        - *Always apply* –
-        - *Price attribute combination rank* –
-    - **Default discount concurrency mode** – <!-- KFM: Description needed. Also for each value -->
-        - *Exclusive* –
-        - *Best price* –
-        - *Compounded* –
-        - *Always apply* –
-        - *Price attribute combination rank* –
-    - **Price component code group** – Select a price component code group. You set up and maintain your component code groups on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**). <!-- KFM: More info is needed. What is this, and how will it affect my price component code? We should link to the price component group topic, if we have one. -->
+        - *Combined* – Allows you to define each relevant combination of header and line attributes and to manually assign a combination rank to each of them.
+    - **Use all in header group** – Set to *Yes* if you have the combination where header attributes have a value of *All*, which will let you create pricing rules that apply to all customers.
+    - **Use all in line group** – Set to *Yes* if you have the combination where line attributes have a value of *All*, which will let you create pricing rules that apply to all products.
+    - **Default auto charge concurrency mode** – Choose the default concurrency rule to use for auto charges associated with this price component code. For details about how this type of concurrency works and the effects of each of the settings available here, see [Resolving concurrent pricing rules within a price code](concurrent-pricing-rules.md). This setting is only available when **Price component** is *Auto charges*.
+    - **Default discount concurrency mode** – Choose the default concurrency rule to use for discount pricing rules associated with this price component code. For details about how this type of concurrency works and the effects of each of the settings available here, see [Resolving concurrent pricing rules within a price code](concurrent-pricing-rules.md). This setting is only available when **Price component** is *Margin component* or *Discount*.
+    - **Price component code group** – Select a price component code group. You set up and maintain your component code groups on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**). <!-- KFM: What is the purpose of this group, and how will it affect my price component code? We should have a section or topic about this feature. -->
 
 1. If **Maintenance mode** is *Separate*, then expand the **Header price attribute group** FastTab and add each [header attribute group](price-attribute-groups.md) that you'd like to use with this price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as needed. <!-- KFM: Describe how the rank works here. -->
 
@@ -98,39 +83,40 @@ Use the following procedure to set up your price component codes.
     - Use the toolbar buttons to add and remove price attribute groups as needed.
     - For each attribute group, make the following settings:
         - **Name** – Enter a descriptive name for the line.
-        - **Header type** – <!-- KFM: Description needed. -->
-        - **Header price attribute group** – <!-- KFM: Description needed. -->
-        - **Line type** – <!-- KFM: Description needed. -->
-        - **Line price attribute group** – <!-- KFM: Description needed. -->
-        - **Combination rank** – <!-- KFM: Description needed. -->
+        - **Header type** – Choose which type of criteria to make available for specifying header attributes in pricing rules that use this price attribute group combination. Select *All* to create rules that apply to all customers. Select *Group* to select a group of price attributes for which your pricing rules can specify values to identify specific customers.
+        - **Header price attribute group** – If **Header type** is *Group*, then specify the attribute group that this price attribute group combination will provide for specifying header attribute in pricing rules.
+        - **Line type** – Choose which type of criteria to make available for specifying line attributes in pricing rules that use this price attribute group combination. Select *All* to create rules that apply to all products. Select *Group* to select a group of price attributes for which your pricing rules can specify values to identify specific products.
+        - **Line price attribute group** – If **Line type** is *Group*, then specify the attribute group that this price attribute group combination will provide for specifying line attribute in pricing rules.
+        - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency when more than one pricing rule applies for the price component code. For more information, see [Price attribute combination rank](#rank).
+    - For price component codes where **Price component** is *Sales trade agreement*, the **Price attribute group combination** FastTab toolbar includes a **Trade agreement journals** button. Select a row and then select this button to create a new trade agreement journal for the the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. For more information, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 1. If **Maintenance mode** is *Separate*, then follow these guidelines to set up the **Price attribute group combination** FastTab:
-    - The system automatically creates a row for each possible combinations of header attributes (as listed on the **Header price attribute group** FastTab, plus *All* if **Use all in header group** is enabled) and line attributes (as listed on the **Line price attribute group** FastTab, plus *All* if **Use all in line group** is enabled).
-    - The system automatically assigns each row a **Combination rank** based on the individual header and line attribute group **Rank** settings. <!-- KFM: "Priority" is the same as "Rank"? -->
+    - The system automatically creates a row for each possible combination of header attributes (as listed on the **Header price attribute group** FastTab, plus *All* if **Use all in header group** is enabled) and line attributes (as listed on the **Line price attribute group** FastTab, plus *All* if **Use all in line group** is enabled).
+    - The system automatically assigns each row a **Combination rank** based on the individual header and line attribute group **Rank** settings.
     - Use the toolbar buttons to add and remove price attribute groups as needed. <!-- KFM: Maybe we don't want to do this in this case, since these are auto-generated? -->
     - For each attribute group, make the following settings:
         - **Name** – For autogenerated rows, the name is generated to indicate the header and line attribute that were combined to create that row.
-        - **Header type** – <!-- KFM: Description needed. -->
-        - **Header price attribute group** – <!-- KFM: Description needed. -->
+        - **Header type** – Choose which type of criteria to make available for specifying header attributes in pricing rules that use this price attribute group combination. Select *All* to create rules that apply to all customers. Select *Group* to select a group of price attributes for which your pricing rules can specify values to identify specific customers.
+        - **Header price attribute group** – If **Header type** is *Group*, then specify the attribute group that this price attribute group combination will provide for specifying header attribute in pricing rules.
         - **Header rank** – <!-- KFM: Description needed. -->
-        - **Line type** – <!-- KFM: Description needed. -->
-        - **Line price attribute group** – <!-- KFM: Description needed. -->
+        - **Line type** – Choose which type of criteria to make available for specifying line attributes in pricing rules that use this price attribute group combination. Select *All* to create rules that apply to all products. Select *Group* to select a group of price attributes for which your pricing rules can specify values to identify specific products.
+        - **Line price attribute group** – If **Line type** is *Group*, then specify the attribute group that this price attribute group combination will provide for specifying line attribute in pricing rules.
         - **Line rank** – <!-- KFM: Description needed. -->
-        - **Combination rank** – <!-- KFM: Description needed. -->
-    - For price component codes where **Price component** is *Sales trade agreement*, the **Price attribute group combination** FastTab toolbar includes a **Trade agreement journals** button. For the selected line or price attribute group combination you can create Trade agreements, the selected combination will then flow to price attribute group combination field in trade agreement. <!-- KFM: I don't understand this. More info is needed here. -->
+        - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency when more than one pricing rule applies for the price component code. For more information, see [Price attribute combination rank](#rank).
+    - For price component codes where **Price component** is *Sales trade agreement*, the **Price attribute group combination** FastTab toolbar includes a **Trade agreement journals** button. Select a row and then select this button to create a new trade agreement journal for the the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. For more information, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 1. On the Action Pane, select **Save**.
 
-## Price attribute combination rank
+## <a name="rank"></a>Price attribute combination rank
 
-Rankings let the system decide which pricing rule to use when an order qualifies for more than one rule. As a rule, specific pricing rules (which apply to a specific customer account and product number) take priority over more general rules (which apply to a group of customers or and/or a group of products). However, when two equally general rules apply, it can be difficult to decide which one should take priority (for example, a rule that targets a certain customer group vs. a rule that targets a certain region). Therefore, Pricing management lets you specify a rank for each attribute group and each attribute group combination.
+Rankings let the system decide which pricing rule to use when an order qualifies for more than one rule. As a rule, specific pricing rules (which apply to a specific customer account and product number) take priority over more general rules (which apply to a group of customers and/or a group of products). However, when two equally general rules apply, it can be difficult to decide which one should take priority (for example, a rule that targets a certain customer group vs. a rule that targets a certain region). Therefore, Pricing management lets you specify a rank for each attribute group and each attribute group combination.
 
 The price engine considers the **Combination rank** when both of the following are true:
 
-- There are multiple pricing rules that apply for the same order line within the same price component code, and
-- All of the qualifying rules have their **Concurrency mode** set to *Price attribute combination rank*. <!-- KFM: Where is this setting? -->
+- There are multiple pricing rules that apply for the same order line within the same price component code.
+- All of the qualifying rules have their **Concurrency mode** set to *Price attribute combination rank*.
 
-In this situation, the rule that matches the row with highest **Combination rank** will apply. <!-- KFM: Please confirm this reformulation. -->
+In this situation, the rule that matches the row with highest **Combination rank** will apply.
 
 For example, suppose you have a price component code with **Price component** set to *Trade agreement* and **Maintenance mode** set to *Separate*. The price component code uses the attribute group settings specified in the following table.
 

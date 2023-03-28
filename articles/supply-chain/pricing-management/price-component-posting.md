@@ -18,7 +18,7 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Pricing management lets you set up a different sales order posting ledger for each of the following types of price component codes:
+Pricing management lets you set up a different sales order posting ledger for each of the following types of [price component codes](price-component-code.md):
 
 - Base price
 - Sales trade agreement price
@@ -58,7 +58,7 @@ Follow these steps to prepare your system to support price component posting.
 
 ## Configure price component posting profile
 
-<!--KFM: Briefly describe what price component posting profiles are for and why we need them-->
+<!--KFM: Briefly describe what price component posting profiles are for and why we need them. -->
 
 Follow these steps to set up your price component posting profiles.
 
@@ -81,19 +81,19 @@ Follow these steps to set up your price component posting profiles.
     - **Item code** – Select one of the following values to specify the scope of items where the line wil apply.
         - *Table* – Assign an account for a specific item.
         - *Group* – Assign an account for an item group.
-        - *All* – AssAssign an account for all items.
-    - **Item relation** – Select a specific item if you set the **Item code** field to *Table*. If you set the **Item code** field to *Group*, select an item group.
+        - *All* – Assign an account for all items.
+    - **Item relation** – If you set the **Item code** field to *Table*, select a specific item. If you set the **Item code** field to *Group*, select an item group.
     - **Account code** – Select one of the following values to specify the scope of customer accounts where the line wil apply.
         - *Table* – Assign an account for a specific account.
         - *Group* – Assign an account for an account group.
         - *All* – AssAssign an account for all accounts.
-    - **Account relation** – Select a specific account if you set the **Account code** field to *Table*. If you set the **Item code** field to *Group*, select an account group.
+    - **Account relation** – If you set the **Account code** field to *Table*, select a specific account. If you set the **Item code** field to *Group*, select an account group.
     - **Main account** – Select the account to use when the conditions established by the line are met.
 
 1. Continue working until you have set up all of the lines you need for the current profile.
 1. On the Action Pane, select **Save**.
 
-## Associate the price component posting to the price structure
+## Associate price component posting to the price structure
 
 Follow these steps to set up your pricing structures to use a specific posting profile for each relevant price component code.
 

@@ -53,7 +53,7 @@ Follow these steps to set the concurrency model to use for sales trade agreement
         - Apply the record with the highest *price attribute combination rank*.
         - If two or more records have an equal and highest *price attribute combination rank*, the price engine will check the *header price attribute* and apply the highest ranked record price group.
         - If two or more records have an equal and highest *header price attribute*, the price engine will check the *line price attribute* and apply the highest ranked record in the price attribute group.
-        - In case there are multiple price records found with the same rank, Price engine will apply the cheapest price.
+        - If multiple price records are found with the same rank, the price engine will apply the cheapest price.
 
 The following table shows an example of price component code attribute combinations. <!-- KFM: The table has two columns with the same heading. What does that mean?  -->
 
@@ -64,9 +64,9 @@ The following table shows an example of price component code attribute combinati
 | Target customer segments + Vehicle product | 2003 | Price group | 2 | Fuel type | 2 |
 | Target customer segments + Vehicle product | 2003 | Sales group | 1 | Drive type | 1 |
 
-Assuming there are two posted records for sales trade agreement price line with the same date range. <!-- KFM: What does this mean?  -->
+Assuming there are two posted records for sales trade agreement price lines with the same date range. <!-- KFM: What does this mean?  -->
 
-Because the price attribute combination is the same, the price attribute combination rank are the same. <!-- KFM: What does this mean?  --> Price engine will apply the RID0002 price.
+Because the price attribute combination is the same, the price attribute combination ranks are the same. The price engine will apply the RID0002 price.
 
 <!-- KFM: We should introduce the following table. What does it mean? -->
 

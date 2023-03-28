@@ -2203,13 +2203,13 @@
           href: pricing-management/base-price-versions.md
         - name: Sales trade agreement prices
           href: pricing-management/sales-trade-agreement-prices.md
-      - name: Discounts and margin adjustments
+      - name: Discounts and margin price adjustments
         items:
         - name: Margin price adjustments
           href: pricing-management/margin-price-adjustments.md
         - name: Discounts
           href: pricing-management/discounts.md
-        - name: Configure pricing rules
+        - name: Pricing rules for discounts and margin price adjustments
           href: pricing-management/price-rules.md
         - name: Resolving concurrent pricing rules
           href: pricing-management/concurrent-pricing-rules.md

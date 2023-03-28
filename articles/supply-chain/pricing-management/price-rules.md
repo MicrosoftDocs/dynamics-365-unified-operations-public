@@ -1,5 +1,5 @@
 ---
-title: Configure pricing rules
+title: Pricing rules for discounts and margin price adjustments
 description: This article explains how to configure all types of pricing rules, including margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts and free-item discounts.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,13 +12,13 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Configure pricing rules
+# Pricing rules for discounts and margin price adjustments
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how to configure all types of pricing rules, including margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts and free-item discounts.
+This article explains how to configure pricing rules for component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts and free-item discounts.
 
 ## Create and manage your pricing rules
 
@@ -230,7 +230,7 @@ The following information is shown here:
 Use the settings on the **Validation period** FastTab to control when the pricing rule will apply.  The following conditions apply:
 
 - The date range is defined at the header level. <!-- KFM: Please clarify. -->
-- The date used when validating a pricing rule is based on the **Date type** setting on the **General** tab of the  **Pricing management parameters** page,. You can set the **Date type** to *Today*, *Requested ship date*, *Requested receipt date*, or *Created date*. <!-- KFM: Is this for margin adjustments only, or also for discounts? We should give a link. Currently, this is explained in [Sales trade agreement prices](sales-trade-agreement-prices.md), but should maybe be moved. -->
+- The date used when validating a pricing rule is based on the **Date type** setting on the **General** tab of the  **Pricing management parameters** page,. You can set the **Date type** to *Today*, *Requested ship date*, *Requested receipt date*, or *Created date*. <!-- KFM: Is this for margin price adjustments only, or also for discounts? We should give a link. Currently, this is explained in [Sales trade agreement prices](sales-trade-agreement-prices.md), but should maybe be moved. -->
 
 You can choose to set up the validation period using either standard or advanced settings.
 

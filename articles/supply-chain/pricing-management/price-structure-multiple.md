@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 This article explains how to set up multiple price structures (price trees) within a company. In this scenario, the pricing engine will select a price structure based on the specified *price tree attribute*, which is one of the order attributes. Upon determining the applicable price structure, the price engine will match the sales order with the price component codes following the pricing sequence that is defined in the applicable price tree.  
@@ -61,3 +62,10 @@ Follow these steps to create and configure a price structure.
 1. On the Action Pane, select **Price tree attribute** to specify the value of the price tree attribute that will cause this price tree to apply to a given order. <!--KFM: What kind of attribute is this? Product, Customer, Order, other?  -->
 
 1. On the Action pane, select **Enable** to enable the current price tree.
+
+## Auto charges in single and multiple price structures
+
+Price component codes of type *Auto charges* are handled differently based on whether you ane using a single price structure (price component code setup) or multiple price structures (price trees).
+
+- *If you are using a single price structure*, then you can add the price component code for auto charges in the price component code setup.
+- *If you are using multiple price structures*, then you can't add auto charges in the price tree structures. The system will instead apply the standard Supply Chain Management auto-charge logic to decide which auto charges will apply to the sales order.
