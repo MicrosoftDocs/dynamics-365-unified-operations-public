@@ -22,11 +22,16 @@ https://[CommerceScaleUnitURL]/healthcheck?testname=extensions
 ```
 Replace *CommerceScaleUnitURL* with the URL for your Commerce Scale Unit instance. (**Yegor to confirm**)
 
-Runtime extension health checks include two main categories of tests.
+Runtime extension health check includes the following tests in two main categories.
 1. Assembly tests
+    1. Target framework tests
+    2. Unsupported dependencies test
 2. Extension export tests
+    1. Extension types test
+    2. Route prefix test
+    3. Entity binding test
 
-Details on the two categories and the various tests they include are given below.
+Details on the categories and the tests they include are given below.
 
 ## Assembly tests
 Assembly tests validate assemblies in an extension to ensure they meet current requirements. The top-level assemblies of an extension are validated first. All dependent assemblies are validated next in a recursive manner until the entire dependency tree is traversed. And finally, all unused assemblies in the extension folders are validated. Assembly tests do not validate `System` and `Microsoft.Dynamics` assemblies.
