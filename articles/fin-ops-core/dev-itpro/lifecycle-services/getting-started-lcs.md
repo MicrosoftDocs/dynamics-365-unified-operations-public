@@ -42,7 +42,7 @@ After you sign up as a partner for the current version, you can create two types
 -   Prospective presales
 -   Migrate, create solutions, and learn the Dynamics 365 finance and operations apps
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > Prospect projects is available only in Global LCS (https://lcs.dynamics.com). The preview license is not available in Local LCS. [Go here for more information about LCS in local geographies](../deployment/deployment-options-geo.md).
 
 #### Prospective presales project
