@@ -61,6 +61,9 @@ This article explains how to subscribe to the preview/partner offer and deploy a
 
 ## Start a new project in LCS
 
+> [!NOTE]
+> Prospect projects is available only in Global LCS (https://lcs.dynamics.com). The preview license is not available in Local LCS. [Go here for more information about LCS in local geographies](../deployment/deployment-options-geo.md).
+
 To use LCS to manage your environments, you must create a new project.
 
 1. Go to <https://lcs.dynamics.com/Logon/Index>.
