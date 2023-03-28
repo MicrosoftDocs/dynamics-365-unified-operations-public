@@ -26,7 +26,7 @@ Replace *CommerceScaleUnitURL* with the URL for your Commerce Scale Unit instanc
 Assembly tests validate assembiles in an extension to ensure they meet current requirements. The top-level assemblies of an extension are validated first. All dependent assembiles are validated next in a recursive manner until the entire dependency tree is traversed. And finally, all unused assemblies in the extension folders are also validated. Assembly tests do not validate *System* and *Microsoft.Dynamics* assemblies.
 
 To preserve security be default, the tests do not display assembly names in the results. Developers can override this if needed by using the following app setting.
-```xml
+``` xml
 <appSettings>
   <add key="HealthCheck.Extensions.ShowAssemblyFiles" value="true" />
 </appSettings>
@@ -44,5 +44,18 @@ The results output by the target framework tests is summarized in the table belo
 | Test Status | Succeeded - The target framework is supported.<br/>Failed - The target framework is not supported or could not be retrieved. |
 | Test Severity | Normal |
 
+### Unsupported dependencies test
+Unsupported dependencies is a type of assembly test that checks to see if the assembiles in an extension or their dependencies are referencing Commerce assemblies that are not a part of the Commerce SDK. Only Commerce assemblies that are a part of the Commerce SDK and marked with the following key can be referenced 
+``` csharp
+[assembly: AssemblyMetadata("CommercePublicContract", "")]
+```
+The results output by the unsupported dependencies test is summarized in the table below. Results are only displayed if the test fails.
+| Column | Value |
+|-----------|:-----------|
+| Test Name | Unsupported dependencies (Commerce) |
+| Data | Count - The number of referenced Commerce assemblies that are not part of Commerce SDK.<br/> Assembly names - If *HealthCheck.Extensions.ShowAssemblyFiles* is enabled a comma-separated list of assembly names will be displayed.|
+| Result Text | - |
+| Test Status | Failed - Extensions or their dependencies are referencing Commerce assemblies that are not a part of the Commerce SDK.|
+| Test Severity | Normal |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
