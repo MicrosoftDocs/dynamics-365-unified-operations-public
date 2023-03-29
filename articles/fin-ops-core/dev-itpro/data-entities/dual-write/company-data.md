@@ -26,7 +26,7 @@ Because business unit and company aren't equivalent concepts, it isn't possible 
 
 + For each finance and operations Company row that is enabled for dual-write, an associated cdm\_Company row is created.
 
-+ When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default owner team is automatically created for that business unit, the business unit isn't used.
++ When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default owner team is automatically created for that business unit, the team isn't used.
 + A separate owner team is created that has the same name with a Dual Write suffix. It's also associated with the business unit.
 
 + By default, the owner of any row that is created and dual-written to Dataverse is set to the "DW Owner" team that is linked to the associated business unit.
