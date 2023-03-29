@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 finance and operations apps in local geographies
 description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 finance and operations apps.
-author: Shailesh4all
+author: ShaileshNikam-MSFT
 ms.date: 08/29/2022
 ms.topic: article
 audience: IT Pro
@@ -11,7 +11,7 @@ ms.author: shailesn
 ms.search.validFrom: 2022-04-28
 ---
 
-# Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
+# Dynamics 365 finance and operations apps in local geographies
 
 [!include[banner](../includes/banner.md)]
 
