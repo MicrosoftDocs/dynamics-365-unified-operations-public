@@ -171,7 +171,7 @@ When feature Process Dynamics 365 Sales integration related events is enabled, o
 ### Setup Process Dynamics 365 Sales integration related events
 
 When Process Dynamics 365 Sales integration related events has been enabled, then navigate to Sales and Marketing>Periodic tasks>Dynamics 365 Sales Integration message processor form to setup the required batch job. Setup the batch job to run with required recurrence. The batch job can also be setup from the System administration>Message processor>Message processor form. 
-When the feature is enabled, then the Send quotation and Confirm events are processed asynchronously. A batch job must be setup and be running for the messages from the message queue to be processed automatically. 
+When the feature is enabled, then the Send quotation and Confirm events are processed asynchronously. A single batch job must be setup and be running for the messages from the message queue to be processed automatically. 
 The messages can be processed using multithreading by defining the number of messages in a task and by defining the number of processor tasks. 
 When the feature is enabled, a new tab page Dynamics 365 Sales integration is available from Accounts receivables>Setup> Accounts receivables parameters form.
 
