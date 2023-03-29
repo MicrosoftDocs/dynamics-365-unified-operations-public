@@ -43,7 +43,7 @@ Below are branch policy best practices we recommend regardless of which branchin
 
 ### Branching in TFVC
 
-A common branching strategy for teams using TFVC is combining a Trunk-based approach with Developer isolation and Release isolation. This approach attempts to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment. Read more about [Branching strategies in TFVC](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true).
+A common branching strategy for teams using Team Foundation Version Control (TFVC) is combining a Trunk-based approach with Developer isolation and Release isolation. This approach attempts to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment. Read more about [Branching strategies in TFVC](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true).
 
 When a developer believes their work item is ready for functional testing, they merge or "promote" all changes associated with their work from a dedicated development branch to a dedicated testing branch. The testing branch contains all code awaiting functional validation. After the changes associated with a work item pass functional validation, they are promoted to the dedicated branch holding production ready code. The Production branch contains the code running on (or soon to be deployed to) the live environment.
 
