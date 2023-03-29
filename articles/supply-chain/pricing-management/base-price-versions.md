@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the SKU level. Pricing management allows you to build selling prices using *cost-plus pricing*. When you use cost-plus pricing, you start by building a pricing structure that starts with the base price.

@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 Concurrency rules let you establish what happens when multiple discounts and price adjustments apply to the same order and/or order line. You can set up concurrency rules to control whether the customer should receive just one of the matching price adjustments (and which one) or whether they should be combined (and how they should be combined). There are two types of concurrency:
@@ -37,15 +38,16 @@ The following types of within-price-component-code concurrency mode are availabl
 
 ## Configure within-price-component-code concurrency modes
 
-There are three places in the system where you can view and/or set within-price-component-code concurrency modes:
+There are several places in the system where you can view and/or set within-price-component-code concurrency modes:
 
 - **Price component code level** – Each relevant price component code holds a default within-price-component-code concurrency setting. The available modes vary by price component code type. This setting can be overwritten in any or all pricing rules if needed. See also [Price component codes](price-component-code.md).
 - **Price structure level** – Each price component code included in a price structure shows its default concurrency mode, but you're not able to edit it here. See also [Arrange price component codes into a price structure](price-structure-details.md).
-- **Pricing rule level** – The concurrency mode assigned to a pricing rule will override the default mode assigned by its associated price component code. See also [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
+- **Pricing rule level for discounts and margin price adjustments** – The concurrency mode assigned to a pricing rule will override the default mode assigned by its associated price component code. See also [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
+- **Company level for sales trade agreements** – Sales trade agreements are set up using trade agreement journals where the pricing rules are established by the related journal lines. Concurrency rules for sales trade agreements are established on the **Pricing management parameters** page for each company. For details about the options available and how to use them, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 ## Discount determination flow
 
-The following flow chart shows how pricing rules, price structure, and concurrency models work together to resolve within-price-component-code concurrency. <!-- KFM: We need to provide this information also in text.  -->
+The following flow chart shows how pricing rules, price structure, and concurrency models work together to resolve within-price-component-code concurrency. <!-- KFM: We should provide this information also in text.  -->
 
 [<img src="media/concurrency-flowchart.png" alt="Flowchart for determining within-price-component-code concurrency." title="Flowchart for determining within-price-component-code concurrency" width="600" />](media/concurrency-flowchart.png#lightbox)
 
@@ -76,6 +78,4 @@ Here's an example of how concurrency determination works:
     | Always apply | 40 | DIS02 | DIS02-02 | Amount | 8 | 94.82 | 1090.45 |
     | Always apply | 50 | DIS 03 | DIS03-02 | Amount | 10 | 10.00 | 1080.45 |
 
-## Resolving concurrency for sales trade agreements
 
-The other sections of this article describe how within-price-component-code concurrency works for discounts and margin price components (which are similar). Sales trade agreements work differently and are set up using trade agreement journals where the pricing rules are established by the related journal lines. Concurrency rules for sales trade agreements are established on the **Pricing management parameters** page. For details about the options available and how to use them, see [Sales trade agreement prices](sales-trade-agreement-prices.md).

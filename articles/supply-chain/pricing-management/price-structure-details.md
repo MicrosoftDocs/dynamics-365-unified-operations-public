@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 Regardless of whether you are using a single price structure or multiple price structures, the procedure for arranging your price components codes into a price structure is the same. The only difference is that when you use multiple price structures, you'll also set a condition for choosing which structure to use in each situation.
@@ -30,6 +31,8 @@ Follow these steps to create and configure a price structure.
 1. Do one of the following steps:
     - If you are using a single pricing structure, then follow the instructions given in [Set up company to use a single price structure](price-structure-single.md). Then go to **Pricing management \> Setup \> Price component codes \> Price component code setup** and continue with this procedure.
     - If you are using multiple pricing structures, then follow the instructions given in [Set up company to use a multiple price structures](price-structure-multiple.md). Then go to the **Pricing management \> Setup \> Price component codes \> Price trees**, create or select a price tree and expand the **Price component code list** FastTab and continue with this procedure.
+
+    [<img src="media/price-component-code-setup.png" alt="The Price component code setup page." title="The Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
 
 1. Add each price component code that should be part of the current price structure. Use the buttons in the toolbar to add and remove lines as needed. The following settings and information are available for each line.
 

@@ -2193,7 +2193,7 @@
           href: pricing-management/price-structure-details.md
       - name: Base prices and sales trade agreements
         items:
-        - name: Vendor list price and price adjustments overview
+        - name: Vendor list price and price adjustments
           href: pricing-management/vendor-list-price.md
         - name: Sales order base price determination rules
           href: pricing-management/base-price-determination-rules.md
