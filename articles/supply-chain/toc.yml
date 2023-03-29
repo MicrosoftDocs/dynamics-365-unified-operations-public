@@ -2208,7 +2208,7 @@
         - name: Discounts
           href: pricing-management/discounts.md
         - name: Pricing rules for discounts and margin price adjustments
-          href: pricing-management/price-rules.md
+          href: pricing-management/margin-discount-pricing-rules.md
       - name: Concurrency within and across price component codes
         items:
         - name: Resolving concurrency within price component codes

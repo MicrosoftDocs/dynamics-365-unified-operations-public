@@ -74,4 +74,4 @@ The following illustration shows the architecture of the Pricing management modu
 - [Price structure overview](price-structure-overview.md)
 - [Vendor list price and price adjustments overview](vendor-list-price.md)
 - [Sales trade agreement prices](sales-trade-agreement-prices.md)
-- [Pricing rules for discounts and margin price adjustments](price-rules.md)
+- [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md)

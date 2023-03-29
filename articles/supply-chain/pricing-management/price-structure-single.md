@@ -1,6 +1,6 @@
 ﻿---
 title: Set up company to use a single price structure
-description: This article explains how to configure a company to use a single price structure (price tree) and how to set up that structure.
+description: This article explains how to configure a company to use a single price structure and how to set up that structure.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This article explains how to configure a company to use a single price structure (price tree) and how to set up that structure. In this scenario, the pricing engine matches each sales order with the price component codes based on the pricing sequence that is defined in the single tree.
+This article explains how to configure a company to use a single price structure and how to set up that structure. In this scenario, the pricing engine matches each sales order with the price component codes based on the pricing sequence that is defined in the single structure.
 
 In this case, companies and price structures have a 1:1 relationship, and this single price structure is called the *Price component code setup*.
 
@@ -34,6 +34,7 @@ To use a single price structure for a company:
 1. Select the company from the company picker.
 1. Go to **Pricing management \> Setup \> Pricing management parameters**
 1. Open the **Price attribute** tab and set **Enable multiple price trees** to *No*.
+1. Select **Save** on the Action Pane.
 
 ## Configure the single price structure
 

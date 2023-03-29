@@ -32,9 +32,9 @@ To use margin component price adjustments you must make the following configurat
 
 - Create one or more [price component codes](price-component-code.md) to set up various types of margin price adjustments that you can include in your price structures.
 - Create one or more [price structures](price-structure-overview.md) to establish how your margin price adjustments combine with other price elements (such as base price and discounts) to find the final unit price.
-- Set up one or more [margin price adjustment pricing rules](price-rules.md) to configure the margin price adjustments you need, which customers and items they apply to, and how they are calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
+- Set up one or more [margin price adjustment pricing rules](margin-discount-pricing-rules.md) to configure the margin price adjustments you need, which customers and items they apply to, and how they are calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
 
-For details about how to create pricing rules for each margin price adjustment (and discount), see [Pricing rules for discounts and margin price adjustments](price-rules.md).
+For details about how to create pricing rules for each margin price adjustment (and discount), see [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
 
 For example, the following screenshot shows a price structure that contains two sequential margin component price adjustments (*General price adjustments* and *Seasonal price adjustments*).
 
