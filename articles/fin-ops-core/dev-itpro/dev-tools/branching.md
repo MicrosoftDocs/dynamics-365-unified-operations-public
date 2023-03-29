@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.30
 ---
 # Branching
 
-Branching configurations for X++ repositories vary depending on the development team preference and the Finance and Operations apps lifecycle. If the implementation already has a preferred branching structure and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you could use it to manage new development. Alternatively, you can evaluate the branching structure options in this article.
+Branching configurations for X++ repositories vary depending on the development team preference and the finance and operations apps lifecycle. If the implementation already has a preferred branching structure and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you could use it to manage new development. Alternatively, you can evaluate the branching structure options in this article.
 
 ## Considerations
 
@@ -30,7 +30,7 @@ Any X++ repository branching strategy should support, at a minimum:
 - The isolation of un-tested development code or code in development. Developers should be protected from teammates accidentally breaking any active development branch. If the team shares a single development branch, each developer needs to ensure they don't commit code that breaks teammates. Additional configuration of the version control capabilities should be leveraged. Otherwise, isolating untested code from in-development code is an ideal way to provide this protection. 
 - The isolation of in-development code from test-eligible code. A code change may pass unit testing or manual developer testing but the associated task may still not be ready for functional testing. Any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
 - The isolation if in-test code from production code. This is the fundamental purpose of all version control: avoiding code releases to production environments until code changes have been fully validated.
-- Relatively long functional testing cycles. See the [Considerations](#considerations) section for more details on why Finance and Operations apps customizations take longer to validate.
+- Relatively long functional testing cycles. See the [Considerations](#considerations) section for more details on why finance and operations apps customizations take longer to validate.
 
 ## Branch Policy Guidance
 
