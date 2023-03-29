@@ -25,14 +25,16 @@ All required services and related data are deployed in the corresponding data ce
 
 The following table lists the local geographies and endpoints that Commerce, Finance, and Supply Chain Management support.
 
-| Geography | LCS endpoint | LCS API endpoint |
-|-----------|--------------|------------------|
-| France | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) | https://lcsapi.fr.lcs.dynamics.com |
-| United Arab Emirates | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) | https://lcsapi.uae.lcs.dynamics.com |
-| South Africa | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) | https://lcsapi.sa.lcs.dynamics.com |
-| Switzerland | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) | https://lcsapi.ch.lcs.dynamics.com |
-| Europe | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) | https://lcsapi.eu.lcs.dynamics.com |
-| Norway | [https://no.lcs.dynamics.com/](https://no.lcs.dynamics.com/) | https://lcsapi.no.lcs.dynamics.com |
+| Geography | LCS endpoint | LCS API endpoint | Environment endpoint* |
+|-----------|--------------|------------------|----------------------|
+| France | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) | https://lcsapi.fr.lcs.dynamics.com | https://NAME.operations.fr.dynamics.com/ |
+| United Arab Emirates | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) | https://lcsapi.uae.lcs.dynamics.com | https://NAME.operations.uae.dynamics.com/ |
+| South Africa | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) | https://lcsapi.sa.lcs.dynamics.com | https://NAME.operations.sa.dynamics.com/ |
+| Switzerland | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) | https://lcsapi.ch.lcs.dynamics.com | https://NAME.operations.ch.dynamics.com/ |
+| Europe | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) | https://lcsapi.eu.lcs.dynamics.com | https://NAME.operations.eu.dynamics.com/ |
+| Norway | [https://no.lcs.dynamics.com/](https://no.lcs.dynamics.com/) | https://lcsapi.no.lcs.dynamics.com | https://NAME.operations.no.dynamics.com/ |
+
+**NAME represents the unique customer defined environment name.*
 
 ## Feature availability in local geographies
 
