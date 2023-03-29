@@ -2191,8 +2191,6 @@
           href: pricing-management/price-structure-multiple.md
         - name: Arrange price component codes into a price structure
           href: pricing-management/price-structure-details.md
-        - name: Resolving concurrent price codes within a price structure
-          href: pricing-management/price-structure-concurrence.md
       - name: Base prices and sales trade agreements
         items:
         - name: Vendor list price and price adjustments overview
@@ -2211,8 +2209,12 @@
           href: pricing-management/discounts.md
         - name: Pricing rules for discounts and margin price adjustments
           href: pricing-management/price-rules.md
-        - name: Resolving concurrent pricing rules
-          href: pricing-management/concurrent-pricing-rules.md
+      - name: Concurrency within and across price component codes
+        items:
+        - name: Resolving concurrency within price component codes
+          href: pricing-management/concurrence-within-codes.md
+        - name: Resolving concurrency across price component codes
+          href: pricing-management/concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page

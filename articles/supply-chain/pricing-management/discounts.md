@@ -164,7 +164,7 @@ However, if the customer orders ten EV009, then they would still have ordered 10
 
 ## "Always apply" discounts
 
-*Always apply* isn't a discount type, but is a concurrency mode that is available for all discount types. All the discounts that are created using the *Always apply* mode will be applied on the appropriate items after all the existing discounts are applied. See also [Resolving concurrent pricing rules](concurrent-pricing-rules.md).
+*Always apply* isn't a discount type, but is a concurrency mode that is available for all discount types. All the discounts that are created using the *Always apply* mode will be applied on the appropriate items after all the existing discounts are applied. See also [Resolving concurrent pricing rules](concurrence-within-codes.md).
 
 ## Next steps
 

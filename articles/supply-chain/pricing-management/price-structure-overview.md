@@ -47,8 +47,8 @@ The following table summarizes the principle component types that can be include
 
 If your price structure has multiple price rules that apply to the same price component code and/or multiple price component codes of the same type, then the system will apply concurrency rules to resolve them.
 
-- If more than one pricing rule applies to the same price component code in a price structure, then *within-price-component-code concurrency* rules will be applied to decide which rules apply and how to combine them. See also [Resolving concurrent pricing rules within a price code](concurrent-pricing-rules.md).
-- If your price structure includes more than one price component code of the same type, then *Across-price-component-code concurrency* rules will be applied to decide how to combine them. See also [Resolving concurrent price codes within a price structure](price-structure-concurrence.md).
+- If more than one pricing rule applies to the same price component code in a price structure, then *within-price-component-code concurrency* rules will be applied to decide which rules apply and how to combine them. See also [Resolving concurrency within price component codes](concurrence-within-codes.md).
+- If your price structure includes more than one price component code of the same type, then *Across-price-component-code concurrency* rules will be applied to decide how to combine them. See also [Resolving concurrency across price component codes](concurrence-cross-codes.md).
 
 ## Next steps
 

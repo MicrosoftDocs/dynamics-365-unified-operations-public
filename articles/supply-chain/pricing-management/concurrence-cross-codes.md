@@ -1,5 +1,5 @@
 ---
-title: Resolving concurrent price codes within a price structure
+title: Resolving concurrency across price component codes
 description: Concurrency rules let you establish what happens when multiple discounts and price adjustments apply to the same order and/or order line. This article explains how to manage across-price-component-code concurrency within a price structure. 
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Resolving concurrent price codes within a price structure
+# Resolving concurrency across price component codes
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -23,7 +23,7 @@ Concurrency rules let you establish what happens when multiple discounts and pri
 - *Across-price-component-code concurrency* – Controls how the various [price component codes](price-component-code.md) included in a [pricing structure](price-structure-overview.md) combine with each other. Your pricing structure establishes a collection of various types of price component codes (including base price, sales agreement price, margin components, discounts, and/or charges), the sequence in which the codes are calculated, and how the price adjustments should be calculated and combined to find the final price.
 - *Within-price-component-code concurrency* – Any number of [pricing rules](price-rules.md) can be associated with each of the component codes included in a pricing structure. This is especially true of discounts. This type of concurrency occurs when an order or order line qualifies for more than pricing rule that is associated with the same component code. For example, you could define a price component code called *Seasonal promotion events* and associate multiple discount rules with it, which means that multiple pricing rules might apply to the same order line. You would therefore set up concurrency rules to control whether the customer should receive just one of the matching discounts (and which one) or whether they should be combined (and how they should be combined) within the *Seasonal promotion events* price component code.
 
-This article explains how to manage *across-price-component-code concurrency*. For details about how to manage *within-price-component-code concurrency*, see [Resolving concurrent pricing rules within a price code](concurrent-pricing-rules.md).
+This article explains how to manage *across-price-component-code concurrency*. For details about how to manage *within-price-component-code concurrency*, see [Resolving concurrency within price component codes](concurrence-within-codes.md).
 
 ## Set the across-price-component-code concurrency mode for each price structure
 

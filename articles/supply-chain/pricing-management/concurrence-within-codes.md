@@ -1,5 +1,5 @@
 ---
-title: Resolving concurrent pricing rules within a price code
+title: Resolving concurrency within price component codes
 description: Concurrency rules let you establish what happens when multiple discounts and price adjustments apply to the same order and/or order line. This article explains how to manage within-price-component-code concurrency.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Resolving concurrent pricing rules within a price code
+# Resolving concurrency within price component codes
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -23,7 +23,7 @@ Concurrency rules let you establish what happens when multiple discounts and pri
 - *Across-price-component-code concurrency* – Controls how the various [price component codes](price-component-code.md) included in a [pricing structure](price-structure-overview.md) combine with each other. Your pricing structure establishes a collection of various types of price component codes (including base price, sales agreement price, margin components, discounts, and/or charges), the sequence in which the codes are calculated, and how the price adjustments should be calculated and combined to find the final price.
 - *Within-price-component-code concurrency* – Any number of [pricing rules](price-rules.md) can be associated with each of the component codes included in a pricing structure. This is especially true of discounts. This type of concurrency occurs when an order or order line qualifies for more than pricing rule that is associated with the same component code. For example, you could define a price component code called *Seasonal promotion events* and associate multiple discount rules with it, which means that multiple pricing rules might apply to the same order line. You would therefore set up concurrency rules to control whether the customer should receive just one of the matching discounts (and which one) or whether they should be combined (and how they should be combined) within the *Seasonal promotion events* price component code.
 
-This article explains how to manage *within-price-component-code concurrency*. For details about how to manage *across-price-component-code concurrency*, see [Resolving concurrent price codes within a price structure](price-structure-concurrence.md).
+This article explains how to manage *within-price-component-code concurrency*. For details about how to manage *across-price-component-code concurrency*, see [Resolving concurrency across price component codes](concurrence-cross-codes.md).
 
 ## Types of within-price-component-code concurrency modes
 
@@ -31,7 +31,7 @@ The following types of within-price-component-code concurrency mode are availabl
 
 - **Exclusive** – The pricing rule can't be combined with other rules associated with the same price component code. If more than one of these rules is as exclusive, the price engine will apply the rule with the highest discount.
 - **Best price** – Pricing rules of this concurrency mode will compete for the highest discount (lowest price).
-- **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page, as described in [System settings for discount concurrency control](price-structure-concurrence.md#parameters).
+- **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page, as described in [System settings for discount concurrency control](concurrence-cross-codes.md#parameters).
 - **Always apply** – The pricing rule always applies. This calculation is always applied last within a price component code.
 - **Price attribute combination rank** – Pricing rules using this concurrency mode don't compete for price but instead compete based on which one has the highest *price attribute combination rank*. If multiple rules have the same highest rank within the same price component code, then those rules will be combined.
 
