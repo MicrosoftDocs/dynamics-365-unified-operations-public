@@ -31,7 +31,7 @@ The following table lists the features that are included in this release.
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Data integration | **User-based service protection API limits** <\br? With this release, user-based service protection API limits are now mandatory in finance and operations environments. The option to disable the limits is no longer available. | [Service protection API limits](../data-entities/service-protection-api-limits.md) | Mandatory |
-
+| Additional languages available | Eleven additional languages are available |Eleven new languages are available for user selection in the preferred language list: Spanish (Chile), Spanish (Colombia), Spanish (Costa Rica), Spanish (Nicaragua), Spanish (Panama), Spanish (Paraguay), Spanish (Uruguay), Spanish (Argentina), English (Pakistan), English (Philippines), English (Malta). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
 
 
 
