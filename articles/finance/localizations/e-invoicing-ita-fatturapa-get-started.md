@@ -309,7 +309,7 @@ This section provides information that will help you set up and configure the pr
         - Object ID
 
     > [!NOTE]
-    > Object ID for an application is different on **App registrations** and **Enterprise applications** forms. We need the Object ID value from **Enterprise applications** form.
+    > Object ID for an application is different on **App registrations** and **Enterprise applications** forms. Use the Object ID value from **Enterprise applications** form.
 
 5. In RCS, add the app to the application list for your service environment.
 
