@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 Concurrency rules let you establish what happens when multiple discounts and price adjustments apply to the same order and/or order line. You can set up concurrency rules to control whether the customer should receive just one of the matching price adjustments (and which one) or whether they should be combined (and how they should be combined). There are two types of concurrency:
@@ -25,24 +26,22 @@ Concurrency rules let you establish what happens when multiple discounts and pri
 
 This article explains how to manage *across-price-component-code concurrency*. For details about how to manage *within-price-component-code concurrency*, see [Resolving concurrency within price component codes](concurrence-within-codes.md).
 
-## Set the across-price-component-code concurrency mode for each price structure
+## Set across-price-component-code concurrency options for each price structure
 
 Concurrency across price components codes only affects discounts and margin price adjustments. You make the setting at the price structure level, using the **Concurrency mode across priority** column on either the **Price component code setup** or **Price trees** page. The following options are available:
 
 - *Compounded* – The system will first compute the price adjustment or discount for each line in the structure and then will calculate the final discount or adjustment by adding up the value for each line. This value is only available for lines with a **Price component** of *Discounts* or *Margin component* (For margin components, this is the only available setting).
 - *Best price* – If the price structure includes more than one price component code with this setting, then  only one of those lines will contribute to the final unit price (the one with the highest discount).  This value is only available for lines with a **Price component** of *Discounts*.
 
-This setting only affects discount calculations when the **Best price and compound concurrency control model** is set to *Best price and compound within priority, best price and compound across priority* on the **Pricing management parameters** page. See the [System settings for discount concurrency control](#parameters) for details.
+This setting only affects discount calculations when the **Best price and compound concurrency control model** is set to *Best price and compound within priority, best price and compound across priority* on the **Pricing management parameters** page. See the [System settings for resolving discount concurrency across price component codes](#parameters) for details.
 
-For more information about how to set up a price structure, see [Arrange price component codes into a price structure](price-structure-details.md).
+As mentioned, margin components are always compounded across components (in other words, **Concurrency mode across priority** is always *Compounded* for margin components in your price structures). However, you still need to set up each price structure to control whether each adjustment is calculated using the base price or the compound price (running total). This can have a significant effect on your final prices for margin price adjustments that are calculated as a percentage. For each margin component in your price structure(s), you can set this option using the **Compound** check box. For an example of how this setting affects your final prices, see [Example price calculation using a mix of compound and non-compound margin components](#margin-example).
 
-<!-- KFM: We should say something about auto charges. I think they are simply added to the price (per header or per line?). -->
+For details about how to set up price structures, see [Arrange price component codes into a price structure](price-structure-details.md).
 
-## <a name="parameters"></a>System settings for discount concurrency control
+## <a name="parameters"></a>System settings for resolving discount concurrency across price component codes
 
-<!-- KFM: We should eventually make a topic "Price and discount preferences" that describes all the settings on the **Prices and discounts** tab. The settings here aren't actually specific to "within price structure" concurrence, which is otherwise the focus of this topic. -->
-
-A few settings on the **Pricing management parameters** page affect the way concurrent discounts are calculated, which can also affect the way some of your price structure settings work as they apply to discounts. Follow these steps to set it up.
+A setting on the **Pricing management parameters** page affect the way concurrent discounts are calculated, which can also affect the way some of your price structure settings work as they apply to discounts. Follow these steps to set it up.
 
 1. Go to **Pricing management \> Setup \> Pricing management parameters**.
 1. Open the **Prices and discounts** tab.
@@ -51,15 +50,8 @@ A few settings on the **Pricing management parameters** page affect the way conc
     - *Best price and compound within priority, never compound across priorities* – <!-- KFM: Description needed -->
     - *Best price only within priority, always compound across priorities* – <!-- KFM: Description needed -->
     - *Best price and compound within priority, best price and compound across priority* – <!-- KFM: Description needed. Mention that the **Concurrency mode across priority** option in the price structure only has an effect when this option is selected.  -->
-1. Choose one of the following options under the **Discount compound behavior** heading.
-    - *Compound* – <!-- KFM: Description needed -->
-    - *Compound on the original price* – <!-- KFM: Description needed -->
-1. Set **Enable competition between exclusive threshold and other periodic discounts** to one of the following values:
-    - *Yes* – Exclusive threshold discounts will compete with the exclusive non-threshold discounts while priority still applies. The best price and compounded threshold discounts behavior will remain unchanged (they won't compete with the non-threshold discounts).
-    - *No* – <!-- KFM: Description needed -->
 
-
-## Example price calculation using a mix of compound and non-compound margin components
+## <a name="margin-example"></a>Example price calculation using a mix of compound and non-compound margin components
 
 When your price structure includes multiple margin and/or discount components, then the order in which they are calculated and the method used to combine them can significantly affect the final price.
 

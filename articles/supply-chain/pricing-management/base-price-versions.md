@@ -41,7 +41,7 @@ The cost-plus pricing model works by determining the product cost and then addin
 
 Pricing management derives base prices from one of the following two sources:
 
-- The primary source is the price listed for each product on the **Item base price** page, which yo can open by going to **Pricing management \> Pre-sales pricing \> Base price versions** and selecting selecting **Price \> Base** price from on the Action Pane. <!-- KFM: I think this is what we mean here. Please confirm. More documentation is needed for these pages. -->
+- The primary source is the price listed for each product on the **Item base price** page, which you can open by going to **Pricing management \> Pre-sales pricing \> Base price versions**, which lists each base price version that you have created and the dates for which each is valid. Select a version and then select **Price \> Base** price from on the Action Pane to view and edit the prices that apply for that version. <!-- KFM: I think this is what we mean here. Please confirm. More documentation is needed for these pages. -->
 - If an item doesn't have an active Item base price, the system will check to see if it has an active cost price in a [costing version](../cost-management/costing-versions.md). A costing version can support a standard cost inventory model for items where the costing version contains a set of standard cost records about the items and their manufacturing processes.
 
 The following tables illustrates the rules for determining the base price.

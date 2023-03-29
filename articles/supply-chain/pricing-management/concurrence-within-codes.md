@@ -32,7 +32,7 @@ The following types of within-price-component-code concurrency mode are availabl
 
 - **Exclusive** – The pricing rule can't be combined with other rules associated with the same price component code. If more than one of these rules is as exclusive, the price engine will apply the rule with the highest discount.
 - **Best price** – Pricing rules of this concurrency mode will compete for the highest discount (lowest price).
-- **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page, as described in [System settings for discount concurrency control](concurrence-cross-codes.md#parameters).
+- **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page, as described in [System settings for resolving discount concurrency within a price component code](#parameters).
 - **Always apply** – The pricing rule always applies. This calculation is always applied last within a price component code.
 - **Price attribute combination rank** – Pricing rules using this concurrency mode don't compete for price but instead compete based on which one has the highest *price attribute combination rank*. If multiple rules have the same highest rank within the same price component code, then those rules will be combined.
 
@@ -43,7 +43,25 @@ There are several places in the system where you can view and/or set within-pric
 - **Price component code level** – Each relevant price component code holds a default within-price-component-code concurrency setting. The available modes vary by price component code type. This setting can be overwritten in any or all pricing rules if needed. See also [Price component codes](price-component-code.md).
 - **Price structure level** – Each price component code included in a price structure shows its default concurrency mode, but you're not able to edit it here. See also [Arrange price component codes into a price structure](price-structure-details.md).
 - **Pricing rule level for discounts and margin price adjustments** – The concurrency mode assigned to a pricing rule will override the default mode assigned by its associated price component code. See also [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
-- **Company level for sales trade agreements** – Sales trade agreements are set up using trade agreement journals where the pricing rules are established by the related journal lines. Concurrency rules for sales trade agreements are established on the **Pricing management parameters** page for each company. For details about the options available and how to use them, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
+- **Company level for sales trade agreements** – Sales trade agreements are set up using trade agreement journals where the pricing rules are established by the related journal lines. Concurrency rules for sales trade agreements are established on the **Pricing management parameters** page for each company. For details about the options available and how to use them, see .
+
+## <a name="parameters"></a>System settings for resolving discount concurrency within a price component code
+
+A few settings on the **Pricing management parameters** page affect the way concurrent discounts are calculated, which can also affect the way some of your price structure settings work as they apply to discounts. Follow these steps to set it up.
+
+1. Go to **Pricing management \> Setup \> Pricing management parameters**.
+1. Open the **Prices and discounts** tab.
+1. Expand the **Discount concurrency control** FastTab.
+1. Choose one of the following options under the **Best price and compound concurrency control model** heading:
+    - *Best price and compound within priority, never compound across priorities* – <!-- KFM: Description needed -->
+    - *Best price only within priority, always compound across priorities* – <!-- KFM: Description needed -->
+    - *Best price and compound within priority, best price and compound across priority* – <!-- KFM: Description needed. Mention that the **Concurrency mode across priority** option in the price structure only has an effect when this option is selected.  -->
+1. Choose one of the following options under the **Discount compound behavior** heading.
+    - *Compound* – <!-- KFM: Description needed -->
+    - *Compound on the original price* – <!-- KFM: Description needed -->
+1. Set **Enable competition between exclusive threshold and other periodic discounts** to one of the following values:
+    - *Yes* – Exclusive threshold discounts will compete with the exclusive non-threshold discounts while priority still applies. The best price and compounded threshold discounts behavior will remain unchanged (they won't compete with the non-threshold discounts).
+    - *No* – <!-- KFM: Description needed -->
 
 ## Discount determination flow
 
@@ -55,27 +73,26 @@ The following flow chart shows how pricing rules, price structure, and concurren
 
 Here's an example of how concurrency determination works:
 
-1. Suppose you have an item *BT023* with an item price of *$1565.00*. The concurrency mode is compounded. <!-- KFM: Where does this concurrency mode come from? -->
-1. Your system includes the discount pricing rules shown in the following table. The pricing sequence comes from your price structure.
+Suppose you have an item *BT023* with an item price of *$1565.00*. The concurrency mode is compounded. <!-- KFM: Where does this concurrency mode come from? -->
 
-    | Price component code | Pricing sequence | Pricing rule ID | Concurrency mode | Calculation method | Value | Discount type |
-    |---|---|---|---|---|---|---|
-    | DIS 01 | 30 | DIS01-01 | Best price | Percentage | 10 | Simple |
-    | DIS 01 | 30 | DIS01-02 | Always apply | Percentage | 5 | Simple |
-    | DIS 02 | 40 | DIS02-01 | Compounded | Percentage | 10 | Simple |
-    | DIS 02 | 40 | DIS02-02 | Always apply | Percentage | 8 | Simple |
-    | DIS 03 | 50 | DIS03-01 | Compounded | Amount | 20 | Threshold |
-    | DIS 03 | 50 | DIS03-02 | Always apply | Amount | 10 | Threshold |
+Your system includes the discount pricing rules shown in the following table. The pricing sequence comes from your price structure.
 
-1. An order is placed for one *BT023*, so the system applies the rules of the previous table to calculate the discount shown in the following table, resulting in a final price of $1080.45
+| Price component code | Pricing sequence | Pricing rule ID | Concurrency mode | Calculation method | Value | Discount type |
+|---|---|---|---|---|---|---|
+| DIS 01 | 30 | DIS01-01 | Best price | Percentage | 10 | Simple |
+| DIS 01 | 30 | DIS01-02 | Always apply | Percentage | 5 | Simple |
+| DIS 02 | 40 | DIS02-01 | Compounded | Percentage | 10 | Simple |
+| DIS 02 | 40 | DIS02-02 | Always apply | Percentage | 8 | Simple |
+| DIS 03 | 50 | DIS03-01 | Compounded | Amount | 20 | Threshold |
+| DIS 03 | 50 | DIS03-02 | Always apply | Amount | 10 | Threshold |
 
-    | Concurrency mode | Pricing sequence | Discount price component code | Pricing rule ID | Calculation method | Value | Discount amount | New unit price |
-    |---|---|---|---|---|---|---|---|
-    | Best price | 30 | DIS01 | DIS01-01 | Percentage | 10 | 156.50 | 1408.50 |
-    | Compounded | 40 | DIS02 | DIS02-01 | Percentage | 10 | 140.85 | 1267.65 |
-    | Threshold | 50 | DIS03 | DIS03-01 | Percentage | 20 | 20.00 | 1247.65 |
-    | Always apply | 30 | DIS01 | DIS01-02 | Percentage | 5 | 62.38 | 1185.27 |
-    | Always apply | 40 | DIS02 | DIS02-02 | Amount | 8 | 94.82 | 1090.45 |
-    | Always apply | 50 | DIS 03 | DIS03-02 | Amount | 10 | 10.00 | 1080.45 |
+An order is placed for one *BT023*, so the system applies the rules of the previous table to calculate the discount shown in the following table, resulting in a final price of $1080.45
 
-
+| Concurrency mode | Pricing sequence | Discount price component code | Pricing rule ID | Calculation method | Value | Discount amount | New unit price |
+|---|---|---|---|---|---|---|---|
+| Best price | 30 | DIS01 | DIS01-01 | Percentage | 10 | 156.50 | 1408.50 |
+| Compounded | 40 | DIS02 | DIS02-01 | Percentage | 10 | 140.85 | 1267.65 |
+| Threshold | 50 | DIS03 | DIS03-01 | Percentage | 20 | 20.00 | 1247.65 |
+| Always apply | 30 | DIS01 | DIS01-02 | Percentage | 5 | 62.38 | 1185.27 |
+| Always apply | 40 | DIS02 | DIS02-02 | Amount | 8 | 94.82 | 1090.45 |
+| Always apply | 50 | DIS 03 | DIS03-02 | Amount | 10 | 10.00 | 1080.45 |

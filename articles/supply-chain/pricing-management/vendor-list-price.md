@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: Is this topic in the right place? What are we talking about here, base prices, sales prices, or something else? -->
+<!-- KFM: Is this topic in the right place? What are we talking about here, base prices, sales prices, or something else?  -->
 
 # Vendor list price and price adjustments
 
@@ -25,7 +25,7 @@ In some cases, Pricing management can derive a product's sales price from the ve
 
 Vendor list prices come from a vendor price catalogue and can be used as the foundation to calculate the sales price of an item.
 
-The vendor list price features have three core elements:
+The vendor list price features have three core elements: <!-- KFM: The following appear to refer to pages under the Pre-sales pricing heading in navigation. We should document each of these pages.  -->
 
 - **Vendor list price** – Provides the capability to record the general vendor price catalog with a valid date period. The vendor list price is on the *Item + inventory dimensions* level.
 - **Vendor price term codes** – Establish a list of price adjustment codes, which you can use when defining vendor price term agreements. For calculations with **Compound** set to *Yes*, pricing calculations will apply price term codes together with the pricing sequence.
@@ -33,7 +33,7 @@ The vendor list price features have three core elements:
 
 Pricing management lets you define the selling price as the item base price &plusmn; margin component price adjustments. <!-- KFM: What about discounts and other components? -->
 
-For the items to be sold, the system can find the item base price based on the vendor list price. The item base price is calculated as the vendor list price plus the price term agreement <!-- KFM: What is a price term agreement? Where do we set that up? -->. In the calculation, the system will evaluate each vendor's item base price for each site. Because the item base price has just one unique active value per site, if multiple calculated prices exist, the system will only use the lowest calculated price.
+For the items to be sold, the system can find the item base price based on the vendor list price. The item base price is calculated as the vendor list price plus the vendor price term agreement. In the calculation, the system will evaluate each vendor's item base price for each site. Because the item base price has just one unique active value per site, if multiple calculated prices exist, the system will only use the lowest calculated price.
 
 ## Next steps
 

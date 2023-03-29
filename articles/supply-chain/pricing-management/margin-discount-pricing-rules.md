@@ -64,21 +64,21 @@ Make the following settings on the **General** settings tab for all all types of
 
 Make the following settings on the **General** settings tab if you are setting up a pricing rule for a margin component price adjustment.
 
-- **Concurrency model** – This read-only field tells you how the system will handle situations where more than one margin component price adjust applies (concurrence). Its value, *Price component code rank*, means that the system will choose a price adjustment based on the price attribute combination rank. <!--KFM: This doesn't seem quite right. Is it actually about finding the *order* in which adjustments are applied? -->
-- **Quantity tiers** – Set to *Yes* to enable the Quantity tiers FastTab, which lets you establish price adjustments that vary based on the sales order line quantity.
+- **Concurrency model** – This read-only field tells you how the system will handle situations where more than one margin component price adjustment applies (concurrence). Its value, *Price component code rank*, means that the system will choose a price adjustment based on the price attribute combination rank. <!--KFM: This doesn't seem quite right. Is it actually about finding the *order* in which adjustments are applied? -->
+- **Quantity tiers** – Set to *Yes* to enable the **Quantity tiers** FastTab, which lets you establish price adjustments that vary based on the sales order line quantity.
 
 > [!NOTE]
-> Margin component price adjustment quantity tier is different from Quantity discounts. Quantity discounts tiers are based on the item quantity per order. Margin component price adjustment tiers are based on the item quantity per line.
+> Margin component price adjustment quantity tier is different from quantity discounts. Quantity discounts tiers are based on the item quantity per order. Margin component price adjustment tiers are based on the item quantity per line. <!-- KFM: These sound the same? -->
 
 ### General settings that apply to discounts only
 
 Make the following settings on the **General** settings tab if you are setting up a pricing rule for a discount. Not all types of discounts include all of these settings.
 
 - **Discount account** – If you'd like to post the discount amount for this discount record to a separate general ledger account, then specify that account here. This setting overrides the similar setting available for price structures (**Price component code setup** or **Price tree**). For more information, see [Price component posting](price-component-posting.md).
-- **Discount concurrency mode** – Choose how the system should handle situations where more than one discount applies for the same price component code within a price structure (concurrence). Choose one of the following values:
+- **Discount concurrency mode** – Choose how the system should handle situations where more than one discount rule applies for the same price component code within a price structure (concurrence). Choose one of the following values:
     - *Exclusive* – The discount is an exclusive discount, which means it can't be combined with other discounts. If there are multiple exclusive discounts, the price engine will only apply the one with the highest discount. <!--KFM: If there are both exclusive and non-exclusive discounts, does the exclusive always win even if a non-exclusive has a higher discount, in which case might multiple non-exclusive discounts then apply? -->
     - *Best price* – Discounts of this concurrency mode will compete for the highest discount (lowest price).
-    - *Compounded* – The discount will be combined with other discounts according to the pricing sequence established in the price structure. Settings on the **Pricing management parameters** page control whether the compounded discount calculation basis is the original price or the compounded amount. <!--KFM: Link to topic where this setting is described. -->
+    - *Compounded* – The discount will be combined with other discounts according to the pricing sequence established in the price structure. Settings on the **Pricing management parameters** page control whether the compounded discount calculation basis is the original price or the compounded amount (see also [Resolving concurrency within price component codes](concurrence-within-codes.md)).
     - *Always apply* – The discount will always be applied. Always-apply discounts are applied last and therefore represent represent universal discounts that apply to all.
     - *Price attribute combination rank* – Discounts with this concurrency mode don't compete based on price but on which one has the highest price attribute combination rank. If multiple discounts have the same highest rank, they all apply to the sales order.
 - **Coupon code required** – Set to *Yes* if a coupon code is required to qualify for the discount. The discount must be linked to the coupon <!--KFM: How do we do this? -->. When ordering, the discount will only be triggered if a valid coupon code is entered together with the order. When this option is enabled, the **Status**, **Effective date** and **Expiration date** fields are made inactive. The setting will be pending on the coupon configuration <!-- KFM: Do we mean that the  **Status**, **Effective date** and **Expiration date** settings now come from the coupon setup? -->. To set up your coupons, go to **Pricing management \> During-sales pricing \> Coupons**. <!--KFM: It looks like we need a bar code too; set up on **Pricing management parameters** page? We probably need a full topic dedicated to setting up coupons, add a link here when available. -->
@@ -230,7 +230,7 @@ The following information is shown here:
 Use the settings on the **Validation period** FastTab to control when the pricing rule will apply.  The following conditions apply:
 
 - The date range is defined at the header level. <!-- KFM: Please clarify. -->
-- The date used when validating a pricing rule is based on the **Date type** setting on the **General** tab of the  **Pricing management parameters** page,. You can set the **Date type** to *Today*, *Requested ship date*, *Requested receipt date*, or *Created date*. <!-- KFM: Is this for margin price adjustments only, or also for discounts? We should give a link. Currently, this is explained in [Sales trade agreement prices](sales-trade-agreement-prices.md), but should maybe be moved. -->
+- The date used when validating a pricing rule is based on the **Date type** setting on the **General** tab of the  **Pricing management parameters** page. You can set the **Date type** to *Today*, *Requested ship date*, *Requested receipt date*, or *Created date*. <!-- KFM: Is this for margin price adjustments only, or also for discounts? We should give a link. Currently, this is explained in [Sales trade agreement prices](sales-trade-agreement-prices.md), but should maybe be moved. -->
 
 You can choose to set up the validation period using either standard or advanced settings.
 
