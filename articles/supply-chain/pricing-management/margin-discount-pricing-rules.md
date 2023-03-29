@@ -22,7 +22,7 @@ This article explains how to configure pricing rules for component price adjustm
 
 ## Create and manage your pricing rules
 
-1. Depending on which type of rule you want to make, go to one of the following pages:
+1. Depending on which type of rule you want to make, go to one of the following pages: <!-- KFM: Is it correct to refer to each of these records as a "rule", or is each line in each of these records actually a "rule"?  -->
     - To view, edit and create margin price adjustments, go to **Pricing management \> During-sales pricing \> Price adjustments \> Margin component price adjustments**
     - To view, edit and create all types of discounts (including all the other discount types in this list), go to **Pricing management \> During-sales pricing \> Discounts \> All discounts**
     - To view, edit and create simple discounts only, go to **Pricing management \> During-sales pricing \> Discounts \> Discounts**
@@ -257,7 +257,7 @@ To set up the validation period using the advanced validation rules, follow thes
 
 ## <a name="items-lines"></a>Make settings on the Lines and Line details FastTabs
 
-Use the **Lines** FastTab to control which discounts and margin price adjustments will apply for which items. All the lines in a pricing rule apply to the same collection of customers, which you can configure using the [**Header price attribute group**](#header-attributes) settings.
+Use the **Lines** FastTab to control which discounts and margin price adjustments will apply for each item. All the lines in a pricing rule apply to the same collection of customers, which you can configure using the [**Header price attribute group**](#header-attributes) settings.
 
 ### <a name="add-line"></a>Add a line and configure the set of items that it will apply for
 
