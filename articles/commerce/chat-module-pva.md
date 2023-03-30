@@ -35,7 +35,25 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 
 To use the Commerce Chat with Power Virtual Agents feature, you must first create a Power Virtual Agents chatbot for your e-commerce website. For instructions, see [Create a power virtual agent bot](/power-virtual-agents/authoring-first-bot).
 
-After you configure the chatbot, you must copy the values of **Bot ID** and **Tenant ID** chatbot parameters to configure the Commerce chat experience. For information about how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
+After you configure the chatbot, you must copy the values of **Bot ID** and **Tenant ID** chatbot parameters to configure the Commerce chat experience.
+
+### Find Bot ID
+1. In the navigation menu, under **Settings** tab, choose **Channels**
+2. Click **Mobile app**
+3. Copy the **Token Endpoint**. The endpoint URL is like https://environment-id.04.environment.api.powerplatform.com/powervirtualagents/bots/bot-id/directline/token?api-version=2022-03-01-preview. The Bot ID is a GUID between **/bots/** and **/directline/** in the URL.
+
+![Find Bot ID of Power Virtual Agent.](media/chat-module-pva-botid.png)
+
+### Find Tenant ID
+1. In the navigation menu, under **Settings** tab, choose **Details**
+2. Choose **Advanced**
+3. Copy the **Tenant ID**
+
+![Find Tenant ID of Power Virtual Agent.](media/chat-module-pva-tenantid.png)
+
+Please note that "Bot app ID" is not "Bot ID".
+
+For more information about how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
 
 ## Configure your e-commerce site 
 
