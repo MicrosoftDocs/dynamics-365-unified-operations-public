@@ -16,8 +16,6 @@ ms.search.validFrom: 2023-03-22
 
 # Dynamics Lifecycle Services API - Authentication
 
-[!include [banner](../../includes/banner.md)]
-
 This article provides an overview of the Azure Active Directory (Azure AD) setup for calling Lifecycle Services APIs including Dynamics Translation Service API.  To access resources available via API, you must get a bearer token from Azure AD and send it as a header along with each request.  The steps to obtain this token are below.
 
 The following steps are required to obtain a bearer token with the correct permissions:
@@ -72,5 +70,3 @@ The above example contains placeholders that you can retrieve from your client a
 ```
 
 Use the **access_token** value in subsequent calls to the Lifecycle Services API with the **Authorization** HTTP header.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
