@@ -22,7 +22,7 @@ This article explains how to configure pricing rules for component price adjustm
 
 ## Create and manage your pricing rules
 
-1. Depending on which type of rule you want to make, go to one of the following pages: <!-- KFM: Is it correct to refer to each of these records as a "rule", or is each line in each of these records actually a "rule"?  -->
+1. Depending on which type of rule you want to make, go to one of the following pages: <!-- KFM: Is it correct to refer to each of these records as a "rule", or is each line in each of these records actually a "rule"? Maybe these records should be called "rule sets" or something like that? -->
     - To view, edit and create margin price adjustments, go to **Pricing management \> During-sales pricing \> Price adjustments \> Margin component price adjustments**
     - To view, edit and create all types of discounts (including all the other discount types in this list), go to **Pricing management \> During-sales pricing \> Discounts \> All discounts**
     - To view, edit and create simple discounts only, go to **Pricing management \> During-sales pricing \> Discounts \> Discounts**
@@ -57,8 +57,8 @@ Make the following settings on the **General** settings tab for all all types of
 - **Currency** – Select the currency for which this rule applies. <!--KFM: Does this mean that this record will only apply to orders or order lines that use this currency? -->
 - **Price component** – This read-only field shows which type of pricing rule this is (*Discounts* or *Margin component*).
 - **Price component code** – Select the [price component code](price-component-code.md) that this rule applies to. Only existing price component codes of the applicable type are listed.
-- **Header price attribute group type** – <!-- KFM: Description needed -->
-- **Price attribute group** – <!-- KFM: Description needed -->
+- **Header price attribute group type** – This read-only field shows how customers to whom the current rule applies are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule only applies to a set of customers defined by values assigned to attributes that are part of an attribute group. You can make this setting for the current rule by selecting **Header price attribute group** on the Action Pane. For more information, see [Set up header price attribute values](#header-attributes).
+- **Price attribute group** – If **Header price attribute group type** is *Group*, then this read-only field shows the attribute group that is being used to define the set of customers to whom the current rule applies. For more information, see [Set up header price attribute values](#header-attributes).
 
 ### General settings that apply to margin price adjustments only
 
@@ -125,7 +125,7 @@ If you're setting up a mix-and-match discount, make the following settings on th
         - *Favor customer* – <!-- KFM: Description needed. -->
         - *Favor retailer* – <!-- KFM: Description needed. -->
     - *Line spec* – Use the discount specified for each line on the **Lines** FastTab.
-- **Count non-discountable products** – Set to *Yes* to count non-discountable items towards the quantity. <!-- KFM: What quantity and for what purpose? What if we set to No? -->
+- **Count non-discountable products** – Set to *Yes* to count non-discountable items towards the quantity.
 - **Generate bundle ID** – <!-- KFM: Description needed. -->
 
 > [!NOTE]
@@ -135,7 +135,7 @@ If you're setting up a mix-and-match discount, make the following settings on th
 
 If you're setting up a threshold discount, then make the following setting on **Price/discount** FastTab:
 
-- **Count non-discountable items toward threshold** – <!-- KFM: Description needed. -->
+- **Count non-discountable items toward threshold** – Set to *Yes* to count non-discountable items towards the quantity.
 
 ## Make settings on the Free item setup FastTab
 
@@ -178,7 +178,7 @@ The table on this FastTab establishes a set of quantity tiers and the discount t
 
 ### Example of how the Interval setting affects the discount calculation
 
-<!-- KFM: Introduce this section with a general description of what this setting means. -->
+<!-- KFM: Introduce this section with a general description of what this setting means. This example makes little sense to me throughout.-->
 
 <!-- KFM: Introduce the following table. What is this, how does it affect this example? -->
 
