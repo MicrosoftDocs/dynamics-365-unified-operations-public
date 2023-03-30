@@ -194,7 +194,7 @@ The **Landed cost** module includes several voyage-related periodic tasks that c
 When product receipt is posted for the purchase order, landed Cost will create source document line for each landed cost amount, the amount from landed cost can be viewed in **Account Distribution** from Product Receipt:
 ![image](https://user-images.githubusercontent.com/102585421/228726196-32e7d751-ca86-4736-81fc-c9ae9916c307.png)
 
-This feature allows for the inclusion of landed costs in the accounting distribution of purchase product receipts, enabling customers to easily identify and track these costs. Specifically, it supports the association of freight cost from landed cost with their corresponding source documents, providing a more accurate and comprehensive view of the total cost of goods received. With this functionality, customers can gain greater visibility into the expenses associated with their purchases and transportation, allowing for better cost analysis and management.
+This feature allows for the inclusion of landed costs in the accounting distribution of purchase product receipts, enabling customers to easily identify and track these costs. 
 
 This feature does not change product receipt accounting logic.
 
