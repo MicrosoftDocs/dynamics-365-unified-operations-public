@@ -26,7 +26,7 @@ Because business unit and company aren't equivalent concepts, it isn't possible 
 
 + For each finance and operations Company row that is enabled for dual-write, an associated cdm\_Company row is created.
 
-+ When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default owner team is automatically created for that business unit, the business unit isn't used.
++ When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default owner team is automatically created for that business unit, the team isn't used.
 + A separate owner team is created that has the same name with a Dual Write suffix. It's also associated with the business unit.
 
 + By default, the owner of any row that is created and dual-written to Dataverse is set to the "DW Owner" team that is linked to the associated business unit.
@@ -44,7 +44,7 @@ Because of this configuration, any row that is related to the USMF company will 
 
 ![How teams can be used.](media/dual-write-company-2.png)
 
-As the preceding illustration shows, this 1:1 mapping between business unit, company, and team is just a starting point. In this example, a new "Europe" business unit is manually created in Dataverse as the parent for both DEMF and ESMF. This new root business unit is unrelated to dual-write. However, it can be used to give members of the "EUR Sales" team access to account data in both DEMF and ESMF by setting the data visibility to **Parent/Child BU** in the associated security role.
+As the preceding illustration shows, this 1:1 mapping between business unit, company, and team is just a starting point. In this example, a new "Europe" business unit is manually created in Dataverse as the parent for both DEMF and ESMF. This new parent business unit is unrelated to dual-write. However, it can be used to give members of the "EUR Sales" team access to account data in both DEMF and ESMF by setting the data visibility to **Parent/Child BU** in the associated security role.
 
 A final article to discuss is how dual-write determines which owner team it should assign rows to. This behavior is controlled by the **Default owning team** column on the cdm\_Company row. When a cdm\_Company row is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** column. The admin can change this column to a different value. However, the admin can't clear the column as long as the table is enabled for dual-write.
 
