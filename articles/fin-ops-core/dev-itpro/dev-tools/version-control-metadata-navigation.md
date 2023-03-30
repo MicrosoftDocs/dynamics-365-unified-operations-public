@@ -41,7 +41,7 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 3. Create a demo **Fleet Management** project.
 
     > [!NOTE]
-    > This tutorial assumes the use of TFVC version control. For guidance on configuring Git for X++ development, see [X++ in Git](git-intro.md).
+    > This tutorial assumes the use of Team Foundation Version Control (TFVC), which is the default option for finance and operations apps. For information on using Git for X++ development, see [X++ in Git](git-intro.md).
 
     ![Create your first project.](./media/firstproject_usingdevotools.png)
 
