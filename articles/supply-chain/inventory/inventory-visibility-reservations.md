@@ -202,9 +202,22 @@ When you use the *Inventory Visibility integration with soft reservation on sale
     When a soft reservation is successfully made, a soft reservation ID is automatically returned and recorded for each sales line.
 
     By default, the soft reservation offset is triggered when the line reaches a hard reservation status (*Reserve physical* or *Reserve ordered*) or later. Sales lines that show a valid soft reservation ID and a qualifying trigger status will automatically be added to the offset batch queue.
-
 > [!NOTE]
 > If you must reverse a successful soft reservation, open the relevant sales order, and then select **Revert reservation directly** or **Revert reservation by batch** at the sales order or sales line level.
+> 
+It is very likely that your company also have other order channels which are also posting soft reservation to inventory visibility. You may need to import these external sales orders that have been externally soft reserved into Dynamics 365 SCM as a system of record. In this case you can follow the bellow steps to **import externally soft reserved sales orders**:
+1. Log onto Dynamics 365 SCM, go to **System Administration \> Work spaces \> Data management** , select **Framework parameters**
+2. Select **Entity settings**, click **Refresh entity list** button. 
+3. Go back to data management main screen. Click **Export**. On the new data export **New Record** screen, enter Group name, then click **Add entity**, for entity name, select **Sales order lines V2**, for target data format select **EXCEL**. for select fields choose **Importable fields**. click **Add**
+4. On the newly added line, go to column **Filter** and click
+5. On the pop-up **Inquiry**, go to column **Field**, select sales order -> enter a sales order number, click export. You will be able to obtain an import template with sample sales order line details
+6. Clean the template, leave only the headers. Populate the sales order line details that are relevant as you do with usual sales line data import. 
+7. Add additional soft reservation details - fill soft reservation id you obtained from external reservation in column **INVENTORYSERVICERESERVATIONID** and set **ISSOFTRESERVEDEXTERNALLY** to Yes.
+8. Import the file, you will be able to check import status after completion.
+9. Once import successful, you can also check the newly updated sales order with soft reservation details on the individual sales order screen.
+> [!NOTE]
+> For sales orders that are imported with soft reservation details, once imported, you cannot modify the soft reservation, or revert it directly on the sales order screen. If the data you imported is not correct, please delete the sales line and re-import.
+>
 
 ### Create soft reservations and offsets when you use the Inventory Visibility integration with reservation offset feature
 
