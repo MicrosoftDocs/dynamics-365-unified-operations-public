@@ -428,7 +428,7 @@ Follow these steps on the machine where the proxy service is hosted.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
         - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. This value should be the same endpoint that is used for RCS and Finance.
         - **InvoicingServiceClientOptions.ServiceEnvironmentId** – Specify the name of the service environment that's configured in RCS.
-        - **NotificationsFolder** – Specify the folder to save incoming notification files in.
+        - **NotificationsFolder** – Specify the folder to save incoming notification files in, i.e. **C:\\\\Files\\\\**.
 
     3. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
 
@@ -436,6 +436,8 @@ Follow these steps on the machine where the proxy service is hosted.
 
         > [!TIP]
         > When the system goes to production, you can change some values in the web.config file to help reduce the amount of log information that is collected and help save disk space. In the **\<system.diagnostics\>\<source\>** node, change the value of the **switchValue** to **Critical,Error**. For more information, see [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+		
+	4. Build the solution.
 
 4. Open IIS Manager. In the tree on the left, remain in the root node. On the right, select **Server Certificates**.
 
@@ -467,7 +469,7 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Configuring SSL Settings.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 18. Open **Directory Browsing**, and select **Enable**.
-19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear.
+19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may face server error (i.e. 403 - Forbidden). This step is needed to ensure that the **serverDNS** is accessible, not hidden by a firewall, etc.
 
     ![Checking the service in a browser.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
