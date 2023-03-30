@@ -40,7 +40,7 @@ For more information about how to configure build pipelines, see [Deploy and use
 
 Here are a few notes about the tests:
 
-- The tests are also used by Microsoft during regular engineering. They are typically marked as internal, and subject to change, like any other internal X++ class or method.
+- The tests are also used by Microsoft during regular engineering. They're typically marked as internal, and subject to change, like any other internal X++ class or method.
 - The tests are implemented using SysTest, Form adaptors, Acceptance Test Library and other available frameworks. They can all be run in Microsoft Visual Studio.
 - The test methods are grouped in classes, and typically follow a naming standard of *when_given_then*. For example, a test that validates an exception thrown when attempting to reserve an item that isn't available could be named `reservingItem_noOnhand_exception`.
 - The tests don't have data dependencies. They set up and tear down everything they need to pass. This means that you don't need a demo data set to use the tests.
