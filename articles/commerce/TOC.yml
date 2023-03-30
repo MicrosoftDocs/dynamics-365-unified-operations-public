@@ -2586,7 +2586,7 @@
           items:
           - name: Download Commerce SDK samples and reference packages
             href: dev-itpro/retail-sdk/sdk-github.md
-          - name: Legacy Retail SDK migration
+          - name: Migrate to the Commerce SDK
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
           - name: Obsolete and removed APIs, classes, and methods
             href: dev-itpro/obsolete-apis-classes-methods.md
