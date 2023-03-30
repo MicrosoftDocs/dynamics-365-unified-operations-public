@@ -50,7 +50,7 @@ Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/f
 - **Module:** *Transportation management*
 - **Feature name:** *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages*
 
-The *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* feature requires Supply Chain Management version 10.0.32 or later.
+The *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* feature requires Supply Chain Management version 10.0.33 or later.
 
 
 ## Turn Source document and accounting distribution support for Landed Cost feature on or off
