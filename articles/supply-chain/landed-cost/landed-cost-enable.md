@@ -51,3 +51,15 @@ Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/f
 - **Feature name:** *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages*
 
 The *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* feature requires Supply Chain Management version 10.0.32 or later.
+
+
+## Turn Source document and accounting distribution support for Landed Cost feature on or off
+
+This feature allows for the inclusion of landed costs in the accounting distribution of purchase product receipts, enabling customers to easily identify and track these costs. Specifically, it supports the association of freight cost from landed cost with their corresponding source documents, providing a more accurate and comprehensive view of the total cost of goods received. With this functionality, customers can gain greater visibility into the expenses associated with their purchases and transportation, allowing for better cost analysis and management.
+
+Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Transportation management*
+- **Feature name:** *(Preview) Source document and accounting distribution support for Landed Cost*
+
+The *(Preview) Source document and accounting distribution support for Landed Cost* feature requires Supply Chain Management version 10.0.34 or later.
