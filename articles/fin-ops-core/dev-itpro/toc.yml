@@ -1602,7 +1602,7 @@
       - name: Get support for finance and operations and Lifecycle Services
         href: lifecycle-services/lcs-support.md
       - name: Dynamics 365 support overview
-        href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+        href: /power-platform/admin/support-overview?context=/dynamics365/context/ops
       - name: Get support for finance and operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
       - name: Set up technical support for finance and operations apps
@@ -1658,7 +1658,7 @@
         - name: Create new users
           href: sysadmin/tasks/create-new-users.md
         - name: Block access by location with Azure AD Conditional Access
-          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?context=/dynamics365/context/ops
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
