@@ -4,7 +4,7 @@
 title: Business events overview
 description: This article provides information about business events, which allow external systems to receive notifications from finance and operations apps.
 author: jaredha
-ms.date: 07/15/2022
+ms.date: 03/31/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -93,7 +93,7 @@ The business events framework has two primary settings that can affect performan
 
 The **Event Grid settings** tab provides options that apply to business event endpoints with an endpoint type of **Azure Event Grid**.
 
-The **Send object in Event Grid data field** toggle controls whether the type of the object serialized and sent to the Azure Event Grid endpoint will be a JSON string or an object. By default the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
+The **Send object in Event Grid data field** toggle controls whether the type of object serialized and sent to the Azure Event Grid endpoint will be a JSON string or an object. By default, the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
 
 ### HTTPS settings
 
