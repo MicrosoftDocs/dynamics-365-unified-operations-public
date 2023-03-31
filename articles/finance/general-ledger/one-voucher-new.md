@@ -2,7 +2,7 @@
 # required metadata
 
 title: One voucher 2
-description: One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
+description: One voucher for financial journals lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
 ms.date: 04/05/2023
 ms.topic: article
@@ -101,7 +101,6 @@ be met only by using One voucher. However, for many scenarios, alternatives are 
 
 |Scenario|	One voucher required?	|Alternative|
 |---------|-----------------------|------------|
-
 |Vendor payment summarization - An organization communicates a list of vendors/amounts to its bank. The bank uses this list to pay the vendors on the organization's 
 behalf. Each vendor payment must post in detail to AP, but the sum of the payments posts to the bank account as a single withdrawal.|	No|	On release 10.0.32, enable the
 feature Ability to post detailed vendor and customer payments, but summarize amounts to bank account. 
