@@ -2,7 +2,7 @@
 title: Version control, metadata search, and navigation
 description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
 author: gianugo
-ms.date: 07/24/2020
+ms.date: 03/31/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -22,18 +22,18 @@ This tutorial will walk you through configuring Microsoft Azure DevOps to enable
 
 ## Configure your Azure DevOps organization and project
 
-In this section, you'll create a new project in Azure DevOps. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Azure DevOps organization, you'll create one.
+In this section, you'll create a new project in Azure DevOps. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have an Azure DevOps organization, you'll create one.
 
 ### Sign up to Azure DevOps, create an account, and create a new project
 
-Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this article.
+Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create an Azure DevOps project section later in this article.
 
 1. Sign in with your Microsoft account.
 
     > [!NOTE]
     > You can also use an organizational account (Microsoft 365 domain).
 
-2. Create a Azure DevOps organization, and select a URL for your account. You'll use this URL to connect from your development computer when you're configuring source control in Visual Studio. The following image is an example of the account URL.
+2. Create an Azure DevOps organization, and select a URL for your account. You'll use this URL to connect from your development computer when you're configuring source control in Visual Studio. The following image is an example of the account URL.
 
     ![Select URL for account.](./media/accounturl_usingdevotools.png)
 
@@ -45,9 +45,9 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 
     ![Create your first project.](./media/firstproject_usingdevotools.png)
 
-### Create a Azure DevOps team project
+### Create an Azure DevOps team project
 
-If you already have a Azure DevOps organization, go to your account using Internet Explorer. This article uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have an Azure DevOps organization, go to your account using Internet Explorer. This article uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project.
@@ -58,15 +58,15 @@ If you already have a Azure DevOps organization, go to your account using Intern
 
 ### Create the recommended folder structure in your team project
 
-If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Azure DevOps team project.
+If you've migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Azure DevOps team project.
 
 ![Default folder structure.](./media/vsofolders1.png)
 
-The **Metadata** folder contains your source XML files organized by packages and models and the **Projects** folder contains Visual Studio projects. If you are not migrating code and are starting from scratch, create a similar folder structure on the server in your team project before you start development.
+The **Metadata** folder contains your source XML files organized by packages and models and the **Projects** folder contains Visual Studio projects. If you're not migrating code and are starting from scratch, create a similar folder structure on the server in your team project before you start development.
 
 ### Configure Visual Studio to connect to your team project
 
-1. Start Visual Studio. If you are logged into the machine as an administrator, then you must start Visual Studio as an administrator.
+1. Start Visual Studio. If you're logged into the machine as an administrator, then you must start Visual Studio as an administrator.
 2. Click **Tools &gt; Options &gt; Source Control &gt; Plug-in Selection**.
 3. In the Current source control plug-in field, select **Visual Studio Team Foundation Server**.
 4. Select **Team &gt; Connect to Team Foundation Server**.
@@ -99,7 +99,7 @@ Your model store root folder contains source files of all packages and models th
 
 ## Scenario 1: Open the fleet management solution and add it to Azure DevOps source control
 
-This section describes the steps needed to add a solution to Azure DevOps source control. This scenario is relevant when you have started development on a new model and you are adding it to source control for the first time. For code migration scenarios or in the case you are synchronizing new models that have been created by another developer, refer to scenario 2 below.
+This section describes the steps needed to add a solution to Azure DevOps source control. This scenario is relevant when you've started development on a new model and you're adding it to source control for the first time. For code migration scenarios or in the case you're synchronizing new models that have been created by another developer, refer to scenario 2 below.
 
 ### Open the FleetManagement solution
 
@@ -108,7 +108,7 @@ This section describes the steps needed to add a solution to Azure DevOps source
 
 1. On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2. Browse to the desktop and open the **FleetManagement** folder.
-3. Select the solution file named **FleetManagement**. The file type listed is Microsoft Visual Studio Solution. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3. Select the solution file named **FleetManagement**. The file type listed is Microsoft Visual Studio Solution. If the solution file isn't on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 4. Click **Open**. Loading the solution may take some time.
 
 ### Add the FleetManagement solution to source control
@@ -118,7 +118,7 @@ This section describes the steps needed to add a solution to Azure DevOps source
 3. In the **Team Project Location**, select **Projects**, as shown in this image.
 
     > [!NOTE]
-    > If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted.
+    > If you've already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted.
 
     ![Folder structure of Team Foundation Server.](./media/vsofolders31.png)
 
@@ -172,7 +172,7 @@ In this section, you'll make minor changes to the **FMRental** table and compare
 
 ## Scenario 2: Synchronize models from source control
 
-In this section, you will synchronize existing models and model elements from your Azure DevOps project. Synchronization is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
+In this section, you'll synchronize existing models and model elements from your Azure DevOps project. Synchronization is relevant in the following cases: 1) You've migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
 
 1. In Source Control Explorer, right-click on Metadata and select **Get Latest Version**. Getting the latest version will synchronize you local packages folder with the latest code.
 2. Alternatively you can use the **Advanced** menu to synchronize specific build version or change sets.
