@@ -22,17 +22,17 @@ Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrate
 # Omnichannel media management quick links
 [todo]
 
-# Omnichannel media management how-to guides:
+# Omnichannel media management how-to guides
 ## Product media assignments
 [todo]
 
 ### Assign media to simple products
 [todo]
 
-#### 'Primary media', 'Additional media', and 'Product-specific swatches' 
+#### Primary media, additional media, and product-specific swatches 
 [todo]
 
-#### Omnichannel, channel-specific, and locale specific media assignments
+#### Omnichannel, channel-specific, and locale-specific media assignments
 [todo]
 
 ### Assign media to master products
