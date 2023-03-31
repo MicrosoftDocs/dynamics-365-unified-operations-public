@@ -3,7 +3,7 @@
 title: Intercompany journals and dimension values on multi-line vs single line journal
 description: This article answers some commonly asked questions regarding intercompany journals.
 author: kweekley
-ms.date: 03/02/2023
+ms.date: 03/31/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -222,9 +222,9 @@ Option 4 (what posts today):
 
 
 
-Options one, two and three give different ways to default the financial dimension values, but note that none of the amounts at the dimension value level match the manually entered amounts. For example, in option one we show a $300 credit to department 001, but there is only an offsetting debit for $200. The posting logic can't interpret the intention of the user. Because of this, no financial dimensions default so option four shows what posts to the originating company.
+Options one, two and three give different ways to default the financial dimension values. Note that none of the amounts at the dimension value level match the manually entered amounts. For example, in option one, we show a $300 credit to department 001, but there is only an offsetting debit for $200. The posting logic can't interpret the intention of the user. Because of this, no financial dimensions will default. Option four shows what posts to the originating company.
 
-These are just two scenarios. Some scenarios are not as complex, and potentially could default dimensions but there are also even more complex scenarios. To determine 
+These are just two scenarios. Some scenarios aren't as complex, and potentially could default dimensions but there are also even more complex scenarios. To determine 
 which is an easy vs complex scenario during posting would have a negative impact on posting performance, while still running a risk that the posting interpretation 
 defaults and posts the wrong financial dimension values. As shown with the previous scenarios, there is no consistent, logical way to correctly determine which 
 financial dimension values should default. Rather than defaulting randomly or incorrectly, the current functionality doesn’t default any dimensions. The only way to 
