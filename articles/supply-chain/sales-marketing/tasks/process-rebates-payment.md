@@ -5,7 +5,7 @@ title: Process rebates for payment
 description: This procedure demonstrates how to convert approved and processed customer rebates to credit notes. 
 author: Henrikan
 ms.date: 11/10/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

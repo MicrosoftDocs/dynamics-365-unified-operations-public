@@ -5,7 +5,7 @@ title: Set up attribute-based pricing for configurable products
 description: This article explains how to set up attribute-based pricing. 
 author: t-benebo
 ms.date: 08/20/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

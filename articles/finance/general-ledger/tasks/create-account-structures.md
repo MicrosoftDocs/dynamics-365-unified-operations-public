@@ -5,7 +5,7 @@ title: Create account structures
 description: This procedure walks through creating an account structure. 
 author: aprilolson
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

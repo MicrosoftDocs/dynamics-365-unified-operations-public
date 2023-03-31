@@ -5,7 +5,7 @@ title: Process collection letters
 description: This article shows how to create, print, and post collection letters. 
 author: ShivamPandey-msft
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

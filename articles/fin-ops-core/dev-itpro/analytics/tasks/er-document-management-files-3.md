@@ -3,7 +3,7 @@ title: ER Use Document Management files in format outputs (Part 3 - Create forma
 description: This article describes how to configure an Electronic reporting format to use Document Management files in ER output. (Part 3)
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

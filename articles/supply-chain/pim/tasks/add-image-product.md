@@ -5,7 +5,7 @@ title: Add an image to a product
 description: This procedure shows how to add an image to a product The demo data company used to create this task is USMF. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

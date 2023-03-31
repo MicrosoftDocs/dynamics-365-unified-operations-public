@@ -5,7 +5,7 @@ title: Create a cost rollup policy
 description: This procedure shows how to create a cost rollup policy and create rules for the policy. 
 author: panolte
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

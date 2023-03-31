@@ -5,7 +5,7 @@ title: Record vendor invoice and match against received quantity
 description: When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment. 
 author: ShivamPandey-msft
 ms.date: 02/11/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

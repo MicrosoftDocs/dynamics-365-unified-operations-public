@@ -3,7 +3,7 @@ title: Set up consolidated invoices
 description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

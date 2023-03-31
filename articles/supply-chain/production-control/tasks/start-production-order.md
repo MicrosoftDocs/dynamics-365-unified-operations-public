@@ -5,7 +5,7 @@ title: Start a production order
 description: This procedure shows how to start a production order on the shop floor.
 author: johanhoffmann
 ms.date: 11/11/2016
-ms.topic: business-process
+ms.topic: how-to
 ms.prod:  
 ms.technology:  
 

@@ -3,7 +3,7 @@ title: E-invoicing CFDI
 description: This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method.
 author: AdamTrukawka
 ms.date: 08/03/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

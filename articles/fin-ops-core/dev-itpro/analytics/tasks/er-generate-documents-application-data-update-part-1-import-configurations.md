@@ -3,7 +3,7 @@ title: Import configurations to generate documents that have application data
 description: To complete the steps in this procedure, you must first complete the procedure, ""ER Create a configuration provider and mark it as active"".
 author: kfend
 ms.date: 11/02/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

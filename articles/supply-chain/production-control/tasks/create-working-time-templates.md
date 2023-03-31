@@ -5,7 +5,7 @@ title: Create working time templates
 description: Working time templates define the working hours throughout a week and are used to generate working times for a period of time. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

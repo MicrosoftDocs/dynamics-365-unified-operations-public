@@ -5,7 +5,7 @@ title: Set up company bank accounts for ISO20022 direct debits
 description: This task walks you through setting up the company specific bank account information that is required for generating customer payment files. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Enter the GTIN code for a product
 description: GTIN codes are assigned by the GS1 organization. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

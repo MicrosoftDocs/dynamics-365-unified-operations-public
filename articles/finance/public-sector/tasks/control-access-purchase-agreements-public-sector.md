@@ -5,7 +5,7 @@ title: Control access to purchase agreements in the public sector
 description: You can make sure that only approved departments can access a purchase agreement. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

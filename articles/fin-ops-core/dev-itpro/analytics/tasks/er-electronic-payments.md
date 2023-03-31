@@ -3,7 +3,7 @@ title: ER Generate electronic documents for payments using a format configuratio
 description: This article describes how to use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
