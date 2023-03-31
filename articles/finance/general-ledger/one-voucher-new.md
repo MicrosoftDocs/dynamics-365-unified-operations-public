@@ -86,9 +86,8 @@ The following scenarios have been identified as to why customers use the One vou
 be met only by using One voucher. However, for many scenarios, alternatives are available. 
 
 |Scenario|	One voucher required?	|Alternative|
-|---------|-----------------------|------------|
-
-|Vendor payment summarization - An organization communicates a list of vendors/amounts to its bank. The bank uses this list to pay the vendors on the organization's behalf. Each vendor payment must post in detail to AP, but the sum of the payments posts to the bank account as a single withdrawal.|	No|	On release 10.0.32, enable the feature Ability to post detailed vendor and customer payments, but summarize amounts to bank account. For more information, see [Post detailed vendor and customer payments](summary-payment). |
+|---------|----------------------|-----------------|
+|Vendor payment summarization - An organization communicates a list of vendors/amounts to its bank. The bank uses this list to pay the vendors on the organization's behalf. Each vendor payment must post in detail to AP, but the sum of the payments posts to the bank account as a single withdrawal.|	No|	On release 10.0.32, enable the feature Ability to post detailed vendor and customer payments, but summarize amounts to bank account. For more information, see [Post detailed vendor and customer payments](summary-payment.md). |
 |Customer payment summarization - Customer payments are deposited as a lump sum on the bank account. Each customer payment must post in detail to AR, but the sum of the payments posts to the bank account as a single deposit.|	No| On release 10.0.32, enable the feature Ability to post detailed vendor and customer payments, but summarize amounts to bank account.|
 |Vendor/Customer invoice – An invoice is entered for a single customer or vendor, but additional lines represent the lines of the invoice and have multiple fixed assets or projects.| 	Yes	|     |
 |Customer prepayment payment journal that has taxes on multiple "lines" - A customer makes a prepayment for an order. The lines of the order have different taxes. The prepayment customer payment must contain the customer on multiple lines so taxes can be calculated for each line.|	Yes|  |	
