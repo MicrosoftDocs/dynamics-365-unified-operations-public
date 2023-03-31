@@ -39,9 +39,9 @@ only, which posts to general ledger and not subledgers such as accounts receivab
 
 There are two categories of One voucher examples:
  - The voucher contains multiple transactions entered as a single transaction. Here are some examples*:
-  - Multiple vendor payments are entered on each line (no offset account) with the payments sum  offset to a bank account entered on one line. Payments summarization   is done to update the bank subledger as a summarized amount to match the bank account statement, while still recording each vendor transaction in detail in the   Accounts payable subledger. The same scenario is also found on the Customer payment side also. 
+  - Multiple vendor payments are entered on each line (no offset account) with the payments sum  offset to a bank account entered on one line. Payments summarization   is done to update the bank subledger as a summarized amount to match the bank account statement, while still recording each vendor transaction in detail in the   Accounts payable subledger. The same scenario is also found on the Customer payment side. 
   - Multiple fixed assets are acquired in a single voucher. This is often done when entering beginning balances for the fixed asset module. 
- - The voucher contains one transaction which impacts multiple non-Ledger account types. Here are some examples*:
+ - The voucher contains one transaction, which impacts multiple non-Ledger account types. Here are some examples*:
    - Bank transfers
    - Netting vendor/customer (same party) balances
    - Transferring a balance from customer A to customer B
@@ -59,14 +59,13 @@ Some scenarios might still work correctly, depending on your organization's setu
  - Transaction reversal – If more than one subledger account type exists on the voucher, the reversal of a single subledger transaction may post an incorrect   accounting entry for the reversal within general ledger. For example, if you acquire multiple assets in one voucher then reverse the acquisition of only one asset,   the general ledger accounting will be incorrect for the reversal. 
  - Reporting and inquiries - If you include more than one subledger account type (vendor, customer, etc) on a voucher, reports/inquiries will only show the first   account value found. See the following example for details. 
 
-For example, you post the following multi-line vendor invoice which contains four projects which represent the ‘lines’ on the invoice. This is a common business 
+For example, you post the following multi-line vendor invoice, which contains four projects which represent the ‘lines’ on the invoice. This is a common business 
 requirement for those organizations that use journals extensively.
 
 [![Multiline voucher.](./media/Journal-voucher1.png)](./media/Journal-voucher1.png)
  
 Three of the four projects posted to the same main account 601500. If you open the Accounting source explorer to view details about posted transactions for that main 
-account, notice that the Project ID is 000057 for all three lines. This is a known limitation of using One voucher. The detail is not known to correctly link each line
-to the appropriate project on the journal so the ‘first one found’ is always shown on reports and inquiries. 
+account, notice that the Project ID is 000057 for all three lines. This is a known limitation of using One voucher. The detail won't correctly link each line to the appropriate project on the journal so the ‘first one found’ is always shown on reports and inquiries. 
 
 [![Example of projects.](./media/Project2.png)](./media/Project2.png)
  
@@ -78,7 +77,7 @@ In order to enter a One voucher transaction, go to **General ledger > Ledger set
  
 You can enter a One voucher transaction on the **Journal names** page and setting the **New voucher** field to:
 -  **One voucher number only**. Every line that you add to the journal is now included in the same voucher, and those lines would contain more than one customer, vendor, bank, fixed asset or project.
--  **In connection with balance**. Enter a multiline voucher where there is no offset account and the lines contain more than one customer, vendor, bank, fixed asset or project. 
+-  **In connection with balance**. Enter a multiline voucher where there's no offset account and the lines contain more than one customer, vendor, bank, fixed asset or project. 
 -  **In connection with balance**. Enter a single-line voucher where both the account and the offset account contain a subledger account type, such as Vendor/Vendor, Customer/Customer, Vendor/Customer, or Bank/Bank.
 
 ### Does my business scenario require One voucher?
@@ -107,7 +106,7 @@ ledger account to another, based on the state of the payment. Because the same c
 
 ### The future of One voucher
 Because of the issues that can occur when One voucher is used, the following options are being explored:
- - New features will continue to be introduced if there is a better way to accomplish the business scenario. For example, on Dynamics 365 Finance version 10.0.32, a new feature was introduced that allow payments to be entered as separate vouchers, but still update the bank account in summary. As features are added, they are documented in the Alternative columns above for each business scenario.
+ - New features will continue to be introduced if there's a better way to accomplish the business scenario. For example, on Dynamics 365 Finance version 10.0.32, a new feature was introduced that allow payments to be entered as separate vouchers, but still update the bank account in summary. As features are added, they're documented in the Alternative columns above for each business scenario.
  - Some transactions may continue to be entered through the journal, within one voucher, but additional data could be tracked to correctly identify transactional details.
  - Another option may be a combination of new features while still entering transactions for the business scenarios within the journal using a single voucher. 
 
