@@ -71,14 +71,21 @@ Some scenarios might still work correctly, depending on your organization's setu
 
 For example, you post the following multi-line vendor invoice which contains four projects which represent the ‘lines’ on the invoice. This is a common business 
 requirement for those organizations that use journals extensively.
+
+[![Multiline voucher.](./media/Journal-voucher1.png)](./media/Journal-voucher1.png)
  
 Three of the four projects posted to the same main account 601500. If you open the Accounting source explorer to view details about posted transactions for that main 
 account, notice that the Project ID is 000057 for all three lines.  This is a known limitation of using One voucher. The detail is not known to correctly link each line
 to the appropriate project on the journal so the ‘first one found’ is always shown on reports and inquiries. 
+
+[![Example of projects.](./media/Project2.png)](./media/Project2.png)
  
 ### How to enter a transaction as One voucher
 In order to enter a One voucher transaction, you must first change the GL parameter (General ledger > Ledger setup > General ledger parameters) so that Allow multiple 
 transactions within one voucher is defined as Yes. 
+
+[General ledger paramenters.](./media/GL-parameters3.png)](./media/GL-parameters3.png)
+
  
 You can enter a One voucher transaction by using one of the following methods:
   •	Set up the journal name (General ledger > Journal setup > Journal names) so that the New voucher field is set to One voucher number only. Every line that you add to
@@ -94,6 +101,7 @@ be met only by using One voucher. However, for many scenarios, alternatives are 
 
 |Scenario|	One voucher required?	|Alternative|
 |---------|-----------------------|------------|
+
 |Vendor payment summarization - An organization communicates a list of vendors/amounts to its bank. The bank uses this list to pay the vendors on the organization's 
 behalf. Each vendor payment must post in detail to AP, but the sum of the payments posts to the bank account as a single withdrawal.|	No|	On release 10.0.32, enable the
 feature Ability to post detailed vendor and customer payments, but summarize amounts to bank account. 
