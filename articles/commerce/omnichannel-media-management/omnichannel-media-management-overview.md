@@ -19,9 +19,7 @@ ms.search.form:
 # Omnichannel media managment overview
 Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrated solution for managing merchandising media. It is now easy to assign images and other media to products, product dimensions, and variants. Media assignments are no longer based on legacy filenames, allowing for the reuse of a single media asset for multiple merchandising entities. Specific product dimensions can be assigned media while ignoring unnecessary ones (example: a shirt product with size, color, and style dimensions can assign media to color + style dimension combinations, while ignoring size dimension media assignments).  Additionally, large sets of media assignments and metadata can be managed through bulk export and import using manifest files (.TSV format). The solution integrates media management capabilities into the **Commerce headquarters (HQ)** merchandising flow, and introduces a new omnichannel content workspace within **Commerce site builder**. All omnichannel media management capabilities introduced in 10.0.35+ are opt-in through feature flags. New implementations are encouraged to use this capability by default, while existing solutions may opt-in on their own preferred timeline by following the documented migration steps. With these capabilities, **Dynamics 365 Commerce** now offers a powerful and flexible native solution for managing merchandising media.
 
-## "Hello world" media managment tutorial
-
-## How it works
+# Introduction to omnichannel media management tools and workflows
 [Describe new managment UX interfaces (HQ, Omnichannel content library)
 [Diagram of dataflows between UX -> CMS -> HQ -> CSU -> Frontend/POS]
 
@@ -33,25 +31,77 @@ Mermaid example [to be deleted]
       B-->D;
       C-->D;
 ```
+# Omnichannel media management quick links
+[todo]
 
-## Enabling omnichannel media managment features
-[Tactical steps and best practices to enable this feature accross dev/uat/prod environments]
+# Omnichannel media managment how-to guides:
+## Product media assignments
+[todo]
 
-## Omnichannel media managment core topics
-### Media assignment fallback hierarchies
-#### Channel and locale media assignments
-#### Product dimension media assignments
-#### Product variant media assignments
-### "Additional media" assignments
-### Product-level swatch assignments
+### Assign media to simple products
+[todo]
+
+#### 'Primary media', 'Additional media', and 'Product-specific swatches' 
+[todo]
+
+#### Omnichannel, channel-specific, and locale specific media assignments
+[todo]
+
+### Assign media to master products
+[todo]
+
+#### Assign media to product dimensions
+[todo]
+
+#### Assign media to product variants
+[todo]
+
+### Previewing media assignments
+[todo]
+
+### Publishing media assignments
+[todo]
+
+#### Using publish groups for media assignments
+[todo]
+
+## Category media assignments
+[todo]
+
+## Bulk import and export of media assignments
+[todo: Link to Petri's documentation]
+
+## Omnichannel content copy between tenants
+[todo]
+
+# Omnichannel media management prerequisites and configuration
+[todo]
+
+# Omnichannel media managment concepts and data model
+[todo]
+
+## Overview of media assignment hierarchy
+[todo]
+
+## Omnichannel media architecture and dataflow
+[todo]
+
+# Merchandising media extensibility
+[todo]
+
+## e-Commerce merchandising media modules
+[todo]
+
+### Primary media scenarios
+[todo]
+
+### Additional media scenarios
+[todo]
+
+## Merchandising media data actions and APIs
+[todo]
 
 
-## Bulk import and export of merchandising media
-
-## Using publish groups with merchandising media
-### Publishing and unpublishing media assignments
-
-## Migrating an existing environment [separate article?]
 
 
 
