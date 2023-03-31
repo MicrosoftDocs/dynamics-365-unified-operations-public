@@ -3,7 +3,7 @@ title: Create and assign a reduction entry document for a government grant subsi
 description: For Japan, a reduction entry document is a document that you can attach to a fixed asset that is sponsored using a government subsidy.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

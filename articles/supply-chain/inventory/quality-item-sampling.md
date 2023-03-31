@@ -5,7 +5,7 @@ title: Quality management item sampling
 description: This article describes how to set up item sampling.
 author: yufeihuang
 ms.date: 03/23/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod: 
 ms.technology: 
  

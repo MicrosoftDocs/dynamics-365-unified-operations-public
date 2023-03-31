@@ -5,7 +5,7 @@ title: FR-00002 Customer and vendor account statements
 description: You can print accounts statements for customers and vendors that display information for a time period that you select. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

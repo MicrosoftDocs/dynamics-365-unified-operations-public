@@ -5,7 +5,7 @@ title: Set up depreciation books
 description: This procedure walks through the process of creating a new depreciation book and associate it with a fixed asset group. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

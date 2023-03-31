@@ -5,7 +5,7 @@ title: Create transfer activities for lean manufacturing
 description: Create a transfer activity for lean manufacturing. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Create a write-off journal for a customer
 description: This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page. 
 author: ShivamPandey-msft
 ms.date: 07/01/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

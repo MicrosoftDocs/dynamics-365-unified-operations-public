@@ -3,7 +3,7 @@ title: LT-00003 Generate a fixed asset transfer between warehouses document
 description: Move a fixed asset from one department to another and verify the transfer with a packing slip.
 author: AdamTrukawka
 ms.date: 09/15/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

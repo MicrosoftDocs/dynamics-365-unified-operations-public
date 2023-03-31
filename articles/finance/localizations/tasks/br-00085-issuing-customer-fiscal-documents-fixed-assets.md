@@ -3,7 +3,7 @@ title: Issue customer fiscal documents (fixed assets) (Brazil)
 description: You can issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment.
 author: AdamTrukawka
 ms.date: 06/24/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

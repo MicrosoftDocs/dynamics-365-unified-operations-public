@@ -5,7 +5,7 @@ title: Create an original budget and then reverse preliminary budget entries in 
 description: This article provides information about how to create and reverse an original budget entry using budget model and dimension values that have preliminary budget amounts. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

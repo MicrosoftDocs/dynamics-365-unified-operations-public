@@ -5,7 +5,7 @@ title: Post a free text invoice with a payment slip
 description: This article explains how to post a free text invoice with a payment slip attachment in a specified format. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Set up vendor invoice policies
 description: This article explains how to set up vendor invoice policies. 
 author: ShivamPandey-msft
 ms.date: 02/11/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

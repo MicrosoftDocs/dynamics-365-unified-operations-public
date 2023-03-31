@@ -5,7 +5,7 @@ title: FR-00003 NAF codes and Siret numbers
 description: This article explains how to create and enter NAF codes for legal entities, customers, vendors, and prospects. 
 author: EvgenyPopovMBS
 ms.date: 09/10/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

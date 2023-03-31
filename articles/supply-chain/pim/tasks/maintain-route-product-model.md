@@ -5,7 +5,7 @@ title: Maintain route for a product model
 description: Running this procedure requires that a product configuration model exists. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

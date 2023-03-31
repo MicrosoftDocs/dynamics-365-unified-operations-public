@@ -5,7 +5,7 @@ title: Maintain bar code types
 description: This procedure shows you how to set up a new bar code definition which can then be used as part of the picking list report. 
 author: yufeihuang
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

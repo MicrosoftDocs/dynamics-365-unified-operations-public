@@ -3,7 +3,7 @@ title: Create a cost accounting ledger
 description: A cost accounting ledger represents the overall reporting unit.
 author: twheeloc
 ms.date: 03/27/2023
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

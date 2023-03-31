@@ -5,7 +5,7 @@ title: Import German audit file configuration
 description: This procedure shows how to import the German audit file electronic reporting data model and format configurations. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

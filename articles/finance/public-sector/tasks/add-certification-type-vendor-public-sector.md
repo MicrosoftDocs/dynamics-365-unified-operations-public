@@ -5,7 +5,7 @@ title: Add a certification type to a vendor in the public sector
 description: You can create and assign to vendors any type of certification that they may hold. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

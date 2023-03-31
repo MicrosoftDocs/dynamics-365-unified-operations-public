@@ -5,7 +5,7 @@ title: Configure and run job to post statements
 description: This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores. 
 author: josaw1
 ms.date: 07/29/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
