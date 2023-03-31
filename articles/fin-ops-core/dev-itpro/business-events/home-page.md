@@ -89,6 +89,16 @@ The business events framework has two primary settings that can affect performan
     - By increasing the number, you produce fewer bundles and reduce the ability to distribute the events to parallel threads.
     - By decreasing the number, you produce more bundles and increase the ability to distribute the events to parallel threads. However, if you make the number too small, you will cause unnecessary parallelization on small bundles.
 
+### Event Grid settings
+
+The **Event Grid settings** tab provides options that apply to business event endpoints with an endpoint type of **Azure Event Grid**.
+
+The **Send object in Event Grid data field** toggle controls whether the type of the object serialized and sent to the Azure Event Grid endpoint will be a JSON string or an object. By default the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
+
+### HTTPS settings
+
+The **HTTP timeout (milliseconds)** toggle controls how long the default HTTPS adapter will wait before timing out a request to an endpoint. The default timeout period is 10 seconds. Entering a value of **0** in the field is an indicator to use the default timeout period.
+
 ## Activating business events
 
 Business events in the business event catalog aren't active by default. From the catalog, you can activate any business events that you require. Select one or more business events, and then select **Activate**.
