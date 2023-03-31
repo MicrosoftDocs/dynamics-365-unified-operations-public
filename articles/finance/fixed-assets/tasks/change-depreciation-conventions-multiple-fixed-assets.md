@@ -5,7 +5,7 @@ title: Change depreciation conventions for multiple fixed assets
 description: This task updates the depreciation convention for a specified fixed asset group. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

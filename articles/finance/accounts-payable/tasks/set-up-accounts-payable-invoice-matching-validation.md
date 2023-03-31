@@ -5,7 +5,7 @@ title: Set up Accounts payable invoice matching validation
 description: This article provides information on how to set up Accounts payable invoice matching validation. 
 author: abruer
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

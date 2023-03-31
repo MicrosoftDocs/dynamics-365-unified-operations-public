@@ -5,7 +5,7 @@ title: Create a billing classification in the public sector
 description: Public-sector organizations can use billing classifications to help manage free text invoices. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: FR-00018 Daily interest calculation for late payment and lump sum in the 
 description: Indicate the interest calculation on an invoice. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

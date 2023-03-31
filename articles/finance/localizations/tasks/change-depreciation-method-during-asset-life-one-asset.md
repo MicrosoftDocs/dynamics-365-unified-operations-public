@@ -3,7 +3,7 @@ title: Change the depreciation method during the asset life for one asset
 description: In Japan, the depreciation method is permitted to change during the service life of a fixed asset.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

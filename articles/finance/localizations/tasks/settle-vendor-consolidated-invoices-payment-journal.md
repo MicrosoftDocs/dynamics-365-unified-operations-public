@@ -3,7 +3,7 @@ title: Settle vendor consolidated invoices by using a payment journal
 description: In Japan, payments can be made and settled against vendor consolidated invoices.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -5,7 +5,7 @@ title: Set up bonus depreciation
 description: This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

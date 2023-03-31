@@ -3,7 +3,7 @@ title: MX-00010 Set parameters for an electronic invoice
 description: This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp.
 author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

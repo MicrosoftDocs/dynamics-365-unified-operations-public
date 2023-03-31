@@ -5,7 +5,7 @@ title: Create an intercompany plan
 description: This procedure shows how to create an intercompany plan. 
 author: t-benebo
 ms.date: 08/13/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Set up mandatory payment references
 description: Use this procedure to set up mandatory payment reference for a specific ledger account and post a payment. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

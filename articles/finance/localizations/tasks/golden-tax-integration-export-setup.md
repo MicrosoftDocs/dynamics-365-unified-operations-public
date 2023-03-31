@@ -3,7 +3,7 @@ title: Golden tax integration export setup
 description: This procedure shows how to configure the export format for golden tax integration.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

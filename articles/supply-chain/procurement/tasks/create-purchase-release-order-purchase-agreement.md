@@ -5,7 +5,7 @@ title: Apply a purchase agreement when creating a purchase order
 description: This procedure shows how to use a purchase agreement when you create a purchase order. 
 author: GalynaFedorova
 ms.date: 08/09/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

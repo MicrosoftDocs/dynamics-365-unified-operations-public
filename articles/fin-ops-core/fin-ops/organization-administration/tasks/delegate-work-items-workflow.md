@@ -5,7 +5,7 @@ title: Delegate work items in a workflow
 description: If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users. 
 author: ChrisGarty
 ms.date: 07/07/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -3,7 +3,7 @@ title: Set up electronic Tax declaration for Germany
 description: This article explains how to set up electronic tax declaration.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

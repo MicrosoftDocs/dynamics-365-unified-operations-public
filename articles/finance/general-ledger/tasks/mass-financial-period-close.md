@@ -5,7 +5,7 @@ title: Mass financial period close
 description: This article shows how to place a period on hold or permanently close a period or more than one legal entity at a time. 
 author: aprilolson
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

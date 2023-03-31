@@ -5,7 +5,7 @@ title: Set up a mobile device menu item for completing work of type Purchase ord
 description: This article shows how to set up a Mobile device menu item. 
 author: Mirzaab
 ms.date: 08/02/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

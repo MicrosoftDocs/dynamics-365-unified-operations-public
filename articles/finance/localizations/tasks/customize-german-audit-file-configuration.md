@@ -5,7 +5,7 @@ title: Customize German audit file configuration
 description: This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

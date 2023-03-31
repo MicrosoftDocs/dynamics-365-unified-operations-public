@@ -5,7 +5,7 @@ title: Split a fixed asset
 description: This article explains how to split a percentage of one asset book to a new asset book.
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

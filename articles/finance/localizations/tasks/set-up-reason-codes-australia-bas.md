@@ -3,7 +3,7 @@ title: Set up reason codes for Australia BAS
 description: This procedure walks you through setting up the Additional BAS reconciliation account, the BAS PAYG reason codes and the BAS fringe benefit reason code which are required to generate the Australia Business Activity Statement.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -5,7 +5,7 @@ title: Create a main account
 description: This procedures walks through how to add a main account to an existing chart of accounts. 
 author: aprilolson
 ms.date: 03/29/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
