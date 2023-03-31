@@ -16,13 +16,13 @@ ms.search.industry:
 ms.search.form: 
 ---
 
-# Omnichannel media managment overview
+# Omnichannel media management overview
 Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrated solution for managing merchandising media. It is now easy to assign images and other media to products, product dimensions, and variants. Media assignments are no longer based on legacy filenames, allowing for the reuse of a single media asset for multiple merchandising entities. Specific product dimensions can be assigned media while ignoring unnecessary ones (example: a shirt product with size, color, and style dimensions can assign media to color + style dimension combinations, while ignoring size dimension media assignments).  Additionally, large sets of media assignments and metadata can be managed through bulk export and import using manifest files (.TSV format). The solution integrates media management capabilities into the **Commerce headquarters (HQ)** merchandising flow, and introduces a new omnichannel content workspace within **Commerce site builder**. All omnichannel media management capabilities introduced in 10.0.35+ are opt-in through feature flags. New implementations are encouraged to use this capability by default, while existing solutions may opt-in on their own preferred timeline by following the documented migration steps. With these capabilities, **Dynamics 365 Commerce** now offers a powerful and flexible native solution for managing merchandising media.
 
 # Omnichannel media management quick links
 [todo]
 
-# Omnichannel media managment how-to guides:
+# Omnichannel media management how-to guides:
 ## Product media assignments
 [todo]
 
@@ -65,14 +65,14 @@ Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrate
 # Omnichannel media management prerequisites and configuration
 [todo]
 
-# Omnichannel media managment concepts and data model
+# Omnichannel media management concepts and data model
 [todo]
 
 ## Overview of media assignment hierarchy
 [todo]
 
 ## Omnichannel media architecture and dataflow
-[Describe new managment UX interfaces (HQ, Omnichannel content library)
+[Describe new management UX interfaces (HQ, Omnichannel content library)
 [Diagram of dataflows between UX -> CMS -> HQ -> CSU -> Frontend/POS]
 
 Mermaid example [to be deleted]
