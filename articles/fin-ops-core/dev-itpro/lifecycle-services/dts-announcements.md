@@ -25,6 +25,13 @@ ms.assetid:
 [!include[preview banner](../includes/preview-banner.md)]
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
+## Incident update: DTS API failures impacting extension users
+
+The LCS team has been actively investigating the issue and we are pleased to inform you that the cause of the problem has been identified. We are currently implementing the necessary fixes, which will be rolled in the next release. We anticipate that the DTS API will be fully functional by April 7th.
+
+We understand the inconvenience that this issue has caused, and we apologize for any disruption to your workflows. We would like to assure you that we are taking steps to prevent similar incidents in the future.
+
+In the meantime, if you require immediate support, please do not hesitate to contact our support team at dtssup@microsoft.com.
 
 ## Incident: DTS API failures impacting extension users
 
