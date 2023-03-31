@@ -26,6 +26,8 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 
+---
+
 # One voucher 1
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
