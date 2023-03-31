@@ -91,19 +91,19 @@ Mermaid example [to be deleted]
 # Migrating legacy product media libraries to 10.0.35+ omnichannel media management data model
 [todo]
 
-# Merchandising media extensibility
+# Omnichannel merchandising media extensibility
 [todo]
 
 ## e-Commerce merchandising media modules
 [todo]
 
-### Primary media scenarios
+### e-Commerce module scenarios for primary media
 [todo]
 
-### Additional media scenarios
+### e-Commerce module scenarios for additional media
 [todo]
 
-## Merchandising media data actions and APIs
+## Omnichannel media data actions and APIs
 [todo]
 
 
