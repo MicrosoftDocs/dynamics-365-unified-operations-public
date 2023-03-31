@@ -1743,11 +1743,11 @@
           href: migration-upgrade/analyze-code-upgrade.md
         - name: AX 2012 upgrade - Deploy a demo environment for analysis
           href: migration-upgrade/analysis-sandbox.md
-        - name: AX 2012 upgrade - Data upgrade in development environments
-          href: migration-upgrade/data-upgrade-2012.md
         - name: AX 2012 upgrade - Pre-upgrade checklist for data upgrade
           href: migration-upgrade/prepare-data-upgrade.md
-        - name: Upgrade from AX 2012 - Data upgrade in self-service environments
+        - name: AX 2012 upgrade - Data upgrade in development environments
+          href: migration-upgrade/data-upgrade-2012.md
+        - name: AX 2012 upgrade - Data upgrade in self-service environments
           href: migration-upgrade/data-upgrade-self-service.md
         - name: AX 2012 upgrade - On-premises environments
           href: migration-upgrade/on-prem-upgrade-2012.md
