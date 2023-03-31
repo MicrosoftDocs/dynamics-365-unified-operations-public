@@ -88,7 +88,7 @@ Mermaid example [to be deleted]
 # Omnichannel media management prerequisites and configuration
 [todo]
 
-# Migrating a legacy product media library environment to the 10.0.35+ omnichannel media management solution
+# Migrating legacy product media libraries to 10.0.35+ omnichannel media management data model
 [todo]
 
 # Merchandising media extensibility
