@@ -69,6 +69,7 @@ Follow these steps to set up an acceptance test.
 
     - **Work order type** – Specify the type of order to simulate (for example, *Sales orders* or *Purchase orders*).
     - **Work type** – Specify the work type to simulate. Typically, you will select *Pick* or *Put*.
+    - **Order number** – Specify the order number that will be used during the test. This can be useful if the location directive query has ranges related to the order table.
     - **Disposition code** – Specify the disposition code that is used to handle return orders.
     - **Directive code** – Specify the directive code that drives the location directives.
     - **Item number** – Specify the item to locate.
@@ -81,6 +82,7 @@ Follow these steps to set up an acceptance test.
     - **Exact location** – Select a precise location. The test will be marked as passed if this location is the result of the location directive.
     - **Location matching regular expression** – Enter a regular expression that will be validated against the resulting location, even if the resulting location is blank (no result). The test will be marked as passed if the regular expression matches the name of the resulting location. For more information about regular expressions, see [.NET regular expressions](https://aka.ms/regex).
     - **Location with profile** – Select a location profile. The test will be marked as passed if the resulting location has this profile.
+    - **Location in zone** – Select a location zone. The test will be marked as passed if the resulting location has this zone.
 
 1. Select **Save** to save your test. The **Results** FastTab stores a record of any test results for each test. For information about how to run tests and interpret the results, see the next section.
 
