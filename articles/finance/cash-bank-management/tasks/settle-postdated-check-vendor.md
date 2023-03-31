@@ -5,7 +5,7 @@ title: Settle a postdated check for a vendor
 description: Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank. 
 author: kweekley
 ms.date: 11/15/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

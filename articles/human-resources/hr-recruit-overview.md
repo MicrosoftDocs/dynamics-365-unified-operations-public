@@ -5,7 +5,7 @@ title: Recruiting overview
 description: This article describes recruitment in Dynamics 365 Human Resources. 
 author: twheeloc
 ms.date: 04/22/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

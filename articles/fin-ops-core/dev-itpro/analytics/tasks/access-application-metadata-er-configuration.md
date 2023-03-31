@@ -3,7 +3,7 @@ title: Access application metadata by using ER configuration
 description: The article describes how a Regulatory configuration service user can design a new Electronic reporting model mapping by using the metadata.
 author: kfend
 ms.date: 06/28/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

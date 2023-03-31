@@ -5,7 +5,7 @@ title: Distribute questionnaires using scheduling
 description: Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents. 
 author: twheeloc
 ms.date: 10/28/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Create a product lifecycle state to exclude products from Master planning
 description: This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation. 
 author: t-benebo 
 ms.date: 12/05/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

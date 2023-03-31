@@ -5,7 +5,7 @@ title: Research or resolve exceptions
 description: Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
 author: abruer
 ms.date: 02/11/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

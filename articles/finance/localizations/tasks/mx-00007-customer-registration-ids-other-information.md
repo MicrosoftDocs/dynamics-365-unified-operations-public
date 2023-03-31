@@ -3,7 +3,7 @@ title: MX-00007 Customer registration IDs and other information
 description: This procedure walks you through creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico.
 author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

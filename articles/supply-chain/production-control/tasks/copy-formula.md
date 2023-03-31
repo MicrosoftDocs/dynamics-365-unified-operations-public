@@ -5,7 +5,7 @@ title: Copy a formula
 description: This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. 
 author: johanhoffmann
 ms.date: 11/11/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

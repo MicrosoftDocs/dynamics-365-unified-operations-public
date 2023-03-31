@@ -3,7 +3,7 @@ title: Manage several derived mappings for a single model root
 description: This article explains how to manage several derived mappings that were configured for a single model root.
 author: kfend
 ms.date: 01/04/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

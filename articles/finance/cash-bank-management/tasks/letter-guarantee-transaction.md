@@ -5,7 +5,7 @@ title: Letter of guarantee transaction
 description: This procedure walks through the Letter of guarantee process. 
 author: kweekley
 ms.date: 11/15/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

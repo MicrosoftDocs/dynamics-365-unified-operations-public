@@ -5,7 +5,7 @@ title: View cost entries for a cost object
 description: This procedure shows how to view cost entries for a cost object. 
 author: JennySong-SH
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -5,7 +5,7 @@ title: Enter an addition to a fixed asset
 description: This procedure shows how to add an addition to an existing fixed asset. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

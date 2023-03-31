@@ -6,7 +6,7 @@ description: This procedure walks through creating product variants for a produc
 author: t-benebo 
 ms.date: 08/09/2022
 
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

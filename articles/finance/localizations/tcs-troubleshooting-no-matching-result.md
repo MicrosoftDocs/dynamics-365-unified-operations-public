@@ -5,7 +5,7 @@ title: No matching result could be found
 description: This article explains how to troubleshoot the "No matching result could be found" error in the Tax Calculation serivce.
 author: hangwan
 ms.date: 03/25/2022
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 

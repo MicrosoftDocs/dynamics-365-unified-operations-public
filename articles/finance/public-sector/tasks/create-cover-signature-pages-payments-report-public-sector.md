@@ -5,7 +5,7 @@ title: Create cover and signature pages for a payments report for the public sec
 description: When you create cover and signature pages for a payment report, you can specify what information should appear. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
