@@ -73,7 +73,7 @@ USMF is the originating company. The voucher contains two destination companies,
 
 **Destination companies**
 During posting, the financial dimension values for the destination company’s due to or due from can easily be determined. A balancing due to or due from is created for
-each destination company line because there is only one originating company. Because of this, the dimensions are always taken from the destination companies’ lines as 
+each destination company line because there is only one originating company. The dimensions are always taken from the destination companies’ lines as 
 follows:
 
 **DEMF** 
@@ -91,9 +91,8 @@ follows:
 |Due to-005-USMF|   |		200|
 
 **Originating company**
-The originating company’s accounting entry is more complex. The originating company must post the same amounts in the originating company’s due to or due from entries 
-to ensure that the ‘Due to’ entries and ‘Due from’ entries are in balance. Two **Due to** entries were posted in the destination companies, so two **Due from** entries 
-must be posted to the originating company. With three entries posted in USMF, but only two **Due from** entries created, which dimensions do we default?  
+The originating company’s accounting entry is more complex. The originating company must post the same amounts in the **Due to** or **Due from** entries to ensure that the **Due to** entries and **Due from** entries are in balance. Two **Due to** entries were posted in the destination companies, so two **Due from** entries 
+must be posted to the originating company. With three entries posted in USMF, but only two **Due from** entries created, which dimensions default?  
 
 Option 1:
 
@@ -144,7 +143,7 @@ Option 4 (what posts today):
 |Due from - -	|200|  |	
 
 Even though the scenario shows the Legal entity as a financial dimension, the legal entity financial dimension values can't be used in the posting logic to determine 
-how to default amounts and financial dimension values. Options one, two, and three give different ways to default the financial dimension values, but the posting logic can't interpret the intention of the user. Because of this, no financial dimensions default so option four shows what posts to the originating company.  
+how to default amounts and financial dimension values. Options one, two, and three give different ways to default the financial dimension values, but the posting logic can't interpret the intention of the user. No financial dimensions will default. Option four shows what posts to the originating company.  
 
 ### Scenario two
 USMF is the originating company. The voucher contains two destination companies, DEMF and USSI. The following lines are entered into the general journal and posted. 
@@ -226,10 +225,9 @@ Option 4 (what posts today):
 
 
 
-Options one, two and three give different ways to default the financial dimension values. None of the amounts at the dimension value level match the manually entered amounts. For example, in option one, we show a $300 credit to department 001, but there is only an offsetting debit for $200. The posting logic can't interpret the intention of the user. Because of this, no financial dimensions will default. Option four shows what posts to the originating company.
+Options one, two and three display different ways to default the financial dimension values. None of the amounts at the dimension value level match the manually entered amounts. For example, in option one, there's a $300 credit to department 001, but only an offsetting debit for $200. No financial dimensions will default. Option four shows what posts to the originating company.
 
-These are just two scenarios. Some scenarios aren't as complex, and potentially could default dimensions but there are also even more complex scenarios. To determine 
-which is an easy scenario compared to a complex scenario during posting would have a negative impact on posting performance. This will still run a risk that the posting interpretation defaults and posts the wrong financial dimension values. As shown with the previous scenarios, there is no consistent, logical way to correctly determine which financial dimension values should default. Rather than defaulting randomly or incorrectly, the current functionality doesn’t default any dimensions. The only way to correctly ‘pair’ the debits and credits for the originating and destination companies is to enter them as a single line voucher. Then the financial dimension values will correctly default. 
+Some scenarios aren't as complex, and potentially could default dimensions but there are even more complex scenarios. To determine which is an easy scenario compared to a complex scenario during posting would have a negative impact on posting performance. This will still run a risk that the posting interpretation defaults and posts the wrong financial dimension values. As shown with the previous scenarios, there is no consistent, logical way to correctly determine which financial dimension values will default. Rather than defaulting randomly or incorrectly, the current functionality doesn’t default any dimensions. The only way to correctly ‘pair’ the debits and credits for the originating and destination companies is to enter them as a single line voucher. Then the financial dimension values will correctly default. 
 
 
 
