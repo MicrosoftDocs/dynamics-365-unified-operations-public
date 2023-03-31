@@ -26,10 +26,12 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 
-# One voucher
+# One voucher 1
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-One voucher
-What is One voucher?
+
+## What is One voucher?
 Due to the flexibility of financial journals, you can enter a single voucher (which represents one transaction) with multiple customers, vendors, fixed assets, 
 projects, or bank accounts. Microsoft refers to this functionality as One voucher. The One voucher scenarios do NOT include transactions that include Ledger accounts 
 only, which posts to general ledger and not subledgers such as accounts receivable, fixed assets, bank, etc. 
