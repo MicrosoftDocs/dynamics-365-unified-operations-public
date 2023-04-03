@@ -2,7 +2,7 @@
 title: Document classes for Latin America
 description: This article provides information about the document class configuration for Latin America.
 author: Fhernandez0088
-ms.date: 03/15/2023
+ms.date: 04/03/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -41,9 +41,9 @@ The following prerequisites must be met before you set up document classes:
     | Inactive                      | Activate this option to make the document class invisible when transactions are posted. |
     | Apply withholding calculation | Activate this option to enable the withholding calculation on the document class. |
     | Original exchange rate        | Activate this option to prevent currency exchange rate differences from being generated in payments. |
-    | Document number separator     | Enter the character to use as the document number separator prefixes-salespoint. |
+    | Document number separator     | Enter the character to use as a separator between the document prefix, sales point prefix and the document number. For example, FCA-0001-12345678. |
     | Copy document number in       | Select an option to copy the document number that's generated to the native **Invoice** and **Document number** fields. |
-    | Require AC number             | Activate this option to make the AC number mandatory when a transaction is posted. |
+    | Require AC number             | Activate this option to make the Authorization code (AC) number mandatory when a transaction is posted. |
     | Concept labels 1, 2, 3        | Complete any required labels for the fields that are shown in the **LATAM** information section when a transaction is posted. |
     | Require control code          | Activate the control code if it's required. |
     | Type of control code          | Select between automatic and manual control codes. |
