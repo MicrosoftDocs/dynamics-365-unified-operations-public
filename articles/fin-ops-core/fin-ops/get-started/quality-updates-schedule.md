@@ -9,7 +9,6 @@ ms.custom: bap-template
 audience: Application User, Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form:
 ms.dyn365.ops.version: 10.0.29
@@ -22,11 +21,11 @@ This article provides the release schedule for Proactive Quality Updates (PQUs).
 
 The schedule for each PQU train and its corresponding build app version number is published seven days prior to the start of the PQU train. Five days before a PQU is applied, Microsoft sends a notification to customers who use the environments that will receive the update.
 
-Station 1 is the first release station, and it consists of customers who opt-in their sandbox environment(s) to receive the update before all other stations. More details will be published once this functionality is made generally available in May 2023.
+Station 1 is the first release station, and it consists of customers who opt in their sandbox environment(s) to receive the update before all other stations. More details will be published once this functionality is made generally available in May 2023.
 
 To determine when your Microsoft Dynamics Lifecycle Service (LCS) environment will be updated, find the region and the station to region mapping and cross reference with the upcoming PQU train for a service update. There is a high-level schedule for 2023 that outlines the train schedule for every service update this year if customers need to plan for a PQU ahead of time.
 
-For information on the maintenance windows for each region, see [What are the planned maintenance windows by region?](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows).
+For information on the maintenance windows for each region, see [What are the planned maintenance windows by region?](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ## Stations to Region Mapping
 
