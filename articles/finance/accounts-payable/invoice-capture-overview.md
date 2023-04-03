@@ -4,7 +4,7 @@
 title: Invoice capture solution overview
 description: This article provides information about the Invoice capture solution.
 author: sunfzam
-ms.date: 09/25/2022
+ms.date: 04/03/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
