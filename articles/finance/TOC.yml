@@ -3273,7 +3273,7 @@
           - name: Sales point prefixes for Latin America
             href: localizations/ltm-core-sales-point-prefixes.md
           - name: Sales point relation for sales documents and remission
-            href: localizations/ltm-core-point-relation.
+            href: localizations/ltm-core-point-relation.md
         - name: Latvia
           items:
           - name: Latvia overview
