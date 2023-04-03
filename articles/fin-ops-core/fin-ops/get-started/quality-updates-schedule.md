@@ -25,7 +25,7 @@ Station 1 is the first release station, and it consists of customers who opt in 
 
 To determine when your Microsoft Dynamics Lifecycle Service (LCS) environment will be updated, find the region and the station to region mapping and cross reference with the upcoming PQU train for a service update. There is a high-level schedule for 2023 that outlines the train schedule for every service update this year if customers need to plan for a PQU ahead of time.
 
-For information on the maintenance windows for each region, see [What are the planned maintenance windows by region?](../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+For information on the maintenance windows for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ## Stations to Region Mapping
 
