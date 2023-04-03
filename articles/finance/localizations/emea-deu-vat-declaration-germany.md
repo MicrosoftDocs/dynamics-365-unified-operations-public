@@ -31,14 +31,14 @@ The advance VAT declaration in Germany contains the following information.
 
 **Taxable sales**
 
-| Row | Box – tax base | Box – tax amount | Description                                                                                                                                      | Lookup result                                                                             |
-|-----|----------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 12  | 81             | Without code     | Taxable sales at a tax rate of 19 percent.                                                                                                       | 20-TaxableSalesStandard</br>73-BadDebtsWriteOffStandard (81/50) – with minus sign             |
-| 13  | 86             | Without code     | Taxable sales at a tax rate of 7 percent.                                                                                                        | 21-TaxableSalesReduced</br>73-BadDebtsWriteOffReduced (86/50) – with minus sign               |
-| 14  | 87             | *No tax amount*  | Taxable sales at a tax rate of 0 percent.                                                                                                        | 14-TaxableSalesZeroRates</br>73-BadDebtsWriteOffZeroRate (87/50) – with minus sign               |
-| 15  | 35             | 36               | Taxable sales at other tax rates.                                                                                                                | 22-TaxableSalesOtherRates</br>73-BadDebtsWriteOffOtherRates (35/36/50) – with minus sign      |
+| Row | Box – tax base | Box – tax amount | Description     | Lookup result         |
+|-----|--------------- |------------------|-----------------|-----------------------|
+| 12  | 81             | Without code     | Taxable sales at a tax rate of 19 percent. | 20-TaxableSalesStandard</br>73-BadDebtsWriteOffStandard (81/50) – with minus sign  |
+| 13  | 86             | Without code     | Taxable sales at a tax rate of 7 percent.  | 21-TaxableSalesReduced</br>73-BadDebtsWriteOffReduced (86/50) – with minus sign  |
+| 14  | 87             | *No tax amount*  | Taxable sales at a tax rate of 0 percent.  | 14-TaxableSalesZeroRates</br>73-BadDebtsWriteOffZeroRate (87/50) – with minus sign  |
+| 15  | 35             | 36               | Taxable sales at other tax rates.          | 22-TaxableSalesOtherRates</br>73-BadDebtsWriteOffOtherRates (35/36/50) – with minus sign   |
 | 16  | 77             | *No tax amount*  | Deliveries from agricultural and forestry businesses in accordance with §24 of the German VAT Act (UStG) to customers that have a VAT ID number. | 23-EUSalesAverageRate24</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50) – with minus sign |
-| 17  | 76             | 80               | Sales that a tax must be paid for, according to §24 of UStG (sawmill products, beverages, and alcoholic liquids).                                | 24-SalesAverageRate24</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50)                    |
+| 17  | 76             | 80               | Sales that a tax must be paid for, according to §24 of UStG (sawmill products, beverages, and alcoholic liquids).     | 24-SalesAverageRate24</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50)      |
 
 **Tax-free sales with input tax deduction**
 
@@ -99,8 +99,8 @@ The advance VAT declaration in Germany contains the following information.
 
 **SECTION – OTHER TAX AMOUNTS**
 
-| Row | Box – tax amount | Description                                                                                                                                                                                                                                                         | Lookup result                                 |
-|-----|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| Row | Box – tax amount | Description  | Lookup result           |
+|-----|------------------|--------------|-------------------------|
 | 45  | 65               | Tax because of a change in the form of taxation and additional tax on taxed down payments because of change in the tax rate.                                                                                                                                        | 64-AdditionalTaxDueChangeTaxRate              |
 | 46  | 69               | Incorrect or unjustified tax amounts that are shown on invoices, and tax amounts that are owed in accordance with section 6a (4) sentence 2, section 17 (1) sentence 7, or section 25b (2) of UStG, or that are owed by an outsourcing company or warehouse keeper. | 65-TaxDecreaseCorrection                      | 47  | \-               | Sales tax prepayment / surplus. | Sum of lines 44 to 46 |
 | 48  | 39               | Deduction of the fixed special advance payment for permanent extension. This row is typically filled in only with the last advance notification of the tax period.                                                                                                  | User input parameter in the report dialog box |
