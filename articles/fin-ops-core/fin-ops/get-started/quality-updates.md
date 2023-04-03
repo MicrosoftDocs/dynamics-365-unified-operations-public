@@ -2,7 +2,7 @@
 # required metadata
 
 title: Proactive quality updates
-description: This article provides information about proactive delivery of quality updates.
+description: This article provides information about Product Quality Updates, what they are, why they're used, and describes some of their benefits.
 author: rashmansur
 ms.date: 04/05/2023
 ms.topic: article
@@ -19,11 +19,11 @@ ms.dyn365.ops.version: 10.0.29
 
 [!include[banner](../includes/banner.md)]
 
-This article provides information about Product Quality Updates, what they're, why they're used, and describes some of their benefits.
+This article provides information about Product Quality Updates, what they are, why they're used, and describes some of their benefits.
 
 ## What are Proactive Quality Updates?
 
-Proactive Quality Updates (PQUs) are cumulative builds of hot fixes that are delivered with [near zero downtime](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-does-near-zero-downtime-maintenance-mean) (nZDT). PQUs follow a push model where updates are applied to a Microsoft Dynamics Lifecycle Services environment in the background with minimal impact to customers. Every PQU is deployed region-by-region, following a "Safe Deployment Process or SDP" that tracks issues found within each region as we deploy, helps identify issues and then course correct issues before the PQU can be deployed to more regions. PQUs are 100% automated and contain important bug fixes that are ready after the service update is generally available.
+Proactive Quality Updates (PQUs) are cumulative builds of hot fixes that are delivered with [near zero downtime](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean) (nZDT). PQUs follow a push model where updates are applied to a Microsoft Dynamics Lifecycle Services environment in the background with minimal impact to customers. Every PQU deploys region-by-region, following a "Safe Deployment Process or SDP" that tracks issues found within each region as we deploy. The SDP helps identify issues and then course correct issues before the PQU can be deployed to more regions. PQUs are 100% automated and contain important bug fixes that are ready after the service update is generally available.
 
 ## Why is Microsoft introducing Proactive Quality Updates?
 
