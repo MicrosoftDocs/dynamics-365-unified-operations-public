@@ -15,13 +15,11 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Proactive quality updates
+# Proactive Quality Updates Overview
 
 [!include[banner](../includes/banner.md)]
 
-# Proactive Quality Updates Overview
-
-This article provides information about Product Quality Updates, what they are, why they are used, and describes some of their benefits.
+This article provides information about Product Quality Updates, what they're, why they're used, and describes some of their benefits.
 
 ## What are Proactive Quality Updates?
 
@@ -29,13 +27,13 @@ Proactive Quality Updates (PQUs) are cumulative builds of hot fixes that are del
 
 ## Why is Microsoft introducing Proactive Quality Updates?
 
-Businesses are unnecessarily impacted when they are affected by a service issue for which a solution is already available. Before PQUs, most customers did not receive fixes until they deploy their next Service Update. PQUs simply get fixes to customers more quickly.
+Businesses are unnecessarily impacted when they're affected by a service issue for which a solution is already available. Before PQUs, most customers didn't receive fixes until they deploy their next Service Update. PQUs simply get fixes to customers more quickly.
 
 ## What are some of the investments Microsoft is making to enable safe deployments of PQUs?
 
 Microsoft has invested in technology and processes to make the PQU process non-disruptive:
 
-- **Higher quality concise payloads** : PQU payloads contain changes that are limited to bug fixes and regulatory changes that are supported by flighting. Extra diligence is applied when backporting changes into a PQU to further reduce the risk of unintended regressions.
-- **Safe Deployment Rollout Process:** Deployment of PQUs follows a safe deployment process (SDP) where each PQU is first delivered to a single region with small group of customers with the highest tolerance for risk. Then, if no regressions are identified, the process continues through a broader group of customers based on geographies (stations) until all customers are using the new version. This deployment model is used across Microsoft online services to build confidence in an update as it is delivered to more and more customers and minimize impact if unforeseen issues are detected.
-- **Fall Back via flighting**** :** Flighting is used to enable or disable changes introduced in PQUs. If it becomes necessary to turn off a change, after a PQU deployment, this can be done using the flight system to reduce impact.
-- **Higher quality concise payloads** : PQU payloads contain hot fixes that are limited to bug fixes and regulatory changes that are supported by flighting.
+- **Higher quality concise payloads**: PQU payloads contain changes that are limited to bug fixes and regulatory changes that are supported by flighting. Extra diligence is applied when backporting changes into a PQU to further reduce the risk of unintended regressions.
+- **Safe Deployment Rollout Process**: Deployment of PQUs follows a safe deployment process (SDP) where each PQU is first delivered to a single region with small group of customers with the highest tolerance for risk. Then, if no regressions are identified, the process continues through a broader group of customers based on geographies (stations) until all customers are using the new version. This deployment model is used across Microsoft online services to build confidence in an update as it is delivered to more customers and minimize impact if unforeseen issues are detected.
+- **Fall Back via flighting**: Flighting is used to enable or disable changes introduced in PQUs. If it becomes necessary to turn off a change, after a PQU deployment, this can be done using the flight system to reduce impact.
+- **Higher quality concise payloads**: PQU payloads contain hot fixes that are limited to bug fixes and regulatory changes that are supported by flighting.
