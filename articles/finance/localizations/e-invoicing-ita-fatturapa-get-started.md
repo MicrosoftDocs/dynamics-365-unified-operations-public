@@ -309,7 +309,7 @@ This section provides information that will help you set up and configure the pr
         - Object ID
 
     > [!NOTE]
-    > Object ID for an application is different on **App registrations** and **Enterprise applications** forms. Use the Object ID value from **Enterprise applications** form.
+    > The Object ID for an application is different on the **App registrations** and **Enterprise applications** pages. Use the Object ID value from **Enterprise applications** page.
 
 5. In RCS, add the app to the application list for your service environment.
 
@@ -428,7 +428,7 @@ Follow these steps on the machine where the proxy service is hosted.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
         - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. This value should be the same endpoint that is used for RCS and Finance.
         - **InvoicingServiceClientOptions.ServiceEnvironmentId** – Specify the name of the service environment that's configured in RCS.
-        - **NotificationsFolder** – Specify the folder to save incoming notification files in, i.e. **C:\\\\Files\\\\**.
+        - **NotificationsFolder** – Specify the folder to save incoming notification files in. For example, **C:\\\\Files\\\\**.
 
     3. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
 
@@ -469,7 +469,7 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Configuring SSL Settings.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 18. Open **Directory Browsing**, and select **Enable**.
-19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may face server error (i.e. 403 - Forbidden). This step is needed to ensure that the **serverDNS** is accessible, not hidden by a firewall, etc.
+19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may get a server error, such as 403 - Forbidden. This step is needed to ensure that the **serverDNS** is accessible and not hidden by a firewall or something else.
 
     ![Checking the service in a browser.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
