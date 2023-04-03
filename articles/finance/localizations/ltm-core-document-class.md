@@ -11,6 +11,9 @@ ms.custom: bap-template
 
 # Document classes for Latin America
 
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 You can create the different documents that a company uses to register transactions with third parties. Documents can include invoices, credit notes, and debit notes. These documents can also represent payment methods such as checks and wire transfers, and treasury documents such as receipts and payment orders.
 
 ## Prerequisites
@@ -85,3 +88,6 @@ You can use the **Tax application** option to add this codification.
 4. In the **Tax application Id.** field, select a value.
 5. In the **Tax application code field**, enter the code that the fiscal authority uses to identify the document class type.
 6. Select **Save**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
