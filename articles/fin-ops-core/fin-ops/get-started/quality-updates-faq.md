@@ -20,7 +20,7 @@ This article provides answers to frequently asked questions about Proactive Qual
 
 ### How are the maintenance windows handled for customers that have one finance and operations apps instance but are active in multiple time zones?
 
-There are no special schedules outside of the current supported maintenance windows where a finance and operations apps instance exists because we plan to roll out PQUs in a minimally disruptive manner with near [Zero Downtime (nZDT](../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
+There are no special schedules outside of the current supported maintenance windows where a finance and operations apps instance exists because we plan to roll out PQUs in a minimally disruptive manner with near [Zero Downtime (nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
 
 ### Can customers delay, reschedule, or pause a PQU?
 
@@ -49,7 +49,7 @@ If only one customer environment is affected, contact Microsoft support to open 
 
 ### Can customers still manually apply hotfix updates from Lifecycle Services?
 
-Yes. To ensure ongoing parity with how hot fixes work, hot fix updates can still be applied to customer environments in Lifecycle Services. PQUs are cumulative builds and continue to be available on Lifecycle Services as they're published. PQUs will be published to Microsoft Dynamics Lifecycle Services (LCS) for manual application per the change cutoff schedule - it's important to note that hot fixes that are deployed as part of a PQU go through rigorous Safe Deployment Practice (SDP) before the update is deployed. Customers should choose a PQU over manually applying an update because of increased reliability, minimal disruption, and [reduced downtime](../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
+Yes. To ensure ongoing parity with how hot fixes work, hot fix updates can still be applied to customer environments in Lifecycle Services. PQUs are cumulative builds and continue to be available on Lifecycle Services as they're published. PQUs will be published to Microsoft Dynamics Lifecycle Services (LCS) for manual application per the change cutoff schedule - it's important to note that hot fixes that are deployed as part of a PQU go through rigorous Safe Deployment Practice (SDP) before the update is deployed. Customers should choose a PQU over manually applying an update because of increased reliability, minimal disruption, and [reduced downtime](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
 
 ### Can customers proactively install a PQU ahead of the schedule?
 
@@ -74,7 +74,7 @@ As with any other code promotions, rollbacks can't be performed after a PQU is a
 
 ### What is the guidance for customers with U.S. Food and Drug Administration (FDA) and Good Practice Quality (GxP) regulatory requirements?
 
-The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. Until then, customers subject to FDA/GxP regulations will be exempted from the PQU process until further updates in this space. Customers who fall under this regulation and don't have an exemption are required to raise a support ticket with justification related to the regulatory requirement for FDA/ GxP to receive an exemption for their LCS project(s). If Microsoft has already confirmed an exemption for such customers, no further action is required at this time. For more information on FDA or GxP regulations, please visit [Microsoft Azure GxP Offering](https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-gxp).
+The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. Until then, customers subject to FDA/GxP regulations will be exempted from the PQU process until further updates in this space. Customers who fall under this regulation and don't have an exemption are required to raise a support ticket with justification related to the regulatory requirement for FDA/ GxP to receive an exemption for their LCS project(s). If Microsoft has already confirmed an exemption for such customers, no further action is required at this time. For more information on FDA or GxP regulations, please visit [Microsoft Azure GxP Offering](azure/compliance/offerings/offering-gxp.md).
 
 ### What is the guidance for customers with Sarbanes-Oxley (SOX) requirements?
 
