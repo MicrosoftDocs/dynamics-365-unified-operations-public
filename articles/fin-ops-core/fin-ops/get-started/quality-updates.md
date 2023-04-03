@@ -23,7 +23,7 @@ This article provides information about Product Quality Updates, what they are, 
 
 ## What are Proactive Quality Updates?
 
-Proactive Quality Updates (PQUs) are cumulative builds of hot fixes that are delivered with [near zero downtime](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean) (nZDT). PQUs follow a push model where updates are applied to a Microsoft Dynamics Lifecycle Services environment in the background with minimal impact to customers. Every PQU deploys region-by-region, following a "Safe Deployment Process or SDP" that tracks issues found within each region as we deploy. The SDP helps identify issues and then course correct issues before the PQU can be deployed to more regions. PQUs are 100% automated and contain important bug fixes that are ready after the service update is generally available.
+Proactive Quality Updates (PQUs) are cumulative builds of hot fixes that are delivered with [near zero downtime](../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean) (nZDT). PQUs follow a push model where updates are applied to a Microsoft Dynamics Lifecycle Services environment in the background with minimal impact to customers. Every PQU deploys region-by-region, following a "Safe Deployment Process or SDP" that tracks issues found within each region as we deploy. The SDP helps identify issues and then course correct issues before the PQU can be deployed to more regions. PQUs are 100% automated and contain important bug fixes that are ready after the service update is generally available.
 
 ## Why is Microsoft introducing Proactive Quality Updates?
 
