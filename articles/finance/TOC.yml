@@ -3258,6 +3258,8 @@
             href: localizations/ltm-core-tax-id-type.md
           - name: Tax application for Latin America
             href: localizations/ltm-core-tax-application.md
+          - name: Document classes for Latin America
+            href: localizations/ltm-core-document-class.md
           - name: Document class types for Latin America
             href: localizations/ltm-core-document-class-type.md
           - name: Document class letter for Latin America
