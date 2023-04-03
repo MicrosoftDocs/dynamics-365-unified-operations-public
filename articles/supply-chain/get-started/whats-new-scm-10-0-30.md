@@ -42,7 +42,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Production control | On-hand information in production orders to release page | Adds a column for the on-hand inventory quantity for the line item in the lines section on the **Production orders to release** page. |
-| Transportation management | (Preview)Assign shipments to related route segments | This feature enables the system to apportion shipment freight costs more accurately, including for loads with multiple shipments delivered to various segment destinations along a single route. It assigns each shipment to the most suitable route segment based on the destination addresses of the shipment and segment. The feature then calculates each shipment's freight cost as a proportion of the load's total freight cost, based on the shipment's relative weight, volume, quantity and distance traveled. This feature only applies to shipments managed using the Transportation management (TMS) module. |
 
 ## Additional resources
 

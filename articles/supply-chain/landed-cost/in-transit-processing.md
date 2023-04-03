@@ -67,7 +67,7 @@ To work with goods-in-transit settings for your warehouses, go to **Inventory ma
 
 ## Posting rules for landed cost
 
-Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they are received. <!-- KFM: Add a link to the related scenario when available. -->
+Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they are received.
 
 To work with posting profiles, go to **Inventory management \> Setup \> Posting \> Posting**. On the **Purchase Order** tab, the following new posting rules are available:
 

@@ -1,65 +1,31 @@
 ---
-title: Turn on the Landed cost module for your system
+title: Turn on the Landed cost module and related features for your system
 description: This article describes how to turn the Landed cost module and its optional extra features on or off.
 author: Weijiesa
-ms.date: 03/03/2023
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: weijiesa
-ms.search.validFrom: 2021-09-24
-ms.dyn365.ops.version: 10.0.17
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 04/20/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
-# Turn on the Landed cost module for your system
+# Turn on the Landed cost module and related features for your system
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-This article describes how to turn the Landed cost module and its optional extra features on or off.
+<!-- KFM: Preview until further notice -->
 
-## Turn the Landed cost feature on or off
+This article describes how to turn the Landed cost module and its optional related features on or off.
 
-Before you can use any part of the Landed cost module functionality, the *Landed cost* feature must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on as needed. In the **Feature management** workspace, the feature is listed in the following way:
+The Landed cost feature itself, plus each of its available add-on features, are listed and described in the following table. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of each feature and turn it on as needed. Each feature in the table is listed under the *Transportation management* module in the **Feature management** workspace in Supply Chain Management.
 
-- **Module:** *Transportation management*
-- **Feature name:** *Landed cost*
-
-The *Landed cost* feature requires Microsoft Dynamics 365 Supply Chain Management version 10.0.17 or later.
-
-## Turn the shipping container batch mode feature on or off
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
-If you want to be able to use batch mode when you create and update shipping containers for Landed cost, you can also turn on this optional feature for your system. By creating and updating shipping containers in background mode, you can help improve system performance when you work with shipping containers that have a large number of shipping lines.
-
-Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Transportation management*
-- **Feature name:** *(Preview) Enable shipping container creation and update in batch mode*
-
-The *(Preview) Enable shipping container creation and update in batch mode* feature requires Supply Chain Management version 10.0.33 or later.
-
-## Turn split cost type codes for multiple voyages in the vendor invoice journale feature on or off
-
-This feature for the Landed cost module enables business to better allocate transportation costs associated with multiple voyages. With this feature, when a user is creating a vendor invoice journal for multiple voyages, each cost type code will have its own journal line that includes the voyage name in its description. This allows for easier reconciliation. 
-
-Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Transportation management*
-- **Feature name:** *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages*
-
-The *(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages* feature requires Supply Chain Management version 10.0.33 or later.
-
-
-## Turn Source document and accounting distribution support for Landed Cost feature on or off
-
-This feature allows for the inclusion of landed costs in the accounting distribution of purchase product receipts, enabling customers to easily identify and track these costs. Specifically, it supports the association of freight cost from landed cost with their corresponding source documents, providing a more accurate and comprehensive view of the total cost of goods received. With this functionality, customers can gain greater visibility into the expenses associated with their purchases and transportation, allowing for better cost analysis and management.
-
-Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off as needed. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Transportation management*
-- **Feature name:** *(Preview) Source document and accounting distribution support for Landed Cost*
-
-The *(Preview) Source document and accounting distribution support for Landed Cost* feature requires Supply Chain Management version 10.0.34 or later.
+| Feature name and requirements | Feature description |
+|---|---|
+| <p>**Feature name:**</br>*Landed cost*/p><p>**Version required:**</br>10.0.17 or higher</p> | This feature provides the basic Landed cost module. To use any part of the Landed cost module functionality, including the other features listed in this table, the *Landed cost* feature must be turned on for your system. |
+| <p>**Feature name:**</br>*(Preview) Enable shipping container creation and update in batch mode*</p><p>**Version required:**</br>10.0.33 or higher</p> | This feature for the Landed cost module makes it possible to use batch mode when you create and update shipping containers for Landed cost. By creating and updating shipping containers in background mode, you can help improve system performance when you work with shipping containers that have many shipping lines. |
+| <p>**Feature name:**</br>*(Preview) Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages*</p><p>**Version required:**</br>10.0.33 or higher</p> | This feature for the Landed cost module enables businesses to better allocate transportation costs associated with multiple voyages. With this feature, when a user is creating a vendor invoice journal for multiple voyages, each cost type code will have its own journal line that includes the voyage name in its description. This allows for easier reconciliation. |
+| <p>**Feature name:** *(Preview) Source document and accounting distribution support for Landed Cost*</p><p>**Version required:** 10.0.34 or higher</p> | This feature for the Landed cost module enables landed costs to be included in the accounting distribution of purchased product receipts, which makes it easy to identify and track these costs. It supports the association of freight cost from landed cost with their corresponding source documents, providing a more accurate and comprehensive view of the total cost of goods received. With this functionality, you can gain greater visibility into the expenses associated with your purchases and transportation, allowing for better cost analysis and management. See also [Show landed costs in the accounting distribution of product receipts](manage-voyages.md#source-doc-post) |
