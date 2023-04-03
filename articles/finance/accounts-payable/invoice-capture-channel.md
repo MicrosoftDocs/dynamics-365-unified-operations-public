@@ -36,7 +36,7 @@ This article describes what a channel is and how to create one in Invoice captur
 
 ## Definition of channel 
 
-Customers receive supplier invoices from different external sources. To collect the invoices in one location, channels are available in Invoice capture. Administators can define multiple channels based on different triggers in various connectors in Power automate.  
+Customers receive supplier invoices from different external sources. To collect the invoices in one location, channels are available in Invoice capture. Administrators can define multiple channels based on different triggers in various connectors in Power automate.  
 
 When invoices are sent via predefined channels, they are captured and displayed on **Received files** page. 
 
@@ -46,7 +46,7 @@ In invoice capture, a default channel is used to upload the invoice in Invoice c
 
 ## Deactivate and activate the channel 
 
-Administrators can use the **Activate/Deactivate** button to receive the invoice document from the channel. If a channel is assigned as the **Channel for file upload** in the **System preference** page and is **Inactive**, the file upload in Received file won't work.  
+Administrators can use **Activate/Deactivate** to receive the invoice document from the channel. If a channel is assigned as the **Channel for file upload** in the **System preference** page and is **Inactive**, the file upload in the **Received file** page won't work.  
  
 
 ## Use managed flow  
@@ -76,11 +76,11 @@ The following additional properties need to be defined to generate flows:
 |           |Folder|  Select a folder, or leave blank for the whole library |
 |OneDrive or OneDrive for business |Folder| Directory name| 
 
-If the **Use managed flow** option is set **Yes**, when saving the channel, flow will be generated automatically and will be turned **On**. 
+If the **Use managed flow** option is set **Yes**, when saving the channel, the flow will be generated automatically and will be turned **On**. 
 
-If flow is generated successfully, a custom control is available. The **Manage flow** pane allows operations on the flow: 
+If flow is generated successfully, a custom control is available. The **Manage flow** pane allows the following operations: 
  - Turn the flow On/Off  
- - **Edit** - allow the user to edit the flow to either customize or fixing the flow. 
+ - **Edit** - allows the user to edit the flow and either customize or fix the flow. 
  - **View** - users can view the running details of flow and other flow related information. 
 
 The flow lifecycle management allows users to update channels. 
@@ -91,24 +91,24 @@ The flow lifecycle management allows users to update channels.
      -   **Unlink** - Unlink the associated flow and keep it in the environment. 
      -   **Delete** - Delete the associated flow. 
 
-The flow is generated based on the selected template and prefilled required parameters. But flow owner with advanced flow knowledge can update the flow for more advanced functions. 
+The flow is generated based on the selected template and prefilled required parameters. But a flow owner with advanced flow knowledge can update the flow for more advanced functions. 
 
 There are various errors that can appear: 
 
-**Generate flow failed** - The flow will be generated successfully except for system reasons. It may fail due to timeout or lack of licenses for flow usage. 
-Solution - Error messages will provide details and the **Generate flow** button will generate temporary errors or the system level fixes. 
+**Generate flow failed** - The flow will be generated successfully except for system reasons. It may fail due to timeout or lack of licenses. 
+Solution - Error messages will provide details and **Generate flow** will generate temporary errors or the system level fixes. 
 
 **Turn on flow failed** - There are potentially multiple reasons when turning on a flow. 
-As flow connects operations together and different operations require different connections and credentials to different applications. The connection is reusable artifacts, but if the user doesn’t have any connections created yet, when the flow is turned on and will fail. 
+As flow connects operations together and different operations require different connections and credentials to different applications. The connection is reusable artifacts, but if the user doesn’t have any connections created yet, when the flow is turned on, it will fail. 
 
 For different flow templates, it requires various parameters. For example, Microsoft 365 Outlook requires to select the email folder that triggers the flow. Incorrect parameters may also lead to failure.
-Solution - Error messages display **Fix it** in the message bar to assist Administrators to the flow editing UI. If the message is closed, click **Edit** in the **Manage flow** pane which open the flow editing UI. 
+Solution - Error messages display **Fix it** in the message bar to assist administrators to the flow editing UI. If the message is closed, click **Edit** in the **Manage flow** pane which opens the flow editing UI. 
 
 ### Use managed flow option  
 
 The **Use managed flow** option should only be used by professional users, the document receive API should be integrated manually. The channel ID will need to be filled in the API payload. Channel ID can be found in the URL after it is saved.  
 
-When calling the “vis_ExternalDocumentReceiver” API without a valid channel ID, the system will treat it as an invalid call. The invoice file can't be captured and will displayed in the **Received files** page. 
+When calling the “vis_ExternalDocumentReceiver” API without a valid channel ID, the system will treat it as an invalid call. The invoice file can't be captured and will be displayed in the **Received files** page. 
 
 
 ### Document Receiver API 
@@ -136,6 +136,7 @@ Output parameters
 |vis_ExternalDocumentReceiver_Data_Out |string |    |Succeeded file Id in Received files (vis_externaldocumentinfo) |
 
 Channel Info 
+
 |Parameter name |type |Is required |Description| 
 |-------------|------|-----------|--------------|
 |ChannelId |string |X  |The identifier of the channel that needs to be bound. |
@@ -157,7 +158,7 @@ A sample payload in below, need to stringify before post.
 3. Fill in the **Name**, **Description**, **Use manage flow** is **Yes** and select a **low template**. 
 4. Click **Save**. The new channel page will display. 
 5. It will take some time to create the flownes.  
- - If the flow is successful generated and activated, the **Manage flow** status will be **On**.  
+ - If the flow is successfullly generated and activated, the **Manage flow** status will be **On**.  
  - If the flow is generated but not activated, administrators can click **Edit** to setup the flow.  
 
 ### Security 
