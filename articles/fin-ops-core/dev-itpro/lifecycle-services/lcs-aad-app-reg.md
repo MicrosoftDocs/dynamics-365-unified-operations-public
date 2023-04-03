@@ -50,7 +50,7 @@ To begin reading and writing resources on behalf of a user, enable the **Public 
 
 ## Step 4. Request an access token
 
-1. To request a bearer token for username and password, send a POST request via HTTP to Azure AD with a username and password payload.
+To request a bearer token for username and password, send a POST request via HTTP to Azure AD with a username and password payload.
 
     ```HTTP
     Content-Type: application/x-www-form-urlencoded
@@ -72,7 +72,7 @@ To begin reading and writing resources on behalf of a user, enable the **Public 
     }
     ```
 
-2. Use the **access_token** value in subsequent calls to the Lifecycle Services API with the **Authorization** HTTP header.
+Use the **access_token** value in subsequent calls to the Lifecycle Services API with the **Authorization** HTTP header.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
