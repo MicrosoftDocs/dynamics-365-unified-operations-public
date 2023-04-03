@@ -64,7 +64,7 @@ Make the following settings on the **General** settings tab for all all types of
 
 Make the following settings on the **General** settings tab if you are setting up a pricing rule for a margin component price adjustment.
 
-- **Concurrency model** – This read-only field tells you how the system will handle situations where more than one margin component price adjustment applies (concurrence). Its value, *Price component code rank*, means that the system will choose a price adjustment based on the price attribute combination rank. <!--KFM: This doesn't seem quite right. Is it actually about finding the *order* in which adjustments are applied? -->
+- **Concurrency model** – This read-only field tells you how the system will handle situations where more than one price adjustment applies for the same price component code within a price structure (concurrence). Its value, *Price component code rank*, means that the system will choose a price adjustment based on its price attribute combination rank. If multiple price adjustments have the same highest rank, they all apply to the sales order.
 - **Quantity tiers** – Set to *Yes* to enable the **Quantity tiers** FastTab, which lets you establish price adjustments that vary based on the sales order line quantity.
 
 > [!NOTE]
