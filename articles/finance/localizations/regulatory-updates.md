@@ -48,7 +48,8 @@ For the latest regulatory update plans, refer to the following table.
 |      Brazil         |   December 2022         | 10.0.31         |    Sped Fiscal EFD ICMS IPI - version 3.1.1 (Layout 1.16 / 017 / 2023)  |
 |      Denmark         |   November 2022         | 10.0.31, 10.0.32   |    VAT declaration preview report update for 2022  |
 |      Italy      |   October 2022| 10.0.32 | The new type of TD28 document to communicate the purchase of goods from San Marino |
-|      Italy      |   February 2023| 10.0.31HF, 10.0.32HF, 10.0.33 | Unique Certification - 2023 in Dynamics 365 Finance 10.0.33 |
+|      Italy      |   February 2023| 10.0.31HF, 10.0.32HF, 10.0.33 | Unique Certification - 2023 in Dynamics 365 Finance |
+|      Italy      |   March 2023| 10.0.31HF, 10.0.32HF, 10.0.33HF | Italy - VAT return 2023 - Dichiarazione Iva annuale 2023 |
 |      Saudi Arabia      |   November 2022| 10.0.31HF, 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
 

@@ -53,8 +53,11 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - France
+- Germany
 - India
 - Japan
+- Korea
+- Norway
 - South Africa
 - Switzerland
 - United Arab Emirates
