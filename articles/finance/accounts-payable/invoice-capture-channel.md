@@ -36,30 +36,29 @@ This article describes what a channel is and how to create one in Invoice captur
 
 ## Definition of channel 
 
-Customers receive supplier invoices from different external sources. To centrally collect the invoices, the concept of a channel was introduced in Invoice capture. Admins can define different channels based on different triggers in various connectors in Power Automate.  
+Customers receive supplier invoices from different external sources. To collect the invoices in one location, channels are available in Invoice capture. Administators can define multiple channels based on different triggers in various connectors in Power automate.  
 
-When invoices are sent via pre-defined channels, they can be captured and displayed on **Received files** page. 
+When invoices are sent via predefined channels, they are captured and displayed on **Received files** page. 
 
 ## Default channel for file upload: 
 
-In invoice capture, the default channel is used to upload the invoice in Invoice capture. The invoice can be reviewed on the **Received files** page in Invoice capture. 
-New channels can be created to replace the default channel on the **System preference** page. 
+In invoice capture, a default channel is used to upload the invoice in Invoice capture and can be reviewed on the **Received files** page. New channels can be created to replace the default channel on the **System preference** page. 
 
 ## Deactivate and activate the channel 
 
-Admin can use the button Activate/Deactivate in the ribbon to decide whether the invoice document should be received from the channel.  
-If the channel is assigned as the Channel for file upload in Setup system > System preference and set inactive, the file upload in Received file cannot be working.  
+Administrators can use the **Activate/Deactivate** button to receive the invoice document from the channel. If a channel is assigned as the **Channel for file upload** in the **System preference** page and is **Inactive**, the file upload in Received file won't work.  
  
 
 ## Use managed flow  
+Administrators can decide how they want to integrate the document receive API. 
+On the XXX, select the **Use managed flow** option:
+ - **Yes** - The flow will be automatically generated based on the flow setting
+ - **No** -  The user needs to integrate the received API and bind current channel ID into the API parameter 
 
-This is an important option for Admins to decide how they want to integrate the document receive API. 
-Yes: let system generate flow automatically based on the flow setting. 
-No: by select this option, user will need to integrate the receive API themselves and bind current channel Id into the API parameter. 
 
+When the **Use managed flow** is set to **Yes**, the flow setting is enabled. The user will select the **Flow template**. By default, the flow template is set to “Microsoft Outlook 365”. 
 
-When the toggle “Use managed flow” is set as “Yes” 
-The flow setting will be enabled, and it will ask you to select the “Flow template”. By default, the flow template is set to “Microsoft Outlook 365”, which is the most widely used. Meanwhile, it predefines the following templates: 
+The following templates are available: 
 
  - Outlook.com 
  - Microsoft Outlook 365 
@@ -67,7 +66,7 @@ The flow setting will be enabled, and it will ask you to select the “Flow temp
  - SharePoint 
  - OneDrive for business 
 
-Additional properties have to be defined to ensure success of the flow generation. 
+The following additional properties need to be defined to generate flows: 
 
 |Flow template |  Properties|   Meaning|
 |---------------|-----------|----------|
@@ -77,45 +76,39 @@ Additional properties have to be defined to ensure success of the flow generatio
 |           |Folder|  Select a folder, or leave blank for the whole library |
 |OneDrive or OneDrive for business |Folder| Directory name| 
 
-By set using managed flow = Yes and fulfill all necessary fields, when saving the channel, flow will be generated automatically and will be turned to ON if possible. 
+If the **Use managed flow** option is set **Yes**, when saving the channel, flow will be generated automatically and will be turned **On**. 
 
-If flow is generated successfully, there’s custom control - Manage flow pane introduced which provides simple operations on the flow. 
- - Turn On/Off flow. 
- - Edit: will lead user to the flow editing UI to do fixing or advanced customizations. 
- - View: will lead user to flow overview UI, user can see the running details of flow and other flow related information. 
+If flow is generated successfully, a custom control is available. The **Manage flow** pane allows operations on the flow: 
+ - Turn the flow On/Off  
+ - **Edit** - allow the user to edit the flow to either customize or fixing the flow. 
+ - **View** - users can view the running details of flow and other flow related information. 
 
-There’s a ribbon button group which provides the flow lifecycle management: 
+The flow lifecycle management allows users to update channels. 
  - When there’s no flow associated with current channel: 
-      - Generate: only visible, this is useful when the first generation is failed. 
+      - **Generate** - available when the first channel generation failed. 
  - When there’s a flow associated with current channel: 
-     -   Sync: Sync back parameters when user made some changes in the flow directly. 
-     -   Unlink: unlink the associated flow but keep it in the environment. 
-     -   Delete: delete the associated flow. 
+     -   **Sync** - Syncs the parameters when users update the flow. 
+     -   **Unlink** - Unlink the associated flow and keep it in the environment. 
+     -   **Delete** - Delete the associated flow. 
 
-The flow is generated based on the selected template and prefilled required parameters. But flow owner with advanced flow knowledge could still make change to the flow for more advanced functions. 
+The flow is generated based on the selected template and prefilled required parameters. But flow owner with advanced flow knowledge can update the flow for more advanced functions. 
 
-Caution: by editing the flow, make sure the file receive node unchanged. 
+There are various errors that can appear: 
 
-There’re could be different reasons leading to the situation below: 
+**Generate flow failed** - The flow will be generated successfully except for system reasons. It may fail due to timeout or lack of licenses for flow usage. 
+Solution - Error messages will provide details and the **Generate flow** button will generate temporary errors or the system level fixes. 
 
-Generate flow failed. 
-Reason: Generally, the flow will be generated successfully except for system reasons. For example, it may fail due to timeout or lack of license for flow usage. 
-Solution: There will be error messages raises with details. And there’s Generate flow button in the ribbon, so user could retry generate for temporary errors or system level fixtures. 
+**Turn on flow failed** - There are potentially multiple reasons when turning on a flow. 
+As flow connects operations together and different operations require different connections and credentials to different applications. The connection is reusable artifacts, but if the user doesn’t have any connections created yet, when the flow is turned on and will fail. 
 
-Turn on flow failed. 
-Reason: there’re could be multiple reasons when turning on flow. 
+For different flow templates, it requires various parameters. For example, Microsoft 365 Outlook requires to select the email folder that triggers the flow. Incorrect parameters may also lead to failure.
+Solution - Error messages display **Fix it** in the message bar to assist Administrators to the flow editing UI. If the message is closed, click **Edit** in the **Manage flow** pane which open the flow editing UI. 
 
-As flow connects operations together and different operations require different connections which wrap credentials to different applications. The connection is reusable artifacts, but if the user doesn’t have any connections created yet, the turn on will always fail. 
+### Use managed flow option  
 
-For different flow templates, it requires value on various parameters. For example, Microsoft 365 Outlook requires to indicate which Folder arrives the email shall trigger the flow. Incorrect parameters may also lead to failure. 
+The **Use managed flow** option should only be used by professional users, the document receive API should be integrated manually. The channel ID will need to be filled in the API payload. Channel ID can be found in the URL after it is saved.  
 
-Solution: There will be error messages with a “Fix it” button in the message bar to lead Admins to the flow editing UI to check. If the message is closed, they could still click edit in manage flow pane which will also lead to the flow editing UI. 
-
-### When the toggle “Use managed flow” is set as “No” 
-
-This option should only be used by professional users, the document receive API should be integrated manually, and channelId will need to be filled in the API payload. ChannelId can be found in the URL after it is saved.  
-
-When it is calling the “vis_ExternalDocumentReceiver” API without a valid channelId, the system will treat it as an invalid call. The invoice file cannot be captured and displayed in Manage invoices > Received files. 
+When calling the “vis_ExternalDocumentReceiver” API without a valid channel ID, the system will treat it as an invalid call. The invoice file can't be captured and will displayed in the **Received files** page. 
 
 
 ### Document Receiver API 
@@ -132,7 +125,7 @@ Input parameters:
 |vis_ExternalDocumentReceiver_ChannelType_In |string |  X   |One of [Direct, Email, API, FileSystem] |
 |vis_ExternalDocumentReceiver_ChannelInfo_In |string | X   |Stringified object, see Channel Info |
 
-Channel type decides whether it’s for interactive or silent scenarios. 
+Channel type decides if it’s interactive or silent scenarios. 
  - Interactive: Direct 
  - Silence: Email, API, FileSystem 
 
@@ -159,13 +152,15 @@ A sample payload in below, need to stringify before post.
 } 
 
 ### Create a new channel using managed flow example 
-1. In the navigation panel, go to Setup system > Manage channels. 
-2. On the action pane, select New. Give the name, description, keep Use manage flow as Yes and selecting the correct ‘Flow template’. Click the button “Save”. The new channel page will display. 
-3. It will take some time to create the flow behind the scenes.  
- - If flow is successful generated and activated, the manage flow will turn on the status toggle.  
- - If flow is generated but not activated, admin can click the Edit button to navigate the flow to do the setup.  
+1. In the navigation panel, go **Manage channels**. 
+2. On the action pane, select **New**. 
+3. Fill in the **Name**, **Description**, **Use manage flow** is **Yes** and select a **low template**. 
+4. Click **Save**. The new channel page will display. 
+5. It will take some time to create the flownes.  
+ - If the flow is successful generated and activated, the **Manage flow** status will be **On**.  
+ - If the flow is generated but not activated, administrators can click **Edit** to setup the flow.  
 
 ### Security 
 
-AP admin with assigned Environment maker is allowed to create the channels.  
+AP admin with assigned Environment maker is allowed to create channels.  
 
