@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 01/05/2023
+ms.date: 04/05/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
