@@ -35,6 +35,9 @@ The Dynamics 365 Payment Connector for Apple Pay connector reference is used in 
 
 An Apple merchant account is required to use Apple Pay with Adyen in Commerce. For information about how to set up Apple Pay in your test customer area, see [Apple Pay Drop-in integration](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#set-up-apple-pay). For information about what to do when you're ready to go live in your production environment, see [Going live](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live).
 
+>[!IMPORTANT]
+>If using the same Merchant Account with Adyen to configure Apple Pay as you use for the main Adyen Credit Card iFrame, when configuring the **Dynamics 365 Payment Connector for Adyen** connector option, be sure to include the Apple Pay payment method name as configured in your Adyen merchant account in the Connector's **Omitted payment methods** field. Any other payment method names you do not wish to show can be included in this field using semi-colon separation (example: 'applepay;googlepay'). Without this omission, the main Adyen credit card iFrame on the checkout page may attempt to load the Apple Pay button and fail due to security of the iFrame. Follow setup steps below to configure the main Apple Pay Connector and payment button outside of the main Adyen credit card iFrame.
+
 The Apple Pay payment method must also be integrated with your Adyen account. Adyen can help you set up the payment method and can also help ensure that the domains that you'll use the certificate for are assigned for use with the certificate.
 
 To enable the enhanced wallet feature flag in Commerce headquarters, go to **Workspaces \> Feature management**, and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
