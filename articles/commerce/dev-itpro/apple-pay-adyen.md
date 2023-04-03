@@ -127,11 +127,44 @@ Settings for the **Apple Pay** module are built into the module and connect with
 
 The Commerce module library includes the Apple Pay module in the sample packaging, and there are references to the Apple Pay module in the default themes included with the Commerce sample sites. If you use Apple Pay and maintain your own theme set, to ensure your theme applies to the Apple Pay module you must include a **checkout-apple-pay.scss** style for your theme.
 
+### Use the payment express module with Apple Pay
+
+The Commerce payment express module works with supporting payment methods to give site customers the option to check out faster by using their payment service account information during the checkout process. The payment express module references the configured connector button for Apple Pay in the checkout or cart pages.
+
+#### Setting up Apple Pay in the Checkout Page Payment Express Module
+To set up the Checkout page Payment Express section with Apple Pay for the online store, follow these steps.
+
+1. In site builder, go to **Fragments**.
+2. Select the **Checkout** fragment.
+3. Expand the module outline and in the checkout module, expand the **Checkout express payment container**.
+4. Using the elipses action button on the **Checkout express payment container**, select **Add module**.
+5. Choose the **Apple Pay** module and click **OK**.
+6. The Apple Pay Express module will be added already pre-configured to the **Dynamics 365 Payment Connector for Adyen** connector set up earlier in the **Payment accounts** FastTab of the online store in Headquarters. 
+7. In the Properties section of the Apple Pay module in Site Builder, you can select the **Request shipping address** property to have the connector return the shipping address from the Apple Pay wallet at checkout.
+8. Select **Save** to save your changes, and then select **Finish editing**.
+9. Select **Publish** to publish the page.
+
+#### Setting up Apple Pay in the Cart Page Payment Express Module
+To add Apple Pay to the Cart page payment express section, follow these steps.
+
+1. In site builder, go to **Pages**, and then select your site's cart page.
+2. Select **Edit**.
+3. In the outline view, expand the **Main slot** in the tree view, and find the container that contains the **Cart** module.
+4. In the **Cart** module, select the **Payment express** module slot. 
+5. Using the elipses action button on the **Payment express** slot, select **Add module**.
+6. Choose the **Apple Pay** module and click **OK**.
+7. The Apple Pay Express module will be added already pre-configured to the **Dynamics 365 Payment Connector for Adyen** connector set up earlier in the **Payment accounts** FastTab of the online store in Headquarters.
+8. In the Properties section of the Apple Pay module in Site Builder, you can select the **Request shipping address** property to have the connector return the shipping address from the Apple Pay wallet at checkout.
+8. Select **Save** to save your changes, and then select **Finish editing**.
+9. Select **Publish** to publish the page.
+
 ### Apple Pay payment behavior
 
 The **Apple Pay** payment button is shown only on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). If a user isn't using one of these devices, the **Apple Pay** payment button is hidden from view.
 
 When a user selects the **Apple Pay** payment button, an **Apple Pay** dialog box appears. There, the user can authenticate against their Apple Pay device or browser. The **Apple Pay** dialog box shows a summary of the order amount and the payment method that the user has configured against their Apple Wallet. The user can review these details and then select **Pay** to complete the payment. After the payment is completed, the user is directed to the **Order Complete** site page that shows a detailed order summary for the completed transaction.
+
+As of 10.0.34, Apple Pay Express payments are included to allow shoppers the ability to checkout directly from the Apple Pay payment window. Shoppers using supported Apple Pay devices will be able to select the Apple Pay button from an Express Pay section of the site. The Apple Pay window will authenticate the Apple account holder and allow the shopper to select the payment card or method on their Apple Pay account, their contact information including email and phone number, their shipping address, and choose the method of shipping. Upon paying, Apple Pay will then re-autheticate against the account holder and place the payment. The order is then placed, and the online shopper is directed to the Order Completion page to view their order summary on the Commerce site. This functionality allows the user to bypass the need to manually fill out the checkout form, resulting in a faster checkout experience. 
 
 ## Configure Commerce POS for Apple Pay
 
