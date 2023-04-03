@@ -139,10 +139,12 @@ Channel type decides whether it’s for interactive or silent scenarios.
 Output parameters 
 
 |Parameter name |type|Is required   |Description| 
+|-------------|------|-----------|--------------|
 |vis_ExternalDocumentReceiver_Data_Out |string |    |Succeeded file Id in Received files (vis_externaldocumentinfo) |
 
 Channel Info 
 |Parameter name |type |Is required |Description| 
+|-------------|------|-----------|--------------|
 |ChannelId |string |X  |The identifier of the channel that needs to be bound. |
 |SendFrom |string|     |Additional information to track sender. |
 
