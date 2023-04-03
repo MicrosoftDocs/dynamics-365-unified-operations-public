@@ -20,7 +20,7 @@ This article provides answers to frequently asked questions about Proactive Qual
 
 ### How are the maintenance windows handled for customers that have one finance and operations apps instance but are active in multiple time zones?
 
-There are no special schedules outside of the current supported maintenance windows where a finance and operations apps instance exists because we plan to roll out PQUs in a minimally disruptive manner with near [Zero Downtime (nZDT](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean)).
+There are no special schedules outside of the current supported maintenance windows where a finance and operations apps instance exists because we plan to roll out PQUs in a minimally disruptive manner with near [Zero Downtime (nZDT](/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
 
 ### Can customers delay, reschedule, or pause a PQU?
 
@@ -70,7 +70,7 @@ If there's a conflict with a pre-scheduled action, for example a Point In Time R
 
 ### Can an environment be brought back to its previous state if there are issues after a PQU is applied?
 
-As with any other code promotions, rollbacks can't be performed after a PQU is applied. For more information on how flighting can help mitigate an issue, see the [What are some of the investments Microsoft is making to enable safe deployments of PQUs](quality-updates.md#What-are-some-of-the-investments-Microsoft-is-making-to-enable-safe-deployments-of-PQUs).
+As with any other code promotions, rollbacks can't be performed after a PQU is applied. For more information on how flighting can help mitigate an issue, see the [What are some of the investments Microsoft is making to enable safe deployments of PQUs](quality-updates.md#what-are-some-of-the-investments-microsoft-is-making-to-enable-safe-deployments-of-pqus).
 
 ### What is the guidance for customers with U.S. Food and Drug Administration (FDA) and Good Practice Quality (GxP) regulatory requirements?
 
