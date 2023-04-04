@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization results might differ from results from the deprecated master planning engine. The differences can be caused by pending features. This article lists features that Planning Optimization doesn't yet support and that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page].
+Planning Optimization results might differ from results from the deprecated master planning engine. The differences can be caused by pending features. This article lists features that Planning Optimization doesn't yet support and that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
 
 | Feature | Current behavior in Planning Optimization |
 |---|---|
@@ -40,6 +40,17 @@ Planning Optimization results might differ from results from the deprecated mast
 | Copy static to dynamic plan | Planning Optimization doesn't copy static plans to dynamic plans, regardless of the setting on the **Master planning parameters** page. In general, this operation is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. |
 | Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days see [Delay tolerance (negative days)](delay-tolerance.md) |
 | Planned orders in the past | Planning Optimization never plans orders in the past, regardless of the **Requested date** setting. If you do set a **Requested date** that's in the past, the system will keep your setting, but will set the **Required date** to *Today*. |
+
+## Differences in safety stock
+
+<!-- KFM: Intro is needed, including a reason why this table is separate from the other one. -->
+
+<!-- KFM: It would be better if we could just add this info to the existing table. Can we do that somehow? The existing table mentions safety stock several times. How does this info combine with that info? If we keep this table, can we move that info here? The above table has two rows called "Safety stock fulfillment", are these redundant? -->
+
+| <!-- KFM: Column title needed --> | Planning optimization | Deprecated master planning engine |
+|---|---|---|
+| Meaning of safety stock | <p>Safety stock ensures that the accumulated on-hand inventory is always above the minimum value defined in the item coverage for each item.</p><p>Safety stock is not actual demand.</p><p>Demand is prioritized over the safety stock.</p> | <p>Safety stock is a demand just like other types of demand.</p><p>You can choose when safety stock would be fulfilled and <!-- KFM: Incomplete sentence. What do we want to say here? --> |
+| When safety stock is fulfilled | Always on *\[Today's date\] &plus; \[Procurement time\]*, regardless of the setting on item coverage | On the **Item coverage** page for an item, on the **General** tab, the **Fulfill minimum** setting defines when the safety stock must be fulfilled. The options are: *Today's date*, *Today's date + procurement time*, *First issue*, and *Coverage time fence*. |
 
 ## Additional resources
 
