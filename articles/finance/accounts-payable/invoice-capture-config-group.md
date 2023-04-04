@@ -4,7 +4,7 @@
 title: Invoice capture solution configuration groups
 description: This article provides general information about configuration groups in the Invoice capture solution.
 author: sunfzam
-ms.date: 09/28/2022
+ms.date: 04/4/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -34,42 +34,66 @@ ms.dyn365.ops.version:
 
 Users can manage the list of invoice fields and the manual review setting for legal entities by using configuration groups. Users can set up invoice configurations for different legal entities in groups. All the legal entities in the same configuration group use the same invoice fields and manual review setting.
 
+## What is a configuration group
+
+After an invoice is successfully recognized and captured in Dataverse, we need to apply different derivation and mapping logic to determine which vendor the invoice came from and which legal entity it was sent to. Invoices from different vendors have different styles, resolutions, and contexts, and the type of invoice may vary: 
+ - A PO invoice associated with purchase orders. 
+ - An expense invoice which is unrelated to a purchase order. 
+
+These factors will influence: 
+ - Message types in different confidence score thresholds, under what conditions manual intervention is required. 
+ - Acceptable types of invoices and fields that need to be displayed based on each type.
+
+## Default configuration group 
+
+After deployment, a **Default configuration** group is created. This **Default configuration** group can't be changed or deleted. 
+
+Administrators can assign different configuration groups on the vendor level, legal entity level and system level. 
+After a vendor account and legal entity are determined, the system will check if a configuration group is assigned at the vendor account level. If no configuration group is found, the legal entity will be checked for an assigned configuration group. If there no configuration group assigned at either level, the configuration group specified in **System preference** will be used to display the invoice. 
+
+
 ## Manage configuration groups
 
 To manage configuration groups by using the app, go to **Setup**, and then select **System setup \> Define configuration groups component**.
 
-On the **Define configuration groups** page, the main tab shows the list of configuration groups that have been defined. It also shows a default configuration group. For each configuration group, the following actions are available:
+To create a new configuration group, select the **Copy a configuration group** option. You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all the fields except **Group name** and **Group description**. After the configuration group is duplicated, select **OK**.
 
-- **Copy a configuration group** – You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all the fields except **Group name** and **Group description**. After the configuration group is duplicated, select **OK**.
-- **Delete configuration groups** – To delete a configuration group, select it, and then select **Delete**.
+Configuration groups provides settings for:
 
-    > [!NOTE]
-    > The default configuration group can't be deleted.
+### Define confidence score of invoice recognition  
 
-- **Edit a configuration group's ID** – To edit the ID of a configuration group, select the **Group ID** field, and update the value. The group ID should not contain spaces or special characters, and it should not exceed 20 characters.
+Defines the quality standard for invoice data to be recognized by AI Builder. When the recognition is finished, structured invoice data and the corresponding confidence score for each field on the invoice are sent to AI builder. You can configure the confidence scores to indicate differences in the severity of the detected errors. 
 
-    > [!NOTE]
-    > The value of the **Group ID** field can be updated only once.
+### Define mandatory review needed before invoice creation:  
 
-- **Edit a configuration group's description** – To edit the description of a configuration group, select the **Description** field, and update the value.
-- **Change the manual review setting** – Users can decide whether an invoice must be manually reviewed. To change the manual review setting, select the **Need manual review** option. The following options are available:
+Determines if a manual review is needed for each recognized invoice based on the severity of the issues (warnings or errors).  
 
-    - **Always manual review** – Select this option if invoices in the configuration group always require manual review.
-    - **For errors and warnings** – Select this option if invoices that contain error messages or warning messages require manual review.
-    - **For errors** – Select this option if invoices that contain error messages require manual review.
+### Supported invoice types 
 
-- **Change the confidence score setting** – The confidence score is metadata that the Invoice capture solution provides to report the accuracy of recognized invoice data. The higher the score is, the more accurate the recognized data might be. The configuration lets users define when manual review is required, based on the confidence score. Users can change the confidence score threshold for invoices. To update the confidence score setting, select the **Confidence score** field, and update the value.
+In Invoice capture, there are different invoice types for incoming invoices. The invoice type determines: 
+ - The validation logic to ensure the completeness and correctness of invoices in Invoice capture. 
+ - The invoice fields (on Header or lines) to be displayed in the side-by-side viewer. 
+ - Together with the setting in Dynamics 365 Finance to decide which data entity API in recipient side will be called (using pending vendor invoice or invoice journal).  
+### Supported invoice types
+There are three types of invoice types supported in Invoice capture: 
+ - PO invoice - invoices that are associated with purchase orders and the purchase order details have to be decided on each invoice line. Both header and lines are required to be reviewed in Invoice capture. 
+ - Header-only - invoices are associated with purchase orders. The purchase order is mandatory on the invoice header and has to be correctly assigned. The invoice lines will be automatically created from the purchase order in Dynamics 365 Finance by enabling the **Automatically create invoice lines** feature. After this feature is enable, AP clerks won't need to review the line details in Invoice capture. In addition, the line details won’t be displayed in the side-by-side viewer. 
+ - Cost invoice - invoices contain non-stock items which could be either service items or procurement category items. 
 
-    There are two alert types for confidence scores:
+If it is clear what the invoice type should be supported for the invoices that are sent from vendors, AP admin can create a configuration group and select the invoice type for the supported invoice type. Then assign the configuration group to the vendor level. This increases the touchless rate of invoice processing in Invoice capture. 
 
-    - **Warning** – Invoice fields that have confidence scores over the warning threshold are considered correct. The warning threshold must be more than the error threshold and less than 100.
-    - **Error** – Invoice fields that have confidence scores under the error threshold are considered failed. Error messages will be shown to the user. The error threshold must be more than 0 (zero) and less than the warning threshold. Warning messages will be shown for invoice fields that have confidence scores between the warning threshold and the error threshold.
+### Define the control of invoice fields 
 
-- **Manage invoice fields** – Users can manage the list of invoice fields that is shown in the side-by-side viewer. On the **Invoice field management** tab, select the gear symbol, select the invoice fields to add, and then select **Save**. The selected fields will be added to the list. To remove an invoice field from the list, select **Remove** on the field.
+For each invoice type, admin can define different fields to be displayed by default in the side-by-side view. AP Admin can add or remove the default fields and set a field as mandatory.  
+
+### Security 
+
+AP admin is can access the Manage configuration groups.  
 
 ### Manage file filters (optional)
 
-Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files** list, but they will show file validation errors. This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. Users can review the incoming files and decide whether each file is a non-valid invoice, and they can obsolete the file or manually include it for recognition and inclusion in captured invoices.
+Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files(Pending)** list. These fields are shown as **Cancelled** and will not be processed by recognitive service unless AP clerks include them manually. 
+This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. 
 
 When the Invoice capture solution is installed, a default file filter is defined. This file filter is global. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
 
@@ -90,3 +114,10 @@ The following file types are currently supported:
 - JPEG
 - TIF
 - TIFF
+
+#### Supported file names 
+
+AP admin can filter out files that aren't invoices by using file name rules. Different rules can be applied to only accept files when the name contains predefined strings or exclude files that contain the defined strings.
+ 
+#### Security 
+AP admin can access the **Manage file filters**.  
