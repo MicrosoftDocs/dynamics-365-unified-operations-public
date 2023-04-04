@@ -1,8 +1,8 @@
 ---
-title: Fix common posting issues by editing transactions using edit and audit capability
-description: This article provides the steps required to fix the common statement posting issues that required editing the transactions.
+title: Fix common posting issues by editing transactions using edit and audit capabilities
+description: This article provides troubleshooting guidance to fix common statement posting issues that require editing transactions in Microsoft Dynamics 365 Commerce.
 author: Shajain
-ms.date: 03/27/2023
+ms.date: 04/04/2023
 ms.topic: Troubleshooting
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -13,47 +13,51 @@ ms.search.form: RetailStatementTable_SOCreateFailed, RetailStatementTable_Invoic
 
 ---
 
-# Fix common posting issues by editing transactions using edit and audit capability
+# Fix common posting issues by editing transactions using edit and audit capabilities
 Error code: SYS103633, SYS328431
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides the steps required to fix the common statement posting issues that required editing the transactions.
+This article provides troubleshooting guidance to fix common statement posting issues that require editing transactions in Microsoft Dynamics 365 Commerce.
 
 ## Description
 
-Sometimes the statement posting fails because the data in one or more transactions needs to be  corrected before posting can proceed. Some of the scenarios where such data correction is needed are as following:
-1. The fiscal period mapping to the current transaction has been closed and hence the transactions can't be posted
-2. The transactions are created without a required field e.g. warehouse, batch number etc.
+Sometimes statement posting fails because the data in one or more transactions must be corrected before posting can proceed. Some of the scenarios where such data correction is needed are:
+- The fiscal period mapping to the current transaction has been closed, so the transactions can't be posted.
+- The transactions are created without values for required fields (for example, warehouse or batch number field values).
 
-The data correction is done by editing the necessary transactions and the steps required to edit the transactions vary based on the stage of statement posting where that issue occurs. This guide firstly lists down the generic steps required to edit a transaction depending on the various stage of statement posting, followed by the common errors that occur during that stage and specific steps required to fix the issue.
+The data is corrected by editing the necessary transactions, and the steps required to edit the transactions vary based on which stage of the statement posting that an issue occurs. This article first lists the generic steps required to edit a transaction depending on the stage of statement posting, and then lists common errors that occur during the stages with the specific steps required to fix each issue.
 
-> [Note]
-> The link [Edit cash and carry transactions](../edit-cash-trans.md) provides the basic details on the structure of the excel file that gets downloaded while editing the transactions.
+> [NOTE]
+> For information on the structure of the Excel files that are downloaded when editing transactions, see [Edit cash and carry transactions](../edit-cash-trans.md).
 
-## Issues during statement calculation
+### Issues during statement calculation
 
-This is a prerequisite step of the statement posting process. The most common error during this stage is the transaction validation failure as the system shows a warning that some of the transactions couldn't be included in the statement because they failed validation.
+Statement calculation is a prerequisite step of the statement posting process. The most common error that occurs during this stage is a transaction validation failure, where the system display a warning message that some of the transactions couldn't be included in the statement because they failed validation.
 
-### Transaction validation failed
+#### Transaction validation failed
 
-If the Trickle feed feature has been enabled, then is required that the transactions are validated before they can be included in a statement. This is usually done via running the "Validate store transactions" batch job. Some transactions might fail during validation. Follow the below steps to resolve the issue.
+If the trickle feed feature is enabled, it is required that transactions are validated before they can be included in a statement. This validation is usually done by running the **Validate store transactions** batch job. If transaction validation fails, follow these steps in Commerce headquarters to resolve the issue.
 
-1. Navigate to **Store financials** workspace and open the **Cash and carry validation failures** view. Refer the below image ![Transaction validation errors](../media/Transaction_validation_errors.png)
-2. Select the transaction and click on **Validation errors** to identify the error. Refer the below image ![View validation errors](../media/View_validation_errors.png)
-3. Click on office icon on top right and select **Edit selected transaction**. Refer the below image ![Edit transaction](../media/Edit_transaction.png)
-4. Download the file
-5. Once the file is downloaded, enable editing on the file and sign in
-6. Identify the correct entity and field that needs to be modified. If the field you're looking for is missing, then please get it in excel as described here [Add more fields to excel](../add-fields-excel.md)
-7. Change the value of fields and selec **Publish** on the Excel spreadsheet. Refer the below image ![Publish changes](../media/Publish.png)
-8. Run **Validate Store Transactions** again. This ensures that system tries to validate the edited transaction.
-9. If the transaction gets validated, then you can choose to continue posting the statement without the newly validated transaction as it will be included in the next statement posting or you can use the **Clear statement** button under the **Functions** group of the current statement to free the transactions that were marked with the current statement and create a new statement.
+1. Go to the **Store financials** workspace and open the **Cash and carry validation failures** view. 
+    ![Transaction validation errors](../media/Transaction_validation_errors.png)
+1. Select the transaction, and then select **Validation errors** to identify the error.
+    ![View validation errors](../media/View_validation_errors.png)
+1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit selected transaction**. 
+    ![Edit transaction](../media/Edit_transaction.png)
+1. Download the Excel file.
+1. Once the file is downloaded, enable editing on the file and sign in.
+1. Identify the correct entity and field that needs to be modified. If the field you're looking for is missing, to add the field, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
+1. Update the field values as needed, and then select **Publish** on the Excel spreadsheet.
+    ![Publish changes](../media/Publish.png)
+1. Run the **Validate store transactions** job again to validate the edited transaction.
+1. If the transaction gets validated, then you can continue posting the statement without the newly validated transaction since it will be included in the next statement posting, or under the **Functions** group of the current statement, you can select **Clear statement** to free the transactions that were marked with the current statement and create a new statement.
 	
-## Issues during order creation
+### Issues during order creation
 
-One of the steps of statement posting is to create the customer orders by grouping one or more transactions. So, if the statement posting fails before the customer orders are created, then follow the below steps to resolve the issue.
+One of the steps of statement posting is to create customer orders by grouping one or more transactions. If statement posting fails before the customer orders are created, follow these steps in headquarters to resolve the issue.
 
-1. Navigate to failed statement
+1. Navigate to the failed statement.
 2. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. Refer the below image ![Edit the selected transactions](../media/Edit_selected_transactions.png)
 3. Download the file
 4. Once the file is downloaded, enable editing on the file and sign in
@@ -61,8 +65,10 @@ One of the steps of statement posting is to create the customer orders by groupi
 6. Identify the correct entity and field that needs to be modified. If the field you're looking for is missing, then please get it in excel  as described here [Add more fields to excel](../add-fields-excel.md)
 7. Change the value of fields and select **Publish** on the Excel spreadsheet.
 8. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image ![Revalidate transactions](../media/Revalidate_transactions.png)
-9. Press the **Aggregated transactions** button under the **Execution details" group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image ![Aggregated transactions](../media/Aggregated_transactions.png)
+9. Press the **Aggregated transactions** button under the **Execution details** group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image ![Aggregated transactions](../media/Aggregated_transactions.png)
 10. Post the statement
+
+#### Common issues that occur during order creation
 
 Some of the common issues that occur during order creation are as following:
 
