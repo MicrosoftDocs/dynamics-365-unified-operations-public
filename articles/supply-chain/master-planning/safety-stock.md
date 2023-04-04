@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 # Safety stock
 
+<!-- KFM: The document suggested putting this under "Configuration" in the TOC. But we also have a section called "Safety stock"; should we actually put it under there? -->
+
 <!-- KFM: We already have a topic about safety stock: [Safety stock fulfillment for items](safety-stock-replenishment.md). Should we combine this info with that? That topic probably also needs to be updated to reflect Planning Optimization instead of "classic". -->
 
 Safety stock is an item quantity held in the inventory for the purpose of reducing the risk that the item will run out of stock. Safety stock is used when demand coming from sales orders is greater than planned for final goods and/or when a supplier is unable to deliver additional units in the expected time.
@@ -33,6 +35,8 @@ To define safety stock for an item at a specific location, follow these steps:
 1. While on the **Overview** tab, select **New** from the Action Pane to add a new line to the grid.
 1. For the new line, specify the relevant product dimensions (**Site**, **Warehouse**, and other dimensions as needed (such as color or style)).
 1. Enter the safety stock value in the **Minimum** column. The master planning engine will always generate planned orders to prevent the accumulated inventory level from falling below this limit.
+
+<!-- KFM: It seems like the **Fulfill minimum** setting on the **General** tab does nothing when using PO. Maybe we should say so here. -->
 
 ## Example of safety stock
 
