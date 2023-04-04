@@ -3,8 +3,8 @@
 
 title: Commerce Chat with Power Virtual Agents module
 description: This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
-author: gvrmohanreddy
-ms.date: 10/18/2022
+author: josaw1
+ms.date: 04/04/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -29,7 +29,7 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 - Increase overall customer satisfaction, and therefore increase sales.
 
 > [!NOTE]
-> To learn about the differences between the Dynamics 365 Omnichannel for Customer Service and Power Virtual Agents applications, see [Commerce chat modules overview](/commerce-chat-modules-overview.md).
+> To learn about the differences between the Dynamics 365 Omnichannel for Customer Service and Power Virtual Agents applications, see [Commerce chat modules overview](commerce-chat-modules-overview.md).
 
 ## <a id="prereq"></a>Prerequisites for using Power Virtual Agents
 
@@ -37,23 +37,32 @@ To use the Commerce Chat with Power Virtual Agents feature, you must first creat
 
 After you configure the chatbot, you must copy the values of **Bot ID** and **Tenant ID** chatbot parameters to configure the Commerce chat experience.
 
-### Find Bot ID
-1. In the navigation menu, under **Settings** tab, choose **Channels**
-2. Click **Mobile app**
-3. Copy the **Token Endpoint**. The endpoint URL is like https://environment-id.04.environment.api.powerplatform.com/powervirtualagents/bots/bot-id/directline/token?api-version=2022-03-01-preview. The Bot ID is a GUID between **/bots/** and **/directline/** in the URL.
+### Find the bot ID of a Power Virtual Agent
 
-![Find Bot ID of Power Virtual Agent.](media/chat-module-pva-botid.png)
+To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app, follow these steps.
 
-### Find Tenant ID
-1. In the navigation menu, under **Settings** tab, choose **Details**
-2. Choose **Advanced**
-3. Copy the **Tenant ID**
+1. In the left navigation menu, select **Settings \> Channels**.
+1. Select **Mobile app**.
+1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL value (for example, `https://environment-id.04.environment.api.powerplatform.com/powervirtualagents/bots/<bot ID GUID>/directline/token?api-version=2022-03-01-preview`). The bot ID is the GUID between **/bots/** and **/directline/** in the token endpoint URL.
 
-![Find Tenant ID of Power Virtual Agent.](media/chat-module-pva-tenantid.png)
+<!--![Find bot ID of a Power Virtual Agent](media/chat-module-pva-botid.png)-->
+:::image type="content" source="media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
 
-Please note that "Bot app ID" is not "Bot ID".
+> [!NOTE]
+> The bot ID differs from the bot app ID.
 
-For more information about how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
+### Find the tenant ID of a Power Virtual Agent
+
+To find the tenant ID of a Power Virtual Agent in the Power Virtual Agents web app, follow these steps.
+
+1. In the left navigation menu, select **Settings \> Details**.
+1. Select **Advanced**.
+1. Select the copy symbol to copy the **Tenant ID** value.
+
+<!-- ![Find tenant ID of a Power Virtual Agent](media/chat-module-pva-tenantid.png)-->
+:::image type="content" source="media/chat-module-pva-tenantid.png" alt-text="Find tenant ID of a Power Virtual Agent":::
+
+For more information on how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
 
 ## Configure your e-commerce site 
 
