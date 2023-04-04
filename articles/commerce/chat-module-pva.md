@@ -33,7 +33,7 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 
 ## <a id="prereq"></a>Prerequisites for using Power Virtual Agents
 
-To use the Commerce Chat with Power Virtual Agents feature, you must first create a Power Virtual Agents chatbot for your e-commerce website. For instructions, see [Create a power virtual agent bot](/power-virtual-agents/authoring-first-bot).
+To use the Commerce Chat with Power Virtual Agents feature, you must first create a Power Virtual Agents chatbot for your e-commerce website. For instructions, see [Create and delete Power Virtual Agents bots](/power-virtual-agents/authoring-first-bot).
 
 After you configure the chatbot, follow the procedures below to obtain the bot ID and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
 
