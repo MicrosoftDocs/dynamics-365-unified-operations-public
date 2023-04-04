@@ -31,6 +31,8 @@ The data is corrected by editing the necessary transactions, and the steps requi
 > [NOTE]
 > For information on the structure of the Excel files that are downloaded when editing transactions, see [Edit cash and carry transactions](../edit-cash-trans.md).
 
+## Resolutions
+
 ### Issues during statement calculation
 
 Statement calculation is a prerequisite step of the statement posting process. The most common error that occurs during this stage is a transaction validation failure, where the system display a warning message that some of the transactions couldn't be included in the statement because they failed validation.
@@ -45,8 +47,7 @@ If the trickle feed feature is enabled, it is required that transactions are val
     ![View validation errors](../media/View_validation_errors.png)
 1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit selected transaction**. 
     ![Edit transaction](../media/Edit_transaction.png)
-1. Download the Excel file.
-1. Once the file is downloaded, enable editing on the file and sign in.
+1. Once the Excel file is downloaded, enable editing on the file and sign in.
 1. Identify the correct entity and field that needs to be modified. If the field you're looking for is missing, to add the field, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
 1. Update the field values as needed, and then select **Publish** on the Excel spreadsheet.
     ![Publish changes](../media/Publish.png)
@@ -57,16 +58,19 @@ If the trickle feed feature is enabled, it is required that transactions are val
 
 One of the steps of statement posting is to create customer orders by grouping one or more transactions. If statement posting fails before the customer orders are created, follow these steps in headquarters to resolve the issue.
 
-1. Navigate to the failed statement.
-2. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. Refer the below image ![Edit the selected transactions](../media/Edit_selected_transactions.png)
-3. Download the file
-4. Once the file is downloaded, enable editing on the file and sign in
-5. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction. Refer the below image ![Change the validation status](../media/Change_validation_status.png)
-6. Identify the correct entity and field that needs to be modified. If the field you're looking for is missing, then please get it in excel  as described here [Add more fields to excel](../add-fields-excel.md)
-7. Change the value of fields and select **Publish** on the Excel spreadsheet.
-8. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image ![Revalidate transactions](../media/Revalidate_transactions.png)
-9. Press the **Aggregated transactions** button under the **Execution details** group and then click on **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This is a required step to ensure that the statement uses the edited transaction values to regenerate the aggregated values. Refer the below image ![Aggregated transactions](../media/Aggregated_transactions.png)
-10. Post the statement
+1. Go to the failed statement.
+1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit cash and carry transactions**. This automatically pulls in all the cash and carry transactions that are a part of the current statement.
+    ![Edit the selected transactions](../media/Edit_selected_transactions.png)
+1. Once the Excel file is downloaded, enable editing on the file and sign in.
+1. In the Excel file, change the **Validation status** of transaction you need to fix to **None** or **Error**. This is a required step before making any changes to the transaction. 
+    ![Change the validation status](../media/Change_validation_status.png)
+1. Identify the correct entity and field that you need to modify. If the field you're looking for is missing, to add the field, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
+1. Update the field values as needed, and then select **Publish** on the Excel spreadsheet.
+1. On the **Statement** form, under **Function**, select **Revalidate transactions**. 
+    ![Revalidate transactions](../media/Revalidate_transactions.png)
+1. Under the **Execution details**, select **Aggregated transactions**, and then select **Re-generate aggregation data** to clear the aggregations that were generated using the old values of the transaction. This step is required to ensure that the statement uses the edited transaction values to regenerate the aggregated values. 
+    ![Aggregated transactions](../media/Aggregated_transactions.png)
+1. Post the statement.
 
 #### Common issues that occur during order creation
 
