@@ -72,7 +72,7 @@ One of the steps of statement posting is to create customer orders by grouping o
     ![Aggregated transactions](../media/Aggregated_transactions.png)
 1. Post the statement.
 
-#### Common issues that occur during order creation
+#### Common errors that occur during order creation
 
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Inventory dimension Site is mandatory and must consequently be specified.**
 	
@@ -103,7 +103,7 @@ After customer orders are created, the next statement posting step is to attempt
 1. On the **Statement** form, under **Function**, select **Revalidate transactions**. 
 1. Post the statement.
 
-#### Common issues that occur during order invoicing
+#### Common errors that occur during order invoicing
 
 **While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Voucher [XXXXX] Period for [XXXXX] does not exist. Posting Posting Sales order: XXXX Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 
