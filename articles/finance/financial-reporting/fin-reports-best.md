@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides tips and best practices for optimizing financial reports in Microsoft Dynamics 365 Finance. It provides tips and best practices for optimizing financial reports based on customer feedback and common issues encountered. 
+This article provides tips and best practices for optimizing financial reports in Microsoft Dynamics 365 Finance based on customer feedback and common issues encountered. 
 
 ## Introduction
 The goal is to help users enhance report design, performance, and maintainability. The financial reporting report engine, like any other processing engine, is optimized for certain patterns of design. Adjusting the report design based on the general design guidelines allows the report engine to yield its best performance.
