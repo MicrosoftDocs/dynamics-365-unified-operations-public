@@ -40,7 +40,7 @@ Customers receive supplier invoices from different external sources. To collect 
 
 When invoices are sent via predefined channels, they are captured and displayed on **Received files** page. 
 
-## Default channel for file upload: 
+## Default channel for file upload
 
 In invoice capture, a default channel is used to upload the invoice in Invoice capture and can be reviewed on the **Received files** page. New channels can be created to replace the default channel on the **System preference** page. 
 
@@ -106,7 +106,7 @@ Solution - Error messages display **Fix it** in the message bar to assist admi
 
 ### Use managed flow option  
 
-The **Use managed flow** option should only be used by professional users, the document receive API should be integrated manually. The channel ID will need to be filled in the API payload. Channel ID can be found in the URL after it is saved.  
+The **Use managed flow** option on the **Channel** page should only be used by professional users, the document receive API should be integrated manually. The channel ID will need to be filled in the API payload. Channel ID can be found in the URL after it is saved.  
 
 When calling the “vis_ExternalDocumentReceiver” API without a valid channel ID, the system will treat it as an invalid call. The invoice file can't be captured and will be displayed in the **Received files** page. 
 
@@ -142,15 +142,10 @@ Channel Info
 |ChannelId |string |X  |The identifier of the channel that needs to be bound. |
 |SendFrom |string|     |Additional information to track sender. |
 
-A sample payload in below, need to stringify before post. 
+A sample payload is below: 
 
-{ 
-
-    "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
-
-    "SendFrom": "xxxx.xxx@contoso.com" 
-
-} 
+{ "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
+    "SendFrom": "xxxx.xxx@contoso.com" } 
 
 ### Create a new channel using managed flow example 
 1. In the navigation panel, go **Manage channels**. 
