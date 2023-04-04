@@ -9,7 +9,7 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2022-09-07
 
 ---
@@ -29,7 +29,7 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 - Increase overall customer satisfaction, and therefore increase sales.
 
 > [!NOTE]
-> To learn about the differences between the Dynamics 365 Omnichannel for Customer Service and Power Virtual Agents applications, see [Commerce chat modules overview](commerce-chat-modules-overview.md).
+> To learn about the differences between the Dynamics 365 Omnichannel for Customer Service and Power Virtual Agents applications, see [Commerce chat features overview](commerce-chat-overview.md).
 
 ## <a id="prereq"></a>Prerequisites for using Power Virtual Agents
 
@@ -45,7 +45,6 @@ To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app,
 1. Select **Mobile app**.
 1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL value (for example, `https://environment-id.04.environment.api.powerplatform.com/powervirtualagents/bots/<bot ID GUID>/directline/token?api-version=2022-03-01-preview`). The bot ID is the GUID between **/bots/** and **/directline/** in the token endpoint URL.
 
-<!--![Find bot ID of a Power Virtual Agent](media/chat-module-pva-botid.png)-->
 :::image type="content" source="media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
 
 > [!NOTE]
@@ -59,7 +58,6 @@ To find the tenant ID of a Power Virtual Agent in the Power Virtual Agents web a
 1. Select **Advanced**.
 1. Select the copy symbol to copy the **Tenant ID** value.
 
-<!-- ![Find tenant ID of a Power Virtual Agent](media/chat-module-pva-tenantid.png)-->
 :::image type="content" source="media/chat-module-pva-tenantid.png" alt-text="Find tenant ID of a Power Virtual Agent":::
 
 For more information on how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
