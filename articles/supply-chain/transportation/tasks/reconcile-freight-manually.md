@@ -31,23 +31,23 @@ This procedure shows how to reconcile freight manually. This is typically done b
 
 ## Select a load to reconcile
 
-1. Go to **Transportation management > Planning > Load planning workbench**.
-2. Clear the **Hide shipped and received** check box.
+1. Go to **Transportation management \> Planning \> Load planning workbench**.
+2. Clear the **Hide shipped and received** checkbox.
 3. In the list, select the load that has load ID *00006*.
 
 ## Create a carrier invoice
 
-If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.
+If you manually reconcile freight and don't automatically receive carrier invoices, you can create an invoice based on the freight bill.
 
 1. Select **Related information**.
 2. Select **Freight bill details**.
 3. Select **Generate freight bill invoice**.
-4. In the **Invoice** field, type a value.
+4. In the **Invoice** field, enter a value.
 5. Select **OK**.
 
 ## Reconcile the invoice
 
-When you reconcile a carrier invoice and a freight bill, this is done line by line.
+When you reconcile a carrier invoice and a freight bill, the reconciliation is done line by line.
 
 1. Select **Match freight bills and invoices**.
 2. Expand the **Invoice details** section.
@@ -60,9 +60,9 @@ When you reconcile a carrier invoice and a freight bill, this is done line by li
 
 1. Select **Submit for approval**.
 2. Close the page.
-3. Clear the **Hide approved** check box.
+3. Clear the **Hide approved** checkbox.
 4. Select **Vendor invoice journals**.
-5. Select to follow the link in the **Reference journal number** field.
+5. In the **Reference journal number** field, select the link.
 6. Select **Lines**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
