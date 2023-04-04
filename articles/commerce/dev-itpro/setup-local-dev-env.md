@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development. It applies to Dynamics 365 Commerce application version 10.0.22 and later.
+This article explains how to set up a local development environment for the Commerce Scale Unit (CSU) and Point of Sale (POS) development.
 
 > [!IMPORTANT]
 > The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
