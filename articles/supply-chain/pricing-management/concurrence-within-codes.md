@@ -16,7 +16,6 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 Concurrency rules let you establish what happens when multiple pricing rules apply to the same order and/or order line. You can set up concurrency rules to control whether the customer should receive just one of the matching rules (and which one) or whether they should be combined (and how they should be combined). There are two types of concurrency:
@@ -30,7 +29,7 @@ This article explains how to manage *within-price-component-code concurrency*. F
 
 The following types of within-price-component-code concurrency mode are available (depending on price component code type):
 
-- **Exclusive** – The pricing rule can't be combined with other rules associated with the same price component code. If more than one of these rules is set up as exclusive, the price engine will apply the rule with the highest discount. <!--KFM: If there are both exclusive and non-exclusive discounts, does the exclusive always win even if a non-exclusive has a higher discount, in which case might multiple non-exclusive discounts then apply? -->
+- **Exclusive** – The pricing rule can't be combined with other rules associated with the same price component code. If more than one of these rules is set up as exclusive, the price engine will apply the rule with the highest discount.
 - **Best price** – Pricing rules of this concurrency mode will compete for the highest discount (lowest price).
 - **Compounded** – All applicable pricing rules will be combined. You can set the system to make each calculation based on the original price or on a running total of all adjustments so far. The setting is on the **Pricing management parameters** page, as described in [System settings for resolving discount concurrency within a price component code](#parameters).
 - **Always apply** – The pricing rule always applies. This calculation is always applied last within a price component code.
@@ -53,19 +52,17 @@ A few settings on the **Pricing management parameters** page affect the way conc
 1. Open the **Prices and discounts** tab.
 1. Expand the **Discount concurrency control** FastTab.
 1. Choose one of the following options under the **Best price and compound concurrency control model** heading:
-    - *Best price and compound within priority, never compound across priorities* – <!-- KFM: Description needed -->
-    - *Best price only within priority, always compound across priorities* – <!-- KFM: Description needed -->
-    - *Best price and compound within priority, best price and compound across priority* – <!-- KFM: Description needed. Mention that the **Concurrency mode across priority** option in the price structure only has an effect when this option is selected.  -->
+    - *Best price and compound within priority, never compound across priorities*
+    - *Best price only within priority, always compound across priorities*
+    - *Best price and compound within priority, best price and compound across priority*
 1. Choose one of the following options under the **Discount compound behavior** heading.
-    - *Compound* – <!-- KFM: Description needed -->
-    - *Compound on the original price* – <!-- KFM: Description needed -->
-1. Set **Enable competition between exclusive threshold and other periodic discounts** to one of the following values:
-    - *Yes* – Exclusive threshold discounts will compete with the exclusive non-threshold discounts while priority still applies. The best price and compounded threshold discounts behavior will remain unchanged (they won't compete with the non-threshold discounts).
-    - *No* – <!-- KFM: Description needed -->
+    - *Compound*
+    - *Compound on the original price*
+1. Set **Enable competition between exclusive threshold and other periodic discounts** to *Yes* so set exclusive threshold discounts to compete with the exclusive non-threshold discounts while priority still applies. The best price and compounded threshold discounts behavior will remain unchanged (they won't compete with the non-threshold discounts).
 
 ## Discount determination flow
 
-The following flow chart shows how pricing rules, price structure, and concurrency models work together to resolve within-price-component-code concurrency. <!-- KFM: We should provide this information also in text.  -->
+The following flow chart shows how pricing rules, price structure, and concurrency models work together to resolve within-price-component-code concurrency.
 
 [<img src="media/concurrency-flowchart.png" alt="Flowchart for determining within-price-component-code concurrency." title="Flowchart for determining within-price-component-code concurrency" width="600" />](media/concurrency-flowchart.png#lightbox)
 
@@ -73,7 +70,7 @@ The following flow chart shows how pricing rules, price structure, and concurren
 
 Here's an example of how concurrency determination works:
 
-Suppose you have an item *BT023* with an item price of *$1565.00*. The concurrency mode is compounded. <!-- KFM: Where does this concurrency mode come from? -->
+Suppose you have an item *BT023* with an item price of *$1565.00*. The concurrency mode is compounded.
 
 Your system includes the discount pricing rules shown in the following table. The pricing sequence comes from your price structure.
 

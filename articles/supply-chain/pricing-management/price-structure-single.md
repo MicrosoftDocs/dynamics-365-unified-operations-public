@@ -16,7 +16,6 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 This article explains how to configure a company to use a single price structure and how to set up that structure. In this scenario, the pricing engine matches each sales order with the price component codes based on the pricing sequence that is defined in the single structure.

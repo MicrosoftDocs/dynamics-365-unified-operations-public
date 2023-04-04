@@ -32,8 +32,6 @@ The Pricing management module provides *price attributes*, which enable price ma
 
 You define these pricing rules using combinations of price attributes to define the rule criteria.
 
-<!-- KFM: Introduce the following image. What are we showing here? -->
-
 [<img src="media/price-attributes.png" alt="Price attributes." title="Price attributes" width="500" />](media/price-attributes.png#lightbox)
 
 ## Price attributes sources
@@ -45,8 +43,6 @@ Customer groups don't always provide enough control when it comes to setting up 
 Other sales order details (such as the ordering channel, ordering site, ordering campaign, and mode of delivery) can also include pricing conditions.
 
 Pricing management offers three price attribute sources as a foundation for setting up pricing rules and conditions, and it provides out-of-box price attributes for each source. You can build price attribute groups (header or line) and combine them to create price attribute combinations.
-
-<!-- KFM: Introduce the following table. What are we showing here? -->
 
 <table>
 <thead>

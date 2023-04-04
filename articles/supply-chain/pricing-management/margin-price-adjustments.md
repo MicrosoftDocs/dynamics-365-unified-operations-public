@@ -22,7 +22,7 @@ This article describes how to set up and use margin price adjustments.
 
 Pricing management enables you to use *margin price adjustments* to move item prices up or down from the base price. You can set this up by including one or price component codes of type *Margin component price adjustment* in your price structures. Across price component codes, price adjustment are compounded and add up to the total price adjustment.
 
-In scenarios where you build your selling price based on the inventory standard cost or purchased price, it represents the layers of the margin components that add up to those base price. <!-- KFM: This isn't clear. Please revise. -->
+In scenarios where you build your selling price based on the inventory standard cost or purchased price, it represents the layers of the margin components that add up to those base price.
 
 Margin component price adjustments can be associated with many different types of agreements, promotions, and events. They make it easy for you to adjust price without changing the base price.
 

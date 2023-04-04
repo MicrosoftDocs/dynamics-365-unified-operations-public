@@ -16,7 +16,6 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the SKU level. Pricing management allows you to build selling prices using *cost-plus pricing*. When you use cost-plus pricing, you start by building a pricing structure that starts with the base price.
@@ -41,7 +40,7 @@ The cost-plus pricing model works by determining the product cost and then addin
 
 Pricing management derives base prices from one of the following two sources:
 
-- The primary source is the price listed for each product on the **Item base price** page, which you can open by going to **Pricing management \> Pre-sales pricing \> Base price versions**, which lists each base price version that you have created and the dates for which each is valid. Select a version and then select **Price \> Base** price from on the Action Pane to view and edit the prices that apply for that version. <!-- KFM: I think this is what we mean here. Please confirm. More documentation is needed for these pages. -->
+- The primary source is the price listed for each product on the **Item base price** page, which you can open by going to **Pricing management \> Pre-sales pricing \> Base price versions**, which lists each base price version that you have created and the dates for which each is valid. Select a version and then select **Price \> Base** price from on the Action Pane to view and edit the prices that apply for that version.
 - If an item doesn't have an active Item base price, the system will check to see if it has an active cost price in a [costing version](../cost-management/costing-versions.md). A costing version can support a standard cost inventory model for items where the costing version contains a set of standard cost records about the items and their manufacturing processes.
 
 The following tables illustrates the rules for determining the base price.
@@ -85,8 +84,6 @@ So, for example, using this price structure, the price engine might find that it
 - Margin component price adjustment (MAC03) = -$1
 
 Therefore, the selling price for the sales order line is: *8 &plus; 3 &plus; 2 &minus; 1 = 12*.
-
-<!--KFM: I think the point of this example is that we ignore BAS01 because we have an applicable sales trade agreement. If this is right, we should point this out explicitly. -->
 
 ## Next steps
 

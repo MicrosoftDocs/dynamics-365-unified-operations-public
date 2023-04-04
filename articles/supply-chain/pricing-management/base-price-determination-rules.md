@@ -16,12 +16,9 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 This article describes the price determination rules for calculating the sales order base price.
-
-<!-- KFM: Introduce the following table. What does it show? Why isn't unit price affected by discounts? -->
 
 | Terms | Definition, usage, and notes | Price component type |
 |-------------------------|-------------------------|-------------------------|

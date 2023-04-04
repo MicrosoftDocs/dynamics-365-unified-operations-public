@@ -16,17 +16,14 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
-You can check the detailed price breakdown including the price component when a sales order is placed. The breakdown corresponds to the price structure that you have configured. The price details that are shown give an audit record of how the price was determined and serve as a starting point for future price investigation. <!-- KFM: This seems like an intro to a different topic. We should instead tell what price trees are and what they are for.  -->
+You can check the detailed price breakdown including the price component when a sales order is placed. The breakdown corresponds to the price structure that you have configured. The price details that are shown give an audit record of how the price was determined and serve as a starting point for future price investigation.
 
 The following two methods are available for building the price structure:
 
 - **Price component code setup** – Provides a single, uniform price structure for each company.
 - **Price trees** – Enables multiple price structures based on order attribute values for each company.
-
-<!-- KFM: We should introduce the following image. What are we showing here?  -->
 
 [<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
 
@@ -40,8 +37,7 @@ The following table summarizes the principle component types that can be include
 | Sales trade agreement price | Unit Price | <p>When available, the *[sales trade agreement price](sales-trade-agreement-prices.md)* takes precedence over the base price because it represents a special price arrangement with a particular group of consumers for a certain set of products.</p><p>You can only have *one* price component code of this type, but any number of sales trade agreement prices may apply for that code in various situations.</p> |
 | Margin component price adjustment | Unit Price | <p>*[Margin component price adjustments](margin-price-adjustments.md)* move item prices up or down from the base price. Margin component price adjustments can be associated with many different types of agreements, promotions, and events. They make it easy for you to adjust price without changing the base price.</p><p>You can have *multiple* price component codes of this type, and you can associate any number of [pricing rules](margin-discount-pricing-rules.md) with each of these price component codes.  Across price component codes, price adjustment are compounded and add up to the total price adjustment. |
 | Discounts | On-invoice discounts | <p>*[Discounts](discounts.md)* let you adjust prices based on a wide variety of calculation methods designed to encourage the purchase of certain products, volumes, packages, and so on. You can have *multiple* price component codes of this type, and you can associate any number of [pricing rules](margin-discount-pricing-rules.md) with each of these price component codes.</p> |
-| Rebate management | Off-invoice discounts | <!-- KFM: Description needed. --> You can have *multiple* price component codes of this type. <!-- KFM: We need a topic about this. --> |
-| Auto charges | <!-- KFM: Value needed --> | <!-- KFM: Description needed. --> |
+| Rebate management | Off-invoice discounts | You can have *multiple* price component codes of this type. |
 
 ## Concurrency rules
 

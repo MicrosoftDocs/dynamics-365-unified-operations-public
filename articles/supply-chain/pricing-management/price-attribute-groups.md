@@ -29,8 +29,6 @@ There are two scopes of price attribute groups, *header* and *line*.
 
 When you build a pricing rule, you will be able to combine one header and one line price attribute group to set up your condition.
 
-<!-- KFM: Introduce the following table. What are we showing here? -->
-
 <table>
 <thead>
 <tr>

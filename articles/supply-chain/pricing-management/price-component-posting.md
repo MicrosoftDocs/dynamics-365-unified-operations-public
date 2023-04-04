@@ -46,19 +46,10 @@ Follow these steps to prepare your system to support price component posting.
     - **Margin component price adjustment account** – Specify a fallback ledger account to use for margin component price adjustments. This account will be used when needed for price component code lines where no posting profile is specified.
 1. Make the following settings on the **Periodic discounts** FastTab:
     - **Post periodic discount** – Set to *Yes* to make it possible to post *discounts* to a specific ledger. When you post the sales invoice, the system will first check whether there is a specific discount account in the applied rule record and, if not, will instead post using the account specified by the posting profile assigned for each price component code line. Periodic discounts include mix and match discounts, quantity discounts, and discount offers.
-    - **Ledger account type** – Set to *Standard* to <!--KFM: Do what? -->. Set to *Periodic* to set up fallback ledger accounts using the other fields on this FastTab.
-    - **Discount** – <!--KFM: Description needed-->
-    - **Quantity discount** – <!--KFM: Description needed-->
-    - **Mix and match number** – <!--KFM: Description needed-->
-    - **Threshold discount number** – <!--KFM: Description needed-->
-    - **Free item discount account** – <!--KFM: Description needed-->
-    - **Post infocode discount** – <!--KFM: Description needed-->
-    - **Post periodic discount for orders** – <!--KFM: Description needed-->
+    - **Ledger account type** – Set to *Periodic* to set up fallback ledger accounts using the other fields on this FastTab.
 1. On the Action Pane, select **Save**.
 
 ## Configure price component posting profile
-
-<!--KFM: Briefly describe what price component posting profiles are for and why we need them. -->
 
 Follow these steps to set up your price component posting profiles.
 

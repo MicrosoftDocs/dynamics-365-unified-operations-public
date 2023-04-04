@@ -16,7 +16,6 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 Regardless of whether you are using a single price structure or multiple price structures, the procedure for arranging your price components codes into a price structure is the same. The only difference is that when you use multiple price structures, you'll also set a condition for choosing which structure to use in each situation.
@@ -50,7 +49,7 @@ Follow these steps to create and configure a price structure.
 
         This setting only affects discount calculations when the **Best price and compound concurrency control model** is set to *Best price and compound within priority, best price and compound across priority* on the **Pricing management parameters** page. See [Resolving concurrency across price component codes](concurrence-cross-codes.md) for details.
 
-    - **Mandatory**– This setting isn't available on the **Price component code setup** page, it's only on the **Price trees** page (see also [Use multiple price structures within a company](price-structure-multiple.md)). For price trees where **Enable mandatory check** is set to *Yes*, use this check box to mark each price component code that is mandatory in the sales order, in case of not applicable, it will post an error. <!--KFM: This isn't clear. What do we mean by price component code to be mandatory in an order? What happens if it isn't there? Does the error mentioned here only occur when setting up the price tree? -->
+    - **Mandatory**– This setting isn't available on the **Price component code setup** page, it's only on the **Price trees** page (see also [Use multiple price structures within a company](price-structure-multiple.md)). For price trees where **Enable mandatory check** is set to *Yes*, use this check box to mark each price component code that is mandatory in the sales order, in case of not applicable, it will post an error.
 
     > [!NOTE]
     > When you use multiple price structures (price tress), your price structures can't include price component codes with a **Price component** of *Auto charge*. Instead, the system will apply the standard Supply Chain Management auto-charge logic, which means that when an auto-charge rule record is applicable, the auto charge will apply to the sales order. You can include auto charge components in the price structure for [companies configured to use a single price structure](price-structure-single.md).

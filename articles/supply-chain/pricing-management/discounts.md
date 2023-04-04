@@ -27,7 +27,7 @@ This article introduces the various types of discounts that you can set up using
 For details about how to create pricing rules for each type of discount (and margin price adjustments), see [Configure pricing rules](margin-discount-pricing-rules.md).
 
 > [!NOTE]
-> The **Pricing sequence** of your [price structure](price-structure-overview.md) isn't associated with discount types. <!-- KFM: More detail is needed here. What is our point? -->
+> The **Pricing sequence** of your [price structure](price-structure-overview.md) isn't associated with discount types.
 
 ## Simple discounts
 
@@ -44,8 +44,6 @@ Quantity discounts are given to customers when they purchase a particular quanti
 - Buy 5 or more items of brand A and get 7% discount off
 - Buy 10 or more items of brand A and get 9% discount off
 - Buy 15 or more items of brand A and get 12% discount off.
-
-<!-- KFM: More examples would help here. Then we could also move the "Interval" option examples here from the pricing rules topic. -->
 
 ## Threshold discounts
 
@@ -115,8 +113,6 @@ The dealer therefore sets up a mix-and-match discount pricing rule with the foll
 
 The dealer also makes the following settings on the **Lines** FastTab:
 
-<!-- KFM: The following table was obviously wrong in the draft. I tried to fix it, but please confirm -->
-
 | Line no. | Price attributes | Price attribute value | Number of products needed | Unit | Line group |
 |---|---|---|---|---|---|
 | Line 1 | Interior option | Package C | 1 | Ea | A |
@@ -132,8 +128,6 @@ The items in the following table are available to customers:
 Therefore, the customer will get 15% off the cheaper item (EV004) and gets both items for $205.
 
 ### Mix-and-match example scenario 3: Mandatory item to trigger discount
-
-<!-- KFM: This entire example was obviously wrong in the draft. I tried to fix it, but please confirm -->
 
 A car dealer offers a discount where if a customer purchases any ten **Interior option** items from *Package D*, including at least one item with item number EV007 (which is also a product from *Package D*), then they will get a 12% discount on the entire package of interior options.
 
@@ -159,8 +153,6 @@ The items in the following table are available to customers:
 Therefore, if a customer orders five EV009 and five EV007, then they have ordered 10 items from Package D and have also purchased the required EV007. That means the customer will get the 12% discount and will pay $880 for the package.
 
 However, if the customer orders ten EV009, then they would still have ordered 10 items from Package D, but they didn't choose the mandatory item (EV007) and therefore won't get the discount and will pay $1000 for the package.
-
-<!-- KFM: The original said if the customer orders 10 x EV007 they wouldn't get the discount. Is that right too? If so, I don't get it... -->
 
 ## "Always apply" discounts
 

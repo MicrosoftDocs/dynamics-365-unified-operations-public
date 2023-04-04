@@ -16,7 +16,6 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 Concurrency rules let you establish what happens when multiple pricing rules apply to the same order and/or order line. You can set up concurrency rules to control whether the customer should receive just one of the matching rules (and which one) or whether they should be combined (and how they should be combined). There are two types of concurrency:
@@ -47,9 +46,9 @@ A setting on the **Pricing management parameters** page affect the way concurren
 1. Open the **Prices and discounts** tab.
 1. Expand the **Discount concurrency control** FastTab.
 1. Choose one of the following options under the **Best price and compound concurrency control model** heading:
-    - *Best price and compound within priority, never compound across priorities* – <!-- KFM: Description needed -->
-    - *Best price only within priority, always compound across priorities* – <!-- KFM: Description needed -->
-    - *Best price and compound within priority, best price and compound across priority* – <!-- KFM: Description needed. Mention that the **Concurrency mode across priority** option in the price structure only has an effect when this option is selected.  -->
+    - *Best price and compound within priority, never compound across priorities*
+    - *Best price only within priority, always compound across priorities*
+    - *Best price and compound within priority, best price and compound across priority*
 
 ## <a name="margin-example"></a>Example price calculation using a mix of compound and non-compound margin components
 
@@ -67,7 +66,7 @@ The following table shows an example price component code setup and its resultin
 | MC05 | Pickup fee | 60 | Amount | 2 | Yes | $2.00 | $1,092.95 |
 | MC06 | Other cost to sell | 70 | Percent | 5 | Yes | $54.65 | $1,147.60 |
 
-The system applies the following rules to calculate the final unit price: <!-- KFM: I wrote these based on my best understanding/guesses. Please review and confirm. -->
+The system applies the following rules to calculate the final unit price:
 
 - The calculation proceeds by calculating a new unit price for each line following the pricing sequence.
 - For non-compounded lines, the line value is calculated based on the original base price.

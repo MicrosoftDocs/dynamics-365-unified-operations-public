@@ -109,7 +109,7 @@ To add, edit, or delete a price attribute group, follow these steps.
 1. Expand the **Attributes** FastTab to view and edit the attributes that belong to this group. Use the following toolbar buttons to work with the list.
     - **Add** – Select to add one or more attributes to the list. This button opens the **Add price attribute** dialog, which shows attributes that match your selected group type (product or customer) and provides filtering controls to help you find the attributes you're looking for. Mark the check box for each attribute you want to add and then select **Update** to add those attributes to the group.
     - **Remove** – Remove a selected attribute from the list.
-    - **Move up** and **Move down** – Move a selected attribute up or down in rank. <!-- KFM: Does the rank actually matter here?    See the next section for more information about how to use this setting. -->
+    - **Move up** and **Move down** – Move a selected attribute up or down in rank.
 
     [<img src="media/add-customer-price-attribute.png" alt="The Add price attribute dialog." title="The Add price attribute dialog" width="720" />](media/add-customer-price-attribute.png#lightbox)
 
@@ -125,12 +125,6 @@ To add, edit, or delete a price attribute group, follow these steps.
     - If you are working with a product group, then to view, exclude, and/or re-include specific item variants, select **All variants** from the toolbar. While viewing the variants, you can select **Product master** from the toolbar to go back to the standard item list.
 
 1. When you're done adding and arranging attributes, select **Validation** on the Action Pane to trigger a validation check. If the check passes, then the system will set **Validated** to *Yes*, which means the price attribute group is now activated and can be used in pricing rules.
-
-<!-- KFM: What affect do the ranks have for these types of groups? I suspect none? 
-
-## Price attribute ranks
-
--->
 
 ## Use customer and product price attribute groups in price attribute groups
 

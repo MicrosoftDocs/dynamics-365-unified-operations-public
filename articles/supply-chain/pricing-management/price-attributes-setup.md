@@ -18,7 +18,7 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Pricing management provides a set of pre-populated price attributes from fields in related tables associated with **Product**, **Customer**, **Order table** and **Order line**. <!-- KFM: What are these bolded terms? Tables? Fields? How do we find and use these "pre-populated" (predefined?) attributes? -->
+Pricing management provides a set of pre-populated price attributes from fields in related tables associated with **Product**, **Customer**, **Order table** and **Order line**.
 
 Pricing management also offers the option to create custom price attributes and connect them to orders, customers, and items. You can use those price attributes when creating pricing rules and conditions, and the pricing engine will use those associations to identify the appropriate price when an order is placed.
 
@@ -51,7 +51,7 @@ To use attributes when designing Pricing management pricing rules, you must mark
 
 For attributes to have an effect, you must assign them to the relevant products using one of the following methods:
 
-- Assign product attributes to products using the [procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md) <!-- KFM: Is it right that we want to assign these to *procurement* categories? What about the *Sales* hierarchy? -->
+- Assign product attributes to products using the [procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md)
 - Group attributes into price attribute groups and [assign attribute groups to Commerce categories](../../commerce/attribute-attributegroups-lifecycle.md). Products assigned to categories that are associated to attribute groups inherit the attributes that are included in those attribute groups.
 
 For more information about attribute management and association, see [Manage attributes and attribute groups](../../commerce/attribute-attributegroups-lifecycle.md).
