@@ -1,9 +1,9 @@
 ---
 # required metadata
-title: Intercompany journals and dimension values on multi-line vs single line journal
+title: Intercompany journals: Financial dimension defaulting on multiline vs. single-line vouchers
 description: This article answers some commonly asked questions regarding intercompany journals.
 author: kweekley
-ms.date: 03/31/2023
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,31 +33,20 @@ ms.dyn365.ops.version: 10.0.29
 
 This article answers some commonly asked questions regarding intercompany journals and dimension values.
 
-### Example
-Intercompany transactions can be entered as a single line or multiple lines on various financial journals, such as:
- - general journals 
- - vendor invoice journals 
- - vendor or customer payment journals 
- 
-When the intercompany transaction is entered on a single line, the financial dimension values default correctly onto the **Due to** and **Due from** ledger accounts but when the intercompany transaction is entered on multiple lines, the financial dimension values do not default correctly. Why does this work differently?
+## Question
+Intercompany transactions can be entered as either a single line or multiple lines on various financial journals, such as the general journal, the vendor invoice journal, and vendor/customer payment journals. When an intercompany transaction is entered on a single line, default financial dimension values are correctly entered on the Due to and Due from ledger accounts. However, when an intercompany transaction is entered on multiple lines, default financial dimension values aren't correctly entered. Why does the defaulting behavior work differently?
 
-### Example answer
-When an intercompany transaction is entered, knowing which pairs of debit and credit for each company that are ‘related’ is essential. When entering the intercompany 
-transaction on a single line, it’s easy to determine the debit or credit pair because it’s clearly identified using the **Account** and **Offset account**. 
+### Answer
 
-If an intercompany transaction is entered on multiple lines, we lose the ability to identify which debit or credit from the originating company should be matched to the 
-offsetting debit or credit from a destination company. This is due to the flexibility of journals. 
+When an intercompany transaction is entered, the pairs of related debit and credit values for each company must be known. If the intercompany transaction is entered on a single line, the debit/credit pair can easily be determined, because it's clearly identified by using the account and offset account.
 
-•	The intercompany transaction can contain more than one destination company.  
-•	Lines can be summarized, both for the originating company’s and the destination company. 
-•	The amounts of individual debits may not match individual credit amounts (but sum of debits = total credits). 
+However, if the intercompany transaction is entered on multiple lines, the ability to identify which debit or credit from the originating company should be matched to the offsetting debit or credit from a destination company is lost. The reason for this loss is the flexibility of journals, which allows for the following behavior:
 
-Because of this flexibility, the posting logic can’t confidently default financial dimensions when multiple lines are entered. The following scenarios provide examples.
+•	The intercompany transaction can contain more than one destination company.
+•	Lines can be summarized for both the originating company and the destination company.
+•	The amounts of individual debits might not match individual credit amounts. (However, the sum of debits equals the total credits.)
 
->[!Note] 
->The active company is always considered the originating company and must exist on at least one line of a voucher (which can be entered on any line of the voucher, 
-beginning or end). An intercompany relationship must be defined between the originating company (active company) and destination companies (all other companies on the 
-voucher). 
+Because of this flexibility, the posting logic can't reliably enter default financial dimension values when multiple lines are entered. The following scenarios provide examples. Note that the active company is always considered the originating company, and it must exist on at least one line of a voucher. (It can be entered on any line of the voucher, whether at the beginning or at the end.) An intercompany relationship must be defined between the originating company (active company) and the destination companies (all other companies on the voucher).
 
 ### Scenario one
 USMF is the originating company. The voucher contains two destination companies, DEMF and USSI. The following lines are entered into the general journal and posted. 
@@ -72,9 +61,7 @@ USMF is the originating company. The voucher contains two destination companies,
     
 
 **Destination companies**
-During posting, the financial dimension values for the destination company’s due to or due from can easily be determined. A balancing due to or due from is created for
-each destination company line because there is only one originating company. The dimensions are always taken from the destination companies’ lines as 
-follows:
+During posting, the financial dimension values for the destination company's Due to or Due from account can easily be determined. A balancing "due to" or "due from" entry is created for each destination company line, because there's only one originating company. Therefore, the dimensions are always taken from the destination companies' lines, as shown here.
 
 **DEMF** 
 
@@ -91,8 +78,7 @@ follows:
 |Due to-005-USMF|   |		200|
 
 **Originating company**
-The originating company’s accounting entry is more complex. The originating company must post the same amounts in the **Due to** or **Due from** entries to ensure that the **Due to** entries and **Due from** entries are in balance. Two **Due to** entries were posted in the destination companies, so two **Due from** entries 
-must be posted to the originating company. With three entries posted in USMF, but only two **Due from** entries created, which dimensions default?  
+The originating company's accounting entry is more complex. The originating company must post the same amounts in the originating company's "due to" or "due from" entries to ensure that the "due to" and "due from" entries are balanced. Because two "due to" entries were posted in the destination companies, two "due from" entries must be posted in the originating company. Given that three entries are posted in USMF, but only two "due from" entries are created, which dimensions are used by default?
 
 Option 1:
 
@@ -142,10 +128,9 @@ Option 4 (what posts today):
 |Due from - -	|200|   |	
 |Due from - -	|200|  |	
 
-Even though the scenario shows the Legal entity as a financial dimension, the legal entity financial dimension values can't be used in the posting logic to determine 
-how to default amounts and financial dimension values. Options one, two, and three give different ways to default the financial dimension values, but the posting logic can't interpret the intention of the user. No financial dimensions will default. Option four shows what posts to the originating company.  
+Even though the scenario shows Legal entity as a financial dimension, the legal entity financial dimension values cannot be used in the posting logic to determine how default amounts and financial dimension values are entered. Options 1, 2, and 3 show different ways to enter the default financial dimension values. However, the posting logic can't interpret the user's intention. Therefore, no default financial dimension values are entered. Option 4 shows what's posted to the originating company by using the current functionality.
 
-### Scenario two
+### Scenario 2
 USMF is the originating company. The voucher contains two destination companies, DEMF and USSI. The following lines are entered into the general journal and posted. 
 
 |Company	|Ledger account |	Debit |	Credit	|
@@ -156,7 +141,7 @@ USMF is the originating company. The voucher contains two destination companies,
 |USSI|	600120-005|	200|			| 
 
 **Destination companies**
-As described in scenario one, a balancing due to or due from is created for each destination company line. The dimensions are always taken from the destination companies’ lines as follows:
+As in scenario 1, a balancing "due to" or "due from" entry is created for each destination company line. The dimensions are always taken from the destination companies' lines, as shown here.
 
 **DEMF** 
 
@@ -174,8 +159,7 @@ As described in scenario one, a balancing due to or due from is created for each
 
 
 **Originating company**
-As described in scenario two, two **Due from** entries must be posted to the originating company. In this scenario, the amounts for the **Due from** don’t match the two 
-originating company’s lines. Which financial dimension values default? 
+As in scenario 1, two "due from" entries must be posted in the originating company. In this scenario, the amounts for the "due from" entries don't match the two originating company's lines. Therefore, which financial dimension values are used by default?
 
 Option 1:
 
@@ -224,10 +208,11 @@ Option 4 (what posts today):
 
 
 
+Options 1, 2, and 3 show different ways to enter default the financial dimension values. However, note that none of the amounts at the dimension value level match the manually entered amounts. For example, option 1 shows a $300 credit to department 001, but there's only an offsetting debit for $200. The posting logic can't interpret the user's intention. Therefore, no default financial dimension values are entered. Option 4 shows what's posted to the originating company by using the current functionality.
 
-Options one, two and three display different ways to default the financial dimension values. None of the amounts at the dimension value level match the manually entered amounts. For example, in option one, there's a $300 credit to department 001, but only an offsetting debit for $200. No financial dimensions will default. Option four shows what posts to the originating company.
 
-Some scenarios aren't as complex, and potentially could default dimensions but there are even more complex scenarios. To determine which is an easy scenario compared to a complex scenario during posting would have a negative impact on posting performance. This will still run a risk that the posting interpretation defaults and posts the wrong financial dimension values. As shown with the previous scenarios, there is no consistent, logical way to correctly determine which financial dimension values will default. Rather than defaulting randomly or incorrectly, the current functionality doesn’t default any dimensions. The only way to correctly ‘pair’ the debits and credits for the originating and destination companies is to enter them as a single line voucher. Then the financial dimension values will correctly default. 
+The previous scenarios are just two possible scenarios. Other scenarios aren't as complex, and default dimension values might be entered. However, there are also even more complex scenarios. To determine whether a given scenario is simple or complex during posting would negatively affect posting performance. Moreover, there would still be a risk of entering and posting incorrect financial dimension values. As the previous scenarios show, there's no consistent, logical way to correctly determine which default financial dimension values should be entered. Instead of randomly or incorrectly entering default dimension values, the current functionality doesn't enter any. The only way to correctly "pair" the debits and credits for the originating and destination companies is to enter them as a single-line voucher. Default financial dimension values will then be correctly entered.
+ 
 
 
 
