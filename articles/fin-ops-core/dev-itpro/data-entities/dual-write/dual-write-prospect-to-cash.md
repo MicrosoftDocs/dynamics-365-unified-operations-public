@@ -135,9 +135,15 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [Sales invoice headers V2](mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the finance and operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 [Sales invoice lines V2](mapping-reference.md#117) | invoicedetails | |
 [Sales order origin codes](mapping-reference.md#186) | msdyn_salesorderorigins | |
-**[Henrikan] get engineers to add the mapping for the 5 new entities introduced]**
+[Dynamics 365 Sales order headers]() | salesorders | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
+[Dynamics 365 Sales order lines]() | salesorderdetails | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
+[Dynamics 365 Sales quotation header]() | quotes | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
+[Dynamics 365 Sales quotation lines]() | quotedetails | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
+[Dynamics 365 Sales feature management states]() | msdyn_supplychainfeaturestate | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
 
 For information about price lists, see [Unified product experience](product-mapping.md).
+
+**Note** The 5 entities prefixed with Dynamics are explained in more details here https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Prospect-to-cash-Changes-Wave1-2023/articles/fin-ops-core/dev-itpro/data-entities/dual-write/enable-efficiency-in-quote-to-cash.md. 
 
 ## Limitations
 
