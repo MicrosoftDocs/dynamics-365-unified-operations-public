@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to debug **sealed** Modern Point of Sale (MPOS) and Cloud POS extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK). 
+This article explains how to debug **sealed** Store Commerce extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK). 
 
  > [!NOTE]
  > To debug the Store Commerce app, see [Debug Store Commerce extensions using Visual Studio Code](../sc-debug.md)
