@@ -26,7 +26,7 @@ Sometimes statement posting fails because the data in one or more transactions m
 - The fiscal period mapping to the current transaction has been closed, so the transactions can't be posted.
 - The transactions are created without values for required fields (for example, warehouse or batch number field values).
 
-The data is corrected by editing the necessary transactions, and the steps required to edit the transactions vary based on which stage of the statement posting that an issue occurs. This article first lists the generic steps required to edit a transaction depending on the stage of statement posting, and then lists common errors that occur during the stages with the specific steps required to fix each issue.
+The data is corrected by editing the necessary transactions, and the steps that are required to edit the transactions vary based on which stage of the statement posting that an issue occurs. This article first lists the generic steps that are required to edit a transaction depending on the stage of statement posting, and then lists common errors that occur during the stages with the specific steps that are required to fix each issue.
 
 > [NOTE]
 > For information on the structure of the Excel files that are downloaded when editing transactions, see [Edit cash and carry transactions](../edit-cash-trans.md).
@@ -39,7 +39,7 @@ Statement calculation is a prerequisite step of the statement posting process. T
 
 #### Transaction validation failed
 
-If the trickle feed feature is enabled, it is required that transactions are validated before they can be included in a statement. This validation is usually done by running the **Validate store transactions** batch job. If transaction validation fails, follow these steps in Commerce headquarters to resolve the issue.
+If the trickle feed feature is enabled, transactions must be validated before they can be included in a statement. This validation is done by running the **Validate store transactions** batch job. If transaction validation fails, follow these steps in Commerce headquarters to resolve the issue.
 
 1. Go to the **Store financials** workspace and open the **Cash and carry validation failures** view. 
     ![Transaction validation errors](../media/Transaction_validation_errors.png)
@@ -59,10 +59,10 @@ If the trickle feed feature is enabled, it is required that transactions are val
 One of the steps of statement posting is to create customer orders by grouping one or more transactions. If statement posting fails before the customer orders are created, follow these steps in headquarters to resolve the issue.
 
 1. Go to the failed statement.
-1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit cash and carry transactions**. This automatically pulls in all the cash and carry transactions that are a part of the current statement.
+1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit cash and carry transactions**. This action automatically pulls in all the cash and carry transactions that are a part of the current statement.
     ![Edit the selected transactions](../media/Edit_selected_transactions.png)
 1. Once the Excel file is downloaded, enable editing on the file and sign in.
-1. In the Excel file, change the **Validation status** of transaction you need to fix to **None** or **Error**. This is a required step before making any changes to the transaction. 
+1. In the Excel file, change the **Validation status** of transaction you need to fix to **None** or **Error**. Performing this step is required before making any changes to the transaction. 
     ![Change the validation status](../media/Change_validation_status.png)
 1. Identify the correct entity and field that you need to modify. If the field you're looking for is missing, to add the field, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
 1. Update the field values as needed, and then select **Publish** on the Excel spreadsheet.
@@ -76,14 +76,14 @@ One of the steps of statement posting is to create customer orders by grouping o
 
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Inventory dimension Site is mandatory and must consequently be specified.**
 	
-**Resolution:** This issue occurs because the **Site** and **Warehouse** fields are configured to be required for the transactions, and some of the transactions are missing values or have incorrect values for these fields. This error is usually generated for transactions imported from external systems where validation might have missed the issue, or if the values specified for the fields aren't valid. To fix the issue, follow the steps in the procedure above, and for step 7 update the correct values for the **Site** and **Warehouse** fields in the **Transactions** and **SalesTransactions** tabs of the Excel file (if these tabs are present).
+**Resolution:** This issue occurs because the **Site** and **Warehouse** fields are configured to be mandatory for the transactions, and some of the transactions are missing values or have incorrect values for these fields. This error is generated for transactions imported from external systems where validation might have missed the issue, or if the values specified for the fields aren't valid. To fix the issue, follow the steps in the procedure above, and for step 7 update the correct values for the **Site** and **Warehouse** fields in the **Transactions** and **SalesTransactions** tabs of the Excel file (if these tabs are present).
 
 > [!NOTE]
 > The **Site** and **Warehouse** fields aren't available by default in Excel. To add them, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
 
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] isn't created for item number [XXXXX].**
 	
-**Resolution:** This issue occurs because the batch number is configured to be required for an item but it isn't provided. To fix the issue, follow the steps in the procedure above, and for step 7, on the **Lines** or **Sales transaction** tabs of the Excel file, update the **Batch number** value for the item. 
+**Resolution:** This issue occurs because the batch number is configured to be mandatory for an item but it isn't provided. To fix the issue, follow the steps in the procedure above, and for step 7, on the **Lines** or **Sales transaction** tabs of the Excel file, update the **Batch number** value for the item. 
 
 > [!NOTE]
 > The **Batch number** field isn't available by default in Excel. To add it, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
@@ -94,10 +94,10 @@ After customer orders are created, the next statement posting step is to attempt
 
 1. Go to the failed statement.
 1. Under the **Execution details**, select **Aggregated transactions**.
-1. Identify and select the aggregations failing to be invoiced, and then select **Delete customer order**.  This is a required step because it automatically deletes the aggregation data and ensures that the edit transactions information is used to generate new customer orders.
-1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit cash and carry transactions**. This automatically pulls in all the cash and carry transactions that are a part of the current statement.
+1. Identify and select the aggregations failing to be invoiced, and then select **Delete customer order**.  Performing this step is required because it automatically deletes the aggregation data and ensures that the edit transactions information is used to generate new customer orders.
+1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit cash and carry transactions**. This action automatically pulls in all the cash and carry transactions that are a part of the current statement.
 1. Once the Excel file is downloaded, enable editing on the file and sign in.
-1. In the Excel file, change the **Validation status** of transaction you need to fix to **None** or **Error**. This is a required step before making any changes to the transaction. 
+1. In the Excel file, change the **Validation status** of transaction you need to fix to **None** or **Error**. Performing this step is required before making any changes to the transaction. 
 1. Identify the correct entity and field that you need to modify. If the field you're looking for is missing, to add the field, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
 1. Update the field values as needed, and then select **Publish** on the Excel spreadsheet.
 1. On the **Statement** form, under **Function**, select **Revalidate transactions**. 
@@ -107,7 +107,7 @@ After customer orders are created, the next statement posting step is to attempt
 
 **While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Voucher [XXXXX] Period for [XXXXX] does not exist. Posting Posting Sales order: XXXX Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 
-**Resolution:** This issue occurs because the transaction date belongs to a fiscal period that is no longer open. This error is usually generated when transactions haven't been posted for a long time. To fix the issue, follow the steps in the procedure above and on step 7, go to the **Statement aggregations** tab of the Excel file and update the **Business date** field to a value that corresponds to an open fiscal period.
+**Resolution:** This issue occurs because the transaction date belongs to a fiscal period that is no longer open. This error is generated when transactions haven't been posted for a long time. To fix the issue, follow the steps in the procedure above and on step 7, go to the **Statement aggregations** tab of the Excel file and update the **Business date** field to a value that corresponds to an open fiscal period.
 
 **While processing the state Payments posted, generic exception encountered in retail statement [XXXXX] in the controller : Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Period for 1/1/2000 does not exist. Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 	
@@ -115,7 +115,7 @@ After customer orders are created, the next statement posting step is to attempt
 
 **While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Item: [XXXXX] Inventory dimension Location must be specified.**
 	
-**Resolution:** This issue occurs because the **Site** and **Warehouse** fields are configured to be required for the transactions, and some of the transactions are missing values or have incorrect values for these fields. This error is usually generated for transactions imported from external systems where validation might have missed the issue, or if the values specified for the fields aren't valid. To fix the issue, follow the steps in the procedure above, and for step 7 update the correct values for the **Site** and **Warehouse** fields in the **Transactions** and **SalesTransactions** tabs of the Excel file (if these tabs are present).
+**Resolution:** This issue occurs because the **Site** and **Warehouse** fields are configured to be mandatory for the transactions, and some of the transactions are missing values or have incorrect values for these fields. This error is generated for transactions imported from external systems where validation might have missed the issue, or if the values specified for the fields aren't valid. To fix the issue, follow the steps in the procedure above, and for step 7 update the correct values for the **Site** and **Warehouse** fields in the **Transactions** and **SalesTransactions** tabs of the Excel file (if these tabs are present).
 
 > [!NOTE]
 > The **Site** and **Warehouse** fields aren't available by default in Excel. To add them, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
