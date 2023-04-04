@@ -4,7 +4,7 @@
 title: Invoice capture received files
 description: This article explains how to collect invoice files from different sources in Invoice capture.
 author: sunfzam
-ms.date: 10/13/2022
+ms.date: 04/04/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -34,14 +34,36 @@ ms.dyn365.ops.version:
 
 In Invoice capture, the **Received files** page is a central place where invoice files are received from different sources.
 
-## Upload invoice files
+In most cases, the process in Received files is handled automatically and doesn't require manual intervention. However, when there are exceptions or errors, the AP clerk needs to ensure that all invoice files have been executed correctly to avoid omissions that could lead to financial losses to the company. 
 
-Accounts Payable (AP) clerks can upload invoice images by selecting **Upload a file** to open the **Upload** dialog box. After an AP clerk selects a file, the **Upload** button becomes available.
-
-## Include or obsolete invoice files
-
-Users can select invoices that have errors or warnings, and then either include or obsolete the invoices by selecting the corresponding button on the Action Pane. An invoice that is marked as obsolete won't appear in the **Received files (Obsoleted)** view.
+In **Manage file** filter, the various filter settings on the received invoice files can be applied. If the invoice files violate the filter rules, it will be aborted for further recognitive processing. AP clerks can decide in Received files whether invoices can be included again when they are confirmed to be valid. 
 
 ## View captured invoices
 
-After a received file is successfully recognized, the captured invoice's information is returned by the AI model and entered in Microsoft Dataverse. The AP clerk can then verify the invoice details by selecting **View captured invoice**. Users can download the original invoice file as required.
+The **Received file (pending)** page displays incoming files that violate filter rules.
+ - If the invoices are invalid, the invoice can be marked as **Voided** by clicking **Void**.
+ - If the invoices are valid, the invoice can be included in the invoice process again by selecting it and clicking **Retry**.
+In the **Received file (voided)** page, all files marked as **Voided** are displayed.
+ - Select an invoice and clicking **Delete**, it will be permanently deleted from Dataverse and can't be recovered.
+In the **Received file (captured)** page, all files that have been successfully recognized and are in Dataverse are displayed. 
+ - Select an invoice and click **View captured invoice** to view invoices in a side-by-side view where AP clerks can review the invoice status and make corrections. 
+ - Click **Download** to download the original invoice file.
+
+
+## Upload invoice files
+
+To upload invoice images:
+1. Go to **Manage Invoices > Received file**, click **Upload file**. 
+2. Select the files by clicking **+** frame.
+3. Drag and drop the files. The selected files will be displayed in the list.
+4. Click **Upload** and the files will start uploading immediately.  
+ - Once complete, a successful message will be returned, and the uploaded files will be removed from the list.  
+5. Close the pane. The **Received file** list will be automatically refreshed. 
+
+
+## View history 
+
+AP clerks can select an invoice and click **View history** to view the processing details with description, message type and processing time. 
+
+
+
