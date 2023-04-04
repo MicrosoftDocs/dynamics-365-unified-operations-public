@@ -35,7 +35,9 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 
 To use the Commerce Chat with Power Virtual Agents feature, you must first create a Power Virtual Agents chatbot for your e-commerce website. For instructions, see [Create a power virtual agent bot](/power-virtual-agents/authoring-first-bot).
 
-After you configure the chatbot, you must copy the values of **Bot ID** and **Tenant ID** chatbot parameters to configure the Commerce chat experience.
+After you configure the chatbot, you must follow the procedures below to copy the bot ID and tenant ID chatbot parameter values to configure the Commerce chat experience. 
+
+For more information on how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
 
 ### Find the bot ID of a Power Virtual Agent
 
@@ -59,8 +61,6 @@ To find the tenant ID of a Power Virtual Agent in the Power Virtual Agents web a
 1. Select the copy symbol to copy the **Tenant ID** value.
 
 :::image type="content" source="media/chat-module-pva-tenantid.png" alt-text="Find tenant ID of a Power Virtual Agent":::
-
-For more information on how to copy these values, see [Retrieve your Power Virtual Agents bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
 
 ## Configure your e-commerce site 
 
