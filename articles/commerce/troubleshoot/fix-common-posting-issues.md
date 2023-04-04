@@ -1,5 +1,5 @@
 ---
-title: Fix common posting issues by editing transactions
+title: Fix common statement posting issues by editing transactions
 description: This article provides troubleshooting guidance to fix common statement posting issues that require editing transactions in Microsoft Dynamics 365 Commerce.
 author: Shajain
 ms.date: 04/04/2023
@@ -13,7 +13,7 @@ ms.search.form: RetailStatementTable_SOCreateFailed, RetailStatementTable_Invoic
 
 ---
 
-# Fix common posting issues by editing transactions
+# Fix common statement posting issues by editing transactions
 Error code: SYS103633, SYS328431
 
 [!include [banner](../../includes/banner.md)]
