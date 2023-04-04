@@ -1,5 +1,5 @@
 ---
-title: Fix common posting issues by editing transactions using edit and audit capabilities
+title: Fix common posting issues by editing transactions
 description: This article provides troubleshooting guidance to fix common statement posting issues that require editing transactions in Microsoft Dynamics 365 Commerce.
 author: Shajain
 ms.date: 04/04/2023
@@ -13,7 +13,7 @@ ms.search.form: RetailStatementTable_SOCreateFailed, RetailStatementTable_Invoic
 
 ---
 
-# Fix common posting issues by editing transactions using edit and audit capabilities
+# Fix common posting issues by editing transactions
 Error code: SYS103633, SYS328431
 
 [!include [banner](../../includes/banner.md)]
@@ -74,66 +74,56 @@ One of the steps of statement posting is to create customer orders by grouping o
 
 #### Common issues that occur during order creation
 
-Some of the common issues that occur during order creation are as following:
-
-Error 1:
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Inventory dimension Site is mandatory and must consequently be specified.**
 	
-Mitigation:
-This issue occurs because the Site and warehouse are set up to be required fields for the transactions and some of the transactions are missing values or incorrect values for these fields. This usually happens for the transactions imported from external systems as this validation might have missed, or it could happen if the value specified for these fields isn't valid. To fix the issue, follow the steps mentioned above and on the step 7 and update the correct values for Site and Warehouse fields in the **Transactions** and **SalesTransactions** tabs of the excel, if these tabs are present.
-**Note:** Site and Warehouse fields aren't available by default in Excel and can be added as explained here [Add more fields to excel](../add-fields-excel.md).
+**Resolution:** This issue occurs because the **Site** and **Warehouse** fields are configured to be required for the transactions, and some of the transactions are missing values or have incorrect values for these fields. This error is usually generated for transactions imported from external systems where validation might have missed the issue, or if the values specified for the fields aren't valid. To fix the issue, follow the steps in the procedure above, and for step 7 update the correct values for the **Site** and **Warehouse** fields in the **Transactions** and **SalesTransactions** tabs of the Excel file (if these tabs are present).
 
-Error 2:
+> [!NOTE]
+> The **Site** and **Warehouse** fields aren't available by default in Excel. To add them, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
+
 **While processing the state Customer order created, generic exception encountered in retail statement [XXXXX] in the controller : Batch number [XXXXX] isn't created for item number [XXXXX].**
 	
-Mitigation:
-This issue occurs because the batch number is set up as required for an item but it isn't provided. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the **Lines** tab or **Sales transaction** tab of excel and update the **Batch number** for this item. 
-**Note:** Batch number field isn't available by default in Excel and can be added as described here [Add more fields to excel](../add-fields-excel.md).
+**Resolution:** This issue occurs because the batch number is configured to be required for an item but it isn't provided. To fix the issue, follow the steps in the procedure above, and for step 7, on the **Lines** or **Sales transaction** tabs of the Excel file, update the **Batch number** value for the item. 
 
-## Issues during customer order invoicing
+> [!NOTE]
+> The **Batch number** field isn't available by default in Excel. To add it, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
 
-After the customer orders are created, the statement posting next step is to attempt invoicing the customer orders. If the statement posting fails during invoicing the customer orders, then follow the below steps to resolve the issue.
+### Issues during customer order invoicing
 
-1. Navigate to failed statement and press the **Aggregated transactions** button under the **Execution details** group.
-2. Identify and select the aggregations failing to be invoiced, and click on **Delete customer order**.  This is a **required step** as it automatically deletes the aggregation data as well and ensures that the edit transactions information is used to generate new customer orders.
-3. Click on office icon on top right and select **Edit cash and carry transactions**. Note, this will automatically pull in all the cash and carry transactions that are a part of the current statement. 
-4. Download the file
-5. Once the file is downloaded, enable editing on the file and sign in
-6. Change the **Validation status** of transaction you need to fix to **None** or **Error** in excel. This is a **required step** to make any changes to the transaction.
-7. Identify the correct entity and field that needs to be modified. If the field you're looking for is missing, then please get it in excel as described here [Add more fields to excel](../add-fields-excel.md)
-8. Change the value of fields and select **Publish** on the Excel spreadsheet.
-9. In Statement forms, click on **Revalidate transactions** under Function group. Refer the below image.
-10. Post the statement
+After customer orders are created, the next statement posting step is to attempt invoicing the customer orders. If the statement posting fails while invoicing the customer orders, follow these steps in headquarters to resolve the issue.
 
-Some of the common issues that occur during order creation are as following:
+1. Go to the failed statement.
+1. Under the **Execution details**, select **Aggregated transactions**.
+1. Identify and select the aggregations failing to be invoiced, and then select **Delete customer order**.  This is a required step because it automatically deletes the aggregation data and ensures that the edit transactions information is used to generate new customer orders.
+1. At the top right, select the Microsoft Office symbol, and then under **OPEN IN EXCEL**, select **Edit cash and carry transactions**. This automatically pulls in all the cash and carry transactions that are a part of the current statement.
+1. Once the Excel file is downloaded, enable editing on the file and sign in.
+1. In the Excel file, change the **Validation status** of transaction you need to fix to **None** or **Error**. This is a required step before making any changes to the transaction. 
+1. Identify the correct entity and field that you need to modify. If the field you're looking for is missing, to add the field, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
+1. Update the field values as needed, and then select **Publish** on the Excel spreadsheet.
+1. On the **Statement** form, under **Function**, select **Revalidate transactions**. 
+1. Post the statement.
 
-Error 1: 
-**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Voucher []XXXXX Period for [XXXXX] does not exist. Posting Posting Sales order: XXXX Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
+#### Common issues that occur during order invoicing
 
-Mitigation:
-This issue occurs because the transaction date belongs to a fiscal period which isn't open anymore. This usually happens when transactions haven't been posted for a long time. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the **Statement aggregations** tab of the excel and update the **Business date** field to a value that corresponds to an open fiscal period
+**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Voucher [XXXXX] Period for [XXXXX] does not exist. Posting Posting Sales order: XXXX Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 
-Error 2: 
-**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Item: [XXXXX]Inventory dimension Location must be specified.**
-	
-Mitigation:
-This issue occurs because the Site and warehouse are set up to be required fields for the transactions and some of the transactions are missing values or incorrect values for these fields. To fix the issue, follow the steps mentioned above and on the step 7, update the correct values for Site and Warehouse fields in the **Transactions** and **SalesTransactions** tabs of the excel, if these tabs are present.
-**Note:** Site and Warehouse fields aren't available by default in Excel and can be added as described here [Add more fields to excel](../add-fields-excel.md).
+**Resolution:** This issue occurs because the transaction date belongs to a fiscal period that is no longer open. This error is usually generated when transactions haven't been posted for a long time. To fix the issue, follow the steps in the procedure above and on step 7, go to the **Statement aggregations** tab of the Excel file and update the **Business date** field to a value that corresponds to an open fiscal period.
 
-Error 3: 
-**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] -> You must select a value in the [Field name] field in combination with the following dimensions values that are valid.**
-	
-Mitigation:
-This issue occurs because a required field for statement posting is missing a value. To fix the issue, follow the steps mentioned above and on the step 7, update the correct values for fields mentioned in the error message
-
-Error 4: 
-**While processing aggregation state Sales order is invoiced for this aggregation. Transaction state Customer order invoiced, the invoice couldn't be found for the manually invoiced sales order for this aggregation [XXXXX].**
-	
-Mitigation:
-To fix this issue, follow the steps mentioned above and on the step 7, navigate to the **Statement aggregations** tab of the excel. Now check if **Business date** for the aggregation isn't the same as the invoice date of manually invoiced sales order for this aggregation, then update the **Business date** to the invoice date of the order.
-
-Error 5: 
 **While processing the state Payments posted, generic exception encountered in retail statement [XXXXX] in the controller : Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Period for 1/1/2000 does not exist. Posting results for journal batch number [XXXXX] Voucher [XXXXX] Voucher [XXXXX] Fiscal year for 1/1/2000 does not exist.**
 	
-Mitigation:
-This issue is similar to the error 1 mentioned above. To fix the issue, follow the steps mentioned above and on the step 7, navigate to the **Transactions**, **Sales Transactions** and **Payment Transactions** tab and fix the **Business date** that corresponds to an open fiscal period.
+**Resolution:** This issue is similar to the previous error above. To fix the issue, follow the steps in the procedure above and on step 7, on the **Transactions**, **Sales Transactions**, and **Payment Transactions** tabs, fix the **Business date** value that corresponds to an open fiscal period.
+
+**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] Item: [XXXXX] Inventory dimension Location must be specified.**
+	
+**Resolution:** This issue occurs because the **Site** and **Warehouse** fields are configured to be required for the transactions, and some of the transactions are missing values or have incorrect values for these fields. This error is usually generated for transactions imported from external systems where validation might have missed the issue, or if the values specified for the fields aren't valid. To fix the issue, follow the steps in the procedure above, and for step 7 update the correct values for the **Site** and **Warehouse** fields in the **Transactions** and **SalesTransactions** tabs of the Excel file (if these tabs are present).
+
+> [!NOTE]
+> The **Site** and **Warehouse** fields aren't available by default in Excel. To add them, follow the instructions in [Add more fields to excel](../add-fields-excel.md).
+
+**While processing the state Customer order invoiced, generic exception encountered in retail statement [XXXXX] in the controller : Posting Posting Sales order: [XXXXX] You must select a value in the [Field name] field in combination with the following dimensions values that are valid.**
+	
+**Resolution:** This issue occurs because a required field for statement posting is missing a value. To fix the issue, follow the steps in the procedure above, and for step 7, update the correct values for fields mentioned in the error message.
+
+**While processing aggregation state Sales order is invoiced for this aggregation. Transaction state Customer order invoiced, the invoice couldn't be found for the manually invoiced sales order for this aggregation [XXXXX].**
+	
+**Resolution:** To fix the issue, follow the steps in the procedure above, and for step 7, on the **Statement aggregations** tab of the Excel file, check if **Business date** value for the aggregation matches the invoice date of the manually invoiced sales order for this aggregation. If the values don't match, update the **Business date** value to the invoice date of the order.
