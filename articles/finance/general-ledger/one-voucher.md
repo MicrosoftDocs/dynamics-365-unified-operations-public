@@ -58,7 +58,7 @@ Use of the One voucher functionality to meet business requirements might cause i
 
 Some scenarios might still work correctly, depending on your organization's setup. Here are areas where you may encounter issues:
 
-- **Settlement** – If more than one vendor or customer exists on a voucher, the accounting that's created during settlement might be incorrectly allocated to financial dimensions. For more information about issues that can occur during settlement, see [Single voucher with multiple customer or vendor records](./accounts-payable/single-voucher-multiple-customer-vendor-records.md).
+- **Settlement** – If more than one vendor or customer exists on a voucher, the accounting that's created during settlement might be incorrectly allocated to financial dimensions. For more information about issues that can occur during settlement, see [Single voucher with multiple customer or vendor records](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).
 - **Tax calculation** – If more than one voucher or customer exists on a voucher, the tax calculation might be incorrect.
 - **Transaction reversal** – If more than one subledger account type exists on a voucher, when a single subledger transaction is reversed, an incorrect accounting entry might be posted for the reversal in the general ledger. For example, if you acquire multiple assets in a single voucher and then reverse the acquisition of one of the assets, the general ledger accounting will be incorrect for the reversal.
 - **Reporting and inquiries** – If you include more than one subledger account type (for example, **Vendor** and **Customer**) on a voucher, reports/inquiries will show only the first account value that's found.
