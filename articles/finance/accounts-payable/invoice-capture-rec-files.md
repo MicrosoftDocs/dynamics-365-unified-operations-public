@@ -34,19 +34,19 @@ ms.dyn365.ops.version:
 
 In Invoice capture, the **Received files** page is a central place where invoice files are received from different sources.
 
-In most cases, the process in Received files is handled automatically and doesn't require manual intervention. However, when there are exceptions or errors, the AP clerk needs to ensure that all invoice files have been executed correctly to avoid omissions that could lead to financial losses to the company. 
+In most cases, the process in **Received files** is handled automatically and doesn't require manual intervention. However, when there are exceptions or errors, the Accounts payable clerk needs to ensure that all invoice files have been executed correctly to avoid omissions that could lead to financial losses to the company. 
 
-In **Manage file** filter, the various filter settings on the received invoice files can be applied. If the invoice files violate the filter rules, it will be aborted for further recognitive processing. AP clerks can decide in Received files whether invoices can be included again when they are confirmed to be valid. 
+In **Manage file** filter, the various filter settings on the received invoice files can be applied. If the invoice files violate the filter rules, it won't be processed. The Accounts payable clerk can decide in **Received files** if invoices can be included again when the invoices are valid. 
 
 ## View captured invoices
 
 The **Received file (pending)** page displays incoming files that violate filter rules.
  - If the invoices are invalid, the invoice can be marked as **Voided** by clicking **Void**.
- - If the invoices are valid, the invoice can be included in the invoice process again by selecting it and clicking **Retry**.
+ - If the invoices are valid, the invoice can be included in the invoice process by selecting it and clicking **Retry**.
 In the **Received file (voided)** page, all files marked as **Voided** are displayed.
- - Select an invoice and clicking **Delete**, it will be permanently deleted from Dataverse and can't be recovered.
+ - If you select an invoice and click **Delete**, it will be permanently deleted from Dataverse and can't be recovered.
 In the **Received file (captured)** page, all files that have been successfully recognized and are in Dataverse are displayed. 
- - Select an invoice and click **View captured invoice** to view invoices in a side-by-side view where AP clerks can review the invoice status and make corrections. 
+ - Select an invoice and click **View captured invoice** to view invoices in a side-by-side view where users can review the invoice status and make corrections. 
  - Click **Download** to download the original invoice file.
 
 
@@ -63,7 +63,7 @@ To upload invoice images:
 
 ## View history 
 
-AP clerks can select an invoice and click **View history** to view the processing details with description, message type and processing time. 
+Accounts payable clerks can select an invoice and click **View history** to view the processing details with description, message type and processing time. 
 
 
 
