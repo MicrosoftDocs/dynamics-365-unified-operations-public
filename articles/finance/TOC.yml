@@ -1300,6 +1300,8 @@
           href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
           href: general-ledger/cant-reverse-transctns.md
+        - name: Intercompany journals and financial dimensions  
+          href: general-ledger/intercompany-journal.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
