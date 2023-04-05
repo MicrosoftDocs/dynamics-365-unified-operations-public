@@ -47,3 +47,4 @@ in row definition.
 of the data.
 5.  Consider scheduling to run reports during off peak times when allowable or after scheduled posting runs.
 6.  Avoid using row modifiers in row definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria in column definition. Instead, consider using generic row definitions.
+7.  When including an image on the report, such as a company logo, use an image with the lowest resolution possible.
