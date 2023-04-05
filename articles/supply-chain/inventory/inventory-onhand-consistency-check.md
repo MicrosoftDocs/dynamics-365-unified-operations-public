@@ -1,16 +1,15 @@
 ---
 title: Running on-hand consistency checks while Inventory Visibility is enabled
 description: This article describes the steps you should take before running an on-hand consistency check while the Inventory Visibility integration batch job is enabled.
-author: yuhuiyou
-ms.date: 08/02/2021
-ms.topic: article
-ms.search.form:
-audience: Application User
+author: yufeihuang
+ms.author: yufeihuang
 ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 04/05/2023
+audience: Application User
 ms.search.region: Global
-ms.author: yuhuiyou
-ms.search.validFrom: 2022-01-17
-ms.dyn365.ops.version: 10.0.21
+ms.custom: bap-template
 ---
 
 # Running on-hand consistency checks while Inventory Visibility is enabled
