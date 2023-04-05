@@ -1,29 +1,28 @@
 ---
 # required metadata
 
-title: Intercompany journals: Financial dimension defaulting on multiline vs. single-line vouchers
-description: This article answers some commonly asked questions regarding intercompany journals.
+title: Intercompany journals: Dimension values on multi-line vs single line journal
+description: This article answers some commonly asked questions regarding intercompany journals and dimension values
 author: kweekley
-ms.date: 04/04/2023
-ms.topic: article
+ms.date: 04/05/2023
+ms.topic: index-page
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
+# ms.custom: 
+ms.search.region: Global 
 # ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2022-08-01
-ms.dyn365.ops.version: 10.0.29
+ms.search.validFrom: 2023-03-05
+ms.dyn365.ops.version: 10.0.14
+
 
 ---
 
