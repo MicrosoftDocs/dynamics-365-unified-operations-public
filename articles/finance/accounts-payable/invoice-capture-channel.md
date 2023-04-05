@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage channels in Invoice capture solution
+title: Manage channels in the Invoice capture solution
 description: This article provides information about how to manage channels in the Invoice capture solution.
 author: sunfzam
 ms.date: 04/05/2023
@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Manage channels in Invoice capture solution
+# Manage channels in the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -156,7 +156,4 @@ A sample payload is below:
  - If the flow is successfullly generated and activated, the **Manage flow** status will be **On**.  
  - If the flow is generated but not activated, administrators can click **Edit** to setup the flow.  
 
-### Security 
-
-AP admin with assigned Environment maker is allowed to create channels.  
 
