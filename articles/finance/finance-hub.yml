@@ -111,9 +111,7 @@ additionalContent:
     - title: Accounts receivable
       links:
       - url: /dynamics365/finance/accounts-receivable/accounts-receivable
-        text: Overview
-      - url: /dynamics365/finance/accounts-receivable/revenue-recognition-overview
-        text: Revenue recognition
+        text: Overview    
       - url: /dynamics365/finance/accounts-receivable/subscription-billing-summary
         text: Subscription billing
       - url: /dynamics365/finance/cash-bank-management/tasks/customer-payment-overview
