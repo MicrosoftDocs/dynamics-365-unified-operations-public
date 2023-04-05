@@ -102,6 +102,23 @@ To configure a Commerce online store for Apple Pay, follow these steps.
 
 1. After the merchant information has been entered, run the **1070** channel configuration distribution schedule job.
 
+#### Add Apple Pay to the Store Payment Method
+In your Channel, add the Apple Pay payment method to the desired payment method for the configuration. If setting up a new payment method on the store for Apple Pay, follow these steps:
+
+1. In Commerce Headquarters, go to **Retail and Commerce > Channel setup > Payment methods**.
+2. Select **New**, set a **Payment method** (the Id for the payment method, normally using numerical items in the demonstrational data shipped), a **Payment method name** (example: 'ApplePay'), and set the **Default function** to **Wallet**.
+3. Click **Save**
+4. Navigate to your channel (Retail and Commerce > Channels > Online stores; or for POS, use the 'All Stores'), go to **Set up** and under the **Set Up** section, select **Payment methods**.
+5. Click on **New**.
+6. On the **Payment method** field, select the Apple Pay option set above. The **Payment method name** and **Function** should populate from the payment method values set above.
+7. Under the **General** fast tab and **Commerce** section, set **Operation name** to **Pay card**.
+8. Under the **General** fast tab and **Commerce** section, set **Connector name** (for Online stores, use **Dynamics 365 Payment Connector for Apple Pay**, for POS stores, use **Dynamics 365 Payment Connector for Adyen**).
+9. Fill out the **Posting** section for any Ledger account, Difference account, and Big difference account settings required.
+10. Click **Save**
+11. Select the **Electronic payment setup** while the new Apple Pay payment method is selected.
+12. Click **New** and set the Electronic payment types **ID** to the 'ApplePay' card type created.
+13. Click **Save**
+14. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule** and run the **1070** (Channel configuration) job.
 
 ### Configure content security policies in site builder
 
