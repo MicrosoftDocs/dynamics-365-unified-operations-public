@@ -24,7 +24,8 @@ Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrate
 
 # Omnichannel media management how-to guides
 ## Product media assignments
-[todo]
+The following topics cover the steps to author and assign media to products.  
+[!note] To perform these steps you will need to ensure that you have already followed the **Omnichannel media management prerequisites and configuration** steps to enable this feature for your environment.
 
 ### Assign media to simple products
 [todo]
