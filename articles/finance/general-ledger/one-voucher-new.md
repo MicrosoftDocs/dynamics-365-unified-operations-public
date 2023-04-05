@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: One voucher 2
+title: One voucher 
 description: This article provides information about One voucher for financial journals, which lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
 ms.date: 04/05/2023
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.0.2
 
 ---
 
-# One voucher 1
+# One voucher 
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -48,7 +48,7 @@ There are two categories of One voucher examples:
     - Bank transfers
     - Netting vendor/customer (same-party) balances
     - Transferring balances from customer A to customer B
-    - Vendor invoices that have multiple "lines" that contain fixed assets or projects
+    - Vendor invoices that have multiple lines that contain fixed assets or projects
 
 The preceding examples for each category represent valid business requirements. Sometimes, the business requirements can't be met in any other way: the organization must enter the transactions as One voucher. However, at other times, there are other valid ways to meet the business requirements: the transactions can be entered differently or use another feature.
 
@@ -58,7 +58,7 @@ Use of the One voucher functionality to meet business requirements might cause i
 
 Some scenarios might still work correctly, depending on your organization's setup. Here are areas where you may encounter issues:
 
-- **Settlement** – If more than one vendor or customer exists on a voucher, the accounting that's created during settlement might be incorrectly allocated to financial dimensions. For more information about issues that can occur during settlement, see Single voucher with multiple customer or vendor records.
+- **Settlement** – If more than one vendor or customer exists on a voucher, the accounting that's created during settlement might be incorrectly allocated to financial dimensions. For more information about issues that can occur during settlement, see [Single voucher with multiple customer or vendor records](./accounts-payable/single-voucher-multiple-customer-vendor-records.md).
 - **Tax calculation** – If more than one voucher or customer exists on a voucher, the tax calculation might be incorrect.
 - **Transaction reversal** – If more than one subledger account type exists on a voucher, when a single subledger transaction is reversed, an incorrect accounting entry might be posted for the reversal in the general ledger. For example, if you acquire multiple assets in a single voucher and then reverse the acquisition of one of the assets, the general ledger accounting will be incorrect for the reversal.
 - **Reporting and inquiries** – If you include more than one subledger account type (for example, **Vendor** and **Customer**) on a voucher, reports/inquiries will show only the first account value that's found.
