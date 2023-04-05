@@ -1,6 +1,6 @@
 ---
-
 # required metadata
+
 title: Intercompany journals: Financial dimension defaulting on multiline vs. single-line vouchers
 description: This article answers some commonly asked questions regarding intercompany journals.
 author: kweekley
