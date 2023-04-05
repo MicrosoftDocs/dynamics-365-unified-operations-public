@@ -56,7 +56,7 @@ The Invoice capture solution provides a configuration space where you can load b
 
 
 ### Sync master data
-An example for Manage legal entities and Manage vendors will work the same. In Manage legal entities, AP admin can't create legal entities manually. Instead, the legal entities are synchronized from Dynamics 365 Finance following these steps: 
+An example for **Manage legal entities** and **Manage vendors** work the same. In **Manage legal entities**, accounts payable administrators can't create legal entities manually. Instead, the legal entities are synchronized from Dynamics 365 Finance using these steps: 
 1. Go to **Setup > System setup > Manage legal entities**.
 2. Select **Sync**. 
 3. Select **OK** in the confirmation dialog box. 
@@ -64,7 +64,7 @@ An example for Manage legal entities and Manage vendors will work the same. In M
 After synchronization is completed, a message will show the number of new legal entities. The list view will refresh automatically to show the new legal entities.  
 
 >[!Note]
->An Accounts payable admin will manually trigger the sync. 
+>An Accounts payable administrator will manually trigger the sync. 
 
 
 
