@@ -43,7 +43,7 @@ Before you run an on-hand consistency check on all items, we recommend that you 
 The initial push with the `Resync` action will clean up legacy Supply Chain Management data in Inventory Visibility service and then resync the `InventSum` and `WHSInventReserve` tables to the Inventory Visibility Service.
 
 > [!IMPORTANT]
-> The Inventory Visibility service will return correct results after the reenabled *Inventory Visibility integration* batch job has completed.
+> The Inventory Visibility service will resume delivering correct query results after the reenabled *Inventory Visibility integration* batch job has completed its initial push work.
 
 ## Prepare for and run an on-hand consistency check on selected items
 
