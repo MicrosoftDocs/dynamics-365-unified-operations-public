@@ -3009,6 +3009,19 @@
           href: sales-marketing/tasks/register-sales-commissions.md
         - name: Set up sales commission rules
           href: sales-marketing/tasks/set-up-sales-commission-rules.md
+
+      - name: Advanced export control
+        items:
+        - name: Advanced export control overview
+          href: sales-marketing/export-control-overview.md
+        - name: New settings added by the advanced export control feature
+          href: sales-marketing/export-control-in-scm.md
+        - name: Configure advanced export control
+          href: sales-marketing/export-control-configure.md
+        - name: Rule evaluation
+          href: sales-marketing/export-control-rule-evaluation.md
+        - name: Export control licenses
+          href: sales-marketing/export-control-licenses.md
       - name: Customer portal for Dynamics 365 Supply Chain Management
         items:
         - name: Customer portal overview
