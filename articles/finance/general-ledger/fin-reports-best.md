@@ -39,11 +39,11 @@ The goal is to help users enhance report design, performance, and maintainabilit
 ## Optimize report design 
 
 Based on existing report engine optimization rules, consider the following suggestions to improve report design:
-1.	Avoid using row modifiers in row definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria in column definition. Instead, consider using generic row definitions.
-2.	Avoid using dimension or attribute filters in column definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria 
+1.	Avoid using dimension or attribute filters in column definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria 
 in row definition.
-3.  Avoid cross ledger/company consolidation for the ledger/company with different accounting currencies if that level of consolidation isn't required.
-4.  Reduce the number of tree units and columns in the design file by breaking a single large design into several smaller designs that can be generated in parallel.
-5.  Alternatively, utilize different report details levels (account and transaction level detail) in report design to spread out, pivot, and drill into various aspects
+2.  Avoid cross ledger/company consolidation for the ledger/company with different accounting currencies if that level of consolidation isn't required.
+3.  Reduce the number of tree units and columns in the design file by breaking a single large design into several smaller designs that can be generated in parallel.
+4.  Alternatively, utilize different report level details (account and transaction level detail) in report design to spread out, pivot, and drill into various aspects
 of the data.
-6.  Consider scheduling reports to run reports during off peak times when allowable or after scheduled posting runs.
+5.  Consider scheduling to run reports during off peak times when allowable or after scheduled posting runs.
+6.  Avoid using row modifiers in row definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria in column definition. Instead, consider using generic row definitions.
