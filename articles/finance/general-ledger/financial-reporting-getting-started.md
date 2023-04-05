@@ -223,7 +223,7 @@ The following steps walk through the process of turning on Event viewer messages
 
     A successful output in PowerShell will be verified with the message, **Competed RegisterETW script**.
 
-    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**:
+    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**: 
 
     * MR-Client
     * MR-DVT
