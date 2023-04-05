@@ -177,7 +177,7 @@ For information on the dark hours for each region, see [What are the planned mai
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-1 train schedule
 
-**App version: 10.0.1515.74**
+**App version: 10.0.1515.78**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
