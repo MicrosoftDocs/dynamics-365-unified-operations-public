@@ -2,7 +2,7 @@
 title: Dual-write home page
 description: This article provides links to information about dual-write.
 author: sericks007
-ms.date: 11/24/2021
+ms.date: 02/21/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
@@ -35,13 +35,14 @@ These topics describe dual-write integration.
 + [Guidance for how to set up dual-write](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing finance and operations apps
-
     + [Enable dual-write for existing finance and operations apps](enable-dual-write.md)
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
-    + [Enable table map for dual-write](enable-entity-map.md)
-  + [Separated Dual-write Application Orchestration package](separated-solutions.md)
-  + [Setup security roles and permissions](security-roles.md)
+    + [Enable table map for dual-write](enable-entity-map.md)  
++ [Separated Dual-write Application Orchestration package](separated-solutions.md)
++ [Setup security roles and permissions](security-roles.md)
++ [User-specified team owner](user-specified-team-owner.md)
++ [Uninstall dual-write application orchestration solutions](uninstall-solutions.md)
 
 ## Managing dual-write after setup
 
@@ -52,8 +53,7 @@ These topics describe dual-write integration.
 + [Pause dual-write for maintenance](pause-for-maintenance.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
-+ [User-specified team owner](user-specified-team-owner.md)
-+ [Reset dual-write environments](reset.md)
++ [Reset dual-write connections](reset.md)
 
 ## Mapping concepts between apps
 

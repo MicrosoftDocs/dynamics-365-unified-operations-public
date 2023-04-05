@@ -4,7 +4,7 @@
 title: Set up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/15/2022
+ms.date: 03/23/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -92,7 +92,7 @@ To configure a Commerce online store for Apple Pay, follow these steps.
     | Assembly Name          | The name of the assembly for the Dynamics 365 Payment Connector for Apple Pay. | Yes | Yes | Binary name |
     | Service Account ID     | The unique identifier of the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | Guid |
     | Merchant Account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes | No | MerchantIdentifier |
-    | Cloud API Key          | Enter the Adyen cloud API key. You can obtain this key by following the instructions in [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | Yes | No | abcdefg |
+    | Cloud API Key          | Enter the Adyen cloud API key. You can obtain this key by following the instructions in [Generate an API key](https://docs.adyen.com/development-resources/api-credentials#generate-api-key). | Yes | No | abcdefg |
     | Gateway Environment    | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Supported Currencies   | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [dynamic currency conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to obtain a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | ApplePay |
@@ -122,6 +122,10 @@ To set up Apple Pay as a checkout payment option on your site's (non-express) ch
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 Settings for the **Apple Pay** module are built into the module and connect with the configured Dynamics 365 Payment Connector for Apple Pay connector that's set up for the online channel in Commerce headquarters.
+
+#### Apple Pay payment module style
+
+The Commerce module library includes the Apple Pay module in the sample packaging, and there are references to the Apple Pay module in the default themes included with the Commerce sample sites. If you use Apple Pay and maintain your own theme set, to ensure your theme applies to the Apple Pay module you must include a **checkout-apple-pay.scss** style for your theme.
 
 ### Apple Pay payment behavior
 

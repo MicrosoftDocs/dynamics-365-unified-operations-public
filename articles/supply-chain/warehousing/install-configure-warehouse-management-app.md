@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Install and connect the Warehouse Management mobile app
 description: This article explains how to install the Warehouse Management mobile app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 author: Mirzaab
-ms.date: 02/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
-# ROBOTS: 
-audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 267694
-ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
-ms.search.region: global
-ms.search.industry: Manufacturing
 ms.author: mirzaab
-ms.search.validFrom: 2021-02-28
-ms.dyn365.ops.version: 10.0.17
-
+ms.reviewer: kamaybac
+ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.topic: how-to
+ms.date: 03/07/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Install and connect the Warehouse Management mobile app
@@ -35,14 +20,29 @@ This article explains how to download and install the Warehouse Management mobil
 
 The Warehouse Management mobile app is only for your internal business use. You may not republish or distribute the Warehouse Management mobile app externally in any app store or similar distribution service.
 
-## System requirements
+## Prerequisites
+
+### Operating system requirements
 
 The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
 
-## Turn Warehouse Management mobile app features on or off in Supply Chain Management
+### External URLs required by the app
+
+For the Warehouse Management mobile app to function correctly, your internal network must allow it to access the following external URLs:
+
+- *.microsoft.com
+- *.microsoftonline.com
+- login.windows.net
+- *.appcenter.ms
+- *.ces.microsoftcloud.com
+- *.onyx.azure.net
+- play.google.com
+- itunes.apple.com
+
+### Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
 To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
@@ -50,14 +50,13 @@ To use the Warehouse Management mobile app, the *User settings, icons, and step 
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
 
-For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
+For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to manage your deployments of the Warehouse Management mobile app, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
 
 ### Install the app from an app store
 
-The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
+The easiest way to install the app on a single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
-
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
 
 ### Download the app from Microsoft App Center
@@ -66,7 +65,6 @@ As an alternative to installing from an app store, you can instead download the 
 
 - **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)  
     For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](/appcenter/distribution/installation).
-
 - **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)  
     If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
 
@@ -146,7 +144,7 @@ Authentication with Azure AD provides a secure way of connecting a mobile device
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use non-exportable certificates.
 
-You must make the certificate available locally on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Use certificates for authentication in Microsoft Intune](/mem/intune/protect/certificates-configure).
+You must make the certificate available locally on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
 
 ## Configure the Warehouse Management mobile app for cloud and edge scale units
 

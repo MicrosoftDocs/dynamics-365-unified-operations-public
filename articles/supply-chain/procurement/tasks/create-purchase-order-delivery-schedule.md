@@ -5,7 +5,7 @@ title: Create a purchase order with a delivery schedule
 description: This article demonstrates how to create a delivery schedule for a purchase order. 
 author: GalynaFedorova
 ms.date: 08/01/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

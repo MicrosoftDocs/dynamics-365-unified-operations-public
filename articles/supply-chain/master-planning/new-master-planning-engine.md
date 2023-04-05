@@ -31,9 +31,13 @@ For more information about the deprecated master planning engine, see the announ
 
 Planning Optimization is the standard master planning engine for all new cloud deployments. It must be used for all new deployments that don't generate planned production orders during master planning. If you're setting up a new deployment that requires functionality that isn't currently supported by Planning Optimization, you can request an exception that will allow you to use the deprecated master planning engine instead.
 
+Starting with Supply Chain Management version 10.0.32, if you are rolling out new companies (legal entities) for an implementation that you are still developing before going live, you must use Planning Optimization for the new companies. However, you can continue to use the deprecated master planning engine for one or more previously created companies (until you are ready to migrate them) even while using Planning Optimization for the others. Therefore, Microsoft will now grant exceptions on a per-company basis. For instructions on how to set a company to continue to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](planning-optimization/get-started.md#exclude-po).
+
 ## Existing deployments
 
 Owners of existing cloud-based deployments that depend on master planning must plan to migrate to Planning Optimization. If your implementation depends on functionality that Planning Optimization doesn't currently support, you must request an exception to continue to use the deprecated master planning engine.
+
+Starting in Supply Chain Management version 10.0.32, it's possible to allow some companies (legal entities) to run Planning Optimization while others continue to use the deprecated master planning engine until they are ready to be migrated. Therefore, Microsoft will now grant exceptions on a per-company basis. The exception only applies to existing companies&mdash;starting with version 10.0.32, all new companies that you add to your existing environment must use Planning Optimization. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](planning-optimization/get-started.md#exclude-po).
 
 ## Migration recommendations
 
@@ -54,7 +58,7 @@ Manufacturing companies might be affected by some of the minor architectural dif
 
 ## Exception process for version 10.0.32 and later
 
-As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation. The following subsections provide details about the possible cases.
+As of Supply Chain Management version 10.0.32, the process of evaluating your system and moving to Planning Optimization is fully automated. The system will analyze your setup and automatically show you the correct instructions for your situation and for each company (legal entity). The following subsections provide details about the possible cases.
 
 ### Deployments where Planning Optimization supports all required features
 

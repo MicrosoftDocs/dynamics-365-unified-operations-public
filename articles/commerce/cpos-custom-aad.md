@@ -20,7 +20,11 @@ ms.search.validFrom: 2017-06-20
 
 This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Azure Active Directory (Azure AD) app
 
-By default, Store Commerce for web points to a registered first-party Microsoft app in Azure Active Directory (Azure AD). Therefore, you can use Store Commerce for web without having to make any changes in Azure AD. However, you might want to point your instance of Store Commerce for web to a custom Azure AD app that you control. This article explains how to configure Store Commerce for web to use a custom Azure AD app.
+By default, Store Commerce for web points to a registered first-party Microsoft app in Azure Active Directory (Azure AD). Therefore, you can use Store Commerce for web without having to make any changes in Azure AD. However, you might want to point your instance of Store Commerce for web to a custom Azure AD app that you control. This article explains how to configure Store Commerce for web to use a custom Azure AD app. 
+
+> [!NOTE] 
+> This article only applies to self-hosted Commerce Scale Unit (CSU) installations or development using a self-hosted CSU. 
+
 
 ## Set up a custom Retail Server app in Azure AD
 
@@ -90,7 +94,7 @@ To upgrade an existing custom Store Commerce for web Azure AD app created before
 
 ## Update the Store Commerce for web configuration file
 
-Open the Store Commerce for web config.json file, and make the following updates in it.
+The following steps only apply to a CSU (self-hosted) that uses the Retail SDK. If you are using a sealed CSU installer, this process is completed automatically during the installation process. Open the Store Commerce for web config.json file, and make the following changes.
 
 1. Replace the **AADClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
 1. Replace the **AADRetailServerResourceId** key value with the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad) section.

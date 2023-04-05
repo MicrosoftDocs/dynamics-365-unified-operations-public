@@ -15,7 +15,6 @@ ms.search.validFrom: 2017-06-20
 # Inbound inventory operation in POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
 

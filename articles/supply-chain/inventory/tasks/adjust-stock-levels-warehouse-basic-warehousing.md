@@ -5,7 +5,7 @@ title: Adjust stock levels in the warehouse (basic warehousing)
 description: This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse. 
 author: yufeihuang
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

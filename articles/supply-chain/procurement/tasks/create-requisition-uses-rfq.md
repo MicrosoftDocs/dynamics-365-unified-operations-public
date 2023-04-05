@@ -5,7 +5,7 @@ title: Create a requisition that uses an RFQ
 description: This article explains how to add price and vendor information to a purchase requisition from an RFQ process. 
 author: GalynaFedorova
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
