@@ -172,7 +172,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 2 | March 20 to March 23, 2023 | April 1 to April 2, 2023 |
 | Station 3 | March 21 to March 24, 2023 | April 1 to April 2, 2023 |
 | Station 4 | March 27 to April 2, 2023 | April 8 to April 9, 2023 |
-| Station 5 | April 3 to April 6, 2023 | April 8 to April 9, 2023 |
+| Station 5 | April 3 to April 6, 2023 | April 15 to April 16, 2023 |
 | Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-1 train schedule
