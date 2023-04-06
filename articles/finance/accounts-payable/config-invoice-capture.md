@@ -49,7 +49,7 @@ Invoice capture supports two data types for vendor invoice processing: legal ent
 
 **Vendors** are supplier organizations or sole proprietors who supply goods or services to a business, as defined in Dynamics 365 Finance. The vendor master data is used to automatically derive the vendor account, increasing the touchless rate in invoice processing. 
 
-The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities and vendors in Finance. When a supplier invoice arrives, the legal entity and vendor account must be correctly determined before transferring the invoice to the target system. The use of master data for the derivation of legal entities and vendor accounts can reduce maintenance work on mapping rules. 
+The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities and vendors in Finance. When a supplier invoice arrives, the legal entity and vendor account must be correctly determined before transferring the invoice to the target system. The use of master data to dervive legal entities and vendor accounts can reduce maintenance on mapping rules. 
 
 
 ### Sync master data
