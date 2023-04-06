@@ -23,7 +23,7 @@ ms.search.form: RetailSharedParameters, RetailDevice
 
 This article explains how to use guided device activation for Store Commerce for web and the Store Commerce app for Windows, Android, and iOS in Microsoft Dynamics 365 Commerce. This article also explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 
-For help diagnosing activation issues, see [Troubleshoot device activation problems](#troubleshoot-device-activation-problems) below. 
+For help with diagnosing activation issues, see [Troubleshoot device activation problems](#troubleshoot-device-activation-problems) below. 
 
 ## Activate Store Commerce using guided activation
 
@@ -55,7 +55,7 @@ For help diagnosing activation issues, see [Troubleshoot device activation probl
 
 ## Create a device ID from Store Commerce
 
-Features have been added to Store Commerce to allow you to create a device (that is, automatically generate a device ID) from Store Commerce so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can be only be used in Store Commerce if you configure settings in headquarters.
+Features have been added to Store Commerce to allow you to create a device (that is, automatically generate a device ID) from Store Commerce so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can only be used in Store Commerce if you configure settings in headquarters.
 
 To configure headquarters to allow you to create a device ID in Store Commerce, follow these steps.
 
@@ -78,16 +78,16 @@ If you encounter errors while activating your POS device, follow these steps and
 
 1. Complete the **Validate devices for activation** check in headquarters, and ensure that the device passes validation.
 1. On the client machine where you're activating the device, run the Commerce Scale Unit URL health check, and confirm that the health check is passed. Use the following URL format: `https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping`.
-1. The worker must be mapped to a Azure AD account (under **External identity**).
+1. The worker must be mapped to an Azure AD account (under **External identity**).
 1. The Azure AD account for mapping must belong to the same tenant.
 1. To map the worker to the Azure AD account, sign in to headquarters using the administrator account for Microsoft Dynamics Lifecycle Services (LCS).
 1. Confirm that the worker is set up as a user in the manager role (checked by validation).
 1. Confirm that the channel is published (checked by validation).
-1. Confirm that the channel database has the synced data from headquarters, and that download jobs are running. To check this, run the following SQL command in the channel database for the store. After running the comand, confirm that data is returned, and that the result isn't empty.
+1. Confirm that the channel database has the synced data from headquarters and that download jobs are running by executing the following SQL command in the channel database for the store. After running the command, confirm that data is returned, and that the result isn't empty.
 
    ```sql
    select * from crt.STORAGELOOKUPVIEW
-   ```
+   ``
 
 1. Set up the hardware profile under **Register** (checked by validation).
 1. Confirm that the register and store have a screen layout (checked by validation).
