@@ -192,4 +192,28 @@ We recommend that you review the automatic batch group assignment after the feat
 
 As a best practice, we recommend that you do not assign a high or critical priority to all batch jobs.
 
+## Batch Concurrency
+In Platform update 58, you can turn on the **(Preview) Batch concurrency control feature** in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Batch concurrency control is a feature that lets you set a maximum limit on the number of tasks that can run concurrently within a specific batch job. This way, you can prioritize your batch jobs and optimize the use of your resources. For example, you can limit the number of tasks for a low-priority batch job to avoid overloading the system and affecting the performance of other high-priority batch jobs.
+
+## Pre-requisites
+As a prerequisite Batch Priority Based Scheduling feature should be enabled on the environment
+
+## Why do you need batch concurrency control?
+
+Batch jobs are a common way to perform background tasks in your system, such as data processing, reporting, or integration. However, sometimes you may have too many batch tasks running at the same time, which can cause performance issues or resource contention. For example, you may have a batch job that runs every hour and processes a large amount of data, but you also have another batch job that runs every 15 minutes and requires a high priority. Without batch concurrency control, you cannot guarantee that the high-priority batch job will get enough resources to run smoothly and timely.
+
+> [!NOTE]
+> - This feature is available with version 10.0.34
+> - If concurrency control is not required, it should be set to zero. 
+> - It is not recommended for batch jobs with more than 5000 concurrent ready-to-execute tasks as it may degrade performance of batch scheduling.
+> - If the concurrency number is set higher than the total number of available batch threads in the environment, the feature will be ineffective.
+> - The max concurrency value applies to each batch job under the group and is not the cumulative value for the batch group.
+
+## How do you use batch concurrency control?
+To use batch concurrency control, you need to enable the (Preview) Batch concurrency control feature in Feature management. Then, you can go to Batch groups and select a batch group that you want to apply the concurrency limit to. In the Batch group form, you will see a new field called Max Concurrency. You can enter a positive integer value that represents the maximum number of tasks that can run at the same time for each batch job within this batch group. This setting will apply to all the batch jobs that belong to this batch group.
+
+For example, if you set the Maximum concurrent tasks to 10 for a batch group, then only 10 tasks from a batch job under this batch group can run concurrently. For the job,  if there are more than 10 tasks waiting to run, they will be queued until some of the running tasks are completed.
+
+The Max Concurrency setting does not affect the number of tasks that can run across different batch groups. It only applies to the tasks within the same batch group. If concurrency control is not required, it should be set to zero (populated by default), In case you want to completely **pause all batch jobs under the Batch Group, set this value to -1**. The tasks which have been picked up by the system before setting the value to -1 will continue to execute.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
