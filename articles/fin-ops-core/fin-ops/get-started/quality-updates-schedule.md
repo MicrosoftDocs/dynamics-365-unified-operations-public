@@ -80,8 +80,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.35 PQU-3 | October 20, 2023 | October 30 to December 16, 2023 |
 | 10.0.36 PQU-1 | September 29, 2023 | October 9 to November 11, 2023 |
 | 10.0.36 PQU-2 | October 27, 2023 | November 6 to December 16, 2023 |
-| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023, to February 24, 2024 |
-| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023, to January 6, 2024 |
+| 10.0.36 PQU-3 | January 12, 2024 | January 22 to February 24, 2024 |
+| 10.0.37 PQU-1 | November 3, 2023 | November 13 to January 6, 2024 |
 | 10.0.37 PQU-2 | December 30, 2023 | January 8 to February 10, 2024 |
 | 10.0.37 PQU-3 | January 27, 2024 | February 5 to March 9, 2024 |
 | 10.0.37 PQU-4 | February 23, 2024 | March 4 to April 6, 2024 |
