@@ -32,11 +32,11 @@ For help with diagnosing activation issues, see [Troubleshoot device activation 
 
     ![POS Wizard, before you start page.](media/p24.png)
 
-1. Under **Server URL**, enter either the Retail Server URL or the Cloud POS URL), and then select **Next**. You can find the Retail Server URL in Commerce headquarters in the **Hardware Station** section for your store at **Retail and Commerce \> Channels \> Stores \> \<your store\>**. You can find the Cloud POS URL in headquarters in the **Cloud POS URL** field under any device of type Retail Cloud POS at **Retail and Commerce \> Channel Setup \> POS Setup \> Devices**.
+1. Under **Server URL**, enter either the Retail Server URL or the Cloud POS URL, and then select **Next**. You can find the Retail Server URL in Commerce headquarters in the **Hardware Station** section for your store at **Retail and Commerce \> Channels \> Stores \> \<your store\>**. You can find the Cloud POS URL in headquarters in the **Cloud POS URL** field under any device of type Retail Cloud POS at **Retail and Commerce \> Channel Setup \> POS Setup \> Devices**.
 
     [![POS Wizard, add server URL page.](./media/p18.png)](./media/p18.png)
 
-1. Use your Azure Active Directory (Azure AD) credentials to sign in. The Azure AD account must already be mapped. For instructions, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+1. Sign in using your Azure Active Directory (Azure AD) credentials. The Azure AD account must already be mapped. For instructions, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
 1. Select **Next** to populate the list of stores.
 1. Select the correct store in the list, and then select **Next**.
 
@@ -57,7 +57,7 @@ For help with diagnosing activation issues, see [Troubleshoot device activation 
 
 Features have been added to Store Commerce to allow you to create a device (that is, automatically generate a device ID) from Store Commerce so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can only be used in Store Commerce if you configure settings in headquarters.
 
-To configure headquarters to allow you to create a device ID in Store Commerce, follow these steps.
+To configure headquarters settings that allow you to create a device ID in Store Commerce, follow these steps.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> General**.
 1. Under **Devices,** set **Allow register association from device** to **Yes**.
@@ -78,8 +78,8 @@ If you encounter errors while activating your POS device, follow these steps and
 
 1. Complete the **Validate devices for activation** check in headquarters, and ensure that the device passes validation.
 1. On the client machine where you're activating the device, run the Commerce Scale Unit URL health check, and confirm that the health check is passed. Use the following URL format: `https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping`.
-1. The worker must be mapped to an Azure AD account (under **External identity**).
-1. The Azure AD account for mapping must belong to the same tenant.
+1. Confirm that the worker is mapped to an Azure AD account (under **External identity**). This mapping is required.
+1. Confirm that the Azure AD account for mapping belongs to the same tenant, which is required.
 1. To map the worker to the Azure AD account, sign in to headquarters using the administrator account for Microsoft Dynamics Lifecycle Services (LCS).
 1. Confirm that the worker is set up as a user in the manager role (checked by validation).
 1. Confirm that the channel is published (checked by validation).
