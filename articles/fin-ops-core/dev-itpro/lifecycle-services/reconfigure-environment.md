@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.3
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Reconfigure environments to take a new platform or topology
 

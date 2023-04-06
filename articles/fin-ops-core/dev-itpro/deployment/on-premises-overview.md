@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform Update 8
 ms.custom: 23401,  ""intro-internal
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # On-premises deployment overview
 
