@@ -46,18 +46,18 @@ The different invoices types will impact what type of messages with different co
 
 After deployment, a **Default configuration** group is created. This **Default configuration** group can't be changed or deleted. 
 
-Administrators can assign different configuration groups to the vendor, legal entity, and the system. After a vendor account and legal entity are determined, the system will check if a configuration group is assigned to the vendor. If no configuration group is found, the legal entity will be checked for an assigned configuration group. If there no configuration group assigned to either the vendor or legal entity, the configuration group specified in **System preference** will be used. 
+Administrators can assign different configuration groups to the vendor, legal entity, and the system. After a vendor account and legal entity are determined, the vendor will be checked for an assigned configuration group. If no configuration group is found, the legal entity will be checked for an assigned configuration group. If there no configuration group assigned to neither the vendor or legal entity, the configuration group specified in **System preference** will be used. 
 
 
 ## Manage configuration groups
 
-To manage configuration groups, go to **Setup**, and then select **System setup \> Define configuration groups component**.
+To manage configuration groups, go to **Setup**, and select **System setup \> Define configuration groups component**.
 
 To create a new configuration group, select **Copy a configuration group**. You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all fields except **Group name** and **Group description**. After the configuration group is duplicated, select **OK**.
 
 ### Define confidence score of invoice recognition  
 
-Defines the quality standard for invoice data to be recognized by AI Builder. When the recognition is finished, structured invoice data and the corresponding confidence score for each field on the invoice are sent to AI builder. You can configure the confidence scores to indicate differences in the severity of the detected errors. 
+Users can define the quality standard for invoice data to be recognized by AI Builder. When the recognition is finished, structured invoice data and the corresponding confidence score for each field on the invoice are sent to AI builder. You can configure the confidence scores to indicate differences in the severity of the detected errors. 
 
 ### Define mandatory review needed before invoice creation:  
 
@@ -70,24 +70,24 @@ In Invoice capture, there are different invoice types for incoming invoices. The
  - The invoice fields (on Header or lines) to be displayed in the side-by-side viewer. 
  - Together with the setting in Dynamics 365 Finance to decide which data entity API in recipient side will be called (using pending vendor invoice or invoice journal).  
 ### Supported invoice types
-There are three invoice types supported in Invoice capture: 
+There are three invoice types in Invoice capture: 
  - PO invoice - invoices that are associated with purchase orders and the purchase order details have to be decided on each invoice line. Both header and lines are required to be reviewed in Invoice capture. 
- - Header-only - invoices are associated with purchase orders. The purchase order is mandatory on the invoice header and has to be correctly assigned. The invoice lines will be automatically created from the purchase order in Dynamics 365 Finance by enabling the **Automatically create invoice lines** feature. After this feature is enabled, AP clerks won't need to review the line details in Invoice capture. In addition, the line details won’t be displayed in the side-by-side viewer. 
- - Cost invoice - invoices contain non-stock items which could be either service items or procurement category items. 
+ - Header-only - invoices that are associated with purchase orders. The purchase order is a mandatory field on the invoice header. The invoice lines will be automatically created from the purchase order in Dynamics 365 Finance by enabling **Automatically create invoice lines**. After this feature is enabled, users don't need to review the line details in Invoice capture. In addition, the line details won’t be displayed in the side-by-side viewer. 
+ - Cost invoice - invoices that contain non-stock items that can be either service items or procurement category items. 
 
 The Accounts payable administrator can create a configuration group and select the invoice type for the supported invoice type and assign the configuration group to the vendor level. This increases the touchless rate of invoice processing in Invoice capture. 
 
 ### Define the control of invoice fields 
 
-For each invoice type, the administrator can define different fields to be displayed in the side-by-side view as well as add or remove default fields and set a field as mandatory.  
+For each invoice type, different fields can be selected to display in the side-by-side view, add or remove default fields and set fields as mandatory.  
 
 
 ### Manage file filters (optional)
 
-Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files(Pending)** list. These fields are shown as **Cancelled** and won't be processed by recognitive service unless the AP clerk include them manually. 
+Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files(Pending)** list. These fields are shown as **Cancelled** and won't be processed by recognitive service unless the user includes them manually. 
 This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. 
 
-When the Invoice capture solution is installed, a default file filter is defined and is global. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
+When the Invoice capture solution is installed, a default file filter is defined. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
 
 ### Accepted file size
 
@@ -109,6 +109,6 @@ The following file types are currently supported:
 
 #### Supported file names 
 
-The accounts payable administrator can filter out files that aren't invoices by using file name rules. Different rules can be applied to only accept files when the name contains predefined strings or exclude files that contain the defined strings.
+Users can filter out files that aren't invoices by using file name rules. Different rules can be applied to only accept files when the name contains predefined strings or exclude files that contain the defined strings.
  
 
