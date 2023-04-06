@@ -1306,6 +1306,8 @@
           href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
           href: general-ledger/cant-reverse-transctns.md
+        - name: Intercompany journals and financial dimensions  
+          href: general-ledger/intercompany-journal.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -3264,6 +3266,8 @@
             href: localizations/ltm-core-tax-id-type.md
           - name: Tax application for Latin America
             href: localizations/ltm-core-tax-application.md
+          - name: Document classes for Latin America
+            href: localizations/ltm-core-document-class.md
           - name: Document class types for Latin America
             href: localizations/ltm-core-document-class-type.md
           - name: Document class letter for Latin America

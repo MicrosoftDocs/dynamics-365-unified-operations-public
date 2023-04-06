@@ -27,11 +27,11 @@ PQUs are cumulative builds of hotfixes that are delivered with [near-zero downti
 
 ## Why is Microsoft introducing PQUs?
 
-Before the introduction of PQUs, most customers didn't receive fixes for service issues until they deployed their next service update. Therefore, businesses could be unnecessarily affected by service issues that a fix was already available for. PQUs get fixes to customers more quickly.
-
+Before the introduction of PQUs, most customers didn't receive fixes for service issues until they deployed their next service update. Therefore, businesses could be unnecessarily affected by service issues that a fix was already available for. PQUs get fixes to customers more quickly
 ## What investments is Microsoft making to enable safe deployments of PQUs?
 
 Microsoft has invested in the following technologies and processes to make the PQU process non-disruptive:
+
 
 - **Higher-quality concise payloads** – The changes that PQU payloads contain are limited to bug fixes and regulatory changes that are supported by flighting. We apply extra diligence when we backport changes into a PQU, to further reduce the risk of unintended regressions.
 - **Safe deployment rollout process** – Deployment of PQUs follows a safe deployment process. Each PQU is first delivered to a single region that contains a small group of customers who have the highest tolerance for risk. Then, if no regressions are identified, the process continues through a broader group of customers, based on geographies (stations), until all customers are using the new version. This deployment model is used across Microsoft online services to help build confidence in an update as it's delivered to more customers, and to help minimize the impact if unforeseen issues are detected.
