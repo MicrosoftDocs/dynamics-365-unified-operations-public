@@ -13,43 +13,42 @@ ms.dyn365.ops.version: 10.0.30
 ---
 # Branching overview
 
-Branching configurations for X++ repositories vary depending on the development team's preference and the finance and operations apps lifecycle. If the implementation already has a preferred branching structure, and it meets the [minimum branching criteria](#minimum-branching-criteria) outlined below, you can use it to manage new development. Alternatively, you can evaluate the other branching structure options explained in this article.
+Branching configurations for X++ repositories (repos) vary, depending on the development team's preference and the finance and operations app lifecycle. If the implementation already has a preferred branching structure, and it meets the [minimum branching criteria](#minimum-branching-criteria) that are outlined later in this article, you can use it to manage new development. Alternatively, you can evaluate the other branching structure options that are explained in this article.
 
 ## Considerations
 
 You'll find that a few elements of the X++ development cycle differ from general application development. Keep the following items in mind as you consider how to structure your branches:
 
-- ERP systems are business-critical environments. When designing your code management infrastructure, you should prioritize design elements that minimize both the risk of major production issues, and the disaster recovery timeline.
-- Due to the complexity of, and the interdependency on the standard system code, it's generally a good idea to perform both automated and manual testing of **all critical business processes** after each code update. This testing can be lengthy, so plan for a branch to contain this in-test code for long spans of time while it is being validated.
-- Merge conflicts are relatively frequent with X++ due to the pattern of dev teams frequently focusing their collective attention on enhancing specific modules and areas of the product. Plan a branching strategy that reduces the frequency of collisions and eases the resolution of collisions when they do occur.
+- Enterprise resource planning (ERP) systems are business-critical environments. When you design your code management infrastructure, you should prioritize design elements that help minimize both the risk of major production issues and the disaster recovery timeline.
+- Because of the complexity of, and interdependency on, the standard system code, it's generally a good idea to do both automated testing and manual testing of **all critical business processes** after each code update. Because this testing can be lengthy, you should plan to have a branch to contain the in-test code for long spans of time while it's being validated.
+- Because dev teams frequently focus their collective attention on enhancing specific modules and areas of the product, merge conflicts are relatively frequent for X++. Therefore, you should plan a branching strategy that helps reduce the frequency of collisions and makes collisions easier to fix when they occur.
 
-## Minimum Branching Criteria
+## Minimum branching criteria
 
-At a minimum, any X++ repository branching strategy should support:
+At a minimum, any X++ repo branching strategy should support the following criteria:
 
-- The isolation of un-tested development code, or code that's in development. Developers should be protected from teammates accidentally breaking any active development branch. If the team shares a single development branch, each developer needs to ensure they don't commit code that breaks teammates. Additional configuration of the version control capabilities should be leveraged. Otherwise, isolating untested code from in-development code is an ideal way to provide this protection. 
-- The isolation of in-development code from test-eligible code. A code change may pass unit testing or manual developer testing but the associated task may still not be ready for functional testing. Any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
-- The isolation of in-test code from production code. This is the fundamental purpose of all version control: avoiding code releases to production environments until code changes have been fully validated.
-- Relatively long functional testing cycles. See the [Considerations](#considerations) section for more details on why finance and operations apps customizations take longer to validate.
+- **Isolation of untested development code or code that's in development** – Developers should be protected from having teammates accidentally break any active development branch. If the team shares a single development branch, each developer must ensure that they don't commit code that breaks teammates' code. Additional configuration of the version control capabilities should be used for this purpose. Otherwise, isolation of untested code from in-development code is an ideal way to provide this protection. 
+- **Isolation of in-development code from test-eligible code** – Although a code change might pass unit testing or manual developer testing, the associated task might not yet be ready for functional testing. Any X++ branching structure should clearly notate when a collection of changes is ready for functional testing.
+- **Isolation of in-test code from production code** – The fundamental purpose of all version control is to help prevent code releases to production environments until code changes have been fully validated.
+- **Relatively long functional testing cycles** – For more information about why finance and operations app customizations take longer to validate, see the [Considerations](#considerations) section of this article.
 
-## Branch Policy Guidance
+## Branch policy guidance
 
-Below are branch policy best practices we recommend regardless of which branching strategy you choose:
+We recommend the following branch policy best practices, regardless of the branching strategy that you choose:
 
-- The live/production code branch should be locked to prevent direct editing. Changes should only be made via merge from other branches.
-- Before functional testing begins, developers will move their code into the corresponding branch. It's recommended to define policies to protect branches from incomplete work. Using Git allows for a [minimum number of reviewers](/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser&preserve-view=true#require-a-minimum-number-of-reviewers) before pull requests can be completed. Team Foundation Version Control (TFVC) has mechanisms to ensure [check-ins are gated](/azure/devops/repos/tfvc/set-enforce-quality-gates?view=azure-devops&preserve-view=true).
+- The live/production code branch should be locked to prevent direct editing. Changes should be made only via merges from other branches.
+- Before functional testing begins, developers should move their code into the corresponding branch. We recommend that you define policies to help protect branches from incomplete work. Git lets you require a [minimum number of reviewers](/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser&preserve-view=true#require-a-minimum-number-of-reviewers) before pull requests can be completed. Team Foundation Version Control (TFVC) has mechanisms to ensure that [check-ins are gated](/azure/devops/repos/tfvc/set-enforce-quality-gates?view=azure-devops&preserve-view=true).
 
 ## Branching strategies
 
 ### Branching in TFVC
 
-A common branching strategy for teams using TFVC combines a Trunk-based approach with Developer isolation, and Release isolation. This approach attempts to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment. Read more about [Branching strategies in TFVC](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true).
+A common branching strategy for teams that use TFVC combines a trunk-based approach with developer isolation and release isolation. This strategy is an attempt to mirror the phases of the development cycle as code progresses chronologically from active development to functional testing to the live production environment. [Learn more about branching strategies in TFVC.](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true)
 
-When a developer believes their work item is ready for functional testing, they merge or "promote" all changes associated with their work from a dedicated development branch to a dedicated testing branch. The testing branch contains all code awaiting functional validation. After the changes associated with a work item pass functional validation, they are promoted to the dedicated branch that holds production ready code. The Production branch contains the code running on (or soon to be deployed to) the live environment.
+When a developer believes that their work item is ready for functional testing, they merge or "promote" all changes that are associated with their work from a dedicated development branch to a dedicated testing branch. The testing branch contains all code that's awaiting functional validation. After the changes that are associated with a work item pass functional validation, they're promoted to the dedicated branch that holds production ready code. The production branch contains the code that's running on the live environment (or that will soon be deployed to it).
 
 ### Branching in Git
 
-Git works very well with both a [Trunk-based approach](/devops/develop/how-microsoft-develops-devops) and [GitFlow approach](/devops/develop/how-microsoft-develops-devops#differences-from-github-flow). One of the strong recommendations of using Git branching is to keep branches short-lived and sync often to reduce the risk of merge conflicts. Read more about [Branching strategies in Git](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true).
+Git works very well with both a [trunk-based approach](/devops/develop/how-microsoft-develops-devops) and a [GitFlow approach](/devops/develop/how-microsoft-develops-devops#differences-from-github-flow). If you use Git branching, we strongly recommend that you keep branches short-lived and sync often to help reduce the risk of merge conflicts. [Learn more about branching strategies in Git.](/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&preserve-view=true)
 
-When a developer starts new work, a new branch can be created to hold the changes. The developer would make sure to keep the branch in sync with its origin branch and create pull requests often to validate their changes through build and test validation. At the completion of the development, the changes can be easily merged back with a [squash and merge operation](/azure/devops/repos/git/merging-with-squash?view=azure-devops&preserve-view=true). 
-
+When a developer starts new work, a new branch can be created to hold the changes. The developer should be sure to keep the branch in sync with its origin branch, and they should often create pull requests to validate their changes through build and test validation. At the completion of the development, the changes can easily be merged back through a [squash and merge operation](/azure/devops/repos/git/merging-with-squash?view=azure-devops&preserve-view=true).
