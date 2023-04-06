@@ -34,9 +34,9 @@ ms.dyn365.ops.version:
 
 In Invoice capture, the **Received files** page is a central place where invoice files are received from different sources.
 
-In most cases, the process in **Received files** is handled automatically and doesn't require manual intervention. However, when there are exceptions or errors, the Accounts payable clerk needs to ensure that all invoice files have been executed correctly to avoid omissions that could lead to financial losses to the company. 
+In most cases, the **Received files** process is handled automatically and doesn't require manual intervention. When there are exceptions or errors, the user needs to ensure that all invoice files have been accounted correctly to avoid omissions. 
 
-In **Manage file** filter, the various filter settings on the received invoice files can be applied. If the invoice files violate the filter rules, it won't be processed. The Accounts payable clerk can decide in **Received files** if invoices can be included again when the invoices are valid. 
+In the **Manage file** filter, the various filter settings on the received invoice files can be applied. If the invoice files violate the filter rules, it won't be processed. Users can decide in **Received files** if invoices can be included again when the invoices are valid. 
 
 ## View captured invoices
 
@@ -57,13 +57,13 @@ To upload invoice images:
 2. Select the files by clicking **+** frame.
 3. Drag and drop the files. The selected files will be displayed in the list.
 4. Click **Upload** and the files will start uploading immediately.  
- - Once complete, a successful message will be returned, and the uploaded files will be removed from the list.  
+ - Once complete, a successful message will be displayed, and the uploaded files will be removed from the list.  
 5. Close the pane. The **Received file** list will be automatically refreshed. 
 
 
 ## View history 
 
-Accounts payable clerks can select an invoice and click **View history** to view the processing details with description, message type and processing time. 
+Users can select an invoice and click **View history** to view the processing details with description, message type and processing time. 
 
 
 
