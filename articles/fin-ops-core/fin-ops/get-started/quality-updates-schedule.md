@@ -39,7 +39,7 @@ For information about the maintenance windows for each region, see [What are the
 | Station 6 | DoD, Government Community Cloud, China |
 
 > [!IMPORTANT]
-> The PQU build for every train is typically published to Lifecycle Services on the same day or the day after the change cutoff date that's shown in the high-level PQU train schedule. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments will receive PQUs on weekends.
+> The PQU build for every train is typically published to Lifecycle Services on the same day or the day after the change cutoff date that's shown in the high-level PQU train schedule. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments will receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4), or Premium performance test (tier5) sandboxes didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
 
 ## PQU 10.0.30 PQU-3 schedule
 
