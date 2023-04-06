@@ -36,34 +36,35 @@ ms.dyn365.ops.version:
 > If you installed the solution in private preview, you must uninstall the old solution before you continue.
 
 ## Prerequisites
-Invoice capture officially supports the Integrated Power Platform environment. Before you can install the Invoice capture solution, set up the connection between the environment and Dynamics 365 Finance environment by completely the following prerequisites:
+
+Invoice capture officially supports the Integrated Power Platform environment. Before you can install the Invoice capture solution, set up the connection between the environment and the Microsoft Dynamics 365 Finance environment by completing the following prerequisites.
 
 ### Integrated Power Platform environment
-1. Find the environment URL in the Power Platform admin center. Go to **Power Platform admin center > Environment > Environment details** page. 
-2. Replace the <Environment URL> in the below URL and open the “Finance and Operation Virtual Data Source configuration”. 
 
-https://<Environment URL>/main.aspx?cmdbar=true&forceUCI=1&navbar=off&pagetype=entityrecord&etn=msdyn_financeandoperationsvirtualentity&id=47c40dcb-35d6-e911-a95e-000d3a110bbd 
+1. In the Power Platform admin center, go to **Environment**, open the **Environment details** page, and find the environment URL.
+2. Replace **\<Environment URL\>** in the following URL with the environment URL that you found, and open the "Finance and Operation Virtual Data Source configuration."
 
-3. Keep the existing entries. 
-4. Fill the finance and operations target URL, Tenant Id, Application Id and Application Secret to the corresponding fields.  
+    `https://<Environment URL>/main.aspx?cmdbar=true&forceUCI=1&navbar=off&pagetype=entityrecord&etn=msdyn_financeandoperationsvirtualentity&id=47c40dcb-35d6-e911-a95e-000d3a110bbd`
 
-    
-### Non-integrated Power Platform environment    
+3. Keep the existing entries.
+4. Enter the finance and operations target URL, tenant ID, application ID, and application secret in the corresponding fields.
 
-For non-integrated Power Platform environment, it requires installing finance and operations virtual entity:
-1. Go to **Power Platform admin center > Resources > Dynamics 365 apps**. Find “Finance and Operations Virtual Entity”. 
-2. Select the environment and accept the terms of service. 
-3. Click **Install** to install finance and operations virtual entity in the selected environment. 
+### Non-integrated Power Platform environment
 
+For a non-integrated Power Platform environment, you must install the finance and operations virtual entity.
 
->[!NOTE]
->Invoice capture is supported on Dynamics 365 finance and operations version 10.0.31 and later.
+1. In the Power Platform admin center, go to **Resources \> Dynamics 365 apps**, and find "Finance and Operations Virtual Entity."
+2. Select the environment, and accept the terms of service.
+3. Select **Install** to install the finance and operations virtual entity in the selected environment.
 
-### Install and set up the solution
+> [!NOTE]
+> Invoice capture is supported in version 10.0.31 and later of finance and operations apps.
+
+## Install and set up the solution
 
 Install the Invoice capture solution:
 
-1. Go to AppSource, and select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you will see the solution installed in the selected environment in Power Apps.
+- Go to AppSource, and select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you will see the solution installed in the selected environment in Power Apps.
 
->[!NOTE]
->Go to **Setup system > Manage legal entities** and **Manage vendors** to confirm the entries are synchronized from Dynamics 365 Finance in the list.     
+> [!NOTE]
+> Go to **Setup system \> Manage legal entities**, and select **Manage vendors** to confirm that the entries in the list are synced from Finance.
