@@ -36,7 +36,7 @@ In Invoice capture, when an invoice is successfully recognized by AI Builder and
  
 ## Side-by-side viewer for the Invoice capture solution
 
-The side-by-side viewer provides an intuitive interface for viewing raw documents and invoice forms side by side. It leverages Microsoft's form recognition technology to automatically extract information from the raw document and populate the corresponding fields in the invoice page. Additionally, the viewer establishes a connection between the page fields and the original document, allowing users to navigate through the document with a single click. 
+The side-by-side viewer provides an intuitive interface for viewing raw documents and invoice forms side by side. It uses Microsoft's form recognition technology to automatically extract information from the raw document and populate the corresponding fields in the invoice page. Additionally, the viewer establishes a connection between the page fields and the original document, allowing users to navigate through the document with a single click. 
 
 ### Open the side-by-side viewer
 
@@ -45,7 +45,7 @@ In Microsoft Dynamics 365 Finance, you can open the side-by-side viewer from:
  - **Received files**, selecting an invoice that has been successfully captured and click **View capture invoices**.
 
 The key features of the side-by-side viewer are: 
- - Auto-population of fields on the invoice page with information extracted from raw documents, utilizing Microsoft's form recognition technology. 
+ - Auto-population of fields on the invoice page with information extracted from raw documents, using Microsoft's form recognition technology. 
  - Establishment of a connection between page fields and raw documents for effortless navigation and proofreading. 
  - Display of messages to help users correct errors on the invoice page, improving accuracy and efficiency. 
  - Resizable interface, accommodating various invoice formats. 
@@ -58,7 +58,7 @@ The document header is composed of four fields: **Status**, **Legal entity**, **
 
 On the left side pane of the interface, the document viewer displays the original document. The upper right corner allows users to adjust the page view by changing pages, zooming in or out, fitting the document to the page, or rotating it. 
 
-The message panel is a collapsible section that contains all errors, warnings, and information messages. It is located in the central area of the interface and can be expanded by clicking the message icon. Users can choose which types of messages to display. 
+The message panel is a collapsible section that contains all errors, warnings, and information messages. It's located in the central area of the interface and can be expanded by clicking the message icon. Users can choose which types of messages to display. 
 
 The invoice header fields can be customized through configuration groups and depend on the selected invoice type. 
 
@@ -73,7 +73,7 @@ To start to review the invoice, select **Start review**. The **Status** field is
 
 ### Assign legal entity 
 
-In the **Captured invoices** list, the legal entity might be missing as it isn't successfully derived. To not interrupt the invoice processing, the legal entity has to be assigned first and then users can review the invoices and make the corrections. 
+In the **Captured invoices** list, the legal entity might be missing as it isn't successfully derived. The legal entity has to be assigned before an invoice can be procssesed and then users can review the invoices and make the corrections. 
 
 1. Select the invoice and click **Assign legal entity**.
 2. Select the legal entity in the drop-down list. 
