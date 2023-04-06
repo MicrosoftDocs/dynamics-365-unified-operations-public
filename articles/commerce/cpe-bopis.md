@@ -4,7 +4,7 @@
 title: Configure BOPIS in a Dynamics 365 Commerce sandbox environment
 description: This article explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce sandbox environment after it has been provisioned.
 author: BrianShook
-ms.date: 06/14/2022
+ms.date: 04/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ After your Commerce environment has been provisioned and configured end to end, 
 
 ### Configure Modern POS
 
-BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Store Commerce for Windows, Android and iOS clients. If you're using Store Commerce for web, the point of sale (POS) client must be paired with a shared hardware station. This article explains how to configure BOPIS for Windows, Android and iOS clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
+BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Store Commerce for Windows, Android, and iOS clients. If you're using Store Commerce for web, the point of sale (POS) client must be paired with a shared hardware station. This article explains how to configure BOPIS for Windows, Android, and iOS clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select register **SANFRAN-5**, and then select **Edit**.
@@ -52,22 +52,18 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 
 ### Install Store Commerce
 
-See the [Store Commerce app](dev-itpro/store-commerce.md) and/or [Store Commerce for mobile platforms](dev-itpro/store-commerce-mobile.md) help topics for guidance on downloading and installing the Store Commerce app. 
+For guidance on downloading and installing the Store Commerce app, see [Store Commerce app](dev-itpro/store-commerce.md) and [Store Commerce for mobile platforms](dev-itpro/store-commerce-mobile.md). 
 
 ### Activate Store Commerce
 
-See the [Retail Device activation](dev-itpro/retail-device-activation.md) help topic for instructions on activating the Store Commerce app. 
+For guidance on activating the Store Commerce app, see [Retail device activation](dev-itpro/retail-device-activation.md). 
 
-    > [!NOTE]
-    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce sandbox environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) article.
-    
-6. When you're prompted to let your organization manage the device, select **This app only**.
-7. When activation is completed, select **Get started**.
+### Enable BOPIS in Store Commerce
 
-### Enable BOPIS in Modern POS
+To enable BOPIS in Store Commerce, follow these steps.
 
 1. Sign in to Store Commerce by using **000713** as the operator ID and **123** as the password.
-2. When you're prompted, select **Perform a non-drawer operation**.
+2. When prompted, select **Perform a non-drawer operation**.
 5. On the **Welcome** page, scroll to the right, and select the **Select hardware station** operation.
 6. Select **Manage**, set the **Use hardware station** option to **On**, and then select **OK**.
 7. Sign out of the POS, and then sign back in.
@@ -119,14 +115,14 @@ For information about how to synchronize online orders, see [Posting of online s
 
 ### Online orders that are retrieved in the POS have a non-zero balance due
 
-When an order is retrieved for in-store pickup, if the balance due isn't 0 (zero), make sure that Store Commerce is being used, and that the hardware station is active. If Store Commerce for web is being used, make sure that a shared hardware station is active. Some form of active hardware station is required to retrieve payments that were made online.
+When an order is retrieved for in-store pickup, if the balance due isn't 0 (zero), make sure that Store Commerce is being used, and that the hardware station is active. If you are using Store Commerce for web, make sure that a shared hardware station is active, because some form of active hardware station is required to retrieve payments that were made online.
 
 ### General issues with payment capture
 
 For all general issues, you should always consult the Store Commerce or Internet Information Services (IIS) Hardware Station event logs as a first step. You can find these logs under the following nodes in the Windows event log:
 
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-StoreCommerce
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
+- **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-StoreCommerce**
+- **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station**
 
 ## Additional resources
 
