@@ -45,7 +45,7 @@ After the Invoice capture solution is installed, default configurations are prov
 
 Invoice capture supports two data types for vendor invoice processing: legal entities and vendors. 
 
-**Legal entities** are organizations registered with legal authorities and are defined in Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This controls data access through business units and security roles, allowing AP clerks to view only the invoices assigned to their users. 
+**Legal entities** are organizations registered with legal authorities and are defined in Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This controls data access through business units and security roles, allowing Accounts payable clerks to view only the invoices assigned to their users. 
 
 **Vendors** are supplier organizations or sole proprietors who supply goods or services to a business, as defined in Dynamics 365 Finance. The vendor master data is used to automatically derive the vendor account, increasing the touchless rate in invoice processing. 
 
@@ -59,9 +59,7 @@ The **Manage legal entities** and **Manage vendors** processes work the same. In
 3. Select **OK** in the confirmation dialog box. 
 
 After synchronization is completed, a message will show the number of new legal entities. The list view will refresh automatically to show the new legal entities.  
-
->[!Note]
->An Accounts payable administrator will manually trigger the sync. 
+An Accounts payable administrator will manually trigger the sync. 
 
 
 
