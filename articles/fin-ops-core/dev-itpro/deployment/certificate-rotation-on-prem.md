@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Certificate rotation

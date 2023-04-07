@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30 
 ms.dyn365.ops.version: 10.0.12
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # On-premises disaster recovery configuration

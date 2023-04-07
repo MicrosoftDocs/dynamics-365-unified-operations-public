@@ -13,7 +13,8 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments

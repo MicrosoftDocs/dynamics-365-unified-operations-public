@@ -14,6 +14,8 @@ ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 ms.custom: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # What's new or changed in on-premises deployments of Dynamics 365 Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)

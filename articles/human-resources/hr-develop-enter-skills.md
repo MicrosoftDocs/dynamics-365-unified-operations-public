@@ -4,7 +4,6 @@
 title: Enter skills
 description: Works and managers can enter skills in Dynamics 365 Human Resources.
 author: twheeloc
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
