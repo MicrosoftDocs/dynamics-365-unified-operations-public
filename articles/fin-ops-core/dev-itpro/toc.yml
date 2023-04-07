@@ -530,8 +530,14 @@
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
           href: dev-tools/development-system-requirements.md
-      - name: Version control, metadata search, and navigation
-        href: dev-tools/version-control-metadata-navigation.md
+      - name: X++ Application lifecycle management
+        items: 
+        - name: Version control, metadata search, and navigation
+          href: dev-tools/version-control-metadata-navigation.md
+        - name: Branching
+          href: dev-tools/branching.md
+        - name: X++ in Git
+          href: dev-tools/git-intro.md
       - name: Build automation using Azure
         items:
         - name: Build automation using Microsoft-hosted agents and Azure Pipelines
