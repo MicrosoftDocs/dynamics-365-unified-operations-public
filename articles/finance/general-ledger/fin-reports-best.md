@@ -31,20 +31,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides tips and best practices for optimizing financial reports in Microsoft Dynamics 365 Finance based on customer feedback and common issues encountered. 
+This article provides tips and best practices for optimizing financial reports in Microsoft Dynamics 365 Finance, based on customer feedback and commonly encountered issues. 
 
-## Introduction
-The goal is to help users enhance report design, performance, and maintainability. The financial reporting report engine, like any other processing engine, is optimized for certain patterns of design. Adjusting the report design based on the general design guidelines allows the report engine to yield its best performance.
+The goal is to help users enhance report design, performance, and maintainability. The financial reporting report engine, like any other processing engine, is optimized for specific patterns of design. By adjusting the report design, based on the general design guidelines, you help the report engine achieve its best performance.
 
 ## Optimize report design 
 
-Based on existing report engine optimization rules, consider the following suggestions to improve report design:
-1.	Avoid using dimension or attribute filters in column definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria 
-in row definition.
-2.  Avoid cross ledger/company consolidation for the ledger/company with different accounting currencies if that level of consolidation isn't required.
-3.  Reduce the number of tree units and columns in the design file by breaking a single large design into several smaller designs that can be generated in parallel.
-4.  Alternatively, utilize different report level details (account and transaction level detail) in report design to spread out, pivot, and drill into various aspects
-of the data.
-5.  Consider scheduling to run reports during off peak times when allowable or after scheduled posting runs.
-6.  Avoid using row modifiers in row definition if the same criteria can be specified in other ways or if the criteria can be converted to criteria in column definition. Instead, consider using generic row definitions.
-7.  When including an image on the report, such as a company logo, use an image with the lowest resolution possible.
+Based on existing report engine optimization rules, consider the following suggestions to help improve report design:
+
+- Avoid using dimension or attribute filters in column definitions if the same criteria can be specified in other ways, or if the criteria can be converted to criteria in a row definition.
+- Avoid cross-ledger/cross-company consolidation for ledgers/companies that use different accounting currencies if that level of consolidation isn't required.
+- Reduce the number of tree units and columns in the design file by breaking a single large design into several smaller designs that can be generated in parallel.
+- Alternatively, use different report-level details (account-level and transaction-level details) in the report design to spread out, pivot, and drill into different aspects of the data.
+- Consider scheduling reports to run either during off-peak times (if allowable) or after scheduled posting runs.
+- Avoid using row modifiers in a row definition if the same criteria can be specified in other ways, or if the criteria can be converted to criteria in a column definition. Instead, consider using generic row definitions.
+- If you want to include an image (for example, a company logo) on the report, use an image that has the lowest possible resolution.
