@@ -13,7 +13,7 @@ ms.author: joshsantana
 ms.search.validFrom: 2023-03-22
 ---
 
-## Dynamics 365 Translation Service API
+# Dynamics 365 Translation Service API
 
 [!include [banner](../includes/banner.md)]
 
