@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 02/01/2023
+ms.date: 04/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,8 +83,8 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
     | Origin Key ("V002") or Client Key ("V003") | An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key).| Yes | No | *The full origin or client key* |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
-    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used to preview to shoppers before paying. Disabling is helpful for smaller, hand-held terminal devices. | No | No | True/False |
-    | Omitted payment methods | (*E-commerce and Call Center only*) Use this field to omit a payment method from the configuration where an iFrame is rendered for payments as configured against the merchant account. Multiple values can be semi-colon separated, and strings used must match the label as used in the Adyen portal. Some payment method's security criteria may interfere with the iFrame rendering and may be desired to omit from the configuration.  | No | No | "applepay;googlepay" |
+    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
+    | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Multiple values can be separated by semicolons, and the strings used must match the label used in the Adyen portal. Some payment method security criteria may interfere with the iFrame element rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 
 1. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
 
@@ -145,8 +145,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Origin Key | (*Card not present only*)  |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
-    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used to preview to shoppers before paying. Disabling is helpful for smaller, hand-held terminal devices. | No | No | True/False |
-    | Omitted payment methods | (*E-commerce and Call Center only*) |
+    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling the terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
+    | Omitted payment methods | (*E-commerce and call center only*) |
 
 1. On the Action Pane, select **Save**.
 
@@ -182,8 +182,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Origin Key | (*Card not present only*) |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
-    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used to preview to shoppers before paying. Disabling is helpful for smaller, hand-held terminal devices. | No | No | True/False |
-    | Omitted payment methods | (*E-commerce and Call Center only*) |
+    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
+    | Omitted payment methods | (*E-commerce and call center only*) |
 
 1. On the Action Pane, select **Save**.
 
@@ -269,8 +269,8 @@ To configure additional information for the connector in Commerce headquarters, 
     | Origin Key ("V002") or Client key ("V003") | (*E-commerce only*) 'An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key). | Yes | No | *The full origin or client key* |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
-    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used to preview to shoppers before paying. Disabling is helpful for smaller, hand-held terminal devices. | No | No | True/False |
-    | Omitted payment methods | (*E-commerce and Call Center only*) Use this field to omit a payment method from the configuration where an iFrame is rendered for payments as configured against the merchant account. Multiple values can be semi-colon separated, and strings used must match the label as used in the Adyen portal. Some payment method's security criteria may interfere with the iFrame rendering and may be desired to omit from the configuration.  | No | No | "applepay;googlepay" |
+    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
+    | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Multiple values can be separated by semicolons, and the strings used must match the label used in the Adyen portal. Some payment method's security criteria may interfere with the iFrame rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 
 1. On the Action Pane, select **Save**.
 
