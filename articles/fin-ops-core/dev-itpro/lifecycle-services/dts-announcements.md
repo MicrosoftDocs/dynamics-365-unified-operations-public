@@ -28,7 +28,7 @@ This article provides information about the new or changed features in Microsoft
 
 ## Incident update: DTS API failures impacting extension users
 
-The LCS team has identified the root cause of the problem. The necessary fixes will be rolled out in the next release, and we anticipate that the DTS API will be fully functional by April 7, 2023.
+The LCS team has identified the root cause of the problem. The necessary fixes will be rolled out in the next release, and we anticipate that the DTS API will be fully functional by April 15, 2023.
 
 We understand the inconvenience that this issue has caused, and appreciate your patience and continuous support for the DTS.
 
