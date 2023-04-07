@@ -234,7 +234,7 @@ If you're packaging your own version of the Store Commerce app by using the Comm
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this article.
 
-The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication is not supported in call center. Digital wallet modern payment methods requiring users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
+The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods requiring users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
 
 ### Configure additional information for the connector
 
