@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Document class type for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can configure the different types of document classes that your company will use. Use this configuration to group the document classes according to the characteristics that they have in common.
 
