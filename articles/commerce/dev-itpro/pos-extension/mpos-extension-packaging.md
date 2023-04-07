@@ -2,7 +2,7 @@
 title: Create a Modern POS extension package
 description: This article explains how to create a Modern POS extension package.
 author: josaw1
-ms.date: 02/24/2023
+ms.date: 04/07/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -14,8 +14,8 @@ ms.dyn365.ops.version: AX 10.0.18
 
 # Create a Modern POS extension package
 
-[!include [banner](../../../includes/banner.md)]
-[!include [banner](../includes/retailsdk-deprecation-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/retailsdk-deprecation-banner.md)]
 
 To create the extension installer for a Modern POS extension, follow these steps.
 
