@@ -16,6 +16,8 @@ ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.form: EntityStoreOnPrem
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # PowerBI.com integration with on-premises environments

@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Azure ExpressRoute and finance and operations apps

@@ -12,7 +12,6 @@ ms.search.region:
 ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-manager: anayash
 ---
 
 # Cash flow tax registers
