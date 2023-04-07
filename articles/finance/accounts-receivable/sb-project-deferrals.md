@@ -57,10 +57,20 @@ To create a deferral schedule from a time-and-material project, follow these ste
 3. **Add** a Billing rule with **Line type** of **Time and material**.
 4. Move the **ProjectID** to the Selected projects list.
 5. Select **Chargeable categories**. Move the desired categories for deferrals to the Selected categories list. 
-6. Enter project hour, expense, fee transactions.
+6. Enter project hour, expense, fee or sales order transactions.
+
+> [!NOTE]
+> A deferred option will display and will be marked on the line for transactions that are configured correctly for deferrals.
+
 7. Create and post an **invoice proposal**. Deferral schedules will be created when the invoice proposal is posted.
 
 The **All deferral schedules** page shows the newly created deferral schedule. By default, the **Transaction type** will reflect the originating project transaction type for the deferral.
 
 ## Viewing a deferral schedule from a project or a project contract
+
+To view a deferral for a project transaction:
+
+1. Go to **Posted transactions** from the project or project contract. 
+2. Select the project transaction.
+3. Select **Subscription billing** and then **Deferral schedules**.
 
