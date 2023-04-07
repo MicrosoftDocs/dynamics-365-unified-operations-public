@@ -4,7 +4,7 @@
 title: Set up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/23/2023
+ms.date: 04/07/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -35,8 +35,8 @@ The Dynamics 365 Payment Connector for Apple Pay connector reference is used in 
 
 An Apple merchant account is required to use Apple Pay with Adyen in Commerce. For information about how to set up Apple Pay in your test customer area, see [Apple Pay Drop-in integration](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#set-up-apple-pay). For information about what to do when you're ready to go live in your production environment, see [Going live](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live).
 
->[!IMPORTANT]
->If using the same Merchant Account with Adyen to configure Apple Pay as you use for the main Adyen Credit Card iFrame, when configuring the **Dynamics 365 Payment Connector for Adyen** connector option, be sure to include the Apple Pay payment method name as configured in your Adyen merchant account in the Connector's **Omitted payment methods** field. Any other payment method names you do not wish to show can be included in this field using semi-colon separation (example: 'applepay;googlepay'). Without this omission, the main Adyen credit card iFrame on the checkout page may attempt to load the Apple Pay button and fail due to security of the iFrame. Follow setup steps below to configure the main Apple Pay Connector and payment button outside of the main Adyen credit card iFrame.
+> [!IMPORTANT]
+> If using the same merchant account with Adyen to configure Apple Pay as you use for the main Adyen credit card iFrame element, when configuring the **Dynamics 365 Payment Connector for Adyen** connector option, be sure to include the Apple Pay payment method name as configured in your Adyen merchant account in the connector's **Omitted payment methods** field. Any other payment method names you don't want to display can be included in this field, separated by semicolons (for example, `applepay;googlepay`). Without this omission, the main Adyen credit card iFrame on the checkout page may attempt to load the Apple Pay button and fail due to security criteria of the iFrame element. Follow the steps below to configure the main Apple Pay connector and payment button outside of the main Adyen credit card iFrame element.
 
 The Apple Pay payment method must also be integrated with your Adyen account. Adyen can help you set up the payment method and can also help ensure that the domains that you'll use the certificate for are assigned for use with the certificate.
 
@@ -102,23 +102,24 @@ To configure a Commerce online store for Apple Pay, follow these steps.
 
 1. After the merchant information has been entered, run the **1070** channel configuration distribution schedule job.
 
-#### Add Apple Pay to the Store Payment Method
-In your Channel, add the Apple Pay payment method to the desired payment method for the configuration. If setting up a new payment method on the store for Apple Pay, follow these steps:
+#### Add Apple Pay to the store payment method
 
-1. In Commerce Headquarters, go to **Retail and Commerce > Channel setup > Payment methods**.
-2. Select **New**, set a **Payment method** (the Id for the payment method, normally using numerical items in the demonstrational data shipped), a **Payment method name** (example: 'ApplePay'), and set the **Default function** to **Wallet**.
-3. Click **Save**
-4. Navigate to your channel (Retail and Commerce > Channels > Online stores; or for POS, use the 'All Stores'), go to **Set up** and under the **Set Up** section, select **Payment methods**.
-5. Click on **New**.
-6. On the **Payment method** field, select the Apple Pay option set above. The **Payment method name** and **Function** should populate from the payment method values set above.
-7. Under the **General** fast tab and **Commerce** section, set **Operation name** to **Pay card**.
-8. Under the **General** fast tab and **Commerce** section, set **Connector name** (for Online stores, use **Dynamics 365 Payment Connector for Apple Pay**, for POS stores, use **Dynamics 365 Payment Connector for Adyen**).
-9. Fill out the **Posting** section for any Ledger account, Difference account, and Big difference account settings required.
-10. Click **Save**
+In your channel, add the Apple Pay payment method to the desired payment method for the configuration. If you're setting up a new payment method on the store for Apple Pay, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods**.
+2. Select **New**, set a **Payment method** (the ID for the payment method, normally using numerical items in the demonstrational data shipped), a **Payment method name** (example: 'ApplePay'), and set the **Default function** option to **Wallet**.
+3. Select **Save**
+4. Go to your channel (**Retail and Commerce \> Channels \> Online stores**, or for POS, **Retail and Commerce \> Channels \> All stores**), go to **Set up** and under the **Set Up** section, and then select **Payment methods**.
+5. Select **New**.
+6. On the **Payment method** field, select the Apple Pay option configured above. The **Payment method name** and **Function** values should automatically populate from the payment method values configured above.
+7. Under the **General** FastTab and **Commerce** section, set **Operation name** to **Pay card**.
+8. Under the **General** FastTab and **Commerce** section, set the **Connector name**. For online stores, use **Dynamics 365 Payment Connector for Apple Pay**; for POS stores, use **Dynamics 365 Payment Connector for Adyen**.
+9. Fill out the **Posting** section for any Ledger account, Difference account, and Big difference account settings that are required.
+10. Select **Save**
 11. Select the **Electronic payment setup** while the new Apple Pay payment method is selected.
-12. Click **New** and set the Electronic payment types **ID** to the 'ApplePay' card type created.
-13. Click **Save**
-14. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule** and run the **1070** (Channel configuration) job.
+12. Select **New** and set the Electronic payment types **ID** to the ApplePay card type created.
+13. Select **Save**
+14. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule** and run the **1070** (channel configuration) job.
 
 ### Configure content security policies in site builder
 
