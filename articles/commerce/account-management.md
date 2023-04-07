@@ -2,7 +2,7 @@
 title: Account management pages and modules
 description: This article covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 03/17/2021
+ms.date: 04/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ The account management landing page uses the following modules:
 
 ### Order history page
 
-The order history page uses the order history module to show all the recent orders that the user has placed. The orders are retrieved for a period of time, that is defined for "Days of customer history" configuration in the online functionality profile.
+The order history page uses the order history module to show all the recent orders that the user has placed. The orders are retrieved for the time range that is defined in the **Days of customer history** configuration of the online functionality profile.
 
 ### Order details page
 
