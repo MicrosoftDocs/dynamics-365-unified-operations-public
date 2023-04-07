@@ -3098,6 +3098,8 @@
           href: troubleshoot/z-report-issues.md
         - name: Statement posting errors due to unavailable inventory or update conflicts
           href: troubleshoot/inventory-errors-posting.md
+        - name: Fix common posting issues by editing transactions
+          href: troubleshoot/fix-common-posting-issues.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
