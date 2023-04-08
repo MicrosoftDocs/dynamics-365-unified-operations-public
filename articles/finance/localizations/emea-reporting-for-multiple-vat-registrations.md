@@ -1,7 +1,7 @@
 ---
 title: Reporting for multiple VAT registrations
 description: This article provides information about reporting for multiple value-added tax (VAT) registrations.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
@@ -24,6 +24,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 
 - Austria
 - Belgium
+- The Czech Republic
 - Denmark
 - Finland
 - France
@@ -46,30 +47,22 @@ For an overview of the functionality, view the following TechTalk session from S
 
 ## Prerequisites
 
-Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
+Configure the **Tax Calculation service**. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
+
+Configure the **Support multiple VAT registration numbers** feature, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
 ### Enable features in the feature management
 
 1. Go to **Workspaces** > **Feature management**.
 2. In the feature list, select and enable the following features:
 
-    - Support multiple VAT registration numbers
+    - Intrastat reporting for multiple VAT registrations
+    - EU Sales list reporting for multiple VAT registrations
     - EU sales list transfer based on tax transactions only
+    - Sales tax declaration for multiple VAT registrations
 
 > [!NOTE]
 > If you transfer between warehouses in different countries that have a tax registration, you must also enable the **Tax in transfer order** feature and configure the Tax Calculation service for tax in transfer orders. For more information, see [Tax feature support for transfer orders](tasks/tax-feature-support-for-transfer-order.md).
-
-### Set up the Multiple VAT registrations feature
-
-For information about how to set up the **Multiple VAT registrations** feature, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
-
-## Enable features
-
-In the **Feature management** workspace, enable the following features:
-
-- Intrastat reporting for multiple VAT registrations
-- EU Sales list reporting for multiple VAT registrations
-- Sales tax declaration for multiple VAT registrations
 
 ## Activate feature for specific legal entity
 
@@ -78,7 +71,7 @@ In the **Feature management** workspace, enable the following features:
 3. On the **Multiple VAT registrations** tab, set **VAT declaration**, **EU Sales List**, and **Intrastat** to **Yes** to activate VAT reporting, EU sales list reporting, or Intrastat reporting respectively, for the selected legal entity.
 
 > [!NOTE]
-> Only country-specific functionality that is applicable to the country of the selected legal entity is available. Formats for the VAT declaration, EU sales list, and Intrastat are available for countries of other VAT registrations. Other country-specific functionality that is applicable to the countries of other VAT registrations isn't available in this legal entity.
+> Only country-specific functionality that is applicable to the country of the primary address of the selected legal entity is available. Formats for the VAT declaration, EU sales list, and Intrastat are available for countries of other VAT registrations. Other country-specific functionality that is applicable to the countries of other VAT registrations isn't available in this legal entity.
 
 ## Set up intra-community reporting for multiple VAT registrations
 
@@ -92,6 +85,9 @@ In the **Feature management** workspace, enable the following features:
       - By default, the list code is **EU trade**, and it's transferred to the EU sales list.
       - Documents are transferred to Intrastat.
 
+> [!NOTE]
+> Country of the primary address of the legal entity must be set as **EU** (not Domestic) country type on the **Country/region properties** tab, in case it is a EU member. 
+
 ### Set up Intrastat
 
 #### Set up Intrastat parameters
@@ -101,18 +97,19 @@ All tax registrations have the same settings for Intrastat parameters.
 1.  Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2.  On the **Intrastat** tab, set up the parameters on the following FastTabs:
 
-    - Default transaction codes
+    - General
     - Minimum limit
     - Transfer
     - Check setup
     - Rounding rules
+    - [Electronic reporting for countries/regions](#electronic-reporting)
     - Commodity code hierarchy
 
     ![Foreign trade parameters1.](media/Multipleid-image2.png)
 
 For more information about how to configure Intrastat, see [Intrastat overview](emea-intrastat.md).
 
-#### Set up Intrastat reporting formats
+#### <a name="electronic-reporting"></a>Set up Intrastat reporting formats
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
@@ -140,6 +137,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.23 | Denmark | Intrastat (DK).version.25.4 |
     | 10.0.23 | Poland | Intrastat (PL).version.25.5 |
     | 10.0.25 | Belgium | Intrastat (BE).version.2.9 |
+    | 10.0.34 | The Czech Republic | Intrastat (CZ).version.25. |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
