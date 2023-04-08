@@ -1,7 +1,7 @@
 ---
 title: Multiple VAT registration numbers
 description: This article provides information about the functionality for multiple value-added tax (VAT) registration numbers.
-author: EricWangChen
+author: liza-golub
 ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the functionality for multiple value-added tax (VAT) registration numbers. This functionality lets users set up the tax registration numbers of a legal entity and its customers and vendors in different European Union (EU) member states, and then post and settle taxes according to registration in the appropriate member state.
+This article provides information about the functionality for multiple value-added tax (VAT) registration numbers. This functionality lets users set up the tax registration numbers of a legal entity and its customers and vendors in different countries, and then post and settle taxes according to registration in the appropriate country.
 
 Here are the main steps to configure and use this functionality:
 
@@ -29,6 +29,10 @@ Here are the main steps to configure and use this functionality:
 The customer and vendor VAT registration numbers for transactions can be identified by the tax calculation service. The identified tax registration numbers are available in the sales tax transactions.
 
 The sales tax settlement procedure uses the country/region code of the registration ID.
+
+## Prerequisites
+
+Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 ## Enable the feature
 
