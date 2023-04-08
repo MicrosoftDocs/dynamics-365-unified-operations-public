@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 In Microsoft Dynamics Lifecycle Services (LCS), you can specify how and when you receive service updates from Microsoft for your environments.
 
 > [!IMPORTANT]
-> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers who are on version 7.1, 7.2, or 8.0, you can take the update manually using the regular servicing flows.
+> This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../fin-ops/get-started/public-preview-releases.md#release-processes) program. Microsoft is working to make the feature available to First release customers. For customers who are on version 7.1, 7.2, or 8.0, you can take the update manually using the regular servicing flows.
 
 Only users (customers or partners) who are assigned to the **Project owner** role in LCS can configure updates. Additionally, updates can be configured only for **implementation projects**.
 
@@ -84,7 +84,7 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 - An error was found while updating the environment. If there were issues during the update, the scheduled update will be canceled and the environment is rolled back to the previous state.  
 - The environment is already running on the latest version.  There's no need to apply the update again, the scheduled update will be canceled before it starts. 
 - The target environment isn't found. If the designated sandbox was deleted or the production environment hasn't been deployed, the scheduled update will be canceled before it starts.
-- You’re enrolled in the [First Release program](https://experience.dynamics.com).  The First Release program has different release cadence so the previously scheduled updates will be canceled. 
+- You’re enrolled in the [First Release program](https://aka.ms/FirstReleaseFnO).  The First Release program has different release cadence so the previously scheduled updates will be canceled. 
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
