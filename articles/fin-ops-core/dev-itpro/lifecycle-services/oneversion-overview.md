@@ -65,7 +65,7 @@ Additionally, a notification email will be sent five days in advance, and a noti
 
 After notifications have been sent, Microsoft will apply the update (**auto update**) during the designated maintenance window. After this operation is completed, a notification email will be sent to indicate the status of the update. Customers will also be able to **self-update** by using the standard update experience in LCS. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). 
 
-Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early. To sign up for the First release program, go to [https://experience.dynamics.com](https://experience.dynamics.com).
+Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments before general availability. To sign up for the First release program, go to [https://aka.ms/FirstReleaseFnO](https://aka.ms/FirstReleaseFnO).
 
 Customers will also be able to **self-update** by using the standard update experience in LCS, as shown in the following illustration.
 
