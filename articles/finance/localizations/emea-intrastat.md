@@ -98,58 +98,75 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tab</th>
+<th>Tab > FasTab</th>
 <th>Parameters</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>General</td>
-<td><ul>
-<li><strong>General</strong> – Specify the following information:
-<ul>
-<li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes. Returns of physical goods are reported in Intrastat transfer with a different direction. The return of arrival is reported as dispatch and the return of dispatch is reported as arrival.</li>
-<li>The employee who is responsible for preparing Intrastat reports.</li>
-</ul></li>
-<li><strong>Minimum limit</strong> – Specify the settings for updating transactions that are below the threshold:
-<ul>
-<li>The threshold amount and weight</li>
-<li>The commodity code to apply to transactions that are under the threshold</li>
-</ul></li>
-<li><strong>Transfer</strong> – Specify the criteria for transferring transactions to the Intrastat journal. You can specify that transactions are transferred only when the items meet one or all of the following criteria:
-<ul>
-<li>The items aren&#39;t service items.</li>
-<li>The items have a commodity code.</li>
-<li>The items have a weight.</li>
-<li>The items have additional units.</li>
-</ul></li>
-<li><strong>Check setup</strong> – Specify the rules for validating the completeness of Intrastat data. You can select which data is validated.</li>
-<li><strong>Rounding rules</strong> – Specify the following settings for rounding amounts and weights in Intrastat reporting:
-<ul>
-<li>The rounding rule (precision)</li>
-<li>The rounding method: up, down, or normal</li>
-<li>The number of decimal places for amounts and weights</li>
-<li>Instructions for rounding weights that are less than 1 kilogram (kg): up to 1 kg, normal, or no rounding</li>
-</ul></li>
-<li><strong>Electronic reporting</strong> – Specify references to electronic reporting configurations, so that you can generate an electronic file and report.</li>
-<li><strong>Commodity code hierarchy</strong> – Specify the category hierarchy of the <strong>Commodity code</strong> type that represents Intrastat commodity code CN8.</li>
-  <li> <strong>Exchange rate type</strong> – Optionally, specify an exchange rate to be used to report Intrastat sales and purchase transactions in foreign currencies. This is used if the rate is different than the one applied when posting the transaction.</li>  
-</ul></td>
+  <td><strong>Intrastat > General</strong></td>
+  <td>Specify the following information:
+    <li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes. Returns of physical goods are reported in Intrastat transfer with a different direction. The return of arrival is reported as dispatch and the return of dispatch is reported as arrival.</li>
+    <li>The employee who is responsible for preparing Intrastat reports.</li>
+  </td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Minimum limit</strong></td>
+  <td>Specify the settings for updating transactions that are below the threshold:
+     <li>The threshold amount and weight</li>
+     <li>The commodity code to apply to transactions that are under the threshold</li>
+  </td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Transfer</strong></td>
+  <td>Specify the criteria for transferring transactions to the Intrastat journal. You can specify that transactions are transferred only when the items meet one or all of the following criteria:
+     <li>The items aren&#39;t service items.</li>
+     <li>The items have a commodity code.</li>
+     <li>The items have a weight.</li>
+     <li>The items have additional units.</li>
+  </td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Check setup</strong></td>
+  <td>Specify the rules for validating the completeness of Intrastat data. You can select which data is validated.</td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Rounding rules</strong></td>
+  <td>Specify the following settings for rounding amounts and weights in Intrastat reporting:
+      <li>The rounding rule (precision)</li>
+      <li>The rounding method: up, down, or normal</li>
+      <li>The number of decimal places for amounts and weights</li>
+      <li>Instructions for rounding weights that are less than 1 kilogram (kg): up to 1 kg, normal, or no rounding</li>
+  </td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Electronic reporting</strong></td>
+  <td>Specify references to electronic reporting configurations, so that you can generate an electronic file and report. </td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Commodity code hierarchy</strong></td>
+  <td>Specify the category hierarchy of the <strong>Commodity code</strong> type that represents Intrastat commodity code CN8.
+     Otionally, specify an exchange rate in <strong>Exchange rate type</strong> field to be used to report Intrastat sales and purchase transactions in foreign currencies. This is used if the rate is different than the one applied when posting the transaction.
+  </td>
 </tr>
 <tr class="even">
-<td>Agent contact information</td>
+<td><strong>Agent contact information</strong></td>
 <td>Specify the agent&#39;s name, address, tax exempt number, telephone number, and fax number.</td>
 </tr>
 <tr class="odd">
-<td>Country/region properties</td>
-<td>Set the country/region of the current legal entity to <strong>Domestic</strong>. Set the country/region of EU countries/regions that participate in EU trade with the current legal entity to <strong>EU</strong>. For each country/region, you also identify country/region code for foreign trade purposes.</td>
+<td><strong>Country/region properties</strong></td>
+<td>Set the country/region of the current legal entity to <strong>Domestic</strong>. Set the country/region of EU countries/regions that participate in EU trade with the current legal entity to <strong>EU</strong>. For each country/region, you also identify country/region code for foreign trade purposes. </td>
 </tr>
 <tr class="even">
-<td>Number sequence</td>
+<td><strong>Number sequence</strong></td>
 <td>Specify the number sequence for the Intrastat journal.</td>
 </tr>
 </tbody>
 </table>
+
+For **Multiple VAT registration numbers** scenario, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+
+For information on Intrastat reporting in **Multiple VAT registration numbers** scenario, see [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md).
 
 ## Example
 
