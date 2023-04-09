@@ -172,8 +172,9 @@ All tax registrations have the same settings for EU sales list parameters.
 2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country of your tax registration.
 3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
 4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
+5. In the **Report cash discount** field, select **Yes** if for selected country/region cash discount must be transferred to EU sales list or select **No** if for selected country/region cash discount must not be transferred to EU sales list. Leave the value **Default** if for selected country/region the value specified in **Report cash discount** field on **Transfer** FasTab must be applied.
 
-    ![foreign trade parameters 3.](media/Multipleid-image7.png)
+    ![foreign trade parameters 3.](media/Mult-tax-cash-disc.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
@@ -194,6 +195,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.23 | Denmark | EU Sales list (DK).version.13.4 |
     | 10.0.24 | Poland | EU Sales list (PL).version.14.7 |
     | 10.0.25 | Belgium | EU Sales list (BE).version.2.3 |
+    | 10.0.33 | The Czech Republic | EU Sales list (CZ).version.15.9 |
 
 ## Generate intra-community reporting for multiple VAT registrations
 
@@ -268,6 +270,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | Release | Country | ER format | Link to article |
     |---------|---------|-----------|---------------|
     | 10.0.19 | All | Tax declaration model.version.85<br>Tax declaration model mapping.version.85.138 | |
+    | 10.0.13 | The Czech Republic | VAT declaration XML (CZ).version.64.66<br>VAT Control statement XML (CZ).version.64.66.65<br>VAT Declaration Excel (CZ).version.64.66.25 | [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md) |
     | 10.0.19 | Netherlands | VAT Declaration XML (NL).version.85.14<br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) |
     | 10.0.20 | France | VAT Declaration Excel (FR).version.85.15 | [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
     | 10.0.21 | United Kingdom | MTD VAT importing model mapping (UK).version.31.36<br>Tax declaration model mapping.version.95.158<br>VAT Declaration Excel (UK).version.32.30.16<br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md) |
