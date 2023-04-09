@@ -71,23 +71,59 @@ The following table lists the prerequisites for Intrastat reporting.
 ## Setup
 The following sections describe the settings that are required for Intrastat reporting.
 
-### Set up all required Intrastat-related lists
+### Commodity codes
 
-|   List   |   Additional information   |
-|-------------------------|-------------------------|
-| Commodity codes | Set up a category hierarchy of type **Commodity code**, and enter all commodity codes according to the combined nomenclature list. For each commodity, you set up the following information:<ul><li>The name of the commodity and the commodity code</li><li>The friendly name and/or translated name</li><li>Settings for reporting additional (supplementary) units on the **Foreign trade** tab. You can select the additional unit in the unit list. You can also specify whether the weight of commodities must be reported in addition to the selected additional unit.</li></ul>For more information, review [Additional units](#additional-units) example.|
-| Transaction codes | Set up the nature of the transaction according to your country's/region's requirements. For each transaction code that you set up, you must set up the rules for calculating invoice amounts and statistical amounts for transfer orders and sales/purchase orders.<ul><li>For transfer orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Financial cost amount** – The amount will be equal to the financial cost.</li><li>**Total cost** – The amount will be equal to the total cost of the transaction.</li><li>**Manual** – The amount will be equal to the amount that is manually specified on the transfer order line.</li></ul></li><li>For sales orders and purchase orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Invoice amount** – The amount will be equal to the amount that is invoiced for the commodity.</li><li>**Base amount** – The amount will be equal to the amount that would be invoiced before any discount is applied.</li></ul></ul>For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example. |
-| Transport methods | Set up the transport mode according to your country's/region's requirements. For each delivery mode, you can set up a default transport method on the **Foreign trade** tab. |
-| Ports | Set up the port/airport of loading/unloading if this information is collected by your country/region. |
-| Statistics procedures | Set up the statistical procedure if this information is collected by your country/region. |
+Set up a category hierarchy of type **Commodity code**, and enter all commodity codes according to the combined nomenclature list. For each commodity, you set up the following information:<ul><li>The name of the commodity and the commodity code</li><li>The friendly name and/or translated name</li><li>Settings for reporting additional (supplementary) units on the **Foreign trade** tab. You can select the additional unit in the unit list. You can also specify whether the weight of commodities must be reported in addition to the selected additional unit.</li></ul>For more information, review [Additional units](#additional-units) example.
+
+### <a name="transaction-codes"></a>Transaction codes 
+
+A system of two-digit transaction codes is used to differentiate types of trade at the European level depending on nature of the transaction. For more information, see [European business statistics compilers' manual for international trade in goods statistics — 2021 edition - Products Manuals and Guidelines - Eurostat (europa.eu)](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-21-004).
+
+Set up the nature of the transaction according to the country's/region's requirements. For each transaction code that you set up, you must set up the rules for calculating invoice amounts and statistical amounts for transfer orders and sales/purchase orders.<ul><li>For transfer orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Financial cost amount** – The amount will be equal to the financial cost.</li><li>**Total cost** – The amount will be equal to the total cost of the transaction.</li><li>**Manual** – The amount will be equal to the amount that is manually specified on the transfer order line.</li></ul></li><li>For sales orders and purchase orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Invoice amount** – The amount will be equal to the amount that is invoiced for the commodity.</li><li>**Base amount** – The amount will be equal to the amount that would be invoiced before any discount is applied.</li></ul></ul>For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example. 
+
+As of January 1, 2022, a unified system of two-digit transaction codes is used in EU countries.
+
+1. Go to **Tax** > **Set up** > **Foreign trade** > **Transaction codes**.
+2. Create the required transaction codes.
+
+    ![transaction codes.](media/Multipleid-image4.png)
+
+For each transaction code that you create, you must set up the rules that are used to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.
+
+- For transfer orders, set up one of the following rules:
+
+    - **Empty:** The amount will be 0 (zero).
+    - **Financial cost amount:** The amount will equal the financial cost.
+    - **Total cost:** The amount will equal the total cost of the transaction.
+    - **Manual:** The amount will equal the amount that is specified in the **Invoiced amount** and **Statistical value** fields on the transfer order line. These values are taken from the **Amount** field on the transfer order line.
+
+    ![transfer order.](media/Multipleid-image5.png)
+
+-   For sales orders and purchase orders, set up one of the following rules:
+
+    - **Empty:** The amount will be 0 (zero).
+    - **Invoice amount:** The amount will equal the amount that is invoiced for the commodity.
+    - **Base amount:** The amount will equal the invoice amount that would be invoiced before any discount is applied.
 
 
+### Transport methods 
 
-### Set up rules for compressing Intrastat transactions
+Set up the transport mode according to your country's/region's requirements. For each delivery mode, you can set up a default transport method on the **Foreign trade** tab. 
+
+### Ports 
+
+Set up the port/airport of loading/unloading if this information is collected by your country/region. 
+
+### Statistics procedures
+
+Set up the statistical procedure if this information is collected by your country/region.
+
+
+### Compressing rules Intrastat transactions
 
 On the **Compression of Intrastat** page, you can select the fields to use for compression. All transactions that have the same combination of values for the selected fields in the Intrastat journal will be compressed into a single transaction when you run the Compress function in the Intrastat journal.
 
-### Set up foreign trade parameters
+### Foreign trade parameters
 
 Use the **Foreign trade parameters** page to set up the parameters in the following table.
 
