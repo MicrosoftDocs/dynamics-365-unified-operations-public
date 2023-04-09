@@ -117,9 +117,41 @@ Set up the port/airport of loading/unloading if this information is required for
 
 Set up the statistical procedure if this information is required for Intrastat reporting in country/region of a tax registration set up in the legal entity.
 
-### Compressing rules for Intrastat transactions
+### <a name="compressing-rules"></a>Compressing rules for Intrastat transactions
 
 On the **Compression of Intrastat** page, you can select the fields to use for compression. All transactions that have the same combination of values for the selected fields in the Intrastat journal will be compressed into a single transaction when you run the Compress function in the Intrastat journal.
+
+> [!NOTE]
+> Compression rules set up for a legal entity are applicable for all tax registrations set up for this legal entity.
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**.
+2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. 
+
+For example, in 2022, the following values should be reported in some countries.
+
+**Mandatory elements**
+
+**Direction** (flow), **Commodity code**, **Country/region** (partner member state), **Transaction code**, **Tax exempt number** (partner's VAT number) on dispatches, and **Country/region of origin** are reported in all countries from the following table.
+
+**Optional elements**
+
+| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
+|-------|---------|---------|---------|---------|--------|---------|-------------|-----------------------------------|--------|-------|--------|
+| Delivery terms | No | **Yes** | No | No | No | No | No | **Yes** | **Yes** | No | **Yes**|
+| Mode of transport | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** | No | **Yes** | **Yes** | No | No |
+| State of origin (Region of origin) | No | **Yes** | No | No | No | **Yes** | No |  No | No | No | No |
+| County of origin (Region of origin) | No | No | No | No | **Yes** | No | No |  No | **Yes** | No | No |
+| Statistics procedure | **Yes** | No | No | No | **Yes** | No | **Yes** |  No | **Yes** | No | No |
+
+**Additional elements for country purposes**
+
+| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
+|-------|---------|---------|---------|---------|--------|---------|-------------|-----------------------------------|--------|-------|--------|
+| Transport document (Invoice, Identification of packing slip or product receipt) | No | No | No | No | No | No | **Yes** | No | No | No | No|
+| Port ((Air)port of (un)loading) | No | No | No | No | No | No | No | No | **Yes** | No | No | 
+
+> [!NOTE]
+> Select all values that must be reported on the **Compression of Intrastat** page.
 
 ### Foreign trade parameters
 
