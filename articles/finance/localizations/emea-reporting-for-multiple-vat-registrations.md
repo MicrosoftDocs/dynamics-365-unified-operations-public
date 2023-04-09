@@ -39,9 +39,9 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
   
 The scope of reporting is limited to generation of the following reports:
 
-- VAT declaration
-- EU sales list
-- Intrastat
+- [Intrastat](#intrastat-reporting)
+- [EU sales list](#eu-sales-list)
+- [VAT declaration](#vat-declaration)
 
 For an overview of the functionality, view the following TechTalk session from September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
 
@@ -86,7 +86,9 @@ Configure the **Support multiple VAT registration numbers** feature, see [Multip
 > [!NOTE]
 > Country of the primary address of the legal entity must be set as **EU** (not Domestic) country type on the **Country/region properties** tab, in case it is a EU member. 
 
-## Set up Intrastat for multiple VAT registrations
+## <a name="intrastat-reporting"></a>Intrastat reporting for multiple VAT registrations
+
+### Set up Intrastat for multiple VAT registrations
 
 Intrastat parameters specified for a Legal Entity are applicable for all tax registrations set up in this Legal Entity.
 
@@ -106,7 +108,7 @@ Intrastat parameters specified for a Legal Entity are applicable for all tax reg
 
 For more information about how to configure Intrastat, see [Intrastat overview](emea-intrastat.md).
 
-### <a name="electronic-reporting"></a>Set up Intrastat reporting formats
+#### <a name="electronic-reporting"></a>Set up Intrastat reporting formats
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
@@ -137,6 +139,39 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.34 | The Czech Republic | Intrastat (CZ).version.25. |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+### Transfer and report Intrastat
+
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2. Select **Transfer**.
+3. In the **Tax registration number** dialog box, select the tax registration number to transfer transactions for, and then select **OK**.
+
+    ![transfer intrastat.](media/Multipleid-image8.png)
+
+4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then select **OK**.
+
+    ![Intrastat  Transfer  dialog box.](media/Multipleid-image9.png)
+
+5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
+
+    > [!NOTE]
+    > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
+
+6. Select **Output** > **Report**.
+7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
+
+    ![Intrastat  Reporting  dialog box.](media/Multipleid-image10.png)
+
+8. In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
+9. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file if applicable.
+10. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file if applicable.
+
+    ![Intrastat report dialog box.](media/Multipleid-image11.png)
+
+11. The dialog box also contains country-specific fields that are required in the country-specific Intrastat report. Set these fields as required.
+12. Select **OK** to generate the report.
+
+## <a name="eu-sales-list"></a>EU sales list reporting for multiple VAT registrations 
 
 ### Set up the EU sales list
 
@@ -197,39 +232,6 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.25 | Belgium | EU Sales list (BE).version.2.3 |
     | 10.0.33 | The Czech Republic | EU Sales list (CZ).version.15.9 |
 
-## Generate intra-community reporting for multiple VAT registrations
-
-### Transfer and report Intrastat
-
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
-2. Select **Transfer**.
-3. In the **Tax registration number** dialog box, select the tax registration number to transfer transactions for, and then select **OK**.
-
-    ![transfer intrastat.](media/Multipleid-image8.png)
-
-4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then select **OK**.
-
-    ![Intrastat  Transfer  dialog box.](media/Multipleid-image9.png)
-
-5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
-
-    > [!NOTE]
-    > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
-
-6. Select **Output** > **Report**.
-7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
-
-    ![Intrastat  Reporting  dialog box.](media/Multipleid-image10.png)
-
-8. In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
-9. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file if applicable.
-10. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file if applicable.
-
-    ![Intrastat report dialog box.](media/Multipleid-image11.png)
-
-11. The dialog box also contains country-specific fields that are required in the country-specific Intrastat report. Set these fields as required.
-12. Select **OK** to generate the report.
-
 ### Transfer and report the EU sales list
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
@@ -255,7 +257,9 @@ All tax registrations have the same settings for EU sales list parameters.
 12. The dialog box also contains country-specific fields that are required in the country-specific EU sales list report. Set these fields as required.
 13. Select **OK** to generate the report.
 
-## Set up VAT reporting for multiple VAT registrations
+## <a name="vat-reporting"></a>VAT reporting for multiple VAT registrations
+
+### Set up VAT reporting for multiple VAT registrations
 
 1. Go to **Tax &gt; Set up &gt; Parameters &gt; General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country of your tax registration.
@@ -286,7 +290,7 @@ All tax registrations have the same settings for EU sales list parameters.
     > [!NOTE]
     > The VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](emea-pol-vdek.md).
 
-## Generate a VAT declaration for multiple VAT registrations
+### Generate a VAT declaration for multiple VAT registrations
 
 1. Go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
 2. In the **Report sales tax for settlement period** dialog box, in the **Settlement period** field, select a settlement period.
