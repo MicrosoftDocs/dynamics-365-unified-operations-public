@@ -81,26 +81,22 @@ The **Total tax** field sums all the tax amounts on the invoices and transfers t
 
 ### Can I extend the item mapping rule to map between an external item number and an internal item number?
 
-Not in the current release. This capability is on our roadmap and will be available in a future release.
-
-### Is there a model localization to capture invoice structures for different countries and regions?
-
-The application can be extended to meet country/region-specific requirements.
+This capability is available in a version 1.0.1.x.
 
 ### Does Invoice capture support uploading multiple invoices at the same time?
 
-The current version supports uploading one document at a time. The capability to upload multiple invoices at the same time will be available in a future release.
+The capability to upload multiple invoices is available in a version 1.0.1.x.
 
 ### What languages of invoices are supported?
 
 The following languages are currently supported:
-
-- Dutch (Netherlands)
-- English (United States)
-- French (France)
-- German (Germany)
-- Italian (Italy)
-- Portuguese (Portugal)
-- Spanish (Spain)
+Current:
+-	English(en)
+-	Spanish (es)
+-	German (de)
+-	French (fr)
+-	Italian (it)
+-	Portuguese (pt)
+-	Dutch (de)
 
 More languages will be supported in a future release. If you want to share data with Microsoft to help make the model for your language ready more quickly, contact us.
