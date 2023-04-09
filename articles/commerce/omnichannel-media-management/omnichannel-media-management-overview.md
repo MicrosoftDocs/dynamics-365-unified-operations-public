@@ -43,7 +43,7 @@ To assign media to a product's **Primary media**, follow these steps:
 4. Click the **Add media** button in the Master > **Primary media** section.  
 5. Select one or more media items from the media library picker (you can also upload new images here with the **Upload** button in the upper left of the media picker), then click **Apply**.
 6. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
-7. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional assignment edits prior to publish). 
+7. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Omnichannel, channel-specific, and locale-specific media assignments
 [todo]
