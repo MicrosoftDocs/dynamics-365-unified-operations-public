@@ -257,9 +257,9 @@ All tax registrations have the same settings for EU sales list parameters.
 12. The dialog box also contains country-specific fields that are required in the country-specific EU sales list report. Set these fields as required.
 13. Select **OK** to generate the report.
 
-## <a name="vat-reporting"></a>VAT reporting for multiple VAT registrations
+## <a name="vat-declaration"></a>VAT declaration reporting for multiple VAT registrations
 
-### Set up VAT reporting for multiple VAT registrations
+### Set up for VAT declaration reporting 
 
 1. Go to **Tax &gt; Set up &gt; Parameters &gt; General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country of your tax registration.
