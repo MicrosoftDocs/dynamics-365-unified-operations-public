@@ -105,21 +105,19 @@ For each transaction code that you create, you must set up the rules that are us
     - **Invoice amount:** The amount will equal the amount that is invoiced for the commodity.
     - **Base amount:** The amount will equal the invoice amount that would be invoiced before any discount is applied.
 
-
 ### Transport methods 
 
 Set up the transport mode according to your country's/region's requirements. For each delivery mode, you can set up a default transport method on the **Foreign trade** tab. 
 
 ### Ports 
 
-Set up the port/airport of loading/unloading if this information is collected by your country/region. 
+Set up the port/airport of loading/unloading if this information is required for Intrastat reporting in country/region of a tax registration set up in the legal entity. 
 
 ### Statistics procedures
 
-Set up the statistical procedure if this information is collected by your country/region.
+Set up the statistical procedure if this information is required for Intrastat reporting in country/region of a tax registration set up in the legal entity.
 
-
-### Compressing rules Intrastat transactions
+### Compressing rules for Intrastat transactions
 
 On the **Compression of Intrastat** page, you can select the fields to use for compression. All transactions that have the same combination of values for the selected fields in the Intrastat journal will be compressed into a single transaction when you run the Compress function in the Intrastat journal.
 
@@ -144,6 +142,8 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
   <td>Specify the following information:
     <li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes. Returns of physical goods are reported in Intrastat transfer with a different direction. The return of arrival is reported as dispatch and the return of dispatch is reported as arrival.</li>
     <li>The employee who is responsible for preparing Intrastat reports.</li>
+    <li>Tax authority.</li>
+    <li>Special movement code - is available for Intrastat reporting reporting in the Czech Republic.</li>
   </td>
 </tr>
 <tr>
@@ -165,6 +165,10 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 <tr>
   <td><strong>Intrastat > Check setup</strong></td>
   <td>Specify the rules for validating the completeness of Intrastat data. You can select which data is validated.</td>
+</tr>
+<tr>
+  <td><strong>Intrastat > Exchange rate</strong></td>
+  <td>Select the exchange rate type for Intrastat reporting</td>
 </tr>
 <tr>
   <td><strong>Intrastat > Rounding rules</strong></td>
