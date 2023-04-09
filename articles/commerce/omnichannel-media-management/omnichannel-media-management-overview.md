@@ -32,7 +32,10 @@ The following topics cover the steps to author and assign media to products.
 [todo]
 
 #### Primary media, additional media, and product-specific swatches 
-[todo]
+For simple products, there are three media assignment scopes available: **Primary media**, **Additional media**, and product-specific **Swatches**.
+
+##### Primary media
+**Primary media** assignments are for media items that should display in a product's media gallery UX (examples: Point of Sale media gallery, e-Commerce PDP media gallery, etc.).  Media items in the **Primary media** assignments have a specific display order, which can be re-arranged using the **Up** or **Down** arrow buttons on each media item or by dragging and dropping them to the correct position.  The highest ordered image in the **Primary media** assignments will be the product's default image, when only one is needed for display in a client UX. 
 
 #### Omnichannel, channel-specific, and locale-specific media assignments
 [todo]
