@@ -32,9 +32,18 @@ The following topics cover the steps to author and assign media to products.
 For simple products, there are three media assignment scopes available: **Primary media**, **Additional media**, and product-specific **Swatches**.
 
 #### Primary media
-**Primary media** assignments are for media items that should display in a product's media gallery UX (examples: Point of Sale media gallery, e-Commerce PDP media gallery, etc.).  Media items in the **Primary media** assignments have a specific display order, which can be re-arranged using the **Up** or **Down** arrow buttons on each media item or by dragging and dropping them to the correct position.  The highest ordered image in the **Primary media** assignments will be the product's default image, when only one is needed for display in a client UX. 
+**Primary media** is used for media assignments that should always display in a product's media gallery UX (examples: Point of Sale media gallery, e-Commerce PDP media gallery, etc.).  Media items in **Primary media** have a specific display order, and can be re-arranged using the **Up** or **Down** arrow buttons on each media item or by dragging and dropping them to the correct position.  The highest ordered image in the **Primary media** assignments is treated as the product's default image for scenarios where the entire media gallery experience is not needed.
 > [!NOTE]
 > The default image returned by core data-action APIs (example: get-simple-products) for UX scenarios like category pages, search results, or any other list view, will be the highest ordered media item in the **Primary media** assignments that is an image.  For example, any media item that is not an image will be skipped over, and the first image found in the **Primary media** ordered assignments will be returned as the default image for the product.
+
+To assign media to a product's **Primary media**, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product using its name or product ID in the search view on the left, and select it.
+3. Click the **Edit product media** button in the upper right.
+4. Click the **Add media** button in the Master > **Primary media** section.  
+5. Select one or more media items from the media library picker (you can also upload new images here with the **Upload** button in the upper left of the media picker), then click **Apply**.
+6. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
+7. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional assignment edits prior to publish). 
 
 #### Omnichannel, channel-specific, and locale-specific media assignments
 [todo]
