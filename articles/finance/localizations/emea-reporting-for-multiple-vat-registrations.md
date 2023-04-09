@@ -73,9 +73,7 @@ Configure the **Support multiple VAT registration numbers** feature, see [Multip
 > [!NOTE]
 > Only country-specific functionality that is applicable to the country of the primary address of the selected legal entity is available. Formats for the VAT declaration, EU sales list, and Intrastat are available for countries of other VAT registrations. Other country-specific functionality that is applicable to the countries of other VAT registrations isn't available in this legal entity.
 
-## Set up intra-community reporting for multiple VAT registrations
-
-### Set up country/region properties
+## Set up country/region properties for multiple VAT registrations
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Country/region properties** tab, set up the following country types: **EU**, **EFTA**, or **Third country/region**.
@@ -88,16 +86,14 @@ Configure the **Support multiple VAT registration numbers** feature, see [Multip
 > [!NOTE]
 > Country of the primary address of the legal entity must be set as **EU** (not Domestic) country type on the **Country/region properties** tab, in case it is a EU member. 
 
-### Set up Intrastat
+## Set up Intrastat for multiple VAT registrations
 
-#### Set up Intrastat parameters
-
-All tax registrations have the same settings for Intrastat parameters.
+Intrastat parameters specified for a Legal Entity are applicable for all tax registrations set up in this Legal Entity.
 
 1.  Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2.  On the **Intrastat** tab, set up the parameters on the following FastTabs:
 
-    - General
+    - General: [Transaction codes](emea-intrastat.md#transaction-codes), worker, tax authority.
     - Minimum limit
     - Transfer
     - Check setup
@@ -106,10 +102,11 @@ All tax registrations have the same settings for Intrastat parameters.
     - Commodity code hierarchy
 
     ![Foreign trade parameters1.](media/Multipleid-image2.png)
+3. Go to **Tax** > **Setup** > **Foreign trade** > [**Compression of Intrastat**](emea-intrastat.md#compressing-rules) page to set up Intrastat compression rules. All tax registrations have the same setup for compression rules.
 
 For more information about how to configure Intrastat, see [Intrastat overview](emea-intrastat.md).
 
-#### <a name="electronic-reporting"></a>Set up Intrastat reporting formats
+### <a name="electronic-reporting"></a>Set up Intrastat reporting formats
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
@@ -140,67 +137,6 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.34 | The Czech Republic | Intrastat (CZ).version.25. |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-
-#### Set up transaction codes
-
-A system of two-digit transaction codes is used to differentiate types of trade at the European level. For more information, see [European business statistics compilers' manual for international trade in goods statistics — 2021 edition - Products Manuals and Guidelines - Eurostat (europa.eu)](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-21-004).
-
-As of January 1, 2022, a unified system of two-digit transaction codes is used in EU countries.
-
-1. Go to **Tax** > **Set up** > **Foreign trade** > **Transaction codes**.
-2. Create the required transaction codes.
-
-    ![transaction codes.](media/Multipleid-image4.png)
-
-For each transaction code that you create, you must set up the rules that are used to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.
-
-- For transfer orders, set up one of the following rules:
-
-    - **Empty:** The amount will be 0 (zero).
-    - **Financial cost amount:** The amount will equal the financial cost.
-    - **Total cost:** The amount will equal the total cost of the transaction.
-    - **Manual:** The amount will equal the amount that is specified in the **Invoiced amount** and **Statistical value** fields on the transfer order line. These values are taken from the **Amount** field on the transfer order line.
-
-    ![transfer order.](media/Multipleid-image5.png)
-
--   For sales orders and purchase orders, set up one of the following rules:
-
-    - **Empty:** The amount will be 0 (zero).
-    - **Invoice amount:** The amount will equal the amount that is invoiced for the commodity.
-    - **Base amount:** The amount will equal the invoice amount that would be invoiced before any discount is applied.
-
-#### Set up Intrastat compression rules
-
-All tax registrations have the same setup for compression rules.
-
-1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**.
-2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. 
-
-For example, in 2022, the following values should be reported in some countries.
-
-**Mandatory elements**
-
-**Direction** (flow), **Commodity code**, **Country/region** (partner member state), **Transaction code**, **Tax exempt number** (partner's VAT number) on dispatches, and **Country/region of origin** are reported in all countries from the following table.
-
-**Optional elements**
-
-| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
-|-------|---------|---------|---------|---------|--------|---------|-------------|-----------------------------------|--------|-------|--------|
-| Delivery terms | No | **Yes** | No | No | No | No | No | **Yes** | **Yes** | No | **Yes**|
-| Mode of transport | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** | No | **Yes** | **Yes** | No | No |
-| State of origin (Region of origin) | No | **Yes** | No | No | No | **Yes** | No |  No | No | No | No |
-| County of origin (Region of origin) | No | No | No | No | **Yes** | No | No |  No | **Yes** | No | No |
-| Statistics procedure | **Yes** | No | No | No | **Yes** | No | **Yes** |  No | **Yes** | No | No |
-
-**Additional elements for country purposes**
-
-| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
-|-------|---------|---------|---------|---------|--------|---------|-------------|-----------------------------------|--------|-------|--------|
-| Transport document (Invoice, Identification of packing slip or product receipt) | No | No | No | No | No | No | **Yes** | No | No | No | No|
-| Port ((Air)port of (un)loading) | No | No | No | No | No | No | No | No | **Yes** | No | No | 
-
-> [!NOTE]
-> Select all values that must be reported on the **Compression of Intrastat** page.
 
 ### Set up the EU sales list
 
