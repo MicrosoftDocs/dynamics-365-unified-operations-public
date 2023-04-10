@@ -56,7 +56,7 @@ Media can be assigned in a hierarchical fallback manner accross channels and loc
 
 Here is the basic fallback for channel and locale media assignments:
 ```mermaid
-  flowchart LR;
+  flowchart TD;
       A[fa:fa-globe Client UX channel+locale]-->|request| B("Specific channel+locale (exact match)")
       B-->|if not found| C("Omnichannel+language_id (language-only match)")
       C-->|if not found| D("Omnichannel+Neutral (default)");
