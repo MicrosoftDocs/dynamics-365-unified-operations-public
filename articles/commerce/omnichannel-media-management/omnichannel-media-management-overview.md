@@ -50,11 +50,8 @@ Media can be assigned in a hierarchical fallback manner accross channels and loc
 
 Here is the basic fallback for channel and locale media assignments:
 ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+  flowchart LR;
+      Client UX Channel+Locale (example: en-CA)|request|>Exact channel+locale match>Omnichannel+language Id match;
 ```
 
 ### Assign media to master products
