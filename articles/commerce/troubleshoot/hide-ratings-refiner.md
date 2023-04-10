@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-manager: annbe
 ---
 
 # Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled

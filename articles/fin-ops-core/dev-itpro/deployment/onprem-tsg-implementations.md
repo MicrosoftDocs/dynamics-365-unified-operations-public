@@ -21,7 +21,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 30
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Scripts for resolving issues in on-premises environments
