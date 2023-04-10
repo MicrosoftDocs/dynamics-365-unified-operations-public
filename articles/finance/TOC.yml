@@ -1314,6 +1314,8 @@
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
+      - name: Financial reporting best practices  
+        href: general-ledger/fin-reports-best.md
       - name: Financial report components
         href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?context=/dynamics365/context/finance
       - name: View and design financial reports
