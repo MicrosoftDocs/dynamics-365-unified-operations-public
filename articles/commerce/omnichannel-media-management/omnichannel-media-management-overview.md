@@ -48,7 +48,7 @@ To assign media to a product's **Primary media**, follow these steps:
 ### Additional media
 [Todo]
 
-### Product specific swatches
+### Product-specific swatches
 [Todo]
 
 ### Omnichannel, channel-specific, and locale-specific media assignments
