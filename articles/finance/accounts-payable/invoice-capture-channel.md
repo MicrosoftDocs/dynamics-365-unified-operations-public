@@ -116,11 +116,11 @@ Various errors can appear:
 
 The **Use managed flow** option on the **Channel** page should be used only by professional users. The document receive API should be manually integrated. The channel ID must be filled in in the API payload. The channel ID can be found in the URL after it's saved.
 
-If the document receiver API is called without a valid channel ID, the system treats the call as invalid. Therefore, the invoice file can't be captured and will appear on the **Received files** page.
+If the document receive API is called without a valid channel ID, the system treats the call as invalid. Therefore, the invoice file can't be captured and won't appear on the **Received files** page.
 
-### Document receiver API
+### Document receive API
 
-Document receiver API, **vis\_ExternalDocumentReceiver**, is a Dataverse unbound custom API. 
+Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. 
 
 #### Input parameters
 
