@@ -164,7 +164,7 @@ The selected slipstreamed version is a reviewed and validated version of Financi
 The slipstream process is fully automated and doesn't require any customer action. Three topologies consume slipstream, each in a slightly different way:
 
 - **On-premises** – On-premises deployments don't support slipstream and true-up.
-- **Infrastructure as a service (IaaS)** – The slipstream logic is applied during any operation that tries to update Financial reporting. It includes binary updates or broadcasts that contains binary updates.
+- **Infrastructure as a service (IaaS)** – The slipstream logic is applied during any operation that tries to update Financial reporting. It includes binary updates or broadcasts that contain binary updates.
 - **Self-service** – Any operation that requires Financial reporting downtime applies the slipstream logic:
 
     - Binary updates or broadcasts that include binary updates
@@ -177,7 +177,7 @@ There are a few common issues that can cause problems when you open Report Desig
 
 Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
+* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
