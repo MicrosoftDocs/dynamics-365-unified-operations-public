@@ -46,7 +46,7 @@ To assign media to a product's **Primary media**, follow these steps:
 7. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Additional media
-[Todo]
+**Additional media** is used for media assignments that have other purposes outside of a standard product media gallery.  **Additional media** items have a property named **Purpose** that indicates its inteded use.  Typical **Additional media** purposes include product manuals, spec sheets, media kits, or any other custom media assignment purpose needed outside of the primary media gallery.  The list of media purposes is extensible and can be defined and expanded using the Commerce SDKs.
 
 ### Product-specific swatches
 [Todo]
