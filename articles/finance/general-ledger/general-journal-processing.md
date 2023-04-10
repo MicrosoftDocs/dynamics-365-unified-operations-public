@@ -4,7 +4,7 @@
 title: General journal processing
 description: This article describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 author: kweekley
-ms.date: 02/28/2022
+ms.date: 04/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -95,18 +95,21 @@ For more information, see the following topics:
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
 ## Simulate posting
-You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the system tests the journal for specific error conditions. If you use the **Simulate posting** function, the system runs all of the same processes that are run during posting without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal. 
+You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the journal is tested for specific error conditions. If you use the **Simulate posting** function, all of the same processes that are run during posting are run without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal. 
 
 **Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
 
 ## Journal unlock
-A button is available on the journal page to unlock a journal that has a status of "locked by system" set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page. 
+A button is available on the journal page to unlock a journal that has a status of "locked by system" set to **Yes**. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal unlock button** on the **Feature management** page. 
 
 ## Workflow recall 
-The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the feature named **Resetting the workflow status for journals** on the **Feature management** page.
+The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the **Resetting the workflow status for journals** feature on the **Feature management** page.
 
-## Delete Journal Lines
-The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. This function impacts extensions on the **LedgerJournalTrans** table and it's **Delete** method, as the set of lines are removed without calling each line's **Delete** method. Beginning with application 10.0.34 a new feature is available called **Delete journal performance using Batch** that allows the delete process to be scheduled using the batch system allowing you to continue other work instead of waiting for the delete processing to complete. 
+## Delete journal lines
+In Dynamics 365 Finance version  10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process to be scheduled. This lets users to continue other work instead of waiting for the delete processing to complete. 
+
+To quickly delete all journal lines in a journal, go to **Functions** > **Delete journal lines**. This function impacts extensions on the **LedgerJournalTrans** table. It's **Delete** method, the set of lines are removed without calling each line's **Delete** method. 
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
