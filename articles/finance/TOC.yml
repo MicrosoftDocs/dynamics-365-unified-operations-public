@@ -242,6 +242,8 @@
           href: accounts-payable/install-invoice-capture.md
         - name: Configure Invoice capture
           href: accounts-payable/config-invoice-capture.md
+        - name: Manage channels in Invoice capture   
+          href: accounts-payable/invoice-capture-channel.md
         - name: Invoice capture configuration groups
           href: accounts-payable/invoice-capture-config-group.md
         - name: Invoice capture mapping rules
