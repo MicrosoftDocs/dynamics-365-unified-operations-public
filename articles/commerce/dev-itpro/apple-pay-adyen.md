@@ -104,9 +104,7 @@ To configure a Commerce online store for Apple Pay, follow these steps.
 
 #### Add Apple Pay to the store payment method
 
-You must add the Apple Pay payment method to the desired payment method configuration for your channel.
-
-To add Apple Pay as a new payment method in Commerce headquarters, follow these steps.
+To add Apple Pay as a new payment method for your channel in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods**.
 1. Select **New**.
