@@ -5,7 +5,7 @@ title: Invoice capture FAQ
 description: This article answers frequently asked questions about the Invoice capture solution.
 author: sunfzam
 ms.date: 04/11/2023
-ms.topic: conceptual
+ms.topic: faq
 ms.prod: 
 ms.technology: 
 
