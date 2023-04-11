@@ -90,7 +90,7 @@ The Snapshot files are created in the folder you specified during the toolkit se
 
 Open **File Explorer** to this folder, and drill down the folders to the publications you're reviewing, you see a lot of files.
 
-![image.png](/.attachments/image-095317dc-62dd-43ae-af78-ae3434e7ed0a.png)
+![image](https://user-images.githubusercontent.com/28597769/231263949-183d6d28-8fc9-4c8d-a94e-766256989bba.png)
 
 Files Type Details
 
@@ -109,7 +109,7 @@ Files Type Details
 
 Once the Snapshot is completed, you'll see the message like **"A snapshot of XXX article(s) was generated"**
 
-![image.png](/.attachments/image-b145c8c8-6b18-415d-b10e-3b12c6ad8e2e.png)
+![image](https://user-images.githubusercontent.com/28597769/231263991-0c87781f-7135-423c-b33a-2c9734c28018.png)
 
 At this stage, the snapshot is only in the file share, the next step is the distributor will push that to the target (subscriber) database. 
 
@@ -119,33 +119,33 @@ The Distributor to Subscriber details can be used to monitor the push of the gen
 
 To view the distributor to subscriber logs, click back on the **All Subscriptions** tab and then click on the record **View Details**
 
-![image.png](/.attachments/image-78f340b1-2751-42df-89a6-5ba0baff2d49.png)
+![image](https://user-images.githubusercontent.com/28597769/231264136-a45f4875-3b7d-4185-a655-0aa1c1a438ef.png)
 
 The first step in pushing the snapshot is running the PRE files (these drop existing objects in the target)
 
-![image.png](/.attachments/image-b7536734-09de-47d8-adbe-f6b77fdd1668.png)
+![image](https://user-images.githubusercontent.com/28597769/231264664-9ba37966-9056-449e-83a1-5abb4ceb7c0d.png)
 
 Then the SCH scripts are run, these create the tables...
 
-![image.png](/.attachments/image-9362ecbc-2b48-4a3c-931f-89746a402cec.png)
+![image](https://user-images.githubusercontent.com/28597769/231264190-cd234f2a-3563-405a-afc2-76b1e6e628c5.png)
 
 Once the tables have been scripted in the subscriber (target) database, it'll import the bulk copy files to the target...
 
-![image.png](/.attachments/image-af319788-561b-4f3e-95d2-5cd744400759.png)
+![image](https://user-images.githubusercontent.com/28597769/231264214-e0c2ea68-53a7-4c30-bae3-b5e8c3acd636.png)
 
 The BCP file import process can take several hours!
 
 Once that is completed, the next step is create the indexes...
 
-![image.png](/.attachments/image-1e8f6f84-8b3c-4c23-a798-fd3929234c49.png)
+![image](https://user-images.githubusercontent.com/28597769/231264251-7c6e07b3-8232-4c4f-a580-ceb8c144161b.png)
 
 The final step is applying constraints and extended properties...
 
-![image.png](/.attachments/image-2333d31d-b5bf-4fd0-9e0d-f5da768cb486.png)
+![image](https://user-images.githubusercontent.com/28597769/231264274-202bdc28-9894-4a0e-82c4-4eb0c07849e0.png)
 
 You can also check on the **Undistributed Commands** to see how much might be outsatnding
 
-![image.png](/.attachments/image-3ac31f0f-abcd-4602-8481-0661230a9768.png)
+![image](https://user-images.githubusercontent.com/28597769/231264818-180d12cd-d17d-4d7b-b18d-69fb645e7530.png)
 
 Once the snapshot is delivered, you will see the message "Delivered snapshot from the \\unc\server\folder...." message...
 
