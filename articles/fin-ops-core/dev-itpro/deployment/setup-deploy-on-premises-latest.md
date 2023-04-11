@@ -455,7 +455,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     >
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
-    You can install SQL Server with high availability either as SQL Server clusters that include a storage area network (SAN) or in an Always On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
+    You can install SQL Server with high availability either as SQL Server clusters that include a storage area network (SAN) or in an Always On configuration. Verify that the Database Engine, Full-Text Search, and SQL Server Management Tools are already installed.
 
     > [!NOTE]
     > Make sure that Always On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
