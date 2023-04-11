@@ -4,7 +4,7 @@
 title: Configure Google Pay with Adyen
 description: This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/05/2022
+ms.date: 04/11/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -22,7 +22,7 @@ This article describes how to configure Google Pay with Adyen in Microsoft Dynam
 
 Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it's configured, the Google Pay button is available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they're directed to complete their payment directly with the Google Pay service. They're then returned to the online storefront to complete the order.
 
-When Google Pay is used with the express checkout module in Commerce, the user's payment account information automatically is prefilled in the checkout form to help the user get through the checkout process faster. Commerce includes a **Payment express** module that enables express checkout behavior. Payment express modules can be used in the checkout or cart page. Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use.
+When Google Pay is used with the express checkout module in Commerce, the user's payment account information is automatically prepopulated on the checkout form to help shoppers get through the checkout process faster. Commerce includes a *payment express* module that enables express checkout behavior. Payment express modules can be used on the checkout or cart pages. Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use.
 
 ## Key terms
 
@@ -34,17 +34,11 @@ When Google Pay is used with the express checkout module in Commerce, the user's
 
 ## Prerequisites
 
-Using Google Pay with Adyen in Commerce requires a Google Merchant account. For information about how to set up your Google Merchant account, see the [Adyen documentation on Google Pay](https://docs.adyen.com/payment-methods/google-pay/).
-
-Follow steps #2 and #3 of the [Adyen Google Pay Drop-in integration 'Before you begin'](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-begin) section.
-
-Also review steps #1 and #2 from the [Adyen Google Pay Drop-in integration 'Before you go live'](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-go-live) section.
-
-
-
-The Google Pay payment method must also be integrated with your Adyen account. For integration link instructions, see [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay).
-
-You must also enable the enhanced wallet feature in Dynamics 365 Commerce headquarters. Go to **Workspaces \> Feature management**, search for the **Enhanced wallet support and payment improvements** feature, select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
+- Using Google Pay with Adyen in Commerce requires a Google Merchant account. For information about how to set up your Google Merchant account, see the [Adyen documentation on Google Pay](https://docs.adyen.com/payment-methods/google-pay/).
+- Follow steps #2 and #3 of [Adyen Google Pay Drop-in integration - Before you begin](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-begin).
+- Review steps #1 and #2 of [Adyen Google Pay Drop-in integration - Before you go live](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-go-live).
+- The Google Pay payment method must also be integrated with your Adyen account. For integration link instructions, see [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay).
+- You must also enable the enhanced wallet feature in Dynamics 365 Commerce headquarters. Go to **Workspaces \> Feature management**, search for the **Enhanced wallet support and payment improvements** feature, select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
 ## Map the Google Pay payment method
 
@@ -87,7 +81,7 @@ To configure a Commerce online store to use Google Pay, follow these steps.
     | Service account ID     | The unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *GUID* |
     | Google merchant ID     | Enter the Google Merchant ID that is assigned to your Google Merchant account. This property is required for production environments but is optional for test environments. For more information, visit <https://pay.google.com/>. | Yes | No | *Numeric identifier* |
     | Merchant account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes | No | *Merchant Identifier* |
-    | Cloud API Key          | Enter the Adyen cloud API key. To obtain this key, follow the instructions in [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key). | Yes | No | "abcdefg" |
+    | Cloud API Key          | Enter the Adyen cloud API key. To obtain this key, follow the instructions in [Generate your API key](https://docs.adyen.com/development-resources/api-credentials#generate-your-api-key). | Yes | No | "abcdefg" |
     | Gateway environment    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | "Live" |
     | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
     | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
