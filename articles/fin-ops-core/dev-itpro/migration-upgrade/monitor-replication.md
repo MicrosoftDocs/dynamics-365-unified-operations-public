@@ -24,7 +24,7 @@ The Data migration toolkit for Dynamics 365 is used for self-service environment
 This tool is used in both AX 2012 to Dynamics 365 upgrades, and also in Dynamics 365 on-premises to Dynamics 365 cloud migrations.
 
    See: 
-   - [Upgrade from AX 2012 - Data upgrade in self-service environments](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service)
+   - [Upgrade from AX 2012 - Data upgrade in self-service environments](/data-upgrade-self-service)
    
    - [Move Lifecycle Services implementation projects from on-premises to the cloud](/lifecycle-services/move-on-prem-to-cloud)
 
