@@ -48,31 +48,31 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | PQU release train | Change cutoff date | PQU train duration | Status
 |---|---|---|---|
-| 10.0.30 Release-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
-| 10.0.30 Release-3 | January 13th 2023 | January 30 to February 26 2023 | Completed |
-| 10.0.30 Release-4 | February 24, 2023 | March 6 to April 9, 2023 | Completed |
-| 10.0.31 Release-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Completed |
-| 10.0.31 Release-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| In-Progress |
-| 10.0.31 Release-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
-| 10.0.32 Release-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| In-Progress |
-| 10.0.32 Release-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
-| 10.0.32 Release-3 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
-| 10.0.33 Release-1 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
-| 10.0.33 Release-2 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
-| 10.0.33 Release-3 | July 14, 2023 | July 24, 2023 to August 27, 2023| Not Started |
-| 10.0.34 Release-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Not Started |
-| 10.0.34 Release-2 | July 21, 2023 | July 31, 2023 to September 3, 2023| Not Started |
-| 10.0.34 Release-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| Not Started |
-| 10.0.35 Release-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| Not Started |
-| 10.0.35 Release-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Not Started |
-| 10.0.35 Release-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Not Started |
-| 10.0.36 Release-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Not Started |
-| 10.0.36 Release-2 | October 27, 2023 | November 6, 2023 to December 17, 2023| Not Started |
-| 10.0.36 Release-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Not Started |
-| 10.0.37 Release-1 | November 3, 2023 | November 13, 2023 to January 7, 2024| Not Started |
-| 10.0.37 Release-2 | December 30, 2023 | Janurary 8, 2024 to February 11, 2024| Not Started |
-| 10.0.37 Release-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
-| 10.0.37 Release-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
+| 10.0.30 PQU-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
+| 10.0.30 PQU-3 | January 13th 2023 | January 30 to February 26 2023 | Completed |
+| 10.0.30 PQU-4 | February 24, 2023 | March 6 to April 9, 2023 | Completed |
+| 10.0.31 PQU-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Completed |
+| 10.0.31 PQU-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| In-Progress |
+| 10.0.31 PQU-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
+| 10.0.32 PQU-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| In-Progress |
+| 10.0.32 PQU-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
+| 10.0.32 PQU-3 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
+| 10.0.33 PQU-1 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
+| 10.0.33 PQU-2 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
+| 10.0.33 PQU-3 | July 14, 2023 | July 24, 2023 to August 27, 2023| Not Started |
+| 10.0.34 PQU-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Not Started |
+| 10.0.34 PQU-2 | July 21, 2023 | July 31, 2023 to September 3, 2023| Not Started |
+| 10.0.34 PQU-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| Not Started |
+| 10.0.35 PQU-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| Not Started |
+| 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Not Started |
+| 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Not Started |
+| 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Not Started |
+| 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to December 17, 2023| Not Started |
+| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Not Started |
+| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 7, 2024| Not Started |
+| 10.0.37 PQU-2 | December 30, 2023 | Janurary 8, 2024 to February 11, 2024| Not Started |
+| 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
+| 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
 > [!Note]
 > Only the onboarded productions environments will receive the updates, onboarded environments will receive explicit communication.
