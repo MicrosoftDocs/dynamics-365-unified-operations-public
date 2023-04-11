@@ -32,34 +32,34 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-After the Invoice capture solution is installed, default configurations are provided to use Invoice capture. The default settings might not fully meet the customer's requirements. In Invoice capture, configurations can be found in the **System preference**. 
+After the Invoice capture solution is installed, default configurations for using it are provided. These default configurations might not fully meet the customer's requirements. In Invoice capture, configurations can be found in **System preference**.
 
-## System preference 
-1. **AI Builder model** - The default model is set as the **Invoice processing model**. To update the default model, select one from the drop-down list. 
-2. **Channel for file upload** -  A default channel is provided for directly uploading the invoice files.  
-3. **File filter** - Select the file filter to apply additional filtering to incoming files at application level.  
-4. **Configuration group** - The configuration group that will be used when a configuration group is not set at the legal entity or vendor level during invoice processing. 
-5. **Use continuous learning** - Select this option to have the continuous learning feature **On**.
+## System preference
 
-### Definition of master data  
+1. **AI Builder model** – The default model is set to **Invoice processing model**. To update the default model, select one in the drop-down list.
+2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
+3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
+4. **Configuration group** – The configuration group that will be used if a configuration group isn't set at the legal entity or vendor level during invoice processing.
+5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
 
-Invoice capture supports two data types for vendor invoice processing: legal entities and vendors. 
+### Definition of master data
 
-**Legal entities** are organizations registered with legal authorities and are defined in Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This controls data access through business units and security roles, allowing Accounts payable clerks to view only the invoices assigned to their users. 
+Invoice capture supports two data types for vendor invoice processing: legal entities and vendors.
 
-**Vendors** are supplier organizations or sole proprietors who supply goods or services to a business, as defined in Dynamics 365 Finance. The vendor master data is used to automatically derive the vendor account, increasing the touchless rate in invoice processing. 
+**Legal entities** are organizations that are registered with legal authorities and defined in Microsoft Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Microsoft Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This link controls data access through business units and security roles, and allows Accounts payable clerks to view only the invoices that are assigned to their users.
 
-The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities and vendors in Finance. When a supplier invoice arrives, the legal entity and vendor account must be correctly determined before transferring the invoice to the target system. The use of master data to dervive legal entities and vendor accounts can reduce maintenance on mapping rules. 
+**Vendors** are supplier organizations or sole proprietors that supply goods or services to a business, as defined in Dynamics 365 Finance. The vendor master data is used to automatically derive the vendor account. Therefore, it helps increase the touchless rate in invoice processing.
 
+The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities and vendors in Finance. When a supplier invoice arrives, the legal entity and vendor account must be correctly determined before the invoice is transferred to the target system. The use of master data to derive legal entities and vendor accounts can help reduce maintenance of mapping rules.
 
 ### Sync master data
-The **Manage legal entities** and **Manage vendors** processes work the same. In **Manage legal entities**, users can't create legal entities manually. Instead, the legal entities are synchronized from Dynamics 365 Finance, following these steps: 
-1. Go to **Setup > System setup > Manage legal entities**.
-2. Select **Sync**. 
-3. Select **OK** in the confirmation dialog box. 
 
-After synchronization is completed, a message will show the number of new legal entities. The list view will refresh automatically to show the new legal entities.  
-An Accounts payable administrator will manually trigger the sync. 
+The **Manage legal entities** and **Manage vendors** processes work in the same way. In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities from Finance by following these steps.
 
+1. Go to **Setup \> System setup \> Manage legal entities**.
+2. Select **Sync**.
+3. In the confirmation message box, select **OK**.
 
+After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
+An Accounts payable administrator will manually trigger synchronization.
