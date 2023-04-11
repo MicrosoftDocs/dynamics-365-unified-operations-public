@@ -32,7 +32,7 @@ The migration tool has a command called **RS** for monitoring the replication st
 
 You may want to monitor the replication directly in SQL server management studio. The details in this document explains how to monitor and the specific steps of the replication.
 
-# Replication overview
+## Replication overview
 By default, when you run the toolkit, we create two publications for tables with primary keys. A single publication for other objects (fuctions) and a single publication for tables without primary keys. Optionally, a final publication for locked tables, or record count mismatches can be created if needed.
 
 Each of these publications has two SQL agent jobs:
@@ -43,7 +43,7 @@ Each of these publications has two SQL agent jobs:
  >[!Note]
  >The non-primary key publication only pushes up the snapshot.
 
-# Replication monitor
+## Replication monitor
 
 To monitor the replication in SQL management studio, connect to the source on-premise database server, expand **Replication**. Select **Launch replication monitor**
 
@@ -56,7 +56,7 @@ The **Replication monitor** window will open:
 > [!Note] 
 > You can see above, there is a single primary key table publication whereas the default is normally two. 
 
-## Snapshot generation
+### Snapshot generation
 
 There are a few ways to get to the snapshot agent details. 
 To view the snapshot agent details: 
