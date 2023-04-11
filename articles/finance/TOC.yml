@@ -248,6 +248,8 @@
           href: accounts-payable/install-invoice-capture.md
         - name: Configure Invoice capture
           href: accounts-payable/config-invoice-capture.md
+        - name: Manage channels in Invoice capture   
+          href: accounts-payable/invoice-capture-channel.md
         - name: Invoice capture configuration groups
           href: accounts-payable/invoice-capture-config-group.md
         - name: Invoice capture mapping rules
@@ -4084,7 +4086,7 @@
         - name: Create custom designs for business documents
           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
         - name: Help prevent long-running reports from timing out
-          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance
+          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance  
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview
