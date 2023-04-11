@@ -34,36 +34,38 @@ ms.dyn365.ops.version:
 
 In Invoice capture, the **Received files** page is a central place where invoice files are received from different sources.
 
-In most cases, the **Received files** process is handled automatically and doesn't require manual intervention. When there are exceptions or errors, the user needs to ensure that all invoice files have been accounted correctly to avoid omissions. 
+In most cases, the **Received files** process is automatic and doesn't require manual intervention. However, if there are exceptions or errors, the user must ensure that all invoice files have been correctly accounted, to help prevent omissions.
 
-In the **Manage file** filter, the various filter settings on the received invoice files can be applied. If the invoice files violate the filter rules, it won't be processed. Users can decide in **Received files** if invoices can be included again when the invoices are valid. 
+The **Manage file** filter can be used to apply different filter settings on the received invoice files. Invoice files that violate the filter rules won't be processed. On the **Received files** page, users can decide whether invoices can be included again when they're valid.
 
 ## View captured invoices
 
-The **Received file (pending)** page displays incoming files that violate filter rules.
- - If the invoices are invalid, the invoice can be marked as **Voided** by clicking **Void**.
- - If the invoices are valid, the invoice can be included in the invoice process by selecting it and clicking **Retry**.
-In the **Received file (voided)** page, all files marked as **Voided** are displayed.
- - If you select an invoice and click **Delete**, it will be permanently deleted from Dataverse and can't be recovered.
-In the **Received file (captured)** page, all files that have been successfully recognized and are in Dataverse are displayed. 
- - Select an invoice and click **View captured invoice** to view invoices in a side-by-side view where users can review the invoice status and make corrections. 
- - Click **Download** to download the original invoice file.
+The **Received file (pending)** page shows incoming files that violate filter rules.
 
+- If an invoice isn't valid, you can mark it as **Voided** by selecting **Void**.
+- If an invoice is valid, you can include it in the invoice process by selecting it and then selecting **Retry**.
+
+The **Received file (voided)** page shows all files that are marked as **Voided**. If you select an invoice and then select **Delete**, it's permanently deleted from Microsoft Dataverse and can't be recovered.
+
+The **Received file (captured)** page shows all files that have been successfully recognized and are in Dataverse.
+
+- Select an invoice, and then select **View captured invoice** to view invoices in a side-by-side viewer, where users can review the invoice status and make corrections.
+- Select **Download** to download the original invoice file.
 
 ## Upload invoice files
 
-To upload invoice images:
-1. Go to **Manage Invoices > Received file**, click **Upload file**. 
-2. Select the files by clicking **+** frame.
-3. Drag and drop the files. The selected files will be displayed in the list.
-4. Click **Upload** and the files will start uploading immediately.  
- - Once complete, a successful message will be displayed, and the uploaded files will be removed from the list.  
-5. Close the pane. The **Received file** list will be automatically refreshed. 
+To upload invoice images, follow these steps.
 
+1. Go to **Manage Invoices \> Received file**.
+2. Select **Upload file**.
+3. Select files by selecting the plus sign (**+**) frame.
+4. Drag and drop the files. The selected files appear in the list.
+5. Select **Upload**. The files immediately start to be uploaded.
 
-## View history 
+    When the upload is completed, a success message is shown, and the uploaded files are removed from the list.
 
-Users can select an invoice and click **View history** to view the processing details with description, message type and processing time. 
+6. Close the pane. The **Received file** list is automatically refreshed.
 
+## View history
 
-
+Users can select an invoice and then select **View history** to view the processing details. Details include a description, the message type, and the processing time.
