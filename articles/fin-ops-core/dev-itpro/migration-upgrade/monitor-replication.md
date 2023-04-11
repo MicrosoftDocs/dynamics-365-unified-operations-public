@@ -15,28 +15,25 @@ ms.search.form: 2022-04-08
 
 ---
 
-# Monitor replication in Dynamics AX 2012
+# Monitoring Replication for the Data Migration Toolkit for Dynamics 365
 
 [!include[banner](../includes/banner.md)]
 
-# Background
-The Data Migration Toolkit for Dynamics365 is used for Self-Service environments. This tool is based upon SQL replication to transfer the data from the customer's local on-premises SQL Server to the Azure SQL database used for D365.
+The Data Migration Toolkit for Dynamics 365 is used for Self-Service environments. This tool uses SQL replication to transfer the data from the customer's on-premises SQL Server to the Azure SQL database used for D365.
 
-This tool is used in both AX 2012 to D365 Upgrades, and also in the D365 On-Premises to D365 Cloud migrations.
+This tool is used in both AX 2012 to D365 Upgrades, and also in D365 On-Premises to D365 Cloud migrations.
 
    See: 
    - [Upgrade from AX 2012 - Data upgrade in self-service environments](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service)
    
    - [Move Lifecycle Services implementation projects from on-premises to the cloud](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud)
 
-The migration tool has a command called **RS* for monitoring the upgrade status, but the details in that are limited.
+The migration tool has a command called **RS** for monitoring the replication status, but the details in that are limited see: [Toolkit Reporting Section](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service#reporting-section-of-the-application)
 
-Therefore, you may want to monitor the replication directly in SQL Server Management Studio. The steps in this document explain how to do that and the specific steps of the replication.
+Therefore, you may want to monitor the replication directly in SQL Server Management Studio. The details in this document explain how to do that, and also explain the specific steps of the replication.
 
 # Replication Overview
-By default, when you run the toolkit, we create 2 publications for tables with primary keys
-A single publication for tables without primary keys
-And optionally a final publication for locked tables, or record count mismatches.
+By default, when you run the toolkit, we create 2 publications for tables with primary keys. A single publication for other objects (fuctions) and a single publication for tables without primary keys. Optionally a final publication for locked tables, or record count mismatches can be created if needed.
 
 Each of these publications has 2 SQL Agent jobs associated with them:
 1. Snapshot Agent
@@ -46,7 +43,7 @@ Each of these publications has 2 SQL Agent jobs associated with them:
 
 # Replication Monitor
 
-To monitor the replication in SQL Management Studio, connect to the AX 2012 database server, expand out **Replication**, and select **Launch Replication Monitor**
+To monitor the replication in SQL Management Studio, connect to the source on-premise database server, expand out **Replication**, and select **Launch Replication Monitor**
 
 ![image](https://user-images.githubusercontent.com/28597769/231263006-30727da0-6bfb-4e14-8dee-53691db8a2ac.png)
 
@@ -54,7 +51,8 @@ The **Replication Monitor** window will open:
 
 ![image](https://user-images.githubusercontent.com/28597769/231263308-9b209005-0a28-4c8f-b9fe-6658d9e41f57.png)
 
-You can see above, for the example in this TSG, there is a single PK Table publication.
+> [!Note] 
+> You can see above, for the example in this document, there is a single PK Table publication, whereas the default is normally two. 
 
 ## Snapshot Generation
 
@@ -149,11 +147,11 @@ You can also check on the **Undistributed Commands** to see how much might be ou
 
 Once the snapshot is delivered, you will see the message "Delivered snapshot from the \\unc\server\folder...." message...
 
-![image.png](/.attachments/image-03bae20d-80cd-4ab8-96d4-d42f61ae517e.png)
+![image](https://user-images.githubusercontent.com/28597769/231265253-cbb0a0eb-dd8d-4057-96f8-cf29c95f6a4d.png)
 
 If there are no further outstanding commands, then you will see the following in the **Undistributed Commands**
 
-![image.png](/.attachments/image-b545360e-3f2f-4e4b-9c15-8363fb29b376.png)
+![image](https://user-images.githubusercontent.com/28597769/231265396-19a42a0c-770d-4734-80a6-e53bbc1363ac.png)
 
 ## Transaction Replication
 
@@ -161,11 +159,11 @@ Once the snapshot is delivered, then any new transactions created on the databas
 
 You'll see these as messages like **1 transaction(s) with XXX command(s) were delivered**...
 
-![image.png](/.attachments/image-9b2b2f69-e212-4faf-8b5c-6808dbf85ea6.png)
+![image](https://user-images.githubusercontent.com/28597769/231265531-4e294a10-466a-42ec-b18d-b45e2c2caebd.png)
 
 Once the database stabilizes, and there is nothing to replicate, then you will see the message **No replicated transactions are available**
 
-![image.png](/.attachments/image-7a14556d-d550-4b20-9ffb-00bccb378b8a.png)
+![image](https://user-images.githubusercontent.com/28597769/231265637-bbc9dec8-5239-4c57-9667-cfd6ac59d31b.png)
 
 
 ## Network Bandwidth
@@ -174,10 +172,10 @@ Whilst the snapshot is being pushed you can monitor the bandwidth from the Distr
 
 Open **Task Manager**
 
-![image.png](/.attachments/image-37005283-93b3-4542-9484-8308d0f4f408.png)
+![image](https://user-images.githubusercontent.com/28597769/231265670-9b2ef74c-d78f-4bed-8726-e481104db554.png)
 
 Click on **Open Resource Monitor**
 
 In **Resource Monitor** click on the **Network** tab, filter on **DISTRIB.exe** and you can see the send bandwidth speed
 
-![image.png](/.attachments/image-ceb8331f-88e0-4afa-9448-edd9b51371a7.png)
+![image](https://user-images.githubusercontent.com/28597769/231265704-30e3aca2-bff1-4581-85e9-b59ec5867314.png)
