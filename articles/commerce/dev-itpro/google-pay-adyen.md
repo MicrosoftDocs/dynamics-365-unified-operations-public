@@ -81,7 +81,7 @@ To configure a Commerce online store to use Google Pay, follow these steps.
     | Service account ID     | The unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *GUID* |
     | Google merchant ID     | Enter the Google Merchant ID that is assigned to your Google Merchant account. This property is required for production environments but is optional for test environments. For more information, visit <https://pay.google.com/>. | Yes | No | *Numeric identifier* |
     | Merchant account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes | No | *Merchant Identifier* |
-    | Cloud API Key          | Enter the Adyen cloud API key. To obtain this key, follow the instructions in [Generate your API key](https://docs.adyen.com/development-resources/api-credentials#generate-your-api-key). | Yes | No | "abcdefg" |
+    | Cloud API Key          | Enter the Adyen cloud API key. To obtain this key, follow the instructions in [Generate your API key](https://docs.adyen.com/development-resources/api-credentials#generate-api-key). | Yes | No | "abcdefg" |
     | Gateway environment    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | "Live" |
     | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
     | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
@@ -89,6 +89,7 @@ To configure a Commerce online store to use Google Pay, follow these steps.
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
 
 #### Add Google Pay to the store payment method
+
 In your channel, add the Google Pay payment method to the desired payment method for the configuration. If you're setting up a new payment method on the store for Google Pay, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce > Channel setup > Payment methods.**
@@ -208,7 +209,7 @@ Modes of delivery are displayed as they're added to the **Modes of delivery** li
 
 The POS configuration uses the setting of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. For information about how to configure the electronic funds transfer (EFT) service for the Dynamics 365 Payment Connector for Adyen in Commerce headquarters, see [Set up a Dynamics 365 POS hardware profile](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
 
-The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal. Follow similar mapping steps in the [Map the Google Payment method](#map-the-google-payment-method) section, mapping for the Card Type desired against the **Dynamics 365 Payment Connector for Adyen** and **Processor payment** options. As POS only supports a single connector as configured for the store, the Payment Connector mapping will map against **Processor payment** value returned by Adyen.
+The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal. Follow similar mapping steps in the [Map the Google Payment method](#map-the-google-pay-payment-method) section, mapping for the Card Type desired against the **Dynamics 365 Payment Connector for Adyen** and **Processor payment** options. As POS only supports a single connector as configured for the store, the Payment Connector mapping will map against **Processor payment** value returned by Adyen.
 
 ## Additional resources
 
