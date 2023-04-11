@@ -36,7 +36,7 @@ The Dynamics 365 Payment Connector for Apple Pay connector reference is used in 
 An Apple merchant account is required to use Apple Pay with Adyen in Commerce. For information about how to set up Apple Pay in your test customer area, see [Apple Pay Drop-in integration](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#set-up-apple-pay). For information about what to do when you're ready to go live in your production environment, see [Going live](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live).
 
 > [!IMPORTANT]
-> If you use the same merchant account to configure Apple Pay that you use for the main Adyen credit card iFrame element, when configuring the **Dynamics 365 Payment Connector for Adyen** connector option, be sure to include the Apple Pay payment method name as configured in your Adyen merchant account in the connector's **Omitted payment methods** field. Any other payment method names that you don't want to display can also be included in this field, separated by semicolons (for example, `applepay;googlepay`). Without this configuration, the main Adyen credit card iFrame element on the checkout page may attempt to load the Apple Pay button and fail due to the security criteria of the iFrame element.
+> If you use the same merchant account to configure Apple Pay that you use for the main Adyen credit card iFrame element, when configuring the **Dynamics 365 Payment Connector for Adyen** connector option, ensure that you include the Apple Pay payment method name in the connector's **Omitted payment methods** field as it configured in your Adyen merchant account. Any other payment method names that you don't want to display can also be included in this field, separated by semicolons (for example, `applepay;googlepay`). Without this configuration, the main Adyen credit card iFrame element on the checkout page may attempt to load the Apple Pay button and fail due to the security criteria of the iFrame element.
 
 The Apple Pay payment method must also be integrated with your Adyen account. Adyen can help you set up the payment method and can also help ensure that the domains that you'll use the certificate for are assigned for use with the certificate.
 
@@ -111,24 +111,24 @@ To add Apple Pay as a new payment method in Commerce headquarters, follow these 
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods**.
 1. Select **New**.
 1. Set the **Default function** option to **Wallet**.
-1. Enter a **Payment method** value (the ID for the payment method, usually the next payment method number available in the payment method series).
+1. Enter a **Payment method** value (the ID for the payment method, usually the next payment method number available in the payment method number series).
 1. Enter a **Payment method name** (for example, "ApplePay").
 1. Set the  **Default function** option to **Wallet**.
-1. Select **Save**
+1. Select **Save**.
 1. Go to your channel (**Retail and Commerce \> Channels \> Online stores**, or for POS, **Retail and Commerce \> Channels \> All stores**). 
 1. On the Action Pane, select the **Set up** tab.
 1. In the **Set Up** group, select **Payment methods**.
 1. Select **New**.
-1. For **Payment method**, select the Apple Pay payment method you configured above. The **Payment method name** and **Function** values should then automatically populate using the payment method values you configured.
+1. For **Payment method**, select the Apple Pay payment method you set up earlier. The **Payment method name** and **Function** values should then automatically populate using the payment method values you configured.
 1. On the **General** FastTab, in the **Commerce** section, set the **Operation name** to **Pay card**.
 1. In the **Commerce** section, set the **Connector name**. For online stores, use **Dynamics 365 Payment Connector for Apple Pay**; for POS stores, use **Dynamics 365 Payment Connector for Adyen**.
 1. On the **Posting** FastTab, enter any required **Account type** ("Ledger account"), **Difference account**, and **Big difference account** settings.
-1. Select **Save**
+1. Select **Save**.
 1. With the new Apple Pay payment method selected, on the Action Pane, select the **Electronic payment setup** tab.
 1. On the Action Pane, select **New**. 
 1. Under **Electronic payment types**, for **ID**, select the ApplePay card type.
 1. Select **Save**
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and then and run the **1070 Channel configuration** job.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and then run the **1070 Channel configuration** job.
 
 ### Configure content security policies in site builder
 
@@ -159,7 +159,7 @@ The Commerce module library includes the Apple Pay module in the sample packagin
 
 ### Use the payment express module with Apple Pay
 
-The Commerce payment express module works with supporting payment methods to give site customers the option to check out faster by using their payment service account information during the checkout process. The payment express module references the configured connector button for Apple Pay on the checkout and cart pages.
+The Commerce payment express module works with supporting payment methods to give online shoppers the option to check out faster by using their saved payment service account information during the checkout process. The payment express module references the configured connector button for Apple Pay on the checkout and cart pages.
 
 #### Set up Apple Pay in the checkout page payment express module
 
@@ -168,7 +168,7 @@ To set up Apple Pay in the checkout page payment express module in site builder,
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
 1. In the **Checkout express payment container** slot, select the ellipsis (...), and then select **Add module**.
-1. In the **Select modules** dialog box, select **Apple Pay**, and then select **OK**. The Apple Pay express module added is preconfigured to use the Dynamics 365 Payment Connector for Adyen set up earlier in headquarters. 
+1. In the **Select modules** dialog box, select **Apple Pay**, and then select **OK**. The Apple Pay express module is preconfigured to use the Dynamics 365 Payment Connector for Adyen set up earlier in headquarters. 
 1. In the Apple Pay module's properties pane, to have the connector return the shipping address from the Apple Pay wallet at checkout, select the **Request shipping address** property.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
@@ -181,7 +181,7 @@ To add Apple Pay to the cart page payment express module in site builder, follow
 1. Under the **Main slot**, find the container that contains the **Cart** module.
 1. Under the **Cart** module, select the **Payment express** module. 
 1. In the **Payment express** slot, select the ellipsis (...), and then select **Add module**.
-1. In the **Select modules** dialog box, select **Apple Pay**, and then select **OK**. The Apple Pay express module added is preconfigured to use the Dynamics 365 Payment Connector for Adyen set up earlier in headquarters.
+1. In the **Select modules** dialog box, select **Apple Pay**, and then select **OK**. The Apple Pay express module is preconfigured to use the Dynamics 365 Payment Connector for Adyen set up earlier in headquarters.
 1. In the Apple Pay module's properties pane, to have the connector return the shipping address from the Apple Pay wallet at checkout, select the **Request shipping address** property.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
@@ -191,7 +191,7 @@ The **Apple Pay** payment button is shown only on supported Apple Pay devices (i
 
 When a user selects the **Apple Pay** payment button, an **Apple Pay** dialog box appears. There, the user can authenticate against their Apple Pay device or browser. The **Apple Pay** dialog box shows a summary of the order amount and the payment method that the user has configured against their Apple Wallet. The user can review these details and then select **Pay** to complete the payment. After the payment is completed, the user is directed to the **Order Complete** site page that shows a detailed order summary for the completed transaction.
 
-As of Commerce version 10.0.34, Apple Pay express payments are included to allow shoppers to have the ability to check out directly from the Apple Pay payment window. Shoppers using supported Apple Pay devices are able to select the Apple Pay button from the **Express Pay** section of the site. The Apple Pay window authenticates the Apple account holder and allows the shopper to select the payment card or method on their Apple Pay account, their contact information including email and phone number, their shipping address, and the method of shipping. Upon paying, Apple Pay then reauthenticates against the account holder. The order is then placed, and the online shopper is directed to the order completion page to view their order summary. This functionality allows the user to bypass the need to manually fill out the checkout form, resulting in a faster checkout experience. 
+As of Commerce version 10.0.34, Apple Pay express payments are included to allow shoppers to have the ability to check out directly from the Apple Pay payment window. Shoppers using supported Apple Pay devices are able to select the Apple Pay button from the express pay section of the site. The Apple Pay window authenticates the Apple account holder and allows the shopper to select the payment card or method on their Apple Pay account, their contact information including email and phone number, their shipping address, and the shipping method. After payment, Apple Pay then reauthenticates against the account holder. The order is then placed, and the online shopper is directed to the order completion page to view their order summary. This functionality allows users to bypass the need to manually fill out the checkout form, resulting in a faster checkout experience. 
 
 ## Configure Commerce POS for Apple Pay
 
