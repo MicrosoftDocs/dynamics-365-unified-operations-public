@@ -1725,6 +1725,8 @@
           href: inventory/inventory-visibility-configuration.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
+        - name: Running on-hand consistency checks while Inventory Visibility is enabled
+          href: inventory/inventory-onhand-consistency-check.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
         - name: Inventory Visibility reservations
