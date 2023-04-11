@@ -98,3 +98,8 @@ There are no known integration issues for the use of PQUs with Dataverse.
 ## More information
 
 If you have a question that isn't covered in this article, or if you require clarification about any answer in this article, open a support case.
+
+## Additional resources
+
+- [Proactive quality updates overview](quality-updates.md)
+- [Release schedule for proactive quality updates](quality-updates-schedule.md)
