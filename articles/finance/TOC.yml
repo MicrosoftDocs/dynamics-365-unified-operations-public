@@ -68,7 +68,7 @@
           items:
           - name: Proactive quality updates Overview
             href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
-          - name: Proactive quality updates Schedule
+          - name: Release schedule for proactive quality updates
             href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/finance
           - name: Proactive quality updates FAQ
             href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/finance
