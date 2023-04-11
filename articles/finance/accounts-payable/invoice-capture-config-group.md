@@ -34,20 +34,20 @@ ms.dyn365.ops.version:
 
 Users can manage the list of invoice fields and the manual review setting for legal entities by using configuration groups. Users can set up invoice configurations for different legal entities in groups. All the legal entities in the same configuration group use the same invoice fields and manual review setting.
 
-## What is a configuration group
+## What is a configuration group?
 
-After an invoice is successfully recognized and captured in Dataverse, we need to apply different derivation and mapping logic to determine which vendor the invoice came from and which legal entity it was sent to. Invoices from different vendors have different styles, resolutions, and contexts, and the type of invoice may vary: 
- - A purchase order invoice associated with purchase orders 
- - An expense invoice which is unrelated to a purchase order 
+After an invoice is successfully recognized and captured in Microsoft Dataverse, different derivation and mapping logic must be applied to determine which vendor the invoice came from and which legal entity it was sent to. Invoices from different vendors have different styles, resolutions, and contexts, and the type of invoice can vary:
 
-The different invoices types will impact what type of messages with different confidence score thresholds and under what conditions manual intervention is required. This will also impact the acceptable types of invoices and fields that need to be displayed based on each type.
+- A purchase order invoice is associated with purchase orders.
+- An expense invoice is unrelated to a purchase order.
 
-## Default configuration group 
+The invoices type affects the type of messages that have different confidence score thresholds and the conditions under which manual intervention is required. It also affects the acceptable types of invoices and fields that must be shown.
 
-After deployment, a **Default configuration** group is created. This **Default configuration** group can't be changed or deleted. 
+## Default configuration group
 
-Administrators can assign different configuration groups to the vendor, legal entity, and the system. After a vendor account and legal entity are determined, the vendor will be checked for an assigned configuration group. If no configuration group is found, the legal entity will be checked for an assigned configuration group. If there no configuration group assigned to neither the vendor or legal entity, the configuration group specified in **System preference** will be used. 
+After deployment, a default configuration group (**Default configuration**) is created. This configuration group can't be changed or deleted.
 
+Administrators can assign different configuration groups to the vendor, legal entity, and system. After a vendor account and legal entity are determined, the vendor is checked for an assigned configuration group. If no configuration group is found, the legal entity is checked for an assigned configuration group. If no configuration group assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** is used.
 
 ## Manage configuration groups
 
@@ -55,43 +55,45 @@ To manage configuration groups, go to **Setup**, and select **System setup \> De
 
 To create a new configuration group, select **Copy a configuration group**. You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all fields except **Group name** and **Group description**. After the configuration group is duplicated, select **OK**.
 
-### Define confidence score of invoice recognition  
+### Define the confidence score of invoice recognition
 
-Users can define the quality standard for invoice data to be recognized by AI Builder. When the recognition is finished, structured invoice data and the corresponding confidence score for each field on the invoice are sent to AI builder. You can configure the confidence scores to indicate differences in the severity of the detected errors. 
+Users can define the quality standard that's required for AI Builder to recognize invoice data. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent to AI Builder. You can configure the confidence scores to indicate differences in the severity of detected errors.
 
-### Define mandatory review needed before invoice creation:  
+### Define whether manual review is required before invoice creation
 
-Determines if a manual review is needed for each recognized invoice based on the severity of the issues (warnings or errors).  
+You can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors).
 
-### Supported invoice types 
-
-In Invoice capture, there are different invoice types for incoming invoices. The invoice type determines: 
- - The validation logic to ensure the completeness and correctness of invoices in Invoice capture. 
- - The invoice fields (on Header or lines) to be displayed in the side-by-side viewer. 
- - Together with the setting in Dynamics 365 Finance to decide which data entity API in recipient side will be called (using pending vendor invoice or invoice journal).  
 ### Supported invoice types
-There are three invoice types in Invoice capture: 
- - PO invoice - invoices that are associated with purchase orders and the purchase order details have to be decided on each invoice line. Both header and lines are required to be reviewed in Invoice capture. 
- - Header-only - invoices that are associated with purchase orders. The purchase order is a mandatory field on the invoice header. The invoice lines will be automatically created from the purchase order in Dynamics 365 Finance by enabling **Automatically create invoice lines**. After this feature is enabled, users don't need to review the line details in Invoice capture. In addition, the line details won’t be displayed in the side-by-side viewer. 
- - Cost invoice - invoices that contain non-stock items that can be either service items or procurement category items. 
 
-The Accounts payable administrator can create a configuration group and select the invoice type for the supported invoice type and assign the configuration group to the vendor level. This increases the touchless rate of invoice processing in Invoice capture. 
+In Invoice capture, there are different invoice types for incoming invoices. The invoice type determines several details:
 
-### Define the control of invoice fields 
+- It determines the validation logic that's used to ensure the completeness and correctness of invoices in Invoice capture.
+- It determines the invoice fields (on the header or lines) that are shown in the side-by-side viewer.
+- Together with the setting in Dynamics 365 Finance, it determines the data entity API that's called on the recipient side (by using the pending vendor invoice or invoice journal).
 
-For each invoice type, different fields can be selected to display in the side-by-side view, add or remove default fields and set fields as mandatory.  
+### Supported invoice types
 
+There are three invoice types in Invoice capture:
+
+- **PO invoice** – Invoices of this type are associated with purchase orders. The purchase order details must be determined on each invoice line. Both the header and the lines must be reviewed in Invoice capture.
+- **Header-only** – Invoices of this type are associated with purchase orders. The purchase order field on the invoice header is a mandatory field. If the **Automatically create invoice lines** feature is enabled, the invoice lines are automatically created from the purchase order in Finance, and users don't have to review the line details in Invoice capture. In addition, the line details aren't shown in the side-by-side viewer.
+- **Cost invoice** – Invoices of this type contain non-stock items. Those items can be either service items or procurement category items.
+
+The Accounts payable administrator can create a configuration group, select the supported invoice type, and assign the configuration group to the vendor level. This approach increases the touchless rate of invoice processing in Invoice capture.
+
+### Define the control of invoice fields
+
+For each invoice type, different fields can be selected to appear in the side-by-side view, default fields can be added or removed, and fields can be set as mandatory.
 
 ### Manage file filters (optional)
 
-Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files(Pending)** list. These fields are shown as **Cancelled** and won't be processed by recognitive service unless the user includes them manually. 
-This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. 
+Users can define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files (Pending)** list. The fields are shown as **Cancelled** and won't be processed by the recognitive service unless the user manually includes them. This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria aren't received at all.
 
-When the Invoice capture solution is installed, a default file filter is defined. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
+When the Invoice capture solution is installed, a default file filter is defined. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**.
 
 ### Accepted file size
 
-You can choose the accepted file size.
+You can specify the accepted file size.
 
 > [!NOTE]
 > Files that are larger than 20,480 kilobytes (KB) aren't supported.
@@ -107,8 +109,6 @@ The following file types are currently supported:
 - TIF
 - TIFF
 
-#### Supported file names 
+### Supported file names
 
-Users can filter out files that aren't invoices by using file name rules. Different rules can be applied to only accept files when the name contains predefined strings or exclude files that contain the defined strings.
- 
-
+Users can use file name rules to filter out files that aren't invoices. Different rules can be applied so that files are accepted only when the name contains predefined strings or excluded when the name contains the defined strings.
