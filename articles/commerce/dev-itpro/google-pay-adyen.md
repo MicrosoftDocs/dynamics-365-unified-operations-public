@@ -126,7 +126,7 @@ When users complete the action in the Google Pay window, they're directed to the
 - The shipping address and contact information such as the customer's email are populated in the checkout form.  If using express checkout, the email from the express account is used.
 - The payment method selected from the customer's digital Google Pay wallet.
 
-Customers have the option to review orders and change checkout order details before they select **Place order** to finalize the order.
+Customers can review orders and change checkout order details before they select **Place order** to finalize the order.
 
 ### Configure Google Pay in site builder 
 
@@ -175,7 +175,7 @@ Users can include up to three supported **Payment Express** modules (in other wo
 
 ### Set up Google Pay as an option in the checkout payment section
 
-You can set up Google Pay as an option in the checkout payment section for payment-only, non-express functionality. The checkout form will be filled in by the user, and the Google Pay payment page will only ready the checkout for payment by Google Pay. No Google account information will be used to overwrite the filled-in checkout details.
+You can set up Google Pay as an option in the checkout payment section for payment-only, non-express functionality. The checkout form is filled in by the user, and the Google Pay payment page only readies the checkout for payment by Google Pay. No Google account information is used to overwrite the filled-in checkout details.
 
 > [!NOTE]
 > The following procedure assumes that your site uses a checkout fragment that is configured with pickup information, a shipping address, delivery options, contact information, optional terms and conditions, and a section for checkout elements. The default module library checkout module is released with a checkout section container that has text block, loyalty points, gift card, and payment modules. For more information, see [Payment module](../payment-module.md).
