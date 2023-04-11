@@ -229,13 +229,13 @@ It is likely that your company has other order channels that are also posting so
     - **Criteria** – Select any sales order number.
 1. Select **OK** to apply your settings and close the dialog.
 1. On the Action Pane, select **Export**.
-1. The **Execution summary** page opens. On the **Entity processing status** FastTab, select **Download file** from the toolbar. <!-- KFM: This step was vague in the draft. I think this is what we should do here, please confirm.  -->
+1. The **Execution summary** page opens. On the **Entity processing status** FastTab, select **Download file** from the toolbar.
 1. Open the downloaded file in Microsoft Excel. Remove all of the data rows, leaving just the header row. Then add new rows with the sales order line details that you want to import to Supply Chain Management.
 1. For each row in your import file, in addition to the usual order data, be sure to include soft reservation details in the following columns:
     - **INVENTORYSERVICERESERVATIONID** – Enter the soft reservation ID from the external reservation.
     - **ISSOFTRESERVEDEXTERNALLY** – Enter *Yes*.
 1. Import the completed Excel file, you'll be able to check import status after completion.
-1. After a successful import, you'll be able to confirm that the newly updated sales orders now have soft reservation details by opening those orders in Supply Chain Management. <!-- KFM: Are we updating existing sales orders, or importing new orders? Or are we importing lines for existing orders? -->
+1. After a successful import, you'll be able to confirm that the new sales orders have soft reservation details by opening those orders in Supply Chain Management.
 
 > [!NOTE]
 > AFter you import sales orders that include soft reservation details, you won't be able to modify the soft reservation or revert it from within Supply Chain Management. If the data you imported isn't correct, then delete the affected sales line and re-import it.
