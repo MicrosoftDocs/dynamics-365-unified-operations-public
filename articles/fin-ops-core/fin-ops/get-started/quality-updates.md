@@ -36,3 +36,7 @@ Microsoft has invested in the following technologies and processes to make the P
 - **Higher-quality concise payloads** – The changes that PQU payloads contain are limited to bug fixes and regulatory changes that are supported by flighting. We apply extra diligence when we backport changes into a PQU, to further reduce the risk of unintended regressions.
 - **Safe deployment rollout process** – Deployment of PQUs follows a safe deployment process. Each PQU is first delivered to a single region that contains a small group of customers who have the highest tolerance for risk. Then, if no regressions are identified, the process continues through a broader group of customers, based on geographies (stations), until all customers are using the new version. This deployment model is used across Microsoft online services to help build confidence in an update as it's delivered to more customers, and to help minimize the impact if unforeseen issues are detected.
 - **Fallback via flighting** – Flighting is used to enable or disable changes that are introduced in PQUs. If a change must be turned off after a PQU deployment, the flight system can be used to turn it off, to help reduce the impact.
+
+## Additional resources
+[Release schedule for proactive quality updates](quality-updates-schedule.md)
+[Proactive quality updates FAQ](quality-updates-faq.md)
