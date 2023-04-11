@@ -24,7 +24,7 @@ This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 
 
 | Term | Description |
 |---|---|
-| Apple Pay | Also known as the Apple Pay "button", Apple Pay is a wallet payment offering that's supported through the Adyen connector. It enables the customer experience and integration that are supported by the Microsoft Dynamics 365 Apple Pay Connector. |
+| Apple Pay | Also known as the Apple Pay "button", Apple Pay is a wallet payment offering that's supported through the Adyen connector. It enables the customer experience and integration supported by the Microsoft Dynamics 365 Apple Pay Connector. |
 | Wallet | A payment type that doesn't include traditional payment characteristics, such as the Bank Identification Number (BIN) range and expiration date that are used to differentiate credit and debit card types. |
 
 Dynamics 365 Commerce offers an out-of-box integration for Apple Pay when the Adyen payment gateway service is used. Apple Pay is a digital wallet payment method that uses an Apple Pay merchant account in coordination with the Adyen payment service. When it's configured, the Apple Pay button is a selectable payment method that's part of an online store's order checkout page. The Apple Pay button is presented as a payment option only for supported Apple Pay devices. When users select **Apple Pay** on a supported browser or device, they're directed to the Apple Pay service to complete their payment directly. They're then returned to the online storefront for order completion.
@@ -119,7 +119,7 @@ To add Apple Pay as a new payment method in Commerce headquarters, follow these 
 1. On the Action Pane, select the **Set up** tab.
 1. In the **Set Up** group, select **Payment methods**.
 1. Select **New**.
-1. For **Payment method**, select the Apple Pay payment method you configured above. The **Payment method name** and **Function** values should then automatically populate uing the payment method values you configured.
+1. For **Payment method**, select the Apple Pay payment method you configured above. The **Payment method name** and **Function** values should then automatically populate using the payment method values you configured.
 1. On the **General** FastTab, in the **Commerce** section, set the **Operation name** to **Pay card**.
 1. In the **Commerce** section, set the **Connector name**. For online stores, use **Dynamics 365 Payment Connector for Apple Pay**; for POS stores, use **Dynamics 365 Payment Connector for Adyen**.
 1. On the **Posting** FastTab, enter any required **Account type** ("Ledger account"), **Difference account**, and **Big difference account** settings.
