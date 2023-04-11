@@ -29,6 +29,10 @@ ms.dyn365.ops.version: 10.0.0
 
 Every day administrators are performing lifecycle operations on their environments.  This includes common activities like backup and restore, refreshing sandbox environments with new transactions from Production instances, and more.  This article will serve as a landing zone for core concepts with links to more detailed scenario articles.
 
+To learn more about Power Platform Integration, watch our TechTalk on the [Microsoft Dynamics 365 Community](https://www.youtube.com/watch?v=HmJIuHhx3Hg) YouTube channel.
+
+> [!VIDEO https://www.youtube.com/embed/HmJIuHhx3Hg]
+
 ## Terminology differences between Lifecycle Services and Power Platform admin center
 When it comes to environment lifecycle operations, there are some terminology and technical differences between similar activities that admins perform in the two different admin portals. The table below is a quick reference for each operation type as well as explains any nuances between the two experiences.
 
@@ -50,8 +54,8 @@ With this duality of environments for each conceptual environment, there are imp
 ### End to end scenario library
 Below find a list of continually updated scenario articles that serve as a walkthrough for customer administrators.
 
-1. Connect Finance and Operations apps with a new Microsoft Dataverse instance
-2. Connect Finance and Operations apps with an existing Microsoft Dataverse instance
+1. [Connect Finance and Operations apps with a new Microsoft Dataverse instance](./environment-lifecycle-connect-finops-new-dv.md)
+2. [Connect Finance and Operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md)
 3. Enable Dual-write applications on a connected environment
 4. Delete Finance and Operations apps that are connected to Microsoft Dataverse
 5. Delete Microsoft Dataverse instances
