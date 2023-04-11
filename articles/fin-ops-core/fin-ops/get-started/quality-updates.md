@@ -39,6 +39,5 @@ Microsoft has invested in the following technologies and processes to make the P
 
 ## Additional resources
 
-[Release schedule for proactive quality updates](quality-updates-schedule.md)
-
-[Proactive quality updates FAQ](quality-updates-faq.md)
+- [Release schedule for proactive quality updates](quality-updates-schedule.md)
+- [Proactive quality updates FAQ](quality-updates-faq.md)
