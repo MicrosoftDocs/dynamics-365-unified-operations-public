@@ -40,6 +40,23 @@ In this scenario, you will learn how to:
 As an example of this scenario, a customer who has already gone live with Dynamics 365 Field Service application on a Microsoft Dataverse based environment Power Platform admin center (PPAC) wishes to now connect their new Finance and Operations apps environment to it.  This will unlock popular features such as Dual-write, Virtual entities, and Business events out of the box between the back-office and front-office applications.
 
 ## Preqrequisites
+The following list describes the prerequisites for setting up the Microsoft Power Platform integration.
+
+- Make sure that at least 1 GB of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup will fail. View your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+
+- Validate the governance policy of your tenant in Power Platform admin center. To do this validation, you must have either the **Global administrator** role or the **Power Platform administrator** role.
+
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    2. Select **Settings** in the left navigation to open the **Power Platform settings** page.
+
+        ![Screenshot of the Power Platform settings pane.](media/ppi-ppac-governance-environmentcreation.png)
+
+- For organizations that **don't allow everyone** to create Microsoft Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Azure Active Directory (Azure AD). To make this change, you must be assigned to the **Global administrator** role.
+
+    - Dynamics 365 Service Admin
+    - Power Platform Admin
+
+-The user who does the setup in Lifecycle Services must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan** license, the **AX Enterprise** license, or an application-specific license, such as **Dynamics 365 Finance**.
 
 ## Step 1: Click setup from the Power Platform Integration tab
 In Lifecycle Services, visit your sandbox or Production environment and locate the "Power Platform Integration" tab.  You should see that the **Setup** button is available which means that you can configure your connection to Microsoft Dataverse. 
