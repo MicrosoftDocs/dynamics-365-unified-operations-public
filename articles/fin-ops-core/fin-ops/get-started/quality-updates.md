@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proactive quality updates
+title: Proactive quality updates overview
 description: This article provides information about proactive quality updates (PQUs). It explains what they are and why they're used, and describes some of their benefits.
 author: rashmansur
 ms.date: 04/05/2023
@@ -15,7 +15,7 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Proactive quality updates
+# Proactive quality updates overview
 
 [!include[banner](../includes/banner.md)]
 
