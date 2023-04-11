@@ -208,7 +208,7 @@ When you use the *Inventory Visibility integration with soft reservation on sale
 
 ### Import sales orders that have been soft reserved externally
 
-It is likely that your company has other order channels that are also posting soft reservation to Inventory Visibility. Sales orders that have been soft reserved externally may need to be imported into Supply Chain Management if you are using it as your system of record. Follow these steps to import sales orders that have been soft reserved externally:
+It's likely that your company has other order channels that are also posting soft reservation to Inventory Visibility. Sales orders that have been soft reserved externally may need to be imported into Supply Chain Management if you're using it as your system of record. Follow these steps to import sales orders that have been soft reserved externally:
 
 1. Sign in to Supply Chain Management and go to **System Administration \> Work spaces \> Data management**.
 1. Select the **Framework parameters** tile.
