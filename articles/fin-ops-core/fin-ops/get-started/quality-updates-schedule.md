@@ -110,3 +110,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > 
 > Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update will span four days. It just means that we can't pre-determine which set of environments will be updated on a given day within the four-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
 
+## Additional resources
+
+- [Proactive quality updates overview](quality-updates.md)
+- [Proactive quality updates FAQ](quality-updates-faq.md)
