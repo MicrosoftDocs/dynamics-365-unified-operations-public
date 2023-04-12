@@ -2,7 +2,7 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 01/31/2023
+ms.date: 04/12/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -53,7 +53,7 @@ The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MP
 1. After the app is installed, open it from the **Start** menu in Windows, and activate it. For information about how to activate the app, see [Point of sale (POS) device activation](../retail-device-activation.md).
 1. After the app is activated, sign in to it by using your employee credentials.
 
-You can perform silent installation and servicing updates for the Store Commerce app. See the [Mass deployment of sealed Commerce self-service installers](../enhanced-mass-deployment.md) help tipic for more information.  
+You can perform silent installation and servicing updates for the Store Commerce app. For more information, see [Mass deployment of sealed Commerce self-service installers](../enhanced-mass-deployment.md).  
 
 ## Migrate extensions
 
