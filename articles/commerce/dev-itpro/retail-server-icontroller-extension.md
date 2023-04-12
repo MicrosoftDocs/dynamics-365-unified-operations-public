@@ -19,7 +19,7 @@ ms.assetid:
 # Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/retailsdk-deprecation-banner.md)]
+[!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 
 This article explains how to create a new Retail Server application programming interface (API), and how to expose it so that point of sale (POS) or other clients can consume it. Modification of the existing Retail Server APIs isn't supported.
 
