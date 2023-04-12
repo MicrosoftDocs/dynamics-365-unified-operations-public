@@ -78,7 +78,5 @@ The following table lists the languages that the finance and operations help can
 ## See also
 
 [Custom Help overview](custom-help-overview.md)  
-[Custom Help Toolkit](custom-help-toolkit.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -38,8 +38,6 @@ Custom Help content typically originates from one of three sources:
 
     Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It is not intended to be customized directly but to be supplemented by articles on your local website. However, depending on your solution, you might need a copy of Microsoft's content.
 
-    You can use the [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool from the Custom Help Toolkit to clone content from any of the finance and operations repositories and generate corresponding HTML files. Those files can then be updated with content that is specific to your solution.
-    
     [!INCLUDE [custom-help-toolkit-deprecation](../includes/custom-help-toolkit-deprecation.md)]
 
 - Existing customized Dynamics AX content
@@ -68,12 +66,8 @@ The following table outlines the main objectives that admins typically have for 
 | Objective | Learn more |
 |-----------|------------|
 | I want to give my users a customized in-product Help experience that reflects their actual solution. | See the [Custom Help websites](#custom-help-sites) section of this article and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md). |
-| I want to use the Microsoft Help content as a baseline for Help content that is specific to my solution. | See [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md). |
 | I want to contribute to the Microsoft Help content. | See [Extend, customize, and collaborate on the Help](contributor-guide.md). |
-| I want to reuse my existing Dynamics AX content. | See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md). |
-| I want to set up a website for my Help content. | See the [Custom Help websites](#custom-help-sites) section of this article. |
 | I want to add my content to the **Help** pane. | See [Connect a custom Help website to the Help pane](connect-help-pane.md). |
-| Our technical writers want guidance that will help them convert our earlier content into Markdown so that it becomes easier for them to customize the Microsoft content. | See [Moving to Markdown](migrate-dynamicsax2012.md#moving-to-markdown). |
 
 ## <a name="custom-help-sites"></a>Custom Help websites
 
@@ -85,15 +79,10 @@ Before the product can connect to your Help content, you must customize the in-p
 
 - Your content must be indexed by a search service.
 
-    If you use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is part of the [Custom Help Toolkit](custom-help-toolkit.md) for context-sensitive Help, the **Help** pane will generate a query that must be run against the search service's index. The query depends on specific metadata in the Help topics. For more information, see [Metadata requirements for custom Help topics](preparing-content.md#metadata).
-
-The [Deploy custom Help to Azure](walkthrough-help-azure.md) article describes an approach for hosting content on Azure. It includes information about how to set up a search service that indexes your content so that it can be found by the in-product **Help** pane. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).
-
 ## See also
 
 [Connect a custom Help website to the Help pane](connect-help-pane.md)  
 [Deploy custom Help to Azure](walkthrough-help-azure.md)  
-[Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)

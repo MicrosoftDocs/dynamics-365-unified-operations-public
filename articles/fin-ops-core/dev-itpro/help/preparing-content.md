@@ -2,7 +2,7 @@
 title: Prepare content for use with the Help pane
 description: This article describes how you can prepare content so that it can be used with the Help pane.
 author: edupont04
-ms.date: 11/21/2022
+ms.date: 04/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,21 +21,6 @@ ms.dyn365.ops.version: Operations
 Content that can be used with the **Help** pane in Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce can be derived from existing Microsoft content, migrated from existing Dynamics AX 2012 Help content, or created as new files.
 
 Microsoft creates Help in multiple languages for the locales that are supported by Finance, Supply Chain Management, and Commerce. However, locale support isn't restricted to those locales.
-
-## Creating custom Help content that is derived from existing Microsoft content
-
-[!INCLUDE [custom-help-toolkit-deprecation](../includes/custom-help-toolkit-deprecation.md)]
-
-You can use Microsoft Help content as a baseline for content that describes your solution. The [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool can retrieve the content from Markdown files in Microsoft repositories (repos) and convert it to HTML files.
-
-> [!NOTE]
-> You can only use the HtmlFromRepoGenerator tool to retrieve content of the Markdown files for the English language.  
-
-For more information about how to use existing Microsoft content as a baseline for content that describes your solution, see [Extend and collaborate on the Help](contributor-guide.md).
-
-## Creating new Help content
-
-You use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) to connect your content to the **Help** pane. The **Help** pane will generate a query that is run against the search service's index. Context-sensitive Help and full-text search in the **AzureSearchCustomHelp** solution require that each article contains specific metadata.
 
 ### <a name="metadata"></a>Metadata requirements for custom Help topics
 
@@ -59,10 +44,11 @@ The following table describes the values that can be specified for the **ms.sear
 | Human Resources | This value applies to solutions that are based on Dynamics 365 Human Resources. |
 | Talent | This value applies to solutions based on Dynamics 365 Talent. (Note that the Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard apps are being retired. For more information, see [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-nboard-apps).) |
 
-
 ## Migrating content from existing AX 2012 Help content
 
-If you have existing content from AX 2012, you can reuse it for Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment. The [Custom Help Toolkit](custom-help-toolkit.md) includes a Windows PowerShell script, **run_ax2012.ps1**, that transforms AX 2012 HTML files so that they can be used in the custom Help environment.
+If you have existing content from AX 2012, you can reuse it for Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.
+
+[!INCLUDE [custom-help-toolkit-tools](../includes/custom-help-toolkit-tools.md)]
 
 ### Non-required metadata
 
@@ -78,19 +64,13 @@ The following properties are reserved for future use:
 
 ## Changing the locale of topics to match the locale of solutions
 
-If your solution is intended to support multiple markets, you will want to provide Help content for each market. For example, your solution might support German (Germany) and German (Austria), but you have HTML files only for German (Germany). To make the same content available in German (Austria), you can make a copy of the HTML files and then use the [HtmlLocaleChanger](custom-help-toolkit-HtmlLocaleChanger.md) tool to update the **ms.locale** metadata. You can also add content that is specific to Austria to these new HTML files, as required.
-
-## Converting HTML files to JSON files for use with an Azure search service
-
-If you use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is provided as part of the [Custom Help Toolkit](custom-help-toolkit.md), the search service requires that all your content be in JavaScript Object Notation (JSON) format. The [ConvertHtmlToJson](custom-help-toolkit-ConvertHtmlToJson.md) tool transforms HTML files into JSON files.
+If your solution is intended to support multiple markets, you will want to provide Help content for each market. For example, your solution might support German (Germany) and German (Austria), but you have HTML files only for German (Germany). To make the same content available in German (Austria), you can make a copy of the HTML files and then update the **ms.locale** metadata. You can also add content that is specific to Austria to these new HTML files, as required.
 
 ## See also
 
 [Custom Help overview](custom-help-overview.md)  
-[Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

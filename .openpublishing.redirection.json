@@ -19836,6 +19836,36 @@
       "source_path": "articles/fin-ops-core/fin-ops/get-started/move-environments-data-center.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmlfromrepogenerator",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-converthtmltojson",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmllocalechanger",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/migrate-dynamicsax2012",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/walkthrough-help-azure",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
     }
   ]
 }

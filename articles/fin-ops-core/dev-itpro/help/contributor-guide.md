@@ -66,14 +66,6 @@ You can convert content from Microsoft Word to Markdown by using open-source too
 
 Microsoft makes frequent changes to the content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public, is updated weekly. However, you can choose to get updates monthly, twice a year, or once a year, for example. The translation repos are updated less frequently, so you might want a monthly schedule or less frequent updates, as appropriate.  
 
-When you decide that it's time to get the latest version of the content from Microsoft, you can use the Git command line or GitHub Desktop. The Help for GitHub provides [an example that shows how this process works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, you use the **Merge into current branch** command to pull changes from the origin into your fork.
-
-Because the Microsoft repos are public, you don't have to have a valid GitHub account to get the content. However, we recommend that, at a minimum, your organization have a system account that has access to GitHub. For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
-
-## Get the content without a GitHub account
-
-If you don't want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub even if you don't have a GitHub account. For example, you can just clone the relevant GitHub repo. A GitHub account isn't required to clone a repo. Because the Microsoft repos are public, anyone can always access them.
-
 ## Translate the content
 
 If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples.
@@ -84,8 +76,6 @@ If your solution is available in more than one country or region, you will proba
 
     > [!NOTE]
     > DTS isn't an option for translating the content in this scenario because it doesn't support Markdown files.
-
-* Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool to pull Microsoft's English (United States) content, build the HTML files, customize them, and then translate them. You can use DTS to translate HTML files. 
 
 ### Dynamics 365 Translation Service
 
