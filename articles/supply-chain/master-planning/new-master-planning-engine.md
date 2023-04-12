@@ -27,15 +27,13 @@ Microsoft has deprecated the built-in master planning engine in favor of Plannin
 
 For more information about the deprecated master planning engine, see the announcements in [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
-A deprecated feature means that it is no longer in active development and it may be removed in a future release. 
-For deprecated master planning, this means that there will be no new features and support only for blocking issues (master planning does not create planned orders, continuously fails) or a regression in the functionality. Since March 2023, Microsoft will be strict on not providing support unless blocking issue/regression for classic master planning. 
+A deprecated feature is a feature that is no longer in active development and which may be removed in a future release. For the deprecated master planning engine, this means that there will be no new features and support will only be provided for blocking issues (where master planning doesn't create any planned orders and/or continuously fails) or for regressions in the functionality. Starting in March 2023, Microsoft will adopt a strict policy against providing support for the deprecated master planning engine other than for blocking issues or regressions. These conditions apply to all customers, including:
 
-This is applicable:
--	For all customers, including the ones that are not yet supported on Planning Optimization. We are expecting to support all customers after 2023 wave 1. 
--	Also if a customer has an exception to continue using the deprecated built-in planning
--	Also for on-premises customers. 
+- Customers whose needs aren't yet fully supported by Planning Optimization. We expect to support all customer requirements by the end 2023 release wave 1.
+- Customers who have received an exception to continue using the deprecated built-in planning engine.
+- All on-premises customers.
 
-There is no current timeline to remove classic master planning. If it was to be removed, the announcement would occur 12-18 months ahead of the removal date to all remaining customers to migrate. 
+There is no current timeline to fully remove the deprecated built-in planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we will announce those plans 12-18 months before the removal date to allow all remaining customers to migrate.
 
 ## New deployments
 
@@ -49,7 +47,7 @@ Owners of existing cloud-based deployments that depend on master planning must p
 
 Starting in Supply Chain Management version 10.0.32, it's possible to allow some companies (legal entities) to run Planning Optimization while others continue to use the deprecated master planning engine until they are ready to be migrated. Therefore, Microsoft will now grant exceptions on a per-company basis. The exception only applies to existing companies&mdash;starting with version 10.0.32, all new companies that you add to your existing environment must use Planning Optimization. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](planning-optimization/get-started.md#exclude-po).
 
-It is recommended to migrate to Planning Optimization one company at a time as soon as they are supported. 
+We recommend that you migrate one company at a time to Planning Optimization, as soon as they are supported.
 
 ## Migration recommendations
 
@@ -108,45 +106,45 @@ If your environment doesn't support Planning Optimization, you'll receive the fo
 
 If you're a Microsoft partner or independent software vendor (ISV), you can obtain, at a reduced price, a non-production environment that supports Planning Optimization, and that includes Microsoft business applications and demo data. These environments are available only to partners and ISVs, and they can be used only on partner tenants, never on customer tenants. You can use the environment that you obtain to learn how Planning Optimization works, test your solutions while you're using it, and deliver end-to-end customer demos. To request a license, go to the [partner sandbox request page](https://experience.dynamics.com/requestlicense/).
 
-## Frequently asked questions for migration 
+## Frequently asked questions about migration
 
 ### What impact does Planning Optimization have on current planning users?
 
-Users will still work in the same module and use the same forms to initiate planning and review planned orders. The only visible difference is that the processing window will say “Run Planning Optimization”. 
+Users will still work in the same module and use the same pages to initiate planning and review planned orders. The only visible difference is that the processing window will show **Run Planning Optimization**.
 
 ### If I am running classic planning in a batch job, do I need to update this job when I enable Planning Optimization?
 
-Yes, you will need to setup a new batch job for running Planning Optimization instead of classic master planning
+Yes, you will need to set up a new batch job for running Planning Optimization instead of classic master planning
 
 ### If I am running deprecated planning in some companies and Planning Optimization on others, can I use intercompany master planning?
 
-Yes. While the intercompany master planning page is not supported, you can do the same by scheduling sequential batch jobs to run planning in the different companies in their desired order. Use the Planning Optimization batch job for the companies running Planning Optimization (**Planning Optimization** task) and the deprecated for the others (**Master planning** task).
+Yes. While the intercompany master planning page isn't supported, you can achieve the same affect by scheduling sequential batch jobs to run planning for the various companies in their desired order. Use the Planning Optimization batch job for the companies running Planning Optimization (*Planning Optimization* task) and the deprecated engine for the others (*Master planning* task).
 
-If you want to use intercompany for different companies using Planning Optimization, you would do the same, scheduling Planning Optimization tasks as batch jobs running sequentially.
+To use intercompany master planning for different companies that use Planning Optimization, the process is the same: schedule Planning Optimization tasks as batch jobs running sequentially.
 
-### What will be my performance when I move to Planning Optimization?
+### How much will my performance improve when I move to Planning Optimization?
 
-There is no specific rule about how much your performance will improve. In general larger datasets of companies that have more performance issues with classic master planning will see the biggest difference. The best way to find out is to test it. 
+There is no specific rule about how much your performance will improve. In general, companies tha run with large datasets and that are already experiencing performance issues with deprecated master planning will see the biggest improvement. The best way to find out is to test it.
 
-### Does it cost us anything additional to use Planning Optimization?
+### Does it cost extra to use Planning Optimization?
 
-No, it is included in your Dynamics Supply Chain Management licensing – there is no additional cost.
+No, it's included in your Supply Chain Management license. There are no additional costs.
 
 ### Can I run Planning Optimization on a Government Community Cloud (GCC) environment?
 
 Yes, this is supported now that GCC is compatible with the LCS microservices framework
 
-### Can I run Planning Optimization on a Tier-1 environment?
+### Can I run Planning Optimization on a tier-1 environment?
 
-No, Planning Optimization runs via a LCS add-in which can only be installed on a Tier 2 or higher environments. 
+No, Planning Optimization runs via an LCS add-in which can only be installed on tier-2 or higher environments.
 
 ### What data center does Planning Optimization run on?
 
-Planning Optimization will run on the same data center as your Dynamics 365 Supply Chain Management environment. 
+Planning Optimization runs on the same data center as your Supply Chain Management environment.
 
 ### I am a partners and I want to demo or test Planning Optimization, how can I do that?
 
-We have a special license for Tier 2 environments for partner or ISV access, details on the following [link](https://experience.dynamics.com/requestlicense/).
+For partners and independent software vendors (ISVs), Microsoft offers a special license for accessing tier-2 environments. For details, see [\[ISV\] Request License](https://experience.dynamics.com/requestlicense/).
 
 ## Exception process for version 10.0.31 and earlier
 
@@ -165,7 +163,7 @@ The following flowchart summarizes the information in this article, so that you 
 > [!NOTE]
 > You can only request an exception for tenants that currently include, or will include, a production environment, not for tenants with sandbox environments only. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
 
-## Frequently asked questions for migration process 10.0.31 and earlier
+## Frequently asked questions about the migration process for version 10.0.31 and earlier
 
 ### <a name="faq-sandbox"></a>Sandbox environments
 
