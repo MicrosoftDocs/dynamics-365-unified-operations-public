@@ -24,7 +24,7 @@ The client that finance and operations apps use supports multiple languages and 
 
     For example, the German (Germany) content must be in a folder that is named **de-de**.
 
-For more information, see [Custom Help overview](custom-help-overview.md) and [Deploy custom Help to Azure](walkthrough-help-azure.md).
+For more information, see [Deploy custom Help to Azure](walkthrough-help-azure.md).
 
 ## Languages and descriptors
 

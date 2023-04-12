@@ -38,11 +38,9 @@ Custom Help content typically originates from one of three sources:
 
     Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It is not intended to be customized directly but to be supplemented by articles on your local website. However, depending on your solution, you might need a copy of Microsoft's content.
 
-    [!INCLUDE [custom-help-toolkit-deprecation](../includes/custom-help-toolkit-deprecation.md)]
-
 - Existing customized Dynamics AX content
 
-    You can [convert Dynamics AX custom Help content so that it can be used in Dynamics 365](migrate-dynamicsax2012.md).
+    You can convert Dynamics AX custom Help content so that it can be used in Dynamics 365.
 
 - HTML files that are created specifically for your solution
 
@@ -56,8 +54,6 @@ The end-to-end process depends on the actual customer solution and the users' ex
 2. Publish the content on a website.
 3. Index the content by using a search service.
 4. Connect the custom **Help** pane to the website and the search service.
-
-Microsoft provides a [toolkit](custom-help-toolkit.md) that can help you generate HTML files from the Microsoft Help repositories, generate JavaScript Object Notation (JSON) files for search services, and change the locale of HTML files so that it matches the locale of your solution.
 
 You're welcome to share your knowledge by contributing to this documentation through the link at the bottom of the page or by joining the [Dynamics 365 community](https://community.dynamics.com/).
 
@@ -82,7 +78,6 @@ Before the product can connect to your Help content, you must customize the in-p
 ## See also
 
 [Connect a custom Help website to the Help pane](connect-help-pane.md)  
-[Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)

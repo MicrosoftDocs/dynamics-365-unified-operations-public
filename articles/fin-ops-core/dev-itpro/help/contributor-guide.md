@@ -35,9 +35,6 @@ Microsoft provides a repo in GitHub for the source content. The [Dynamics-365-Un
 
 When Microsoft publishes an update to the content, the *main* branch in the repo is updated. The source repo is updated weekly. If you fork the Microsoft repo, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less often, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you change files that Microsoft has also changed. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs authoring guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.
 
-> [!TIP]
-> If you just want to get the Microsoft content as it is, you don't have to be familiar with GitHub. For more information, see the [Get the content without a GitHub account](#get-the-content-without-a-github-account) section of this article. However, if you want to extend or customize the Microsoft content, we recommend that you join Microsoft on GitHub.
-
 <!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 
 ### Get started with GitHub
@@ -83,7 +80,6 @@ You can use the [Dynamics 365 Translation Service](../lifecycle-services/transla
 
 ## See also
 
-[Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  
 [Docs contributor guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
@@ -91,6 +87,4 @@ You can use the [Dynamics 365 Translation Service](../lifecycle-services/transla
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

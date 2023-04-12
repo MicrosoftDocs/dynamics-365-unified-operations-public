@@ -24,7 +24,7 @@ Microsoft creates Help in multiple languages for the locales that are supported 
 
 ### <a name="metadata"></a>Metadata requirements for custom Help topics
 
-The following metadata must be present in your topics for context-sensitive Help and full-text search to return results in the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution.
+The following metadata must be present in your topics for context-sensitive Help and full-text search to return results.
 
 | Property | Description |
 |----------|-------------|

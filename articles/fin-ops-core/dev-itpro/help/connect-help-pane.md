@@ -110,10 +110,8 @@ If the client is set to the **de-AT** locale, but no results are found in the Ge
 
 ## See also
 
-[Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
