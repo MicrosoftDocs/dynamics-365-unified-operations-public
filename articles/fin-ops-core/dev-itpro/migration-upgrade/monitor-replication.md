@@ -24,11 +24,11 @@ The Data migration toolkit for Dynamics 365 is used for self-service environment
 This tool is used in both AX 2012 to Dynamics 365 upgrades, and also in Dynamics 365 on-premises to Dynamics 365 cloud migrations.
 
    See: 
-   - [Upgrade from AX 2012 - Data upgrade in self-service environments](/data-upgrade-self-service)
+   - [Upgrade from AX 2012 - Data upgrade in self-service environments](/data-upgrade-self-service.md)
    
-   - [Move Lifecycle Services implementation projects from on-premises to the cloud](/lifecycle-services/move-on-prem-to-cloud)
+   - [Move Lifecycle Services implementation projects from on-premises to the cloud](/lifecycle-services/move-on-prem-to-cloud.md)
 
-The migration tool has a command called **RS** for monitoring the replication status, but the details in that are limited see: [Toolkit Reporting Section](/data-upgrade-self-service#reporting-section-of-the-application)
+The migration tool has a command called **RS** for monitoring the replication status, but the details in that are limited see: [Toolkit Reporting Section](/data-upgrade-self-service.md#reporting-section-of-the-application)
 
 You may want to monitor the replication directly in SQL server management studio. The details in this document explains how to monitor and the specific steps of the replication.
 
@@ -47,11 +47,11 @@ Each of these publications has two SQL agent jobs:
 
 To monitor the replication in SQL management studio, connect to the source on-premise database server, expand **Replication**. Select **Launch replication monitor**
 
-![Launch replication manager](/media/Launch-replication-monitor1.png)
+[![Launch replication manager.](./media/Launch-replication-monitor1.png)](./media/Launch-replication-monitor1.png)
 
 The **Replication monitor** window will open:
 
-![Replication monitor](media/Replication-Monitor2.png)
+[![Replication monitor](./media/Replication-Monitor2.png)](./media/Replication-Monitor2.png)
 
 > [!Note] 
 > You can see above, there is a single primary key table publication whereas the default is normally two. 
@@ -64,7 +64,7 @@ To view the snapshot agent details:
 2. Select the **Agents** tab, right-click **Snapshot Agent** and select **View Details**.
 The **Snapshot agent details** window will display:
 
-![Snapshot agent details](/media/snapshot-agent-details3.png)
+[![Snapshot agent details.](./media/snapshot-agent-details3.png)](./media/snapshot-agent-details3.png)
 
 There are four steps when generating a snapshot:
 
@@ -93,7 +93,7 @@ Open **File explorer** to this folder, and drill down the folders to the publica
 
 Once the snapshot is completed, a message will display **"A snapshot of XXX article(s) was generated"**.
 
-![Articles generated](media/articles-generated4.png)
+[![Articles generated.](./media/articles-generated4.png)](./media/articles-generated4.png)
 
 At this stage, the snapshot is only in the file share, the next step is the distributor will move the snapshot to the target (subscriber) database. 
 
@@ -107,7 +107,7 @@ The distributor to subscriber details can be used to monitor:
 To view the distributor to subscriber logs, click **All Subscriptions** tab and then click **View Details**.
 1. The first step in moving the snapshot is running the PRE files (these drop existing objects in the target).
 
-![First step to move snapshot](/media/first-step5.png)
+[![First step to move snapshot.](./media/first-step5.png)](./media/first-step5.png)
 
 2. The SCH scripts are run and create the tables.
 3. After the tables have been scripted in the subscriber (target) database, the bulk copy files are imported to the target.
@@ -117,12 +117,12 @@ The BCP file import process can take several hours.
 
 You can check on the **Undistributed commands** to see how much is outsatnding:
 
-![Undistributed commands](/media/undistributed-commands6.png)
+[![Undistributed commands.](./media/undistributed-commands6.png)](./media/undistributed-commands6.png)
 
 Once the snapshot is delivered, the message "Delivered snapshot from the \\unc\server\folder...." will be displayed.
 If there are no further outstanding commands, the following will display in the **Undistributed commands**:
 
-![Completed undistributed commands](/media/undis-commands-completed7.png)
+[![Completed undistributed commands.](./media/undis-commands-completed7.png)](./media/undis-commands-completed7.png)
 
 ## Transaction replication
 
@@ -136,4 +136,4 @@ Open **Task manager**:
 Click **Open resource monitor**
 In **Resource monitor**, click **Network**, filter on **DISTRIB.exe**. This will display the send bandwidth speed.
 
-![Available send bandwidth](/media/send-band8.png)
+[![Available send bandwidth.](./media/send-band8.png)](./media/send-band8.png)
