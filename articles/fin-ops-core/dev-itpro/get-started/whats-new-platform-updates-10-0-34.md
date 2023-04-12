@@ -32,8 +32,13 @@ The following table lists the features that are included in this release.
 |---|---|---|---|
 | xxxx | xxxx | [xxxx](../path/filename.md) | Mandatory |
 
+## Feature enhancements included in this release
 
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. 
 
+| Module or feature area | Feature name | More information | Enabled by |
+|---|---|---|---|
+| Data management | <p>**The Sql row version change tracking (preview) configuration key must be enabled for Row version change tracking (preview)**</p><p>The Row version change tracking feature is required if users want to track Sql row version changes. The configuration key is available on the **License configuration** page. </p> | [Allow Row version change tracking for tables and data entities](../../dev-itpro/data-entities/rowversion-change-track.md) | Config key |
 
 
 
