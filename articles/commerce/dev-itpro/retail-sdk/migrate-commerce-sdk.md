@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This article explains how to migrate to the Commerce software development kit (SDK).
 author: josaw1
-ms.date: 03/14/2023
+ms.date: 04/12/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -57,7 +57,7 @@ The Commerce SDK provides these benefits:
 ## Overview of the migration steps
 
 1. Set up your [local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.33/src/ScaleUnitSample/Readme.md), or configure the [LCS development environment](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
-2. Uninstall Store Commerce app, Hardware Station, and Cloud Scale Unit - Self-hosted that were installed by using the legacy installers. Then install the required application by using the [new sealed installers](https://community.dynamics.com/ax/b/axforretail/posts/introducing-sealed-installers).
+2. Uninstall the Store Commerce app, Hardware Station, and Cloud Scale Unit - Self-hosted that were installed by using the legacy installers. Then install the required application by using the [new sealed installers](https://community.dynamics.com/ax/b/axforretail/posts/introducing-sealed-installers).
 3. Migrate the CRT, API, channel database, proxy, POS, and Hardware Station extensions by using the Commerce SDK.
 
     Most of the code that was written by using the Retail SDK can easily be migrated. You don't have to rewrite it. For example, the CRT extension can be updated by changing the project to **NET standard 2.0** and updating the reference package so that it's consumed from the public feed. The API extension can be updated by using new interface and removing the **EDMModel** extender code, because it's automated in the back end.
@@ -252,7 +252,7 @@ In older versions of Retail SDK extension, you must use the packages from the Re
 
 ### New sealed installers
 
-You can download the new sealed installers from LCS by going to the [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary) and selecting **Retail Self-service package** as the asset type. The legacy installers or the apps , Hardware Station, Cloud Scale Unit - Self-hosted) must be uninstalled before you install the new sealed installers. The Commerce SDK for POS will work only with the sealed installers.
+You can download the new sealed installers from LCS by going to the [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary) and selecting **Retail Self-service package** as the asset type. The legacy installers or the apps (Hardware Station, Cloud Scale Unit - Self-hosted) must be uninstalled before you install the new sealed installers. The Commerce SDK for POS will work only with the sealed installers.
 
 ### POS
 
