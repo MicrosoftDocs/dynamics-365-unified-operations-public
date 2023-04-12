@@ -27,7 +27,7 @@ This tool is used in both AX 2012 to Dynamics 365 upgrades, and also in Dynamics
    - [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md)   
    - [Move Lifecycle Services implementation projects from on-premises to the cloud](../lifecycle-services/move-on-prem-to-cloud.md)
 
-The migration tool has a command called **RS** for monitoring the replication status, but the details in that are limited see: [Toolkit Reporting Section](data-upgrade-self-service.md#reporting-section-of-the-application)
+The migration tool has a command called **RS** for monitoring the replication status, for more information see [Toolkit Reporting Section](data-upgrade-self-service.md#reporting-section-of-the-application).
 
 You may want to monitor the replication directly in SQL server management studio. The details in this document explains how to monitor and the specific steps of the replication.
 
@@ -118,7 +118,7 @@ You can check on the **Undistributed commands** to see how much is outsatnding:
 
 [![Undistributed commands.](./media/undistributed-commands6.png)](./media/undistributed-commands6.png)
 
-Once the snapshot is delivered, the message "Delivered snapshot from the \\unc\server\folder...." will be displayed.
+Once the snapshot is delivered, the message "Delivered snapshot from the \\unc\server\folder" will be displayed.
 If there are no further outstanding commands, the following will display in the **Undistributed commands**:
 
 [![Completed undistributed commands.](./media/undis-commands-completed7.png)](./media/undis-commands-completed7.png)
