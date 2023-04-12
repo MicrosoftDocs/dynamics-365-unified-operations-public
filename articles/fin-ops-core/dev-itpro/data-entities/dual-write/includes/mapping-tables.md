@@ -980,6 +980,300 @@ ISINVENTORYWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_i
 ISPROCUREMENTWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isprocurementwarehousemandatory |
 ISSALESWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_issaleswarehousemandatory |
 
+###  <a name="237"></a>Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+NAME | = | msdyn_name |
+ISENABLED | ><<br>`no` : `1`<br>`yes` : `0` | statecode |
+
+###  <a name="238"></a>Dynamics 365 Sales order headers (salesorders)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Reversed source filter: msdyn_ordertype eq 192350000 and msdyn_isreadytosync eq true
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+SALESORDERNUMBER | = | msdyn_salesordernumber |
+ORDERINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
+CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
+DELIVERYADDRESSCITY | = | shipto_city |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
+DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
+DELIVERYADDRESSSTREET | = | shipto_line1 |
+DELIVERYADDRESSSTATEID | = | shipto_stateorprovince |
+SALESORDERNAME | > | name |
+INVOICEADDRESSCITY | > | billto_city |
+INVOICEADDRESSSTREET | > | billto_line1 |
+INVOICEADDRESSSTREETNUMBER | > | billto_line2 |
+INVOICEADDRESSCOUNTRYREGIONISOCODE | > | billto_country |
+INVOICEADDRESSSTATEID | > | billto_stateorprovince |
+INVOICEADDRESSZIPCODE | > | billto_postalcode |
+ORDERTOTALAMOUNT | > | totalamount |
+TOTALDISCOUNTAMOUNT | > | discountamount |
+ORDERTOTALTAXAMOUNT | > | totaltax |
+ORDERTOTALCHARGESAMOUNT | > | freightamount |
+AREPRICESINCLUDINGSALESTAX | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_arepricesincludingsalestax |
+CONFIRMEDRECEIPTDATE | = | msdyn_confirmedreceiptdate |
+CONFIRMEDSHIPPINGDATE | = | msdyn_confirmedshippingdate |
+CONTACTPERSONID | = | msdyn_contactperson.msdyn_contactpersonid |
+CUSTOMERREQUISITIONNUMBER | = | msdyn_customerrequisitionnumber |
+DEFAULTSHIPPINGSITEID | = | msdyn_defaultshippingsite.msdyn_siteid |
+DEFAULTSHIPPINGWAREHOUSEID | = | msdyn_defaultshippingwarehouse.msdyn_warehouseidentifier |
+DELIVERYADDRESSCOUNTYID | = | msdyn_deliveryaddresscountyid |
+DELIVERYADDRESSDESCRIPTION | = | msdyn_deliveryaddressdescription |
+DELIVERYADDRESSDISTRICTNAME | = | msdyn_deliveryaddressdistrictname |
+DELIVERYADDRESSDUNSNUMBER | = | msdyn_deliveryaddressdunsnumber |
+DELIVERYADDRESSLATITUDE | = | msdyn_deliveryaddresslatitude |
+DELIVERYADDRESSLOCATIONID | = | msdyn_deliveryaddresslocationid |
+DELIVERYADDRESSLONGITUDE | = | msdyn_deliveryaddresslongitude |
+DELIVERYADDRESSNAME | = | msdyn_deliveryaddressname |
+DELIVERYADDRESSPOSTBOX | = | msdyn_deliveryaddresspostbox |
+DELIVERYBUILDINGCOMPLIMENT | = | msdyn_deliverybuildingcompliment |
+FORMATTEDDELVERYADDRESS | > | msdyn_formatteddeliveryaddress |
+EMAIL | = | emailaddress |
+FORMATTEDINVOICEADDRESS | > | msdyn_formattedinvoiceaddress |
+INVOICEADDRESSCOUNTYID | > | msdyn_invoiceaddresscountyid |
+INVOICEADDRESSDISTRICTNAME | > | msdyn_invoiceaddressdistrictname |
+INVOICEADDRESSLATITUDE | > | msdyn_invoiceaddresslatitude |
+INVOICEADDRESSLONGITUDE | > | msdyn_invoiceaddresslongitude |
+INVOICEADDRESSPOSTBOX | > | msdyn_invoiceaddresspostbox |
+INVOICEBUILDINGCOMPLIMENT | > | msdyn_invoicebuildingcompliment |
+INVOICECUSTOMERACCOUNTNUMBER | = | msdyn_invoicecustomerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
+ISDELIVERYADDRESSORDERSPECIFIC | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressorderspecific |
+ISDELIVERYADDRESSPRIVATE | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressprivate |
+ISINVOICEADDRESSPRIVATE | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isinvoiceaddressprivate |
+ISONETIMECUSTOMER | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isonetimecustomer |
+ISSALESPROCESSINGSTOPPED | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_issalesprocessingstopped |
+PAYMENTTERMSBASEDATE | = | msdyn_paymenttermsbasedate |
+PAYMENTTERMSNAME | = | msdyn_paymentterms.msdyn_name |
+PRICECUSTOMERGROUPCODE | = | msdyn_pricecustomergroup.msdyn_groupcode |
+QUOTATIONNUMBER | = | msdyn_quotationnumber |
+REQUESTEDRECEIPTDATE | = | msdyn_requestedreceiptdate |
+REQUESTEDSHIPPINGDATE | = | requestdeliveryby |
+SALESORDERPROMISINGMETHOD | ><<br>`none` : `192350000`<br>`salesLeadTime` : `192350001`<br>`atp` : `192350002`<br>`atpPlusIssueMargin` : `192350003`<br>`ctp` : `192350004` | msdyn_salesorderpromisingmethod |
+URL | = | msdyn_url |
+SALESORDERPROCESSINGSTATUS | ><<br>`active` : `192350000`<br>`confirmed` : `192350001`<br>`picked` : `192350002`<br>`partiallyDelivered` : `192350003`<br>`delivered` : `192350004`<br>`invoiced` : `192350005`<br>`partiallyInvoiced` : `192350006`<br>`canceled` : `192350007`<br>`deliveredPartiallyInvoiced` : `192350008` | msdyn_processingstatus |
+LANGUAGEID | ><<br>`ar` : `192350000`<br>`ar-ae` : `192350001`<br>`cs` : `192350002`<br>`da` : `192350003`<br>`de` : `192350004`<br>`de-at` : `192350005`<br>`de-ch` : `192350006`<br>`en-au` : `192350007`<br>`en-gb` : `192350009`<br>`en-ie` : `192350010`<br>`en-in` : `192350011`<br>`en-ca` : `192350008`<br>`en-my` : `192350012`<br>`en-nz` : `192350013`<br>`en-sg` : `192350014`<br>`en-us` : `192350015`<br>`en-za` : `192350016`<br>`es` : `192350017`<br>`es-mx` : `192350018`<br>`et` : `192350019`<br>`fi` : `192350020`<br>`fr` : `192350021`<br>`fr-be` : `192350022`<br>`fr-ca` : `192350023`<br>`fr-ch` : `192350024`<br>`hu` : `192350025`<br>`is` : `192350026`<br>`it` : `192350027`<br>`it-ch` : `192350028`<br>`ja` : `192350029`<br>`lt` : `192350030`<br>`lv` : `192350031`<br>`nb-no` : `192350032`<br>`nl` : `192350033`<br>`nl-be` : `192350034`<br>`pl` : `192350035`<br>`pt-br` : `192350036`<br>`ru` : `192350037`<br>`sv` : `192350038`<br>`th` : `192350039`<br>`tr` : `192350040`<br>`zh-hans` : `192350041` | msdyn_language |
+CUSTOMERSORDERREFERENCE | = | msdyn_customersorderreference |
+DELIVERYMODECODE | = | msdyn_deliverymode.msdyn_name |
+DELIVERYTERMSCODE | = | msdyn_deliveryterms.msdyn_termscode |
+SALESORDERORIGINCODE | = | msdyn_salesorderorigin.msdyn_origincode |
+none | >> | msdyn_ordertype | 192350000
+CURRENCYCODE | > | msdyn_isocurrencycode |
+
+###  <a name="239"></a>Dynamics 365 Sales order lines (salesorderdetails)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Reversed source filter:
+- Version 1.x.x.x: msdyn_isreadytosync eq true <br>(to be used in the context of Supply Chain solution without Project Operations or Field Services solution installed.)
+- Version 2.x.x.x: (msdyn_linetype ne 690970000 or msdyn_linetype eq null) and msdyn_isreadytosync eq true <br>(to be used in the context of Supply Chain solution and Project Operations or Field Services solution installed.)
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
+DELIVERYADDRESSCITY | = | shipto_city |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
+DELIVERYADDRESSSTATEID | = | shipto_stateorprovince |
+DELIVERYADDRESSSTREET | = | shipto_line1 |
+DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
+LINEAMOUNT | > | extendedamount |
+LINECREATIONSEQUENCENUMBER | = | sequencenumber |
+ORDEREDSALESQUANTITY | = | quantity |
+PRODUCTNAME | = | description |
+PRODUCTNUMBER | = | productid.msdyn_productnumber |
+SALESORDERNUMBER | = | salesorderid.msdyn_salesordernumber |
+SALESUNITSYMBOL | = | uomid.msdyn_symbol |
+TOTALDISCOUNTAMOUNT | = | manualdiscountamount |
+TOTALTAXAMOUNT | > | tax |
+SALESPRICE | = | priceperunit |
+LINEAMOUNT | > | baseamount |
+SALESPRODUCTCATEGORYNAME | = | msdyn_salesproductcategory.msdyn_name |
+SALESPRODUCTCATEGORYHIERARCHYNAME | > | msdyn_salesproductcategory.msdyn_hierarchy.msdyn_name |
+ISDELIVERYADDRESSORDERSPECIFIC | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressspecific |
+ISDELIVERYADDRESSPRIVATE | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressprivate |
+ISLINESTOPPED | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_islinestopped |
+ALLOWEDOVERDELIVERYPERCENTAGE | = | msdyn_allowedoverdeliverypercentage |
+ALLOWEDUNDERDELIVERYPERCENTAGE | = | msdyn_allowedunderdeliverypercentage |
+CONFIRMEDSHIPPINGDATE | = | msdyn_confirmedshippingdate |
+CONFIRMEDRECEIPTDATE | = | msdyn_confirmedreceiptdate |
+DELIVERYADDRESSCOUNTYID | = | msdyn_deliveryaddresscountyid |
+DELIVERYADDRESSDESCRIPTION | = | msdyn_deliveryaddressdescription |
+DELIVERYADDRESSDISTRICTNAME | = | msdyn_deliveryaddressdistrictname |
+DELIVERYADDRESSDUNSNUMBER | = | msdyn_deliveryaddressdunsnumber |
+DELIVERYADDRESSLATITUDE | = | msdyn_deliveryaddresslatitude |
+DELIVERYADDRESSLOCATIONID | = | msdyn_deliveryaddresslocationid |
+DELIVERYADDRESSLONGITUDE | = | msdyn_deliveryaddresslongitude |
+DELIVERYADDRESSNAME | = | msdyn_deliveryaddressname |
+DELIVERYADDRESSPOSTBOX | = | msdyn_deliveryaddresspostbox |
+DELIVERYBUILDINGCOMPLIMENT | = | msdyn_deliverybuildingcompliment |
+EXTERNALITEMNUMBER | = | msdyn_externalitemnumber |
+FIXEDPRICECHARGES | = | msdyn_fixedpricecharges |
+FORMATTEDDELIVERYADDRESS | = | msdyn_formatteddeliveryaddress |
+LINEDESCRIPTION | = | msdyn_linedescription |
+LINEDISCOUNTAMOUNT | = | msdyn_linediscountamount |
+LINEDISCOUNTPERCENTAGE | = | msdyn_linediscountpercentage |
+MULTILINEDISCOUNTAMOUNT | = | msdyn_multilinediscountamount |
+MULTILINEDISCOUNTPERCENTAGE | = | msdyn_multilinediscountpercentage |
+REQUESTEDRECEIPTDATE | = | msdyn_requestedreceiptdate |
+REQUESTEDSHIPPINGDATE | = | requestdeliveryby |
+SALESORDERLINESTATUS | >><br>`none` : `192350000`<br>`backorder` : `192350001`<br>`delivered` : `192350002`<br>`invoiced` : `192350003`<br>`canceled` : `192350004` | msdyn_linestatus |
+SALESORDERPROMISINGMETHOD | ><<br>`none` : `192350000`<br>`salesLeadTime` : `192350001`<br>`atp` : `192350002`<br>`atpPlusIssueMargin` : `192350003`<br>`ctp` : `192350004` | msdyn_salesorderpromisingmethod |
+SALESPRICEQUANTITY | = | msdyn_salespricequantity |
+SHIPPINGSITEID | = | msdyn_shippingsite.msdyn_siteid |
+SHIPPINGWAREHOUSEID | = | msdyn_shippingwarehouse.msdyn_warehouseidentifier |
+none | >> | ispriceoverridden | true
+TOTALCHARGESAMOUNT | > | msdyn_totalchargesamount |
+DELIVERYMODECODE | = | msdyn_deliverymode.msdyn_name |
+DELIVERYTERMSID | = | msdyn_deliveryterms.msdyn_termscode |
+SALESDELIVERNOW | = | quantityshipped |
+INVENTORYSERVICERESERVATIONID | = | msdyn_reservationid |
+
+###  <a name="240"></a>Dynamics 365 Sales quotation header (quotes)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Reversed source filter: msdyn_ordertype eq 192350000
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+SALESQUOTATIONNUMBER | = | msdyn_quotenumber |
+REQUESTINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
+CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
+CUSTOMERSREFERENCE | = | msdyn_customersreference |
+DELIVERYADDRESSCITY | = | shipto_city |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
+DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
+DELIVERYADDRESSSTREET | = | shipto_line1 |
+DELIVERYADDRESSSTATEID | = | shipto_stateorprovince |
+SALESQUOTATIONNAME | = | name |
+INVOICEADDRESSCITY | > | billto_city |
+INVOICEADDRESSSTREET | > | billto_line1 |
+INVOICEADDRESSSTREETNUMBER | > | billto_line2 |
+INVOICEADDRESSCOUNTRYREGIONISOCODE | > | billto_country |
+INVOICEADDRESSSTATEID | > | billto_stateorprovince |
+INVOICEADDRESSZIPCODE | > | billto_postalcode |
+QUOTATIONTOTALAMOUNT | > | totalamount |
+TOTALDISCOUNTAMOUNT | > | discountamount |
+QUOTATIONTOTALTAXAMOUNT | > | totaltax |
+QUOTATIONTOTALCHARGESAMOUNT | > | freightamount |
+AREPRICESINCLUDINGSALESTAX | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_arepricesincludingsalestax |
+CONTACTPERSONID | = | msdyn_contactperson.msdyn_contactpersonid |
+CUSTOMERREQUISITIONNUMBER | = | msdyn_customerrequisitionnumber |
+DEFAULTSHIPPINGSITEID | = | msdyn_defaultshippingsite.msdyn_siteid |
+DEFAULTSHIPPINGWAREHOUSEID | = | msdyn_defaultshippingwarehouse.msdyn_warehouseidentifier |
+DELIVERYADDRESSCOUNTYID | = | msdyn_deliveryaddresscountyid |
+DELIVERYADDRESSDESCRIPTION | = | msdyn_deliveryaddressdescription |
+DELIVERYADDRESSDISTRICTNAME | = | msdyn_deliveryaddressdistrictname |
+DELIVERYADDRESSDUNSNUMBER | = | msdyn_deliveryaddressdunsnumber |
+DELIVERYADDRESSLATITUDE | = | msdyn_deliveryaddresslatitude |
+DELIVERYADDRESSLOCATIONID | = | msdyn_deliveryaddresslocationid |
+DELIVERYADDRESSLONGITUDE | = | msdyn_deliveryaddresslongitude |
+DELIVERYADDRESSNAME | = | msdyn_deliveryaddressname |
+DELIVERYADDRESSPOSTBOX | = | msdyn_deliveryaddresspostbox |
+DELIVERYBUILDINGCOMPLIMENT | = | msdyn_deliverybuildingcompliment |
+FORMATTEDDELIVERYADDRESS | > | msdyn_formatteddeliveryaddress |
+FORMATTEDINVOICEADDRESS | > | msdyn_formattedinvoiceaddress |
+GENERATEDSALESORDERNUMBER | = | msdyn_generatedsalesordernumber.msdyn_salesordernumber |
+INVOICEADDRESSCOUNTRYREGIONID | > | msdyn_invoiceaddresscountryregionid |
+INVOICEADDRESSCOUNTYID | > | msdyn_invoiceaddresscountyid |
+INVOICEADDRESSDISTRICTNAME | > | msdyn_invoiceaddressdistrictname |
+INVOICEADDRESSLATITUDE | > | msdyn_invoiceaddresslatitude |
+INVOICEADDRESSLONGITUDE | > | msdyn_invoiceaddresslongitude |
+INVOICEADDRESSPOSTBOX | > | msdyn_invoiceaddresspostbox |
+INVOICEBUILDINGCOMPLIMENT | > | msdyn_invoicebuildingcompliment |
+INVOICECUSTOMERACCOUNTNUMBER | = | msdyn_invoicecustomerid.Account(accountnumber).Contact(msdyn_contactpersonid) |
+ISDELIVERYADDRESSORDERSPECIFIC | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressorderspecific |
+ISDELIVERYADDRESSPRIVATE | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressprivate |
+ISINVOICEADDRESSPRIVATE | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isinvoiceaddressprivate |
+LANGUAGEID | ><<br>`ar` : `192350000`<br>`ar-ae` : `192350001`<br>`cs` : `192350002`<br>`da` : `192350003`<br>`de` : `192350004`<br>`de-at` : `192350005`<br>`de-ch` : `192350006`<br>`en-au` : `192350007`<br>`en-gb` : `192350009`<br>`en-ie` : `192350010`<br>`en-in` : `192350011`<br>`en-ca` : `192350008`<br>`en-my` : `192350012`<br>`en-nz` : `192350013`<br>`en-sg` : `192350014`<br>`en-us` : `192350015`<br>`en-za` : `192350016`<br>`es` : `192350017`<br>`es-mx` : `192350018`<br>`et` : `192350019`<br>`fi` : `192350020`<br>`fr` : `192350021`<br>`fr-be` : `192350022`<br>`fr-ca` : `192350023`<br>`fr-ch` : `192350024`<br>`hu` : `192350025`<br>`is` : `192350026`<br>`it` : `192350027`<br>`it-ch` : `192350028`<br>`ja` : `192350029`<br>`lt` : `192350030`<br>`lv` : `192350031`<br>`nb-no` : `192350032`<br>`nl` : `192350033`<br>`nl-be` : `192350034`<br>`pl` : `192350035`<br>`pt-br` : `192350036`<br>`ru` : `192350037`<br>`sv` : `192350038`<br>`th` : `192350039`<br>`tr` : `192350040`<br>`zh-hans` : `192350041` | msdyn_language |
+PAYMENTTERMSNAME | = | msdyn_paymentterms.msdyn_name |
+PRICECUSTOMERGROUPCODE | = | msdyn_pricecustomergroup.msdyn_groupcode |
+RECEIPTDATEREQUESTED | = | msdyn_requestedreceiptdate |
+REQUESTEDSHIPPINGDATE | = | requestdeliveryby |
+SALESORDERPROMISINGMETHOD | ><<br>`none` : `192350000`<br>`salesLeadTime` : `192350001`<br>`atp` : `192350002`<br>`atpPlusIssueMargin` : `192350003`<br>`ctp` : `192350004` | msdyn_salesorderpromisingmethod |
+SALESQUOTATIONCONFIRMATIONDATE | = | msdyn_salesquotationconfirmationdate |
+SALESQUOTATIONEXPIRYDATE | = | msdyn_salesquotationexpirydate |
+SALESQUOTATIONFOLLOWUPDATE | = | msdyn_salesquotationfollowupdate |
+SALESQUOTATIONSTATUS | ><<br>`created` : `192350000`<br>`sent` : `192350001`<br>`confirmed` : `192350002`<br>`lost` : `192350003`<br>`cancelled` : `192350004`<br>`reset` : `192350005`<br>`modified` : `192350006`<br>`submitted` : `192350007`<br>`approved` : `192350008`<br>`revised` : `192350009` | msdyn_salesquotationstatus |
+TOTALDISCOUNTPERCENTAGE | = | msdyn_totaldiscountpercentage |
+URL | = | msdyn_url |
+EMAIL | = | emailaddress |
+none | >> | msdyn_ordertype | 192350000
+CURRENCYCODE | > | msdyn_isocurrencycode |
+OPERATINGUNITPARTYNUMBER | = | msdyn_operatingunit.msdyn_partynumber |
+SALESQUOTATIONHEADERCREATIONMETHOD | >><br>`SCM` : `776160000`<br>`Dynamics365Sales` : `776160001` | msdyn_quotationcreationmethod |
+SALESQUOTATIONOWNERSHIP | >><br>`BasedOnOrigin` : `776160000`<br>`SCM` : `776160001`<br>`Dynamics365Sales` : `776160002` | msdyn_quotationownership |
+
+###  <a name="241"></a>Dynamics 365 Sales quotation lines (quotedetails)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Reversed source filter:
+- Version 1.x.x.x: None <br>(to be used in the context of Supply Chain solution without Project Operations or Field Services solution installed.)
+- Version 2.x.x.x: msdyn_linetype ne 690970000 or msdyn_linetype eq null <br>(to be used in the context of Supply Chain solution and Project Operations or Field Services solution installed.)
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+ALLOWEDOVERDELIVERYPERCENTAGE | = | msdyn_allowedoverdeliverypercentage |
+ALLOWEDUNDERDELIVERYPERCENTAGE | = | msdyn_allowedunderdeliverypercentage |
+SALESQUOTATIONNUMBER | = | quoteid.msdyn_quotenumber |
+LINECREATIONSEQUENCENUMBER | = | sequencenumber |
+CURRENCYCODE | > | transactioncurrencyid.isocurrencycode |
+DELIVERYADDRESSCITY | = | shipto_city |
+DELIVERYADDRESSCOUNTRYREGIONISOCODE | ><<br>`us` : `united states`<br>`de` : `germany`<br>`fr` : `france`<br>`gb` : `united kingdom`<br>`jp` : `japan`<br>`in` : `india`<br>`es` : `spain`<br>`nz` : `new zealand`<br>`au` : `australia`<br>`co` : `columbia`<br>`za` : `south africa`<br>`be` : `belgium`<br>`ca` : `canada`<br>`at` : `austria`<br>`tr` : `turkey`<br>`cn` : `china`<br>`dk` : `denmark`<br>`se` : `sweden`<br>`no` : `norway`<br>`fi` : `finland`<br>`eg` : `egypt` | shipto_country |
+DELIVERYADDRESSCOUNTYID | = | msdyn_deliveryaddresscountyid |
+DELIVERYADDRESSDESCRIPTION | = | msdyn_deliveryaddressdescription |
+DELIVERYADDRESSDISTRICTNAME | = | msdyn_deliveryaddressdistrictname |
+DELIVERYADDRESSDUNSNUMBER | = | msdyn_deliveryaddressdunsnumber |
+DELIVERYADDRESSLATITUDE | = | msdyn_deliveryaddresslatitude |
+DELIVERYADDRESSLOCATIONID | = | msdyn_deliveryaddresslocationid |
+DELIVERYADDRESSLONGITUDE | = | msdyn_deliveryaddresslongitude |
+DELIVERYADDRESSNAME | = | msdyn_deliveryaddressname |
+DELIVERYADDRESSPOSTBOX | = | msdyn_deliveryaddresspostbox |
+DELIVERYADDRESSSTATEID | = | shipto_stateorprovince |
+DELIVERYADDRESSSTREET | = | shipto_line1 |
+DELIVERYADDRESSSTREETNUMBER | = | shipto_line2 |
+DELIVERYADDRESSZIPCODE | = | shipto_postalcode |
+DELIVERYBUILDINGCOMPLIMENT | = | msdyn_deliverybuildingcompliment |
+EXTERNALITEMNUMBER | = | msdyn_externalitemnumber |
+FIXEDPRICECHARGES | = | msdyn_fixedpricecharges |
+FORMATTEDDELIVERYADDRESS | = | msdyn_formatteddeliveryaddress |
+ISDELIVERYADDRESSPRIVATE | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressprivate |
+ISDELIVERYADDRESSORDERSPECIFIC | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isdeliveryaddressspecific |
+LINEAMOUNT | > | baseamount |
+LINEAMOUNT | > | extendedamount |
+LINEDESCRIPTION | = | msdyn_linedescription2 |
+LINEDISCOUNTAMOUNT | = | msdyn_linediscountamount |
+LINEDISCOUNTPERCENTAGE | = | msdyn_linediscountpercentage |
+MULTILINEDISCOUNTAMOUNT | = | msdyn_multilinediscountamount |
+MULTILINEDISCOUNTPERCENTAGE | = | msdyn_multilinediscountpercentage |
+PRODUCTNAME | = | description |
+PRODUCTNUMBER | = | productid.msdyn_productnumber |
+REQUESTEDRECEIPTDATE | = | msdyn_requestedreceiptdate |
+REQUESTEDSALESQUANTITY | = | quantity |
+REQUESTEDSHIPPINGDATE | = | requestdeliveryby |
+SALESPRICE | = | priceperunit |
+SALESPRICEQUANTITY | = | msdyn_salespricequantity |
+SALESQUOTATIONPROMISINGMETHOD | ><<br>`none` : `192350000`<br>`salesLeadTime` : `192350001`<br>`atp` : `192350002`<br>`atpPlusIssueMargin` : `192350003`<br>`ctp` : `192350004` | msdyn_salesquotationpromisingmethod |
+SALESQUOTATIONSTATUS | ><<br>`created` : `192350000`<br>`sent` : `192350001`<br>`confirmed` : `192350002`<br>`lost` : `192350003`<br>`cancelled` : `192350004`<br>`reset` : `192350005`<br>`modified` : `192350006`<br>`submitted` : `192350007`<br>`approved` : `192350008`<br>`revised` : `192350009` | msdyn_salesquotationstatus |
+SALESUNITSYMBOL | = | uomid.msdyn_symbol |
+SHIPPINGSITEID | = | msdyn_shippingsite.msdyn_siteid |
+SHIPPINGWAREHOUSEID | = | msdyn_shippingwarehouse.msdyn_warehouseidentifier |
+TOTALCHARGESAMOUNT | > | msdyn_totalchargesamount |
+TOTALDISCOUNTAMOUNT | = | manualdiscountamount |
+TOTALTAXAMOUNT | > | tax |
+SALESPRODUCTCATEGORYHIERARCHYNAME | > | msdyn_salesproductcategory.msdyn_hierarchy.msdyn_name |
+SALESPRODUCTCATEGORYNAME | = | msdyn_salesproductcategory.msdyn_name |
+none | >> | ispriceoverridden | true
+
 ###  <a name="225"></a>Employment job functions (msdyn_employmentjobfunctions)
 
 This template synchronizes data between finance and operations apps and Dataverse.
