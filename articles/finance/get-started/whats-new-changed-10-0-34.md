@@ -55,5 +55,9 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+|Cash and bank|Reverse posted bank statement with new transactions|This feature enhances existing feature “Reverse posted bank statement”. So, “Reverse posted bank statement” feature must be enabled before this new functionality is enabled. After enabling this feature, when user clicks the “Reverse Statement” button, new transactions posted from bank statements will also be reversed.|
+|Cash and bank|Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions|When this feature is enabled, in advanced bank reconciliation, filtering will be available for user to select bank statement lines and bank transactions. Meanwhile, a new grid will be available to display bank statement lines marked as new, which are mixed up with matched transactions before.|
+|Cash and bank|Enable batch mode for "Mark as reconciled" in advance bank reconciliation|In advanced bank reconciliation, once all matchings are done, user clicks "Mark as reconciled" to complete the reconciliation. If data volume is large, it will take long time for system to complete the reconciliation online, which sometimes results in session timeout. If this feature is switched on, batch processing option will be available for "Mark as reconciled".|
+|Cash and bank|Display vouchers in bank statement|When this feature is enabled, in bank statement, user can directly check vouchers from posted new transactions.|
 
 
