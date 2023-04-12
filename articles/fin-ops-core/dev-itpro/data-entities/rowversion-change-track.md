@@ -31,7 +31,8 @@ A new change tracking option has been added to finance and operations apps. This
 
 Beginning in Microsoft Dynamics Finance 10.0.32 to 10.0.33, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page. Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking (Preview)** configuration key on the **License configuration** page. 
 
-[!NOTE] If you have enabled the **Sql row version change tracking** configuration key before 10.0.34, it will be required to enable the new **Sql row version change tracking (Preview)** configuration key as part of moving to 10.0.34 or later. The configuration key used before 10.0.34 has been renamed to **Sql row version change tracking (Obsolete)**.
+> [!NOTE]
+> If you have enabled the **Sql row version change tracking** configuration key before 10.0.34, it will be required to enable the new **Sql row version change tracking (Preview)** configuration key as part of moving to 10.0.34 or later. The configuration key used before 10.0.34 has been renamed to **Sql row version change tracking (Obsolete)**.
 
 Before you create or update data entities so that you can use them with row version change tracking, verify that all tables that are used as data sources for those entities allow for row version change tracking.
 
