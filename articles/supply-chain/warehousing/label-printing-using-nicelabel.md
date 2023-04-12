@@ -14,47 +14,50 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article provides a comprehensive guide on how to enable label printing in Microsoft Dynamics 365 Supply Chain Management using Loftware NiceLabel solution. 
- 
-Loftware NiceLabel offers capabilities to create, manage, and print standardized, compliant barcode labels. In addition, enables printing labels to supported cloud connected printers or a wide variety of classic on-premises printers. NiceLabel has several products available that can be used together with the External label printing service, including their cloud solution, NiceLabel Cloud, as well as several editions of their on premises products. In this guide, we will focus on integration with the NiceLabel Cloud solution, however parts of the guide that use NiceLabel Automation can be used with other products as well.
-For more details about Loftware NiceLabel Cloud, visit [Loftware NiceLabel](https://www.loftware.com/products/labeling/nicelabel-cloud).
+This article describes how to use the print labels in Microsoft Dynamics 365 Supply Chain Management using the Loftware NiceLabel solution.
 
-By enabling the external service integration, you are affirming that you understand that the data handling, privacy, and compliance standards of the external service may not be the same as those provided by Dynamics 365 Supply Chain Management. Please consult the external service's documentation and terms to learn whether your organization's security and privacy requirements are met by the external service, including the handling of personal data and geo-residency. Your privacy is important to us. To learn more, read our [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). 
+Loftware NiceLabel lets you create, manage, and print standardized, compliant barcode labels. In addition, it lets you print labels to supported cloud-connected printers or a wide variety of classic on-premises printers. NiceLabel has several products available that can be used together with the external label printing service, including their cloud solution (NiceLabel Cloud) and several versions of their on-premises products. This article focuses on how to integrate Supply Chain Management with the NiceLabel Cloud solution, but parts of the article that use NiceLabel automation can also be used with other products.
 
-**NiceLabel Cloud** supports two integration approaches for other cloud applications:
+For more information about Loftware NiceLabel Cloud, see [Loftware NiceLabel Cloud & Label Management System](https://www.loftware.com/products/labeling/nicelabel-cloud).
 
-- **Via the Cloud Print API**, where the NiceLabel Cloud performs the label generation and sends the print job to the printer. This can be either a so-called Cloud printer (a printer connected directly to the NiceLabel Cloud instance, without using any locally installed software or printer driver), or any printer that is connected to a workstation with a print gateway component installed. For the current list of supported Cloud printers, refer to the Loftware web site.
-- **Via the Cloud Trigger API**, where the NiceLabel Cloud sends the message to an on-premises NiceLabel Automation instance, which performs the label generation and sends the label to the printer. You must install a Windows printer driver for each of your printers.
+> [!IMPORTANT]
+> By enabling the external service integration, you are affirming that you understand that the data handling, privacy, and compliance standards of the external service may not be the same as those provided by Dynamics 365 Supply Chain Management. Please consult the external service's documentation and terms to learn whether your organization's security and privacy requirements are met by the external service, including the handling of personal data and geo-residency. Your privacy is important to us. To learn more, read the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-If you don’t want any local software footprint, then the use of Cloud Print API with supported printers is the preferred option. Otherwise, we suggest using the Cloud Trigger API as the preferred option, but both options are available. 
+*NiceLabel Cloud* supports two integration approaches for other cloud applications:
 
-Some of the pros and cons of each of the options are listed here:
-- Using Cloud Trigger API, you can use an out of the box Label Cloud Integration pack or completely customize the processing of the print request.
-- Cloud Print API is synchronous (the server waits for the print engine to print the label) and reports the outcome of the print job, but Dynamics 365 SCM (Supply Chain Management) does not use this result. This means that you will need to wait a slightly longer time when printing labels or set a timeout on the external service operation. In case of the timeout, the Cloud Print API will continue printing, but the request will be logged as a timeout.
-- On-premises printer naming is simpler in Cloud Trigger API, since you can use the names of the printers as they are configured on the server(s) running the NiceLabel Automation. For Cloud Print API, you must specify which workstation will be used to print and determine the workstation unique ID by using the Cloud Print API first.
-- For Cloud Trigger API, it is possible to install multiple instances of NiceLabel Automation on the local network to achieve load balancing and high availability. As noted in the previous point, you need to specify which workstation the printing request will be routed to when using Cloud Print API and if that workstation is unavailable, the label will not print. Conversely, multiple NiceLabel Automation instances can handle requests to the same Cloud Trigger.
+- **Cloud Print API** – NiceLabel Cloud generates the labels and sends print jobs to the printer. This can be either a so-called *cloud printer* (a printer connected directly to the NiceLabel Cloud instance, without using any locally installed software or printer driver), or any printer that is connected to a workstation with a print gateway component installed. For the current list of supported cloud printers, see the [Loftware web site](https://www.loftware.com/).
+- **Cloud Trigger API** – NiceLabel Cloud sends messages to an on-premises NiceLabel Automation instance, which generates the labels and sends them to the printer. You must install a Windows printer driver for each of your printers.
+
+If you don't want any local software footprint, then Cloud Print API with supported printers is the preferred option. Otherwise, we suggest using the Cloud Trigger API as the preferred option, but both options are available.
+
+Here are some of the pros and cons of each integration option:
+
+- Using Cloud Trigger API, you can use an out-of-the-box cloud integration pack or completely customize the processing of print requests.
+- Cloud Print API is synchronous (the server waits for the print engine to print the label) and reports the outcome of the print job, but Supply Chain Management doesn't use this result. You must therefore wait a bit longer when printing labels or set a timeout on the external service operation. If a timeout occurs, the Cloud Print API will continue printing, but the request will be logged as a timeout.
+- On-premises printer naming is simpler in the Cloud Trigger API because you can use the names of the printers as configured on the server(s) running the NiceLabel Automation app. To use the Cloud Print API, you must specify a workstation ID to identify which workstation to print to.
+- For Cloud Trigger API, you can install multiple instances of the NiceLabel Automation app on the local network to achieve load balancing and high availability. As noted in the previous point, you must specify which workstation the printing request will be routed to, and if that workstation isn't available, the label won't print. Conversely, multiple NiceLabel Automation instances can handle requests to the same cloud trigger.
 - The installation footprint is smaller with the Cloud Print API.
 
 ## NiceLabel Cloud integration preparation
 
-Before NiceLabel Cloud can be accessed by either the Cloud Print API or the Cloud Trigger API, you must complete the registration on the Developer Portal and then link the Developer Portal subscription with your NiceLabel Cloud instance. The required steps are described on [NiceLabel Help Center](https://help.nicelabel.com/hc/en-001/articles/4402966072209-Cloud-Integrations#cloud-integrations-1-0).
+Before NiceLabel Cloud can be accessed by either the Cloud Print API or the Cloud Trigger API, you must register on the developer portal and then link your developer portal subscription with your NiceLabel Cloud instance. For instructions, see [Cloud Integrations](https://help.nicelabel.com/hc/en-001/articles/4402966072209-Cloud-Integrations#cloud-integrations-1-0) on the NiceLabel Help Center.
 
-If you wish to use IoT enabled printers, you need to connect them to your NiceLabel Cloud instance at this point. More information is available on [NiceLabel Help Center](https://help.nicelabel.com/hc/en-001/articles/4407466158737-Cloud-Printers).
+If you wish to use internet of things (IoT) enabled printers, you must connect them to your NiceLabel Cloud instance at this point. See also [Cloud Printers](https://help.nicelabel.com/hc/en-001/articles/4407466158737-Cloud-Printers) on the NiceLabel Help Center.
 
 ## Configuring Microsoft Dynamics 365 SCM to print to Cloud printers using the Cloud Print API
 
-Using the Cloud Print API, we can print both labels that are generated by the NiceLabel Cloud based on variables sent from Microsoft Dynamics 365 SCM or send a ZPL (Zebra Programming Language) label (perhaps an existing label layout or a shipping label received from the shipping carrier through a SPS integration). The External Service Definition will contain two operations, one for printing variables-based layouts and the second for printing ZPL-based label layouts. 
+Using the Cloud Print API, we can print both labels that are generated by the NiceLabel Cloud based on variables sent from Microsoft Dynamics 365 SCM or send a ZPL (Zebra Programming Language) label (perhaps an existing label layout or a shipping label received from the shipping carrier through a SPS integration). The External Service Definition will contain two operations, one for printing variables-based layouts and the second for printing ZPL-based label layouts.
 
 ### Configure external service definition
 
 Follow these steps to set up external service definition.
 
-1.	Go to **Warehouse management \> Setup \> External services \> External service definitions**.
-1.	On the Action Pane, select **New** to create an external service definition.
-1.	Set the following values for the new service definition:
+1. Go to **Warehouse management \> Setup \> External services \> External service definitions**.
+1. On the Action Pane, select **New** to create an external service definition.
+1. Set the following values for the new service definition:
     - **External service definition** – Enter *NLPrint*.
     - **Description** – Enter *NiceLabel Cloud Print API*.
-1.	Select **Edit operations** to define the *Print* service operation. Set the following values for the new service operation:
+1. Select **Edit operations** to define the *Print* service operation. Set the following values for the new service operation:
     -**External service operation** – Enter *Print*.
     -**Description** – Enter *Print to cloud printer*.
     -**HTTP method** – Select *POST* method.
@@ -66,9 +69,10 @@ Follow these steps to set up external service definition.
     - Expand **HTTP request headers** and create the following record:
         - **Key**: Ocp-Apim-Subscription-Key
         - **Value**: $auth.secret$ (exactly as written)
-     - Expand **Request body** and create the following record:
+    - Expand **Request body** and create the following record:
         - **Content type**: Enter *application/json*
-        - **Body**: 
+        - **Body**: Enter the following code:
+
             ```
             {
                 "deviceType": "CloudPrinter",
@@ -79,6 +83,7 @@ Follow these steps to set up external service definition.
                 $label.body$
             }
             ```
+
 1. Create *SendData* service operation. Set the following values for the new service operation:
     -**External service operation** – Enter *SendData*.
     -**Description** – Enter *Send ZPL to cloud printer*.
@@ -89,9 +94,10 @@ Follow these steps to set up external service definition.
     - Expand **HTTP request headers** and create the following record:
         - **Key**: Ocp-Apim-Subscription-Key
         - **Value**: $auth.secret$ (exactly as written)
-     - Expand **Request body** and create the following record:
+    - Expand **Request body** and create the following record:
         - **Content type**: Enter *application/json*
-        - **Body**: 
+        - **Body**:
+
             ```
             {
                 "deviceType": "CloudPrinter",
@@ -102,6 +108,7 @@ Follow these steps to set up external service definition.
                 "data": "$label.body:base64$"
             }
             ```
+
 1. Go back to the **External service definition**.
 1. Expand **Label print service** tab.
 1. In the **Print operation** field select *SendData* that has been created.  
@@ -121,17 +128,17 @@ Follow these steps to set up external service definition.
 
 ### Configure external service instance
 
-You will need either the Primary or the Secondary key from the subscription you created earlier on the NiceLabel Cloud Development Portal. 
+You will need either the Primary or the Secondary key from the subscription you created earlier on the NiceLabel Cloud Development Portal.
 
 Follow these steps to set up external service instance.
 
-1.	Go to **Warehouse Management \> Setup \> External services \> External service instances**.
-1.	On the Action Pane, select **New** to create an external service instance.
-1.	Set the following values for the new service instance:
+1. Go to **Warehouse Management \> Setup \> External services \> External service instances**.
+1. On the Action Pane, select **New** to create an external service instance.
+1. Set the following values for the new service instance:
     - **External service instance** - Enter a name for the instance (for example, *NLPrintProd*).
     - **Description** - Enter a short description of the instance (for example, *NiceLabel Cloud Print API Production*).
     - **External service definition** – Select the service definition to use. The example service definition value that was suggested earlier in this article was *NLPrint*.
-1.	Expand **General** tab and set the following values:
+1. Expand **General** tab and set the following values:
     - **Base URL** - Set *https://labelcloudapi.onnicelabel.com*.
     - **Authentication secret** - Enter the subscription key from the NiceLabel developer portal.
     - **Logging level** - Select *Successes and errors*.
@@ -167,12 +174,12 @@ After you have installed and started the Print trigger, we can configure the Ext
 
 Follow these steps to set up external service definition.
 
-1.	Go to **Warehouse management \> Setup \> External services \> External service definitions**.
-1.	On the Action Pane, select **New** to create an external service definition.
-1.	Set the following values for the new service definition:
+1. Go to **Warehouse management \> Setup \> External services \> External service definitions**.
+1. On the Action Pane, select **New** to create an external service definition.
+1. Set the following values for the new service definition:
     - **External service definition** – Enter *NLTrigger*.
     - **Description** – Enter *NiceLabel Label Cloud Trigger API*.
-1.	Select **Edit operations** to define the *Print* service operation. Set the following values for the new service operation:
+1. Select **Edit operations** to define the *Print* service operation. Set the following values for the new service operation:
     -**External service operation** – Enter *Print*.
     -**Description** – Enter *Print to local printer*.
     -**HTTP method** – Select *POST* method.
@@ -213,25 +220,25 @@ Follow these steps to set up external service definition.
 
 Follow these steps to set up external service instance.
 
-1.	Go to **Warehouse Management \> Setup \> External services \> External service instances**.
-1.	On the Action Pane, select **New** to create an external service instance.
-1.	Set the following values for the new service instance:
+1. Go to **Warehouse Management \> Setup \> External services \> External service instances**.
+1. On the Action Pane, select **New** to create an external service instance.
+1. Set the following values for the new service instance:
     - **External service instance** - Enter a name for the instance (for example, *NLTriggerProd*).
     - **Description** - Enter a short description of the instance (for example, *NiceLabel Cloud Trigger API Production*).
     - **External service definition** – Select the service definition to use. The example service definition value that was suggested earlier in this article was *NLTrigger*.
-1.	Expand **General** tab and set the following values:
+1. Expand **General** tab and set the following values:
     - **Base URL** - Set *https://labelcloudapi.onnicelabel.com*.
     - **Authentication secret** - Enter the subscription key from the NiceLabel developer portal.
     - **Logging level** - Select *Successes and errors*.
     - **Log request bodies** - Select *Successes and errors*.
 
 You can now proceed with creating label printers and label layouts using variables.
+
 > [!NOTE]
 > When creating label printers, use the name of the printer installed on the computer(s) running the NiceLabel Automation service.
 
 > [!NOTE]
-> When creating label layouts using variables, use the full path and file name of the label (as seen in the Path field in File Properties) or the label file’s URL (also seen File Properties) for the LabelFile system variable.
-
+> When creating label layouts using variables, use the full path and file name of the label (as seen in the Path field in File Properties) or the label file's URL (also seen File Properties) for the LabelFile system variable.
 
 > [!IMPORTANT]
 > The information contained in this article is for general information purposes only. While we attempt to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with the respect to the NiceLabel product. We are not under control of the NiceLabel changes and if you experience any issues or have any addiitonal questions about NiceLabel product, please reach out to the Loftware company. 
