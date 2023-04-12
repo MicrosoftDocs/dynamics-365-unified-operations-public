@@ -27,9 +27,9 @@ This tool is used in both AX 2012 to Dynamics 365 upgrades, and also in Dynamics
    - [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md)   
    - [Move Lifecycle Services implementation projects from on-premises to the cloud](../lifecycle-services/move-on-prem-to-cloud.md)
 
-The migration tool has a command called **RS** for monitoring the replication status, for more information see [Toolkit Reporting Section](data-upgrade-self-service.md#reporting-section-of-the-application).
+The migration tool has a command called **RS** for monitoring the replication status. For more information, see [Toolkit Reporting Section](data-upgrade-self-service.md#reporting-section-of-the-application).
 
-You may want to monitor the replication directly in SQL server management studio. The details in this document explains how to monitor and the specific steps of the replication.
+You may want to monitor the replication directly in SQL server management studio. This document explains how to monitor and the specific steps of the replication.
 
 ## Replication overview
 By default, when you run the toolkit, we create two publications for tables with primary keys. A single publication for other objects (fuctions) and a single publication for tables without primary keys. Optionally, a final publication for locked tables, or record count mismatches can be created if needed.
