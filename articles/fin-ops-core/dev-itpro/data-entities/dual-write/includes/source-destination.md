@@ -45,6 +45,11 @@ Finance and operations app | Customer engagement app | Description
 [Customers V3](#116) | contacts |
 [Decision making roles](#224) | msdyn_decisionmakingroles |
 [Default order settings](#172) | msdyn_productdefaultordersettings |
+[Dynamics 365 Sales feature management states](#237) | msdyn_supplychainfeaturestates |
+[Dynamics 365 Sales order headers](#238) | salesorders |
+[Dynamics 365 Sales order lines](#239) | salesorderdetails |
+[Dynamics 365 Sales quotation header](#240) | quotes |
+[Dynamics 365 Sales quotation lines](#241) | quotedetails |
 [Employment job functions](#225) | msdyn_employmentjobfunctions |
 [Employment per company](#104) | cdm_employments |
 [Ethnic origins](#103) | cdm_ethnicorigins |
