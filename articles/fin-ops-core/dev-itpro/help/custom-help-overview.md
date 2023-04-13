@@ -2,7 +2,7 @@
 title: Custom Help overview
 description: This article explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane.
 author: edupont04
-ms.date: 11/03/2022
+ms.date: 04/13/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ The following table outlines the main objectives that admins typically have for 
 | Objective | Learn more |
 |-----------|------------|
 | I want to give my users a customized in-product Help experience that reflects their actual solution. | See the [Custom Help websites](#custom-help-sites) section of this article and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md). |
-| I want to contribute to the Microsoft Help content. | See [Extend, customize, and collaborate on the Help](contributor-guide.md). |
+| I want to contribute to the Microsoft Help content. | See [Contribute to the Help](contributor-guide.md). |
 | I want to add my content to the **Help** pane. | See [Connect a custom Help website to the Help pane](connect-help-pane.md). |
 
 ## <a name="custom-help-sites"></a>Custom Help websites
