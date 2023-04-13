@@ -21,13 +21,16 @@ ms.search.industry: Retail
 
 This article provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of commerce business transactions, and shows the accounting and posting of transactions where the receipt is printed at the point of sale (POS).
 
-
 ## Prerequisites
 
 In order to work with GST in Commerce for India, you need to complete a general GST setup. For more information, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
 
 You also need to enable the India-specific functionality on the Commerce channel side:
-- If you are using Commerce version 10.0.33 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+
+- If you are using the Commerce version 10.0.33 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+- If you are using the Commerce version 10.0.34 or later, you must enable the following features in the **Feature management** workspace:
+    - **(India) Enable Tax engine for Commerce for India** - enable this feature to use the [Tax engine](../../finance/general-ledger/tax-engine.md) to calculate India GST for in-store and e-commerce transactions.
+    - **(India) Enable customer tax registration information in Retail POS** - enable this feature to be able to populate India-specific tax registration information, such as GSTIN, VAT number (TIN), or PAN number, in the customer master record in Commerce POS.
 
 ## India tax entities for Commerce
 
