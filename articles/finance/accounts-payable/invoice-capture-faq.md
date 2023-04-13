@@ -69,7 +69,7 @@ If the item on the invoice line is a stock item, the PO must be linked with the 
 
 > Write validation failed for table row of type 'VendorInvoiceLineEntity'. Infolog: Warning: The item's inventory model policy must be not stocked.; Warning: The item's inventory model policy must be not stocked...
 
-Support for using an invoice journal for Non-PO invoices will be available in a future release.
+Support for using an invoice journal for Non-PO invoices will be available in a future release.  
 
 ### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
