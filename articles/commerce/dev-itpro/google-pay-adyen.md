@@ -22,7 +22,7 @@ This article describes how to configure Google Pay with Adyen in Microsoft Dynam
 
 Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it's configured, the Google Pay button is available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they're directed to complete their payment directly with the Google Pay service. They're then returned to the online storefront to complete the order.
 
-When Google Pay is used with the express checkout module in Commerce, the user's payment account information is automatically prepopulated on the checkout form to help shoppers get through the checkout process faster. Commerce includes a *payment express* module that enables express checkout behavior. Payment express modules can be used on the checkout or cart pages. Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use.
+When Google Pay is used with the express checkout module in Commerce, the user's payment account information is automatically prepopulated in the checkout form to help shoppers get through the checkout process faster. Commerce includes a *payment express* module that enables express checkout behavior. Payment express modules can be used on the checkout or cart pages. Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use.
 
 ## Key terms
 
@@ -35,8 +35,8 @@ When Google Pay is used with the express checkout module in Commerce, the user's
 ## Prerequisites
 
 - Using Google Pay with Adyen in Commerce requires a Google Merchant account. For information about how to set up your Google Merchant account, see the [Adyen documentation on Google Pay](https://docs.adyen.com/payment-methods/google-pay/).
-- Follow steps #2 and #3 of [Adyen Google Pay Drop-in integration - Before you begin](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-begin).
-- Review steps #1 and #2 of [Adyen Google Pay Drop-in integration - Before you go live](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-go-live).
+- Follow steps 2 and 3 of [Adyen Google Pay Drop-in integration - Before you begin](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-begin).
+- Review steps 1 and 2 of [Adyen Google Pay Drop-in integration - Before you go live](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-go-live).
 - The Google Pay payment method must be integrated with your Adyen account. For instructions, see [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay).
 - You must enable the enhanced wallet feature in Dynamics 365 Commerce headquarters. Go to **Workspaces \> Feature management**, search for the **Enhanced wallet support and payment improvements** feature, select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
@@ -92,27 +92,25 @@ To configure a Commerce online store to use Google Pay, follow these steps.
 
 To add Google Pay as a new payment method for your channel in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel setup \> Payment methods.**
+1. Go to **Retail and Commerce \> Channel setup \> Payment methods**.
 1. Select **New**.
 1. Set the **Default function** option to **Wallet**.
-1. Enter a **Payment method** value (the ID for the payment method, usually the next payment method number available in the payment method number series).
-1. Enter a **Payment method name** (for example, "GooglePay").
-1. Set the  **Default function** option to **Wallet**.
+1. Enter a **Payment method** value (the ID for the payment method, usually the next available payment method number in the payment method number series).
+1. Enter a **Payment method name** (for example, **GooglePay**).
+1. Set the **Default function** option to **Wallet**.
 1. Select **Save**.
-1. Go to your channel (**Retail and Commerce \> Channels \> Online stores**, or for POS, **Retail and Commerce \> Channels \> All stores**). 
-1. On the Action Pane, select the **Set up** tab.
-1. In the **Set Up** group, select **Payment methods**.
+1. Go to your channel (**Retail and Commerce \> Channels \> Online stores** or, for POS, **Retail and Commerce \> Channels \> All stores**). 
+1. On the Action Pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**.
 1. Select **New**.
-1. For **Payment method**, select the Google Pay payment method you set up earlier. The **Payment method name** and **Function** values should then automatically populate using the payment method values you configured.
-1. On the **General** FastTab, in the **Commerce** section, set **Operation name** to **Pay card**.
-1. In the **Commerce** section, set the **Connector name**. For online stores, select **Dynamics 365 Payment Connector for Google Pay**; for POS stores, select **Dynamics 365 Payment Connector for Adyen**.
+1. In the **Payment method** field, select the Google Pay payment method that you set up earlier. The **Payment method name** and **Function** fields should automatically be set by using the payment method values that you configured.
+1. On the **General** FastTab, in the **Commerce** section, set the **Operation name** field to **Pay card**.
+1. In the **Commerce** section, set the **Connector name** field. For online stores, select **Dynamics 365 Payment Connector for Google Pay**. For POS stores, select **Dynamics 365 Payment Connector for Adyen**.
 1. On the **Posting** FastTab, enter any required **Account type** ("Ledger account"), **Difference account**, and **Big difference account** settings.
 1. Select **Save**.
-1. With the new Google Pay payment method selected, on the Action Pane, select the **Electronic payment setup** tab.
-1. On the Action Pane, select **New**. 
-1. Under **Electronic payment types**, for **ID**, select the **ApplePay** card type.
-1. Select **Save**
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and then run the **1070 Channel configuration** job.
+1. While the new Google Pay payment method is selected, on the Action Pane, on the **Electronic payment setup** tab, select **New**. 
+1. Under **Electronic payment types**, in the **ID** field, select the **ApplePay** card type.
+1. Select **Save**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1070 Channel configuration** job.
 
 ### Use the payment express module with Google Pay
 
@@ -123,8 +121,8 @@ When the payment express module is used with Google Pay, if customers select the
 When users complete the action in the Google Pay window, they're directed to the Commerce site checkout page, where the checkout form is prefilled with their Google Pay account details. After users return to the checkout page from the Google Pay window, they'll see the following details:
 
 - In the payment express flow, the first delivery option that is available for the shipping address that was returned will be preselected for the customer.
-- The shipping address and contact information such as the customer's email are populated in the checkout form.  If using express checkout, the email from the express account is used.
-- The payment method selected from the customer's digital Google Pay wallet.
+- The shipping address and contact information, such as the customer's email address, are populated in the checkout form. If they're using express checkout, the email address from the express account is used.
+- The payment method is selected from the customer's digital Google Pay wallet.
 
 Customers can review orders and change checkout order details before they select **Place order** to finalize the order.
 
@@ -144,13 +142,15 @@ To set up the checkout fragment with Google Pay in site builder, follow these st
 
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
-1. In the **Checkout express payment container** slot, select the ellipsis (...), and then select **Add module**.
+1. In the **Checkout express payment container** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select **Payment express**, and then select **OK**.
 1. In the Payment express module's properties pane, update the module properties as needed: 
-    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, rename it, and then select the **Apply** checkmark symbol. 
-    1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector set up for the channel. For more information, see [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) earlier in this article.
-    1. For the **Height of the iFrame** property, set the height in pixels that meets your page design needs (for example, enter "65" to set a height of 65 pixels).
-1. Optionally, you can add a text block module to the **Checkout express payment container** module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
+
+    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol. 
+    1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel. For more information, see the [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) section earlier in this article.
+    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter **65** to set a height of 65 pixels).
+
+1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the fragment.
 
@@ -162,12 +162,14 @@ To add Google Pay to the payment express fragment of the cart page in site build
 1. Select your site's cart page, and then select **Edit**.
 1. Under the **Main slot**, find the container that contains the **Cart** module.
 1. Under the **Cart** module, select the **Payment express** module.
-1. In the **Payment express** slot, select the ellipsis (...), and then select **Add module**.
+1. In the **Payment express** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select **Payment express**, and then select **OK**.
 1. In the Payment express module's properties pane, update the module properties as needed: 
-    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, rename it, and then select the **Apply** checkmark symbol. 
-    1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector set up for the channel. For more information, see [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) earlier in this article.
-    1. For the **Height of the iFrame** property, set the height in pixels that meets your page design needs (for example, enter "50" to set a height of 50 pixels).
+
+    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol. 
+    1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel. For more information, see the [Configure a Commerce online store for Google Pay](#configure-a-commerce-online-store-for-google-pay) section earlier in this article.
+    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter **50** to set a height of 50 pixels).
+
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the page.
 
@@ -213,7 +215,7 @@ Modes of delivery are displayed as they're added to the **Modes of delivery** li
 
 The POS configuration uses the setting of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. For information about how to configure the electronic funds transfer (EFT) service for the Dynamics 365 Payment Connector for Adyen in Commerce headquarters, see [Set up a Dynamics 365 POS hardware profile](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
 
-The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal. Following similar mapping steps to the [Map the Google Payment method](#map-the-google-pay-payment-method) section, map for the card type desired against the **Dynamics 365 Payment Connector for Adyen** and **Processor payment** options. Since POS only supports a single connector as configured for the store, the payment connector will map against **Processor payment** value returned by Adyen.
+The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal. Map for the desired card type against the **Dynamics 365 Payment Connector for Adyen** and **Processor payment** options. The mapping steps resemble the steps in the [Map the Google Payment method](#map-the-google-pay-payment-method) section. Because POS supports only a single connector as configured for the store, the payment connector will map against the **Processor payment** value that's returned by Adyen.
 
 ## Additional resources
 
