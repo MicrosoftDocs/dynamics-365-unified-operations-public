@@ -111,6 +111,9 @@ For more information about how to create e-commerce sites and work with e-commer
 
 ### Configure GST for e-commerce
 
-For detailed information about how to configure GST for Commerce, see [Deployment guidelines for cash registers for India](apac-ind-loc-deployment-guidelines.md).
+In order to work with GST in e-commerce, you must enable the India-specific functionality on the Commerce channel side:
+
+- If you are using the Commerce version 10.0.33 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+- If you are using the Commerce version 10.0.34 or later, you must enable the following feature in the **Feature management** workspace in Commerce headquarters: **(India) Enable Tax engine for Commerce for India**. This feature ensures that the [Tax engine](../../finance/general-ledger/tax-engine.md) is used to calculate India GST for in-store and e-commerce transactions.
 
 You must also enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce headquarters.
