@@ -1,8 +1,8 @@
 ---
-title: Extend, customize, and collaborate on the Help (contains video)
+title: Contribute to the Help (contains video)
 description: This article provides tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
-ms.date: 11/21/2022
+ms.date: 04/13/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -12,9 +12,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
 
-# Extend and collaborate on the Help
+# Contribute to the Help
 
-The source files for the Microsoft Help for finance and operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This article explains how to work with the GitHub repos and Markdown files.
+This article describes how to contribute to our content in our [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) GitHub repo.
 
 For information about how to create Markdown files in GitHub repos, see the [Docs contributor guide](/contribute/). For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).
 
@@ -28,14 +28,6 @@ You can also contribute and make edits to the existing documentation. To get sta
 
 > [!NOTE]
 > Microsoft currently accepts pull requests only to the Dynamics-365-Unified-Operations-public repo.
-
-## Extend and customize Microsoft source content from GitHub repos
-
-Microsoft provides a repo in GitHub for the source content. The [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo contains the source content in English (United States).
-
-When Microsoft publishes an update to the content, the *main* branch in the repo is updated. The source repo is updated weekly. If you fork the Microsoft repo, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less often, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you change files that Microsoft has also changed. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs authoring guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.
-
-<!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 
 ### Get started with GitHub
 
@@ -58,25 +50,20 @@ The syntax that is used to format text for topics is named [Markdig](https://git
 
 You can convert content from Microsoft Word to Markdown by using open-source tools or other tools. In this way, you can easily recycle content.
 
-
-### Get updates from Microsoft
-
-Microsoft makes frequent changes to the content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public, is updated weekly. However, you can choose to get updates monthly, twice a year, or once a year, for example. The translation repos are updated less frequently, so you might want a monthly schedule or less frequent updates, as appropriate.  
-
 ## Translate the content
 
-If your solution is available in more than one country or region, you will probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples.
+If your solution is available in more than one country or region, you'll probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples:
 
-* Create the content in multiple languages without using Microsoft's content.
-* Create the content in one language, without using Microsoft's content, and then translate it. For example, by using the [Dynamics 365 Translation Service (DTS)](#dynamics-365-translation-service).
-* Pull Microsoft's English (United States) language content from our MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, customize the Markdown files, translate them, and then use a third-party tool or DocFX to build the HTML files.
+* Create the content in multiple languages.
+* Create the content in one language, and then translate it. For example, by using the [Dynamics 365 Translation Service (DTS)](#dynamics-365-translation-service).
+* Pull Microsoft's English (United States) language content from our MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, customize the Markdown files, translate them, and then use a third-party tool to build the HTML files.
 
     > [!NOTE]
-    > DTS isn't an option for translating the content in this scenario because it doesn't support Markdown files.
+    > DTS isn't an option for translating the Microsoft content because it doesn't support Markdown files.
 
 ### Dynamics 365 Translation Service
 
-You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your own or the Microsoft-provided content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](../lifecycle-services/use-translation-service-ua.md).
+You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](../lifecycle-services/use-translation-service-ua.md).
 
 ## See also
 
