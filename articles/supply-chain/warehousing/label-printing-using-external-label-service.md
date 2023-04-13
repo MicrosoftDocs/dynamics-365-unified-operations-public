@@ -1,5 +1,5 @@
 ---
-title: Enable label printing using external label service solutions
+title: Print labels using external label service solutions
 description: This article describes how to set up and print labels using external label service solutions.
 author: GalynaFedorova
 ms.author: gfedorova
@@ -10,12 +10,12 @@ ms.date: 03/27/2023
 ms.custom: bap-template
 ---
 
-# Enable label printing using external label service solutions
+# Print labels using external label service solutions
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-The label printing integration with external service feature in Microsoft Dynamics 365 Supply Chain Management provides an effective solution for printing labels using any external labeling solutions. This feature allows direct interaction between Microsoft Dynamics 365 Supply Chain Management and third-party solutions by providing framework for communication using HTTP APIs, without the need for a Document Routing Agent. With this functionality, businesses can design and print various types of labels using third-party labeling products, such as Seagull Scientific BarTender, Loftware NiceLabel.
+The label printing integration with external service feature in Microsoft Dynamics 365 Supply Chain Management provides an effective solution for printing labels using any external labeling solutions. This feature allows direct interaction between Supply Chain Management and third-party solutions by providing framework for communication using HTTP APIs, without the need for a Document Routing Agent. With this functionality, businesses can design and print various types of labels using third-party labeling products, such as Seagull Scientific BarTender, Loftware NiceLabel.
 
 The following illustrations provide a comparison between the current functionality of printing labels using the Document routing agent and using an external service. This will help businesses understand the benefits and drawbacks of each method, enabling them to make an informed decision on the best solution for their needs.
 

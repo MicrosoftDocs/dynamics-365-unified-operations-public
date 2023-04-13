@@ -1,5 +1,5 @@
 ---
-title: Enable label printing using the external Loftware NiceLabel label service solution
+title: Print labels using the Loftware NiceLabel label service solution
 description: This article describes how to set up and print labels using Loftware NiceLabel label service solution.
 author: GalynaFedorova
 ms.author: gfedorova
@@ -10,7 +10,7 @@ ms.date: 04/04/2023
 ms.custom: bap-template
 ---
 
-# Enable label printing using the external Loftware NiceLabel label service solution
+# Print labels using the Loftware NiceLabel label service solution
 
 [!include [banner](../includes/banner.md)]
 
