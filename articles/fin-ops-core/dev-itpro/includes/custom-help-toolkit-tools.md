@@ -1,1 +1,1 @@
-The tools you need to do this process are available on the [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/) repo as a downloadable release. You can find them under **Releases**.
+The tools you need to complete this process are available in the [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/) repo as a downloadable release. You can find them under **Releases**.
