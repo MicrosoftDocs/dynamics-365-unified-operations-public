@@ -2,7 +2,7 @@
 title: Goods and Services Tax (GST) integration for cash registers for India
 description: This article provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 09/07/2021
+ms.date: 04/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,8 +24,10 @@ This article provides a walkthrough of the features that are related to Goods an
 
 ## Prerequisites
 
-- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
-- Configure Commerce channel components. To enable India-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+In order to work with GST in Commerce for India, you need to complete a general GST setup. For more information, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
+
+You also need to enable the India-specific functionality on the Commerce channel side:
+- If you are using Commerce version 10.0.34 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
 ## India tax entities for Commerce
 
