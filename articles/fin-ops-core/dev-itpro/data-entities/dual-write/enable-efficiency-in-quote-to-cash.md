@@ -64,10 +64,6 @@ Enable feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales in Dy
 You have now enabled the feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales. New sales quotations will fully align with the behaviour described in Learn more. 
 **Note** All sales quotations created prior to the feature being enabled, will have Dynamics 365 Sales as default origin in Dataverse while the same sales quotations have Supply Chain Management as default origin In Dynamics 365 SCM. This immediate misalignment of origin and resulting ownership, will align upon the first sales quotation header synchronization. Once the first synchronization of a sales quotation header update is done, then the origin value will be aligned. If the first post-uptake synchronization is invoked from an update in Dynamics 365 SCM, then Supply Chain Management will be synched as origin; If the first post-uptake synchronization is invoked from an update in Dynamics 365 Sales, then Dynamics 365 Sales will be synced as origin. 
 
-### Step #6 Enable message processor batch
-
-Instructing customers to enable message processor batch and enable asynchronous processing in accounts recevable parameters.
-
 ## Configurations not supported for feature Integrate Sales Quotation lifecycle with Dynamics 365 Sales
 
 The following are examples of not supported configurations. The list is not exhaustive, but presents the main not supported configurations: 
