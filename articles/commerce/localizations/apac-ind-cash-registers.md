@@ -27,7 +27,7 @@ This article provides a walkthrough of the features that are related to Goods an
 In order to work with GST in Commerce for India, you need to complete a general GST setup. For more information, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
 
 You also need to enable the India-specific functionality on the Commerce channel side:
-- If you are using Commerce version 10.0.34 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+- If you are using Commerce version 10.0.33 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
 ## India tax entities for Commerce
 
