@@ -9,7 +9,7 @@ ms.technology:
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: India
-ms.author: evgenypopov
+ms.author: josaw
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: 7.3.1
 ms.search.industry: Retail
