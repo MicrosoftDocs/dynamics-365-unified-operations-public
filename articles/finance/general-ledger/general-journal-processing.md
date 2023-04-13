@@ -4,7 +4,7 @@
 title: General journal processing
 description: This article describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 author: kweekley
-ms.date: 02/28/2022
+ms.date: 04/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -95,7 +95,9 @@ For more information, see the following topics:
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
 ## Global general journals
-The global general journal allows entry of a journal into any of the legal entities defined in your environment without having to switch companies before creating the journal.  At the top of the global general journal form the button to creatwe a new journal allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the journal created will open the standard journal lines form that is the same as opening it from the **general journal** form.  NOTE: Starting in application release 10.0.34 a new feature titled *Enable the Global general journal form to select multiple companies for posting* is available to allow the selecting of mulitple journals for posting across any of your legal entities. The posting process will create a single batch job per each legal entity to complete the posting. 
+The **Global general journal** allows entry of a journal into any legal entities defined in your environment without having to switch companies before creating the journal. At the top of the **Global general journal** page, the **New journal** button allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the journal created will open the standard journal lines page that is the same as opening it from the **General journal** page.  
+>[!NOTE] 
+>In Dynamics 365 Finance release 10.0.34, a new feature **Enable the Global general journal page to select multiple companies for posting** allows the selecting of mulitple journals for posting across any legal entities. The posting process will create a single batch job per each legal entity to complete the posting. 
 
 ## Simulate posting
 You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the system tests the journal for specific error conditions. If you use the **Simulate posting** function, the system runs all of the same processes that are run during posting without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal. 
