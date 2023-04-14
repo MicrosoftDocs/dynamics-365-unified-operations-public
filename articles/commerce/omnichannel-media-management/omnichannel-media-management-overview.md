@@ -66,7 +66,11 @@ Here is the basic fallback for channel and locale media assignments:
   flowchart TD;
       A[fa:fa-globe Client UX channel+locale]-->|request| B("Specific channel+locale (exact match)")
       B-->|if not found| C("Omnichannel+language_id (language-only match)")
-      C-->|if not found| D("Omnichannel+Neutral (default)");
+      C-->|if not found| D("Omnichannel+Neutral (default)")
+      style A fill:#B3EC98
+      style B fill:#e4f1f7
+      style C fill:#cae3ef
+      style D fill:#afd5e7
 ```
 
 ### Assign media to master products
