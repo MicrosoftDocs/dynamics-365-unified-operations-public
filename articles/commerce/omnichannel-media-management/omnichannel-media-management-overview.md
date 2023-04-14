@@ -61,7 +61,7 @@ To assign product-specific swatches, follow these steps:
 ### Omnichannel, channel-specific, and locale-specific media assignments
 Media can be assigned in a hierarchical fallback manner accross channels and locales.  The default assignment for any product should use Omnichannel (channel) and Neutral (locale).  These assignments will be returned by default anywhere a more specific channel+local combination is not available.  For channel+locale combinations that require different product media assignments than the default Omnichannel+Neutral assignments, specific channel+locale media assignments can be configured to override the default.  After a specific channel+locale media assignment for a product is created and published, the inheritance to the omnichannel combination is severed and all media assignments are controlled by the specific channel+locale media assignments.
 
-Here is the basic fallback for channel and locale media assignments:
+Here is the fallback order for channel and locale media assignments:
 ```mermaid
   flowchart TD;
       A[fa:fa-globe Client UX channel+locale]-->|request| B("Specific channel+locale (exact match)")
@@ -73,8 +73,22 @@ Here is the basic fallback for channel and locale media assignments:
       style D fill:#afd5e7
 ```
 
-### Assign media to master products
-[todo]
+### Product master, product dimension(s), and product variant media assignments
+Product masters typically have one or more product dimensions (color, size, style, configuration) which determine complete set of possible variants for the product.  Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments.  
+
+Here is the fallback order for product master, product dimension(s), and product variant media assignments:
+```mermaid
+  flowchart TD;
+      A[fa:fa-globe Client UX]-->|request product variant| B("Specific product variant media assignment match (example: color=blue, style=slim, size=large)")
+      B-->|if not found| C("Specific product dimension(s) media assignment match (example: color=blue, style=slim, ignore size)")
+      C-->|if not found| D("Product master media assignment (default)")
+      style A fill:#B3EC98
+      style B fill:#e4f1f7
+      style C fill:#cae3ef
+      style D fill:#afd5e7
+```
+
+### Assign media to product master
 
 #### Assign media to product dimensions
 [todo]
