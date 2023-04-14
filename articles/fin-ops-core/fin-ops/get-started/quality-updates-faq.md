@@ -52,7 +52,7 @@ It's important to note that hotfixes that are deployed as part of a PQU go throu
 
 ### Can customers proactively install a PQU ahead of the schedule?
 
-Yes. You can proactively install a PQU. Microsoft will skip the update if the environment's current build version is equal to or more than the PQU that's being deployed.
+Yes. You can proactively install a PQU. Microsoft will skip the update if the environment's current build version is equal to or more than the PQU that's being deployed. If you apply the PQU manually the [customers AOT package will also be promoted.](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#things-to-consider-about-production-updates). 
 
 ### Under what circumstances will a PQU be skipped?
 
