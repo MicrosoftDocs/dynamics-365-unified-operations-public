@@ -85,7 +85,7 @@ This capability is available in a version 1.0.1.x.
 
 ### Does Invoice capture support uploading multiple invoices at the same time?
 
-The capability to upload multiple invoices is available in a version 1.0.1.x.
+In Invoice capture version 1.0.1.0 and later, users can upload multiple invoices simultaneously.
 
 ### What languages of invoices are supported?
 
