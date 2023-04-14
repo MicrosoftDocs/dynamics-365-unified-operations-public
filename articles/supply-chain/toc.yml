@@ -3729,7 +3729,7 @@
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
-          - name: Print labels using external label service solutions
+          - name: Print labels using an external service
             href: warehousing/label-printing-using-external-label-service.md
           - name: Print labels using the Loftware NiceLabel label service solution
             href: warehousing/label-printing-using-nicelabel.md
