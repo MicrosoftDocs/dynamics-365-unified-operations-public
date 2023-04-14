@@ -53,10 +53,10 @@ To monitor the replication in SSMS, connect to the source on-premises database s
 
 ### Snapshot generation
 
-There are a few ways to view the snapshot agent details.
+There are a few ways to view the snapshot agent details:
 
-1. Select the publication on the left.
-2. On the **Agents** tab, select and hold (or right-click) **Snapshot Agent**, and then select **View Details**.
+ - Select the publication on the left.
+ - On the **Agents** tab, select and hold (or right-click) **Snapshot Agent**, and then select **View Details**.
 
 The **Snapshot Agent** window is opened.
 
