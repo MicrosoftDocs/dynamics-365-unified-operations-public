@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Monitor replication
-description: This article describes how to monitor replication in Microsoft Dynamics AX 2012.
+title: Monitor replication for the Data migration toolkit
+description: This article describes how to monitor replication for the Data migration toolkit for Microsoft Dynamics 365.
 author: ttreen 
 ms.date: 04/26/2023
 ms.topic: article
@@ -15,124 +15,125 @@ ms.search.form: 2022-04-08
 
 ---
 
-# Monitoring replication for the data migration toolkit for Dynamics 365 Finance
+# Monitor replication for the Data migration toolkit
 
 [!include[banner](../includes/banner.md)]
 
-The Data migration toolkit for Dynamics 365 is used for self-service environments. This tool uses SQL replication to transfer the data from the customer's on-premises SQL Server to the Azure SQL database used for Dynamics 365.
+The Data migration toolkit for Microsoft Dynamics 365 is used for self-service environments. It uses SQL replication to transfer data from the customer's on-premises SQL Server instance to the Azure SQL database that's used for Dynamics 365.
 
-This tool is used in both AX 2012 to Dynamics 365 upgrades, and also in Dynamics 365 on-premises to Dynamics 365 cloud migrations.
+The toolkit is used both in upgrades from Dynamics AX 2012 to Dynamics 365 and in migrations from Dynamics 365 (on-premises) to Dynamics 365 in the cloud.
 
-   See: 
-   - [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md)   
-   - [Move Lifecycle Services implementation projects from on-premises to the cloud](../lifecycle-services/move-on-prem-to-cloud.md)
+For more information, see the following articles:
 
-The migration tool has a command called **RS** for monitoring the replication status. For more information, see [Toolkit Reporting Section](data-upgrade-self-service.md#reporting-section-of-the-application).
+- [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md)
+- [Move Lifecycle Services implementation projects from on-premises to the cloud](../lifecycle-services/move-on-prem-to-cloud.md)
 
-You may want to monitor the replication directly in SQL server management studio. This document explains how to monitor and the specific steps of the replication.
+The toolkit has an **RS** command that lets you monitor the replication status. For more information, see [Toolkit Reporting Section](data-upgrade-self-service.md#reporting-section-of-the-application). However, you might want to monitor the replication directly in SQL Server Management Studio (SSMS). This article explains how to monitor replication and describes the specific steps of replication.
 
 ## Replication overview
-By default, when you run the toolkit, we create two publications for tables with primary keys. A single publication for other objects (fuctions) and a single publication for tables without primary keys. Optionally, a final publication for locked tables, or record count mismatches can be created if needed.
 
-Each of these publications has two SQL agent jobs:
-1. Snapshot agent
-    - The snapshot agent is responsible to the initial snapshot of the tables (articles) in the publication. This will create files in the snapshot folder for each table, more details on these are later in this document. 
-2. Log reader agent
-    - The log reader agent is responsible for pushing the snapshot to the target database (subscriber) and any ongoing changes to the tables. 
- >[!Note]
- >The non-primary key publication only pushes up the snapshot.
+By default, when you run the Data migration toolkit, two publications are created for tables that have primary keys, one publication is created for other objects (functions), and one publication is created for tables that don't have primary keys. Additionally, one final publication can be created for locked tables or record count mismatches, if it's required.
 
-## Replication monitor
+Each publication has two SQL agent jobs:
 
-To monitor the replication in SQL management studio, connect to the source on-premise database server, expand **Replication**. Select **Launch replication monitor**
+- **Snapshot agent** –  This agent is responsible for the initial snapshot of the tables (articles) in the publication. It will create files in the snapshot folder for each table. For more information about these files, see the [File type details](#file-type-details) section of this article.
+- **Log reader agent** – This agent is responsible for pushing the snapshot to the target database (subscriber) and for any ongoing changes to the tables. 
 
-[![Launch replication manager.](./media/Launch-replication-monitor1.png)](./media/Launch-replication-monitor1.png)
+> [!NOTE]
+> The publication for tables that don't have primary keys only pushes up the snapshot.
 
-The **Replication monitor** window will open:
+## Replication Monitor
 
-[![Replication monitor](./media/Replication-Monitor2.png)](./media/Replication-Monitor2.png)
+To monitor the replication in SSMS, connect to the source on-premises database server, expand the **Replication** folder, select and hold (or right-click), and then select **Launch Replication Monitor** to open Replication Monitor.
 
-> [!Note] 
-> You can see above, there is a single primary key table publication whereas the default is normally two. 
+[![Screenshot of the Replication Monitor window.](./media/Replication-Monitor2.png)](./media/Replication-Monitor2.png)
+
+> [!NOTE]
+> As the preceding illustration shows, there's only one publication for tables that have primary keys, whereas there are usually two.
 
 ### Snapshot generation
 
-There are a few ways to get to the snapshot agent details. 
-To view the snapshot agent details: 
-1. Select the publication on the left. 
-2. Select the **Agents** tab, right-click **Snapshot Agent** and select **View Details**.
-The **Snapshot agent details** window will display:
+There are a few ways to view the snapshot agent details.
 
-[![Snapshot agent details.](./media/snapshot-agent-details3.png)](./media/snapshot-agent-details3.png)
+1. Select the publication on the left.
+2. On the **Agents** tab, select and hold (or right-click) **Snapshot Agent**, and then select **View Details**.
 
-There are four steps when generating a snapshot:
+The **Snapshot Agent** window is opened.
 
-1. Update statistics on indexes   
-2. Create bulk copy files
-3. Customize object scripting 
-4. Generate scripts
+[![Screenshot of snapshop agent details in the Snapshot Agent window.](./media/snapshot-agent-details3.png)](./media/snapshot-agent-details3.png)
 
-The snapshot files are created in the folder that was specified during the toolkit setup.
-Open **File explorer** to this folder, and drill down the folders to the publications you're reviewing.
+The process of generating a snapshot has four steps:
 
-### Files type details
+1. Update statistics on indexes.
+2. Create bulk copy files.
+3. Customize object scripting.
+4. Generate scripts.
 
- - *.BCP – SQL Server replication snapshot bulk copy file 
-    - Binary file containing the data in the table. There can be one or several for each table depending on the size of the table. 
- - *.DRI – SQL Server replication snapshot constraint script
-    - SQL Script containing the constraints on the table.  
- - *.IDX – SQL Server replication snapshot index script
-    - SQL Script containing the indexes on the table.
- - *.PRE – SQL Server replication snapshot script
-    - SQL Script used to move existing objects in the target database.
- - *.SCH – SQL Server replication snapshot schema script
-    - SQL Script for creating the table and stored procedures used to replicate the data to the subscriber database. This doesn't include constraints or indexes. 
- - *.XPP  – SQL Server replication snapshot extended properties script
-    - SQL Script containing any extended properties that may be on the table. This tends to be empty for AX 2012 tables. 
+The snapshot files are created in the folder that you specified when you set up the Data migration toolkit. In File Explorer, open that folder, and drill down through the folders to the publications that you're reviewing.
 
-Once the snapshot is completed, a message will display **"A snapshot of XXX article(s) was generated"**.
+### File type details
 
-[![Articles generated.](./media/articles-generated4.png)](./media/articles-generated4.png)
+The following table explains the different types of snapshot files.
 
-At this stage, the snapshot is only in the file share, the next step is the distributor will move the snapshot to the target (subscriber) database. 
+| File name | Type of file | Description |
+|---|---|---|
+| \*.bcp | SQL Server replication snapshot bulk copy file | A binary file that contains the data in the table. There can be one or several of these files for each table, depending on the size of the table. |
+| \*.dri | SQL Server replication snapshot constraint script | An SQL script that contains the constraints on the table. |
+| \*.idx | SQL Server replication snapshot index script | An SQL script that contains the indexes on the table. |
+| \*.pre | SQL Server replication snapshot script | An SQL script that's used to move existing objects in the target database. |
+| \*.sch | SQL Server replication snapshot schema script | An SQL script that creates the table and stored procedures that are used to replicate the data to the subscriber database. This script doesn't include constraints or indexes. |
+| \*.xpp | SQL Server replication snapshot extended properties script | An SQL script that contains any extended properties on the table. For AX 2012 tables, this script tends to be empty. |
+
+After the snapshot is completed, the following message is shown: "A snapshot of \<number of articles\> article(s) was generated."
+
+[![Screenshot that shows the snapshot generation message in Snapshot Agent window.](./media/articles-generated4.png)](./media/articles-generated4.png)
+
+At this stage, the snapshot is only in the file share. In the next step, the distributor will move it to the target (subscriber) database.
 
 ### Distributor to subscriber
 
-The distributor to subscriber details can be used to monitor:
- - the push of the generated snapshot to the target (subscriber) database 
- - any ongoing transactions that were created during the snapshot generation 
- - ongoing transactions
+You can use the distributor-to-subscriber details to monitor the following information:
 
-To view the distributor to subscriber logs, click **All Subscriptions** tab and then click **View Details**.
-1. The first step in moving the snapshot is running the PRE files (these drop existing objects in the target).
+- The push of the generated snapshot to the target (subscriber) database
+- Any ongoing transactions that were created during snapshot generation
+- Ongoing transactions
 
-[![First step to move snapshot.](./media/first-step5.png)](./media/first-step5.png)
+To view the distributor-to-subscriber logs, on the **All Subscriptions** tab, select **View Details**.
 
-2. The SCH scripts are run and create the tables.
-3. After the tables have been scripted in the subscriber (target) database, the bulk copy files are imported to the target.
-The BCP file import process can take several hours.
-4. The next step is to create the indexes.
-5. The final step is applying constraints and extended properties.
+Follow these steps to move a snapshot.
 
-You can check on the **Undistributed commands** to see how much is outsatnding:
+1. Run the .pre files. These scripts drop existing objects in the target.
 
-[![Undistributed commands.](./media/undistributed-commands6.png)](./media/undistributed-commands6.png)
+    [![Screenshot that shows the .pre files being run.](./media/first-step5.png)](./media/first-step5.png)
 
-Once the snapshot is delivered, the message "Delivered snapshot from the \\unc\server\folder" will be displayed.
-If there are no further outstanding commands, the following will display in the **Undistributed commands**:
+2. Run the .sch files. These scripts create the tables.
+3. After the tables have been scripted in the subscriber (target) database, the bulk copy files are imported into the target.
 
-[![Completed undistributed commands.](./media/undis-commands-completed7.png)](./media/undis-commands-completed7.png)
+    The process of importing .bcp files can take several hours.
+
+4. Create the indexes.
+5. Apply constraints and extended properties.
+
+On the **Undistributed Commands** tab, you can monitor the progress of the distribution, including the number of outstanding commands to apply and the estimated remaining time.
+
+[![Screenshot of the Undistributed Commands tab.](./media/undistributed-commands6.png)](./media/undistributed-commands6.png)
+
+After the snapshot is delivered, the following message is shown: "Delivered snapshot from the \\\\unc\\server\\folder."
+
+If there are no more outstanding commands, the **Undistributed Commands** tab shows the number of outstanding commands to apply as **0** (zero) and the estimated remaining time as **00:00:00**.
+
+[![Screenshot of the Undistributed Commands when there are no more outstanding commands.](./media/undis-commands-completed7.png)](./media/undis-commands-completed7.png)
 
 ## Transaction replication
 
-After the snapshot is delivered, any new transactions created on the database during or after the push of the snapshot are delivered to the subscriber (target).
-After the database stabilizes, and there is nothing to replicate, the message **No replicated transactions are available** will be displayed.
+After the snapshot is delivered, any new transactions that were created in the database during or after the push of the snapshot are delivered to the subscriber (target). After the database is stabilized, and there's nothing to replicate, the following message is shown: "No replicated transactions are available."
 
 ### Network bandwidth
 
-While the snapshot is being pushed, you can monitor the bandwidth from the distributor process to the target DB. This is useful for upload performance issues.
-Open **Task manager**:
-Click **Open resource monitor**
-In **Resource monitor**, click **Network**, filter on **DISTRIB.exe**. This will display the send bandwidth speed.
+While the snapshot is being pushed, you can monitor the bandwidth from the distributor process to the target database. This information is useful if upload performance issues occur.
 
-[![Available send bandwidth.](./media/send-band8.png)](./media/send-band8.png)
+1. Open Task manager.
+2. Select **Open resource monitor**.
+3. In Resource Monitor, on the **Network** tab, filter on **DISTRIB.exe**. The send bandwidth speed is shown.
+
+[![Screenshot that shows the available send bandwidth in Resource Monitor.](./media/send-band8.png)](./media/send-band8.png)
