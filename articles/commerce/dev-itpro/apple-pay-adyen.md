@@ -4,7 +4,7 @@
 title: Set up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/11/2023
+ms.date: 04/17/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -17,6 +17,7 @@ ms.search.validFrom: 2022-06-20
 # Set up Apple Pay with Adyen in Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
