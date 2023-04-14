@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Document class sales point for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 On the **Document class sales point** page, you can add a configuration that has a sales point, account type, and sequence number to any document class.
 
