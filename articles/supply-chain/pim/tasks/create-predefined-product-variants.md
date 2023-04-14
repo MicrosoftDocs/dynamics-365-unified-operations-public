@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.19
 
 ## Example scenario: Create predefined product variants
 
-This example scenario shows how to create product variants for a product master using a combinations of product dimensions.
+This example scenario shows how to create product variants for a product master using a combination of product dimensions.
 
 ### Make demo data available
 
@@ -85,8 +85,8 @@ The *Variant suggestions page improvements* feature improves the **Variant sugge
 
 The following improvements are added by this feature:
 
-- **Deferred generation of variant suggestions:** The **Variant suggestions** page no longer shows suggestions when you first open it. Instead, you must explicitly choose which values you will need and then select the **Suggest** button to generate the combinations. This makes the process more visible and interactive.
-- **Selection of dimensions values:** When you have many dimension values, you are typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles). With the improved design, you can select the dimension values for which you want to generate product variant suggestions. This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.
+- **Deferred generation of variant suggestions:** The **Variant suggestions** page no longer shows suggestions when you first open it. Instead, you must explicitly choose which values you'll need and then select the **Suggest** button to generate the combinations. This makes the process more visible and interactive.
+- **Selection of dimensions values:** When you have many dimension values, you're typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles). With the improved design, you can select the dimension values for which you want to generate product variant suggestions. This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.
 
 ### Turn the Variant suggestions page improvements feature on or off
 
@@ -104,28 +104,38 @@ To generate product variant suggestions when the *Variant suggestions page impro
 1. The system generates a list with all possible combinations of the sizes and colors you selected. On the **Suggested variants** FastTab, select the check box for each product dimension combination that you want to use, or select **Select all** on the toolbar to select all of them.  
 1. Select **Create** to add the variants to the current product master.
 
-## Apply sales tax group for product variants in sales and procurement
+## Set up variant-specific sales tax groups for sales and/or procurement
 
-The *Apply sales tax group for product variants in sales and procurement* feature enables setting up a specific item sales tax group for a released product variant. The specific item sales tax group setup for a released product variant can be setup both for sales and procurement. If a specific item sales tax group is setup for released product variant for sales, then this item sales tax group is used as default when creating a sales quotation and sales order line. If a specific item sales tax group is not setup for released product variant for sales, then the item sales tax group setup for the released product master is used as default when creating a sales quotation and sales order line. Similarly for purchase order, purchase requisition, and request for quotation, if a specific item sales tax group is setup for released product variant for purchase, then this is used as default. If no specific item sales tax group is setup for a released product variant, then the item sales tax group setup for the product master is used as default. 
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
-This allows for a setup where a majority of released product variants follow the product master setup for items sales tax group defaulting, however selective released product variants must default an alternate items sales tax group in order to ensure the right taxation for these selective released product variants. This eliminates the cost, pain, and risk of not having the correct taxation applied to an order line for a product variant.
+The *Apply sales tax group for product variants in sales and procurement* feature lets you assign assign variant-specific item sales tax groups both for sales and for procurement. The feature applies the following rules:
+
+- If a specific item sales tax group is assigned for a released product variant for sales, then this item sales tax group is used by default when creating a sales quotation or sales order line.
+- If a specific item sales tax group isn't assigned for released product variant for sales, then the item sales tax group assigned to the released product master is used by default when creating a sales quotation or sales order line.
+- Similarly, for purchase orders, purchase requisitions, and requests for quotation, if a specific item sales tax group is assigned for a released product variant for purchase, then that group is used by default. If no specific item sales tax group is assigned for a released product variant, then the item sales tax group assigned for the product master is used by default.
+
+This functionality allows for a set up where most released product variants follow the product master setup for item sales tax groups, while a few variants instead default to an alternative item sales tax group. This approach eliminates the cost, pain, and risk of not having the correct taxation applied to an order line for a product variant.
 
 ### Turn the Apply sales tax group for product variants in sales and procurement feature on or off
 
-To use this feature, it must be enabled for your system. Admins can turn this functionality on or off by searching for the *Apply sales tax group for product variants in sales and procurement* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. Follwoing the feature lifecycle model, this feature is expected to become default enabled 6 months after ganeral availability in 10.0.34, and mandatory 6 months following default turned on.  
+This feature requires Supply Chain Management version 10.0.34 or later.
 
+To use this feature, it must be enabled for your system. Admins can turn this functionality on or off by searching for the *Apply sales tax group for product variants in sales and procurement* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. 
 
-### Work with item sales tax group defined on the released product variant
+### Assign an item sales tax group to a released product variant
 
-To setup default item sales tax group for a product variant, enable *Apply sales tax group for product variants in sales and procurement* feature. the do the following:
+To assign variant-specific item sales tax groups, follow these steps:
 
-1. Open or create a product master and add the required product dimensions to it, as described in the previous section.
-2. If you create a new product master, then follow the steps from previous section "Work with the improved variant suggestions" to create and release product variants
-3. From the released product, select the product master, select **Product variants** on the Action Pane and **Released product variants**
-4. With the Released products variants open, select and open a variant.
-5. Expand the Purchase fast tab and select an item sales tax group
-6. Expand the Sales fast tab and select an item sales tax group
+1. Go to **Product information management \> Products \> Released products**.
+1. Open the product for which you want to set up variant-specific item sales tax groups.
+1. On the **Released product details** page, you can view and edit the default item sales tax groups for the master product if needed. These will apply to all variants for which you don't assign a variant-specific item sales tax group for sales and/or procurement.
+    - To choose the default item sales tax group to use when purchasing product variants for this master, expand the **Purchase** FastTab and set the **Item sales tax group** field.
+    - To choose the default item sales tax group to use when selling product variants for this master, expand the **Sell** FastTab and set the **Item sales tax group** field.
+1. From the Action Pane of the **Released product details** page, open the **Product** tab and select **Released product variants**.
+1. The **Released products variants** page opens. Open the variant you want to set up by selecting its link in the **Product number** column.
+    - To choose the default item sales tax group to use when purchasing the selected variant, expand the **Purchase** FastTab and set the **Item sales tax group** field.
+    - To choose the default item sales tax group to use when selling the selected variant, expand the **Sell** FastTab and set the **Item sales tax group** field.
 
-You can now create a sales order line, sales quotation line, purchase requisition line, purchase order line, request for quotation line, and observe that the item sales tax group for the product variant is defaulted from the variant setup and not from its product master. 
+You can now create a sales order line, sales quotation line, purchase requisition line, purchase order line, or request for quotation line and observe that the item sales tax group for the product variant is defaulted from the variant setup and not from its product master.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
