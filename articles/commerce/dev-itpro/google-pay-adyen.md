@@ -108,7 +108,7 @@ To add Google Pay as a new payment method for your channel in Commerce headquart
 1. On the **Posting** FastTab, enter any required **Account type** ("Ledger account"), **Difference account**, and **Big difference account** settings.
 1. Select **Save**.
 1. While the new Google Pay payment method is selected, on the Action Pane, on the **Electronic payment setup** tab, select **New**. 
-1. Under **Electronic payment types**, in the **ID** field, select the **Google Pay** card type.
+1. Under **Electronic payment types**, in the **ID** field, select the **GooglePay** card type.
 1. Select **Save**.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1070 Channel configuration** job.
 
