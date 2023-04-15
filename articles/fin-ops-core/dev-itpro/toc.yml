@@ -1779,6 +1779,8 @@
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitoring replication
+            href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
             href: migration-upgrade/migrate-doc-attachments-ax-2012.md
           - name: Clean up source data for upgrade
