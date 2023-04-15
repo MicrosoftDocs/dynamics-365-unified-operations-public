@@ -88,7 +88,7 @@ Here is the fallback order for product master, product dimension(s), and product
       style D fill:#afd5e7
 ```
 >[!NOTE]
->The fallback diagrams above for both product master and channel+locale media assignments illustrate the _effective_ fallback logic, but not the _actual_ runtime behavior.  All the fallback logic is processed and flattened when the media assignments are published so that no unecessary fallback processing occurs at the time of request that could impact performance.  Assigning media at any level of this hierarchy will have _no_ impact on performance between one level to the next.
+>The fallback diagrams above for both product master and channel+locale media assignments illustrate the effective fallback logic, but _not_ the actual runtime behavior.  All the fallback logic is processed and flattened when the media assignments are published so that no unecessary fallback processing occurs at the time of request that could impact performance.  Assigning media at any level of this hierarchy will have _no_ impact on performance between one level to the next.
 
 ### Assign media to product master
 
