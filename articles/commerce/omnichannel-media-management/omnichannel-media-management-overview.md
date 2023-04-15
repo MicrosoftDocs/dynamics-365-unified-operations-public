@@ -74,7 +74,7 @@ Here is the fallback order for channel and locale media assignments:
 ```
 
 ### Product master, product dimension(s), and product variant media assignments
-Product masters typically have one or more product dimensions (color, size, style, configuration) which determine complete set of possible variants for the product.  Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments.  
+Product masters typically have one or more product dimensions (color, size, style, configuration) which determine complete set of possible variants for the product.  Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments.  When media assignments are created for product dimension(s) or specific product variants, the inheritance to the product master assignments is severed and all media assignments are controlled by the dimension(s) or specific product variant media assignments.
 
 Here is the fallback order for product master, product dimension(s), and product variant media assignments:
 ```mermaid
@@ -87,6 +87,8 @@ Here is the fallback order for product master, product dimension(s), and product
       style C fill:#cae3ef
       style D fill:#afd5e7
 ```
+>[!NOTE]
+>The fallback diagrams above show the fallback logic for various product media assignment scenarios, but not the actual runtime behavior.  All the fallback logic is processed and flattened at the time when the assignments are published to ensure that no unecessary fallback processing occurs at runtime that could impact performance.  Assigning media at any level of this hierarchy will have no impact on performance from one level to the next.
 
 ### Assign media to product master
 
