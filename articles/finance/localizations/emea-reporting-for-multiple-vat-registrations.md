@@ -136,7 +136,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.23 | Denmark | Intrastat (DK).version.25.4 |
     | 10.0.23 | Poland | Intrastat (PL).version.25.5 |
     | 10.0.25 | Belgium | Intrastat (BE).version.2.9 |
-    | 10.0.34 | The Czech Republic | Intrastat (CZ).version.25. |
+    | 10.0.34 | The Czech Republic | Intrastat (CZ).version.24.6 |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
