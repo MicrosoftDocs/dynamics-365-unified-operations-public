@@ -64,8 +64,8 @@ Follow these steps to set up external service definition.
             - *Raw* – The service expects an XML or JSON message.
             - *form-data* – The service expects data formatted as an HTTP form.
         - **Relative URL** – Enter the relative part of the URL for calling the service. Your external service provider must provide this value.
-    - Use the **Request query string** FastTab to ... <!--KFM: Description needed -->
-    - Use the **HTTP request headers** FastTab to ... <!--KFM: Description needed -->
+    - Use the **Request query string** FastTab to define query parameters to authenticate requests when you want to express a request entirely in a URL. <!--GFE: Added description-->
+    - Use the **HTTP request headers** FastTab to define the HTTP authorization header which is the most common method of providing authentication information. <!--GFE: Added description-->
     - The **Request body (form data)** FastTab is shown when **Request body type** is *Form-data*. Use it to provide the names of the form data fields and their values. Use the toolbar to add or remove rows in the grid as needed and make the following settings for each of them:
         - **Key** – Enter the name of the form data field.
         - **Value** – Enter the value of the form data field.
@@ -188,7 +188,8 @@ The external service request log contains information about each request that th
 
 Follow these steps to review the request log generated while printing labels to the external service:
 
-1. Go to **Warehouse Management \> Inquiries and reports \> External service request log**. <!--KFM: The original specified a different path (**Warehouse Management > Setup > External service instances > Request log**), but I think this is the right one. Please confirm. -->
+1. Go to **Warehouse Management \> Inquiries and reports \> External service request log**. You can also review the logs per specific instance in the  **Warehouse Management \> Setup \> External service instances \> Request log** page. <!--KFM: The original specified a different path (**Warehouse Management > Setup > External service instances > Request log**), but I think this is the right one. Please confirm. --> 
+<!--GFE: Added second as well. It is the same log, your path shows everything, path that I provided shows instance specific-->
 1. In the grid, select the request log you want to review.
 1. On the Action Pane, select **Request details**.
 1. Review the log.
