@@ -36,11 +36,18 @@ After the Invoice capture solution is installed, default configurations for usin
 
 ## System preference
 
-1. **AI Builder model** – The default model is set to **Invoice processing model**, which is a prebuilt model delivered by Microsoft which can handle the most common invoices with various language. To update the default model, select one in the drop-down list and the additional mapping will be required to map the model fields to invoice files. 
+1. **AI Builder model** – The default model is set to **Invoice processing model**. This is a prebuilt model that can handle the most common invoices with various languages. To update the default model, select one in the drop-down list and additional mapping will be required to map the model fields to the invoice files. 
 2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
 3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
 4. **Configuration group** – The configuration group that will be used if a configuration group isn't set at the legal entity or vendor level during invoice processing.
 5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
+
+### Manage file filters (optional)
+
+Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files** list, but they will show file validation errors. This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. Users can review the incoming files and decide whether each file is a non-valid invoice, and they can obsolete the file or manually include it for recognition and inclusion in captured invoices.
+
+When the Invoice capture solution is installed, a default file filter is defined. This file filter is global. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
+
 
 ### Definition of master data
 
