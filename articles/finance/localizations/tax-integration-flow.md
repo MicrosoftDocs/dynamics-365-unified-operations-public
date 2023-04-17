@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-**Tax integration** is a framework designed to replace the legacy tax calculation engine by calling [Tax Calculation Service](./global-tax-calcuation-service-overview).
+**Tax integration** is a framework designed to replace the legacy tax calculation engine by calling [Tax Calculation Service](./global-tax-calcuation-service-overview.md).
 This article introduces the basic flow of **tax integration**.
 
 ![IntegrationFlow.png](./media/tax-integration-flow.png)
