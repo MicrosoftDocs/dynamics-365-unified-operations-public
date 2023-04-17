@@ -36,7 +36,7 @@ After the Invoice capture solution is installed, default configurations for usin
 
 ## System preference
 
-1. **AI Builder model** – The default model is set to **Invoice processing model**. To update the default model, select one in the drop-down list.
+1. **AI Builder model** – The default model is set to **Invoice processing model**, which is a prebuilt model delivered by Microsoft which can handle the most common invoices with various language. To update the default model, select one in the drop-down list and the additional mapping will be required to map the model fields to invoice files. 
 2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
 3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
 4. **Configuration group** – The configuration group that will be used if a configuration group isn't set at the legal entity or vendor level during invoice processing.
