@@ -49,7 +49,8 @@ Before you can use this feature, it must be enabled. Administrators can use the 
     > Transaction details are always included, and the processing is always done in a batch job.
 
 5. Select **OK**.
-6. Refresh the **Vendor aging data storage** page to see the batch name, batch runtime, and processing status. When the batch job is completed, the **Processing status** field is set to **Ended**, and the **Number of aging lines** field is set. If the batch job is recurring, the **Processing status** field is set to **Waiting**.
-7. Select **Filter** to review the filters that have been added for the batch job.
+6. Refresh the **Vendor aging data storage** page to see the batch name, batch runtime, and processing status. When the batch job is completed, the **Processing status** field is set to **Ended**, and the **Number of aging lines** field is set. If the batch job is recurring, the **Processing status** field is set to **Waiting**. Please record the Execution name.
+7. Go to **Data management framework** and select the entity "Vendor aging data storage"
+8. Export the records after adding **Filter** by setting the Field "Execution name" in derived table "Vendor aging data storage" with recorded Execution name.
 
 The **Vendor aging data storage** page doesn't include the results. However, the **Vendor aging data storage** data entity lets you export the output to any format that Data management supports.
