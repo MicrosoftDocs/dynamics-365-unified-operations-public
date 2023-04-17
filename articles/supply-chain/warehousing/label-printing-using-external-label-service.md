@@ -59,7 +59,7 @@ Follow these steps to set up external service definition.
         - **Description** – Enter a short description of the operation.
     - On the **General** FastTab, make the following settings:
         - **HTTP method** – Select the HTTP method to use (*GET*, *POST*, or *PUT*).
-        - **Operation timeout** – Select the operation timeout, in milliseconds (for example, *2000*). <!--KFM: In the NiceLabel topic, we have a discussion about this setting. Should we repeat that here? -->
+        - **Operation timeout** – Select the operation timeout, in milliseconds (for example, *500*).
         - **Request body type** – Select the type of the body that is expected by the service. Select one of the following values:
             - *Raw* – The service expects an XML or JSON message.
             - *form-data* – The service expects data formatted as an HTTP form.
@@ -78,11 +78,12 @@ Follow these steps to set up external service definition.
     - `$auth.secret$` – Will be replaced by the authentication secret configured on the external service instance. Use it to store a shared key, token, or password required to authenticate with the external service instance.
     - `$label.printer$` – Will be replaced by the name of the printer configured later in the process. Use it to signal to the external service where to print the label to.
     - `$label.body$` or `$label.body:base64$` – Will be replaced by the label generated from a label layout or document routing layout. Use the base64 formatting version (`$label.body:base64$`) if the externals service expects a base64 encoded ZPL script.
+1. If you require additional service operations (for example, one for ZPL-based layouts and one for variables-based layouts), then repeat the previous step to add them.
 1. On the Action Pane, select **Save**. Then select the **Close** button to return to the **External service definitions** page.
 1. Expand **Label print service** tab and make the following settings:
-    - **Printer operation** – Select the external service operation that will be used to print the label. This must be an operation that has already been defined for the current service definition, as described previously in this procedure (where we suggested a name of *External*).
-    - **Variables print operation** – <!--KFM: Description needed -->
-    - **Variable label layout template** – <!--KFM: Description needed -->
+    - **Print operation** – If you created an operation for printing ZPL-based layouts, then select the name of that operation here. This must be an operation that has already been defined for the current service definition, as described previously in this procedure.
+    - **Variables print operation** – If you created an operation for printing variables-based layouts, then select the name of that operation here. This must be an operation that has already been defined for the current service definition, as described previously in this procedure.
+    - **Variable label layout template** – If you are using a variables-based layout, then enter the content for your variables-based layout template here.
 1. On the Action Pane, select **Save**.
 
 ## <a name="service-instance"></a>External service instance configuration
@@ -98,16 +99,18 @@ Each external service instance defines a specific instance of an external servic
 1. Expand **General** tab and make the following settings:
     - **Base URL** – Enter the hostname of the external service.
     - **Authentication secret** – Enter the authentication secret (password or shared key) that will be used to authenticate with the service.
-    - **Logging level** – Specify the level at which to generate log entires. Choose one of the following values: <!--KFM: Maybe mention where we can read these log entries? -->
+    - **Logging level** – Specify the level at which to generate log entires. Choose one of the following values:
         - *Errors only* – Only log errors.
-        - *Successes and errors* – Log both successes and errors (recommended <!--KFM: Right? -->).
+        - *Successes and errors* – Log both successes and errors (recommended).
         - *None* – Don't create any log entries.
-    - **Log request bodies** –<!--KFM: Briefly describe what this means. -->Choose one of the following values: <!--KFM: Maybe mention where we can read these log entries? -->
-        - *Errors only* – <!--KFM: Description needed -->
-        - *Successes and errors* – <!--KFM: Description needed. Recommended? -->
-        - *None* – <!--KFM: Description needed -->
+    - **Log request bodies** – Choose how much extra detail you'd like to include in your log entries. Choose one of the following values:
+        - *Errors only* – Include details about errors.
+        - *Successes and errors* – Include details about both successes and errors (recommended).
+        - *None* – Don't include any details (show only log headers).
     - **Service offline** – <!--KFM: Description needed -->
 1. On the Action Pane, select **Save**.
+
+For information about how to read the log entries, see [Review the external service request log](#review-log).
 
 ## <a name="label-printers"></a>Printer setup
 
@@ -120,11 +123,13 @@ Use the following procedure to link a printer with the external print service.
         - *External label service* – To connect to a cloud printer through an external service, including printers that are only accessible through the external label service.
         - *Document routing agent/Hybrid* – To connect to a DRA printer or to use DRA as a fallback for the external service when the service isn't able to print the label.
     - **Printer name** – Enter or select the printer name. This value represents an internal Supply Chain Management printer name. If this printer is already configured as a DRA printer, you can select its name from the lookup dialog. To set up an external service, you must specify the printer name (the name must not already be used for a DRA printer). When entering a name for an external-service printer, we recommend that you use a prefix or another method to keep the names of external-service printers separate from printers that you might register through the DRA in the future.
-    - **Batch print** – <!--KFM: Description needed -->
-    - **Maximum file size** – <!--KFM: Description needed -->
+    - **Batch print** – Select this check box to allow the system to send multiple labels as a single batch job to the selected printer. Clear this box to always send labels one at a time. Batch jobs will print all at once, without being interrupted by other print jobs.
+    - **Maximum file size** – If you enabled batch printing for the printer, then enter the maximum size (in megabytes) permitted for batch files sent to it. The value must be larger than zero. Batches that exceed this value will be split into smaller batches before sending. A large file size will allow you to include more labels with each batch. However, large batches may take a long time to print (thereby delaying other jobs) or may fail if they exceed the memory capacity of your printer. Check your printer's specifications to find the maximum supported value.
     - **Label print service instance** – Select the service instance to use. The example service instance value that was suggested earlier in this article was *External*.
     - **Label print service printer name** – Enter printer name as it is defined in the external service. This value represents an external printer name used within the external service.
     - **Label print service execution policy** – <!--KFM: Description needed -->
+        - *Only use the label print service* – <!--KFM: Description needed -->
+        - *Fallback to the Document Routing Agent* – <!--KFM: Description needed -->
 
 ## <a name="label-layout"></a>Label layout configuration
 
@@ -169,8 +174,6 @@ The label layout (for example, for a license plate label) could look like this:
 }
 ```
 
-<!-- KFM: I assumed both code sames were JSON. True? -->
-
 ## <a name="document-routing"></a>Document routing configuration
 
 For instructions on how to set up document routing, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
@@ -178,6 +181,17 @@ For instructions on how to set up document routing, see [License plate label lay
 ## Run a scenario to print custom labels
 
 If you want to experiment with printing labels, you can set up a scenario for printing location labels. For more information, see [Custom label layouts printing](custom-label-layouts-and-printing.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
+
+## <a name="review-log"></a>Review the external service request log
+
+The external service request log contains information about each request that the system sends to an external service and can help you troubleshoot issues. The amount of detail recorded in the log depends on the **Log level** and **Log request bodies** settings specified for each external service instance (see also [External service instance configuration](#service-instance)). For each request, the system will always verify whether the external service has returned the HTTP success code (200) and will report an error if the response HTTP code was anything different (for example 4xx or 5xx errors). <!--KFM: Is this really true always? What if we set one or both of the logging options to *None*? -->
+
+Follow these steps to review the request log generated while printing labels to the external service:
+
+1. Go to **Warehouse Management \> Inquiries and reports \> External service request log**. <!--KFM: The original specified a different path (**Warehouse Management > Setup > External service instances > Request log**), but I think this is the right one. Please confirm. -->
+1. In the grid, select the request log you want to review.
+1. On the Action Pane, select **Request details**.
+1. Review the log.
 
 ## Additional resources
 
