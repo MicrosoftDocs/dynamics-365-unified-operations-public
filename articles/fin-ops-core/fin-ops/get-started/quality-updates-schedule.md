@@ -84,6 +84,19 @@ The following table shows the high-level train schedule. It includes a descripti
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | NA | NA |
+| Station 2 | May 1 to May 4, 2023 | May 13 to May 14, 2023 |
+| Station 3 | May 2 to May 5, 2023 | May 13 to May 14, 2023 |
+| Station 4 | May 8 to May 11, 2023 | May 20 to May 21, 2023 |
+| Station 5 | May 15 to May 18, 2023 | May 27 to May 28, 2023 |
+| Station 6 | May 16 to May 19, 2023 | May 27 to May 28, 2023  |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-3 train schedule
+
+**App version: 10.0.1406.165**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | NA | NA |
 | Station 2 | March 20 to March 23, 2023 | April 1 to April 2, 2023 |
 | Station 3 | March 21 to March 24, 2023 | April 1 to April 2, 2023 |
 | Station 4 | March 27 to April 2, 2023 | April 8 to April 9, 2023 |
