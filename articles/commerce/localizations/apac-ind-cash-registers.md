@@ -31,6 +31,7 @@ You also need to enable the India-specific functionality on the Commerce channel
 - If you are using the Commerce version 10.0.34 or later, you must enable the following features in the **Feature management** workspace:
     - **(India) Enable Tax engine for Commerce for India** - enable this feature to use the [Tax engine](../../finance/general-ledger/tax-engine.md) to calculate India GST for in-store and e-commerce transactions.
     - **(India) Enable customer tax registration information in Retail POS** - enable this feature to be able to populate India-specific tax registration information, such as GSTIN, VAT number (TIN), or PAN number, in the customer master record in Commerce POS.
+- If you are using the Commerce version 10.0.33 or earlier and are migrating to the Commerce version 10.0.34 or later, you must follow the steps in [Migrate to Commerce version 10.0.34 or later](./apac-ind-loc-deployment-guidelines.md#migrate-to-commerce-version-10034-or-later).
 
 ## India tax entities for Commerce
 
