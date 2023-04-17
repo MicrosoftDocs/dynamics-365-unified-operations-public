@@ -47,6 +47,9 @@ article was initially published.
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
+|General ledger | Enable the **Global general journal** page to select multiple companies for posting.|Enable this feature to select journals across multiple companies for posting in batch from the **Global general journal** page.|Feature management|
+
+
 
 ## Feature enhancements included in this release
 
@@ -59,5 +62,5 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 |Cash and bank management|Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions|When this feature is enabled, in advanced bank reconciliation, filtering will be available for user to select bank statement lines and bank transactions. Meanwhile, a new grid will be available to display bank statement lines marked as new, which are mixed up with matched transactions before.|
 |Cash and bank management|Enable batch mode for "Mark as reconciled" in advance bank reconciliation|In advanced bank reconciliation, once all matchings are done, user clicks "Mark as reconciled" to complete the reconciliation. If data volume is large, it will take long time for system to complete the reconciliation online, which sometimes results in session timeout. If this feature is switched on, batch processing option will be available for "Mark as reconciled".|
 |Cash and bank management|Display vouchers in bank statement|When this feature is enabled, in bank statement, user can directly check vouchers from posted new transactions.|
-
+|General ledger |	Financial tags|	When the Financial tags feature is enabled, financial tags appear on more journals and documents. For this release, tags have been added to the following journals:  Periodic journal, Fixed asset journal, Allocation journal, Reporting currency adjustment journal, Vendor invoice journal, Invoice register, and the Vendor approval journal.|
 
