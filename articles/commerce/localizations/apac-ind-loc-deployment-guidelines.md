@@ -21,7 +21,7 @@ ms.search.industry: Retail
 This article is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Dynamics 365 Commerce app's localization for India. For more information about the localization for India, see [Goods and Services Tax (GST) integration for cash registers for India](./apac-ind-cash-registers.md).
 
 > [!WARNING]
-> The steps described in this article are applicable only to the legacy implementation of the GST integration for India that is based on the [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Starting from the Commerce version 10.0.34, the GST integration for India supports the [new independent packaging and extension model](../dev-itpro/build-pipeline.md) and can be used with the Commerce SDK and the Store Commerce app. The functionality can be enabled in the **Feature management** workspace in Commerce headquarters. For more details, see the [prerequisites for the GST integration for cash registers for India](./apac-ind-cash-registers.md#prerequisites).
+> The steps described in this article are applicable only to the legacy implementation of the GST integration for India that is based on the [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Starting from the Commerce version 10.0.34, the GST integration for India supports the [new independent packaging and extension model](../dev-itpro/build-pipeline.md) and can be used with the Commerce SDK and the Store Commerce app. The functionality can be enabled in the **Feature management** workspace in Commerce headquarters. For more details, see the [prerequisites for the GST integration for cash registers for India](./apac-ind-cash-registers.md#prerequisites). If you are using the Commerce version 10.0.33 or earlier and are migrating to the Commerce version 10.0.34 or later, you must follow the steps in [Migrate to Commerce version 10.0.34 or later](#migrate-to-commerce-version-10034-or-later).
 
 This functionality consists of extensions for the Commerce runtime (CRT) and point of sale (POS). To use this functionality, you must modify the configuration of the CRT extensions. You must also modify and build the POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system such as Microsoft Visual Studio Online (VSO) where no files have been changed yet. For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -143,5 +143,15 @@ Follow these steps to create deployable packages that contain components, and to
 
 5. Run **msbuild** for the whole Retail SDK to create deployable packages.
 6. Apply the packages via LCS or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+## Migrate to Commerce version 10.0.34 or later
+
+The steps described in this section are required if you are using the Commerce version 10.0.33 or earlier and are migrating to version 10.0.34 or later. You must follow the steps below to correctly update your Commerce environment.
+
+1. Update Commerce headquarters.
+1. Enable [India-specific features](./apac-ind-cash-registers.md#prerequisites) in the **Feature management** workspace and distribute the changes to channels.
+1. Update Commerce runtime and exclude the following legacy India-specific extensions:
+    - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia
+    - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
