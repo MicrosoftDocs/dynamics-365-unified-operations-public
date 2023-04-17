@@ -36,27 +36,27 @@ Users can manage the list of invoice fields and the manual review setting for le
 
 ## What is a configuration group?
 
-Invoices received from various suppliers often come in different styles and resolutions, which may require various confidence score thresholds to determine whether further review is needed to ensure accurate recognition. 
+Invoices received from various suppliers are in different styles and resolutions. These invoices may require different confidence score thresholds to determine if further review is needed to recognize the invoices.  
 
-Typically, invoices from a single supplier are in a consistent format with a specific type of invoice, such as a purchase order invoice or a cost invoice. However, there may be cases where a single supplier sends invoices of different types. In such cases, it is necessary to define separate display fields for each invoice type. The application applies different derivation and mapping logic specific to each type of invoice to ensure accuracy and completeness of the invoice data.
+Typically, invoices from a single supplier are in a consistent format with a specific type of invoice, such as a purchase order invoice or a cost invoice. There may be cases where a single supplier sends invoices of different types, it might be necessary to define separate display fields for each invoice type. The application applies different derivation and mapping logic specific to each type of invoice to ensure accuracy and completeness of the invoice data.
 
-Configuration group is working on incorporating all the necessary settings to effectively determine how to process the invoice in the Invoice capture staging, taking into consideration the review condition, different types of invoices etc.
+The configuration group incorporates all the necessary settings to process the invoice in **Invoice capture staging**. 
 
 ## Default configuration group
 
 After deployment, a default configuration group (**Default configuration**) is created. This configuration group can't be changed or deleted.
 
-Accounts payable administrators can assign different configuration groups to the vendor, legal entity, and system. After a vendor account and legal entity are determined, system will check whether an existing configuration group is assigned to the vendor. If no configuration group is found, system will check on the legal entity level. If no configuration group assigned to the vendor or the legal entity, the system-level configuration group that's specified in **System preferences** is used.
+Accounts payable administrators can assign different configuration groups to the vendor, legal entity, and system. After a vendor account and legal entity are determined, the system will check whether an existing configuration group is assigned to the vendor. If no configuration group is found, the system will check on the legal entity level. If no configuration group assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** is used.
 
 ## Manage configuration groups
 
 To manage configuration groups, go to **Setup**, and select **System setup \> Define configuration groups component**.
 
-To create a new configuration group, select a configuration group and click **Copy**. You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all fields except **Group name** and **Group description**. After the configuration group is duplicated, it will be shown in the configuration group list view. 
+To create a new configuration group, select a configuration group and click **Copy**. You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all fields except **Group name** and **Group description**. After the configuration group is duplicated, it will display in the **Configuration group** list view. 
 
 ### Define the confidence score of invoice recognition
 
-Users can define the quality standard that's required for AI Builder to recognize invoice data. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. You can configure the threshold of confidence scores to indicate different severities of the messages.
+Users can define the quality standard that's required for AI Builder to recognize invoice data. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. You can configure the threshold of confidence scores to indicate different severity of message.
 
 ### Define whether manual review is required before invoice creation
 
