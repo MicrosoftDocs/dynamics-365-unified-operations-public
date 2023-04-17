@@ -161,5 +161,14 @@ For example, product X is assigned to the *Design cabinets* product owner group.
 
 For more information, see [Product owners](product-owner.md).
 
+## Release multiple BOMs/formulas
+
+
+When selecting a product for being released, only the first active BOM/formula (as of the date of release) will be released. If there are no active BOMs or formulas, the engineering version will not be released. 
+
+From 10.0.34 it is possible to release multiple BOMs or formulas. You must enable the feature on feature management **Release multiple BOMs/formulas for Engineering Change Management**.
+
+When selecting a product for being released, all Active BOMs or formulas will be selected for release. This will be applicable for example, if there are different formulas active and applicable for different from quantities. You will be able to view the different BOMs/formulas and its respective routes on the BOM designer when releasing on the Release product structure page and reviewing the release on Open product releases page. 
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
