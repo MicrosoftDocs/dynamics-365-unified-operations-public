@@ -41,7 +41,7 @@ The Warehouse Management mobile app is available for both Windows and Google And
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
-- iOS 9.0 or later
+- iOS 8.0 or later
 
 ## Turn Warehouse Management mobile app features on or off in Supply Chain Management
 
