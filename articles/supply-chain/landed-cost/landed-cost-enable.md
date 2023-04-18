@@ -31,6 +31,7 @@ The *Landed cost* feature requires Microsoft Dynamics 365 Supply Chain Managemen
 ## Turn the shipping container batch mode feature on or off
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 If you want to be able to use batch mode when you create and update shipping containers for Landed cost, you can also turn on this optional feature for your system. By creating and updating shipping containers in background mode, you can help improve system performance when you work with shipping containers that have a large number of shipping lines.
 
