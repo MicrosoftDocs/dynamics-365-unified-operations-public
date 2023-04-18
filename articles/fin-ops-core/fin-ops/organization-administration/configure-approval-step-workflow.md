@@ -165,7 +165,7 @@ Follow these steps to specify who the approval step should be assigned to.
 
 4. If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:
 
-    - **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that she takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval.
+    - **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that Sue takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval.
 
         ![Workflow that has an approval process.](./media/workflow_multipleusersinstep.gif)
 

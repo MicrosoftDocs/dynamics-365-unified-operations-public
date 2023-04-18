@@ -1,5 +1,5 @@
 ---
-title: Create a retail functionality profile
+title: Create a commerce functionality profile
 description: This article describes how to create a functionality profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020

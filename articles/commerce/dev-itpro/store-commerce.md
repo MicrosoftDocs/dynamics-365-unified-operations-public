@@ -182,7 +182,7 @@ You can also use the **help** command in PowerShell to find information about al
 | skipurlcheck | Skips the validation of URLs that are passed to the installer. |
 | logdirectorypath | Specifies the path of the log's directory. |
 | config | Specifies the path of the configuration file that will be used as part of the installation. |
-| verbosity | Deploys the offline database. |
+| verbosity | The level of logging that is requested during installation. This value shouldn't typically be used. |
 | help | Shows parameter information.|
 | version | Shows information about the app version. |
 

@@ -53,8 +53,11 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - France
+- Germany
 - India
 - Japan
+- Korea
+- Norway
 - South Africa
 - Switzerland
 - United Arab Emirates
@@ -69,6 +72,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version               |
 | --------------- | --------------------------------------- |
+| 10.0.32         | Tax Calculation Configuration 40.60.244 |
 | 10.0.31         | Tax Calculation Configuration 40.56.240 |
 | 10.0.30         | Tax Calculation Configuration 40.55.239 |
 | 10.0.29         | Tax Calculation Configuration 40.55.236 |

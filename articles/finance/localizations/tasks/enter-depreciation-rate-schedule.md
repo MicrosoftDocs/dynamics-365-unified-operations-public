@@ -3,7 +3,7 @@ title: Enter depreciation rate schedule and associate to depreciation profile
 description: In Japan, the fixed asset depreciation rate is released by a government agency.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

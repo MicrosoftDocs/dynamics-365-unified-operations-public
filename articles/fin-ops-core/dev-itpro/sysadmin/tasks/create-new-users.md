@@ -5,7 +5,7 @@ title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: peakerbl
 ms.date: 01/12/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -272,7 +272,7 @@
     },
     {
       "source_path": "articles/commerce/dev-itpro/dev-retail-home-page.md",
-      "redirect_url": "/dynamics365/commerce/retail-sdk/retail-sdk-overview",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview",
       "redirect_document_id": "false"
     },
     {
@@ -19830,6 +19830,41 @@
     {
       "source_path": "articles/supply-chain/warehousing/application-insights-wma.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/move-environments-data-center.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit.md",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmlfromrepogenerator.md",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-converthtmltojson.md",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmllocalechanger.md",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/migrate-dynamicsax2012.md",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/walkthrough-help-azure.md",
+      "redirect_url": "https://cloudblogs.microsoft.com/dynamics365/it/2023/03/28/custom-help-toolkits-for-dynamics-365-to-be-retired-in-april-2023/",
       "redirect_document_id": "false"
     }
   ]

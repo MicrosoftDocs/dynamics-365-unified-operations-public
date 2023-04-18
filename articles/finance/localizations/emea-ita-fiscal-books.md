@@ -1,7 +1,7 @@
 ---
 title: Italian sales tax books
 description: The article describes how to set up and use Italian sales tax books and Italian sales tax book sections.
-author: mrolecki
+author: liza-golub
 ms.date: 06/24/2021
 ms.topic: article
 ms.prod: 
@@ -71,6 +71,10 @@ For example, on the <strong>Accounts receivable parameters</strong> page, on the
 
 In the Italian localization, corrections to the Italian sales tax payment report for an already settled sales tax period are not supported. So on the <strong>General ledger parameters</strong> page, on the <strong>Sales tax</strong> tab, set the Special report **Include corrections** option to **NO**.
 </td>
+</tr>
+<tr class="odd">
+<td><strong>Setup:</strong> Sales tax settlement period</td>
+<td>For a <strong>Sales tax settlement period</strong> that's set up and used for sales tax accounting, specify the parameters, <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> to determine whether zero and reverse transactions must be included into sales tax books by default. Values from these parameters are used as default values during the sales tax settlement process. For each period interval of the sales tax settlement, these parameters can be changed specifically during the sales tax settlement process. If the sales tax settlement process is run in batch, Finance applies the default parameter values of <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> parameters from the <strong>Sales tax settlement period</strong> setup. You can see the values of the <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> parameters that were used for each closed period interval of sales tax settlement period on the <strong>Sales tax payment</strong> page. You can't change the values of the parameters <strong>Include zero lines</strong> and <strong>Include reverse transactions</strong> for the closed period interval of the sales tax settlement period. Including zero and reverse transactions to the sales tax books may impact the page numbering in the report.</td>
 </tr>
 </tbody>
 </table>

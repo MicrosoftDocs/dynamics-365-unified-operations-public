@@ -4,7 +4,7 @@
 title: Shipping information setup
 description: This article describes how to set up shipping information for the Landed cost module.
 author: Weijiesa
-ms.date: 12/04/2020
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ To work with descriptions of goods, go to **Landed cost \> Shipping information 
 
 ## <a name="vessels"></a>Vessels
 
-A vessel is the unique name of a ship or vessel that a shipping company or agency uses. When you create a voyage, you must always either select or enter a vessel for it. If you often use the same vessels, then you can make it faster and easier to create a new voyage by creating a vessel record for each of them, thereby allowing users to select the vessel from a list rather then enter the name or number manually each time.
+A vessel is the unique name of a ship or vessel that a shipping company or agency uses. When you create a voyage, you must always either select or enter a vessel for it. If you often use the same vessels, then you can make it faster and easier to create a new voyage by creating a vessel record for each of them, thereby allowing users to select the vessel from a list rather than enter the name or number manually each time.
 
 To work with vessels, go to **Landed cost \> Shipping information setup \> Vessels**. There, you can view, open, create, and delete records for vessels. The following table describes the fields that are available for each record.
 
@@ -67,7 +67,7 @@ To work with exporters, go to **Landed cost \> Shipping information setup \> Exp
 
 ## Commodity codes
 
-You use commodity codes to help with customs identification and the calculation of duty rates for goods on a voyage. You can select commodity codes on the **Released products** page.
+You use commodity codes to help with customs identification and the calculation of duty rates for goods. You can select commodity codes on the **Released products** page. The commodity codes can be used for reporting.
 
 To work with commodity codes, go to **Landed cost \> Shipping information setup \> Commodity codes**. There, you can view, open, create, and delete records for commodity codes. The following table describes the fields that are available for each record.
 

@@ -62,7 +62,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 ## Create a replenishment work template
 
-1. Go to **Warehouse management > Setup > Work > Work templates**. The work template is use to guide the system as to how the min/max replenishment work must be created. As a minimum, there must be a work template line for a pick and a put. The work template will say that it's Invalid until all the necessary information has been filled in. 
+1. Go to **Warehouse management > Setup > Work > Work templates**. The work template is used to guide the system as to how the min/max replenishment work must be created. As a minimum, there must be a work template line for a pick and a put. The work template will say that it's Invalid until all the necessary information has been filled in. 
 2. In the **Work order type** field, select *Replenishment*.
 3. On the **Action Pane**, select **New**.
 4. In the **Work template** field, type a value.
@@ -120,7 +120,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 7. Set the **Batch processing** option to *Yes*.
 8. Select **Recurrence**.
 9. Select the **No end date** option.
-10. Set the **Recurrance pattern**. For example, select Days.  
+10. Set the **Recurrence pattern**. For example, select Days.  
 11. Select **OK**.
 12. Select **OK**.
 

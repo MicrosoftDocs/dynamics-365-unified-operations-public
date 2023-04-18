@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.33 (April 2023)
+          href: get-started/whats-new-commerce-10-0-33.md
         - name: Commerce 10.0.32 (March 2023)
           href: get-started/whats-new-commerce-10-0-32.md
         - name: Commerce 10.0.31 (February 2023)
@@ -63,7 +65,13 @@
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
         - name: Proactive quality updates
-          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/commerce
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -210,8 +218,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
         - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
           href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/commerce    
-        - name: Move environments between data centers
-          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/commerce      
+        - name: Geo-to-geo migrations
+          href: ../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md?context=/dynamics365/context/commerce      
         - name: Move licenses between agreement types
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce 
         - name: Move LCS implementation projects to different Azure AD tenants
@@ -372,7 +380,7 @@
           items:
           - name: Info codes and info code groups   
             href: info-codes-retail.md      
-          - name: Create a retail functionality profile    
+          - name: Create a commerce functionality profile    
             href: retail-functionality-profile.md   
           - name: Create a new address book     
             href: new-address-book.md
@@ -572,6 +580,8 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+          - name: Manage payment authorizations
+            href: dev-itpro/manage-payment-authorizations.md
           - name: Limit payment token usage
             href: dev-itpro/limit-token-usage.md
           - name: Configure cash denominations for the POS
@@ -1421,7 +1431,17 @@
         - name: Extensibility impact of Commerce catalogs for B2B customizations
           href: catalogs-b2b-sites-dev.md
         - name: Commerce catalogs for B2B FAQ
-          href: catalogs-b2b-sites-FAQ.md         
+          href: catalogs-b2b-sites-FAQ.md
+      - name: On behalf of (OBO) functionality for B2B sites
+        items:
+        - name: Enable on behalf of (OBO) functionality
+          href: on-behalf-of.md
+        - name: Create and configure an Azure AD application for account manager sign-in
+          href: obo-create-aad-application.md
+        - name: Create and modify B2B pages for on behalf of functionality (OBO)
+          href: obo-add-pages-site-builder.md
+        - name: Set up and configure on behalf of functionality (OBO)
+          href: obo-configure-hq.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -2572,7 +2592,7 @@
           items:
           - name: Download Commerce SDK samples and reference packages
             href: dev-itpro/retail-sdk/sdk-github.md
-          - name: Legacy Retail SDK migration
+          - name: Migrate to the Commerce SDK
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
           - name: Obsolete and removed APIs, classes, and methods
             href: dev-itpro/obsolete-apis-classes-methods.md
@@ -3084,6 +3104,8 @@
           href: troubleshoot/z-report-issues.md
         - name: Statement posting errors due to unavailable inventory or update conflicts
           href: troubleshoot/inventory-errors-posting.md
+        - name: Fix common posting issues by editing transactions
+          href: troubleshoot/fix-common-posting-issues.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
