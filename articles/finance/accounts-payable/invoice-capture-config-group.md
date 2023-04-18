@@ -85,12 +85,6 @@ The Accounts payable administrator can create a configuration group, select the 
 
 For each invoice type, different fields can be selected to appear in the side-by-side view, default fields can be added or removed, and fields can be set as mandatory.
 
-### Manage file filters (optional)
-
-Users can define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files (Pending)** list. The fields are shown as **Cancelled** and won't be processed by the recognitive service unless the user manually includes them. This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria aren't received at all.
-
-When the Invoice capture solution is installed, a default file filter is defined. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**.
-
 ### Accepted file size
 
 You can specify the accepted file size.
