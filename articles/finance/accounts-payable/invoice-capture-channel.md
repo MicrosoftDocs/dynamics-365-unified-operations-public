@@ -112,13 +112,13 @@ Various errors can appear:
 
     **Solution:** To help administrators access the flow editing UI, the message bar that shows the error message includes a **Fix it** button. If the message has already been closed, select **Edit** in the **Manage flow** pane to open the flow editing UI.
 
-### Use managed flow option
+### Use unmanaged flow
 
-The **Use managed flow** option on the **Channel** page should be used only by professional users. The document receive API should be manually integrated. The channel ID must be filled in in the API payload. The channel ID can be found in the URL after it's saved.
+The **Use unmanaged flow** option on the **Channel** page should be used only by professional users. The document receive API should be manually integrated. The channel ID must be filled in in the API payload. The channel ID can be found in the URL after it's saved.
 
 If the document receive API is called without a valid channel ID, the system treats the call as invalid. Therefore, the invoice file can't be captured and won't appear on the **Received files** page.
 
-### Document receive API
+#### Document receive API
 
 Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. 
 
