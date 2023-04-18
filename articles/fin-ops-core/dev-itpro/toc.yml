@@ -1178,8 +1178,12 @@
               href: data-entities/dual-write/scm-field-service-procurement.md
             - name: Sync on-demand with the Supply Chain Management pricing engine
               href: data-entities/dual-write/pricing-engine.md
-            - name: Prospect to cash in dual-write
+            - name: Quote to cash in dual-write
               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+            - name: Enable extra efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/enable-efficiency-in-quote-to-cash.md
+            - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash.md
             - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
               href: data-entities/dual-write/commerce-pricing.md
             - name: In-house assets for servicing
