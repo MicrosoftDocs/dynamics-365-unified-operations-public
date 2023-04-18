@@ -32,7 +32,7 @@ The sales tax settlement procedure uses the country/region code of the registrat
 
 ## Prerequisites
 
-Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
+Before you begin, the Tax Calculation service must be configured. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 ## Enable the feature
 
