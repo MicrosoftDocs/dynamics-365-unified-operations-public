@@ -25,7 +25,7 @@ For information about customer and contact integration, see [Integrated customer
 
 > [!NOTE]
 > In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizes to the finance and operations app only when it is a customer (`RelationshipType=Customer`) and vice versa. Synchronizing  the **Account** row as a prospect and supporting the prospect in an integrated quotation process, will require  a custom map to integrate the prospect data and customizations to business logic.
->  
+
 ## Prerequisites and mapping setup
 
 Before you can sync sales quotations, you must update the following settings.
