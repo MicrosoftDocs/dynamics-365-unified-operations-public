@@ -18,10 +18,9 @@ ms.custom: bap-template
 
 This article describes how safety stock functionality differs when you use the deprecated master planning engine compared to when you use Planning Optimization. For more information about safety stock (including information that applies to both planing engines) see [Safety stock fulfillment for items](safety-stock-replenishment.md).
 
-## Differences in safety stock
+## Differences in safety stock functionality
 
 The following table summarizes the differences in safety stock functionality between the deprecated master planning engine and Planning Optimization.
-
 
 | &nbsp; | Planning optimization | Deprecated master planning engine |
 |---|---|---|
