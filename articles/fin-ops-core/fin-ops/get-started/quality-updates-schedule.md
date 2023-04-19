@@ -52,7 +52,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.30 PQU-3 | January 13th 2023 | January 30 to February 26 2023 | Completed |
 | 10.0.30 PQU-4 | February 24, 2023 | March 6 to April 9, 2023 | Completed |
 | 10.0.31 PQU-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Completed |
-| 10.0.31 PQU-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| In-Progress |
+| 10.0.31 PQU-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Completed |
 | 10.0.31 PQU-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
 | 10.0.32 PQU-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| In-Progress |
 | 10.0.32 PQU-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
