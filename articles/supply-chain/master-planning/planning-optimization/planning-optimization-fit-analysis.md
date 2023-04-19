@@ -79,7 +79,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is now supported. | Supported |
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
-| Production | Sales line reservation using explosion: *\#* | This scenario is not yet supported. When using CTP for Planning Optimization, sales line reservations aren't automatically made during explosion.  | Future wave |
+| Production | Sales line reservation using explosion: *\#* | This scenario is not yet supported. Sales line reservations aren't automatically made during explosion.  | Future wave |
 | Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32, with a private preview available for version 10.0.31 (contact Microsoft Support to request access to the private preview feature on version 10.0.31). A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported from 10.0.32 |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. For additional information, see [Purchase requisitions](purchase-requisitions.md) | Supported |
