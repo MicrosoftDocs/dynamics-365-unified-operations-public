@@ -1971,6 +1971,8 @@
             href: master-planning/tasks/monitor-master-planning-run.md
           - name: Net requirements and pegging information with the deprecated planning engine
             href: master-planning/net-requirements-built-in-master-planning.md
+          - name: Safety stock fulfillment with the deprecated master planning engine
+            href: master-planning/safety-stock-replenishment-in-deprecated-engine.md
           - name: Create a material plan for co-products
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine

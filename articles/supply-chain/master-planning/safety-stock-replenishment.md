@@ -2,37 +2,73 @@
 title: Safety stock fulfillment for items
 description: This article discusses safety stock fulfillment and how to set up safety stock quantity for items. 
 author: t-benebo
-ms.date: 8/23/2021
-ms.topic: article
-ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.dyn365.ops.version: 7.3 
-ms.search.validFrom: 2017-12-31
+ms.reviewer: kamaybac
+ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
+ms.topic: how-to
+ms.date: 04/19/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Safety stock fulfillment for items
 
-<!-- KFM: This info may need to be reviewed and combined with the new topic [Safety stock](safety-stock.md). -->
-
 [!include [banner](../includes/banner.md)]
 
-Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock. Safety stock is used as a buffer stock in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date. When safety stock is used to fulfill a sales order, the safety stock will be reduced. You can use Master planning to automatically bring the inventory back to the safety level.
+Safety stock is an item quantity held in the inventory for the purpose of reducing the risk that the item will run out of stock. Safety stock is used when demand coming from sales orders is greater than planned for final goods and/or when a supplier is unable to deliver additional units in the expected time.
 
-## Set up safety stock levels for items
+The system will always try to prevent the accumulated quantity of an item from falling below its safety stock limit. Whenever the master planning engine detects that the accumulated on-hand inventory for an item will fall below its minimum, it will create a planned order to replenish the item and schedule it to arrive before the minimum threshold his crossed. This means that safety stock is fulfilled on *\[Today's date\] &plus; \[Procurement time\]*.
 
-Safety stock is set up as part of item coverage on the **Item coverage** page under **Released products \> Plan \> Coverage**.
-
-In the **Minimum** field, enter the safety stock level that you want to maintain for the item. The value is expressed in inventory units. If you leave the field blank, the default value is zero. This field is available when you select **Period**, **Requirement**, or **Min/Max** in the **Coverage code** list. The stock level limit applies to the available inventory, which means that reservations and markings may trigger safety stock replenishment before the physical quantity goes below the specified minimum level.
+During planning, if there is actual demand, the system will peg that demand against a planned order that was generated for safety stock if it means that the demand could therefore be fulfilled on time. Because system will always try to keep the accumulated on-hand inventory level above the safety stock level, it will create a new planned order to cover the safety stock that was claimed for the actual demand.
 
 > [!NOTE]
-> You must define all other planned coverage dimensions before you can define the **Minimum** field. This prevents an invalid record from being used during master planning. This situation can occur if, for example, a dimension group is extended with an additional planned coverage dimension for which the minimum and maximum inventory quantities are not yet defined.
+> Safety stock is not a demand as such, so any other demand will be prioritized over the safety stock. This means that the system can create a planned order to fulfill safety stock, but if actual demand arrives later, then that demand can claim the safety stock quantity (the new demand will be pegged against the original planned order).
 
-You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item in the off-season, and then gradually increase the level during the other months. You create a minimum key by going to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**. You specify the minimum key to adjust the safety stock level by seasonality in the **Minimum key** field on the **Item coverage** page.
+## Set the safety stock level for an item
+
+To define safety stock for an item at a specific location, follow these steps:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Select the relevant product in the grid.
+1. On the Action Pane, open the **Plan** tab and select **Item coverage**.
+1. While on the **Overview** tab, select **New** from the Action Pane to add a new line to the grid.
+1. For the new line, specify the relevant product dimensions (**Site**, **Warehouse**, and other dimensions as needed (such as color or style)).
+1. Enter the safety stock value in the **Minimum** column. The master planning engine will always generate planned orders to prevent the accumulated inventory level from falling below this limit. The value is expressed in inventory units. If you leave the field blank, the default value is zero.
+
+> [!NOTE]
+> The **General** tab of the **Item coverage** page includes a field called **Fulfill minimum**. This setting is ignored when you are using Planning Optimization (the system always behaves as though **Fulfill minimum** were set to *Today's date + procurement time*). For details about how this setting works when using the deprecated master planning engine, see [Safety stock fulfillment with the deprecated planning engine](safety-stock-replenishment-in-deprecated-engine.md).
+
+## Example: Safety stock
+
+Suppose your system is set up with the following:
+
+- The warehouse has 30 ea of total on-hand inventory of item Z0001.
+- There is a demand forecast showing that 2 ea of item Z0001 is consumed every day.
+- The safety stock for item Z0001 is set to 20 ea.
+- The lead time for item Z0001 is 5 days.
+
+When master planning runs, it will create several orders to ensure that the accumulated on-hand inventory remains above the safety stock threshold. The following table provides an example.
+
+| Reference | Item number | Requirement date | Requirement quantity | Accumulated |
+|---|---|---|---|---|
+| Demand forecast | Z0001 | 3/31/2023 | -6.00 | 24 |
+| Demand forecast | Z0001 | 4/3/2023 | -2.00 | 22 |
+| Demand forecast | Z0001 | 4/4/2023 | -2.00 | 20 |
+| Planned purchase orders | Z0001 | 4/5/2023 | 2.00 | 22 |
+| Demand forecast | Z0001 | 4/5/2023 | -2.00 | 20 |
+
+<!-- KFM: Maybe write something about the pegging here? -->
+
+The Net requirements page for item Z0001 could therefore resemble the following example:
+
+[<img src="media/safety-stock-example.png" alt="Example of safety stock." title="Example of safety stock" width="720" />](media/safety-stock-example.png#lightbox)
 
 ## Example: Minimum key
+
+You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item in the off-season, and then gradually increase the level during the other months. You create a minimum key by going to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**.
+
+You specify the minimum key to adjust the safety stock level by seasonality in the **Minimum key** field on the **General** tab of the **Item coverage** page. If you are using minimum keys, set **Minimum periods** to *Yes* to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you set **Minimum periods** to *No*, the minimum inventory is fulfilled for the current period only.
 
 The following procedure is an example that shows how to set up a minimum key that accounts for increased seasonal demand during the spring and summer months.
 
@@ -75,81 +111,6 @@ If the coverage code is *Min/Max*, you can also specify the maximum inventory qu
 The minimum quantity is 10, and the maximum quantity is 15. Current on-hand inventory is 4. This gives a minimum quantity requirement of 6. However, because the maximum quantity is 15, master planning generates a planned order for 11 items.
 
 For items that follow seasonal demands, you may need to maintain different maximum levels. To do that, you need to define **Maximum keys** by going to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**. Fill in the **Maximum key** field on the **Item coverage** page. You can view the information about the safety stock levels, defined via minimum keys on the **Min/Max** tab, on the **Item coverage** page. You need to make sure that, for a certain period, the minimum and the maximum values are kept in sync.
-
-## Safety stock fulfillment
-
-The **Fulfill minimum** parameter allows you to select the date or the period during which the inventory level must meet the quantity that you specified in the **Minimum** field. This field is available when you select **Period**, **Requirement**, or **Min/Max** in the **Coverage code** list.
-
-If **Minimum keys** are used, select the **Minimum periods** check box to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you clear the check box, the minimum inventory is fulfilled for the current period only.
-
-The following scenario shows how this parameter works and what are the differences between its values.
-
-> [!NOTE]
-> For all the illustrations in this article, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions, such as sales order lines, purchase order lines, or planned orders.
-
-[![Common scenario for safety stock fulfillment.](media/Scenario1.png)](media/Scenario1.png)
-
-The **Fulfill minimum** parameter can have the following values:
-
-### Today's date
-
-The specified minimum quantity is met on the date when master planning is run. The system tries to fulfill the safety stock limit as soon as possible, even though it may be unrealistic due to the lead time.
-
-[![Requirement on today's date.](media/TodayReq.png)](media/TodayReq.png)
-
-Planned order P1 is created for today's date to bring the available inventory above the safety stock level on this date. The sales order lines S1 to S3 continue to lower the inventory level. Planned orders P2 to P4 are generated by master planning so that the inventory level is brought back to the safety limit after each sales order requirement.
-
-When the **Requirement** coverage code is used, multiple planned orders are created. It is always a good idea to use either **Period** or **Min/Max** coverage for items and materials in frequent demand, to bundle the replenishment. The following illustration shows an example for coverage code **Period**.
-
-[![Period. Today's date.](media/TodayPeriod.png)](media/TodayPeriod.png)
-
-The following illustration shows an example for coverage code **Min/Max**.
-
-[![Min/Max. Today's date.](media/TodayMinMax.png)](media/TodayMinMax.png)
-
-### Today's date + procurement time
-
-The specified minimum quantity is met on the date when master planning is run, plus the purchase or production lead time. This time includes any safety margins. If the item carries a trade agreement, and the **Find trade agreements** check box is selected on the **Master planning parameters** page, the delivery lead time from the trade agreement is not considered. Lead times are taken from the item's coverage settings or from the item.
-
-This fulfillment mode will create plans with less delays and fewer planned orders, regardless of the coverage group set up on the item.
-
-The following illustration shows the outcome of the plan if the coverage code is **Requirement** or **Period**.
-
-[![Requirement or Period. Today's date and lead time.](media/TodayPLTReq.png)](media/TodayPLTReq.png)
-
-The following illustration shows the outcome of the plan if the coverage code is **Min/Max**.
-
-[![Min/max. Today's date and lead time.](media/TodayPLTMinMax.png)](media/TodayPLTMinMax.png)
-
-### First issue
-
-The specified minimum quantity is met on the date when the available inventory goes below the minimum level, as shown in the following illustration. Even if the available inventory is below the minimum level on the date when master planning is run, **First issue** will not attempt to cover it until the next requirement comes in.
-
-The following illustration shows an example for coverage code **Requirement**.
-
-[![Planning an item with Requirement coverage code and First issue fulfillment.](media/FirstIssueReq.png)](media/FirstIssueReq.png)
-
-The following illustration shows an example for coverage code **Period**.
-
-[![Planning an item with Period coverage code and First issue fulfillment.](media/FirstIssuePeriod.png)](media/FirstIssuePeriod.png)
-
-The following illustration shows an example for coverage code **Min/Max**.
-
-[![Planning an item with MinMax coverage code and First issue fulfillment.](media/FirstIssueMinMax.png)](media/FirstIssueMinMax.png)
-
-On the date when master planning is run, if the available inventory is already under the safety stock limit, **Today's date** and **Today's date + procurement time** will trigger the replenishment immediately. **First issue** will wait until there is another issue transaction, such as sales order and BOM line requirement, for the item, and then it will trigger the replenishment on the date of this transaction.
-
-On the date when master planning is run, if the available inventory isn't under the safety stock limit, **Today's date** and **First issue** will provide exactly the same result, as shown in the following illustration.
-
-[![Not under limit.](media/ReqFirstIssue.png)](media/ReqFirstIssue.png)
-
-On the date when master planning is run, if the available inventory is not under the safety stock limit, **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time.
-
-![Fulfillment postponed until the end of the procurement lead time.](media/ReqTodayLT.png)
-
-### Coverage time fence
-
-The specified minimum quantity is met during the period that is specified in the **Coverage time fence** field. This option is useful when master planning does not allow available inventory to be used for real orders, such as sales or transfers, in the attempt to maintain the safety level. However, in a future release, this mode of replenishment will no longer be needed, and this option will be deprecated.
 
 ## Plan safety stock replenishment for First Expired, First Out (FEFO) items
 
