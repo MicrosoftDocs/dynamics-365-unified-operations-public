@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Set up security for Business performance analytics
+description: This article explains how to set up security for Business performance analytics
+author: khaira7
+ms.date: 04/20/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
+audience: Application User, Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: twheeloc
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: jasongre
+ms.search.validFrom: 2021-04-30
+ms.dyn365.ops.version: 10.0.19
+
+---
+
+# Set up security for Business performance analytics
+
+[!include [banner](../includes/banner.md)]
+
 
 Setting up security in the business performance analytics (BPA) app is a critical step for ensuring the security of your organization’s data. This guide provides an overview of the setup process for role-based security, dimension security, report security and adding users to the application. 
 # Admin Role
