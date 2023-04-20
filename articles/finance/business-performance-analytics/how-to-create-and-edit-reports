@@ -1,0 +1,38 @@
+---
+# required metadata
+
+title: How to Create and Edit Reports
+description: This article describes how to create and edit reports in business performance analytics.
+author: jkhaira7
+ms.date: 04/20/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+---
+
+# How to Create and Edit Reports
+Business performance analytics (BPA) gives you the ability to create or customize reports with data fields you are interested in. You may also change any visuals in the reports. 
+
+# Create a New Report
+To create a new report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. This will open a dialog prompting you to: 
+
+•	“Start with a blank report”: If you select this option, an empty Power BI embedded report will open containing your Power BI dataset. You can then start building the report to your liking. 
+OR
+•	Duplicate a Microsoft report: If you select this option, a dropdown menu will appear. This will allow you to select from a list of reports that Microsoft makes available with the BPA app. You can use these reports as is. Or you can modify the report visuals or data fields to suit your needs. 
+
+# Edit a Report
+Once you open a report, you may edit its visuals or data fields using the “edit” button. One exception is reports with type “Microsoft”. You cannot directly edit a report with the type “Microsoft”. You must duplicate this report and edit the duplicated copy. Follow these guidelines on how to edit Power BI embedded reports. 
+Remember to save your edits before exiting the report or you may lose your work. 
+
+# Duplicate a Report  
+To duplicate a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to duplicate. You may only select one report at a time. Then, click the “Duplicate” button on the top ribbon on the “Reports” page. This duplicate version will become available on the Reports page. 
+You may also duplicate a report that you already have open by clicking the “Duplicate” button on the top ribbon inside the report. Once the report is duplicated, you will receive a message saying “Report duplicated” with a link to the duplicated report.
+
+# Rename a Report
+To rename a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to rename. You may only select one report at a time. Then, click the “Rename” button on the top ribbon on the “Reports” page. A dialog box will open allowing you to rename the report and save the new report name. You may also rename a report that you already have open by clicking the “Rename” button on the top ribbon inside the report. 
+
+# Delete a Report
+You cannot delete reports with type “Microsoft”. You can only delete reports with type     “Custom”. 
+1.	To delete a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to delete and click the “Delete” button. 
+2.	You may delete multiple reports at once so long as none of the selected reports are of type “Microsoft”. 
+**Note**: Report sharing is not available in Public Preview. 
