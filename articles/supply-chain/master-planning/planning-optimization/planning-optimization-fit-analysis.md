@@ -73,7 +73,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | BOMs with subcontracting: *\#* | This feature is now supported. | Supported |
 | Production | BOMs without a site: *\#* | This feature is now supported. For additional information, see [Production planning](production-planning.md) | Supported |
 | Production | Demand with specific BOM or route requirements defined: *\#* | This feature is now supported. | Supported |
-| Production | Formula versions with Co/By products: *\#* | This feature is pending. Currently, co-products and by-products that are associated with the formula version are ignored when Planning Optimization is enabled. | 2023 release wave 1 |
+| Production | Formula versions with Co/By products: *\#* | This feature is supported from release 10.0.33. Enable the feature Process manufacturing support in Planning Optimization in feature management. | Supported |
 | Production | Formula versions with yield: *\#* | This feature is pending. Currently, yield that is associated with the formula version is ignored when Planning Optimization is enabled. | 2023 release wave 1 |
 | Production | Plans including sequencing: *\#* | This feature is pending. Currently, sequencing is ignored when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
 | Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is now supported. | Supported |
