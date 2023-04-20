@@ -32,7 +32,7 @@ You may also duplicate a report that you already have open by clicking the “Du
 To rename a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to rename. You may only select one report at a time. Then, click the “Rename” button on the top ribbon on the “Reports” page. A dialog box will open allowing you to rename the report and save the new report name. You may also rename a report that you already have open by clicking the “Rename” button on the top ribbon inside the report. 
 
 # Delete a Report
-You cannot delete reports with type “Microsoft”. You can only delete reports with type     “Custom”. 
+You cannot delete reports with type “Microsoft”. You can only delete reports with type “Custom”. 
 1.	To delete a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to delete and click the “Delete” button. 
 2.	You may delete multiple reports at once so long as none of the selected reports are of type “Microsoft”. 
 **Note**: Report sharing is not available in Public Preview. 
