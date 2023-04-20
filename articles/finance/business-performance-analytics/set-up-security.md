@@ -7,21 +7,7 @@ author: jkhaira7
 ms.date: 04/20/2023
 ms.topic: article
 ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard, UserWorkspaceAdd, UserWorkspaceConfigureWebsite
-audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jasongre
-ms.search.validFrom: 2021-04-30
-ms.dyn365.ops.version: 10.0.19
+ms.technology:
 
 ---
 
