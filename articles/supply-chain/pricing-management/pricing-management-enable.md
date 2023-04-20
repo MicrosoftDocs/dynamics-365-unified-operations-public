@@ -1,6 +1,6 @@
 ---
 title: Turn on the Pricing management module for your system
-description: This article describes how to turn on the Pricing management module for your syst.
+description: This article describes how to turn on the Pricing management module for your system.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -20,11 +20,11 @@ ms.custom: bap-template
 
 ## Prerequisites
 
-To use the Pricing management module, you must be running Supply Chain Management version 10.0.33 or higher.
+To use the **Pricing management** module, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.33 or later.
 
 ## Feature management
 
-Before you can use the Pricing management module, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on as needed. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use the **Pricing management** module, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on as required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Sales and marketing*
 - **Feature name:** *(Preview) Pricing management*
