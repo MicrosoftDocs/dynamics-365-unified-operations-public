@@ -146,6 +146,16 @@ Planning Optimization runs on the same data center as your Supply Chain Manageme
 
 For partners and independent software vendors (ISVs), Microsoft offers a special license for accessing tier-2 environments. For details, see [\[ISV\] Request License](https://experience.dynamics.com/requestlicense/).
 
+### I am going live on 10.0.32 but Planning Optimization does not have yet all the features I need, can I go live on deprecated and then move to Planning Optimization?
+
+Yes. When you enable planning processes, it will still ask you to install and enable Planning Optimization. This is since 10.0.32 mandatory. 
+If in a certain company, you need features that Planning Optimization does not support yet, you can exclude the company from running Planning Optimization in **Planning Optimization parameters** form. 
+
+
+### How do I request an exception on 10.0.32?
+
+You just need to fill in the dialogs what you are prompted, the exception is automatically applied in the background. 
+
 ## Exception process for version 10.0.31 and earlier
 
 For Supply Chain Management version 10.0.31 and earlier, owners of existing environments who run the deprecated master planning engine without generating planned production orders will receive an email that provides details about the exception process. The system might also show an error message that includes guidance about migration and instructions for requesting an exception. If you receive such a message and/or email, we recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
