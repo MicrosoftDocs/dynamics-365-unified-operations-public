@@ -146,15 +146,13 @@ Planning Optimization runs on the same data center as your Supply Chain Manageme
 
 For partners and independent software vendors (ISVs), Microsoft offers a special license for accessing tier-2 environments. For details, see [\[ISV\] Request License](https://experience.dynamics.com/requestlicense/).
 
-### I am going live on 10.0.32 but Planning Optimization does not have yet all the features I need, can I go live on deprecated and then move to Planning Optimization?
+### I am going live with version 10.0.32 or higher, but Planning Optimization doesn't yet have all the features I need. Can I go live using the deprecated planning engine for now?
 
-Yes. When you enable planning processes, it will still ask you to install and enable Planning Optimization. This is since 10.0.32 mandatory. 
-If in a certain company, you need features that Planning Optimization does not support yet, you can exclude the company from running Planning Optimization in **Planning Optimization parameters** form. 
+Yes. When you start using the planning features, the system will ask you to install and enable Planning Optimization because this has been mandatory since Supply Chain Management version 10.0.32. However, if one or more of your companies isn't yet ready to use Planning Optimization, you can exclude them from running Planning Optimization by going to the **Planning Optimization parameters** page. For instructions, see [Continue to use deprecated master planning for some companies](planning-optimization/get-started.md#exclude-po).
 
+### How do I request an exception to continue using the deprecated planning engine on version 10.0.32 or higher?
 
-### How do I request an exception on 10.0.32?
-
-You just need to fill in the dialogs what you are prompted, the exception is automatically applied in the background. 
+The system will automatically give you an opportunity to request an exception. Just fill out the dialogs when prompted. The exception will then be applied automatically in the background.
 
 ## Exception process for version 10.0.31 and earlier
 
