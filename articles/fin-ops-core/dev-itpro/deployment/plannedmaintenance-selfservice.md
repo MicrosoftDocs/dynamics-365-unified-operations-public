@@ -30,23 +30,23 @@ Some of the common planned maintenance activities performed by Microsoft are:
 ## <a name="windows"></a>What are the planned maintenance windows?
 A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
-|Geo |start time | Day |Maintenance window|
+|Geo |Start time | Days |Maintenance window|
 |----|--------------------|---------|--------|
-|Australia |13:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|Asia   |16:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|Brazil |16:00 UTC |Saturday,Sunday|6 hours 0 minutes|
-|Canada	|16:00 UTC |Saturday,Sunday|6 hours 0 minutes|
-|China	|16:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|Europe	|16:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|France	|16:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|India	|18:30 UTC|Friday,Saturday|6 hours 0 minutes|
-|Japan	|16:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|Norway	|22:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|South Africa	|22:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|Switzerland	|22:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|United Arab Emirates	|18:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|United Kingdom	|22:00 UTC|Friday,Saturday|6 hours 0 minutes|
-|United States	|04:00 UTC |Saturday,Sunday|6 hours 0 minutes|
+|Australia |13:00 UTC|Friday, Saturday|6 hours|
+|Asia   |16:00 UTC|Friday, Saturday|6 hours|
+|Brazil |04:00 UTC |Saturday, Sunday|6 hours|
+|Canada	|04:00 UTC |Saturday, Sunday|6 hours|
+|China	|16:00 UTC|Friday, Saturday|6 hours|
+|Europe	|16:00 UTC|Friday, Saturday|6 hours|
+|France	|16:00 UTC|Friday, Saturday|6 hours|
+|India	|18:30 UTC|Friday, Saturday|6 hours|
+|Japan	|16:00 UTC|Friday, Saturday|6 hours|
+|Norway	|22:00 UTC|Friday, Saturday|6 hours|
+|South Africa	|22:00 UTC|Friday, Saturday|6 hours|
+|Switzerland	|22:00 UTC|Friday, Saturday|6 hours|
+|United Arab Emirates	|18:00 UTC|Friday, Saturday|6 hours|
+|United Kingdom	|22:00 UTC|Friday, Saturday|6 hours|
+|United States	|04:00 UTC |Saturday, Sunday|6 hours|
 
 ## What is the schedule for proactive quality updates?
 
