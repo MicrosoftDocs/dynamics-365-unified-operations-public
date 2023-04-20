@@ -28,6 +28,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality and stability improvements.</p> | No feature management required | April 17-21, 2023 |
 | <p>General performance, quality and stability improvements.</p> | No feature management required | March 27-30, 2023 |
 | <p>General performance, quality and stability improvements.</p> | No feature management required | March 13-17, 2023 |
 | <p>General performance, quality and stability improvements.</p> | No feature management required | February 15-24, 2023 |
