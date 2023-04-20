@@ -1,6 +1,6 @@
 ---
 title: Arrange price component codes into a price structure
-description:
+description: This article explains how to arrange price component codes into a price structure.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
