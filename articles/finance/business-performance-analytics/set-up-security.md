@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up security for Business performance analytics
-description: This article explains how to set up security for Business performance analytics
+title: Set up security for business performance analytics
+description: This article explains how to set up security for business performance analytics
 author: khaira7
 ms.date: 04/20/2023
 ms.topic: article
