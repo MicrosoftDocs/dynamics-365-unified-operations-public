@@ -20,29 +20,29 @@ ms.custom: bap-template
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:
 
-- Identify and classify products, customers, and order modes (such as by region, pack size, brand, age, and so on) to reflect each product's differentiating features, customer segments, and price sensitivity.
+- Identify and classify products, customers, and order modes (for example, by region, pack size, brand, or age) to reflect each product's differentiating features, customer segments, and price sensitivity.
 - Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture.
 
-The Pricing management module provides *price attributes*, which enable price managers and sales promotion managers to mark and group price differentiators established for *products*, *customers* and *sales order information* and set up the pricing rules. Pricing rules include:
+The **Pricing management** module provides *price attributes*. These attributes let price managers and sales promotion managers mark and group price differentiators that are defined for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
 
 - Sales trade agreement prices
 - Margin component price adjustments
 - Sales discounts
 - Customer rebates on sales
 
-You define these pricing rules using combinations of price attributes to define the rule criteria.
+You define these pricing rules by using combinations of price attributes to define the rule criteria.
 
 [<img src="media/price-attributes.png" alt="Price attributes." title="Price attributes" width="500" />](media/price-attributes.png#lightbox)
 
-## Price attributes sources
+## Price attribute sources
 
-Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed and can't be extended or altered to accommodate additional pricing criteria. Examples of possible product-based pricing variables include: product types, brands, flavors, pack types, and pack sizes.
+Microsoft Dynamics 365 Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed, and can't be extended or changed to accommodate additional pricing criteria. Examples of possible product-based pricing variables include product types, brands, flavors, pack types, and pack sizes.
 
-Customer groups don't always provide enough control when it comes to setting up customer-based pricing. Therefore, customer-based pricing variables can also include customer area, payment method, payment terms, and loyalty program membership.
+Customer groups don't always provide enough control over the setup of customer-based pricing. Therefore, customer-based pricing variables can also include customer area, payment method, payment terms, and loyalty program membership.
 
 Other sales order details (such as the ordering channel, ordering site, ordering campaign, and mode of delivery) can also include pricing conditions.
 
-Pricing management offers three price attribute sources as a foundation for setting up pricing rules and conditions, and it provides out-of-box price attributes for each source. You can build price attribute groups (header or line) and combine them to create price attribute combinations.
+Pricing management offers three price attribute sources that can serve as a foundation for the setup of pricing rules and conditions. For each source, it also provides out-of-box price attributes. You can build price attribute groups (header or line scope) and combine them to create price attribute combinations.
 
 <table>
 <thead>
@@ -58,16 +58,16 @@ Pricing management offers three price attribute sources as a foundation for sett
 <td rowspan="4">Header attribute group</td>
 <td rowspan="2">Order (header)</td>
 <td>Order table</td>
-<td>Provide out-of-box fields from the order header. Can be extended to add more fields.</td>
+<td>The attributes provide out-of-box fields from the order header. You can extend them to add more fields.</td>
 </tr>
 <tr>
-<td>Order attributes<br><br>Attributes of the attribute group that are defined as the order attribute group in parameters</td>
+<td><p>Order attributes</p><p>Attributes of the attribute group that are defined as the order attribute group in parameters</p></td>
 <td>Configurable</td>
 </tr>
 <tr>
 <td rowspan="2">Customer</td>
 <td>Customer master</td>
-<td>Provide out-of-box fields from customer masters. Can be extended to add more fields.</td>
+<td>The attributes provide out-of-box fields from customer masters. You can extend them to add more fields.</td>
 </tr>
 <tr>
 <td>Attributes of the customer attribute group that are defined as the customer attribute group in parameters</td>
@@ -76,8 +76,8 @@ Pricing management offers three price attribute sources as a foundation for sett
 <tr>
 <td rowspan="3">Line attribute group</td>
 <td rowspan="2">Product</td>
-<td>Product master<br><br>Released product master</td>
-<td>Provide out-of-box fields from product master. Can be extended to add more fields.</td>
+<td><p>Product master</p><p>Released product master</p></td>
+<td>The attributes provide out-of-box fields from product masters. You can extend them to add more fields.</td>
 </tr>
 <tr>
 <td>Associated product attributes that are defined as price attributes and assigned to a product</td>
@@ -86,16 +86,16 @@ Pricing management offers three price attribute sources as a foundation for sett
 <tr>
 <td>Order (line)</td>
 <td>Order line</td>
-<td>Provide out-of-box fields from the order line. Can be extended to add more fields.</td>
+<td>The attributes provide out-of-box fields from the order line. You can extend them to add more fields.</td>
 </tr>
 </tbody>
 </table>
 
-Each pricing rule allows the combination of one header attribute group and one line attribute group.
+Each pricing rule allows for the combination of one header attribute group and one line attribute group.
 
 > [!NOTE]
-> The performance of the pricing engine may be impacted by the attribute number. Up to 14 price attributes can be imported to Pricing management for pricing-rule data entities (such as sales trade agreement prices, discounts, and rebates). Each pricing rule allows the combination of one header attribute group (with up to 7 header price attributes) and one line attribute group (with up to 7 line price attributes).
+> The number of attributes can affect the performance of the pricing engine. For pricing rule data entities (such as sales trade agreement prices, discounts, and rebates), up to 14 price attributes can be imported into Pricing management. Each pricing rule allows for the combination of one header attribute group (which can have up to seven header price attributes) and one line attribute group (which can have up to seven line price attributes).
 
 ## Next steps
 
-- [Set up price attributes for products, customers, and orders](price-attributes-setup.md)
+- [Price attributes for products, customers, and orders](price-attributes-setup.md)
