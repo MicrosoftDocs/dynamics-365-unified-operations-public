@@ -1,6 +1,6 @@
 ---
 title: Discount types
-description: This article introduces the various types of discounts that you can set up using Pricing management.
+description: This article introduces the different types of discounts that you can set up by using Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
@@ -18,148 +18,149 @@ ms.custom: bap-template
 [!include [preview banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article introduces the various types of discounts that you can set up using Pricing management. To use discounts, you must make the following settings:
+This article introduces the different types of discounts that you can set up by using Pricing management.
 
-- Create one or more [price component codes](price-component-code.md) to set up various types of discounts that you can include in your price structures.
-- Create one or more [price structures](price-structure-overview.md) to establish how your discounts combine with other price elements (such as base price and margin price adjustments) to find the final unit price.
-- Set up one or more [discount pricing rules](margin-discount-pricing-rules.md) to configure each discount you need, which customers and items they apply to, and how they are calculated. For each rule, you'll start by choosing the type of discount, associate with a specific price component code, and then define the discount using a combination of settings that are common for all discounts and settings that are specific to your selected discount type.
+To use discounts, you must complete the following setup:
 
-For details about how to create pricing rules for each type of discount (and margin price adjustments), see [Configure pricing rules](margin-discount-pricing-rules.md).
+- Create one or more [price component codes](price-component-code.md) to set up the different types of discounts that you can include in your price structures.
+- Create one or more [price structures](price-structure-overview.md) to define how your discounts are combined with other price elements (such as the base price and margin price adjustments) to determine the final unit price.
+- Set up one or more [discount pricing rules](margin-discount-pricing-rules.md) to configure each discount that you need, and define which customers and items they apply to, and how they're calculated. For each rule, you select the type of discount and associate it with a specific price component code. You then define the discount by using a combination of settings that are common to all discounts and settings that are specific to your selected discount type.
+
+For information about how to create pricing rules for each type of discount (and for margin price adjustments), see [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
 
 > [!NOTE]
-> The **Pricing sequence** of your [price structure](price-structure-overview.md) isn't associated with discount types.
+> The *pricing sequence* of your [price structure](price-structure-overview.md) isn't associated with discount types.
 
 ## Simple discounts
 
-Simple discounts reduce the product price by percentage or amount. For example:
+Simple discounts reduce the product price by a percentage or amount. Here are some examples:
 
-- Buy items of brand A and get a 5% off discount.
-- Buy items of package group B and get a $10 off discount.
+- Buy items of brand A, and get 5 percent off.
+- Buy items from package group B, and get $10 off.
 
 ## Quantity discounts
 
-Quantity discounts are given to customers when they purchase a particular quantity of a product. The quantity tier is per order, not per line. For example:
+Quantity discounts are given to customers when they purchase a specific quantity of a product. The quantity tier is per order, not per line. Here are some examples:
 
-- Buy 2 or more items of brand A and get 5% discount off
-- Buy 5 or more items of brand A and get 7% discount off
-- Buy 10 or more items of brand A and get 9% discount off
-- Buy 15 or more items of brand A and get 12% discount off.
+- Buy two or more items of brand A, and get 5 percent off.
+- Buy five or more items of brand A, and get 7 percent off.
+- Buy 10 or more items of brand A, and get 9 percent off.
+- Buy 15 or more items of brand A, and get 12 percent off.
 
 ## Threshold discounts
 
-Threshold discounts are given to customers when the total for a transaction reaches one or more specified amounts. The amount threshold is per order, not per line. For example:
+Threshold discounts are given to customers when the total for a transaction reaches one or more specified amounts. The amount threshold is per order, not per line. Here are some examples:
 
-- Buy a total of $1000 or more of items of brand A and get $100 discount off.
-- Buy a total of $2000 or more of items of brand A and get 10% discount off.
+- Buy a total of $1,000 or more of items of brand A, and get $100 off.
+- Buy a total of $2,000 or more of items of brand A, and get 10 percent off.
 
-This type of discount is applied after other discount types because their eligibility is determined by the total order value. We strongly recommend that you create a price component code for threshold discounts and avoid mixing the threshold discount with other types within the same price component code. Make sure that price component code for threshold discounts are set after the other discount-related price component codes with the higher pricing sequence.
+Threshold discounts are applied after other discount types, because their eligibility is determined by the total order value. We strongly recommend that you create a price component code for threshold discounts, and that you avoid mixing threshold discounts with other types in the same price component code. Make sure that the price component code for threshold discounts is set up after the other discount-related price component codes that have a higher pricing sequence.
 
-## <a name="mix-match"></a>Mix-and-match discount
+## <a name="mix-match"></a>Mix-and-match discounts
 
-Mix-and-match discounts give the customer a discount when they purchase a specific combination of products. For example:
+Mix-and-match discounts are given to customers when they purchase a specific combination of products. Here's an example:
 
-- Buy 10 or more items of brand A and get 5% discount off for items of package group B
+- Buy 10 or more items of brand A, and get 5 percent off items from package group B.
 
 > [!NOTE]
-> The discount claim feature isn't available for mix and match discounts.
+> The discount claim feature isn't available for mix-and-match discounts.
 >
-> For Mix-and-match least-expensive discounts, the number of least-expensive products must be more than one and less than the number of products that are required to trigger the discount.
+> For mix-and-match least-expensive discounts, the number of least-expensive products must be more than one and less than the number of products that are required to trigger the discount.
 >
-> For Mix-and-match line spec discount, the Calculation type and Discount value for all discount lines must be the same in the same line group.
+> For mix-and-match line spec discounts, the **Calculation type** and **Discount** values must be the same for all discount lines in the same line group.
 
 ### Set up line groups for mix-and-match discounts
 
-You establish the various combinations item groups and related purchase thresholds need to qualify for a discount by setting up *line groups* and assigning them to lines in your mix-and-match pricing rules. Follow these steps to set up and apply mix-and-match line groups:
+To define the different combinations of item groups and related purchase thresholds that are required to qualify for a discount, you set up *line groups* and assign them to lines in your mix-and-match pricing rules. Follow these steps to set up and apply mix-and-match line groups.
 
 1. Go to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line group setup**.
-1. You can view and create each of the line groups you will need here. Use the buttons on the Action Pane to add or remove line groups as needed. For each row, make the following settings:
+1. You can review the existing line groups, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
+
     - **Line group** – Enter a unique identifier for the line group.
-    - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify the discount. This is a default value, which will all each time a user selects this line group for a specific discount pricing rule. However, you'll be able to override this for each specific rule as needed.
+    - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify for the discount. This field defines a default value that will be used every time that a user selects the line group for a specific discount pricing rule. However, you can override the value for each specific rule as you require.
+
 1. Go to **Pricing management \> During-sales pricing \> Discounts \> Mix and match line groups**.
-1. You can view and create line groups assignments to any or all existing mix-and-match discount rules here.  Use the buttons on the Action Pane to add or remove line groups as needed. For each row, make the following settings:
-    - **Discount** – Select the existing mix-and-match discount pricing rule that you want to add a line group to.
-    - **Line group** – Select the existing line group you want to add to the selected pricing rule.
-    - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify the discount. For new rows, this initially shows the default value set for the selected line group on the **Mix and match line group setup** page. However, you can override this value by editing it here.
-    - **Line color** – Select a color for the line group. This color will be shown as the background color for the lines assigned to this group on the **Lines** FastTab when you view or edit a mix-and-match discount pricing rule.
-1. To use your line groups in a pricing rule, go to the **All discounts** or **Mix and match discounts** page and select or create your rule. Then do the following:
-    - Use the settings on the **Price/discount** FastTab to establish the terms of the mix and match discount.
-    - Use the settings on the **Lines** FastTab to add a line for each item (or collection of items) that is part of the mix and match discount. Then use the **Line group** column to assign a line group to each of them.
-    - If you need to change the selection or configuration of the line groups available for your current pricing rule (including the number of products needed), select **Mix and match line groups** from the Action Pane. The settings available here are the same as those shown on the **Mix and match line group setup** page, except only the lines for the current pricing rule are shown.
+1. You can review the line group assignments for any or all existing mix-and-match discount rules, and create any that you need. Use the buttons on the Action Pane to add or remove line groups as required. For each row that you add to the grid, set the following fields:
 
-### Mix-and-match example scenario 1: Discounts for bundle sales
+    - **Discount** – Select the existing mix-and-match discount pricing rule to add a line group to.
+    - **Line group** – Select the existing line group to add to the selected pricing rule.
+    - **Number of products needed** – Enter the quantity of a product that a customer must purchase to qualify the discount. For new rows, this field initially shows the default value that you previously set for the selected line group on the **Mix and match line group setup** page. However, you can override the default value.
+    - **Line color** – Select a color for the line group. This color will be shown as the background color for lines that are assigned to the group on the **Lines** FastTab when you view or edit a mix-and-match discount pricing rule.
 
-A car dealer offers a bundle where if a customer purchases any **Interior option** item from *Package B*, they can get a dashboard camera with **Item number** *DAC0001* for 10% off.
+1. To use your line groups in a pricing rule, open the **All discounts** or **Mix and match discounts** page, and select or create your rule. Then follow these steps:
 
-The dealer therefore sets up a mix-and-match discount pricing rule with the following settings on the **Price/discount** FastTab:
+    - On the **Price/discount** FastTab, define the terms of the mix-and-match discount.
+    - On the **Lines** FastTab, add a line for each item (or collection of items) that's part of the mix-and-match discount. Then use the **Line group** column to assign a line group to each line.
+    - If you must change the selection or configuration of the line groups that are available for the current pricing rule (including the number of products that are required), select **Mix and match line groups** on the Action Pane. The same fields that were available on the **Mix and match line group setup** page are available. However, only the lines for the current pricing rule are shown.
 
-- **Calculation type**: *Line spec*
+### Mix-and-match example 1: Discount for bundle sales
 
-The dealer also makes the following settings on the **Lines** FastTab:
+A car dealer offers a bundle where, if a customer purchases any **Interior option** item from package *B*, they can get 10 percent off a dashboard camera (item number *DAC0001*). Therefore, the dealer sets up a mix-and-match discount pricing rule and sets the following value on the **Price/discount** FastTab:
+
+- **Calculation type:** *Line spec*
+
+The dealer also sets the following values on the **Lines** FastTab.
 
 | Line no. | Price attribute | Price attribute value | Number of products needed | Unit | Discount value | Calculation type | Line group |
 |---|---|---|---|---|---|---|---|
 | 1 | Interior option | Package B | 1 | Ea | 0.00 | Percentage off | A |
 | 2 | Item number | DAC0001 | 1 | Ea | 10.00 | Percentage off | B |
 
-### Mix-and-match example scenario 2: Discount for any second purchase
+### Mix-and-match example 2: Discount for any second purchase
 
-A car dealer offers a discount where if a customer purchases any two **Interior option** items from *Package C*, they can 15% off the less expensive of the two items. Therefore, the dealer sets up a mix-and-match discount pricing rule with the following settings.
+A car dealer offers a discount where, if a customer purchases any two **Interior option** items from package *C*, they get 15 percent off the less expensive of the two items. Therefore, the dealer sets up a mix-and-match discount pricing rule and sets the following values on the **Price/discount** FastTab:
 
-The dealer therefore sets up a mix-and-match discount pricing rule with the following settings on the **Price/discount** FastTab:
+- **Calculation type:** *Least expensive*
+- **Number of least expensive lines:** *1*
+- **Percentage off:** *15%*
 
-- **Calculation type**: *Least expensive*
-- **Number of least expensive lines**: *1*
-- **Percentage off**: *15%*
-
-The dealer also makes the following settings on the **Lines** FastTab:
+The dealer also sets the following values on the **Lines** FastTab.
 
 | Line no. | Price attributes | Price attribute value | Number of products needed | Unit | Line group |
 |---|---|---|---|---|---|
 | Line 1 | Interior option | Package C | 1 | Ea | A |
 | Line 2 | Interior option | Package C | 1 | Ea | B |
 
-The items in the following table are available to customers:
+The following table shows the items that are available to customers.
 
 | Item no. | Interior option | Price |
 |---|---|---|
 | EV004 | Package C | $100 |
 | EV005 | Package C | $120 |
 
-Therefore, the customer will get 15% off the cheaper item (EV004) and gets both items for $205.
+Therefore, the customer will get 15 percent off the less expensive item (*EV004*) and will get both items for $205.
 
-### Mix-and-match example scenario 3: Mandatory item to trigger discount
+### Mix-and-match example 3: Mandatory item to trigger the discount
 
-A car dealer offers a discount where if a customer purchases any ten **Interior option** items from *Package D*, including at least one item with item number EV007 (which is also a product from *Package D*), then they will get a 12% discount on the entire package of interior options.
+A car dealer offers a discount where, if a customer purchases any ten **Interior option** items from package *D*, including at least one of item *EV007* (which is also an item in package *D*), they get a 12-percent discount on the whole package of interior options. Therefore, the dealer sets up a mix-and-match discount pricing rule and sets the following values on the **Price/discount** FastTab:
 
-The dealer therefore sets up a mix-and-match discount pricing rule with the following settings on the **Price/discount** FastTab:
+- **Calculation type:** *Percentage off*
+- **Percentage off:** *12%*
 
-- **Calculation type**: *Percentage off*
-- **Percentage off**: *12%*
-
-The dealer also makes the following settings on the **Lines** FastTab:
+The dealer also sets the following values on the **Lines** FastTab.
 
 | Line No. | Price attributes | Price attribute value | Mandatory | Number of products needed | Unit | Line group |
 |---|---|---|---|---|---|---|
 | 1 | Interior option | Package D | No | 10 | Ea | A |
 | 2 | Item number | EV007 | Yes| 1 | Ea | B |
 
-The items in the following table are available to customers:
+The following table shows the items that are available to customers.
 
 | Item no. | Interior option | Price |
 |---|---|---|
 | EV009 | Package D | $100 |
 | EV007 | Package D | $100 |
 
-Therefore, if a customer orders five EV009 and five EV007, then they have ordered 10 items from Package D and have also purchased the required EV007. That means the customer will get the 12% discount and will pay $880 for the package.
+If a customer now orders five of item *EV009* and five of item *EV007*, they've ordered 10 items from package *D* and have also purchased the required quantity of item *EV007*. Therefore, the customer will get the 12-percent discount and will pay $880 for the package.
 
-However, if the customer orders ten EV009, then they would still have ordered 10 items from Package D, but they didn't choose the mandatory item (EV007) and therefore won't get the discount and will pay $1000 for the package.
+However, if the customer orders ten of item *EV009*, they've still have ordered 10 items from package *D*, but they haven't purchased the required quantity of item *EV007*. Therefore, the customer won't get the discount and will pay $1,000 for the package.
 
 ## "Always apply" discounts
 
-*Always apply* isn't a discount type, but is a concurrency mode that is available for all discount types. All the discounts that are created using the *Always apply* mode will be applied on the appropriate items after all the existing discounts are applied. See also [Resolving concurrent pricing rules](concurrence-within-codes.md).
+*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts that are created by using the *Always apply* mode will be applied to the appropriate items after all the existing discounts have been applied. For more information, see [Resolve concurrency within price component codes](concurrence-within-codes.md).
 
 ## Next steps
 
 - Create [price component codes](price-component-code.md).
 - Create [price structures](price-structure-overview.md).
-- Configure [discount ricing rules](margin-discount-pricing-rules.md) for each discount.
+- Configure [discount pricing rules](margin-discount-pricing-rules.md) for each discount.
