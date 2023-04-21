@@ -103,6 +103,7 @@ To configure a Commerce online store for Apple Pay, follow these steps.
 
 1. After the merchant information has been entered, run the **1070** channel configuration distribution schedule job.
 
+
 #### Add Apple Pay to the store payment method
 
 To add Apple Pay as a new payment method in Commerce headquarters, follow these steps.
