@@ -25,10 +25,10 @@ The first login to the app is given the **BPA admin** role. This role allows the
 •	The **Microsoft report viewer** role allows a user to view all reports that Microsoft provides in business performance analytics. 
 •	The **All access** dimension group allows a user to view data for all dimensions, without any filters. 
 
-## Set up roles
+### Set up roles
 A role defines which reports a user can access. Use roles to organize how business performance analytics users can access reports. 
 
-## Dimension security
+### Dimension security
 Dimension security allows administrators to control which data is visible in a report. Setting up dimension security is a two-step process:
 
 1. Set up dimensions: Select the dimensions you want to secure. In public preview, you can select up to five dimensions from the ledger and reporting dimensions. If this selection of dimensions is updated, this may have impact on the dimension groups created and the users who were assigned those dimension groups. 
@@ -39,7 +39,7 @@ Dimension security allows administrators to control which data is visible in a r
 >If you assign a lot of dimension groups to a single user, the user's reports may load slower. 
 
 
-## Set up dimensions 
+### Set up dimensions 
 To set up the dimensions to secure access to data, follow these steps:
 
 1.	Go to the **Administration** page in business performance analytics or go to the **Dimensions** page. 
