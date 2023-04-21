@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.34. This version has a build number of 10.X.XXXX and is 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.34. This version has a build number of 10.0.1591 and is 
 available on the following schedule:
 
 - **Preview of release:** April 2023
@@ -54,4 +54,22 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+
+## Known issues
+
+| Issue summary | More information |
+| ---- | ---- | 
+|Human Resources time-based Business events can't be configured.| Business events catalog has 40 Human Resources business events. Of the 40 HR business events, 30 are time-based business events and are not yet configurable. This will be updated in a future release.|   
+
+
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Human Resources 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=805875).
+
 
