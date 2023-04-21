@@ -61,7 +61,7 @@ The easiest way to install the app on single device is to install it from an app
 
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
 
-- **iOS:** LINK TBA
+- **iOS:** [Warehouse Management on Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310)
 
 ### Download the app from Microsoft App Center
 
