@@ -46,7 +46,7 @@ The following table describes the values that can be specified for the **ms.sear
 
 ## Migrating content from existing AX 2012 Help content
 
-If you have existing content from AX 2012, you can reuse it for Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.
+If you have content from AX 2012, you can reuse it for Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.
 
 [!INCLUDE [custom-help-toolkit-tools](../includes/custom-help-toolkit-tools.md)]
 
@@ -59,12 +59,9 @@ The following properties are reserved for future use:
 - **ms.dyn365.ops.version** – Eventually, this property might be used to limit the content that is shown to content for a specific version of a product or earlier.
 - **ms.search.industry** – Eventually, this property might be used to limit the content that is shown to content for a specific industry.
 
-> [!TIP]
-> Microsoft content in the public GitHub repos contains additional metadata that Microsoft uses in internal processes that aren't related to the mechanics of the Help system. You can ignore these metadata properties if you extend or customize the Microsoft content.
-
 ## Changing the locale of topics to match the locale of solutions
 
-If your solution is intended to support multiple markets, you will want to provide Help content for each market. For example, your solution might support German (Germany) and German (Austria), but you have HTML files only for German (Germany). To make the same content available in German (Austria), you can make a copy of the HTML files and then update the **ms.locale** metadata. You can also add content that is specific to Austria to these new HTML files, as required.
+If your solution supports multiple markets, you can provide Help content for each market. For example, your solution might support German (Germany) and German (Austria), but you have HTML files only for German (Germany). To make the content available in German (Austria), you can make a copy of the HTML files and then use the [HtmlLocaleChanger](custom-help-toolkit-HtmlLocaleChanger.md) tool to update the **ms.locale** metadata. You can also add content that's specific to Austria to these new HTML files.
 
 ## See also
 
