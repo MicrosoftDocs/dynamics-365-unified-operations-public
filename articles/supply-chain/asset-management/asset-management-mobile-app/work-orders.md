@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice. Note that app install procedure may change after GA -->
+<!-- KFM: Preview until further notice. -->
 
 Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
 

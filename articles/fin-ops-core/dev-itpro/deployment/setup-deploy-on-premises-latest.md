@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31 
 ms.dyn365.ops.version: Platform update 56
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Set up and deploy on-premises environments (Application 10.0.32 and later)

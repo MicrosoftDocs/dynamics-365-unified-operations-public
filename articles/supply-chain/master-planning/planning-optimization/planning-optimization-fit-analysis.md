@@ -73,13 +73,13 @@ The following table shows the various results that can be shown after a fit anal
 | Production | BOMs with subcontracting: *\#* | This feature is now supported. | Supported |
 | Production | BOMs without a site: *\#* | This feature is now supported. For additional information, see [Production planning](production-planning.md) | Supported |
 | Production | Demand with specific BOM or route requirements defined: *\#* | This feature is now supported. | Supported |
-| Production | Formula versions with Co/By products: *\#* | This feature is pending. Currently, co-products and by-products that are associated with the formula version are ignored when Planning Optimization is enabled. | 2023 release wave 1 |
+| Production | Formula versions with Co/By products: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
 | Production | Formula versions with yield: *\#* | This feature is pending. Currently, yield that is associated with the formula version is ignored when Planning Optimization is enabled. | 2023 release wave 1 |
 | Production | Plans including sequencing: *\#* | This feature is pending. Currently, sequencing is ignored when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
 | Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is now supported. | Supported |
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
-| Production | Sales line reservation using explosion: *\#* | This scenario is not yet supported. When using CTP for Planning Optimization, sales line reservations aren't automatically made during explosion.  | Future wave |
+| Production | Sales line reservation using explosion: *\#* | This scenario is not yet supported. Sales line reservations aren't automatically made during explosion.  | Future wave |
 | Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32, with a private preview available for version 10.0.31 (contact Microsoft Support to request access to the private preview feature on version 10.0.31). A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported from 10.0.32 |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. For additional information, see [Purchase requisitions](purchase-requisitions.md) | Supported |

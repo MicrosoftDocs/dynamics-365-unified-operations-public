@@ -206,6 +206,48 @@ When you use the *Inventory Visibility integration with soft reservation on sale
 > [!NOTE]
 > If you must reverse a successful soft reservation, open the relevant sales order, and then select **Revert reservation directly** or **Revert reservation by batch** at the sales order or sales line level.
 
+### Import sales orders that have been soft reserved externally
+
+It's likely that your company has other order channels that also post soft reservation to Inventory Visibility. Sales orders that have been soft reserved externally might have to be imported into Supply Chain Management if you're using it as your system of record. Follow these steps to import sales orders that have been soft reserved externally.
+
+1. Sign in to Supply Chain Management.
+1. Go to **System Administration \> Work spaces \> Data management**.
+1. Select the **Framework parameters** tile.
+1. On the **Data import/export framework parameters** page, on the **Entity settings** tab, select **Refresh entity list**.
+1. Go back to **System Administration \> Work spaces \> Data management**.
+1. Select the **Export** tile.
+1. On the **New Record** page, in the **Group name** field, enter a name.
+1. On the **Selected entities** FastTab, select **Add entity** on the toolbar, and then, in the drop-down dialog box, set the following values:
+
+    - **Entity name** – Select *Sales order lines V2*.
+    - **Target data format** – Select *Excel*.
+    - **Select fields** – Select *Importable fields*.
+
+1. Select **Add** to apply your settings, and then select **Close** to close the dialog box.
+1. A new line is added to the grid. On the new line, select the button in the **Filter** column.
+1. In the **Inquiry** dialog box, the grid on the **Range** tab should already have one row. Edit the row so that it has the following values:
+
+    - **Table** – Select *Sales order lines V2*.
+    - **Derived table** – Select *Sales order lines V2*.
+    - **Field** – Select *Sales order*.
+    - **Criteria** – Select any sales order number.
+
+1. Select **OK** to apply your settings and close the dialog box.
+1. On the Action Pane, select **Export**.
+1. On the **Execution summary** page, on the **Entity processing status** FastTab, select **Download file** on the toolbar.
+1. Open the downloaded file in Excel, and remove all the data rows. Leave only the header row.
+1. Add new rows that include the sales order line details that you want to import into Supply Chain Management.
+1. For each row, in addition to the usual order data, be sure to include soft reservation details in the following columns:
+
+    - **INVENTORYSERVICERESERVATIONID** – Enter the soft reservation ID from the external reservation.
+    - **ISSOFTRESERVEDEXTERNALLY** – Enter *Yes*.
+
+1. Import the completed Excel file. You'll be able to check import status after completion.
+1. After the file is successfully imported, you can confirm that the new sales orders have soft reservation details by opening those orders in Supply Chain Management.
+
+> [!NOTE]
+> After you import sales orders that include soft reservation details, you won't be able to modify the soft reservation or revert it from Supply Chain Management. If the data that you imported isn't correct, delete the affected sales line, and then re-import it.
+
 ### Create soft reservations and offsets when you use the Inventory Visibility integration with reservation offset feature
 
 When you use the *Inventory Visibility integration with reservation offset* feature, you can't trigger soft reservation directly from Supply Chain Management. Instead, this feature supports only the offset of sales order lines that were created *externally* from Supply Chain Management. When externally created soft-reserved sales lines are replicated into Supply Chain Management, offsets might be required from Supply Chain Management to Inventory Visibility.

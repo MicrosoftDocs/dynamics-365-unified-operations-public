@@ -4,7 +4,6 @@
 title: Setoff rule error when a tax settlement is run
 description: This article provides troubleshooting information that can help fix the setoff rule error that might occur during tax settlement.
 author: yungu
-manager: beya
 ms.date: 06/08/2021
 ms.topic: article
 ms.prod: 

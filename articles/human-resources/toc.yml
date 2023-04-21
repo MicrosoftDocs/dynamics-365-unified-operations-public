@@ -1,3 +1,4 @@
+items:
 - name: Dynamics 365 Human Resources
   items:
   - name: Dynamics 365 Human Resources
@@ -24,6 +25,8 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed in Human Resources
         items:
+        - name: What's new overview
+          href: whats-new-home-page.md
         - name: Human Resources 10.0.33 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-33.md  
         - name: Human Resources 10.0.32 (merged infrastructure)          

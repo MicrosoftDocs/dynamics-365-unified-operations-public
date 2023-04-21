@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.34 (May 2023)
+          href: get-started/whats-new-platform-updates-10-0-34.md 
         - name: Platform updates for version 10.0.33 (April 2023)
           href: get-started/whats-new-platform-updates-10-0-33.md
         - name: Platform updates for version 10.0.32 (March 2023)
@@ -476,25 +478,11 @@
           href: help/custom-help-overview.md
         - name: Preparing content for use with the Help pane
           href: help/preparing-content.md
-        - name: Deploying custom help to Azure
-          href: help/walkthrough-help-azure.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
-        - name: Custom help toolkit
-          items:
-            - name: Overview
-              href: help/custom-help-toolkit.md
-            - name: The HTML From Repo Generator tool
-              href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
-            - name: The Convert HTML To JSON tool
-              href: help/custom-help-toolkit-ConvertHtmlToJson.md
-            - name: The HTML Locale Changer tool
-              href: help/custom-help-toolkit-HtmlLocaleChanger.md
-            - name: Convert Dynamics AX custom help for use in Dynamics 365
-              href: help/migrate-dynamicsax2012.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend and collaborate on the help
+        - name: Contribute to the Help
           href: help/contributor-guide.md
       - name: Finance and operations apps regional services
         items:
@@ -530,8 +518,14 @@
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
           href: dev-tools/development-system-requirements.md
-      - name: Version control, metadata search, and navigation
-        href: dev-tools/version-control-metadata-navigation.md
+      - name: X++ Application lifecycle management
+        items: 
+        - name: Version control, metadata search, and navigation
+          href: dev-tools/version-control-metadata-navigation.md
+        - name: Branching
+          href: dev-tools/branching.md
+        - name: X++ in Git
+          href: dev-tools/git-intro.md
       - name: Build automation using Azure
         items:
         - name: Build automation using Microsoft-hosted agents and Azure Pipelines
@@ -1787,6 +1781,8 @@
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitoring replication
+            href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
             href: migration-upgrade/migrate-doc-attachments-ax-2012.md
           - name: Clean up source data for upgrade

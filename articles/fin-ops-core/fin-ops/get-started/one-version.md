@@ -4,11 +4,11 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 07/25/2022
+ms.date: 03/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
+ms.custom: bap-template
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]
@@ -157,6 +157,8 @@ After you apply a service update for a supported version, this functionality wil
 > - Version N-3 is three versions older than N, such as 10.0.22
 > - Version N-4 is four versions older than N, such as 10.0.21 (In this example, customers on version 10.0.21 **can't** pause updates.)
 
+If you encounter an issue on a version that has reached its end of service (N-4), the support team is not able to take your case. You must update to the latest update and then report the issue if it persists.
+
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
 All additional sandbox environments will be updated during the same update window as your production environment, and they will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions that are supported in the N-3 lifecycle policy. 
@@ -230,11 +232,7 @@ For information about how to pause an update, see [Pause service updates through
 
 Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
-You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you're not already a member of the Dynamics 365 Insider Program, you'll need to:
-
-1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
-2. Accept the terms and conditions to become a Dynamics 365 Insider.
-3. After your application has been approved (approximately 24 hours), you can then sign back into the Insider Portal to find the different preview programs available for you to join.
+To be in the first group of customers to take service updates to production, you can join the [First release program](https://aka.ms/FirstReleaseFnO). While enrolled in First Release, Microsoft will keep your system current with the latest updates. First Release customers are always updated before general availability.
 
 ### Is any tooling available to support testing of the latest release?
 
