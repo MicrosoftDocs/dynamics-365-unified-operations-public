@@ -31,7 +31,7 @@ The process for connecting your [custom Help website](custom-help-overview.md#cu
 
 ## <a name="extendhelppane"></a>Extend the Help pane and assign the custom Help indexes to languages
 
-The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
+The **Help Pane extension** folder contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
 
 ### Extend the Help pane
 
