@@ -47,12 +47,12 @@ For an overview of the functionality, view the following TechTalk session from S
 
 ## Prerequisites
 
-Before you begin, the following must be configured:
+Before you begin, the following prerequisites must be configured:
 
 - **Tax Calculation service**. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 - **Support multiple VAT registration numbers**. For more information, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
-### Enable features in the feature management
+### Enable features in feature management
 
 1. Go to **Workspaces** > **Feature management**.
 2. In the feature list, select and enable the following features:
@@ -72,7 +72,7 @@ Before you begin, the following must be configured:
 3. On the **Multiple VAT registrations** tab, set **VAT declaration**, **EU Sales List**, and **Intrastat** to **Yes** to activate VAT reporting, EU sales list reporting, or Intrastat reporting respectively, for the selected legal entity.
 
 > [!NOTE]
-> Only country-specific functionality that's applicable to the country of the primary address of the selected legal entity is available. Formats for the VAT declaration, EU sales list, and Intrastat are available for countries of other VAT registrations. Other country-specific functionality that is applicable to the countries of other VAT registrations isn't available in this legal entity.
+> Only country/region-specific functionality that's applicable to the country/region of the primary address of the selected legal entity is available. Formats for the VAT declaration, EU sales list, and Intrastat are available for countries/regions of other VAT registrations. Other country/region-specific functionality that's applicable to the countries/regions of other VAT registrations isn't available in this legal entity.
 
 ## Set up country/region properties for multiple VAT registrations
 
@@ -81,17 +81,17 @@ Before you begin, the following must be configured:
 
     The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country (for example from Belgium to Belgium):
 
-      - By default, the list code is **EU trade**, and it's transferred to the EU sales list.
-      - Documents are transferred to Intrastat.
+    - By default, the list code is **EU trade**, and it's transferred to the EU sales list.
+    - Documents are transferred to Intrastat.
 
 > [!NOTE]
-> The country of the primary address of the legal entity must be set as an **EU** (not Domestic) country type on the **Country/region properties** tab, in the case it's an EU member. 
+> If the country/region of the legal entity's primary address is an EU member state, it must be set as an **EU** (not **Domestic**) country type on the **Country/region properties** tab. 
 
 ## <a name="intrastat-reporting"></a>Intrastat reporting for multiple VAT registrations
 
 ### Set up Intrastat for multiple VAT registrations
 
-Intrastat parameters specified for a Legal Entity are applicable for all tax registrations set up in this Legal Entity.
+Intrastat parameters that are specified for a legal entity apply to all tax registrations that are set up in that legal entity.
 
 1.  Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2.  On the **Intrastat** tab, set up the parameters on the following FastTabs:
@@ -105,7 +105,8 @@ Intrastat parameters specified for a Legal Entity are applicable for all tax reg
     - Commodity code hierarchy
 
     ![Foreign trade parameters1.](media/Multipleid-image2.png)
-3. Go to **Tax** > **Setup** > **Foreign trade** > [**Compression of Intrastat**](emea-intrastat.md#compressing-rules) to set up Intrastat compression rules. All tax registrations have the same setup for compression rules.
+
+3. Go to **Tax** \> **Setup** \> **Foreign trade** \> [**Compression of Intrastat**](emea-intrastat.md#compressing-rules) to set up Intrastat compression rules. All tax registrations have the same setup for compression rules.
 
 For more information about how to configure Intrastat, see [Intrastat overview](emea-intrastat.md).
 
@@ -143,33 +144,30 @@ For more information, see [Download ER configurations from the Global repository
 
 ### Transfer and report Intrastat
 
-1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+1. Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 2. Select **Transfer**.
 3. In the **Tax registration number** dialog box, select the tax registration number to transfer transactions for, and then select **OK**.
 
-    ![transfer intrastat.](media/Multipleid-image8.png)
+    ![Tax registration number selected in the Tax registration number dialog box.](media/Multipleid-image8.png)
 
 4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then select **OK**.
 
-    ![Intrastat  Transfer  dialog box.](media/Multipleid-image9.png)
+    ![Documents selected in the Intrastat (Transfer) dialog box.](media/Multipleid-image9.png)
 
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > In the 10.0.19 and 10.0.20 releases, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
+    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: the Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
-6. Select **Output** > **Report**.
+6. Select **Output** \> **Report**.
 7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
-
-    ![Intrastat  Reporting  dialog box.](media/Multipleid-image10.png)
-
 8. In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
-9. Set **Generate file** to **Yes** to generate an electronic reporting file, and in the **File name** field, enter the name of the output electronic file if applicable.
-10. Set **Generate report** to **Yes** to generate a Microsoft Excel report. Then, in the **Report file name** field, enter the name of the output Excel file if applicable.
+9. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file, if applicable.
+10. Set the **Generate report** option to **Yes** to generate a Microsoft Excel report. Then, in the **Report file name** field, enter the name of the output Excel file, if applicable.
 
-    ![Intrastat report dialog box.](media/Multipleid-image11.png)
+    ![Intrastat Report dialog box.](media/Multipleid-image11.png)
 
-11. The dialog box also contains country-specific fields that are required in the country-specific Intrastat report. Set these fields as required.
+11. The dialog box also contains country/region-specific fields that are required in the country/region-specific Intrastat report. Set these fields as required.
 12. Select **OK** to generate the report.
 
 ## <a name="eu-sales-list"></a>EU sales list reporting for multiple VAT registrations 
@@ -208,9 +206,9 @@ All tax registrations have the same settings for EU sales list parameters.
 2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country of your tax registration.
 3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
 4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
-5. In the **Report cash discount** field, select **Yes** if the selected country/region cash discount must be transferred to EU sales list. Select **No** if the selected country/region cash discount must not be transferred to EU sales list. Leave the value as **Default** if the value specified in the **Report cash discount** field on **Transfer** FasTab must be applied to the selected country/region.
+5. In the **Report cash discount** field, select **Yes** if the selected country/region cash discount must be transferred to the EU sales list. Select **No** if the selected country/region cash discount must not be transferred to EU sales list. Leave the value set to **Default** if the value that's specified in the **Report cash discount** field on **Transfer** FastTab must be applied to the selected country/region.
 
-    ![foreign trade parameters 3.](media/Mult-tax-cash-disc.png)
+    ![Report cash discount field on the Foreign trade parameters page.](media/Mult-tax-cash-disc.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
