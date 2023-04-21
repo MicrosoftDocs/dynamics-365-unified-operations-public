@@ -39,6 +39,30 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.35 release
+
+### Integration with Outlook for contacts, appointments, and tasks
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Exchange web service API is transitioning from SOAP to REST. |
+| **Replaced by another feature?**   | No replacement is planned |
+| **Product areas affected** | Supply Chain Management - Sales and marketing |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Deprecated. As of December 1, 2023, Supply Chain Management integration with Outlook for contacts, appointments, and tasks will no longer be supported or receive security updates. 
+ 
+The existing integration with the Exchange Web Service uses SOAP, while Exchange Web Service is transitioning from SOAP to REST, and will only support REST going forward. The existing integration from Supply Chain Management isn’t planned to support the transition to REST. 
+ 
+As of May 1, 2024, the following capabilities will be removed and no longer available:
+•	The ability to synchronize contacts between Supply Chain Management and Outlook. 
+•	The ability to synchronize appointment activities between Supply Chain Management and Outlook.
+•	The ability to synchronize task activities between Supply Chain Management and Outlook. 
+
+To prepare for the removal, please redesign any extensions made to any of these capabilities to remove the dependency. 
+In CRM scenarioes, consider leveraging Dynamics 365 Sales integration capabilities with Outlook as the synchronization of contacts for customer accounts are supported  between Dynamics 365 Sales or Dynamics 365 Supply Chain Management https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping. 
+  
+</p> |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.29 release
 
 ### Stock transfer orders that have tax on the transfer price
