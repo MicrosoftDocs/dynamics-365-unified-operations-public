@@ -38,6 +38,8 @@ To identify the changes that are included in a PQU, follow these steps. This exa
 > [!NOTE]
 > The export to a CSV or Excel file must occur before the environment is updated. Otherwise, you can follow the preceding steps for an environment that has a similar configuration but doesn't have the update installed.
 
+[![Example of environment with quality update.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
+
 ### What's the process if a critical issue is found after a PQU?
 
 A critical issue is one or more events that cause multiple customers to have a degraded experience with one or more of our services. These issues can cause unplanned downtime, including unavailability, performance degradation, and interference with service management. If an issue with a PQU causes customer impact, we'll stop the rollout of that PQU until we can communicate and fix the issue. Typically, the next PQU will have the fix that's required to resume the rollout.
