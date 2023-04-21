@@ -74,7 +74,7 @@ The following table shows the data that can be transferred between instances and
 | Not supported | Globalization | Regulatory alerts are not transferrable between projects. |
 | Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
 | Not supported | Translation service | Translation service data can't be exported. However, you can start a new translation request in the target project after migration. |
-| Not supported | Environment history | History is not transferred for environments, they start new in the target project.  However you can access and download the history from the source project using the **Export to excel** button from each history page. |
+| Not supported | Environment history | History is not transferred for environments, they start new in the target project.  However, you can access and download the history from the source project using the **Export to excel** button from each history page. |
 
 You're responsible for migrating data that requires manual migration. However, you aren't required to migrate any or all of this data. You might choose to migrate only your most recent assets from the Asset library. Alternatively, you might choose to re-create developer cloud-hosted environments, for example, in the target project.
 
