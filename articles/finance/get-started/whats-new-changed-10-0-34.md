@@ -47,22 +47,19 @@ article was initially published.
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-|General ledger | Enable the **Global general journal** page to select multiple companies for posting.|Enable this feature to select journals across multiple companies for posting in batch from the **Global general journal** page.|Feature management|
-
-
+| General ledger | Enable the **Global general journal** page to select multiple companies for posting. | When this feature is enabled, journals across multiple companies can be selected for posting in batch mode on the **Global general journal** page. | Feature management |
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing 
-feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-finance).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-finance).
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|Cash and bank management|Reverse posted bank statement with new transactions|This feature enhances the existing feature **Reverse posted bank statement** and must be enabled before the new functionality is enabled. After enabling this feature, when **Reverse statement** is clickec, new transactions posted from bank statements will also be reversed.|
-|Cash and bank management|Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions|In **Advanced bank reconciliation**, filtering is available to select bank statement lines and bank transactions. A new grid will display bank statement lines marked as **New**, which are mixed up with matched transactions before.|
-|Cash and bank management|Enable batch mode for **Mark as reconciled** in advance bank reconciliation|After all matchings are done, click **Mark as reconciled** to complete the reconciliation. If data volume is large, it will take long time to complete the reconciliation online, which sometimes results in session timeout. If this feature is switched on, batch processing option will be available for **Mark as reconciled**.|
-|Cash and bank management|Display vouchers in bank statement|When this feature is enabled, in bank statement, users can directly check vouchers from posted new transactions.|
-|General ledger |	Financial tags|	When the Financial tags feature is enabled, financial tags appear on more journals and documents. Financial tags have been added to the following journals:  Periodic journal, Fixed asset journal, Allocation journal, Reporting currency adjustment journal, Vendor invoice journal, Invoice register, and the Vendor approval journal.|
+| Cash and bank management | Reverse posted bank statement with new transactions | This feature enhances the existing **Reverse posted bank statement** feature and must be enabled before the new functionality is enabled. After this feature is enabled, when **Reverse statement** is selected, new transactions that were posted from bank statements will also be reversed. |
+| Cash and bank management | Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions | In Advanced bank reconciliation, filtering is available to help select bank statement lines and bank transactions. A new grid will show bank statement lines that are marked as **New**. Previously, those lines were mixed together with matched transactions. |
+| Cash and bank management | Enable batch mode for **Mark as reconciled** in advance bank reconciliation | After all matchings are done, select **Mark as reconciled** to complete the reconciliation. If the data volume is large, the reconciliation will take a long time to be completed online and will sometimes cause a session time-out. If this feature is turned on, the batch processing option will be available for **Mark as reconciled**. |
+| Cash and bank management | Display vouchers in bank statement | When this feature is enabled, users can check vouchers directly from posted new transactions on bank statements. |
+| General ledger | Financial tags | When the **Financial tags** feature is enabled, financial tags appear on more journals and documents. Financial tags have been added to the following journals: Periodic journal, Fixed asset journal, Allocation journal, Reporting currency adjustment journal, Vendor invoice journal, Invoice register, and Vendor approval journal. |
 
 ## Additional resources
 
