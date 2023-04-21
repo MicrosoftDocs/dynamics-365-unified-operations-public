@@ -36,12 +36,12 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of finance and operations apps (January 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md). 
+Microsoft Dynamics 365 Commerce version 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md). 
   
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.34, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article]([https://fix.lcs.dynamics.com/Issue/Details?bugId=795940](https://fix.lcs.dynamics.com/Issue/Details?bugId=805875).
+For information about the bug fixes included in each of the updates that are part of version 10.0.34, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=805875).
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
