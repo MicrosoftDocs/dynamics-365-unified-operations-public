@@ -28,10 +28,6 @@ This article lists the features that are included in the platform updates for ve
 
 This section will contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
-| Module or feature area | Feature name | More information | Enabled by |
-|---|---|---|---|
-|  |  |  |  |
-
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. 
