@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.34 (June 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.34 preview release.
 author: twheeloc
-ms.date: 04/10/2023
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.34. This version has a build number of 10.0.XXXXX and is available 
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.34. This version has a build number of 10.0.1591 and is available 
 on the following schedule:
 
 - **Preview of release:** April 2023
@@ -58,9 +58,41 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|Cash and bank management|Reverse posted bank statement with new transactions|This feature enhances existing feature “Reverse posted bank statement”. So, “Reverse posted bank statement” feature must be enabled before this new functionality is enabled. After enabling this feature, when user clicks the “Reverse Statement” button, new transactions posted from bank statements will also be reversed.|
-|Cash and bank management|Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions|When this feature is enabled, in advanced bank reconciliation, filtering will be available for user to select bank statement lines and bank transactions. Meanwhile, a new grid will be available to display bank statement lines marked as new, which are mixed up with matched transactions before.|
-|Cash and bank management|Enable batch mode for "Mark as reconciled" in advance bank reconciliation|In advanced bank reconciliation, once all matchings are done, user clicks "Mark as reconciled" to complete the reconciliation. If data volume is large, it will take long time for system to complete the reconciliation online, which sometimes results in session timeout. If this feature is switched on, batch processing option will be available for "Mark as reconciled".|
-|Cash and bank management|Display vouchers in bank statement|When this feature is enabled, in bank statement, user can directly check vouchers from posted new transactions.|
-|General ledger |	Financial tags|	When the Financial tags feature is enabled, financial tags appear on more journals and documents. For this release, tags have been added to the following journals:  Periodic journal, Fixed asset journal, Allocation journal, Reporting currency adjustment journal, Vendor invoice journal, Invoice register, and the Vendor approval journal.|
+|Cash and bank management|Reverse posted bank statement with new transactions|This feature enhances the existing feature **Reverse posted bank statement** and must be enabled before the new functionality is enabled. After enabling this feature, when **Reverse statement** is clickec, new transactions posted from bank statements will also be reversed.|
+|Cash and bank management|Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions|In **Advanced bank reconciliation**, filtering is available to select bank statement lines and bank transactions. A new grid will display bank statement lines marked as **New**, which are mixed up with matched transactions before.|
+|Cash and bank management|Enable batch mode for **Mark as reconciled** in advance bank reconciliation|After all matchings are done, click **Mark as reconciled** to complete the reconciliation. If data volume is large, it will take long time to complete the reconciliation online, which sometimes results in session timeout. If this feature is switched on, batch processing option will be available for **Mark as reconciled**.|
+|Cash and bank management|Display vouchers in bank statement|When this feature is enabled, in bank statement, users can directly check vouchers from posted new transactions.|
+|General ledger |	Financial tags|	When the Financial tags feature is enabled, financial tags appear on more journals and documents. Financial tags have been added to the following journals:  Periodic journal, Fixed asset journal, Allocation journal, Reporting currency adjustment journal, Vendor invoice journal, Invoice register, and the Vendor approval journal.|
 
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Finance version 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=805875).
+
+### Regulatory updates
+
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release.
+
+### Dynamics 365 and industry clouds: 2023 release wave 1 plan
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+Check out [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+
+### Removed and deprecated features
+
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
