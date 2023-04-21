@@ -92,8 +92,22 @@ Here is the fallback order for product master, product dimension(s), and product
 
 ### Assign media to product master
 
+Default media for a product master is assigned using the **Master** tab in the product media view using the same steps described in the [**Assign media to simple products**](#assign-media-to-simple-products) section. The only difference in assignment workflow between simple products and product masters is that product masters can have one or more dimensions (color, style, size, configuration), which in turn define possible product variants for a master product. 
+
 #### Assign media to product dimensions
-[todo]
+For product masters with multiple dimensions, it's common that media assignments are only needed for a subset of dimensions.  For example, in the apparel industry it is common to take photos of different colors and styles of the same master product shirt, but not different photos for every size.  
+
+To assign media to certain product dimensions, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product master (that is configured in HQ with more than one dimension) using its name or product ID in the search view on the left, and select it.
+3. Click the **Edit product media** button in the upper right.
+4. Click on the **Dimensions** tab in-between the Master tab and the Variants tab at the top of the workspace.
+5. Click on the **Create assignment matrix** button in the middle of the workspace (if someone has already created an assignment matrix for this product master, then skip ahead).
+6. Choose the dimension(s) that you want to use for media assignments and then click the **Create assignment matrix** button at the bottom of the panel.
+7. There will now be a grid matrix with the chosen dimensions.  Click on a cell in the grid to navigate to the assignment view for that dimension value.
+8. Edit your primary and additional media assignments for the chosen dimension combination using the **Add media** and **Remove** (trash can icon on each media item when selected) buttons. 
+9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
+10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Assign media to product variants
 [todo]
