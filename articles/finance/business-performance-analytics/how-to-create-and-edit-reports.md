@@ -1,38 +1,39 @@
 ---
 # required metadata
 
-title: How to Create and Edit Reports
+title: Business performance analytics reports
 description: This article describes how to create and edit reports in business performance analytics.
 author: jkhaira7
+ms.author: jkhaira 
+ms.reviewer: twheeloc
 ms.date: 04/20/2023
-ms.topic: article
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 ---
 
-# How to Create and Edit Reports
-Business performance analytics (BPA) gives you the ability to create or customize reports with data fields you are interested in. You may also change any visuals in the reports. 
+# How to create and edit business performance analytics reports
+Business performance analytics gives you the ability to create or customize reports with data fields you are interested in. You may also change any visuals in the reports. 
 
-# Create a New Report
-To create a new report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. This will open a dialog prompting you to: 
+## Create a new report
+To create a new report, go to **Reports** in the **Data explorer** section of business performance analytics. 
+Select one of the following options: 
+ - **Start with a blank report**: Select this option to open an empty Power BI embedded report containing your Power BI dataset. You can then start building the report to your liking. 
+ - **Duplicate a Microsoft report**: Select this option to pick a report from a list of reports that are available in business performance analytics. These reports can be modified if needed.  
 
-•	“Start with a blank report”: If you select this option, an empty Power BI embedded report will open containing your Power BI dataset. You can then start building the report to your liking. 
-OR
-•	Duplicate a Microsoft report: If you select this option, a dropdown menu will appear. This will allow you to select from a list of reports that Microsoft makes available with the BPA app. You can use these reports as is. Or you can modify the report visuals or data fields to suit your needs. 
+### Edit a report
+After you open a report, you may edit its visuals or data fields using **Edit**. One exception are reports with type **Microsoft** that can't be edited. You must duplicate this report and edit the duplicated copy. 
 
-# Edit a Report
-Once you open a report, you may edit its visuals or data fields using the “edit” button. One exception is reports with type “Microsoft”. You cannot directly edit a report with the type “Microsoft”. You must duplicate this report and edit the duplicated copy. Follow these guidelines on how to edit Power BI embedded reports. 
-Remember to save your edits before exiting the report or you may lose your work. 
+### Duplicate a aeport  
+To duplicate a report, go to **Reports** in the **Data explorer** section of business performance analytics. Select the report to duplicate. You may only select one report at a time. Click **Duplicate** on the **Reports** page. This duplicated version will become available on the **Reports** page. 
+You may also duplicate a report that you already have open by clicking **Duplicate** button on the report. Once the report is duplicated, you will receive a **Report duplicated** message with a link to the duplicated report.
 
-# Duplicate a Report  
-To duplicate a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to duplicate. You may only select one report at a time. Then, click the “Duplicate” button on the top ribbon on the “Reports” page. This duplicate version will become available on the Reports page. 
-You may also duplicate a report that you already have open by clicking the “Duplicate” button on the top ribbon inside the report. Once the report is duplicated, you will receive a message saying “Report duplicated” with a link to the duplicated report.
+### Rename a report
+To rename a report, go to **Reports** page in the **Data explorer** section of business performance analytics. Select the report to rename. You may only select one report at a time. Click **Rename** on the **Reports** page. You will rename and save the new report name. You may also rename a report that you already have open by clicking **Rename** on the report. 
 
-# Rename a Report
-To rename a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to rename. You may only select one report at a time. Then, click the “Rename” button on the top ribbon on the “Reports” page. A dialog box will open allowing you to rename the report and save the new report name. You may also rename a report that you already have open by clicking the “Rename” button on the top ribbon inside the report. 
+### Delete a report
+You can't delete reports with type “Microsoft”. You can only delete reports with type **Custom**. 
+To delete a report: 
+1.	Go to the **Reports** page in the **Data explorer** section of business performance analytics. Select the report to delete and click **Delete**. 
+2.	You may delete multiple reports at once. 
 
-# Delete a Report
-You cannot delete reports with type “Microsoft”. You can only delete reports with type “Custom”. 
-1.	To delete a report, navigate to the “Reports” page in the “Data Explorer” section of the BPA app. Select the report you would like to delete and click the “Delete” button. 
-2.	You may delete multiple reports at once so long as none of the selected reports are of type “Microsoft”. 
-**Note**: Report sharing is not available in Public Preview. 
