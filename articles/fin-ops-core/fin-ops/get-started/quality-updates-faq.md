@@ -38,7 +38,7 @@ To identify the changes that are included in a PQU, follow these steps. This exa
 > [!NOTE]
 > The export to a CSV or Excel file must occur before the environment is updated. Otherwise, you can follow the preceding steps for an environment that has a similar configuration but doesn't have the update installed.
 
-:::image type="content" source="../media/how-to-get-kb-list-pqu.png" alt-text="Example of environment with quality update."::: 
+:::image type="content" source="./media/how-to-get-kb-list-pqu.png" alt-text="Example of environment with quality update."::: 
 
 ### What's the process if a critical issue is found after a PQU?
 
