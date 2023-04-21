@@ -476,6 +476,12 @@
           href: help/custom-help-overview.md
         - name: Preparing content for use with the Help pane
           href: help/preparing-content.md
+        - name: The ConvertHtmlToJson tool
+          href: help/custom-help-toolkit-ConvertHtmlToJson.md
+        - name: The HtmlLocaleChanger tool
+          href: help/custom-help-toolkit-HtmlLocaleChanger.md
+        - name: Convert Dynamics AX custom Help for use in Dynamics 365
+          href: help/migrate-dynamicsax2012.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
         - name: Language and locale descriptors in across product and help
