@@ -1,6 +1,116 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/personalization-gdpr.md",
+      "redirect_url": "/dynamics365/commerce/personalization-opt-out",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-address-data-model.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-address-data-model.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-asset-classification-detail-invent-section.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-asset-classification-detail-invent-section.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-customers-controller-processor.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-customers-controller-processor.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-define-search.png",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-define-search.png",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-person-search-list-page.png",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-person-search-list-page.png",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-privacy-01-w-note.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-privacy-01-w-note.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-privacy-02.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-privacy-02.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-privacy-03-w-note.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-privacy-03-w-note.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-process-report.png",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-process-report.png",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-review-search-results.png",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-review-search-results.png",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/media/gdpr-sensitive-data-4.jpg",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/media/privacy-sensitive-data-4.jpg",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-asset-classification-values.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-asset-classification-values",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-auditing-sensitive-data.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-auditing-sensitive-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-ax2012.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-ax2012",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-extend-person-search-report.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-extend-person-search-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-guide.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-home-page.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-lcs.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/gdpr-person-search-report.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-person-search-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr/respond-dsr-request-talent.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/respond-dsr-request-talent",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md",
       "redirect_url": "setup-deploy-on-premises-latest",
       "redirect_document_id": "false"

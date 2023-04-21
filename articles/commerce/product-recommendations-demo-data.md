@@ -4,7 +4,7 @@
 title: Create recommendations with demo data
 description: This article provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
-ms.date: 09/08/2022
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -77,7 +77,7 @@ The extension contains a datafile called 'RecoMockDataset.csv', which allows you
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](personalization-opt-out.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 

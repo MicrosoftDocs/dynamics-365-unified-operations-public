@@ -4,7 +4,7 @@
 title: Product recommendations overview
 description: This article provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
 author: Moonma
-ms.date: 05/26/2020
+ms.date: 04/21/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -77,7 +77,7 @@ The following table describes various types of automated product recommendations
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](personalization-opt-out.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 

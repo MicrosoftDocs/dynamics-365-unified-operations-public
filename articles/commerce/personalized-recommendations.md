@@ -2,7 +2,7 @@
 title: Enable personalized product recommendations
 description: This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/18/2020
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -108,7 +108,7 @@ To apply personalization to an existing recommendation list in the Commerce site
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](personalization-opt-out.md)
 
 [Add product recommendations on POS](product.md)
 

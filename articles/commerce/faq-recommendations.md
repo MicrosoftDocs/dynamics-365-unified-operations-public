@@ -88,7 +88,7 @@ After enabling product recommendations, you will need to add the recommendations
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](personalization-opt-out.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 

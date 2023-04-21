@@ -2,7 +2,7 @@
 title: Store Commerce app capabilities
 description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/25/2022
+ms.date: 04/21/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -215,5 +215,4 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, accessibility, the General Data Protection Regulation (GDPR), the European Union (EU) Data Boundary, and so on. | | |
-
+| Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, and accessibility and various privacy laws and regulations. | | |
