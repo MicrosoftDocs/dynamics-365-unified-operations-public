@@ -157,7 +157,7 @@ The software doesn't support this option. You'll have to open a support ticket s
 
 ### What happens if my migration is canceled or rolled back?
 
-Your source project will be unlocked, and you'll receive an email notification that the migration wasn't successfully completed. Open a support ticket, and we will help you.
+Your source project will be unlocked, and you'll receive an email notification that the migration wasn't successfully completed. Open a support ticket, and we'll help you.
 
 ### I'm currently a First Release customer. Will I still be a First Release customer after migration?
 
