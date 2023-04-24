@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Reports in business performance analytics
