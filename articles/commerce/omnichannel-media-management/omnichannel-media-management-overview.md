@@ -121,8 +121,14 @@ To assign media to certain product dimensions, follow these steps:
 #### Using publish groups for media assignments
 [todo]
 
+### Reseting assignments to defaults
+[Todo]
+
 ## Category media assignments
 [todo]
+
+# Omnichannel content media library
+[Todo]
 
 ## Bulk import and export of media assignments
 [todo: Link to Petri's documentation]
