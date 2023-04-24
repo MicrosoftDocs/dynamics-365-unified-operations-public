@@ -14,7 +14,7 @@ ms.custom:
 
 ---
 
-# Installing business performance analytics
+# Install business performance analytics
 
 >[!NOTE]
 >The functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about participating in public preview for business performance analytics, contact bpateam@microsoft.com. 
@@ -23,7 +23,7 @@ ms.custom:
 This article describes how to install business performance analytics. The administrator who has completed the configuration steps should login. 
 
 > [!NOTE]
-> For public preview, Microsoft will email the link to you after you join the preview group. 
+> For public preview, Microsoft will email a link after you join the preview group. 
   
 ## Install the business performance analytics app  
 1.  Click on the link provided by Microsoft. 
