@@ -93,7 +93,7 @@ Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryO
  - MIN 
  - MAX
 
- It supports <c>WHERE</c> clauses, and multiple <c>WHERE</c> clauses are <c>AND</c>ed.
+ It supports WHERE clauses, and multiple WHERE clauses are ANDed.
 
  It supports all seven comparison expressions: namely,
 
@@ -102,9 +102,9 @@ Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryO
  - <, <=
  - LIKE
 
- It supports <c>ORDER BY</c> clauses.
+ It supports ORDER BY clauses.
 
- It supports <c>GROUP BY</c> clauses.
+ It supports GROUP BY clauses.
 
  It supports all 16 hints:
 
