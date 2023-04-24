@@ -3,7 +3,7 @@
 title: Business performance analytics home page
 description: This article provides information about business performance analytics. 
 author: jinniew
-ms.author: jinniew
+ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 04/24/2023
 ms.topic: conceptual
@@ -16,8 +16,7 @@ ms.search.form: business-performance-analytics
 
 # About business performance analytics
 
-Business performance analytics simplifies the process of gaining insights from data, providing a comprehensive and user-friendly view across multiple business processes,
-and delivering insights directly to all users, regardless of technical ability. 
+Business performance analytics simplifies the process of gaining insights from data, providing a comprehensive and user-friendly view across multiple business processes, and delivering insights directly to all users, regardless of technical ability. 
 
 >[!NOTE]
 >The functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
