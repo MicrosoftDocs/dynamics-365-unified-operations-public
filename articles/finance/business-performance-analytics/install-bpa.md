@@ -32,11 +32,10 @@ This article describes how to install business performance analytics. The admini
 4. Accept the terms and conditions, and then select **Install**. App installation begins in the selected environment.
 5. You can check the installation status in Power Platform admin center. After installation is completed, the status will be **Installed**.
 6. After the app is installed, confirm that the following service principal is provisioned.
+    The following Azure Active Directory (Azure AD) application should be registered in Azure AD.
 
-The following Azure Active Directory (Azure AD) application should be registered in Azure AD.
+    | Application | App ID |
+    |-------------|--------|
+    | far-dataverse-pipeline | 0e3659ee-3f34-4d0f-be21-d11f7141572f |
 
-| Application | App ID |
-|-------------|--------|
-| far-dataverse-pipeline | 0e3659ee-3f34-4d0f-be21-d11f7141572f |
-
-To confirm that the application is registered in Azure AD, review the **All applications** list in Azure AD. For more information, see [View enterprise applications](//azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact Support.
+    To confirm that the application is registered in Azure AD, review the **All applications** list in Azure AD. For more information, see [View enterprise applications](//azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact support.
