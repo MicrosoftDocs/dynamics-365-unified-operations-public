@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create predefined product variants
-description: This procedure walks through creating product variants for a product master using the combinations of product dimensions. 
+description: This article provides an example scenario that shows how to create predefined product variants for a product master. It also describes how to work with improved variant suggestions and how to assign variant-specific item sales tax groups if needed.
 author: t-benebo 
 ms.date: 08/09/2022
 
@@ -27,6 +27,8 @@ ms.dyn365.ops.version: 10.0.19
 # Predefined product variants
 
 [!include [banner](../../includes/banner.md)]
+
+This article provides an example scenario that shows how to create predefined product variants for a product master. It also describes how to work with improved variant suggestions and how to assign variant-specific item sales tax groups if needed.
 
 ## Example scenario: Create predefined product variants
 
@@ -107,6 +109,7 @@ To generate product variant suggestions when the *Variant suggestions page impro
 ## Set up variant-specific sales tax groups for sales and/or procurement
 
 [!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.34 GA -->
 
 The *Apply sales tax group for product variants in sales and procurement* feature lets you assign variant-specific item sales tax groups both for sales and for procurement. The feature applies the following rules:
 
