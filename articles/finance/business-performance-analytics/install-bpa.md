@@ -38,4 +38,4 @@ The following Azure AD apps are registered in Azure AD.
 | ---------------------- | ------------------------------------ |
 | far-dataverse-pipeline | 0e3659ee-3f34-4d0f-be21-d11f7141572f |
 
-To verify the application is registered in Azure AD, check the All applications list. For more details, see [View enterprise applications](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact support. 
+To verify the application is registered in Azure AD, check the All applications list. For more details, see [View enterprise applications](//azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact support. 
