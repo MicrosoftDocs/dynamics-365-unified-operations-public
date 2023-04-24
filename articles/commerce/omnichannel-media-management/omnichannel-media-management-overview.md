@@ -153,10 +153,8 @@ Mermaid example [to be deleted]
 ```
 [todo]
 
-# Omnichannel media management prerequisites and configuration
-[todo]
 
-# Migrating legacy product media libraries to 10.0.35+ omnichannel media management data model
+# Migrating legacy product media libraries to latest 10.0.35+ omnichannel media management data model
 [todo]
 
 # Omnichannel merchandising media extensibility
