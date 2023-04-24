@@ -55,7 +55,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.33 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of Finance and Operations apps (April 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md)<!--KFM: confirm link -->.
+Microsoft Dynamics 365 Supply Chain Management 10.0.33 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of Finance and Operations apps (April 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md).
 
 ### Bug fixes
 
