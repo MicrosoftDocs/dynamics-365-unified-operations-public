@@ -1,16 +1,31 @@
 # required metadata
 
-title: Reports in BPA
-description: As part of public preview, we are excited to release the first set of composable reports that relate to the Record to report value chain
+title: Reports in business performance analytics
+description: This article describes the first set of composable reports that relate to the record to report value chain in business performance analytics
 author: jinniew
-ms.date: 04/22/2023
-ms.topic: article
+ms.author: jinniew
+ms.reviewer: twheeloc 
+ms.date: 04/24/2023
+ms.topic: conceptual
 ms.prod: 
-ms.technology: 
----
-# Reports in Business performance analytics
+ms.technology:
+ms.custom:
 
-We are proud to announce the release of six comprehensive financial reports for public preview. These reports have been designed to provide a detailed overview of an organization's financial health, allowing stakeholders to make informed decisions and drive business success. By utilizing a robust data model in Power BI, we have ensured that these reports are not only accurate and insightful but also easily customizable to suit the unique needs of your organization.
+---
+
+# Reports in business performance analytics
+
+>[!NOTE]
+>The functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
+>For more information about participating in public preview for business performance analytics, contact bpateam@microsoft.com.
+
+
+## Record to report 
+This article describes the financial reports that are available in business performance analytics. 
+These reports have been designed to provide a detailed overview of an organization's financial health, allowing stakeholders to make informed decisions and drive 
+business success. By utilizing a robust data model in Power BI, we have ensured that these reports are not only accurate and insightful but also easily customizable to 
+suit the unique needs of your organization.
+
 
 | Report                              | F&O Report              | Purpose                                                                                                                                                                                                                    |
 | ----------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
