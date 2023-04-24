@@ -334,6 +334,8 @@
             href: deployment/infrastructure-stack.md
           - name: Deploy a new environment
             href: deployment/deployenvironment-newinfrastructure.md
+          - name: Delete a Production Finance and Operations apps environment
+            href: deployment/delete-production-environment.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
           - name: Migrate an environment
