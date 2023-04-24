@@ -4,7 +4,7 @@
 title: Configure business performance analytics
 description: This article describs how to configure business performance analytics
 author: jinniew
-ms.author: jinniew
+ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 04/24/2023
 ms.topic: conceptual
@@ -24,10 +24,9 @@ This article describes how to configure business performance analytics.
 
 ## Configuration of business performance analytics 
 
-To successfully complete the set up business performance analytics, follow the steps below. 
-You must have System administrator and System customizer access in Power platform admin center. For more information, see 
-[Power Platform admin center](/admin.powerplatform.microsoft.com/), system administrator access in Dynamics 365 Finance, and access to create environments in Microsoft 
-Dynamics Lifecycle Services (LCS). 
+To successfully set up business performance analytics, follow the steps below. 
+
+You must have System administrator and System customizer access in [Power platform admin center](https://admin.powerplatform.microsoft.com). The user must also have system administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics Lifecycle Services (LCS). 
 
 ### Configure Dataverse 
 
@@ -37,8 +36,8 @@ To configure Dataverse for business performance analytics, follow these steps:
 3. If Dataverse hasn't yet been set up, select **Setup**. After the setup has been successfully completed, the Dataverse environment name that is linked to in the 
 Finance environment should be listed. 
 If this integration was set up with an existing Microsoft Power Platform environment, contact your administrator to make sure that the linked environment isn't in the 
-disabled state. For more information, see [Enable Power Platform integration](/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). To access the 
-Microsoft Power Platform admin site, go to [Power Platform admin](/admin.powerplatform.microsoft.com/environments).
+disabled state. For more information, see [Enable Power Platform integration](//fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). 
+To access the Microsoft Power Platform admin center, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 ### Configure your Azure AD tenant 
 
@@ -48,7 +47,7 @@ the project owner role or the environment manager role be assigned to the user i
  2. A Dynamics 365 Finance or equivalent license is applied to the user who is installing business performance analytics.
 
 ### Move data from production to sandbox environment 
-Follow these steps, [Data movement](fin-ops-core/dev-itpro/database/dbmovement-operations) to move data from production to sandbox. 
+To move data from production to sandbox, follow these steps, [Data movement](//fin-ops-core/dev-itpro/database/dbmovement-operations). 
 This data will be loaded in business performance analytics and is a prerequisite before installing business performance analytics.   
 
 ### Required configurations  
