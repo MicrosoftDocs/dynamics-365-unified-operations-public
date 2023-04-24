@@ -4,7 +4,7 @@
 title: Install business performance analytics
 description: This article describes how to install business performance analytics
 author: jinniew
-ms.author: jinniew
+ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 04/24/2023
 ms.topic: conceptual
