@@ -38,6 +38,8 @@ To identify the changes that are included in a PQU, follow these steps. This exa
 > [!NOTE]
 > The export to a CSV or Excel file must occur before the environment is updated. Otherwise, you can follow the preceding steps for an environment that has a similar configuration but doesn't have the update installed.
 
+:::image type="content" source="./media/how-to-get-kb-list-pqu.png" alt-text="Example of environment with quality update."::: 
+
 ### What's the process if a critical issue is found after a PQU?
 
 A critical issue is one or more events that cause multiple customers to have a degraded experience with one or more of our services. These issues can cause unplanned downtime, including unavailability, performance degradation, and interference with service management. If an issue with a PQU causes customer impact, we'll stop the rollout of that PQU until we can communicate and fix the issue. Typically, the next PQU will have the fix that's required to resume the rollout.
@@ -52,7 +54,7 @@ It's important to note that hotfixes that are deployed as part of a PQU go throu
 
 ### Can customers proactively install a PQU ahead of the schedule?
 
-Yes. You can proactively install a PQU. Microsoft will skip the update if the environment's current build version is equal to or more than the PQU that's being deployed.
+Yes. You can proactively install a PQU. Microsoft will skip the update if the environment's current build version is equal to or more than the PQU that's being deployed. If you apply the PQU manually the [customers AOT package will also be promoted.](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#things-to-consider-about-production-updates). 
 
 ### Under what circumstances will a PQU be skipped?
 

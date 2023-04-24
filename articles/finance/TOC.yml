@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.34 (June)  
+          href: get-started/whats-new-changed-10-0-34.md
         - name: Finance 10.0.33 (April)  
           href: get-started/whats-new-changed-changed-10-0-33.md
         - name: Finance 10.0.32 (March) 
@@ -66,7 +68,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
         - name: Proactive quality updates
           items:
-          - name: Proactive quality updates Overview
+          - name: Proactive quality updates overview
             href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
           - name: Release schedule for proactive quality updates
             href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/finance
@@ -256,8 +258,6 @@
           href: accounts-payable/invoice-capture-mapping-rules.md
         - name: Invoice capture workspace
           href: accounts-payable/invoice-capture-workspace.md
-        - name: Invoice capture advanced settings
-          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
         - name: Invoice capture received files

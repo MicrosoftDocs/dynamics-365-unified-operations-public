@@ -46,6 +46,9 @@ To configure the tolerances, go to **Landed cost \> Over/under setup \> Over/und
 | Amount tolerance | Enter the amount tolerance that should be applied to a whole purchase order. |
 | Percentage tolerance | Enter the percentage tolerance that should be applied to an individual purchase order line. |
 
+> [!NOTE]
+> The system will first check whether the total amount of the received purchase order falls within the amount tolerance. If it does, the system will then check the percentage tolerance to manage over/under delivery scenarios.
+
 ## Over/under reasons
 
 When an over or under quantity is associated with a voyage line that is received, you might have to identify the reason for the over or under quantity. In this case, you can select the over-delivery or under-delivery reason on the receiving line when the goods are received.

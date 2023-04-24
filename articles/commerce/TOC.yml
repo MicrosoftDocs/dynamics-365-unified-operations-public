@@ -12,14 +12,10 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.34 (June 2023)
+          href: get-started/whats-new-commerce-10-0-34.md
         - name: Commerce 10.0.33 (April 2023)
           href: get-started/whats-new-commerce-10-0-33.md
-        - name: Commerce 10.0.32 (March 2023)
-          href: get-started/whats-new-commerce-10-0-32.md
-        - name: Commerce 10.0.31 (February 2023)
-          href: get-started/whats-new-commerce-10-0-31.md
-        - name: Commerce 10.0.30 (November 2022)
-          href: get-started/whats-new-commerce-10-0-30.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -65,7 +61,13 @@
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
         - name: Proactive quality updates
-          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/commerce
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
