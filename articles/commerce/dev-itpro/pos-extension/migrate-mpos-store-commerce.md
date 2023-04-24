@@ -33,12 +33,12 @@ For more information about Store Commerce app, see [Store Commerce app](../store
 | Device activation | Required | Required |
 | Installer | Download from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. | Download from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Modern POS (SEALED)**. |
 | Extensions | [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) | [Retail SDK](../retail-sdk/retail-sdk-overview.md) for non-sealed MPOS and [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) for sealed MPOS |
- 
+
 ## Migrate to the Store Commerce app from MPOS
 
 1. Synchronize all your transaction and custom data from the channel database to Commerce headquarters. This data includes any offline transaction and custom data.
 1. Post all the statements to Commerce headquarters, and ensure that there are no pending transactions to synchronize or post.
-1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in Commerce headquarters, and then run the **Registers** (**1070**) and **Channel configuration** (**1090**) jobs.
+1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in Commerce headquarters, and then run the **Channel configuration** (**1070**) and **Registers** (**1090**) jobs.
 1. Uninstall MPOS. You don't have to uninstall the offline database.
 1. Download the Store Commerce installer from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**.
 1. Install the Store Commerce app by passing the required parameters and related details. For information about setup and installation in offline mode, see [Store Commerce app](../store-commerce.md).

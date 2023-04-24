@@ -95,6 +95,7 @@ For more information about hardware stations, see [Configure and install Retail 
 Consider the following information as you plan your POS implementation in your stores:
 
 - **Functional requirements** – The core business processes and capabilities are the same, regardless of the platform, form factor, or deployment topology. Therefore, most retailers don't have to consider functional requirements when they plan their implementation.
+
 - **Connectivity** – Network availability (wide area network \[WAN\] and local area network \[LAN\]) is a major factor that requires careful consideration. Any benefits that a zero-footprint, cloud-hosted solution brings in terms of cost and simplicity are lost if the system isn't available for business-critical processes.
 
     Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:
@@ -105,8 +106,11 @@ Consider the following information as you plan your POS implementation in your s
     These two options aren't mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.
 
 - **Hardware devices/peripherals** – One important aspect of a Retail POS system is its ability to use POS peripherals such as printers, cash drawers, and payment terminals. Although all the available POS options can use peripheral devices, only Store Commerce for Windows supports them directly. For all other applications, one or more hardware stations are required. Although this approach adds flexibility, additional components must be deployed, configured, and serviced.
+
 - **System requirements** – The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because CPOS runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](../fin-ops-core/fin-ops/get-started/system-requirements.md).
+
 - **Deployment and servicing** – The complexity of the deployment and servicing requirements can vary, depending on the application and deployment choices. For example, for a cloud-hosted CPOS deployment, you don't have to install and update on every device. Therefore, this approach greatly reduces complexity and cost. However, if you deploy Store Commerce on every register and enable offline mode, and you also deploy shared hardware stations, you greatly increase the number of endpoints that must be managed.
 
+- **Web browser considerations** - Popular web browser have the ability to put idle tabs to sleep to free up system resources, which can cause unexpected behavior when using Store Commerce for web. If you're using Store Commerce for web, we recommend that you disable this feature. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

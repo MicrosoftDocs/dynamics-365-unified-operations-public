@@ -105,6 +105,17 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 - Key passphrase
 - Key version
 
+#### Enable a dedicated or shared hardware station
+
+Sign into Commerce Headquarters, and follow these steps for each store that you wish to configure payment terminals for:
+
+1. Go to **Retail and Commerce \> Channel setup \> Stores** and select the store you're configuring payment terminals for.
+2. Scroll down to the **Hardware Station** FastTab and select Add. 
+3. In the **Hardware Station type** field, select Dedicated
+4. Save your changes to the store, and run job 1070 (Channels)
+
+NOTE: If you're using a shared hardware station, see the instructions in the **Configure a new Retail hardware station** section of the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation#configure-a-new-retail-hardware-station) help topic. 
+
 #### Set up a Dynamics 365 POS hardware profile
 
 1. Sign in to Commerce headquarters and go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
