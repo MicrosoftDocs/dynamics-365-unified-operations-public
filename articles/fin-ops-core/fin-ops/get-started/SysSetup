@@ -1,0 +1,55 @@
+---
+title: SysSetup
+description: This article describes about SysSetup Interface and how to onboard classes to use SysSetup interface.
+author: najaidee
+ms.date: 24/04/2023
+ms.topic: article
+audience: Developer
+ms.reviewer: 
+ms.search.region: Global
+ms.author: najaidee
+ms.search.validFrom: 2021-10-26
+ms.dyn365.ops.version: AX 10.0.0
+---
+
+# About SysSetup
+
+SysSetup is an interface and this interface is used to identify the X++ classes that are to be executed during DBSync. X++ classes that implements SysSetup interface are executed as a part of DBSync step "PostTableAndViewSyncActions". 
+
+## Onboarding to SysSetup - 
+1. From Visual Studio --> View --> Application explorer (AOT), create a new class that implements SysSetup interface. 
+2. Add loadData() method in the class and the code in this method gets executed during DBSync. (it can also be a reference to another class/method.)
+3. Add [SysSetupConfig](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/syssetupconfigattribute) and SysSetupTable attributes to the class. 
+4. SysSetupTable attribute takes related table as the input. 
+
+```xpp
+[
+    SysSetupTable(tablestr(DemoTable)),
+    SysSetupConfig(true, 300, 1.1)
+]
+class DemoSetup implements SysSetup
+{
+    public void loadData()
+    {
+        <your code here..>
+    }
+}
+```
+
+> [!NOTE]
+> Running DBSync from Visual Studio will not run SysSetup classes. See below for running DBSync from command line. 
+
+## Validating New Classes - 
+1. Open command prompt. 
+2. Run below command - 
+
+Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "<AOSInstalledDirectory>\AosService\PackagesLocalDirectory" -metadatadir <AOSInstalledDirectory>\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver <sqlservername/localhost> -sqldatabase <axdbname> -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "<anydirectory>\dbsync.log"
+
+For example: 
+Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
+
+3. After the completetion of command, you can check the log entry to confirm whether the X++ class got picked up and executed during DBSync. 
+
+04/24/2023 09:10:17: 04/24/2023 09:10:17: SysSetupInstaller: Running Script: DemoSetup with Timeout 300 seconds.
+04/24/2023 09:10:17: 04/24/2023 09:10:17: SysSetupInstaller: Script: DemoSetup, Completed Successfully. Time elapsed: 0:00:00:00.0415237
+
