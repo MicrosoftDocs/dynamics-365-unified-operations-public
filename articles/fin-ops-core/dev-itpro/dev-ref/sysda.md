@@ -77,6 +77,99 @@ while (ss.findNext(so))
 }
 ```
 
+Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryObject in a fluent way.
+
+ SysDaQueryObjectBuilder supports all four **JOIN** clauses:
+
+ - INNER
+ - OUTER
+ - EXISTS
+ - NOT EXISTS JOIN
+
+ It supports all 5 aggregation functions: namely,
+ - COUNT
+ - SUM
+ - AVG
+ - MIN 
+ - MAX
+
+ It supports <c>WHERE</c> clauses, and multiple <c>WHERE</c> clauses are <c>AND</c>ed.
+
+ It supports all seven comparison expressions: namely,
+
+ - ==, <>
+ - >, >=
+ - <, <=
+ - LIKE
+
+ It supports <c>ORDER BY</c> clauses.
+
+ It supports <c>GROUP BY</c> clauses.
+
+ It supports all 16 hints:
+
+ - firstOnly1
+ - firstOnly10
+ - firstOnly100
+ - firstOnly1000
+ - firstFast
+ - reverse
+ - forUpdate
+ - noFetch
+ - forceSelectOrder
+ - forceNestedLoop
+ - forceLiterals
+ - forcePlaceholders
+ - repeatableRead
+ - optimisticLock
+ - pessimisticLock
+ - generateOnly
+
+For example,
+
+```xpp
+<example>For example,
+<code>
+SysDaQueryObjectBuilder::from(exampleTable)
+    .firstOnly()
+    .innerJoin(exampleJoinedTable)
+    .where(exampleTable, fieldStr(ExampleTable, ExampleJoinedTableExampleId)).isEqualTo(exampleJoinedTable, fieldStr(ExampleJoinedTable, ExampleId))
+    .where(exampleTable, fieldStr(ExampleTable, ExampleNumber)).isEqualToLiteral(0)
+    .toSysDaQueryObject();
+</code>
+/// is the same as
+<code>
+var exampleTableQueryObject = new SysDaQueryObject(exampleTable);
+var exampleJoinedTableQueryObject = new SysDaQueryObject(exampleJoinedTable);
+exampleTableQueryObject.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly1;
+exampleTableQueryObject.joinClause(SysDaJoinKind::InnerJoin, exampleJoinedTableQueryObject);
+exampleJoinedTableQueryObject.whereClause(new SysDaAndExpression(
+    new SysDaEqualsExpression(
+        new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleJoinedTableExampleId)),
+        new SysDaFieldExpression(exampleJoinedTable, fieldStr(ExampleJoinedTable, ExampleId))),
+    new SysDaEqualsExpression(
+        new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
+        new SysDaValueExpression(0))));
+</code>
+/// to build a <c>SysDaQueryObject</c>.
+</example>
+/// It supports <c>SysDaQueryExpression</c> to enable <c>OR</c> and the other expressions.
+<example>For example,
+<code>
+SysDaQueryObjectBuilder::from(exampleTable)
+    .wherever(new SysDaOrExpression(
+        new SysDaEqualsExpression(
+            new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
+            new SysDaValueExpression(0)),
+        new SysDaEqualsExpression(
+            new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
+            new SysDaValueExpression(0))))
+    .toSysDaQueryObject();
+</code>
+/// is to build a <c>SysDaQueryObject</c> using <c>OR</c>.
+</example>
+```
+
 ## Update statement
 
 To run an **update** statement, follow these steps.
