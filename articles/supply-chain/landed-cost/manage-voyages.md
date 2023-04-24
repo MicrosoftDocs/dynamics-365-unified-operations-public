@@ -179,6 +179,10 @@ The **Landed cost** module includes several voyage-related periodic tasks that c
 
 ## <a name="source-doc-post"></a>Show landed costs in the accounting distribution of product receipts
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+<!-- KFM: Preview until further notice -->
+
 When a product receipt is posted against a purchase order, Landed cost creates a source document line for each landed cost amount. The amount from Landed cost is shown on the **Account distributions** page, which is available from the product receipt.
 
 The following illustration shows an example of accounting distributions that include landed costs.
@@ -186,3 +190,5 @@ The following illustration shows an example of accounting distributions that inc
 [<img src="media/accounting-distributions.png" alt="Example of accounting distributions that include landed costs." title="Example of accounting distributions that include landed costs" width="720" />](media/accounting-distributions.png#lightbox)
 
 This feature enables landed costs to be included in the accounting distribution of purchased product receipts. Therefore, users can more easily identify and track these costs. This feature doesn't affect the product receipt accounting logic that's used in other places in Microsoft Dynamics 365 Supply Chain Management.
+
+To use this feature, you must be running Supply Chain Management 10.0.34 or higher and the *(Preview) Source document and accounting distribution support for Landed Cost* feature must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
