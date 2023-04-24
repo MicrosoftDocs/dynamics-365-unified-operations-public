@@ -28,11 +28,22 @@ Finance professionals can make informed decisions without needing advanced skill
 Business performance analytics enhances Dynamics 365 Finance capabilities by leveraging unified data for AI and machine learning, enabling teams to automatically 
 identify opportunities to improve financial performance. With AI-powered solutions, Microsoft can help protect organizations from risk and guard against future 
 disruption, leveraging its partnership with Open AI and recent acquisitions in business domains like process mining and AI-driven spend analytics.
-Business performance analytics enables reporting in a more holistic, less siloed way across multiple systems of record by normalizing data. Built on the Microsoft Dataverse, it includes a web-based reporting hub where end users can create reporting via Excel, Power BI, and other templates, empowering all users to easily access and analyze data. 
+
+
+Business performance analytics enables reporting in a more holistic, less siloed way across multiple systems of record by normalizing data. Built on the Microsoft Dataverse, it includes a web-based reporting hub where end users can create reporting via Excel, Power BI, and other templates, empowering users to easily access and analyze data. 
 
 
 ## Prerequisites
-Business performance analytics prerequisites 
+
+Prerequisites for business performance analytics are: 
+
+ - Systems requirments
+ - Version requirements 
+ - Configure business performance analytics 
+ - Install business performance analytics 
+ - Set up security in business performance analytics 
+ - Business performance analytics reports
+ - Create and edit reports
 
 ### System requirements 
 A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -40,10 +51,10 @@ A Tier-2 environment (multi-box) is required to preview business performance ana
 ### Version requirements 
 Business performance analytics requires Microsoft Dynamics 365 Finance version 10.0.33 and later.  
 
-### Configuration of business performance analytics 
+### Configure business performance analytics 
 You must complete configuration steps before you can use business performance analytics. For more information, see [Configure business performance analytics](configure-BPA.md).
 
-### Installing business performance analytics 
+### Install business performance analytics 
 After business performance analytics is configured, business performance analytics can be installed. For more information, see [Install business performance analytics](install-bpa.md).
 
 ### Set up security in business performance analytics 
