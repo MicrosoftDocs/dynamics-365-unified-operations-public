@@ -334,22 +334,26 @@
             href: deployment/deployenvironment-newinfrastructure.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md
           - name: Known issues with self-service deployment
             href: deployment/known-issues-new-deployment-experience.md
           - name: Maintenance operations for deployments
             href: deployment/maintenanceoperationsguide-newinfrastructure.md
           - name: Update an environment
             href: deployment/updateenvironment-newinfrastructure.md
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
             href: sysadmin/business-continuity-disaster-recovery.md
+        - name: Finance and operations apps regional services
+          items:
+          - name: Local geographies
+            href: deployment/deployment-options-geo.md
+          - name: US Government Community Cloud (GCC)
+            href: deployment/us-gcc-deployment.md
+          - name: China Operated by 21Vianet
+            href: deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
         - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
@@ -366,10 +370,16 @@
           href: deployment/Auto-Update-Commerce-Scale-Unit.md
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
+        - name: Geo to Geo migration
+          href: deployment/geo-to-geo-migrations.md          
+          - name: Migrate an environment
+            href: deployment/geo-to-geo-migrations.md          
+          - name: LCS migration
+            href: lifecycle-services/project-migration-manager.md          
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
-          href: deployment/retail-data-residency.md
+          href: deployment/retail-data-residency.md          
       - name: On-premises deployment
         items:
         - name: On-premises deployment home page
@@ -495,15 +505,7 @@
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
         - name: Extend and collaborate on the help
-          href: help/contributor-guide.md
-      - name: Finance and operations apps regional services
-        items:
-        - name: Local geographies
-          href: deployment/deployment-options-geo.md
-        - name: US Government Community Cloud (GCC)
-          href: deployment/us-gcc-deployment.md
-        - name: China Operated by 21Vianet
-          href: deployment/china-local-deployment.md
+          href: help/contributor-guide.md      
     - name: Develop and customize
       items:
       - name: Develop and customize home page
