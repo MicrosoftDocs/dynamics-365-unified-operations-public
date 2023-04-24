@@ -906,6 +906,8 @@
             href: perf-test/concepts-creators.md
           - name: Queries in the acceptance test library
             href: perf-test/concepts-queries.md
+          - name: Public application tests
+            href: perf-test/public-application-tests.md
           - name: Specification classes
             href: perf-test/concepts-specifications.md
           - name: Acceptance test library code generation wizard

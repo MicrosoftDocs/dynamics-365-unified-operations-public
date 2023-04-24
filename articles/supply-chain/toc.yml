@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.34 (June 2023)
+          href: get-started/whats-new-scm-10-0-34.md
         - name: Supply Chain Management 10.0.33 (April 2023)
           href: get-started/whats-new-scm-10-0-33.md
         - name: Supply Chain Management 10.0.32 (March 2023)
@@ -3285,6 +3287,8 @@
         href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
       - name: USMCA certification of origin
         href: transportation/usmca-certification-of-origin.md
+      - name: Assign shipments to related route segments
+        href: transportation/assign-shipments-to-segments.md
       - name: Commercial invoices
         href: transportation/commercial-invoice.md
       - name: Create a bill of lading
@@ -3355,7 +3359,7 @@
         href: landed-cost/landed-cost-vs-tms.md
       - name: Set up and configure the Landed cost module
         items:
-        - name: Turn on the Landed cost module for your system
+        - name: Turn on the Landed cost module and related features for your system
           href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
