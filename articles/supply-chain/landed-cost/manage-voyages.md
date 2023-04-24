@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Manage voyages
 description: This article describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
 author: Weijiesa
-ms.date: 12/14/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ITMTableListPage, ITMTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
-ms.search.validFrom: 2020-12-14
-ms.dyn365.ops.version: 10.0.17
+ms.reviewer: kamaybac
+ms.search.form: ITMTableListPage, ITMTable
+ms.topic: how-to
+ms.date: 04/20/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Manage voyages
@@ -35,7 +22,8 @@ The **All voyages** page provides voyage details, delivery and costing informati
 
 > [!NOTE]
 > Shipping containers and folios are linked to a voyage. Purchase lines are linked to a shipping container. In addition, costs that are entered here are apportioned to all attached purchase lines.
-> Project purchase order does not supported in Landed Cost.
+>
+> Project purchase orders aren't supported in Landed cost.
 
 ## Action Pane
 
@@ -47,7 +35,7 @@ The following table describes the buttons that are available directly on the Act
 
 | Button | Description |
 |---|---|
-| New | Create a voyage. <!-- KFM: Link to scenario --> |
+| New | [Create a voyage](/training/modules/work-with-landed-cost-supply-chain-management/create-voyage). |
 | Delete | Delete the current voyage. Only voyages that have a voyage status of *Confirmed* can be deleted. After a voyage leaves port and processes goods in transit, it can no longer be deleted. |
 | Voyage editor | Open the **Voyage editor** page, where you can add or remove purchase lines for the voyage, create new containers, and modify details of the voyage itself. |
 | Voyage costs | Open the **Voyage costs** page, where you can view and add voyage costs to all goods in the voyage. When voyage costs are manually added to the voyage, they are automatically added to the **Costs inquiry** page and apportioned to each good according to the method that is specified on the **Voyage costs** page. |
@@ -188,3 +176,13 @@ The **Landed cost** module includes several voyage-related periodic tasks that c
 - **In transit** – This task lets you set the **Voyage status** field to the in-transit status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
 - **Ready for costing** – This task lets you set the **Voyage status** field to the ready for costing status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. You will typically set up this task to run on a regular schedule.
 - **Costed**  – This task lets you set the **Voyage status** field to the costed status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time, provided that they have been costed but haven't yet been updated on the voyage. You will typically set up this task to run on a regular schedule.
+
+## <a name="source-doc-post"></a>Show landed costs in the accounting distribution of product receipts
+
+When a product receipt is posted against a purchase order, Landed cost creates a source document line for each landed cost amount. The amount from Landed cost is shown on the **Account distributions** page, which is available from the product receipt.
+
+The following illustration shows an example of accounting distributions that include landed costs.
+
+[<img src="media/accounting-distributions.png" alt="Example of accounting distributions that include landed costs." title="Example of accounting distributions that include landed costs" width="720" />](media/accounting-distributions.png#lightbox)
+
+This feature enables landed costs to be included in the accounting distribution of purchased product receipts. Therefore, users can more easily identify and track these costs. This feature doesn't affect the product receipt accounting logic that's used in other places in Microsoft Dynamics 365 Supply Chain Management.
