@@ -5,7 +5,7 @@ title: Manage order holds
 description: This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. 
 author: Henrikan
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

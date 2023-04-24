@@ -3,7 +3,7 @@ title: (RCS) Import files in XML format with optional attributes
 description: This article provides information about how a user can design ER format configuration to import files in XML format containing optional attributes.
 author: kfend
 ms.date: 07/01/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

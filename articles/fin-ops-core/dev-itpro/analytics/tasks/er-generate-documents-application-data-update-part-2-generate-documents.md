@@ -3,7 +3,7 @@ title: Design configurations to generate documents that have application data
 description: This article describes how to design Electronic reporting (ER) configurations to generate an electronic document. (Part 1 - Import configurations).
 author: kfend
 ms.date: 06/19/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

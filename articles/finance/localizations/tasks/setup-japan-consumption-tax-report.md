@@ -3,7 +3,7 @@ title: Setup Japan consumption tax report
 description: This task walks you through setting up the system to support the Japan consumption tax report.
 author: kfend
 ms.date: 12/02/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

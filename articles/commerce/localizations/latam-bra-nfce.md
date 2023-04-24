@@ -13,7 +13,6 @@ ms.author: josaw
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.industry: Retail
-manager: annbe
 ---
 
 # NFC-e fiscal document functionality in Commerce POS for Brazil

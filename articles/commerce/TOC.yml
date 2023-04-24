@@ -65,7 +65,13 @@
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
         - name: Proactive quality updates
-          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/commerce
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -2586,7 +2592,7 @@
           items:
           - name: Download Commerce SDK samples and reference packages
             href: dev-itpro/retail-sdk/sdk-github.md
-          - name: Legacy Retail SDK migration
+          - name: Migrate to the Commerce SDK
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
           - name: Obsolete and removed APIs, classes, and methods
             href: dev-itpro/obsolete-apis-classes-methods.md
@@ -3098,6 +3104,8 @@
           href: troubleshoot/z-report-issues.md
         - name: Statement posting errors due to unavailable inventory or update conflicts
           href: troubleshoot/inventory-errors-posting.md
+        - name: Fix common posting issues by editing transactions
+          href: troubleshoot/fix-common-posting-issues.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance

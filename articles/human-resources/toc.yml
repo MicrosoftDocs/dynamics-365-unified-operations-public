@@ -1,3 +1,4 @@
+items:
 - name: Dynamics 365 Human Resources
   items:
   - name: Dynamics 365 Human Resources
@@ -24,6 +25,8 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed in Human Resources
         items:
+        - name: What's new overview
+          href: whats-new-home-page.md
         - name: Human Resources 10.0.33 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-33.md  
         - name: Human Resources 10.0.32 (merged infrastructure)          
@@ -358,6 +361,14 @@
             href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
           - name: Manage location owners
             href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources business events    
+          items: 
+          - name: Human Resources business event overview
+            href: business-events-overview.md
+          - name: Human Resources business event example
+            href: bus-event-example.md
+          - name: Use cases for Human Resouces business events
+            href: bus-event-use-case.md             
         - name: Workflow system
           items:
           - name: Workflow system overview
@@ -744,8 +755,10 @@
       items:
       - name: Course overview
         href: hr-course-overview.md
-      - name: Set up training courses
+      - name: Create training courses
         href: hr-learning-courses.md
+      - name: Manage course participants  
+        href: hr-manage-part.md
       - name: Questionnaires overview
         href: hr-learning-questionnaires.md
       - name: Design questionnaires

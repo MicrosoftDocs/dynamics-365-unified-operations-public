@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 06/20/2022
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -164,7 +164,7 @@ The selected slipstreamed version is a reviewed and validated version of Financi
 The slipstream process is fully automated and doesn't require any customer action. Three topologies consume slipstream, each in a slightly different way:
 
 - **On-premises** – On-premises deployments don't support slipstream and true-up.
-- **Infrastructure as a service (IaaS)** – The slipstream logic is applied during any operation that tries to update Financial reporting. It includes binary updates or broadcasts that contains binary updates.
+- **Infrastructure as a service (IaaS)** – The slipstream logic is applied during any operation that tries to update Financial reporting. It includes binary updates or broadcasts that contain binary updates.
 - **Self-service** – Any operation that requires Financial reporting downtime applies the slipstream logic:
 
     - Binary updates or broadcasts that include binary updates
@@ -177,7 +177,7 @@ There are a few common issues that can cause problems when you open Report Desig
 
 Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
+* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
@@ -216,14 +216,14 @@ Here are some steps you can take to make your conversation with Microsoft suppor
 The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event viewer generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
 
 
-1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
+1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](//download.microsoft.com/download/3/0/0/3008047d-ff50-45fa-8427-e4eddc517bd7/RegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e%20(3).zip).
 2. Make sure Windows Event viewer is closed.
 3. Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
-4. Run the following command: .\RegisterETW.ps1
+4. Run the following command: .\RegisterETW.ps1 
 
     A successful output in PowerShell will be verified with the message, **Competed RegisterETW script**.
 
-    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**:
+    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**: 
 
     * MR-Client
     * MR-DVT

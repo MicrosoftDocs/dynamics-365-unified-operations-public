@@ -104,6 +104,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Forecast plan** – Not supported in Planning Optimization.
   - **Continuity plan** – Not supported in Planning Optimization.
   - **Calculated delays** – This parameter isn't considered. Calculated delays are created for the **coverage time fence (days)**.
+  - **Capacity** - Not supported in Planning Optimization.
 
 - **Calculated delays** FastTab:
 

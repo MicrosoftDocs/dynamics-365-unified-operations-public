@@ -102,7 +102,7 @@ There are many articles about manufacturing and supply chain management on the [
 
 ## White papers
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling](/dynamics/s-e/)
+- [Lean manufacturing: Capable to promise and kanban job scheduling](https://www.microsoft.com/download/details.aspx?id=101948)
 - [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## eLearning courses

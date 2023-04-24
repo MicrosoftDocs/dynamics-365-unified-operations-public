@@ -5,7 +5,7 @@ title: Set up project resource information
 description: This procedure shows how to set up a project resource. 
 author: GalynaFedorova
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

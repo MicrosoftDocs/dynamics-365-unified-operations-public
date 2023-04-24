@@ -4,7 +4,7 @@
 title: Project migration manager
 description: This article explains how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
 author: LaneSwenka
-ms.date: 10/05/2022
+ms.date: 03/02/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -160,6 +160,6 @@ Your source project will be unlocked, and you will receive an email notification
 
 ### I'm currently a First Release customer. Will I still be a First Release customer after migration?
 
-First release is a program that only exists in the US-based public cloud instance of Lifecycle Services.  It is not available in the other geographies at this time.  If you were previously part of the First Release program and are migrating to another geography, you won't be on the First Release program after migration.
+[First release](../../fin-ops/get-started/public-preview-releases.md#release-processes) is a program that only exists in the US-based public cloud instance of Lifecycle Services.  It is not available in the other geographies at this time.  If you were previously part of the First Release program and are migrating to another geography, you won't be on the First Release program after migration.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

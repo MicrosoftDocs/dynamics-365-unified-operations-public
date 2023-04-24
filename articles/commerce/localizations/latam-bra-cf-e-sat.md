@@ -13,7 +13,6 @@ ms.author: josaw
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.20
 ms.search.industry: Retail
-manager: annbe
 ---
 
 # CF-e fiscal documents and integration with SAT functionality in Commerce POS for Brazil

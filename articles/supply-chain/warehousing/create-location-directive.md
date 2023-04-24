@@ -178,8 +178,10 @@ The fields on the **Location directives** FastTab are specific to the work order
     | All | Puts | All | No |
 
     > [!NOTE]
+    >
     > - To do puts for both multiple items and single items, you must ensure that location directives exist that cover both scenarios. For example, you might set up one or more *Single item or order* location directives to cover scenarios that require fine-tuning (such as through edits to the query), and then one or more *All* location directives to cover the remaining scenarios.
     > - Although *Single item* and *Multiple items* scopes can be used for puts, this approach typically leads to redundant configurations. Consider using *Single item or order* and *All* scopes instead, because this approach will produce a cleaner setup.
+    > - When using the *Single item or order* scope, receiving flows (like purchase orders) will add the order number to the location directive query during work creation. To prevent unexpected behavior, don't add query ranges for the lines in such cases.
 
 - **Multiple SKU** – Use this option to specify the scenario that the location directive will be applied to. This setting is replaced by the **Scope** setting if the *Location directive scopes* feature is turned on in your system. (For more information, see [Turn the Location directive scopes feature on or off](#scopes-feature).) Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
 

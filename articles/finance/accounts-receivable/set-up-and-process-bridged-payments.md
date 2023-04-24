@@ -4,7 +4,7 @@
 title: Set up and process bridged payments
 description: This article explains how to set up and process bridged customer payments. A bridged payment is a payment that is posted to the general ledger in two steps.
 author: rachel-profitt
-ms.date: 12/03/2021
+ms.date: 02/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 

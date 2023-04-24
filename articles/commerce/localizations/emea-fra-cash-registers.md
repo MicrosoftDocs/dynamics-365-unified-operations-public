@@ -14,7 +14,6 @@ ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: 7.3.2
 ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-manager: annbe
 ---
 # Cash register functionality for France
 

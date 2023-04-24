@@ -5,7 +5,7 @@ title: Create project purchase order
 description: This procedure shows you how to create a project purchase order. 
 author: GalynaFedorova
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

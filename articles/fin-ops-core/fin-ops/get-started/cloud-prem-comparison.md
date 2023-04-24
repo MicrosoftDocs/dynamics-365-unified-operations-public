@@ -41,7 +41,7 @@ Information about the [development and administration features](cloud-prem-compa
 
 The following tables list the application areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
-## <a name="comparsion"></a> Dynamics 365 Finance
+## Dynamics 365 Finance
 
 | **Area**             | **Feature**                | **Cloud** | **On-premises** |
 |---------------------|-----------------------------|-----------|-----------------|
@@ -155,14 +155,16 @@ The following tables list the application areas. Cloud and on-premises support i
 
 To see a list of capabilities that are available in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../commerce/retail-onprem.md).
 
-## Dynamics 365 Human Resources (stand-alone)
+## Dynamics 365 Human Resources
+
+This table applies to the Human Resources stand-alone version.
 
 | **Area**         | **Feature**         | **Cloud** | **On-premises** |
 |------------------|---------------------|-----------|-----------------|
 | All Human Resources areas | All Human Resources features | Yes       | No              |
 
 >[!NOTE]
->For the comparison of cloud vs. on-premise of a migrated Human resources environment on the merged infrastructure, see [Comparison of cloud and on-premises features](#comparsion). 
+>For the comparison of cloud vs. on-premise of a migrated Human resources environment on the merged infrastructure, see [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance). 
 
 ## Development and administration features
 
