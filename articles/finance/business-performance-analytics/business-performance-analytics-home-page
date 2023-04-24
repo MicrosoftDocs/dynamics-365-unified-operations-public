@@ -37,6 +37,9 @@ BPA requires Microsoft Dynamics 365 Finance version 10.0.33 and later
 ## Configuration of Business Performance analytics 
 You must complete configuration steps before you can use BPA. Please follow these steps to see how to [Configure Business performance analytics](configure-BPA.md).
 
+## Installing Business performance analytics. 
+Upon completing the configuration steps above, you can now [Install Business performance analytics](install-bpa.md)
+
 ## How to set up security in  Business Performance analytics 
 BPA allows you to set up security at the role level as well as at the row/dimension level. To set up security in BPA, please follow these steps [Set up security in BPA](set-up-security.md).
 
