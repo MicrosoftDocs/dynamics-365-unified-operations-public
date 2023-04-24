@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the level of the stock keeping unit (SKU). Pricing management lets you build selling prices by using *cost-plus pricing*. When you use cost-plus pricing, you first build a price structure that starts with the base price.
@@ -25,9 +26,9 @@ The following tables shows an example of a [price structure](price-structure-ove
 | Pricing sequence | Price component code | Price component type | Description | Price details on the sales order |
 |---|---|---|---|---|
 | 10 | BAS01 | Base price | <p>Price component code *BAS01* must be associated with one of the following price component code types:</p><ul><li>Base price – inventory price</li><li>Base price – purchase price</li><li>Base price – cost price</li></ul> | Base price |
-| 20 | MAC01 | Margin component | &plusmn; amount or percentage | Price adjustments |
-| 25 | MAC02 | Margin component | &plusmn; amount or percentage | Price adjustments |
-| 30 | MAC03 | Margin component | &plusmn; amount or percentage | Price adjustments |
+| 20 | MAC01 | Margin component | Adjust the price up or down based on a fixed amount or percentage. | Price adjustments |
+| 25 | MAC02 | Margin component | Adjust the price up or down based on a fixed amount or percentage. | Price adjustments |
+| 30 | MAC03 | Margin component | Adjust the price up or down based on a fixed amount or percentage. | Price adjustments |
 
 The selling price is calculated by using the following formula: *Selling price* = *Base price* &plusmn; *Margin component price adjustments*.
 
@@ -69,11 +70,11 @@ The following tables shows an example of a [price structure](price-structure-ove
 
 | Pricing sequence | Price component code | Price component type | Description | Price details on the sales order |
 |---|---|---|---|---|
-| 10 | BAS01 | Base price | Price component code *BAS01* must be associated with one of the following price component code types:<ul><li>Base price – inventory price</li><li>Base price – purchase price</li><li>Base price – cost price</li></ul> | Base price / Sales trade agreement price |
-| 15 | TAM | Sales trade agreement | Sales trade agreement | Base price / Sales trade agreement price |
-| 20 | MAC01 | Margin component | &plusmn; amount or percentage | Price adjustments |
-| 25 | MAC02 | Margin component | &plusmn; amount or percentage | Price adjustments |
-| 30 | MAC03 | Margin component | &plusmn; amount or percentage | Price adjustments |
+| 10 | BAS01 | Base price | Price component code *BAS01* must be associated with one of the following price component code types:<ul><li>Base price – inventory price</li><li>Base price – purchase price</li><li>Base price – cost price</li></ul> | Base price or Sales trade agreement price |
+| 15 | TAM | Sales trade agreement | Sales trade agreement | Base price or Sales trade agreement price |
+| 20 | MAC01 | Margin component | Adjust the price up or down based on a fixed amount or percentage. | Price adjustments |
+| 25 | MAC02 | Margin component | Adjust the price up or down based on a fixed amount or percentage.| Price adjustments |
+| 30 | MAC03 | Margin component | Adjust the price up or down based on a fixed amount or percentage. | Price adjustments |
 
 For example, when this price structure is used, the price engine might find that the following pricing rules are applicable to item *EV0001* on a sales order line:
 

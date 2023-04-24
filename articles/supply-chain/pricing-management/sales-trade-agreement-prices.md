@@ -81,7 +81,7 @@ Follow these steps to create and manage your trade agreement journal names.
 
     - To create a new journal name, select **New** on the Action Pane.
     - To edit an existing journal name, select it in the grid, and then select **Edit** on the Action Pane.
-    - To delete an existing journal name, select it in the list pane, and then select **Delete** on the Action Pane.
+    - To delete an existing journal name, select it in the grid, and then select **Delete** on the Action Pane.
 
 1. Set the following fields for the new or selected record:
 
@@ -102,7 +102,7 @@ Follow these steps to create and manage your sales trade agreement journals.
 
     - To create a new journal, make sure that the **Show** field is set to *All* or *Not posted*, and then select **New** on the Action Pane.
     - To edit an existing journal, select it in the grid.
-    - To delete an existing journal, select it in the list pane, and then select **Delete** on the Action Pane.
+    - To delete an existing journal, select it in the grid, and then select **Delete** on the Action Pane.
 
     > [!TIP]
     > If you're looking for an existing journal to edit or delete, you can use the filter and/or the **Show** field to find it.
@@ -189,8 +189,8 @@ The following table shows an example of a price structure that will be affected 
 
 The final price will be affected in the following way:
 
-- If the **Allow price adjustment** option is set to *Yes*, the final unit price will be $230.
-- If the **Allow price adjustment** option is set to *No*, the final unit price will be $200.
+- If the **Allow price adjustment** checkbox is selected, the final unit price will be $230.
+- If the **Allow price adjustment** checkbox isn't selected, the final unit price will be $200.
 
 ## Post a sales trade agreement journal
 
