@@ -372,9 +372,9 @@
           href: deployment/Initialize-Retail-Channels.md  
         - name: Geo to Geo migration
           href: deployment/geo-to-geo-migrations.md          
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md          
-          - name: LCS migration
+          - name: Environment migration process
+            href: deployment/environment-migration-process.md          
+          - name: LCS project migration manager
             href: lifecycle-services/project-migration-manager.md          
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
