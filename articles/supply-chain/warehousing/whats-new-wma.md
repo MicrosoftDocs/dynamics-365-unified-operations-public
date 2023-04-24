@@ -19,6 +19,23 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.1.0  
+
+### New features introduced in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- The app is now available for iOS devices. 
+- This version is compliant with regulations for European Union Data Boundary (EUDB) and sovereign clouds. 
+
+### New fixes and improvements in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability for installations deployed using Microsoft Intune. 
+- Fixed an issue where the app couldn't connect to the server when running on Android 4.4. 
+- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server. 
+
 ## Version 2.0.42.0
 
 This version introduces the following new features, fixes, and improvements: 

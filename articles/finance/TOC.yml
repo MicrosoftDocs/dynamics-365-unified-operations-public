@@ -65,7 +65,13 @@
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
         - name: Proactive quality updates
-          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/finance
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/finance
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
         - name: Delivering ISV solutions using One Version
@@ -242,14 +248,14 @@
           href: accounts-payable/install-invoice-capture.md
         - name: Configure Invoice capture
           href: accounts-payable/config-invoice-capture.md
+        - name: Manage channels in Invoice capture   
+          href: accounts-payable/invoice-capture-channel.md
         - name: Invoice capture configuration groups
           href: accounts-payable/invoice-capture-config-group.md
         - name: Invoice capture mapping rules
           href: accounts-payable/invoice-capture-mapping-rules.md
         - name: Invoice capture workspace
           href: accounts-payable/invoice-capture-workspace.md
-        - name: Invoice capture advanced settings
-          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
         - name: Invoice capture received files
@@ -1300,12 +1306,16 @@
           href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
           href: general-ledger/cant-reverse-transctns.md
+        - name: Intercompany journals and financial dimensions  
+          href: general-ledger/intercompany-journal.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
+      - name: Financial reporting best practices  
+        href: general-ledger/fin-reports-best.md
       - name: Financial report components
         href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?context=/dynamics365/context/finance
       - name: View and design financial reports
@@ -3256,8 +3266,16 @@
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
             href: localizations/ltm-core-tax-id-type.md
+          - name: Tax application for Latin America
+            href: localizations/ltm-core-tax-application.md
+          - name: Document classes for Latin America
+            href: localizations/ltm-core-document-class.md
+          - name: Document class types for Latin America
+            href: localizations/ltm-core-document-class-type.md
           - name: Document class letter for Latin America
             href: localizations/ltm-core-document-class-letter.md
+          - name: Document class sales point for Latin America
+            href: localizations/ltm-core-document-class-sales-point.md
           - name: Customer sets for Latin America
             href: localizations/ltm-core-customers-set.md
           - name: Vendor set configuration
@@ -3266,6 +3284,8 @@
             href: localizations/ltm-core-address-setup.md
           - name: Sales point prefixes for Latin America
             href: localizations/ltm-core-sales-point-prefixes.md
+          - name: Sales point relation for sales documents and remission
+            href: localizations/ltm-core-point-relation.md
         - name: Latvia
           items:
           - name: Latvia overview
@@ -4064,7 +4084,7 @@
         - name: Create custom designs for business documents
           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
         - name: Help prevent long-running reports from timing out
-          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance
+          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance  
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview

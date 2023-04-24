@@ -5,7 +5,7 @@ title: Set up rate masters
 description: This procedure shows you how to set up a rate master. 
 author: Weijiesa
 ms.date: 10/16/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

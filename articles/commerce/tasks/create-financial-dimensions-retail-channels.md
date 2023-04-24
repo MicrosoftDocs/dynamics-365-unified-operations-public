@@ -5,7 +5,7 @@ title: Create financial dimensions for retail channels and configure dimension v
 description: This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. 
 author: jashanno
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

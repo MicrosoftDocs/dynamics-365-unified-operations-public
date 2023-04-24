@@ -5,7 +5,7 @@ title: Settle transactions between ledger accounts
 description: This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement. 
 author: aprilolson
 ms.date: 10/03/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

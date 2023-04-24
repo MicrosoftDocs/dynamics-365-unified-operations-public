@@ -5,7 +5,7 @@ title: Update vendor invoice declarations and generate the report
 description: This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

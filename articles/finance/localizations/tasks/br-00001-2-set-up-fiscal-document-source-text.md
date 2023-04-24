@@ -3,7 +3,7 @@ title: Set up fiscal document source text (Brazil)
 description: You can attach fiscal document texts to a sales order, purchase order, or free text invoice.
 author: AdamTrukawka
 ms.date: 06/26/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

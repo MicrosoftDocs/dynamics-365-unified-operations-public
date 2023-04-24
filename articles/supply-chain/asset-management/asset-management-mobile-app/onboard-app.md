@@ -36,7 +36,10 @@ When you create the Dataverse environment where you want to install the app, be 
 
 ### Configure dual-write in Supply Chain Management
 
-For the mobile app to work, Power Apps must be able to communicate with your Supply Chain Management environment through virtual entities. To enable virtual entities in your Dataverse environment, follow the instructions in [Getting the virtual entity solution](/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#get-virtual-entity-solution).
+For the mobile app to work, Power Apps must be able to communicate with your Supply Chain Management environment through virtual entities. To enable virtual entities in your Dataverse environment, follow the instructions in [Getting the virtual entity solution](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution).
+
+> [!IMPORTANT]
+> If dual-write and virtual entities were already set up on your Dataverse environment for a previous purpose, you must still update your virtual entity solution before you install the Asset Management mobile app in Dataverse. If you install the app over an outdated virtual entity solution, you risk needing to manually update the schema for each virtual entity afterwards. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
