@@ -23,7 +23,7 @@ ms.custom:
 This article describes how to install business performance analytics. The administrator who has completed the configuration steps should login. 
 
 > [!NOTE]
-> For gated public preview, Microsoft will email the link to you after you join the preview group. 
+> For public preview, Microsoft will email the link to you after you join the preview group. 
   
 ## Install the business performance analytics app  
 1.  Click on the link provided by Microsoft. 
@@ -36,6 +36,7 @@ This article describes how to install business performance analytics. The admini
 The following Azure AD apps are registered in Azure AD. 
 | Application            | App ID                               |
 | ---------------------- | ------------------------------------ |
+
 | far-dataverse-pipeline | 0e3659ee-3f34-4d0f-be21-d11f7141572f |
 
-To verify the application is registered in Azure AD, check the All applications list. For more details, see [View enterprise applications](//azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact support. 
+To verify the application is registered in Azure AD, check the **All applications** list in Azure AD. For more details, see [View enterprise applications](//azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact support. 
