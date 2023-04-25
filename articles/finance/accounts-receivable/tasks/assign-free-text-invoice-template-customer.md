@@ -5,7 +5,7 @@ title: Assign a free text invoice template to a customer
 description: This task demonstrates how to assign a free text invoice template to a customer. 
 author: ShivamPandey-msft
 ms.date: 03/23/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

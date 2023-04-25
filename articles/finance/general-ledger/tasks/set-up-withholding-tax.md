@@ -5,7 +5,7 @@ title: Set up withholding tax
 description: This article explains how to set up withholding tax.   
 author: twheeloc
 ms.date: 07/11/2019  
-ms.topic: business-process  
+ms.topic: how-to  
 ms.prod:  
 ms.technology:  
  

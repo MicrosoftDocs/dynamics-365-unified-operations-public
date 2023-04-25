@@ -5,7 +5,7 @@ title: MY-00005 Print GST tax invoices
 description: This procedure walks you through how to print a GST tax invoice. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

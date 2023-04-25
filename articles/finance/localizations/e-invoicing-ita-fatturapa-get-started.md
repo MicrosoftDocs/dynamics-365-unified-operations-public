@@ -27,7 +27,7 @@ Before you complete the steps in this article, the following prerequisites must 
 
 - Obtain SDICoop service channel accreditation in the Exchange system (SDI) government portal.
 - Complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
-- Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 2 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
+- Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 3 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
 - Add links from the required certificates to the service environment. The required certificates include the Digital signature certificate, Certificate authority (CA) certificate, and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
 
 ## Country-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
@@ -179,7 +179,7 @@ The following procedures must be completed for all Electronic reporting (ER) for
 1. Sign in to your Finance environment.
 2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
 3. Select **Repositories** \> **Global** \> **Open**.
-4. Select and import the **Customer invoice context model** (version 52 or later), **Invoice model mapping**, and **Vendor invoice import (IT)** configurations.
+4. Select and import the **Customer invoice context model** (version 54 or later), **Invoice model mapping**, and **Vendor invoice import (IT)** configurations.
 
     > [!NOTE]
     > Version 52 of the **Customer invoice context model** configuration requires Dynamics 365 Finance version 10.0.32. If you have an earlier version of the app, see the next section.
@@ -203,7 +203,7 @@ This procedure must be completed only for Finance versions that are earlier than
     ```vb
     IF(CustInvoiceJour.'creditNote()', "Customer credit note", "Customer invoice")
     & IF('$Context_ISOCode'.Value = "IT",
-       IF(LEN(CustInvoiceJour.'>Relations'.InvoiceAccount.AuthorityOffice_IT) = 7, " PA", ""),
+       IF(LEN(CustInvoiceJour.'>Relations'.InvoiceAccount.AuthorityOffice_IT) = 6, " PA", ""),
        "")
     ```
 
@@ -216,7 +216,7 @@ This procedure must be completed only for Finance versions that are earlier than
     ```vb
     IF(ProjInvoiceJour.'isCreditNote_CZ()', "Project credit note", "Project invoice")
     & IF('$Context_ISOCode'.Value = "IT",
-      IF(LEN(ProjInvoiceJour.'>Relations'.CustTable.AuthorityOffice_IT) = 7, " PA", ""),
+      IF(LEN(ProjInvoiceJour.'>Relations'.CustTable.AuthorityOffice_IT) = 6, " PA", ""),
       "")
     ```
 
@@ -225,7 +225,7 @@ This procedure must be completed only for Finance versions that are earlier than
 19. On the **Reporting configurations** page, select the **Draft** version of the configuration, and then select **Change status** \> **Complete**.
 18. Use this derived configuration instead of **Customer invoice context model** in the next sections.
 
-After you upgrade your Finance environment to version 10.0.32, we recommend that you import and use **Customer invoice context model** version 52 or later.
+After you upgrade your Finance environment to version 10.0.32, we recommend that you import and use **Customer invoice context model** version 54 or later.
 
 #### Configure Electronic document parameters
 
@@ -287,7 +287,7 @@ This section provides information that will help you set up and configure the pr
     Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
     ```
 
-2. Save the .pfx certificate file to the key vault, and then delete the local copy.
+2. Save the .pfx certificate file to the key vault. This certificate will be mentioned later as **App Registration Certificate**.
 3. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
 4. Create an app registration for the SDI Proxy service.
 
@@ -298,7 +298,7 @@ This section provides information that will help you set up and configure the pr
 
     2. Select **Register**, and then select the app registration that you just created.
     3. Go to **API permissions**, and select **Grant admin consent**.
-    4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer certificate file for S2S authentication.
+    4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the **App Registration Certificate** .cer file for S2S authentication.
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
     7. The Invoicing Service team must grant the app access to the service. Send the values of the following parameters to <D365EInvoiceSupport@microsoft.com>:
@@ -307,6 +307,9 @@ This section provides information that will help you set up and configure the pr
         - LCS Environment ID
         - Application ID
         - Object ID
+
+    > [!NOTE]
+    > The Object ID for an application is different on the **App registrations** and **Enterprise applications** pages. Use the Object ID value from **Enterprise applications** page.
 
 5. In RCS, add the app to the application list for your service environment.
 
@@ -374,8 +377,8 @@ Follow these steps on the machine where the proxy service is hosted.
 
 1. Connect to the VM by using Remote Desktop Connection.
 2. Open the Local Machine Certificate snap-in. For more information, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
-3. Import the **caentrate.cer** certificate for production and the **CAEntratetest.cer** for testing into the [Trusted Root Certification Authorities store](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (**CAEntratetest.cer** is the root CA certificate that was provided by the authority.)
-4. Import the **CAActalisOV.cer** certificate into the Intermediate Certification Authorities store.
+3. Import the **caentrate.cer** certificate into the [Trusted Root Certification Authorities store](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores).
+4. Import the **CAEntratetest.cer** certificate into Trusted Root Certification Authorities store (only for test environment).
 5. Import the **SistemaInterscambioFatturaPA.cer** certificate for production and the **SistemaInterscambioFatturaPATest.cer** certificate for testing into the Trusted People store.
 6. In Control Panel, open **Turn Windows features on or off**, or go to **Server Manager** \> **Add Roles and Features** for the server OS, and turn on Internet Information Services (IIS) features:
 
@@ -401,6 +404,9 @@ Follow these steps on the machine where the proxy service is hosted.
             - Static Content Compression
         - Security
             - Request Filtering
+	- .NET Framework 4.7 Features
+	    - WCF Services
+		    - HTTP Activation
 
     ![Turning on IIS features.](media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
 
@@ -417,12 +423,12 @@ Follow these steps on the machine where the proxy service is hosted.
         - **TenantId** – Specify the globally unique identifier (GUID) of the customer's tenant.
         - **EnvironmentId** – Specify the ID of the LCS environment.
         - **ClientId** – Specify the app ID of the intermediate services app registration in the customer's tenant.
-        - **ClientCertificateName** – Specify the name of the S2S certificate in the key vault.
+        - **ClientCertificateName** – Specify the name of the **App Registration Certificate** in the key vault.
         - **SecurityServiceClientOptions.Endpoint** – Specify the URL of the security service.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
         - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. This value should be the same endpoint that is used for RCS and Finance.
         - **InvoicingServiceClientOptions.ServiceEnvironmentId** – Specify the name of the service environment that's configured in RCS.
-        - **NotificationsFolder** – Specify the folder to save incoming notification files in.
+        - **NotificationsFolder** – Specify the folder to save incoming notification files in. For example, **C:\\\\Files\\\\**.
 
     3. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
 
@@ -430,6 +436,8 @@ Follow these steps on the machine where the proxy service is hosted.
 
         > [!TIP]
         > When the system goes to production, you can change some values in the web.config file to help reduce the amount of log information that is collected and help save disk space. In the **\<system.diagnostics\>\<source\>** node, change the value of the **switchValue** to **Critical,Error**. For more information, see [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+		
+	4. Build the solution.
 
 4. Open IIS Manager. In the tree on the left, remain in the root node. On the right, select **Server Certificates**.
 
@@ -461,7 +469,7 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Configuring SSL Settings.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 18. Open **Directory Browsing**, and select **Enable**.
-19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear.
+19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may get a server error, such as 403 - Forbidden. This step is needed to ensure that the **serverDNS** is accessible and not hidden by a firewall or something else.
 
     ![Checking the service in a browser.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 

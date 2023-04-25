@@ -3,7 +3,7 @@ title: Security diagnostics for task recordings
 description: This article provides information about how to analyze and manage security permission requirements based on a task recording.
 author: Peakerbl
 ms.date: 05/05/2020
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

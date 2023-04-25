@@ -3,7 +3,7 @@ title: Design configurations to generate reports in Office format that have embe
 description: This article describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images.
 author: kfend
 ms.date: 04/23/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

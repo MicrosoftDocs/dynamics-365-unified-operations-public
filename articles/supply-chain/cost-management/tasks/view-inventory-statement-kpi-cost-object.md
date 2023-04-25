@@ -5,7 +5,7 @@ title: View inventory statement and KPI by cost object
 description: This article shows how to view inventory statement and KPI by cost object. 
 author: JennySong-SH
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

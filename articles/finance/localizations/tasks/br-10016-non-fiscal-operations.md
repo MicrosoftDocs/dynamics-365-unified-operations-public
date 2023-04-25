@@ -3,7 +3,7 @@ title: Non-fiscal operations (Brazil)
 description: Use this procedure to create non-fiscal document transactions that will be included in the Sistema Publico de Escrituração Digital Escrituracao Fiscal Digital (SPED EFD) text file.
 author: AdamTrukawka
 ms.date: 06/26/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

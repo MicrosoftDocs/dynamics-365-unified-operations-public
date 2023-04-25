@@ -13,7 +13,6 @@ ms.author: josaw
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.18
 ms.search.industry: Retail
-manager: annbe
 ---
 # Deployment guidelines for cash registers for France
 

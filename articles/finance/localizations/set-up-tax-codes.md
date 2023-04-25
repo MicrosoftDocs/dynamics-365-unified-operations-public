@@ -5,7 +5,7 @@ title: Set up tax codes
 description: This article explains how to set up tax codes in the Tax Calculation Service. 
 author: wangchen
 ms.date: 11/30/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
 

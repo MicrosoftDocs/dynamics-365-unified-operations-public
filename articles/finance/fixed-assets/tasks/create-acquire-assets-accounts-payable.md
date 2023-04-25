@@ -5,7 +5,7 @@ title: Create and acquire assets from Accounts payable
 description: This procedure walks through the creation and acquisition of a fixed asset with the purchasing process. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

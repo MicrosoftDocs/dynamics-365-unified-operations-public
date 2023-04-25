@@ -5,7 +5,7 @@ title: Set up fixed asset posting profiles
 description: This procedure shows how to set up Fixed asset posting profiles. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

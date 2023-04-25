@@ -5,7 +5,7 @@ title: Key invoice data in AP using a vendor invoice
 description: This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching). 
 author: abruer
 ms.date: 03/22/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

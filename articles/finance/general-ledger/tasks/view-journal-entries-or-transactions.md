@@ -5,7 +5,7 @@ title: View journal entries or transactions
 description: This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions. 
 author: aprilolson
 ms.date: 03/01/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
