@@ -2,7 +2,7 @@
 title: Modern POS (MPOS) architecture
 description: This article describes the POS topology.
 author: josaw1
-ms.date: 02/10/2023
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
