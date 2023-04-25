@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.1
 
 Managing sandboxes across implementation projects is an important aspect of finance and operations apps implementation. By following the steps outlined in this article, you can ensure that you're staying within your purchased sandbox limits.
 
-When implementing Microsoft Dynamics 365 finance and operations apps, it's crucial to have the appropriate number of sandboxes for your development, testing, and training purposes. Sandboxes allow you to test modifications of finance and operations apps before affecting your production environment. Microsoft provides one production and one sandbox environment with the purchase of 20 user licenses for finance and operations apps. Many customers require more than one sandbox, therefore, you can purchase additional sandboxes from the Microsoft 365 portal.  
+When implementing Microsoft Dynamics 365 finance and operations apps, it's crucial to have the appropriate number of sandboxes for your development, testing, and training purposes. Sandboxes allow you to test modifications of finance and operations apps before affecting your production environment. Microsoft provides one production and one sandbox environment with the purchase of 20 user licenses for finance and operations apps. Many customers require more than one sandbox, therefore, you can purchase more sandboxes from the Microsoft 365 portal.  
 
 ## Sandbox add-ons
 
@@ -52,7 +52,7 @@ Once you have determined your sandbox requirements, create a project in Lifecycl
 
 ### Step 3: Deploy sandboxes to your project 
 
-After you have created a project in Lifecycle Services, you can start to deploy the sandboxes that are required for the project. Sandboxes are deployed with a first-come, first-served approach. For example, let's say you have five sandbox add-ons that you have purchased, and you have two implementation projects. If you want to split the sandboxes, and have three in one project and two in another project, you'll need to deploy three sandbox add-ons in the first project as soon as possible. These three sandbox add-on slots will be consumed by the first project and will disappear from the second project. The remaining two open sandbox add-on slots are then available to deploy in the second project.
+After you have created a project in Lifecycle Services, you can start to deploy the sandboxes that are required for the project. Sandboxes are deployed with a first-come, first-served approach. For example, let's say you have five sandbox add-ons that you have purchased, and you have two implementation projects. If you want to have three sandboxes in one project and two in another project, deploy three sandbox add-ons in the first project as soon as possible. These three sandbox add-on slots are consumed by the first project and will disappear from the second project. The remaining two open sandbox add-on slots are then available to deploy in the second project.
 
 ### Step 4: Keep track of deployed sandboxes 
 
