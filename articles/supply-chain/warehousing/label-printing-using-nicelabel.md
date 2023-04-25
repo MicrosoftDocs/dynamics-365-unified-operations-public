@@ -78,7 +78,7 @@ Follow these steps to set up an external service definition.
         - **Relative URL** – Enter */Print/v2/Print*.
 
         > [!NOTE]
-        > Cloud Print is a synchronous API, which means that it will wait until the label has been printed and will then provide immediate feedback about whether the printing was successful or not. However, because this might take several seconds, the system could provide a bad user experience for mobile device users. Additionally, the result is currently not used. Therefore we have suggested a quick timeout setting of 500 ms. Even though Supply Chain Management stops waiting after this timeout expires, the print will continue in the background. <!-- KFM: I'd like to clarify this a bit more. Let's discuss it. -->
+        > Cloud Print is a synchronous API, which means that it will wait until the label has been printed and will then provide immediate feedback about whether the printing was successful or not. However, because this might take several seconds, the system could provide a bad user experience for mobile device users. Additionally, the result is currently not used. Therefore we have suggested a quick timeout setting of 500 ms. Even though Supply Chain Management stops waiting after this timeout expires, the print will continue in the background.
 
     - On the **Request HTTP headers** FastTab, add a row with the following settings:
         - **Key** – Enter *Ocp-Apim-Subscription-Key*.
@@ -172,7 +172,7 @@ You can now proceed to create label printers and label layouts using either vari
 
 ## Configure Supply Chain Management to print to local network printers using the Cloud Trigger API
 
-Using the Cloud Trigger API, you can call an on-premises installation of the NiceLabel Automation Service, which then processes the request and performs preprogrammed actions. Before proceeding with the following steps, install NiceLabel on the computers that will run the NiceLabel Automation Service and also set up the required printers for those computers. For guidance on how to install and set up printers, see the NiceLabel documentation. <!-- KFM: Can we give a link? -->
+Using the Cloud Trigger API, you can call an on-premises installation of the NiceLabel Automation Service, which then processes the request and performs preprogrammed actions. Before proceeding with the following steps, install NiceLabel on the computers that will run the NiceLabel Automation Service and also set up the required printers for those computers. For guidance on how to install and set up printers, see the NiceLabel documentation.
 
 To simplify the configuration of the NiceLabel Automation Service, use the NiceLabel Cloud Data Integration pack and follow the instructions provided in [Appendix A: Integration bundle](https://help.nicelabel.com/hc/en-001/articles/7361192275217-Appendix-A-Integration-bundle) on the NiceLabel Help Center. The following procedure summarizes the required steps (more details are provided on the NiceLabel Help Center).
 
@@ -180,7 +180,7 @@ To simplify the configuration of the NiceLabel Automation Service, use the NiceL
 1. Sign in to your NiceLabel Control Center.
 1. In **Documents**, create the following new folder: `/Demo/LabelCloudDataIntegration`.
 1. Open the ZIP file that you downloaded and extract the files.
-1. Upload your document storage folder contents into the `CloudIntegration` folder in your document management system (DMS). <!-- KFM: Do we mean `LabelCloudDataIntegration` folder? Is DMS same as NiceLabel Control Center? -->
+1. Upload your document storage folder contents into the `LabelCloudDataIntegration` folder in the NiceLabel Control Center.
 1. On the computer where the NiceLabel Automation Service is installed, open the NiceLabel Automation Manager.
 1. If you haven't done so already, connect the NiceLabel Automation Service to your NiceLabel Cloud.
 1. In the NiceLabel Automation Manager, select **Add** and browse to the `LabelCloudDataIntegration` folder on the NiceLabel Cloud.

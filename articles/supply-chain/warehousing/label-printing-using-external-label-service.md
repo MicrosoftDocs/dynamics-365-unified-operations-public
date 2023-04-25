@@ -64,12 +64,12 @@ Follow these steps to set up external service definition.
             - *Raw* – The service expects an XML or JSON message.
             - *form-data* – The service expects data formatted as an HTTP form.
         - **Relative URL** – Enter the relative part of the URL for calling the service. Your external service provider must provide this value.
-    - Use the **Request query string** FastTab to define query parameters to authenticate requests when you want to express a request entirely in a URL. <!--GFE: Added description-->
-    - Use the **HTTP request headers** FastTab to define the HTTP authorization header which is the most common method of providing authentication information. <!--GFE: Added description-->
+    - Use the **Request query string** FastTab to define query parameters to authenticate requests when you want to express a request entirely in a URL.
+    - Use the **HTTP request headers** FastTab to define the HTTP authorization header, which is the most common method of providing authentication information.
     - The **Request body (form data)** FastTab is shown when **Request body type** is *Form-data*. Use it to provide the names of the form data fields and their values. Use the toolbar to add or remove rows in the grid as needed and make the following settings for each of them:
         - **Key** – Enter the name of the form data field.
         - **Value** – Enter the value of the form data field.
-        - **File name** – <!--KFM: Description needed -->
+        - **File name** – This field is only required in special cases when the service expects that the value resembles an uploaded file. It's used, for example, by Zebra's `SendFileToPrinter` service, which requires this field.
     - The **Request body (raw)** FastTab is shown when **Request body type** is *Raw*. Use it to specify the body content and the content type. Make the following settings:
         - **Content type** – Specify the MIME Content type identification (for example *application/xml*, *application/json*, or *text/plain*).
         - **Request body** – Enter the body content.
@@ -107,7 +107,7 @@ Each external service instance defines a specific instance of an external servic
         - *Errors only* – Include details about errors.
         - *Successes and errors* – Include details about both successes and errors (recommended).
         - *None* – Don't include any details (show only log headers).
-    - **Service offline** – <!--KFM: Description needed -->
+    - **Service offline** – If you know that the service will be offline for some time, then set this to *Yes* to prevent the system from trying to connect to it. This can help save system resources because it will prevent the system from waiting for the service to respond to requests. Set this back to *No* when the service is back online.
 1. On the Action Pane, select **Save**.
 
 For information about how to read the log entries, see [Review the external service request log](#review-log).
@@ -127,9 +127,9 @@ Use the following procedure to link a printer with the external print service.
     - **Maximum file size** – If you enabled batch printing for the printer, then enter the maximum size (in megabytes) permitted for batch files sent to it. The value must be larger than zero. Batches that exceed this value will be split into smaller batches before sending. A large file size will allow you to include more labels with each batch. However, large batches may take a long time to print (thereby delaying other jobs) or may fail if they exceed the memory capacity of your printer. Check your printer's specifications to find the maximum supported value.
     - **Label print service instance** – Select the service instance to use. The example service instance value that was suggested earlier in this article was *External*.
     - **Label print service printer name** – Enter printer name as it is defined in the external service. This value represents an external printer name used within the external service.
-    - **Label print service execution policy** – <!--KFM: Description needed -->
-        - *Only use the label print service* – <!--KFM: Description needed -->
-        - *Fallback to the Document Routing Agent* – <!--KFM: Description needed -->
+    - **Label print service execution policy** – When **Connection type** is *Document routing agent/Hybrid*, this setting controls what will happen if a request to the external service fails. Choose one of the following values:
+        - *Only use the label print service* – If a request to the external service fails, then the system won't try to print the label using the DRA (even for printers where using the DRA would otherwise be an option).
+        - *Fallback to the Document Routing Agent* – If a request to the external service fails, then the system will try to print the label using the DRA.
 
 ## <a name="label-layout"></a>Label layout configuration
 
@@ -184,12 +184,11 @@ If you want to experiment with printing labels, you can set up a scenario for pr
 
 ## <a name="review-log"></a>Review the external service request log
 
-The external service request log contains information about each request that the system sends to an external service and can help you troubleshoot issues. The amount of detail recorded in the log depends on the **Log level** and **Log request bodies** settings specified for each external service instance (see also [External service instance configuration](#service-instance)). For each request, the system will always verify whether the external service has returned the HTTP success code (200) and will report an error if the response HTTP code was anything different (for example 4xx or 5xx errors). <!--KFM: Is this really true always? What if we set one or both of the logging options to *None*? -->
+The external service request log contains information about each request that the system sends to an external service and can help you troubleshoot issues. The amount of detail recorded in the log depends on the **Log level** and **Log request bodies** settings specified for each external service instance (see also [External service instance configuration](#service-instance)). For each request, the system will verify whether the external service has returned the HTTP success code (200) and will report an error if the response HTTP code was anything different (for example 4xx or 5xx errors), provided you've enabled the relevant logging options.
 
 Follow these steps to review the request log generated while printing labels to the external service:
 
-1. Go to **Warehouse Management \> Inquiries and reports \> External service request log**. You can also review the logs per specific instance in the  **Warehouse Management \> Setup \> External service instances \> Request log** page. <!--KFM: The original specified a different path (**Warehouse Management > Setup > External service instances > Request log**), but I think this is the right one. Please confirm. --> 
-<!--GFE: Added second as well. It is the same log, your path shows everything, path that I provided shows instance specific-->
+1. Go to **Warehouse Management \> Inquiries and reports \> External service request log** or, to review the log for a specific instance, go to **Warehouse Management \> Setup \> External service instances \> Request log**.
 1. In the grid, select the request log you want to review.
 1. On the Action Pane, select **Request details**.
 1. Review the log.
