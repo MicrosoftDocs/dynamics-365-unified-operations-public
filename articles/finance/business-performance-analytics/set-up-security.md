@@ -23,10 +23,10 @@ Setting up security in the business performance analytics app is a critical step
 >The functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about participating in public preview for business performance analytics, contact bpateam@microsoft.com.
 
 
-## Admin Role
+### Admin Role
 The first login to the app is given the **BPA admin** role. This role allows the user to access the **Administrator** section of business performance analytics to set up security. The admin is automatically assigned the **Microsoft report viewer** role and the **All access** dimension group. 
-•	The **Microsoft report viewer** role allows a user to view all reports that Microsoft provides in business performance analytics. 
-•	The **All access** dimension group allows a user to view data for all dimensions, without any filters. 
+ - The **Microsoft report viewer** role allows a user to view all reports that Microsoft provides in business performance analytics. 
+ - The **All access** dimension group allows a user to view data for all dimensions, without any filters. 
 
 ### Set up roles
 A role defines which reports a user can access. Use roles to organize how business performance analytics users can access reports. 
@@ -35,7 +35,6 @@ A role defines which reports a user can access. Use roles to organize how busine
 Dimension security allows administrators to control which data is visible in a report. Setting up dimension security is a two-step process:
 
 1. Set up dimensions: Select the dimensions you want to secure. In public preview, you can select up to five dimensions from the ledger and reporting dimensions. If this selection of dimensions is updated, this may have impact on the dimension groups created and the users who were assigned those dimension groups. 
-
 2. Set up dimension groups: You may only create dimension groups after step one is complete. Dimension groups filter report data so only the filtered dimension values from a given dimension attribute are visible to users assigned to that dimension group. You may assign one or more dimension groups to a user to control what data is visable on a report. There has to be at least one dimension group assigned to a user.  
 
 >[!Note]
