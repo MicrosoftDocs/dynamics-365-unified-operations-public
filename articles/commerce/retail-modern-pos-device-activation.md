@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 02/10/2023
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
