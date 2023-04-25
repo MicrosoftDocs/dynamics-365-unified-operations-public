@@ -2,7 +2,7 @@
 title: Create deployable packages
 description: This article explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/10/2023
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
