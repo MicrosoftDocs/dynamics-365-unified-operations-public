@@ -30,16 +30,14 @@ To complete the following procedures and successfully configure business perform
 To configure Dataverse for business performance analytics, follow these steps.
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/), open the environment details page, and confirm that the Microsoft Power Platform integration is set up.
-2. If Dataverse has already been set up, the name of the Dataverse environment that's linked to the finance environment will be listed. If Dataverse hasn't yet been set up, select **Setup**. After the setup is successfully completed, the name of the Dataverse environment that's linked to the Finance environment should be listed.
-
-If this integration was set up for an existing Microsoft Power Platform environment, confirm that the linked environment isn't in a disabled state. For more information, see [Enable Power Platform integration](//fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). To access Power Platform admin center, go to <https://admin.powerplatform.microsoft.com/>.
+2. If Dataverse has already been set up, the name of the Dataverse environment that's linked to the finance environment will be listed. 
+3. If Dataverse hasn't yet been set up, select **Setup**. After the setup is successfully completed, the name of the Dataverse environment that's linked to the Finance environment should be listed.
+4. If this integration was set up for an existing Microsoft Power Platform environment, confirm that the linked environment isn't in a disabled state. For more information, see [Enable Power Platform integration](//fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). To access Power Platform admin center, go to <https://admin.powerplatform.microsoft.com/>.
 
 ## Configure your Azure AD tenant
 
 Azure Active Directory (Azure AD) must be configured so that it can be used with Dataverse and the Microsoft Power Platform applications. The **Project owner** or **Environment manager** role must be assigned to the user in the **Project security role** field in Lifecycle Services.
-
 The following setup must be completed:
-
 1. You must have system administrator and system customizer access in Power Portal admin center.
 2. A Dynamics 365 Finance or equivalent license must be applied to the user who installs business performance analytics.
 
@@ -64,3 +62,4 @@ Before you can enable these items, the system must be in maintenance mode.
 
 1. In Lifecycle Services, open the environment details page.
 2. Select **Maintain \> Enable maintenance mode**.
+3. Once the configuration is enabled, please disable maintenance mode.
