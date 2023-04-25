@@ -109,19 +109,19 @@ It is determined at `TaxIntegrationTaxIdActivityOnDocument::populateTaxLineTaxId
 
 There is also a validation logic for the LE registration number, in case a different registration number is determined for various lines in a transaction. Basically, it is done at `TaxIntegrationTaxIdActivityOnDocument::checkTaxIdConsistency()`.
 
-### Counterparty Registration number
+### Counterparty registration number
 
 The counterparty registration number is determined by the tax calculation service. After receiving the response, it will be validated and saved to the database together with the legal entity registration number. However, if the number determined by the service is not in the user's master data, the default value on the transaction header will be written to the database instead of the returned one. Besides, the counterparty registration number is not applied to all transactions, there is an extra logic to handle this.
 
 #### Default logic
 
-Originally there exists a default logic from customer/vendor master data to the transaction header. We can set the **Tax-exempt number** at customer/vendor master data. When a new transaction is created, the exempt number will default to it. Users can also select a new number to override the default one. That number on the header before tax calculation will be used as the default number if the number returned by the tax service is invalid.
+There is a default logic from customer and vendor master data to the transaction header. You can set the **Tax-exempt number** at the customer and vendor master data level. When a new transaction is created, the exempt number defaults to it. You can also select a new number to override the default. The number on the header before tax calculation will be used as the default number if the number returned by the tax service is not valid.
 
-But the tax-exempt number is a string field (VATNum) instead of a record ID, and it has 2 data sources, not only from the tax registration number but also the tax-exempt number. Tax integration only supports the tax registration number as its source but not the tax-exempt number. So 2 new fields(VATNumRecId, VATNumTableType) should be added to the below tables to distinguish the record.
+The tax-exempt number is a string field (VATNum) instead of a record ID, and it has two data sources. One data source is from the tax registration number and the otehr is from the tax-exempt number. Tax integration only supports the tax registration number as its source. Two new fields, **VATNumRecId** and **VATNumTableType** should be added to the appropriate tables to distinguish the record.
 
-- When a new transaction is added, one should decide if these 3 fields (VATNum, VATNumRecId, VATNumTableType) should be added to the transaction header table. If yes, also add the table to TaxExemptVATNumMap, then the record ID and table type will be saved to the header table automatically when users select a number from UI.
+When a new transaction is added, decide if the fields, **VATNum**, **VATNumRecId**, and **VATNumTableType** should be added to the transaction header table. If yes, also add the table to TaxExemptVATNumMap. When you do that, the record ID and table type will be saved to the header table automatically when users select a number from the UI.
 
-Also, developers need to identify the default logic and call `copyPrimaryRegistrationNumberToVATMap` to copy the 2 fields to the newly created transaction header table. Take the default code from `CustTable` to `SalesTable` as an example, in `SalesTable.xpp`:
+A developer must identify the default logic and call `copyPrimaryRegistrationNumberToVATMap` to copy the two fields to the newly created transaction header table. Use the default code from `CustTable` to `SalesTable` below as an example, in `SalesTable.xpp`:
 
 ```X++
     private void initRegistrationNumbers(CustTable _custTable)
@@ -134,28 +134,28 @@ Also, developers need to identify the default logic and call `copyPrimaryRegistr
 
 #### Switch function
 
-1. Modify switch function to support the new transaction when journalizing: `TaxIntegrationUtils::isMultipleTaxIdEnabledForJournalV3(RefTableId _journalHeaderTableId, RefRecId _journalHeaderRecId, Tax _tax = null)`.
-2. If there is no counterparty, or the counterparty registration number is not applicable for the new transaction, we should skip the counterparty logic at `TaxIntegrationTaxIdActivityOnDocument::shouldSetPartyTaxId()`:
+1. Modify the switch function to support the new transaction when journalizing: `TaxIntegrationUtils::isMultipleTaxIdEnabledForJournalV3(RefTableId _journalHeaderTableId, RefRecId _journalHeaderRecId, Tax _tax = null)`.
+2. If there is no counterparty, or the counterparty registration number isn't applicable for the new transaction, skip the counterparty logic at `TaxIntegrationTaxIdActivityOnDocument::shouldSetPartyTaxId()`:
 
     ```X++
         protected static boolean shouldSetPartyTaxId(TaxIntegrationDocumentObject _document)
         {
-            // Sales Quotation for prospect customer does not apply to counterparty VAT ID
+            // Sales quotation for a prospect customer doesn't apply to the counterparty VAT ID
             if (_document.getHeadingTableId() == tableNum(SalesQuotationTable) && _document.getCustVendAccount() == '')
                 return false;
-            // Currently for PO and SO, party tax ID is set only if returned by tax service.
-            // But for Transfer Order, its party tax ID is not determined by tax service, it needs to be set for the first calculation round.
+            // Currently for purchase order and sales order, the party tax ID is set only if returned by the tax service.
+            // For Transfer Order, its party tax ID isn't determined by the tax service and must be set for the first calculation round.
             return _document.isPartyTaxIdReturned()
                 || ((_document.getBusinessProcess() == TaxIntegrationBusinessProcess::Inventory)
                     && !(TaxInventTransferCalcTaxContext::current() && TaxInventTransferCalcTaxContext::current().parmShouldSkipSetPartyTaxId()))
-                // If default exists, always go through the tax ID process.
+                // If a default exists, always go through the tax ID process.
                 || _document.getPartyTaxIdRecIdDefault();
         }
     ```
 
 ### Number sequence group
 
-The number sequence group is part of the multiple VAT ID feature. When the VAT ID is updated to the transaction header, the corresponding number sequence group should also be updated. But it does not apply to all transactions. If it should be integrated into the new transaction, follow the below example in data persistence activity:
+The number sequence group is part of the multiple VAT ID feature. When the VAT ID is updated to the transaction header, the corresponding number sequence group should also be updated. However, the update doesn't apply to all transactions. If the number sequence group should be integrated into the new transaction, use the following example in data persistence activity:
 
 ``` X++
     private void saveNumberSequenceGroupToTable()
@@ -171,15 +171,15 @@ The number sequence group is part of the multiple VAT ID feature. When the VAT I
     }
 ```
 
-The determination is done in the tax ID activity for all transactions, just add and call the logic in the data persistence activity to persist the number sequence group.
+The determination is done in the tax ID activity for all transactions. Add and call the logic in the data persistence activity to persist the number sequence group.
 
 ## List Code
 
-The list code is similar to the counterparty VAT ID, they are both determined by service and persist in the database. The list code feature is always enabled if the list code applicability matrix is configured at RCS.
+The list code is similar to the counterparty VAT ID as they are both determined by service and persist in the database. The list code feature is always enabled if the list code applicability matrix is configured at RCS.
 
 ### Data retrieval
 
-Retrieve the default list code to `TaxIntegrationDocument`. Just add a line in the `copyToDocumentFromHeaderTable` of the newly created data retrieval class.
+Retrieve the default list code to `TaxIntegrationDocument`. Add a line in the `copyToDocumentFromHeaderTable` of the newly created data retrieval class.
 
 ```X++
     protected void copyToDocumentFromHeaderTable()
@@ -193,7 +193,7 @@ Retrieve the default list code to `TaxIntegrationDocument`. Just add a line in t
 
 ### Map list code to map
 
-A `SalesPurchJournalTable` map is used in the data persistence class to reduce duplicate code. So map the list code from the header table to the map.
+A `SalesPurchJournalTable` map is used in the data persistence class to reduce duplicate code. Map the list code from the header table to the map.
 
 ```X++
         <AxTableMapping>
@@ -208,7 +208,7 @@ A `SalesPurchJournalTable` map is used in the data persistence class to reduce d
         </AxTableMapping>
 ```
 
-If your transaction table is not mapped to this `SalesPurchJournalTable`. Just write your own logic in the data persistence activity to update the list code.
+If your transaction table isn't mapped to this `SalesPurchJournalTable`, write your own logic in the data persistence activity to update the list code.
 
 ### Data persistence
 
@@ -227,16 +227,20 @@ Call the `TaxIntegrationListCodeUtility::saveListCodeFromDocumentToTable()` meth
     }
 ```
 
-### Currency exchange/Rounding/penny difference adjustment
+### Currency exchange, rounding, and penny difference adjustment
 
-This function is enabled by default, just set the transaction currency, reporting currency fixed exchange rate, and accounting currency fixed exchange rate to the document object. It is been done by `TaxIntegrationCurrencyExchangeActivityOnDocument` which is called in `TaxIntegrationFacade` without any condition. There is nothing to do to uptake it.
+This function is enabled by default. Set the transaction currency, reporting currency fixed exchange rate, and accounting currency fixed exchange rate to the document object. It is been done by `TaxIntegrationCurrencyExchangeActivityOnDocument` which is called in `TaxIntegrationFacade` without any condition. There is no action required on your part to uptake it.
 
 ## Cash discount
 
-If the cash discount function is already supported for the new transaction in Finance and Operation, tax integration can also provide the ability to determine the cash discount parameters by the tax calculation service. Here is a brief introduction to how to enable this function.
+If the cash discount function is already supported for the new transaction in your finance and operations apps, tax integration can also provide the ability to determine the cash discount parameters by the Tax Calculation service. The following is a brief introduction on how to enable this function.
 
 1. Find all references of cash discount parameters in the code base.
-2. Replace the reference of cash discount parameters with parameters that got from the tax calculation service. The parameters can be retrieved by any one of the 2 methods: `TaxIntegrationFacade:: getTaxJurisdictionParameters(RefTableId _sourceHeadingTableId, RefRecId _sourceHeadingRecId)` and  `TaxIntegrationFacade::getTaxJurisdictionParametersByTable(Common _sourceHeadingTable)`
-2. Extend switch functions to enable the new transaction: `TaxIntegrationUtils::shouldRetrieveCashDiscParametersFromTaxService(RefTableId _refTableId, RefRecId _refRecId)` and `TaxIntegrationUtils::getBusinessProcessBySourceHeadingTable(RefTableId _sourceHeadingTableId, RefRecId _sourceHeadingRecId)`.
+2. Replace the references of cash discount parameters with parameters from the Tax Calculation service. The parameters can be retrieved by one of two methods: 
+
+    - `TaxIntegrationFacade:: getTaxJurisdictionParameters(RefTableId _sourceHeadingTableId, RefRecId _sourceHeadingRecId)` 
+    - `TaxIntegrationFacade::getTaxJurisdictionParametersByTable(Common _sourceHeadingTable)`
+
+3. Extend the switch functions to enable the new transaction: `TaxIntegrationUtils::shouldRetrieveCashDiscParametersFromTaxService(RefTableId _refTableId, RefRecId _refRecId)` and `TaxIntegrationUtils::getBusinessProcessBySourceHeadingTable(RefTableId _sourceHeadingTableId, RefRecId _sourceHeadingRecId)`.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
