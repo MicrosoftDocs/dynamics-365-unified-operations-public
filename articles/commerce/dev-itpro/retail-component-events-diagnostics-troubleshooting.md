@@ -2,7 +2,7 @@
 title: Commerce component events for diagnostics and troubleshooting
 description: This article explains where to find events from Commerce-specific components.
 author: ShalabhjainMSFT
-ms.date: 02/10/2023
+ms.date: 12/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
