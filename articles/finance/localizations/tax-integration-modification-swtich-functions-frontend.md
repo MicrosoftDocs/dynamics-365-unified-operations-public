@@ -1,6 +1,6 @@
 ---
-title: Modification on switch functions and front end
-description: This article explains the modifications on switch functions and front end to integrate a new transaction.
+title: Modification on switch functions and front-end
+description: This article explains the modifications on switch functions and front-end to integrate a new transaction.
 author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
@@ -13,13 +13,14 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Till now, most logic to integrate a new transaction is done. Still, some work is needed on a switch function and frontend stuff to enable the code created.
+This article explains the modifications on switch functions and front-end to integrate a new transaction.
 
 ## Switch functions to enable the new transaction
 
-There is a switch function to control if tax integration should be applied to a specific transaction, header table, and line table. Developers should extend it to enable the new transaction.
+The switch function controls whether tax integration should be applied to a specific transaction, header table, and line table. As a developer, extend the switch function to enable the new transaction.
 
-- In `Tax.xpp`: add the header and line table of new transactions according to the business process. Extend the method to return true for the header and line tables of the new transaction.
+In `Tax.xpp`, add the header and line table of new transactions according to the business process. Extend the method to return true for the header and line tables of the new transaction.
+
   ```X++
     /// <summary>
     /// Checks whether Tax Integration is enabled.
@@ -62,11 +63,11 @@ There is a switch function to control if tax integration should be applied to a 
     }
   ```
 
-## Modification on F&O front end
+## Modification on the front-end
 
-Uptake the front-end modification to adapt to tax integration business logic.
+Uptake the front-end modification to adapt to the tax integration business logic.
 
-- In the transaction form, make "Override sales tax" control visible. And do not allow editing tax group and item tax group. Take sales quotation as an example, in the `init()` method of the `SalesQuotationTable` form:
+In the transaction form, make the **Override sales tax** control visible. Don't allow users to edit the tax group or the item tax group. The following example uses a sales quotation in the `init()` method of the `SalesQuotationTable` form:
 
   ```X++
         if (Tax::isTaxIntegrationEnabledForBusinessProcess(TaxIntegrationBusinessProcess::Sales))
@@ -80,7 +81,7 @@ Uptake the front-end modification to adapt to tax integration business logic.
 
   ![TaxGroup.png](./media/tax-group.png)
 
-- Find all buttons that can trigger tax calculation and reread the data source after tax calculation. Because during the calculation of tax integration, several fields are updated (ex. tax group), the data source of the form also needs a refresh to reflect the changes. Take free text invoices as an example, below code is from `CustFreeInvoice.xpp`:
+Find all buttons that can trigger tax calculation and reread the data source after tax calculation. Because during the calculation of tax integration, several fields are updated, the data source of the form also needs a refresh to reflect the changes. Using free text invoices as an example, the following code is from `CustFreeInvoice.xpp`:
 
   ```X++
     private void refreshDataSourceForTaxIntegration()
@@ -93,7 +94,7 @@ Uptake the front-end modification to adapt to tax integration business logic.
     }
   ```
 
-make a method for the form, then call this method once tax calculation is triggered by UI action like:
+Make a method for the form and then call this method after the tax calculation is triggered by UI action. For example:
 
   ```X++
     [Control("MenuFunctionButton")]
@@ -109,20 +110,20 @@ make a method for the form, then call this method once tax calculation is trigge
     }
   ```
 
-  Usually, there can be 3 buttons:
+  Usually, there can be three buttons:
 
-- **Sales tax** button on header:
+- **Sales tax** button on the Action Pane:
 
-  ![TaxOnHeader.png](./media/tax-on-header.png)
+    ![TaxOnHeader.png](./media/tax-on-header.png)
 
-- **Total** button on header
+- **Total** button on the Action Pane:
 
-  ![TotalOnHeader.png](./media/total-on-header.png)
+    ![TotalOnHeader.png](./media/total-on-header.png)
 
-- **Sales tax** button on line
+- **Sales tax** button on line:
 
-  ![TaxOnLine.png](./media/tax-on-line.png)
+    ![TaxOnLine.png](./media/tax-on-line.png)
 
-If there are other buttons that will trigger tax calculation, call the refresh in the clicked() method of those buttons too.
+If there are other buttons that trigger tax calculation, call the refresh in the clicked() method of those buttons.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
