@@ -161,7 +161,7 @@ All three types of activities log events during the `act` method as required aft
 
 ![Activity hierarchy](./media/tax-integration-activity-hierarchy.png)
 
-For more information about how to add a new activity, see [Add a new activity in tax integration](./tax-integration-how-to-add-an-activity.md).
+For more information about how to add a new activity, see [Add a new activity in tax integration](./tax-integration-how-to-add-activity.md).
 
 ### Sequence
 
