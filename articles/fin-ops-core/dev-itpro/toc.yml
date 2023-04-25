@@ -371,8 +371,9 @@
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
         - name: Geo to Geo migration
-          href: deployment/geo-to-geo-migrations.md
           items:
+          - name: Geo migration overview
+            href: href: deployment/geo-to-geo-migrations.md          
           - name: Environment migration process
             href: deployment/environment-migration-process.md          
           - name: LCS project migration manager
