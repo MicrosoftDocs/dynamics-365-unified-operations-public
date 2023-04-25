@@ -59,7 +59,7 @@ The **Feature management** workspace also has several tabs, each of which shows 
 
 ## Feature recommendation notifications
 
-Starting in Commerce version 10.0.35, users may start to see notifications informing them about recommended features. Users can review a recommended feature and request that it be enabled by an administrator. The request sends a notification to administrators, upon receipt of which they can assess the suggested feature and decide whether it should be enabled for their organization.
+Starting in Commerce version 10.0.35, users may start to see notifications informing them about recommended features. Users can review a recommended feature and request that it be enabled by an administrator. The request triggers a notification to be sent to administrators which they can use to assess the suggested feature and decide whether it should be enabled for their organization.
 
 ## Feature states
 Features can transition between several states, from being introduced in Feature management to eventually becoming mandatory in the product. This section describes the valid feature states.
