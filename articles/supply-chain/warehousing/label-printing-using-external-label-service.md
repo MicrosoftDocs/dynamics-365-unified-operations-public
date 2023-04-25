@@ -83,7 +83,7 @@ Follow these steps to set up external service definition.
 1. Expand **Label print service** tab and make the following settings:
     - **Print operation** – If you created an operation for printing ZPL-based layouts, then select the name of that operation here. This must be an operation that has already been defined for the current service definition, as described previously in this procedure.
     - **Variables print operation** – If you created an operation for printing variables-based layouts, then select the name of that operation here. This must be an operation that has already been defined for the current service definition, as described previously in this procedure.
-    - **Variable label layout template** – If you are using a variables-based layout, then enter the content for your variables-based layout template here.
+    - **Variable label layout template** – If you're using a variables-based layout, then enter the content for your variables-based layout template here.
 1. On the Action Pane, select **Save**.
 
 ## <a name="service-instance"></a>External service instance configuration

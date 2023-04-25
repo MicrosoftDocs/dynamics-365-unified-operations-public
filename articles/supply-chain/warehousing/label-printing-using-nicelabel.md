@@ -133,7 +133,7 @@ Follow these steps to set up an external service definition.
 1. Expand the **Label print service** FastTab and make the following settings:
     - **Print operation** – If you created an operation for printing ZPL-based layouts, then select the name of that operation here (for example, *SendData*).
     - **Variables print operation** – If you created an operation for printing variables-based layouts, then select the name of that operation here (for example, *Print*).
-    - **Variable label layout template** – If you are using a variables-based layout, then enter the content for your variables-based layout template here, for example:
+    - **Variable label layout template** – If you're using a variables-based layout, then enter the content for your variables-based layout template here, for example:
 
         ```JSON
         "filePath": "$SystemVariables.LabelFile$",
