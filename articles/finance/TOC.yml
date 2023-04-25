@@ -466,6 +466,8 @@
         items:
         - name: Subscription billing overview
           href: accounts-receivable/subscription-billing-summary.md
+        - name: Revenue and expense deferrals  
+          href: accounts-receivable/sb-project-deferrals.md
         - name: Recurring contract billing
           items:
           - name: Set up recurring contract billing
