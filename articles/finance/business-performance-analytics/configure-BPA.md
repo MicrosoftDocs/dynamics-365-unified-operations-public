@@ -62,4 +62,4 @@ Before you can enable these items, the system must be in maintenance mode.
 
 1. In Lifecycle Services, open the environment details page.
 2. Select **Maintain \> Enable maintenance mode**.
-3. Once the configuration is enabled, please disable maintenance mode.
+3. Once the configuration is enabled, disable maintenance mode.
