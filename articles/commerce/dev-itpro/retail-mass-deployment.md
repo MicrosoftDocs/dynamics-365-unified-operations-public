@@ -2,7 +2,7 @@
 title: Mass deployment of legacy self-service components
 description: This article explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment.
 author: jashanno
-ms.date: 02/10/2023
+ms.date: 01/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
