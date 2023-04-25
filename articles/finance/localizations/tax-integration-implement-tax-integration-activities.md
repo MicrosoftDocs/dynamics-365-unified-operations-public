@@ -5,7 +5,7 @@ author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
 ms.topic: conceptual
-ms.date: 04/12/2022
+ms.date: 04/25/2022
 ms.custom: bap-template
 ---
 
@@ -13,22 +13,20 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article introduces how to implement necessary activities for the new transaction.
+This article introduces how to implement necessary activities for a new transaction.
 
-The activities are the classes that really do the job in tax integration. A `TaxIntegrationDocumentObject` is passed from activity to activity. Activity is performed on the metadata in `TaxIntegrationDocumentObject`. All Tax Integration activities extend `TaxIntegrationAbstractActivity`, they can be appended to a sequence and executed by `TaxIntegrationFacade::calculate()` in the appended order.
+Activities are the classes that complete the job in tax integration. A `TaxIntegrationDocumentObject` is passed from activity to activity. An activity is performed on the metadata in `TaxIntegrationDocumentObject`. All Tax Integration activities extend `TaxIntegrationAbstractActivity` and can be appended to a sequence and executed by `TaxIntegrationFacade::calculate()` in the appended order.
 
-To integrate a new transaction, not all of these activities need to be implemented or modified. In most cases, only 2 activities are enough. They are `TaxIntegrationDataRetrievalActivityOnDocument` and `TaxIntegrationDataPersistenceActivityOnDocument`. If more features are to enabled for this new transaction, please refer to [Uptake features of tax integration](./tax-integration-uptake-features.md) after this wiki.
+To integrate a new transaction, not all of these activities need to be implemented or modified. In most cases, there are two specific activities that are enough. They are `TaxIntegrationDataRetrievalActivityOnDocument` and `TaxIntegrationDataPersistenceActivityOnDocument`. If more features are enabled for this new transaction, see [Uptake features of tax integration](./tax-integration-uptake-features.md).
 
-## Data Retrieval Activity
+## Data retrieval activity
 
-Data retrieval activity copies all metadata needed for tax calculation from a database to a `TaxIntegrationDocumentObject`.
+Data retrieval activity copies all the metadata needed for tax calculation from a database to a `TaxIntegrationDocumentObject`.
 
-In this activity, it will first construct and then call a transaction-specific subclass of `TaxIntegrationAbstractDataRetrievalTemplate` class according to the `HeadingTableId` of the current processed transaction in the factory pattern.
+In this activity, it will construct and then call a transaction-specific subclass of the `TaxIntegrationAbstractDataRetrievalTemplate` class according to the `HeadingTableId` of the current processed transaction in the factory pattern. Next, the subclass queries all the transaction lines, charges, and other useful information from the database and saves it to the document object.
 
-Then this subclass will query all the transaction lines and charges and other useful information from the database and save them to the document object.
-
-So the work here is to create and implement a new subclass of `TaxIntegrationAbstractDataRetrievalTemplate` and name it like
-`TaxIntegration***DataRetrieval`. There are data retrieval classes for the integrated transactions for your reference:
+To begin the data retrieval activity, create and implement a new subclass of `TaxIntegrationAbstractDataRetrievalTemplate`. Give the subclass a name. For example,
+`TaxIntegration***DataRetrieval`. The following is a list of data retrieval classes for the integrated transactions:
 
 - AxClass/TaxIntegrationPurchTableDataRetrieval
 - AxClass/TaxIntegrationPurchParmTableDataRetrieval
@@ -39,13 +37,11 @@ So the work here is to create and implement a new subclass of `TaxIntegrationAbs
 - AxClass/TaxIntegrationSalesParmDataRetrieval
 - ...
 
-The names consist of a *TaxIntegration* prefix, the header table name of the transaction, and *DataRetrieval*. If the free text invoice transaction is to be integrated, a `TaxIntegrationCustInvoiceTableRetrieval` class should be implemented.
+The names include *TaxIntegration* as a prefix, the header table name of the transaction, and *DataRetrieval*. If the free text invoice transaction is to be integrated, a `TaxIntegrationCustInvoiceTableRetrieval` class should be implemented.
 
-### Implementation of data retrieval class
+### Implementing data retrieval class
 
-This section introduces the implementation of the data retrieval class.
-
-Take `TaxIntegrationPurchTableDataRetrieval` as an example to introduce the outline of this class:
+This section introduces the implementation of the data retrieval class and uses `TaxIntegrationPurchTableDataRetrieval` as an example to introduce the outline of this class.
 
 ```X++
 [TaxIntegrationDataRetrieval(tableStr(PurchTable))]     // Attribute for TaxIntegrationDataRetrievalActivityOnDocument to call this class
@@ -88,7 +84,7 @@ public class TaxIntegrationPurchTableDataRetrieval
     // ...
 ```
 
-The class is declared with attribute `[TaxIntegrationDataRetrieval(tableStr(PurchTable))]`, which is used by the `TaxIntegrationDataRetrievalActivityOnDocument` to construct and call this class by factory pattern. The table name should be the transaction header table, and its table id should be the same as `HeadingTableId` initialized in the `TaxIntegrationDocumentObject`.
+The class is declared with attribute `[TaxIntegrationDataRetrieval(tableStr(PurchTable))]`, which is used by the `TaxIntegrationDataRetrievalActivityOnDocument` to construct and call this class by factory pattern. The table name should be the transaction header table, and its table ID should be the same as `HeadingTableId` initialized in the `TaxIntegrationDocumentObject`.
 
 Refer to `actStatic` method of `TaxIntegrationDataRetrievalActivityOnDocument.xpp`:
 
@@ -105,7 +101,7 @@ Refer to `actStatic` method of `TaxIntegrationDataRetrievalActivityOnDocument.xp
     }
 ```
 
-Then, declare at least 2 tables for each transaction, which are the header table and line table for this transaction. For purchase orders, they are PurchTable and PurchLine. If fields from other tables are used as input for the calculation, also declare it here.
+Declare at least two tables for each transaction. For this transaction, it's the header table and line table. For purchase orders, it would be the PurchTable and PurchLine. If fields from other tables are used as input for the calculation, declare that here.
 
 ```X++
 [TaxIntegrationDataRetrieval(tableStr(PurchTable))]
@@ -121,16 +117,15 @@ public class TaxIntegrationPurchTableDataRetrieval
 
 #### Create query object
 
-Queries in Tax Integration use the SysDaQuery method. After the implementation of several `get***QueryObejct()`, the tax integration framework will call these methods, retrieve the data from the database and assign it to the table buffer declared above.
-Four query object needs to be formatted. The idea is to:
+Queries in Tax Integration use the SysDaQuery method. After the implementation of several `get***QueryObejct()`, the tax integration framework will call these methods, retrieve the data from the database, and assign it to the table buffer declared above.
+Four query objects must formatted so that you can:
 
-1. Query the header level tables by `HeadingTableId` and `HeadingRecId` in `TaxIntegrationDocumentObject`. The header level tables refer to tables related to the transaction header table, like `PurchTable` for purchase orders.
-   - Note, just assign the header table to the buffer by `this.document.getLocalRecord()` directly, if the document object is constructed with a record by `TaxIntegrationDocumentObject::constructWithRecord(Common _record)`. The header table is not needed to be queried again.
-2. Query the line table by the relationship between the header table and the line table, after the header table buffer is provided.
-3. Query the header charge (`MarkupTrans`).
-4. Query the line charge (`MarkupTrans`).
+- Query the header level tables by `HeadingTableId` and `HeadingRecId` in `TaxIntegrationDocumentObject`. The header level tables refer to tables related to the transaction header table, like `PurchTable` for purchase orders. If the document object is constructed with a record by `TaxIntegrationDocumentObject::constructWithRecord(Common _record)`, assign the header table to the buffer by `this.document.getLocalRecord()` directly. The header table doesn't to be queried again.
+- Query the line table by the relationship between the header table and the line table, after the header table buffer is provided.
+- Query the header charge (`MarkupTrans`).
+- Query the line charge (`MarkupTrans`).
 
-Example from `TaxIntegrationPurchTableDataRetrieval.xpp`:
+The following is an example from `TaxIntegrationPurchTableDataRetrieval.xpp`.
 
 ```X++
     /// <summary>
@@ -195,9 +190,9 @@ Example from `TaxIntegrationPurchTableDataRetrieval.xpp`:
 ```
 
 > [!NOTE]
-> If fields from other tables are also needed, join them in the query object. Like, `transportationDocument` in the above `getDocumentQueryObject()` method.
+> If fields from other tables are needed, join them in the query object. For example, `transportationDocument` in the `getDocumentQueryObject()` method above.
 
-#### Construct line object
+#### Construct the line object
 
 ```X++
     /// <summary>
@@ -213,27 +208,26 @@ Example from `TaxIntegrationPurchTableDataRetrieval.xpp`:
     }
 ```
 
-Construct a `TaxIntegrationLineObject` by the line's table ID and record ID. This method is called by the framework, just replace the table buffer for the new transaction.
+Construct a `TaxIntegrationLineObject` by the line's table ID and record ID. This method is called by the framework. Replace the table buffer for the new transaction.
 
 #### The copy methods
 
-A bunch of methods that start with "*copy*" need to be implemented to copy metadata from the table buffer to the document object. Please refer to [Step 2. Retrieve data from the database](./tax-service-add-data-fields-tax-integration-by-extension.md#step-2-retrieve-data-from-the-database) for this part. Just ignore the extension part, since new classes should be created.
-Please decide which fields are necessary for tax calculation service when implementing these methods. Only copy the necessary fields.
-For adding new fields, please refer to [Step 1. Add the data variable in the object class](./tax-service-add-data-fields-tax-integration-by-extension.md#step-1-add-the-data-variable-in-the-object-class) and [Step 3. Add data to the request](./tax-service-add-data-fields-tax-integration-by-extension.md#step-3-add-data-to-the-request) to add them to the request.
+Several methods that start with "*copy*" must be implemented to copy metadata from the table buffer to the document object. For more information, see [Retrieve data from the database](./tax-service-add-data-fields-tax-integration-by-extension.md#step-2-retrieve-data-from-the-database). Because new classes should be created, you can disregard the information about extensions.
 
-Till now, the job of data retrieval activity is done.
+Determine which fields are necessary for the Tax Calculation service when you implement the methods and only copy the necessary fields.
+To add new fields, see [Add the data variable in the object class](./tax-service-add-data-fields-tax-integration-by-extension.md#step-1-add-the-data-variable-in-the-object-class) and [Add data to the request](./tax-service-add-data-fields-tax-integration-by-extension.md#step-3-add-data-to-the-request) to add them to the request.
 
-### Data Persistence Activity
+### Data persistence activity
 
-When data persistence activity is conducted, the tax calculation service has been called. The response has been processed and saved to `TaxIntegrationDocumentObject`. The job of data persistence activity is to update the necessary metadata in response to the database, including tax calculation results, tax group, tax item group, VAT ID, list code and etc.
+When the data persistence activity is conducted, the tax calculation service is called. The response is processed and saved to `TaxIntegrationDocumentObject`. The job of the data persistence activity is to update the necessary metadata in response to the database. The metadata includes tax calculation results, tax group, tax item group, VAT ID, and list code.
 
-Like the data retrieval class, `TaxIntegrationDataPersistenceActivityOnDocument` will construct and call the data persistence class according to the `HeadingTableId` of the current processed transaction. So the work here is to implement a `TaxIntegration***DataPersistence` class. Like `TaxIntegrationCustInvoiceTableDataPersistence` class for free text invoices.
+Like the data retrieval class, `TaxIntegrationDataPersistenceActivityOnDocument` constructs and calls the data persistence class according to the `HeadingTableId` of the current processed transaction. The work here is to implement a `TaxIntegration***DataPersistence` class. For example, implement the `TaxIntegrationCustInvoiceTableDataPersistence` class for free text invoices.
 
-However, unlike the data retrieval activity, most of the persistence work (tax calculation result) is done by the `TaxIntegrationDataPersistenceActivityOnDocument` itself. This part is handled by standard code, no extra effort is needed when integrating a new transaction.
+However, unlike the data retrieval activity, most of the persistence work, or tax calculation result, is done by the `TaxIntegrationDataPersistenceActivityOnDocument` itself. This part is handled by standard code. No additional work is needed when integrating a new transaction.
 
-So the only work of the newly created persistence class is to save the transaction-specific fields to the database, like tax group, tax item group, VAT ID, number sequence group, and list code.
+The new persistence class will save the transaction-specific fields, like tax group, tax item group, VAT ID, number sequence group, and list code to the database.
 
-Also, below is the basic structure of `TaxIntegrationPurchTableDataPersistence`:
+The following is the basic structure of `TaxIntegrationPurchTableDataPersistence`:
 
 ```X++
 /// <summary>
@@ -264,13 +258,13 @@ public class TaxIntegrationPurchTableDataPersistence
 }
 ```
 
-In the above example, it is obvious that the data persistence class has a similar structure as the data retrieval class. The only difference is data retrieval class copies data from *database* to *document object*, while the data persistence copies data from *document object* to *database*. So, this section will briefly introduce how to implement them and will not attach all code examples.
+In the example above, you can see that the data persistence class has a similar structure as the data retrieval class. The only difference is that the data retrieval class copies data from the *database* to the *document object*, while the data persistence copies data from the *document object* to the *database*. The following briefly introduces how to implement these. Not all code examples will be attached.
 
 - `[TaxIntegrationDataPersistence(tableStr(PurchTable))]` is an attribute for `TaxIntegrationDataPersistenceActivityOnDocument` to construct in the factory pattern.
-- QueryObject is almost the same as data retrieval, except for 2 points:
+- QueryObject is almost the same as data retrieval, except for two points:
   - `.forUpdate()` is called for the persistence class to update data to the database.
-  - Less table is used, for less table need to be updated.
-- `getLine()` method is similar to `constructLine()` in the data retrieval class, only replacing the table name with the new transaction table is enough.
+  - The Less table is used because it needs to be updated.
+- The `getLine()` method is similar to `constructLine()` in the data retrieval class, only replacing the table name with the new transaction table is enough.
 - Methods starting with "*save*" are the main job in this class, will introduce more on it.
 
 #### Save methods
@@ -310,9 +304,8 @@ Example from `TaxIntegrationPurchTableDataPersistence`:
     }
 ```
 
-The `saveDocument()` method is to update fields in the header table, while `saveLine()` updates fields in the transaction line table.
-Currently, VAT ID, number sequence group, and list code are updated in the header table, we will cover this part in the features uptake page.
-In `saveLine()` method, the tax group and item tax group returned by the tax calculation service need to be updated. This is true for most transactions.
+The `saveDocument()` method updates fields in the header table, while `saveLine()` updates fields in the transaction line table.
+Currently, VAT ID, number sequence group, and list code are updated in the header table. the In `saveLine()` method, the tax group and item tax group returned by the tax calculation service must be updated. This is true for most transactions.
 
 > [!NOTE]
 > Use doUpdate() instead of update() to avoid extra logic.
