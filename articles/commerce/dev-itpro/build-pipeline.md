@@ -2,7 +2,7 @@
 title: Set up a build pipeline for the independent-packaging SDK
 description: This article explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
 author: josaw1
-ms.date: 02/10/2023
+ms.date: 05/17/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
