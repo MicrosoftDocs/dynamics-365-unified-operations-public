@@ -49,7 +49,7 @@ Follow these steps to install the Asset Management mobile app in Dataverse.
 
 1. Go to ["Dynamics 365 Asset Management Mobile Application (Public Preview)" in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-scm-assetmanagementmobileapp).
 1. Select **Get it now**.
-1. Follow the instructions on your screen to install the app in your Dataverse environment that is connected to the target Supply Chain Management environment.
+1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
 ## Grant access to the mobile app in Dataverse
 
