@@ -381,7 +381,7 @@
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
-          href: deployment/retail-data-residency.md          
+          href: deployment/retail-data-residency.md
       - name: On-premises deployment
         items:
         - name: On-premises deployment home page
