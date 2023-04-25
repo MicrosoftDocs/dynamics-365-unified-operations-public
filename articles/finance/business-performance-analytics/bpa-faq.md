@@ -27,7 +27,7 @@ We are implementing a gated public preview to ensure that we can provide a succe
 Our initial focus is on customers with transaction volumes ranging from millions to less than 10 million rows, and we aim to expand to hundreds of thousands of rows by 
 June. We want to avoid onboarding customers with high transaction volumes before we have the necessary capability to support them effectively. 
 
-### What is the estimated time required to set up business performance analytics? 
+### What is the estimated time required to set up business performance analytics?   
 
 Business performance analytics set up will take around 30 minutes, but it will take 12 to 24 hours for data to be available in reports. 
 
