@@ -3,7 +3,7 @@
 title: Feature management overview
 description: This article describes Feature management and how you can use it.
 author: Peakerbl
-ms.date: 01/10/2022
+ms.date: 04/25/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,8 @@ The **Feature management** workspace also has several tabs, each of which shows 
 - **All** – This tab shows all features. The newest features appear at the top of the list.
 
 ## Feature recommendation notifications
-Starting in 10.0.35, users may start to see notifications informing them that certain features are recommended.  The users can view the suggested feature and request this feature to be enabled by the administrator.  This request will create a notification for the administrator, and they can then assess the feature and whether it should be enabled for their organization.
+
+Starting in Commerce version 10.0.35, users may start to see notifications informing them about recommended features. Users can review a recommended feature and request that it be enabled by an administrator. The request sends a notification to administrators, upon receipt of which they can assess the suggested feature and decide whether it should be enabled for their organization.
 
 ## Feature states
 Features can transition between several states, from being introduced in Feature management to eventually becoming mandatory in the product. This section describes the valid feature states.
@@ -85,7 +86,7 @@ Features that are updated to **On by default** are turned on by default, but the
 
 **Mandatory** is the expected final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
 
-## Example of expected feature lifecycles
+## Example of expected feature lifecycle
 
 Features that can be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **On by default** in the following October release. They are then expected to become **Mandatory** in April of the following year.
 
