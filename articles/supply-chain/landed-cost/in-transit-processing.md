@@ -66,7 +66,7 @@ To work with goods-in-transit settings for your warehouses, go to **Inventory ma
 | Under delivery warehouse | Identify the under-delivery warehouse that is related to the main warehouse. |
 
 > [!NOTE]
-> Error message "*Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled.*" will throw out when **Goods in transit** and **Under** type warehouse try to enable **use warehouse management processes** parameter in the warehouse setting. 
+> Error message "*Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled.*" will throw out when **Goods in transit** or **Under** type warehouse try to enable **use warehouse management processes** parameter in the warehouse setting. 
 
 ## Posting rules for landed cost
 
