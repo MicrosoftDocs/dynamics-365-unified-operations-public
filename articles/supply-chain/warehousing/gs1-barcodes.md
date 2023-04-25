@@ -4,7 +4,7 @@ description: This article describes how to set up GS1 bar codes and QR codes so 
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -125,6 +125,7 @@ To set up global GS1 options, follow these steps.
     - **FNC1 Character**, **Datamatrix character**, and **QR code character** – Specify characters that should be interpreted as a prefix for each type of GS1 bar code.
     - **Group separator** – Specify the character that replaces the ASCII group separator character.
     - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on for your system.
+    - **Unknown application identifier policy** - Specifies the action the system will take if an unknown Application Identifier is encountered when parsing a GS1 barcode. If the policy is set to **Error**, the system will report an error and a new entry in the GS1 Application Identifiers table will have to be set up to proceed. If the policy is set to **Ignore**, then the system will continue parsing the barcode without reporting an error or a warning. The data from the unknown Application Identifier will not be available to the application for further processing.
 
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.
@@ -245,12 +246,17 @@ To set up and customize your GS1 policies, follow these steps.
 
     - **Policy name** – Enter a name for the policy.
     - **Description** – Enter a short description of the policy.
+    - **Field value capturing method** - This option controls how the individual barcode values get handled as part of the mobile device flow.
+      - If **Process immediately** is selected the application identifier values will immediately get passed to the next mobile device step, even though the recorded values are not required for capturing as part of a following mobile device step. This can, depending on the recorded values, lead to unexpected mobile device flow processing.
+      - If **Save as default** is selected the application identifier values will get stored throughout the whole mobile device menu item flow and only used in the mobile device steps that are requiring the defined fields. It is therefore required to specify the exact mobile device step field control names as part of the **GS1 policy** setup to link the application identifier values from the barcodes to the warehouse management mobile app fields. You can read more about how to find the proper **Field** names [here](work-user-sessions.md).
+    - **Auto submit** - This option will auto submit the mobile device step if all the fields are populated.
 
 1. On the FastTab below the header, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
 
-    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
+    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation. Please refer to the [Work user sessions page](work-user-sessions.md) for more information about looking up the **Field** names.
     - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
-    - **Sorting** – Each multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows are processed in. The row that has the lowest sorting value will be processed first.
+    - **Sorting** – This option is only used with **Field value capturing method** defined as **Process immediately**. Each multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows are processed in. The row that has the lowest sorting value will be processed first.
+    - **Allow overwriting** - This option will save the application identifier value coming from the barcode even though a value already exists as part of the mobile device step. Only field values enabled for editing will get overwritten.
 
 > [!NOTE]
 > For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
@@ -313,3 +319,19 @@ Because of the settings that are established for this example, the system parses
 | ExpDate | 17 | 220215 | The date format is YYMMDD. Therefore, the expiry date is February 15, 2022. |
 
 The receipt is then registered, and the relevant database values are entered after the single scan.
+
+> [!TIP]
+> In case you cannot get you GS1 barcodes containing multiple values to work as part of a Warehouse management mobile app flow, please check the following settings which typically can be the root cause of the problem:
+> - Make sure the **GS1 generic setup** and **GS1 application identifiers** are created in alignment with the used barcode and in alignment with the **GS1 policy** assigned on the **Mobile device menu item**.
+> - For the specific **GS1 policy** use the *Field value capturing method* **Save as default** option.
+> - Make sure that all the **Field** names are in alignment with actual mobile device **Step Id** input control names. You can read more about how to see this [here](work-user-sessions.md).
+>
+>  Examples of reported support cases where this field mapping failed and thereby not possible to process the GS1-barcode scanning:
+>
+> | Used Field name | Correct Field name  | Process                   |
+> |-----------------|---------------------|---------------------------|
+> | ItemId          | ProductConfirmation | Item confirmation step    |
+> | CatchWeight     | OutboundWeight      | Catch weight picking step |
+>
+> - Set the Warehouse management parameter *Unknown application identifier policy* to **Ignore**.
+
