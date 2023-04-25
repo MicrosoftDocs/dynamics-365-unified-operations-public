@@ -26,12 +26,12 @@ This article describes how to install business performance analytics. The admini
 
 ## Install the business performance analytics app
 
- 1. Select the link that Microsoft provides.
- 2. Select **Get it now**.
- 3. In Power Platform admin center, select the Microsoft Dataverse environment to install the app in.
- 4. Accept the terms and conditions, and then select **Install**. App installation begins in the selected environment.
- 5. You can check the installation status in Power Platform admin center. After installation is completed, the status will be **Installed**.
- 6. After the app is installed, confirm that the following service principal is provisioned.
+1. Select the link that Microsoft provides.
+2. Select **Get it now**.
+3. In Power Platform admin center, select the Microsoft Dataverse environment to install the app in.
+4. Accept the terms and conditions, and then select **Install**. App installation begins in the selected environment.
+5. You can check the installation status in Power Platform admin center. After installation is completed, the status will be **Installed**.
+6. After the app is installed, confirm that the following service principal is provisioned.
 
      The following Azure Active Directory (Azure AD) application should be registered in Azure AD.
 
