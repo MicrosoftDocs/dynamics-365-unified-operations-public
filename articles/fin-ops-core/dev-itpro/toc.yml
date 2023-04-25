@@ -377,11 +377,11 @@
         - name: Geo to Geo migration
           items:
           - name: Geo migration overview
-            href: href: deployment/geo-to-geo-migrations.md          
+            href: href: deployment/geo-to-geo-migrations.md
           - name: Environment migration process
-            href: deployment/environment-migration-process.md          
+            href: deployment/environment-migration-process.md
           - name: LCS project migration manager
-            href: lifecycle-services/project-migration-manager.md          
+            href: lifecycle-services/project-migration-manager.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
