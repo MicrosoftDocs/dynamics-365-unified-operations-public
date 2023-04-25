@@ -65,6 +65,9 @@ To work with goods-in-transit settings for your warehouses, go to **Inventory ma
 | Goods in transit warehouse | Identify the goods-in-transit warehouse that is related to the main warehouse. |
 | Under delivery warehouse | Identify the under-delivery warehouse that is related to the main warehouse. |
 
+> [!NOTE]
+> Error message "*Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled.*" will throw out when **Goods in transit** and **Under** type warehouse try to enable **use warehouse management processes** parameter in the warehouse setting. 
+
 ## Posting rules for landed cost
 
 Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they are received.
