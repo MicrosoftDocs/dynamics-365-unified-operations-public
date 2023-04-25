@@ -321,7 +321,7 @@ Because of the settings that are established for this example, the system parses
 The receipt is then registered, and the relevant database values are entered after the single scan.
 
 > [!TIP]
-> In case you cannot get you GS1 barcodes containing multiple values to work as part of a Warehouse management mobile app flow, please check the following settings which typically can be the root cause of the problem:
+> In case you cannot get your GS1 barcodes containing multiple values to work as part of a Warehouse management mobile app flow, please check the following settings which typically can be the root cause of the problem:
 > - Make sure the **GS1 generic setup** and **GS1 application identifiers** are created in alignment with the used barcode and in alignment with the **GS1 policy** assigned on the **Mobile device menu item**.
 > - For the specific **GS1 policy** use the *Field value capturing method* **Save as default** option.
 > - Make sure that all the **Field** names are in alignment with actual mobile device **Step Id** input control names. You can read more about how to see this [here](work-user-sessions.md).
