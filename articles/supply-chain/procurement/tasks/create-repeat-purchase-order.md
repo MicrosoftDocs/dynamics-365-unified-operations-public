@@ -5,7 +5,7 @@ title: Create a repeat purchase order
 description: This article shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. 
 author: GalynaFedorova
 ms.date: 09/30/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This article shows you how to create a repeat purchase order (PO) by copying lin
 
 ## Create a new repeat purchase order
 
-1. In the navigation pane, go to **Modules \> Procurement and sourcing \> Purchase orders \> All purchase orders**. First we'll try the option for copying information to a new order.  
+1. In the navigation pane, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. First we'll try the option for copying information to a new order.  
 1. Select **New**.
 1. In the **Vendor account** field, enter `US-101`.
 1. Select **OK**.

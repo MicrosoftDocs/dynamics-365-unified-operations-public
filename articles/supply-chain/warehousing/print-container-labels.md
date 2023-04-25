@@ -1,18 +1,18 @@
 ---
-title: Print container labels
+title: Container label layouts and printing
 description: This article describes how to set up and print container labels.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSource, SysCorpNetPrinterList, WHSDocumentRouting, WHSPackProfile, WHSContainerTable, WHSRFMenuItem
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 01/30/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Print container labels
+# Container label layouts and printing
 
 [!include [banner](../includes/banner.md)]
 
@@ -22,14 +22,11 @@ As for [license plate labels](document-routing-layout-for-license-plates.md), th
 
 ## Turn on the container label printing functionality
 
-Container label functionality is part of the *Pack containers using the Warehouse Management mobile app* feature. (For more information, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) To use this functionality, the feature must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Pack containers using the Warehouse Management mobile app*
+Container label functionality is provided by default in Microsoft Supply Chain Management version 10.0.32. In version 10.0.31, you must enable the *Pack containers using the Warehouse Management mobile app* feature in order to use the container label printing functionality. (For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the *Pack containers using the Warehouse Management mobile app* feature and turn it on or off.
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 
-This example scenario shows how you can set up your system to print container labels when a worker creates a container by using the Warehouse Management mobile app. This scenario builds on the information that is provided in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). That article provides more details about the full process of packing containers by using the Warehouse Management mobile app.
+This example scenario shows how you can set up your system to print container labels when a worker creates a container by using the web client and/or the Warehouse Management mobile app. The Warehouse Management mobile app scenario builds on the information that is provided in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). That article provides more details about the full process of packing containers by using the Warehouse Management mobile app.
 
 ### Make sample data available
 
@@ -39,9 +36,11 @@ You can also use this scenario as guidance for using the feature on a production
 
 ### Create a container label layout
 
-The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer. Typically, you will copy this code from a label designer program.
+The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer. Typically, you'll copy this code from a label designer program.
 
 As the system generates a label, it can replace field and method names that are used in the label layout with actual values. You can easily find text that will be replaced by looking for dollar signs (`$`) in the code.
+
+#### Create a basic label layout
 
 Follow these steps to create a container label layout.
 
@@ -50,15 +49,15 @@ Follow these steps to create a container label layout.
 1. On the Action Pane, select **New** to create a label.
 1. Set the following values for the new label:
 
-    - **Label layout ID:** Enter *Container*.
-    - **Description:** Enter *Container ID barcode*.
-    - **Label layout data source ID:** Leave this field blank. (Only container data will be used.)
-    - **Enable label template support:** Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
-    - **Date, time, and number format:** Leave this field blank. (This field is used to set the formats of date, time, and number values that are shown in a label layout, as described later in this article.)
+    - **Label layout ID** – Enter *Container*.
+    - **Description** – Enter *Container ID barcode*.
+    - **Label layout data source ID** – Leave this field blank if you'll use only container data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
+    - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
+    - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in a label layout are formatted.
 
-1. Copy the following example of a ZPL container label.
+1. On the **Printer text Layout** FastTab, enter your label code. Here's an example of code that you can copy and paste for testing.
 
-    ``` plaintext
+    ``` ZPL
     CT~~CD,~CC^~CT~
     ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
     ^XA
@@ -73,97 +72,143 @@ Follow these steps to create a container label layout.
     ^PQ1,0,1,Y^XZ
     ```
 
-1. On the **Printer text Layout** FastTab, paste the copied text into the large field.
-1. Close the page.
+    > [!NOTE]
+    > While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps:
+    >
+    > 1. In the **Tables** list, select the table.
+    > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
+    > 1. Select **Insert at end of text** to add the field or method to the end of the code.
+    > 1. As you require, move the new field or method to the place in the code where you want to use it.
 
-> [!NOTE]
-> While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps.
-> 
-> 1. In the **Tables** list, select the table.
-> 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
-> 1. Select **Insert at end of text** to add the field or method to the end of the code.
-> 1. As you require, move the new field or method to the place in the code where you want to use it.
->
-> In the label layout that is shown in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) bar code will be printed. If you want to include additional related information (such as the delivery name that is related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it.
->
-> 1. Go to **Warehouse \> Setup \> Document routing \> Label layout data source**.
-> 1. Create a label layout data source that includes a join to the `Shipment` table.
-> 1. On the Action Pane, select **New**.
-> 1. In the new record, set the **Label layout data source ID**, **Description**, and **Label layout type** fields.
-> 1. On the Action Pane, select **Save**.
-> 1. On the Action Pane, select **Edit query**.
-> 1. A standard query editor dialog box appears. On the **Joins** tab, add a join to the required tables.
-> 1. Go back to the **Label layout** page, and then, in the **Label layout data source ID** field, select the new record for a new or existing layout.
-> 1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number (*\_\#*) as a suffix.
->
+1. On the Action Pane, select **Save**.
+
+#### Set up and use a label layout data source
+
+In the label layout in the preceding example, only the container ID (`$WHSContainerTable.ContainerId$`) is used, and this value is available directly in the container table. If you want to include related information (such as the delivery name that's related to a shipment), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout.
+
+1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
+1. On the Action Pane, select **New**.
+1. Set the following values for the new label layout data source:
+
+    - **Label layout data source ID** – Enter a name for the data source.
+    - **Description** – Enter a short description of the data source.
+    - **Label layout type** – Select *Container label*.
+
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Edit query**.
+1. A standard query editor dialog box appears. On the **Joins** tab, add joins to the required tables. (For example, you might make a join to the shipment table if you want your label to show the delivery name that's related to a shipment.)
+1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. Create or select a label layout, and then, in the **Label layout data source ID** field, select the record that you just created.
+1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number as a suffix (*\_\#*).
+
+> [!CAUTION]
 > On the **Label layout data source** page, be careful about removing a table from the query for an existing record. You might remove field and/or method names that are already used in existing label layouts.
 
 #### Enable label template support
 
-If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layout](document-routing-layout-for-license-plates.md).
+Label templates let you design labels that have more advanced layouts, which can include header, row, and footer elements. Follow these steps to format a label that includes label template elements.
 
-To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
+1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
+1. At the top of the list pane, set the **Label layout type** field to *Container Label*.
+1. Follow one of these steps:
 
-``` plaintext
-{{Header
-^FX ... ZPL commands that will be printed on every label ...
-CT~~CD,~CC^~CT~
-^XA
-~TA000
-~JSN
-^LT0
-^MNW
-^MTT
-^PON
-^PMN
-^LH0,0
-^JMA
-^PR6,6
-~SD15
-^JUS
-^LRN
-^CI27
-^PA0,1,1,0
-^XZ
-^XA
-^MMT
-^PW1276
-^LL900
-^LS0
-^FT80,150^A0N,58,58^FH\^CI28^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
-^FT80,250^A0N,33,33^FH\^CI28^FDItem^FS^CI27
-^FT579,250^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
-^FT720,250^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
-}}
-^FX ... This section goes on the first label only...
-^FT85,51^A0N,17,18^FH\^CI28^FDFIRST CONTAINER LABEL^FS^CI27
-{{Row Table=WHSContainerLine_1 RowsPerLabel=10 StartY=300 IncY=50
-^FX... ZPL commands to format the row using *$position.YPos$* to position the location of the text fields ...
-^FT80,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
-^FT579,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
-^FT720,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
-}}
-^FX ... This part goes on the last label only ... 
-^FT100,750^A0N,17,18^FH\^CI28^FDLast container label^FS^CI27
-{{Footer
-^FX ... ZPL commands that close every label ...
-^FT600,750^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
-^XZ
-}}
-```
+    - To create a new layout, select **New** on the Action Pane.
+    - To edit an existing layout, select the layout in the list pane, and then select **Edit** on the Action Pane.
 
-> [!NOTE]
-> Because of the `RowsPerLabel=10` attribute, this setup will loop over container lines and split out a label for each set of 10 container lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
->
-> This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: @per Let's add a `\^PQn` section in the sample code so we can see where it goes. -->
+1. In the **Label layout data source ID** field, select a data source. (A data source is required to enable label template support. However, if you need only container table data, you can select a very simple data source where no joins are defined.)
+1. Set the **Enable label template support** option to *Yes*.
+1. Use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. Because it prints data about items that are packed in a container, you'll have to use a **Label layout data source ID** value that uses a query that joins to the container lines (container details). The data can be split among multiple pages to ensure that all data will be printed if you have many container lines. In this example, a container ID bar code and six container lines will be printed on the first page. Ten lines will be printed per page. Each line will contain information about the item, quantity, and unit. This setup is controlled by the `RowsPerLabelFirst=6` and `RowsPerLabel=10` attributes.  
 
-#### Specify date, time, and number formats
+    ``` ZPL
+    {{LabelStart
+    ^FX ... ZPL commands to start the label ...
+    
+    ^XA
+    ~TA000
+    ~JSN
+    ^LT0
+    ^MNW
+    ^MTT
+    ^PON
+    ^PMN
+    ^LH0,0
+    ^JMA
+    ^PR6,6
+    ~SD15
+    ^JUS
+    ^LRN
+    ^CI27
+    ^PA0,1,1,0
+    ^XZ
+    ^XA
+    ^MMT
+    ^PW800
+    ^LL900
+    ^LS0
+    }}
+    
+    {{HeaderFirst
+    ^FX ... Header on the first label only ...
+    
+    ^BY3,3,220
+    ^FO150,120^BC
+    ^FD$WHSContainerTable.ContainerId$^FS
+    ^FT80,420^A0N,33,33^FH\^CI28^FDItem^FS^CI27
+    ^FT579,420^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
+    ^FT720,420^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
+    ^FT80,100^A0N,58,58^FH\^CI28
+    ^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
+    }}
+    
+    {{Header
+    ^FX ... Header on every label after the first ...
+    
+    ^FT80,100^A0N,58,58^FH\^CI28
+    ^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
+    ^FT80,150^A0N,40,40^FH\^CI28
+    ^FDContainer: $WHSContainerTable.ContainerId$^FS^CI27
+    ^FT80,220^A0N,33,33^FH\^CI28^FDItem^FS^CI27
+    ^FT579,220^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
+    ^FT720,220^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
+    }}
+    
+    {{Row Table=WHSContainerLine_1 RowsPerLabelFirst=6 RowsPerLabel=10 StartYFirst=500 StartY=300 IncY=50
+    ^FX... ZPL commands to format the row using *$position.YPos$* to position the location of the text fields ...
+    
+    ^FT80,$position.YPos$^A0N,30,30^TBN,480,30^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
+    ^FT579,$position.YPos$^A0N,30,30^TBN,120,30^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
+    ^FT720,$position.YPos$^A0N,30,30^TBN,100,30^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
+    }}
+    
+    {{FooterFirst
+    ^FX ... Footer on the first label only ...
+    
+    ^FT550,800^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
+    ^PQ1,0,1,Y
+    }}
+    
+    {{Footer
+    ^FX ... Footer on every label after the first...
+    
+    ^FT550,800^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
+    ^PQ1,0,1,Y
+    }}
+    
+    {{LabelEnd
+    ^FX ... ZPL commands to end the label ...
+    
+    ^XZ
+    }}
+    ```
 
-To set the formats of date, time, and number values that are shown in a label layout, open the **Label layout** page, select or create a layout, and set the **Date, time, and number format** field to the language that uses the formats that you want.
+    > [!NOTE]
+    > Because of the `RowsPerLabel=10` attribute, this setup will loop over container lines and split out a label for each set of 10 container lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
+    >
+    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`.
 
 ### Set up container label routing
 
-To specify the container label layouts that are used and where they are printed, you must define a **Container label routing** record, as described in the following procedure.
+To specify the container label layouts that are used and where they're printed, you must define a **Container label routing** record, as described in the following procedure.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
 1. On the Action Pane, select **New** to create a routing record.
@@ -221,7 +266,7 @@ To enable workers to print container labels manually, you must create a new mobi
 
 ### Add the new mobile device menu item to the menu
 
-Now that you've created the mobile device menu item, you can add it to the mobile device menu. In this example, you will add it to the existing **Outbound** mobile device menu.
+Now that you've created the mobile device menu item, you can add it to the mobile device menu. In this example, you'll add it to the existing **Outbound** mobile device menu.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. On the Action Pane, select **Edit**.
@@ -232,16 +277,23 @@ Now that you've created the mobile device menu item, you can add it to the mobil
 
 ### Run a scenario to print container labels
 
-For an example that shows how to print bar codes manually, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). Follow the instructions there, and confirm that the scenario that is described in this article is also supported.
+For an example that shows how to print bar codes automatically as part of a container creation process, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). Follow the instructions there, and confirm that the scenario that's described in this article is also supported when a packing profile is used where the **Print container label at container creation** checkbox is selected.
 
-Here are a few suggestions for ways that you can customize and fine-tune this scenario to help reduce the number of steps that workers must perform when they print container labels.
+To manually print a container label, follow one of these steps.
 
-- You can [query data by using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md) to look up a container ID instead of prompting the worker to enter it manually.
+- In the web client, go to **Warehouse management \> Packing and containerization \> Containers**, and select **Print \> Container label** on the Action Pane.
+- In the Warehouse Management mobile app, use the **Print container label** mobile device menu item.
+
+Here are a few suggestions for ways that you can customize and fine-tune this scenario to help reduce the number of steps that workers must perform when they print container labels:
+
+- Set up the mobile device menu item to [query data by using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md). In this way, the menu item can look up a container ID instead of prompting the worker to enter it manually.
 - When a worker selects the **Print container label** mobile device menu item on the **Outbound** menu, the app automatically submits the current **User ID** and **Warehouse** values. If workers want to specify a **Location** value, they can do so in the app.
-- If you want the **Location** value to be assigned automatically when a worker selects **Print container label** from the **Pack inventory into containers** menu item, you can set up a [detour]( warehouse-app-detours.md).
+- If you want the **Location** value to be assigned automatically when a worker selects **Print container label** from the **Pack inventory into containers** menu item, set up a [detour]( warehouse-app-detours.md).
 
 ## Additional resources
 
 - [Pack containers for shipment](packing-containers.md)
+- [Document routing label layouts](document-routing-layout-for-license-plates.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

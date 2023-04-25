@@ -2,7 +2,7 @@
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: josaw1
-ms.date: 10/27/2022
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,9 +25,9 @@ Most actions that users take in the point of sale (POS) are considered operation
 
 Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
-Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
+Some operations aren't currently available in the Store Commerce app or Store Commerce for web. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
-The table below provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
+The table below provides details about the operations that are available in the Store Commerce app and Store Commerce for web. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
 
 The following columns specify where the operations can be invoked:
 
@@ -60,13 +60,13 @@ The following columns specify where the operations can be invoked:
 | 118  | Process Input                                     | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 119  | Salesperson Barcode                               | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 120  | Salesperson Card                                  | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
-| 121  | Clear salesperson                                 | Clears the sales person from the transaction                                                                                                                                                                   | Yes            | Yes                | No             | Not applicable    | No              |
+| 121  | Clear salesperson                                 | Clears the sales person from the transaction.                                                                                                                                                                   | Yes            | Yes                | No             | Not applicable    | No              |
 | 122  | Invoice comment                                   | Enter a comment about the current transaction.                                                                                                                                                                 | Yes            | Yes                | No             | Yes               | No              |
 | 123  | Change unit of measure                            | Change the unit of measure for the selected line item.                                                                                                                                                         | Yes            | Yes                | No             | Yes               | No              |
 | 124  | Item dale multi                                   | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 125  | RFID sale                                         | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 126  | Sales history                                     | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
-| 127  | Override transaction tax                          | Override the tax on the transaction, and use a different specified tax.                                                                                                                                        | Yes            | Yes                | No             | Yes               | No              |
+| 127  | Override transaction tax                          | This is an internal operation consumed by operation 128, and shouldn't be used by customers.                                                                                                                      | No             | No                 | No             | No                | No              |
 | 128  | Override transaction tax from list                | Override the tax on the transaction, and use the tax that the user selects in a list.                                                                                                                          | Yes            | Yes                | No             | Yes               | No              |
 | 129  | Override line product tax                         | Override the tax on the selected line item, and use a different specified tax.                                                                                                                                 | Yes            | Yes                | No             | Yes               | No              |
 | 130  | Override line product tax from list               | Override the tax on the selected line item, and use the tax that the user selects in a list.                                                                                                                   | Yes            | Yes                | No             | Yes               | No              |

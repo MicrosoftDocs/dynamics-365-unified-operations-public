@@ -2,7 +2,7 @@
 title: Scripts for resolving issues in on-premises environments
 description: This article will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
 author: faix
-ms.date: 07/01/2021
+ms.date: 01/02/2023
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -19,9 +19,10 @@ ms.reviewer: sericks
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2019-11-30]
+ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 30
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Scripts for resolving issues in on-premises environments
@@ -56,6 +57,7 @@ For more information about how to resolve issues in on-premises environments, se
     #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
+    #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -305,9 +307,10 @@ finally
 
 The following script is used to change the account the AOS runs under from an Active Directory (AD) user to a group Managed Service Account (gMSA).
 
->[!NOTE]
+> [!NOTE]
 > This script can only be used starting with version 10.0.17.
 > You will need to reinstall the printers on each AOS node as they are not available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
+> This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
 
 ```powershell
 param (
@@ -344,6 +347,12 @@ foreach ($component in $configJson.components)
         $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
     }
 
+    if($component.name -eq "Bootstrap" -and $component.parameters.infrastructure)
+    {
+        $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+        $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
+    }
+
     if($component.name -eq "ReportingServices")
     {
         $component.parameters.accountListToAccessReports.value = $gmsaAccount
@@ -358,5 +367,71 @@ $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 
 Write-Host "Successfully updated the configuration for AOS gMSA execution."
 ```
+
+## <a name="enableDixf"></a>TSG\_EnableDixfService.ps1
+
+The following script is used to enable the Data Management Framework service for your environment.
+
+>[!NOTE]
+> This script can only be used starting with version 10.0.32.
+> Additionally, at least version 2.18.0 of the infrastructure scripts is required.
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [string]
+    $AgentShare,
+	[Parameter(Mandatory)]
+    [string]
+    $DMFShare,
+	[Parameter(Mandatory)]
+    [string]
+    $GmsaAccount
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.services.dmfServiceFabricService.value = "True"
+        $component.parameters.services.dmfFileShare.value = $DMFShare
+
+        $gatewayComponent = $configJson.components | Where-Object { $_.name -eq "Gateway" }
+        $dmfUrl = "https://$($component.parameters.infrastructure.hostName.value):$($gatewayComponent.parameters.internalServiceEndpointPort.value)/DixfApplication/DixfService/DMFService/DMFServiceHelper.svc"
+
+        $component.parameters.services.dmfServiceUrl.value = $dmfUrl
+    }
+    elseif($component.name -eq "Dixf")
+    {
+        $component.isEnabled = "True"
+        $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+        $component.parameters.infrastructure.principalUserAccountName.value = $GmsaAccount
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
+Write-Host "Successfully updated the configuration and enabled DixfService."
+```
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

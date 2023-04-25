@@ -4,7 +4,7 @@
 title: Change or reassign a ledger calendar
 description: This article explains how to change the calendar that is currently assigned to a ledger, and how to assign a new calendar to the ledger.
 author: kweekley
-ms.date: 05/07/2021
+ms.date: 02/07/2023
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -43,7 +43,7 @@ There are two scenarios for changing or reassigning a ledger calendar. The first
 
 To change an existing calendar that is assigned to your ledger, go to **General ledger \> Ledger setup \> Ledger**, and select the link for the fiscal calendar to open the **Ledger calendars** page.
 
-There are limits to the changes that can be made to a calendar. For example, you can change the start and end dates of the *periods* in a year, but you can't change the start and end dates of a *year* in the calendar.
+There are limits to the changes that can be made to a calendar. For example, you can change the start and end dates of the *periods* in a year if no transactions have been posted into the period. You also can't change the start and end dates of a *year* in the calendar.
 
 To change the periods in a year, select the appropriate calendar and year. First, use the use the **Delete period** button to delete some or all of the existing operating periods. All operating periods except the first can be deleted. Then use the **Divide period** button to divide the remaining period or periods into new periods by entering an appropriate start date for the next period.
 

@@ -1,8 +1,8 @@
 ---
 title: Cash out gift card balance for a retail customer
-description: This article provides information about the cash out gift card functionality that is available in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 02/08/2019
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.devlang:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides an overview of the cash out gift card feature for the Dynamics 365 Retail Modern POS (MPOS). 
+This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app. 
 
 The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request. 
 
@@ -73,9 +73,9 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 17. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
 
-## Configure and test Retail Modern POS
+## Configure and test the Store Commerce app
 
-1. Start the Retail Modern POS (MPOS) application.
+1. Start the Store Commerce application.
 2. Sign in by using the standard credentials.
 3. When you're prompted, select **Perform a non-drawer operation**.
 4. On the main screen, select **Select hardware station**.
@@ -94,7 +94,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 
 ## Troubleshooting 
 
-For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs. The logs can be found under these nodes in the Windows event log:
+For all general issues, you should always consult the Store Commerce app or IIS Hardware Station event logs. The logs can be found under these nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
 

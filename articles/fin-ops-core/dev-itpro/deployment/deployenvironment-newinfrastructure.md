@@ -36,6 +36,10 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 1. Select **Configure** on the project dashboard page.
 2. Select the **Application** and **Platform** version for the environment that you want to deploy. 
 3. Provide a **unique name** for the environment.
+
+> [!NOTE]
+> For US Government projects in the Government Community Cloud (GCC), environment names are limited to 15 characters for sandboxes and 23 characters for production due to the total length of the resulting URL.
+
 4. Select the **region** where you want this environment to be deployed. 
 5. Choose whether you want to load **demo data** in your environment or if you want an **empty database**.
 6. Select the **BPM library** that will be set as the Getting started library in the product.

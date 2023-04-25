@@ -30,7 +30,7 @@ For example, in the purchase order receiving flow, a purchase order number is re
 Before you can use the functionality that is described in this article, you must complete the following procedure to turn on the required features.
 
 1. Go to **System administration \> Workspaces \> Feature management**. (For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. If you are running Supply Chain Management version 10.0.28 or earlier, turn on the feature that is listed in the following way:
+1. If you're running Supply Chain Management version 10.0.28 or earlier, turn on the feature that is listed in the following way:
 
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse app step instructions*
@@ -50,7 +50,7 @@ Before you can use the functionality that is described in this article, you must
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse management app data inquiry flow*
 
-    This feature is the one that is described in this article.
+    This feature is the one that is described in this article. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.
 
 ## Example scenarios
 

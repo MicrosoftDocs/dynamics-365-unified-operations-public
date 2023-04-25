@@ -5,7 +5,7 @@ title: Create a hierarchy of product classification
 description: This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. 
 author: t-benebo
 ms.date: 07/11/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure shows how to create a new category hierarchy and assign a commodi
 
 
 ## Create the new category hierarchy
-1. Go to **Navigation pane > Modules > Product information management > Setup > Categories and attributes > Category hierarchies**.
+1. Go to **Product information management > Setup > Categories and attributes > Category hierarchies**.
 2. Click **New**.
 3. In the **Name** field, type a value.
 4. In the **Description** field, type a value.

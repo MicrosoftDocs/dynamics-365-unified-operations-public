@@ -4,33 +4,21 @@
 title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: BrianShook
-ms.date: 10/19/2020 
+ms.date: 01/30/2023 
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: 10.0.8
 
 ---
 
 # Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
-
 
 This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
 
@@ -97,9 +85,7 @@ Purchase status events resemble bank events. After an order is created in the Co
 
 ### Setup
 
-The out-of-box purchase protection integration requires a Fraud Protection environment. To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative.
-
-After the merchant's Fraud Protection environment is available, and purchase protection settings have been configured, the setup can continue in the Commerce back office.
+After the merchant's Fraud Protection environment is available and purchase protection settings have been configured, you can continue the setup in Commerce headquarters. If the environment isn't configured yet, to complete the configuration, sign in to the [Fraud Protection portal](https://dfp.microsoft.com/) with tenant global administrator credentials.
 
 #### Key Vault setup
 
@@ -122,9 +108,6 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 4. The **Dynamics Fraud Protection endpoint URL** field must be set. This URL is provided by Fraud Protection and will vary across user acceptance testing (UAT) and production environments.
 
 ![Fraud Protection setup in Retail parameters.](../media/Payments/DFPSetupParams1.png)
-
-> [!NOTE]
-> The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.
 
 ## Loss prevention in Commerce
 

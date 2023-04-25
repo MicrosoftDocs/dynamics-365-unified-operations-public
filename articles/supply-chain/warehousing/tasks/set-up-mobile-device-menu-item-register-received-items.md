@@ -5,7 +5,7 @@ title: Set up a mobile device menu item to register received items
 description: This article focuses on the setup of a mobile device menu item. 
 author: Mirzaab
 ms.date: 08/16/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -33,7 +33,7 @@ You can use this guide in demo data company USMF. This procedure is intended for
 
 
 ## Create a mobile device menu item
-1. In the navigation pane, go to **Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 2. Select **New**.
 3. In the **Menu item name** field, type a value. This is the unique identifier for this mobile device menu item. For example, you could type `My PO registration`.  
 4. In the **Title** field, type a value. This is the title, which will be displayed to the user on the mobile device. For example, you could type `PO registration`.  
@@ -51,7 +51,7 @@ You can use this guide in demo data company USMF. This procedure is intended for
 8. Close the page.
 
 ## Add the menu item to a mobile device menu
-1. In the navigation pane, go to **Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
 2. Use the **Quick Filter** to filter on the **Name** field with a value of `inbound`.
 3. Select **Edit**.
 4. In the Available menus and items tree, select the menu item that you created before.

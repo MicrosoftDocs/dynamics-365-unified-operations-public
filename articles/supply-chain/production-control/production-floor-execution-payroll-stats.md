@@ -23,7 +23,7 @@ This scenario uses the Danish holiday law, where the vacation year goes from Sep
 
 ## Turn on the required features
 
-To run this scenario, you must enable the *"My day" view for the production floor execution interface* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). For information about how to enable this and other features for the production floor execution interface, see [Configure the production floor execution interface](production-floor-execution-configure.md).
+To run this scenario, the *"My day" view for the production floor execution interface* feature must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). For information about how to enable this and other features for the production floor execution interface, see [Configure the production floor execution interface](production-floor-execution-configure.md).
 
 ## Make sample data available
 

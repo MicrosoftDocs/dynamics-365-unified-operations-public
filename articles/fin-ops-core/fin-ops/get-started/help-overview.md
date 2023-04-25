@@ -2,7 +2,7 @@
 title: Help system (contains video)
 description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
-ms.date: 08/16/2022
+ms.date: 04/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -63,7 +63,9 @@ Alternatively, you can subscribe to an RSS feed by app:
 
 ### Leave us feedback
 
-If you have feedback or questions about a article, leave us a comment at the bottom of the page.
+On the *learn.microsoft.com* website, each documentation article encourages you to provide feedback. We've changed the mechanism a couple of times based on, well, feedback. Currently, we ask you to choose the **Feedback** action below the article's title. You can give the article a rating, and write a comment if you want to. The feedback goes straight to the article's author and the team that owns the docs.  
+
+<!--If you have feedback or questions about a article, leave us a comment at the bottom of the page.
 
 1. Select **Feedback** to get to the comments at the bottom of the page. Then, select either **Product feedback** or **Sign in to give documentation feedback**.
 
@@ -72,7 +74,7 @@ If you have feedback or questions about a article, leave us a comment at the bot
     ![Post comment.](./media/feedback.png)
 
 > [!NOTE]
-> If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).
+> If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).-->
 
 ## Contribute to the documentation
 
@@ -82,7 +84,7 @@ You can contribute and make edits to the documentation. To get started, select t
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, see the [Microsoft Docs contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
+For more information, see the [Microsoft Learn contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.

@@ -4,7 +4,7 @@
 title: Set up fixed assets
 description: This article provides an overview of the setup of the Fixed assets module.
 author: moaamer
-ms.date: 06/08/2021
+ms.date: 01/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ You can also define special depreciation allowances, or bonus depreciation, for 
 
 ## Journal names
 
-On the **Journal names** page, you must create the journal names that should be used with the Fixed assets journal. You must set the **Journal type** field to **Post fixed assets**. Set the **Voucher series** field so that the journal names are used for the Fixed assets journal. Fixed assets journals should not use the **One voucher number only** setting, because a unique voucher number is required for several automated processes, such as transfers and splits.
+On the **Journal names** page, you must create the journal names that should be used with the Fixed assets journal. You must set the **Journal type** field to **Post fixed assets**. Set the **Voucher series** field so that the journal names are used for the Fixed assets journal. Fixed assets journals shouldn't use the **One voucher number only** setting, because a unique voucher number is required for several automated processes, such as transfers and splits.
 
 ## Fixed asset parameters
 
@@ -79,9 +79,16 @@ One important option is named **Automatically create depreciation adjustment amo
 
 The **Lock asset books in a depreciation journal** parameter lets you lock asset books in a depreciation journal. When depreciation transactions are being posted, the system will verify that the same asset book hasn’t been added to more than one depreciation journal. If it has, that asset book will be locked and posting will stop. If an asset book ID is in a locked journal, it will be unlocked automatically when posting is complete for the original journal. You can also unlock the journal manually. 
 
-On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when the invoice is posted. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition won't be posted. Posting must be done as a separate step, from the Fixed assets journal. The **Create asset during product receipt or invoice posting** option lets you create a new asset "on the fly" during posting. Therefore, the asset doesn't have to be set up as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
+The **Post disposal transactions in detail** determines which disposal scrap/sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
+ - If this option is set to **Yes**, the disposal sale/scrap posting process will validate the posting profile that the posting profile has all posting types. 
+ - If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile that **Acquisition value** is defined in the posting profile.  
 
-You can configure reason codes so that they are required for changes to a fixed asset or for specific fixed asset transactions.
+[!NOTE]
+>You can’t define the both options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting.
+
+On the **Purchase orders** FastTab, you can configure how assets are created as part of the purchasing process. The first option is named **Allow asset acquisition from Purchasing**. If you set this option to **Yes**, asset acquisition occurs when the invoice is posted. If you set this option to **No**, you can still put a fixed asset on a purchase order (PO) and invoice, but the acquisition won't be posted. Posting must be done as a separate step, from the Fixed assets journal. The **Create asset during product receipt or invoice posting** option lets you create a new asset during posting. Therefore, the asset doesn't have to be set up as a fixed asset before the transaction. The last option, **Check for fixed assets creation during line entry**, applies only to purchase requisitions.
+
+You can configure reason codes so that they're required for changes to a fixed asset or for specific fixed asset transactions.
 
 Finally, on the **Number sequences** tab, you define number sequences for fixed assets. The **Fixed asset** number sequence can be overridden by the **Fixed asset group** number sequence if it has been specified.
 

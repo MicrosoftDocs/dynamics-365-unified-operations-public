@@ -5,7 +5,7 @@ title: Check the availability of stock
 description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
 author: yufeihuang
 ms.date: 06/25/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 
 
 ## Check on-hand inventory for an item
-1. Go to **Navigation pane > Modules > Inventory management > Inquiries and reports > On-hand inventory**.
+1. Go to **Inventory management > Inquiries and reports > On-hand inventory**.
 2. Select the **Item number** row. To query the on-hand inventory by item number, select the row where the Table is set to **On-hand inventory** and Field is set to **Item** number.
 3. In the **Criteria** field, select the item you want to query. If you're using the USMF demo data company, you can select 'M9201'.  
 4. Click **OK**.
@@ -45,7 +45,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 12. Close the page.
 
 ## Check physical on-hand inventory
-1. Go to **Navigation pane > Modules > Warehouse management > Inquiries and reports > Physical on-hand inventory**.
+1. Go to **Warehouse management > Inquiries and reports > Physical on-hand inventory**.
 2. In the **Item number** field, type a value. You can use the Site and Warehouse fields to filter the list of items. 
 3. Refresh the page.
 4. On the **Action Pane**, click **Display Dimensions**. The Dimensions Display tab allows you select how much detail you want to see about your on-hand inventory.
@@ -53,7 +53,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 6. Close the page.
 
 ## Check on-hand inventory by location
-1. Go to **Navigation pane > Modules > Warehouse management > Inquiries and reports > On hand by location**.
+1. Go to **Warehouse management > Inquiries and reports > On hand by location**.
 2. In the **Warehouse** field, type a value. If you're using the USMF demo data company, you can use '51'.  
 3. Refresh the page.
 4. Click **Display Dimensions**.

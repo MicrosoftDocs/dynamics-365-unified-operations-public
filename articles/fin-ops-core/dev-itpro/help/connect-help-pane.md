@@ -31,36 +31,7 @@ The process for connecting your [custom Help website](custom-help-overview.md#cu
 
 ## <a name="extendhelppane"></a>Extend the Help pane and assign the custom Help indexes to languages
 
-The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
-
-### Extend the Help pane
-
-1. In the finance and operations development environment, open the **AzureSearchCustomHelp.sln** solution.
-2. On the **Dynamics 365** menu, select **Import project**.
-3. In the **File name** field, specify the path of the **HelppaneOption.axpp** project, and then select **OK** to complete the import process. Update the references so that no references are missing.
-4. In the **HelppaneMacro** file, update the values of the following parameters:
-
-    - **\[WebAppName\]** – Specify the name of the web app that you created in [Create a web app](walkthrough-help-azure.md#webapp). For example, specify **MyCustomHelpWebApp**.
-    - **Admin key value** – Specify the admin key for the Azure Cognitive Search service. You can find the key in **Access keys** under **Settings** on the left of the search service in the [Azure portal](https://portal.azure.com/).
-    - **\[SearchServiceName\]** – Specify the name of the search service that you created in [Create a search service](walkthrough-help-azure.md#searchservice). For example, specify **mycustomhelpsearch**.
-
-    The following example shows the content of the HelppaneMacro file.
-
-    ```
-    #define.webApp('http://[WebAppName].azurewebsites.net/')
-    #define.queryApiKey('Admin key value')
-    #define.defaultstring('dashboard')
-    #define.searchservicename('[SearchServiceName]')
-    #define.CustomResultError('error')
-    #define.CustomTabPage('CustomTabPage')
-    #define.CustomHelp('Custom Help')
-    #define.CustomTitle('CustomTitle')
-    #define.htm('html')
-    ```
-
-5. Optional: If you want to change any of the user interface (UI) strings that appear in the **Help** pane, edit the **Customhelppane.en-US.label.txt** file.
-
-Next, you must specify the language that the search index for your custom Help is intended for.
+[!INCLUDE [custom-help-toolkit-tools](../includes/custom-help-toolkit-tools.md)]
 
 ### Assign a custom index to a language
 
@@ -139,11 +110,8 @@ If the client is set to the **de-AT** locale, but no results are found in the Ge
 
 ## See also
 
-[Deploy custom Help to Azure](walkthrough-help-azure.md)  
-[Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

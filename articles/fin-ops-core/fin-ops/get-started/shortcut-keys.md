@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 08/29/2022
+ms.date: 01/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
@@ -106,7 +106,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Save record                                   | Alt+S or Ctrl+S   |
 | Revert (restore)                              | Ctrl+Shift+F5     |
 | Data refresh                                  | Shift+F5          |
-| Move to the visible first field on the page   | Alt+Shift+F       |
+| Move to the visible first field on the page   | Ctrl+Shift+F      |
 | Toggle edit mode                              | F2                |
 | Attach a document                             | Ctrl+Shift+A      |
 | Export to Excel                               | Ctrl+Shift+E      |
@@ -114,7 +114,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next record (outside a grid)      | Ctrl+Down arrow   |
 | Move to the first record (outside a grid)     | Ctrl+Home         |
 | Move to the last record (outside a grid)      | Ctrl+End          |
-| Close the page (select the Back button)<br><br>**Note:** If there is a popup window (tooltip, date picker, dropdown, etc.) open, the first use of Esc will dismiss the popup.       | Esc               |
+| Close the page (select the **Back** button)<br><br>**Note:** If any popup window (tooltip, date picker, or drop-down control) is open, the first use of the **Esc** key will dismiss it. | Esc               |
 | Close the page with explicit save             | Shift+Esc         |
 | Close the page discarding any unsaved changes | Alt+Shift+Q       |
 
@@ -158,11 +158,22 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
 | Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
 | Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks. | Enter                           |
-| Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
+| Toggle focus between the selected row and the header row                                                               | Alt+T,H or Alt+Shift+H         |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
 | Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
 | Resize the current column to fit the contents (with focus in the header row)                                           | A  (or double click on the column sizing handle) |
+| Open the grid options menu\*                                                                                             | Alt+T, O |
+| Change the type of calculated value for the current column\*                                                             | Alt+T, V |
+| Show/hide the grid footer\*                                                                                              | Alt+T, F |
+| Group/ungroup the current column\*                                                                                      | Alt+T, G |
+| Freeze/unfreeze the current column\*                                                                                    | Alt+T, P |
+| Go to the row in an invalid or paused state (when using fast data entry)\*                                              | Alt+T, A |
+| Revert changes in a newly created but unsaved row\*                                                                    | Ctrl+Shift+F5 |
+| Delete the current row\*                                                                                                 | Alt+Del  |
+
+> [!NOTE]
+> Shortcuts that are marked with an asterisk (\*) are available only in version 10.0.32 and later.
 
 ## Input control shortcuts
 

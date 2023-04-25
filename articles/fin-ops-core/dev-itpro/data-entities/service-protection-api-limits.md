@@ -21,11 +21,13 @@ ms.search.validFrom: 2022-04-21
 This article provides information about limits for service protection application programming interfaces (APIs) for the finance and operations apps service.
 
 > [!IMPORTANT]
-> Resource-based service protection API limits are enabled in finance and operations apps environments as of version 10.0.19. The user-based service protection API limits that are described in this article will be available to enable in environments with version 10.0.29, with Dynamics 365 2022 release wave 2, by selecting the **Enable** action for the **User-based service protection API limits** feature on the **Feature management** page. In version 10.0.30, the API limits will be enabled by default in all environments, but may optionally be disabled using the **Disable** action in **Feature management**. In version 10.0.33, the user-based API limits will be mandatory, and will no longer provide the option to disable the API limits. For more information, see the [Preparing for finance and operations Service Protection API Limits](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/preparing-for-finance-and-operations-service-protection-api-limits-may-17-18-2022) TechTalk.
+> Resource-based service protection API limits are enabled in finance and operations apps environments as of version 10.0.19. Resource-based API limits will continue to be the mechanism for protecting the finance and operations service from unexpected spikes in usage that threaten the availability and performance of the service.
+> 
+> We previously announced that user-based service protection API limits, as described in this article, would be mandatory in all finance and operations apps environments in version 10.0.33 as an additional layer of service protection. As of March 31, 2023, **we will no longer be implementing user-based service protection API limits in finance and operations apps environments.** The limits are currently optional, and can be enabled or disabled using the **User-based service protection API limits** feature in **Feature management**. In a coming release these limits will be disabled by default.
 
 To ensure consistent availability and performance of the finance and operations apps service, Microsoft applies limits to the way that the service APIs are used. These limits are designed to protect the service when client applications make extraordinary demands on server resources. Sudden bursts of high incoming API traffic or concurrent long-running requests against the server can exhaust server resources, and can cause outages or have other impacts on the availability and performance of the service.
 
-The limits should not affect regular users of interactive clients. They are designed to affect only client applications that perform extraordinary API requests. The limits provide a level of protection from random and unexpected surges in request volume that threaten the availability and performance of the finance and operations platform.
+The limits shouldn't affect regular users of interactive clients. They're designed to affect only client applications that perform extraordinary API requests. The limits provide a level of protection from random and unexpected surges in request volume that threaten the availability and performance of the finance and operations platform.
 
 > [!NOTE]
 > Service protection API limits are available only for the finance and operations apps online service, including production and sandbox environments. They aren't available for on-premises or development environments.
@@ -38,7 +40,7 @@ Client applications are responsible for managing service protection API limit er
 
 The service protection limits are high enough that users of an interactive client application should rarely encounter them during normal usage. However, if the client application allows for bulk operations, users might encounter them. Client application developers should be aware of how service protection API limits are enforced, and they should design the user interface (UI) to help reduce the potential for users to send extremely demanding requests to the server. However, they should still expect that service protection API limit errors might occur, and they should be prepared to handle those errors.
 
-Client application developers should not just throw errors so that users receive the error messages, because users aren't the intended audience. For specific strategies that you can use to manage a throttling response when API requests exceed the service protection limits, see [Retry operations](service-protection-retry-operations.md).
+Client application developers shouldn't just throw errors so that users receive the error messages, because users aren't the intended audience. For specific strategies that you can use to manage a throttling response when API requests exceed the service protection limits, see [Retry operations](service-protection-retry-operations.md).
 
 ### Data integration applications
 
@@ -48,7 +50,7 @@ For more information, see [Maximize API throughput](service-protection-maximizin
 
 ### Anonymous users
 
-Some applications will send requests from anonymous users through a service principal account. For the service protection API limits that are evaluated on a per-user basis, these applications can reach the limits because of the volume of traffic that the applications experience across all client users. As for interactive client applications, the expectation is that users should not receive messages about service protection API limit errors. Instead, the UI should disable further requests and show a message that states that the server is busy. The message might include the time when the application can begin to accept new requests.
+Some applications will send requests from anonymous users through a service principal account. For the service protection API limits that are evaluated on a per-user basis, these applications can reach the limits because of the volume of traffic that the applications experience across all client users. As for interactive client applications, the expectation is that users shouldn't receive messages about service protection API limit errors. Instead, the UI should disable further requests and show a message that states that the server is busy. The message might include the time when the application can begin to accept new requests.
 
 ## Enforcement of the service protection API limits
 
@@ -90,7 +92,7 @@ To track API usage to enforce service protection API limits, each web server in 
 
 These values are taken from the access token that is used for the API request. For example, a company has an employee portal that is a web application that uses the OData API to connect to finance and operations data. Each employee signs in to the web app by using a company email address and password. In this scenario, the user object ID and the application client ID that are used in the API request are used to track usage against the service protection API limits. Each user of the application has API usage tracked and throttled independently. For more information about the authentication flow for this scenario, see [Authentication](services-home-page.md#authentication).
 
-If the application uses app authentication instead of user authentication, so that there is no user who signs in to the application, the user in the throttling key is the object ID of the application in Azure AD. For information about how to find the application object ID, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals.md#application-object).
+If the application uses app authentication instead of user authentication, so that there isn't a user who signs in to the application, the user in the throttling key is the object ID of the application in Azure AD. For information about how to find the application object ID, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
 
 ### Resource-based service protection API limits
 
@@ -119,7 +121,7 @@ For example, if a list view enables the selection of 250 records at a time and a
 If your application provides this capability, you should consider one or both of the following strategies:
 
 - Decrease the total number of records that can be selected in a list. If the number of items that are shown in a list is reduced to 50, the user will have to perform this operation 120 times within 300 seconds. In other words, the user will have to complete the operation on each list within 2.5 seconds. 
-- Combine the selected operations into a batch. Because a batch can contain up to 5,000 operations, it will avoid the limit on the number of requests. However, you will have to be prepared for the execution time limit.
+- Combine the selected operations into a batch. Because a batch can contain up to 5,000 operations, it will avoid the limit on the number of requests. However, you'll have to be prepared for the execution time limit.
 
 ### Execution time
 
@@ -139,7 +141,7 @@ This limit tracks the number of concurrent requests for the user. The following 
 
 Client applications aren't limited to sending requests individually in succession. The client can apply parallel programming patterns or various methods to send multiple requests simultaneously. If the limit on the number of concurrent requests is exceeded, the error is returned together with the API response.
 
-Although you can send concurrent requests as a key part of your strategy for maximizing throughput, don't overuse this approach. When [parallel programming in .NET](/dotnet/standard/parallel-programming) is used, the default degree of parallelism depends on the number of CPU cores on the server that runs the code. This number should not exceed 52. You can set the [ParallelOptions.MaxDegreeOfParallelism](/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property to define the maximum number of concurrent tasks.
+Although you can send concurrent requests as a key part of your strategy for maximizing throughput, don't overuse this approach. When [parallel programming in .NET](/dotnet/standard/parallel-programming) is used, the default degree of parallelism depends on the number of CPU cores on the server that runs the code. This number shouldn't exceed 52. You can set the [ParallelOptions.MaxDegreeOfParallelism](/dotnet/api/system.threading.tasks.paralleloptions.maxdegreeofparallelism) property to define the maximum number of concurrent tasks.
 
 ### Resource utilization threshold
 
@@ -164,7 +166,7 @@ The service protection API limits don't apply to all Microsoft services. The fol
 - [Power Platform virtual tables for finance and operations apps](../power-platform/virtual-entities-overview.md)
 - [Finance and operations apps Connector](fin-ops-connector.md)
 
-The exemption for virtual tables applies only when the [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) is enabled. The service protection API limits will apply to virtual tables if the integration is not enabled for the Finance and Operations apps environment. When the integration is enabled, the exemption applies only to the Finance and Operations apps API endpoints that are invoked by the virtual entity plugin. The Finance and Operations apps service will not throttle the request. However, because the request is made through the Microsoft Dataverse API, [Dataverse service protection API limits](/power-apps/developer/data-platform/api-limits.md) may still apply to the request.
+The exemption for virtual tables applies only when the [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) is enabled. The service protection API limits will apply to virtual tables if the integration is not enabled for the Finance and Operations apps environment. When the integration is enabled, the exemption applies only to the Finance and Operations apps API endpoints that are invoked by the virtual entity plugin. The Finance and Operations apps service won't throttle the request. However, because the request is made through the Microsoft Dataverse API, [Service protection API limits](/power-apps/developer/data-platform/api-limits) may still apply to the request.
 
 Although these services are currently exempt from the limits, they prioritize implementation of the service protection limits. Notifications will be provided before any changes, and the documentation will be updated when exemptions are removed for these services.
 

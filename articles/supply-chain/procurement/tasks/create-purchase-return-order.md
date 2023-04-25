@@ -5,7 +5,7 @@ title: Create a purchase return order
 description: This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. 
 author: GalynaFedorova
 ms.date: 06/25/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. It also shows you how to confirm the order and process shipment of the goods back to the vendor. The example shown in this procedure can be used in the USMF demo data company. This task would typically be carried out by a purchasing agent.
 
 ## Create a new purchase return order
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Purchase orders > All purchase orders**. The first step is to create a new purchase order to be used as the purchase return order.  
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**. The first step is to create a new purchase order to be used as the purchase return order.  
 2. Click **New**.
 3. In the **Vendor account** field, enter "US-102".
 4. Click **OK**.

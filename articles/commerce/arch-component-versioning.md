@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: Reza-Assadi
-ms.date: 10/20/2022
+ms.date: 03/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -11,11 +11,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.11
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-ms.search.form: RetailITWorkspace
+
 ---
 
 # Dynamics 365 Commerce component versioning requirements
@@ -38,9 +34,9 @@ To ensure compatibility between all Commerce components that are serviced and de
 
     For example, if Commerce headquarters and finance and operations apps are on version 10.0.30, Commerce Scale Unit must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
 
-- **Commerce Scale Unit must be on the same version as, or an later version than, Modern Point of Sale (MPOS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+- **Commerce Scale Unit must be on the same version as, or an later version than, Store Commerce app, Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
-    For example, if Commerce Scale Unit is on version 10.0.30, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+    For example, if Commerce Scale Unit is on version 10.0.30, Store Commerce app, Hardware Station, and the Commerce storefront must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
 
 - **Extension packages must be compiled against the same version as, or an earlier version than, the target component that the extension applies to.**
 
@@ -52,16 +48,16 @@ During quality updates, no specific versioning requirements must be followed for
 
 ## Current supported versions
 
-The following table describes the current supported versions of various Commerce components as of **October 21st, 2022**.
+The following table describes the current supported versions of various Commerce components as of **March 13, 2023**.
 
 | Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and operations apps | 10.0.30 | 10.0.30 | 10.0.26 | 10.0.26 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.30 | 9.40 | 10.0.30 | 9.36 |
-| Commerce module library | 10.0.30 | 9.40 | 10.0.26 | 9.36 |
-| Commerce Scale Unit (self-hosted) | 10.0.30 | 9.40 | 10.0.22 | 9.32 |
-| Modern POS | 10.0.30 | 9.40 | 10.0.22 | 9.32 |
-| Hardware Station | 10.0.30 | 9.40 | 10.0.22 | 9.32 |
+| Finance and operations apps | 10.0.32 | 10.0.32 | 10.0.28 | 10.0.28 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.32 | 9.42 | 10.0.32 | 9.38 |
+| Commerce module library | 10.0.32 | 9.42 | 10.0.28 | 9.38 |
+| Commerce Scale Unit (self-hosted) | 10.0.32 | 9.42 | 10.0.24 | 9.34 |
+| Modern POS | 10.0.32 | 9.42 | 10.0.24 | 9.34 |
+| Hardware Station | 10.0.32 | 9.42 | 10.0.24 | 9.34 |
 
 ## One Version requirements
 
@@ -81,7 +77,7 @@ For example, customers who are currently on version 10.0.30 can pause updates to
 
 Customers can pause up to seven consecutive updates across the following components:
 - Commerce Scale Unit (self-hosted)
-- Modern POS or Store Commerce
+- Store Commerce app
 - Hardware station
 
 For example, customers who are currently on version 10.0.30 can pause updates for the released versions 10.0.31, 10.0.32, 10.0.33, 10.0.34, 10.0.35, 10.0.36 and 10.0.37. However, they must then update to version 10.0.38. In this scenario, after version 10.0.38 becomes available, version 10.0.30 is no longer supported.
@@ -93,7 +89,7 @@ For example, customers who are currently on version 10.0.30 can pause updates fo
 For more information about how to select the correct components to meet your needs, see the following articles:
 
 - [Select an in-store topology](./dev-itpro/retail-in-store-topology.md)
-- [Choose between Modern POS (MPOS) and Cloud POS (CPOS)](mpos-or-cpos.md)
+- [Choose between Store Commerce app and Store Commerce for web](mpos-or-cpos.md)
 
 ### Servicing instructions
 
@@ -101,9 +97,9 @@ For more information about how to service individual components that are describ
 
 - [Configure and install Commerce Scale Unit](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
 - [Apply updates and extensions to Retail Cloud Scale Unit](../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)
-- [Configure, install, and active Modern POS (MPOS)](retail-modern-pos-device-activation.md)
 - [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)
 - [Package configurations and deploy them to an online channel](./e-commerce-extensibility/package-deploy.md)
+<!-- [Configure, install, and activate the Store Commerce app](retail-modern-pos-device-activation.md)-->
 
 ### Extensibility and packing
 

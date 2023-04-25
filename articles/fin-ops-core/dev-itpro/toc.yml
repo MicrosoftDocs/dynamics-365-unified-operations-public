@@ -14,10 +14,14 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.34 (May 2023)
+          href: get-started/whats-new-platform-updates-10-0-34.md 
+        - name: Platform updates for version 10.0.33 (April 2023)
+          href: get-started/whats-new-platform-updates-10-0-33.md
+        - name: Platform updates for version 10.0.32 (March 2023)
+          href: get-started/whats-new-platform-updates-10-0-32.md
         - name: Platform updates for version 10.0.31 (February 2023)
           href: get-started/whats-new-platform-updates-10-0-31.md
-        - name: Platform updates for version 10.0.30 (November 2022)
-          href: get-started/whats-new-platform-updates-10-0-30.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -330,6 +334,8 @@
             href: deployment/infrastructure-stack.md
           - name: Deploy a new environment
             href: deployment/deployenvironment-newinfrastructure.md
+          - name: Delete a Production Finance and Operations apps environment
+            href: deployment/delete-production-environment.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
           - name: Migrate an environment
@@ -388,10 +394,10 @@
           items: 
           - name: Set up on-premises projects in LCS
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-          - name: Set up and deploy on-premises environments (Platform update 41 and later)
+          - name: Set up and deploy on-premises environments (Application 10.0.32 and later)
+            href: deployment/setup-deploy-on-premises-latest.md
+          - name: Set up and deploy on-premises environments (Platform update 41 through 55)
             href: deployment/setup-deploy-on-premises-pu41.md
-          - name: Set up and deploy on-premises environments (Platform updates 12 through 40)
-            href: deployment/setup-deploy-on-premises-pu12.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
@@ -434,6 +440,12 @@
             href: deployment/onprem-upgrade-os.md
           - name: Upgrade or replace the SQL Server instance of on-premises environments
             href: deployment/onprem-upgrade-sqlserver.md
+        - name: Infrastructure Scripts
+          items:
+          - name: Obtain the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
+            href: deployment/obtain-infrascripts-onprem.md
+          - name: Configure the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
+            href: deployment/configure-infrascripts-onprem.md
         - name: Local agent
           items:
           - name: AD FS Microsoft 365 compatibility
@@ -468,25 +480,11 @@
           href: help/custom-help-overview.md
         - name: Preparing content for use with the Help pane
           href: help/preparing-content.md
-        - name: Deploying custom help to Azure
-          href: help/walkthrough-help-azure.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
-        - name: Custom help toolkit
-          items:
-            - name: Overview
-              href: help/custom-help-toolkit.md
-            - name: The HTML From Repo Generator tool
-              href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
-            - name: The Convert HTML To JSON tool
-              href: help/custom-help-toolkit-ConvertHtmlToJson.md
-            - name: The HTML Locale Changer tool
-              href: help/custom-help-toolkit-HtmlLocaleChanger.md
-            - name: Convert Dynamics AX custom help for use in Dynamics 365
-              href: help/migrate-dynamicsax2012.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend and collaborate on the help
+        - name: Contribute to the Help
           href: help/contributor-guide.md
       - name: Finance and operations apps regional services
         items:
@@ -522,8 +520,14 @@
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
           href: dev-tools/development-system-requirements.md
-      - name: Version control, metadata search, and navigation
-        href: dev-tools/version-control-metadata-navigation.md
+      - name: X++ Application lifecycle management
+        items: 
+        - name: Version control, metadata search, and navigation
+          href: dev-tools/version-control-metadata-navigation.md
+        - name: Branching
+          href: dev-tools/branching.md
+        - name: X++ in Git
+          href: dev-tools/git-intro.md
       - name: Build automation using Azure
         items:
         - name: Build automation using Microsoft-hosted agents and Azure Pipelines
@@ -904,6 +908,8 @@
             href: perf-test/concepts-creators.md
           - name: Queries in the acceptance test library
             href: perf-test/concepts-queries.md
+          - name: Public application tests
+            href: perf-test/public-application-tests.md
           - name: Specification classes
             href: perf-test/concepts-specifications.md
           - name: Acceptance test library code generation wizard
@@ -1086,10 +1092,6 @@
               href: data-entities/dual-write/dual-write-system-req.md
             - name: Guidance for how to set up dual-write
               href: data-entities/dual-write/connection-setup.md
-            - name: Considerations for initial synchronization
-              href: data-entities/dual-write/initial-sync-guidance.md
-            - name: Limits for live synchronization
-              href: data-entities/dual-write/sync-limits.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
             - name: Enable dual-write for existing finance and operations apps
@@ -1100,23 +1102,21 @@
                   href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: How to use the dual-write wizard to link your environments
                   href: data-entities/dual-write/link-your-environment.md
-                - name: Enable entity map for dual-write
+                - name: Enable table map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
-            - name: Currency data-type migration for dual-write
-              href: data-entities/dual-write/currrency-decimal-places.md
-            - name: Set up the mapping for the sales order status fields
-              href: data-entities/dual-write/sales-status-map.md
-            - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
-              href: data-entities/dual-write/filtering-intercompany-orders.md
+            - name: Setup security roles and permissions
+              href: data-entities/dual-write/security-roles.md
+            - name: User-specified team owner
+              href: data-entities/dual-write/user-specified-team-owner.md
             - name: Uninstall dual-write application orchestration solutions
               href: data-entities/dual-write/uninstall-solutions.md
-        - name: Managing dual-write
+        - name: Managing dual-write after setup
           items:
-            - name: Customize entity and field mappings
+            - name: Customize table and column mappings
               href: data-entities/dual-write/customizing-mappings.md
-            - name: Customization guidance for dual-write
+            - name: Customize tables for additional fields, maps, or transformations
               href: data-entities/dual-write/custom-best-practices.md
             - name: Handling multiple entity maps
               href: data-entities/dual-write/multiple-entity-maps.md
@@ -1128,10 +1128,10 @@
               href: data-entities/dual-write/errors-and-alerts.md
             - name: Application lifecycle management
               href: data-entities/dual-write/app-lifecycle-management.md
-            - name: User-specified team owner
-              href: data-entities/dual-write/user-specified-team-owner.md
-            - name: Reset dual-write connection
+            - name: Reset dual-write connections
               href: data-entities/dual-write/reset.md
+            - name: How to configure number Sequence and autonumber columns while using dual-write
+              href: data-entities/dual-write/dual-write-numseq.md
         - name: Mapping concepts between apps
           items:
             - name: Integrated customer master
@@ -1166,14 +1166,18 @@
                 href: data-entities/dual-write/ledger-mapping.md            
               - name: Integrated tax master
                 href: data-entities/dual-write/tax-mapping.md
-            - name: Integrate procurement in Supply Chain Management with Field Service
-              href: data-entities/dual-write/scm-field-service-procurement.md
             - name: Sync on-demand with the Supply Chain Management pricing engine
-              href: data-entities/dual-write/pricing-engine.md
-            - name: Prospect to cash in dual-write
-              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+              href: data-entities/dual-write/pricing-engine.md    
             - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
               href: data-entities/dual-write/commerce-pricing.md
+            - name: Prospect to cash in dual-write
+              href: data-entities/dual-write/dual-write-prospect-to-cash.md             
+            - name: Set up the mapping for the sales order status fields
+              href: data-entities/dual-write/sales-status-map.md             
+            - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
+              href: data-entities/dual-write/filtering-intercompany-orders.md 
+            - name: Integrate procurement in Supply Chain Management with Field Service
+              href: data-entities/dual-write/scm-field-service-procurement.md   
             - name: In-house assets for servicing
               href: data-entities/dual-write/in-house-assets.md
             - name: Inventory availability
@@ -1194,10 +1198,18 @@
               href: data-entities/dual-write/mapping-reference.md
         - name: Support for dual-write
           items:
+            - name: Considerations for initial synchronization
+              href: data-entities/dual-write/initial-sync-guidance.md
+            - name: Limits for live synchronization
+              href: data-entities/dual-write/sync-limits.md
             - name: Support for Field Service and Project Service Automation solutions
               href: data-entities/dual-write/field-service-project-service-automation.md
             - name: Migrate Prospect to cash data from Data Integrator to dual-write
               href: data-entities/dual-write/migrate-prospect-to-cash.md
+            - name: Currency data-type migration for dual-write
+              href: data-entities/dual-write/currrency-decimal-places.md
+            - name: Dual-write frequently asked questions
+              href: data-entities/dual-write/dual-write-faq.md
             - name: Troubleshooting
               items:
               - name: General troubleshooting
@@ -1220,8 +1232,7 @@
                 href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
               - name: Errors codes for the table map health check
                 href: data-entities/dual-write/table-map-health-check.md
-        - name: Dual-write frequently asked questions
-          href: data-entities/dual-write/dual-write-faq.md                  
+                  
       - name: Virtual entities
         items:
         - name: Virtual entities overview
@@ -1589,7 +1600,7 @@
       - name: Get support for finance and operations and Lifecycle Services
         href: lifecycle-services/lcs-support.md
       - name: Dynamics 365 support overview
-        href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+        href: /power-platform/admin/support-overview?context=/dynamics365/context/ops
       - name: Get support for finance and operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
       - name: Set up technical support for finance and operations apps
@@ -1636,6 +1647,8 @@
           href: sysadmin/security-architecture.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
+        - name: Use customer-managed keys to control encryption keys for data at rest
+          href: sysadmin/customer-managed-keys.md
         - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
@@ -1643,7 +1656,7 @@
         - name: Create new users
           href: sysadmin/tasks/create-new-users.md
         - name: Block access by location with Azure AD Conditional Access
-          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?context=/dynamics365/context/ops
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
@@ -1728,11 +1741,11 @@
           href: migration-upgrade/analyze-code-upgrade.md
         - name: AX 2012 upgrade - Deploy a demo environment for analysis
           href: migration-upgrade/analysis-sandbox.md
-        - name: AX 2012 upgrade - Data upgrade in development environments
-          href: migration-upgrade/data-upgrade-2012.md
         - name: AX 2012 upgrade - Pre-upgrade checklist for data upgrade
           href: migration-upgrade/prepare-data-upgrade.md
-        - name: Upgrade from AX 2012 - Data upgrade in self-service environments
+        - name: AX 2012 upgrade - Data upgrade in development environments
+          href: migration-upgrade/data-upgrade-2012.md
+        - name: AX 2012 upgrade - Data upgrade in self-service environments
           href: migration-upgrade/data-upgrade-self-service.md
         - name: AX 2012 upgrade - On-premises environments
           href: migration-upgrade/on-prem-upgrade-2012.md
@@ -1772,6 +1785,8 @@
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitoring replication
+            href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
             href: migration-upgrade/migrate-doc-attachments-ax-2012.md
           - name: Clean up source data for upgrade

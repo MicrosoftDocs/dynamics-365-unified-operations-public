@@ -5,7 +5,7 @@ title: Define financial dimensions
 description: This procedure shows how to add an entity backed financial dimension and a custom financial dimension. 
 author: aprilolson
 ms.date: 06/25/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -85,7 +85,7 @@ You can put a vendor on hold for various transaction types. The following option
 - *Payment* – No payments can be generated for the vendor.
 - *Requisition* – Purchase requisitions can't be created for the vendor, and requisition lines already created before the vendor was set on hold can't be converted to a purchase order. Requisition lines for the vendor will be canceled if your policy is set to create purchase orders automatically.
 - *Never* – The vendor is never put on hold for inactivity.
-- *Purchase order* – Purchase orders can't be created for the vendor, but you can still proceed with any open invoices or payments to the vendor. This option is available only when the *Put vendor on hold for purchase orders* feature is turned on (see also [What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)](../get-started/whats-new-scm-10-0-29.md)).
+- *Purchase order* – Purchase orders can't be created for the vendor, but you can still proceed with any open invoices or payments to the vendor. This option is available only when the *Put vendor on hold for purchase orders* feature is turned on. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. For more information about this feature, see [What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)](../get-started/whats-new-scm-10-0-29.md).
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.
 

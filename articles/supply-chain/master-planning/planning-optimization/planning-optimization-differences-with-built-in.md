@@ -20,6 +20,7 @@ Planning Optimization results might differ from results from the deprecated mast
 
 | Feature | Current behavior in Planning Optimization |
 |---|---|
+| Forecasts for today's date | Forecasts for today's date aren't considered by Planning Optimization, though they were considered by the deprecated master planning engine. |
 | Catch weight products | Catch-weight products are considered usual products.|
 | Extensible dimensions | Extensible dimensions are not supported by Planning Optimization. When you use Planning Optimization, extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
@@ -38,6 +39,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Safety stock fulfillment | Planning Optimization always uses a **Fulfill minimum** of  *Today's date + procurement time*. This prepares the system to use a simplified planning setup in the future, and provides an actionable result. If the procurement time isn't included for safety stock, planned orders that are created for low on-hand inventory will always be delayed because of the lead time. This behavior can cause significant noise and unwanted planned orders. The best practice is to change the setting to use *Today's date + procurement time*. Update master data to avoid warnings. |
 | Copy static to dynamic plan | Planning Optimization doesn't copy static plans to dynamic plans, regardless of the setting on the **Master planning parameters** page. In general, this operation is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. |
 | Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days see [Delay tolerance (negative days)](delay-tolerance.md) |
+| Planned orders in the past | Planning Optimization never plans orders in the past, regardless of the **Requested date** setting. If you do set a **Requested date** that's in the past, the system will keep your setting, but will set the **Required date** to *Today*. |
 
 ## Additional resources
 

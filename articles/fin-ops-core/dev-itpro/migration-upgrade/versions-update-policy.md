@@ -58,7 +58,7 @@ The finance and operations online service is covered by the Modern Lifecycle Pol
       - Dynamics 365 for Operations version 1611 (November 2016)          
 
 > [!NOTE]
-> Microsoft won't provide any fixes to issues on versions that have reached their end of service. Microsoft also won't investigate or troubleshoot any issue that you encounter on a version that is older than three service updates. If you encounter an issue on a version that has reached its end of service, you must update to the latest update and then report the issue if it persists.
+> Microsoft won't provide any fixes to issues on versions that have reached their end of service. Microsoft also won't investigate or troubleshoot any issue that you encounter on a version that is older than three service updates (N-4). If you encounter an issue on a version that has reached its end of service (N-4), the support team is not able to take your case. You must update to the latest update and then report the issue if it persists. For more information, see [What happens to an environment that is running a finance and operations app version that is no longer supported](../../fin-ops/get-started/one-version.md#what-happens-to-an-environment-that-is-running-a-finance-and-operations-app-version-that-is-no-longer-supported).
 >
 > All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is for supported versions.
 

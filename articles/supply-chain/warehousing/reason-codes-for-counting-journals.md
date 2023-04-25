@@ -44,12 +44,9 @@ Before you set up the system, we recommend that you define a strategy for workin
 - Do warehouse workers require different reason code behavior on mobile scanners? If the answer is yes, you can create more menu items and assign them to different people.
 - Should the reason codes drive financial offset account posting?
 
-## Turn on reason code features in your system
+## Turn the reason code features on or off
 
-If you don't see all the features that are described in this article in your system, you probably have to turn on the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Post on-hand adjustments using configurable reason codes connected to offset accounts*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up reason codes
 

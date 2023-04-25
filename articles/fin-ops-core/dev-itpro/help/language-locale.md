@@ -1,18 +1,18 @@
 ---
-title: Language and locale descriptors in the product and in Help
+title: Language and locale descriptors in Help
 description: This article maps the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 02/11/2023
 ms.topic: article
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---
 
-# Language and locale descriptors in the product and in Help
+# Language and locale descriptors in Help
 
 The client that finance and operations apps use supports multiple languages and locales. To add custom Help content for one or more locales to the in-product **Help** pane, you must make sure that both the following conditions are met:
 
@@ -24,15 +24,11 @@ The client that finance and operations apps use supports multiple languages and 
 
     For example, the German (Germany) content must be in a folder that is named **de-de**.
 
-For more information, see [Custom Help overview](custom-help-overview.md) and [Deploy custom Help to Azure](walkthrough-help-azure.md).
-
 ## Languages and descriptors
 
-The following table lists the languages that the finance and operations client can support.
+The following table lists the languages that the finance and operations help can support.
 
-<!--Removing the link to the repo changed the purpose of this section, so I redid the intro sentence. Hope it makes sense.-->
-
-| Language/locale in the client | Language/region name |
+| Language/locale  | Language/region name |
 |-------------------------------|----------------------|
 | ar | Arabic (Saudi Arabia) | 
 | ar-ae | Arabic (United Arab Emirates) |
@@ -80,7 +76,5 @@ The following table lists the languages that the finance and operations client c
 ## See also
 
 [Custom Help overview](custom-help-overview.md)  
-[Custom Help Toolkit](custom-help-toolkit.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 10/17/2022
+ms.date: 02/03/2023
 ms.topic: overview
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: shajain
@@ -51,15 +51,15 @@ This field is labeled **Discount** and holds a unique ID for each discount. It's
 
 ### Discount name
 
-This field is a short free text field that is used to describe the discount. The string value in this field is shown in the MPOS and CPOS cart line and printed on Modern Point of Sale (MPOS) and Cloud POS (CPOS) customer receipts. Therefore, your cashiers and end customers will see this description. It's the primary means for MPOS/CPOS users and customers to know which discount was applied.
+This field is a short free text field that is used to describe the discount. The string value in this field is shown in the Store Commerce app and Store Commerce for web cart line and printed on the Store Commerce app and Store Commerce for web customer receipts. Therefore, your cashiers and end customers will see this description. It's the primary means for Store Commerce app and Store Commerce for web users and customers to know which discount was applied.
 
 ### Discount type
 
-There are four types of discounts in Commerce: **Discount**, **Quantity**, **Mix and match**, and **Threshold**. The discount type is set when you first create a discount and can't be changed later. The discount type determines whether there's a quantity or amount criterion that must be met to qualify for the discount.
+There are five types of discounts in Commerce: **Discount**, **Discount with quantity limit**, **Quantity**, **Mix and match**, and **Threshold**. The discount type is set when you first create a discount and can't be changed later, except for **Discount** and **Discount with quantity limit** where the two discount types can switch to the other by changing the quantity limit. The discount type determines whether there's a quantity or amount criterion that must be met to qualify for the discount.
 
 ### Status
 
-The status of a discount can be either **Enabled** or **Disabled**. When you first create a discount, the status is **Disabled**. Discounts can only be edited when they're disabled. When discount data is pushed to a channel, disabled discounts aren't pushed. If a discount was previously enabled and pushed to the channel, then this new push will also remove the discount from the channel. When you change the status to **Enabled**, various validation checks are performed on the discount, depending on the type of discount. The list of validation checks has increased in recent updates of the product to prevent incomplete or poorly defined discounts from being pushed to commerce channels. Here's a partial list of the validations that are performed when you enable a discount:
+The status of a discount can be either **Enabled** or **Disabled**. When you first create a discount, the status is **Disabled**. Discounts can only be edited when they're disabled. When discount data is pushed to a channel, disabled discounts aren't pushed if the **Clean up irrelevant master data after sync** parameter in **Commerce scheduler parameters** is enabled. If a discount was previously enabled and pushed to the channel, then this new push will also remove the discount from the channel if the **Clean up irrelevant master data after sync** parameter is enabled. When you change the status to **Enabled**, various validation checks are performed on the discount, depending on the type of discount. The list of validation checks has increased in recent updates of the product to prevent incomplete or poorly defined discounts from being pushed to commerce channels. Here's a partial list of the validations that are performed when you enable a discount:
 
 - A discount must have at least one discount line.
 - The percentage value for a percentage discount must be more than 0 (zero) and less than or equal to 100.
@@ -72,19 +72,23 @@ The status of a discount can be either **Enabled** or **Disabled**. When you fir
 
 ### Currency
 
-The currency of a discount defines the currency of all amount and price fields on the discount. Different discount types have different field options. The currency also acts as a filter during discount calculation. In Commerce, all sales order and MPOS/CPOS transactions have a currency, and the pricing engine will consider only discounts that have the same currency.
+The currency of a discount defines the currency of all amount and price fields on the discount. Different discount types have different field options. The currency also acts as a filter during discount calculation. In Commerce, all sales order and Store Commerce app/Store Commerce for web transactions have a currency, and the pricing engine will consider only discounts that have the same currency.
 
 ### Discount concurrency mode
 
-This determines which discounts compete on a transaction, and which discounts are compounded together. The three values for this option are **Exclusive**, **Best price**, and **Compound**.
+This determines which discounts compete on a transaction, and which discounts are compounded together. The three values for this option are **Exclusive**, **Best price**, and **Compounded**.
 
-When the value is **Exclusive** or **Best price**, only one discount can be applied to a transaction line. The only difference between **Exclusive** and **Best price** is the order that the discounts are considered and applied in. **Exclusive** discounts are always evaluated and applied before **Best price** and **Compound** discounts, if all other settings are the same. Therefore, **Exclusive** and **Best price** discounts never compete for the best price. Two or more **Exclusive** discounts will compete for the best price, as will two or more **Best price** discounts.
+**Exclusive** discounts are always evaluated and applied before **Best price** and **Compounded** discounts if all other settings are the same, and will prevent all other discounts to be applied to the same lines where they are applied. Two or more **Exclusive** discounts will compete for the best price.
 
-When the value is **Compound**, the discount can be compounded with any other discount that is also set to **Compound**. Therefore, two or more **Compound** discounts will all be applied to a transaction line. When multiple **Compound** discounts are applied to a transaction line, they're applied in the following order:
+When the discount concurrency control is set to **Best price and compound within priority, never compound across priorities**, all **Compounded** discounts within the same pricing priority are combined, and the combined result competes with any **Best price** discounts in the same pricing priority. After the discount is applied to a transaction line, all discounts at lower pricing priorities are ignored.
 
-1. Discount price discounts
-2. Amount-off discounts
-3. Percentage-off discounts
+When the discount concurrency control is set to **Best price only within priority, always compound across priority**, all **Best price** and **Compounded** discounts are treated as a **Best price** discount within a single pricing priority and they compete to determine the best discount for that pricing priority. Only a single discount can be applied to a product per pricing priority, and if that single discount is a **Best price** or **Compounded** discount, then it will compound with the best discount of **Best price** or **Compounded** discounts at lower pricing priorities.
+
+When multiple discounts are applied to a transaction line, they're applied in the following order:
+
+- Discount price discounts
+- Amount-off discounts
+- Percentage-off discounts
 
 **Compound** discounts compete with **Best price** discounts when both types apply to a transaction line. Therefore, the **Compound** setting is used to determine which discounts are combined. Depending on the discount concurrency control mode used, two or more **Compound** discounts can be combined and compete with the **Best price** discounts that apply to the same products. The discount or discounts that have the largest total discount amount are applied.
 
@@ -99,7 +103,7 @@ Commerce lets you post discount amounts for a transaction to a separate general 
 
 Starting with version 7.2 of the app, the call center coupons are now merged with discounts. For a discount, when **Coupon code required** is set to **Yes**, the **Status** field and the standard date fields, **Effective date** and **Expiration date**, aren't available. These properties are controlled by equivalent properties that are on the **Coupons** page.
 
-When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon code or bar code is provided by MPOS/CPOS. The values of the coupon codes and bar codes are defined and configured in a separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When Coupon code required is set to **No**, a coupon code isn't required, and the discount will always be applied through its price groups.
+When **Coupon code required** is set to **Yes** on a discount, the discount is applied to a transaction only if the coupon code or bar code is provided by the Store Commerce app or Store Commerce for web. The values of the coupon codes and bar codes are defined and configured in a separate page named **Coupons**. The Coupons page is where the coupon is linked to the discount. When Coupon code required is set to **No**, a coupon code isn't required, and the discount will always be applied through its price groups.
 
 ### Override priority and Pricing priority
 
@@ -114,11 +118,11 @@ In Commerce version 10.0.16 and later, a configuration called **Match all associ
 
 ### Description
 
-This field is a free-form text field. It isn't used in the MPOS/CPOS system or in transactions.
+This field is a free-form text field. It isn't used in the Store Commerce app/Store Commerce for web systems or in transactions.
 
 ### Disclaimer
 
-This is a free-form text field. It isn't used in the MPOS/CPOS system or in transactions.
+This is a free-form text field. It isn't used in the Store Commerce app/Store Commerce for web systems or in transactions.
 
 ### Line type
 
@@ -132,7 +136,7 @@ This field is on all discount lines. The possible values are **Include** and **E
 
 **Category**, **Product**, **Variant, and dimensions** are the last discount settings that are common to all discounts. These fields are set on each discount line and specify what is being discounted. They act as a filter when the pricing engine searches for discounts that can be applied to a transaction. These fields are related to each other according to these rules – categories contain products, and products can come in different variations of size, color, style, and configuration.
 
-The pricing engine doesn't use the parent/child relationships of categories, products, and variants to order discounts during discount calculation. This behavior differs from the way that the pricing engine handles sales price trade agreements. For example, both a discount for 10 percent on a category and a discount for 5 percent on a product in the same category will be considered. The larger of the two discount amounts will then be used, provided that all other properties are the same and the discounts aren't set to **Compound**, in which they both will be combined. If you want to force a product discount to be used over a category discount you can use pricing priority or the discount's concurrence mode to cause one discount to be applied before another.
+The pricing engine doesn't use the parent/child relationships of categories, products, and variants to order discounts during discount calculation. This behavior differs from the way that the pricing engine handles sales price trade agreements. For example, both a discount for 10 percent on a category and a discount for 5 percent on a product in the same category will be considered. The larger of the two discount amounts will then be used, provided that all other properties are the same and the discounts aren't set to **Compounded**, in which they both will be combined. If you want to force a product discount to be used over a category discount you can use pricing priority or the discount's concurrence mode to cause one discount to be applied before another.
 
 When you edit discounts, the **Category**, **Product**, **Variant**, and **Dimensions** settings act as filters for each other. The **Category** and **Product** fields are automatically set from the *Commerce Category Hierarchy* if a product or variant is entered directly. The following sections provide detailed descriptions of each of these fields.
 

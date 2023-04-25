@@ -5,7 +5,7 @@ title: Maintain financial dimension default templates
 description: This article shows how to set up financial dimension default templates. 
 author: aprilolson
 ms.date: 07/30/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

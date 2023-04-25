@@ -1,26 +1,31 @@
 ---
 title: Configure SQL Server Reporting Services for on-premises deployments
 description: This article provides information about configuring SQL Server Reporting Services (SSRS) for an on-premises deployment.
-author: PeterRFriis
-ms.date: 06/23/2017
+author: faix
+ms.date: 01/31/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.custom: 55651
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Configure SQL Server Reporting Services for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
 Use the steps in this article to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.
+
+> [!IMPORTANT]
+> Only follow this guide if your environment was deployed using a base deployment older than Application version 10.0.17 (with Platform update 41).
 
 1. Open the Reporting Services Configuration Manager application.
 2. Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.
@@ -29,6 +34,9 @@ Use the steps in this article to configure SQL Server Reporting Services (SSRS) 
     [![Reporting services configuration connection.](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
 
 4. Click the **Service Account** tab and verify that the settings match the following graphic.
+
+    > [!NOTE]
+    > SQL Server Reporting Services 2019 no longer allows choosing the **Local System** account. Instead you need to use **NETWORK SERVICE** account.
 
     [![Service account tab.](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
 
@@ -87,5 +95,9 @@ Use the steps in this article to configure SQL Server Reporting Services (SSRS) 
 
     [![close reporting services configuration manager.](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
 
+14. For SQL Server 2019 only, you need to manually grant **NETWORK SERVICE** the permissions to read the private keys of these certificates.
+    - DataEncryption
+    - DataSigning
+    - ReportingService
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

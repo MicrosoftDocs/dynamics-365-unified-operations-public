@@ -5,7 +5,7 @@ title: Create an intercompany plan
 description: This procedure shows how to create an intercompany plan. 
 author: t-benebo
 ms.date: 08/13/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure shows how to create an intercompany plan. The demo data company u
 
 ## Set up an intercompany planning group
 
-1. In the **Navigation pane**, go to **Modules > Master planning > Setup > Intercompany planning groups**.
+1. Go to **Master planning > Setup > Intercompany planning groups**.
 2. Use the Quick Filter to find records. For example, filter on the Name field with a value of '10'.
 3. In the list, mark the selected row.
 4. Select **Delete**. This step is necessary in order to shorten the intercompany planning run.   Intercompany planning will run master planning in all the companies in a planning group, starting from the lowest scheduling sequence.  
@@ -40,7 +40,7 @@ This procedure shows how to create an intercompany plan. The demo data company u
 
 ## Create an intercompany master plan
 
-1. In the **Navigation pane**, go to **Modules > Master planning > Workspaces > Master planning**.
+1. Go to **Master planning > Workspaces > Master planning**.
 2. Select **Intercompany master planning**.  
 3. In the **Intercompany planning group** field, select the drop-down button to open the lookup.
 4. In the list, select the link in the selected row. Select intercompany planning group 10.  

@@ -2,7 +2,7 @@
 title: Set up POS hybrid app on Android and iOS
 description: This article shows how to set up the POS hybrid app on Android and iOS.
 author: josaw1
-ms.date: 10/07/2022
+ms.date: 02/01/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -17,6 +17,9 @@ ms.search.validFrom: 2018-10-29
 [!include [banner](../includes/banner.md)]
 
 This article shows how to build and run the Retail point of sale (POS) hybrid app on Android and iOS devices. 
+
+> [!NOTE]
+> The Retail Hybrid apps are being replaced by the Store Commerce apps for Android and iOS. For more information, see [Store Commerce app for mobile platforms](store-commerce-mobile.md).
 
 The Retail hybrid app is a shell that was built by using [Xamarin](/xamarin/). Inside the shell is a Web view controller that loads Cloud POS (CPOS), which is based on the Commerce Scale Unit URL that is specified in the settings of this app. The Retail hybrid app shell is for Android and iOS, which will internally load CPOS. For more information, see [Cloud POS](/dynamics365/unified-operations/retail/mpos-or-cpos).
 
