@@ -1,25 +1,29 @@
 ---
 title: Geo-to-geo migrations
-description: This article describes hot to move your environment from one geography to another.
+description: This article provides an overview of how to move between geographies.
 author: matapg007
 ms.author: matgupta
 ms.reviewer: johnmichalak
 ms.service: dynamics-365-finance
 ms.topic: how-to
-ms.date: 10/19/2022
+ms.date: 04/30/2023
 ms.custom:
 ---
 
-# Geo-to-geo migrations
+# Geo migrations overview
 
-Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management and Dynamics 365 Commerce apps are available in multiple local geographies. Customers in these local geographies can migrate their workload from one geography to another. This guide will help customers to facilitate the overall migration process.
+Microsoft Dynamics 365 finance and operations apps are available in multiple local geographies. Customers in these local geographies can migrate their workload from one geography to another. This article provides and overview of the process and the considerations.
 
-LCS Project migration and F&O Environment migration are two separate independent processes.
+Moving between geographies involve two separate processes:
 
-## F&O Geo to Geo migration considerations
+1. [Lifecycle Services (LCS) project migration](../lifecycle-services/project-migration-manager.md)
+2. [Finance and operations apps environment migration](environment-migration-process.md)
+
+## Considerations
 
 Organizations looking to migrate environments and data from one geography to another need to consider various aspects mentioned below before actual migration.
-- Geo to geo migration between various geographies
+
+### Geo to geo migration between various geographies
   - Data resident geographies 
     - To support data residency, Microsoft Dynamics 365 finance and operations apps are generally available in specific geographies as outlined here
     - Migration between two data resident local geographies is supported (e.g. migration from US to UAE or from EU to Norway is supported)
@@ -28,21 +32,21 @@ Organizations looking to migrate environments and data from one geography to ano
     - Geographies other than above mentioned geos
     - Migration between two non-data resident geos is supported (e.g. migration from US to UK or US to Canada is supported)
     - Migrating between commercial non-data resident geos will not change environment URL (e.g. (e.g. Moving from US to UK will keep URL same as https://<EnvironmentName>.operations.dynamics.com/)
-  - Sovereign data resident geographies 
+### Sovereign data resident geographies 
 - Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.Review availability of Business applications  features in target geography
   - Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the below documents to get an overview of features and their availability in the geographies you are planning to use.
     - Microsoft Business Application Feature Availability - Americas
     - Microsoft Business Application Feature Availability - EMEA
     - Microsoft Business Application Feature Availability - APAC
   - If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly. 
-- Integration impact and updates with other services
+### Integration impact and updates with other services
   - 3rd party integrations
     - If the migration crosses data resident geo then F&O environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
   - F&O add-ins and micro-services
     - Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
   - Commerce integration
     - Due to change in URL for F&O environment, you need to update POS integration after completion of production migration.
-- Environment migration from one geo to another will have downtime
+### Environment migration from one geo to another will have downtime
   - Overall migration activity will require at least 48 hrs of downtime. 
   - Overall time will vary depending on connectivity between two geos along with database and storage account size. 
   - If Dataverse environment is linked then it will need additional 24 hrs of downtime.

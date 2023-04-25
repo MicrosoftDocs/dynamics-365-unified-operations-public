@@ -10,7 +10,9 @@ ms.date: 10/19/2022
 ms.custom:
 ---
 
-# Geo-to-geo migrations
+# Finance and operations apps environment migration
+
+## Introduction
 
 Microsoft continues to open datacenters for business service in both existing regions and new regions. The Geo migration feature lets you move your finance and operations environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move. 
 
