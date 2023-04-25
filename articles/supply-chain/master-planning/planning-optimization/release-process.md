@@ -28,7 +28,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
-| <p>Process manufacturing support for Planning Optimization. It includes the creation of planned batch orders for formula products, co- and by-products, formula lines with formula measurement and formula versions with yield. It does not include planning items, or item substitution (plan groups).</p><p>General performance, quality and stability improvements.</p> | No feature management required | April 17-21, 2023 |
+| <p>Process manufacturing support for Planning Optimization. This includes the creation of planned batch orders for formula products, co-products, and by-products, formula lines with formula measurement, and formula versions with yield. It doesn't include planning items or item substitution (plan groups).</p><p>General performance, quality and stability improvements.</p> | No feature management required | April 17-21, 2023 |
 | <p>General performance, quality and stability improvements.</p> | No feature management required | March 27-30, 2023 |
 | <p>General performance, quality and stability improvements.</p> | No feature management required | March 13-17, 2023 |
 | <p>General performance, quality and stability improvements.</p> | No feature management required | February 15-24, 2023 |
