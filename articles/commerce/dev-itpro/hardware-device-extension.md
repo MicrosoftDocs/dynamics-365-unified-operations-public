@@ -2,7 +2,7 @@
 title: Integrate the POS with a new hardware device and generate the extension installer
 description: This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer.
 author: josaw1
-ms.date: 02/10/2023
+ms.date: 07/27/2020
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
