@@ -82,7 +82,7 @@ The Dual-write Human Resources package contains the solutions and maps that are 
 | msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps | Dual-write Human resources solution |
 | msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |Dual-write Human resources solution|
 
-For more information on the mappings that are available in the solutions, see [Integration with Dataverse tables](/human-resources/hr-dataverse-integration#template-mappings).
+For more information on the mappings that are available in the solutions, see [Integration with Dataverse tables](../human-resources/hr-dataverse-integration.md#template-mappings).
 
 **Dependency information**
 
