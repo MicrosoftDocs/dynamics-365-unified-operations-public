@@ -2,7 +2,7 @@
 title: SysSetup
 description: This article describes the SysSetup interface and how to onboard classes to use it.
 author: najaidee
-ms.date: 24/04/2023
+ms.date: 04/24/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: 
@@ -19,7 +19,7 @@ SysSetup is an interface that is used to identify the X++ classes that run durin
 ## Onboarding to SysSetup - 
 1. From Microsoft Visual Studio, select **View** --> **Application explorer (AOT)**, and then create a new class that implements SysSetup interface. 
 2. Add the **loadData()** method in the class. The code in this method is run during DBSync. (It can also be a reference to another class or method.)
-3. Add the [SysSetupConfig](../dev-itpro/dev-tools/syssetupconfigattribute.md) and SysSetupTable attributes to the class. 
+3. Add the [SysSetupConfig](../../dev-itpro/dev-tools/syssetupconfigattribute.md) and SysSetupTable attributes to the class. 
 4. SysSetupTable attribute takes the related table as the input. 
 
 ```xpp
