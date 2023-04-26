@@ -2,7 +2,7 @@
 title: Place B2B website orders quickly
 description: This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 author: ShalabhjainMSFT
-ms.date: 02/16/2022
+ms.date: 04/26/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,9 @@ The following illustration shows an example of quick order entry where the "ente
 
 ## Use order templates for quick order entry
 
-Buyers on B2B websites often order specific items together. For example, if you're placing orders for a construction site, you might want to order shirts, jackets, pants, shoes, and hats together. If you're placing orders for a hospital, where doctors, nurses, and cleaning staff have different uniforms, you might want to group each uniform type together for easier ordering. For these types of scenarios, Commerce B2B sites enable order templates to be created. Site users can create any number of custom templates and then order all or some of the items from those templates as they require. New order templates can be created by navigating to "My account -> Manage order templates" and clicking on a "Create an order template" button. Another way to create a new order template is by navigating to a Product Details Page (PDP) for an item, select a variant, if applicable, and clicking "Add to order template" button. This opens the "Add to order template" view where the button "Create new" can be used to create a new order template. 
+Buyers on B2B websites often order specific items together. For example, if you're placing orders for a construction site, you might want to order shirts, jackets, pants, shoes, and hats together. If you're placing orders for a hospital, where doctors, nurses, and cleaning staff have different uniforms, you might want to group each uniform type together for easier ordering. For these types of scenarios, Commerce B2B sites enable order templates to be created. Site users can create any number of custom templates and then order all or some of the items from those templates as they require. 
+
+You can create new order templates by going to **My account \> Manage order templates** and selecting **Create an order template**. Another way to create a new order template is by navigating to a product details page (PDP) for an item, selecting a variant (if applicable), and then selecting **Add to order template**. This action opens the **Add to order template** view, where you can select **Create new** to create a new order template. 
 
 The following illustration shows an example of an order template.
 
