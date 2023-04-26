@@ -18,11 +18,11 @@ ms.custom:
 This article answers frequently asked questions about business performance analytics.
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpateam@microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of business performance analytics, contact <bpateam@microsoft.com>.
 
 ### How do I sign up for the gated public preview of business performance analytics?
 
-We're implementing a gated public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. We aim to expand to hundreds of thousands of rows by June. We want to avoid onboarding customers who have high transaction volumes before we can effectively support them.
+We're implementing a gated public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. We aim to expand to hundreds of thousands of rows by June 2023. We want to avoid onboarding customers who have high transaction volumes before we can effectively support them.
 
 ### What's the estimated time that's required to set up business performance analytics?
 
@@ -60,13 +60,13 @@ Business performance analytics will have data for the current fiscal year plus t
 
 Data will be refreshed once per day, at 00:00:00 AM (UTC).
 
-### How long does it take for fresh data to be available daily on business performance analytics reports?
+### How long does it take for fresh data to be available every day on business performance analytics reports?
 
 The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
 
 ### How do I uninstall business performance analytics?
 
-Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order through Power Platform admin center. The approximate time that's required to delete all the solutions is 20 minutes.
+Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
 
 1. Business performance analytics performance analytics anchor solution
 2. Business performance analytics performance analytics plugins solution
@@ -91,6 +91,8 @@ To delete each of the preceding solutions, follow these steps.
 1. In the maker portal, on the **Solution** tab, select the solution to delete, and then select **Delete**.
 2. Select **Delete** again to confirm the operation.
 3. Wait for the **Deleting** message box to disappear. If the operation is successful, you receive the following message: "Successfully deleted solution."
+
+The approximate time that's required to delete all the solutions is 20 minutes.
 
 ### How often will updates for business performance analytics be released?
 
