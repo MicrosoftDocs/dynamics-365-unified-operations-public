@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business performance analytics reports
+title: Create and edit business performance analytics reports
 description: This article describes how to create and edit reports in business performance analytics.
 author: jkhaira7
 ms.author: jkhaira 
@@ -12,28 +12,55 @@ ms.prod:
 ms.technology: 
 ---
 
-# How to create and edit business performance analytics reports
-Business performance analytics gives you the ability to create or customize reports with data fields you are interested in. You may also change any visuals in the reports. 
+# Create and edit business performance analytics reports
+
+Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. 
 
 ## Create a new report
-To create a new report, go to **Reports** in the **Data explorer** section of business performance analytics. 
-Select one of the following options: 
- - **Start with a blank report**: Select this option to open an empty Power BI embedded report containing your Power BI dataset. You can then start creating the report. 
- - **Duplicate a Microsoft report**: Select this option to pick a report from a list of reports that are available in business performance analytics. These reports can be modified if needed.  
 
-### Edit a report
-After you open a report, you can edit the visuals or data fields by clicking **Edit**. Reports with type **Microsoft** can't be edited. You must duplicate this report and edit the duplicated copy. 
+To create a new report, follow these steps.
 
-### Duplicate a report  
-To duplicate a report, go to **Reports** in the **Data explorer** section of business performance analytics. Select the report to duplicate. You may only select one report at a time. Click **Duplicate** on the **Reports** page. This duplicated version will become available on the **Reports** page. 
-You may also duplicate a report that is open by clicking **Duplicate** button on the report. After the report is duplicated, you will receive a **Report duplicated** message with a link to the duplicated report.
+1. In business performance analytics, in the **Data explorer** section, go to **Reports**. 
+2. Select one of the following options: 
 
-### Rename a report
-To rename a report, go to **Reports** page in the **Data explorer** section of business performance analytics. Select the report to rename. You may only select one report at a time. Click **Rename** on the **Reports** page. You will rename and save the new report name. You can rename a report that is open by clicking **Rename** on the report. 
+    - **Start with a blank report** – Open a blank Microsoft Power BI embedded report that contains your Power BI dataset. You can then start to create the report. 
+    - **Duplicate a Microsoft report** – Select a report in the list of reports that are available in business performance analytics. You can modify these reports as you require.
 
-### Delete a report
-You can't delete reports with type “Microsoft”. You can only delete reports with type **Custom**. 
-To delete a report: 
-1.	Go to the **Reports** page in the **Data explorer** section of business performance analytics. Select the report to delete and click **Delete**. 
-2.	You may delete multiple reports at the same time. 
+## Edit a report
 
+After you open a report, you can edit the visuals or data fields by selecting **Edit**.
+
+Reports of the **Microsoft** type can't be edited. You must duplicate them as described in the next section. You can then edit the duplicate report. 
+
+## Duplicate a report
+
+To duplicate a report that isn't currently open, follow these steps.
+
+1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+2. Select the report to duplicate. (You can duplicate only one report at a time.)
+3. Select **Duplicate**. The duplicate report becomes available on the **Reports** page. 
+
+To duplicate a report that's currently open, select **Duplicate** on the report.
+
+After the report is duplicated, you receive a "Report duplicated" message that contains a link to the duplicate report.
+
+## Rename a report
+
+To rename a report that isn't currently open, follow these steps.
+
+1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+2. Select the report to rename. (You can rename only one report at a time.)
+3. Select **Rename**.
+4. Enter a new name, and then save it.
+
+To rename a report that's currently open, select **Rename** on the report.
+
+## Delete a report
+
+You can't delete reports of the **Microsoft** type. You can delete only reports of the **Custom** type. You can delete multiple reports at the same time.
+
+To delete one or more reports, follow these steps.
+
+1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
+2. Select the report or reports to delete.
+3. Select **Delete**.
