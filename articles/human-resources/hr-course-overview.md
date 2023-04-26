@@ -4,7 +4,7 @@
 title: Courses overview
 description: This article explains how Human Resources administrators and managers can use the courses features to maintain information about courses that are available to workers.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 03/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Courses overview
 
-Microsoft Dynamics 365 Human Resources provides a solution for your organization's learning needs. This solution offers two learning course paths: *virtual* and *instructor-led*.
+Microsoft Dynamics 365 Human Resources provides a solution for your organization's learning needs. This solution offers two learning course paths: *virtual* and *in-person*.
 
-*Virtual learning* is a learning experience that is enhanced through online resources. In *instructor-led training*, an instructor facilitates a training session for a group of workers or learners.
+*Virtual learning* is a learning experience that is enhanced through online resources. For *in-person training* or *instructor-led training*, an instructor facilitates a training session for a group of workers or learners.
 
 In our learning module, Human Resources professionals, administrators, training managers, and managers can create and assign both learning course paths to workers.
 
@@ -40,71 +40,43 @@ In our learning module, Human Resources professionals, administrators, training 
 
 ## Set up virtual courses
 
-To configure virtual courses, you must enable the **Course enhancements** feature in Feature management. Go to **Courses \> New**, and set the **Virtual** option to **Yes**. After the feature is enabled, a course link is required. The **Course status** field will be set to **Open**. The **Allow employee to self-register** option will be set to **Yes** but can be set to **No**.
+To configure virtual courses, you must enable the **Course enhancements** feature in Feature management. Go to **Courses \> New**, and set the **Virtual** option to **Yes**. After the feature is enabled, a course link is required. The **Course status** field will be set to **Open**. The **Allow employee to self-register** option will be set to **Yes** but can be set to **No**. You can use the **Cost** section to associate a cost with the course or the participant. The default cost is **None**.
 
 After the **Course enhancements** feature is enabled in Feature management, the following changes occur:
 
-- A due date must be defined for course assignment.
+- On the **Participants** page, a due date must be defined for course assignment.
 - A course link is required.
-- **Employee self service** will show an employee overview in **Courses**. User can view courses that are overdue, due soon, and assigned.
+- **Employee self service** will display an employee overview in **Courses**. User can view courses that are overdue, due soon, and assigned.
 - Workers can complete virtual courses and self-attest to them.
 
-## Set up instructor-led courses
+## Set up in-person courses
 
-Instructor-led courses don't have to be configured before they are used.
+Go to **Courses \> New**, select **In-person**, and complete the page. In-person courses require a start date and time, and also a minimum and maximum number of participants. When you create a new course, you can save it as a draft, so that you can make changes. You can use the **Cost** section to associate a cost with the course or the participant. The default cost is **None**.
 
-The following information is optional and can be specified for courses. If this information will be entered for courses, it should be set up before the course records are created:
+You can specify the following optional information for courses. If you know that you will be entering this information for courses, you should set it up before you create course records.
 
-- Course type
+- Course template
 - Classroom groups
 - Course groups
 - Course locations
 - Classrooms
 - Instructors
-- Course types
-
-You can use *course types* to categorize courses according to their structure or content. You can create course types on the **Course types** page.
-
-The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab of the **Courses** page.
-
-### Course setup type 
-
-*Setup types* determine the structure of the course. There are three setup types for courses.
-
-| Setup type | Description |
-|------|--------|
-| Standard | Courses of this setup type don't have a daily agenda. It's the default setup type when you create a new course. |
-| Agenda | Select this setup type to plan the details of each day of a course that takes place over multiple days. |
-| Agenda + session | <p>Select this setup type for more complex courses. For example, you can divide the agenda for the course into *tracks* and *sessions*:</p><ul><li>*Tracks* are specific subject areas for a course.</li><li>*Sessions* divide up tracks, and help identify specific processes or techniques that are relevant to a track.</li></ul> |
 
 ### Course tasks
 
 For each course, complete the following tasks:
 
-- Register participants.
+- Register, assign, and manage participants.
+- Define a virtual or in-person course.
+- Define the cost per course or participant (if applicable).
 - Specify a registration deadline.
 - Define the minimum and maximum number of participants.
 - Assign a course location and classroom.
 - Recommend hotels to course participants.
-- Create a course description, which can be posted on **Employee self service**.
+- Create a course description that will be shown in **Employee self service**.
 
 > [!NOTE]
 > You can delete a course only if no one has registered for it.
-
-### Course statuses
-
-The following table lists course statuses and the actions that are completed for each.
-
-| Status | Actions |
-|------|--------|
-| Created | <ul><li>Enter and modify course information.</li><li>Change the course status to **Open**, so that workers can register for the course.</li></ul> | 
-| Open | <ul><li>Register participants for the course.</li><li>Remove participants from the course.</li><li>Confirm participants for the course.</li><li>Change the course status to **Closed** or **Canceled** for participants whose status is **Confirmed**.</li></ul>|
-| Closed | You can reopen the course. |
-| Canceled | You can reopen the course. |
-
-### Course participants
-
-*Course participants* are workers who participate in a training course or event. You can register participants only for open courses.
 
 ### Workflow
 

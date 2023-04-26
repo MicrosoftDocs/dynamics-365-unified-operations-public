@@ -219,22 +219,7 @@ Although some management capabilities are surfaced on every page, as indicated i
 
 Users who have access to the **Personalization** page can also import personal or organization views by using the **Import views** button on the Action Pane. For organization views, you can select **Publish immediately** to make the views available to users without an additional explicit publish.
 
-## Known issues
-
-For a list of known issues with saved views, please see [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md).
-
 ## Frequently asked questions
-
-### How do I enable saved views in my environment?
-
-> [!NOTE]
-> The **Saved views** feature requires the Personalization system in the finance and operations apps to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
-
-You can turn the **Saved views** feature on and off through Feature management in any environment. After it's turned on, saved views will be enabled in all subsequent user sessions.
-
-### What happens to existing personalizations when views are enabled? 
-
-When views are enabled, any existing personalizations for a user and form are saved into a new view called **My view** that is automatically set as the default view. This is meant to ensure that there is a consistent user experience before and after views are enabled, except for the view selector control appearing on forms.
 
 ### What pages support views? 
 

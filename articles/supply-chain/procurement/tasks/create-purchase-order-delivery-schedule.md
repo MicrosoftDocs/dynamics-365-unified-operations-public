@@ -5,7 +5,7 @@ title: Create a purchase order with a delivery schedule
 description: This article demonstrates how to create a delivery schedule for a purchase order. 
 author: GalynaFedorova
 ms.date: 08/01/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This article demonstrates how to create a delivery schedule for a purchase order. A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments. The example shown in this guide can be used in the USMF demo data company. This procedure would typically be done by a purchasing agent.
 
 ## Create a delivery schedule
-1. In the navigation pane, go to **Modules > Procurement and sourcing > Purchase orders > All purchase orders**.
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 2. On the Action Pane, select **New**.
 3. In the **Vendor account** field, enter `US-101`.
 4. Select **OK**.

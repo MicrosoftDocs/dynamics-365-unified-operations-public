@@ -3,7 +3,7 @@ title: Automatic transmission of NF-e fiscal documents (Brazil)
 description: Use the following procedure to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled, or if you generate a correction letter.
 author: AdamTrukawka
 ms.date: 06/26/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

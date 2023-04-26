@@ -8,6 +8,7 @@ ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdL
 ms.topic: how-to
 ms.date: 12/13/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
@@ -28,7 +29,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 ## Create a fixed picking location
 
-1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse > Fixed locations**. This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.
+1. Go to **Warehouse management > Setup > Warehouse > Fixed locations**. This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.
 2. Select **New**.
 3. In the **Item number** field, enter or select a value. If you're using USMF, you can select item A0001.  
 4. In the **Site** field, enter or select a value. If you're using USMF, you can select site 2.  
@@ -61,7 +62,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 ## Create a replenishment work template
 
-1. Go to **Warehouse management > Setup > Work > Work templates**. The work template is use to guide the system as to how the min/max replenishment work must be created. As a minimum, there must be a work template line for a pick and a put. The work template will say that it's Invalid until all the necessary information has been filled in. 
+1. Go to **Warehouse management > Setup > Work > Work templates**. The work template is used to guide the system as to how the min/max replenishment work must be created. As a minimum, there must be a work template line for a pick and a put. The work template will say that it's Invalid until all the necessary information has been filled in. 
 2. In the **Work order type** field, select *Replenishment*.
 3. On the **Action Pane**, select **New**.
 4. In the **Work template** field, type a value.
@@ -119,7 +120,7 @@ This article shows how to set up a replenishment process that uses the minimum/m
 7. Set the **Batch processing** option to *Yes*.
 8. Select **Recurrence**.
 9. Select the **No end date** option.
-10. Set the **Recurrance pattern**. For example, select Days.  
+10. Set the **Recurrence pattern**. For example, select Days.  
 11. Select **OK**.
 12. Select **OK**.
 

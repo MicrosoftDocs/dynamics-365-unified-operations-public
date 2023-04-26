@@ -5,7 +5,7 @@ title: Create an organization hierarchy
 description: Use the following procedure to create an organizational hierarchy. 
 author: sericks007
 ms.date: 12/15/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

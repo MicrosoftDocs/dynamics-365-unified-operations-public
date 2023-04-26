@@ -2,7 +2,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This article provides guidelines for setting up the fiscal integration functionality for Commerce channels.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 02/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -295,7 +295,7 @@ To enable manual execution of a deferred fiscal registration, you should add a n
 
 To view connection parameters and other information in POS, follow these steps.
 
-1. Open Modern POS (MPOS) or Cloud POS (CPOS).
+1. Open the Store Commerce app or Store Commerce for web.
 1. Select **Settings**. If fiscal integration is enabled, the **Fiscal Integration** section on the right will show the following information:
 
     - The status of fiscal registration

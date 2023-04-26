@@ -2,9 +2,9 @@
 # required metadata
 
 title: Product search and customer search in the point of sale (POS)
-description: This article provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
+description: This article provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
-ms.date: 05/25/2022
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 [!include [banner](includes/banner.md)]
 
-Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) provide easy-to-use search functionality for products and customers. Because the search bar is always present at the top of the MPOS and CPOS windows, employees can quickly search for products and customers.
+This article provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 Commerce.
+
+The Store Commerce app and Store Commerce for web provide easy-to-use search functionality for products and customers. Because the search bar is always present at the top of the Store Commerce app and Store Commerce for web windows, employees can quickly search for products and customers.
 
 Employees can search for products in the assortments and catalogs that are associated with the current store. They can also search in the assortments and catalogs that are associated with any other store in the company. Therefore, cashiers can sell and return products outside the store assortment. Similarly, employees can search for customers who are associated with the current store or any other store in the company. Additionally, employees can search for customers who are associated with a different company in the parent organization.
 
@@ -119,7 +121,7 @@ Translations for shortcuts are required if you want shortcuts to be rendered on 
 
 Retailers can also set the default customer search mode in POS to **Search all stores**. This configuration can be helpful in scenarios where customers that were created outside POS must be searched immediately (for example, even before the distribution job is run). To do so, the retailer must turn on the **Default customer search mode** option in the POS functionality profile. Once it is set to **Yes**, every customer search attempt will then make a real-time call to headquarters.
 
-To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.
+To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that is named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.
 
 ## Cloud-powered customer search
 

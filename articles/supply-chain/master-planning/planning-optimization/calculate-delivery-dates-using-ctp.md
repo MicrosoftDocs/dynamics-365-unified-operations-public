@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Calculate sales order delivery dates using CTP
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 <!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods. For each sales line, you can provide a date that takes account of existing on-hand inventory, production capacity, and transportation times.
@@ -31,7 +29,7 @@ CTP works slightly differently, depending on the master planning engine that you
 CTP for the deprecated master planning engine is always available. However, if you want to use CTP for Planning Optimization, it must be turned for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Master planning*
-- **Feature name:** *(Preview) CTP for Planning Optimization*
+- **Feature name:** *CTP for Planning Optimization*
 
 ## How CTP compares to ATP
 

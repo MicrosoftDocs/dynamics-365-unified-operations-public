@@ -54,6 +54,9 @@ Follow these steps to automatically adjust the posting date for vendor invoices.
     - **Always change posting date to system date** – The posting date is automatically changed to the system date during posting.
     - **Change posting date to system date when posting date period is closed or on hold** – The posting date is  automatically changed to the system date during posting, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
     - **Change posting date to first day of new period when posting date period is closed or on hold** – The posting date is changed to the first day of the new open period, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
+3.  The **Adjust invoice posting date to next year’s open period** is enabled when  **Adjust posting date automatically** is **NOT** set **No change**. This controls whether it allows the invoice posting when the posting date is automatically adjusted in a new fiscal year. The following values are avaiable for selection:
+    - Block with error, if you want to stop invoice posting with an error that the posting date can’t be updated.This value is selected by default.
+    - Allowed with warning, if you want to allow invoice posting with a warning and the posting date of the invoice updated to the next period’s open period.  
 
 > [!NOTE]
 > If the new posting date that was automatically adjusted is in a new fiscal year, the posting date of the invoice will not be updated. The user will receive an error "The fiscal year has changed. Please check and reenter the posting date." The invoice posting date must be updated to the new fiscal year date in order to post.
@@ -72,10 +75,13 @@ When the posting date on a pending vendor invoice is changed, the change has the
     - If the **Invoice date** field is blank, the new posting date is used to calculate the cash discount.
     - If the **Invoice date** field was previously set, the cash discount isn't changed.
 
-- **Exchange rate** – The exchange rate date is determined by the setting of the **Update vendor accounting using the invoice date** option on the **Invoice** tab of the **Accounts payable parameters** page (**Account payable \> Setup \> Account payable parameters**).
-
-    - If this option is set to **Yes**, the **Invoice date** is used, and the **Posting date** change doesn't affect the exchange rate.
-    - If this option is set to **No**, the posting date is used to calculate the exchange rate. When the posting date is updated, accounting and reporting amounts are recalculated. Therefore, matching validation must be done again.
+- **Exchange rate** – The exchange rate date is determined by the setting of the **Default exchange rate date** on the **General** tab of the **Accounts payable parameters** page (**Account payable \> Setup \> Account payable parameters**).
+    - The value is set to **Posting date** as a default value. By such setting, the **Posting date** change will affect the exchange rate. When the posting date is updated, accounting and reporting amounts are recalculated. Therefore, matching validation must be done again.
+    - If the value is set to **Document date**, the **Invoice date** is used, and the **Posting date** change doesn't affect the exchange rate. 
+> [!NOTE]
+> This parameter is only enabled when parameter “Update vendor accounting using the invoice date” is disabled. If this parameter is enabled, it will not only use "Invoice date" as "Accounting date" to post the invoice but use it to determine the exchange rate as well.
+> In addition, currently the exchange rate date setting is only working for vendor invoice scenarios. We will support the invoice register, invoice approval, invoice journal in our future roadmap.
+    
 
 ## Validation
 

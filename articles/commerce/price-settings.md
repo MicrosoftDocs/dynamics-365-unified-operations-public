@@ -4,7 +4,7 @@
 title: Pricing settings
 description: This article describes the various settings for pricing and discount management in Microsoft Dynamics 365 Commerce headquarters.
 author: boycez
-ms.date: 09/06/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -26,11 +26,11 @@ Most pricing settings are at the company level and can be found at **Commerce pa
 
 ### Best price and compound concurrency control model
 
-The **Best price and compound concurrency control model** setting determines how the pricing engine processes multiple discounts in **best price** or **compound** concurrency mode. 
+The **Best price and compound concurrency control model** setting determines how the pricing engine processes multiple discounts in **best price** or **compounded** concurrency mode. 
 
-If the parameter is set to **Best price and compound within priority, never compound across priorities**, all **compound** discounts that have the same pricing priority are compounded. The compounded result then competes with any **best price** discounts that have the same pricing priority, the best price is applied, and all discounts that have a lower pricing priority are ignored.
+If the parameter is set to **Best price and compound within priority, never compound across priorities**, all **compounded** discounts that have the same pricing priority are compounded. The compounded result then competes with any **best price** discounts that have the same pricing priority, the best price is applied, and all discounts that have a lower pricing priority are ignored.
 
-If the parameter is set to **Best price only within priority, always compound across priorities**, all **compound** discounts are treated as **best price** discounts. Within a pricing priority, only a single discount wins. If that single discount is a **best price** or **compound** discount, it's compounded with all additional **best price** or **compound** discounts that have a lower pricing priority.
+If the parameter is set to **Best price only within priority, always compound across priorities**, all **compounded** discounts are treated as **best price** discounts. Within a pricing priority, only a single discount wins. If that single discount is a **best price** or **compounded** discount, it's compounded with all additional **best price** or **compounded** discounts that have a lower pricing priority.
 
 ### Discount compound behavior
 
@@ -42,7 +42,9 @@ For example, you want to compound 10-percent-off and 20-percent-off discounts fo
 
 ### Enable competition between exclusive threshold and other periodic discounts
 
-If the **Enable competition between exclusive threshold and other periodic discounts** parameter is set to **Yes**, the pricing engine makes exclusive threshold discounts compete with exclusive non-threshold discounts. Pricing priority still applies. The behavior of **best price** and **compound** threshold discounts remains as is. In other words, they don't compete with the non-threshold discounts.
+If the **Enable competition between exclusive threshold and other periodic discounts** parameter is set to **Yes**, the pricing engine makes exclusive threshold discounts compete with exclusive non-threshold discounts. If an exclusive threshold discount wins and is applid to sales lines, it will be ignored during the threshold discount calculation stage. But if it fails to win, it will still be assessed during the threshold discount calculation stage. Pricing priority still applies.
+
+The behavior of **best price** and **compound** threshold discounts remains as is. In other words, they don't compete with the non-threshold discounts.
 
 ### Manual line discount and system discount
 
@@ -102,7 +104,7 @@ The following settings enable organizations to control the pricing behavior in s
 
 The **Enable order price control** parameter is located on the **General** FastTab of the **Call center configuration** page. The setting determines whether the pricing engine enforces a restriction on the price override operation in the call center channel. It works in conjunction with the **Allow price adjust** product-level setting.
 
-If order price control is turned off, any call center user can make price changes on sales lines in the call center channel, regardless of whether corresponding products allow for price adjustment.
+If order price control is turned off, no price changes can be made to sales lines in the call center channel.
 
 If order price control is turned on, only products where the **Allow price adjust** parameter is set to **Yes** allow for price overrides in call center channel sales orders, and a reason code must be provided on corresponding sales lines. A call center user can change the sales price only up to the **Cost markup percentage** value that is defined at **Retail and Commerce \> Channel setup \> Call center setup \> Override permissions**. If a price override exceeds that percentage, the user must submit a request, which is then processed through a predefined Commerce workflow for review and approval. For more information about Commerce workflows, see [Workflow system overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system).
 

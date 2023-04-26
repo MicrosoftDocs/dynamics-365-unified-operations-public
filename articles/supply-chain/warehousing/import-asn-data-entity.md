@@ -93,7 +93,7 @@ The following example shows an XML file for importing vendor shipments for one p
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="MVR_SNN_0004">
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="MVR_SNN_0004" PACKEDTOTALQUANTITY="2.00">
                 <WHSInboundLoadPackingStructureCaseEntity PARENTPACKINGSTRUCTURELICENSEPLATENUMBER="MVR_SNN_0004" LICENSEPLATENUMBER="MVR_SNN_0004A" PACKEDTOTALQUANTITY="2.00" />
-                <WHSInboundLoadPackingStructureLine3Entity PURCHASEORDERNUMBER="00000175" ITEMNUMBER="A0001" PURCHASEORDERLINENUMBER="1" QUANTITY="2.00" UNITSYMBOL="ea" />
+                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000175" ITEMNUMBER="A0001" PURCHASEORDERLINENUMBER="1" QUANTITY="2.00" UNITSYMBOL="ea" />
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
     </WHSInboundLoadHeaderEntity>

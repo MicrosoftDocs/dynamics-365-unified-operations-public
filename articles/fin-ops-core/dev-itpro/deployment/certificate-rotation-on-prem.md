@@ -3,8 +3,8 @@
 
 title: Certificate rotation
 description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
-author: PeterRFriis
-ms.date: 06/07/2022
+author: faix
+ms.date: 01/11/2023
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -20,10 +20,11 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Certificate rotation
@@ -41,36 +42,9 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 >
 > Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
 
-## Update your infrastructure scripts 
-
-1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
-
-2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a file share that can be accessed by all machines in the cluster. Name the folder **Infrastructure**.
-
-    > [!NOTE]
-    > As of version 2.14.0, each version of the scripts will have its own entry in the Shared asset library.
-
-3. Compare the schema version of the **ConfigTemplate.xml** file in the **InfrastructureOld** folder with the schema version of the **ConfigTemplate.xml** file in the **Infrastructure** folder.
-
-    - If the schema versions haven't changed, copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
-    - If the schema versions have changed, follow these steps:
-
-        1. In the **Infrastructure** folder, rename the **ConfigTemplate.xml** file **EmptyConfigTemplate.xml**
-        1. Copy the **ConfigTemplate.xml** file from the **InfrastructureOld** folder to the **Infrastructure** folder.
-        1. Run the following command.
-
-            ```powershell
-            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplate.xml -NewConfigTemplate .\EmptyConfigTemplate.xml
-            ```
-
-        1. The **ConfigTemplate.xml** file is now upgraded. You must now go through the file and fill in any additional information that is required.
-
-        > [!NOTE]
-        > Newer versions of the scripts (version 2.14.0 and later) that introduce changes to the schema of the configuration file will include logic that migrates the configuration file to the new schema.
-        > 
-        > The script doesn't currently have logic for updating from schemas that are earlier than version 1.5. In these cases, you must manually migrate the old **ConfigTemplate.xml** file by comparing it with the new **ConfigTemplate.xml** file.
-
 ## Preparation steps 
+
+1. Update your infrastructure scripts by following the steps in [Update your Infrastructure Scripts](obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 
 1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert). Specifically, follow these steps.
 

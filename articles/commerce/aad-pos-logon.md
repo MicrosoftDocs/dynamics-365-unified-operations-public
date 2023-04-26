@@ -2,7 +2,7 @@
 title: Configure Azure Active Directory authentication for POS sign-in
 description: This article explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 author: boycezhu
-ms.date: 04/23/2021
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ To configure the POS authentication method in Commerce headquarters, follow thes
 	
     - **Personnel ID and Password** - This default option requires POS users to enter a personnel ID and password to sign in to the POS and to access manager override functionality.
     - **Azure AD without single sign-on** - This option requires POS users to use Azure AD credentials to sign in to the POS and access manager override functionality. When the POS client is refreshed or reopened, the POS user must provide Azure AD credentials to sign in again.
-    - **Azure AD with single sign-on** - When this option is selected, POS users are able to sign in to Cloud POS (CPOS) using active Azure AD credentials that are being used by other web applications in the same web browser, or sign in to Modern POS (MPOS) using Azure AD credentials signed in to Windows. Both methods allow sign-in without needing to enter Azure AD credentials on the POS sign-in screen. However, accessing the POS manager override functionality will still require sign-in using Azure AD credentials.
+    - **Azure AD with single sign-on** - When this option is selected, POS users are able to sign in to Store Commerce for web using active Azure AD credentials that are being used by other web applications in the same web browser, or sign in to the Store Commerce app using Azure AD credentials signed in to Windows. Both methods allow sign-in without needing to enter Azure AD credentials on the POS sign-in screen. However, accessing the POS manager override functionality will still require sign-in using Azure AD credentials.
 
 1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule** and run the **1070 (Channel configuration)** job to synchronize the latest functionality profile settings to POS clients.
 
@@ -73,7 +73,7 @@ When the POS is configured to use Azure AD authentication, the manager override 
 
 > [!NOTE]
 > - In Commerce versions 10.0.18 and earlier, the manager override function does not support Azure AD. A personnel ID and password are required even if the POS is configured to use the Azure AD authentication method.
-> - When using CPOS with the Safari web browser on an Apple iOS device, you must first turn off **Block Pop-ups** in Safari settings for the manager override functionality to work with Azure AD authentication. 
+> - When using Store Commerce for web with the Safari web browser on an Apple iOS device, you must first turn off **Block Pop-ups** in Safari settings for the manager override functionality to work with Azure AD authentication. 
 
 ## Security best practices for Azure AD-based POS authentication on shared devices
 
@@ -88,10 +88,9 @@ Many retailers set up their retail store environment in a way that multiple user
 
 [Create a retail functionality profile](retail-functionality-profile.md)
 
+[Set up extended sign-in functionality for Store Commerce app and Store Commerce for web](extended-logon.md)
 
-[Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md)
-
-[Security best practices for Cloud POS in shared environments](dev-itpro/secure-retail-cloud-pos.md)
+[Security best practices for Store Commerce for web in shared environments](dev-itpro/secure-retail-cloud-pos.md)
 
 
 

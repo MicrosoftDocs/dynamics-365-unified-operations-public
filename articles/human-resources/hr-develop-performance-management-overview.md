@@ -4,7 +4,7 @@
 title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 02/23/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -100,8 +100,6 @@ You can create new reviews that are based on templates that you've created. For 
 
 To print reviews, select the **Print review** button. If you don't see the button on the **Review** page, ensure that you've enabled the feature in the **Feature management** workspace. For more information about feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-> [!NOTE]
-> The ability to print performance reviews is only available in Human Resources. It's not available in Dynamics 365 Finance.
 
 ## Components you can include in performance reviews
 

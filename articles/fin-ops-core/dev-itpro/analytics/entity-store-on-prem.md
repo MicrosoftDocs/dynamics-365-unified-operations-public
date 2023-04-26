@@ -16,6 +16,8 @@ ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.form: EntityStoreOnPrem
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # PowerBI.com integration with on-premises environments
@@ -35,16 +37,16 @@ This article outlines the analytical capabilities that are available in on-premi
 
 ## Enable Entity Store on-premises
 
-This article supplements the [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md) article. The section numbers that follow correspond to the section numbers in that article.
+This article supplements the [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-latest.md) article. The section numbers that follow correspond to the section numbers in that article.
 
-### [3. Plan your users and service accounts](../deployment/setup-deploy-on-premises-pu12.md#plansvcacct)
+### [3. Plan your users and service accounts](../deployment/setup-deploy-on-premises-latest.md#plansvcacct)
 
 | User account               | Type     | Purpose | User name |
 |----------------------------|----------|---------|-----------|
 | AOS SQL AXDW DB Admin user | SQL user | The application uses this user to enter information in the AXDW database. This user is optional and must be created only if you want Entity Store support. | axdwadmin |
 | AOS SQL AXDW FB Admin user | SQL user | The application uses this user to enter information in the AXDW database. This user is optional and must be created only if you want Entity Store support. | axdwruntimeuser |
 
-### [14. Configure the databases](../deployment/setup-deploy-on-premises-pu12.md#configuredb)
+### [14. Configure the databases](../deployment/setup-deploy-on-premises-latest.md#configuredb)
 
 The steps in this section are optional.
 
@@ -71,7 +73,7 @@ If you want to create a database that can be used for Entity Store, you must fir
     - GRANT VIEW SERVER STATE TO axdwadmin.
     - GRANT VIEW SERVER STATE TO axdwruntimeuser.
 
-### [15. Encrypt credentials](../deployment/setup-deploy-on-premises-pu12.md#encryptcred)
+### [15. Encrypt credentials](../deployment/setup-deploy-on-premises-latest.md#encryptcred)
 
 Create a Credentials.json file as shown here. The **AosDWAuth** category is optional and is used only if Entity Store is enabled.
 

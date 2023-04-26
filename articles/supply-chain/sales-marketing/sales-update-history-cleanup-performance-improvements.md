@@ -46,7 +46,7 @@ Before you can use this feature, it must be turned on for your system. Admins ca
 
 The *Clean up sales update history based on age* feature lets you specify the maximum age of records to keep when the *Sales update history cleanup* periodic task is run. Older records will be deleted. This feature is useful when you set up the task to run periodically, because the age is always calculated relative to the date when the task is run. If you don't use this feature, you can only set a specific date for the oldest records to keep.
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Clean up sales update history based on age* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Clean up sales update history based on age* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up and schedule the Sales history cleanup periodic task
 

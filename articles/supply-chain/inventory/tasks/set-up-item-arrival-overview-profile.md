@@ -5,7 +5,7 @@ title: Set up an item arrival overview profile
 description: This article focuses on the setup of an arrival overview profile. 
 author: yufeihuang
 ms.date: 07/30/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article focuses on the setup of an arrival overview profile. The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user. You can use this procedure in demo data company USMF. This procedure would typically be carried out by a receiving clerk.
 
-1. In the navigation pane, go to **Modules > Inventory management > Setup > Distribution > Arrival overview profiles**.
+1. Go to **Inventory management > Setup > Distribution > Arrival overview profiles**.
 2. Select **New**. Because you will almost always work in the same warehouse offloading full truck loads, you should create an arrival overview profile to simplify the process of registering received items.  
 3. In the **Arrival overview profile name** field, type a value.
 4. In the **Show lines** field, select an option. Select which lines to show for the receipts:  

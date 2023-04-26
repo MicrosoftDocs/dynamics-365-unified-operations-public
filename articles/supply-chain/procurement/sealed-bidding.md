@@ -38,10 +38,7 @@ Because users who have appropriate permissions and who are set up as vendor cont
 
 ### Step 2: Enable the sealed bidding feature
 
-Before you start to set up or use this feature, you must make sure that it's available in your system. Administrators can use the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Procurement and sourcing*
-- **Feature name:** *Sealed bidding for RFQ*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Sealed bidding for RFQs* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Step 3: Set up Azure Key Vault
 

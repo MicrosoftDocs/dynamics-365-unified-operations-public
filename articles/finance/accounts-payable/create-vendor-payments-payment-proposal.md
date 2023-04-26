@@ -67,11 +67,11 @@ The payment proposal query contains various tabs, each of which has different op
 | 3075   | 1003    | June 15      | 250.00         | June 29  |                    | 0.00                 |
 | 3100   | 1004    | June 17      | 100.00         | July 17  | July 1             | 1.00                 |
 
-On July 1, April pays vendors. She uses a payment proposal to complete this task more efficiently.
+On July 1, April pays vendors and uses a payment proposal to complete this task more efficiently.
 
 ### Option 1: By cash discount
 
-April selects **Cash discount** as the proposal type. She enters a date range of June 26 to July 10. The following invoices are included in the proposal:
+April selects **Cash discount** as the proposal type and enters a date range of June 26 to July 10. The following invoices are included in the proposal:
 
 -   1002, because the discount date of July 4 is in the range of payment dates.
 -   1004, because the discount date of July 1 is in the range of payment dates.
@@ -83,7 +83,7 @@ The following invoices aren't included in the proposal:
 
 ### Option 2: By due date
 
-April selects **Per due date** as the proposal type. She enters a date range of June 26 to July 10. The following invoices are included in the proposal:
+April selects **Per due date** as the proposal type and enters a date range of June 26 to July 10. The following invoices are included in the proposal:
 
 -   1003, because the due date of June 29 is in the range of payment dates.
 
@@ -95,7 +95,7 @@ The following invoices aren't included in the proposal:
 
 ### Option 3: By due date and cash discount
 
-April selects **Due date and cash discount** as the proposal type. She enters a date range of June 26 to July 10. The following invoices are included in the proposal:
+April selects **Due date and cash discount** as the proposal type and enters a date range of June 26 to July 10. The following invoices are included in the proposal:
 
 -   1003, because the due date of June 29 is in the range of payment dates.
 -   1002, because the discount date of July 4 is in the range of payment dates.

@@ -2,7 +2,7 @@
 title: Cash register functionality for Sweden
 description: This article provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
-ms.date: 12/02/2019
+ms.date: 04/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ To learn about common POS features that are available to customers in all countr
 
 Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:
 
-- **Prohibit sales and returns from being combined on one receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, Cloud POS and Modern POS won't let users create a transaction that contains both positive and negative lines.
+- **Prohibit sales and returns from being combined on one receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, the Store Commerce app and Store Commerce for web won't let users create a transaction that contains both positive and negative lines.
 - **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
 - **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Headquarters. You can view the audit events on the **Audit events** page.
 - **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time.
@@ -102,11 +102,17 @@ You must specify the following general settings for Sweden.
     - Select the **Prices include sales tax** check box.
     - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
     - Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-format text.
+    
+    > [!NOTE]
+    > If you use the control unit integration sample for Sweden, make sure that the length of the **Tax identification number (TIN)** doesn't exceed 10 characters, as it's limited by the control unit driver.
 
 3. Set up POS functionality profiles:
 
     - On the **Functions** FastTab, select the **Audit** and **Prohibit mixing sales and returns in one receipt** check boxes.
     - On the **Receipt numbering** FastTab, set up receipt numbering. Create or update records for the **Sale** and **Return** receipt transaction types. Set the formats so that they include only numeric characters. Clear the **Independent sequence** check box in both records.
+   
+   > [!NOTE]
+    > If you use the control unit integration sample for Sweden, make sure that the length of the receipt number doesn't exceed 12 characters, as it's limited by the control unit driver.
 
 4. Update POS permissions groups and individual permission settings for store workers. Set the **Allow printing receipt copy** permission to an appropriate value:
 

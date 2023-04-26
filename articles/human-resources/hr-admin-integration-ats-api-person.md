@@ -162,10 +162,10 @@ This entity provides the personal information for the individual who is the cand
 | **Address Country Region ISO Code**<br>mshr_addresscountryregionisocode<br>*String* | Read/write<br>Optional | The ISO code of the country of the person’s primary address. |
 | **Address County**<br>mshr_addresscounty<br>*String* | Read/write<br>Optional | The county of the person’s primary address. Set up in mshr_logisticsaddresscountyentity entity. |
 | **Address District Name**<br>mshr_addressdistrictname<br>*String* | Read/write<br>Optional | The district of the person’s primary address. Set up in mshr_logisticsaddressdistrictentity entity. |
-| **Address Latitude**<br>mshr_addresslatitude<br>*String* | Read/write<br>Optional | The latitude of the person’s primary address. |
+| **Address Latitude**<br>mshr_addresslatitude<br>*Decimal* | Read/write<br>Optional | The latitude of the person’s primary address. |
 | **Address Location ID**<br>mshr_addresslocationid<br>*String* | Read/write<br>Optional | The unique identifier for the location of the person’s primary address. Valid values in mshr_logisticspostaladdresslocationcdsentity entity. |
 | **Address Location Roles**<br>mshr_addresslocationroles<br>*String* | Read/write<br>Optional | The location role of the person’s primary address. Set up in the mshr_logisticslocationrolecdsentity entity. |
-| **Address Longitude**<br>mshr_addresslongitude<br>*String* | 	Read/write<br>Optional | The longitude of the person’s primary address. |
+| **Address Longitude**<br>mshr_addresslongitude<br>*Decimal* | 	Read/write<br>Optional | The longitude of the person’s primary address. |
 | **Address State**<br>mshr_addressstate<br>*String* | Read/write<br>Optional | The state of the person’s primary address. Set up in mshr_logisticsaddressstateentity entity. |
 | **Address Street**<br>mshr_addressstreet<br>*String* | Read/write<br>Optional | The street address of the person’s primary address. |
 | **Address Valid From**<br>mshr_addressvalidfrom<br>*Date* | Read/write<br>Optional | The date from which the person’s primary address is valid. |

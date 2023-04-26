@@ -24,7 +24,7 @@ This article describes how to promote and highlight specific information for any
 
 ## Enable promoted fields in your system
 
-If you are running Supply Chain Management version 10.0.28 or earlier, then before you can set up promoted fields, you must complete the following procedure to enable the required features and generate the required field names in the Warehouse Management mobile app. If you are running Supply Chain Management version 10.0.29 or later, the features are mandatory and can't be turned off, so you can skip this procedure.
+If you're running Supply Chain Management version 10.0.28 or earlier, then before you can set up promoted fields, you must complete the following procedure to enable the required features and generate the required field names in the Warehouse Management mobile app. If you're running Supply Chain Management version 10.0.29 or later, the features are mandatory and can't be turned off, so you can skip this procedure.
 
 1. Go to **System administration \> Workspaces \> Feature management**. (See [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for more information about this page.)
 1. Make sure that the *Warehouse app step instructions* feature is turned on for your system. This feature is a prerequisite for the *Warehouse app promoted fields* feature. As of Supply Chain Management version 10.0.29, it's mandatory and can't be turned off. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).

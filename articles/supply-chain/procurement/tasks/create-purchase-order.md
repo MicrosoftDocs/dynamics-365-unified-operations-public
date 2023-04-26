@@ -5,7 +5,7 @@ title: Create a purchase order
 description: This article shows you how to create a purchase order manually. 
 author: GalynaFedorova
 ms.date: 07/18/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This article shows you how to create a purchase order manually. It's more typica
 
 
 ## Create the purchase order header
-1. Go to **Navigation pane > Modules > Procurement and sourcing > Purchase orders > All purchase orders**.
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
 2. Select **New**.
 3. Select vendor account **US-101**. When you select a vendor, details from the vendor record such as address, invoice account, delivery terms, and delivery mode will be copied as default values into the order header. You can change these values at any time.  
 4. Expand the **General** section.

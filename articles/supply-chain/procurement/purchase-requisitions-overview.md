@@ -83,7 +83,7 @@ The overall status of a purchase requisition is determined by the status of the 
 <li><strong>In review</strong> – The purchase requisition lines have been submitted for review. When the workflow process is completed for a purchase requisition line, the status of that line remains <strong>In review</strong> until all remaining purchase requisition lines have been reviewed.</li>
 <li><strong>Rejected</strong> – A purchase requisition line has been rejected. Purchase requisition lines that are rejected can be modified and resubmitted.</li>
 </ul>
-If you resubmit a purchase requisition line that has been rejected, the review process starts over for all lines in the purchase requisition that are still in review. </br><strong>Note:</strong> You can recall a purchase requisition that has already been submitted. When you recall a purchase requisition, all other purchase requisition lines are also recalled. Purchase requisition lines that have been recalled can be deleted.</td>
+If you resubmit a purchase requisition line that has been rejected, the review process starts over for all lines in the purchase requisition that are still in review. <br><strong>Note:</strong> You can recall a purchase requisition that has already been submitted. When you recall a purchase requisition, all other purchase requisition lines are also recalled. Purchase requisition lines that have been recalled can be deleted.</td>
 </tr>
 <tr class="odd">
 <td>Rejected</td>
@@ -111,7 +111,7 @@ If you resubmit a purchase requisition line that has been rejected, the review p
 <tr class="odd">
 <td>Cancelled</td>
 <td>Cancelled</td>
-<td>The purchase requisition and all purchase requisition lines have been canceled.</br> <strong>Note:</strong> If you no longer require an item that is on a purchase requisition line, you must cancel the purchase requisition line if it has already been approved. Only purchase requisition lines that have been approved can be canceled. If any purchase requisition lines are in review, the purchase requisition will have a status of <strong>In review</strong>. In this case, you can recall the purchase requisition and delete the appropriate purchase requisition line.</td>
+<td>The purchase requisition and all purchase requisition lines have been canceled.<br> <strong>Note:</strong> If you no longer require an item that is on a purchase requisition line, you must cancel the purchase requisition line if it has already been approved. Only purchase requisition lines that have been approved can be canceled. If any purchase requisition lines are in review, the purchase requisition will have a status of <strong>In review</strong>. In this case, you can recall the purchase requisition and delete the appropriate purchase requisition line.</td>
 </tr>
 <tr class="even">
 <td>Closed</td>

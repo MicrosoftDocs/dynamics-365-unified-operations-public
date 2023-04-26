@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 06/20/2022
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
-## Enable Financial reporting
-To use the financial reporting service for your organization, a Lifecycle Services (LCS) administrator must enable this service in the LCS portal for your organization. If Financial reporting hasn't been provisioned for your environment, contact your LCS administrator to enable the service. 
 
 ## Accessing Financial reporting
 
@@ -113,30 +111,30 @@ Financial reporting provides 22 default financial reports. Every report uses the
 
 <!--Each report in the following table links to an Office Mix presentation about the report.-->
 
-| Default report                                                                                         | Description                                                                                                                                                                                                                                                                                                          |
-|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 12 Month Rolling Single Column Income Statement – Default | View an organization's profitability for the past 12 months in a single column.                                                                                                                                                                                                                                      |
-| 12 Month Trend Income Statement – Default                 | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.                                                                                                                                                                                             |
-| Actual vs Budget – Default                                | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.                                                                                                                                                                          |
+| Default report                           | Description                                                         |
+|-------------------------------------------|--------------------------------------------------------------------------------|
+| 12 Month Rolling Single Column Income Statement – Default | View an organization's profitability for the past 12 months in a single column.            |
+| 12 Month Trend Income Statement – Default                 | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.                                                |
+| Actual vs Budget – Default                                | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.                                                                       |
 | Audit Details – Default                                  | View detailed balance information for all accounts. This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID. |
-| Balance List – Default                                   | View detailed balance information for all accounts. This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.                                                                    |
-| Balance Sheet – Default                                   | View the organization's financial position for the year.                                                                                                                                                                                                                                                             |
-| Balance Sheet and Income Statement Side by Side - Default | View the organization's financial position and profitability for the year side by side.                                                                                                                                                                                                                              |
-| Cash Flow – Default                                       | Gain insight into the cash that is coming in to and going out of the organization.                                                                                                                                                                                                                                   |
-| Detailed JE and TB Review – Default                      | View opening balance and activity information for all accounts.                                                                                                                                                                                                                                                      |
-| [Detailed Trial Balance - Default](trial-balance-financial-reports.md)| View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.                                                                                                                                  |
-| Expenses Three Year Quarterly Trend – Default             | Gain insight into expenses for the past 12 quarters over the previous three years.                                                                                                                                                                                                                                   |
-| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.                                                                                                                                                                           |
-| [Income Statement – Default](income-statement-financial-report.md)| View the organization's profitability for the current period and the year to date.                                                                                                                                                                                                                                   |
-| Ledger Transaction List – Default                        | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                                                                            |
-| Ratios – Default                                          | View the solvency, profitability, and efficiency ratios for the organization for the year.                                                                                                                                                                                                                           |
-| Rolling 12 Month Expenses – Default                       | Gain insight into expenses for each of the last 12 months. These 12 months can span more than one fiscal year.                                                                                                                                                                                                       |
-| Rolling Quarter Income Statement – Default               | View the organization's profitability on a quarterly basis for the past year and the year to date.                                                                                                                                                                                                                   |
-| Side by Side Balance Sheet – Default                      | View the organization's financial position for the year. This report shows assets and liability, and shareholder equity side by side.                                                                                                                                                                                |
-| [Summary Trial Balance – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.                                                                                                                                                                  |
-| [Summary Trial Balance Year Over Year – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.                                                                                                                           |
-| Weekly Sales and Discounts - Default                     | Gain insight into sales and discounts for each week in a month. This report includes a four-week total.                                                                                                                                                                                                              |
-| Budget Funds Available - Default                         | View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts                                                                                                                                                                                  |
+| Balance List – Default                                   | View detailed balance information for all accounts. This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.                          |
+| Balance Sheet – Default                                   | View the organization's financial position for the year.                      |
+| Balance Sheet and Income Statement Side by Side - Default | View the organization's financial position and profitability for the year side by side.     |
+| Cash Flow – Default                                       | Gain insight into the cash that is coming in to and going out of the organization.                 |
+| Detailed JE and TB Review – Default                      | View opening balance and activity information for all accounts.                      |
+| [Detailed Trial Balance - Default](trial-balance-financial-reports.md)| View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.                                                                                 |
+| Expenses Three Year Quarterly Trend – Default             | Gain insight into expenses for the past 12 quarters over the previous three years.       |
+| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.                                                                              |
+| [Income Statement – Default](income-statement-financial-report.md)| View the organization's profitability for the current period and the year to date.          |
+| Ledger Transaction List – Default                        | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                |
+| Ratios – Default                                          | View the solvency, profitability, and efficiency ratios for the organization for the year.       |
+| Rolling 12 Month Expenses – Default      | Gain insight into expenses for each of the last 12 months. These 12 months can span more than one fiscal year.        |
+| Rolling Quarter Income Statement – Default               | View the organization's profitability on a quarterly basis for the past year and the year to date.    |
+| Side by Side Balance Sheet – Default                      | View the organization's financial position for the year. This report shows assets and liability, and shareholder equity side by side.               |
+| [Summary Trial Balance – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.                                      |
+| [Summary Trial Balance Year Over Year – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.                  |
+| Weekly Sales and Discounts - Default                     | Gain insight into sales and discounts for each week in a month. This report includes a four-week total.   |
+| Budget Funds Available - Default|View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts.|
 
 ## Opening financial reports
 
@@ -166,7 +164,7 @@ The selected slipstreamed version is a reviewed and validated version of Financi
 The slipstream process is fully automated and doesn't require any customer action. Three topologies consume slipstream, each in a slightly different way:
 
 - **On-premises** – On-premises deployments don't support slipstream and true-up.
-- **Infrastructure as a service (IaaS)** – The slipstream logic is applied during any operation that tries to update Financial reporting. It includes binary updates or broadcasts that contains binary updates.
+- **Infrastructure as a service (IaaS)** – The slipstream logic is applied during any operation that tries to update Financial reporting. It includes binary updates or broadcasts that contain binary updates.
 - **Self-service** – Any operation that requires Financial reporting downtime applies the slipstream logic:
 
     - Binary updates or broadcasts that include binary updates
@@ -179,7 +177,7 @@ There are a few common issues that can cause problems when you open Report Desig
 
 Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 
-* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
+* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone** field, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.7.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net472).
@@ -218,14 +216,14 @@ Here are some steps you can take to make your conversation with Microsoft suppor
 The following steps walk through the process of turning on Event viewer messages for Financial reporting. The logs that Event viewer generates will help support engineers to identify the source of the connection issue quickly. Submit copies of these logs together with your ticket when contacting support.
 
 
-1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
+1. Copy the RegisterETW.zip file to the client workstation (preferably the Desktop) and extract [RegisterETW.zip](//download.microsoft.com/download/3/0/0/3008047d-ff50-45fa-8427-e4eddc517bd7/RegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e%20(3).zip).
 2. Make sure Windows Event viewer is closed.
 3. Open an Administrator PowerShell command prompt and go to the directory where RegisterETW.ps1 is located.
-4. Run the following command: .\RegisterETW.ps1
+4. Run the following command: .\RegisterETW.ps1 
 
     A successful output in PowerShell will be verified with the message, **Competed RegisterETW script**.
 
-    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**:
+    Re-open Event viewer and you will now see these logs under **Microsoft > Dynamics**: 
 
     * MR-Client
     * MR-DVT

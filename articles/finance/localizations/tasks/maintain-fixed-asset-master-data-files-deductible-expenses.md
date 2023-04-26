@@ -3,7 +3,7 @@ title: Maintain fixed-asset master data files for deductible expenses
 description: This task walks you through maintaining fixed asset master data files for deductible expenses.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

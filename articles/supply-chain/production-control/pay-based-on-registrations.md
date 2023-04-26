@@ -85,7 +85,7 @@ According to the flex profile, the time between 06:00 AM and 07:00 AM is a Flex+
 
 #### Calculation of Flex-
 
-According to the flex profile, the Flex- period starts at 02:30 PM and ends at 03:30 PM. Therefore, if the worker clocks out at 02:45 PM, the 45 minutes (0.75 hours) that remain in the Flex- period are registered as pay time, and the same amount of time is deducted from the worker's flex account. The 45 minutes are included in pay time because the worker will be granted pay for the remaining 45 minutes in the Flex- period. If the worker is absent during the Flex- period, the 45 minutes will be deducted from his flex account.
+According to the flex profile, the Flex- period starts at 02:30 PM and ends at 03:30 PM. Therefore, if the worker clocks out at 02:45 PM, the 45 minutes (0.75 hours) that remain in the Flex- period are registered as pay time, and the same amount of time is deducted from the worker's flex account. The 45 minutes are included in pay time because the worker will be granted pay for the remaining 45 minutes in the Flex- period. If the worker is absent during the Flex- period, the 45 minutes will be deducted from their flex account.
 
 #### Calculation of Time
 
@@ -470,7 +470,7 @@ The following scenarios show the pay items and entries for approval that are gen
 
 ### Scenario 1: The worker clocks in later than planned
 
-The worker clocks in at 08:30 AM. Because his planned clock-in time is 07:00 AM, they are 1.50 hours late for work. Because the 1.50 hour is considered absence time, the worker is prompted to select an absence code. The worker leaves work at 03:30 PM, which is the planned clock-out time. When the worker's registrations are calculated and approved, the absence registration, together with the absence code that the worker selected at clock-in, appears for the time between 07:00 AM and 08:30 AM.
+The worker clocks in at 08:30 AM. Because their planned clock-in time is 07:00 AM, they are 1.50 hours late for work. Because the 1.50 hour is considered absence time, the worker is prompted to select an absence code. The worker leaves work at 03:30 PM, which is the planned clock-out time. When the worker's registrations are calculated and approved, the absence registration, together with the absence code that the worker selected at clock-in, appears for the time between 07:00 AM and 08:30 AM.
 
 In the time profile, you can configure the **Clock-in** registration type so that there is a tolerance when workers are late for work. For example, if you set up a tolerance of 5, the worker is prompted for an absence code only if they clock in later than 07:05 AM.
 
@@ -530,7 +530,7 @@ Here is the resulting pay item after the registrations are transferred.
 
 ### Scenario 4: The worker clocks in late and clocks out after the planned clock-out time during an overtime period
 
-The worker clocks in late at 09:30 AM and then, to compensate for their late attendance, they work overtime and clocks out at 05:00 PM. Because the worker came in late and compensated by working longer, the company doesn't want to grant the worker overtime pay for the hours that they worked between the planned clock-out at 03:30 PM and his actual clock-out at 05:00 PM, even though this period is defined as overtime in the time profile.
+The worker clocks in late at 09:30 AM and then, to compensate for their late attendance, they work overtime and clocks out at 05:00 PM. Because the worker came in late and compensated by working longer, the company doesn't want to grant the worker overtime pay for the hours that they worked between the planned clock-out at 03:30 PM and their actual clock-out at 05:00 PM, even though this period is defined as overtime in the time profile.
 
 To handle this scenario, the absence code can be set up to reduce overtime hours by any hours of illegal absence that the worker has on the same day. Select **Time and attendance** &gt; **Setup** &gt; **Groups** &gt; **Absence groups**, and select the **Deduct overtime** check box to deduct overtime from hours of illegal absence.
 
