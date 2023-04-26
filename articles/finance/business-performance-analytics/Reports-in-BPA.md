@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reports in business performance analytics
-description: This article describes reports that are related to record to report value chain in business performance analytics
+description: This article describes reports that are related to the record-to-report value chain in business performance analytics.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
@@ -16,22 +16,20 @@ ms.custom:
 
 # Reports in business performance analytics
 
->[!NOTE]
->The functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
->For more information about participating in public preview for business performance analytics, contact bpateam@microsoft.com.
+> [!NOTE]
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of business performance analytics, contact <bpateam@microsoft.com>.
 
+This article describes the financial reports that are available in business performance analytics. These reports have been designed to provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. These reports use a robust data model in Microsoft Power BI. Therefore, they're not only accurate and insightful, but can also easily be customized to suit the needs of your organization.
 
-## Record to report 
-This article describes the financial reports that are available in business performance analytics. 
-These reports have been designed to provide a detailed overview of an organization's financial health, allowing stakeholders to make informed decisions and drive 
-business success. By utilizing a robust data model in Power BI, these reports are not only accurate and insightful but also easily customizable to suit the needs of your organization.
+## Record to report
 
+The following table describes the reports that are related to the record-to-report value chain in business performance analytics.
 
-| Report                              | Finance and operations report              | Purpose                                         |
-| ----------------------------------- | ----------------------- | ----------------------------------------------- |
-| Balance sheet                     | Balance sheet           | Provides a view of the organization's financial position for the year. Filters on the page are Legal entity and Fiscal Period. The balance sheet leverages the account category setup in finance and operations to create the structure of the balance sheet. |
-| Budget vs actual                   | Budget vs actual        | This report compares the planned budget against actual financial amounts, helping organizations identify areas where spending is in line with expectations, and areas requiring further attention.              |
-| Financial performance              | n/a                     | This report provides an in-depth analysis of a company's financial performance, highlighting key metrics such as revenue, expenses, net income, and cash flow.                                                             |
-| General ledger dimension details   | Dimension statement     | This report breaks down the general ledger into its constituent dimensions, offering detailed insights into each aspect of the organization's financial transactions.                                                      |
-| General ledger transaction details | Ledger transaction list | This report presents a comprehensive view of all financial transactions recorded in the general ledger, enabling stakeholders to track and analyze the flow of funds throughout the organization.                          |
-| Profit and loss                    | Profit and loss         | This report summarizes an organization's revenues, costs, and expenses over a specific period, and provides a view of the company's overall profitability.                                                                           |
+| Report                             | Finance and operations report | Purpose |
+| ---------------------------------- | ----------------------------- | ------- |
+| Balance sheet                      | Balance sheet                 | This report provides a view of the organization's financial position for the year. The page includes **Legal entity** and **Fiscal period** filters. The account category setup in finance and operations apps is used to create the structure of the balance sheet. |
+| Budget vs actual                   | Budget vs actual              | This report compares the planned budget to actual financial amounts to help organizations identify areas where spending is in line with expectations and areas that require more attention. |
+| Financial performance              | Not applicable                | This report provides an in-depth analysis of a company's financial performance. It highlights key metrics, such as revenue, expenses, net income, and cash flow. |
+| General ledger dimension details   | Dimension statement           | This report breaks the general ledger down into its constituent dimensions to offer detailed insights into each aspect of the organization's financial transactions. |
+| General ledger transaction details | Ledger transaction list       | This report presents a comprehensive view of all financial transactions that have been recorded in the general ledger, so that stakeholders can track and analyze the flow of funds throughout the organization. |
+| Profit and loss                    | Profit and loss               | This report summarizes an organization's revenues, costs, and expenses over a specific period, and provides a view of the company's overall profitability. |
