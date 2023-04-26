@@ -41,15 +41,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.35 release
 
-### Integration with Outlook for contacts, appointments, and tasks
+### Integration with Microsoft Outlook for contacts, appointments, and tasks
 
 | &nbsp;  | &nbsp;  |
 |---|---|
 | **Reason for deprecation/removal** | Exchange web service API is transitioning from SOAP to REST. |
-| **Replaced by another feature?**   | No replacement is planned. We recommend that customers use the integration capabilities from Dynamics 365 Sales |
-| **Product areas affected** | Supply Chain Management - Sales and marketing |
+| **Replaced by another feature?**   | No replacement is planned. We recommend that customers integrate with Dynamics 365 Sales. |
+| **Product areas affected** | Supply Chain Management - sales and marketing |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p> Deprecated. As of December 1, 2023, Supply Chain Management integration with Outlook for contacts, appointments, and tasks will no longer be supported or receive security updates. </p><p> The existing integration with the Exchange Web Service uses SOAP, while Exchange Web Service is transitioning from SOAP to REST, and will only support REST going forward. The existing integration from Supply Chain Management isn’t planned to support the transition to REST.</p><p> As of May 1, 2024, the following capabilities will be removed and no longer available:</p><p> •	The ability to synchronize contacts between Supply Chain Management and Outlook.</p><p> •	The ability to synchronize appointment activities between Supply Chain Management and Outlook.</p><p> •	The ability to synchronize task activities between Supply Chain Management and Outlook.</p><p> To prepare for the removal, please redesign any extensions made to any of these capabilities to remove the dependency.</p><p> In CRM scenarioes, consider leveraging Dynamics 365 Sales integration capabilities with Outlook as the synchronization of contacts for customer accounts are supported  between Dynamics 365 Sales or Dynamics 365 Supply Chain Management https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping. </p> |
+| **Status** | <p> Deprecated. As of December 1, 2023, Microsoft will discontinue support for synchronizing contacts, appointments, and tasks between Supply Chain Management and Microsoft Outlook. Security updates will likewise not be provided for these features.</p><p>This functionality is being discontinued because the existing integration is based on SOAP, but Exchange Web Service (EWS) is transitioning from SOAP to REST and will only support REST going forward. There are no plans to add REST support for EWS integration in Supply Chain Management.</p><p> As of May 1, 2024, it will no longer be possible to synchronize the following types of records between Supply Chain Management and Outlook:</p><ul><li>Contacts</li><li>Appointment activities</li><li>Task activities</li></ul><p>To prepare for this change, please redesign any extensions you may have made to any of these capabilities to remove the dependency.</p><p>To support customer relations management scenarios, consider integrating Dynamics 365 Sales with Outlook and/or using dual-write to synchronize contacts for customer accounts between Supply Chain Management and Dynamics 365 Sales (see also [Integrated customer master](../../fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping.md)).</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.29 release
 
