@@ -55,7 +55,7 @@ The health check operation can be accessed by point of sale users in two ways:
 
 ### Peripheral health checks
 
-By default, the health check operation only tests devices that are configured in the hardware profile for the hardware station that is currently active for a register. If a register uses multiple hardware stations over the course of a day, to do health checks for all of them, it must connect to one hardware station at a time. There is no store-level health check. However, it's possible that this type of check can be done through Commerce Server extensibility.
+By default, the health check operation only tests devices that are configured in the hardware profile for the hardware station that is currently active for a register. If a register uses multiple hardware stations over the course of a day, to do health checks for all of them, it must connect to one hardware station at a time. There's no store-level health check. However, it's possible that this type of check can be done through Commerce Server extensibility.
 
 #### Out-of-box health checks
 
@@ -77,7 +77,7 @@ When the health check operation is initiated in the POS, a pane on the right lis
 
 The **Last check** column shows when the health check was last done for each device.
 
-If the health check for a device passes (that is, if no errors are encountered), the device's status will be **OK**. If the health check fails, the status will indicate that there was an error. In this case, the pane on the right provides details that are related to the error, or it instructs the user to contact the system admin.
+If a device passes the health check (that is, if no errors are encountered), the device's status will display as **OK**. If the health check fails, the status will indicate that there was an error. In this case, the pane on the right provides details that are related to the error, or it instructs the user to contact the system admin.
 
 Some devices, such as the OPOS keylock, don't have out-of-box health check tests. If a health check test isn't detected for any device that is used, the status will be **Not supported**.
 
