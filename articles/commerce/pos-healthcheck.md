@@ -83,12 +83,12 @@ Some devices, such as the OPOS keylock, don't have out-of-box health check tests
 
 ### Network health checks
 
-Two out-of-box network health checks are always included in the health check list regardless of the peripherals configured for the terminal, the Retail server connectivity test, and the network latency test. The Retail Server connectivity and network latency health checks can be run individually or together. 
+The two out-of-box network health checks listed below are always included in the health check list regardless of the peripherals configured for the terminal. The Retail Server connectivity and network latency health checks can be run individually or together. 
 
 | Name                       | Details                                                      |
 | -------------------------- | ------------------------------------------------------------ |
 | Retail Server connectivity | The Retail Server connectivity health check verifies that the terminal can communicate with Retail Server and the channel database, and verifies that real-time service calls can be made to Commerce headquarters. |
-| Network latency            | The network latency health check tests the network latency between the terminal and Retail Server. The test returns the average latency for 10 calls to Retail Server in a five second period. |
+| Network latency            | The network latency health check tests the network latency between the terminal and Retail Server. The test returns the average latency for 10 calls to Retail Server in a five-second period. |
 
 #### Network latency health check
 
@@ -98,7 +98,7 @@ Network latency health check results are categorized as shown in the following t
 | ------------------- | ------------------------------------------------------------ |
 | 0-50 ms             | **Good** - Your network latency is low and not likely to be the source of any performance related issues. |
 | 50-100 ms           | **Acceptable** - Your network latency is in the acceptable range, but may be degrading performance for network-intensive operations such as offline sync. |
-| Greater than 100 ms | **Poor** - Your network latency is likely degrading your point of sale operations. Latency in the 100-150 ms range may not cause noticable performance degradation for common operations, but latency above 150 ms will slow down most operations.  <br /><br />To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you are experiencing high latency with your internet connection. |
+| Greater than 100 ms | **Poor** - Your network latency is likely degrading your point of sale operations. Latency in the 100-150 ms range may not cause noticeable performance degradation for common operations, but latency above 150 ms will slow down most operations.  <br /><br />To further diagnose network latency, run an internet speed test on the register. If the internet speed test result latency is high, notify your system administrator that you're experiencing high latency with your internet connection. |
 
 ### Extending health checks
 
