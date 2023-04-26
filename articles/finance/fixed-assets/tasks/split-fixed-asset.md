@@ -4,8 +4,8 @@
 title: Split a fixed asset
 description: This article explains how to split a percentage of one asset book to a new asset book.
 author: moaamer
-ms.date: 08/06/2019
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -31,11 +31,11 @@ This article explains how to split a percentage of one asset book to a new asset
 
 ## Create a new fixed asset
 
-1. In the navigation pane, go to **Modules \> Fixed assets \> Fixed assets \> Fixed assets**.
+1. Go to **Fixed assets \> Fixed assets \> Fixed assets**.
 2. Select **New**.
 3. In the **Fixed asset group** field, enter or select a value. Note the fixed asset number to use in the split process later.
 4. In the **Name** field, enter a value.
-5. Close the form.
+5. Close the page.
 
 ## Split a fixed asset
 
@@ -54,7 +54,7 @@ Before a fully depreciated asset is split, the asset book status should be manua
 
 ## Post the journal transaction
 
-1. In the navigation pane, go to **Modules \> Fixed assets \> Journal entries \> Fixed assets journal**.
+1. Go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 2. In the list, select the journal created with the split process.
 3. Select **Lines**.
 

@@ -169,6 +169,9 @@ To use the dedicated hardware station, follow these steps.
 1. Open Modern POS in non-drawer mode, and use the **Manage hardware stations** operation to turn on the hardware station capabilities. The dedicated hardware station will be active by default. 
 1. Sign out of Modern POS. Then sign back in, and open a shift. The peripherals that are configured in the hardware profile will now be usable. 
 
+> [!NOTE]
+> You only need a single hardware station with record type **Dedicated**. Do not set a hardware profile or EFT value on the record; the values will be set on the **POS Register** form. 
+
 ### Shared
 
 Also sometimes referred to as the "IIS" hardware station, "IIS" implying that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When the shared hardware station is used, the peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 

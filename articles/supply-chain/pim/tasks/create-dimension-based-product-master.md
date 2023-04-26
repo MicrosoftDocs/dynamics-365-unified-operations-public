@@ -8,6 +8,7 @@ ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterD
 ms.topic: how-to
 ms.date: 11/10/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

@@ -4,7 +4,7 @@
 title: Provision Human Resources
 description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/07/2022
+ms.date: 01/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -141,11 +141,13 @@ Use the following guidance when determining which Power Apps environment to depl
 
 5. The following Power Apps environments can't be used for Human Resources. They're filtered from the selection list within LCS:
  
-    - **Default Power Apps environments** - While each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources. All tenant users can access the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations.
+    - **Default Power Apps environments** - While each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources. All tenant users can access the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations. 
    
     - **Trial environments** - These environments are created with an expiration date. Upon expiration, your environment and any Human Resources instances contained within it will be removed automatically.
    
     - **Unsupported geographies** - The environment must be in a supported geography. For more information, see [Supported geographies](hr-admin-setup-provision.md#supported-geographies).
+    
+    - **Environments without a database** – The environment must have a Microsoft Dataverse database attached. An environment with a database can be created or a database can be attached to an existing environment without a database. For more information, see [Add a Microsoft Dataverse database](/power-platform/admin/create-database) and [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 
 6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. For more information, see [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 

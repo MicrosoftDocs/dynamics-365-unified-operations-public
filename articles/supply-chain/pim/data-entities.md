@@ -8,6 +8,7 @@ ms.search.form:
 ms.topic: conceptual
 ms.date: 12/06/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 

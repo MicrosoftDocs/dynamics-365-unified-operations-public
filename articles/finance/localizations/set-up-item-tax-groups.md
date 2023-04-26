@@ -5,7 +5,7 @@ title: Set up item tax groups
 description: This article explains how to set up item tax groups in the Tax Calculation service. 
 author: wangchen
 ms.date: 11/30/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
 

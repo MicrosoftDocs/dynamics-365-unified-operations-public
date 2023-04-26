@@ -108,7 +108,7 @@ Custom health checks can also be created to test devices that aren't supported o
 
 ## Related articles
 
-[Modern POS (MPOS) triggers and printing](dev-itpro/pos-trigger-printing.md)
+[Store Commerce app triggers and printing](dev-itpro/pos-trigger-printing.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

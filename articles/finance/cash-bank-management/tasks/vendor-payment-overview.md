@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Vendor payment overview
-description: This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
+description: This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering an one-off payment. 
 author: kweekley
-ms.date: 06/25/2019
-ms.topic: business-process 
+ms.date: 03/24/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. This procedure uses the USMF demo company.
+This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering an one-off payment. This procedure uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Payments > Payment journal**.
 2. Click **New**.
@@ -42,7 +42,7 @@ This procedure walks you through various methods used to create vendor payments,
 11. Optional: Enter a minimum payment date which may be used as the payment date. The minimum payment date will be the earliest date used when creating payments. For example, if an invoice has a due date after the minimum payment date, the due date will become the payment date instead of the minimum payment date in order to pay the invoice on the latest possible date.
 12. Enter additional query restrictions under **Records to include** section. The filter is often used to restrict the invoices selected for payment by vendor group or method of payment. For example, you may add a filter to only pay invoices by check in this pay run.
 13. Enter additional query restriction or payment defaults. The additional parameters can be used to define the payment currency or to enable centralized payments for this pay run.  
-14. Click **OK**. After clicking **OK**, the results of the query will appear. If you don't want to preview the list of invoices selected to pay, you can go back to the **Parameters** fast tab and change the setting **Create payments without invoice preview** to "Yes".  
+14. Click **OK**. After clicking **OK**, the results of the query will appear. If you don't want to preview the list of invoices selected to pay, you can go back to the **Parameters** FastTab and change the setting **Create payments without invoice preview** to "Yes".  
 15. Choose the **Show payment overview** button to view the payments that will be created for the vendor on the invoice selected.
 16. Choose the **Hide payment overview** button to hide the payments. 
 17. Click **Create payments**. Before choosing **Create payments**, you can right click on the grid and export the list of invoices to Excel. The **Create payments** button will create the vendor payments in the payment journal.  

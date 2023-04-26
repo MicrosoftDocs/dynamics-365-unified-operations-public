@@ -24,6 +24,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments
@@ -36,7 +38,7 @@ This article explains authentication in Dynamics 365 Finance + Operations (on-pr
 
 The first part of the authentication process is to provide the URL for Active Directory Federation Services (AD FS). This URL will be similar to: `https://adfs.contoso.com/adfs/.well-known/openid-configuration` 
 
-You'll find this URL in the deployment instructions found in [Configure AD FS](./setup-deploy-on-premises-pu12.md#configureadfs). During deployment, the URL is used to set various options in the AOS startup variables of each AOS instance. These startup variables reside in an .XML config file located in a Service Fabric directory. This directory will vary from machine to machine, but the path should look similar to:
+You'll find this URL in the deployment instructions found in [Configure AD FS](./setup-deploy-on-premises-latest.md#configureadfs). During deployment, the URL is used to set various options in the AOS startup variables of each AOS instance. These startup variables reside in an .XML config file located in a Service Fabric directory. This directory will vary from machine to machine, but the path should look similar to:
 
 C:\\ProgramData\\SF\\AOS_10\\Fabric\\work\\Applications\\AXSFType_App218\\AXSF.Package.1.0.xml
 

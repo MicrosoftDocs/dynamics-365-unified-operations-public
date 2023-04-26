@@ -8,14 +8,13 @@ ms.search.form:
 ms.topic: how-to
 ms.date: 10/27/2022 
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Actionable workspace for discovering and handling supplier risks
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 The **Supply risk assessment** workspace provides a direct view of the top key insights that are related to supplier performance and related risks. It also provides [embedded reports](supply-risk-assessment-reports.md) that you can use for detailed performance and risk analysis.
 

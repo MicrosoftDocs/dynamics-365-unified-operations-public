@@ -5,7 +5,7 @@ title: Configure a worker using the mobile job device
 description: This article explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
 author: johanhoffmann
 ms.date: 07/09/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -33,14 +33,14 @@ This article explains how to assign the correct roles to the user account of a w
 
 For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.
 
-1. Go to **Navigation pane > Modules > System administration > Users > Users**.
+1. Go to **System administration > Users > Users**.
 2. Search for a user in the quick filter. For this example, enter `shannon`.
 3. Select the link in the **User ID** column of the user account that appears.
 4. In the **User's roles** tree, select **Roles > Machine operator**.
 5. Close the **user details** and **users** pages to return to the home page.
 
 ## Configure worker account
-1. Go to **Navigation pane > Modules > Human resources > Workers > Workers**.
+1. Go to **Human resources > Workers > Workers**.
 2. Search for a user in the quick filter. For this example, enter `shannon`.
 3. Select the link in the **Name** column of the user account that appears.
 4. Select the **Time registration** tab.

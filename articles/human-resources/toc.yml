@@ -1,3 +1,4 @@
+items:
 - name: Dynamics 365 Human Resources
   items:
   - name: Dynamics 365 Human Resources
@@ -16,20 +17,24 @@
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
         href: hr-migration-issues.md
+      - name: Human Resources customer merge 
+        href: hr-customer-merge.md        
     - name: What's new or changed
       items:
       - name: What's new or changed in finance and operations apps
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed in Human Resources
         items:
+        - name: What's new overview
+          href: whats-new-home-page.md
+        - name: Human Resources 10.0.34 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-34.md          
+        - name: Human Resources 10.0.33 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-33.md  
+        - name: Human Resources 10.0.32 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-changed-10-0-32.md        
         - name: Human Resources 10.0.31 (merged infrastructure)
           href: ./get-started/whats-new-changed-10-0-31.md
-        - name: Human Resources 10.0.30 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10-0-30.md
-        - name: Human Resources 10.0.29 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10-0-29.md
-        - name: Human Resources 10.0.28 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10.0.28.md
         - name: What's new in Dynamics 365 Human Resources (stand-alone)
           items: 
           - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
@@ -102,6 +107,8 @@
         items:
         - name: Choose a data integration technology
           href: hr-admin-integration-choose-technology.md
+        - name: Data entities and templates  
+          href: data-entity.md
         - name: Throttling FAQ
           href: hr-admin-integration-throttling-faq.md
         - name: Configure Dataverse integration
@@ -120,8 +127,6 @@
           href: hr-admin-integration-dayforce.md
         - name: Create a recurring data export app
           href: hr-admin-integration-recurring-data-export.md
-        - name: Integrate with LinkedIn Talent Hub
-          href: hr-admin-integration-linkedin.md
         - name: Integrate with Office
           items:
           - name: Office integration tutorial
@@ -356,6 +361,14 @@
             href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
           - name: Manage location owners
             href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources business events    
+          items: 
+          - name: Human Resources business event overview
+            href: business-events-overview.md
+          - name: Human Resources business event example
+            href: bus-event-example.md
+          - name: Use cases for Human Resouces business events
+            href: bus-event-use-case.md             
         - name: Workflow system
           items:
           - name: Workflow system overview
@@ -452,8 +465,10 @@
           href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
     - name: Employee self service
       items:
-      - name: Employee and Manager self service overview
+      - name: Employee self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Manager self service overview  
+        href: mss-overview.md
       - name: Create custom links in Manager self service
         href: hr-employee-manager-self-service-custom-links.md
       - name: Change Employee self service workspace name
@@ -620,6 +635,8 @@
         href: hr-benefits-management-overview.md
       - name: Benefits management workspace
         href: hr-benefits-management-workspace.md
+      - name: Benefit bulk update  
+        href: benefit-bulk.md
       - name: Configure Benefits management
         items: 
         - name: Configure Benefits management parameters per company
@@ -668,6 +685,8 @@
             href: hr-benefits-plans-setup.md
           - name: Create worker benefit plans
             href: hr-benefits-plans-worker.md
+          - name: Prorate the employee contribution amount  
+            href: prorate-contributions.md
           - name: Set up future life events
             href: hr-benefits-plans-future-life-events.md
           - name: Set up flex credit programs
@@ -736,8 +755,10 @@
       items:
       - name: Course overview
         href: hr-course-overview.md
-      - name: Set up training courses
+      - name: Create training courses
         href: hr-learning-courses.md
+      - name: Manage course participants  
+        href: hr-manage-part.md
       - name: Questionnaires overview
         href: hr-learning-questionnaires.md
       - name: Design questionnaires

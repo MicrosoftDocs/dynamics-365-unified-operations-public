@@ -5,7 +5,7 @@ title: Deliver employee benefits program
 description: This article explains how to create benefit elements which will be used when creating a new benefit. 
 author: twheeloc
 ms.date: 08/23/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

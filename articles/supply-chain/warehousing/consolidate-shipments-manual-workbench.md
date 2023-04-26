@@ -42,7 +42,7 @@ The scenario that is described here assumes that you've already turned on the fe
 
 ## Turn the manual shipment consolidation feature on or off
 
-To use manual shipment consolidation, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Manual shipment consolidation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use manual shipment consolidation, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Manual shipment consolidation* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 You must also turn on the *Consolidate shipment* feature before you can create policies (as of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off). For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 

@@ -55,7 +55,7 @@ Discount information appears at the bottom of the **Settle transactions** page.
 | Cash discount amount to take | -20.00    |
 
 ## Date to use for calculating discounts = Selected date
-If both the invoice and the payment have been posted, the cash discount can still be taken when the transactions are settled on the **Settle transactions** page. April changes the value in the **Date to use for calculating discounts** field to **Selected date**. She then enters a date of June 28, which is in the cash discount period for the invoice. That date is used to calculate a cash discount for the transaction. On the **Settle open transactions** page, April sees that, by default, the full discount of 20.00 appears. The invoice line shows that the amount to settle is 1,980.00.
+If both the invoice and the payment have been posted, the cash discount can still be taken when the transactions are settled on the **Settle transactions** page. April changes the value in the **Date to use for calculating discounts** field to **Selected date**. April then enters a date of June 28, which is in the cash discount period for the invoice. That date is used to calculate a cash discount for the transaction. On the **Settle open transactions** page, April sees that, by default, the full discount of 20.00 appears. The invoice line shows that the amount to settle is 1,980.00.
 
 | Mark          | Use cash discount | Voucher   | Account | Cash discount date | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |--------------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|

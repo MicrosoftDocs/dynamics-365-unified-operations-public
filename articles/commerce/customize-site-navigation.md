@@ -2,7 +2,7 @@
 title: Customize site navigation
 description: This article describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
-ms.date: 09/15/2020
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,6 +14,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
 ms.assetid: 
+
 ---
 # Customize site navigation
 
@@ -21,7 +22,7 @@ ms.assetid:
 
 This article describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 
-Online storefronts typically let customers discover and browse products by navigating through product categories. This capability is usually provided by tabs at the top of the page or by a navigation bar on the left. In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products that are included in the various categories.
+Online storefronts typically let customers discover and browse products by navigating through product categories. This capability is usually provided by tabs at the top of the page or by a navigation bar on the left. In Dynamics 365 Commerce, you can create and manage the hierarchical structure of your category navigation and the products that are included in the various categories.
 
 ## Create a channel navigation hierarchy
 
@@ -41,7 +42,7 @@ You can now assign products to each category that you created under the top-leve
 
 ## Customize the order of categories
 
-By default, the categories that you define will appear in alphabetical order on your site. However, you can also customize the display order of categories.
+By default, the categories that you define will appear in alphabetical order on your site. However, you can also customize the display order of categories. For more information, see [Configure the display order for categories in the product hierarchy](custom-order-categories-nav-retail-prod-hierarchy.md#configure-the-display-order-for-categories-in-the-product-hierarchy).  
 
 ## Assign a category hierarchy type
 

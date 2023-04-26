@@ -41,8 +41,10 @@ A work policy controls whether warehouse work is created when a manufactured ite
 
 To make all the functionality that is described in this article available in your system, turn on the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- License plate receiving enhancements
-- Work policy enhancements for inbound work
+- *License plate receiving enhancements*
+- *Work policy enhancements for inbound work*
+
+As of Supply Chain Management version 10.0.32, both of these features are on by default.
 
 ## The Work policies page
 
@@ -85,7 +87,7 @@ On the **Products** tab, set the **Product selection** field to control which pr
 ## Default and custom "to" locations
 
 > [!NOTE]
-> To make the functionality that is described in this section available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> To make the functionality that is described in this section available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, both of these features are on by default.
 
 Previously, the system supported receiving only at the default location that is defined for each warehouse. However, mobile device menu items that use the following work creation processes now provide the **Use default data** option. This option lets you assign a custom "to" location to one or more menu items. (This option was already available for some other types of menu items.)
 
@@ -123,7 +125,7 @@ This scenario requires the following elements:
 
 ### Prerequisites
 
-To make the functionality that is described in this scenario available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To make the functionality that is described in this scenario available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, both of these features are on by default.
 
 This scenario uses the standard demo data. Therefore, if you want to work through it by using the values that are provided here, you must work on a system where demo data is installed. Additionally, you must select the **USMF** legal entity.
 

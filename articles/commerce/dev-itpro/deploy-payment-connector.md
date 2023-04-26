@@ -2,7 +2,7 @@
 title: Deploy payment connectors
 description: This article describes how to deploy a payment connector package to the appropriate components.
 author: ShalabhjainMSFT
-ms.date: 05/07/2018
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ A payment provider or a payment ISV creates a payment connector. The payment con
 
 - **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcessor interface, and its dependent assemblies.
 - **Payment Web Files** – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.
-- **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies. These assemblies are used in Hardware station and Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don't have a payment terminal device, you don't need these files.
+- **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies. These assemblies are used in Hardware Station and the Store Commerce app to communicate with payment terminal devices, such as VeriFone MX925. If you don't have a payment terminal device, you don't need these files.
 
 To package the payment connector files, copy the payment assemblies to the folder in \\RetailSDK\\PaymentExternals. After the payment assemblies are copied, use **msbuild** from the root of the Retail SDK folder to generate the deployable packages. After the **msbuild** operation is completed, you can find the deployable package in \\RetailSDK\\Packages\\RetailDeployablePackage.
 
@@ -46,8 +46,8 @@ To package the payment connector files, copy the payment assemblies to the folde
     
     - Commerce Scale Unit (CSU)
     - Self-service installer, which enables installation of the following:
-        - Hardware station
-        - Modern POS
+        - Hardware Station
+        - Store Commerce app
         - Commerce scale unit (self-hosted)
 
 > [!NOTE]
@@ -71,7 +71,7 @@ After you've uploaded your deployable packages to the LCS asset library, you can
 
 #### Download and run installers on client computers
 
-The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md).
+The self-service package contains the installers for both Hardware Station and the Store Commerce app. After your deployable packages have been applied to your environment, you can download the updated Hardware Station and Store Commerce app installers. <!--For information about how to download Hardware Station and the Store Commerce app and install them on client computers, see [Configure, install, and activate the Store Commerce app](../retail-modern-pos-device-activation.md).-->
 
 ## Manual deployment
 
@@ -84,16 +84,16 @@ Payment connectors are pluggable. In a development environment, you can put the 
 |  Connector | Contents of the IPaymentProcessor Assemblies folder | Contents of the Payment Web Files folder | Contents of the IPaymentDevice Assemblies folder |
 |-----------|-----------------------------|------------------------------|---|
 | Commerce Scale Unit                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | Not applicable                           | Not applicable                                   |
-| Cloud POS                                                                  | Not applicable                                                            | &lt;*CPOS.WebRoot*&gt;/Connectors/       | Not applicable                                   |
+| Store Commerce for web                                                                  | Not applicable                                                            | &lt;*CPOS.WebRoot*&gt;/Connectors/       | Not applicable                                   |
 | Remote Hardware Station (Internet Information Services \[IIS\])            | &lt;*HWS.WebRoot*&gt;/bin/                                                | Not applicable                           | &lt;*HWS.WebRoot*&gt;/bin/                       |
-| Modern POS Local Hard Station (Information Protection and Control \[IPC\]) | &lt;*MPOS.AppRoot*&gt;/ClientBroker/                                      | Not applicable                           | &lt;*MPOS.AppRoot*&gt;/ClientBroker/             |
+| Store Commerce app Local Hard Station (Information Protection and Control \[IPC\]) | &lt;*MPOS.AppRoot*&gt;/ClientBroker/                                      | Not applicable                           | &lt;*MPOS.AppRoot*&gt;/ClientBroker/             |
 | E-commerce                                                                 | Not applicable                                                            | &lt;*ECOM.WebRoot*&gt;/Connectors/       | Not applicable                                   |
 
 Here is a key to the preceding table:
 
 - &lt;*RS.WebRoot*&gt; is the web application root of Commerce Scale Unit.
 - &lt;*HWS.WebRoot*&gt; is the web application root of a remote Hardware Station.
-- &lt;*MPOS.AppRoot*&gt; is the app installation folder of Modern POS (for example, C:\\Program Files (x86)\\Microsoft Dynamics AX70\\Retail Modern POS).
+- &lt;*MPOS.AppRoot*&gt; is the app installation folder of Modern POS (for example, C:\\Program Files\\Microsoft Dynamics 365\\Store Commerce).
 - &lt;*ECOM.WebRoot*&gt; is the web application root of an e-commerce website.
 
 The Payment Web Files folder usually contains a subfolder. Be sure to copy the whole subfolder to the target locations.

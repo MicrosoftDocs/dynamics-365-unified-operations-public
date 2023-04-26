@@ -30,10 +30,7 @@ This article describes how to set up and use each enhancement.
 
 ## Turn on the Make-to-order supply automation feature
 
-Before you can use the feature that is described in this article, you must turn it on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, where the feature is listed in the following way:
-
-- **Module:** *Master Planning*
-- **Feature name:** *Make-to-order supply automation*
+Before you can use the functionality described in this article, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Make-to-order supply automation* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set the number of days to show on Capacity load page
 

@@ -4,7 +4,7 @@
 title: Configure high availability for SQL Server Reporting Services (SSRS) nodes
 description: This article explains how to configure Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 author: faix
-ms.date: 06/07/2022
+ms.date: 02/08/2023
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -23,6 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Configure high availability for SQL Server Reporting Services (SSRS) nodes
@@ -131,6 +133,9 @@ Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05F
 
 #### Configure-SSRSHA.ps1 script
 
+> [!NOTE]
+> This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
+
 ```powershell
 param (
     [Parameter(Mandatory=$true)]
@@ -154,7 +159,7 @@ param (
     $ServiceAccount,
 
     [string]
-    $SsrsServicePort = "443"
+    $ssrsServicePort = "443"
 )
 
 $ErrorActionPreference = "Stop"
@@ -179,17 +184,26 @@ foreach ($component in $configJson.components)
         $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value = $Listener
         $component.parameters.biReporting.reportingServers.value = $MachinesList
         $component.parameters.biReporting.ssrsUseHttps.value = "True"
-        $component.parameters.biReporting.ssrsHttpsPort.value = $SsrsServicePort
+        $component.parameters.biReporting.ssrsHttpsPort.value = $ssrsServicePort
     }
     elseif($component.name -eq "ReportingServices")
     {
         $component.parameters.enableSecurity.value = "True"
         $component.parameters.ssrsSslCertificateThumbprint.value = $TLSCertificateThumbprint
         $component.parameters.ssrsServerFqdn.value = $Listener
-        $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
-        $component.parameters.principalUserAccountName.value = $ServiceAccount
+        if($component.parameters.infrastructure)
+        {
+            $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+            $component.parameters.infrastructure.principalUserAccountName.value = $ServiceAccount
+        }
+        else
+        {
+            $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
+            $component.parameters.principalUserAccountName.value = $ServiceAccount
+        }
+
         $component.parameters.reportingServers.value = $MachinesList
-        $component.parameters.ssrsHttpsPort.value = $SsrsServicePort
+        $component.parameters.ssrsHttpsPort.value = $ssrsServicePort
     }
 
     $updatedComponents += $component

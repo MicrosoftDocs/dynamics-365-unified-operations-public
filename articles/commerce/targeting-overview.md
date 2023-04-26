@@ -2,7 +2,7 @@
 title: Device, market, and geolocation targeting
 description: This article describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 author: sushma-rao
-ms.date: 02/03/2022
+ms.date: 03/03/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Device, market, and geolocation targeting
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 
@@ -66,9 +67,12 @@ By default, the following segments are available and can be included in audience
 
 Commerce lets you expand the list of available segments by connecting to third-party segmentation providers. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
+If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, requests for targeted pages with external provider lookups aren't resolved on the initial page request. The default version of the page is shown on the first request and the targeted version only on subsequent requests. To override this default behavior for external geolocation providers, file a support ticket with [Microsoft Support](https://support.microsoft.com/). 
+
 > [!NOTE]
-> - If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, if a user requests a page that includes targeting, and that page references an audience that checks a third-party segment provider, the default version of the page is shown.
-> - The user must consent to allow cookies. The user's browser then requests all segments from relevant providers, and the results are put in a cookie that is returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
+> To avoid unpredictable site performance, thoroughly test the performance of the external geolocation provider and ensure that there are no significant page load time delays before contacting Microsoft.
+
+To view targeted pages that reference external segments, a user must consent to allow cookies. The user's browser then requests all segments from relevant providers, and the results are put into a cookie that is returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
@@ -108,14 +112,14 @@ To rename an existing audience in Commerce site builder, follow these steps.
 
 A target is the user experience that is shown to members of one or more selected audiences. It can include variations of one or more modules on a page or in a fragment. 
 
-You can define a schedule for your targets to specify how long they should remain active. Note that this action is separate from the action of scheduling a publish group that determines when a collection of content will be published. You can also preview your targets to see what they will look like to members of selected audiences. Additionally, you can prioritize your targets to specify which target should be shown in the event of a conflict.
+You can define a schedule for your targets to specify how long they should remain active. Note that this action is separate from the action of scheduling a publish group that determines when a collection of content will be published. You can also preview your targets to see what they'll look like to members of selected audiences. Additionally, you can prioritize your targets to specify which target should be shown in the event of a conflict.
 
 ### Create a target
 
 To create a target shell for page modules in Commerce site builder, follow these steps.
 
 1. In the left navigation pane, select **Pages**. Then select the hyperlink for the page that has the modules that you want to target.
-1. Select **Edit** to check the page out for editing.
+1. Select **Edit** to check out the page for editing.
 1. On the **Target** menu, select **New target** to create a new target shell. You can create multiple targets on a page as you require.
 1. Enter a name and description for your target, and then select **Next**.
 1. Select **Add** to include the audiences that will see the targeted content, or to exclude audiences. Then select **Next**.

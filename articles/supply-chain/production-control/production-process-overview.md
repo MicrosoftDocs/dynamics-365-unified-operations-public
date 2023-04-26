@@ -2,16 +2,14 @@
 title: Production process overview
 description: This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: johanhoffmann
-ms.date: 09/13/2019
-ms.topic: overview
-ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
-audience: Application User
-ms.reviewer: kamaybac
-ms.custom: ["19832", "intro-internal"]
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.reviewer: kamaybac
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
+ms.topic: overview
+ms.date: 01/09/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Production process overview

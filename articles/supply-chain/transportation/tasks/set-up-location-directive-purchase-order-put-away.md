@@ -5,7 +5,7 @@ title: Set up a location directive for purchase order put-away
 description: This article explains how to set up a simple location directive. 
 author: Weijiesa
 ms.date: 08/08/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how to set up a simple location directive. The example that's shown creates a location directive to be used to determine where to put items that have been received for a purchase order. You can play this task guide with the data mentioned using demo data company USMF. Pre-conditions: You need to create a disposition code. In this procedure we use a disposition code called Relabel. If you're creating a location directive in your own data, you need to have set up warehouse management processes (WMS) for your warehouse and items. This procedure is intended for the warehouse manager.
 
-1. In the navigation pane, go to **Modules > Warehouse management > Setup > Location directives**.
+1. Go to **Warehouse management > Setup > Location directives**.
 2. In the **Work order type** field, select **Purchase orders**.
 
 ## Create a location directive header

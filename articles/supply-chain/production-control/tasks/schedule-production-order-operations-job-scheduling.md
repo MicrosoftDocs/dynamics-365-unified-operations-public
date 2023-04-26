@@ -5,7 +5,7 @@ title: Schedule a production order with operations and job scheduling
 description: This article focuses on scheduling a production order with operations scheduling and job scheduling. 
 author: johanhoffmann
 ms.date: 08/19/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This article focuses on scheduling a production order with operations scheduling
 
 
 ## Create a production order
-1. In the navigation pane, go to **Modules > Production control > Production orders > All production orders**.
+1. Go to **Production control > Production orders > All production orders**.
 2. Select **New production order**.
 3. In the **Item number** field, enter or select a value. Select Item number **D0001**.  
 4. Select **Create**.

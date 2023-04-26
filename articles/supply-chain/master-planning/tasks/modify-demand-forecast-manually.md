@@ -3,7 +3,7 @@ title: "Guide: Modify a demand forecast manually"
 description: This article describes how to modify the forecast for an item
 author: t-benebo
 ms.date: 08/12/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.search.form: EcoResProductDetailsExtended, ForecastSales   
 audience: Application User
 ms.reviewer: kamaybac
@@ -23,7 +23,7 @@ This procedure shows how to modify the forecast for an item. This procedure is i
 
 To modify the forecast for a selected item:
 
-1. Go to **Modules \> Product information management \> Products \> Released products**.
+1. Go to **Product information management \> Products \> Released products**.
 1. In the list, find and select the desired record. Select the item for which you want to modify the forecast.
 1. On the Action Pane, open the **Plan** tab and select **Demand forecast**.
 1. In the list, select a row. If there are no forecast lines, create a new line by selecting **New** on the Action Pane.  

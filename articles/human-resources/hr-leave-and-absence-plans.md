@@ -4,7 +4,7 @@
 title: Create a leave and absence plan
 description: This article describe how to create leave plans in Dynamics 365 Human Resources for different types of leave.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -109,7 +109,7 @@ The new entities are:
 
 4. Define the accrual schedule in the **Accrual schedule** tab. The accrual schedule determines:
 
-   - How an employee accrues time off
+   - How an employee accrues time off  
    - What amounts the employee will accrue
    - What amounts will carry forward
 
@@ -144,7 +144,18 @@ If the feature **Configure multiple leave types for a single leave and absence p
    > [!IMPORTANT]
    > After you enable this feature, you can't turn it off.
 
-If the feature **Use full time equivalency** is enabled, Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5. You can only use this feature if you enable multiple leave types.  
+If the feature **Use full time equivalency** is enabled, Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. 
+
+The FTE calculation would take place based on the value at the time of the accrual and if the FTE value is updated between the current accrual and the next accrual, there will be no change in the leave accrual value. The change in the FTE value will be considered for the next leave accrual.
+
+>[!NOTE]
+>This feature is available when the **Configure multiple leave types for a single leave and absence plan** feature is enabled.  
+
+For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5.  
+
+If the FTE is set to .5 before the actual accrual date, then the employee will accrue 5. 
+If the FTE is set to .5 after the accrual date, then the employee will accrue 10 leaves as the FTE value isn't considered at that time and only for the next accrual, .5 will be considered for leave accrual calculation. 
+
 
 5. Select **Save**.
 

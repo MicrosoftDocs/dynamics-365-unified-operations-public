@@ -2,7 +2,7 @@
 title: Tables supported for duplicate record data sharing
 description: This article describes the tables supported for duplicate record data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
-ms.date: 02/15/2022
+ms.date: 01/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -222,10 +222,24 @@ This article describes the tables supported for duplicate record data sharing. D
 
 **Dynamics 365 Project Operations**
 
-| **Table object name** | **Table description (Label)** |
-|-----------------------|-------------------------------|
-| CategoryTable         | Category table                |
-| ProjLineProperty      | Line property                 |
+| **Table object name** | **Table description (Label)** | **Release details/Additional information** |
+|-----------------------|-------------------------------|-------------------------------|
+| CategoryTable         | Category table                ||
+| ProjLineProperty      | Line property                 ||
+|ProjCategory|Project category|Dynamics 365 Finance 10.0.32 <br/>DRS is not enabled for Categories for control types (ProjControlCategory) in Dynamics 365 Finance 10.0.32, records must be manually created for Categories for control types (ProjControlCategory) in the legal entities where data is duplicated for Project categories. |
+|ProjCategoryGroup|Category group|Dynamics 365 Finance 10.0.32 <br/>|
+|ProjPeriodLine|Project period lines|Dynamics 365 Finance 10.0.32 <br/>|
+|ProjPeriodTable|Project periods|Dynamics 365 Finance 10.0.32 <br/>|
+|ProjPeriodTimesheetWeek|Timesheet weekly periods|Dynamics 365 Finance 10.0.32 <br/>This table should be shared in the same policy as Project periods(ProjPeriodTable). |
+|PSACustomerRetentionTermLine|Customer retention term lines|Dynamics 365 Finance 10.0.32 <br/>|
+|PSACustomerRetentionTermTable|Customer retention terms|Dynamics 365 Finance 10.0.32 <br/>|
+|PSAIndirectComponent|Indirect cost component|Dynamics 365 Finance 10.0.32 <br/>This table has a reference to Project Category. It needs to be shared within the same policy as the Project Category table to ensure the data integrity.|
+|PSAIndirectComponentGroup|Indirect cost component groups|Dynamics 365 Finance 10.0.32 <br/>|
+|PSAIndirectCompoundingRules|Compounding rules|Dynamics 365 Finance 10.0.32 <br/>|
+|PSAIndirectCompoundingRulesSelection|Indirect cost component compounding rule|Dynamics 365 Finance 10.0.32 <br/>|
+|PSAIndirectCompoundingSetup|Assigned indirect cost components|Dynamics 365 Finance 10.0.32 <br/>|
+|PSAVendorRetentionTermsLine|Retainage schedule line|Dynamics 365 Finance 10.0.32 <br/>|
+|PSAVendorRetentionTermsTable|Retainage schedule|Dynamics 365 Finance 10.0.32 <br/>|
 
 **Additional tables when the customer and vendor master sharing feature is enabled**
 

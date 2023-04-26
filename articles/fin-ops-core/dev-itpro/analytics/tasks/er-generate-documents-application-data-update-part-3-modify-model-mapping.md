@@ -3,7 +3,7 @@ title: Modify models and mappings to generate documents that have application da
 description: This article describes how to design reporting configurations to generate an electronic document and update application data. (Part 2 - Generate documents).
 author: kfend
 ms.date: 06/19/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -5,7 +5,7 @@ title: Manage order holds
 description: This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. 
 author: Henrikan
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -33,7 +33,7 @@ You can run this procedure in demo data company USMF or on your own data.
 
 
 ## Set up order holds
-1. Go to **Navigation pane > Modules > Sales and marketing > Setup > Sales orders > Order hold codes**.
+1. Go to **Sales and marketing > Setup > Sales orders > Order hold codes**.
 2. Click **New**.
 3. In the **Hold code** field, type a value. For example, type 'Call back'.  
 4. In the **Description** field, type a value.
@@ -42,7 +42,7 @@ You can run this procedure in demo data company USMF or on your own data.
 5. Click **Save**.
 
 ## Place order on hold
-1. Go to **Navigation pane > Modules > Sales and marketing > Sales orders > All sales orders**.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 2. Click **New**.
 3. In the **Customer account** field, enter or select a value.
 4. Click **OK**.

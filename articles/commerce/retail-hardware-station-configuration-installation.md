@@ -4,7 +4,7 @@
 title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 02/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ This article explains how to configure, download, and install the legacy Commerc
 5. In the **Hardware station type** field, select **Shared** to indicate that this hardware station is an Internet Information Services (IIS), installed hardware station that will be used by external point of sale (POS) systems.
 
     > [!NOTE]
-    > The value **Shared** signifies that the installation is a truly shared hardware station installation, and that it works through HTTPS communication. By contrast, the value **Dedicated** signifies that the hardware station is a part of Modern POS, and that it works through inter-process communication.
+    > The value **Shared** signifies that the installation is a truly shared hardware station installation, and that it works through HTTPS communication. By contrast, the value **Dedicated** signifies that the hardware station is a part of the Store Commerce app, and that it works through inter-process communication.
 
 6. Select a hardware station profile.
 
@@ -181,11 +181,11 @@ Current security standards state that the following options should be set in a p
 
 ## Troubleshooting
 
-### Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
+### Store Commerce app can detect the hardware station in its list for selection, but it can't complete the pairing
 
 **Solution:** Verify the following list of potential failure points:
 
-- The computer that is running Modern POS trusts the certificate that is used on the computer that runs Retail hardware station.
+- The computer that is running the Store Commerce app trusts the certificate that is used on the computer that runs Retail hardware station.
 
     - To verify this setup, in a web browser, go to the following URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
     - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock symbol appears in the address bar. When you select this symbol, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
@@ -193,7 +193,7 @@ Current security standards state that the following options should be set in a p
 - On the computer that runs Retail hardware station, the port that will be used by the hardware station is opened in the firewall.
 - Retail hardware station has properly installed merchant account information through the Install merchant information tool that runs at the end of the Retail hardware station installer.
 
-### Modern POS can't detect the hardware station in its list for selection
+### Store Commerce app can't detect the hardware station in its list for selection
 
 **Solution:** Any one of the following factors can cause this issue:
 

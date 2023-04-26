@@ -2,15 +2,14 @@
 title: National Motor Freight Classification (NMFC) codes
 description: This article describes how to work with National Motor Freight Classification (NMFC) codes in Microsoft Dynamics 365 Supply Chain Management
 author: Weijiesa
-ms.date: 04/22/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: weijiesa
-ms.search.validFrom: 2021-04-22
-ms.dyn365.ops.version: 10.0.8
+ms.reviewer: kamaybac
+ms.search.form: WHSNMFC
+ms.topic: how-to
+ms.date: 01/05/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # National Motor Freight Classification (NMFC) codes
@@ -53,7 +52,11 @@ To create an NMFC code, follow these steps.
 
 The following example shows how to set up two different NMFC codes that can be used with different products.
 
-1. Go to **Warehouse management \> Setup \> Inventory \> NMFC codes** or **Transportation management \> Setup \> Transportation standards \> NMFC codes**.
+1. Follow one of these steps:
+
+    - Go to **Warehouse management \> Setup \> Inventory \> NMFC codes**.
+    - Go to **Transportation management \> Setup \> Transportation standards \> NMFC codes**.
+
 1. On the Action Pane, select **New**.
 1. On the new line, set the following values:
 

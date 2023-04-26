@@ -5,25 +5,23 @@ author: MichaelFruergaardPontoppidan
 ms.author: mfp 
 ms.reviewer: kmaybac
 ms.search.form: WHSLocDirTable, WHSLocationDirectiveAcceptanceTest
-ms.service: dynamics-365
 ms.topic: how-to
 ms.date: 09/29/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Test location directives with acceptance tests
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
 
 Acceptance tests let you define a set of *given-when-then* tests to verify that location directives behave as expected. In this type of test, *given* a set of conditions, *when* something happens, *then* some specified result should occur. This terminology is known from quality assurance in engineering and can be traced back to the [scientific method](https://en.wikipedia.org/wiki/Scientific_method).
 
 Acceptance tests provide two main benefits:
 
 - **Faster initial setup:** You can verify the outcomes of your location directives without having to go through the regular warehouse processes and inspect the work creation history log.
-- **Lower maintenance:** You will be able to have more confidence when you modify your location directives later, because you can have the impact of each change automatically validated by running your defined acceptance tests.
+- **Lower maintenance:** You'll be able to have more confidence when you modify your location directives later, because you can have the impact of each change automatically validated by running your defined acceptance tests.
 
 Acceptance tests for location directives have no operational impact on the warehouse.
 
@@ -41,7 +39,7 @@ Follow these steps to set up an acceptance test.
 1. On the **Location directive acceptance tests** page, follow one of these steps:
 
     - To create a new test, select **New** on the Action Pane.
-    - To edit an existing text, select it in the list pane, and then select **Edit** on the Action Pane.
+    - To edit an existing test, select it in the list pane, and then select **Edit** on the Action Pane.
     - To copy an existing test, select the source test in the list pane, and then select **Copy** on the Action Pane. This step can be useful when you must create a new acceptance test that is a variation of an existing test.
 
 1. On the header of the new or selected test, set the following fields:
@@ -67,10 +65,11 @@ Follow these steps to set up an acceptance test.
     > [!IMPORTANT]
     > The settings on the **Given** FastTab don't influence the actual inventory levels in the warehouse. Instead, they simulate conditions that are in effect only temporarily, during test execution.
 
-1. On the **When** FastTab, specify what you want to test. The values that you enter are the inputs to the location directive engine. This approach is much simpler than building manual tests by creating orders. Set the following fields:
+1. On the **When** FastTab, specify what you want to test. The values that you enter are the inputs to the location directive engine. This approach is simpler than building manual tests by creating orders. Set the following fields:
 
     - **Work order type** – Specify the type of order to simulate (for example, *Sales orders* or *Purchase orders*).
-    - **Work type** – Specify the work type to simulate. Typically, you will select *Pick* or *Put*.
+    - **Work type** – Specify the work type to simulate. Typically, you'll select *Pick* or *Put*.
+    - **Order number** – Specify the order number to use during the test. This information can be useful if the location directive query has ranges related to the order table.
     - **Disposition code** – Specify the disposition code that is used to handle return orders.
     - **Directive code** – Specify the directive code that drives the location directives.
     - **Item number** – Specify the item to locate.
@@ -83,6 +82,7 @@ Follow these steps to set up an acceptance test.
     - **Exact location** – Select a precise location. The test will be marked as passed if this location is the result of the location directive.
     - **Location matching regular expression** – Enter a regular expression that will be validated against the resulting location, even if the resulting location is blank (no result). The test will be marked as passed if the regular expression matches the name of the resulting location. For more information about regular expressions, see [.NET regular expressions](https://aka.ms/regex).
     - **Location with profile** – Select a location profile. The test will be marked as passed if the resulting location has this profile.
+    - **Location in zone** – Select a location zone. The test will be marked as passed if the resulting location has this zone.
 
 1. Select **Save** to save your test. The **Results** FastTab stores a record of any test results for each test. For information about how to run tests and interpret the results, see the next section.
 
@@ -100,7 +100,7 @@ After you set up your tests, you can run them, either one by one or all at once.
 1. After the tests have been run, the list pane is updated to indicate the most recent result of each test. To inspect the results of a test, select the test in the list pane, and then select the **Results** FastTab. The grid shows the result of each run of the test. For each result, the following information is provided:
 
     - **Result** – The result of the test: *Passed*, *Failed* or *Skipped*.
-    - **Resulting location** – The location that was found by the test. If no location was found, thid field is blank.
+    - **Resulting location** – The location that was found by the test. If no location was found, this field is blank.
     - **Duration (ms)** – The duration of the test in milliseconds (ms). This field also indicates how quickly the system will be able to process your directives during daily operation. For efficient warehouse operations, you should design your location directives so that they can be processed as quickly as possible. One typical cause of a slow response is the use of location directive queries where the defined ranges or sort orders don't match an index on the table. (The system will warn you if you try to save a query that is configured in this way.)
     - **Locations evaluated** – The number of locations that were evaluated during the test. For efficient warehouse operations, you should try to have as few locations as possible evaluated. One way to minimize the number of evaluated locations is to have many location directives, the first of which are the most specific and the last of which are the most general. You can also segment your warehouse by keeping certain types of items in dedicated zones. This approach can help you avoid scanning the whole warehouse every time.
     - **Created date and time** – The date and time when the test was run.
@@ -128,4 +128,4 @@ To troubleshoot your location directives and acceptance tests, follow these step
     - In the **Name** column, select the name of a test to open that test on the **Location directive acceptance tests** page. There, you can inspect and adjust the test as you require.
     - Select **Run tests after change** to turn on and off the setting that will automatically run all tests each time that you change a location directive. Use this functionality to provide immediate feedback about the impact of changes as you make them.
 
-1. Based on the results that are indicated by the coverage view and test log, adjust your tests and/or location directives until they produce the expected results for each test.
+1. Based on the results indicated by the coverage view and test log, adjust your tests and/or location directives until they produce the expected results for each test.
