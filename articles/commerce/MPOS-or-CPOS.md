@@ -2,7 +2,7 @@
 title: Choose between Store Commerce app and Store Commerce for web
 description: This article explains the key differences between the Store Commerce app and Store Commerce for web, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 04/26/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
