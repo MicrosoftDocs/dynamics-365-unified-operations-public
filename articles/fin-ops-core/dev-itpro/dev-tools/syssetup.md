@@ -47,7 +47,8 @@ class DemoSetup implements SysSetup
    ``` 
    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "<AOSInstalledDirectory>\AosService\PackagesLocalDirectory" -metadatadir <AOSInstalledDirectory>\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver <sqlservername/localhost> -sqldatabase <axdbname> -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "<anydirectory>\dbsync.log"
    ```
-   For example.
+   For example.</br>
+   </br>
    ```
    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
    ```
