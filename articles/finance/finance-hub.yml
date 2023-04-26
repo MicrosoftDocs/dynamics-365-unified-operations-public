@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: Training
       itemType: training
-      url: training/modules/get-started-financial-management-dyn365-finance/
+      url: /training/modules/get-started-financial-management-dyn365-finance/
     # Card
     - title: Troubleshoot
       itemType: concept
@@ -42,7 +42,7 @@ additionalContent:
     items:
     - title: Guidance
       links: 
-      - url: /dynamics365/guidance/implementation-guide/security
+      - url: /dynamics365/guidance/implementation-guide/security/
         text: Security and compliance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
