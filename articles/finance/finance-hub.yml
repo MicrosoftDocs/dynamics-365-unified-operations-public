@@ -9,9 +9,9 @@ metadata:
   title: Dynamics 365 Finance# Required; page title displayed in search results. Include the brand. < 60 chars.
   description: You can use Dynamics 365 Finance to manage invoices and payments, get payment authorizations, verify payment status, correct invoice or payment details, and regularly report on accounts.
   ms.topic: hub-page # Required
-  author: buck1ey #Required; your GitHub user alias, with correct capitalization.
-  ms.author: buckg #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/10/2023 #Required; mm/dd/yyyy format.
+  author: twheeloc #Required; your GitHub user alias, with correct capitalization.
+  ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/10/2023 #Required; mm/dd/yyyy format.
   hide_bc: true
 
 # highlightedContent section (optional)
@@ -30,11 +30,11 @@ highlightedContent:
     # Card
     - title: Training
       itemType: training
-      url: /training/modules/get-started-financial-management-dyn365-finance
+      url: /training/paths/get-started-finance-operations/
     # Card
     - title: Troubleshoot
       itemType: concept
-      url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      url: /dynamics365/finance/finance-troubleshooting
 
 additionalContent:
   sections:
@@ -42,7 +42,7 @@ additionalContent:
     items:
     - title: Guidance
       links: 
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/guidance/implementation-guide/security
         text: Security and compliance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
@@ -60,7 +60,7 @@ additionalContent:
       links:
       - url: /dynamics365/finance
         text: General setup
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/guidance/implementation-guide/overview
         text: Finance setup
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
         text: Reporting setup 
@@ -70,9 +70,9 @@ additionalContent:
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Manage environments
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
         text: Manage users
-      - url: /dynamics365/organization-administration/plan-case-management
+      - url: /dynamics365/dev-itpro/sysadmin/role-based-security
         text: Manage roles
     - title: "Develop: Platform"
       links: 
@@ -84,7 +84,7 @@ additionalContent:
         text: Use Dual-write
     - title: Develop for Finance 
       links:
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/troubleshoot-and-faq-finance?context=/dynamics365/context/finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/financial/dimensions
         text: Patterns in Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/finance
         text: Data entities
