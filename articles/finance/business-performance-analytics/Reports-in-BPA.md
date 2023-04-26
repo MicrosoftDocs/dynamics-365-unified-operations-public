@@ -27,7 +27,7 @@ These reports have been designed to provide a detailed overview of an organizati
 business success. By utilizing a robust data model in Power BI, these reports are not only accurate and insightful but also easily customizable to suit the needs of your organization.
 
 
-| Report                              | Finance and operations Report              | Purpose                                         |
+| Report                              | Finance and operations report              | Purpose                                         |
 | ----------------------------------- | ----------------------- | ----------------------------------------------- |
 | Balance sheet                     | Balance sheet           | Provides a view of the organization's financial position for the year. Filters on the page are Legal entity and Fiscal Period. The balance sheet leverages the account category setup in finance and operations to create the structure of the balance sheet. |
 | Budget vs actual                   | Budget vs actual        | This report compares the planned budget against actual financial amounts, helping organizations identify areas where spending is in line with expectations, and areas requiring further attention.              |
