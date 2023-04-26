@@ -41,25 +41,14 @@ available on the following schedule:
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this 
-article was initially published.
+We might update this article to include features that made it into the build after this article was initially published.
 
-| Feature area | Feature | More information | Enabled by |
-|--------------|---------|------------------|------------|
-
-## Feature enhancements included in this release
-
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing 
-feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-finance).
-
-| Feature area | Feature name | More information |
-|--------------|--------------|------------------|
 
 ## Known issues
 
 | Issue summary | More information |
 | ---- | ---- | 
-|Human Resources time-based Business events can't be configured.| Business events catalog has 40 Human Resources business events. Of the 40 HR business events, 30 are time-based business events and are not yet configurable. This will be updated in a future release.|   
+|Human Resources time-based business events can't be configured.| Business events catalog has 40 Human Resources business events. Of the 40 HR business events, 30 are time-based business events and are not yet configurable. This will be updated in a future release.|   
 
 
 ## Additional resources
