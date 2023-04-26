@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: Training
       itemType: training
-      url: /training/paths/get-started-finance-operations/
+      url: training/modules/get-started-financial-management-dyn365-finance/
     # Card
     - title: Troubleshoot
       itemType: concept
