@@ -94,7 +94,7 @@ For more information, see the following topics:
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
 ## Global general journals
-The **Global general journal** allows entry of a journal into any legal entities defined in your environment without having to switch companies before creating the journal. At the top of the **Global general journal** page, the **New journal** button allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the journal created will open the standard journal lines page that is the same as opening it from the **General journal** page.  
+The **Global general journal** allows entry of a journal into any legal entities defined in your environment without having to switch companies before creating the journal. At the top of the **Global general journal** page, the **New journal** button allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the created journal will open the standard journal lines page that is the same as opening it from the **General journal** page.  
 >[!NOTE] 
 >In Dynamics 365 Finance release 10.0.34, a new feature **Enable the Global general journal page to select multiple companies for posting** allows the selecting of mulitple journals for posting across any legal entities. The posting process will create a single batch job per each legal entity to complete the posting. 
 
