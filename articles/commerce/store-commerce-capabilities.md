@@ -2,7 +2,7 @@
 title: Store Commerce app capabilities
 description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/25/2022
+ms.date: 04/26/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -163,10 +163,10 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](retail-peripherals-overview.md)<br />[Network peripherals](dev-itpro/network-peripherals.md) ||
+| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](retail-peripherals-overview.md)<br/><br/>[Network peripherals](dev-itpro/network-peripherals.md) ||
 | Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | [Hardware station](retail-peripherals-overview.md) ||
 | POS and peripheral simulator | The peripheral simulator supports testing of scenarios that usually require physical POS peripheral devices. It also includes a POS simulator that can be used to test the compatibility of physical peripheral devices without requiring deployment of the POS client. | [Peripheral simulator](dev-itpro/retail-peripheral-simulator.md) | |
-| POS Health check | Point of sale users can test the connectivity and functionality of peripherals such as printers, payment terminals and bar code scanners. Health check also provides the ability to test the network performance for a point of sale terminal  as well as its connectivity to the Commerce Scale Unit and Retail Server. | [Health check](pos-healthcheck.md) | [Video](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
+| POS health check | Point of sale users can test the connectivity and functionality of peripherals such as printers, payment terminals, and bar code scanners. Health check also provides the ability to test the network performance for a POS terminal, as well as its connectivity to the Commerce Scale Unit and Retail Server. | [Health check](pos-healthcheck.md) | [Video: Health check for Dynamics 365 Commerce point of sale](https://www.youtube.com/watch?v=3BaU9ciY-1o&ab_channel=MicrosoftDynamics365Community) |
 
 ## Receipts
 
