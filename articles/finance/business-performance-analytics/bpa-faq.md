@@ -13,115 +13,107 @@ ms.technology:
 ms.custom:
 
 ---
-# Business performance analystics FAQ
+# Business performance analytics FAQ
 
 This article answers frequently asked questions about business performance analytics.
 
->[!NOTE]
->The functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
->For more information about participating in public preview for business performance analytics, contact bpateam@microsoft.com. 
+> [!NOTE]
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpateam@microsoft.com>.
 
-### How to sign up for Business performance analytics gated public preview?  
+### How do I sign up for the gated public preview of business performance analytics?
 
-We are implementing a gated public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback on transaction volumes.
-Our initial focus is on customers with transaction volumes ranging from millions to less than 10 million rows, and we aim to expand to hundreds of thousands of rows by 
-June. We want to avoid onboarding customers with high transaction volumes before we have the necessary capability to support them effectively. 
+We're implementing a gated public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. We aim to expand to hundreds of thousands of rows by June. We want to avoid onboarding customers who have high transaction volumes before we can effectively support them.
 
-### What is the estimated time required to set up business performance analytics?   
+### What's the estimated time that's required to set up business performance analytics?
 
-Business performance analytics set up will take around 30 minutes, but it will take 12 to 24 hours for data to be available in reports. 
+The setup of business performance analytics will take about 30 minutes. However, it will take 12 to 24 hours for data to be available on reports.
 
-### I got an error during the installation of business performance analytics. How do I fix the error? 
+### I received an error during the installation of business performance analytics. How do I fix it?
 
-The following errors are likely to happen if another operation is in progress during the installation of business performance analytics. If these errors persist, you 
-may retry the installation. 
- 1. There is another [RibbonMetadataGeneration] running at this moment 
- 2. Issues with enabling Change tracking: msdyn_BpaTablesVirtualEntities 
- 3. Import Failed - errorCode: 0Description: Unable to complete updates to the Track changes option for table.
- 4. Flight EnableSqlRowVersionChangeTracking not enabled. The functionality requires enabling sql row version change tracking feature. Enable flight EnableSqlRowVersionChangeTracking.
+The following errors are likely to occur if another operation is in progress during the installation of business performance analytics. If these errors persist, retry the installation.
 
-### How do I retry the installation of business performance analytics if it fails?  
+- "There's another \[RibbonMetadataGeneration\] running at this moment."
+- "Issues with enabling Change tracking: msdyn\_BpaTablesVirtualEntities."
+- "Import Failed - errorCode: 0Description: Unable to complete updates to the Track changes option for table."
+- "Flight EnableSqlRowVersionChangeTracking isn't enabled. The functionality requires enabling sql row version change tracking feature. Enable flight EnableSqlRowVersionChangeTracking."
 
- 1. Go to the Power Platform Admin Center and login with Dataverse admin credentials. 
- 2. Go to **Environments**, click **Dynamics 365 Apps**.  
- 3. Find **Business performance analytics** and click **Installation failed**. 
- 4. Click the retry installation link and monitor the app installation. 
+### How do I retry the installation of business performance analytics if it fails?
 
-### When will data be available in reports after first time app installation? 
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using Microsoft Dataverse admin credentials.
+2. Go to **Environments**, and select **Dynamics 365 Apps**.
+3. Find **Business performance analytics**, and select **Installation failed**.
+4. Select the link to retry the installation, and monitor the app installation process.
 
-Data will be available within 12 to 24 hours once app installation is done. 
+### When will data be available in reports after the app is installed for the first time?
 
-### How will I know when data is available in reports? 
+Data will be available within 12 to 24 hours after app installation is completed.
 
-We suggest you check after 24 hours after business performance analytics is complete. 
+### How will I know when data is available on reports?
 
-### How many years of data will be available in reports? 
+We recommend that you check 24 hours after the installation of business performance analytics is completed.
 
-Business performance analytics will have Previous 2 Years + Current Fiscal Year of data. 
+### How many years of data will be available on reports?
 
-### After business performance analytics set up is complete, how often is the data refreshed?  
-Data will be refreshed once in 24 hours daily at 00:00:00 AM GMT hours. 
+Business performance analytics will have data for the current fiscal year plus the previous two years.
 
-### How long does it take for fresh data to be available daily in Business performance analytics reports? 
+### After business performance analytics is set up, how often is the data refreshed?
 
-It depends on the volume of data, you should be able to see fresh data every 24 hours.  
+Data will be refreshed once per day, at 00:00:00 AM (UTC).
 
-### How to uninstall business performance analytics? 
+### How long does it take for fresh data to be available daily on business performance analytics reports?
 
-Business performance analytics can be uninstalled manually from Power Platform Admin Center using process below. It needs to be manually deleted in order below from the Power Platform Admin Center. Approximate time to delete all solutions is about 20 mins. 
+The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
 
-| No | Solution Name                                                                            |
-| -- | ---------------------------------------------------------------------------------------- |
-| 1  | Business performance analytics performance analytics anchor solution                     |
-| 2  | Business performance analytics performance analytics plugins solution                    |
-| 3  | Business performance analytics performance analytics solution                            |
-| 4  | Business performance analytics performance analytics permissions TIP                     |
-| 5  | Business performance analytics performance analytics tables                              |
-| 6  | Business performance analytics performance analytics controls                            |
-| 7  | Business performance analytics performance analytics tables anchor solution              |
-| 8  | Business performance analytics performance analytics pipeline plugins solution           |
-| 9  | Business performance analytics performance analytics tables user roles TIP               |
-| 10 | Business performance analytics performance analytics analytical tables                   |
-| 11 | Business performance analytics performance analytics tables transformation job flows TIP |
-| 12 | Business performance analytics performance analytics data processing configuration TIP   |
-| 13 | Business performance analytics performance analytics tables data lake synchronization    |
-| 14 | Business performance analytics performance analytics tables standard entities            |
-| 15 | Business performance analytics performance analytics virtual entities                    |
-| 16 | Business performance analytics performance analytics managed data lake TIP               |
-| 17 | Business performance analytics performance analytics tables security TIP                 |
+### How do I uninstall business performance analytics?
 
-To delete, follow the steps below on the **Solution** tab in the maker portal:  
- 1. Select the solution you want to uninstall, click **Delete**.
- 2. Click **Delete** again to confirm. 
- 4. Wait for the **Deleting** dialog to disappear. 
- 5. **Successfully deleted solution** message confirms that the deletion is successful. 
+Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order through Power Platform admin center. The approximate time that's required to delete all the solutions is 20 minutes.
 
-### How often will updates for business performance analytics be released?  
+1. Business performance analytics performance analytics anchor solution
+2. Business performance analytics performance analytics plugins solution
+3. Business performance analytics performance analytics solution
+4. Business performance analytics performance analytics permissions TIP
+5. Business performance analytics performance analytics tables
+6. Business performance analytics performance analytics controls
+7. Business performance analytics performance analytics tables anchor solution
+8. Business performance analytics performance analytics pipeline plugins solution
+9. Business performance analytics performance analytics tables user roles TIP
+10. Business performance analytics performance analytics analytical tables
+11. Business performance analytics performance analytics tables transformation job flows TIP
+12. Business performance analytics performance analytics data processing configuration TIP
+13. Business performance analytics performance analytics tables data lake synchronization
+14. Business performance analytics performance analytics tables standard entities
+15. Business performance analytics performance analytics virtual entities
+16. Business performance analytics performance analytics managed data lake TIP
+17. Business performance analytics performance analytics tables security TIP
 
-New features: Monthly once [30th of every month] 
-Bugs: Bi-weekly 
-Hot fixes: On demand  
+To delete each of the preceding solutions, follow these steps.
 
-### Is there any cost to install and use Business performance analytics in public preview? 
-No, and the years of data are restricted to Current year and the last two fiscal years. 
+1. In the maker portal, on the **Solution** tab, select the solution to delete, and then select **Delete**.
+2. Select **Delete** again to confirm the operation.
+3. Wait for the **Deleting** message box to disappear. If the operation is successful, you receive the following message: "Successfully deleted solution."
 
-### How do I know when a new business performance analytics release is available? 
-Any updates that are available for business performance analytics can be seen through Power Platform Admin Center. You need to login to the environment and go to the 
-installed apps.  
+### How often will updates for business performance analytics be released?
 
-### What should I do when a new Business performance analytics release is available? 
-When new Business performance analytics release is available, you can go to Power Platform Admin Center and update the package. 
-1. Login to Power Platform Admin Center. 
-2. Go to **Installed apps** in your environment.
-3. Click **Update available**.   
+- **New features:** Once per month (the thirtieth of every month)
+- **Bugs:** Bi-weekly 
+- **Hotfixes:** On demand
 
-### During public preview, what can I expect when data is restored from Production to Sandbox every time?  
+### Is there any cost to install and use business performance analytics during public preview?
 
-As a customer you might want to restore data from production to sandbox to validate new data as part of business performance analytics. After data is restored, the data 
-pipeline will continue to run on it's defined schedule. 
+No. The data is restricted to the current fiscal year plus the previous two years.
 
+### How do I know when a new release of business performance analytics is available?
 
+You can view any updates that are available for business performance analytics through Power Platform admin center. Sign in to the environment, and go to **Installed apps**.
 
+### What should I do when a new release of business performance analytics is available?
 
+When a new release of business performance analytics is available, you can update the package through Power Platform admin center.
 
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. In your environment, go to **Installed apps**.
+3. Select **Update available**.
 
+### During public preview, what can I expect each time that data is restored from production to sandbox?
+
+As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of business performance analytics. After data is restored, the data pipeline will continue to run on its defined schedule.
