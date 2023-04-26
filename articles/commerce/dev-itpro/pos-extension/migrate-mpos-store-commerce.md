@@ -2,7 +2,7 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 01/31/2023
+ms.date: 04/26/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -40,7 +40,7 @@ The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MP
 
 1. Synchronize all your transaction and custom data from the channel database to Commerce headquarters. This data includes any offline transaction and custom data.
 1. Post all the statements to Commerce headquarters, and ensure that there are no pending transactions to synchronize or post.
-1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in Commerce headquarters, and then run the **Registers** (**1070**) and **Channel configuration** (**1090**) jobs.
+1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in headquarters, and then run the **1070 (Channel configuration)** and **1090 (Registers)** jobs.
 1. Uninstall MPOS. You don't have to uninstall the offline database.
 1. Download the Store Commerce installer from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**.
 1. Install the Store Commerce app by passing the required parameters and related details. For information about setup and installation in offline mode, see [Store Commerce app](../store-commerce.md).
