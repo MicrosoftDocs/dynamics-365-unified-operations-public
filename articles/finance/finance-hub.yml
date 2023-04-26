@@ -46,7 +46,7 @@ additionalContent:
         text: Security and compliance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
-      - url: /dynamics365/fin-ops-core/fin-ops//imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Best practices
     - title: Try/Buy/Deploy
       links: 
