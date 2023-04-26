@@ -13,9 +13,9 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-After the former steps, the main process of tax integration should work. But there are some more features and functions to uptake in order to take all advantage of tax integration. This article introduces how to update these features and functions.
+This article introduces the features and functions that you must implement to integrate a new transaction.
 
-There are the new features and functionalities that are now supported in the tax integration:
+The following features and functionalities are supported in the tax integration:
 
   - Override sales tax
   - Multiple VAT ID
@@ -24,24 +24,23 @@ There are the new features and functionalities that are now supported in the tax
 
 ## Override sales tax
 
-In tax integration, you cannot edit the tax group and item tax group on a line (and charge) because taxes are determined by the tax calculation service. The **Override sales tax group** functionality allows you to change the tax group or item tax group specified on a line (and charge) to calculate sales tax. This calculation overrides the tax groups determined by the tax calculation service.
+In tax integration, you can't edit the tax group and item tax group on a line because taxes are determined by the Tax Calculation service. The **Override sales tax group** functionality allows you to change the tax group or item tax group specified on a line to calculate sales tax. This calculation overrides the tax groups determined by the tax calculation service.
 
-A new checkbox is added beside the tax group and item tax group. When **Override sales tax** is set to **Yes**, the user can select a specific tax group and item tax group for tax calculation.
+When the **Override sales tax** slider is set to **Yes**, you can select a specific tax group and item tax group for tax calculation.
 
   ![OverrideSalesTax.jpg](./media/override-sales-tax.jpg)
 
 Complete the following steps to enable this functionality.
 
-1. Add the **Override sales tax** field to the transaction line table schema.
+1. Add the **Override sales tax** field to the transaction line table schema and to the **Sales tax** field group, if it exists.
 
      ![OverrideSalesTaxTableSchema.jpg](./media/override-sales-tax-table-schema.jpg)
-    - Also add it to the *Sales tax* field group if it exists.
-    - Set its default visibility to false on related transaction form datasource.
-    - Map it the **SalesPurchJournalLine** map. This map is used widely in tax integration. If not mapped, additional code may be needed to realize the expected function.
-
-2. Set its visibility and editability on the transaction form.
-   - Set its default visibility to false on the transaction form datasource.
-   - Set its visibility to true, only if tax integration is enabled for this transaction:
+2. Set the default visibility to **false** on related transaction forms.
+3. Map the **Override sales tax** field to the **SalesPurchJournalLine** map. This map is used widely in tax integration. If not mapped, additional code may be needed to realize the expected function.
+4. Set the visibility and editability on the transaction form:
+   - Set the default visibility to **false** on the transaction form datasource.
+   - Set the default visibility to **true**, only if tax integration is enabled for this transaction:
+        
         ```X++
             if (isTaxIntegrationEnabledForPurchase) // Condition should be modified according to the business process
             {
@@ -50,7 +49,7 @@ Complete the following steps to enable this functionality.
             }
         ```
 
-   - Add `allowEdit` control to the transaction form to control the editability of the tax group and item tax group. Usually, 3 places to add:
+   - Add `allowEdit` control to the transaction form to control the editability of the tax group and item tax group. There are usually three places to add this:
 
         ```X++
                 if (isTaxIntegrationEnabledForPurchase) // Condition should be modified according to the business process
@@ -64,28 +63,27 @@ Complete the following steps to enable this functionality.
      - the `active` method of line
      - the modified() method of the "Override sales tax" field.
 
-3. Set the value of override sales tax in data retrieval activity.
+5. Set the value of the override sales tax in the data retrieval activity.
    
    `line.setOverrideSalesTax(this.vendInvoiceInfoLine.OverrideSalesTax);`
 
-4. To keep the design consistent, the newly created charge will default override sales tax from its origin. Modify `MarkupTrans::getOverrideSalesTaxFromParentRecord(MarkupTransRefTableId _tableId, MarkupTransRefRecId _refRecId)` for new transaction support.
-5. (Optional) Modify related entities to support import/export of override sales tax.
+6. To keep the design consistent, the new charge will default override sales tax from its origin. Modify `MarkupTrans::getOverrideSalesTaxFromParentRecord(MarkupTransRefTableId _tableId, MarkupTransRefRecId _refRecId)` for new transaction support.
+7. Optional - Modify related entities to support import and export of override sales tax.
 
 ## Multiple VAT ID
 
-Multiple VAT ID (VAT ID, also known as tax registration number) is a feature that enables the determination of VAT ID from the tax calculation service. It is controlled by a feature named **Support multiple VAT registration numbers**. Please refer to [Multiple VAT registration numbers](./emea-multiple-vat-registration-numbers.md) for details.
+The Multiple VAT ID feature enables the determination of the VAT ID from the Tax Calculation service. This feature is controlled by the **Support multiple VAT registration numbers** feature. For more information, see [Multiple VAT registration numbers](./emea-multiple-vat-registration-numbers.md).
 
   ![VATIDfeature.jpg](./media/vat-id-feature.jpg)
 
-Two registration numbers need to be determined and saved in this feature, the registration number for the tax authority of the current legal entity, and the registration number for the counterparty. If the transaction does not have a customer or vendor as a counterparty, the counterparty registration number will not work for it.
+Two registration numbers need to be determined and saved in this feature, the registration number for the tax authority of the current legal entity, and the registration number for the counterparty. If the transaction doesn't have a customer or vendor as a counterparty, the counterparty registration number won't work for it.
 
-> [!Note]
-> There will be only one legal entity registration number and one counterparty registration number for all lines in a transaction.
-Most code of this feature is done in `TaxIntegrationTaxIdActivityOnDocument.xpp`.
+> [!NOTE]
+> There is only one legal entity registration number and one counterparty registration number for all lines in a transaction. Most of the code for this feature is done in `TaxIntegrationTaxIdActivityOnDocument.xpp`.
 
 ### DB schema
 
-Two data fields (TaxId and PartyTaxId, which are the record IDs of registration numbers)) are added to related tables to store the registration numbers of a transaction. The tables are:
+Two data fields, **TaxId** and **PartyTaxId** which are the record IDs of registration numbers, are added to related tables to store the registration numbers of a transaction. The tables are:
 
 - TmpTaxWorkTrans
 - TaxUncommitted
@@ -95,23 +93,19 @@ Two data fields (TaxId and PartyTaxId, which are the record IDs of registration 
 - VendPackingSlipJour
 - VendInvoiceJour
 
-The tax-related tables are line-level tables, and the last 4 are header-level tables since one transaction should have the same registration number.
+The tax-related tables are line-level tables, and the last four in the list are header-level tables as one transaction should have the same registration number.
 
 ### Registration number for legal entity
 
-This part is relatively easy compared with the counterparty. Legal entity registration number is enabled and mandatory if **Support multiple VAT registration numbers** is enabled. The determination and flow of legal entity VAT ID are:
-
-  ![legal entity VAT ID](./media/le-vat-id.png)
-
-The legal entity registration number is enabled by the feature, and nothing is needed here for a new transaction. As long as the tax code is determined, the legal entity registration number will be filled by the registration number assigned to the settlement period of that tax code.
+The legal entity registration number is enabled by the feature, **Support multiple VAT registration numbers** and nothing is needed here for a new transaction. If the tax code is determined, the legal entity registration number is filled by the registration number assigned to the settlement period of that tax code.
 
 It is determined at `TaxIntegrationTaxIdActivityOnDocument::populateTaxLineTaxId()` and saved to the database together with the tax result.
 
-There is also a validation logic for the LE registration number, in case a different registration number is determined for various lines in a transaction. Basically, it is done at `TaxIntegrationTaxIdActivityOnDocument::checkTaxIdConsistency()`.
+There is also a validation logic for the legal entity registration number, in case a different registration number is determined for various lines in a transaction. This is done at `TaxIntegrationTaxIdActivityOnDocument::checkTaxIdConsistency()`.
 
 ### Counterparty registration number
 
-The counterparty registration number is determined by the tax calculation service. After receiving the response, it will be validated and saved to the database together with the legal entity registration number. However, if the number determined by the service is not in the user's master data, the default value on the transaction header will be written to the database instead of the returned one. Besides, the counterparty registration number is not applied to all transactions, there is an extra logic to handle this.
+The counterparty registration number is determined by the Tax Calculation service. After receiving the response, the number will be validated and saved to the database together with the legal entity registration number. However, if the number determined by the service isn't in the user's master data, the default value on the transaction header will be written to the database instead of the returned one. The counterparty registration number isn't applied to all transactions, however there's an extra logic to handle this.
 
 #### Default logic
 
