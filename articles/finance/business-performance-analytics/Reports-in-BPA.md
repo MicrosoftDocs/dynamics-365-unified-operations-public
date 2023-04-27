@@ -17,7 +17,7 @@ ms.custom:
 # Reports in business performance analytics
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of business performance analytics, contact <bpateam@microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 This article describes the financial reports that are available in business performance analytics. These reports have been designed to provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. These reports use a robust data model in Microsoft Power BI. Therefore, they're not only accurate and insightful, but can also easily be customized to suit the needs of your organization.
 
