@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.18
 # POS extension overview
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/retailsdk-deprecation-banner.md)]
+[!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 Point of sale (POS) apps can be extended independently by using the POS extension feature of the Commerce software development kit (SDK). You can modify and create the POS user experience, enhance or modify out-of-box functionality, add validations, and add custom features.
 
