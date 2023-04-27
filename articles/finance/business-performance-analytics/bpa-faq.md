@@ -20,9 +20,9 @@ This article answers frequently asked questions about business performance analy
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview of business performance analytics, contact <bpateam@microsoft.com>.
 
-### How do I sign up for the gated public preview of business performance analytics?
+### How do I sign up for the public preview of business performance analytics?
 
-We're implementing a gated public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. We aim to expand to hundreds of thousands of rows by June 2023. We want to avoid onboarding customers who have high transaction volumes before we can effectively support them.
+We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. 
 
 ### What's the estimated time that's required to set up business performance analytics?
 
