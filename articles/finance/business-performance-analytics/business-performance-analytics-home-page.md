@@ -16,7 +16,7 @@ ms.search.form: business-performance-analytics
 # About business performance analytics
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpateam@microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 Business performance analytics is a powerful tool for gaining insights from data in a user-friendly and comprehensive way across multiple business processes. It delivers insights to all users, regardless of their technical ability, simplifying the process of making informed decisions and enabling finance professionals to focus on strategic initiatives.
 
@@ -40,7 +40,9 @@ A Tier-2 environment (multi-box) is required to preview business performance ana
 
 Business performance analytics requires Dynamics 365 Finance version 10.0.33 and later.
 
-### Configure business performance analytics
+## Set up business performance analytics
+
+### Set up business performance analytics environment
 
 Before you can use business performance analytics, you must complete configuration steps. For more information, see [Configure business performance analytics](configure-BPA.md).
 
@@ -48,14 +50,16 @@ Before you can use business performance analytics, you must complete configurati
 
 After business performance analytics is configured, it can be installed. For more information, see [Install business performance analytics](install-bpa.md).
 
-### Set up security in business performance analytics
+### Set up security 
 
 Security in business performance analytics can be set up at the role level and also at the row/dimension level. For more information about how to set up security in business performance analytics, see [Set up security in business performance analytics](set-up-security.md).
 
-## Business performance analytics reports
+## Use business performance analytics 
+
+### Reports in business performance analytics 
 
 Business performance analytics reports can be customized in Power BI. For more information about reports in business performance analytics, see [Reports in business performance analytics](Reports-in-BPA.md).
 
-### Create and edit reports
+### How to create and edit reports
 
 Business performance analytics lets user create and edit reports. For more information, see [How to create and edit reports](how-to-create-and-edit-reports.md).
