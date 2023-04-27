@@ -2,7 +2,7 @@
 title: How to consume external or third party libraries like Knockout.js in POS extensions
 description: This article explains how to consume external or third party libraries like Knockout.js in Point of Sale (POS) extensions.
 author: josaw1
-ms.date: 02/10/2023
+ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
