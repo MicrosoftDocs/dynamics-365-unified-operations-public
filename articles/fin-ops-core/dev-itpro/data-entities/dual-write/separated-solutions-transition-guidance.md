@@ -58,6 +58,8 @@ With an administrator account, open Power Platform Admin Center, then the enviro
 
 Search for dual-write and observe the packages available. Install those that are required. You would need to install the dependencies first.
 
+See the complete list of split packages and dependencies in article [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions).
+
 :::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Dual-write packages in app source." lightbox="media/dual-write-packages-app-source.png":::
 
 ### 3. Apply solutions in Dual-write workspace
@@ -68,7 +70,7 @@ Based on the information provided in the [Dual-write release notes](/dynamics365
 
 :::image type="content" source="media/package-with-update.png" alt-text="Package which has updated table maps." lightbox="media/package-with-update.png":::
 
-If yes, then open Dual-write workspace, click Apply solutions and then choose to install the relevant solutions.
+If yes, then open Dual-write workspace, click Apply solution and then choose to install the relevant solutions.
 
 :::image type="content" source="media/apply-solution.png" alt-text="Apply a solution from the dual-write workspace." lightbox="media/apply-solution.png":::
 
