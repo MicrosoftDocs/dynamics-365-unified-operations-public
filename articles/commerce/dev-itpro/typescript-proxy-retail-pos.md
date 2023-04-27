@@ -2,7 +2,7 @@
 title: TypeScript and C# proxies for Retail point of sale (POS)
 description: This article provides information about the Commerce proxy and explains how to generate it.
 author: josaw1
-ms.date: 03/14/2023
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
