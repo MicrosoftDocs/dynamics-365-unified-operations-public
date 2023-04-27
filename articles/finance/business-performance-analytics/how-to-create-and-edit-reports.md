@@ -14,6 +14,9 @@ ms.technology:
 
 # Create and edit business performance analytics reports
 
+> [!NOTE]
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+
 Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. 
 
 ## Create a new report
