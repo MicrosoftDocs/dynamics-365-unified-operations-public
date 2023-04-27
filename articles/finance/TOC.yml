@@ -4093,10 +4093,10 @@
       items: 
       - name: Business performance analytics
         href: business-performance-analytics/business-performance-analytics-home-page
-      - name: Install business performance analytics
-        href: business-performance-analytics/install-bpa.md
       - name: Configure business performance analytics
         href: business-performance-analytics/configure-BPA.md
+      - name: Install business performance analytics
+        href: business-performance-analytics/install-bpa.md
       - name: Set up security in business performance analytics
         href: business-performance-analytics/set-up-security.md
       - name: Business performance analytics FAQ 
