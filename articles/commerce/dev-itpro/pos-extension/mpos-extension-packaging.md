@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.18
 # Create a Modern POS extension package
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/retailsdk-deprecation-banner.md)]
+[!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 To create the extension installer for a Modern POS extension, follow these steps.
 
