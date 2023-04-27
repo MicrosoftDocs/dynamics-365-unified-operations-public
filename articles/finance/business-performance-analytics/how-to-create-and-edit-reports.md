@@ -37,7 +37,7 @@ Reports of the **Microsoft** type can't be edited. You must duplicate them as de
 To duplicate a report that isn't currently open, follow these steps.
 
 1. In business performance analytics, in the **Data explorer** section, go to **Reports**.
-2. Select the report to duplicate. (You can duplicate only one report at a time.)
+2. 2. Select the report to duplicate. (You can duplicate only one report at a time.)
 3. Select **Duplicate**. The duplicate report becomes available on the **Reports** page. 
 
 To duplicate a report that's currently open, select **Duplicate** on the report.
