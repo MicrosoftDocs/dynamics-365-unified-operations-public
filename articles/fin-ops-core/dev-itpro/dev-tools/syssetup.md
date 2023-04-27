@@ -45,14 +45,14 @@ class DemoSetup implements SysSetup
 2. Run the following command.</br> 
    </br>
    ``` 
-   Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "<AOSInstalledDirectory>\AosService\PackagesLocalDirectory" -metadatadir <AOSInstalledDirectory>\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver <sqlservername/localhost> -sqldatabase <axdbname> -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "<anydirectory>\dbsync.log"
+   <AOSInstalledDirectory>\AosService\PackagesLocalDirectory\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "<AOSInstalledDirectory>\AosService\PackagesLocalDirectory" -metadatadir <AOSInstalledDirectory>\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver <sqlservername/localhost> -sqldatabase <axdbname> -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "<anydirectory>\dbsync.log"
    ```
    For example.</br>
    </br>
    ```
-   Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
+   <AOSInstalledDirectory>\AosService\PackagesLocalDirectory\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
    ```
-3. After the command has run, check the log entry to confirm the X++ class was picked up and executed during Database Synchronization. You'll see an entry similar to the example below.
+3. After the command has executed, check the log file to confirm that the X++ class was picked up and executed during Database Synchronization. You'll see an entry similar to the example below.
 ```
 04/24/2023 09:10:17: SysSetupInstaller: Running Script: DemoSetup with Timeout 300 seconds.
 04/24/2023 09:10:17: SysSetupInstaller: Script: DemoSetup, Completed Successfully. Time elapsed: 0:00:00:00.0415237
