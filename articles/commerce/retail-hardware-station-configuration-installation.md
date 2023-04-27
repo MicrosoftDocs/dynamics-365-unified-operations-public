@@ -4,7 +4,7 @@
 title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
-ms.date: 02/03/2023
+ms.date: 04/26/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -116,7 +116,8 @@ The Retail hardware station installer first extracts the associated files and th
 3. Select a valid Secure Sockets Layer (SSL) certificate to use for HTTPS communication.
 
     > [!NOTE]
-    > The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can't be expired. It must be stored in the personal certificate store location on the local computer.
+    > - The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can't be expired. It must be stored in the personal certificate store location on the local computer. 
+    > - The use of self-signed certificates is not allowed for hardware station installations. Instead, you should use a trusted third-party certificate.
 
 4. The next page requests the user that should be used for the IIS application pool. By default in version 1611 and later, the installer can automatically create and use a service account. If you're on a domain or require more specific controls, clear the check box, and then enter the user name and password that the application pool should run under.
 5. Enter the HTTPS port to use.
