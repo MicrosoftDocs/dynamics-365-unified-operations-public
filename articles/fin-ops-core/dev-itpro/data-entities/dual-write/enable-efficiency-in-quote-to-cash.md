@@ -20,9 +20,9 @@ ms.custom: bap-template
 <!-- KFM: Preview until 10.0.34 GA -->
 <!-- KFM: Change "prospect to cash" to "quote to cash" everywhere in Docs? -->
 
-The new features introduced in Dynamics 365 Supply Chain Management with *Add efficiency in Quote to Cash with Dynamics 365 Sales* will only take effect with dual write supply chain  solution  XX.XX.XX. When updating to the new Dual-write Supply chain solution, the update can be disruptive if not done in the proper sequence.  
+Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 and higher, this capability has been improved to provide a more seamless quotation process flow across the two systems, allowing for fewer touch points, higher efficiency, and improved transparency. To take advantage of these improvements, you must enable several new features in Supply Chain Management and make sure you are using a qualifying version of the Dual-write Supply chain solution.
 
-Below is the recommended and supported sequence of update steps to support that the update and uptake is as least disruptive as possible.
+When updating to the new Dual-write Supply chain solution, the update can be disruptive if not done in the proper sequence. This article describes the recommended and supported sequence of update steps that will minimize the disruption. For a conceptual overview of how the improved quote-to-cash system works and how the integrated system will behave based on which features you choose to enable, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash.md).
 
 ## Prerequisites
 
