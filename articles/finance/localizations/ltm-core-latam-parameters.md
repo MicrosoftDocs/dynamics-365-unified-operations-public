@@ -2,7 +2,7 @@
 title: Latin America parameters 
 description: This article provides information about the parameter configuration for Latin America. 
 author: Fhernandez0088
-ms.date: 03/20/2023
+ms.date: 04/28/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 	
@@ -20,8 +20,9 @@ This article provides a description of the Latin America (LATAM) parameter confi
 
 ## Set up previous LATAM configurations
 
-1. On the **General** tab, enter the character length for the prefix field for **Document class types** and **Document class letters**.
-2. On the **Functionalities** tab, activate the following options as required.
+1. Go to **Organization administration > Setup > LATAM > LATAM parameters**.
+2. On the **General** tab, enter the character length for the prefix field for **Document class types** and **Document class letters**.
+3. On the **Functionalities** tab, activate the following options as required.
 
     | Option                        | Description |
     |-------------------------------|-------------|
