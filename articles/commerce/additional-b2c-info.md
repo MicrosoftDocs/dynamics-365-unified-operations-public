@@ -28,6 +28,14 @@ For additional Azure AD B2C documentation on customer migration, see [Migrate us
 
 For additional information regarding customizing Azure AD B2C interactions and policy flows beyond what is offered by B2C standard policies, see [Custom policies in Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
+### AAD B2C Phone Sign-up and Sign-in 
+
+To enable AADB2C phone sign-up and sign-in for Dynamics 365 e-Commerce follow the instructions in this [article](https://learn.microsoft.com/en-us/azure/active-directory-b2c/phone-authentication-user-flows). Please note, it is recommended to use a generic AAD Identity Module in Dynamics. Also, if there is a need to include the style, the use of generic AAD Identity Module is required.
+
+Both options **Phone signup** and **Phone/Email signup** are supported. 
+
+When selecting return values for **Phone signup** note that it is recommended to choose **Email Address** as a required value, because D365 Commerce utilizes email for receipts and other purposes.
+
 ### Secondary admin
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
