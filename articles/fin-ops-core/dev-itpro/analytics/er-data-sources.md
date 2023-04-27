@@ -335,7 +335,7 @@ You can use the **Application enumeration lookup** data source to configure an E
 
 Configure a data source of the ***Application enumeration lookup*** type for data filtering in an ER format so that it's based on a set of abstract rules. You can then specify real rules beyond the ER components designers by using the user interface that is automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. Eventually, the specified rules will be accessed by the ER format's **Lookup** data source when this ER format is executed.
 
-The mandatory **Operations data type name (EDT, enum)** property of the **Application enumeration lookup** data source points either to an application enumeration or to an application [extended data type (EDT)](../extensibility/extensible-edts.md) to specify what values are returned by this data source.
+The mandatory **Operations data type name (EDT, enum)** property of the **Application enumeration lookup** data source points to an application enumeration or to an application [extended data type (EDT)](../extensibility/extensible-edts.md) to specify what values are returned by this data source.
 
 The **Cross-company** and **Extended** properties are set as described above for the [Model enumeration lookup](#model-enumeration-lookup) data source type.
 
@@ -349,7 +349,7 @@ In addition to **Number sequence** data sources, you can use the ER built-in [NU
 
 ### <a name="table"></a>Table
 
-You can use the **Table** data source to call static methods of an application table, entity, or view in the same manner as you call static methods of an application class that is described above.
+You can use the **Table** data source to call static methods of an application table, entity, or view in the same manner as you call static methods of an application class that's described above.
 
 The mandatory **Table** property must be specified to identify the required table, entity, or view.
 
@@ -364,25 +364,25 @@ Specify the **Cross-company** property that is important when you refer in the *
 -   Set this property to **No** to fetch the only records of the company in scope of which an ER solution is executed.
 -   Set this property to **Yes** to fetch records of all companies of the current application instance.
 
-Set the **Ask for query** option to **Yes** to enable the system query dialog box at runtime allowing user to filter data for the configured data source. To learn more, review the [Cross-company data sources in Electronic reporting (ER)](er-cross-company-data-sources.md) article.
+Set the **Ask for query** option to **Yes** to enable the system query dialog box at runtime allowing users to filter data for the configured data source. To learn more, review the [Cross-company data sources in Electronic reporting (ER)](er-cross-company-data-sources.md) article.
 
-Should you identify the editable model mapping as the preferrable one for execution, set the **Integration point** option to **Yes**.
+If you identify the editable model mapping as the preferrable one for execution, set the **Integration point** option to **Yes**.
 
-Use the **Select fields** function to limit the list of fields the values of which will be fetched at runtime. To learn more, review the [Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime](er-reduce-fetched-fields-number.md) article.
+Use the **Select fields** function to limit the list of fields whose values will be fetched at runtime. To learn more, review the article, [Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime](er-reduce-fetched-fields-number.md).
 
-Use the **Refill table** function whenever you added or updated Application Object Tree (AOT) artifacts. This function is similar to the [Rebuild table references](electronic-reporting-er-configure-parameters.md#optional-setup-for-er) one.
+Use the **Refill table** function whenever you add or update Application Object Tree (AOT) artifacts. This function is similar to [Rebuild table references](electronic-reporting-er-configure-parameters.md#optional-setup-for-er).
 
 ## <a name="general-group"></a>General group
 
 ### <a name="empty-container"></a>Empty container
 
-You can use the **Empty container** data source as the container for other data sources. So, you can use it to organize your data sources. You can make groups of data sources of different types, specific purposes, etc.
+You can use the **Empty container** data source as the container for other data sources. You can use it to organize your data sources or to make groups of data sources of different types, specific purposes, etc.
 
 In addition, you can use an **Empty container** data source as the mockup of the desired record. So, using the [LIST](er-functions-list-list.md#example) function, you can limit the list of fields of the final list of records.
 
 ### <a name="endless-list"></a>Endless list
 
-You can configure an ER format to split a generated XML output in multiple files whenever specific limits are exceeded. So, you can use the **Endless list** data source to uniquely name those outbound files.
+You can configure an ER format to split a generated XML output in multiple files whenever specific limits are exceeded. Use the **Endless list** data source to uniquely name those outbound files.
 
 The following illustration shows the sample ER format that is configured to generate a zipped XML output that must be split in multiple files.
 
@@ -390,15 +390,15 @@ The following illustration shows the sample ER format that is configured to gene
 
 The following illustrations show bindings of the sample ER format:
 
--   The `Item` format element is bound to the `ListofItems` data source that returns 3 records. The **Maximal number of elements per file** property of this format element is configured to split a generated output in multiple XML files each of which must contain the only one `Item` XML node.
+- The `Item` format element is bound to the `ListofItems` data source that returns three records. The **Maximal number of elements per file** property of this format element is configured to split a generated output in multiple XML files each of which must contain the only one `Item` XML node.
 
     ![The bindings of the sample ER format on the Format designer page.](./media/er-data-sources-ds-endless-list-bindings1.png)
 
--   The **File parameters list** property of the **File** format element refers to the `Parms` data source of the ***Endless list*** type to guarantee that whenever the output split is happening, this data source is invoked. As the `Parms` data source contains the nested `NumSequence` <a name="num-sequence-data-source-sample">data source</a> of the ***[Number sequence](#number-sequence)*** type, the referred in `NumSequence` application number sequence is iterated for each split as well. Therefore, the configured in the **File name** property of the **File** component `Parms.NumSequence` ER expression generates a unique name for each output file based on the current value of the referred number sequence.
+- The **File parameters list** property of the **File** format element refers to the `Parms` data source of the ***Endless list*** type to guarantee that whenever the output split is happening, this data source is invoked. As the `Parms` data source contains the nested `NumSequence` <a name="num-sequence-data-source-sample">data source</a> of the ***[Number sequence](#number-sequence)*** type, the referred in `NumSequence` application number sequence is iterated for each split as well. Therefore, the configured in the **File name** property of the **File** component `Parms.NumSequence` ER expression generates a unique name for each output file based on the current value of the referred number sequence.
 
     ![The bindings of the sample ER format on the Format designer page.](./media/er-data-sources-ds-endless-list-bindings2.png)
 
-The following illustration shows the result of execution of the described above sample ER format. It represents a zipped file that contains an XML output that has been split in 3 uniquely named XML files.
+The following illustration shows the result of the execution of the sample ER format previously described. The result represents a zipped file that contains an XML output that has been split in three uniquely named XML files.
 
 ![The result of execution of the sample ER format on the Format designer page.](./media/er-data-sources-ds-endless-list-output.png)
 
@@ -406,13 +406,13 @@ To learn more, review the [Split generated XML files based on file size and cont
 
 ### <a name="user-input-parameter"></a>User input parameter
 
-You can use a data source of the ***User input parameter*** type to let user specify a value of the referred application enumeration or application EDT in the related data entry field in the dialog box at runtime, before execution of an ER format begins.
+You can use a data source of the ***User input parameter*** type to let users specify a value of the referred application enumeration or application EDT in the related data entry field in the dialog box at runtime, before the execution of an ER format begins.
 
-The mandatory **Operations data type name (EDT, enum)** property of the **User input parameter** data source points either to an application enumeration or to an application EDT to specify what values are returned by this data source.
+The mandatory **Operations data type name (EDT, enum)** property of the **User input parameter** data source points to an application enumeration or to an application EDT to specify what values are returned by this data source.
 
 The **Allow multiple selection**, **Read only**, **Default value**, and **Always reset to default value** properties are set as described above for the [Model enumeration user input parameter](#model-enumeration-user-input-parameter) data source type.
 
-Use the **Edit visibility** function as described above for the [Model enumeration user input parameter](#model-enumeration-user-input-parameter) data source type.
+Use the **Edit visibility** function for the [Model enumeration user input parameter](#model-enumeration-user-input-parameter) data source type.
 
 ## <a name="functions-group"></a>Functions group
 
@@ -447,12 +447,12 @@ The optional **Height** property specifies the bar code's height in pixels. A va
 
 The optional **Margin** property specifies the size of the bar code's margin in pixels. The margin is the area on each side of a bar code that must be kept clear (quiet zone). A value of 0 (zero) indicates that the default margin is used. The meaning can vary for different formats.
 
-The **Output content** option specifies whether a bar code image contains the encoded information as text. Set this option to **Yes** to generate a bar code image that contains the encoded information as text. The default value is No.
+The **Output content** option specifies whether a bar code image contains the encoded information as text. Set this option to **Yes** to generate a bar code image that contains the encoded information as text. The default value is **No**.
 
 The mandatory **Encoding** property specifies the type of characters that are encoded in the generated bar code image. By default, the **UTF-8** encoding is used.
 
 > [!IMPORTANT]
-> When you add a new **Barcode** data source, you must place it under another item (container) as a nested element. So, the **Barcode** data source will be represented in the configured ER component as a function with the **Value** parameter of the *[String](er-formula-supported-data-types-primitive.md#string)* type. Provide the bar code text as the argument of this parameter.
+> When you add a new **Barcode** data source, place it under another item (container) as a nested element. The **Barcode** data source will be represented in the configured ER component as a function with the **Value** parameter of the *[String](er-formula-supported-data-types-primitive.md#string)* type. Provide the bar code text as the argument of this parameter.
 
 To learn more, review the [Use Barcode data sources to generate bar code images](er-barcode-data-sources.md) article.
 
@@ -463,13 +463,13 @@ Use a data source of the ***Calculated field*** type to configure an ER expressi
 Use the **Edit formula** function to configure an ER expression of the editable data source of the ***Calculated field*** type.
 
 > [!TIP]
-> Toggle on the **Show details** option to preview configured expressions for data sources of the ***Calculated field*** type on the **DATA SOURCES** pane of the **Model mapping designer** page and the **Mapping** tab of the **Format designer** page.
+> Toggle on the **Show details** option to preview configured expressions for data sources of the ***Calculated field*** type on the **Data souces** pane of the **Model mapping designer** page and the **Mapping** tab of the **Format designer** page.
 
 The following illustration shows the **Calculated field** data source that has been configured to sort the initially provided list of records in alphabetic order.
 
 ![The configured data source of the Calculated field type on the Format designer page.](./media/er-data-sources-ds-calc-field-format1.gif)
 
-When you add a new **Calculated field** data source placing it under another item (container) as a nested element, you can specify multiple parameters that you can refer in the configured ER expression. So, you can further configure other formulas to call such a data source controlling the values of arguments of those parameters. Doing that, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in an ER model mapping or ER format component.
+When you add a new **Calculated field** data source by placing it under another item as a nested element, you can specify multiple parameters that you can refer to in the configured ER expression. You can further configure other formulas to call such a data source and therefore controlling the values of arguments of those parameters. By doing this, you can reuse a single data source in many bindings and reduce the total number of data sources that must be configured in an ER model mapping or ER format component.
 
 ![The configured data source of the Calculated field type on the Format designer page.](./media/er-data-sources-ds-calc-field-format2.gif)
 
@@ -485,7 +485,7 @@ To learn more, review the [Support parameterized calls of ER data sources of the
 
 ### <a name="data-collection"></a>Data collection
 
-You can configure an ER model mapping or an ER format to process certain elements (records of a model mapping data source, format elements, etc.) in a particular order. Additionally, you can configure a data source of the ***Data collection*** type to collect at runtime during elements processing values of data model fields or values of bindings of the processed format elements, do summing of such values, and use the collected values to fill a generated document or perform further calculations.
+You can configure an ER model mapping or an ER format to process certain elements, such as records of a model mapping data source or format elements, in a particular order. Additionally, you can configure a data source of the ***Data collection*** type to collect at runtime during elements processing values of data model fields or values of bindings of the processed format elements and to do summing of such values. The data souce then uses the collected values to fill a generated document or perform further calculations.
 
 The mandatory **Item type** property of the **Data collection** data source specifies the type of collected data. The following data types are currently supported:
 
@@ -501,12 +501,12 @@ The mandatory **Item type** property of the **Data collection** data source spec
 
 By default, a **Data collection** data source collects only unique values. Use the **Result** property of a **Data collection** data source to access the list of collected values. This property returns a ***[Record list](er-formula-supported-data-types-composite.md#record-list)***. The records of the record list contain the **Value** field that you can use to access collected values.
 
-You can force your data source of the ***Data collection*** type to collect all values. For doing this, do the following:
+You can force your data source of the ***Data collection*** type to collect all values. To do this:
 
--   Select one of the following data types for the **Item type** property: ***Int64***, ***Integer***, ***Real***
--   Set the **Collect all values** option of the configured **Data collection** data source to **Yes**.
+1. Select one of the following data types for the **Item type** property: ***Int64***, ***Integer***, ***Real***
+2. Set the **Collect all values** option of the configured **Data collection** data source to **Yes**.
 
-When the **Collect all values** option is set to **Yes**, the **Sum(Flag)** parameterized property becomes available. You can use this property to get the total amount of all currently collected values. In this property, the **Flag** argument is a ***Boolean*** value that is used to indicate whether the total value must be reset.
+When the **Collect all values** option is set to **Yes**, the **Sum(Flag)** parameterized property becomes available. Use this property to get the total amount of all currently collected values. In this property, the **Flag** argument is a ***Boolean*** value that is used to indicate whether the total value must be reset.
 
 -   When the value ***False*** is provided, summing is continued from the previously collected amount.
 -   When the value ***True*** is provided, a new summing is started.
@@ -518,7 +518,7 @@ The following illustration shows the sample ER format with two data sources of t
 
 ![The configured data sources of the Data collection type on the Format designer page.](./media/er-data-sources-ds-data-collection-format.png)
 
-The following illustration shows the result of execution of the described above sample ER format with two data sources of the ***Data collection*** type.
+The following illustration shows the result of execution of sample ER format described above with two data sources of the ***Data collection*** type.
 
 ![The result of execution of the sample ER format with data sources of the Data collection type on the Format designer page.](./media/er-data-sources-ds-data-collection-result.png)
 
@@ -526,31 +526,31 @@ To learn more, review the [Use DATA COLLECTION data sources in Electronic report
 
 ### <a name="financial-dimensions-details"></a>Financial dimensions details
 
-When you configure a data source of the ***Table record*** type that refers to an application table for which the relation to financial dimensions is supported, you can see that this ER data source offers a field of the ***Financial dimensions*** type for every financial dimension relation. This field exposes the **Main account and dimensions** record list that allows to access financial dimensions as the list of records. Every record of this list represents a single dimension.
+When you configure a data source of the ***Table record*** type that refers to an application table for which the relation to financial dimensions is supported, you can see that this ER data source offers a field of the ***Financial dimensions*** type for every financial dimension relation. This field exposes the **Main account and dimensions** record list that allows access to financial dimensions as the list of records. Every record in this list represents a single dimension.
 
 -   The **Definition** record allows you to access a financial dimension metadata.
-    -   The **Name** field exposes the name of a financial dimension.
-    -   The **Report column name** field exposes the report alias of a financial dimension.
-    -   The **Translated name** field exposes the name of a financial dimension in the language that is specified by the [language context](er-design-multilingual-reports.md#language) of the running ER solution.
+    - The **Name** field exposes the name of a financial dimension.
+    - The **Report column name** field exposes the report alias of a financial dimension.
+    - The **Translated name** field exposes the name of a financial dimension in the language that is specified by the [language context](er-design-multilingual-reports.md#language) of the R solution that's running.
 -   The **Value** record allows you to access a financial dimension value.
-    -   The **Code** field returns a financial dimension code.
-    -   The **Description** field returns a financial dimension name.
+    - The **Code** field returns a financial dimension code.
+    - The **Description** field returns a financial dimension name.
 
 The following illustration shows a field of the ***Financial dimensions*** type of the **Table record** data source that can be used to access default financial dimensions for every record in the **CustInvoiceJour** application table.
 
 ![The configured data source of the Table record type on the Model mapping designer page.](./media/er-data-sources-ds-fin-dim-mapping1.png)
 
-Use the **Financial dimensions details** data source in the configured ER component to specify how the scope of financial dimensions will be defined for any report that will use this component whenever a field of the ***Financial dimensions*** type is accessed by data consumer. When the **Financial dimensions details** data source is not configured in the editable ER component, all financial dimensions of the current application instance will be used. 
+Use the **Financial dimensions details** data source in the configured ER component to specify how the scope of financial dimensions will be defined for any report that uses this component when a field of the ***Financial dimensions*** type is accessed by a data consumer. When the **Financial dimensions details** data source isn't configured in the editable ER component, all financial dimensions of the current application instance are used. 
 
-Set the **Ask for dimensions** option of the configured **Financial dimensions details** data source to **Yes** to allow the user to select dimensions in the dialog box at runtime. If set to **No**, all financial dimensions of the current application instance will be used by default.
+Set the **Ask for dimensions** option of the configured **Financial dimensions details** data source to **Yes** so the user can select dimensions in the dialog box at runtime. If the option is set to **No**, all financial dimensions of the current application instance will be used by default.
 
-When the **Ask for dimensions** option is set to **Yes**, the **Financial dimensions selection** option is enabled allowing you to specify the scope of financial dimensions. The following options are available:
+When the **Ask for dimensions** option is set to **Yes**, the **Financial dimensions selection** option is enabled and you can specify the scope of financial dimensions. The following options are available:
 
--   Select the **All** option to use all financial dimensions of the current application instance.
--   Select the **Legal entity** option to use the only financial dimensions of the company in scope of which an ER solution is executed.
--   Select the **Dimension set** option to use the only financial dimensions of the dimension set that is specified by the user in the dialog box at runtime.
+-   Select **All** to use all financial dimensions of the current application instance.
+-   Select **Legal entity** to use the only financial dimensions of the company in scope of which an ER solution is executed.
+-   Select **Dimension set** to use the only financial dimensions of the dimension set that is specified by the user in the dialog box at runtime.
 
-Set the **Ask for main account** option to **Yes** to allow the user to select the main account as part of the list of dimensions in the dialog box at runtime.  If set to **No**, the main account will not be included to the list of dimensions and the **Is main account mandatory** option is enabled. If the **Is main account mandatory** option is set to **Yes**, the main account is included to the list of dimensions regardless of the user's selection.
+Set **Ask for main account** to **Yes** so the user can select the main account as part of the list of dimensions in the dialog box at runtime. If you set it to **No**, the main account won't be included to the list of dimensions and the **Is main account mandatory** option is enabled. If **Is main account mandatory** is set to **Yes**, the main account is included to the list of dimensions regardless of the user's selection.
 
 The following illustration shows the data source of the ***Financial dimensions details*** type that can be used to specify the scope of financial dimensions for the **Financial dimensions*** fields when the configured model mapping is used at runtime.
 
@@ -591,18 +591,18 @@ The following illustration shows the data source of the ***Inventory dimensions 
 
 You can configure the **Group by** data source to group records of the base data source of the ***Record list*** type. For every generated group of records this data source can calculate various aggregate functions.
 
-The following illustration shows the page using to set up a data source of the ***Group by*** type to group records by code value.
+The following illustration shows the set up of a data source of the ***Group by*** type to group records by code value.
 
 ![The configured data source of the Group by type on the Edit Group By parameters page.](./media/er-data-sources-ds-groupby-setting1.png)
 
-The following illustration shows the page using to set up a data source of the ***Group by*** type to calculate the total amount for the initial list of records.
+The following illustration shows the set up of a data source of the ***Group by*** type to calculate the total amount for the initial list of records.
 
 ![The configured data source of the Group by type on the Edit Group By parameters page.](./media/er-data-sources-ds-groupby-setting2.png)
 
 Configure grouping parameters on the **Edit Group By parameters** page:
--   To specify the base data source for grouping, select the desired data source on the right side of the page and use the **Add field to \> What to group** option.
--   To specify a field for grouping, select the desired field of the specified base data source on the right side of the page and use the **Add field to \> Grouped fields** option.
--   To specify a field for calculation of the aggregated value, select the desired field of the specified base data source on the right side of the page and use the **Add field to \> Aggregation fields** option.
+- To specify the base data source for grouping, select the desired data source on the right side of the page and use the **Add field ** \> **What to group** option.
+- To specify a field for grouping, select the desired field of the specified base data source on the right side of the page and use the **Add field to** \> **Grouped fields** option.
+-   To specify a field for calculation of the aggregated value, select the desired field of the specified base data source on the right side of the page and use the **Add field to** \> **Aggregation fields** option.
 -   Set the **Source list is ordered by group key** option to **Yes** to sort the group of records based on values of fields that have been selected for grouping.
 
 The following aggregate functions are currently supported:
@@ -620,10 +620,9 @@ Depending on the nature of the base data source, the grouping and aggregation ca
 -   Select the **In memory** option to perform grouping and aggregation in application memory.
 -   Select the **Query** option to perform grouping and aggregation in application database when [applicable](er-components-inspections.md#i5).
 -   Leave the default **Autodetect** option to let ER identifies the most appropriate execution location:
-    -   When the base data source is [queryable](er-components-inspections.md#i5), the **Query** option will be applied when you save changes of the configured data source.
-    -   Otherwise, the **In memory** option will be applied.
+    -   When the base data source is [queryable](er-components-inspections.md#i5), the **Query** option will be applied when you save changes of the configured data source. Otherwise, the **In memory** option will be applied.
 
-The configured **Group by** data source exposes a single record for every group of records of the base data source. Notice that this **Group by** data source is structured to expose at runtime results of data grouping and aggregation for each group of records:
+The configured **Group by** data source exposes a single record for every group of records of the base data source. Notice that this **Group by** data source is structured to expose the results of data grouping and aggregation for each group of records at runtime:
 
 -   The **aggregated** record exposes value of each configured aggregation.
 -   The **grouped** record exposes value of each grouping field.
@@ -631,7 +630,7 @@ The configured **Group by** data source exposes a single record for every group 
 
 ![The configured data sources on the Format designer page.](./media/er-data-sources-ds-groupby-format1.png)
 
-The following illustration shows the result of execution of the described above sample ER format with two data sources of the ***Group by*** type.
+The following illustration shows the result of execution of the described in sample ER format above with two data sources of the ***Group by*** type.
 
 ![The result of execution of the sample ER format with data sources of the Data collection type on the Format designer page.](./media/er-data-sources-ds-groupby-format2.png)
 
@@ -646,15 +645,15 @@ You can configure the **Join** data source to fetch records of several base data
 
 The following types of joins are currently supported:
 
--   **Outer (left)** join: join all records of the first (left-most) data source and then any matching in accordance to configured conditions records of the second (right-most) data source.
--   **Inner (right)** join: join only records of the first (left-most) data source and only records of the second (right-most) data source matching to each other in accordance to configured conditions.
+-   **Outer (left)**: Join all records of the first (left-most) data source and then any matching in accordance to configured conditions records of the second (right-most) data source.
+-   **Inner (right)**: Join only records of the first (left-most) data source and only records of the second (right-most) data source matching to each other in accordance to configured conditions.
 
 > [!NOTE]
 > You must configure data sources that you want to join as nested fields of the ***Calculated field*** type specifying the join criteria for every configured base data source.
 
 ![The configured data sources on the Format mapping designer page.](./media/er-data-sources-ds-join-format1.png)
 
-The following illustration shows the page using to set up a data source of the ***Join*** type. To add a data source to the joined list, select this data source on the right side of the page and use the **Add** option of the **JOINED LIST** grid.
+The following illustration shows the page to set up a data source of the ***Join*** type. To add a data source to the joined list, select this data source on the right side of the page and then use the **Add** option of the **JOINED LIST** grid.
 
 ![The configured data source of the Join type on the Join designer page.](./media/er-data-sources-ds-join-setting.gif)
 
@@ -681,8 +680,8 @@ When you add a new **Table metadata** data source, use the **Editor** option on 
 
 ![Entry of a new data source of the Table metadata type on the Model mapping designer page.](./media/er-data-sources-metadata-ds-entry.png)
 
--   To add to the editable **Table metadata** data source a data source that returns the ***Record list*** data, select the desired data source on the right side of the page and use the **Add** option.
--   To add to the editable **Table metadata** data source a field of the added data source, select the desired field on the right side of the **Table metadata** page and use the **Add** option.
+-   To add to the editable **Table metadata** data source a data source that returns the ***Record list*** data, select the desired data source on the right side of the page and then select **Add**.
+-   To add to the editable **Table metadata** data source a field of the added data source, select the desired field on the right side of the **Table metadata** page and then select **Add**.
 
 ![Configure a data source of the Table metadata type on the Table metadata page.](./media/er-data-sources-metadata-ds-configure.gif)
 
@@ -744,10 +743,9 @@ The following illustration shows results of data debugging for the configured da
 To learn more about data sources of the ***Table metadata*** type, [download](er-download-configurations-global-repo.md) from the Global repository for review the **German audit file output** ER format configuration. Notice that the downloaded with the selected ER format **Data export model** configuration contains the **German audit file - default groups** model mapping that is configured to use the ***Table metadata*** data source for accessing various application tables. The downloaded **German audit file output** ER format configuration consumes this model mapping to generate country specific audit reports.
 
 ## Frequently asked questions
+Question: I am trying to add a new data source of the ***Table records*** type that refers to a custom table. But I can't find that table in the lookup of the **Table** field on the data source properties dialog.
 
-**Question:** I am trying to add a new data source of the ***Table records*** type that refers to a custom table. But I cannot find that table in the lookup of the **Table** field on the data source properties dialog.
-
-**Answer:** The ER metadata of your application instance is obsolete. Use either the **Refill table** or **Rebuild table references** function to refresh the ER metadata aligning it with your source code base.
+Answer: The ER metadata of your application instance is obsolete. Use either the **Refill table** or **Rebuild table references** function to refresh the ER metadata aligning it with your source code base.
 
 ## Additional resources
 
