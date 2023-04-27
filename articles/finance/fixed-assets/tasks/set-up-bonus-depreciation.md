@@ -4,8 +4,8 @@
 title: Set up bonus depreciation
 description: This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book. 
 author: moaamer
-ms.date: 08/29/2018
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -31,23 +31,23 @@ This procedure shows how to create a special depreciation allowance and associat
 
 
 ## Create a special depreciation allowance
-1. Go to Fixed assets > Setup > Special depreciation allowance.
-2. Click New.
-3. In the Special depreciation allowance field, type a value.
-4. In the Description field, type a value.
-5. In the Percentage field, enter a number.
+1. Go to **Fixed assets > Setup > Special depreciation allowance**.
+2. Click **New**.
+3. In the **Special depreciation allowance** field, type a value.
+4. In the **Description** field, type a value.
+5. In the **Percentage** field, enter a number.
     * If a percentage was not indicated, set an amount.  
 
 ## Associate a special depreciation allowance with a fixed asset group book
-1. Go to Fixed assets > Setup > Fixed asset groups.
+1. Go to **Fixed assets > Setup > Fixed asset groups**.
 2. In the list, select the fixed asset group associated with the special depreciation allowance.
-3. Click Books.
+3. Click **Books**.
 4. In the list, select the book that is associated with the special depreciation allowance.
-5. Click Special depreciation allowance.
-6. Click New.
-7. In the Special depreciation allowance field, enter or select a value.
-    * The default for Percentage or Amount comes from the special depreciation allowance setup.  
-8. In the Priority field, enter a number.
+5. Click **Special depreciation allowance**.
+6. Click **New**.
+7. In the **Special depreciation allowance** field, enter or select a value.
+    * The default for **Percentage** or **Amount** comes from the special depreciation allowance setup.  
+8. In the **Priority** field, enter a number.
 
 
 

@@ -3,7 +3,7 @@ title: Post vouchers from other modules, like sales invoices
 description: You can post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -5,7 +5,7 @@ title: Initialize stock levels in the warehouse
 description: This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal. 
 author: yufeihuang
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

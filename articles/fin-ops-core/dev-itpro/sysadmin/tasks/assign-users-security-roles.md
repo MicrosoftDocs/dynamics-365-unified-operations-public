@@ -5,7 +5,7 @@ title: Assign users to security roles
 description: To access finance and operations apps, users must be assigned to security roles. 
 author: Peakerbl
 ms.date: 02/09/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

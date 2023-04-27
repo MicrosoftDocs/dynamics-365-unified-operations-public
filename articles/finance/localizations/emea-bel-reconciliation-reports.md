@@ -1,7 +1,7 @@
 ---
 title: Reconciliation reports for Belgium
 description: This article describes the standard reports that Microsoft Dynamics 365 Finance provides to help you with the INTERVAT tax declaration and reconciliation analysis.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 06/02/2022
 ms.topic: article
 ms.prod: 
@@ -128,5 +128,7 @@ To print the **Purchase sales tax transactions** report, click **Tax** &gt; **In
 
 ![Purchase sales tax transactions generated report.](media/8_Purchase_sales_tax_transactions.png)
 
+> [!NOTE]
+> We recommend you enable the **(Belgium) Report corrections in purchase sales tax transactions report** feature in the **Feature management** workspace. With this feature enabled, the purchases posted as corrections in settled sales tax periods are reflected in the **Purchase sales tax transactions report** in the same period as the [INTERVAT tax declaration](emea-bel-intervat-tax-declaration.md), specifically in the report for the current open period.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

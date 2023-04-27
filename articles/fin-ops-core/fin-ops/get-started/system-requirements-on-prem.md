@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # System requirements for on-premises deployments

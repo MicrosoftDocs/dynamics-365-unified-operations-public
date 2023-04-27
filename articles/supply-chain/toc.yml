@@ -12,14 +12,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.34 (June 2023)
+          href: get-started/whats-new-scm-10-0-34.md
         - name: Supply Chain Management 10.0.33 (April 2023)
           href: get-started/whats-new-scm-10-0-33.md
         - name: Supply Chain Management 10.0.32 (March 2023)
           href: get-started/whats-new-scm-10-0-32.md
-        - name: Supply Chain Management 10.0.31 (February 2023)
-          href: get-started/whats-new-scm-10-0-31.md
-        - name: Supply Chain Management 10.0.30 (November 2022)
-          href: get-started/whats-new-scm-10-0-30.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -67,7 +65,13 @@
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
         - name: Proactive quality updates
-          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/supply-chain
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/supply-chain
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
         - name: Delivering ISV solutions using One Version
@@ -1725,6 +1729,8 @@
           href: inventory/inventory-visibility-configuration.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
+        - name: Running on-hand consistency checks while Inventory Visibility is enabled
+          href: inventory/inventory-onhand-consistency-check.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
         - name: Inventory Visibility reservations
@@ -2173,6 +2179,62 @@
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
+    - name: Pricing management
+      items:
+      - name: Pricing management overview
+        href: pricing-management/pricing-management-overview.md
+      - name: Turn on the Pricing management module for your system
+        href: pricing-management/pricing-management-enable.md
+      - name: Price attributes
+        items:
+        - name: Price attributes overview
+          href: pricing-management/price-attributes-overview.md
+        - name: Price attributes for products, customers, and orders
+          href: pricing-management/price-attributes-setup.md
+        - name: Price attribute groups
+          href: pricing-management/price-attribute-groups.md
+        - name: Customer and product price attribute groups
+          href: pricing-management/customer-product-attribute-groups.md
+      - name: Price component codes
+        items:
+        - name: Price component codes
+          href: pricing-management/price-component-code.md
+        - name: Price component code posting
+          href: pricing-management/price-component-posting.md
+      - name: Price structures
+        items:
+        - name: Price structure overview
+          href: pricing-management/price-structure-overview.md
+        - name: Set up company to use a single price structure
+          href: pricing-management/price-structure-single.md
+        - name: Set up company to use a multiple price structures
+          href: pricing-management/price-structure-multiple.md
+        - name: Arrange price component codes into a price structure
+          href: pricing-management/price-structure-details.md
+      - name: Base prices and sales trade agreements
+        items:
+        - name: Vendor list price and price adjustments
+          href: pricing-management/vendor-list-price.md
+        - name: Sales order base price determination rules
+          href: pricing-management/base-price-determination-rules.md
+        - name: Base price versions
+          href: pricing-management/base-price-versions.md
+        - name: Sales trade agreement prices
+          href: pricing-management/sales-trade-agreement-prices.md
+      - name: Discounts and margin price adjustments
+        items:
+        - name: Margin price adjustments
+          href: pricing-management/margin-price-adjustments.md
+        - name: Discounts
+          href: pricing-management/discounts.md
+        - name: Pricing rules for discounts and margin price adjustments
+          href: pricing-management/margin-discount-pricing-rules.md
+      - name: Concurrency within and across price component codes
+        items:
+        - name: Resolving concurrency within price component codes
+          href: pricing-management/concurrence-within-codes.md
+        - name: Resolving concurrency across price component codes
+          href: pricing-management/concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing home page
@@ -3281,6 +3343,8 @@
         href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
       - name: USMCA certification of origin
         href: transportation/usmca-certification-of-origin.md
+      - name: Assign shipments to related route segments
+        href: transportation/assign-shipments-to-segments.md
       - name: Commercial invoices
         href: transportation/commercial-invoice.md
       - name: Create a bill of lading
@@ -3351,7 +3415,7 @@
         href: landed-cost/landed-cost-vs-tms.md
       - name: Set up and configure the Landed cost module
         items:
-        - name: Turn on the Landed cost module for your system
+        - name: Turn on the Landed cost module and related features for your system
           href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md

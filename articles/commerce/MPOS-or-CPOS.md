@@ -2,7 +2,7 @@
 title: Choose between Store Commerce app and Store Commerce for web
 description: This article explains the key differences between the Store Commerce app and Store Commerce for web, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 04/26/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -102,6 +102,6 @@ Consider the following information as you plan your POS implementation in your s
 - **Hardware devices/peripherals** – One important aspect of a Retail POS system is its ability to use POS peripherals such as printers, cash drawers, and payment terminals. Although all the available POS options can use peripheral devices, only Store Commerce for Windows supports them directly. For all other applications, one or more hardware stations are required. Although this approach adds flexibility, additional components must be deployed, configured, and serviced.
 - **System requirements** – The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because Store Commerce for web runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](../fin-ops-core/fin-ops/get-started/system-requirements.md).
 - **Deployment and servicing** – The complexity of the deployment and servicing requirements can vary, depending on the application and deployment choices. For example, for a cloud-hosted Store Commerce for web deployment, you don't have to install and update on every device. Therefore, this approach greatly reduces complexity and cost. However, if you deploy Store Commerce on every register and enable offline mode, and you also deploy shared hardware stations, you greatly increase the number of endpoints that must be managed.
-
+- **Web browser considerations** - Popular web browser have the ability to put idle tabs to sleep to free up system resources, which can cause unexpected behavior when using Store Commerce for web. If you're using Store Commerce for web, we recommend that you disable this feature. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

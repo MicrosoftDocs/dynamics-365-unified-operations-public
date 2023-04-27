@@ -13,8 +13,6 @@ ms.custom: bap-template
 # Custom label layouts and printing
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.33 GA -->
 
 This article describes how to create and use *custom labels*, which let users print labels for any type of data that you set up for them. For example, you can print product labels, location labels, customer labels, and more. When one or more custom label layouts are defined, the system automatically shows a **Print** button on the relevant pages.
 

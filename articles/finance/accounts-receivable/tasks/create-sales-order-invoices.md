@@ -4,8 +4,8 @@
 title: Create sales order invoices
 description: This article describes how to invoice a sales order, including merging invoices and batch processing. 
 author: ShivamPandey-msft
-ms.date: 06/25/2019
-ms.topic: business-process 
+ms.date: 03/25/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,9 +31,9 @@ This article describes how to invoice a sales order, including merging invoices 
 
 
 ## Create an invoice from a sales order
-1. Go to **Navigation pane > Modules > Accounts receivable > Orders > Shipped but not invoiced sales orders**.
+1. Go to **Accounts receivable > Orders > Shipped but not invoiced sales orders**.
 2. Select a sales order in the list. 
-3. On the **Action Pane**, click **Invoice > Generate > Invoice**. Note that this sales order has multiple packing slips associated with it. It will only show the word *multiple* instead of the packing slip number.  
+3. On the **Action Pane**, click **Invoice > Generate > Invoice**. This sales order has multiple packing slips associated with it and will show the **Multiple** instead of the packing slip number.  
 4. Expand the **Parameters** section.
     - Posting must be set to **Yes** to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
     - This option is used for batch jobs. The query is run when the batch job is run.
@@ -44,19 +44,19 @@ This article describes how to invoice a sales order, including merging invoices 
 9. Click **Cancel**.
 
 ## Combine orders into a single invoice
-1. Go to **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.
+1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Locate a customer that has multiple invoices open.
 3. Select multiple open sales orders from the same customer.
 4. On the **Action Pane**, click **Invoice > Generate > Invoice**.
 5. Expand the **Parameters** section.
-6. In the **Quantity** field, select **All**. Note that there are two invoices listed in the overview section. Now let's merge them into a single invoice.  
+6. In the **Quantity** field, select **All**. Note that there are two invoices listed in the **Overview** section. Now let's merge them into a single invoice.  
 7. In the **Summary update for** field, select **Invoice account**.
 8. Click **Arrange** to merge the sales orders into a single invoice. The two sales orders are now merged into a single invoice.   
 9. Click **Cancel**.
 10. Click **Yes**.
 
 ## Post invoices in a batch
-1. Go to **Navigation pane > Modules > Accounts receivable > Invoices > Batch invoicing > Invoice**.
+1. Go to **Accounts receivable > Invoices > Batch invoicing > Invoice**.
 2. Click **Select**.
 3. Click **OK**.
 4. Click **Batch**.

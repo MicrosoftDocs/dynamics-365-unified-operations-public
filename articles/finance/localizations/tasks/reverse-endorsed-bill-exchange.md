@@ -3,7 +3,7 @@ title: Reverse an endorsed bill of exchange
 description: This task walks you through reversing an endorsed bill of exchange.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
