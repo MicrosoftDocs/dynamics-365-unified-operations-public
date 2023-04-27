@@ -22,7 +22,7 @@ This article lists the features that are included in the platform updates for ve
 
 - **Preview of release:** March 2023
 - **General availability of release (self-update):** April 2023
-- **General availability of release (auto-update):** May 2023
+- **General availability of release (auto-update):** April 2023
 
 ## Features included in this release
 
