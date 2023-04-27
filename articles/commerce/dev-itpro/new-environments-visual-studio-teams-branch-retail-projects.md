@@ -2,7 +2,7 @@
 title: Set up new environments, Azure DevOps, and branches for projects
 description: This article describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
 author: andreashofmann1
-ms.date: 04/06/2023
+ms.date: 04/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.search.form:
 # Set up new environments, Azure DevOps, and branches for projects
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/retailsdk-deprecation-banner.md)]
+[!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 
 
 Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more information, see the [Lifecycle Services (LCS) user guide](../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
