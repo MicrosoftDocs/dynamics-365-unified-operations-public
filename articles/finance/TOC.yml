@@ -3256,6 +3256,8 @@
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
             href: localizations/ltm-core-tax-id-type.md
+          - name: Latin America parameters
+            href: localizations/ltm-core-latam-parameters.md
           - name: Document class letter for Latin America
             href: localizations/ltm-core-document-class-letter.md
           - name: Customer sets for Latin America
