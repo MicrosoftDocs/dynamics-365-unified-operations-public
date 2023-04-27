@@ -50,7 +50,7 @@ class DemoSetup implements SysSetup
    For example.</br>
    </br>
    ```
-   <AOSInstalledDirectory>\AosService\PackagesLocalDirectory\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
+   K:\AosService\PackagesLocalDirectory\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "K:\AosService\PackagesLocalDirectory" -metadatadir K:\AosService\PackagesLocalDirectory -sqluser <sqluser> -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd <password> -logfilename "K:\temp\dbsync.log"
    ```
 3. After the command has executed, check the log file to confirm that the X++ class was picked up and executed during Database Synchronization. You'll see an entry similar to the example below.
 ```
