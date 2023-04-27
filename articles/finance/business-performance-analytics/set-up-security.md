@@ -114,7 +114,7 @@ If a user is assigned two or more dimension groups, a record must satisfy the fi
 - **Cost center:** All
 - **Department:** All
 
-The user will be able to view records for legal entities USMF and CNMF. For legal entity USMF, the user will see all cost centers and all department combinations. For legal entity CNMF, the user will see only records where the cost center is between 000001 and 000003 and the department is **Marketing 01**.
+The user will be able to view records for legal entities USMF and CNMF. For legal entity USMF, the user will see all cost centers and all department combinations. For legal entity CNMF, the user will see only records where the cost center is between 000001 and 000003 and the department is Marketing 01.
 
 #### Example 4
 
