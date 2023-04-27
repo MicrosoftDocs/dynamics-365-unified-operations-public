@@ -4,7 +4,7 @@
 title: Add or copy leases (Preview)
 description: This article describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
-ms.date: 01/11/2022
+ms.date: 03/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,7 +74,7 @@ After you've finished entering information for the lease, follow these steps to 
 4. After you've finished reviewing the payment schedule, select **Confirm schedule**. After the schedule is confirmed, the lease is no longer available for editing.
 
     > [!NOTE]
-    > The system automatically calculates the lease term from the payment schedule lines on the **Add lease** page.
+    > The lease term will be automatcially calculated from the payment schedule lines on the **Add lease** page.
     >
     > To calculate the lease term in months, the system finds the difference between the start date and the end date for a specific payment schedule line. It then moves to the next payment schedule line and finds the difference again. Finally, the system sums all the amounts to determine the lease term in months.
 
@@ -95,7 +95,7 @@ After you've finished entering information for the lease, follow these steps to 
 
 Asset leasing lets you copy the details of a lease to create a new lease that has the same information. You can then change the lease fields before you create the schedules for the copied lease.
 
-1. On the **Lease summary** page, select the lease to copy, and then, on the Action Pane, select **Copy lease**.
+1. On the **Lease summary** page, select the lease to copy, and on the Action Pane, select **Copy lease**.
 
     > [!NOTE]
     > If the **Manual** parameter is turned off for the number sequence for lease IDs, the next number in the sequence is automatically generated as the lease ID of the copied lease. If the **Manual** parameter is turned on, you receive a message that prompts you to enter the lease ID before you proceed to copy the lease.

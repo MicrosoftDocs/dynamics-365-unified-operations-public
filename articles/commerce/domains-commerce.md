@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/08/2022
+ms.date: 03/21/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -147,7 +147,7 @@ The Commerce-supplied Azure Front Door instance doesn't support apex domains (ro
 
 - **Option 1** - Use your DNS provider to redirect the apex domain to a "www" domain. For example, fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is the CNAME record that points to the Commerce-hosted Azure Front Door instance.
 
-- **Option 2** - If your DNS provider supports ALIAS records, you can point the apex domain to the Azure Front Door endpoint, which ensures that the IP change by the endpoint is reflected. You must host the Azure Front Door instance yourself.
+- **Option 2** - If your DNS provider supports ALIAS records, you can point the apex domain to the Azure Front Door endpoint, which ensures that the IP change by the endpoint is reflected.
   
 - **Option 3** - If your DNS provider doesn't support ALIAS records, then you must change your DNS provider to Azure DNS and host both Azure DNS and the Azure Front Door instance yourself.
 

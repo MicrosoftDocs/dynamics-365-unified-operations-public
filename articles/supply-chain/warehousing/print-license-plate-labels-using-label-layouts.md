@@ -57,7 +57,7 @@ Follow these steps to create a license plate label layout.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
 
-1. On the **Printer text Layout** FastTab, paste the following example of a ZPL license plate label (or enter your own code).
+1. On the **Printer text Layout** FastTab, enter your label code. Here's an example of code that you can copy and paste for testing.
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -109,11 +109,9 @@ In the label layout in the preceding example, only the license plate ID (`$Licen
 > [!CAUTION]
 > On the **Label layout data source** page, be careful about removing a table from the query for an existing record. You might remove field and/or method names that are already used in existing label layouts.
 
-### Enable label template support
+### <a name="label-template"></a>Enable label template support
 
-If you want to create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layouts](document-routing-layout-for-license-plates.md).
-
-Follow these steps to format a label by using header, row, and footer elements.
+Label templates let you design labels that have more advanced layouts, which can include header, row, and footer elements. Follow these steps to format a label that includes label template elements.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. At the top of the list pane, set the **Label layout type** field to *License Plate Label*.
@@ -233,5 +231,9 @@ If you created a new mobile device menu item, you must add it to the mobile devi
 ## Run a scenario to print license plate labels
 
 If you want to experiment with printing license plate labels, you can set up a scenario for doing mixed license plate receiving through the Warehouse Management mobile app. For more information, see [Mixed license plate receiving](mixed-license-plate-receiving.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
+
+## Additional resources
+
+- [Document routing label layouts](document-routing-layout-for-license-plates.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

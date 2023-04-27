@@ -5,7 +5,7 @@ title: Employment verification i9 verification
 description: The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. 
 author: ShielaSogge
 ms.date: 01/10/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
 

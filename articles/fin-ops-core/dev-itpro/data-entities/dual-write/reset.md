@@ -1,5 +1,5 @@
 ---
-title: Reset functionality
+title: Reset dual-write connections
 description: This article describes the reset button functionality of dual-write.
 author: ramasri
 ms.date: 12/20/2022
@@ -13,7 +13,7 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 ---
 
 
-# Reset functionality
+# Reset dual-write connections
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]

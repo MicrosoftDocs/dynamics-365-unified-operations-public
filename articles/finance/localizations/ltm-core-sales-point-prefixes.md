@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Sales point prefixes for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can configure the sales point prefixes that some fiscal authorities require for product legal documents, and that can be used to identify treasury documents and checkbooks.
 

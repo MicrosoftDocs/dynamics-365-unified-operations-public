@@ -106,7 +106,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Save record                                   | Alt+S or Ctrl+S   |
 | Revert (restore)                              | Ctrl+Shift+F5     |
 | Data refresh                                  | Shift+F5          |
-| Move to the visible first field on the page   | Alt+Shift+F       |
+| Move to the visible first field on the page   | Ctrl+Shift+F      |
 | Toggle edit mode                              | F2                |
 | Attach a document                             | Ctrl+Shift+A      |
 | Export to Excel                               | Ctrl+Shift+E      |

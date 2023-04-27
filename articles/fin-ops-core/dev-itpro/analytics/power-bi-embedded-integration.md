@@ -51,9 +51,6 @@ Yes. To customize the Power BI embedded reports, just install Power BI Desktop i
 ### Do customers have to purchase a separate Power BI license to use the new embedded analytics?
 No, customers don't have to purchase a separate Power BI license to use the new embedded analytics. However, a Power BI Pro license is required in order to connect to Entity Store from PowerBI.com by using DirectQuery.
  
-### Can I do data mash-ups by using external data in the embedded reports?
-No, you can't currently do data mash-ups by using external data in the embedded reports.
- 
 ### Can I help secure data to only those companies that I have access to?
 Yes, the single company view prevents users from accessing data from companies that they don’t have access to. For more information about how to help secure custom solutions, see [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md).
  

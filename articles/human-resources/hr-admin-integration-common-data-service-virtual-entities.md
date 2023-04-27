@@ -4,7 +4,7 @@
 title: Configure Dataverse virtual tables
 description: This article shows how to configure, generate, update existing virtual tables, and analyze generated and available tables for Dynamics 365 Human Resources. 
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 02/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -124,9 +124,11 @@ The next step is to configure the virtual table data source in the Power Apps en
 
 3. Select the **Environment URL** in the **Details** section of the page.
 
-4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the application page.
+4. In the **Solution Health Hub**, select **Advanced Settings** from the **Settings** menu.
 
-5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and operations Virtual Data Source Configurations**.
+5. In **Settings**, select the **Advanced Find** icon in the top right of the application page.
+
+6.On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and operations Virtual Data Source Configurations**.
 
    > [!NOTE]
    > The installation of the virtual table app from the previous setup step can take a few minutes. If **Finance and operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.

@@ -4,7 +4,7 @@
 title: Invoice capture solution workspace
 description: This article provides information about the Invoice capture solution workspace.
 author: sunfzam
-ms.date: 09/25/2022
+ms.date: 04/04/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -32,84 +32,106 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
+In Invoice capture, when an invoice is successfully recognized by AI Builder and mapped to invoice fields, it can be automatically updated and validated according to rules before it's converted to a vendor invoice in Microsoft Dynamics 365 Finance. If the invoice isn't complete, or if the confidence score of the invoice recognition isn't high enough, manual intervention is required to review and correct the invoice.
+
 ## Side-by-side viewer for the Invoice capture solution
 
-Entering invoices into the system has typically been a time-consuming process that is prone to errors, because clerks must navigate multiple attachment files and windows to collect the correct piece of information. The side-by-side document viewer will help improve your experience when you work on invoices, by making the process easier, more efficient, and more accurate.
-
-The side-by-side document viewer lets users have the original document and the invoice open side by side in the same window. The invoice page is filled with information that comes from the original invoice document. The viewer builds the connection between the invoice page fields and the original invoice document. The viewer also helps users find any errors that exist on the invoice page.
+The side-by-side viewer provides an intuitive interface for viewing raw documents and invoice forms side by side. It uses Microsoft form recognition technology to automatically extract information from the raw document and fill in the corresponding fields on the invoice page. The viewer also establishes a connection between the page fields and the original document, so that users can navigate through the document in a single tap or click.
 
 ### Open the side-by-side viewer
 
-In Microsoft Dynamics 365 Finance, you can open the side-by-side viewer from the list on the summary page or from the invoice list page. You can also open it by double-tapping (or double-clicking) a record or by selecting the invoice number.
+In Dynamics 365 Finance, you can open the side-by-side viewer from two places:
 
-### Using the side-by-side viewer
+- In the **Captured invoices** list, double-tap (or double-click) a record, or single-tap (or single-click) the invoice number.
+- On the **Received files** page, select an invoice that has been successfully captured, and then select **View capture invoices**.
+
+Here are the key features of the side-by-side viewer:
+
+- Fields on the invoice page are automatically filled with information that's extracted from raw documents by using Microsoft form recognition technology.
+- A connection is established between page fields and raw documents, for effortless navigation and proofreading.
+- Messages are shown to help users correct errors on the invoice page, for improved accuracy and efficiency.
+- The interface can be resized to accommodate different invoice formats.
+- Lookup lists are fetched from Finance at runtime, to ensure that information is up to date and accurate.
+- The interface is flexible and adapts to different invoice types, for a customizable experience.
+
+### Use the side-by-side viewer
+
+The document header consists of four fields: **Status**, **Legal entity**, **Vendor account**, and **Invoice type**. You can update these fields by selecting **Classify invoice**.
+
+On the left side pane of the interface, the document viewer shows the original document. The controls in the upper-right corner let users adjust the page view by changing pages, zooming in or out, fitting the document to the page, or rotating it.
+
+The message pane shows all errors, warnings, and informational messages. It's an expandable/collapsible section in the central part of the interface. To expand it, users select the message symbol. Users can select which types of messages are shown.
+
+The invoice header fields can be customized through configuration groups and depend on the selected invoice type.
+
+The invoice lines section can also be customized through configuration groups. It isn't visible if the invoice type is **Header-only**. A maximum of five invoice lines are shown per page. Users can navigate through the pages by using the left and right arrow buttons in the lower-right corner of the interface.
 
 #### Manually review an invoice
 
-An invoice document that has been imported might require manual review because of errors or warnings. In the side-by-side viewer, the document header will show a status of **Imported**, and the current version will be **Original Version**.
+An invoice document that has been captured might require manual review because of errors or warnings. In the side-by-side viewer, the document header will show a status of **Captured**, and the current version will be **Original Version**.
 
-To start to review the invoice, select **Start review**. All fields become editable. The **Status** field is updated to **In review**, and the **Current version** field is updated to **Modified version**.
+To start to review the invoice, select **Start review**. The **Status** field is updated to **In review**, and the **Current version** field is updated to **Modified version**.
 
-#### View and work with messages
+### Assign a legal entity
 
-Users should start the review process from the message pane. Error messages are indicated by a red X, warning messages are indicated by a triangle, and informational messages are indicated by a circle. Confidence score–related messages can be classified as either warnings or errors, depending on the threshold that is set by the configuration group. For more information, see [Invoice capture solution configuration groups](invoice-capture-config-group.md).
+In the **Captured invoices** list, the legal entity might be missing because it wasn't successfully derived. The legal entity must be assigned before an invoice can be processed. Users can then review the invoices and make the corrections.
 
-Warning and error messages can be ignored from the message pane, the invoice header, or invoice lines. After a message is ignored, it no longer appears as an error or a warning, and the invoice won't fail validation.
+1. Select the invoice, and then select **Assign legal entity**.
+2. Select the legal entity in the drop-down list.
+3. Select **Save**.
 
-- To ignore messages from the message pane, select **Ignore**. To reset a message that has been ignored, select **Ignore** again. Its type is then changed from error or warning to information.
-- To ignore messages from the invoice header or the invoice line, select **Ignore** on the field. The message symbol disappears. However, it will reappear if the message is reset from the message pane.
+### Classify an invoice
 
-For messages that are related to invoice header fields, when you select the message in the message pane, the cursor is moved to the corresponding field in the header section.
+In the side-by-side viewer, if the legal entity and vendor account aren't derived, the **Classify invoice** button is shown. The user must complete the following information:
 
-#### Proofread and edit fields
+- Legal entity
+- Vendor account
+- Invoice type
 
-If a field's value is read from the original invoice through optical character recognition (OCR), a symbol appears on the field. If you select the symbol, the document viewer zooms in and highlights the place that the field value is read from, to help you verify invoice data.
-
-To reset the document viewer to its original magnification, follow one of these steps:
-
-- Select the same symbol that you previously selected.
-- Select the button in the upper-right corner of the document viewer.
-
-Edit the fields as required. Edits are automatically saved when the cursor leaves a field. A symbol to the right of a field indicates that the field has been manually updated. When the page is refreshed, the symbol will be removed.
-
-#### Check an invoice to get up-to-date messages
-
-When you edit a field, the field value is updated, but new validation messages aren't generated. To get up-to-date validation messages, select **Check**. The messages in the message pane, on the invoice header, and on the invoice lines are updated.
-
-#### Complete the review
-
-To complete the review, select **Complete review**. The invoices are validated. If any errors are found, the document status remains **In review**, and a message bar appears. All messages in the message pane and on the invoice header and lines are automatically updated to provide information about the causes of the failed validation.
-
-After all blocking errors are fixed, the review can be completed. The document status is updated to **Reviewed**, and the fields can no longer be edited. You can restart the review by selecting **Start review** again.
-
-#### Generate a pending vendor invoice in Finance
-
-To send the invoice document to the connected Finance environment, select **Generate**. If invoice generation fails, an error message appears in a message bar.
-
-#### Void an invoice
-
-To void an invoice, select **Void**. Voided invoices can't be reviewed and aren't shown in the **Invoices need manual review** list.
+The derivation and validation logic will start after this information is completed.
 
 ### Validation logic
 
 Some key fields in the side-by-side viewer don't exist in the invoice staging data but are required to generate pending invoices in Finance. These fields are derived from a combination of the current invoice staging data and master data from Finance.
 
-The fields that must be derived are **Legal Entity**, **Vendor Account**, and **Item Number**. They must be derived in the following order. If the derivation of a field fails, the process stops.
+The fields that must be derived are **Legal entity**, **Vendor account**, and **Item number**. They must be derived in that order. If derivation of a field fails, the process stops.
 
-1. **Legal entity** – The legal entity is derived first. If an active mapping rule is found for the legal entity, the legal entity is derived based on the company name and company address.
-2. **Vendor account** – Next, the vendor account is derived based on an active mapping rule and a combination of the derived legal entity and the vendor's name and vendor address.
+1. **Legal entity** – If an active mapping rule is found for the legal entity, the legal entity is derived based on the company's name and address.
+2. **Vendor account** – Next, the vendor account is derived based on an active mapping rule and a combination of the derived legal entity and the vendor's name, address, or tax number.
 3. **Item number** – Finally, the item name is derived from staging, based on the following three types of information:
 
-    - A configured mapping rule
-    - The derived legal entity
-    - The derived vendor account
+    - Derived legal entity
+    - Derived vendor account
+    - Item description or external item number
 
-To run a validation, select **Check** in the side-by-side viewer. Currently, the validation performs the following checks:
+After the fields are derived, the following additional validation checks are run:
 
 - **Mandatory check** – This check validates the mandatory fields for the side-by-side viewer. Users can select which fields must be mandatory on the **Configuration setting** page.
-- **Confidence score** – Users can set the warning threshold and error threshold for the confidence score. This check focuses on the confidence score from OCR that is below those thresholds. Error or warning messages will be shown based on the validation result.
-- **Legal entity** – This check validates that a legal entity is in Finance. If the legal entity doesn't exist in the Finance environment, the validation fails.
+- **Confidence score** – Users can set the warning and error thresholds for the confidence score. This check focuses on the confidence score from optical character recognition (OCR) that's below those thresholds. Error or warning messages will be shown based on the validation result.
+- **Existing check** – This check validates the existence of entities, including legal entity, vendor account, item number, procurement category, or purchase order.
+- **Advanced check** – When a stock item is used, the purchase order details must be assigned to the invoice line.
 
-When the side-by-side viewer is used for the first time, and the user selects **Check**, the derivation and validation processes are run. If the invoices are accurate, the validation process is run when the user selects **Complete review**. It's also run when the user selects **Generate vendor invoice**.
+When the user selects **Derive and check**, the derivation and validation processes are run. If there are no errors in the invoices, the validation logic is called only when the user selects **Complete review** or **Transfer**.
 
-The derivation process occurs before the validation process, and all warnings or errors come from the validation process. The warnings and errors will be logged in Finance.
+The derivation process occurs before the validation process, and all warnings or errors come from the validation process. The warnings and errors will be logged in the history log. Users can select **View history** to review the errors.
+
+> [!NOTE]
+> The current derivation and validation logic includes the most common scenarios. More specific validations can be implemented through customer extension.
+
+### Continuous learning
+
+To help increase the touchless rate of invoice processing in Invoice capture, **Continuous learning** can derive entities (legal entity, vendor account, and item numbers) based on the mapping from the last transferred invoice. Manual intervention is required.
+
+### Void and delete an invoice
+
+If the invoice contains errors, users can void it by selecting **Void**. After an invoice is voided, it can't be reviewed and included again. Alternatively, users can delete the invoice by selecting **Delete**. When an invoice is deleted, the linked entry on the **Received files** page is also deleted.
+
+### Transfer an invoice
+
+When users complete their review, if the invoice contains no errors, they select **Transfer** to send the invoice to the connected Finance environment.
+
+- If invoice generation fails, an error message is shown.
+- If the pending invoice is successfully generated, the status of captured invoice is **Complete**.
+
+> [!NOTE]
+> After the invoice is successfully transferred, the original document is automatically imported from invoice capture to Finance.

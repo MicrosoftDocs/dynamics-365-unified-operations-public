@@ -2,7 +2,7 @@
 title: Goods and Services Tax (GST) integration for e-commerce sites for India
 description: This article gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 12/07/2021
+ms.date: 04/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,6 +111,10 @@ For more information about how to create e-commerce sites and work with e-commer
 
 ### Configure GST for e-commerce
 
-For detailed information about how to configure GST for Commerce, see [Deployment guidelines for cash registers for India](apac-ind-loc-deployment-guidelines.md).
+To work with GST in e-commerce, you must enable the India-specific functionality on the Commerce channel side:
+
+- If you are using Commerce version 10.0.33 or earlier, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+- If you are using Commerce version 10.0.34 or later, you must enable the feature, **(India) Enable Tax engine for Commerce for India** in the **Feature management** workspace in Commerce headquarters. This feature ensures that the [Tax engine](../../finance/general-ledger/tax-engine.md) is used to calculate India GST for in-store and e-commerce transactions.
+- If you are using Commerce version 10.0.33 or earlier and are migrating to Commerce version 10.0.34 or later, follow the steps in [Migrate to Commerce version 10.0.34 or later](./apac-ind-loc-deployment-guidelines.md#migrate-to-commerce-version-10034-or-later).
 
 You must also enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce headquarters.

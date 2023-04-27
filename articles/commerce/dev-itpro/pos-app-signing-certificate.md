@@ -16,7 +16,6 @@ ms.custom: 28021
 # Sign the MPOS .appx file with a code signing certificate
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
 
@@ -34,7 +33,7 @@ To sign the MPOS app with a certificate, use one of these options in the **Retai
 ## Use a Secure File task for Universal Windows Platform app signing
 
 > [!NOTE]
-> You can also use Azure Key Vault to store the certificate and use the Azure sign tool to sign the Modern POS .appx file and self-service installers. For sample pipeline scripts and additional information, see [Set up a build pipeline in Azure DevOps to generate Retail self-service packages](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages).
+> You can also use Azure Key Vault to store the certificate and use the Azure sign tool to sign the Modern POS .appx file and self-service installers. For sample pipeline scripts and additional information, see [Set up a build pipeline in Azure DevOps to generate Commerce self-service packages](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-commerce-self-service-packages).
 
 Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 

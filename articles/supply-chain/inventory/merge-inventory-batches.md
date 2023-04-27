@@ -81,8 +81,8 @@ Yes, there are some things that you must set up before you can use the merge bat
 ## When might I want to merge batches of inventory?
 Here are some examples of scenarios where it might be useful to merge batches:
 
--   As Sammy is walking through his warehouse, he notices that several batches of the same item have low quantities. He is expecting to receive several new shipments, and he realizes that he can free some floor space by merging the odd quantities into a new batch.
--   Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch. By doing so you create a new batch.
+-   Walking through the warehouse, Sammy notices that several batches of the same item have low quantities. Sammy is expecting to receive several new shipments, and realizes that some floor space can be freed by merging the odd quantities into a new batch.
+-   Sammy is receiving inventory, and wants to combine the new batch with one that has already been received, to improve the batch attribute value of the existing batch. By doing so you create a new batch.
 
 ## Can I merge batches across sites and legal entities?
 No, you can merge only batches that have the same site and warehouse storage dimensions in one legal entity. However, you can specify a different location and pallet ID for the merged batch.
