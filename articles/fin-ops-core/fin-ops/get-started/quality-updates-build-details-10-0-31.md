@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.29
 [!include [banner](../includes/banner.md)]
 
 | WorkItemID | Title | Release | Build | LCSURL | Area | Sub-Area |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| ---------- | ----- | ------- | ----- | ------ | ---- | -------- |
 | 805619 | Last Known Good (LKG) - 10.0.31 (AppRing6) | App AX10.0.31 | 10.0.1406.177 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=805619 | XPlanning | CPR |
 | 803854 | Ring 5: Solutin for 789593 Norway: User is not able to run VAT Declaration Excel (NO) -report in batch - Deliverable 454529 does not resolve the issue requested needed for 10.... | App AX10.0.31 | 10.0.1406.175 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=803854 | FnR | Tax Audit and Reporting |
 | 804203 | (10.0.31) Cannot finish receiving a purchase order in POS when there are multiple lines with same product ID | App AX10.0.31 | 10.0.1406.175 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=804203 | Retail and Services | Inventory |
@@ -33,314 +33,164 @@ ms.dyn365.ops.version: 10.0.29
 | 802498 | (10.0.31) Ring 5: When an electronic reporting destination is added, the electronic reporting job for einvoices in no longer created. | App AX10.0.31 | 10.0.1406.172 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802498 | GFM | eInvoicing |
 | 802683 | (10.0.31) Backport: MEXICO\_Representacion Impresa Description of Currency PDF Invoice | App AX10.0.31 | 10.0.1406.172 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802683 | GFM | eInvoicing |
 | 802704 | Backport(10.0.31) - 795536 - MEXICO\_CFDI 4.0 does not show Exempt IEPS within the cfdi:Traslados node. | App AX10.0.31 | 10.0.1406.172 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802704 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 801991 | (backport) (10.0.31) Update to Sales order balance that is less than the original Credit card authorization creates a rogue authorization that never gets removed. | App AX10.0.31 | 10.0.1406.171 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801991 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 800980 | (10.0.31) Cannot post depreciation for Fixed Assets with manual depreciation profile | App AX10.0.31 | 10.0.1406.168 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800980 | GFM | Fixed Assets |
-| --- | --- | --- | --- | --- | --- | --- |
 | 801631 | (10.0.31) JP-LOC: After summarized depreciation, future depreciation amounts are incorrect | App AX10.0.31 | 10.0.1406.168 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801631 | GFM | Fixed Assets Localization |
-| --- | --- | --- | --- | --- | --- | --- |
 | 801214 | Ring 5: (BR) Inventory and Production report - conversion to from InMemo... | App AX10.0.31 | 10.0.1406.165 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801214 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 801833 | (10.0.31) Error when disconnecting three-legged intercompany orders using â€œDisconnect intercompany ordersâ€ | App AX10.0.31 | 10.0.1406.165 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801833 | SCM | Procurement |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798414 | (Backport - 10.0.31) (POL) Fixed exchange rate is used, sales order invoice does not display the fixed exchange rate value | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798414 | GFM | Accounts Receivable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 799688 | (10.0.31) Reverse of reversal of customer to vendor transaction got wrong last cust transaction due to multiple records with the same traceNum | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799688 | GFM | General Ledger |
-| --- | --- | --- | --- | --- | --- | --- |
 | 800502 | Ring 4: (POL) JPK-V7M: Issue in \<DowodSprzedazy\> node for intracommunity invoices with â€˜Reverse charg... | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800502 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 800782 | (10.0.31) Consolidation: Deadlock exception should be handled by LedgerDimensionBuilder::getLedgerDimension | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800782 | GFM | General Ledger |
-| --- | --- | --- | --- | --- | --- | --- |
 | 800824 | (10.0.31) Backport - MEXICO\_CFDI 4.0 Prepayment\_The Receptor?s name must inherit the name from the Customer?s registered RFC name field. | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800824 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 801036 | (10.0.31) Adyen - Only set PreAuth flag for MasterCard or Visa authorization transactions (Maestro fails if this is set) | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801036 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 802242 | (10.0.31) (CommerceDemo-NRF BugBash) AW ecommerce: order history error | App AX10.0.31 | 10.0.1406.164 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802242 | Retail and Services | Orders and Quotes |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793223 | (10.0.31) (POL) regression introduced in #664285 - The Polish calculation method for discount "from the unit price" is not applied anymore for the external customer (Normal sales order) | App AX10.0.31 | 10.0.1406.161 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793223 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798455 | (10.0.31) Unable to create Purchase Requisitions for materials marked stopped for Rank 0 | App AX10.0.31 | 10.0.1406.159 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798455 | SCM | Procurement |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798490 | 10.0.31: Subscription billing termination issues for the cutoff in Sales order Text field | App AX10.0.31 | 10.0.1406.159 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798490 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 799761 | (10.0.31) Unproper duties were added to Sales Manager role after upgrading from 10.0.28 to 10.0.30 | App AX10.0.31 | 10.0.1406.158 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799761 | SCM | Unified Pricing and Discounts |
-| --- | --- | --- | --- | --- | --- | --- |
 | 791838 | (10.0.31) Resolve OUN in retail server should not depend on channel?s LIVECHANNELDATABASE | App AX10.0.31 | 10.0.1406.157 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791838 | Retail and Services | Channels |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 795554 | (Backport to 10.0.31) PLP and PDP product name mismatch - Attribute with source 6 overrides source 5 without a translation or text value | App AX10.0.31 | 10.0.1406.157 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795554 | Retail and Services | Merchandising |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798185 | 10.0.31 (Edit async customer feature) Catalog is not browsable by a signed-in user on a B2B site, as system fails to set ?IsB2B? to ?True? for a B2B user. | App AX10.0.31 | 10.0.1406.157 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798185 | Retail and Services | Customers |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798668 | (10.0.31) Partial pick-up scenario is not working as expected through â€œPick up/Packâ€ in Recall order/ Order fulfilment for the remaining quantity is showing wrong | App AX10.0.31 | 10.0.1406.157 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798668 | Retail and Services | Fulfillment |
-| --- | --- | --- | --- | --- | --- | --- |
 | 799099 | (10.0.31) Truncate issue when to open bank reconciliation worksheet form | App AX10.0.31 | 10.0.1406.157 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=799099 | GFM | Cash Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798653 | (Downport 10.0.31) BR - Withhold PIS/COFINS scenario - exclusion of ICMS (ISS, IPI, ICMS-ST, ICMS-DIF if not already) from the PIS/COFINS withholding tax calculation | App AX10.0.31 | 10.0.1406.156 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798653 | GFM | Tax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 798552 | (10.0.31) The billing schedule reference on the sales order generated from a terminated billing schedule for credit note, does not exist. | App AX10.0.31 | 10.0.1406.155 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798552 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794342 | (10.0.31) On PI section card details are saving without checking on "Save for my next payment" option | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794342 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 796325 | (Downport 10.0.31)BR - exclusion of ICMS from the PIS/COFINS CREDITS calculation base | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796325 | GFM | Tax |
 | 796568 | Ring 4: (Multi tax ID) foreign trade parameters to include cash discount on EU sales list should be setup by tax reg... | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796568 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 797108 | (10.0.31) Getting error while choosing (Gift card + Apple pay) & (Loyalty + Apple pay) | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797108 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 797456 | (10.0.31) Revenue recognition is blocked from processing when product description is too long | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797456 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 797702 | (10.0.31) Google Pay related payment method variants are missing for Adyen connector | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797702 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 798228 | (10.0.31) Ring 5: IN-Export order E-invoice Json file is updated with foreign currency instead of INR currency for... | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798228 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798250 | Backport(10.0.31) - MEXICO\_CFDI 40 TipoDeComprobante should be I when discount is 100 percent | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798250 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 798465 | Ring 4: (BRA- FB): R-2020 event: MS1183 - Withheld value {vlrRetencao} cannot be greater than11% of the withheld pension contribution calculation basis {vlrBaseRet}. Location: Field ... | App AX10.0.31 | 10.0.1406.154 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798465 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794590 | (10.0.31)Credit note will not change the amount when we change qty | App AX10.0.31 | 10.0.1406.152 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794590 | GFM | Tax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 796865 | (10.0.31) 500:System.NullReferenceException at EntityTranslationL2CacheDataStoreAccessor.TranslationKeyPattern | App AX10.0.31 | 10.0.1406.152 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796865 | Retail and Services | Orders and Quotes |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795045 | (10.0.31) (CZE) Wrong posting for Tax credit memo with bank exchange rate activated and feature activated | App AX10.0.31 | 10.0.1406.150 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795045 | GFM | Tax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 796262 | (10.0.31)Issue is with Intercompany Journals when tax calculation service is turned on | App AX10.0.31 | 10.0.1406.150 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796262 | GFM | Tax |
 | 796760 | (10.0.31) Backport- MEXICO\_CFDI 40 Settlement XML is missing Sales tax information if Sales tax Exempt Exists | App AX10.0.31 | 10.0.1406.150 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796760 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 796817 | Backport 10.0.31 Evaluate queries on source document line table with only ParentSourceDocumentLine in where clause and add source document header criteria where available | App AX10.0.31 | 10.0.1406.150 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796817 | GFM | Financial Journal and Document Frameworks |
-| --- | --- | --- | --- | --- | --- | --- |
 | 796922 | Backport-(10.0.31)776130-MEXICO\_Complement of Payment 20 Rejected if Exchange Cross Rate is used | App AX10.0.31 | 10.0.1406.150 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796922 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795351 | (10.0.31) Unable to deserialize SalesOrder XML from HQ | App AX10.0.31 | 10.0.1406.149 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795351 | GFM | Retail Localization |
-| --- | --- | --- | --- | --- | --- | --- |
 | 796432 | (Backport to 10.0.31)Decrease the amount of telemetry added while archiving InventTrans | App AX10.0.31 | 10.0.1406.149 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796432 | SCM | Inventory |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 796540 | (App AX10.0.31) Recalculate transactions older than date | App AX10.0.31 | 10.0.1406.149 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796540 | Retail and Services | Payments |
 | 796909 | (10.0.31) Applied price adjustment is not shown in Price simulator | App AX10.0.31 | 10.0.1406.149 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796909 | SCM | Unified Pricing and Discounts |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795090 | (10.0.31)Bug 788518: Enable consistent delivery mode handling in channel becomes mandatory on 10.0.31 caused shipping warehouse on customer order is incorrect | App AX10.0.31 | 10.0.1406.148 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795090 | Retail and Services | Orders and Quotes |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793309 | (10.0.31) Vendor Transaction could be reversed and causing wrong posted project data. | App AX10.0.31 | 10.0.1406.146 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793309 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793321 | (BackPort - 10.0.31) (POL) The exchange rate displayed on the Free text Invoice does not put into consideration the conversion Factor | App AX10.0.31 | 10.0.1406.146 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793321 | GFM | Accounts Receivable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794724 | (10.0.31) (POL/ EEU) Fixed financial dimensions are missing in FCR transaction reversal voucher auto generated after we unsettle a vendor invoice. | App AX10.0.31 | 10.0.1406.145 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794724 | GFM | Cash Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794796 | Ring 4: (POL) JPK\_V7M â€" issues with â€œDataZaplatyâ€ tag for overdue debt ... | App AX10.0.31 | 10.0.1406.145 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794796 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794972 | (Backport 10.0.31) - (HST Tax) Object reference not set to an instance of an object error with Canadian Harmonized tax setup | App AX10.0.31 | 10.0.1406.145 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794972 | GFM | Tax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 795055 | (10.0.31) - User rec?g error message when trying to apply filtered view | App AX10.0.31 | 10.0.1406.145 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795055 | SCM | Sales |
 | 795753 | (10.0.31) Managerial hierarchy not working when workflow has associated hierarchy type | App AX10.0.31 | 10.0.1406.145 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795753 | Human Resources | Personnel Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794105 | Backport(10.0.31) : Error â€œField item number must be filled inâ€ while saving changes in released product after enabling Retail configuration key | App AX10.0.31 | 10.0.1406.144 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794105 | Retail and Services | Merchandising |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795170 | Ring 4: (GBR) Wrong Total payments in the CIS monthly return report with ... | App AX10.0.31 | 10.0.1406.144 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795170 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795176 | (10.0.31) Missing salesLine buffer is causing revenue split header to be not found | App AX10.0.31 | 10.0.1406.144 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795176 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795187 | (Cherry-Pick to 10.0.31) - Rounding of loyalty points is inconsistent across channel and HQ. | App AX10.0.31 | 10.0.1406.144 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795187 | Retail and Services | Loyalty |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 795226 | (Cherry-Pick to 10.0.31) - (Async Customers) - The async customer account guid is not being correctly resolved/ transformed in to the appropriate sync customer account when the RetailAsyncCustomerV2 table is being used | App AX10.0.31 | 10.0.1406.144 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795226 | Retail and Services | Customers |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795428 | Ring 4: (Multi tax Id) Wrong EU sales list due to different setup on c... | App AX10.0.31 | 10.0.1406.144 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795428 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 791762 | Publisher Visibility changes to improve resiliency of status update (10.0.31) | App AX10.0.31 | 10.0.1406.143 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791762 | Retail and Services | Search Framework |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794434 | Ring 4: NO - Improve Tax Reconciliation report performance for Norway - EUR-000... | App AX10.0.31 | 10.0.1406.143 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794434 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794824 | Ring 4: (BRA- FB): SPED FISCAL â€" Discontinuation of codes 04 and 05 from table 4.1.2 - Document Status Table as o... | App AX10.0.31 | 10.0.1406.143 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794824 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795127 | Ring 4: (Belgium) VAT declaration (BE) is not working as SSRS report when positive and negative lines are on sa... | App AX10.0.31 | 10.0.1406.143 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795127 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795344 | (10.0.31) Cannot edit a record in Order lines (MCRSalesLine). The operation cannot be completed, since the record was not selected for update. | App AX10.0.31 | 10.0.1406.143 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795344 | Retail and Services | Orders and Quotes |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793557 | (10.0.31) Method signature change: SubBillScheduleTable.terminateBillingSchedule | App AX10.0.31 | 10.0.1406.142 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793557 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794337 | (10.0.31) Adyen iFrame not rendering on Apple devices if Apple Pay payment method is enabled for merchant account | App AX10.0.31 | 10.0.1406.142 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794337 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 795321 | 500:System.NullReferenceException at RtsClientLibraryLogger.LogApiCallStarted (10.0.31/10.41) | App AX10.0.31 | 10.0.1406.142 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795321 | Retail and Services | Data Sync Framework |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793281 | (10.0.31) DOM maximum order rule cannot see orders reserved by the fulfillment plans of other dom runs when the partition happens | App AX10.0.31 | 10.0.1406.141 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793281 | Retail and Services | Fulfillment |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794087 | Backport(10.0.31) - Change EDT for Pricing Attributes | App AX10.0.31 | 10.0.1406.140 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794087 | SCM | Unified Pricing and Discounts |
-| --- | --- | --- | --- | --- | --- | --- |
 | 792779 | (10.0.31) S500 Customer Cost is posting to WIP account even after Project is eliminated | App AX10.0.31 | 10.0.1406.139 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=792779 | SI | Revenue Recognition |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794401 | (10.0.31) Short Picking when used on same order that has warehouse setup to create Packing work for Packing Station, creates an invalid LP when used for packing | App AX10.0.31 | 10.0.1406.139 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794401 | SCM | Warehouse |
-| --- | --- | --- | --- | --- | --- | --- |
 | 802625 | request for PU 55 backport of fix for bug 700942 | Plat Update55 | 7.0.6651.139 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802625 | CDS | Data Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 802807 | PU55 checking backport of fix for dmfdefinitiongroup stale security policy data | Plat Update55 | 7.0.6651.139 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=802807 | CDS | Data Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 788178 | (App AX10.0.31) Philippines Country code PHL (ISO PH) to be presented in Retail Server enum | App AX10.0.31 | 10.0.1406.138 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788178 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 789994 | 10.0.31 CommerceIdentityProviderSqlServerDataService invokes huge number of SQL requests | App AX10.0.31 | 10.0.1406.138 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789994 | Retail and Services | Employees |
-| --- | --- | --- | --- | --- | --- | --- |
 | 789503 | (10.0.31) New address created on Site/Warehouses forms is having the property "Private" checked by default | App AX10.0.31 | 10.0.1406.137 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789503 | Human Resources | Personnel Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793762 | (10.0.31) (BRA-FB) - EFD Contributions â€" C181 and C185 with CST 49, 98 and 99 must not be generated in th... | App AX10.0.31 | 10.0.1406.137 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793762 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 801194 | PU55 :: Crash in cqlCursor.createEmpty(...) across several forms: in method OnCursorCreateEmpty, due to ICursor value null | Plat Update55 | 7.0.6651.137 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=801194 | CDS | Logic |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 793352 | (10.0.31) - Feature "Make-to-order supply automation" causes error while syncing intercompany order | App AX10.0.31 | 10.0.1406.136 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793352 | SCM | Procurement |
-| --- | --- | --- | --- | --- | --- | --- |
 | 792961 | (Backport 10.0.31) Bug 786470: Cannot edit a record in shipment(WHSShipmentTable) if the shipment has route. | App AX10.0.31 | 10.0.1406.135 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=792961 | SCM | Warehouse |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793012 | (Backport 10.0.31) Bug 790144: When having a Short pick during replenishment work and automatic decrement shipment load check on the work exception load is not decrementing qty. | App AX10.0.31 | 10.0.1406.135 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793012 | SCM | Warehouse |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793336 | (Backport 10.0.31) Improvements to the view builder class for EcoResProductTranslations view (785839) | App AX10.0.31 | 10.0.1406.135 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793336 | SCM | Products |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 792521 | Ring 4: TDS Statement (TaxWithholdStatement) report timeout error after 10 min - convert to a pre-processed report | App AX10.0.31 | 10.0.1406.134 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=792521 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 792965 | (10.0.31) Rebuilding indexes on large data in DimensionAttribute activation causing SQL timeouts after 3 hours | App AX10.0.31 | 10.0.1406.134 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=792965 | GFM | General Ledger |
-| --- | --- | --- | --- | --- | --- | --- |
 | 800620 | Improve telemetry to get tenantId, environment type and passthrough scenario (PU55) | Plat Update55 | 7.0.6651.134 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=800620 | CDS | IDC |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 790348 | (10.0.31) Financial dimension error for missing Terminal when we create a customer order on POS and pay by Cash | App AX10.0.31 | 10.0.1406.133 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790348 | Retail and Services | Payments |
 | 788243 | (10.0.31) Rename payment method name for Google Pay | App AX10.0.31 | 10.0.1406.132 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788243 | Retail and Services | Payments |
 | 790142 | Backport 10.0.31 - Error when confirming a constraint based configured product that is also a bundle: Posting Enter a base sales price on at least one bundle component. | App AX10.0.31 | 10.0.1406.132 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790142 | GFM | Revenue Recognition |
-| --- | --- | --- | --- | --- | --- | --- |
 | 791393 | Ring 3: (Denmark) EU sales list (DK) cannot be created with VAT ID is starting with... | App AX10.0.31 | 10.0.1406.132 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791393 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 791751 | (10.0.31) Allow ?Pending? response for PayPal refunds | App AX10.0.31 | 10.0.1406.132 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791751 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 798835 | Backport to PU55 - Reduce calls to ValidDate SQL functions from Date Effective views | Plat Update55 | 7.0.6651.132 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=798835 | CDS | Data Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 789103 | (10.0.31) 1099 Vendor address is using the token when printing and exporting. | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789103 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 789985 | (10.0.31)(THA)Can?t post intercompany sales order invoice when post invoice automatically is enabled for intercompany purchase order | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789985 | GFM | SCM Localization |
-| --- | --- | --- | --- | --- | --- | --- |
 | 790081 | (10.0.31) DMF does not export Worker Fixed Comp plans that do not have a reference point - datasource fix | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790081 | Human Resources | Compensation Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 790398 | (Backport 10.0.31) Project funding limit spent amounts are not updated correctly when adjusting cost transactions between multiple funding sources | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790398 | SI | Project Invoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 790967 | (Backport to 10.0.31) Cannot generate report: ABC classification by Location | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790967 | SCM | Inventory |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 791689 | (10.0.31) - Make changes to index or query in SubledgerJournalizer.loadReferenceDistributionInformation | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791689 | GFM | Financial Journal and Document Frameworks |
-| --- | --- | --- | --- | --- | --- | --- |
 | 791721 | Store Commerce- Signature capture from OPOS signature pad returned as one thick line | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791721 | Retail and Services | Store Commerce Framework |
-| --- | --- | --- | --- | --- | --- | --- |
 | 791796 | (10.0.31)The implementation of new simulation of invoice journal may cause impartibility issue | App AX10.0.31 | 10.0.1406.131 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791796 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 790745 | (10.0.31) Convert VendProvisionalBalance to preprocessing report | App AX10.0.31 | 10.0.1406.130 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790745 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 794795 | PU55 (Backport)::Fix handling of SessionInUseException in ServicesSessionManager::DestroyStickySession(...) | Plat Update55 | 7.0.6651.130 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=794795 | CDS | Logic |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 796869 | backport don?t throw invalid timeout exception fix to PU 55 | Plat Update55 | 7.0.6651.129 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796869 | CDS | Data Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 795977 | (Backport PU55) update conflict in DMFParameters for the first set of imports done after upgrading to PU 55 | Plat Update55 | 7.0.6651.128 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=795977 | CDS | Data Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787418 | Ring 3: FR - FEC critical scenarios in "7 Missing numbers justification" type of the repo... | App AX10.0.31 | 10.0.1406.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787418 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 788014 | (10.0.31) Slow SQL found in TaxRegulation.removeTaxRegulationForLine() | App AX10.0.31 | 10.0.1406.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788014 | GFM | Tax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 788063 | Ring 3 - 10.0.31: (POL) Sales VAT registers problem after clean up ledger journals - invoice i... | App AX10.0.31 | 10.0.1406.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788063 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 789367 | (Backport - 10.0.31) bug-777252 Refund order cannot be invoiced if the RetailCreditCardAuthTrans record is missing. | App AX10.0.31 | 10.0.1406.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789367 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 789777 | (10.0.31) Creating forecast position for an existing position with worker assignment and compensation group assigned does not update compensation level and step on forecast position. | App AX10.0.31 | 10.0.1406.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789777 | Human Resources | Compensation Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 790165 | (10.0.31) System returns an error message â€œField ?Invoice Account? must be filled in.â€ on creating a new Item requirement | App AX10.0.31 | 10.0.1406.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=790165 | SI | Project Invoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 797381 | (PU55) Field Change Alerts broken for Column,Row level events. | Plat Update55 | 7.0.6651.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=797381 | Flow | Alerts |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 796709 | PU55(Backport) ::Out Of Memory Crash in System.IO.MemoryStream.set\_Capacity coming from Microsoft.Dynamics.AX.Framework.Services.QueryService.QueryStream | Plat Update55 | 7.0.6651.127 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=796709 | CDS | Logic |
 | 788547 | Ring 3 10.0.31 (CZ) Unsettling a payment made for a PO vendor invoice containing at least 2 tax lines with cash discount results to incomplete reverse on the tax cash discount | App AX10.0.31 | 10.0.1406.125 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788547 | GFM | Cash Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 789013 | (10.0.31) Method signature change: SubBillSupportRenewalProcessLine.updateExistingLine | App AX10.0.31 | 10.0.1406.125 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=789013 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787246 | (BackPort 10.0.31) - Changing the allocation factor is not allowed for a vendor invoice based on purchase order when budget control or encumbrance accounting is turned on" | App AX10.0.31 | 10.0.1406.123 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787246 | GFM | Financial Journal and Document Frameworks |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787540 | Ring 3: (PORTING) (NOR) - LocGap - Annual reporting of payments to self-employed vendors without fixed place... | App AX10.0.31 | 10.0.1406.123 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787540 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787562 | (Backport 10.0.31) 778546 - (HST) Harmonized Sales Tax in D365 is not evaluating the HST rules by priority. It is grabbing the first rule that matches | App AX10.0.31 | 10.0.1406.123 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787562 | GFM | Tax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 788078 | (10.0.31) (France) FEC Audit file FR does not report correctly EcritureLet when extraction is done mon... | App AX10.0.31 | 10.0.1406.123 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788078 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787173 | 10.0.31 ObjectReference DimensionDefaultAccountValidation fix | App AX10.0.31 | 10.0.1406.122 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787173 | GFM | General Ledger |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787678 | (10.0.31) IND - Wrong depreciation is calculated for 3rd year via depreciation proposal | App AX10.0.31 | 10.0.1406.122 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787678 | GFM | Fixed Assets Localization |
-| --- | --- | --- | --- | --- | --- | --- |
 | 788255 | Backport 788040 to 10.0.31: Implement IFeatureLifecycle for InventJournalWorkflowApprovalFeature | App AX10.0.31 | 10.0.1406.122 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=788255 | SCM | Inventory |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 791802 | PU55 Backport :: (Updated Fix) Crash in cqlCursor.createEmpty(...) across several forms | Plat Update55 | 7.0.6651.121 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=791802 | CDS | Logic |
 | 776316 | (10.0.31) Sales Tax Specific Report does not show the reversal of conditional sales tax transaction after posted the customer payment | App AX10.0.31 | 10.0.1406.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=776316 | GFM | Accounts Receivable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 778881 | (10.0.31) Signing limits only works with primary positions | App AX10.0.31 | 10.0.1406.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778881 | Human Resources | Personnel Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 786235 | (10.0.31) ASM Separate Line for Invoice Adjustment - SubBill extension request | App AX10.0.31 | 10.0.1406.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=786235 | GFM | Subscription Billing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 786725 | Release 10.0.31 | App AX10.0.31 | 10.0.1406.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=786725 | SCM | Warehouse |
-| --- | --- | --- | --- | --- | --- | --- |
 | 786491 | (Backport 10.0.31) Bug 772312 - Original budget BRE reversing Preliminary budget should use today?s date, not the date of the original Preliminary budget | App AX10.0.31 | 10.0.1406.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=786491 | GFM | Budgeting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 786750 | (10.0.31) Bug 774095: Intercompany expense report is reflecting wrong amounts in cost and sales amounts project transaction when the expense report is created in a currency that is not accounting or reporting currency of the Legal entities | App AX10.0.31 | 10.0.1406.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=786750 | SI | Expense Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793981 | (PU55 Backport) Workflow due date batch job getting in executing status | Plat Update55 | 7.0.6651.119 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793981 | Flow | Workflow |
-| --- | --- | --- | --- | --- | --- | --- |
 | 783644 | (10.0.31) Backport Bug Fix Adjust posting date with ledger type line and with sales tax | App AX10.0.31 | 10.0.1406.118 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783644 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 793357 | (LBD)(PU55) FnO web client is not loading on iOS devices on any browser | Plat Update55 | 7.0.6651.118 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793357 | SCM | OnPrem |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 793548 | (PU55) : Package creation in VS doesn?t end for binary models in 10.0.31 | Plat Update55 | 7.0.6651.118 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=793548 | ADIX | Programming Model |
-| --- | --- | --- | --- | --- | --- | --- |
 | 784051 | (Backport777156 to 10.0.31) Item trace doesnâ€™t work for Co-products from a Planning item | App AX10.0.31 | 10.0.1406.115 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=784051 | SCM | Inventory |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 784900 | (Backprot 10.0.31) Results in Show journal after search/filter are displaying date of 1899-31-12 | App AX10.0.31 | 10.0.1406.115 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=784900 | Retail and Services | Orders and Quotes |
-| --- | --- | --- | --- | --- | --- | --- |
 | 785113 | (10.0.31) MainAccountEntity has duplicate results and breaks BYOD export | App AX10.0.31 | 10.0.1406.115 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=785113 | GFM | General Ledger |
-| --- | --- | --- | --- | --- | --- | --- |
 | 785903 | (10.0.31) - (10.0.29 10.0.1326.157) "Inquire into journals and transaction status" duty license is Operations for read-only | App AX10.0.31 | 10.0.1406.113 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=785903 | GFM | General Ledger |
-| --- | --- | --- | --- | --- | --- | --- |
 | 785963 | backport createMappings retry fix for PU 55 | Plat Update55 | 7.0.6651.113 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=785963 | CDS | Data Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 785537 | (Backport to 10.0.31) bug-761872 Offset ledger account financial dimensions are not populated properly in payment journal created through call center RMA returns | App AX10.0.31 | 10.0.1406.112 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=785537 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 786323 | PU55 Backporting - Lookup limit for line item workflow configuration not allowing all workflows showing in the list dropdown | Plat Update55 | 7.0.6651.112 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=786323 | Flow | Workflow |
-| --- | --- | --- | --- | --- | --- | --- |
 | 780264 | (Backport 10.0.31) Bug 774614: While â€œShipment consolidation policyâ€ exists, the â€œAutomatic release of sales orderâ€ fails for all sales orders, both without and with reserved stock | App AX10.0.31 | 10.0.1406.110 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=780264 | SCM | Warehouse |
-| --- | --- | --- | --- | --- | --- | --- |
 | 783656 | (Ring 3 - 10.0.31): MEXICO\_Global Invoice rejected by PAC\_There is no "InformacionGlobal"... | App AX10.0.31 | 10.0.1406.109 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783656 | GFM | eInvoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 784080 | (10.0.31) - Validation introduced in #664674 doesn?t work properly, it can be bypassed by data management or from UI by saving the purchase order line them clear the financial dimension | App AX10.0.31 | 10.0.1406.109 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=784080 | SCM | Procurement |
-| --- | --- | --- | --- | --- | --- | --- |
 | 787244 | (Backport)(PU55) Bug 785801: Left outer join query returns null for related record data when any non-string/binary column in related record has null value | Plat Update55 | 7.0.6651.109 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=787244 | CDS | Storage |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 778485 | (10.0.31) Advanced cash management feature - using multiple safes Float entry fails with errors | App AX10.0.31 | 10.0.1406.108 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778485 | Retail and Services | Financials |
 | 778991 | (10.0.31)Bug 675559: Zero cost amount for inventory transaction on SO item requirement when posting product receipt with close for receipt for service product | App AX10.0.31 | 10.0.1406.108 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778991 | SI | Project Procurement |
-| --- | --- | --- | --- | --- | --- | --- |
 | 780270 | (Backport 10.0.31) - Project Hour Journal Lines unable to upload more than one line per journal for a project linked in Asset Management to a work order | App AX10.0.31 | 10.0.1406.108 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=780270 | SCM | EnterpriseAssetManagement |
-| --- | --- | --- | --- | --- | --- | --- |
 | 783566 | (10.0.31) Sweden: SIE report - filtering transaction by posting layer, also UB and IB must reflect the posting lay... | App AX10.0.31 | 10.0.1406.108 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783566 | FnR | Tax Audit and Reporting |
-| --- | --- | --- | --- | --- | --- | --- |
 | 783593 | (Backport to 10.0.31) Bug-773579 Weird charge behavior when refunding the charge and using "Delivery remainder" | App AX10.0.31 | 10.0.1406.108 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783593 | Retail and Services | Payments |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 783530 | PU55 (Backport) :: Crash in cqlCursor.GetRecordStage(cqlCursor\* ) coming from ModelInteractionBuilder.BuildModelDescriptor | Plat Update55 | 7.0.6651.108 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783530 | CDS | Logic |
 | 778043 | (10.0.31) Override table write() methods to detect and fix ValidTo overflow. | App AX10.0.31 | 10.0.1406.107 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778043 | Human Resources | Personnel Management |
-| --- | --- | --- | --- | --- | --- | --- |
 | 780245 | (10.0.31)Bug 770158: Order holds do not work for Replacement order and they are automatically deleted | App AX10.0.31 | 10.0.1406.107 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=780245 | Retail and Services | Orders and Quotes |
-| --- | --- | --- | --- | --- | --- | --- |
 | 783964 | (10.0.31)Goods in transit order adjustment on receipt transaction will not be posted during inventory closing, which causes unexpected variance on inventory value report. | App AX10.0.31 | 10.0.1406.107 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783964 | SCM | Cross Team |
-| --- | --- | --- | --- | --- | --- | --- |
 | 778719 | Ring 2: (Backport) Cache RecordContainsUsedFieldsWithNoAccessToEdit method in Immutable ... | App AX10.0.31 | 10.0.1406.105 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778719 | FnR | GER |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 779707 | (10.0.31)(POL) SAD documents â€" not able to settle before posting invoice | App AX10.0.31 | 10.0.1406.105 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=779707 | GFM | SCM Localization |
-| --- | --- | --- | --- | --- | --- | --- |
 | 783797 | Fix compilation error for ?/soap/services/RetailCDXRealTimeService? (10.0.31) | App AX10.0.31 | 10.0.1406.105 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=783797 | Retail and Services | Data Sync Framework |
-| --- | --- | --- | --- | --- | --- | --- |
 | 779614 | (Backport 10.0.31) Opening pending vendor invoice page is slow with a lot of legal entities | App AX10.0.31 | 10.0.1406.104 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=779614 | GFM | Accounts Payable |
-| --- | --- | --- | --- | --- | --- | --- |
 | 779796 | (10.0.31) (ProjOps) Project Contract with Fixed Price and Time and Material line does not create accruals for expenses | App AX10.0.31 | 10.0.1406.104 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=779796 | SI | Project Invoicing |
-| --- | --- | --- | --- | --- | --- | --- |
 | 776878 | PU55 (Backport) ::SQL throttling on batch is not honored | Plat Update55 | 7.0.6651.104 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=776878 | CDS | Hub |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 | 779032 | (Backport 10.0.31) POS address creation doesnâ€™t respect user selection when multiple county/suburbs in same city and ZIP code. | App AX10.0.31 | 10.0.1406.103 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=779032 | Retail and Services | Customers |
-| --- | --- | --- | --- | --- | --- | --- |
 | 779602 | Backport(10.0.31) : POS product image url concatenates Retail Media url even when using absolute url on the product image | App AX10.0.31 | 10.0.1406.103 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=779602 | Retail and Services | Merchandising |
-| --- | --- | --- | --- | --- | --- | --- |
 | 778590 | 10.0.31: Revenue recognition bundle explosion fails with dimension-based product configuration | App AX10.0.31 | 10.0.1406.101 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778590 | GFM | Revenue Recognition |
-| --- | --- | --- | --- | --- | --- | --- |
 | 778780 | (10.0.31) Adding a new address to customer results in the last address from the address list to be returned always | App AX10.0.31 | 10.0.1406.101 | https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=778780 | Retail and Services | Customers |
-| --- | --- | --- | --- | --- | --- | --- |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
