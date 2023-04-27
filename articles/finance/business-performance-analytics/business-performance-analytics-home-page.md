@@ -18,7 +18,7 @@ ms.search.form: business-performance-analytics
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpateam@microsoft.com>.
 
-Business performance analytics (BPA) is a powerful tool for gaining insights from data in a user-friendly and comprehensive way across multiple business processes. It delivers insights to all users, regardless of their technical ability, simplifying the process of making informed decisions and enabling finance professionals to focus on strategic initiatives.
+Business performance analytics is a powerful tool for gaining insights from data in a user-friendly and comprehensive way across multiple business processes. It delivers insights to all users, regardless of their technical ability, simplifying the process of making informed decisions and enabling finance professionals to focus on strategic initiatives.
 
 Creating a hyper-connected enterprise through an intuitive dimensional data model and empowering people with self-service analytics enables reporting in a more holistic way, providing a unified and accessible view across multiple systems of record. This is achieved by unifying data, simplifying reporting, and adopting self-service analytics. This solution streamlines financial reporting and shortens cycle times, allowing finance teams to focus on strategic initiatives. It also enhances the growth potential of Dynamics 365 Finance capabilities by leveraging unified data for AI and machine learning to improve financial performance and protect organizations from risk.
 
@@ -28,8 +28,8 @@ Business performance analytics has the following prerequisites:
 
 - System requirements
 - Version requirements
-- Set up BPA
-- Use BPA
+- Set up business performance analytics
+- Use business performance analytics
 - FAQ's
 
 ### System requirements
