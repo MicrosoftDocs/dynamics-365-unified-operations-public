@@ -71,20 +71,20 @@ Business performance analytics can be manually uninstalled through Power Platfor
 1. Business performance analytics performance analytics anchor solution
 2. Business performance analytics performance analytics plugins solution
 3. Business performance analytics performance analytics solution
-4. Business performance analytics performance analytics permissions TIP
+4. Business performance analytics performance analytics permissions 
 5. Business performance analytics performance analytics tables
 6. Business performance analytics performance analytics controls
 7. Business performance analytics performance analytics tables anchor solution
 8. Business performance analytics performance analytics pipeline plugins solution
-9. Business performance analytics performance analytics tables user roles TIP
+9. Business performance analytics performance analytics tables user roles 
 10. Business performance analytics performance analytics analytical tables
-11. Business performance analytics performance analytics tables transformation job flows TIP
-12. Business performance analytics performance analytics data processing configuration TIP
+11. Business performance analytics performance analytics tables transformation job flows 
+12. Business performance analytics performance analytics data processing configuration 
 13. Business performance analytics performance analytics tables data lake synchronization
 14. Business performance analytics performance analytics tables standard entities
 15. Business performance analytics performance analytics virtual entities
-16. Business performance analytics performance analytics managed data lake TIP
-17. Business performance analytics performance analytics tables security TIP
+16. Business performance analytics performance analytics managed data lake 
+17. Business performance analytics performance analytics tables security 
 
 To delete each of the preceding solutions, follow these steps.
 
@@ -96,7 +96,7 @@ The approximate time that's required to delete all the solutions is 20 minutes.
 
 ### How often will updates for business performance analytics be released?
 
-- **New features:** Once per month (the thirtieth of every month)
+- **New features:** Once per month 
 - **Bugs:** Bi-weekly 
 - **Hotfixes:** On demand
 
@@ -118,4 +118,6 @@ When a new release of business performance analytics is available, you can updat
 
 ### During public preview, what can I expect each time that data is restored from production to sandbox?
 
-As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of business performance analytics. After data is restored, the data pipeline will continue to run on its defined schedule.
+As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of business performance analytics. In public preview, data will not be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install business performance analytics.
+Any new data changes done in Dynamics 365 finance and operations UI can still be seen in business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
+
