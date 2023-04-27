@@ -14,7 +14,7 @@ Before March 2022, when setting up dual-write, customers had to install the dual
 To solve this problem, we split the monolith orchestration package into smaller individual packages. The individual packages contain solutions with the same name, publisher, and map versions as the application orchestration package. Therefore, this is a non-breaking change and environments can easily upgrade by installing the split packages required from app source.
 
 > [!IMPORTANT]
-> The orchestration solution is no longer being maintained and it will be deprecated. In order to benefit from enhancements and bug fixes, we recommend installing the split packages.**
+> The orchestration solution is no longer being maintained and it will be deprecated. In order to benefit from enhancements and bug fixes, we recommend installing the split packages.
 
 ## What do you need to do to install the split packages?
 
@@ -83,9 +83,3 @@ Here is the complete list of solutions containing table maps per each split pack
 | Dual-write Notes                                   | Dynamics 365 notes entity maps                            |
 | Dual-write Asset Management                        | Dynamics 365 Asset Management entity maps                 |
 | Dual-write party and global address book solutions | Dynamics 365 GAB Dual Write Entity Maps                   |
-
-For example for the dual-write finance split package, the solution is Dynamics 365 Finance extended entity maps:
-
-:::image type="content" source="media/apply-solution-finance-extended.png" alt-text="Apply the dual-write finance solution." lightbox="media/apply-solution-finance-extended.png":::
-
-Since the introduction of split packages in March 2022 and up until April 2023, there have not been table maps updates except for the Party and global address book solution. If you are not using this solution today, then step 3 is not required.
