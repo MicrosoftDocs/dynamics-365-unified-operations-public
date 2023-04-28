@@ -5,7 +5,7 @@ title: Create a procurement catalog
 description: This article explains how to create a procurement catalog. 
 author: GalynaFedorova
 ms.date: 07/19/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

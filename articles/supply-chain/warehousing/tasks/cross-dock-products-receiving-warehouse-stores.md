@@ -5,7 +5,7 @@ title: Cross-dock products from receiving warehouse to stores
 description: This procedure walks through the steps to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores. 
 author: Mirzaab
 ms.date: 02/17/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

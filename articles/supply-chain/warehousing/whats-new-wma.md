@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/25/2022
+ms.date: 03/15/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -18,6 +18,31 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.1.1.0  
+
+### New features introduced in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- The app is now available for iOS devices. 
+- This version is compliant with regulations for European Union Data Boundary (EUDB) and sovereign clouds. 
+
+### New fixes and improvements in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability for installations deployed using Microsoft Intune. 
+- Fixed an issue where the app couldn't connect to the server when running on Android 4.4. 
+- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server. 
+
+## Version 2.0.42.0
+
+This version introduces the following new features, fixes, and improvements: 
+
+- The user settings and input-helper dialogs now include a back button in the toolbar.
+- You can now use a pull-down gesture to close the user settings and photo dialogs.
+- Fixed an issue that could occur when confirming a quantity using a unit of measure that is named similarly to the next unit of measure in its sequence group. Previously, this could result in the app assuming the wrong unit of measure, but now it correctly identifies each unit in the sequence.
 
 ## Version 2.0.41.0  
 

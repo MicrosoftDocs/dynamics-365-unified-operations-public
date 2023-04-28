@@ -4,7 +4,7 @@
 title: Intrastat overview
 description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
 author: mrolecki
-ms.date: 11/30/2022
+ms.date: 04/17/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -49,9 +49,9 @@ For statistical purposes, you generate information about trade among EU countrie
 
 For statistical purposes, you report information about trade among EU countries/regions every month. You can print the Intrastat report, based on the **Report format mapping** settings on the **Foreign trade parameters** page. You can also generate an electronic file, based on the **File format mapping** settings on the **Foreign trade parameters** page. For more information about Intrastat reporting, including required prerequisites, see the Intrastat reporting task recordings:
 
-  - Generate an EU Intrastat declaration,
-  - Transfer transactions to the Intrastat,
-  - Specifying lading address for an intra-community transaction.
+- Generate an EU Intrastat declaration,
+- Transfer transactions to the Intrastat,
+- Specifying lading address for an intra-community transaction.
 
 ## Prerequisites
 The following table lists the prerequisites for Intrastat reporting.
@@ -71,85 +71,137 @@ The following table lists the prerequisites for Intrastat reporting.
 ## Setup
 The following sections describe the settings that are required for Intrastat reporting.
 
-### Set up all required Intrastat-related lists
+### Commodity codes
 
-|   List   |   Additional information   |
-|-------------------------|-------------------------|
-| Commodity codes | Set up a category hierarchy of type **Commodity code**, and enter all commodity codes according to the combined nomenclature list. For each commodity, you set up the following information:<ul><li>The name of the commodity and the commodity code</li><li>The friendly name and/or translated name</li><li>Settings for reporting additional (supplementary) units on the **Foreign trade** tab. You can select the additional unit in the unit list. You can also specify whether the weight of commodities must be reported in addition to the selected additional unit.</li></ul>For more information, review [Additional units](#additional-units) example.|
-| Transaction codes | Set up the nature of the transaction according to your country's/region's requirements. For each transaction code that you set up, you must set up the rules for calculating invoice amounts and statistical amounts for transfer orders and sales/purchase orders.<ul><li>For transfer orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Financial cost amount** – The amount will be equal to the financial cost.</li><li>**Total cost** – The amount will be equal to the total cost of the transaction.</li><li>**Manual** – The amount will be equal to the amount that is manually specified on the transfer order line.</li></ul></li><li>For sales orders and purchase orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Invoice amount** – The amount will be equal to the amount that is invoiced for the commodity.</li><li>**Base amount** – The amount will be equal to the amount that would be invoiced before any discount is applied.</li></ul></ul>For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example. |
-| Transport methods | Set up the transport mode according to your country's/region's requirements. For each delivery mode, you can set up a default transport method on the **Foreign trade** tab. |
-| Ports | Set up the port/airport of loading/unloading if this information is collected by your country/region. |
-| Statistics procedures | Set up the statistical procedure if this information is collected by your country/region. |
+Set up a category hierarchy of the **Commodity code** type, and enter all commodity codes according to the combined nomenclature list. For each commodity, include the following information:
 
+- The name of the commodity and the commodity code.
+- The friendly name and translated name.
+- Settings to report additional or supplementary units on the **Foreign trade** tab. You can select the additional unit in the unit list. You can also specify whether the weight of the commodities must be reported in addition to the selected additional unit.
 
+For more information, see the [Additional units](#additional-units) example later in this article.
 
-### Set up rules for compressing Intrastat transactions
+### <a name="transaction-codes"></a>Transaction codes
 
-On the **Compression of Intrastat** page, you can select the fields to use for compression. All transactions that have the same combination of values for the selected fields in the Intrastat journal will be compressed into a single transaction when you run the Compress function in the Intrastat journal.
+A system of two-digit transaction codes is used to differentiate the types of trade at the European level, depending on the nature of the transaction. For more information, see [European business statistics compilers' manual for international trade in goods statistics — 2021 edition - Products Manuals and Guidelines - Eurostat (europa.eu)](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-21-004).
 
-### Set up foreign trade parameters
+Set up the nature of the transaction according to the country's or region's requirements. For each transaction code that you set up, you must set up the rules to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.
+
+- For transfer orders, set up one of the following rules to calculate invoice amounts and statistical amounts:
+
+    - **Empty** – The amount will be 0 (zero).
+    - **Financial cost amount** – The amount will equal the financial cost.
+    - **Total cost** – The amount will equal the total cost of the transaction.
+    - **Manual** – The amount will equal the amount that's manually specified on the transfer order line.
+
+- For sales orders and purchase orders, set up one of the following rules to calculate invoice amounts and statistical amounts:
+
+    - **Empty** – The amount will be 0 (zero).
+    - **Invoice amount** – The amount will equal the amount that's invoiced for the commodity.
+    - **Base amount** – The amount will equal the amount that would be invoiced before any discount is applied.
+
+For more information, see the [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example later in this article.
+
+As of January 1, 2022, a unified system of two-digit transaction codes is used in EU countries.
+
+1. Go to **Tax** \> **Setup** \> **Foreign trade** \> **Transaction codes**.
+2. Create the required transaction codes.
+
+![Transaction codes page.](media/Multipleid-image4.png)
+
+For each transaction code that you create, set up the rules to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.
+
+- For transfer orders, set up one of the following rules to calculate invoice amounts and statistical amounts:
+
+    - **Empty** – The amount will be 0 (zero).
+    - **Financial cost amount** – The amount will equal the financial cost.
+    - **Total cost** – The amount will equal the total cost of the transaction.
+    - **Manual** – The amount will equal the amount that's specified in the **Invoiced amount** and **Statistical value** fields on the transfer order line. These values are taken from the **Amount** field on the transfer order line.
+
+        ![Invoiced amount and Statistical value fields for a transfer order line.](media/Multipleid-image5.png)
+
+- For sales orders and purchase orders, set up one of the following rules to calculate invoice amounts and statistical amounts:
+
+    - **Empty** –The amount will be 0 (zero).
+    - **Invoice amount** – The amount will equal the amount that's invoiced for the commodity.
+    - **Base amount** – The amount will equal the invoice amount that would be invoiced before any discount is applied.
+
+### Transport methods
+
+Set up the transport mode according to your country's or region's requirements. For each delivery mode, set up a default transport method on the **Foreign trade** tab.
+
+### Ports
+
+Set up the port or airport of loading/unloading if this information is required for Intrastat reporting in the country/region of a tax registration that's set up in the legal entity.
+
+### Statistics procedures
+
+Set up the statistical procedure if this information is required for Intrastat reporting in country/region of a tax registration that's set up in the legal entity.
+
+### <a name="compressing-rules"></a>Compression rules for Intrastat transactions
+
+On the **Compression of Intrastat** page, you can select the fields to use for compression. All transactions that have the same combination of values for the selected fields in the Intrastat journal will be compressed into a single transaction when you run the **Compress** function in the Intrastat journal.
+
+> [!NOTE]
+> Compression rules that are set up for a legal entity apply to all tax registrations that are set up for that legal entity.
+
+1. Go to **Tax** \> **Setup** \> **Foreign trade** \> **Compression of Intrastat**.
+2. Select the values to use in the **Compress** function. Select all the values that are reported in any of the countries/regions where you have tax registrations.
+
+For example, in 2022, the following values should be reported in some countries/regions.
+
+**Mandatory elements**
+
+The following values are reported in all countries from the next table:
+
+- **Direction** (flow)
+- **Commodity code**
+- **Country/region** (partner member state)
+- **Transaction code**
+- **Tax exempt number** (partner's VAT number) on dispatches
+- **Country/region of origin**
+
+**Optional elements**
+
+| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
+|-------|---------|---------|---------|---------|--------|---------|-------------|--------|-------|--------|-----------------------------------|
+| Delivery terms | No | **Yes** | No | No | No | No | No | **Yes** | **Yes** | No | **Yes** |
+| Mode of transport | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** | No | **Yes** | **Yes** | No | No |
+| State of origin (Region of origin) | No | **Yes** | No | No | No | **Yes** | No | No | No | No | No |
+| County of origin (Region of origin) | No | No | No | No | **Yes** | No | No | No | **Yes** | No | No |
+| Statistics procedure | **Yes** | No | No | No | **Yes** | No | **Yes** | No | **Yes** | No | No |
+
+**Additional elements for country/region-specific purposes**
+
+| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
+|-------|---------|---------|---------|---------|--------|---------|-------------|--------|-------|--------|-----------------------------------|
+| Transport document (Invoice, Identification of packing slip or product receipt) | No | No | No | No | No | No | **Yes** | No | No | No | No |
+| Port ((Air)port of (un)loading) | No | No | No | No | No | No | No | No | **Yes** | No | No | 
+
+> [!NOTE]
+> Select all the values that must be reported on the **Compression of Intrastat** page.
+
+### Foreign trade parameters
 
 Use the **Foreign trade parameters** page to set up the parameters in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tab</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>General</td>
-<td><ul>
-<li><strong>General</strong> – Specify the following information:
-<ul>
-<li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes. Returns of physical goods are reported in Intrastat transfer with a different direction. The return of arrival is reported as dispatch and the return of dispatch is reported as arrival.</li>
-<li>The employee who is responsible for preparing Intrastat reports.</li>
-</ul></li>
-<li><strong>Minimum limit</strong> – Specify the settings for updating transactions that are below the threshold:
-<ul>
-<li>The threshold amount and weight</li>
-<li>The commodity code to apply to transactions that are under the threshold</li>
-</ul></li>
-<li><strong>Transfer</strong> – Specify the criteria for transferring transactions to the Intrastat journal. You can specify that transactions are transferred only when the items meet one or all of the following criteria:
-<ul>
-<li>The items aren&#39;t service items.</li>
-<li>The items have a commodity code.</li>
-<li>The items have a weight.</li>
-<li>The items have additional units.</li>
-</ul></li>
-<li><strong>Check setup</strong> – Specify the rules for validating the completeness of Intrastat data. You can select which data is validated.</li>
-<li><strong>Rounding rules</strong> – Specify the following settings for rounding amounts and weights in Intrastat reporting:
-<ul>
-<li>The rounding rule (precision)</li>
-<li>The rounding method: up, down, or normal</li>
-<li>The number of decimal places for amounts and weights</li>
-<li>Instructions for rounding weights that are less than 1 kilogram (kg): up to 1 kg, normal, or no rounding</li>
-</ul></li>
-<li><strong>Electronic reporting</strong> – Specify references to electronic reporting configurations, so that you can generate an electronic file and report.</li>
-<li><strong>Commodity code hierarchy</strong> – Specify the category hierarchy of the <strong>Commodity code</strong> type that represents Intrastat commodity code CN8.</li>
-  <li> <strong>Exchange rate type</strong> – Optionally, specify an exchange rate to be used to report Intrastat sales and purchase transactions in foreign currencies. This is used if the rate is different than the one applied when posting the transaction.</li>  
-</ul></td>
-</tr>
-<tr class="even">
-<td>Agent contact information</td>
-<td>Specify the agent&#39;s name, address, tax exempt number, telephone number, and fax number.</td>
-</tr>
-<tr class="odd">
-<td>Country/region properties</td>
-<td>Set the country/region of the current legal entity to <strong>Domestic</strong>. Set the country/region of EU countries/regions that participate in EU trade with the current legal entity to <strong>EU</strong>. For each country/region, you also identify country/region code for foreign trade purposes.</td>
-</tr>
-<tr class="even">
-<td>Number sequence</td>
-<td>Specify the number sequence for the Intrastat journal.</td>
-</tr>
-</tbody>
-</table>
+| Tab \> FastTab | Parameters |
+|----------------|------------|
+| Intrastat \> General | <p>Specify the following information:</p><ul><li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that's set up for credit notes is also used as the code for returns of physical goods and for deviating physical returns versus correction credit notes. Returns of physical goods are reported in Intrastat transfers with a different direction. The return of an arrival is reported as a dispatch, and the return of a dispatch is reported as an arrival.</li><li>The employee who is responsible for preparing Intrastat reports.</li><li>The tax authority.</li><li>The special movement code. This code is available for Intrastat reporting in the Czech Republic.</li></ul> |
+| Intrastat \> Minimum limit | <p>Specify the following settings for updating transactions that are below the threshold:</p><ul><li>The threshold amount and weight</li><li>The commodity code to apply to transactions that are under the threshold</li></ul> |
+| Intrastat \> Transfer | <p>Specify the criteria for transferring transactions to the Intrastat journal. You can specify that transactions are transferred only when the items meet one or all of the following criteria:</p><ul><li>The items aren't service items.</li><li>The items have a commodity code.</li><li>The items have a weight.</li><li>The items have additional units.</li></ul> |
+| Intrastat \> Check setup | Specify the rules for validating the completeness of Intrastat data. You can select what data is validated. |
+| Intrastat \> Exchange rate | Select the exchange rate type for Intrastat reporting. |
+| Intrastat \> Rounding rules | <p>Specify the following settings for rounding amounts and weights in Intrastat reporting:</p><ul><li>The rounding rule (precision)</li><li>The rounding method: up, down, or normal</li><li>The number of decimal places for amounts and weights</li><li>Instructions for rounding weights that are less than one kilogram (kg): up to one kg, normal, or no rounding.</li></ul> |
+| Intrastat \> Electronic reporting | Specify references to electronic reporting configurations to generate an electronic file and report. |
+| Intrastat \> Commodity code hierarchy | Specify the category hierarchy of the **Commodity code** type that represents Intrastat commodity code **CN8**. In the **Exchange rate type** field, you can optionally specify an exchange rate to use when you report Intrastat sales and purchase transactions in foreign currencies. This field is used if the rate differs from the rate that was applied when the transaction was posted. |
+| Agent contact information | Specify the agent's name, address, tax exempt number, telephone number, and fax number. |
+| Country/region properties | Set the country/region of the current legal entity to **Domestic**. Set the country/region of EU countries/regions that participate in EU trade with the current legal entity to **EU**. For each country/region, identify the country/region code for foreign trade purposes. |
+| Number sequences | Specify the number sequence for the Intrastat journal. |
+
+For general information about multiple VAT registration numbers, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+
+For information about Intrastat reporting in multiple VAT registration numbers, see [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md).
 
 ## Example
 
@@ -392,7 +444,7 @@ In this example, a company in Germany must purchase 10 units of goods from a com
    ![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_6.png)
    
 ## List of country/region-specific articles
-The following table lists the available country/region-specific intrastat articles.
+The following table lists the available country/region-specific Intrastat articles.
 
 | Country          | Link      |
 |------------------|-----------|

@@ -16,8 +16,9 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice.-->
 
-Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
+Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
 
 ## Get the cross-company product sharing public preview
 
@@ -234,7 +235,7 @@ Dynamics 365 Commerce isn't supported when you use cross-company data sharing fo
 
 ### Financial dimensions
 
-Fields that reference financial dimensions (for example, the Ledger or Default dimension) can't be shared across companies. This limitation is a restriction of cross-company data sharing. For more information, see [Cross-company data sharing](../../fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing.md).
+Fields that reference financial dimensions (for example, the Ledger or Default dimension) can't be shared across companies. This limitation is a restriction of cross-company data sharing. For more information, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).
 
 ### Vendors
 
@@ -291,4 +292,4 @@ If you already have existing products in the system before you enable the single
 
 ## More information about cross-company data sharing
 
-To learn more about cross-company data sharing, see [Cross-company data sharing](../../fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing.md).
+To learn more about cross-company data sharing, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).

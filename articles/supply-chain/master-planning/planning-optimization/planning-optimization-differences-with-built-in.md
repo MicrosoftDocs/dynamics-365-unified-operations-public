@@ -20,6 +20,7 @@ Planning Optimization results might differ from results from the deprecated mast
 
 | Feature | Current behavior in Planning Optimization |
 |---|---|
+| Forecasts for today's date | Forecasts for today's date aren't considered by Planning Optimization, though they were considered by the deprecated master planning engine. |
 | Catch weight products | Catch-weight products are considered usual products.|
 | Extensible dimensions | Extensible dimensions are not supported by Planning Optimization. When you use Planning Optimization, extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |

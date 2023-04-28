@@ -15,7 +15,6 @@ ms.search.validFrom: 2017-10-02
 # Support for external gift cards
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 

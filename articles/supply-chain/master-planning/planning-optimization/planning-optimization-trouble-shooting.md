@@ -34,7 +34,7 @@ This article describes how to fix common issues that you might encounter while w
 
 ## Installation of the Planning Optimization add-in doesn't complete
 
-Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
+Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 

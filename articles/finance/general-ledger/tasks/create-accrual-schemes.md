@@ -4,8 +4,8 @@
 title: Create accrual schemes
 description: This article explains how to create an accrual scheme. 
 author: aprilolson
-ms.date: 07/19/2019
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article explains how to create an accrual scheme. This task uses the USMF demo company.
 
-1. Go to **Navigation pane > Modules > General ledger > Journal setup > Accrual schemes**.
+1. Go to **General ledger > Journal setup > Accrual schemes**.
 2. Select **New**.
 3. In the **Accrual identification** field, type a value.
 4. In the **Description of accrual scheme** field, type a value.

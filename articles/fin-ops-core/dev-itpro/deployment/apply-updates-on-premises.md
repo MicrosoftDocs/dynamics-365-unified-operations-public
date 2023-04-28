@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Apply updates to on-premises deployments
 
