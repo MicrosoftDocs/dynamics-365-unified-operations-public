@@ -117,14 +117,14 @@ To make a sandbox selection for FRP for PQUs, follow these steps.
 
 Once a selection is made, customers can modify their selection at any time. However, if a PQU is already scheduled, the new selection won't be honored for the immediate PQU. The selection will be honored for the subsequent PQUs.
 
-### 5.	What is the expectation from customers participating in the First Release Program for PQUs?
+### What is expected from customers who participate in the First Release Program for PQUs?
 
 1.	Participants are expected to provide feedback on the PQU and will receive direct support from Microsoft Dynamics product teams for any issues encountered from PQUs.
 1.	If a critical issue is found, participants may need to take an additional PQU on short notice.  
 1.	Participants aren't to delay or pause a PQU on the sandbox they have selected to receive a PQU in Station 1 or the FRP.
 1.	If there is a critical issue, participants should open a support ticket with Microsoft Support to get faster response and action.
 
-### 6.	How soon will a sandbox receive PQU once it’s selected for Station 1?
+### How soon will a sandbox receive PQU once it’s selected for Station 1?
 
 See the [release schedule](quality-updates-schedule.md) for Station 1 to know when the group of sandboxes in FRP will receive a PQU.
 
