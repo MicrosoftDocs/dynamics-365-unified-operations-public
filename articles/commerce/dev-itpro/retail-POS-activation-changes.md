@@ -2,7 +2,7 @@
 title: Device activation of a customized Modern POS
 description: This article explains how to configure Microsoft Dynamics 365 Commerce Headquarters when a customized application is used.
 author: jashanno
-ms.date: 02/10/2023
+ms.date: 04/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
