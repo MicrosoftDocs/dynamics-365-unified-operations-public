@@ -4,10 +4,10 @@
 title: Update the environment administrator
 description: This article explains how to change the environment administrator for a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 05/10/2022
+ms.date: 04/28/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global 
 # ms.search.industry:
 ms.author: laswenka
@@ -36,8 +36,8 @@ To change the environment administrator, you must be a project owner in the LCS 
 
 > [!IMPORTANT]
 > Changes to the environment administrator account cause downtime in the target finance and operations apps environment. Therefore, use this capability in the appropriate way and only after you schedule the downtime in your organization.
-> The new Admin account must be a direct member of the same tenant to which the environment belong.
-> If you intend to change domain for the environment, you also need to obtain new ISV license file(s) referencing the new domain.  
+> The new administrator account must be a member of the same tenant that the environment belongs to.
+> If you are going to change domain for the environment, you need to get new ISV license file(s) that references the new domain.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
