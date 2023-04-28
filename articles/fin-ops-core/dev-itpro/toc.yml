@@ -1,3 +1,4 @@
+items:
 - name: Development and administration for finance and operations apps
   items:
   - name: Development and administration for finance and operations apps
@@ -196,6 +197,40 @@
           href: data-entities/config-key-entities.md
         - name: Configuration data packages
           href: data-entities/configuration-data-packages.md
+        - name: Built-in entities
+          items:
+          - name: Import customers
+            items:
+              - name: Customer definitions entity
+                href: data-entities/entity-customer-definitions-customerbase.md
+              - name: Customers V3 entity
+                href: data-entities/entity-customers-v3-customerv3.md
+              - name: Customer details V2 entity
+                href: data-entities/entity-customer-details-v2-na.md
+          - name: Import products
+            items:
+            - name: Products V2 entity
+              href: data-entities/entity-products-v2-productsv2.md
+            - name: Released products V2 entity
+              href: data-entities/entity-released-products-v2-releasedproductv2.md
+          - name: Import sales orders
+            items:
+              - name: Sales order headers V2
+                href: data-entities/entity-sales-order-headers-v2-salesorderheaderv2.md
+              - name: Sales order lines V2
+                href: data-entities/entity-sales-order-lines-v2-salesorderline.md
+          - name: Import vendor invoices
+            items:
+              - name: Vendor invoice header entity
+                href: data-entities/entity-vendor-invoice-header-vendorinvoiceheader.md
+              - name: Vendor invoice line entity
+                href: data-entities/entity-vendor-invoice-line-vendorinvoiceline.md
+              - name: Vendor invoice document attachment V2 entity
+                href: data-entities/entity-vendor-invoice-document-attachment-v2-vendorinvoicedocumentattachment.md
+              - name: Vendor invoice charges entity
+                href: data-entities/entity-vendor-invoice-charges-vendorinvoiceheadercharge.md
+              - name: Vendor invoice line charges entity
+                href: data-entities/entity-vendor-invoice-line-charges-vendorinvoicelinecharge.md
       - name: Data import and export jobs
         items:
         - name: Data import and export jobs overview
