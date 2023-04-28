@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: josaw1
-ms.date: 02/03/2023
+ms.date: 04/28/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -194,7 +194,7 @@ To activate Store Commerce after installation, follow these steps.
     > NOTE
     > The Store Commerce app shouldn't be run with elevated privileges, and shouldn't be run from an account with elevated privileges.
 1. On the application's start page, if you select **Remote app content** as the deployment option, enter the Cloud POS URL, and then select **Save**. You can find the Cloud POS URL on the environment details page in LCS, or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
-1. Activate Store Commerce by following the steps in the [POS activation guide](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
+1. Activate Store Commerce by following the steps in the [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 
 ### Troubleshoot setup issues
