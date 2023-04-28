@@ -87,6 +87,7 @@ The following table shows the various results that can be shown after a fit anal
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) |  Supported |
 | Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is now supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
+| Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | Custom dimensions are not yet supported on Planning Optimization. They will not be taken into account as part of the planning.  | 2023 release wave 2 |
 
 ## Additional resources
 
