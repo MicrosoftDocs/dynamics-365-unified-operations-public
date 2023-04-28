@@ -97,6 +97,38 @@ Customer-managed environments are out of scope for PQUs, because they're outside
 
 There are no known integration issues for the use of PQUs with Dataverse.
 
+###	What is the purpose of Station 1 or First Release Program for PQUs?
+
+The primary purpose of the First Release Program (FRP) for PQUs is to provide an opportunity for all Finance and Operations customers to receive a PQU ahead of other stations. This program is optional and open to all customers. Customers can take advantage of this program by signing up a sandbox of their choice to receive PQUs, to provide early feedback so Microsoft can ensure the feedback is addressed before PQUs are rolled out to the other stations. Customers participating in the PQU FRP aka Station 1 will be the first, select group of customers to receive a PQU on a sandbox of their choice. Customers participating in this program have the benefit of a shorter feedback cycle and fast response ahead of the rollout to other Stations.
+
+### What is the process for joining the First Release Program for PQUs? 
+
+This program is open to ALL Finance and Operations customers at all times. Only sandbox environments qualify for a selection.  Anyone with a “Project owner” security role on the LCS project can select a sandbox in the project.  
+
+To make a sandbox selection for FRP for PQUs, follow these steps.
+
+1.	In Microsoft Dynamics Lifecycle Services, click on the LCS project
+2.	Select Project Settings for the project -> you will see the Proactive Quality Update settings
+3.	Select a sandbox from the LCS project, in the drop down and click on save to preserve the selection.  You are good to go! 
+
+:::image type="content" source="media/pqu-settings-screen.png" alt-text="A screenshot of the Proactive quality update settings screen."::: 
+
+### Can customers revert or change the selection for Station 1?
+
+Once a selection is made, customers can modify their selection at any time. However, if a PQU is already scheduled, the new selection will not be honored for the immediate PQU. The selection will be honored for the subsequent PQUs.
+
+### 5.	What is the expectation from customers participating in the First Release Program for PQUs?
+
+1.	Participants are expected to provide feedback on the PQU and will receive direct support from Microsoft Dynamics product teams for any issues encountered from PQUs.
+2.	Participants may need to take an additional PQU on short notice if a critical issue is found.  
+3.	Participants will not be allowed to delay or pause a PQU on the sandbox they have selected to receive PQU in Station 1 or the FRP.
+4.	In case of a critical issue, participants should to raise a ticket with Microsoft Support to get faster response and action.
+
+### 6.	How soon will a sandbox receive PQU once it’s selected for Station 1?
+
+Please refer to the schedule for Station 1    to know when the group of sandboxes in FRP will receive a PQU.
+
+
 ## More information
 
 If you have a question that isn't covered in this article, or if you require clarification about any answer in this article, open a support case.
