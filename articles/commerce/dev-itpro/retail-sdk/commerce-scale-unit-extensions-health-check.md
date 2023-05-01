@@ -112,4 +112,5 @@ The results output by the entity binding test is summarized in the table below. 
 
 If you are a developer building Commerce Scale Unit extensions, you must use the health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
 
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
