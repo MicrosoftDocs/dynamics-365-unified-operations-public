@@ -97,24 +97,24 @@ Reduce the scheduling time by following the instructions given in [Improve sched
 
 ### Plan only for the products you need
 
-Check the following settings to make sure you are only planning for the products you need:
+Check the following settings to make sure you're only planning for the products you need:
 
-- Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*. You can use the **Change lifecycle state for obsolete products** page to identify products that haven't been used in any transactions for a while&mdash;these might now be obsolete, which means you could be able to remove them from your planning.
+- Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*. You can use the **Change lifecycle state for obsolete products** page to identify products that haven't been used in any transactions for a while&mdash;these products might now be obsolete, which means you could be able to remove them from your planning.
 - For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
 - Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
 
 ### Split large planning jobs into several smaller jobs
 
-If you have a large planning jobs that frequently times out, then you can probably prevent the timeout by splitting it into several smaller jobs.
+If you have a large planning job that frequently times out, then you may be able to prevent the timeout by splitting it into several smaller jobs.
 
 #### Option 1: Run the same master plan but only for a subset of products
 
-Suppose you have a master plan called *PlanA*, which runs nightly as a batch job for 1000 items with item numbers ranging from *A0001* to *A1000*. If this job often times out after 60 minutes, you could split it into three jobs, each running for one-third of the items. First you run *PlanA* for the first third (*A0001* to *A0333*), then for the second third (*A0334* to *A0666*) and then the last third (*A0667* to *A1000*). Each of these smaller jobs would then be allowed the full 60 minutes timeout window, rather than trying to use the same 60 minutes to plan all 10000 items. <!--KFM: I "corrected" the item numbers. Please confirm. -->
+Suppose you have a master plan called *PlanA*, which runs nightly as a batch job for 1000 items with item numbers ranging from *A0001* to *A1000*. If this job often times out after 60 minutes, you could split it into three jobs, each running for one-third of the items. First you run *PlanA* for the first third (*A0001* to *A0333*), then for the second third (*A0334* to *A0666*) and then the last third (*A0667* to *A1000*). Each of these smaller jobs would then be allowed the full 60-minute timeout window, rather than trying to use the same 60 minutes to plan all 10,000 items.
 
 To split the large job into several jobs, follow these steps:
 
 1. Go to **System administration > Inquiries > Batch jobs**.
-1. In the grid, find the existing recurrent planning job that is timing out. Then select the value in the **Job ID** column to open the job details. <!--KFM: Is there any easy way to identify the right job? -->
+1. In the grid, find the existing recurrent planning job that is timing out. Then select the value in the **Job ID** column to open the job details.
 1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Withhold* and then select **OK**. <!--KFM: This appears to be necessary, right? I got errors until I did this. It might be that we need to wait if it's *Running* or something else? -->
 1. On the **Batch tasks** FastTab, you should see a single row for Planning Optimization, which has a **Class name** of *MpsMasterPlanningRunnerRegen*. Select this task and then select **Parameters** on the FastTab toolbar.
 1. A dialog opens, where you can make settings for the task. Expand the **Records to include** FastTab and then select **Filter** to open a standard query editor dialog.
@@ -126,7 +126,7 @@ To split the large job into several jobs, follow these steps:
 1. Select **OK** to close the query editor. Then Select **OK** to close the task settings dialog.
 1. On the **Batch tasks** FastTab toolbar, select **Add** to add a new task. Then make the following settings for the new task:
     - **Task description** – Enter a description for the task, for example *PlanA part 2*.
-    - **Class name** – Enter *MpsMasterPlanningRunnerRegen*.
+    - **Class name** – Select *MpsMasterPlanningRunnerRegen*.
     - **Company** – Select the same company as the original task.
 1. Set the filter for this new task to find the second third of the items, for example *A0334...A0666*.
 1. Repeat the previous two steps to add a third task and set the filter to find the last third of the items, for example *A0667...A1000*.
@@ -139,28 +139,30 @@ To split the large job into several jobs, follow these steps:
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> This is just one way to split a large job into several smaller jobs and set them to run in series. You could choose to split it into even more jobs and/or to filter on different criteria as needed.  <!--KFM: You examples here were "item numbers or characteristics such as purchased or produced". Maybe that's fine, but maybe there are better ones? -->
-
-<!--KFM: Continue here. -->
+> This is just one way to split a large job into several smaller jobs and set them to run in series. You could choose to split it into even more jobs and/or to filter on different criteria as needed.  <!--KFM: Your examples here were "item numbers or characteristics such as purchased or produced". Maybe that's fine, but maybe there are better ones? -->
 
 #### Option 2: Different master plans, each for a subset of products
 
-If your products have different characteristics in regards to planning you should consider running different master plans, each for a subset of products. 
-For example, you may have a plan for planning all your items where your purchased products have long lead times and you would need to plan in long time in advance (e.g. a year), but your manufactured products have short manufacturing lead time (e.g. weeks).
+If your products have different characteristics in regards to planning, you should consider running different master plans, each for a subset of products. For example, you might have a master plan for purchasing items with long lead times (such as a year) that are used to produce manufactured products with a short manufacturing lead time (such as a week). <!--KFM: I'm not sure I have this right, please review. -->
 
-In this example, one master plan _PlanPurch_ with coverage time fence 365 days for your purchase products and another plan _PlanManuf_ for your produced items with coverage time fence 60 days. 
+In this example, you could make one master plan for your purchased products (*PlanPurch*), with a coverage time fence 365 days, and another plan for your manufactured items (*PlanManuf*), with a coverage time fence 30 days. Because each set of products is in a different master plan, you can run both master plan jobs in parallel. You could use a similar strategy for items with similar planning characteristics by running multiple copies of the same plan in parallel. <!--KFM: I don't understand the point of running identical plans in parallel. -->
 
-As each set of products is in a different master plan, it is possible to run both master plan jobs in parallel. This can also be used for items that do not have different characteristics in the plan, but where an exact copy of the plan is used instead.
+To implement this strategy, follow these steps:
 
-Follow the steps:
-- Review your master plans:
-1. For your existing master plan modify it to only cover a set of items (e.g. purchased) by adding the items on the plan filter as indicated on [Applying a plan filter](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/plan-filters#apply-a-plan-filter)
-1. Create another master plan to cover another set of items. Note it can be with the same parameters if needed. Also add the needed items by adding the items on the plan filter as indicated on [Applying a plan filter](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/plan-filters#apply-a-plan-filter)
-1. Now, modify the exiting batch job for running Planning Optimization. Go to the **Batch jobs** page, from **System administration > Inquiries > Batch jobs**. 
-1. Find the existing batch job for running your recurrent planning run for Planning Optimization. In the tab Batch tasks, see you will have a single batch task for Planning Optimization (**Class name** is **MpsMasterPlanningRunnerRegen**).
-1. Add another batch task for running Planning Optimization (**Class name** is **MpsMasterPlanningRunnerRegen**). On **Parameters,** choose the new ****Master plan created. 
+1. Open your existing master plan and modify it to only cover only a subset of the original items (for example, purchased items). You can do this by adding a filter as described in [Applying a plan filter](plan-filters.md#apply-a-plan-filter).
+1. Create another master plan to cover the remaining items. Again, set up a [plan filter](plan-filters.md#apply-a-plan-filter) to include only the items you want to include in this plan (for example, manufactured items). Alternatively, you could set up an exact copy of your first plan, or split your original plan into more than two plans, each with its own filter.<!--KFM: I don't understand the point of running identical plans in parallel. -->
+1. Go to **System administration > Inquiries > Batch jobs**.
+1. In the grid, find the existing recurrent planning job that is timing out. Then select the value in the **Job ID** column to open the job details.
+1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Withhold* and then select **OK**. <!--KFM: This appears to be necessary, right? I got errors until I did this. It might be that we need to wait if it's *Running* or something else? -->
+1. On the **Batch tasks** FastTab, you should see a single row for Planning Optimization, which has a **Class name** of *MpsMasterPlanningRunnerRegen*. On the **Batch tasks** FastTab toolbar, select **Add** to add a new task. Then make the following settings for the new task:
+    - **Task description** – Enter a description for the new task.
+    - **Class name** – Select *MpsMasterPlanningRunnerRegen*.
+    - **Company** – Select the same company as the original task.
+1. Select the new task and then select **Parameters** on the FastTab toolbar.
+1. A dialog opens, where you can make settings for the task. Expand the **Parameters** FastTab and then set **Master plan** to the name the new plan you created.
+1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Waiting* and then select **OK**. <!--KFM: I suppose we need to close with this, right? -->
 
-As they are different plans being run, both batch tasks will run in parallel. 
+Because you have set each batch task to run a different master plan, both batch tasks will run in parallel.
 
 ### Review your item coverage settings
 
@@ -172,38 +174,43 @@ The following message will appear if a data export times out for Planning Optimi
 
 > Master planning job timed out when exporting the data to perform the calculation. This can be a temporary issue - try running the job again later. If you see this message often then please review your setup to limit the amount of data used for planning, as indicated in (this page).
 
-If you see this message, we recommend you proceed as follows.
+If you see this message, we recommend you try one or both of the approaches described in the following subsections.
 
 ### Review your setup for time fences and options not needed
 
-1. Reduce your **Coverage time fence** as much as possible while still meeting your business needs. This setting will have the most significant impact on the time it takes to complete a data export.
-1. Check the following settings for each of the coverage groups on the **Coverage groups** page:
-        - **Coverage time fence (days)**
-        - **BOM explosion time fence (days)**
-        - **Capacity scheduling time fence (days)**
-        - **Forecast plan time fence**
-        - **Action time fence**
-        - **Calculated delays time fence**
-    1. On the **Master plans** page, check whether the time fences have been overwritten and consider whether the values could be smaller while still fulfilling your business needs for the various time fences. Check the following settings for each plan:
-        - **Coverage**
-        - **Explosion**
-        - **Forecast plan**
-        - **Capacity**
-        - **Action message**
-        - **Calculated delays**
-        - **Approved requisitions time fence (days)**
+Follow these steps to review your setup for time fences and options that you don't need: <!--KFM: What is our goal here--reducing the number orders generated or items ordered? -->
 
-1. If a lot of orders are generated (what causes the data export timeout), you may also want to consider changing your business strategy for replenishing items:
-- If you use coverage groups with coverage code **Requirement**, each time there is a demand, a specific supply will be created for it. Consider if using coverage code Period would work for your business, it will group the demand of a certain number of days and create one supply order instead. It will also ease your management of planned orders. Or coverage code **Min/Max**, that will create a planned order when the on-hand falls below the minimum value, replenishing until its maximum value. 
-- Consider if you could purchase/produce items in bigger amounts, increasing the **Maximum order quantity** set on Default order settings form. If this quantity is set to a "too low" value, then lots of planned orders will be generated. 
+1. Reduce your **Coverage time fence** as much as possible while still meeting your business needs. This setting will have the most significant impact on the time it takes to complete a data export. <!--KFM: Where is this setting? -->
+1. Go to **Master Planning \> Setup \> Coverage \> Coverage groups**.
+1. Check the following settings for each of the coverage groups on the **Coverage groups** page: <!--KFM: What are we looking for? How should we edit these values? maybe "consider whether the values could be smaller while still fulfilling your business needs for the various time fences."-->
+    - **Coverage time fence (days)**
+    - **BOM explosion time fence (days)**
+    - **Capacity scheduling time fence (days)**
+    - **Forecast plan time fence**
+    - **Action time fence**
+    - **Calculated delays time fence**
+1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. On the **Master plans** page, check whether the time fences have been overwritten and consider whether the values could be smaller while still fulfilling your business needs for the various time fences. Check the following settings for each plan:
+    - **Coverage**
+    - **Explosion**
+    - **Forecast plan**
+    - **Capacity**
+    - **Action message**
+    - **Calculated delays**
+    - **Approved requisitions time fence (days)**
+
+1. If your plan is timing out because it generates a large number of orders, consider changing your business strategy for replenishing items. For example:
+
+    - If you use coverage groups with a **Coverage code** of *Requirement*, a specific supply will be created for it each time there's a demand. Consider whether using a **Coverage code** of *Period* would work for your business. Using *Period* will cause the system to group all demand for a selected number of days into a single supply order that covers that period. It will also ease your management of planned orders. Alternatively, consider using **Coverage code** of *Min/Max*, which will only create a planned order when the on-hand inventory falls below the minimum value and then replenish it to its maximum value.
+    - Consider whether you could purchase or produce items in larger amounts. If so, increase the **Max. order quantity** set on **Default order settings** page for each item you're ordering<!--KFM: This is per item, right? -->. The higher the value, the fewer orders you're likely to generate for that item.
 
 ### Plan only for the products needed
 
--Use the **Product lifecycle state** to indicate products or variants that don't need to be fulfilled by master planning. For each such product, select a **Product lifecycle state** that has **Is active for planning** set to *No*. You can use the **Change lifecycle state for obsolete products** page to identify products that haven't been used in any transactions for a while&mdash;these might now be obsolete, which means you could be able to remove them from your planning.
+<!--KFM: Add an intro that summarizes this strategy and introduces the following bullets. e.g.: "Your data export may be able to complete more quickly if you reduce the number of products ordered for each planning run. Consider using one or both of the following strategies:" -->
 
--Use a plan filter to remove unneeded items from your plan. See also [Apply a plan filter](plan-filters.md#apply-a-plan-filter).
+- Identify product and variants that don't need to be fulfilled by master planning and set their **Product lifecycle state** to a state that has **Is active for planning** set to *No*. (See also [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you to identify products that haven't been used in any transactions for a while&mdash;these might now be obsolete, which means you could be able to remove them from your planning.
 
-
+- Use a [plan filter](plan-filters.md#apply-a-plan-filter) to remove unneeded items from your plan.
 
 ## No planned orders are created
 
