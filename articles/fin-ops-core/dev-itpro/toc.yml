@@ -663,6 +663,8 @@ items:
             href: dev-ref/application-explorer-aot-properties.md
           - name: SysSetupConfigAttribute attribute
             href: dev-tools/syssetupconfigattribute.md
+          - name: SysSetup
+            href: dev-tools/syssetup.md
         - name: X++ language reference
           items:
           - name: X++ language reference overview
