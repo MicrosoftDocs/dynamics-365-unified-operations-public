@@ -120,7 +120,17 @@ To assign media to certain product dimensions, follow these steps:
 10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Assign media to product variants
-[todo]
+As explained in the [master > dimensions > variant fallback section](#product-master-product-dimensions-and-product-variant-media-assignments) above, media can be assigned to individual product variants whenever needed.  This severs the fallback to both dimension or master media assignments, and media assignments for the selected variant are entirely controlled at the variant level.
+
+To assign media to a specific product variant, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product master (that is configured in HQ with more than one dimension) using its name or product ID in the search view on the left, and select it.
+3. Click the **Edit product media** button in the upper right.
+4. Click on the **Variant** tab next to the Master and Dimensions tab at the top of the workspace.
+5. Find the variant you wish to edit, and click the **+** button (or the preview image, if media is already assigned) in the **Assign media** column.  This will navigate to the media assignment editing workspace for the chosen product variant.
+6. Edit your primary and additional media assignments for the chosen product variant using the **Add media** and **Remove** (trash can icon on each media item when selected) buttons. 
+9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
+10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Previewing media assignments
 [todo]
