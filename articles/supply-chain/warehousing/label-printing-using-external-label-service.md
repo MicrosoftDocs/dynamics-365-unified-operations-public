@@ -202,7 +202,7 @@ The following example shows what the label layout (in this case, the layout for 
 "labelfile": "/Labels/SimpleLicensePlateLabel1",
 "variables": {
     "Item": "$ItemId$",
-    "Container": "$LicensePlateId"
+    "Container": "$LicensePlateId$"
 }
 ```
 
