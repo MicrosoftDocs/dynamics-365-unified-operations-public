@@ -51,16 +51,16 @@ The purpose of each of these features is summarized in the following table
 
 Sales orders can be archived when the following conditions are met:
 
-- The sales orders must be fully invoiced.
-- The ledger period must be closed or on hold.
-- Inventory closing must be run on or after the to-period date of the archive.
-- The period must be at least one year before the from-period date of the archive. <!--KFM: Which period? Ledger period? -->
+- The sales orders to be archived must be fully invoiced.
+- The ledger period must be closed or on hold. <!--KFM: Which period? Current period? -->
+- Inventory closing must be run on or after the to-period date of the archive. <!--KFM: Is our point that the closing must already be set to run, or that it must not be run before the to-period? -->
+- The period must be at least one year before the from-period date of the archive. <!--KFM: Which period? -->
 
 ## Set up a batch job to archive sales orders
 
 To set up sales order archiving, follow these steps:
 
-1. Navigate to **Archive** workspace. <!--KFM: How do we get here? Give full nav path. -->
+1. Navigate to the **Archive** workspace. <!--KFM: How do we get here? Give full nav path. -->
 1. From the top-left Archive dropdown button, select **Sales order archive automation**  
 1. Then select company (legal entity) and click on the Archive button  
 1. Then enter name and description (optional)and set schedule time to run. NOTE: For the Sales order archive automation, the repeats option has additional options available that other process automations do not. In the screenshot below the archive automation will run daily and run 13 hours each day, and will continue daily run until it completes, no matter how long it takes to complete.  
