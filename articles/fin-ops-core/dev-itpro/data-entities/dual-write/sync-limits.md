@@ -124,8 +124,6 @@ The following limits apply when data is written from Dataverse to finance and op
 | Number of records per single transaction | <p>A payload size limit on Dataverse limits the number of records that can be transferred. The limit is 116.85 megabytes (MB) per transaction. For more information, see [Error: Message size exceeded when sending context to Sandbox](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox). Use of this limit depends on the multiple factors, such entity complexity, the type of columns that is used, and mapped fields. Therefore, the limit can't be expressed as a simple number of records.</p><p>If the limit is exceeded, Dataverse rejects the transaction (referred to as a *message*), and the following error code is used:</p><p>*Error Code: -2147220970 Error Message: Message size exceeded when sending context to Sandbox. Message size: ### MB*</p><p>If the size of the records in a single transaction exceeds 116.65 MB, consider splitting the transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this article.</p> |
 | Transaction timeout | 2 minutes |
 
-For certain dual-write setup scenarios, you can [enable a five-minute session time-out window for dual-write sessions](5-minute-mode.md)
-
 ## Transactions with more than 1,000 records
 
 Scenarios where transactions have more than 1,000 records are common. In these scenarios, we recommend that you split single transactions into multiple transactions. The following code examples show how to make multiple transactions, based on record IDs.

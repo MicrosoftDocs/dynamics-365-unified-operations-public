@@ -30,7 +30,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 - [Initialize seed data](enable-configure-retail-functionality.md)
 
-## Global prerequisities required for all channel types
+## Global prerequisites required for all channel types
 
 - [Define and configure your legal entity structure](channels-legal-entities.md) 
 - [Configure your organizational hierarchy](channels-org-hierarchies.md)

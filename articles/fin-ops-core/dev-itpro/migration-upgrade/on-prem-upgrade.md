@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 10.0.x
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # In-place upgrade process for on-premises environments
@@ -123,9 +124,9 @@ An overview of each path is given below:
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
      
-    d.  The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+    d.  The database will need to be configured. Follow the steps in [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
 
-    e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
+    e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
     f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -139,7 +140,7 @@ An overview of each path is given below:
 
     a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded DB.
 
-    b.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+    b.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md).
 
 15. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
@@ -208,9 +209,9 @@ An overview of each path is given below:
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
-    d.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+    d.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations (on-premises) database](../deployment/setup-deploy-on-premises-latest.md#configure-the-finance--operations-on-premises-database).
 
-    e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
+    e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
 
     f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -224,7 +225,7 @@ An overview of each path is given below:
 
     a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded database.
 
-    b.  Set up a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+    b.  Set up a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-latest.md).
 
 14. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 

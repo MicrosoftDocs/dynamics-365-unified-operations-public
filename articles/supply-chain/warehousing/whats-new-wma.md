@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/25/2022
+ms.date: 03/15/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -19,29 +19,83 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Version 2.0.39.0
+## Version 2.1.1.0  
+
+### New features introduced in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- The app is now available for iOS devices. 
+- This version is compliant with regulations for European Union Data Boundary (EUDB) and sovereign clouds. 
+
+### New fixes and improvements in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability for installations deployed using Microsoft Intune. 
+- Fixed an issue where the app couldn't connect to the server when running on Android 4.4. 
+- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server. 
+
+## Version 2.0.42.0
+
+This version introduces the following new features, fixes, and improvements: 
+
+- The user settings and input-helper dialogs now include a back button in the toolbar.
+- You can now use a pull-down gesture to close the user settings and photo dialogs.
+- Fixed an issue that could occur when confirming a quantity using a unit of measure that is named similarly to the next unit of measure in its sequence group. Previously, this could result in the app assuming the wrong unit of measure, but now it correctly identifies each unit in the sequence.
+
+## Version 2.0.41.0  
+
+### New features introduced in version 2.0.41.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- The app is now available for devices running on x86 Android platforms.
+- The app now supports managed configuration with Microsoft Intune and other mobile device management (MDM) solutions.
+- Although the app isn't available in app stores in China, customers can now download the app from Microsoft App Center and use it together with Dynamics 365 Supply Chain Management environments operated by 21Vianet in China.
+
+### New fixes and improvements in version 2.0.41.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability.
+- The **Edit connection** page now includes a **Cancel** button.
+- Fixed an issue on the **Alphanumeric input** page. Bar codes are now trimmed correctly when entered on this page.
+- Fixed a layout issue on the **Inquiry** page. Inquiry cards now use the correct layout after the device's orientation changes.
+- Fixed a sorting issue on the **Work list** page. Work cards are now sorted in the correct direction (ascending or descending) when using the default sorting option.
+- Fixed a display issue on the **Edit scanned IDs** dialog pop-up page. The page now displays correctly.
+- Fixed a layout issue on the **Login** page. The page now shows its fields correctly after the device's orientation changes.
+
+## Version 2.0.40.0
 
 This version introduces the following new features, fixes, and improvements:
 - Increased stability. 
-- The fields of the **Custom** page are no longer sorted automatically based on their priority and sub-priority settings.  
-- The app now uses the priority and sub-priority settings for each field to identify the primary field for a page. The primary field is shown in the step header. 
+
+## Version 2.0.39.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Increased stability. 
+- The fields of the **Custom** page are no longer sorted automatically based on their priority and subpriority settings.  
+- The app now uses the priority and subpriority settings for each field to identify the primary field for a page. The primary field is shown in the step header.
 - Fixed an issue where the soft keyboard wouldn't hide on Android.
-- Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the *movement* flow. 
-- Fixed an issue where the read-only quantity spinner value wasn't centered correctly. 
-- Fixed an issue where web pages wouldn't open from the **About** page. 
+- Fixed an issue where the quantity spinner showed an incorrect correct value on opening in the *movement* flow.
+- Fixed an issue where the read-only quantity spinner value wasn't centered correctly.
+- Fixed an issue where web pages wouldn't open from the **About** page.
 - The *Auto* color theme now takes its default appearance (light or dark) based on the global theme set in the mobile device's operating system.
 
 ## Version 2.0.37.0
 
 This version introduces the following new features, fixes, and improvements:
-- Added a user setting that lets workers choose where the app displays product photos (in both cards and step headers, only in step headers, or not at all). 
-- Improved the details card screen layout by reducing the size of the step banner and quantity input spinner, which leaves more room for other content. 
-- Improved the user interface when running on a Honeywell Thor device. 
-- Improved full-screen mode (only applies to devices with a hardware keyboard). 
-- Improved results when sorting details cards and custom pages by priority or sub-priority (DataPriority or DisplaySubPriority). 
-- Added support for more languages. 
-- Improved stability. 
-- Improved several images and icons. 
+
+- Added a user setting that lets workers choose where the app displays product photos (in both cards and step headers, only in step headers, or not at all).
+- Improved the details card screen layout by reducing the size of the step banner and quantity input spinner, which leaves more room for other content.
+- Improved the user interface when running on a Honeywell Thor device.
+- Improved full-screen mode (only applies to devices with a hardware keyboard).
+- Improved results when sorting details cards and custom pages by priority or subpriority (DataPriority or DisplaySubPriority).
+- Added support for more languages.
+- Improved stability.
+- Improved several images and icons.
 
 ## Version 2.0.35.0
 
@@ -89,7 +143,7 @@ This version introduces the following new features, fixes, and improvements:
 
 - Improved stability.
 - Introduced the ability to continue scanning even while an error dialog is shown on the screen.
-- Added support for ASCII 10 in barcodes.
+- Added support for ASCII 10 in bar codes.
 - Improved the usability of step instruction dialogs.
 - Fixed an issue where a blank screen could sometimes be shown.
 - Fixed an issue where work lists didn't scroll correctly when running on Microsoft Windows.
@@ -115,10 +169,10 @@ This version introduces the following new features, fixes, and improvements:
 - Improved performance issues for Android.
 - Fixed placement of multiple headers to allow more cards to display on the **Inquiry** page.
 - Improved scrolling so less distance for scrolling pagination is enabled.
-- Added long press to display additional text on the **Inquiry** page.
+- Added long press to display more text on the **Inquiry** page.
 - Fixed missing device ID information for Android.
 - Increased stability.
-- Optimized the login layout.
+- Optimized the sign-in layout.
 - Added swipe-right gesture to close dialog pop-up pages on the number pad, **Details** page, and input pages.
 
 ## Version 2.0.22.0
@@ -126,7 +180,7 @@ This version introduces the following new features, fixes, and improvements:
 This version introduces the following new features, fixes, and improvements:
 
 - Fixed several crashing issues.
-- Fixed an issue where some characters would not be recognized when scanning or typing on the default page.
+- Fixed an issue where some characters wouldn't be recognized when scanning or typing on the default page.
 - Fixed an issue where typing a backspace on the default page would delete two characters at a time.
 - Fixed an issue where the **Sort by** field on the **Work list** page would display an incorrect value that didn't correspond to the actual sorting order of the cards.
 - Fixed an issue where an incorrect layout would be shown after resizing the app window while running on Microsoft Windows.
@@ -182,7 +236,7 @@ This version introduces the following new features, fixes, and improvements:
 - Added missing selection list titles.
 - Fixed an issue where the back button didn't work.
 - Added several keyboard navigation fixes and improvements, including on the following pages:
-  - User login
+  - User sign in
   - Select connection
   - Edit connection
 - Fixed scrolling when using keyboard navigation.
@@ -292,7 +346,7 @@ This version introduces the following new features, fixes, and improvements:
 
 ### Known issues in version 2.0.7.0
 
-- On some devices, you will get the following error message when you start the app or begin a task: "Cannot find a suitable view for the specified size." If you see this error message on any of your devices, you must downgrade the Warehouse Management mobile app to version 2.0.6.0 on that device and wait to upgrade until the next version of the app is released.
+- On some devices, you'll get the following error message when you start the app or begin a task: "Cannot find a suitable view for the specified size." If you see this error message on any of your devices, you must downgrade the Warehouse Management mobile app to version 2.0.6.0 on that device and wait to upgrade until the next version of the app is released.
 
 ## Version 2.0.6.0
 
@@ -353,13 +407,13 @@ This version introduces the following new features, fixes, and improvements that
 - If a details card includes two labels that have identical data, one of the labels is hidden.
 - Special characters are now shown by default, and the option to hide them has been removed from user settings.
 - Disabled submit buttons are now shown as unavailable in compact arm-held view.
-- A change to the sequencing logic for controls ensures smoother scaling across devices. Therefore, there is less need to adjust the scaling of fonts or buttons.
+- A change to the sequencing logic for controls ensures smoother scaling across devices. Therefore, there's less need to adjust the scaling of fonts or buttons.
 - The default color theme has been changed to *Dark*.
 - The missing icon for the disabled submit button has been added in ribbon view.
 - Time-out exceptions now take you to the connection page instead of showing an in-line error.
 - If no submit action is available (such as **OK**, **Yes**, **Accept**, **Done**, or **Finished**), the submit button will be disabled.
 - App stability has been improved.
-- There is a fix for security vulnerability [CVE-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701).
+- There's a fix for security vulnerability [CVE-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701).
 - **Windows version:** An issue on Windows, where menus were unresponsive after the window was resized, has been fixed.
 
 ### Known issue in version 2.0.4.0

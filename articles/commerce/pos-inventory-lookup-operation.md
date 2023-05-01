@@ -2,19 +2,14 @@
 title: Inventory lookup operation in POS
 description: This article describes how to use the inventory lookup operation in Dynamics 365 Commerce point of sale (POS) to view the on-hand inventory availability of products across stores and warehouses.
 author: boycezhu
-ms.date: 08/12/2021
+ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: 2018-03-30
-ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+
 ---
 
 # Inventory lookup operation in POS
@@ -113,7 +108,7 @@ You can configure the inventory lookup operation to appear as a link in the butt
 
 ## Inventory lookup with channel-side calculation
 
-In Commerce release 10.0.9 and earlier, the **available physical** value in the inventory lookup operation is retrieved from Commerce headquarters via a real-time service call. In Commerce release 10.0.10 and later, you can configure the POS inventory lookup operation to use channel-side calculation on the Commerce server to determine the available physical value, which can provide a more reliable and more accurate estimate of the on-hand inventory by factoring in the transactional data that is not yet synchronized to headquarters. For more information about channel-side inventory calculation and related POS configuration in headquarters, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
+In Commerce release 10.0.9 and earlier, the **available physical** value in the inventory lookup operation is retrieved from Commerce headquarters via a real-time service call. In Commerce release 10.0.10 and later, you can configure the POS inventory lookup operation to use channel-side calculation on the Commerce server to determine the available physical value, which can provide a more reliable and more accurate estimate of the on-hand inventory by factoring in the transactional data that is not yet synchronized to headquarters. For more information about channel-side inventory calculation and related POS configuration in headquarters, see [POS inventory lookup with channel-side calculation](inventory-lookup-channel-side-calc.md).
 
 ## Additional resources
 

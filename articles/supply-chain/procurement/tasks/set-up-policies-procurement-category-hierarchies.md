@@ -5,7 +5,7 @@ title: Set up policies for procurement category hierarchies
 description: Use this procedure to set up rules for ordering products in a category. 
 author: GalynaFedorova
 ms.date: 07/22/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ Use this procedure to set up rules for ordering products in a category. The rule
 
 
 ## Find the procurement policy
-1. In the Navigation pane, go to **Modules > Procurement and sourcing > Setup > Policies > Purchasing policies**.
+1. Go to **Procurement and sourcing > Setup > Policies > Purchasing policies**.
 2. Click the link on the 'Procurement Policy USMF' policy. This is the policy that you'll add a rule to. It must be an Active policy.  
 
 ## Create a category access rule

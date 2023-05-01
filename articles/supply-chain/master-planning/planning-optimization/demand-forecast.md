@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Master planning with demand forecasts
 description: This article explains how to include demand forecasts during master planning.
 author: t-benebo
-ms.date: 12/02/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2020-12-02
-ms.dyn365.ops.version: AX 10.0.13
-
+ms.reviewer: kamaybac
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
+ms.topic: how-to
+ms.date: 01/06/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
+
 # Master planning with demand forecasts
 
 [!include [banner](../../includes/banner.md)]
@@ -144,9 +130,9 @@ If you set the **Method used to reduce forecast requirements** field to *Transac
 
 The qualified demand is defined by the **Reduce forecast by** field on the **Coverage groups** page. If you set the **Reduce forecast by** field to *Orders*, only sales order transactions are considered qualified demand. If you set it to *All transactions*, any non-intercompany issue inventory transactions are considered qualified demand. If intercompany sales orders should also be considered qualified demand, set the **Include intercompany orders** option to *Yes*.
 
-Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there is unconsumed forecast).
+Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there's unconsumed forecast).
 
-If no unconsumed forecast remains in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
+If no unconsumed forecast remains in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there's unconsumed forecast).
 
 The value of the **Percent** field on the reduction key lines isn't used when the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key*. Only the dates are used to define the reduction key period.
 
@@ -226,9 +212,9 @@ If you select **Transactions - dynamic period**, the forecast requirements are r
 
 When this option is used, the following behavior occurs:
 
-- Reduction keys aren't required or used. 
+- Reduction keys aren't required or used.
 - If the forecast is completely reduced, the forecast requirements for the current forecast become 0 (zero).
-- If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.
+- If there's no future forecast, forecast requirements from the last forecast that was entered are reduced.
 - Time fences are included in the forecast reduction calculation.
 - Positive days are included in the forecast reduction calculation.
 - If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
@@ -272,7 +258,7 @@ For this example, you create a demand forecast for the following dates and quant
 | January 5  | 500             |
 | January 12 | 1,000           |
 
-Notice that, in this forecast, there isn't a clear period between the forecast dates. Between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span. These spans are the dynamic periods.
+Notice that, in this forecast, there isn't a clear period between the forecast dates. Between the first and second dates, there is a four-day span, and between the second and third dates there is a seven-day span. These spans are the dynamic periods.
 
 You also create the following sales order lines.
 
@@ -340,7 +326,7 @@ The resulting structure gives you a powerful way to control forecasts, because i
 
 ### Submodel levels
 
-There is no limit on the number of submodels that can be added to a parent forecast model. However, the structure can be only one level deep. In other words, a forecast model that is a submodel of another forecast model can't have its own submodels. When you add submodels to a forecast model, the system checks whether that forecast model is already a submodel of another forecast model.
+There's no limit on the number of submodels that can be added to a parent forecast model. However, the structure can be only one level deep. In other words, a forecast model that is a submodel of another forecast model can't have its own submodels. When you add submodels to a forecast model, the system checks whether that forecast model is already a submodel of another forecast model.
 
 If master planning encounters a submodel that has its own submodels, you receive an error message.
 
@@ -393,4 +379,3 @@ To assign submodels to a forecast model, follow these steps.
     - **Name** – Enter a descriptive name for the submodel. For example, this name might indicate the submodel's relation to the parent forecast model.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

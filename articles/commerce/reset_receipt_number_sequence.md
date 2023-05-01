@@ -2,7 +2,7 @@
 title: Reset receipt numbers
 description: This article describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
 author: ShalabhjainMSFT
-ms.date: 10/06/2020
+ms.date: 01/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,13 +42,14 @@ In Commerce, receipt formats can be alphanumeric. You can put both static conten
 
 You can reset the sequential numbering of the receipt on a specific date. Then, for the first transaction that occurs after 12:00 AM on the selected reset date, the system resets the receipt's number sequence to 1. You can also specify whether the reset occurs only one time, or whether it recurs every year. If yearly recurrence is specified, the reset automatically occurs every year until the retailer chooses to stop it. 
 
-To turn on the reset, follow these steps.
+To turn on the reset in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. On the **Receipt numbering** FastTab, select **Reset number reset date**.
 1. In the drop-down dialog box, in the **Reset date** field, select a future date when the reset should occur.
 1. In the **Reset receipt type** field, select **One time only** or **Yearly**.
 1. Select **OK**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule** and run the **1070 (Channel configuration)** job to synchronize the latest functionality profile settings to POS clients.
 
 ![Selecting a receipt reset date.](media/Enable_receipt_reset.png "Selecting a receipt reset date")
 
@@ -59,7 +60,8 @@ When the reset date arrives, the receipt number is reset for the first transacti
 You can use the **Clear reset date** functionality to clear future reset dates. However, if the reset date occurred in the past, it can't be undone. Therefore, the reset will still occur for all registers where the reset hasn't yet occurred.
 
 > [!NOTE]
-> Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
-
+> - The reset date set in **Functionality profiles** isn't associated with a specific time zone. For example, if you select **January 1, 2020** as the reset date, POS devices in all time zones will reset the receipt back to "1" on January 1, 2020 local time.
+> - If you want the receipt masks to be changed together when the reset date arrives, you must first set the reset date in **Functionality profiles** (for example, "January 1, 2020"). When the reset date arrives, before you create orders you must set the receipt masks to what you want in **Functionality profiles**, and then sync data to both the CSU and offline databases. After you finish configuring all these settings, POS will start creating orders using new receipt masks with the receipt ID reset.
+> - Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

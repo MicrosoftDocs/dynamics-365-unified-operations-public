@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.29
 # Finite capacity planning and scheduling
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 10.0.31 GA -->
 
 Finite capacity is an approach that helps you understand how much work can be produced during a specific period when limitations on different resources are taken into consideration. The purpose of finite capacity scheduling is to ensure that work proceeds at an even and efficient pace throughout the plant.
 

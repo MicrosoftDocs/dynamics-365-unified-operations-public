@@ -5,7 +5,7 @@ title: Create a purchase order from a sales order
 description: This procedure shows you how to create a purchase order that is based on a sales order. 
 author: Henrikan
 ms.date: 06/26/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure shows you how to create a purchase order that is based on a sales
 
 
 ## Create a purchase order from a sales order
-1. Go to **Navigation pane > Modules > Sales and marketing > Sales orders > All sales orders**.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 2. Click **New**.
 3. In the **Customer account** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.

@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configure CPOS to use a custom Azure AD app
-description: This article explains how to configure Cloud POS (CPOS) to use a custom Azure Active Directory (Azure AD) app.
+title: Configure Store Commerce for web to use a custom Azure AD app
+description: This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Azure Active Directory (Azure AD) app.
 author: boycez
-ms.date: 11/04/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -14,11 +14,17 @@ ms.search.validFrom: 2017-06-20
 
 ---
 
-# Configure CPOS to use a custom Azure AD app
+# Configure Store Commerce for web to use a custom Azure AD app
 
 [!include [banner](includes/banner.md)]
 
-By default, Cloud POS (CPOS) in Microsoft Dynamics 365 Commerce points to a registered first-party Microsoft app in Azure Active Directory (Azure AD). Therefore, you can use CPOS without having to make any changes in Azure AD. However, you might want to point your instance of CPOS to a custom Azure AD app that you control. This article explains how to configure CPOS to use a custom Azure AD app.
+This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Azure Active Directory (Azure AD) app
+
+By default, Store Commerce for web points to a registered first-party Microsoft app in Azure Active Directory (Azure AD). Therefore, you can use Store Commerce for web without having to make any changes in Azure AD. However, you might want to point your instance of Store Commerce for web to a custom Azure AD app that you control. This article explains how to configure Store Commerce for web to use a custom Azure AD app. 
+
+> [!NOTE] 
+> This article only applies to self-hosted Commerce Scale Unit (CSU) installations or development using a self-hosted CSU. 
+
 
 ## Set up a custom Retail Server app in Azure AD
 
@@ -45,21 +51,21 @@ To create and configure a custom Retail Server app in Azure AD, follow these ste
 
 1. Select **Add scope** to complete the scope creation process.
 
-## Set up a custom CPOS app in Azure AD
+## Set up a custom app for Store Commerce for web in Azure AD
 
 > [!IMPORTANT]
-> If you're upgrading an existing custom CPOS Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+> If you're upgrading an existing custom Store Commerce for web Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom Store Commerce for web Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-store-commerce-for-web-azure-ad-app-created-before-commerce-version-10021).
 
-To create and configure a custom CPOS app in Azure AD, follow these steps.
+To create and configure a custom app for Store Commerce for web in Azure AD, follow these steps.
 
 1. Sign in to the [Azure Active Directory admin center](https://aad.portal.azure.com) by using any Azure AD user account. The user account doesn't have to have administrator permissions.
 1. Select **Azure Active Directory**.
 1. Select **App registrations**, and then select **New registration** to open the **Register an application** dialog box.
 1. Set the following fields:
 
-    - **Name** – Enter a name for the app. For example, enter **Custom Cloud POS**.
+    - **Name** – Enter a name for the app. For example, enter **Custom Store Commerce for web**.
     - **Support account types** – Select the default option, **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
-    - **Redirect URI** – Select **Single-page application (SPA)** in the drop-down list, and then enter your CPOS URI.
+    - **Redirect URI** – Select **Single-page application (SPA)** in the drop-down list, and then enter your Cloud POS URL.
     - **Service Tree ID** – This field is optional. Leave it blank.
 
 1. Select **Register**. The configuration page for the newly registered app appears.
@@ -73,11 +79,11 @@ To create and configure a custom CPOS app in Azure AD, follow these steps.
 1. On the **APIs my organization uses** tab, search for the Retail Server app that you created in the [Set up a custom Retail Server app in Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad) section. Then select **Add permissions**.
 1. In the **Overview** section, make a note of the value in the **Application (client) ID** field.
 
-### Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21
+### Upgrade an existing custom Store Commerce for web Azure AD app created before Commerce version 10.0.21
 
-To upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21, follow these steps. 
+To upgrade an existing custom Store Commerce for web Azure AD app created before Commerce version 10.0.21, follow these steps. 
 
-1. Open your custom CPOS Azure AD app in the Azure portal.
+1. Open your custom Store Commerce for web Azure AD app in the Azure portal.
 1. Select the **Authentication** tab.
 1. Copy and save the original redirect URI from the **Web** type for use later, and then delete it.
 1. Select **Add a platform**, and then select **Single-page application (SPA)**.
@@ -86,14 +92,14 @@ To upgrade an existing custom CPOS Azure AD app created before Commerce version 
     1. Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
     1. Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
 
-## Update the CPOS configuration file
+## Update the Store Commerce for web configuration file
 
-Open the CPOS config.json file, and make the following updates in it.
+The following steps only apply to a CSU (self-hosted) that uses the Retail SDK. If you are using a sealed CSU installer, this process is completed automatically during the installation process. Open the Store Commerce for web config.json file, and make the following changes.
 
-1. Replace the **AADClientId** key value with the **Application (client) ID** value of the custom CPOS app that you created in the [Set up a custom CPOS app in Azure AD](#set-up-a-custom-cpos-app-in-azure-ad) section.
+1. Replace the **AADClientId** key value with the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
 1. Replace the **AADRetailServerResourceId** key value with the **Application ID URI** value of the custom Retail Server app that you created in the [Set up a custom Retail Server app in Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad) section.
 
-CPOS will use both parameters when it sends requests to Azure AD to acquire a security token.
+Store Commerce for web will use both parameters when it sends requests to Azure AD to acquire a security token.
 
 ## Update identity providers settings in Commerce headquarters
 
@@ -104,7 +110,7 @@ Next, you must update identity providers settings in Commerce headquarters.
 1. In the **Relying parties** section, select **Add** to add a row.
 1. Set the following fields:
 
-    - **ClientId** – Enter the **Application (client) ID** value of the custom CPOS app that you created in the [Set up a custom CPOS app in Azure AD](#set-up-a-custom-cpos-app-in-azure-ad) section.
+    - **ClientId** – Enter the **Application (client) ID** value of the custom Store Commerce for web app that you created in the [Set up a custom Store Commerce for web app in Azure AD](#set-up-a-custom-app-for-store-commerce-for-web-in-azure-ad) section.
     - **Type** – Select **Public**.
     - **UserType** – Select **Worker**.
 
@@ -117,7 +123,7 @@ Next, you must update identity providers settings in Commerce headquarters.
 
 1. Go to **Retail and Commerce IT \> Distribution schedule**, and run the **1110** (**Global configuration**) job.
 
-You can now activate CPOS devices by using your own Azure AD app.
+You can now activate Store Commerce for web devices by using your own Azure AD app.
 
 ## Additional resources
 

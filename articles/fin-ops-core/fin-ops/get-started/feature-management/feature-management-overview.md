@@ -3,7 +3,7 @@
 title: Feature management overview
 description: This article describes Feature management and how you can use it.
 author: Peakerbl
-ms.date: 01/10/2022
+ms.date: 04/25/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -57,12 +57,16 @@ The **Feature management** workspace also has several tabs, each of which shows 
 - **Scheduled** – This tab shows all features that have been scheduled to be turned on in the future. The features that have the earliest scheduled date appear at the top of the list. In addition, a tile at the top of the page shows the total number of scheduled features.
 - **All** – This tab shows all features. The newest features appear at the top of the list.
 
+## Feature recommendation notifications
+
+Starting in version 10.0.35, users may start to see notifications informing them about recommended features. Users can review a recommended feature and request that it be enabled by an administrator. The request triggers a notification to be sent to administrators, which they can use to assess the suggested feature and decide whether it should be enabled for their organization.
+
 ## Feature states
 Features can transition between several states, from being introduced in Feature management to eventually becoming mandatory in the product. This section describes the valid feature states.
 
 ### Preview features (optional)
 
-Product teams can decide to initially start a new feature as a preview feature. Preview features aren't enabled by default, and they are optional. The owning product team will update features to released after they have completed a successful preview period.
+Product teams can decide to initially start a new feature as a preview feature. Preview features aren't enabled by default, and they're optional. The owning product team will update features to released after they have completed a successful preview period.
 
 > [!NOTE]
 > Preview features are subject to specific preview [terms and conditions](https://go.microsoft.com/fwlink/?linkid=2105274). 
@@ -73,7 +77,7 @@ The **Feature state** column for these features is blank. Features that are init
 
 ### On by default features (optional)
 
-Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they are expected to move to this state in the next major release. Features that transition to **On by default** are expected to be communicated in the [What's new](../whats-new-changed.md) article for the release. The update is initiated by the owning product team.
+Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they're expected to move to this state in the next major release. Features that transition to **On by default** are expected to be communicated in the [What's new](../whats-new-changed.md) article for the release. The update is initiated by the owning product team.
 
 > [!NOTE]
 > Because these features will be enabled automatically, it's important that you determine whether your organization is ready to uptake these features, or whether more time is required. If more time is required, it might be necessary to temporarily disable these features. Note that the transition of a feature to **On by default** is typically done in the major release before the feature is targeted to become **Mandatory**. At that point, you won't have the option to disable the feature. 
@@ -82,9 +86,9 @@ Features that are updated to **On by default** are turned on by default, but the
 
 **Mandatory** is the expected final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
 
-## Example of expected feature lifecycles
+## Example of expected feature lifecycle
 
-Features that can be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **On by default** in the following October release. They are then expected to become **Mandatory** in April of the following year.
+Features that can be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **On by default** in the following October release. They're then expected to become **Mandatory** in April of the following year.
 
 Feature that can't be disabled, and that were added as released and optional before or as part of the April release, are expected to transition to **Mandatory** in April of the following year.
 
@@ -135,8 +139,8 @@ All features that can be enabled will be enabled. If a feature is already schedu
 
 If you want to automatically enable all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-- Select **Enable new features automatically** to automatically enable all new features when they are added to your environment.
-- Select **Do not enable new features automatically** if all applicable new features should be off by default when they are added to your environment.
+- Select **Enable new features automatically** to automatically enable all new features when they're added to your environment.
+- Select **Do not enable new features automatically** if all applicable new features should be off by default when they're added to your environment.
 
 When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
 
@@ -200,9 +204,9 @@ Yes, features can be enabled without the customer's knowledge in the following s
 - A feature is updated to **Mandatory**. This change will only occur in combination with a major release. Critical features might, by exception, be moved to **Mandatory** at any update.
 
 ### What is feature flighting and how does it relate to feature management? 
-Feature flights are real-time on/off switches that Microsoft controls. They are separate from the customer control provided by Feature Management. 
-- Private Preview features will not be listed in Feature Management until they are flighted on. In production, the customer needs to agree to be part of a special program for that to occur.
-- Public Preview and Released (generally available) features will be listed in Feature Management unless they are flighted off. Flighting a feature off is considered a last resort option for product teams if a critical issue is found and would usually be a per-customer operation.
+Feature flights are real-time on/off switches that Microsoft controls. They're separate from the customer control provided by Feature Management. 
+- Private Preview features will not be listed in Feature Management until they're flighted on. In production, the customer needs to agree to be part of a special program for that to occur.
+- Public Preview and Released (generally available) features will be listed in Feature Management unless they're flighted off. Flighting a feature off is considered a last resort option for product teams if a critical issue is found and would usually be a per-customer operation.
 
 ### Do features ever get flighted off without the customer knowing about it? 
 Yes, if a feature is impacting the functioning of an environment that doesn't have a functional impact then they can be enabled by default.

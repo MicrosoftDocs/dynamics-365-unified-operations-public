@@ -2,15 +2,14 @@
 title: Demand forecasting setup
 description: This article describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: t-benebo
-ms.date: 11/23/2021
-ms.topic: article
-ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.reviewer: kamaybac
+ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
+ms.topic: how-to
+ms.date: 01/05/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Demand forecasting setup
@@ -85,7 +84,7 @@ Use the **General** tab of the **Demand forecasting parameters** page to define 
 
 Demand forecasting generates the forecast in quantities. Therefore, the unit of measure that the quantity should be expressed in must be specified in the **Demand forecast unit** field. This field defines the unit that will be used for all demand forecasts, regardless of the usual inventory units for each product. By using a consistent forecast unit, you help ensure that the aggregation and percentage distribution make sense. For more information about aggregation and percentage distribution, see [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md).
 
-For every unit of measure that is used for SKUs that are included in demand forecasting, make sure that there is a conversion rule for the unit of measure and the general forecasting unit of measure that you select here. When you generate a forecast, the list of items that don't have a unit of measure conversion is logged. Therefore, you can easily correct the setup. For more information about units of measure and how to convert among them, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
+For every unit of measure that is used for SKUs that are included in demand forecasting, make sure that there's a conversion rule for the unit of measure and the general forecasting unit of measure that you select here. When you generate a forecast, the list of items that don't have a unit of measure conversion is logged. Therefore, you can easily correct the setup. For more information about units of measure and how to convert among them, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
 
 #### Transaction types
 
@@ -101,7 +100,7 @@ The **Forecast generation strategy** field lets you select the method that is us
 
 - *Copy over historical demand* – Create forecasts by just copying historical data.
 - *Azure Machine Learning Service* – Use a forecast model that uses the Azure Machine Learning Service. The Azure Machine Learning Service is the current machine learning solution for Azure. Therefore, we recommend that you use it if you want to use a forecast model.
-- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning Studio (classic). Azure Machine Learning Studio (classic) has been deprecated and will soon be removed from Azure. Therefore, so we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning Studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
+- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning studio (classic). Azure Machine Learning studio (classic) has been deprecated and will soon be removed from Azure. Therefore, so we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
 
 You can override the forecast generation method for one or more specific item allocation keys by using the **Item allocation keys** tab. That tab provides similar fields.
 
@@ -131,14 +130,14 @@ Use the **Azure Machine Learning Service** tab to set up the connection to the A
 
 For more information about how to set up the Azure Machine Learning Service and then use the settings here to connect to it, see the [Set up the Azure Machine Learning Service](#setup-amls) section.
 
-### Set up the connection to Azure Machine Learning Studio (classic)
+### Set up the connection to Azure Machine Learning studio (classic)
 
 > [!IMPORTANT]
 > Azure Machine Learning Studio (classic) has been deprecated. Therefore, you can no longer create new workspaces for it in Azure. It has been replaced by the Azure Machine Learning Service, which provides similar functionality and more. If you aren't already using Azure Machine Learning, you should start to use the Azure Machine Learning Service. If you already have a workspace that was created for Azure Machine Learning Studio (classic), you can continue to use it until the feature is completely removed from Azure. However, we recommend that you update to the Azure Machine Learning Service as soon as possible. Although the application will continue to warn you that Azure Machine Learning Studio (classic) has been deprecated, the forecasting result won't be affected. For more information about the new Azure Machine Learning Service and how to set it up, see the [Set up the Azure Machine Learning Service](#setup-amls) section.
 >
 > You can freely switch between using the new and old machine learning solutions with Supply Chain Management for as long as your old Azure Machine Learning Studio (classic) workspace remains available.
 
-If you already have an available Azure Machine Learning Studio (classic) workspace, you can use it to generate forecasts by connecting it to Supply Chain Management. You can establish this connection by using the **Azure Machine Learning** tab on the **Demand forecasting parameters** page. (The settings on this tab have an effect only when the **Forecast generation strategy** field is set to *Azure Machine Learning*.) Enter the following details for your Azure Machine Learning Studio (classic) workspace:
+If you already have an available Azure Machine Learning studio (classic) workspace, you can use it to generate forecasts by connecting it to Supply Chain Management. You can establish this connection by using the **Azure Machine Learning** tab on the **Demand forecasting parameters** page. (The settings on this tab have an effect only when the **Forecast generation strategy** field is set to *Azure Machine Learning*.) Enter the following details for your Azure Machine Learning studio (classic) workspace:
 
 - Web service application programming interface (API) key
 - Web service endpoint URL
@@ -154,14 +153,14 @@ When you use machine learning to generate your forecast planning models, you con
 
 To set up the default parameters and values used for demand forecasting models, go to **Master Planning \> Setup \> Demand forecasting \> Forecasting algorithm parameters**. A standard set of parameters is provided. Each parameter has the following fields:
 
-- **Name** – The name of the parameter, as used by Azure. Usually, you should not change this name unless you've customized the experiment in Azure Machine Learning.
+- **Name** – The name of the parameter, as used by Azure. Usually, you shouldn't change this name unless you've customized the experiment in Azure Machine Learning.
 - **Description** – A common name for the parameter. This name is used to identify the parameter in other places in the system (for example, on the **Demand forecasting parameters** page).
 - **Value** – The default value for the parameter. The value that you should enter depends on the parameter that you're editing. 
 - **Explanation** – A short description of the parameter and how to use it. This description typically includes advice about valid values for the **Value** field.
 
 The following parameters are provided by default. (If you must ever revert to this standard list, select **Restore** on the Action Pane.)
 
-- **Confidence level percentage** – A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95% confidence level percentage indicates there is a 5% risk that the future demand falls outside the confidence interval range.
+- **Confidence level percentage** – A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95% confidence level percentage indicates there's a 5% risk that the future demand falls outside the confidence interval range.
 - **Force seasonality** – Specifies whether to force the model to use a specific type of seasonality. This parameter applies to ARIMA and ETS only. Options: *AUTO (default)*, *NONE*, *ADDITIVE*, *MULTIPLICATIVE*.
 - **Forecasting model** – Specifies which forecasting model to use. Options: *ARIMA*, *ETS*, *STL*, *ETS+ARIMA*, *ETS+STL*, *ALL*. To select the best-fit model, use *ALL*.
 - **Maximum forecasted value** – Specifies the maximum value to use for predictions. Format: +1E[n] or numeric constant.
@@ -193,10 +192,7 @@ Supply Chain Management calculates demand forecasts by using the Azure Machine L
 
 ### Enable the Azure Machine Learning Service in Feature management
 
-Before you can use the Azure Machine Learning Service for demand forecasting, you must turn on a feature in Supply Chain Management to enable the integration. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *Azure Machine Learning Service for demand forecasting*
+To use the Azure Machine Learning Service for demand forecasting, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Azure Machine Learning Service for demand forecasting* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="ml-workspace"></a>Set up machine learning in Azure
 
@@ -219,8 +215,8 @@ This section describes how to set up your machine learning workspace by using an
     - src/REntryScript/forecast.r
 
 1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, default datastore, and compute resources. However, you must still create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
-1. In Azure Machine Learning Studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The quick_setup.ps1 script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
-1. In Azure Machine Learning Studio, select **Notebooks** in the navigator.
+1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The quick_setup.ps1 script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
+1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the remaining four files that you downloaded in step 1 to the location that you found in the previous step.
 1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API.
@@ -259,13 +255,13 @@ Use the following procedure to set up your storage.
 
 Use the following procedure to set up your default datastore.
 
-1. In Azure Machine Learning Studio, select **Datastores** in the navigator.
+1. In Azure Machine Learning studio, select **Datastores** in the navigator.
 1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* Blob storage container that you created in the [Step 2: Configure storage](#config-storage) section. (If the authentication type of the new datastore is *Account key*, provide an account key for the created storage account. For instructions, see [Manage storage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).)
 1. Make your new datastore the default datastore by opening its details and selecting **Set as default datastore**.
 
 ##### <a name="config-compute-resources"></a>Step 4: Configure compute resources
 
-Use the following procedure to set up a compute resource in Azure Machine Learning Studio to run your forecasting generation scripts.
+Use the following procedure to set up a compute resource in Azure Machine Learning studio to run your forecasting generation scripts.
 
 1. Open the details page for the machine learning workspace that you created in the [Step 1: Create a new workspace](#create-workspace) section. Find the **Studio web URL** value, and select the link to open it.
 1. Select **Compute** on the navigation pane.
@@ -273,7 +269,7 @@ Use the following procedure to set up a compute resource in Azure Machine Learni
 1. On the **Compute clusters** tab, select **New** to open a wizard that will help you create a new compute cluster. Follow the on-screen instructions. The compute cluster will be used to generate demand forecasts. Its settings affect performance and the maximum level of parallelization of the run. Set the following fields, but use the default settings for all other fields:
 
     - **Name** – Enter *e2ecpucluster*.
-    - **Virtual machine size** – Adjust this setting according to the volume of data that you expect to use as input for demand forecasting. The node count should not exceed 11, because one node is required to trigger demand forecast generation and the maximum number of nodes that can then be used to generate a forecast is 10. (You will also set the node count in the parameters.py file in the [Step 5: Create pipelines](#create-pipelines) section.) On each node, there will be several worker processes that run forecasting scripts in parallel. The total number of worker processes in your job will be *Number of cores that a node has* × *Node count*. For example, if your compute cluster has a type of *Standard\_D4* (eight cores) and a maximum of 11 nodes, and if the `nodes_count` value is set to *10* in the parameters.py file, the effective level of parallelism is 80.
+    - **Virtual machine size** – Adjust this setting according to the volume of data that you expect to use as input for demand forecasting. The node count shouldn't exceed 11, because one node is required to trigger demand forecast generation and the maximum number of nodes that can then be used to generate a forecast is 10. (You'll also set the node count in the parameters.py file in the [Step 5: Create pipelines](#create-pipelines) section.) On each node, there will be several worker processes that run forecasting scripts in parallel. The total number of worker processes in your job will be *Number of cores that a node has* × *Node count*. For example, if your compute cluster has a type of *Standard\_D4* (eight cores) and a maximum of 11 nodes, and if the `nodes_count` value is set to *10* in the parameters.py file, the effective level of parallelism is 80.
 
 ##### <a name="create-pipelines"></a>Step 5: Create pipelines
 
@@ -286,7 +282,7 @@ Pipelines provide a way to start forecasting scripts from Supply Chain Managemen
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. In Azure Machine Learning Studio, select **Notebooks** in the navigator.
+1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the four files that you downloaded in step 1 to the location that you found in the previous step.
 1. In Azure, open and review the **parameters.py** file that you just uploaded. Make sure that the `nodes_count` value is one less than the value that you configured for the compute cluster in the [Step 4: Configure compute resources](#config-compute-resources) section. If the `nodes_count` value is greater than or equal to the number of nodes in the compute cluster, the pipeline run might be able to start. However, it will then stop responding while it waits for the required resources. For more information about the node count, see the [Step 4: Configure compute resources](#config-compute-resources) section.
@@ -306,7 +302,7 @@ An Active Directory application is required to authenticate with the resources t
     - Storage Blob Data Contributor role to the dedicated storage account
 
 1. In the **Certificates & secrets** section of the application that you created, create a secret for the application. For instructions, see [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
-1. Make a note of the application ID and its secret. You will need the details of this application later, when you set up the **Demand forecasting parameters** page in Supply Chain Management.
+1. Make a note of the application ID and its secret. You'll need the details of this application later, when you set up the **Demand forecasting parameters** page in Supply Chain Management.
 
 ### <a name="demand-forecast-parameters"></a>Set up Azure Machine Learning Service connection parameters in Supply Chain Management
 

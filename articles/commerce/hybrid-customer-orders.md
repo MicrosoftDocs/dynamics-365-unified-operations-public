@@ -42,7 +42,7 @@ If a cart line is selected and **Pick selected**, **Ship selected**, or **Carry 
 
 ## Additional resources
 
-[Customer orders in Modern POS (MPOS)](customer-orders-overview.md)
+[Customer orders in point of sale (POS)](customer-orders-overview.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

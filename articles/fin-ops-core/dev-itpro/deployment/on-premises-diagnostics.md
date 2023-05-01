@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform Update 12
 ms.custom: 60373
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # On-premises diagnostics
 

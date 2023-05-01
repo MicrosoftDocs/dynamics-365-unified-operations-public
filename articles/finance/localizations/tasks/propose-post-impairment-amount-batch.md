@@ -3,7 +3,7 @@ title: Propose and post the impairment amount by batch
 description: This task walks you through proposing and posting the impairment amount by batch.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

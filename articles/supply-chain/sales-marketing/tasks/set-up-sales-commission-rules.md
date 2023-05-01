@@ -5,7 +5,7 @@ title: Set up sales commission rules
 description: This procedure shows you how to set up and enable sales commission calculation and tracking. 
 author: Henrikan
 ms.date: 06/21/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,13 +31,13 @@ This procedure shows you how to set up and enable sales commission calculation a
 
 
 ## Set up commission groups and commission rates
-1. Go to **Navigation pane > Modules > Sales and marketing > Commissions > Customer groups for commission**.
+1. Go to **Sales and marketing > Commissions > Customer groups for commission**.
 2. Select **New**.
 3. In the **Group** field, type a value.
 4. In the **Name** field, type a value.
 5. Select **Save**.
 6. Close the page.
-7. Go to **Navigation pane > Modules > Sales and marketing > Commissions > Item groups**.
+7. Go to **Sales and marketing > Commissions > Item groups**.
 8. Select **New**.
 9. In the **Group** field, type a value.
 10. In the **Name** field, type a value.
@@ -73,11 +73,11 @@ This procedure shows you how to set up and enable sales commission calculation a
 36. Click **Save**.
 
 ## Setting up commission posting
-1. Go to **Navigation pane  > Sales and marketing > Commissions > Commission posting**. Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the **General ledger**. This is done in the **Commission posting** page. Review the setup that is available for the current company. Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account. If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.  
+1. Go to **Sales and marketing > Commissions > Commission posting**. Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the **General ledger**. This is done in the **Commission posting** page. Review the setup that is available for the current company. Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account. If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.  
 2. Close the page.
 
 ## Assign a commission group to a customer and a product
-1. Go to **Navigation pane > Modules > Sales and marketing > Customers > All customers**.
+1. Go to **Sales and marketing > Customers > All customers**.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
 4. Click **Edit**.
@@ -87,7 +87,7 @@ This procedure shows you how to set up and enable sales commission calculation a
 8. In the **Sales group** field, click the drop-down button to open the lookup.
 9. In the list, find and select the desired record.
 10. Click **Save**.
-11. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
+11. Go to **Product information management > Products > Released products**.
 12. Use the **Filter** to find records. For example, filter on the Item number field with a value of 'T0020 '.
 13. In the list, click the link in the selected row.
 14. Click **Edit**.

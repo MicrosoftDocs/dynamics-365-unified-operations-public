@@ -6,8 +6,9 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace, ReqPlanSched
 ms.topic: how-to
-ms.date: 10/14/2022
+ms.date: 01/03/2023
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
@@ -69,6 +70,15 @@ Follow these steps to set up the runtime filter and BOM levels for a master plan
         - Set this field to *2* to include supply for BOM components and their derived BOM components.
 
 1. On the **Run in the background** FastTab, set recurrence and other batch options in the usual way. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Microsoft Dynamics 365 Supply Chain Management.
+
+> [!NOTE]
+> The following limitations apply when you use a runtime filter with BOM levels:
+>
+> - If you run auto-firming or another post-processing job using [the current extensibility point](/dynamics365/supply-chain/master-planning/planning-optimization/extensibility), then the system will only apply the auto-firming and other actions to the items specified directly on the filter (not to the subcomponents).
+> - Delays from subcomponents are not propagated to their respective parent items.
+> - The requirement date of a subcomponent may fall on a date closed by the calendar of the subcomponent. To update the date to an open date on the subcomponent calendar, you must make a full or filtered run that includes the subcomponent directly on the filter.
+>
+> If any of these issues are critical for you, then add the relevant subcomponents to the filter manually.
 
 ## Combine plan filters and runtime filters
 

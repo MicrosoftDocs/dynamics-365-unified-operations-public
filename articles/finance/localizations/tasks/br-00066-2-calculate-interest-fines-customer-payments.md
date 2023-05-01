@@ -3,7 +3,7 @@ title: Calculate interest and fines on customer payments (Brazil)
 description: You can apply interest and fines on customer payments that are delayed.
 author: AdamTrukawka
 ms.date: 06/26/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Milestone templates
-description: This article explains how to set up the milestone billing funcationality in Subscription billing. 
+description: This article explains how to set up the milestone billing functionality in Subscription billing. 
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 01/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,6 +110,9 @@ To edit milestone allocation on a billing schedule line, follow these steps.
 2. In the **Billing schedule lines** section, enter an item, specify **Milestone** as the item, and select **Milestone allocation**.
 3. In the **Milestone template** field, select a milestone template.
 4. Select **Process**. The milestone template lines are automatically added to the billing schedule lines.
+
+> [!Note]
+> A feature was added in Dynamics 365 Finance version 10.0.31 that allows a **Billing schedule** line with **Item type** of **Milestone** to set **Renew automatically** to **Yes**. 
 
 ## Milestone allocation fields
 

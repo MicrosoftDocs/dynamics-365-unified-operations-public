@@ -5,7 +5,7 @@ title: Plan loads and shipments using the Load planning workbench
 description: This article shows how to use the load planning workbench to create a load for a sales order. 
 author: Mirzaab
 ms.date: 07/08/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -30,7 +30,7 @@ This article shows how to use the load planning workbench to create a load for a
 
 
 ## Create a sales order
-1. Go to the **Navigation pane > Modules > Accounts receivable > Orders > All sales orders**.
+1. Go to the **Accounts receivable > Orders > All sales orders**.
 2. Select **New**.
 3. In the **Customer account** field, select the drop-down button to open the lookup.
 4. Select account **US-004**.
@@ -44,7 +44,7 @@ This article shows how to use the load planning workbench to create a load for a
 12. Close the page.
 
 ## Create a new load
-1. Go to the **Navigation pane > Modules > Transportation management > Planning > Load planning workbench**.
+1. Go to the **Transportation management > Planning > Load planning workbench**.
 2. Select the **Sales lines** tab. Now you'll build the load for the sales order that you just created. Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.  
 3. On the Action Pane, select **Supply and demand**.
 4. Select **To new load**.

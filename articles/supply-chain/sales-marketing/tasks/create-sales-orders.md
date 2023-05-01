@@ -5,7 +5,7 @@ title: Create sales orders
 description: This procedure shows you how to create a sales order. 
 author: Henrikan
 ms.date: 04/06/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
 
 ## Enter sales order header details
-1. Go to **Navigation pane > Modules > Sales and marketing > Sales orders > All sales orders**.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 2. Select **New**.
 3. In the **Customer account** field, select the drop-down button to open the lookup.
 4. In the list, find and select the customer record.

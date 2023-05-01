@@ -3,7 +3,7 @@ title: ER Upgrade your format by adopting a new, base version of that format
 description: This article describes how to maintain an Electronic reporting (ER) format configuration.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

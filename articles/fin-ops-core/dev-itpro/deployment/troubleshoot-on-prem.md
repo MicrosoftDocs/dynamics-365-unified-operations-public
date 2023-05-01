@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform Update 8
 ms.custom: 60373
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Troubleshoot on-premises deployments
 
@@ -28,8 +30,8 @@ You can access Service Fabric Explorer in a web browser by using the default add
 
 To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment article for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#createdns)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#createdns)
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#createdns)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#createdns)
 
 You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
 
@@ -128,9 +130,8 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment article for your environment. Note any errors.
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
-
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupsfcluster)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupsfcluster)
 
 Be sure to complete these steps:
 
@@ -226,8 +227,8 @@ To clean up an existing environment and redeploy, follow these steps.
 
     For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md)
   
 
 5. In LCS, open the project, and update the LCS on-premises connector as required.
@@ -240,8 +241,8 @@ To clean up an existing environment and redeploy, follow these steps.
 
 6. Deploy again by following the instructions in the appropriate setup and deployment article for the environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md)
 
 ## Find the local agent values that are used
 
@@ -304,7 +305,7 @@ Press any key to exit
 
 **Reason:** You're trying to install local agent version 2.3.0 or later, but the localagent-config.json file that you're using isn't up to date.
 
-**Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector).
+**Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-latest.md#configureconnector).
 
 You can also manually add the following values in the **components** section of the localagent-config.json file.
 ```json
@@ -349,8 +350,8 @@ You can also manually add the following values in the **components** section of 
 
 3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configurelcs)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configurelcs)
 
 4. Uninstall the local agent.
 5. Specify the correct certificate in the local agent configuration, and download the configuration file again.
@@ -389,8 +390,8 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
 
 3. Make sure that the "Set up file storage" section of the appropriate setup and deployment article for your environment is completed:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupfile)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupfile)
 
 4. Uninstall the local agent.
 5. Specify the correct file share in the local agent configuration, and download the configuration file again.
@@ -448,7 +449,7 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Issue
 
-When you performing the [Configure the databases](setup-deploy-on-premises-pu12.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
+When you performing the [Configure the databases](setup-deploy-on-premises-latest.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
 
 ### Issue
 
@@ -699,8 +700,8 @@ You can do additional logging by registering providers. To register providers, i
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment article for your environment:
 > 
-> - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
-> - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
+> - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupfile)
+> - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupfile)
 > 
 > **Example:** \[*Agent Share*\]\\wp\\\[*Deployment name*\]\\StandaloneSetup-...\\Apps\\ETWManifests
 
@@ -1006,8 +1007,8 @@ In this case, either the certificates haven't been installed, or they haven't gi
 
 If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment article for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupvms)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupvms)
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupvms)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupvms)
 
 Copy the scripts in each folder to the VMs that correspond to the folder name.
 
@@ -1059,8 +1060,8 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment article for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#plancert)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#plancert)
 
 ## Find a list of group managed service accounts
 
@@ -1106,8 +1107,8 @@ This issue occurs because AOS users aren't in the local administrator group, and
 
 1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#joindomain)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#joindomain)
  
 2. Run the **Config-PreReq** script on all the AOS machines.
 3. Make sure that the **Test-Configuration** script passes.
@@ -1174,8 +1175,8 @@ Follow these steps to configure the local agent with the updated tenant.
 
 2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configurelcs)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configurelcs)
 
 3. Create a new LCS connector in the new tenant.
 4. Download the **local-agent.config** file.
@@ -1193,25 +1194,25 @@ You will receive the following error when you deploy an additional environment:
 
 You can skip or modify the following sections in the deployment instructions.
 
-### Plan and acquire your certificates (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
+### Plan and acquire your certificates (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#plancert) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#plancert))
 
 - You must use the same on-premises local agent certificate.
 - You can use same star certificates (AOS SSL and Service Fabric).
 - The remaining certificates should probably differ from the certificates for the existing environment.
 
-### Download setup scripts from LCS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
+### Download setup scripts from LCS (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#downloadscripts) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#downloadscripts))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Set up a standalone Service Fabric cluster (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
+### Set up a standalone Service Fabric cluster (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupsfcluster) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupsfcluster))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Configure LCS connectivity for the tenant (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
+### Configure LCS connectivity for the tenant (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configurelcs) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configurelcs))
 
 - You must complete this task only one time for the tenant.
 
-### Configure AD FS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
+### Configure AD FS (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configureadfs) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configureadfs))
 
 - Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
@@ -1325,7 +1326,7 @@ If you have both an online project and an on-premises project, follow these step
 
 ## ODBC driver 17 is required for platform updates
 
-The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
+The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-latest#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
 
 Here are some examples of errors:
 
@@ -1417,7 +1418,7 @@ This error will cause the AXSF service to fail with the same error.
 
 To resolve this issue, follow these steps.
 
-1. In the [agent share path](setup-deploy-on-premises-pu12.md#setupfile), find the **netstandard.dll** file. For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.
+1. In the [agent share path](setup-deploy-on-premises-latest.md#setupfile), find the **netstandard.dll** file. For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.
 2. On each AOS server, open a Command Prompt window as an administrator, and run the following command.
 
     ```Console

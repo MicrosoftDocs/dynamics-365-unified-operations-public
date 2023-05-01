@@ -5,7 +5,7 @@ title: Create and assign advanced rule structures
 description: This article explains how to create and assign an advanced rule structure to an account structure. 
 author: aprilolson
 ms.date: 07/19/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

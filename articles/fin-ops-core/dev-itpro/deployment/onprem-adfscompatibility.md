@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31 
 ms.dyn365.ops.version: Platform update 28 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # AD FS Microsoft 365 compatibility
@@ -75,9 +76,9 @@ This article explains how to use the same instance of Active Directory Federatio
 
 ## New deployments
 
-1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
+1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-latest.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
 2. Modify the local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
-3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it so that Platform update 28 is deployed on top.
+3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-latest.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it so that Platform update 28 is deployed on top.
 
 ## <a name="partialsupport"></a> Partial support
 

@@ -2,25 +2,27 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 06/01/2022
+ms.date: 04/26/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-05-24
-ms.dyn365.ops.version: AX 10.0.25
+
 ---
 
 # Migrate Modern POS to Store Commerce
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. The Store Commerce app offers all the functionality of Modern POS, including integrated hardware support and offline mode.
+This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. 
 
-For more information about Store Commerce app, see [Store Commerce app](../store-commerce.md).
+The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MPOS) as the POS application for Dynamics 365 Commerce. The Store Commerce app shares complete feature parity with MPOS, including integrated hardware support and offline mode. The Store Commerce app also offers improved performance, and better deployment and management options. For more information about the benefits of Store Commerce, see [Store Commerce app](../store-commerce.md). 
+
+> [!IMPORTANT]
+> - Microsoft will deprecate MPOS in October 2023, and recommends that you use the Store Commerce app or Store Commerce for web (CPOS) for all new deployments. Existing customers should plan to migrate from MPOS to Store Commerce before October 2023.
+> - If you are deploying the [Retail hybrid apps](../hybridapp.md) for Android and/or iOS, those apps will also be deprecated in favor of the Store Commerce apps for iOS and Android. For more information, see [Store Commerce app for mobile platforms](../store-commerce-mobile.md).
 
 ## Setup and configuration differences between MPOS and Store Commerce
 
@@ -38,7 +40,7 @@ For more information about Store Commerce app, see [Store Commerce app](../store
 
 1. Synchronize all your transaction and custom data from the channel database to Commerce headquarters. This data includes any offline transaction and custom data.
 1. Post all the statements to Commerce headquarters, and ensure that there are no pending transactions to synchronize or post.
-1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in Commerce headquarters, and then run the **Registers** (**1070**) and **Channel configuration** (**1090**) jobs.
+1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in headquarters, and then run the **1070 (Channel configuration)** and **1090 (Registers)** jobs.
 1. Uninstall MPOS. You don't have to uninstall the offline database.
 1. Download the Store Commerce installer from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**.
 1. Install the Store Commerce app by passing the required parameters and related details. For information about setup and installation in offline mode, see [Store Commerce app](../store-commerce.md).

@@ -320,7 +320,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p><em>Subtotal</em></p>
 </td>
 <td width="104">
-<p>&nbsp;</p>
+<p>5a - 5b</p>
 </td>
 <td width="104">
 <p>x</p>
@@ -348,7 +348,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p><strong>Net VAT amount that will be paid to the tax authorities or reclaimed</strong></p>
 </td>
 <td width="104">
-<p>5a + 5b + 5d</p>
+<p>5a - 5b + 5d</p>
 </td>
 <td width="104">
 <p>x / ValueAddedTaxOwedToBePaidBack</p>

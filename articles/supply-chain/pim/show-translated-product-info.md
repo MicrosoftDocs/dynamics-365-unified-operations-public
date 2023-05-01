@@ -8,14 +8,13 @@ ms.search.form: EcoResProductParameters, EcoResProductDetailsExtended, SysTransl
 ms.topic: how-to
 ms.date: 10/14/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Show translated product names and descriptions in the UI
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 For companies that operate worldwide, in multiple countries or regions, it's important that each user be able to work with product information in their own language. Sales representatives who communicate with customers by telephone will then see product names in their local language. Purchasers will be able to search for products in the language that they speak. Shop floor workers will get product names and instructions in familiar terms. In each case, the information can be shown in a language other than the system language.
 
@@ -32,7 +31,7 @@ The following video provides an introduction to this feature.
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Product information management*
-- **Feature name:** *(Preview) Display product info in user's language*
+- **Feature name:** *Display product info in user's language*
 
 ## Configure your system to show translated product information
 

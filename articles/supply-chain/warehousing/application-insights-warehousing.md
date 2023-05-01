@@ -8,6 +8,7 @@ ms.search.form: OperationalInsightsProvisioningForm
 ms.topic: how-to
 ms.date: 10/18/2022
 audience: Application User
+ms.search.region: Global
 ms.custom: bap-template
 ---
 
@@ -69,4 +70,4 @@ Application Insights is billed based on the volume of telemetry data that your a
 
 ## Next steps
 
-- [Monitor mobile device usage and performance](application-insights-wma.md)
+- [Monitor Warehouse Management usage and performance](application-insights-monitor-usage-performance.md)

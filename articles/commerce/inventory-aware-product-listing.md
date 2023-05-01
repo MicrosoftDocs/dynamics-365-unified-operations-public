@@ -2,9 +2,9 @@
 # required metadata
 
 title: Inventory-aware product listing
-description: This article describes how organizations can configure product listing pages on their Microsoft Dynamics 365 Commerce e-commerce website so that they are inventory aware.
+description: This article describes how organizations can configure product listing pages on their Microsoft Dynamics 365 Commerce e-commerce websites so that they are inventory aware.
 author: boycez
-ms.date: 08/31/2022
+ms.date: 01/30/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-08-23
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how organizations can configure product listing pages on their Microsoft Dynamics 365 Commerce e-commerce website so that they are inventory aware. Product listing pages include category landing pages and search results pages.
+This article describes how organizations can configure product listing pages on their Microsoft Dynamics 365 Commerce e-commerce websites so that they are inventory aware. Product listing pages include category landing pages and search results pages.
 
 Shoppers generally expect product discovery throughout an e-commerce website to be inventory aware, so that they can decide what to do if a product is out of stock. The [Commerce module library](starter-kit-overview.md) category and search results modules can be configured to incorporate inventory data. In this way, they can provide the following experiences:
 
@@ -30,7 +30,8 @@ Shoppers generally expect product discovery throughout an e-commerce website to 
 To enable these experiences, you must first enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature in Commerce headquarters.
 
 > [!NOTE]
-> In Commerce version 10.0.29 and later, the **Enhanced e-Commerce product discovery to be inventory-aware** feature is enabled by default.
+> - In Commerce version 10.0.29 and later, the **Enhanced e-Commerce product discovery to be inventory-aware** feature is enabled by default.
+> - Inventory-aware product listing is calculated in headquarters and doesn't use channel-side inventory calculation. Discrepancies can occur between these two features.
 
 ## Set up product attribute for inventory availability
 

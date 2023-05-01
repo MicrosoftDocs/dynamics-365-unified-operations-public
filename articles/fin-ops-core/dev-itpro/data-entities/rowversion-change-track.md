@@ -2,7 +2,7 @@
 title: Allow Row version change tracking for tables and data entities
 description: This article explains how to enable row version change tracking for data entities and tables for finance and operations apps.
 author: peakerbl
-ms.date: 09/28/2022
+ms.date: 02/08/2023
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -22,12 +22,17 @@ ms.search.validFrom: 2022-10-10
 ms.dyn365.ops.version: 10.0.31
 ---
 
-# Allow Row version change tracking for tables and data entities
+# Allow Row version change tracking for tables and data entities (Preview)
 
 [!include[banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 A new change tracking option has been added to finance and operations apps. This option enables Microsoft Dataverse to be used for incremental synchronization of data. Change tracking is a prerequisite for several features, such as Data archival, Synapse integration, Mobile offline, and Relevance search. The eventual goal is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
+
+Beginning in Microsoft Dynamics Finance 10.0.32 to 10.0.33, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page. Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking (Preview)** configuration key on the **License configuration** page. 
+
+> [!NOTE]
+> If you have enabled the **Sql row version change tracking** configuration key before 10.0.34, it will be required to enable the new **Sql row version change tracking (Preview)** configuration key as part of moving to 10.0.34 or later. The configuration key used before 10.0.34 has been renamed to **Sql row version change tracking (Obsolete)**.
 
 Before you create or update data entities so that you can use them with row version change tracking, verify that all tables that are used as data sources for those entities allow for row version change tracking.
 
@@ -35,7 +40,7 @@ For information about how to create a new entity, see [Build and consume data en
 
 ## Enable row version change tracking for tables
 
-You can enable the **Allow Row Version Change Tracking** option for tables by setting their metadata property to **Yes**. The property must be set to **Yes** for all tables that are used as data sources for a data entity to enable row version change tracking for that entity. During build operations, a **SysRowVersionNumber** column of the **rowversion** data type is added to the tables.
+You can enable the **Allow Row Version Change Tracking** option for tables by setting their metadata property to **Yes**. The property must be set to **Yes** for all tables that are used as data sources for a data entity to enable row version change tracking for that entity. During build operations, a **SysRowVersionNumber** column of the **rowversion** data type is added to the tables. Beginning in 10.0.34 a new **SysRowVersion** column is introduced and will be used for row version change tracking instead of the **SysRowVersionNumber** column. The **SysRowVersionNumber** column will become obsolete. Everything stated below will from 10.0.34 be true for the **SysRowVersion column**.
 
 The **SysRowVersionNumber** column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the **SysRowVersionNumber** column with the previous value.
 
@@ -51,6 +56,8 @@ The **SysRowVersionNumber** column performs version stamping of table rows. SQL 
 ## Enable row version change tracking for data entities
 
 You can enable the **Allow Row Version Change Tracking** option for data entities by setting their metadata property to **Yes**. Not all existing data entities are configured to support row version change tracking. The main limiting factor is the complexity of the entities. When **Allow Row Version Change Tracking** is set to **Yes** for a data entity, validation rules are evaluated at build time. However, we still recommend that you review and proactively apply these rules when you create or update entities.
+
+ISVs and partners are recommended to always create new data entities when enabling Row version change tracking. This to avoid risks of existing custom extensions violating the validation rules below. Runtime validations will prevent new breaking extensions from being added once Allow row version is enabled
 
 The following table describes the data entity validation rules.
 

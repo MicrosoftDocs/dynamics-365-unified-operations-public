@@ -30,7 +30,7 @@ Errors on the **Setup link to Dataverse** page are usually caused by incomplete 
 
 You must have Azure AD tenant admin credentials to link the finance and operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
-## Find the limit on the number of legal tables or companies that can be linked for dual-write
+## Find the limit on the number of legal entities or companies that can be linked for dual-write
 
 You might receive the following error message when you try to enable maps:
 
@@ -40,7 +40,7 @@ Error Exceeds the maximum partitions allowed for mapping
 DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)],
 One or more errors occurred.*
 
-The current limit when you link the environments is approximately 40 legal tables. This error occurs if you try to enable maps, and more than 40 legal tables are linked between the environments.
+The current limit when you link the environments is approximately 250 legal entities. This error occurs if you try to enable maps, and more than 250 legal entities are linked between the environments.
 
 ## Connection set failed while linking environment
 

@@ -2,7 +2,7 @@
 title: Create a Cloud Scale Unit extension package
 description: This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
 author: josaw1
-ms.date: 06/01/2022
+ms.date: 02/17/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -18,12 +18,15 @@ ms.dyn365.ops.version: AX 10.0.25
 
 This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). 
 
+>[!NOTE]
+>Removing Reply URLs or Service Principals will break operations related to AAD in Store Commerce in the browser.
+
 A CSU extension package contains the extension code for the following components:
 
 - Commerce runtime (CRT) and Headless Commerce application programming interfaces (APIs)
 - Channel database extension scripts
 - Payment connector
-- Cloud POS (CPOS)
+- Store Commerce for web
 
 ## Create a CSU package
 
@@ -32,7 +35,7 @@ To create a CSU package, choose one of the following options, and follow the ste
 ### Option 1: Download the sample scale unit packaging project from GitHub
 
 1. Clone or download the scale unit packaging project from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). Select the correct release branch version for your software development kit (SDK)/application release. For detailed information about how to clone a project, see [Download Retail SDK samples and reference packages from GitHub and NuGet](retail-sdk/sdk-github.md).
-1. Add the extension CRT, Retail Server, channel database, Payment, and CPOS extension projects as a project reference to the scale unit packaging project.
+1. Add the extension CRT, Retail Server, channel database, Payment, and Store Commerce for web extension projects as a project reference to the scale unit packaging project.
 1. If the CRT, Retail Server, or Payment extension depends on any assemblies or packages to run, include those assemblies as a project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Don't add the dependent assemblies to the **CommerceRuntime.Ext.config** file, because that approach might cause runtime errors.
 1. If you must include any configuration or setting values in the **CommerceRuntime.Ext.config** file, edit the scale unit packaging project file, and add the **CommerceRuntimeExtensionSettings** property, as shown in the following example.
 
@@ -57,7 +60,7 @@ To create a CSU package, choose one of the following options, and follow the ste
         </packageSources>
     ```
 
-1. Add the extension CRT, Retail Server, channel database, Payment, and CPOS extension projects as a project reference to the CSU packaging project.
+1. Add the extension CRT, Retail Server, channel database, Payment, and Store Commerce for web extension projects as a project reference to the CSU packaging project.
 1. If the CRT, Retail Server, or Payment extension depends on any assemblies to run, include those assemblies as a project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Don't add the dependent assemblies to the **CommerceRuntime.Ext.config** file, because that approach might cause runtime errors.
 2. If you must include any configuration or setting values in the **CommerceRuntime.Ext.config** file, edit the CSU packaging project file, and add the **CommerceRuntimeExtensionSettings** property, as shown in the following example.
  

@@ -1,8 +1,8 @@
 ---
-title: Security best practices for Cloud POS in shared environments
-description: This article provides recommendations that can help secure Retail Cloud POS in a shared environment.
+title: Security best practices for Store Commerce for web in shared environments
+description: This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 author: josaw1
-ms.date: 06/17/2020
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,38 +16,41 @@ ms.custom: 257674
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
 ---
 
-# Security best practices for Cloud POS in shared environments
+# Security best practices for Store Commerce for web in shared environments
 
 [!include [banner](../includes/banner.md)]
 
-Retail Cloud POS is a web application that runs in the context of a browser. This article provides recommendations that can help secure Retail Cloud POS in a shared environment.
+Store Commerce for web is a web application that runs in the context of a browser. This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 
-Retail Cloud POS is a web application that runs in the context of a web browser. Therefore, it's vulnerable to attack when a user can run any script in the context of the web application. One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection. Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control. Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth. The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.
+Store Commerce for web is a web application that runs in the context of a web browser. Therefore, it's vulnerable to attack when a user can run any script in the context of the web application. One requirement for such attacks is that the user must have physical access to the computer, either in person or by using Remote Desktop Connection. Vulnerability to attack is an existing issue in most browsers that provide developer tools, and that enable scripts to be run without sufficient privilege control. Because the web application will have little influence over its hosting environment, one way to mitigate security issues is to add defense-in-depth. The defense-in-depth can be built by taking advantage of the restrictive policies of both the browser and the operating system.
 
-## Hardening instructions for a Retail Cloud POS computer
+## Hardening instructions for a Store Commerce for web computer
 
-Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Retail Cloud POS. The settings should be enabled or set by a high-privileged account for the operating system. Retail Cloud POS should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
+>[!NOTE]
+>Removing Reply URLs or Service Principals will break operations related to AAD in Store Commerce in the browser.
+
+Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Store Commerce for web. The settings should be enabled or set by a high-privileged account for the operating system. Store Commerce for web should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
 
 - **Required** - Disable script execution in the browser's address bar.
 - **Required** - Disable the browser's developer console.
-- **Required** - Retail Cloud POS should be accessed by a low-privileged user.
+- **Required** - Store Commerce for web should be accessed by a low-privileged user.
 - **Required** - Set up group policies to enable a kiosk session.
 - **Recommended** - Set up a proxy to access only websites included in a safe list.
 
-## Disable script execution in the address bar of the browser that runs Retail Cloud POS
+## Disable script execution in the address bar of the browser that runs Store Commerce for web
 
 ### Internet Explorer - disable script execution
 
 There is no option to disable script execution in the address bar in Internet Explorer. One alternative is to hide the address bar itself.
 
-1. Create a shortcut for the Retail Cloud POS URL, and copy it to each store worker's Microsoft Windows desktop.
+1. Create a shortcut for the Store Commerce for web URL, and copy it to each store worker's Microsoft Windows desktop.
 2. Run **regedit.exe** to change the registry to disable the Internet Explorer address bar. \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\ToolBars\\Restrictions\] "NoNavBar"=dword:00000001
 
 ### Microsoft Edge - disable script execution
 
 By design, Microsoft Edge prevents script execution in the address bar. Therefore, no action is required.
 
-## Disable the developer console in the browser that runs Retail Cloud POS
+## Disable the developer console in the browser that runs Store Commerce for web
 
 ### Internet Explorer - disable the developer console
 
@@ -57,13 +60,13 @@ Use Group Policy Editor to enable the following group policy to disable the Inte
 
 Run **regedit.exe** to change the registry to disable the developer console. \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\F12\] "AllowDeveloperTools"=dword:00000000
 
-## Retail Cloud POS should be accessed by a low-privileged user
+## Store Commerce for web should be accessed by a low-privileged user
 
 A point of sale (POS) user must be a non-administrative account that doesn't have privileges to change applied policies.
 
 ## Set up group policies to enable a kiosk session
 
-We recommend that you apply the following restrictions for Retail Cloud POS users:
+We recommend that you apply the following restrictions for Store Commerce for web users:
 
 - Restrict access to the file system.
 - Restrict access to Control Panel.
@@ -328,9 +331,9 @@ The following table lists the group policies to enable kiosk mode. The set of po
 
 ## Set up a proxy to access only websites included in a safe list
 
-You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites. Retail Cloud POS requires access to the following websites:
+You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites. Store Commerce for web requires access to the following websites:
 
-- Retail Cloud POS website
+- Store Commerce for web website
 - Microsoft Azure Active Directory sign-in page
 - Commerce Scale Unit website
 - Bing Maps resources

@@ -35,12 +35,9 @@ In Microsoft Dynamics 365 Supply Chain Management, you can run an **Inventory ag
 
 This method of running an **Inventory aging report storage** report is helpful in cases where the output contains many lines. For example, the output will contain many lines if you have 50,000 items and 300 stores that are created as warehouses, and you request inventory aging by item, site, and warehouse.
 
-## Enable the Inventory value storage report feature
+## Turn the Inventory value storage report feature on or off
 
-Before you can use this feature, you must enable it on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - Cost management
-- **Feature name** - Inventory aging report storage
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Inventory aging report storage* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Run an Inventory aging report storage
 
