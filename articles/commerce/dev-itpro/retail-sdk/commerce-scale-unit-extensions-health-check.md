@@ -12,7 +12,7 @@ ms.search.validFrom: 2023-05-01
 ms.dyn365.ops.version: AX 10.0.30
 ---
 
-# Runtime extensions health check
+# Commerce Scale Unit extensions health check
 
 Developers building Commerce Scale Unit extensions can use the health check feature to run tests built into the framework and validate if their extensions meet current requirements.
 
