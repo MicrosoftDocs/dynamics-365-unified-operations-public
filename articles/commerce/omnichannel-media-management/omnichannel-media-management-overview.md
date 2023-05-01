@@ -144,7 +144,7 @@ To preview primary product media assignments, follow these steps:
 6. Click **Close** to exit the preview experience.
 
 ### Publishing media assignments
-[todo]
+When publishing product and category media assignments, there are several sequential steps that happen automatically for you in the backgound. First, the underlying content management system (CMS) ensures that all of the product's or category's assigned media item binaries (images, videos, documents, etc.) are actually published.  This is the same as navigating to the **Media library** and clicking **Publish** on each assigned media item assigned to a product or category (after media item publish each individual item's default CMS URL is now public).  After the individual CMS media item dependencies are published, the product or category assignments (and fallback logic) are flattened and saved to the Commerce Headquarters (HQ) database.  After media assignments are saved to the HQ database, then the HQ -> CSU (Commerce Scale Unit) data sync job(s) accross channels will pick up the media assignments and push them to CSU database(s).  By default, CSU architecture has a two hour rolling cache for all product and category merchandising data.  The time it will take for product and category media assignments to show up for end users will depend on the following factors: 1) the volume of assigned media items in the publish action, 2) the configured frequency of the HQ omnichannel media batch job in HQ, 3) the configured frequency of the HQ -> CSU data sync jobs in HQ, 4) the rolling default 2-hour cache for CSU merchandising data.
 
 #### Using publish groups for media assignments
 [todo]
