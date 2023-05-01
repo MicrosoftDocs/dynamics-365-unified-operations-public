@@ -9,9 +9,9 @@ ms.topic: article
 
 # Transition from dual-write application orchestration package to split packages
 
-Before March 2022, when setting up dual-write, customers had to install the dual-write application orchestration package from the app source. This package contained solutions for all application logic including all table maps. Customers were in all or nothing situation where they had to have all solutions installed even if they would only require using a subset.
+Before March 2022, when setting up dual-write, customers had to install the dual-write application orchestration package from AppSource. This package contained solutions for all application logic including all table maps. Customers were in all-or-nothing situation where they had to have all solutions installed even if they would only require using a subset.
 
-To solve this problem, we split the monolith orchestration package into smaller individual packages. The individual packages contain solutions with the same name, publisher, and map versions as the application orchestration package. Therefore, this is a non-breaking change and environments can easily upgrade by installing the split packages required from app source.
+To solve this problem, we split the monolith orchestration package into smaller individual packages. The individual packages contain solutions with the same name, publisher, and map versions as the application orchestration package. Therefore, this is a non-breaking change and environments can easily upgrade by installing the split packages required from AppSource.
 
 > [!IMPORTANT]
 > The orchestration solution is no longer being maintained and it will be deprecated. In order to benefit from enhancements and bug fixes, we recommend installing the split packages.
@@ -60,7 +60,7 @@ Search for dual-write and observe the packages available. Install those that are
 
 See the complete list of split packages and dependencies in article [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions).
 
-:::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Dual-write packages in app source." lightbox="media/dual-write-packages-app-source.png":::
+:::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Dual-write packages in AppSource." lightbox="media/dual-write-packages-app-source.png":::
 
 ### 3. Apply solutions in Dual-write workspace
 

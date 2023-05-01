@@ -39,6 +39,8 @@ Because it was a single package, this package created an "all or nothing" situat
 
 This article explains the solutions and maps that each package contains, and its dependency on other packages.
 
+For step-by-step instructions on how to transition to the split packages, see article [Transition from dual-write application orchestration package to split packages](separated-solutions-transition-guidance.md).
+
 ## Dual-write Application Core
 
 The Dual-write Application Core package lets users install and configure dual-write without any customer engagement app. It contains the following five solutions.
