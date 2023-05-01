@@ -1,7 +1,7 @@
 ---
 title: Commerce Scale Unit extensions health check
 description: This article explains how to use the Commerce Scale Unit extensions health check feature.
-author: aneesa
+author: aneesmsft
 ms.date: 05/1/2023
 ms.topic: article
 audience: Developer
