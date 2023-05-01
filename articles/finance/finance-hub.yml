@@ -42,7 +42,7 @@ additionalContent:
     items:
     - title: Guidance
       links: 
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/plan-case-management?context=%2Fdynamics365%2Fcontext%2Ffinance
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
         text: Security and compliance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
