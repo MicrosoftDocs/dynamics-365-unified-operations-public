@@ -98,7 +98,6 @@ The approximate time that's required to delete all the solutions is 20 minutes.
 
 - **New features:** Once per month 
 - **Bugs:** Bi-weekly 
-- **Hotfixes:** On demand
 
 ### Is there any cost to install and use business performance analytics during public preview?
 
