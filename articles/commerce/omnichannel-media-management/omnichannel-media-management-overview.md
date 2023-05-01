@@ -56,7 +56,17 @@ Prior to Commerce version 10.0.35, swatches were centrally managed in Commerce H
 ](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/dimensions-swatch#configure-dimension-values-in-commerce-headquarters) article.
 
 To assign product-specific swatches, follow these steps:
-1. [Todo]
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product using its name or product ID in the search view on the left, and select it.
+3. Click the **Edit product media** button in the upper right.
+4. In the product's Master tab, find the **Swatches** section underneath Additional Media and click the **Add swatch** button.
+5. Select the **Dimension group** (eg. Color) and **Dimension** (eg. Blue) values that you wish to assign from the drop-down selection controls. 
+6. Select the **Swatch type** from the drop-down selection control. If using a hexcode color value, click on the color picker control and choose the desired hex value; then skip ahead to step 9. 
+7. If using an image, click the **Add media** button and upload or choose an image from the Omnichannel media library.
+8. To choose a cropped sample from a product image, toggle the **Use cropped sample of image** to **On**.  Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
+9. When finished, click the **Add swatch** button at the bottom of the panel.  
+10. Repeat steps 4-9 for any additional dimension values.
+11. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Omnichannel, channel-specific, and locale-specific media assignments
 Media can be assigned in a hierarchical fallback manner accross channels and locales.  The default assignment for any product should use Omnichannel (channel) and Neutral (locale).  These assignments will be returned by default anywhere a more specific channel+local combination is not available.  For channel+locale combinations that require different product media assignments than the default Omnichannel+Neutral assignments, specific channel+locale media assignments can be configured to override the default.  After a specific channel+locale media assignment for a product is created and published, the inheritance to the omnichannel combination is severed and all media assignments are controlled by the specific channel+locale media assignments.
