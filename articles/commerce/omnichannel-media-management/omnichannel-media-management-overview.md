@@ -133,7 +133,15 @@ To assign media to a specific product variant, follow these steps:
 10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Previewing media assignments
-[todo]
+Omnichannel media assignments, by definition, can apply accross a range of channels and user experiences (examples: Point of Sale (POS) devices, e-Commerce product pages (PDPs), etc.).  To preview media assignments that can span multiple channels, the Omnichannel product media workspace has a generic media gallery preview experience to quickly validate how media should display for a product's primary media assignments.
+
+To preview primary product media assignments, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product using its name or product ID in the search view on the left, and select it.
+3. Click the **Preview** button in the top action bar to show the primary media preview interface.
+4. The default view will show any product **Master** primary media in the media gallery preview.
+5. If the product is configured with dimensions, select different dimension values in the dropdown controls to preview the media gallery experience for different product variants.
+6. Click **Close** to exit the preview experience.
 
 ### Publishing media assignments
 [todo]
