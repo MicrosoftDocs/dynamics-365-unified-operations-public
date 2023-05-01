@@ -19,6 +19,9 @@ ms.search.validFrom: 2017-06-20
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
+> [!WARNING]
+> The Dynamics 365 Commerce team is investigating an issue with Google Pay in Chrome browsers when in Production. At current, the Google Pay functionality will fail to render in Chrome. Commerce is working with Google to identify a fix for this issue to support Google Pay via Adyen in the Commerce solution. At this time there is no ETA for this fix. 
+
 This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it's configured, the Google Pay button is available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they're directed to complete their payment directly with the Google Pay service. They're then returned to the online storefront to complete the order.
