@@ -143,7 +143,12 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 
 ### Prerequisites
 
-- Windows 10 version 17763.0 or later, Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
+- Store Commerce is supported on the following operating systems:
+  - Windows 11 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC.)
+  - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC) with the latest available updates.
+  - Windows Server 2022 (Standard, Essentials.) 
+  - Windows Server 2019 (Standard, Essentials) with the latest available updates.
+
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)

@@ -26,14 +26,14 @@ For more information about Store Commerce app, see [Store Commerce app](../store
 
 | Features | Store Commerce | MPOS |
 | ------ | ------ |------ |
-| System requirements | Windows 11, Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise editions) with the latest available updates, or Windows Server 2019 | Windows 11, Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise editions) with the latest available updates, or Windows Server 2019 |
+| System requirements | Windows 11 (Pro, Enterprise, Enterprise LTSC, and IOT Enterprise), Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC) with the latest available updates, Windows Server 2022 (Standard, Essentials) and Windows Server 2019 (Standard, Essentials) with the latest available updates. | Windows 11 (Pro, Enterprise and Enterprise LTSC), Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise) with the latest available updates, or Windows Server 2019. |
 | Offline | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
-| Local or Dedicated HWS support | Yes | Yes | 
+| Local or Dedicated HWS support | Yes | Yes |
 | Device setup in Dynamics 365 Commerce headquarters | On the **Devices** page in Commerce headquarters, use the application as Store Commerce. | On the **Devices** page in Commerce headquarters, use the application as Retail Modern POS. |
 | Device activation | Required | Required |
 | Installer | Download from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. | Download from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Modern POS (SEALED)**. |
 | Extensions | [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) | [Retail SDK](../retail-sdk/retail-sdk-overview.md) for non-sealed MPOS and [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) for sealed MPOS |
- 
+
 ## Migrate to the Store Commerce app from MPOS
 
 1. Synchronize all your transaction and custom data from the channel database to Commerce headquarters. This data includes any offline transaction and custom data.
