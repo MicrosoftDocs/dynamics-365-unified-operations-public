@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Troubleshoot Planning Optimization
 description: This article describes how to fix issues that you might encounter while working with Planning Optimization.
 author: t-benebo
-ms.date: 01/30/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2020-5-7
-ms.dyn365.ops.version: AX 10.0.9
-
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
+ms.topic: faq
+ms.date: 05/01/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
+
 # Troubleshoot Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
@@ -115,14 +101,14 @@ To split the large job into several jobs, follow these steps:
 
 1. Go to **System administration > Inquiries > Batch jobs**.
 1. In the grid, find the existing recurrent planning job that is timing out. Then select the value in the **Job ID** column to open the job details.
-1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Withhold* and then select **OK**. <!--KFM: This appears to be necessary, right? I got errors until I did this. It might be that we need to wait if it's *Running* or something else? -->
+1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Withhold* and then select **OK**.
 1. On the **Batch tasks** FastTab, you should see a single row for Planning Optimization, which has a **Class name** of *MpsMasterPlanningRunnerRegen*. Select this task and then select **Parameters** on the FastTab toolbar.
 1. A dialog opens, where you can make settings for the task. Expand the **Records to include** FastTab and then select **Filter** to open a standard query editor dialog.
 1. On the **Range** tab, add a row with the following values:
     - **Table** – Select *Items*
     - **Derived table** – Select *Items*
     - **Field** – Select *Item number*
-    - **Criteria** – Specify the range of item numbers that you want to include in the first of your smaller jobs, separated by three periods, for example *A0001...A0333*. <!--KFM: Please confirm this method for defining a range. -->
+    - **Criteria** – Specify the range of item numbers that you want to include in the first of your smaller jobs, separated by three periods, for example *A0001...A0333*.
 1. Select **OK** to close the query editor. Then Select **OK** to close the task settings dialog.
 1. On the **Batch tasks** FastTab toolbar, select **Add** to add a new task. Then make the following settings for the new task:
     - **Task description** – Enter a description for the task, for example *PlanA part 2*.
@@ -135,32 +121,33 @@ To split the large job into several jobs, follow these steps:
     - **Task ID** – Paste the value you copied to the clipboard.
     - **Expected status** – Select *Ended or error*.
 1. Repeat the previous two steps to set the third task to run after the second task has ended or errored.
-1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Waiting* and then select **OK**. <!--KFM: I suppose we need to close with this, right? -->
+1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Waiting* and then select **OK**.
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> This is just one way to split a large job into several smaller jobs and set them to run in series. You could choose to split it into even more jobs and/or to filter on different criteria as needed.  <!--KFM: Your examples here were "item numbers or characteristics such as purchased or produced". Maybe that's fine, but maybe there are better ones? -->
+> This is just one way to split a large job into several smaller jobs and set them to run in series. You could choose to split it into even more jobs and/or to filter on different criteria as needed.
 
 #### Option 2: Different master plans, each for a subset of products
 
-If your products have different characteristics in regards to planning, you should consider running different master plans, each for a subset of products. For example, you might have a master plan for purchasing items with long lead times (such as a year) that are used to produce manufactured products with a short manufacturing lead time (such as a week). <!--KFM: I'm not sure I have this right, please review. -->
+If your products have different characteristics in regards to planning, you should consider running different master plans, each for a subset of products. For example, you might have a master plan for purchasing items with long lead times (such as a year) that are used to produce manufactured products with a short manufacturing lead time (such as a week).
 
-In this example, you could make one master plan for your purchased products (*PlanPurch*), with a coverage time fence 365 days, and another plan for your manufactured items (*PlanManuf*), with a coverage time fence 30 days. Because each set of products is in a different master plan, you can run both master plan jobs in parallel. You could use a similar strategy for items with similar planning characteristics by running multiple copies of the same plan in parallel. <!--KFM: I don't understand the point of running identical plans in parallel. -->
+In this example, you could make one master plan for your purchased products (*PlanPurch*), with a coverage time fence 365 days, and another plan for your manufactured items (*PlanManuf*), with a coverage time fence 30 days. Because each set of products is in a different master plan, you can run both master plan jobs in parallel. When you run different plans in differing batch tasks, then each of these batch tasks can run in parallel rather than needing to run sequentially.
 
 To implement this strategy, follow these steps:
 
 1. Open your existing master plan and modify it to only cover only a subset of the original items (for example, purchased items). You can do this by adding a filter as described in [Applying a plan filter](plan-filters.md#apply-a-plan-filter).
-1. Create another master plan to cover the remaining items. Again, set up a [plan filter](plan-filters.md#apply-a-plan-filter) to include only the items you want to include in this plan (for example, manufactured items). Alternatively, you could set up an exact copy of your first plan, or split your original plan into more than two plans, each with its own filter.<!--KFM: I don't understand the point of running identical plans in parallel. -->
+1. Create another master plan to cover the remaining items. Again, set up a [plan filter](plan-filters.md#apply-a-plan-filter) to include only the items you want to include in this plan (for example, manufactured items). This plan could be a copy of the original plan, but modified to filter a different set of items.
 1. Go to **System administration > Inquiries > Batch jobs**.
 1. In the grid, find the existing recurrent planning job that is timing out. Then select the value in the **Job ID** column to open the job details.
-1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Withhold* and then select **OK**. <!--KFM: This appears to be necessary, right? I got errors until I did this. It might be that we need to wait if it's *Running* or something else? -->
+1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Withhold* and then select **OK**.
 1. On the **Batch tasks** FastTab, you should see a single row for Planning Optimization, which has a **Class name** of *MpsMasterPlanningRunnerRegen*. On the **Batch tasks** FastTab toolbar, select **Add** to add a new task. Then make the following settings for the new task:
     - **Task description** – Enter a description for the new task.
     - **Class name** – Select *MpsMasterPlanningRunnerRegen*.
     - **Company** – Select the same company as the original task.
 1. Select the new task and then select **Parameters** on the FastTab toolbar.
 1. A dialog opens, where you can make settings for the task. Expand the **Parameters** FastTab and then set **Master plan** to the name the new plan you created.
-1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Waiting* and then select **OK**. <!--KFM: I suppose we need to close with this, right? -->
+1. On the Action Pane, select **Change status**. The **Select new status** dialog opens. Select *Waiting* and then select **OK**.
+1. On the Action Pane, select **Save**.
 
 Because you have set each batch task to run a different master plan, both batch tasks will run in parallel.
 
@@ -178,11 +165,10 @@ If you see this message, we recommend you try one or both of the approaches desc
 
 ### Review your setup for time fences and options not needed
 
-Follow these steps to review your setup for time fences and options that you don't need: <!--KFM: What is our goal here--reducing the number orders generated or items ordered? -->
+Follow these steps to review your setup for time fences and options that you don't need:
 
-1. Reduce your **Coverage time fence** as much as possible while still meeting your business needs. This setting will have the most significant impact on the time it takes to complete a data export. <!--KFM: Where is this setting? -->
 1. Go to **Master Planning \> Setup \> Coverage \> Coverage groups**.
-1. Check the following settings for each of the coverage groups on the **Coverage groups** page: <!--KFM: What are we looking for? How should we edit these values? maybe "consider whether the values could be smaller while still fulfilling your business needs for the various time fences."-->
+1. Check the following settings for each of the coverage groups on the **Coverage groups** page. Consider whether some or all of these values could be smaller while still fulfilling your business needs for the various time fences.
     - **Coverage time fence (days)**
     - **BOM explosion time fence (days)**
     - **Capacity scheduling time fence (days)**
@@ -202,11 +188,11 @@ Follow these steps to review your setup for time fences and options that you don
 1. If your plan is timing out because it generates a large number of orders, consider changing your business strategy for replenishing items. For example:
 
     - If you use coverage groups with a **Coverage code** of *Requirement*, a specific supply will be created for it each time there's a demand. Consider whether using a **Coverage code** of *Period* would work for your business. Using *Period* will cause the system to group all demand for a selected number of days into a single supply order that covers that period. It will also ease your management of planned orders. Alternatively, consider using **Coverage code** of *Min/Max*, which will only create a planned order when the on-hand inventory falls below the minimum value and then replenish it to its maximum value.
-    - Consider whether you could purchase or produce items in larger amounts. If so, increase the **Max. order quantity** set on **Default order settings** page for each item you're ordering<!--KFM: This is per item, right? -->. The higher the value, the fewer orders you're likely to generate for that item.
+    - Consider whether you could purchase or produce items in larger amounts. If so, increase the **Max. order quantity** set on **Default order settings** page for each item you're ordering. The higher the value, the fewer orders you're likely to generate for that item.
 
 ### Plan only for the products needed
 
-<!--KFM: Add an intro that summarizes this strategy and introduces the following bullets. e.g.: "Your data export may be able to complete more quickly if you reduce the number of products ordered for each planning run. Consider using one or both of the following strategies:" -->
+Your data export may be able to complete more quickly if you reduce the number of products considered for each planning run. Consider using one or both of the following strategies:
 
 - Identify product and variants that don't need to be fulfilled by master planning and set their **Product lifecycle state** to a state that has **Is active for planning** set to *No*. (See also [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you to identify products that haven't been used in any transactions for a while&mdash;these might now be obsolete, which means you could be able to remove them from your planning.
 
