@@ -75,7 +75,7 @@ Provisioning a new Microsoft Dataverse instance only takes a few minutes.  There
 
 During this time, the environment in Power Platform admin center will also show as in a "Preparing" state while Dataverse is added.  
 
-## Anti-patterns
+## Recommendations
 
 * As this action is ir-reversible, if you already have a Dataverse instance whihc you would like to link with Finance and Operations environment, then mark yes to Use a different Power Platform Environment and see [Connect Finance and Operations apps with an existing Microsoft Dataverse instance]
 * As you perform Environment lifecycle operations such as Restore data, consider Finance and Operations environment and Power Platform Environment as One, and maintain the 1:1 mapping.
