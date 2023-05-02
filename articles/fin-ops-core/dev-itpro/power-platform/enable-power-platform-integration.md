@@ -5,7 +5,7 @@ title: Enable Power Platform Integration
 description: This article explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services for finance and operations apps and Dataverse.
 ms.author: laswenka
 author: laneswenka
-ms.date: 02/07/2023
+ms.date: 05/02/2023
 ms.topic: article
 ms.prod:
 ms.technology: 
