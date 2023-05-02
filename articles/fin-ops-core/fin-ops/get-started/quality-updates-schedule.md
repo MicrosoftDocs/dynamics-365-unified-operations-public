@@ -53,7 +53,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.30 PQU-4 | February 24, 2023 | March 6 to April 9, 2023 | Completed |
 | 10.0.31 PQU-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Completed |
 | 10.0.31 PQU-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Completed |
-| 10.0.31 PQU-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Not Started |
+| 10.0.31 PQU-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| In-Progress |
 | 10.0.32 PQU-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| In-Progress |
 | 10.0.32 PQU-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| Not Started |
 | 10.0.32 PQU-3 | May 26, 2023 | June 5, 2023 to July 9, 2023| Not Started |
@@ -76,19 +76,6 @@ The following table shows the high-level train schedule. It includes a descripti
 
 > [!Note]
 > Only the onboarded productions environments will receive the updates, onboarded environments will receive explicit communication.
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-2 train schedule
-
-**App version: 10.0.1406.139**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | NA | NA |
-| Station 2 | March 20 to March 23, 2023 | April 1 to April 2, 2023 |
-| Station 3 | March 21 to March 24, 2023 | April 1 to April 2, 2023 |
-| Station 4 | March 27 to April 2, 2023 | April 8 to April 9, 2023 |
-| Station 5 | April 3 to April 6, 2023 | April 15 to April 16, 2023 |
-| Station 6 | NA | NA |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.31 Release-3 train schedule
 
@@ -117,6 +104,32 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | April 24 to April 27, 2023 | May 6 to May 7, 2023 |
 | Station 5 | May 1 to May 4, 2023 | May 13 to May 14, 2023 |
 | Station 6 | May 2 to May 5, 2023 | May 13 to May 14, 2023 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-2 train schedule
+
+**App version: 10.0.1515.98**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | May 8 to May 11, 2023 | NA |
+| Station 2 | May 15 to May 18, 2023 | May 27 to May 28, 2023 |
+| Station 3 | May 16 to May 19, 2023 | May 27 to May 28, 2023 |
+| Station 4 | May 22 to May 25, 2023 | June 3 to June 4, 2023 |
+| Station 5 | May 29 to June 1, 2023 | June 10 to June 11, 2023 |
+| Station 6 | May 30 to June 2, 2023 | June 10 to June 11, 2023 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.33 Release-1 train schedule
+
+**App version: 10.0.1549.63**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | May 8 to May 11, 2023 | NA |
+| Station 2 | May 15 to May 18, 2023 | May 27 to May 28, 2023 |
+| Station 3 | May 16 to May 19, 2023 | May 27 to May 28, 2023 |
+| Station 4 | May 22 to May 25, 2023 | June 3 to June 4, 2023 |
+| Station 5 | May 29 to June 1, 2023 | June 10 to June 11, 2023 |
+| Station 6 | May 30 to June 2, 2023 | June 10 to June 11, 2023 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
