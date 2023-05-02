@@ -72,6 +72,25 @@ You can set up a menu item that creates work for another worker after an initial
 <th>Description</th>
 </tr>
 <tr>
+<td rowspan="4">Inbound shipment order</td>
+</tr>
+<tr>
+<td>License plate receiving</td>
+<td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
+</tr>
+<tr>
+<td>License plate receiving and put away</td>
+<td>Receive and put away an inbound advance ship notice (ASN) by using the license plate ID.</td>
+</tr>
+<tr>
+<td>Load item receiving</td>
+<td>Register the receipt of a quantity for a load by using the load ID, and create put-away work for another worker. The item number and product dimensions match the receipt to the order lines.</td>
+</tr>
+<tr>
+<td>Load item receiving and put away</td>
+<td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the order lines. The same worker performs both actions.</td>
+</tr>
+<tr>
 <td rowspan="8">Purchase order</td>
 <td>Purchase order line receiving</td>
 <td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and create put-away work for another worker.</td>
@@ -117,13 +136,11 @@ You can set up a menu item that creates work for another worker after an initial
 <td rowspan="6">Transfer order</td>
 <td>Transfer order item receiving</td>
 <td>Register the receipt of a quantity of an item, and create put-away work for another worker.
-
 <strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr>
 <td>Transfer order item receiving and put away</td>
 <td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.
-
 <strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr>
@@ -175,7 +192,6 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td>Warehouse transfer</td>
 <td>Register that items have been transferred from one warehouse to another. This option requires that the worker be allowed to perform work in both warehouses.
-
 <strong>Note:</strong> This menu item requires a default inventory transfer journal where the <strong>Voucher draw</strong> field is set to <strong>Posting</strong>.</td>
 </tr>
 <tr>
@@ -202,10 +218,6 @@ You can set up a menu item that creates work for another worker after an initial
 In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to **Work**, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available. The option can be chosen under the **Directed by** field in the **Mobile device menu items** page. 
 
 <table>
-
-
-
-
 <thead>
 <tr class="header">
 <th>Option</th>
@@ -267,10 +279,6 @@ Additional menu items options are available on the **Mobile device menu items** 
 The following table describes these options.
 
 <table>
-
-
-
-
 <thead>
 <tr class="header">
 <th>Field</th>
