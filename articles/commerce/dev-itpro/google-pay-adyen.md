@@ -20,7 +20,7 @@ ms.search.validFrom: 2017-06-20
 [!include [banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> The Dynamics 365 Commerce team is investigating an issue with Google Pay in Chrome browsers when in Production. At current, the Google Pay functionality will fail to render in Chrome. Commerce is working with Google to identify a fix for this issue to support Google Pay via Adyen in the Commerce solution. At this time there is no ETA for this fix. 
+> The Dynamics 365 Commerce team is investigating an issue with Google Pay in Chrome browsers when in Production. At current, the Google Pay functionality will fail to render in Chrome. Commerce is working with Google to identify a fix for this issue to support Google Pay via Adyen in the Commerce solution.
 
 This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
