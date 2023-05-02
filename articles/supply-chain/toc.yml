@@ -3831,6 +3831,8 @@
           href: warehousing/warehouse-message-processor-messages.md
         - name: Warehouse-specific inventory transactions
           href: warehousing/warehouse-transactions.md
+        - name: Optimize location directive queries
+          href: warehousing/location-directives-optimize.md
         - name: Warehousing telemetry
           items:
           - name: Enable warehousing telemetry with Application Insights
