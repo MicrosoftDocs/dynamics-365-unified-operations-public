@@ -88,7 +88,6 @@ You'll now be presented with a dialog box indicating that this **action cannot b
 
 Type your name in the dialog window to proceed with the setup activity.
 
-<img src=" width="600px" alt="" />
 :::image type="content" source="media/Scenario1_Step3.png" alt-text="A screenshot of the Setup Power Platform Integration - This cannot be reversed dialog box."::: 
 
 ## Step 4: Provisioning in progress
