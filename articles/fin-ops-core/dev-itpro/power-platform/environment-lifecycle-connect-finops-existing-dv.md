@@ -62,7 +62,7 @@ In Lifecycle Services, visit your sandbox or Production environment and locate t
 
 :::image type="content" source="media/Scenario1_Step1.png" alt-text="A screenshot of the Power Platform Integration page."::: 
 
-Note that there is already a Power Platform Environment Id listed here. This is the "Initial Power Platform Environment," and it's the free placeholder environment that's created in Power Platform admin center for every sandbox and Production environment in Lifecycle Services. There is a one-to-one relationship and it will be the eventual migration path to Power Platform admin center in the future.
+There is already a Power Platform Environment Id listed here. This is the "Initial Power Platform Environment," and it's the free placeholder environment that's created in Power Platform admin center for every sandbox and Production environment in Lifecycle Services. There is a one-to-one relationship and it will be the eventual migration path to Power Platform admin center in the future.
 
 In this scenario, we already have a Power Platform environment with Dynamics 365 Field Service installed. The Initial Power Platform environment shown above will be disconnected from finance and operations apps and will be able to be deleted if you choose.
 
