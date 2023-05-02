@@ -37,7 +37,7 @@ You'll learn how to:
 > * Step 3: Confirm you wish to proceed.
 > * Step 4: Provisioning in progress.
 
-As an example of this scenario, a customer who has already gone live withthe Microsoft Dynamics 365 Field Service application on a Dataverse-based environment Power Platform admin center (PPAC) wants to connect their new finance and operations apps environment to it.  This unlocks popular features, such as, Dual-write, Virtual entities, and Business events out of the box between the back-office and front-office applications.
+As an example of this scenario, a customer who has already gone live with the Microsoft Dynamics 365 Field Service application on a Dataverse-based environment Power Platform admin center (PPAC) wants to connect their new finance and operations apps environment to it.  This unlocks popular features, such as, Dual-write, Virtual entities, and Business events out of the box between the back-office and front-office applications.
 
 ## Prerequisites
 The following list describes the prerequisites for setting up the Power Platform integration.
