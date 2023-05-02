@@ -93,10 +93,7 @@ There will be a brief downtime on the Finance and Operations apps environment so
 During this time, some platform applications may be installed on your Dataverse instance that are required by Finance and Operations apps, if they were not previously installed manually.  
 
 
-## Anti-patterns
+## Recommendations
 
 * Since you are using existing Dataverse instance and linking with the Finance and Operations environment, its important to not forget about the disconnected Power Platform environment which was created while the Finance and Operations environment was created.
-
-* You can delete the Power Platform environment from Power Platform Admin Center. Find and select  the Environment from the list, click the Delete button.
-
 * If you plan to keep Power Platform environment, please note that there is no Dataverse instance on this Environment, and cannot use Dataverse capabilities and features such as Export to Data Lake Add-In, dual-write, virtual tables.
