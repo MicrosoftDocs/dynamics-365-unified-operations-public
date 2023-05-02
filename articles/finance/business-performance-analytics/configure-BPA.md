@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure business performance analytics
+title: Set up business performance analytics
 description: This article describes how to configure business performance analytics.
 author: jinniew
 ms.author: jiwo
@@ -14,7 +14,7 @@ ms.custom:
 
 ---
 
-# Configure business performance analytics
+# Set up business performance analytics
 
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
