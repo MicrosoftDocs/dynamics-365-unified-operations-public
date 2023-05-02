@@ -3,11 +3,10 @@
 
 title: Connect finance and operations apps with an existing Microsoft Dataverse instance
 description: This artical explains how to connect finance and operations apps with an existing Microsoft Dataverse instance 
-ms.author: sakcuhha
+ms.author: sakuchha
 author: saurabh-kuchhal
 ms.date: 05/02/2023
 ms.topic: how-to
-ms.custom: bap-template
 ms.prod:
 ms.technology: 
 
@@ -61,7 +60,7 @@ The following list describes the prerequisites for setting up the Power Platform
 
 In Lifecycle Services, visit your sandbox or Production environment and locate the "Power Platform Integration" tab. You should see that the **Setup** button is available, which means that you can configure your connection to Microsoft Dataverse. 
 
-:::image type="content" source="media/Scenario1_Step1.png" alt-text="A screenshot of the setup button for enabling Power Platform Integration."::: 
+:::image type="content" source="media/Scenario1_Step1.png" alt-text="A screenshot of the Power Platform Integration page."::: 
 
 Note that there is already a Power Platform Environment Id listed here. This is the "Initial Power Platform Environment," and it's the free placeholder environment that's created in Power Platform admin center for every sandbox and Production environment in Lifecycle Services. This is a one-to-one relationship and will be the eventual migration path to Power Platform admin center in the future.
 
@@ -81,7 +80,7 @@ To bring your own Dataverse instance you'll need to adhere to several validation
 - You must be logged in with an account from the customer tenant who owns the Lifecycle Services project.
 - You must have a valid Finance, Supply Chain Management, Commerce, Project Operations, Human Resources, Unified Operations Plan, or AX Enterprise license assigned to your account. To see which licenses you have assigned, see [My Accounts](https://myaccount.microsoft.com/), and select the **Subscriptions** tab. 
 
-:::image type="content" source=""media/Scenario2_Step2.png" alt-text="Setup button for enabling Power Platform Integration."::: 
+:::image type="content" source="media/Scenario2_Step2.png" alt-text="A screenshot of the Power Platform Integration Setup page."::: 
 
 ## Step 3: Confirm you wish to proceed
 
@@ -90,7 +89,7 @@ You'll now be presented with a dialog box indicating that this **action cannot b
 Type your name in the dialog window to proceed with the setup activity.
 
 <img src=" width="600px" alt="" />
-:::image type="content" source=""media/Scenario1_Step3.png" alt-text="Setup button for enablign Power Platform Integration."::: 
+:::image type="content" source="media/Scenario1_Step3.png" alt-text="A screenshot of the Setup Power Platform Integration - This cannot be reversed dialog box."::: 
 
 ## Step 4: Provisioning in progress
 
