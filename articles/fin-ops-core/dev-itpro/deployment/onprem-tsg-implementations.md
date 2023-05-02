@@ -193,7 +193,7 @@ else
 
 ## <a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
 
-The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform. This script should not be used from Application version 10.0.35 and onwards.
+The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform. This script should not be used from Application version 10.0.35 or later.
 
 ```powershell
 param (
