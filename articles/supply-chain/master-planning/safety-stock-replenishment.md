@@ -58,8 +58,6 @@ When master planning runs, it will create several orders to ensure that the accu
 | Planned purchase orders | Z0001 | 4/5/2023 | 2.00 | 22 |
 | Demand forecast | Z0001 | 4/5/2023 | -2.00 | 20 |
 
-<!-- KFM: Maybe write something about the pegging here? -->
-
 The Net requirements page for item Z0001 could therefore resemble the following example:
 
 [<img src="media/safety-stock-example.png" alt="Example of safety stock." title="Example of safety stock" width="720" />](media/safety-stock-example.png#lightbox)
