@@ -27,10 +27,10 @@ The SDK package.json file that is included in the SDK root directory controls wh
 
 ```json
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.42",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.42",
+    "@msdyn365-commerce-modules/starter-pack": "9.43",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.43",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.42",
+    "@msdyn365-commerce/retail-proxy": "9.43",
 }
 ```
 
@@ -71,6 +71,7 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.30 | 9.40.x |
 | 10.0.31 | 9.41.x |
 | 10.0.32 | 9.42.x |
+| 10.0.32 | 9.43.x |
 
 ## Pull updates
 
