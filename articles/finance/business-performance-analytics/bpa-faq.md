@@ -68,23 +68,24 @@ The amount of time that's required depends on the volume of data. However, there
 
 Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
 
-1. Business performance analytics performance analytics anchor solution
-2. Business performance analytics performance analytics plugins solution
-3. Business performance analytics performance analytics solution
-4. Business performance analytics performance analytics permissions 
-5. Business performance analytics performance analytics tables
-6. Business performance analytics performance analytics controls
-7. Business performance analytics performance analytics tables anchor solution
-8. Business performance analytics performance analytics pipeline plugins solution
-9. Business performance analytics performance analytics tables user roles 
-10. Business performance analytics performance analytics analytical tables
-11. Business performance analytics performance analytics tables transformation job flows 
-12. Business performance analytics performance analytics data processing configuration 
-13. Business performance analytics performance analytics tables data lake synchronization
-14. Business performance analytics performance analytics tables standard entities
-15. Business performance analytics performance analytics virtual entities
-16. Business performance analytics performance analytics managed data lake 
-17. Business performance analytics performance analytics tables security 
+1. Business performance analytics anchor solution  
+2. Business performance analytics plugins solution 
+3. Business performance analytics solution 
+4. Business performance analytics permissions 
+5. Business performance analytics tables 
+6. Business performance analytics controls 
+7. Business performance analytics tables anchor solution 
+8. Business performance analytics tables user roles 
+9. Business performance analytics analytical tables workspace 
+10. Business performance analytics analytical tables 
+11. Business performance analytics tables transformation job flows 
+12. Business performance analytics tables data processing configuration 
+13. Business performance analytics tables data lake synchronization 
+14. Business performance analytics tables standard entities 
+15. Business performance analytics tables virtual entities 
+16. Business performance analytics tables managed data lake 
+17. Business performance analytics pipeline plugins solution 
+18. Business performance analytics tables security 
 
 To delete each of the preceding solutions, follow these steps.
 
