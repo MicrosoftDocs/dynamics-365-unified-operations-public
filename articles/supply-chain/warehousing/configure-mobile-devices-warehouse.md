@@ -73,8 +73,6 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td rowspan="4">Inbound shipment order</td>
-</tr>
-<tr>
 <td>License plate receiving</td>
 <td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
