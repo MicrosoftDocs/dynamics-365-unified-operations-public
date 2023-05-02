@@ -6,7 +6,7 @@ summary: Dynamics 365 Finance is an enterprise business solution that can help y
 brand: dynamics
 
 metadata:
-  title: Dynamics 365 Finance# Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Dynamics 365 Finance
   description: You can use Dynamics 365 Finance to manage invoices and payments, get payment authorizations, verify payment status, correct invoice or payment details, and regularly report on accounts.
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
@@ -40,31 +40,39 @@ additionalContent:
   sections:
   - title: Implement Finance
     items:
-    - title: Guidance
+    - title: Try or Buy
       links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
-        text: Security and compliance
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Implementation guide
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Best practices
-    - title: Try/Buy/Deploy
-      links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription?context=%2Fdynamics365%2Fcontext%2Ffinance
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Try Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Install Dynamics 365 Finance
-    - title: Set up 
+        text: Deploy Dynamics 365 Finance 
+    - title: Set up
       links:
-      - url: /dynamics365/finance
-        text: General setup
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Set up environments
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
+        text: Set up users
+      - url: /dynamics365/dev-itpro/sysadmin/role-based-security
+        text: Set up roles     
+    - title: Administer 
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Configure organization administration 
       - url: /dynamics365/guidance/implementation-guide/overview
-        text: Finance setup
+        text: Configure Finance
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
-        text: Reporting setup 
-  - title: Administer and develop Finance
+        text: Set up reporting  
+    - title: Guidance
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Security 
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Implementation guide
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Best practices     
+  - title: Develop Finance
     items:
     - title: Manage
       links:
@@ -74,7 +82,7 @@ additionalContent:
         text: Manage users
       - url: /dynamics365/dev-itpro/sysadmin/role-based-security
         text: Manage roles
-    - title: "Develop: Platform"
+    - title: Platform development 
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/
         text: Develop your environment
@@ -82,7 +90,7 @@ additionalContent:
         text: Customize your experience
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
         text: Use Dual-write
-    - title: Develop for Finance 
+    - title: Finance development 
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/financial/dimensions
         text: Patterns in Finance
