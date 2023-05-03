@@ -35,7 +35,7 @@ To configure Microsoft Power Platform for business performance analytics, follow
 2. Go to the details page of the implementation project that's used to manage the Dynamics 365 Finance environment.
 3. Select **Full details** for the environment that you want to use for the setup.
 4. Confirm that the Microsoft Power Platform Integration is shown. If Microsoft Power Platform has been set up, the name of the Microsoft Power Platform environment that's linked to the Dynamics 365 Finance environment will be listed and will show a status of **Power Platform environment setup is complete**. If Microsoft Power Platform hasn't yet been set up, select **Setup**, and follow the prompts as required. After the setup is successfully completed, the name of the Microsoft Power Platform environment that's linked to the Dynamics 365 Finance environment should be listed.
-5. If the integration was set up for an existing Microsoft Power Platform environment, confirm that the linked environment isn't in a disabled state. For more information, see [Enable Power Platform integration](//fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). For more information, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+5. If the integration was set up for an existing Microsoft Power Platform environment, confirm that the linked environment isn't in a disabled state. For more information, see [Enable Power Platform integration](/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration). For more information, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Configure the Azure AD tenant
 
@@ -48,7 +48,7 @@ For more details, see [Assign or remove licenses](/azure/active-directory/fundam
 
 ## Move data from a production environment to a sandbox environment
 
-To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](//fin-ops-core/dev-itpro/database/dbmovement-operations). This data will be loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
+To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](/fin-ops-core/dev-itpro/database/dbmovement-operations). This data will be loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
 
 ## Required configurations in Dynamics 365 Finance
 
