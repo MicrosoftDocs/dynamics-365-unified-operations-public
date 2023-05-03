@@ -63,7 +63,7 @@ additionalContent:
       - url: /dynamics365/guidance/implementation-guide/overview
         text: Configure Finance
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
-        text: Set up reporting  
+        text: Configure reporting  
     - title: Guidance
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
@@ -71,7 +71,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation guide
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Best practices     
+        text: Implementation FAQ     
   - title: Develop Finance
     items:
     - title: Manage
