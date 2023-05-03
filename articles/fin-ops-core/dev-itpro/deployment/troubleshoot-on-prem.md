@@ -2,12 +2,11 @@
 title: Troubleshoot on-premises deployments
 description: This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 06/07/2022
+ms.date: 05/04/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
@@ -914,17 +913,17 @@ On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** 
 
 ### Microsoft Edge developer tools
 
-The developer tools that are shipped with Microsoft Edge can be really helpful in helping debug network requests between a client and the AOS server.
+The developer tools that are shipped with Microsoft Edge can be helpful when debugging network requests between a client and the AOS server.
 
 The following sections provide focused debugging steps for claims that are returned to Microsoft Dynamics.
 
 #### Capture
 
-1. Open Microsoft Edge, and then open an InPrivate window (the shortcut key is Ctrl + Shift + N).
-1. Open the Microsoft Edge developer tools (the shortcut key is Ctrl + Shift + I)
-1. Navigate to the network tab. You can verify that that traffic is being captured by looking at the lower part of the tool.
-1. In the Network tab make sure you have **Preserve Log** and **Disable Cache** checked.
-1. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
+1. Open Microsoft Edge, and then open an **InPrivate** window (the shortcut key is Ctrl + Shift + N).
+1. Open the **Microsoft Edge developer tools** (the shortcut key is Ctrl + Shift + I)
+1. Navigate to the **Network** tab. You can verify that traffic is being captured by looking at the lower part of the tool.
+1. In the **Network** tab make sure you have **Preserve Log** and **Disable Cache** checked.
+1. Open finance and operations apps (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 1. Sign in by using the USERINFO.NETWORKALIAS account and password.
 1. After you're signed in, stop recording the network log (the shortcut key is Ctrl + E).
 
@@ -935,7 +934,7 @@ Once you have the network log, you can analyze the claims that are returned to M
 1. In the network log look for the POST request that gets sent to Finance +Operations after having successfully authenticated through AD FS.
     ![Network log.](media/NetworkLogOnpremADFS.png)
 1. Select the request, and then select **Payload**.
-1. In the payload find the id_token parameter, and copy the value.
+1. In the payload find the id_token parameter and copy the value.
 > [!NOTE]
 > Only copy the value of the id_token parameter. Don't copy the entire payload.
 > Copy the value of the id_token parameter after the colon sign (:).
