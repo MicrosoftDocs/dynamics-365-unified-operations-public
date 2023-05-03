@@ -159,10 +159,25 @@ To publish product (or category) media assignments, follow these steps:
 [todo]
 
 ### Reseting assignments to defaults
-[Todo]
+The **Reset to default** button in the product media action bar will clear _all media_ assignments accross Master, Dimensions, and Variants for the currently selected channel and locale.  If assignments for a product in a specific channel are **Reset to default**, then the product will revert back to any default Omnichannel media assignments.  This effectively reverses the action of clicking the "Edit product media" button for the first time on a channel specific product media assignment (which severs the inheritance to Omnichannel media assignments).  Clicking the **Reset to default** button while in the **Omnichannel - Neutral** context is equivalent to a "clear-all" for the selected product's media assignments accross Master, Dimensions, and Variants.
+
+To reset a product's media assignments, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product (or category) using its name or product ID in the search view on the left, and select it.
+3. Click the **Reset to default** button in the top action bar.
+4. When the confirmation dialog appears, click **Ok**.
 
 ## Category media assignments
-[todo]
+Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level like they can be for individual products.  Category media assignments are generally used for category navigation end-user experiences.  Commerce currently supports a single default image to be assigned to each channel-specific category.
+
+To assign a default image for a channel-specific category, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Set the channel context picker in the upper right portion of the action bar to any channel other than Omnichannel.
+3. Search for a known category name in the search view on the left.  Category records will have the word **Category** underneath the name in the results list.  Find the desired category and select it.
+4. In the media assignment workspace, click the **Edit category media** button in the upper right.
+5. In the **Primary media** section, click the **Add media** button.
+6. Select (or upload) the category image to assign from the media picker, and click **Apply**. 
+7. Click **Finish editing** in the upper right to check in the category media assignment (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 # Omnichannel content media library
 [Todo]
