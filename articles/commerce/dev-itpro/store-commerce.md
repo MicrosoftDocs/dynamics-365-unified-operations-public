@@ -152,7 +152,7 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
-- The .NET Framework version 4.7.2 or later is needed for embedded Hardware Station components. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
+- The .NET Framework version 4.7.2 or later is required for embedded Hardware Station components. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
 - The .NET Desktop Runtime 6.0.16 or later. Is used by Store Commerce App for UI rendering. 
 
 ### Device setup in Commerce headquarters
