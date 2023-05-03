@@ -16,37 +16,37 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Safety stock is an item quantity held in the inventory for the purpose of reducing the risk that the item will run out of stock. Safety stock is used when demand coming from sales orders is greater than planned for final goods and/or when a supplier is unable to deliver additional units in the expected time.
+Safety stock is an item quantity that's held in inventory to reduce the risk that the item will run out of stock. Safety stock is used when the demand from sales orders is more than planned for final goods, and/or when a supplier can't deliver additional units in the expected time.
 
-The system will always try to prevent the accumulated quantity of an item from falling below its safety stock limit. Whenever the master planning engine detects that the accumulated on-hand inventory for an item will fall below its minimum, it will create a planned order to replenish the item and schedule it to arrive before the minimum threshold his crossed. This means that safety stock is fulfilled on *\[Today's date\] &plus; \[Procurement time\]*.
+The system always tries to prevent the accumulated quantity of an item from falling below its safety stock limit. Whenever the master planning engine detects that the accumulated on-hand inventory for an item will fall below its minimum, it creates a planned order to replenish the item and schedules the order to arrive before the minimum threshold is crossed. Therefore, safety stock is fulfilled on *Today's date* + *Procurement time*.
 
-During planning, if there is actual demand, the system will peg that demand against a planned order that was generated for safety stock if it means that the demand could therefore be fulfilled on time. Because system will always try to keep the accumulated on-hand inventory level above the safety stock level, it will create a new planned order to cover the safety stock that was claimed for the actual demand.
+During planning, if there's actual demand, the system pegs it against a planned order that was generated for safety stock, if this approach will enable the demand to be fulfilled on time. Because the system always tries to keep the accumulated on-hand inventory level above the safety stock level, it will create a new planned order to cover the safety stock that was claimed for the actual demand.
 
 > [!NOTE]
-> Safety stock is not a demand as such, so any other demand will be prioritized over the safety stock. This means that the system can create a planned order to fulfill safety stock, but if actual demand arrives later, then that demand can claim the safety stock quantity (the new demand will be pegged against the original planned order).
+> Because safety stock isn't really demand, any demand will be prioritized over the safety stock. Therefore, the system can create a planned order to fulfill safety stock, but if actual demand arrives later, that demand can claim the safety stock quantity. (The new demand will be pegged against the original planned order.)
 
 ## Set the safety stock level for an item
 
-To define safety stock for an item at a specific location, follow these steps:
+To define safety stock for an item at a specific location, follow these steps.
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the relevant product in the grid.
-1. On the Action Pane, open the **Plan** tab and select **Item coverage**.
-1. While on the **Overview** tab, select **New** from the Action Pane to add a new line to the grid.
-1. For the new line, specify the relevant product dimensions (**Site**, **Warehouse**, and other dimensions as needed (such as color or style)).
-1. Enter the safety stock value in the **Minimum** column. The master planning engine will always generate planned orders to prevent the accumulated inventory level from falling below this limit. The value is expressed in inventory units. If you leave the field blank, the default value is zero.
+1. On the Action Pane, on the **Plan** tab, select **Item coverage**.
+1. While you're on the **Overview** tab, select **New** on the Action Pane to add a line to the grid.
+1. For the new line, specify the relevant product dimensions (**Site**, **Warehouse**, and other dimensions as required, such as **Color** or **Style**).
+1. In the **Minimum** field, enter the safety stock value. The master planning engine will always generate planned orders to prevent the accumulated inventory level from falling below this limit. The value is expressed in inventory units. If you leave the field blank, a default value of **0** (zero) is used.
 
 > [!NOTE]
-> The **General** tab of the **Item coverage** page includes a field called **Fulfill minimum**. This setting is ignored when you are using Planning Optimization (the system always behaves as though **Fulfill minimum** were set to *Today's date + procurement time*). For details about how this setting works when using the deprecated master planning engine, see [Safety stock fulfillment with the deprecated planning engine](safety-stock-replenishment-in-deprecated-engine.md).
+> The **General** tab of the **Item coverage** page includes a **Fulfill minimum** field. When you use Planning Optimization, the setting of this field is ignored. (Instead, the system always behaves as though **Fulfill minimum** is set to *Today's date + procurement time*.) For information about how the **Fulfill minimum** setting works when you use the deprecated master planning engine, see [Safety stock fulfillment with the deprecated planning engine](safety-stock-replenishment-in-deprecated-engine.md).
 
 ## Example: Safety stock
 
-Suppose your system is set up with the following:
+Your system is set up in the following way:
 
 - The warehouse has 30 ea of total on-hand inventory of item Z0001.
-- There is a demand forecast showing that 2 ea of item Z0001 is consumed every day.
+- There's a demand forecast that shows that 2 ea of item Z0001 are consumed every day.
 - The safety stock for item Z0001 is set to 20 ea.
-- The lead time for item Z0001 is 5 days.
+- The lead time for item Z0001 is five days.
 
 When master planning runs, it will create several orders to ensure that the accumulated on-hand inventory remains above the safety stock threshold. The following table provides an example.
 
@@ -58,15 +58,17 @@ When master planning runs, it will create several orders to ensure that the accu
 | Planned purchase orders | Z0001 | 4/5/2023 | 2.00 | 22 |
 | Demand forecast | Z0001 | 4/5/2023 | -2.00 | 20 |
 
-The Net requirements page for item Z0001 could therefore resemble the following example:
+Therefore, the **Net requirements** page for item Z0001 might resemble the following example.
 
-[<img src="media/safety-stock-example.png" alt="Example of safety stock." title="Example of safety stock" width="720" />](media/safety-stock-example.png#lightbox)
+[<img src="media/safety-stock-example.png" alt="Example of safety stock on the Net requirements page." title="Example of safety stock on the Net requirements page" width="720" />](media/safety-stock-example.png#lightbox)
 
 ## Example: Minimum key
 
-You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item in the off-season, and then gradually increase the level during the other months. You create a minimum key by going to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**.
+You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item during the off-season and then gradually increase it during the other months.
 
-You specify the minimum key to adjust the safety stock level by seasonality in the **Minimum key** field on the **General** tab of the **Item coverage** page. If you are using minimum keys, set **Minimum periods** to *Yes* to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you set **Minimum periods** to *No*, the minimum inventory is fulfilled for the current period only.
+To create a minimum key, go to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**. You can then specify the minimum key to adjust the safety stock level by seasonality by setting the **Minimum key** field on the **General** tab of the **Item coverage** page.
+
+If you're using minimum keys, set the **Minimum periods** option to *Yes* to fulfill the minimum inventory level for all the periods that are set up in the minimum key. If you set the option to *No*, the minimum inventory is fulfilled for the current period only.
 
 The following procedure is an example that shows how to set up a minimum key that accounts for increased seasonal demand during the spring and summer months.
 
@@ -140,7 +142,7 @@ All the batches expire accordingly, and planned orders are created to refill the
 
 Safety stock is tracked in the system as a requirement type, just like sales lines or BOM requirements. You can see the safety stock requirement line on the **Net requirements** page if you remove the default filter on the **Requirement type** column.
 
-Fulfilling the safety stock requirement transaction is deprioritized if the system determines that this causes delays in the fulfillment of real demand, such as sales lines, BOM lines, transfer requirements, or demand forecast lines. Otherwise, making sure that the available inventory is above the safety stock quantity has the same priority as any other demand types. This ensures no delays for real transactions and helps to prevent over-replenishment and early-replenishment of safety stock.
+Fulfilling the safety stock requirement transaction is deprioritized if the system determines that this causes delays in the fulfillment of real demand, such as sales lines, BOM lines, transfer requirements, or demand forecast lines. Otherwise, making sure that the available inventory is above the safety stock quantity has the same priority as any other demand types. This ensures no delays for real transactions and helps to prevent over-replenishment and early replenishment of safety stock.
 
 During the coverage phase of master planning, safety stock replenishment is no longer deprioritized. On-hand inventory can be used before any other demand types. During the delay calculation, new logic will be added to go over the delayed sales lines, BOM line requirements, and all the other demand types, to determine whether they could be delivered on time, provided that the safety stock is used. If the system identifies that it can minimize delays by using safety stock, then the sales lines or BOM lines will replace their initial coverage with the safety stock, and the system will trigger the replenishment for the safety stock instead.
 
