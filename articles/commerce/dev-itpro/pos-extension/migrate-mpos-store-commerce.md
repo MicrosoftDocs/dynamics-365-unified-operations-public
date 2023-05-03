@@ -2,7 +2,7 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 04/26/2023
+ms.date: 05/03/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
