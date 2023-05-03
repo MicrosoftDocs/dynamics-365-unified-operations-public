@@ -11,6 +11,10 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/personalization-gdpr.md",
+      "redirect_url": "opt-out-personalization",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/public-preview-terms.md",
       "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2105274",
       "redirect_document_id": "false"
