@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create recommendations with demo data
-description: This article provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
+description: This article provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using prepopulated, customizable demo data.
 author: bebeale
 ms.date: 09/08/2022
 ms.topic: article
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-This article provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
+This article provides guidance on how to leverage omnichannel product recommendations in Tier-1 single box environments using prepopulated, customizable demo data.
 
-Omni-channel product recommendations provide a set of editorially curated or programmatically generated list of products. These lists can be used in several scenarios, depending on the business need. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
+Omnichannel product recommendations provide a set of editorially curated or programmatically generated list of products. These lists can be used in several scenarios, depending on the business need. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
-For Tier-2 and higher Dynamics 365 environments, product recommendations are automatically computed based on customer data. Using product recommendations demo data does not disable any product recommendations solution already provisioned in the environment and any costs associated with its usage.
+For Tier-2 and higher Dynamics 365 environments, product recommendations are automatically computed based on customer data. Using product recommendations demo data doesn't disable any product recommendations solution already provisioned in the environment and any costs associated with its usage.
 
 For Tier-1 environments, product recommendations are based only off the static demo data stored in a .csv file.
 
