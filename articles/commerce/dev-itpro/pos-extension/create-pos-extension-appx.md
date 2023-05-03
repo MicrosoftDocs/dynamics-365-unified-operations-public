@@ -2,7 +2,7 @@
 title: Create an .appx file for a Modern POS extension package
 description: This article explains how to create a Modern Point of Sale (MPOS) packaging project by using Microsoft Visual Studio 2017.
 author: josaw1
-ms.date: 03/14/2023
+ms.date: 05/03/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
