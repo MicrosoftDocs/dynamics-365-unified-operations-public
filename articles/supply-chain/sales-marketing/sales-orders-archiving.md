@@ -31,22 +31,18 @@ To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later. <!--KFM: Correct version? -->
 - The data archive micro-service must be installed on your system from Lifecycle Services (LCS). <!--KFM: Link to more info? What is the service called? Maybe a short mention of what configuration is needed (with link). -->
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-    - *(Preview) Archive*
-    - *(Preview) Archive data to Dataverse managed data lake and purge*
-    - *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge*
-    - *(Preview) Archive sales orders to history tables*
-    - *(Preview) Archive sales orders to history tables using archive service*
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Enable them in the following order:
+    1. *(Preview) Archive*
+    1. *(Preview) Archive sales orders to history tables*
+    1. *(Preview) Archive sales orders to history tables using archive service*
 
 The purpose of each of these features is summarized in the following table
 
 | Feature | Description |
 |---|---|
 | *(Preview) Archive* | This feature lets you execute data archive for select high volume areas of the product. |
-| *(Preview) Archive data to Dataverse managed data lake and purge* | Provides the basic archival framework for performing rules-based archiving of historical data. It makes it possible to remove archived records from your local history tables and store them in your Dataverse managed data lake. |
-| *(Preview) Archive sales orders to history tables* | Performs the first step in the archival process, which is archiving from day-to-day transaction tables to local history tables. Once archived to history tables, the data from the day-to-day transaction tables will be purged. <!--KFM: FM contains identical description of these two features. How is this one different? --> |
-| *(Preview) Archive sales orders to history tables using archive service* | Performs the first step in the archival process, which is archiving from day-to-day transaction tables to history tables. Once archived to history tables, the data from the day-to-day transaction tables will be purged. <!--KFM: FM contains identical description of these two features. How is this one different? --> |
-| *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* | Performs the final step in the archival process, which is to remove archived orders from your local history tables and store them in your Dataverse managed data lake. |
+| *(Preview) Archive sales orders to history tables* | Provides a framework for archiving sales orders from day-to-day transaction tables to local history tables. |
+| *(Preview) Archive sales orders to history tables using archive service* | Performs the archiving of sales orders from day-to-day transaction tables to history tables. Once archived to history tables, the data from the day-to-day transaction tables will be purged. |
 
 ## Which sales orders can be archived and when
 
@@ -57,9 +53,9 @@ Sales orders can be archived when the following conditions are met:
 - Inventory closing must be run on or after the to-period date of the archive. <!--KFM: Is our point that the closing must already be set to run, or that it must not be run before the to-period? -->
 - The period must be at least one year before the from-period date of the archive. <!--KFM: Which period? -->
 
-## Set up a batch job to archive sales orders
+## Schedule archiving of sales orders
 
-To set up sales order archiving, follow these steps:
+To schedule sales order archiving, follow these steps:
 
 1. Navigate to the **Archive** workspace. <!--KFM: How do we get here? Give full nav path. -->
 1. On the Action Pane, select **Archive** to open a drop-down dialog box, and then make the following settings:
