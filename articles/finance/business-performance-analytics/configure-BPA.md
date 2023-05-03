@@ -48,7 +48,7 @@ For more details, see [Assign or remove licenses](/azure/active-directory/fundam
 
 ## Move data from a production environment to a sandbox environment
 
-To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](/fin-ops-core/dev-itpro/database/dbmovement-operations.md). This data will be loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
+To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](//fin-ops-core/dev-itpro/database/dbmovement-operations). This data will be loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
 
 ## Required configurations in Dynamics 365 Finance
 
