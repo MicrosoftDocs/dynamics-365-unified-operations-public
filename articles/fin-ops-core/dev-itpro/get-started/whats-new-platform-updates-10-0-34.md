@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.34 of finance and operations apps (May 2023)
+title: Platform updates for version 10.0.34 of finance and operations apps (June 2023)
 description: This article lists the features that are included in the platform updates for version 10.0.34 of finance and operations apps.
 author: johnmichalak
 ms.date: 04/05/2023
@@ -13,7 +13,7 @@ ms.author: sericks
 ms.search.validFrom: 2022-10-14
 
 ---
-# Platform updates for version 10.0.34 of finance and operations apps (May 2023)
+# Platform updates for version 10.0.34 of finance and operations apps (June 2023)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
