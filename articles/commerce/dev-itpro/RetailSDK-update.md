@@ -2,7 +2,7 @@
 title: Upgrade the Retail channel extension to the latest Retail SDK
 description: This article explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK.
 author: josaw1
-ms.date: 03/14/2023
+ms.date: 05/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
