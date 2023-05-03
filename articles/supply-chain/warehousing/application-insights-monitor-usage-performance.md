@@ -107,8 +107,8 @@ The following table lists the telemetry data that's logged as custom dimensions.
 | `workCreationLogMessage` | The message that was logged during a process (such as work creation or wave allocation). | 10.0.31 |
 | `workCreationLogTransactionTime` | A timestamp that indicates when the work creation log was created. | 10.0.31 |
 | `workCreationNumber` | The work creation number that was used for the work creation process. | 10.0.31 |
-| `WaveStatusCurrent` | The work creation number that was used for the work creation process. | 10.0.33 |
-| `waveStatusPrevious` | The work creation number that was used for the work creation process. | 10.0.33 |
+| `WaveStatusCurrent` | The status of the current wave. | 10.0.33 |
+| `waveStatusPrevious` | The status of the previous wave. | 10.0.33 |
 | `WorkExecuteMode` | The work processing mode for the Warehouse Management mobile device app flow. | 10.0.31 |
 | `WorkExecuteStep` | The work processing step for the Warehouse Management mobile device app flow. | 10.0.31 |
 | `WorkId` | The work ID that was processed. | 10.0.32 |
@@ -131,7 +131,7 @@ The following table lists the telemetry data that's logged as custom dimensions 
 |---|---|---|---|
 | `activityId` | The GUID of the server request activity ID. | 10.0.29 | 2.0.35 |
 | `activityGraph` | A constant that provides information about the place of the call in the activity hierarchy. The value "Warehouse.MobileApp.Interaction" will always be logged. | 10.0.29 | 2.0.35 |
-| `appVersion` | A constant that provides information about the place of the call in the activity hierarchy. The value "Warehouse.MobileApp.Interaction" will always be logged. | 10.0.33 | 2.0.43 |
+| `appVersion` | The version of the app that performs the call. | 10.0.33 | 2.0.43 |
 | `backendProcessingTime` | Information about the processing time of the request on the server. | 10.0.29 | 2.0.28 |
 | `batteryLevel` | Information about the device's battery level. | 10.0.29 | 2.0.28 |
 | `batterySession` | Information about the battery session of the device. If the device is charging, the telemetry logs it as such. Otherwise, it logs a GUID that represents an on-battery session. Every time that the device charges, the GUID for the on-battery session is changed. | 10.0.29 | 2.0.28 |
