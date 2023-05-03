@@ -3,7 +3,7 @@ title: Transition from dual-write application orchestration package to split pac
 description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This article explains how to switch from the orchestration package to the individual.
 author: abunduc-ms
 ms.author: abunduc
-ms.date: 04/27/2023
+ms.date: 05/04/2023
 ms.topic: article
 ---
 
@@ -13,7 +13,7 @@ ms.topic: article
 
 Before March 2022, when setting up dual-write, customers had to install the dual-write application orchestration package from AppSource. This package contained solutions for all application logic, including all table maps. Customers were in all-or-nothing situation where they had to have all solutions installed even if they would only require using a subset.
 
-To solve this problem, we split the monolith orchestration package into smaller individual packages. The individual packages contain solutions with the same name, publisher, and map versions as the application orchestration package. Therefore, this is a non-breaking change and environments can easily upgrade by installing the split packages required from AppSource.
+To solve this problem, we split the monolith orchestration package into smaller individual packages. The individual packages contain solutions with the same name, publisher, and map versions as the application orchestration package. Therefore, this is a nonbreaking change and environments can easily upgrade by installing the split packages required from AppSource.
 
 > [!IMPORTANT]
 > The orchestration solution is no longer being maintained and it will be deprecated. In order to benefit from enhancements and bug fixes, we recommend installing the split packages.
@@ -32,13 +32,13 @@ As with any app updates, we advise applying these steps in lower environments fi
 
 You can easily identify the packages that are required by tracking the entities or table maps that you're syncing today. The entities and maps included in the solutions of each split package are detailed in the [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions) article.
 
-:::image type="content" source="media/find-entity-in-split-package.png" alt-text="Find entity in split package." lightbox="media/find-entity-in-split-package.png":::
+:::image type="content" source="media/find-entity-in-split-package.png" alt-text="Screenshot of the Dual-write Finance page with the available packages highlighted." lightbox="media/find-entity-in-split-package.png":::
 
 For example:
 
 - If you're syncing contacts, therefore using Customers V3, you would need to install the Dual-write Application Core and Dual-write Finance packages.
 - If you're syncing products, you would need to install Dual-write Supply Chain package and its dependencies.
-- If you are syncing a full prospect to cash flow, with customers, products, quotes, and orders being synced, the required packages are:
+- If you're syncing a full prospect to cash flow, with customers, products, quotes, and orders being synced, the required packages are:
   - Dual-write Application Core package
   - Dual-write Finance package
   - Dual-write Human Resources package
@@ -52,21 +52,21 @@ To install the required packages, follow these steps.
 1. With an administrator account, open the **Power Platform Admin Center**.
 1. Select the environment to upgrade, **Resources**, **Dynamics 365 Apps** and then select **Open App Source**.
 1. Search for Dual-write, and review the available packages. 
-1. Install the available packages that are required. You will need to install any dependencies first.
+1. Install the available packages that are required. You'll need to install any dependencies first.
 
 For a complete list of split packages and dependencies, see [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions).
 
-:::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Dual-write packages in AppSource." lightbox="media/dual-write-packages-app-source.png":::
+:::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Screenshot of the Dual-write packages in AppSource." lightbox="media/dual-write-packages-app-source.png":::
 
 ### Step 3. Apply solutions in Dual-write workspace
 
 Once the packages/apps have completed installation (status is **Installed**), one or more solutions containing the latest features and table maps will be installed in Microsoft Dataverse.
 
-Based on the information provided in the [Dual-write release notes](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/whats-new-dual-write), identify if any of the split packages installed have table maps updates. You can identify if a package has table maps updates if the solution containing table maps will have **Has new changes** set to **Yes**. If there are table maps that have **Has enw changes** set to yes, then open the Dual-write workspace, select **Apply solution** and then choose to install the relevant solutions.
+Based on the information provided in the [Dual-write release notes](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/whats-new-dual-write), identify if any of the split packages installed have table maps updates. You can identify if a package has table maps updates if the solution containing table maps will have **Has new changes** set to **Yes**. If there are table maps that have **Has new changes** set to yes, then open the Dual-write workspace, select **Apply solution** and then choose to install the relevant solutions.
 
-:::image type="content" source="media/apply-solution.png" alt-text="Apply a solution from the dual-write workspace." lightbox="media/apply-solution.png":::
+:::image type="content" source="media/apply-solution.png" alt-text="Screenshot of the the dual-write workspace search results for dual-write, with the Apply a solution button highlighted." lightbox="media/apply-solution.png":::
 
-The folowing table shows the complete list of solutions containing table maps for each split package:
+The following table shows the complete list of solutions containing table maps for each split package:
 
 | **Package**                                        | **Solution table maps to apply in Dual-write workspace**  |
 |----------------------------------------------------|-----------------------------------------------------------|
