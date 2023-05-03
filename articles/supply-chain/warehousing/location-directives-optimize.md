@@ -25,7 +25,7 @@ The [optimization advisor](../../fin-ops-core/dev-itpro/sysadmin/optimization-ad
 
 ## Prerequisites
 
-To use the *Optimize location directive queries* tool, you must be running Supply Chain Management 10.0.35 or higher. <!-- KFM: Any other requirements? Feature management? -->
+To use the *Optimize location directive queries* tool, you must be running Supply Chain Management 10.0.35 or higher. <!-- KFM: Any other requirements? Feature management? MFP: No - that's it-->
 
 ## Run the tool
 
@@ -34,13 +34,13 @@ Follow these steps to run the *Optimize location directive queries* tool:
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Optimize location directive queries**.
 1. The **Optimize location directive queries** dialog opens.
 1. If you'd like to limit the scope of the optimization, then expand the **Records to include** FastTab and select **Filter** to open a standard query editor dialog, where you can define selection criteria. The fields work just as they do for other types of queries in Supply Chain Management.
-1. On the **Run in the background** FastTab, specify how, when, and how often to run the tool. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. <!-- KFM: Any recommendations here? Use Batch or no? Schedule or no? Anything else? -->
+1. On the **Run in the background** FastTab, specify how, when, and how often to run the tool. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. <!-- KFM: Any recommendations here? Use Batch or no? Schedule or no? Anything else? MFP: Most should just run it (not in batch), some might schedule to run it once at a given time (say Sunday at 8pm) to avoid having to be online. Running it recurringly is not recommended.-->
 1. Select **OK** to run the tool using the options you selected.
 
 ## How it works
 
-<!-- KFM: Please review my edit to the following text. -->
+<!-- KFM: Please review my edit to the following text. MFP: Done - one small edit -->
 
-Location directives for picks typically rely on on-hand inventory information available in the `InventSum` table to determine where to pick from. Because location directive queries normally include inventory dimensions to make sure product variants are considered when deciding where an item should be stored, these queries previously required a join between the `InventSum` and `InventDim` tables. However, the data model has now been denormalized to optimize this very common query pattern, so now, all the required information is available directly in the `InventSum` table. This saves a join operation, which typically boosts location directive queries by 30-50%.
+Location directives for picks typically rely on on-hand inventory information available in the `InventSum` table to determine where to pick from. Because location directive queries normally include inventory dimensions to make sure product variants are considered when deciding where an item should be picked from, these queries previously required a join between the `InventSum` and `InventDim` tables. However, the data model has now been denormalized to optimize this very common query pattern, so now, all the required information is available directly in the `InventSum` table. This saves a join operation, which typically boosts location directive queries by 30-50%.
 
 The *Optimize location directive queries* tool transfers all ranges from `InventDim` to `InventSum`, and removes the join to `InventDim`.
