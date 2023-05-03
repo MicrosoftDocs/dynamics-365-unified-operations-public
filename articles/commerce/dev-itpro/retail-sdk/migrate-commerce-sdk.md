@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This article explains how to migrate to the Commerce software development kit (SDK).
 author: josaw1
-ms.date: 04/12/2023
+ms.date: 05/03/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
