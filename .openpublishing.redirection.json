@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles//fin-ops-core/dev-itpro/data-entities/dual-write/extended-session-timeout.md",
+      "redirect_url": "/dynamics365/finance",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md",
       "redirect_url": "setup-deploy-on-premises-latest",
       "redirect_document_id": "false"
