@@ -190,12 +190,36 @@ To assign a default image for a channel-specific category, follow these steps:
 
 # Omnichannel media management prerequisites and configuration
 [todo]
+To configure omnichannel media managment features in your Commerce environments, follow these steps:
+1. In Site Builder set **Enable omnichannel content** feature flag to on.
+2. In HQ, search for **feature managemnt** in the seach bar
+3. Click **Check for updates** in upper right
+4. Click **All** and search for *Omni
+5. Select the **Enable omnichannel meida assignment authoring UX**
+6. In the right panel click **Enable now**.  (If you dont see this then during the preview period, then you will need to submit an ICM asking Microsoft to enable this feature flight for your environment.  Once the feature flight ICM is approved you will be able to enable this feature).
+7. For preview window, need to go to **Commerce parameters** from search bar
+8. Select **Set up omnichannel media management**
+9. Under the CMS endpoint enter CMS endpoint and tenant code that was provided in the feature flighting ICM request response
+10. Hit **save**
+11. Go to **Distribution schedules** and run 1110 job (**Global configuration**)
+12. Stage all media assignments
+13. In HQ, search for **CMS to HQ omnichannel media sync** in seach bar.
+14. Set **Batch processing** to **Yes**
+15. Click **Recurrence** and set the CMS->HQ data sync job to run on your desired schedule (typically once per hour)
+16. Go to **Channel database** in search bar and select **Full data sync** and select 1040 (Products) from the dropdown selection and click **Ok**
+17. Go to **Batch jobs** and search for "omni" and validate that the job is in "ended" state"
+18. Also look for "full sync" on job description filter and validate that job has ended.
+19. In HQ, search for **feature managemnt** in the seach bar
+20. Click **All** and search for *Omni
+21. Select **Enable omnichannel media assignments for CSU media locations** and click **Enable now** to switch CSU media locations behavior
+22. Go to **Distribution schedules** and run 1110 job (**Global configuration**)
+23. In site builder's individual sites go to **Site settings** > **Extensions** and turn on **Enable omnichannel media management**.  Click **Save and publish** button at the top.
+
 
 # Omnichannel media management concepts and data model
 [todo]
 
-## Overview of media assignment hierarchy
-[todo]
+
 
 ## Omnichannel media architecture and dataflow
 [Describe new management UX interfaces (HQ, Omnichannel content library)
