@@ -24,8 +24,10 @@ When finance and operations apps environment is deployed in a geo, there are mul
 
 Only Sandbox and Production environments can be migrated from one geo to another. 
 Cloud Hosted Environment (CHE) migration is not supported.
+Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.
 
 ## Considerations before starting the migration
+- Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 - We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
 - Environment migrations are not self-serve and require customer initiated support ticket.
 - Create your support request for migration at least 10 days before you want the environment to be migrated.
@@ -56,7 +58,7 @@ We recommend that you migrate Sandbox environments first and validate them befor
 |3|Microsoft|Review the geo-to-geo migration request and approve it||
 |4|Customer/Partner|Before the start of downtime uninstall any microservices or add-ins||
 |5|Microsoft|Execute migration|Associated Dataverse environment (if any) will also be migrated in same time frame. Premigration work begins 12 hours before the scheduled downtime. During premigration The environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. Associated Dataverse environment (if any) will also be migrated in same time frame. During the migration finance and operations apps and Dataverse environments ar unlinked, both environments are migrated and relinked after migration is complete.|
-|6|Microsoft|Confirm completion of migration to customer/partner||
+|6|Microsoft|Confirm completion of the migration to customer/partner||
 |8|Customer/Partner|Validate Sandbox functionality in target geo||
 |7|Customer/Partner|Reconfigure any integrations (Add-ins, Commerce/ POS, etc)||
 
