@@ -29,9 +29,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project migration manager
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
 The Microsoft Dynamics Lifecycle Services Project migration manager lets you move your project data from one geography (or geo) to another geography that Lifecycle Services supports. This article describes the terminology and supported scenarios for this functionality, and provides answers to frequently asked questions.
 
 ## Move projects to new geographies
@@ -39,9 +36,6 @@ The Microsoft Dynamics Lifecycle Services Project migration manager lets you mov
 The Project migration manager lets you move your Lifecycle Services project from one geography to another geography that meets your requirements. However, it's important that you understand why you might want to move your project in this way.
 
 Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
-
-> [!NOTE]
-> During the preview, new geographies will be supported over time starting with "EU". For a full list of geographies that will become available, visit [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo). 
 
 There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations will be described later in this article.
 
@@ -77,6 +71,13 @@ The following table shows the data that can be transferred between instances and
 | Not supported | Environment history | History isn't transferred for environments, they start new in the target project.  However, you can access and download the history from the source project using the **Export to excel** button from each history page. |
 
 You're responsible for migrating data that requires manual migration. However, you aren't required to migrate any or all of this data. You might choose to migrate only your most recent assets from the Asset library. Alternatively, you might choose to re-create developer cloud-hosted environments, for example, in the target project.
+
+## Additional considerations
+- Migration can take up to two hours when LCS project and environments will be unavailable.
+- As part of the migration a new LCS project will be created and the new project will have a different project URL and LCS project ID. 
+- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into.
+- All project environments (Sandbox and Production) must be on supported versions before a migration is scheduled.
+- Project migration manager feature is available only to LCS project owners.
 
 ## Start your project migration
 
@@ -142,10 +143,6 @@ This section provides answers to some common questions.
 ### My sandbox and production environments are already in my desired geography (for example, Europe). Why is there downtime when I move my Lifecycle Services project to EU?
 
 Finance and operations apps store metadata that includes the connection to the Lifecycle Services project that the apps were created from. When you migrate your project to a new geography, such as Lifecycle Services Europe, the connection information must be updated in those environments. This update requires an environment restart, which can take up to an hour.
-
-### Which geographies are available for me to choose from?
-
-For the initial preview, the first target region that is supported is EU. Over time, Microsoft will add support for all Lifecycle Services geographies. For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
 
 ### What happens to the source project after migration is completed?
 
