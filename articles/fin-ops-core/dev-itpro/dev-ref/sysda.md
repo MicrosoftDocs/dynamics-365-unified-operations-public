@@ -97,9 +97,12 @@ Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryO
 
  It supports all seven comparison expressions: namely,
 
- - ==, <>
- - >, >=
- - <, <=
+ - ==
+ - <>
+ - >
+ - >=
+ - <
+ - <=
  - LIKE
 
  It supports ORDER BY clauses.
@@ -125,10 +128,9 @@ Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryO
  - pessimisticLock
  - generateOnly
 
-For example,
+The following examples show two ways to build a SysDaQueryObject.
 
 ```xpp
-<example>For example,
 <code>
 SysDaQueryObjectBuilder::from(exampleTable)
     .firstOnly()
@@ -137,7 +139,9 @@ SysDaQueryObjectBuilder::from(exampleTable)
     .where(exampleTable, fieldStr(ExampleTable, ExampleNumber)).isEqualToLiteral(0)
     .toSysDaQueryObject();
 </code>
-/// is the same as
+```
+
+```xpp
 <code>
 var exampleTableQueryObject = new SysDaQueryObject(exampleTable);
 var exampleJoinedTableQueryObject = new SysDaQueryObject(exampleJoinedTable);
@@ -151,10 +155,13 @@ exampleJoinedTableQueryObject.whereClause(new SysDaAndExpression(
         new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
         new SysDaValueExpression(0))));
 </code>
-/// to build a <c>SysDaQueryObject</c>.
-</example>
-/// It supports <c>SysDaQueryExpression</c> to enable <c>OR</c> and the other expressions.
-<example>For example,
+```
+
+Use SysDaQueryExpression to enable OR and the other expressions.
+
+The following example builds a SysDaQueryObject using **OR**.
+
+```xpp
 <code>
 SysDaQueryObjectBuilder::from(exampleTable)
     .wherever(new SysDaOrExpression(
@@ -166,8 +173,6 @@ SysDaQueryObjectBuilder::from(exampleTable)
             new SysDaValueExpression(0))))
     .toSysDaQueryObject();
 </code>
-/// is to build a <c>SysDaQueryObject</c> using <c>OR</c>.
-</example>
 ```
 
 ## Update statement
