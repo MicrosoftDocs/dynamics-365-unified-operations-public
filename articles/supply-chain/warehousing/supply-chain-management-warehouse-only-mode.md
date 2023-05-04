@@ -92,10 +92,10 @@ As a minimum it is recommended to use the following  [**Business events**](../..
 
 - *WHSShipmentReceivingJournalModifiedBusinessEvent* - To be informed about an inbound receiving completion process has happened and where to look up the detailed receiving advice data, which for example can be used for a purchase order invoicing process.
 
- ## Source systems
+## <a name = "source-systems"></a> Source systems
 The **Supply Chain Management in warehouse-only mode** shipment order integration must be configured with information about the source systems going to provide inbound and outbound order messages. This gets defined in the **Warehouse management > Setup > Warehouse management integration > Source systems** page and is a prerequisite to be able to view the **Inbound shipment orders** and **Outbound shipment orders** and the related processes around the integration.
 The **Source system** name must be identical with the name in the provided message before a message can be accepted getting imported into D365 SCM.
-Additional policy settings can be used as part of the **Source systems** page to control the shipment order import processes, for example it is possible to define **Message value mapping** for item and warehouse identifications and define if loads for inbound shipment orders automatically gets created.
+Additional policy settings can be used as part of the **Source systems** page to control the shipment order import processes, for example it is possible to define **Message value mapping** for item and warehouse identifications and define if loads for inbound shipment orders automatically gets created and maintained by insert a records in the **Inbound shipment order policies**.
 > [!NOTE]
 > When mapping the items to [**Bar codes**](../pim/tasks/create-bar-code-product.md) remember to enable the *Scanning* setting for the bar codes. For product variants it is only the "ItemNumber" field being used from the order line messages.
 
@@ -113,7 +113,7 @@ An *Outbound shipment order* is a document that represents information about the
 > [!NOTE]
 > The internal outbound shipment order number must be unique. You can define using the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order.
 
-In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and [**Release to warehouse**](release-to-warehouse-process.md) processes. As part of the **Source systems** definitions you can trigger the reservation as part of the document import and even define to reject a shipment order which cannot get reserved partly or fully.
+In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and [**Release to warehouse**](release-to-warehouse-process.md) processes. As part of the [**Source systems**](#source-systems) definitions you can trigger the reservation as part of the document import and even define to reject a shipment order which cannot get reserved partly or fully.
 In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving.
 
 ## Automatic release of outbound shipment orders
@@ -176,7 +176,7 @@ The external system will get informed via business event and can read the shipme
 The high-level process for inbound processing is as following:
 - External systems provides *Inbound shipment order* messages
 - The messages get processed in *Supply Chain Warehouse-only mode* and orders get created
-- Inbound loads gets created (either manually or automatically)
+- Inbound loads gets created manually via **Inbound load planning workbench**, via [**ASN**](import-asn-data-entity), or automatically during message processing based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
 - Inventory receiving gets processed and the inbound shipment order transactions get *Registered* via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes:
     - *License plate receiving (and put away)*
     - *Load item receiving (and put away)*
@@ -196,7 +196,7 @@ The header will get from *Ready for posting* into *Posted* by processing the [**
 ![SCM warehouse-only mode outbound process](./media/outbound-wom-process.png)
 The high-level process for outbound processing is as following:
 - External system provides *Outbound shipment order* messages
-- The messages gets processed in *Supply Chain Warehouse-only mode* and orders gets created. Based on the **Source system** policies reservations will automatically be handled as part of the message processing or will need to get processed manually or as part of the release process.
+- The messages gets processed in *Supply Chain Warehouse-only mode* and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the message processing or will need to get processed manually or as part of the release process.
 - The orders gets released for further warehouse processing, either automatically via batch job processing or manually and based on the [wave template](wave-templates.md) definitions warehouse work can get created and released immediately. Loads will gets created as part of the waving process.
 - The outbound warehouse work get processed and get and the related outbound shipment order transactions get *Picked*.
 - The loads get outbound ship confirmed which will create **Business events** and **Shipment packing slips** data for the external systems.
@@ -242,7 +242,7 @@ In the **Azure Active Directory** page, assign the *Admin* user, or a user havin
 
 When posting entities via OData, it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (dataAreaId), in the request payload messages. In any case the company (dataAreId) must get specified to complete the messages for the shipment orders.
 
-### Source systems
+### Source systems example
 Make sure a record is created in the **Source systems** page, this will enable the full use of the capability.
 For this example define *Source system* as **_ERP_**.
 
