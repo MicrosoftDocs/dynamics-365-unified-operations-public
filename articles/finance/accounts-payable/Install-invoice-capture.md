@@ -64,7 +64,7 @@ Invoice capture officially supports *integrated* Power Platform environments. Be
 2. Find and make a note of the environment URL.
 3. Replace **\<Environment URL\>** in the following URL with the environment URL that you found, and open the "Finance and Operation Virtual Data Source configuration."
 
-    `https://<Environment URL>/main.aspx?cmdbar=true&forceUCI=1&navbar=off&pagetype=entityrecord&etn=msdyn_financeandoperationsvirtualentity&id=47c40dcb-35d6-e911- a95e-000d3a110bbd`
+    `https://<Environment URL>/main.aspx?cmdbar=true&forceUCI=1&navbar=off&pagetype=entityrecord&etn=msdyn_financeandoperationsvirtualentity&id=47c40dcb-35d6-e911-a95e-000d3a110bbd`
 
 4. Leave the existing entries unchanged.
 5. Enter the finance and operations target URL, tenant ID, client ID, and application secret in the appropriate fields.
