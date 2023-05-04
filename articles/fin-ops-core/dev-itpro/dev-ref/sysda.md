@@ -98,11 +98,11 @@ Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryO
  It supports all seven comparison expressions: namely,
 
  - ==
- - <>
- - >
- - >=
- - <
- - <=
+ - \<\>
+ - \>
+ - \>=
+ - \<
+ - \<=
  - LIKE
 
  It supports ORDER BY clauses.
