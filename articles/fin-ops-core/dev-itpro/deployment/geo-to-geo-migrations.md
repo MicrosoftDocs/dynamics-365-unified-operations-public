@@ -14,10 +14,10 @@ ms.custom:
 
 Microsoft Dynamics 365 finance and operations apps are available in multiple local geographies. Customers in these local geographies can migrate their workload from one geography to another. This article provides and overview of the process and the considerations.
 
-Moving between geographies involve two separate processes:
+Moving between geographies has the following separate processes:
 
-1. [Lifecycle Services (LCS) project migration](../lifecycle-services/project-migration-manager.md)
-2. [Finance and operations apps environment migration](environment-migration-process.md)
+- Moving customer environments from one geography to another. This process is further explained in the [Finance and operations apps environment migration](environment-migration-process.md) article.
+- Moving the implementation project in Licecycle Services (LCS) from one geopgraphy to another. This process is explain in the [Project migration manager](../lifecycle-services/project-migration-manager.md) article.
 
 ## Considerations
 
