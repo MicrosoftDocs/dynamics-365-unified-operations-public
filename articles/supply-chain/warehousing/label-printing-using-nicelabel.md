@@ -41,6 +41,10 @@ Here are some of the pros and cons of each integration option:
 > [!IMPORTANT]
 > The information in this article is for general information purposes only. Although we try to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with the respect to the NiceLabel product. Loftware might change the functionality of the NiceLabel product at any time without notice. If you experience any issues or have any additional questions about the NiceLabel product, contact Loftware directly.
 
+## Prerequisites
+
+To use the features described in this article, you must be running Supply Chain Management version 10.0.34 or later.
+
 ## <a name="prepare-integration"></a>Prepare for NiceLabel Cloud integration
 
 Before you can access NiceLabel Cloud by using either the Cloud Print API or the Cloud Trigger API, you must register in the NiceLabel Developer Portal and then link your Developer Portal subscription with your NiceLabel Cloud instance. For instructions, see [Cloud Integrations](https://help.nicelabel.com/hc/en-001/articles/4402966072209-Cloud-Integrations#cloud-integrations-1-0) in the NiceLabel Help Center.

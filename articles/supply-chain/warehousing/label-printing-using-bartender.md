@@ -28,9 +28,16 @@ This article describes how to communicate with BarTender Cloud by exchanging YAM
 > [!IMPORTANT]
 > The information in this article is for general information purposes only. Although we try to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with the respect to the BarTender product. Seagull Scientific might change the functionality of the BarTender product at any time without notice. If you experience any issues or have any additional questions about the BarTender product, contact the [Seagull Scientific Customer Success Team](PSCustomerSuccessTeam@SeagullScientific.com), and they will route you to the appropriate internal resource.
 
+## Prerequisites
+
+To use the features described in this article, you must be running Supply Chain Management version 10.0.34 or later.
+
 ## <a name="prepare-integration"></a>Get a copy of your personal access token from BarTender Cloud
 
 Before you can access BarTender Cloud through its REST API, you must get a copy of your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center.
+
+> [!NOTE]
+> Personal access tokens expire after 30 days. You'll have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
 
 ## Configure Supply Chain Management to print to printers managed by BarTender Cloud
 
@@ -108,37 +115,30 @@ Follow these steps to set up an external service definition.
 
 ### Set up an external service instance for printing through the Actions API
 
-For the this step, you will need the personal access token that you copied earlier from BarTender Cloud.
-> [!NOTE]
-> Personal access tokens expire after 30 days, and you will have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
+For the this step, you will need the personal access token that you [copied earlier from BarTender Cloud](#prepare-integration).
 
 Follow these steps to set up an external service instance for printing through the Actions API.
 
 1. Go to **Warehouse Management \> Setup \> External services \> External service instances**.
 1. On the Action Pane, select **New** to create an external service instance.
 1. Set the following fields for the new service instance:
-
     - **External service instance** – Enter a name for the instance (for example, *BTCloud*).
     - **Description** – Enter a short description of the instance (for example, *BTCloud*).
     - **External service definition** – Select the service definition to use with the instance. The example service definition value that was suggested earlier in this article was *BTCloud*.
-
 1. On the **General** tab, set the following fields:
-
-    - **Base URL** – Set the instance URL as follows:
-        https://am1.bartendercloud.com for the AMER region
-        https://eu1.bartendercloud.com for the EMEA region
-        https://ap1.bartendercloud.com for the APAC region
-
+    - **Base URL** – Enter one of the following instance URLs:
+        - `https://am1.bartendercloud.com` for the AMER region
+        - `https://eu1.bartendercloud.com` for the EMEA region
+        - `https://ap1.bartendercloud.com` for the APAC region
     - **Authentication secret** – Enter the personal access token that you obtained from the BarTender Cloud API page. You should have made a note of this key earlier, when you were [preparing for BarTender integration](#prepare-integration).
-    > [!NOTE]
-    > Access tokens expire after 30 days and must be refreshed manually.
     - **Logging level** – Select *Successes and errors*.
     - **Log request bodies** – Select *Successes and errors*.
 
 You can now create label printers and label layouts by using either variables or ZPL.
 
 > [!NOTE]
-> - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer from the **Print dialog** in BarTender Cloud or as retrieved from the Printer API. Use the following format: printer:workstation/printer.
+>
+> - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer from the **Print dialog** in BarTender Cloud or as retrieved from the Printer API. Use the following format: *printer:workstation/printer*.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the start of the full Librarian name has already been coded in the variables label template.
 
 ## Additional resources
