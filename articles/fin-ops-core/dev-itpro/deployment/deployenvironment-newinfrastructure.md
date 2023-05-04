@@ -41,13 +41,17 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 > For US Government projects in the Government Community Cloud (GCC), environment names are limited to 15 characters for sandboxes and 23 characters for production due to the total length of the resulting URL.
 
 4. Select the **region** where you want this environment to be deployed. 
-5. Choose whether you want to load **demo data** in your environment or if you want an **empty database**.
-6. Select the **BPM library** that will be set as the Getting started library in the product.
-7. Select from a list of available **AOT packages** (customization packages) on the Software Deployable tabs in the Asset Library if you want to apply customizations. Only packages generated from a build environment on version 8.1 and above should be selected. Applying a package from an incompatible version will have an adverse effect on the environment.
-8. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
-9. Select the **email address** of the **user** that will be set as the **system administrator** in the product.
-10. After you validate the configurations, click **Submit** to trigger the deployment.
-11. If you plan to use channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
+
+> [!NOTE]
+> In May 2023 a change was introduced in the selection of available Azure Regions for finance and operations apps. For more information around what regions are available and what you need to consider when making a selection see the [Dynamics 365 finance and operations apps in local geographies](deployment-options-geo.md).
+
+6. Choose whether you want to load **demo data** in your environment or if you want an **empty database**.
+7. Select the **BPM library** that will be set as the Getting started library in the product.
+8. Select from a list of available **AOT packages** (customization packages) on the Software Deployable tabs in the Asset Library if you want to apply customizations. Only packages generated from a build environment on version 8.1 and above should be selected. Applying a package from an incompatible version will have an adverse effect on the environment.
+9. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
+10. Select the **email address** of the **user** that will be set as the **system administrator** in the product.
+11. After you validate the configurations, click **Submit** to trigger the deployment.
+12. If you plan to use channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
 
 The environment deployment starts immediately and could take anywhere between **30 minutes to 1 hour** to complete for a sandbox environment and **1-2 hours** for a production environment. 
 
