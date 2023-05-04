@@ -3,7 +3,7 @@ title: Use record template to create a new record
 description: This procedure shows how to use a previously defined record template to create a new record.
 author: peakerbl
 ms.date: 08/12/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform update 8
 ms.custom: 55651
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Hardware sizing requirements for on-premises environments

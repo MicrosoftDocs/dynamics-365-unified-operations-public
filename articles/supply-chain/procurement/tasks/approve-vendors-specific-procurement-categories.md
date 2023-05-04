@@ -5,7 +5,7 @@ title: Approve vendors for specific procurement categories
 description:  This article explains how to approve vendors for specific procurement categories in Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 07/30/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -28,7 +28,7 @@ The E-Commerce platform uses industry-standard [OpenID Connect](https://openid.n
 
 Here is a walkthrough of the process for registering OpenID providers so that they can be used in Commerce Scale Unit.
 
-1.  From the Retail and Commerce IT workspace, go to **Commerce shared parameters** &gt; **OpenID providers**. You can use the **OpenID providers** page to register additional providers. For every provider that you support, enter the details of the OpenID provider and the details of the relying parties. Commerce Scale Unit uses this information to request and use an authentication token for subsequent calls.
+1.  From the Retail and Commerce IT workspace, go to **Commerce shared parameters** &gt; **Identity providers**. You can use the **Identity providers** page to register additional providers. For every provider that you support, enter the details of the OpenID provider and the details of the relying parties. Commerce Scale Unit uses this information to request and use an authentication token for subsequent calls.
 2.  Run distribution schedule 1110.
 3.  For the test online store, edit the web.config file so that it specifies the correct redirect URL and domain, as shown in the following example. If you're using a third-party online store, this information can be stored as required.
 

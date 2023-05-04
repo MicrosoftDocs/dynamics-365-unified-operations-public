@@ -5,7 +5,7 @@ title: Create and post a project invoice for a public sector customer
 description: This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Taxpayer types for Latin America 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can set up the types of tax-responsible entities that the company operates with. These entities can include customers, vendors, employees, and even the company itself.
  

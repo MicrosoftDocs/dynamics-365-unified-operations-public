@@ -432,7 +432,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>flush</strong></td>
-<td>Clears an entire table cache. Here is the syntax for the <code>flush</code> statement: <code>YourTable ytBuffer;</code>  <code>flush ytBuffer;</code></td>
+<td>Clears an entire table cache. Here is the syntax for the <code>flush</code> statement applied to the buffer of type <code>YourTable</code>:<p><p>```xpp<p><code>YourTable t;</code><p><code>...</code><p><code>flush t;</code><p>```</td>
 <td>Set-based Caching</td>
 </tr>
 <tr class="even">

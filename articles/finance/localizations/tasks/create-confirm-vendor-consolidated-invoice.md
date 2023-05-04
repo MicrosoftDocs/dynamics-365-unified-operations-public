@@ -3,7 +3,7 @@ title: Create and confirm a vendor consolidated invoice
 description: This article explains how to consolidate vendor invoices each month to calculate the due amount.
 author: kfend
 ms.date: 10/04/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

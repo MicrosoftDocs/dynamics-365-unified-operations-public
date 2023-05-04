@@ -3,7 +3,7 @@ title: MX-00008 - Vendor registration IDs
 description: This procedure walks you through creating the vendor for Mexico to support DIOT declaration and other legal reports.
 author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

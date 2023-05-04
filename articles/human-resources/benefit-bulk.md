@@ -4,7 +4,7 @@
 title: Benefit bulk update page 
 description: This article describes features of the Benefit bulk update page.
 author: twheeloc
-ms.date: 01/30/2023
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,7 @@ To access related information about a selected plan, the administrator can selec
 To edit specific details of an employee's benefit plan, the administrator can select **Edit** to open the **Worker benefit plans** dialog box. The information in this dialog box can be edited as permitted by the configurations.
 
 > [!NOTE]
-> In the **Worker benefit plans** dialog box, the employee and employer amounts can be edited if they're calculated by a rate. If you want administrators to be able to edit these fields, select the **Allow administrators to modify calculated rates** option on the **Benefits management** page.
+> In the **Worker benefit plans** dialog box, the employee and employer amounts can't be edited if they're calculated by a rate. If you want administrators to be able to edit these fields, select the **Allow administrators to modify calculated rates** option on the **Benefits management** page.
 
 ## Benefits compare plans (Preview feature)
 

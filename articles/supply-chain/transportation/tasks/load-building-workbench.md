@@ -5,7 +5,7 @@ title: Load building workbench
 description: This article describes how to work with the load building workbench.
 author: Weijiesa
 ms.date: 10/30/2020
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

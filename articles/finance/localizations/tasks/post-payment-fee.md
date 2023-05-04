@@ -3,7 +3,7 @@ title: Generate and post payment fee
 description: This task walks you through generating and posting a payment fee for Japan.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

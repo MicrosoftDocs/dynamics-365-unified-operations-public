@@ -5,7 +5,7 @@ title: Configure credit card processing
 description: This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. 
 author: jashanno
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

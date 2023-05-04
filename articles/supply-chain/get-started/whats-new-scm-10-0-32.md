@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.32 (March 2023)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (March 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.32. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,12 +12,11 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.32 (March 2023)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.32 (March 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.32. This version has a build number of 10.0.1515 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.32. This version has a build number of 10.0.1515 and is available on the following schedule:
 
 - **Preview of release:** January 2023
 - **General availability of release (self-update):** March 2023
@@ -30,6 +29,8 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Planning | New exception process for migrating to Planning Optimization | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) | Enabled by default |
+| Planning | [Transition to Planning Optimization one company at a time](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/transition-planning-optimization-one-company-at-time) | [Continue to use deprecated master planning for some companies](../master-planning/planning-optimization/get-started.md#exclude-po) | Enabled by default |
+| Procurement | [Improve security for vendor bank account information updates](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-security-vendor-bank-account-information-updates) |  [Vendor bank account workflow](../../finance/accounts-payable/vendor-bank-account-workflow.md) | Feature management:<br>*Vendor bank account change proposal workflow* |
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
 | Warehouse management | [Optimize performance of internal movements in warehouse](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-performance-internal-movements-warehouse) | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Feature management:<br>*(Preview) Warehouse-specific inventory transactions* |
