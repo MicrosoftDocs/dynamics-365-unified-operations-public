@@ -28,6 +28,8 @@ Organizations looking to migrate environments and data from one geography to ano
 
 Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
+Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
+
 ### Sovereign data resident geographies
 
 Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.
@@ -48,7 +50,6 @@ Learn more at [Lifecycle Services (LCS) project migration](../lifecycle-services
 **Integration impact and updates with other services**
 - 3rd party integrations - if the migration crosses data resident geo then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
 - Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
-- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
 
 **Geo to geo migration between various geographies**
 
