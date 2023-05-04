@@ -38,7 +38,7 @@ Another example is a more SCM integrated implementation methodology, having the 
 
 And then everything between the two above example deployment options, which for example could be running a dedicated legal entity within an existing D365 SCM deployment which only handles the warehouse management processes for external systems. All-in-all you can use the **Supply Chain Management in warehouse-only mode** exactly as needed. 
 
-## Feature management
+## <a name = "feature-management"></a> Feature management
 To use the **Supply Chain Management warehouse-only mode** capability, your system must meet the following requirements:
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.35 or later.
 -  The feature that's named **(Preview) Supply Chain Management warehouse-only mode** must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -58,9 +58,9 @@ Many different integration methodologies can be used for the above, but the foll
 To inform the warehouse management system about what physical inventory to receive and ship you can easily use the inbound and outbound shipment order messages. These messages are designed with header and lines data.
 With the introduction of these two new, lightweight inbound and outbound warehouse interface documents, it is no longer required to set up multiple documents for inbound and outbound operations (sales orders, purchase orders, transfer orders, etc.) that essentially serve the same purpose from a pure warehouse management perspective. This will, for example, simplify integration with ERP and order management systems and enable the use of the Dynamics 365 warehouse management functionality in an ERP agnostic manner.
 
-#### Inbound and outbound shipment order messages
-The [inbound shipment order](perlynne-FWlink) and the [outbound shipment order](perlynne-FWlink) messages can be imported via a [**Dataverse integration**](../../../../power-platform/admin/data-integrator.md) or directly integrated with the OData shipment order message entities.
-A following [**message processing**](warehouse-message-processor-messages.md) will optimize the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the D365 SCM inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data.
+#### <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
+The [inbound shipment order](perlynne-FWlink) and the [outbound shipment order](perlynne-FWlink) messages can be imported via a [**Dataverse integration**](../../../../power-platform/admin/data-integrator.md) or directly integrated with the OData shipment order message entities in a optimal manner.
+A following [**message processing**](warehouse-message-processor-messages.md) will validate the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the D365 SCM inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data. It is recommended to process the messages as part of a periodic batch job triggered by the  **Message processor** page where you must use the **Shipment Orders** *Message queue*.
 
 ![SCM warehouse-only mode to ERP/Order system](./media/shipment-order-integrations.png)
 
@@ -68,7 +68,7 @@ Having the shipment order line field data related to the released products in th
 ### Master data
 Different master data will need to be recorded to be able to run your warehouse management system, here the [**data entities**](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) can be used to easily import the data.
 You can read more about the support of importing product master data via the [**product data entities**](../pim/data-entities.md) and get an overview of the [**Product information management entities**](../../../common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview.md).
-Besides the product master data you must at least have defined the [countries/regions](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) which will be used for the outbound shipment order import process, to create a address.
+Besides the product master data you must at least have defined the [countries/regions](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) which will be used for the outbound shipment order import process, to create an address.
 
 ### Progress data
 External systems will have many different business process requests for the warehouse management system. One example being the progress of a sales order. Now, the external systems can of course keep polling for this kind of information, but to honor this process the D365 SCM warehouse management system can be set up to provide [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) so the external systems don’t need to keep polling for information which might not have changed since the last request of information, but instead only need to act when getting informed about an update.
@@ -82,14 +82,15 @@ Non-exhaustive list:
 | WHSOutboundNotificationCreatedBusinessEvent       | Warehouse Outbound notification created |
 | WHSShipmentOrderMessageChangedStatusBusinessEvent | Shipment Order Message changed status   |
 | WHSShipmentPackingSlipJournalModifiedBusinessEvent| Shipment packing slip journal modified  |
+| WHSShipmentReceivingJournalModifiedBusinessEvent  | Shipment receiving journal modified     |
 | WhsWaveExecutedBusinessEvent                      | Wave executed                           |
 
 As a minimum it is recommended to use the following  [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md):
-- *InventCountingJournalPostedBusinessEvent* - To be informed about an inventory on-hand adjustment has happened and where to look up the detailed information about the update. Read more about the recommended process here.
+- *InventCountingJournalPostedBusinessEvent* - To be informed about an inventory on-hand adjustment has happened and where to look up the detailed information about the update.
 
-- *WHSShipmentPackingSlipJournalModifiedBusinessEvent* - To be informed about an outbound shipment confirmation process has happened and where to look up the detailed dispatch advice data, which for example can be used for a sales invoicing process. Read more about the recommended process here.
+- *WHSShipmentPackingSlipJournalModifiedBusinessEvent* - To be informed about an outbound shipment confirmation process has happened and where to look up the detailed dispatch advice data, which for example can be used for a sales invoicing process.
 
-- *WHSShipmentReceiptJournalModifiedBusinessEvent* - To be informed about an inbound receiving completion process has happened and where to look up the detailed receiving advice data, which for example can be used for a purchase order invoicing process. Read more about the recommended process here.
+- *WHSShipmentReceivingJournalModifiedBusinessEvent* - To be informed about an inbound receiving completion process has happened and where to look up the detailed receiving advice data, which for example can be used for a purchase order invoicing process.
 
  ## Source systems
 The **Supply Chain Management in warehouse-only mode** shipment order integration must be configured with information about the source systems going to provide inbound and outbound order messages. This gets defined in the **Warehouse management > Setup > Warehouse management integration > Source systems** page and is a prerequisite to be able to view the **Inbound shipment orders** and **Outbound shipment orders** and the related processes around the integration.
@@ -112,8 +113,8 @@ An *Outbound shipment order* is a document that represents information about the
 > [!NOTE]
 > The internal outbound shipment order number must be unique. You can define using the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order.
 
-In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and **Release to warehouse** processes. As part of the **Source systems** definitions you can trigger the reservation as part of the document import and even define to reject a shipment order which cannot get reserved partly or fully.
-In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the **Release to warehouse** process, this can only happen as part of the processing of the warehouse waving.
+In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and [**Release to warehouse**](release-to-warehouse-process.md) processes. As part of the **Source systems** definitions you can trigger the reservation as part of the document import and even define to reject a shipment order which cannot get reserved partly or fully.
+In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving.
 
 ## Automatic release of outbound shipment orders
 To enable automatically release to warehouse you can use the **Automatic release of outbound shipment orders** which is supported by batch jobs.
@@ -182,14 +183,14 @@ The high-level process for inbound processing is as following:
     - *Mixed license plate receiving (and put away)* for source document line identification method *Load item receiving*
 - **Receiving completed** processes follows which will finalize the shipment order transactions and create **Business events** and **Shipment receipts** data for the external systems
 - The external systems read and uses the **Shipment receipts** data for further processing, like for example purchase order invoicing in case of having the associated *inbound shipment orders* linked to purchase orders.
-- The *Inbound shipment orders* get finalized by running the periodic back-ground process **Update product receipts**.
+- The *Inbound shipment orders* get finalized by running the periodic back-ground process [**Update product receipts**](inbound-load-handling#post-registered-quantities).
 
 > [!NOTE]
 > Reversal of shipment receipts will be supported as long as the related inbound shipment order line transactions have not been finalized.
 
 ## Shipment Receipts
 In the **Warehouse management > Inquiries and reports > Shipment receipts** page you can view the detailed line transactions related to the received inventory. The data is version controlled and you can following the **Posting status** on the header data.
-The header will get from *Ready for posting* into *Posted* by processing the **Warehouse management > Periodic tasks > Update product receipts** batch job. 
+The header will get from *Ready for posting* into *Posted* by processing the [**Warehouse management > Periodic tasks > Update product receipts**](inbound-load-handling#post-registered-quantities) batch job.
 
 # Outbound process
 ![SCM warehouse-only mode outbound process](./media/outbound-wom-process.png)
@@ -212,149 +213,62 @@ The header will get from *Ready for posting* into *Posted* by processing the **W
 > [!NOTE]
 > In case of not having defined a language for the order the report will fall back to use the company specific language settings.
 
+# Example of using inbound and outbound shipment orders
 
-# Example setting up a new warehouse in a new legal entity
+This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout the examples are running on the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
 
-## Source system
+To create inbound and outbound shipment orders, a message entity needs to be posted using OData requests. That message then needs to be processed by the [**Message processor**](message-processor.md) in D365 SCM which will create the orders in the warehouse system.
+The same message structure logic applies for both the inbound and outbound shipment order messages which are:
+```
+- Order header message
+   - Order line 1 message
+   - Order line 2 message
+   - Order line … 
+- Complete message
+```
+To showcase examples, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) is used in the following to create simple orders with minimal payload.
+The provided example data uses the process of not being depending on the default company for the authorization user and the messages are therefore contains a *dataAreaId* value.
 
-## <a name=”number-sequences”></a>Number sequences
+> [!NOTE]
+> To ease the messages processing [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) supports collections and environment variables that can be reused for all the requests, including the *Authorization*. You will in the following see the used variables within "{{" "}}" indications.
+
+## Prerequisites
+
+### Feature enablement
+Make sure having the **Supply Chain Management in warehouse-only mode** enabled as described in the [Feature management](#feature-management) section.
+
+### Azure Active Directory
+In the **Azure Active Directory** page, assign the *Admin* user, or a user having authentication access to the integration messages, like the default **_Warehouse System Integration Operator_** role to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source.
+
+When posting entities via OData, it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (dataAreaId), in the request payload messages. In any case the company (dataAreId) must get specified to complete the messages for the shipment orders.
+
+### Source systems
+Make sure a record is created in the **Source systems** page, this will enable the full use of the capability.
+For this example define *Source system* as **_ERP_**.
+
+### <a name=”number-sequences”></a>Number sequences
+For the order import process the [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders* must be defined when not using the same order numbers as the external system provides in D365 SCM WMS. In general, make sure to define the following number sequences:
 - Outbound shipment order
 - Inbound shipment order
 - Shipment packing slip
+- Shipment receiving   <!--perlynne CHECK-->
 - Warehouse outbound notification id
-- Load line inventory pick
-- Shipment receiving
+- Load line inventory pick <!-- perlynne CHECK-->
 
-### Warehouse management initiation wizard
-### Outbound configuration wizard
-### Inbound configuration wizard
+> [!TIP]
+> You can quickly enable all [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) by using the **_Generate_** option on the  **Organization administration > Number sequences > Number sequences** page.
 
+## Create shipment order messages
 
-## Security roles
+### Simple inbound shipment order message example
+For the inbound shipment order header message [(InboundShipmentOrderMessages)](perlynne-FWlink), you must provide the following data as a minimum:
+- MessageId = M1
+- dataAreaId = USMF  (optional depending on default authorization user company)
+- SourceSystemId = ERP
+- OrderNumber = IO1
+- ReceivingWarehouseId = 51
 
-## Counting journal name
-
-## Product
-### Units
-### Item model group
-### Item group
-### Storage dimension group
-### Tracking dimention group
-
-### Address Country/Region!!!
-
-## Message processor messages for warehouse management processes
-ADD additional information!!!!!!
-
-Depedency fail... => Make sure to **Cancel** all depend meaages before processing the a new valid message...
-
-
-Shipment orders
- 
-
-[**Message processor messages for warehouse management processes**](
-warehouse-message-processor-messages.md)
-
-Message processor messages for warehouse management processes - Supply Chain Management | Dynamics 365 | Microsoft Learn
- 
-
-
-## Dispatch Advice
-The Dispatch Advice enables a shipper to provide information about the content of a shipment to a receiver. Usually the Dispatch Advice serves as a pre-announcement of the goods being shipped. In a pick-up scenario it may also serve as a pre-announcement of goods to be collected.
-Dspatch Advice can also be used in a cross-docking delivery.
-
-
-
-## Receiving Advice
-The Receiving Advice enables the receiver of the shipment to inform the shipper on the actual goods received, compared to what was advised as being sent.
-
-# TSG’s:
-Message processing fails…
--	How to reprocess message
--	How to get a message field value updated
-
-Warehouse process fails…
--	How to get a shipment order field value updated
-
-
-# Technical integration approaches
-
-We need to find a good “place” for this!
-….
-
-
-## Addresses and other identification fields
- 
-
-
-In a contract of carriage, the consignee is the entity who is financially responsible (the buyer) for the receipt of a shipment.[1] Generally, but not always, the consignee is the same as the receiver.
- 
-If a sender dispatches an item to a receiver via a delivery service, the sender is the consignor, the recipient is the consignee, and the deliverer is the carrier.
-
-
-The consignor, in a contract of carriage, is the party sending a shipment to be delivered whether by land, sea or air.[1] Some carriers, such as national postal entities, use the term "sender" or "shipper" but in the event of a legal dispute the proper and technical term "consignor" will generally be used.
-
-
-Outbound shipment order:
- 
-
-Receiver or consignee name must be provided
-
-Receiver or consignee address must be provided
-
-
-MANDTORY field!
-ReceiverCountryRegionId = "USA",
- 
- 
-
-But we do allow:
- ?
-
-Examples using…: 
-Use Postman to perform operations with the Web API (Microsoft Dataverse for Apps) - Power Apps | Microsoft Learn
-
-
-1.	Set up the order header using the InboundShipmentOrderMessages entity
-2.	Set up lines using the InboundShipmentOrderLineMessages entity
-3.	Once all the lines are inserted, call the “complete” action on the header – it’s a POST request with no body, with the url <base url>/data/ InboundShipmentOrderMessages(dataAreaId=’<dataAreaId>’,SourceSystemId=’<source system id>’,OrderNumber=’<order number>’,MessageId=’<message id>’)/ Microsoft.Dynamics.DataEntities.Complete
-4.	Once that is done, the order is ready to be processed inside F&O. You can do it manually in the “Message order messages” form. At this point, we will do all the data validations and create the order, if they all pass.
-
-
-# Examples for created inbound and outbound orders
-
-**Prerequisites**
-1.	In the **Azure Active Directory** page, assign the *Admin* user, or a user having authentication access, to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source.
-2.	When posting entities via OData, it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (DataAreaId), in the request payload messages. In any case the company must get specified to complete the messages.
-3.	Make sure a record is created in the **Source systems** page.
-4.	For the order import process the number sequence for *Outbound shipment orders* and *Inbound shipment orders* must be defined when not using the same order numbers as the external system provides in D365 SCM WMS. In general, make sure to define all number sequences as described in the [number sequence section](#number-sequences).
-
-## Create orders
-To create inbound and outbound shipment orders, a message entity needs to be posted using OData requests. That message then needs to be processed by the [**Message processor**](message-processor.md) in D365 SCM which will create the orders in the warehouse system.
-The same message structure logic applies for both the inbound and outbound shipment orders which are:
-
-- Order header message (InboundShipmentOrderMessages/OutboundShipmentOrderMessages)
-   - Order line # message (InboundShipmentOrderLineMessages/OutboundShipmentOrderLineMessages)
-   - … 
-- Complete message (InboundShipmentOrderMessages.Complete/OutboundShipmentOrderMessages.Complete)
-
-To showcase examples, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) is used in the following to create simple orders with minimal payload. The provided example data and using the process of not being depending on the default company for the authorization user and the messages therefore contains a *dataAreaId* value.
-
-
-To easy the messages processing Postman supports collections and environment variables that can be reused for all the requests, including the *Authorization*.
-
-### Simple inbound shipment order example
-
-For the inbound shipment order header message, you must provide the following data as a minimum 
- 
--	MessageId = M1
--	dataAreaId = USMF
--	SourceSystemId = ERP
--	OrderNumber = IO1
--	ReceivingWarehouseId = 51
-
-
-Post *Inbound shipment order* message header with the minimal payload like:
+Using the [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables the message will look like:
 ``` JSON InboundShipmentOrderMessages example
 POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
 {
@@ -366,7 +280,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
 }
 ```
 
-Post *Inbound shipment order line* message for every line that you want to have:
+and post [*Inbound shipment order line*](perlynne-FWlink) message:
 ``` JSON InboundShipmentOrderLineMessages example
 POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
 {
@@ -376,59 +290,84 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
 "OrderNumber": "{{OrderNumber}}",
 "OrderLineNumber": 1,
 "ItemNumber": "A0001",
-"ExpectedUnitSymbol": "ea",
+"ExpectedUnitSymbol": "Pcs",
 "ExpectedQuantity": 10
 }
 ```
 
-Post *Complete* message for the header and lines to commit the message entity
+Post *Complete* message for the header and lines to commit the messages
 ``` JSON InboundShipmentOrderMessages Complete example
-{{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
+POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
 ```
-
 > [!NOTE] 
-> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix *?cross-company=true* is only needed when having messages for a differ company than the **Azure Active Directory applications** user default company.
-Create outbound orders
+> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix *?cross-company=true* is only needed when having messages for a different company than the used **Azure Active Directory applications** user default company.
 
--	Post Outbound Shipment Order Message header with the minimal payload like in the screenshot below.
+### Simple outbound shipment order message example
+For the outbound shipment order header message [(OutboundShipmentOrderMessages)](perlynne-FWlink), you must provide the following data as a minimum:
+- MessageId = M2
+- dataAreaId = USMF  (optional depending on default authorization user company)
+- SourceSystemId = ERP
+- OrderNumber = OO1
+- ShipFromWarehouseId = 51
+- ConsigneeName or ReceiverName = Microsoft  
+- ConsigneeCountryRegionId or ReceiverCountryRegionId = USA
+
+Using the [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables the message will look like:
+``` JSON OutboundShipmentOrderMessages example
 POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages
 {
-"SourceSystemId": "{{SourceSystem}}",
 "MessageId": "{{MessageId}}",
+"dataAreaId": "{{dataAreaId}}",
+"SourceSystemId": "{{SourceSystem}}",
 "OrderNumber": "{{OrderNumber}}",
 "ShipFromWarehouseId": "{{Warehouse}}",
 "ConsigneeName": "{{ConsigneeName}}",
 "ConsigneeCountryRegionId": "{{ConsigneeCountryRegionId}}"
 }
+```
 
-
-
--	Post Outbound Shipment Order Line Message for every line that you want to have:
+and post [*Outbound shipment order line*](perlynne-FWlink) message:
+``` JSON OutboundShipmentOrderLineMessages example
 POST {{EnvironmentUrl}}/data/OutboundShipmentOrderLineMessages
 {
-    "MessageId": "{{MessageId}}",
-    "OrderNumber": "{{OrderNumber}}",
-    "SourceSystemId": "{{SourceSystem}}",
-    "ItemNumber": "A0001",
-    "OrderedQuantity": 1,
-    "OrderedUnitSymbol": "ea",
-    "OrderLineNumber": 1
+"MessageId": "{{MessageId}}",
+"dataAreaId": "{{dataAreaId}}",
+"SourceSystemId": "{{SourceSystem}}",
+"OrderNumber": "{{OrderNumber}}",
+"OrderLineNumber": 1,
+"ItemNumber": "A0001",
+"OrderedUnitSymbol": "Pcs",
+"OrderedQuantity": 10
 }
+```
+Post *Complete* message for the header and lines to commit the messages
+``` JSON OutboundShipmentOrderMessages Complete example
+POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
+```
+> [!NOTE] 
+> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix *?cross-company=true* is only needed when having messages for a different company than the used **Azure Active Directory applications** user default company.
 
+## Message processor messages for shipment orders
+Having the two documents imported into the [message queue](#inbound-outbound-shipment-order-messages) you now need to get them [processed](warehouse-message-processor-messages.md) and thereby getting the actual **Inbound and outbound shipment orders** created in the **Supply Chain Management warehouse-only mode** system.
 
--	Post Complete message for the header and lines in order to commit the message entity
-POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(dataAreaId='{{DataAreaId}}', SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}', MessageId='{{MessageId}}')/Microsoft.Dynamics.DataEntities.Complete
+# Troubleshooting guides
 
+###### What do I do when a message processing **Failed**?
+The message processing will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into  reprocessing (**Queue** option) or **Cancel** the message. Typically, data updated must happen before it make sense trying to reprocess the *Failed* message.
 
+###### Why does my message not get processed, but stays in the *Queued* state?
+In case you have multiple messages with dependencies (e.g. for same order number) which has **_Failed_**, you need to either correct the data and move the message back into **_Queued_** state for reprocessing or **_Cancel_** the depending messages beforehand.
 
-Warehouse management overview - Supply Chain Management | Dynamics 365 | Microsoft Learn
+######  Why do I need to provide a **Country/Region** field value for my outbound shipment order?
+The *Outbound shipment order* requires to create an address. For this to happen you must specify at least two field values the [countries/regions](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) and a *Name*. The *Country/Region* value must match existing data in the [**Address setup**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information). You can use the following message fields to provide the data:
+- ConsigneeName
+- ConsigneeCountryRegionId
+- ReceiverName 
+- ReceiverCountryRegionId
 
-Existing documentation
-Update to include Inbound shipment orders???:
-Warehouse handling of inbound loads for purchase orders - Supply Chain Management | Dynamics 365 | Microsoft Learn
-
-# Inbound load planning workbench
- 
-
- 
-
+<!-- perlynne
+### Warehouse management initiation wizard
+### Outbound configuration wizard
+### Inbound configuration wizard
+## Security roles
+-->

@@ -56,6 +56,7 @@ You can use the fields at the top of the **Message processor messages** page to 
     - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
     - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
     - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
+    - *Shipment Orders* - This queue holds messages that are created as part of the [**Supply Chain Management warehouse-only mode**](supply-chain-management-warehouse-only-mode).
     - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
 
 - **Message state** – The state of the message. The following states exist:
@@ -67,7 +68,7 @@ You can use the fields at the top of the **Message processor messages** page to 
 
 - **Message content** – This filter does a full-text search of message content. (Message content isn't shown in the grid.) The filter treats most special symbols (such as hyphens) as spaces, and it treats all space characters as Boolean OR operators. For example, if you search for a specific `journalid` value that equals *USMF-123456*, the system will find all messages that contain either "USMF" or "123456," and the list is likely to be long. Therefore, it's better to enter just *123456* in this case, because more specific results will be returned.
 
-### View the message log, message content, and details
+### <a name = "view-message-log"></a> View the message log, message content, and details
 
 To view detailed information about a message, select it in the grid, and then select the **Log** or **Message content** tab under the message grid, where each processing event is shown.
 
