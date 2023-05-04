@@ -43,7 +43,7 @@ Commerce isn't available in all target geographies. If you have Commerce compone
 - We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
 - Environment migrations are not self-serve and require customer initiated support ticket.
 - Create your support request for migration at least 10 days before you want the environment to be migrated.
-- Overall migration activity will require at least 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
+- Overall migration activity will require up to 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
 - If Dataverse environment is linked then it will need additional 24 hours of downtime.
 
 **Geo to geo migration between various geographies**
