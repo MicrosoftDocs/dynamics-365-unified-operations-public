@@ -1314,7 +1314,7 @@ If you have both an online project and an on-premises project, follow these step
 
 ## ODBC driver 17 is required for platform updates
 
-The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-latest#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
+The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](./setup-deploy-on-premises-latest#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
 
 Here are some examples of errors:
 
