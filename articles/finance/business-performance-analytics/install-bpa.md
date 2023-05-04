@@ -33,13 +33,6 @@ To install business performance analytics, follow these steps.
 3. In the Power Platform admin center, select the Microsoft Power Platform environment to install the application into. 
 4. Accept the terms and conditions, and then select **Install**. This will start the installation of business performance analytics in the selected environment. 
 5. Go to the environment page for the selected environment, click **Dynamics 365 apps** to check status of the installation. During installation the status is **Installing**. On completion, the status will change to **Installed**. Refer to the Frequently Asked Questions if the status has a different value. 
-6. After the app is installed successfully, confirm that the following service principal is provisioned: 
-     - Open the Microsoft Azure Portal and navigate to the list of Enterprise applications within Azure Active Directory. For more information, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal). If the application isn't registered in Azure AD, contact support. 
 
-     The following Azure Active Directory (Azure AD) application should be registered in Azure AD.
-
-     | Application | App ID |
-     |-------------|--------|
-     | far-dataverse-pipeline | 0e3659ee-3f34-4d0f-be21-d11f7141572f |
 
    
