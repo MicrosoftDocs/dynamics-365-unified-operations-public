@@ -38,9 +38,44 @@ Retailers can accept various types of payment in exchange for the products and s
 To set up payment methods, you must complete the following tasks.
 
 1. Set up payment methods for an organization. Create the payment methods that are accepted by the whole organization.
-2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers.
+2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers. See below section **Card Types** for additional information.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
+
+## Card Types
+To configure Card Types for the environment, follow these steps:
+
+1. In Headquarters, navigate to **Retail and Commerce > Channel setup > Payment methods > Card types**.
+2. In the **Electronic payment types** section, click **New**.
+3. Fill out the **ID**, **Electronic payment name**, **Type**, and **Issuer** value for the record.
+
+Next, the mapping parameters for the record must be set to properly associate the Card Type to the payment method used in a transaction for financial reporting in Dynamics. Two methods of mapping are offered:
+ - **Processor mapping**: available when the feature management **Enhanced wallet support and payment improvements** feature is enabled. This mapping is used to map a card type when received from a designated payment connector and the returned issuer string from the payment gateway. See information about setting up Processor mapping [here](https://learn.microsoft.com/en-us/dynamics365/commerce/wallets#processor-payment-method-mapping).
+ - **Card numbers**: this is a card bin range listing used to match the card number used at payment to the card type for processing and reporting in the Commerce system. 
+
+The system uses the **Card numbers** mapping to check a **Card number from** value at the beginning of the number provided, to the **Card number to** value within the set length of the **Digits to identify** value.  
+
+The below table represents an example set of **Card number** mappings, but is **not** an official prescribed set of values from Microsoft (as values can change by issuers). Your payment gateway service can advise further on recommended mappings. In many cases, a smaller range (1 or 2 digits) is less complex to implement and may catch broader card scenarios.
+
+| Card ID   | Card number from | Card number to | Digits to identify |
+| --------- | ---------------- | -------------- | ------------------ |
+| AMEXPRESS | 37               | 37             | 2                  |
+| DISCOVER  | 60               | 69             | 2                  |
+| EUROCARD  | 4511             | 4512           | 4                  |
+| EXTGIFT   | 6                | 6              | 1                  |
+| GIFTCARD  | 9                | 9              | 1                  |
+| LOYALTY   | 100000           | 200000         | 6                  |
+| MAESTRO   | 56               | 56             | 2                  |
+| MAESTRO   | 6                | 6              | 1                  |
+| MASTER    | 5                | 5              | 1                  |
+| VISA      | 4                | 4              | 1                  |
+| VISA      | 4507             | 4508           | 4                  |
+| VISAELEC  | 5802             | 5803           | 4                  |
+
+
+Note that if using the **Processor mapping**, **Card numbers** is used as a backup if the processor mapping is unable to make a match. If neither match, a default can be set per store in the **General** tab, set for the **Electronic Payments: Default for unmapped processor payments** field. Otherwise, without a default set- the Commerce system will decline the authorization attempt protectively.
+
+Additionally, when creating or updating the **Card numbers** in the Commerce system, be sure to run the **1070** (Channel configuration) and **1110** (Global configuration) distribution schedules. Allow 15 minutes after these jobs have completed to update the Retail Server cache in order for the changes take effect.
 
 ## Handle change tendering for payment methods
 
