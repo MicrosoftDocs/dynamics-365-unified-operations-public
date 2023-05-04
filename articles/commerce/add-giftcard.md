@@ -50,7 +50,7 @@ The following image shows an example of a gift card module on a checkout page.
     - PIN and expiration date 
     - None
 
-- **Enable for guest users** – When this property is enabled, guest users can redeem or check balances on gift cards. This property requires that anonymous (guest) access for gift cards be enabled in Commerce headquarters. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout).
+- **Enable for guest users** – When this property is enabled, guest users can redeem or check balances on external gift cards. This property requires that anonymous (guest) access for external gift cards be enabled in Commerce headquarters. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout). Note that the **Enable for guest users** setting applies to external gift cards only.
 
 > [!IMPORTANT]
 > The **Enable for guest users** property is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
@@ -58,9 +58,9 @@ The following image shows an example of a gift card module on a checkout page.
 ## Site settings for gift card modules
 
 In Commerce site builder under **Site Settings \> Extensions**, there is a gift card module setting called **Supported gift card type**. This setting supports three values:
-- **Dynamics 365 gift card** – When this setting is applied, the gift card module only allows the redemption of Dynamics 365 gift cards. This setting is only supported for signed-in users on the e-Commerce site.
+- **Dynamics 365 gift card** – When this setting is applied, the gift card module only allows the redemption of Dynamics 365 gift cards. This setting is only supported for signed-in users on the e-Commerce site. The gift card check balance functionality is also only supported for signed-in users. 
 - **SVS and Givex gift cards** – When this setting is applied, the gift card module only allows the redemption of Givex and SVS gift cards. This setting is supported for signed-in and anonymous users on the e-Commerce site.
-- **Dynamics 365, SVS, and Givex gift cards** – When this setting is applied, the gift card module allows the redemption of Dynamics 365, Givex, and SVS gift cards. This setting is only supported for signed-in users on the e-Commerce site.
+- **Dynamics 365, SVS, and Givex gift cards** – When this setting is applied, the gift card module allows the redemption of Dynamics 365, Givex, and SVS gift cards. This setting is only supported for signed-in users on the e-Commerce site. The gift card check balance functionality is also only supported for signed-in users (due to inclusion of internal gift cards.)
 
 > [!IMPORTANT]
 > These settings are available in the Dynamics 365 Commerce 10.0.11 release and are required only if you need support for SVS or Givex gift cards. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
