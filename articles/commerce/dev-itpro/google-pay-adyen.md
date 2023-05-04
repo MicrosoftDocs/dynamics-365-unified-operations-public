@@ -4,7 +4,7 @@
 title: Configure Google Pay with Adyen
 description: This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/21/2023
+ms.date: 05/04/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -20,7 +20,7 @@ ms.search.validFrom: 2017-06-20
 [!include [banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> The Dynamics 365 Commerce team is investigating an issue with Google Pay in Chrome browsers when in Production. At current, the Google Pay functionality will fail to render in Chrome. Commerce is working with Google to identify a fix for this issue to support Google Pay via Adyen in the Commerce solution.
+> The Dynamics 365 Commerce team is investigating an issue with Google Pay in Google Chrome browsers when in production. Currently, the Google Pay functionality fails to render in Chrome. Commerce is working with Google to identify a fix for this issue to support Google Pay via Adyen in the Commerce solution.
 
 This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
